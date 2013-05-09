@@ -1,0 +1,634 @@
+color = { 45  155  159 }
+graphical_culture = German
+
+default_templates = {
+	Infanterie = {
+		infantry_brigade
+		infantry_brigade
+		artillery_brigade
+	}
+	Kavallerie = {
+		cavalry_brigade
+		cavalry_brigade
+		engineer_brigade
+	}
+}
+
+unit_names = {
+
+armor_brigade = { 
+"1. Panzerwagendivision" "2. Panzerwagendivision" "3. Panzerwagendivision" "4. Panzerwagendivision" "5. Panzerwagendivision" "6. Panzerwagendivision" "7. Panzerwagendivision" "8. Panzerwagendivision" "9. Panzerwagendivision" "10. Panzerwagendivision"
+} 
+bergsjaeger_brigade = { 
+"1. Alpenjägerdivision" "2. Alpenjägerdivision" "3. Alpenjägerdivision" "4. Alpenjägerdivision" "5. Alpenjägerdivision" "6. Alpenjägerdivision" "7. Alpenjägerdivision" "8. Alpenjägerdivision" "9. Alpenjägerdivision"
+} 
+cavalry_brigade = { 
+	"1. Kavalleriedivision" "2. Kavalleriedivision" "3. Kavalleriedivision" "4. Kavalleriedivision" "5. Kavalleriedivision" "6. Kavalleriedivision" "7. Kavalleriedivision" "8. Kavalleriedivision" "9. Kavalleriedivision" "10. Kavalleriedivision" 
+	}
+destroyer = { 
+"1. Zerstörergeschwader" "2. Zerstörergeschwader" "3. Zerstörergeschwader" "4. Zerstörergeschwader" "5. Zerstörergeschwader" "6. Zerstörergeschwader" "7. Zerstörergeschwader" "8. Zerstörergeschwader" "9. Zerstörergeschwader" "10. Zerstörergeschwader"
+} 
+garrison_brigade = { 
+"1. Infantriedivision" "2. Infantriedivision" "3. Infantriedivision" "4. Infantriedivision" "5. Infantriedivision" "6. Infantriedivision" "7. Infantriedivision" "8. Infantriedivision" "9. Infantriedivision" "10. Infantriedivision" "11. Infantriedivision" "12. Infantriedivision"
+} 
+hq_brigade = { 
+"1. Armee" "2. Armee" "3. Armee" "4. Armee" "5. Armee" "6. Armee" "7. Armee" "8. Armee" "9. Armee" "10. Armee" "11. Armee" "12. Armee"
+} 
+infantry_brigade = { 
+"1. Infantriedivision" "2. Infantriedivision" "3. Infantriedivision" "4. Infantriedivision" "5. Infantriedivision" "6. Infantriedivision" "7. Infantriedivision" "8. Infantriedivision" "9. Infantriedivision" "10. Infantriedivision" "11. Infantriedivision" 
+		"12. Infantriedivision" 
+	}
+interceptor = { 
+"Fliegerdivision 1" "Fliegerdivision 2" "Fliegerdivision 3" "Fliegerdivision 4" "Fliegerdivision 5" "Fliegerdivision 6" "Fliegerdivision 7" "Fliegerdivision 8" "Fliegerdivision 9" "Fliegerdivision 10"
+} 
+light_armor_brigade = { 
+"1. Panzerwagendivision" "2. Panzerwagendivision" "3. Panzerwagendivision" "4. Panzerwagendivision" "5. Panzerwagendivision" "6. Panzerwagendivision" "7. Panzerwagendivision" "8. Panzerwagendivision" "9. Panzerwagendivision" "10. Panzerwagendivision"
+} 
+marine_brigade = { 
+"1. Marinestürmdivision" "2. Marinestürmdivision" "3. Marinestürmdivision" "4. Marinestürmdivision" "5. Marinestürmdivision" "6. Marinestürmdivision" "7. Marinestürmdivision" "8. Marinestürmdivision" "9. Marinestürmdivision" "10. Marinestürmdivision"
+} 
+militia_brigade = { 
+"1. Landesschützendivision" "2. Landesschützendivision" "3. Landesschützendivision" "4. Landesschützendivision" "5. Landesschützendivision" "6. Landesschützendivision" "7. Landesschützendivision" "8. Landesschützendivision" "9. Landesschützendivision" "10. Landesschützendivision" "11. Landesschützendivision" "12. Landesschützendivision" "13. Landesschützendivision" "14. Landesschützendivision" "15. Landesschützendivision" "16. Landesschützendivision" "17. Landesschützendivision" "18. Landesschützendivision" "19. Landesschützendivision" "20. Landesschützendivision"
+} 
+tactical_bomber = { 
+"Taktische Fliegerdivision 1" "Taktische Fliegerdivision 2" "Taktische Fliegerdivision 3" "Taktische Fliegerdivision 4" "Taktische Fliegerdivision 5" "Taktische Fliegerdivision 6" "Taktische Fliegerdivision 7" "Taktische Fliegerdivision 8" "Taktische Fliegerdivision 9" "Taktische Fliegerdivision 10"
+}
+
+}
+
+ministers = {
+	999993 = {
+		name = "William IV"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = LUXM1
+		head_of_state = autocratic_charmer
+		start_date = 1910.1.1
+	}
+	
+385075 = {
+name = "Amile Reuter"
+ideology = market_liberal
+loyalty = 1.00
+picture = 3908
+head_of_government = flamboyant_tough_guy
+foreign_minister = great_compromiser
+minister_of_security = prince_of_terror
+start_date = 1918.1.1
+}
+
+905011 = {
+name = "Alex Federspiel"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M66055
+armament_minister = infantry_proponent
+chief_of_staff = school_of_fire_support
+start_date = 1933.1.1
+}
+
+385011 = {
+name = "Alexander von Falkenhausen"
+ideology = fascistic
+loyalty = 1.00
+picture = M66034
+head_of_state = resigned_generalissimo
+chief_of_army = decisive_battle_doctrine
+start_date = 1940.1.1
+}
+
+385085 = {
+name = "Aloys Kaiser"
+ideology = stalinist
+loyalty = 1.00
+picture = unknown
+head_of_state = die_hard_reformer
+start_date = 1910.1.1
+}
+
+385057 = {
+name = "Aloyse Glodt"
+ideology = fascistic
+loyalty = 1.00
+picture = M66017
+chief_of_staff = school_of_fire_support
+chief_of_army = armoured_spearhead_doctrine
+start_date = 1933.1.1
+}
+
+385091 = {
+name = "Alphonse Neyens"
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+armament_minister = administrative_genius
+start_date = 1918.1.1
+}
+
+385028 = {
+name = "Auguste Oster"
+ideology = social_conservative
+loyalty = 1.00
+picture = M66053
+armament_minister = administrative_genius
+start_date = 1945.1.1
+}
+
+905020 = {
+name = "Charles Becker"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M66075
+minister_of_intelligence = political_specialist
+start_date = 1933.1.1
+}
+
+385001 = {
+name = "Charlotte"
+ideology = social_conservative
+loyalty = 1.00
+picture = M66001
+head_of_state = autocratic_charmer
+start_date = 1933.1.1
+}
+
+385017 = {
+name = "Damian Kratzenberg"
+ideology = fascistic
+loyalty = 1.00
+picture = M66011
+head_of_government = corporate_suit
+foreign_minister = biased_intellectual
+start_date = 1933.1.1
+}
+
+385045 = {
+name = "Edmond Klein"
+ideology = social_conservative
+loyalty = 1.00
+picture = M66072
+minister_of_intelligence = dismal_enigma
+start_date = 1940.1.1
+}
+
+385089 = {
+name = "Edmond Reiffers"
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+armament_minister = laissez_faires_capitalist
+start_date = 1915.1.1
+}
+
+385008 = {
+name = "Emile Speller"
+ideology = social_conservative
+loyalty = 1.00
+picture = M66008
+chief_of_army = static_defence_doctrine
+chief_of_navy = open_seas_doctrine
+start_date = 1933.1.1
+}
+
+385093 = {
+name = "Ernest Leclere"
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+minister_of_security = silent_lawyer
+start_date = 1915.1.1
+}
+
+385036 = {
+name = "Etienne Schmit"
+ideology = social_conservative
+loyalty = 1.00
+picture = M66061
+minister_of_security = silent_lawyer
+start_date = 1937.1.1
+}
+
+385070 = {
+name = "Eugene Schaus"
+ideology = social_liberal
+loyalty = 1.00
+picture = M66114
+minister_of_security = man_of_the_people
+start_date = 1946.1.1
+}
+
+385059 = {
+name = "Felix Bourbon-Parma"
+ideology = social_conservative
+loyalty = 1.00
+picture = M66090
+chief_of_army = armoured_spearhead_doctrine
+start_date = 1940.1.1
+}
+
+905009 = {
+name = "Francois Schammel"
+ideology = leninist
+loyalty = 1.00
+picture = M66050
+foreign_minister = general_staffer
+minister_of_intelligence = logistics_specialist
+chief_of_staff = school_of_mass_combat
+start_date = 1933.1.1
+}
+
+385012 = {
+name = "Guillaume Soisson"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M66016
+head_of_state = popular_figurehead
+head_of_government = happy_amateur
+minister_of_intelligence = logistics_specialist
+chief_of_air = air_superiority_doctrine
+start_date = 1945.1.1
+}
+
+385031 = {
+name = "Gustave Farver"
+ideology = fascistic
+loyalty = 1.00
+picture = M66014
+armament_minister = tank_proponent
+start_date = 1933.1.1
+}
+
+385024 = {
+name = "Henri Ahnen"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M66015
+foreign_minister = iron_fisted_brute
+minister_of_security = compassionate_gentleman
+chief_of_navy = indirect_approach_doctrine
+start_date = 1945.1.1
+}
+
+385073 = {
+name = "Hubert Loutsch"
+ideology = market_liberal
+loyalty = 1.00
+picture = 3906
+head_of_government = smiling_oilman
+foreign_minister = general_staffer
+start_date = 1915.1.1
+}
+
+385082 = {
+name = "Jaques Tillmany"
+ideology = stalinist
+loyalty = 1.00
+picture = unknown
+minister_of_intelligence = undistinguished_suit
+start_date = 1910.1.1
+}
+
+905028 = {
+name = "Jean Marc Steffen"
+ideology = leninist
+loyalty = 1.00
+picture = M66030
+chief_of_air = vertical_envelopment_doctrine
+start_date = 1933.1.1
+}
+
+905013 = {
+name = "Jean Pierre Kauder"
+ideology = leninist
+loyalty = 1.00
+picture = M66025
+armament_minister = military_entrepreneur
+minister_of_security = man_of_the_people
+minister_of_intelligence = industrial_specialist
+start_date = 1933.1.1
+}
+
+385054 = {
+name = "Jean Seurlis"
+ideology = social_conservative
+loyalty = 1.00
+picture = M66082
+chief_of_staff = school_of_psychology
+start_date = 1940.1.1
+}
+
+385094 = {
+name = "Jean-Baptiste Sax"
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+minister_of_security = compassionate_gentleman
+start_date = 1915.1.1
+}
+
+385002 = {
+name = "Joseph Bech"
+ideology = social_conservative
+loyalty = 1.00
+picture = M66002
+head_of_government = naive_optimist
+foreign_minister = ideological_crusader
+minister_of_security = compassionate_gentleman
+start_date = 1933.1.1
+}
+
+905015 = {
+name = "Joseph Goedert"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M66066
+minister_of_security = compassionate_gentleman
+start_date = 1933.1.1
+}
+
+905018 = {
+name = "Joseph Tockert"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M66073
+minister_of_intelligence = technical_specialist
+start_date = 1933.1.1
+}
+
+385071 = {
+name = "Joseph Wohlfart"
+ideology = market_liberal
+loyalty = 1.00
+picture = M66115
+minister_of_intelligence = industrial_specialist
+start_date = 1951.1.1
+}
+
+385027 = {
+name = "Jules Keiffer"
+ideology = social_conservative
+loyalty = 1.00
+picture = M66052
+armament_minister = military_entrepreneur
+start_date = 1944.1.1
+}
+
+385051 = {
+name = "Jules Prussen"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M66078
+minister_of_intelligence = technical_specialist
+start_date = 1945.1.1
+}
+
+385074 = {
+name = "Léon Kauffman"
+ideology = market_liberal
+loyalty = 1.00
+picture = 3907
+head_of_government = silent_workhorse
+foreign_minister = apologetic_clerk
+armament_minister = infantry_proponent
+start_date = 1917.1.1
+}
+
+385095 = {
+name = "Léon Moutrier"
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+minister_of_security = crime_fighter
+start_date = 1916.1.1
+}
+
+385083 = {
+name = "Marie-Adélaïde"
+ideology = social_liberal
+loyalty = 1.00
+picture = 2827
+head_of_state = insignificant_layman
+start_date = 1910.1.1
+}
+
+905002 = {
+name = "Martin Karp"
+ideology = leninist
+loyalty = 1.00
+picture = M66024
+head_of_state = die_hard_reformer
+head_of_government = corporate_suit
+armament_minister = infantry_proponent
+chief_of_staff = school_of_mass_combat
+chief_of_army = elastic_defence_doctrine
+start_date = 1933.1.1
+}
+
+385077 = {
+name = "Mathias Mongenast"
+ideology = market_liberal
+loyalty = 1.00
+picture = 2826
+head_of_government = happy_amateur
+armament_minister = administrative_genius
+start_date = 1915.1.1
+}
+
+385096 = {
+name = "Maurice Kohn"
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+minister_of_security = silent_lawyer
+start_date = 1917.1.1
+}
+
+385050 = {
+name = "Max Simon"
+ideology = fascistic
+loyalty = 1.00
+picture = M66077
+minister_of_security = prince_of_terror
+minister_of_intelligence = political_specialist
+start_date = 1940.1.1
+}
+
+905022 = {
+name = "Max Weckering"
+ideology = leninist
+loyalty = 1.00
+picture = M66080
+minister_of_intelligence = dismal_enigma
+start_date = 1933.1.1
+}
+
+905017 = {
+name = "Michel Hansen"
+ideology = leninist
+loyalty = 1.00
+picture = M66070
+minister_of_security = efficient_sociopath
+start_date = 1933.1.1
+}
+
+385010 = {
+name = "Nicholas Diedrich"
+ideology = social_conservative
+loyalty = 1.00
+picture = M66010
+chief_of_air = army_aviation_doctrine
+start_date = 1933.1.1
+}
+
+385006 = {
+name = "Nicholas Marque"
+ideology = social_conservative
+loyalty = 1.00
+picture = M66006
+minister_of_intelligence = industrial_specialist
+start_date = 1933.1.1
+}
+
+385035 = {
+name = "Nicolas Braunshausen"
+ideology = social_conservative
+loyalty = 1.00
+picture = M66060
+minister_of_security = back_stabber
+start_date = 1933.1.1
+}
+
+385005 = {
+name = "Norbert Dumont"
+ideology = social_conservative
+loyalty = 1.00
+picture = M66005
+minister_of_security = crime_fighter
+start_date = 1933.1.1
+}
+
+385072 = {
+name = "Paul Eyschen"
+ideology = market_liberal
+loyalty = 1.00
+picture = 2825
+head_of_government = happy_amateur
+foreign_minister = general_staffer
+start_date = 1910.1.1
+}
+
+905001 = {
+name = "Paul Medinger"
+ideology = stalinist
+loyalty = 1.00
+picture = M66021
+head_of_state = pig_headed_isolationist
+head_of_government = ambitious_union_boss
+foreign_minister = biased_intellectual
+chief_of_navy = base_control_doctrine
+start_date = 1933.1.1
+}
+
+385032 = {
+name = "Philip Hoffmann"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M66057
+armament_minister = theoretical_scientist
+start_date = 1945.1.1
+}
+
+385092 = {
+name = "Pierre Braun"
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+minister_of_security = back_stabber
+chief_of_staff = school_of_defence
+chief_of_army = static_defence_doctrine
+chief_of_navy = open_seas_doctrine
+chief_of_air = army_aviation_doctrine
+start_date = 1910.1.1
+}
+
+385004 = {
+name = "Pierre Dupong"
+ideology = social_conservative
+loyalty = 1.00
+picture = M66004
+head_of_government = silent_workhorse
+armament_minister = laissez_faires_capitalist
+chief_of_staff = school_of_defence
+start_date = 1933.1.1
+}
+
+385068 = {
+name = "Pierre Fischbach"
+ideology = social_conservative
+loyalty = 1.00
+picture = M66111
+chief_of_navy = open_seas_doctrine
+start_date = 1940.1.1
+}
+
+905006 = {
+name = "Pierre Krier"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M66045
+foreign_minister = apologetic_clerk
+armament_minister = resource_industrialist
+start_date = 1933.1.1
+}
+
+385016 = {
+name = "René Blum"
+ideology = social_democrat
+loyalty = 1.00
+picture = M66039
+head_of_government = ambitious_union_boss
+foreign_minister = iron_fisted_brute
+minister_of_security = crime_fighter
+start_date = 1933.1.1
+}
+
+905003 = {
+name = "Ren‰ö_å© Blum"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M66039
+head_of_government = ambitious_union_boss
+foreign_minister = iron_fisted_brute
+minister_of_security = crime_fighter
+start_date = 1933.1.1
+}
+
+385038 = {
+name = "Robert Als"
+ideology = social_conservative
+loyalty = 1.00
+picture = M66063
+minister_of_security = crime_fighter
+start_date = 1944.1.1
+}
+
+385039 = {
+name = "Victor Bodson"
+ideology = social_conservative
+loyalty = 1.00
+picture = M66064
+minister_of_security = man_of_the_people
+start_date = 1946.1.1
+}
+
+385079 = {
+name = "Victor Thorn"
+ideology = market_liberal
+loyalty = 1.00
+picture = 3909
+head_of_government = naive_optimist
+start_date = 1916.1.1
+}
+
+
+}

@@ -1,0 +1,171 @@
+
+
+
+#BANNA WARSSS ID = 100300 - 100340 OCCUPATION OF NICARAGUA
+country_event = {
+
+		id = 100300
+		
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+
+		title = "USAE1"
+		desc = "desc_USAE1"
+		picture = "USAP1"
+
+		option = {
+			name = "opta_USAE1"
+			USA = { create_vassal = NIC } 
+			dissent = 10
+			manpower = 20
+			neutrality = -1
+		}
+		option = {
+			name = "Annexation shall protect our interests"
+			dissent = 10
+			USA = { inherit = NIC } 
+			manpower = 20
+			neutrality = -1
+		}
+		option = {
+			name = "Occupation will suffice"
+			ai_chance = { factor = 100 }
+			dissent = -10
+			manpower = 100
+			neutrality = -1
+		}
+	
+} 
+#August – Pan-American Union
+ country_event = {
+
+		id = 100201
+		
+		major = yes
+		
+		trigger = {
+			tag = USA
+			date = 1910.8.1
+			NOT = { has_country_flag = panamerican }
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = yes
+
+		title = "USAE2"
+		desc = "desc_USAE2"
+		picture = "USAP2"
+
+		option = {
+			name = "opta_USAE2"
+			ai_chance = { factor = 100 }
+			neutrality = 10
+			money = 500
+			threat = { who = all value = -5 }
+			relation = { who = ENG value = 20 }
+			relation = { who = FRA value = 20 }
+			relation = { who = CAN value = 20 }
+			relation = { who = MEX value = 20 }
+			USA = { guarantee = PAR }
+			USA = { guarantee = URU }
+			USA = { guarantee = ARG }
+			USA = { guarantee = CHL }
+			USA = { guarantee = BRA }
+			USA = { guarantee = BOL }
+			USA = { guarantee = PRU }
+			USA = { guarantee = VEN }
+			USA = { guarantee = COL }
+			USA = { guarantee = PAN }
+			USA = { guarantee = COS }
+			USA = { guarantee = NIC }
+			USA = { guarantee = HON }
+			USA = { guarantee = SAL }
+			USA = { guarantee = GUA }
+			USA = { guarantee = MEX }
+			set_country_flag = panamerican
+		}
+	
+}
+
+
+
+#declare american neutrality
+country_event = {
+
+		id = 100207
+
+		major = yes
+		
+		trigger = {
+			tag = USA
+			war = no
+			GER = {	war_with = ENG }
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = yes
+
+		title = "USAE4"
+		desc = "desc_USAE4"
+		picture = "USAP4"
+
+		option = {
+			name = "opta_USAE4"
+			ai_chance = { factor = 10 }
+			dissent = -3
+			neutrality = 15
+			manpower = 500
+		}
+	
+}
+#AMERICA JOINS THE WAR
+country_event = {
+
+		id = 100208
+
+		major = yes
+		
+		trigger = {
+			tag = USA
+			war = no
+			GER = {	war_with = ENG }
+			date = 1917.4.1
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = yes
+
+		title = "USAE5"
+		desc = "desc_USAE5"
+		picture = "USAP5"
+
+		option = {
+			name = "opta_USAE5"
+			ai_chance = { factor = 10 }
+			relation = { who = ENG value = 50 }
+			dissent = -3
+			threat = { who = all value = 10 }
+			neutrality = -15
+			manpower = 500
+			THIS = { join_faction = allies }
+		}
+		option = {
+			name = "opta2_USAE5"
+			ai_chance = { factor = 0 }
+			relation = { who = GER value = 100 }
+			dissent = 10
+			neutrality = 50
+			manpower = 200
+		}
+	
+}

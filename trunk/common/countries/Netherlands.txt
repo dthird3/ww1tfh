@@ -1,0 +1,1547 @@
+color = { 183  118  54 }
+graphical_culture = Generic
+
+default_templates = {
+	Infanterie = {
+		infantry_brigade
+		infantry_brigade
+		artillery_brigade
+	}
+	Cavalerie = {
+		cavalry_brigade
+		cavalry_brigade
+		engineer_brigade
+	}	
+	Lichte = {
+		light_armor_brigade
+		cavalry_brigade
+		engineer_brigade
+	}
+	Jagers = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+		artillery_brigade
+	}
+	Mariniers = {
+		marine_brigade 
+		marine_brigade 
+		artillery_brigade
+	}
+}
+
+unit_names = {
+
+armor_brigade = { 
+"1e Pantser Divisie" "2e Pantser Divisie" "3e Pantser Divisie" "4e Pantser Divisie" "5e Pantser Divisie" "6e Pantser Divisie" "7e Pantser Divisie" "8e Pantser Divisie" "9e Pantser Divisie" "10e Pantser Divisie" "11e Pantser Divisie" "12e Pantser Divisie" "13e Pantser Divisie" "14e Pantser Divisie" "15e Pantser Divisie"
+} 
+battlecruiser = { 
+"HrMs Van Speijk" "HrMs Witte de With" "HrMs Piet Hein" "HrMs Kortenaer" "HrMs Koningen Regentes" "HrMs Hertog Hendrik"
+} 
+dreadnaught = { 
+"HrMs Reinier Claeszen" "HrMs Evertsen" "HrMs Piet Hein" "HrMs Kortenaer" "HrMs Koningen Regentes" "HrMs Hertog Hendrik" "HrMs Van Speijk" "HrMs Witte de With"
+} 
+bergsjaeger_brigade = { 
+"1ste Jager Divisie" "2de Jager Divisie" "3de Jager Divisie" "4de Jager Divisie" "5de Jager Divisie" "6de Jager Divisie" "7de Jager Divisie" "8ste Jager Divisie" "9de Jager Divisie" "10de Jager Divisie" 
+	} 
+carrier = { 
+"HrMs Karel Doorman" "HrMs De Zeven Provinciën" "HrMs De Ruyter" "HrMs Tromp" "HrMs Piet Hein"
+} 
+cavalry_brigade = { 
+"1ste Huzaren te Paard" "2de Huzaren te Paard" "3de Huzaren te Paard" "4de Huzaren te Paard" "5de Huzaren te Paard" "6de Huzaren te Paard" "7de Huzaren te Paard" "8ste Huzaren te Paard" "9de Huzaren te Paard" "10de Huzaren te Paard" 
+	}
+destroyer = { 
+"1e Torpedobootjager Smaldeel" "2e Torpedobootjager Smaldeel" "3e Torpedobootjager Smaldeel" "4e Torpedobootjager Smaldeel" "5e Torpedobootjager Smaldeel" "6e Torpedobootjager Smaldeel" "7e Torpedobootjager Smaldeel" "8e Torpedobootjager Smaldeel" "9e Torpedobootjager Smaldeel" "10e Torpedobootjager Smaldeel" "11e Torpedobootjager Smaldeel" "12e Torpedobootjager Smaldeel" "13e Torpedobootjager Smaldeel" "14e Torpedobootjager Smaldeel" "15e Torpedobootjager Smaldeel" "16e Torpedobootjager Smaldeel" "17e Torpedobootjager Smaldeel" "18e Torpedobootjager Smaldeel" "19e Torpedobootjager Smaldeel" "20e Torpedobootjager Smaldeel" "21e Torpedobootjager Smaldeel" "22e Torpedobootjager Smaldeel" "23e Torpedobootjager Smaldeel" "24e Torpedobootjager Smaldeel" "25e Torpedobootjager Smaldeel" "26e Torpedobootjager Smaldeel" "27e Torpedobootjager Smaldeel" "28e Torpedobootjager Smaldeel" "29e Torpedobootjager Smaldeel" "30e Torpedobootjager Smaldeel"
+} 
+escort_carrier = { 
+"HrMs Karel Doorman" "HrMs De Zeven Provinciën" "HrMs De Ruyter" "HrMs Tromp" "HrMs Piet Hein"
+} 
+garrison_brigade = { 
+"Territoriaal Bevel Friesland" "Territoriaal Bevel Overijssel" "Territoriaal Bevel Noord-Brabant" "Territoriaal Bevel Zuid-Limburg" "Commando Zeeland" "Stelling Den Helder" "1e Divisie" "2e Divisie" "3e Divisie" "4e Divisie" "5e Divisie" "6e Divisie" "7e Divisie" "8e Divisie" "9e Divisie" "10e Divisie" "11e Divisie" "12e Divisie" "13e Divisie" "14e Divisie" "15e Divisie" "16e Divisie" "17e Divisie" "18e Divisie" "19e Divisie" "20e Divisie" "21e Divisie" "22e Divisie" "23e Divisie" "24e Divisie" "25e Divisie" "26e Divisie" "27e Divisie" "28e Divisie" "29e Divisie" "30e Divisie"
+} 
+heavy_cruiser = { 
+"HrMs De Zeven Provincien" "HrMs Eendracht" "HrMs 'Java'" "HrMs Sumatra" "HrMs Celebes" "HrMs Soerabaja" "HrMs Batjan" "HrMs Ceram" "HrMs Ambon" "HrMs Banda" "HrMs Ternate" "HrMs Boeroe" "HrMs Morotai" "HrMs Tidore"
+} 
+hq_brigade = { 
+"O.L.Z." "1e Veldleger" "2e Veldleger" "3e Veldleger" "4e Veldleger"
+} 
+infantry_brigade = { 
+"1ste Divisie" "2de Divisie" "3de Divisie" "4de Divisie" "5de Divisie" "6de Divisie" "7de Divisie" "8ste Divisie" "1ste Divisie Java" "2de Divisie Java" "3de Divisie Java" 
+		"9de Divisie" "10de Divisie" "11de Divisie" "12de Divisie" "13de Divisie" "14de Divisie" "15de Divisie" "16de Divisie" "4de Divisie Java" "5de Divisie Java" 
+		"6de Divisie Java" "7de Divisie Java" "17de Divisie" "18de Divisie" "19de Divisie" "20ste Divisie" "21ste Divisie" "22ste Divisie" "23ste Divisie" "24ste Divisie" "8ste Divisie Java" 
+		"9de Divisie Java" "10de Divisie Java" "25ste Divisie" "26ste Divisie" "27ste Divisie" "28ste Divisie" "29ste Divisie" "30ste Divisie" 
+	}
+interceptor = { 
+"1e Jachtvliegtuig Groep" "2e Jachtvliegtuig Groep" "3e Jachtvliegtuig Groep" "4e Jachtvliegtuig Groep" "5e Jachtvliegtuig Groep" "6e Jachtvliegtuig Groep" "7e Jachtvliegtuig Groep" "8e Jachtvliegtuig Groep" "9e Jachtvliegtuig Groep" "10e Jachtvliegtuig Groep" "11e Jachtvliegtuig Groep" "12e Jachtvliegtuig Groep" "13e Jachtvliegtuig Groep" "14e Jachtvliegtuig Groep" "15e Jachtvliegtuig Groep" "16e Jachtvliegtuig Groep" "17e Jachtvliegtuig Groep" "18e Jachtvliegtuig Groep" "19e Jachtvliegtuig Groep" "20e Jachtvliegtuig Groep"
+} 
+light_armor_brigade = { 
+"1ste Lichte Divisie" "2de Lichte Divisie" "3de Lichte Divisie" "4de Lichte Divisie" "5de Lichte Divisie" "6de Lichte Divisie" "7de Lichte Divisie" "8ste Lichte Divisie" "9de Lichte Divisie" "10de Lichte Divisie" "11de Lichte Divisie" 
+		"12de Lichte Divisie" "13de Lichte Divisie" "14de Lichte Divisie" "15de Lichte Divisie" 
+	}
+light_cruiser = { 
+"HrMs Tromp" "HrMs Jacob van Heemskerck" "HrMs Holland" "HrMs De Ruyter" "HrMs Zeeland" "HrMs Friesland" "HrMs Gelderland" "HrMs Noord Brabant" "HrMs Utrecht" "HrMs Drenthe" "HrMs Brabant" "HrMs Limburg"
+} 
+marine_brigade = { 
+"1e Mariniers Divisie 'Zwarte Duivels'" "2e Mariniers Divisie" "3e Mariniers Divisie" "4e Mariniers Divisie" "5e Mariniers Divisie" "6e Mariniers Divisie" "7e Mariniers Divisie" "8e Mariniers Divisie" "9e Mariniers Divisie" "10e Mariniers Divisie" "11e Mariniers Divisie" "12e Mariniers Divisie" "13e Mariniers Divisie" "14e Mariniers Divisie" "15e Mariniers Divisie" "16e Mariniers Divisie" "17e Mariniers Divisie" "18e Mariniers Divisie" "19e Mariniers Divisie" "20e Mariniers Divisie"
+} 
+militia_brigade = { 
+"Territoriaal Commando Noord-Sumatra" "Territoriaal Commando West-Sumatra" "Territoriaal Commando Riouw" "Territoriaal Commando Zuid-Sumatra" "Territoriaal Commando West-Borneo" "Territoriaal Commando Zuid- en Oost-Borneo" "Troepencommando Balikpapan" "Troepencommando Tarakan" "Troepencommando Samarinda" "Troepencommando Samarinda II" "Territoriaal Commando Celebes" "Territoriaal Commando Timor" "Territoriaal Commando Molukken" "1e Landstorm Divisie" "2e Landstorm Divisie" "3e Landstorm Divisie" "4e Landstorm Divisie" "5e Landstorm Divisie" "6e Landstorm Divisie" "7e Landstorm Divisie" "8e Landstorm Divisie" "9e Landstorm Divisie" "10e Landstorm Divisie" "11e Landstorm Divisie" "12e Landstorm Divisie" "13e Landstorm Divisie" "14e Landstorm Divisie" "15e Landstorm Divisie" "16e Landstorm Divisie" "17e Landstorm Divisie" "18e Landstorm Divisie" "19e Landstorm Divisie" "20e Landstorm Divisie"
+} 
+submarine = { 
+"1e Onderzeeboot Smaldeel" "2e Onderzeeboot Smaldeel" "3e Onderzeeboot Smaldeel" "4e Onderzeeboot Smaldeel" "5e Onderzeeboot Smaldeel" "6e Onderzeeboot Smaldeel" "7e Onderzeeboot Smaldeel" "8e Onderzeeboot Smaldeel" "9e Onderzeeboot Smaldeel" "10e Onderzeeboot Smaldeel" "11e Onderzeeboot Smaldeel" "12e Onderzeeboot Smaldeel" "13e Onderzeeboot Smaldeel" "14e Onderzeeboot Smaldeel" "15e Onderzeeboot Smaldeel" "16e Onderzeeboot Smaldeel" "17e Onderzeeboot Smaldeel" "18e Onderzeeboot Smaldeel" "19e Onderzeeboot Smaldeel" "20e Onderzeeboot Smaldeel" "21e Onderzeeboot Smaldeel" "22e Onderzeeboot Smaldeel" "23e Onderzeeboot Smaldeel" "24e Onderzeeboot Smaldeel" "25e Onderzeeboot Smaldeel" "26e Onderzeeboot Smaldeel" "27e Onderzeeboot Smaldeel" "28e Onderzeeboot Smaldeel" "29e Onderzeeboot Smaldeel" "30e Onderzeeboot Smaldeel"
+} 
+tactical_bomber = { 
+"1e Licht Bombardeervliegtuig Groep" "2e Licht Bombardeervliegtuig Groep" "3e Licht Bombardeervliegtuig Groep" "4e Licht Bombardeervliegtuig Groep" "5e Licht Bombardeervliegtuig Groep" "6e Licht Bombardeervliegtuig Groep" "7e Licht Bombardeervliegtuig Groep" "8e Licht Bombardeervliegtuig Groep" "9e Licht Bombardeervliegtuig Groep" "10e Licht Bombardeervliegtuig Groep" "11e Licht Bombardeervliegtuig Groep" "12e Licht Bombardeervliegtuig Groep" "13e Licht Bombardeervliegtuig Groep" "14e Licht Bombardeervliegtuig Groep" "15e Licht Bombardeervliegtuig Groep" "16e Licht Bombardeervliegtuig Groep" "17e Licht Bombardeervliegtuig Groep" "18e Licht Bombardeervliegtuig Groep" "19e Tac. Bombardeervliegtuig Groep" "20e Tac. Bombardeervliegtuig Groep"
+} 
+transport_ship = { 
+"1e Transport Smaldeel" "2e Transport Smaldeel" "3e Transport Smaldeel" "4e Transport Smaldeel" "5e Transport Smaldeel" "6e Transport Smaldeel" "7e Transport Smaldeel" "8e Transport Smaldeel" "9e Transport Smaldeel" "10e Transport Smaldeel" "11e Transport Smaldeel" "12e Transport Smaldeel" "13e Transport Smaldeel" "14e Transport Smaldeel" "15e Transport Smaldeel" "16e Transport Smaldeel" "17e Transport Smaldeel" "18e Transport Smaldeel" "19e Transport Smaldeel" "20e Transport Smaldeel" "21e Transport Smaldeel" "22e Transport Smaldeel" "23e Transport Smaldeel" "24e Transport Smaldeel" "25e Transport Smaldeel" "26e Transport Smaldeel" "27e Transport Smaldeel" "28e Transport Smaldeel" "29e Transport Smaldeel" "30e Transport Smaldeel"
+}
+
+}
+
+ministers = {
+
+999994 = {
+name = "Theo Heemskerk"
+ideology = social_conservative
+loyalty = 1.00
+picture = HOLM2
+head_of_government = naive_optimist
+start_date = 1910.1.1
+}
+
+
+840048 = {
+name = "Abdul Harris Nasution"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M577043
+chief_of_army = guns_and_butter_doctrine
+start_date = 1948.1.1
+}
+
+865040 = {
+name = "Abraham Menist"
+ideology = stalinist
+loyalty = 1.00
+picture = M8026
+minister_of_intelligence = political_specialist
+start_date = 1933.1.1
+}
+
+15007 = {
+name = "Adriaan Dijxhoorn"
+ideology = social_conservative
+loyalty = 1.00
+picture = M8007
+armament_minister = tank_proponent
+chief_of_staff = school_of_defence
+start_date = 1933.1.1
+}
+
+15030 = {
+name = "Adrianus Pelt"
+ideology = social_democrat
+loyalty = 1.00
+picture = M8058
+foreign_minister = apologetic_clerk
+start_date = 1938.1.1
+}
+
+15118 = {
+name = "Adrianus Zondervan"
+ideology = national_socialist
+loyalty = 1.00
+picture = M8018
+chief_of_army = decisive_battle_doctrine
+start_date = 1937.1.1
+}
+
+840037 = {
+name = "Ahmad Subandrio"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M577017
+foreign_minister = ideological_crusader
+start_date = 1944.1.1
+}
+
+865046 = {
+name = "Alexander de Leeuw"
+ideology = stalinist
+loyalty = 1.00
+picture = M8162
+chief_of_army = elastic_defence_doctrine
+start_date = 1933.1.1
+}
+
+15054 = {
+name = "Alexander Fiévez"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8083
+armament_minister = administrative_genius
+start_date = 1946.1.1
+}
+
+15132 = {
+name = "Alexander von Falkenhausen"
+ideology = national_socialist
+loyalty = 1.00
+picture = M510086
+head_of_state = resigned_generalissimo
+start_date = 1940.1.1
+}
+
+840002 = {
+name = "Alidius Tjarda van Starkenborgh-Stachouwer"
+ideology = market_liberal
+loyalty = 1.00
+picture = M577002
+head_of_government = naive_optimist
+start_date = 1910.1.1
+}
+
+
+15020 = {
+name = "Andries Dirk de Graaf"
+ideology = social_conservative
+loyalty = 1.00
+picture = M8048
+head_of_government = happy_amateur
+foreign_minister = great_compromiser
+start_date = 1937.1.1
+}
+
+865048 = {
+name = "Anthon Koejemans"
+ideology = stalinist
+loyalty = 1.00
+picture = M8164
+chief_of_army = guns_and_butter_doctrine
+start_date = 1933.1.1
+}
+
+15176 = {
+name = "Anthonij Bertling"
+ideology = social_liberal
+loyalty = 1.00
+picture = 3860
+armament_minister = corrupt_kleptocrat
+start_date = 1910.1.1
+}
+
+15012 = {
+name = "Anton Mussert"
+ideology = national_socialist
+loyalty = 1.00
+picture = M8011
+head_of_state = barking_buffoon
+head_of_government = ambitious_union_boss
+foreign_minister = the_cloak_n_dagger_schemer
+chief_of_staff = school_of_psychology
+start_date = 1937.1.1
+}
+
+15177 = {
+name = "Anton van Gijn"
+ideology = social_liberal
+loyalty = 1.00
+picture = 3861
+armament_minister = laissez_faires_capitalist
+start_date = 1916.1.1
+}
+
+15133 = {
+name = "Arthur Seyss-Inquart"
+ideology = national_socialist
+loyalty = 1.00
+picture = M58
+head_of_state = power_hungry_demagogue
+start_date = 1940.1.1
+}
+
+865001 = {
+name = "Benjamin Boers"
+ideology = stalinist
+loyalty = 1.00
+picture = M8040
+head_of_state = insignificant_layman
+foreign_minister = great_compromiser
+start_date = 1933.1.1
+}
+
+15085 = {
+name = "Bernard C.J. Loder"
+ideology = social_conservative
+loyalty = 1.00
+picture = M8116
+minister_of_security = back_stabber
+start_date = 1937.1.1
+}
+
+865042 = {
+name = "Bernhard Coltof"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8142
+chief_of_staff = school_of_psychology
+chief_of_army = elastic_defence_doctrine
+start_date = 1933.1.1
+}
+
+
+15069 = {
+name = "C.J. Huygens"
+ideology = national_socialist
+loyalty = 1.00
+picture = M8014
+armament_minister = administrative_genius
+start_date = 1937.1.1
+}
+
+15090 = {
+name = "Carel Gooseling"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M8122
+minister_of_security = compassionate_gentleman
+start_date = 1940.1.1
+}
+
+865011 = {
+name = "Charles Guillaume Cramer"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8062
+foreign_minister = the_cloak_n_dagger_schemer
+armament_minister = air_superiority_proponent
+minister_of_security = silent_lawyer
+minister_of_intelligence = technical_specialist
+start_date = 1933.1.1
+}
+
+15166 = {
+name = "Charles Ruijs de Beerenbrouck"
+ideology = social_conservative
+loyalty = 1.00
+picture = 2662
+head_of_government = happy_amateur
+minister_of_security = compassionate_gentleman
+start_date = 1910.1.1
+}
+
+15050 = {
+name = "Charles Welter"
+ideology = social_democrat
+loyalty = 1.00
+picture = M8079
+armament_minister = theoretical_scientist
+start_date = 1940.1.1
+}
+
+865049 = {
+name = "Christiaan Beekman"
+ideology = stalinist
+loyalty = 1.00
+picture = M8170
+chief_of_navy = base_control_doctrine
+start_date = 1933.1.1
+}
+
+15103 = {
+name = "Christoffel van Tuinen"
+ideology = social_conservative
+loyalty = 1.00
+picture = M8136
+minister_of_intelligence = industrial_specialist
+start_date = 1939.1.1
+}
+
+15128 = {
+name = "Claes Douw van der Krap"
+ideology = fascistic
+loyalty = 1.00
+picture = M8020
+chief_of_air = naval_aviation_doctrine
+start_date = 1937.1.1
+}
+
+840009 = {
+name = "Conrad Helfrich"
+ideology = social_conservative
+loyalty = 1.00
+picture = L7839
+chief_of_navy = indirect_approach_doctrine
+start_date = 1910.1.1
+}
+
+15088 = {
+name = "Corneliis van Geelkerken"
+ideology = national_socialist
+loyalty = 1.00
+picture = M8015
+minister_of_security = prince_of_terror
+start_date = 1937.1.1
+}
+
+15149 = {
+name = "Cornelis Snijders"
+ideology = market_liberal
+loyalty = 1.00
+picture = 2654
+head_of_government = old_general
+minister_of_intelligence = logistics_specialist
+chief_of_staff = school_of_defence
+chief_of_army = static_defence_doctrine
+start_date = 1910.1.1
+}
+
+865007 = {
+name = "Daniel Goulooze"
+ideology = stalinist
+loyalty = 1.00
+picture = M8025
+head_of_government = smiling_oilman
+minister_of_security = crime_fighter
+start_date = 1933.1.1
+}
+
+15057 = {
+name = "Daniel van der Zee"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8087
+armament_minister = air_to_sea_proponent
+start_date = 1940.1.1
+}
+
+865006 = {
+name = "David Wijnkoop"
+ideology = stalinist
+loyalty = 1.00
+picture = M8022
+head_of_government = naive_optimist
+foreign_minister = biased_intellectual
+start_date = 1933.1.1
+}
+
+15021 = {
+name = "Dirk Jan de Geer"
+ideology = social_conservative
+loyalty = 1.00
+picture = M8049
+head_of_government = political_protege
+armament_minister = infantry_proponent
+start_date = 1939.1.1
+}
+
+865058 = {
+name = "Dirk U. Stikker"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8189
+foreign_minister = great_compromiser
+start_date = 1933.1.1
+}
+
+15038 = {
+name = "Eelco van Kleffens"
+ideology = social_conservative
+loyalty = 1.00
+picture = M8065
+foreign_minister = great_compromiser
+start_date = 1939.1.1
+}
+
+865035 = {
+name = "Emanuel Boekman"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8126
+minister_of_intelligence = dismal_enigma
+start_date = 1933.1.1
+}
+
+15082 = {
+name = "Fedde Schurer"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8113
+minister_of_security = man_of_the_people
+start_date = 1946.1.1
+}
+
+865032 = {
+name = "Fokke Bosman"
+ideology = stalinist
+loyalty = 1.00
+picture = M8123
+minister_of_security = compassionate_gentleman
+chief_of_navy = open_seas_doctrine
+start_date = 1933.1.1
+}
+
+865027 = {
+name = "Franc van der Goes"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8106
+minister_of_security = man_of_the_people
+start_date = 1933.1.1
+}
+
+15003 = {
+name = "Frans B. van Blokland"
+ideology = social_conservative
+loyalty = 1.00
+picture = M8003
+foreign_minister = ideological_crusader
+start_date = 1933.1.1
+}
+
+15102 = {
+name = "Frans Fuykschot"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8134
+minister_of_intelligence = dismal_enigma
+start_date = 1946.1.1
+}
+
+15101 = {
+name = "G.J. Sas"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8133
+minister_of_intelligence = logistics_specialist
+start_date = 1940.1.1
+}
+
+865044 = {
+name = "Geert Sterringa"
+ideology = stalinist
+loyalty = 1.00
+picture = M8152
+chief_of_staff = school_of_defence
+start_date = 1933.1.1
+}
+
+865009 = {
+name = "George van den Bergh"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8059
+foreign_minister = iron_fisted_brute
+start_date = 1933.1.1
+}
+
+840008 = {
+name = "Gerardus Berenschot"
+ideology = social_conservative
+loyalty = 1.00
+picture = L7801
+chief_of_staff = school_of_manoeuvre
+chief_of_army = static_defence_doctrine
+start_date = 1910.1.1
+}
+
+15070 = {
+name = "Gerrit van Burink"
+ideology = national_socialist
+loyalty = 1.00
+picture = M8100
+armament_minister = infantry_proponent
+start_date = 1943.1.1
+}
+
+15087 = {
+name = "Gerrit van Heuven Goedhart"
+ideology = social_conservative
+loyalty = 1.00
+picture = M8118
+minister_of_security = compassionate_gentleman
+start_date = 1943.1.1
+}
+
+15025 = {
+name = "Graaf de Marchant et d'Ansembourg"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M8013
+head_of_government = flamboyant_tough_guy
+foreign_minister = ideological_crusader
+start_date = 1940.1.1
+}
+
+15099 = {
+name = "H.A. van Kamebeek"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8131
+minister_of_intelligence = technical_specialist
+start_date = 1937.1.1
+}
+
+865036 = {
+name = "Harmen de Boer"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8127
+minister_of_intelligence = political_specialist
+start_date = 1933.1.1
+}
+
+840042 = {
+name = "Hein Ter Poorten"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = L7819
+chief_of_staff = school_of_defence
+chief_of_army = static_defence_doctrine
+start_date = 1941.1.1
+}
+
+865033 = {
+name = "Hendrickus Sneevliet"
+ideology = stalinist
+loyalty = 1.00
+picture = M8124
+minister_of_security = man_of_the_people
+start_date = 1933.1.1
+}
+
+15002 = {
+name = "Hendricus Colijn"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8002
+head_of_government = silent_workhorse
+foreign_minister = ideological_crusader
+start_date = 1933.1.1
+}
+
+15187 = {
+name = "Hendrik Goeman Borgesius"
+ideology = social_liberal
+loyalty = 1.00
+picture = 2669
+minister_of_security = crime_fighter
+start_date = 1910.1.1
+}
+
+15112 = {
+name = "Hendrik Seyffardt"
+ideology = fascistic
+loyalty = 1.00
+picture = M8017
+chief_of_staff = school_of_defence
+chief_of_army = guns_and_butter_doctrine
+start_date = 1943.1.1
+}
+
+15148 = {
+name = "Hendrik Walaardt Sacré"
+ideology = market_liberal
+loyalty = 1.00
+picture = 2653
+chief_of_air = army_aviation_doctrine
+start_date = 1910.1.1
+}
+
+15180 = {
+name = "Hendrikus Colijn"
+ideology = social_conservative
+loyalty = 1.00
+picture = 2666
+armament_minister = military_entrepreneur
+start_date = 1923.1.1
+}
+
+15105 = {
+name = "Henk Feldmeijer"
+ideology = national_socialist
+loyalty = 1.00
+picture = M8016
+minister_of_intelligence = political_specialist
+start_date = 1937.1.1
+}
+
+15117 = {
+name = "Henri Winkelman"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8154
+chief_of_army = elastic_defence_doctrine
+start_date = 1940.1.1
+}
+
+865064 = {
+name = "Henrik Mulderije"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8196
+minister_of_security = crime_fighter
+start_date = 1933.1.1
+}
+
+15161 = {
+name = "Herman van Karnebeek"
+ideology = market_liberal
+loyalty = 1.00
+picture = 2659
+foreign_minister = ideological_crusader
+start_date = 1918.1.1
+}
+
+15120 = {
+name = "Herman van Voorst tot Voorst"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M8161
+chief_of_army = elastic_defence_doctrine
+start_date = 1945.1.1
+}
+
+15188 = {
+name = "Horace van Gybland Oosterhoff"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+minister_of_security = efficient_sociopath
+start_date = 1910.1.1
+}
+
+840003 = {
+name = "Hubertus Van Mook"
+ideology = market_liberal
+loyalty = 1.00
+picture = M577003
+head_of_government = corporate_suit
+foreign_minister = ideological_crusader
+minister_of_security = crime_fighter
+start_date = 1910.1.1
+}
+
+865041 = {
+name = "Ina Willekes-MacDonald"
+ideology = stalinist
+loyalty = 1.00
+picture = M8141
+minister_of_intelligence = dismal_enigma
+start_date = 1933.1.1
+}
+
+15008 = {
+name = "Izaak Reynders"
+ideology = social_conservative
+loyalty = 1.00
+picture = M8008
+chief_of_army = static_defence_doctrine
+start_date = 1933.1.1
+}
+
+840004 = {
+name = "J. Ramaer"
+ideology = social_conservative
+loyalty = 1.00
+picture = unknown
+armament_minister = administrative_genius
+start_date = 1910.1.1
+}
+
+15172 = {
+name = "J.J. Le Roy"
+ideology = social_liberal
+loyalty = 1.00
+picture = 3905
+minister_of_intelligence = dismal_enigma
+start_date = 1910.1.1
+}
+
+865017 = {
+name = "Jacob van Gelderen"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8077
+armament_minister = laissez_faires_capitalist
+start_date = 1933.1.1
+}
+
+865026 = {
+name = "Jacobus Engels"
+ideology = stalinist
+loyalty = 1.00
+picture = M8105
+armament_minister = strategic_air_proponent
+chief_of_staff = school_of_psychology
+start_date = 1933.1.1
+}
+
+15036 = {
+name = "Jacobus Patijn"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8064
+foreign_minister = apologetic_clerk
+start_date = 1937.1.1
+}
+
+865020 = {
+name = "Jacques de Kadt"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8081
+armament_minister = military_entrepreneur
+start_date = 1933.1.1
+}
+
+15061 = {
+name = "James de Booy"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8091
+armament_minister = battle_fleet_proponent
+start_date = 1945.1.1
+}
+
+865028 = {
+name = "Jan Bergmeijer"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8107
+minister_of_security = compassionate_gentleman
+start_date = 1933.1.1
+}
+
+15022 = {
+name = "Jan de Quay"
+ideology = social_conservative
+loyalty = 1.00
+picture = M8050
+head_of_government = happy_amateur
+armament_minister = resource_industrialist
+start_date = 1940.1.1
+}
+
+865002 = {
+name = "Jan Dieters"
+ideology = stalinist
+loyalty = 1.00
+picture = M8041
+head_of_state = autocratic_charmer
+chief_of_air = vertical_envelopment_doctrine
+start_date = 1933.1.1
+}
+
+865038 = {
+name = "Jan Lambertus Faber"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8129
+minister_of_intelligence = political_specialist
+start_date = 1933.1.1
+}
+
+865025 = {
+name = "Jan Postma"
+ideology = stalinist
+loyalty = 1.00
+picture = M8024
+armament_minister = theoretical_scientist
+start_date = 1933.1.1
+}
+
+15100 = {
+name = "Jan Slotemaker"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8132
+minister_of_intelligence = logistics_specialist
+start_date = 1939.1.1
+}
+
+865022 = {
+name = "Jan Tinbergen"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8084
+armament_minister = resource_industrialist
+start_date = 1933.1.1
+}
+
+865010 = {
+name = "Jan van Royen"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8060
+foreign_minister = biased_intellectual
+start_date = 1933.1.1
+}
+
+15116 = {
+name = "Jan van Voorst tot Voorst"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8155
+chief_of_army = static_defence_doctrine
+start_date = 1937.1.1
+}
+
+865059 = {
+name = "Jan Willem Beyen"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8190
+foreign_minister = apologetic_clerk
+start_date = 1933.1.1
+}
+
+15068 = {
+name = "Jannes van Dijk"
+ideology = social_conservative
+loyalty = 1.00
+picture = M8098
+armament_minister = administrative_genius
+start_date = 1940.1.1
+}
+
+15153 = {
+name = "Jean Rambonnet"
+ideology = market_liberal
+loyalty = 1.00
+picture = 2656
+armament_minister = battle_fleet_proponent
+chief_of_navy = open_seas_doctrine
+start_date = 1910.1.1
+}
+
+15063 = {
+name = "Joest van Hamel"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8093
+armament_minister = military_entrepreneur
+start_date = 1946.1.1
+}
+
+865004 = {
+name = "Johan Albarda"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8043
+head_of_government = happy_amateur
+armament_minister = laissez_faires_capitalist
+start_date = 1933.1.1
+}
+
+865031 = {
+name = "Johan Brautigam"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8110
+minister_of_security = prince_of_terror
+start_date = 1933.1.1
+}
+
+840045 = {
+name = "Johan Uhl"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+chief_of_army = static_defence_doctrine
+start_date = 1945.1.1
+}
+
+15006 = {
+name = "Johan W. van Oorschot"
+ideology = social_conservative
+loyalty = 1.00
+picture = M8006
+minister_of_intelligence = dismal_enigma
+start_date = 1933.1.1
+}
+
+15009 = {
+name = "Johannes Furstner"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8009
+chief_of_navy = indirect_approach_doctrine
+start_date = 1933.1.1
+}
+
+15182 = {
+name = "Johannes Harte van Tecklenburg"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3862
+armament_minister = corrupt_kleptocrat
+start_date = 1910.1.1
+}
+
+15062 = {
+name = "Johannes Meynen"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8092
+armament_minister = theoretical_scientist
+start_date = 1945.1.1
+}
+
+15144 = {
+name = "Johannes van Maarseveen"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8194
+minister_of_security = silent_lawyer
+start_date = 1946.1.1
+}
+
+15084 = {
+name = "John Loudon"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8115
+foreign_minister = great_compromiser
+minister_of_security = compassionate_gentleman
+start_date = 1942.1.1
+}
+
+15005 = {
+name = "Josephus H.H. van Schaik"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8005
+minister_of_security = silent_lawyer
+start_date = 1933.1.1
+}
+
+865056 = {
+name = "Juliana"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8186
+head_of_state = popular_figurehead
+start_date = 1933.1.1
+}
+
+865053 = {
+name = "Julius Zegers"
+ideology = stalinist
+loyalty = 1.00
+picture = M8030
+chief_of_air = air_superiority_doctrine
+start_date = 1933.1.1
+}
+
+15134 = {
+name = "Karel Doorman"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8029
+chief_of_navy = open_seas_doctrine
+start_date = 1933.1.1
+}
+
+840021 = {
+name = "Kawan Musso"
+ideology = stalinist
+loyalty = 1.00
+picture = M577013
+head_of_state = autocratic_charmer
+start_date = 1933.1.1
+}
+
+865062 = {
+name = "Kees Staf"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8193
+armament_minister = resource_industrialist
+start_date = 1933.1.1
+}
+
+865018 = {
+name = "Lambertus H. Mansholt"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8078
+armament_minister = resource_industrialist
+start_date = 1933.1.1
+}
+
+15147 = {
+name = "Leendert A. Donker"
+ideology = social_democrat
+loyalty = 1.00
+picture = M8197
+minister_of_security = compassionate_gentleman
+start_date = 1952.1.1
+}
+
+865029 = {
+name = "Louis Beel"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8044
+minister_of_security = man_of_the_people
+start_date = 1933.1.1
+}
+
+865061 = {
+name = "Louis de Visser"
+ideology = leninist
+loyalty = 1.00
+picture = M8192
+armament_minister = theoretical_scientist
+start_date = 1933.1.1
+}
+
+15086 = {
+name = "Louis Einthoven"
+ideology = social_conservative
+loyalty = 1.00
+picture = M8117
+minister_of_security = crime_fighter
+start_date = 1939.1.1
+}
+
+840010 = {
+name = "Ludolph van Oyen"
+ideology = social_conservative
+loyalty = 1.00
+picture = L7859
+chief_of_air = army_aviation_doctrine
+start_date = 1910.1.1
+}
+
+840022 = {
+name = "Lukman dan Sardjono"
+ideology = stalinist
+loyalty = 1.00
+picture = M577027
+head_of_government = ambitious_union_boss
+start_date = 1910.1.1
+}
+
+15010 = {
+name = "Marius Raaijmakers"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8010
+chief_of_air = air_superiority_doctrine
+start_date = 1933.1.1
+}
+
+15183 = {
+name = "Maximilien Kolkman"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3863
+armament_minister = administrative_genius
+start_date = 1910.1.1
+}
+
+15066 = {
+name = "Maximilien Steenberghe"
+ideology = social_conservative
+loyalty = 1.00
+picture = M8096
+armament_minister = air_to_ground_proponent
+start_date = 1942.1.1
+}
+
+15023 = {
+name = "Meinout van Tonningen"
+ideology = national_socialist
+loyalty = 1.00
+picture = M8012
+head_of_government = backroom_backstabber
+foreign_minister = iron_fisted_brute
+start_date = 1937.1.1
+}
+
+15106 = {
+name = "Michiel de Bruyne"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M8139
+minister_of_intelligence = technical_specialist
+start_date = 1945.1.1
+}
+
+
+
+840006 = {
+name = "Murk Boerstra"
+ideology = social_conservative
+loyalty = 1.00
+picture = L7802
+minister_of_intelligence = logistics_specialist
+chief_of_staff = school_of_manoeuvre
+start_date = 1910.1.1
+}
+
+865047 = {
+name = "Nico van Straaten"
+ideology = stalinist
+loyalty = 1.00
+picture = M8028
+chief_of_army = armoured_spearhead_doctrine
+start_date = 1933.1.1
+}
+
+865005 = {
+name = "Nicolaas Beuzemaker"
+ideology = stalinist
+loyalty = 1.00
+picture = M8054
+head_of_government = happy_amateur
+foreign_minister = the_cloak_n_dagger_schemer
+start_date = 1933.1.1
+}
+
+15151 = {
+name = "Nicolaas Bosboom"
+ideology = market_liberal
+loyalty = 1.00
+picture = 2655
+chief_of_staff = school_of_fire_support
+chief_of_army = elastic_defence_doctrine
+start_date = 1910.1.1
+}
+
+15060 = {
+name = "O. van Lidth de Jeude"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8090
+armament_minister = administrative_genius
+start_date = 1942.1.1
+}
+
+15152 = {
+name = "P. Forbes Wels"
+ideology = market_liberal
+loyalty = 1.00
+picture = 3904
+chief_of_staff = school_of_fire_support
+chief_of_army = guns_and_butter_doctrine
+start_date = 1922.1.1
+}
+
+865023 = {
+name = "Peiter Bergsma"
+ideology = stalinist
+loyalty = 1.00
+picture = M8102
+armament_minister = laissez_faires_capitalist
+start_date = 1933.1.1
+}
+
+865051 = {
+name = "Petrus W. Best"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8172
+chief_of_air = naval_aviation_doctrine
+start_date = 1933.1.1
+}
+
+15163 = {
+name = "Pieter Cort van der Linden"
+ideology = social_liberal
+loyalty = 1.00
+picture = 2661
+head_of_government = naive_optimist
+foreign_minister = apologetic_clerk
+minister_of_security = compassionate_gentleman
+start_date = 1910.1.1
+}
+
+15018 = {
+name = "Pieter Gerbrandy"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8046
+head_of_government = flamboyant_tough_guy
+minister_of_security = crime_fighter
+start_date = 1939.1.1
+}
+
+15124 = {
+name = "Pieter Koenraad"
+ideology = fascistic
+loyalty = 1.00
+picture = M8019
+chief_of_navy = base_control_doctrine
+start_date = 1937.1.1
+}
+
+15004 = {
+name = "Pieter Oud"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8004
+armament_minister = submarine_proponent
+start_date = 1933.1.1
+}
+
+15191 = {
+name = "Pieter Rink"
+ideology = social_liberal
+loyalty = 1.00
+picture = 2670
+minister_of_security = silent_lawyer
+start_date = 1910.1.1
+}
+
+15170 = {
+name = "Pieter Troelstra"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = 2663
+head_of_government = happy_amateur
+start_date = 1910.1.1
+}
+
+15033 = {
+name = "Pim van Boetzelaer"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8061
+foreign_minister = general_staffer
+start_date = 1946.1.1
+}
+
+
+840047 = {
+name = "Raymond Westerling"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M577006
+chief_of_army = decisive_battle_doctrine
+start_date = 1946.1.1
+}
+
+15164 = {
+name = "Reneke de Marees van Swinderen"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3859
+foreign_minister = great_compromiser
+start_date = 1910.1.1
+}
+
+840044 = {
+name = "Rudolph Bakkers"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = L7800
+chief_of_army = static_defence_doctrine
+start_date = 1941.1.1
+}
+
+840024 = {
+name = "Ruskak"
+ideology = leninist
+loyalty = 1.00
+picture = unknown
+armament_minister = resource_industrialist
+start_date = 1910.1.1
+}
+
+865003 = {
+name = "Saul de Groot"
+ideology = stalinist
+loyalty = 1.00
+picture = M8021
+head_of_state = ruthless_powermonger
+foreign_minister = ideological_crusader
+start_date = 1933.1.1
+}
+
+865008 = {
+name = "Servatius Baart"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8057
+foreign_minister = great_compromiser
+start_date = 1933.1.1
+}
+
+15184 = {
+name = "Simon de Vries Czn"
+ideology = social_conservative
+loyalty = 1.00
+picture = 2667
+armament_minister = resource_industrialist
+start_date = 1918.1.1
+}
+
+15104 = {
+name = "Simon Spoor"
+ideology = social_conservative
+loyalty = 1.00
+picture = M8137
+minister_of_intelligence = naval_intelligence_specialist
+chief_of_staff = school_of_psychology
+start_date = 1942.1.1
+}
+
+840034 = {
+name = "Sjafruddin Prawiranegara"
+ideology = social_conservative
+loyalty = 1.00
+picture = M577022
+head_of_state = insignificant_layman
+head_of_government = political_protege
+armament_minister = administrative_genius
+start_date = 1944.1.1
+}
+
+840011 = {
+name = "Sukarno"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M577011
+head_of_state = weary_stiff_neck
+start_date = 1933.1.1
+}
+
+840023 = {
+name = "Suryono Suripno"
+ideology = stalinist
+loyalty = 1.00
+picture = M577021
+foreign_minister = ideological_crusader
+start_date = 1910.1.1
+}
+
+
+840027 = {
+name = "Tan Malaka"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M577042
+chief_of_staff = school_of_psychology
+chief_of_army = decisive_battle_doctrine
+chief_of_navy = open_seas_doctrine
+chief_of_air = army_aviation_doctrine
+start_date = 1910.1.1
+}
+
+865063 = {
+name = "Teun Struiken"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8195
+minister_of_security = back_stabber
+start_date = 1933.1.1
+}
+
+865043 = {
+name = "Thomas Struik"
+ideology = stalinist
+loyalty = 1.00
+picture = M8027
+chief_of_staff = school_of_mass_combat
+start_date = 1933.1.1
+}
+
+15056 = {
+name = "Tietse Pieter Sevensma"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8086
+armament_minister = laissez_faires_capitalist
+start_date = 1939.1.1
+}
+
+15058 = {
+name = "W.G. van Wettum"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8088
+armament_minister = tank_proponent
+start_date = 1941.1.1
+}
+
+865055 = {
+name = "Wilhelmina"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8001
+head_of_state = stern_imperialist
+start_date = 1933.1.1
+}
+
+15083 = {
+name = "Wilhelmus Andriessen"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8114
+minister_of_security = prince_of_terror
+start_date = 1940.1.1
+}
+
+865039 = {
+name = "Willem Drees"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8130
+head_of_government = ambitious_union_boss
+minister_of_intelligence = logistics_specialist
+start_date = 1933.1.1
+}
+
+15155 = {
+name = "Willem Naudin ten Cate"
+ideology = market_liberal
+loyalty = 1.00
+picture = 2657
+foreign_minister = general_staffer
+chief_of_navy = decisive_naval_battle_doctrine
+start_date = 1918.1.1
+}
+
+15019 = {
+name = "Willem Schermerhorn"
+ideology = market_liberal
+loyalty = 1.00
+picture = M8047
+head_of_government = naive_optimist
+armament_minister = resource_industrialist
+start_date = 1945.1.1
+}
+
+15185 = {
+name = "Willem Treub"
+ideology = social_liberal
+loyalty = 1.00
+picture = 2668
+armament_minister = resource_industrialist
+start_date = 1910.1.1
+}
+
+865016 = {
+name = "Willem van Ravesteyn"
+ideology = stalinist
+loyalty = 1.00
+picture = M8023
+foreign_minister = apologetic_clerk
+start_date = 1933.1.1
+}
+
+865060 = {
+name = "Wim Schokking"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M8191
+armament_minister = air_to_ground_proponent
+start_date = 1933.1.1
+}
+
+
+}
+

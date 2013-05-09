@@ -1,0 +1,3391 @@
+color = { 116  116  116 }
+graphical_culture = German
+
+major = yes
+last_election = 1907.1.25
+duration = 60
+
+
+default_templates = {
+	Infanterie = {
+		infantry_brigade
+		infantry_brigade
+		artillery_brigade
+	}
+	Kavallerie = {
+		cavalry_brigade
+		cavalry_brigade
+		engineer_brigade
+	}
+	Leichte = {
+		light_armor_brigade
+		cavalry_brigade
+		engineer_brigade
+	}
+	Bergsjäger = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+		artillery_brigade
+	}
+	Garde = {
+		waffen_brigade 
+		waffen_brigade  
+		artillery_brigade 
+	}
+}
+
+
+unit_names = {
+
+armor_brigade = { 
+"1. Panzer-Division" "2. Panzer-Division" "3. Panzer-Division" "4. Panzer-Division" "5. Panzer-Division" "10. Panzer-Division" "6. Panzer-Division" "7. Panzer-Division" "8. Panzer-Division" "9. Panzer-Division" "11. Panzer-Division" "14. Panzer-Division" "12. Panzer-Division" "13. Panzer-Division" "15. Panzer-Division" "16. Panzer-Division" "17. Panzer-Division" "18. Panzer-Division" "19. Panzer-Division" "20. Panzer-Division" "21. Panzer-Division" "22. Panzer-Division" "23. Panzer-Division" "24. Panzer-Division" "25. Panzer-Division" "26. Panzer-Division" "27. Panzer-Division" "178. Reserve-Panzer-Division" "179. Reserve-Panzer-Division" "155. Reserve-Panzer-Division" "233. Reserve-Panzer-Division" "130. Panzer-Lehr-Division" "116. Panzer-Division" "232. Panzer-Division" "28. Panzer-Division" "29. Panzer-Division" "30. Panzer-Division" "31. Panzer-Division" "32. Panzer-Division" "33. Panzer-Division" "34. Panzer-Division" "35. Panzer-Division" "36. Panzer-Division" "37. Panzer-Division" "38. Panzer-Division" "39. Panzer-Division" "40. Panzer-Division" "41. Panzer-Division" "42. Panzer-Division" "43. Panzer-Division" "44. Panzer-Division" "45. Panzer-Division" "46. Panzer-Division" "47. Panzer-Division" "48. Panzer-Division" "49. Panzer-Division" "50. Panzer-Division" "51. Panzer-Division" "52. Panzer-Division" "53. Panzer-Division" "54. Panzer-Division" "55. Panzer-Division" "56. Panzer-Division" "57. Panzer-Division" "58. Panzer-Division" "59. Panzer-Division" "60. Panzer-Division" "61. Panzer-Division" "62. Panzer-Division" "63. Panzer-Division" "64. Panzer-Division" "65. Panzer-Division" "66. Panzer-Division" "67. Panzer-Division" "68. Panzer-Division" "69. Panzer-Division" "70. Panzer-Division" "71. Panzer-Division" "72. Panzer-Division" "73. Panzer-Division" "74. Panzer-Division" "75. Panzer-Division" "76. Panzer-Division" "77. Panzer-Division" "78. Panzer-Division" "79. Panzer-Division" "80. Panzer-Division" "81. Panzer-Division" "82. Panzer-Division" "83. Panzer-Division" "84. Panzer-Division" "85. Panzer-Division" "86. Panzer-Division" "87. Panzer-Division" "88. Panzer-Division" "89. Panzer-Division" "90. Panzer-Division" "91. Panzer-Division" "92. Panzer-Division" "93. Panzer-Division" "94. Panzer-Division" "95. Panzer-Division" "96. Panzer-Division" "97. Panzer-Division" "98. Panzer-Division" "99. Panzer-Division" "100. Panzer-Division"
+} 
+battlecruiser = { 
+"SMS Von der Tann" "SMS Moltke" "SMS Goeben" "SMS Seydlitz" "SMS Derfflinger" "SMS Lützow" "SMS Hindenburg" "SMS Mackensen" "SMS Graf Spee" "SMS Prinz Eitel Friedrich" "SMS Fürst Bismarck" "SMS Ersatz Yorck" "SMS Ersatz Gneisenau" "SMS Ersatz Scharnhorst" "SMS Niederschlesien" "SMS Essen" "SMS Düsseldorf" "SMS Westfalen-Nord" "SMS Köln-Aachen" "SMS Kurhessen" "SMS Oberdonau" "SMS Hessen-Nassau" "SMS Moselland" "SMS Oberschlesien" "SMS Osthannover" "SMS Elsaß" "SMS Westmark" "SMS Berlin" "SMS Sudetenland" "SMS Westfalen-Süd" "SMS Mainfranken" "SMS Danzig-Westpreußen" "SMS Franken" "SMS Würtemberg Hohenzollern" "SMS Baden" "SMS Schwaben" "SMS Salzburg" "SMS Lothringen" "SMS Niederdonau" "SMS Wien" "SMS Steiermark" "SMS Kärnten" "SMS Tirol-Voralberg" "SMS Wartheland" "SMS Robau"
+} 
+dreadnaught = { 
+"SMS Kurfürst Friedrich Wilhelm" "SMS Brandenburg" "SMS Weißenburg" "SMS Wörth" "SMS Kaiser Friedrich III" "SMS Kaiser Wilhelm II" "SMS Kaiser Wilhelm der Große" "SMS Kaiser Karl der Große" "SMS Kaiser Barbarossa" "SMS Wittelsbach" "SMS Wettin" "SMS Zähringen" "SMS Schwaben" "SMS Mecklenburg" "SMS Braunschweig" "SMS Elsaß" "SMS Hessen" "SMS Preußen" "SMS Lothringen" "SMS Deutschland" "SMS Hannover" "SMS Pommern" "SMS Schlesien" "SMS Schleswig-Holstein" "SMS Nassau" "SMS Posen" "SMS Rheinland" "SMS Westfalen" "SMS Helgoland" "SMS Ostfriesland" "SMS Thüringen" "SMS Oldenburg" "SMS Kaiser" "SMS Kaiserin" "SMS Prinzregent Luitpold" "SMS Friedrich der Große" "SMS König Albert" "SMS König" "SMS Großer Kurfürst" "SMS Markgraf" "SMS Kronprinz Wilhelm" "SMS Bayern" "SMS Baden" "SMS Württemberg" "SMS Sachsen"
+} 
+bergsjaeger_brigade = { 
+"Alpenkorps" "1. Gebirgsjäger-Division" "2. Gebirgsjäger-Division" "3. Gebirgsjäger-Division" "6. Gebirgsjäger-Division" "4. Gebirgsjäger-Division" "5. Gebirgsjäger-Division" "7. Gebirgsjäger-Division" "188. Gebirgsjäger-Division" "157. Gebirgsjäger-Division" "9. Gebirgsjäger-Division" "8. Gebirgsjäger-Division" "1. Skijäger-Division" "10. Gebirgsjäger-Division" "11. Gebirgsjäger-Division" "12. Gebirgsjäger-Division" "13. Gebirgsjäger-Division" "14. Gebirgsjäger-Division" "15. Gebirgsjäger-Division" "16. Gebirgsjäger-Division" "17. Gebirgsjäger-Division" "18. Gebirgsjäger-Division" "19. Gebirgsjäger-Division" "20. Gebirgsjäger-Division" "6. Gebirgsjäger-Division" "158. Gebirgsjäger-Division" "189. Gebirgsjäger-Division" "190. Gebirgsjäger-Division" "191. Gebirgsjäger-Division" "192. Gebirgsjäger-Division" "193. Gebirgsjäger-Division" "194. Gebirgsjäger-Division" "195. Gebirgsjäger-Division"
+} 
+carrier = { 
+"SMS Graf Zeppelin" "SMS Peter Strasser" "SMS Seydlitz" "SMS Clausewitz" "SMS Barbarossa" "SMS Seelöwe" "SMS Amerika" "SMS Rheingold" "SMS Siegfried" "SMS Parsifal" "SMS Lohengrin" "SMS Germania" "SMS Richthofen" "SMS Otto Lilienthal" "SMS Hermann Göring" "SMS Hugo Junkers" "SMS Claude Dornier" "SMS Ernst Heinkel" "SMS Wilhelm Messerschmitt" "SMS Hans Klemm" "SMS Richard Wagner" "SMS Johann Wolfgang von Goethe" "SMS Friedrich Schiller"
+} 
+cavalry_brigade = { 
+"Garde-Kavallerie-Division" "Bayerische Kavallerie-Division" "1. Kavallerie-Division" "2. Kavallerie-Division" "3. Kavallerie-Division" "4. Kavallerie-Division" "5. Kavallerie-Division" "6. Kavallerie-Division" "7. Kavallerie-Division" 
+		"8. Kavallerie-Division" "9. Kavallerie-Division" "10. Kavallerie-Division" "11. Kavallerie-Division" "12. Kavallerie-Division" "13. Kavallerie-Division" "14. Kavallerie-Division" "15. Kavallerie-Division" "16. Kavallerie-Division" "17. Kavallerie-Division" "18. Kavallerie-Division" 
+		"19. Kavallerie-Division" "20. Kavallerie-Division" 
+	}
+destroyer = { 
+"1. Zerstörergeschwader" "2. Zerstörergeschwader" "3. Zerstörergeschwader" "4. Zerstörergeschwader" "5. Zerstörergeschwader" "6. Zerstörergeschwader" "7. Zerstörergeschwader" "8. Zerstörergeschwader" "9. Zerstörergeschwader" "10. Zerstörergeschwader" "11. Zerstörergeschwader" "12. Zerstörergeschwader" "13. Zerstörergeschwader" "14. Zerstörergeschwader" "15. Zerstörergeschwader" "16. Zerstörergeschwader" "17. Zerstörergeschwader" "18. Zerstörergeschwader" "19. Zerstörergeschwader" "20. Zerstörergeschwader" "21. Zerstörergeschwader" "22. Zerstörergeschwader" "23. Zerstörergeschwader" "24. Zerstörergeschwader" "25. Zerstörergeschwader" "26. Zerstörergeschwader" "27. Zerstörergeschwader" "28. Zerstörergeschwader" "29. Zerstörergeschwader" "30. Zerstörergeschwader" "31. Zerstörergeschwader" "32. Zerstörergeschwader" "33. Zerstörergeschwader" "34. Zerstörergeschwader" "35. Zerstörergeschwader" "36. Zerstörergeschwader" "37. Zerstörergeschwader" "38. Zerstörergeschwader" "39. Zerstörergeschwader" "40. Zerstörergeschwader" "41. Zerstörergeschwader" "42. Zerstörergeschwader" "43. Zerstörergeschwader" "44. Zerstörergeschwader" "45. Zerstörergeschwader" "46. Zerstörergeschwader" "47. Zerstörergeschwader" "48. Zerstörergeschwader" "49. Zerstörergeschwader" "50. Zerstörergeschwader" "51. Zerstörergeschwader" "52. Zerstörergeschwader" "53. Zerstörergeschwader" "54. Zerstörergeschwader" "55. Zerstörergeschwader" "56. Zerstörergeschwader" "57. Zerstörergeschwader" "58. Zerstörergeschwader" "59. Zerstörergeschwader" "60. Zerstörergeschwader" "61. Zerstörergeschwader" "62. Zerstörergeschwader" "63. Zerstörergeschwader" "64. Zerstörergeschwader" "65. Zerstörergeschwader" "66. Zerstörergeschwader" "67. Zerstörergeschwader" "68. Zerstörergeschwader" "69. Zerstörergeschwader" "70. Zerstörergeschwader" "71. Zerstörergeschwader" "72. Zerstörergeschwader" "73. Zerstörergeschwader" "74. Zerstörergeschwader" "75. Zerstörergeschwader" "76. Zerstörergeschwader" "77. Zerstörergeschwader" "78. Zerstörergeschwader" "79. Zerstörergeschwader" "80. Zerstörergeschwader" "81. Zerstörergeschwader" "82. Zerstörergeschwader" "83. Zerstörergeschwader" "84. Zerstörergeschwader" "85. Zerstörergeschwader" "86. Zerstörergeschwader" "87. Zerstörergeschwader" "88. Zerstörergeschwader" "89. Zerstörergeschwader" "90. Zerstörergeschwader" "91. Zerstörergeschwader" "92. Zerstörergeschwader" "93. Zerstörergeschwader" "94. Zerstörergeschwader" "95. Zerstörergeschwader" "96. Zerstörergeschwader" "97. Zerstörergeschwader" "98. Zerstörergeschwader" "99. Zerstörergeschwader" "100. Zerstörergeschwader"
+} 
+escort_carrier = { 
+"SMS Weser" "SMS Elbe" "SMS Jade" "SMS Main" "SMS Neckar" "SMS Lahn" "SMS Rhein" "SMS Saale"
+} 
+garrison_brigade = { 
+"52. Sicherungs-Division" "201. Sicherungs-Division" "203. Sicherungs-Division" "207. Sicherungs-Division" "213. Sicherungs-Division" "141. Reserve-Division" "221. Sicherungs-Division" "143. Reserve-Division" "281. Sicherungs-Division" "285. Sicherungs-Division" "147. Reserve-Division" "286. Sicherungs-Division" "325. Sicherungs-Division" "400. Ersatz-Division" "390. Sicherungs-Division" "391. Sicherungs-Division" "148. Reserve-Division" "403. Sicherungs-Division" "444. Sicherungs-Division" "151. Reserve-Division" "454. Sicherungs-Division" "41. Festungs-Division" "717. Sicherungs-Division" "133. Festungs-Division" "718. Sicherungs-Division" "153. Reserve-Division" "719. Sicherungs-Division" "402. Ausbildungs-Division" "720. Sicherungs-Division" "721. Sicherungs-Division" "154. Reserve-Division" "722. Sicherungs-Division" "723. Sicherungs-Division" "724. Sicherungs-Division" "156. Reserve-Division" "725. Sicherungs-Division" "726. Sicherungs-Division" "157. Reserve-Division" "727. Sicherungs-Division" "158. Reserve-Division" "159. Reserve-Division" "856. Sicherungs-Division" "859. Sicherungs-Division" "160. Reserve-Division" "877. Sicherungs-Division" "735. Sicherungs-Division" "165. Reserve-Division" "812. Sicherungs-Division" "895. Sicherungs-Division" "166. Reserve-Division" "742. Sicherungs-Division" "171. Reserve-Division" "785. Sicherungs-Division" "172. Reserve-Division" "173. Reserve-Division" "182. Reserve-Division" "188. Reserve-Gebirgs-Division" "160. Infanterie-Division" "166. Infanterie-Division" "182. Infanterie-Division" "219. Infanterie-Division" "226. Infanterie-Division" "232. Infanterie-Division" "236. Infanterie-Division" "249. Infanterie-Division" "281. Infanterie-Division" "303. Infanterie-Division" "309. Infanterie-Division" "324. Infanterie-Division" "703. Infanterie-Division" "719. Infanterie-Division" "827. Infanterie-Division"
+} 
+heavy_cruiser = { 
+"SMS Fürst Bismarck" "SMS Prinz Heinrich" "SMS Prinz Adalbert" "SMS Friedrich Carl" "SMS Roon" "SMS Yorck" "SMS Scharnhorst" "SMS Gneisenau" "SMS Blücher" "SMS Admiral Hipper" "SMS Blücher" "SMS Prinz Eugen" "SMS Lützow" "SMS Admiral Scheer" "SMS Admiral Graf Spee" "SMS Deutschland" "SMS Frithjof" "SMS Friedrich Carl" "SMS Horst Wessel" "SMS Götz von Berlichingen" "SMS Admiral Pohl" "SMS Admiral Holtzendorff" "SMS Admiral Deinhard" "SMS Admiral Zenker" "SMS Admiral von Knorr" "SMS Admiral Souchon" "SMS von der Gröben" "SMS Graf von Schwerin" "SMS Goeben" "SMS Bülow" "SMS Falkenhayn" "SMS Hoffmann" "SMS Moritz" "SMS Zieten" "SMS Bevan" "SMS Kleist" "SMS Bethmann-Hollweg" "SMS Stosch" "SMS Stein" "SMS Steuben" "SMS Yorck" "SMS von der Tann" "SMS Derfflinger" "SMS Moltke" "SMS Mackensen" "SMS Clausewitz" "SMS Seydlitz" "SMS Großer Kurfürst" "SMS Reichsmarschall" "SMS Adolf Lüderitz" "SMS Gorch Fock" "SMS Friedrich Carl" "SMS Plüschow" "SMS Coronel" "SMS Wörth" "SMS Weissenburg" "SMS Großadmiral Raeder" "SMS Admiral Hipper" "SMS Blücher" "SMS Prinz Eugen" "SMS Lützow" "SMS Admiral Scheer" "SMS Admiral Graf Spee" "SMS Deutschland" "SMS Frithjof" "SMS Friedrich Carl" "SMS Horst Wessel" "SMS Götz von Berlichingen" "SMS Admiral Pohl" "SMS Admiral Holtzendorff" "SMS Admiral Deinhard" "SMS Admiral Zenker" "SMS Admiral von Knorr" "SMS Admiral Souchon" "SMS von der Gröben" "SMS Graf von Schwerin" "SMS Roon" "SMS Goeben" "SMS Bülow" "SMS Falkenhayn" "SMS Hoffmann" "SMS Moritz" "SMS Zieten" "SMS Bevan" "SMS Kleist" "SMS Bethmann-Hollweg" "SMS Stosch" "SMS Stein" "SMS Steuben" "SMS Yorck" "SMS von der Tann" "SMS Derfflinger" "SMS Moltke" "SMS Mackensen" "SMS Clausewitz" "SMS Seydlitz" "SMS Großer Kurfürst" "SMS Reichsmarschall" "SMS Adolf Lüderitz" "SMS Gorch Fock" "SMS Friedrich Carl" "SMS Plüschow" "SMS Coronel" "SMS Wörth" "SMS Weissenburg" "SMS Albert Speer" "SMS Joseph Goebbels" "SMS Wernher von Braun" "SMS Großadmiral Raeder" "SMS Admiral Hipper" "SMS Blücher" "SMS Prinz Eugen" "SMS Lützow" "SMS Admiral Scheer" "SMS Admiral Graf Spee" "SMS Deutschland" "SMS Frithjof" "SMS Friedrich Carl" "SMS Horst Wessel" "SMS Götz von Berlichingen" "SMS Admiral Pohl" "SMS Admiral Holtzendorff" "SMS Admiral Deinhard" "SMS Admiral Zenker" "SMS Admiral von Knorr" "SMS Admiral Souchon" "SMS von der Gröben" "SMS Graf von Schwerin" "SMS Heimdall" "SMS Hildebrand" "SMS Beowulf"
+} 
+hq_brigade = { 
+"1. Armee" "2. Armee" "3. Armee" "4. Armee" "5. Armee" "6. Armee" "7. Armee" "8. Armee" "9. Armee" "10. Armee" "11. Armee" "12. Armee" "13. Armee" "14. Armee" "15. Armee" "16. Armee" "17. Armee" "18. Armee" "19. Armee" "20. Armee" "21. Armee" "22. Armee" "23. Armee" "24. Armee" "25. Armee"
+} 
+infantry_brigade = { 
+	"1. Kgl. Bayerische Infanterie-Division" "2. Kgl. Bayerische Infanterie-Division" "3. Kgl. Bayerische Infanterie-Division" "4. Kgl. Bayerische Infanterie-Division" "5. Kgl. Bayerische Infanterie-Division" "6. Kgl. Bayerische Infanterie-Division" "1. Infanterie-Division" "2. Infanterie-Division" "3. Infanterie-Division" "4. Infanterie-Division" "5. Infanterie-Division" "6. Infanterie-Division" "7. Infanterie-Division" "8. Infanterie-Division" "9. Infanterie-Division" "10. Infanterie-Division" 
+		"11. Infanterie-Division" "12. Infanterie-Division" "13. Infanterie-Division" "14. Infanterie-Division" "15. Infanterie-Division" "16. Infanterie-Division" "17. Infanterie-Division" "18. Infanterie-Division" "19. Infanterie-Division" "20. Infanterie-Division" "21. Infanterie-Division" 
+		"22. Infanterie-Division" "23. (1. Kgl. Sächsisches) Inf.-Div." "24. (2. Kgl. Sächsisches) Inf.-Div." "25. (Großherzoglich Hessisch) Inf.-Div." "26. (1. Kgl. Württemberg) Inf.-Div." "27. (2. Kgl. Württemberg) Inf.-Div." "28. Infanterie-Division" "29. (Großherzoglich Badische) Inf.-Div." "30. Infanterie-Division" "31. Infanterie-Division" "32. (3. Kgl. Sächsisches) Inf.-Div." 
+		"33. Infanterie-Division" "34. Infanterie-Division" "35. Infanterie-Division" "36. Infanterie-Division" "37. Infanterie-Division" "38. Infanterie-Division" "39. Infanterie-Division" "40. (4. Kgl. Sächsisches) Inf.-Div." "41. Infanterie-Division" "42. Infanterie-Division"
+		"50. Infanterie-Division" "1. Kgl. Bayerische Reserve-Division" "5. Kgl. Bayerische Reserve-Division" "6. Kgl. Bayerische Reserve-Division" "8. Kgl. Bayerische Reserve-Division" "9. Kgl. Bayerische Reserve-Division" "1. Reserve-Division" "3. Reserve-Division" "5. Reserve-Division" "6. Reserve-Division" "7. Reserve-Division" 
+		"9. Reserve-Division" "10. Reserve-Division" "11. Reserve-Division" "12. Reserve-Division" "13. Reserve-Division" "14. Reserve-Division" "15. Reserve-Division" "16. Reserve-Division" "17. Reserve-Division" "18. Reserve-Division" "19. Reserve-Division" 
+		"21. Reserve-Division" "22. Reserve-Division" "23. (1. Kgl. Sächsisches) Res.-Div." "24. (2. Kgl. Sächsisches) Res.-Div." "25. Reserve-Division" "26. Reserve-Division" "28. Reserve-Division" "1. Kgl. Bayerische Landwehr-Division" "2. Kgl. Bayerische Landwehr-Division" "6. Kgl. Bayerische Landwehr-Division" "1. Landwehr-Division" "2. Landwehr-Division" "3. Landwehr-Division" "4. Landwehr-Division" "5. Landwehr-Division" "7. (Kgl. Württemberg) Landwehr-Div." "8. Landwehr-Division" "9. Landwehr-Division" "4. Ersatz-Division" "5. Ersatz-Division" "8. Ersatz-Division" "10. Ersatz-Division" "19. (Kgl. Sächsisches) Ersatz-Div." "Kgl. Bayerische Ersatz-Division" "30. Kgl. Bayerische Reserve-Division" "33. Reserve-Division" "35. Reserve-Division" "36. Reserve-Division" 
+		"39. Kgl. Bayerische Reserve-Division" "43. Reserve-Division" "44. Reserve-Division" "45. Reserve-Division" "46. Reserve-Division" "47. Reserve-Division" "48. Reserve-Division" "49. Reserve-Division" "50. Reserve-Division" "51. Reserve-Division" "52. Reserve-Division" 
+		"53. (3. Kgl. Sächsisches) Res.-Div." "54. Reserve-Division" "75. Reserve-Division" "76. Reserve-Division" "77. Reserve-Division" "78. Reserve-Division" "79. Reserve-Division" "80. Reserve-Division" "82. Reserve-Division" "85. Landwehr-Division" "10. Kgl. Bayerische Infanterie-Division" "11. Kgl. Bayerische Infanterie-Division" 
+		"52. Infanterie-Division" "54. Infanterie-Division" "56. Infanterie-Division" "58. (5. Kgl. Sächsisches) Inf.-Div." "83. Infanterie-Division" "84. Infanterie-Division" "86. Infanterie-Division" "87. Infanterie-Division" "88. Infanterie-Division" "89. Infanterie-Division" "91. Infanterie-Division" 
+		"92. Infanterie-Division" "93. Infanterie-Division" "94. Infanterie-Division" "95. Infanterie-Division" "96. (6. Kgl. Sächsisches) Inf.-Div." "101. Infanterie-Division" "103. Infanterie-Division" "105. Infanterie-Division" "107. Infanterie-Division" "108. Infanterie-Division" "109. Infanterie-Division" 
+		"111. Infanterie-Division" "113. Infanterie-Division" "115. Infanterie-Division" "117. Infanterie-Division" "119. Infanterie-Division" "121. Infanterie-Division" "123. (7. Kgl. Sächsisches) Inf.-Div." "183. Infanterie-Division" "185. Infanterie-Division" "187. Infanterie-Division" "192. (8. Kgl. Sächsisches) Inf.-Div." 
+		"195. Infanterie-Division" "197. Infanterie-Division" "199. Infanterie-Division" "10. Landwehr-Division" "11. Landwehr-Division" "12. Landwehr-Division" "13. Landwehr-Division" "14. Landwehr-Division" "15. Landwehr-Division" "16. Landwehr-Division" "17. Landwehr-Division" 
+		"18. Landwehr-Division" "19. Landwehr-Division" "20. Landwehr-Division" "21. Landwehr-Division" "22. Landwehr-Division" "23. Landwehr-Division" "25. Landwehr-Division" "26. Landwehr-Division" "38. Landwehr-Division" "44. Landwehr-Division" "45. (1. Kgl. Sächsisches) Landwehr-Div." 
+		"46. (2. Kgl. Sächsisches) Landwehr-Div." "47. (3. Kgl. Sächsisches) Landwehr-Div." "48. Landwehr-Division" "200. Infanterie-Division" "201. Infanterie-Division" "202. Infanterie-Division" "203. Infanterie-Division" "204. Infanterie-Division" "205. Infanterie-Division" "206. Infanterie-Division" "207. Infanterie-Division" 
+		"208. Infanterie-Division" "211. Infanterie-Division" "212. (9. Kgl. Sächsisches) Inf.-Div." "213. Infanterie-Division" "214. Infanterie-Division" "215. Infanterie-Division" "216. Infanterie-Division" "217. Infanterie-Division" "218. Infanterie-Division" "219. (10. Kgl. Sächsisches) Inf.-Div." "220. Infanterie-Division" 
+		"221. Infanterie-Division" "222. Infanterie-Division" "223. Infanterie-Division" "224. Infanterie-Division" "225. Infanterie-Division" "226. Infanterie-Division" "227. Infanterie-Division" "228. Infanterie-Division" "231. Infanterie-Division" "232. Infanterie-Division" "233. Infanterie-Division" 
+		"234. Infanterie-Division" "235. Infanterie-Division" "236. Infanterie-Division" "237. Infanterie-Division" "238. Infanterie-Division" "239. Infanterie-Division" "240. Infanterie-Division" "241. (11. Kgl. Sächsisches) Inf.-Div." "242. Infanterie-Division" "243. Infanterie-Division" "255. Infanterie-Division" 
+		"301. Infanterie-Division" "302. Infanterie-Division" "303. Infanterie-Division" 
+	}
+interceptor = { 
+"Jagdgeschwader 2" "Jagdgeschwader 3" "Jagdgeschwader 26" "Jagdgeschwader 53" "Jagdgeschwader 20" "Jagdgeschwader 21" "Jagdgeschwader 70" "Jagdgeschwader 71" "Jagdgeschwader 72" "Jagdgeschwader 52" "Jagdgeschwader 77" "Jagdgeschwader 27" "Jagdgeschwader 433" "Jagdgeschwader 51" "Jagdgeschwader 1" "Jagdgeschwader 54" "Jagdgeschwader 28" "Jagdgeschwader 5" "Jagdgeschwader 7" "Jagdgeschwader 103" "Jagdgeschwader 101" "Jagdgeschwader 107" "Jagdgeschwader 102" "Jagdgeschwader 105" "Jagdgeschwader 104" "Jagdgeschwader 106" "Jagdgeschwader 11" "Jagdgeschwader 300" "Jagdgeschwader 50" "Jagdgeschwader 108" "Jagdgeschwader 25" "Jagdgeschwader 301" "Jagdgeschwader 110" "Jagdgeschwader 302" "Jagdgeschwader zbV" "Jagdgeschwader 109" "Jagdgeschwader 4" "Jagdgeschwader 6" "Jagdgeschwader 112" "Jagdgeschwader 113" "Jagdgeschwader 111" "Jagdgeschwader 76" "Jagdgeschwader 117" "Jagdgeschwader 114" "Jagdgeschwader 115" "Jagdgeschwader 116" "Jagdgeschwader 400" "Jagdgeschwader 401" "Jagdgeschwader 402" "Jagdgeschwader 403" "Jagdgeschwader 404" "Jagdgeschwader 405" "Jagdgeschwader 406" "Jagdgeschwader 407" "Jagdgeschwader 408" "Jagdgeschwader 409" "Jagdgeschwader 410" "Jagdgeschwader 411" "Jagdgeschwader 412" "Jagdgeschwader 413" "Jagdgeschwader 414" "Jagdgeschwader 415" "Jagdgeschwader 416" "Jagdgeschwader 417" "Jagdgeschwader 418" "Jagdgeschwader 419" "Jagdgeschwader 420" "Jagdgeschwader 421" "Jagdgeschwader 422" "Jagdgeschwader 423" "Jagdgeschwader 424" "Jagdgeschwader 425" "Jagdgeschwader 426" "Jagdgeschwader 427" "Jagdgeschwader 428" "Jagdgeschwader 429" "Jagdgeschwader 430" "Jagdgeschwader 431" "Jagdgeschwader 441" "Jagdgeschwader 451" "Jagdgeschwader 461" "Jagdgeschwader 471" "Jagdgeschwader 481" "Jagdgeschwader 491" "Jagdgeschwader 501" "Jagdgeschwader 511" "Jagdgeschwader 521"
+} 
+light_armor_brigade = { 
+	"1. Leichte-Division" "2. Leichte-Division" "3. Leichte-Division" "4. Leichte-Division" "5. Leichte-Division" "10. Leichte-Division" "6. Leichte-Division" "7. Leichte-Division" "8. Leichte-Division" "9. Leichte-Division" "11. Leichte-Division" 
+		"14. Leichte-Division" "12. Leichte-Division" "13. Leichte-Division" "15. Leichte-Division" "16. Leichte-Division" "17. Leichte-Division" "18. Leichte-Division" "19. Leichte-Division" "20. Leichte-Division" "21. Leichte-Division" "22. Leichte-Division" 
+		"Fallschirm Pz-Div. 'Hermann Goering'" "23. Leichte-Division" "24. Leichte-Division" "25. Leichte-Division" "26. Leichte-Division" "27. Leichte-Division" "178. Reserve-Leichte-Division" "179. Reserve-Leichte-Division" "155. Reserve-Leichte-Division" "233. Reserve-Leichte-Division" "130. Leichte-Lehr-Division" 
+		"Leichte-Division 'Norwegen'" "116. Leichte-Division" "Leichte-Division 'Tatra'" "Leichte-Division 'Feldherrnhalle'" "232. Leichte-Division" "Leichte-Division 'Clausewitz'" "Leichte-Division 'Schlesien'" "Leichte-Division 'Holstein'" "Leichte-Division 'Juterbog'" "Leichte-Division 'Kurmark'" "Leichte-Division 'Muncheberg'" 
+		"Leichte-Division 'Kempf'" "Leichte-Division 'Döberitz'" "28. Leichte-Division" "29. Leichte-Division" "30. Leichte-Division" "31. Leichte-Division" "32. Leichte-Division" "33. Leichte-Division" "34. Leichte-Division" "35. Leichte-Division" "36. Leichte-Division"  
+		"37. Leichte-Division" "38. Leichte-Division" "39. Leichte-Division" "40. Leichte-Division" "41. Leichte-Division" "42. Leichte-Division" "43. Leichte-Division" "44. Leichte-Division" "45. Leichte-Division" "46. Leichte-Division" "47. Leichte-Division" 
+		"48. Leichte-Division" "49. Leichte-Division" "50. Leichte-Division" "51. Leichte-Division" "52. Leichte-Division" "53. Leichte-Division" "54. Leichte-Division" "55. Leichte-Division" "56. Leichte-Division" "57. Leichte-Division" "58. Leichte-Division" 
+		"59. Leichte-Division" "60. Leichte-Division" "61. Leichte-Division" "62. Leichte-Division" "63. Leichte-Division" "64. Leichte-Division" "65. Leichte-Division" "66. Leichte-Division" "67. Leichte-Division" "68. Leichte-Division" "69. Leichte-Division" 
+		"70. Leichte-Division" "71. Leichte-Division" "72. Leichte-Division" "73. Leichte-Division" "74. Leichte-Division" "75. Leichte-Division" "76. Leichte-Division" "77. Leichte-Division" "78. Leichte-Division" "79. Leichte-Division" "80. Leichte-Division" 
+		"81. Leichte-Division" "82. Leichte-Division" "83. Leichte-Division" "84. Leichte-Division" "85. Leichte-Division" "86. Leichte-Division" "87. Leichte-Division" "88. Leichte-Division" "89. Leichte-Division" "90. Leichte-Division" "91. Leichte-Division" 
+		"92. Leichte-Division" "93. Leichte-Division" "94. Leichte-Division" "95. Leichte-Division" "96. Leichte-Division" "97. Leichte-Division" "98. Leichte-Division" "99. Leichte-Division" "100. Leichte-Division" 
+	}
+light_cruiser = { 
+"SMS Blitz" "SMS Pfeil" "SMS Greif" "SMS Schwalbe" "SMS Sperber" "SMS Irene" "SMS Prinzess Wilhelm" "SMS Wacht" "SMS Jagd" "SMS Meteor" "SMS Commet" "SMS Bussard" "SMS Falke" "SMS Seeadler" "SMS Cormoran" "SMS Condor" "SMS Geier" "SMS Gefion" "SMS Hela" "SMS Gazelle" "SMS Niobe" "SMS Nymphe" "SMS Thetis" "SMS Ariadne" "SMS Amazone" "SMS Medusa" "SMS Frauenlob" "SMS Arcona" "SMS Undine" "SMS Bremen" "SMS Hamburg" "SMS Lübeck" "SMS München" "SMS Leipzig" "SMS Danzig" "SMS Berlin" "SMS Königsberg" "SMS Stettin" "SMS Stuttgart" "SMS Nürnberg" "SMS Dresden" "SMS Nürnberg" "SMS Kolberg" "SMS Mainz" "SMS Köln" "SMS Augsburg" "SMS Magdeburg" "SMS Breslau" "SMS Straßburg" "SMS Stralsund" "SMS Karlsruhe" "SMS Rostock" "SMS Graudenz" "SMS Regensburg" "SMS Pillau" "SMS Elbing" "SMS Wiesbaden" "SMS Frankfurt" "SMS Ingolstadt" "SMS Düsseldorf" "SMS Duisberg" "SMS Bochum" "SMS Wuppertal" "SMS Bielefeld" "SMS Bonn" "SMS Mannheim" "SMS Gelsenkirchen" "SMS Münster" "SMS Mönchengladbach" "SMS Chemnitz" "SMS Braunschweig" "SMS Aachen" "SMS Krefeld" "SMS Halle" "SMS Kiel" "SMS Oberhausen" "SMS Lübeck" "SMS Freiburg" "SMS Hagen" "SMS Erfurt" "SMS Kassel" "SMS Hamm" "SMS Saarbrücken" "SMS Herne" "SMS Mülheim" "SMS Solingen" "SMS Osnabrück" "SMS Ludwigshafen" "SMS Leverkusen" "SMS Oldenburg" "SMS Neuss" "SMS Paderborn" "SMS Heidelberg" "SMS Darmstadt" "SMS Potsdam" "SMS Würzburg" "SMS Göttingen" "SMS Recklinghausen" "SMS Bottrop" "SMS Wolfsburg" "SMS München" "SMS Emden" "SMS Königsberg" "SMS Karlsruhe" "SMS Köln" "SMS Leipzig" "SMS Yorck" "SMS Wolfsburg" "SMS Brummer" "SMS Bremse" "SMS Nautilus" "SMS Albatross"
+} 
+marine_brigade = { 
+"1. Marine-Sturm-Division" "2. Marine-Sturm-Division" "3. Marine-Sturm-Division" "3. Marine-Sturm-Division" "4. Marine-Sturm-Division" "5. Marine-Sturm-Division" "6. Marine-Sturm-Division" "7. Marine-Sturm-Division" "8. Marine-Sturm-Division" "9. Marine-Sturm-Division" "10. Marine-Sturm-Division" "11. Marine-Sturm-Division" "12. Marine-Sturm-Division" "13. Marine-Sturm-Division" "14. Marine-Sturm-Division" "15. Marine-Sturm-Division" "16. Marine-Sturm-Division" "17. Marine-Sturm-Division" "18. Marine-Sturm-Division" "19. Marine-Sturm-Division" "20. Marine-Sturm-Division"
+} 
+militia_brigade = { 
+"1. Landsturm Division" "2. Landsturm Division" "3. Landsturm Division" "4. Landsturm Division" "5. Landsturm Division" "6. Landsturm Division" "7. Landsturm Division" "8. Landsturm Division" "9. Landsturm Division" "10. Landsturm Division" "6. Landsturm Division" "9. Landsturm Division" "12. Landsturm Division" "16. Landsturm Division" "18. Landsturm Division" "19. Landsturm Division" "22. Landsturm Division" "26. Landsturm Division" "31. Landsturm Division" "36. Landsturm Division" "45. Landsturm Division" "47. Landsturm Division" "62. Landsturm Division" "78. landsturm Division" "79. Landsturm Division" "167. Landsturm Division" "183. Landsturm Division" "211. Landsturm Division" "212. Landsturm Division" "246. Landsturm Division" "256. Landsturm Division" "257. Landsturm Division" "271. Landsturm Division" "272. Landsturm Division" "276. Landsturm Division" "277. Landsturm Division" "320. Landsturm Division" "326. Landsturm Division" "337. Landsturm Division" "340. Landsturm Division" "347. Landsturm Division" "349. Landsturm Division" "352. Landsturm Division" "361. Landsturm Division" "363. Landsturm Division" "462. Landsturm Division" "541. Landsturm Division" "542. Landsturm Division" "544. Landsturm Division" "545. Landsturm Division" "547. Landsturm Division" "548. Landsturm Division" "549. Landsturm Division" "551. Landsturm Division" "553. Landsturm Division" "558. Landsturm Division" "559. Landsturm Division" "560. Landsturm Division" "561. Landsturm Division" "562. Landsturm Division" "563. Landsturm Division" "565. Landsturm Division" "566. Landsturm Division" "567. Landsturm Division" "568. Landsturm Division" "569. Landsturm Division" "570. Landsturm Division" "571. Landsturm Division" "572. Landsturm Division" "573. Landsturm Division" "574. Landsturm Division" "575. Landsturm Division" "576. Landsturm Division" "577. Landsturm Division" "578. Landsturm Division" "579. Landsturm Division" "580. Landsturm Division" "581. Landsturm Division" "582. Landsturm Division" "583. Landsturm Division" "584. Landsturm Division" "585. Landsturm Division" "586. Landsturm Division" "587. Landsturm Division" "588. Landsturm Division" "708. Landsturm Division"
+} 
+submarine = { 
+"1. Unterseebootsflottille" "2. Unterseebootsflottille" "3. Unterseebootsflottille" "5. Unterseebootsflottille" "6. Unterseebootsflottille" "7. Unterseebootsflottille" "9. Unterseebootsflottille" "10. Unterseebootsflottille" "11. Unterseebootsflottille" "12. Unterseebootsflottille" "13. Unterseebootsflottille" "14. Unterseebootsflottille" "23. Unterseebootsflottille" "29. Unterseebootsflottille" "30. Unterseebootsflottille" "33. Unterseebootsflottille" "35. Unterseebootsflottille" "36. Unterseebootsflottille" "37. Unterseebootsflottille" "38. Unterseebootsflottille" "39. Unterseebootsflottille" "40. Unterseebootsflottille" "41. Unterseebootsflottille" "42. Unterseebootsflottille" "43. Unterseebootsflottille" "44. Unterseebootsflottille" "45. Unterseebootsflottille" "18. Unterseebootsflottille" "19. Unterseebootsflottille" "20. Unterseebootsflottille" "21. Unterseebootsflottille" "22. Unterseebootsflottille" "23. Unterseebootsflottille" "24. Unterseebootsflottille" "25. Unterseebootsflottille" "26. Unterseebootsflottille" "27. Unterseebootsflottille" "31. Unterseebootsflottille" "32. Unterseebootsflottille" "46. Unterseebootsflottille" "47. Unterseebootsflottille" "48. Unterseebootsflottille" "49. Unterseebootsflottille" "50. Unterseebootsflottille" "51. Unterseebootsflottille" "52. Unterseebootsflottille" "53. Unterseebootsflottille" "54. Unterseebootsflottille" "55. Unterseebootsflottille" "56. Unterseebootsflottille" "57. Unterseebootsflottille" "58. Unterseebootsflottille" "59. Unterseebootsflottille" "60. Unterseebootsflottille" "61. Unterseebootsflottille" "62. Unterseebootsflottille" "63. Unterseebootsflottille" "64. Unterseebootsflottille" "65. Unterseebootsflottille" "66. Unterseebootsflottille" "67. Unterseebootsflottille" "68. Unterseebootsflottille" "69. Unterseebootsflottille" "70. Unterseebootsflottille" "71. Unterseebootsflottille" "72. Unterseebootsflottille" "73. Unterseebootsflottille" "74. Unterseebootsflottille" "75. Unterseebootsflottille" "76. Unterseebootsflottille" "77. Unterseebootsflottille" "78. Unterseebootsflottille" "79. Unterseebootsflottille" "80. Unterseebootsflottille" "81. Unterseebootsflottille" "82. Unterseebootsflottille" "83. Unterseebootsflottille" "84. Unterseebootsflottille" "85. Unterseebootsflottille" "86. Unterseebootsflottille" "87. Unterseebootsflottille" "88. Unterseebootsflottille" "89. Unterseebootsflottille" "90. Unterseebootsflottille" "91. Unterseebootsflottille" "92. Unterseebootsflottille" "93. Unterseebootsflottille" "94. Unterseebootsflottille" "95. Unterseebootsflottille" "96. Unterseebootsflottille" "97. Unterseebootsflottille" "98. Unterseebootsflottille" "99. Unterseebootsflottille" "100. Unterseebootsflottille"
+} 
+tactical_bomber = { 
+"Kampfgeschwader 1" "Kampfgeschwader 4" "Kampfgeschwader 26" "Kampfgeschwader 27" "Kampfgeschwader 28" "Kampfgeschwader 51" "Kampfgeschwader 53" "Kampfgeschwader 54" "Kampfgeschwader 55" "Kampfgeschwader 100" "Kampfgeschwader 6" "Kampfgeschwader 50" "Kampfgeschwader 40" "Kampfgeschwader 76" "Kampfgeschwader 77" "Kampfgeschwader 60" "Kampfgeschwader 101" "Kampfgeschwader 102" "Kampfgeschwader 66" "Kampfgeschwader 200" "Kampfgeschwader 201" "Kampfgeschwader 202" "Kampfgeschwader 203" "Kampfgeschwader 204" "Kampfgeschwader 205" "Kampfgeschwader 206" "Kampfgeschwader 207" "Kampfgeschwader 208" "Kampfgeschwader 209" "Kampfgeschwader 210" "Kampfgeschwader 211" "Kampfgeschwader 212" "Kampfgeschwader 213" "Kampfgeschwader 214" "Kampfgeschwader 215" "Kampfgeschwader 216" "Kampfgeschwader 217" "Kampfgeschwader 218" "Kampfgeschwader 219" "Kampfgeschwader 220" "Kampfgeschwader 221"
+} 
+transport_ship = { 
+"4. Truppentransporterflottille" "5. Truppentransporterflottille" "6. Truppentransporterflottille" "7. Truppentransporterflottille" "8. Truppentransporterflottille" "9. Truppentransporterflottille" "10. Truppentransporterflottille" "11. Truppentransporterflottille" "12. Truppentransporterflottille" "13. Truppentransporterflottille" "14. Truppentransporterflottille" "15. Truppentransporterflottille" "16. Truppentransporterflottille" "17. Truppentransporterflottille" "18. Truppentransporterflottille" "19. Truppentransporterflottille" "20. Truppentransporterflottille" "21. Truppentransporterflottille" "22. Truppentransporterflottille" "23. Truppentransporterflottille" "24. Truppentransporterflottille" "25. Truppentransporterflottille" "26. Truppentransporterflottille" "27. Truppentransporterflottille" "28. Truppentransporterflottille" "29. Truppentransporterflottille" "30. Truppentransporterflottille" "31. Truppentransporterflottille" "32. Truppentransporterflottille" "33. Truppentransporterflottille" "34. Truppentransporterflottille" "35. Truppentransporterflottille" "36. Truppentransporterflottille" "37. Truppentransporterflottille" "38. Truppentransporterflottille" "39. Truppentransporterflottille" "40. Truppentransporterflottille" "41. Truppentransporterflottille" "42. Truppentransporterflottille" "43. Truppentransporterflottille" "44. Truppentransporterflottille" "45. Truppentransporterflottille" "46. Truppentransporterflottille" "47. Truppentransporterflottille" "48. Truppentransporterflottille" "49. Truppentransporterflottille" "50. Truppentransporterflottille" "51. Truppentransporterflottille" "52. Truppentransporterflottille" "53. Truppentransporterflottille" "54. Truppentransporterflottille" "55. Truppentransporterflottille" "56. Truppentransporterflottille" "57. Truppentransporterflottille" "58. Truppentransporterflottille" "59. Truppentransporterflottille" "60. Truppentransporterflottille" "61. Truppentransporterflottille" "62. Truppentransporterflottille" "63. Truppentransporterflottille" "64. Truppentransporterflottille" "65. Truppentransporterflottille" "66. Truppentransporterflottille" "67. Truppentransporterflottille" "68. Truppentransporterflottille" "69. Truppentransporterflottille" "70. Truppentransporterflottille" "71. Truppentransporterflottille" "72. Truppentransporterflottille" "73. Truppentransporterflottille" "74. Truppentransporterflottille" "75. Truppentransporterflottille" "76. Truppentransporterflottille" "77. Truppentransporterflottille" "78. Truppentransporterflottille" "79. Truppentransporterflottille" "80. Truppentransporterflottille" "81. Truppentransporterflottille" "82. Truppentransporterflottille" "83. Truppentransporterflottille" "84. Truppentransporterflottille" "85. Truppentransporterflottille" "86. Truppentransporterflottille" "87. Truppentransporterflottille" "88. Truppentransporterflottille" "89. Truppentransporterflottille" "90. Truppentransporterflottille" "91. Truppentransporterflottille" "92. Truppentransporterflottille" "93. Truppentransporterflottille" "94. Truppentransporterflottille" "95. Truppentransporterflottille" "96. Truppentransporterflottille" "97. Truppentransporterflottille" "98. Truppentransporterflottille" "99. Truppentransporterflottille" "100. Truppentransporterflottille"
+}
+
+
+}
+
+ministers = {
+	233 = {
+name = "Adolf Galland"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = L437
+armament_minister = air_superiority_proponent
+chief_of_air = air_superiority_doctrine
+start_date = 1942.1.1
+}
+
+855019 = {
+name = "Adolf Georg von Maltzan"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8376
+foreign_minister = apologetic_clerk
+start_date = 1917.1.1
+}
+
+141 = {
+name = "Adolf Heusinger"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M168
+chief_of_staff = school_of_mass_combat
+start_date = 1942.1.1
+}
+
+855302 = {
+name = "Adolf Hitler"
+ideology = national_socialist
+loyalty = 1.00
+picture = 3485
+head_of_state = power_hungry_demagogue
+head_of_government = flamboyant_tough_guy
+start_date = 1910.1.1
+}
+
+855215 = {
+name = "Adolf Köster"
+ideology = social_liberal
+loyalty = 1.00
+picture = 3413
+foreign_minister = general_staffer
+minister_of_security = back_stabber
+start_date = 1920.1.1
+}
+
+855015 = {
+name = "Adolf Marschall von Bieberstein"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3412
+foreign_minister = iron_fisted_brute
+start_date = 1910.1.1
+}
+
+855025 = {
+name = "Adolf Pauli"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+foreign_minister = great_compromiser
+start_date = 1910.1.1
+}
+
+855098 = {
+name = "Adolf von Trotha"
+ideology = social_conservative
+loyalty = 1.00
+picture = 1351
+chief_of_navy = power_projection_doctrine
+start_date = 1916.1.1
+}
+
+855049 = {
+name = "Adolf Wermuth"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3460
+armament_minister = corrupt_kleptocrat
+start_date = 1910.1.1
+}
+
+855040 = {
+name = "Adolf Wild von Hohenborn"
+ideology = social_conservative
+loyalty = 1.00
+picture = 8156
+armament_minister = infantry_proponent
+start_date = 1910.1.1
+}
+
+27 = {
+name = "Albert Dufour-Feronce"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M46
+head_of_government = flamboyant_tough_guy
+foreign_minister = great_compromiser
+start_date = 1938.1.1
+}
+
+174 = {
+name = "Albert Kesselring"
+ideology = fascistic
+loyalty = 1.00
+picture = M207
+chief_of_air = vertical_envelopment_doctrine
+start_date = 1944.1.1
+}
+
+84 = {
+name = "Albert Kuntz"
+ideology = stalinist
+loyalty = 1.00
+picture = M105
+armament_minister = resource_industrialist
+start_date = 1933.1.1
+}
+
+256 = {
+name = "Albert Praun"
+ideology = fascistic
+loyalty = 1.00
+picture = 7386
+minister_of_intelligence = logistics_specialist
+start_date = 1940.1.1
+}
+
+24 = {
+name = "Albert Speer"
+ideology = national_socialist
+loyalty = 1.00
+picture = 2645
+head_of_government = corporate_suit
+armament_minister = administrative_genius
+start_date = 1945.1.1
+}
+
+855312 = {
+name = "Albrecht von Graefe"
+ideology = fascistic
+loyalty = 1.00
+picture = 8377
+foreign_minister = the_cloak_n_dagger_schemer
+start_date = 1910.1.1
+}
+
+855316 = {
+name = "Alfred Hugenberg"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8378
+armament_minister = corrupt_kleptocrat
+start_date = 1910.1.1
+}
+
+132 = {
+name = "Alfred Jodl"
+ideology = national_socialist
+loyalty = 1.00
+picture = M156
+chief_of_staff = school_of_psychology
+start_date = 1939.1.1
+}
+
+37 = {
+name = "Alfred Rosenberg"
+ideology = national_socialist
+loyalty = 1.00
+picture = M57
+foreign_minister = ideological_crusader
+start_date = 1943.1.1
+}
+
+164 = {
+name = "Alfred Saalwächter"
+ideology = fascistic
+loyalty = 1.00
+picture = M195
+chief_of_navy = open_seas_doctrine
+start_date = 1933.1.1
+}
+
+855068 = {
+name = "Alfred Tapken"
+ideology = social_conservative
+loyalty = 1.00
+picture = unknown
+minister_of_intelligence = naval_intelligence_specialist
+start_date = 1910.1.1
+}
+
+855009 = {
+name = "Alfred von Kiderlen-Waechter"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3431
+foreign_minister = general_staffer
+start_date = 1910.1.1
+}
+
+855043 = {
+name = "Alfred von Tirpitz"
+ideology = fascistic
+loyalty = 1.00
+picture = 1454
+armament_minister = battle_fleet_proponent
+chief_of_navy = open_seas_doctrine
+start_date = 1910.1.1
+}
+
+76 = {
+name = "Alfried Krupp"
+ideology = fascistic
+loyalty = 1.00
+picture = M97
+armament_minister = resource_industrialist
+start_date = 1939.1.1
+}
+
+855227 = {
+name = "Andreas Hermes"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3457
+armament_minister = strategic_air_proponent
+start_date = 1921.1.1
+}
+
+855099 = {
+name = "Andreas Michelsen"
+ideology = social_conservative
+loyalty = 1.00
+picture = 8171
+chief_of_navy = indirect_approach_doctrine
+start_date = 1910.1.1
+}
+
+98 = {
+name = "Arthur Axmann"
+ideology = fascistic
+loyalty = 1.00
+picture = M120
+minister_of_security = man_of_the_people
+start_date = 1945.1.1
+}
+
+97 = {
+name = "Arthur Nebe"
+ideology = fascistic
+loyalty = 1.00
+picture = M119
+minister_of_security = crime_fighter
+start_date = 1942.1.1
+}
+
+38 = {
+name = "Arthur Seyss-Inquart"
+ideology = national_socialist
+loyalty = 1.00
+picture = M58
+foreign_minister = iron_fisted_brute
+minister_of_security = silent_lawyer
+start_date = 1945.1.1
+}
+
+855011 = {
+name = "Arthur Zimmermann"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3432
+foreign_minister = great_compromiser
+start_date = 1910.1.1
+}
+
+855230 = {
+name = "August Müller"
+ideology = social_liberal
+loyalty = 1.00
+picture = unknown
+armament_minister = laissez_faires_capitalist
+start_date = 1910.1.1
+}
+
+855093 = {
+name = "August von Heeringen"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8432
+chief_of_navy = power_projection_doctrine
+start_date = 1910.1.1
+}
+
+855076 = {
+name = "August von Mackensen"
+ideology = fascistic
+loyalty = 1.00
+picture = 3483
+chief_of_staff = school_of_mass_combat
+chief_of_army = elastic_defence_doctrine
+start_date = 1910.1.1
+}
+
+120 = {
+name = "Baldur von Schirach"
+ideology = fascistic
+loyalty = 1.00
+picture = M143
+minister_of_intelligence = logistics_specialist
+start_date = 1944.1.1
+}
+
+855224 = {
+name = "Bernhard Dernburg"
+ideology = market_liberal
+loyalty = 1.00
+picture = 3453
+armament_minister = military_entrepreneur
+start_date = 1919.1.1
+}
+
+855003 = {
+name = "Bernhard von Bülow"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3430
+head_of_government = flamboyant_tough_guy
+start_date = 1910.1.1
+}
+
+260 = {
+name = "Bruno Bräuer"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 7446
+chief_of_air = vertical_envelopment_doctrine
+start_date = 1941.1.1
+}
+
+259 = {
+name = "Bruno Sassen"
+ideology = fascistic
+loyalty = 1.00
+picture = 7445
+chief_of_air = vertical_envelopment_doctrine
+start_date = 1950.1.1
+}
+
+855347 = {
+name = "Burghard von Oven"
+ideology = fascistic
+loyalty = 1.00
+picture = 1372
+chief_of_army = static_defence_doctrine
+start_date = 1910.1.1
+}
+
+29 = {
+name = "Carl Friedrich Goerdeler"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M12
+head_of_government = happy_amateur
+armament_minister = military_entrepreneur
+start_date = 1942.1.1
+}
+
+175 = {
+name = "Carl Friedrich von Siemens"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M208
+chief_of_air = air_superiority_doctrine
+start_date = 1933.1.1
+}
+
+50 = {
+name = "Carl Melchior"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M70
+foreign_minister = ideological_crusader
+start_date = 1945.1.1
+}
+
+121 = {
+name = "Carl von Schubert"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M144
+minister_of_intelligence = logistics_specialist
+start_date = 1933.1.1
+}
+
+855327 = {
+name = "Christian Roth"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8379
+minister_of_security = man_of_the_people
+start_date = 1918.1.1
+}
+
+81 = {
+name = "Claus von Stauffenberg"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M102
+armament_minister = infantry_proponent
+start_date = 1944.1.1
+}
+
+855056 = {
+name = "Clemens von Delbrück"
+ideology = fascistic
+loyalty = 1.00
+picture = 3478
+minister_of_security = man_of_the_people
+start_date = 1910.1.1
+}
+
+855077 = {
+name = "Colmar von der Goltz"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 1443
+chief_of_staff = school_of_defence
+chief_of_army = static_defence_doctrine
+start_date = 1910.1.1
+}
+
+166 = {
+name = "Conrad Albrecht"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M198
+chief_of_navy = open_seas_doctrine
+start_date = 1939.1.1
+}
+
+855207 = {
+name = "Constantin Fehrenbach"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3445
+head_of_government = backroom_backstabber
+start_date = 1910.1.1
+}
+
+3 = {
+name = "Constantin von Neurath"
+ideology = fascistic
+loyalty = 1.00
+picture = 2636
+foreign_minister = great_compromiser
+start_date = 1933.1.1
+}
+
+244 = {
+name = "Dietrich von Choltitz"
+ideology = fascistic
+loyalty = 1.00
+picture = 7379
+foreign_minister = general_staffer
+minister_of_security = compassionate_gentleman
+chief_of_staff = school_of_defence
+start_date = 1943.1.1
+}
+
+241 = {
+name = "Dr Franz Beyer"
+ideology = social_conservative
+loyalty = 1.00
+picture = 7377
+chief_of_staff = school_of_psychology
+chief_of_army = armoured_spearhead_doctrine
+start_date = 1945.1.1
+}
+
+173 = {
+name = "Eberhard Milch"
+ideology = fascistic
+loyalty = 1.00
+picture = M206
+chief_of_air = air_superiority_doctrine
+start_date = 1942.1.1
+}
+
+855243 = {
+name = "Eduard David"
+ideology = social_liberal
+loyalty = 1.00
+picture = 3467
+minister_of_security = prince_of_terror
+start_date = 1919.1.1
+}
+
+855237 = {
+name = "Eduard Hamm"
+ideology = market_liberal
+loyalty = 1.00
+picture = 8380
+armament_minister = theoretical_scientist
+start_date = 1923.1.1
+}
+
+855044 = {
+name = "Eduard von Capelle"
+ideology = social_conservative
+loyalty = 1.00
+picture = 1301
+armament_minister = submarine_proponent
+start_date = 1910.1.1
+}
+
+217 = {
+name = "Emil Maurice"
+ideology = fascistic
+loyalty = 1.00
+picture = 5907
+minister_of_security = back_stabber
+start_date = 1935.1.1
+}
+
+168 = {
+name = "Erich Bey"
+ideology = social_conservative
+loyalty = 1.00
+picture = M200
+chief_of_navy = open_seas_doctrine
+start_date = 1946.1.1
+}
+
+136 = {
+name = "Erich Hoepner"
+ideology = fascistic
+loyalty = 1.00
+picture = M18
+chief_of_staff = school_of_fire_support
+chief_of_army = armoured_spearhead_doctrine
+start_date = 1937.1.1
+}
+
+855244 = {
+name = "Erich Koch-Weser"
+ideology = market_liberal
+loyalty = 1.00
+picture = 3479
+minister_of_security = crime_fighter
+start_date = 1919.1.1
+}
+
+855088 = {
+name = "Erich Ludendorff"
+ideology = fascistic
+loyalty = 1.00
+picture = 3401
+head_of_state = autocratic_charmer
+chief_of_staff = school_of_mass_combat
+chief_of_army = guns_and_butter_doctrine
+start_date = 1910.1.1
+}
+
+9 = {
+name = "Erich Raeder"
+ideology = national_socialist
+loyalty = 1.00
+picture = 2642
+chief_of_navy = decisive_naval_battle_doctrine
+start_date = 1933.1.1
+}
+
+232 = {
+name = "Erich Topp"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 603
+chief_of_navy = indirect_approach_doctrine
+start_date = 1947.1.1
+}
+
+855039 = {
+name = "Erich von Falkenhayn"
+ideology = social_conservative
+loyalty = 1.00
+picture = 1262
+armament_minister = military_entrepreneur
+chief_of_staff = school_of_defence
+chief_of_army = static_defence_doctrine
+start_date = 1910.1.1
+}
+
+191 = {
+name = "Erich von Manstein"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = L324
+chief_of_staff = school_of_manoeuvre
+start_date = 1942.1.1
+}
+
+129 = {
+name = "Erich Weinert"
+ideology = stalinist
+loyalty = 1.00
+picture = M152
+minister_of_intelligence = logistics_specialist
+chief_of_staff = school_of_psychology
+start_date = 1938.1.1
+}
+
+192 = {
+name = "Ernst Busch"
+ideology = national_socialist
+loyalty = 1.00
+picture = L33
+chief_of_staff = school_of_fire_support
+start_date = 1945.1.1
+}
+
+237 = {
+name = "Ernst Busse"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 6381
+chief_of_staff = school_of_mass_combat
+start_date = 1940.1.1
+}
+
+115 = {
+name = "Ernst Kaltenbrunner"
+ideology = national_socialist
+loyalty = 1.00
+picture = M138
+minister_of_intelligence = logistics_specialist
+start_date = 1944.1.1
+}
+
+855046 = {
+name = "Ernst Karl August Klemens von Mann"
+ideology = social_conservative
+loyalty = 1.00
+picture = 7732
+armament_minister = submarine_proponent
+start_date = 1915.1.1
+}
+
+855035 = {
+name = "Ernst Langwerth von Simmern"
+ideology = social_conservative
+loyalty = 1.00
+picture = 8381
+foreign_minister = the_cloak_n_dagger_schemer
+start_date = 1920.1.1
+}
+
+855233 = {
+name = "Ernst Scholz"
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+armament_minister = administrative_genius
+start_date = 1920.1.1
+}
+
+32 = {
+name = "Ernst Thälmann"
+ideology = stalinist
+loyalty = 1.00
+picture = M22
+head_of_government = backroom_backstabber
+minister_of_intelligence = industrial_specialist
+start_date = 1933.1.1
+}
+
+33 = {
+name = "Ernst Toller"
+ideology = stalinist
+loyalty = 1.00
+picture = M25
+head_of_government = ambitious_union_boss
+minister_of_security = man_of_the_people
+start_date = 1939.1.1
+}
+
+94 = {
+name = "Ernst Trendelenburg"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M116
+minister_of_security = compassionate_gentleman
+start_date = 1933.1.1
+}
+
+176 = {
+name = "Ernst Udet"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M20
+chief_of_air = army_aviation_doctrine
+start_date = 1940.1.1
+}
+
+855104 = {
+name = "Ernst von Hoeppner"
+ideology = social_conservative
+loyalty = 1.00
+picture = 1325
+chief_of_air = naval_aviation_doctrine
+start_date = 1916.1.1
+}
+
+855322 = {
+name = "Ernst von Wrisberg"
+ideology = fascistic
+loyalty = 1.00
+picture = 8382
+armament_minister = resource_industrialist
+start_date = 1910.1.1
+}
+
+144 = {
+name = "Ernst Wollweber"
+ideology = stalinist
+loyalty = 1.00
+picture = M27
+minister_of_intelligence = industrial_specialist
+chief_of_staff = school_of_mass_combat
+start_date = 1933.1.1
+}
+
+139 = {
+name = "Erwin Rommel"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M165
+chief_of_staff = school_of_manoeuvre
+start_date = 1943.1.1
+}
+
+137 = {
+name = "Erwin von Witzleben"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M17
+chief_of_staff = school_of_fire_support
+chief_of_army = static_defence_doctrine
+start_date = 1941.1.1
+}
+
+255 = {
+name = "Eugen Meindl"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 7385
+chief_of_air = vertical_envelopment_doctrine
+start_date = 1942.1.1
+}
+
+855028 = {
+name = "Eugen Rümelin"
+ideology = social_conservative
+loyalty = 1.00
+picture = unknown
+foreign_minister = the_cloak_n_dagger_schemer
+start_date = 1923.1.1
+}
+
+855223 = {
+name = "Eugen Schiffer"
+ideology = market_liberal
+loyalty = 1.00
+picture = 3454
+armament_minister = submarine_proponent
+start_date = 1910.1.1
+}
+
+153 = {
+name = "Fedor von Bock"
+ideology = fascistic
+loyalty = 1.00
+picture = M182
+chief_of_army = decisive_battle_doctrine
+start_date = 1939.1.1
+}
+
+855252 = {
+name = "Ferdinand Boehmer"
+ideology = social_conservative
+loyalty = 1.00
+picture = unknown
+minister_of_intelligence = naval_intelligence_specialist
+start_date = 1921.1.1
+}
+
+150 = {
+name = "Ferdinand Schörner"
+ideology = national_socialist
+loyalty = 1.00
+picture = M178
+chief_of_army = elastic_defence_doctrine
+start_date = 1945.1.1
+}
+
+216 = {
+name = "Franz Alfred Six"
+ideology = fascistic
+loyalty = 1.00
+picture = 5906
+minister_of_security = prince_of_terror
+start_date = 1943.1.1
+}
+
+186 = {
+name = "Franz Gürtner"
+ideology = fascistic
+loyalty = 1.00
+picture = M223
+minister_of_security = silent_lawyer
+start_date = 1933.1.1
+}
+
+131 = {
+name = "Franz Halder"
+ideology = fascistic
+loyalty = 1.00
+picture = M155
+chief_of_staff = school_of_fire_support
+start_date = 1938.1.1
+}
+
+855024 = {
+name = "Franz Olshausen"
+ideology = social_conservative
+loyalty = 1.00
+picture = 8383
+foreign_minister = ideological_crusader
+start_date = 1917.1.1
+}
+
+183 = {
+name = "Franz Seldte"
+ideology = national_socialist
+loyalty = 1.00
+picture = M220
+armament_minister = military_entrepreneur
+start_date = 1933.1.1
+}
+
+28 = {
+name = "Franz von Papen"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M47
+head_of_government = happy_amateur
+foreign_minister = great_compromiser
+minister_of_security = compassionate_gentleman
+start_date = 1939.1.1
+}
+
+855027 = {
+name = "Franz von Reichenau"
+ideology = social_conservative
+loyalty = 1.00
+picture = unknown
+foreign_minister = biased_intellectual
+start_date = 1910.1.1
+}
+
+179 = {
+name = "Franz Xaver Ritter von Epp"
+ideology = national_socialist
+loyalty = 1.00
+picture = M214
+head_of_government = old_general
+armament_minister = infantry_proponent
+start_date = 1933.1.1
+}
+
+63 = {
+name = "Franz-Xavier Schwarz"
+ideology = national_socialist
+loyalty = 1.00
+picture = M84
+armament_minister = resource_industrialist
+start_date = 1933.1.1
+}
+
+855220 = {
+name = "Frederic von Rosenberg"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3991
+foreign_minister = the_cloak_n_dagger_schemer
+start_date = 1922.1.1
+}
+
+855202 = {
+name = "Friedrich Ebert"
+ideology = social_liberal
+loyalty = 1.00
+picture = 3435
+head_of_state = benevolent_gentleman
+head_of_government = political_protege
+minister_of_security = compassionate_gentleman
+start_date = 1910.1.1
+}
+
+57 = {
+name = "Friedrich Flick"
+ideology = national_socialist
+loyalty = 1.00
+picture = M78
+armament_minister = laissez_faires_capitalist
+start_date = 1938.1.1
+}
+
+855071 = {
+name = "Friedrich Gempp"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8384
+minister_of_intelligence = technical_specialist
+start_date = 1915.1.1
+}
+
+855217 = {
+name = "Friedrich Rosen"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3414
+foreign_minister = great_compromiser
+start_date = 1921.1.1
+}
+
+855036 = {
+name = "Friedrich Sthamer"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8385
+foreign_minister = iron_fisted_brute
+start_date = 1920.1.1
+}
+
+855091 = {
+name = "Friedrich von Baudissin"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8153
+chief_of_navy = open_seas_doctrine
+start_date = 1910.1.1
+}
+
+855026 = {
+name = "Friedrich von Keller"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8386
+foreign_minister = apologetic_clerk
+start_date = 1919.1.1
+}
+
+855059 = {
+name = "Friedrich von Moltke"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8387
+minister_of_security = silent_lawyer
+start_date = 1910.1.1
+}
+
+181 = {
+name = "Friedrich Wilhelm Kritzinger"
+ideology = national_socialist
+loyalty = 1.00
+picture = M217
+head_of_government = naive_optimist
+start_date = 1945.1.1
+}
+
+855061 = {
+name = "Friedrich Wilhelm von Loebell"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8388
+minister_of_security = efficient_sociopath
+start_date = 1910.1.1
+}
+
+48 = {
+name = "Friedrich-Werner von der Schulenberg"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M68
+foreign_minister = ideological_crusader
+start_date = 1942.1.1
+}
+
+254 = {
+name = "Friedrich-Wilhelm Hauck"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 7384
+chief_of_staff = school_of_fire_support
+start_date = 1946.1.1
+}
+
+135 = {
+name = "Fritz Bayerlein"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M159
+chief_of_staff = school_of_psychology
+start_date = 1933.1.1
+}
+
+214 = {
+name = "Fritz Saukel"
+ideology = national_socialist
+loyalty = 1.00
+picture = M252
+armament_minister = infantry_proponent
+start_date = 1942.1.1
+}
+
+82 = {
+name = "Fritz Schäffer"
+ideology = social_conservative
+loyalty = 1.00
+picture = M103
+armament_minister = resource_industrialist
+start_date = 1946.1.1
+}
+
+169 = {
+name = "Fritz Scheelen"
+ideology = stalinist
+loyalty = 1.00
+picture = M29
+chief_of_navy = base_control_doctrine
+start_date = 1933.1.1
+}
+
+69 = {
+name = "Fritz Thyssen"
+ideology = fascistic
+loyalty = 1.00
+picture = M90
+armament_minister = resource_industrialist
+start_date = 1933.1.1
+}
+
+70 = {
+name = "Fritz Todt"
+ideology = fascistic
+loyalty = 1.00
+picture = M91
+armament_minister = resource_industrialist
+start_date = 1938.1.1
+}
+
+73 = {
+name = "Fritz Tornow"
+ideology = fascistic
+loyalty = 1.00
+picture = M94
+armament_minister = military_entrepreneur
+start_date = 1944.1.1
+}
+
+104 = {
+name = "Fritz von Schulenburg"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M126
+minister_of_security = compassionate_gentleman
+start_date = 1942.1.1
+}
+
+235 = {
+name = "Günther Blumentritt"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 6380
+chief_of_staff = school_of_psychology
+chief_of_army = elastic_defence_doctrine
+start_date = 1943.1.1
+}
+
+193 = {
+name = "Günther von Kluge"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = L311
+chief_of_army = decisive_battle_doctrine
+start_date = 1942.1.1
+}
+
+855245 = {
+name = "Georg Gradnauer"
+ideology = social_liberal
+loyalty = 1.00
+picture = 3468
+minister_of_security = silent_lawyer
+start_date = 1921.1.1
+}
+
+124 = {
+name = "Georg Hansen"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M147
+minister_of_intelligence = technical_specialist
+start_date = 1940.1.1
+}
+
+855005 = {
+name = "Georg Michaelis"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3439
+head_of_government = happy_amateur
+start_date = 1917.1.1
+}
+
+77 = {
+name = "Georg Thomas"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M98
+armament_minister = theoretical_scientist
+start_date = 1940.1.1
+}
+
+855006 = {
+name = "Georg von Hertling"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3437
+head_of_government = backroom_backstabber
+start_date = 1917.1.1
+}
+
+855317 = {
+name = "Gottfried Feder"
+ideology = national_socialist
+loyalty = 1.00
+picture = 8389
+armament_minister = theoretical_scientist
+start_date = 1918.1.1
+}
+
+855010 = {
+name = "Gottlieb von Jagow"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3418
+foreign_minister = ideological_crusader
+start_date = 1910.1.1
+}
+
+855309 = {
+name = "Gregor Strasser"
+ideology = fascistic
+loyalty = 1.00
+picture = 8390
+head_of_government = ambitious_union_boss
+start_date = 1910.1.1
+}
+
+855095 = {
+name = "Gustav Bachmann"
+ideology = social_conservative
+loyalty = 1.00
+picture = 7931
+chief_of_navy = base_control_doctrine
+start_date = 1910.1.1
+}
+
+855205 = {
+name = "Gustav Bauer"
+ideology = social_liberal
+loyalty = 1.00
+picture = 3443
+head_of_government = political_protege
+start_date = 1910.1.1
+}
+
+108 = {
+name = "Gustav Heinemann"
+ideology = social_conservative
+loyalty = 1.00
+picture = M130
+minister_of_security = man_of_the_people
+start_date = 1947.1.1
+}
+
+167 = {
+name = "Gustav Kieseritzky"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M199
+chief_of_navy = base_control_doctrine
+start_date = 1940.1.1
+}
+
+213 = {
+name = "Gustav Krupp"
+ideology = fascistic
+loyalty = 1.00
+picture = M251
+armament_minister = tank_proponent
+start_date = 1933.1.1
+}
+
+855239 = {
+name = "Gustav Noske"
+ideology = social_liberal
+loyalty = 1.00
+picture = 8391
+head_of_government = silent_workhorse
+armament_minister = military_entrepreneur
+start_date = 1919.1.1
+}
+
+855210 = {
+name = "Gustav Stresemann"
+ideology = market_liberal
+loyalty = 1.00
+picture = 3433
+head_of_government = flamboyant_tough_guy
+foreign_minister = ideological_crusader
+start_date = 1910.1.1
+}
+
+210 = {
+name = "Hans Dohnanyi"
+ideology = social_conservative
+loyalty = 1.00
+picture = M248
+minister_of_security = silent_lawyer
+minister_of_intelligence = political_specialist
+start_date = 1933.1.1
+}
+
+126 = {
+name = "Hans Ehard"
+ideology = social_conservative
+loyalty = 1.00
+picture = M149
+minister_of_intelligence = political_specialist
+start_date = 1946.1.1
+}
+
+189 = {
+name = "Hans Frank"
+ideology = fascistic
+loyalty = 1.00
+picture = M227
+minister_of_security = compassionate_gentleman
+start_date = 1941.1.1
+}
+
+209 = {
+name = "Hans Gisevius"
+ideology = social_conservative
+loyalty = 1.00
+picture = M247
+minister_of_intelligence = dismal_enigma
+start_date = 1939.1.1
+}
+
+855328 = {
+name = "Hans Heinrich Lammers"
+ideology = national_socialist
+loyalty = 1.00
+picture = 8392
+minister_of_security = silent_lawyer
+start_date = 1918.1.1
+}
+
+160 = {
+name = "Hans Kahle"
+ideology = stalinist
+loyalty = 1.00
+picture = M28
+chief_of_army = decisive_battle_doctrine
+start_date = 1933.1.1
+}
+
+855054 = {
+name = "Hans Karl von Stein zu Nord- und Ostheim"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+armament_minister = laissez_faires_capitalist
+start_date = 1910.1.1
+}
+
+134 = {
+name = "Hans Krebs"
+ideology = national_socialist
+loyalty = 1.00
+picture = M158
+chief_of_staff = school_of_defence
+start_date = 1945.1.1
+}
+
+855229 = {
+name = "Hans Luther"
+ideology = market_liberal
+loyalty = 1.00
+picture = 3455
+armament_minister = infantry_proponent
+start_date = 1923.1.1
+}
+
+123 = {
+name = "Hans Oster"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M146
+minister_of_intelligence = industrial_specialist
+start_date = 1939.1.1
+}
+
+143 = {
+name = "Hans Speidel"
+ideology = social_conservative
+loyalty = 1.00
+picture = M170
+chief_of_staff = school_of_mass_combat
+chief_of_army = decisive_battle_doctrine
+start_date = 1946.1.1
+}
+
+215 = {
+name = "Hans Ulrich Rudel"
+ideology = fascistic
+loyalty = 1.00
+picture = L464
+chief_of_air = air_superiority_doctrine
+start_date = 1949.1.1
+}
+
+855235 = {
+name = "Hans von Raumer"
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+armament_minister = resource_industrialist
+start_date = 1923.1.1
+}
+
+855075 = {
+name = "Hans von Seeckt"
+ideology = social_conservative
+loyalty = 1.00
+picture = 1346
+chief_of_staff = school_of_fire_support
+chief_of_army = armoured_spearhead_doctrine
+start_date = 1917.1.1
+}
+
+855331 = {
+name = "Hans von Seißer"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3487
+minister_of_security = efficient_sociopath
+start_date = 1910.1.1
+}
+
+855016 = {
+name = "Hans von Wangenheim"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8393
+foreign_minister = general_staffer
+start_date = 1910.1.1
+}
+
+238 = {
+name = "Hans Wilhelm Langsdorff"
+ideology = fascistic
+loyalty = 1.00
+picture = 6382
+chief_of_navy = decisive_naval_battle_doctrine
+start_date = 1939.1.1
+}
+
+855266 = {
+name = "Hans Zenker"
+ideology = social_conservative
+loyalty = 1.00
+picture = 8183
+chief_of_navy = indirect_approach_doctrine
+start_date = 1924.1.1
+}
+
+72 = {
+name = "Hans-Georg von Friedeburg"
+ideology = national_socialist
+loyalty = 1.00
+picture = M93
+armament_minister = submarine_proponent
+minister_of_intelligence = naval_intelligence_specialist
+chief_of_navy = open_seas_doctrine
+start_date = 1942.1.1
+}
+
+199 = {
+name = "Hans-Jürgen Stumpff"
+ideology = national_socialist
+loyalty = 1.00
+picture = L471
+chief_of_air = army_aviation_doctrine
+start_date = 1944.1.1
+}
+
+855314 = {
+name = "Heinrich Claß"
+ideology = fascistic
+loyalty = 1.00
+picture = 8394
+foreign_minister = ideological_crusader
+start_date = 1910.1.1
+}
+
+86 = {
+name = "Heinrich Himmler"
+ideology = national_socialist
+loyalty = 1.00
+picture = M108
+minister_of_security = prince_of_terror
+start_date = 1938.1.1
+}
+
+89 = {
+name = "Heinrich Müller"
+ideology = national_socialist
+loyalty = 1.00
+picture = M26
+minister_of_security = prince_of_terror
+minister_of_intelligence = political_specialist
+start_date = 1943.1.1
+}
+
+855042 = {
+name = "Heinrich Scheuch"
+ideology = social_conservative
+loyalty = 1.00
+picture = 8395
+armament_minister = tank_proponent
+start_date = 1915.1.1
+}
+
+855034 = {
+name = "Heinrich von Tschirschky"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3424
+foreign_minister = biased_intellectual
+start_date = 1910.1.1
+}
+
+133 = {
+name = "Heinz Guderian"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M157
+chief_of_staff = school_of_mass_combat
+start_date = 1944.1.1
+}
+
+855033 = {
+name = "Hellmuth Lucius von Stoedten"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+foreign_minister = apologetic_clerk
+start_date = 1917.1.1
+}
+
+178 = {
+name = "Helmet Herzfelde"
+ideology = stalinist
+loyalty = 1.00
+picture = M23
+foreign_minister = ideological_crusader
+start_date = 1933.1.1
+}
+
+54 = {
+name = "Helmut Herzfelde"
+ideology = stalinist
+loyalty = 1.00
+picture = M23
+foreign_minister = ideological_crusader
+start_date = 1940.1.1
+}
+
+855072 = {
+name = "Helmuth von Moltke"
+ideology = social_conservative
+loyalty = 1.00
+picture = 1263
+chief_of_staff = school_of_manoeuvre
+chief_of_army = decisive_battle_doctrine
+start_date = 1910.1.1
+}
+
+855096 = {
+name = "Henning von Holtzendorff"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 1466
+chief_of_navy = open_seas_doctrine
+start_date = 1910.1.1
+}
+
+105 = {
+name = "Henning von Tresckow"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M127
+minister_of_security = crime_fighter
+start_date = 1944.1.1
+}
+
+264 = {
+name = "Herman Esser"
+ideology = national_socialist
+loyalty = 1.00
+picture = 7769
+head_of_government = corporate_suit
+foreign_minister = ideological_crusader
+armament_minister = laissez_faires_capitalist
+start_date = 1940.1.1
+}
+
+855319 = {
+name = "Hermann Dietrich"
+ideology = fascistic
+loyalty = 1.00
+picture = 8396
+armament_minister = strategic_air_proponent
+start_date = 1910.1.1
+}
+
+855333 = {
+name = "Hermann Ehrhardt"
+ideology = fascistic
+loyalty = 1.00
+picture = 3481
+minister_of_intelligence = political_specialist
+start_date = 1910.1.1
+}
+
+855352 = {
+name = "Hermann Göring"
+ideology = national_socialist
+loyalty = 1.00
+picture = 1291
+chief_of_air = carpet_bombing_doctrine
+start_date = 1920.1.1
+}
+
+855050 = {
+name = "Hermann Kühn"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8397
+armament_minister = administrative_genius
+start_date = 1910.1.1
+}
+
+855206 = {
+name = "Hermann Müller"
+ideology = social_liberal
+loyalty = 1.00
+picture = 3422
+head_of_government = naive_optimist
+foreign_minister = iron_fisted_brute
+start_date = 1910.1.1
+}
+
+855103 = {
+name = "Hermann von der Lieth-Thomsen"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 1474
+chief_of_air = vertical_envelopment_doctrine
+start_date = 1915.1.1
+}
+
+855078 = {
+name = "Hermann von Eichhorn"
+ideology = social_conservative
+loyalty = 1.00
+picture = 1257
+chief_of_staff = school_of_psychology
+chief_of_army = guns_and_butter_doctrine
+start_date = 1910.1.1
+}
+
+855041 = {
+name = "Hermann von Stein"
+ideology = social_conservative
+loyalty = 1.00
+picture = 1348
+armament_minister = infantry_proponent
+start_date = 1910.1.1
+}
+
+855047 = {
+name = "Hermann von Stengel"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = GERM10
+armament_minister = theoretical_scientist
+start_date = 1910.1.1
+}
+
+16 = {
+name = "Hjalmar Schacht"
+ideology = fascistic
+loyalty = 1.00
+picture = 2644
+head_of_state = pig_headed_isolationist
+armament_minister = administrative_genius
+minister_of_intelligence = industrial_specialist
+start_date = 1945.1.1
+}
+
+855212 = {
+name = "Hugo Haase"
+ideology = social_democrat
+loyalty = 1.00
+picture = 3436
+foreign_minister = ideological_crusader
+start_date = 1910.1.1
+}
+
+855242 = {
+name = "Hugo Preuß"
+ideology = market_liberal
+loyalty = 1.00
+picture = 3470
+minister_of_security = man_of_the_people
+start_date = 1910.1.1
+}
+
+170 = {
+name = "Hugo Sperrle"
+ideology = national_socialist
+loyalty = 1.00
+picture = M203
+chief_of_air = carpet_bombing_doctrine
+start_date = 1939.1.1
+}
+
+855321 = {
+name = "Hugo Stinnes"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3464
+armament_minister = laissez_faires_capitalist
+start_date = 1910.1.1
+}
+
+855094 = {
+name = "Hugo von Pohl"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3411
+chief_of_navy = indirect_approach_doctrine
+start_date = 1910.1.1
+}
+
+855031 = {
+name = "Hugo von Radolin"
+ideology = social_conservative
+loyalty = 1.00
+picture = 8398
+foreign_minister = ideological_crusader
+start_date = 1910.1.1
+}
+
+35 = {
+name = "Joachim von Ribbentrop"
+ideology = national_socialist
+loyalty = 1.00
+picture = M55
+foreign_minister = iron_fisted_brute
+start_date = 1937.1.1
+}
+
+855315 = {
+name = "Johann Albrecht zu Mecklenburg"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8399
+armament_minister = military_entrepreneur
+start_date = 1910.1.1
+}
+
+855234 = {
+name = "Johann Becker"
+ideology = market_liberal
+loyalty = 1.00
+picture = 8400
+armament_minister = corrupt_kleptocrat
+start_date = 1922.1.1
+}
+
+855018 = {
+name = "Johann Heinrich von Bernstorff"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8401
+foreign_minister = great_compromiser
+start_date = 1921.1.1
+}
+
+30 = {
+name = "Johann Schwerin von Krosigk"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M49
+head_of_government = silent_workhorse
+foreign_minister = apologetic_clerk
+armament_minister = resource_industrialist
+start_date = 1944.1.1
+}
+
+99 = {
+name = "Johann von Bernstorff"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M121
+minister_of_security = back_stabber
+start_date = 1933.1.1
+}
+
+855060 = {
+name = "Johann von Dallwitz"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8402
+minister_of_security = back_stabber
+start_date = 1910.1.1
+}
+
+80 = {
+name = "Johannes Popitz"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M101
+armament_minister = resource_industrialist
+start_date = 1943.1.1
+}
+
+103 = {
+name = "Josef Wirmer"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M125
+minister_of_security = man_of_the_people
+start_date = 1942.1.1
+}
+
+12 = {
+name = "Joseph Goebbels"
+ideology = national_socialist
+loyalty = 1.00
+picture = M56
+head_of_state = power_hungry_demagogue
+foreign_minister = the_cloak_n_dagger_schemer
+minister_of_security = man_of_the_people
+start_date = 1942.1.1
+}
+
+855236 = {
+name = "Joseph Koeth"
+ideology = social_liberal
+loyalty = 1.00
+picture = 8403
+armament_minister = battle_fleet_proponent
+start_date = 1923.1.1
+}
+
+855208 = {
+name = "Joseph Wirth"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3423
+head_of_government = silent_workhorse
+foreign_minister = apologetic_clerk
+armament_minister = air_superiority_proponent
+start_date = 1910.1.1
+}
+
+855038 = {
+name = "Josias von Heeringen"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 1463
+armament_minister = infantry_proponent
+start_date = 1910.1.1
+}
+
+74 = {
+name = "Julius Curtius"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M95
+armament_minister = resource_industrialist
+start_date = 1933.1.1
+}
+
+111 = {
+name = "Julius Leber"
+ideology = stalinist
+loyalty = 1.00
+picture = M133
+minister_of_security = compassionate_gentleman
+start_date = 1942.1.1
+}
+
+142 = {
+name = "Julius Ringel"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M169
+chief_of_staff = school_of_manoeuvre
+chief_of_army = guns_and_butter_doctrine
+start_date = 1944.1.1
+}
+
+855021 = {
+name = "Julius von Waldthausen"
+ideology = social_conservative
+loyalty = 1.00
+picture = 8404
+foreign_minister = the_cloak_n_dagger_schemer
+start_date = 1922.1.1
+}
+
+250 = {
+name = "Karl Allmendinger"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 7381
+chief_of_staff = school_of_fire_support
+start_date = 1941.1.1
+}
+
+107 = {
+name = "Karl Arnold"
+ideology = social_conservative
+loyalty = 1.00
+picture = M129
+minister_of_security = crime_fighter
+start_date = 1946.1.1
+}
+
+855065 = {
+name = "Karl Brose"
+ideology = social_conservative
+loyalty = 1.00
+picture = unknown
+minister_of_intelligence = technical_specialist
+start_date = 1910.1.1
+}
+
+13 = {
+name = "Karl Dönitz"
+ideology = national_socialist
+loyalty = 1.00
+picture = M32
+head_of_state = resigned_generalissimo
+armament_minister = submarine_proponent
+chief_of_navy = indirect_approach_doctrine
+start_date = 1945.1.1
+}
+
+252 = {
+name = "Karl Ernst Haushofer"
+ideology = fascistic
+loyalty = 1.00
+picture = 7383
+minister_of_intelligence = industrial_specialist
+start_date = 1930.1.1
+}
+
+229 = {
+name = "Karl Friedrich Otto Wolff"
+ideology = national_socialist
+loyalty = 1.00
+picture = 6016
+minister_of_intelligence = dismal_enigma
+chief_of_staff = school_of_defence
+start_date = 1946.1.1
+}
+
+91 = {
+name = "Karl Hanke"
+ideology = national_socialist
+loyalty = 1.00
+picture = M113
+minister_of_security = back_stabber
+start_date = 1944.1.1
+}
+
+855051 = {
+name = "Karl Helfferich"
+ideology = fascistic
+loyalty = 1.00
+picture = 3458
+armament_minister = laissez_faires_capitalist
+minister_of_security = efficient_sociopath
+start_date = 1910.1.1
+}
+
+855249 = {
+name = "Karl Jarres"
+ideology = market_liberal
+loyalty = 1.00
+picture = 3992
+minister_of_security = man_of_the_people
+start_date = 1923.1.1
+}
+
+172 = {
+name = "Karl Koller"
+ideology = fascistic
+loyalty = 1.00
+picture = M205
+chief_of_air = army_aviation_doctrine
+start_date = 1933.1.1
+}
+
+227 = {
+name = "Karl Krauch"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 5912
+armament_minister = theoretical_scientist
+start_date = 1939.1.1
+}
+
+68 = {
+name = "Karl Otto Saur"
+ideology = national_socialist
+loyalty = 1.00
+picture = M89
+armament_minister = military_entrepreneur
+start_date = 1945.1.1
+}
+
+100 = {
+name = "Karl Sack"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M122
+minister_of_security = silent_lawyer
+start_date = 1933.1.1
+}
+
+855064 = {
+name = "Karl Trimborn"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3475
+minister_of_security = silent_lawyer
+start_date = 1915.1.1
+}
+
+855079 = {
+name = "Karl von Bülow"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 1480
+chief_of_staff = school_of_manoeuvre
+chief_of_army = decisive_battle_doctrine
+start_date = 1910.1.1
+}
+
+855037 = {
+name = "Karl von Einem"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 1265
+armament_minister = military_entrepreneur
+start_date = 1910.1.1
+}
+
+855022 = {
+name = "Karl von Luxburg"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+foreign_minister = iron_fisted_brute
+start_date = 1910.1.1
+}
+
+31 = {
+name = "Konrad Adenauer"
+ideology = social_conservative
+loyalty = 1.00
+picture = M50
+head_of_government = silent_workhorse
+foreign_minister = great_compromiser
+start_date = 1946.1.1
+}
+
+184 = {
+name = "Konstantin Hierl"
+ideology = national_socialist
+loyalty = 1.00
+picture = M221
+armament_minister = resource_industrialist
+start_date = 1933.1.1
+}
+
+855030 = {
+name = "Konstantin von Neurath"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8405
+foreign_minister = general_staffer
+start_date = 1922.1.1
+}
+
+855329 = {
+name = "Kuno von Westarp"
+ideology = fascistic
+loyalty = 1.00
+picture = 8406
+minister_of_security = back_stabber
+start_date = 1910.1.1
+}
+
+61 = {
+name = "Kurt Daluege"
+ideology = national_socialist
+loyalty = 1.00
+picture = M82
+armament_minister = infantry_proponent
+minister_of_security = prince_of_terror
+start_date = 1940.1.1
+}
+
+163 = {
+name = "Kurt Freiwald"
+ideology = national_socialist
+loyalty = 1.00
+picture = M194
+chief_of_navy = base_control_doctrine
+start_date = 1945.1.1
+}
+
+147 = {
+name = "Kurt von Hammerstein-Equord"
+ideology = fascistic
+loyalty = 1.00
+picture = M175
+chief_of_army = guns_and_butter_doctrine
+start_date = 1939.1.1
+}
+
+138 = {
+name = "Kurt Zeitzler"
+ideology = fascistic
+loyalty = 1.00
+picture = M163
+chief_of_staff = school_of_defence
+start_date = 1942.1.1
+}
+
+855253 = {
+name = "Leo Riedel"
+ideology = social_conservative
+loyalty = 1.00
+picture = unknown
+minister_of_intelligence = technical_specialist
+start_date = 1924.1.1
+}
+
+855032 = {
+name = "Leopold von Hoesch"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8407
+foreign_minister = great_compromiser
+start_date = 1923.1.1
+}
+
+7 = {
+name = "Ludwig Beck"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 2640
+head_of_state = resigned_generalissimo
+chief_of_staff = school_of_manoeuvre
+start_date = 1933.1.1
+}
+
+83 = {
+name = "Ludwig Erhard"
+ideology = social_conservative
+loyalty = 1.00
+picture = M104
+armament_minister = administrative_genius
+start_date = 1947.1.1
+}
+
+26 = {
+name = "Ludwig Fulda"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M45
+head_of_government = happy_amateur
+chief_of_navy = decisive_naval_battle_doctrine
+start_date = 1933.1.1
+}
+
+40 = {
+name = "Ludwig Kastl"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M60
+foreign_minister = biased_intellectual
+start_date = 1933.1.1
+}
+
+20 = {
+name = "Ludwig Renn"
+ideology = stalinist
+loyalty = 1.00
+picture = M21
+head_of_state = insignificant_layman
+minister_of_security = efficient_sociopath
+start_date = 1933.1.1
+}
+
+855346 = {
+name = "Ludwig von Estorff"
+ideology = fascistic
+loyalty = 1.00
+picture = 8408
+chief_of_army = decisive_battle_doctrine
+start_date = 1910.1.1
+}
+
+203 = {
+name = "Lutz von Schwerin-Krosigk"
+ideology = national_socialist
+loyalty = 1.00
+picture = M241
+armament_minister = resource_industrialist
+start_date = 1945.1.1
+}
+
+855336 = {
+name = "Magnus Levetzow"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 1366
+chief_of_navy = base_control_doctrine
+start_date = 1910.1.1
+}
+
+23 = {
+name = "Martin Bormann"
+ideology = national_socialist
+loyalty = 1.00
+picture = M42
+head_of_government = silent_workhorse
+minister_of_intelligence = political_specialist
+start_date = 1941.1.1
+}
+
+855251 = {
+name = "Martin Braune"
+ideology = social_conservative
+loyalty = 1.00
+picture = unknown
+minister_of_intelligence = dismal_enigma
+start_date = 1910.1.1
+}
+
+855250 = {
+name = "Martin Schiele"
+ideology = fascistic
+loyalty = 1.00
+picture = 8409
+minister_of_security = prince_of_terror
+start_date = 1924.1.1
+}
+
+855225 = {
+name = "Matthias Erzberger"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3465
+armament_minister = laissez_faires_capitalist
+start_date = 1919.1.1
+}
+
+62 = {
+name = "Max Amann"
+ideology = national_socialist
+loyalty = 1.00
+picture = M83
+armament_minister = battle_fleet_proponent
+start_date = 1941.1.1
+}
+
+855320 = {
+name = "Max Rötger"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+armament_minister = administrative_genius
+start_date = 1910.1.1
+}
+
+855092 = {
+name = "Max von Fischel"
+ideology = social_conservative
+loyalty = 1.00
+picture = 7950
+chief_of_navy = decisive_naval_battle_doctrine
+start_date = 1910.1.1
+}
+
+855338 = {
+name = "Max von Grapow"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8428
+chief_of_navy = power_projection_doctrine
+start_date = 1910.1.1
+}
+
+855058 = {
+name = "Max Wallraf"
+ideology = fascistic
+loyalty = 1.00
+picture = 3472
+minister_of_security = crime_fighter
+start_date = 1910.1.1
+}
+
+855262 = {
+name = "Maximilian Rogge"
+ideology = social_conservative
+loyalty = 1.00
+picture = unknown
+chief_of_navy = base_control_doctrine
+start_date = 1910.1.1
+}
+
+855007 = {
+name = "Maximilian von Baden"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3442
+head_of_government = naive_optimist
+start_date = 1918.1.1
+}
+
+257 = {
+name = "Maximilian von Weichs"
+ideology = fascistic
+loyalty = 1.00
+picture = 7444
+chief_of_staff = school_of_fire_support
+chief_of_army = decisive_battle_doctrine
+start_date = 1939.1.1
+}
+
+855023 = {
+name = "Nikolaus von Wallwitz"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+foreign_minister = general_staffer
+start_date = 1910.1.1
+}
+
+855318 = {
+name = "Oskar Hergt"
+ideology = fascistic
+loyalty = 1.00
+picture = 8410
+armament_minister = air_superiority_proponent
+start_date = 1910.1.1
+}
+
+25 = {
+name = "Oskar Meissner"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M44
+head_of_government = naive_optimist
+foreign_minister = the_cloak_n_dagger_schemer
+start_date = 1933.1.1
+}
+
+228 = {
+name = "Oskar Munzel"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 6015
+chief_of_staff = school_of_fire_support
+start_date = 1948.1.1
+}
+
+14 = {
+name = "Oskar von Hindenburg"
+ideology = fascistic
+loyalty = 1.00
+picture = M33
+head_of_state = insignificant_layman
+minister_of_intelligence = political_specialist
+start_date = 1933.1.1
+}
+
+855343 = {
+name = "Oskar von Hutier"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 1267
+chief_of_staff = school_of_psychology
+start_date = 1910.1.1
+}
+
+66 = {
+name = "Oswald Pohl"
+ideology = national_socialist
+loyalty = 1.00
+picture = M87
+armament_minister = military_entrepreneur
+start_date = 1943.1.1
+}
+
+197 = {
+name = "Otto Dessloch"
+ideology = national_socialist
+loyalty = 1.00
+picture = L434
+chief_of_air = army_aviation_doctrine
+start_date = 1939.1.1
+}
+
+231 = {
+name = "Otto Ernst Remer"
+ideology = national_socialist
+loyalty = 1.00
+picture = 6017
+minister_of_security = prince_of_terror
+start_date = 1947.1.1
+}
+
+855240 = {
+name = "Otto Geßler"
+ideology = market_liberal
+loyalty = 1.00
+picture = 8411
+armament_minister = tank_proponent
+start_date = 1920.1.1
+}
+
+92 = {
+name = "Otto Georg Thierack"
+ideology = national_socialist
+loyalty = 1.00
+picture = M114
+minister_of_security = crime_fighter
+start_date = 1942.1.1
+}
+
+855258 = {
+name = "Otto Hasse"
+ideology = social_conservative
+loyalty = 1.00
+picture = 8412
+chief_of_staff = school_of_mass_combat
+start_date = 1923.1.1
+}
+
+122 = {
+name = "Otto Strasser"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M145
+minister_of_intelligence = political_specialist
+start_date = 1938.1.1
+}
+
+855323 = {
+name = "Otto von Lossow"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3484
+armament_minister = infantry_proponent
+chief_of_army = elastic_defence_doctrine
+start_date = 1910.1.1
+}
+
+855020 = {
+name = "Otto Wiedfeldt"
+ideology = social_conservative
+loyalty = 1.00
+picture = 8413
+foreign_minister = biased_intellectual
+start_date = 1922.1.1
+}
+
+855045 = {
+name = "Paul Behncke"
+ideology = social_conservative
+loyalty = 1.00
+picture = 8414
+armament_minister = battle_fleet_proponent
+chief_of_navy = power_projection_doctrine
+start_date = 1915.1.1
+}
+
+855070 = {
+name = "Paul Ebert"
+ideology = social_conservative
+loyalty = 1.00
+picture = unknown
+minister_of_intelligence = naval_intelligence_specialist
+start_date = 1915.1.1
+}
+
+204 = {
+name = "Paul Giesler"
+ideology = national_socialist
+loyalty = 1.00
+picture = M242
+minister_of_security = efficient_sociopath
+start_date = 1945.1.1
+}
+
+194 = {
+name = "Paul Hausser"
+ideology = national_socialist
+loyalty = 1.00
+picture = L503
+chief_of_army = armoured_spearhead_doctrine
+start_date = 1944.1.1
+}
+
+75 = {
+name = "Paul Lejeune-Jung"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M96
+armament_minister = tank_proponent
+start_date = 1938.1.1
+}
+
+855017 = {
+name = "Paul Metternich"
+ideology = social_conservative
+loyalty = 1.00
+picture = 8415
+foreign_minister = ideological_crusader
+start_date = 1910.1.1
+}
+
+855074 = {
+name = "Paul von Hindenburg"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 1467
+head_of_state = popular_figurehead
+chief_of_staff = school_of_mass_combat
+chief_of_army = elastic_defence_doctrine
+start_date = 1910.1.1
+}
+
+855013 = {
+name = "Paul von Hintze"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3415
+foreign_minister = biased_intellectual
+start_date = 1915.1.1
+}
+
+855345 = {
+name = "Paul von Lettow-Vorbeck"
+ideology = fascistic
+loyalty = 1.00
+picture = 1274
+chief_of_army = guns_and_butter_doctrine
+start_date = 1910.1.1
+}
+
+855106 = {
+name = "Peter Strasser"
+ideology = social_conservative
+loyalty = 1.00
+picture = 1416
+chief_of_air = carpet_bombing_doctrine
+start_date = 1910.1.1
+}
+
+855204 = {
+name = "Philipp Scheidemann"
+ideology = social_liberal
+loyalty = 1.00
+picture = 3444
+head_of_government = ambitious_union_boss
+armament_minister = administrative_genius
+start_date = 1910.1.1
+}
+
+855340 = {
+name = "Rüdiger von der Goltz"
+ideology = fascistic
+loyalty = 1.00
+picture = 1245
+chief_of_staff = school_of_fire_support
+start_date = 1910.1.1
+}
+
+127 = {
+name = "Reinhard Gehlen"
+ideology = social_conservative
+loyalty = 1.00
+picture = M150
+minister_of_intelligence = dismal_enigma
+start_date = 1947.1.1
+}
+
+206 = {
+name = "Reinhard Heydrich"
+ideology = national_socialist
+loyalty = 1.00
+picture = M244
+minister_of_security = prince_of_terror
+start_date = 1933.1.1
+}
+
+855097 = {
+name = "Reinhard Scheer"
+ideology = social_conservative
+loyalty = 1.00
+picture = 1275
+chief_of_navy = decisive_naval_battle_doctrine
+start_date = 1915.1.1
+}
+
+855048 = {
+name = "Reinhold von Sydow"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+armament_minister = resource_industrialist
+start_date = 1910.1.1
+}
+
+855101 = {
+name = "Richard Roethe"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+chief_of_air = air_superiority_doctrine
+start_date = 1910.1.1
+}
+
+855012 = {
+name = "Richard von Kühlmann"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3426
+foreign_minister = apologetic_clerk
+start_date = 1910.1.1
+}
+
+251 = {
+name = "Richard Walther Darre"
+ideology = national_socialist
+loyalty = 1.00
+picture = 7382
+minister_of_security = efficient_sociopath
+minister_of_intelligence = industrial_specialist
+start_date = 1933.1.1
+}
+
+67 = {
+name = "Robert Ley"
+ideology = national_socialist
+loyalty = 1.00
+picture = M88
+armament_minister = corrupt_kleptocrat
+start_date = 1933.1.1
+}
+
+171 = {
+name = "Robert Ritter von Greim"
+ideology = national_socialist
+loyalty = 1.00
+picture = M204
+chief_of_air = air_superiority_doctrine
+start_date = 1944.1.1
+}
+
+855232 = {
+name = "Robert Schmidt"
+ideology = social_liberal
+loyalty = 1.00
+picture = 8416
+armament_minister = strategic_air_proponent
+start_date = 1919.1.1
+}
+
+190 = {
+name = "Roland Freisler"
+ideology = national_socialist
+loyalty = 1.00
+picture = M228
+minister_of_security = crime_fighter
+start_date = 1942.1.1
+}
+
+212 = {
+name = "Rudolf Diels"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M250
+minister_of_security = crime_fighter
+start_date = 1933.1.1
+}
+
+2 = {
+name = "Rudolf Hess"
+ideology = national_socialist
+loyalty = 1.00
+picture = 2635
+head_of_government = silent_workhorse
+armament_minister = strategic_air_proponent
+start_date = 1933.1.1
+}
+
+855228 = {
+name = "Rudolf Hilferding"
+ideology = social_liberal
+loyalty = 1.00
+picture = 3466
+armament_minister = administrative_genius
+start_date = 1923.1.1
+}
+
+855247 = {
+name = "Rudolf Oeser"
+ideology = market_liberal
+loyalty = 1.00
+picture = 3993
+minister_of_security = efficient_sociopath
+start_date = 1922.1.1
+}
+
+855053 = {
+name = "Rudolf Schwander"
+ideology = social_conservative
+loyalty = 1.00
+picture = unknown
+armament_minister = resource_industrialist
+start_date = 1910.1.1
+}
+
+855231 = {
+name = "Rudolf Wissell"
+ideology = social_liberal
+loyalty = 1.00
+picture = 8417
+armament_minister = air_superiority_proponent
+start_date = 1910.1.1
+}
+
+855052 = {
+name = "Siegfried von Roedern"
+ideology = fascistic
+loyalty = 1.00
+picture = 3459
+armament_minister = theoretical_scientist
+start_date = 1910.1.1
+}
+
+855004 = {
+name = "Theobald von Bethmann-Hollweg"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3438
+head_of_government = naive_optimist
+minister_of_security = compassionate_gentleman
+start_date = 1910.1.1
+}
+
+158 = {
+name = "Theodor Blank"
+ideology = social_conservative
+loyalty = 1.00
+picture = M188
+chief_of_army = armoured_spearhead_doctrine
+start_date = 1946.1.1
+}
+
+19 = {
+name = "Theodor Heuss"
+ideology = social_conservative
+loyalty = 1.00
+picture = M38
+head_of_state = die_hard_reformer
+foreign_minister = apologetic_clerk
+start_date = 1946.1.1
+}
+
+44 = {
+name = "Thomas Mann"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M64
+foreign_minister = general_staffer
+start_date = 1933.1.1
+}
+
+855063 = {
+name = "Tilo von Wilmowsky"
+ideology = fascistic
+loyalty = 1.00
+picture = 8418
+minister_of_security = prince_of_terror
+start_date = 1910.1.1
+}
+
+855330 = {
+name = "Traugott von Jagow"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8154
+minister_of_security = crime_fighter
+start_date = 1910.1.1
+}
+
+198 = {
+name = "Ulrich Grauert"
+ideology = fascistic
+loyalty = 1.00
+picture = L439
+chief_of_air = air_superiority_doctrine
+start_date = 1933.1.1
+}
+
+855029 = {
+name = "Ulrich von Brockdorff-Rantzau"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3420
+foreign_minister = biased_intellectual
+start_date = 1918.1.1
+}
+
+49 = {
+name = "Ulrich von Hassel"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M13
+foreign_minister = the_cloak_n_dagger_schemer
+start_date = 1943.1.1
+}
+
+855311 = {
+name = "Ulrich von Hassell"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8419
+foreign_minister = general_staffer
+start_date = 1918.1.1
+}
+
+87 = {
+name = "Viktor Lutze"
+ideology = national_socialist
+loyalty = 1.00
+picture = M109
+minister_of_security = compassionate_gentleman
+start_date = 1939.1.1
+}
+
+855200 = {
+name = "Vollzugsrat"
+ideology = social_democrat
+loyalty = 1.00
+picture = 8420
+head_of_state = popular_figurehead
+start_date = 1910.1.1
+}
+
+188 = {
+name = "Walter Buch"
+ideology = national_socialist
+loyalty = 1.00
+picture = M226
+minister_of_security = man_of_the_people
+start_date = 1937.1.1
+}
+
+60 = {
+name = "Walter Darré"
+ideology = national_socialist
+loyalty = 1.00
+picture = M81
+armament_minister = military_entrepreneur
+start_date = 1939.1.1
+}
+
+59 = {
+name = "Walter Funk"
+ideology = national_socialist
+loyalty = 1.00
+picture = M80
+armament_minister = resource_industrialist
+start_date = 1939.1.1
+}
+
+855069 = {
+name = "Walter Isendahl"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8421
+minister_of_intelligence = dismal_enigma
+start_date = 1910.1.1
+}
+
+855067 = {
+name = "Walter Nicolai"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3448
+minister_of_intelligence = political_specialist
+start_date = 1910.1.1
+}
+
+102 = {
+name = "Walter Schellenberg"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M124
+minister_of_security = efficient_sociopath
+minister_of_intelligence = dismal_enigma
+start_date = 1939.1.1
+}
+
+855216 = {
+name = "Walter Simons"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3428
+foreign_minister = ideological_crusader
+start_date = 1920.1.1
+}
+
+34 = {
+name = "Walter Ulbricht"
+ideology = stalinist
+loyalty = 1.00
+picture = M53
+head_of_government = backroom_backstabber
+foreign_minister = the_cloak_n_dagger_schemer
+minister_of_security = prince_of_terror
+start_date = 1946.1.1
+}
+
+855100 = {
+name = "Walter von Eberhardt"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8422
+chief_of_air = naval_aviation_doctrine
+start_date = 1910.1.1
+}
+
+156 = {
+name = "Walter von Lüttwitz"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M185
+chief_of_army = decisive_battle_doctrine
+start_date = 1933.1.1
+}
+
+261 = {
+name = "Walter Warlimont"
+ideology = fascistic
+loyalty = 1.00
+picture = 7768
+armament_minister = military_entrepreneur
+chief_of_staff = school_of_fire_support
+chief_of_army = elastic_defence_doctrine
+start_date = 1945.1.1
+}
+
+196 = {
+name = "Walter Warzecha"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = L891
+chief_of_navy = indirect_approach_doctrine
+start_date = 1942.1.1
+}
+
+242 = {
+name = "Walther Buhle"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 7378
+chief_of_staff = school_of_fire_support
+chief_of_army = elastic_defence_doctrine
+start_date = 1942.1.1
+}
+
+855219 = {
+name = "Walther Rathenau"
+ideology = market_liberal
+loyalty = 1.00
+picture = 3429
+foreign_minister = biased_intellectual
+start_date = 1922.1.1
+}
+
+855238 = {
+name = "Walther Reinhardt"
+ideology = social_conservative
+loyalty = 1.00
+picture = 1478
+armament_minister = infantry_proponent
+chief_of_army = guns_and_butter_doctrine
+start_date = 1910.1.1
+}
+
+146 = {
+name = "Walther von Brauchitsch"
+ideology = fascistic
+loyalty = 1.00
+picture = M174
+chief_of_army = armoured_spearhead_doctrine
+start_date = 1938.1.1
+}
+
+855305 = {
+name = "Walther von Lüttwitz"
+ideology = fascistic
+loyalty = 1.00
+picture = 1483
+head_of_state = barking_buffoon
+head_of_government = old_general
+chief_of_staff = school_of_manoeuvre
+start_date = 1910.1.1
+}
+
+200 = {
+name = "Walther von Reichenau"
+ideology = national_socialist
+loyalty = 1.00
+picture = L334
+chief_of_staff = school_of_fire_support
+start_date = 1941.1.1
+}
+
+205 = {
+name = "Werner Naumann"
+ideology = national_socialist
+loyalty = 1.00
+picture = M243
+minister_of_security = compassionate_gentleman
+start_date = 1945.1.1
+}
+
+4 = {
+name = "Werner von Blomberg"
+ideology = national_socialist
+loyalty = 1.00
+picture = 2638
+armament_minister = infantry_proponent
+chief_of_army = guns_and_butter_doctrine
+start_date = 1933.1.1
+}
+
+8 = {
+name = "Werner von Fritsch"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 2641
+chief_of_army = armoured_spearhead_doctrine
+start_date = 1933.1.1
+}
+
+855062 = {
+name = "Wilhelm Arnold Drews"
+ideology = social_conservative
+loyalty = 1.00
+picture = 8423
+minister_of_security = man_of_the_people
+start_date = 1910.1.1
+}
+
+855090 = {
+name = "Wilhelm Büchsel"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+chief_of_navy = base_control_doctrine
+start_date = 1910.1.1
+}
+
+246 = {
+name = "Wilhelm Burgdorf"
+ideology = national_socialist
+loyalty = 1.00
+picture = 7380
+minister_of_intelligence = political_specialist
+chief_of_staff = school_of_mass_combat
+chief_of_army = decisive_battle_doctrine
+start_date = 1945.1.1
+}
+
+855332 = {
+name = "Wilhelm Canaris"
+ideology = fascistic
+loyalty = 1.00
+picture = 8424
+minister_of_intelligence = naval_intelligence_specialist
+start_date = 1918.1.1
+}
+
+855209 = {
+name = "Wilhelm Carl Josef Cuno"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3446
+head_of_government = happy_amateur
+start_date = 1910.1.1
+}
+
+855008 = {
+name = "Wilhelm Eduard von Schoen"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3417
+foreign_minister = iron_fisted_brute
+start_date = 1910.1.1
+}
+
+855326 = {
+name = "Wilhelm Frick"
+ideology = fascistic
+loyalty = 1.00
+picture = 8425
+minister_of_security = prince_of_terror
+start_date = 1918.1.1
+}
+
+855089 = {
+name = "Wilhelm Groener"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3403
+chief_of_army = elastic_defence_doctrine
+start_date = 1916.1.1
+}
+
+855105 = {
+name = "Wilhelm Haehnelt"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+chief_of_air = air_superiority_doctrine
+start_date = 1917.1.1
+}
+
+855014 = {
+name = "Wilhelm Heinrich Solf"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3421
+foreign_minister = the_cloak_n_dagger_schemer
+start_date = 1915.1.1
+}
+
+855066 = {
+name = "Wilhelm Heye"
+ideology = social_conservative
+loyalty = 1.00
+picture = 8426
+minister_of_intelligence = logistics_specialist
+chief_of_staff = school_of_manoeuvre
+start_date = 1910.1.1
+}
+
+855001 = {
+name = "Wilhelm II"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3451
+head_of_state = stern_imperialist
+start_date = 1910.1.1
+}
+
+855002 = {
+name = "Wilhelm III"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3450
+head_of_state = weary_stiff_neck
+start_date = 1910.1.1
+}
+
+148 = {
+name = "Wilhelm Keitel"
+ideology = national_socialist
+loyalty = 1.00
+picture = M176
+chief_of_army = armoured_spearhead_doctrine
+start_date = 1940.1.1
+}
+
+855325 = {
+name = "Wilhelm Kube"
+ideology = national_socialist
+loyalty = 1.00
+picture = 8427
+minister_of_security = compassionate_gentleman
+start_date = 1918.1.1
+}
+
+195 = {
+name = "Wilhelm Marschall"
+ideology = national_socialist
+loyalty = 1.00
+picture = L407
+chief_of_navy = open_seas_doctrine
+start_date = 1941.1.1
+}
+
+855211 = {
+name = "Wilhelm Marx"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3447
+head_of_government = corporate_suit
+start_date = 1910.1.1
+}
+
+177 = {
+name = "Wilhelm Oxenius"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M210
+chief_of_air = naval_aviation_doctrine
+start_date = 1945.1.1
+}
+
+855102 = {
+name = "Wilhelm Siegert"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3490
+chief_of_air = army_aviation_doctrine
+start_date = 1910.1.1
+}
+
+855248 = {
+name = "Wilhelm Sollmann"
+ideology = social_liberal
+loyalty = 1.00
+picture = 3469
+minister_of_security = compassionate_gentleman
+start_date = 1923.1.1
+}
+
+101 = {
+name = "Wilhelm von Gayl"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M15
+minister_of_security = prince_of_terror
+start_date = 1938.1.1
+}
+
+46 = {
+name = "Wilhelm Waetzoldt"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M66
+foreign_minister = apologetic_clerk
+start_date = 1938.1.1
+}
+
+855264 = {
+name = "William Michaelis"
+ideology = social_conservative
+loyalty = 1.00
+picture = unknown
+chief_of_navy = decisive_naval_battle_doctrine
+start_date = 1920.1.1
+}
+
+85 = {
+name = "Willie Munzenberg"
+ideology = stalinist
+loyalty = 1.00
+picture = M24
+armament_minister = administrative_genius
+start_date = 1942.1.1
+}
+
+855306 = {
+name = "Wolfgang Kapp"
+ideology = fascistic
+loyalty = 1.00
+picture = 3482
+head_of_government = happy_amateur
+start_date = 1910.1.1
+}
+
+185 = {
+name = "Xaver Dorsch"
+ideology = fascistic
+loyalty = 1.00
+picture = M222
+armament_minister = air_superiority_proponent
+start_date = 1944.1.1
+}
+
+855201 = {
+name = "Zentralrat"
+ideology = social_liberal
+loyalty = 1.00
+picture = 8420
+head_of_state = die_hard_reformer
+start_date = 1910.1.1
+}
+
+
+}

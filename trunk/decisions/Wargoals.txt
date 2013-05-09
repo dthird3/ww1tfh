@@ -1,0 +1,248 @@
+diplomatic_decisions = {
+	wargoal_france = {
+		potential = {
+			faction = axis
+			#OR = {
+			#	tag = GER
+			#	tag = AUH
+			#	tag = TUR
+			#}
+			government_in_exile = no
+			GER = { has_country_flag = germany_mobilize }
+			NOT =  {
+				has_country_flag = set_goal
+			}
+		}
+		allow = {
+			
+		}
+	
+		effect = {
+			set_country_flag = set_goal
+			add_wargoal = {	
+					target = FRA
+					war_goal = { casus_belli= german_france }
+				}
+		}
+	ai_will_do = {
+			factor = 1
+		}
+	}
+	
+		wargoal_russia = {
+		potential = {
+			faction = axis
+			#OR = {
+			#	tag = GER
+			#	tag = AUH
+			#	tag = TUR
+			#}
+			government_in_exile = no
+			GER = { has_country_flag = germany_mobilize }
+			NOT =  {
+				has_country_flag = set_goal1
+			}
+		}
+		allow = {
+			
+		}
+
+		effect = {
+			set_country_flag = set_goal1
+			add_wargoal = {	
+					target = RUS
+					war_goal = { casus_belli= axis_russia }
+				}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	wargoal_england = {
+		potential = {
+			faction = axis
+			#OR = {
+			#	tag = GER
+			#	tag = AUH
+			#	tag = TUR
+			#}
+			government_in_exile = no
+			GER = { has_country_flag = germany_mobilize }
+			NOT =  {
+				has_country_flag = set_goal2
+			}
+		}
+		allow = {
+			
+		}
+
+		effect = {
+			set_country_flag = set_goal2
+			add_wargoal = {	
+					target = ENG
+					war_goal = { casus_belli= axis_england }
+				}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	wargoal_germany = {
+		potential = {
+			faction = allies
+			#OR = {
+			#	tag = ENG
+			#	tag = FRA
+			#	tag = RUS
+			#	tag = USA
+			#}
+			government_in_exile = no
+			GER = { has_country_flag = germany_mobilize }
+			NOT =  {
+				has_country_flag = set_goal3
+			}
+		}
+		allow = {
+			
+		}
+
+		effect = {
+			set_country_flag = set_goal3
+			add_wargoal = {	
+					target = GER
+					war_goal = { casus_belli= allies_germany }
+				}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	wargoal_austria = {
+		potential = {
+			faction = allies
+			#OR = {
+			#	tag = ENG
+			#	tag = FRA
+			#	tag = RUS
+			#	tag = USA
+			#}
+			government_in_exile = no
+			GER = { has_country_flag = germany_mobilize }
+			AUH = { faction = axis }
+			NOT =  {
+				has_country_flag = set_goal4
+			}
+		}
+		allow = {
+			
+		}
+
+		effect = {
+			set_country_flag = set_goal4
+			add_wargoal = {	
+					target = AUH
+					war_goal = { casus_belli= allies_austria }
+				}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	wargoal_ottoman = {
+		potential = {
+			faction = allies
+			#OR = {
+			#	tag = ENG
+			#	tag = FRA
+			#	tag = RUS
+			#	tag = USA
+			#}
+			government_in_exile = no
+			GER = { has_country_flag = germany_mobilize }
+			TUR = { faction = axis }
+			NOT =  {
+				has_country_flag = set_goal5
+			}
+		}
+		allow = {
+			
+		}
+
+		effect = {
+			set_country_flag = set_goal5
+			add_wargoal = {	
+					target = TUR
+					war_goal = { casus_belli = allies_ottoman }
+				}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	wargoal_bulgaria = {
+		potential = {
+			faction = allies
+			#OR = {
+			#	tag = ENG
+			#	tag = FRA
+			#	tag = RUS
+			#	tag = USA
+			#}
+			government_in_exile = no
+			GER = { has_country_flag = germany_mobilize }
+			BUL = { faction = axis }
+			NOT =  {
+				has_country_flag = set_goal6
+			}
+		}
+		allow = {
+			
+		}
+
+		effect = {
+			set_country_flag = set_goal6
+			add_wargoal = {	
+					target = BUL
+					war_goal = { casus_belli= allies_bulgaria }
+				}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	wargoal_romania = {
+		potential = {
+			faction = axis
+			#OR = {
+			#	tag = ENG
+			#	tag = FRA
+			#	tag = RUS
+			#	tag = USA
+			#}
+			government_in_exile = no
+			GER = { has_country_flag = germany_mobilize }
+			ROM = { faction = allies }
+			NOT =  {
+				has_country_flag = set_goal7
+			}
+		}
+		allow = {
+			
+		}
+
+		effect = {
+			set_country_flag = set_goal7
+			add_wargoal = {	
+					target = ROM
+					war_goal = { casus_belli= axis_romania }
+				}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

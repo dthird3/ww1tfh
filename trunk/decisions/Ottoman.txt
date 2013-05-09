@@ -1,0 +1,71 @@
+diplomatic_decisions = {
+
+	ottger = {
+		potential = {
+			tag = TUR
+			exists = GER
+			is_subject = no
+			NOT = { THIS = { has_country_flag = turk_alliance } }
+		}
+		allow = { 
+			war = no
+			GER = { war_with = RUS }
+			date = 1914.8.2
+			}
+		effect = {
+			GER = { country_event = 100146 } 
+			TUR = { country_event = 100146 } 
+			TUR = { manpower = 125 }
+			TUR = { neutrality = -20 }
+			relation = { who = GER value = 100 }
+			relation = { who = AUH value = 100 }
+			national_unity = 10
+			set_country_flag = turk_alliance
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ottshell = {
+		potential = {
+			tag = TUR
+			exists = RUS
+			has_country_flag = goeben
+			is_subject = no
+			NOT = { THIS = { has_country_flag = otto_war } }
+		}
+		allow = {
+			war = no
+			date = 1914.10.29
+			}
+		effect = {
+			#TUR = { country_event = 100150 } 
+			set_country_flag = otto_war
+			#egypt_and_middle_east = { add_core = TUR }
+			TUR = { join_faction = axis }
+			#TUR = { war = {
+			#		target = RUS
+			#		attacker_goal = { casus_belli = axis_russia }
+			#		defender_goal = { casus_belli = allies_ottoman }
+			#	}
+			#}
+			#TUR = { war = {
+			#		target = ENG
+			#		attacker_goal = { casus_belli = axis_england }
+			#		defender_goal = { casus_belli = allies_ottoman }
+			#	}
+			#}
+			#TUR = { war = {
+			#		target = FRA
+			#		attacker_goal = { casus_belli = german_france }
+			#		defender_goal = { casus_belli = allies_ottoman }
+			#	}
+			#}
+			neutrality = -30
+			manpower = 150
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+} 

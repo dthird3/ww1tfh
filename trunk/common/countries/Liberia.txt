@@ -1,0 +1,370 @@
+color = { 193  138  83 }
+graphical_culture = Generic
+
+default_templates = {
+	generic_infantry = {
+		infantry_brigade
+		infantry_brigade
+		infantry_brigade
+	}
+	generic_milita = {
+		militia_brigade
+		militia_brigade
+		militia_brigade
+	}
+	generic_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+}
+
+unit_names = {
+
+armor_brigade = { 
+"1st Liberian Armoured Div." "2nd Liberian Armoured Div." "3rd Liberian Armoured Div." "4th Liberian Armoured Div." "5th Liberian Armoured Div." "6th Liberian Armoured Div." "7th Liberian Armoured Div." "8th Liberian Armoured Div." "9th Liberian Armoured Div." "10th Liberian Armoured Div."
+} 
+battlecruiser = { 
+"LRS Monrovia" "LRS Freedom"
+} 
+dreadnaught = { 
+"LRS Monrovia" "LRS Freedom"
+} 
+bergsjaeger_brigade = { 
+"1st Scout Ranger Division" "2nd Scout Ranger Division" "3rd Scout Ranger Division" "4th Scout Ranger Division" "5th Scout Ranger Division" "8th Scout Ranger Division" "10th Scout Ranger Division" "11th Scout Ranger Division" "12th Scout Ranger Division"
+} 
+carrier = { 
+"LRS Republic of Liberia" "LRS Promised Land"
+} 
+cavalry_brigade = { 
+"1st Cavalry Division" "2nd Cavalry Division" "3rd Cavalry Division" "4th Cavalry Division" "5th Cavalry Division" "6th Cavalry Division" "7th Cavalry Division" "8th Cavalry Division" "9th Cavalry Division" "10th Cavalry Division"
+} 
+destroyer = { 
+"1st Destroyer Flotille" "2nd Destroyer Flotille" "3rd Destroyer Flotille" "4th Destroyer Flotille" "5th Destroyer Flotille" "6th Destroyer Flotille" "7th Destroyer Flotille" "8th Destroyer Flotille" "9th Destroyer Flotille" "10th Destroyer Flotille"
+} 
+garrison_brigade = { 
+"1st Republican Guards Div." "2nd Republican Guards Div." "3rd Republican Guards Div." "4th Republican Guards Div." "5th Republican Guards Div." "6th Republican Guards Div." "7th Republican Guards Div." "8th Republican Guards Div." "9th Republican Guards Div." "10th Republican Guards Div." "11th Republican Guards Div." "12th Republican Guards Div." "13th Republican Guards Div." "14th Republican Guards Div." "15th Republican Guards Div." "16th Republican Guards Div." "17th Republican Guards Div." "18th Republican Guards Div." "19th Republican Guards Div." "20th Republican Guards Div."
+} 
+heavy_cruiser = { 
+"LRS Abolition" "LRS Grace" "LRS Free Man" "LRS Thrust" "LRS Hope"
+} 
+hq_brigade = { 
+"1st Liberian Army" "2nd Liberian Army" "3rd Liberian Army" "4th Liberian Army" "5th Liberian Army"
+} 
+infantry_brigade = { 
+"1st Republican Guards Div." "2nd Republican Guards Div." "3rd Republican Guards Div." "4th Republican Guards Div." "5th Republican Guards Div." "6th Republican Guards Div." "7th Republican Guards Div." "8th Republican Guards Div." "9th Republican Guards Div." "10th Republican Guards Div." "11th Republican Guards Div." "12th Republican Guards Div." "13th Republican Guards Div." "14th Republican Guards Div." "15th Republican Guards Div." "16th Republican Guards Div." "17th Republican Guards Div." "18th Republican Guards Div." "19th Republican Guards Div." "20th Republican Guards Div."
+} 
+interceptor = { 
+"1st LAF Fighter Group" "2nd LAF Fighter Group" "3rd LAF Fighter Group" "4th LAF Fighter Group" "5th LAF Fighter Group" "6th LAF Fighter Group" "7th LAF Fighter Group" "8th LAF Fighter Group" "9th LAF Fighter Group" "10th LAF Fighter Group"
+} 
+light_armor_brigade = { 
+"1st Liberian Armoured Div." "2nd Liberian Armoured Div." "3rd Liberian Armoured Div." "4th Liberian Armoured Div." "5th Liberian Armoured Div." "6th Liberian Armoured Div." "7th Liberian Armoured Div." "8th Liberian Armoured Div." "9th Liberian Armoured Div." "10th Liberian Armoured Div."
+} 
+light_cruiser = { 
+"LRS Abolition" "LRS Grace" "LRS Free Man" "LRS Thrust" "LRS Hope"
+} 
+marine_brigade = { 
+"1st Marine Infantry Division" "2nd Marine Infantry Division" "3rd Marine Infantry Division" "4th Marine Infantry Division" "5th Marine Infantry Division" "6th Marine Infantry Division" "7th Marine Infantry Division" "8th Marine Infantry Division" "9th Marine Infantry Division" "10th Marine Infantry Division"
+} 
+militia_brigade = { 
+"1st Police Guards Division" "2nd Police Guards Division" "3rd Police Guards Division" "4th Police Guards Division" "5th Police Guards Division" "6th Police Guards Division" "7th Police Guards Division" "8th Police Guards Division" "9th Police Guards Division" "10th Police Guards Division" "11th Police Guards Division" "12th Police Guards Division" "13th Police Guards Division" "14th Police Guards Division" "15th Police Guards Division" "16th Police Guards Division" "17th Police Guards Division" "18th Police Guards Division" "19th Police Guards Division" "20th Police Guards Division"
+} 
+submarine = { 
+"1st Submarine Flotille" "2nd Submarine Flotille" "3rd Submarine Flotille" "4th Submarine Flotille" "5th Submarine Flotille" "6th Submarine Flotille" "7th Submarine Flotille" "8th Submarine Flotille" "9th Submarine Flotille" "10th Submarine Flotille"
+} 
+tactical_bomber = { 
+"1st LAF Tactical Bomb Group" "2nd LAF Tactical Bomb Group" "3rd LAF Tactical Bomb Group" "4th LAF Tactical Bomb Group" "5th LAF Tactical Bomb Group" "6th LAF Tactical Bomb Group" "7th LAF Tactical Bomb Group" "8th LAF Tactical Bomb Group" "9th LAF Tactical Bomb Group" "10th LAF Tactical Bomb Group"
+} 
+transport_ship = { 
+"1st Sea Transport Flotille" "2nd Sea Transport Flotille" "3rd Sea Transport Flotille" "4th Sea Transport Flotille" "5th Sea Transport Flotille" "6th Sea Transport Flotille" "7th Sea Transport Flotille" "8th Sea Transport Flotille" "9th Sea Transport Flotille" "10th Sea Transport Flotille"
+}
+
+}
+
+ministers = {
+	999988 = {
+		name = "Arthur Barclay" #till 1912 Daniel Edward Howard
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = LIBM1
+		head_of_state = barking_buffoon
+		head_of_government = corporate_suit
+		foreign_minister = great_compromiser
+		armament_minister = administrative_genius
+		minister_of_security = compassionate_gentleman
+		minister_of_intelligence = logistics_specialist
+		chief_of_staff = school_of_mass_combat
+		chief_of_army = guns_and_butter_doctrine
+		chief_of_navy = open_seas_doctrine
+		chief_of_air = air_superiority_doctrine
+		start_date = 1910.1.1
+	}
+	
+380012 = {
+name = "Albert Porte"
+ideology = social_liberal
+loyalty = 1.00
+picture = M69033
+head_of_state = benevolent_gentleman
+head_of_government = ambitious_union_boss
+foreign_minister = great_compromiser
+start_date = 1933.1.1
+}
+
+380013 = {
+name = "Arthur Sweetser"
+ideology = social_liberal
+loyalty = 1.00
+picture = M69034
+head_of_state = insignificant_layman
+head_of_government = corporate_suit
+armament_minister = tank_proponent
+start_date = 1944.1.1
+}
+
+380029 = {
+name = "Benjamin B. Wallace"
+ideology = social_conservative
+loyalty = 1.00
+picture = M69054
+minister_of_security = man_of_the_people
+start_date = 1940.1.1
+}
+
+380007 = {
+name = "Benjamin O. Davis"
+ideology = social_conservative
+loyalty = 1.00
+picture = M69007
+chief_of_staff = school_of_mass_combat
+chief_of_army = armoured_spearhead_doctrine
+start_date = 1933.1.1
+}
+
+380037 = {
+name = "Benjamin O'Davis"
+ideology = social_conservative
+loyalty = 1.00
+picture = M69007
+minister_of_intelligence = logistics_specialist
+start_date = 1942.1.1
+}
+
+380045 = {
+name = "Charles King"
+ideology = social_liberal
+loyalty = 1.00
+picture = unknown
+head_of_government = silent_workhorse
+start_date = 1920.1.1
+}
+
+380003 = {
+name = "Clarence L. Simpson"
+ideology = social_conservative
+loyalty = 1.00
+picture = M69003
+foreign_minister = ideological_crusader
+start_date = 1933.1.1
+}
+
+380022 = {
+name = "Cornelius van Oudkarspel"
+ideology = social_conservative
+loyalty = 1.00
+picture = M69046
+armament_minister = administrative_genius
+minister_of_security = compassionate_gentleman
+minister_of_intelligence = dismal_enigma
+start_date = 1942.1.1
+}
+
+380044 = {
+name = "Daniel Howard"
+ideology = social_liberal
+loyalty = 1.00
+picture = LIBM2
+head_of_state = benevolent_gentleman
+head_of_government = corporate_suit
+foreign_minister = great_compromiser
+armament_minister = administrative_genius
+minister_of_security = compassionate_gentleman
+minister_of_intelligence = logistics_specialist
+chief_of_staff = school_of_mass_combat
+chief_of_army = guns_and_butter_doctrine
+chief_of_navy = open_seas_doctrine
+chief_of_air = air_superiority_doctrine
+start_date = 1910.1.1
+}
+
+380001 = {
+name = "Edwin J. Barclay"
+ideology = social_conservative
+loyalty = 1.00
+picture = M69001
+head_of_state = barking_buffoon
+head_of_government = happy_amateur
+minister_of_security = back_stabber
+start_date = 1933.1.1
+}
+
+380034 = {
+name = "Elliott Thurston"
+ideology = social_liberal
+loyalty = 1.00
+picture = M69059
+minister_of_security = man_of_the_people
+minister_of_intelligence = political_specialist
+start_date = 1940.1.1
+}
+
+380041 = {
+name = "Frederic E. Murphy"
+ideology = social_liberal
+loyalty = 1.00
+picture = M69067
+minister_of_intelligence = technical_specialist
+start_date = 1946.1.1
+}
+
+380004 = {
+name = "Frederic K. Nielsen"
+ideology = social_conservative
+loyalty = 1.00
+picture = M69004
+armament_minister = infantry_proponent
+start_date = 1933.1.1
+}
+
+380027 = {
+name = "Fretus Africanus Russell"
+ideology = social_conservative
+loyalty = 1.00
+picture = M69052
+minister_of_security = efficient_sociopath
+start_date = 1937.1.1
+}
+
+380017 = {
+name = "Gabriel L. Dennis"
+ideology = social_conservative
+loyalty = 1.00
+picture = M69040
+foreign_minister = iron_fisted_brute
+start_date = 1944.1.1
+}
+
+380006 = {
+name = "Henry M. Robinson"
+ideology = social_conservative
+loyalty = 1.00
+picture = M69006
+armament_minister = air_to_sea_proponent
+minister_of_intelligence = industrial_specialist
+start_date = 1933.1.1
+}
+
+380005 = {
+name = "Henry R. Grimes"
+ideology = social_conservative
+loyalty = 1.00
+picture = M69005
+foreign_minister = biased_intellectual
+minister_of_security = crooked_kleptocrat
+start_date = 1933.1.1
+}
+
+380008 = {
+name = "Iver Virgin"
+ideology = social_conservative
+loyalty = 1.00
+picture = M69008
+chief_of_army = guns_and_butter_doctrine
+start_date = 1933.1.1
+}
+
+380043 = {
+name = "John  R. Fox"
+ideology = social_liberal
+loyalty = 1.00
+picture = M69072
+chief_of_army = elastic_defence_doctrine
+start_date = 1933.1.1
+}
+
+380028 = {
+name = "Key Pittman"
+ideology = social_conservative
+loyalty = 1.00
+picture = M69053
+minister_of_security = silent_lawyer
+start_date = 1938.1.1
+}
+
+380019 = {
+name = "Mac DeShield"
+ideology = social_liberal
+loyalty = 1.00
+picture = M69042
+foreign_minister = general_staffer
+armament_minister = corrupt_kleptocrat
+start_date = 1944.1.1
+}
+
+380023 = {
+name = "Momolo Duhuty"
+ideology = social_conservative
+loyalty = 1.00
+picture = M69047
+armament_minister = laissez_faires_capitalist
+start_date = 1944.1.1
+}
+
+380031 = {
+name = "Ralph W. Morrison"
+ideology = social_conservative
+loyalty = 1.00
+picture = M69056
+minister_of_security = crime_fighter
+start_date = 1944.1.1
+}
+
+380009 = {
+name = "Reginald Brandon"
+ideology = social_conservative
+loyalty = 1.00
+picture = M69009
+chief_of_navy = open_seas_doctrine
+start_date = 1933.1.1
+}
+
+380011 = {
+name = "William S. Tubman"
+ideology = social_conservative
+loyalty = 1.00
+picture = M69032
+head_of_state = ruthless_powermonger
+head_of_government = silent_workhorse
+armament_minister = corrupt_kleptocrat
+start_date = 1944.1.1
+}
+
+380038 = {
+name = "William Tolbert"
+ideology = social_conservative
+loyalty = 1.00
+picture = M69064
+minister_of_intelligence = technical_specialist
+start_date = 1946.1.1
+}
+
+380010 = {
+name = "Won Loy Chan"
+ideology = social_conservative
+loyalty = 1.00
+picture = M69010
+chief_of_air = air_superiority_doctrine
+start_date = 1933.1.1
+}
+
+
+}

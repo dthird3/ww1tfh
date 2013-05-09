@@ -1,0 +1,90 @@
+country_event = {
+	
+	id = 2910
+
+	trigger = {
+		tag = FRA
+		war_with = GER
+		GER = { controls = 2613 }
+		not = { has_country_flag = fall_of_paris }
+		NOT = { has_country_flag = fr_signs_peace }
+	}
+
+	title = "EVTNAME2910"
+	desc = "EVTDESC2910"
+
+	option = {
+		name = "EVTOPTA2910"
+		national_unity = -40
+		set_country_flag = fall_of_paris
+		}
+}
+#FALL OF FRANCE
+country_event = {
+		
+		id = 190010
+		
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		
+		major = yes
+			
+		title = "WARE57"
+		desc = "desc_WARE7"
+		picture = "WARP7"
+
+		option = {
+			name = "opta_WARE7"
+			set_country_flag = fr_signs_peace
+			FRA = { any_country = { limit = { war_with = FRA } end_war = FRA } }
+			FRA = { leave_faction = allies }
+			BEL = { any_country = { limit = { war_with = BEL } end_war = BEL } }
+			BEL = { leave_faction = allies }
+			northeast_france_region = { secede_province = GER }
+			morocco_region = { secede_province = GER }
+			FRA_10037 = { secede_province = GER }
+			FRA_10028 = { secede_province = GER }
+			FRA_9804 = { secede_province = GER }
+			FRA_9860 = { secede_province = GER }
+            BEL = { BEL_10086 = { secede_province = GER } }
+            BEL = { BEL_8000 = { secede_province = GER } }
+            BEL = { BEL_8040 = { secede_province = GER } }
+            BEL = { BEL_9824 = { secede_province = GER } }
+            BEL = { BEL_10100 = { secede_province = GER } }
+            BEL = { wallonia_region = { secede_province = GER } }
+			any_country = {
+				limit = { faction = axis }
+				non_aggression_pact = FRA
+			}
+			GER = { threat = { who = FRA value = -150 } }
+			AUH = { threat = { who = FRA value = -150 } }
+			TUR = { threat = { who = FRA value = -150 } }
+			BUL = { threat = { who = FRA value = -150 } }
+			GER = { guarantee = FRA }
+			FRA = { neutrality = 100 }
+			any_country = {
+				limit = { faction = axis }
+				non_aggression_pact = BEL
+			}
+			GER = { threat = { who = BEL value = -150 } }
+			AUH = { threat = { who = BEL value = -150 } }
+			TUR = { threat = { who = BEL value = -150 } }
+			BUL = { threat = { who = BEL value = -150 } }
+			GER = { guarantee = BEL }
+			BEL = { neutrality = 100 }
+			LUX = { 2429 = { secede_province = GER } }
+			LUX = { any_country = { limit = { war_with = LUX } end_war = LUX } }
+			LUX = { leave_faction = allies }			
+			any_country = {
+				limit = { faction = axis }
+				non_aggression_pact = LUX
+			}
+			GER = { threat = { who = LUX value = -150 } }
+			AUH = { threat = { who = LUX value = -150 } }
+			TUR = { threat = { who = LUX value = -150 } }
+			BUL = { threat = { who = LUX value = -150 } }
+			GER = { guarantee = LUX }
+			LUX = { neutrality = 100 }
+		}
+}

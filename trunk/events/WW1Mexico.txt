@@ -1,0 +1,24 @@
+
+#FALL OF MEXICO
+country_event = {
+		
+		id = 190011
+		
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		
+		major = yes
+		
+		title = "WARE8"
+		desc = "desc_WARE8"
+		picture = "WARP8"
+
+		option = {
+			name = "opta_WARE8"
+			set_country_flag = mexico_war
+			MEX = { dissent = -10 }
+			MEX = { end_war = MXR }
+			MXR = { inherit = MEX }
+		}
+}

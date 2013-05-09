@@ -1,0 +1,1530 @@
+color = { 66  113  69 }
+graphical_culture = Generic
+
+
+default_templates = {
+	Pekhotna = {
+		infantry_brigade
+		infantry_brigade
+		artillery_brigade
+	}
+	Kavaleriyskaya = {
+		cavalry_brigade
+		cavalry_brigade
+		engineer_brigade
+	}
+	Tankovaya = {
+		light_armor_brigade
+		armored_car_brigade
+		engineer_brigade
+	}
+	Bergsjäger = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+		artillery_brigade
+	}
+}
+
+unit_names = {
+
+armor_brigade = { 
+"1-va Bronirana División" "2-ra Bronirana División" "3-ta Bronirana División" "4-ta Tankova División" "5-ta Tankova División" "6-ta Tankova División" "7-ma Bronirana División" "8-a Bronirana División" "9-ta Bronirana División" "10-ta Bronirana División"
+} 
+battlecruiser = { 
+"Drzki" "Zheleznjakov"
+} 
+dreadnaught = { 
+"Drzki" "Zheleznjakov"
+} 
+bergsjaeger_brigade = { 
+	"Bulgarische Bergsjäger Division" "3-ta Granichna División" "4-ta Granichna División" "1-va Planinska divizija" "2-ra Planinska divizija" "5-ta Planinska divizija" "6-ta Planinska divizija" "7-ma Planinska divizija" "8-a Planinska divizija" 
+	}
+carrier = { 
+"Nadezhda" "Struma"
+} 
+cavalry_brigade = { 
+"1. Kavaleriyskaya Divizija" "2. Kavaleriyskaya Divizija" "3. Kavaleriyskaya Divizija" "4. Kavaleriyskaya Divizija" "5. HonvèdKavaleriyskaya Divizija" "6. Kavaleriyskaya Divizija" "7. Kavaleriyskaya Divizija" 
+		"8. Kavaleriyskaya Divizija" "9. Kavaleriyskaya Divizija" "10. Kavaleriyskaya Divizija" "11. HonvèdKavaleriyskaya Divizija " "12. Kavaleriyskaya Divizija" "13. Kavaleriyskaya Divizija" "14. Kavaleriyskaya Divizija" "15. Kavaleriyskaya Divizija" "16. Kavaleriyskaya Divizija" "17. Kavaleriyskaya Divizija" "18. Kavaleriyskaya Divizija" 
+		"19. Kavaleriyskaya Divizija" "20. Kavaleriyskaya Divizija" 
+	}
+destroyer = { 
+"1-va Podvodnikova flotilija" "2-ri Podvodnikova flotilija" "3-ta Podvodnikova flotilija" "4-ta Podvodnikova flotilija" "5-ta Podvodnikova flotilija" "6-ta Podvodnikova flotilija" "7-ma Podvodnikova flotilija" "8-a Podvodnikova flotilija" "9-ta Podvodnikova flotilija" "10-ta Podvodnikova flotilija"
+} 
+escort_carrier = { 
+"Sofija" "Plovdiv" "Varna" "Burgas" "Ruse" "Stara Zagora" "Pleven"
+} 
+garrison_brigade = { 
+"1-va Sofiiska pekhotna divizija" "2-ra Trakiiska pekhotna divizija" "3-ta Balkanska pekhotna divizija" "4-ta Preslavska pekhotna divizija" "5-ta Dunavska pekhotna divizija" "6-ta Bdinska pekhotna divizija" "7-ma Rilska pekhotna divizija" "8-a Tundzhanska pekhotna divizija" "9-ta Plevenska pekhotna divizija" "10-ta Rodopska pekhotna divizija" "11-va zapasna pekhotna divizija" "12-ra Dobrudjanska pekhotna divizija" "14-ta Skopska pekhotna divizija" "15-ta Ohridska pekhotna divizija" "16-ta Belomorska pekhotna divizija" "17-ma Bitolska pekhotna divizija" "20-ta zapasna pekhotna divizija" "21-va zapasna pekhotna divizija" "22-ra zapasna pekhotna divizija" "24-ta zapasna pekhotna divizija" "25-ta zapasna pekhotna divizija" "27-ma zapasna pekhotna divizija" "13-ta zapasna pekhotna divizija" "18-a pekhotna divizija" "20-ta pekhotna divizija" "23-ta pekhotna divizija" "26-ta pekhotna divizija" "28-ta pekhotna divizija" "29-ta pekhotna divizija" "30-ta pekhotna divizija"
+} 
+heavy_cruiser = { 
+"Sofija" "Pernik" "Svoge" "Slivnica" "Breznik" "Radomir"
+} 
+hq_brigade = { 
+"Bulgarian glavni štab" "1. armija" "2. armija" "3. armija" "4. armija" "5. armija" "6. armija" "7. armija" "8. armija" "9. armija" "10. armija" "15. armija"
+} 
+infantry_brigade = { 
+	"1. 'Sofiiska' Pekhotna Divizija" "2. 'Trakiiska' Pekhotna Divizija" "3. 'Balkanska' Pekhotna Divizija" "4. 'Preslavska' Pekhotna Divizija" "5. 'Dunavska' Pekhotna Divizija" "6. 'Bdinska' Pekhotna Divizija" "7. 'Rilska' Pekhotna Divizija" "8. 'Tundzhanska' Pekhotna Divizija" "9. 'Plevenska' Pekhotna Divizija" "10. 'Rodopska' Pekhotna Divizija" "11. 'Makedonski' Pekhotna Divizija" 
+		"12. 'Dobrudjanska' Pekhotna Divizija" "13. Pekhotna Divizija" "14. 'Skopska' Pekhotna Divizija" "15. 'Ohridska' Pekhotna Divizija" "16. 'Belomorska' Pekhotna Divizija" "17. 'Bitolska' Pekhotna Divizija" "20. Pekhotna Divizija" "21. Pekhotna Divizija" "22. Pekhotna Divizija" "24. Pekhotna Divizija" "25. Pekhotna Divizija" "27. Pekhotna Divizija" 
+		"18. Pekhotna Divizija" "20. Pekhotna Divizija" "23. Pekhotna Divizija" "26. Pekhotna Divizija" "28. Pekhotna Divizija" "29. Pekhotna Divizija" "30. Pekhotna Divizija" 
+	}
+interceptor = { 
+"6-ti Iztrebitelen polk" "1-vi Vyzdushen polk" "2-ri Vyzdushen polk" "3-ti Vyzdushen polk" "4-ti Vyzdushen polk" "5-ti Iztrebitelen polk" "7-mi Iztrebitelen polk" "8-i Iztrebitelen polk" "9-ti Iztrebitelen polk" "10-ti Iztrebitelen polk"
+} 
+light_armor_brigade = { 
+	"1. Tankovaya Regiment" "2. Tankovaya Regiment" "3. Tankovaya Regiment" "4. Tankovaya Regiment" "5. Tankovaya Regiment" "6. Tankovaya Regiment" "7. Tankovaya Regiment" "8. Tankovaya Regiment" "9. Tankovaya Regiment" "10. Tankovaya Regiment" "11. Tankovaya Regiment" 
+		"12. Tankovaya Regiment" "13. Tankovaya Regiment" "14. Tankovaya Regiment" "15. Tankovaya Regiment" "16. Tankovaya Regiment" "17. Tankovaya Regiment" "18. Tankovaya Regiment" "19. Tankovaya Regiment" "20. Tankovaya Regiment" "21. Tankovaya Regiment" "22. Tankovaya Regiment" 
+		"23. Tankovaya Regiment" "24. Tankovaya Regiment" "25. Tankovaya Regiment" "26. Tankovaya Regiment" "27. Tankovaya Regiment" "28. Tankovaya Regiment" "29. Tankovaya Regiment" "30. Tankovaya Regiment" "31. Tankovaya Regiment" "32. Tankovaya Regiment" "33. Tankovaya Regiment" 
+		"34. Tankovaya Regiment" "35. Tankovaya Regiment" "36. Tankovaya Regiment" "37. Tankovaya Regiment" "38. Tankovaya Regiment" "39. Tankovaya Regiment" "40. Tankovaya Regiment" "41. Tankovaya Regiment" "42. Tankovaya Regiment" "43. Tankovaya Regiment" "44. Tankovaya Regiment" 
+		"45. Tankovaya Regiment" "46. Tankovaya Regiment" "47. Tankovaya Regiment" "48. Tankovaya Regiment" "49. Tankovaya Regiment" "50. Tankovaya Regiment" "51. Tankovaya Regiment" "52. Tankovaya Regiment" "53. Tankovaya Regiment" "54. Tankovaya Regiment" "55. Tankovaya Regiment" 
+		"56. Tankovaya Regiment" "57. Tankovaya Regiment" "58. Tankovaya Regiment" "59. Tankovaya Regiment" "60. Tankovaya Regiment" "61. Tankovaya Regiment" "62. Tankovaya Regiment" "63. Tankovaya Regiment" "64. Tankovaya Regiment" "65. Tankovaya Regiment" "66. Tankovaya Regiment" 
+		"67. Tankovaya Regiment" "68. Tankovaya Regiment" "69. Tankovaya Regiment" "70. Tankovaya Regiment" "71. Tankovaya Regiment" "72. Tankovaya Regiment" "73. Tankovaya Regiment" "74. Tankovaya Regiment" "75. Tankovaya Regiment" "76. Tankovaya Regiment" "77. Tankovaya Regiment" 
+		"78. Tankovaya Regiment" "79. Tankovaya Regiment" "80. Tankovaya Regiment" "81. Tankovaya Regiment" "82. Tankovaya Regiment" "83. Tankovaya Regiment" "84. Tankovaya Regiment" "85. Tankovaya Regiment" "86. Tankovaya Regiment" "87. Tankovaya Regiment" "88. Tankovaya Regiment" 
+		"89. Tankovaya Regiment" "90. Tankovaya Regiment" "91. Tankovaya Regiment" "92. Tankovaya Regiment" "93. Tankovaya Regiment" "94. Tankovaya Regiment" "95. Tankovaya Regiment" "96. Tankovaya Regiment" "97. Tankovaya Regiment" "98. Tankovaya Regiment" "99. Tankovaya Regiment" 
+		"100. Tankovaya Regiment" "101. Tankovaya Regiment" "102. Tankovaya Regiment" "103. Tankovaya Regiment" "104. Tankovaya Regiment" "105. Tankovaya Regiment" "106. Tankovaya Regiment" "107. Tankovaya Regiment" "108. Tankovaya Regiment" "109. Tankovaya Regiment" 
+	}
+light_cruiser = { 
+"Sofija" "Pernik" "Svoge" "Slivnica" "Breznik" "Radomir"
+} 
+marine_brigade = { 
+"1-va Divizija morska pekhotna" "2-ra Divizija morska pekhotna" "3-ta Divizija morska pekhotna" "4-ta Divizija morska pekhotna" "5-ta Divizija morska pekhotna" "6-ta Divizija morska pekhotna"
+} 
+militia_brigade = { 
+"20-ta Zapasna pekhotna divizija" "21-va Zapasna pekhotna divizija" "22-ra Zapasna pekhotna divizija" "24-ta Zapasna pekhotna divizija" "25-ta Zapasna pekhotna divizija" "27-ma Zapasna pekhotna divizija" "29-ta Zapasna pekhotna divizija" "Sborna pekhotna divizija" "23-ta Pekhotna Divizija" "26-ta Pekhotna Divizija" "28-a Pekhotna Divizija"
+} 
+submarine = { 
+"1-va Flotilija podvonici" "2-ra Flotilija podvonici" "3-ta Flotilija podvonici" "4-ta Flotilija podvonici" "5-ta Flotilija podvonici" "6-ta Flotilija podvonici" "7-ma Flotilija podvonici" "8-a Flotilija podvonici" "9-ta Flotilija podvonici" "10-ta Flotilija podvonici"
+} 
+tactical_bomber = { 
+"2-ri Lineen polk" "5-ti Bombardirovatchen polk" "1-vi Bombardirovatchen polk" "3-ti Bombardirovatchen polk" "4-ti Lineen polk" "6-ti Lineen polk" "7-mi Bombardirovatchen polk" "8-i Lineen polk" "9-ti Bombardirovatchen polk" "10-ti Lineen polk"
+} 
+transport_ship = { 
+"1-va Transportna Flotilija" "2-ra Transportna Flotilija" "3-ta Transportna Flotilija" "4-ta Transportna Flotilija" "5-ta Transportna Flotilija" "6-ta Transportna Flotilija" "7-ma Transportna Flotilija" "8-a Transportna Flotilija" "9-ta Transportna Flotilija" "10-ta Transportna Flotilija"
+}
+
+}
+
+
+ministers = {
+95222 = {
+name = "Aleksandar Dimitrov"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = 2291
+minister_of_security = silent_lawyer
+start_date = 1919.1.1
+}
+
+95051 = {
+name = "Aleksandar Gerginov"
+ideology = social_conservative
+loyalty = 1.00
+picture = M19014
+armament_minister = resource_industrialist
+minister_of_security = silent_lawyer
+start_date = 1939.1.1
+}
+
+95226 = {
+name = "Aleksandar Lyudskanov"
+ideology = market_liberal
+loyalty = 1.00
+picture = 2292
+minister_of_security = silent_lawyer
+start_date = 1910.1.1
+}
+
+95182 = {
+name = "Aleksandar Malinov"
+ideology = market_liberal
+loyalty = 1.00
+picture = 2271
+head_of_government = silent_workhorse
+foreign_minister = biased_intellectual
+start_date = 1910.1.1
+}
+
+95229 = {
+name = "Aleksandar Obbov"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = 2294
+minister_of_security = silent_lawyer
+start_date = 1923.1.1
+}
+
+95233 = {
+name = "Aleksandar Radolov"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = 2297
+minister_of_security = silent_lawyer
+start_date = 1910.1.1
+}
+
+95186 = {
+name = "Aleksandar Stamboliyski"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = 2274
+head_of_state = ruthless_powermonger
+head_of_government = silent_workhorse
+foreign_minister = great_compromiser
+start_date = 1920.1.1
+}
+
+95200 = {
+name = "Aleksandar Tsankov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 2279
+head_of_state = barking_buffoon
+head_of_government = flamboyant_tough_guy
+start_date = 1923.1.1
+}
+
+95031 = {
+name = "Aleksander Nikolaiev"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19062
+foreign_minister = ideological_crusader
+start_date = 1939.1.1
+}
+
+95013 = {
+name = "Aleksandur Tsankov"
+ideology = national_socialist
+loyalty = 1.00
+picture = M19021
+head_of_state = barking_buffoon
+head_of_government = backroom_backstabber
+foreign_minister = ideological_crusader
+start_date = 1943.1.1
+}
+
+95163 = {
+name = "Aleksandyr Dimitrov"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = 3717
+chief_of_staff = school_of_psychology
+start_date = 1921.1.1
+}
+
+95064 = {
+name = "Aleksandyr Stanishev"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19095
+minister_of_security = prince_of_terror
+start_date = 1944.1.1
+}
+
+95214 = {
+name = "Andrey Tasev Lyapchev"
+ideology = market_liberal
+loyalty = 1.00
+picture = 2285
+armament_minister = laissez_faires_capitalist
+start_date = 1910.1.1
+}
+
+960020 = {
+name = "Anton Yugov"
+ideology = stalinist
+loyalty = 1.00
+picture = M19035
+minister_of_security = prince_of_terror
+start_date = 1944.1.1
+}
+
+95107 = {
+name = "Asen Toshev"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19138
+chief_of_navy = open_seas_doctrine
+start_date = 1939.1.1
+}
+
+960026 = {
+name = "Assen Grekov"
+ideology = stalinist
+loyalty = 1.00
+picture = M19124
+chief_of_staff = school_of_manoeuvre
+start_date = 1945.1.1
+}
+
+95037 = {
+name = "Atanas Burov"
+ideology = social_conservative
+loyalty = 1.00
+picture = M19068
+foreign_minister = great_compromiser
+armament_minister = laissez_faires_capitalist
+minister_of_intelligence = industrial_specialist
+start_date = 1939.1.1
+}
+
+95167 = {
+name = "Atanas Nazlamov"
+ideology = social_conservative
+loyalty = 1.00
+picture = unknown
+chief_of_staff = school_of_psychology
+start_date = 1910.1.1
+}
+
+95108 = {
+name = "Atanas Shalapatov"
+ideology = fascistic
+loyalty = 1.00
+picture = M19029
+chief_of_navy = decisive_naval_battle_doctrine
+start_date = 1939.1.1
+}
+
+95202 = {
+name = "Atanas Vatev"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 2281
+minister_of_intelligence = political_specialist
+start_date = 1910.1.1
+}
+
+95021 = {
+name = "Bogdan Filov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19024
+head_of_government = political_protege
+foreign_minister = biased_intellectual
+armament_minister = infantry_proponent
+start_date = 1939.1.1
+}
+
+95079 = {
+name = "Boris Botan"
+ideology = social_conservative
+loyalty = 1.00
+picture = M19110
+minister_of_intelligence = naval_intelligence_specialist
+start_date = 1939.1.1
+}
+
+95001 = {
+name = "Boris III"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19001
+head_of_state = autocratic_charmer
+start_date = 1933.1.1
+}
+
+95113 = {
+name = "Chudomir Toplodolski"
+ideology = fascistic
+loyalty = 1.00
+picture = M19030
+chief_of_air = vertical_envelopment_doctrine
+start_date = 1939.1.1
+}
+
+95018 = {
+name = "Comrade Boris Coburg"
+ideology = stalinist
+loyalty = 1.00
+picture = M19001
+head_of_state = autocratic_charmer
+start_date = 1939.1.1
+}
+
+960024 = {
+name = "Damjan Velchev"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M19122
+chief_of_staff = school_of_psychology
+start_date = 1944.1.1
+}
+
+95112 = {
+name = "Dimitar Ayrjanov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19145
+chief_of_air = air_superiority_doctrine
+start_date = 1941.1.1
+}
+
+95189 = {
+name = "Dimitar Blagoev"
+ideology = stalinist
+loyalty = 1.00
+picture = 2277
+head_of_state = pig_headed_isolationist
+head_of_government = ambitious_union_boss
+armament_minister = resource_industrialist
+start_date = 1910.1.1
+}
+
+95006 = {
+name = "Dimitar Peshev"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19006
+minister_of_security = compassionate_gentleman
+minister_of_intelligence = dismal_enigma
+start_date = 1933.1.1
+}
+
+95053 = {
+name = "Dimitar Savov"
+ideology = social_conservative
+loyalty = 1.00
+picture = M19084
+armament_minister = tank_proponent
+start_date = 1944.1.1
+}
+
+95033 = {
+name = "Dimitar Shishmanov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19064
+foreign_minister = the_cloak_n_dagger_schemer
+start_date = 1943.1.1
+}
+
+95187 = {
+name = "Dimitar Stanchov"
+ideology = market_liberal
+loyalty = 1.00
+picture = 2275
+head_of_government = political_protege
+foreign_minister = apologetic_clerk
+start_date = 1910.1.1
+}
+
+95218 = {
+name = "Dimitar Tonchev"
+ideology = market_liberal
+loyalty = 1.00
+picture = 2288
+armament_minister = resource_industrialist
+start_date = 1910.1.1
+}
+
+95022 = {
+name = "Dobri Bojilov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19053
+head_of_government = corporate_suit
+armament_minister = infantry_proponent
+start_date = 1943.1.1
+}
+
+95063 = {
+name = "Docho Hristov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19094
+minister_of_security = crooked_kleptocrat
+start_date = 1943.1.1
+}
+
+95205 = {
+name = "Ferdinand I"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 2282
+head_of_state = stern_imperialist
+start_date = 1910.1.1
+}
+
+95038 = {
+name = "Georgi Brasov"
+ideology = social_conservative
+loyalty = 1.00
+picture = M19069
+foreign_minister = biased_intellectual
+start_date = 1943.1.1
+}
+
+960043 = {
+name = "Georgi Chankov"
+ideology = stalinist
+loyalty = 1.00
+picture = M19164
+minister_of_security = crooked_kleptocrat
+start_date = 1951.1.1
+}
+
+960011 = {
+name = "Georgi Damianov"
+ideology = stalinist
+loyalty = 1.00
+picture = M19075
+foreign_minister = iron_fisted_brute
+start_date = 1944.1.1
+}
+
+960040 = {
+name = "Georgi Damyanov"
+ideology = stalinist
+loyalty = 1.00
+picture = M19161
+armament_minister = tank_proponent
+start_date = 1946.1.1
+}
+
+960004 = {
+name = "Georgi Dimitrov"
+ideology = stalinist
+loyalty = 1.00
+picture = M19032
+head_of_state = power_hungry_demagogue
+head_of_government = political_protege
+armament_minister = military_entrepreneur
+start_date = 1933.1.1
+}
+
+95115 = {
+name = "Georgi Drenikov"
+ideology = social_conservative
+loyalty = 1.00
+picture = M19148
+chief_of_air = carpet_bombing_doctrine
+start_date = 1944.1.1
+}
+
+95002 = {
+name = "Georgi Kioseivanov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19002
+head_of_government = backroom_backstabber
+foreign_minister = biased_intellectual
+start_date = 1933.1.1
+}
+
+960009 = {
+name = "Georgi Kulichev"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M19073
+head_of_state = popular_figurehead
+head_of_government = happy_amateur
+foreign_minister = the_cloak_n_dagger_schemer
+minister_of_security = crime_fighter
+minister_of_intelligence = naval_intelligence_specialist
+start_date = 1945.1.1
+}
+
+95090 = {
+name = "Georgi Petsov"
+ideology = social_conservative
+loyalty = 1.00
+picture = M19019
+chief_of_staff = school_of_defence
+chief_of_navy = base_control_doctrine
+start_date = 1943.1.1
+}
+
+95005 = {
+name = "Georgi Sapov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19005
+armament_minister = corrupt_kleptocrat
+minister_of_security = crime_fighter
+start_date = 1933.1.1
+}
+
+95140 = {
+name = "Hristo Burmov"
+ideology = social_conservative
+loyalty = 1.00
+picture = 2248
+chief_of_staff = school_of_mass_combat
+chief_of_army = static_defence_doctrine
+start_date = 1910.1.1
+}
+
+95179 = {
+name = "Hristo Kalfov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 2268
+foreign_minister = general_staffer
+start_date = 1923.1.1
+}
+
+95007 = {
+name = "Hristo Lukov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19007
+chief_of_staff = school_of_defence
+chief_of_army = static_defence_doctrine
+start_date = 1933.1.1
+}
+
+960025 = {
+name = "Hristo Mikhailov"
+ideology = stalinist
+loyalty = 1.00
+picture = M19037
+chief_of_staff = school_of_mass_combat
+start_date = 1933.1.1
+}
+
+95232 = {
+name = "Hristo Popov"
+ideology = market_liberal
+loyalty = 1.00
+picture = 2296
+minister_of_security = silent_lawyer
+start_date = 1910.1.1
+}
+
+95094 = {
+name = "Iordan Peev"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19125
+chief_of_army = decisive_battle_doctrine
+start_date = 1937.1.1
+}
+
+95023 = {
+name = "Ivan Bagrianov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19054
+head_of_government = old_general
+foreign_minister = iron_fisted_brute
+start_date = 1944.1.1
+}
+
+95178 = {
+name = "Ivan Evstratiev Geshov"
+ideology = social_conservative
+loyalty = 1.00
+picture = 2267
+head_of_government = flamboyant_tough_guy
+foreign_minister = biased_intellectual
+armament_minister = administrative_genius
+start_date = 1910.1.1
+}
+
+95158 = {
+name = "Ivan Fichev"
+ideology = social_conservative
+loyalty = 1.00
+picture = 2258
+chief_of_staff = school_of_fire_support
+start_date = 1910.1.1
+}
+
+95054 = {
+name = "Ivan Gaidimitriv"
+ideology = social_conservative
+loyalty = 1.00
+picture = M19085
+armament_minister = strategic_air_proponent
+start_date = 1945.1.1
+}
+
+960028 = {
+name = "Ivan Kinov"
+ideology = stalinist
+loyalty = 1.00
+picture = M19136
+chief_of_army = armoured_spearhead_doctrine
+start_date = 1944.1.1
+}
+
+95060 = {
+name = "Ivan Krasnovski"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19091
+minister_of_security = efficient_sociopath
+start_date = 1937.1.1
+}
+
+95142 = {
+name = "Ivan Lukov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 2249
+chief_of_staff = school_of_mass_combat
+chief_of_army = static_defence_doctrine
+start_date = 1916.1.1
+}
+
+95089 = {
+name = "Ivan Marinov"
+ideology = social_conservative
+loyalty = 1.00
+picture = M19017
+chief_of_staff = school_of_manoeuvre
+chief_of_army = static_defence_doctrine
+start_date = 1939.1.1
+}
+
+95030 = {
+name = "Ivan Popov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19061
+foreign_minister = biased_intellectual
+start_date = 1939.1.1
+}
+
+95078 = {
+name = "Ivan Rogosarski"
+ideology = national_socialist
+loyalty = 1.00
+picture = M19109
+minister_of_intelligence = logistics_specialist
+start_date = 1944.1.1
+}
+
+95235 = {
+name = "Ivan Rusev"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 2298
+minister_of_security = crime_fighter
+start_date = 1923.1.1
+}
+
+95215 = {
+name = "Ivan Salabashev"
+ideology = social_conservative
+loyalty = 1.00
+picture = 2286
+armament_minister = theoretical_scientist
+start_date = 1910.1.1
+}
+
+960016 = {
+name = "Ivan Stefanov"
+ideology = leninist
+loyalty = 1.00
+picture = M19034
+armament_minister = battle_fleet_proponent
+start_date = 1944.1.1
+}
+
+95106 = {
+name = "Ivan Variclechkov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19137
+chief_of_navy = base_control_doctrine
+start_date = 1938.1.1
+}
+
+95088 = {
+name = "Ivan Vulkov"
+ideology = fascistic
+loyalty = 1.00
+picture = M19027
+chief_of_staff = school_of_defence
+start_date = 1939.1.1
+}
+
+95173 = {
+name = "Ivan Vylkov"
+ideology = national_socialist
+loyalty = 1.00
+picture = 2263
+chief_of_staff = school_of_mass_combat
+start_date = 1923.1.1
+}
+
+95161 = {
+name = "Kalin Naidenov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 2260
+chief_of_staff = school_of_defence
+start_date = 1915.1.1
+}
+
+960006 = {
+name = "Kimon Georgiev"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M19059
+head_of_government = naive_optimist
+foreign_minister = general_staffer
+start_date = 1944.1.1
+}
+
+960003 = {
+name = "Kiril de Preslav"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M19042
+head_of_state = stern_imperialist
+start_date = 1944.1.1
+}
+
+95004 = {
+name = "Kiril Gounev"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19004
+armament_minister = administrative_genius
+minister_of_intelligence = naval_intelligence_specialist
+start_date = 1933.1.1
+}
+
+960030 = {
+name = "Kiril Khalatchev"
+ideology = stalinist
+loyalty = 1.00
+picture = M19039
+chief_of_navy = indirect_approach_doctrine
+start_date = 1933.1.1
+}
+
+95077 = {
+name = "Kiril Stanchev"
+ideology = fascistic
+loyalty = 1.00
+picture = M19026
+minister_of_intelligence = dismal_enigma
+chief_of_army = armoured_spearhead_doctrine
+start_date = 1939.1.1
+}
+
+95139 = {
+name = "Kliment Boyadzhiev"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 2247
+chief_of_staff = school_of_fire_support
+chief_of_army = decisive_battle_doctrine
+start_date = 1915.1.1
+}
+
+95151 = {
+name = "Konstantin Kirkov"
+ideology = social_conservative
+loyalty = 1.00
+picture = 2255
+chief_of_navy = indirect_approach_doctrine
+start_date = 1910.1.1
+}
+
+95097 = {
+name = "Konstantin Lukash"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19128
+chief_of_army = guns_and_butter_doctrine
+start_date = 1943.1.1
+}
+
+95026 = {
+name = "Konstantin Muraviev"
+ideology = social_conservative
+loyalty = 1.00
+picture = M19012
+head_of_government = happy_amateur
+foreign_minister = apologetic_clerk
+chief_of_staff = undistinguished_suit
+start_date = 1939.1.1
+}
+
+95237 = {
+name = "Konstantin Tomov"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = 2300
+minister_of_security = silent_lawyer
+start_date = 1921.1.1
+}
+
+95149 = {
+name = "Konstantin Zhostov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 2253
+chief_of_staff = school_of_fire_support
+chief_of_army = elastic_defence_doctrine
+start_date = 1915.1.1
+}
+
+95230 = {
+name = "Kristo Pastukhov"
+ideology = social_democrat
+loyalty = 1.00
+picture = 2295
+minister_of_security = man_of_the_people
+start_date = 1919.1.1
+}
+
+95236 = {
+name = "Kristo Stoyanov"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = 2299
+minister_of_security = silent_lawyer
+start_date = 1923.1.1
+}
+
+95150 = {
+name = "Lazar Draganov"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = 2254
+chief_of_navy = open_seas_doctrine
+start_date = 1910.1.1
+}
+
+95219 = {
+name = "Marko Tourlakov"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = 2289
+armament_minister = corrupt_kleptocrat
+start_date = 1920.1.1
+}
+
+95147 = {
+name = "Mihail Savov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 2251
+chief_of_staff = school_of_mass_combat
+chief_of_army = decisive_battle_doctrine
+start_date = 1910.1.1
+}
+
+95181 = {
+name = "Mikhail Madzharov"
+ideology = social_conservative
+loyalty = 1.00
+picture = 2270
+foreign_minister = biased_intellectual
+minister_of_security = silent_lawyer
+start_date = 1919.1.1
+}
+
+960027 = {
+name = "Mikhail Mintchev"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M19134
+chief_of_army = guns_and_butter_doctrine
+start_date = 1944.1.1
+}
+
+960023 = {
+name = "Mincho Neychev"
+ideology = stalinist
+loyalty = 1.00
+picture = M19114
+foreign_minister = the_cloak_n_dagger_schemer
+minister_of_intelligence = political_specialist
+start_date = 1945.1.1
+}
+
+95177 = {
+name = "Nikola Genadiev"
+ideology = market_liberal
+loyalty = 1.00
+picture = 2266
+foreign_minister = apologetic_clerk
+minister_of_security = silent_lawyer
+start_date = 1910.1.1
+}
+
+95095 = {
+name = "Nikola Hadjipetkov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19126
+chief_of_army = static_defence_doctrine
+start_date = 1939.1.1
+}
+
+95085 = {
+name = "Nikola Mihov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19116
+chief_of_staff = school_of_fire_support
+start_date = 1942.1.1
+}
+
+95070 = {
+name = "Nikola Mushanov"
+ideology = social_conservative
+loyalty = 1.00
+picture = M19015
+minister_of_security = compassionate_gentleman
+start_date = 1945.1.1
+}
+
+95062 = {
+name = "Nikola Nedev"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19093
+minister_of_security = silent_lawyer
+start_date = 1939.1.1
+}
+
+95016 = {
+name = "Nikola Petkov"
+ideology = social_conservative
+loyalty = 1.00
+picture = M19047
+head_of_state = die_hard_reformer
+head_of_government = flamboyant_tough_guy
+foreign_minister = the_cloak_n_dagger_schemer
+start_date = 1945.1.1
+}
+
+95145 = {
+name = "Nikola Topaldzhikov"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = 3714
+chief_of_staff = school_of_psychology
+chief_of_army = guns_and_butter_doctrine
+start_date = 1920.1.1
+}
+
+95174 = {
+name = "Nikola Zhekov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 2264
+chief_of_staff = school_of_mass_combat
+chief_of_army = decisive_battle_doctrine
+start_date = 1915.1.1
+}
+
+95061 = {
+name = "Nikolay Nikolaev"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19092
+minister_of_security = crime_fighter
+start_date = 1938.1.1
+}
+
+95193 = {
+name = "Petar Gudev"
+ideology = market_liberal
+loyalty = 1.00
+picture = 2278
+head_of_government = political_protege
+minister_of_security = crime_fighter
+start_date = 1910.1.1
+}
+
+95169 = {
+name = "Petar Midilev"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3718
+chief_of_staff = school_of_psychology
+start_date = 1920.1.1
+}
+
+95217 = {
+name = "Petar Todorov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 2287
+armament_minister = resource_industrialist
+start_date = 1923.1.1
+}
+
+95220 = {
+name = "Petar Yanev"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = 2290
+armament_minister = resource_industrialist
+start_date = 1923.1.1
+}
+
+960017 = {
+name = "Petko Kounin"
+ideology = stalinist
+loyalty = 1.00
+picture = M19090
+armament_minister = air_to_ground_proponent
+start_date = 1945.1.1
+}
+
+960044 = {
+name = "Petko Kunin"
+ideology = stalinist
+loyalty = 1.00
+picture = M19165
+minister_of_intelligence = industrial_specialist
+start_date = 1950.1.1
+}
+
+960008 = {
+name = "Petko Stainov"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M19072
+foreign_minister = biased_intellectual
+start_date = 1944.1.1
+}
+
+960013 = {
+name = "Petko Stoyanov"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M19086
+armament_minister = theoretical_scientist
+start_date = 1944.1.1
+}
+
+95025 = {
+name = "Petur Gabrovski"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19022
+head_of_government = naive_optimist
+minister_of_security = back_stabber
+start_date = 1943.1.1
+}
+
+960041 = {
+name = "Petur Panchevski"
+ideology = stalinist
+loyalty = 1.00
+picture = M19162
+armament_minister = military_entrepreneur
+start_date = 1949.1.1
+}
+
+95148 = {
+name = "Pravoslav Tenev"
+ideology = social_conservative
+loyalty = 1.00
+picture = 2252
+chief_of_army = guns_and_butter_doctrine
+chief_of_staff = school_of_mass_combat
+start_date = 1910.1.1
+}
+
+95035 = {
+name = "Pyrvan Draganov"
+ideology = fascistic
+loyalty = 1.00
+picture = M19066
+foreign_minister = general_staffer
+start_date = 1944.1.1
+}
+
+960029 = {
+name = "Racho Batanov"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M19141
+chief_of_navy = open_seas_doctrine
+start_date = 1944.1.1
+}
+
+95184 = {
+name = "Racho Petrov"
+ideology = market_liberal
+loyalty = 1.00
+picture = 2272
+head_of_government = old_general
+foreign_minister = general_staffer
+minister_of_security = silent_lawyer
+start_date = 1910.1.1
+}
+
+95170 = {
+name = "Radko Dimitriev"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3719
+chief_of_staff = school_of_manoeuvre
+start_date = 1910.1.1
+}
+
+95137 = {
+name = "Radul Milkov"
+ideology = market_liberal
+loyalty = 1.00
+picture = 2245
+chief_of_air = army_aviation_doctrine
+start_date = 1919.1.1
+}
+
+95068 = {
+name = "Rajcho Pekimov"
+ideology = social_conservative
+loyalty = 1.00
+picture = M19099
+minister_of_security = efficient_sociopath
+start_date = 1943.1.1
+}
+
+95102 = {
+name = "Rajcho Slavkov"
+ideology = social_conservative
+loyalty = 1.00
+picture = M19018
+chief_of_army = guns_and_butter_doctrine
+start_date = 1944.1.1
+}
+
+95152 = {
+name = "Rashko Serafimov"
+ideology = market_liberal
+loyalty = 1.00
+picture = 2256
+chief_of_navy = indirect_approach_doctrine
+start_date = 1910.1.1
+}
+
+95210 = {
+name = "Rayko Daskalov"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = 2283
+armament_minister = military_entrepreneur
+minister_of_security = silent_lawyer
+start_date = 1920.1.1
+}
+
+960042 = {
+name = "Rusi Hristozov"
+ideology = stalinist
+loyalty = 1.00
+picture = M19163
+minister_of_security = back_stabber
+start_date = 1949.1.1
+}
+
+95086 = {
+name = "Russi Russev"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19117
+chief_of_staff = school_of_mass_combat
+start_date = 1943.1.1
+}
+
+95009 = {
+name = "Sava Ivanov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19009
+chief_of_navy = open_seas_doctrine
+start_date = 1933.1.1
+}
+
+95048 = {
+name = "Sava Kirov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19079
+armament_minister = laissez_faires_capitalist
+minister_of_intelligence = industrial_specialist
+start_date = 1941.1.1
+}
+
+95166 = {
+name = "Sava Savov"
+ideology = social_conservative
+loyalty = 1.00
+picture = 2262
+chief_of_staff = school_of_psychology
+start_date = 1910.1.1
+}
+
+95153 = {
+name = "Sava Stefanov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3716
+chief_of_navy = open_seas_doctrine
+start_date = 1923.1.1
+}
+
+960014 = {
+name = "Stancho Cholakov"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M19087
+armament_minister = administrative_genius
+start_date = 1945.1.1
+}
+
+95049 = {
+name = "Stanko Nikoladorov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19080
+armament_minister = corrupt_kleptocrat
+start_date = 1944.1.1
+}
+
+95143 = {
+name = "Stefan Nerezov"
+ideology = social_democrat
+loyalty = 1.00
+picture = 2250
+chief_of_staff = undistinguished_suit
+chief_of_army = undistinguished_suit
+start_date = 1910.1.1
+}
+
+95075 = {
+name = "Stefan Noikov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19106
+minister_of_intelligence = political_specialist
+start_date = 1943.1.1
+}
+
+95201 = {
+name = "Stefan Noykov"
+ideology = social_conservative
+loyalty = 1.00
+picture = 2280
+minister_of_intelligence = logistics_specialist
+start_date = 1910.1.1
+}
+
+960031 = {
+name = "Stefan Tzanev"
+ideology = stalinist
+loyalty = 1.00
+picture = M19143
+chief_of_navy = decisive_naval_battle_doctrine
+start_date = 1945.1.1
+}
+
+95164 = {
+name = "Stepan Paprikov"
+ideology = social_conservative
+loyalty = 1.00
+picture = 2261
+foreign_minister = general_staffer
+chief_of_staff = school_of_fire_support
+start_date = 1910.1.1
+}
+
+95176 = {
+name = "Stoyan Danev"
+ideology = market_liberal
+loyalty = 1.00
+picture = 2265
+head_of_government = naive_optimist
+foreign_minister = apologetic_clerk
+armament_minister = resource_industrialist
+start_date = 1910.1.1
+}
+
+95114 = {
+name = "Stoyan Stoyanov"
+ideology = social_conservative
+loyalty = 1.00
+picture = M19020
+chief_of_air = air_superiority_doctrine
+start_date = 1939.1.1
+}
+
+95188 = {
+name = "Teodor Teodorov"
+ideology = social_conservative
+loyalty = 1.00
+picture = 2276
+head_of_government = naive_optimist
+foreign_minister = great_compromiser
+armament_minister = resource_industrialist
+start_date = 1918.1.1
+}
+
+95084 = {
+name = "Teodosi Daskalov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19115
+chief_of_staff = school_of_defence
+start_date = 1939.1.1
+}
+
+95008 = {
+name = "Todor Georgiev"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19008
+chief_of_staff = school_of_manoeuvre
+chief_of_army = static_defence_doctrine
+start_date = 1933.1.1
+}
+
+95213 = {
+name = "Todor Ivanchov"
+ideology = market_liberal
+loyalty = 1.00
+picture = 2284
+armament_minister = laissez_faires_capitalist
+start_date = 1910.1.1
+}
+
+960022 = {
+name = "Traicho Kostov"
+ideology = stalinist
+loyalty = 1.00
+picture = M19036
+minister_of_intelligence = logistics_specialist
+start_date = 1933.1.1
+}
+
+95100 = {
+name = "Trifon Trifonov"
+ideology = fascistic
+loyalty = 1.00
+picture = M19131
+chief_of_army = elastic_defence_doctrine
+start_date = 1944.1.1
+}
+
+960002 = {
+name = "Tsvjatko Radojnov"
+ideology = stalinist
+loyalty = 1.00
+picture = M19038
+chief_of_army = decisive_battle_doctrine
+start_date = 1933.1.1
+}
+
+95010 = {
+name = "Vasil Boydev"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M19010
+chief_of_army = elastic_defence_doctrine
+chief_of_air = air_superiority_doctrine
+start_date = 1933.1.1
+}
+
+960001 = {
+name = "Vasil Kolarov"
+ideology = stalinist
+loyalty = 1.00
+picture = M19031
+head_of_state = weary_stiff_neck
+head_of_government = flamboyant_tough_guy
+foreign_minister = ideological_crusader
+start_date = 1933.1.1
+}
+
+95185 = {
+name = "Vasil Radoslavov"
+ideology = market_liberal
+loyalty = 1.00
+picture = 2273
+head_of_government = flamboyant_tough_guy
+foreign_minister = ideological_crusader
+minister_of_security = prince_of_terror
+start_date = 1910.1.1
+}
+
+960032 = {
+name = "Vasil Vylkov"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M19149
+chief_of_air = vertical_envelopment_doctrine
+start_date = 1944.1.1
+}
+
+95138 = {
+name = "Vasil Zlatarov"
+ideology = social_conservative
+loyalty = 1.00
+picture = 2246
+chief_of_air = air_superiority_doctrine
+start_date = 1910.1.1
+}
+
+95069 = {
+name = "Vergil Dimov"
+ideology = social_conservative
+loyalty = 1.00
+picture = M19100
+head_of_state = insignificant_layman
+head_of_government = silent_workhorse
+minister_of_security = man_of_the_people
+start_date = 1944.1.1
+}
+
+95171 = {
+name = "Vicho Dikov"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3720
+chief_of_staff = school_of_mass_combat
+start_date = 1910.1.1
+}
+
+960038 = {
+name = "Vladimir Poptomov"
+ideology = stalinist
+loyalty = 1.00
+picture = M19159
+foreign_minister = iron_fisted_brute
+start_date = 1949.1.1
+}
+
+95146 = {
+name = "Vladimir Stoyanov"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3715
+chief_of_staff = undistinguished_suit
+chief_of_army = undistinguished_suit
+start_date = 1923.1.1
+}
+
+960019 = {
+name = "Vulko Chervenkov"
+ideology = stalinist
+loyalty = 1.00
+picture = M19103
+head_of_state = stern_imperialist
+minister_of_security = prince_of_terror
+start_date = 1933.1.1
+}
+
+960033 = {
+name = "Zakhari Zakhariev"
+ideology = stalinist
+loyalty = 1.00
+picture = M19150
+chief_of_air = vertical_envelopment_doctrine
+start_date = 1933.1.1
+}
+
+
+}
+

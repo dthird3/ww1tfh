@@ -1,0 +1,108 @@
+
+
+#October 5 – Portugal becomes a republic; King Manuel II of Portugal flees to England.
+country_event = {
+
+		id = 100202
+		
+		major = yes
+
+		trigger = {
+			tag = POR
+			POR = { head_of_state = 999996 }
+			date = 1910.10.5
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = yes
+
+		title = "PORE1"
+		desc = "desc_PORE1"
+		picture = "PORP1"
+
+		option = {
+			name = "opta_PORE1"
+			ai_chance = { factor = 100 }
+			POR = { government = "right_wing_republic" }
+			head_of_state = 20087 # Teófilo Braga
+			head_of_government = 20082  # Bernadino Machado
+			chief_of_staff = 20069  # Jo‰Û_o JosÌö Sinel de Cordes
+			chief_of_army = 20069  # Jo‰Û_o JosÌö Sinel de Cordes
+			set_country_flag = portugal_death
+		}
+	
+}
+
+#October 23 – Vajiravudh (Rama VI) is crowned King of Siam, after the death of his father
+country_event = {
+
+		id = 100203
+		
+		major = yes
+
+		trigger = {
+			tag = SIA
+			SIA = { head_of_state = 999983 }
+			date = 1910.10.23
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = yes
+
+		title = "SIAE1"
+		desc = "desc_SIAE1"
+		picture = "SIAP1"
+
+		option = {
+			name = "opta_SIAE1"
+			ai_chance = { factor = 100 }
+			SIA = { head_of_state = 999982 }
+			set_country_flag = siam_death
+			remove_minister  = 999983
+		}
+	
+}
+
+#May 5 - The Olympic Games open in Stockholm, Sweden.
+country_event = {
+
+		id = 100204
+
+		trigger = {
+			date = 1912.5.5
+			NOT = { has_country_flag = oly_games }
+			NOT = { date = 1912.6.1 }
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+
+		title = "OLYE1"
+		desc = "desc_OLYE1"
+		picture = "OLYP1"
+
+		option = {
+			name = "opta_OLYE1"
+			ai_chance = { factor = 1 }
+			set_country_flag = oly_games
+			threat = { who = all value = -10 }
+			neutrality = -5
+			money = 50
+		}
+		option = {
+			name = "opta_OLYE2"
+			ai_chance = { factor = 0 }
+			set_country_flag = oly_games
+			threat = { who = all value = 10 }
+			neutrality = 5
+			money = 50
+		}
+	
+}

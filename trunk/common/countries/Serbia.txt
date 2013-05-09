@@ -1,0 +1,948 @@
+color = { 12  64  118 }
+
+graphical_culture = Generic
+
+default_templates = {
+	Pesadijska = {
+		infantry_brigade
+		infantry_brigade
+		artillery_brigade
+	}
+	Konjicka = {
+		cavalry_brigade
+		cavalry_brigade
+		engineer_brigade
+	}
+	Tankovaya = {
+		light_armor_brigade
+		armored_car_brigade
+		engineer_brigade
+	}
+	Gardijska = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+		artillery_brigade
+	}
+}
+
+unit_names = {
+
+armor_brigade = { 
+"1. oklopna divizija" "2. oklopna divizija" "3. oklopna divizija" "4. oklopna divizija" "5. oklopna divizija"
+} 
+battlecruiser = { 
+"Belgrade" "Novi Sad" "Budva" "Cetinje" "Pec" "Pizren" "Pristina" "Brus" "Nis" "Smederovo" "Manasija" "Vrsac"
+} 
+dreadnaught = { 
+"Belgrade" "Novi Sad" "Budva" "Cetinje" "Pec" "Pizren" "Pristina" "Brus" "Nis" "Smederovo" "Manasija" "Vrsac"
+} 
+bergsjaeger_brigade = { 
+	"Gardijska Pesadijska Divizija" "Triglavski Odred" "Risnjacki Odred" "Planinski Odred" "Banatski Odred" "Branichevski Odred" "Kalnski Odred" "Komski Odred" "Licki Odred" "Ormoski Odred" "Pozarevacki Odred" "Savski Odred" 
+		"Sencanski Odred" "Smederevski Odred" "Somborski Odred" "Strumicki Odred" "Vlasinski Odred" "Zabaljski Odred" 
+	}
+carrier = { 
+"Belgrade" "Novi Sad" "Budva" "Cetinje" "Pec" "Pizren" "Pristina" "Brus" "Nis" "Smederovo" "Manasija" "Vrsac"
+} 
+cavalry_brigade = { 
+"1. Konjicka Divizija" "2. Konjicka Divizija" "3. Konjicka Divizija" "4. Konjicka Divizija" "5. Konjicka Divizija" "6. Konjicka Divizija" "7. Konjicka Divizija" "8. Konjicka Divizija" "9. Konjicka Divizija" "10. Konjicka Divizija" "11. Konjicka Divizija" 
+		"12. Konjicka Divizija" 
+	}
+destroyer = { 
+"1. Razarac Flotila" "2. Razarac Flotila" "3. Razarac Flotila" "4. Razarac Flotila" "5. Razarac Flotila"
+} 
+garrison_brigade = { 
+"1. Cerska pesadijska divizija" "3. Dunavska pesadijska divizija" "5. Sumadijska pesadijska divizija" "7. Potiska pesadijska divizija" "8. Krajinska pesadijska divizija" "9. Timocka pesadijska divizija" "10. Bosanska pesadijska divizija" "12. Jadranska pesadijska divizija" "13. Hercegovacka pesadijska divizija" "15. Zetska pesadijska divizija" "17. Vrbaska pesadijska divizija" "20. Bregalnicka pesadijska divizija" "22. Ibarska pesadijska divizija" "25. Vardarska pesadijska divizija" "27. Savska pesadijska divizija" "30. Osjecka pesadijska divizija" "31. Kosovska pesadijska divizija" "32. Triglavska pesadijska divizija" "33. Licka pesadijska divizija" "34. Toplicka pesadijska divizija" "38. Dravska pesadijska divizija" "40. Slavonska pesadijska divizija" "42. Murska pesadijska divizija" "44. Unska pesadijska divizija" "46. Moravska pesadijska divizija" "47. Dinarska pesadijska divizija" "49. Sremska pesadijska divizija" "50. Drinska pesadijska divizija"
+} 
+heavy_cruiser = { 
+"Belgrade" "Novi Sad" "Budva" "Cetinje" "Pec" "Pizren" "Pristina" "Brus" "Nis" "Smederovo" "Manasija" "Vrsac"
+} 
+hq_brigade = { 
+"1. Srbija armija" "2. Srbija armija" "3. Srbija armija" "4. Srbija armija" "5. Srbija armija" "6. Srbija armija" "7. Srbija armija"
+} 
+infantry_brigade = { 
+	"1. 'Cerska' Pesadijska Divizija" "2. Pesadijska Divizija" "3. 'Dunavska' Pesadijska Divizija" "4. Pesadijska Divizija" "5. 'Sumadijska' Pesadijska Divizija" "6. Pesadijska Divizija" "7. 'Potiska' Pesadijska Divizija" "8. 'Krajinska' Pesadijska Divizija" "9. 'Timocka' Pesadijska Divizija" "10. 'Bosanska' Pesadijska Divizija" "11. Pesadijska Divizija" "12. 'Jadranska' Pesadijska Divizija" "13. 'Hercegovacka' Pesadijska Divizija" "14. Pesadijska Divizija" "15. 'Zetska' Pesadijska Divizija" 
+		"16. Pesadijska Divizija" "17. 'Vrbaska' Pesadijska Divizija" "18. Pesadijska Divizija" "19. Pesadijska Divizija" "20. 'Bregalnicka' Pesadijska Divizija" "21. Pesadijska Divizija" "22. 'Ibarska' Pesadijska Divizija" "23. Pesadijska Divizija" "24. Pesadijska Divizija" "25. 'Vardarska' Pesadijska Divizija" "26. Pesadijska Divizija" "27. 'Savska' Pesadijska Divizija" "28. Pesadijska Divizija" "29. Pesadijska Divizija" "30. 'Osjecka' Pesadijska Divizija" 
+	}
+interceptor = { 
+"2. Vazduhoplovni lovacki puk" "4. Vazduhoplovni lovacki puk" "5. Vazduhoplovni lovacki puk" "6. Vazduhoplovni lovacki puk" "9. Vazduhoplovni lovacki puk" "10. Vazduhoplovni lovacki puk" "15. Vazduhoplovni lovacki puk"
+} 
+light_armor_brigade = { 
+	"1. Tankovaya Regiment" "2. Tankovaya Regiment" "3. Tankovaya Regiment" "4. Tankovaya Regiment" "5. Tankovaya Regiment" "6. Tankovaya Regiment" "7. Tankovaya Regiment" "8. Tankovaya Regiment" "9. Tankovaya Regiment" "10. Tankovaya Regiment" "11. Tankovaya Regiment" 
+		"12. Tankovaya Regiment" "13. Tankovaya Regiment" "14. Tankovaya Regiment" "15. Tankovaya Regiment" "16. Tankovaya Regiment" "17. Tankovaya Regiment" "18. Tankovaya Regiment" "19. Tankovaya Regiment" "20. Tankovaya Regiment" "21. Tankovaya Regiment" "22. Tankovaya Regiment" 
+		"23. Tankovaya Regiment" "24. Tankovaya Regiment" "25. Tankovaya Regiment" "26. Tankovaya Regiment" "27. Tankovaya Regiment" "28. Tankovaya Regiment" "29. Tankovaya Regiment" "30. Tankovaya Regiment" "31. Tankovaya Regiment" "32. Tankovaya Regiment" "33. Tankovaya Regiment" 
+		"34. Tankovaya Regiment" "35. Tankovaya Regiment" "36. Tankovaya Regiment" "37. Tankovaya Regiment" "38. Tankovaya Regiment" "39. Tankovaya Regiment" "40. Tankovaya Regiment" "41. Tankovaya Regiment" "42. Tankovaya Regiment" "43. Tankovaya Regiment" "44. Tankovaya Regiment" 
+		"45. Tankovaya Regiment" "46. Tankovaya Regiment" "47. Tankovaya Regiment" "48. Tankovaya Regiment" "49. Tankovaya Regiment" "50. Tankovaya Regiment" "51. Tankovaya Regiment" "52. Tankovaya Regiment" "53. Tankovaya Regiment" "54. Tankovaya Regiment" "55. Tankovaya Regiment" 
+		"56. Tankovaya Regiment" "57. Tankovaya Regiment" "58. Tankovaya Regiment" "59. Tankovaya Regiment" "60. Tankovaya Regiment" "61. Tankovaya Regiment" "62. Tankovaya Regiment" "63. Tankovaya Regiment" "64. Tankovaya Regiment" "65. Tankovaya Regiment" "66. Tankovaya Regiment" 
+		"67. Tankovaya Regiment" "68. Tankovaya Regiment" "69. Tankovaya Regiment" "70. Tankovaya Regiment" "71. Tankovaya Regiment" "72. Tankovaya Regiment" "73. Tankovaya Regiment" "74. Tankovaya Regiment" "75. Tankovaya Regiment" "76. Tankovaya Regiment" "77. Tankovaya Regiment" 
+		"78. Tankovaya Regiment" "79. Tankovaya Regiment" "80. Tankovaya Regiment" "81. Tankovaya Regiment" "82. Tankovaya Regiment" "83. Tankovaya Regiment" "84. Tankovaya Regiment" "85. Tankovaya Regiment" "86. Tankovaya Regiment" "87. Tankovaya Regiment" "88. Tankovaya Regiment" 
+		"89. Tankovaya Regiment" "90. Tankovaya Regiment" "91. Tankovaya Regiment" "92. Tankovaya Regiment" "93. Tankovaya Regiment" "94. Tankovaya Regiment" "95. Tankovaya Regiment" "96. Tankovaya Regiment" "97. Tankovaya Regiment" "98. Tankovaya Regiment" "99. Tankovaya Regiment" 
+		"100. Tankovaya Regiment" "101. Tankovaya Regiment" "102. Tankovaya Regiment" "103. Tankovaya Regiment" "104. Tankovaya Regiment" "105. Tankovaya Regiment" "106. Tankovaya Regiment" "107. Tankovaya Regiment" "108. Tankovaya Regiment" "109. Tankovaya Regiment" 
+	}
+light_cruiser = { 
+"Belgrade" "Novi Sad" "Budva" "Cetinje" "Pec" "Pizren" "Pristina" "Brus" "Nis" "Smederovo" "Manasija" "Vrsac"
+} 
+marine_brigade = { 
+"1. mornaricka divizija" "2. mornaricka divizija" "3. mornaricka divizija" "4. mornaricka divizija" "5. mornaricka divizija"
+} 
+militia_brigade = { 
+"Banatski odred" "Branichevski odred" "Kalnski odred" "Komski odred" "Licki odred" "Ormoski odred" "Pozarevacki odred" "Savski odred" "Sencanski odred" "Smederevski odred" "Somborski odred" "Strumicki odred" "Vlasinski odred" "Zabaljski odred"
+} 
+submarine = { 
+"1. Podmorski Flotila" "2. Podmorski Flotila" "3. Podmorski Flotila" "4. Podmorski Flotila" "5. Podmorski Flotila"
+} 
+tactical_bomber = { 
+"16. Vazduhoplovni bombarderski puk" "17. Vazduhoplovni bombarderski puk" "18. Vazduhoplovni bombarderski puk"
+} 
+transport_ship = { 
+"1. Pomorski Saobrac Flotila" "2. Pomorski Saobrac Flotila" "3. Pomorski Saobrac Flotila" "4. Pomorski Saobrac Flotila" "5. Pomorski Saobrac Flotila"
+}
+
+
+}
+
+ministers = {
+415092 = {
+name = "Aleksandar I"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3136
+head_of_state = die_hard_reformer
+start_date = 1921.1.1
+}
+
+415049 = {
+name = "Alexander Karadordevic"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3136
+chief_of_army = guns_and_butter_doctrine
+start_date = 1915.1.1
+}
+
+415074 = {
+name = "Andra Nikolic"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3149
+foreign_minister = biased_intellectual
+start_date = 1910.1.1
+}
+
+415072 = {
+name = "Ante Trumbic"
+ideology = market_liberal
+loyalty = 1.00
+picture = 3148
+foreign_minister = ideological_crusader
+start_date = 1918.1.1
+}
+
+415033 = {
+name = "Arsa Jovanovic"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M20075
+chief_of_staff = school_of_fire_support
+start_date = 1933.1.1
+}
+
+415038 = {
+name = "Boguljub Ilic"
+ideology = market_liberal
+loyalty = 1.00
+picture = M20029
+chief_of_navy = open_seas_doctrine
+start_date = 1933.1.1
+}
+
+415035 = {
+name = "Borivoje Joksimovic"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = L46013
+chief_of_army = guns_and_butter_doctrine
+start_date = 1933.1.1
+}
+
+415120 = {
+name = "Bozidar Maksimovic"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+minister_of_security = man_of_the_people
+start_date = 1924.1.1
+}
+
+415006 = {
+name = "Bozidar Puric"
+ideology = fascistic
+loyalty = 1.00
+picture = M20043
+minister_of_intelligence = technical_specialist
+start_date = 1933.1.1
+}
+
+415052 = {
+name = "Branko Jovanovic"
+ideology = social_conservative
+loyalty = 1.00
+picture = unknown
+chief_of_staff = school_of_psychology
+chief_of_army = static_defence_doctrine
+start_date = 1920.1.1
+}
+
+415021 = {
+name = "Davorin Jenko"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M547021
+armament_minister = administrative_genius
+start_date = 1942.1.1
+}
+
+415026 = {
+name = "Djoda Udovicki"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M547026
+minister_of_security = silent_lawyer
+start_date = 1933.1.1
+}
+
+415122 = {
+name = "Dorde Gencic"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3964
+minister_of_security = compassionate_gentleman
+start_date = 1910.1.1
+}
+
+415002 = {
+name = "Dragisa Cvetkovic"
+ideology = fascistic
+loyalty = 1.00
+picture = M20032
+head_of_government = corporate_suit
+start_date = 1933.1.1
+}
+
+415027 = {
+name = "Dragoljub Stefanic"
+ideology = market_liberal
+loyalty = 1.00
+picture = M20061
+minister_of_security = crime_fighter
+start_date = 1933.1.1
+}
+
+415040 = {
+name = "Dragomir Lukacevic"
+ideology = market_liberal
+loyalty = 1.00
+picture = L46055
+chief_of_air = air_superiority_doctrine
+start_date = 1933.1.1
+}
+
+415018 = {
+name = "Dragomir Vijic"
+ideology = market_liberal
+loyalty = 1.00
+picture = M547018
+foreign_minister = iron_fisted_brute
+start_date = 1941.1.1
+}
+
+415089 = {
+name = "Dragutin Dimitrijevic"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3157
+minister_of_intelligence = political_specialist
+start_date = 1910.1.1
+}
+
+415073 = {
+name = "Duro Dakovic"
+ideology = stalinist
+loyalty = 1.00
+picture = 3959
+foreign_minister = apologetic_clerk
+start_date = 1910.1.1
+}
+
+415003 = {
+name = "Dusan Simovic"
+ideology = fascistic
+loyalty = 1.00
+picture = M20033
+foreign_minister = ideological_crusader
+start_date = 1933.1.1
+}
+
+415048 = {
+name = "Dusan Trifunovic"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3135
+chief_of_staff = school_of_mass_combat
+chief_of_army = elastic_defence_doctrine
+start_date = 1924.1.1
+}
+
+415017 = {
+name = "Edvard Kardelj"
+ideology = market_liberal
+loyalty = 1.00
+picture = M20047
+foreign_minister = biased_intellectual
+start_date = 1933.1.1
+}
+
+415091 = {
+name = "Filip Filipovic"
+ideology = stalinist
+loyalty = 1.00
+picture = 3961
+head_of_state = die_hard_reformer
+start_date = 1910.1.1
+}
+
+415024 = {
+name = "Harald Turner"
+ideology = fascistic
+loyalty = 1.00
+picture = M547024
+minister_of_security = prince_of_terror
+start_date = 1941.1.1
+}
+
+415015 = {
+name = "Isidor Mandrevic"
+ideology = fascistic
+loyalty = 1.00
+picture = M547015
+foreign_minister = the_cloak_n_dagger_schemer
+start_date = 1942.1.1
+}
+
+415014 = {
+name = "Ivan Subasic"
+ideology = market_liberal
+loyalty = 1.00
+picture = M20014
+head_of_government = silent_workhorse
+start_date = 1933.1.1
+}
+
+415011 = {
+name = "Josip Broz"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M20021
+head_of_state = benevolent_gentleman
+head_of_government = happy_amateur
+armament_minister = administrative_genius
+minister_of_intelligence = dismal_enigma
+chief_of_army = decisive_battle_doctrine
+chief_of_navy = base_control_doctrine
+chief_of_air = vertical_envelopment_doctrine
+start_date = 1933.1.1
+}
+
+415066 = {
+name = "Jovan Jovanovic-Pizon"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3142
+foreign_minister = biased_intellectual
+armament_minister = infantry_proponent
+start_date = 1910.1.1
+}
+
+415076 = {
+name = "Jovan Zujovic"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3151
+foreign_minister = iron_fisted_brute
+start_date = 1910.1.1
+}
+
+415097 = {
+name = "Kosta Kumanudi"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+armament_minister = administrative_genius
+minister_of_security = compassionate_gentleman
+start_date = 1921.1.1
+}
+
+415041 = {
+name = "Kosta Miletic"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3129
+chief_of_air = army_aviation_doctrine
+start_date = 1910.1.1
+}
+
+415104 = {
+name = "Kosta Stojanovic"
+ideology = social_conservative
+loyalty = 1.00
+picture = unknown
+armament_minister = resource_industrialist
+start_date = 1920.1.1
+}
+
+415012 = {
+name = "Kosta Tanazovic"
+ideology = market_liberal
+loyalty = 1.00
+picture = M547012
+head_of_state = popular_figurehead
+start_date = 1933.1.1
+}
+
+415116 = {
+name = "Kosta Timotijevic"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+minister_of_security = crime_fighter
+start_date = 1922.1.1
+}
+
+415022 = {
+name = "Ladislav Polic"
+ideology = market_liberal
+loyalty = 1.00
+picture = M20050
+armament_minister = laissez_faires_capitalist
+start_date = 1933.1.1
+}
+
+415030 = {
+name = "Laza Kostic"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M547030
+minister_of_intelligence = industrial_specialist
+start_date = 1933.1.1
+}
+
+415103 = {
+name = "Lazar Pacu"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3161
+armament_minister = resource_industrialist
+start_date = 1910.1.1
+}
+
+415029 = {
+name = "Leonard Conti"
+ideology = fascistic
+loyalty = 1.00
+picture = M547029
+minister_of_intelligence = political_specialist
+start_date = 1941.1.1
+}
+
+415088 = {
+name = "Ljubomir Davidovic"
+ideology = market_liberal
+loyalty = 1.00
+picture = 3156
+head_of_government = silent_workhorse
+minister_of_security = compassionate_gentleman
+start_date = 1919.1.1
+}
+
+415109 = {
+name = "Ljubomir Jovanovic"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3163
+minister_of_security = compassionate_gentleman
+start_date = 1910.1.1
+}
+
+415083 = {
+name = "Ljubomir Stojanovic"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3960
+head_of_government = backroom_backstabber
+minister_of_security = crime_fighter
+start_date = 1910.1.1
+}
+
+415009 = {
+name = "Marijan Polic"
+ideology = fascistic
+loyalty = 1.00
+picture = L46046
+chief_of_navy = decisive_naval_battle_doctrine
+start_date = 1933.1.1
+}
+
+415007 = {
+name = "Marko Bozovic"
+ideology = fascistic
+loyalty = 1.00
+picture = L46002
+chief_of_staff = school_of_manoeuvre
+start_date = 1933.1.1
+}
+
+415078 = {
+name = "Marko Trifkovic"
+ideology = social_conservative
+loyalty = 1.00
+picture = unknown
+head_of_government = political_protege
+foreign_minister = great_compromiser
+minister_of_security = man_of_the_people
+start_date = 1910.1.1
+}
+
+415098 = {
+name = "Mehmed Spaho"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3159
+armament_minister = administrative_genius
+start_date = 1924.1.1
+}
+
+415031 = {
+name = "Mihail Milosajevic"
+ideology = market_liberal
+loyalty = 1.00
+picture = M20068
+minister_of_intelligence = logistics_specialist
+start_date = 1933.1.1
+}
+
+415067 = {
+name = "Mihailo Gavrilovic"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3143
+foreign_minister = biased_intellectual
+start_date = 1918.1.1
+}
+
+415108 = {
+name = "Mihailo Ilic"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3962
+armament_minister = theoretical_scientist
+start_date = 1910.1.1
+}
+
+415036 = {
+name = "Mihailo Lukic"
+ideology = market_liberal
+loyalty = 1.00
+picture = L46020
+chief_of_army = elastic_defence_doctrine
+start_date = 1933.1.1
+}
+
+415043 = {
+name = "Mihailo Rasic"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3131
+chief_of_staff = school_of_mass_combat
+chief_of_army = decisive_battle_doctrine
+start_date = 1918.1.1
+}
+
+415019 = {
+name = "Mihovil Tomandl"
+ideology = fascistic
+loyalty = 1.00
+picture = M547019
+armament_minister = air_superiority_proponent
+start_date = 1942.1.1
+}
+
+415001 = {
+name = "Milan Nedic"
+ideology = fascistic
+loyalty = 1.00
+picture = 8435
+head_of_state = resigned_generalissimo
+chief_of_army = armoured_spearhead_doctrine
+start_date = 1933.1.1
+}
+
+415113 = {
+name = "Milan Srskic"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3963
+minister_of_security = compassionate_gentleman
+start_date = 1924.1.1
+}
+
+415100 = {
+name = "Milan Stojadinovic"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3160
+armament_minister = laissez_faires_capitalist
+start_date = 1922.1.1
+}
+
+415079 = {
+name = "Milenko Vesnic"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3153
+head_of_government = political_protege
+foreign_minister = the_cloak_n_dagger_schemer
+start_date = 1920.1.1
+}
+
+415020 = {
+name = "Milentije Popovic"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M20024
+armament_minister = corrupt_kleptocrat
+start_date = 1933.1.1
+}
+
+415107 = {
+name = "Milic Radovanovic"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3162
+armament_minister = laissez_faires_capitalist
+start_date = 1910.1.1
+}
+
+415028 = {
+name = "Militin Milankovic"
+ideology = market_liberal
+loyalty = 1.00
+picture = M547028
+minister_of_security = man_of_the_people
+start_date = 1939.1.1
+}
+
+415047 = {
+name = "Milivoje Zecevic"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+chief_of_staff = school_of_defence
+chief_of_army = elastic_defence_doctrine
+start_date = 1921.1.1
+}
+
+415025 = {
+name = "Miljutin Bakar"
+ideology = fascistic
+loyalty = 1.00
+picture = M547025
+minister_of_security = compassionate_gentleman
+start_date = 1942.1.1
+}
+
+415105 = {
+name = "Milorad Draskovic"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+armament_minister = resource_industrialist
+minister_of_security = compassionate_gentleman
+start_date = 1921.1.1
+}
+
+415117 = {
+name = "Milorad Vujicic"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+minister_of_security = crime_fighter
+start_date = 1922.1.1
+}
+
+415005 = {
+name = "Milos Trifunovic"
+ideology = fascistic
+loyalty = 1.00
+picture = M20035
+minister_of_security = efficient_sociopath
+start_date = 1933.1.1
+}
+
+415044 = {
+name = "Milos Vasic"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3132
+chief_of_staff = school_of_manoeuvre
+chief_of_army = decisive_battle_doctrine
+start_date = 1922.1.1
+}
+
+415077 = {
+name = "Milovan Milovanovic"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3152
+head_of_government = naive_optimist
+foreign_minister = general_staffer
+start_date = 1910.1.1
+}
+
+415069 = {
+name = "Momcilo Nincic"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3145
+foreign_minister = great_compromiser
+armament_minister = administrative_genius
+start_date = 1921.1.1
+}
+
+415121 = {
+name = "Mose Pijade"
+ideology = stalinist
+loyalty = 1.00
+picture = 3165
+minister_of_security = back_stabber
+start_date = 1918.1.1
+}
+
+415071 = {
+name = "Nikola Pasic"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3147
+head_of_government = backroom_backstabber
+foreign_minister = ideological_crusader
+start_date = 1910.1.1
+}
+
+415059 = {
+name = "Petar Bojovic"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3140
+chief_of_staff = school_of_manoeuvre
+start_date = 1916.1.1
+}
+
+415045 = {
+name = "Petar Pesic"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3133
+chief_of_staff = school_of_fire_support
+chief_of_army = decisive_battle_doctrine
+start_date = 1922.1.1
+}
+
+415010 = {
+name = "Petar Vukcevic"
+ideology = fascistic
+loyalty = 1.00
+picture = L46062
+chief_of_air = army_aviation_doctrine
+start_date = 1933.1.1
+}
+
+415093 = {
+name = "Peter I"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3158
+head_of_state = weary_stiff_neck
+start_date = 1910.1.1
+}
+
+415034 = {
+name = "Radivoje Jankovic"
+ideology = market_liberal
+loyalty = 1.00
+picture = L46012
+chief_of_staff = school_of_fire_support
+start_date = 1933.1.1
+}
+
+415046 = {
+name = "Radomir Putnik"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3134
+chief_of_staff = school_of_defence
+chief_of_army = elastic_defence_doctrine
+chief_of_navy = open_seas_doctrine
+start_date = 1910.1.1
+}
+
+415075 = {
+name = "Sima Lozanic"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3150
+foreign_minister = ideological_crusader
+start_date = 1910.1.1
+}
+
+415004 = {
+name = "Slobodan Jovanovic"
+ideology = fascistic
+loyalty = 1.00
+picture = M20034
+armament_minister = military_entrepreneur
+start_date = 1933.1.1
+}
+
+415016 = {
+name = "Stanoje Simic"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M20023
+foreign_minister = apologetic_clerk
+start_date = 1933.1.1
+}
+
+415056 = {
+name = "Stepan Stepanovic"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3139
+chief_of_staff = school_of_fire_support
+start_date = 1910.1.1
+}
+
+415051 = {
+name = "Stevan Hadzic"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3137
+chief_of_staff = school_of_fire_support
+chief_of_army = guns_and_butter_doctrine
+start_date = 1919.1.1
+}
+
+415084 = {
+name = "Stojan Novakovic"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3155
+head_of_government = corporate_suit
+start_date = 1910.1.1
+}
+
+415068 = {
+name = "Stojan Protic"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3144
+head_of_government = flamboyant_tough_guy
+foreign_minister = great_compromiser
+armament_minister = military_entrepreneur
+minister_of_security = crime_fighter
+start_date = 1918.1.1
+}
+
+415115 = {
+name = "Svetozar Pribicevic"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3164
+minister_of_security = crime_fighter
+start_date = 1918.1.1
+}
+
+415023 = {
+name = "Vasa Sailovic"
+ideology = market_liberal
+loyalty = 1.00
+picture = M547023
+armament_minister = resource_industrialist
+start_date = 1943.1.1
+}
+
+415032 = {
+name = "Vasa Zivkovoc"
+ideology = market_liberal
+loyalty = 1.00
+picture = M547032
+minister_of_intelligence = dismal_enigma
+start_date = 1941.1.1
+}
+
+415096 = {
+name = "Velizar Jankovic"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+armament_minister = administrative_genius
+start_date = 1920.1.1
+}
+
+415082 = {
+name = "Vladimir Copic"
+ideology = stalinist
+loyalty = 1.00
+picture = 3154
+head_of_government = ambitious_union_boss
+start_date = 1918.1.1
+}
+
+415070 = {
+name = "Vojislav Marinkovic"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3146
+foreign_minister = great_compromiser
+minister_of_security = man_of_the_people
+start_date = 1924.1.1
+}
+
+415099 = {
+name = "Vojislav Veljkovic"
+ideology = social_conservative
+loyalty = 1.00
+picture = unknown
+armament_minister = laissez_faires_capitalist
+start_date = 1910.1.1
+}
+
+415061 = {
+name = "Zivko Pavlovic"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3141
+chief_of_staff = school_of_mass_combat
+start_date = 1915.1.1
+}
+
+415042 = {
+name = "Zivojin Misic"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3130
+chief_of_staff = school_of_psychology
+chief_of_army = decisive_battle_doctrine
+start_date = 1916.1.1
+}
+
+
+}
+
