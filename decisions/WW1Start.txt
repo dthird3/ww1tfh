@@ -1,0 +1,26 @@
+diplomatic_decisions = {
+	SER_ult = {
+		potential = {
+			tag = AUH
+			exists = SER
+			has_country_flag = murder_of_franz_ferdinand
+			NOT = { has_country_flag = ser_ultamatium }
+			war = no
+
+		}
+		allow = {
+			date = 1914.7.23
+			war = no
+		}
+		effect = {
+			set_country_flag = ser_ultamatium
+			country_event = 100142
+			dissent = 2
+			money = 100
+			manpower = 30
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+} 

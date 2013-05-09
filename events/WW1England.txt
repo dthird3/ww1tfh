@@ -1,0 +1,349 @@
+
+ #### NEW KING 1910 BRITAIN  ####
+
+country_event = {
+
+		id = 100110
+
+		trigger = {
+			tag = ENG
+			ENG = { head_of_state = 9999999 }
+			date = 1910.5.6
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = yes
+
+		title = "ENGE1"
+		desc = "desc_ENGE1"
+		picture = "ENGP1"
+
+		option = {
+			name = "opta_ENGE1"
+			ai_chance = { factor = 100 }
+			ENG = { head_of_state = 10001 }
+			set_country_flag = king_death_george
+		}
+	
+}
+
+ #### SOUTH AFRICA BRITAIN  ####
+
+country_event = {
+
+		id = 100111
+
+		is_triggered_only = yes
+		
+		major = yes 
+		
+		fire_only_once = yes
+
+		title = "ENGE2"
+		desc = "desc_ENGE2"
+		picture = "ENGP2"
+
+		option = {
+			name = "opta_ENGE2"
+			ai_chance = { factor = 100 }
+			release = SAF
+			SAF = { join_faction = allies }
+			manpower = 300
+			set_country_flag = saf_release
+		}
+	
+}
+
+country_event = { #May 25 – The United Kingdom's House of Commons passes Irish Home Rule.
+
+		id = 100140
+		
+		major = yes
+		
+		trigger = {
+			tag = ENG
+			NOT = { exists = IRE }
+			war = no
+			date = 1914.5.25
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = yes
+
+		title = "ENGE3"
+		desc = "desc_ENGE3"
+		picture = "ENGP3"
+
+		option = {
+			name = "opta_ENGE3"
+			ai_chance = { factor = 100 }
+			manpower = 20
+			dissent = -3
+			neutrality = -15
+		}
+	
+
+}
+#April 14 – RMS Titanic strikes an iceberg in the northern Atlantic Ocean. 
+#She sinks the following day with the loss of 1500.
+country_event = {
+
+		id = 100206
+
+		major = yes
+		
+		trigger = {
+			tag = ENG
+			date = 1912.3.3
+			NOT = { has_country_flag = titanic }
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = yes
+
+		title = "USAE3"
+		desc = "desc_USAE3"
+		picture = "USAP3"
+
+		option = {
+			name = "opta_USAE3"
+			set_country_flag = titanic
+			ai_chance = { factor = 10 }
+			dissent = -3
+			neutrality = -10
+			USA = { neutrality = -10 }
+		}
+	
+}
+#November 5 – The United Kingdom annexes Cyprus
+	country_event = {
+		
+		id = 100151
+		
+		major = yes
+
+
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		
+		title = "ENGE4"
+		desc = "desc_ENGE4"
+		picture = "ENGP4"
+
+		option = {
+			name = "opta_ENGE4"
+			ai_chance = { factor = 100 }
+			TUR = { country_event = 100152 }
+		}
+}
+
+	country_event = {
+		
+		id = 100152
+		
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		
+		title = "ENGE4"
+		desc = "desc_ENGE4"
+		picture = "ENGP4"
+
+		option = {
+			name = "opta_ENGE4"
+			ai_chance = { factor = 100 }
+		}
+}
+
+
+
+#FALL OF ENG
+country_event = {
+		
+		id = 190005
+		
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		
+		major = yes
+		
+		title = "WARE5"
+		desc = "desc_WARE5"
+		picture = "WARP5"
+
+		option = {
+			name = "Puppet the United Kingdom"
+			set_country_flag = war_over
+			dissent = 10
+			ENG = { any_country = { limit = { war_with = ENG } end_war = ENG } }
+			ENG = { leave_faction = allies }
+			ENG = { any_owned = { limit = { is_core = TUR } secede_province = TUR } }
+			ENG_9578 = { secede_province = TUR }
+			GER = { create_vassal = ENG }
+		}
+		option = {
+			name = "Inherit colonies only"
+			ai_chance = { factor = 100 }
+			set_country_flag = war_over
+			dissent = 5
+			ENG = { any_country = { limit = { war_with = ENG } end_war = ENG } }
+			ENG = { leave_faction = allies }
+			ENG = { any_owned = { limit = { is_core = TUR } secede_province = TUR } }
+			ENG_9578 = { secede_province = TUR }
+			GER = { guarantee = ENG }
+			ENG = { neutrality = 100 }
+			any_country = {
+				limit = { faction = axis }
+				non_aggression_pact = ENG
+			}
+			any_country = {
+				limit = { faction = axis }
+				threat = { who = ENG value = -150 }
+			}
+			ENG = { country_event = 190006 }
+		}
+		option = {
+			name = "Inherit colonies and Puppet"
+			set_country_flag = war_over
+			dissent = 15
+			ENG = { any_country = { limit = { war_with = ENG } end_war = ENG } }
+			ENG = { leave_faction = allies }
+			GER = { create_vassal = ENG }
+			ENG = { any_owned = { limit = { is_core = TUR } secede_province = TUR } }
+			ENG_9578 = { secede_province = TUR }
+			GER = { guarantee = ENG }
+			ENG = { neutrality = 100 }
+			any_country = {
+				limit = { faction = axis }
+				non_aggression_pact = ENG
+			}
+			any_country = {
+				limit = { faction = axis }
+				threat = { who = ENG value = -150 }
+			}
+			ENG = { country_event = 190006 }
+		}
+}
+country_event = {
+		
+		id = 190006
+		
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		
+		title = "WARE5"
+		desc = "desc_WARE5"
+		picture = "WARP5"
+
+		option = {
+			name = "opta_WARE5"
+			ai_chance = { factor = 100 }
+			5181 = { secede_province = GER }
+			5868 = { secede_province = GER }
+			9756 = { secede_province = GER }
+			9915 = { secede_province = GER }
+			9935 = { secede_province = GER }
+			5191 = { secede_province = GER }
+			6394 = { secede_province = GER }
+			5359 = { secede_province = GER }
+			9862 = { secede_province = GER }
+			9977 = { secede_province = GER }
+			9970 = { secede_province = GER }
+			5213 = { secede_province = GER }
+			ENG_9969 = { secede_province = GER }
+			ENG_9837 = { secede_province = GER }
+			ENG_9902 = { secede_province = GER }
+			ENG_9879 = { secede_province = GER }
+			ENG_9780 = { secede_province = GER }
+			ENG_9841 = { secede_province = GER }
+			ENG_9932 = { secede_province = GER }
+			ENG_9956 = { secede_province = GER }
+			ENG_10394 = { secede_province = GER }
+			ENG_8030 = { secede_province = GER }
+			ENG_8020 = { secede_province = GER }
+			ENG_10271 = { secede_province = GER }
+			ENG_10259 = { secede_province = GER }
+			CAN_8487 = { secede_province = GER }
+			CAN_3737 = { secede_province = GER }
+		}
+}
+country_event = {
+		
+		id = 190007
+		
+		major = yes
+		
+		trigger = {
+			tag = ENG
+			date = 1916.1.1
+			ENG = { war_with = GER }
+			NOT = { exists = IRE }
+			NOT = { has_country_flag = easter }
+		}
+		
+		mean_time_to_happen = {
+			months = 1
+		}
+		
+		fire_only_once = yes
+		
+		title = "IREE1"
+		desc = "desc_IREE1"
+		picture = "IREP1"
+
+		option = {
+			name = "opta_IREE1"
+			ai_chance = { factor = 100 }
+			ireland_dublin = { secede_province = IRE }
+			IRE = { load_oob = "IRE_1914.txt" }
+			IRE = {
+				war = {
+					target = ENG
+					attacker_goal = { casus_belli = aquire_all_cores }
+					defender_goal = { casus_belli = conquer }
+				}
+			}
+			set_country_flag = easter
+		}
+}
+country_event = {
+		
+		id = 190501
+		
+		major = yes
+		
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		
+		title = "ENGE6"
+		desc = "desc_ENGE6"
+		picture = "ENGP6"
+
+		option = {
+			name = "opta_ENGE6"
+			ai_chance = { factor = 100 }
+			dissent = 2
+			relation = { who = TUR value = -50 }
+			money = -50
+			load_oob = "ErinAgincourt.txt"			
+		}
+		option = {
+			name = "optb_ENGE6"
+			relation = { who = TUR value = 20 }
+			money = 50
+			TUR = { load_oob = "ReshadiehSultan.txt" }			
+		}
+}

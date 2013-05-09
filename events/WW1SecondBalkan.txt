@@ -1,0 +1,524 @@
+
+#JUNE 1 The Greek-Serbian Treaty of Alliance is signed, paving the way for the Second Balkan War.
+country_event = {
+
+		id = 100128
+
+		major = yes
+
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+
+		title = "TURE6"
+		desc = "desc_TURE6"
+		picture = "TURP6"
+
+		option = {
+			name = "opta_TURE6"
+			ai_chance = { factor = 100 }
+			SER = { set_country_flag = has_serb_alliance }
+			GRE = { country_event = 100129 }
+		}
+	
+}
+
+country_event = {
+
+		id = 100129
+
+		is_triggered_only = yes
+
+		title = "TURE6"
+		desc = "desc_TURE6"
+		picture = "TURP6"
+
+		option = {
+			name = "opta_TURE6"
+			ai_chance = { factor = 100 }
+			create_alliance = SER
+		}
+	
+}
+
+#Second Balkans War SERBIA GRE ROM VS BUL SER = { set_country_flag = has_serb_alliance }
+country_event = {
+
+		id = 100130
+
+		major = yes
+		
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+
+		title = "TURE7"
+		desc = "desc_TURE7"
+		picture = "TURP7"
+
+		option = {
+			name = "opta_TURE7"
+			ai_chance = { factor = 100 }
+			BUL = { add_wargoal = {	
+				target = SER
+				war_goal = { casus_belli = second_balkans_bulg }
+				}
+			}
+			SER = { add_wargoal = {	
+				target = BUL
+				war_goal = { casus_belli = second_balkans }
+				}
+			}
+			GRE = { add_wargoal = {	
+				target = BUL
+				war_goal = { casus_belli = second_balkans }
+				}
+			}
+			BUL = { set_country_flag = second_balkan_war }
+			THIS = { manpower = 20 }
+			THIS = { national_unity = 100 }
+			ROM = { country_event = 100131 }
+			GRE = { country_event = 100131 }
+			TUR = { country_event = 100131 }
+			SER = { country_event = 100131 }
+			TUR = { add_country_modifier = {
+					name = "officers_gain"
+					duration = 3
+					}
+			}
+
+		}
+	
+}
+
+country_event = {
+
+		id = 100131
+
+		is_triggered_only = yes
+
+		title = "TURE7"
+		desc = "desc_TURE7"
+		picture = "TURP7"
+
+		option = {
+			name = "opta_TURE4"
+			ai_chance = { factor = 100 }
+			THIS = { manpower = 20 }
+		}
+	
+}
+
+#INTERVENTION ROM AND TUR
+country_event = {
+
+		id = 100132
+
+		is_triggered_only = yes
+
+		title = "TURE8"
+		desc = "desc_TURE8"
+		picture = "TURP8"
+
+		option = {
+			name = "opta_TURE8"
+			ai_chance = { factor = 100 }
+			THIS = { manpower = 20 }
+			set_country_flag = intervention_balkan
+			war = { target = BUL }
+			THIS = { add_wargoal = {	
+				target = BUL
+				war_goal = { casus_belli = second_balkans }
+				}
+			}
+		}
+}
+
+#BALKAN 2 PEACE NO INTERVENTION
+country_event = {
+
+		id = 100133
+
+		major = yes
+		
+		trigger = {
+			tag = BUL
+			exists = TUR
+			exists = ROM
+			exists = GRE
+			exists = SER
+			BUL = { has_country_flag = second_balkan_war }
+			NOT = { BUL = { has_country_flag = win_balkans } }
+			NOT = { BUL = { has_country_flag = lose_balkans } }
+			NOT = { ROM = { has_country_flag = intervention_balkan } }
+			NOT = { TUR = { has_country_flag = intervention_balkan } }
+			OR = {
+				4435 = { controlled_by = GRE } 
+				4435 = { controlled_by = SER } 
+				4371 = { controlled_by = SER } 
+				4371 = { controlled_by = GRE } 
+				4123 = { controlled_by = SER } 
+				4123 = { controlled_by = GRE } 
+				4181 = { controlled_by = SER } 
+				4181 = { controlled_by = GRE } 
+				4498 = { controlled_by = SER } 
+				4498 = { controlled_by = GRE } 
+			}
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = yes
+
+		title = "TURE9"
+		desc = "desc_TURE9"
+		picture = "TURP9"
+
+		option = {
+			name = "opta_TURE9"
+			ai_chance = { factor = 100 }
+			BUL = { set_country_flag = lose_balkans }
+			4556 = { secede_province = SER }
+			4612 = { secede_province = GRE }
+			4666 = { secede_province = GRE }
+			4611 = { secede_province = GRE }
+			4613 = { secede_province = GRE }
+			BUL = { end_war = SER }
+			BUL = { end_war = GRE }
+			BUL = { end_war = ROM }
+			BUL = { end_war = TUR }
+			BUL = { end_war = HJZ }
+			BUL = { end_war = ASR }
+			BUL = { end_war = YEM }
+			TUR = { manpower = 600 }
+			SER = { leave_alliance = GRE }
+			GRE = { leave_alliance = SER }
+		}
+	
+}
+
+#BALKAN 2 PEACE ROM INTERVENTION
+country_event = {
+
+		id = 100134
+
+		major = yes
+		
+		trigger = {
+			tag = BUL
+			exists = TUR
+			exists = ROM
+			exists = GRE
+			exists = SER
+			BUL = { has_country_flag = second_balkan_war }
+			NOT = { BUL = { has_country_flag = win_balkans } }
+			NOT = { BUL = { has_country_flag = lose_balkans } }
+			ROM = { has_country_flag = intervention_balkan }
+			NOT = { TUR = { has_country_flag = intervention_balkan } }
+			OR = {
+				4435 = { controlled_by = GRE } 
+				4435 = { controlled_by = SER } 
+				4371 = { controlled_by = SER } 
+				4371 = { controlled_by = GRE } 
+				4123 = { controlled_by = SER } 
+				4123 = { controlled_by = GRE } 
+				4181 = { controlled_by = SER } 
+				4181 = { controlled_by = GRE } 
+				4498 = { controlled_by = SER } 
+				4498 = { controlled_by = GRE }
+				4435 = { controlled_by = ROM } 
+				4435 = { controlled_by = TUR } 
+				4371 = { controlled_by = ROM } 
+				4371 = { controlled_by = TUR } 
+				4123 = { controlled_by = ROM } 
+				4123 = { controlled_by = TUR } 
+				4181 = { controlled_by = ROM } 
+				4181 = { controlled_by = TUR } 
+				4498 = { controlled_by = ROM } 
+				4498 = { controlled_by = TUR } 
+			}
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = yes
+
+		title = "TURE9"
+		desc = "desc_TURE9"
+		picture = "TURP9"
+
+		option = {
+			name = "opta_TURE9"
+			ai_chance = { factor = 100 }
+			BUL = { set_country_flag = lose_balkans }
+			4556 = { secede_province = SER }
+			4612 = { secede_province = GRE }
+			4666 = { secede_province = GRE }
+			4611 = { secede_province = GRE }
+			4613 = { secede_province = GRE }
+			4058 = { secede_province = ROM }
+			3989 = { secede_province = ROM }
+			3990 = { secede_province = ROM }
+			BUL = { end_war = SER }
+			BUL = { end_war = GRE }
+			BUL = { end_war = ROM }
+			BUL = { end_war = TUR }
+			SER = { end_war = BUL }
+			GRE = { end_war = BUL }
+			TUR = { manpower = 600 }
+			SER = { leave_alliance = GRE }
+			GRE = { leave_alliance = SER }
+		}
+	
+}
+
+#BALKAN 2 PEACE TUR INTERVENTION
+country_event = {
+
+		id = 100135
+
+		major = yes
+		
+		trigger = {
+			tag = BUL
+			exists = TUR
+			exists = ROM
+			exists = GRE
+			exists = SER
+			BUL = { has_country_flag = second_balkan_war }
+			NOT = { BUL = { has_country_flag = win_balkans } }
+			NOT = { BUL = { has_country_flag = lose_balkans } }
+			NOT = { ROM = { has_country_flag = intervention_balkan } }
+			TUR = { has_country_flag = intervention_balkan }
+			OR = {
+				4435 = { controlled_by = GRE } 
+				4435 = { controlled_by = SER } 
+				4371 = { controlled_by = SER } 
+				4371 = { controlled_by = GRE } 
+				4123 = { controlled_by = SER } 
+				4123 = { controlled_by = GRE } 
+				4181 = { controlled_by = SER } 
+				4181 = { controlled_by = GRE } 
+				4498 = { controlled_by = SER } 
+				4498 = { controlled_by = GRE }
+				4435 = { controlled_by = ROM } 
+				4435 = { controlled_by = TUR } 
+				4371 = { controlled_by = ROM } 
+				4371 = { controlled_by = TUR } 
+				4123 = { controlled_by = ROM } 
+				4123 = { controlled_by = TUR } 
+				4181 = { controlled_by = ROM } 
+				4181 = { controlled_by = TUR } 
+				4498 = { controlled_by = ROM } 
+				4498 = { controlled_by = TUR } 
+			}
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = yes
+
+		title = "TURE9"
+		desc = "desc_TURE9"
+		picture = "TURP9"
+
+		option = {
+			name = "opta_TURE9"
+			ai_chance = { factor = 100 }
+			BUL = { set_country_flag = lose_balkans }
+			4556 = { secede_province = SER }
+			4612 = { secede_province = GRE }
+			4666 = { secede_province = GRE }
+			4611 = { secede_province = GRE }
+			4613 = { secede_province = GRE }
+			#4058 = { secede_province = ROM }
+			#3989 = { secede_province = ROM }
+			#3990 = { secede_province = ROM }
+			4436 = { secede_province = TUR }
+			4374 = { secede_province = TUR }
+			BUL = { end_war = SER }
+			BUL = { end_war = GRE }
+			BUL = { end_war = ROM }
+			BUL = { end_war = TUR }
+			SER = { end_war = BUL }
+			GRE = { end_war = BUL }
+			TUR = { manpower = 600 }
+			SER = { leave_alliance = GRE }
+			GRE = { leave_alliance = SER }
+		}
+	
+}
+
+#BALKAN 2 PEACE TUR INTERVENTION
+country_event = {
+
+		id = 100136
+
+		major = yes
+		
+		trigger = {
+			tag = BUL
+			exists = TUR
+			exists = ROM
+			exists = GRE
+			exists = SER
+			NOT = { BUL = { has_country_flag = win_balkans } }
+			NOT = { BUL = { has_country_flag = lose_balkans } }
+			BUL = { has_country_flag = second_balkan_war }
+			ROM = { has_country_flag = intervention_balkan }
+			TUR = { has_country_flag = intervention_balkan }
+			OR = {
+				4435 = { controlled_by = GRE } 
+				4435 = { controlled_by = SER } 
+				4371 = { controlled_by = SER } 
+				4371 = { controlled_by = GRE } 
+				4123 = { controlled_by = SER } 
+				4123 = { controlled_by = GRE } 
+				4181 = { controlled_by = SER } 
+				4181 = { controlled_by = GRE } 
+				4498 = { controlled_by = SER } 
+				4498 = { controlled_by = GRE }
+				4435 = { controlled_by = ROM } 
+				4435 = { controlled_by = TUR } 
+				4371 = { controlled_by = ROM } 
+				4371 = { controlled_by = TUR } 
+				4123 = { controlled_by = ROM } 
+				4123 = { controlled_by = TUR } 
+				4181 = { controlled_by = ROM } 
+				4181 = { controlled_by = TUR } 
+				4498 = { controlled_by = ROM } 
+				4498 = { controlled_by = TUR }
+				date = 1913.6.1  
+			}
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = yes
+
+		title = "TURE9"
+		desc = "desc_TURE9"
+		picture = "TURP9"
+
+		option = {
+			name = "opta_TURE9"
+			ai_chance = { factor = 100 }
+			BUL = { set_country_flag = lose_balkans }
+			4556 = { secede_province = SER }
+			4612 = { secede_province = GRE }
+			4666 = { secede_province = GRE }
+			4611 = { secede_province = GRE }
+			4613 = { secede_province = GRE }
+			4058 = { secede_province = ROM }
+			3989 = { secede_province = ROM }
+			3990 = { secede_province = ROM }
+			4436 = { secede_province = TUR }
+			4374 = { secede_province = TUR }
+			SER = { leave_alliance = GRE }
+			GRE = { leave_alliance = SER }
+			BUL = { end_war = SER }
+			BUL = { end_war = GRE }
+			SER = { end_war = BUL }
+			GRE = { end_war = BUL }
+			BUL = { end_war = ROM }
+			BUL = { end_war = TUR }
+			TUR = { manpower = 600 }
+		}
+	
+}  
+ 
+
+#BALKAN 2 PEACE BUL win
+country_event = {
+
+		id = 100360
+
+		major = yes
+		
+
+
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+
+		title = "TURE9"
+		desc = "desc_TURE9z"
+		picture = "TURP9z"
+
+		option = {
+			name = "opta_TURE9z"
+			ai_chance = { factor = 100 }
+			BUL = { set_country_flag = win_balkans }
+			SER = { 4610 = { secede_province = BUL } }
+			SER = { 4664 = { secede_province = BUL } }
+			GRE = { 4718 = { secede_province = BUL } }
+			GRE = { 4665 = { secede_province = BUL } }
+			SER = { leave_alliance = GRE }
+			GRE = { leave_alliance = SER }
+			BUL = { end_war = SER }
+			BUL = { end_war = GRE }
+			SER = { end_war = BUL }
+			GRE = { end_war = BUL }
+			BUL = { end_war = ROM }
+			BUL = { end_war = TUR }
+			SER = { country_event = 100361 }
+			GRE = { country_event = 100362 }
+		}
+	
+}  
+country_event = {
+
+		id = 100361
+
+		major = yes
+		
+
+
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+
+		title = "TURE9"
+		desc = "desc_TURE9z"
+		picture = "TURP9z"
+
+		option = {
+			name = "opta_TURE9z"
+			ai_chance = { factor = 100 }
+			4610 = { secede_province = BUL }
+			4664 = { secede_province = BUL }
+		}
+	
+}  
+country_event = {
+
+		id = 100362
+
+		major = yes
+		
+
+
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+
+		title = "TURE9"
+		desc = "desc_TURE9z"
+		picture = "TURP9z"
+
+		option = {
+			name = "opta_TURE9z"
+			ai_chance = { factor = 100 }
+			4718 = { secede_province = BUL }
+			4665 = { secede_province = BUL }
+		}
+	
+}  

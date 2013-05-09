@@ -1,0 +1,571 @@
+color = { 200  100  70 }
+graphical_culture = Soviet
+
+default_templates = {
+	SOV_rifle = {
+		infantry_brigade
+		infantry_brigade
+		infantry_brigade
+	}
+	SOV_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+		armored_car_brigade
+	}
+	SOV_mountain = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+ 		bergsjaeger_brigade
+	}
+}
+
+unit_names = {
+
+armor_brigade = { 
+"1st Tank Division" "2nd Tank Division" "3rd Tank Division" "4th Tank Division" "5th Tank Division" "6th Tank Division" "7th Tank Division" "8th Tank Division" "9th Tank Division" "10th Tank Division" "11st Tank Division" "12nd Tank Division" "13rd Tank Division" "14th Tank Division" "15th Tank Division" "16th Tank Division" "17th Tank Division" "18th Tank Division" "19th Tank Division" "20th Tank Division"
+} 
+battlecruiser = { 
+"Rustavi" "Zugdidi" "Sokhumi" "Akhalkalaki" "Vardzia"
+} 
+dreadnaught = { 
+"Ossetia" "Svaneti" "Ajaria" "Svaneti" "Abkhazia" "Tbilisi" "Kakheti" "Tskhinvali" "Batumi" "Rustavi" "Zugdidi" "Sokhumi" "Akhalkalaki" "Vardzia"
+} 
+bergsjaeger_brigade = { 
+"9th Mountain Rifle Division" "20th Mountain Rifle Division" "28th Mountain Rifle Division" "30th Mountain Rifle Division" "44th Mountain-Infantry Division" "47th Mountain Rifle Division" "58th Mountain-Infantry Division" "60th Mountain-Infantry Division"
+} 
+carrier = { 
+"Tbilisi" "Kakheti" "Tskhinvali" "Batumi" "Rustavi" "Zugdidi" "Sokhumi" "Akhalkalaki" "Vardzia" "Telavi" "Ossetia" "Svaneti" "Ajaria" "Svaneti" "Abkhazia"
+} 
+cavalry_brigade = { 
+"3rd Cavalry Division" "5th Cavalry Division" "6th Cavalry Division" "8th Cavalry Division" "9th Cavalry Division" "14th Cavalry Division" "17th Mountain Cavalry Division" "18th Mountain Cavalry Division" "20th Mountain Cavalry Division" "21st Mountain Cavalry Division" "24th Cavalry Division" "32nd Cavalry Division" "36th Cavalry Division" "37th Cavalry Division" "38th Cavalry Division" "39th Cavalry Division" "40th Cavalry Division" "41st Cavalry Division" "42nd Cavalry Division" "43rd Cavalry Division" "44th Cavalry Division" "45th Cavalry Division" "46th Cavalry Division" "47th Cavalry Division" "48th Cavalry Division" "49th Cavalry Division" "50th Cavalry Division"
+} 
+destroyer = { 
+"1st Destroyer Flotilla" "2nd Destroyer Flotilla" "3rd Destroyer Flotilla" "4th Destroyer Flotilla" "5th Destroyer Flotilla" "6th Destroyer Flotilla" "7th Destroyer Flotilla" "8th Destroyer Flotilla" "9th Destroyer Flotilla" "10th Destroyer Flotilla" "11th Destroyer Flotilla" "12th Destroyer Flotilla" "13th Destroyer Flotilla" "14th Destroyer Flotilla" "15th Destroyer Flotilla" "16th Destroyer Flotilla" "17th Destroyer Flotilla" "18th Destroyer Flotilla" "19th Destroyer Flotilla" "20th Destroyer Flotilla"
+} 
+garrison_brigade = { 
+"1st Garrison Division" "2nd Garrison Division" "3rd Garrison Division" "4th Garrison Division" "5th Garrison Division" "6th Garrison Division" "7th Garrison Division" "8th Garrison Division" "9th Garrison Division" "10th Garrison Division" "11st Garrison Division" "12nd Garrison Division" "13rd Garrison Division" "14th Garrison Division" "16th Garrison Division" "17th Garrison Division" "19th Garrison Division" "21st Garrison Division"
+} 
+heavy_cruiser = { 
+"Tbilisi" "Kakheti" "Tskhinvali" "Batumi" "Rustavi" "Zugdidi" "Sokhumi" "Akhalkalaki" "Vardzia" "Telavi"
+} 
+hq_brigade = { 
+"I. Sak'art'velo Armiya" "II. Sak'art'velo Armiya" "III. Sak'art'velo Armiya" "IV. Sak'art'velo Armiya" "V. Sak'art'velo Armiya" "VI. Sak'art'velo Armiya" "VII. Sak'art'velo Armiya" "VIII. Sak'art'velo Armiya" "IX. Sak'art'velo Armiya" "X. Sak'art'velo Armiya"
+} 
+infantry_brigade = { 
+"1st Rifle Division" "2nd Rifle Division" "3rd Rifle Division" "4th Rifle Division" "5th Rifle Division" "6th Rifle Division" "7th Rifle Division" "8th Rifle Division" "9th Rifle Division" "10th Rifle Division" "11st Rifle Division" "12nd Rifle Division" "13rd Rifle Division" "14th Rifle Division" "16th Rifle Division" "17th Rifle Division" "19th Rifle Division" "21st Rifle Division" "22nd Rifle Division" "23rd Rifle Division" "24th Rifle Division" "25th Rifle Division" "26th Rifle Division" "27th Rifle Division" "31st Rifle Division" "32nd Rifle Division" "33rd Rifle Division" "34th Rifle Division" "35th Rifle Division" "37th Rifle Division" "38th Rifle Division" "39th Rifle Division" "40th Rifle Division" "41st Rifle Division" "42nd Rifle Division" "43rd Rifle Division" "45th Rifle Division" "46th Rifle Division" "47th Rifle Division" "48th Rifle Division" "49th Rifle Division" "50th Rifle Division" "51st Rifle Division" "52nd Rifle Division" "53rd Rifle Division" "54th Rifle Division" "55th Rifle Division" "56th Rifle Division" "59th Rifle Division" "61st Rifle Division" "62nd Rifle Division" "64th Rifle Division" "65th Rifle Division" "66th Rifle Division" "67th Rifle Division" "70th Rifle Division" "71st Rifle Division" "73rd Rifle Division" "74th Rifle Division" "75th Rifle Division" "78th Rifle Division" "79th Rifle Division" "80th Rifle Division" "85th Rifle Division" "86th Rifle Division" "87th Rifle Division" "88th Rifle Division" "89th Rifle Division" "90th Rifle Division" "91st Rifle Division" "92nd Rifle Division" "93rd Rifle Division" "94th Rifle Division" "95th Rifle Division" "97th Rifle Division" "98th Rifle Division" "99th Rifle Division" "100th Rifle Division" "102nd Rifle Division" "104th Rifle Division" "105th Rifle Division" "106th Rifle Division" "107th Rifle Division" "108th Rifle Division"
+} 
+interceptor = { 
+"1st Fighter Division" "2nd Fighter Division" "3rd Fighter Division" "4th Fighter Division" "5th Fighter Division" "6th Fighter Division" "7th Fighter Division" "8th Fighter Division" "10th Fighter Division" "11th Fighter Division" "12th Fighter Division" "13th Fighter Division" "14th Fighter Division" "47th Fighter Division" "67th Fighter Division" "75th Fighter Division" "76th Fighter Division" "73rd Fighter Division" "27th Fighter Division" "71st Fighter Division" "43rd Fighter Division" "59th Fighter Division" "60th Fighter Division" "56th Fighter Division"
+} 
+light_armor_brigade = { 
+"1st Tank Division" "2nd Tank Division" "3rd Tank Division" "4th Tank Division" "5th Tank Division" "6th Tank Division" "7th Tank Division" "8th Tank Division" "9th Tank Division" "10th Tank Division" "11st Tank Division" "12nd Tank Division" "13rd Tank Division" "14th Tank Division" "15th Tank Division" "16th Tank Division" "17th Tank Division" "18th Tank Division" "19th Tank Division" "20th Tank Division"
+} 
+light_cruiser = { 
+"Ossetia" "Svaneti" "Ajaria" "Svaneti" "Abkhazia"
+} 
+marine_brigade = { 
+"1st Naval Infantry Division" "2nd Naval Infantry Division" "3rd Naval Infantry Division" "4th Naval Infantry Division" "5th Naval Infantry Division" "6th Naval Infantry Division" "7th Naval Infantry Division" "8th Naval Infantry Division" "9th Naval Infantry Division" "10th Naval Infantry Division" "11th Naval Infantry Division" "12th Naval Infantry Division" "13th Naval Infantry Division"
+} 
+militia_brigade = { 
+"2nd Rifle Division" "3rd Rifle Division" "4th Rifle Division" "5th Rifle Division" "6th Rifle Division" "8th Rifle Division" "10th Rifle Division" "11st Rifle Division" "12nd Rifle Division" "13rd Rifle Division" "14th Rifle Division" "16th Rifle Division" "17th Rifle Division" "19th Rifle Division" "21st Rifle Division" "22nd Rifle Division" "23rd Rifle Division" "24th Rifle Division" "25th Rifle Division" "26th Rifle Division" "27th Rifle Division" "31st Rifle Division" "32nd Rifle Division" "33rd Rifle Division" "34th Rifle Division" "35th Rifle Division" "37th Rifle Division" "38th Rifle Division" "39th Rifle Division" "40th Rifle Division" "41st Rifle Division" "42nd Rifle Division" "43rd Rifle Division" "45th Rifle Division" "46th Rifle Division" "47th Rifle Division" "48th Rifle Division" "49th Rifle Division" "50th Rifle Division" "51st Rifle Division" "52nd Rifle Division" "53rd Rifle Division" "54th Rifle Division" "55th Rifle Division" "56th Rifle Division" "59th Rifle Division" "61st Rifle Division" "62nd Rifle Division" "64th Rifle Division" "65th Rifle Division" "66th Rifle Division" "67th Rifle Division" "70th Rifle Division" "71st Rifle Division" "73rd Rifle Division" "74th Rifle Division" "75th Rifle Division" "78th Rifle Division" "79th Rifle Division" "80th Rifle Division" "85th Rifle Division" "86th Rifle Division" "87th Rifle Division" "88th Rifle Division" "89th Rifle Division" "90th Rifle Division" "91st Rifle Division" "92nd Rifle Division" "93rd Rifle Division" "94th Rifle Division" "95th Rifle Division" "97th Rifle Division" "98th Rifle Division" "99th Rifle Division" "100th Rifle Division" "102nd Rifle Division" "104th Rifle Division" "105th Rifle Division" "106th Rifle Division"
+} 
+submarine = { 
+"1st Submarine Flotilla" "2nd Submarine Flotilla" "3rd Submarine Flotilla" "4th Submarine Flotilla" "5th Submarine Flotilla" "6th Submarine Flotilla" "7th Submarine Flotilla" "8th Submarine Flotilla" "9th Submarine Flotilla" "10th Submarine Flotilla" "11th Submarine Flotilla" "12th Submarine Flotilla" "13th Submarine Flotilla" "14th Submarine Flotilla" "15th Submarine Flotilla" "16th Submarine Flotilla" "17th Submarine Flotilla" "18th Submarine Flotilla" "19th Submarine Flotilla" "20th Submarine Flotilla"
+} 
+tactical_bomber = { 
+"1st Bomber Division" "2nd Bomber Division" "3rd Bomber Division" "4th Bomber Division" "5th Bomber Division" "6th Bomber Division" "7th Bomber Division" "8th Bomber Division" "9th Bomber Division" "10th Bomber Division" "11th Bomber Division" "14th Bomber Division" "15th Bomber Division" "16th Bomber Division" "17th Bomber Division" "19th Bomber Division" "20th Bomber Division" "21th Bomber Division" "58th Bomber Division" "68th Bomber Division" "49th Bomber Division" "74th Bomber Division" "26th Bomber Division" "40th Bomber Division"
+} 
+transport_ship = { 
+"1st Transports" "2nd Transports" "3rd Transports" "4th Transports" "5th Transports" "6th Transports" "7th Transports" "8th Transports" "9th Transports" "10th Transports" "11th Transports" "12th Transports" "13th Transports" "14th Transports" "15th Transports" "16th Transports" "17th Transports" "18th Transports" "19th Transports" "20th Transports"
+}
+
+
+}
+
+ministers = {
+	904550 = {
+	 name = "Noe Ramishvili"
+	 ideology = stalinist
+	 loyalty = 1.00
+	 head_of_state = barking_buffoon
+	 start_date = 1936.1.1
+	 picture = GEOM1
+}
+904551 = {
+	 name = "Lavrentij Beria"
+	 ideology = stalinist
+	 loyalty = 1.00
+	 head_of_government = flamboyant_tough_guy
+	 chief_of_staff = school_of_psychology
+	 start_date = 1936.1.1
+	 picture = M519002
+}
+904552 = {
+	 name = "Alexei Brusilov"
+	 ideology = stalinist
+	 loyalty = 1.00
+	 chief_of_navy = open_seas_doctrine
+	 chief_of_army = static_defence_doctrine
+	 start_date = 1936.1.1
+	 picture = M519009
+}
+904553 = {
+	 name = "Ali Mitaev"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 minister_of_security = crime_fighter
+	 start_date = 1936.1.1
+	 picture = M519037
+}
+904554 = {
+	 name = "Avel Enukidzhe"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 armament_minister = air_superiority_proponent
+	 start_date = 1936.1.1
+	 picture = M519030
+}
+904555 = {
+	 name = "Batchua Zezvasdze"
+	 ideology = stalinist
+	 loyalty = 1.00
+	 armament_minister = resource_industrialist
+	 start_date = 1936.1.1
+	 picture = M519026
+}
+904556 = {
+	 name = "Beso Lominadzhe"
+	 ideology = social_democrat
+	 loyalty = 1.00
+	 armament_minister = theoretical_scientist
+	 start_date = 1936.1.1
+	 picture = M519027
+}
+904557 = {
+	 name = "Budu Mdivani"
+	 ideology = stalinist
+	 loyalty = 1.00
+	 foreign_minister = the_cloak_n_dagger_schemer
+	 start_date = 1936.1.1
+	 picture = M519003
+}
+904558 = {
+	 name = "Djaba Vepkhiadzhe"
+	 ideology = stalinist
+	 loyalty = 1.00
+	 chief_of_air = army_aviation_doctrine
+	 start_date = 1936.1.1
+	 picture = M519060
+}
+904559 = {
+	 name = "Eduard Muhr"
+	 ideology = national_socialist
+	 loyalty = 1.00
+	 chief_of_air = air_superiority_doctrine
+	 start_date = 1936.1.1
+	 picture = M519064
+}
+904560 = {
+	 name = "Ekvtime Takaishivili"
+	 ideology = national_socialist
+	 loyalty = 1.00
+	 minister_of_security = crime_fighter
+	 start_date = 1936.1.1
+	 picture = M519038
+}
+904561 = {
+	 name = "Erich von Falkenhayn"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 chief_of_air = carpet_bombing_doctrine
+	 start_date = 1936.1.1
+	 picture = M519063
+}
+904562 = {
+	 name = "Filipp Makharadzhe"
+	 ideology = stalinist
+	 loyalty = 1.00
+	 foreign_minister = ideological_crusader
+	 start_date = 1936.1.1
+	 picture = M519020
+}
+904563 = {
+	 name = "Franz Biwer"
+	 ideology = national_socialist
+	 loyalty = 1.00
+	 chief_of_navy = indirect_approach_doctrine
+	 start_date = 1936.1.1
+	 picture = M519059
+}
+904564 = {
+	 name = "Gaguca de Bagration"
+	 ideology = national_socialist
+	 loyalty = 1.00
+	 chief_of_staff = school_of_manoeuvre
+	 start_date = 1936.1.1
+	 picture = M519049
+}
+904565 = {
+	 name = "Georgi Eliava"
+	 ideology = stalinist
+	 loyalty = 1.00
+	 armament_minister = theoretical_scientist
+	 minister_of_intelligence = technical_specialist
+	 start_date = 1936.1.1
+	 picture = M519004
+}
+904566 = {
+	 name = "Gheorghe Gvazava"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 armament_minister = laissez_faires_capitalist
+	 start_date = 1936.1.1
+	 picture = M519029
+}
+904567 = {
+	 name = "Gigla Demnadzhe"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 chief_of_navy = decisive_naval_battle_doctrine
+	 start_date = 1936.1.1
+	 picture = M519058
+}
+904568 = {
+	 name = "Grigol T. Robakidzhe"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 chief_of_navy = open_seas_doctrine
+	 start_date = 1936.1.1
+	 picture = M519057
+}
+904569 = {
+	 name = "Gyrogy Sturua"
+	 ideology = stalinist
+	 loyalty = 1.00
+	 minister_of_intelligence = logistics_specialist
+	 start_date = 1936.1.1
+	 picture = M519039
+}
+904570 = {
+	 name = "H.R.H. Andriy II. Chivadjeze"
+	 ideology = national_socialist
+	 loyalty = 1.00
+	 head_of_state = stern_imperialist
+	 start_date = 1936.1.1
+	 picture = M519014
+}
+904571 = {
+	 name = "H.R.H. Irakly IV. Bagration de Moukhani"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 head_of_state = autocratic_charmer
+	 start_date = 1936.1.1
+	 picture = M519013
+}
+904572 = {
+	 name = "H.R.H. Margaretha I. Abkhazi"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 head_of_state = popular_figurehead
+	 start_date = 1936.1.1
+	 picture = M519012
+}
+904573 = {
+	 name = "Igor D. Tcherniakhovski"
+	 ideology = stalinist
+	 loyalty = 1.00
+	 chief_of_army = elastic_defence_doctrine
+	 start_date = 1936.1.1
+	 picture = M519008
+}
+904574 = {
+	 name = "Ivane Javakhishvili"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 head_of_government = silent_workhorse
+	 start_date = 1936.1.1
+	 picture = M519017
+}
+904575 = {
+	 name = "Kakutsa Cholokashvili"
+	 ideology = social_democrat
+	 loyalty = 1.00
+	 chief_of_staff = school_of_manoeuvre
+	 start_date = 1936.1.1
+	 picture = M519046
+}
+904576 = {
+	 name = "Abbot Ephrem Korselidzhe"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 foreign_minister = apologetic_clerk
+	 start_date = 1936.1.1
+	 picture = M519022
+}
+904577 = {
+	 name = "Konstantine Abkhazi"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 chief_of_staff = school_of_fire_support
+	 start_date = 1936.1.1
+	 picture = M519048
+}
+904578 = {
+	 name = "Kote Andronikashvili"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 chief_of_air = naval_aviation_doctrine
+	 start_date = 1936.1.1
+	 picture = M519062
+}
+904579 = {
+	 name = "Alexander Nikuradze"
+	 ideology = national_socialist
+	 loyalty = 1.00
+	 foreign_minister = great_compromiser
+	 start_date = 1936.1.1
+	 picture = M519025
+}
+904580 = {
+	 name = "Levan Razikashvili"
+	 ideology = social_democrat
+	 loyalty = 1.00
+	 chief_of_army = decisive_battle_doctrine
+	 start_date = 1936.1.1
+	 picture = M519051
+}
+904581 = {
+	 name = "Mamia Orakhelashvili"
+	 ideology = stalinist
+	 loyalty = 1.00
+	 chief_of_air = naval_aviation_doctrine
+	 start_date = 1936.1.1
+	 picture = M519010
+}
+904582 = {
+	 name = "Markoz Tugushi"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 minister_of_intelligence = dismal_enigma
+	 start_date = 1936.1.1
+	 picture = M519043
+}
+904583 = {
+	 name = "Mehmed Abashidzhe"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 minister_of_security = back_stabber
+	 start_date = 1936.1.1
+	 picture = M519036
+}
+904584 = {
+	 name = "Merab Kostava"
+	 ideology = national_socialist
+	 loyalty = 1.00
+	 minister_of_intelligence = industrial_specialist
+	 start_date = 1936.1.1
+	 picture = M519044
+}
+904585 = {
+	 name = "Mihael Akhmeteli"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 minister_of_intelligence = logistics_specialist
+	 start_date = 1936.1.1
+	 picture = M519042
+}
+904586 = {
+	 name = "Mikhail von Tsereteli"
+	 ideology = national_socialist
+	 loyalty = 1.00
+	 head_of_government = happy_amateur
+	 start_date = 1936.1.1
+	 picture = M519018
+}
+904587 = {
+	 name = "Mikheil Javakhishvili"
+	 ideology = social_democrat
+	 loyalty = 1.00
+	 head_of_government = naive_optimist
+	 start_date = 1936.1.1
+	 picture = M519015
+}
+904588 = {
+	 name = "Mukhran Niniadzhe"
+	 ideology = stalinist
+	 loyalty = 1.00
+	 foreign_minister = iron_fisted_brute
+	 start_date = 1936.1.1
+	 picture = M519019
+}
+904589 = {
+	 name = "Niko Nikoladzhe"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 chief_of_army = guns_and_butter_doctrine
+	 start_date = 1936.1.1
+	 picture = M519053
+}
+904590 = {
+	 name = "Nikola Nakashidzhe"
+	 ideology = stalinist
+	 loyalty = 1.00
+	 minister_of_intelligence = industrial_specialist
+	 start_date = 1936.1.1
+	 picture = M519006
+}
+904591 = {
+	 name = "Nikoloz Kartsivadzhe"
+	 ideology = social_democrat
+	 loyalty = 1.00
+	 minister_of_intelligence = political_specialist
+	 start_date = 1936.1.1
+	 picture = M519041
+}
+904592 = {
+	 name = "Noe Jordania"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 minister_of_security = efficient_sociopath
+	 start_date = 1936.1.1
+	 picture = M519035
+}
+904593 = {
+	 name = "Patriarch Kalistrate Tsintadzhe"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 foreign_minister = iron_fisted_brute
+	 start_date = 1936.1.1
+	 picture = M519024
+}
+904594 = {
+	 name = "Raphael Ivanitski-Ingilo"
+	 ideology = social_democrat
+	 loyalty = 1.00
+	 head_of_state = pig_headed_isolationist
+	 start_date = 1936.1.1
+	 picture = M519011
+}
+904595 = {
+	 name = "Revaz Gabashvili"
+	 ideology = national_socialist
+	 loyalty = 1.00
+	 armament_minister = infantry_proponent
+	 start_date = 1936.1.1
+	 picture = M519032
+}
+904596 = {
+	 name = "Sekhnia Utchashvili"
+	 ideology = stalinist
+	 loyalty = 1.00
+	 chief_of_staff = school_of_defence
+	 start_date = 1936.1.1
+	 picture = M519045
+}
+904597 = {
+	 name = "Sergei Kavtaradzhe"
+	 ideology = stalinist
+	 loyalty = 1.00
+	 minister_of_security = efficient_sociopath
+	 start_date = 1936.1.1
+	 picture = M519033
+}
+904598 = {
+	 name = "Sergo Ordzhonikidzhe"
+	 ideology = stalinist
+	 loyalty = 1.00
+	 minister_of_security = prince_of_terror
+	 start_date = 1936.1.1
+	 picture = M519005
+}
+904599 = {
+	 name = "Shalva Amirejbi"
+	 ideology = social_democrat
+	 loyalty = 1.00
+	 foreign_minister = apologetic_clerk
+	 start_date = 1936.1.1
+	 picture = M519021
+}
+904600 = {
+	 name = "Shalva Karumidzhe"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 chief_of_staff = school_of_mass_combat
+	 start_date = 1936.1.1
+	 picture = M519047
+}
+904601 = {
+	 name = "Shalva Maglakelidzhe"
+	 ideology = national_socialist
+	 loyalty = 1.00
+	 chief_of_army = static_defence_doctrine
+	 start_date = 1936.1.1
+	 picture = M519054
+}
+904602 = {
+	 name = "Stalva Eliavi"
+	 ideology = social_democrat
+	 loyalty = 1.00
+	 minister_of_security = prince_of_terror
+	 start_date = 1936.1.1
+	 picture = M519034
+}
+904603 = {
+	 name = "Tedore Sakhoia"
+	 ideology = social_democrat
+	 loyalty = 1.00
+	 armament_minister = resource_industrialist
+	 start_date = 1936.1.1
+	 picture = M519028
+}
+904604 = {
+	 name = "Valentin S. Oschepov"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 foreign_minister = biased_intellectual
+	 start_date = 1936.1.1
+	 picture = M519023
+}
+904605 = {
+	 name = "Valerian Bakradzhe"
+	 ideology = stalinist
+	 loyalty = 1.00
+	 chief_of_navy = base_control_doctrine
+	 start_date = 1936.1.1
+	 picture = M519055
+}
+904606 = {
+	 name = "Vasil G. Tsereteli"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 armament_minister = air_to_ground_proponent
+	 start_date = 1936.1.1
+	 picture = M519031
+}
+904607 = {
+	 name = "Wardan Tsulukidzhe"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 chief_of_army = elastic_defence_doctrine
+	 start_date = 1936.1.1
+	 picture = M519052
+}
+904608 = {
+	 name = "dr. Ivane Tsitsishvili"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 head_of_government = backroom_backstabber
+	 start_date = 1936.1.1
+	 picture = M519016
+}
+904609 = {
+	 name = "dr. Samson Pirtskhalava"
+	 ideology = social_democrat
+	 loyalty = 1.00
+	 chief_of_navy = power_projection_doctrine
+	 chief_of_air = air_superiority_doctrine
+	 start_date = 1936.1.1
+	 picture = M519056
+}}
+
+

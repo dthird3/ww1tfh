@@ -1,0 +1,183 @@
+
+## albania revolution
+country_event = {
+
+		id = 100119
+
+		major = yes
+		
+		trigger = {
+			tag = TUR
+			NOT = { exists = ALB }
+			exists = MTN
+			exists = BUL
+			exists = GRE
+			date = 1912.9.20
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = yes
+
+		title = "TURE2"
+		desc = "desc_TURE2"
+		picture = "TURP2"
+
+		option = {
+			name = "opta_TURE2"
+			ai_chance = { factor = 100 }
+			4716 = { secede_province = ALB }
+			4608 = { secede_province = ALB }
+			4608 = { infantry_brigade = current }
+			4608 = { infantry_brigade = current }
+			4608 = { infantry_brigade = current }
+			4608 = { infantry_brigade = current }
+			4608 = { infantry_brigade = current }
+			4608 = { infantry_brigade = current }
+			4608 = { infantry_brigade = current }
+			4608 = { infantry_brigade = current }
+			4608 = { infantry_brigade = current }
+			4608 = { infantry_brigade = current }
+			4608 = { infantry_brigade = current }
+			4608 = { infantry_brigade = current }
+			4608 = { infantry_brigade = current }
+			4608 = { infantry_brigade = current }
+			4608 = { infantry_brigade = current }
+			4608 = { infantry_brigade = current }
+			4608 = { infantry_brigade = current }
+			4608 = { infantry_brigade = current }
+			4608 = { infantry_brigade = current }
+			4608 = { infantry_brigade = current }
+			4608 = { infantry_brigade = current }
+			4608 = { infantry_brigade = current }
+			4608 = { infantry_brigade = current }
+			4608 = { infantry_brigade = current }
+			4716 = { infantry_brigade = current }
+			4716 = { infantry_brigade = current }
+			4716 = { infantry_brigade = current }
+			4716 = { infantry_brigade = current }
+			4716 = { infantry_brigade = current }
+			4716 = { infantry_brigade = current }
+			4716 = { infantry_brigade = current }
+			4716 = { infantry_brigade = current }
+			4716 = { infantry_brigade = current }
+			4716 = { infantry_brigade = current }
+			4716 = { infantry_brigade = current }
+			4716 = { infantry_brigade = current }
+			ALB = { capital = 4663 }
+			ALB = { manpower = 150 }
+			ALB = { supplies = 2000 }
+			TUR = {	set_country_flag = alb_war }
+			ALB = {	war = {	
+					target = TUR
+					attacker_goal = { casus_belli=aquire_all_cores }
+					}
+				}
+		}
+	
+}
+
+country_event = {
+
+		id = 100120
+
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+
+		title = "TURE3"
+		desc = "desc_TURE3"
+		picture = "TURP3"
+
+		option = {
+			name = "opta_TURE3"
+			ai_chance = { factor = 100 }
+			TUR = { set_country_flag = form_albania }
+			capital = 4663
+		}
+	
+}
+
+country_event = {
+	id = 2084503	# Evacuate through Albania ?
+		
+	fire_only_once = yes
+	
+	trigger = {
+			tag = SER
+			NOT = { SER = { controls = 4368 } }
+			NOT = { SER = { controls = 3912 } }
+			OR = {
+				SER = { controls = 4495 }
+				SER = { controls = 4609 }
+			}
+			exists = ALB
+			faction = allies
+			war_with = AUH
+			NOT = { SER = { war_with = ALB } }
+			NOT = { SER = { alliance_with = ALB } }
+			NOT = { ALB = { military_access = SER } }
+			NOT = { SER = { has_country_flag = retreat_alb } }
+	}
+   
+	title = "EVT1914_2084503_NAME"
+	desc = "EVT1914_2084503_DESC" 
+	picture = "news_paper"
+
+	option = {
+		ai_chance = { factor = 100 }
+		name = "EVT1914_2084503_ACTIONA" # Retreat into Albania
+		ALB = { country_event = 2058500 }
+		SER = { set_country_flag = retreat_alb }
+	}
+	option = { 
+		name = "EVT1914_2084503_ACTIONB" # Do not retreat into Albania
+	}
+}
+
+country_event = {
+   id = 2058500
+   
+   	
+	is_triggered_only = yes
+		
+	fire_only_once = yes
+   
+   title = "EVT1914_2058500_NAME"
+   desc = "EVT1914_2058500_DESC" 
+   picture = "foreign_volunteers"
+
+   option = {
+		name = "EVT1914_2058500_ACTIONA"
+		ai_chance = { factor = 100 }
+		SER = { country_event = 2084504 }
+		SER = { military_access = ALB } 
+   }
+   option = {
+		name = "EVT1914_2058500_ACTIONB" # No, resist!
+war = {
+	target = SER
+	attacker_goal = { casus_belli = conquer }
+	defender_goal = { casus_belli = conquer }
+}
+		join_faction = axis
+   }
+}
+
+country_event = {
+	id = 2084504
+		
+	is_triggered_only = yes
+		
+	fire_only_once = yes
+   
+	title = "EVT1914_2084504_NAME"
+	desc = "EVT1914_2084504_DESC" 
+	picture = "news_paper"
+
+	option = {
+		name = "ACTION_NAME_GREAT" #Great !
+   }
+}

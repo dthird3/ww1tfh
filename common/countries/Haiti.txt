@@ -1,0 +1,727 @@
+color = { 145  188  196 }
+graphical_culture = Generic
+
+default_templates = {
+	generic_infantry = {
+		infantry_brigade
+		infantry_brigade
+		infantry_brigade
+	}
+	generic_milita = {
+		militia_brigade
+		militia_brigade
+		militia_brigade
+	}
+	generic_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+}
+
+unit_names = {
+
+armor_brigade = { 
+"1ère Division Cuirassée 'Marat'" "2e Division Cuirassée Haitien" "3e Division Cuirassée Haitien" "4e Division Cuirassée Haitien" "5e Division Cuirassée Haitien" "6e Division Cuirassée Haitien"
+} 
+battlecruiser = { 
+"Citoyens de Haiti" "Port au Prince"
+} 
+dreadnaught = { 
+"Citoyens de Haiti" "Port au Prince"
+} 
+bergsjaeger_brigade = { 
+"27e Div. de Montagné 'Les Jacobins'" "30e Division de Montagné" "31e Division de Montagné" "64e Division de Montagné" "66e Division de Montagné" "65e Division de Montagné"
+} 
+carrier = { 
+"Republique de Haiti" "Napoleon"
+} 
+cavalry_brigade = { 
+"1ère Division de Cavalerie 'Robespierre'" "2e Division de Cavalerie Haitien" "3e Division de Cavalerie Haitien" "4e Division de Cavalerie Haitien" "5e Division de Cavalerie Haitien"
+} 
+destroyer = { 
+"Baron Samedi et Groupe" "Calypso et Groupe" "Reine Mojo et Groupe" "Aywe et Groupe" "Dr.John et Groupe"
+} 
+garrison_brigade = { 
+"10e Division d'Infanterie Haitien" "11e Division d'Infanterie Haitien" "13e Division d'Infanterie Haitien" "16e Division d'Infanterie Haitien" "18e Division d'Infanterie Haitien" "19e Division d'Infanterie Haitien" "20e Division d'Infanterie Haitien"
+} 
+heavy_cruiser = { 
+"Jérémie" "Port Sali" "Cap Haitien" "Port de Paix" "Jean Rabel"
+} 
+hq_brigade = { 
+"1ère Armée Haitien" "2e Armée Haitien" "3e Armée Haitien"
+} 
+infantry_brigade = { 
+"1ère Division d'Infanterie Haitien" "2e Division d'Infanterie Haitien" "3e Division d'Infanterie Haitien" "4e Division d'Infanterie Haitien" "6e Division d'Infanterie Haitien"
+} 
+interceptor = { 
+"Groupe de Chasse 1" "Groupe de Chasse 2" "Groupe de Chasse 3" "Groupe de Chasse 4" "Groupe de Chasse 5"
+} 
+light_armor_brigade = { 
+"1ère Division Cuirassée 'Marat'" "2e Division Cuirassée Haitien" "3e Division Cuirassée Haitien" "4e Division Cuirassée Haitien" "5e Division Cuirassée Haitien" "6e Division Cuirassée Haitien"
+} 
+light_cruiser = { 
+"Jérémie" "Port Sali" "Cap Haitien" "Port de Paix" "Jean Rabel"
+} 
+marine_brigade = { 
+"1ère Division d'Infanterie Maritimes" "2e Division d'Infanterie Maritimes" "3e Division d'Infanterie Maritimes" "4e Division d'Infanterie Maritimes" "5e Division d'Infanterie Maritimes"
+} 
+militia_brigade = { 
+"1ère Division de Citoyens du Haiti" "2e Division de Citoyens du Haiti" "3e Division de Citoyens du Haiti" "4e Division de Citoyens du Haiti" "5e Division de Citoyens du Haiti" "6e Division de Citoyens du Haiti" "7e Division de Citoyens du Haiti"
+} 
+submarine = { 
+"Baka et Groupe" "Osun et Groupe" "Dambala et Groupe" "Ogu Bodagris et Groupe" "Erinle et Groupe"
+} 
+tactical_bomber = { 
+"Groupe de Bombardèment Tactique 1" "Groupe de Bombardèment Tactique 2" "Groupe de Bombardèment Tactique 3" "Groupe de Bombardèment Tactique 6" "Groupe de Bombardèment Tactique 10"
+} 
+transport_ship = { 
+"1ère Flottille de Transport" "2e Flottille de Transport" "3e Flottille de Transport" "4e Flottille de Transport" "5e Flottille de Transport"
+}
+
+}
+
+ministers = {
+	999965 = {
+		name = "François C. Antoine Simon"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = HAIM1
+		head_of_state = pig_headed_isolationist
+		start_date = 1910.1.1
+	}
+350003 = {
+name = "Albert Blanchet"
+ideology = social_conservative
+loyalty = 1.00
+picture = M78003
+head_of_government = happy_amateur
+foreign_minister = apologetic_clerk
+start_date = 1933.1.1
+}
+
+350009 = {
+name = "Alfred Nemours"
+ideology = social_conservative
+loyalty = 1.00
+picture = M78009
+chief_of_navy = open_seas_doctrine
+start_date = 1933.1.1
+}
+
+350080 = {
+name = "André Sainté Frederic"
+ideology = social_liberal
+loyalty = 1.00
+picture = M78106
+chief_of_navy = power_projection_doctrine
+chief_of_air = naval_aviation_doctrine
+start_date = 1937.1.1
+}
+
+350030 = {
+name = "Andre Dumont"
+ideology = social_liberal
+loyalty = 1.00
+picture = M78052
+foreign_minister = iron_fisted_brute
+minister_of_intelligence = naval_intelligence_specialist
+chief_of_staff = school_of_manoeuvre
+chief_of_army = decisive_battle_doctrine
+start_date = 1943.1.1
+}
+
+350072 = {
+name = "Antioche Benot"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M78027
+chief_of_staff = school_of_defence
+start_date = 1937.1.1
+}
+
+350053 = {
+name = "Antoine Levelt"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M78075
+minister_of_security = silent_lawyer
+minister_of_intelligence = logistics_specialist
+chief_of_staff = school_of_manoeuvre
+chief_of_army = armoured_spearhead_doctrine
+chief_of_air = carpet_bombing_doctrine
+start_date = 1946.1.1
+}
+
+350042 = {
+name = "Armand Ouellet"
+ideology = social_liberal
+loyalty = 1.00
+picture = M78064
+armament_minister = administrative_genius
+start_date = 1946.1.1
+}
+
+350047 = {
+name = "Auguste Bonamy"
+ideology = social_conservative
+loyalty = 1.00
+picture = M78069
+minister_of_security = silent_lawyer
+start_date = 1941.1.1
+}
+
+350054 = {
+name = "Belmeau Max-Pierre"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M78076
+minister_of_security = back_stabber
+minister_of_intelligence = logistics_specialist
+chief_of_air = vertical_envelopment_doctrine
+start_date = 1937.1.1
+}
+
+350086 = {
+name = "Charles H. Forbin"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M78030
+chief_of_air = air_superiority_doctrine
+start_date = 1946.1.1
+}
+
+350116 = {
+name = "Charles Zamor"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+minister_of_intelligence = logistics_specialist
+chief_of_staff = school_of_manoeuvre
+chief_of_army = elastic_defence_doctrine
+chief_of_navy = power_projection_doctrine
+chief_of_air = carpet_bombing_doctrine
+start_date = 1910.1.1
+}
+
+350035 = {
+name = "Clement Jumelle"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M78057
+foreign_minister = apologetic_clerk
+armament_minister = air_superiority_proponent
+start_date = 1946.1.1
+}
+
+350117 = {
+name = "Constantin Benoit"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8001
+minister_of_intelligence = naval_intelligence_specialist
+start_date = 1910.1.1
+}
+
+350023 = {
+name = "Daniel Fignole"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M78045
+head_of_government = political_protege
+minister_of_security = silent_lawyer
+start_date = 1946.1.1
+}
+
+350016 = {
+name = "Demosthenes Calixte"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M78037
+head_of_state = popular_figurehead
+minister_of_intelligence = political_specialist
+start_date = 1946.1.1
+}
+
+350109 = {
+name = "DiogÌÜne Délinois"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+armament_minister = strategic_air_proponent
+start_date = 1910.1.1
+}
+
+350027 = {
+name = "dr. Georges Rigaud"
+ideology = social_conservative
+loyalty = 1.00
+picture = M78049
+foreign_minister = biased_intellectual
+minister_of_intelligence = logistics_specialist
+start_date = 1946.1.1
+}
+
+350013 = {
+name = "Dumarsais Estimé"
+ideology = social_liberal
+loyalty = 1.00
+picture = M78034
+head_of_state = popular_figurehead
+head_of_government = flamboyant_tough_guy
+minister_of_security = back_stabber
+start_date = 1937.1.1
+}
+
+350118 = {
+name = "Edmond Dupuy"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8002
+minister_of_intelligence = technical_specialist
+start_date = 1910.1.1
+}
+
+350111 = {
+name = "Edmond Lespinasse"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8003
+minister_of_security = back_stabber
+start_date = 1910.1.1
+}
+
+350119 = {
+name = "Edmond Polynice"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+chief_of_staff = school_of_manoeuvre
+chief_of_army = guns_and_butter_doctrine
+chief_of_navy = base_control_doctrine
+chief_of_air = vertical_envelopment_doctrine
+start_date = 1910.1.1
+}
+
+350112 = {
+name = "Edouard Latortue"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8004
+minister_of_security = crooked_kleptocrat
+start_date = 1910.1.1
+}
+
+350004 = {
+name = "Emilie Lescot"
+ideology = social_conservative
+loyalty = 1.00
+picture = M78004
+head_of_state = resigned_generalissimo
+head_of_government = old_general
+foreign_minister = general_staffer
+armament_minister = infantry_proponent
+minister_of_security = man_of_the_people
+chief_of_staff = school_of_fire_support
+chief_of_army = static_defence_doctrine
+start_date = 1933.1.1
+}
+
+350107 = {
+name = "Ermane Robin"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+armament_minister = administrative_genius
+start_date = 1910.1.1
+}
+
+350110 = {
+name = "Ernest Laporte"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8005
+armament_minister = resource_industrialist
+start_date = 1910.1.1
+}
+
+350078 = {
+name = "Ernst Severe"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M78028
+chief_of_army = guns_and_butter_doctrine
+start_date = 1937.1.1
+}
+
+350108 = {
+name = "F. Baufossé Laroche"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+armament_minister = laissez_faires_capitalist
+start_date = 1910.1.1
+}
+
+350015 = {
+name = "F. d'Orleans Juste Constant"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M78021
+head_of_state = insignificant_layman
+head_of_government = happy_amateur
+foreign_minister = biased_intellectual
+armament_minister = laissez_faires_capitalist
+start_date = 1937.1.1
+}
+
+350115 = {
+name = "Fercy Chatelain"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8006
+minister_of_security = back_stabber
+start_date = 1910.1.1
+}
+
+350014 = {
+name = "Franck Lavaud"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M78035
+head_of_state = resigned_generalissimo
+chief_of_staff = school_of_psychology
+chief_of_army = elastic_defence_doctrine
+start_date = 1946.1.1
+}
+
+350041 = {
+name = "Frederic Doret"
+ideology = social_liberal
+loyalty = 1.00
+picture = M78063
+armament_minister = resource_industrialist
+start_date = 1941.1.1
+}
+
+350010 = {
+name = "G.Edouard Roy"
+ideology = social_conservative
+loyalty = 1.00
+picture = M78010
+chief_of_air = army_aviation_doctrine
+start_date = 1933.1.1
+}
+
+350104 = {
+name = "Gaston Dalencourt"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+foreign_minister = apologetic_clerk
+start_date = 1910.1.1
+}
+
+350024 = {
+name = "Georges Léger"
+ideology = social_conservative
+loyalty = 1.00
+picture = M78046
+foreign_minister = the_cloak_n_dagger_schemer
+chief_of_navy = base_control_doctrine
+start_date = 1933.1.1
+}
+
+350049 = {
+name = "Gusley Vildrouin"
+ideology = social_conservative
+loyalty = 1.00
+picture = M78071
+minister_of_security = back_stabber
+minister_of_intelligence = logistics_specialist
+start_date = 1946.1.1
+}
+
+350103 = {
+name = "Jacques Nicolas Léger"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8007
+foreign_minister = biased_intellectual
+start_date = 1910.1.1
+}
+
+350029 = {
+name = "Jacques Wadestrand"
+ideology = social_liberal
+loyalty = 1.00
+picture = M78051
+foreign_minister = great_compromiser
+start_date = 1941.1.1
+}
+
+350038 = {
+name = "Jean Francois Duvalier"
+ideology = social_conservative
+loyalty = 1.00
+picture = M78015
+armament_minister = administrative_genius
+minister_of_security = efficient_sociopath
+start_date = 1945.1.1
+}
+
+350090 = {
+name = "Joseph Davilmar Théodore"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+head_of_state = weary_stiff_neck
+head_of_government = ambitious_union_boss
+start_date = 1910.1.1
+}
+
+350057 = {
+name = "Joseph Louis Borno"
+ideology = social_conservative
+loyalty = 1.00
+picture = M78079
+minister_of_intelligence = technical_specialist
+start_date = 1937.1.1
+}
+
+350105 = {
+name = "Justin Bar"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8008
+foreign_minister = great_compromiser
+start_date = 1910.1.1
+}
+
+350087 = {
+name = "Leon Laleau"
+ideology = social_conservative
+loyalty = 1.00
+picture = M78115
+foreign_minister = ideological_crusader
+start_date = 1938.1.1
+}
+
+350093 = {
+name = "Louis Borno"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8000
+head_of_state = ruthless_powermonger
+head_of_government = happy_amateur
+start_date = 1915.1.1
+}
+
+350012 = {
+name = "Louis Dejoie"
+ideology = social_conservative
+loyalty = 1.00
+picture = M78033
+head_of_state = die_hard_reformer
+head_of_government = backroom_backstabber
+armament_minister = laissez_faires_capitalist
+start_date = 1946.1.1
+}
+
+350037 = {
+name = "Luc Dominique"
+ideology = social_conservative
+loyalty = 1.00
+picture = M78014
+armament_minister = tank_proponent
+start_date = 1941.1.1
+}
+
+350005 = {
+name = "Luis Dabtes Bellegarde"
+ideology = social_conservative
+loyalty = 1.00
+picture = M78005
+armament_minister = corrupt_kleptocrat
+minister_of_security = crooked_kleptocrat
+minister_of_intelligence = industrial_specialist
+start_date = 1933.1.1
+}
+
+350025 = {
+name = "Marcel Fombrun"
+ideology = social_conservative
+loyalty = 1.00
+picture = M78013
+foreign_minister = iron_fisted_brute
+start_date = 1941.1.1
+}
+
+350040 = {
+name = "Max Charlmes"
+ideology = social_liberal
+loyalty = 1.00
+picture = M78062
+armament_minister = strategic_air_proponent
+minister_of_security = crooked_kleptocrat
+minister_of_intelligence = technical_specialist
+start_date = 1937.1.1
+}
+
+350045 = {
+name = "Michel Corvington Raymond"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M78024
+armament_minister = theoretical_scientist
+start_date = 1941.1.1
+}
+
+350033 = {
+name = "Mirko Chandler"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M78023
+foreign_minister = the_cloak_n_dagger_schemer
+start_date = 1937.1.1
+}
+
+350089 = {
+name = "Oreste Zamor"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8009
+head_of_state = die_hard_reformer
+head_of_government = naive_optimist
+chief_of_staff = school_of_mass_combat
+chief_of_army = guns_and_butter_doctrine
+chief_of_navy = power_projection_doctrine
+start_date = 1910.1.1
+}
+
+350083 = {
+name = "Pascalé B.G. Guillaume"
+ideology = social_liberal
+loyalty = 1.00
+picture = M78020
+chief_of_air = vertical_envelopment_doctrine
+start_date = 1937.1.1
+}
+
+350021 = {
+name = "Paul Magloire"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M78043
+head_of_state = ruthless_powermonger
+head_of_government = old_general
+chief_of_staff = school_of_mass_combat
+chief_of_army = guns_and_butter_doctrine
+start_date = 1946.1.1
+}
+
+350092 = {
+name = "Philippe Sudré Dartiguenave"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8010
+head_of_state = stern_imperialist
+head_of_government = silent_workhorse
+start_date = 1910.1.1
+}
+
+350081 = {
+name = "Raymond Gassner"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M78029
+chief_of_navy = power_projection_doctrine
+start_date = 1937.1.1
+}
+
+350064 = {
+name = "Rock Desroses"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M78026
+minister_of_intelligence = technical_specialist
+start_date = 1937.1.1
+}
+
+350006 = {
+name = "Sebastien de Arrondé"
+ideology = social_conservative
+loyalty = 1.00
+picture = M78006
+minister_of_intelligence = political_specialist
+chief_of_staff = school_of_manoeuvre
+start_date = 1933.1.1
+}
+
+350114 = {
+name = "Seymour Pradel"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8011
+minister_of_security = silent_lawyer
+start_date = 1910.1.1
+}
+
+350001 = {
+name = "Stenio Vincent"
+ideology = social_conservative
+loyalty = 1.00
+picture = M78001
+head_of_state = pig_headed_isolationist
+head_of_government = corporate_suit
+minister_of_security = crooked_kleptocrat
+start_date = 1933.1.1
+}
+
+350113 = {
+name = "Stephen Dorneval"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+minister_of_security = efficient_sociopath
+start_date = 1910.1.1
+}
+
+350106 = {
+name = "Tertullian Guilbeaud"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8012
+foreign_minister = iron_fisted_brute
+start_date = 1910.1.1
+}
+
+350031 = {
+name = "Timoléon Cesar Brutus"
+ideology = social_liberal
+loyalty = 1.00
+picture = M78053
+foreign_minister = ideological_crusader
+start_date = 1946.1.1
+}
+
+350055 = {
+name = "Victor Vivian"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M78025
+minister_of_security = efficient_sociopath
+start_date = 1941.1.1
+}
+
+350091 = {
+name = "Vilbrun Guillaume Sam"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8013
+head_of_state = power_hungry_demagogue
+head_of_government = political_protege
+start_date = 1910.1.1
+}
+
+
+}

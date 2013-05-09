@@ -1,0 +1,44 @@
+diplomatic_decisions = {
+	saf_release = {
+		potential = {
+			tag = ENG
+			has_country_flag = king_death_george
+			NOT = { ENG = { has_country_flag = saf_release } }
+		}
+		allow = {
+			war = no
+			date = 1910.5.31
+			}
+		effect = {
+			ENG = { country_event = 100111 } 
+			money = 100
+			manpower = 20
+			set_country_flag = saf_release
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	annex_cyprus = {
+		potential = {
+			tag = ENG
+			exists = yes
+			war_with = TUR
+			date = 1914.11.5
+			NOT = { ENG = { has_country_flag = cyprus} }
+		}
+		allow = {
+			5139 = { controlled_by = ENG } 
+			5172 = { controlled_by = ENG } 
+			}
+		effect = {
+			ENG = { country_event = 100151 } 
+			add_core = 5139
+			add_core = 5172
+			set_country_flag = cyprus
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+} 

@@ -1,0 +1,84 @@
+#country, from = occupier.
+on_surrender = 
+{
+	#10	= 503		#Italy
+	#10	= 519		#Italy, Germany is not at war
+	#10	= 504		#Vichy France
+	#10	= 505		#Spanish Civil War
+	#10	= 513		#Spanish Civil War
+	#10	= 506		#Finnish Winter War
+	#10	= 507		#Bitter Peace
+	#10	= 520		#Germany
+	#10	= 509		#Poland
+	#10	= 518		#Surrender by Vichy to Allies
+	#10	= 512		#Poland, Molotov-Ribbentrop pact
+	#10	= 524		#Danish surrender, form govt. in exile, UK controls Iceland & Greenland
+	#10	= 525		#Yugoslavian surrender, form govt. in exile
+	#10 	= 500		#generic surrender event if in faction
+	#10 	= 502		#generic surrender event if not in faction
+
+}
+
+#country = nuke dropper
+#from = province controller where nuke dropped
+#province = location where the bomb was dropped
+on_nuke_dropped =
+{
+	# TODO: add events here
+
+}
+
+on_battle_won = 
+{
+
+}
+
+on_battle_lost = 
+{
+
+}
+
+on_naval_battle_won = 
+{
+
+}
+
+on_naval_battle_lost =
+{
+	
+}
+
+on_air_battle_won = 
+{
+
+}
+
+on_air_battle_lost =
+{
+
+}
+
+on_encirclement =
+{
+
+}
+
+on_enemy_pride_sunk =
+{
+	10 = 400
+}
+
+on_our_pride_sunk =
+{
+	10 = 401
+}
+
+on_coup_success = 
+{
+	10 = 5057
+}
+
+on_coup_fail =
+{
+	10 = 5058
+}

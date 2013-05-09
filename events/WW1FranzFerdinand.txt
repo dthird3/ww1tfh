@@ -1,0 +1,224 @@
+
+
+ #### June 28 – Serb nationalist Gavrilo Princip assassinates Austrian Archduke Franz Ferdinand of Austria and his wife, Duchess Sophie, in Sarajevo.
+country_event = {
+
+		id = 100141
+		
+		major = yes
+
+		trigger = {
+			tag = AUH
+			exists = SER
+			exists = GER
+			war = no
+			date = 1914.6.28
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+
+		fire_only_once = yes
+
+		title = "HUNE1"
+		desc = "desc_HUNE1"
+		picture = "HUNP1"
+
+		option = {
+			name = "opta_HUNE1"
+			set_country_flag = murder_of_franz_ferdinand
+			dissent =  5
+			manpower = 50
+			TUR = { neutrality = -10 }
+			SER = { manpower = 30 }
+			threat = { who = all value = 20 } 
+			SER = { threat = { who = AUH value = 100 } }
+			kill_leader = 860049 #Add Ferdinand as minister
+			remove_minister = 860044 #Add Ferdinand as minister
+		}
+}
+
+#July 23 – Austria-Hungary presents Serbia with an unconditional ultimatum. (WAR DECLARED SERBIA)
+country_event = {
+
+		id = 100142
+		
+		major = yes
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		title = "AUHE1"
+		desc = "desc_AUHE1"
+		picture = "AUHP1"
+
+		option = {
+			name = "opta_AUHE1"
+			set_country_flag = serbian_ultamatium
+			threat = { who = all value = 20 } 
+			RUS = { country_event = 100143 }
+			AUH = {	war = {	
+					target = SER
+					attacker_goal = { casus_belli= conquer }
+					}
+				}
+		}
+	}
+	
+#July 29 – Russia orders full mobilization. (Austria joins axis)
+country_event = {
+
+		id = 100143
+		
+
+		major = yes
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		title = "RUSE1"
+		desc = "desc_RUSE1"
+		picture = "RUSP1"
+
+		option = {
+			name = "opta_RUSE1"
+			set_country_flag = russia_mobilized
+			manpower = 50
+			neutrality = -50
+			money = 100
+			threat = { who = all value = 10 } 
+			AUH = { country_event = 100144 }
+			ITA = { country_event = 999949 }
+			AUH = { any_owned = { limit = { is_core = UKR } add_core = RUS } }
+			AUH = { any_owned = { limit = { is_core = POL } add_core = RUS } }
+		}
+	}
+	
+	
+#### Dual Alliance (IN RESPONSE TO RUSSIA MOBILIZING)
+	country_event = {
+		
+		id = 100144
+		
+		major = yes
+		
+		is_triggered_only = yes
+		
+		title = "HUNE4"
+		desc = "desc_HUNE4"
+		picture = "HUNP4"
+
+		option = {
+			name = "For the Reich!"
+			ai_chance = { factor = 100 }
+			set_country_flag = austria_axis
+			manpower = 100
+			neutrality = -50
+			relation = { who = ENG value = -20 }
+			relation = { who = FRA value = -20 }
+			relation = { who = GER value = 50 }
+			relation = { who = ITA value = 10 }
+			TUR = { neutrality = -10 }
+			relation = { who = TUR value = 25 }
+			national_unity = 10
+		}
+}
+	
+#### Triple Alliance (Italy Refuses to join C Powers)
+	country_event = {
+		
+		id = 999949
+		
+		major = yes
+		
+		is_triggered_only = yes
+		
+		title = "ITAE2"
+		desc = "desc_ITAE2"
+		picture = "ITAP2"
+
+		option = {
+			name = "opta_ITAE2"
+			ai_chance = { factor = 100 }
+			neutrality = 70
+			relation = { who = ENG value = 50 }
+			relation = { who = FRA value = 50 }
+			relation = { who = FRA value = 30 }
+			relation = { who = GER value = -50 }
+			relation = { who = AUH value = -50 }
+			leave_alliance = AUH
+			leave_alliance = GER
+			threat = { who = AUH value = 30 } 
+			threat = { who = GER value = 30 }
+		}
+		option = {
+			name = "optb_ITAE2"
+			ai_chance = { factor = 0 }
+			neutrality = 5
+			relation = { who = ENG value = -50 }
+			relation = { who = FRA value = -50 }
+			relation = { who = FRA value = -30 }
+			relation = { who = GER value = 50 }
+			relation = { who = AUH value = 50 }
+			join_faction = axis
+			threat = { who = ENG value = 30 } 
+			threat = { who = FRA value = 30 } 
+			threat = { who = RUS value = 10 } 
+		}
+}
+
+
+#August 2 Schlieffen Plan. (declare war on luxembourg AND russia)
+country_event = {
+
+		id = 100145
+		
+		major = yes
+
+		trigger = {
+			tag = GER
+			exists = AUH
+			exists = LUX
+			date = 1914.8.2
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+
+		fire_only_once = yes
+
+		title = "GERE2"
+		desc = "desc_GERE2"
+		picture = "GERP2"
+
+		option = {
+			name = "opta_GERE2"
+			set_country_flag = germany_mobilize
+			neutrality = -50
+			manpower = 100
+			money = 100
+			threat = { who = all value = 10 } 
+			national_unity = 50
+			BEL = { join_faction = allies }
+			SER = { join_faction = allies }
+			#LUX = { join_faction = allies } never happened
+			war = {	
+				target = LUX
+				attacker_goal = { casus_belli = conquer }
+			}
+			war = {	
+				target = BEL
+				attacker_goal = { casus_belli = conquer }
+			}
+			war = {	
+				target = FRA
+				attacker_goal = { casus_belli = conquer }
+			}
+			#AUH = { war = { target = FRA } }
+			AUH = { country_event = 100147 }
+		}
+}

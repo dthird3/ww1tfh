@@ -1,0 +1,29 @@
+
+country_event = {
+
+		id = 100918
+
+		trigger = {
+			tag = ARG
+			ARG = { head_of_state = 165212 }
+			date = 1914.8.9
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = yes
+
+		title = "ARGE1"
+		desc = "desc_ARGE1"
+		picture = "ARGP1"
+
+		option = {
+			name = "opta_ARGE1"
+			ai_chance = { factor = 100 }
+			head_of_state = 165213 # Victorino de la Plaza
+			remove_minister  = 165212
+		}
+	
+}

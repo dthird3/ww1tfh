@@ -1,0 +1,59 @@
+
+#FALL OF GERMANY
+country_event = {
+		
+		id = 190002
+		
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		
+		major = yes
+		
+		title = "WARE2"
+		desc = "desc_WARE2"
+		picture = "WARP2"
+
+		option = {
+			name = "opta_WARE2"
+			ai_chance = { factor = 100 }
+			set_country_flag = war_over
+			
+			
+			
+			GER = { any_country = { limit = { war_with = GER } end_war = GER } }
+			GER = { leave_faction = axis }
+			GER = { any_owned = { limit = { is_core = UKR } secede_province = UKR } }
+			GER = { any_owned = { limit = { is_core = LAT } secede_province = LAT } }
+			GER = { any_owned = { limit = { is_core = LIT } secede_province = LIT } }
+			GER = { any_owned = { limit = { is_core = EST } secede_province = EST } }
+			GER = { any_owned = { limit = { is_core = ROM } secede_province = ROM } }
+			GER = { any_owned = { limit = { is_core = RUS } secede_province = RUS } }
+			GER = { any_owned = { limit = { is_core = POL } secede_province = POL } }
+			GER = { any_owned = { limit = { is_core = JAP } secede_province = JAP } }
+			GER = { any_owned = { limit = { is_core = AST } secede_province = AST } }
+			GER = { any_owned = { limit = { is_core = ENG } secede_province = ENG } }
+			GER = { any_owned = { limit = { is_core = FRA } secede_province = FRA } }
+			GER = { any_owned = { limit = { is_core = SAF } secede_province = SAF } }
+			GER = { any_owned = { limit = { is_core = DEN } secede_province = DEN } }
+			GER = { any_owned = { limit = { is_core = RUS } secede_province = RUS } }
+			GER = { any_owned = { limit = { is_core = SOV } secede_province = SOV } }
+			GER = { any_owned = { limit = { is_core = NZL } secede_province = NZL } }
+			UKR = { any_owned = { limit = { is_core = GER } remove_core = GER } }
+			AUH = { any_owned = { limit = { is_core = GER } remove_core = GER } }
+			
+			
+			ENG = { guarantee = GER }
+			GER = { neutrality = 100 }
+			any_country = {
+				limit = { faction = allies }
+				non_aggression_pact = GER
+			}
+			ENG = { threat = { who = GER value = -150 } }
+			FRA = { threat = { who = GER value = -150 } }
+			ITA = { threat = { who = GER value = -150 } }
+			RUS = { threat = { who = GER value = -150 } }
+			
+			6617 = { secede_province = NZL } 
+		}
+}

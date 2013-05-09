@@ -1,0 +1,1015 @@
+#September 1St. Petersburg, Russia changes its name to Petrograd.
+country_event = {
+		
+		id = 100149
+		
+		major = yes
+
+		trigger = {
+			tag = RUS
+			war = yes
+			date = 1914.9.1
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = yes
+		
+		title = "RUSE2"
+		desc = "desc_RUSE2"
+		picture = "RUSP2"
+
+		option = {
+			name = "opta_RUSE2"
+			ai_chance = { factor = 100 }
+			782 = { change_province_name = Petrograd }
+		}
+}
+#Rasputin
+country_event = {
+		
+		id = 100401
+		
+		major = yes
+
+		trigger = {
+			tag = RUS
+			war = yes
+			date = 1916.12.29
+			NOT = { has_country_flag = dual_power }
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = yes
+		
+		title = "rasp"
+		desc = "desc_rasp"
+		picture = "Rasputin"
+
+		option = {
+			name = "opta_rasp"
+			ai_chance = { factor = 100 }
+			dissent = 5
+			national_unity = -2
+		}
+}
+#Abdication
+country_event = {
+		
+		id = 100402
+		
+		major = yes
+
+		trigger = {
+			tag = RUS
+			war = yes
+			NOT = { has_country_flag = dual_power }
+			OR = {
+				AND = {
+					date = 1917.3.15
+					OR = {
+						NOT = { controls = 7307 } #Baku
+						NOT = { controls = 2223 } #Kyiv
+						NOT = { controls = 1928 } #Warsaw
+						NOT = { controls = 1178 } #Riga
+					}
+				}
+				AND = {
+					date = 1916.7.1
+					OR = {
+						AND = {
+							NOT = { controls = 7307 } #Baku
+							NOT = { controls = 2223 } #Kyiv
+						}
+						AND = {
+							NOT = { controls = 7307 } #Baku
+							NOT = { controls = 1928 } #Warsaw
+						}
+						AND = {
+							NOT = { controls = 7307 } #Baku
+							NOT = { controls = 1178 } #Riga
+						}
+						AND = {
+							NOT = { controls = 2223 } #Kyiv
+							NOT = { controls = 1928 } #Warsaw
+						}
+						AND = {
+							NOT = { controls = 2223 } #Kyiv
+							NOT = { controls = 1178 } #Riga
+						}
+						AND = {
+							NOT = { controls = 1928 } #Warsaw
+							NOT = { controls = 1178 } #Riga
+						}
+					}
+				}
+				AND = {
+					date = 1916.1.1
+					OR = {
+						AND = {
+							NOT = { controls = 7307 } #Baku
+							NOT = { controls = 2223 } #Kyiv
+							NOT = { controls = 1928 } #Warsaw
+						}
+						AND = {
+							NOT = { controls = 7307 } #Baku
+							NOT = { controls = 2223 } #Kyiv
+							NOT = { controls = 1178 } #Riga
+						}
+						AND = {
+							NOT = { controls = 7307 } #Baku
+							NOT = { controls = 1928 } #Warsaw
+							NOT = { controls = 1178 } #Riga
+						}
+						AND = {
+							NOT = { controls = 2223 } #Kyiv
+							NOT = { controls = 1928 } #Warsaw
+							NOT = { controls = 1178 } #Riga
+						}
+					}
+				}
+			}
+		}
+		
+		mean_time_to_happen = {
+			months = 6
+		}
+		
+		fire_only_once = yes
+		
+		title = "abdic"
+		desc = "desc_abdic"
+		picture = "abdic"
+
+		option = {
+			name = "opta_abdic"
+			ai_chance = { factor = 100 }
+			dissent = 10
+			national_unity = -10
+			remove_minister = 515076
+			head_of_state = 515127
+			set_country_flag = dual_power
+			set_country_flag = bolsheviks		
+			add_country_modifier = {
+				name = "dual_power"
+				duration = 180
+			}
+		}
+}
+
+#FALL OF RUSSIA
+country_event = {
+		
+		id = 190001
+		
+
+		trigger = {
+			tag = RUS
+			war = yes
+			NOT = { has_country_modifier = dual_power }
+			has_country_flag = bolsheviks
+			OR = {
+				NOT = { controls = 7307 } #Baku
+				NOT = { controls = 2223 } #Kyiv
+				NOT = { controls = 1928 } #Warsaw
+				NOT = { controls = 1178 } #Riga
+			}
+		}
+		
+		mean_time_to_happen = {
+			months = 1
+		}
+		
+		fire_only_once = yes
+		
+		major = yes
+		
+		title = "WARE1"
+		desc = "desc_WARE1"
+		picture = "WARP1"
+
+		option = {
+			name = "opta_WARE1"
+			ai_chance = { factor = 100 }
+			set_country_flag = war_over
+			dissent = 10
+			GER = { dissent = 5 }
+			RUS = { any_country = { limit = { war_with = RUS } end_war = RUS } }
+			RUS = { leave_faction = allies }
+			AUH = { any_owned = { limit = { is_core = RUS } remove_core = RUS } }
+			RUS = { any_owned = { limit = { is_core = TUR } secede_province = TUR } }
+			RUS = { any_owned = { limit = { is_core = UKR } secede_province = AUH } }
+			RUS = { any_owned = { limit = { is_core = ROM } secede_province = AUH } }
+			RUS = { any_owned = { limit = { is_core = GEO } secede_province = TUR } }
+			RUS = { any_owned = { limit = { is_core = ARM } secede_province = TUR } }
+			RUS = { any_owned = { limit = { is_core = POL } secede_province = GER } }
+			RUS = { any_owned = { limit = { is_core = FIN } secede_province = FIN } }
+			RUS = { any_owned = { limit = { is_core = LAT } secede_province = GER } }
+			RUS = { any_owned = { limit = { is_core = LIT } secede_province = GER } }
+			RUS = { any_owned = { limit = { is_core = EST } secede_province = GER } }
+			RUS = { any_owned = { limit = { is_core = ROM } secede_province = GER } }
+			poland_danzig = { add_core = POL }
+			western_poland_region = { add_core = POL }
+			1306 = { add_core = LIT }
+			9021 = { add_core = AZB }
+			8946 = { add_core = AZB }
+			SOV_7289 = { add_core = AZB }
+			SOV_3721 = { add_core = AZB }
+			RUS = { any_owned = { limit = { is_core = AZB } secede_province = TUR } }
+			RUS = { SOV_2113 = { secede_province = GER } }
+			RUS = { SOV_1991 = { secede_province = GER } }
+			RUS = { SOV_1639 = { secede_province = GER } }
+			RUS = { SOV_1816 = { secede_province = GER } }
+			RUS = { SOV_1694 = { secede_province = GER } }
+			RUS = { SOV_1881 = { secede_province = GER } }
+			RUS = { SOV_2344 = { secede_province = GER } }
+			RUS = { SOV_1990 = { secede_province = GER } }
+			RUS = { SOV_1762 = { secede_province = GER } }
+			#GER = { SOV_1760 = { secede_province = RUS } }
+			#GER = { SOV_2112 = { secede_province = RUS } }
+			#GER = { SOV_2049 = { secede_province = RUS } }
+			2051 = { secede_province = GER }
+			2653 = { secede_province = AUH }
+			SOV_2783 = { secede_province = AUH }
+			SOV_3113 = { secede_province = AUH }
+			eastern_poland = { secede_province = GER }
+			crimean_peninsula = { secede_province = AUH }
+			SOV = { split_troops = 1.00 } 
+			RUS = { clr_country_flag = dual_power }
+			RUS = { non_aggression_pact = GER }
+			RUS = { non_aggression_pact = AUH }
+			RUS = { non_aggression_pact = TUR } 
+			RUS = { any_owned = { secede_province = SOV } }
+			SOV = { non_aggression_pact = GER }
+			SOV = { non_aggression_pact = AUH }
+			SOV = { non_aggression_pact = TUR }
+			TUR = { military_access = ARM }
+			TUR = { military_access = GEO }
+			TUR = { military_access = AZB }
+			GER = { military_access = ARM }
+			GER = { military_access = GEO }
+			GER = { military_access = AZB }
+			AUH = { military_access = ARM }
+			AUH = { military_access = GEO }
+			AUH = { military_access = AZB }
+			SOV = { join_faction = comintern }
+			SOV = { set_country_flag = octrev }		
+			SOV = { add_country_modifier = {
+				name = "octrev"
+				duration = 60
+				}
+			}
+		}
+}
+
+country_event = {
+		
+		id = 999950
+		
+
+
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		
+		major = yes
+		
+		title = "WARE1"
+		desc = "desc_WARE1"
+		picture = "WARP1"
+
+		option = {
+			name = "opta_WARE1"
+			ai_chance = { factor = 100 }
+			set_country_flag = war_over
+			dissent = 10
+			GER = { dissent = 5 }
+			RUS = { any_country = { limit = { war_with = RUS } end_war = RUS } }
+			RUS = { leave_faction = allies }
+			AUH = { any_owned = { limit = { is_core = RUS } remove_core = RUS } }
+			RUS = { any_owned = { limit = { is_core = TUR } secede_province = TUR } }
+			RUS = { any_owned = { limit = { is_core = UKR } secede_province = AUH } }
+			RUS = { any_owned = { limit = { is_core = ROM } secede_province = AUH } }
+			RUS = { any_owned = { limit = { is_core = GEO } secede_province = TUR } }
+			RUS = { any_owned = { limit = { is_core = ARM } secede_province = TUR } }
+			RUS = { any_owned = { limit = { is_core = AZB } secede_province = TUR } }
+			RUS = { any_owned = { limit = { is_core = POL } secede_province = GER } }
+			RUS = { any_owned = { limit = { is_core = FIN } secede_province = FIN } }
+			RUS = { any_owned = { limit = { is_core = LAT } secede_province = GER } }
+			RUS = { any_owned = { limit = { is_core = LIT } secede_province = GER } }
+			RUS = { any_owned = { limit = { is_core = EST } secede_province = GER } }
+			RUS = { any_owned = { limit = { is_core = ROM } secede_province = GER } }
+			poland_danzig = { add_core = POL }
+			western_poland_region = { add_core = POL }
+			1306 = { add_core = LIT }
+			9021 = { add_core = AZB }
+			8946 = { add_core = AZB }
+			SOV_7289 = { add_core = AZB }
+			SOV_3721 = { add_core = AZB }
+			RUS = { any_owned = { limit = { is_core = AZB } secede_province = TUR } }
+			RUS = { SOV_2113 = { secede_province = GER } }
+			RUS = { SOV_1991 = { secede_province = GER } }
+			RUS = { SOV_1639 = { secede_province = GER } }
+			RUS = { SOV_1816 = { secede_province = GER } }
+			RUS = { SOV_1694 = { secede_province = GER } }
+			RUS = { SOV_1881 = { secede_province = GER } }
+			RUS = { SOV_2344 = { secede_province = GER } }
+			RUS = { SOV_1990 = { secede_province = GER } }
+			RUS = { SOV_1762 = { secede_province = GER } }
+			#GER = { SOV_1760 = { secede_province = RUS } }
+			#GER = { SOV_2112 = { secede_province = RUS } }
+			#GER = { SOV_2049 = { secede_province = RUS } }
+			2051 = { secede_province = GER }
+			2653 = { secede_province = AUH }
+			SOV_2783 = { secede_province = AUH }
+			SOV_3113 = { secede_province = AUH }
+			eastern_poland = { secede_province = GER }
+			crimean_peninsula = { secede_province = AUH }
+			SOV = { split_troops = 1.00 } 
+			RUS = { clr_country_flag = dual_power }
+			RUS = { non_aggression_pact = GER }
+			RUS = { non_aggression_pact = AUH }
+			RUS = { non_aggression_pact = TUR } 
+			RUS = { any_owned = { secede_province = SOV } }
+			SOV = { non_aggression_pact = GER }
+			SOV = { non_aggression_pact = AUH }
+			SOV = { non_aggression_pact = TUR }
+			TUR = { military_access = ARM }
+			TUR = { military_access = GEO }
+			TUR = { military_access = AZB }
+			GER = { military_access = ARM }
+			GER = { military_access = GEO }
+			GER = { military_access = AZB }
+			AUH = { military_access = ARM }
+			AUH = { military_access = GEO }
+			AUH = { military_access = AZB }
+			SOV = { join_faction = comintern }
+			SOV = { set_country_flag = octrev }		
+			SOV = { add_country_modifier = {
+				name = "octrev"
+				duration = 60
+				}
+			}
+		}
+}
+
+
+#Russian Civil War
+  country_event = {
+
+		id = 100403
+		
+		major = yes
+		
+		trigger = {
+			tag = SOV
+			NOT = { exists = WHR }
+			NOT = { has_country_modifier = octrev }
+			has_country_flag = octrev 
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = yes
+
+		title = "ruscivil"
+		desc = "desc_ruscivil"
+		picture = "ruscivil"
+
+		option = {
+			name = "opta_ruscivil"
+			ai_chance = { factor = 100 }
+			soviet_kandalaksha = { secede_province = WHR }
+soviet_kem = { secede_province = WHR }
+soviet_loukhi = { secede_province = WHR }
+soviet_medvezhegorsk = { secede_province = WHR }
+soviet_murmansk = { secede_province = WHR }
+soviet_ne_kola = { secede_province = WHR }
+soviet_nw_kola = { secede_province = WHR }
+soviet_olonets = { secede_province = WHR }
+soviet_padany = { secede_province = WHR }
+soviet_petrozadovsk = { secede_province = WHR }
+soviet_podporozhe = { secede_province = WHR }
+soviet_polyarny = { secede_province = WHR }
+soviet_rugozero = { secede_province = WHR }
+soviet_se_kola = { secede_province = WHR }
+soviet_segezha = { secede_province = WHR }
+soviet_sofyanga = { secede_province = WHR }
+soviet_sw_kola = { secede_province = WHR }
+soviet_ukhta = { secede_province = WHR }
+soviet_zelenoborskij = { secede_province = WHR }
+#SOV_110 = { secede_province = WHR }
+#SOV_132 = { secede_province = WHR }
+#SOV_184 = { secede_province = WHR }
+#SOV_186 = { secede_province = WHR }
+#SOV_199 = { secede_province = WHR }
+#SOV_240 = { secede_province = WHR }
+#SOV_271 = { secede_province = WHR }
+#SOV_311 = { secede_province = WHR }
+#SOV_334 = { secede_province = WHR }
+#SOV_336 = { secede_province = WHR }
+#SOV_359 = { secede_province = WHR }
+#SOV_378 = { secede_province = WHR }
+#SOV_380 = { secede_province = WHR }
+#SOV_382 = { secede_province = WHR }
+#SOV_414 = { secede_province = WHR }
+#SOV_415 = { secede_province = WHR }
+#SOV_476 = { secede_province = WHR }
+#SOV_477 = { secede_province = WHR }
+#SOV_479 = { secede_province = WHR }
+#SOV_480 = { secede_province = WHR }
+#SOV_482 = { secede_province = WHR }
+#SOV_484 = { secede_province = WHR }
+#SOV_509 = { secede_province = WHR }
+#SOV_516 = { secede_province = WHR }
+#SOV_517 = { secede_province = WHR }
+#SOV_520 = { secede_province = WHR }
+#SOV_522 = { secede_province = WHR }
+#SOV_555 = { secede_province = WHR }
+#SOV_563 = { secede_province = WHR }
+#SOV_564 = { secede_province = WHR }
+#SOV_584 = { secede_province = WHR }
+#SOV_586 = { secede_province = WHR }
+#SOV_590 = { secede_province = WHR }
+#SOV_592 = { secede_province = WHR }
+#SOV_597 = { secede_province = WHR }
+#SOV_599 = { secede_province = WHR }
+#SOV_600 = { secede_province = WHR }
+#SOV_602 = { secede_province = WHR }
+#SOV_625 = { secede_province = WHR }
+#SOV_630 = { secede_province = WHR }
+#SOV_660 = { secede_province = WHR }
+#SOV_665 = { secede_province = WHR }
+#SOV_669 = { secede_province = WHR }
+#SOV_671 = { secede_province = WHR }
+#SOV_675 = { secede_province = WHR }
+#SOV_704 = { secede_province = WHR }
+#SOV_706 = { secede_province = WHR }
+#SOV_708 = { secede_province = WHR }
+#SOV_712 = { secede_province = WHR }
+#SOV_714 = { secede_province = WHR }
+#SOV_721 = { secede_province = WHR }
+#SOV_745 = { secede_province = WHR }
+#SOV_751 = { secede_province = WHR }
+#SOV_752 = { secede_province = WHR }
+#SOV_755 = { secede_province = WHR }
+#SOV_759 = { secede_province = WHR }
+#SOV_761 = { secede_province = WHR }
+#SOV_781 = { secede_province = WHR }
+#SOV_783 = { secede_province = WHR }
+#SOV_784 = { secede_province = WHR }
+#SOV_788 = { secede_province = WHR }
+#SOV_795 = { secede_province = WHR }
+#SOV_799 = { secede_province = WHR }
+#SOV_803 = { secede_province = WHR }
+#SOV_825 = { secede_province = WHR }
+#SOV_829 = { secede_province = WHR }
+#SOV_837 = { secede_province = WHR }
+#SOV_873 = { secede_province = WHR }
+#SOV_876 = { secede_province = WHR }
+#SOV_877 = { secede_province = WHR }
+#SOV_880 = { secede_province = WHR }
+#SOV_885 = { secede_province = WHR }
+#SOV_910 = { secede_province = WHR }
+#SOV_920 = { secede_province = WHR }
+#SOV_925 = { secede_province = WHR }
+#SOV_927 = { secede_province = WHR }
+#SOV_928 = { secede_province = WHR }
+#SOV_929 = { secede_province = WHR }
+#SOV_948 = { secede_province = WHR }
+#SOV_949 = { secede_province = WHR }
+#SOV_953 = { secede_province = WHR }
+#SOV_960 = { secede_province = WHR }
+#SOV_963 = { secede_province = WHR }
+#SOV_991 = { secede_province = WHR }
+#SOV_995 = { secede_province = WHR }
+#SOV_998 = { secede_province = WHR }
+#SOV_1005 = { secede_province = WHR }
+#SOV_1007 = { secede_province = WHR }
+#SOV_1009 = { secede_province = WHR }
+#SOV_1011 = { secede_province = WHR }
+#SOV_1012 = { secede_province = WHR }
+#SOV_1030 = { secede_province = WHR }
+#SOV_1034 = { secede_province = WHR }
+#SOV_1045 = { secede_province = WHR }
+#SOV_1048 = { secede_province = WHR }
+#SOV_1072 = { secede_province = WHR }
+#SOV_1080 = { secede_province = WHR }
+#SOV_1083 = { secede_province = WHR }
+#SOV_1085 = { secede_province = WHR }
+#SOV_1101 = { secede_province = WHR }
+#SOV_1102 = { secede_province = WHR }
+#SOV_1104 = { secede_province = WHR }
+#SOV_1112 = { secede_province = WHR }
+#SOV_1117 = { secede_province = WHR }
+#SOV_1145 = { secede_province = WHR }
+#SOV_1149 = { secede_province = WHR }
+#SOV_1153 = { secede_province = WHR }
+#SOV_1154 = { secede_province = WHR }
+#SOV_1155 = { secede_province = WHR }
+#SOV_1166 = { secede_province = WHR }
+#SOV_1199 = { secede_province = WHR }
+#SOV_1200 = { secede_province = WHR }
+#SOV_1201 = { secede_province = WHR }
+#SOV_1202 = { secede_province = WHR }
+#SOV_1205 = { secede_province = WHR }
+#SOV_1227 = { secede_province = WHR }
+#SOV_1236 = { secede_province = WHR }
+#SOV_1240 = { secede_province = WHR }
+#SOV_1244 = { secede_province = WHR }
+#SOV_1248 = { secede_province = WHR }
+#SOV_1272 = { secede_province = WHR }
+#SOV_1273 = { secede_province = WHR }
+#SOV_1288 = { secede_province = WHR }
+#SOV_1292 = { secede_province = WHR }
+#SOV_1312 = { secede_province = WHR }
+#SOV_1316 = { secede_province = WHR }
+#SOV_1326 = { secede_province = WHR }
+#SOV_1338 = { secede_province = WHR }
+#SOV_1359 = { secede_province = WHR }
+#SOV_1362 = { secede_province = WHR }
+#SOV_1366 = { secede_province = WHR }
+#SOV_1374 = { secede_province = WHR }
+#SOV_1377 = { secede_province = WHR }
+#SOV_1402 = { secede_province = WHR }
+#SOV_1409 = { secede_province = WHR }
+#SOV_1424 = { secede_province = WHR }
+#SOV_1446 = { secede_province = WHR }
+#SOV_1460 = { secede_province = WHR }
+#SOV_1461 = { secede_province = WHR }
+#SOV_1463 = { secede_province = WHR }
+#SOV_1468 = { secede_province = WHR }
+#SOV_1498 = { secede_province = WHR }
+#SOV_1504 = { secede_province = WHR }
+#SOV_1509 = { secede_province = WHR }
+#SOV_1517 = { secede_province = WHR }
+#SOV_1536 = { secede_province = WHR }
+#SOV_1539 = { secede_province = WHR }
+#SOV_1555 = { secede_province = WHR }
+#SOV_1558 = { secede_province = WHR }
+#SOV_1582 = { secede_province = WHR }
+#SOV_1591 = { secede_province = WHR }
+#SOV_1597 = { secede_province = WHR }
+#SOV_1599 = { secede_province = WHR }
+#SOV_1605 = { secede_province = WHR }
+#SOV_1606 = { secede_province = WHR }
+#SOV_1607 = { secede_province = WHR }
+#SOV_1637 = { secede_province = WHR }
+#SOV_1639 = { secede_province = WHR }
+#SOV_1641 = { secede_province = WHR }
+#SOV_1643 = { secede_province = WHR }
+#SOV_1646 = { secede_province = WHR }
+#SOV_1648 = { secede_province = WHR }
+#SOV_1655 = { secede_province = WHR }
+#SOV_1657 = { secede_province = WHR }
+#SOV_1694 = { secede_province = WHR }
+#SOV_1702 = { secede_province = WHR }
+#SOV_1709 = { secede_province = WHR }
+#SOV_1711 = { secede_province = WHR }
+#SOV_1760 = { secede_province = WHR }
+#SOV_1762 = { secede_province = WHR }
+#SOV_1766 = { secede_province = WHR }
+#SOV_1768 = { secede_province = WHR }
+#SOV_1769 = { secede_province = WHR }
+#SOV_1776 = { secede_province = WHR }
+#SOV_1780 = { secede_province = WHR }
+#SOV_1781 = { secede_province = WHR }
+#SOV_1816 = { secede_province = WHR }
+#SOV_1834 = { secede_province = WHR }
+#SOV_1837 = { secede_province = WHR }
+#SOV_1838 = { secede_province = WHR }
+#SOV_1879 = { secede_province = WHR }
+#SOV_1881 = { secede_province = WHR }
+#SOV_1892 = { secede_province = WHR }
+#SOV_1896 = { secede_province = WHR }
+#SOV_1946 = { secede_province = WHR }
+#SOV_1961 = { secede_province = WHR }
+#SOV_1990 = { secede_province = WHR }
+#SOV_1991 = { secede_province = WHR }
+#SOV_1998 = { secede_province = WHR }
+#SOV_2000 = { secede_province = WHR }
+#SOV_2008 = { secede_province = WHR }
+#SOV_2009 = { secede_province = WHR }
+#SOV_2013 = { secede_province = WHR }
+#SOV_2049 = { secede_province = WHR }
+#SOV_2060 = { secede_province = WHR }
+#SOV_2062 = { secede_province = WHR }
+#SOV_2073 = { secede_province = WHR }
+#SOV_2110 = { secede_province = WHR }
+#SOV_2111 = { secede_province = WHR }
+#SOV_2112 = { secede_province = WHR }
+#SOV_2113 = { secede_province = WHR }
+#SOV_2117 = { secede_province = WHR }
+#SOV_2119 = { secede_province = WHR }
+#SOV_2128 = { secede_province = WHR }
+#SOV_2130 = { secede_province = WHR }
+#SOV_2166 = { secede_province = WHR }
+#SOV_2181 = { secede_province = WHR }
+#SOV_2183 = { secede_province = WHR }
+#SOV_2229 = { secede_province = WHR }
+#SOV_2238 = { secede_province = WHR }
+#SOV_2243 = { secede_province = WHR }
+#SOV_2246 = { secede_province = WHR }
+#SOV_2248 = { secede_province = WHR }
+#SOV_2278 = { secede_province = WHR }
+#SOV_2282 = { secede_province = WHR }
+#SOV_2289 = { secede_province = WHR }
+#SOV_2291 = { secede_province = WHR }
+#SOV_2298 = { secede_province = WHR }
+#SOV_2338 = { secede_province = WHR }
+#SOV_2342 = { secede_province = WHR }
+#SOV_2344 = { secede_province = WHR }
+#SOV_2345 = { secede_province = WHR }
+#SOV_2351 = { secede_province = WHR }
+#SOV_2353 = { secede_province = WHR }
+#SOV_2359 = { secede_province = WHR }
+#SOV_2363 = { secede_province = WHR }
+#SOV_2418 = { secede_province = WHR }
+#SOV_2419 = { secede_province = WHR }
+#SOV_2453 = { secede_province = WHR }
+#SOV_2458 = { secede_province = WHR }
+#SOV_2463 = { secede_province = WHR }
+#SOV_2464 = { secede_province = WHR }
+#SOV_2472 = { secede_province = WHR }
+#SOV_2479 = { secede_province = WHR }
+#SOV_2526 = { secede_province = WHR }
+#SOV_2530 = { secede_province = WHR }
+#SOV_2534 = { secede_province = WHR }
+#SOV_2536 = { secede_province = WHR }
+#SOV_2574 = { secede_province = WHR }
+#SOV_2578 = { secede_province = WHR }
+#SOV_2579 = { secede_province = WHR }
+#SOV_2582 = { secede_province = WHR }
+#SOV_2583 = { secede_province = WHR }
+#SOV_2585 = { secede_province = WHR }
+SOV_2600 = { secede_province = WHR }
+SOV_2661 = { secede_province = WHR }
+SOV_2663 = { secede_province = WHR }
+SOV_2664 = { secede_province = WHR }
+SOV_2667 = { secede_province = WHR }
+SOV_2709 = { secede_province = WHR }
+SOV_2716 = { secede_province = WHR }
+SOV_2720 = { secede_province = WHR }
+SOV_2722 = { secede_province = WHR }
+SOV_2724 = { secede_province = WHR }
+SOV_2725 = { secede_province = WHR }
+SOV_2771 = { secede_province = WHR }
+SOV_2773 = { secede_province = WHR }
+SOV_2783 = { secede_province = WHR }
+SOV_2793 = { secede_province = WHR }
+SOV_2797 = { secede_province = WHR }
+SOV_2799 = { secede_province = WHR }
+SOV_2840 = { secede_province = WHR }
+SOV_2842 = { secede_province = WHR }
+SOV_2843 = { secede_province = WHR }
+SOV_2845 = { secede_province = WHR }
+SOV_2848 = { secede_province = WHR }
+SOV_2856 = { secede_province = WHR }
+SOV_2859 = { secede_province = WHR }
+SOV_2864 = { secede_province = WHR }
+SOV_2903 = { secede_province = WHR }
+SOV_2905 = { secede_province = WHR }
+SOV_2918 = { secede_province = WHR }
+SOV_2920 = { secede_province = WHR }
+SOV_2926 = { secede_province = WHR }
+SOV_2978 = { secede_province = WHR }
+SOV_2981 = { secede_province = WHR }
+SOV_2982 = { secede_province = WHR }
+SOV_2994 = { secede_province = WHR }
+SOV_3041 = { secede_province = WHR }
+SOV_3043 = { secede_province = WHR }
+SOV_3044 = { secede_province = WHR }
+SOV_3048 = { secede_province = WHR }
+SOV_3059 = { secede_province = WHR }
+SOV_3061 = { secede_province = WHR }
+SOV_3063 = { secede_province = WHR }
+SOV_3064 = { secede_province = WHR }
+SOV_3113 = { secede_province = WHR }
+SOV_3120 = { secede_province = WHR }
+SOV_3125 = { secede_province = WHR }
+SOV_3130 = { secede_province = WHR }
+SOV_3131 = { secede_province = WHR }
+SOV_3174 = { secede_province = WHR }
+SOV_3176 = { secede_province = WHR }
+SOV_3178 = { secede_province = WHR }
+SOV_3180 = { secede_province = WHR }
+SOV_3188 = { secede_province = WHR }
+SOV_3199 = { secede_province = WHR }
+SOV_3242 = { secede_province = WHR }
+SOV_3250 = { secede_province = WHR }
+SOV_3256 = { secede_province = WHR }
+SOV_3258 = { secede_province = WHR }
+SOV_3311 = { secede_province = WHR }
+SOV_3313 = { secede_province = WHR }
+SOV_3319 = { secede_province = WHR }
+SOV_3320 = { secede_province = WHR }
+SOV_3380 = { secede_province = WHR }
+SOV_3382 = { secede_province = WHR }
+SOV_3383 = { secede_province = WHR }
+SOV_3385 = { secede_province = WHR }
+SOV_3464 = { secede_province = WHR }
+SOV_3465 = { secede_province = WHR }
+SOV_3515 = { secede_province = WHR }
+SOV_3523 = { secede_province = WHR }
+SOV_3525 = { secede_province = WHR }
+SOV_3584 = { secede_province = WHR }
+SOV_3586 = { secede_province = WHR }
+SOV_3595 = { secede_province = WHR }
+SOV_3718 = { secede_province = WHR }
+SOV_3721 = { secede_province = WHR }
+SOV_3724 = { secede_province = WHR }
+SOV_3789 = { secede_province = WHR }
+SOV_3851 = { secede_province = WHR }
+SOV_3853 = { secede_province = WHR }
+SOV_3859 = { secede_province = WHR }
+SOV_3926 = { secede_province = WHR }
+SOV_4059 = { secede_province = WHR }
+SOV_4064 = { secede_province = WHR }
+SOV_4065 = { secede_province = WHR }
+SOV_4129 = { secede_province = WHR }
+SOV_4193 = { secede_province = WHR }
+SOV_4194 = { secede_province = WHR }
+SOV_4329 = { secede_province = WHR }
+SOV_4390 = { secede_province = WHR }
+SOV_4456 = { secede_province = WHR }
+SOV_6628 = { secede_province = WHR }
+SOV_6632 = { secede_province = WHR }
+SOV_6633 = { secede_province = WHR }
+SOV_6637 = { secede_province = WHR }
+SOV_6644 = { secede_province = WHR }
+SOV_6646 = { secede_province = WHR }
+SOV_6655 = { secede_province = WHR }
+SOV_6668 = { secede_province = WHR }
+SOV_6677 = { secede_province = WHR }
+SOV_6678 = { secede_province = WHR }
+SOV_6681 = { secede_province = WHR }
+SOV_6684 = { secede_province = WHR }
+SOV_6686 = { secede_province = WHR }
+SOV_6690 = { secede_province = WHR }
+SOV_6692 = { secede_province = WHR }
+SOV_6694 = { secede_province = WHR }
+SOV_6699 = { secede_province = WHR }
+SOV_6712 = { secede_province = WHR }
+SOV_6717 = { secede_province = WHR }
+SOV_6719 = { secede_province = WHR }
+SOV_6730 = { secede_province = WHR }
+SOV_6736 = { secede_province = WHR }
+SOV_6738 = { secede_province = WHR }
+SOV_6745 = { secede_province = WHR }
+SOV_6754 = { secede_province = WHR }
+SOV_6768 = { secede_province = WHR }
+SOV_6771 = { secede_province = WHR }
+SOV_6777 = { secede_province = WHR }
+SOV_6779 = { secede_province = WHR }
+SOV_6786 = { secede_province = WHR }
+SOV_6787 = { secede_province = WHR }
+SOV_6788 = { secede_province = WHR }
+SOV_6791 = { secede_province = WHR }
+SOV_6793 = { secede_province = WHR }
+SOV_6794 = { secede_province = WHR }
+SOV_6807 = { secede_province = WHR }
+SOV_6816 = { secede_province = WHR }
+SOV_6818 = { secede_province = WHR }
+SOV_6819 = { secede_province = WHR }
+SOV_6826 = { secede_province = WHR }
+SOV_6827 = { secede_province = WHR }
+SOV_6837 = { secede_province = WHR }
+SOV_6843 = { secede_province = WHR }
+SOV_6847 = { secede_province = WHR }
+SOV_6848 = { secede_province = WHR }
+SOV_6850 = { secede_province = WHR }
+SOV_6851 = { secede_province = WHR }
+SOV_6852 = { secede_province = WHR }
+SOV_6866 = { secede_province = WHR }
+SOV_6874 = { secede_province = WHR }
+SOV_6887 = { secede_province = WHR }
+SOV_6889 = { secede_province = WHR }
+SOV_6894 = { secede_province = WHR }
+SOV_6900 = { secede_province = WHR }
+SOV_6909 = { secede_province = WHR }
+SOV_6912 = { secede_province = WHR }
+SOV_6932 = { secede_province = WHR }
+SOV_6935 = { secede_province = WHR }
+SOV_6939 = { secede_province = WHR }
+SOV_6964 = { secede_province = WHR }
+SOV_6981 = { secede_province = WHR }
+SOV_6984 = { secede_province = WHR }
+SOV_6987 = { secede_province = WHR }
+SOV_7000 = { secede_province = WHR }
+SOV_7005 = { secede_province = WHR }
+SOV_7018 = { secede_province = WHR }
+SOV_7020 = { secede_province = WHR }
+SOV_7022 = { secede_province = WHR }
+SOV_7023 = { secede_province = WHR }
+SOV_7027 = { secede_province = WHR }
+SOV_7045 = { secede_province = WHR }
+SOV_7050 = { secede_province = WHR }
+SOV_7053 = { secede_province = WHR }
+SOV_7055 = { secede_province = WHR }
+SOV_7057 = { secede_province = WHR }
+SOV_7067 = { secede_province = WHR }
+SOV_7072 = { secede_province = WHR }
+SOV_7074 = { secede_province = WHR }
+SOV_7106 = { secede_province = WHR }
+SOV_7108 = { secede_province = WHR }
+SOV_7111 = { secede_province = WHR }
+SOV_7112 = { secede_province = WHR }
+SOV_7125 = { secede_province = WHR }
+SOV_7127 = { secede_province = WHR }
+SOV_7153 = { secede_province = WHR }
+SOV_7154 = { secede_province = WHR }
+SOV_7155 = { secede_province = WHR }
+SOV_7174 = { secede_province = WHR }
+SOV_7177 = { secede_province = WHR }
+SOV_7180 = { secede_province = WHR }
+SOV_7182 = { secede_province = WHR }
+SOV_7201 = { secede_province = WHR }
+SOV_7227 = { secede_province = WHR }
+SOV_7228 = { secede_province = WHR }
+SOV_7230 = { secede_province = WHR }
+SOV_7250 = { secede_province = WHR }
+SOV_7251 = { secede_province = WHR }
+SOV_7287 = { secede_province = WHR }
+SOV_7290 = { secede_province = WHR }
+SOV_7309 = { secede_province = WHR }
+SOV_7310 = { secede_province = WHR }
+SOV_7357 = { secede_province = WHR }
+SOV_8093 = { secede_province = WHR }
+SOV_8096 = { secede_province = WHR }
+SOV_8099 = { secede_province = WHR }
+SOV_8101 = { secede_province = WHR }
+SOV_8118 = { secede_province = WHR }
+SOV_8123 = { secede_province = WHR }
+SOV_8124 = { secede_province = WHR }
+SOV_8126 = { secede_province = WHR }
+SOV_8127 = { secede_province = WHR }
+SOV_8131 = { secede_province = WHR }
+SOV_8133 = { secede_province = WHR }
+SOV_8149 = { secede_province = WHR }
+SOV_8153 = { secede_province = WHR }
+SOV_8158 = { secede_province = WHR }
+SOV_8163 = { secede_province = WHR }
+SOV_8165 = { secede_province = WHR }
+SOV_8179 = { secede_province = WHR }
+SOV_8180 = { secede_province = WHR }
+SOV_8181 = { secede_province = WHR }
+SOV_8185 = { secede_province = WHR }
+SOV_8187 = { secede_province = WHR }
+SOV_8190 = { secede_province = WHR }
+SOV_8192 = { secede_province = WHR }
+SOV_8194 = { secede_province = WHR }
+SOV_8200 = { secede_province = WHR }
+SOV_8217 = { secede_province = WHR }
+SOV_8218 = { secede_province = WHR }
+SOV_8222 = { secede_province = WHR }
+SOV_8225 = { secede_province = WHR }
+SOV_8226 = { secede_province = WHR }
+SOV_8230 = { secede_province = WHR }
+SOV_8234 = { secede_province = WHR }
+SOV_8235 = { secede_province = WHR }
+SOV_8237 = { secede_province = WHR }
+SOV_8239 = { secede_province = WHR }
+SOV_8243 = { secede_province = WHR }
+SOV_8253 = { secede_province = WHR }
+SOV_8271 = { secede_province = WHR }
+SOV_8275 = { secede_province = WHR }
+SOV_8278 = { secede_province = WHR }
+SOV_8285 = { secede_province = WHR }
+SOV_8287 = { secede_province = WHR }
+SOV_8288 = { secede_province = WHR }
+SOV_8294 = { secede_province = WHR }
+SOV_8296 = { secede_province = WHR }
+SOV_8299 = { secede_province = WHR }
+SOV_8304 = { secede_province = WHR }
+SOV_8305 = { secede_province = WHR }
+SOV_8315 = { secede_province = WHR }
+SOV_8317 = { secede_province = WHR }
+SOV_8320 = { secede_province = WHR }
+SOV_8333 = { secede_province = WHR }
+SOV_8345 = { secede_province = WHR }
+SOV_8351 = { secede_province = WHR }
+SOV_8352 = { secede_province = WHR }
+SOV_8354 = { secede_province = WHR }
+SOV_8370 = { secede_province = WHR }
+SOV_8373 = { secede_province = WHR }
+SOV_8375 = { secede_province = WHR }
+SOV_8379 = { secede_province = WHR }
+SOV_8380 = { secede_province = WHR }
+SOV_8382 = { secede_province = WHR }
+SOV_8399 = { secede_province = WHR }
+SOV_8400 = { secede_province = WHR }
+SOV_8408 = { secede_province = WHR }
+SOV_8409 = { secede_province = WHR }
+SOV_8410 = { secede_province = WHR }
+SOV_8419 = { secede_province = WHR }
+SOV_8420 = { secede_province = WHR }
+SOV_8421 = { secede_province = WHR }
+SOV_8423 = { secede_province = WHR }
+SOV_8424 = { secede_province = WHR }
+SOV_8429 = { secede_province = WHR }
+SOV_8452 = { secede_province = WHR }
+SOV_8458 = { secede_province = WHR }
+SOV_8461 = { secede_province = WHR }
+SOV_8463 = { secede_province = WHR }
+SOV_8464 = { secede_province = WHR }
+SOV_8467 = { secede_province = WHR }
+SOV_8468 = { secede_province = WHR }
+SOV_8470 = { secede_province = WHR }
+SOV_8495 = { secede_province = WHR }
+SOV_8503 = { secede_province = WHR }
+SOV_8507 = { secede_province = WHR }
+SOV_8529 = { secede_province = WHR }
+SOV_8530 = { secede_province = WHR }
+SOV_8535 = { secede_province = WHR }
+SOV_8536 = { secede_province = WHR }
+SOV_8537 = { secede_province = WHR }
+SOV_8538 = { secede_province = WHR }
+SOV_8541 = { secede_province = WHR }
+SOV_8558 = { secede_province = WHR }
+SOV_8559 = { secede_province = WHR }
+SOV_8562 = { secede_province = WHR }
+SOV_8565 = { secede_province = WHR }
+SOV_8566 = { secede_province = WHR }
+SOV_8568 = { secede_province = WHR }
+SOV_8603 = { secede_province = WHR }
+SOV_8624 = { secede_province = WHR }
+SOV_8627 = { secede_province = WHR }
+SOV_8629 = { secede_province = WHR }
+SOV_8634 = { secede_province = WHR }
+SOV_8638 = { secede_province = WHR }
+SOV_8655 = { secede_province = WHR }
+SOV_8657 = { secede_province = WHR }
+SOV_8663 = { secede_province = WHR }
+SOV_8665 = { secede_province = WHR }
+SOV_8668 = { secede_province = WHR }
+SOV_8687 = { secede_province = WHR }
+SOV_8690 = { secede_province = WHR }
+SOV_8711 = { secede_province = WHR }
+SOV_8719 = { secede_province = WHR }
+SOV_8724 = { secede_province = WHR }
+SOV_8735 = { secede_province = WHR }
+SOV_8736 = { secede_province = WHR }
+SOV_8740 = { secede_province = WHR }
+SOV_8743 = { secede_province = WHR }
+SOV_8763 = { secede_province = WHR }
+SOV_8766 = { secede_province = WHR }
+SOV_8787 = { secede_province = WHR }
+SOV_8791 = { secede_province = WHR }
+SOV_8792 = { secede_province = WHR }
+SOV_8814 = { secede_province = WHR }
+SOV_8836 = { secede_province = WHR }
+SOV_8840 = { secede_province = WHR }
+SOV_8841 = { secede_province = WHR }
+SOV_8847 = { secede_province = WHR }
+SOV_8881 = { secede_province = WHR }
+SOV_8884 = { secede_province = WHR }
+SOV_8885 = { secede_province = WHR }
+SOV_8908 = { secede_province = WHR }
+SOV_8924 = { secede_province = WHR }
+SOV_8928 = { secede_province = WHR }
+SOV_8947 = { secede_province = WHR }
+SOV_8974 = { secede_province = WHR }
+SOV_8999 = { secede_province = WHR }
+SOV_9002 = { secede_province = WHR }
+SOV_9023 = { secede_province = WHR }
+SOV_9026 = { secede_province = WHR }
+SOV_9051 = { secede_province = WHR }
+SOV_9079 = { secede_province = WHR }
+SOV_9080 = { secede_province = WHR }
+SOV_9132 = { secede_province = WHR }
+SOV_9135 = { secede_province = WHR }
+SOV_10679 = { secede_province = WHR }
+SOV_10682 = { secede_province = WHR }
+
+
+
+			WHR = { capital = 8118 }
+			WHR = { split_troops = 0.4 }
+			WHR = { energy = 5000 }
+			WHR = { metal = 5000 }
+			WHR = { rare_materials = 5000 }
+			WHR = { supplies = 15000 }
+			WHR = { neutrality = +35 }
+			WHR = { fuel = 5000 }
+			WHR = { non_aggression_pact = GER }
+			WHR = { non_aggression_pact = AUH }
+			WHR = { non_aggression_pact = TUR }
+			WHR = { non_aggression_pact = BUL }
+			
+			SOV = { set_country_flag = civrus }
+			SOV = {	war = {	
+					target = WHR
+					attacker_goal = { casus_belli= civil_war_2 }
+					defender_goal = { casus_belli = civil_war_1 }
+					}
+				}
+		}
+	
+}

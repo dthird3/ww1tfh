@@ -1,0 +1,31 @@
+
+country_event = {
+
+		id = 100907
+
+		trigger = {
+			tag = DEN
+			DEN = { head_of_state = 999992 }
+			date = 1912.5.14
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = yes
+
+		title = "DENE1"
+		desc = "desc_DENE1"
+		picture = "DENP1"
+
+		option = {
+			name = "opta_DENE1"
+			ai_chance = { factor = 100 }
+			DEN = { head_of_state = 925007 }
+			DEN = { chief_of_army = 925007 }
+			DEN = { chief_of_air = 925007 }
+			remove_minister  = 999992
+		}
+	
+}

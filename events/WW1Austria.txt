@@ -1,0 +1,113 @@
+
+ #### NEW KING 1916 AUH  ####
+
+country_event = {
+
+		id = 100901
+
+		trigger = {
+			tag = AUH
+			AUH = { head_of_state = 860047 }
+			date = 1916.11.21
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = yes
+
+		title = "AUHE2"
+		desc = "desc_AUHE2"
+		picture = "AUHP2"
+
+		option = {
+			name = "opta_AUHE2"
+			ai_chance = { factor = 100 }
+			AUH = { head_of_state = 860045 }
+			set_country_flag = emperor_franz_dead
+		}
+	
+}
+
+#FALL OF AUSTRIA
+country_event = {
+		
+		id = 190003
+		
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		
+		major = yes
+		
+		title = "WARE3"
+		desc = "desc_WARE3"
+		picture = "WARP3"
+
+		option = {
+			name = "opta_WARE3"
+			ai_chance = { factor = 100 }
+			set_country_flag = war_over
+			
+			AUH = { any_country = { limit = { war_with = AUH } end_war = AUH } }
+			czechoslovakia_region = {  add_core = CZE }
+			AUH = { any_owned = { limit = { is_core = CZE } secede_province = CZE } }
+			#AUH = { any_owned = { limit = { is_core = YUG } secede_province = YUG } }
+			AUH = { any_owned = { limit = { is_core = ITA } secede_province = ITA } }
+			yugoslavia_region = { add_core = SER }
+			yugoslavia_region = { secede_province = SER }
+			austria_region = { add_core = AUS }
+			transsylvania_region = { add_core = ROM }
+			transsylvania_region = { secede_province = ROM }
+			ROM_3845 = { add_core = ROM }
+			ROM_3846 = { add_core = ROM }
+			ROM_3644 = { add_core = ROM }
+			ROM_3645 = { add_core = ROM }
+			ROM_3375 = { add_core = ROM }
+			ROM_3510 = { add_core = ROM }
+			ROM_3306 = { add_core = ROM }
+			ROM_3442 = { add_core = ROM }
+			ROM_3642 = { add_core = ROM }
+			ROM_3303 = { add_core = ROM }
+			ROM_3507 = { add_core = ROM }
+			ROM_3572 = { add_core = ROM }
+			ROM_3301 = { add_core = ROM }
+			ROM_3168 = { add_core = ROM }
+			ROM_3169 = { add_core = ROM }
+			ROM_3037 = { add_core = ROM }
+			ROM_3238 = { add_core = ROM }
+			ROM_3172 = { add_core = ROM }
+			ROM_3307 = { add_core = ROM }
+			ROM_3513 = { add_core = ROM }
+			ROM_3780 = { add_core = ROM }
+			ROM_3990 = { add_core = ROM }
+			ROM_3917 = { add_core = ROM }
+			ROM_3987 = { add_core = ROM }
+			ROM_4054 = { add_core = ROM }
+			ROM_3707 = { add_core = ROM }
+			ROM_3573 = { add_core = ROM }
+			austria_region = {  add_core = AUS }
+			AUH = { any_owned = { limit = { is_core = ROM } secede_province = ROM } }
+			AUH = { any_owned = { limit = { is_core = AUS } secede_province = AUS } } #AUSTRIA PROVINCE
+			AUH = { any_owned = { limit = { is_core = HUN } secede_province = HUN } }
+			AUH = { any_owned = { limit = { is_core = GER } secede_province = GER } }
+			AUH = { any_owned = { limit = { is_core = RUS } secede_province = RUS } }
+			AUH = { any_owned = { limit = { is_core = SOV } secede_province = SOV } }
+			AUH = { any_owned = { limit = { is_core = UKR } secede_province = UKR } }
+			AUH = { any_owned = { limit = { is_core = POL } secede_province = POL } }
+			UKR = { any_owned = { limit = { is_core = GER } remove_core = GER } }
+			AUH = { leave_faction = axis }
+			ENG = { guarantee = AUH }
+			AUH = { neutrality = 100 }
+			any_country = {
+				limit = { faction = allies }
+				non_aggression_pact = AUH
+			}
+			ENG = { threat = { who = AUH value = -150 } }
+			FRA = { threat = { who = AUH value = -150 } }
+			ITA = { threat = { who = AUH value = -150 } }
+			RUS = { threat = { who = AUH value = -150 } }
+			SER = { set_country_flag = form_yugo }
+		}
+}

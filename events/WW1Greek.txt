@@ -1,0 +1,55 @@
+
+country_event = {
+
+		id = 100909
+
+		trigger = {
+			tag = GRE
+			GRE = { head_of_state = 999990 }
+			date = 1913.3.13
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = yes
+
+		title = "GREE1"
+		desc = "desc_GREE1"
+		picture = "GREP1"
+
+		option = {
+			name = "opta_GREE1"
+			ai_chance = { factor = 100 }
+			GRE = { head_of_state = 90213 }
+			GRE = { chief_of_army = 90213 }
+			GRE = { chief_of_air = 90213 }
+			remove_minister  = 999990
+		}
+	
+}
+
+ #### Greco–Cretan Annexation
+
+country_event = {
+
+		id = 100200
+
+		is_triggered_only = yes
+		
+		title = "CRTE1"
+		desc = "desc_CRTE1"
+		picture = "CRTP1"
+
+		option = {
+			name = "opta_CRTE1"
+			ai_chance = { factor = 100 }
+			GRE = { split_troops = 1.0 }
+			GRE = { inherit = CRT }
+			#5379 = { secede_province = GRE }
+			#5380 = { secede_province = GRE }
+			#5381 = { secede_province = GRE }
+			#5389 = { secede_province = GRE }
+		}
+}

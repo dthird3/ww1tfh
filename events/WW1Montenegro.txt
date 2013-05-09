@@ -1,0 +1,34 @@
+
+
+
+#August 3 Montenegro declares war on Austria-Hungary.
+	country_event = {
+		
+		id = 100147
+		
+		is_triggered_only = yes
+
+		fire_only_once = yes
+		
+		
+		title = "MTNE1"
+		desc = "desc_MTNE1"
+		picture = "GERP2"
+
+		option = {
+			name = "opta_MTNE1"
+			ai_chance = { factor = 100 }
+			MTN = { manpower = 50 }
+			MTN = { relation = { who = GER value = -100 } }
+			MTN = { relation = { who = AUH value = -100 } }
+			MTN = { national_unity = 40 }
+			neutrality = -50
+			MTN = { join_faction = allies }
+			#AUH = { war = { target = MTN } }
+			#AUH = { add_wargoal = {	
+			#	target = MTN
+			#	war_goal = { casus_belli = conquer }
+			#	}
+			#}
+		}
+}

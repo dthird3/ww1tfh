@@ -1,0 +1,2025 @@
+color = { 155  101  107 }
+graphical_culture = Generic
+
+
+default_templates = {
+	Infantería = {
+		infantry_brigade
+		infantry_brigade
+		artillery_brigade
+	}
+	Caballería = {
+		cavalry_brigade
+		cavalry_brigade
+		engineer_brigade
+	}	
+	Celere = {
+		light_armor_brigade
+		cavalry_brigade
+		engineer_brigade
+	}
+	Montaña = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+		artillery_brigade
+	}
+}
+
+unit_names = {
+
+armor_brigade = { 
+"I División de Blindados" "II División de Blindados" "III División de Blindados" "IV División de Blindados" "V División de Blindados" "VI División de Blindados" "VII División de Blindados" "VIII División de Blindados" "IX División de Blindados" "X División de Blindados" "XI División de Blindados" "XII División de Blindados" "XIII División de Blindados" "XIV División de Blindados" "XV División de Blindados" "XVI División de Blindados" "XVII División de Blindados" "XVIII División de Blindados" "XIX División de Blindados" "XX División de Blindados"
+} 
+battlecruiser = { 
+"BACH Almirante Latorre" "BACH República de Chile" "BACH Lima"
+} 
+dreadnaught = { 
+"BACH Almirante Latorre" "BACH República de Chile" "BACH Lima"
+} 
+bergsjaeger_brigade = { 
+	"1. División de Montaña" "2. División de Montaña" "3. División de Montaña" "4. División de Montaña" "5. División de Montaña" "6. División de Montaña" "7. División de Montaña" "8. División de Montaña" "9. División de Montaña" "10. División de Montaña" 
+	}
+carrier = { 
+"BACH Los Andes de Chile" "BACH Pacífico"
+} 
+cavalry_brigade = { 
+	"División Caballería nro. 1" "División Caballería nro. 2" "División Caballería nro. 3" "División Caballería nro. 4" "División Caballería nro. 5" "División Caballería nro. 6" "División Caballería nro. 7" "División Caballería nro. 8" "División Caballería nro. 9" "División Caballería nro. 10" 
+	} 
+destroyer = { 
+"Flotilla de Destructores nro. 1" "Flotilla de Destructores nro. 2" "Flotilla de Destructores nro. 3" "Flotilla de Destructores nro. 4" "Flotilla de Destructores nro. 5" "Flotilla de Destructores nro. 6" "Flotilla de Destructores nro. 7" "Flotilla de Destructores nro. 8" "Flotilla de Destructores nro. 9" "Flotilla de Destructores nro. 10" "Flotilla de Destructores nro. 11" "Flotilla de Destructores nro. 12" "Flotilla de Destructores nro. 13" "Flotilla de Destructores nro. 14" "Flotilla de Destructores nro. 15"
+} 
+escort_carrier = { 
+"BACH Los Andes de Chile" "BACH Pacífico"
+} 
+garrison_brigade = { 
+"10. División de Infantería" "11. División de Infantería" "12. División de Infantería" "13. División de Infantería" "14. División de Infantería" "15. División de Infantería" "16. División de Infantería" "17. División de Infantería" "18. División de Infantería" "19. División de Infantería" "20. División de Infantería" "21. División de Infantería" "22. División de Infantería" "23. División de Infantería" "24. División de Infantería" "25. División de Infantería" "26. División de Infantería" "27. División de Infantería" "28. División de Infantería" "29. División de Infantería" "30. División de Infantería"
+} 
+heavy_cruiser = { 
+"BACH Araucano" "BACH Santiago de Chile" "BACH Valparaiso" "BACH Valdivia" "BACH Osorno" "BACH Punta Arenas" "BACH Chillán" "BACH Talcahuano" "BACH Rancagua" "BACH Coquimbo"
+} 
+hq_brigade = { 
+"Cuartel General 1er Ejército" "Cuartel General 2o Ejército" "Cuartel General 3er Ejército" "Cuartel General 4o Ejército" "Cuartel General 5o Ejército" "Cuartel General 6o Ejército" "Cuartel General 7o Ejército" "Cuartel General 8o Ejército" "Cuartel General 9o Ejército" "Cuartel General 10o Ejército"
+} 
+infantry_brigade = { 
+	"1. División de Infantería" "2. División de Infantería" "3. División de Infantería" "4. División de Infantería" "5. División de Infantería" "6. División de Infantería" "7. División de Infantería" "8. División de Infantería" "9. División de Infantería" "10. División de Infantería" "11. División de Infantería" 
+		"12. División de Infantería" "13. División de Infantería" "14. División de Infantería" "15. División de Infantería" "16. División de Infantería" "17. División de Infantería" "18. División de Infantería" "19. División de Infantería" "20. División de Infantería" "21. División de Infantería" "22. División de Infantería" 
+		"23. División de Infantería" "24. División de Infantería" "25. División de Infantería" "26. División de Infantería" "27. División de Infantería" "28. División de Infantería" "29. División de Infantería" "30. División de Infantería" 
+	}
+interceptor = { 
+"1. Grupo Aéreo de Caza" "2. Grupo Aéreo de Caza" "3. Grupo Aéreo de Caza" "4. Grupo Aéreo de Caza" "5. Grupo Aéreo de Caza" "6. Grupo Aéreo de Caza" "7. Grupo Aéreo de Caza" "8. Grupo Aéreo de Caza" "9. Grupo Aéreo de Caza" "10. Grupo Aéreo de Caza" "11. Grupo Aéreo de Caza" "12. Grupo Aéreo de Caza" "13. Grupo Aéreo de Caza" "14. Grupo Aéreo de Caza" "15. Grupo Aéreo de Caza" "16. Grupo Aéreo de Caza" "17. Grupo Aéreo de Caza" "18. Grupo Aéreo de Caza" "19. Grupo Aéreo de Caza" "20. Grupo Aéreo de Caza"
+} 
+light_armor_brigade = { 
+"I División Celere" "II División Celere" "III División Celere" "IV División Celere" "V División Celere" "VI División Celere" "VII División Celere" "VIII División Celere" "IX División Celere" "X División Celere" "XI División Celere" 
+		"XII División Celere" "XIII División Celere" "XIV División Celere" "XV División Celere" "XVI División Celere" "XVII División Celere" "XVIII División Celere" "XIX División Celere" "XX División Celere" 
+	}
+light_cruiser = { 
+"BACH Araucano" "BACH Santiago de Chile" "BACH Valparaiso" "BACH Valdivia" "BACH Osorno" "BACH Punta Arenas" "BACH Chillán" "BACH Talcahuano" "BACH Rancagua" "BACH Coquimbo"
+} 
+marine_brigade = { 
+"1. División de Infantería de Marina" "2. División de Infantería de Marina" "3. División de Infantería de Marina" "4. División de Infantería de Marina" "5. División de Infantería de Marina" "6. División de Infantería de Marina" "7. División de Infantería de Marina" "8. División de Infantería de Marina" "9. División de Infantería de Marina" "10. División de Infantería de Marina"
+} 
+militia_brigade = { 
+"I Carabineros de Chile" "II Carabineros de Chile" "III Carabineros de Chile" "IV Carabineros de Chile" "V Carabineros de Chile" "VI Carabineros de Chile" "VII Carabineros de Chile" "VIII Carabineros de Chile" "IX Carabineros de Chile" "X Carabineros de Chile" "XI Carabineros de Chile" "XII Carabineros de Chile" "XIII Carabineros de Chile" "XIV Carabineros de Chile" "XV Carabineros de Chile" "XVI Carabineros de Chile" "XVII Carabineros de Chile" "XVIII Carabineros de Chile" "XIX Carabineros de Chile" "XX Carabineros de Chile" "XXI Carabineros de Chile" "XXII Carabineros de Chile" "XXIII Carabineros de Chile" "XXIV Carabineros de Chile" "XXV Carabineros de Chile" "XXVI Carabineros de Chile" "XXVII Carabineros de Chile" "XXVIII Carabineros de Chile" "XXIX Carabineros de Chile" "XXX Carabineros de Chile"
+} 
+submarine = { 
+"Flotilla de Submarinos nro. 1" "Flotilla de Submarinos nro. 2" "Flotilla de Submarinos nro. 3" "Flotilla de Submarinos nro. 4" "Flotilla de Submarinos nro. 5" "Flotilla de Submarinos nro. 6" "Flotilla de Submarinos nro. 7" "Flotilla de Submarinos nro. 8" "Flotilla de Submarinos nro. 9" "Flotilla de Submarinos nro. 10" "Flotilla de Submarinos nro. 11" "Flotilla de Submarinos nro. 12" "Flotilla de Submarinos nro. 13" "Flotilla de Submarinos nro. 14" "Flotilla de Submarinos nro. 15"
+} 
+tactical_bomber = { 
+"1. Grupo Aéreo Táctico" "2. Grupo Aéreo Táctico" "3. Grupo Aéreo Táctico" "4. Grupo Aéreo Táctico" "5. Grupo Aéreo Táctico" "6. Grupo Aéreo Táctico" "7. Grupo Aéreo Táctico" "8. Grupo Aéreo Táctico" "9. Grupo Aéreo Táctico" "10. Grupo Aéreo Táctico" "11. Grupo Aéreo Táctico" "12. Grupo Aéreo Táctico" "13. Grupo Aéreo Táctico" "14. Grupo Aéreo Táctico" "15. Grupo Aéreo Táctico"
+} 
+transport_ship = { 
+"Transporte Naval del Ejército 1" "Transporte Naval del Ejército 2" "Transporte Naval del Ejército 3" "Transporte Naval del Ejército 4" "Transporte Naval del Ejército 5" "Transporte Naval del Ejército 6" "Transporte Naval del Ejército 7" "Transporte Naval del Ejército 8" "Transporte Naval del Ejército 9" "Transporte Naval del Ejército 10" "Transporte Naval del Ejército 11" "Transporte Naval del Ejército 12" "Transporte Naval del Ejército 13" "Transporte Naval del Ejército 14" "Transporte Naval del Ejército 15"
+}
+
+
+}
+
+
+ministers = {
+210202 = {
+name = "Óscar Viel Cavero "
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+armament_minister = air_superiority_proponent
+start_date = 1915.1.1
+}
+
+210030 = {
+name = "Abraham Ortega Aguayo"
+ideology = social_democrat
+loyalty = 1.00
+picture = M44051
+foreign_minister = iron_fisted_brute
+minister_of_security = crime_fighter
+start_date = 1938.1.1
+}
+
+210239 = {
+name = "Abraham Ovalle "
+ideology = social_conservative
+loyalty = 1.00
+picture = 190
+minister_of_security = silent_lawyer
+start_date = 1910.1.1
+}
+
+210150 = {
+name = "Agustín Edwards Mac-Clure "
+ideology = market_liberal
+loyalty = 1.00
+picture = 193
+foreign_minister = general_staffer
+start_date = 1910.1.1
+}
+
+210233 = {
+name = "Agustín Edwards Mac-Clure"
+ideology = market_liberal
+loyalty = 1.00
+picture = 193
+minister_of_security = back_stabber
+start_date = 1910.1.1
+}
+
+210163 = {
+name = "Alamiro Huidobro Valdés "
+ideology = social_conservative
+loyalty = 1.00
+picture = unknown
+foreign_minister = iron_fisted_brute
+start_date = 1910.1.1
+}
+
+210268 = {
+name = "Alcibíades RoldÁn Álvarez"
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+minister_of_security = back_stabber
+start_date = 1922.1.1
+}
+
+210188 = {
+name = "Alejandro Hunneus "
+ideology = social_conservative
+loyalty = 1.00
+picture = 1173
+armament_minister = administrative_genius
+start_date = 1910.1.1
+}
+
+210158 = {
+name = "Alejandro Lira Lira "
+ideology = social_conservative
+loyalty = 1.00
+picture = 1268
+foreign_minister = ideological_crusader
+start_date = 1910.1.1
+}
+
+210189 = {
+name = "Alejandro Rosellot "
+ideology = social_liberal
+loyalty = 1.00
+picture = unknown
+armament_minister = theoretical_scientist
+start_date = 1910.1.1
+}
+
+210194 = {
+name = "Alfredo Barros ErrÁzuriz "
+ideology = social_conservative
+loyalty = 1.00
+picture = 2215
+armament_minister = administrative_genius
+start_date = 1910.1.1
+}
+
+210133 = {
+name = "Alfredo Duhalde Vasquez"
+ideology = social_democrat
+loyalty = 1.00
+picture = M44159
+head_of_state = pig_headed_isolationist
+head_of_government = naive_optimist
+start_date = 1946.1.1
+}
+
+210222 = {
+name = "Alfredo Ewing "
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+armament_minister = resource_industrialist
+start_date = 1922.1.1
+}
+
+210182 = {
+name = "Aníbal Rodríguez "
+ideology = market_liberal
+loyalty = 1.00
+picture = 2348
+armament_minister = administrative_genius
+start_date = 1910.1.1
+}
+
+210252 = {
+name = "Anselmo Hevia Requelme"
+ideology = social_liberal
+loyalty = 1.00
+picture = 2349
+minister_of_security = crime_fighter
+start_date = 1917.1.1
+}
+
+210155 = {
+name = "Antonio Huneeus Gana "
+ideology = market_liberal
+loyalty = 1.00
+picture = 2350
+foreign_minister = the_cloak_n_dagger_schemer
+start_date = 1910.1.1
+}
+
+210261 = {
+name = "Antonio Huneeus Gana"
+ideology = market_liberal
+loyalty = 1.00
+picture = 2350
+minister_of_security = back_stabber
+start_date = 1920.1.1
+}
+
+210073 = {
+name = "Antonio Huneeus"
+ideology = social_liberal
+loyalty = 1.00
+picture = M44095
+minister_of_security = man_of_the_people
+start_date = 1937.1.1
+}
+
+210012 = {
+name = "Antonio J. Rios Morales"
+ideology = social_democrat
+loyalty = 1.00
+picture = M44032
+head_of_state = weary_stiff_neck
+head_of_government = flamboyant_tough_guy
+start_date = 1942.1.1
+}
+
+210072 = {
+name = "Antonio J. Rios"
+ideology = social_democrat
+loyalty = 1.00
+picture = M44032
+minister_of_security = prince_of_terror
+start_date = 1945.1.1
+}
+
+210186 = {
+name = "Arístides Pinto Concha "
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 2351
+armament_minister = laissez_faires_capitalist
+start_date = 1910.1.1
+}
+
+210274 = {
+name = "Arístides Pinto Concha"
+ideology = social_conservative
+loyalty = 1.00
+picture = 2351
+chief_of_staff = school_of_defence
+chief_of_army = decisive_battle_doctrine
+chief_of_air = army_aviation_doctrine
+start_date = 1918.1.1
+}
+
+210094 = {
+name = "Ariosto Herrera"
+ideology = fascistic
+loyalty = 1.00
+picture = M44016
+minister_of_intelligence = logistics_specialist
+chief_of_air = air_superiority_doctrine
+start_date = 1938.1.1
+}
+
+210177 = {
+name = "Armando Jaramillo Valderrama "
+ideology = market_liberal
+loyalty = 1.00
+picture = 2352
+foreign_minister = iron_fisted_brute
+start_date = 1922.1.1
+}
+
+210260 = {
+name = "Armando Jaramillo Valderrama"
+ideology = market_liberal
+loyalty = 1.00
+picture = 2352
+minister_of_security = silent_lawyer
+start_date = 1920.1.1
+}
+
+210251 = {
+name = "Armando Quezada AcharÁn"
+ideology = social_liberal
+loyalty = 1.00
+picture = unknown
+minister_of_security = prince_of_terror
+start_date = 1916.1.1
+}
+
+210001 = {
+name = "Arturo Alessandri Palma"
+ideology = social_liberal
+loyalty = 1.00
+picture = M44001
+head_of_state = stern_imperialist
+head_of_government = smiling_oilman
+minister_of_security = compassionate_gentleman
+start_date = 1933.1.1
+}
+
+210164 = {
+name = "Arturo Besa Navarro "
+ideology = market_liberal
+loyalty = 1.00
+picture = 2354
+foreign_minister = general_staffer
+start_date = 1915.1.1
+}
+
+210098 = {
+name = "Arturo Espinoza Mujica"
+ideology = social_conservative
+loyalty = 1.00
+picture = M44122
+chief_of_staff = school_of_fire_support
+chief_of_army = static_defence_doctrine
+start_date = 1945.1.1
+}
+
+210067 = {
+name = "Augustin Edwards"
+ideology = leninist
+loyalty = 1.00
+picture = M44089
+armament_minister = air_superiority_proponent
+start_date = 1942.1.1
+}
+
+210292 = {
+name = "Augusto Pinochet"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 6098
+head_of_government = old_general
+chief_of_staff = school_of_manoeuvre
+start_date = 1974.1.1
+}
+
+210068 = {
+name = "Aurelio Celedon Palma"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M44090
+armament_minister = strategic_air_proponent
+start_date = 1946.1.1
+}
+
+210181 = {
+name = "Belisario Prats Bello "
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+armament_minister = laissez_faires_capitalist
+start_date = 1910.1.1
+}
+
+210027 = {
+name = "C.L. Blest Riffo"
+ideology = leninist
+loyalty = 1.00
+picture = M44022
+head_of_government = old_admiral
+armament_minister = theoretical_scientist
+start_date = 1938.1.1
+}
+
+210265 = {
+name = "Carlos Alberto Ruiz Bahamonde"
+ideology = social_liberal
+loyalty = 1.00
+picture = 2355
+minister_of_security = prince_of_terror
+start_date = 1921.1.1
+}
+
+210174 = {
+name = "Carlos Aldunate Solar "
+ideology = social_conservative
+loyalty = 1.00
+picture = 2356
+foreign_minister = apologetic_clerk
+start_date = 1920.1.1
+}
+
+210042 = {
+name = "Carlos D. Soto"
+ideology = social_conservative
+loyalty = 1.00
+picture = M44063
+foreign_minister = the_cloak_n_dagger_schemer
+start_date = 1943.1.1
+}
+
+210051 = {
+name = "Carlos Fuentes Rabe"
+ideology = social_democrat
+loyalty = 1.00
+picture = M44072
+armament_minister = military_entrepreneur
+minister_of_intelligence = industrial_specialist
+chief_of_army = decisive_battle_doctrine
+start_date = 1941.1.1
+}
+
+210047 = {
+name = "Carlos Garcia Palacios"
+ideology = social_democrat
+loyalty = 1.00
+picture = M44068
+armament_minister = theoretical_scientist
+start_date = 1938.1.1
+}
+
+210014 = {
+name = "Carlos Ibanez del Campo"
+ideology = social_conservative
+loyalty = 1.00
+picture = M44035
+head_of_state = resigned_generalissimo
+head_of_government = old_general
+minister_of_security = man_of_the_people
+start_date = 1946.1.1
+}
+
+210007 = {
+name = "Carlos Jouanne de la Motte"
+ideology = social_liberal
+loyalty = 1.00
+picture = M44007
+chief_of_staff = school_of_fire_support
+chief_of_navy = open_seas_doctrine
+start_date = 1933.1.1
+}
+
+210081 = {
+name = "Carlos Keller"
+ideology = fascistic
+loyalty = 1.00
+picture = M44015
+minister_of_security = back_stabber
+start_date = 1938.1.1
+}
+
+210185 = {
+name = "Carlos Larraín Claro "
+ideology = market_liberal
+loyalty = 1.00
+picture = 2357
+armament_minister = theoretical_scientist
+start_date = 1910.1.1
+}
+
+210065 = {
+name = "Carlos Puga Monsalve"
+ideology = fascistic
+loyalty = 1.00
+picture = M44087
+armament_minister = air_to_sea_proponent
+minister_of_intelligence = technical_specialist
+chief_of_staff = school_of_mass_combat
+start_date = 1944.1.1
+}
+
+210211 = {
+name = "Carlos Silva Cruz "
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+armament_minister = air_to_ground_proponent
+start_date = 1918.1.1
+}
+
+210191 = {
+name = "Claudio Vicuña Subercaseaux "
+ideology = market_liberal
+loyalty = 1.00
+picture = 2358
+armament_minister = laissez_faires_capitalist
+start_date = 1910.1.1
+}
+
+210198 = {
+name = "Cornelio Saavedra Montt "
+ideology = market_liberal
+loyalty = 1.00
+picture = 2359
+armament_minister = theoretical_scientist
+start_date = 1910.1.1
+}
+
+210264 = {
+name = "Cornelio Saavedra Montt"
+ideology = market_liberal
+loyalty = 1.00
+picture = 2359
+minister_of_security = man_of_the_people
+start_date = 1921.1.1
+}
+
+210031 = {
+name = "CristobÁl Saénz Cerda"
+ideology = social_democrat
+loyalty = 1.00
+picture = M44052
+foreign_minister = apologetic_clerk
+armament_minister = administrative_genius
+minister_of_security = prince_of_terror
+start_date = 1940.1.1
+}
+
+210167 = {
+name = "Daniel Feliú Manterola "
+ideology = social_liberal
+loyalty = 1.00
+picture = unknown
+foreign_minister = apologetic_clerk
+start_date = 1916.1.1
+}
+
+210183 = {
+name = "Darío Zañartu "
+ideology = market_liberal
+loyalty = 1.00
+picture = 2360
+armament_minister = resource_industrialist
+start_date = 1910.1.1
+}
+
+210093 = {
+name = "Dario Cellejas Rojas"
+ideology = social_conservative
+loyalty = 1.00
+picture = M44116
+minister_of_intelligence = logistics_specialist
+chief_of_staff = school_of_psychology
+start_date = 1946.1.1
+}
+
+210010 = {
+name = "Dario Mujica Gamboa"
+ideology = social_liberal
+loyalty = 1.00
+picture = M44010
+armament_minister = air_superiority_proponent
+minister_of_security = efficient_sociopath
+minister_of_intelligence = technical_specialist
+chief_of_air = air_superiority_doctrine
+start_date = 1933.1.1
+}
+
+210104 = {
+name = "Diaz Valderrama"
+ideology = fascistic
+loyalty = 1.00
+picture = M44017
+chief_of_staff = school_of_defence
+chief_of_army = static_defence_doctrine
+start_date = 1938.1.1
+}
+
+210120 = {
+name = "Diego Aracena"
+ideology = social_democrat
+loyalty = 1.00
+picture = M44146
+chief_of_air = air_superiority_doctrine
+start_date = 1938.1.1
+}
+
+210248 = {
+name = "Domingo AmunÁtegui Solar"
+ideology = market_liberal
+loyalty = 1.00
+picture = 2361
+minister_of_security = efficient_sociopath
+start_date = 1916.1.1
+}
+
+210008 = {
+name = "E. Novoa Fuentes"
+ideology = social_liberal
+loyalty = 1.00
+picture = M44008
+chief_of_staff = school_of_defence
+chief_of_army = static_defence_doctrine
+start_date = 1933.1.1
+}
+
+210230 = {
+name = "Eduardo Charme FernÁndez"
+ideology = social_conservative
+loyalty = 1.00
+picture = 2362
+minister_of_security = prince_of_terror
+start_date = 1910.1.1
+}
+
+210004 = {
+name = "Eduardo Hillman"
+ideology = social_liberal
+loyalty = 1.00
+picture = M44004
+armament_minister = resource_industrialist
+minister_of_intelligence = naval_intelligence_specialist
+start_date = 1933.1.1
+}
+
+210165 = {
+name = "Eduardo Suárez Mujica "
+ideology = social_liberal
+loyalty = 1.00
+picture = 3410
+foreign_minister = ideological_crusader
+start_date = 1915.1.1
+}
+
+210234 = {
+name = "Elías Fernández Albano"
+ideology = market_liberal
+loyalty = 1.00
+picture = 3416
+head_of_state = stern_imperialist
+head_of_government = smiling_oilman
+minister_of_security = efficient_sociopath
+start_date = 1910.1.1
+}
+
+210247 = {
+name = "Eliodoro YÁñez Ponce de León"
+ideology = market_liberal
+loyalty = 1.00
+picture = 3419
+minister_of_security = back_stabber
+start_date = 1915.1.1
+}
+
+210176 = {
+name = "Emilio Bello Codecido "
+ideology = market_liberal
+loyalty = 1.00
+picture = 3425
+foreign_minister = the_cloak_n_dagger_schemer
+start_date = 1921.1.1
+}
+
+210272 = {
+name = "Emilio Körner Henze"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3427
+chief_of_staff = school_of_fire_support
+chief_of_army = guns_and_butter_doctrine
+start_date = 1910.1.1
+}
+
+210153 = {
+name = "Enrique A. Rodríguez Carmona "
+ideology = market_liberal
+loyalty = 1.00
+picture = 3434
+foreign_minister = apologetic_clerk
+start_date = 1910.1.1
+}
+
+210212 = {
+name = "Enrique Balmaceda Toro "
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+armament_minister = corrupt_kleptocrat
+start_date = 1919.1.1
+}
+
+210206 = {
+name = "Enrique Bermúdez de la Paz "
+ideology = market_liberal
+loyalty = 1.00
+picture = 3440
+armament_minister = theoretical_scientist
+start_date = 1916.1.1
+}
+
+210254 = {
+name = "Enrique Bermúdez de la Paz"
+ideology = market_liberal
+loyalty = 1.00
+picture = 3440
+minister_of_security = back_stabber
+start_date = 1917.1.1
+}
+
+210231 = {
+name = "Enrique Rodríguez Carmona"
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+minister_of_security = crime_fighter
+start_date = 1910.1.1
+}
+
+210157 = {
+name = "Enrique Villegas Echiburú "
+ideology = market_liberal
+loyalty = 1.00
+picture = 3441
+foreign_minister = general_staffer
+start_date = 1910.1.1
+}
+
+210244 = {
+name = "Enrique Villegas Echiburú"
+ideology = market_liberal
+loyalty = 1.00
+picture = 3441
+minister_of_security = prince_of_terror
+start_date = 1910.1.1
+}
+
+210057 = {
+name = "Enrique Villegas"
+ideology = social_conservative
+loyalty = 1.00
+picture = M44078
+armament_minister = laissez_faires_capitalist
+start_date = 1938.1.1
+}
+
+210246 = {
+name = "Enrique Zañartu Prieto"
+ideology = market_liberal
+loyalty = 1.00
+picture = 3449
+minister_of_security = silent_lawyer
+start_date = 1910.1.1
+}
+
+210035 = {
+name = "Ernesto Barras Jarpa"
+ideology = social_democrat
+loyalty = 1.00
+picture = M44056
+foreign_minister = general_staffer
+armament_minister = corrupt_kleptocrat
+minister_of_security = crooked_kleptocrat
+start_date = 1942.1.1
+}
+
+210172 = {
+name = "Ernesto Barros Jarpa "
+ideology = market_liberal
+loyalty = 1.00
+picture = 3452
+foreign_minister = ideological_crusader
+start_date = 1919.1.1
+}
+
+210097 = {
+name = "Ernesto M. Orlando"
+ideology = social_democrat
+loyalty = 1.00
+picture = M44121
+chief_of_staff = school_of_mass_combat
+start_date = 1938.1.1
+}
+
+210092 = {
+name = "Federico Claude"
+ideology = social_liberal
+loyalty = 1.00
+picture = M44115
+minister_of_intelligence = industrial_specialist
+start_date = 1943.1.1
+}
+
+210084 = {
+name = "Federico Escamante"
+ideology = social_democrat
+loyalty = 1.00
+picture = M44106
+minister_of_intelligence = logistics_specialist
+start_date = 1938.1.1
+}
+
+210256 = {
+name = "Federico Puga Borne "
+ideology = social_liberal
+loyalty = 1.00
+picture = 3456
+minister_of_security = compassionate_gentleman
+start_date = 1918.1.1
+}
+
+210046 = {
+name = "Fernando Brown Morales"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M44067
+foreign_minister = apologetic_clerk
+start_date = 1946.1.1
+}
+
+210263 = {
+name = "Francisco Garcés Gana"
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+minister_of_security = compassionate_gentleman
+start_date = 1921.1.1
+}
+
+210287 = {
+name = "Francisco Nef Jara"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3461
+chief_of_navy = base_control_doctrine
+start_date = 1920.1.1
+}
+
+210041 = {
+name = "Francisco O'Ryan Orrego"
+ideology = social_conservative
+loyalty = 1.00
+picture = M44062
+foreign_minister = general_staffer
+armament_minister = battle_fleet_proponent
+chief_of_navy = decisive_naval_battle_doctrine
+start_date = 1942.1.1
+}
+
+210052 = {
+name = "Francisco Walker Linares"
+ideology = social_democrat
+loyalty = 1.00
+picture = M44073
+armament_minister = tank_proponent
+start_date = 1942.1.1
+}
+
+210013 = {
+name = "Gabriel Gonzalez Videla"
+ideology = social_democrat
+loyalty = 1.00
+picture = M44033
+head_of_state = popular_figurehead
+head_of_government = backroom_backstabber
+start_date = 1946.1.1
+}
+
+210179 = {
+name = "Galvarino Gallardo Nieto "
+ideology = social_liberal
+loyalty = 1.00
+picture = unknown
+foreign_minister = ideological_crusader
+start_date = 1922.1.1
+}
+
+210224 = {
+name = "Gaspar Mora Sotomayor "
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+armament_minister = theoretical_scientist
+start_date = 1922.1.1
+}
+
+210117 = {
+name = "Gaston Kulzcewski Garcia"
+ideology = social_conservative
+loyalty = 1.00
+picture = M44142
+chief_of_navy = base_control_doctrine
+start_date = 1946.1.1
+}
+
+210207 = {
+name = "GermÁn Riesco ErrÁzuriz "
+ideology = market_liberal
+loyalty = 1.00
+picture = 3462
+armament_minister = corrupt_kleptocrat
+start_date = 1917.1.1
+}
+
+210241 = {
+name = "Guillermo Barros Jara"
+ideology = market_liberal
+loyalty = 1.00
+picture = 3463
+minister_of_security = efficient_sociopath
+start_date = 1910.1.1
+}
+
+210166 = {
+name = "Guillermo Pereira Iñiguez "
+ideology = social_conservative
+loyalty = 1.00
+picture = 3471
+foreign_minister = great_compromiser
+start_date = 1916.1.1
+}
+
+210196 = {
+name = "Guillermo Soublette Garín "
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3473
+armament_minister = battle_fleet_proponent
+start_date = 1910.1.1
+}
+
+210286 = {
+name = "Guillermo Soublette Garín"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3473
+chief_of_navy = indirect_approach_doctrine
+start_date = 1920.1.1
+}
+
+210240 = {
+name = "Guillero Rivera"
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+minister_of_security = back_stabber
+start_date = 1910.1.1
+}
+
+210002 = {
+name = "Gustavo Ross Santa Maria"
+ideology = social_liberal
+loyalty = 1.00
+picture = M44002
+head_of_state = popular_figurehead
+head_of_government = naive_optimist
+armament_minister = administrative_genius
+start_date = 1933.1.1
+}
+
+210219 = {
+name = "Gustavo Silva Campos "
+ideology = social_liberal
+loyalty = 1.00
+picture = unknown
+armament_minister = resource_industrialist
+start_date = 1921.1.1
+}
+
+210105 = {
+name = "Gustavo Silva"
+ideology = leninist
+loyalty = 1.00
+picture = M44027
+chief_of_staff = school_of_manoeuvre
+chief_of_navy = indirect_approach_doctrine
+chief_of_air = army_aviation_doctrine
+start_date = 1938.1.1
+}
+
+210258 = {
+name = "Héctor Arancibia Laso"
+ideology = social_liberal
+loyalty = 1.00
+picture = 3474
+minister_of_security = prince_of_terror
+start_date = 1919.1.1
+}
+
+210217 = {
+name = "HernÁn Correa Roberts "
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+armament_minister = military_entrepreneur
+start_date = 1920.1.1
+}
+
+210118 = {
+name = "Hernan Sarratea"
+ideology = fascistic
+loyalty = 1.00
+picture = M44019
+chief_of_navy = decisive_naval_battle_doctrine
+start_date = 1938.1.1
+}
+
+210215 = {
+name = "Ignacio Marchant Scott "
+ideology = market_liberal
+loyalty = 1.00
+picture = 3476
+armament_minister = administrative_genius
+start_date = 1920.1.1
+}
+
+210123 = {
+name = "Ismael Sarazua Teran"
+ideology = social_conservative
+loyalty = 1.00
+picture = M44149
+chief_of_air = vertical_envelopment_doctrine
+start_date = 1942.1.1
+}
+
+210232 = {
+name = "Ismael Tocornal Tocornal"
+ideology = social_liberal
+loyalty = 1.00
+picture = 3477
+minister_of_security = silent_lawyer
+start_date = 1910.1.1
+}
+
+210036 = {
+name = "J. Fernandez y Fernandéz"
+ideology = social_democrat
+loyalty = 1.00
+picture = M44057
+foreign_minister = the_cloak_n_dagger_schemer
+start_date = 1942.1.1
+}
+
+210016 = {
+name = "J.G. von Mareés"
+ideology = fascistic
+loyalty = 1.00
+picture = M44011
+head_of_state = autocratic_charmer
+foreign_minister = ideological_crusader
+start_date = 1938.1.1
+}
+
+210038 = {
+name = "J.R.Guiterréz Allende"
+ideology = social_liberal
+loyalty = 1.00
+picture = M44059
+foreign_minister = biased_intellectual
+minister_of_security = crime_fighter
+start_date = 1938.1.1
+}
+
+210229 = {
+name = "Javier Angel Figueroa Larraín"
+ideology = market_liberal
+loyalty = 1.00
+picture = 3480
+minister_of_security = man_of_the_people
+start_date = 1910.1.1
+}
+
+210131 = {
+name = "Jeronimo Mendez Arancíbia"
+ideology = social_democrat
+loyalty = 1.00
+picture = M44157
+head_of_state = stern_imperialist
+head_of_government = silent_workhorse
+start_date = 1941.1.1
+}
+
+210154 = {
+name = "Joaquín Figueroa Larraín "
+ideology = market_liberal
+loyalty = 1.00
+picture = 3486
+foreign_minister = biased_intellectual
+start_date = 1910.1.1
+}
+
+210285 = {
+name = "Joaquín Muñoz Hurtado"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3488
+chief_of_navy = power_projection_doctrine
+start_date = 1910.1.1
+}
+
+210138 = {
+name = "Jorge Alessandri Rodriguez"
+ideology = social_conservative
+loyalty = 1.00
+picture = M44164
+head_of_government = corporate_suit
+start_date = 1952.1.1
+}
+
+210220 = {
+name = "Jorge Andrés Guerra Toledo "
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+armament_minister = infantry_proponent
+start_date = 1921.1.1
+}
+
+210199 = {
+name = "Jorge Boonen Rivera "
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 3489
+armament_minister = administrative_genius
+start_date = 1910.1.1
+}
+
+210270 = {
+name = "Jorge Boonen Rivera"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3489
+minister_of_intelligence = industrial_specialist
+chief_of_staff = school_of_manoeuvre
+chief_of_army = armoured_spearhead_doctrine
+start_date = 1910.1.1
+}
+
+210171 = {
+name = "Jorge Matte Gormaz "
+ideology = market_liberal
+loyalty = 1.00
+picture = 3994
+foreign_minister = general_staffer
+armament_minister = resource_industrialist
+start_date = 1918.1.1
+}
+
+210259 = {
+name = "Jorge Matte Gormaz"
+ideology = market_liberal
+loyalty = 1.00
+picture = 3994
+minister_of_security = crime_fighter
+start_date = 1920.1.1
+}
+
+210282 = {
+name = "Jorge Montt Álvarez"
+ideology = social_conservative
+loyalty = 1.00
+picture = 3995
+chief_of_navy = base_control_doctrine
+start_date = 1910.1.1
+}
+
+210204 = {
+name = "Jorge Valdivieso Blanco "
+ideology = market_liberal
+loyalty = 1.00
+picture = 7277
+armament_minister = strategic_air_proponent
+start_date = 1916.1.1
+}
+
+210245 = {
+name = "José Elías Balmaceda FernÁndez"
+ideology = market_liberal
+loyalty = 1.00
+picture = 8433
+minister_of_security = crime_fighter
+start_date = 1910.1.1
+}
+
+210255 = {
+name = "José Florencio Valdés Cuevas"
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+minister_of_security = efficient_sociopath
+start_date = 1917.1.1
+}
+
+210055 = {
+name = "José Luis SÁnchez Besa"
+ideology = social_liberal
+loyalty = 1.00
+picture = M44076
+armament_minister = air_to_ground_proponent
+chief_of_air = carpet_bombing_doctrine
+start_date = 1937.1.1
+}
+
+210266 = {
+name = "José Maza FernÁndez"
+ideology = market_liberal
+loyalty = 1.00
+picture = 8438
+minister_of_security = crime_fighter
+start_date = 1922.1.1
+}
+
+210149 = {
+name = "José Rafael Balmaceda FernÁndez "
+ideology = market_liberal
+loyalty = 1.00
+picture = 8439
+foreign_minister = iron_fisted_brute
+start_date = 1910.1.1
+}
+
+210238 = {
+name = "José Ramón Gutiérrez"
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+minister_of_security = crime_fighter
+start_date = 1910.1.1
+}
+
+210162 = {
+name = "Juan Enrique Tocornal Doursther "
+ideology = social_conservative
+loyalty = 1.00
+picture = 8440
+foreign_minister = the_cloak_n_dagger_schemer
+start_date = 1910.1.1
+}
+
+210141 = {
+name = "Juan Luis Sanfuentes"
+ideology = market_liberal
+loyalty = 1.00
+picture = 8441
+head_of_state = insignificant_layman
+head_of_government = happy_amateur
+start_date = 1915.1.1
+}
+
+210227 = {
+name = "Juan Ortiz Vega"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+armament_minister = tank_proponent
+chief_of_air = carpet_bombing_doctrine
+start_date = 1922.1.1
+}
+
+210225 = {
+name = "Juan Pablo Bennett "
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8442
+armament_minister = corrupt_kleptocrat
+start_date = 1922.1.1
+}
+
+210048 = {
+name = "Juan Rios Morales"
+ideology = social_democrat
+loyalty = 1.00
+picture = M44069
+armament_minister = resource_industrialist
+minister_of_intelligence = dismal_enigma
+start_date = 1938.1.1
+}
+
+210114 = {
+name = "Juan Rodriguez"
+ideology = social_democrat
+loyalty = 1.00
+picture = M44138
+chief_of_navy = open_seas_doctrine
+start_date = 1938.1.1
+}
+
+210006 = {
+name = "Julio Allard Pinto"
+ideology = social_liberal
+loyalty = 1.00
+picture = M44006
+minister_of_intelligence = naval_intelligence_specialist
+chief_of_army = elastic_defence_doctrine
+start_date = 1933.1.1
+}
+
+210115 = {
+name = "Julio Gerken Mahn"
+ideology = social_democrat
+loyalty = 1.00
+picture = M44139
+chief_of_navy = power_projection_doctrine
+start_date = 1944.1.1
+}
+
+210210 = {
+name = "Ladislao ErrÁzuriz Lazcano "
+ideology = market_liberal
+loyalty = 1.00
+picture = 8443
+armament_minister = administrative_genius
+start_date = 1918.1.1
+}
+
+210284 = {
+name = "Lindor Pérez Gacitúa"
+ideology = social_conservative
+loyalty = 1.00
+picture = 8444
+chief_of_navy = decisive_naval_battle_doctrine
+start_date = 1910.1.1
+}
+
+210034 = {
+name = "Luis Alamos Barros"
+ideology = social_democrat
+loyalty = 1.00
+picture = M44055
+foreign_minister = ideological_crusader
+armament_minister = infantry_proponent
+start_date = 1941.1.1
+}
+
+210283 = {
+name = "Luis Alberto Goñi Simpson"
+ideology = social_conservative
+loyalty = 1.00
+picture = 8445
+chief_of_navy = open_seas_doctrine
+start_date = 1910.1.1
+}
+
+210170 = {
+name = "Luis Aldunate Echeverría "
+ideology = market_liberal
+loyalty = 1.00
+picture = 8446
+foreign_minister = iron_fisted_brute
+start_date = 1918.1.1
+}
+
+210221 = {
+name = "Luis Altamirano Talavera "
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8447
+armament_minister = corrupt_kleptocrat
+start_date = 1921.1.1
+}
+
+210143 = {
+name = "Luis Altamirano Talavera"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8447
+head_of_state = power_hungry_demagogue
+head_of_government = old_general
+minister_of_security = silent_lawyer
+minister_of_intelligence = technical_specialist
+chief_of_staff = school_of_psychology
+chief_of_army = static_defence_doctrine
+start_date = 1924.1.1
+}
+
+210039 = {
+name = "Luis Arteaga Garcia"
+ideology = social_liberal
+loyalty = 1.00
+picture = M44023
+foreign_minister = the_cloak_n_dagger_schemer
+start_date = 1938.1.1
+}
+
+210169 = {
+name = "Luis Barros Borgoño "
+ideology = market_liberal
+loyalty = 1.00
+picture = 8448
+foreign_minister = the_cloak_n_dagger_schemer
+start_date = 1916.1.1
+}
+
+210223 = {
+name = "Luis Brieba "
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+armament_minister = administrative_genius
+start_date = 1922.1.1
+}
+
+210190 = {
+name = "Luis Devoto "
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+armament_minister = corrupt_kleptocrat
+start_date = 1910.1.1
+}
+
+210226 = {
+name = "Luis Gómez Carreño "
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8449
+armament_minister = battle_fleet_proponent
+start_date = 1922.1.1
+}
+
+210151 = {
+name = "Luis Izquierdo Fredes "
+ideology = market_liberal
+loyalty = 1.00
+picture = 8450
+foreign_minister = ideological_crusader
+start_date = 1910.1.1
+}
+
+210235 = {
+name = "Luis Izquierdo Fredes"
+ideology = market_liberal
+loyalty = 1.00
+picture = 8450
+minister_of_security = compassionate_gentleman
+start_date = 1910.1.1
+}
+
+210106 = {
+name = "Luis Otero Mujica"
+ideology = social_democrat
+loyalty = 1.00
+picture = M44130
+chief_of_army = armoured_spearhead_doctrine
+start_date = 1938.1.1
+}
+
+210043 = {
+name = "Luis Renard Valenzuela"
+ideology = social_conservative
+loyalty = 1.00
+picture = M44064
+foreign_minister = apologetic_clerk
+start_date = 1946.1.1
+}
+
+210253 = {
+name = "Luis Serrano Arrieta"
+ideology = social_liberal
+loyalty = 1.00
+picture = 8451
+minister_of_security = silent_lawyer
+start_date = 1917.1.1
+}
+
+210203 = {
+name = "Luis Vicuña Cifuentes "
+ideology = market_liberal
+loyalty = 1.00
+picture = 8452
+armament_minister = administrative_genius
+start_date = 1916.1.1
+}
+
+210102 = {
+name = "Luis Vidal Vargas"
+ideology = social_conservative
+loyalty = 1.00
+picture = M44126
+chief_of_staff = school_of_fire_support
+start_date = 1946.1.1
+}
+
+210033 = {
+name = "Manuel Bianchi Gúndian"
+ideology = social_democrat
+loyalty = 1.00
+picture = M44054
+foreign_minister = iron_fisted_brute
+armament_minister = infantry_proponent
+start_date = 1940.1.1
+}
+
+210054 = {
+name = "Manuel C. Pereira"
+ideology = social_democrat
+loyalty = 1.00
+picture = M44075
+armament_minister = resource_industrialist
+start_date = 1946.1.1
+}
+
+210024 = {
+name = "Manuel Mora Miranda"
+ideology = social_conservative
+loyalty = 1.00
+picture = M44045
+head_of_state = insignificant_layman
+head_of_government = happy_amateur
+foreign_minister = great_compromiser
+minister_of_security = back_stabber
+start_date = 1942.1.1
+}
+
+210077 = {
+name = "Manuel Rivas Vicuña"
+ideology = social_conservative
+loyalty = 1.00
+picture = M44099
+minister_of_security = prince_of_terror
+start_date = 1943.1.1
+}
+
+210242 = {
+name = "Manuel Rivas"
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+minister_of_security = compassionate_gentleman
+start_date = 1910.1.1
+}
+
+210159 = {
+name = "Manuel Salinas GonzÁlez "
+ideology = market_liberal
+loyalty = 1.00
+picture = 8454
+foreign_minister = great_compromiser
+start_date = 1910.1.1
+}
+
+210069 = {
+name = "Manuel Salinas"
+ideology = social_democrat
+loyalty = 1.00
+picture = M44091
+minister_of_security = silent_lawyer
+start_date = 1938.1.1
+}
+
+210124 = {
+name = "Manuel Tovarias"
+ideology = social_conservative
+loyalty = 1.00
+picture = M44150
+chief_of_air = army_aviation_doctrine
+start_date = 1946.1.1
+}
+
+210017 = {
+name = "Marmaduke Grove"
+ideology = leninist
+loyalty = 1.00
+picture = M44021
+head_of_state = barking_buffoon
+head_of_government = old_air_marshal
+minister_of_security = man_of_the_people
+chief_of_air = naval_aviation_doctrine
+start_date = 1938.1.1
+}
+
+210236 = {
+name = "Maximiliano IbÁñez IbÁñez"
+ideology = market_liberal
+loyalty = 1.00
+picture = 8455
+minister_of_security = man_of_the_people
+start_date = 1910.1.1
+}
+
+210003 = {
+name = "Miguel Cruchaga Tacomal"
+ideology = social_liberal
+loyalty = 1.00
+picture = M44003
+head_of_state = autocratic_charmer
+head_of_government = naive_optimist
+foreign_minister = iron_fisted_brute
+start_date = 1933.1.1
+}
+
+210074 = {
+name = "Miguel Gonzalez Rios"
+ideology = social_liberal
+loyalty = 1.00
+picture = M44096
+minister_of_security = crooked_kleptocrat
+start_date = 1938.1.1
+}
+
+210026 = {
+name = "Misael Galleguillos"
+ideology = fascistic
+loyalty = 1.00
+picture = M44012
+head_of_state = insignificant_layman
+head_of_government = ambitious_union_boss
+armament_minister = corrupt_kleptocrat
+start_date = 1938.1.1
+}
+
+210218 = {
+name = "Onofre Bunster "
+ideology = market_liberal
+loyalty = 1.00
+picture = 8456
+armament_minister = laissez_faires_capitalist
+start_date = 1920.1.1
+}
+
+210110 = {
+name = "Oscar Izurieta Molina"
+ideology = social_conservative
+loyalty = 1.00
+picture = M44134
+chief_of_army = guns_and_butter_doctrine
+start_date = 1946.1.1
+}
+
+210200 = {
+name = "Oscar Urzúa Jaramillo "
+ideology = market_liberal
+loyalty = 1.00
+picture = 8457
+armament_minister = resource_industrialist
+start_date = 1910.1.1
+}
+
+210011 = {
+name = "Pedro Aguirre Cerda"
+ideology = social_democrat
+loyalty = 1.00
+picture = M44031
+head_of_state = benevolent_gentleman
+head_of_government = political_protege
+armament_minister = laissez_faires_capitalist
+minister_of_security = man_of_the_people
+start_date = 1938.1.1
+}
+
+210250 = {
+name = "Pedro García de la Huerta Izquierdo"
+ideology = market_liberal
+loyalty = 1.00
+picture = 8459
+minister_of_security = man_of_the_people
+start_date = 1916.1.1
+}
+
+210175 = {
+name = "Pedro María Rivas Vicuña "
+ideology = social_liberal
+loyalty = 1.00
+picture = unknown
+foreign_minister = biased_intellectual
+start_date = 1921.1.1
+}
+
+210139 = {
+name = "Pedro Montt Montt"
+ideology = market_liberal
+loyalty = 1.00
+picture = 8460
+head_of_state = popular_figurehead
+head_of_government = political_protege
+start_date = 1910.1.1
+}
+
+210201 = {
+name = "Pedro Nicolas Montenegro Onel "
+ideology = market_liberal
+loyalty = 1.00
+picture = 8461
+armament_minister = air_to_ground_proponent
+minister_of_security = man_of_the_people
+start_date = 1915.1.1
+}
+
+210209 = {
+name = "Pedro Opaso Letelier "
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+armament_minister = infantry_proponent
+start_date = 1918.1.1
+}
+
+210276 = {
+name = "Pedro Pablo Dartnell"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8462
+chief_of_staff = school_of_mass_combat
+chief_of_army = elastic_defence_doctrine
+chief_of_air = air_superiority_doctrine
+start_date = 1922.1.1
+}
+
+210095 = {
+name = "Pietro Campos Valenzana"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M44118
+minister_of_intelligence = industrial_specialist
+start_date = 1944.1.1
+}
+
+210121 = {
+name = "Raúl Gonzalez Nolle"
+ideology = social_liberal
+loyalty = 1.00
+picture = M44147
+chief_of_air = army_aviation_doctrine
+start_date = 1946.1.1
+}
+
+210037 = {
+name = "Raúl Juliet Gómez"
+ideology = social_democrat
+loyalty = 1.00
+picture = M44058
+foreign_minister = apologetic_clerk
+start_date = 1945.1.1
+}
+
+210111 = {
+name = "Rafael Fernandez Reyes"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M44135
+chief_of_army = elastic_defence_doctrine
+start_date = 1942.1.1
+}
+
+210269 = {
+name = "Rafael Luis Barahona San Martín"
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+minister_of_security = efficient_sociopath
+start_date = 1922.1.1
+}
+
+210152 = {
+name = "Rafael Orrego GonzÁlez "
+ideology = market_liberal
+loyalty = 1.00
+picture = 8463
+foreign_minister = great_compromiser
+start_date = 1910.1.1
+}
+
+210237 = {
+name = "Rafael Orrego GonzÁlez"
+ideology = market_liberal
+loyalty = 1.00
+picture = 8463
+minister_of_security = prince_of_terror
+start_date = 1910.1.1
+}
+
+210228 = {
+name = "Rafael Sotomayor Gaete"
+ideology = social_liberal
+loyalty = 1.00
+picture = 8464
+minister_of_security = compassionate_gentleman
+start_date = 1910.1.1
+}
+
+210140 = {
+name = "Ramón Barros Luco"
+ideology = market_liberal
+loyalty = 1.00
+picture = 8465
+head_of_state = benevolent_gentleman
+head_of_government = smiling_oilman
+start_date = 1910.1.1
+}
+
+210180 = {
+name = "Ramón Briones Luco "
+ideology = social_liberal
+loyalty = 1.00
+picture = 8466
+foreign_minister = great_compromiser
+start_date = 1927.1.1
+}
+
+210064 = {
+name = "Ramón Callís"
+ideology = fascistic
+loyalty = 1.00
+picture = M44014
+armament_minister = infantry_proponent
+start_date = 1938.1.1
+}
+
+210193 = {
+name = "Ramón CorbalÁn Melgarejo "
+ideology = social_liberal
+loyalty = 1.00
+picture = 8467
+armament_minister = infantry_proponent
+start_date = 1910.1.1
+}
+
+210187 = {
+name = "Ramón León Luco "
+ideology = market_liberal
+loyalty = 1.00
+picture = 8468
+armament_minister = strategic_air_proponent
+start_date = 1910.1.1
+}
+
+210160 = {
+name = "Ramón Subercaseaux Vicuña "
+ideology = social_conservative
+loyalty = 1.00
+picture = 8469
+foreign_minister = apologetic_clerk
+start_date = 1910.1.1
+}
+
+210101 = {
+name = "Raul Array Stiglich"
+ideology = social_conservative
+loyalty = 1.00
+picture = M44125
+chief_of_staff = school_of_manoeuvre
+start_date = 1944.1.1
+}
+
+210208 = {
+name = "Regulo Valenzuela "
+ideology = market_liberal
+loyalty = 1.00
+picture = 8470
+armament_minister = resource_industrialist
+start_date = 1918.1.1
+}
+
+210213 = {
+name = "Remigio Medina Neira "
+ideology = social_liberal
+loyalty = 1.00
+picture = 8471
+armament_minister = resource_industrialist
+start_date = 1919.1.1
+}
+
+210156 = {
+name = "Renato SÁnchez García de la Huerta "
+ideology = market_liberal
+loyalty = 1.00
+picture = 8472
+foreign_minister = iron_fisted_brute
+start_date = 1910.1.1
+}
+
+210195 = {
+name = "Ricardo Cox Méndez "
+ideology = social_conservative
+loyalty = 1.00
+picture = 8473
+armament_minister = military_entrepreneur
+start_date = 1910.1.1
+}
+
+210184 = {
+name = "Roberto Hunneus Gana "
+ideology = market_liberal
+loyalty = 1.00
+picture = unknown
+armament_minister = corrupt_kleptocrat
+start_date = 1910.1.1
+}
+
+210178 = {
+name = "Roberto SÁnchez García de la Huerta "
+ideology = market_liberal
+loyalty = 1.00
+picture = 8474
+foreign_minister = general_staffer
+armament_minister = air_superiority_proponent
+start_date = 1922.1.1
+}
+
+210168 = {
+name = "Ruperto A. Bahamonde Rivera "
+ideology = social_liberal
+loyalty = 1.00
+picture = 8475
+foreign_minister = biased_intellectual
+start_date = 1916.1.1
+}
+
+210288 = {
+name = "Salustio Valdés Cortés"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = unknown
+chief_of_navy = open_seas_doctrine
+start_date = 1922.1.1
+}
+
+210018 = {
+name = "Salvador Allende"
+ideology = left_wing_radical
+loyalty = 1.00
+picture = M44039
+head_of_state = die_hard_reformer
+head_of_government = naive_optimist
+minister_of_intelligence = industrial_specialist
+start_date = 1945.1.1
+}
+
+210107 = {
+name = "Salvador Arron Galvéz"
+ideology = social_democrat
+loyalty = 1.00
+picture = M44131
+chief_of_army = guns_and_butter_doctrine
+start_date = 1944.1.1
+}
+
+210197 = {
+name = "Salvador Vergara Álvarez "
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = 8476
+armament_minister = corrupt_kleptocrat
+start_date = 1910.1.1
+}
+
+210173 = {
+name = "Samuel Claro Lastarria "
+ideology = market_liberal
+loyalty = 1.00
+picture = 8477
+foreign_minister = great_compromiser
+armament_minister = theoretical_scientist
+start_date = 1920.1.1
+}
+
+210161 = {
+name = "Silvestre Ochagavía Echaurren "
+ideology = social_conservative
+loyalty = 1.00
+picture = 8478
+foreign_minister = biased_intellectual
+start_date = 1910.1.1
+}
+
+210205 = {
+name = "Víctor Vicente Robles Valenzuela "
+ideology = social_liberal
+loyalty = 1.00
+picture = 8479
+armament_minister = laissez_faires_capitalist
+start_date = 1916.1.1
+}
+
+210080 = {
+name = "Vicente Merino Bielich"
+ideology = paternal_autocrat
+loyalty = 1.00
+picture = M44102
+minister_of_security = prince_of_terror
+start_date = 1942.1.1
+}
+
+210058 = {
+name = "Victor Larens Quijada"
+ideology = social_conservative
+loyalty = 1.00
+picture = M44079
+armament_minister = submarine_proponent
+minister_of_intelligence = naval_intelligence_specialist
+start_date = 1939.1.1
+}
+
+
+}
