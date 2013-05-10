@@ -1,0 +1,79 @@
+name = "SCENARIO_Gallipoli"
+desc = "SCENARIO_Gallipoli_DESC"
+icon = "GFX_select_Gallipoli"
+startdate = 1915.4.20
+enddate = 1916.1.1
+
+camera_height = 500
+camera_center = { x = 3100 y = 1320 }
+camera_max_x = 3200
+camera_max_y = 1800
+camera_min_x = 2800
+camera_min_y = 1000
+
+victory_conditions = "scenarios/gallipoli/faction_aims.txt"
+victory_conditions_to_win = 4
+number_of_victory_conditions = 4
+events = "scenarios/gallipoli/events.txt"
+
+reinforcement = 20
+
+# will load any history files with scenarios/scenario_name/<tag>.txt
+selectable_country = ENG
+selectable_country = TUR 
+country = AUS
+country = GER
+country = AUH
+country = AST
+country = NZL
+country = FRA
+
+# visible provinces & regions
+provinces = {
+		10583
+		10584
+		11453
+		10585
+		11454
+		11451
+		10587
+		10589
+		10588
+		10590
+		10591
+		10592
+		11382
+		14154
+		4614
+		4613
+		
+}
+
+regions = {
+		greece_region
+		TUR_5046
+		TUR_4926
+		TUR_5010
+		TUR_5044
+		TUR_4969
+		TUR_4826
+		TUR_4673
+		TUR_4725
+		TUR_4774
+		TUR_4563
+		TUR_4562
+		TUR_4670
+		TUR_4876
+		TUR_5108
+		TUR_5042
+		TUR_4922
+		TUR_4822
+		TUR_4503
+		TUR_4560
+		ITA_10731
+		ENG_5642
+		ENG_5611
+		ENG_5588
+		ENG_5644
+		ENG_5644
+}

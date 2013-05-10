@@ -1,0 +1,665 @@
+theatre = {
+name = "Mediterranean Expeditionary Force"
+location = 5586
+leader = 10490
+
+					
+regiment = {
+type = hq_brigade
+name = "1st HQ Brigade"
+historical_model = 0
+experience = 10
+}
+
+corps = {
+name = "VIII Corps"
+location = 5586
+leader = 10496
+
+					
+regiment = {
+type = hq_brigade
+name = "2nd HQ Brigade"
+historical_model = 0
+experience = 10
+}
+division = {
+name = "29th Division"
+location = 5586
+leader = 10458
+
+					
+regiment = {
+type = infantry_brigade
+name = "86th Brigade"
+historical_model = 4
+experience = 10
+}					
+regiment = {
+type = infantry_brigade
+name = "87th Brigade"
+historical_model = 4
+experience = 10
+}				
+regiment = {
+type = infantry_brigade
+name = "88th Brigade"
+historical_model = 4
+experience = 10
+}				
+regiment = {
+type = artillery_brigade
+name = "XV Brigade, Royal Horse Artillery"
+historical_model = 4
+experience = 10
+}
+}
+
+division = {
+name = "Royal Naval Division"
+location = 5586
+leader = 10518
+
+					
+regiment = {
+type = marine_brigade
+name = "1st Naval Brigade"
+historical_model = 4
+experience = 20
+}					
+regiment = {
+type = marine_brigade
+name = "2nd Naval Brigade"
+historical_model = 4
+experience = 20
+}				
+regiment = {
+type = marine_brigade
+name = "3rd Royal Marine Brigade"
+historical_model = 4
+experience = 20
+}				
+regiment = {
+type = engineer_brigade
+name = "Royal Navy Divisional Engineers"
+historical_model = 2
+experience = 20
+}
+}
+}
+
+corps = {
+expeditionary_owner = AST
+name = "Australian & New Zealand Army Corps"
+location = 5586
+leader = 10456
+
+					
+regiment = {
+type = hq_brigade
+name = "1st HQ Brigade"
+historical_model = 0
+experience = 10
+}
+
+division = {
+expeditionary_owner = AST
+name = "1st Australian Division"
+location = 5586
+leader = 225095
+
+					
+regiment = {
+type = infantry_brigade
+name = "1st Australian Brigade"
+historical_model = 4
+experience = 10
+}					
+regiment = {
+type = infantry_brigade
+name = "2nd Australian Brigade"
+historical_model = 4
+experience = 10
+}				
+regiment = {
+type = infantry_brigade
+name = "3rd Australian Brigade"
+historical_model = 4
+experience = 10
+}				
+regiment = {
+type = artillery_brigade
+name = "I (New South Wales) Field Artillery Brigade"
+historical_model = 4
+experience = 10
+}
+}
+division = {
+expeditionary_owner = NZL
+name = "New Zealand & Australian Division"
+location = 5586
+leader = 10481
+
+					
+regiment = {
+type = infantry_brigade
+name = "New Zealand Brigade"
+historical_model = 4
+experience = 10
+}					
+regiment = {
+type = infantry_brigade
+name = "4th Australian Brigade"
+historical_model = 4
+experience = 10
+}			
+regiment = {
+type = artillery_brigade
+name = "New Zealand Field Artillery Brigade"
+historical_model = 4
+experience = 10
+}
+}
+}
+
+
+
+corps = {
+expeditionary_owner = FRA
+name = "Corps Exeditionnaire d'Orient"
+location = 5586
+leader = 5242
+
+					
+regiment = {
+type = hq_brigade
+name = "1st HQ Brigade"
+historical_model = 0
+experience = 10
+}
+division = {
+expeditionary_owner = FRA
+name = "1st Division"
+location = 5586
+leader = 5475
+
+					
+regiment = {
+type = alpins_brigade
+name = "Metropolitan Brigade"
+historical_model = 4
+experience = 20
+}					
+regiment = {
+type = alpins_brigade
+name = "Colonial Brigade"
+historical_model = 4
+experience = 20
+}			
+regiment = {
+type = artillery_brigade
+name = "1st Artillery Brigade"
+historical_model = 4
+experience = 20
+}
+}
+
+
+}
+
+
+navy = {
+name = "Mediterranean Fleet"
+location = 5586
+base = 5586
+leader = 10849
+
+ship = {
+name = "HMS Ark Royal"
+type = escort_carrier
+historical_model = 0
+experience = 15 
+air = { location = 5586 wing = { type = cag historical_model = 0 }} 
+}
+ship = {
+name = "HMS Ben-my-Chree"
+type = escort_carrier
+historical_model = 0
+experience = 15 
+air = { location = 5586 wing = { type = cag historical_model = 0 }} 
+}
+ship = {
+name = "HMS Queen Elizabeth"
+type = dreadnaught
+historical_model = 2
+experience = 15 
+}
+ship = {
+type = battlecruiser
+name = "HMS Indefatigable"
+historical_model = 0
+experience = 15
+} 
+ship = {
+type = battlecruiser
+name = "HMS Inflexible"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = battlecruiser
+name = "HMS Indomitable"
+historical_model = 0
+experience = 15
+} 
+ship = {
+type = battleship
+name = "HMS Agamemnon"
+historical_model = 1
+experience = 15
+}
+ship = {
+type = battleship
+name = "HMS Albion"
+historical_model = 0
+experience = 15
+} 
+ship = {
+type = battleship
+name = "HMS Canopus"
+historical_model = 0
+experience = 15
+} 
+ship = {
+type = battleship
+name = "HMS Cornwallis"
+historical_model = 1
+experience = 15
+} 
+ship = {
+type = battleship
+name = "HMS Exmouth"
+historical_model = 1
+experience = 15
+} 
+ship = {
+type = battleship
+name = "HMS Glory"
+historical_model = 0
+experience = 15
+} 
+ship = {
+type = battleship
+name = "HMS Goliath"
+historical_model = 0
+experience = 15
+} 
+ship = {
+type = battleship
+name = "HMS Hibernia"
+historical_model = 1
+experience = 15
+} 
+ship = {
+type = battleship
+name = "HMS Implacable"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = battleship
+name = "HMS Irresistible"
+historical_model = 0
+experience = 15
+} 
+ship = {
+type = battleship
+name = "HMS London"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = battleship
+name = "HMS Lord Nelson"
+historical_model = 1
+experience = 15
+} 
+ship = {
+type = battleship
+name = "HMS Magnificent"
+historical_model = 0
+experience = 15
+} 
+ship = {
+type = battleship
+name = "HMS Majestic"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = battleship
+name = "HMS Mars"
+historical_model = 0
+experience = 15
+} 
+ship = {
+type = battleship
+name = "HMS Ocean"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = battleship
+name = "HMS Prince George"
+historical_model = 0
+experience = 15
+} 
+ship = {
+type = battleship
+name = "HMS Prince of Wales"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = battleship
+name = "HMS Queen"
+historical_model = 0
+experience = 15
+} 
+ship = {
+type = battleship
+name = "HMS Russell"
+historical_model = 1
+experience = 15
+}
+ship = {
+type = battleship
+name = "HMS Swiftsure"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = battleship
+name = "HMS Triumph"
+historical_model = 0
+experience = 15
+} 
+ship = {
+type = battleship
+name = "HMS Venerable"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = battleship
+name = "HMS Vengeance"
+historical_model = 0
+experience = 15
+} 
+ship = {
+type = light_cruiser
+name = "HMS Amethyst"
+historical_model = 1
+experience = 15
+} 
+ship = {
+type = heavy_cruiser
+name = "HMS Bacchante"
+historical_model = 1
+experience = 15
+}
+ship = {
+type = heavy_cruiser
+name = "HMS Blenheim"
+historical_model = 0
+experience = 15
+} 
+ship = {
+type = light_cruiser
+name = "HMS Chatham"
+historical_model = 2
+experience = 15
+}
+ship = {
+type = heavy_cruiser
+name = "HMS Cornwall"
+historical_model = 1
+experience = 15
+}
+ship = {
+type = light_cruiser
+name = "HMS Dartmouth"
+historical_model = 1
+experience = 15
+} 
+ship = {
+type = light_cruiser
+name = "HMS Doris"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = light_cruiser
+name = "HMS Dublin"
+historical_model = 2
+experience = 15
+}
+ship = {
+type = light_cruiser
+name = "HMS Edgar"
+historical_model = 0
+experience = 15
+} 
+ship = {
+type = light_cruiser
+name = "HMS Endymion"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = light_cruiser
+name = "HMS Europa"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = heavy_cruiser
+name = "HMS Euryalus"
+historical_model = 1
+experience = 15
+} 
+ship = {
+type = light_cruiser
+name = "HMS Grafton"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = light_cruiser
+name = "HMS Heroic"
+historical_model = 0
+experience = 15
+} 
+ship = {
+type = heavy_cruiser
+name = "HMS Kent"
+historical_model = 1
+experience = 15
+}
+ship = {
+type = light_cruiser
+name = "HMS Minerva"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = light_cruiser
+name = "HMS Phaeton"
+historical_model = 3
+experience = 15
+} 
+ship = {
+type = light_cruiser
+name = "HMS Sapphire"
+historical_model = 1
+experience = 15
+}
+ship = {
+type = light_cruiser
+name = "HMS Talbot"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = light_cruiser
+name = "HMS Theseus"
+historical_model = 0
+experience = 15
+} 
+ship = {
+type = destroyer
+name = "Gibraltar Flotilla"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = destroyer
+name = "8th Flotilla (A)"
+historical_model = 1
+experience = 15
+}
+
+ 
+ship = {
+type = destroyer
+name = "8th Flotilla (B)"
+historical_model = 0
+experience = 15
+}
+
+ 
+ship = {
+type = destroyer
+name = "9th Flotilla (A)"
+historical_model = 1
+experience = 15
+}
+
+ 
+ship = {
+type = destroyer
+name = "9th Flotilla (B)"
+historical_model = 1
+experience = 15
+}
+ship = {
+type = destroyer
+name = "2nd Flotilla (A)"
+historical_model = 1
+experience = 15
+} 
+
+ship = {
+type = transport_ship
+name = "3rd Transport Flotilla (A)"
+historical_model = 0
+experience = 15
+}
+
+ 
+ship = {
+type = transport_ship
+name = "3rd Transport Flotilla (B)"
+historical_model = 0
+experience = 15
+}
+
+ 
+ship = {
+type = transport_ship
+name = "4th Transport Flotilla (A)"
+historical_model = 0
+experience = 15
+}
+
+ 
+ship = {
+type = transport_ship
+name = "4th Transport Flotilla (B)"
+historical_model = 0
+experience = 15
+}
+
+ship = {
+type = transport_ship
+name = "5th Transport Flotilla (A)"
+historical_model = 0
+experience = 15
+}
+
+ 
+ship = {
+type = transport_ship
+name = "5th Transport Flotilla (B)"
+historical_model = 0
+experience = 15
+}
+
+ 
+ship = {
+type = transport_ship
+name = "6th Transport Flotilla (A)"
+historical_model = 0
+experience = 15
+}
+
+ 
+ship = {
+type = transport_ship
+name = "6th Transport Flotilla (B)"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = transport_ship
+name = "7th Transport Flotilla (A)"
+historical_model = 0
+experience = 15
+}
+
+
+
+
+}
+navy = {
+name = "2nd Flotilla"
+location = 5586
+base = 5586
+ 
+ship = {
+type = submarine
+name = "2nd Submarine Flotilla"
+historical_model = 0
+experience = 15
+}
+
+}
+
+
+				
+navy = {
+name = "4th Flotilla"
+location = 5586
+base = 5586
+ 
+ship = {
+type = submarine
+name = "4th Submarine Flotilla"
+historical_model = 1
+experience = 15
+}
+
+}
+
+
+}
