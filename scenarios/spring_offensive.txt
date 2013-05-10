@@ -1,0 +1,48 @@
+name = "SCENARIO_SpringOffensive"
+desc = "SCENARIO_SpringOffensive_DESC"
+icon = "GFX_select_SpringOffensive"
+startdate = 1918.3.21
+enddate = 1919.12.31
+
+camera_height = 500
+camera_center = { x = 2855 y = 1668 }
+camera_min_x = 2622
+camera_min_y = 1536
+camera_max_x = 2995
+camera_max_y = 1817
+
+victory_conditions = "scenarios/spring_offensive/faction_aims.txt"
+victory_conditions_to_win = 4
+number_of_victory_conditions = 4
+events = "scenarios/spring_offensive/events.txt"
+
+reinforcement = 20
+
+# will load any history files with scenarios/scenario_name/<tag>.txt
+selectable_country = GER
+selectable_country = FRA 
+country = ENG
+country = USA
+
+# visible provinces & regions
+provinces = {
+		2429
+		
+		# the channel
+		14150
+		10533
+		10535
+		10536
+		10537
+		10538
+		10551
+		11428
+		14168
+}
+
+regions = {
+		northern_france_region
+		belgium_region
+		the_netherlands_region
+		west_germany_region
+}
