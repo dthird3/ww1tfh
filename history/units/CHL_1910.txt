@@ -1,0 +1,132 @@
+corps = {
+name = "Ejercito de Chile"
+location = 10336
+regiment = { type = hq_brigade name = "Ejercito de Chile HQ" historical_model = 0 }
+
+division = {
+name = "1. División de Infantería"
+location = 10336
+is_reserve = no
+regiment = {
+type = infantry_brigade
+experience = 20
+name = "1. División de Infantería1"
+historical_model = 3}
+regiment = {
+type = infantry_brigade
+experience = 20
+name = "1. División de Infantería2"
+historical_model = 3}
+
+regiment = {
+type = artillery_brigade
+experience = 20
+name = "1. División de Infantería4"
+historical_model = 0}
+}
+
+division = {
+name = "2. División de Infantería"
+location = 10336
+is_reserve = no
+regiment = {
+type = bergsjaeger_brigade
+experience = 10
+name = "2. División de Infantería1"
+historical_model = 3}
+regiment = {
+type = bergsjaeger_brigade
+experience = 10
+name = "2. División de Infantería2"
+historical_model = 3}
+}
+
+division = {
+name = "1. División de Montaña de Chile"
+location = 10336
+is_reserve = no
+regiment = {
+type = bergsjaeger_brigade
+experience = 5
+name = "1. División de Montaña de Chile1"
+historical_model = 0}
+regiment = {
+type = bergsjaeger_brigade
+experience = 5
+name = "1. División de Montaña de Chile2"
+historical_model = 0}
+}
+
+division = {
+name = "División Caballería nro. 1"
+location = 10336
+is_reserve = no
+regiment = {
+type = cavalry_brigade
+experience = 15
+name = "División Caballería nro. 11"
+historical_model = 3}
+regiment = {
+type = cavalry_brigade
+experience = 15
+name = "División Caballería nro. 12"
+historical_model = 3}
+}
+
+}
+navy = {
+name = "Chilean Fleet"
+location = 10336
+base = 10336
+
+ship = {
+name = "Capitan Prat"
+type = heavy_cruiser
+historical_model = 0}
+
+ship = {
+name = "Esmeralda"
+type = heavy_cruiser
+historical_model = 1}
+
+ship = {
+name = "O'Higgins"
+type = heavy_cruiser
+historical_model = 1}
+
+ship = {
+name = "Presidente Errazuriz"
+type = light_cruiser
+historical_model = 0}
+
+ship = {
+name = "Blanco Encalada"
+type = light_cruiser
+historical_model = 0}
+
+ship = {
+name = "Ministro Zenteno"
+type = light_cruiser
+historical_model = 0}
+
+ship = {
+name = "Chacabuco"
+type = light_cruiser
+historical_model = 0}
+
+ship = {
+name = "Flotilla des Destructores nro.1"
+type = destroyer
+historical_model = 1}
+
+ship = {
+name = "Flotilla des Destructores nro.2"
+type = destroyer
+historical_model = 0}
+
+ship = {
+name = "Flotilla des Destructores nro.3"
+type = destroyer
+historical_model = 0}
+
+}

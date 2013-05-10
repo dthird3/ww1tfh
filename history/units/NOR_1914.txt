@@ -1,0 +1,94 @@
+corps = {
+name = "Den Norske Hær"
+location = 812
+regiment = { type = hq_brigade name = "Den Norske Hær HQ" historical_model = 0 }
+
+division = {
+name = "1. Infanteridivisjon"
+location = 812
+is_reserve = no
+regiment = {
+type = bergsjaeger_brigade
+experience = 10
+name = "1. Infanteridivisjon1"
+historical_model = 2}
+regiment = {
+type = bergsjaeger_brigade
+experience = 10
+name = "1. Infanteridivisjon2"
+historical_model = 2}
+}
+
+}
+corps = {
+name = "6. Hærkorps"
+location = 65
+regiment = { type = hq_brigade name = "6. Hærkorps HQ" historical_model = 0 }
+
+division = {
+name = "6. Infanteridivisjon"
+location = 65
+is_reserve = no
+regiment = {
+type = bergsjaeger_brigade
+experience = 10
+name = "6. Infanteridivisjon1"
+historical_model = 2}
+regiment = {
+type = bergsjaeger_brigade
+experience = 10
+name = "6. Infanteridivisjon2"
+historical_model = 2}
+}
+
+}
+navy = {
+name = "Sjøforsvaret"
+location = 1018
+base = 1018
+
+ship = {
+name = "KNM Norge"
+type = heavy_cruiser
+historical_model = 0}
+
+ship = {
+name = "KNM Eidsvold"
+type = heavy_cruiser
+historical_model = 0}
+
+ship = {
+name = "KNM Harald Haarfagre"
+type = heavy_cruiser
+historical_model = 0}
+
+ship = {
+name = "KNM Tordenskjold"
+type = heavy_cruiser
+historical_model = 0}
+
+ship = {
+name = "KNM Frithjof"
+type = light_cruiser
+historical_model = 0}
+
+ship = {
+name = "KNM Viking"
+type = light_cruiser
+historical_model = 0}
+
+ship = {
+name = "1. Jagarflottiljen"
+type = destroyer
+historical_model = 0}
+
+ship = {
+name = "2. Jagarflottiljen"
+type = destroyer
+historical_model = 0}
+
+ship = {
+name = "3. Jagarflottiljen"
+type = destroyer
+historical_model = 0}
+}

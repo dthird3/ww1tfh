@@ -1,0 +1,95 @@
+corps = {
+name = "Exército do Portugal"
+location = 4644
+regiment = { type = hq_brigade name = "Exército do Portugal HQ" historical_model = 0 }
+
+division = {
+name = "1o Batalhão de Infantaria"
+location = 4644
+is_reserve = no
+regiment = {
+type = infantry_brigade
+experience = 5
+name = "1o Batalhão de Infantaria1"
+historical_model = 1}
+regiment = {
+type = infantry_brigade
+experience = 5
+name = "1o Batalhão de Infantaria2"
+historical_model = 1}
+
+regiment = {
+type = artillery_brigade
+experience = 5
+name = "1o Batalhão de Infantaria4"
+historical_model = 0}
+}
+
+division = {
+name = "2o Batalhão de Infantaria"
+location = 4644
+is_reserve = no
+regiment = {
+type = infantry_brigade
+experience = 10
+name = "2o Batalhão de Infantaria1"
+historical_model = 2}
+regiment = {
+type = infantry_brigade
+experience = 10
+name = "2o Batalhão de Infantaria2"
+historical_model = 2}
+}
+
+}
+navy = {
+name = "Armada Portuguesa"
+location = 4644
+base = 4644
+
+ship = {
+name = "Vasco da Gama"
+type = heavy_cruiser
+historical_model = 0}
+
+ship = {
+name = "República"
+type = light_cruiser
+historical_model = 1}
+
+ship = {
+name = "Adamastor"
+type = light_cruiser
+historical_model = 0}
+
+ship = {
+name = "São Gabriel"
+type = light_cruiser
+historical_model = 0}
+
+ship = {
+name = "Almirante Reis"
+type = light_cruiser
+historical_model = 1}
+
+ship = {
+name = "Doura Flotilha"
+type = destroyer
+historical_model = 1}
+
+ship = {
+name = "1a Flotilha de Navio de Transporte"
+type = transport_ship
+historical_model = 0}
+}
+air = {
+name = "Aéreo do Portugal"
+location = 4644
+base = 4644
+
+wing = {
+name = "1o Avião de Bombardeiro Tático"
+type = tactical_bomber
+historical_model = 0}
+
+}

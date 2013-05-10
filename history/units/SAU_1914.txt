@@ -1,0 +1,69 @@
+corps = {
+name = "Sharifian Army"
+location = 9613
+regiment = { type = hq_brigade name = "Sharifian Army HQ" historical_model = 0 }
+
+division = {
+name = "Ikhwan infantry"
+location = 9613
+is_reserve = yes
+regiment = {
+type = infantry_brigade
+experience = 5
+name = "Ikhwan infantry1"
+historical_model = 1}
+regiment = {
+type = infantry_brigade
+experience = 5
+name = "Ikhwan infantry2"
+historical_model = 1}
+}
+
+division = {
+name = "Local tribes"
+location = 9613
+is_reserve = yes
+regiment = {
+type = militia_brigade
+experience = 5
+name = "Local tribes1"
+historical_model = 0}
+regiment = {
+type = militia_brigade
+experience = 5
+name = "Local tribes2"
+historical_model = 0}
+}
+
+division = {
+name = "Ikhwan"
+location = 9613
+is_reserve = yes
+regiment = {
+type = cavalry_brigade
+experience = 10
+name = "Ikhwan1"
+historical_model = 0}
+regiment = {
+type = cavalry_brigade
+experience = 10
+name = "Ikhwan2"
+historical_model = 0}
+}
+
+division = {
+name = "Ikhwan"
+location = 9613
+is_reserve = yes
+regiment = {
+type = cavalry_brigade
+experience = 10
+name = "Ikhwan1"
+historical_model = 0}
+regiment = {
+type = cavalry_brigade
+experience = 10
+name = "Ikhwan2"
+historical_model = 0}
+}
+}

@@ -1,0 +1,33 @@
+corps = {
+name = "Ejercito de Ecuador"
+location = 9974
+regiment = { type = hq_brigade name = "Ejercito de Ecuador HQ" historical_model = 0 }
+
+division = {
+name = "1a Brigada de Infantería"
+location = 9974
+is_reserve = no
+regiment = {
+type = infantry_brigade
+experience = 5
+name = "1a Brigada de Infantería1"
+historical_model = 2}
+regiment = {
+type = infantry_brigade
+experience = 5
+name = "1a Brigada de Infantería2"
+historical_model = 2}
+}
+
+}
+navy = {
+name = "Ecuadorian Fleet"
+location = 9982
+base = 9982
+
+ship = {
+name = "1st Flotilla"
+type = destroyer
+historical_model = 0}
+
+}

@@ -1,0 +1,239 @@
+theatre = {
+name = "Australian Commonwealth Military Forces"
+location = 7989
+
+regiment = {
+type = hq_brigade
+name = "1st HQ Brigade"
+historical_model = 1
+experience = 10
+}
+
+corps = {
+name = "Australian Imperial Forces"
+location = 8057
+regiment = { type = hq_brigade name = "Australian Imperial Forces" historical_model = 0}
+
+division = {
+name = "1st Australian Division"
+location = 8057
+
+regiment = {
+type = infantry_brigade
+experience = 10
+name = "1/2 Australian Brigades"
+historical_model = 2}
+
+regiment = {
+type = infantry_brigade
+experience = 10
+name = "2/3 Australian Brigades"
+historical_model = 2}
+
+regiment = {
+type = artillery_brigade
+experience = 10
+name = "1st Australian Division Artillery"
+historical_model = 0}
+}
+
+division = {
+name = "Australian 2nd Light Horse Brigade"
+location = 8057
+
+regiment = {
+type = cavalry_brigade
+experience = 10
+name = "Australian 2nd Light Horse Brigade"
+historical_model = 2}
+}
+
+division = {
+name = "New Zealand and Australian Division"
+location = 8057
+
+regiment = {
+type = infantry_brigade
+experience = 10
+name = "1st New Zealand Infantry Brigade"
+historical_model = 2}
+
+regiment = {
+type = infantry_brigade
+experience = 10
+name = "4th Australian Brigade"
+historical_model = 2}
+
+regiment = {
+type = artillery_brigade
+experience = 10
+name = "1/2nd New Zealand Divisional Artillery"
+historical_model = 0}
+}
+
+division = {
+name = "New Zealand and Australian Mounted Division"
+location = 8057
+
+regiment = {
+type = cavalry_brigade
+experience = 10
+name = "Australian 1st Light Horse Brigade"
+historical_model = 2}
+
+regiment = {
+type = cavalry_brigade
+experience = 10
+name = "Australian 3rd Light Horse Brigade"
+historical_model = 2}
+
+regiment = {
+type = cavalry_brigade
+experience = 10
+name = "New Zealand Mounted Rifles Brigade"
+historical_model = 2}
+}
+}
+
+division = {
+name = "2nd Australian Division"
+location = 7989
+
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "5/6 Australian Brigades"
+historical_model = 0
+is_reserve = yes}
+
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "6/7 Australian Brigades"
+historical_model = 0
+is_reserve = yes}
+}
+
+division = {
+name = "3rd Australian Division"
+location = 7989
+
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "9/10 Australian Brigades"
+historical_model = 0
+is_reserve = yes}
+
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "10/11 Australian Brigades"
+historical_model = 0
+is_reserve = yes}
+}
+
+division = {
+name = "4th Australian Division"
+location = 7923
+
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "4/12 Australian Brigades"
+historical_model = 0
+is_reserve = yes}
+
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "12/13 Australian Brigades"
+historical_model = 0
+is_reserve = yes}
+}
+
+division = {
+name = "5th Australian Division"
+location = 7923
+
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "8/14 Australian Brigades"
+historical_model = 0
+is_reserve = yes}
+
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "14/15 Australian Brigades"
+historical_model = 0
+is_reserve = yes}
+}
+
+navy = {
+name = "Royal Australian Navy"
+location = 7989
+base = 7989
+
+ship = {
+name = "HMAS Australia"
+type = battlecruiser
+historical_model = 0}
+
+ship = {
+name = "HMAS Sydney"
+type = light_cruiser
+historical_model = 2}
+
+ship = {
+name = "HMAS Melbourne"
+type = light_cruiser
+historical_model = 2}
+
+ship = {
+name = "HMAS Encounter"
+type = light_cruiser
+historical_model = 1}
+
+ship = {
+name = "HMAS Pioneer"
+type = light_cruiser
+historical_model = 0}
+
+}
+navy = {
+name = "Australian Transport Flotilla"
+location = 7989
+base = 7989
+
+ship = {
+name = "Australian Flotilla"
+type = transport_ship
+historical_model = 0}
+}
+
+navy = {
+name = "Melbourne Flotilla"
+location = 8057
+base = 8057
+
+ship = {
+name = "HMAS Wagga, Yarra & Parramatta"
+type = destroyer
+historical_model = 0}
+}
+
+navy = {
+name = "Australian Submarine Service"
+location = 7989
+base = 7989
+
+ship = {
+type = submarine
+name = "A.E 1 & A.E. 2"
+historical_model = 1
+experience = 10
+}
+}
+}

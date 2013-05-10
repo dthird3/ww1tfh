@@ -1,0 +1,366 @@
+theatre = {
+name = "Bruxelles HQ"
+location = 2311
+
+regiment = {
+type = hq_brigade
+name = "1st HQ Brigade"
+historical_model = 1
+experience = 3
+}
+
+corps = {
+name = "Force Publique"
+location = 10086
+
+regiment = {
+type = hq_brigade
+name = "Force Publique HQ"
+historical_model = 1
+experience = 15
+}
+
+division = {
+name = "Troupes du Congo-Kasai"
+location = 10086
+
+regiment = {
+type = police_brigade
+name = "Troupes du Congo-Kasai"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+}
+
+division = {
+name = "Troupes de l'Equateur"
+location = 9824
+
+regiment = {
+type = police_brigade
+name = "Troupes de l'Equateur"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+}
+
+division = {
+name = "Troupes de la province orientale"
+location = 10100
+
+regiment = {
+type = militia_brigade
+name = "Troupes de la province orientale"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+}
+
+division = {
+name = "Troupes du Katanga"
+location = 8000
+
+regiment = {
+type = militia_brigade
+name = "Troupes du Katanga"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+}
+
+navy = {
+name = "1re Transportatie Smaldeel"
+location = 2137
+base = 2137
+
+ship = {
+type = transport_ship
+name = "1er Transporte Naval"
+historical_model = 0
+experience = 15
+}
+}
+
+air = {
+name = "Aviation Militaire/Militar Vliegwezen"
+location = 2311
+base = 2311
+
+wing = {
+type = tactical_bomber
+name = "1. Escadrille"
+historical_model = 0
+experience = 15
+}
+}
+}
+
+corps = {
+name = "Garde Civique"
+location = 2311
+
+regiment = {
+type = hq_brigade
+name = "2nd HQ Brigade"
+historical_model = 1
+experience = 0
+}
+
+division = {
+name = "Position fortifiee d'Anvers"
+location = 2197
+
+regiment = {
+type = garrison_brigade
+name = "Position fortifiee d'Anvers"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+
+regiment = {
+type = garrison_brigade
+name = "Position fortifiee de d'Anvers"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+}
+
+division = {
+name = "Position fortifee de Brugge"
+location = 2137
+
+regiment = {
+type = garrison_brigade
+name = "Position fortifiee de Brugge"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+}
+
+division = {
+name = "Position fortifiee de Namur"
+location = 2369
+
+regiment = {
+type = garrison_brigade
+name = "Position fortifiee de Namur"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+
+regiment = {
+type = garrison_brigade
+name = "Position fortifiee de Namur"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+}
+
+division = {
+name = "Position fortifiee de Liege"
+location = 2312
+
+regiment = {
+type = garrison_brigade
+name = "Position fortifiee de Liege"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+}
+}
+
+army = {
+name = "Belgian Army HQ"
+location = 2311
+
+regiment = {
+type = hq_brigade
+name = "4th HQ Brigade"
+historical_model = 1
+experience = 0
+}
+
+division = {
+name = "1er Division d'Armee"
+location = 2196
+
+regiment = {
+type = infantry_brigade
+name = "2/3eme brigades mixte"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "3/4eme brigades mixte"
+historical_model = 2
+experience = 10
+is_reserve = yes
+}
+
+regiment = {
+type = artillery_brigade
+name = "Artillerie divisionnaire 1/2eme regiments"
+historical_model = 0
+experience = 10
+}
+}
+
+division = {
+name = "2eme Division d'Armee"
+location = 2197
+
+regiment = {
+type = infantry_brigade
+name = "5/6eme brigades mixte"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "6/7eme brigades mixte"
+historical_model = 2
+experience = 10
+is_reserve = yes
+}
+}
+
+division = {
+name = "3eme Division d'Armee"
+location = 2312
+
+regiment = {
+type = infantry_brigade
+name = "9eme brigade mixte"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "11/12eme brigades mixte"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "14eme brigade mixte"
+historical_model = 2
+experience = 10
+is_reserve = yes
+}
+}
+
+division = {
+name = "4ere Division d'Infanterie"
+location = 14155
+
+regiment = {
+type = infantry_brigade
+name = "8eme brigade mixte"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "10/13eme brigades mixte"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "15eme brigade mixte"
+historical_model = 2
+experience = 10
+is_reserve = yes
+}
+}
+
+division = {
+name = "5eme Division d'Armee"
+location = 2312
+
+regiment = {
+type = infantry_brigade
+name = "1/16eme brigades mixte"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "16/17eme brigades mixte"
+historical_model = 2
+experience = 10
+is_reserve = yes
+}
+
+regiment = {
+type = artillery_brigade
+name = "Artillerie divisionnaire 3/4eme regiments"
+historical_model = 0
+experience = 10
+}
+}
+division = {
+name = "6eme Division d'Armee"
+location = 2311
+
+regiment = {
+type = infantry_brigade
+name = "18/19eme brigades mixte"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "19/20eme brigades mixte"
+historical_model = 2
+experience = 10
+is_reserve = yes
+}
+
+regiment = {
+type = artillery_brigade
+name = "Artillerie divisionnaire 5/6eme regiments"
+historical_model = 0
+experience = 10
+}
+}
+
+division = {
+name = "Division de Cavalerie"
+location = 2311
+
+regiment = {
+type = cavalry_brigade
+name = "1re brigade de guides"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = cavalry_brigade
+name = "2eme brigade de lanciers"
+historical_model = 2
+experience = 10
+}
+}
+}
+}
