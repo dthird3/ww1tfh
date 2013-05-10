@@ -1,0 +1,95 @@
+corps = {
+name = "Ejercito del Peru"
+location = 10079
+regiment = { type = hq_brigade name = "Ejercito del Peru HQ" historical_model = 0 }
+
+division = {
+name = "1a Div. de Inf. del Peru 'Bolognesi'"
+location = 10079
+is_reserve = no
+regiment = {
+type = infantry_brigade
+experience = 5
+name = "1a Div. de Inf. del Peru 'Bolognesi'1"
+historical_model = 1}
+regiment = {
+type = infantry_brigade
+experience = 5
+name = "1a Div. de Inf. del Peru 'Bolognesi'2"
+historical_model = 1}
+}
+
+division = {
+name = "2a Div. de Infantería del Peru"
+location = 10079
+is_reserve = no
+regiment = {
+type = infantry_brigade
+experience = 2
+name = "2a Div. de Infantería del Peru1"
+historical_model = 2}
+regiment = {
+type = infantry_brigade
+experience = 2
+name = "2a Div. de Infantería del Peru2"
+historical_model = 2}
+}
+
+division = {
+name = "3a Div. de Infantería del Peru"
+location = 10079
+is_reserve = no
+regiment = {
+type = infantry_brigade
+experience = 0
+name = "3a Div. de Infantería del Peru1"
+historical_model = 2}
+regiment = {
+type = infantry_brigade
+experience = 0
+name = "3a Div. de Infantería del Peru2"
+historical_model = 2}
+}
+
+division = {
+name = "1a Brigada Fuerzas Especiales"
+location = 10079
+is_reserve = no
+regiment = {
+type = bergsjaeger_brigade
+experience = 2
+name = "1a Brigada Fuerzas Especiales1"
+historical_model = 0}
+regiment = {
+type = bergsjaeger_brigade
+experience = 2
+name = "1a Brigada Fuerzas Especiales2"
+historical_model = 0}
+}
+
+}
+navy = {
+name = "Marina del Guerra del Peru"
+location = 10079
+base = 10079
+
+ship = {
+name = "Suliana é Flotilla"
+type = destroyer
+historical_model = 0}
+
+ship = {
+name = "ARP Almirante Grau"
+type = heavy_cruiser
+historical_model = 0}
+
+ship = {
+name = "ARP Coronel Bolognesi"
+type = heavy_cruiser
+historical_model = 0}
+
+ship = {
+name = "Tacna é Flotilla"
+type = submarine
+historical_model = 1}
+}

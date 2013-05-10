@@ -1,5 +1,5 @@
-name = "World War 1 Mod v0.5"
-path = "tfh/mod/WW1Mod_v0.5"
+name = "World War 1 Mod Beta"
+path = "tfh/mod/ww1tfh"
 
 replace_path = "common"
 

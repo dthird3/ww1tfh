@@ -1,0 +1,217 @@
+division = {
+
+is_reserve = yes
+
+name = "1st Military District"
+
+location = 7923
+
+regiment = { type = garrison_brigade name = "7th Brigade" historical_model = 0 }
+
+regiment = { type = artillery_brigade name = "1st RAA" historical_model = 0 }
+
+}
+
+division = {
+
+name = "6th Military District"
+
+location = 8074
+
+is_reserve = yes
+
+regiment = { type = garrison_brigade name = "12th Brigade" historical_model = 0 }
+
+}
+
+corps = {
+
+name = "2nd Military District"
+
+location = 7989
+
+is_reserve = yes
+
+regiment = { type = hq_brigade name = "2nd Military District HQ" historical_model = 0 }
+
+division= {
+
+name = "1st Australian Division"
+
+location = 7967
+
+is_reserve = yes
+
+regiment = { type = garrison_brigade name = "1st Brigade" historical_model = 0 }
+
+regiment = { type = garrison_brigade name = "9th Brigade" historical_model = 0 }
+
+}
+
+division= {
+
+name = "2nd Australian Division"
+
+location = 7989
+
+is_reserve = yes
+
+regiment = { type = garrison_brigade name = "5th Brigade" historical_model = 0 }
+
+regiment = { type = garrison_brigade name = "8th Brigade" historical_model = 0 }
+
+}
+
+division= {
+
+name = "1st Australian Cavalry Division"
+
+location = 7980
+
+is_reserve = yes
+
+regiment = { type = cavalry_brigade name = "2nd Cavalry Brigade" historical_model = 0 }
+
+regiment = { type = cavalry_brigade name = "4th Cavalry Brigade"historical_model = 0 }
+
+}
+
+}
+
+division = {
+
+is_reserve = yes
+
+name = "4th Military District"
+
+location = 10438
+
+regiment = { type = garrison_brigade name = "3rd Brigade" historical_model = 0 }
+
+}
+
+division = {
+
+is_reserve = yes
+
+name = "5th Military District"
+
+location = 7950
+
+regiment = { type = garrison_brigade name = "13th Brigade" historical_model = 0 }
+
+}
+
+division = {
+
+name = "7th Military District"
+
+location = 6596
+
+regiment = { type = garrison_brigade name = "Darwin Defence Force" historical_model = 0 }
+
+}
+
+division = {
+
+is_reserve = yes
+
+name = "Port Moresby Garrison"
+
+location = 6566
+
+regiment = { type = garrison_brigade name = "The New Guinea Volunteer Rifles" historical_model = 0 }
+
+}
+
+corps = {
+
+is_reserve = yes
+
+name = "3rd Military District"
+
+location = 8057
+
+regiment = { type = hq_brigade name = "3rd Military District HQ" historical_model = 0 }
+
+division= {
+
+name = "3rd Australian Division"
+
+location = 8057
+
+is_reserve = yes
+
+regiment = { type = garrison_brigade name = "4th Brigade" historical_model = 0 }
+
+regiment = { type = garrison_brigade name = "10th Brigade" historical_model = 0 }
+
+}
+
+division= {
+
+name = "4th Australian Division"
+
+location = 8056
+
+is_reserve = yes
+
+regiment = { type = garrison_brigade name = "2nd Brigade" historical_model = 0 }
+
+regiment = { type = garrison_brigade name = "6th Brigade" historical_model = 0 }
+
+}
+
+division= {
+
+name = "2nd Australian Cavalry Division"
+
+location = 8049
+
+is_reserve = yes
+
+regiment = { type = cavalry_brigade name = "3rd Brigade" historical_model = 0 }
+
+}
+
+}
+
+navy = {
+name = "Royal Australian Navy"
+location = 7989
+base = 7989
+
+
+ship = {
+name = "HMAS Encounter"
+type = light_cruiser
+historical_model = 1}
+
+ship = {
+name = "HMAS Pioneer"
+type = light_cruiser
+historical_model = 0}
+
+}
+navy = {
+name = "Australian Transport Flotilla"
+location = 7989
+base = 7989
+
+ship = {
+name = "Australian Flotilla"
+type = transport_ship
+historical_model = 0}
+
+}
+navy = {
+name = "Melbourne Flotilla"
+location = 8057
+base = 8057
+
+
+ship = {
+name = "Victorian and Tasmanian Flotilla"
+type = destroyer
+historical_model = 0}
+}

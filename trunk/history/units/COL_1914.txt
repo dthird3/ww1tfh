@@ -1,0 +1,53 @@
+corps = {
+name = "Ejercito de Colombia"
+location = 9930
+regiment = { type = hq_brigade name = "Ejercito de Colombia HQ" historical_model = 0 }
+
+division = {
+name = "1a División"
+location = 9930
+is_reserve = no
+regiment = {
+type = infantry_brigade
+experience = 0
+name = "1a División1"
+historical_model = 2}
+regiment = {
+type = infantry_brigade
+experience = 0
+name = "1a División2"
+historical_model = 2}
+}
+
+division = {
+name = "1a Brigada de Caballería 'Montería'"
+location = 9930
+is_reserve = no
+regiment = {
+type = cavalry_brigade
+experience = 0
+name = "1a Brigada de Caballería 'Montería'1"
+historical_model = 2}
+regiment = {
+type = cavalry_brigade
+experience = 0
+name = "1a Brigada de Caballería 'Montería'2"
+historical_model = 2}
+}
+
+}
+navy = {
+name = "Armada de Colombia"
+location = 9790
+base = 9790
+
+ship = {
+name = "Almirante Lezo"
+type = light_cruiser
+historical_model = 0}
+
+ship = {
+name = "1a Flotilla de Torpedillos"
+type = destroyer
+historical_model = 0}
+}

@@ -1,0 +1,186 @@
+corps = {
+name = "1e Legerkorps"
+location = 1910
+regiment = { type = hq_brigade name = "1e Legerkorps HQ" historical_model = 0 }
+
+division = {
+name = "1e Divisie"
+location = 1910
+is_reserve = no
+
+regiment = {
+type = infantry_brigade
+experience = 10
+name = "1e Divisie1"
+historical_model = 2}
+
+regiment = {
+type = infantry_brigade
+experience = 10
+name = "1e Divisie2"
+historical_model = 2}
+
+regiment = {
+type = artillery_brigade
+experience = 10
+name = "1e Divisie4"
+historical_model = 0}
+}
+
+division = {
+name = "2e Divisie"
+location = 1910
+is_reserve = no
+regiment = {
+type = infantry_brigade
+experience = 10
+name = "2e Divisie1"
+historical_model = 2}
+regiment = {
+type = infantry_brigade
+experience = 10
+name = "2e Divisie2"
+historical_model = 2}
+}
+
+}
+corps = {
+name = "2e Legerkorps"
+location = 2025
+regiment = { type = hq_brigade name = "2e Legerkorps HQ" historical_model = 0 }
+
+division = {
+name = "3e Divisie"
+location = 2025
+is_reserve = no
+regiment = {
+type = infantry_brigade
+experience = 10
+name = "3e Divisie1"
+historical_model = 2}
+regiment = {
+type = infantry_brigade
+experience = 10
+name = "3e Divisie2"
+historical_model = 2}
+}
+
+division = {
+name = "4e Divisie"
+location = 2025
+is_reserve = no
+regiment = {
+type = infantry_brigade
+experience = 10
+name = "4e Divisie1"
+historical_model = 2}
+regiment = {
+type = infantry_brigade
+experience = 10
+name = "4e Divisie2"
+historical_model = 2}
+}
+
+}
+navy = {
+name = "Koninklijke Marine"
+location = 1910
+base = 1910
+
+ship = {
+name = "HrMs Kortenaer"
+type = heavy_cruiser
+historical_model = 0}
+
+ship = {
+name = "HrMs De Zeven Provinciën"
+type = heavy_cruiser
+historical_model = 0}
+
+ship = {
+name = "HrMs Marten H. Tromp"
+type = heavy_cruiser
+historical_model = 0}
+
+ship = {
+name = "HrMs Holland"
+type = light_cruiser
+historical_model = 0}
+
+ship = {
+name = "HrMs Zeeland"
+type = light_cruiser
+historical_model = 0}
+
+ship = {
+name = "HrMs Noord-Brabant"
+type = light_cruiser
+historical_model = 0}
+
+ship = {
+name = "1e Torpedoboot Smaldeel"
+type = destroyer
+historical_model = 0}
+
+ship = {
+name = "2e Torpedoboot Smaldeel"
+type = destroyer
+historical_model = 0}
+
+ship = {
+name = "1e Transport Smaldeel"
+type = transport_ship
+historical_model = 0}
+
+}
+navy = {
+name = "Oost-Indië Vloot"
+location = 7793
+base = 7793
+
+ship = {
+name = "HrMs Koningin Regentes"
+type = heavy_cruiser
+historical_model = 0}
+
+ship = {
+name = "HrMs De Ruyter"
+type = heavy_cruiser
+historical_model = 0}
+
+ship = {
+name = "HrMs Hertog Hendrik"
+type = heavy_cruiser
+historical_model = 0}
+
+ship = {
+name = "1e Torpedobootjager Smaldeel"
+type = destroyer
+historical_model = 1}
+
+ship = {
+name = "2e Transport Smaldeel"
+type = transport_ship
+historical_model = 0}
+
+}
+navy = {
+name = "West-Indië Vloot"
+location = 50
+base = 50
+
+ship = {
+name = "HrMs Jacob van Heemskerck"
+type = heavy_cruiser
+historical_model = 0}
+
+ship = {
+name = "HrMs Friesland"
+type = light_cruiser
+historical_model = 0}
+
+ship = {
+name = "HrMs Gelderland"
+type = light_cruiser
+historical_model = 0}
+}

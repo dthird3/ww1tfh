@@ -1,0 +1,40 @@
+name = "First Balkan War"
+
+1912.10.8 = {
+	add_attacker = BUL
+	add_attacker = SER
+	add_attacker = GRE
+	add_attacker = MTN
+	add_defender = TUR
+	war_goal=
+	{
+		casus_belli=aquire_all_cores
+		actor="BUL"
+		receiver="TUR"
+	}
+	war_goal=
+	{
+		casus_belli=aquire_all_cores
+		actor="SER"
+		receiver="TUR"
+	}
+	war_goal=
+	{
+		casus_belli=aquire_all_cores
+		actor="GRE"
+		receiver="TUR"
+	}
+	war_goal=
+	{
+		casus_belli=aquire_all_cores
+		actor="MTN"
+		receiver="TUR"
+	}
+}
+1912.10.18 = {
+	rem_attacker = BUL
+	rem_attacker = SER
+	rem_attacker = GRE
+	rem_attacker = MTN
+	rem_defender = TUR
+}
