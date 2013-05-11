@@ -1,0 +1,102 @@
+#Declaration of Neutrality
+country_event = {
+
+		id = 100502
+
+		major = yes
+		
+		trigger = {
+			tag = USA
+			war = no
+			GER = {	war_with = ENG }
+			NOT = { has_country_flag = neutr }
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = yes
+
+		title = "USAE6"
+		desc = "desc_USAE6"
+		picture = "USAP6"
+
+		option = {
+			name = "opta_USAE6"
+			ai_chance = { factor = 100 }
+			neutrality = 50
+			set_country_flag = neutr
+		}
+	
+}
+
+#Unlimited submarine warfare
+country_event = {
+
+		id = 100503
+
+		major = yes
+		
+		trigger = {
+			tag = GER
+			GER = {	war_with = ENG }
+			USA = { war = no }
+			date = 1915.2.1
+			NOT = { has_country_flag = unrest_subs }
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = yes
+
+		title = "USAE7"
+		desc = "desc_USAE7"
+		picture = "USAP7"
+
+		option = {
+			name = "opta_USAE7"
+			ai_chance = { factor = 100 }
+			USA = { neutrality = -10 }
+			set_country_flag = unrest_subs
+		}
+		option = {
+			name = "optb_USAE7"
+			ai_chance = { factor = 0 }
+		}
+	
+}
+#Sinking of Lusitania
+country_event = {
+
+		id = 100504
+
+		major = yes
+		
+		trigger = {
+			tag = USA
+			war = no
+			GER = {	war_with = ENG }
+			GER = { has_country_flag = unrest_subs }
+			NOT = { has country flag = lusitania }
+		}
+		
+		mean_time_to_happen = {
+			months = 1
+		}
+		
+		fire_only_once = yes
+
+		title = "USAE8"
+		desc = "desc_USAE8"
+		picture = "USAP8"
+
+		option = {
+			name = "opta_USAE8"
+			ai_chance = { factor = 100 }
+			USA = { neutrality = -10 }
+			set_country_flag = lusitania
+		}
+}

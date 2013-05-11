@@ -200,6 +200,19 @@ Ottomans_weakened = {
 	icon = 3
 }
 
+unrestricted_submarine_warfare = {
+	potential = {
+		TAG = GER
+	}
+	
+	trigger = {
+		has_country_flag = unrest_subs
+	}
+	
+	convoy_raid = 0.5
+	icon = 3
+}
+
 auh_buildup = {
 	potential = {
 		TAG = AUH
