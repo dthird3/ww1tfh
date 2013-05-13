@@ -347,3 +347,36 @@ country_event = {
 			TUR = { load_oob = "ReshadiehSultan.txt" }			
 		}
 }
+country_event = {
+		
+		id = 100509
+		
+		major = yes
+		
+		trigger = {
+			tag = ENG
+			date = 1915.10.15
+			ENG = { war_with = GER }
+			NOT = { has_country_flag = hmscanada }
+		}
+		
+		fire_only_once = yes
+		
+		title = "ENGE7"
+		desc = "desc_ENGE7"
+		picture = "ENGP7"
+
+		option = {
+			name = "opta_ENGE7"
+			ai_chance = { factor = 100 }
+			money = -150
+			load_oob = "HMSCanada.txt"
+			set_country_flag = hmscanada
+		}
+		option = {
+			name = "optb_ENGE7"
+			money = 150
+			CHL = { load_oob = "AlmiranteLatorre.txt" }
+			set_country_flag = hmscanada			
+		}
+}
