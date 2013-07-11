@@ -115,6 +115,16 @@ country_event = {
 			tag = TUR
 			war = no
 			date = 1913.1.1
+			OR = {
+				TUR = { military_access = ITA } 
+				ITA = { military_access = TUR }   
+				ITA = { military_access = ENG }  
+				TUR = { military_access = ENG }  
+				ITA = { military_access = GRE }  
+				TUR = { military_access = GRE }  
+				TUR = { military_access = AUH } 
+				ITA = { military_access = AUH }
+			}
 		}
 		
 		mean_time_to_happen = {
