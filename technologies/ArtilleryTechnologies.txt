@@ -17,7 +17,7 @@ at_brigade = {
 	
 	#common for all techs.
 	start_year = 1914
-	folder = armour_folder
+	folder = bomber_folder
 }
 aa_brigade = {
 
@@ -38,10 +38,57 @@ aa_brigade = {
 	
 	#common for all techs.
 	start_year = 1914
-	folder = armour_folder
+	folder = bomber_folder
 }
 
+art_brigade = {
+
+	activate_unit = artillery_brigade
+
+
+    	allow = {
+        	infantry_activation = 1
+    	}
+
+	research_bonus_from = {
+		artillery_theory= 1.0
+	}
+	
+	on_completion = artillery_theory
+	
+	difficulty = 2
+	
+	#common for all techs.
+	start_year = 1900
+	folder = bomber_folder
+}
 art_barrell_ammo = {
+	artillery_brigade = {
+		toughness = 0.1
+		hard_attack = 0.1
+	}
+
+	allow = {
+		infantry_activation = 1
+	}
+	
+	research_bonus_from = {
+		artillery_theory = 0.3
+		artillery_practical = 0.6
+		superior_firepower_theory = 0.1
+	}
+	
+	on_completion = artillery_theory
+
+	difficulty = 1
+
+	start_year = 1900
+	first_offset = 1908
+	additional_offset = 2
+	max_level = 12
+	folder = bomber_folder
+}
+art_barrell = {
 	artillery_brigade = {
 		soft_attack = 0.6
 	}
@@ -64,14 +111,44 @@ art_barrell_ammo = {
 	first_offset = 1908
 	additional_offset = 2
 	max_level = 12
-	folder = armour_folder
+	folder = bomber_folder
+}
+art_howitzer = {
+	artillery_brigade = {
+		soft_attack = 0.1
+        	fort = {
+            		attack = 0.05
+        	}
+	        urban = {
+            		attack = 0.05
+        	}
+			maximum_speed = -0.25
+	}
+
+	allow = {
+		infantry_activation = 1
+	}
+	
+	research_bonus_from = {
+		artillery_theory = 0.3
+		artillery_practical = 0.6
+		superior_firepower_theory = 0.1
+	}
+	
+	on_completion = artillery_theory
+
+	difficulty = 1
+
+	start_year = 1900
+	first_offset = 1908
+	additional_offset = 2
+	max_level = 12
+	folder = bomber_folder
 }
 
 art_carriage_sights = {
 	artillery_brigade = {
 		defensiveness = 0.2
-		toughness = 0.1
-		hard_attack = 0.1
 	}
 
 
@@ -93,7 +170,7 @@ art_carriage_sights = {
 	first_offset = 1908
 	additional_offset = 2
 	max_level = 12
-	folder = armour_folder
+	folder = bomber_folder
 }
 
 at_barrell_sights = {
@@ -120,7 +197,7 @@ at_barrell_sights = {
     first_offset = 1918
     additional_offset = 2
     max_level = 12
-    folder = armour_folder
+    folder = bomber_folder
 }
 
 at_ammo_muzzel = {
@@ -147,7 +224,7 @@ at_ammo_muzzel = {
     first_offset = 1918
     additional_offset = 2
     max_level = 12
-    folder = armour_folder
+    folder = bomber_folder
 }
 
 aa_barrell_ammo = {
@@ -174,7 +251,7 @@ aa_barrell_ammo = {
 	first_offset = 1916
 	additional_offset = 2
 	max_level = 12
-	folder = armour_folder
+	folder = bomber_folder
 }
 
 aa_carriage_sights = {
@@ -202,5 +279,135 @@ aa_carriage_sights = {
 	first_offset = 1916
 	additional_offset = 2
 	max_level = 12
-	folder = armour_folder
+	folder = bomber_folder
+}
+
+heavy_artillery_development = {
+
+
+	activate_unit = heavy_artillery_brigade 
+	
+	allow = {
+		art_barrell_ammo = 1
+		art_carriage_sights = 1
+		art_barrell = 1
+	}
+
+	research_bonus_from = {
+		artillery_theory = 0.4
+		artillery_practical = 0.6
+	}
+	
+	on_completion = artillery_theory
+	
+	difficulty = 5
+	
+	#common for all techs.
+	start_year = 1910
+	folder = bomber_folder
+}
+hart_barrell_ammo = {
+	heavy_artillery_brigade = {
+		toughness = 0.1
+		hard_attack = 0.1
+	}
+
+	allow = {
+		heavy_artillery_development = 1
+	}
+	
+	research_bonus_from = {
+		artillery_theory = 0.4
+		artillery_practical = 0.6
+	}
+	
+	on_completion = artillery_theory
+
+	difficulty = 3
+
+	start_year = 1912
+	first_offset = 1914
+	additional_offset = 2
+	max_level = 12
+	folder = bomber_folder
+}
+hart_barrell = {
+	heavy_artillery_brigade = {
+		soft_attack = 0.6
+	}
+
+	allow = {
+		heavy_artillery_development = 1
+	}
+	
+	research_bonus_from = {
+		artillery_theory = 0.4
+		artillery_practical = 0.6
+	}
+	
+	on_completion = artillery_theory
+
+	difficulty = 3
+
+	start_year = 1912
+	first_offset = 1914
+	additional_offset = 2
+	max_level = 12
+	folder = bomber_folder
+}
+hart_super = {
+	heavy_artillery_brigade = {
+        	fort = {
+            		attack = 0.1
+        	}
+	        urban = {
+            		attack = 0.1
+        	}
+		maximum_speed = -0.25
+	}
+
+	allow = {
+		heavy_artillery_development = 1
+	}
+	
+	research_bonus_from = {
+		artillery_theory = 0.4
+		artillery_practical = 0.6
+	}
+	
+	on_completion = artillery_theory
+
+	difficulty = 7
+
+	start_year = 1912
+	first_offset = 1914
+	additional_offset = 2
+	max_level = 12
+	folder = bomber_folder
+}
+
+hart_carriage_sights = {
+	heavy_artillery_brigade = {
+		defensiveness = 0.2
+	}
+
+
+	allow = {
+		heavy_artillery_development = 1
+	}
+	
+	research_bonus_from = {
+		artillery_theory = 0.4
+		artillery_practical = 0.6
+	}
+	
+	on_completion = artillery_theory
+
+	difficulty = 3
+
+	start_year = 1912
+	first_offset = 1914
+	additional_offset = 2
+	max_level = 12
+	folder = bomber_folder
 }
