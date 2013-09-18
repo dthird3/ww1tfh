@@ -1,0 +1,46 @@
+name = "SCENARIO_Jutland"
+desc = "SCENARIO_Jutland_DESC"
+icon = "GFX_select_Jutland"
+startdate = 1916.5.31
+enddate = 1917.1.1
+
+
+camera_height = 500
+camera_center = { x = 2981 y = 1737 }
+camera_max_x = 3479
+camera_max_y = 2152
+camera_min_x = 2543
+camera_min_y = 1449
+
+victory_conditions = "scenarios/jutland/faction_aims.txt"
+victory_conditions_to_win = 4
+number_of_victory_conditions = 4
+events = "scenarios/jutland/events.txt"
+
+reinforcement = 20
+
+# will load any history files with scenarios/scenario_name/<tag>.txt
+selectable_country = GER
+selectable_country = ENG 
+
+
+# visible provinces & regions
+provinces = {
+1570
+10531
+10532
+11410
+10687
+11411
+11409
+10542
+11415
+11416
+11417
+850
+604
+}
+
+regions = {
+
+}

@@ -1198,10 +1198,6 @@ name = "SMS Emden"
 type = light_cruiser
 historical_model = 2}
 
-ship = {
-name = "S90"
-type = destroyer
-historical_model = 0}
 
 }
 navy = {
@@ -1214,10 +1210,6 @@ name = "SMS Friedrich Karl"
 type = heavy_cruiser
 historical_model = 1}
 
-ship = {
-name = "SMS Augsburg"
-type = light_cruiser
-historical_model = 2}
 
 ship = {
 name = "SMS Lübeck"
@@ -1738,20 +1730,6 @@ name = "14. Zerstörergeschwader"
 type = destroyer
 historical_model = 1}
 
-ship = {
-name = "15. Zerstörergeschwader"
-type = destroyer
-historical_model = 1}
-
-ship = {
-name = "16. Zerstörergeschwader"
-type = destroyer
-historical_model = 1}
-
-ship = {
-name = "17. Torpedobootflottille"
-type = destroyer
-historical_model = 0}
 
 }
 navy = {
@@ -1781,6 +1759,18 @@ historical_model = 0}
 
 ship = {
 name = "3. Truppentransporterflottille"
+type = transport_ship
+historical_model = 0}
+ship = {
+name = "4. Truppentransporterflottille"
+type = transport_ship
+historical_model = 0}
+ship = {
+name = "5. Truppentransporterflottille"
+type = transport_ship
+historical_model = 0}
+ship = {
+name = "6. Truppentransporterflottille"
 type = transport_ship
 historical_model = 0}
 }
@@ -1820,4 +1810,14 @@ historical_model = 0}
 cost = 1
 progress = 0
 duration = 569}
+
+
+military_construction = {
+country = GER
+light_cruiser = {
+name = "SMS Augsburg"
+historical_model = 2}
+cost = 1
+progress = 0
+duration = 180}
 
