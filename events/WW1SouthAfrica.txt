@@ -14,18 +14,21 @@ country_event = {
 
 		option = {
 			name = "ACTION_NAME_JOIN_ENTENTE"
-			ai_chance = { factor = 100 }				# Once all working maybe put this to 80%
+			ai_chance = { factor = 80 }				# Once all working maybe put this to 80%
 			join_faction = allies
-			join_alliance = ENG							# not joining alliance??  Can leave out
+			war = {	
+				target = GER
+				attacker_goal = { casus_belli = conquer }
+			}
 			dissent = +7
 			national_unity = -5
 			neutrality = -40
-			GER = {country_event = 2008001}	
+			set_country_flag = boers
 
 		}
 		option = {
 			name = "ACTION_NAME_NEUTRAL"
-			ai_chance = { factor = 0 }
+			ai_chance = { factor = 20 }
 			leave_faction = allies
 			leave_alliance = ENG
 			GER = {kill_leader = 855525}                # Maritz does not defect to the Rebels, so not available to GER player
@@ -41,23 +44,29 @@ country_event = {
 country_event = {
 
 		id = 2008001
+		trigger = {
+			tag = SAF
+			war_with = GER
+			date = 1910.5.6
+			has_country_flag = boers
+			NOT = { has_country_flag = boer_rebellion }
+		}
+		
 		
 		major = yes								
-		is_triggered_only = yes						
 		fire_only_once = yes						
 		
 		mean_time_to_happen = {days = 3}		  # to simulate uncertain timing of Rebellion - doesn't seem to work.	
-		set_country_flag = boer_rebellion
 
 		title = "EVT1914_2008001_NAME"
 		desc = "EVT1914_2008001_DESC"			   
 		picture = "ENGP2"
 		
 		option = {
-			name = "ACTION_NAME_GREAT"			   
-												   
-			SAF = {kill_leader = 425061}           # Maritz defects to the Rebels
-			GER = {load_oob = "Boer_1914.txt"}     # Load Boer Rebels under German control
+			name = "ACTION_NAME_GREAT"	
+			set_country_flag = boer_rebellion		   								   
+			SAF = { kill_leader = 425061 }           # Maritz defects to the Rebels
+			GER = { load_oob = "Boer_1914.txt" }     # Load Boer Rebels under German control
 			8038 = {supplies = 500}                # Give Rebels a supply dump, IRL life they resisted for about 6 months
 			10366 = {supplies = 500}
 			7996 = {supplies = 500}

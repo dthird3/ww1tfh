@@ -50,8 +50,8 @@ country_event = {
 			name = "opta_ENGE2"
 			ai_chance = { factor = 100 }
 			release = SAF
-			SAF = { leave_faction = allies }
-			SAF = { leave_alliance = ENG }
+			GOD = { create_vassal = SAF }
+			SAF = { inherit = GOD }
 			manpower = 300
 			set_country_flag = saf_release
 		}
