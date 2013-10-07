@@ -80,6 +80,42 @@ end
 function P.ForeignMinister_Alignment(...)
 	return Support.AlignmentPush("allies", ...)
 end
+function P.DiploScore_InviteToFaction(voDiploScoreObj)
+	local loAllies = CCurrentGameState.GetFaction("allies")
+	
+	-- Only go through these checks if we are being asked to join the allies
+	if voDiploScoreObj.Faction == loAllies then
+		local liYear = CCurrentGameState.GetCurrentDate():GetYear()
+		local liMonth = CCurrentGameState.GetCurrentDate():GetMonthOfYear()
+		
+		-- Date check to make sure they come in within resonable time
+		if liYear >= 1914 then
+			if liMonth >= 8 then
+				voDiploScoreObj.Score = voDiploScoreObj.Score + 50
+			else
+				voDiploScoreObj.Score = voDiploScoreObj.Score - 200
+			end
+			if liYear >= 1915 then
+				voDiploScoreObj.Score = voDiploScoreObj.Score + 100
+			end
+		else
+				voDiploScoreObj.Score = voDiploScoreObj.Score - 200
+		end
+	end
+	
+	return voDiploScoreObj.Score
+end
+
+function P.DiploScore_Alliance( viScore, ai, actor, recipient, observer)
+
+		local lsTargetTag = voDiploScoreObj.TargetTag
+		
+		if lsTargetTag == 'ENG' then -- no thanks, all or nothing
+			voDiploScoreObj.Score = 0
+		end
+	
+	return voDiploScoreObj.Score
+end
 
 function P.DiploScore_OfferTrade(voDiploScoreObj)
 	local laTrade = {
