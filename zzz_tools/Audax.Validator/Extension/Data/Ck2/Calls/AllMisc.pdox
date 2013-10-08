@@ -1,0 +1,154 @@
+(ContextValidator Trigger) = { Scopes = {
+	CharTrigger = { Type = Trait }
+
+} }
+
+(ContextValidator ProvTrigger) = { Scopes = {
+	ProvTrigger = "sea_zone"
+} }
+
+(ContextValidator CharTrigger) = { Scopes = {
+	TitleTrigger = "any_potential_tribal_county"
+	TitleTrigger = { Type = Faction }
+	CharTrigger = "any_faction_backer"
+	CharTrigger = "supported_claimant"
+} }
+
+(ContextValidator TitleTrigger) = { Scopes = {
+	CharTrigger = "heir_under_seniority_law"
+	CharTrigger = "heir_under_primogeniture_law"
+	CharTrigger = "any_claimant"
+	TitleTrigger = "succ_law_title"
+} }
+
+(ContextValidator Command) = { Scopes = {
+	CharCommand = { Type = Trait }
+} }
+
+(ContextValidator ProvCommand) = { Scopes = {
+	ProvCommand = "sea_zone"
+
+} }
+
+(ContextValidator CharCommand) = { Scopes = {
+	TitleCommand = "random_potential_tribal_county"
+	TitleCommand = "any_potential_tribal_county"
+	CharCommand = "any_faction_backer"
+	TitleCommand = { Type = Faction }
+} }
+
+(ContextValidator TitleCommand) = { Scopes = {
+
+} }
+
+(ContextValidator Trigger) = { Members = {
+	(N Y) = { Left = "has_dlc" Right = { Literal = "Legacy of Rome" Literal = "Sunset Invasion" } }
+} }
+
+(Type DistanceDef) = {
+	Single = { Left = "where" Right = { Province } }
+	Single = { Left = "value" Right = NnDbl }
+}
+
+(Type DistanceCharDef) = {
+	Single = { Left = "who" Right = { ThisChar } }
+	Single = { Left = "distance" Right = NnDbl }
+}
+
+(ContextValidator ProvTrigger) = { Members = {
+	(N Y) = { Left = "distance" Right = DistanceDef }
+} }
+
+(ContextValidator CharTrigger) = { Members = {
+	(N Y) = { Left = "num_of_realm_counties" Right = {
+		Single = { Left = "value" Right = PInt }
+		Single = { Left = "title" Right = ThisTitle }
+	} }
+	
+	(A Y) = { Left = "in_faction" Right = { Faction Bool } }
+	(A Y) = { Left = "leads_faction" Right = { Faction Yes } }
+	(N Y) = { Left = "faction_power" Right = {
+		Single = { Left = "faction" Right = Faction }
+		Single = { Left = "power" Right = NnDbl
+	} } }
+	
+	(Y  ) = { Left = "can_have_more_leadership_traits" Right = Bool }
+	
+	(N N) = { Left = "opinion_diff" Right = {
+		Single = { Left = "first" Right = { ThisChar OpinionClauseDefinedTypes } }
+		Single = { Left = "second" Right = { ThisChar OpinionClauseDefinedTypes } }
+		Single = { Left = "value" Right = Double }
+		Optional = { Left = "as_if_liege" Right = Bool }
+	} }
+	
+	(N Y) = { Left = "defending_against_claimant" Right = {
+		Single = { Left = "character" Right = ThisChar }
+		Single = { Left = "title" Right = ThisTitle }
+	} }
+	(N Y) = { Left = "distance" Right = DistanceCharDef }
+	(Y  ) = { Left = "has_earmarked_regiments" Right = NnInt }
+
+} }
+
+(ContextValidator TitleTrigger) = { Members = {
+	(Y  ) = { Left = "is_contested" Right = Bool }
+	(Y  ) = { Left = "is_conquered" Right = Bool }
+	
+	
+} }
+
+(ContextValidator Command) = { Members = {
+	(N Y) = { Left = "set_parent_religion" Right = {
+		Single = { Left = "religion" Right = Religion }
+		Single = { Left = "parent" Right = Religion }
+	} }
+	(N Y) = { Left = "activate_disease" Right = Disease }
+} }
+
+(ContextValidator ProvCommand) = { Members = {
+
+} }
+
+(ContextValidator CharCommand) = { Members = {
+	(Y  ) = { Left = "objective_succeeds" Right = Yes }
+	
+	(N Y) = { Left = "vassalize_or_take_under_title" Right = {
+		Single = { Left = "title" Right = ThisTitle }
+		Single = { Left = "enemy" Right = ThisChar }
+		Optional = { Left = "is_crusade" Right = Bool }
+	} }
+	
+	(Y  ) = { Left = "disband_event_forces" Right = String (LocalOp "chk" "[R]" AddChecker Earmarks If = TraceFlags) }
+	(Y  ) = { Left = "faction" Right = Faction }
+	(Y  ) = { Left = "capital" Right = ThisTitle }
+	(Y  ) = { Left = "diplomatic_immunity" Right = Bool }
+	
+} }
+
+(ContextValidator TitleCommand) = { Members = {
+	(Y  ) = { Left = "set_name" Right = String }
+	(Y  ) = { Left = "province_capital" Right = Yes }
+	(Y  ) = { Left = "copy_title_laws" Right = AnyTitle }
+	(Y  ) = { Left = "copy_title_history" Right = AnyTitle }
+} }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

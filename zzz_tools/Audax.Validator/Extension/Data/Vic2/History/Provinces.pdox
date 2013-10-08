@@ -1,0 +1,39 @@
+#(Validator ProvinceHistory) = {
+#	Type = Default
+#	FriendlyName = "Province History"
+#	(FileGroup "history\provinces" "*.txt" True)
+#	ValidatorName = ProvinceFile
+#}
+
+Includes = {
+	"..\..\_Common\ProvinceHistory"
+}
+
+(Type.Or ProvinceHistoryTag) = { Type.Enum = LandProvince }
+(Type ProvinceHistory) = {
+	Inherits = ProvinceHistoryBase
+
+	Optional = { Left = "owner" Right = Tag }
+	Optional = { Left = "controller" Right = Tag }
+	(Ch N Y) = { Left = "add_core" Right = Tag }
+	Single = { Left = "trade_goods" Right = Goods }
+	Single = { Left = "life_rating" Right = PInt } # TODO: Place better limits?
+	Optional = { Left = "terrain" Right = Terrain } # TODO: Exists?
+	
+	Optional = { Left = "colonial" Right = Bool } # TODO: Exists?
+	Optional = { Left = "colony" Right = Bool } # TODO: Exists?
+	Optional = { Left = "is_slave" Right = Bool } # TODO: Exists?
+	
+	Optional = { Left = "naval_base" Right = PInt } # TODO: Better limits
+	Optional = { Left = "fort" Right = PInt } # TODO: Better limits
+	Optional = { Left = "railroad" Right = PInt } # TODO: Better limits
+	Optional = { Left = "revolt" Right = {
+		Single = { Left = "type" Right = RebelType }
+		Single = { Left = "controller" Right = Bool } } }
+	(Ch N Y) = { Left = "state_building" Right = { # TODO: Check not duplicated between states, or in province
+		Single = { Left = "level" Right = PInt } # TODO: Better limits
+		Single = { Left = "building" Right = Factory }
+		Optional = { Left = "upgrade" Right = Bool } } }
+}
+
+(Type DateClause) = { }
