@@ -32,6 +32,7 @@ country_event = {
 			leave_faction = allies
 			leave_alliance = ENG
 			GER = {kill_leader = 855525}                # Maritz does not defect to the Rebels, so not available to GER player
+			GER = {kill_leader = 855526}                # Beyers does not defect to the Rebels, so not available to GER player
 			national_unity = +1
 			neutrality = +80							# To limit chance of quickly rejoining Faction and War  (something else lowers it to 24? but doesn't seem needed)
 			relation = { who = ENG value = -50 }		
@@ -66,9 +67,13 @@ country_event = {
 			name = "ACTION_NAME_GREAT"	
 			set_country_flag = boer_rebellion		   								   
 			SAF = { kill_leader = 425061 }           # Maritz defects to the Rebels
+			SAF = { kill_leader = 425063 }           # de Wet defects to the Rebels
+			remove_minister = 425097				 # C. Beyers defects to the Rebels
+			chief_of_staff = 425096					 # J. Smuts takes over
 			GER = { load_oob = "Boer_1914.txt" }     # Load Boer Rebels under German control
 			8038 = {supplies = 500}                # Give Rebels a supply dump, IRL life they resisted for about 6 months
 			10366 = {supplies = 500}
 			7996 = {supplies = 500}
+			7986 = {supplies = 500}
 		}
 	}

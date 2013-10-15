@@ -4778,6 +4778,7 @@ regiment=
 corps = {
 name = "Kaiserliche Schutztruppe"
 location = 10130
+leader = 855031
 
 regiment = {
 type = hq_brigade
@@ -4787,14 +4788,28 @@ experience = 15
 }
 
 division = {
-name = "Ostafrikanische Schutztruppe"
+name = "Ostafrikanische Schutztruppe 1-10"
 location = 10130
 
 regiment = {
 type = militia_brigade
-name = "Ostafrikanische Schutztruppe"
+name = "Ostafrikanische Schutztruppe 1-10"
 historical_model = 1
 experience = 15
+is_reserve = yes
+}
+}
+
+division = {
+name = "Ostafrikanische Schutztruppe 11-14"
+location = 10076
+
+regiment = {
+type = cavalry_brigade
+name = "Ostafrikanische Schutztruppe 11-14"
+historical_model = 1
+experience = 15
+is_reserve = yes
 }
 }
 
@@ -4824,24 +4839,24 @@ experience = 15
 }
 
 division = {
-name = "1. GSWA Regiment"
+name = "1. DSWA Regiment"
 location = 7997
 
 regiment = {
 type = cavalry_brigade
-name = "1. GSWA Regiment"
+name = "1. DSWA Regiment"
 historical_model = 1
 experience = 15
 }
 }
 
 division = {
-name = "2. GSWA Regiment"
-location = 8021
+name = "2. DSWA Camel Regiment"
+location = 7997
 
 regiment = {
 type = cavalry_brigade
-name = "2. GSWA Regiment"
+name = "2. DSWA Camel Regiment"
 historical_model = 1
 experience = 15
 }

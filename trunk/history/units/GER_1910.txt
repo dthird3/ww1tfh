@@ -897,275 +897,234 @@ regiment = { type = infantry_brigade name = "53. Landwehr-Kompanie" historical_m
 regiment = { type = artillery_brigade name = "20. Artillerie-Regiment" historical_model = 0 }
 
 }
-
 }
-
 }
-
 }
-
 }
-
 
 
 theatre = {
-
 name = "Kolonialverwaltung"
-
-location = 10381
-
-regiment = { type = hq_brigade name = "Kolonialverwaltung" historical_model = 0 }
-
-division = {
-
-name = "1. Deutsch-Samoa Garnison"
-
-location = 6617
-
-regiment = { type = garrison_brigade name = "1. Samoa-Kompanie" historical_model = 0 }
-
-}
-
-division = {
-
-name = "1. Deutsch-Südwestafrika Garnison"
-
-location = 10381
-
-regiment = { type = garrison_brigade name = "1. Südwestafrika-Kompanie" historical_model = 0 }
-
-}
-
-division = {
-
-name = "1. Deutsch-Südwestafrika Armee"
-
-location = 10381
-
-regiment = { type = infantry_brigade name = "3. Südwestafrika-Kompanie" historical_model = 0 }
-
-}
-
-division = {
-
-name = "1. Deutsch-Ostafrika Garnison"
-
 location = 10130
 
-regiment = { type = garrison_brigade name = "1. Ostafrika-Kompanie" historical_model = 0 }
-
+regiment = {
+type = hq_brigade
+name = "Kolonialverwaltung"
+historical_model = 3
+experience = 10
 }
 
 division = {
+name = "Kamerun Garrison"
+location = 9986
 
-name = "1. Deutsch-Ostafrika Armee"
+regiment = {
+type = militia_brigade
+name = "Kamerun Garrison"
+historical_model = 1
+experience = 10
+is_reserve = yes
+}
+}
 
+division=
+{
+name="Togoland Para military"
+location=9955
+
+regiment=
+{
+	name="Togoland Para military"
+	type = police_brigade
+	experience=19
+	is_reserve=yes
+	historical_model = 1
+}
+}
+
+corps = {
+name = "Kaiserliche Schutztruppe"
+location = 10130
+leader = 855031
+
+regiment = {
+type = hq_brigade
+name = "Kaiserliche Schutztruppe Ostafrika HQ"
+historical_model = 3
+experience = 15
+}
+
+division = {
+name = "Ostafrikanische Schutztruppe"
 location = 10130
 
-regiment = { type = infantry_brigade name = "3. Ostafrika-Kompanie" historical_model = 0 }
-
+regiment = {
+type = militia_brigade
+name = "Ostafrikanische Schutztruppe"
+historical_model = 1
+experience = 15
+}
 }
 
 division = {
+name = "Ostafrikanische Askari"
+location = 10089
 
-name = "1. Deutsch-Westafrika Garnison"
+regiment = {
+type = militia_brigade
+name = "Ostafrikanische Askari"
+historical_model = 0
+experience = 15
+is_reserve = yes
+}
+}
+}
 
-location = 9955
+corps = {
+name = "DSWA HQ"
+location = 10381
 
-regiment = { type = garrison_brigade name = "1. Westafrika-Kompanie" historical_model = 0 }
-
+regiment = {
+type = hq_brigade
+name = "Deutsche Sur Oesteafrika HQ"
+historical_model = 3
+experience = 15
 }
 
 division = {
+name = "1. DSWA Schutztruppe"
+location = 7997
 
-name = "1. Deutsch-Westafrika Armee"
-
-location = 9955
-
-regiment = { type = infantry_brigade name = "3. Westafrika-Kompanie" historical_model = 0 }
-
+regiment = {
+type = cavalry_brigade
+name = "1. DSWA Schutztruppe"
+historical_model = 1
+experience = 15
+}
 }
 
 division = {
+name = "2. DSWA Camel Schutztruppe"
+location = 7997
 
-name = "2. Deutsch-Westafrika Garnison"
-
-location = 9986
-
-regiment = { type = garrison_brigade name = "5. Westafrika-Kompanie" historical_model = 0 }
-
+regiment = {
+type = cavalry_brigade
+name = "2. DSWA Camel Schutztruppe"
+historical_model = 1
+experience = 15
+}
 }
 
 division = {
+name = "German Colonists"
+location = 10381
 
-name = "2. Deutsch-Westafrika Armee"
-
-location = 9986
-
-regiment = { type = infantry_brigade name = "7. Westafrika-Kompanie" historical_model = 0 }
-
+regiment = {
+type = militia_brigade
+name = "German Colonists"
+historical_model = 1
+experience = 10
+is_reserve = yes
+}
+}
 }
 
-division = {
 
+division = {
 name = "1. China-Garnison"
-
 location = 5246
-
 regiment = { type = garrison_brigade name = "1. Yantai-Kompanie" historical_model = 0 }
-
 }
 
 division = {
-
 name = "2. China-Garnison"
-
 location = 5246
-
 regiment = { type = garrison_brigade name = "1. Qingdao-Kompanie" historical_model = 0 }
-
 }
 
 division = {
-
 name = "1. Palau-Garnison"
-
 location = 6291
-
 regiment = { type = garrison_brigade name = "1. Palau-Kompanie" historical_model = 0 }
-
 }
 
 division = {
-
 name = "1. Yap-Garnison"
-
 location = 10645
-
 regiment = { type = garrison_brigade name = "1. Yap-Kompanie" historical_model = 0 }
-
 }
 
 division = {
-
 name = "1. Truk-Garnison"
-
 location = 10645
-
 regiment = { type = garrison_brigade name = "1. Truk-Kompanie" historical_model = 0 }
-
 }
 
 division = {
-
 name = "1. Ponape-Garnison"
-
 location = 10653
-
 regiment = { type = garrison_brigade name = "1. Ponape-Kompanie" historical_model = 0 }
-
 }
 
 division = {
-
 name = "1. Kwajalein-Garnison"
-
 location = 10658
-
 regiment = { type = garrison_brigade name = "1. Kwajalein-Kompanie" historical_model = 0 }
-
 }
 
 division = {
-
 name = "1. Eniwetok-Garnison"
-
 location = 10663
-
 regiment = { type = garrison_brigade name = "1. Eniwetok-Kompanie" historical_model = 0 }
-
 }
 
 division = {
-
 name = "1. Mili-Garnison"
-
 location = 10657
-
 regiment = { type = garrison_brigade name = "1. Mili-Kompanie" historical_model = 0 }
-
 }
 
 division = {
-
 name = "1. Satawan-Garnison"
-
 location = 10652
-
 regiment = { type = garrison_brigade name = "1. Satawan-Kompanie" historical_model = 0 }
-
 }
 
 division = {
-
 name = "1. Saipan-Garnison"
-
 location = 5966
-
 regiment = { type = garrison_brigade name = "1. Saipan-Kompanie" historical_model = 0 }
-
 }
 
 division = {
-
 name = "1. Deutsch-Neuguinea-Garnison"
-
 location = 6439
-
 regiment = { type = garrison_brigade name = "1. Wewak-Kompanie" historical_model = 0 }
-
 }
 
 division = {
-
 name = "1. Deutsch-Neuguinea-Armee"
-
 location = 6439
-
 regiment = { type = infantry_brigade name = "1. Wewak-Kompanie" historical_model = 0 }
-
 }
 
 division = {
-
 name = "2. Deutsch-Neuguinea-Armee"
-
 location = 6439
-
 regiment = { type = infantry_brigade name = "1. Wewak-Kompanie" historical_model = 0 }
-
 }
 
 division = {
-
 name = "2. Deutsch-Neuguinea-Garnison"
-
 location = 6467
-
 regiment = { type = garrison_brigade name = "1. Rabaul-Kompanie" historical_model = 0 }
-
 }
 
 division = {
-
 name = "3. Deutsch-Neuguinea-Garnison"
-
 location = 6422
-
 regiment = { type = garrison_brigade name = "1. Admiralitätsinseln-Kompanie" historical_model = 0 }
-
 }
-
 }
 
 navy = {
