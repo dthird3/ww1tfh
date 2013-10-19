@@ -358,6 +358,29 @@ country_event = {
 }
 country_event = {
 		
+		id = 190502
+		
+		major = no
+		
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		
+		title = "ENGE8"
+		desc = "desc_ENGE8"
+		picture = "ENGP8"
+
+		option = {
+			name = "opta_ENGE8"
+			ai_chance = { factor = 100 }		
+			add_country_modifier = {
+				name = "volunteer_army_uk"
+				duration = 90
+			}		
+		}
+}
+country_event = {
+		
 		id = 100509
 		
 		major = yes
