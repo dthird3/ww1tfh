@@ -1061,14 +1061,14 @@ type = heavy_cruiser
 historical_model = 2}
 
 ship = {
-name = "2a Squadriglia Cacciatorpediniere"
+name = "1a Squadriglia Cacciatorpediniere"
 type = destroyer
-historical_model = 1}
+historical_model = 2}
 
 ship = {
-name = "5a Squadriglia Torpediniere"
+name = "2a Squadriglia Cacciatorpediniere"
 type = destroyer
-historical_model = 0}
+historical_model = 3}
 
 }
 navy = {
@@ -1109,27 +1109,46 @@ historical_model = 1}
 ship = {
 name = "RN Piemonte"
 type = light_cruiser
-historical_model = 0}
+historical_model = 1}
 
 ship = {
 name = "RN Quarto"
 type = light_cruiser
 historical_model = 2}
 
-ship = {
-name = "RN Nino Bixio"
-type = light_cruiser
-historical_model = 2}
-
-ship = {
-name = "RN Marsala"
-type = light_cruiser
-historical_model = 2}
 
 ship = {
 name = "RN Agordat"
 type = light_cruiser
-historical_model = 1}
+historical_model = 0}
+ship = {
+name = "RN Tripoli"
+type = light_cruiser
+historical_model = 0}
+ship = {
+name = "RN Goito"
+type = light_cruiser
+historical_model = 0}
+ship = {
+name = "RN Montebello"
+type = light_cruiser
+historical_model = 0}
+ship = {
+name = "RN Euridice"
+type = light_cruiser
+historical_model = 0}
+ship = {
+name = "RN Iride"
+type = light_cruiser
+historical_model = 0}
+ship = {
+name = "RN Minerva"
+type = light_cruiser
+historical_model = 0}
+ship = {
+name = "RN Partenope"
+type = light_cruiser
+historical_model = 0}
 
 ship = {
 name = "RN Libia"
@@ -1139,22 +1158,13 @@ historical_model = 1}
 ship = {
 name = "RN Puglia"
 type = light_cruiser
-historical_model = 0}
-
-ship = {
-name = "1a Squadriglia Cacciatorpediniere"
-type = destroyer
-historical_model = 2}
-
-ship = {
-name = "5a Squadriglia Cacciatorpediniere"
-type = destroyer
 historical_model = 1}
+
 
 ship = {
 name = "3a Squadriglia Sommergibili"
 type = submarine
-historical_model = 1}
+historical_model = 0}
 
 }
 navy = {
@@ -1166,6 +1176,23 @@ ship = {
 name = "RN Sardegna"
 type = battleship
 historical_model = 0}
+ship = {
+name = "RN Sicilia"
+type = battleship
+historical_model = 0}
+ship = {
+name = "RN Re Umberto"
+type = battleship
+historical_model = 0}
+ship = {
+name = "RN Lepanto"
+type = battleship
+historical_model = 0}
+ship = {
+name = "RN Italia"
+type = battleship
+historical_model = 0}
+
 
 ship = {
 name = "RN Emanuele Filiberto"
@@ -1190,23 +1217,22 @@ historical_model = 0}
 ship = {
 name = "RN Etruria"
 type = light_cruiser
-historical_model = 0}
-
+historical_model = 1}
 ship = {
-name = "3a Squadriglia Caccitorpediniere"
-type = destroyer
+name = "RN Elba"
+type = light_cruiser
+historical_model = 1}
+ship = {
+name = "RN Lombardia"
+type = light_cruiser
 historical_model = 1}
 
-ship = {
-name = "4a Squadriglia Caccitorpediniere"
-type = destroyer
-historical_model = 1}
 
 
 ship = {
 name = "1a Squadriglia Sommergibili"
 type = submarine
-historical_model = 1}
+historical_model = 2}
 
 ship = {
 name = "2a Squadriglia Sommergibili"
@@ -1216,7 +1242,7 @@ historical_model = 1}
 
 ship = {
 name = "RN Enrico Dandolo"
-type = heavy_cruiser
+type = battleship
 historical_model = 0}
 
 }
@@ -1228,7 +1254,7 @@ base = 4869
 ship = {
 name = "RN Coatit"
 type = light_cruiser
-historical_model = 1}
+historical_model = 0}
 
 ship = {
 name = "Squadriglia Scorte"
@@ -1244,17 +1270,17 @@ base = 5445
 ship = {
 name = "RN Liguria"
 type = light_cruiser
-historical_model = 0}
+historical_model = 01}
 
 ship = {
 name = "RN Giovanni Bausan"
 type = light_cruiser
-historical_model = 0}
+historical_model = 1}
 
 ship = {
 name = "RN Etna"
 type = light_cruiser
-historical_model = 0}
+historical_model = 1}
 
 ship = {
 name = "Squadriglia Tripoli"
@@ -1270,7 +1296,7 @@ base = 9767
 ship = {
 name = "RN Calabria"
 type = light_cruiser
-historical_model = 0}
+historical_model = 1}
 
 }
 navy = {
@@ -1328,6 +1354,24 @@ historical_model = 1}
 cost = 8
 progress = 0
 duration = 489}
+
+military_construction = {
+country = ITA
+light_cruiser = {
+name = "RN Nino Bixio"
+historical_model = 3}
+cost = 8
+progress = 0
+duration = 124}
+
+military_construction = {
+country = ITA
+light_cruiser = {
+name = "RN Marsala"
+historical_model = 3}
+cost = 8
+progress = 0
+duration = 215}
 
 
 air = {
