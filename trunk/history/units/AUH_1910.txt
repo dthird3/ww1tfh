@@ -736,31 +736,26 @@ name = "1. Linienschiffschwadron"
 location = 3904
 base = 3904
 
+ship = {
+name = "SMS Kronprinz Erzherzogin Rudolf"
+type = battleship
+historical_model = 0}
 
 ship = {
-name = "SMS Erzherzog Franz Ferdinand"
+name = "Kronprinzessin Erzherogin Stephanie"
 type = battleship
-historical_model = 1}
+historical_model = 0}
 
-ship = {
-name = "SMS Radetzky"
-type = battleship
-historical_model = 1}
-
-ship = {
-name = "SMS Zrínyi"
-type = battleship
-historical_model = 1}
 
 ship = {
 name = "1. Zerstörergeschwader"
 type = destroyer
-historical_model = 2}
+historical_model = 1}
 
 ship = {
 name = "2. Zerstörergeschwader"
 type = destroyer
-historical_model = 2}
+historical_model = 1}
 
 }
 navy = {
@@ -856,6 +851,36 @@ name = "SMS Panther"
 type = light_cruiser
 historical_model = 0}
 
+ship = {
+name = "SMS Leopard"
+type = light_cruiser
+historical_model = 0}
+
+ship = {
+name = "SMS Tiger"
+type = light_cruiser
+historical_model = 0}
+
+ship = {
+name = "SMS Zara"
+type = light_cruiser
+historical_model = 0}
+
+ship = {
+name = "SMS Spalato"
+type = light_cruiser
+historical_model = 0}
+
+ship = {
+name = "SMS Sebenico"
+type = light_cruiser
+historical_model = 0}
+
+ship = {
+name = "SMS Lussin"
+type = light_cruiser
+historical_model = 0}
+
 
 
 }
@@ -869,10 +894,6 @@ name = "SMS Sankt Georg"
 type = heavy_cruiser
 historical_model = 2}
 
-ship = {
-name = "SMS Admiral Spaun"
-type = light_cruiser
-historical_model = 2}
 
 ship = {
 name = "SMS Aspern"
@@ -925,10 +946,39 @@ historical_model = 0}
 
 
 
+military_construction = {
+country = AUH
+light_cruiser = {
+name = "SMS Admiral Spaun"
+historical_model = 2}
+cost = 2
+progress = 0
+duration = 198}
 
-
-
-
+military_construction = {
+country = AUH
+battleship = {
+name = "SMS Erzherzog Franz Ferdinand"
+historical_model = 1}
+cost = 2
+progress = 0
+duration = 35}
+military_construction = {
+country = AUH
+battleship = {
+name = "SMS Radetzky"
+historical_model = 1}
+cost = 2
+progress = 0
+duration = 259}
+military_construction = {
+country = AUH
+battleship = {
+name = "SMS Zrínyi"
+historical_model = 1}
+cost = 2
+progress = 0
+duration = 502}
 
 
 

@@ -3360,6 +3360,18 @@ type = light_cruiser
 name = "SMS Hela"
 historical_model = 0
 experience = 15
+}	
+ship = {
+type = light_cruiser
+name = "SMS Cormoran"
+historical_model = 0
+experience = 15
+}	
+ship = {
+type = light_cruiser
+name = "SMS Geier"
+historical_model = 0
+experience = 15
 }
 
  	
@@ -3404,8 +3416,8 @@ experience = 15
  	
 ship = {
 type = destroyer
-name = "6. Zerstgeschwader"
-historical_model = 2
+name = "6. Zerstörergeschwader"
+historical_model = 1
 experience = 15
 }
 
@@ -3435,8 +3447,8 @@ experience = 15
  	
 ship = {
 type = destroyer
-name = "7. Zerstgeschwader"
-historical_model = 2
+name = "7. Zerstörergeschwader"
+historical_model = 1
 experience = 15
 }
 
@@ -3739,13 +3751,25 @@ experience = 15
  	
 ship = {
 type = battleship
-name = "SMS Brandenburg"
+name = "SMS Kurfürst Friedrich Wilhelm"
 historical_model = 0
 experience = 15
 } 	
 ship = {
 type = battleship
 name = "SMS Wörth"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = battleship
+name = "SMS Kaiser"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = battleship
+name = "SMS Württemberg"
 historical_model = 0
 experience = 15
 }
@@ -3777,7 +3801,14 @@ experience = 15
 ship = {
 type = submarine
 name = "3. Unterseebootsflottille"
-historical_model = 0
+historical_model = 1
+experience = 15
+} 	
+
+ship = {
+type = submarine
+name = "4. Unterseebootsflottille"
+historical_model = 2
 experience = 15
 }
 
@@ -3934,16 +3965,16 @@ experience = 15
  	
 ship = {
 type = destroyer
-name = "4. Zerstgeschwader"
-historical_model = 2
+name = "4. Zerstörergeschwader"
+historical_model = 1
 experience = 15
 }
 
  	
 ship = {
 type = destroyer
-name = "5. Zerstgeschwader"
-historical_model = 2
+name = "5. Zerstörergeschwader"
+historical_model = 1
 experience = 15
 }
 
@@ -4021,24 +4052,24 @@ experience = 15
  	
 ship = {
 type = destroyer
-name = "3. Torpedobootflottille"
-historical_model = 0
+name = "3. Zerstörergeschwader"
+historical_model = 1
 experience = 15
 }
 
  	
 ship = {
 type = destroyer
-name = "8. Torpedobootflottille"
-historical_model = 0
+name = "8. Zerstörergeschwader"
+historical_model = 1
 experience = 15
 }
 
  	
 ship = {
 type = destroyer
-name = "9. Torpedobootflottille"
-historical_model = 0
+name = "9. Zerstörergeschwader"
+historical_model = 2
 experience = 15
 }
 
@@ -4133,7 +4164,7 @@ experience = 15
  	
 ship = {
 type = destroyer
-name = "10. Zerstgeschwader"
+name = "10. Zerstörergeschwader"
 historical_model = 2
 experience = 15
 }
@@ -4141,7 +4172,7 @@ experience = 15
  	
 ship = {
 type = destroyer
-name = "11. Zerstgeschwader"
+name = "11. Zerstörergeschwader"
 historical_model = 2
 experience = 15
 }
@@ -4149,7 +4180,7 @@ experience = 15
  	
 ship = {
 type = destroyer
-name = "12. Zerstgeschwader"
+name = "12. Zerstörergeschwader"
 historical_model = 2
 experience = 15
 }
@@ -4157,7 +4188,7 @@ experience = 15
  	
 ship = {
 type = destroyer
-name = "13. Zerstgeschwader"
+name = "13. Zerstörergeschwader"
 historical_model = 2
 experience = 15
 }
@@ -4165,32 +4196,32 @@ experience = 15
  	
 ship = {
 type = destroyer
-name = "14. Zerstgeschwader"
-historical_model = 1
+name = "14. Zerstörergeschwader"
+historical_model = 2
 experience = 15
 }
 
  	
 ship = {
 type = destroyer
-name = "15. Zerstgeschwader"
-historical_model = 1
+name = "15. Zerstörergeschwader"
+historical_model = 2
 experience = 15
 }
 
  	
 ship = {
 type = destroyer
-name = "16. Zerstgeschwader"
-historical_model = 1
+name = "16. Zerstörergeschwader"
+historical_model = 2
 experience = 15
 }
 
  	
 ship = {
 type = destroyer
-name = "17. Torpedobootflottille"
-historical_model = 0
+name = "17. Zerstörergeschwader"
+historical_model = 3
 experience = 15
 }
 
@@ -4339,15 +4370,15 @@ experience = 15
  	
 ship = {
 type = destroyer
-name = "1. Zerstgeschwader"
-historical_model = 1
+name = "1. Zerstörergeschwader"
+historical_model = 0
 experience = 15
 }
 
  	
 ship = {
 type = destroyer
-name = "2. Torpedobootflottille"
+name = "2. Zerstörergeschwader"
 historical_model = 0
 experience = 15
 }
@@ -4980,8 +5011,20 @@ experience = 15
  	
 ship = {
 type = destroyer
-name = "S90"
-historical_model = 0
+name = "18. Zerstörergeschwader"
+historical_model = 3
+experience = 15
+} 	
+ship = {
+type = destroyer
+name = "19. Zerstörergeschwader"
+historical_model = 3
+experience = 15
+} 	
+ship = {
+type = destroyer
+name = "20. Zerstörergeschwader"
+historical_model = 3
 experience = 15
 }
 }
@@ -5059,3 +5102,22 @@ historical_model = 2}
 cost = 2
 progress = 0
 duration = 219}
+
+military_construction = {
+country = GER
+destroyer = {
+name = "21. Zerstörergeschwader"
+historical_model = 4}
+cost = 2
+progress = 0
+duration = 50}
+
+
+military_construction = {
+country = GER
+submarine = {
+name = "5. Unterseebootsflottille"
+historical_model = 3}
+cost = 2
+progress = 0
+duration = 90}

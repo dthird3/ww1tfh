@@ -775,20 +775,56 @@ name = "RN Amalfi"
 type = heavy_cruiser
 historical_model = 2}
 
-ship = {
-name = "RN San Giorgio"
-type = heavy_cruiser
-historical_model = 2}
 
-ship = {
-name = "RN San Marco"
-type = heavy_cruiser
-historical_model = 2}
 
 ship = {
 name = "RN Agordat"
 type = light_cruiser
-historical_model = 1}
+historical_model = 0}
+ship = {
+name = "RN Tripoli"
+type = light_cruiser
+historical_model = 0}
+ship = {
+name = "RN Goito"
+type = light_cruiser
+historical_model = 0}
+ship = {
+name = "RN Montebello"
+type = light_cruiser
+historical_model = 0}
+ship = {
+name = "RN Aretusa"
+type = light_cruiser
+historical_model = 0}
+ship = {
+name = "RN Caprera"
+type = light_cruiser
+historical_model = 0}
+ship = {
+name = "RN Euridice"
+type = light_cruiser
+historical_model = 0}
+ship = {
+name = "RN Iride"
+type = light_cruiser
+historical_model = 0}
+ship = {
+name = "RN Minerva"
+type = light_cruiser
+historical_model = 0}
+ship = {
+name = "RN Partenope"
+type = light_cruiser
+historical_model = 0}
+ship = {
+name = "RN Urania"
+type = light_cruiser
+historical_model = 0}
+ship = {
+name = "RN Giovanni Bausan"
+type = light_cruiser
+historical_model = 0}
 
 }
 navy = {
@@ -819,7 +855,7 @@ historical_model = 0}
 ship = {
 name = "RN Giuseppe Garibaldi"
 type = heavy_cruiser
-historical_model = 0}
+historical_model = 1}
 
 ship = {
 name = "RN Varese"
@@ -839,7 +875,7 @@ historical_model = 0}
 ship = {
 name = "RN Coatit"
 type = light_cruiser
-historical_model = 1}
+historical_model = 0}
 
 }
 navy = {
@@ -870,28 +906,6 @@ base = 3972
 
 ship = {
 name = "3a Squadriglia Cacciatorpediniere"
-type = destroyer
-historical_model = 2}
-
-}
-navy = {
-name = "2o Gruppo di Riserva"
-location = 4869
-base = 4869
-
-ship = {
-name = "4a Squadriglia Cacciatorpediniere"
-type = destroyer
-historical_model = 1}
-
-}
-navy = {
-name = "3o Gruppo di Riserva"
-location = 3696
-base = 3696
-
-ship = {
-name = "5a Squadriglia Cacciatorpediniere"
 type = destroyer
 historical_model = 1}
 
@@ -934,17 +948,6 @@ historical_model = 0}
 
 }
 navy = {
-name = "2a Squadra Sommergibili"
-location = 3696
-base = 3696
-
-ship = {
-name = "2a Squadriglia Sommergibili"
-type = submarine
-historical_model = 0}
-
-}
-navy = {
 name = "Squadra del Mar Rosso"
 location = 9767
 base = 9767
@@ -952,27 +955,35 @@ base = 9767
 ship = {
 name = "RN Elba"
 type = light_cruiser
-historical_model = 0}
+historical_model = 1}
 
 ship = {
 name = "RN Puglia"
 type = light_cruiser
-historical_model = 0}
+historical_model = 1}
 
 ship = {
 name = "RN Etna"
 type = light_cruiser
-historical_model = 0}
+historical_model = 1}
+ship = {
+name = "RN Stromboli"
+type = light_cruiser
+historical_model = 1}
 
 ship = {
 name = "RN Liguria"
 type = light_cruiser
-historical_model = 0}
+historical_model = 1}
+ship = {
+name = "RN Lombardia"
+type = light_cruiser
+historical_model = 1}
 
 ship = {
 name = "RN Piemonte"
 type = light_cruiser
-historical_model = 0}
+historical_model = 1}
 
 
 }
@@ -984,7 +995,19 @@ base = 5233
 
 ship = {
 name = "RN Enrico Dandolo"
-type = heavy_cruiser
+type = battleship
+historical_model = 0}
+ship = {
+name = "RN Italia"
+type = battleship
+historical_model = 0}
+ship = {
+name = "RN Lepanto"
+type = battleship
+historical_model = 0}
+ship = {
+name = "RN Ruggiero di Lauria"
+type = battleship
 historical_model = 0}
 
 }
@@ -1017,7 +1040,7 @@ base = 4869
 ship = {
 name = "RN Calabria"
 type = light_cruiser
-historical_model = 0}
+historical_model = 1}
 
 }
 navy = {
@@ -1028,7 +1051,25 @@ base = 4869
 ship = {
 name = "RN Etruria"
 type = light_cruiser
-historical_model = 0}
+historical_model = 1}
 }
 
+
+military_construction = {
+country = ITA
+heavy_cruiser = {
+name = "RN San Giorgio"
+historical_model = 2}
+cost = 8
+progress = 0
+duration = 61}
+
+military_construction = {
+country = ITA
+heavy_cruiser = {
+name = "RN San Marco"
+historical_model = 2}
+cost = 8
+progress = 0
+duration = 282}
 

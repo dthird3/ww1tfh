@@ -1201,7 +1201,7 @@ type = destroyer
 historical_model = 1}
 
 ship = {
-name = "2. Torpedobootflottille"
+name = "2. Zerstörergeschwader"
 type = destroyer
 historical_model = 0}
 
@@ -1211,10 +1211,6 @@ name = "1. Aufklärungsschwadron"
 location = 1570
 base = 1570
 
-ship = {
-name = "SMS von der Tann"
-type = battlecruiser
-historical_model = 0}
 
 ship = {
 name = "SMS Blücher"
@@ -1237,30 +1233,22 @@ name = "2. Aufklärungsschwadron"
 location = 1570
 base = 1570
 
-ship = {
-name = "SMS Kolberg"
-type = light_cruiser
-historical_model = 2}
 
 ship = {
 name = "SMS Mainz"
 type = light_cruiser
 historical_model = 2}
 
-ship = {
-name = "SMS Köln"
-type = light_cruiser
-historical_model = 2}
 
 ship = {
 name = "4. Zerstörergeschwader"
 type = destroyer
-historical_model = 2}
+historical_model = 1}
 
 ship = {
 name = "5. Zerstörergeschwader"
 type = destroyer
-historical_model = 2}
+historical_model = 1}
 
 }
 navy = {
@@ -1397,6 +1385,26 @@ type = light_cruiser
 historical_model = 0}
 
 ship = {
+name = "SMS Falke"
+type = light_cruiser
+historical_model = 0}
+
+ship = {
+name = "SMS Condor"
+type = light_cruiser
+historical_model = 0}
+
+ship = {
+name = "SMS Cormoran"
+type = light_cruiser
+historical_model = 0}
+
+ship = {
+name = "SMS Geier"
+type = light_cruiser
+historical_model = 0}
+
+ship = {
 name = "SMS Seeadler"
 type = light_cruiser
 historical_model = 0}
@@ -1422,15 +1430,6 @@ name = "SMS Westfalen"
 type = dreadnaught
 historical_model = 0}
 
-ship = {
-name = "SMS Rheinland"
-type = dreadnaught
-historical_model = 0}
-
-ship = {
-name = "SMS Posen"
-type = dreadnaught
-historical_model = 0}
 
 }
 navy = {
@@ -1555,6 +1554,26 @@ name = "SMS Brandenburg"
 type = battleship
 historical_model = 0}
 
+ship = {
+name = "SMS Kurfürst Friedrich Wilhelm"
+type = battleship
+historical_model = 0}
+
+ship = {
+name = "SMS Oldenburg"
+type = battleship
+historical_model = 0}
+
+ship = {
+name = "SMS Württemberg"
+type = battleship
+historical_model = 0}
+
+ship = {
+name = "SMS Kaiser"
+type = battleship
+historical_model = 0}
+
 }
 navy = {
 name = "6. Schlachtschwadron"
@@ -1602,19 +1621,19 @@ type = heavy_cruiser
 historical_model = 0}
 
 ship = {
-name = "3. Torpedobootflottille"
+name = "3. Zerstörergeschwader"
 type = destroyer
 historical_model = 0}
 
 ship = {
-name = "8. Torpedobootflottille"
+name = "8. Zerstörergeschwader"
 type = destroyer
-historical_model = 0}
+historical_model = 1}
 
 ship = {
-name = "9. Torpedobootflottille"
+name = "9. Zerstörergeschwader"
 type = destroyer
-historical_model = 0}
+historical_model = 1}
 
 }
 navy = {
@@ -1650,6 +1669,14 @@ historical_model = 0}
 
 ship = {
 name = "SMS Kaiserin Augusta"
+type = light_cruiser
+historical_model = 0}
+ship = {
+name = "SMS Irene"
+type = light_cruiser
+historical_model = 0}
+ship = {
+name = "SMS Prinzess Wilhelm"
 type = light_cruiser
 historical_model = 0}
 ship = {
@@ -1733,6 +1760,31 @@ name = "6. Truppentransporterflottille"
 type = transport_ship
 historical_model = 0}
 }
+
+
+
+
+
+
+military_construction = {
+country = GER
+dreadnaught = {
+name = "SMS Posen"
+historical_model = 0}
+cost = 1
+progress = 0
+duration = 143}
+
+military_construction = {
+country = GER
+dreadnaught = {
+name = "SMS Rheinland"
+historical_model = 0}
+cost = 1
+progress = 0
+duration = 143}
+
+
 military_construction = {
 country = GER
 dreadnaught = {
@@ -1751,6 +1803,9 @@ cost = 1
 progress = 0
 duration = 450}
 
+
+
+
 military_construction = {
 country = GER
 dreadnaught = {
@@ -1760,16 +1815,42 @@ cost = 1
 progress = 0
 duration = 420}
 
+military_construction = {
+country = GER
+battlecruiser = {
+name = "SMS von der Tann"
+historical_model = 0}
+cost = 1
+progress = 0
+duration = 295}
 
 military_construction = {
 country = GER
 battlecruiser = {
 name = "SMS Moltke"
-historical_model = 0}
+historical_model = 1}
 cost = 1
 progress = 0
 duration = 569}
 
+
+military_construction = {
+country = GER
+light_cruiser = {
+name = "SMS Kolberg"
+historical_model = 2}
+cost = 1
+progress = 0
+duration = 51}
+
+military_construction = {
+country = GER
+light_cruiser = {
+name = "SMS Köln"
+historical_model = 2}
+cost = 1
+progress = 0
+duration = 411}
 
 military_construction = {
 country = GER
@@ -1779,4 +1860,24 @@ historical_model = 2}
 cost = 1
 progress = 0
 duration = 180}
+
+
+military_construction = {
+country = GER
+destroyer = {
+name = "15. Zerstörergeschwader"
+historical_model = 3}
+cost = 1
+progress = 0
+duration = 120}
+
+
+military_construction = {
+country = GER
+submarine = {
+name = "2. Unterseebootsflottille"
+historical_model = 1}
+cost = 1
+progress = 0
+duration = 150}
 
