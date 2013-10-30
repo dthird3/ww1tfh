@@ -1,21 +1,18 @@
 diplomatic_decisions = {
 
-# Break the UK Naval Blockade	
+# Break the UK Naval Blockade	    DIZZLE this decision is a bit optional now, keep it or delete it.  Was to give Germany some control over a big Naval breakout attempt like Jutland.
 		break_blockade = {									
 		potential = {
 			tag = GER
 			GER = {	war_with = ENG }
-			GER = { has_country_flag = stopped_unrest_subs } 			
+#			GER = { has_country_flag = stopped_unrest_subs } 			Give Germany choice ANYTIME or force Lusitania to be sunk first?
 			NOT = { GER = { has_country_flag = break_blockade } }
 		}
-		
-		allow = { date = 1916.5.1 }						# This date should be for AI only and not limit a human player
 			
 		effect = {
 			GER = { set_country_flag = break_blockade }
 			GER = { country_event = 100518 } 
-			
 		}
-		ai_will_do = { factor = 1 }
+		ai_will_do = { factor = 0 }
 	}
 }
