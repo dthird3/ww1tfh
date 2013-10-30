@@ -1,584 +1,568 @@
-armygroup= {
-
-name = "CONUS HQ"
-
-location = 3658
-
-regiment = { type = hq_brigade name = "CONUS HQ" historical_model = 0 }
-
 corps = {
-
-name = "1st Army Corps"
-
-location = 7387
-
-regiment = { type = hq_brigade name = "1st Army Corps HQ" historical_model = 0 }
+name = "Eastern Department"
+location = 4279
+regiment = { type = hq_brigade name = "Eastern Department HQ" historical_model = 0 }
 
 division = {
-
-name = "30th 'Old Hickory' NG Division"
-
-location = 7387
-
+name = "1st Infantry Division"
+location = 4279
 is_reserve = yes
 
-regiment = { type = infantry_brigade name = "118th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "117th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "118th Artilly-Regiment" historical_model = 0 }
-
+regiment = {
+type = infantry_brigade
+experience = 5
+name = "1st Infantry Brigade"
+historical_model = 1}
 }
-
 }
 
 corps = {
-
-name = "2nd Army Corps"
-
-location = 4532
-
-regiment = { type = hq_brigade name = "2nd Army Corps HQ" historical_model = 0 }
-
-division= {
-
-name = "28th 'Keystone' NG Division"
-
-location = 4532
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "109th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "110th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "113th Artilly-Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "29th 'Blue and Gray' NG Division"
-
-location = 4467
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "115th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "116th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "119th Artilly-Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "44th Infantry NG Division"
-
-location = 4342
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "71st Infantry Regiment" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "113th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "122th Artilly-Regiment" historical_model = 0 }
-
-}
-
-}
-
-corps = {
-
-name = "3rd Army Corps"
-
-location = 7350
-
-regiment = { type = hq_brigade name = "3rd Army Corps HQ" historical_model = 0 }
+name = "Puerto Rico Garrison"
+location = 7670
+regiment = { type = hq_brigade name = "Puerto Rico Garrison HQ" historical_model = 0 }
 
 division = {
-
-name = "40th 'Sunshine' NG Division"
-
-location = 7350
-
+name = "Puerto Rico Garrison"
+location = 7670
 is_reserve = yes
-
-regiment = { type = infantry_brigade name = "159th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "160th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "142th Artilly-Regiment" historical_model = 0 }
-
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "Puerto Rico Garrison"
+historical_model = 0}
+}
 }
 
+
+corps = {
+name = "Southern Department"
+location = 9239
+regiment = { type = hq_brigade name = "Southern Department HQ" historical_model = 0 }
+
+division = {
+name = "2nd Infantry Brigade"
+location = 9239
+
+regiment = {
+type = infantry_brigade
+experience = 10
+name = "2nd Infantry Brigade"
+historical_model = 2}
+}
+
+division = {
+name = "8th Infantry Brigade"
+location = 9093
+
+regiment = {
+type = infantry_brigade
+experience = 10
+name = "8th Infantry Brigade"
+historical_model = 2}
+}
+
+division = {
+name = "The Cavalry Division"
+location = 9239
+is_reserve = no
+
+regiment = {
+type = cavalry_brigade
+experience = 10
+name = "1st Cavalry Brigade"
+historical_model = 2}
+
+regiment = {
+type = cavalry_brigade
+experience = 10
+name = "2nd Cavalry Brigade"
+historical_model = 2}
+
+regiment = {
+type = cavalry_brigade
+experience = 10
+name = "3rd Cavalry Brigade"
+historical_model = 2}
+}
 }
 
 corps = {
+name = "1st Field Army"
+location = 7494
+regiment = { type = hq_brigade name = "1st Field Army HQ" historical_model = 0 }
 
-name = "4th Army Corps"
-
-location = 7482
-
-regiment = { type = hq_brigade name = "4th Army Corps HQ" historical_model = 0 }
-
-division= {
-
-name = "31st 'Dixie' NG Division"
-
-location = 7482
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "154th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "155th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "106th Artilly-Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "43rd 'Winged Victory' NG Division"
-
-location = 4082
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "102nd Infantry Regiment" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "103th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "102th Artilly-Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "1st Cavalry 'The 1st Team' Div."
-
+division = {
+name = "2nd Infantry Division"
 location = 7494
 
-regiment = { type = cavalry_brigade name = "1st Cavalry Brigade" historical_model = 0 }
+regiment = {
+type = infantry_brigade
+experience = 10
+name = "5th Infantry Brigade"
+historical_model = 2}
 
-regiment = { type = cavalry_brigade name = "2nd Cavalry Brigade" historical_model = 0 }
+regiment = {
+type = infantry_brigade
+experience = 10
+name = "6th Infantry Brigade"
+historical_model = 2}
 
+regiment = {
+type = artillery_brigade
+experience = 10
+name = "2nd Divisional Artillery"
+historical_model = 0}
 }
-
-}
-
-corps = {
-
-name = "5th Army Corps"
-
-location = 3797
-
-regiment = { type = hq_brigade name = "5th Army Corps HQ" historical_model = 0 }
-
-division= {
-
-name = "32nd 'Red Arrow' NG Division"
-
-location = 3797
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "125th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "126th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "78th Artilly-Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "34th 'Red Bull' NG Division"
-
-location = 8706
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "133th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "135th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "66th Artilly-Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "37th 'Buckeye' NG Division"
-
-location = 4333
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "145th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "146th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "36th Artilly-Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "38th 'Cyclone' NG Division"
-
-location = 7197
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "149th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "150th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "172th Artilly-Regiment" historical_model = 0 }
-
-}
-
 }
 
 corps = {
+name = "Western Department"
+location = 3658
+regiment = { type = hq_brigade name = "Western Department HQ" historical_model = 0 }
 
-name = "6th Army Corps"
-
-location = 4016
-
-regiment = { type = hq_brigade name = "6th Army Corps HQ" historical_model = 0 }
-
-division= {
-
-name = "1st 'Big Red One' Division"
-
-location = 4016
-
-regiment = { type = infantry_brigade name = "16th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "18th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "18th Artilly-Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "26th 'Yankee' NG Division"
-
-location = 4016
-
+division = {
+name = "3rd Infantry Division"
+location = 3658
 is_reserve = yes
 
-regiment = { type = infantry_brigade name = "101st Infantry Regiment" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "104th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "188th Artilly-Regiment" historical_model = 0 }
-
+regiment = {
+type = infantry_brigade
+experience = 5
+name = "7th Infantry Brigade"
+historical_model = 1}
+}
 }
 
+division = {
+name = "Alabama National Guard"
+location = 7442
+is_reserve = yes
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "Alabama National Guard"
+historical_model = 0}
 }
 
-corps = {
-
-name = "7th Army Corps"
-
-location = 4279
-
-regiment = { type = hq_brigade name = "7th Army Corps HQ" historical_model = 0 }
-
-division= {
-
-name = "27th 'New York Division' NG"
-
-location = 4279
-
+division = {
+name = "National Guard of the District of Columbia"
+location = 7300
 is_reserve = yes
 
-regiment = { type = infantry_brigade name = "105th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "106th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "182th Artilly-Regiment" historical_model = 0 }
-
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "National Guard of Columbia"
+historical_model = 0}
 }
 
-division= {
-
-name = "33rd 'Golden Cross' NG Division"
-
-location = 7104
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "129th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "130th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "21th Artilly-Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "35th 'Santa Fe' NG Division"
-
-location = 8943
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "134th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "137th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "6th Artilly-Regiment" historical_model = 0 }
-
-
-
-}
-
-}
-
-corps = {
-
-name = "8th Army Corps"
-
-location = 4342
-
-regiment = { type = hq_brigade name = "8th Army Corps HQ" historical_model = 0 }
-
-division= {
-
-name = "2nd 'Indianhead' Division"
-
-location = 4342
-
-regiment = { type = infantry_brigade name = "9th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "23rd Infantry Regiment" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "5th Artilly-Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "36th 'Texas' NG Division"
-
-location = 9121
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "141st Infantry Regiment" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "142nd Infantry Regiment" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "4th Artilly-Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "45th 'Thunderbird' NG Division"
-
+division = {
+name = "National Guard of Colorado"
 location = 8854
-
 is_reserve = yes
 
-regiment = { type = infantry_brigade name = "157th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "158th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "3rd Artilly-Regiment" historical_model = 0 }
-
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "National Guard of Colorado"
+historical_model = 0}
 }
 
+division = {
+name = "Connecticut National Guard"
+location = 4146
+is_reserve = yes
+
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "Connecticut National Guard"
+historical_model = 0}
+}
+
+
+corps = {
+name = "Illinois National Guard"
+location = 7104
+regiment = { type = hq_brigade name = "Illinois National Guard HQ" historical_model = 0 }
+
+division = {
+name = "Illinois National Guard"
+location = 7104
+is_reserve = yes
+
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "Illinois 1st Brigade"
+historical_model = 0}
+
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "Illinois 2nd Brigade"
+historical_model = 0}
+
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "Illinois 3rd Brigade"
+historical_model = 0}
+}
+}
+
+division = {
+name = "Indiana National Guard"
+location = 7197
+is_reserve = yes
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "Indiana National Guard"
+historical_model = 0}
+}
+
+division = {
+name = "Iowa National Guard"
+location = 8835
+is_reserve = yes
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "Iowa National Guard"
+historical_model = 0}
+}
+
+division = {
+name = "Kentucky State Guard"
+location = 8993
+is_reserve = yes
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "Kentucky State Guard"
+historical_model = 0}
+}
+
+division = {
+name = "Maryland National Guard"
+location = 4467
+is_reserve = yes
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "Maryland National Guard"
+historical_model = 0}
 }
 
 corps = {
+name = "Massachusetts Volunteer Militia"
+location = 4016
+regiment = { type = hq_brigade name = "Massachusetts Volunteer Militia HQ" historical_model = 0 }
 
-name = "9th Army Corps"
-
-location = 7465
-
-regiment = { type = hq_brigade name = "9th Army Corps HQ" historical_model = 0 }
-
-division= {
-
-name = "3rd 'Rock of the Marne' Division"
-
-location = 7465
-
-regiment = { type = infantry_brigade name = "7th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "15th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "2nd Artilly-Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "41st 'Sunset' NG Division"
-
-location = 6697
-
+division = {
+name = "Massachusetts Volunteer Militia"
+location = 4016
 is_reserve = yes
 
-regiment = { type = infantry_brigade name = "161st Infantry Regiment" historical_model = 0 }
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "Massachusetts 1st Militia"
+historical_model = 0}
 
-regiment = { type = infantry_brigade name = "162nd Infantry Regiment" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "41th Artilly-Regiment" historical_model = 0 }
-
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "Massachusetts 2nd Militia"
+historical_model = 0}
+}
 }
 
+division = {
+name = "Minnesota National Guard"
+location = 8706
+is_reserve = yes
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "Minnesota National Guard"
+historical_model = 0}
 }
 
+division = {
+name = "National Guard of California"
+location = 3533
+is_reserve = yes
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "National Guard of California"
+historical_model = 0}
 }
 
-division= {
-
-name = "Puerto Rico Division"
-
-location = 7670
-
-regiment = { type = garrison_brigade name = "Puerto Rico Infantry Regiment" historical_model = 0 }
-
+division = {
+name = "National Guard of Georgia"
+location = 7422
+is_reserve = yes
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "National Guard of Georgia"
+historical_model = 0}
 }
 
-division= {
+division = {
+name = "National Guard of Missouri"
+location = 7281
+is_reserve = yes
 
-name = "Honolulu Division"
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "National Guard of Missouri"
+historical_model = 0}
+}
 
+division = {
+name = "National Guard of New Jersey"
+location = 4342
+is_reserve = yes
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "National Guard of New Jersey"
+historical_model = 0}
+}
+
+corps = {
+name = "National Guard of New York"
+location = 3943
+regiment = { type = hq_brigade name = "National Guard of New York HQ" historical_model = 0 }
+
+division = {
+name = "National Guard of New York"
+location = 3943
+is_reserve = yes
+
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "National Guard - New York 1st Brigade"
+historical_model = 0}
+
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "National Guard - New York 2nd Brigade"
+historical_model = 0}
+
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "National Guard - New York 3rd Brigade"
+historical_model = 0}
+
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "National Guard - New York 4th Brigade"
+historical_model = 0}
+}
+}
+
+corps = {
+name = "National Guard of Pennsylvania"
+location = 4340
+regiment = { type = hq_brigade name = "National Guard of Pennsylvania HQ" historical_model = 0 }
+
+division = {
+name = "National Guard of Pennsylvania"
+location = 4340
+is_reserve = yes
+
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "Pennsylvania 1st Brigade"
+historical_model = 0}
+
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "Pennsylvania 2nd Brigade"
+historical_model = 0}
+
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "Pennsylvania 3rd Brigade"
+historical_model = 0}
+
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "Pennsylvania 4th Brigade"
+historical_model = 0}
+}
+}
+
+division = {
+name = "National Guard of South Carolina"
+location = 7242
+is_reserve = yes
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "National Guard of South Carolina"
+historical_model = 0}
+}
+
+division = {
+name = "Nebraska National Guard"
+location = 8857
+is_reserve = yes
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "Nebraska National Guard"
+historical_model = 0}
+}
+
+division = {
+name = "North Carolina National Guard"
+location = 5026
+is_reserve = yes
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "North Carolina National Guard"
+historical_model = 0}
+}
+
+corps = {
+name = "Ohio National Guard"
+location = 4333
+regiment = { type = hq_brigade name = "Ohio National Guard HQ" historical_model = 0 }
+
+division = {
+name = "Ohio National Guard"
+location = 4333
+is_reserve = yes
+
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "Ohio National Guard 1st Brigade"
+historical_model = 0}
+
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "Ohio National Guard 2nd Brigade"
+historical_model = 0}
+}
+}
+
+division = {
+name = "Texas National Guard"
+location = 9301
+is_reserve = yes
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "Texas National Guard"
+historical_model = 0}
+}
+
+division = {
+name = "Virginia Volunteers"
+location = 4899
+is_reserve = yes
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "Virginia Volunteers"
+historical_model = 0}
+}
+
+corps = {
+name = "Hawaiian Department"
 location = 5825
-
-regiment = { type = garrison_brigade name = "Honolulu Infantry Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "Christmas Island Division"
-
-location = 10667
-
-regiment = { type = garrison_brigade name = "Christmas Island Infantry Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "Jarvis Island Division"
-
-location = 10666
-
-regiment = { type = garrison_brigade name = "Jarvis Island Infantry Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "Palmyra Division"
-
-location = 10665
-
-regiment = { type = garrison_brigade name = "Palmyra Infantry Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "Phoenix Island Division"
-
-location = 10670
-
-regiment = { type = garrison_brigade name = "Phoenix Island Infantry Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "Midway Island Division"
-
-location = 10669
-
-regiment = { type = garrison_brigade name = "Midway Island Infantry Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "Attu Island Division"
-
-location = 10684
-
-regiment = { type = garrison_brigade name = "Attu Island Infantry Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "Johnson Island Division"
-
-location = 10668
-
-regiment = { type = garrison_brigade name = "Johnson Infantry Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "Wake Island Division"
-
-location = 10664
-
-regiment = { type = garrison_brigade name = "Wake Island Infantry Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "Guam Division"
-
-location = 6119
-
-regiment = { type = garrison_brigade name = "Guam Infantry Regiment" historical_model = 0 }
-
-}
+regiment = { type = hq_brigade name = "Hawaiian Department HQ" historical_model = 0 }
 
 division = {
+name = "1st Hawaiian Brigade"
+location = 5825
+is_reserve = yes
 
-name = "Phillippine Force"
+regiment = {
+type = infantry_brigade
+experience = 5
+name = "1st Hawaiian Brigade"
+historical_model = 1}
+}
+}
 
+corps = {
+name = "Philippine Department"
 location = 6142
+regiment = { type = hq_brigade name = "Philippine Department HQ" historical_model = 0 }
 
-regiment = { type = infantry_brigade name = "31st Infantry Regiment" historical_model = 0 }
+division = {
+name = "Philippine Brigades"
+location = 6142
+is_reserve = yes
 
-regiment = { type = infantry_brigade name = "45st Infantry Regiment" historical_model = 0 }
+regiment = {
+type = infantry_brigade
+experience = 10
+name = "8th & 13th Infantry Regiments"
+historical_model = 2}
 
-regiment = { type = artillery_brigade name = "421th Artilly-Regiment" historical_model = 0 }
-
+regiment = {
+type = infantry_brigade
+experience = 10
+name = "15th & 24th Infantry Regiments"
+historical_model = 2}
 }
 
 division = {
+name = "Philippine Scouts"
+location = 6142
+is_reserve = yes
 
-name = "Panama Canal Force"
+regiment = {
+type = militia_brigade
+experience = 5
+name = "Philippine Battalions 1-6"
+historical_model = 1}
 
-location = 7717
-
-regiment = { type = garrison_brigade name = "5th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = garrison_brigade name = "14th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "333th Artilly-Regiment" historical_model = 0 }
-
+regiment = {
+type = militia_brigade
+experience = 5
+name = "Philippine Scouts Battalions 7-13"
+historical_model = 1}
 }
+}
+
+corps = {
+name = "Canal Zone Garrison"
+location = 7717
+regiment = { type = hq_brigade name = "Canal Zone Garrison HQ" historical_model = 0 }
+
+division = {
+name = "Canal Zone Garrison"
+location = 7717
+is_reserve = yes
+regiment = {
+type = garrison_brigade
+experience = 5
+name = "Canal Zone Garrison"
+historical_model = 1}
+}
+}
+
 navy = {
 name = "Atlantic Fleet"
 location = 4900
@@ -591,6 +575,26 @@ historical_model = 0}
 
 ship = {
 name = "USS North Dakota"
+type = dreadnaught
+historical_model = 0}
+
+ship = {
+name = "USS Florida"
+type = dreadnaught
+historical_model = 0}
+
+ship = {
+name = "USS Utah"
+type = dreadnaught
+historical_model = 0}
+
+ship = {
+name = "USS Wyoming"
+type = dreadnaught
+historical_model = 0}
+
+ship = {
+name = "USS Arkansas"
 type = dreadnaught
 historical_model = 0}
 
@@ -640,11 +644,6 @@ type = battleship
 historical_model = 1}
 
 ship = {
-name = "USS Idaho"
-type = battleship
-historical_model = 1}
-
-ship = {
 name = "USS North Carolina"
 type = heavy_cruiser
 historical_model = 2}
@@ -678,6 +677,11 @@ ship = {
 name = "USS Cleveland"
 type = light_cruiser
 historical_model = 1}
+
+ship = {
+name = "USS Maryland"
+type = heavy_cruiser
+historical_model = 0}
 
 ship = {
 name = "USS Cincinnati"
@@ -738,12 +742,16 @@ ship = {
 name = "2nd Submarine Flotilla"
 type = submarine
 historical_model = 0}
+ship = {
+name = "3rd Submarine Flotilla"
+type = submarine
+historical_model = 1}
 
 }
 navy = {
 name = "Atlantic Reserve Fleet"
-location = 4279
-base = 4279
+location = 4900
+base = 4900
 
 ship = {
 name = "USS Iowa"
@@ -776,6 +784,16 @@ type = battleship
 historical_model = 0}
 
 ship = {
+name = "USS Mississippi"
+type = battleship
+historical_model = 1}
+
+ship = {
+name = "USS Idaho"
+type = battleship
+historical_model = 1}
+
+ship = {
 name = "USS Brooklyn"
 type = heavy_cruiser
 historical_model = 0}
@@ -785,10 +803,29 @@ name = "USS Columbia"
 type = light_cruiser
 historical_model = 0}
 
+ship = {
+name = "USS Marblehead"
+type = light_cruiser
+historical_model = 0}
 
 ship = {
 name = "USS Minneapolis"
 type = light_cruiser
+historical_model = 0}
+
+ship = {
+name = "1st TB Flotilla"
+type = destroyer
+historical_model = 0}
+
+ship = {
+name = "2nd TB Flotilla"
+type = destroyer
+historical_model = 0}
+
+ship = {
+name = "3rd TB Flotilla"
+type = destroyer
 historical_model = 0}
 
 }
@@ -819,11 +856,6 @@ historical_model = 1}
 
 ship = {
 name = "USS Kansas"
-type = battleship
-historical_model = 1}
-
-ship = {
-name = "USS Mississippi"
 type = battleship
 historical_model = 1}
 
@@ -884,11 +916,6 @@ type = heavy_cruiser
 historical_model = 1}
 
 ship = {
-name = "USS Maryland"
-type = heavy_cruiser
-historical_model = 0}
-
-ship = {
 name = "USS Colorado"
 type = heavy_cruiser
 historical_model = 1}
@@ -925,7 +952,7 @@ type = heavy_cruiser
 historical_model = 1}
 
 ship = {
-name = "USS Pennsylvania"
+name = "USS Pittsburgh"
 type = heavy_cruiser
 historical_model = 1}
 
@@ -933,6 +960,11 @@ ship = {
 name = "USS Denver"
 type = light_cruiser
 historical_model = 1}
+
+ship = {
+name = "6th Destroyer Flotilla"
+type = destroyer
+historical_model = 2}
 
 }
 navy = {
@@ -997,1845 +1029,20 @@ name = "9th Transport Flotilla"
 type = transport_ship
 historical_model = 0}
 }
+military_construction = {
+country = USA
+dreadnaught = {
+name = "USS Texas"
+historical_model = 1}
+cost = 4
+progress = 0
+duration = 71}
 
 military_construction = {
 country = USA
 dreadnaught = {
-name = "USS Florida"
-historical_model = 0}
-cost = 1
+name = "USS New York"
+historical_model = 1}
+cost = 4
 progress = 0
-duration = 490}
-
-military_construction = {
-country = USA
-dreadnaught = {
-name = "USS Utah"
-historical_model = 0}
-cost = 1
-progress = 0
-duration = 479}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+duration = 104}

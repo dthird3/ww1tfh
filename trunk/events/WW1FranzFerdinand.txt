@@ -1,5 +1,3 @@
-
-
  #### June 28 – Serb nationalist Gavrilo Princip assassinates Austrian Archduke Franz Ferdinand of Austria and his wife, Duchess Sophie, in Sarajevo.
 country_event = {
 
@@ -33,9 +31,10 @@ country_event = {
 			TUR = { neutrality = -10 }
 			SER = { manpower = 30 }
 			threat = { who = all value = 20 } 
+			threat = { who = USA value = -20 }						# USA doesn't care and is to remain neutral
 			SER = { threat = { who = AUH value = 100 } }
-			kill_leader = 860049 #Add Ferdinand as minister
-			remove_minister = 860044 #Add Ferdinand as minister
+			kill_leader = 860049 									#Remove Ferdinand as minister
+			remove_minister = 860044 								#Remove Ferdinand as minister
 		}
 }
 
@@ -58,6 +57,7 @@ country_event = {
 			name = "opta_AUHE1"
 			set_country_flag = serbian_ultamatium
 			threat = { who = all value = 20 } 
+			threat = { who = USA value = -20 }						# USA doesn't care and is to remain neutral
 			RUS = { country_event = 100143 }
 			AUH = {	war = {	
 					target = SER
@@ -72,7 +72,6 @@ country_event = {
 
 		id = 100143
 		
-
 		major = yes
 
 		is_triggered_only = yes
@@ -90,6 +89,7 @@ country_event = {
 			neutrality = -50
 			money = 100
 			threat = { who = all value = 10 } 
+			threat = { who = USA value = -10 }						# USA doesn't care and is to remain neutral
 			AUH = { country_event = 100144 }
 			ITA = { country_event = 999949 }
 			AUH = { any_owned = { limit = { is_core = UKR } add_core = RUS } }
@@ -146,7 +146,7 @@ country_event = {
 			neutrality = 70
 			relation = { who = ENG value = 50 }
 			relation = { who = FRA value = 50 }
-			relation = { who = FRA value = 30 }
+			relation = { who = RUS value = 30 }		
 			relation = { who = GER value = -50 }
 			relation = { who = AUH value = -50 }
 			leave_alliance = AUH
@@ -160,7 +160,7 @@ country_event = {
 			neutrality = 5
 			relation = { who = ENG value = -50 }
 			relation = { who = FRA value = -50 }
-			relation = { who = FRA value = -30 }
+			relation = { who = RUS value = -30 }		
 			relation = { who = GER value = 50 }
 			relation = { who = AUH value = 50 }
 			join_faction = axis
@@ -201,12 +201,15 @@ country_event = {
 			neutrality = -50
 			manpower = 100
 			money = 100
-			threat = { who = all value = 10 } 
+			threat = { who = all value = 10 }
+			threat = { who = USA value = -10 }						# USA doesn't care and is to remain neutral
 			national_unity = 50
 			BEL = { join_faction = allies }
 			SER = { join_faction = allies }
-			#SAF = { leave_faction = allies }					#This is here until it works in a better place, SAF decision to join war or not
-			#LUX = { join_faction = allies } never happened
+			SAF = { leave_faction = allies }						# Avoid SAF going to war until SAF Decides event
+			SAF = { leave_alliance = ENG }
+			GER = {threat = { who = SAF value = -60 }}
+			AUH = {threat = { who = SAF value = -40 }}
 			war = {	
 				target = LUX
 				attacker_goal = { casus_belli = conquer }
@@ -219,9 +222,10 @@ country_event = {
 				target = FRA
 				attacker_goal = { casus_belli = conquer }
 			}
-			#AUH = { war = { target = FRA } }
+			AUH = { country_event = 100147 }						# Montenegro event
+			SAF = { country_event = 2008000 }      
 			ENG = { country_event = 190502 }
-			AUH = { country_event = 100147 }
-			SAF = { country_event = 2008000 }
+			AUH = {threat = { who = USA value = -20 }}				# USA doesn't care and is to remain neutral
+			GER = {threat = { who = USA value = -35 }}				# USA doesn't care and is to remain neutral
 		}
 }

@@ -14,7 +14,8 @@ country_event = {
 
 		option = {
 			name = "ACTION_NAME_JOIN_ENTENTE"
-			ai_chance = { factor = 80 }				# Once all working maybe put this to 80%
+			ai_chance = { factor = 100 }	
+			ai_chance = { factor = 0 }				
 			join_faction = allies
 			war = {	
 				target = GER
@@ -28,14 +29,16 @@ country_event = {
 		}
 		option = {
 			name = "ACTION_NAME_NEUTRAL"
-			ai_chance = { factor = 20 }
-			leave_faction = allies
-			leave_alliance = ENG
-			GER = {kill_leader = 855525}                # Maritz does not defect to the Rebels, so not available to GER player
-			GER = {kill_leader = 855526}                # Beyers does not defect to the Rebels, so not available to GER player
+			ai_chance = { factor = 0 }
+			SAF = { leave_faction = allies }
+			SAF = { leave_alliance = ENG }
+			GER = { kill_leader = 855525 }                # Maritz does not defect to the Rebels, so not available to GER player
+			GER = { kill_leader = 855526 }                # Beyers does not defect to the Rebels, so not available to GER player
 			national_unity = +1
-			neutrality = +80							# To limit chance of quickly rejoining Faction and War  (something else lowers it to 24? but doesn't seem needed)
-			relation = { who = ENG value = -50 }		
+			neutrality = +80			   			    # To limit chance of quickly rejoining Faction and War  
+			relation = { who = ENG value = -50 }
+			GER = {threat = { who = SAF value = -60 }}
+			AUH = {threat = { who = SAF value = -40 }}
 		}
 }
 
@@ -53,11 +56,10 @@ country_event = {
 			NOT = { has_country_flag = boer_rebellion }
 		}
 		
-		
 		major = yes								
 		fire_only_once = yes						
 		
-		mean_time_to_happen = {days = 3}		  # to simulate uncertain timing of Rebellion - doesn't seem to work.	
+		mean_time_to_happen = {days = 1}		     
 
 		title = "EVT1914_2008001_NAME"
 		desc = "EVT1914_2008001_DESC"			   
@@ -71,7 +73,7 @@ country_event = {
 			remove_minister = 425097				 # C. Beyers defects to the Rebels
 			chief_of_staff = 425096					 # J. Smuts takes over
 			GER = { load_oob = "Boer_1914.txt" }     # Load Boer Rebels under German control
-			8038 = {supplies = 500}                # Give Rebels a supply dump, IRL life they resisted for about 6 months
+			8038 = {supplies = 500}                  # Give Rebels a supply dump, IRL life they resisted for about 6 months
 			10366 = {supplies = 500}
 			7996 = {supplies = 500}
 			7986 = {supplies = 500}
