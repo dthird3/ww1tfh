@@ -26,8 +26,7 @@ country_event = {
 			ai_chance = { factor = 100 }
 			ENG = { head_of_state = 10001 }
 			set_country_flag = king_death_george
-		}
-	
+		}	
 }
 
  #### SOUTH AFRICA BRITAIN  ####
@@ -52,7 +51,7 @@ country_event = {
 			release = SAF
 			ZZZ = { create_vassal = SAF }
 			SAF = { inherit = ZZZ }
-			manpower = 300
+			manpower = 200
 			ENG = { military_access = SAF }
 			SAF = {money = 100}
 			SAF = {manpower = 20}
@@ -66,11 +65,9 @@ country_event = {
 			SAF = { remove_brigade = "4th South African Infantry Division" }
 			SAF = { remove_brigade = "5th South African Infantry Division" }
 			SAF = { remove_brigade = "6th South African Infantry Division" }
-			
-			SAF = {load_oob = "SAF_1910.txt" }
 			set_country_flag = saf_release
-			}
-	
+			SAF = { leave_faction = allies }
+			}	
 }
 
 country_event = { #May 25 – The United Kingdom's House of Commons passes Irish Home Rule.
@@ -135,9 +132,7 @@ country_event = {
 			set_country_flag = titanic
 			ai_chance = { factor = 10 }
 			dissent = -3
-			neutrality = -10
-			USA = { neutrality = -10 }
-		}
+			}
 	
 }
 #November 5 – The United Kingdom annexes Cyprus
@@ -295,7 +290,10 @@ country_event = {
 			CAN_3737 = { secede_province = GER }
 		}
 }
-country_event = {
+
+
+# Easter Uprising in Ireland
+country_event = {						
 		
 		id = 190007
 		
@@ -332,6 +330,7 @@ country_event = {
 				}
 			}
 			set_country_flag = easter
+			USA = { relation = { who = ENG value = -20 }}			# USA upset with UK military action against Ireland
 		}
 }
 country_event = {

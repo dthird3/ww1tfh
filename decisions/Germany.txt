@@ -1,0 +1,21 @@
+diplomatic_decisions = {
+
+# Break the UK Naval Blockade	
+		break_blockade = {									
+		potential = {
+			tag = GER
+			GER = {	war_with = ENG }
+			GER = { has_country_flag = stopped_unrest_subs } }			
+			NOT = { GER = { has_country_flag = break_blockade } }
+		}
+		
+		allow = { date = 1916.5.1 }						# This date should be for AI only and not limit a human player
+			
+		effect = {
+			GER = { set_country_flag = break_blockade }
+			GER = { country_event = 100518 } 
+			
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

@@ -1,5 +1,36 @@
-#Declaration of Neutrality
-country_event = {
+# Declaration of Neutrality  ===============================================================================================================================
+
+country_event = {											# One time event at start to Ensure US Neutrality and "Peace maker" 
+
+		id = 100501
+
+		trigger = {
+			tag = LUX										# couldn't get ZZZ to work here
+			not = {year = 1915}
+			not = {month = 2}
+		}
+		fire_only_once = yes
+		title = "USAE6"
+		desc = "desc_USAE6"
+		picture = "USAP6"
+
+		option = {
+			name = "opta_USAE6"
+			ai_chance = { factor = 100 }					
+			AUH = {threat = { who = USA value = -20 }}		
+			GER = {threat = { who = USA value = -30 }}
+			USA = {relation = { who = CAN value = 75 }}		# Amend relationship status of other friendly countries which were at 0 relations
+#			USA = {relation = { who = FRA value = 65 }}
+			USA = {relation = { who = SAF value = 75 }}		
+			USA = {relation = { who = AST value = 75 }}		
+			USA = {relation = { who = NZL value = 75 }}
+#			USA = {relation = { who = RUS value = 50 }}		# was at -50, now set to 0 which is about historical
+			USA = {relation = { who = GER value = 75 }}		# Restore reasonable relations with USA until later events worsen it
+			USA = {relation = { who = AUH value = 75 }}		
+		}
+}
+
+country_event = {											# Ensure US Neutrality and "Peace maker" to avoid undesired effects during start of WW1
 
 		id = 100502
 
@@ -8,8 +39,8 @@ country_event = {
 		trigger = {
 			tag = USA
 			war = no
-			GER = {	war_with = ENG }
-			NOT = { has_country_flag = neutr }
+			GER = {	war_with = ENG }		
+			NOT = { has_country_flag = neutr }	
 		}
 		
 		mean_time_to_happen = {
@@ -24,30 +55,192 @@ country_event = {
 
 		option = {
 			name = "opta_USAE6"
-			ai_chance = { factor = 100 }
-			neutrality = 50
+			ai_chance = { factor = 100 }					
+			USA = { neutrality = +40 }
+			AUH = {threat = { who = USA value = -20 }}		
+			GER = {threat = { who = USA value = -35 }}	
 			set_country_flag = neutr
 		}
-	
 }
 
-#Unlimited submarine warfare
+# Preparedness Movement aids US volunteers to enlist in Canadian army units ==========================================================================================
 country_event = {
 
-		id = 100503
+		id = 100504
+
+		major = yes
+		
+		trigger = {
+			tag = USA
+			war = no
+			GER = {	war_with = ENG }				
+			NOT = { CAN = { has_country_flag = US_volunteers }}
+			USA = { has_country_flag = neutr }							
+		}
+		
+		mean_time_to_happen = {	months = 6 }
+		
+		fire_only_once = yes
+
+		title = "EVT1914_2008004_NAME"
+		desc = "EVT1914_2008004_DESC"
+		picture = "Canadian_recruit"
+
+		option = {
+			name = "EVT1914_2008004_ACTIONA"
+			ai_chance = { factor = 100 }
+			CAN = { set_country_flag = US_volunteers }		 
+			CAN = { manpower = 5 }
+		}
+}
+
+# War Atrocities in Belgium  ================================================================================================================================
+country_event = {
+
+		id = 100506
+
+		major = yes
+		
+		trigger = {
+			tag = BEL
+			GER = {	war_with = BEL }						
+			NOT = { GER = { has_country_flag = Atrocities }}
+			or = {
+			2489 = {controller = {faction = axis}}							# Arlon
+			2428 = {controller = {faction = axis}}							# Dinant
+			2311 = {controller = {faction = axis}}							# Bruxelles
+			2369 = {controller = {faction = axis}}							# Namur
+			}
+		}
+			
+		mean_time_to_happen = {								# Temporary for testing purposes
+			months = 2
+		}
+		
+		fire_only_once = yes
+
+		title = "EVT1914_2008002_NAME"
+		desc = "EVT1914_2008002_DESC"
+		picture = "Louvain1915"
+
+		option = {
+			name = "EVT1914_2008002_ACTIONA"
+			ai_chance = { factor = 100 }
+			USA = { neutrality = -2 }
+			USA = {relation = { who = GER value = -10 }}
+			GER = {set_country_flag = Atrocities}
+		}
+}
+
+#Sinking of the Steamer Harpalyce
+country_event = {
+
+		id = 100514
+
+		major = yes
+		
+		trigger = {
+			tag = USA
+			war = no
+			GER = {	war_with = ENG }						
+			GER = { has_country_flag = Atrocities }
+			date = 1915.04.10								
+			NOT = { USA = { has_country_flag = harpalyce } }
+		}
+		
+		mean_time_to_happen = { days = 1 }
+			
+		fire_only_once = yes
+
+		title = "EVT1914_2001555_NAME"
+		desc = "EVT1914_2001555_DESC"
+		picture = "Harpalyce"
+
+		option = {
+			name = "EVT1914_2001555_ACTIONA"
+			ai_chance = { factor = 100 }
+			USA = { neutrality = -4 }
+			USA = { relation = { who = GER value = -10 }}     
+			USA = { set_country_flag = harpalyce }
+		}
+}
+
+
+# Commence the Zeppelin bombings	======================================================================================================================					
+#												# This is to be set as a German National Decision - with bonus modifiers if accepted - effects not complete yet
+country_event = {
+
+		id = 100510
 
 		major = yes
 		
 		trigger = {
 			tag = GER
-			GER = {	war_with = ENG }
+			GER = {	war_with = ENG }					
 			USA = { war = no }
-			date = 1915.2.1
-			NOT = { has_country_flag = unrest_subs }
+			date = 1915.1.1
+			NOT = { has_country_flag = Zeppelins }
 		}
 		
-		mean_time_to_happen = {
-			days = 1
+		mean_time_to_happen = { days = 1 }
+
+		fire_only_once = yes
+
+		title = "EVT1914_2001560_NAME"
+		desc = "EVT1914_2001560_DESC"
+		picture = "zeppelin_london"
+
+		option = {
+			name = "EVT1914_2001560_ACTIONA"
+			ai_chance = { factor = 100 }
+			USA = { neutrality = -2 }
+			USA = { relation = { who = GER value = -10 }}
+			set_country_flag = Zeppelins
+		}
+}
+
+
+#        EASTER UPRISING EVENT MODIFIED TO LOWER US RELATIONS WITH UK
+
+
+
+#UK Declaration of North Sea War Zone	=======================================  Road to USA Entry  =============================================					
+country_event = {
+
+		id = 100508
+		
+		is_triggered_only = yes
+
+		major = yes
+		
+		fire_only_once = yes
+		
+		title = "EVT1914_2001556_NAME"
+		desc = "EVT1914_2001556_DESC"
+		picture = "Grand_Fleet"
+
+		option = {
+			name = "EVT1914_2001556_ACTIONA"
+			ai_chance = { factor = 100 }
+			USA = { relation = { who = ENG value = -20 }}
+		}
+}
+
+
+# Unlimited submarine warfare		German auto retaliation to North Sea War Zone
+country_event = {
+
+		id = 100512
+
+		major = yes
+		
+		trigger = {
+			tag = GER
+			GER = {	war_with = ENG }					
+			USA = { war = no }
+			date = 1915.2.1												
+			ENG = { has_country_flag = North_Sea_War_Zone }
+			NOT = { has_country_flag = unrest_subs }
 		}
 		
 		fire_only_once = yes
@@ -62,30 +255,25 @@ country_event = {
 			USA = { neutrality = -5 }
 			set_country_flag = unrest_subs
 		}
-		option = {
-			name = "optb_USAE7"
-			ai_chance = { factor = 0 }
-		}
-	
 }
-#Sinking of Lusitania
+
+
+#Sinking of Lusitania										 
 country_event = {
 
-		id = 100504
+		id = 100516
 
 		major = yes
 		
 		trigger = {
 			tag = USA
 			war = no
-			GER = {	war_with = ENG }
+			GER = {	war_with = ENG }						
 			GER = { has_country_flag = unrest_subs }
 			NOT = { USA = { has_country_flag = lusitania } }
 		}
 			
-		mean_time_to_happen = {
-			months = 1
-		}
+		mean_time_to_happen = {	months = 3 }
 		
 		fire_only_once = yes
 
@@ -96,7 +284,264 @@ country_event = {
 		option = {
 			name = "opta_USAE8"
 			ai_chance = { factor = 100 }
-			USA = { neutrality = -5 }
-			set_country_flag = lusitania
+			USA = { neutrality = -10 }
+			USA = { relation = { who = GER value = -20 }}
+			USA = { set_country_flag = lusitania }
 		}
 }
+
+# USA Demands end to Unrestricted Submarine Warfare								
+country_event = {
+
+		id = 100517
+
+		major = yes
+		
+		trigger = {
+			tag = GER
+			GER = {	war_with = ENG }						
+			USA = { has_country_flag = lusitania }
+			not = { USA = { has_country_flag = demand_no_unrest_subs } }
+		}
+			
+		mean_time_to_happen = {	days = 2 }
+		
+		fire_only_once = yes
+
+		title = "EVT1914_2008005_NAME"
+		desc = "EVT1914_2008005_DESC"
+		picture = "USAP8"
+
+		option = {
+			name = "EVT1914_2008005_ACTIONA"						# Agree to Stop - lose convoy raiding bonus
+			ai_chance = { factor = 100 }
+			USA = { neutrality = 5 }
+			USA = { relation = { who = GER value = 10 }}
+			USA = { set_country_flag = demand_no_unrest_subs }		
+			GER = { set_country_flag = stopped_unrest_subs }
+		}
+		option = {
+			name = "EVT1914_2008005_ACTIONB"						# Refuse to Stop
+			ai_chance = { factor = 0 }
+			GER = {threat = { who = USA value = 10 }}
+			USA = { relation = { who = GER value = -30 }}
+			USA = { set_country_flag = demand_no_unrest_subs }
+		}
+}
+
+# Break the Blockade			Germany National Decision - gets bonuses to help defeat the UK Navy
+country_event = {				## YET TO PROVE THIS WORKS
+
+		id = 100518
+
+		major = yes
+		
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+
+		title = "EVT1914_2008006_NAME"
+		desc = "EVT1914_2008006_DESC"
+		picture = "German_Fleet"
+
+		option = {
+			name = "EVT1914_2008006_ACTIONA"
+			ai_chance = { factor = 100 }
+			add_country_modifier = { name = break_UK_blockade } # German Naval bonuses for 3 months
+            duration = 90
+			USA = { country_event = 100520 } 
+        }
+}
+
+# Battle of Jutland		Either Triggered by "Break the Blockade" or Date triggered if "Break the Blockade" not taken								
+country_event = {
+
+		id = 100520
+
+		major = yes
+		
+		trigger = {
+			tag = USA
+			GER = {	war_with = ENG }
+			date = 1916.4.1						# This date gets in the way of being triggered by Break Blockade, should occur 2 months after "Break Blockade" or 12 months after "Stop Subs" whichever comes first.
+			NOT = { USA = { has_country_flag = Jutland } }
+		}
+		
+		mean_time_to_happen = {	months = 2 }
+		
+		fire_only_once = yes
+
+		title = "EVT1914_2001557_NAME"
+		desc = "EVT1914_2001557_DESC"
+		picture = "Seydlitz"
+
+		option = {
+			name = "EVT1914_2001557_ACTIONA"
+			ai_chance = { factor = 100 }
+			USA = {neutrality = -15}
+			USA = {set_country_flag = Jutland}				
+		}
+}
+
+# Send Zimmermann Telegram and Resume Sub war         This is to happen approx 8 months after Jutland or by 1/2/17 whichever comes first?
+country_event = {
+
+		id = 100521
+
+		major = yes
+		
+		trigger = {
+			tag = GER
+			GER = {	war_with = ENG }
+			GER = { has_country_flag = stopped_unrest_subs }
+			USA = { has_country_flag = Jutland } 
+			NOT = { GER = { has_country_flag = Send_Zimmermann } }
+		}
+		
+		mean_time_to_happen = {	months = 8 }
+		
+		fire_only_once = yes
+
+		title = "EVT1914_2008007_NAME"
+		desc = "EVT1914_2008007_DESC"
+		picture = "Zimmermann_Telegram"
+
+		option = {
+			name = "EVT1914_2008007_ACTIONA"
+			ai_chance = { factor = 100 }
+			GER = { set_country_flag = Send_Zimmermann }
+		}
+}
+
+
+#Zimmermann Telegram Intercepted
+country_event = {
+
+		id = 100526
+
+		major = yes
+		
+		trigger = {
+			tag = USA
+			GER = {	war_with = ENG }
+			GER = { has_country_flag = Send_Zimmermann }
+			NOT = { USA = { has_country_flag = Zimmermann_intercepted } }
+		}
+		
+		mean_time_to_happen = { days = 1 }
+		
+		fire_only_once = yes
+
+		title = "EVT1914_2001558_NAME"
+		desc = "EVT1914_2001558_DESC"
+		picture = "Zimmermann_Telegram"
+
+		option = {
+			name = "EVT1914_2001558_ACTIONA"
+			ai_chance = { factor = 100 }
+			USA = { relation = { who = GER value = -20 }}
+			threat = { who = GER value = 5 }
+			USA = {set_country_flag = Zimmermann_intercepted}
+		}
+}
+
+
+# Abdication of the Tsar
+
+# OPTION FOR MEXICAN DOW?
+
+
+#German Sabotage at Black Tom Pier
+country_event = {
+
+		id = 100522
+
+		major = yes
+		
+		trigger = {
+			tag = USA
+			GER = {	war_with = ENG }
+			USA = { has_country_flag = Jutland } 
+#			date = 1916.7.30
+			NOT = { USA = { has_country_flag = Black_Tom } }
+		}
+		
+		mean_time_to_happen = { months = 2 }
+		
+		fire_only_once = yes
+
+		title = "EVT1914_2001554_NAME"
+		desc = "EVT1914_2001554_DESC"
+		picture = "Black_Tom_Pier"
+
+		option = {
+			name = "EVT1914_2001554_ACTIONA"
+			ai_chance = { factor = 100 }
+			USA = {neutrality = -1}
+			USA = { relation = { who = GER value = -5 }}
+			USA = { set_country_flag = Black_Tom }
+		}
+}
+
+
+#German Sabotage at Kingsland Munitions Factory
+country_event = {
+
+		id = 100524
+
+		major = yes
+		
+		trigger = {
+			tag = USA
+			GER = {	war_with = ENG }
+			USA = { has_country_flag = Jutland } 
+#			date = 1917.1.11
+			NOT = { USA = { has_country_flag = Kingsland } }
+		}
+		
+		mean_time_to_happen = { months = 7 }
+		
+		fire_only_once = yes
+
+		title = "EVT1914_2001559_NAME"
+		desc = "EVT1914_2001559_DESC"
+		picture = "kingsland"
+
+		option = {
+			name = "EVT1914_2001559_ACTIONA"
+			ai_chance = { factor = 100 }
+			USA = { neutrality = -1 }
+			USA = { relation = { who = GER value = -5 }}
+			USA = {set_country_flag = Kingsland }
+		}
+}
+
+
+# Poison Gas Developed        Should be triggered event for any Major country building a Chemical Factory
+#country_event = {
+
+#		id = 100526
+
+#		major = yes
+		
+#		trigger = {
+#			tag = USA
+#			date = 1915.1.1
+#           any_owner = { has_building = x}
+#			NOT = { USA = { has_country_flag = Chemical_detected } }
+#		}
+		
+#		fire_only_once = yes
+
+#		title = "EVT1914_2008003_NAME"
+#		desc = "EVT1914_2008003_DESC"
+#		picture = "poison_gas"
+
+#		option = {
+#			name = "EVT1914_2008003_ACTIONA"
+#			ai_chance = { factor = 100 }
+#			USA = {neutrality = -1}
+#			USA = {set_country_flag = Chemical_detected}
+#		}
+	
+#}
