@@ -207,7 +207,7 @@ blockade_of_central_powers = {
 	trigger = { has_country_flag = North_Sea_War_Zone }
 	
 	convoy_raid = 0.7
-	icon = 3
+	icon = 2
 }
 
 unrestricted_submarine_warfare = {
@@ -216,12 +216,12 @@ unrestricted_submarine_warfare = {
 	}
 	
 	trigger = { 
-		has_country_flag = unrest_subs 
-		not = { has_country_flag = stopped_unrest_subs } 
+			has_country_flag = unrest_subs 
+			not = { has_country_flag = stopped_unrest_subs } 
 	}
 	
 	convoy_raid = 0.5
-	icon = 3
+	icon = 9
 }
 
 break_UK_blockade = {
@@ -235,6 +235,7 @@ break_UK_blockade = {
 		naval_organisation = 0.10
 		global_leadership_modifier = 0.05
 		naval_capacity = 0.2
+		icon = 2
 }
 
 auh_buildup = {
@@ -2081,5 +2082,5 @@ uk_no_conscription = {
 	officer_recruitment = -0.50
 	research_efficiency = 0.05
 	land_organisation = -0.25
-	icon = 3
+	icon = 5
 }

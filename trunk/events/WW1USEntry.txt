@@ -330,7 +330,7 @@ country_event = {
 }
 
 # Break the Blockade			Germany National Decision - gets bonuses to help defeat the UK Navy
-country_event = {				## YET TO PROVE THIS WORKS
+country_event = {				
 
 		id = 100518
 
@@ -347,8 +347,8 @@ country_event = {				## YET TO PROVE THIS WORKS
 		option = {
 			name = "EVT1914_2008006_ACTIONA"
 			ai_chance = { factor = 100 }
-			add_country_modifier = { name = break_UK_blockade 	 	# German Naval bonuses for 3 months
-									duration = 90 }
+			add_country_modifier = { name = break_UK_blockade 	 	# German Naval bonuses for 3 months  -  *** THE DURATION IS NOT TURNING MODIFIERS OFF  ***
+									duration = 3 }
 			USA = { country_event = 100520 } 
         }
 }
@@ -410,11 +410,12 @@ country_event = {
 			name = "EVT1914_2008007_ACTIONA"
 			ai_chance = { factor = 100 }
 			GER = { set_country_flag = Send_Zimmermann }
+			GER = { clr_country_flag = stopped_unrest_subs }
 		}
 }
 
 
-#Zimmermann Telegram Intercepted
+# Zimmermann Telegram Intercepted
 country_event = {
 
 		id = 100526
@@ -446,7 +447,7 @@ country_event = {
 }
 
 
-# Abdication of the Tsar
+# Abdication of the Tsar - This is to be a backup to bring in USA to war if all else fails - HOWEVER, if TSAR does NOT abdicate and other SUB WAR EVENTS are NOT trigger then USA SHOULD NOT ENTER
 
 # OPTION FOR MEXICAN DOW?
 
