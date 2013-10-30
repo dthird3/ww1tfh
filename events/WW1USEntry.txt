@@ -347,8 +347,8 @@ country_event = {				## YET TO PROVE THIS WORKS
 		option = {
 			name = "EVT1914_2008006_ACTIONA"
 			ai_chance = { factor = 100 }
-			add_country_modifier = { name = break_UK_blockade } # German Naval bonuses for 3 months
-            duration = 90
+			add_country_modifier = { name = break_UK_blockade 	 	# German Naval bonuses for 3 months
+									duration = 90 }
 			USA = { country_event = 100520 } 
         }
 }
