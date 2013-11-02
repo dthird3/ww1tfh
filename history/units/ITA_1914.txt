@@ -1,896 +1,1358 @@
-corps = {
-name = "Esercito Italiano"
+theatre = {
+name = "Comandante Supremo"
 location = 4549
-regiment = { type = hq_brigade name = "Esercito Italiano HQ" historical_model = 0 }
 
-
-division = {
-name = "Divisione di Bersaglieri"
-location = 4549
-is_reserve = no
 regiment = {
-type = infantry_brigade
-experience = 10
-name = "Divisione di Bersaglieri1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "Divisione di Bersaglieri2"
-historical_model = 2}
-regiment = {
-type = engineer_brigade
-experience = 10
-name = "Divisione di Bersaglieri4"
-historical_model = 0}
+type = hq_brigade
+name = "1st HQ Brigade"
+historical_model = 2
+experience = 3
 }
 
-}
-corps = {
-name = "Comando Truppe Alpini"
-location = 3827
-regiment = { type = hq_brigade name = "Comando Truppe Alpini HQ" historical_model = 0 }
-
-division = {
-name = "Gruppo Alpino A"
-location = 3827
-is_reserve = no
-regiment = {
-type = bergsjaeger_brigade
-experience = 10
-name = "Gruppo Alpino A1"
-historical_model = 2}
-regiment = {
-type = bergsjaeger_brigade
-experience = 10
-name = "Gruppo Alpino A2"
-historical_model = 2}
-}
-
-division = {
-name = "Gruppo Alpino B"
-location = 3827
-is_reserve = no
-regiment = {
-type = bergsjaeger_brigade
-experience = 10
-name = "Gruppo Alpino B1"
-historical_model = 2}
-regiment = {
-type = bergsjaeger_brigade
-experience = 10
-name = "Gruppo Alpino B2"
-historical_model = 2}
-}
-
-division = {
-name = "Brigada Alpina"
-location = 3827
-is_reserve = yes
-regiment = {
-type = bergsjaeger_brigade
-experience = 5
-name = "Brigada Alpina1"
-historical_model = 1}
-regiment = {
-type = bergsjaeger_brigade
-experience = 5
-name = "Brigada Alpina2"
-historical_model = 1}
-}
-
-division = {
-name = "Zona di Carnia"
-location = 3827
-is_reserve = yes
-regiment = {
-type = bergsjaeger_brigade
-experience = 5
-name = "Zona di Carnia1"
-historical_model = 1}
-regiment = {
-type = bergsjaeger_brigade
-experience = 5
-name = "Zona di Carnia2"
-historical_model = 1}
-}
-
-}
-corps = {
-name = "Comando Truppe di Cavalleria"
-location = 3626
-regiment = { type = hq_brigade name = "Comando Truppe di Cavalleria HQ" historical_model = 0 }
-
-division = {
-name = "1a Divisione di Cavalleria"
-location = 3626
-is_reserve = no
-regiment = {
-type = cavalry_brigade
-experience = 10
-name = "1a Divisione di Cavalleria1"
-historical_model = 2}
-regiment = {
-type = cavalry_brigade
-experience = 10
-name = "1a Divisione di Cavalleria2"
-historical_model = 2}
-}
-
-division = {
-name = "2a Divisione di Cavalleria"
-location = 3626
-is_reserve = no
-regiment = {
-type = cavalry_brigade
-experience = 10
-name = "2a Divisione di Cavalleria1"
-historical_model = 2}
-regiment = {
-type = cavalry_brigade
-experience = 10
-name = "2a Divisione di Cavalleria2"
-historical_model = 2}
-}
-
-division = {
-name = "3a Divisione di Cavalleria"
-location = 3626
-is_reserve = no
-regiment = {
-type = cavalry_brigade
-experience = 10
-name = "3a Divisione di Cavalleria1"
-historical_model = 2}
-regiment = {
-type = cavalry_brigade
-experience = 10
-name = "3a Divisione di Cavalleria2"
-historical_model = 2}
-}
-
-division = {
-name = "4a Divisione di Cavalleria"
-location = 3626
-is_reserve = no
-regiment = {
-type = cavalry_brigade
-experience = 10
-name = "4a Divisione di Cavalleria1"
-historical_model = 2}
-regiment = {
-type = cavalry_brigade
-experience = 10
-name = "4a Divisione di Cavalleria2"
-historical_model = 2}
-}
-
-}
-corps = {
-name = "I Corpo d'Armata"
-location = 3900
-regiment = { type = hq_brigade name = "I Corpo d'Armata HQ" historical_model = 0 }
-
-division = {
-name = "1a Divisione di Fanteria"
-location = 3900
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "1a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "1a Divisione di Fanteria2"
-historical_model = 2}
-regiment = {
-type = artillery_brigade
-experience = 10
-name = "1a Divisione di Fanteria4"
-historical_model = 0}
-}
-
-division = {
-name = "2a Divisione di Fanteria"
-location = 3900
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "2a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "2a Divisione di Fanteria2"
-historical_model = 2}
-}
-
-}
-corps = {
-name = "II Corpo d'Armata"
-location = 3827
-regiment = { type = hq_brigade name = "II Corpo d'Armata HQ" historical_model = 0 }
-
-division = {
-name = "3a Divisione di Fanteria"
-location = 3827
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "3a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "3a Divisione di Fanteria2"
-historical_model = 2}
-regiment = {
-type = artillery_brigade
-experience = 10
-name = "3a Divisione di Fanteria4"
-historical_model = 0}
-}
-
-division = {
-name = "4a Divisione di Fanteria"
-location = 3827
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "4a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "4a Divisione di Fanteria2"
-historical_model = 2}
-}
-
-division = {
-name = "32a Divisione di Fanteria"
-location = 3827
-is_reserve = yes
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "32a Divisione di Fanteria1"
-historical_model = 1}
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "32a Divisione di Fanteria2"
-historical_model = 1}
-}
-
-}
-corps = {
-name = "III Corpo d'Armata"
-location = 3692
-regiment = { type = hq_brigade name = "III Corpo d'Armata HQ" historical_model = 0 }
-
-division = {
-name = "5a Divisione di Fanteria"
-location = 3692
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "5a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "5a Divisione di Fanteria2"
-historical_model = 2}
-regiment = {
-type = artillery_brigade
-experience = 10
-name = "5a Divisione di Fanteria4"
-historical_model = 0}
-}
-
-division = {
-name = "6a Divisione di Fanteria"
-location = 3692
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "6a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "6a Divisione di Fanteria2"
-historical_model = 2}
-regiment = {
-type = engineer_brigade
-experience = 0
-name = "6a Divisione di Fanteria4"
-historical_model = 0}
-}
-
-division = {
-name = "35a Divisione di Fanteria"
-location = 3692
-is_reserve = yes
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "35a Divisione di Fanteria1"
-historical_model = 1}
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "35a Divisione di Fanteria2"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "IV Corpo d'Armata"
-location = 3626
-regiment = { type = hq_brigade name = "IV Corpo d'Armata HQ" historical_model = 0 }
-
-division = {
-name = "7a Divisione di Fanteria"
-location = 3626
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "7a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "7a Divisione di Fanteria2"
-historical_model = 2}
-}
-
-division = {
-name = "8a Divisione di Fanteria"
-location = 3626
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "8a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "8a Divisione di Fanteria2"
-historical_model = 2}
-}
-
-division = {
-name = "33a Divisione di Fanteria"
-location = 3626
-is_reserve = yes
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "33a Divisione di Fanteria1"
-historical_model = 1}
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "33a Divisione di Fanteria2"
-historical_model = 1}
-}
-
-}
-corps = {
-name = "V Corpo d'Armata"
-location = 3696
-regiment = { type = hq_brigade name = "V Corpo d'Armata HQ" historical_model = 0 }
-
-
-division = {
-name = "9a Divisione di Fanteria"
-location = 3696
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "9a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "9a Divisione di Fanteria2"
-historical_model = 2}
-regiment = {
-type = artillery_brigade
-experience = 10
-name = "9a Divisione di Fanteria4"
-historical_model = 0}
-}
-
-division = {
-name = "10a Divisione di Fanteria"
-location = 3696
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "10a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "10a Divisione di Fanteria2"
-historical_model = 2}
-regiment = {
-type = engineer_brigade
-experience = 0
-name = "10a Divisione di Fanteria4"
-historical_model = 0}
-}
-
-division = {
-name = "34a Divisione di Fanteria"
-location = 3696
-is_reserve = yes
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "34a Divisione di Fanteria1"
-historical_model = 1}
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "34a Divisione di Fanteria2"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "VI Corpo d'Armata"
-location = 3562
-regiment = { type = hq_brigade name = "VI Corpo d'Armata HQ" historical_model = 0 }
-
-division = {
-name = "11a Divisione di Fanteria"
-location = 3562
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "11a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "11a Divisione di Fanteria2"
-historical_model = 2}
-regiment = {
-type = artillery_brigade
-experience = 10
-name = "11a Divisione di Fanteria4"
-historical_model = 0}
-}
-
-division = {
-name = "12a Divisione di Fanteria"
-location = 3562
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "12a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "12a Divisione di Fanteria2"
-historical_model = 2}
-}
-
-}
-corps = {
-name = "VII Corpo d'Armata"
-location = 3903
-regiment = { type = hq_brigade name = "VII Corpo d'Armata HQ" historical_model = 0 }
-
-division = {
-name = "13a Divisione di Fanteria"
-location = 3903
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "13a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "13a Divisione di Fanteria2"
-historical_model = 2}
-regiment = {
-type = artillery_brigade
-experience = 10
-name = "13a Divisione di Fanteria4"
-historical_model = 0}
-}
-
-division = {
-name = "14a Divisione di Fanteria"
-location = 3903
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "14a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "14a Divisione di Fanteria2"
-historical_model = 2}
-}
-
-}
-corps = {
-name = "VIII Corpo d'Armata"
-location = 4108
-regiment = { type = hq_brigade name = "VIII Corpo d'Armata HQ" historical_model = 0 }
-
-division = {
-name = "15a Divisione di Fanteria"
-location = 4108
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "15a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "15a Divisione di Fanteria2"
-historical_model = 2}
-regiment = {
-type = artillery_brigade
-experience = 10
-name = "15a Divisione di Fanteria4"
-historical_model = 0}
-}
-
-division = {
-name = "16a Divisione di Fanteria"
-location = 4108
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "16a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "16a Divisione di Fanteria2"
-historical_model = 2}
-}
-
-}
-corps = {
-name = "IX Corpo d'Armata"
-location = 4231
-regiment = { type = hq_brigade name = "IX Corpo d'Armata HQ" historical_model = 0 }
-
-division = {
-name = "17a Divisione di Fanteria"
-location = 4231
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "17a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "17a Divisione di Fanteria2"
-historical_model = 2}
-regiment = {
-type = artillery_brigade
-experience = 10
-name = "17a Divisione di Fanteria4"
-historical_model = 0}
-}
-
-division = {
-name = "18a Divisione di Fanteria"
-location = 4231
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "18a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "18a Divisione di Fanteria2"
-historical_model = 2}
-}
-
-}
-corps = {
-name = "X Corpo d'Armata"
-location = 4170
-regiment = { type = hq_brigade name = "X Corpo d'Armata HQ" historical_model = 0 }
-
-division = {
-name = "19a Divisione di Fanteria"
-location = 4170
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "19a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "19a Divisione di Fanteria2"
-historical_model = 2}
-regiment = {
-type = artillery_brigade
-experience = 10
-name = "19a Divisione di Fanteria4"
-historical_model = 0}
-}
-
-division = {
-name = "20a Divisione di Fanteria"
-location = 4170
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "20a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "20a Divisione di Fanteria2"
-historical_model = 2}
-}
-
-}
-corps = {
-name = "XI Corpo d'Armata"
-location = 4768
-regiment = { type = hq_brigade name = "XI Corpo d'Armata HQ" historical_model = 0 }
-
-division = {
-name = "21a Divisione di Fanteria"
-location = 4768
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "21a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "21a Divisione di Fanteria2"
-historical_model = 2}
-regiment = {
-type = artillery_brigade
-experience = 10
-name = "21a Divisione di Fanteria4"
-historical_model = 0}
-}
-
-division = {
-name = "22a Divisione di Fanteria"
-location = 4768
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "22a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "22a Divisione di Fanteria2"
-historical_model = 2}
-}
-
-}
 corps = {
 name = "XII Corpo d'Armata"
 location = 4549
-regiment = { type = hq_brigade name = "XII Corpo d'Armata HQ" historical_model = 0 }
+
+regiment = {
+type = hq_brigade
+name = "XII Corpo d'Armata HQ"
+historical_model = 2
+experience = 15
+}
+
+division = {
+name = "1a Brigada Alpini"
+location = 4549
+
+regiment = {
+type = bergsjaeger_brigade
+name = "1/2 Rgt Alpini"
+historical_model = 1
+experience = 10
+is_reserve = yes
+}
+}
+
+division = {
+name = "Milizia Territoriale"
+location = 4549
+
+regiment = {
+type = militia_brigade
+name = "Milizia Territoriale"
+historical_model = 0
+experience = 0
+is_reserve = yes
+}
+}
 
 division = {
 name = "23a Divisione di Fanteria"
 location = 4549
-is_reserve = no
+
 regiment = {
 type = infantry_brigade
-experience = 10
-name = "23a Divisione di Fanteria1"
-historical_model = 2}
+name = "Brigada Aosta"
+historical_model = 2
+experience = 5
+}
+
 regiment = {
 type = infantry_brigade
-experience = 10
-name = "23a Divisione di Fanteria2"
-historical_model = 2}
+name = "Brigada Verona"
+historical_model = 2
+experience = 5
+is_reserve = yes
+}
+
 regiment = {
 type = artillery_brigade
-experience = 10
-name = "23a Divisione di Fanteria4"
-historical_model = 0}
+name = "23a Brigada"
+historical_model = 0
+experience = 5
+}
 }
 
 division = {
 name = "24a Divisione di Fanteria"
 location = 4549
-is_reserve = no
+
 regiment = {
 type = infantry_brigade
-experience = 10
-name = "24a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "24a Divisione di Fanteria2"
-historical_model = 2}
+name = "Brigada Napoli"
+historical_model = 2
+experience = 5
 }
 
+regiment = {
+type = infantry_brigade
+name = "Brigada Piemonte"
+historical_model = 2
+experience = 5
 }
+}
+}
+
+army = {
+name = "Comando Supremo"
+location = 4549
+
+regiment = {
+type = hq_brigade
+name = "3rd HQ Brigade"
+historical_model = 1
+experience = 0
+}
+
 corps = {
-name = "25a Divisione di Fanteria"
-location = 4914
-regiment = { type = hq_brigade name = "25a Divisione di Fanteria HQ" historical_model = 0 }
+name = "VIII Corpo d'Armata"
+location = 4425
 
-division = {
-name = "25a Divisione di Fanteria"
-location = 4914
-is_reserve = no
 regiment = {
-type = infantry_brigade
-experience = 10
-name = "25a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "25a Divisione di Fanteria2"
-historical_model = 2}
-}
-
-}
-corps = {
-name = "XIII Corpo d'Armata"
-location = 4765
-regiment = { type = hq_brigade name = "XIII Corpo d'Armata HQ" historical_model = 0 }
-
-division = {
-name = "26a Divisione di Fanteria"
-location = 4765
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "26a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "26a Divisione di Fanteria2"
-historical_model = 2}
-regiment = {
-type = artillery_brigade
-experience = 10
-name = "26a Divisione di Fanteria4"
-historical_model = 0}
+type = hq_brigade
+name = "VIII Corpo d'Armata HQ"
+historical_model = 2
+experience = 15
 }
 
 division = {
-name = "27a Divisione di Fanteria"
-location = 4765
-is_reserve = no
+name = "16a Divisione di Fanteria"
+location = 4425
+
 regiment = {
 type = infantry_brigade
-experience = 10
-name = "27a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "27a Divisione di Fanteria2"
-historical_model = 2}
+name = "Brigada Friuli"
+historical_model = 2
+experience = 5
 }
 
-division = {
-name = "30a Divisione di Fanteria"
-location = 4765
+regiment = {
+type = infantry_brigade
+name = "Brigada Cremona"
+historical_model = 2
+experience = 5
 is_reserve = yes
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "30a Divisione di Fanteria1"
-historical_model = 1}
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "30a Divisione di Fanteria2"
-historical_model = 1}
 }
-
-division = {
-name = "31a Divisione di Fanteria"
-location = 4765
-is_reserve = yes
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "31a Divisione di Fanteria1"
-historical_model = 1}
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "31a Divisione di Fanteria2"
-historical_model = 1}
-}
-
-}
-corps = {
-name = "XIV Corpo d'Armata"
-location = 5233
-regiment = { type = hq_brigade name = "XIV Corpo d'Armata HQ" historical_model = 0 }
-
-division = {
-name = "28a Divisione di Fanteria"
-location = 5233
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "28a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "28a Divisione di Fanteria2"
-historical_model = 2}
 }
 
 division = {
 name = "29a Divisione di Fanteria"
-location = 5233
-is_reserve = no
+location = 4425
+
 regiment = {
 type = infantry_brigade
-experience = 10
-name = "29a Divisione di Fanteria1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "29a Divisione di Fanteria2"
-historical_model = 2}
+name = "Brigada Perugia"
+historical_model = 2
+experience = 5
 }
 
+regiment = {
+type = infantry_brigade
+name = "Brigada Lazio"
+historical_model = 2
+experience = 5
 }
+
+regiment = {
+type = artillery_brigade
+name = "29a Brigada"
+historical_model = 0
+experience = 5
+}
+}
+}
+
+corps = {
+name = "X Corpo d'Armata"
+location = 5233
+
+regiment = {
+type = hq_brigade
+name = "X Corpo d'Armata HQ"
+historical_model = 2
+experience = 15
+}
+
+division = {
+name = "19a Divisione di Fanteria"
+location = 5233
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Bologna"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Siena"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = artillery_brigade
+name = "19a Brigada"
+historical_model = 0
+experience = 5
+}
+}
+
+division = {
+name = "20a Divisione di Fanteria"
+location = 5236
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Savona"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Cagliari"
+historical_model = 2
+experience = 5
+}
+}
+}
+
+
+corps = {
+name = "XIII Corpo d'Armata"
+location = 4869
+
+					
+regiment = {
+type = hq_brigade
+name = "XIII Corpo d'Armata HQ"
+historical_model = 2
+experience = 15
+}
+
+division = {
+name = "6a Brigada Bersaglieri"
+location = 4869
+
+regiment = {
+type = infantry_brigade
+name = "6a Brigada Bersaglieri"
+historical_model = 2
+experience = 20
+}
+}
+
+division = {
+name = "30a Divisione di Fanteria"
+location = 4869
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Piacenza"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Allessandria"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+}
+
+division = {
+name = "31a Divisione di Fanteria"
+location = 4869
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Chieti"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Barletta"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+}
+
+division = {
+name = "25a Divisione di Fanteria"
+location = 4869
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Macerta"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Sassari"
+historical_model = 2
+experience = 5
+is_reserve = yes
+}
+}
+}
+
+corps = {
+name = "XIV Corpo d'Armata"
+location = 4765
+
+regiment = {
+type = hq_brigade
+name = "XIV Corpo d'Armata HQ"
+historical_model = 2
+experience = 15
+}
+
+division = {
+name = "28a Divisione di Fanteria"
+location = 4765
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Bari"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Catanzaro"
+historical_model = 2
+experience = 5
+}
+}
+
+division = {
+name = "3a Divisione di Cavalleria"
+location = 4765
+
+regiment = {
+type = cavalry_brigade
+name = "V Brigada di Cavalleria"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = cavalry_brigade
+name = "VI Brigada di Cavalleria"
+historical_model = 2
+experience = 5
+}
+}
+
+division = {
+name = "4a Divisione di Cavalleria"
+location = 4765
+
+regiment = {
+type = cavalry_brigade
+name = "VII Brigada di Cavalleria"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = cavalry_brigade
+name = "VIII Brigada di Cavalleria"
+historical_model = 2
+experience = 5
+}
+}
+
+division = {
+name = "26a Divisione di Fanteria"
+location = 4765
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Caltanisetta"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Catania"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = artillery_brigade
+name = "26a Brigada"
+historical_model = 0
+experience = 5
+}
+}
+
+division = {
+name = "27a Divisione di Fanteria"
+location = 4815
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Campania"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Benevento"
+historical_model = 2
+experience = 5
+}
+}
+}
+
+army = {
+name = "1a Armata"
+location = 3971
+
+regiment = {
+type = hq_brigade
+name = "3rd HQ Brigade"
+historical_model = 1
+experience = 0
+}
+
+regiment = {
+type = engineer_brigade
+name = "6a Brigada"
+historical_model = 0
+experience = 5
+}
+
+division = {
+name = "2a Guardia Finanza"
+location = 3971
+
+regiment = {
+type = garrison_brigade
+name = "1a Guardia Finanza"
+historical_model = 0
+experience = 0
+is_reserve = yes
+}
+}
+
+division = {
+name = "4a Brigada Bersaglieri"
+location = 3971
+
+regiment = {
+type = infantry_brigade
+name = "4a Brigada Bersaglieri"
+historical_model = 2
+experience = 20
+}
+}
+
+corps = {
+name = "III Corpo d'Armata"
+location = 3900
+
+regiment = {
+type = hq_brigade
+name = "III Corpo d'Armata HQ"
+historical_model = 2
+experience = 15
+}
+
+division = {
+name = "3a Brigada Alpini"
+location = 3900
+
+regiment = {
+type = bergsjaeger_brigade
+name = "5/6 Rgt Alpini"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+}
+
+division = {
+name = "22/27 Cavalleggeri"
+location = 3900
+
+regiment = {
+type = cavalry_brigade
+name = "22/27 Cavalleggeri"
+historical_model = 2
+experience = 5
+}
+}
+
+division = {
+name = "5a Divisione di Fanteria"
+location = 3900
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Cuneo"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Palermo"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = artillery_brigade
+name = "5a Brigada"
+historical_model = 0
+experience = 5
+}
+}
+
+division = {
+name = "6a Divisione di Fanteria"
+location = 3900
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Toscana"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Sicilia"
+historical_model = 2
+experience = 5
+}
+}
+
+division = {
+name = "35a Divisione di Fanteria"
+location = 3900
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Novara"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Milano"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+}
+}
+
+corps = {
+name = "V Corpo d'Armata"
+location = 3827
+
+regiment = {
+type = hq_brigade
+name = "V Corpo d'Armata HQ"
+historical_model = 2
+experience = 15
+}
+
+division = {
+name = "9a Divisione di Fanteria"
+location = 3827
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Roma"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Puglie"
+historical_model = 2
+experience = 5
+is_reserve = yes
+}
+	
+regiment = {
+type = artillery_brigade
+name = "9a Brigada"
+historical_model = 0
+experience = 5
+}
+}
+
+division = {
+name = "34a Divisione di Fanteria"
+location = 3827
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Treviso"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Ivrea"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+}
+
+division = {
+name = "15a Divisione di Fanteria"
+location = 3827
+	
+regiment = {
+type = infantry_brigade
+name = "Brigada Abruzzi"
+historical_model = 2
+experience = 5
+}
+	
+regiment = {
+type = infantry_brigade
+name = "Brigada Venezia"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = artillery_brigade
+name = "15a Brigada"
+historical_model = 0
+experience = 5
+}
+}
+}
+}
+
+army = {
+name = "2a Armata"
+location = 3692
+
+regiment = {
+type = hq_brigade
+name = "4th HQ Brigade"
+historical_model = 1
+experience = 0
+}
+
+division = {
+name = "2a Brigada Alpini"
+location = 3692
+
+regiment = {
+type = bergsjaeger_brigade
+name = "3/4 Rgt Alpini"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+}
+
+division = {
+name = "1a Divisione Bersaglieri"
+location = 3692
+
+regiment = {
+type = infantry_brigade
+name = "1a Brigada Bersaglieri"
+historical_model = 2
+experience = 20
+}
+regiment = {
+type = infantry_brigade
+name = "2a Brigada Bersaglieri"
+historical_model = 2
+experience = 20
+}
+}
+
+division = {
+name = "Fortezza Verona"
+location = 3695
+
+regiment = {
+type = garrison_brigade
+name = "Brigada Mantova"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+}
+
+corps = {
+name = "II Corpo d'Armata"
+location = 3558
+
+regiment = {
+type = hq_brigade
+name = "II Corpo d'Armata HQ"
+historical_model = 2
+experience = 15
+}
+
+division = {
+name = "3a Divisione di Fanteria"
+location = 3558
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Forli"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Ravenna"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = artillery_brigade
+name = "3a Brigada"
+historical_model = 0
+experience = 5
+}
+}
+
+division = {
+name = "4a Divisione di Fanteria"
+location = 3558
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Lombardia"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Livorno"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = artillery_brigade
+name = "4a Brigada"
+historical_model = 0
+experience = 5
+}
+}
+
+division = {
+name = "32a Divisione di Fanteria"
+location = 3558
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Firenze"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada La Spezia"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+}
+}
+
+corps = {
+name = "IV Corpo d'Armata"
+location = 3493
+
+regiment = {
+type = hq_brigade
+name = "IV Corpo d'Armata HQ"
+historical_model = 2
+experience = 15
+}
+
+division = {
+name = "7a Divisione di Fanteria"
+location = 3493
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Bergamo"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Valtellina"
+historical_model = 2
+experience = 5
+is_reserve = yes
+}
+}
+
+division = {
+name = "8a Divisione di Fanteria"
+location = 3493
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Salerno"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Modena"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = artillery_brigade
+name = "8a Brigada"
+historical_model = 0
+experience = 5
+}
+}
+
+division = {
+name = "33a Divisione di Fanteria"
+location = 3493
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Liguria"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Emilia"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+}
+}
+}
+
+army = {
+name = "3a Armata"
+location = 3763
+
+regiment = {
+type = hq_brigade
+name = "5th HQ Brigade"
+historical_model = 1
+experience = 0
+}
+
+regiment = {
+type = engineer_brigade
+name = "2a Brigada"
+historical_model = 0
+experience = 5
+}
+
+division = {
+name = "3a Brigada Bersaglieri"
+location = 3763
+
+regiment = {
+type = infantry_brigade
+name = "3a Brigada Bersaglieri"
+historical_model = 2
+experience = 20
+}
+}
+
+corps = {
+name = "VI Corpo d'Armata"
+location = 3560
+
+regiment = {
+type = hq_brigade
+name = "VI Corpo d'Armata HQ"
+historical_model = 2
+experience = 15
+}
+
+division = {
+name = "11a Divisione di Fanteria"
+location = 3560
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Pistoia"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Re"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = artillery_brigade
+name = "11a Brigada"
+historical_model = 0
+experience = 5
+}
+}
+
+division = {
+name = "12a Divisione di Fanteria"
+location = 3560
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Pavia"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Casale"
+historical_model = 2
+experience = 5
+}
+}
+
+division = {
+name = "1a Divisione di Cavalleria"
+location = 3560
+
+regiment = {
+type = cavalry_brigade
+name = "I Brigada di Cavalleria"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = cavalry_brigade
+name = "II Brigada di Cavalleria"
+historical_model = 2
+experience = 5
+}
+}
+}
+
+corps = {
+name = "VII Corpo d'Armata"
+location = 3696
+
+regiment = {
+type = hq_brigade
+name = "VII Corpo d'Armata HQ"
+historical_model = 2
+experience = 15
+}
+
+division = {
+name = "13a Divisione di Fanteria"
+location = 3696
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Granatieri"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Messina"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = artillery_brigade
+name = "13a Brigada"
+historical_model = 0
+experience = 5
+}
+}
+
+division = {
+name = "14a Divisione di Fanteria"
+location = 3696
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Acqui"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Pinerolo"
+historical_model = 2
+experience = 5
+}
+}
+}
+
+corps = {
+name = "XI Corpo d'Armata"
+location = 3496
+
+regiment = {
+type = hq_brigade
+name = "XI Corpo d'Armata HQ"
+historical_model = 2
+experience = 15
+}
+
+division = {
+name = "21a Divisione di Fanteria"
+location = 3496
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Pisa"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Regina"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = artillery_brigade
+name = "21a Brigada"
+historical_model = 0
+experience = 5
+}
+}
+
+division = {
+name = "22a Divisione di Fanteria"
+location = 3496
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Ferrara"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Brescia"
+historical_model = 2
+experience = 5
+}
+}
+
+division = {
+name = "2a Divisione di Cavalleria"
+location = 3496
+
+regiment = {
+type = cavalry_brigade
+name = "III Brigada di Cavalleria"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = cavalry_brigade
+name = "IV Brigada di Cavalleria"
+historical_model = 2
+experience = 5
+}
+}
+}
+}
+
+army = {
+name = "4a Armata"
+location = 4108
+
+regiment = {
+type = hq_brigade
+name = "6th HQ Brigade"
+historical_model = 1
+experience = 0
+}
+
+division = {
+name = "4a Brigada Alpini"
+location = 4108
+
+regiment = {
+type = bergsjaeger_brigade
+name = "7/8 Rgt Alpini"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+}
+
+division = {
+name = "5a Brigada Bersaglieri"
+location = 4108
+
+regiment = {
+type = infantry_brigade
+name = "5a Brigada Bersaglieri"
+historical_model = 2
+experience = 20
+}
+}
+
+division = {
+name = "1a Guardia Finanza"
+location = 4108
+
+regiment = {
+type = garrison_brigade
+name = "1a Guardia Finanza"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+}
+
+division = {
+name = "21/23 Cavalleggeri"
+location = 4108
+
+regiment = {
+type = cavalry_brigade
+name = "21/23 Cavalleggeri"
+historical_model = 2
+experience = 5
+}
+}
+
+corps = {
+name = "I Corpo d'Armata"
+location = 3972
+
+regiment = {
+type = hq_brigade
+name = "I Corpo d'Armata HQ"
+historical_model = 2
+experience = 15
+}
+
+division = {
+name = "1a Divisione di Fanteria"
+location = 3972
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Basilicata"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Parma"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = artillery_brigade
+name = "1a Brigada"
+historical_model = 0
+experience = 5
+}
+}
+
+division = {
+name = "2a Divisione di Fanteria"
+location = 3972
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Umbria"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Como"
+historical_model = 2
+experience = 5
+}
+}
+
+division = {
+name = "10a Divisione di Fanteria"
+location = 3972
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Marche"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Ancona"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = artillery_brigade
+name = "10a Brigada"
+historical_model = 0
+experience = 5
+}
+}
+}
+
+corps = {
+name = "IX Corpo d'Armata"
+location = 4231
+
+regiment = {
+type = hq_brigade
+name = "IX Corpo d'Armata HQ"
+historical_model = 2
+experience = 15
+}
+
+division = {
+name = "17a Divisione di Fanteria"
+location = 4231
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Torino"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Reggio"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = artillery_brigade
+name = "17a Brigada"
+historical_model = 0
+experience = 5
+}
+}
+
+division = {
+name = "18a Divisione di Fanteria"
+location = 4231
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Alpi"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Calabria"
+historical_model = 2
+experience = 5
+}
+}
+}
+
+
+air = {
+name = "Corpo Aeronautica"
+location = 3696
+base = 3696
+
+wing = {
+type = tactical_bomber
+name = "1. Squadriglia"
+historical_model = 0
+experience = 15
+}
+}
+}
+}
+}
+
+theatre = {
+name = "Tobruch HQ"
+location = 11387
+
+regiment = {
+type = hq_brigade
+name = "2nd HQ Brigade"
+historical_model = 1
+experience = 3
+}
+
 corps = {
 name = "Regio Corpo Truppe Coloniali della Somalia"
 location = 9980
-regiment = { type = hq_brigade name = "Regio Corpo Truppe Coloniali della Somalia HQ" historical_model = 0 }
+
+regiment = {
+type = hq_brigade
+name = "Regio Corpo Truppe Coloniali della Somalia HQ"
+historical_model = 1
+experience = 15
+}
 
 division = {
 name = "Regio Corpo Truppe Coloniali della Somalia"
@@ -898,16 +1360,23 @@ location = 9980
 
 regiment = {
 type = militia_brigade
+name = "Regio Corpo Truppe Coloniali della Somalia"
+historical_model = 0
 experience = 5
-name = "Regio Corpo Truppe Coloniali della Somalia1"
-historical_model = 0}
+}
+}
 }
 
-}
 corps = {
 name = "Regio Corpo Truppe Coloniali dell'Eritrea"
 location = 9749
-regiment = { type = hq_brigade name = "Regio Corpo Truppe Coloniali dell'Eritrea HQ" historical_model = 0 }
+
+regiment = {
+type = hq_brigade
+name = "Regio Corpo Truppe Coloniali dell'Eritrea HQ"
+historical_model = 2
+experience = 15
+}
 
 division = {
 name = "1o Gruppo Coloniali dell'Eritrea"
@@ -915,9 +1384,10 @@ location = 9749
 
 regiment = {
 type = militia_brigade
+name = "1o Gruppo Coloniali dell'Eritrea"
+historical_model = 0
 experience = 5
-name = "1o Gruppo Coloniali dell'Eritrea1"
-historical_model = 0}
+}
 }
 
 division = {
@@ -926,16 +1396,23 @@ location = 9749
 
 regiment = {
 type = militia_brigade
+name = "2o Gruppo Coloniali dell'Eritrea"
+historical_model = 0
 experience = 5
-name = "2o Gruppo Coloniali dell'Eritrea1"
-historical_model = 0}
+}
+}
 }
 
-}
 corps = {
 name = "Regio Corpo Truppe Coloniali della Tripolitania"
 location = 5445
-regiment = { type = hq_brigade name = "Regio Corpo Truppe Coloniali della Tripolitania HQ" historical_model = 0 }
+
+regiment = {
+type = hq_brigade
+name = "Regio Corpo Truppe Coloniali della Tripolitania HQ"
+historical_model = 2
+experience = 15
+}
 
 division = {
 name = "1o Gruppo Coloniali della Tripolitania"
@@ -943,9 +1420,10 @@ location = 5445
 
 regiment = {
 type = militia_brigade
+name = "1o Gruppo Coloniali della Tripolitania"
+historical_model = 0
 experience = 5
-name = "1o Gruppo Coloniali della Tripolitania1"
-historical_model = 0}
+}
 }
 
 division = {
@@ -954,9 +1432,10 @@ location = 5445
 
 regiment = {
 type = militia_brigade
+name = "2o Gruppo Coloniali della Tripolitania"
+historical_model = 0
 experience = 5
-name = "2o Gruppo Coloniali della Tripolitania1"
-historical_model = 0}
+}
 }
 
 division = {
@@ -965,51 +1444,62 @@ location = 5445
 
 regiment = {
 type = cavalry_brigade
+name = "Cavalleria Sahariana"
+historical_model = 1
 experience = 5
-name = "Cavalleria Sahariana1"
-historical_model = 1}
+}
+}
 }
 
-}
 corps = {
 name = "Regio Corpo Truppe Coloniali della Cirenaica"
 location = 5484
-regiment = { type = hq_brigade name = "Regio Corpo Truppe Coloniali della Cirenaica HQ" historical_model = 0 }
+
+regiment = {
+type = hq_brigade
+name = "Regio Corpo Truppe Coloniali della Cirenaica HQ"
+historical_model = 2
+experience = 15
+}
 
 division = {
 name = "1o Gruppo Coloniali della Cirenaica"
 location = 5484
-is_reserve = no
+
 regiment = {
 type = militia_brigade
+name = "1o Gruppo Coloniali della Cirenaica"
+historical_model = 0
 experience = 5
-name = "1o Gruppo Coloniali della Cirenaica1"
-historical_model = 0}
+}
 }
 
 division = {
 name = "2o Gruppo Coloniali della Cirenaica"
 location = 5484
-is_reserve = no
+
 regiment = {
 type = militia_brigade
+name = "2o Gruppo Coloniali della Cirenaica"
+historical_model = 0
 experience = 5
-name = "2o Gruppo Coloniali della Cirenaica1"
-historical_model = 0}
+}
 }
 
 division = {
 name = "Gruppo di Savari"
 location = 5484
-is_reserve = no
+
 regiment = {
 type = cavalry_brigade
-experience = 5
 name = "Gruppo di Savari1"
-historical_model = 0}
+historical_model = 0
+experience = 5
+}
+}
+}
 }
 
-}
 navy = {
 name = "1a Squadra Navale"
 location = 4869
@@ -1116,35 +1606,41 @@ name = "RN Quarto"
 type = light_cruiser
 historical_model = 2}
 
-
 ship = {
 name = "RN Agordat"
 type = light_cruiser
 historical_model = 0}
+
 ship = {
 name = "RN Tripoli"
 type = light_cruiser
 historical_model = 0}
+
 ship = {
 name = "RN Goito"
 type = light_cruiser
 historical_model = 0}
+
 ship = {
 name = "RN Montebello"
 type = light_cruiser
 historical_model = 0}
+
 ship = {
 name = "RN Euridice"
 type = light_cruiser
 historical_model = 0}
+
 ship = {
 name = "RN Iride"
 type = light_cruiser
 historical_model = 0}
+
 ship = {
 name = "RN Minerva"
 type = light_cruiser
 historical_model = 0}
+
 ship = {
 name = "RN Partenope"
 type = light_cruiser
@@ -1176,18 +1672,22 @@ ship = {
 name = "RN Sardegna"
 type = battleship
 historical_model = 0}
+
 ship = {
 name = "RN Sicilia"
 type = battleship
 historical_model = 0}
+
 ship = {
 name = "RN Re Umberto"
 type = battleship
 historical_model = 0}
+
 ship = {
 name = "RN Lepanto"
 type = battleship
 historical_model = 0}
+
 ship = {
 name = "RN Italia"
 type = battleship
@@ -1218,10 +1718,12 @@ ship = {
 name = "RN Etruria"
 type = light_cruiser
 historical_model = 1}
+
 ship = {
 name = "RN Elba"
 type = light_cruiser
 historical_model = 1}
+
 ship = {
 name = "RN Lombardia"
 type = light_cruiser
@@ -1305,7 +1807,7 @@ location = 4869
 base = 4869
 
 ship = {
-name = "Flottiglia Citt‡ di Milano"
+name = "Flottiglia Citt√† di Milano"
 type = transport_ship
 historical_model = 0}
 
@@ -1318,6 +1820,8 @@ ship = {
 name = "Flottiglia Volta"
 type = transport_ship
 historical_model = 0}
+}
+
 }
 military_construction = {
 country = ITA
@@ -1372,16 +1876,3 @@ historical_model = 3}
 cost = 8
 progress = 0
 duration = 215}
-
-
-air = {
-name = "Corpo Aeronautica"
-location = 3696
-base = 3696
-
-wing = {
-name = "1. Squadriglia"
-type = tactical_bomber
-historical_model = 0}
-
-}

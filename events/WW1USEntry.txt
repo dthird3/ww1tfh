@@ -113,8 +113,8 @@ country_event = {
 			}
 		}
 			
-		mean_time_to_happen = {								# Temporary for testing purposes
-			months = 2
+		mean_time_to_happen = {								
+			months = 3
 		}
 		
 		fire_only_once = yes
@@ -195,13 +195,10 @@ country_event = {
 			ai_chance = { factor = 100 }
 			USA = { neutrality = -2 }
 			USA = { relation = { who = GER value = -10 }}
+#			STRAT_BOMBING_PENALTY = -0.05
 			set_country_flag = Zeppelins
 		}
 }
-
-
-#        EASTER UPRISING EVENT MODIFIED TO LOWER US RELATIONS WITH UK
-
 
 
 #UK Declaration of North Sea War Zone	=======================================  Road to USA Entry  =============================================					
@@ -284,7 +281,8 @@ country_event = {
 		option = {
 			name = "opta_USAE8"
 			ai_chance = { factor = 100 }
-			USA = { neutrality = -10 }
+			USA = { neutrality = -5 }
+			USA = {threat = { who = GER value = 5 }}
 			USA = { relation = { who = GER value = -20 }}
 			USA = { set_country_flag = lusitania }
 		}
@@ -348,7 +346,7 @@ country_event = {
 			name = "EVT1914_2008006_ACTIONA"
 			ai_chance = { factor = 100 }
 			add_country_modifier = { name = break_UK_blockade 	 	# German Naval bonuses for 3 months  -  *** THE DURATION IS NOT TURNING MODIFIERS OFF  ***
-									duration = 3 }
+						duration = 90 }
 			USA = { country_event = 100520 } 
         }
 }
@@ -410,12 +408,11 @@ country_event = {
 			name = "EVT1914_2008007_ACTIONA"
 			ai_chance = { factor = 100 }
 			GER = { set_country_flag = Send_Zimmermann }
-			GER = { clr_country_flag = stopped_unrest_subs }
+			GER = { clr_country_flag = stopped_unrest_subs }		# Give Germany Sub warfare bonuses back
 		}
 }
 
-
-# Zimmermann Telegram Intercepted
+# Zimmermann Telegram Intercepted				(Maybe this could be optional - like a 15% to get through undetected?)
 country_event = {
 
 		id = 100526
@@ -445,11 +442,6 @@ country_event = {
 			USA = {set_country_flag = Zimmermann_intercepted}
 		}
 }
-
-
-# Abdication of the Tsar - This is to be a backup to bring in USA to war if all else fails - HOWEVER, if TSAR does NOT abdicate and other SUB WAR EVENTS are NOT trigger then USA SHOULD NOT ENTER
-
-# OPTION FOR MEXICAN DOW?
 
 
 #German Sabotage at Black Tom Pier
@@ -518,10 +510,45 @@ country_event = {
 }
 
 
+#        ============================================================== EVENTS INDEPENDANT OF UNRESTRICTED SUB WAR ==================================================================
+# Abdication of the Tsar - This is to be a backup to bring in USA to war if all else fails - HOWEVER, if TSAR does NOT abdicate and other SUB WAR EVENTS are NOT trigger then USA SHOULD NOT ENTER
+country_event = {	
+
+		id = 100530
+
+		major = yes
+		
+		is_triggered_only = yes
+#		trigger = {					# This also needs to be triggered - maybe - just on the defeat of Russia not just abdication (for balance reasons)
+#			tag = USA
+#		}
+#		RUS = { has_country_flag = war_over }
+		
+		mean_time_to_happen = { months = 1 }
+		
+		fire_only_once = yes
+
+		title = "EVT1914_2008008_NAME"
+		desc = "EVT1914_2008008_DESC"
+		picture = "abdic"
+
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }
+			USA = { neutrality = -20 }
+			USA = {threat = { who = GER value = 20 }}
+			USA = { relation = { who = RUS value = 70 }}
+		}
+}
+
+# OPTION FOR MEXICAN DOW based on Send_Zimmermann AND US DOW on Germany?
+
+
+
 # Poison Gas Developed        Should be triggered event for any Major country building a Chemical Factory
 #country_event = {
 
-#		id = 100526
+#		id = 100528
 
 #		major = yes
 		
