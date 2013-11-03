@@ -5218,9 +5218,34 @@ ship = {
 name = "Tsesarevich"
 type = battleship
 historical_model = 0}
+
 ship = {
 type = battleship
 name = "Imperator Aleksandr II"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = battleship
+name = "Dvienadtsat Apostolov"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = battleship
+name = "Sinop"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = battleship
+name = "Georgi Pobiedonosets"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = battleship
+name = "Petr Veliki"
 historical_model = 0
 experience = 15
 }
@@ -5230,15 +5255,6 @@ name = "Slava"
 type = battleship
 historical_model = 0}
 
-ship = {
-name = "Andrei Pervozvanny"
-type = battleship
-historical_model = 1}
-
-ship = {
-name = "Imperator Pavel I"
-type = battleship
-historical_model = 1}
 
 ship = {
 name = "Admiral Makarov"
@@ -5250,15 +5266,39 @@ name = "Bayan"
 type = heavy_cruiser
 historical_model = 2}
 
-ship = {
-name = "Pallada"
-type = heavy_cruiser
-historical_model = 2}
 
 ship = {
 name = "Rurik"
 type = heavy_cruiser
 historical_model = 2}
+
+
+ship = {
+type = heavy_cruiser
+name = "Minin"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = heavy_cruiser
+name = "General-Admiral"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = heavy_cruiser
+name = "Gerzog Edinburgski"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = heavy_cruiser
+name = "Pamiat Azova"
+historical_model = 0
+experience = 15
+}
+
+
 
 ship = {
 name = "Bogatyr"
@@ -5271,7 +5311,11 @@ type = light_cruiser
 historical_model = 1}
 
 ship = {
-name = "Avrora"
+name = "Admiral Kornilov"
+type = light_cruiser
+historical_model = 0}
+ship = {
+name = "Aurora"
 type = light_cruiser
 historical_model = 0}
 
@@ -5293,7 +5337,7 @@ historical_model = 1}
 ship = {
 name = "1 Flotiliya Esmintsev"
 type = destroyer
-historical_model = 2}
+historical_model = 1}
 
 ship = {
 name = "2 Flotiliya Esmintsev"
@@ -5314,6 +5358,14 @@ ship = {
 name = "5 Flotiliya Esmintsev"
 type = destroyer
 historical_model = 1}
+ship = {
+name = "11 Flotiliya Esmintsev"
+type = destroyer
+historical_model = 0}
+ship = {
+name = "12 Flotiliya Esmintsev"
+type = destroyer
+historical_model = 0}
 
 ship = {
 name = "10 Flotiliya"
@@ -5330,6 +5382,14 @@ ship = {
 name = "1 Flotiliya Podlodok"
 type = submarine
 historical_model = 1}
+ship = {
+name = "2 Flotiliya Podlodok"
+type = submarine
+historical_model = 0}
+ship = {
+name = "3 Flotiliya Podlodok"
+type = submarine
+historical_model = 0}
 
 }
 navy = {
@@ -5352,15 +5412,6 @@ name = "Panteleimon"
 type = battleship
 historical_model = 0}
 
-ship = {
-name = "Evstafi"
-type = battleship
-historical_model = 1}
-
-ship = {
-name = "Ioann Zlatoust"
-type = battleship
-historical_model = 1}
 
 ship = {
 name = "Kagul"
@@ -5368,19 +5419,19 @@ type = light_cruiser
 historical_model = 1}
 
 ship = {
-name = "Pamiat Merkuria"
+name = "Ochakov"
 type = light_cruiser
 historical_model = 1}
 
 ship = {
 name = "6 Flotiliya Esmintsev"
 type = destroyer
-historical_model = 2}
+historical_model = 0}
 
 ship = {
 name = "7 Flotiliya Esmintsev"
 type = destroyer
-historical_model = 1}
+historical_model = 0}
 
 ship = {
 name = "11 Flotiliya"
@@ -5399,9 +5450,13 @@ location = 3581
 base = 3581
 
 ship = {
-name = "2 Flotiliya Podlodok"
+name = "4 Flotiliya Podlodok"
 type = submarine
 historical_model = 1}
+ship = {
+name = "5 Flotiliya Podlodok"
+type = submarine
+historical_model = 0}
 
 }
 navy = {
@@ -5420,25 +5475,71 @@ type = light_cruiser
 historical_model = 1}
 
 ship = {
+name = "Almaz"
+type = light_cruiser
+historical_model = 1}
+
+ship = {
 name = "8 Flotiliya Esmintsev"
 type = destroyer
-historical_model = 1}
+historical_model = 0}
 
 ship = {
 name = "9 Flotiliya Esmintsev"
 type = destroyer
-historical_model = 1}
+historical_model = 0}
+
+ship = {
+name = "10 Flotiliya Esmintsev"
+type = destroyer
+historical_model = 0}
 }
 
 
 
 
 
+military_construction = {
+country = RUS
+battleship = {
+name = "Evstafi"
+historical_model = 1}
+cost = 4
+progress = 0
+duration = 96}
+military_construction = {
+country = RUS
+battleship = {
+name = "Ioann Zlatoust"
+historical_model = 1}
+cost = 4
+progress = 0
+duration = 102}
+military_construction = {
+country = RUS
+battleship = {
+name = "Andrei Pervozvanny"
+historical_model = 1}
+cost = 4
+progress = 0
+duration = 87}
+military_construction = {
+country = RUS
+battleship = {
+name = "Imperator Pavel I"
+historical_model = 1}
+cost = 4
+progress = 0
+duration = 129}
 
-
-
-
-
+military_construction = {
+country = RUS
+heavy_cruiser = {
+name = "Pallada"
+historical_model = 2}
+cost = 4
+progress = 0
+duration = 276}
 
 
 
