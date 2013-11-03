@@ -1,6 +1,7 @@
 theatre = {
 name = "Comandante Supremo"
 location = 4549
+leader=25319
 
 regiment = {
 type = hq_brigade
@@ -12,6 +13,7 @@ experience = 3
 corps = {
 name = "XII Corpo d'Armata"
 location = 4549
+leader=25398
 
 regiment = {
 type = hq_brigade
@@ -107,6 +109,7 @@ experience = 0
 corps = {
 name = "VIII Corpo d'Armata"
 location = 4425
+leader=25307
 
 regiment = {
 type = hq_brigade
@@ -165,6 +168,7 @@ experience = 5
 corps = {
 name = "X Corpo d'Armata"
 location = 5233
+leader=25337
 
 regiment = {
 type = hq_brigade
@@ -223,8 +227,8 @@ experience = 5
 corps = {
 name = "XIII Corpo d'Armata"
 location = 4869
+leader=25395
 
-					
 regiment = {
 type = hq_brigade
 name = "XIII Corpo d'Armata HQ"
@@ -310,6 +314,7 @@ is_reserve = yes
 corps = {
 name = "XIV Corpo d'Armata"
 location = 4765
+leader=25397
 
 regiment = {
 type = hq_brigade
@@ -332,44 +337,6 @@ experience = 5
 regiment = {
 type = infantry_brigade
 name = "Brigada Catanzaro"
-historical_model = 2
-experience = 5
-}
-}
-
-division = {
-name = "3a Divisione di Cavalleria"
-location = 4765
-
-regiment = {
-type = cavalry_brigade
-name = "V Brigada di Cavalleria"
-historical_model = 2
-experience = 5
-}
-
-regiment = {
-type = cavalry_brigade
-name = "VI Brigada di Cavalleria"
-historical_model = 2
-experience = 5
-}
-}
-
-division = {
-name = "4a Divisione di Cavalleria"
-location = 4765
-
-regiment = {
-type = cavalry_brigade
-name = "VII Brigada di Cavalleria"
-historical_model = 2
-experience = 5
-}
-
-regiment = {
-type = cavalry_brigade
-name = "VIII Brigada di Cavalleria"
 historical_model = 2
 experience = 5
 }
@@ -421,9 +388,81 @@ experience = 5
 }
 }
 
+corps = {
+name = "Truppe Autonome"
+location = 4765
+
+
+regiment = {
+type = hq_brigade
+name = "Truppe Autonome"
+historical_model = 2
+experience = 10
+}
+
+division = {
+name = "3a Divisione di Cavalleria"
+location = 4765
+
+regiment = {
+type = cavalry_brigade
+name = "V Brigada di Cavalleria"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = cavalry_brigade
+name = "VI Brigada di Cavalleria"
+historical_model = 2
+experience = 5
+}
+}
+
+division = {
+name = "4a Divisione di Cavalleria"
+location = 4765
+
+regiment = {
+type = cavalry_brigade
+name = "VII Brigada di Cavalleria"
+historical_model = 2
+experience = 5
+}
+
+regiment = {
+type = cavalry_brigade
+name = "VIII Brigada di Cavalleria"
+historical_model = 2
+experience = 5
+}
+}
+division = {
+name = "Carabinieri"
+location = 4765
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Padova"
+historical_model = 2
+experience = 5
+is_reserve = yes
+}
+
+regiment = {
+type = infantry_brigade
+name = "Brigada Trapani"
+historical_model = 2
+experience = 5
+is_reserve = yes
+}
+}
+}
+
 army = {
 name = "1a Armata"
 location = 3971
+leader=25308
 
 regiment = {
 type = hq_brigade
@@ -467,6 +506,7 @@ experience = 20
 corps = {
 name = "III Corpo d'Armata"
 location = 3900
+leader=25320
 
 regiment = {
 type = hq_brigade
@@ -570,6 +610,7 @@ is_reserve = yes
 corps = {
 name = "V Corpo d'Armata"
 location = 3827
+leader=25295
 
 regiment = {
 type = hq_brigade
@@ -657,6 +698,7 @@ experience = 5
 army = {
 name = "2a Armata"
 location = 3692
+leader=25329
 
 regiment = {
 type = hq_brigade
@@ -712,6 +754,7 @@ is_reserve = yes
 corps = {
 name = "II Corpo d'Armata"
 location = 3558
+leader=25376
 
 regiment = {
 type = hq_brigade
@@ -797,6 +840,7 @@ is_reserve = yes
 corps = {
 name = "IV Corpo d'Armata"
 location = 3493
+leader=25377
 
 regiment = {
 type = hq_brigade
@@ -877,6 +921,7 @@ is_reserve = yes
 army = {
 name = "3a Armata"
 location = 3763
+leader=25298
 
 regiment = {
 type = hq_brigade
@@ -907,6 +952,7 @@ experience = 20
 corps = {
 name = "VI Corpo d'Armata"
 location = 3560
+leader=25379
 
 regiment = {
 type = hq_brigade
@@ -983,6 +1029,7 @@ experience = 5
 corps = {
 name = "VII Corpo d'Armata"
 location = 3696
+leader=25331
 
 regiment = {
 type = hq_brigade
@@ -1117,6 +1164,7 @@ experience = 5
 army = {
 name = "4a Armata"
 location = 4108
+leader=25358
 
 regiment = {
 type = hq_brigade
@@ -1178,6 +1226,7 @@ experience = 5
 corps = {
 name = "I Corpo d'Armata"
 location = 3972
+leader=25374
 
 regiment = {
 type = hq_brigade
@@ -1261,6 +1310,7 @@ experience = 5
 corps = {
 name = "IX Corpo d'Armata"
 location = 4231
+leader=25350
 
 regiment = {
 type = hq_brigade
