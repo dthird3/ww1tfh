@@ -22,6 +22,24 @@ experience = 15
 }
 ship = {
 type = battleship
+name = "Sinop"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = battleship
+name = "Georgi Pobiedonosets"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = battleship
+name = "Petr Veliki"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = battleship
 name = "Imperator Aleksandr II"
 historical_model = 0
 experience = 15
@@ -88,6 +106,30 @@ name = "Gromoboi"
 historical_model = 1
 experience = 15
 }
+ship = {
+type = heavy_cruiser
+name = "Minin"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = heavy_cruiser
+name = "General-Admiral"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = heavy_cruiser
+name = "Gerzog Edinburgski"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = heavy_cruiser
+name = "Pamiat Azova"
+historical_model = 0
+experience = 15
+}
 
 ship = {
 type = light_cruiser
@@ -105,7 +147,7 @@ experience = 15
 
 ship = {
 type = light_cruiser
-name = "Avrora"
+name = "Aurora"
 historical_model = 0
 experience = 15
 }
@@ -120,7 +162,7 @@ experience = 15
 ship = {
 type = destroyer
 name = "1 Flotiliya Esmintsev"
-historical_model = 2
+historical_model = 1
 experience = 15
 }
 
@@ -151,6 +193,18 @@ name = "5 Flotiliya Esmintsev"
 historical_model = 1
 experience = 15
 }
+ship = {
+type = destroyer
+name = "12 Flotiliya Esmintsev"
+historical_model = 0
+experience = 15
+}
+ship = {
+type = destroyer
+name = "13 Flotiliya Esmintsev"
+historical_model = 0
+experience = 15
+}
 
 ship = {
 type = transport_ship
@@ -172,6 +226,21 @@ name = "1 Flotiliya Podlodok"
 historical_model = 1
 experience = 15
 }
+
+ship = {
+type = submarine
+name = "2 Flotiliya Podlodok"
+historical_model = 0
+experience = 15
+}
+
+ship = {
+type = submarine
+name = "3 Flotiliya Podlodok"
+historical_model = 0
+experience = 15
+}
+
 }
 
 navy = {
@@ -223,7 +292,14 @@ experience = 15
 
 ship = {
 type = light_cruiser
-name = "Pamiat Merkuria"
+name = "Ochakov"
+historical_model = 1
+experience = 15
+}
+
+ship = {
+type = light_cruiser
+name = "Almaz"
 historical_model = 1
 experience = 15
 }
@@ -231,14 +307,14 @@ experience = 15
 ship = {
 type = destroyer
 name = "6 Flotiliya Esmintsev"
-historical_model = 2
+historical_model = 1
 experience = 15
 }
 
 ship = {
 type = destroyer
 name = "7 Flotiliya Esmintsev"
-historical_model = 1
+historical_model = 0
 experience = 15
 }
 
@@ -264,8 +340,14 @@ base = 3581
 
 ship = {
 type = submarine
-name = "2 Flotiliya Podlodok"
+name = "4 Flotiliya Podlodok"
 historical_model = 1
+experience = 15
+}
+ship = {
+type = submarine
+name = "5 Flotiliya Podlodok"
+historical_model = 0
 experience = 15
 }
 }
@@ -292,14 +374,28 @@ experience = 15
 ship = {
 type = destroyer
 name = "8 Flotiliya Esmintsev"
-historical_model = 1
+historical_model = 0
 experience = 15
 }
 
 ship = {
 type = destroyer
 name = "9 Flotiliya Esmintsev"
-historical_model = 1
+historical_model = 0
+experience = 15
+}
+
+ship = {
+type = destroyer
+name = "10 Flotiliya Esmintsev"
+historical_model = 0
+experience = 15
+}
+
+ship = {
+type = destroyer
+name = "11 Flotiliya Esmintsev"
+historical_model = 0
 experience = 15
 }
 }
@@ -5474,3 +5570,22 @@ historical_model = 1}
 cost = 4
 progress = 0
 duration = 647}
+
+
+military_construction = {
+country = RUS
+heavy_cruiser = {
+name = "Muravev Amurski"
+historical_model = 3}
+cost = 4
+progress = 0
+duration = 349}
+
+military_construction = {
+country = RUS
+destroyer = {
+name = "14 Flotiliya Esmintsev"
+historical_model = 2}
+cost = 4
+progress = 0
+duration = 100}
