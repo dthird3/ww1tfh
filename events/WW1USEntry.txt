@@ -172,17 +172,9 @@ country_event = {
 
 		id = 100510
 
+		is_triggered_only = yes
+		
 		major = yes
-		
-		trigger = {
-			tag = GER
-			GER = {	war_with = ENG }					
-			USA = { war = no }
-			date = 1915.1.1
-			NOT = { has_country_flag = Zeppelins }
-		}
-		
-		mean_time_to_happen = { days = 1 }
 
 		fire_only_once = yes
 
@@ -195,8 +187,11 @@ country_event = {
 			ai_chance = { factor = 100 }
 			USA = { neutrality = -2 }
 			USA = { relation = { who = GER value = -10 }}
-#			STRAT_BOMBING_PENALTY = -0.05
-			set_country_flag = Zeppelins
+			GER = {add_country_modifier = { name = Zeppelin_bombing 	 	
+									duration = 730 
+#									modifier = {factor = 0.5 year = 1916}
+								   }
+				  }
 		}
 }
 
@@ -544,32 +539,37 @@ country_event = {
 # OPTION FOR MEXICAN DOW based on Send_Zimmermann AND US DOW on Germany?
 
 
+# Poison Gas Developed        Search for Chemical Weapons factories disguised as Rocket Test sites!
+country_event = {
 
-# Poison Gas Developed        Should be triggered event for any Major country building a Chemical Factory
-#country_event = {
+		id = 100528
 
-#		id = 100528
-
-#		major = yes
+		major = yes
 		
-#		trigger = {
-#			tag = USA
-#			date = 1915.1.1
-#           any_owner = { has_building = x}
-#			NOT = { USA = { has_country_flag = Chemical_detected } }
-#		}
+		trigger = {
+			tag = USA
+			NOT = { USA = { has_country_flag = Chemical_detected } }
+			OR = {
+				GER = {any_owned_province = { has_building = rocket_test}}
+				AUH = {any_owned_province = { has_building = rocket_test}}
+				ENG = {any_owned_province = { has_building = rocket_test}}
+				FRA = {any_owned_province = { has_building = rocket_test}}
+				ITA = {any_owned_province = { has_building = rocket_test}}
+				RUS = {any_owned_province = { has_building = rocket_test}}
+				TUR = {any_owned_province = { has_building = rocket_test}}
+				}	
+		}
 		
-#		fire_only_once = yes
+		fire_only_once = yes
 
-#		title = "EVT1914_2008003_NAME"
-#		desc = "EVT1914_2008003_DESC"
-#		picture = "poison_gas"
+		title = "EVT1914_2008003_NAME"
+		desc = "EVT1914_2008003_DESC"
+		picture = "poison_gas"
 
-#		option = {
-#			name = "EVT1914_2008003_ACTIONA"
-#			ai_chance = { factor = 100 }
-#			USA = {neutrality = -1}
-#			USA = {set_country_flag = Chemical_detected}
-#		}
-	
-#}
+		option = {
+			name = "EVT1914_2008003_ACTIONA"
+			ai_chance = { factor = 100 }
+			USA = {neutrality = -1}
+			USA = {set_country_flag = Chemical_detected}
+		}
+}

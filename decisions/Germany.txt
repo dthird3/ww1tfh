@@ -5,7 +5,7 @@ diplomatic_decisions = {
 		potential = {
 			tag = GER
 			GER = {	war_with = ENG }
-#			GER = { has_country_flag = stopped_unrest_subs } 			Give Germany choice ANYTIME or force Lusitania to be sunk first?
+			ENG = { has_country_flag = North_Sea_War_Zone } 			
 			NOT = { GER = { has_country_flag = break_blockade } }
 		}
 			
@@ -14,5 +14,22 @@ diplomatic_decisions = {
 			GER = { country_event = 100518 } 
 		}
 		ai_will_do = { factor = 0 }
+	}
+
+# Zeppelin Bombing Campaign	    
+		zeppelin_bombing = {									
+		potential = {
+			tag = GER
+			GER = {	war_with = ENG }					
+#			total_we_bomb = 2							# What sort of bombing is this Strat or Tac?
+			date = 1915.1.1
+			NOT = { has_country_flag = Zeppelin_bombing }
+		}
+			
+		effect = {
+			GER = { set_country_flag = Zeppelin_bombing }
+			GER = { country_event = 100510 } 
+		}
+		ai_will_do = { factor = 1 }
 	}
 }
