@@ -80,6 +80,37 @@ function P.TransportLandRatio(voProductionData)
   
 	return laArray
 end
+function P.Build_AirBase(ic, voProductionData)
+ic = Support.Build_AirBase(ic, voProductionData, 4831, 4) -- Qusayban
+ic = Support.Build_AirBase(ic, voProductionData, 9100, 2) -- AlMawsil
+ic = Support.Build_AirBase(ic, voProductionData, 9183, 2) -- Kifri
+ic = Support.Build_AirBase(ic, voProductionData, 9213, 2) -- Baghdad
+ic = Support.Build_AirBase(ic, voProductionData, 4188, 4) -- Trabzon
+ic = Support.Build_AirBase(ic, voProductionData, 4253, 2) -- Bafra
+ic = Support.Build_AirBase(ic, voProductionData, 4503, 2) -- Istanbul
+ic = Support.Build_AirBase(ic, voProductionData, 4505, 2) -- Duzce
+ic = Support.Build_AirBase(ic, voProductionData, 4513, 2) -- Erzurum
+ic = Support.Build_AirBase(ic, voProductionData, 4560, 2) -- Malkara
+ic = Support.Build_AirBase(ic, voProductionData, 4615, 2) -- Bursa
+ic = Support.Build_AirBase(ic, voProductionData, 4619, 2) -- Ankara
+ic = Support.Build_AirBase(ic, voProductionData, 4728, 2) -- Kirikkale
+ic = Support.Build_AirBase(ic, voProductionData, 4883, 2) -- Gaziantep
+ic = Support.Build_AirBase(ic, voProductionData, 4966, 4) -- Izmir
+ic = Support.Build_AirBase(ic, voProductionData, 4968, 3) -- Denizli
+ic = Support.Build_AirBase(ic, voProductionData, 5013, 2) -- Icel
+ic = Support.Build_AirBase(ic, voProductionData, 5045, 2) -- Antalya
+ic = Support.Build_AirBase(ic, voProductionData, 7332, 2) -- Batman
+ic = Support.Build_AirBase(ic, voProductionData, 5299, 3) -- Beirut
+ic = Support.Build_AirBase(ic, voProductionData, 5360, 4) -- Sour
+ic = Support.Build_AirBase(ic, voProductionData, 9073, 2) -- TallBirak
+ic = Support.Build_AirBase(ic, voProductionData, 5535, 4) -- TelAvivYafo
+ic = Support.Build_AirBase(ic, voProductionData, 5567, 3) -- Jerusalem
+ic = Support.Build_AirBase(ic, voProductionData, 5633, 3) -- ElKuntilla
+if voProductionData.Year < 1915 then
+return ic, false
+end
+return ic, true
+end
 
 function P.DiploScore_OfferTrade(voDiploScoreObj)
 	local laTrade = {

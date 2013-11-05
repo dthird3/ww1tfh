@@ -533,14 +533,71 @@ function P.Build_Fort(ic, voProductionData)
 	return ic, false
 end
 
-function P.Build_AirBase(ic, voProductionData, vbGoOver)
--- We cut our mass building of industry off so now look at air bases
-   if voProductionData.Year > 1938 then
-		return ic, true
-    else
-		return ic, false
-    end
+function P.Build_AirBase(ic, voProductionData)
+ic = Support.Build_AirBase(ic, voProductionData, 1178, 1) -- Riga
+ic = Support.Build_AirBase(ic, voProductionData, 1442, 2) -- Kaunas
+ic = Support.Build_AirBase(ic, voProductionData, 1630, 1) -- Suwalki
+ic = Support.Build_AirBase(ic, voProductionData, 1753, 2) -- Lida
+ic = Support.Build_AirBase(ic, voProductionData, 1928, 2) -- Warszawa
+ic = Support.Build_AirBase(ic, voProductionData, 1986, 2) -- BrestLitovsk
+ic = Support.Build_AirBase(ic, voProductionData, 2040, 2) -- Lodz
+ic = Support.Build_AirBase(ic, voProductionData, 906, 2) -- Tallinn
+ic = Support.Build_AirBase(ic, voProductionData, 234, 2) -- Oulu
+ic = Support.Build_AirBase(ic, voProductionData, 369, 2) -- Vaasa
+ic = Support.Build_AirBase(ic, voProductionData, 580, 2) -- Lappeenranta
+ic = Support.Build_AirBase(ic, voProductionData, 698, 2) -- Viipuri
+ic = Support.Build_AirBase(ic, voProductionData, 736, 2) -- Turku
+ic = Support.Build_AirBase(ic, voProductionData, 739, 2) -- Helsinki
+ic = Support.Build_AirBase(ic, voProductionData, 4390, 2) -- Vladivostok
+ic = Support.Build_AirBase(ic, voProductionData, 6837, 1) -- KomsomolsknaAmure
+ic = Support.Build_AirBase(ic, voProductionData, 8228, 1) -- Jakutsk
+ic = Support.Build_AirBase(ic, voProductionData, 8409, 2) -- Tynda
+ic = Support.Build_AirBase(ic, voProductionData, 8496, 1) -- SeveroEnisejskij
+ic = Support.Build_AirBase(ic, voProductionData, 8529, 2) -- Blinkovo
+ic = Support.Build_AirBase(ic, voProductionData, 8562, 2) -- Tomsk
+ic = Support.Build_AirBase(ic, voProductionData, 8683, 2) -- Astana
+ic = Support.Build_AirBase(ic, voProductionData, 8790, 2) -- Semipalatinsk
+ic = Support.Build_AirBase(ic, voProductionData, 1072, 2) -- Jaroslavl
+ic = Support.Build_AirBase(ic, voProductionData, 1102, 2) -- Demjansk
+ic = Support.Build_AirBase(ic, voProductionData, 1182, 2) -- Kholm
+ic = Support.Build_AirBase(ic, voProductionData, 1201, 2) -- NiznijNovgorod
+ic = Support.Build_AirBase(ic, voProductionData, 1330, 2) -- Kazan
+ic = Support.Build_AirBase(ic, voProductionData, 1409, 2) -- Moskva
+ic = Support.Build_AirBase(ic, voProductionData, 1498, 2) -- Kaluga
+ic = Support.Build_AirBase(ic, voProductionData, 1534, 2) -- Vitsyebsk
+ic = Support.Build_AirBase(ic, voProductionData, 1536, 2) -- Dorogobuz
+ic = Support.Build_AirBase(ic, voProductionData, 1694, 2) -- Minsk
+ic = Support.Build_AirBase(ic, voProductionData, 1941, 2) -- Orel
+ic = Support.Build_AirBase(ic, voProductionData, 1991, 2) -- Homyel
+ic = Support.Build_AirBase(ic, voProductionData, 2068, 2) -- Saratov
+ic = Support.Build_AirBase(ic, voProductionData, 2223, 2) -- Kyiv
+ic = Support.Build_AirBase(ic, voProductionData, 2233, 2) -- Voronez
+ic = Support.Build_AirBase(ic, voProductionData, 2401, 2) -- Kharkov
+ic = Support.Build_AirBase(ic, voProductionData, 2843, 2) -- Dnipropetrovsk
+ic = Support.Build_AirBase(ic, voProductionData, 2857, 2) -- Stalingrad
+ic = Support.Build_AirBase(ic, voProductionData, 2913, 2) -- RostovnaDon
+ic = Support.Build_AirBase(ic, voProductionData, 311, 2) -- Archangelsk
+ic = Support.Build_AirBase(ic, voProductionData, 3254, 2) -- Tbilisi
+ic = Support.Build_AirBase(ic, voProductionData, 3309, 2) -- Odessa
+ic = Support.Build_AirBase(ic, voProductionData, 3464, 2) -- Astrahan
+ic = Support.Build_AirBase(ic, voProductionData, 3581, 2) -- Sevastopol
+ic = Support.Build_AirBase(ic, voProductionData, 4059, 2) -- Batumi
+ic = Support.Build_AirBase(ic, voProductionData, 4390, 2) -- Vladivostok
+ic = Support.Build_AirBase(ic, voProductionData, 46, 2) -- Murmansk
+ic = Support.Build_AirBase(ic, voProductionData, 6708, 2) -- Samara
+ic = Support.Build_AirBase(ic, voProductionData, 7307, 2) -- Baki
+ic = Support.Build_AirBase(ic, voProductionData, 782, 2) -- Leningrad
+ic = Support.Build_AirBase(ic, voProductionData, 790, 2) -- Vologda
+ic = Support.Build_AirBase(ic, voProductionData, 8254, 1) -- Okhotsk
+ic = Support.Build_AirBase(ic, voProductionData, 8366, 1) -- Celjabinsk
+ic = Support.Build_AirBase(ic, voProductionData, 8528, 1) -- Omsk
+ic = Support.Build_AirBase(ic, voProductionData, 8743, 2) -- Irkutsk
+if voProductionData.Year < 1915 then
+return ic, false
 end
+return ic, true
+end
+
 
 function P.Build_AntiAir(ic, voProductionData)
 	if voProductionData.Year <= 1944 then 

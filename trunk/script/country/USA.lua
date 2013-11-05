@@ -419,10 +419,61 @@ end
 function P.Build_CoastalFort(ic, voProductionData)
 	return ic, false
 end
-
 function P.Build_AirBase(ic, voProductionData)
-	return ic, false
+ic = Support.Build_AirBase(ic, voProductionData, 6124, 2) -- ClarkField
+ic = Support.Build_AirBase(ic, voProductionData, 6142, 1) -- Manila
+ic = Support.Build_AirBase(ic, voProductionData, 7717, 1) --  Panama
+ic = Support.Build_AirBase(ic, voProductionData, 10664, 2) -- Wake Island
+ic = Support.Build_AirBase(ic, voProductionData, 3533, 2) -- Sacramento
+ic = Support.Build_AirBase(ic, voProductionData, 3544, 2) -- CrownPoint
+ic = Support.Build_AirBase(ic, voProductionData, 3658, 2) -- SanFransisco
+ic = Support.Build_AirBase(ic, voProductionData, 3793, 2) -- Milwaukee
+ic = Support.Build_AirBase(ic, voProductionData, 3797, 2) -- Detroit
+ic = Support.Build_AirBase(ic, voProductionData, 4016, 2) -- Boston
+ic = Support.Build_AirBase(ic, voProductionData, 4273, 2) -- Pittsburgh
+ic = Support.Build_AirBase(ic, voProductionData, 4279, 2) -- NewYork
+ic = Support.Build_AirBase(ic, voProductionData, 4530, 2) -- WashingtonDC
+ic = Support.Build_AirBase(ic, voProductionData, 4694, 2) -- LosAngeles
+ic = Support.Build_AirBase(ic, voProductionData, 4900, 2) -- Norfolk
+ic = Support.Build_AirBase(ic, voProductionData, 5317, 2) -- Charleston
+ic = Support.Build_AirBase(ic, voProductionData, 5825, 2) -- Honolulu
+ic = Support.Build_AirBase(ic, voProductionData, 6119, 2) -- Guam
+ic = Support.Build_AirBase(ic, voProductionData, 6697, 2) -- Seattle
+ic = Support.Build_AirBase(ic, voProductionData, 6774, 2) -- Portland
+ic = Support.Build_AirBase(ic, voProductionData, 7032, 2) -- Rumford
+ic = Support.Build_AirBase(ic, voProductionData, 7104, 2) -- Chicago
+ic = Support.Build_AirBase(ic, voProductionData, 7221, 2) -- Dayton
+ic = Support.Build_AirBase(ic, voProductionData, 7281, 2) -- StLouis
+ic = Support.Build_AirBase(ic, voProductionData, 7350, 2) -- SanDiego
+ic = Support.Build_AirBase(ic, voProductionData, 7386, 2) -- LittleRock
+ic = Support.Build_AirBase(ic, voProductionData, 7387, 2) -- Memphis
+ic = Support.Build_AirBase(ic, voProductionData, 7388, 2) -- Charlotte
+ic = Support.Build_AirBase(ic, voProductionData, 7422, 2) -- Atlanta
+ic = Support.Build_AirBase(ic, voProductionData, 7452, 2) -- Gulfport
+ic = Support.Build_AirBase(ic, voProductionData, 7465, 2) -- Jacksonville
+ic = Support.Build_AirBase(ic, voProductionData, 7494, 2) -- Houston
+ic = Support.Build_AirBase(ic, voProductionData, 7670, 1) -- PuertoRico
+ic = Support.Build_AirBase(ic, voProductionData, 8078, 2) -- Anchorage
+ic = Support.Build_AirBase(ic, voProductionData, 8080, 2) -- Miami
+ic = Support.Build_AirBase(ic, voProductionData, 8645, 2) -- Bismarck
+ic = Support.Build_AirBase(ic, voProductionData, 8706, 2) -- Minneapolis
+ic = Support.Build_AirBase(ic, voProductionData, 8726, 2) -- SaltLakeCity
+ic = Support.Build_AirBase(ic, voProductionData, 8834, 2) -- Omaha
+ic = Support.Build_AirBase(ic, voProductionData, 8835, 2) -- DesMoines
+ic = Support.Build_AirBase(ic, voProductionData, 8854, 2) -- Denver
+ic = Support.Build_AirBase(ic, voProductionData, 8939, 2) -- SantaFe
+ic = Support.Build_AirBase(ic, voProductionData, 8962, 2) -- Phoenix
+ic = Support.Build_AirBase(ic, voProductionData, 8990, 2) -- Tulsa
+ic = Support.Build_AirBase(ic, voProductionData, 9016, 2) -- OklahomaCity
+ic = Support.Build_AirBase(ic, voProductionData, 9019, 2) -- Clampton
+ic = Support.Build_AirBase(ic, voProductionData, 9329, 3) -- SanAntonio
+ic = Support.Build_AirBase(ic, voProductionData, 9420, 2) -- CorpusChristi
+if voProductionData.Year < 1915 then
+return ic, false
 end
+return ic, true
+end
+
 
 function P.Build_NavalBase(ic, voProductionData)
 	ic = Support.Build_NavalBase(ic, voProductionData, 10669, 10) --Midway

@@ -378,6 +378,25 @@ function P.ConvoyRatio(voProductionData)
   
 	return laArray
 end
+function P.Build_AirBase(ic, voProductionData)
+ic = Support.Build_AirBase(ic, voProductionData, 3692, 2) -- Milano
+ic = Support.Build_AirBase(ic, voProductionData, 3696, 3) -- Venezia
+ic = Support.Build_AirBase(ic, voProductionData, 3971, 2) -- Savona
+ic = Support.Build_AirBase(ic, voProductionData, 4549, 2) -- Roma
+ic = Support.Build_AirBase(ic, voProductionData, 4765, 2) -- Napoli
+ic = Support.Build_AirBase(ic, voProductionData, 4869, 2) -- Taranto
+ic = Support.Build_AirBase(ic, voProductionData, 4914, 2) -- Cagliari
+ic = Support.Build_AirBase(ic, voProductionData, 5138, 2) -- Rodos
+ic = Support.Build_AirBase(ic, voProductionData, 5233, 2) -- Palermo
+ic = Support.Build_AirBase(ic, voProductionData, 5445, 2) -- Tarabulus
+ic = Support.Build_AirBase(ic, voProductionData, 5484, 2) -- Banghazi
+ic = Support.Build_AirBase(ic, voProductionData, 5511, 2) -- Tubruq
+ic = Support.Build_AirBase(ic, voProductionData, 9767, 2) -- Ed
+if voProductionData.Year < 1915 then
+return ic, false
+end
+return ic, true
+end
 
 
 -- END OF PRODUTION OVERIDES

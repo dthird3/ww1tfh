@@ -301,6 +301,23 @@ function P.CallLaw_training_laws(minister, voCurrentLaw)
 	return CLawDataBase.GetLaw(_MINIMAL_TRAINING_)
 end
 
+function P.Build_AirBase(ic, voProductionData)
+ic = Support.Build_AirBase(ic, voProductionData, 4979, 2) -- Beiping
+ic = Support.Build_AirBase(ic, voProductionData, 5275, 2) -- Jinan
+ic = Support.Build_AirBase(ic, voProductionData, 5681, 2) -- Nanchang
+ic = Support.Build_AirBase(ic, voProductionData, 5728, 1) -- Fuzhou
+ic = Support.Build_AirBase(ic, voProductionData, 5834, 2) -- Guangzhou
+ic = Support.Build_AirBase(ic, voProductionData, 5965, 2) -- Haikou
+ic = Support.Build_AirBase(ic, voProductionData, 7139, 2) -- Harbin
+ic = Support.Build_AirBase(ic, voProductionData, 7523, 3) -- Changde
+ic = Support.Build_AirBase(ic, voProductionData, 9444, 2) -- Meishan
+ic = Support.Build_AirBase(ic, voProductionData, 8892, 1) -- Ulaanbaatar
+if voProductionData.Year < 1915 then
+return ic, false
+end
+return ic, true
+end
+
 
 return AI_CHI
 

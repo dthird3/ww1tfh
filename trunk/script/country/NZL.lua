@@ -85,6 +85,14 @@ function P.AirRatio(voProductionData)
 	return laArray
 end
 
+function P.Build_AirBase(ic, voProductionData)
+ic = Support.Build_AirBase(ic, voProductionData, 8070, 2) -- Wellington
+if voProductionData.Year < 1915 then
+return ic, false
+end
+return ic, true
+end
+
 
 function P.ForeignMinister_Alignment(...)
 	return Support.AlignmentPush("allies", ...)

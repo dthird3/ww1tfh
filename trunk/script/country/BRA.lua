@@ -191,4 +191,14 @@ function P.DiploScore_InviteToFaction(voDiploScoreObj)
 	return voDiploScoreObj.Score
 end
 
+function P.Build_AirBase(ic, voProductionData)
+ic = Support.Build_AirBase(ic, voProductionData, 10193, 2) -- RiodeJaneiro
+ic = Support.Build_AirBase(ic, voProductionData, 10226, 2) -- SaoPaulo
+ic = Support.Build_AirBase(ic, voProductionData, 7848, 2) -- PortoAlegre
+if voProductionData.Year < 1915 then
+return ic, false
+end
+return ic, true
+end
+
 return AI_BRA

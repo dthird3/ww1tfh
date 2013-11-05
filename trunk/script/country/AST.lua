@@ -148,14 +148,19 @@ end
 
 -- Build a few air bases
 function P.Build_AirBase(ic, voProductionData)
-	-- Only build the airbases if its 1940 or less
-	if voProductionData.Year <= 1940 then
-		ic = Support.Build_AirBase(ic, voProductionData, 7823, 2) -- Cooktown
-		ic = Support.Build_AirBase(ic, voProductionData, 7842, 4) -- Townsville
-	end
-	
-	return ic, true
+ic = Support.Build_AirBase(ic, voProductionData, 10262, 1) -- Broome
+ic = Support.Build_AirBase(ic, voProductionData, 6566, 2) -- PortMoresby
+ic = Support.Build_AirBase(ic, voProductionData, 6596, 2) -- Darwin
+ic = Support.Build_AirBase(ic, voProductionData, 7923, 2) -- Brisbane
+ic = Support.Build_AirBase(ic, voProductionData, 7950, 2) -- Perth
+ic = Support.Build_AirBase(ic, voProductionData, 7989, 2) -- Sydney
+ic = Support.Build_AirBase(ic, voProductionData, 8062, 2) -- Geelong
+if voProductionData.Year < 1915 then
+return ic, false
 end
+return ic, true
+end
+
 
 function P.ForeignMinister_Alignment(...)
 	return Support.AlignmentPush("allies", ...)
