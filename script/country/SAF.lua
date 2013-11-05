@@ -131,5 +131,14 @@ function P.DiploScore_OfferTrade(voDiploScoreObj)
 	
 	return voDiploScoreObj.Score
 end
+function P.Build_AirBase(ic, voProductionData)
+ic = Support.Build_AirBase(ic, voProductionData, 10350, 1) -- WalvisBay
+ic = Support.Build_AirBase(ic, voProductionData, 7965, 1) -- Durban
+ic = Support.Build_AirBase(ic, voProductionData, 8054, 2) -- CapeTown
+if voProductionData.Year < 1915 then
+return ic, false
+end
+return ic, true
+end
 
 return AI_SAF

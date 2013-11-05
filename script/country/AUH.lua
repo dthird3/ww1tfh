@@ -517,13 +517,23 @@ function P.Build_NavalBase(vIC, voProductionData)
 	return vIC, false
 end
 
-function P.Build_AirBase(vIC, voProductionData)
-	if voProductionData.Year > 1937 then
-		return vIC, true
-	end
-	
-	return vIC, false
+function P.Build_AirBase(ic, voProductionData)
+ic = Support.Build_AirBase(ic, voProductionData, 2445, 1) -- Krakow
+ic = Support.Build_AirBase(ic, voProductionData, 2562, 2) -- Praha
+ic = Support.Build_AirBase(ic, voProductionData, 2636, 1) -- Przemysl
+ic = Support.Build_AirBase(ic, voProductionData, 2769, 2) -- Stanislawow
+ic = Support.Build_AirBase(ic, voProductionData, 3027, 1) -- Bratislava
+ic = Support.Build_AirBase(ic, voProductionData, 3164, 2) -- Budapest
+ic = Support.Build_AirBase(ic, voProductionData, 4236, 2) -- Split
+ic = Support.Build_AirBase(ic, voProductionData, 3026, 2) -- Wien
+ic = Support.Build_AirBase(ic, voProductionData, 3289, 2) -- Innsbruck
+ic = Support.Build_AirBase(ic, voProductionData, 3904, 2) -- Pola
+if voProductionData.Year < 1915 then
+return ic, false
 end
+return ic, true
+end
+
 
 function P.Build_AntiAir(vIC, voProductionData)
 	if voProductionData.Year > 1937 then

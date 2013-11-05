@@ -459,9 +459,54 @@ function P.Build_NavalBase(vIC, voProductionData)
 	return vIC, false
 end
 
-function P.Build_AirBase(vIC, voProductionData)
-	return vIC, false
+function P.Build_AirBase(ic, voProductionData)
+ic = Support.Build_AirBase(ic, voProductionData, 8734, 2) -- StJohns
+ic = Support.Build_AirBase(ic, voProductionData, 10014, 2) -- Kuching
+ic = Support.Build_AirBase(ic, voProductionData, 10066, 2) -- Mombasa
+ic = Support.Build_AirBase(ic, voProductionData, 10479, 2) -- Falkland Islands
+ic = Support.Build_AirBase(ic, voProductionData, 10628, 2) -- Bermuda
+ic = Support.Build_AirBase(ic, voProductionData, 10636, 2) -- Diego Garcia
+ic = Support.Build_AirBase(ic, voProductionData, 1127, 2) -- Glasgow
+ic = Support.Build_AirBase(ic, voProductionData, 1521, 2) -- Liverpool
+ic = Support.Build_AirBase(ic, voProductionData, 1563, 2) -- Dublin
+ic = Support.Build_AirBase(ic, voProductionData, 1567, 2) -- Sheffield
+ic = Support.Build_AirBase(ic, voProductionData, 1728, 2) -- Birmingham
+ic = Support.Build_AirBase(ic, voProductionData, 1731, 2) -- Norwich
+ic = Support.Build_AirBase(ic, voProductionData, 1964, 3) -- London
+ic = Support.Build_AirBase(ic, voProductionData, 2021, 2) -- Dover
+ic = Support.Build_AirBase(ic, voProductionData, 2078, 2) -- Southampton
+ic = Support.Build_AirBase(ic, voProductionData, 2250, 2) -- Plymouth
+ic = Support.Build_AirBase(ic, voProductionData, 5172, 2) -- Lemesos
+ic = Support.Build_AirBase(ic, voProductionData, 5191, 2) -- Gibraltar
+ic = Support.Build_AirBase(ic, voProductionData, 5359, 2) -- Malta
+ic = Support.Build_AirBase(ic, voProductionData, 5564, 2) -- ElArish
+ic = Support.Build_AirBase(ic, voProductionData, 5586, 2) -- ElIskandarya
+ic = Support.Build_AirBase(ic, voProductionData, 5762, 2) -- Karachi
+ic = Support.Build_AirBase(ic, voProductionData, 5868, 2) -- HongKong
+ic = Support.Build_AirBase(ic, voProductionData, 5875, 2) -- Calcutta
+ic = Support.Build_AirBase(ic, voProductionData, 6005, 2) -- Bombay
+ic = Support.Build_AirBase(ic, voProductionData, 604, 2) -- Scapa Flow
+ic = Support.Build_AirBase(ic, voProductionData, 6070, 2) -- Rangoon
+ic = Support.Build_AirBase(ic, voProductionData, 6255, 2) -- Cochin
+ic = Support.Build_AirBase(ic, voProductionData, 6283, 2) -- Trincomalee
+ic = Support.Build_AirBase(ic, voProductionData, 6320, 2) -- Colombo
+ic = Support.Build_AirBase(ic, voProductionData, 6394, 2) -- Singapore
+ic = Support.Build_AirBase(ic, voProductionData, 6433, 2) -- Andros
+ic = Support.Build_AirBase(ic, voProductionData, 7610, 2) -- Mandalay
+ic = Support.Build_AirBase(ic, voProductionData, 9406, 2) -- Delhi
+ic = Support.Build_AirBase(ic, voProductionData, 9545, 2) -- Imphal
+ic = Support.Build_AirBase(ic, voProductionData, 9618, 2) -- Indore
+ic = Support.Build_AirBase(ic, voProductionData, 9765, 2) -- Khartoum
+ic = Support.Build_AirBase(ic, voProductionData, 9896, 2) -- Georgetown
+ic = Support.Build_AirBase(ic, voProductionData, 9915, 2) -- Freetown
+ic = Support.Build_AirBase(ic, voProductionData, 9920, 2) -- Lagos
+ic = Support.Build_AirBase(ic, voProductionData, 9969, 2) -- Accra
+if voProductionData.Year < 1915 then
+return ic, false
 end
+return ic, true
+end
+
 
 function P.Build_AntiAir(vIC, voProductionData)	
 	return vIC, false

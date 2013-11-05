@@ -44,6 +44,21 @@ function P.ProductionWeights(voProductionData)
 	
 	return laArray
 end
+function P.Build_AirBase(ic, voProductionData)
+ic = Support.Build_AirBase(ic, voProductionData, 10085, 1) -- Cabinda
+ic = Support.Build_AirBase(ic, voProductionData, 10194, 1) -- Benguela
+ic = Support.Build_AirBase(ic, voProductionData, 10340, 1) -- Inhambane
+ic = Support.Build_AirBase(ic, voProductionData, 10631, 1) -- Cap Verde
+ic = Support.Build_AirBase(ic, voProductionData, 10632, 1) -- Sao Tome
+ic = Support.Build_AirBase(ic, voProductionData, 4644, 2) -- Lisbon
+ic = Support.Build_AirBase(ic, voProductionData, 5886, 1) -- Macau
+ic = Support.Build_AirBase(ic, voProductionData, 8970, 2) -- Azores
+ic = Support.Build_AirBase(ic, voProductionData, 9794, 1) -- Bissau
+if voProductionData.Year < 1915 then
+return ic, false
+end
+return ic, true
+end
 
 function P.DiploScore_InviteToFaction(voDiploScoreObj)
 	local spaTag = CCountryDataBase.GetTag("SPA")

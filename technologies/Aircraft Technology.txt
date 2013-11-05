@@ -1,7 +1,26 @@
+civilian_aviation = {
+
+	activate_building = air_base
+
+	research_bonus_from = {
+		aeronautic_engineering = 1.0
+	}
+
+	allow = {
+		civilian_aviation = 1
+	}
+	on_completion = aeronautic_engineering
+	
+	difficulty = 3
+	
+	#common for all techs.
+	start_year = 1904
+	folder = fighter_folder
+}	
+
 single_engine_aircraft_design = {
 
 	activate_unit = interceptor 
-	activate_building = air_base
 
 	research_bonus_from = {
 		aeronautic_engineering = 1.0
@@ -13,7 +32,7 @@ single_engine_aircraft_design = {
 	difficulty = 5
 	
 	#common for all techs.
-	start_year = 1913
+	start_year = 1911
 	folder = fighter_folder
 }	
 
@@ -25,13 +44,15 @@ twin_engine_aircraft_design = {
 		aeronautic_engineering = 1.0
 	}
 
-	
+	allow = {
+		civilian_aviation = 1
+	}
 	on_completion = aeronautic_engineering
 	
 	difficulty = 5
 	
 	#common for all techs.
-	start_year = 1913
+	start_year = 1911
 	folder = fighter_folder
 }	
 
@@ -69,7 +90,7 @@ basic_aeroengine = {
 	difficulty = 2
 	
 	#common for all techs.
-	start_year = 1915
+	start_year = 1914
 	folder = fighter_folder
 }	
 
@@ -97,7 +118,7 @@ basic_small_fueltank = {
 	difficulty = 1
 	
 	#common for all techs.
-	start_year = 1915
+	start_year = 1914
 	folder = fighter_folder
 }	
 
@@ -124,7 +145,7 @@ basic_single_engine_airframe = {
 	difficulty = 1
 	
 	#common for all techs.
-	start_year = 1915
+	start_year = 1914
 	folder = fighter_folder
 }	
 
@@ -159,7 +180,7 @@ basic_aircraft_machinegun = {
 	difficulty = 2
 	
 	#common for all techs.
-	start_year = 1915
+	start_year = 1914
 	folder = fighter_folder
 }	
 
@@ -187,7 +208,7 @@ basic_medium_fueltank = {
 	difficulty = 1
 	
 	#common for all techs.
-	start_year = 1915
+	start_year = 1914
 	folder = fighter_folder
 }	
 
@@ -215,7 +236,7 @@ basic_twin_engine_airframe = {
 	difficulty = 1
 	
 	#common for all techs.
-	start_year = 1915
+	start_year = 1914
 	folder = fighter_folder
 }	
 
@@ -242,7 +263,7 @@ basic_bomb = {
 	difficulty = 1
 	
 	#common for all techs.
-	start_year = 1915
+	start_year = 1914
 	folder = fighter_folder
 }
 
@@ -284,8 +305,8 @@ aeroengine = {
 	difficulty = 7
 	
 	#common for all techs.
-	start_year = 1917
-	first_offset = 1918
+	start_year = 1915
+	first_offset = 1916
 	additional_offset = 2	#one new every 2 years
 	max_level = 12
 	folder = fighter_folder
@@ -321,8 +342,8 @@ small_fueltank = {
 	difficulty = 3
 	
 	#common for all techs.
-	start_year = 1917
-	first_offset = 1918
+	start_year = 1915
+	first_offset = 1916
 	additional_offset = 2	#one new every 2 years
 	max_level = 12
 	folder = fighter_folder
@@ -356,8 +377,8 @@ single_engine_airframe = {
 	difficulty = 3
 	
 	#common for all techs.
-	start_year = 1917
-	first_offset = 1918
+	start_year = 1915
+	first_offset = 1916
 	additional_offset = 2	#one new every 2 years
 	max_level = 12
 	folder = fighter_folder
@@ -391,8 +412,8 @@ single_engine_aircraft_armament = {
 	difficulty = 3
 	
 	#common for all techs.
-	start_year = 1917
-	first_offset = 1918
+	start_year = 1915
+	first_offset = 1916
 	additional_offset = 2	#one new every 2 years
 	max_level = 12
 	folder = fighter_folder
@@ -423,8 +444,8 @@ medium_fueltank = {
 	difficulty = 2
 	
 	#common for all techs.
-	start_year = 1917
-	first_offset = 1918
+	start_year = 1915
+	first_offset = 1916
 	additional_offset = 2	#one new every 2 years
 	max_level = 12
 	folder = fighter_folder
@@ -453,8 +474,8 @@ twin_engine_airframe = {
 	difficulty = 2
 	
 	#common for all techs.
-	start_year = 1917
-	first_offset = 1918
+	start_year = 1915
+	first_offset = 1916
 	additional_offset = 2	#one new every 2 years
 	max_level = 12
 	folder = fighter_folder
@@ -490,8 +511,8 @@ small_bomb = {
 	difficulty = 3
 	
 	#common for all techs.
-	start_year = 1917
-	first_offset = 1918
+	start_year = 1915
+	first_offset = 1916
 	additional_offset = 2	#one new every 2 years
 	max_level = 12
 	folder = fighter_folder
@@ -520,8 +541,8 @@ twin_engine_aircraft_armament = {
 	difficulty = 2
 	
 	#common for all techs.
-	start_year = 1917
-	first_offset = 1918
+	start_year = 1915
+	first_offset = 1916
 	additional_offset = 2	#one new every 2 years
 	max_level = 12
 	folder = fighter_folder
@@ -554,8 +575,8 @@ medium_bomb = {
 	difficulty = 2
 	
 	#common for all techs.
-	start_year = 1917
-	first_offset = 1918
+	start_year = 1915
+	first_offset = 1916
 	additional_offset = 2	#one new every 2 years
 	max_level = 12
 	folder = fighter_folder

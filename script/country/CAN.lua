@@ -172,5 +172,19 @@ function P.DiploScore_OfferTrade(voDiploScoreObj)
 	
 	return voDiploScoreObj.Score
 end
+function P.Build_AirBase(ic, voProductionData)
+ic = Support.Build_AirBase(ic, voProductionData, 3342, 2) -- Ottawa
+ic = Support.Build_AirBase(ic, voProductionData, 6671, 2) -- Vancouver
+ic = Support.Build_AirBase(ic, voProductionData, 6905, 2) -- Quebec
+ic = Support.Build_AirBase(ic, voProductionData, 6992, 2) -- Montreal
+ic = Support.Build_AirBase(ic, voProductionData, 6996, 2) -- SaintJohn
+ic = Support.Build_AirBase(ic, voProductionData, 6997, 2) -- Halifax
+ic = Support.Build_AirBase(ic, voProductionData, 8336, 2) -- Calgary
+ic = Support.Build_AirBase(ic, voProductionData, 8445, 2) -- Winnipeg
+if voProductionData.Year < 1915 then
+return ic, false
+end
+return ic, true
+end
 
 return AI_CAN

@@ -441,6 +441,46 @@ function P.Build_Underground(vIC, voProductionData)
 	return vIC, false
 end
 
+function P.Build_AirBase(ic, voProductionData)
+ic = Support.Build_AirBase(ic, voProductionData, 2309, 3) -- Lille
+ic = Support.Build_AirBase(ic, voProductionData, 2422, 2) -- Cherbourg
+ic = Support.Build_AirBase(ic, voProductionData, 2425, 2) -- Amiens
+ic = Support.Build_AirBase(ic, voProductionData, 2550, 2) -- Reims
+ic = Support.Build_AirBase(ic, voProductionData, 2605, 2) -- Quimper
+ic = Support.Build_AirBase(ic, voProductionData, 2613, 5) -- Paris
+ic = Support.Build_AirBase(ic, voProductionData, 2682, 2) -- StMihiel
+ic = Support.Build_AirBase(ic, voProductionData, 2683, 3) -- Nancy
+ic = Support.Build_AirBase(ic, voProductionData, 2746, 2) -- Troyes
+ic = Support.Build_AirBase(ic, voProductionData, 2812, 3) -- Neufchateau
+ic = Support.Build_AirBase(ic, voProductionData, 2870, 2) -- Nantes
+ic = Support.Build_AirBase(ic, voProductionData, 3077, 2) -- Bourges
+ic = Support.Build_AirBase(ic, voProductionData, 3149, 2) -- Montbeliard
+ic = Support.Build_AirBase(ic, voProductionData, 3215, 2) -- Gray
+ic = Support.Build_AirBase(ic, voProductionData, 3351, 2) -- Besancon
+ic = Support.Build_AirBase(ic, voProductionData, 3479, 2) -- Bordeaux
+ic = Support.Build_AirBase(ic, voProductionData, 3484, 2) -- Vichy
+ic = Support.Build_AirBase(ic, voProductionData, 3687, 2) -- Lyon
+ic = Support.Build_AirBase(ic, voProductionData, 3959, 2) -- Pau
+ic = Support.Build_AirBase(ic, voProductionData, 3961, 2) -- Toulouse
+ic = Support.Build_AirBase(ic, voProductionData, 4229, 2) -- Marseille
+ic = Support.Build_AirBase(ic, voProductionData, 4230, 2) -- Toulon
+ic = Support.Build_AirBase(ic, voProductionData, 4486, 1) -- Ajaccio
+ic = Support.Build_AirBase(ic, voProductionData, 5134, 2) -- Tunis
+ic = Support.Build_AirBase(ic, voProductionData, 5160, 2) -- Alger
+ic = Support.Build_AirBase(ic, voProductionData, 5292, 2) -- Oran
+ic = Support.Build_AirBase(ic, voProductionData, 5916, 2) -- Hanoi
+ic = Support.Build_AirBase(ic, voProductionData, 6236, 2) -- Saigon
+ic = Support.Build_AirBase(ic, voProductionData, 9741, 2) -- Dakar
+ic = Support.Build_AirBase(ic, voProductionData, 9968, 2) -- Abidjan
+ic = Support.Build_AirBase(ic, voProductionData, 5412, 2) -- Casablanca
+if voProductionData.Year < 1915 then
+return ic, false
+end
+return ic, true
+end
+
+
+
 -- END OF PRODUTION OVERIDES
 -- #######################################
 function P.DiploScore_InviteToFaction(voDiploScoreObj)

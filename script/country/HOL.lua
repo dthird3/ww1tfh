@@ -61,6 +61,16 @@ end
 function P.ForeignMinister_Alignment(...)
 	return Support.AlignmentNeutral(...)
 end
+function P.Build_AirBase(ic, voProductionData)
+ic = Support.Build_AirBase(ic, voProductionData, 1910, 2) -- Amsterdam
+ic = Support.Build_AirBase(ic, voProductionData, 6398, 2) -- Manado
+ic = Support.Build_AirBase(ic, voProductionData, 6500, 2) -- Oosthaven
+ic = Support.Build_AirBase(ic, voProductionData, 6507, 2) -- Batavia
+if voProductionData.Year < 1915 then
+return ic, false
+end
+return ic, true
+end
 
 return AI_HOL
 

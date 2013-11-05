@@ -94,6 +94,18 @@ function P.DiploScore_OfferTrade(voDiploScoreObj)
 	
 	return voDiploScoreObj.Score
 end
+function P.Build_AirBase(ic, voProductionData)
+ic = Support.Build_AirBase(ic, voProductionData, 1171, 2) -- Goteborg
+ic = Support.Build_AirBase(ic, voProductionData, 1349, 2) -- Karlskrona
+ic = Support.Build_AirBase(ic, voProductionData, 1438, 2) -- Malmo
+ic = Support.Build_AirBase(ic, voProductionData, 193, 2) -- Lulea
+ic = Support.Build_AirBase(ic, voProductionData, 365, 2) -- Ostersund
+ic = Support.Build_AirBase(ic, voProductionData, 862, 2) -- Stockholm
+if voProductionData.Year < 1915 then
+return ic, false
+end
+return ic, true
+end
 
 function P.ForeignMinister_EvaluateDecision(voDecision, voForeignMinisterData)
 	if voDecision.Name == 'finnish_winter_war_swedish_intervention' then

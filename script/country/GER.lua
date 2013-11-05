@@ -515,13 +515,48 @@ function P.Build_NavalBase(vIC, voProductionData)
 	return vIC, false
 end
 
-function P.Build_AirBase(vIC, voProductionData)
-	if voProductionData.Year > 1914 then
-		return vIC, true
-	end
-	
-	return vIC, false
+function P.Build_AirBase(ic, voProductionData)
+ic = Support.Build_AirBase(ic, voProductionData, 6467, 2) -- Rabaul
+ic = Support.Build_AirBase(ic, voProductionData, 6509, 1) -- Lae
+ic = Support.Build_AirBase(ic, voProductionData, 1306, 1) -- Memel
+ic = Support.Build_AirBase(ic, voProductionData, 1626, 2) -- Danzig
+ic = Support.Build_AirBase(ic, voProductionData, 1866, 1) -- Torun
+ic = Support.Build_AirBase(ic, voProductionData, 1924, 2) -- Poznan
+ic = Support.Build_AirBase(ic, voProductionData, 1980, 2) -- Slupca
+ic = Support.Build_AirBase(ic, voProductionData, 2618, 2) -- Metz
+ic = Support.Build_AirBase(ic, voProductionData, 14160, 2) -- Euskirchen
+ic = Support.Build_AirBase(ic, voProductionData, 1527, 2) -- Konigsberg
+ic = Support.Build_AirBase(ic, voProductionData, 1570, 2) -- Wilhelmshaven
+ic = Support.Build_AirBase(ic, voProductionData, 1572, 2) -- Kiel
+ic = Support.Build_AirBase(ic, voProductionData, 1736, 2) -- Bremen
+ic = Support.Build_AirBase(ic, voProductionData, 1740, 2) -- Rostock
+ic = Support.Build_AirBase(ic, voProductionData, 1742, 2) -- Stettin
+ic = Support.Build_AirBase(ic, voProductionData, 1857, 2) -- Hannover
+ic = Support.Build_AirBase(ic, voProductionData, 1861, 2) -- Berlin
+ic = Support.Build_AirBase(ic, voProductionData, 1920, 3) -- Potsdam
+ic = Support.Build_AirBase(ic, voProductionData, 2027, 2) -- Ludinghausen
+ic = Support.Build_AirBase(ic, voProductionData, 2085, 2) -- Recklinghausen
+ic = Support.Build_AirBase(ic, voProductionData, 2093, 2) -- Cottbus
+ic = Support.Build_AirBase(ic, voProductionData, 2142, 4) -- Dusseldorf
+ic = Support.Build_AirBase(ic, voProductionData, 2145, 2) -- Kassel
+ic = Support.Build_AirBase(ic, voProductionData, 2153, 2) -- Breslau
+ic = Support.Build_AirBase(ic, voProductionData, 2257, 2) -- Koln
+ic = Support.Build_AirBase(ic, voProductionData, 2371, 2) -- Bitburg
+ic = Support.Build_AirBase(ic, voProductionData, 2374, 2) -- FrankfurtamMain
+ic = Support.Build_AirBase(ic, voProductionData, 2433, 2) -- Darmstadt
+ic = Support.Build_AirBase(ic, voProductionData, 2687, 2) -- Stuttgart
+ic = Support.Build_AirBase(ic, voProductionData, 2952, 2) -- Munchen
+ic = Support.Build_AirBase(ic, voProductionData, 3016, 2) -- Hinterzarten
+ic = Support.Build_AirBase(ic, voProductionData, 10651, 2) -- Truk
+ic = Support.Build_AirBase(ic, voProductionData, 10658, 2) -- Kwajalein
+ic = Support.Build_AirBase(ic, voProductionData, 10663, 2) -- Eniwetok
+ic = Support.Build_AirBase(ic, voProductionData, 5966, 2) -- Saipan
+if voProductionData.Year < 1915 then
+return ic, false
 end
+return ic, true
+end
+
 
 function P.Build_AntiAir(vIC, voProductionData)
 	return vIC, false

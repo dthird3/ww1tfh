@@ -448,13 +448,27 @@ function P.Build_CoastalFort(vIC, voProductionData)
 	return vIC, true	
 end
 
-function P.Build_AirBase(vIC, voProductionData)
-	if voProductionData.Year < 1942 then
-		return vIC, false
-	end
-
-	return vIC, true	
+function P.Build_AirBase(ic, voProductionData)
+ic = Support.Build_AirBase(ic, voProductionData, 4691, 2) -- Pungsan
+ic = Support.Build_AirBase(ic, voProductionData, 4986, 2) -- Akita
+ic = Support.Build_AirBase(ic, voProductionData, 5020, 2) -- Dalian
+ic = Support.Build_AirBase(ic, voProductionData, 5218, 2) -- Kanazawa
+ic = Support.Build_AirBase(ic, voProductionData, 5315, 2) -- Tokyo
+ic = Support.Build_AirBase(ic, voProductionData, 5341, 2) -- Pusan
+ic = Support.Build_AirBase(ic, voProductionData, 5346, 2) -- Nagoya
+ic = Support.Build_AirBase(ic, voProductionData, 5370, 2) -- Osaka
+ic = Support.Build_AirBase(ic, voProductionData, 5425, 2) -- Hiroshima
+ic = Support.Build_AirBase(ic, voProductionData, 5478, 2) -- Susaki
+ic = Support.Build_AirBase(ic, voProductionData, 5543, 2) -- Nagasaki
+ic = Support.Build_AirBase(ic, voProductionData, 5759, 2) -- Naha
+ic = Support.Build_AirBase(ic, voProductionData, 5809, 2) -- Kaohsiung
+if voProductionData.Year < 1915 then
+return ic, false
 end
+return ic, true
+end
+
+
 
 function P.Build_NavalBase(vIC, voProductionData)
 	if voProductionData.Year < 1942 then

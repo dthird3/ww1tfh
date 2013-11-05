@@ -2,6 +2,14 @@
 local P = {}
 AI_SER = P
 
+function P.Build_AirBase(ic, voProductionData)
+ic = Support.Build_AirBase(ic, voProductionData, 3912, 2) -- Beograd
+if voProductionData.Year < 1915 then
+return ic, false
+end
+return ic, true
+end
+
 function P.HandleMobilization(minister)
 	local ai = minister:GetOwnerAI()
 	local ministerTag =  minister:GetCountryTag()

@@ -253,6 +253,13 @@ function P.TransportLandRatio(voProductionData)
   
 	return laArray
 end
+function P.Build_AirBase(ic, voProductionData)
+ic = Support.Build_AirBase(ic, voProductionData, 6175, 2) -- PhetBuri
+if voProductionData.Year < 1915 then
+return ic, false
+end
+return ic, true
+end
 
 -- END OF PRODUTION OVERIDES
 -- #######################################

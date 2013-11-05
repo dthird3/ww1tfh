@@ -68,6 +68,25 @@ function P.Build_AntiAir(ic, voProductionData)
 	return ic, false
 end
 
+function P.Build_AirBase(ic, voProductionData)
+ic = Support.Build_AirBase(ic, voProductionData, 9569, 2) -- GaltatZemmour
+ic = Support.Build_AirBase(ic, voProductionData, 10730, 2) -- Fuerteventura.txt
+ic = Support.Build_AirBase(ic, voProductionData, 3610, 2) -- LaCoruna
+ic = Support.Build_AirBase(ic, voProductionData, 4540, 3) -- Madrid
+ic = Support.Build_AirBase(ic, voProductionData, 4548, 2) -- Barcelona
+ic = Support.Build_AirBase(ic, voProductionData, 4862, 2) -- Valencia
+ic = Support.Build_AirBase(ic, voProductionData, 4913, 2) -- Mallorca
+ic = Support.Build_AirBase(ic, voProductionData, 5030, 2) -- Seville
+ic = Support.Build_AirBase(ic, voProductionData, 5258, 3) -- Tanger
+ic = Support.Build_AirBase(ic, voProductionData, 5323, 2) -- Melilla
+ic = Support.Build_AirBase(ic, voProductionData, 9482, 2) -- Laayoune
+if voProductionData.Year < 1915 then
+return ic, false
+end
+return ic, true
+end
+
+
 function P.DiploScore_InviteToFaction(voDiploScoreObj)
 	local spaTag = CCountryDataBase.GetTag("SPA")
 	
