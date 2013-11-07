@@ -29,7 +29,7 @@ country_event = {
 		}	
 }
 
- #### SOUTH AFRICA BRITAIN  ####
+ #### SOUTH AFRICA INDEPENDANCE FROM BRITAIN  ####
 
 country_event = {
 
@@ -423,5 +423,28 @@ country_event = {
 			money = 150
 			CHL = { load_oob = "AlmiranteLatorre.txt" }
 			set_country_flag = hmscanada			
+		}
+}
+
+#UK Declaration of North Sea War Zone	=======================================  Road to USA Entry  =============================================					
+country_event = {
+
+		id = 100508
+		
+		is_triggered_only = yes
+
+		major = yes
+		
+		fire_only_once = yes
+		
+		title = "EVT1914_2001556_NAME"
+		desc = "EVT1914_2001556_DESC"
+		picture = "Grand_Fleet"
+
+		option = {
+			name = "EVT1914_2001556_ACTIONA"
+			ai_chance = { factor = 100 }
+			USA = { relation = { who = ENG value = -20 }}
+			USA = { neutrality = 2 }
 		}
 }
