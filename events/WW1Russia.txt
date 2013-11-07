@@ -159,11 +159,11 @@ country_event = {
 				name = "dual_power"
 				duration = 180
 			}
-			USA = { country_event = 100530 }
+			USA = { country_event = 100530 }				# USA response to Abdication
 		}
 }
 
-#FALL OF RUSSIA
+#FALL OF RUSSIA									OCTOBER REVOLUTION
 country_event = {
 		
 		id = 190001
@@ -268,11 +268,10 @@ country_event = {
 		}
 }
 
+# 											END OF WAR (Military defeat of Russia?)
 country_event = {
 		
 		id = 999950
-		
-
 
 		is_triggered_only = yes
 		
@@ -356,6 +355,8 @@ country_event = {
 				duration = 60
 				}
 			}
+			set_country_flag = russia_military_defeat       # Testing only - delete later
+			USA = { country_event = 100530 }				# USA response to Abdication or Russian defeat
 		}
 }
 
