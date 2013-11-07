@@ -207,9 +207,12 @@ country_event = {
 		
 		trigger = {
 			tag = USA
-			GER = {	war_with = ENG }
-			date = 1916.4.1						# This date gets in the way of being triggered by Break Blockade, should occur 2 months after "Break Blockade" or 12 months after "Stop Subs" whichever comes first.
+			GER = {	war_with = ENG }								
 			NOT = { USA = { has_country_flag = Jutland } }
+			OR = {
+					date = 1916.4.1									
+					GER = { has_country_flag = break_blockade }
+			}
 		}
 		
 		mean_time_to_happen = {	months = 2 }
@@ -329,7 +332,7 @@ country_event = {
 
 
 #        ============================================================== EVENTS INDEPENDANT OF UNRESTRICTED SUB WAR ==================================================================
-# Abdication of the Tsar - This is to be a backup to bring in USA to war if all else fails - HOWEVER, if TSAR does NOT abdicate and other SUB WAR EVENTS are NOT trigger then USA SHOULD NOT ENTER
+# Abdication of the Tsar - This is to be a backup to bring in USA to war if all else fails 
 country_event = {	
 
 		id = 100530

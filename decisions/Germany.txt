@@ -4,17 +4,19 @@ diplomatic_decisions = {
 		break_blockade = {									
 		potential = {
 			tag = GER
-			GER = {	war_with = ENG }
+			GER = {	war_with = ENG }									
 			ENG = { has_country_flag = North_Sea_War_Zone } 			
 			NOT = { GER = { has_country_flag = break_blockade } }
 		}
+		
+		allow = { ai = no }								# AI is not to take this decision
 			
 		effect = {
 			GER = { set_country_flag = break_blockade }
 			GER = { country_event = 100518 } 
 		}
 		ai_will_do = { factor = 0 }
-	}
+		}
 
 # Zeppelin Bombing Campaign	   							This is just an event until suitable modifiers can be applied 
 #		zeppelin_bombing = {									
