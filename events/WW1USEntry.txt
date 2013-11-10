@@ -78,7 +78,7 @@ country_event = {
 			USA = { has_country_flag = neutr }							
 		}
 		
-		mean_time_to_happen = {	months = 6 }
+		mean_time_to_happen = {	months = 8 }
 		
 		fire_only_once = yes
 
@@ -104,6 +104,7 @@ country_event = {
 		
 		trigger = {
 			tag = USA
+			USA = { has_country_flag = neutr }
 			NOT = { USA = { has_country_flag = Chemical_detected } }
 			OR = {
 				GER = {any_owned_province = { has_building = rocket_test}}
