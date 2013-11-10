@@ -1,18 +1,10 @@
 # Commence the Zeppelin bombings	======================================================================================================================					
-#												# This is to be set as a German National Decision - with bonus modifiers if accepted - effects not complete yet
+#												# This is to be set as a German National Decision - with bonus modifiers if accepted 
 country_event = {
 
 		id = 100510
 
-#		is_triggered_only = yes
-		
-		trigger = {
-			tag = GER
-			GER = {	war_with = ENG }					
-			date = 1915.1.1
-		}
-		
-		mean_time_to_happen = { months = 2 }
+		is_triggered_only = yes
 		
 		major = yes
 
@@ -27,13 +19,30 @@ country_event = {
 			ai_chance = { factor = 100 }
 			USA = { neutrality = -2 }
 			USA = { relation = { who = GER value = -10 }}
-#			GER = {add_country_modifier = { name = Zeppelin_bombing 	 	
-#									duration = 730 
-#									modifier = {factor = 0.5 year = 1916}
-#								   }
-#				  }
+			GER = { add_country_modifier = { name = Zeppelin_bombing duration = 365 } }
+			ENG = { country_event = 100511 }
 		}
 }
+
+	country_event = {
+		
+		id = 100511
+		
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		
+		title = "EVT1914_2001560_NAME"
+		desc = "EVT1914_2001560_DESC"
+		picture = "zeppelin_london"
+
+		option = {
+			name = "ACTION_NAME_OK"
+			ai_chance = { factor = 100 }
+			dissent = 5
+			national_unity = -2
+		}
+	}
 
 # Unlimited submarine warfare		German auto retaliation to North Sea War Zone
 country_event = {
@@ -124,9 +133,8 @@ country_event = {
 		option = {
 			name = "EVT1914_2008006_ACTIONA"
 			ai_chance = { factor = 100 }
-			add_country_modifier = { name = break_UK_blockade 	 	# German Naval bonuses for 3 months  -  *** THE DURATION IS NOT TURNING MODIFIERS OFF  ***
-						duration = 90 }
-			USA = { country_event = 100520 } 
+			add_country_modifier = { name = break_UK_blockade duration = 90 }	 	# German Naval bonuses for 3 months  
+			USA = { country_event = 100520 } 										# Battle of Jutland event
         }
 }
 

@@ -18,20 +18,22 @@ diplomatic_decisions = {
 		ai_will_do = { factor = 0 }
 		}
 
-# Zeppelin Bombing Campaign	   							This is just an event until suitable modifiers can be applied 
-#		zeppelin_bombing = {									
-#		potential = {
-#			tag = GER
-#			GER = {	war_with = ENG }					
-#			total_we_bomb = 2							# This includes TAC on ground attack missions, calculated daily.
-#			date = 1915.1.1
-#		}
-#			
-#		effect = {
-#			GER = { set_country_flag = Zeppelin_bombing }
-#			GER = { country_event = 100510 } 
-#		}
-#		ai_will_do = { factor = 1 }
-#	}
+# Zeppelin Bombing Campaign	   							
+		zeppelin_bombing = {									
+		potential = {
+			tag = GER
+			GER = {	war_with = ENG }
+			NOT = { GER = { has_country_flag = Zeppelin_bombing } }			
+			}
+		
+		allow = { total_we_bomb = 4 }							# This includes TAC on ground attack missions, calculated daily.
+#				ENG = { strat_bomb_impact = 0.01 }			# Doesn't seem to trigger
+			
+		effect = {
+			GER = { set_country_flag = Zeppelin_bombing }
+			GER = { country_event = 100510 } 
+		}
+		ai_will_do = { factor = 1 }
+		}
 
 }
