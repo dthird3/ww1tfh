@@ -578,28 +578,20 @@ name = "USS North Dakota"
 type = dreadnaught
 historical_model = 0}
 
-ship = {
-name = "USS Florida"
-type = dreadnaught
-historical_model = 0}
 
 ship = {
 name = "USS Utah"
 type = dreadnaught
 historical_model = 0}
 
-ship = {
-name = "USS Wyoming"
-type = dreadnaught
-historical_model = 0}
 
-ship = {
-name = "USS Arkansas"
-type = dreadnaught
-historical_model = 0}
 
 ship = {
 name = "USS Missouri"
+type = battleship
+historical_model = 1}
+ship = {
+name = "USS Maine"
 type = battleship
 historical_model = 1}
 
@@ -646,12 +638,12 @@ historical_model = 1}
 ship = {
 name = "USS North Carolina"
 type = heavy_cruiser
-historical_model = 2}
+historical_model = 1}
 
 ship = {
 name = "USS Montana"
 type = heavy_cruiser
-historical_model = 2}
+historical_model = 1}
 
 ship = {
 name = "USS Des Moines"
@@ -681,7 +673,7 @@ historical_model = 1}
 ship = {
 name = "USS Maryland"
 type = heavy_cruiser
-historical_model = 0}
+historical_model = 1}
 
 ship = {
 name = "USS Cincinnati"
@@ -698,10 +690,6 @@ name = "USS Montgomery"
 type = light_cruiser
 historical_model = 0}
 
-ship = {
-name = "USS Marblehead"
-type = light_cruiser
-historical_model = 0}
 
 ship = {
 name = "USS New Orleans"
@@ -721,12 +709,12 @@ historical_model = 2}
 ship = {
 name = "2nd Destroyer Flotilla"
 type = destroyer
-historical_model = 2}
+historical_model = 1}
 
 ship = {
 name = "3rd Destroyer Flotilla"
 type = destroyer
-historical_model = 2}
+historical_model = 0}
 
 }
 navy = {
@@ -755,6 +743,26 @@ base = 4900
 
 ship = {
 name = "USS Iowa"
+type = battleship
+historical_model = 0}
+
+ship = {
+name = "USS Oregon"
+type = battleship
+historical_model = 0}
+
+ship = {
+name = "USS Massachusetts"
+type = battleship
+historical_model = 0}
+
+ship = {
+name = "USS Indiana"
+type = battleship
+historical_model = 0}
+
+ship = {
+name = "USS Texas"
 type = battleship
 historical_model = 0}
 
@@ -813,21 +821,6 @@ name = "USS Minneapolis"
 type = light_cruiser
 historical_model = 0}
 
-ship = {
-name = "1st TB Flotilla"
-type = destroyer
-historical_model = 0}
-
-ship = {
-name = "2nd TB Flotilla"
-type = destroyer
-historical_model = 0}
-
-ship = {
-name = "3rd TB Flotilla"
-type = destroyer
-historical_model = 0}
-
 }
 navy = {
 name = "Caribbean Squadron"
@@ -877,11 +870,6 @@ historical_model = 2}
 ship = {
 name = "USS Salem"
 type = light_cruiser
-historical_model = 2}
-
-ship = {
-name = "4th Destroyer Flotilla"
-type = destroyer
 historical_model = 2}
 
 }
@@ -934,12 +922,6 @@ ship = {
 name = "USS Charleston"
 type = light_cruiser
 historical_model = 1}
-
-ship = {
-name = "5th Destroyer Flotilla"
-type = destroyer
-historical_model = 2}
-
 }
 navy = {
 name = "Asiatic Fleet"
@@ -949,7 +931,7 @@ base = 6142
 ship = {
 name = "USS Saratoga"
 type = heavy_cruiser
-historical_model = 1}
+historical_model = 0}
 
 ship = {
 name = "USS Pittsburgh"
@@ -961,10 +943,6 @@ name = "USS Denver"
 type = light_cruiser
 historical_model = 1}
 
-ship = {
-name = "6th Destroyer Flotilla"
-type = destroyer
-historical_model = 2}
 
 }
 navy = {
@@ -1046,3 +1024,28 @@ historical_model = 1}
 cost = 4
 progress = 0
 duration = 104}
+
+military_construction = {
+country = USA
+dreadnaught = {
+name = "USS Florida"
+historical_model = 0}
+cost = 4
+progress = 0
+duration = 11}
+military_construction = {
+country = USA
+dreadnaught = {
+name = "USS Wyoming"
+historical_model = 0}
+cost = 4
+progress = 0
+duration = 389}
+military_construction = {
+country = USA
+dreadnaught = {
+name = "USS Arkansas"
+historical_model = 0}
+cost = 4
+progress = 0
+duration = 258}
