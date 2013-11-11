@@ -114,10 +114,6 @@ name = "Minas Geraes"
 type = dreadnaught
 historical_model = 0}
 
-ship = {
-name = "São Paulo"
-type = dreadnaught
-historical_model = 0}
 
 ship = {
 name = "Marshal Deodoro"
@@ -158,6 +154,15 @@ ship = {
 name = "Almirante Barroso"
 type = light_cruiser
 historical_model = 0}
+ship = {
+name = "1a Flotilha de Contratorpedeiros"
+type = destroyer
+historical_model = 1}
+
+ship = {
+name = "2a Flotilha de Contratorpedeiros"
+type = destroyer
+historical_model = 2}
 
 
 ship = {
@@ -165,3 +170,13 @@ name = "1a Flotilha de Navios de Transporte"
 type = transport_ship
 historical_model = 0}
 }
+
+
+military_construction = {
+country = BRA
+dreadnaught = {
+name = "São Paulo"
+historical_model = 0}
+cost = 1
+progress = 0
+duration = 181}
