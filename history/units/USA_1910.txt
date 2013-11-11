@@ -579,11 +579,6 @@ type = dreadnaught
 historical_model = 0}
 
 
-ship = {
-name = "USS Utah"
-type = dreadnaught
-historical_model = 0}
-
 
 
 ship = {
@@ -741,10 +736,15 @@ historical_model = 2}
 ship = {
 name = "2nd Destroyer Flotilla"
 type = destroyer
-historical_model = 1}
+historical_model = 2}
 
 ship = {
 name = "3rd Destroyer Flotilla"
+type = destroyer
+historical_model = 1}
+
+ship = {
+name = "4th Destroyer Flotilla"
 type = destroyer
 historical_model = 0}
 
@@ -1039,23 +1039,7 @@ name = "9th Transport Flotilla"
 type = transport_ship
 historical_model = 0}
 }
-military_construction = {
-country = USA
-dreadnaught = {
-name = "USS Texas"
-historical_model = 1}
-cost = 4
-progress = 0
-duration = 71}
 
-military_construction = {
-country = USA
-dreadnaught = {
-name = "USS New York"
-historical_model = 1}
-cost = 4
-progress = 0
-duration = 104}
 
 military_construction = {
 country = USA
@@ -1064,20 +1048,24 @@ name = "USS Florida"
 historical_model = 0}
 cost = 4
 progress = 0
-duration = 11}
+duration = 502}
 military_construction = {
 country = USA
 dreadnaught = {
-name = "USS Wyoming"
+name = "USS Utah"
 historical_model = 0}
 cost = 4
 progress = 0
-duration = 389}
+duration = 487}
+
+
 military_construction = {
 country = USA
-dreadnaught = {
-name = "USS Arkansas"
-historical_model = 0}
+destroyer = {
+name = "5th Destroyer Flotilla"
+historical_model = 2}
 cost = 4
 progress = 0
-duration = 258}
+duration = 55}
+
+
