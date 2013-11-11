@@ -60,7 +60,7 @@ country_event = {
 			name = "EVT1914_2008002_ACTIONA"
 			ai_chance = { factor = 100 }
 			USA = { neutrality = -3 }
-			USA = {threat = { who = GER value = 1 }}
+			GER = {threat = { who = USA value = 1 }}
 			USA = {relation = { who = GER value = -10 }}
 			GER = {set_country_flag = Atrocities}
 		}
