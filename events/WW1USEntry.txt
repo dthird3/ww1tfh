@@ -91,7 +91,7 @@ country_event = {
 			ai_chance = { factor = 100 }
 			CAN = { set_country_flag = US_volunteers }		 
 			CAN = { manpower = 5 }
-			USA = {threat = { who = GER value = 2 }}
+			GER = {threat = { who = USA value = 2 }}
 		}
 }
 
@@ -158,7 +158,7 @@ country_event = {
 			name = "EVT1914_2001555_ACTIONA"
 			ai_chance = { factor = 100 }
 			USA = { neutrality = -2 }
-			USA = { threat = { who = GER value = 1 }}
+			GER = { threat = { who = USA value = 1 }}
 			USA = { relation = { who = GER value = -10 }}     
 			USA = { set_country_flag = harpalyce }
 		}
@@ -192,7 +192,7 @@ country_event = {
 			name = "opta_USAE8"
 			ai_chance = { factor = 100 }
 			USA = { neutrality = -4 }
-			USA = {threat = { who = GER value = 3 }}
+			GER = {threat = { who = USA value = 3 }}
 			USA = { relation = { who = GER value = -20 }}
 			USA = { set_country_flag = lusitania }
 		}
@@ -228,7 +228,7 @@ country_event = {
 			name = "EVT1914_2001557_ACTIONA"
 			ai_chance = { factor = 100 }
 			USA = { neutrality = -10 }
-			USA = { threat = { who = GER value = 4 }}
+			GER = { threat = { who = USA value = 4 }}
 			USA = {set_country_flag = Jutland}				
 		}
 }
@@ -260,7 +260,7 @@ country_event = {
 			name = "EVT1914_2001558_ACTIONA"
 			ai_chance = { factor = 100 }
 			USA = { relation = { who = GER value = -30 }}
-			threat = { who = GER value = 4 }
+			GER = { threat = { who = USA value = 4 }}
 			USA = {set_country_flag = Zimmermann_intercepted}
 		}
 }
@@ -292,7 +292,7 @@ country_event = {
 		option = {
 			name = "EVT1914_2001554_ACTIONA"
 			ai_chance = { factor = 100 }
-			USA = { threat = { who = GER value = 1 }}
+			GER = { threat = { who = USA value = 1 }}
 			USA = { relation = { who = GER value = -5 }}
 			USA = { set_country_flag = Black_Tom }
 		}
@@ -325,7 +325,7 @@ country_event = {
 		option = {
 			name = "EVT1914_2001559_ACTIONA"
 			ai_chance = { factor = 100 }
-			USA = { threat = { who = GER value = 1 }}
+			GER = { threat = { who = USA value = 1 }}
 			USA = { relation = { who = GER value = -5 }}
 			USA = {set_country_flag = Kingsland }
 		}
@@ -354,7 +354,7 @@ country_event = {
 			name = "ACTION_NAME_GREAT"
 			ai_chance = { factor = 100 }
 			USA = { neutrality = -15 }
-			USA = {threat = { who = GER value = 25 }}
+			GER = {threat = { who = USA value = 25 }}
 			USA = { relation = { who = RUS value = 80 }}
 		}
 }
