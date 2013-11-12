@@ -2,43 +2,8 @@
 
 #CHINA EVENT 70 - 80
 
-#CHINESE CIVIL WAR SURRENDER CHI 
- country_event = {
 
-		id = 100070
-		
-		is_triggered_only = yes
-		
-		fire_only_once = yes
-
-		title = "CHIE2"
-		desc = "desc_CHIE2"
-		picture = "CHIP2"
-
-		option = {
-			name = "opta_CHIE2"
-			ai_chance = { factor = 100 }
-			inherit = CHI
-			capital = 5494
-			CHC = { set_country_flag = republic_china }
-			rare_materials = 8000
-			crude_oil = 4000
-			supplies = 10000
-			energy = 55000
-			metal = 55000
-			money = 400
-			CHC = { any_owned = { limit = { is_core = CHI } remove_core = CHI } }
-			GER = { any_owned = { limit = { is_core = CHI } remove_core = CHI } }
-			ENG = { any_owned = { limit = { is_core = CHI } remove_core = CHI } }
-			POR = { any_owned = { limit = { is_core = CHI } remove_core = CHI } }
-			JAP = { any_owned = { limit = { is_core = CHI } remove_core = CHI } }
-			FRA = { any_owned = { limit = { is_core = CHI } remove_core = CHI } }
-			CHC = { any_owned = { limit = { is_core = MON } secede_province = MON } }
-		}
-	
-}
-
-#he Wuchang Uprising October 10
+# The Wuchang Uprising October 10
   country_event = {
 
 		id = 100071
@@ -83,7 +48,7 @@
 			hubei_region = { secede_province = CHC }
 			anhui_region = { secede_province = CHC }
 			CHC = { capital = 9444 }
-			CHC = { split_troops = 0.65 }
+			CHC = { split_troops = 0.20 }							# additional defector's to CHC which also gets it's own OOB with 40+ brigades
 			CHI = {	war = {	
 					target = CHC
 					attacker_goal = { casus_belli= civil_war_2 }
@@ -114,24 +79,26 @@
 		option = {
 			name = "opta_CHIE1"
 			ai_chance = { factor = 100 }
-			manpower = 1000
-			load_oob =CHC_1910.txt
-			rare_materials = 99999
-			crude_oil = 99999
-			supplies = 99999
-			energy = 99999
-			metal = 99999
+			manpower = 200
+			load_oob = CHC_1910.txt					# 20 x INF & 20 x MIL brigades
+			rare_materials = 10000
+			crude_oil = 10000
+			supplies = 30000
+			energy = 20000
+			metal = 20000
 			money = 1200
 			add_country_modifier = {
 				name = "officers_gain"
 				duration = 30
 			}
-
+			add_country_modifier = {
+				name = "rebellion_administration"
+				duration = 1095
+			}
 		}
-	
 }
 
-#tibet independence Three Point Agreement
+#  Tibet independence Three Point Agreement
  country_event = {
 
 		id = 100074
@@ -163,39 +130,11 @@
 			TIB = { capital = 9377 }
 			TIB = { manpower = 4 }
 		}
-	
 }
 
-#SURRENDER CHC REPUBS
- country_event = {
 
-		id = 100073
-		
-		is_triggered_only = yes
-		
-		fire_only_once = yes
-
-		title = "CHIE4"
-		desc = "desc_CHIE4"
-		picture = "CHIP2"
-
-		option = {
-			name = "opta_CHIE4"
-			ai_chance = { factor = 100 }
-			inherit = CHC
-			capital = 5494
-			rare_materials = 8000
-			crude_oil = 4000
-			supplies = 10000
-			energy = 55000
-			metal = 55000
-			money = 400
-			CHI = { any_owned = { limit = { is_core = CHC } remove_core = CHC } }
-		}
-	
-}
-#MARCH - Following the assassination of his rival Song Jiaoren, 
-#Yuan Shikai uses military force to dissolve China's parliament and rules as a dictator.
+# MARCH - Following the assassination of his rival Song Jiaoren, 
+# Yuan Shikai uses military force to dissolve China's parliament and rules as a dictator.
 country_event = {
 
 		id = 100205
@@ -227,5 +166,67 @@ country_event = {
 			government = right_wing_republic
 			set_country_flag = yuanshikai
 		}
-	
+}
+
+#CHINESE CIVIL WAR SURRENDER CHI 
+ country_event = {
+
+		id = 100070
+		
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+
+		title = "CHIE2"
+		desc = "desc_CHIE2"
+		picture = "CHIP2"
+
+		option = {
+			name = "opta_CHIE2"
+			ai_chance = { factor = 100 }
+			inherit = CHI
+			capital = 5494
+			CHC = { set_country_flag = republic_china }
+			rare_materials = 8000
+			crude_oil = 4000
+			supplies = 10000
+			energy = 30000
+			metal = 30000
+			money = 400
+			CHC = { any_owned = { limit = { is_core = CHI } remove_core = CHI } }
+			GER = { any_owned = { limit = { is_core = CHI } remove_core = CHI } }
+			ENG = { any_owned = { limit = { is_core = CHI } remove_core = CHI } }
+			POR = { any_owned = { limit = { is_core = CHI } remove_core = CHI } }
+			JAP = { any_owned = { limit = { is_core = CHI } remove_core = CHI } }
+			FRA = { any_owned = { limit = { is_core = CHI } remove_core = CHI } }
+			CHC = { any_owned = { limit = { is_core = MON } secede_province = MON } }
+		}
+}
+
+# SURRENDER CHC REPUBS
+ country_event = {
+
+		id = 100073
+		
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+
+		title = "CHIE4"
+		desc = "desc_CHIE4"
+		picture = "CHIP2"
+
+		option = {
+			name = "opta_CHIE4"
+			ai_chance = { factor = 100 }
+			inherit = CHC
+			capital = 5494
+			rare_materials = 8000
+			crude_oil = 4000
+			supplies = 10000
+			energy = 30000
+			metal = 30000
+			money = 400
+			CHI = { any_owned = { limit = { is_core = CHC } remove_core = CHC } }
+		}
 }
