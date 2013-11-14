@@ -1,0 +1,93 @@
+
+#Air Superiority
+country_event = {
+
+		id = 777777
+
+		major = yes
+
+		trigger = {
+			THIS = { faction = allies }
+			OR = {
+				GER = {
+					total_we_bomb = 5
+					war_with = THIS
+				}
+				AUH = {
+					total_we_bomb = 5
+					war_with = THIS
+				}
+				TUR = {
+					total_we_bomb = 5
+					war_with = THIS
+				}
+				BUL = {
+					total_we_bomb = 5
+					war_with = THIS
+				}
+			}
+			NOT = {
+				THIS = {
+					any_owned_province = {
+						has_province_modifier = scouted
+					}
+				}
+			}
+			NOT = {
+				GER = {
+					any_owned_province = {
+						has_province_modifier = scouted
+					}
+				}
+			}
+			NOT = {
+				AUH = {
+					any_owned_province = {
+						has_province_modifier = scouted
+					}
+				}
+			}
+			NOT = {
+				TUR = {
+					any_owned_province = {
+						has_province_modifier = scouted
+					}
+				}
+			}
+			NOT = {
+				BUL = {
+					any_owned_province = {
+						has_province_modifier = scouted
+					}
+				}
+			}
+		}
+
+		title = "AIRSUP1"
+		desc = "desc_AIRSUP1"
+		picture = "AIRSUP1"
+
+		option = {
+			name = "opta_AIRSUP1"
+			ai_chance = { factor = 100 }
+			FRA = {
+				any_owned = {
+					limit = { 
+						NOT = { has_province_modifier = scouted } 
+						any_neighbor_province = {
+							OR = {
+								controlled_by = GER
+								controlled_by = AUH
+								controlled_by = TUR
+								controlled_by = BUL
+							}
+						}
+					}
+					add_province_modifier = { 
+						name = scouted
+						duration = 10
+					}
+				}
+			}
+		}
+}
