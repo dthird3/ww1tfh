@@ -785,28 +785,6 @@ super_heavy_battleship_technology = {
 	can_upgrade = no
 }
 
-cag_development = {
-
-	activate_unit = cag
-
-	allow = { 
-		num_of_ports = 1
-		single_engine_aircraft_design = 1
-	}
-	
-	research_bonus_from = {
-		aeronautic_engineering = 0.3
-		single_engine_aircraft_practical = 0.3
-		capitalship_practical = 0.4
-	}
-	
-	on_completion = aeronautic_engineering
-
-	difficulty = 7
-	start_year = 1914
-
-	folder = capitalship_folder
-}	
 
 escort_carrier_technology = {
 
