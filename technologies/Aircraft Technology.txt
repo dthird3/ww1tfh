@@ -149,21 +149,21 @@ single_engine_aircraft_design = {
 small_fueltank = {
 
 	interceptor = {
-		range = 75
+		range = 25
 		surface_defence = -0.15
 		air_defence = -0.5
 	}
 	
 	scout = {
-		range = 75
+		range = 25
 		surface_defence = -0.15
-		air_defence = -0.5
+		air_defence = -0.25
 	}
 
 	cag = {
-		range = 45
-		surface_defence = -0.625
-		air_defence = -0.5
+		range = 25
+		surface_defence = -0.15
+		air_defence = -0.25
 	}
 
 	allow = {
@@ -198,12 +198,12 @@ single_engine_airframe = {
 	
 	scout = {
 		surface_defence = 0.20
-		air_defence = 1.5
+		air_defence = 0.75
 	}
 
 	cag = {
-		surface_defence = 0.75
-		air_defence = 1.15
+		surface_defence = 0.20
+		air_defence = 0.75
 	}
 
 	allow = {
@@ -247,8 +247,7 @@ basic_aircraft_machinegun = {
 	research_bonus_from = {
 		aeronautic_engineering = 0.25
 		infantry_theory = 0.05
-		single_engine_aircraft_practical = 0.3
-		twin_engine_aircraft_practical = 0.4
+		single_engine_aircraft_practical = 0.7
 	}
 
 	
@@ -265,15 +264,15 @@ basic_aircraft_machinegun = {
 single_engine_aircraft_armament = {
 
 	interceptor = {
-		air_attack = 2.00
+		air_attack = 1.00
 	}
 	
 	scout = {
-		air_attack = 0.5
+		air_attack = 0.25
 	}
 
 	cag = {
-		air_attack = 1.5
+		air_attack = 0.5
 	}
 
 	allow = {
@@ -302,28 +301,23 @@ single_engine_aircraft_armament = {
 basic_aeroengine = {
 
 	interceptor = {
-		maximum_speed = 50
-		surface_defence = 0.5
+		maximum_speed = 18
 		air_defence = 0.5
-		range = -25
 	}
 
 	scout = {
-		maximum_speed = 25
+		maximum_speed = 15
 		air_defence = 0.5
-		range = -25
 	}
 
 	tactical_bomber = {
-		maximum_speed = 25
+		maximum_speed = 12
 		air_defence = 0.5
-		range = -25
 	}
 
 	cag = {
-		maximum_speed = 25
+		maximum_speed = 11
 		air_defence = 0.5
-		range = -25
 	}
 
 	allow = {
@@ -348,29 +342,25 @@ basic_aeroengine = {
 
 aeroengine = {
 
+
 	interceptor = {
-		maximum_speed = 60
-		range = -25
-		surface_defence = 0.20
-		air_defence = 1.5
+		maximum_speed = 18
+		air_defence = 0.5
 	}
 
 	scout = {
-		maximum_speed = 25
-		range = -50
-		surface_defence = 0.75
+		maximum_speed = 15
+		air_defence = 0.5
 	}
+
 	tactical_bomber = {
-		maximum_speed = 25
-		range = -50
-		surface_defence = 0.75
+		maximum_speed = 12
+		air_defence = 0.5
 	}
 
 	cag = {
-		maximum_speed = 25
-		range = -15
-		surface_defence = 1.5
-		air_defence = 1.15
+		maximum_speed = 11
+		air_defence = 0.5
 	}
 
 	allow = {
@@ -420,9 +410,9 @@ twin_engine_aircraft_design = {
 medium_fueltank = {
 
 	tactical_bomber = {
-		range = 125
-		surface_defence = -0.5
-		air_defence = -0.5
+		range = 60
+		surface_defence = -0.25
+		air_defence = -0.25
 	}
 	
 	allow = {
@@ -451,8 +441,8 @@ medium_fueltank = {
 twin_engine_airframe = {
 
 	tactical_bomber = {
-		surface_defence = 1.5
-		air_defence = 1.5
+		surface_defence = 0.75
+		air_defence = 0.75
 	}
 	
 	allow = {
