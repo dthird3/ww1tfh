@@ -1,0 +1,96 @@
+name = "SCENARIO_PolishBolshevikWar"
+desc = "SCENARIO_PolishBolshevikWar_DESC"
+icon = "GFX_select_SpringOffensive"
+startdate = 1920.4.25
+enddate = 1920.10.31
+
+camera_height = 500
+camera_center = { x = 3120 y = 1700 }
+camera_max_x = 3500
+camera_max_y = 2500
+camera_min_x = 2500
+camera_min_y = 1450
+
+victory_conditions = "scenarios/polish_bolshevik/faction_aims.txt"
+victory_conditions_to_win = 4
+number_of_victory_conditions = 4
+events = "scenarios/polish_bolshevik/events.txt"
+
+reinforcement = 20
+
+# will load any history files with scenarios/scenario_name/<tag>.txt
+selectable_country = POL
+selectable_country = SOV 
+#selectable_country = LIT 
+country = LIT
+
+# visible provinces & regions
+provinces = {
+	# Land
+	1217			# Baltic Islands
+	1135
+	1682
+	1311			# Latvia
+	1266
+
+	
+	# water
+	10512
+	10513
+	10514
+	10515
+}
+
+regions = {
+	poland_region
+	western_poland_region
+	eastern_poland
+	eastern_poland_to_lit
+#	west_prussia
+	north_germany_region
+	polish_germany_region
+	germany_elbing				
+	germany_lyck				
+	germany_konigsberg			
+	SOV_2338
+	SOV_2574
+	SOV_2453
+	SOV_2842
+	SOV_2282
+	SOV_2166
+	SOV_2049
+	SOV_2113
+	SOV_1991
+	SOV_1359
+	SOV_1536
+	SOV_1362
+	SOV_1990
+	SOV_1312
+	SOV_1104
+	SOV_3176
+	SOV_2773
+	SOV_2903
+	SOV_2771
+	SOV_2578
+	SOV_2344
+	SOV_1762
+	SOV_1816
+	SOV_1639
+	SOV_1539
+	SOV_1694
+	SOV_1402
+	SOV_2278
+	SOV_2342
+	SOV_2709
+	SOV_2579
+	SOV_1582
+	SOV_1637
+	SOV_1446
+	SOV_1881
+	SOV_1227
+	LIT_1577
+	LIT_1442
+	LIT_1395
+	LIT_1355
+	LIT_1531
+}
