@@ -724,3 +724,57 @@ strategic_air_command = {
 	max_level = 12
 	folder = air_doctrine_folder
 }
+scout_pilot_training = {
+
+	scout = {
+		default_organisation = 5 
+	}
+
+	allow = { 
+		military_aircraft_design = 1
+	}
+
+	research_bonus_from = {
+		cas_focus = 0.3
+		air_doctrine_practical = 0.7
+	}
+
+	change = no 
+	on_completion = cas_focus
+
+	difficulty = 5
+	
+	#common for all techs.
+	start_year = 1914
+	first_offset = 1915	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 12
+	folder = air_doctrine_folder
+}
+
+aerial_photography = {
+
+	scout = {
+		default_morale = 0.05
+	}
+
+	allow = { 
+		military_aircraft_design = 1
+	}
+
+	research_bonus_from = {
+		cas_focus = 0.3
+		air_doctrine_practical = 0.7
+	}
+
+	change = no 
+	on_completion = cas_focus
+	difficulty = 5
+	
+	#common for all techs.
+	start_year = 1914
+	first_offset = 1915	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 12
+	folder = air_doctrine_folder
+}
