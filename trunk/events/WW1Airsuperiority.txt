@@ -4,8 +4,6 @@ country_event = {
 
 		id = 777777
 
-		major = yes
-
 		trigger = {
 			THIS = { faction = allies }
 			OR = {
@@ -33,34 +31,6 @@ country_event = {
 					}
 				}
 			}
-			NOT = {
-				GER = {
-					any_owned_province = {
-						has_province_modifier = scouted
-					}
-				}
-			}
-			NOT = {
-				AUH = {
-					any_owned_province = {
-						has_province_modifier = scouted
-					}
-				}
-			}
-			NOT = {
-				TUR = {
-					any_owned_province = {
-						has_province_modifier = scouted
-					}
-				}
-			}
-			NOT = {
-				BUL = {
-					any_owned_province = {
-						has_province_modifier = scouted
-					}
-				}
-			}
 		}
 
 		title = "AIRSUP1"
@@ -70,7 +40,7 @@ country_event = {
 		option = {
 			name = "opta_AIRSUP1"
 			ai_chance = { factor = 100 }
-			FRA = {
+			THIS = {
 				any_owned = {
 					limit = { 
 						NOT = { has_province_modifier = scouted } 
@@ -88,6 +58,206 @@ country_event = {
 						duration = 10
 					}
 				}
+				
+			}
+		}
+}
+country_event = {
+
+		id = 777778
+
+		trigger = {
+			THIS = { faction = allies }
+			OR = {
+				GER = {
+					total_we_bomb = 15
+					war_with = THIS
+				}
+				AUH = {
+					total_we_bomb = 15
+					war_with = THIS
+				}
+				TUR = {
+					total_we_bomb = 15
+					war_with = THIS
+				}
+				BUL = {
+					total_we_bomb = 15
+					war_with = THIS
+				}
+			}
+			NOT = {
+				THIS = {
+					any_owned_province = {
+						has_province_modifier = photographed
+					}
+				}
+			}
+		}
+
+		title = "AIRSUP2"
+		desc = "desc_AIRSUP2"
+		picture = "AIRSUP2"
+
+		option = {
+			name = "opta_AIRSUP2"
+			ai_chance = { factor = 100 }
+			THIS = {
+				any_owned = {
+					limit = { 
+						NOT = { has_province_modifier = photographed } 
+						any_neighbor_province = {
+							OR = {
+								controlled_by = GER
+								controlled_by = AUH
+								controlled_by = TUR
+								controlled_by = BUL
+							}
+						}
+					}
+					add_province_modifier = { 
+						name = photographed
+						duration = 20
+					}
+				}
+				
+			}
+		}
+}
+
+country_event = {
+
+		id = 777779
+
+		trigger = {
+			THIS = { faction = axis }
+			OR = {
+				FRA = {
+					total_we_bomb = 5
+					war_with = THIS
+				}
+				ENG = {
+					total_we_bomb = 5
+					war_with = THIS
+				}
+				RUS = {
+					total_we_bomb = 5
+					war_with = THIS
+				}
+				ITA = {
+					total_we_bomb = 5
+					war_with = THIS
+				}
+				USA = {
+					total_we_bomb = 5
+					war_with = THIS
+				}
+			}
+			NOT = {
+				THIS = {
+					any_owned_province = {
+						has_province_modifier = scouted
+					}
+				}
+			}
+		}
+
+		title = "AIRSUP3"
+		desc = "desc_AIRSUP3"
+		picture = "AIRSUP3"
+
+		option = {
+			name = "opta_AIRSUP3"
+			ai_chance = { factor = 100 }
+			THIS = {
+				any_owned = {
+					limit = { 
+						NOT = { has_province_modifier = scouted } 
+						any_neighbor_province = {
+							OR = {
+								controlled_by = FRA
+								controlled_by = ENG
+								controlled_by = RUS
+								controlled_by = ITA
+								controlled_by = BEL
+								controlled_by = SER
+							}
+						}
+					}
+					add_province_modifier = { 
+						name = scouted
+						duration = 10
+					}
+				}
+				
+			}
+		}
+}
+country_event = {
+
+		id = 777780
+
+		trigger = {
+			THIS = { faction = axis }
+			OR = {
+				FRA = {
+					total_we_bomb = 15
+					war_with = THIS
+				}
+				ENG = {
+					total_we_bomb = 15
+					war_with = THIS
+				}
+				RUS = {
+					total_we_bomb = 15
+					war_with = THIS
+				}
+				ITA = {
+					total_we_bomb = 15
+					war_with = THIS
+				}
+				USA = {
+					total_we_bomb = 15
+					war_with = THIS
+				}
+			}
+			NOT = {
+				THIS = {
+					any_owned_province = {
+						has_province_modifier = photographed
+					}
+				}
+			}
+		}
+
+		title = "AIRSUP4"
+		desc = "desc_AIRSUP4"
+		picture = "AIRSUP4"
+
+		option = {
+			name = "opta_AIRSUP4"
+			ai_chance = { factor = 100 }
+			THIS = {
+				any_owned = {
+					limit = { 
+						NOT = { has_province_modifier = photographed } 
+						any_neighbor_province = {
+							OR = {
+								controlled_by = FRA
+								controlled_by = ENG
+								controlled_by = RUS
+								controlled_by = ITA
+								controlled_by = BEL
+								controlled_by = SER
+							}
+						}
+					}
+					add_province_modifier = { 
+						name = photographed
+						duration = 20
+					}
+				}
+				
 			}
 		}
 }
