@@ -5,7 +5,7 @@ location = 1928
 	regiment = {
 	type = hq_brigade
 	name = "1st HQ Brigade"
-	historical_model = 1
+	historical_model = 2
 	experience = 2
 	}
 
@@ -13,61 +13,48 @@ location = 1928
 	name = "Lithuanian Border Garrison"
 	location = 1532
 
-					
 	regiment = {
 	type = hq_brigade
 	name = "12th HQ Brigade"
-	historical_model = 1
+	historical_model = 2
 	experience = 1
 	}
 
-
-				
 	division = {
 	name = "11/13 Cavalry Regiments"
 	location = 1443
 
-					
 	regiment = {
 	type = cavalry_brigade
-	name = "26th Cav Brigade"
+	name = "11/13 Cavalry Regiments"
 	historical_model = 2
-	experience = 10
+	experience = 5
+	}
 	}
 
-	}
-
-
-				
 	division = {
 	name = "8/9 Cavalry Regiments"
 	location = 1399
 
-					
 	regiment = {
 	type = cavalry_brigade
-	name = "23rd Cav Brigade"
+	name = "8/9 Cavalry Regiments"
 	historical_model = 2
-	experience = 10
+	experience = 5
+	}
 	}
 
-	}
-
-
-				
 	division = {
 	name = "3. Cavalry Regiment"
 	location = 1531
 
-					
 	regiment = {
 	type = cavalry_brigade
-	name = "28th Cav Brigade"
+	name = "3. Cavalry Regiment"
 	historical_model = 2
-	experience = 3
+	experience = 5
 	is_reserve = yes
 	}
-
 	}
 	}
 
@@ -78,22 +65,22 @@ location = 1928
 
 	regiment = {
 	type = garrison_brigade
-	name = "1st Gar Brigade"
+	name = "Modlin Garrison"
 	historical_model = 2
-	experience = 3
+	experience = 5
 	is_reserve = yes
 	}
 	}
 
 	division = {
-	name = "3rd Gar Brigade"
+	name = "Lvov Garrison"
 	location = 2509
 
 	regiment = {
 	type = garrison_brigade
-	name = "3rd Gar Brigade"
+	name = "Lvov Garrison"
 	historical_model = 2
-	experience = 3
+	experience = 5
 	is_reserve = yes
 	}
 	}
@@ -105,36 +92,36 @@ location = 1928
 
 	regiment = {
 	type = infantry_brigade
-	name = "24th Inf Brigade"
-	historical_model = 1
-	experience = 10
+	name = "33. Infantry Brigade"
+	historical_model = 2
+	experience = 5
 	}
 
 	regiment = {
 	type = infantry_brigade
-	name = "22nd Inf Brigade"
-	historical_model = 1
-	experience = 10
+	name = "34. Infantry Brigade"
+	historical_model = 2
+	experience = 5
 	}
 	}
 	
 	division = {
-	name = "2. Lituanian-Byelorussian Dywizja Piec"
+	name = "2. Lituanian-Byelorussian Dywizja Piechorty"
 	location = 1532
 
 	regiment = {
 	type = infantry_brigade
-	name = "73rd Inf Brigade"
-	historical_model = 1
-	experience = 3
+	name = "3. LB Infantry Brigade"
+	historical_model = 2
+	experience = 5
 	is_reserve = yes
 	}
 
 	regiment = {
 	type = infantry_brigade
-	name = "74th Inf Brigade"
-	historical_model = 1
-	experience = 3
+	name = "4. LB Infantry Brigade"
+	historical_model = 2
+	experience = 5
 	is_reserve = yes
 	}
 	}
@@ -145,9 +132,9 @@ location = 1928
 
 	regiment = {
 	type = infantry_brigade
-	name = "68th Inf Brigade"
-	historical_model = 1
-	experience = 3
+	name = "41. Lithuanian-Byelorussian"
+	historical_model = 2
+	experience = 5
 	is_reserve = yes
 	}
 	}
@@ -158,17 +145,17 @@ location = 1928
 
 	regiment = {
 	type = infantry_brigade
-	name = "70th Inf Brigade"
-	historical_model = 1
-	experience = 3
+	name = "19. Infantry Brigade"
+	historical_model = 2
+	experience = 5
 	is_reserve = yes
 	}
 
 	regiment = {
 	type = infantry_brigade
-	name = "71st Inf Brigade"
-	historical_model = 1
-	experience = 3
+	name = "20. Infantry Brigade"
+	historical_model = 2
+	experience = 5
 	is_reserve = yes
 	}
 	}
@@ -179,39 +166,39 @@ location = 1928
 
 	regiment = {
 	type = infantry_brigade
-	name = "65th Inf Brigade"
-	historical_model = 1
-	experience = 10
+	name = "31. Pomorska Brigade"
+	historical_model = 2
+	experience = 5
 	}
 
 	regiment = {
 	type = infantry_brigade
-	name = "66th Inf Brigade"
-	historical_model = 1
-	experience = 10
+	name = "32. Pomorska Brigade"
+	historical_model = 2
+	experience = 5
 	}
 
 	regiment = {
 	type = artillery_brigade
-	name = "3rd Art Brigade"
-	historical_model = 1
-	experience = 10
+	name = "16. Artillery Brigade"
+	historical_model = 2
+	experience = 5
 	}
 	}
 
 	division = {
-	name = "1st Mar Brigade"
+	name = "1. Marine Brigade"
 	location = 1866
 
 	regiment = {
 	type = marine_brigade
-	name = "1st Mar Brigade"
+	name = "1. Marine Brigade"
 	historical_model = 2
-	experience = 10
+	experience = 5
 	}
 	}
-
 }
+
 
 army = {
 name = "3rd Army"
@@ -220,114 +207,92 @@ location = 2391
 regiment = {
 type = hq_brigade
 name = "11th HQ Brigade"
-historical_model = 1
+historical_model = 2
 experience = 1
 }
 
-corps = {
-name = "1st Corps"
-location = 2335
+	corps = {
+	name = "1st Corps"
+	location = 2335
 
-regiment = {
-type = hq_brigade
-name = "9th HQ Brigade"
-historical_model = 1
-experience = 1
-}
+	regiment = {
+	type = hq_brigade
+	name = "9th HQ Brigade"
+	historical_model = 2
+	experience = 1
+	}
 
-division = {
-name = "7. Dywizja Piechoty"
-location = 2336
+	division = {
+	name = "7. Dywizja Piechoty"
+	location = 2336
 
-					
-regiment = {
-type = infantry_brigade
-name = "33rd Inf Brigade"
-historical_model = 1
-experience = 10
-}
+	regiment = {
+	type = infantry_brigade
+	name = "13. Infantry Brigade"
+	historical_model = 2
+	experience = 5
+	}
 
+	regiment = {
+	type = infantry_brigade
+	name = "14. Infantry Brigade"
+	historical_model = 2
+	experience = 5
+	}
 
-					
-regiment = {
-type = infantry_brigade
-name = "34th Inf Brigade"
-historical_model = 1
-experience = 10
-}
+	regiment = {
+	type = artillery_brigade
+	name = "7. Artillery Brigade"
+	historical_model = 2
+	experience = 5
+	}
+	}
 
+	division = {
+	name = "13. Dywizja Piechoty"
+	location = 2222
 
-					
-regiment = {
-type = artillery_brigade
-name = "2nd Art Brigade"
-historical_model = 1
-experience = 10
-}
+	regiment = {
+	type = infantry_brigade
+	name = "25. Infantry Brigade"
+	historical_model = 2
+	experience = 5
+	}
 
-}
+	regiment = {
+	type = infantry_brigade
+	name = "26. Infantry Brigade"
+	historical_model = 2
+	experience = 5
+	}
+	}
 
+	division = {
+	name = "15. Greater Poland Dywizja Piechoty"
+	location = 2336
 
-				
-division = {
-name = "13. Dywizja Piechoty"
-location = 2222
+	regiment = {
+	type = infantry_brigade
+	name = "29. Infantry Brigade"
+	historical_model = 2
+	experience = 10
+	}
 
-					
-regiment = {
-type = infantry_brigade
-name = "36th Inf Brigade"
-historical_model = 1
-experience = 10
-}
+	regiment = {
+	type = infantry_brigade
+	name = "30. Infantry Brigade"
+	historical_model = 2
+	experience = 10
+	}
 
+	regiment = {
+	type = artillery_brigade
+	name = "15. Artillery Brigade"
+	historical_model = 2
+	experience = 10
+	}
+	}
 
-					
-regiment = {
-type = infantry_brigade
-name = "37th Inf Brigade"
-historical_model = 1
-experience = 10
-}
-
-}
-
-
-				
-division = {
-name = "15. Greater Poland Dywizja Piechoty"
-location = 2336
-
-					
-regiment = {
-type = infantry_brigade
-name = "39th Inf Brigade"
-historical_model = 1
-experience = 10
-}
-
-
-					
-regiment = {
-type = infantry_brigade
-name = "40th Inf Brigade"
-historical_model = 1
-experience = 10
-}
-
-
-					
-regiment = {
-type = artillery_brigade
-name = "3rd Art Brigade"
-historical_model = 1
-experience = 10
-}
-
-}
-
-
-				
 division = {
 name = "1. Cavalry Dywizja"
 location = 2278
@@ -337,7 +302,7 @@ regiment = {
 type = cavalry_brigade
 name = "14th Cav Brigade"
 historical_model = 2
-experience = 3
+experience = 5
 is_reserve = yes
 }
 
@@ -347,7 +312,7 @@ regiment = {
 type = cavalry_brigade
 name = "15th Cav Brigade"
 historical_model = 2
-experience = 3
+experience = 5
 is_reserve = yes
 }
 
@@ -364,7 +329,7 @@ regiment = {
 type = cavalry_brigade
 name = "17th Cav Brigade"
 historical_model = 2
-experience = 3
+experience = 5
 is_reserve = yes
 }
 
@@ -374,7 +339,7 @@ regiment = {
 type = armored_car_brigade
 name = "1st AC Brigade"
 historical_model = 2
-experience = 10
+experience = 5
 }
 
 }
@@ -391,7 +356,7 @@ location = 2708
 regiment = {
 type = hq_brigade
 name = "7th HQ Brigade"
-historical_model = 1
+historical_model = 2
 experience = 1
 }
 
@@ -405,8 +370,8 @@ location = 2708
 regiment = {
 type = infantry_brigade
 name = "46th Inf Brigade"
-historical_model = 1
-experience = 10
+historical_model = 2
+experience = 5
 }
 
 
@@ -414,8 +379,8 @@ experience = 10
 regiment = {
 type = infantry_brigade
 name = "47th Inf Brigade"
-historical_model = 1
-experience = 10
+historical_model = 2
+experience = 5
 }
 
 }
@@ -431,7 +396,7 @@ regiment = {
 type = cavalry_brigade
 name = "21st Cav Brigade"
 historical_model = 2
-experience = 3
+experience = 5
 is_reserve = yes
 }
 
@@ -449,7 +414,7 @@ location = 1990
 regiment = {
 type = hq_brigade
 name = "5th HQ Brigade"
-historical_model = 1
+historical_model = 2
 experience = 1
 }
 
@@ -463,8 +428,8 @@ location = 1937
 regiment = {
 type = infantry_brigade
 name = "26th Inf Brigade"
-historical_model = 1
-experience = 10
+historical_model = 2
+experience = 5
 }
 
 
@@ -472,47 +437,36 @@ experience = 10
 regiment = {
 type = infantry_brigade
 name = "27th Inf Brigade"
-historical_model = 1
-experience = 10
+historical_model = 2
+experience = 5
+}
 }
 
-}
-
-
-				
 division = {
 name = "Rybak Mtn Brigade"
 location = 1938
 
-					
 regiment = {
 type = bergsjaeger_brigade
 name = "1st Mtn Brigade"
-historical_model = 1
-experience = 10
+historical_model = 2
+experience = 5
+}
 }
 
-}
-
-
-				
 division = {
 name = "7th Cav Brigade"
 location = 1938
 
-					
 regiment = {
 type = cavalry_brigade
 name = "12th Cav Brigade"
 historical_model = 2
-experience = 3
+experience = 5
 is_reserve = yes
 }
-
 }
-
 }
-
 }
 
 
@@ -525,7 +479,7 @@ location = 2639
 regiment = {
 type = hq_brigade
 name = "13th HQ Brigade"
-historical_model = 1
+historical_model = 2
 experience = 1
 }
 
@@ -539,8 +493,8 @@ location = 2452
 regiment = {
 type = infantry_brigade
 name = "52nd Inf Brigade"
-historical_model = 1
-experience = 10
+historical_model = 2
+experience = 5
 }
 
 
@@ -548,8 +502,8 @@ experience = 10
 regiment = {
 type = infantry_brigade
 name = "53rd Inf Brigade"
-historical_model = 1
-experience = 10
+historical_model = 2
+experience = 5
 }
 
 }
@@ -564,8 +518,8 @@ location = 2452
 regiment = {
 type = infantry_brigade
 name = "55th Inf Brigade"
-historical_model = 1
-experience = 10
+historical_model = 2
+experience = 5
 }
 
 
@@ -573,8 +527,8 @@ experience = 10
 regiment = {
 type = infantry_brigade
 name = "56th Inf Brigade"
-historical_model = 1
-experience = 10
+historical_model = 2
+experience = 5
 }
 
 }
@@ -589,8 +543,8 @@ location = 2640
 regiment = {
 type = infantry_brigade
 name = "58th Inf Brigade"
-historical_model = 1
-experience = 3
+historical_model = 2
+experience = 5
 is_reserve = yes
 }
 
@@ -606,8 +560,8 @@ location = 2640
 regiment = {
 type = infantry_brigade
 name = "60th Inf Brigade"
-historical_model = 1
-experience = 10
+historical_model = 2
+experience = 5
 }
 }
 
@@ -619,8 +573,8 @@ location = 2770
 regiment = {
 type = hq_brigade
 name = "4th HQ Brigade"
-historical_model = 1
-experience = 3
+historical_model = 2
+experience = 5
 }
 
 division = {
@@ -631,15 +585,15 @@ location = 2640
 regiment = {
 type = infantry_brigade
 name = "49th Inf Brigade"
-historical_model = 1
-experience = 10
+historical_model = 2
+experience = 5
 }
 
 regiment = {
 type = infantry_brigade
 name = "50th Inf Brigade"
-historical_model = 1
-experience = 10
+historical_model = 2
+experience = 5
 }
 }
 
@@ -651,15 +605,15 @@ location = 2836
 regiment = {
 type = infantry_brigade
 name = "79th Inf Brigade"
-historical_model = 1
-experience = 10
+historical_model = 2
+experience = 5
 }
 
 regiment = {
 type = infantry_brigade
 name = "80th Inf Brigade"
-historical_model = 1
-experience = 10
+historical_model = 2
+experience = 5
 }
 }
 }
@@ -674,8 +628,8 @@ location = 1694
 regiment = {
 type = hq_brigade
 name = "14th HQ Brigade"
-historical_model = 1
-experience = 3
+historical_model = 2
+experience = 5
 }
 
 
@@ -688,7 +642,7 @@ location = 1402
 regiment = {
 type = hq_brigade
 name = "3rd HQ Brigade"
-historical_model = 1
+historical_model = 2
 experience = 1
 }
 
@@ -702,8 +656,8 @@ location = 1226
 regiment = {
 type = infantry_brigade
 name = "4th Inf Brigade"
-historical_model = 1
-experience = 10
+historical_model = 2
+experience = 5
 }
 
 }
@@ -718,8 +672,8 @@ location = 1312
 regiment = {
 type = infantry_brigade
 name = "12th Inf Brigade"
-historical_model = 1
-experience = 10
+historical_model = 2
+experience = 5
 }
 
 
@@ -727,8 +681,8 @@ experience = 10
 regiment = {
 type = infantry_brigade
 name = "13th Inf Brigade"
-historical_model = 1
-experience = 10
+historical_model = 2
+experience = 5
 }
 
 }
@@ -744,7 +698,7 @@ regiment = {
 type = cavalry_brigade
 name = "1st Cav Brigade"
 historical_model = 2
-experience = 3
+experience = 5
 is_reserve = yes
 }
 
@@ -761,7 +715,7 @@ regiment = {
 type = cavalry_brigade
 name = "10th Cav Brigade"
 historical_model = 2
-experience = 3
+experience = 5
 is_reserve = yes
 }
 
@@ -777,16 +731,16 @@ location = 1491
 regiment = {
 type = infantry_brigade
 name = "1st Inf Brigade"
-historical_model = 1
-experience = 3
+historical_model = 2
+experience = 5
 is_reserve = yes
 }
 
 regiment = {
 type = infantry_brigade
 name = "2nd Inf Brigade"
-historical_model = 1
-experience = 3
+historical_model = 2
+experience = 5
 is_reserve = yes
 }
 }
@@ -798,7 +752,7 @@ location = 1146
 regiment = {
 type = hq_brigade
 name = "2nd HQ Brigade"
-historical_model = 1
+historical_model = 2
 experience = 1
 }
 
@@ -809,15 +763,15 @@ location = 1447
 regiment = {
 type = infantry_brigade
 name = "9th Inf Brigade"
-historical_model = 1
-experience = 10
+historical_model = 2
+experience = 5
 }
 
 regiment = {
 type = infantry_brigade
 name = "10th Inf Brigade"
-historical_model = 1
-experience = 10
+historical_model = 2
+experience = 5
 }
 }
 
@@ -829,7 +783,7 @@ regiment = {
 type = cavalry_brigade
 name = "5th Cav Brigade"
 historical_model = 2
-experience = 10
+experience = 5
 }
 }
 
@@ -840,16 +794,16 @@ location = 1451
 regiment = {
 type = infantry_brigade
 name = "76th Inf Brigade"
-historical_model = 1
-experience = 3
+historical_model = 2
+experience = 5
 is_reserve = yes
 }
 
 regiment = {
 type = infantry_brigade
 name = "77th Inf Brigade"
-historical_model = 1
-experience = 3
+historical_model = 2
+experience = 5
 is_reserve = yes
 }
 }
@@ -863,7 +817,7 @@ location = 1875
 regiment = {
 type = hq_brigade
 name = "6th HQ Brigade"
-historical_model = 1
+historical_model = 2
 experience = 1
 }
 
@@ -874,22 +828,22 @@ location = 1638
 regiment = {
 type = infantry_brigade
 name = "15th Inf Brigade"
-historical_model = 1
-experience = 10
+historical_model = 2
+experience = 5
 }
 
 regiment = {
 type = infantry_brigade
 name = "16th Inf Brigade"
-historical_model = 1
-experience = 10
+historical_model = 2
+experience = 5
 }
 
 regiment = {
 type = artillery_brigade
 name = "1st Art Brigade"
-historical_model = 1
-experience = 10
+historical_model = 2
+experience = 5
 }
 }
 
@@ -900,15 +854,15 @@ location = 1639
 regiment = {
 type = infantry_brigade
 name = "18th Inf Brigade"
-historical_model = 1
-experience = 10
+historical_model = 2
+experience = 5
 }
 
 regiment = {
 type = infantry_brigade
 name = "19th Inf Brigade"
-historical_model = 1
-experience = 10
+historical_model = 2
+experience = 5
 }
 }
 
@@ -920,7 +874,7 @@ regiment = {
 type = cavalry_brigade
 name = "7th Cav Brigade"
 historical_model = 2
-experience = 3
+experience = 5
 is_reserve = yes
 }
 }
@@ -932,16 +886,16 @@ location = 1933
 regiment = {
 type = infantry_brigade
 name = "62nd Inf Brigade"
-historical_model = 1
-experience = 3
+historical_model = 2
+experience = 5
 is_reserve = yes
 }
 
 regiment = {
 type = infantry_brigade
 name = "63rd Inf Brigade"
-historical_model = 1
-experience = 3
+historical_model = 2
+experience = 5
 is_reserve = yes
 }
 }

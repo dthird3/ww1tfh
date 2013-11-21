@@ -1,0 +1,258 @@
+# Galacian Mutiny							
+country_event = {
+
+		id = 100810
+
+		major = yes
+		
+		trigger = {
+			tag = SOV
+			POL = {	war_with = SOV }										
+			}
+
+		fire_only_once = yes
+
+		title = "EVT1914_2008100_NAME"
+		desc = "EVT1914_2008100_DESC"
+		picture = "Ukraine-Galacian"
+
+		option = {
+			name = "ACTION_NAME_DAMN"
+			ai_chance = { factor = 100 }	
+			2576 = { create_revolt = 1 }
+			2641 = { create_revolt = 1 }
+			2642 = { create_revolt = 1 }
+			remove_brigade = "3rd Galacian Brigade"
+			remove_brigade = "2nd Galacian Brigade"
+
+			random_list = { 
+					25 = { remove_brigade = "1st Galacian Brigade"
+						   remove_brigade = "Galacian Corps HQ" } 
+					75 = {POL = { country_event = 100811 }}
+			} 
+		}
+}
+
+#add_province_modifier = <name of modifier> 
+#remove_province_modifier = <name of modifier> 
+
+# Galacian Mutiny							
+country_event = {
+
+		id = 100811
+
+		major = yes
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		title = "EVT1914_2008100_NAME"
+		desc = "EVT1914_2008100_DESC"
+		picture = "Ukraine-Galacian"
+
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }
+			random_list = { 
+					40 = { load_oob = "scenarios/polish_bolshevik/reinforce_POL_OOB/POL_001.txt" } 
+					60 = { load_oob = "scenarios/polish_bolshevik/reinforce_POL_OOB/POL_002.txt" }
+			} 			
+		}
+}
+
+
+
+#########################################  Scheduled POLISH Reinforcements  ############################################
+
+country_event = {
+	
+	id = 100001
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date = 1920.5.22
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "galliptitle"
+	desc = "gallipdesc"
+	picture = "some pic"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_003.txt"}
+	}
+}
+
+country_event = {
+	
+	id = 100002
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date = 1920.6.1
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "galliptitle"
+	desc = "gallipdesc"
+	picture = "some pic"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_004.txt"}
+	}
+}
+
+country_event = {
+	
+	id = 100003
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date = 1920.7.8
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "galliptitle"
+	desc = "gallipdesc"
+	picture = "some pic"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_005.txt"}
+	}
+}
+
+country_event = {
+	
+	id = 100004
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date = 1920.8.8
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "galliptitle"
+	desc = "gallipdesc"
+	picture = "some pic"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_006.txt"}
+	}
+}
+
+country_event = {
+	
+	id = 100005
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date = 1920.8.15
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "galliptitle"
+	desc = "gallipdesc"
+	picture = "some pic"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_007.txt"}
+	}
+}
+
+country_event = {
+	
+	id = 100006
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date = 1920.8.22
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "galliptitle"
+	desc = "gallipdesc"
+	picture = "some pic"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_008.txt"}
+	}
+}
+
+country_event = {
+	
+	id = 100007
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date = 1920.9.1
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "galliptitle"
+	desc = "gallipdesc"
+	picture = "some pic"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_009.txt"}
+	}
+}
+
+country_event = {
+	
+	id = 100008
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date = 1920.9.8
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "galliptitle"
+	desc = "gallipdesc"
+	picture = "some pic"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_010.txt"}
+	}
+}
