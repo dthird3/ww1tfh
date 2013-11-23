@@ -78,9 +78,9 @@ country_event = {
 		days = 1
 	}
 
-	title = "galliptitle"
-	desc = "gallipdesc"
-	picture = "some pic"
+	title = "Polish_Troops_Title"
+	desc = "Polish_Troops_Desc"
+	picture = "Polish_Troops"
 
 	option = {
 		name = "ACTION_NAME_GREAT"
@@ -102,9 +102,9 @@ country_event = {
 		days = 1
 	}
 
-	title = "galliptitle"
-	desc = "gallipdesc"
-	picture = "some pic"
+	title = "Polish_Troops_Title"
+	desc = "Polish_Troops_Desc"
+	picture = "Polish_Troops"
 
 	option = {
 		name = "ACTION_NAME_GREAT"
@@ -126,9 +126,9 @@ country_event = {
 		days = 1
 	}
 
-	title = "galliptitle"
-	desc = "gallipdesc"
-	picture = "some pic"
+	title = "Polish_Troops_Title"
+	desc = "Polish_Troops_Desc"
+	picture = "Polish_Troops"
 
 	option = {
 		name = "ACTION_NAME_GREAT"
@@ -150,9 +150,9 @@ country_event = {
 		days = 1
 	}
 
-	title = "galliptitle"
-	desc = "gallipdesc"
-	picture = "some pic"
+	title = "Polish_Troops_Title"
+	desc = "Polish_Troops_Desc"
+	picture = "Polish_Troops"
 
 	option = {
 		name = "ACTION_NAME_GREAT"
@@ -174,9 +174,9 @@ country_event = {
 		days = 1
 	}
 
-	title = "galliptitle"
-	desc = "gallipdesc"
-	picture = "some pic"
+	title = "Polish_Troops_Title"
+	desc = "Polish_Troops_Desc"
+	picture = "Polish_Troops"
 
 	option = {
 		name = "ACTION_NAME_GREAT"
@@ -198,9 +198,9 @@ country_event = {
 		days = 1
 	}
 
-	title = "galliptitle"
-	desc = "gallipdesc"
-	picture = "some pic"
+	title = "Polish_Troops_Title"
+	desc = "Polish_Troops_Desc"
+	picture = "Polish_Troops"
 
 	option = {
 		name = "ACTION_NAME_GREAT"
@@ -222,9 +222,9 @@ country_event = {
 		days = 1
 	}
 
-	title = "galliptitle"
-	desc = "gallipdesc"
-	picture = "some pic"
+	title = "Polish_Troops_Title"
+	desc = "Polish_Troops_Desc"
+	picture = "Polish_Troops"
 
 	option = {
 		name = "ACTION_NAME_GREAT"
@@ -246,13 +246,326 @@ country_event = {
 		days = 1
 	}
 
-	title = "galliptitle"
-	desc = "gallipdesc"
-	picture = "some pic"
+	title = "Polish_Troops_Title"
+	desc = "Polish_Troops_Desc"
+	picture = "Polish_Troops"
 
 	option = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_010.txt"}
 	}
+}
+
+
+
+
+#########################################  Scheduled BOLSHEVIK Reinforcements  ############################################
+
+country_event = {
+	
+	id = 200001
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date = 1920.5.1
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Russian_Troops_Title"
+	desc = "Russian_Troops_Desc"
+	picture = "Russian_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_001.txt"}
+#		officers = 800
+	}
+}
+
+country_event = {
+	
+	id = 200002
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date = 1920.5.8
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Russian_Troops_Title"
+	desc = "Russian_Troops_Desc"
+	picture = "Russian_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_002.txt"}
+	}
+}
+
+country_event = {
+	
+	id = 200003
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date = 1920.5.15
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Russian_Troops_Title"
+	desc = "Russian_Troops_Desc"
+	picture = "Russian_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_003.txt"}
+	}
+}
+
+country_event = {
+	
+	id = 200004
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date = 1920.5.22
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Russian_Troops_Title"
+	desc = "Russian_Troops_Desc"
+	picture = "Russian_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_004.txt"}
+	}
+}
+
+country_event = {
+	
+	id = 200005
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date = 1920.6.15
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Russian_Troops_Title"
+	desc = "Russian_Troops_Desc"
+	picture = "Russian_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_005.txt"}
+	}
+}
+
+country_event = {
+	
+	id = 200006
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date = 1920.6.22
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Russian_Troops_Title"
+	desc = "Russian_Troops_Desc"
+	picture = "Russian_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_006.txt"}
+	}
+}
+
+country_event = {
+	
+	id = 200007
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date = 1920.7.8
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Russian_Troops_Title"
+	desc = "Russian_Troops_Desc"
+	picture = "Russian_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_007.txt"}
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_008.txt"}
+	}
+}
+
+country_event = {
+	
+	id = 200008
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date = 1920.7.22
+		SOV = {not = {has_country_flag = Latvian_Garrison_Released}}
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Russian_Troops_Title"
+	desc = "Russian_Troops_Desc"
+	picture = "Russian_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+ 	    load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_GAR_1.txt"
+		SOV = {set_country_flag = Latvian_Garrison_Released}
+	}
+}
+
+country_event = {
+	
+	id = 200009
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date = 1920.8.15
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Russian_Troops_Title"
+	desc = "Russian_Troops_Desc"
+	picture = "Russian_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_009.txt"}
+	}
+}
+
+country_event = {
+	
+	id = 200010
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date = 1920.9.15
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Russian_Troops_Title"
+	desc = "Russian_Troops_Desc"
+	picture = "Russian_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_010.txt"}
+	}
+}
+
+country_event = {
+	
+	id = 200011
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date = 1920.10.1
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Russian_Troops_Title"
+	desc = "Russian_Troops_Desc"
+	picture = "Russian_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_011.txt"}
+	}
+}
+
+###########################################  Russian LATVIAN Garrison  ################################################
+
+
+country_event = {
+
+		id = 200020
+
+		major = yes
+		
+		trigger = {
+			tag = SOV
+			or = {
+			1267 = {controlled_by = POL}							# Drissa        Polish cross north of the river Dvina
+			1105 = {controlled_by = POL}							# Rasony
+			1144 = {controlled_by = POL}							# Dominikovo
+			1403 = {controlled_by = POL}							# Drozdy
+			1107 = {controlled_by = POL}							# Sumilina        
+			1315 = {controlled_by = POL}							# Suraz
+			1270 = {controlled_by = POL}							# Velizh
+			1492 = {controlled_by = POL}							# Demidov
+			}
+		}
+		
+		fire_only_once = yes
+
+	title = "Latvian_Garrison_Title"
+	desc = "Russian_Troops_Desc"
+	picture = "Russian_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_GAR_2.txt"}     
+		SOV = {not = {has_country_flag = Latvian_Garrison_Released}
+					  SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_GAR_1.txt"}
+					  }
+		SOV = {set_country_flag = Latvian_Garrison_Released}
+		}
 }
