@@ -1,0 +1,36 @@
+corps = {
+	name = "Warsaw Garrison"
+	location = 1928
+
+	regiment = {
+	type = hq_brigade
+	name = "Warsaw Garrison"
+	historical_model = 2
+	experience = 1
+	}
+
+	division = {
+	name = "Warsaw Militia"
+	location = 1928 
+
+	regiment = {
+	type = militia_brigade
+	name = "Warsaw Militia"
+	historical_model = 2
+	experience = 5
+	is_reserve = yes
+	}
+	}	
+	
+	division = {
+	name = "J Cavalry Brigade"
+	location = 1928
+
+	regiment = {
+	type = cavalry_brigade
+	name = "J Cavalry Brigade"
+	historical_model = 3
+	experience = 5
+	}
+	}
+	}

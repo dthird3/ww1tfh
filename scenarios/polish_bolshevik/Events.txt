@@ -1,3 +1,30 @@
+# =============================================  Monitor Polish Deployment Area  ====================================
+
+country_event = {											# One time event at start to Ensure US Neutrality and "Peace maker" - *** Concept doesn't seem to work
+
+		id = 100801
+
+		trigger = {
+			tag = LIT										
+		}
+
+		title = "Polish_Troops_Title"
+		desc = "Polish_Troops_Desc"
+		picture = "Polish_Troops"
+
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }
+#			POL = {set_country_flag = "Desperate_Polish_Defence"}				# Temporary for Testing
+			POL = {set_variable = { which = PDEPLOY  value = +1928 }} 			# Set Warsaw as default deployment province
+#			POL = {has_country_flag = "Desperate_Polish_Defence"}
+			POL = {set_variable = { which = PDEPLOY  value = +1924 }} 			# Set Poznan as the alternate deployment zone
+
+		}
+}
+
+
+
 # Galacian Mutiny							
 country_event = {
 
@@ -7,7 +34,6 @@ country_event = {
 		
 		trigger = {
 			tag = SOV
-			POL = {	war_with = SOV }										
 			}
 
 		fire_only_once = yes
@@ -33,8 +59,6 @@ country_event = {
 		}
 }
 
-#add_province_modifier = <name of modifier> 
-#remove_province_modifier = <name of modifier> 
 
 # Galacian Mutiny							
 country_event = {
@@ -88,6 +112,7 @@ country_event = {
 		POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_003.txt"}
 	}
 }
+
 
 country_event = {
 	
@@ -257,7 +282,147 @@ country_event = {
 	}
 }
 
+##############################################  POLISH DESPERATE DEFENCE  #################################################
 
+country_event = {
+
+		id = 100010
+
+		major = yes
+		
+		trigger = {
+			tag = POL
+			POL = {not = {has_country_flag = "Desperate_Polish_Defence_1"}}
+			or = {
+			1928 = {any_neighbor_province = {controlled_by = SOV}}							# Bolsheviks approach Warsaw - 1st wave of Reinforcements
+			1751 = {any_neighbor_province = {controlled_by = SOV}}							# Grodno
+			1812 = {any_neighbor_province = {controlled_by = SOV}}							# Slonim
+			1987 = {any_neighbor_province = {controlled_by = SOV}}							# Bereza      
+			2388 = {any_neighbor_province = {controlled_by = SOV}}							# Sandomierz
+			2218 = {any_neighbor_province = {controlled_by = SOV}}							# Chelm
+			2445 = {any_neighbor_province = {controlled_by = SOV}}							# Krakow
+			}
+		}
+		
+		fire_only_once = yes
+		
+		mean_time_to_happen =  { days = 1 }
+
+		title = "Desperate_Title"
+		desc = "Desperate_Desc"
+		picture = "Defend_Warsaw"
+
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }	
+			POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_GAR_2.txt"}  
+			POL = {set_country_flag = "Desperate_Polish_Defence_1"}
+			}
+}
+
+country_event = {
+
+		id = 100011
+
+		major = yes
+		
+		trigger = {
+			tag = POL
+			POL = {has_country_flag = "Desperate_Polish_Defence_1"}
+			POL = {not = {has_country_flag = "Desperate_Polish_Defence_2"}}
+			or = {
+			1928 = {any_neighbor_province = {controlled_by = SOV}}							# Bolsheviks approach Warsaw - 1st wave of Reinforcements
+			1751 = {any_neighbor_province = {controlled_by = SOV}}							# Grodno
+			1812 = {any_neighbor_province = {controlled_by = SOV}}							# Slonim
+			1987 = {any_neighbor_province = {controlled_by = SOV}}							# Bereza      
+			2388 = {any_neighbor_province = {controlled_by = SOV}}							# Sandomierz
+			2218 = {any_neighbor_province = {controlled_by = SOV}}							# Chelm
+			2445 = {any_neighbor_province = {controlled_by = SOV}}							# Krakow
+			}
+		}
+		
+		fire_only_once = yes
+		
+		mean_time_to_happen =  { days = 1 }
+
+		title = "Desperate_Title"
+		desc = "Desperate_Desc"
+		picture = "Defend_Warsaw"
+
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }
+			POL = {set_country_flag = "Desperate_Polish_Defence_2"}			
+			POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_GAR_3.txt"} 
+			}
+}
+
+country_event = {
+
+		id = 100012
+		
+		major = yes
+		
+		trigger = {
+			tag = POL
+			POL = {has_country_flag = "Desperate_Polish_Defence_1"}
+			POL = {has_country_flag = "Desperate_Polish_Defence_2"}
+			POL = {not = {has_country_flag = "Desperate_Polish_Defence_3"}}
+			or = {
+			1928 = {any_neighbor_province = {controlled_by = SOV}}							# Bolsheviks approach Warsaw - 1st wave of Reinforcements
+			1751 = {any_neighbor_province = {controlled_by = SOV}}							# Grodno
+			1812 = {any_neighbor_province = {controlled_by = SOV}}							# Slonim
+			1987 = {any_neighbor_province = {controlled_by = SOV}}							# Bereza      
+			2388 = {any_neighbor_province = {controlled_by = SOV}}							# Sandomierz
+			2218 = {any_neighbor_province = {controlled_by = SOV}}							# Chelm
+			2445 = {any_neighbor_province = {controlled_by = SOV}}							# Krakow
+			}
+		}
+				
+		fire_only_once = yes
+		
+		mean_time_to_happen =  { days = 1 }
+
+		title = "Desperate_Title"
+		desc = "Desperate_Desc"
+		picture = "Defend_Warsaw"
+		
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }	
+			POL = {set_country_flag = "Desperate_Polish_Defence_3"}
+			POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_GAR_4.txt"}  
+			}
+}
+
+country_event = {								
+
+		id = 100015
+
+		major = yes
+		
+		trigger = {
+			tag = POL
+			POL = {not = {has_country_flag = "Defence_of_Poznan"}}
+			or = {
+			2096 = {any_neighbor_province = {controlled_by = SOV}}							# Bolsheviks approach Poznan - Release the Garrison
+			1980 = {any_neighbor_province = {controlled_by = SOV}}	
+			}
+		}
+		
+		fire_only_once = yes
+
+		title = "Polish_Troops_Title"
+		desc = "Desperate_Poznan_Desc"
+		picture = "Defend_Warsaw"
+
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }	
+			POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_GAR_5.txt"}  
+			POL = {set_country_flag = "Defence_of_Poznan"}
+			}
+}
 
 
 #########################################  Scheduled BOLSHEVIK Reinforcements  ############################################
@@ -283,7 +448,7 @@ country_event = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_001.txt"}
-#		officers = 800
+#		add_officers = 800
 	}
 }
 
@@ -414,6 +579,30 @@ country_event = {
 	trigger = {
 		tag = SOV
 		date = 1920.7.8
+		SOV = {has_country_flag = "Lithuania_joins"}
+		1355 = {controlled_by = SOV}
+	}
+
+	mean_time_to_happen =  { days = 1 }
+
+	title = "Russian_Troops_Title"
+	desc = "Russian_Troops_Desc"
+	picture = "Russian_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/LIT_002.txt"}  
+	}
+}
+
+country_event = {
+	
+	id = 200008
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date = 1920.7.15
 	}
 
 	mean_time_to_happen =  {
@@ -427,19 +616,18 @@ country_event = {
 	option = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
-		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_007.txt"}
 		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_008.txt"}
 	}
 }
 
 country_event = {
 	
-	id = 200008
+	id = 200009
 	fire_only_once = yes
 	trigger = {
 		tag = SOV
 		date = 1920.7.22
-		SOV = {not = {has_country_flag = Latvian_Garrison_Released}}
+		not = {has_country_flag = Latvian_Garrison_Released}
 	}
 
 	mean_time_to_happen =  {
@@ -460,7 +648,7 @@ country_event = {
 
 country_event = {
 	
-	id = 200009
+	id = 200010
 	fire_only_once = yes
 	trigger = {
 		tag = SOV
@@ -484,7 +672,7 @@ country_event = {
 
 country_event = {
 	
-	id = 200010
+	id = 200012
 	fire_only_once = yes
 	trigger = {
 		tag = SOV
@@ -508,7 +696,7 @@ country_event = {
 
 country_event = {
 	
-	id = 200011
+	id = 200014
 	fire_only_once = yes
 	trigger = {
 		tag = SOV
@@ -541,6 +729,7 @@ country_event = {
 		
 		trigger = {
 			tag = SOV
+			not = {has_country_flag = Latvian_Garrison_Released}
 			or = {
 			1267 = {controlled_by = POL}							# Drissa        Polish cross north of the river Dvina
 			1105 = {controlled_by = POL}							# Rasony
@@ -563,9 +752,67 @@ country_event = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_GAR_2.txt"}     
-		SOV = {not = {has_country_flag = Latvian_Garrison_Released}
-					  SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_GAR_1.txt"}
-					  }
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_GAR_1.txt"}
 		SOV = {set_country_flag = Latvian_Garrison_Released}
 		}
 }
+
+
+##############################################  Lithuanians Join Bolshevik's  #################################################
+
+country_event = {
+
+		id = 200030																			# Bolsheviks approach Lithuanian Border
+
+		major = yes
+		
+		trigger = {
+			tag = SOV
+			SOV = {not = {has_country_flag = "Lithuania_joins"}}
+			or = {
+			1444 = {any_neighbor_province = {controlled_by = SOV}}							# Wilno - (Swieziany)
+			1630 = {any_neighbor_province = {controlled_by = SOV}}							# Suwali      
+			1751 = {any_neighbor_province = {controlled_by = SOV}}							# Grodno?
+			}
+		}
+		
+		fire_only_once = yes
+		
+		mean_time_to_happen =  { days = 1 }
+
+		title = "Lithuania_Title"
+		desc = "Lithuania_Desc"
+		picture = "Russian_Troops"
+
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }	
+			SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/LIT_001.txt"} 
+			POL = { country_event = 200032 }			
+			SOV = {set_country_flag = "Lithuania_joins"}
+			}
+}
+
+country_event = {													# Polish activate their Lithuanian border garrison
+	
+		id = 200032
+		fire_only_once = yes
+		is_triggered_only = yes
+	
+		mean_time_to_happen =  { days = 1 }
+		
+		title = "Polish_Troops_Title"
+		desc = "Lithuania_Desc"
+		picture = "Polish_Troops"
+
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }	
+			POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_GAR_1.txt"}
+		}
+}
+
+
+##############################################  BOLSHEVIK DESPERATE DEFENSE  #################################################
+
+#			not = {num_of_cities = 5}
