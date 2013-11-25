@@ -1,0 +1,35 @@
+	corps = {
+	name = "Poznan Garrison"
+	location = 1924
+
+	regiment = {
+	type = hq_brigade
+	name = "Poznan Garrison"
+	historical_model = 2
+	experience = 1
+	}
+
+	division = {
+	name = "1/5 Cavalry Regiments"
+	location = 1924
+
+	regiment = {
+	type = cavalry_brigade
+	name = "1/5 Cavalry Regiments"
+	historical_model = 3
+	experience = 5
+	}
+	}
+	
+	division = {
+	name = "2. Reserve Brigade"
+	location = 1924
+
+	regiment = {
+	type = infantry_brigade
+	name = "2. Reserve Brigade"
+	historical_model = 3
+	experience = 5
+	is_reserve = yes
+	}
+	}
