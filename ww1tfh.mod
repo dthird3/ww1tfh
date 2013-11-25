@@ -22,4 +22,4 @@ replace_path = "units"
 replace_path = "gfx/models"
 
 
-user_dir = "WW1Modv0.7"
+user_dir = "WW1Modv0.8"
