@@ -214,6 +214,13 @@ experience = 1
 	historical_model = 5
 	experience = 5
 	}
+		
+	regiment = {
+	type = artillery_brigade
+	name = "13. Artillery Brigade"
+	historical_model = 4
+	experience = 5
+	}
 	}
 
 	division = {
@@ -269,7 +276,7 @@ experience = 1
 
 	regiment = {
 	type = cavalry_brigade
-	name = "17th Cav Brigade"
+	name = "3. Cavalry Brigade"
 	historical_model = 5
 	experience = 5
 	is_reserve = yes
@@ -277,7 +284,7 @@ experience = 1
 
 	regiment = {
 	type = armored_car_brigade
-	name = "1st AC Brigade"
+	name = "1. Motorised Brigade"
 	historical_model = 3
 	experience = 5
 	}
@@ -361,6 +368,13 @@ experience = 1
 	type = infantry_brigade
 	name = "8. Infantry Brigade"
 	historical_model = 5
+	experience = 5
+	}
+			
+	regiment = {
+	type = artillery_brigade
+	name = "4. Artillery Brigade"
+	historical_model = 4
 	experience = 5
 	}
 	}
@@ -522,16 +536,16 @@ experience = 1
 	}
 
 
-	armygroup = {
-	name = "Northern Front"
-	location = 1694
+armygroup = {
+name = "Northern Front"
+location = 1694
 
-	regiment = {
-	type = hq_brigade
-	name = "14th HQ Brigade"
-	historical_model = 5
-	experience = 5
-	}
+regiment = {
+type = hq_brigade
+name = "14th HQ Brigade"
+historical_model = 5
+experience = 5
+}
 
 	army = {
 	name = "7th Army"
@@ -622,160 +636,171 @@ experience = 1
 	}
 	}
 
-corps = {
-name = "1st Polish Legion"
-location = 1146
+	corps = {
+	name = "1st Polish Legion"
+	location = 1146
 
-regiment = {
-type = hq_brigade
-name = "2nd HQ Brigade"
-historical_model = 5
-experience = 1
-}
+	regiment = {
+	type = hq_brigade
+	name = "2nd HQ Brigade"
+	historical_model = 5
+	experience = 1
+	}
 
-division = {
-name = "2. Dywizja Piechoty"
-location = 1447
+	division = {
+	name = "2. Legion Dywizja"
+	location = 1447
 
-regiment = {
-type = infantry_brigade
-name = "9th Inf Brigade"
-historical_model = 5
-experience = 5
-}
+	regiment = {
+	type = infantry_brigade
+	name = "3. Infantry Brigade"
+	historical_model = 5
+	experience = 10
+	}
 
-regiment = {
-type = infantry_brigade
-name = "10th Inf Brigade"
-historical_model = 5
-experience = 5
-}
-}
+	regiment = {
+	type = infantry_brigade
+	name = "3. Infantry Brigade"
+	historical_model = 5
+	experience = 10
+	}
+			
+	regiment = {
+	type = artillery_brigade
+	name = "1. Artillery Brigade"
+	historical_model = 4
+	experience = 10
+	}
+	}
 
-division = {
-name = "2/3 Cavalry Regiments"
-location = 1585
+	division = {
+	name = "2/3 Cavalry Regiments"
+	location = 1585
 
-regiment = {
-type = cavalry_brigade
-name = "5th Cav Brigade"
-historical_model = 5
-experience = 5
-}
-}
+	regiment = {
+	type = cavalry_brigade
+	name = "2/3 Cavalry Regiments"
+	historical_model = 5
+	experience = 5
+	}
+	}
 
-division = {
-name = "3. Dywizja Piechoty"
-location = 1451
+	division = {
+	name = "3. Legion Dywizja"
+	location = 1451
 
-regiment = {
-type = infantry_brigade
-name = "76th Inf Brigade"
-historical_model = 5
-experience = 5
-is_reserve = yes
-}
+	regiment = {
+	type = infantry_brigade
+	name = "5. Infantry Brigade"
+	historical_model = 5
+	experience = 10
+	}
 
-regiment = {
-type = infantry_brigade
-name = "77th Inf Brigade"
-historical_model = 5
-experience = 5
-is_reserve = yes
-}
-}
-}
-}
+	regiment = {
+	type = infantry_brigade
+	name = "5. Infantry Brigade"
+	historical_model = 5
+	experience = 10
+	}
+			
+	regiment = {
+	type = artillery_brigade
+	name = "2. Artillery Brigade"
+	historical_model = 4
+	experience = 10
+	}
+	}
+	}
+	}
 
-army = {
-name = "4th Army"
-location = 1875
+	army = {
+	name = "4th Army"
+	location = 1875
 
-regiment = {
-type = hq_brigade
-name = "6th HQ Brigade"
-historical_model = 5
-experience = 1
-}
+	regiment = {
+	type = hq_brigade
+	name = "6th HQ Brigade"
+	historical_model = 5
+	experience = 1
+	}
 
-division = {
-name = "9. Dywizja Piechoty"
-location = 1638
+	division = {
+	name = "9. Dywizja Piechoty"
+	location = 1638
 
-regiment = {
-type = infantry_brigade
-name = "15th Inf Brigade"
-historical_model = 5
-experience = 5
-}
+	regiment = {
+	type = infantry_brigade
+	name = "17. Infantry Brigade"
+	historical_model = 5
+	experience = 5
+	}
 
-regiment = {
-type = infantry_brigade
-name = "16th Inf Brigade"
-historical_model = 5
-experience = 5
-}
+	regiment = {
+	type = infantry_brigade
+	name = "18. Infantry Brigade"
+	historical_model = 5
+	experience = 5
+	}
 
-regiment = {
-type = artillery_brigade
-name = "1st Art Brigade"
-historical_model = 5
-experience = 5
-}
-}
+	regiment = {
+	type = artillery_brigade
+	name = "9. Artillery Brigade"
+	historical_model = 5
+	experience = 5
+	}
+	}
 
-division = {
-name = "14. Dywizja Piechoty"
-location = 1639
+	division = {
+	name = "14. Dywizja Piechoty"
+	location = 1639
 
-regiment = {
-type = infantry_brigade
-name = "18th Inf Brigade"
-historical_model = 5
-experience = 5
-}
+	regiment = {
+	type = infantry_brigade
+	name = "27. Infantry Brigade"
+	historical_model = 5
+	experience = 5
+	}
 
-regiment = {
-type = infantry_brigade
-name = "19th Inf Brigade"
-historical_model = 5
-experience = 5
-}
-}
+	regiment = {
+	type = infantry_brigade
+	name = "28. Infantry Brigade"
+	historical_model = 5
+	experience = 5
+	}
+	}
 
-division = {
-name = "4. Cav Brigade"
-location = 1758
+	division = {
+	name = "4. Cavalry Brigade"
+	location = 1758
 
-regiment = {
-type = cavalry_brigade
-name = "7th Cav Brigade"
-historical_model = 5
-experience = 5
-is_reserve = yes
-}
-}
+	regiment = {
+	type = cavalry_brigade
+	name = "4. Cavalry Brigade"
+	historical_model = 5
+	experience = 5
+	is_reserve = yes
+	}
+	}
 
-division = {
-name = "6. Dywizja Piechoty"
-location = 1933
+	division = {
+	name = "6. Dywizja Piechoty"
+	location = 1933
 
-regiment = {
-type = infantry_brigade
-name = "62nd Inf Brigade"
-historical_model = 5
-experience = 5
-is_reserve = yes
-}
+	regiment = {
+	type = infantry_brigade
+	name = "11. Infantry Brigade"
+	historical_model = 5
+	experience = 5
+	is_reserve = yes
+	}
 
-regiment = {
-type = infantry_brigade
-name = "63rd Inf Brigade"
-historical_model = 5
-experience = 5
-is_reserve = yes
-}
-}
-}
-}
+	regiment = {
+	type = infantry_brigade
+	name = "12. Infantry Brigade"
+	historical_model = 5
+	experience = 5
+	is_reserve = yes
+	}
+	}
+	}
 }
