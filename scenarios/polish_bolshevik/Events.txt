@@ -1,6 +1,6 @@
 # =============================================  Monitor Polish Deployment Area  ====================================
 
-country_event = {											# One time event at start to Ensure US Neutrality and "Peace maker" - *** Concept doesn't seem to work
+country_event = {																# One time event at start to set variables
 
 		id = 100801
 
@@ -15,11 +15,8 @@ country_event = {											# One time event at start to Ensure US Neutrality an
 		option = {
 			name = "ACTION_NAME_GREAT"
 			ai_chance = { factor = 100 }
-#			POL = {set_country_flag = "Desperate_Polish_Defence"}				# Temporary for Testing
-			POL = {set_variable = { which = PDEPLOY  value = +1928 }} 			# Set Warsaw as default deployment province
-#			POL = {has_country_flag = "Desperate_Polish_Defence"}
-			POL = {set_variable = { which = PDEPLOY  value = +1924 }} 			# Set Poznan as the alternate deployment zone
-
+			POL = {set_variable = { which = PDEPLOY  value = +1928 }} 			# Set Warsaw as default deployment province (not working in OOB)
+			SOV = {set_variable = { which = Reserve_Count  value = 0 }}			# Track release of Russian reserves
 		}
 }
 
@@ -48,11 +45,11 @@ country_event = {
 			2576 = { create_revolt = 1 }
 			2641 = { create_revolt = 1 }
 			2642 = { create_revolt = 1 }
-			remove_brigade = "3rd Galacian Brigade"
-			remove_brigade = "2nd Galacian Brigade"
+			remove_brigade = "3-ya Galacian Brigada"
+			remove_brigade = "2-ya Galacian Brigada"
 
 			random_list = { 
-					25 = { remove_brigade = "1st Galacian Brigade"
+					25 = { remove_brigade = "1-ya Galacian Brigada"
 						   remove_brigade = "Galacian Corps HQ" } 
 					75 = {POL = { country_event = 100811 }}
 			} 
@@ -301,6 +298,7 @@ country_event = {
 			2388 = {any_neighbor_province = {controlled_by = SOV}}							# Sandomierz
 			2218 = {any_neighbor_province = {controlled_by = SOV}}							# Chelm
 			2445 = {any_neighbor_province = {controlled_by = SOV}}							# Krakow
+			not = {num_of_cities = 5}
 			}
 		}
 		
@@ -331,7 +329,7 @@ country_event = {
 			POL = {has_country_flag = "Desperate_Polish_Defence_1"}
 			POL = {not = {has_country_flag = "Desperate_Polish_Defence_2"}}
 			or = {
-			1928 = {any_neighbor_province = {controlled_by = SOV}}							# Bolsheviks approach Warsaw - 1st wave of Reinforcements
+			1928 = {any_neighbor_province = {controlled_by = SOV}}							# Bolsheviks approach Warsaw - 2nd wave of Reinforcements
 			1751 = {any_neighbor_province = {controlled_by = SOV}}							# Grodno
 			1812 = {any_neighbor_province = {controlled_by = SOV}}							# Slonim
 			1987 = {any_neighbor_province = {controlled_by = SOV}}							# Bereza      
@@ -369,7 +367,7 @@ country_event = {
 			POL = {has_country_flag = "Desperate_Polish_Defence_2"}
 			POL = {not = {has_country_flag = "Desperate_Polish_Defence_3"}}
 			or = {
-			1928 = {any_neighbor_province = {controlled_by = SOV}}							# Bolsheviks approach Warsaw - 1st wave of Reinforcements
+			1928 = {any_neighbor_province = {controlled_by = SOV}}							# Bolsheviks approach Warsaw - 3rd wave of Reinforcements
 			1751 = {any_neighbor_province = {controlled_by = SOV}}							# Grodno
 			1812 = {any_neighbor_province = {controlled_by = SOV}}							# Slonim
 			1987 = {any_neighbor_province = {controlled_by = SOV}}							# Bereza      
@@ -500,7 +498,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = {																			# Konarmiya arrive
 	
 	id = 200004
 	fire_only_once = yes
@@ -514,8 +512,8 @@ country_event = {
 	}
 
 	title = "Russian_Troops_Title"
-	desc = "Russian_Troops_Desc"
-	picture = "Russian_Troops"
+	desc = "Konarmiya_Arrive_Desc"
+	picture = "Konarmiya"
 
 	option = {
 		name = "ACTION_NAME_GREAT"
@@ -616,7 +614,7 @@ country_event = {
 	option = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
-		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_008.txt"}
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_007.txt"}
 	}
 }
 
@@ -646,18 +644,42 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = {											
 	
 	id = 200010
 	fire_only_once = yes
 	trigger = {
 		tag = SOV
-		date = 1920.8.15
+		date = 1920.8.7
 	}
 
 	mean_time_to_happen =  {
 		days = 1
 	}
+
+	title = "Russian_Troops_Title"
+	desc = "Russian_Troops_Desc"
+	picture = "Russian_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_008.txt"}
+	}
+}
+
+country_event = {																		# These reinforcements are either date driven OR emergency released
+	
+	id = 200011
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		date = 1920.8.15
+	}
+
+#	mean_time_to_happen =  { days = 1 }
 
 	title = "Russian_Troops_Title"
 	desc = "Russian_Troops_Desc"
@@ -670,18 +692,18 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = {																		# These reinforcements are either date driven OR emergency released
 	
 	id = 200012
+	
 	fire_only_once = yes
+	
 	trigger = {
 		tag = SOV
 		date = 1920.9.15
 	}
 
-	mean_time_to_happen =  {
-		days = 1
-	}
+#	mean_time_to_happen =  { days = 1 }
 
 	title = "Russian_Troops_Title"
 	desc = "Russian_Troops_Desc"
@@ -694,18 +716,18 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = {																		# These reinforcements are either date driven OR emergency released
 	
 	id = 200014
+	
 	fire_only_once = yes
+	
 	trigger = {
 		tag = SOV
 		date = 1920.10.1
 	}
 
-	mean_time_to_happen =  {
-		days = 1
-	}
+#	mean_time_to_happen =  { days = 1 }
 
 	title = "Russian_Troops_Title"
 	desc = "Russian_Troops_Desc"
@@ -718,7 +740,7 @@ country_event = {
 	}
 }
 
-###########################################  Russian LATVIAN Garrison  ################################################
+###########################################  Release Russian LATVIAN Garrison  ################################################
 
 
 country_event = {
@@ -772,7 +794,7 @@ country_event = {
 			or = {
 			1444 = {any_neighbor_province = {controlled_by = SOV}}							# Wilno - (Swieziany)
 			1630 = {any_neighbor_province = {controlled_by = SOV}}							# Suwali      
-			1751 = {any_neighbor_province = {controlled_by = SOV}}							# Grodno?
+			1751 = {any_neighbor_province = {controlled_by = SOV}}							# Grodno
 			}
 		}
 		
@@ -813,6 +835,127 @@ country_event = {													# Polish activate their Lithuanian border garrison
 }
 
 
+
+#########################################  WITHDRAW KONARMIYA TO FIGHT WHITE RUSSIANS  #######################################
+
+country_event = {
+
+		id = 200034																			
+
+		major = yes
+		
+		trigger = {
+			tag = SOV
+			date = 1920.8.22
+		}
+		
+		fire_only_once = yes
+		
+		title = "Russian_Withdraw_Title"								# Warning of Withdrawl of Konarmiya about 1 month later
+		desc = "Russian_Withdraw_Desc"
+		picture = "Konarmiya"
+
+		option = {
+			name = "ACTION_NAME_DAMN"
+			ai_chance = { factor = 100 }	
+			SOV = { country_event = 200036 }			
+			}
+}
+
+country_event = {														# Actual withdrawl
+	
+		id = 200036
+		fire_only_once = yes
+		is_triggered_only = yes
+	
+		mean_time_to_happen =  { days = 21 }
+		
+		title = "Russian_Withdraw_Title"								
+		desc = "Russian_Withdraw_Now_Desc"
+		picture = "Konarmiya"
+
+
+		option = {
+			name = "ACTION_NAME_DAMN"
+			ai_chance = { factor = 100 }	
+			remove_brigade = "4-ya Kavaleriiskaya Diviziya"
+			remove_brigade = "4-ya Kavaleriiskaya 1-ya brigada"
+			remove_brigade = "4-ya Kavaleriiskaya 2-ya brigada"
+			remove_brigade = "4-ya Kavaleriiskaya 3-ya brigada"
+			remove_brigade = "4-ya Kavaleriiskaya 4-ya brigada"
+			remove_brigade = "4-ya Kavaleriiskaya 5-ya brigada"
+			remove_brigade = "6-ya Kavaleriiskaya Diviziya"
+			remove_brigade = "6-ya Kavaleriiskaya 1-ya brigada"
+			remove_brigade = "6-ya Kavaleriiskaya 2-ya brigada"
+			remove_brigade = "6-ya Kavaleriiskaya 3-ya brigada"
+			remove_brigade = "6-ya Kavaleriiskaya 4-ya brigada"
+			remove_brigade = "6-ya Kavaleriiskaya 5-ya brigada"
+			remove_brigade = "11-ya Kavaleriiskaya Diviziya"
+			remove_brigade = "11-ya Kavaleriiskaya 1-ya brigada"
+			remove_brigade = "11-ya Kavaleriiskaya 2-ya brigada"
+			remove_brigade = "11-ya Kavaleriiskaya 3-ya brigada"
+			remove_brigade = "11-ya Kavaleriiskaya 4-ya brigada"
+			remove_brigade = "11-ya Kavaleriiskaya 5-ya brigada"
+			remove_brigade = "14-ya Kavaleriiskaya Diviziya"
+			remove_brigade = "14-ya Kavaleriiskaya 1-ya brigada"
+			remove_brigade = "14-ya Kavaleriiskaya 2-ya brigada"
+			remove_brigade = "14-ya Kavaleriiskaya 3-ya brigada"
+			remove_brigade = "14-ya Kavaleriiskaya 4-ya brigada"
+			remove_brigade = "14-ya Kavaleriiskaya 5-ya brigada"
+			remove_brigade = "SK Kavaleriiskaya brigada"
+			remove_brigade = "21/22 Kavaleriiskaya"
+			remove_brigade = "Moskva Strelkovaya brigada"
+			remove_brigade = "1-ya Kavaleriiskaya Armiya"
+		}
+}
+
 ##############################################  BOLSHEVIK DESPERATE DEFENSE  #################################################
 
-#			not = {num_of_cities = 5}
+
+country_event = {																	# This is triggered by proximity to Eastern edge
+
+		id = 200040
+
+		major = yes
+		
+		trigger = {
+			tag = SOV
+			not = {SOV = {check_variable = { which = Reserve_Count value = 3 }}}	# All reserves released if reserve count = 3 
+			or = {
+			1534 = {controlled_by = POL}							# Vitsyebsk	   Captured
+			1536 = {any_neighbor_province = {controlled_by = POL}}	# Smolensk     and line of provinces south
+			1816 = {any_neighbor_province = {controlled_by = POL}}	# Krychaw	
+			1761 = {any_neighbor_province = {controlled_by = POL}}	# Novozybkopv			
+			2049 = {any_neighbor_province = {controlled_by = POL}}	# Chernihiv	
+			2339 = {any_neighbor_province = {controlled_by = POL}}	# Bobrovytsya					
+			2644 = {any_neighbor_province = {controlled_by = POL}}	# Horodysche	
+			2776 = {any_neighbor_province = {controlled_by = POL}}	# Mala Vyska
+#			not = {num_of_cities = 2}			
+			}
+		}
+		
+		mean_time_to_happen =  { days = 5 }
+		
+		title = "Desperate_Russian_Troops_Title"
+		desc = "Desperate_Russian_Troops_Desc"
+		picture = "Russian_Troops"
+
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }
+			SOV = { change_variable = { which = Reserve_Count value = +1 } }
+		
+			random_country = {
+				limit = { SOV = {check_variable = { which = Reserve_Count value = 1 }} }
+				SOV = { country_event = 200014 }
+			} 
+			random_country = {
+				limit = { SOV = {check_variable = { which = Reserve_Count value = 2 }} }
+				SOV = { country_event = 200012 }
+			}
+			random_country = {
+				limit = { SOV = {check_variable = { which = Reserve_Count value = 3 }} }
+				SOV = { country_event = 200011 }
+			}
+		}			
+}
