@@ -16,7 +16,7 @@ country_event = {																# One time event at start to set variables
 			name = "ACTION_NAME_GREAT"
 			ai_chance = { factor = 100 }
 			POL = {set_variable = { which = PDEPLOY  value = +1928 }} 			# Set Warsaw as default deployment province (not working in OOB)
-			SOV = {set_variable = { which = Reserve_Count  value = 0 }}			# Track release of Russian reserves
+			SOV = {set_variable = { which = Reserve_Count  value = 1 }}			# Track release of Russian reserves
 		}
 }
 
@@ -618,7 +618,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = {																			# Reinforcements released from the Latvian Garrison
 	
 	id = 200009
 	fire_only_once = yes
@@ -640,7 +640,7 @@ country_event = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
  	    load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_GAR_1.txt"
-		SOV = {set_country_flag = Latvian_Garrison_Released}
+		SOV = {set_country_flag = Latvian_Garrison_1_Released}
 	}
 }
 
@@ -674,9 +674,10 @@ country_event = {																		# These reinforcements are either date driven
 	
 	fire_only_once = yes
 	
-	trigger = {
-		tag = SOV
-		date = 1920.8.15
+	trigger = { 
+			tag = SOV
+			date = 1920.8.18
+			not = {SOV = {has_country_flag = Emergency_3_Released}}
 	}
 
 #	mean_time_to_happen =  { days = 1 }
@@ -687,8 +688,9 @@ country_event = {																		# These reinforcements are either date driven
 
 	option = {
 		name = "ACTION_NAME_GREAT"
-		ai_chance = { factor = 100 }	
+		ai_chance = { factor = 100 }
 		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_009.txt"}
+		SOV = {set_country_flag = Emergency_3_Released}
 	}
 }
 
@@ -700,7 +702,8 @@ country_event = {																		# These reinforcements are either date driven
 	
 	trigger = {
 		tag = SOV
-		date = 1920.9.15
+		date = 1920.9.11
+		not = {SOV = {has_country_flag = Emergency_2_Released}}
 	}
 
 #	mean_time_to_happen =  { days = 1 }
@@ -713,6 +716,7 @@ country_event = {																		# These reinforcements are either date driven
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_010.txt"}
+		SOV = {set_country_flag = Emergency_2_Released}
 	}
 }
 
@@ -725,6 +729,7 @@ country_event = {																		# These reinforcements are either date driven
 	trigger = {
 		tag = SOV
 		date = 1920.10.1
+		not = {SOV = {has_country_flag = Emergency_1_Released}}
 	}
 
 #	mean_time_to_happen =  { days = 1 }
@@ -737,6 +742,7 @@ country_event = {																		# These reinforcements are either date driven
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_011.txt"}
+		SOV = {set_country_flag = Emergency_1_Released}
 	}
 }
 
@@ -773,10 +779,13 @@ country_event = {
 	option = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
-		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_GAR_2.txt"}     
-		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_GAR_1.txt"}
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_GAR_2.txt"} 
+		random_country = {
+				limit = { not = {SOV = {has_country_flag = Latvian_Garrison_1_Released}}}
+				SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_GAR_1.txt"}
+		}		
 		SOV = {set_country_flag = Latvian_Garrison_Released}
-		}
+	}
 }
 
 
@@ -853,7 +862,7 @@ country_event = {
 		
 		title = "Russian_Withdraw_Title"								# Warning of Withdrawl of Konarmiya about 1 month later
 		desc = "Russian_Withdraw_Desc"
-		picture = "Konarmiya"
+		picture = "lenin"
 
 		option = {
 			name = "ACTION_NAME_DAMN"
@@ -873,7 +882,6 @@ country_event = {														# Actual withdrawl
 		title = "Russian_Withdraw_Title"								
 		desc = "Russian_Withdraw_Now_Desc"
 		picture = "Konarmiya"
-
 
 		option = {
 			name = "ACTION_NAME_DAMN"
@@ -920,17 +928,20 @@ country_event = {																	# This is triggered by proximity to Eastern ed
 		
 		trigger = {
 			tag = SOV
-			not = {SOV = {check_variable = { which = Reserve_Count value = 3 }}}	# All reserves released if reserve count = 3 
 			or = {
-			1534 = {controlled_by = POL}							# Vitsyebsk	   Captured
-			1536 = {any_neighbor_province = {controlled_by = POL}}	# Smolensk     and line of provinces south
+			not = {SOV = {has_country_flag = Emergency_1_Released}}					# Check there are reserves still available
+			not = {SOV = {has_country_flag = Emergency_2_Released}}
+			not = {SOV = {has_country_flag = Emergency_3_Released}}
+			}
+			or = {																	# Occupied provinces cause emergency
+			1534 = {controlled_by = POL}							# Vitsyebsk	   	Captured
+			1536 = {any_neighbor_province = {controlled_by = POL}}	# Smolensk     	and line of provinces south
 			1816 = {any_neighbor_province = {controlled_by = POL}}	# Krychaw	
 			1761 = {any_neighbor_province = {controlled_by = POL}}	# Novozybkopv			
 			2049 = {any_neighbor_province = {controlled_by = POL}}	# Chernihiv	
 			2339 = {any_neighbor_province = {controlled_by = POL}}	# Bobrovytsya					
 			2644 = {any_neighbor_province = {controlled_by = POL}}	# Horodysche	
 			2776 = {any_neighbor_province = {controlled_by = POL}}	# Mala Vyska
-#			not = {num_of_cities = 2}			
 			}
 		}
 		
@@ -943,19 +954,26 @@ country_event = {																	# This is triggered by proximity to Eastern ed
 		option = {
 			name = "ACTION_NAME_GREAT"
 			ai_chance = { factor = 100 }
-			SOV = { change_variable = { which = Reserve_Count value = +1 } }
-		
 			random_country = {
-				limit = { SOV = {check_variable = { which = Reserve_Count value = 1 }} }
-				SOV = { country_event = 200014 }
+				limit = { not = {SOV = {has_country_flag = Emergency_1_Released}}
+								 SOV = {has_country_flag = Emergency_2_Released}
+								 SOV = {has_country_flag = Emergency_3_Released}
+						}
+				SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_009.txt"}
+				SOV = {set_country_flag = Emergency_1_Released}
 			} 
 			random_country = {
-				limit = { SOV = {check_variable = { which = Reserve_Count value = 2 }} }
-				SOV = { country_event = 200012 }
+				limit = { not = {SOV = {has_country_flag = Emergency_2_Released}}
+								 SOV = {has_country_flag = Emergency_3_Released}
+						}
+				SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_010.txt"}
+				SOV = {set_country_flag = Emergency_2_Released}
 			}
 			random_country = {
-				limit = { SOV = {check_variable = { which = Reserve_Count value = 3 }} }
-				SOV = { country_event = 200011 }
+				limit = { not = {SOV = {has_country_flag = Emergency_3_Released}}
+						}
+				SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_011.txt"}
+				SOV = {set_country_flag = Emergency_3_Released}
 			}
 		}			
 }
