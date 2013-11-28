@@ -1,92 +1,91 @@
 ##############
 # BOLSHEVIKS
 ##############
-axis = {
-	SO_Axis_1 = {
+comintern = {
+	PB_Comintern_1 = {
 		trigger = {
-			2613 = { 
-				controller = {
-					faction = axis
-				}
+			1928 = { 																# Warsaw
+				controller = { faction = comintern }
 			}
 					}
 		primary = yes
 	}
-	SO_Axis_2 = {
+	PB_Comintern_2 = {
 		trigger = {
-			2194 = {
-				controller = {
-					faction = axis
+			1986 = {																# Brest Litovsk
+				controller = { faction = comintern }
 				}
 			}
-					}
 		primary = yes
 	}
-	SO_Axis_3 = {
+	PB_Comintern_3 = {
 		trigger = {
-			2422 = {
-				controller = {
-					faction = axis
+			1694 = {																# Minsk
+				controller = { faction = comintern }
 				}
 			}
-					}
 		primary = yes
 	}
-	SO_Axis_4 = {
+	PB_Comintern_4 = {
 		trigger = {
-			2870 = {
-				controller = {
-					faction = axis
+			2509 = {																# Lwow
+				controller = { faction = comintern }
 				}
 			}
-					}
 		primary = yes
 	}
+#	PB_Comintern_5 = {
+#		trigger = {
+#			2223 = {																# Kiev
+#				controller = { faction = comintern }
+#				}
+#			}
+#		primary = yes
+#	}
 }
 
 ##############
 # POLAND
 ##############
 allies = {
-	SO_Allies_1 = {
+	PB_POL_1 = {
 		trigger = {
-			2311 = {
-				controller = {
-					faction = allies
-				}
+			1928 = {																# Warsaw
+				controller = { POL }
 			}
-					}
+		}
 		primary = yes
 	}
-	SO_Allies_2 = {
+#	PB_POL_2 = {
+#		trigger = {
+#			1986 = {																# Brest Litovsk
+#				controller = { POL }
+#				}
+#		}
+#		primary = yes
+#	}
+	PB_POL_3 = {
 		trigger = {
-			2687 = {
-				controller = {
-					faction = allies
+			1694 = {																# Minsk
+				controller = { POL }
 				}
-			}
-					}
+		}
 		primary = yes
 	}
-	SO_Allies_3 = {
+	PB_POL_4 = {
 		trigger = {
-			2952 = {
-				controller = {
-					faction = allies
+			2509 = {																# Lwow
+				controller = { POL }
 				}
-			}
-					}
+		}
 		primary = yes
 	}
-	SO_Allies_4 = {
+		PB_POL_5 = {
 		trigger = {
-			2142 = {
-				controller = {
-					faction = allies
+			2223 = {																# Kiev
+				controller = { POL }
 				}
-			}
-					}
+		}
 		primary = yes
 	}
-	
 }

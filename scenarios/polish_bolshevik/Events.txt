@@ -1,12 +1,10 @@
-# =============================================  Monitor Polish Deployment Area  ====================================
+# =============================================  Ongoing Monitors  ====================================
 
 country_event = {																# One time event at start to set variables
 
 		id = 100801
 
-		trigger = {
-			tag = LIT										
-		}
+		trigger = {	tag = LIT }
 
 		title = "Polish_Troops_Title"
 		desc = "Polish_Troops_Desc"
@@ -16,7 +14,7 @@ country_event = {																# One time event at start to set variables
 			name = "ACTION_NAME_GREAT"
 			ai_chance = { factor = 100 }
 			POL = {set_variable = { which = PDEPLOY  value = +1928 }} 			# Set Warsaw as default deployment province (not working in OOB)
-			SOV = {set_variable = { which = Reserve_Count  value = 1 }}			# Track release of Russian reserves
+			SOV = {change_variable =  { which = SovDelay value = +1 }}
 		}
 }
 
@@ -292,12 +290,16 @@ country_event = {
 			POL = {not = {has_country_flag = "Desperate_Polish_Defence_1"}}
 			or = {
 			1928 = {any_neighbor_province = {controlled_by = SOV}}							# Bolsheviks approach Warsaw - 1st wave of Reinforcements
-			1751 = {any_neighbor_province = {controlled_by = SOV}}							# Grodno
-			1812 = {any_neighbor_province = {controlled_by = SOV}}							# Slonim
-			1987 = {any_neighbor_province = {controlled_by = SOV}}							# Bereza      
-			2388 = {any_neighbor_province = {controlled_by = SOV}}							# Sandomierz
-			2218 = {any_neighbor_province = {controlled_by = SOV}}							# Chelm
-			2445 = {any_neighbor_province = {controlled_by = SOV}}							# Krakow
+			1810 = {any_neighbor_province = {controlled_by = SOV}}							# Bialystok     - This is a closer trigger line
+			2273 = {any_neighbor_province = {controlled_by = SOV}}							# Zwolen
+			1986 = {any_neighbor_province = {controlled_by = SOV}}							# Brzesc-Litewski
+			2568 = {any_neighbor_province = {controlled_by = SOV}}							# Jedrzejow
+#			1751 = {any_neighbor_province = {controlled_by = SOV}}							# Grodno		- This trigger line is further away from Warsaw
+#			1812 = {any_neighbor_province = {controlled_by = SOV}}							# Slonim
+#			1987 = {any_neighbor_province = {controlled_by = SOV}}							# Bereza      
+#			2388 = {any_neighbor_province = {controlled_by = SOV}}							# Sandomierz
+#			2218 = {any_neighbor_province = {controlled_by = SOV}}							# Chelm
+#			2445 = {any_neighbor_province = {controlled_by = SOV}}							# Krakow
 			not = {num_of_cities = 5}
 			}
 		}
@@ -330,12 +332,16 @@ country_event = {
 			POL = {not = {has_country_flag = "Desperate_Polish_Defence_2"}}
 			or = {
 			1928 = {any_neighbor_province = {controlled_by = SOV}}							# Bolsheviks approach Warsaw - 2nd wave of Reinforcements
-			1751 = {any_neighbor_province = {controlled_by = SOV}}							# Grodno
-			1812 = {any_neighbor_province = {controlled_by = SOV}}							# Slonim
-			1987 = {any_neighbor_province = {controlled_by = SOV}}							# Bereza      
-			2388 = {any_neighbor_province = {controlled_by = SOV}}							# Sandomierz
-			2218 = {any_neighbor_province = {controlled_by = SOV}}							# Chelm
-			2445 = {any_neighbor_province = {controlled_by = SOV}}							# Krakow
+			1810 = {any_neighbor_province = {controlled_by = SOV}}							# Bialystok     - This is a closer trigger line
+			2273 = {any_neighbor_province = {controlled_by = SOV}}							# Zwolen
+			1986 = {any_neighbor_province = {controlled_by = SOV}}							# Brzesc-Litewski
+			2568 = {any_neighbor_province = {controlled_by = SOV}}							# Jedrzejow
+#			1751 = {any_neighbor_province = {controlled_by = SOV}}							# Grodno		- This trigger line is further away from Warsaw
+#			1812 = {any_neighbor_province = {controlled_by = SOV}}							# Slonim
+#			1987 = {any_neighbor_province = {controlled_by = SOV}}							# Bereza      
+#			2388 = {any_neighbor_province = {controlled_by = SOV}}							# Sandomierz
+#			2218 = {any_neighbor_province = {controlled_by = SOV}}							# Chelm
+#			2445 = {any_neighbor_province = {controlled_by = SOV}}							# Krakow
 			}
 		}
 		
@@ -368,12 +374,16 @@ country_event = {
 			POL = {not = {has_country_flag = "Desperate_Polish_Defence_3"}}
 			or = {
 			1928 = {any_neighbor_province = {controlled_by = SOV}}							# Bolsheviks approach Warsaw - 3rd wave of Reinforcements
-			1751 = {any_neighbor_province = {controlled_by = SOV}}							# Grodno
-			1812 = {any_neighbor_province = {controlled_by = SOV}}							# Slonim
-			1987 = {any_neighbor_province = {controlled_by = SOV}}							# Bereza      
-			2388 = {any_neighbor_province = {controlled_by = SOV}}							# Sandomierz
-			2218 = {any_neighbor_province = {controlled_by = SOV}}							# Chelm
-			2445 = {any_neighbor_province = {controlled_by = SOV}}							# Krakow
+			1810 = {any_neighbor_province = {controlled_by = SOV}}							# Bialystok     - This is a closer trigger line
+			2273 = {any_neighbor_province = {controlled_by = SOV}}							# Zwolen
+			1986 = {any_neighbor_province = {controlled_by = SOV}}							# Brzesc-Litewski
+			2568 = {any_neighbor_province = {controlled_by = SOV}}							# Jedrzejow
+#			1751 = {any_neighbor_province = {controlled_by = SOV}}							# Grodno		- This trigger line is further away from Warsaw
+#			1812 = {any_neighbor_province = {controlled_by = SOV}}							# Slonim
+#			1987 = {any_neighbor_province = {controlled_by = SOV}}							# Bereza      
+#			2388 = {any_neighbor_province = {controlled_by = SOV}}							# Sandomierz
+#			2218 = {any_neighbor_province = {controlled_by = SOV}}							# Chelm
+#			2445 = {any_neighbor_province = {controlled_by = SOV}}							# Krakow
 			}
 		}
 				
@@ -855,7 +865,7 @@ country_event = {
 		
 		trigger = {
 			tag = SOV
-			date = 1920.8.22
+			date = 1920.9.6
 		}
 		
 		fire_only_once = yes
@@ -866,18 +876,27 @@ country_event = {
 
 		option = {
 			name = "ACTION_NAME_DAMN"
-			ai_chance = { factor = 100 }	
-			SOV = { country_event = 200036 }			
-			}
+			ai_chance = { factor = 100 }
+			SOV = {set_variable = { which = SovDelay  value = 1 }}		# Delay Counter	incremented at start of Events file
+			SOV = {set_country_flag = "Konarmiya_Withdrawl"}			
+		}
 }
 
 country_event = {														# Actual withdrawl
 	
 		id = 200036
+		
+		major = yes
+		
+		trigger = {
+			tag = SOV
+			SOV = {has_country_flag = "Konarmiya_Withdrawl"}
+			SOV = {check_variable = { which = SovDelay  value = 7 }}	
+		}
+		
 		fire_only_once = yes
-		is_triggered_only = yes
 	
-		mean_time_to_happen =  { days = 21 }
+#		mean_time_to_happen =  { days = 21 }
 		
 		title = "Russian_Withdraw_Title"								
 		desc = "Russian_Withdraw_Now_Desc"
