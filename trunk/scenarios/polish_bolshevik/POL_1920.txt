@@ -1,6 +1,7 @@
 theatre = {
 name = "Warszawa HQ"
 location = 1928
+leader=60242
 
 	regiment = {
 	type = hq_brigade
@@ -38,12 +39,14 @@ location = 1928
 	division = {
 	name = "17. Dywizja Piechorty"
 	location = 1632
+	leader=60288
 
 	regiment = {
 	type = infantry_brigade
 	name = "33. Infantry Brigade"
 	historical_model = 5
 	experience = 5
+	is_reserve = yes
 	}
 
 	regiment = {
@@ -51,12 +54,14 @@ location = 1928
 	name = "34. Infantry Brigade"
 	historical_model = 5
 	experience = 5
+	is_reserve = yes
 	}
 	}
 	
 	division = {
 	name = "2. Lituanian-Byelorussian Dywizja Piechorty"
 	location = 1532
+	leader=60217
 
 	regiment = {
 	type = infantry_brigade
@@ -78,6 +83,7 @@ location = 1928
 	division = {
 	name = "41. Lithuanian-Byelorussian"
 	location = 1630
+	leader=60225
 
 	regiment = {
 	type = infantry_brigade
@@ -91,6 +97,7 @@ location = 1928
 	division = {
 	name = "10. Dywizja Piechoty"
 	location = 1751
+	leader=60289
 
 	regiment = {
 	type = infantry_brigade
@@ -112,6 +119,7 @@ location = 1928
 	division = {
 	name = "16. Pomorska Dywizja Piechoty"
 	location = 1928
+	leader=60287
 
 	regiment = {
 	type = infantry_brigade
@@ -152,6 +160,7 @@ location = 1928
 army = {
 name = "3rd Army"
 location = 2391
+leader=60092
 
 regiment = {
 type = hq_brigade
@@ -163,6 +172,7 @@ experience = 1
 	corps = {
 	name = "1st Corps"
 	location = 2335
+	leader=60225
 
 	regiment = {
 	type = hq_brigade
@@ -174,6 +184,7 @@ experience = 1
 	division = {
 	name = "7. Dywizja Piechoty"
 	location = 2336
+	leader=60253
 
 	regiment = {
 	type = infantry_brigade
@@ -200,6 +211,7 @@ experience = 1
 	division = {
 	name = "13. Dywizja Piechoty"
 	location = 2222
+	leader=60160
 
 	regiment = {
 	type = infantry_brigade
@@ -226,6 +238,7 @@ experience = 1
 	division = {
 	name = "15. Greater Poland Dywizja Piechoty"
 	location = 2336
+	leader=60218
 
 	regiment = {
 	type = infantry_brigade
@@ -252,6 +265,7 @@ experience = 1
 	division = {
 	name = "1. Cavalry Dywizja"
 	location = 2278
+	leader=60116
 
 	regiment = {
 	type = cavalry_brigade
@@ -273,6 +287,7 @@ experience = 1
 	division = {
 	name = "3. Cavalry Brigade & Motorised Rgts"
 	location = 2278
+	leader=975056
 
 	regiment = {
 	type = cavalry_brigade
@@ -305,6 +320,7 @@ experience = 1
 	division = {
 	name = "1. Legion Infantry Dywizja"
 	location = 2708
+	leader=60053
 
 	regiment = {
 	type = infantry_brigade
@@ -345,6 +361,7 @@ experience = 1
 	corps = {
 	name = "Polesie Group"
 	location = 1990
+	leader=60124
 
 	regiment = {
 	type = hq_brigade
@@ -382,6 +399,7 @@ experience = 1
 	division = {
 	name = "Rybak's Mountain Brigade"
 	location = 1938
+	leader=60247
 
 	regiment = {
 	type = bergsjaeger_brigade
@@ -410,6 +428,7 @@ experience = 1
 	army = {
 	name = "6th Army"
 	location = 2639
+	leader=60215
 
 	regiment = {
 	type = hq_brigade
@@ -421,6 +440,7 @@ experience = 1
 	division = {
 	name = "18.  Dywizja Piechoty"
 	location = 2452
+	leader=60225
 
 	regiment = {
 	type = infantry_brigade
@@ -485,6 +505,7 @@ experience = 1
 	expeditionary_owner = UKR
 	name = "1. Ukrayina Armiya"
 	location = 2770
+	leader=545095
 
 	regiment = {
 	type = hq_brigade
@@ -539,6 +560,7 @@ experience = 1
 armygroup = {
 name = "Northern Front"
 location = 1694
+leader=60129
 
 regiment = {
 type = hq_brigade
@@ -550,6 +572,7 @@ experience = 5
 	army = {
 	name = "7th Army"
 	location = 1402
+	leader=60226
 
 	regiment = {
 	type = hq_brigade
@@ -618,6 +641,7 @@ experience = 5
 	division = {
 	name = "8. Dywizja Piechoty"
 	location = 1491
+	leader=60014
 
 	regiment = {
 	type = infantry_brigade
@@ -639,6 +663,7 @@ experience = 5
 	corps = {
 	name = "1st Polish Legion"
 	location = 1146
+	leader=60245
 
 	regiment = {
 	type = hq_brigade
@@ -650,6 +675,7 @@ experience = 5
 	division = {
 	name = "2. Legion Dywizja"
 	location = 1447
+	leader=60235
 
 	regiment = {
 	type = infantry_brigade
@@ -688,6 +714,7 @@ experience = 5
 	division = {
 	name = "3. Legion Dywizja"
 	location = 1451
+	leader=60229
 
 	regiment = {
 	type = infantry_brigade
@@ -716,6 +743,7 @@ experience = 5
 	army = {
 	name = "4th Army"
 	location = 1875
+	leader=60115
 
 	regiment = {
 	type = hq_brigade
@@ -727,6 +755,7 @@ experience = 5
 	division = {
 	name = "9. Dywizja Piechoty"
 	location = 1638
+	leader=60150
 
 	regiment = {
 	type = infantry_brigade
@@ -753,6 +782,7 @@ experience = 5
 	division = {
 	name = "14. Dywizja Piechoty"
 	location = 1639
+	leader=60286
 
 	regiment = {
 	type = infantry_brigade
@@ -785,6 +815,7 @@ experience = 5
 	division = {
 	name = "6. Dywizja Piechoty"
 	location = 1933
+	leader=60241
 
 	regiment = {
 	type = infantry_brigade
@@ -803,4 +834,5 @@ experience = 5
 	}
 	}
 	}
+
 }
