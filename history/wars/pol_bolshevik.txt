@@ -1,6 +1,6 @@
 name = "Polish-Bolshevik War"
 
-1920.4.25 = {
+1920.4.24 = {
 	add_attacker = POL
 	add_attacker = UKR
 	add_defender = SOV
@@ -8,6 +8,11 @@ name = "Polish-Bolshevik War"
 	{
 		casus_belli=aquire_all_cores
 		actor="POL"
+		receiver="SOV"
+	}
+	{
+		casus_belli=aquire_all_cores
+		actor="UKR"
 		receiver="SOV"
 	}
 }

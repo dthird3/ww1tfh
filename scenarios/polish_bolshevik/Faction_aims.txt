@@ -4,44 +4,36 @@
 comintern = {
 	PB_Comintern_1 = {
 		trigger = {
-			1928 = { 																# Warsaw
-				controller = { faction = comintern }
-			}
-					}
+			1928 = { controller = { faction = comintern } }							# Warsaw
+			date = 1920.10.01		
+		}
 		primary = yes
 	}
 	PB_Comintern_2 = {
 		trigger = {
-			1986 = {																# Brest Litovsk
-				controller = { faction = comintern }
-				}
-			}
+			1986 = { controller = { faction = comintern } }							# Brest Litovsk
+		}
 		primary = yes
 	}
 	PB_Comintern_3 = {
 		trigger = {
-			1694 = {																# Minsk
-				controller = { faction = comintern }
-				}
-			}
+			1694 = { controller = { faction = comintern } }							# Minsk
+		}
 		primary = yes
 	}
-	PB_Comintern_4 = {
-		trigger = {
-			2509 = {																# Lwow
-				controller = { faction = comintern }
-				}
-			}
-		primary = yes
-	}
-#	PB_Comintern_5 = {
+#	PB_Comintern_4 = {
 #		trigger = {
-#			2223 = {																# Kiev
-#				controller = { faction = comintern }
-#				}
-#			}
+#			2509 = { controller = { faction = comintern } }							# Lwow
+#		}
 #		primary = yes
 #	}
+	PB_Comintern_5 = {
+		trigger = {
+			2223 = { controller = { faction = comintern } }							# Kiev
+			date = 1920.10.01
+		}
+		primary = yes
+	}
 }
 
 ##############
@@ -50,41 +42,32 @@ comintern = {
 allies = {
 	PB_POL_1 = {
 		trigger = {
-			1928 = {																# Warsaw
-				controller = { POL }
-			}
+			1928 = { controller = { faction = allies } }											# Warsaw
+			date = 1920.10.01																
 		}
 		primary = yes
 	}
-#	PB_POL_2 = {
+	PB_POL_2 = {
+		trigger = {
+			1986 = { controller = { faction = allies } }											# Brest Litovsk
+		}
+		primary = yes
+	}
+#	PB_POL_3 = {
 #		trigger = {
-#			1986 = {																# Brest Litovsk
-#				controller = { POL }
-#				}
+#			1694 = { controller = { faction = allies } }											# Minsk
 #		}
 #		primary = yes
 #	}
-	PB_POL_3 = {
-		trigger = {
-			1694 = {																# Minsk
-				controller = { POL }
-				}
-		}
-		primary = yes
-	}
 	PB_POL_4 = {
 		trigger = {
-			2509 = {																# Lwow
-				controller = { POL }
-				}
+			2509 = { controller = { faction = allies } }											# Lwow
 		}
 		primary = yes
 	}
 		PB_POL_5 = {
 		trigger = {
-			2223 = {																# Kiev
-				controller = { POL }
-				}
+			2223 = { controller = { faction = allies } }											# Kiev
 		}
 		primary = yes
 	}
