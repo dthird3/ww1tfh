@@ -59,7 +59,6 @@ country_event = {
 }
 
 
-
 #########################################  Scheduled POLISH Reinforcements  ############################################
 
 country_event = {
@@ -729,7 +728,7 @@ country_event = {
 		fire_only_once = yes
 
 	title = "Latvian_Garrison_Title"
-	desc = "Russian_Troops_Desc"
+	desc = "Latvian_Garrison_Desc"
 	picture = "Russian_Troops"
 
 	option = {
@@ -759,7 +758,6 @@ country_event = {
 			or = {
 			1444 = {any_neighbor_province = {controlled_by = SOV}}							# Wilno - (Swieziany)
 			1630 = {any_neighbor_province = {controlled_by = SOV}}							# Suwali      
-#			1751 = {any_neighbor_province = {controlled_by = SOV}}							# Grodno
 			}
 		}
 		
@@ -970,3 +968,131 @@ country_event = {
 		}
 }
 
+
+########################################################  Control of Ukrainian Troops and Reinforcements ###################################################	
+											# Must control both Kiev and Lwow for Ukrainian Army to switch sides
+country_event = {
+
+		id = 100018	
+
+		major = yes
+		
+		trigger = {
+			tag = SOV
+			SOV = { not = {has_country_flag = "bolshevik_ukraine"} }
+			2223 = {controlled_by = SOV}													# Kiev
+			2509 = {controlled_by = SOV}													# Lwow
+			}
+		
+		mean_time_to_happen =  { days = 1 }
+
+		title = "Ukraine_Control_Title"
+		desc = "Ukraine_Control_Desc"
+		picture = "Russians_in_Kiev"
+
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }	
+			POL = {clr_country_flag = "polish_ukraine"}
+			POL = {remove_brigade = "1. Ukrayina Armiya"}
+			POL = {remove_brigade = "6. Ukrayina Strelkovaya Diviziya"}
+			POL = {remove_brigade = "11. Ukrayina Strelkovaya Brigada"}
+			POL = {remove_brigade = "12. Ukrayina Strelkovaya Brigada"}
+			POL = {remove_brigade = "2. Ukrayina Strelkovaya Diviziya"}
+			POL = {remove_brigade = "3. Ukrayina Strelkovaya Brigada"}
+			POL = {remove_brigade = "4. Ukrayina Strelkovaya Brigada"}
+			POL = {remove_brigade = "Ukrayina Strelkovaya Brigada"}
+			POL = {remove_brigade = "Ukrayina Strelkovaya Brigada"}
+			SOV = {set_country_flag = "bolshevik_ukraine"}
+			SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/UKR_001.txt"} 
+			}
+}
+
+country_event = {																			# Ukrainian reinforcements if Russian controlled
+
+		id = 100020
+
+		major = yes
+		
+		trigger = {
+			tag = SOV
+			SOV = {has_country_flag = "bolshevik_ukraine"}
+			2223 = {controlled_by = SOV}													# Kiev
+			date = 1920.5.1
+			}
+		
+		mean_time_to_happen = { months = 2 }
+
+		title = "Russian_Troops_Title"
+		desc = "Ukraine_Troops_Desc"
+		picture = "Ukraine-Galacian"
+
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }	
+			SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/UKR_002.txt"}
+			}
+}
+
+country_event = {
+
+		id = 100022
+
+		major = yes
+		
+		trigger = {
+			tag = POL
+			POL = { not = {has_country_flag = "polish_ukraine"} }
+			2223 = {controlled_by = POL}													# Kiev
+			2509 = {controlled_by = POL}													# Lwow
+			}
+		
+		mean_time_to_happen =  { days = 3 }
+
+		title = "Ukraine_Control_Title"
+		desc = "Ukraine_Control_Desc"
+		picture = "Ukraine-Galacian"
+
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }	
+			SOV = {clr_country_flag = "bolshevik_ukraine"}
+			SOV = {remove_brigade = "1. Ukrayina Armiya"}
+			SOV = {remove_brigade = "6. Ukrayina Strelkovaya Diviziya"}
+			SOV = {remove_brigade = "11. Ukrayina Strelkovaya Brigada"}
+			SOV = {remove_brigade = "12. Ukrayina Strelkovaya Brigada"}
+			SOV = {remove_brigade = "2. Ukrayina Strelkovaya Diviziya"}
+			SOV = {remove_brigade = "3. Ukrayina Strelkovaya Brigada"}
+			SOV = {remove_brigade = "4. Ukrayina Strelkovaya Brigada"}
+			SOV = {remove_brigade = "Ukrayina Strelkovaya Brigada"}
+			SOV = {remove_brigade = "Ukrayina Strelkovaya Brigada"}
+			POL = {set_country_flag = "polish_ukraine"}
+			POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/UKR_001.txt"} 
+			}
+}
+
+country_event = {																			# Ukrainian reinforcements if Polish controlled
+
+		id = 100024
+
+		major = yes
+		
+		trigger = {
+			tag = POL
+			POL = {has_country_flag = "polish_ukraine"}
+			2509 = {controlled_by = POL}													# Lwow
+			date = 1920.5.1
+			}
+		
+		mean_time_to_happen = { months = 2 }
+
+		title = "Polish_Troops_Title"
+		desc = "Ukraine_Troops_Desc"
+		picture = "Ukraine-Galacian"
+
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }	
+			POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/UKR_002.txt"}
+			}
+}
