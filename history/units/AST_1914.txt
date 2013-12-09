@@ -175,31 +175,11 @@ navy = {
 name = "Royal Australian Navy"
 location = 7989
 base = 7989
-
-ship = {
-name = "HMAS Australia"
-type = battlecruiser
-historical_model = 0}
-
-ship = {
-name = "HMAS Sydney"
-type = light_cruiser
-historical_model = 2}
-
-ship = {
-name = "HMAS Melbourne"
-type = light_cruiser
-historical_model = 2}
-
-ship = {
-name = "HMAS Encounter"
-type = light_cruiser
-historical_model = 1}
-
-ship = {
-name = "HMAS Pioneer"
-type = light_cruiser
-historical_model = 0}
+ship = { type = battlecruiser name = "HMAS Australia" historical_model = 1 experience = 15 }
+ship = { type = light_cruiser name = "HMAS Sydney" historical_model = 2 experience = 15 }
+ship = { type = light_cruiser name = "HMAS Melbourne" historical_model = 2 experience = 15 }
+ship = { type = protected_cruiser name = "HMAS Encounter" historical_model = 7 experience = 15 }
+ship = { type = protected_cruiser name = "HMAS Pioneer" historical_model = 6 experience = 15 }
 
 }
 navy = {
@@ -217,23 +197,14 @@ navy = {
 name = "Melbourne Flotilla"
 location = 8057
 base = 8057
-
-ship = {
-name = "HMAS Wagga, Yarra & Parramatta"
-type = destroyer
-historical_model = 0}
+ship = { type = destroyer name = "Victorian and Tasmanian Flotilla" historical_model = 9 experience = 15 }
 }
 
 navy = {
 name = "Australian Submarine Service"
 location = 7989
 base = 7989
+ship = { type = submarine name = "E Flotilla" historical_model = 1 experience = 15 }
 
-ship = {
-type = submarine
-name = "A.E 1 & A.E. 2"
-historical_model = 1
-experience = 10
-}
 }
 }

@@ -23,6 +23,7 @@ fleet_auxiliary_carrier_doctrine = {
 light_cruiser_escort_role = {
 	
 	light_cruiser = { positioning = 0.05 }
+	protected_cruiser = { positioning = 0.05 }
 
 	research_bonus_from = {
 		cruiser_practical = 0.3
@@ -70,6 +71,10 @@ carrier_group_doctrine = {
 light_cruiser_crew_training = {
 	
 	light_cruiser = { 
+		default_organisation = 5 
+		default_morale = 0.05
+	}
+	protected_cruiser = { 
 		default_organisation = 5 
 		default_morale = 0.05
 	}
@@ -481,7 +486,15 @@ cruiser_warfare = {
 
 submarine_crew_training = {
 	
+	coastal_submarine = {
+		default_organisation = 6 
+		default_morale = 0.06
+	}
 	submarine = {
+		default_organisation = 6 
+		default_morale = 0.06
+	}
+	longrange_submarine = {
 		default_organisation = 6 
 		default_morale = 0.06
 	}
@@ -573,6 +586,9 @@ spotting = {
 		surface_detection = 1
 	}
 	light_cruiser = {
+		surface_detection = 1
+	}
+	protected_cruiser = {
 		surface_detection = 1
 	}
 

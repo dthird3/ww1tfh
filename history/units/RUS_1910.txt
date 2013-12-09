@@ -5214,158 +5214,61 @@ name = "Baltiyskiy Flot"
 location = 782
 base = 782
 
-ship = {
-name = "Tsesarevich"
-type = battleship
-historical_model = 0}
+ship = { type = battleship name = "Tsesarevich" historical_model = 9 experience = 15 }
+ship = { type = battleship name = "Imperator Alexander II" historical_model = 4 experience = 15 }
+ship = { type = battleship name = "Dvienadtsat Apostolov" historical_model = 5 experience = 15 }
+ship = { type = battleship name = "Sinop" historical_model = 3 experience = 15 }
+ship = { type = battleship name = "Georgi Pobiedonosets" historical_model = 3 experience = 15 }
+ship = { type = battleship name = "Petr Veliki" historical_model = 2 experience = 15 }
+ship = { type = battleship name = "Slava" historical_model = 10 experience = 15 }
+ship = { type = heavy_cruiser name = "Admiral Makarov" historical_model = 6 experience = 15 }
+ship = { type = heavy_cruiser name = "Bayan" historical_model = 6 experience = 15 }
+ship = { type = heavy_cruiser name = "Rurik" historical_model = 7 experience = 15 }
+ship = { type = heavy_cruiser name = "Minin" historical_model = 2 experience = 15 }
+ship = { type = heavy_cruiser name = "General-Admiral" historical_model = 1 experience = 15 }
+ship = { type = heavy_cruiser name = "Gerzog Edinburgski" historical_model = 1 experience = 15 }
+ship = { type = heavy_cruiser name = "Pamiat Azova" historical_model = 3 experience = 15 }
+ship = { type = protected_cruiser name = "Bogatyr" historical_model = 4 experience = 15 }
+ship = { type = protected_cruiser name = "Oleg" historical_model = 4 experience = 15 }
+ship = { type = protected_cruiser name = "Admiral Kornilov" historical_model = 1 experience = 15 }
+ship = { type = protected_cruiser name = "Aurora" historical_model = 2 experience = 15 }
+ship = { type = protected_cruiser name = "Diana" historical_model = 2 experience = 15 }
+ship = { type = heavy_cruiser name = "Rossia" historical_model = 4 experience = 15 }
+ship = { type = heavy_cruiser name = "Gromoboi" historical_model = 4 experience = 15 }
 
-ship = {
-type = battleship
-name = "Imperator Aleksandr II"
-historical_model = 0
-experience = 15
-}
-ship = {
-type = battleship
-name = "Dvienadtsat Apostolov"
-historical_model = 0
-experience = 15
-}
-ship = {
-type = battleship
-name = "Sinop"
-historical_model = 0
-experience = 15
-}
-ship = {
-type = battleship
-name = "Georgi Pobiedonosets"
-historical_model = 0
-experience = 15
-}
-ship = {
-type = battleship
-name = "Petr Veliki"
-historical_model = 0
-experience = 15
-}
-
-ship = {
-name = "Slava"
-type = battleship
-historical_model = 0}
-
-
-ship = {
-name = "Admiral Makarov"
-type = heavy_cruiser
-historical_model = 2}
-
-ship = {
-name = "Bayan"
-type = heavy_cruiser
-historical_model = 2}
-
-
-ship = {
-name = "Rurik"
-type = heavy_cruiser
-historical_model = 2}
-
-
-ship = {
-type = heavy_cruiser
-name = "Minin"
-historical_model = 0
-experience = 15
-}
-ship = {
-type = heavy_cruiser
-name = "General-Admiral"
-historical_model = 0
-experience = 15
-}
-ship = {
-type = heavy_cruiser
-name = "Gerzog Edinburgski"
-historical_model = 0
-experience = 15
-}
-ship = {
-type = heavy_cruiser
-name = "Pamiat Azova"
-historical_model = 0
-experience = 15
-}
-
-
-
-ship = {
-name = "Bogatyr"
-type = light_cruiser
-historical_model = 1}
-
-ship = {
-name = "Oleg"
-type = light_cruiser
-historical_model = 1}
-
-ship = {
-name = "Admiral Kornilov"
-type = light_cruiser
-historical_model = 0}
-ship = {
-name = "Aurora"
-type = light_cruiser
-historical_model = 0}
-
-ship = {
-name = "Diana"
-type = light_cruiser
-historical_model = 0}
-
-ship = {
-name = "Rossia"
-type = heavy_cruiser
-historical_model = 1}
-
-ship = {
-name = "Gromoboi"
-type = heavy_cruiser
-historical_model = 1}
 
 ship = {
 name = "1 Flotiliya Esmintsev"
 type = destroyer
-historical_model = 1}
+historical_model = 2}
 
 ship = {
 name = "2 Flotiliya Esmintsev"
 type = destroyer
-historical_model = 1}
+historical_model = 2}
 
 ship = {
 name = "3 Flotiliya Esmintsev"
 type = destroyer
-historical_model = 1}
+historical_model = 4}
 
 ship = {
 name = "4 Flotiliya Esmintsev"
 type = destroyer
-historical_model = 1}
+historical_model = 6}
 
 ship = {
 name = "5 Flotiliya Esmintsev"
 type = destroyer
-historical_model = 1}
+historical_model = 7}
 ship = {
 name = "11 Flotiliya Esmintsev"
 type = destroyer
-historical_model = 0}
+historical_model = 7}
 ship = {
 name = "12 Flotiliya Esmintsev"
 type = destroyer
-historical_model = 0}
+historical_model = 7}
 
 ship = {
 name = "10 Flotiliya"
@@ -5380,16 +5283,16 @@ base = 782
 
 ship = {
 name = "1 Flotiliya Podlodok"
-type = submarine
-historical_model = 1}
+type = coastal_submarine
+historical_model = 5}
 ship = {
 name = "2 Flotiliya Podlodok"
-type = submarine
-historical_model = 0}
+type = coastal_submarine
+historical_model = 4}
 ship = {
 name = "3 Flotiliya Podlodok"
-type = submarine
-historical_model = 0}
+type = coastal_submarine
+historical_model = 2}
 
 }
 navy = {
@@ -5397,41 +5300,22 @@ name = "Chornaye More Flot"
 location = 3581
 base = 3581
 
-ship = {
-name = "Tri Sviatitelia"
-type = battleship
-historical_model = 0}
+ship = { type = battleship name = "Tri Svititelia" historical_model = 6 experience = 15 }
+ship = { type = battleship name = "Rotislav" historical_model = 7 experience = 15 }
+ship = { type = battleship name = "Pantelimon" historical_model = 8 experience = 15 }
+ship = { type = protected_cruiser name = "Kagul" historical_model = 4 experience = 15 }
+ship = { type = protected_cruiser name = "Ochakov" historical_model = 4 experience = 15 }
 
-ship = {
-name = "Rostislav"
-type = battleship
-historical_model = 0}
-
-ship = {
-name = "Panteleimon"
-type = battleship
-historical_model = 0}
-
-
-ship = {
-name = "Kagul"
-type = light_cruiser
-historical_model = 1}
-
-ship = {
-name = "Ochakov"
-type = light_cruiser
-historical_model = 1}
 
 ship = {
 name = "6 Flotiliya Esmintsev"
 type = destroyer
-historical_model = 0}
+historical_model = 7}
 
 ship = {
 name = "7 Flotiliya Esmintsev"
 type = destroyer
-historical_model = 0}
+historical_model = 7}
 
 ship = {
 name = "11 Flotiliya"
@@ -5451,48 +5335,37 @@ base = 3581
 
 ship = {
 name = "4 Flotiliya Podlodok"
-type = submarine
+type = coastal_submarine
 historical_model = 1}
 ship = {
 name = "5 Flotiliya Podlodok"
-type = submarine
-historical_model = 0}
+type = coastal_submarine
+historical_model = 1}
 
 }
 navy = {
 name = "Sibirskiy Flotiliya"
 location = 4390
 base = 4390
+ship = { type = protected_cruiser name = "Askold" historical_model = 3 experience = 15 }
+ship = { type = protected_cruiser name = "Almaz" historical_model = 5 experience = 15 }
+ship = { type = protected_cruiser name = "Zhemchug" historical_model = 6 experience = 15 }
 
-ship = {
-name = "Askold"
-type = light_cruiser
-historical_model = 1}
-
-ship = {
-name = "Zhemchug"
-type = light_cruiser
-historical_model = 1}
-
-ship = {
-name = "Almaz"
-type = light_cruiser
-historical_model = 1}
 
 ship = {
 name = "8 Flotiliya Esmintsev"
 type = destroyer
-historical_model = 0}
+historical_model = 7}
 
 ship = {
 name = "9 Flotiliya Esmintsev"
 type = destroyer
-historical_model = 0}
+historical_model = 7}
 
 ship = {
 name = "10 Flotiliya Esmintsev"
 type = destroyer
-historical_model = 0}
+historical_model = 8}
 }
 
 
@@ -5503,7 +5376,7 @@ military_construction = {
 country = RUS
 battleship = {
 name = "Evstafi"
-historical_model = 1}
+historical_model = 11}
 cost = 4
 progress = 0
 duration = 96}
@@ -5511,7 +5384,7 @@ military_construction = {
 country = RUS
 battleship = {
 name = "Ioann Zlatoust"
-historical_model = 1}
+historical_model = 11}
 cost = 4
 progress = 0
 duration = 102}
@@ -5519,7 +5392,7 @@ military_construction = {
 country = RUS
 battleship = {
 name = "Andrei Pervozvanny"
-historical_model = 1}
+historical_model = 12}
 cost = 4
 progress = 0
 duration = 87}
@@ -5527,7 +5400,7 @@ military_construction = {
 country = RUS
 battleship = {
 name = "Imperator Pavel I"
-historical_model = 1}
+historical_model = 12}
 cost = 4
 progress = 0
 duration = 129}
@@ -5536,7 +5409,7 @@ military_construction = {
 country = RUS
 heavy_cruiser = {
 name = "Pallada"
-historical_model = 2}
+historical_model = 6}
 cost = 4
 progress = 0
 duration = 276}
