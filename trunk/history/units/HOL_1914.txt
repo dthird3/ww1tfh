@@ -87,40 +87,13 @@ name = "Koninklijke Marine"
 location = 1910
 base = 1910
 
-ship = {
-name = "HrMs Kortenaer"
-type = heavy_cruiser
-historical_model = 0}
-
-ship = {
-name = "HrMs De Zeven Provinciën"
-type = heavy_cruiser
-historical_model = 0}
-
-ship = {
-name = "HrMs Marten H. Tromp"
-type = heavy_cruiser
-historical_model = 0}
-
-ship = {
-name = "HrMs Holland"
-type = light_cruiser
-historical_model = 0}
-
-ship = {
-name = "HrMs Zeeland"
-type = light_cruiser
-historical_model = 0}
-
-ship = {
-name = "HrMs Noord-Brabant"
-type = light_cruiser
-historical_model = 0}
-
-ship = {
-name = "1e Onderzeeboot Smaldeel"
-type = submarine
-historical_model = 2}
+ship = { type = heavy_cruiser name = "HrMs Kortenaer" historical_model = 0 experience = 15 }
+ship = { type = heavy_cruiser name = "HrMs De Zeven Provincien" historical_model = 0 experience = 15 }
+ship = { type = heavy_cruiser name = "HrMs Martin Harpertszoon Tromp" historical_model = 0 experience = 15 }
+ship = { type = protected_cruiser name = "HrMs Holland" historical_model = 2 experience = 15 }
+ship = { type = protected_cruiser name = "HrMs Zeeland" historical_model = 2 experience = 15 }
+ship = { type = protected_cruiser name = "HrMs Noord-Brabant" historical_model = 2 experience = 15 }
+ship = { type = coastal_submarine name = "1e Onderzeeboot Smaldeel" historical_model = 5 experience = 15 }
 
 ship = {
 name = "1e Transport Smaldeel"
@@ -132,26 +105,11 @@ navy = {
 name = "Oost-Indië Vloot"
 location = 7793
 base = 7793
+ship = { type = heavy_cruiser name = "HrMs Koningin Regentes" historical_model = 0 experience = 15 }
+ship = { type = heavy_cruiser name = "HrMs De Ruyter" historical_model = 0 experience = 15 }
+ship = { type = heavy_cruiser name = "HrMs Hertog Hendrik" historical_model = 0 experience = 15 }
+ship = { type = destroyer name = "1e Torpedobootjager Smaldeel" historical_model = 9 experience = 15 }
 
-ship = {
-name = "HrMs Koningin Regentes"
-type = heavy_cruiser
-historical_model = 0}
-
-ship = {
-name = "HrMs De Ruyter"
-type = heavy_cruiser
-historical_model = 0}
-
-ship = {
-name = "HrMs Hertog Hendrik"
-type = heavy_cruiser
-historical_model = 0}
-
-ship = {
-name = "1e Torpedobootjager Smaldeel"
-type = destroyer
-historical_model = 1}
 
 ship = {
 name = "2e Transport Smaldeel"
@@ -163,15 +121,7 @@ navy = {
 name = "West-Indië Vloot"
 location = 50
 base = 50
+ship = { type = heavy_cruiser name = "HrMs Jacob Van Heemskerck" historical_model = 0 experience = 15 }
+ship = { type = protected_cruiser name = "HrMs Gelderland" historical_model = 2 experience = 15 }
 
-ship = {
-name = "HrMs Jacob van Heemskerck"
-type = heavy_cruiser
-historical_model = 0}
-
-
-ship = {
-name = "HrMs Gelderland"
-type = light_cruiser
-historical_model = 0}
 }

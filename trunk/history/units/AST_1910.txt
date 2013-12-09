@@ -182,15 +182,8 @@ location = 7989
 base = 7989
 
 
-ship = {
-name = "HMAS Encounter"
-type = light_cruiser
-historical_model = 1}
-
-ship = {
-name = "HMAS Pioneer"
-type = light_cruiser
-historical_model = 0}
+ship = { type = protected_cruiser name = "HMAS Encounter" historical_model = 7 experience = 15 }
+ship = { type = protected_cruiser name = "HMAS Pioneer" historical_model = 6 experience = 15 }
 
 }
 navy = {
@@ -210,8 +203,5 @@ location = 8057
 base = 8057
 
 
-ship = {
-name = "Victorian and Tasmanian Flotilla"
-type = destroyer
-historical_model = 0}
+ship = { type = destroyer name = "Victorian and Tasmanian Flotilla" historical_model = 9 experience = 15 }
 }

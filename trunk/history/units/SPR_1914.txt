@@ -410,56 +410,17 @@ navy = {
 name = "Armada Española"
 location = 5125
 base = 5125
+ship = { type = battleship name = "Pelayo" historical_model = 3 experience = 15 }
+ship = { type = dreadnaught name = "España" historical_model = 3 experience = 15 }
+ship = { type = heavy_cruiser name = "Emparador Carlos V" historical_model = 1 experience = 15 }
+ship = { type = heavy_cruiser name = "Princesa De Asturias" historical_model = 2 experience = 15 }
+ship = { type = heavy_cruiser name = "Cataluña" historical_model = 2 experience = 15 }
+ship = { type = protected_cruiser name = "Infanta Isabel" historical_model = 0 experience = 15 }
+ship = { type = protected_cruiser name = "Rio De La Plata" historical_model = 3 experience = 15 }
+ship = { type = protected_cruiser name = "Estramadura" historical_model = 4 experience = 15 }
+ship = { type = protected_cruiser name = "Reina Regente" historical_model = 7 experience = 15 }
+ship = { type = destroyer name = "1a Flotilla de Destructores" historical_model = 2 experience = 15 }
 
-ship = {
-name = "España"
-type = dreadnaught
-historical_model = 0}
-
-ship = {
-name = "Pelayo"
-type = battleship
-historical_model = 0}
-
-ship = {
-name = "Emperador Carlos V"
-type = light_cruiser
-historical_model = 1}
-ship = {
-name = "Infanta Isabel"
-type = light_cruiser
-historical_model = 0}
-
-ship = {
-name = "Princesa de Asturias"
-type = light_cruiser
-historical_model = 1}
-
-ship = {
-name = "Cataluña"
-type = light_cruiser
-historical_model = 1}
-
-ship = {
-name = "Río de la Plata"
-type = light_cruiser
-historical_model = 0}
-
-ship = {
-name = "Extremadura"
-type = light_cruiser
-historical_model = 1}
-
-ship = {
-name = "Reina Regente"
-type = light_cruiser
-historical_model = 1}
-
-
-ship = {
-name = "1a Flotilla de Destructores"
-type = destroyer
-historical_model = 1}
 
 
 ship = {
@@ -471,7 +432,7 @@ military_construction = {
 country = SPR
 dreadnaught = {
 name = "Alfonso XIII"
-historical_model = 0}
+historical_model = 3}
 cost = 4
 progress = 0
 duration = 585}
@@ -480,7 +441,7 @@ military_construction = {
 country = SPR
 dreadnaught = {
 name = "Jaime I"
-historical_model = 0}
+historical_model = 3}
 cost = 4
 progress = 0
 duration = 660}
