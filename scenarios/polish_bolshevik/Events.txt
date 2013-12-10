@@ -1,3 +1,24 @@
+# =============================================  Ongoing Monitors  ====================================
+
+country_event = {																# Set and increment variables
+
+		id = 100801
+
+		trigger = {	tag = LIT }
+
+		title = "Polish_Troops_Title"
+		desc = "Polish_Troops_Desc"
+		picture = "Polish_Troops"
+
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }
+			POL = {set_variable = { which = PDEPLOY  value = +1928 }} 			# Set Warsaw as default deployment province (not working in OOB)
+			POL = {change_variable =  { which = PolDelay value = +1 }}			# Increment time factor for reinforcements
+			SOV = {change_variable =  { which = SovDelay value = +1 }}			# Increment time factor for withdrawls
+		}
+}
+
 # Galacian Mutiny							
 country_event = {
 
@@ -253,28 +274,6 @@ country_event = {
 		POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_010.txt"}
 	}
 }
-
-# =============================================  Ongoing Monitors  ====================================
-
-country_event = {																# Set and increment variables
-
-		id = 100801
-
-		trigger = {	tag = LIT }
-
-		title = "Polish_Troops_Title"
-		desc = "Polish_Troops_Desc"
-		picture = "Polish_Troops"
-
-		option = {
-			name = "ACTION_NAME_GREAT"
-			ai_chance = { factor = 100 }
-			POL = {set_variable = { which = PDEPLOY  value = +1928 }} 			# Set Warsaw as default deployment province (not working in OOB)
-			POL = {change_variable =  { which = PolDelay value = +1 }}			# Increment time factor for reinforcements
-			SOV = {change_variable =  { which = SovDelay value = +1 }}			# Increment time factor for withdrawls
-		}
-}
-
 
 ##############################################  POLISH DESPERATE DEFENCE  #################################################
 
@@ -539,8 +538,8 @@ country_event = {
 	mean_time_to_happen =  { days = 1 }
 
 	title = "Russian_Troops_Title"
-	desc = "Russian_Troops_Desc"
-	picture = "Russian_Troops"
+	desc = "Lithuania_Desc"
+	picture = "7th_Regiment_Troops"
 
 	option = {
 		name = "ACTION_NAME_GREAT"
@@ -588,7 +587,7 @@ country_event = {																			# Reinforcements released from the Latvian G
 	}
 
 	title = "Russian_Troops_Title"
-	desc = "Russian_Troops_Desc"
+	desc = "Latvian_Garrison_Desc"
 	picture = "Russian_Troops"
 
 	option = {
@@ -767,7 +766,7 @@ country_event = {
 
 		title = "Lithuania_Title"
 		desc = "Lithuania_Desc"
-		picture = "Russian_Troops"
+		picture = "7th_Regiment_Troops"
 
 		option = {
 			name = "ACTION_NAME_GREAT"
@@ -809,12 +808,12 @@ country_event = {
 		
 		trigger = {
 			tag = SOV
-			date = 1920.9.6
+			date = 1920.8.30
 		}
 		
 		fire_only_once = yes
 		
-		title = "Russian_Withdraw_Title"								# Warning of Withdrawl of Konarmiya about 2 weeks later
+		title = "Russian_Withdraw_Title"								# Warning of Withdrawl of Konarmiya about 3 weeks later
 		desc = "Russian_Withdraw_Desc"
 		picture = "lenin"
 
@@ -835,12 +834,12 @@ country_event = {														# Actual withdrawl
 		trigger = {
 			tag = SOV
 			SOV = {has_country_flag = "Konarmiya_Withdrawl"}
-			SOV = {check_variable = { which = SovDelay  value = 6 }}	
+#			SOV = {check_variable = { which = SovDelay  value = 6 }}	
 		}
 		
 		fire_only_once = yes
 	
-#		mean_time_to_happen =  { days = 21 }
+		mean_time_to_happen =  { days = 21 }
 		
 		title = "Russian_Withdraw_Title"								
 		desc = "Russian_Withdraw_Now_Desc"
@@ -953,7 +952,7 @@ country_event = {
 		trigger = { tag = POL 
 					date = 1920.5.15 }
 
-		fire_only_once = yes
+#		fire_only_once = yes
 		
 		mean_time_to_happen =  { months = 2 }
 
@@ -1011,8 +1010,6 @@ country_event = {
 country_event = {																			# Ukrainian reinforcements if Russian controlled
 
 		id = 100020
-
-		major = yes
 		
 		trigger = {
 			tag = SOV
@@ -1075,8 +1072,6 @@ country_event = {																			# Ukrainian reinforcements if Polish control
 
 		id = 100024
 
-		major = yes
-		
 		trigger = {
 			tag = POL
 			POL = {has_country_flag = "polish_ukraine"}
