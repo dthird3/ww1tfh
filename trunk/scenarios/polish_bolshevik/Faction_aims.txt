@@ -5,7 +5,6 @@ comintern = {
 	PB_Comintern_1 = {
 		trigger = {
 			1928 = { controller = { faction = comintern } }							# Warsaw
-			date = 1920.10.15		
 		}
 		primary = yes
 	}
@@ -13,26 +12,26 @@ comintern = {
 		trigger = {
 			1986 = { controller = { faction = comintern } }							# Brest Litovsk
 		}
-		primary = yes
+		primary = no
 	}
-	PB_Comintern_3 = {
-		trigger = {
-			1694 = { controller = { faction = comintern } }							# Minsk
-		}
-		primary = yes
-	}
-#	PB_Comintern_4 = {
+#	PB_Comintern_3 = {
 #		trigger = {
-#			2509 = { controller = { faction = comintern } }							# Lwow
+#			1694 = { controller = { faction = comintern } }							# Minsk
 #		}
-#		primary = yes
+#		primary = no
 #	}
+	PB_Comintern_4 = {
+		trigger = {
+			2509 = { controller = { faction = comintern } }							# Lwow
+		}
+		primary = no
+	}
 	PB_Comintern_5 = {
 		trigger = {
 			2223 = { controller = { faction = comintern } }							# Kiev
 			date = 1920.10.01
 		}
-		primary = yes
+		primary = no
 	}
 }
 
@@ -43,7 +42,6 @@ allies = {
 	PB_POL_1 = {
 		trigger = {
 			1928 = { controller = { faction = allies } }											# Warsaw
-			date = 1920.10.15																
 		}
 		primary = yes
 	}
@@ -51,24 +49,24 @@ allies = {
 		trigger = {
 			1986 = { controller = { faction = allies } }											# Brest Litovsk
 		}
-		primary = yes
+		primary = no
 	}
 #	PB_POL_3 = {
 #		trigger = {
 #			1694 = { controller = { faction = allies } }											# Minsk
 #		}
-#		primary = yes
+#		primary = no
 #	}
 	PB_POL_4 = {
 		trigger = {
 			2509 = { controller = { faction = allies } }											# Lwow
 		}
-		primary = yes
+		primary = no
 	}
 		PB_POL_5 = {
 		trigger = {
 			2223 = { controller = { faction = allies } }											# Kiev
 		}
-		primary = yes
+		primary = no
 	}
 }
