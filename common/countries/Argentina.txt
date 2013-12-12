@@ -32,9 +32,6 @@ armor_brigade = {
 battlecruiser = { 
 "ARA Rivadavia" "ARA Moreno" "ARA Azopardo" "ARA Sarandí" "ARA Espora"
 } 
-dreadnaught = { 
-"ARA Rivadavia" "ARA Moreno" "ARA Azopardo" "ARA Sarandí" "ARA Espora"
-} 
 bergsjaeger_brigade = { 
 	"I División de Montaña 'Villegas'" "II División de Montaña 'Luzuriaga'" "III División de Montaña" "IV División de Montaña" "V División de Montaña" "VI División de Montaña" "VII División de Montaña" "VIII División de Montaña" "IX División de Montaña" "X División de Montaña" "XI División de Montaña" 
 		"XII División de Montaña" "XIII División de Montaña" "XIV División de Montaña" "XV División de Montaña" 
@@ -51,9 +48,7 @@ destroyer = {
 escort_carrier = { 
 "ARA Independencia" "ARA República" "ARA General San Martín"
 } 
-heavy_cruiser = { 
-"ARA La Argentina" "ARA Veinticinco de Mayo" "ARA Almirante Brown" "ARA General Belgrano" "ARA Nueve de Julio" "ARA Murature" "ARA King" "ARA Heroina" "ARA Drummond" "ARA Guerrico" "ARA Granville" "ARA Rosales" "ARA Spiro" "ARA Parker" "ARA Rosales" "ARA Robinson" "ARA Gómez Roca"
-} 
+
 hq_brigade = { 
 "Cuartel General 1er Ejército" "Cuartel General 2o Ejército" "Cuartel General 3er Ejército" "Cuartel General 4o Ejército" "Cuartel General 5o Ejército" "Cuartel General 6o Ejército" "Cuartel General 7o Ejército" "Cuartel General 8o Ejército" "Cuartel General 9o Ejército" "Cuartel General 10o Ejército"
 } 
@@ -63,6 +58,9 @@ infantry_brigade = {
 		"XXIV División de Infantería" "XXV División de Infantería" "XXVI División de Infantería" "XXVII División de Infantería" "XXVIII División de Infantería" "XXIX División de Infantería" "XXX División de Infantería" 
 	}
 interceptor = { 
+"Grupo Aéreo Nro. 1" "Grupo Aéreo Nro. 2" "Grupo Aéreo Nro. 3" "Grupo Aéreo Nro. 4" "Grupo Aéreo Nro. 5" "Grupo Aéreo Nro. 6" "Grupo Aéreo Nro. 7" "Grupo Aéreo Nro. 8" "Grupo Aéreo Nro. 9" "Grupo Aéreo Nro. 10" "Grupo Aéreo Nro. 11" "Grupo Aéreo Nro. 12"
+} 
+scout = { 
 "Grupo Aéreo Nro. 1" "Grupo Aéreo Nro. 2" "Grupo Aéreo Nro. 3" "Grupo Aéreo Nro. 4" "Grupo Aéreo Nro. 5" "Grupo Aéreo Nro. 6" "Grupo Aéreo Nro. 7" "Grupo Aéreo Nro. 8" "Grupo Aéreo Nro. 9" "Grupo Aéreo Nro. 10" "Grupo Aéreo Nro. 11" "Grupo Aéreo Nro. 12"
 } 
 light_armor_brigade = { 
@@ -81,6 +79,12 @@ militia_brigade = {
 submarine = { 
 "S.Fe/Salta/S.del Estero" "S.Luis/S.Cruz/S.Juan" "Neuquén/R.Negro/Chubut" "T.del Fuego/Chaco/Formosa" "Catamarca/E.Ríos/Corrientes" "La Pampa/Jujuy/Misiones" "Córdoba/Malvinas/Orcadas" "Georgias/Sandwich/Antártida" "S1/S2/S3" "S4/S5/S6" "S7/S8/S9" "S10/S11/S12" "S14/S15/S16"
 } 
+coastal_submarine = { 
+"S.Fe/Salta/S.del Estero" "S.Luis/S.Cruz/S.Juan" "Neuquén/R.Negro/Chubut" "T.del Fuego/Chaco/Formosa" "Catamarca/E.Ríos/Corrientes" "La Pampa/Jujuy/Misiones" "Córdoba/Malvinas/Orcadas" "Georgias/Sandwich/Antártida" "S1/S2/S3" "S4/S5/S6" "S7/S8/S9" "S10/S11/S12" "S14/S15/S16"
+} 
+longrange_submarine = { 
+"S.Fe/Salta/S.del Estero" "S.Luis/S.Cruz/S.Juan" "Neuquén/R.Negro/Chubut" "T.del Fuego/Chaco/Formosa" "Catamarca/E.Ríos/Corrientes" "La Pampa/Jujuy/Misiones" "Córdoba/Malvinas/Orcadas" "Georgias/Sandwich/Antártida" "S1/S2/S3" "S4/S5/S6" "S7/S8/S9" "S10/S11/S12" "S14/S15/S16"
+} 
 tactical_bomber = { 
 "Grupo Aéreo del Ejército Nro. 1" "Grupo Aéreo del Ejército Nro. 2" "Grupo Aéreo del Ejército Nro. 3" "Grupo Aéreo del Ejército Nro. 4" "Grupo Aéreo del Ejército Nro. 5" "Grupo Aéreo del Ejército Nro. 6" "Grupo Aéreo del Ejército Nro. 7" "Grupo Aéreo del Ejército Nro. 8"
 } 
@@ -88,6 +92,18 @@ transport_ship = {
 "ARA Cabo San Diego" "ARA Cabo S.F. de Paula" "ARA Cabo Buen Tiempo" "ARA Cabo San Pablo" "ARA Cabo San Sebastián" "ARA Cabo San Vicente" "ARA Cándido de Lasala" "ARA Cabo San Antonio" "ARA Ministro Ezcurra" "ARA Punta Alta" "ARA Punta Ninfas" "ARA Punta Loyola" "ARA Punta Delgada" "ARA Punta Médanos" "ARA Ingeniero Krausse" "ARA Patagonia"
 }
 
+heavy_cruiser = {
+"ARA General Garibaldi" "ARA General Belgrano" "ARA General Pueyrredón" "ARA General San Martín" 
+}
+dreadnaught = {
+"ARA Rivadavia" "ARA Moreno" "ARA Azopardo" "ARA Sarandí" "ARA Espora"
+}
+battleship = {
+"ARA La Plata" "ARA Los Andes" "ARA Almirante Brown" "ARA Independencia" "ARA Libertad" 
+}
+protected_cruiser = {
+"ARA Patagonia" "ARA Veinticinco de Mayo" "ARA Nueve de Julio" "ARA Buenos Aires" 
+}
 
 }
 
