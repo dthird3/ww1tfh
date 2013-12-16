@@ -133,6 +133,31 @@ country_event = {
 
 country_event = {
 	
+	id = 100017
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date = 1920.7.1
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Polish_Troops_Title"
+	desc = "Polish_Air_Desc"
+	picture = "Bristol_Fighter"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_AIR_1.txt"}
+	}
+}
+
+
+country_event = {
+	
 	id = 100003
 	fire_only_once = yes
 	trigger = {
@@ -595,6 +620,30 @@ country_event = {																			# Reinforcements released from the Latvian G
 		ai_chance = { factor = 100 }	
  	    load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_GAR_1.txt"
 		SOV = {set_country_flag = Latvian_Garrison_1_Released}
+	}
+}
+
+country_event = {											
+	
+	id = 200016
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date = 1920.8.1
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Russian_Troops_Title"
+	desc = "Russian_Air_Desc"
+	picture = "Russian_Scout"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_AIR_1.txt"}
 	}
 }
 
