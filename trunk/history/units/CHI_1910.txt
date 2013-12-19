@@ -1,148 +1,417 @@
-division = {
-
-name = "1. Jun"
-
-location = 5177
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = artillery_brigade historical_model = 0 }
-
-}
-
-division = {
-
-name = "7. Jun"
-
-location = 7425
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = artillery_brigade historical_model = 0 }
-
-}
-
-division = {
-
-name = "14. Jun"
-
-location = 5728
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = artillery_brigade historical_model = 0 }
-
-}
-
-division = {
-
-name = "22. Jun"
-
-location = 5709
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = artillery_brigade historical_model = 0 }
-
-}
-
-division = {
-
-name = "27. Jun"
-
-location = 5709
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = artillery_brigade historical_model = 0 }
-
-}
-
-division = {
-
-name = "30. Jun"
-
-location = 7446
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = artillery_brigade historical_model = 0 }
-
-}
-
-division = {
-
-name = "37. Jun"
-
-location = 7435
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = artillery_brigade historical_model = 0 }
-
-}
-
-division = {
-
-name = "38. Jun"
-
-location = 9296
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = artillery_brigade historical_model = 0 }
-
-}
-
-corps = {
-
-name = "Suijing Zongtuan"
-
-location = 5405
-
-regiment = { type = hq_brigade name = "Suijing Zongtuan HQ" historical_model = 0 }
-
-division= {
-
-name = "40. Jun"
-
-location = 5405
-
-regiment = { type = garrison_brigade historical_model = 0 }
-
-regiment = { type = police_brigade historical_model = 0 }
-
-}
-
-division= {
-
-name = "41. Jun"
-
-location = 5405
-
-regiment = { type = garrison_brigade historical_model = 0 }
-
-regiment = { type = police_brigade historical_model = 0 }
-
-}
-
-}
+theatre= {
+	name = "The Supreme Commander"
+	leader = 99999997
+	location = 4979
+	regiment = { type = hq_brigade name = "The Supreme Commander (Prince-Regent)" historical_model = 1 }
+	
+	division= {
+		name = "Jinji Lujun Di 1 Zhen"
+		leader = 99999983
+		location = 4979 
+		regiment = { type = infantry_brigade experience = 20 name = "Budui Di 1 Xie/ Budui Di 2 Xie" historical_model = 1 }
+		regiment = { type = cavalry_brigade experience = 20 name = "Madui Di 1 Biao" historical_model = 1 }
+		regiment = { type = artillery_brigade experience = 20 name = "Paodui Di 1 Biao" historical_model = 1 }
+	}
+	division= {
+		name = "Jinji Lujun Di 6 Zhen"
+		leader = 99999991
+		location = 4979
+		regiment = { type = infantry_brigade experience = 10 name = "Budui Di 11 Xie/ Budui Di 12 Xie" historical_model = 1 }
+		regiment = { type = cavalry_brigade experience = 10 name = "Madui Di 11 Biao" historical_model = 1 }
+		regiment = { type = artillery_brigade experience = 10 name = "Paodui Di 11 Biao" historical_model = 1 }
+	}
+
+	army = {	
+		name = "P.G. and G.C. Shanxi"
+		leader = 99999975
+		location = 5174
+		regiment = { type = hq_brigade name = "Provincial Governor and G.C. of Shanxi" historical_model = 1 }
+			
+		division= {
+			name = "Shanxi Lujun Di 43 Huncheng Xie"
+			location = 5174
+			regiment = { type = infantry_brigade experience = 10 name = "Di 43 Huncheng Xie" historical_model = 1 }
+			}
+	}
+	
+	armygroup = {
+		name = "G.G. Dongsanxing"
+		leader = 99999974
+		location = 4685
+		regiment = { type = hq_brigade name = "Governor-General of Dongsanxing" historical_model = 1 }
+			division= {
+				name = "Dongsanxing Lujun Di 3 Zhen"
+				leader = 99999982
+				location = 4452
+				regiment = { type = infantry_brigade experience = 10 name = "Budui Di 5 Xie/ Budui Di 6 Xie" historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 10 name = "Madui Di 3 Biao" historical_model = 1 }
+				regiment = { type = artillery_brigade experience = 10 name = "Paodui Di 3 Biao" historical_model = 1 }
+			}
+			division= {
+				name = "Dongsanxing Lujun Di 20 Zhen"
+				leader = 99999973
+				location = 4685
+				regiment = { type = infantry_brigade experience = 10 name = "Budui Di 39 Xie/ Budui Di 40 Xie" historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 10 name = "Madui Di 20 Biao" historical_model = 1 }
+				regiment = { type = artillery_brigade experience = 10 name = "Paodui Di 20 Biao" historical_model = 1 }
+			}
+			division= {
+				name = "Dongsanxing Lujun Di 23 Zhen"
+				leader = 99999972
+				location = 4452
+				regiment = { type = infantry_brigade experience = 10 name = "Budui Di 45 Xie/ Budui Di 46 Xie" historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 10 name = "Madui Di 23 Biao" historical_model = 1 }
+				regiment = { type = artillery_brigade experience = 10 name = "Paodui Di 23 Biao" historical_model = 1 }
+			}
+			division= {
+				name = "Dongsanxing Lujun Di 2 Huncheng Xie"
+				location = 4629
+				regiment = { type = infantry_brigade experience = 10 name = "Di 2 Huncheng Xie" historical_model = 1 }
+			}
+
+	}
+
+	armygroup = {
+		name = "G.G. Zhili"
+		leader = 99999979
+		location = 5018
+		regiment = { type = hq_brigade name = "Governor-General of Zhili" historical_model = 1 }
+		
+		army = {	
+			name = "G.C. Zhili"
+			leader = 99999978
+			location = 4886
+			regiment = { type = hq_brigade name = "General-in-Chief of Zhili" historical_model = 1 }
+			
+			division= {
+				name = "Zhili Lujun Di 4 Zhen"
+				leader = 99999981
+				location = 5178
+				regiment = { type = infantry_brigade experience = 10 name = "Budui Di 7 Xie/ Budui Di 8 Xie" historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 10 name = "Madui Di 4 Biao" historical_model = 1 }
+				regiment = { type = artillery_brigade experience = 10 name = "Paodui Di 4 Biao" historical_model = 1 }
+			}
+			division= {
+				name = "Zhili Lujun Di 2 Zhen"
+				leader = 99999977
+				location = 5143
+				regiment = { type = infantry_brigade experience = 10 name = "Budui Di 3 Xie/ Budui Di 4 Xie" historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 10 name = "Madui Di 2 Biao" historical_model = 1 }
+				regiment = { type = artillery_brigade experience = 10 name = "Paodui Di 2 Biao" historical_model = 1 }
+			}
+		}
+
+		
+		army = {	
+			name = "P.G. and G.C. Shandong"
+			leader = 99999971
+			location = 5275
+			regiment = { type = hq_brigade name = "Provincial Governor and G.C. of Shandong" historical_model = 1 }
+			
+			division= {
+				name = "Shandong Lujun Di 5 Zhen"
+				leader = 99999980
+				location = 5275
+				regiment = { type = infantry_brigade experience = 10 name = "Budui Di 9 Xie/ Budui Di 10 Xie" historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 10 name = "Madui Di 5 Biao" historical_model = 1 }
+				regiment = { type = artillery_brigade experience = 10 name = "Paodui Di 5 Biao" historical_model = 1 }
+			}
+		}
+
+		army = {	
+			name = "P.G. and G.C. Henan"
+			leader = 99999970
+			location = 5401
+			regiment = { type = hq_brigade name = "Provincial Governor and G.C. of Henan" historical_model = 1 }
+			
+			division= {
+				name = "Henan Lujun Di 29 Huncheng Xie"
+				location = 5401
+				regiment = { type = infantry_brigade experience = 10 name = "Di 29 Huncheng Xie" historical_model = 1 }
+			}
+		}
+	}
+
+	armygroup = {
+		name = "G.G. Shaan-Gan"
+		leader = 99999969
+		location = 9170
+		regiment = { type = hq_brigade name = "Governor-General of Shaan-Gan" historical_model = 1 }
+		
+		army = {	
+			name = "G.C. Shaanxi"
+			leader = 99999968
+			location = 9202
+			regiment = { type = hq_brigade name = "General-in-Chief of Shaanxi" historical_model = 1 }
+			
+			division= {
+				name = "Shaanxi Lujun Di 39 Huncheng Xie"
+				location = 7435
+				regiment = { type = infantry_brigade experience = 10 name = "Di 39 Huncheng Xie" historical_model = 1 }
+			}
+		}
+
+		army = {	
+			name = "P.G. and G.C. Gan-Xin"
+			leader = 99999967
+			location = 8955
+			regiment = { type = hq_brigade name = "Provincial Governor and G.C. of Gan-Xin" historical_model = 1 }
+			
+			division= {
+				name = "Gansu Lujun Huncheng Xie"
+				location = 9170
+				regiment = { type = infantry_brigade experience = 10 name = "Gansu Huncheng Xie" historical_model = 1 }
+			}
+
+			division= {
+				name = "Xinjiang Lujun Di 35 Huncheng Xie"
+				location = 8955
+				regiment = { type = infantry_brigade experience = 10 name = "Di 35 Huncheng Xie" historical_model = 1 }
+			}
+			
+			division= {
+				name = "Ili Lujun Huncheng Xie"
+				location = 8953
+				regiment = { type = infantry_brigade experience = 10 name = "Ili Huncheng Xie" historical_model = 1 }
+			}
+		}
+	}
+
+	armygroup = {
+		name = "G.G. Liangjiang"
+		leader = 99999966
+		location = 5494
+		regiment = { type = hq_brigade name = "Governor-General of Liangjiang" historical_model = 1 }
+		
+		army = {	
+			name = "G.C. Jiangnan"
+			leader = 99999965
+			location = 5494
+			regiment = { type = hq_brigade name = "General-in-Chief of Jiangnan" historical_model = 1 }
+			
+			division= {
+				name = "Jiangsu Lujun Di 23 Huncheng Xie"
+				location = 5573
+				regiment = { type = infantry_brigade experience = 10 name = "Di 23 Huncheng Xie" historical_model = 1 }
+			}
+
+			division= {
+				name = "Jiangnan Lujun Di 9 Zhen"
+				leader = 99999964
+				location = 5494
+				regiment = { type = infantry_brigade experience = 10 name = "Budui Di 17 Xie/ Budui Di 18 Xie" historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 10 name = "Madui Di 9 Biao" historical_model = 1 }
+				regiment = { type = artillery_brigade experience = 10 name = "Paodui Di 9 Biao" historical_model = 1 }
+			}
+		}
+
+		army = {	
+			name = "G.C. Jiangbei"
+			leader = 99999992
+			location = 5421
+			regiment = { type = hq_brigade name = "General-in-Chief of Jiangbei" historical_model = 1 }
+			
+			division= {
+				name = "Jiangbei Lujun Di 13 Huncheng Xie"
+				location = 5421
+				regiment = { type = infantry_brigade experience = 10 name = "Di 13 Huncheng Xie" historical_model = 1 }
+			}
+		}
+
+		army = {	
+			name = "P.G. and G.C. Anhui"
+			leader = 99999963
+			location = 5595
+			regiment = { type = hq_brigade name = "Provincial Governor and G.C. of Anhui" historical_model = 1 }
+			
+			division= {
+				name = "Anhui Lujun Di 31 Huncheng Xie"
+				location = 5595
+				regiment = { type = infantry_brigade experience = 10 name = "Di 31 Huncheng Xie" historical_model = 1 }
+			}
+		}
+
+		army = {	
+			name = "P.G. and G.C. Jiangxi"
+			leader = 99999962
+			location = 5681
+			regiment = { type = hq_brigade name = "Provincial Governor and G.C. of Jiangxi" historical_model = 1 }
+			
+			division= {
+				name = "Jiangxi Lujun Di 27 Huncheng Xie"
+				location = 5681
+				regiment = { type = infantry_brigade experience = 10 name = "Di 27 Huncheng Xie" historical_model = 1 }
+			}
+		}
+	}
+
+	armygroup = {
+		name = "G.G. Hubei-Hunan"
+		leader = 99999961
+		location = 7508
+		regiment = { type = hq_brigade name = "Governor-General of Hubei-Hunan" historical_model = 1 }
+		
+		army = {	
+			name = "G.C. Hubei"
+			leader = 99999960
+			location = 5538
+			regiment = { type = hq_brigade name = "General-in-Chief of Hubei" historical_model = 1 }
+			
+			division= {
+				name = "Hubei Lujun Di 21 Huncheng Xie"
+				location = 7508
+				regiment = { type = infantry_brigade experience = 10 name = "Di 21 Huncheng Xie" historical_model = 1 }
+			}
+
+			
+			division= {
+				name = "Hubei Lujun Di 8 Zhen"
+				location = 7508
+				regiment = { type = infantry_brigade experience = 10 name = "Budui Di 15 Xie/ Budui Di 16 Xie" historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 10 name = "Madui Di 8 Biao" historical_model = 1 }
+				regiment = { type = artillery_brigade experience = 10 name = "Paodui Di 8 Biao" historical_model = 1 }
+			}
+		}
+
+		army = {	
+			name = "G.C. Hunan"
+			leader = 99999959
+			location = 7519
+			regiment = { type = hq_brigade name = "General-in-Chief of Hunan" historical_model = 1 }
+			
+			division= {
+				name = "Hunan Lujun Di 25 Huncheng Xie"
+				location = 7520
+				regiment = { type = infantry_brigade experience = 10 name = "Di 25 Huncheng Xie" historical_model = 1 }
+			}
+		}
+	}
+
+	armygroup = {
+		name = "G.G. Min-Zhe"
+		leader = 99999958
+		location = 5728
+		regiment = { type = hq_brigade name = "Governor-General of Min-Zhe" historical_model = 1 }
+		
+		army = {	
+			name = "G.C. Zhejiang"
+			leader = 99999957
+			location = 5623
+			regiment = { type = hq_brigade name = "General-in-Chief of Zhejiang" historical_model = 1 }
+			
+			division= {
+				name = "Zhejiang Lujun Di 21 Zhen"
+				leader = 99999956
+				location = 5621
+				regiment = { type = infantry_brigade experience = 10 name = "Budui Di 41 Xie/ Budui Di 42 Xie" historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 10 name = "Madui Di 21 Biao" historical_model = 1 }
+				regiment = { type = artillery_brigade experience = 10 name = "Paodui Di 21 Biao" historical_model = 1 }
+			}
+		}
+
+		army = {	
+			name = "G.C. Fujian"
+			leader = 99999955
+			location = 5746
+			regiment = { type = hq_brigade name = "General-in-Chief of Fujian" historical_model = 1 }
+			
+			division= {
+				name = "Fujian Lujun Di 10 Zhen"
+				leader = 99999954
+				location = 5728
+				regiment = { type = infantry_brigade experience = 10 name = "Budui Di 19 Xie/ Budui Di 20 Xie" historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 10 name = "Madui Di 10 Biao" historical_model = 1 }
+				regiment = { type = artillery_brigade experience = 10 name = "Paodui Di 10 Biao" historical_model = 1 }
+			}
+		}
+	}
+
+	armygroup = {
+		name = "G.G. Liangguang"
+		leader = 99999953
+		location = 5834
+		regiment = { type = hq_brigade name = "Governor-General of Liangguang" historical_model = 1 }
+		
+		army = {	
+			name = "G.C. Guangdong"
+			leader = 99999952
+			location = 5834
+			regiment = { type = hq_brigade name = "General-in-Chief of Guangdong" historical_model = 1 }
+			
+			division= {
+				name = "Guangdong Lujun Di 26 Zhen"
+				location = 5834
+				regiment = { type = infantry_brigade experience = 10 name = "Budui Di 51 Xie/ Budui Di 52 Xie" historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 10 name = "Madui Di 26 Biao" historical_model = 1 }
+				regiment = { type = artillery_brigade experience = 10 name = "Paodui Di 26 Biao" historical_model = 1 }
+			}
+		}
+
+		army = {	
+			name = "G.C. Guangxi"
+			leader = 99999951
+			location = 7605
+			regiment = { type = hq_brigade name = "General-in-Chief of Guangxi" historical_model = 1 }
+			
+			division= {
+				name = "Guangxi Lujun Di 25 Zhen"
+				location = 7553
+				regiment = { type = infantry_brigade experience = 10 name = "Budui Di 49 Xie/ Budui Di 50 Xie" historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 10 name = "Madui Di 25 Biao" historical_model = 1 }
+				regiment = { type = artillery_brigade experience = 10 name = "Paodui Di 25 Biao" historical_model = 1 }
+			}
+		}
+	}
+
+	armygroup = {
+		name = "G.G. Sichuan"
+		leader = 99999950
+		location = 9415
+		regiment = { type = hq_brigade name = "Governor-General of Sichuan" historical_model = 1 }
+		
+		army = {	
+			name = "G.C. Sichuan"
+			location = 9415
+			regiment = { type = hq_brigade name = "General-in-Chief of Sichuan" historical_model = 1 }
+			
+			division= {
+				name = "Sichuan Lujun Di 17 Zhen"
+				leader = 99999949
+				location = 9415
+				regiment = { type = infantry_brigade experience = 10 name = "Budui Di 33 Xie/ Budui Di 34 Xie" historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 10 name = "Madui Di 17 Biao" historical_model = 1 }
+				regiment = { type = artillery_brigade experience = 10 name = "Paodui Di 17 Biao" historical_model = 1 }
+			}
+		}
+	}
+
+	armygroup = {
+		name = "G.G. Yun-Gui"
+		leader = 99999948
+		location = 7541
+		regiment = { type = hq_brigade name = "Governor-General of Yun-Gui" historical_model = 1 }
+		
+		army = {	
+			name = "G.C. Yunnan"
+			location = 9527
+			regiment = { type = hq_brigade name = "General-in-Chief of Yunnan" historical_model = 1 }
+			
+			division= {
+				name = "Yunnan Lujun Di 19 Zhen"
+				leader = 99999947
+				location = 7561
+				regiment = { type = infantry_brigade experience = 10 name = "Budui Di 37 Xie/ Budui Di 38 Xie" historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 10 name = "Madui Di 19 Biao" historical_model = 1 }
+				regiment = { type = artillery_brigade experience = 10 name = "Paodui Di 19 Biao" historical_model = 1 }
+			}
+		}
+		
+		army = {	
+			name = "G.C. Guizhou"
+			location = 7562
+			regiment = { type = hq_brigade name = "General-in-Chief of Guizhou" historical_model = 1 }
+		}
+	}
 
 navy = {
 name = "Northern Fleet"
@@ -158,8 +427,6 @@ ship = { type = protected_cruiser name = "Teng Ying Chou" historical_model = 1 e
 ship = { type = protected_cruiser name = "Yuan Kai" historical_model = 1 experience = 15 }
 ship = { type = protected_cruiser name = "Fu Po" historical_model = 1 experience = 15 }
 ship = { type = protected_cruiser name = "Chao Wu" historical_model = 2 experience = 15 }
-
-
 
 ship = {
 name = "Di'1 Quzujian Zhidui"
@@ -177,7 +444,6 @@ ship = { type = protected_cruiser name = "Hai Tan" historical_model = 7 experien
 ship = { type = protected_cruiser name = "Tung Chi" historical_model = 6 experience = 15 }
 ship = { type = protected_cruiser name = "King Ching" historical_model = 5 experience = 15 }
 
-
 }
 navy = {
 name = "Southern Fleet"
@@ -187,10 +453,10 @@ base = 5834
 ship = { type = protected_cruiser name = "Hai Yung" historical_model = 7 experience = 15 }
 ship = { type = protected_cruiser name = "Fu An" historical_model = 6 experience = 15 }
 
-
-
 ship = {
 name = "1. Yunshujian Dadui"
 type = transport_ship
 historical_model = 0}
+}
+	
 }
