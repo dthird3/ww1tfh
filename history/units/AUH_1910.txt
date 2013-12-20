@@ -1,735 +1,1629 @@
-
-
-
-
 theatre = {
-
-name = "Österreich Oberkommando"
-
+name = "k.u.k. Osterreiches Armeeoberkommando"
 location = 3026
 
-regiment = { type = hq_brigade name = "Österreich Oberkommando" historical_model = 0 }
+regiment = {
+type = hq_brigade
+name = "k.u.k. Osterreiches Armeeoberkommando"
+historical_model = 2
+experience = 10
+}
+
+division = {
+name = "105. LstrInfanteriebrigaden"
+location = 3429
+
+regiment = {
+type = militia_brigade
+name = "105. Landsturminfanterie"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+}
+
+division = {
+name = "103. LstrInfanteriebrigaden"
+location = 3630
+
+regiment = {
+type = militia_brigade
+name = "103. Landsturminfanterie"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+}
+
+division = {
+name = "102. LstrInfanteriebrigaden"
+location = 3633
+
+regiment = {
+type = militia_brigade
+name = "102. Landsturminfanterie"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+}
+
+corps = {
+name = "Armeegruppe Von Falkenfeld"
+location = 2562
+
+regiment = {
+type = hq_brigade
+name = "Armeegruppe Von Falkenfeld"
+historical_model = 2
+experience = 10
+}
+
+division = {
+name = "7. Kavalleriedivision"
+location = 2562
+
+regiment = {
+type = cavalry_brigade
+name = "11. Kavalleriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = cavalry_brigade
+name = "20. Kavalleriebrigaden"
+historical_model = 2
+experience = 10
+}
+}
+
+division = {
+name = "95. Landsturminfanteriedivision"
+location = 2562
+
+regiment = {
+type = militia_brigade
+name = "von Lindenrode's Landsturminfanterie"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+
+regiment = {
+type = militia_brigade
+name = "Piasecki's Landsturminfanterie"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+}
+
+division = {
+name = "106. Landsturminfanteriedivision"
+location = 2562
+
+regiment = {
+type = militia_brigade
+name = "von Broddenritt's Landsturminfanterie"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+
+regiment = {
+type = militia_brigade
+name = "von Rochel's Landsturminfanterie"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+
+regiment = {
+type = militia_brigade
+name = "100. Landsturminfanterie"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+}
+}
 
 armygroup = {
+name = "Kommando der Balkanstreitkrafte"
+location = 3570
 
-name = "1. Armeegruppe"
-
-location = 3026
-
-regiment = { type = hq_brigade name = "1. Armeegruppe" historical_model = 0 }
+regiment = {
+type = hq_brigade
+name = "Kommando der Balkanstreitkrafte"
+historical_model = 2
+experience = 10
+}
 
 army = {
+name = "5. Armee"
+location = 3706
 
-name = "I Állandó Hadsereg"
-
-location = 3026
-
-regiment = { type = hq_brigade name = "I Állandó Hadsereg" historical_model = 0 }
-
-division = { 
-
-name = "Landesschützen-Batallion"
-
-location = 3026
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-
-
-
+regiment = {
+type = hq_brigade
+name = "5. Armee"
+historical_model = 2
+experience = 10
 }
 
-division = { 
-
-name = "Landesschützen-Batallion"
-
-location = 3026
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-
-
-
+regiment = {
+type = engineer_brigade
+name = "5. Armee Engineers"
+historical_model = 0
+experience = 0
 }
 
-division = { 
+corps = {
+name = "VIII Armeekorps"
+location = 3640
 
-name = "Landesschützen-Batallion"
-
-location = 3026
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-
-
-
+regiment = {
+type = hq_brigade
+name = "VIII Armeekorps"
+historical_model = 2
+experience = 10
 }
 
-division = { 
+division = {
+name = "9. Infanteriedivision"
+location = 3640
 
-name = "Landesschützen-Batallion"
-
-location = 3026
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-
-
-
+regiment = {
+type = infantry_brigade
+name = "17. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+	
+regiment = {
+type = infantry_brigade
+name = "18. Infanteriebrigaden"
+historical_model = 2
+experience = 10
 }
 
-division = { 
-
-name = "Landesschützen-Batallion"
-
-location = 3026
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-
-
-
+regiment = {
+type = artillery_brigade
+name = "9. Artilleriebrigaden"
+historical_model = 0
+experience = 10
+}
 }
 
-division = { 
+division = {
+name = "21. Landwehrinfanteriedivision"
+location = 3640
 
-name = "Landesschützen-Batallion"
-
-location = 3026
-
+regiment = {
+type = infantry_brigade
+name = "41. LandwehrInfanterie"
+historical_model = 1
+experience = 5
 is_reserve = yes
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-
-
-
 }
 
-division = { 
-
-name = "Landesschützen-Batallion"
-
-location = 3026
-
+regiment = {
+type = infantry_brigade
+name = "42. LandwehrInfanterie"
+historical_model = 1
+experience = 5
 is_reserve = yes
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-
-
-
 }
 
-division = { 
-
-name = "1. Landesschützen-Batallion"
-
-location = 3026
-
+regiment = {
+type = artillery_brigade
+name = "21. LandwehrArtilleriebrigaden"
+historical_model = 0
+experience = 5
 is_reserve = yes
-
-regiment = { type = infantry_brigade name = "Landesschützen-Kompanie Unter-Inn-Thal Nr.I" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "Landesschützen-Kompanie Innsbruck-Wipp-Thal Nr.II" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "1. Artillerie-Kompanie" historical_model = 0 }
-
+}
+}
 }
 
-division = { 
+corps = {
+name = "XIII Armeekorps"
+location = 3705
 
-name = "2. Landesschützen-Batallion"
+regiment = {
+type = hq_brigade
+name = "XIII Armeekorps"
+historical_model = 2
+experience = 10
+}
 
+division = {
+name = "36. Infanteriedivision"
+location = 3705
+
+regiment = {
+type = infantry_brigade
+name = "71. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "72. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "36. Artilleriebrigaden"
+historical_model = 0
+experience = 10
+}
+}
+
+division = {
+name = "42. Honvedinfanteriedivision"
+location = 3705
+
+regiment = {
+type = infantry_brigade
+name = "83. Honvedinfanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "84. Honvedinfanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "42. HonvedArtilleriebrigaden"
+historical_model = 0
+experience = 10
+}
+}
+
+division = {
+name = "13. Infanteriebrigaden"
+location = 3705
+
+regiment = {
+type = infantry_brigade
+name = "13. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+}
+}
+}
+
+army = {
+name = "6. Armee"
+location = 4174
+
+regiment = {
+type = hq_brigade
+name = "6. Armee"
+historical_model = 2
+experience = 10
+}
+
+corps = {
+name = "XV Armeekorps"
+location = 4491
+
+regiment = {
+type = hq_brigade
+name = "XV Armeekorps"
+historical_model = 2
+experience = 10
+}
+
+division = {
+name = "1. Infanteriedivision"
+location = 4491
+
+regiment = {
+type = bergsjaeger_brigade
+name = "7. Gebirgsbrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = bergsjaeger_brigade
+name = "9. Gebirgsbrigaden"
+historical_model = 2
+experience = 10
+}
+}
+
+division = {
+name = "48. Infanteriedivision"
+location = 4491
+
+regiment = {
+type = bergsjaeger_brigade
+name = "10. Gebirgsbrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = bergsjaeger_brigade
+name = "12. Gebirgsbrigaden"
+historical_model = 2
+experience = 10
+}
+}
+}
+
+corps = {
+name = "XVI Armeekorps"
+location = 3981
+
+regiment = {
+type = hq_brigade
+name = "XVI Armeekorps"
+historical_model = 2
+experience = 10
+}
+
+division = {
+name = "18. Infanteriedivision"
+location = 3981
+
+regiment = {
+type = bergsjaeger_brigade
+name = "4. Gebirgsbrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = bergsjaeger_brigade
+name = "5. Gebirgsbrigaden"
+historical_model = 2
+experience = 10
+}
+}
+
+division = {
+name = "1. Gebirgsbrigaden"
+location = 3981
+
+regiment = {
+type = bergsjaeger_brigade
+name = "1.Gebirgsbrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = bergsjaeger_brigade
+name = "8. Gebirgsbrigaden"
+historical_model = 2
+experience = 10
+}
+}
+
+division = {
+name = "13.Gebirgsbrigaden"
+location = 3981
+
+regiment = {
+type = bergsjaeger_brigade
+name = "13.Gebirgsbrigaden"
+historical_model = 2
+experience = 10
+}
+}
+
+division = {
+name = "40. Honvedinfanteriedivision"
+location = 3981
+
+regiment = {
+type = infantry_brigade
+name = "79. Honvedinfanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "80. Honvedinfanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "40. HonvedArtilleriebrigaden"
+historical_model = 0
+experience = 10
+}
+}
+
+division = {
+name = "47. Infanterie Division"
+location = 4174
+
+regiment = {
+type = bergsjaeger_brigade
+name = "3.Gebirgsbrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = bergsjaeger_brigade
+name = "14. Gebirgsbrigaden"
+historical_model = 2
+experience = 10
+}
+}
+
+division = {
+name = "109.Landsturmbrigaden"
 location = 4236
 
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "Landesschützen-Kompanie Ober-Etsch-Thal Nr.IV" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "Landesschützen-Kompanie Etsch und Fleims-Thal Nr.V" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "2. Artillerie-Kompanie" historical_model = 0 }
-
+regiment = {
+type = militia_brigade
+name = "109.Landsturmbrigaden"
+historical_model = 0
+experience = 5
+}
+}
+}
+}
 }
 
-division = { 
+armygroup = {
+name = "Kommando der Nord"
+location = 3026
 
-name = "3. Landesschützen-Batallion"
-
-location = 3164
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "Landesschützen-Kompanie Noce-Avisio Nr.VII" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "Landesschützen-Kompanie Trient-Valsugana Nr.VIII" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "3. Artillerie-Regiment" historical_model = 0 }
-
+regiment = {
+type = hq_brigade
+name = "Kommando der Nord"
+historical_model = 2
+experience = 10
 }
-
-}
-
-corps = {
-
-name = "II Állandó Hadsereg"
-
-location = 2769
-
-regiment = { type = hq_brigade name = "II Állandó Hadsereg HQ" historical_model = 0 }
-
-division = { 
-
-name = "4 Landesschützen-Batallion"
-
-location = 3164
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "Landesschützen-Kompanie Voralberg Nr.X" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "Tiroler Landesschützen-Kompanie Nr.I" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "4. Artillerie-Regiment" historical_model = 0 }
-
-}
-
-division = { 
-
-name = "5. Landesschützen-Batallion"
-
-location = 3037
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "Tiroler Landesschützen-Kompanie Nr.III" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "Landesschützen-Kompanie Nr.I" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "5. Artillerie-Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "6. Landesschützen-Batallion"
-
-location = 3105
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "Landesschützen-Kompanie Nr.III" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "Landesschützen-Kompanie Nr.IV" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "6. Artillerie-Regiment" historical_model = 0 }
-
-}
-
-}
-
-corps = {
-
-name = "III Állandó Hadsereg"
-
-location = 2769
-
-regiment = { type = hq_brigade name = "III Állandó Hadsereg HQ" historical_model = 0 }
-
-division= {
-
-name = "7. Landesschützen-Batallion"
-
-location = 3164
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "Landesschützen-Kompanie Nr.VI" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "Landesschützen-Kompanie Nr.VII" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "7. Artillerie-Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "8. Landesschützen-Batallion"
-
-location = 2769
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "Landesschützen-Kompanie Nr.IX" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "Landesschützen-Kompanie Nr. X" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "8. Artillerie-Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "9. Landesschützen-Batallion"
-
-location = 2769
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "Landesschützen-Kompanie Nr. XII" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "Landesschützen-Kompanie Nr. XIII" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "9. Artillerie-Regiment" historical_model = 0 }
-
-}
-
-}
-
-
 
 army = {
+name = "1. Armee"
+location = 2445
 
+regiment = {
+type = hq_brigade
+name = "1. Armee"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = engineer_brigade
+name = "6th Engineer Battalion"
+historical_model = 0
+experience = 10
+}
+
+corps = {
+name = "I Armeekorps"
+location = 2445
+
+regiment = {
+type = hq_brigade
+name = "I Armeekorps"
+historical_model = 2
+experience = 10
+}
+
+division = {
+name = "5. Infanteriedivision"
+location = 2445
+
+regiment = {
+type = infantry_brigade
+name = "9. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "10. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "5. Artilleriebrigaden"
+historical_model = 0
+experience = 10
+}
+}
+
+division = {
+name = "46. Landwehrinfanteriedivision"
+location = 2445
+
+regiment = {
+type = infantry_brigade
+name = "91. LandwehrInfanterie"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+
+regiment = {
+type = infantry_brigade
+name = "92. LandwehrInfanterie"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+
+regiment = {
+type = artillery_brigade
+name = "46. LandwehrArtilleriebrigaden"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+}
+}
+
+corps = {
+name = "V Armeekorps"
+location = 2509
+
+regiment = {
+type = hq_brigade
+name = "V Armeekorps"
+historical_model = 2
+experience = 10
+}
+
+division = {
+name = "14. Infanteriedivision"
+location = 2509
+
+regiment = {
+type = infantry_brigade
+name = "27. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "28. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "14. Artilleriebrigaden"
+historical_model = 0
+experience = 10
+}
+}
+
+division = {
+name = "33. Infanteriedivision"
+location = 2509
+
+regiment = {
+type = infantry_brigade
+name = "65. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "66. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "33. Artilleriebrigaden"
+historical_model = 0
+experience = 10
+}
+}
+
+division = {
+name = "37. Honvedinfanteriedivision"
+location = 2509
+
+regiment = {
+type = infantry_brigade
+name = "73. Honvedinfanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "74. Honvedinfanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "37. HonvedArtilleriebrigaden"
+historical_model = 0
+experience = 10
+}
+}
+}
+
+corps = {
+name = "X Armeekorps"
+location = 2572
+
+regiment = {
+type = hq_brigade
+name = "X Armeekorps"
+historical_model = 2
+experience = 10
+}
+
+division = {
+name = "2. Infanteriedivision"
+location = 2572
+
+regiment = {
+type = infantry_brigade
+name = "3. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "4. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "2. Artilleriebrigaden"
+historical_model = 0
+experience = 10
+}
+}
+
+division = {
+name = "24. Infanteriedivision"
+location = 2572
+
+regiment = {
+type = infantry_brigade
+name = "47. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "48. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "24. Artilleriebrigaden"
+historical_model = 0
+experience = 10
+}
+}
+
+division = {
+name = "45. Landwehrinfanteriedivision"
+location = 2572
+
+regiment = {
+type = infantry_brigade
+name = "89. LandwehrInfanterie"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+
+regiment = {
+type = infantry_brigade
+name = "90. LandwehrInfanterie"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+
+regiment = {
+type = artillery_brigade
+name = "45. LandwehrArtilleriebrigaden"
+historical_model = 0
+experience = 5
+}
+}
+}
+
+corps = {
+name = "1. Armee Reserves"
+location = 2445
+
+regiment = {
+type = hq_brigade
+name = "1. Armee Reserves"
+historical_model = 2
+experience = 10
+}
+
+division = {
+name = "12. Infanteriedivision"
+location = 2445
+
+regiment = {
+type = infantry_brigade
+name = "23. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "24. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "12. Artilleriebrigaden"
+historical_model = 0
+experience = 10
+}
+}
+
+division = {
+name = "3. Kavalleriedivision"
+location = 2445
+
+regiment = {
+type = cavalry_brigade
+name = "10. Kavalleriebrigaden"
+historical_model = 2
+experience = 10
+}
+}
+
+division = {
+name = "9. Kavalleriedivision"
+location = 2445
+
+regiment = {
+type = cavalry_brigade
+name = "1. Dragoon Kavalleriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = cavalry_brigade
+name = "9. Dragoon Kavalleriebrigaden"
+historical_model = 2
+experience = 10
+}
+}
+
+division = {
+name = "1. LstrInfanteriebrigaden"
+location = 2445
+
+regiment = {
+type = militia_brigade
+name = "1. Landsturminfanterie"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+}
+
+division = {
+name = "101. Landsturminfanterie"
+location = 2572
+
+regiment = {
+type = militia_brigade
+name = "101. Landsturminfanterie"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+
+regiment = {
+type = militia_brigade
+name = "110. Landsturminfanterie"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+}
+}
+}
+
+army = {
 name = "2. Armee"
+location = 3164
 
-location = 4236
+regiment = {
+type = hq_brigade
+name = "2. Armee"
+historical_model = 2
+experience = 10
+}
 
-regiment = { type = hq_brigade name = "2. Hadtest HQ" historical_model = 0 }
+regiment = {
+type = engineer_brigade
+name = "10th Engineer Battalion"
+historical_model = 0
+experience = 10
+}
 
 corps = {
+name = "XII Armeekorps"
+location = 3164
 
-name = "IV Állandó Hadsereg"
-
-location = 4236
-
-regiment = { type = hq_brigade name = "IV Állandó Hadsereg HQ" historical_model = 0 }
-
-division= {
-
-name = "10. gyaloghadosztály"
-
-location = 4236
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "Kaiserschützenregiment Nr.I" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "Kaiserschützenregiment Nr.II" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "10. Artillerie-Regiment" historical_model = 0 }
-
+regiment = {
+type = hq_brigade
+name = "XII Armeekorps"
+historical_model = 2
+experience = 10
 }
 
-division= {
+division = {
+name = "16. Infanteriedivision"
+location = 3164
 
-name = "11. gyaloghadosztály"
-
-location = 4236
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "Kaiserschützenregiment Nr.IV" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "Kaiserschützenregiment Nr.V" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "11. Artillerie-Regiment" historical_model = 0 }
-
+regiment = {
+type = infantry_brigade
+name = "31. Infanteriebrigaden"
+historical_model = 2
+experience = 10
 }
 
-division= {
-
-name = "12. gyaloghadosztály"
-
-location = 4236
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "Kaiserschützenregiment Nr.VII" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "Kaiserschützenregiment Nr.VIII" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "12. Artillerie-Regiment" historical_model = 0 }
-
+regiment = {
+type = infantry_brigade
+name = "32. Infanteriebrigaden"
+historical_model = 2
+experience = 10
 }
 
+regiment = {
+type = artillery_brigade
+name = "16. Artilleriebrigaden"
+historical_model = 0
+experience = 10
+}
 }
 
+division = {
+name = "35. Infanteriedivision"
+location = 3164
 
-
+regiment = {
+type = infantry_brigade
+name = "69. Infanteriebrigaden"
+historical_model = 2
+experience = 10
 }
 
-
-
+regiment = {
+type = infantry_brigade
+name = "70. Infanteriebrigaden"
+historical_model = 2
+experience = 10
 }
 
+regiment = {
+type = artillery_brigade
+name = "35. Artilleriebrigaden"
+historical_model = 0
+experience = 10
+}
 }
 
-theatre = {
+division = {
+name = "38. Honvedinfanteriedivision"
+location = 3164
 
-name = "Balkan Oberkommando"
+regiment = {
+type = infantry_brigade
+name = "75. Honvedinfanteriebrigaden"
+historical_model = 2
+experience = 10
+}
 
-location = 4236
+regiment = {
+type = infantry_brigade
+name = "76. Honvedinfanteriebrigaden"
+historical_model = 2
+experience = 10
+}
 
-regiment = { type = hq_brigade name = "Balkan Oberkommando" historical_model = 0 }
+regiment = {
+type = artillery_brigade
+name = "38. HonvedArtilleriebrigaden"
+historical_model = 0
+experience = 10
+}
+}
 
-armygroup = {
+division = {
+name = "8. Kavalleriedivision"
+location = 3164
 
-name = "2. Armeegruppe"
+regiment = {
+type = cavalry_brigade
+name = "13. Uhlans Kavalleriebrigaden"
+historical_model = 2
+experience = 10
+}
 
-location = 4236
-
-regiment = { type = hq_brigade name = "2. Armeegruppe" historical_model = 0 }
+regiment = {
+type = cavalry_brigade
+name = "15. Dragoons Kavalleriebrigaden"
+historical_model = 2
+experience = 10
+}
+}
+}
 
 army = {
-
 name = "3. Armee"
+location = 2956
 
-location = 4236
-
-regiment = { type = hq_brigade name = "3. Armee" historical_model = 0 }
-
-corps = {
-
-name = "V Állandó Hadsereg"
-
-location = 4236
-
-regiment = { type = hq_brigade name = "V Állandó Hadsereg HQ" historical_model = 0 }
-
-division= {
-
-name = "13. gyaloghadosztály"
-
-location = 4236
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "Kaiserschützenregiment Nr.X" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "Kaiserschützenregiment Nr.XI" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "13. Artillerie-Regiment" historical_model = 0 }
-
+regiment = {
+type = hq_brigade
+name = "3. Armee"
+historical_model = 2
+experience = 10
 }
 
-division= {
-
-name = "14. gyaloghadosztály"
-
-location = 4236
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "Kaiserschützenregiment Nr.XIII" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "Kaiserschützenregiment Nr.XIV" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "14. Artillerie-Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "15. gyaloghadosztály"
-
-location = 4236
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "Kaiserschützenregiment Nr.XVI" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "Kaiserschützenregiment Nr.XVII" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "14. Artillerie-Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "16. gyaloghadosztály"
-
-location = 4236
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "Kaiserschützenregiment Nr.IXX" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "Kaiserschützenregiment Nr.XX" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "14. Artillerie-Regiment" historical_model = 0 }
-
-}
-
+regiment = {
+type = engineer_brigade
+name = "15th Engineer Battalion"
+historical_model = 0
+experience = 10
 }
 
 corps = {
+name = "XI Armeekorps"
+location = 3430
 
-name = "VI Állandó Hadsereg"
-
-location = 4236
-
-regiment = { type = hq_brigade name = "VI Állandó Hadsereg HQ" historical_model = 0 }
-
-division = {
-
-name = "1. Königliche-Garnison"
-
-location = 4236
-
-regiment = { type = garrison_brigade name = "1. Kaiserschützenregiment-Garnison-Kompanie" historical_model = 0 }
-
-regiment = { type = garrison_brigade name = "2. Kaiserschützenregiment-Garnison-Kompanie" historical_model = 0 }
-
+regiment = {
+type = hq_brigade
+name = "XI Armeekorps"
+historical_model = 2
+experience = 10
 }
 
 division = {
+name = "30. Infanteriedivision"
+location = 3430
 
-name = "2. Königliche-Garnison"
-
-location = 4236
-
-regiment = { type = garrison_brigade name = "3. Kaiserschützenregiment-Garnison-Kompanie" historical_model = 0 }
-
-regiment = { type = garrison_brigade name = "4. Kaiserschützenregiment-Garnison-Kompanie" historical_model = 0 }
-
+regiment = {
+type = infantry_brigade
+name = "60. Infanteriebrigaden"
+historical_model = 2
+experience = 10
 }
 
-division = {
-
-name = "3. Königliche-Garnison"
-
-location = 4236
-
-regiment = { type = garrison_brigade name = "5. Kaiserschützenregiment-Garnison-Kompanie" historical_model = 0 }
-
-regiment = { type = garrison_brigade name = "6. Kaiserschützenregiment-Garnison-Kompanie" historical_model = 0 }
-
+regiment = {
+type = infantry_brigade
+name = "85. Infanteriebrigaden"
+historical_model = 2
+experience = 10
 }
 
-division = {
-
-name = "4. Königliche-Garnison"
-
-location = 4236
-
-regiment = { type = garrison_brigade name = "7. Kaiserschützenregiment-Garnison-Kompanie" historical_model = 0 }
-
-regiment = { type = garrison_brigade name = "8. Kaiserschützenregiment-Garnison-Kompanie" historical_model = 0 }
-
+regiment = {
+type = artillery_brigade
+name = "30. Artilleriebrigaden"
+historical_model = 0
+experience = 10
 }
-
-division = {
-
-name = "5. Königliche-Garnison"
-
-location = 4236
-
-regiment = { type = garrison_brigade name = "8. Kaiserschützenregiment-Garnison-Kompanie" historical_model = 0 }
-
-regiment = { type = garrison_brigade name = "9. Kaiserschützenregiment-Garnison-Kompanie" historical_model = 0 }
-
 }
-
 }
 
 corps = {
+name = "3.Armee Reserve"
+location = 2956
 
-name = "VIII Állandó Hadsereg"
-
-location = 3772
-
-regiment = { type = hq_brigade name = "VII Állandó Hadsereg HQ" historical_model = 0 }
-
-division = { 
-
-name = "Landesschützen-Batallion"
-
-location = 3772
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-
-
-
+regiment = {
+type = hq_brigade
+name = "3.Armee Reserve"
+historical_model = 2
+experience = 10
 }
 
-division = { 
+division = {
+name = "23. Honvedinfanteriedivision"
+location = 2956
 
-name = "Landesschützen-Batallion"
-
-location = 3840
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-
-
-
+regiment = {
+type = infantry_brigade
+name = "45. Honvedinfanteriebrigaden"
+historical_model = 2
+experience = 10
 }
 
-division = { 
-
-name = "Landesschützen-Batallion"
-
-location = 3771
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-
+regiment = {
+type = infantry_brigade
+name = "46. Honvedinfanteriebrigaden"
+historical_model = 2
+experience = 10
 }
 
-division = { 
-
-name = "Landesschützen-Batallion"
-
-location = 3771
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-
+regiment = {
+type = artillery_brigade
+name = "23. HonvedArtilleriebrigaden"
+historical_model = 0
+experience = 10
+}
 }
 
+division = {
+name = "41. Honvedinfanteriedivision"
+location = 2956
+
+regiment = {
+type = infantry_brigade
+name = "40. Honvedinfanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "82. Honvedinfanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "41. HonvedArtilleriebrigaden"
+historical_model = 0
+experience = 10
+}
+}
+
+division = {
+name = "2. Kavalleriedivision"
+location = 2956
+
+regiment = {
+type = cavalry_brigade
+name = "3. Kavalleriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = cavalry_brigade
+name = "16. Kavalleriebrigaden"
+historical_model = 2
+experience = 10
+}
+}
+
+division = {
+name = "4. Kavalleriedivision"
+location = 2956
+
+regiment = {
+type = cavalry_brigade
+name = "18. Kavalleriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = cavalry_brigade
+name = "21. Kavalleriebrigaden"
+historical_model = 2
+experience = 10
+}
+}
+
+division = {
+name = "11.Honved Kavallerie-Division"
+location = 2956
+
+regiment = {
+type = cavalry_brigade
+name = "22.Honved Kavalleriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = cavalry_brigade
+name = "24.Honved Kavalleriebrigaden"
+historical_model = 2
+experience = 10
+}
+}
 }
 
 corps = {
+name = "XIV Armeekorps"
+location = 3289
 
-name = "VIX Állandó Hadsereg"
+regiment = {
+type = hq_brigade
+name = "XIV Armeekorps"
+historical_model = 2
+experience = 10
+}
 
-location = 4236
+division = {
+name = "3. Infanteriedivision"
+location = 3289
 
-regiment = { type = hq_brigade name = "VIII Állandó Hadsereg HQ" historical_model = 0 }
+regiment = {
+type = infantry_brigade
+name = "5. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
 
-division = { 
+regiment = {
+type = infantry_brigade
+name = "15. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
 
-name = "Landesschützen-Batallion"
+regiment = {
+type = artillery_brigade
+name = "3. Artilleriebrigaden"
+historical_model = 0
+experience = 10
+}
+}
 
-location = 4236
+division = {
+name = "8. Infanteriedivision"
+location = 3289
 
+regiment = {
+type = guards_brigade
+name = "3/4. Kaiserjagerregiments"
+historical_model = 3
+experience = 20
+}
+
+regiment = {
+type = guards_brigade
+name = "1/2. Kaiserjagerregiments"
+historical_model = 3
+experience = 20
+}
+
+
+regiment = {
+type = artillery_brigade
+name = "8. Artilleriebrigaden"
+historical_model = 0
+experience = 10
+}
+}
+
+division = {
+name = "44. Landwehrinfanteriedivision"
+location = 3289
+
+regiment = {
+type = infantry_brigade
+name = "87. LandwehrInfanterie"
+historical_model = 1
+experience = 5
 is_reserve = yes
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-
-
 }
 
-division = { 
-
-name = "Landesschützen-Batallion"
-
-location = 4236
-
+regiment = {
+type = infantry_brigade
+name = "122. LandwehrInfanterie"
+historical_model = 1
+experience = 5
 is_reserve = yes
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-
-
 }
 
-division = { 
+regiment = {
+type = artillery_brigade
+name = "44. LandwehrArtilleriebrigaden"
+historical_model = 0
+experience = 5
+}
+}
 
-name = "Landesschützen-Batallion"
+division = {
+name = "108. LstrInfanteriebrigaden"
+location = 3289
 
-location = 4236
-
+regiment = {
+type = militia_brigade
+name = "108. Landsturminfanterie"
+historical_model = 0
+experience = 5
 is_reserve = yes
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-
-
+}
+}
+}
 }
 
-division = { 
+army = {
+name = "4. Armee"
+location = 3441
 
-name = "Landesschützen-Batallion"
+regiment = {
+type = hq_brigade
+name = "4. Armee"
+historical_model = 2
+experience = 10
+}
 
-location = 4236
+regiment = {
+type = engineer_brigade
+name = "18th Engineer Battalion"
+historical_model = 0
+experience = 10
+}
 
+corps = {
+name = "II Armeekorps"
+location = 3577
+
+regiment = {
+type = hq_brigade
+name = "II Armeekorps"
+historical_model = 2
+experience = 10
+}
+
+division = {
+name = "4. Infanteriedivision"
+location = 3441
+
+regiment = {
+type = infantry_brigade
+name = "7. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "8. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "4. Artilleriebrigaden"
+historical_model = 0
+experience = 10
+}
+}
+
+division = {
+name = "13. Landwehrinfanteriedivision"
+location = 3441
+
+regiment = {
+type = infantry_brigade
+name = "25. LandwehrInfanterie"
+historical_model = 1
+experience = 5
 is_reserve = yes
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-
-
 }
 
-division = { 
-
-name = "Landesschützen-Batallion"
-
-location = 4236
-
+regiment = {
+type = infantry_brigade
+name = "26. LandwehrInfanterie"
+historical_model = 1
+experience = 5
 is_reserve = yes
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-
-
-
-
-
-
 }
 
+regiment = {
+type = artillery_brigade
+name = "13. LandwehrArtilleriebrigaden"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
 }
 
+division = {
+name = "25. Infanteriedivision"
+location = 3441
+
+regiment = {
+type = infantry_brigade
+name = "49. Infanteriebrigaden"
+historical_model = 2
+experience = 10
 }
 
+regiment = {
+type = infantry_brigade
+name = "50. Infanteriebrigaden"
+historical_model = 2
+experience = 10
 }
 
+regiment = {
+type = artillery_brigade
+name = "25. Artilleriebrigaden"
+historical_model = 0
+experience = 10
 }
+}
+}
+
+corps = {
+name = "VI Armeekorps"
+location = 3035
+
+regiment = {
+type = hq_brigade
+name = "VI Armeekorps"
+historical_model = 2
+experience = 10
+}
+
+division = {
+name = "15. Infanteriedivision"
+location = 3035
+
+regiment = {
+type = infantry_brigade
+name = "29. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "30. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "15. Artilleriebrigaden"
+historical_model = 0
+experience = 10
+}
+}
+
+division = {
+name = "27. Infanteriedivision"
+location = 3035
+
+regiment = {
+type = infantry_brigade
+name = "53. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "54. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "27. Artilleriebrigaden"
+historical_model = 0
+experience = 10
+}
+}
+
+division = {
+name = "39. Honvedinfanteriedivision"
+location = 3035
+
+regiment = {
+type = infantry_brigade
+name = "77. Honvedinfanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "78. Honvedinfanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "39. HonvedArtilleriebrigaden"
+historical_model = 0
+experience = 10
+}
+}
+}
+
+corps = {
+name = "IX Armeekorps"
+location = 3304
+
+regiment = {
+type = hq_brigade
+name = "IX Armeekorps"
+historical_model = 2
+experience = 10
+}
+
+division = {
+name = "10. Infanteriedivision"
+location = 3304
+
+regiment = {
+type = infantry_brigade
+name = "19. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "20. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "10. Artilleriebrigaden"
+historical_model = 0
+experience = 10
+}
+}
+
+division = {
+name = "26. Landwehrinfanteriedivision"
+location = 3304
+
+regiment = {
+type = infantry_brigade
+name = "51. LandwehrInfanterie"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+
+regiment = {
+type = infantry_brigade
+name = "52. LandwehrInfanterie"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+
+regiment = {
+type = artillery_brigade
+name = "26. LandwehrArtilleriebrigaden"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+}
+}
+
+corps = {
+name = "XVII Armeekorps"
+location = 3441
+
+regiment = {
+type = hq_brigade
+name = "XVII Armeekorps"
+historical_model = 2
+experience = 10
+}
+
+division = {
+name = "19. Infanteriedivision"
+location = 3441
+
+regiment = {
+type = infantry_brigade
+name = "37. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "38. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "19. Artilleriebrigaden"
+historical_model = 0
+experience = 10
+}
+}
+
+division = {
+name = "6. Kavalleriedivision"
+location = 3441
+
+regiment = {
+type = cavalry_brigade
+name = "5. Kavalleriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = cavalry_brigade
+name = "14. Kavalleriebrigaden"
+historical_model = 2
+experience = 10
+}
+}
+
+division = {
+name = "10. Kavalleriedivision"
+location = 3441
+
+regiment = {
+type = cavalry_brigade
+name = "4. Kavalleriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = cavalry_brigade
+name = "8. Kavalleriebrigaden"
+historical_model = 2
+experience = 10
+}
+}
+}
+}
+}
+}
+
 
 navy = {
 name = "1. Linienschiffschwadron"
@@ -737,12 +1631,10 @@ location = 3904
 base = 3904
 ship = { type = battleship name = "SMS Kronprinzessin Erzherzogin Stephanie" historical_model = 3 experience = 15 }
 ship = { type = battleship name = "SMS Kronprinz Erzherzogin Rudolf" historical_model = 4 experience = 15 }
-
 ship = { type = destroyer name = "1. Zerstörergeschwader" historical_model = 1 experience = 15 }
 ship = { type = destroyer name = "2. Zerstörergeschwader" historical_model = 7 experience = 15 }
-
-
 }
+
 navy = {
 name = "2. Linienschiffschwadron"
 location = 3904
@@ -754,9 +1646,8 @@ ship = { type = battleship name = "SMS Habsburg" historical_model = 9 experience
 ship = { type = battleship name = "SMS Árpád" historical_model = 9 experience = 15 }
 ship = { type = battleship name = "SMS Babenberg" historical_model = 9 experience = 15 }
 ship = { type = destroyer name = "3. Zerstörergeschwader" historical_model = 7 experience = 15 }
-
-
 }
+
 navy = {
 name = "3. Linienschiffschwadron"
 location = 3904
@@ -765,10 +1656,8 @@ ship = { type = battleship name = "SMS Monarch" historical_model = 7 experience 
 ship = { type = battleship name = "SMS Wien" historical_model = 7 experience = 15 }
 ship = { type = battleship name = "SMS Budapest" historical_model = 7 experience = 15 }
 ship = { type = heavy_cruiser name = "SMS Kaiserin und Königin Maria Theresia" historical_model = 1 experience = 15 }
-
-
-
 }
+
 navy = {
 name = "1. Kreuzerdivision"
 location = 3904
@@ -784,11 +1673,8 @@ ship = { type = protected_cruiser name = "SMS Zara" historical_model = 0 experie
 ship = { type = protected_cruiser name = "SMS Spalato" historical_model = 0 experience = 15 }
 ship = { type = protected_cruiser name = "SMS Sebenico" historical_model = 0 experience = 15 }
 ship = { type = protected_cruiser name = "SMS Lussin" historical_model = 0 experience = 15 }
-
-
-
-
 }
+
 navy = {
 name = "2. Kreuzerdivision"
 location = 3904
@@ -797,9 +1683,8 @@ base = 3904
 ship = { type = heavy_cruiser name = "SMS Sankt Georg" historical_model = 6 experience = 15 }
 ship = { type = protected_cruiser name = "SMS Aspern" historical_model = 4 experience = 15 }
 ship = { type = protected_cruiser name = "SMS Szigetvár" historical_model = 4 experience = 15 }
-
-
 }
+
 navy = {
 name = "Transportschwadron"
 location = 3904
@@ -809,16 +1694,15 @@ ship = {
 name = "1. . Truppentransporterflottille"
 type = transport_ship
 historical_model = 0}
-
 }
+
 navy = {
 name = "Chinastation"
 location = 5246
 base = 5246
 ship = { type = protected_cruiser name = "SMS Kaiserin Elisabeth" historical_model = 3 experience = 15 }
-
-
 }
+
 navy = {
 name = "U-bootdivision"
 location = 3904
@@ -826,13 +1710,6 @@ base = 3904
 
 ship = { type = coastal_submarine name = "1. Unterseebootsflottille" historical_model = 3 experience = 15 }
 }
-
-
-
-
-
-
-
 
 military_construction = {
 country = AUH
@@ -851,6 +1728,7 @@ historical_model = 12}
 cost = 2
 progress = 0
 duration = 35}
+
 military_construction = {
 country = AUH
 battleship = {
@@ -859,6 +1737,7 @@ historical_model = 12}
 cost = 2
 progress = 0
 duration = 259}
+
 military_construction = {
 country = AUH
 battleship = {
@@ -867,2099 +1746,3 @@ historical_model = 12}
 cost = 2
 progress = 0
 duration = 502}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
