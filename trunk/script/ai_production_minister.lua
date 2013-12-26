@@ -195,39 +195,47 @@ local UnitTypes = {
 		Index = 27,
 		Type = "Naval",
 		SubType = "Submarine"},
+	coastal_submarine = {
+		Index = 28,
+		Type = "Naval",
+		SubType = "Submarine"},
+	longrange_submarine = {
+		Index = 29,
+		Type = "Naval",
+		SubType = "Submarine"},
 
 	-- Transport Craft (The Order matters as the last one available via tech is what the AI will build
 	transport_ship = {
-		Index = 28,
+		Index = 30,
 		Serial = 1,
 		Type = "Naval",
 		SubType = "Transport"},
 		
 	-- Invasion Craft (The Order matters as the last one available via tech is what the AI will build
 	invasion_transport_ship = {
-		Index = 29,
-		Serial = 1,
-		Type = "Naval",
-		SubType = "Invasion"},
-	assault_ship = {
-		Index = 30,
+		Index = 31,
 		Serial = 1,
 		Type = "Naval",
 		SubType = "Invasion"},
 		
 	-- Air Units
 	interceptor = {
-		Index = 31,
+		Index = 32,
 		Serial = 1,
 		Type = "Air",
 		SubType = "Fighter"},
 	airship = {
-		Index = 32,
+		Index = 33,
 		Serial = 1,
 		Type = "Air",
 		SubType = "Strategic"},
 	tactical_bomber = {
-		Index = 33,
+		Index = 34,
+		Serial = 1,
+		Type = "Air",
+		SubType = "Tactical"},
+	scout = {
+		Index = 35,
 		Serial = 1,
 		Type = "Air",
 		SubType = "Tactical"},
@@ -236,22 +244,6 @@ local UnitTypes = {
 		
 	-- Elite Units
 	gurkha_brigade = {
-		Index = 34,
-		Serial = 1,
-		Size = 2,
-		Support = 1,
-		SupportGroup = "Motor",
-		Type = "Land",
-		SubType = "Elite Infantry"},
-	waffen_brigade = {
-		Index = 35,
-		Serial = 1,
-		Size = 2,
-		Support = 1,
-		SupportGroup = "Motor",
-		Type = "Land",
-		SubType = "Elite Infantry"},
-	ranger_brigade = {
 		Index = 36,
 		Serial = 1,
 		Size = 2,
@@ -259,15 +251,15 @@ local UnitTypes = {
 		SupportGroup = "Motor",
 		Type = "Land",
 		SubType = "Elite Infantry"},
-	imperial_brigade = {
+	waffen_brigade = {
 		Index = 37,
 		Serial = 1,
 		Size = 2,
 		Support = 1,
-		SupportGroup = "Marine",
+		SupportGroup = "Motor",
 		Type = "Land",
 		SubType = "Elite Infantry"},
-	guards_brigade = {
+	ranger_brigade = {
 		Index = 38,
 		Serial = 1,
 		Size = 2,
@@ -275,15 +267,15 @@ local UnitTypes = {
 		SupportGroup = "Motor",
 		Type = "Land",
 		SubType = "Elite Infantry"},
-	alpins_brigade = {
+	imperial_brigade = {
 		Index = 39,
 		Serial = 1,
 		Size = 2,
 		Support = 1,
-		SupportGroup = "Motor",
+		SupportGroup = "Marine",
 		Type = "Land",
 		SubType = "Elite Infantry"},
-	alpini_brigade = {
+	guards_brigade = {
 		Index = 40,
 		Serial = 1,
 		Size = 2,
@@ -291,7 +283,7 @@ local UnitTypes = {
 		SupportGroup = "Motor",
 		Type = "Land",
 		SubType = "Elite Infantry"},
-	austrian_brigade = {
+	alpins_brigade = {
 		Index = 41,
 		Serial = 1,
 		Size = 2,
@@ -299,8 +291,24 @@ local UnitTypes = {
 		SupportGroup = "Motor",
 		Type = "Land",
 		SubType = "Elite Infantry"},
-	janissary_brigade = {
+	alpini_brigade = {
 		Index = 42,
+		Serial = 1,
+		Size = 2,
+		Support = 1,
+		SupportGroup = "Motor",
+		Type = "Land",
+		SubType = "Elite Infantry"},
+	austrian_brigade = {
+		Index = 43,
+		Serial = 1,
+		Size = 2,
+		Support = 1,
+		SupportGroup = "Motor",
+		Type = "Land",
+		SubType = "Elite Infantry"},
+	janissary_brigade = {
+		Index = 44,
 		Serial = 1,
 		Size = 2,
 		Support = 1,
@@ -643,19 +651,19 @@ function ProductionMinister_Tick(minister)
 		
 		-- One loop to do all the counting (Performance)
 		for k, v in pairs(UnitTypes) do
-			--Utils.LUA_DEBUGOUT("Country: " .. tostring(ProductionData.ministerTag) .. " unit type" .. tostring(v.Index))
+			Utils.LUA_DEBUGOUT("Country: " .. tostring(ProductionData.ministerTag) .. " unit type" .. tostring(v.Index))
 			if v.Type == "Land" then ProductionData.LandCountTotal = ProductionData.LandCountTotal + ProductionData.TotalCounts[v.Index] end
-			--Utils.LUA_DEBUGOUT("Land OK")
+			Utils.LUA_DEBUGOUT("Land OK")
 			if v.Type == "Air" then ProductionData.AirCountTotal = ProductionData.AirCountTotal + ProductionData.TotalCounts[v.Index] end
-			--Utils.LUA_DEBUGOUT("Air OK")
+			Utils.LUA_DEBUGOUT("Air OK")
 			if v.Type == "Naval" then ProductionData.NavalCountTotal = ProductionData.NavalCountTotal + ProductionData.TotalCounts[v.Index] end
-			--Utils.LUA_DEBUGOUT("Naval OK")
+			Utils.LUA_DEBUGOUT("Naval OK")
 			if v.Type == "Land" and v.SubType == "Special Forces" then ProductionData.SpecialForcesCountTotal = ProductionData.SpecialForcesCountTotal + ProductionData.TotalCounts[v.Index] end
-			--Utils.LUA_DEBUGOUT("Special OK")
+			Utils.LUA_DEBUGOUT("Special OK")
 			if v.Type == "Secret" then ProductionData.FlyingBombsCountTotal = ProductionData.FlyingBombsCountTotal + ProductionData.TotalCounts[v.Index] end
-			--Utils.LUA_DEBUGOUT("Secret OK")
+			Utils.LUA_DEBUGOUT("Secret OK")
 			if v.CanPara == true then ProductionData.ParaCountTotal = ProductionData.ParaCountTotal + ProductionData.TotalCounts[v.Index] end
-			--Utils.LUA_DEBUGOUT("Para OK")
+			Utils.LUA_DEBUGOUT("Para OK")
 		end
 		-- End of Counting
 
