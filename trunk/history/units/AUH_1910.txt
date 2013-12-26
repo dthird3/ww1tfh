@@ -299,6 +299,19 @@ historical_model = 2
 experience = 10
 }
 }
+
+division = {
+name = "104. Landstrurmbrigaden"
+location = 3706
+
+regiment = {
+type = militia_brigade
+name = "104. Landsturmbrigaden"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+}
 }
 }
 
@@ -310,6 +323,13 @@ regiment = {
 type = hq_brigade
 name = "6. Armee"
 historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = engineer_brigade
+name = "4th Engineer Battalion"
+historical_model = 0
 experience = 10
 }
 
@@ -407,6 +427,18 @@ experience = 10
 regiment = {
 type = bergsjaeger_brigade
 name = "8. Gebirgsbrigaden"
+historical_model = 2
+experience = 10
+}
+}
+
+division = {
+name = "2.Gebirgsbrigaden"
+location = 3981
+
+regiment = {
+type = bergsjaeger_brigade
+name = "2.Gebirgsbrigaden"
 historical_model = 2
 experience = 10
 }
@@ -809,6 +841,13 @@ name = "10. Kavalleriebrigaden"
 historical_model = 2
 experience = 10
 }
+
+regiment = {
+type = cavalry_brigade
+name = "17. Kavalleriebrigaden"
+historical_model = 2
+experience = 10
+}
 }
 
 division = {
@@ -874,13 +913,6 @@ regiment = {
 type = hq_brigade
 name = "2. Armee"
 historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = engineer_brigade
-name = "10th Engineer Battalion"
-historical_model = 0
 experience = 10
 }
 
@@ -972,6 +1004,169 @@ historical_model = 0
 experience = 10
 }
 }
+}
+
+corps = {
+name = "III Armeekorps"
+location = 3164
+
+regiment = {
+type = hq_brigade
+name = "III Armeekorps"
+historical_model = 2
+experience = 10
+}
+
+division = {
+name = "6. Infanteriedivision"
+location = 3164
+
+regiment = {
+type = infantry_brigade
+name = "11. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "12. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "6. Artilleriebrigaden"
+historical_model = 0
+experience = 10
+}
+}
+
+division = {
+name = "22. Landwehrinfanteriedivision"
+location = 3164
+
+regiment = {
+type = infantry_brigade
+name = "64. LandwehrInfanterie"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+
+regiment = {
+type = infantry_brigade
+name = "65. LandwehrInfanterie"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+
+regiment = {
+type = artillery_brigade
+name = "22. LandwehrArtilleriebrigaden"
+historical_model = 0
+experience = 5
+}
+}
+
+division = {
+name = "28. Infanteriedivision"
+location = 3164
+
+regiment = {
+type = infantry_brigade
+name = "55. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "56. Infanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "28. Artilleriebrigaden"
+historical_model = 0
+experience = 10
+}
+}
+}
+
+corps = {
+name = "2.Armee Reserve"
+location = 3164
+
+regiment = {
+type = hq_brigade
+name = "1st HQ Brigade"
+historical_model = 2
+experience = 0
+}
+
+division = {
+name = "20. Honvedinfanteriedivision"
+location = 3164
+
+regiment = {
+type = infantry_brigade
+name = "39. Honvedinfanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "81. Honvedinfanteriebrigaden"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "20. HonvedArtilleriebrigaden"
+historical_model = 0
+experience = 10
+}
+}
+
+division = {
+name = "35. LstrInfanteriedivision"
+location = 3427
+
+regiment = {
+type = militia_brigade
+name = "35. Landsturminfanterie"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+
+regiment = {
+type = militia_brigade
+name = "40. Landsturminfanterie"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+}
+
+division = {
+name = "5. Honvedkavalleriedivision"
+location = 3164
+
+regiment = {
+type = cavalry_brigade
+name = "19. Kavalleriebrigaden"
+historical_model = 2
+experience = 10
+}
+}
 
 division = {
 name = "8. Kavalleriedivision"
@@ -1038,6 +1233,14 @@ type = infantry_brigade
 name = "85. Infanteriebrigaden"
 historical_model = 2
 experience = 10
+}
+
+regiment = {
+type = militia_brigade
+name = "93. Landsturminfanterie"
+historical_model = 0
+experience = 5
+is_reserve = yes
 }
 
 regiment = {
@@ -1225,7 +1428,6 @@ historical_model = 3
 experience = 20
 }
 
-
 regiment = {
 type = artillery_brigade
 name = "8. Artilleriebrigaden"
@@ -1259,6 +1461,19 @@ type = artillery_brigade
 name = "44. LandwehrArtilleriebrigaden"
 historical_model = 0
 experience = 5
+}
+}
+
+division = {
+name = "97. LstrInfanteriebrigaden"
+location = 3026
+
+regiment = {
+type = militia_brigade
+name = "97. Landsturminfanterie"
+historical_model = 0
+experience = 5
+is_reserve = yes
 }
 }
 
@@ -1624,17 +1839,17 @@ experience = 10
 }
 }
 
-
 navy = {
 name = "1. Linienschiffschwadron"
 location = 3904
 base = 3904
 ship = { type = battleship name = "SMS Kronprinzessin Erzherzogin Stephanie" historical_model = 3 experience = 15 }
 ship = { type = battleship name = "SMS Kronprinz Erzherzogin Rudolf" historical_model = 4 experience = 15 }
+
 ship = { type = destroyer name = "1. Zerstörergeschwader" historical_model = 1 experience = 15 }
 ship = { type = destroyer name = "2. Zerstörergeschwader" historical_model = 7 experience = 15 }
-}
 
+}
 navy = {
 name = "2. Linienschiffschwadron"
 location = 3904
@@ -1646,8 +1861,8 @@ ship = { type = battleship name = "SMS Habsburg" historical_model = 9 experience
 ship = { type = battleship name = "SMS Árpád" historical_model = 9 experience = 15 }
 ship = { type = battleship name = "SMS Babenberg" historical_model = 9 experience = 15 }
 ship = { type = destroyer name = "3. Zerstörergeschwader" historical_model = 7 experience = 15 }
-}
 
+}
 navy = {
 name = "3. Linienschiffschwadron"
 location = 3904
@@ -1656,8 +1871,8 @@ ship = { type = battleship name = "SMS Monarch" historical_model = 7 experience 
 ship = { type = battleship name = "SMS Wien" historical_model = 7 experience = 15 }
 ship = { type = battleship name = "SMS Budapest" historical_model = 7 experience = 15 }
 ship = { type = heavy_cruiser name = "SMS Kaiserin und Königin Maria Theresia" historical_model = 1 experience = 15 }
-}
 
+}
 navy = {
 name = "1. Kreuzerdivision"
 location = 3904
@@ -1673,8 +1888,8 @@ ship = { type = protected_cruiser name = "SMS Zara" historical_model = 0 experie
 ship = { type = protected_cruiser name = "SMS Spalato" historical_model = 0 experience = 15 }
 ship = { type = protected_cruiser name = "SMS Sebenico" historical_model = 0 experience = 15 }
 ship = { type = protected_cruiser name = "SMS Lussin" historical_model = 0 experience = 15 }
-}
 
+}
 navy = {
 name = "2. Kreuzerdivision"
 location = 3904
@@ -1683,8 +1898,8 @@ base = 3904
 ship = { type = heavy_cruiser name = "SMS Sankt Georg" historical_model = 6 experience = 15 }
 ship = { type = protected_cruiser name = "SMS Aspern" historical_model = 4 experience = 15 }
 ship = { type = protected_cruiser name = "SMS Szigetvár" historical_model = 4 experience = 15 }
-}
 
+}
 navy = {
 name = "Transportschwadron"
 location = 3904
@@ -1694,15 +1909,15 @@ ship = {
 name = "1. . Truppentransporterflottille"
 type = transport_ship
 historical_model = 0}
-}
 
+}
 navy = {
 name = "Chinastation"
 location = 5246
 base = 5246
 ship = { type = protected_cruiser name = "SMS Kaiserin Elisabeth" historical_model = 3 experience = 15 }
-}
 
+}
 navy = {
 name = "U-bootdivision"
 location = 3904
@@ -1728,7 +1943,6 @@ historical_model = 12}
 cost = 2
 progress = 0
 duration = 35}
-
 military_construction = {
 country = AUH
 battleship = {
@@ -1737,7 +1951,6 @@ historical_model = 12}
 cost = 2
 progress = 0
 duration = 259}
-
 military_construction = {
 country = AUH
 battleship = {

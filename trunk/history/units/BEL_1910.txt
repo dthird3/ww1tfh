@@ -1,223 +1,329 @@
 theatre = {
-
-name = "L'armée belge" 
-
-location = 2255
-
-regiment = { type = hq_brigade name = "L'armée belge QG" historical_model = 0 }
-
-division = {
-
-name = "Ière Division d'Infanterie"
-
-location = 2255
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "3rd Infantry Regiment" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "4th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = artillery_brigade name = "8th Artilly-Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "2ème Division d'Infanterie"
-
-location = 2312
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "5th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "6th Infantry Regiment" historical_model = 0 }
-
-
-regiment = { type = artillery_brigade name = "10th Artilly-Regiment" historical_model = 0 }
-
-}
-
-division= {
-
-name = "3ème Division d'Infanterie"
-
-location = 2312
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "1st Infantry Regiment" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "12th Infantry Regiment" historical_model = 0 }
-
-
-regiment = { type = artillery_brigade name = "9th Artilly-Regiment" historical_model = 0 }
-
-}
-
-division = {
-
-name = "5ème Division d'Infanterie"
-
+name = "Bruxelles HQ"
 location = 2311
 
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "1st Chasseurs a Pied" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "2nd Chasseurs a Pied" historical_model = 0 }
-
-
-regiment = { type = artillery_brigade name = "4th Artilly-Regiment" historical_model = 0 }
-
+regiment = {
+type = hq_brigade
+name = "1st HQ Brigade"
+historical_model = 1
+experience = 3
 }
 
-division= {
+corps = {
+name = "Force Publique"
+location = 10086
 
-name = "4ème Division d'Infanterie"
-
-location = 2255
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "7th Infantry Regiment" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "11th Infantry Regiment" historical_model = 0 }
-
-
-regiment = { type = artillery_brigade name = "6th Artilly-Regiment" historical_model = 0 }
-
+regiment = {
+type = hq_brigade
+name = "Force Publique HQ"
+historical_model = 1
+experience = 15
 }
 
 division = {
+name = "Troupes du Congo-Kasai"
+location = 10086
 
-name = "6ème Division d'Infanterie"
-
-location = 2254
-
+regiment = {
+type = police_brigade
+name = "Troupes du Congo-Kasai"
+historical_model = 0
+experience = 5
 is_reserve = yes
-
-regiment = { type = infantry_brigade name = "1st Grenadiers Regiment" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "1st Carabiniers Regiment" historical_model = 0 }
-
-
-regiment = { type = artillery_brigade name = "13th Artilly-Regiment" historical_model = 0 }
-
+}
 }
 
-division= {
+division = {
+name = "Troupes de l'Equateur"
+location = 9824
 
-name = "10ème Division d'Infanterie"
+regiment = {
+type = police_brigade
+name = "Troupes de l'Equateur"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+}
 
+division = {
+name = "Troupes de la province orientale"
+location = 10100
+
+regiment = {
+type = militia_brigade
+name = "Troupes de la province orientale"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+}
+
+navy = {
+name = "1re Transportatie Smaldeel"
+location = 2137
+base = 2137
+
+ship = {
+type = transport_ship
+name = "1er Transporte Naval"
+historical_model = 0
+experience = 15
+}
+}
+}
+
+corps = {
+name = "Garde Civique"
+location = 2311
+
+regiment = {
+type = hq_brigade
+name = "2nd HQ Brigade"
+historical_model = 1
+experience = 0
+}
+
+division = {
+name = "Position fortifiee d'Anvers"
+location = 2197
+
+regiment = {
+type = garrison_brigade
+name = "Position fortifiee d'Anvers"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+
+regiment = {
+type = garrison_brigade
+name = "Position fortifiee de d'Anvers"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+}
+
+division = {
+name = "Position fortifee de Brugge"
+location = 2137
+
+regiment = {
+type = garrison_brigade
+name = "Position fortifiee de Brugge"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+}
+
+division = {
+name = "Position fortifiee de Namur"
+location = 2369
+
+regiment = {
+type = garrison_brigade
+name = "Position fortifiee de Namur"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+
+regiment = {
+type = garrison_brigade
+name = "Position fortifiee de Namur"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+}
+
+division = {
+name = "Position fortifiee de Liege"
+location = 2312
+
+regiment = {
+type = garrison_brigade
+name = "Position fortifiee de Liege"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+}
+}
+
+army = {
+name = "Belgian Army HQ"
+location = 2311
+
+regiment = {
+type = hq_brigade
+name = "4th HQ Brigade"
+historical_model = 1
+experience = 0
+}
+
+division = {
+name = "1er Division d'Armee"
 location = 2196
 
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "3rd Chasseurs a Pied" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "5th Chasseurs a Pied" historical_model = 0 }
-
-
-
-regiment = { type = artillery_brigade name = "19th Artilly-Regiment" historical_model = 0 }
-
+regiment = {
+type = infantry_brigade
+name = "2/3eme brigades mixte"
+historical_model = 2
+experience = 10
 }
 
-division= {
-
-name = "7ème Division d'Infanterie"
-
-location = 2254
-
+regiment = {
+type = infantry_brigade
+name = "3/4eme brigades mixte"
+historical_model = 2
+experience = 10
 is_reserve = yes
+}
 
-regiment = { type = infantry_brigade name = "2nd Grenadiers Regiment" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "2nd Carabiniers Regiment" historical_model = 0 }
-
-
-
-regiment = { type = artillery_brigade name = "34th Artilly-Regiment" historical_model = 0 }
-
+regiment = {
+type = artillery_brigade
+name = "Artillerie divisionnaire 1/2eme regiments"
+historical_model = 0
+experience = 10
+}
 }
 
 division = {
+name = "2eme Division d'Armee"
+location = 2197
 
-name = "1st Division de Chasseurs Ardennais"
-
-location = 2370
-
-is_reserve = yes
-
-regiment = { type = infantry_brigade name = "1st Chasseur Ardennais" historical_model = 0 }
-
-regiment = { type = infantry_brigade name = "2nd Chasseur Ardennais" historical_model = 0 }
-
-
-
-regiment = { type = artillery_brigade name = "44th Artilly-Regiment" historical_model = 0 }
-
+regiment = {
+type = infantry_brigade
+name = "5/6eme brigades mixte"
+historical_model = 2
+experience = 10
 }
 
-division= {
-
-name = "1ère Division de Cavalry"
-
-location = 2311
-
+regiment = {
+type = infantry_brigade
+name = "6/7eme brigades mixte"
+historical_model = 2
+experience = 10
 is_reserve = yes
-
-regiment = { type = cavalry_brigade name = "1st Guides" historical_model = 1 }
-
-regiment = { type = cavalry_brigade name = "1st Lanciers" historical_model = 1 }
-
-
-
 }
-
-division= {
-
-name = "2ème Division de Cavalry"
-
-location = 2311
-
-is_reserve = yes
-
-regiment = { type = cavalry_brigade name = "1st Lancers" historical_model = 1 }
-
-regiment = { type = cavalry_brigade name = "3rd Lanciers" historical_model = 1 }
-
-
-regiment = { type = artillery_brigade name = "2nd SP-Artilly-Regiment" historical_model = 0 }
-
 }
 
 division = {
+name = "3eme Division d'Armee"
+location = 2312
 
+regiment = {
+type = infantry_brigade
+name = "9eme brigade mixte"
+historical_model = 2
+experience = 10
+}
 
-name = "Garde Royale Coloniale"
+regiment = {
+type = infantry_brigade
+name = "11/12eme brigades mixte"
+historical_model = 2
+experience = 10
+}
 
-
-location = 10113
-
-
+regiment = {
+type = infantry_brigade
+name = "14eme brigade mixte"
+historical_model = 2
+experience = 10
 is_reserve = yes
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-
-regiment = { type = infantry_brigade historical_model = 0 }
-
-
-regiment = { type = artillery_brigade historical_model = 0 }
-
-
+}
 }
 
+division = {
+name = "4ere Division d'Infanterie"
+location = 14155
+
+regiment = {
+type = infantry_brigade
+name = "8eme brigade mixte"
+historical_model = 2
+experience = 10
 }
 
+regiment = {
+type = infantry_brigade
+name = "10/13eme brigades mixte"
+historical_model = 2
+experience = 10
+}
+}
+
+division = {
+name = "5eme Division d'Armee"
+location = 2312
+
+regiment = {
+type = infantry_brigade
+name = "1/16eme brigades mixte"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "16/17eme brigades mixte"
+historical_model = 2
+experience = 10
+is_reserve = yes
+}
+}
+
+division = {
+name = "6eme Division d'Armee"
+location = 2311
+
+regiment = {
+type = infantry_brigade
+name = "18/19eme brigades mixte"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "19/20eme brigades mixte"
+historical_model = 2
+experience = 10
+is_reserve = yes
+}
+
+regiment = {
+type = artillery_brigade
+name = "Artillerie divisionnaire 5/6eme regiments"
+historical_model = 0
+experience = 10
+}
+}
+
+division = {
+name = "Division de Cavalerie"
+location = 2311
+
+regiment = {
+type = cavalry_brigade
+name = "1re brigade de guides"
+historical_model = 2
+experience = 10
+}
+
+regiment = {
+type = cavalry_brigade
+name = "2eme brigade de lanciers"
+historical_model = 2
+experience = 10
+}
+}
+}
+}
 
 navy = {
 name = "1ste Transportatie Smaldeel"
@@ -225,2748 +331,7 @@ location = 2137
 base = 2137
 
 ship = {
-name = "1ère Transporte Naval"
+name = "1Ã¨re Transporte Naval"
 type = transport_ship
 historical_model = 0}
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
