@@ -651,19 +651,19 @@ function ProductionMinister_Tick(minister)
 		
 		-- One loop to do all the counting (Performance)
 		for k, v in pairs(UnitTypes) do
-			Utils.LUA_DEBUGOUT("Country: " .. tostring(ProductionData.ministerTag) .. " unit type" .. tostring(v.Index))
+			--Utils.LUA_DEBUGOUT("Country: " .. tostring(ProductionData.ministerTag) .. " unit type" .. tostring(v.Index))
 			if v.Type == "Land" then ProductionData.LandCountTotal = ProductionData.LandCountTotal + ProductionData.TotalCounts[v.Index] end
-			Utils.LUA_DEBUGOUT("Land OK")
+			--Utils.LUA_DEBUGOUT("Land OK")
 			if v.Type == "Air" then ProductionData.AirCountTotal = ProductionData.AirCountTotal + ProductionData.TotalCounts[v.Index] end
-			Utils.LUA_DEBUGOUT("Air OK")
+			--Utils.LUA_DEBUGOUT("Air OK")
 			if v.Type == "Naval" then ProductionData.NavalCountTotal = ProductionData.NavalCountTotal + ProductionData.TotalCounts[v.Index] end
-			Utils.LUA_DEBUGOUT("Naval OK")
+			--Utils.LUA_DEBUGOUT("Naval OK")
 			if v.Type == "Land" and v.SubType == "Special Forces" then ProductionData.SpecialForcesCountTotal = ProductionData.SpecialForcesCountTotal + ProductionData.TotalCounts[v.Index] end
-			Utils.LUA_DEBUGOUT("Special OK")
+			--Utils.LUA_DEBUGOUT("Special OK")
 			if v.Type == "Secret" then ProductionData.FlyingBombsCountTotal = ProductionData.FlyingBombsCountTotal + ProductionData.TotalCounts[v.Index] end
-			Utils.LUA_DEBUGOUT("Secret OK")
+			--Utils.LUA_DEBUGOUT("Secret OK")
 			if v.CanPara == true then ProductionData.ParaCountTotal = ProductionData.ParaCountTotal + ProductionData.TotalCounts[v.Index] end
-			Utils.LUA_DEBUGOUT("Para OK")
+			--Utils.LUA_DEBUGOUT("Para OK")
 		end
 		-- End of Counting
 
