@@ -2055,6 +2055,22 @@ Caliph_of_Islam = {
 	global_manpower_modifier = 0.1
 	icon = 3
 }
+Holy_War = {
+
+    potential = {
+	}
+	trigger = {
+		TAG = TUR
+		war_with = ENG	
+		4503 = {
+		controlled_by = TUR
+		}
+	} 
+	
+	territorial_pride = 0.5
+	global_manpower_modifier = 0.1
+	icon = 3
+}
 uk_no_conscription = {
 
     potential = {
@@ -2068,5 +2084,25 @@ uk_no_conscription = {
 	officer_recruitment = -0.50
 	research_efficiency = 0.05
 	land_organisation = -0.25
+	icon = 5
+}
+russia_leadership_troubles = {
+
+    potential = {
+	}
+	trigger = {
+		TAG = RUS
+		OR = {
+			war = no
+			NOT = {
+				1928 = {
+					controlled_by = RUS
+				}
+			}
+		}
+	} 
+	
+	officer_recruitment = -0.33
+	research_efficiency = -0.33
 	icon = 5
 }
