@@ -1,7 +1,7 @@
 defines = {
 
 start_date = '1910.5.1',
-end_date = '1923.1.1',
+end_date = '1948.1.1',
 
 land_combat = 'land_doctrine_practical',
 naval_combat = 'naval_doctrine_practical',
