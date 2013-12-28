@@ -5,7 +5,7 @@ location = 782
 regiment = {
 type = hq_brigade
 name = "1st HQ Brigada"
-historical_model = 1
+historical_model = 0
 experience = 3
 }
 
@@ -15,47 +15,59 @@ location = 782
 base = 782
 
 ship = { type = battleship name = "Tsesarevich" historical_model = 9 experience = 15 }
-ship = { type = battleship name = "Petr Veliki" historical_model = 2 experience = 15 }
-ship = { type = battleship name = "Georgi Pobiedonosets" historical_model = 3 experience = 15 }
-ship = { type = battleship name = "Sinop" historical_model = 3 experience = 15 }
 ship = { type = battleship name = "Imperator Alexander II" historical_model = 4 experience = 15 }
+ship = { type = battleship name = "Dvienadtsat Apostolov" historical_model = 5 experience = 15 }
+ship = { type = battleship name = "Sinop" historical_model = 3 experience = 15 }
+ship = { type = battleship name = "Georgi Pobiedonosets" historical_model = 3 experience = 15 }
+ship = { type = battleship name = "Petr Veliki" historical_model = 2 experience = 15 }
 ship = { type = battleship name = "Slava" historical_model = 10 experience = 15 }
-ship = { type = battleship name = "Andrei Pervozvanny" historical_model = 12 experience = 15 }
-ship = { type = battleship name = "Imperator Pavel I" historical_model = 12 experience = 15 }
 ship = { type = heavy_cruiser name = "Admiral Makarov" historical_model = 6 experience = 15 }
 ship = { type = heavy_cruiser name = "Bayan" historical_model = 6 experience = 15 }
-ship = { type = heavy_cruiser name = "Pallada" historical_model = 6 experience = 15 }
 ship = { type = heavy_cruiser name = "Rurik" historical_model = 7 experience = 15 }
-ship = { type = heavy_cruiser name = "Rossia" historical_model = 4 experience = 15 }
-ship = { type = heavy_cruiser name = "Gromoboi" historical_model = 4 experience = 15 }
 ship = { type = heavy_cruiser name = "Minin" historical_model = 2 experience = 15 }
 ship = { type = heavy_cruiser name = "General-Admiral" historical_model = 1 experience = 15 }
 ship = { type = heavy_cruiser name = "Gerzog Edinburgski" historical_model = 1 experience = 15 }
 ship = { type = heavy_cruiser name = "Pamiat Azova" historical_model = 3 experience = 15 }
 ship = { type = protected_cruiser name = "Bogatyr" historical_model = 4 experience = 15 }
 ship = { type = protected_cruiser name = "Oleg" historical_model = 4 experience = 15 }
+ship = { type = protected_cruiser name = "Admiral Kornilov" historical_model = 1 experience = 15 }
 ship = { type = protected_cruiser name = "Aurora" historical_model = 2 experience = 15 }
 ship = { type = protected_cruiser name = "Diana" historical_model = 2 experience = 15 }
-
-ship = { type = destroyer name = "1 Flotiliya Esmintsev" historical_model = 10 experience = 15 }
-ship = { type = destroyer name = "2 Flotiliya Esmintsev" historical_model = 8 experience = 15 }
-ship = { type = destroyer name = "3 Flotiliya Esmintsev" historical_model = 7 experience = 15 }
-ship = { type = destroyer name = "4 Flotiliya Esmintsev" historical_model = 7 experience = 15 }
-ship = { type = destroyer name = "5 Flotiliya Esmintsev" historical_model = 7 experience = 15 }
-ship = { type = destroyer name = "6 Flotiliya Esmintsev" historical_model = 7 experience = 15 }
-ship = { type = destroyer name = "7 Flotiliya Esmintsev" historical_model = 7 experience = 15 }
-ship = { type = destroyer name = "8 Flotiliya Esmintsev" historical_model = 7 experience = 15 }
-ship = { type = destroyer name = "9 Flotiliya Esmintsev" historical_model = 7 experience = 15 }
-ship = { type = destroyer name = "10 Flotiliya Esmintsev" historical_model = 7 experience = 15 }
-
+ship = { type = heavy_cruiser name = "Rossia" historical_model = 4 experience = 15 }
+ship = { type = heavy_cruiser name = "Gromoboi" historical_model = 4 experience = 15 }
 ship = {
+name = "1 Flotiliya Esmintsev"
+type = destroyer
+historical_model = 2}
+ship = {
+name = "2 Flotiliya Esmintsev"
+type = destroyer
+historical_model = 2}
+ship = {
+name = "3 Flotiliya Esmintsev"
+type = destroyer
+historical_model = 4}
+ship = {
+name = "4 Flotiliya Esmintsev"
+type = destroyer
+historical_model = 6}
+ship = {
+name = "5 Flotiliya Esmintsev"
+type = destroyer
+historical_model = 7}
+ship = {
+name = "11 Flotiliya Esmintsev"
+type = destroyer
+historical_model = 7}
+ship = {
+name = "12 Flotiliya Esmintsev"
+type = destroyer
+historical_model = 7}
+ship = {
+name = "10 Flotiliya"
 type = transport_ship
-name = "1 Transportnaya Flotiliya"
-historical_model = 0
-experience = 15
+historical_model = 0}
 }
-}
-
 
 navy = {
 name = "Baltiyskiy Podvodnaya Lodka Flotiliya"
@@ -63,26 +75,17 @@ location = 782
 base = 782
 
 ship = {
-type = submarine
 name = "1 Flotiliya Podlodok"
-historical_model = 4
-experience = 15
-}
-
-ship = {
 type = coastal_submarine
+historical_model = 5}
+ship = {
 name = "2 Flotiliya Podlodok"
-historical_model = 2
-experience = 15
-}
-
-ship = {
 type = coastal_submarine
+historical_model = 4}
+ship = {
 name = "3 Flotiliya Podlodok"
-historical_model = 1
-experience = 15
-}
-
+type = coastal_submarine
+historical_model = 2}
 }
 
 navy = {
@@ -93,29 +96,24 @@ base = 3581
 ship = { type = battleship name = "Tri Svititelia" historical_model = 6 experience = 15 }
 ship = { type = battleship name = "Rotislav" historical_model = 7 experience = 15 }
 ship = { type = battleship name = "Pantelimon" historical_model = 8 experience = 15 }
-ship = { type = battleship name = "Evstafi" historical_model = 11 experience = 15 }
-ship = { type = battleship name = "Ioann Zlatoust" historical_model = 11 experience = 15 }
 ship = { type = protected_cruiser name = "Kagul" historical_model = 4 experience = 15 }
 ship = { type = protected_cruiser name = "Ochakov" historical_model = 4 experience = 15 }
-ship = { type = protected_cruiser name = "Almaz" historical_model = 5 experience = 15 }
-
-
-ship = { type = destroyer name = "11 Flotiliya Esmintsev" historical_model = 6 experience = 15 }
-ship = { type = destroyer name = "12 Flotiliya Esmintsev" historical_model = 6 experience = 15 }
-
 ship = {
-type = transport_ship
-name = "2 Transportnaya Flotiliya"
-historical_model = 0
-experience = 15
-}
-
+name = "6 Flotiliya Esmintsev"
+type = destroyer
+historical_model = 7}
 ship = {
+name = "7 Flotiliya Esmintsev"
+type = destroyer
+historical_model = 7}
+ship = {
+name = "11 Flotiliya"
 type = transport_ship
-name = "3 Transportnaya Flotiliya"
-historical_model = 0
-experience = 15
-}
+historical_model = 0}
+ship = {
+name = "12 Flotiliya"
+type = transport_ship
+historical_model = 0}
 }
 
 navy = {
@@ -124,99 +122,35 @@ location = 3581
 base = 3581
 
 ship = {
-type = coastal_submarine
 name = "4 Flotiliya Podlodok"
-historical_model = 1
-experience = 15
-}
-ship = {
 type = coastal_submarine
+historical_model = 1}
+ship = {
 name = "5 Flotiliya Podlodok"
-historical_model = 1
-experience = 15
-}
+type = coastal_submarine
+historical_model = 1}
 }
 
 navy = {
 name = "Sibirskiy Flotiliya"
 location = 4390
 base = 4390
-
 ship = { type = protected_cruiser name = "Askold" historical_model = 3 experience = 15 }
+ship = { type = protected_cruiser name = "Almaz" historical_model = 5 experience = 15 }
 ship = { type = protected_cruiser name = "Zhemchug" historical_model = 6 experience = 15 }
-
-ship = { type = destroyer name = "13 Flotiliya Esmintsev" historical_model = 4 experience = 15 }
-ship = { type = destroyer name = "14 Flotiliya Esmintsev" historical_model = 3 experience = 15 }
-ship = { type = destroyer name = "15 Flotiliya Esmintsev" historical_model = 2 experience = 15 }
-ship = { type = destroyer name = "16 Flotiliya Esmintsev" historical_model = 2 experience = 15 }
+ship = {
+name = "8 Flotiliya Esmintsev"
+type = destroyer
+historical_model = 7}
+ship = {
+name = "9 Flotiliya Esmintsev"
+type = destroyer
+historical_model = 7}
+ship = {
+name = "10 Flotiliya Esmintsev"
+type = destroyer
+historical_model = 8}
 }
-
-air = {
-name = "1 Imperial Air Service"
-location = 782
-base = 782
-
-wing = {
-type = scout
-name = "1 Otryady"
-historical_model = 0
-experience = 15
-}
-
-}
-air = {
-name = "2 Imperial Air Service"
-location = 1928
-base = 1928
-
-wing = {
-type = scout
-name = "2 Otryady"
-historical_model = 0
-experience = 15
-}
-
-}
-air = {
-name = "3 Imperial Air Service"
-location = 2223
-base = 2223
-
-wing = {
-type = scout
-name = "3 Otryady"
-historical_model = 0
-experience = 15
-}
-
-}
-air = {
-name = "4 Imperial Air Service"
-location = 3309
-base = 3309
-
-wing = {
-type = scout
-name = "4 Otryady"
-historical_model = 0
-experience = 15
-}
-
-}
-air = {
-name = "5 Imperial Air Service"
-location = 1409
-base = 1409
-
-wing = {
-type = scout
-name = "5 Otryady"
-historical_model = 0
-experience = 15
-}
-
-}
-
 
 division = {
 name = "1-ya Diviziya Opolcheniya"
@@ -323,68 +257,6 @@ is_reserve = yes
 }
 }
 
-division = {
-name = "6-ya Diviziya Opolcheniya"
-location = 369
-
-regiment = {
-type = militia_brigade
-name = "16-ya Opolcheniya Brigada"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-	
-regiment = {
-type = militia_brigade
-name = "17-ya Opolcheniya Brigada"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "7-ya Diviziya Opolcheniya"
-location = 7307
-
-regiment = {
-type = militia_brigade
-name = "19-ya Opolcheniya Brigada"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = militia_brigade
-name = "20-ya Opolcheniya Brigada"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "8-ya Diviziya Opolcheniya"
-location = 8528
-
-regiment = {
-type = militia_brigade
-name = "22-ya Opolcheniya Brigada"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = militia_brigade
-name = "23-ya Opolcheniya Brigada"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
 
 division = {
 name = "9-ya Diviziya Opolcheniya"
@@ -393,14 +265,6 @@ location = 8743
 regiment = {
 type = militia_brigade
 name = "25-ya Opolcheniya Brigada"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = militia_brigade
-name = "26-ya Opolcheniya Brigada"
 historical_model = 0
 experience = 5
 is_reserve = yes
@@ -502,35 +366,6 @@ historical_model = 0
 experience = 5
 is_reserve = yes
 }
-
-regiment = {
-type = militia_brigade
-name = "41-ya Opolcheniya Brigada"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "15-ya Diviziya Opolcheniya"
-location = 1330
-
-regiment = {
-type = militia_brigade
-name = "43-ya Opolcheniya Brigada"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = militia_brigade
-name = "44-ya Opolcheniya Brigada"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
 }
 
 army = {
@@ -540,7 +375,7 @@ location = 782
 regiment = {
 type = hq_brigade
 name = "2nd HQ Brigada"
-historical_model = 1
+historical_model = 0
 experience = 0
 }
 
@@ -558,7 +393,7 @@ location = 782
 regiment = {
 type = hq_brigade
 name = "Gvardeyskiy Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -569,21 +404,21 @@ location = 782
 regiment = {
 type = guards_brigade
 name = "1-ya Gvardeyskaya Brigada"
-historical_model = 3
+historical_model = 2
 experience = 20
 }
 
 regiment = {
 type = guards_brigade
 name = "2-ya Gvardeyskaya Brigada"
-historical_model = 3
+historical_model = 2
 experience = 20
 }
 
 regiment = {
 type = artillery_brigade
 name = "Life Gvarde 1. Artilleriiskaya brigada"
-historical_model = 4
+historical_model = 3
 experience = 20
 }
 }
@@ -595,21 +430,21 @@ location = 782
 regiment = {
 type = guards_brigade
 name = "4-ya Gvardeyskaya Brigada"
-historical_model = 3
+historical_model = 2
 experience = 20
 }
 
 regiment = {
 type = guards_brigade
 name = "5-ya Gvardeyskaya Brigada"
-historical_model = 3
+historical_model = 2
 experience = 20
 }
 
 regiment = {
 type = artillery_brigade
 name = "Life Gvarde 2. Artilleriiskaya brigada"
-historical_model = 4
+historical_model = 3
 experience = 20
 }
 }
@@ -621,14 +456,14 @@ location = 782
 regiment = {
 type = cavalry_brigade
 name = "2 Gvardeyskaya Kav 1-ya brigada"
-historical_model = 3
+historical_model = 2
 experience = 20
 }
 
 regiment = {
 type = cavalry_brigade
 name = "2 Gvardeyskaya Kav 2-ya brigada"
-historical_model = 3
+historical_model = 2
 experience = 20
 }
 }
@@ -640,7 +475,7 @@ location = 782
 regiment = {
 type = guards_brigade
 name = "Gvardeyskaya Strelkovaya Brigada"
-historical_model = 3
+historical_model = 2
 experience = 20
 }
 }
@@ -652,21 +487,21 @@ location = 782
 regiment = {
 type = cavalry_brigade
 name = "1-ya Gvardeyskaya Kav Brigada"
-historical_model = 3
+historical_model = 2
 experience = 20
 }
 
 regiment = {
 type = cavalry_brigade
 name = "2-ya Gvardeyskaya Kav Brigada"
-historical_model = 3
+historical_model = 2
 experience = 20
 }
 
 regiment = {
 type = cavalry_brigade
 name = "3-ya Gvardeyskaya Kav Brigada"
-historical_model = 3
+historical_model = 2
 experience = 20
 }
 }
@@ -679,7 +514,7 @@ location = 782
 regiment = {
 type = hq_brigade
 name = "1-i Armeiskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -690,14 +525,14 @@ location = 782
 regiment = {
 type = infantry_brigade
 name = "22-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "22-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -716,14 +551,14 @@ location = 782
 regiment = {
 type = infantry_brigade
 name = "24-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "24-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -743,7 +578,7 @@ location = 782
 regiment = {
 type = hq_brigade
 name = "18-i Armeiskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -754,14 +589,14 @@ location = 782
 regiment = {
 type = infantry_brigade
 name = "23-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "23-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -780,14 +615,14 @@ location = 782
 regiment = {
 type = infantry_brigade
 name = "37-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "37-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -806,14 +641,14 @@ location = 782
 regiment = {
 type = infantry_brigade
 name = "50-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 	
 regiment = {
 type = infantry_brigade
 name = "50-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -833,7 +668,7 @@ location = 739
 regiment = {
 type = hq_brigade
 name = "22-i Armeiskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 	
@@ -844,7 +679,7 @@ location = 739
 regiment = {
 type = infantry_brigade
 name = "1-ya Finlyandskaya Strelkovaya Brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -856,7 +691,7 @@ location = 739
 regiment = {
 type = infantry_brigade
 name = "2-ya Finlandskaya Strelkovaya Brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -868,7 +703,7 @@ location = 739
 regiment = {
 type = infantry_brigade
 name = "3-ya Finlandskaya Strelkovaya Brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -880,7 +715,7 @@ location = 739
 regiment = {
 type = cavalry_brigade
 name = "Finland Dragoons & Orenburg Cossacks"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -893,7 +728,7 @@ location = 782
 regiment = {
 type = hq_brigade
 name = "Peterburgskii Voennyi Okrug HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -904,7 +739,7 @@ location = 782
 regiment = {
 type = infantry_brigade
 name = "53-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -912,7 +747,7 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "53-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -925,7 +760,7 @@ location = 782
 regiment = {
 type = infantry_brigade
 name = "54-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -933,7 +768,7 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "54-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -946,7 +781,7 @@ location = 782
 regiment = {
 type = infantry_brigade
 name = "55-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -954,7 +789,7 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "55-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -967,7 +802,7 @@ location = 782
 regiment = {
 type = infantry_brigade
 name = "56-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -975,7 +810,7 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "56-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -988,7 +823,7 @@ location = 782
 regiment = {
 type = infantry_brigade
 name = "57-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -996,7 +831,7 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "57-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -1053,7 +888,7 @@ location = 1532
 regiment = {
 type = hq_brigade
 name = "3rd HQ Brigada"
-historical_model = 1
+historical_model = 0
 experience = 0
 }
 
@@ -1073,7 +908,7 @@ location = 1751
 regiment = {
 type = hq_brigade
 name = "2-i Armeiskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -1084,14 +919,14 @@ location = 1751
 regiment = {
 type = infantry_brigade
 name = "26-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 	
 regiment = {
 type = infantry_brigade
 name = "26-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -1110,14 +945,14 @@ location = 1751
 regiment = {
 type = infantry_brigade
 name = "43-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "43-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -1136,14 +971,14 @@ location = 1751
 regiment = {
 type = cavalry_brigade
 name = "2-ya Kavaleriiskaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 	
 regiment = {
 type = cavalry_brigade
 name = "2-ya Kavaleriiskaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -1156,7 +991,7 @@ location = 1532
 regiment = {
 type = hq_brigade
 name = "3-i Armeiskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -1167,14 +1002,14 @@ location = 1532
 regiment = {
 type = infantry_brigade
 name = "25-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "25-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -1193,14 +1028,14 @@ location = 1532
 regiment = {
 type = infantry_brigade
 name = "27-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "27-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -1219,14 +1054,14 @@ location = 1532
 regiment = {
 type = cavalry_brigade
 name = "3-ya Kavaleriiskaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = cavalry_brigade
 name = "3-ya Kavaleriiskaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -1238,7 +1073,7 @@ location = 1532
 regiment = {
 type = infantry_brigade
 name = "5-ya Strelkovaya Brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -1251,7 +1086,7 @@ location = 1694
 regiment = {
 type = hq_brigade
 name = "4-i Armeiskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -1262,14 +1097,14 @@ location = 1694
 regiment = {
 type = infantry_brigade
 name = "30-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "30-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -1288,14 +1123,14 @@ location = 1694
 regiment = {
 type = infantry_brigade
 name = "40-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "40-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -1315,7 +1150,7 @@ location = 1178
 regiment = {
 type = hq_brigade
 name = "20-i Armeiskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -1326,14 +1161,14 @@ location = 1178
 regiment = {
 type = infantry_brigade
 name = "28-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "28-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -1352,14 +1187,14 @@ location = 1178
 regiment = {
 type = infantry_brigade
 name = "29-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "29-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -1379,7 +1214,7 @@ location = 1532
 regiment = {
 type = hq_brigade
 name = "Vilenskii Voennyi Okrug HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 	
@@ -1390,7 +1225,7 @@ location = 1532
 regiment = {
 type = infantry_brigade
 name = "58-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -1398,7 +1233,7 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "58-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -1411,7 +1246,7 @@ location = 1532
 regiment = {
 type = infantry_brigade
 name = "59-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -1419,7 +1254,7 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "59-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -1432,7 +1267,7 @@ location = 1532
 regiment = {
 type = infantry_brigade
 name = "60-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -1440,7 +1275,7 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "60-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -1453,7 +1288,7 @@ location = 1532
 regiment = {
 type = infantry_brigade
 name = "61-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -1461,48 +1296,6 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "61-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "Vilna Local brigada"
-location = 1532
-
-regiment = {
-type = garrison_brigade
-name = "Vilna Local brigada"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = garrison_brigade
-name = "Vilna Local brigada"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "Minsk Local brigada"
-location = 1694
-
-regiment = {
-type = garrison_brigade
-name = "Minsk Local brigada"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-	
-regiment = {
-type = garrison_brigade
-name = "Minsk Local brigada"
 historical_model = 0
 experience = 5
 is_reserve = yes
@@ -1516,7 +1309,7 @@ location = 1178
 regiment = {
 type = garrison_brigade
 name = "Riga Garrison"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -1524,7 +1317,7 @@ is_reserve = yes
 regiment = {
 type = garrison_brigade
 name = "Riga Garrison"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -1539,7 +1332,7 @@ location = 1928
 regiment = {
 type = hq_brigade
 name = "4th HQ Brigada"
-historical_model = 1
+historical_model = 0
 experience = 0
 }
 
@@ -1557,7 +1350,7 @@ location = 1928
 regiment = {
 type = hq_brigade
 name = "Varshavskii Voennyi Okrug HQ"
-historical_model = 3
+historical_model = 2
 experience = 5
 }
 
@@ -1568,7 +1361,7 @@ location = 1928
 regiment = {
 type = infantry_brigade
 name = "62-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -1576,7 +1369,7 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "62-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -1589,7 +1382,7 @@ location = 1928
 regiment = {
 type = infantry_brigade
 name = "63-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -1597,7 +1390,7 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "63-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -1610,7 +1403,7 @@ location = 1928
 regiment = {
 type = infantry_brigade
 name = "64-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -1618,7 +1411,7 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "64-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -1631,7 +1424,7 @@ location = 1928
 regiment = {
 type = infantry_brigade
 name = "65-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -1639,27 +1432,6 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "65-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "Warsaw Local brigada"
-location = 1928
-
-regiment = {
-type = garrison_brigade
-name = "Warsaw Local brigada"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = garrison_brigade
-name = "Warsaw Local brigada"
 historical_model = 0
 experience = 5
 is_reserve = yes
@@ -1674,7 +1446,7 @@ location = 1809
 regiment = {
 type = hq_brigade
 name = "6- Armeiskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -1685,14 +1457,14 @@ location = 1809
 regiment = {
 type = infantry_brigade
 name = "4-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "4-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -1711,14 +1483,14 @@ location = 1809
 regiment = {
 type = infantry_brigade
 name = "16-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "16-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -1737,14 +1509,14 @@ location = 1809
 regiment = {
 type = cavalry_brigade
 name = "4-ya Kavaleriiskaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = cavalry_brigade
 name = "4-ya Kavaleriiskaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -1757,7 +1529,7 @@ location = 2158
 regiment = {
 type = hq_brigade
 name = "14-i Armeiskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -1768,14 +1540,14 @@ location = 2158
 regiment = {
 type = infantry_brigade
 name = "18-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "18-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -1794,7 +1566,7 @@ location = 2158
 regiment = {
 type = infantry_brigade
 name = "1-ya Strelkovaya Brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -1806,7 +1578,7 @@ location = 2158
 regiment = {
 type = infantry_brigade
 name = "2-ya Strelkovaya Brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -1817,14 +1589,14 @@ location = 2158
 regiment = {
 type = cavalry_brigade
 name = "13-ya Kavaleriiskaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = cavalry_brigade
 name = "13-ya Kavaleriiskaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -1836,14 +1608,14 @@ location = 2158
 regiment = {
 type = cavalry_brigade
 name = "14-ya Kavaleriiskaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = cavalry_brigade
 name = "14-ya Kavaleriiskaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -1856,7 +1628,7 @@ location = 1928
 regiment = {
 type = hq_brigade
 name = "15-i Armeiskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -1867,14 +1639,14 @@ location = 1928
 regiment = {
 type = infantry_brigade
 name = "6-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "6-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -1893,14 +1665,14 @@ location = 1928
 regiment = {
 type = infantry_brigade
 name = "8-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "8-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -1919,14 +1691,14 @@ location = 1928
 regiment = {
 type = cavalry_brigade
 name = "6-ya Kavaleriiskaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = cavalry_brigade
 name = "6-ya Kavaleriiskaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -1938,14 +1710,14 @@ location = 1928
 regiment = {
 type = cavalry_brigade
 name = "15-ya Kavaleriiskaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = cavalry_brigade
 name = "15-ya Kavaleriiskaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -1958,7 +1730,7 @@ location = 1986
 regiment = {
 type = hq_brigade
 name = "19-i Armeiskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -1969,14 +1741,14 @@ location = 1986
 regiment = {
 type = infantry_brigade
 name = "17-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "17-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -1995,14 +1767,14 @@ location = 1986
 regiment = {
 type = infantry_brigade
 name = "38-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "38-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -2021,14 +1793,14 @@ location = 1986
 regiment = {
 type = cavalry_brigade
 name = "7-ya Kavaleriiskaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = cavalry_brigade
 name = "7-ya Kavaleriiskaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -2041,7 +1813,7 @@ location = 1928
 regiment = {
 type = hq_brigade
 name = "23-i Armeiskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -2052,21 +1824,21 @@ location = 1928
 regiment = {
 type = guards_brigade
 name = "5-ya Gvardeyskaya Brigada"
-historical_model = 3
+historical_model = 2
 experience = 20
 }
 
 regiment = {
 type = guards_brigade
 name = "6-ya Gvardeyskaya Brigada"
-historical_model = 3
+historical_model = 2
 experience = 20
 }
 
 regiment = {
 type = artillery_brigade
 name = "3-ya Life Gvardeyskaya Artilleriiskaya brigada"
-historical_model = 4
+historical_model = 3
 experience = 20
 }
 }
@@ -2078,14 +1850,14 @@ location = 1928
 regiment = {
 type = infantry_brigade
 name = "2-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "2-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -2104,7 +1876,7 @@ location = 1928
 regiment = {
 type = cavalry_brigade
 name = "Otdel'naya Gvardeyskaya Kavaleriiskaya"
-historical_model = 3
+historical_model = 2
 experience = 20
 }
 }
@@ -2118,7 +1890,7 @@ location = 2223
 regiment = {
 type = hq_brigade
 name = "5th HQ Brigada"
-historical_model = 1
+historical_model = 0
 experience = 0
 }
 
@@ -2136,7 +1908,7 @@ location = 2223
 regiment = {
 type = hq_brigade
 name = "Kievskii Voennyi Okrug HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -2147,7 +1919,7 @@ location = 2223
 regiment = {
 type = infantry_brigade
 name = "66-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -2155,7 +1927,7 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "66-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -2168,7 +1940,7 @@ location = 2223
 regiment = {
 type = infantry_brigade
 name = "67-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -2176,7 +1948,7 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "67-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -2189,7 +1961,7 @@ location = 2223
 regiment = {
 type = infantry_brigade
 name = "68-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -2197,7 +1969,7 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "68-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -2273,7 +2045,7 @@ location = 2223
 regiment = {
 type = hq_brigade
 name = "9-i Armeiskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -2285,14 +2057,14 @@ location = 2223
 regiment = {
 type = infantry_brigade
 name = "5-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "5-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -2311,14 +2083,14 @@ location = 2223
 regiment = {
 type = infantry_brigade
 name = "42-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "42-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -2337,14 +2109,14 @@ location = 2223
 regiment = {
 type = cavalry_brigade
 name = "9-ya Kavaleriiskaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = cavalry_brigade
 name = "9-ya Kavaleriiskaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -2357,7 +2129,7 @@ location = 2401
 regiment = {
 type = hq_brigade
 name = "10-i Armeiskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -2368,14 +2140,14 @@ location = 2401
 regiment = {
 type = infantry_brigade
 name = "9-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "9-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -2394,14 +2166,14 @@ location = 2401
 regiment = {
 type = infantry_brigade
 name = "31-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "31-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -2420,14 +2192,14 @@ location = 2401
 regiment = {
 type = cavalry_brigade
 name = "10-ya Kavaleriiskaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 	
 regiment = {
 type = cavalry_brigade
 name = "10-ya Kavaleriiskaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -2440,7 +2212,7 @@ location = 2216
 regiment = {
 type = hq_brigade
 name = "11-i Armeiskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -2451,14 +2223,14 @@ location = 2216
 regiment = {
 type = infantry_brigade
 name = "11-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "11-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 	
@@ -2477,14 +2249,14 @@ location = 2216
 regiment = {
 type = infantry_brigade
 name = "32-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "32-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -2503,14 +2275,14 @@ location = 2216
 regiment = {
 type = cavalry_brigade
 name = "11-ya Kavaleriiskaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = cavalry_brigade
 name = "11-ya Kavaleriiskaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -2523,7 +2295,7 @@ location = 2223
 regiment = {
 type = hq_brigade
 name = "12-i Armeiskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -2534,14 +2306,14 @@ location = 2223
 regiment = {
 type = infantry_brigade
 name = "12-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "12-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -2560,14 +2332,14 @@ location = 2223
 regiment = {
 type = infantry_brigade
 name = "19-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "19-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -2586,14 +2358,14 @@ location = 2223
 regiment = {
 type = cavalry_brigade
 name = "12-ya Kavaleriiskaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = cavalry_brigade
 name = "12-ya Kavaleriiskaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -2605,14 +2377,14 @@ location = 2223
 regiment = {
 type = cavalry_brigade
 name = "2-ya Kazach'ya Svodnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = cavalry_brigade
 name = "2-ya Kazach'ya Svodnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -2624,7 +2396,7 @@ location = 2223
 regiment = {
 type = infantry_brigade
 name = "3-ya Strelkovaya Brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -2637,7 +2409,7 @@ location = 2223
 regiment = {
 type = hq_brigade
 name = "21-i Armeiskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -2648,14 +2420,14 @@ location = 2223
 regiment = {
 type = infantry_brigade
 name = "33-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "33-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -2674,7 +2446,7 @@ location = 2223
 regiment = {
 type = infantry_brigade
 name = "44-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -2682,7 +2454,7 @@ experience = 10
 regiment = {
 type = infantry_brigade
 name = "44-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -2703,7 +2475,7 @@ location = 3309
 regiment = {
 type = hq_brigade
 name = "6th HQ Brigada"
-historical_model = 1
+historical_model = 0
 experience = 0
 }
 	
@@ -2721,7 +2493,7 @@ location = 3515
 regiment = {
 type = hq_brigade
 name = "7-i Armeiskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -2732,14 +2504,14 @@ location = 3515
 regiment = {
 type = infantry_brigade
 name = "13-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "13-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -2758,14 +2530,14 @@ location = 3515
 regiment = {
 type = infantry_brigade
 name = "34-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "34-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -2784,7 +2556,7 @@ location = 3515
 regiment = {
 type = cavalry_brigade
 name = "Crimean Horse & 7-ya Don Cossacks"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -2797,7 +2569,7 @@ location = 3309
 regiment = {
 type = hq_brigade
 name = "8-i Armeiskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -2808,14 +2580,14 @@ location = 3309
 regiment = {
 type = infantry_brigade
 name = "14-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "14-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -2834,14 +2606,14 @@ location = 3309
 regiment = {
 type = infantry_brigade
 name = "15-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "15-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -2860,14 +2632,14 @@ location = 3309
 regiment = {
 type = cavalry_brigade
 name = "8-ya Kavaleriiskaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = cavalry_brigade
 name = "8-ya Kavaleriiskaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -2879,7 +2651,7 @@ location = 3309
 regiment = {
 type = infantry_brigade
 name = "4-ya Strelkovaya Brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -2892,7 +2664,7 @@ location = 3309
 regiment = {
 type = hq_brigade
 name = "Odesskii Voennyi Okrug HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -2903,7 +2675,7 @@ location = 3309
 regiment = {
 type = infantry_brigade
 name = "69-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -2911,7 +2683,7 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "69-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -2924,7 +2696,7 @@ location = 3581
 regiment = {
 type = garrison_brigade
 name = "1-ya Sevastopol Garrison Brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -2932,7 +2704,7 @@ is_reserve = yes
 regiment = {
 type = garrison_brigade
 name = "2-ya Sevastopol Garrison Brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -2947,15 +2719,8 @@ location = 1409
 regiment = {
 type = hq_brigade
 name = "7th HQ Brigada"
-historical_model = 1
-experience = 0
-}
-
-regiment = {
-type = engineer_brigade
-name = "Moscow Engineers"
 historical_model = 0
-experience = 10
+experience = 0
 }
 
 corps = {
@@ -2965,134 +2730,8 @@ location = 1409
 regiment = {
 type = hq_brigade
 name = "Moskovskii Voennyi Okrug HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
-}
-
-division = {
-name = "70-ya Pekhotnaya Diviziya"
-location = 1409
-
-regiment = {
-type = infantry_brigade
-name = "70-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "70-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "71-ya Pekhotnaya Diviziya"
-location = 1409
-
-regiment = {
-type = infantry_brigade
-name = "71-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "71-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "72-ya Pekhotnaya Diviziya"
-location = 1409
-
-regiment = {
-type = infantry_brigade
-name = "72-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "72-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "73-ya Pekhotnaya Diviziya"
-location = 1409
-
-regiment = {
-type = infantry_brigade
-name = "73-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "73-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "74-ya Pekhotnaya Diviziya"
-location = 1409
-
-regiment = {
-type = infantry_brigade
-name = "74-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "74-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "75-ya Pekhotnaya Diviziya"
-location = 1409
-
-regiment = {
-type = infantry_brigade
-name = "75-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "75-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
 }
 
 division = {
@@ -3102,7 +2741,7 @@ location = 1409
 regiment = {
 type = garrison_brigade
 name = "1-ya Moscow Local Brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -3110,7 +2749,7 @@ is_reserve = yes
 regiment = {
 type = garrison_brigade
 name = "2-ya Moscow Local Brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -3187,7 +2826,7 @@ location = 1409
 regiment = {
 type = hq_brigade
 name = "Grenaderskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 20
 }
 
@@ -3198,21 +2837,21 @@ location = 1409
 regiment = {
 type = infantry_brigade
 name = "1-ya Grenaderskaya 1-ya brigada"
-historical_model = 3
+historical_model = 2
 experience = 20
 }
 
 regiment = {
 type = infantry_brigade
 name = "1-ya Grenaderskaya 2-ya brigada"
-historical_model = 3
+historical_model = 2
 experience = 20
 }
 
 regiment = {
 type = artillery_brigade
 name = "Graf Bruce's Grenaderskaya Artilleriiskaya"
-historical_model = 2
+historical_model = 1
 experience = 20
 }
 }
@@ -3224,21 +2863,21 @@ location = 1409
 regiment = {
 type = infantry_brigade
 name = "2-ya Grenaderskaya 1-ya brigada"
-historical_model = 3
+historical_model = 2
 experience = 20
 }
 
 regiment = {
 type = infantry_brigade
 name = "2-ya Grenaderskaya 2-ya brigada"
-historical_model = 3
+historical_model = 2
 experience = 20
 }
 
 regiment = {
 type = artillery_brigade
 name = "2-ya Grenaderskaya Artilleriiskaya brigada"
-historical_model = 2
+historical_model = 1
 experience = 20
 }
 }
@@ -3250,14 +2889,14 @@ location = 1409
 regiment = {
 type = cavalry_brigade
 name = "1-ya Kavaleriiskaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = cavalry_brigade
 name = "1-ya Kavaleriiskaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -3270,7 +2909,7 @@ location = 2233
 regiment = {
 type = hq_brigade
 name = "5-i Armeiskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -3281,14 +2920,14 @@ location = 2233
 regiment = {
 type = infantry_brigade
 name = "7-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "7-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -3307,14 +2946,14 @@ location = 2233
 regiment = {
 type = infantry_brigade
 name = "10-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "10-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -3333,7 +2972,7 @@ location = 2233
 regiment = {
 type = cavalry_brigade
 name = "3-ya Otdel'naya Kavaleriiskaya Brigada"
-historical_model = 3
+historical_model = 2
 experience = 10
 }
 }
@@ -3346,7 +2985,7 @@ location = 1535
 regiment = {
 type = hq_brigade
 name = "13-i Armeiskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -3357,14 +2996,14 @@ location = 1535
 regiment = {
 type = infantry_brigade
 name = "1-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "1-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -3383,14 +3022,14 @@ location = 1535
 regiment = {
 type = infantry_brigade
 name = "36-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "36-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -3409,71 +3048,7 @@ location = 1535
 regiment = {
 type = cavalry_brigade
 name = "2-ya Otdel'naya Kavaleriiskaya Brigada"
-historical_model = 2
-experience = 10
-}
-}
-}
-
-corps = {
-name = "17-i Armeiskii Korpus"
-location = 1409
-
-regiment = {
-type = hq_brigade
-name = "17-i Armeiskii Korpus HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "3-ya Pekhotnaya Diviziya"
-location = 1409
-
-regiment = {
-type = infantry_brigade
-name = "3-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "3-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "3-ya Artilleriiskaya brigada"
-historical_model = 0
-experience = 10
-}
-}
-
-division = {
-name = "35-ya Pekhotnaya Diviziya"
-location = 1409
-
-regiment = {
-type = infantry_brigade
-name = "35-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "35-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "35-ya Artilleriiskaya brigada"
-historical_model = 0
+historical_model = 1
 experience = 10
 }
 }
@@ -3486,7 +3061,7 @@ location = 1409
 regiment = {
 type = hq_brigade
 name = "25-i Armeiskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -3497,48 +3072,22 @@ location = 1409
 regiment = {
 type = infantry_brigade
 name = "3-ya Grenaderskaya 1-ya brigada"
-historical_model = 3
+historical_model = 2
 experience = 20
 }
 
 regiment = {
 type = infantry_brigade
 name = "3-ya Grenaderskaya 2-ya brigada"
-historical_model = 3
+historical_model = 2
 experience = 20
 }
 
 regiment = {
 type = artillery_brigade
 name = "3-ya Grenaderskaya Artilleriiskaya brigada"
-historical_model = 2
+historical_model = 1
 experience = 20
-}
-}
-
-division = {
-name = "46-ya Pekhotnaya Diviziya"
-location = 1409
-
-regiment = {
-type = infantry_brigade
-name = "46-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "46-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "46-ya Artilleriiskaya brigada"
-historical_model = 0
-experience = 10
 }
 }
 }
@@ -3551,200 +3100,8 @@ location = 1330
 regiment = {
 type = hq_brigade
 name = "8th HQ Brigada"
-historical_model = 1
+historical_model = 0
 experience = 0
-}
-
-regiment = {
-type = engineer_brigade
-name = "Kazan Engineers"
-historical_model = 0
-experience = 10
-}
-
-corps = {
-name = "16-i Armeiskii Korpus"
-location = 1330
-
-regiment = {
-type = hq_brigade
-name = "16-i Armeiskii Korpus HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "41-ya Pekhotnaya Diviziya"
-location = 1330
-
-regiment = {
-type = infantry_brigade
-name = "41-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "41-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "41-ya Artilleriiskaya brigada"
-historical_model = 0
-experience = 10
-}
-}
-
-division = {
-name = "45-ya Pekhotnaya Diviziya"
-location = 1330
-
-regiment = {
-type = infantry_brigade
-name = "45-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "45-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "45-ya Artilleriiskaya brigada"
-historical_model = 0
-experience = 10
-}
-}
-
-division = {
-name = "47-ya Pekhotnaya Diviziya"
-location = 1330
-
-regiment = {
-type = infantry_brigade
-name = "47-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "47-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "47-ya Artilleriiskaya brigada"
-historical_model = 0
-experience = 10
-}
-}
-
-division = {
-name = "5-ya Kavaleriiskaya Diviziya"
-location = 1330
-
-regiment = {
-type = cavalry_brigade
-name = "5-ya Kavaleriiskaya 1-ya brigada"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = cavalry_brigade
-name = "5-ya Kavaleriiskaya 2-ya brigada"
-historical_model = 2
-experience = 10
-}
-}
-
-division = {
-name = "1-ya Astrakhan Kazach'ya"
-location = 1330
-
-regiment = {
-type = cavalry_brigade
-name = "1-ya Astrakhan Kazach'ya Brigada"
-historical_model = 2
-experience = 10
-}
-}
-}
-
-corps = {
-name = "24-i Armeiskii Korpus"
-location = 6708
-
-regiment = {
-type = hq_brigade
-name = "24-i Armeiskii Korpus HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "48-ya Pekhotnaya Diviziya"
-location = 6708
-
-regiment = {
-type = infantry_brigade
-name = "48-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "48-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "48-ya Artilleriiskaya brigada"
-historical_model = 0
-experience = 10
-}
-}
-
-division = {
-name = "49-ya Pekhotnaya Diviziya"
-location = 6708
-
-regiment = {
-type = infantry_brigade
-name = "49-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "49-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "49-ya Artilleriiskaya brigada"
-historical_model = 0
-experience = 10
-}
-}
 }
 
 corps = {
@@ -3754,7 +3111,7 @@ location = 1330
 regiment = {
 type = hq_brigade
 name = "Kazanskii Voennyi Okrug HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -3765,7 +3122,7 @@ location = 1330
 regiment = {
 type = infantry_brigade
 name = "76-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -3773,70 +3130,7 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "76-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "77-ya Pekhotnaya Diviziya"
-location = 1330
-
-regiment = {
-type = infantry_brigade
-name = "77-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "77-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "78-ya Pekhotnaya Diviziya"
-location = 1330
-
-regiment = {
-type = infantry_brigade
-name = "78-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "78-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "79-ya Pekhotnaya Diviziya"
-location = 1330
-
-regiment = {
-type = infantry_brigade
-name = "79-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "79-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -3967,18 +3261,6 @@ experience = 5
 is_reserve = yes
 }
 }
-
-division = {
-name = "Orenburg Kazach'ya brigada"
-location = 6746
-
-regiment = {
-type = cavalry_brigade
-name = "Orenburg Cossack Brigada"
-historical_model = 3
-experience = 10
-}
-}
 }
 }
 
@@ -3989,7 +3271,7 @@ location = 3254
 regiment = {
 type = hq_brigade
 name = "9th HQ Brigada"
-historical_model = 1
+historical_model = 0
 experience = 0
 }
 
@@ -4007,7 +3289,7 @@ location = 7287
 regiment = {
 type = hq_brigade
 name = "1-i Kavkazskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -4018,21 +3300,14 @@ location = 7287
 regiment = {
 type = infantry_brigade
 name = "20-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "20-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "20-ya Artilleriiskaya brigada"
-historical_model = 0
+historical_model = 1
 experience = 10
 }
 }
@@ -4044,21 +3319,14 @@ location = 7287
 regiment = {
 type = infantry_brigade
 name = "39-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 	
 regiment = {
 type = infantry_brigade
 name = "39-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
-experience = 10
-}
-	
-regiment = {
-type = artillery_brigade
-name = "39-ya Artilleriiskaya brigada"
-historical_model = 0
+historical_model = 1
 experience = 10
 }
 }
@@ -4070,14 +3338,14 @@ location = 7287
 regiment = {
 type = cavalry_brigade
 name = "1-ya Kavkazskaya Kazach'ya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = cavalry_brigade
 name = "1-ya Kavkazskaya Kazach'ya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -4089,7 +3357,7 @@ location = 7287
 regiment = {
 type = infantry_brigade
 name = "1-ya Kavkazskaya Strelkovaya Brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -4102,7 +3370,7 @@ location = 3254
 regiment = {
 type = hq_brigade
 name = "2-i Kavkazskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -4113,21 +3381,21 @@ location = 3254
 regiment = {
 type = infantry_brigade
 name = "Kavkazskaya Grenaderskaya 1-ya brigada"
-historical_model = 3
+historical_model = 2
 experience = 20
 }
 
 regiment = {
 type = infantry_brigade
 name = "Kavkazskaya Grenaderskaya 2-ya brigada"
-historical_model = 3
+historical_model = 2
 experience = 20
 }
 
 regiment = {
 type = artillery_brigade
 name = "Grenadier Artilleriiskaya brigada"
-historical_model = 2
+historical_model = 1
 experience = 20
 }
 }
@@ -4139,14 +3407,14 @@ location = 3254
 regiment = {
 type = infantry_brigade
 name = "51-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "51-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -4165,14 +3433,14 @@ location = 3254
 regiment = {
 type = infantry_brigade
 name = "2-ya Kavkazskaya Strelkovaya Brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "2-ya Kavkazskaya Strelkovaya Brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -4191,14 +3459,14 @@ location = 3254
 regiment = {
 type = cavalry_brigade
 name = "Kavkazskaya Kavaleriiskaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = cavalry_brigade
 name = "Kavkazskaya Kavaleriiskaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -4210,14 +3478,14 @@ location = 3254
 regiment = {
 type = cavalry_brigade
 name = "2 Kavkazskaya Kazach'ya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = cavalry_brigade
 name = "2 Kavkazskaya Kazach'ya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -4230,7 +3498,7 @@ location = 7105
 regiment = {
 type = hq_brigade
 name = "3-i Kavkazskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -4241,14 +3509,14 @@ location = 7105
 regiment = {
 type = infantry_brigade
 name = "21-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "21-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -4267,14 +3535,14 @@ location = 7105
 regiment = {
 type = infantry_brigade
 name = "52-ya Pekhotnaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "52-ya Pekhotnaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -4293,14 +3561,14 @@ location = 7105
 regiment = {
 type = cavalry_brigade
 name = "3 Kavkazskaya Kazach'ya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = cavalry_brigade
 name = "3 Kavkazskaya Kazach'ya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -4313,7 +3581,7 @@ location = 3254
 regiment = {
 type = hq_brigade
 name = "Kavkazskii Voennyi Okrug HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -4324,7 +3592,7 @@ location = 3254
 regiment = {
 type = infantry_brigade
 name = "80-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -4332,7 +3600,7 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "80-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -4345,7 +3613,7 @@ location = 3254
 regiment = {
 type = infantry_brigade
 name = "81-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -4353,7 +3621,7 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "81-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -4366,7 +3634,7 @@ location = 3254
 regiment = {
 type = infantry_brigade
 name = "82-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -4374,7 +3642,7 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "82-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -4387,7 +3655,7 @@ location = 3254
 regiment = {
 type = infantry_brigade
 name = "83-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -4395,7 +3663,7 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "83-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -4408,7 +3676,7 @@ location = 3254
 regiment = {
 type = infantry_brigade
 name = "84-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -4416,7 +3684,7 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "84-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -4473,7 +3741,7 @@ location = 9025
 regiment = {
 type = hq_brigade
 name = "10th HQ Brigada"
-historical_model = 1
+historical_model = 0
 experience = 0
 }
 
@@ -4491,7 +3759,7 @@ location = 9025
 regiment = {
 type = hq_brigade
 name = "1-i Turkestanskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -4502,7 +3770,7 @@ location = 9025
 regiment = {
 type = infantry_brigade
 name = "1-ya Turkestanskaya Strelkovaya Brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -4514,7 +3782,7 @@ location = 9025
 regiment = {
 type = infantry_brigade
 name = "2-ya Turkestanskaya Strelkovaya Brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -4526,7 +3794,7 @@ location = 9025
 regiment = {
 type = infantry_brigade
 name = "3-ya Turkestanskaya Strelkovaya Brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -4538,14 +3806,14 @@ location = 9025
 regiment = {
 type = cavalry_brigade
 name = "1 Turkestanskaya Kazach'ya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 }
 
 regiment = {
 type = cavalry_brigade
 name = "1 Turkestanskaya Kazach'ya 2-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 }
 }
@@ -4558,7 +3826,7 @@ location = 7335
 regiment = {
 type = hq_brigade
 name = "2-i Turkestanskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -4569,7 +3837,7 @@ location = 7335
 regiment = {
 type = infantry_brigade
 name = "4-ya Turkestanskaya Strelkovaya Brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -4581,19 +3849,7 @@ location = 7335
 regiment = {
 type = infantry_brigade
 name = "5-ya Turkestanskaya Strelkovaya Brigada"
-historical_model = 2
-experience = 10
-}
-}
-
-division = {
-name = "Trans-Caspian Kazach'ya Brigada"
-location = 7335
-
-regiment = {
-type = cavalry_brigade
-name = "Trans-Caspian Cossack Brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -4606,7 +3862,7 @@ location = 9025
 regiment = {
 type = hq_brigade
 name = "Turkestanskii Voennyi Okrug HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -4617,7 +3873,7 @@ location = 9025
 regiment = {
 type = infantry_brigade
 name = "85-ya Pekhotnaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -4625,7 +3881,7 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "85-ya Pekhotnaya 2-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -4638,7 +3894,7 @@ location = 9025
 regiment = {
 type = infantry_brigade
 name = "6-ya Turkestanskaya Strelkovaya Brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 is_reserve = yes
 }
@@ -4651,7 +3907,7 @@ location = 9025
 regiment = {
 type = cavalry_brigade
 name = "Siberian Cossack Brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 }
@@ -4686,7 +3942,7 @@ location = 8528
 regiment = {
 type = hq_brigade
 name = "11th HQ Brigada"
-historical_model = 1
+historical_model = 0
 experience = 0
 }
 
@@ -4705,7 +3961,7 @@ location = 8528
 regiment = {
 type = hq_brigade
 name = "Omskii Voennyi Okrug HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -4716,14 +3972,14 @@ location = 8528
 regiment = {
 type = infantry_brigade
 name = "11-ya Sibirskaya Strelkovaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "11-ya Sibirskaya Strelkovaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -4742,7 +3998,7 @@ location = 8528
 regiment = {
 type = cavalry_brigade
 name = "3rd Siberian Cossacks"
-historical_model = 2
+historical_model = 1
 experience = 10
 is_reserve = yes
 }
@@ -4755,7 +4011,7 @@ location = 8528
 regiment = {
 type = infantry_brigade
 name = "12-ya Sibirskaya Strelkovaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -4763,7 +4019,7 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "12-ya Sibirskaya Strelkovaya 2-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -4799,7 +4055,7 @@ location = 8743
 regiment = {
 type = hq_brigade
 name = "12th HQ Brigada"
-historical_model = 1
+historical_model = 0
 experience = 0
 }
 
@@ -4818,7 +4074,7 @@ location = 8743
 regiment = {
 type = hq_brigade
 name = "2-i Sibirskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -4829,14 +4085,14 @@ location = 8743
 regiment = {
 type = infantry_brigade
 name = "4-ya Sibirskaya Strelkovaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "4-ya Sibirskaya Strelkovaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -4855,14 +4111,14 @@ location = 8743
 regiment = {
 type = infantry_brigade
 name = "5-ya Sibirskaya Strelkovaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "5-ya Sibirskaya Strelkovaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -4881,7 +4137,7 @@ location = 8743
 regiment = {
 type = cavalry_brigade
 name = "Trans-Baikal Cossack Brigada"
-historical_model = 2
+historical_model = 1
 experience = 5
 is_reserve = yes
 }
@@ -4895,7 +4151,7 @@ location = 8743
 regiment = {
 type = hq_brigade
 name = "3-i Sibirskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -4906,14 +4162,14 @@ location = 8743
 regiment = {
 type = infantry_brigade
 name = "7-ya Sibirskaya Strelkovaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "7-ya Sibirskaya Strelkovaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -4932,14 +4188,14 @@ location = 8743
 regiment = {
 type = infantry_brigade
 name = "8-ya Sibirskaya Strelkovaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "8-ya Sibirskaya Strelkovaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -4979,7 +4235,7 @@ location = 8743
 regiment = {
 type = infantry_brigade
 name = "13-ya Sibirskaya Strelkovaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -4987,7 +4243,7 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "13-ya Sibirskaya Strelkovaya 2-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -5002,7 +4258,7 @@ location = 7045
 regiment = {
 type = hq_brigade
 name = "13th HQ Brigada"
-historical_model = 1
+historical_model = 0
 experience = 0
 }
 
@@ -5020,7 +4276,7 @@ location = 4390
 regiment = {
 type = hq_brigade
 name = "1-i Sibirskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -5031,14 +4287,14 @@ location = 4390
 regiment = {
 type = infantry_brigade
 name = "1-ya Sibirskaya Strelkovaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "1-ya Sibirskaya Strelkovaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -5057,14 +4313,14 @@ location = 4390
 regiment = {
 type = infantry_brigade
 name = "2-ya Sibirskaya Strelkovaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "2-ya Sibirskaya Strelkovaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -5073,19 +4329,6 @@ type = artillery_brigade
 name = "2-ya Sibirskaya Artilleriiskaya brigada"
 historical_model = 0
 experience = 10
-}
-}
-
-division = {
-name = "Ussuriiskaya Konnaya Brigada"
-location = 4390
-
-regiment = {
-type = cavalry_brigade
-name = "Ussuri Horse Brigada"
-historical_model = 2
-experience = 10
-is_reserve = yes
 }
 }
 }
@@ -5097,7 +4340,7 @@ location = 4390
 regiment = {
 type = hq_brigade
 name = "4-i Sibirskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -5108,21 +4351,14 @@ location = 4390
 regiment = {
 type = infantry_brigade
 name = "3-ya Sibirskaya Strelkovaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "3-ya Sibirskaya Strelkovaya 2-ya brigada"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "3-ya Siberian Artilleriiskaya brigada"
-historical_model = 0
+historical_model = 1
 experience = 10
 }
 }
@@ -5134,23 +4370,15 @@ location = 4390
 regiment = {
 type = infantry_brigade
 name = "9-ya Sibirskaya Strelkovaya 1"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "9-ya Sibirskaya Strelkovaya 2"
-historical_model = 2
+historical_model = 1
 experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "9-ya Siberian Artilleriiskaya brigada"
-historical_model = 0
-experience = 10
-is_reserve = yes
 }
 }
 }
@@ -5162,7 +4390,7 @@ location = 7045
 regiment = {
 type = hq_brigade
 name = "5-i Sibirskii Korpus HQ"
-historical_model = 3
+historical_model = 2
 experience = 15
 }
 
@@ -5173,14 +4401,14 @@ location = 7045
 regiment = {
 type = infantry_brigade
 name = "6-ya Sibirskaya Strelkovaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "6-ya Sibirskaya Strelkovaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -5199,14 +4427,14 @@ location = 7045
 regiment = {
 type = infantry_brigade
 name = "10-ya Sibirskaya Strelkovaya 1-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
 name = "10-ya Sibirskaya Strelkovaya 2-ya brigada"
-historical_model = 2
+historical_model = 1
 experience = 10
 }
 
@@ -5226,7 +4454,7 @@ location = 7045
 regiment = {
 type = hq_brigade
 name = "Priamurskii Voennyi Okrug HQ"
-historical_model = 3
+historical_model = 0
 experience = 15
 }
 
@@ -5237,7 +4465,7 @@ location = 7045
 regiment = {
 type = infantry_brigade
 name = "14-ya Sibirskaya Strelkovaya 1-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -5245,7 +4473,7 @@ is_reserve = yes
 regiment = {
 type = infantry_brigade
 name = "14-ya Sibirskaya Strelkovaya 2-ya brigada"
-historical_model = 1
+historical_model = 0
 experience = 5
 is_reserve = yes
 }
@@ -5295,66 +4523,48 @@ is_reserve = yes
 }
 }
 }
-military_construction = {
-country = RUS
-dreadnaught = {
-name = "Sevastopol"
-historical_model = 0}
-cost = 4
-progress = 0
-duration = 316}
 
 military_construction = {
 country = RUS
-dreadnaught = {
-name = "Petropavlovsk"
-historical_model = 0}
+battleship = {
+name = "Evstafi"
+historical_model = 11}
 cost = 4
 progress = 0
-duration = 344}
+duration = 96}
 
 military_construction = {
 country = RUS
-dreadnaught = {
-name = "Poltava"
-historical_model = 0}
+battleship = {
+name = "Ioann Zlatoust"
+historical_model = 11}
 cost = 4
 progress = 0
-duration = 346}
+duration = 102}
 
 military_construction = {
 country = RUS
-dreadnaught = {
-name = "Gangut"
-historical_model = 0}
+battleship = {
+name = "Andrei Pervozvanny"
+historical_model = 12}
 cost = 4
 progress = 0
-duration = 349}
+duration = 87}
 
 military_construction = {
 country = RUS
-dreadnaught = {
-name = "Imperatritsa Mariya"
-historical_model = 1}
+battleship = {
+name = "Imperator Pavel I"
+historical_model = 12}
 cost = 4
 progress = 0
-duration = 545}
+duration = 129}
 
 military_construction = {
 country = RUS
-dreadnaught = {
-name = "Imperatritsa Ekaterina Velikaya"
-historical_model = 1}
+heavy_cruiser = {
+name = "Pallada"
+historical_model = 6}
 cost = 4
 progress = 0
-duration = 647}
-
-
-military_construction = {
-country = RUS
-destroyer = {
-name = "14 Flotiliya Esmintsev"
-historical_model = 2}
-cost = 4
-progress = 0
-duration = 100}
+duration = 276}
