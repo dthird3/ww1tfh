@@ -90,254 +90,625 @@ transport_ship = {
 }
 
 ministers = {
-	57001 = {
-		name = "Phillipe Petain"
-		ideology = paternal_autocrat
-		loyalty = 1.00
-		picture = M57001
-		head_of_state = resigned_generalissimo
-		start_date = 1936.1.1
-	}
-	57002 = {
-		name = "Jean-Francois Darlan"
-		ideology = paternal_autocrat
-		loyalty = 1.00
-		picture = M57002
-		head_of_government = old_admiral
-		chief_of_navy = decisive_naval_battle_doctrine
-		foreign_minister = general_staffer
-		minister_of_security = back_stabber
-		chief_of_staff = school_of_psychology
-		start_date = 1936.1.1
-	}
-	57003 = {
-		name = "Paul Baudouin"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M57003
-		foreign_minister = iron_fisted_brute
-		start_date = 1936.1.1
-	}
-	57004 = {
-		name = "Marius Berliet"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M57004
-		armament_minister = laissez_faires_capitalist
-		start_date = 1936.1.1
-	}
-	57005 = {
-		name = "Joseph Barthélemy"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M57005
-		minister_of_security = silent_lawyer
-		start_date = 1936.1.1
-	}
-	57006 = {
-		name = "Rene Bousquet"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M57006
-		minister_of_intelligence = technical_specialist
-		start_date = 1936.1.1
-	}
-	57007 = {
-		name = "Charles Huntziger"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M57007
-		chief_of_staff = school_of_defence
-		start_date = 1936.1.1
-	}
-	57008 = {
-		name = "Maxime Weygand"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M57008
-		chief_of_army = elastic_defence_doctrine
-		start_date = 1936.1.1
-	}
-	57010 = {
-		name = "Jean Marie Bergeret"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M57010
-		chief_of_air = army_aviation_doctrine
-		start_date = 1936.1.1
-	}
-	57011 = {
-		name = "Pierre Laval"
-		ideology = paternal_autocrat
-		loyalty = 1.00
-		picture = M57011
-		head_of_government = flamboyant_tough_guy
-		foreign_minister = apologetic_clerk
-		minister_of_security = prince_of_terror
-		minister_of_intelligence = political_specialist
-		start_date = 1942.1.1
-	}
-	57013 = {
-		name = "Charles André Weiss"
-		ideology = paternal_autocrat
-		loyalty = 0.50
-		picture = M57013
-		foreign_minister = iron_fisted_brute
-		start_date = 1941.1.1
-	}
-	57014 = {
-		name = "Albert Thomas"
-		ideology = paternal_autocrat
-		loyalty = 0.50
-		picture = M57014
-		foreign_minister = the_cloak_n_dagger_schemer
-		start_date = 1941.1.1
-	}
-	57016 = {
-		name = "Gabriel Hanoteaux"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M57016
-		foreign_minister = ideological_crusader
-		start_date = 1942.1.1
-	}
-	57017 = {
-		name = "Henri de Jouvenel"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M57017
-		foreign_minister = biased_intellectual
-		head_of_government = insignificant_layman
-		start_date = 1943.1.1
-	}
-	57018 = {
-		name = "Arne Leroy"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M57018
-		foreign_minister = great_compromiser
-		start_date = 1943.1.1
-	}
-	57019 = {
-		name = "Tulio Franco Franco"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M57019
-		armament_minister = resource_industrialist
-		start_date = 1941.1.1
-	}
-	57020 = {
-		name = "Lucien Lacaze"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M57020
-		armament_minister = military_entrepreneur
-		start_date = 1941.1.1
-	}
-	57021 = {
-		name = "Robert Haas"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M57021
-		armament_minister = laissez_faires_capitalist
-		start_date = 1942.1.1
-	}
-	57022 = {
-		name = "Stephane Auphan"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M57022
-		armament_minister = air_to_sea_proponent
-		start_date = 1942.1.1
-	}
-	57023 = {
-		name = "Paul Painleve"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M57023
-		armament_minister = administrative_genius
-		start_date = 1943.1.1
-	}
-	57024 = {
-		name = "Paul Mantoux"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M57024
-		armament_minister = theoretical_scientist
-		start_date = 1943.1.1
-	}
-	57026 = {
-		name = "Eduard Herriot"
-		ideology = paternal_autocrat
-		loyalty = 0.50
-		picture = M57026
-		minister_of_security = silent_lawyer
-		start_date = 1941.1.1
-	}
-	57028 = {
-		name = "Marius Viple"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M57028
-		minister_of_security = man_of_the_people
-		start_date = 1942.1.1
-	}
-	57029 = {
-		name = "René Bousquet"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M57006
-		minister_of_security = compassionate_gentleman
-		start_date = 1942.1.1
-	}
-	57030 = {
-		name = "Raphael Alibert"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M57030
-		minister_of_security = crime_fighter
-		start_date = 1943.1.1
-	}
-	57031 = {
-		name = "Gouffre de Lapradelle"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M57031
-		minister_of_security = efficient_sociopath
-		minister_of_intelligence = industrial_specialist
-		start_date = 1943.1.1
-	}
-	57034 = {
-		name = "Eugene Bridoux"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M57034
-		chief_of_staff = school_of_mass_combat
-		chief_of_army = decisive_battle_doctrine
-		start_date = 1942.1.1
-	}
-	57036 = {
-		name = "Jean Esteva"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M57036
-		chief_of_navy = indirect_approach_doctrine
-		start_date = 1942.1.1
-	}
-	57037 = {
-		name = "Jean Marie Abrial"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M57037
-		chief_of_navy = open_seas_doctrine
-		start_date = 1943.1.1
-	}
-	57038 = {
-		name = "Maurice Jannekeyn"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M57038
-		chief_of_air = carpet_bombing_doctrine
-		start_date = 1942.1.1
-	}
+57001 = {
+name = "Phillipe Petain"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 1.00
+picture = MM57001
+head_of_state = resigned_generalissimo
+start_date = 1936.1.1
+}
+57002 = {
+name = "Jean-Francois Darlan"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 1.00
+picture = MM57002
+head_of_government = old_admiral
+chief_of_navy = decisive_naval_battle_doctrine
+foreign_minister = general_staffer
+minister_of_security = back_stabber
+chief_of_staff = school_of_psychology
+start_date = 1936.1.1
+}
+57003 = {
+name = "Paul Baudouin"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.75
+picture = MM57003
+foreign_minister = iron_fisted_brute
+start_date = 1936.1.1
+}
+57004 = {
+name = "Marius Berliet"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.75
+picture = MM57004
+armament_minister = laissez_faires_capitalist
+start_date = 1936.1.1
+}
+57005 = {
+name = "Joseph Barthélemy"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.75
+picture = MM57005
+minister_of_security = silent_lawyer
+start_date = 1936.1.1
+}
+57006 = {
+name = "Rene Bousquet"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.75
+picture = MM57006
+minister_of_intelligence = technical_specialist
+start_date = 1936.1.1
+}
+57007 = {
+name = "Charles Huntziger"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.75
+picture = MM57007
+chief_of_staff = school_of_defence
+start_date = 1936.1.1
+}
+57008 = {
+name = "Maxime Weygand"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.75
+picture = MM57008
+chief_of_army = elastic_defence_doctrine
+start_date = 1936.1.1
+}
+57010 = {
+name = "Jean Marie Bergeret"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.75
+picture = MM57010
+chief_of_air = army_aviation_doctrine
+start_date = 1936.1.1
+}
+57011 = {
+name = "Pierre Laval"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 1.00
+picture = MM57011
+head_of_government = flamboyant_tough_guy
+foreign_minister = apologetic_clerk
+minister_of_security = prince_of_terror
+minister_of_intelligence = political_specialist
+start_date = 1942.1.1
+}
+57013 = {
+name = "Charles André Weiss"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.50
+picture = MM57013
+foreign_minister = iron_fisted_brute
+start_date = 1941.1.1
+}
+57014 = {
+name = "Albert Thomas"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.50
+picture = MM57014
+foreign_minister = the_cloak_n_dagger_schemer
+start_date = 1941.1.1
+}
+57016 = {
+name = "Gabriel Hanoteaux"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.75
+picture = MM57016
+foreign_minister = ideological_crusader
+start_date = 1942.1.1
+}
+57017 = {
+name = "Henri de Jouvenel"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.75
+picture = MM57017
+foreign_minister = biased_intellectual
+head_of_government = insignificant_layman
+start_date = 1943.1.1
+}
+57018 = {
+name = "Arne Leroy"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.75
+picture = MM57018
+foreign_minister = great_compromiser
+start_date = 1943.1.1
+}
+57019 = {
+name = "Tulio Franco Franco"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.75
+picture = MM57019
+armament_minister = resource_industrialist
+start_date = 1941.1.1
+}
+57020 = {
+name = "Lucien Lacaze"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.75
+picture = MM57020
+armament_minister = military_entrepreneur
+start_date = 1941.1.1
+}
+57021 = {
+name = "Robert Haas"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.75
+picture = MM57021
+armament_minister = laissez_faires_capitalist
+start_date = 1942.1.1
+}
+57022 = {
+name = "Stephane Auphan"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.75
+picture = MM57022
+armament_minister = air_to_sea_proponent
+start_date = 1942.1.1
+}
+57023 = {
+name = "Paul Painleve"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.75
+picture = MM57023
+armament_minister = administrative_genius
+start_date = 1943.1.1
+}
+57024 = {
+name = "Paul Mantoux"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.75
+picture = MM57024
+armament_minister = theoretical_scientist
+start_date = 1943.1.1
+}
+57026 = {
+name = "Eduard Herriot"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.50
+picture = MM57026
+minister_of_security = silent_lawyer
+start_date = 1941.1.1
+}
+57028 = {
+name = "Marius Viple"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.75
+picture = MM57028
+minister_of_security = man_of_the_people
+start_date = 1942.1.1
+}
+57029 = {
+name = "René Bousquet"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.75
+picture = MM57006
+minister_of_security = compassionate_gentleman
+start_date = 1942.1.1
+}
+57030 = {
+name = "Raphael Alibert"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.75
+picture = MM57030
+minister_of_security = crime_fighter
+start_date = 1943.1.1
+}
+57031 = {
+name = "Gouffre de Lapradelle"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.75
+picture = MM57031
+minister_of_security = efficient_sociopath
+minister_of_intelligence = industrial_specialist
+start_date = 1943.1.1
+}
+57034 = {
+name = "Eugene Bridoux"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.75
+picture = MM57034
+chief_of_staff = school_of_mass_combat
+chief_of_army = decisive_battle_doctrine
+start_date = 1942.1.1
+}
+57036 = {
+name = "Jean Esteva"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.75
+picture = MM57036
+chief_of_navy = indirect_approach_doctrine
+start_date = 1942.1.1
+}
+57037 = {
+name = "Jean Marie Abrial"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.75
+picture = MM57037
+chief_of_navy = open_seas_doctrine
+start_date = 1943.1.1
+}
+57038 = {
+name = "Maurice Jannekeyn"
+ideology = paternal_autocrat
+
+#death_date = 1935.12.31
+loyalty = 0.75
+picture = MM57038
+chief_of_air = carpet_bombing_doctrine
+start_date = 1942.1.1
+}
+123457001 = {
+name = "Phillipe Petain"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 1.00
+picture = M57001
+head_of_state = resigned_generalissimo
+start_date = 1936.1.1
+}
+123457002 = {
+name = "Jean-Francois Darlan"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 1.00
+picture = M57002
+head_of_government = old_admiral
+chief_of_navy = decisive_naval_battle_doctrine
+foreign_minister = general_staffer
+minister_of_security = back_stabber
+chief_of_staff = school_of_psychology
+start_date = 1936.1.1
+}
+123457003 = {
+name = "Paul Baudouin"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.75
+picture = M57003
+foreign_minister = iron_fisted_brute
+start_date = 1936.1.1
+}
+123457004 = {
+name = "Marius Berliet"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.75
+picture = M57004
+armament_minister = laissez_faires_capitalist
+start_date = 1936.1.1
+}
+123457005 = {
+name = "Joseph Barthélemy"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.75
+picture = M57005
+minister_of_security = silent_lawyer
+start_date = 1936.1.1
+}
+123457006 = {
+name = "Rene Bousquet"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.75
+picture = M57006
+minister_of_intelligence = technical_specialist
+start_date = 1936.1.1
+}
+123457007 = {
+name = "Charles Huntziger"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.75
+picture = M57007
+chief_of_staff = school_of_defence
+start_date = 1936.1.1
+}
+123457008 = {
+name = "Maxime Weygand"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.75
+picture = M57008
+chief_of_army = elastic_defence_doctrine
+start_date = 1936.1.1
+}
+123457010 = {
+name = "Jean Marie Bergeret"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.75
+picture = M57010
+chief_of_air = army_aviation_doctrine
+start_date = 1936.1.1
+}
+123457011 = {
+name = "Pierre Laval"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 1.00
+picture = M57011
+head_of_government = flamboyant_tough_guy
+foreign_minister = apologetic_clerk
+minister_of_security = prince_of_terror
+minister_of_intelligence = political_specialist
+start_date = 1942.1.1
+}
+123457013 = {
+name = "Charles André Weiss"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.50
+picture = M57013
+foreign_minister = iron_fisted_brute
+start_date = 1941.1.1
+}
+123457014 = {
+name = "Albert Thomas"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.50
+picture = M57014
+foreign_minister = the_cloak_n_dagger_schemer
+start_date = 1941.1.1
+}
+123457016 = {
+name = "Gabriel Hanoteaux"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.75
+picture = M57016
+foreign_minister = ideological_crusader
+start_date = 1942.1.1
+}
+123457017 = {
+name = "Henri de Jouvenel"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.75
+picture = M57017
+foreign_minister = biased_intellectual
+head_of_government = insignificant_layman
+start_date = 1943.1.1
+}
+123457018 = {
+name = "Arne Leroy"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.75
+picture = M57018
+foreign_minister = great_compromiser
+start_date = 1943.1.1
+}
+123457019 = {
+name = "Tulio Franco Franco"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.75
+picture = M57019
+armament_minister = resource_industrialist
+start_date = 1941.1.1
+}
+123457020 = {
+name = "Lucien Lacaze"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.75
+picture = M57020
+armament_minister = military_entrepreneur
+start_date = 1941.1.1
+}
+123457021 = {
+name = "Robert Haas"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.75
+picture = M57021
+armament_minister = laissez_faires_capitalist
+start_date = 1942.1.1
+}
+123457022 = {
+name = "Stephane Auphan"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.75
+picture = M57022
+armament_minister = air_to_sea_proponent
+start_date = 1942.1.1
+}
+123457023 = {
+name = "Paul Painleve"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.75
+picture = M57023
+armament_minister = administrative_genius
+start_date = 1943.1.1
+}
+123457024 = {
+name = "Paul Mantoux"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.75
+picture = M57024
+armament_minister = theoretical_scientist
+start_date = 1943.1.1
+}
+123457026 = {
+name = "Eduard Herriot"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.50
+picture = M57026
+minister_of_security = silent_lawyer
+start_date = 1941.1.1
+}
+123457028 = {
+name = "Marius Viple"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.75
+picture = M57028
+minister_of_security = man_of_the_people
+start_date = 1942.1.1
+}
+123457029 = {
+name = "René Bousquet"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.75
+picture = M57006
+minister_of_security = compassionate_gentleman
+start_date = 1942.1.1
+}
+123457030 = {
+name = "Raphael Alibert"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.75
+picture = M57030
+minister_of_security = crime_fighter
+start_date = 1943.1.1
+}
+123457031 = {
+name = "Gouffre de Lapradelle"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.75
+picture = M57031
+minister_of_security = efficient_sociopath
+minister_of_intelligence = industrial_specialist
+start_date = 1943.1.1
+}
+123457034 = {
+name = "Eugene Bridoux"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.75
+picture = M57034
+chief_of_staff = school_of_mass_combat
+chief_of_army = decisive_battle_doctrine
+start_date = 1942.1.1
+}
+123457036 = {
+name = "Jean Esteva"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.75
+picture = M57036
+chief_of_navy = indirect_approach_doctrine
+start_date = 1942.1.1
+}
+123457037 = {
+name = "Jean Marie Abrial"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.75
+picture = M57037
+chief_of_navy = open_seas_doctrine
+start_date = 1943.1.1
+}
+123457038 = {
+name = "Maurice Jannekeyn"
+ideology = paternal_autocrat
+
+#death_date = 1948.1.1
+loyalty = 0.75
+picture = M57038
+chief_of_air = carpet_bombing_doctrine
+start_date = 1942.1.1
+}
+
 }
