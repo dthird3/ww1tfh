@@ -1,0 +1,85 @@
+super_heavy_armor_brigade = {
+	type = land
+	sprite = Tank
+	active = no
+	unit_group = armor_unit_type
+
+	#Size Definitions
+	max_strength = 10
+	default_organisation = 30
+	default_morale = 0.30
+	officers = 100
+
+
+	#Building Costs
+	build_cost_ic = 22
+	build_cost_manpower = 0.67
+	build_time = 210
+	repair_cost_multiplier = 0.05
+
+	#Misc Abilities
+	maximum_speed = 3.00
+	transport_weight = 25.00
+	supply_consumption = 2.5
+	fuel_consumption = 5.5
+	radio_strength = 1
+	
+	#Defensive Abilities
+	defensiveness = 8.00	# was 11.00
+	toughness = 5.00
+	softness = 0.05
+	air_defence = 0.40
+	armor_value = 13
+
+	#Offensive Abilities
+	suppression = 0.00
+	soft_attack = 4.00
+	hard_attack = 7.00
+	air_attack = 0.10
+	ap_attack = 13
+
+   	amphibious =    { attack = -3 }
+    river =         { attack = -0.50 }
+	urban = {
+		attack = -0.60
+		defence = -0.85
+	}
+   	marsh = 	{
+        attack = -0.50 
+		movement = -0.95
+		defence = -0.75
+	}
+	jungle = {
+        attack = -0.70
+		movement = -0.60
+		defence = -0.75
+	}
+	forest = {
+        attack = -0.50
+		movement = -0.60
+		defence = -0.6
+	}
+	woods = {
+        attack = -0.20 
+		movement = -0.30
+		defence = -0.50
+    }
+	mountain = 	{
+        attack = -0.55
+		movement = -0.60
+		defence = -0.85
+	}
+	hills = {
+        attack = -0.30 
+		movement = -0.30
+		defence = -0.50
+    }
+
+	combat_width = 0
+
+	completion_size = 3
+	on_completion = armour_practical
+
+	priority = 10
+
+}
