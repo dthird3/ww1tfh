@@ -333,18 +333,18 @@ civil_war_1 = {
 	
 	is_valid = {
 		THIS = { 
-			tag = CHC
+			tag = CHI
 		}
-		tag = CHI
+		tag = QIN
+		QIN = { exists = yes }
 		CHI = { exists = yes }
-		CHC = { exists = yes }
 		government_in_exile = no
 	}
 
 	#is_civil_war = yes #this is a civil war
 
 	on_completion = { 
-		CHC = { country_event = 100070 }
+		CHI = { country_event = 100070 }
 	}
 	
 	war_name = WAR_CONQUEST_NAME
@@ -356,18 +356,18 @@ civil_war_2 = {
 	
 	is_valid = {
 		THIS = { 
-			tag = CHI
+			tag = QIN
 		}
-		tag = CHC
+		tag = CHI
+		QIN = { exists = yes }
 		CHI = { exists = yes }
-		CHC = { exists = yes }
 		government_in_exile = no
 	}
 
 	#is_civil_war = yes #this is a civil war
 	
 	on_completion = { 
-		CHI = { country_event = 100073 }
+		QIN = { country_event = 100073 }
 	}
 	
 	war_name = WAR_CONQUEST_NAME
