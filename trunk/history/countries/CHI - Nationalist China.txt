@@ -1,30 +1,30 @@
-capital = 4979
-government = imperial
-ideology = paternal_autocrat
-head_of_state = 99999999 # Xuantong Emperor
-head_of_government = 99999996 # Yikuang
-foreign_minister = 99999996
-armament_minister = 99999988
-minister_of_security = 99999993
-minister_of_intelligence = 99999986
-chief_of_staff = 99999986
-chief_of_army = 99999981
-chief_of_navy = 99999984
-chief_of_air = 99999979
+capital = 5494
+government = social_democracy
+ideology = social_conservative
+head_of_state = 899999
+head_of_government = 899998
+foreign_minister = 899997
+armament_minister = 899998
+minister_of_security = 899996
+minister_of_intelligence = 899995
+chief_of_staff = 899994
+chief_of_army = 899993
+chief_of_navy = 899992
+chief_of_air = 899994
 
 alignment = { x = 60 y = 61.6 }
-neutrality = 80
+neutrality = 100
 national_unity = 70
 officers_ratio = 0.5
-oob = "CHI_1910.txt"
+oob = "CHC_1910.txt"
 popularity = { 
 national_socialist = 0
 fascistic = 0
-paternal_autocrat = 55
-social_conservative = 8
-market_liberal = 13
-social_liberal = 20
-social_democrat = 4
+paternal_autocrat = 62
+social_conservative = 27
+market_liberal = 11
+social_liberal = 0
+social_democrat = 0
 left_wing_radical = 0
 leninist = 0
 stalinist = 0
@@ -32,10 +32,10 @@ stalinist = 0
 organization = { 
 national_socialist = 0
 fascistic = 0
-paternal_autocrat = 70
-social_conservative = 15
-market_liberal = 5
-social_liberal = 10
+paternal_autocrat = 65
+social_conservative = 40
+market_liberal = 15
+social_liberal = 0
 social_democrat = 0
 left_wing_radical = 0
 leninist = 0
@@ -48,12 +48,12 @@ education_investment_law = minimal_education_investment
 economic_law = full_civilian_economy
 conscription_law = volunteer_army
 civil_law = legalistic_restrictions
-energy = 4860
-metal = 2430
-rare_materials = 1215
-crude_oil = 1000
+energy = 240
+metal = 120
+rare_materials = 60
+crude_oil = 500
 money = 10
-fuel = 1000
+fuel = 500
 infantry_theory = 1
 infantry_practical = 1
 militia_theory = 2
@@ -154,7 +154,7 @@ battlecruiser_technology = 0
 battlecruiser_antiaircraft = 0
 battlecruiser_engine = 0
 battlecruiser_armour = 0
-lightcruiser_technology = 1
+lightcruiser_technology = 0
 lightcruiser_armament = 0
 lightcruiser_antiaircraft = 0
 lightcruiser_engine = 0
@@ -169,21 +169,21 @@ dreadnaught_engine = 0
 dreadnaught_antiaircraft = 0
 dreadnaught_armour = 0
 capitalship_armament = 0
-destroyer_technology = 1
-destroyer_armament = 10
+destroyer_technology = 0
+destroyer_armament = 00
 destroyer_antiaircraft = 0
-destroyer_engine = 10
-destroyer_armour = 10
-battleship_technology = 1
-battleship_engine = 12
+destroyer_engine = 00
+destroyer_armour = 00
+battleship_technology = 0
+battleship_engine = 00
 battleship_antiaircraft = 0
-battleship_armour = 12
-battleship_armament = 12
-protectedcruiser_technology = 1
-protectedcruiser_armament = 8
+battleship_armour = 00
+battleship_armament = 00
+protectedcruiser_technology = 0
+protectedcruiser_armament = 0
 protectedcruiser_antiaircraft = 0
-protectedcruiser_engine = 8
-protectedcruiser_armour = 8
+protectedcruiser_engine = 0
+protectedcruiser_armour = 0
 mediumsubmarine_technology = 0
 
 escort_carrier_technology = 0
@@ -324,8 +324,14 @@ strategic_bombardment_tactics = 0
 aerial_photography = 0
 scout_pilot_training = 0
 strategic_air_command = 0
+1913.4.15 = {
+neutrality = -10
+government = right_wing_republic
+ideology = paternal_autocrat
+set_country_flag = yuanshikai
+}
 
-  1910.5.1 = { decision = qing_administration }
+1914.1.1 = { decision = rebellion_administration }
 
 
 
@@ -435,7 +441,7 @@ battlecruiser_technology = 0
 battlecruiser_antiaircraft = 0
 battlecruiser_engine = 0
 battlecruiser_armour = 0
-lightcruiser_technology = 1
+lightcruiser_technology = 0
 lightcruiser_armament = 0
 lightcruiser_antiaircraft = 0
 lightcruiser_engine = 0
@@ -450,21 +456,21 @@ dreadnaught_engine = 0
 dreadnaught_antiaircraft = 0
 dreadnaught_armour = 0
 capitalship_armament = 0
-destroyer_technology = 1
-destroyer_armament = 10
+destroyer_technology = 0
+destroyer_armament = 00
 destroyer_antiaircraft = 0
-destroyer_engine = 10
-destroyer_armour = 10
-battleship_technology = 1
-battleship_engine = 12
+destroyer_engine = 00
+destroyer_armour = 00
+battleship_technology = 0
+battleship_engine = 00
 battleship_antiaircraft = 0
-battleship_armour = 12
-battleship_armament = 12
-protectedcruiser_technology = 1
-protectedcruiser_armament = 8
+battleship_armour = 00
+battleship_armament = 00
+protectedcruiser_technology = 0
+protectedcruiser_armament = 0
 protectedcruiser_antiaircraft = 0
-protectedcruiser_engine = 8
-protectedcruiser_armour = 8
+protectedcruiser_engine = 0
+protectedcruiser_armour = 0
 escort_carrier_technology = 0
 
 mediumsubmarine_technology = 0
@@ -605,4 +611,160 @@ aerial_photography = 0
 scout_pilot_training = 0
 strategic_air_command = 0
 }
-1914.1.1 = { oob = "CHI_1914.txt" }
+1914.1.1 = { oob = "CHC_1914.txt" }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
