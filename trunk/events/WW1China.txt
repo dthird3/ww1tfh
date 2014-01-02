@@ -9,7 +9,7 @@ country_event = {
 		major = yes
 		
 		trigger = {
-			tag = CHI
+			tag = QIN
 			date = 1911.4.27
 		}
 		
@@ -40,8 +40,8 @@ country_event = {
 		major = yes
 		
 		trigger = {
-			tag = CHI
-			NOT = { exists = CHC }
+			tag = QIN
+			NOT = { exists = CHI }
 			war = no
 			date = 1911.10.10
 		}
@@ -59,32 +59,32 @@ country_event = {
 		option = {
 			name = "opta_CHIE1"
 			ai_chance = { factor = 100 }
-			CHI = { any_owned = { limit = { is_core = CHI } add_core = CHC } }
-			GER = { any_owned = { limit = { is_core = CHI } add_core = CHC } }
-			ENG = { any_owned = { limit = { is_core = CHI } add_core = CHC } }
-			POR = { any_owned = { limit = { is_core = CHI } add_core = CHC } }
-			JAP = { any_owned = { limit = { is_core = CHI } add_core = CHC } }
-			FRA = { any_owned = { limit = { is_core = CHI } add_core = CHC } }
-			hubei_region = { secede_province = CHC }							# 10 Oct 1911
-			hunan_region = { secede_province = CHC }							# 22 Oct 1911	
+			QIN = { any_owned = { limit = { is_core = QIN } add_core = CHI } }
+			GER = { any_owned = { limit = { is_core = QIN } add_core = CHI } }
+			ENG = { any_owned = { limit = { is_core = QIN } add_core = CHI } }
+			POR = { any_owned = { limit = { is_core = QIN } add_core = CHI } }
+			JAP = { any_owned = { limit = { is_core = QIN } add_core = CHI } }
+			FRA = { any_owned = { limit = { is_core = QIN } add_core = CHI } }
+			hubei_region = { secede_province = CHI }							# 10 Oct 1911
+			hunan_region = { secede_province = CHI }							# 22 Oct 1911	
 																				# Shaanxi 22 Oct 1911		
-			jiangxi_region = { secede_province = CHC }							# 23 - 31 Oct 1911  
+			jiangxi_region = { secede_province = CHI }							# 23 - 31 Oct 1911  
 																				# Shanxi Taiyuan 29 Oct 1911
-			yunnan_region = { secede_province = CHC }							# 30 Oct 1911																				
-			guangdong_region = { secede_province = CHC }						# 30 Oct 1911
-																				# Yuan Shikai becomes active joins CHI not CHC - Beiyang Army limited prior to this.
-			fujian_region = { secede_province = CHC }							# 1 Nov 1911
+			yunnan_region = { secede_province = CHI }							# 30 Oct 1911																				
+			guangdong_region = { secede_province = CHI }						# 30 Oct 1911
+																				# Yuan Shikai becomes active joins QIN not CHI - Beiyang Army limited prior to this.
+			fujian_region = { secede_province = CHI }							# 1 Nov 1911
 																				# Shanghai, Jiangsu, 3 Nov 1911
 																				# Troops deployed for Battle of Nanking
 																				# Battle of Nanking 24 Nov - 2 Dec - Nanking new Capital
-			guizhou_region = { secede_province = CHC }							# 4 Nov 1911
-			anhui_region = { secede_province = CHC }							# 5 Nov 1911			
-			guangxi_region = { secede_province = CHC }							# 7 Nov 1911
+			guizhou_region = { secede_province = CHI }							# 4 Nov 1911
+			anhui_region = { secede_province = CHI }							# 5 Nov 1911			
+			guangxi_region = { secede_province = CHI }							# 7 Nov 1911
 																				# Qing Transformation attempt
 																				# Shandong 13 Nov 1911	
 																				# Ningxia 17 Nov 1911																					
-			sichuan_region = { secede_province = CHC }							# 21 Nov 1911
-			xikang_region = { secede_province = CHC }							# Tibetan Independance (end 1911 - Independance ack end 1912)
+			sichuan_region = { secede_province = CHI }							# 21 Nov 1911
+			xikang_region = { secede_province = CHI }							# Tibetan Independance (end 1911 - Independance ack end 1912)
 																				# Mongolian revolt end 1911 - Dec 29 1911
 																				# Xinjiang 28 Dec 1911 first failed, 7 Jan 1912 succeed
 																				# Republic of China declared 1/1/1912
@@ -92,15 +92,15 @@ country_event = {
 																				# Abdication 20/1/1912 signed 12/2/1912 enacted
 
 
-			CHC = { capital = 9444 }
-			CHC = { split_troops = 0.50 }							# additional defector's to CHC which also gets it's own OOB with 40+ brigades
-			CHI = {	war = {	
-					target = CHC
+			CHI = { capital = 9444 }
+			CHI = { split_troops = 0.50 }							# additional defector's to CHI which also gets it's own OOB with 40+ brigades
+			QIN = {	war = {	
+					target = CHI
 					attacker_goal = { casus_belli= civil_war_2 }
 					defender_goal = { casus_belli = civil_war_1 }
 					}
 				}
-			CHC = { country_event = 100072 }
+			CHI = { country_event = 100072 }
 			add_country_modifier = {
 				name = "officers_gain"
 				duration = 15
@@ -124,7 +124,7 @@ country_event = {
 			name = "opta_CHIE1"
 			ai_chance = { factor = 100 }
 			manpower = 200
-			load_oob = CHC_1910.txt					# 20 x INF & 20 x MIL brigades
+			load_oob = CHI_1910.txt					# 20 x INF & 20 x MIL brigades
 			rare_materials = 10000
 			crude_oil = 10000
 			supplies = 30000
@@ -150,10 +150,10 @@ country_event = {
 		major = yes
 		
 		trigger = {
-			tag = CHC
+			tag = CHI
 			NOT = { exists = TIB }
 			date = 1912.2.1
-			CHC = { has_country_flag = republic_china }
+			CHI = { has_country_flag = republic_china }
 		}
 		
 		mean_time_to_happen = {
@@ -170,7 +170,7 @@ country_event = {
 			name = "opta_CHIE3"
 			ai_chance = { factor = 100 }
 			dissent = 3
-			CHC = { any_owned = { limit = { is_core = TIB } secede_province = TIB } }
+			CHI = { any_owned = { limit = { is_core = TIB } secede_province = TIB } }
 			TIB = { capital = 9377 }
 			TIB = { manpower = 4 }
 		}
@@ -186,7 +186,7 @@ country_event = {
 		major = yes
 		
 		trigger = {
-			tag = CHC
+			tag = CHI
 			war = no
 			date = 1913.4.15
 			NOT = { has_country_flag = yuanshikai }
@@ -212,7 +212,7 @@ country_event = {
 		}
 }
 
-#CHINESE CIVIL WAR SURRENDER CHI 
+#CHINESE CIVIL WAR SURRENDER QIN 
  country_event = {
 
 		id = 100070
@@ -228,26 +228,26 @@ country_event = {
 		option = {
 			name = "opta_CHIE2"
 			ai_chance = { factor = 100 }
-			inherit = CHI
+			inherit = QIN
 			capital = 5494
-			CHC = { set_country_flag = republic_china }
+			CHI = { set_country_flag = republic_china }
 			rare_materials = 8000
 			crude_oil = 4000
 			supplies = 10000
 			energy = 30000
 			metal = 30000
 			money = 400
-			CHC = { any_owned = { limit = { is_core = CHI } remove_core = CHI } }
-			GER = { any_owned = { limit = { is_core = CHI } remove_core = CHI } }
-			ENG = { any_owned = { limit = { is_core = CHI } remove_core = CHI } }
-			POR = { any_owned = { limit = { is_core = CHI } remove_core = CHI } }
-			JAP = { any_owned = { limit = { is_core = CHI } remove_core = CHI } }
-			FRA = { any_owned = { limit = { is_core = CHI } remove_core = CHI } }
-			CHC = { any_owned = { limit = { is_core = MON } secede_province = MON } }
+			CHI = { any_owned = { limit = { is_core = QIN } remove_core = QIN } }
+			GER = { any_owned = { limit = { is_core = QIN } remove_core = QIN } }
+			ENG = { any_owned = { limit = { is_core = QIN } remove_core = QIN } }
+			POR = { any_owned = { limit = { is_core = QIN } remove_core = QIN } }
+			JAP = { any_owned = { limit = { is_core = QIN } remove_core = QIN } }
+			FRA = { any_owned = { limit = { is_core = QIN } remove_core = QIN } }
+			CHI = { any_owned = { limit = { is_core = MON } secede_province = MON } }
 		}
 }
 
-# SURRENDER CHC REPUBS
+# SURRENDER CHI REPUBS
  country_event = {
 
 		id = 100073
@@ -263,7 +263,7 @@ country_event = {
 		option = {
 			name = "opta_CHIE4"
 			ai_chance = { factor = 100 }
-			inherit = CHC
+			inherit = CHI
 			capital = 5494
 			rare_materials = 8000
 			crude_oil = 4000
@@ -271,6 +271,6 @@ country_event = {
 			energy = 30000
 			metal = 30000
 			money = 400
-			CHI = { any_owned = { limit = { is_core = CHC } remove_core = CHC } }
+			QIN = { any_owned = { limit = { is_core = CHI } remove_core = CHI } }
 		}
 }
