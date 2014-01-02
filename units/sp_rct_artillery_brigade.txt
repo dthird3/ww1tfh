@@ -1,0 +1,81 @@
+sp_rct_artillery_brigade = {
+	type = land
+	sprite = Infantry
+	active = no
+	is_mobile = yes
+	unit_group = artillery_unit_type
+
+	#Size Definitions
+	max_strength = 10
+	default_organisation = 30
+	default_morale = 0.30
+	officers = 100
+
+	#Building Costs
+	build_cost_ic = 6
+	build_cost_manpower = 1.33
+	build_time = 160
+	repair_cost_multiplier = 0.05
+
+	#Misc Abilities
+	maximum_speed = 8.00
+	transport_weight = 8.00
+	supply_consumption = 1.50
+	fuel_consumption = 0.8
+	radio_strength = 1
+	
+	#Defensive Abilities
+	defensiveness = 2.33	# was 3.66
+	toughness = 3.00
+	softness = 0.70
+	air_defence = 1.00
+
+	#Offensive Abilities
+	suppression = 0.00
+	soft_attack = 3.00
+	hard_attack = 1.00
+	air_attack = 0.10
+
+   	amphibious =    { attack = -0.70 }
+	fort = {attack = 0.10}
+	urban = {
+		attack = -0.15
+		defence = -0.3
+	}
+   	marsh = 	{
+        attack = -0.15
+		movement = -0.70
+		defence = -0.25
+    }
+	jungle = 	{
+        attack = -0.15
+		movement = -0.30
+		defence = -0.25
+	}
+	forest = 	{
+        attack = -0.15
+		movement = -0.30
+		defence = -0.15
+	}
+	woods = 	{
+        attack = -0.05 
+		movement = -0.05
+		defence = -0.10
+    }
+	mountain = 	{
+        attack = -0.15
+		movement = -0.50
+		defence = -0.30
+    }
+	hills = 	{
+        movement = -0.05
+		attack = -0.10
+    }
+
+	combat_width = 0
+
+	completion_size = 0.8
+	on_completion = artillery_practical
+	
+	priority = 4
+}
