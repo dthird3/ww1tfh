@@ -1,0 +1,54 @@
+name = "SCENARIO_winter"
+desc = "SCENARIO_winter_DESC"
+icon = "GFX_select_winterwar"
+startdate = 1939.11.30
+enddate = 1940.6.1
+
+camera_height = 500
+camera_center = { x = 3158 y = 1912 }
+camera_max_x = 3200
+camera_max_y = 2100
+camera_min_x = 3000
+camera_min_y = 1800
+
+victory_conditions = "scenarios/winter_war/faction_aims.txt"
+victory_conditions_to_win = 3
+number_of_victory_conditions = 3
+events = "scenarios/winter_war/events.txt"
+
+reinforcement = 20
+
+# will load any history files with scenarios/scenario_name/<tag>.txt
+selectable_country = FIN
+selectable_country = SOV 
+
+
+# visible provinces & regions
+provinces = {
+
+	165 146 198 129 111 183 145 168 127 93 128 60 109 90 58 45 32 59 73 47 34 74 76 61 35 46 210 253 222 223 91 150 149 130 211 147 268 240 270 255 307 239 238 267 285 237 224 305 329 306 269 354 405 353 286 435 377 436 473 508 582 544 254 108 545 621 583 225 620 622 660 659 700 701 743 785 784 867 742 824 823 783 868 950 866 782 822 741 699 3260 3261 781 7306 865 821 908 3528 948 989 3195 1028 949 909 951 
+		
+	# water
+	14146
+	10507
+	10508
+	10509
+	10510
+	10505
+	10504
+	10502
+	10500
+	11396
+	13199
+	11394
+	10529
+	11393
+	10501
+	
+}
+
+regions = {
+
+	finland_region
+	
+}

@@ -1,0 +1,111 @@
+name = "SCENARIO_SCW"
+desc = "SCENARIO_SCW_DESC"
+icon = "GFX_select_spanishcivilwar"
+startdate = 1936.10.1
+enddate = 1939.5.1
+
+camera_height = 500
+camera_center = { x = 2648 y = 1489 }
+camera_max_x = 2700
+camera_max_y = 1700
+camera_min_x = 2300
+camera_min_y = 1200
+
+victory_conditions = "scenarios/SCW/faction_aims.txt"
+victory_conditions_to_win = 4
+number_of_victory_conditions = 4
+events = "scenarios/SCW/events.txt"
+
+reinforcement = 20
+
+# will load any history files with scenarios/scenario_name/<tag>.txt
+selectable_country = SPA
+selectable_country = SPR 
+country = GER
+country = ITA
+
+# visible provinces & regions
+provinces = {
+
+	3948 3949 4213 4087 4088 4151 4215 4150 4149 4086 4017 4345 4214 4343 4284 4344 4283 4282 4406 4405 4471 4407 4535 4536 4533 4589 4644 4750 4699 4590 4534 4645 4472 4591 4646 4701 4752 4700 4803 4751 4853 4852 4802 4470 4851 4902 4903 4992 4991 4950 4949 4901 
+		
+	# water
+	10564
+	11440
+	10562
+	11441
+	10563
+	11439
+	10562
+	5002
+	10561
+	11438
+	10560
+	13244
+	10558
+	11437
+	10556
+	11436
+	10555
+	11434
+	10554
+	11431
+	10553
+	11430
+	10559
+	10557
+}
+
+regions = {
+
+SPR_4419 
+SPR_4357
+SPR_4226
+SPR_4547
+SPR_4863
+SPR_4656
+SPR_4813
+SPR_4960
+SPR_5000
+SPR_5158
+SPR_5035
+SPR_5099
+SPR_4996
+SPR_4855
+SPR_5067
+SPR_5125
+SPR_4993
+SPR_4592
+SPR_4647
+SPR_4649
+SPR_4756
+SPR_4810
+SPR_4652
+SPR_4412
+SPR_4411
+SPR_4159
+SPR_4223
+SPR_4654
+SPR_4025
+SPR_4094 
+SPR_3884 
+ENG_5191 
+SPR_4351
+SPR_3955
+SPR_4348
+SPR_3882
+SPR_4089
+SPR_4539
+SPR_3880
+SPR_4153
+SPR_4408
+SPR_3813
+SPR_3678 
+SPR_3676
+SPR_3611
+SPR_3878
+SPR_3742
+SPR_5321
+SPR_5289
+	
+}

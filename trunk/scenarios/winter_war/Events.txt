@@ -1,0 +1,44 @@
+#the white death
+country_event = {
+
+	id = 1
+	
+	fire_only_once = yes
+	
+	tag = FIN
+	
+	title = "EVTNAME4501"
+	desc = "EVTDESC4501"
+	picture = "white_death"
+
+	option = {
+		name = "EVTOPTA4501"	
+		add_country_modifier = {
+				name = "white_death"
+				duration = 300
+			}
+	}
+}
+
+country_event = {
+	
+	id = 2
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+	}
+
+	mean_time_to_happen =  {
+		months = 6
+	}
+
+	title = "FWW_SOV_title"
+	desc = "FWW_SOV_desc"
+	picture = "Winter_War"
+
+	option = {
+		name = "Event_ex"
+			clr_country_flag = disorganized_soviets
+	}
+}
+

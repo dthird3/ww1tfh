@@ -1,0 +1,214 @@
+name = "SCENARIO_blue"
+desc = "SCENARIO_blue_DESC"
+icon = "GFX_select_fallblau"
+startdate = 1942.6.12
+enddate = 1942.12.31
+
+camera_height = 500
+camera_center = { x = 3332 y = 1703 }
+camera_min_x = 3066
+camera_min_y = 1387
+camera_max_x = 3753
+camera_max_y = 1816
+
+victory_conditions = "scenarios/fall_blau/faction_aims.txt"
+victory_conditions_to_win = 3
+number_of_victory_conditions = 3
+events = "scenarios/fall_blau/events.txt"
+
+reinforcement = 30
+
+# will load any history files with scenarios/scenario_name/<tag>.txt
+selectable_country = GER 
+selectable_country = SOV
+country = ROM
+country = SLO
+country = HUN
+country = ITA
+
+# visible provinces & regions
+provinces = {
+
+	#land
+	1939 
+	1762 
+	1820 
+	1642 
+	1590 
+	
+	#water
+	10594
+	10595
+	10597
+	10596
+	10598
+	14137
+	14138
+	14136
+}
+
+regions = {
+	crimean_peninsula
+	bessarabia
+	POL_2162
+	SOV_2574
+	SOV_2771
+	SOV_2903
+	SOV_3174
+	SOV_3242
+	SOV_2843
+	SOV_3176
+	SOV_3041
+	SOV_2905
+	SOV_2709
+	SOV_2840
+	SOV_3043
+	SOV_3044
+	SOV_3113
+	SOV_2978
+	SOV_2843
+	SOV_2582
+	SOV_2845
+	SOV_2716
+	SOV_3048
+	SOV_3180
+	SOV_3380
+	SOV_3313
+	SOV_2981
+	SOV_2848
+	SOV_2464
+	SOV_2526
+	SOV_2720
+	SOV_2842
+	SOV_2583
+	SOV_2585
+	SOV_2783
+	SOV_2982
+	SOV_3382
+	SOV_3250
+	#SOV_9021
+	#SOV_8996
+	#SOV_3854
+	SOV_7250
+	SOV_7251
+	SOV_7289
+	#SOV_7176
+	SOV_7106
+	SOV_3853
+	SOV_7125
+	SOV_3851
+	#SOV_3850
+	SOV_3586
+	SOV_3319
+	SOV_3320
+	SOV_3256
+	SOV_3523
+	SOV_3178
+	SOV_3383
+	SOV_3584
+	SOV_3120
+	SOV_3721
+	SOV_3926
+	#SOV_7199
+	SOV_7174
+	SOV_7127
+	SOV_3718
+	SOV_3525
+	SOV_3385
+	SOV_2463
+	SOV_2344
+	SOV_2458
+	SOV_2579
+	SOV_2578
+	SOV_2278
+	SOV_4059
+	SOV_3188
+	SOV_2773
+	SOV_2342
+	SOV_2338
+	SOV_2453
+	SOV_2282
+	SOV_2338
+	SOV_2229
+	SOV_2282
+	SOV_2111
+	SOV_2112
+	SOV_2113
+	SOV_2289
+	SOV_2117
+	SOV_3464
+	SOV_2994
+	#SOV_3062
+	SOV_3061
+	SOV_3059
+	SOV_2856
+	SOV_2920
+	SOV_2981
+	SOV_2166
+	SOV_2110
+	SOV_2049
+	SOV_1881
+	SOV_2345
+	SOV_3125
+	SOV_3258
+	SOV_1998
+	SOV_2291
+	SOV_2000
+	SOV_1946
+	SOV_1766
+	SOV_1591
+	SOV_1762
+	SOV_2291
+	SOV_2119
+	SOV_2062
+	SOV_2918
+	SOV_2994
+	SOV_2353
+	SOV_2351
+	SOV_2298
+	SOV_2472
+	SOV_2243
+	SOV_2359
+	SOV_2797
+	SOV_2926
+	SOV_2663
+	SOV_2073
+	SOV_2667
+	SOV_2419
+	SOV_2600
+	SOV_2536
+	SOV_2664
+	SOV_2859
+	SOV_2793
+	SOV_2534
+	SOV_2661
+	SOV_2725
+	SOV_2724
+	SOV_2530
+	SOV_2722
+	SOV_2060
+	SOV_1646
+	SOV_1768
+	SOV_1769
+	SOV_2181
+	SOV_2183
+	SOV_2238
+	SOV_1892
+	SOV_1711
+	SOV_2008
+	SOV_2130
+	SOV_2418
+	SOV_2359
+	SOV_2248
+	SOV_2363
+	SOV_2246
+	SOV_2128
+	SOV_2009
+	SOV_1709
+	SOV_1648
+	SOV_1991
+	SOV_1760
+	SOV_7201
+	SOV_3130
+}
+
