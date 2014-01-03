@@ -1,0 +1,104 @@
+theatre = {
+	name = "Middle East Command"
+	location = 5611 # Cairo
+	leader= 1014 # Auchinleck
+	regiment = { type = hq_brigade name = "Middle East Command HQ" historical_model = 0 }
+	army = {
+		name = "8th Army"  
+		location = 5511 # Tobruk
+		leader= 1265 # Ritchie
+		regiment = { type = hq_brigade name = "8th Army HQ" historical_model = 0 }
+		corps = {
+			name = "Cyrenaica Command"
+			location = 5485
+			#leader= 
+			regiment = { type = hq_brigade name = "XXX Corps HQ" historical_model = 0 }
+			division= {
+				name = "2nd Armoured Division"
+				location = 5485
+				leader= 1223
+				regiment = { type = light_armor_brigade name = "3rd Light Armoured Brigade" historical_model = 2 }
+				regiment = { type = motorized_brigade name = "2nd Support Group" historical_model = 2 }
+			}
+			division= {
+			name = "3rd Indian Motorised Brigade"
+			location = 5511
+			regiment = { type = motorized_brigade name = "3rd Indian Motorised Brigade" historical_model = 2 }
+			}
+		}
+		corps = {
+			name = "XXX Corps"
+			location = 5611
+			leader= 1223 # Norrie
+			regiment = { type = hq_brigade name = "XXX Corps HQ" historical_model = 0 }
+			division= {
+				name = "7th Armoured Division"
+				location = 5611
+				leader= 1139 # Gott
+				regiment = { type = light_armor_brigade name = "4th Light Armoured Brigade" historical_model = 2 }
+				regiment = { type = light_armor_brigade name = "7th Light Armoured Brigade" historical_model = 2 }
+				regiment = { type = motorized_brigade name = "22nd Guards Brigade" historical_model = 1 }
+				regiment = { type = motorized_brigade name = "7th Support Group" historical_model = 2 }
+			}
+			division= {
+				name = "6th Infantry Division"
+				location = 5586
+				leader= 1281 # Slim
+				regiment = { type = motorized_brigade name = "16th Infantry Brigade" historical_model = 2 }
+				regiment = { type = motorized_brigade name = "22nd Guards Infantry Brigade" historical_model = 2 }
+			}
+			division= {
+				expeditionary_owner = AST
+				name = "18th Australian Infantry Brigade"
+				location = 5586
+				#leader= 1139 # Gott
+				regiment = { type = motorized_brigade name = "18th Australian Infantry Brigade" historical_model = 2 }
+			}
+		}
+		division= {
+			expeditionary_owner = POL
+			name = "Polish Brigade"
+			location = 5611
+			regiment = { type = infantry_brigade name = "Independant Carpathian Brigade" historical_model = 2 }
+		}
+	}
+	division= {
+				name = "Transjordanian Garrison"
+				location = 5399
+				#leader= 1139 # Gott
+				regiment = { type = garrison_brigade name = "1st Transjordanian brigade" historical_model = 2 }
+			}
+	division= {
+				name = "Transjordanian Garrison"
+				location = 7456
+				#leader= 1139 # Gott
+				regiment = { type = garrison_brigade name = "2nd Transjordanian brigade" historical_model = 2 }
+			}
+	army = {
+		name = "9th Army"
+		location = 5511
+		leader= 1315 # HM Wilson
+		regiment = { type = hq_brigade name = "9th Army HQ" historical_model = 0 }
+		corps = {
+			expeditionary_owner = AST
+			name = "1st Australian Expeditionary Corps"
+			location = 5484
+			leader = 1237
+			regiment = { type = hq_brigade name = "1st Australian Expeditionary Corps HQ" historical_model = 0 }
+			division = {
+				expeditionary_owner = AST
+				name = "9th Australian Division"
+				location = 5484
+				regiment = { type = infantry_brigade name = "20th Brigade" historical_model = 2 }
+				regiment = { type = infantry_brigade name = "26th Brigade" historical_model = 2 }
+			}
+		}
+	}
+	air = {
+	name = "No. 213 Group"
+	base = 5484
+	location = 5484
+	wing = { type = interceptor name = "No. 213 Wing RAF" historical_model = 2 }
+	wing = { type = interceptor name = "No.241 Wing RAF" historical_model = 2 }
+	}
+}

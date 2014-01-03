@@ -1,0 +1,597 @@
+theatre= {
+	name = "OB West"
+	location = 2374
+	leader = 335 # Von Rundstedt
+	regiment = { type = hq_brigade name = "OB West HQ" historical_model = 1 }
+	armygroup= {
+		name = "Heeresgruppe B"
+		location = 2374
+		leader = 202 #Model
+		regiment = { type = hq_brigade name = "Heeresgruppe B HQ " historical_model = 2 }
+		army = {
+			name = "5.Panzer-Armee"
+			location = 2371
+			leader = 323 #Manteuffel
+			regiment = { type = hq_brigade name = "5.Panzer-Armee HQ" historical_model = 2 }	
+			corps = {
+				name = "XXXXVII Panzer-Korps"
+				location = 2371
+				leader = 320 #Lüttwitz
+				regiment = { type = hq_brigade name = "XXXXVII Panzer-Korps HQ" historical_model = 0 }
+				
+				division= {
+					name = "2. Panzer-Division"
+					location = 2371
+					leader = 315 #Lauchert
+					regiment = { type = armor_brigade name = "Panzer Regiment 3" historical_model = 4 }
+					regiment = { type = mechanized_brigade name = "Panzergrenadier Regiment 2" historical_model = 2 }
+					regiment = { type = mechanized_brigade name = "Panzergrenadier Regiment 304" historical_model = 2 }
+				}
+				division= {
+					name = "9. Panzer-Division"
+					location = 2371
+					leader = 325 #Mellenthin
+					regiment = { type = armor_brigade name = "Panzer Regiment 33" historical_model = 4 }
+					regiment = { type = mechanized_brigade name = "Panzergrenadier Regiment 10" historical_model = 2 }
+					regiment = { type = mechanized_brigade name = "Panzergrenadier Regiment 11" historical_model = 2 }
+				}
+				division= {
+					name = "Panzer-Lehr-Division"
+					location = 2371
+					leader = 12 #Bayerlein
+					regiment = { type = armor_brigade name = "Panzer Regiment 130" historical_model = 4 }
+					regiment = { type = mechanized_brigade name = "Panzergrenadier Regiment 901" historical_model = 2 }
+					regiment = { type = mechanized_brigade name = "Panzergrenadier Regiment 902" historical_model = 2 }
+				}
+				division= {
+					name = "26. Infanterie-Division"
+					location = 2371
+					regiment = { type = infantry_brigade name = "Füsilier Regiment 39" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 77" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Füsilier Regiment 78" historical_model = 4 }
+				}
+				division= {
+				name = "Schwere SS Panzer-Abteilung 102"
+				location = 2371
+				regiment = { type = heavy_armor_brigade name = "Führerbegleitbrigade" historical_model = 4 } 
+				}
+			}
+			corps = {
+				name = "LXVI Armee-Korps"
+				location = 2314
+				leader = 191 #Lucht
+				regiment = { type = hq_brigade name = "LXVI Armee-Korps HQ" historical_model = 0 }
+				
+				division= {
+					name = "18. Infanterie-Division"
+					location = 2314
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 293" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 294" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 295" historical_model = 4 }
+				}
+				division= {
+					name = "62. Infanterie-Division"
+					location = 2314
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 164" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 190" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 193" historical_model = 4 }
+				}
+			}
+			corps = {
+				name = "LVIII Panzer-Korps"
+				location = 2314
+				leader = 173 #Krüger  W.
+				regiment = { type = hq_brigade name = "LVIII Panzer-Korps HQ" historical_model = 0 }
+				
+				division= {
+					name = "116 Panzer-Division"
+					location = 2314
+					leader = 204 #Müller  An.
+					regiment = { type = armor_brigade name = "Panzer Regiment 16" historical_model = 4 }
+					regiment = { type = mechanized_brigade name = "Panzergrenadier Regiment 60" historical_model = 2 }
+					regiment = { type = mechanized_brigade name = "Panzergrenadier Regiment 156" historical_model = 2 }
+				}
+				division= {
+					name = "560. Infanterie-Division"
+					location = 2314
+					regiment = { type = infantry_brigade name = "Füsilier Regiment 39" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 77" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Füsilier Regiment 78" historical_model = 4 }
+				}
+			}
+		corps = {
+		name = "XXXXIX Panzer-Korps" #Panzer Korps with no Panzers, they joined later.
+		location = 2371 
+		leader = 46 #Decker
+		regiment = { type = hq_brigade name = "XXXXIX Panzer-Korps HQ" historical_model = 0 }
+		division= {
+					name = "167. Infanterie-Division"
+					location = 2371
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 331" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 339" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 387" historical_model = 4 }
+				}
+			}
+		}
+	army = {
+		name = "6.Panzer-Armee"
+		location = 2200
+		leader = 323 #Manteuffel
+		regiment = { type = hq_brigade name = "6.Panzer-Armee HQ" historical_model = 2 }
+	corps = {
+		name = "I. SS-Panzerkorps"
+		location = 2200 
+		leader = 521 #Priess
+		regiment = { type = hq_brigade name = "I. SS-Panzerkorps HQ" historical_model = 0 }
+		division= {
+			name = "1. SS-Panzer-Div. 'Leibstandarte'" 
+			location = 2200
+			leader = 518 #Mohnke
+			regiment = { type = mechanized_brigade name = "SS-Panzergrenadier-Regiment 1" historical_model = 2 }
+			regiment = { type = mechanized_brigade name = "SS-Panzergrenadier-Regiment 2" historical_model = 2 }
+			regiment = { type = armor_brigade name = "SS-Panzer-Regiment 1" historical_model = 4 }
+		}
+		division= {
+			name = "12. SS-Panzer-Division 'Hitlerjugend'"
+			location = 2200 
+			leader = 510 #Kraas 
+			regiment = { type = mechanized_brigade name = "SS-Panzergrenadier-Regiment 25" historical_model = 2 }
+			regiment = { type = mechanized_brigade name = "SS-Panzergrenadier-Regiment 26" historical_model = 2 }
+			regiment = { type = armor_brigade name = "SS-Panzer-Regiment 12" historical_model = 4 }
+		}
+		division= {
+			name = "150. SS-Panzer-Brigade" #50% str?
+			location = 2200 
+			leader = 528 #Skorzeny 
+			regiment = { type = mechanized_brigade name = "Kampfgruppe Z" historical_model = 2 strength = 15 }
+			regiment = { type = armor_brigade name = "Kampfgruppe X" historical_model = 4 strength = 15 }
+		}
+		division= {
+					name = "12. Infanterie-Division"
+					location = 2200
+					regiment = { type = infantry_brigade name = "Fusilier Regiment 27" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 48" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 89" historical_model = 4 }
+				}
+		division= {
+					name = "227. Infanterie-Division"
+					location = 2200
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 289" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 990" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 89" historical_model = 4 }
+				}
+			}
+		corps = {
+		name = "II. SS-Panzerkorps"
+		location = 2200 
+		leader = 496 #Dietrich
+		regiment = { type = hq_brigade name = "II. SS-Panzerkorps HQ" historical_model = 0 }
+		division= {
+			name = "9. SS-Panzer-Div. 'Hohenstaufen'" 
+			location = 2200
+			leader = 529 #Stadler
+			regiment = { type = mechanized_brigade name = "SS-Panzergrenadier-Regiment 19" historical_model = 2 }
+			regiment = { type = mechanized_brigade name = "SS-Panzergrenadier-Regiment 20" historical_model = 2 }
+			regiment = { type = armor_brigade name = "SS-Panzer-Regiment 9" historical_model = 4 }
+		}
+		division= {
+			name = "2.SS-Panzer-Division Das Reich'"
+			location = 2200 
+			leader = 515 #Lammerding 
+			regiment = { type = mechanized_brigade name = "SS-Panzergrenadier-Regiment 3" historical_model = 2 }
+			regiment = { type = mechanized_brigade name = "SS-Panzergrenadier-Regiment 4" historical_model = 2 }
+			regiment = { type = armor_brigade name = "SS-Panzer-Regiment 2" historical_model = 4 }
+		}
+	}
+	corps = {
+				name = "LXVII  Korps"
+				location = 2200
+				leader = 139 #Hitzfeld
+				regiment = { type = hq_brigade name = "LXVII  Korps HQ" historical_model = 0 }
+				
+				division= {
+					name = "3. Panzergrenadier"
+					location = 2200
+					regiment = { type = light_armor_brigade name = "Panzer-Regiment 103" historical_model = 4 }
+					regiment = { type = mechanized_brigade name = "Panzergrenadier Regiment 8" historical_model = 2 }
+					regiment = { type = mechanized_brigade name = "Panzergrenadier Regiment 29" historical_model = 2 }
+				}
+				division= {
+					name = "246. Infanterie-Division"
+					location = 2200
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 39" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 77" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 78" historical_model = 4 }
+				}
+				division= {
+					name = "272. Infanterie-Division"
+					location = 2200
+					leader = 178 #König
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 980" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 981" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 982" historical_model = 4 }
+				}
+				division= {
+					name = "326. Infanterie-Division"
+					location = 2200
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 751" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 752" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 753" historical_model = 4 }
+				}
+			}
+		}	
+		army = {
+		name = "7. Armee"
+		location = 2490
+		leader = 27 #Brandenberger
+		regiment = { type = hq_brigade name = "7. Armee HQ" historical_model = 2 }
+		corps = {
+				name = "LIII Korps"
+				location = 2490
+				leader = 621 #von Rothkirch
+				regiment = { type = hq_brigade name = "LIII Korps HQ" historical_model = 0 }
+				division= {
+					name = "9. Infanterie-Division"
+					location = 2490
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 36" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 57" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 116" historical_model = 2 }
+				}
+				division= {
+					name = "15. Panzergrenadier-Division"
+					location = 2490
+					regiment = { type = light_armor_brigade name = "Panzer-Regiment 115" historical_model = 4 }
+					regiment = { type = mechanized_brigade name = "Panzergrenadier Regiment 104" historical_model = 2 }
+					regiment = { type = mechanized_brigade name = "Panzergrenadier Regiment 115" historical_model = 2 }
+				}
+				division= {
+					name = "Führer Grenadier Brigade" #50% str?
+					location = 2490
+					regiment = { type = armor_brigade name = "Panzer-Regiment 115" historical_model = 4 strength = 15 }
+					regiment = { type = mechanized_brigade name = "Panzergrenadier Regiment 104" historical_model = 2 strength = 15 }
+				}
+			}
+			corps = {
+				name = "LXXX Korps"
+				location = 2490
+				leader = 982 #Beyer  F.
+				regiment = { type = hq_brigade name = "LXXX Korps HQ" historical_model = 0 }
+				division= {
+					name = "212. Infanterie-Division"
+					location = 2490
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 316" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 320" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 423" historical_model = 2 }
+				}
+				division= {
+					name = "276. Infanterie-Division"
+					location = 2490
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 986" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 987" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 988" historical_model = 2 }
+				}
+				division= {
+					name = "340. Infanterie-Division"
+					location = 2490
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 694" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 695" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 696" historical_model = 2 }
+				}
+			}
+			corps = {
+				name = "LXXXV Korps"
+				location = 2490
+				leader = 641 #Kniess
+				regiment = { type = hq_brigade name = "LXXXV Korps HQ" historical_model = 0 }
+				division= {
+					name = "352. Infanterie-Division"
+					location = 2490
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 914" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 915" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 916" historical_model = 2 }
+				}
+				division= {
+					name = "79. Infanterie-Division"
+					location = 2490
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 208" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 212" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 226" historical_model = 2 }
+				}
+			}
+		}
+	}
+	armygroup = {
+	name = "Heeresgruppe H"
+	location = 1910
+	leader = 260 #Student
+	regiment = { type = hq_brigade name = "Heeresgruppe H HQ" historical_model = 0 }
+		army = {
+		name = "15. Armee"
+		location = 1910
+		leader = 260 #von Zangen
+		regiment = { type = hq_brigade name = "15. Armee HQ" historical_model = 0 }
+			corps = {
+			name = "LXXXVIII Korps"
+			location = 1910
+			regiment = { type = hq_brigade name = "II Fallschirmkorps HQ" historical_model = 0 }
+				division= {
+					name = "729. Infanterie-Division"
+					location = 1965
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 208" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 212" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 226" historical_model = 2 }
+				}
+				division= {
+					name = "85. Infanterie-Division"
+					location = 1965
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 208" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 212" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 226" historical_model = 2 }
+				}
+				division= {
+					name = "84. Infanterie-Division"
+					location = 2023
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 208" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 212" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 226" historical_model = 2 }
+				}
+				division= {
+					name = "89. Infanterie-Division"
+					location = 1966
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 208" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 212" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 226" historical_model = 2 }
+				}
+				division= {
+					name = "176. Infanterie-Division"
+					location = 1911
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 208" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 212" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 226" historical_model = 2 }
+				}
+				division= {
+					name = "373. Infanterie-Division"
+					location = 1911
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 208" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 212" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 226" historical_model = 2 }
+				}
+				}
+			corps = {
+			name = "XXX Korps"
+			location = 1967
+			regiment = { type = hq_brigade name = "XXX Korps HQ" historical_model = 0 }
+				division= {
+					name = "16. Panzergrenadier-Division"
+					location = 1967
+					regiment = { type = motorized_brigade name = "Grenadier Regiment 208" historical_model = 4 }
+					regiment = { type = motorized_brigade name = "Grenadier Regiment 212" historical_model = 2 }
+					regiment = { type = motorized_brigade name = "Grenadier Regiment 226" historical_model = 2 }
+				}
+				division= {
+					name = "304. Infanterie-Division"
+					location = 1967
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 208" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 212" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 226" historical_model = 2 }
+				}
+				division= {
+					name = "46. Infanterie-Division"
+					location = 1967
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 208" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 212" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 226" historical_model = 2 }
+				}
+				division= {
+					name = "257. Infanterie-Division"
+					location = 2025
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 208" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 212" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 226" historical_model = 2 }
+				}
+				division= {
+					name = "387. Infanterie-Division"
+					location = 2025
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 208" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 212" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 226" historical_model = 2 }
+				}
+				division= {
+					name = "306. Infanterie-Division"
+					location = 2084
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 208" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 212" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 226" historical_model = 2 }
+				}
+			}
+			corps = {
+			name = "LXXXXVI Korps"
+			location = 2141
+			regiment = { type = hq_brigade name = "LXXXXVI Korps HQ" historical_model = 0 }
+				division= {
+					name = "51. Panzergrenadier-Division"
+					location = 2084
+					regiment = { type = motorized_brigade name = "Grenadier Regiment 208" historical_model = 4 }
+					regiment = { type = motorized_brigade name = "Grenadier Regiment 212" historical_model = 2 }
+					regiment = { type = motorized_brigade name = "Grenadier Regiment 226" historical_model = 2 }
+				}
+				division= {
+					name = "712. Infanterie-Division"
+					location = 2141
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 208" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 212" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 226" historical_model = 2 }
+				}
+				division= {
+					name = "526. Infanterie-Division"
+					location = 2141
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 208" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 212" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 226" historical_model = 2 }
+				}
+				division= {
+					name = "257. Infanterie-Division"
+					location = 2025
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 208" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 212" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 226" historical_model = 2 }
+				}
+			}
+			}
+		}
+		army = {
+		name = "1st Fallschirm-Armee"
+		location = 1910
+		leader = 240 #Schlemm
+		regiment = { type = hq_brigade name = "1st Fallschirm-Armee HQ" historical_model = 0 }
+			corps = {
+			name = "II Fallschirmkorps"
+			location = 1910
+			leader = 240 #Schlemm
+			regiment = { type = hq_brigade name = "II Fallschirmkorps HQ" historical_model = 0 }
+				division= {
+				name = "3. Fallschirmjäger Division"
+				location = 2023
+				regiment = { type = paratrooper_brigade name = "Fallschirmjäger Regiment 5" historical_model = 3 }
+				regiment = { type = paratrooper_brigade name = "Fallschirmjäger Regiment 8" historical_model = 3 }
+				regiment = { type = paratrooper_brigade name = "Fallschirmjäger Regiment 9" historical_model = 3 }
+				}
+				division= {
+				name = "5. Fallschirmjäger Division"
+				location = 1966
+				leader = 443 #Heilmann
+				regiment = { type = paratrooper_brigade name = "Fallschirmjäger Regiment 13" historical_model = 3 }
+				regiment = { type = paratrooper_brigade name = "Fallschirmjäger Regiment 14" historical_model = 3 }
+				regiment = { type = paratrooper_brigade name = "Fallschirmjäger Regiment 15" historical_model = 3 }
+				}
+			}
+		}
+	}
+	armygroup = {
+	name = "Heeresgruppe G"
+	location = 2687
+	leader = 20 #Blaskowitz
+	regiment = { type = hq_brigade name = "Heeresgruppe G HQ" historical_model = 0 }
+		army = {
+		name = "1. Armee"
+		location = 2687
+		leader = 81 #Förtsch
+		regiment = { type = hq_brigade name = "1. Armee HQ" historical_model = 0 }
+			corps = {
+			name = "LXXII Korps"
+			location = 2490
+			leader = 81 #Förtsch
+			regiment = { type = hq_brigade name = "LXXII Korps HQ" historical_model = 0 }
+				division= {
+					name = "245. Infanterie-Division"
+					location = 2553
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 208" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 212" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 226" historical_model = 2 }
+				}
+				division= {
+					name = "256. Infanterie-Division"
+					location = 2619
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 208" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 212" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 226" historical_model = 2 }
+				}
+				division= {
+					name = "553. Infanterie-Division"
+					location = 2685
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 208" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 212" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 226" historical_model = 2 }
+				}
+			}
+		}
+		army = {
+		name = "19. Armee"
+		location = 2687
+		leader = 364 #Wiese
+		regiment = { type = hq_brigade name = "19. Armee HQ" historical_model = 0 }
+			corps = {
+			name = "LXIV Korps"
+			location = 2882
+			leader = 623 #thumm
+			regiment = { type = hq_brigade name = "LXIV Korps HQ" historical_model = 0 }
+				division= {
+					name = "708. Infanterie-Division"
+					location = 2882
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 208" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 212" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 226" historical_model = 2 }
+				}
+				division= {
+					name = "716. Infanterie-Division"
+					location = 2948
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 208" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 212" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 226" historical_model = 2 }
+				}
+				division= {
+					name = "425. Infanterie-Division"
+					location = 2751
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 208" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 212" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 226" historical_model = 2 }
+				}
+			}
+			corps = {
+			name = "LXXXX Korps"
+			location = 3016
+			leader = 622 #petersen
+			regiment = { type = hq_brigade name = "LXXXX Korps HQ" historical_model = 0 }
+				division= {
+					name = "269. Infanterie-Division"
+					location = 3016
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 208" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 212" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 226" historical_model = 2 }
+				}
+				division= {
+					name = "16. Infanterie-Division"
+					location = 3084
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 208" historical_model = 4 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 212" historical_model = 2 }
+					regiment = { type = infantry_brigade name = "Grenadier Regiment 226" historical_model = 2 }
+				}
+			}
+		}
+}
+air = { 
+	name = "14. Flieger-Division"
+	base = 1910
+	location = 1910
+	wing = { type = interceptor name = "KG 51" historical_model = 2 }
+	wing = { type = tactical_bomber name = "VMB 151/612" historical_model = 3 }
+	wing = { type = tactical_bomber name = "VMB 151/612" historical_model = 3 }
+}
+air = { 
+	name = "15. Flieger-Division"
+	base = 2687
+	location = 2687
+	wing = { type = interceptor name = "KG 2" historical_model = 2 }
+}
+air = { 
+	name = "3. Flieger-Division"
+	base = 2687
+	location = 2687
+	wing = { type = cas name = "Schlachtgeschwader 3" historical_model = 3 }
+	wing = { type = cas name = "Schlachtgeschwader 4" historical_model = 3 }
+}
+air = { 
+	name = "5. Flieger-Division"
+	base = 2687
+	location = 2687
+	wing = { type = multi_role name = "JG 2" historical_model = 2 }
+	wing = { type = interceptor name = "JG 3" historical_model = 2 }
+}
+air = { 
+	name = "7. Flieger-Division"
+	base = 2952
+	location = 2952
+	wing = { type = multi_role name = "JG 26" historical_model = 2 }
+	wing = { type = interceptor name = "JG 27" historical_model = 2 }
+}
+}

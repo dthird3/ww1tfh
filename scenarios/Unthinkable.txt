@@ -1,0 +1,288 @@
+name = "SCENARIO_UNTHINKABLE"
+desc = "SCENARIO_UNTHINKABLE_DESC"
+icon = "GFX_select_unthink"
+startdate = 1946.1.1
+enddate = 1948.1.1
+
+camera_height = 500
+camera_center = { x = 2981 y = 1737 }
+camera_max_x = 3479
+camera_max_y = 2152
+camera_min_x = 2543
+camera_min_y = 1449
+
+
+victory_conditions = "scenarios/unthinkable/faction_aims.txt"
+victory_conditions_to_win = 1
+number_of_victory_conditions = 1
+events = "scenarios/unthinkable/events.txt"
+
+reinforcement = 30
+
+# will load any history files with scenarios/scenario_name/<tag>.txt
+selectable_country = ENG 
+selectable_country = USA
+selectable_country = SOV
+country = DDR
+country = DFR
+country = AST
+country = SAF
+country = POL
+country = FRA
+country = CZE
+country = LUX
+country = BEL
+country = HOL
+country = NOR
+country = SWE
+country = FIN
+country = IRE
+country = DEN
+
+
+# visible provinces & regions
+provinces = {
+	24
+	2429
+	1217
+	689
+	1393
+	1349
+	1305
+	1134
+	1174
+	1173
+	1055
+	902
+	942
+	903
+	984
+	778
+	774
+	732
+	858
+	732
+	774
+	775
+	734
+	614
+	650
+	613
+	649
+	499
+	535
+	498
+	534
+	367
+	343
+	366
+	342
+	365
+	295
+	296
+	319
+	344
+	320
+	298
+	277
+	276
+	296
+	260
+	245
+	261
+	299
+	278
+	262
+	230
+	189
+	203
+	204
+	205
+	218
+	193
+	7938
+	
+	# water
+	14150
+	10533
+	10532
+	10531
+	11410
+	10522
+	11455
+	10523
+	11402
+	10524
+	11400
+	10525
+	11397
+	13197
+	11396
+	13199
+	11394
+	10523
+	11393
+	10501
+	10551
+	11428
+	10594
+	10596
+	10598
+	11411
+	11409
+	11405
+	10542
+	10541
+	11414
+	10597
+	10595
+	10687
+	14148
+	14146
+	14147
+	10529
+	11413
+	10539
+	10540
+	11415
+	11416
+	11417
+	10543
+	10544
+	10609
+	11421
+	10545
+	11422
+	10550
+	11423
+	10549
+	10548
+	11419
+	11420
+	10547
+	10546
+	14168
+	
+}
+
+regions = {
+	poland_region
+	western_poland_region
+	eastern_poland
+	eastern_poland_to_lit
+	northern_france_region
+	baltic_states_region
+	czechoslovakia_region
+	east_germany_region
+	belgium_region
+	the_netherlands_region
+	denmark_region
+	norway_region
+	west_germany_region
+	karelia
+	finland_region
+	north_germany_region
+	western_russia_region
+	polish_germany_region
+	germany_elbing
+	germany_lyck	
+	sweden_sw_skane
+	sweden_ne_skane
+	sweden_halland
+	sweden_goteborg
+	sweden_kalmar
+	sweden_lysekil
+	sweden_v_gotaland
+	sweden_varnamo
+	sweden_vastervik
+	sweden_jonkoping
+	sweden_kil
+	sweden_karlstad
+	sweden_sunne
+	SWE_688
+	SWE_187
+	sweden_orebro
+	sweden_norrkoping
+	sweden_katrineholm
+	sweden_stockholm
+	sweden_uppsala
+	sweden_kopparberg
+	SWE_692
+	SWE_649
+	SWE_574
+	SWE_463
+	SWE_322
+	SWE_279
+	SWE_193
+	SWE_177
+	SWE_121
+	SWE_101
+	SWE_102
+	SWE_138
+	SWE_82
+	SWE_118
+	SWE_137
+	SWE_174
+	SWE_204
+	SWE_231
+	SWE_173
+	SWE_216
+	SWE_277
+	SWE_319
+	SWE_244
+	SWE_260
+	SWE_571
+	SWE_534
+	SWE_394
+	SWE_342
+	SWE_340
+	SWE_259
+	SWE_424
+	SWE_460
+	SWE_422
+	sweden_gotland
+	germany_konigsberg
+	uk_north_wales
+	uk_south_wales
+	uk_cornwall
+	uk_bristol
+	uk_dorset
+	uk_oxford
+	uk_kent
+	uk_london
+	uk_cambridge
+	uk_east_anglia
+	uk_lincoln
+	uk_west_midlands
+	uk_east_midlands
+	uk_liverpool
+	uk_carlisle
+	uk_newcastle
+	uk_york
+	uk_hull
+	uk_edinburgh
+	uk_ayr
+	uk_glasgow
+	uk_rosyth
+	uk_aberdeen
+	uk_mallaig
+	uk_inverness
+	uk_scapa
+	uk_stornoway
+	uk_belfast
+	uk_armagh
+	ireland_donegal
+	ireland_mayo
+	ireland_longford
+	ireland_dublin
+	ireland_wexford 
+	ireland_limerick
+	ireland_cork
+	
+	#water
+	baltic_sea_region
+	skagerrak_kattegatt
+	english_channel
+	
+	
+}
