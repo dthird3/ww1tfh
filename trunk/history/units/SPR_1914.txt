@@ -12,14 +12,15 @@ type = cavalry_brigade
 experience = 5
 name = "1a División de Caballería1"
 historical_model = 2}
+
 regiment = {
 type = cavalry_brigade
 experience = 5
 name = "1a División de Caballería2"
 historical_model = 2}
 }
-
 }
+
 corps = {
 name = "Madrid Military District"
 location = 4540
@@ -103,10 +104,9 @@ type = infantry_brigade
 experience = 5
 name = "4a División de Infantería2"
 historical_model = 2}
-
+}
 }
 
-}
 corps = {
 name = "Sevilla Military District"
 location = 5030
@@ -144,10 +144,9 @@ type = infantry_brigade
 experience = 5
 name = "6a División de Infantería2"
 historical_model = 2}
-
-
 }
 }
+
 corps = {
 name = "Valencia Military District"
 location = 4862
@@ -168,7 +167,6 @@ type = infantry_brigade
 experience = 5
 name = "7a División de Infantería2"
 historical_model = 2}
-
 }
 
 division = {
@@ -187,8 +185,8 @@ experience = 5
 name = "8a División de Infantería2"
 historical_model = 2}
 }
-
 }
+
 corps = {
 name = "Gijón Military District"
 location = 3746
@@ -209,7 +207,6 @@ type = infantry_brigade
 experience = 5
 name = "9a División de Infantería2"
 historical_model = 2}
-
 }
 
 division = {
@@ -227,10 +224,9 @@ type = infantry_brigade
 experience = 5
 name = "10a División de Infantería2"
 historical_model = 2}
-
+}
 }
 
-}
 corps = {
 name = "Almería Military District"
 location = 5159
@@ -251,7 +247,6 @@ type = infantry_brigade
 experience = 5
 name = "11a División de Infantería2"
 historical_model = 2}
-
 }
 
 division = {
@@ -307,13 +302,13 @@ location = 4026
 regiment = {
 type = infantry_brigade
 experience = 5
-name = "14a División de Infantería1"
+name = "14a División de Infantería"
 historical_model = 2}
 
 regiment = {
 type = infantry_brigade
 experience = 5
-name = "14a División de Infantería2"
+name = "14a División de Infantería"
 historical_model = 2}
 }
 }
@@ -330,13 +325,13 @@ location = 4411
 regiment = {
 type = infantry_brigade
 experience = 5
-name = "15a División de Infantería1"
+name = "15a División de Infantería"
 historical_model = 2}
 
 regiment = {
 type = infantry_brigade
 experience = 5
-name = "15a División de Infantería2"
+name = "15a División de Infantería"
 historical_model = 2}
 }
 }
@@ -353,21 +348,21 @@ location = 4913
 regiment = {
 type = infantry_brigade
 experience = 5
-name = "1a /2a Brigada de Infantería1"
+name = "1a /2a Brigada de Infantería"
 historical_model = 3}
 
 regiment = {
 type = infantry_brigade
 experience = 5
-name = "1a /2a Brigada de Infantería2"
+name = "1a /2a Brigada de Infantería"
 historical_model = 3}
 }
 }
 
 corps = {
-name = "Canary Islands Military District"
+name = "Barcelona Military District"
 location = 9506
-regiment = { type = hq_brigade name = "Canary Islands Military District HQ" historical_model = 0 }
+regiment = { type = hq_brigade name = "Barcelona Military District HQ" historical_model = 0 }
 
 division = {
 name = "3a /4a Brigada de Infantería"
@@ -401,10 +396,30 @@ type = infantry_brigade
 experience = 5
 name = "5a Brigada de Infantería"
 historical_model = 2}
-
 }
 }
 
+division= {
+
+name = "Circunscripción Infantería"
+location = 5289
+
+regiment = { type = infantry_brigade name = "1. Guarnición" historical_model = 0 }
+regiment = { type = infantry_brigade name = "2. Guarnición 'Bandera' Legion & GFRI" historical_model = 0 }
+}
+
+division = {
+name = "Fuerzas del Sahara"
+location = 9482
+regiment = { type = infantry_brigade name = "Sahara Esprnol" historical_model = 0 }
+}
+
+division = {
+name = "Guardias Coloniales"
+
+location = 10002
+regiment = { type = militia_brigade historical_model = 0 }
+}
 
 navy = {
 name = "Armada Española"
@@ -421,13 +436,12 @@ ship = { type = protected_cruiser name = "Estramadura" historical_model = 4 expe
 ship = { type = protected_cruiser name = "Reina Regente" historical_model = 7 experience = 15 }
 ship = { type = destroyer name = "1a Flotilla de Destructores" historical_model = 2 experience = 15 }
 
-
-
 ship = {
 name = "Flotilla Cadiz"
 type = transport_ship
 historical_model = 0}
 }
+
 military_construction = {
 country = SPR
 dreadnaught = {
