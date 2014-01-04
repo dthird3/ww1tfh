@@ -311,8 +311,8 @@ end
 function P.ProductionWeights(voProductionData)
 	local laArray = {
 		0.70, -- Land
-		0.10, -- Air
-		0.15, -- Sea
+		0.15, -- Air
+		0.10, -- Sea
 		0.05}; -- Other
 	
 	-- Check to see if manpower is to low
@@ -322,19 +322,19 @@ function P.ProductionWeights(voProductionData)
 			0.30, -- Air
 			0.60, -- Sea
 			0.10}; -- Other
-	elseif voProductionData.Year <= 1913 and not(voProductionData.IsAtWar) then
+	elseif voProductionData.Year <= 1912 and not(voProductionData.IsAtWar) then
 		laArray = {
 			0.70, -- Land
 			0.0, -- Air
-			0.15, -- Sea
-			0.15}; -- Other
+			0.20, -- Sea
+			0.10}; -- Other
 	
 	-- More than 400 brigades so build stuff that does not use manpower
 	elseif (voProductionData.ManpowerTotal < 300 and voProductionData.LandCountTotal > 400) then
 		laArray = {
 			0.15, -- Land
-			0.20, -- Air
-			0.40, -- Sea
+			0.30, -- Air
+			0.30, -- Sea
 			0.25}; -- Other
 			
 	elseif voProductionData.IsAtWar then
@@ -364,7 +364,7 @@ function P.ProductionWeights(voProductionData)
 end
 -- Land ratio distribution
 
--- Lots of armor at the beginning for the Blitzkrieg, lots of infantry later to invade the USSR
+-- Lots of armour at the beginning for the Blitzkrieg, lots of infantry later to invade the USSR
 function P.LandRatio(voProductionData)
 	local laArray
 	
@@ -418,7 +418,8 @@ end
 function P.AirRatio(voProductionData)
 	local laArray = {
 		interceptor = 6,
-		tactical_bomber = 4,
+		tactical_bomber = 2,
+		scout = 3,
 		airship = 1};
 	
 	return laArray
