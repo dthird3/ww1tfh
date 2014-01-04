@@ -297,9 +297,9 @@ end
 --   1.0 = 100% the total needs to equal 1.0
 function P.ProductionWeights(voProductionData)
 	local laArray = {
-		0.40, -- Land
-		0.15, -- Air
-		0.40, -- Sea
+		0.50, -- Land
+		0.25, -- Air
+		0.20, -- Sea
 		0.05}; -- Other
 	
 	-- Check to see if manpower is to low
@@ -310,20 +310,20 @@ function P.ProductionWeights(voProductionData)
 			0.30, -- Air
 			0.60, -- Sea
 			0.10}; -- Other
-	elseif voProductionData.Year <= 1913 and not(voProductionData.IsAtWar) then
+	elseif voProductionData.Year <= 1912 and not(voProductionData.IsAtWar) then
 		--Utils.LUA_DEBUGOUT("Country: GER 20L, 15A,45S,20O")
 		laArray = {
-			0.50, -- Land
-			0.00, -- Air
-			0.30, -- Sea
-			0.20}; -- Other
+			0.40, -- Land
+			0.05, -- Air
+			0.45, -- Sea
+			0.10}; -- Other
 	
 	-- More than 400 brigades so build stuff that does not use manpower
 	elseif (voProductionData.ManpowerTotal < 300 and voProductionData.LandCountTotal > 400) then
 		laArray = {
 			0.15, -- Land
-			0.20, -- Air
-			0.40, -- Sea
+			0.30, -- Air
+			0.30, -- Sea
 			0.25}; -- Other
 			
 	elseif voProductionData.IsAtWar then
@@ -353,7 +353,7 @@ function P.ProductionWeights(voProductionData)
 end
 -- Land ratio distribution
 
--- Lots of armor at the beginning for the Blitzkrieg, lots of infantry later to invade the USSR
+-- Lots of armour at the beginning for the Blitzkrieg, lots of infantry later to invade the USSR
 function P.LandRatio(voProductionData)
 	local laArray
 	
@@ -405,7 +405,9 @@ end
 function P.AirRatio(voProductionData)
 	local laArray = {
 		interceptor = 6,
-		tactical_bomber = 2};
+		tactical_bomber = 2,
+		scout = 3,
+		airship = 1};
 	
 	return laArray
 end
@@ -445,7 +447,7 @@ function P.TransportLandRatio(voProductionData)
 end
 
 -- Convoy Ratio control
---- NOTE: If goverment is in Exile these parms are ignored
+--- NOTE: If government is in Exile these parms are ignored
 function P.ConvoyRatio(voProductionData)
 	local laArray = {
 		2, -- Percentage extra (adds to 100 percent so if you put 10 it will make it 110% of needed amount)
@@ -457,7 +459,7 @@ function P.ConvoyRatio(voProductionData)
 end
 
 
--- Build Atleast 1 rocket test site
+-- Build At least 1 rocket test site (Chemical Weapons factory)
 function P.Build_RocketTest(ic, voProductionData)
 	
 	ic = Support.Build_RocketTest(ic, voProductionData, 1861, 1) -- Berlin
