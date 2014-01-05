@@ -1,0 +1,85 @@
+#########################
+# Independent Mengkukuo #
+########################
+
+diplomatic_decisions = {
+
+	independent_mengkukuo = {
+		potential = {
+			tag = JAP
+			NOT = { exists = MEN }
+			#war_with = CHI
+			year = 1936
+		}
+		allow = {
+			not = { chahar_region = { not = { controlled_by = JAP } } } 
+		}
+
+		effect = {
+			any_country = {
+				chahar_region = {
+					remove_core = JAP
+					secede_province = MEN
+					add_core = MEN
+				}
+			} 
+			chahar_region = {
+				secede_province = MEN
+				add_core = MEN
+			}
+			create_vassal = MEN
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	expand_mengkukuo = {
+		potential = {
+			tag = JAP
+			exists = MEN
+			#war_with = CHI
+			year = 1936
+		}
+		allow = {
+			JAP = {
+				controls = 7367 
+				controls = 4980 
+				controls = 5017 
+				controls = 5052 
+				controls = 7337 
+				controls = 7348 
+				controls = 7349 
+				controls = 7358 
+				controls = 7359 
+				controls = 7360 
+				controls = 7368 
+				controls = 7377 
+				controls = 7378 
+				controls = 7384 
+				controls = 7390 
+				controls = 9089 
+				controls = 5050 
+				controls = 7385 
+				controls = 5015	
+
+			}
+		}
+		effect = {
+			any_country = {
+				suiyuan_region = {
+					secede_province = MEN
+					add_core = MEN
+				}
+			} 
+			suiyuan_region = {
+				secede_province = MEN
+				add_core = MEN
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

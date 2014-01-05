@@ -1,0 +1,174 @@
+###########################
+# The Great Officer Purge #
+###########################
+diplomatic_decisions = {	
+	great_officer_purge = {
+		potential = {
+			tag = SOV
+			year = 1936
+			not = { has_country_flag = the_great_officer_purge }
+		}
+		allow = {
+			minister_alive = 12344002		# Iosif Stalin
+			year = 1937
+		}
+		effect = {
+			set_country_flag = the_great_officer_purge
+			national_unity = 25
+			manpower = 500
+			dissent = 5
+			add_country_modifier = {
+			name = "disorganized_officer_corps"
+			duration = -1
+			}
+
+			minister_of_security = 12344042
+			chief_of_staff = 12344051
+			chief_of_navy = 12344061
+			chief_of_air = 12344065
+				
+			# Ministers
+			remove_minister = 12344005		# Yagoda
+			remove_minister = 12344007		# Tukhachevsky
+			remove_minister = 12344009		# Orlov
+			remove_minister = 12344066		# Smushkevich
+			remove_minister = 12344006		# Berzin
+
+			# Leaders
+			kill_leader = 999839
+			kill_leader = 999841
+			kill_leader = 999843
+			kill_leader = 999884
+			kill_leader = 999894
+			kill_leader = 999896
+			kill_leader = 999900
+			kill_leader = 999907
+			kill_leader = 999910
+			kill_leader = 999926
+			kill_leader = 999930
+			kill_leader = 999951
+			kill_leader = 999955
+			kill_leader = 999969
+			kill_leader = 999974
+			kill_leader = 999991
+			kill_leader = 999993
+			kill_leader = 9910006
+			kill_leader = 9910016
+			kill_leader = 9910019
+			kill_leader = 9910028
+			kill_leader = 9910031
+			kill_leader = 9910042
+			kill_leader = 9910054
+			kill_leader = 9910066
+			kill_leader = 9910071
+			kill_leader = 9910114
+			kill_leader = 9910115
+			kill_leader = 9910137
+			kill_leader = 9910138
+			kill_leader = 9910202
+			kill_leader = 9910208
+			kill_leader = 9910215
+			kill_leader = 9910253
+			kill_leader = 9910271
+			kill_leader = 9910276
+			kill_leader = 9910283
+			kill_leader = 9910286
+			kill_leader = 9910297
+			kill_leader = 9910322
+			kill_leader = 9910342
+			kill_leader = 9910349
+			kill_leader = 9910369
+			kill_leader = 9910370
+			kill_leader = 9910371
+			kill_leader = 9910401
+			kill_leader = 9910417
+			kill_leader = 9910453
+			kill_leader = 9910463
+			kill_leader = 9910472
+			kill_leader = 9910477
+			kill_leader = 9910500
+			kill_leader = 9910514
+			kill_leader = 9910515
+			kill_leader = 9910516
+			kill_leader = 9910517
+			kill_leader = 9910518
+			kill_leader = 9910520
+			kill_leader = 9910521
+			kill_leader = 9910522
+			
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	MR_pact = {
+		potential = {
+			tag = SOV
+			year = 1936
+			has_country_flag = mol_rib_pact
+			NOT = { war_with = GER }
+			NOT = {	has_country_flag = mol_rib_pact_demanded }
+			NOT = { owns = 1986 }
+			GER = {	
+				has_country_flag = the_molotov_ribbentrop_pact
+				NOT = {
+				OR = {
+					has_country_flag = germany_honors_the_pact
+					has_country_flag = germany_dishonors_the_pact
+					}
+				}
+			}
+			NOT = {
+				has_country_flag = su_signs_peace
+			}
+		}
+		allow = {
+			OR = {
+				GER = {
+					owns = 1928	# Warszawa
+					}
+				POL = {
+					government_in_exile = yes
+					}
+				}
+		}
+		effect = {
+			set_country_flag = mol_rib_pact_demanded
+			GER = { country_event = 1507 }
+			}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	restore_officers = {
+		potential = {
+			year = 1936
+			tag = SOV
+			has_country_modifier = disorganized_officer_corps
+		}
+		allow = {
+			OR = {
+				owns = 698
+				FIN = { vassal_of = SOV }
+				AND = {
+					SOV = {
+						war_with = GER
+						}
+					surrender_progress = 5
+					}
+		
+				}
+		}
+		effect = {
+			remove_country_modifier = disorganized_officer_corps
+			}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

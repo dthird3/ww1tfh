@@ -17,6 +17,7 @@
 
 # Order that CBs are executed in a peace treaty
 peace_order = { 
+	civil_war
 	mexico_revolution
 	second_balkans
 	second_balkans_bulg
@@ -32,13 +33,42 @@ peace_order = {
 	civil_war_2
 	puppet
 	aquire_all_cores
+	aquire_territory
+	china_war_goal
+	vichy_war_goal
+	barbarossa_war_goal
+	japan_USA_goal
+	restore_france
 	conquer
-	#install_communism 
+	install_communism 
 	liberate_as_democracy 
 	#liberate_as_communist 
 	install_democracy 
 }
+# Civil war
+civil_war = {
+	sprite_index = 4
+	is_triggered_only = yes
+	
+	is_valid = {
+		THIS = { 
+			OR = {
+				tag = SPA 
+				tag = SPR
+			}
+		}
+		OR = {
+			tag = SPA 
+			tag = SPR
+		}
+	}
 
+	is_civil_war = yes #this is a civil war
+
+	po_annex = yes
+	
+	war_name = CIVIL_WAR_NAME
+}
 mexico_revolution = {
 	sprite_index = 4
 	is_triggered_only = yes
@@ -391,27 +421,28 @@ conquer = {
 	war_name = WAR_CONQUEST_NAME
 }
 
+
 # lebensraum!
-#aquire_territory = {
-#	sprite_index = 5
-#	is_triggered_only = yes
-#
-#	always = yes
-#	
-#	is_valid = {
-#		this = { 
-#			NOT = { faction = allies }
-#		}
-#	}
-#	
-#	allowed_regions = {
-#		owned_by = FROM
-#	}
-#
-#	po_demand_region = yes
-#	
-#	war_name = AQUIRE_TERRITORY_NAME
-#}
+aquire_territory = {
+	sprite_index = 5
+	is_triggered_only = yes
+
+	always = yes
+	
+	is_valid = {
+		this = { 
+			NOT = { faction = allies }
+		}
+	}
+	
+	allowed_regions = {
+		owned_by = FROM
+	}
+
+	po_demand_region = yes
+	
+	war_name = AQUIRE_TERRITORY_NAME
+}
 
 aquire_all_cores = {
 	sprite_index = 1
@@ -497,4 +528,142 @@ puppet = {
 	threat = 10
 	
 	war_name = WAR_VASSAL_NAME
+}
+install_communism = {
+	sprite_index = 7
+	is_triggered_only = yes
+
+	always = yes
+	
+	is_valid = {
+		this = { 
+			faction = comintern 
+		}
+		
+		# non communists only
+		not = { ideology = left_wing_radical }
+		not = { ideology = leninist }
+		not = { ideology = stalinist }
+	}
+	
+	po_install_government = yes
+	
+	on_completion = 
+	{ 
+		#country_event = 5057 
+		leave_faction = axis
+		leave_faction = allies
+		leave_faction = comintern
+		coup_by = FROM
+		relation = { who = FROM value = 200 }
+		organisation = 20
+		popularity = 20
+		national_unity = -30
+	} 
+	
+	war_name = WAR_INSTALL_COMMUNIST
+}
+vichy_war_goal = {
+	sprite_index = 1
+	is_triggered_only = yes
+
+	always = yes
+	
+	is_valid = {
+		this = { 
+			tag = GER
+		}
+		tag = FRA
+		FRA = { 
+			NOT = { has_country_flag = fr_signs_peace }
+		}
+		NOT = {
+			# has no "conquer" from anyone
+			# has no "puppet" from anyone
+			has_cb = { type = conquer }
+			has_cb = { type = puppet }
+		}
+	}
+
+	handles_peace = yes
+	threat = 10
+	on_completion = { 
+		country_event = 504 #vichy
+	}
+}
+
+barbarossa_war_goal = {
+	sprite_index = 1
+	is_triggered_only = yes
+
+	always = yes
+	
+	is_valid = {
+		this = { 
+			tag = GER
+		}
+		tag = SOV
+	}
+	handles_peace = yes
+	threat = 20
+	on_completion = { country_event = 507 } 
+	
+}
+
+china_war_goal = {
+	sprite_index = 1
+	is_triggered_only = yes
+
+	always = yes
+	
+	is_valid = {
+		this = { 
+			tag = JAP
+		}
+		tag = CHI
+	}
+	handles_peace = yes
+	on_completion = { country_event = 520 } 
+	
+}
+
+restore_france = {
+	sprite_index = 3
+	is_triggered_only = yes
+
+	always = yes
+	
+	is_valid = {
+		this = { 
+			NOT = { faction = axis }
+		}
+		tag = VIC
+	}
+
+	on_completion = { country_event = 518 } 
+	
+}
+
+japan_USA_goal = {
+	sprite_index = 1
+	is_triggered_only = yes
+
+	always = yes
+	
+	is_valid = {
+		this = { 
+			tag = JAP
+		}
+		tag = USA
+	}
+	 
+	po_demand_provinces = yes
+	
+	allowed_province = {
+		OR = {
+			region = US_pacific_bases_region
+			region = Alaska_region
+			region = US_west_coast_cities
+		}
+	}
 }

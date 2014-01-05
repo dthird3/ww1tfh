@@ -441,25 +441,25 @@ lightcruiser_antiaircraft = 0
 lightcruiser_engine = 0
 lightcruiser_armour = 0
 submarine_technology = 0
-submarine_engine = 0
-submarine_antiaircraft = 0
-submarine_hull = 0
 submarine_torpedoes = 0
+submarine_antiaircraft = 0
+submarine_engine = 0
+submarine_hull = 0
 super_heavy_battleship_technology = 0
-dreadnaught_engine = 0
-dreadnaught_antiaircraft = 0
-dreadnaught_armour = 0
 capitalship_armament = 0
+dreadnaught_antiaircraft = 0
+dreadnaught_engine = 0
+dreadnaught_armour = 0
 destroyer_technology = 1
 destroyer_armament = 10
 destroyer_antiaircraft = 0
 destroyer_engine = 10
 destroyer_armour = 10
 battleship_technology = 1
-battleship_engine = 12
-battleship_antiaircraft = 0
-battleship_armour = 12
 battleship_armament = 12
+battleship_antiaircraft = 0
+battleship_engine = 12
+battleship_armour = 12
 protectedcruiser_technology = 1
 protectedcruiser_armament = 8
 protectedcruiser_antiaircraft = 0
@@ -608,8 +608,199 @@ strategic_air_command = 0
 1914.1.1 = { oob = "CHI_1914.txt" }
 
 
+1936.1.1 = {
+capital = 5494
+government = right_wing_autocrat
+ideology = paternal_autocrat
+head_of_state = 123452001
+head_of_government = 123452002
+foreign_minister = 123452003
+armament_minister = 123452004
+minister_of_security = 123452005
+minister_of_intelligence = 123452006
+chief_of_staff = 123452002
+chief_of_army = 123452008
+chief_of_navy = 123452009
+chief_of_air = 123452010
+alignment = { x = 60 y = 61.6 }
+neutrality = 80
+national_unity = 70
+oob = "CHI_1936.txt"
+infantry_theory = 5
+infantry_practical = 5
+militia_theory = 10
+militia_practical = 10
+mobile_theory = 1
+mobile_practical = 1
+artillery_theory = 3
+artillery_practical = 3
+rocket_science = 0
+rocket_practical = 0 
+naval_engineering = 2.5
+destroyer_practical = 2.5
+cruiser_practical = 0
+capitalship_practical = 0
+carrier_practical = 0 
+submarine_engineering = 0
+submarine_practical = 0
+electornicegineering_theory = 0 
+electornicegineering_practical = 0
+automotive_theory = 0 
+armour_practical = 0
+aeronautic_engineering = 1
+single_engine_aircraft_practical = 0
+twin_engine_aircraft_practical = 0
+four_engine_aircraft_practical = 0
+spearhead_theory = 0 
+superior_firepower_theory = 0
+grand_battleplan_theory = 0
+human_wave_theory = 5 
+land_doctrine_practical = 5 
+naval_doctrine_practical = 0 
+base_strike_doctrine = 0
+fleet_in_being_doctrine = 2.5
+sealane_interdiction_doctrine = 0
+air_doctrine_practical = 0 
+fighter_focus = 1
+cas_focus = 0 
+tac_focus = 0
+nav_focus = 0 
+strategic_air_focus = 0 
+mechanicalengineering_theory = 2.5
+chemical_engineering = 1
+jetengine_theory = 0 
+jetengine_practical = 0 
+nuclear_physics = 0
+nuclear_bomb = 0 
+transport_practical = 2.5
+officers_ratio = 0.5
 
-
+popularity = { 
+national_socialist = 0
+fascistic = 0
+paternal_autocrat = 62
+social_conservative = 27
+market_liberal = 11
+social_liberal = 0
+social_democrat = 0
+left_wing_radical = 0
+leninist = 0
+stalinist = 0
+}
+organization = { 
+national_socialist = 0
+fascistic = 0
+paternal_autocrat = 65
+social_conservative = 40
+market_liberal = 15
+social_liberal = 0
+social_democrat = 0
+left_wing_radical = 0
+leninist = 0
+stalinist = 0
+}
+training_laws = basic_training
+press_laws = censored_press
+industrial_policy_laws = mixed_industry
+education_investment_law = minimal_education_investment
+economic_law = full_civilian_economy
+conscription_law = volunteer_army
+civil_law = legalistic_restrictions
+}
+1937.11.21 = { capital = 9478 # Chongqing
+set_country_flag = hu_hanmin
+set_country_flag = chinese_ic_transfer
+} 
+1938.9.1 = {
+head_of_state = 123452001
+head_of_government = 123452026
+foreign_minister = 123452026
+armament_minister = 123452046
+minister_of_security = 123452063
+minister_of_intelligence = 123452063
+chief_of_staff = 123452045
+chief_of_army = 123452089
+chief_of_navy = 123452101
+chief_of_air = 123452047
+oob = "CHI_1938.txt"
+officers_ratio = 0.55
+}
+1939.9.1 = {
+head_of_state = 123452001
+head_of_government = 123452003
+foreign_minister = 123452035
+armament_minister = 123452047
+minister_of_security = 123452066
+minister_of_intelligence = 123452079
+chief_of_staff = 123452089
+chief_of_army = 123452097
+chief_of_navy = 123452102
+chief_of_air = 123452047
+oob = "CHI_1939.txt"
+officers_ratio = 0.60
+peoples_army = 2
+guerilla_warfare = 2
+}
+1940.5.10 = { 
+officers_ratio = 0.65 
+head_of_state = 123452001
+head_of_government = 123452003
+foreign_minister = 123452035
+armament_minister = 123452047
+minister_of_security = 123452066
+minister_of_intelligence = 123452079
+chief_of_staff = 123452089
+chief_of_army = 123452097
+chief_of_navy = 123452102
+chief_of_air = 123452047
+oob = "CHI_1940.txt"
+peoples_army = 2
+guerilla_warfare = 2
+}
+1941.6.22 = {
+head_of_state = 123452001
+head_of_government = 123452003
+foreign_minister = 123452036
+armament_minister = 123452050
+minister_of_security = 123452068
+minister_of_intelligence = 123452080
+chief_of_staff = 123452090
+chief_of_army = 123452097
+chief_of_navy = 123452102
+chief_of_air = 123452109
+oob = "CHI_1941.txt"
+officers_ratio = 0.70
+peoples_army = 3
+guerilla_warfare = 3
+national_unity = 90
+}
+1941.12.7 = { oob = "CHI_DayOfInfamy.txt" 
+officers_ratio = 0.75
+}
+1941.12.9 = {
+join_faction = allies
+neutrality = 0
+}
+1942.6.4 = {
+officers_ratio = 0.80
+}
+1943.2.1 = { oob = "CHI_TheTideHasTurned.txt"
+officers_ratio = 0.85
+infantry_warfare = 2
+}
+1944.6.20 = {
+head_of_state = 123452002
+head_of_government = 123452002
+foreign_minister = 123452005
+armament_minister = 123452054
+minister_of_security = 123452055
+minister_of_intelligence = 123452083
+chief_of_staff = 123452035
+chief_of_army = 123452098
+chief_of_navy = 123452103
+chief_of_air = 123452010
+oob = "CHI_1944.txt"
+}
 
 
 
