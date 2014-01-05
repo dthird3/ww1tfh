@@ -1,0 +1,201 @@
+########################################
+# French Leaders Defect to Vichy Frace #
+########################################
+country_event = {
+	
+	id = 2901
+
+	trigger = {
+		year = 1936
+		tag = FRA
+		exists = VIC
+		not = { has_country_flag = french_leaders_defect }
+	}
+
+	mean_time_to_happen =  {
+		months = 5
+	}
+
+	title = "EVTNAME2901"
+	desc = "EVTDESC2901"
+	picture = "vichy_regime"
+
+	option = {
+		name = "EVTOPTA2901"
+		set_country_flag = french_leaders_defect
+		
+		# Leaders
+		kill_leader = 9924004		# Arnaud
+		kill_leader = 9924005		# Audet
+		kill_leader = 9924020		# Bridoux
+		kill_leader = 9924022		# Brocard
+		kill_leader = 9924027		# Carles
+		kill_leader = 9924029		# Castroux
+		kill_leader = 9924034		# Colson
+		kill_leader = 9924043		# de Boissieu de Lugne
+		kill_leader = 9924046		# de Cyvoct
+		kill_leader = 9924054		# de Verdillac
+		kill_leader = 9924056		# Debeney
+		kill_leader = 9924059		# Dentz
+		kill_leader = 9924060		# Desmazes
+		kill_leader = 9924062		# Doumenc
+		kill_leader = 9924065		# Dubuisson
+		kill_leader = 9924070		# Fagalde
+		kill_leader = 9924071		# Falvy
+		kill_leader = 9924074		# Francois H.N.
+		kill_leader = 9924082		# Georges
+		kill_leader = 9924095		# Huntziger
+		kill_leader = 9924103		# Keime
+		kill_leader = 9924115		# Laure
+		kill_leader = 9924117		# Lemonnier
+		kill_leader = 9924120		# Mer
+		kill_leader = 9924124		# Nogues
+		kill_leader = 9924145		# Weygand
+		kill_leader = 9924146		# Abrial
+		kill_leader = 9924151		# Darlan
+		kill_leader = 9924153		# de Geffrier
+		kill_leader = 9924154		# de Laborde
+		kill_leader = 9924157		# Decoux
+		kill_leader = 9924158		# Escudier
+		kill_leader = 9924159		# Esteva
+		kill_leader = 9924160		# Gensoul
+		kill_leader = 9924161		# Godfroy
+		kill_leader = 9924167		# Luc
+		kill_leader = 9924176		# Baltus
+		kill_leader = 9924178		# Bergeret
+		kill_leader = 9924182		# Bouscat
+		kill_leader = 9924183		# Clostermann
+		kill_leader = 9924186		# d'Arnaud de Vitrolles
+		kill_leader = 9924188		# Goys de Meyzerac
+		kill_leader = 9924199		# Jannekeyn
+		kill_leader = 9924200		# Jauneaud
+		kill_leader = 9924208		# Paskewicz
+		kill_leader = 9924209		# Pinsard
+		kill_leader = 9924213		# Rousselot de Saint-Ceran
+		kill_leader = 9924215		# Royer de Marancour
+
+		# Ministers
+		remove_minister = 12342001		# Lebrun
+		remove_minister = 12342002		# Sarraut
+		remove_minister = 12342003		# Flandin
+		remove_minister = 12342006		# Paganon
+		remove_minister = 12342007		# Gamelin
+		remove_minister = 12342009		# Darlan
+		remove_minister = 12342033		# Blum
+		remove_minister = 12342034		# Gouin
+		remove_minister = 12342038		# Reynaud
+		remove_minister = 12342040		# Laval
+		remove_minister = 12342041		# Marie
+		remove_minister = 12342045		# Cachin
+		remove_minister = 12342069		# Barthou
+		remove_minister = 12342073		# Dautry
+		remove_minister = 12342074		# Loucheur
+		remove_minister = 12342076		# Hoden
+		remove_minister = 12342079		# Fabry
+		remove_minister = 12342080		# Avenol
+		remove_minister = 12342081		# Fayolle
+		remove_minister = 12342098		# Chardigny
+		remove_minister = 12342099		# Luchaire
+		remove_minister = 12342100		# Tixier
+		remove_minister = 12342101		# Bonnet
+		remove_minister = 12342105		# Pene
+		remove_minister = 12342106		# Fontaine
+		remove_minister = 12342107		# Roy
+		remove_minister = 12342111		# Clauzel
+		remove_minister = 12342112		# Nicolau
+		remove_minister = 12342123		# Salengro
+		remove_minister = 12342132		# Brunschwig
+		remove_minister = 12342146		# Weygand
+		remove_minister = 12342148		# Gentillehomme
+		remove_minister = 12342206		# Georges
+	}
+}
+
+country_event = {
+	
+	id = 2902
+
+	trigger = {
+		tag = FRA
+		exists = VIC
+		FRA = {
+			controls = 2613 # Paris
+		}
+		VIC = {
+			ai = yes
+		}
+	}
+
+	mean_time_to_happen =  {
+		months = 2
+	}
+
+	title = "EVTNAME2902"
+	desc = "EVTDESC2902"
+	picture = "vichy_regime"
+
+	option = {
+		name = "EVTOPTA2902"
+		inherit = VIC
+	}
+}
+
+
+########################################
+# The Fall of Paris #
+########################################
+
+country_event = {
+	
+	id = 2910
+
+	trigger = {
+		year = 1936
+		tag = FRA
+		war_with = GER
+		GER = { controls = 2613 }
+		not = { has_country_flag = fall_of_paris }
+		NOT = { exists = VIC }
+		NOT = { has_country_flag = fr_signs_peace }
+	}
+
+	title = "EVTNAME2910"
+	desc = "EVTDESC2910"
+
+	option = {
+		name = "EVTOPTA2910"
+		national_unity = -25
+		set_country_flag = fall_of_paris
+		}
+}
+
+########################################
+# Reunion with Vichy #
+########################################
+
+country_event = {
+	
+	id = 2911
+
+	trigger = {
+		year = 1936
+		tag = FRA
+		exists = VIC
+		controls = 2613
+		controls = 3351
+		VIC = { war = no }
+	}
+	
+	mean_time_to_happen =  {
+		months = 1
+	}
+
+	title = "EVTNAME518" #There's no point in fighting anymore
+	desc = "EVTDESC2911"
+
+	option = {
+		name = "EVTOPTA518" #Reunited at last!
+		national_unity = 10
+		surrender_inherit = VIC
+		}
+}

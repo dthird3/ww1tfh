@@ -11,14 +11,14 @@ naval_supremacy_in_the_west = {
 	potential = {
 		is_in_any_faction = yes
 		OR = {
-			TAG = USA
-			TAG = ENG
-			TAG = GER
-			TAG = ITA
-			TAG = FRA
-			TAG = RUS
-			TAG = AUH
-			TAG = TUR
+			tag = USA
+			tag = ENG
+			tag = GER
+			tag = ITA
+			tag = FRA
+			tag = RUS
+			tag = AUH
+			tag = TUR
 		}
 	}
 	
@@ -97,14 +97,14 @@ naval_supremacy_in_the_east = {
 	potential = {
 		is_in_any_faction = yes
 		OR = {
-			TAG = USA
-			TAG = ENG
-			TAG = GER
-			TAG = ITA
-			TAG = FRA
-			TAG = RUS
-			TAG = AUH
-			TAG = TUR
+			tag = USA
+			tag = ENG
+			tag = GER
+			tag = ITA
+			tag = FRA
+			tag = RUS
+			tag = AUH
+			tag = TUR
 		}
 	}
 
@@ -168,7 +168,7 @@ naval_supremacy_in_the_east = {
 
 us_army = {
 	potential = {
-		TAG = USA
+		tag = USA
 	}
 	
 	trigger = {
@@ -184,7 +184,7 @@ us_army = {
 
 Ottomans_weakened = {
 	potential = {
-		TAG = TUR
+		tag = TUR
 	}
 	
 	trigger = {
@@ -201,7 +201,7 @@ Ottomans_weakened = {
 
 blockade_of_central_powers = {
 	potential = {
-		TAG = ENG
+		tag = ENG
 	}
 	
 	trigger = { has_country_flag = North_Sea_War_Zone }
@@ -212,7 +212,7 @@ blockade_of_central_powers = {
 
 unrestricted_submarine_warfare = {
 	potential = {
-		TAG = GER
+		tag = GER
 	}
 	
 	trigger = { 
@@ -226,7 +226,7 @@ unrestricted_submarine_warfare = {
 
 auh_buildup = {
 	potential = {
-		TAG = AUH
+		tag = AUH
 	}
 	
 	trigger = {
@@ -241,7 +241,7 @@ auh_buildup = {
 
 Ottomans_regain = {
 	potential = {
-		TAG = TUR
+		tag = TUR
 	}
 	
 	trigger = {
@@ -305,14 +305,14 @@ triple_entente = {
 polish_corridor_pol = {
 	
 	potential = {
-		TAG = POL
+		tag = POL
 		NOT = {
-			TAG = GER
+			tag = GER
 		}
 	}
 
 	trigger = {
-		TAG = POL
+		tag = POL
 		1626 = {
 		controlled_by = POL
 		}
@@ -326,14 +326,14 @@ polish_corridor_pol = {
 polish_corridor_ger = {
 	
 	potential = {
-		TAG = GER
+		tag = GER
 		NOT = {
-			TAG = POL
+			tag = POL
 		}
 	}
 	
 	trigger = {
-		TAG = GER
+		tag = GER
 		1626 = {
 		controlled_by = GER
 		}
@@ -349,23 +349,23 @@ polish_corridor = {
 
 	potential = {
 		OR = {
-			TAG = USA
-			TAG = ENG
-			TAG = GER
-			TAG = ITA
-			TAG = FRA
-			TAG = RUS
-			TAG = AUH
-			TAG = TUR
+			tag = USA
+			tag = ENG
+			tag = GER
+			tag = ITA
+			tag = FRA
+			tag = RUS
+			tag = AUH
+			tag = TUR
 		}
 		NOT = {
-			TAG = POL
-			TAG = GER
+			tag = POL
+			tag = GER
 		}
 	}
 
 	trigger = {
-		TAG = THIS
+		tag = THIS
 		1626 = {
 		controlled_by = THIS
 		}
@@ -462,11 +462,11 @@ central_powers = {
 general_winter = {
 
 	potential = {
-		TAG = RUS
+		tag = RUS
 	}
 	
 	trigger = {
-		TAG = RUS
+		tag = RUS
 		war_with = GER
 		GER = {
 			OR = {
@@ -587,14 +587,14 @@ mediterranean_control = {
 
 	potential = {
 		OR = {
-			TAG = USA
-			TAG = ENG
-			TAG = GER
-			TAG = ITA
-			TAG = FRA
-			TAG = RUS
-			TAG = AUH
-			TAG = TUR
+			tag = USA
+			tag = ENG
+			tag = GER
+			tag = ITA
+			tag = FRA
+			tag = RUS
+			tag = AUH
+			tag = TUR
 		}
 	}
 	
@@ -696,14 +696,14 @@ control_over_panama_channel = {
 	
 	potential = {
 		OR = {
-			TAG = USA
-			TAG = ENG
-			TAG = GER
-			TAG = ITA
-			TAG = FRA
-			TAG = RUS
-			TAG = AUH
-			TAG = TUR
+			tag = USA
+			tag = ENG
+			tag = GER
+			tag = ITA
+			tag = FRA
+			tag = RUS
+			tag = AUH
+			tag = TUR
 		}	
 	}
 	
@@ -726,14 +726,14 @@ control_over_the_black_sea = {
 			faction = allies
 		}
 		OR = {
-			TAG = USA
-			TAG = ENG
-			TAG = GER
-			TAG = ITA
-			TAG = FRA
-			TAG = RUS
-			TAG = AUH
-			TAG = TUR
+			tag = USA
+			tag = ENG
+			tag = GER
+			tag = ITA
+			tag = FRA
+			tag = RUS
+			tag = AUH
+			tag = TUR
 		}
 	}
 
@@ -866,14 +866,14 @@ control_over_suez_channel = {
 
 	potential = {
 		OR = {
-			TAG = USA
-			TAG = ENG
-			TAG = GER
-			TAG = ITA
-			TAG = FRA
-			TAG = RUS
-			TAG = AUH
-			TAG = TUR
+			tag = USA
+			tag = ENG
+			tag = GER
+			tag = ITA
+			tag = FRA
+			tag = RUS
+			tag = AUH
+			tag = TUR
 		}
 	}
 	
@@ -1005,15 +1005,15 @@ control_over_makassar_strait = {
 	
 	potential = {
 		OR = {
-			TAG = HOL
-			TAG = USA
-			TAG = ENG
-			TAG = GER
-			TAG = ITA
-			TAG = FRA
-			TAG = RUS
-			TAG = AUH
-			TAG = TUR
+			tag = HOL
+			tag = USA
+			tag = ENG
+			tag = GER
+			tag = ITA
+			tag = FRA
+			tag = RUS
+			tag = AUH
+			tag = TUR
 		}
 	}
 	
@@ -1119,16 +1119,16 @@ control_over_gibraltar = {
 	
 	potential = {
 		OR = {
-			TAG = SPA
-			TAG = SPR
-			TAG = USA
-			TAG = ENG
-			TAG = GER
-			TAG = ITA
-			TAG = FRA
-			TAG = RUS
-			TAG = AUH
-			TAG = TUR
+			tag = SPA
+			tag = SPR
+			tag = USA
+			tag = ENG
+			tag = GER
+			tag = ITA
+			tag = FRA
+			tag = RUS
+			tag = AUH
+			tag = TUR
 		}
 	}
 	
@@ -1169,17 +1169,17 @@ control_over_oresund = {
 	
 	potential = {
 		OR = {
-			TAG = SWE
-			TAG = NOR
-			TAG = DEN
-			TAG = USA
-			TAG = ENG
-			TAG = GER
-			TAG = ITA
-			TAG = FRA
-			TAG = RUS
-			TAG = AUH
-			TAG = TUR
+			tag = SWE
+			tag = NOR
+			tag = DEN
+			tag = USA
+			tag = ENG
+			tag = GER
+			tag = ITA
+			tag = FRA
+			tag = RUS
+			tag = AUH
+			tag = TUR
 		}
 	}
 	
@@ -1317,16 +1317,15 @@ control_english_channel = {
 
 	potential = {
 		OR = {
-			TAG = FRA
-			TAG = USA
-			TAG = ENG
-			TAG = GER
-			TAG = ITA
-			TAG = FRA
-			TAG = RUS
-			TAG = AUH
-			TAG = TUR
-			TAG = SPR
+			tag = FRA
+			tag = USA
+			tag = ENG
+			tag = GER
+			tag = ITA
+			tag = RUS
+			tag = AUH
+			tag = TUR
+			tag = SPR
 		}
 		NOT = {
 			faction = comintern
@@ -1414,10 +1413,10 @@ control_over_persian_gulf = {
 	
 	potential = {
 		OR = {
-			TAG = IRQ
-			TAG = ENG
-			TAG = SAU
-			TAG = PER
+			tag = IRQ
+			tag = ENG
+			tag = SAU
+			tag = PER
 		}
 	}
 	
@@ -1486,11 +1485,11 @@ control_over_tonkin_gulf = {
 	
 	potential = {
 		OR = {
-			TAG = FRA
-			TAG = CHI
-			TAG = QIN
-			TAG = JAP
-			TAG = ENG
+			tag = FRA
+			tag = CHI
+			tag = QIN
+			tag = JAP
+			tag = ENG
 		}
 	}
 	
@@ -1559,9 +1558,9 @@ control_over_mexico_gulf = {
 	
 	potential = {
 		OR = {
-			TAG = MEX
-			TAG = USA
-			TAG = CUB
+			tag = MEX
+			tag = USA
+			tag = CUB
 		}
 	}
 	
@@ -1587,11 +1586,11 @@ control_over_iskenderun_gulf = {
 	
 	potential = {
 		OR = {
-			TAG = TUR
-			TAG = ENG
-			TAG = FRA
-			TAG = GRE
-			TAG = ITA
+			tag = TUR
+			tag = ENG
+			tag = FRA
+			tag = GRE
+			tag = ITA
 		}
 	}
 	
@@ -1614,11 +1613,11 @@ control_over_chihli_gulf = {
 
 	potential = {
 		OR = {
-			TAG = JAP
-			TAG = CHI
-			TAG = QIN
-			TAG = RUS
-			TAG = MAN
+			tag = JAP
+			tag = CHI
+			tag = QIN
+			tag = RUS
+			tag = MAN
 		}
 	}
 	
@@ -1692,14 +1691,14 @@ control_over_taiwan_strait = {
 	
 	potential = {
 		OR = {
-			TAG = JAP
-			TAG = CHI
-			TAG = QIN
-			TAG = PHI
-			TAG = CGX
-			TAG = FRA
-			TAG = ENG
-			TAG = USA
+			tag = JAP
+			tag = CHI
+			tag = QIN
+			tag = PHI
+			tag = CGX
+			tag = FRA
+			tag = ENG
+			tag = USA
 		}
 	}
 	
@@ -1761,10 +1760,10 @@ control_over_mozambique_channel = {
 	
 	potential = {
 		OR = {
-			TAG = FRA
-			TAG = ENG
-			TAG = POR
-			TAG = ITA
+			tag = FRA
+			tag = ENG
+			tag = POR
+			tag = ITA
 		}
 	}
 	
@@ -1882,10 +1881,10 @@ control_finland_gulf = {
 
 	potential = {
 		OR = {
-			TAG = FIN
-			TAG = GER
-			TAG = RUS
-			TAG = SWE
+			tag = FIN
+			tag = GER
+			tag = RUS
+			tag = SWE
 		}
 		NOT = {
 			faction = allies
@@ -2048,7 +2047,7 @@ Caliph_of_Islam = {
     potential = {
 	}
 	trigger = {
-		TAG = TUR	
+		tag = TUR	
 		5567 = {
 		controlled_by = TUR
 		}
@@ -2063,7 +2062,7 @@ Holy_War = {
     potential = {
 	}
 	trigger = {
-		TAG = TUR
+		tag = TUR
 		war_with = ENG	
 		4503 = {
 		controlled_by = TUR
@@ -2079,7 +2078,7 @@ uk_no_conscription = {
     potential = {
 	}
 	trigger = {
-		TAG = ENG	
+		tag = ENG	
 		war = no
 	} 
 	
@@ -2094,7 +2093,7 @@ russia_leadership_troubles = {
     potential = {
 	}
 	trigger = {
-		TAG = RUS
+		tag = RUS
 		OR = {
 			war = no
 			NOT = {
