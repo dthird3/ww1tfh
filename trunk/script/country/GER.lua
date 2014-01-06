@@ -297,9 +297,9 @@ end
 --   1.0 = 100% the total needs to equal 1.0
 function P.ProductionWeights(voProductionData)
 	local laArray = {
-		0.50, -- Land
-		0.25, -- Air
-		0.20, -- Sea
+		0.65, -- Land
+		0.20, -- Air
+		0.10, -- Sea
 		0.05}; -- Other
 	
 	-- Check to see if manpower is to low
@@ -313,9 +313,9 @@ function P.ProductionWeights(voProductionData)
 	elseif voProductionData.Year <= 1912 and not(voProductionData.IsAtWar) then
 		--Utils.LUA_DEBUGOUT("Country: GER 20L, 15A,45S,20O")
 		laArray = {
-			0.40, -- Land
-			0.05, -- Air
-			0.45, -- Sea
+			0.45, -- Land
+			0.10, -- Air
+			0.35, -- Sea
 			0.10}; -- Other
 	
 	-- More than 400 brigades so build stuff that does not use manpower
@@ -334,17 +334,17 @@ function P.ProductionWeights(voProductionData)
 		-- Desperation check and if so heavy production of land forces
 		if voProductionData.ministerCountry:CalcDesperation():Get() > 0.4 then
 			laArray = {
-				0.70, -- Land
-				0.10, -- Air
-				0.20, -- Sea
+				0.75, -- Land
+				0.15, -- Air
+				0.10, -- Sea
 				0.0}; -- Other
 				
 		-- If the Soviets have Moscow and we are at war
 		elseif lbControlMoscow and lbSovGerWar then
 			laArray = {
-				0.60, -- Land 
-				0.12, -- Air
-				0.23, -- Sea        
+				0.65, -- Land 
+				0.20, -- Air
+				0.10, -- Sea        
 				0.05}; -- Other
 		end
 	end

@@ -333,7 +333,7 @@ function P.ProductionWeights(voProductionData)
 				0.0, -- Sea
 				0.0}; -- Other
 				
-		-- War has been going on for atleast 2 years and we still have Moscow
+		-- War has been going on for at least 2 years and we still have Moscow
 		else
 			local lbControlMoscow = (CCurrentGameState.GetProvince(1409):GetController() == voProductionData.ministerTag)
 
@@ -352,7 +352,7 @@ function P.ProductionWeights(voProductionData)
 					0.0}; -- Other
 			end
 		end
-	-- We are atwar with someone other than Germany
+	-- We are at war with someone other than Germany
 	elseif voProductionData.IsAtWar then
 		
 		laArray = {
