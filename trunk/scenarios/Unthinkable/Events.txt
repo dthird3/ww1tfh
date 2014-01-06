@@ -14,14 +14,13 @@ country_event = {
 	
 	}
 	
-	immediate = { set_global_flag = alliedsouthvic }
-	
 	title = "OUEVTNAME1"
 	desc = "OUEVTDESC1"
 	picture = "tannu_tuva"
 
 	option = {
 		name = "OUEVTOPTA1"
+				set_global_flag = alliedsouthvic
 				load_oob = "scenarios\Unthinkable\Extra_OOBs\eng1.txt"
 				USA = { country_event = 10 }
 	}
@@ -43,14 +42,13 @@ country_event = {
 	
 	}
 	
-	immediate = { set_global_flag = SOVsouthvic }
-	
 	title = "OUEVTNAME2"
 	desc = "OUEVTDESC2"
 	picture = "tannu_tuva"
 
 	option = {
 		name = "OUEVTOPTA2"
+				set_global_flag = SOVsouthvic
 				load_oob = "scenarios\Unthinkable\Extra_OOBs\sov1.txt"
 	}
 }
@@ -112,14 +110,13 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	
-	immediate = { set_global_flag = alliedsouthvic }
-	
 	title = "OUEVTNAME1"
 	desc = "OUEVTDESC1"
 	picture = "Bitter_Peace"
 
 	option = {
 		name = "OUEVTOPTA1"
+				set_global_flag = alliedsouthvic
 				load_oob = "scenarios\Unthinkable\Extra_OOBs\USA1.txt"
 	}
 }
