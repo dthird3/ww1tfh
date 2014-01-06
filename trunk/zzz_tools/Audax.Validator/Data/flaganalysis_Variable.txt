@@ -1,0 +1,19 @@
+Flag Analysis for Variable
+
+Summary
+Warnings: 2
+Total flags: 6 in 3 names
+
+Warnings
+pdeploy
+	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 16, column 11) [set_variable = {   which = PDEPLOY  value = +1928 }]
+sovdelay
+	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 872, column 11) [set_variable = {   which = SovDelay  value = 1 }]
+	set|cng: <mod>\scenarios\polish_bolshevik\events.txt (Line 18, column 11) [change_variable = {   which = SovDelay  value = +1 }]
+
+
+Summary (excluding warnings)
+poldelay
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 356, column 11) [check_variable = {   which = PolDelay  value = 4 }]
+	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 342, column 11) [set_variable = {   which = PolDelay  value = 1 }]
+	set|cng: <mod>\scenarios\polish_bolshevik\events.txt (Line 17, column 11) [change_variable = {   which = PolDelay  value = +1 }]
