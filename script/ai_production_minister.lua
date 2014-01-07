@@ -622,9 +622,9 @@ function ProductionMinister_Tick(minister)
 		--Utils.LUA_DEBUGOUT("Country: " .. tostring(ProductionData.ministerTag) .. " Not enough manpower to mobilise")
 	end
 	
-	if tostring(ProductionData.ministerTag) == "ENG" then
-		Utils.LUA_DEBUGOUT("Country: " .. tostring(ProductionData.ministerTag) .. ", Manpower = " .. tostring(ProductionData.ManpowerMobilize).. ", IC = " .. tostring(ProductionData.icAvailable))
-	end
+	--if tostring(ProductionData.ministerTag) == "ENG" then
+		--Utils.LUA_DEBUGOUT("Country: " .. tostring(ProductionData.ministerTag) .. ", Manpower = " .. tostring(ProductionData.ManpowerMobilize).. ", IC = " .. tostring(ProductionData.icAvailable))
+	--end
 	
 	
 	if ProductionData.ManpowerMobilize and ProductionData.icAvailable > 0.1 then
@@ -983,10 +983,12 @@ function ProductionMinister_Tick(minister)
 			for k, v in pairs(laNavalRatio) do
 					
 				--if tostring(ProductionData.ministerTag) == "GER" then
-					--Utils.LUA_DEBUGOUT("Trying".. tostring(UnitTypes[k].Index))
+					--Utils.LUA_DEBUGOUT("Trying".. tostring(k))
 				--end
 				
 				laNavalUnitRatio[k] = CalculateRatio(ProductionData.TotalCounts[UnitTypes[k].Index], laNavalRatio[k])
+				
+			--Utils.LUA_DEBUGOUT("OK")
 			end
 			
 		

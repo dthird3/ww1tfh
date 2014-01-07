@@ -106,14 +106,11 @@ function P.DiploScore_InviteToFaction(voDiploScoreObj)
 	return voDiploScoreObj.Score
 end
 
-function P.DiploScore_Alliance( viScore, ai, actor, recipient, observer)
 
+function P.DiploScore_Alliance(voDiploScoreObj)
 
-		if voDiploScoreObj.TargetTag == 'ENG' then -- no thanks, all or nothing
-			voDiploScoreObj.Score = 0
-		end
-	
-	return voDiploScoreObj.Score
+		voDiploScoreObj.Score = 0
+	return  voDiploScoreObj.Score
 end
 
 function P.DiploScore_OfferTrade(voDiploScoreObj)
