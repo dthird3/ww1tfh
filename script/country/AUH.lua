@@ -324,10 +324,10 @@ function P.ProductionWeights(voProductionData)
 			0.10}; -- Other
 	elseif voProductionData.Year <= 1912 and not(voProductionData.IsAtWar) then
 		laArray = {
-			0.70, -- Land
-			0.05, -- Air
-			0.15, -- Sea
-			0.10}; -- Other
+			0.75, -- Land
+			0.10, -- Air
+			0.10, -- Sea
+			0.05}; -- Other
 	
 	-- More than 400 brigades so build stuff that does not use manpower
 	elseif (voProductionData.ManpowerTotal < 300 and voProductionData.LandCountTotal > 400) then
