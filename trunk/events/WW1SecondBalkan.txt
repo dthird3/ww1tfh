@@ -192,11 +192,10 @@ country_event = {
 			BUL = { end_war = HJZ }
 			BUL = { end_war = ASR }
 			BUL = { end_war = YEM }
-			TUR = { manpower = 600 }
+#			TUR = { manpower = 600 }
 			SER = { leave_alliance = GRE }
 			GRE = { leave_alliance = SER }
 		}
-	
 }
 
 #BALKAN 2 PEACE ROM INTERVENTION
@@ -269,11 +268,10 @@ country_event = {
 			BUL = { end_war = TUR }
 			SER = { end_war = BUL }
 			GRE = { end_war = BUL }
-			TUR = { manpower = 600 }
+#			TUR = { manpower = 600 }
 			SER = { leave_alliance = GRE }
 			GRE = { leave_alliance = SER }
 		}
-	
 }
 
 #BALKAN 2 PEACE TUR INTERVENTION
@@ -348,11 +346,10 @@ country_event = {
 			BUL = { end_war = TUR }
 			SER = { end_war = BUL }
 			GRE = { end_war = BUL }
-			TUR = { manpower = 600 }
+#			TUR = { manpower = 600 }
 			SER = { leave_alliance = GRE }
 			GRE = { leave_alliance = SER }
 		}
-	
 }
 
 #BALKAN 2 PEACE TUR INTERVENTION
@@ -430,9 +427,8 @@ country_event = {
 			GRE = { end_war = BUL }
 			BUL = { end_war = ROM }
 			BUL = { end_war = TUR }
-			TUR = { manpower = 600 }
+#			TUR = { manpower = 600 }
 		}
-	
 }  
  
 
@@ -442,8 +438,6 @@ country_event = {
 		id = 100360
 
 		major = yes
-		
-
 
 		is_triggered_only = yes
 		
@@ -472,15 +466,13 @@ country_event = {
 			SER = { country_event = 100361 }
 			GRE = { country_event = 100362 }
 		}
-	
 }  
+
 country_event = {
 
 		id = 100361
 
 		major = yes
-		
-
 
 		is_triggered_only = yes
 		
@@ -496,15 +488,13 @@ country_event = {
 			4610 = { secede_province = BUL }
 			4664 = { secede_province = BUL }
 		}
-	
-}  
+} 
+ 
 country_event = {
 
 		id = 100362
 
 		major = yes
-		
-
 
 		is_triggered_only = yes
 		
@@ -520,5 +510,4 @@ country_event = {
 			4718 = { secede_province = BUL }
 			4665 = { secede_province = BUL }
 		}
-	
 }  

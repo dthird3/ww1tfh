@@ -1,5 +1,92 @@
+# Albania 1910 Revolt
+country_event = {
 
-## albania revolution
+		id = 2084505
+
+		major = yes
+		
+		trigger = {
+			tag = TUR
+			NOT = { exists = ALB }
+			date = 1910.5.3
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = yes
+
+		title = "TURE2"							
+		desc = "desc_TURE1910"
+		picture = "TURP2"
+
+		option = {
+			name = "opta_TURE2"
+			ai_chance = { factor = 100 }
+			dissent = 2
+			4368 = { secede_province = ALB }
+			4610 = { secede_province = ALB }
+			4718 = { secede_province = ALB }
+			4555 = { secede_province = ALB }
+			4368 = { militia_brigade = current }
+			4610 = { militia_brigade = current }
+			4718 = { militia_brigade = current }
+			4555 = { militia_brigade = current }
+			4368 = {supplies = 500}
+			4610 = {supplies = 500}
+			4718 = {supplies = 500}
+			4555 = {supplies = 500}
+			ALB = {	war = {	
+					target = TUR
+					attacker_goal = { casus_belli=aquire_all_cores }
+					}
+			}
+		}
+}
+
+# Albania 1911 Revolt
+country_event = {
+
+		id = 2084506
+
+		major = yes
+		
+		trigger = {
+			tag = TUR
+			NOT = { exists = ALB }
+			date = 1911.3.24
+		}
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = yes
+
+		title = "TURE2"							
+		desc = "desc_TURE1911"
+		picture = "TURP2"
+
+		option = {
+			name = "opta_TURE2"
+			ai_chance = { factor = 100 }
+			dissent = 2
+			4494 = { secede_province = ALB }
+			4430 = { secede_province = ALB }
+			4494 = { militia_brigade = current }
+			4430 = { militia_brigade = current }
+			4494 = {supplies = 500}
+			4430 = {supplies = 500}
+			ALB = {	war = {	
+					target = TUR
+					attacker_goal = { casus_belli=aquire_all_cores }
+					}
+			}
+		}
+}
+
+## Albania revolution 1912
 country_event = {
 
 		id = 100119
@@ -45,7 +132,7 @@ country_event = {
 					target = TUR
 					attacker_goal = { casus_belli=aquire_all_cores }
 					}
-				}
+			}
 		}
 }
 

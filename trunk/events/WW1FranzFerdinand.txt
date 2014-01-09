@@ -151,7 +151,7 @@ country_event = {
 			relation = { who = AUH value = -50 }
 			leave_alliance = AUH
 			leave_alliance = GER
-			threat = { who = AUH value = 30 } 
+			threat = { who = AUH value = 40 } 
 			threat = { who = GER value = 30 }
 		}
 		option = {
@@ -228,8 +228,8 @@ country_event = {
 			}
 			
 			AUH = { country_event = 100147 }						# Montenegro event
-			SAF = { country_event = 2008000 }      
-			ENG = { country_event = 190502 }
+			SAF = { country_event = 2008000 }      					# SAF chooses to support Entente or stay neutral
+			ENG = { country_event = 190502 }						#
 			AUH = {threat = { who = USA value = -20 }}				# USA doesn't care and is to remain neutral
 			GER = {threat = { who = USA value = -35 }}				# USA doesn't care and is to remain neutral
 		}

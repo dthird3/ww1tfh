@@ -443,7 +443,8 @@ end
 function P.AirRatio(voProductionData)
 	local laArray = {
 		interceptor = 6,
-		tactical_bomber = 4};
+		tactical_bomber = 2,
+		scout = 3};
 	
 	return laArray
 end
