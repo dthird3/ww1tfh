@@ -30,6 +30,7 @@
 			ai_chance = { factor = 100 }
 			FRA = { set_country_flag = agadir }
 			GER = { neutrality = -30 }
+			AUH = { neutrality = -30 }			
 			GER = { dissent = 3 }
 			GER = { money = -50 }
 			threat = { who = all value = 10 }
@@ -37,7 +38,6 @@
 			ENG = { country_event = 100138 }
 			RUS = { country_event = 100139 }
 		}
-	
 }
 
  country_event = {
@@ -61,7 +61,6 @@
 			10021 = { secede_province = GER }
 			10021 = { add_core = GER }
 		}
-	
 }
 
  country_event = {
@@ -83,9 +82,9 @@
 			THIS = { manpower = 50 }
 			THIS = { neutrality = -30 }
 		}
-	
 }
-#MORROCCOOO
+
+#MOROCCO
 country_event = {
 
 		id = 100115
@@ -122,10 +121,9 @@ country_event = {
 			5258 = { secede_province = SPR }
 			SPR = { country_event = 100116 }
 		}
-	
 }
 
-#MORROCCOOO
+#MOROCCO
 country_event = {
 
 		id = 100116
@@ -141,5 +139,4 @@ country_event = {
 			ai_chance = { factor = 100 }
 			neutrality = -30
 		}
-	
 }
