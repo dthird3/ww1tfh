@@ -198,6 +198,7 @@ function P.Buildings(voProductionData)
 			industry = nil,
 			nuclear_reactor = nil,
 			air_base = nil,
+			infra = nil,
 			naval_base = nil
 		}
 	}
