@@ -150,20 +150,11 @@ function P.ProductionWeights(voProductionData)
 			0.20, -- Sea
 			0.30} -- Other
 	elseif voProductionData.Year <= 1914 and not(voProductionData.IsAtWar) then
-		-- Peacetime Prep for SeaLion
-		if voProductionData.Custom.SeaLion then
 			laArray = {
-				0.60, -- Land
-				0.05, -- Air
-				0.25, -- Sea
-				0.10} -- Other
-		else
-			laArray = {
-				0.47, -- Land
-				0.28, -- Air
+				0.65, -- Land
+				0.10, -- Air
 				0.15, -- Sea
 				0.10} -- Other
-		end
 	
 	-- More than 400 brigades so build stuff that does not use manpower
 	elseif (voProductionData.Manpower.Total < 200 and voProductionData.Units.Counts.Land > 400) then
@@ -172,14 +163,6 @@ function P.ProductionWeights(voProductionData)
 			0.40, -- Air
 			0.20, -- Sea
 			0.25} -- Other
-			
-	-- Sea Lion build lots of navy
-	elseif voProductionData.Custom.SeaLion and not(voProductionData.Custom.SovietWar) then
-		laArray = {
-			0.40, -- Land
-			0.25, -- Air
-			0.30, -- Sea
-			0.05} -- Other
 
 	elseif voProductionData.IsAtWar then
 		-- Desperation check and if so heavy production of land forces
@@ -208,8 +191,8 @@ function P.TransportLandRatio(voProductionData)
 	local laArray
 		laArray = {
 			250, -- Land
-			1, -- Transport
-			0.5} -- Invasion
+			0, -- Transport
+			0} -- Invasion
 	
 	return laArray
 end
@@ -485,6 +468,18 @@ function P.DiploScore_OfferTrade(voDiploScoreObj)
 	
 	return voDiploScoreObj.Score
 end
+function P.AirRatio(voProductionData)
+	local laArray = Prod_Air.RatioGenerator(voProductionData)
+	laArray = Prod_Land.RatioReplace(laArray, "airship", 0.25)
+	
+	return laArray
+end
+function P.NavalRatio(voProductionData)
+	local laArray = Prod_Sea.RatioGenerator(voProductionData)
+	laArray = Prod_Land.RatioReplace(laArray, "submarine", 6)
+
+	return laArray
+end
 function P.DiploScore_RequestLendLease(voDiploScoreObj)
 	if voDiploScoreObj.Target.FactionName == "axis" then
 		local laContinents = {
@@ -580,5 +575,8 @@ function P.Setup_Custom(voCountry)
 	return loCustom
 end
 
+function P.BuildTransportOrEscort(voProductionData, viNeeded, viMaxSerial, vbConvoyOrEscort, viICCost, viIC)
+	return viIC
+end
 
 return AI_GER_FAC
