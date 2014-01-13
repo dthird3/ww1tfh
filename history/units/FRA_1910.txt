@@ -10,6 +10,48 @@ experience = 3
 }
 
 division = {
+name = "81eme Division d'Infanterie territoriale"
+location = 2194 
+
+regiment = {
+type = garrison_brigade
+name = "161eme brigade d'infanterie"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+ 
+regiment = {
+type = garrison_brigade
+name = "2162eme brigade d'infanterie"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+}
+
+division = {
+name = "82eme Division d'Infanterie territoriale"
+location = 2482 
+
+regiment = {
+type = garrison_brigade
+name = "163eme brigade d'infanterie"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+ 
+regiment = {
+type = garrison_brigade
+name = "164eme brigade d'infanterie"
+historical_model = 0
+experience = 5
+is_reserve = yes
+}
+}
+
+division = {
 name = "87eme Division d'Infanterie territoriale"
 location = 2608 
 
@@ -160,6 +202,7 @@ experience = 5
 division = {
 name = "58eme Division d'Infanterie de reserve"
 location = 2613 
+
 regiment = {
 type = infantry_brigade
 name = "115eme brigade d'Infanterie de reserve"
@@ -200,6 +243,7 @@ is_reserve = yes
 division = {
 name = "66eme Division d'Infanterie de reserve"
 location = 2613 
+
 regiment = {
 type = infantry_brigade
 name = "131eme brigade d'Infanterie de reserve"
@@ -515,6 +559,19 @@ historical_model = 1
 experience = 10
 }
 }
+
+division = {
+name = "1re Corps d'Infanterie Reserve"
+location = 2309
+ 
+regiment = {
+type = infantry_brigade
+name = "1re Corps d'Infanterie Reserve"
+historical_model = 1
+experience = 5
+is_reserve = yes
+}
+}
 }
 
 corps = {
@@ -551,6 +608,38 @@ type = artillery_brigade
 name = "2eme brigade d'artillerie"
 historical_model = 0
 experience = 10
+}
+}
+
+division = {
+name = "4eme Division d'Infanterie"
+location = 2425 
+
+regiment = {
+type = infantry_brigade
+name = "7eme brigade d'Infanterie"
+historical_model = 2
+experience = 10
+}
+ 
+regiment = {
+type = infantry_brigade
+name = "8eme brigade d'Infanterie"
+historical_model = 2
+experience = 10
+}
+}
+
+division = {
+name = "2e Corps d'Infanterie reserve"
+location = 2425 
+
+regiment = {
+type = infantry_brigade
+name = "2eme Corps d'Infanterie reserve"
+historical_model = 1
+experience = 5
+is_reserve = yes
 }
 }
 }
@@ -3251,7 +3340,8 @@ name = "Danton"
 historical_model = 12}
 cost = 4
 progress = 0
-duration = 390}
+#duration = 390					
+duration = 190}					# Compensate for cancelled ship production
 
 military_construction = {
 country = FRA
@@ -3260,40 +3350,41 @@ name = "Mirabeau"
 historical_model = 12}
 cost = 4
 progress = 0
-duration = 444}
+#duration = 444
+duration = 344}					# Compensate for cancelled ship production
 
-military_construction = {
-country = FRA
-battleship = {
-name = "Voltaire"
-historical_model = 12}
-cost = 4
-progress = 0
-duration = 450}
+#military_construction = {
+#country = FRA
+#battleship = {
+#name = "Voltaire"
+#historical_model = 12}
+#cost = 4
+#progress = 0
+#duration = 450}
 
-military_construction = {
-country = FRA
-battleship = {
-name = "Diderot"
-historical_model = 12}
-cost = 4
-progress = 0
-duration = 450}
+#military_construction = {
+#country = FRA
+#battleship = {
+#name = "Diderot"
+#historical_model = 12}
+#cost = 4
+#progress = 0
+#duration = 450}
 
-military_construction = {
-country = FRA
-battleship = {
-name = "Condorcet"
-historical_model = 12}
-cost = 4
-progress = 0
-duration = 450}
+#military_construction = {
+#country = FRA
+#battleship = {
+#name = "Condorcet"
+#historical_model = 12}
+#cost = 4
+#progress = 0
+#duration = 450}
 
-military_construction = {
-country = FRA
-battleship = {
-name = "Vergniaud"
-historical_model = 12}
-cost = 4
-progress = 0
-duration = 501}
+#military_construction = {
+#country = FRA
+#battleship = {
+#name = "Vergniaud"
+#historical_model = 12}
+#cost = 4
+#progress = 0
+#duration = 501}
