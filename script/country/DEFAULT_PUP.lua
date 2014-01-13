@@ -1,4 +1,3 @@
-
 -- #######################################
 -- Production Overides the main LUA with country specific ones
 
@@ -83,12 +82,12 @@
 -- Intel_Mission_Ally(voIntelligenceData, voIntelCountry)
 
 local P = {}
-AI_DEFAULT_MIXED = P
+AI_DEFAULT_PUP = P
 
 -- #######################################
 -- TECH RESEARCH
 function P.TechFolderOrder(voTechnologyData)
---Utils.LUA_DEBUGOUT("Default_mixed" .. "TechFolderOrder")
+--Utils.LUA_DEBUGOUT("Default_pup" .. "TechFolderOrder")
 	local laArray = {
 		'infantry_folder', 
 		'industry_folder',
@@ -106,18 +105,18 @@ function P.TechFolderOrder(voTechnologyData)
 	return laArray
 end
 function P.TechList(voTechnologyData)
---Utils.LUA_DEBUGOUT("Default_mixed" .. "TechList")
-	return Support_Tech.TechGenerator(voTechnologyData, 'Mixed')
+--Utils.LUA_DEBUGOUT("Default_pup" .. "TechList")
+	return Support_Tech.TechGenerator(voTechnologyData, 'Land Strict')
 end
 
 -- #######################################
 -- PRODUCTION Section
 function P.ProductionWeights(voProductionData)
---Utils.LUA_DEBUGOUT("Default_mixed" .. "ProductionWeights")
+--Utils.LUA_DEBUGOUT("Default_pup" .. "ProductionWeights")
 	local laArray = {
-		0.35, -- Land
+		0.70, -- Land
 		0.20, -- Air
-		0.35, -- Sea
+		0.0, -- Sea
 		0.10} -- Other
 		
 	-- Check to see if manpower is to low
@@ -126,21 +125,21 @@ function P.ProductionWeights(voProductionData)
 	or voProductionData.Manpower.Total < 10 then
 		laArray = {
 			0.05, -- Land
-			0.30, -- Air
-			0.30, -- Sea
-			0.35} -- Other	
+			0.40, -- Air
+			0.0, -- Sea
+			0.55} -- Other	
 	end
 	
 	return laArray
 end
 function P.LandRatio(voProductionData)
---Utils.LUA_DEBUGOUT("Default_mixed" .. "LandRatio")
+--Utils.LUA_DEBUGOUT("Default_pup" .. "LandRatio")
 	return Prod_Land.RatioGenerator(voProductionData)
 end
 function P.SpecialForcesRatio(voProductionData)
---Utils.LUA_DEBUGOUT("Default_mixed" .. "SpecialForcesRatio")
+--Utils.LUA_DEBUGOUT("Default_pup" .. "SpecialForcesRatio")
 	local laRatio = {
-		50, -- Land
+		40, -- Land
 		1}; -- Special Force Unit
 
 	local laUnits = {
@@ -150,70 +149,53 @@ function P.SpecialForcesRatio(voProductionData)
 	return laRatio, laUnits	
 end
 function P.EliteUnits(voProductionData)
---Utils.LUA_DEBUGOUT("Default_mixed" .. "EliteUnits")
-	local lbAirTran = false --voProductionData.TechStatus:IsUnitAvailable(CSubUnitDataBase.GetSubUnit("transport_plane"))
-	local laUnits = nil
-	
-	--if lbAirTran then
-	--	laUnits = {"paratrooper_brigade"};
-	--end
-	
-	
-	return laUnits	
+--Utils.LUA_DEBUGOUT("Default_pup" .. "EliteUnits")
+	return nil	
 end
 function P.FirePower(voProductionData)
---Utils.LUA_DEBUGOUT("Default_mixed" .. "FirePower")
+--Utils.LUA_DEBUGOUT("Default_pup" .. "FirePower")
 	local laArray = {"infantry_brigade"}
 		
 	return laArray
 end
 function P.AirRatio(voProductionData)
-<<<<<<< .mine
---Utils.LUA_DEBUGOUT("Default_mixed" .. "AirRatio")
+--Utils.LUA_DEBUGOUT("Default_pup" .. "AirRatio")
 	return Prod_Air.RatioGenerator(voProductionData)
-=======
-	local laArray = {
-		interceptor = 6,
-		tactical_bomber = 3,
-		scout = 3};
-	
-	return laArray
->>>>>>> .r204
 end
 function P.RocketRatio(voProductionData)
---Utils.LUA_DEBUGOUT("Default_mixed" .. "RocketRatio")
+--Utils.LUA_DEBUGOUT("Default_pup" .. "RocketRatio")
 	local laArray = {
-		10, -- Air
-		1} -- Bomb/Rockety
+		0, -- Air
+		0} -- Bomb/Rockety
 	
 	return laArray
 end
 function P.NavalRatio(voProductionData)
---Utils.LUA_DEBUGOUT("Default_mixed" .. "NavalRatio")
+--Utils.LUA_DEBUGOUT("Default_pup" .. "NavalRatio")
 	return Prod_Sea.RatioGenerator(voProductionData)
 end
 function P.TransportLandRatio(voProductionData)
---Utils.LUA_DEBUGOUT("Default_mixed" .. "TransportLandRatio")
+--Utils.LUA_DEBUGOUT("Default_pup" .. "TransportLandRatio")
 	local laArray = {
-		10, -- Land
-		1,  -- transport
+		0, -- Land
+		0,  -- transport
 		0}  -- invasion craft
 
   
 	return laArray
 end
 function P.ConvoyRatio(voProductionData)
---Utils.LUA_DEBUGOUT("Default_mixed" .. "ConvoyRatio")
+--Utils.LUA_DEBUGOUT("Default_pup" .. "ConvoyRatio")
 	local laArray = {
-		5, -- Percentage extra (adds to 100 percent so if you put 10 it will make it 110% of needed amount)
-		10, -- If Percentage extra is less than this it will force it up to the amount entered
-		20, -- If Percentage extra is greater than this it will force it down to this
-		5} -- Escort to Convoy Ratio (Number indicates how many convoys needed to build 1 escort)
-  
+		0, -- Percentage extra (adds to 100 percent so if you put 10 it will make it 110% of needed amount)
+		5, -- If Percentage extra is less than this it will force it up to the amount entered
+		10, -- If Percentage extra is greater than this it will force it down to this
+		5} -- Escort to Convoy Ratio
+
 	return laArray
 end
 function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData, viUnitQuantity)
---Utils.LUA_DEBUGOUT("Default_mixed" .. "Build_infantry_brigade")
+--Utils.LUA_DEBUGOUT("Default_pup" .. "Build_infantry_brigade")
 	local lsContinent = tostring(voProductionData.Country:GetActingCapitalLocation():GetContinent():GetTag())
 	
 	-- If in Asia remove armor cars
@@ -226,5 +208,25 @@ function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData
 
 	return Prod_Units.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, nil)
 end
+function P.Buildings(voProductionData)
+--Utils.LUA_DEBUGOUT("Buildings")
+	local loProdBuilding = {
+		UseRandom = false,
+		Buildings = {
+			underground = nil,
+			radar_station = nil,
+			rocket_test = nil,
+			coastal_fort = nil,
+			land_fort = nil,
+			anti_air = nil,
+			industry = nil,
+			nuclear_reactor = nil,
+			air_base = nil,
+			naval_base = nil
+		}
+	}
+	
+	return loProdBuilding
+end
 
-return AI_DEFAULT_MIXED
+return AI_DEFAULT_PUP

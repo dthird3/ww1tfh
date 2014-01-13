@@ -1,6 +1,14 @@
+-----------------------------------------------------------
+-- LUA Hearts of Iron 3 Utilities File
+-- Created By: Lothos
+-- Modified By: Lothos
+-- Date Last Modified: 12/22/2013
+-----------------------------------------------------------
+
 local P = {}
 Utils = P
 
+-- Dumps the passed text into the lua_output.txt file in the main TFH folder
 function P.LUA_DEBUGOUT(s)
 	-- Uncomment to see debug logging
 	local f = io.open("lua_output.txt", "a")
@@ -8,83 +16,9 @@ function P.LUA_DEBUGOUT(s)
 	f:close()
 end
 
------------------------------------------------------------------------------
--- calls specified function in country specific AI module if it exists
---
--- tag: country tag to load library for
--- funName: name of function to call if exists
--- currentScore - current score, returned if no module found
--- rest of args are passed to resolved funName and currentScore appended.
------------------------------------------------------------------------------
-function P.CallScoredCountryAI(tag, funName, currentScore, ...)
-	local funRef = P.HasCountryAIFunction(tag, funName)
-	if funRef then
-		return funRef(currentScore, ...)
-	end
-	return currentScore
-end
-
--- voScoreObj always assumes a Score field exists in the object
-function P.CallGetScoreAI(tag, funName, voScoreObj)
-	local funRef = P.HasCountryAIFunction(tag, funName)
-	if funRef then
-		return funRef(voScoreObj)
-	else
-		return voScoreObj.Score
-	end
-end
-
-function P.CallCountryAI(tag, funName, ...)
-	local funRef = P.HasCountryAIFunction(tag, funName)
-	if funRef then
-		return funRef(...)
-	end
-end
-
--- returns function ref if one exists, otherwise null
-function P.HasCountryAIFunction(tag, funName)
-	local countryModule = _G['AI_' .. tostring(tag)]
-	if countryModule then
-		local funRef = countryModule[funName]
-		return funRef
-	end
-	return nil
-end
-
--- Returns the Function Reference you are trying to call
-function P.GetFunctionReference(voMinisterTag, vbIsNaval, vsFunName)
-	local loFunRef = P.HasCountryAIFunction(voMinisterTag, vsFunName)
-	if loFunRef then
-		return loFunRef
-	else
-		if vbIsNaval then
-			return P.HasCountryAIFunction("DEFAULT_MIXED", vsFunName)
-		else
-			return P.HasCountryAIFunction("DEFAULT_LAND", vsFunName)
-		end
-	end
-end
-
--- Looks for country specific if none then defaults (function HAS TO exist somewhere if not return nil)
-function P.CallBuildFunction(voMinisterTag, vbIsNaval, vsFunName, ...)
-	local loFunRef = P.GetFunctionReference(voMinisterTag, vbIsNaval, vsFunName)
-
-	if loFunRef then
-		return loFunRef(...)
-	end
-	
-	return nil
-end
-
--- Looks for country specific Function and if found calls it and returns the values
-function P.CallFunction(voMinisterTag, vsFunName, ...)
-	local loFunRef = P.HasCountryAIFunction(voMinisterTag, vsFunName)
-
-	if loFunRef then
-		return loFunRef(...)
-	end
-	
-	return true
+-- Dumps the passed table into the lua_output.txt file in the main TFH folder
+function P.INSPECT_TABLE(...)
+  P.LUA_DEBUGOUT( P.DataDumper(...) .. "\n---" )
 end
 
 -- Organizes an Array so it can be searched on using the items
@@ -98,30 +32,6 @@ function P.Set (list)
 	for _, l in ipairs(list) do set[l] = true end 
 	return set 
 end 
-
-
--- returns list of files in a directory matching pattern
-function P.ScanDir(dirname, pattern )
-	local callit = os.tmpname()
-	os.execute("dir /A-D /B "..dirname .. " >"..callit)
-	local f = io.open(callit,"r")
-	local rv = f:read("*all")
-	f:close()
-	os.remove(callit)
-
-	tabby = {}
-	local from  = 1
-	local delim_from, delim_to = string.find( rv, "\n", from  )
-	while delim_from do
-		local subs = string.sub( rv, from , delim_from-1 )
-		if string.match(subs, pattern) then
-			table.insert( tabby, subs )
-		end
-		from  = delim_to + 1
-		delim_from, delim_to = string.find( rv, "\n", from  )
-	end
-	return tabby
-end
 
 -- Rounds a number greated than 0.5 high less than low
 function P.Round(viNumber)
@@ -389,8 +299,5 @@ function P.DataDumper(value, varname, fastmode, ident)
 end
 
 
-function P.INSPECT_TABLE(...)
-  P.LUA_DEBUGOUT( P.DataDumper(...) .. "\n---" )
-end
 
 return Utils

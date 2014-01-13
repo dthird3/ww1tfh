@@ -4,96 +4,79 @@
 -----------------------------------------------------------
 
 -- set up path
-package.path = package.path .. ";script\\?.lua;script\\country\\?.lua"
 package.path = package.path .. ";common\\?.lua"
-
+package.path = package.path .. ";tfh\\mod\\ww1tfh\\script\\?.lua"
+package.path = package.path .. ";tfh\\mod\\ww1tfh\\script\\country\\?.lua"
+package.path = package.path .. ";tfh\\mod\\ww1tfh\\script\\diplomacy\\?.lua"
+package.path = package.path .. ";tfh\\mod\\ww1tfh\\script\\intelligence\\?.lua"
+package.path = package.path .. ";tfh\\mod\\ww1tfh\\script\\politics\\?.lua"
+package.path = package.path .. ";tfh\\mod\\ww1tfh\\script\\production\\?.lua"
+package.path = package.path .. ";tfh\\mod\\ww1tfh\\script\\utilities\\?.lua"
 --require('hoi') -- already imported by game, contains all exported classes
-require('utils')
+
+-- Utilities Folder
+require('utilities')
+require('support_country')
+require('support_functions')
+
+-- Main Folder Files
+require('country')
+require('foreign_minister')
+require('intelligence_minister')
+require('politics_minister')
+require('production_minister')
+require('slider')
+require('tech_minister')
+require('trade')
+require('globals')
+
+-- Common Folder
 require('defines')
-require('ai_country')
-require('ai_foreign_minister')
-require('ai_intelligence_minister')
-require('ai_politics_minister')
-require('ai_production_minister')
-require('ai_support_functions')
-require('ai_tech_minister')
-require('ai_trade')
-require('ai_license')
+
+-- Production Folder
+require('buildings')
+require('land')
+require('air')
+require('sea')
+require('elite')
+require('units')
+require('convoy')
+
+-- Diplomacy Folder
+require('war')
+require('alignment')
+require('influence')
+require('embargo')
+require('call_ally')
+require('nap')
+require('allow_debt')
+require('invite_faction')
+require('guarantee')
+require('military_access')
+require('alliance')
+require('lend_lease')
+require('license')
+require('peace')
+require('exp_forces')
+
+-- Politics Folder
+require('mobilization')
+require('liberation')
+require('puppet')
+require('change_ministers')
+require('laws')
+
+-- Intelligence Folder
+require('abroad')
+require('home')
 
 -- Default Files
+require('DEFAULT_GIE')
+require('DEFAULT_PUP')
 require('DEFAULT_LAND')
 require('DEFAULT_MIXED')
 
 -- load country specific AI modules.
 -- Majors
-require('AUH')
-require('ENG')
-require('FRA')
 require('GER')
-require('ITA')
-require('JAP')
-require('RUS')
-require('SOV')
-require('TUR')
-require('USA')
-require('WHR')
-
--- Minors (Alphabetized)
-require('ARG')
-require('AST')
-require('BEL')
-require('BOL')
-require('BRA')
-require('BUL')
-require('CAN')
-require('CGX')
-require('CHC')
-require('CHI')
-require('CHL')
-require('COL')
-require('COS')
-require('CSX')
-require('CXB')
-require('CYN')
-require('DEN')
-require('DOM')
-require('ECU')
-require('FIN')
-require('GRE')
-require('GUA')
-require('HAI')
-require('HJZ')
-require('HOL')
-require('HON')
-require('HUN')
-require('LIB')
-require('LUX')
-require('MAN')
-require('MEN')
-require('MEX')
-require('NIC')
-require('NOR')
-require('NZL')
-require('OMN')
-require('PAN')
-require('PAR')
-require('PER')
-require('POL')
-require('POR')
-require('PRU')
-require('QIN')
-require('ROM')
-require('SAF')
-require('SAL')
-require('SCH')
-require('SER')
-require('SIA')
-require('SIK')
-require('SPA')
-require('SPR')
-require('SWE')
-require('TIB')
-require('URU')
-require('VEN')
-require('VIC')
-require('YUG')
+require('GER_FAC')
