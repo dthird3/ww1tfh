@@ -167,18 +167,12 @@ function P.FirePower(voProductionData)
 		
 	return laArray
 end
+
+
+
 function P.AirRatio(voProductionData)
-<<<<<<< .mine
 --Utils.LUA_DEBUGOUT("Default_mixed" .. "AirRatio")
 	return Prod_Air.RatioGenerator(voProductionData)
-=======
-	local laArray = {
-		interceptor = 6,
-		tactical_bomber = 3,
-		scout = 3};
-	
-	return laArray
->>>>>>> .r204
 end
 function P.RocketRatio(voProductionData)
 --Utils.LUA_DEBUGOUT("Default_mixed" .. "RocketRatio")
