@@ -1,5 +1,4 @@
-
- #### ITALY OTTO WAR  ####
+#### ITALY OTTO WAR  ####
 
 country_event = {
 
@@ -31,17 +30,37 @@ country_event = {
 			ITA = { end_war = YEM }
 			ITA = { non_aggression_pact = YEM }
 			TUR = { set_country_flag = turkey_disorg }
+			TUR = { country_event = 100304 }				
 		}
-																# Create extra OOB for Libyan 20,000 volunteers to support Ottomans 
 }
 
+# Locally raised Libyan (20,000 Arabs) volunteers to support Ottomans 
+country_event = {											
+
+		id = 100304
+		
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+
+		title = "ITAE1"
+		desc = "desc_ITAE1"
+		picture = "ottoman_volunteers" 
+
+		option = {
+			name = "opta_TURE1a"
+			ai_chance = { factor = 100 }
+			TUR = { load_oob = "Libyan.txt" }
+			5484 = {supplies = 2000}
+			5511 = {supplies = 2000}
+		}
+}
 
 country_event = {
 
 		id = 100114
 
 		major = yes
-		
 		
 		is_triggered_only = yes
 		
@@ -70,7 +89,6 @@ country_event = {
 			TUR = { military_access = GRE }  
 			TUR = { military_access = AUH }  
 		}
-	
 }
 
 country_event = {
@@ -78,7 +96,6 @@ country_event = {
 		id = 100303
 
 		major = yes
-		
 		
 		is_triggered_only = yes
 		
@@ -105,8 +122,8 @@ country_event = {
 			TUR = { military_access = AUH }  
 			ITA = { military_access = AUH }  
 		}
-	
 }
+
 country_event = {
 
 		id = 100301
@@ -149,5 +166,4 @@ country_event = {
 			TUR = { end_military_access = AUH } 
 			ITA = { end_military_access = AUH }
 		}
-	
 }
