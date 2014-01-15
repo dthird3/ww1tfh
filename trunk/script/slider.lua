@@ -136,15 +136,26 @@ function BalanceProductionSliders(voAI, voCountry, viPrioSelected, vLendLease, v
 		
 		-- If the total needed for Upgrading exceedes the total amount available between
 		--   Production and Upgrades then divide the number in half so something gets produced.
-		if (ProdSliders.Slider.Upgrade.Ori > liProdUpgradeTotalPercentage)
-		or (ProdSliders.Slider.Upgrade.Ori > (liProdUpgradeTotalPercentage / 2)) then
-			ProdSliders.Slider.Upgrade.New = (liProdUpgradeTotalPercentage / 2)
-			ProdSliders.Slider.Production.New = (liProdUpgradeTotalPercentage / 2)
-
-		-- Upgrades is covered put everything extra into Production
+		if ProdSliders.IsAtWar or ProdSliders.Year >= 1914 then
+			if (ProdSliders.Slider.Upgrade.Ori > liProdUpgradeTotalPercentage)
+			or (ProdSliders.Slider.Upgrade.Ori > (liProdUpgradeTotalPercentage * 0.75)) then
+					ProdSliders.Slider.Upgrade.New = (liProdUpgradeTotalPercentage * 0.75)
+					ProdSliders.Slider.Production.New = (liProdUpgradeTotalPercentage * 0.25)
+			-- Upgrades is covered put everything extra into Production
+			else
+				ProdSliders.Slider.Upgrade.New = ProdSliders.Slider.Upgrade.Ori
+				ProdSliders.Slider.Production.New = liProdUpgradeTotalPercentage - ProdSliders.Slider.Upgrade.Ori
+			end
 		else
-			ProdSliders.Slider.Upgrade.New = ProdSliders.Slider.Upgrade.Ori
-			ProdSliders.Slider.Production.New = liProdUpgradeTotalPercentage - ProdSliders.Slider.Upgrade.Ori
+			if (ProdSliders.Slider.Upgrade.Ori > liProdUpgradeTotalPercentage)
+			or (ProdSliders.Slider.Upgrade.Ori > (liProdUpgradeTotalPercentage * 0.25)) then
+					ProdSliders.Slider.Upgrade.New = (liProdUpgradeTotalPercentage * 0.25)
+					ProdSliders.Slider.Production.New = (liProdUpgradeTotalPercentage * 0.75)
+			-- Upgrades is covered put everything extra into Production
+			else
+				ProdSliders.Slider.Upgrade.New = ProdSliders.Slider.Upgrade.Ori
+				ProdSliders.Slider.Production.New = liProdUpgradeTotalPercentage - ProdSliders.Slider.Upgrade.Ori
+			end
 		end
 	else
 		-- We have some dessent so put extra IC to lower it
