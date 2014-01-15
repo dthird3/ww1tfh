@@ -1273,8 +1273,212 @@ TechRules = {
 		Chk1 = { Priority = 50, Leadership = 15, IC = 125, Focus = "Sea" },
 		Chk2 = { Priority = 45, Leadership = 15, IC = 125, Focus = "Mixed" },
 		Chk3 = { Ignore = true }
-	}
+	},
 
+	
+	
+	-- other techs
+cavalry_smallarms = {
+Chk1 = { Ignore = true }
+},
+cavalry_support = {
+Chk1 = { Ignore = true }
+},
+cavalry_guns = {
+Chk1 = { Ignore = true }
+},
+cavalry_at = {
+Chk1 = { Ignore = true }
+},
+militia_smallarms = {
+Chk1 = { Ignore = true }
+},
+militia_support = {
+Chk1 = { Ignore = true }
+},
+militia_guns = {
+Chk1 = { Ignore = true }
+},
+militia_at = {
+Chk1 = { Ignore = true }
+},
+infantry_activation = {
+Chk1 = { Priority = 100, Leadership = 0, IC = 0 }
+},
+smallarms_technology = {
+Chk1 = { Priority = 100, Leadership = 0, IC = 0 }
+},
+infantry_support = {
+Chk1 = { Priority = 100, Leadership = 0, IC = 0 }
+},
+infantry_guns = {
+Chk1 = { Priority = 100, Leadership = 0, IC = 0 }
+},
+infantry_at = {
+Chk1 = { Priority = 100, Leadership = 0, IC = 0 }
+},
+imporved_police_brigade = {
+Chk1 = { Ignore = true }
+},
+civilian_aviation = {
+Chk1 = { Priority = 60, Leadership = 5, IC = 0 }
+},
+air_launched_torpedo = {
+Chk1 = { Priority = 60, Leadership = 5, IC = 0 }
+},
+small_bomb = {
+Chk1 = { Priority = 60, Leadership = 5, IC = 0 }
+},
+single_engine_aircraft_armament = {
+Chk1 = { Priority = 60, Leadership = 5, IC = 0 }
+},
+aeroengine = {
+Chk1 = { Priority = 60, Leadership = 5, IC = 0 }
+},
+medium_bomb = {
+Chk1 = { Priority = 60, Leadership = 5, IC = 0 }
+},
+lighttank_gun = {
+Chk1 = { Priority = 75, Leadership = 10, IC = 80 }
+},
+lighttank_engine = {
+Chk1 = { Priority = 75, Leadership = 10, IC = 80 }
+},
+lighttank_armour = {
+Chk1 = { Priority = 75, Leadership = 10, IC = 80 }
+},
+lighttank_reliability = {
+Chk1 = { Priority = 75, Leadership = 10, IC = 80 }
+},
+at_brigade = {
+Chk1 = { Priority = 40, Leadership = 5, IC = 0 }
+},
+aa_brigade = {
+Chk1 = { Priority = 20, Leadership = 5, IC = 0 }
+},
+art_brigade = {
+Chk1 = { Priority = 750, Leadership = 5, IC = 0 }
+},
+art_barrell_ammo = {
+Chk1 = { Priority = 750, Leadership = 5, IC = 0 }
+},
+art_barrell = {
+Chk1 = { Priority = 750, Leadership = 5, IC = 0 }
+},
+art_howitzer = {
+Chk1 = { Priority = 750, Leadership = 5, IC = 0 }
+},
+art_carriage_sights = {
+Chk1 = { Priority = 750, Leadership = 5, IC = 0 }
+},
+at_barrell_sights = {
+Chk1 = { Priority = 40, Leadership = 5, IC = 0 }
+},
+at_ammo_muzzel = {
+Chk1 = { Priority = 40, Leadership = 5, IC = 0 }
+},
+aa_barrell_ammo = {
+Chk1 = { Priority = 20, Leadership = 5, IC = 0 }
+},
+aa_carriage_sights = {
+Chk1 = { Priority = 20, Leadership = 5, IC = 0 }
+},
+heavy_artillery_development = {
+Chk1 = { Priority = 55, Leadership = 8, IC = 50 }
+},
+hart_barrell_ammo = {
+Chk1 = { Priority = 55, Leadership = 8, IC = 50 }
+},
+hart_barrell = {
+Chk1 = { Priority = 55, Leadership = 8, IC = 50 }
+},
+hart_super = {
+Chk1 = { Priority = 55, Leadership = 8, IC = 50 }
+},
+hart_carriage_sights = {
+Chk1 = { Priority = 55, Leadership = 8, IC = 50 }
+},
+combat_engineering = {
+Chk1 = { Priority = 55, Leadership = 8, IC = 50 }
+},
+rolling_barrage = {
+Chk1 = { Priority = 55, Leadership = 5, IC = 0 }
+},
+protectedcruiser_technology = {
+Chk1 = { Ignore = true }
+},
+protectedcruiser_armament = {
+Chk1 = { Ignore = true }
+},
+protectedcruiser_antiaircraft = {
+Chk1 = { Ignore = true }
+},
+protectedcruiser_engine = {
+Chk1 = { Ignore = true }
+},
+protectedcruiser_armour = {
+Chk1 = { Ignore = true }
+},
+battlecruiser_antiaircraft = {
+Chk1 = { Ignore = true }
+},
+battlecruiser_engine = {
+Chk1 = { Ignore = true }
+},
+battlecruiser_armour = {
+Chk1 = { Ignore = true }
+},
+battleship_antiaircraft = {
+Chk1 = { Ignore = true }
+},
+battleship_engine = {
+Chk1 = { Ignore = true }
+},
+battleship_armour = {
+Chk1 = { Ignore = true }
+},
+battleship_armament = {
+Chk1 = { Ignore = true }
+},
+poison_gas = {
+Chk1 = { Priority = 35, Leadership = 10, IC = 80 }
+},
+poison_gas_cylinders = {
+Chk1 = { Priority = 35, Leadership = 10, IC = 80 }
+},
+poison_gas_shells = {
+Chk1 = { Priority = 35, Leadership = 10, IC = 80 }
+},
+submarine_engineering_research = {
+Chk1 = { Ignore = true }
+},
+aeronautic_engineering_research = {
+Chk1 = { Ignore = true }
+},
+chemical_engineering_research = {
+Chk1 = { Ignore = true }
+},
+mechanicalengineering_research = {
+Chk1 = { Ignore = true }
+},
+automotive_research = {
+Chk1 = { Ignore = true }
+},
+artillery_research = {
+Chk1 = { Ignore = true }
+},
+mobile_research = {
+Chk1 = { Ignore = true }
+},
+militia_research = {
+Chk1 = { Ignore = true }
+},
+infantry_research = {
+Chk1 = { Ignore = true }
+},
+airship_research = {
+Chk1 = { Ignore = true }
+}
 
 	-- Secret Weapons
 	-- #########################

@@ -426,6 +426,8 @@ function P.TechGenerator(voTData, vsFocus)
 	for k, v in pairs(TechRules) do -- Located in globals.lua
 		for x, y in pairs(v) do
 			if not(y.Ignore) then
+				--Utils.LUA_DEBUGOUT("TechGenerator, v: " .. tostring(v) .. "y.Leadership: " .. tostring(y.Leadership).."y.IC: " .. tostring(y.IC) )
+				--Utils.LUA_DEBUGOUT("TechGenerator" .. "voTData.TotalLeadership: " .. tostring(voTData.TotalLeadership).."voTData.IcOBJ.IC: " .. tostring(voTData.IcOBJ.IC) )
 				if y.Leadership <= voTData.TotalLeadership and y.IC <= voTData.IcOBJ.IC then
 					local lbAddTech = true
 
@@ -485,6 +487,7 @@ function P.TechGenerator(voTData, vsFocus)
 						end
 					end
 				end
+				--Utils.LUA_DEBUGOUT("OK")
 			else
 				-- Focus Check
 				if y.Focus ~= nil then
@@ -499,7 +502,7 @@ function P.TechGenerator(voTData, vsFocus)
 			end
 		end
 	end
-	
+	--Utils.LUA_DEBUGOUT("OK")
 	return laPreferTech
 end
 
