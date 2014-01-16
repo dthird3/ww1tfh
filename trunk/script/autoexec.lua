@@ -79,3 +79,4 @@ require('DEFAULT_MIXED')
 -- load country specific AI modules.
 -- Majors
 require('GER')
+require('AUH')
