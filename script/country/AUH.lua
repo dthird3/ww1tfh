@@ -44,12 +44,43 @@ end
 
 -- #######################################
 -- PRODUCTION Section
+
+function P.SliderWeights(voProdSliders)
+		--PriorityOrder = {
+			--[0] = { 'Consumer', 'Supply', 'LendLease', 'Reinforce', 'Production', 'Upgrade' },
+			--[1] = { 'Consumer', 'Supply', 'LendLease', 'Production', 'Reinforce', 'Upgrade' },
+			--[2] = { 'Consumer', 'Supply', 'LendLease', 'Upgrade', 'Reinforce', 'Production' },
+			--[3] = { 'Consumer', 'Supply', 'LendLease', 'Reinforce', 'Upgrade', 'Production' },
+			--[4] = { 'Consumer', 'Reinforce', 'Supply', 'LendLease', 'Production', 'Upgrade' }
+		--},
+	
+	local laSliders = voProdSliders.PrioSelected.Ori
+
+	if voProdSliders.HasReinforceBonus then
+		laSliders = 4
+	elseif voProdSliders.Year >= 1914 or voProdSliders.IsAtWar or ( voProdSliders.Year == 1913 and voProdSliders.Month >= 7 ) then
+		laSliders = 0
+	else
+		laSliders = 1
+	end
+
+	return laSliders 
+end
+
+
 function P.ProductionWeights(voProductionData)
 	local laArray = {
-		0.80, -- Land
+		0.65, -- Land
 		0.10, -- Air
 		0.05, -- Sea
-		0.10} -- Other
+		0.20} -- Other
+	if voProductionData.IsAtWar then
+		laArray = {
+			0.80, -- Land
+			0.10, -- Air
+			0.05, -- Sea
+			0.05} -- Other
+	end
 		
 	-- Check to see if manpower is to low
 	-- More than 20 brigades build stuff that does not use manpower

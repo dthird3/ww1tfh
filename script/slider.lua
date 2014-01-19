@@ -44,7 +44,8 @@ function BalanceProductionSliders(voAI, voCountry, viPrioSelected, vLendLease, v
 		},
 		Supply = {
 			Pool = nil
-		}
+		},
+		HasReinforceBonus = nil
 	}
 	
 	ProdSliders.Name = tostring(ProdSliders.Tag)
@@ -52,13 +53,24 @@ function BalanceProductionSliders(voAI, voCountry, viPrioSelected, vLendLease, v
 	ProdSliders.IsAtWar = ProdSliders.Country:IsAtWar()
 	ProdSliders.Dissent = ProdSliders.Country:GetDissent():Get()
 	ProdSliders.Supply.Pool = ProdSliders.Country:GetPool():Get( CGoodsPool._SUPPLIES_ ):Get()
+	ProdSliders.HasReinforceBonus = vbHasReinforceBonus
 	
 	-- If country just started mobilizing (or gets bonus reinforcements for some other reason), boost reinforcements
-	if ( ProdSliders.PrioSelected.Ori == 0 or ProdSliders.PrioSelected.Ori == 3 )then
-		if vbHasReinforceBonus then
-			ProdSliders.PrioSelected.New = 4
+	--if ( ProdSliders.PrioSelected.Ori == 0 or ProdSliders.PrioSelected.Ori == 3 )then
+		--if vbHasReinforceBonus then
+			--ProdSliders.PrioSelected.New = 4
+		--end
+	--end
+	local loFunRef = Support_Country.Get_Function(ProdSliders, "SliderWeights")
+	
+	if loFunRef then
+		local laSliderPassed = loFunRef(ProdSliders)
+		
+		if laSliderPassed then
+			ProdSliders.PrioSelected.New = laSliderPassed
 		end
 	end
+	
 	
 	-- If Dissent is present add 10% to the Production of Consumer Goods
 	if ProdSliders.Dissent > 0.01 then -- fight dissent 
@@ -123,7 +135,9 @@ function BalanceProductionSliders(voAI, voCountry, viPrioSelected, vLendLease, v
 	
 	-- Normalize the distribution
 	for i = 1, 6, 1 do
+		--Utils.LUA_DEBUGOUT("priority: ".. tostring(ProdSliders.PrioSelected.New))
 		if liLeftOver >= ProdSliders.Slider[ProdSliders.PriorityOrder[ProdSliders.PrioSelected.New][i]].New then
+		--Utils.LUA_DEBUGOUT("OK")
 			liLeftOver = liLeftOver - ProdSliders.Slider[ProdSliders.PriorityOrder[ProdSliders.PrioSelected.New][i]].New
 		else
 			ProdSliders.Slider[ProdSliders.PriorityOrder[ProdSliders.PrioSelected.New][i]].New = liLeftOver
@@ -131,31 +145,24 @@ function BalanceProductionSliders(voAI, voCountry, viPrioSelected, vLendLease, v
 		end
 	end
 	
-	if ProdSliders.PrioSelected.Ori == 0 then
+	if ProdSliders.PrioSelected.New == 1 then
+			ProdSliders.Slider.Production.New = ProdSliders.Slider.Production.New + ProdSliders.Slider.Upgrade.New
+			ProdSliders.Slider.Upgrade.New = 0
+	end
+	
+	if ProdSliders.PrioSelected.New == 0 then
 		local liProdUpgradeTotalPercentage = ProdSliders.Slider.Upgrade.New + ProdSliders.Slider.Production.New + liLeftOver
 		
 		-- If the total needed for Upgrading exceedes the total amount available between
 		--   Production and Upgrades then divide the number in half so something gets produced.
-		if ProdSliders.IsAtWar or ProdSliders.Year >= 1914 then
-			if (ProdSliders.Slider.Upgrade.Ori > liProdUpgradeTotalPercentage)
-			or (ProdSliders.Slider.Upgrade.Ori > (liProdUpgradeTotalPercentage * 0.75)) then
-					ProdSliders.Slider.Upgrade.New = (liProdUpgradeTotalPercentage * 0.75)
-					ProdSliders.Slider.Production.New = (liProdUpgradeTotalPercentage * 0.25)
-			-- Upgrades is covered put everything extra into Production
-			else
-				ProdSliders.Slider.Upgrade.New = ProdSliders.Slider.Upgrade.Ori
-				ProdSliders.Slider.Production.New = liProdUpgradeTotalPercentage - ProdSliders.Slider.Upgrade.Ori
-			end
+		if (ProdSliders.Slider.Upgrade.Ori > liProdUpgradeTotalPercentage)
+		or (ProdSliders.Slider.Upgrade.Ori > (liProdUpgradeTotalPercentage * 0.75)) then
+				ProdSliders.Slider.Upgrade.New = (liProdUpgradeTotalPercentage * 0.75)
+				ProdSliders.Slider.Production.New = (liProdUpgradeTotalPercentage * 0.25)
+		-- Upgrades is covered put everything extra into Production
 		else
-			if (ProdSliders.Slider.Upgrade.Ori > liProdUpgradeTotalPercentage)
-			or (ProdSliders.Slider.Upgrade.Ori > (liProdUpgradeTotalPercentage * 0.25)) then
-					ProdSliders.Slider.Upgrade.New = (liProdUpgradeTotalPercentage * 0.25)
-					ProdSliders.Slider.Production.New = (liProdUpgradeTotalPercentage * 0.75)
-			-- Upgrades is covered put everything extra into Production
-			else
-				ProdSliders.Slider.Upgrade.New = ProdSliders.Slider.Upgrade.Ori
-				ProdSliders.Slider.Production.New = liProdUpgradeTotalPercentage - ProdSliders.Slider.Upgrade.Ori
-			end
+			ProdSliders.Slider.Upgrade.New = ProdSliders.Slider.Upgrade.Ori
+			ProdSliders.Slider.Production.New = liProdUpgradeTotalPercentage - ProdSliders.Slider.Upgrade.Ori
 		end
 	else
 		-- We have some dessent so put extra IC to lower it
