@@ -1279,28 +1279,28 @@ TechRules = {
 	
 	-- other techs
 cavalry_smallarms = {
-Chk1 = { Ignore = true }
+Chk1 = { Priority = 5, Leadership = 0, IC = 0 }
 },
 cavalry_support = {
-Chk1 = { Ignore = true }
+Chk1 = { Priority = 5, Leadership = 0, IC = 0 }
 },
 cavalry_guns = {
-Chk1 = { Ignore = true }
+Chk1 = { Priority = 5, Leadership = 0, IC = 0 }
 },
 cavalry_at = {
-Chk1 = { Ignore = true }
+Chk1 = { Priority = 5, Leadership = 0, IC = 0 }
 },
 militia_smallarms = {
-Chk1 = { Ignore = true }
+Chk1 = { Priority = 5, Leadership = 0, IC = 0 }
 },
 militia_support = {
-Chk1 = { Ignore = true }
+Chk1 = { Priority = 5, Leadership = 0, IC = 0 }
 },
 militia_guns = {
-Chk1 = { Ignore = true }
+Chk1 = { Priority = 5, Leadership = 0, IC = 0 }
 },
 militia_at = {
-Chk1 = { Ignore = true }
+Chk1 = { Priority = 5, Leadership = 0, IC = 0 }
 },
 infantry_activation = {
 Chk1 = { Priority = 100, Leadership = 0, IC = 0 }

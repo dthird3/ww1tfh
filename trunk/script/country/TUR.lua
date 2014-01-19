@@ -6,7 +6,7 @@
 -----------------------------------------------------------
 
 local P = {}
-AI_GER = P
+AI_TUR = P
 
 -- #######################################
 -- TRADE Weights
@@ -15,45 +15,35 @@ function P.TradeWeights(voResourceData)
 	
 		METAL = {
 			Buffer = 3, 			-- Amount extra to keep abouve our needs
-			BufferSaleCap = 50000, 	-- Amount we need in reserve before we sell the resource
-			BufferBuyCap = 40000, 	-- Amount we need before we stop actively buying (existing trades are NOT cancelled)
-			BufferCancelCap = 45000 -- Amount we need before we cancel trades simply because we have to much
+			BufferSaleCap = 40000, 	-- Amount we need in reserve before we sell the resource
+			BufferBuyCap = 8000, 	-- Amount we need before we stop actively buying (existing trades are NOT cancelled)
+			BufferCancelCap = 25000 -- Amount we need before we cancel trades simply because we have to much
 		},
 		RARE_MATERIALS = {
-			Buffer = 5,
-			BufferSaleCap = 95000,
-			BufferBuyCap = 80000,
-			BufferCancelCap = 90000},
+			Buffer = 3,
+			BufferSaleCap = 20000,
+			BufferBuyCap = 5000,
+			BufferCancelCap = 15000},
 		CRUDE_OIL = {
 			Buffer = 1,
-			BufferSaleCap = 40000},
+			BufferSaleCap = 30000},
 		FUEL = {
-			Buffer = 8,
-			BufferSaleCap = 90000}}
+			Buffer = 2,
+			BufferSaleCap = 50000}}
 	
 	return laResouces
 end
 
-
-
 -- #######################################
 -- TECH RESEARCH
 function P.TechList(voTechnologyData)
-	local loPreferTech = Support_Tech.TechGenerator(voTechnologyData, 'Land')
-
-	-- Super High Priority to get regular Tanks fast
-	if loPreferTech['tank_brigade'] then
-		if loPreferTech['tank_brigade'].Priority > 0 then
-			loPreferTech['tank_brigade'].Priority = 1000
-		end
-	end
+	local loPreferTech = Support_Tech.TechGenerator(voTechnologyData, 'Land Strict')
 
 	return loPreferTech
 end
 
 -- #######################################
 -- PRODUCTION Section
-
 
 function P.SliderWeights(voProdSliders)
 		--PriorityOrder = {
@@ -68,7 +58,7 @@ function P.SliderWeights(voProdSliders)
 
 	if voProdSliders.HasReinforceBonus then
 		laSliders = 4
-	elseif voProdSliders.Year >= 1914 or voProdSliders.IsAtWar or ( voProdSliders.Year == 1913 and voProdSliders.Month >= 7 ) then
+	elseif voProdSliders.Year >= 1911 or voProdSliders.IsAtWar then
 		laSliders = 0
 	else
 		laSliders = 1
@@ -80,27 +70,26 @@ end
 
 function P.ProductionWeights(voProductionData)
 	local laArray = {
-		0.55, -- Land
-		0.10, -- Air
-		0.15, -- Sea
-		0.20} -- Other
+		0.90, -- Land
+		0.00, -- Air
+		0.00, -- Sea
+		0.10} -- Other
 	if voProductionData.IsAtWar then
 		laArray = {
-			0.80, -- Land
-			0.10, -- Air
-			0.05, -- Sea
-			0.05} -- Other
+			0.85, -- Land
+			0.05, -- Air
+			0.00, -- Sea
+			0.10} -- Other
 	end
-		
 		
 	-- Check to see if manpower is to low
 	-- More than 20 brigades build stuff that does not use manpower
-	if (voProductionData.Manpower.Total < 500 and voProductionData.Units.Counts.Land > 100)
-	or voProductionData.Manpower.Total < 300 then
+	if (voProductionData.Manpower.Total < 100 and voProductionData.Units.Counts.Land > 60)
+	or voProductionData.Manpower.Total < 50 then
 		laArray = {
 			0.05, -- Land
-			0.30, -- Air
-			0.30, -- Sea
+			0.50, -- Air
+			0.00, -- Sea
 			0.35} -- Other	
 	end
 	
@@ -117,27 +106,15 @@ function P.SpecialForcesRatio(voProductionData)
 end
 function P.EliteUnits(voProductionData)
 	local laUnits = {
-		"waffen_brigade"}
+		"janissary_brigade"}
 	
 	return laUnits	
 end
 function P.FirePower(voProductionData)
 	local laArray = {
-		"waffen_brigade",
-		"armor_brigade"}
+		"janissary_brigade",
+		"bergsjaeger_brigade"}
 		
-	return laArray
-end
-function P.AirRatio(voProductionData)
-	local laArray = Prod_Air.RatioGenerator(voProductionData)
-	laArray = Prod_Land.RatioReplace(laArray, "airship", 0.25)
-	
-	return laArray
-end
-function P.NavalRatio(voProductionData)
-	local laArray = Prod_Sea.RatioGenerator(voProductionData)
-	laArray = Prod_Land.RatioReplace(laArray, "submarine", 6)
-
 	return laArray
 end
 function P.TransportLandRatio(voProductionData)
@@ -152,9 +129,9 @@ function P.TransportLandRatio(voProductionData)
 end
 function P.ConvoyRatio(voProductionData)
 	local laArray = {
-		0, -- Percentage extra (adds to 100 percent so if you put 10 it will make it 110% of needed amount)
-		0, -- If Percentage extra is less than this it will force it up to the amount entered
-		30, -- If Percentage extra is greater than this it will force it down to this
+		5, -- Percentage extra (adds to 100 percent so if you put 10 it will make it 110% of needed amount)
+		5, -- If Percentage extra is less than this it will force it up to the amount entered
+		10, -- If Percentage extra is greater than this it will force it down to this
 		50} -- Escort to Convoy Ratio (Number indicates how many convoys needed to build 1 escort)
   
 	return laArray
@@ -178,48 +155,20 @@ function P.Buildings(voProductionData)
 				PreferMaxLevel = 2,
 				MaxRun = 3,
 				PreferList = {
-					1306, -- Memel
-					1626, -- Danzig
-					1866, -- Torun
-					1924, -- Poznan
-					1980, -- Metz
-					14160, -- Euskirchen
-					1527, -- Konigsberg
-					1570, -- Wilhelmshaven
-					1572, -- Kiel
-					1736, -- Bremen
-					1740, -- Rostock
-					1742, -- Stettin
-					1857, -- Hannover
-					1861, -- Berlin
-					1920, -- Potsdam
-					2027, -- Ludinghausen
-					2085, -- Recklinghausen
-					2093, -- Cottbus
-					2142, -- Dusseldorf
-					2145, -- Kassel
-					2153, -- Breslau
-					2257, -- Koln
-					2371, -- Bitburg
-					2374, -- FrankfurtamMain
-					2433, -- Darmstadt
-					2687, -- Stuttgart
-					2952} -- Munchen
+					4188, -- Trabzon
+					9213, -- Baghdad
+					4503, -- Istanbul
+					5567, -- Jerusalem
+					4619, -- Ankara
+					5299, -- Beirut
+					7332, -- Batman
+					4966} -- Izmir
 			},
 			anti_air = {
 				Build = (voProductionData.Year > 1937)
 			},
 			land_fort = {
-				PreferMaxLevel = 2,
-				MaxRun = 3,
-				PreferList = {
-					3150, -- Mulhouse
-					3083, -- Colmar
-					2947, -- selestad
-					2815, -- strasburg
-					2814, -- schirmeck
-					2684, -- sarreguemines
-					2618} -- metz
+				Build = (voProductionData.Year > 1937)
 			}
 		}
 	}
@@ -234,4 +183,4 @@ end
 -- SUPPORT METHODS
 -- Setup_Custom is called from GER_FAC.lua and GER.lua
 
-return AI_GER
+return AI_TUR

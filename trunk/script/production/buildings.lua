@@ -198,7 +198,7 @@ function P.Build(voProductionData, viIC)
 				CapitalOnly = false,
 				CapitalAddPrefer = false,
 				RequireIsOr = true,
-				RequireBuilding = { naval_base = 1, dry_dock = 1 },
+				RequireBuilding = { naval_base = 1 },
 				Terrain = nil,
 				Continent = nil,
 				IsFrontProvince = false,
@@ -219,7 +219,7 @@ function P.Build(voProductionData, viIC)
 				CapitalOnly = false,
 				CapitalAddPrefer = true,
 				RequireIsOr = true,
-				RequireBuilding = { rail_road = 1, industry = 3 },
+				RequireBuilding = { industry = 3 },
 				Terrain = nil,
 				Continent = nil,
 				IsFrontProvince = false,
@@ -493,7 +493,8 @@ function P.GetProvince(loBuilding, voProvinces, voUserdProvinceIDs, voProduction
 											if loBuilding.RequireBuilding then
 												if loBuilding.RequireIsOr then
 													for x, y in pairs(loBuilding.RequireBuilding) do
-														--Utils.LUA_DEBUGOUT("x:" .. tostring(x) .. "y:" .. tostring(y) .. " province " .. tostring(v.ID))
+														--Utils.LUA_DEBUGOUT("x: " .. tostring(x) .. " y: " .. tostring(y) .. " province " .. tostring(v.ID) .. "loBuilding.RequireBuilding[x]: " .. tostring(loBuilding.RequireBuilding[x]))
+														--Utils.LUA_DEBUGOUT("v.Buildings[x].CurrentSize: " .. tostring(v.Buildings[x].CurrentSize))
 														if v.Buildings[x].CurrentSize >= loBuilding.RequireBuilding[x] then
 															--Utils.LUA_DEBUGOUT("OK")
 															lbBuildingCheck = true

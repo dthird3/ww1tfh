@@ -110,8 +110,33 @@ function P.TechList(voTechnologyData)
 	return Support_Tech.TechGenerator(voTechnologyData, 'Mixed')
 end
 
+
 -- #######################################
 -- PRODUCTION Section
+
+
+function P.SliderWeights(voProdSliders)
+		--PriorityOrder = {
+			--[0] = { 'Consumer', 'Supply', 'LendLease', 'Reinforce', 'Production', 'Upgrade' },
+			--[1] = { 'Consumer', 'Supply', 'LendLease', 'Production', 'Reinforce', 'Upgrade' },
+			--[2] = { 'Consumer', 'Supply', 'LendLease', 'Upgrade', 'Reinforce', 'Production' },
+			--[3] = { 'Consumer', 'Supply', 'LendLease', 'Reinforce', 'Upgrade', 'Production' },
+			--[4] = { 'Consumer', 'Reinforce', 'Supply', 'LendLease', 'Production', 'Upgrade' }
+		--},
+	
+	local laSliders = voProdSliders.PrioSelected.Ori
+
+	if voProdSliders.HasReinforceBonus then
+		laSliders = 4
+	elseif voProdSliders.Year >= 1914 or voProdSliders.IsAtWar or ( voProdSliders.Year == 1913 and voProdSliders.Month >= 7 ) then
+		laSliders = 0
+	else
+		laSliders = 1
+	end
+
+	return laSliders 
+end
+
 function P.ProductionWeights(voProductionData)
 --Utils.LUA_DEBUGOUT("Default_mixed" .. "ProductionWeights")
 	local laArray = {
