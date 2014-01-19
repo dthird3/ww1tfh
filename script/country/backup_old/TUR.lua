@@ -132,7 +132,4 @@ function P.ForeignMinister_CallAlly(voForeignMinisterData)
 	
 	return false
 end
-function DiploScore_PeaceAction(voAI, voActorTag, voRecipientTag, voObserverTag, action)
-	return 0
-end
 return AI_TUR
