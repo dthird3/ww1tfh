@@ -179,6 +179,10 @@ function P.Buildings(voProductionData)
 	
 	return loProdBuilding
 end
+function P.ForeignMinister_CallAlly(voForeignMinisterData)
+	
+	return false
+end
 -- #######################################
 -- SUPPORT METHODS
 -- Setup_Custom is called from GER_FAC.lua and GER.lua
