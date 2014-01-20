@@ -80,3 +80,5 @@ require('DEFAULT_MIXED')
 -- Majors
 require('GER')
 require('AUH')
+require('TUR')
+require('RUS')
