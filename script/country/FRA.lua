@@ -6,7 +6,7 @@
 -----------------------------------------------------------
 
 local P = {}
-AI_RUS = P
+AI_FRA = P
 
 -- #######################################
 -- TRADE Weights
@@ -45,8 +45,19 @@ end
 -- #######################################
 -- TECH RESEARCH
 function P.TechList(voTechnologyData)
-
 	local loPreferTech = Support_Tech.TechGenerator(voTechnologyData, 'Land')
+
+	-- Super High Priority to get regular Tanks fast
+	if loPreferTech['lighttank_brigade'] then
+		if loPreferTech['lighttank_brigade'].Priority > 0 then
+			loPreferTech['lighttank_brigade'].Priority = 1000
+		end
+	end
+	if loPreferTech['tank_brigade'] then
+		if loPreferTech['tank_brigade'].Priority > 0 then
+			loPreferTech['tank_brigade'].Priority = 1000
+		end
+	end
 
 	return loPreferTech
 end
@@ -68,7 +79,7 @@ function P.SliderWeights(voProdSliders)
 
 	if voProdSliders.HasReinforceBonus then
 		laSliders = 4
-	elseif voProdSliders.Year >= 1912 or voProdSliders.IsAtWar or ( voProdSliders.Year == 1911 and voProdSliders.Month >= 7 ) then
+	elseif voProdSliders.Year >= 1914 or voProdSliders.IsAtWar or ( voProdSliders.Year == 1913 and voProdSliders.Month >= 7 ) then
 		laSliders = 0
 	else
 		laSliders = 1
@@ -80,9 +91,9 @@ end
 
 function P.ProductionWeights(voProductionData)
 	local laArray = {
-		0.65, -- Land
+		0.55, -- Land
 		0.10, -- Air
-		0.05, -- Sea
+		0.15, -- Sea
 		0.20} -- Other
 	if voProductionData.IsAtWar then
 		laArray = {
@@ -99,8 +110,8 @@ function P.ProductionWeights(voProductionData)
 	or voProductionData.Manpower.Total < 300 then
 		laArray = {
 			0.05, -- Land
-			0.50, -- Air
-			0.10, -- Sea
+			0.30, -- Air
+			0.30, -- Sea
 			0.35} -- Other	
 	end
 	
@@ -117,13 +128,13 @@ function P.SpecialForcesRatio(voProductionData)
 end
 function P.EliteUnits(voProductionData)
 	local laUnits = {
-		"guards_brigade"}
+		"alpins_brigade"}
 	
 	return laUnits	
 end
 function P.FirePower(voProductionData)
 	local laArray = {
-		"guards_brigade",
+		"alpins_brigade",
 		"armor_brigade"}
 		
 	return laArray
@@ -135,14 +146,16 @@ function P.AirRatio(voProductionData)
 end
 function P.NavalRatio(voProductionData)
 	local laArray = Prod_Sea.RatioGenerator(voProductionData)
-	
+	laArray = Prod_Land.RatioReplace(laArray, "coastal_submarine", 0)
+	laArray = Prod_Land.RatioReplace(laArray, "submarine", 0.1)
+	laArray = Prod_Land.RatioReplace(laArray, "longrange_submarine", 0.1)
 
 	return laArray
 end
 function P.TransportLandRatio(voProductionData)
 --Utils.LUA_DEBUGOUT("Default_mixed" .. "TransportLandRatio")
 	local laArray = {
-		500, -- Land
+		100, -- Land
 		1,  -- transport
 		0}  -- invasion craft
 
@@ -151,8 +164,8 @@ function P.TransportLandRatio(voProductionData)
 end
 function P.ConvoyRatio(voProductionData)
 	local laArray = {
-		1, -- Percentage extra (adds to 100 percent so if you put 10 it will make it 110% of needed amount)
-		5, -- If Percentage extra is less than this it will force it up to the amount entered
+		0, -- Percentage extra (adds to 100 percent so if you put 10 it will make it 110% of needed amount)
+		0, -- If Percentage extra is less than this it will force it up to the amount entered
 		30, -- If Percentage extra is greater than this it will force it down to this
 		50} -- Escort to Convoy Ratio (Number indicates how many convoys needed to build 1 escort)
   
@@ -177,10 +190,37 @@ function P.Buildings(voProductionData)
 				PreferMaxLevel = 2,
 				MaxRun = 3,
 				PreferList = {
-					1928, -- Warszawa
-					1986, -- BrestLitovsk
-					1178, -- Riga
-					782} -- Leningrad
+					2309,  -- Lille
+2422,  -- Cherbourg
+2425,  -- Amiens
+2550,  -- Reims
+2605,  -- Quimper
+2613,  -- Paris
+2682,  -- StMihiel
+2683,  -- Nancy
+2746,  -- Troyes
+2812,  -- Neufchateau
+2870,  -- Nantes
+3077,  -- Bourges
+3149,  -- Montbeliard
+3215,  -- Gray
+3351,  -- Besancon
+3479,  -- Bordeaux
+3484,  -- Vichy
+3687,  -- Lyon
+3959,  -- Pau
+3961,  -- Toulouse
+4229,  -- Marseille
+4230,  -- Toulon
+4486,  -- Ajaccio
+5134,  -- Tunis
+5160,  -- Alger
+5292,  -- Oran
+5916,  -- Hanoi
+6236,  -- Saigon
+9741,  -- Dakar
+9968,  -- Abidjan
+					5412} -- Casablanca
 			},
 			anti_air = {
 				Build = (voProductionData.Year > 1937)
@@ -197,27 +237,8 @@ function P.Buildings(voProductionData)
 	
 	return loProdBuilding
 end
-
-function P.ChangeLaw_training_laws(voLawGroup, voCurrentLaw, voPoliticsMinisterData)
-	local lbAtWarGER = voPoliticsMinisterData.Country:GetRelation(CCountryDataBase.GetTag("GER")):HasWar()
-	
-	-- If atwar with Germany check for special conditions on training
-	if lbAtWarGER then
-		local lbControlMoscow = (CCurrentGameState.GetProvince(1409):GetController() == voPoliticsMinisterData.Country:GetCountryTag())
-		
-		-- If its 1943 and we still control Moscow make better trained troops
-		if voPoliticsMinisterData.Year >= 1916 and lbControlMoscow then
-			return false, CLawDataBase.GetLaw(voLawGroup.laws.BASIC_TRAINING) 
-		else
-			return false, CLawDataBase.GetLaw(voLawGroup.laws.MINIMAL_TRAINING)
-		end
-	else
-		return false, CLawDataBase.GetLaw(voLawGroup.laws.MINIMAL_TRAINING)
-	end
-end
-
 -- #######################################
 -- SUPPORT METHODS
 -- Setup_Custom is called from GER_FAC.lua and GER.lua
 
-return AI_RUS
+return AI_FRA
