@@ -1,68 +1,74 @@
+theatre = {
+name = "Hærens Hovedkvarter"
+location = 1482
+regiment = { type = hq_brigade name = "Hærens Hovedkvarter Brigade" historical_model = 0 }
+
 corps = {
 name = "Den Danske Hær"
 location = 1482
 regiment = { type = hq_brigade name = "Den Danske Hær HQ" historical_model = 0 }
 
 division = {
-name = "1. Jydske Division"
+name = "Den Kongelige Livgarde Division"
 location = 1482
 is_reserve = no
 
 regiment = {
 type = infantry_brigade
-experience = 10
-name = "1. Jydske Division1"
+experience = 15
+name = "Kongelige Livgarde and Guard Hussards Regiments"
 historical_model = 2}
 
 regiment = {
 type = infantry_brigade
 experience = 10
-name = "1. Jydske Division2"
-historical_model = 2}
-}
-
-}
-corps = {
-name = "Den Danske Hær"
-location = 1301
-regiment = { type = hq_brigade name = "Den Danske Hær HQ" historical_model = 0 }
-
-division = {
-name = "2. Jydske Division"
-location = 1301
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "2. Jydske Division1"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "2. Jydske Division2"
+name = "2. Brigade "
 historical_model = 2}
 }
 
 division = {
-name = "3. Jydske Division"
+name = "Sikringsstyrken Division"
+location = 1482
+is_reserve = yes
+
+regiment = {
+type = infantry_brigade
+experience = 5
+name = "1. Sikringsstyrken Brigade"
+historical_model = 2}
+}
+
+division = {
+name = "Københavns Amts Skyttekorps"
 location = 1301
+is_reserve = yes
+
+regiment = {
+type = infantry_brigade
+experience = 5
+name = "1. Københavns Brigade"
+historical_model = 2}
+
+regiment = {
+type = infantry_brigade
+experience = 5
+name = "Korps Westenholz"
+historical_model = 2}
+}
+
+division = {
+name = "Dragoons Cavalry Brigade"
+location = 1482
 is_reserve = no
 
 regiment = {
-type = infantry_brigade
+type = cavalry_brigade
 experience = 5
-name = "3. Jydske Division1"
+name = "1/2 Dragoons Regiments"
 historical_model = 2}
+}
+}
 
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "3. Jydske Division2"
-historical_model = 2}
-}
-}
 
 navy = {
 name = "Kongelige Danske Marine"
