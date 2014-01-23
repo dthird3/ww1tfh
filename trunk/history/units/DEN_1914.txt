@@ -1,7 +1,7 @@
 theatre = {
-name = "Copenhagen HQ"
+name = "Hærens Hovedkvarter"
 location = 1482
-regiment = { type = hq_brigade name = "GHQ Brigade" historical_model = 0 }
+regiment = { type = hq_brigade name = "Hærens Hovedkvarter Brigade" historical_model = 0 }
 
 corps = {
 name = "Den Danske Hær"
@@ -9,82 +9,96 @@ location = 1482
 regiment = { type = hq_brigade name = "Den Danske Hær HQ" historical_model = 0 }
 
 division = {
-name = "1. Jydske Division"
+name = "Den Kongelige Livgarde Division"
 location = 1482
 is_reserve = no
+
+regiment = {
+type = infantry_brigade
+experience = 15
+name = "Kongelige Livgarde and Guard Hussards Regiments"
+historical_model = 2}
 
 regiment = {
 type = infantry_brigade
 experience = 10
-name = "1. Jydske Brigade"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "1. Jydske Brigade"
+name = "2. Brigade "
 historical_model = 2}
 }
 
 division = {
-name = "2. Jydske Division"
+name = "Sikringsstyrken Division"
 location = 1482
 is_reserve = no
 
 regiment = {
 type = infantry_brigade
 experience = 5
-name = "2. Jydske Brigade"
+name = "1. Sikringsstyrken Brigade"
 historical_model = 2}
 
 regiment = {
 type = infantry_brigade
 experience = 5
-name = "2. Jydske Brigade"
+name = "2. Sikringsstyrken Brigade"
 historical_model = 2}
 }
 
 division = {
-name = "3. Jydske Division"
+name = "Københavns Amts Skyttekorps"
 location = 1301
-is_reserve = no
+is_reserve = yes
 
 regiment = {
 type = infantry_brigade
 experience = 5
-name = "3. Jydske Brigade"
+name = "1. Københavns Brigade"
 historical_model = 2}
 
 regiment = {
 type = infantry_brigade
 experience = 5
-name = "3. Jydske Brigade"
+name = "Korps Westenholz"
 historical_model = 2}
 }
 
 division = {
-name = "Akademisk Skyttekorps"
+name = "Dragoons Cavalry Brigade"
 location = 1482
-is_reserve = no
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Akademisk Skyttekorps"
-historical_model = 2}
-}
-
-division = {
-name = "1. Cavalry Brigade"
-location = 1301
 is_reserve = no
 
 regiment = {
 type = cavalry_brigade
 experience = 5
-name = "1. Cavalry Brigade"
+name = "1/2 Dragoons Regiments"
 historical_model = 2}
 }
+}
+
+division = {
+name = "Sjællands Hjemmeværn"
+location = 1212
+is_reserve = yes
+
+regiment = {
+type = militia_brigade
+experience = 5
+name = "Sjællands Hjemmeværns"
+historical_model = 1}
+}
+
+division = {
+name = "Jyllands Hjemmeværn"
+location = 1391
+is_reserve = yes
+
+regiment = {
+type = militia_brigade
+experience = 5
+name = "Jyllands Hjemmeværn"
+historical_model = 1}
+}
+
 
 navy = {
 name = "Kongelige Danske Marine"
@@ -105,7 +119,6 @@ name = "Ubaatsflottiljen"
 location = 1482
 base = 1482
 ship = { type = coastal_submarine name = "1. Ubaatsflottiljen" historical_model = 4 experience = 15 }
-}
 }
 }
 
