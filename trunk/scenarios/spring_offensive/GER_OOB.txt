@@ -1,12 +1,12 @@
 theatre = {
-name = "München HQ"
-location = 2952
+name = "SPA GHQ"
+location = 2256
 dig_in = 10.000
 leader = 855080
 
 regiment = {
 type = hq_brigade
-name = "2nd HQ Brigade"
+name = "SPA GHQ Brigade"
 historical_model = 3
 experience = 3
 }
@@ -1009,9 +1009,10 @@ experience = 10
 }
 
 ####################  DUKE ALBRECHT OF WURTTEMBERG'S GROUP OF ARMIES  ###################
-army = {
-name = "B Detachment"
-location = 2620
+
+armygroup = {
+name = "Duke Albrecht's Army Group"
+location = 2685
 dig_in = 10.000
 leader = 855027
 
@@ -1022,22 +1023,22 @@ historical_model = 3
 experience = 0
 }
 
-corps = {
-name = "10. Armeekorps"
-location = 3016
+army = {
+name = "B Detachment"
+location = 2948
 dig_in = 10.000
-leader = 855028
+leader = 855027
 
 regiment = {
 type = hq_brigade
-name = "10. HQ Brigade"
+name = "13th HQ Brigade"
 historical_model = 3
 experience = 0
 }
 
 division = {
 name = "25. Landwehr-Division"
-location = 3083
+location = 3150
 dig_in = 10.000
 leader = 855100
 
@@ -1065,7 +1066,7 @@ experience = 10
 
 division = {
 name = "44. Landwehr-Division"
-location = 3083
+location = 3150
 dig_in = 10.000
 leader = 855106
 
@@ -1093,7 +1094,7 @@ experience = 10
 
 division = {
 name = "22. Reserve Infanterie-Division"
-location = 3150
+location = 3083
 dig_in = 10.000
 leader = 855135
 
@@ -1121,7 +1122,7 @@ experience = 10
 
 division = {
 name = "30. Bavarian Reserve-Division"
-location = 3150
+location = 3083
 dig_in = 10.000
 leader = 855300
 
@@ -1149,7 +1150,7 @@ experience = 10
 
 division = {
 name = "26. Landwehr-Division"
-location = 3150
+location = 2947
 dig_in = 10.000
 leader = 855316
 
@@ -1174,25 +1175,10 @@ historical_model = 6
 experience = 10
 }
 }
-}
-
-corps = {
-name = "9. Armeekorps"
-location = 2948
-dig_in = 10.000
-leader = 855030
-
-regiment = {
-type = hq_brigade
-name = "9. HQ Brigade"
-historical_model = 3
-experience = 0
-}
-
 
 division = {
 name = "7. Kavellerie-Division"
-location = 3150
+location = 2947
 dig_in = 10.000
 
 regiment = {
@@ -1254,7 +1240,7 @@ experience = 10
 
 division = {
 name = "38. Bavarian Reserve-Division"
-location = 2947
+location = 2814
 dig_in = 10.000
 leader = 855250
 
@@ -1282,7 +1268,7 @@ experience = 10
 
 division = {
 name = "301. Infanterie-Division"
-location = 2947
+location = 2814
 dig_in = 10.000
 leader = 855478
 
@@ -1307,12 +1293,174 @@ historical_model = 6
 experience = 10
 }
 }
+
+################## "B" Detachment Reserves #################
+
+division = {
+name = "235. Infanterie-Division"
+location = 3084
+dig_in = 10.000
+
+regiment = {
+type = infantry_brigade
+name = "173rd Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "174th Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "44th Art Brigade"
+historical_model = 6
+experience = 10
+}
+}
+division = {
+name = "22. Landwehr-Division"
+location = 3084
+dig_in = 10.000
+
+regiment = {
+type = infantry_brigade
+name = "173rd Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "174th Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "44th Art Brigade"
+historical_model = 6
+experience = 10
 }
 }
 
+division = {
+name = "117. Infanterie-Division"
+location = 3016
+dig_in = 10.000
+
+regiment = {
+type = infantry_brigade
+name = "173rd Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "174th Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "44th Art Brigade"
+historical_model = 6
+experience = 10
+}
+}
+division = {
+name = "Jager-Division"
+location = 3016
+dig_in = 10.000
+
+regiment = {
+type = infantry_brigade
+name = "173rd Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "174th Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "44th Art Brigade"
+historical_model = 6
+experience = 10
+}
+}
+
+division = {
+name = "48. Reserve-Division"
+location = 2948
+dig_in = 10.000
+
+regiment = {
+type = infantry_brigade
+name = "173rd Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "174th Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "44th Art Brigade"
+historical_model = 6
+experience = 10
+}
+}
+division = {
+name = "26. Reserve-Division"
+location = 2881
+dig_in = 10.000
+
+regiment = {
+type = infantry_brigade
+name = "173rd Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "174th Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "44th Art Brigade"
+historical_model = 6
+experience = 10
+}
+}
+}
+
+
+
 army = {
 name = "A Detachment"
-location = 2750
+location = 2553
 dig_in = 10.000
 leader = 855027
 
@@ -1323,22 +1471,29 @@ historical_model = 3
 experience = 0
 }
 
-corps = {
-name = "8. Armeekorps"
-location = 2750
+division = {
+name = "6. Kavellerie-Division"
+location = 2684
 dig_in = 10.000
-leader = 855052
 
 regiment = {
-type = hq_brigade
-name = "8. HQ Brigade"
-historical_model = 3
-experience = 0
+type = cavalry_brigade
+name = "201st Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = cavalry_brigade
+name = "202nd Inf Brigade"
+historical_model = 6
+experience = 10
+}
 }
 
 division = {
 name = "233. Infanterie-Division"
-location = 2947
+location = 2684
 dig_in = 10.000
 leader = 855490
 
@@ -1394,7 +1549,7 @@ experience = 10
 
 division = {
 name = "1. Bavarian Infanterie-Division"
-location = 2814
+location = 2684
 dig_in = 10.000
 leader = 855456
 
@@ -1422,7 +1577,7 @@ experience = 10
 
 division = {
 name = "202. Infanterie-Division"
-location = 2814
+location = 2618
 dig_in = 10.000
 leader = 855498
 
@@ -1450,7 +1605,7 @@ experience = 10
 
 division = {
 name = "48. Landwehr-Division"
-location = 2814
+location = 2618
 dig_in = 10.000
 leader = 855510
 
@@ -1478,7 +1633,7 @@ experience = 10
 
 division = {
 name = "46. Reserve Infanterie-Division"
-location = 2815
+location = 2618
 dig_in = 10.000
 leader = 855082
 
@@ -1503,17 +1658,106 @@ historical_model = 6
 experience = 10
 }
 }
-}
-}
-########################################################################
-			
-corps = {
-name = "7th Corps"
+
+######################### "A" Detachment Reserves #########################
+
+division = {
+name = "200. Infanterie-Division"
 location = 2552
+dig_in = 10.000
+
+regiment = {
+type = infantry_brigade
+name = "149th Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "150th Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "38th Art Brigade"
+historical_model = 6
+experience = 10
+}
+}
+
+division = {
+name = "12. Infanterie-Division"
+location = 2552
+dig_in = 10.000
+
+regiment = {
+type = infantry_brigade
+name = "153rd Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "154th Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "39th Art Brigade"
+historical_model = 6
+experience = 10
+}
+}
+
+division = {
+name = "Alpine Corps"
+location = 2552
+dig_in = 10.000
+
+regiment = {
+type = bergsjaeger_brigade
+name = "157th Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = bergsjaeger_brigade
+name = "158th Inf Brigade"
+historical_model = 6
+experience = 10
+}
+}
+}
+}
+
+####################  von GALLWITZ'S GROUP OF ARMIES  ###################
+
+armygroup = {
+name = "von Gallwitz's Army Group"
+location = 2489
+dig_in = 10.000
+leader = 855027
+
+regiment = {
+type = hq_brigade
+name = "13th HQ Brigade"
+historical_model = 3
+experience = 0
+}
+
+army = {
+name = "C Detachment"
+location = 2429
 dig_in = 10.000
 leader = 855056
 
-					
 regiment = {
 type = hq_brigade
 name = "9th HQ Brigade"
@@ -1521,15 +1765,12 @@ historical_model = 3
 experience = 0
 }
 
-
-				
 division = {
-name = "25. Infanterie-Division"
-location = 2618
+name = "255. Infanterie-Division"
+location = 2617
 dig_in = 10.000
 leader = 855001
 
-					
 regiment = {
 type = infantry_brigade
 name = "121st Inf Brigade"
@@ -1537,8 +1778,6 @@ historical_model = 6
 experience = 10
 }
 
-
-					
 regiment = {
 type = infantry_brigade
 name = "122nd Inf Brigade"
@@ -1546,27 +1785,20 @@ historical_model = 6
 experience = 10
 }
 
-
-
-					
 regiment = {
 type = artillery_brigade
 name = "31st Art Brigade"
 historical_model = 6
 experience = 10
 }
-
 }
 
-
-				
 division = {
-name = "26. Infanterie-Division"
-location = 2618
+name = "4. Bavarian Infanterie-Division"
+location = 2617
 dig_in = 10.000
 leader = 855004
 
-					
 regiment = {
 type = infantry_brigade
 name = "125th Inf Brigade"
@@ -1574,8 +1806,6 @@ historical_model = 6
 experience = 10
 }
 
-
-					
 regiment = {
 type = infantry_brigade
 name = "126th Inf Brigade"
@@ -1583,28 +1813,20 @@ historical_model = 6
 experience = 10
 }
 
-
-
-
-					
 regiment = {
 type = artillery_brigade
 name = "32nd Art Brigade"
 historical_model = 6
 experience = 10
 }
-
 }
 
-
-				
 division = {
-name = "27. Infanterie-Division"
-location = 2618
+name = "78. Reserve-Division"
+location = 2617
 dig_in = 10.000
 leader = 855488
 
-					
 regiment = {
 type = infantry_brigade
 name = "129th Inf Brigade"
@@ -1612,8 +1834,6 @@ historical_model = 6
 experience = 10
 }
 
-
-					
 regiment = {
 type = infantry_brigade
 name = "130th Inf Brigade"
@@ -1621,27 +1841,20 @@ historical_model = 6
 experience = 10
 }
 
-
-
-					
 regiment = {
 type = artillery_brigade
 name = "33rd Art Brigade"
 historical_model = 6
 experience = 10
 }
-
 }
 
-
-				
 division = {
-name = "28. Infanterie-Division"
-location = 2684
+name = "5. Landwehr-Division"
+location = 2617
 dig_in = 10.000
 leader = 855491
 
-					
 regiment = {
 type = infantry_brigade
 name = "133rd Inf Brigade"
@@ -1649,8 +1862,6 @@ historical_model = 6
 experience = 10
 }
 
-
-					
 regiment = {
 type = infantry_brigade
 name = "134th Inf Brigade"
@@ -1658,26 +1869,20 @@ historical_model = 6
 experience = 10
 }
 
-
-					
 regiment = {
 type = artillery_brigade
 name = "34th Art Brigade"
 historical_model = 6
 experience = 10
 }
-
 }
 
-
-				
 division = {
-name = "29. Infanterie-Division"
-location = 2684
+name = "201. Infanterie-Division"
+location = 2617
 dig_in = 10.000
 leader = 855007
 
-					
 regiment = {
 type = infantry_brigade
 name = "137th Inf Brigade"
@@ -1685,8 +1890,6 @@ historical_model = 6
 experience = 10
 }
 
-
-					
 regiment = {
 type = infantry_brigade
 name = "138th Inf Brigade"
@@ -1694,45 +1897,20 @@ historical_model = 6
 experience = 10
 }
 
-
-
-					
 regiment = {
 type = artillery_brigade
 name = "35th Art Brigade"
 historical_model = 6
 experience = 10
 }
-
 }
 
-}
-
-
-			
-corps = {
-name = "6th Corps"
-location = 2429
-dig_in = 10.000
-leader = 855057
-
-					
-regiment = {
-type = hq_brigade
-name = "8th HQ Brigade"
-historical_model = 3
-experience = 0
-}
-
-
-				
 division = {
-name = "20. Infanterie-Division"
-location = 2551
+name = "82. Reserve-Division"
+location = 2617
 dig_in = 10.000
 leader = 855002
 
-					
 regiment = {
 type = infantry_brigade
 name = "101st Inf Brigade"
@@ -1740,8 +1918,6 @@ historical_model = 6
 experience = 10
 }
 
-
-					
 regiment = {
 type = infantry_brigade
 name = "102nd Inf Brigade"
@@ -1749,27 +1925,20 @@ historical_model = 6
 experience = 10
 }
 
-
-
-					
 regiment = {
 type = artillery_brigade
 name = "26th Art Brigade"
 historical_model = 6
 experience = 10
 }
-
 }
 
-
-				
 division = {
-name = "21. Infanterie-Division"
-location = 2551
+name = "225. Infanterie-Division"
+location = 2617
 dig_in = 10.000
 leader = 855096
 
-					
 regiment = {
 type = infantry_brigade
 name = "105th Inf Brigade"
@@ -1777,8 +1946,6 @@ historical_model = 6
 experience = 10
 }
 
-
-					
 regiment = {
 type = infantry_brigade
 name = "106th Inf Brigade"
@@ -1786,27 +1953,20 @@ historical_model = 6
 experience = 10
 }
 
-
-
-					
 regiment = {
 type = artillery_brigade
 name = "27th Art Brigade"
 historical_model = 6
 experience = 10
 }
-
 }
 
-
-				
 division = {
-name = "22. Infanterie-Division"
+name = "121. Infanterie-Division"
 location = 2617
 dig_in = 10.000
 leader = 855218
 
-					
 regiment = {
 type = infantry_brigade
 name = "109th Inf Brigade"
@@ -1814,8 +1974,6 @@ historical_model = 6
 experience = 10
 }
 
-
-					
 regiment = {
 type = infantry_brigade
 name = "110th Inf Brigade"
@@ -1823,27 +1981,20 @@ historical_model = 6
 experience = 10
 }
 
-
-
-					
 regiment = {
 type = artillery_brigade
 name = "28th Art Brigade"
 historical_model = 6
 experience = 10
 }
-
 }
 
-
-				
 division = {
-name = "23. Infanterie-Division"
+name = "3. Landwehr-Division"
 location = 2617
 dig_in = 10.000
 leader = 855124
 
-					
 regiment = {
 type = infantry_brigade
 name = "113rd Inf Brigade"
@@ -1851,8 +2002,6 @@ historical_model = 6
 experience = 10
 }
 
-
-					
 regiment = {
 type = infantry_brigade
 name = "114th Inf Brigade"
@@ -1860,27 +2009,65 @@ historical_model = 6
 experience = 10
 }
 
-
-
-					
 regiment = {
 type = artillery_brigade
 name = "29th Art Brigade"
 historical_model = 6
 experience = 10
 }
+}
 
+########### "C" Detachment Reserves ################
+
+division = {
+name = "1. Infanterie-Division"
+location = 2429
+dig_in = 10.000
+
+regiment = {
+type = infantry_brigade
+name = "113rd Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "114th Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "29th Art Brigade"
+historical_model = 6
+experience = 10
+}
+}
 }
 
 
-				
+
+army = {
+name = "5. Armee"
+location = 2551
+dig_in = 10.000
+leader = 855056
+
+regiment = {
+type = hq_brigade
+name = "9th HQ Brigade"
+historical_model = 3
+experience = 0
+}
+
 division = {
-name = "24. Infanterie-Division"
-location = 2617
+name = "11. Bavarian-Division"
+location = 2551
 dig_in = 10.000
 leader = 855223
 
-					
 regiment = {
 type = infantry_brigade
 name = "117th Inf Brigade"
@@ -1888,8 +2075,6 @@ historical_model = 6
 experience = 10
 }
 
-
-					
 regiment = {
 type = infantry_brigade
 name = "118th Inf Brigade"
@@ -1897,9 +2082,6 @@ historical_model = 6
 experience = 10
 }
 
-
-
-					
 regiment = {
 type = artillery_brigade
 name = "30th Art Brigade"
@@ -1907,172 +2089,106 @@ historical_model = 6
 experience = 10
 }
 }
-}
-}
 
-
-		
-army = {
-name = "3rd Army"
-location = 14155
-dig_in = 10.000
-leader = 855024
-
-					
-regiment = {
-type = hq_brigade
-name = "19th HQ Brigade"
-historical_model = 3
-experience = 0
-}
-
-
-			
-corps = {
-name = "13th Corps"
-location = 14157
-dig_in = 10.000
-leader = 855017
-
-					
-regiment = {
-type = hq_brigade
-name = "18th HQ Brigade"
-historical_model = 3
-experience = 0
-}
-
-
-				
 division = {
-name = "1st STM Division"
-location = 2487
+name = "123. Infanterie-Division"
+location = 2551
 dig_in = 10.000
 leader = 855019
 
-					
 regiment = {
-type = waffen_brigade
+type = infantry_brigade
 name = "1st STM Brigade"
 historical_model = 6
 experience = 10
 }
 
-
-					
 regiment = {
-type = waffen_brigade
+type = infantry_brigade
 name = "2nd STM Brigade"
 historical_model = 6
 experience = 10
 }
 
-
-
-					
 regiment = {
 type = artillery_brigade
 name = "46th Art Brigade"
 historical_model = 6
 experience = 10
 }
-
 }
 
-
-				
 division = {
-name = "2nd STM Division"
-location = 2487
+name = "19. Ersatz-Division"
+location = 2551
 dig_in = 10.000
 leader = 855225
 
-					
 regiment = {
-type = waffen_brigade
+type = infantry_brigade
 name = "5th STM Brigade"
 historical_model = 6
 experience = 10
 }
 
-
-					
 regiment = {
-type = waffen_brigade
+type = infantry_brigade
 name = "6th STM Brigade"
 historical_model = 6
 experience = 10
 }
 
-
-
-					
 regiment = {
 type = artillery_brigade
 name = "52nd Art Brigade"
 historical_model = 6
 experience = 10
 }
-
 }
 
-
-				
 division = {
-name = "3rd STM Division"
-location = 2487
+name = "15. Bavarian Division"
+location = 2551
 dig_in = 10.000
 leader = 855029
 
-					
 regiment = {
-type = waffen_brigade
+type = infantry_brigade
 name = "8th STM Brigade"
 historical_model = 6
 experience = 10
 }
 
-
-					
 regiment = {
-type = waffen_brigade
+type = infantry_brigade
 name = "9th STM Brigade"
 historical_model = 6
 experience = 10
 }
 
-
-
-					
 regiment = {
 type = artillery_brigade
 name = "53rd Art Brigade"
 historical_model = 6
 experience = 10
 }
-
 }
 
-
-				
 division = {
-name = "4th STM Division"
-location = 2487
+name = "19. Reserve Division"
+location = 2551
 dig_in = 10.000
 leader = 855073
 
-					
 regiment = {
-type = waffen_brigade
+type = infantry_brigade
 name = "11th STM Brigade"
 historical_model = 6
 experience = 10
 }
 
-
-					
 regiment = {
-type = waffen_brigade
+type = infantry_brigade
 name = "12th STM Brigade"
 historical_model = 6
 experience = 10
@@ -2085,24 +2201,10 @@ historical_model = 6
 experience = 10
 }
 }
-}
-
-corps = {
-name = "12th Corps"
-location = 14155
-dig_in = 10.000
-leader = 855022
-
-regiment = {
-type = hq_brigade
-name = "17th HQ Brigade"
-historical_model = 3
-experience = 0
-}
 
 division = {
-name = "58. Infanterie-Division"
-location = 2426
+name = "29. Infanterie-Division"
+location = 2551
 dig_in = 10.000
 
 regiment = {
@@ -2120,16 +2222,16 @@ experience = 10
 }
 
 regiment = {
-type = armored_car_brigade
-name = "1st AC Brigade"
-historical_model = 1
+type = artillery_brigade
+name = "54th Art Brigade"
+historical_model = 6
 experience = 10
 }
 }
 
 division = {
-name = "60. Infanterie-Division"
-location = 2426
+name = "192. Infanterie-Division"
+location = 2551
 dig_in = 10.000
 leader = 855472
 
@@ -2148,16 +2250,43 @@ experience = 10
 }
 
 regiment = {
-type = armored_car_brigade
-name = "2nd AC Brigade"
-historical_model = 1
+type = artillery_brigade
+name = "54th Art Brigade"
+historical_model = 6
 experience = 10
 }
 }
 
 division = {
-name = "61. Infanterie-Division"
-location = 2426
+name = "22. Infanterie-Division"
+location = 2551
+dig_in = 10.000
+
+regiment = {
+type = infantry_brigade
+name = "206th Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "207th Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "54th Art Brigade"
+historical_model = 6
+experience = 10
+}
+}
+
+division = {
+name = "84. Infanterie-Division"
+location = 2551
 dig_in = 10.000
 leader = 855486
 
@@ -2176,16 +2305,16 @@ experience = 10
 }
 
 regiment = {
-type = armored_car_brigade
-name = "3rd AC Brigade"
-historical_model = 1
+type = artillery_brigade
+name = "54th Art Brigade"
+historical_model = 6
 experience = 10
 }
 }
 
 division = {
-name = "62. Infanterie-Division"
-location = 2426
+name = "15. Reserve-Division"
+location = 2551
 dig_in = 10.000
 leader = 855170
 
@@ -2204,17 +2333,16 @@ experience = 10
 }
 
 regiment = {
-type = armored_car_brigade
-name = "4th AC Brigade"
-historical_model = 1
+type = artillery_brigade
+name = "54th Art Brigade"
+historical_model = 6
 experience = 10
 }
 }
 
 division = {
-name = "68. Infanterie-Division"
-location = 2426
-dig_in = 10.000
+name = "13. Reserve-Division"
+location = 2551
 leader = 855171
 
 regiment = {
@@ -2232,162 +2360,149 @@ experience = 10
 }
 
 regiment = {
-type = armored_car_brigade
-name = "5th AC Brigade"
-historical_model = 1
+type = artillery_brigade
+name = "54th Art Brigade"
+historical_model = 6
 experience = 10
 }
 }
-}
-
-corps = {
-name = "11th Corps"
-location = 2310
-dig_in = 10.000
-leader = 855240
-
-regiment = {
-type = hq_brigade
-name = "16th HQ Brigade"
-historical_model = 3
-experience = 0
-}
 
 division = {
-name = "1. Panzer-Division"
-location = 2309
+name = "56. Infantry-Division"
+location = 2551
 dig_in = 10.000
 leader = 855016
 
 regiment = {
-type = armor_brigade
-name = "1st Arm Brigade"
-historical_model = 1
-experience = 10
-}
-
-regiment = {
 type = infantry_brigade
-name = "227th Inf Brigade"
+name = "222nd Inf Brigade"
 historical_model = 6
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
-name = "228th Inf Brigade"
+name = "223rd Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "54th Art Brigade"
+historical_model = 6
+experience = 10
+}
+}
+
+############# 5th Army Reserves ##############
+
+division = {
+name = "243. Infanterie-Division"
+location = 2489
+dig_in = 10.000
+leader = 855486
+
+regiment = {
+type = infantry_brigade
+name = "211st Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "213rd Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "54th Art Brigade"
 historical_model = 6
 experience = 10
 }
 }
 
 division = {
-name = "2. Panzer-Division"
-location = 2309
+name = "225. Infanterie-Division"
+location = 2489
 dig_in = 10.000
-leader = 855025
-
-regiment = {
-type = armor_brigade
-name = "3rd Arm Brigade"
-historical_model = 1
-experience = 10
-}
+leader = 855170
 
 regiment = {
 type = infantry_brigade
-name = "230th Inf Brigade"
+name = "217th Inf Brigade"
 historical_model = 6
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
-name = "231st Inf Brigade"
+name = "218th Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "54th Art Brigade"
 historical_model = 6
 experience = 10
 }
 }
 
 division = {
-name = "3. Panzer-Division"
-location = 2309
-dig_in = 10.000
-leader = 855053
-
-regiment = {
-type = armor_brigade
-name = "5th Arm Brigade"
-historical_model = 1
-experience = 10
-}
+name = "2. Bavarian-Division"
+location = 2489
+leader = 855171
 
 regiment = {
 type = infantry_brigade
-name = "233rd Inf Brigade"
+name = "222nd Inf Brigade"
 historical_model = 6
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
-name = "234th Inf Brigade"
-historical_model = 6
-experience = 10
-}
-}
-
-division = {
-name = "4. Panzer-Division"
-location = 2309
-dig_in = 10.000
-leader = 855464
-
-regiment = {
-type = armor_brigade
-name = "7th Arm Brigade"
-historical_model = 1
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "236th Inf Brigade"
+name = "223rd Inf Brigade"
 historical_model = 6
 experience = 10
 }
 
 regiment = {
-type = infantry_brigade
-name = "237th Inf Brigade"
+type = artillery_brigade
+name = "54th Art Brigade"
 historical_model = 6
 experience = 10
 }
 }
 
 division = {
-name = "5. Panzer-Division"
-location = 2309
+name = "Garde Ersatz-Division"
+location = 2489
 dig_in = 10.000
-leader = 855011
-
-regiment = {
-type = armor_brigade
-name = "9th Arm Brigade"
-historical_model = 1
-experience = 10
-}
+leader = 855016
 
 regiment = {
 type = infantry_brigade
-name = "239th Inf Brigade"
+name = "222nd Inf Brigade"
 historical_model = 6
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
-name = "240th Inf Brigade"
+name = "223rd Inf Brigade"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "54th Art Brigade"
 historical_model = 6
 experience = 10
 }
@@ -2395,6 +2510,8 @@ experience = 10
 }
 }
 }
+}
+
 
 air = {
 name = "Fliegertruppe 1"
