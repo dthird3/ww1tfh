@@ -276,7 +276,7 @@ function P.ForeignMinister_Alignment(voForeignMinisterData)
 	local liYear = CCurrentGameState.GetCurrentDate():GetYear()
 	local liMonth = CCurrentGameState.GetCurrentDate():GetMonthOfYear()
 	if liYear > 1913 then
-		return Support.AlignmentPush("allies", voForeignMinisterData, true, true)
+		return ForeignMinister_Alignment.Alignment_Push("allies", voForeignMinisterData)
 	else
 		--return Support.AlignmentNeutral(...)
 	end	
