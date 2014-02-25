@@ -1,86 +1,21 @@
-division = {
-name = "Libya Piyade Tumeni"
-location = 5484
-
-regiment = {
-type = infantry_brigade
-name = "3. Piyade Tumeni 2. Tugay"
-historical_model = 1
-experience = 10
-}
-}
-
-corps = {
-name = "Libyian Volunteer Corps"
-location = 5484
-
-regiment = {
-type = hq_brigade
-name = "Libyian Volunteers"
-historical_model = 2
-experience = 15
-}
-
-division = {
-name = "1st Libyan Volunteers"
-location = 5484
-
-regiment = {
-type = militia_brigade
-name = "1st Bengasi Brigade"
-historical_model = 1
-experience = 10
-}
-
-regiment = {
-type = militia_brigade
-name = "2nd Bengasi Brigade"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "2nd Libyan Volunteers"
-location = 5484
-
-regiment = {
-type = cavalry_brigade
-name = "1st Bengasi Camel Troop "
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "3rd Libyan Volunteers"
-location = 5511
-
-regiment = {
-type = cavalry_brigade
-name = "1st Tobruch Camel Troop "
-historical_model = 1
-experience = 10
-}
-
-regiment = {
-type = cavalry_brigade
-name = "2nd Tobruch Camel Troop "
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "4th Libyan Volunteers"
-location = 5511
-
-regiment = {
-type = cavalry_brigade
-name = "3rd Tobruch Camel Troop "
-historical_model = 1
-experience = 10
-}
-}
-
-}
+	division = {
+		name = "1. Milis Tümeni 'Bingazi'"
+		leader = {
+			id=720097
+			type=37
+		}
+		location = 5484
+		regiment = { type = militia_brigade name = "1. Milis Alayi 'Bingazi'" historical_model = 1 is_reserve = no}
+		regiment = { type = militia_brigade name = "2. Milis Alayi 'Bingazi'" historical_model = 1 is_reserve = no}
+	}
+		
+	division = {
+		name = "2. Milis Tümeni 'Trablus'"
+		leader = {
+			id=720147
+			type=37
+		}
+		location = 5445
+		regiment = { type = militia_brigade name = "3. Milis Alayi 'Trablus'" historical_model = 1 is_reserve = no}
+		regiment = { type = militia_brigade name = "4. Milis Alayi 'Trablus'" historical_model = 1 is_reserve = no}
+	}
