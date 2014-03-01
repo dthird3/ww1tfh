@@ -47,7 +47,32 @@ end
 function P.TechList(voTechnologyData)
 
 	local loPreferTech = Support_Tech.TechGenerator(voTechnologyData, 'Land')
-
+	-- Remove Resource priority
+	if loPreferTech['oil_to_coal_conversion'] then
+		if loPreferTech['oil_to_coal_conversion'].Priority > 0 then
+			loPreferTech['oil_to_coal_conversion'].Priority = 0
+		end
+	end
+	if loPreferTech['raremetal_refinning_techniques'] then
+		if loPreferTech['raremetal_refinning_techniques'].Priority > 0 then
+			loPreferTech['raremetal_refinning_techniques'].Priority = 0
+		end
+	end
+	if loPreferTech['oil_refinning'] then
+		if loPreferTech['oil_refinning'].Priority > 0 then
+			loPreferTech['oil_refinning'].Priority = 0
+		end
+	end
+	if loPreferTech['steel_production'] then
+		if loPreferTech['steel_production'].Priority > 0 then
+			loPreferTech['steel_production'].Priority = 0
+		end
+	end
+	if loPreferTech['coal_processing_technologies'] then
+		if loPreferTech['coal_processing_technologies'].Priority > 0 then
+			loPreferTech['coal_processing_technologies'].Priority = 0
+		end
+	end
 	return loPreferTech
 end
 
