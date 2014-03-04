@@ -1,3 +1,8 @@
+theatre = {
+name = "Royal Romanian Army"
+location = 3917
+regiment = { type = hq_brigade name = "Royal Romanian Army HQ" historical_model = 0 }
+
 corps = {
 name = "I Corps"
 location = 3987
@@ -139,8 +144,8 @@ experience = 10
 name = "2. Brigazi Calarasi"
 historical_model = 2}
 }
-
 }
+
 corps = {
 name = "III Corps"
 location = 3919
@@ -185,8 +190,8 @@ experience = 10
 name = "12. Infanterie Brigazi"
 historical_model = 2}
 }
-
 }
+
 corps = {
 name = "IV Corps"
 location = 3306
@@ -285,8 +290,8 @@ experience = 10
 name = "Brigazi 3. Rosiori"
 historical_model = 2}
 }
-
 }
+
 corps = {
 name = "Divizia 2 Cavalerie"
 location = 3919
@@ -311,12 +316,70 @@ historical_model = 2}
 }
 }
 
+division = {
+name = "Brigazi 1 Antrenament"
+location = 3580
+is_reserve = yes
+
+regiment = {
+type = militia_brigade
+experience = 5
+name = "Brigazi 1 Antrenament"
+historical_model = 0}
+}
+
+division = {
+name = "Brigazi 2 Antrenament"
+location = 3917
+is_reserve = yes
+
+regiment = {
+type = militia_brigade
+experience = 5
+name = "Brigazi 2 Antrenament"
+historical_model = 0}
+}
+
+division = {
+name = "Brigazi 3 Antrenament"
+location = 3917
+is_reserve = yes
+
+regiment = {
+type = militia_brigade
+experience = 5
+name = "Brigazi 3 Antrenament"
+historical_model = 0}
+}
+
+division = {
+name = "Brigazi 4 Antrenament"
+location = 3919
+is_reserve = yes
+
+regiment = {
+type = militia_brigade
+experience = 5
+name = "Brigazi 4 Antrenament"
+historical_model = 0}
+}
+
+division = {
+name = "Brigazi 5 Antrenament"
+location = 3778
+is_reserve = yes
+
+regiment = {
+type = militia_brigade
+experience = 5
+name = "Brigazi 5 Antrenament"
+historical_model = 0}
+}
+
 navy = {
 name = "Flota Marii Negre"
 location = 3919
 base = 3919
 ship = { type = protected_cruiser name = "NMS Elisabeta" historical_model = 0 experience = 15 }
-
-
-
+}
 }
