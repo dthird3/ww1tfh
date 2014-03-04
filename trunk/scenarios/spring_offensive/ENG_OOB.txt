@@ -30,7 +30,7 @@ corps = {
 expeditionary_owner = ENG
 name = "3rd Corps"
 location = 2486
-dig_in = 10.000
+dig_in = 5.000
 leader = 0000
 
 regiment = {
@@ -44,7 +44,7 @@ division = {
 expeditionary_owner = ENG
 name = "14th (Light) Division"
 location = 2486
-dig_in = 10.000
+dig_in = 5.000
 leader = 0000
 
 regiment = {
@@ -80,7 +80,7 @@ division = {
 expeditionary_owner = ENG
 name = "18th (Eastern) Division"
 location = 2486
-dig_in = 10.000
+dig_in = 5.000
 leader = 0000
 
 regiment = {
@@ -109,7 +109,7 @@ division = {
 expeditionary_owner = ENG
 name = "58th (2nd/1st London) Division"
 location = 2486
-dig_in = 10.000
+dig_in = 5.000
 leader = 0000
 
 regiment = {
@@ -133,18 +133,73 @@ historical_model = 7
 experience = 10
 }
 }
+
+
+division = {
+expeditionary_owner = ENG
+name = "2nd Cavalry Division"
+location = 2486
+
+regiment = {
+type = cavalry_brigade
+name = "3rd Cavalry Brigade"
+historical_model = 2
+experience = 15
+}
+
+regiment = {
+type = cavalry_brigade
+name = "4th Cavalry Brigade"
+historical_model = 2
+experience = 15
+}
+
+regiment = {
+type = cavalry_brigade
+name = "5th Cavalry Brigade"
+historical_model = 2
+experience = 15
+}
+}
+
+division = {
+expeditionary_owner = ENG
+name = "3rd Cavalry Division"
+location = 2486
+
+regiment = {
+type = cavalry_brigade
+name = "6th Cavalry Brigade"
+historical_model = 2
+experience = 15
+}
+
+regiment = {
+type = cavalry_brigade
+name = "7th Cavalry Brigade"
+historical_model = 2
+experience = 15
+}
+
+regiment = {
+type = cavalry_brigade
+name = "Canadian Cavalry Brigade"
+historical_model = 2
+experience = 15
+}
+}
 }
 
 corps = {
 expeditionary_owner = ENG
-name = "17th Corps"
+name = "18th Corps"
 location = 2486
-dig_in = 10.000
+dig_in = 5.000
 leader = 0000
 
 regiment = {
 type = hq_brigade
-name = "17th Corps HQ"
+name = "18th Corps HQ"
 historical_model = 0
 experience = 0
 }
@@ -153,7 +208,7 @@ division = {
 expeditionary_owner = ENG
 name = "20th (Light) Division"
 location = 2486
-dig_in = 10.000
+dig_in = 5.000
 leader = 0000
 
 regiment = {
@@ -182,7 +237,7 @@ division = {
 expeditionary_owner = ENG
 name = "30th Division"
 location = 2486
-dig_in = 10.000
+dig_in = 5.000
 leader = 0000
 
 regiment = {
@@ -211,7 +266,7 @@ division = {
 expeditionary_owner = ENG
 name = "36th (Ulster) Division"
 location = 2486
-dig_in = 10.000
+dig_in = 5.000
 leader = 0000
 
 regiment = {
@@ -238,9 +293,9 @@ experience = 10
 
 division = {
 expeditionary_owner = ENG
-name = "61st (2nd/South Midlands) Division"
+name = "61st (2nd South Midlands) Division"
 location = 2486
-dig_in = 10.000
+dig_in = 5.000
 leader = 0000
 
 regiment = {
@@ -266,45 +321,44 @@ experience = 10
 }
 }
 
-
 corps = {
 expeditionary_owner = ENG
-name = "19th Corps"
+name = "7th Corps"
 location = 2486
-dig_in = 10.000
+dig_in = 5.000
 leader = 0000
 
 regiment = {
 type = hq_brigade
-name = "19th Corps HQ"
+name = "7th Corps HQ"
 historical_model = 0
 experience = 0
 }
 
 division = {
 expeditionary_owner = ENG
-name = "8th Division"
+name = "9th (Scottish) Division"
 location = 2486
-dig_in = 10.000
+dig_in = 5.000
 leader = 0000
 
 regiment = {
 type = infantry_brigade
-name = "23/24th Infantry Brigades"
+name = "26/27th Infantry Brigades"
 historical_model = 6
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
-name = "24/25th Infantry Brigades"
+name = "South African Brigade"
 historical_model = 6
 experience = 10
 }
 
 regiment = {
 type = artillery_brigade
-name = "8th Division Artillery"
+name = "9th Division Artillery"
 historical_model = 7
 experience = 10
 }
@@ -314,7 +368,7 @@ division = {
 expeditionary_owner = ENG
 name = "16th (Irish) Division"
 location = 2486
-dig_in = 10.000
+dig_in = 5.000
 leader = 0000
 
 regiment = {
@@ -341,9 +395,9 @@ experience = 10
 
 division = {
 expeditionary_owner = ENG
-name = "24th Division"
+name = "21st Division"
 location = 2486
-dig_in = 10.000
+dig_in = 5.000
 leader = 0000
 
 regiment = {
@@ -372,7 +426,7 @@ division = {
 expeditionary_owner = ENG
 name = "39th Division"
 location = 2486
-dig_in = 10.000
+dig_in = 5.000
 leader = 0000
 
 regiment = {
@@ -396,12 +450,85 @@ historical_model = 7
 experience = 10
 }
 }
+}
+
+corps = {
+expeditionary_owner = ENG
+name = "19th Corps"
+location = 2486
+dig_in = 5.000
+leader = 0000
+
+regiment = {
+type = hq_brigade
+name = "19th Corps HQ"
+historical_model = 0
+experience = 0
+}
+
+division = {
+expeditionary_owner = ENG
+name = "8th Division"
+location = 2486
+dig_in = 5.000
+leader = 0000
+
+regiment = {
+type = infantry_brigade
+name = "23/24th Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "24/25th Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "8th Division Artillery"
+historical_model = 7
+experience = 10
+}
+}
+
+division = {
+expeditionary_owner = ENG
+name = "24th Division"
+location = 2486
+dig_in = 5.000
+leader = 0000
+
+regiment = {
+type = infantry_brigade
+name = "17/72nd Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "72/73 Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "24th Division Artillery"
+historical_model = 7
+experience = 10
+}
+}
 
 division = {
 expeditionary_owner = ENG
 name = "50th (Northumbrian) Division"
 location = 2486
-dig_in = 10.000
+dig_in = 5.000
 leader = 0000
 
 regiment = {
@@ -430,7 +557,7 @@ division = {
 expeditionary_owner = ENG
 name = "66th (2nd/East Lancashire) Division"
 location = 2486
-dig_in = 10.000
+dig_in = 5.000
 leader = 0000
 
 regiment = {
@@ -454,6 +581,34 @@ historical_model = 7
 experience = 10
 }
 }
+
+division = {
+expeditionary_owner = ENG
+name = "1st Cavalry Division"
+location = 2486
+dig_in = 5.000
+
+regiment = {
+type = cavalry_brigade
+name = "1st Cavalry Brigade"
+historical_model = 2
+experience = 15
+}
+
+regiment = {
+type = cavalry_brigade
+name = "2nd Cavalry Brigade"
+historical_model = 2
+experience = 15
+}
+
+regiment = {
+type = cavalry_brigade
+name = "9th Cavalry Brigade"
+historical_model = 2
+experience = 15
+}
+}
 }
 }
 
@@ -474,42 +629,42 @@ experience = 0
 
 corps = {
 expeditionary_owner = ENG
-name = "7th Corps"
+name = "4th Corps"
 location = 2485
 dig_in = 10.000
 leader = 0000
 
 regiment = {
 type = hq_brigade
-name = "7th Corps HQ"
+name = "4th Corps HQ"
 historical_model = 0
 experience = 0
 }
 
 division = {
 expeditionary_owner = ENG
-name = "21st Division"
+name = "6th Division"
 location = 2485
 dig_in = 10.000
 leader = 0000
 
 regiment = {
 type = infantry_brigade
-name = "62/64th Infantry Brigades"
+name = "56/57th Infantry Brigades"
 historical_model = 6
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
-name = "64/110th Infantry Brigades"
+name = "57/58th Infantry Brigades"
 historical_model = 6
 experience = 10
 }
 
 regiment = {
 type = artillery_brigade
-name = "21st Division Artillery"
+name = "19th Division Artillery"
 historical_model = 7
 experience = 10
 }
@@ -517,28 +672,28 @@ experience = 10
 
 division = {
 expeditionary_owner = ENG
-name = "35th Division"
+name = "19th (Western) Division"
 location = 2485
 dig_in = 10.000
 leader = 0000
 
 regiment = {
 type = infantry_brigade
-name = "104/105th Infantry Brigades"
+name = "56/57th Infantry Brigades"
 historical_model = 6
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
-name = "105/106th Infantry Brigades"
+name = "57/58th Infantry Brigades"
 historical_model = 6
 experience = 10
 }
 
 regiment = {
 type = artillery_brigade
-name = "35th Division Artillery"
+name = "19th Division Artillery"
 historical_model = 7
 experience = 10
 }
@@ -546,58 +701,80 @@ experience = 10
 
 division = {
 expeditionary_owner = ENG
-name = "9th Division"
+name = "25th Division"
 location = 2485
 dig_in = 10.000
 leader = 0000
 
 regiment = {
 type = infantry_brigade
-name = "26/27th Infantry Brigades"
+name = "7/74th Infantry Brigades"
 historical_model = 6
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
-name = "South African Brigade"
+name = "74/75th Infantry Brigades"
 historical_model = 6
 experience = 10
 }
 
 regiment = {
 type = artillery_brigade
-name = "9th Division Artillery"
+name = "25th Division Artillery"
 historical_model = 7
 experience = 10
 }
 }
 
 division = {
-expeditionary_owner = AST
-name = "3th Australian Division"
+expeditionary_owner = ENG
+name = "41st Division"
 location = 2485
 dig_in = 10.000
 leader = 0000
 
 regiment = {
 type = infantry_brigade
-name = "9/10th Aust. Infantry Brigades"
+name = "122/123rd Infantry Brigades"
 historical_model = 6
 experience = 10
 }
 
 regiment = {
 type = infantry_brigade
-name = "10/11th Aust. Infantry Brigades"
+name = "123/124th Infantry Brigades"
 historical_model = 6
 experience = 10
 }
 
 regiment = {
 type = artillery_brigade
-name = "3rd Division Artillery"
+name = "41st Division Artillery"
 historical_model = 7
+experience = 10
+}
+}
+
+division = {
+expeditionary_owner = ENG
+name = "51st (Highland) Division"
+location = 2485
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = infantry_brigade
+name = "152/153rd Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "153/154th Infantry Brigades"
+historical_model = 6
 experience = 10
 }
 }
@@ -615,35 +792,6 @@ type = hq_brigade
 name = "5th Corps HQ"
 historical_model = 0
 experience = 0
-}
-
-division = {
-expeditionary_owner = ENG
-name = "12th (Eastern) Division"
-location = 2485
-dig_in = 10.000
-leader = 0000
-
-regiment = {
-type = infantry_brigade
-name = "35/36th Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "36/37th Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "12th Division Artillery"
-historical_model = 7
-experience = 10
-}
 }
 
 division = {
@@ -741,14 +889,14 @@ dig_in = 10.000
 leader = 0000
 
 regiment = {
-type = infantry_brigade
+type = marine_brigade
 name = "188/189 Infantry Brigades"
 historical_model = 6
 experience = 10
 }
 
 regiment = {
-type = infantry_brigade
+type = marine_brigade
 name = "189/190th Infantry Brigades"
 historical_model = 6
 experience = 10
@@ -757,261 +905,6 @@ experience = 10
 regiment = {
 type = artillery_brigade
 name = "63rd Division Artillery"
-historical_model = 7
-experience = 10
-}
-}
-}
-
-corps = {
-expeditionary_owner = ENG
-name = "4th Corps"
-location = 2485
-dig_in = 10.000
-leader = 0000
-
-regiment = {
-type = hq_brigade
-name = "4th Corps HQ"
-historical_model = 0
-experience = 0
-}
-
-division = {
-expeditionary_owner = ENG
-name = "19th (Western) Division"
-location = 2485
-dig_in = 10.000
-leader = 0000
-
-regiment = {
-type = infantry_brigade
-name = "56/57th Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "57/58th Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "19th Division Artillery"
-historical_model = 7
-experience = 10
-}
-}
-
-division = {
-expeditionary_owner = ENG
-name = "25th Division"
-location = 2485
-dig_in = 10.000
-leader = 0000
-
-regiment = {
-type = infantry_brigade
-name = "7/74th Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "74/75th Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "25th Division Artillery"
-historical_model = 7
-experience = 10
-}
-}
-
-division = {
-expeditionary_owner = ENG
-name = "41st Division"
-location = 2485
-dig_in = 10.000
-leader = 0000
-
-regiment = {
-type = infantry_brigade
-name = "122/123rd Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "123/124th Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "41st Division Artillery"
-historical_model = 7
-experience = 10
-}
-}
-
-division = {
-expeditionary_owner = ENG
-name = "42nd (East Lancashire) Division"
-location = 2485
-dig_in = 10.000
-leader = 0000
-
-regiment = {
-type = infantry_brigade
-name = "125/126th Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "126/127th Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "42nd Division Artillery"
-historical_model = 7
-experience = 10
-}
-}
-
-division = {
-expeditionary_owner = ENG
-name = "51st (Highland) Division"
-location = 2485
-dig_in = 10.000
-leader = 0000
-
-regiment = {
-type = infantry_brigade
-name = "152/153rd Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "153/154th Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-}
-
-division = {
-expeditionary_owner = ENG
-name = "62nd (2nd West Riding) Division"
-location = 2485
-dig_in = 10.000
-leader = 0000
-
-regiment = {
-type = infantry_brigade
-name = "185/186th Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "186/187th Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "62nd Division Artillery"
-historical_model = 7
-experience = 10
-}
-}
-
-division = {
-expeditionary_owner = NZL
-name = "New Zealand Division"
-location = 2485
-dig_in = 10.000
-leader = 0000
-
-regiment = {
-type = infantry_brigade
-name = "1/2nd NZ Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "2/R NZ Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-}
-
-division = {
-expeditionary_owner = AST
-name = "4th Australian Division"
-location = 2485
-dig_in = 10.000
-leader = 0000
-
-regiment = {
-type = infantry_brigade
-name = "4/12th Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "12/13th Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-}
-
-division = {
-expeditionary_owner = ENG
-name = "37th Division"
-location = 2485
-dig_in = 10.000
-leader = 0000
-
-regiment = {
-type = infantry_brigade
-name = "63/111th Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "111/112th Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "37th Division Artillery"
 historical_model = 7
 experience = 10
 }
@@ -1121,6 +1014,35 @@ experience = 10
 
 division = {
 expeditionary_owner = ENG
+name = "34th Division"
+location = 2485
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = infantry_brigade
+name = "92/93rd Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "93/94th Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "31st Division Artillery"
+historical_model = 7
+experience = 10
+}
+}
+
+division = {
+expeditionary_owner = ENG
 name = "40th Division"
 location = 2485
 dig_in = 10.000
@@ -1149,162 +1071,24 @@ experience = 10
 }
 
 division = {
-expeditionary_owner = CAN
-name = "2nd Canadian Division"
-location = 2485
-dig_in = 10.000
-leader = 0000
-
-regiment = {
-type = infantry_brigade
-name = "4/5th Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "5/6th Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "2nd Canadian Artillery"
-historical_model = 7
-experience = 10
-}
-}
-
-division = {
 expeditionary_owner = ENG
-name = "32nd Division"
+name = "59th (2nd North Midland) Division"
 location = 2485
-dig_in = 10.000
+dig_in = 5.000
 leader = 0000
 
 regiment = {
 type = infantry_brigade
-name = "14/96th Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "96/97th Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "32nd Division Artillery"
-historical_model = 7
-experience = 10
-}
-}
-}
-
-corps = {
-expeditionary_owner = ENG
-name = "17th Corps"
-location = 2485
-dig_in = 10.000
-leader = 0000
-
-regiment = {
-type = hq_brigade
-name = "17th Corps HQ"
-historical_model = 0
+name = "119/120th Infantry Brigades"
+historical_model = 5
 experience = 0
 }
 
-division = {
-expeditionary_owner = ENG
-name = "4th Division"
-location = 2485
-dig_in = 10.000
-leader = 0000
-
 regiment = {
 type = infantry_brigade
-name = "10/11th Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "11/12th Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "4th Division Artillery"
-historical_model = 7
-experience = 10
-}
-}
-
-division = {
-expeditionary_owner = ENG
-name = "15th (Scottish) Division"
-location = 2485
-dig_in = 10.000
-leader = 0000
-
-regiment = {
-type = infantry_brigade
-name = "44/45th Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "45/46th Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "15th Scottish Artillery"
-historical_model = 7
-experience = 10
-}
-}
-
-division = {
-expeditionary_owner = CAN
-name = "1st Canadian Division"
-location = 2485
-dig_in = 10.000
-leader = 0000
-
-regiment = {
-type = infantry_brigade
-name = "1/2nd Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "2/3rd Infantry Brigades"
-historical_model = 6
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "1st Canadian Artillery"
-historical_model = 7
-experience = 10
+name = "120/121st Infantry Brigades"
+historical_model = 5
+experience = 0
 }
 }
 }
@@ -1428,94 +1212,205 @@ experience = 10
 }
 
 corps = {
-expeditionary_owner = ENG
-name = "Cavalry Corps"
-location = 2366
+expeditionary_owner = POR
+name = "Portugese Expeditionary Corps"
+location = 2367
 dig_in = 10.000
 leader = 0000
 
 regiment = {
 type = hq_brigade
-name = "Cavalry Corps HQ"
+name = "Portugese Expeditionary Corps HQ"
 historical_model = 0
 experience = 0
 }
 
 division = {
-name = "1st Cavalry Division"
-location = 2366
+expeditionary_owner = POR
+name = "1st Portugese Division"
+location = 2367
+dig_in = 10.000
+leader = 0000
 
 regiment = {
-type = cavalry_brigade
-name = "1st Cavalry Brigade"
-historical_model = 2
-experience = 15
+type = infantry_brigade
+name = "1/2nd Infantry Brigades"
+historical_model = 6
+experience = 5
 }
 
 regiment = {
-type = cavalry_brigade
-name = "2nd Cavalry Brigade"
-historical_model = 2
-experience = 15
+type = infantry_brigade
+name = "2/3rd Infantry Brigades"
+historical_model = 6
+experience = 5
 }
 
 regiment = {
-type = cavalry_brigade
-name = "9th Cavalry Brigade"
-historical_model = 2
-experience = 15
+type = artillery_brigade
+name = "1st Division Artillery"
+historical_model = 6
+experience = 5
 }
 }
 
 division = {
-name = "2nd Cavalry Division"
-location = 2366
+expeditionary_owner = POR
+name = "2nd Portugese Division"
+location = 2367
+dig_in = 10.000
+leader = 0000
 
 regiment = {
-type = cavalry_brigade
-name = "3rd Cavalry Brigade"
-historical_model = 2
-experience = 15
+type = infantry_brigade
+name = "4th (Minho) Infantry Brigade"
+historical_model = 6
+experience = 5
 }
 
 regiment = {
-type = cavalry_brigade
-name = "4th Cavalry Brigade"
-historical_model = 2
-experience = 15
+type = infantry_brigade
+name = "5/6th Infantry Brigades"
+historical_model = 6
+experience = 5
 }
 
 regiment = {
-type = cavalry_brigade
-name = "5th Cavalry Brigade"
-historical_model = 2
-experience = 15
+type = artillery_brigade
+name = "2nd Division Artillery"
+historical_model = 6
+experience = 5
+}
+}
+}
+
+corps = {
+expeditionary_owner = ENG
+name = "17th Corps"
+location = 2367
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = hq_brigade
+name = "17th Corps HQ"
+historical_model = 0
+experience = 0
+}
+
+division = {
+expeditionary_owner = ENG
+name = "4th Division"
+location = 2367
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = infantry_brigade
+name = "10/11th Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "11/12th Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "4th Division Artillery"
+historical_model = 7
+experience = 10
 }
 }
 
 division = {
-name = "3rd Cavalry Division"
-location = 2366
+expeditionary_owner = ENG
+name = "15th (Scottish) Division"
+location = 2367
+dig_in = 10.000
+leader = 0000
 
 regiment = {
-type = cavalry_brigade
-name = "6th Cavalry Brigade"
-historical_model = 2
-experience = 15
+type = infantry_brigade
+name = "44/45th Infantry Brigades"
+historical_model = 6
+experience = 10
 }
 
 regiment = {
-type = cavalry_brigade
-name = "7th Cavalry Brigade"
-historical_model = 2
-experience = 15
+type = infantry_brigade
+name = "45/46th Infantry Brigades"
+historical_model = 6
+experience = 10
 }
 
 regiment = {
-type = cavalry_brigade
-name = "Canadian Cavalry Brigade"
-historical_model = 2
-experience = 15
+type = artillery_brigade
+name = "15th Scottish Artillery"
+historical_model = 7
+experience = 10
+}
+}
+
+division = {
+expeditionary_owner = CAN
+name = "1st Canadian Division"
+location = 2367
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = infantry_brigade
+name = "1/2nd Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "2/3rd Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "1st Canadian Artillery"
+historical_model = 7
+experience = 10
+}
+}
+
+division = {
+expeditionary_owner = ENG
+name = "35th Division"
+location = 2367
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = infantry_brigade
+name = "104/105th Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "105/106th Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "35th Division Artillery"
+historical_model = 7
+experience = 10
 }
 }
 }
@@ -1526,7 +1421,7 @@ army = {
 expeditionary_owner = ENG
 name = "2nd Army"
 location = 2251
-dig_in = 10.000
+dig_in = 2.000
 leader = 0000
 
 regiment = {
@@ -1535,19 +1430,660 @@ name = "2nd Army HQ"
 historical_model = 0
 experience = 0
 }
+}
+
+
+army = {
+expeditionary_owner = ENG
+name = "4th Army"
+location = 2424
+dig_in = 2.000
+leader = 0000
+
+regiment = {
+type = hq_brigade
+name = "4th Army HQ"
+historical_model = 0
+experience = 0
+}
 
 corps = {
 expeditionary_owner = ENG
-name = "??th Corps"
+name = "7th Corps"
+location = 2424
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = hq_brigade
+name = "7th Corps HQ"
+historical_model = 0
+experience = 0
+}
+
+division = {
+expeditionary_owner = AST
+name = "3th Australian Division"
+location = 2424
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = infantry_brigade
+name = "9/10th Aust. Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "10/11th Aust. Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "3rd Division Artillery"
+historical_model = 7
+experience = 10
+}
+}
+
+division = {
+expeditionary_owner = ENG
+name = "37th Division"
+location = 2424
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = infantry_brigade
+name = "63/111th Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "111/112th Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "37th Division Artillery"
+historical_model = 7
+experience = 10
+}
+}
+
+division = {
+expeditionary_owner = ENG
+name = "42nd (East Lancashire) Division"
+location = 2424
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = infantry_brigade
+name = "125/126th Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "126/127th Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "42nd Division Artillery"
+historical_model = 7
+experience = 10
+}
+}
+
+division = {
+expeditionary_owner = ENG
+name = "62nd (2nd West Riding) Division"
+location = 2424
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = infantry_brigade
+name = "185/186th Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "186/187th Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "62nd Division Artillery"
+historical_model = 7
+experience = 10
+}
+}
+
+division = {
+expeditionary_owner = NZL
+name = "New Zealand Division"
+location = 2424
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = infantry_brigade
+name = "1/2nd NZ Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "2/R NZ Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+}
+
+division = {
+expeditionary_owner = AST
+name = "4th Australian Division"
+location = 2424
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = infantry_brigade
+name = "4/12th Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "12/13th Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+}
+
+division = {
+expeditionary_owner = ENG
+name = "12th (Eastern) Division"
+location = 2424
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = infantry_brigade
+name = "35/36th Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "36/37th Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "12th Division Artillery"
+historical_model = 7
+experience = 10
+}
+}
+
+
+division = {
+expeditionary_owner = CAN
+name = "2nd Canadian Division"
+location = 2424
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = infantry_brigade
+name = "4/5th Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "5/6th Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "2nd Canadian Artillery"
+historical_model = 7
+experience = 10
+}
+}
+
+division = {
+expeditionary_owner = ENG
+name = "32nd Division"
+location = 2424
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = infantry_brigade
+name = "14/96th Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "96/97th Infantry Brigades"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "32nd Division Artillery"
+historical_model = 7
+experience = 10
+}
+}
+}
+}
+
+
+army = {										
+expeditionary_owner = BEL
+name = "Belgian Army"
+location = 2194
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = hq_brigade
+name = "Belgian Army HQ"
+historical_model = 1
+experience = 15
+}
+
+
+air = {
+expeditionary_owner = BEL
+name = "1. Escadrille"
+location = 2194
+base = 2194
+
+wing = {
+type = scout
+name = "1. Escadrille"
+historical_model = 3
+experience = 15
+}
+}
+
+air = {
+expeditionary_owner = BEL
+name = "2. Escadrille"
+location = 2194
+base = 2194
+
+wing = {
+type = interceptor
+name = "2. Escadrille"
+historical_model = 3
+experience = 15
+}
+}
+
+corps = {
+expeditionary_owner = BEL
+name = "1er Corps"
 location = 2195
 dig_in = 10.000
 leader = 0000
 
 regiment = {
 type = hq_brigade
-name = "??th Corps HQ"
-historical_model = 0
-experience = 0
+name = "1er Corps HQ"
+historical_model = 1
+experience = 15
+}
+
+division = {
+expeditionary_owner = BEL
+name = "1er Division d'Armee"
+location = 2195
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = infantry_brigade
+name = "2/3eme brigades mixte"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "3/4eme brigades mixte"
+historical_model = 6
+experience = 10
+is_reserve = yes
+}
+
+regiment = {
+type = artillery_brigade
+name = "Artillerie div 1/2eme regiments"
+historical_model = 5
+experience = 10
+}
+}
+
+division = {
+expeditionary_owner = BEL
+name = "2eme Division d'Armee"
+location = 2195
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = infantry_brigade
+name = "5/6eme brigades mixte"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "6/7eme brigades mixte"
+historical_model = 6
+experience = 10
+is_reserve = yes
+}
+}
+
+division = {
+expeditionary_owner = BEL
+name = "3eme Division d'Armee"
+location = 2195
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = infantry_brigade
+name = "9eme brigade mixte"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "11/12eme brigades mixte"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = artillery_brigade
+name = "Artillerie div 3/4eme regiments"
+historical_model = 5
+experience = 10
+}
+}
+
+division = {
+expeditionary_owner = BEL
+name = "4eme Division d'Infanterie"
+location = 2195
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = infantry_brigade
+name = "8eme brigade mixte"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "10/13eme brigades mixte"
+historical_model = 6
+experience = 10
+}
+}
+}
+
+corps = {
+expeditionary_owner = BEL
+name = "2eme Corps"
+location = 2195
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = hq_brigade
+name = "2eme Corps HQ"
+historical_model = 1
+experience = 15
+}
+
+
+division = {
+expeditionary_owner = BEL
+name = "5eme Division d'Armee"
+location = 2195
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = infantry_brigade
+name = "1/16eme brigades mixte"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "16/17eme brigades mixte"
+historical_model = 6
+experience = 10
+is_reserve = yes
+}
+
+regiment = {
+type = artillery_brigade
+name = "Artillerie div 5/6eme regiments"
+historical_model = 5
+experience = 10
+}
+}
+
+division = {
+expeditionary_owner = BEL
+name = "6eme Division d'Armee"
+location = 2195
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = infantry_brigade
+name = "18/19eme brigades mixte"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "19/20eme brigades mixte"
+historical_model = 6
+experience = 10
+is_reserve = yes
+}
+}
+
+division = {
+expeditionary_owner = BEL
+name = "7eme Division d'Armee"
+location = 2195
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = infantry_brigade
+name = "21/22eme brigades mixte"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "22/23eme brigades mixte"
+historical_model = 6
+experience = 10
+is_reserve = yes
+}
+
+regiment = {
+type = artillery_brigade
+name = "Artillerie div 7/8eme regiments"
+historical_model = 5
+experience = 10
+}
+}
+
+division = {
+expeditionary_owner = BEL
+name = "8eme Division d'Armee"
+location = 2195
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = infantry_brigade
+name = "24/25eme brigades mixte"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "25/26eme brigades mixte"
+historical_model = 6
+experience = 10
+is_reserve = yes
+}
+}
+}
+
+corps = {
+expeditionary_owner = BEL
+name = "3eme Corps"
+location = 2194
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = hq_brigade
+name = "3eme Corps HQ"
+historical_model = 1
+experience = 15
+}
+
+
+division = {
+expeditionary_owner = BEL
+name = "9eme Division d'Armee"
+location = 2194
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = infantry_brigade
+name = "27/28eme brigades mixte"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "28/29eme brigades mixte"
+historical_model = 6
+experience = 10
+is_reserve = yes
+}
+
+regiment = {
+type = artillery_brigade
+name = "Artillerie 9/10eme regiments"
+historical_model = 5
+experience = 10
+}
+}
+
+division = {
+expeditionary_owner = BEL
+name = "10eme Division d'Armee"
+location = 2194
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = infantry_brigade
+name = "30/31eme brigades mixte"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = infantry_brigade
+name = "31/32eme brigades mixte"
+historical_model = 6
+experience = 10
+is_reserve = yes
+}
+}
+
+division = {
+expeditionary_owner = BEL
+name = "Division de Cavalerie"
+location = 2194
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = cavalry_brigade
+name = "1re brigade de guides"
+historical_model = 6
+experience = 10
+}
+
+regiment = {
+type = cavalry_brigade
+name = "2eme brigade de lanciers"
+historical_model = 6
+experience = 10
+}
 }
 }
 }
