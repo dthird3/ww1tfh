@@ -186,6 +186,54 @@ function P.Buildings(voProductionData)
 	
 	return loProdBuilding
 end
+
+function P.ForeignMinister_ProposeWar(voForeignMinisterData)
+	if not(voForeignMinisterData.Strategy:IsPreparingWar()) then
+		if voForeignMinisterData.FactionName == "axis" then
+			local lsMinisterCapital = voForeignMinisterData.Country:GetActingCapitalLocation():GetContinent():GetTag()
+		
+			-- Generic DOW for countries not part of the same faction
+			if not(voForeignMinisterData.IsAtWar) and lsMinisterCapital == "europe" then
+				for loDiploStatus in voForeignMinisterData.Country:GetDiplomacy() do
+					local loTargetTag = loDiploStatus:GetTarget()
+
+					if loTargetTag:IsValid() then
+						local loTargetCountry = loTargetTag:GetCountry()
+						local lsTargetContinent = tostring(loTargetCountry:GetActingCapitalLocation():GetContinent():GetTag())
+						
+						-- Limit DOWs to the same continent as the UKs capital
+						if lsTargetContinent == "scandinavia"
+						or lsTargetContinent == "europe"
+						or lsTargetContinent == "british_isle" then
+							if loDiploStatus:GetThreat():Get() > voForeignMinisterData.Country:GetMaxNeutralityForWarWith(loTargetTag):Get() then
+								if Support_Functions.GoodToWarCheck(loTargetTag, loTargetCountry, voForeignMinisterData, true, false, false, false) then
+									ForeignMinister_War.PrepareWar(loTargetTag, voForeignMinisterData.Country, voForeignMinisterData.Strategy, 100)
+								end
+							end
+						end
+					end
+				end
+			end
+
+			-- Special Checks Start after this point
+			-- Normal DOW checks
+			-- Seperate Watch for Italy
+
+			local loITATag = CCountryDataBase.GetTag("ITA")
+			local loItalyCountry = loITATag:GetCountry()
+
+			if not(voDiploScoreObj.Faction == loItalyCountry:GetFaction()) and voDiploScoreObj.Year > 1914 then
+				loWarTag = loITATag
+			end
+
+			-- Do we have a DOW?
+			if loWarTag ~= nil then
+				ForeignMinister_War.PrepareWar(loWarTag, voForeignMinisterData.Country, voForeignMinisterData.Strategy, 100)
+			end			
+		end
+	end
+end
+
 -- #######################################
 -- SUPPORT METHODS
 -- Setup_Custom is called from GER_FAC.lua and GER.lua
