@@ -18,6 +18,12 @@ function P.Politics_Mobilization(voPoliticsObject)
 	return true
 end
 
+function P.TechList(voTechnologyData)
+	local loPreferTech = Support_Tech.TechGenerator(voTechnologyData, 'Land Strict')
+
+
+	return loPreferTech
+end
 -- #######################################
 -- FOREIGN MINISTER
 function P.ForeignMinister_Alignment(voForeignMinisterData)

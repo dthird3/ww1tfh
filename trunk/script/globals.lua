@@ -1303,19 +1303,19 @@ militia_at = {
 Chk1 = { Priority = 5, Leadership = 0, IC = 0 }
 },
 infantry_activation = {
-Chk1 = { Priority = 100, Leadership = 0, IC = 0 }
+Chk1 = { Priority = 200, Leadership = 0, IC = 0 }
 },
 smallarms_technology = {
-Chk1 = { Priority = 100, Leadership = 0, IC = 0 }
+Chk1 = { Priority = 200, Leadership = 0, IC = 0 }
 },
 infantry_support = {
-Chk1 = { Priority = 100, Leadership = 0, IC = 0 }
+Chk1 = { Priority = 200, Leadership = 0, IC = 0 }
 },
 infantry_guns = {
-Chk1 = { Priority = 100, Leadership = 0, IC = 0 }
+Chk1 = { Priority = 200, Leadership = 0, IC = 0 }
 },
 infantry_at = {
-Chk1 = { Priority = 100, Leadership = 0, IC = 0 }
+Chk1 = { Priority = 200, Leadership = 0, IC = 0 }
 },
 imporved_police_brigade = {
 Chk1 = { Ignore = true }
