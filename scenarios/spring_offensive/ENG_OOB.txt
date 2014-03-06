@@ -1828,24 +1828,9 @@ historical_model = 1
 experience = 15
 }
 
-
 air = {
 expeditionary_owner = BEL
 name = "1. Escadrille"
-location = 2194
-base = 2194
-
-wing = {
-type = scout
-name = "1. Escadrille"
-historical_model = 3
-experience = 15
-}
-}
-
-air = {
-expeditionary_owner = BEL
-name = "2. Escadrille"
 location = 2194
 base = 2194
 
@@ -2188,5 +2173,39 @@ experience = 10
 }
 }
 }
+}
+
+air = {
+expeditionary_owner = ENG
+name = "No1. Royal Flying Corps"
+location = 2425
+base = 2425
+
+wing = {
+name = "1st Fighter Squadron"
+type = interceptor
+historical_model = 3}
+
+wing = {
+name = "2nd Fighter Squadron"
+type = interceptor
+historical_model = 3}
+}
+
+air = {
+expeditionary_owner = ENG
+name = "No4. Royal Flying Corps"
+location = 2425
+base = 2425
+
+wing = {
+name = "1st Bomber Squadron"
+type = tactical_bomber
+historical_model = 4}
+
+wing = {
+name = "2nd Bomber Squadron"
+type = tactical_bomber
+historical_model = 4}
 }
 }
