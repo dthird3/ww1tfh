@@ -1,3 +1,5 @@
+#############################  USA Reinforcements ########################
+
 country_event = {
 	
 	id = 100301
@@ -18,7 +20,7 @@ country_event = {
 	option = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
-		FRA = {load_oob = "scenarios/spring_offensive/USA_OOB/USA_01_APR.txt"}
+		FRA = {load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_01_APR.txt"}
 	}
 }
 
@@ -42,7 +44,7 @@ country_event = {
 	option = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
-		FRA = {load_oob = "scenarios/spring_offensive/USA_OOB/USA_02_MAY.txt"}
+		FRA = {load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_02_MAY.txt"}
 	}
 }
 
@@ -66,7 +68,7 @@ country_event = {
 	option = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
-		FRA = {load_oob = "scenarios/spring_offensive/USA_OOB/USA_03_JUN.txt"}
+		FRA = {load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_03_JUN.txt"}
 	}
 }
 
@@ -90,7 +92,7 @@ country_event = {
 	option = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
-		FRA = {load_oob = "scenarios/spring_offensive/USA_OOB/USA_04_JUL.txt"}
+		FRA = {load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_04_JUL.txt"}
 	}
 }
 
@@ -114,7 +116,7 @@ country_event = {
 	option = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
-		FRA = {load_oob = "scenarios/spring_offensive/USA_OOB/USA_05_AUG.txt"}
+		FRA = {load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_05_AUG.txt"}
 	}
 }
 
@@ -124,7 +126,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		tag = FRA
-		date = 1918.9.7
+		date = 1918.9.3
 	}
 
 	mean_time_to_happen =  {
@@ -138,7 +140,31 @@ country_event = {
 	option = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
-		FRA = {load_oob = "scenarios/spring_offensive/USA_OOB/USA_06_SEP.txt"}
+		FRA = {load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_06_SEP.txt"}
+	}
+}
+
+country_event = {
+
+	id = 100322
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		date = 1918.9.7
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Air_Reinforcements_Title"
+	desc = "American_Airforce_Desc"
+	picture = "SpadVII"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		FRA = {load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_Air.txt"}
 	}
 }
 
@@ -162,7 +188,7 @@ country_event = {
 	option = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
-		FRA = {load_oob = "scenarios/spring_offensive/USA_OOB/USA_07_OCT.txt"}
+		FRA = {load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_07_OCT.txt"}
 	}
 }
 
@@ -186,6 +212,167 @@ country_event = {
 	option = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
-		FRA = {load_oob = "scenarios/spring_offensive/USA_OOB/USA_08_NOV.txt"}
+		FRA = {load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_08_NOV.txt"}
 	}
 }
+
+#############################  FRENCH Reinforcements ########################
+
+country_event = {
+
+	id = 100323
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		date = 1918.5.1
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Air_Reinforcements_Title"
+	desc = "French_Airforce_Desc"
+	picture = "Neiuport"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		FRA = {load_oob = "scenarios/spring_offensive/FRA_Reinforcements/FRA_Air_01.txt"}
+	}
+}
+
+country_event = {
+
+	id = 100324
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		date = 1918.6.1
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Air_Reinforcements_Title"
+	desc = "French_Airforce_Desc"
+	picture = "Neiuport"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		FRA = {load_oob = "scenarios/spring_offensive/FRA_Reinforcements/FRA_Air_02.txt"}
+	}
+}
+
+country_event = {
+
+	id = 100325
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		date = 1918.7.1
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Air_Reinforcements_Title"
+	desc = "French_Airforce_Desc"
+	picture = "Neiuport"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		FRA = {load_oob = "scenarios/spring_offensive/FRA_Reinforcements/FRA_Air_03.txt"}
+	}
+}
+
+
+#############################  ENGLISH Reinforcements ########################
+
+country_event = {
+
+	id = 100326
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		date = 1918.4.15
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Air_Reinforcements_Title"
+	desc = "British_Airforce_Desc"
+	picture = "Sopwith"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		FRA = {load_oob = "scenarios/spring_offensive/ENG_Reinforcements/ENG_Air_01.txt"}
+	}
+}
+
+country_event = {
+
+	id = 100327
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		date = 1918.6.15
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Air_Reinforcements_Title"
+	desc = "British_Airforce_Desc"
+	picture = "Sopwith"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		FRA = {load_oob = "scenarios/spring_offensive/ENG_Reinforcements/ENG_Air_02.txt"}
+	}
+}
+
+
+#############################  ITALIAN Reinforcements ########################
+
+
+
+
+
+
+
+#############################  GERMAN Events ########################
+
+country_event = {
+
+	id = 100328
+	fire_only_once = yes
+	trigger = {
+		tag = GER
+		date = 1918.4.21
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Disaster_Title"
+	desc = "Richthofen_Dies_Desc"
+	picture = "FokkerDrI"
+
+	option = {
+		name = "ACTION_NAME_DAMN"
+		ai_chance = { factor = 100 }
+		kill_leader = 855040
+	}
+}
+

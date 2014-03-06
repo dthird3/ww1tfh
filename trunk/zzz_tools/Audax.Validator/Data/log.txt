@@ -1,6 +1,6 @@
 Log of Audax.Validator, version 1.2 [1.2.11.0]
 
-Current Time: 5/03/2014 1:54:01 PM
+Current Time: 6/03/2014 2:06:06 PM
 .NET Version: 4.0.30319.34011
 OS Version: Microsoft Windows NT 6.2.9200.0
 Current Culture: en-AU
@@ -13,7 +13,7 @@ System Directory: C:\WINDOWS\system32
 User Name: T
 User Domain Name: TREVOR
 User Interactive: True
-Tick Count: 1.02:34:47.9840000
+Tick Count: 2.02:46:53.4370000
 Shutdown Started: False
 
 ENVIRONMENT VARIABLES
@@ -58,31 +58,17 @@ USERDOMAIN: TREVOR
 
 StatusLog > Beginning initialization...
 StatusLog > Initialization complete!
-StatusLog > 
-StatusLog > 
-StatusLog > 
-StatusLog > ERROR
-StatusLog > System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\Paradox Interactive 4.02\Hearts of Iron III\tfh\mod\tfh\mod'.
-StatusLog >    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-StatusLog >    at System.IO.FileSystemEnumerableIterator`1.CommonInit()
-StatusLog >    at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
-StatusLog >    at System.IO.Directory.EnumerateFiles(String path, String searchPattern, SearchOption searchOption)
-StatusLog >    at Audax.Clausewitz.IO.Hoi3Tfh.Hoi3TfhFileSystem.EnumerateMods()
-StatusLog >    at Audax.Validator.ValidationManager.SetPath(GameFileSystem system)
-StatusLog >    at Audax.Validator.ValidationManager.Run(Dispatcher dispatcher)
 StatusLog > Beginning validation...
+StatusLog > Beginning Events validation...
+StatusLog > Events validation complete!
+StatusLog > Beginning Localization validation...
+StatusLog > Localization validation complete!
 StatusLog > Beginning Orders of Battle validation...
 StatusLog > Orders of Battle validation complete!
 StatusLog > Validation complete!
 StatusLog > Beginning validation...
-StatusLog > Beginning Orders of Battle validation...
-StatusLog > Orders of Battle validation complete!
-StatusLog > Validation complete!
-StatusLog > Beginning validation...
-StatusLog > Beginning Orders of Battle validation...
-StatusLog > Orders of Battle validation complete!
-StatusLog > Validation complete!
-StatusLog > Beginning validation...
+StatusLog > Beginning Events validation...
+StatusLog > Events validation complete!
 StatusLog > Beginning Orders of Battle validation...
 StatusLog > Orders of Battle validation complete!
 StatusLog > Validation complete!
