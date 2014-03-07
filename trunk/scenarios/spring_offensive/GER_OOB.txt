@@ -2,7 +2,7 @@ theatre = {
 name = "SPA GHQ"
 location = 2256
 dig_in = 10.000
-leader = 855080
+leader = 855464
 
 regiment = {
 type = hq_brigade
@@ -15,7 +15,7 @@ armygroup = {
 name = "Crown Prince Rupprecht's Army Group"
 location = 2197
 dig_in = 10.000
-leader = 0000
+leader = 855527
 
 regiment = {
 type = hq_brigade
@@ -30,11 +30,24 @@ army = {
 name = "4. Armee"
 location = 2196
 dig_in = 10.000
-leader = 0000
+leader = 855106
 
 regiment = {
 type = hq_brigade
 name = "14th HQ Brigade"
+historical_model = 3
+experience = 0
+}
+
+corps = {
+name = "I. Armeekorps"
+location = 2137
+dig_in = 10.000
+leader = 000000
+
+regiment = {
+type = hq_brigade
+name = "I. Armeekorps HQ"
 historical_model = 3
 experience = 0
 }
@@ -170,6 +183,20 @@ name = "25th Art Brigade"
 historical_model = 6
 experience = 10
 }
+}
+}
+
+corps = {
+name = "II. Armeekorps"
+location = 2137
+dig_in = 10.000
+leader = 000000
+
+regiment = {
+type = hq_brigade
+name = "II. Armeekorps HQ"
+historical_model = 3
+experience = 0
 }
 
 division = {
@@ -311,6 +338,20 @@ historical_model = 6
 experience = 10
 }
 }
+}
+
+corps = {
+name = "V. Armeekorps"
+location = 2137
+dig_in = 10.000
+leader = 000000
+
+regiment = {
+type = hq_brigade
+name = "V. Armeekorps HQ"
+historical_model = 3
+experience = 0
+}
 
 division = {
 name = "16. Infanterie-Division"
@@ -450,6 +491,20 @@ name = "15th Art Brigade"
 historical_model = 6
 experience = 10
 }
+}
+}
+
+corps = {
+name = "VII. Armeekorps"
+location = 2196
+dig_in = 10.000
+leader = 000000
+
+regiment = {
+type = hq_brigade
+name = "VII. Armeekorps HQ"
+historical_model = 3
+experience = 0
 }
 
 division = {
@@ -593,6 +648,20 @@ historical_model = 6
 experience = 10
 }
 }
+}
+
+corps = {
+name = "VIII. Armeekorps"
+location = 2196
+dig_in = 10.000
+leader = 000000
+
+regiment = {
+type = hq_brigade
+name = "VIII. Armeekorps HQ"
+historical_model = 3
+experience = 0
+}
 
 division = {
 name = "31. Infanterie-Division"
@@ -727,6 +796,7 @@ experience = 10
 }
 }
 }
+}
 
 ###################### 6th Army #######################
 
@@ -734,11 +804,24 @@ army = {
 name = "6. Armee"
 location = 2253
 dig_in = 10.000
+leader = 855030
+
+regiment = {
+type = hq_brigade
+name = "6. Armee HQ"
+historical_model = 3
+experience = 0
+}
+
+corps = {
+name = "X. Armeekorps"
+location = 2252
+dig_in = 10.000
 leader = 000000
 
 regiment = {
 type = hq_brigade
-name = "13th HQ Brigade"
+name = "X. Armeekorps HQ"
 historical_model = 3
 experience = 0
 }
@@ -903,10 +986,24 @@ historical_model = 6
 experience = 10
 }
 }
+}
+
+corps = {
+name = "XII. Armeekorps"
+location = 2252
+dig_in = 10.000
+leader = 000000
+
+regiment = {
+type = hq_brigade
+name = "XII. Armeekorps HQ"
+historical_model = 3
+experience = 0
+}
 
 division = {
 name = "4. Ersatz-Division"
-location = 2252
+location = 2253
 dig_in = 10.000
 leader = 0000
 
@@ -1066,6 +1163,7 @@ experience = 10
 }
 }
 }
+}
 
 ###################### 17th Army ######################
 
@@ -1073,7 +1171,7 @@ army = {
 name = "17. Armee"
 location = 2310
 dig_in = 10.000
-leader = 0000
+leader = 855053
 
 regiment = {
 type = hq_brigade
@@ -1733,7 +1831,7 @@ army = {
 name = "2. Armee"
 location = 14155
 dig_in = 10.000
-leader = 0000
+leader = 855027
 
 regiment = {
 type = hq_brigade
@@ -2488,7 +2586,7 @@ armygroup = {
 name = "German Crown Prince's Army Group"
 location = 2369
 dig_in = 10.000
-leader = 0000
+leader = 855528
 
 regiment = {
 type = hq_brigade
@@ -2501,7 +2599,7 @@ army = {
 name = "18. Armee"
 location = 14157
 dig_in = 10.000
-leader = 0000
+leader = 855024
 
 regiment = {
 type = hq_brigade
@@ -3215,7 +3313,7 @@ corps = {
 name = "Gruppe Gayl"
 location = 2487
 dig_in = 10.000
-leader = 000000
+leader = 855529
 
 regiment = {
 type = hq_brigade
@@ -3338,15 +3436,27 @@ army = {
 name = "7. Armee"
 location = 2368
 dig_in = 10.000
-leader = 000000
+leader = 855056
 
 regiment = {
 type = hq_brigade
-name = "13th HQ Brigade"
+name = "7. Armee HQ"
 historical_model = 3
 experience = 0
 }
 
+corps = {
+name = "XV Amreekorps"
+location = 2550
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = hq_brigade
+name = "XV Amreekorps HQ"
+historical_model = 3
+experience = 0
+}
 
 division = {
 name = "3. Bavarian-Division"
@@ -3487,6 +3597,20 @@ historical_model = 6
 experience = 10
 }
 }
+}
+
+corps = {
+name = "XVI Amreekorps"
+location = 2550
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = hq_brigade
+name = "XV Amreekorps HQ"
+historical_model = 3
+experience = 0
+}
 
 division = {
 name = "192. Infanterie-Division"
@@ -3600,6 +3724,7 @@ experience = 10
 }
 }
 }
+}
 
 ################################ 1st ARMY #############################
 
@@ -3607,11 +3732,24 @@ army = {
 name = "1. Armee"
 location = 2368
 dig_in = 10.000
-leader = 000000
+leader = 855052
 
 regiment = {
 type = hq_brigade
 name = "13th HQ Brigade"
+historical_model = 3
+experience = 0
+}
+
+corps = {
+name = "XIX Amreekorps"
+location = 2615
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = hq_brigade
+name = "XIX Amreekorps HQ"
 historical_model = 3
 experience = 0
 }
@@ -3755,6 +3893,20 @@ historical_model = 6
 experience = 10
 }
 }
+}
+
+corps = {
+name = "XX Amreekorps"
+location = 2615
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = hq_brigade
+name = "XX Amreekorps HQ"
+historical_model = 3
+experience = 0
+}
 
 division = {
 name = "??. Infanterie-Division"
@@ -3867,8 +4019,22 @@ historical_model = 6
 experience = 10
 }
 }
+}
 
 ##################### 1st Army Reserves ######################
+
+corps = {
+name = "XXI Amreekorps"
+location = 2368
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = hq_brigade
+name = "XXI Amreekorps HQ"
+historical_model = 3
+experience = 0
+}
 
 division = {
 name = "10. Reserve-Division"
@@ -4038,6 +4204,7 @@ experience = 10
 }
 }
 }
+}
 
 ############################# 3rd Army ##############################
 
@@ -4045,11 +4212,24 @@ army = {
 name = "3. Armee"
 location = 2428
 dig_in = 10.000
-leader = 000000
+leader = 855022
 
 regiment = {
 type = hq_brigade
 name = "13th HQ Brigade"
+historical_model = 3
+experience = 0
+}
+
+corps = {
+name = "XXIV Amreekorps"
+location = 2488
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = hq_brigade
+name = "XXIV Amreekorps HQ"
 historical_model = 3
 experience = 0
 }
@@ -4193,6 +4373,20 @@ historical_model = 6
 experience = 10
 }
 }
+}
+
+corps = {
+name = "XXV Armeekorps"
+location = 2615
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = hq_brigade
+name = "XXV Armeekorps HQ"
+historical_model = 3
+experience = 0
+}
 
 division = {
 name = "30. Infanterie-Division"     
@@ -4291,8 +4485,22 @@ historical_model = 6
 experience = 10
 }
 }
+}
 
 ##################### 3rd Army Reserves ######################
+
+corps = {
+name = "XXVI Amreekorps"
+location = 2488
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = hq_brigade
+name = "XXVI Amreekorps HQ"
+historical_model = 3
+experience = 0
+}
 
 division = {
 name = "80. Reserve-Division"
@@ -4407,6 +4615,7 @@ experience = 10
 }
 }
 }
+}
 
 
 ####################  von GALLWITZ'S GROUP OF ARMIES  ###################
@@ -4415,7 +4624,7 @@ armygroup = {
 name = "von Gallwitz's Army Group"
 location = 2371
 dig_in = 10.000
-leader = 855027
+leader = 855017
 
 regiment = {
 type = hq_brigade
@@ -4424,15 +4633,29 @@ historical_model = 3
 experience = 0
 }
 
+
 army = {
 name = "C Detachment"
 location = 2429
 dig_in = 10.000
-leader = 855056
+leader = 855445
 
 regiment = {
 type = hq_brigade
 name = "9th HQ Brigade"
+historical_model = 3
+experience = 0
+}
+
+corps = {
+name = "XXVII Amreekorps"
+location = 2617
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = hq_brigade
+name = "XXVII Amreekorps HQ"
 historical_model = 3
 experience = 0
 }
@@ -4541,6 +4764,21 @@ historical_model = 6
 experience = 10
 }
 }
+}
+
+corps = {
+name = "XXVIII Amreekorps"
+location = 2617
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = hq_brigade
+name = "XXVIII Amreekorps HQ"
+historical_model = 3
+experience = 0
+}
+
 
 division = {
 name = "201. Infanterie-Division"
@@ -4625,6 +4863,20 @@ historical_model = 6
 experience = 10
 }
 }
+}
+
+corps = {
+name = "XXIX Amreekorps"
+location = 2429
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = hq_brigade
+name = "XXIX Amreekorps HQ"
+historical_model = 3
+experience = 0
+}
 
 division = {
 name = "121. Infanterie-Division"
@@ -4656,7 +4908,7 @@ experience = 10
 
 division = {
 name = "3. Landwehr-Division"
-location = 2617
+location = 2429
 dig_in = 10.000
 leader = 855124
 
@@ -4705,6 +4957,7 @@ experience = 10
 }
 }
 }
+}
 
 
 
@@ -4712,11 +4965,24 @@ army = {
 name = "5. Armee"
 location = 2489
 dig_in = 10.000
-leader = 855056
+leader = 855019
 
 regiment = {
 type = hq_brigade
 name = "9th HQ Brigade"
+historical_model = 3
+experience = 0
+}
+
+corps = {
+name = "XXX Amreekorps"
+location = 2551
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = hq_brigade
+name = "XXX Amreekorps HQ"
 historical_model = 3
 experience = 0
 }
@@ -4852,6 +5118,20 @@ name = "54th Art Brigade"
 historical_model = 6
 experience = 10
 }
+}
+}
+
+corps = {
+name = "XXXI Amreekorps"
+location = 2551
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = hq_brigade
+name = "XXXI Amreekorps HQ"
+historical_model = 3
+experience = 0
 }
 
 division = {
@@ -4992,6 +5272,20 @@ name = "54th Art Brigade"
 historical_model = 6
 experience = 10
 }
+}
+}
+
+corps = {
+name = "XXXII Armeekorps"
+location = 2489
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = hq_brigade
+name = "XXXII Armeekorps HQ"
+historical_model = 3
+experience = 0
 }
 
 division = {
@@ -5144,14 +5438,15 @@ regiment = {
 type = infantry_brigade
 name = "222nd Inf Brigade"
 historical_model = 6
-experience = 10
+experience = 15
 }
 
 regiment = {
 type = infantry_brigade
 name = "223rd Inf Brigade"
 historical_model = 6
-experience = 10
+experience = 15
+}
 }
 }
 }
@@ -5164,11 +5459,11 @@ armygroup = {
 name = "Duke Albrecht's Army Group"
 location = 2685
 dig_in = 10.000
-leader = 855027
+leader = 855316
 
 regiment = {
 type = hq_brigade
-name = "13th HQ Brigade"
+name = "Duke Albrecht's HQ"
 historical_model = 3
 experience = 0
 }
@@ -5177,11 +5472,24 @@ army = {
 name = "B Detachment"
 location = 2948
 dig_in = 10.000
-leader = 855027
+leader = 855080
 
 regiment = {
 type = hq_brigade
 name = "13th HQ Brigade"
+historical_model = 3
+experience = 0
+}
+
+corps = {
+name = "XXXIII Armeekorps"
+location = 3150
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = hq_brigade
+name = "XXXIII Armeekorps HQ"
 historical_model = 3
 experience = 0
 }
@@ -5211,7 +5519,7 @@ division = {
 name = "44. Landwehr-Division"
 location = 3150
 dig_in = 10.000
-leader = 855106
+leader = 0000
 
 regiment = {
 type = infantry_brigade
@@ -5283,12 +5591,26 @@ historical_model = 6
 experience = 10
 }
 }
+}
+
+corps = {
+name = "XXXIV Armeekorps"
+location = 2947
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = hq_brigade
+name = "XXXIV Armeekorps HQ"
+historical_model = 3
+experience = 0
+}
 
 division = {
 name = "26. Landwehr-Division"
 location = 2947
 dig_in = 10.000
-leader = 855316
+leader = 0000
 
 regiment = {
 type = infantry_brigade
@@ -5359,6 +5681,20 @@ name = "61. Landwehr Brigade"
 historical_model = 6
 experience = 10
 }
+}
+}
+
+corps = {
+name = "XXXVI Armeekorps"
+location = 2814
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = hq_brigade
+name = "XXXVI Armeekorps HQ"
+historical_model = 3
+experience = 0
 }
 
 division = {
@@ -5494,6 +5830,8 @@ historical_model = 6
 experience = 10
 }
 }
+}
+
 division = {
 name = "Jager-Division"
 location = 3016
@@ -5549,6 +5887,7 @@ historical_model = 6
 experience = 10
 }
 }
+
 division = {
 name = "26. Reserve-Division"
 location = 2881
@@ -5579,16 +5918,28 @@ experience = 10
 }
 
 
-
 army = {
 name = "A Detachment"
 location = 2553
 dig_in = 10.000
-leader = 855027
+leader = 855100
 
 regiment = {
 type = hq_brigade
 name = "13th HQ Brigade"
+historical_model = 3
+experience = 0
+}
+
+corps = {
+name = "LII Armeekorps"
+location = 2684
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = hq_brigade
+name = "LII Armeekorps HQ"
 historical_model = 3
 experience = 0
 }
@@ -5746,6 +6097,20 @@ historical_model = 6
 experience = 10
 }
 }
+}
+
+corps = {
+name = "LIII Armeekorps"
+location = 2552
+dig_in = 10.000
+leader = 0000
+
+regiment = {
+type = hq_brigade
+name = "LIII Armeekorps HQ"
+historical_model = 3
+experience = 0
+}
 
 division = {
 name = "46. Reserve Infanterie-Division"
@@ -5851,6 +6216,7 @@ type = bergsjaeger_brigade
 name = "158th Inf Brigade"
 historical_model = 6
 experience = 10
+}
 }
 }
 }
