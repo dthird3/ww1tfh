@@ -146,11 +146,11 @@ country_event = {
 
 country_event = {
 
-	id = 100322
+	id = 100314
 	fire_only_once = yes
 	trigger = {
 		tag = FRA
-		date = 1918.9.7
+		date = 1918.5.7
 	}
 
 	mean_time_to_happen =  {
@@ -164,7 +164,31 @@ country_event = {
 	option = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
-		FRA = {load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_Air.txt"}
+		FRA = {load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_Air_01.txt"}
+	}
+}
+
+country_event = {
+
+	id = 100315
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		date = 1918.6.7
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Air_Reinforcements_Title"
+	desc = "American_Airforce_Desc"
+	picture = "SpadVII"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		FRA = {load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_Air_02.txt"}
 	}
 }
 
