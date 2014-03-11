@@ -1,0 +1,39 @@
+#Beiyang Government
+
+country_event = {
+
+		id = 999953
+
+		major = yes
+
+		fire_only_once = yes
+
+		trigger = {
+			tag = PRC	
+			has_country_flag = republic_china
+			not = { has_country_flag = beiyang_government }
+		}
+
+		mean_time_to_happen = {
+			days = 15
+		}
+
+		title = "ROCE1"
+		desc = "desc_ROCE1"
+		picture = "ROCE1"
+
+		option = {
+			name = "opta_ROCE1"
+			ai_chance = { factor = 100 }
+			release = CHC
+				
+			CHC = { inherit = PRC }
+			PRC = { any_owned = { limit = { is_core = PRC } remove_core = PRC } }
+
+			CHC = { split_troops = 1.00 }
+			
+			CHC = { capital = 4979 }
+			
+			set_country_flag = beiyang_government
+		}
+}
