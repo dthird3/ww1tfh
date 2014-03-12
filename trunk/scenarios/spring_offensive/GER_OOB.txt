@@ -6,7 +6,7 @@ leader = 855464
 
 regiment = {
 type = hq_brigade
-name = "SPA GHQ Brigade"
+name = "SPA GHQ"
 historical_model = 3
 experience = 3
 }
@@ -6206,14 +6206,14 @@ leader = 0000
 
 regiment = {
 type = bergsjaeger_brigade
-name = "157th Inf Brigade"
+name = "1. Alpine Brigade"
 historical_model = 6
 experience = 10
 }
 
 regiment = {
 type = bergsjaeger_brigade
-name = "158th Inf Brigade"
+name = "2. Alpine Brigade"
 historical_model = 6
 experience = 10
 }
@@ -6224,33 +6224,49 @@ experience = 10
 
 
 air = {
-name = "Fliegertruppe 2"
+name = "Fliegertruppe 11"
 location = 2311
 base = 2311
 
 wing = {
-name = "Feldflieger-Abteilung 3"
+name = "Feldflieger-Abteilung 21"
 type = tactical_bomber
 historical_model = 4}
 
 wing = {
-name = "Feldflieger-Abteilung 4"
+name = "Feldflieger-Abteilung 22"
 type = tactical_bomber
 historical_model = 4}
 }
 
 air = {
-name = "Fliegertruppe 4"
+name = "Fliegertruppe 12"
 location = 2311
 base = 2311
 
 wing = {
-name = "Feldflieger-Abteilung 7"
+name = "Feldflieger-Abteilung 23"
 type = tactical_bomber
 historical_model = 4}
 
 wing = {
-name = "Feldflieger-Abteilung 8"
+name = "Feldflieger-Abteilung 24"
+type = tactical_bomber
+historical_model = 4}
+}
+
+air = {
+name = "Fliegertruppe 13"
+location = 2311
+base = 2311
+
+wing = {
+name = "Feldflieger-Abteilung 25"
+type = tactical_bomber
+historical_model = 4}
+
+wing = {
+name = "Feldflieger-Abteilung 26"
 type = tactical_bomber
 historical_model = 4}
 }
@@ -6258,9 +6274,9 @@ historical_model = 4}
 
 air = {
 name = "Fliegertruppe 1"
-location = 2309
-base = 2309
-leader = 855040
+location = 2310
+base = 2310
+leader = 855040						# Enforce Richthofen to INTs
 
 wing = {
 name = "Feldflieger-Abteilung 1"
@@ -6274,9 +6290,28 @@ historical_model = 3}
 }
 
 air = {
+leader = 855046
+name = "Fliegertruppe 2"
+location = 14157
+base = 14157
+
+wing = {
+name = "Feldflieger-Abteilung 3"
+type = interceptor
+historical_model = 3}
+
+wing = {
+name = "Feldflieger-Abteilung 4"
+type = interceptor
+historical_model = 3}
+}
+
+
+air = {
+leader = 855344
 name = "Fliegertruppe 3"
-location = 2309
-base = 2309
+location = 2368
+base = 2368
 
 wing = {
 name = "Feldflieger-Abteilung 5"
@@ -6289,11 +6324,28 @@ type = interceptor
 historical_model = 3}
 }
 
+air = {
+leader = 855149
+name = "Fliegertruppe 4"
+location = 2615
+base = 2615
+
+wing = {
+name = "Feldflieger-Abteilung 7"
+type = interceptor
+historical_model = 3}
+
+wing = {
+name = "Feldflieger-Abteilung 8"
+type = interceptor
+historical_model = 3}
+}
 
 air = {
+leader = 855296
 name = "Fliegertruppe 5"
-location = 2550
-base = 2550
+location = 2489
+base = 2489
 
 wing = {
 name = "Feldflieger-Abteilung 9"
@@ -6307,18 +6359,34 @@ historical_model = 3}
 }
 
 air = {
-name = "Fliegertruppe 6"
-location = 2550
-base = 2550
+name = "Fliegertruppe 21"
+location = 14157
+base = 14157
 
 wing = {
-name = "Feldflieger-Abteilung 11"
-type = interceptor
+name = "Feldflieger-Abteilung 41"
+type = scout
 historical_model = 3}
 
 wing = {
-name = "Feldflieger-Abteilung 12"
-type = interceptor
+name = "Feldflieger-Abteilung 42"
+type = scout
+historical_model = 3}
+}
+
+air = {
+name = "Fliegertruppe 22"
+location = 2368
+base = 2368
+
+wing = {
+name = "Feldflieger-Abteilung 43"
+type = scout
+historical_model = 3}
+
+wing = {
+name = "Feldflieger-Abteilung 44"
+type = scout
 historical_model = 3}
 }
 }
