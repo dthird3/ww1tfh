@@ -26,9 +26,9 @@ diplomatic_decisions = {
 			NOT = { GER = { has_country_flag = Zeppelin_bombing } }			
 			}
 			
-		allow = { date = 1915.1.1 }
+#		allow = { date = 1915.1.1 }
 #		allow = { total_we_bomb = 4 }						# Can't rely on AI to trigger this. Fine for human players. This includes TAC on ground attack missions, calculated daily.
-#				ENG = { strat_bomb_impact = 0.01 }			# Doesn't seem to trigger
+		allow = { not = { ENG = { strat_bomb_impact = 0.0 } } }			# Doesn't seem to trigger
 			
 		effect = {
 			GER = { set_country_flag = Zeppelin_bombing }
