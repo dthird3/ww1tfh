@@ -214,9 +214,13 @@ country_event = {
 					date = 1916.4.1									
 					GER = { has_country_flag = break_blockade }
 			}
+			AND = {
+				GER = { total_sea_battles = 1 }
+				ENG = { total_sea_battles = 1 }
+			}
 		}
 		
-		mean_time_to_happen = {	months = 2 }
+		mean_time_to_happen = {	days = 1 }
 		
 		fire_only_once = yes
 
