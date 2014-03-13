@@ -14,10 +14,28 @@ diplomatic_decisions = {
 		}
 		effect = {
 			set_country_flag = ser_ultamatium
-			country_event = 100142
+			SER = { country_event = 100148 }
 			dissent = 2
 			money = 100
 			manpower = 30
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	vs_plan = {
+		potential = {
+			tag = GER
+			has_country_flag = russia_mobilized
+
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			set_country_flag = vsplan
+			GER = { country_event = 100145 }
 		}
 		ai_will_do = {
 			factor = 1
