@@ -170,6 +170,7 @@ function P.Alliance(voForeignMinisterData)
 			
 				if P.Can_Click_Button(loTarget, voForeignMinisterData) then
 					loTarget.ActorScore = DiploScore_Alliance(voForeignMinisterData.ministerAI, voForeignMinisterData.Tag, loTarget.Tag, nil)
+					loTarget.TargetScore = DiploScore_Alliance(voForeignMinisterData.ministerAI, loTarget.Tag, voForeignMinisterData.Tag, nil)
 					--Utils.LUA_DEBUGOUT("AllianceStart " .. tostring(voForeignMinisterData.Tag).. " tag " .. tostring(voForeignMinisterData.Tag).." target " .. tostring(loTarget.Tag).. " score " .. tostring(loTarget.ActorScore))	
 					if not(loTarget.Relation:HasAlliance()) then
 						loTarget.TargetScore = DiploScore_Alliance(voForeignMinisterData.ministerAI, loTarget.Tag, voForeignMinisterData.Tag, nil)
@@ -184,7 +185,7 @@ function P.Alliance(voForeignMinisterData)
 							end
 						end
 					else
-						if loTarget.ActorScore < 50 then
+						if loTarget.TargetScore < 50 then
 						
 							--Utils.LUA_DEBUGOUT("check<50 " .. tostring(loTarget.ActorScore))
 							if P.Command_Alliance(voForeignMinisterData.minister, voForeignMinisterData.Tag, loTarget.Tag, true, 100) then
