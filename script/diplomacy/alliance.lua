@@ -170,19 +170,23 @@ function P.Alliance(voForeignMinisterData)
 			
 				if P.Can_Click_Button(loTarget, voForeignMinisterData) then
 					loTarget.ActorScore = DiploScore_Alliance(voForeignMinisterData.ministerAI, voForeignMinisterData.Tag, loTarget.Tag, nil)
-					
+					--Utils.LUA_DEBUGOUT("AllianceStart " .. tostring(voForeignMinisterData.Tag).. " tag " .. tostring(voForeignMinisterData.Tag).." target " .. tostring(loTarget.Tag).. " score " .. tostring(loTarget.ActorScore))	
 					if not(loTarget.Relation:HasAlliance()) then
 						loTarget.TargetScore = DiploScore_Alliance(voForeignMinisterData.ministerAI, loTarget.Tag, voForeignMinisterData.Tag, nil)
 						loTarget.SpamPenalty = voForeignMinisterData.ministerAI:GetSpamPenalty(loTarget.Tag)
 						loTarget.FinalScore = math.min(loTarget.ActorScore, loTarget.TargetScore) - loTarget.SpamPenalty
 						
 						if loTarget.FinalScore > 70 then
+							
+							--Utils.LUA_DEBUGOUT("check>70 " .. tostring(loTarget.FinalScore))	
 							if P.Command_Alliance(voForeignMinisterData.minister, voForeignMinisterData.Tag, loTarget.Tag, false, loTarget.FinalScore) then
 								break
 							end
 						end
 					else
 						if loTarget.ActorScore < 50 then
+						
+							--Utils.LUA_DEBUGOUT("check<50 " .. tostring(loTarget.ActorScore))
 							if P.Command_Alliance(voForeignMinisterData.minister, voForeignMinisterData.Tag, loTarget.Tag, true, 100) then
 								break
 							end
@@ -195,12 +199,16 @@ function P.Alliance(voForeignMinisterData)
 end
 function P.Command_Alliance(voMinister, voFromTag, voTargetTag, vbCancel, viScore)
 --Utils.LUA_DEBUGOUT("Command_Alliance")
+
 	local loCommand = CAllianceAction(voFromTag, voTargetTag)
 	
+	--Utils.LUA_DEBUGOUT("cancelcheck " .. tostring(vbCancel))
 	if vbCancel then
 		loCommand:SetValue(false)
 	end
 
+	
+	--Utils.LUA_DEBUGOUT("selectcheck " .. tostring(loCommand:IsSelectable()))
 	if loCommand:IsSelectable() then
 		voMinister:Propose(loCommand, viScore )
 		return true

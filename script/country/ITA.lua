@@ -225,23 +225,26 @@ end
 
 function P.DiploScore_Alliance(voDiploScoreObj)
 	local loScoreCheck = {
-		AUH = {Score = 100, WarCheck = true},
-		GER = {Score = 100, WarCheck = true}}	
-		
+		AUH = {Score = 200, WarCheck = true},
+		GER = {Score = 200, WarCheck = true}}	
+	--Utils.LUA_DEBUGOUT("Italian Alliance " .. tostring(voDiploScoreObj.Actor.Name))	
 	if loScoreCheck[voDiploScoreObj.Actor.Name] then
 		if loScoreCheck[voDiploScoreObj.Actor.Name].WarCheck then
 			local laWarCheck = {"ENG", "FRA", "RUS"}
 		
 			for i = 1, table.getn(laWarCheck) do
+			
 				local loTag = CCountryDataBase.GetTag(laWarCheck[i])
 				local loRelation = voDiploScoreObj.Target.Country:GetRelation(loTag)
+				
+				
+				--Utils.LUA_DEBUGOUT("checking " .. tostring(loTag) .. "Score " .. tostring(loScoreCheck[voDiploScoreObj.Actor.Name].Score))	
 				
 				if not(loRelation:HasWar()) then
 					return loScoreCheck[voDiploScoreObj.Actor.Name].Score
 				else
 				end
 			end
-			return 0
 		end
 	end	
 	
