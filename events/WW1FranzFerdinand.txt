@@ -37,7 +37,37 @@ country_event = {
 			remove_minister = 860044 								#Remove Ferdinand as minister
 		}
 }
+#Serbia considers ultimatum
+country_event = {
+		
+		id = 100148
+		
+		major = yes
+		
+		is_triggered_only = yes
+		
+		title = "SERE2"
+		desc = "desc_SERE2"
+		picture = "AUHP1"
 
+		option = {
+			name = "opta_SERE2"
+			ai_chance = { factor = 100 }
+			AUH = { country_event = 100142 }
+		}
+		option = {
+			name = "optb_SERE2"
+			ai_chance = { factor = 0 }						
+			RUS = { country_event = 100143 }
+			AUH = { create_vassal = SER }
+			join_faction = axis
+			relation = { who = RUS value = -25 }
+			relation = { who = ENG value = -15 }
+			relation = { who = FRA value = -15 }
+			relation = { who = GER value = 25 }
+			relation = { who = AUH value = 50 }
+		}
+}
 #July 23 – Austria-Hungary presents Serbia with an unconditional ultimatum. (WAR DECLARED SERBIA)
 country_event = {
 
@@ -55,6 +85,7 @@ country_event = {
 
 		option = {
 			name = "opta_AUHE1"
+			ai_chance = { factor = 100 }			
 			set_country_flag = serbian_ultamatium
 			threat = { who = all value = 20 } 
 			threat = { who = USA value = -20 }						# USA doesn't care and is to remain neutral
@@ -64,6 +95,15 @@ country_event = {
 					attacker_goal = { casus_belli= conquer }
 					}
 				}
+		}
+		option = {
+			name = "optb_AUHE1"
+			ai_chance = { factor = 0 }			
+			set_country_flag = serbian_ultamatium
+			threat = { who = all value = 5 } 
+			threat = { who = USA value = -5 }						# USA doesn't care and is to remain neutral
+			RUS = { country_event = 100143 }
+			dissent = 10
 		}
 	}
 	
@@ -84,6 +124,7 @@ country_event = {
 
 		option = {
 			name = "opta_RUSE1"
+			ai_chance = { factor = 1000 }			
 			set_country_flag = russia_mobilized
 			manpower = 50
 			neutrality = -50
@@ -91,9 +132,17 @@ country_event = {
 			threat = { who = all value = 10 } 
 			threat = { who = USA value = -10 }						# USA doesn't care and is to remain neutral
 			AUH = { country_event = 100144 }
-			ITA = { country_event = 999949 }
 			AUH = { any_owned = { limit = { is_core = UKR } add_core = RUS } }
 			AUH = { any_owned = { limit = { is_core = POL } add_core = RUS } }
+		}
+		option = {
+			name = "optb_RUSE1"
+			ai_chance = { factor = 0 }			
+			set_country_flag = russia_mobilized
+			manpower = -150
+			neutrality = 5
+			money = -100
+			AUH = { country_event = 100144 }
 		}
 	}
 	
@@ -120,10 +169,12 @@ country_event = {
 			relation = { who = ENG value = -20 }
 			relation = { who = FRA value = -20 }
 			relation = { who = GER value = 50 }
-			relation = { who = ITA value = 10 }
+			relation = { who = ITA value = 10 }			
 			TUR = { neutrality = -10 }
 			relation = { who = TUR value = 25 }
 			national_unity = 10
+			ITA = { country_event = 999949 }
+			GER = { set_country_flag = russia_mobilized }
 		}
 }
 	
@@ -178,16 +229,7 @@ country_event = {
 		
 		major = yes
 
-		trigger = {
-			tag = GER
-			exists = AUH
-			exists = LUX
-			date = 1914.8.2
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
+		is_triggered_only = yes
 
 		fire_only_once = yes
 
@@ -197,6 +239,7 @@ country_event = {
 
 		option = {
 			name = "opta_GERE2"
+			ai_chance = { factor = 100 }
 			set_country_flag = germany_mobilize
 			neutrality = -50
 			manpower = 300
@@ -205,7 +248,7 @@ country_event = {
 			threat = { who = USA value = -10 }						# USA doesn't care and is to remain neutral
 			national_unity = 50
 			BEL = { join_faction = allies }
-			SER = { join_faction = allies }
+			LUX = { join_faction = allies }
 			SAF = { leave_faction = allies }						# Avoid SAF going to war until SAF Decides event
 			SAF = { leave_alliance = ENG }
 			GER = {threat = { who = SAF value = -60 }}
@@ -220,16 +263,134 @@ country_event = {
 			}
 			war = {	
 				target = FRA
+				attacker_goal = { casus_belli = german_france }
+				defender_goal = { casus_belli = allies_germany }
+			}
+			war = {	
+				target = RUS
+				attacker_goal = { casus_belli = axis_russia }
+				defender_goal = { casus_belli = allies_germany }
+			}
+			war = {	
+				target = RUS
+				attacker_goal = { casus_belli = axis_england }
+				defender_goal = { casus_belli = allies_germany }
+			}
+			add_country_modifier = {
+				name = "schlieffen"
+				duration = 90
+			}
+			
+			random_country = {
+				limit = {
+					tag = AUH
+					war_with = SER
+				}
+				AUH = { country_event = 100147 }
+			}							# Montenegro event
+			SAF = { country_event = 2008000 }      					# SAF chooses to support Entente or stay neutral
+			ENG = { country_event = 190502 }						#
+			AUH = {threat = { who = USA value = -20 }}				# USA doesn't care and is to remain neutral
+			GER = {threat = { who = USA value = -35 }}				# USA doesn't care and is to remain neutral
+		}
+		option = {
+			name = "optb_GERE2"
+			ai_chance = { factor = 0 }
+			set_country_flag = germany_mobilize
+			neutrality = -50
+			manpower = 400
+			money = 100
+			threat = { who = all value = 15 }
+			threat = { who = USA value = -15 }						# USA doesn't care and is to remain neutral
+			national_unity = 50
+			BEL = { join_faction = allies }
+			HOL = { join_faction = allies }
+			LUX = { join_faction = allies }
+			SAF = { leave_faction = allies }						# Avoid SAF going to war until SAF Decides event
+			SAF = { leave_alliance = ENG }
+			GER = {threat = { who = SAF value = -60 }}
+			AUH = {threat = { who = SAF value = -40 }}
+			war = {	
+				target = LUX
 				attacker_goal = { casus_belli = conquer }
+			}
+			war = {	
+				target = BEL
+				attacker_goal = { casus_belli = conquer }
+			}
+			war = {	
+				target = HOL
+				attacker_goal = { casus_belli = conquer }
+			}
+			war = {	
+				target = FRA
+				attacker_goal = { casus_belli = german_france }
+				defender_goal = { casus_belli = allies_germany }
+			}
+			war = {	
+				target = RUS
+				attacker_goal = { casus_belli = axis_russia }
+				defender_goal = { casus_belli = allies_germany }
+			}
+			war = {	
+				target = RUS
+				attacker_goal = { casus_belli = axis_england }
+				defender_goal = { casus_belli = allies_germany }
 			}
 			add_country_modifier = {
 				name = "schlieffen"
 				duration = 60
 			}
 			
-			AUH = { country_event = 100147 }						# Montenegro event
+			random_country = {
+				limit = {
+					tag = AUH
+					war_with = SER
+				}
+				AUH = { country_event = 100147 }
+			}							# Montenegro event
 			SAF = { country_event = 2008000 }      					# SAF chooses to support Entente or stay neutral
 			ENG = { country_event = 190502 }						#
+			AUH = {threat = { who = USA value = -20 }}				# USA doesn't care and is to remain neutral
+			GER = {threat = { who = USA value = -35 }}				# USA doesn't care and is to remain neutral
+		}
+		option = {
+			name = "optc_GERE2"
+			ai_chance = { factor = 0 }
+			set_country_flag = germany_mobilize
+			neutrality = -50
+			manpower = 200
+			money = 100
+			threat = { who = all value = 5 }
+			threat = { who = USA value = -5 }						# USA doesn't care and is to remain neutral
+			national_unity = 50
+			SAF = { leave_faction = allies }						# Avoid SAF going to war until SAF Decides event
+			SAF = { leave_alliance = ENG }
+			GER = {threat = { who = SAF value = -60 }}
+			AUH = {threat = { who = SAF value = -40 }}
+			war = {	
+				target = FRA
+				attacker_goal = { casus_belli = german_france }
+				defender_goal = { casus_belli = allies_germany }
+			}
+			war = {	
+				target = RUS
+				attacker_goal = { casus_belli = axis_russia }
+				defender_goal = { casus_belli = allies_germany }
+			}
+			war = {	
+				target = RUS
+				attacker_goal = { casus_belli = axis_england }
+				defender_goal = { casus_belli = allies_germany }
+			}
+			random_country = {
+				limit = {
+					tag = AUH
+					war_with = SER
+				}
+				AUH = { country_event = 100147 }
+			}														# Montenegro event
+			SAF = { country_event = 2008000 }      					# SAF chooses to support Entente or stay neutral
 			AUH = {threat = { who = USA value = -20 }}				# USA doesn't care and is to remain neutral
 			GER = {threat = { who = USA value = -35 }}				# USA doesn't care and is to remain neutral
 		}
