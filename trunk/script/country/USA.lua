@@ -204,14 +204,12 @@ function P.Buildings(voProductionData)
 	}
 	
 	if voProductionData.Year > 1915 or voProductionData.IsAtWar then
-		loProdBuilding.Buildings.coastal_fort.MaxRun = 1
 		loProdBuilding.Buildings.air_base.MaxRun = 2
 		loProdBuilding.Buildings.naval_base.MaxRun = 1
 		loProdBuilding.Buildings.industry.MaxRun = 1
 	end	
 	
 	if voProductionData.Year > 1916 or voProductionData.IsAtWar then
-		loProdBuilding.Buildings.coastal_fort.PreferOnly = false
 		loProdBuilding.Buildings.air_base.PreferOnly = false
 		loProdBuilding.Buildings.naval_base.PreferOnly = false
 	end

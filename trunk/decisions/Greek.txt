@@ -20,4 +20,194 @@ diplomatic_decisions = {
 			factor = 1
 		}
 	}
-} 
+	2019509_decision = {
+	potential = {
+		not = {
+			head_of_government = 90010
+			has_global_flag= venizelos_incabinet
+			has_global_flag = 2019506_EVENT_DONE
+			GER = { alliance_with = GRE }
+			FRA = { alliance_with = GRE }
+			FRA = { war_with = GRE }
+			}
+		tag = GRE
+		date = 1915.1.1
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2019509 }
+		not = { has_country_flag = decision_2019509 } }
+	allow = {
+		has_global_flag = 2019505_EVENT_DONE
+		}
+	effect = { country_event = 146
+		set_country_flag = decision_2019509 }
+	ai_will_do = { factor = 1 }
+	}
+	2002507_decision = {
+	potential = {
+		exists = GRE
+		FRA = { war_with = AUH }
+		#has_global_flag = 2145501_EVENT_DONE
+		not = {
+			FRA = { alliance_with = GRE }
+			AUH = { alliance_with = GRE }
+			FRA = { war_with = TUR }
+			#has_global_flag = 2002527_EVENT_DONE
+			#has_global_flag = 2002528_EVENT_DONE
+			}
+		tag = FRA
+		date = 1914.1.1
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2002507 }
+		not = { has_country_flag = decision_2002507 } }
+	allow = {
+		2613 = { controlled_by = THIS }
+		}
+	effect = { country_event = 84
+		set_country_flag = decision_2002507 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+2002508_decision = {
+	potential = {
+		exists = GRE
+		#has_global_flag = 2104500_EVENT_DONE
+		FRA = { war_with = AUH }
+		not = {
+			GRE = { alliance_with = AUH }
+			GRE = { alliance_with = FRA }
+			#has_global_flag = 2002527_EVENT_DONE
+			#has_global_flag = 2002528_EVENT_DONE
+			}
+		tag = FRA
+		date = 1914.1.1
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2002508 }
+		not = { has_country_flag = decision_2002508 } }
+	allow = {
+		exists = SER
+		relation = { who = GRE value = 60 } 
+		2613 = { controlled_by = THIS }
+		}
+	effect = { country_event = 85
+		set_country_flag = decision_2002508 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+
+
+2002513_decision = {
+	potential = {
+		exists = GRE
+		has_global_flag = 2019510_EVENT_DONE
+		has_global_flag= greece_mobilized
+		FRA = { war_with = AUH }
+		not = {
+			GRE = { alliance_with = FRA }
+			GRE = { alliance_with = AUH }
+			#has_global_flag = 2002527_EVENT_DONE
+			#has_global_flag = 2002528_EVENT_DONE
+			}
+		tag = FRA
+		date = 1914.1.1
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2002513 }
+		not = { has_country_flag = decision_2002513 } }
+	allow = { }
+	effect = { country_event = 90
+		set_country_flag = decision_2002513 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+
+
+
+
+2002521_decision = {
+	potential = {
+		exists = GRE
+		has_global_flag= entente_hostility
+		FRA = { war_with = AUH }
+		not = {
+			GRE = { alliance_with = FRA }
+			GRE = { alliance_with = AUH }
+			#has_global_flag = 2002527_EVENT_DONE
+			#has_global_flag = 2002528_EVENT_DONE
+			}
+		tag = FRA
+		date = 1914.1.1
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2002521 }
+		not = { has_country_flag = decision_2002521 } }
+	allow = { }
+	effect = { country_event = 97
+		set_country_flag = decision_2002521 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+2002522_decision = {
+	potential = {
+		exists = GRE
+		has_global_flag= entente_hostility
+		has_global_flag= greece_mobilized
+		has_global_flag = 2019518_EVENT_DONE
+		FRA = { war_with = AUH }
+		not = {
+			GRE = { alliance_with = FRA }
+			GRE = { alliance_with = AUH }
+			#has_global_flag = 2002527_EVENT_DONE
+			#has_global_flag = 2002528_EVENT_DONE
+			}
+		tag = FRA
+		date = 1914.1.1
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2002522 }
+		not = { has_country_flag = decision_2002522 } }
+	allow = { }
+	effect = { country_event = 98
+		set_country_flag = decision_2002522 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+2002533_decision = {
+	potential = {
+		exists = GRE
+		has_global_flag= entente_hostility
+		has_global_flag= greece_mobilized
+		#has_global_flag = 2104530_EVENT_DONE
+		has_global_flag = 2002523_EVENT_DONE
+		FRA = { war_with = AUH }
+		not = {
+			GRE = { alliance_with = FRA }
+			GRE = { alliance_with = AUH }
+			#has_global_flag = 2002527_EVENT_DONE
+			#has_global_flag = 2002528_EVENT_DONE
+			}
+		tag = FRA
+		date = 1914.1.1
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2002533 }
+		not = { has_country_flag = decision_2002533 } }
+	allow = { }
+	effect = { country_event = 101
+		set_country_flag = decision_2002533 }
+	ai_will_do = { factor = 1 }
+	}
+	}
