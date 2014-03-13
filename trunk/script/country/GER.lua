@@ -233,5 +233,16 @@ end
 -- #######################################
 -- SUPPORT METHODS
 -- Setup_Custom is called from GER_FAC.lua and GER.lua
+function P.DiploScore_Alliance(voDiploScoreObj)
+	-- Stay out of the war, we do not care whats happening around us
+	local loTag = CCountryDataBase.GetTag("ITA")
+	if voDiploScoreObj.Target.Tag == loTag or voDiploScoreObj.Actor.Tag == loTag  then
+		voDiploScoreObj.Score = 200
+	end
+	
+	return voDiploScoreObj.Score
+end
+
+
 
 return AI_GER
