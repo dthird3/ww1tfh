@@ -237,6 +237,27 @@ function P.Buildings(voProductionData)
 	
 	return loProdBuilding
 end
+
+function P.DiploScore_OfferTrade(voDiploScoreObj)
+	local laTrade = {
+		CAN = {Score = 20},
+		AST = {Score = 20},
+		SAF = {Score = 20},
+		NZL = {Score = 20},
+		USA = {Score = 20},
+		GRE = {Score = 200},
+		GER = {Score = -20},
+		ITA = {Score = -20},
+		JAP = {Score = 50},
+		FRA = {Score = 20}}
+	
+	if laTrade[voDiploScoreObj.Actor.Name] then
+		return voDiploScoreObj.Score + laTrade[voDiploScoreObj.Actor.Name].Score
+	end
+	
+	return voDiploScoreObj.Score
+end
+
 -- #######################################
 -- SUPPORT METHODS
 -- Setup_Custom is called from GER_FAC.lua and GER.lua

@@ -47,7 +47,7 @@ diplomatic_decisions = {
 	potential = {
 		exists = GRE
 		FRA = { war_with = AUH }
-		#has_global_flag = 2145501_EVENT_DONE
+		not = { TUR = { controls = 4503 } } 
 		not = {
 			FRA = { alliance_with = GRE }
 			AUH = { alliance_with = GRE }
