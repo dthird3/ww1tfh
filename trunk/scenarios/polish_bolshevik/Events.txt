@@ -1,3 +1,31 @@
+######################### Initialisation Event to set countries Manpower and resource levels ###################
+
+country_event = {
+
+	id = 100800
+	fire_only_once = yes
+	trigger = {
+		tag = LIT
+		date = 1920.4.25
+	}
+
+	mean_time_to_happen =  {
+		days = 0
+	}
+
+		title = "Polish_Troops_Title"
+		desc = "Polish_Troops_Desc"
+		picture = "Polish_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		POL = {manpower = -220}
+		SOV = {manpower = -216}
+	}
+}
+
+
 # =============================================  Ongoing Monitors  ====================================
 
 country_event = {																# Set and increment variables
@@ -328,7 +356,7 @@ country_event = {
 		
 		fire_only_once = yes
 		
-#		mean_time_to_happen =  { days = 1 }
+		mean_time_to_happen =  { days = 0 }
 
 		title = "Desperate_Title"
 		desc = "Desperate_Desc"
@@ -358,7 +386,7 @@ country_event = {
 		
 		fire_only_once = yes
 		
-#		mean_time_to_happen =  { days = 1 }									
+		mean_time_to_happen =  { days = 0 }									
 
 		title = "Desperate_Title"
 		desc = "Desperate_Desc"
@@ -425,7 +453,6 @@ country_event = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_001.txt"}
-#		add_officers = 800
 	}
 }
 
@@ -498,6 +525,30 @@ country_event = {																			# Konarmiya arrive
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_004.txt"}
+	}
+}
+
+country_event = {																			# Brusilov's letter to raise volunteers for the Army
+	
+	id = 200018
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date = 1920.5.30
+	}
+
+	mean_time_to_happen =  {
+		days = 0
+	}
+
+	title = "Brusilovs_letter_Title"
+	desc = "Brusilovs_letter_Desc"
+	picture = "Brusilov"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {manpower = 110}
 	}
 }
 
@@ -997,7 +1048,7 @@ country_event = {
 		major = yes
 		
 		trigger = { tag = POL 
-					date = 1920.5.15 }
+					date = 1920.5.10 }
 
 #		fire_only_once = yes							# Strikes occurred repeatedly
 		
@@ -1040,6 +1091,7 @@ country_event = {
 			name = "ACTION_NAME_GREAT"
 			ai_chance = { factor = 100 }	
 			POL = {clr_country_flag = "polish_ukraine"}
+			UKR = {leave_faction = allies}
 			POL = {remove_brigade = "1. Ukrayina Armiya"}
 			POL = {remove_brigade = "6. Ukrayina Strelkovaya Diviziya"}
 			POL = {remove_brigade = "11. Ukrayina Strelkovaya Brigada"}
@@ -1050,6 +1102,7 @@ country_event = {
 			POL = {remove_brigade = "Ukrayina Strelkovaya Brigada"}
 			POL = {remove_brigade = "Ukrayina Strelkovaya Brigada"}
 			SOV = {set_country_flag = "bolshevik_ukraine"}
+			UKR = {join_faction = comintern}
 			SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/UKR_001.txt"} 
 			}
 }
@@ -1101,6 +1154,7 @@ country_event = {
 			name = "ACTION_NAME_GREAT"
 			ai_chance = { factor = 100 }	
 			SOV = {clr_country_flag = "bolshevik_ukraine"}
+			UKR = {leave_faction = comintern}
 			SOV = {remove_brigade = "1. Ukrayina Armiya"}
 			SOV = {remove_brigade = "6. Ukrayina Strelkovaya Diviziya"}
 			SOV = {remove_brigade = "11. Ukrayina Strelkovaya Brigada"}
@@ -1111,6 +1165,7 @@ country_event = {
 			SOV = {remove_brigade = "Ukrayina Strelkovaya Brigada"}
 			SOV = {remove_brigade = "Ukrayina Strelkovaya Brigada"}
 			POL = {set_country_flag = "polish_ukraine"}
+			UKR = {join_faction = allies}
 			POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/UKR_001.txt"} 
 			}
 }

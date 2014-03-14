@@ -1,3 +1,32 @@
+######################### Initialisation Event to set countries Manpower and resource levels ###################
+
+country_event = {
+
+	id = 100300
+	fire_only_once = yes
+	trigger = {
+		tag = USA
+		date = 1918.3.20
+	}
+
+	mean_time_to_happen =  {
+		days = 0
+	}
+
+	title = "Air_Reinforcements_Title"
+	desc = "German_Airforce_Desc"
+	picture = "FokkerDVII"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		GER = {supplies = 5000}
+		GER = {manpower = -450}
+		GER = {rare_materials = 2000} 
+		FRA = {manpower = -350}
+	}
+}
+
 #############################  USA Reinforcements ########################
 
 country_event = {
@@ -21,6 +50,7 @@ country_event = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		FRA = {load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_01_APR.txt"}
+		FRA = {manpower = 52}			# MP from 2 US Depot Divisions disbanded
 	}
 }
 
@@ -69,6 +99,7 @@ country_event = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		FRA = {load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_02_MAY.txt"}
+		FRA = {manpower = 26} 			# MP from 1 US Depot Division disbanded
 	}
 }
 
@@ -93,6 +124,7 @@ country_event = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		FRA = {load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_03_JUN.txt"}
+		FRA = {manpower = 26} 			# MP from 1 US Depot Division disbanded
 	}
 }
 
@@ -141,6 +173,7 @@ country_event = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		FRA = {load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_04_JUL.txt"}
+		FRA = {manpower = 26} 			# MP from 1 US Depot Division disbanded
 	}
 }
 
@@ -165,6 +198,7 @@ country_event = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		FRA = {load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_05_AUG.txt"}
+		FRA = {manpower = 26} 			# MP from 1 US Depot Division disbanded
 	}
 }
 
@@ -189,6 +223,7 @@ country_event = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		FRA = {load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_06_SEP.txt"}
+		FRA = {manpower = 26} 			# MP from 1 US Depot Division disbanded
 	}
 }
 
@@ -237,6 +272,7 @@ country_event = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		FRA = {load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_07_OCT.txt"}
+		FRA = {manpower = 26} 			# MP from 1 US Depot Division disbanded
 	}
 }
 
@@ -261,6 +297,7 @@ country_event = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		FRA = {load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_08_NOV.txt"}
+		FRA = {manpower = 26} 			# MP from 1 US Depot Division disbanded
 	}
 }
 
@@ -516,6 +553,7 @@ country_event = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		GER = {load_oob = "scenarios/spring_offensive/GER_Reinforcements/GER_Air_01.txt"}
+		GER = {supplies = 10000}
 	}
 }
 
@@ -540,5 +578,6 @@ country_event = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		GER = {load_oob = "scenarios/spring_offensive/GER_Reinforcements/GER_Air_02.txt"}
+		GER = {supplies = 10000}
 	}
 }
