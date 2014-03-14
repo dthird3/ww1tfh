@@ -1,0 +1,365 @@
+country_event = {
+id = 365
+title = "DH_EVENT_2084500_TITLE"
+desc = "DH_EVENT_2084500_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = SER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2084500 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2084500_Option7"
+	country_event = 313
+	
+set_global_flag = 2084500_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 366
+title = "DH_EVENT_2084501_TITLE"
+desc = "DH_EVENT_2084501_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = SER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2084501 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2084501_Option7"
+	relation = { who = RUS value = 50  }
+	
+set_global_flag = 2084501_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 367
+title = "DH_EVENT_2084502_TITLE"
+desc = "DH_EVENT_2084502_DESC"
+picture = "news_paper"
+
+trigger = {
+	#country_event = 2084499 #MANUALFIX unknown event trigger
+	not = {
+		 #country_event = 472
+		 }
+	
+tag = SER
+date = 1914.7.25
+
+not = { date = 1914.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2084502 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  1 }
+
+is_triggered_only = no
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIS #country_event = 365  } } 
+	ai_chance = { factor = 95
+		 }
+	name = "DH_EVENT_2084502_Option1"
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX policy = { type = professional_army value = 7 }
+				 }  } 
+		country_event = 1350007 #MANUALFIX unknown event trigger
+		 }
+	country_event = 452
+	
+set_global_flag = 2084502_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 5
+		 }
+	name = "DH_EVENT_2084502_Option2"
+	country_event = 473
+	country_event = 344
+	dissent = 5 
+	# MANUALFIX Demobilize command = { type = demobilize which = land when = 0 where = 0 value = 12 }
+	
+set_global_flag = 2084502_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 368
+title = "DH_EVENT_2084503_TITLE"
+desc = "DH_EVENT_2084503_DESC"
+picture = "news_paper"
+
+trigger = {
+	exists = ALB
+	THIS = { surrender_progress = 50 }
+	THIS = { lost_IC = 50 }
+	or = {
+		4368 = { controlled_by = SER }
+		4555 = { controlled_by = SER }
+		4495 = { controlled_by = SER }
+		}
+	not = {
+		3912 = { controlled_by = SER }
+		4243 = { controlled_by = SER }
+		SER = { war_with = ALB }
+		SER = { alliance_with = ALB }
+		}
+	
+tag = SER
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2084503 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2084503_Option1"
+	country_event = 1
+	
+set_global_flag = 2084503_EVENT_DONE
+
+}
+
+option = {
+	 #MANUALFIX trigger option random_country = { limit = { tag = THIS THIS = { ai = yes }  } } 
+	name = "DH_EVENT_2084503_Option2"
+	#Removed Blank command
+	
+set_global_flag = 2084503_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 369
+title = "DH_EVENT_2084504_TITLE"
+desc = "DH_EVENT_2084504_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = SER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2084504 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2084504_Option7"
+	THIS = { inherit = ALB }
+	# MANUALFIX strength command = { type = strength which = land when = 1 where = 1 value = -0.25 }
+	# MANUALFIX disorg command = { type = disorg_division which = -1 where = 50 }
+	
+set_global_flag = 2084504_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 370
+title = "DH_EVENT_2084506_TITLE"
+desc = "DH_EVENT_2084506_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = SER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2084506 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2084506_Option1"
+	dissent = 5 
+	#NOEQUIVALENT AI prepare war command = { type = ai_prepare_war which = U09 }
+	
+set_global_flag = 2084506_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 371
+title = "DH_EVENT_2084507_TITLE"
+desc = "DH_EVENT_2084507_DESC"
+picture = "news_paper"
+
+trigger = {
+	#country_event = 2084505 #MANUALFIX unknown event trigger
+	SER = { is_subject = yes }
+	#country_event = 354
+	  
+	
+tag = SER
+date = 1914.6.28
+
+not = { date = 1916.6.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2084507 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  7 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2084507_Option1"
+	ZZZ = { create_vassal = THIS } THIS = { inherit = ZZZ }
+	THIS = { end_military_access = GER }
+	THIS = { end_military_access = AUH }
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	random_country = { limit = { tag = THIS 
+			 SER = { war_with = RUS }
+			  } 
+		country_event = 373
+		 }
+	random_country = { limit = { tag = THIS 
+			 SER = { war_with = RUS }
+			  } 
+		THIS = { end_war = RUS }
+		 }
+	create_alliance = RUS
+	dissent = -20 
+	
+set_global_flag = 2084507_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 372
+title = "DH_EVENT_2084508_TITLE"
+desc = "DH_EVENT_2084508_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = SER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2084508 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2084508_Option1"
+	random_country = { limit = { tag = THIS 
+			 exists = MTN
+			  } 
+		THIS = { inherit = MTN }
+		 }
+	# MANUALFIX name command = { type = name where = SER which = SER1919 }
+	# MANUALFIX change flag command = { type = flag_ext where = SER which = "_serbs_croats_slovenes" }
+	
+set_global_flag = 2084508_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 373
+title = "DH_EVENT_2084509_TITLE"
+desc = "DH_EVENT_2084509_DESC"
+picture = "diplomatic_campaign"
+
+trigger = { 
+tag = SER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2084509 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2084509_Option7"
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		create_alliance = 2 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 faction = allies
+				 }  } 
+		create_alliance = RUS
+		 }
+	
+set_global_flag = 2084509_EVENT_DONE
+
+}
+
+}
+

@@ -1,0 +1,729 @@
+country_event = {
+id = 162
+title = "DH_EVENT_2006500_TITLE"
+desc = "DH_EVENT_2006500_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = ITA
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2006500 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2006500_Option1"
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	relation = { who = AUH value = -50  }
+	
+set_global_flag = 2006500_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 163
+title = "DH_EVENT_2006501_TITLE"
+desc = "DH_EVENT_2006501_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = ITA
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2006501 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2006501_Option1"
+	ai_chance = { factor = 10
+		 }
+	relation = { who = AUH value = 50  }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 AUH = { alliance_with = ITA }
+				 }  } 
+		create_alliance = AUH
+		 }
+	country_event = 455
+	
+set_global_flag = 2006501_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2006501_Option2"
+	ai_chance = { factor = 90
+		 }
+	random_country = { limit = { tag = THIS 
+			 AUH = { alliance_with = ITA }
+			  } 
+		leave_faction = axis
+		leave_faction = allies
+		leave_faction = comintern
+		 }
+	relation = { who = AUH value = -20  }
+	
+set_global_flag = 2006501_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 164
+title = "DH_EVENT_2006502_TITLE"
+desc = "DH_EVENT_2006502_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = ITA
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2006502 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2006502_Option1"
+	ai_chance = { factor = 100
+		 }
+	country_event = 80
+	
+set_global_flag = 2006502_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2006502_Option2"
+	ai_chance = { factor = 0
+		 }
+	relation = { who = FRA value = -20  }
+	
+set_global_flag = 2006502_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 165
+title = "DH_EVENT_2006503_TITLE"
+desc = "DH_EVENT_2006503_DESC"
+picture = "news_paper"
+
+trigger = { #country_event = 79
+	 
+tag = ITA
+date = 1914.3.1
+
+not = { date = 1918.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2006503 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  20 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2006503_Option7"
+	create_alliance = FRA
+	set_global_flag = ITAEntente 
+	
+set_global_flag = 2006503_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 166
+title = "DH_EVENT_2006504_TITLE"
+desc = "DH_EVENT_2006504_DESC"
+picture = "news_paper"
+
+trigger = {
+	war = yes
+	not = {
+		 3492 = { controlled_by = THIS }
+		 }
+	not = {
+		 3492 = { controlled_by = REB }
+		 }
+	
+tag = ITA
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2006504 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2006504_Option7"
+	dissent = 2 
+	
+set_global_flag = 2006504_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 167
+title = "DH_EVENT_2006505_TITLE"
+desc = "DH_EVENT_2006505_DESC"
+picture = "news_paper"
+
+trigger = {
+	war = yes
+	not = {
+		 3627 = { controlled_by = THIS }
+		 }
+	not = {
+		 3627 = { controlled_by = REB }
+		 }
+	
+tag = ITA
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2006505 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2006505_Option7"
+	dissent = 2 
+	
+set_global_flag = 2006505_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 168
+title = "DH_EVENT_2006506_TITLE"
+desc = "DH_EVENT_2006506_DESC"
+picture = "news_paper"
+
+trigger = {
+	war = yes
+	not = {
+		 3561 = { controlled_by = THIS }
+		 }
+	not = {
+		 3561 = { controlled_by = REB }
+		 }
+	
+tag = ITA
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2006506 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2006506_Option7"
+	dissent = 5 
+	
+set_global_flag = 2006506_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 169
+title = "DH_EVENT_2006507_TITLE"
+desc = "DH_EVENT_2006507_DESC"
+picture = "news_paper"
+
+trigger = {
+	war = yes
+	not = {
+		 3562 = { controlled_by = THIS }
+		 }
+	not = {
+		 3562 = { controlled_by = REB }
+		 }
+	
+tag = ITA
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2006507 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2006507_Option7"
+	dissent = 2 
+	
+set_global_flag = 2006507_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 170
+title = "DH_EVENT_2006508_TITLE"
+desc = "DH_EVENT_2006508_DESC"
+picture = "news_paper"
+
+trigger = {
+	war = yes
+	not = {
+		 3826 = { controlled_by = THIS }
+		 }
+	not = {
+		 3826 = { controlled_by = REB }
+		 }
+	
+tag = ITA
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2006508 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2006508_Option7"
+	dissent = 4 
+	
+set_global_flag = 2006508_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 171
+title = "DH_EVENT_2006509_TITLE"
+desc = "DH_EVENT_2006509_DESC"
+picture = "news_paper"
+
+trigger = {
+	war = yes
+	not = {
+		 3761 = { controlled_by = THIS }
+		 }
+	not = {
+		 3761 = { controlled_by = REB }
+		 }
+	
+tag = ITA
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2006509 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2006509_Option7"
+	dissent = 2 
+	
+set_global_flag = 2006509_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 172
+title = "DH_EVENT_2006510_TITLE"
+desc = "DH_EVENT_2006510_DESC"
+picture = "news_paper"
+
+trigger = {
+	war = yes
+	not = {
+		 4170 = { controlled_by = THIS }
+		 }
+	not = {
+		 4170 = { controlled_by = REB }
+		 }
+	
+tag = ITA
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2006510 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2006510_Option7"
+	dissent = 2 
+	
+set_global_flag = 2006510_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 173
+title = "DH_EVENT_2006511_TITLE"
+desc = "DH_EVENT_2006511_DESC"
+picture = "news_paper"
+
+trigger = {
+	war = yes
+	not = {
+		 4361 = { controlled_by = THIS }
+		 }
+	not = {
+		 4361 = { controlled_by = REB }
+		 }
+	
+tag = ITA
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2006511 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2006511_Option7"
+	dissent = 10 
+	
+set_global_flag = 2006511_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 174
+title = "DH_EVENT_2006512_TITLE"
+desc = "DH_EVENT_2006512_DESC"
+picture = "news_paper"
+
+trigger = {
+	war = yes
+	not = {
+		 4713 = { controlled_by = THIS }
+		 }
+	not = {
+		 4713 = { controlled_by = REB }
+		 }
+	
+tag = ITA
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2006512 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2006512_Option7"
+	dissent = 3 
+	
+set_global_flag = 2006512_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 175
+title = "DH_EVENT_2006515_TITLE"
+desc = "DH_EVENT_2006515_DESC"
+picture = "news_paper"
+
+trigger = {
+	#NOEQUIVALENT random =  35
+	or = {
+		ITA = { war_with = FRA }
+		GER = { war_with = ITA }
+		}
+	not = {
+		 4361 = { controlled_by = ITA }
+		 }
+	or = {
+		THIS = { surrender_progress = 40 }
+		THIS = { lost_IC = 40 }
+		}
+	
+tag = ITA
+date = 1915.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2006515 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2006515_Option7"
+	random_country = { limit = { tag = THIS 
+			faction = allies
+			ITA = { alliance_with = ROM }
+			not = {
+				ITA = { alliance_with = FRA }
+				ITA = { alliance_with = ENG }
+				ITA = { alliance_with = RUS }
+				ITA = { alliance_with = USA }
+				 }  } 
+		# MANUALFIX alliance leadercommand = { type = alliance_leader which = ROM where = 0 }
+		 }
+	random_country = { limit = { tag = THIS 
+			faction = allies
+			ITA = { alliance_with = GRE }
+			not = {
+				ITA = { alliance_with = FRA }
+				ITA = { alliance_with = ENG }
+				ITA = { alliance_with = RUS }
+				ITA = { alliance_with = USA }
+				ITA = { alliance_with = ROM }
+				 }  } 
+		# MANUALFIX alliance leadercommand = { type = alliance_leader which = GRE where = 0 }
+		 }
+	dissent = 5 
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	random_country = { limit = { tag = THIS 
+			 ITA = { war_with = GER }
+			  } 
+		country_event = 447
+		 }
+	random_country = { limit = { tag = THIS 
+			 ITA = { war_with = AUH }
+			  } 
+		country_event = 482
+		 }
+	random_country = { limit = { tag = THIS 
+			 ITA = { war_with = FRA }
+			  } 
+		country_event = 129
+		 }
+	random_country = { limit = { tag = THIS 
+			 ITA = { war_with = GER }
+			  } 
+		set_global_flag = ITA_against_U08 
+		 }
+	random_country = { limit = { tag = THIS 
+			 ITA = { war_with = FRA }
+			  } 
+		set_global_flag = ITA_against_FRA 
+		 }
+	random_country = { limit = { tag = THIS 
+			 ITA = { war_with = GER }
+			  } 
+		THIS = { end_war = GER }
+		 }
+	random_country = { limit = { tag = THIS 
+			 ITA = { war_with = FRA }
+			  } 
+		THIS = { end_war = FRA }
+		 }
+	random_country = { limit = { tag = THIS 
+			 ITA = { war_with = RUS }
+			  } 
+		THIS = { end_war = RUS }
+		 }
+	random_country = { limit = { tag = THIS 
+			 ITA = { war_with = SOV }
+			  } 
+		THIS = { end_war = SOV }
+		 }
+	
+set_global_flag = 2006515_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 176
+title = "DH_EVENT_2006516_TITLE"
+desc = "DH_EVENT_2006516_DESC"
+picture = "WW1_Offensive"
+
+trigger = {
+	#NOEQUIVALENT random =  35
+	ITA = { war_with = AUH }
+	or = {
+		head_of_state = 25143
+		head_of_government = 25143
+		foreign_minister = 25143
+		armament_minister = 25143
+		minister_of_security = 25143
+		minister_of_intelligence = 25143
+		chief_of_staff = 25143
+		chief_of_army = 25143
+		chief_of_navy = 25143
+		chief_of_air = 25143
+		}
+	not = {
+		 or = {
+			head_of_state = 25145
+			head_of_government = 25145
+			foreign_minister = 25145
+			armament_minister = 25145
+			minister_of_security = 25145
+			minister_of_intelligence = 25145
+			chief_of_staff = 25145
+			chief_of_army = 25145
+			chief_of_navy = 25145
+			chief_of_air = 25145
+			}
+		 }
+	or = {
+		not = {
+			 3562 = { controlled_by = THIS }
+			 }
+		not = {
+			 3561 = { controlled_by = THIS }
+			 }
+		not = {
+			 3429 = { controlled_by = THIS }
+			 }
+		}
+	
+tag = ITA
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2006516 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  30 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2006516_Option7"
+	chief_of_staff = 25145
+	random_country = { limit = { tag = THIS 
+			 or = {
+				head_of_state = 25143
+				head_of_government = 25143
+				foreign_minister = 25143
+				armament_minister = 25143
+				minister_of_security = 25143
+				minister_of_intelligence = 25143
+				chief_of_staff = 25143
+				chief_of_army = 25143
+				chief_of_navy = 25143
+				chief_of_air = 25143
+				}
+			  } 
+		chief_of_army = 25145
+		 }
+	remove_minister = 25143
+	kill_leader = 25319 
+	dissent = -1 
+	
+set_global_flag = 2006516_EVENT_DONE
+
+}
+
+}
+

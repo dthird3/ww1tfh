@@ -1,0 +1,2368 @@
+country_event = {
+id = 408
+title = "DH_EVENT_2191500_TITLE"
+desc = "DH_EVENT_2191500_DESC"
+picture = "German_mobilization2"
+
+trigger = { 
+tag = GER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191500 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2191500_Option7"
+	relation = { who = RUS value = -20  }
+	
+set_global_flag = 2191500_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 409
+title = "DH_EVENT_2191501_TITLE"
+desc = "DH_EVENT_2191501_DESC"
+picture = "German_mobilization2"
+
+trigger = { 
+tag = GER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191501 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2191501_Option7"
+	relation = { who = RUS value = -30  }
+	
+set_global_flag = 2191501_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 410
+title = "DH_EVENT_2191503_TITLE"
+desc = "DH_EVENT_2191503_DESC"
+picture = "German_mobilization"
+
+trigger = {
+	or = {
+		#country_event = 408
+		and = {
+			#country_event = 353
+			AUH = { war_with = RUS }
+			}
+		}
+	not = {
+		GER = { war_with = RUS }
+		GER = { war_with = AUH }
+		GER = { alliance_with = AUH }
+		#country_event = 277
+		#country_event = 422
+		#country_event = 431
+		#country_event = 51
+		#country_event = 181
+		#country_event = 539
+		}
+	
+tag = GER
+date = 1914.8.1
+
+not = { date = 1916.6.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191503 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  1 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2191503_Option7"
+	create_alliance = AUH
+	threat = { who = all value = 10  }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #country_event = 346
+				 }  } 
+		country_event = 77
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX policy = { type = professional_army value = 7 }
+				 }  } 
+		country_event = 1350007 #MANUALFIX unknown event trigger
+		 }
+	
+set_global_flag = 2191503_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 411
+title = "DH_EVENT_2191504_TITLE"
+desc = "DH_EVENT_2191504_DESC"
+picture = "German_mobilization"
+
+trigger = { 
+tag = GER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191504 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2191504_Option7"
+	# MANUALFIX alliance leadercommand = { type = alliance_leader which = U08 where = 1 }
+	country_event = 78
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		manpower = 50 
+		 }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		# MANUALFIX ground def eff command = {  type = ground_def_eff value = 0.1 when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		load_oob = submarine.txt
+		 }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		load_oob = submarine.txt
+		 }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		load_oob = hq.txt
+		 }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		load_oob = infantry.txt
+		 }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		load_oob = infantry.txt
+		 }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		load_oob = infantry.txt
+		 }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		load_oob = infantry.txt
+		 }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		load_oob = garrison.txt
+		 }
+	
+set_global_flag = 2191504_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 412
+title = "DH_EVENT_2191505_TITLE"
+desc = "DH_EVENT_2191505_DESC"
+picture = "German_mobilization"
+
+trigger = { 
+tag = GER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191505 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2191505_Option7"
+	threat = { who = all value = 5  }
+	war = { target = FRA }
+	dissent = -2 
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX policy = { type = professional_army value = 7 }
+				 }  } 
+		country_event = 1350007 #MANUALFIX unknown event trigger
+		 }
+	country_event = 126
+	
+set_global_flag = 2191505_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2191505_Option8"
+	threat = { who = all value = 10  }
+	war = { target = FRA }
+	war = { target = BEL }
+	war = { target = LUX }
+	dissent = -6 
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX policy = { type = professional_army value = 7 }
+				 }  } 
+		country_event = 1350007 #MANUALFIX unknown event trigger
+		 }
+	country_event = 126
+	
+set_global_flag = 2191505_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2191505_Option9"
+	threat = { who = all value = 15  }
+	war = { target = FRA }
+	war = { target = BEL }
+	war = { target = LUX }
+	war = { target = HOL }
+	dissent = -8 
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX policy = { type = professional_army value = 7 }
+				 }  } 
+		country_event = 1350007 #MANUALFIX unknown event trigger
+		 }
+	country_event = 126
+	
+set_global_flag = 2191505_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2191505_Option10"
+	threat = { who = all value = 5  }
+	war = { target = FRA }
+	war = { target = SCH }
+	dissent = -4 
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX policy = { type = professional_army value = 7 }
+				 }  } 
+		country_event = 1350007 #MANUALFIX unknown event trigger
+		 }
+	country_event = 126
+	
+set_global_flag = 2191505_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 413
+title = "DH_EVENT_2191508_TITLE"
+desc = "DH_EVENT_2191508_DESC"
+picture = "diplomatic_campaign"
+
+trigger = {
+	#NOEQUIVALENT random =  10
+	exists = BUL
+	not = {
+		 exists = SER
+		 }
+	GER = { war = yes }
+	not = {
+		 BUL = { war_with = GER }
+		 }
+	not = {
+		 #country_event = 101
+		 }
+	not = {
+		 BUL = { alliance_with = GER }
+		 }
+	not = {
+		 BUL = { alliance_with = FRA }
+		 }
+	
+tag = GER
+date = 1914.6.28
+
+not = { date = 1914.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191508 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  3 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2191508_Option1"
+	ai_chance = { factor = 100
+		 }
+	country_event = 3
+	
+set_global_flag = 2191508_EVENT_DONE
+
+}
+
+option = {
+	 #MANUALFIX trigger option random_country = { limit = { tag = THIS THIS = { ai = yes }  } } 
+	name = "DH_EVENT_2191508_Option2"
+	ai_chance = { factor = 0
+		 }
+	#Removed Blank command
+	
+set_global_flag = 2191508_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 414
+title = "DH_EVENT_2191509_TITLE"
+desc = "DH_EVENT_2191509_DESC"
+picture = "diplomatic_campaign"
+
+trigger = { 
+tag = GER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191509 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2191509_Option7"
+	relation = { who = BUL value = 10  }
+	country_event = 140
+	
+set_global_flag = 2191509_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 415
+title = "DH_EVENT_2191510_TITLE"
+desc = "DH_EVENT_2191510_DESC"
+picture = "diplomatic_campaign"
+
+trigger = {
+	#NOEQUIVALENT random =  8
+	exists = SER
+	exists = BUL
+	not = {
+		#country_event = 2145501 #MANUALFIX unknown event trigger
+		AUH = { alliance_with = BUL }
+		SER = { alliance_with = BUL }
+		AUH = { war_with = BUL }
+		}
+	or = {
+		#country_event = 2145500 #MANUALFIX unknown event trigger
+		AUH = { alliance_with = TUR }
+		}
+	
+tag = AUH
+date = 1914.11.12
+
+not = { date = 1914.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191510 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  14 }
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_2191510_Option1"
+	country_event = 4
+	
+set_global_flag = 2191510_EVENT_DONE
+
+}
+
+option = {
+	 #MANUALFIX trigger option random_country = { limit = { tag = THIS THIS = { ai = yes }  } } 
+	ai_chance = { factor = 0
+		 }
+	name = "DH_EVENT_2191510_Option2"
+	#Removed Blank command
+	
+set_global_flag = 2191510_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 416
+title = "DH_EVENT_2191511_TITLE"
+desc = "DH_EVENT_2191511_DESC"
+picture = "news_paper"
+
+trigger = {
+	#NOEQUIVALENT random =  25
+	#country_event = 333
+	RUS = { war_with = GER }
+	
+tag = GER
+date = 1914.11.12
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191511 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  7 }
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_2191511_Option1"
+	relation = { who = RUS value = -5  }
+	country_event = 335
+	
+set_global_flag = 2191511_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIS THIS = { ai = yes }  } } 
+	ai_chance = { factor = 0
+		 }
+	name = "DH_EVENT_2191511_Option2"
+	relation = { who = RUS value = 5  }
+	
+set_global_flag = 2191511_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 417
+title = "DH_EVENT_2191514_TITLE"
+desc = "DH_EVENT_2191514_DESC"
+picture = "news_paper"
+
+trigger = {
+	or = {
+		GER = { war_with = FRA }
+		GER = { war_with = RUS }
+		GER = { war_with = ENG }
+		GER = { war_with = USA }
+		GER = { war_with = ITA }
+		GER = { war_with = SOV }
+		}
+	or = {
+		and = {
+			dissent = 35
+			not = {
+				 1861 = { controlled_by = GER }
+				 }
+			or = {
+				THIS = { surrender_progress = 20 }
+				THIS = { lost_IC = 20 }
+				}
+			}
+		and = {
+			dissent = 25
+			not = {
+				 1861 = { controlled_by = GER }
+				 }
+			or = {
+				THIS = { surrender_progress = 30 }
+				THIS = { lost_IC = 30 }
+				}
+			}
+		and = {
+			dissent = 20
+			not = {
+				 1861 = { controlled_by = GER }
+				 }
+			or = {
+				THIS = { surrender_progress = 35 }
+				THIS = { lost_IC = 35 }
+				}
+			}
+		and = {
+			or = {
+				dissent = 10
+				#NOEQUIVALENT random =  25
+				}
+			not = {
+				 1861 = { controlled_by = GER }
+				 }
+			or = {
+				THIS = { surrender_progress = 40 }
+				THIS = { lost_IC = 40 }
+				}
+			}
+		and = {
+			dissent = 35
+			or = {
+				THIS = { surrender_progress = 50 }
+				THIS = { lost_IC = 50 }
+				}
+			}
+		and = {
+			dissent = 30
+			or = {
+				THIS = { surrender_progress = 55 }
+				THIS = { lost_IC = 55 }
+				}
+			}
+		and = {
+			dissent = 25
+			or = {
+				THIS = { surrender_progress = 60 }
+				THIS = { lost_IC = 60 }
+				}
+			}
+		and = {
+			dissent = 20
+			or = {
+				THIS = { surrender_progress = 65 }
+				THIS = { lost_IC = 65 }
+				}
+			}
+		}
+	
+tag = GER
+date = 1914.11.16
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191514 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  3 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2191514_Option7"
+	set_global_flag = SLEEPEVENT_2191532 
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	random_country = { limit = { tag = THIS 
+			 exists = AUH
+			  } 
+		THIS = { end_military_access = AUH }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = AUS
+			  } 
+		THIS = { end_military_access = AUS }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = RUS }
+			  } 
+		country_event = 360
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = FRA }
+			  } 
+		country_event = 128
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = ENG }
+			  } 
+		country_event = 69
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = RUS }
+			  } 
+		THIS = { end_war = RUS }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = FRA }
+			  } 
+		THIS = { end_war = FRA }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = ENG }
+			  } 
+		THIS = { end_war = ENG }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = USA }
+			  } 
+		THIS = { end_war = USA }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = ITA }
+			  } 
+		THIS = { end_war = ITA }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = SOV }
+			  } 
+		THIS = { end_war = SOV }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = SER }
+			  } 
+		THIS = { end_war = SER }
+		 }
+	country_event = 74
+	country_event = 449
+	
+set_global_flag = 2191514_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 418
+title = "DH_EVENT_2191515_TITLE"
+desc = "DH_EVENT_2191515_DESC"
+picture = "news_paper"
+
+trigger = {
+	#NOEQUIVALENT random =  25
+	dissent = 35
+	or = {
+		war = yes
+		#country_event = 431
+		#country_event = 277
+		}
+	
+tag = GER
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191515 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2191515_Option7"
+	dissent = 2 
+	
+set_global_flag = 2191515_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 419
+title = "DH_EVENT_2191516_TITLE"
+desc = "DH_EVENT_2191516_DESC"
+picture = "news_paper"
+
+trigger = {
+	#NOEQUIVALENT random =  75
+	#country_event = 417
+	dissent = 30
+	
+tag = GER
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191516 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  2 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2191516_Option7"
+	dissent = 2 
+	
+set_global_flag = 2191516_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 420
+title = "DH_EVENT_2191517_TITLE"
+desc = "DH_EVENT_2191517_DESC"
+picture = "news_paper"
+
+trigger = {
+	#NOEQUIVALENT random =  75
+	#country_event = 418
+	dissent = 30
+	
+tag = GER
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191517 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  3 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2191517_Option7"
+	dissent = 2 
+	
+set_global_flag = 2191517_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 421
+title = "DH_EVENT_2191518_TITLE"
+desc = "DH_EVENT_2191518_DESC"
+picture = "news_paper"
+
+trigger = {
+	#NOEQUIVALENT random =  75
+	#country_event = 419
+	dissent = 30
+	
+tag = GER
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191518 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  3 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2191518_Option7"
+	dissent = 1 
+	
+set_global_flag = 2191518_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 422
+title = "DH_EVENT_2191519_TITLE"
+desc = "DH_EVENT_2191519_DESC"
+picture = "news_paper"
+
+trigger = {
+	#NOEQUIVALENT random =  20
+	#country_event = 418
+	
+tag = GER
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191519 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2191519_Option7"
+	dissent = -20 
+	# MANUALFIX change flag command = { type = flag_ext where = U08 which = "_weimar" }
+	# add_country_modifier = { name = "democratic8" duration = 360 }#command = { type = set_domestic which = democratic value = 8 }
+	# add_country_modifier = { name = "rulingpartysupport" duration = 360 }#command = { type = set_domestic which = political_left value = 7 }
+	head_of_state = 855200
+	head_of_government = 855202
+	foreign_minister = 855212
+	armament_minister = 855204
+	minister_of_security = 855202
+	minister_of_intelligence = 855251
+	chief_of_staff = 855074
+	chief_of_army = 855089
+	chief_of_navy = 855262
+	chief_of_air = 855104
+	remove_minister = 855001
+	remove_minister = 855002
+	remove_minister = 855003
+	remove_minister = 855004
+	remove_minister = 855005
+	remove_minister = 855006
+	remove_minister = 855007
+	remove_minister = 855008
+	remove_minister = 855009
+	remove_minister = 855010
+	remove_minister = 855011
+	remove_minister = 855012
+	remove_minister = 855013
+	remove_minister = 855014
+	remove_minister = 855015
+	remove_minister = 855016
+	remove_minister = 855017
+	remove_minister = 855018
+	remove_minister = 855019
+	remove_minister = 855020
+	remove_minister = 855021
+	remove_minister = 855022
+	remove_minister = 855023
+	remove_minister = 855024
+	remove_minister = 855025
+	remove_minister = 855026
+	remove_minister = 855027
+	remove_minister = 855028
+	remove_minister = 855029
+	remove_minister = 855030
+	remove_minister = 855031
+	remove_minister = 855032
+	remove_minister = 855033
+	remove_minister = 855034
+	remove_minister = 855035
+	remove_minister = 855036
+	remove_minister = 855037
+	remove_minister = 855038
+	remove_minister = 855039
+	remove_minister = 855040
+	remove_minister = 855041
+	remove_minister = 855042
+	remove_minister = 855043
+	remove_minister = 855044
+	remove_minister = 855045
+	remove_minister = 855046
+	remove_minister = 855047
+	remove_minister = 855048
+	remove_minister = 855049
+	remove_minister = 855050
+	remove_minister = 855051
+	remove_minister = 855052
+	remove_minister = 855053
+	remove_minister = 855054
+	remove_minister = 855004
+	remove_minister = 855056
+	remove_minister = 855051
+	remove_minister = 855058
+	remove_minister = 855059
+	remove_minister = 855060
+	remove_minister = 855061
+	remove_minister = 855062
+	remove_minister = 855063
+	remove_minister = 855064
+	remove_minister = 855065
+	remove_minister = 855066
+	remove_minister = 855067
+	remove_minister = 855068
+	remove_minister = 855069
+	remove_minister = 855070
+	remove_minister = 855071
+	remove_minister = 855072
+	remove_minister = 855039
+	remove_minister = 855074
+	remove_minister = 855075
+	remove_minister = 855076
+	remove_minister = 855077
+	remove_minister = 855078
+	remove_minister = 855079
+	remove_minister = 855072
+	remove_minister = 855039
+	remove_minister = 855075
+	remove_minister = 855088
+	remove_minister = 855089
+	remove_minister = 855090
+	remove_minister = 855091
+	remove_minister = 855092
+	remove_minister = 855093
+	remove_minister = 855094
+	remove_minister = 855095
+	remove_minister = 855096
+	remove_minister = 855097
+	remove_minister = 855098
+	remove_minister = 855099
+	remove_minister = 855100
+	remove_minister = 855101
+	remove_minister = 855102
+	remove_minister = 855103
+	remove_minister = 855104
+	remove_minister = 855105
+	remove_minister = 855106
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855200 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855201 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855202 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855203 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855204 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855205 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855206 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855207 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855208 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855209 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855210 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855211 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855212 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855213 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855214 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855215 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855216 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855217 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855218 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855219 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855220 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855221 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855222 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855223 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855224 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855225 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855226 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855227 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855228 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855229 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855230 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855231 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855232 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855233 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855234 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855235 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855236 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855237 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855238 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855239 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855240 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855241 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855242 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855243 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855244 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855245 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855246 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855247 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855248 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855249 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855250 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855251 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855252 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855253 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855254 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855255 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855256 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855257 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855258 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855259 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855260 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855261 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855262 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855263 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855264 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855265 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855266 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855267 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855268 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855269 }
+	
+set_global_flag = 2191519_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 423
+title = "DH_EVENT_2191520_TITLE"
+desc = "DH_EVENT_2191520_DESC"
+picture = "Peace_conference"
+
+trigger = {
+	#country_event = 420
+	#country_event = 421
+	or = {
+		GER = { war_with = FRA }
+		GER = { war_with = RUS }
+		GER = { war_with = ENG }
+		GER = { war_with = USA }
+		GER = { war_with = ITA }
+		GER = { war_with = SOV }
+		}
+	
+tag = GER
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191520 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  2 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2191520_Option7"
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = RUS }
+			  } 
+		country_event = 360
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = FRA }
+			  } 
+		country_event = 128
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = ENG }
+			  } 
+		country_event = 69
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = RUS }
+			  } 
+		THIS = { end_war = RUS }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = FRA }
+			  } 
+		THIS = { end_war = FRA }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = ENG }
+			  } 
+		THIS = { end_war = ENG }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = USA }
+			  } 
+		THIS = { end_war = USA }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = ITA }
+			  } 
+		THIS = { end_war = ITA }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = SOV }
+			  } 
+		THIS = { end_war = SOV }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = SER }
+			  } 
+		THIS = { end_war = SER }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = MTN }
+			  } 
+		THIS = { end_war = MTN }
+		 }
+	dissent = -10 
+	set_global_flag = German_EndWWI 
+	random_country = { limit = { tag = THIS 
+			not = {
+				 exists = POL
+				 exists = RUS
+				 }
+			1928 = { controlled_by = GER }
+			 } 
+		release = POL
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = POL
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = POL value = "Poland" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #country_event = 2193499 #MANUALFIX unknown event trigger
+				 }  } 
+		country_event = 301
+		 }
+	country_event = 74
+	country_event = 449
+	
+set_global_flag = 2191520_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 424
+title = "DH_EVENT_2191524_TITLE"
+desc = "DH_EVENT_2191524_DESC"
+picture = "news_paper"
+
+trigger = {
+	war = yes
+	not = {
+		 1527 = { controlled_by = THIS }
+		 }
+	not = {
+		 1527 = { controlled_by = REB }
+		 }
+	
+tag = GER
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191524 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2191524_Option7"
+	dissent = 5 
+	
+set_global_flag = 2191524_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 425
+title = "DH_EVENT_2191525_TITLE"
+desc = "DH_EVENT_2191525_DESC"
+picture = "news_paper"
+
+trigger = {
+	war = yes
+	not = {
+		 2153 = { controlled_by = THIS }
+		 }
+	not = {
+		 2153 = { controlled_by = REB }
+		 }
+	
+tag = GER
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191525 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2191525_Option7"
+	dissent = 2 
+	
+set_global_flag = 2191525_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 426
+title = "DH_EVENT_2191526_TITLE"
+desc = "DH_EVENT_2191526_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = GER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191526 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2191526_Option7"
+	dissent = 3 
+	
+set_global_flag = 2191526_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 427
+title = "DH_EVENT_2191527_TITLE"
+desc = "DH_EVENT_2191527_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = GER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191527 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2191527_Option7"
+	dissent = 3 
+	
+set_global_flag = 2191527_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 428
+title = "DH_EVENT_2191528_TITLE"
+desc = "DH_EVENT_2191528_DESC"
+trigger = {
+	war = yes
+	not = {
+		 2085 = { controlled_by = THIS }
+		 }
+	not = {
+		 2085 = { controlled_by = REB }
+		 }
+	
+tag = GER
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191528 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2191528_Option7"
+	dissent = 2 
+	
+set_global_flag = 2191528_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 429
+title = "DH_EVENT_2191529_TITLE"
+desc = "DH_EVENT_2191529_DESC"
+trigger = {
+	war = yes
+	not = {
+		 2687 = { controlled_by = THIS }
+		 }
+	not = {
+		 2687 = { controlled_by = REB }
+		 }
+	
+tag = GER
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191529 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2191529_Option7"
+	dissent = 2 
+	
+set_global_flag = 2191529_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 430
+title = "DH_EVENT_2191530_TITLE"
+desc = "DH_EVENT_2191530_DESC"
+trigger = {
+	war = yes
+	not = {
+		 2952 = { controlled_by = THIS }
+		 }
+	not = {
+		 2952 = { controlled_by = REB }
+		 }
+	
+tag = GER
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191530 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2191530_Option7"
+	dissent = 3 
+	
+set_global_flag = 2191530_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 431
+title = "DH_EVENT_2191531_TITLE"
+desc = "DH_EVENT_2191531_DESC"
+trigger = {
+	war = yes
+	not = {
+		 1737 = { controlled_by = THIS }
+		 }
+	not = {
+		 1737 = { controlled_by = REB }
+		 }
+	
+tag = GER
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191531 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2191531_Option7"
+	dissent = 2 
+	
+set_global_flag = 2191531_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 432
+title = "DH_EVENT_2191532_TITLE"
+desc = "DH_EVENT_2191532_DESC"
+trigger = {
+	or = {
+		GER = { war_with = FRA }
+		GER = { war_with = RUS }
+		GER = { war_with = ENG }
+		GER = { war_with = USA }
+		GER = { war_with = ITA }
+		GER = { war_with = SOV }
+		}
+	#NOEQUIVALENT random =  20
+	not = {
+		 1861 = { controlled_by = THIS }
+		 }
+	
+tag = GER
+date = 1914.1.1
+
+not = { date = 1914.11.15
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191532 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  3 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2191532_Option7"
+	set_global_flag = SLEEPEVENT_2191514 
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	random_country = { limit = { tag = THIS 
+			 exists = AUH
+			  } 
+		THIS = { end_military_access = AUH }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = AUS
+			  } 
+		THIS = { end_military_access = AUS }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = RUS }
+			  } 
+		country_event = 360
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = FRA }
+			  } 
+		country_event = 128
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = ENG }
+			  } 
+		country_event = 69
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = RUS }
+			  } 
+		THIS = { end_war = RUS }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = FRA }
+			  } 
+		THIS = { end_war = FRA }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = ENG }
+			  } 
+		THIS = { end_war = ENG }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = USA }
+			  } 
+		THIS = { end_war = USA }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = ITA }
+			  } 
+		THIS = { end_war = ITA }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = SOV }
+			  } 
+		THIS = { end_war = SOV }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = SER }
+			  } 
+		THIS = { end_war = SER }
+		 }
+	country_event = 74
+	country_event = 449
+	
+set_global_flag = 2191532_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 433
+title = "DH_EVENT_2191533_TITLE"
+desc = "DH_EVENT_2191533_DESC"
+trigger = { 
+tag = GER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191533 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2191533_Option7"
+	#Removed Blank command
+	
+set_global_flag = 2191533_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 434
+title = "DH_EVENT_2191536_TITLE"
+desc = "DH_EVENT_2191536_DESC"
+trigger = {
+	has_global_flag= 1915_WWI
+	#MANUALFIX intelligence = { country = RUS value = 20 }
+	not = {
+		 #MANUALFIX intelligence = { country = RUS value = 30 }
+		 }
+	#NOEQUIVALENT random =  10
+	not = {
+		 #country_event = 435
+		 }
+	not = {
+		 GER = { war_with = RUS }
+		 }
+	
+tag = GER
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191536 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2191536_Option1"
+	country_event = 352
+	
+set_global_flag = 2191536_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2191536_Option2"
+	relation = { who = RUS value = 10  }
+	
+set_global_flag = 2191536_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 435
+title = "DH_EVENT_2191537_TITLE"
+desc = "DH_EVENT_2191537_DESC"
+trigger = {
+	has_global_flag= 1915_WWI
+	#MANUALFIX intelligence = { country = RUS value = 30 }
+	#NOEQUIVALENT random =  10
+	not = {
+		 #country_event = 435
+		 }
+	not = {
+		 GER = { war_with = RUS }
+		 }
+	
+tag = GER
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191537 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2191537_Option1"
+	country_event = 353
+	
+set_global_flag = 2191537_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2191537_Option2"
+	# add_country_modifier = { name = "peace_industry_20" duration = 360 }#command = { type = peacetime_ic_mod value = 20 }
+	country_event = 476
+	
+set_global_flag = 2191537_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 436
+title = "DH_EVENT_2191538_TITLE"
+desc = "DH_EVENT_2191538_DESC"
+trigger = { 
+tag = GER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191538 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2191538_Option1"
+	# add_country_modifier = { name = "peace_industry_20" duration = 360 }#command = { type = peacetime_ic_mod value = 20 }
+	
+set_global_flag = 2191538_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 437
+title = "DH_EVENT_2191539_TITLE"
+desc = "DH_EVENT_2191539_DESC"
+trigger = {
+	has_global_flag= 1915_WWI
+	#country_event = 475
+	not = {
+		 GER = { war_with = RUS }
+		 }
+	and = {
+		month = 3
+		year = 1915
+		}
+	#NOEQUIVALENT random =  15
+	
+tag = GER
+date = 1914.6.28
+
+not = { date = 1916.6.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191539 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  10 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2191539_Option7"
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 GER = { war_with = AUH }
+				 }  } 
+		create_alliance = AUH
+		 }
+	threat = { who = all value = 20  }
+	war = { target = RUS }
+	dissent = -2 
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 GER = { ai = yes }
+				 }  } 
+		clr_global_flag = 1915_WWI 
+		 }
+	clr_global_flag = FTL_serbia_accepted 
+	random_country = { limit = { tag = THIS 
+			 GER = { ai = yes }
+			 AUH = { ai = yes }
+			 FRA = { alliance_with = RUS }
+			  } 
+		country_event = 3191552 #MANUALFIX unknown event trigger
+		 }
+	
+set_global_flag = 2191539_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 438
+title = "DH_EVENT_2191540_TITLE"
+desc = "DH_EVENT_2191540_DESC"
+trigger = { 
+tag = GER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191540 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2191540_Option1"
+	ai_chance = { factor = 99
+		 }
+	country_event = 178
+	
+set_global_flag = 2191540_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2191540_Option2"
+	ai_chance = { factor = 1
+		 }
+	country_event = 179
+	dissent = 5 
+	# MANUALFIX secede region command = { type = secederegion which = JAP value = "China" }
+	# MANUALFIX secede region command = { type = secederegion which = JAP value = "Asian Pacific" }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= JAP_ultimatum_extended
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = JAP value = "American Pacific" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= JAP_ultimatum_extended
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = JAP value = "New Guinea" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= JAP_ultimatum_extended
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = JAP value = "Bismarck Archipelago" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= JAP_ultimatum_extended
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = JAP value = "North Solomon Islands" }
+		 }
+	
+set_global_flag = 2191540_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 439
+title = "DH_EVENT_2191541_TITLE"
+desc = "DH_EVENT_2191541_DESC"
+trigger = { 
+tag = GER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191541 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2191541_Option7"
+	dissent = 5 
+	# add_country_modifier = { name = "wartime_ic_-10" duration = 360 }#command = { type = wartime_ic_mod value = -10 }
+	# MANUALFIX stockpile command = { type = stockpile which = all when = war value = -20 }
+	GER = { relation = { who = ENG value = -50 } }
+	GER = { relation = { who = SWE value = -50 } }
+	GER = { relation = { who = NOR value = -50 } }
+	GER = { relation = { who = SPA value = -50 } }
+	GER = { relation = { who = POR value = -50 } }
+	GER = { relation = { who = GRE value = -50 } }
+	GER = { relation = { who = ALB value = -50 } }
+	GER = { relation = { who = USA value = -50 } }
+	GER = { relation = { who = CAN value = -50 } }
+	GER = { relation = { who = MEX value = -50 } }
+	GER = { relation = { who = BRA value = -50 } }
+	GER = { relation = { who = ARG value = -50 } }
+	GER = { relation = { who = CHL value = -50 } }
+	GER = { relation = { who = CHI value = -50 } }
+	GER = { relation = { who = JAP value = -50 } }
+	GER = { relation = { who = AST value = -50 } }
+	GER = { relation = { who = HOL value = -50 } }
+	
+set_global_flag = 2191541_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 440
+title = "DH_EVENT_2191542_TITLE"
+desc = "DH_EVENT_2191542_DESC"
+trigger = {
+	GER = { war_with = ENG }
+	#country_event = 35
+	or = {
+		and = {
+			THIS = { ai = no }
+			#MANUALFIX submarine = { value = 7 when = now }
+			}
+		and = {
+			THIS = { ai = yes }
+			#MANUALFIX submarine = { value = 1 when = now }
+			}
+		}
+	#NOEQUIVALENT random =  30
+	
+tag = GER
+date = 1914.6.28
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191542 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  2 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2191542_Option7"
+	threat = { who = all value = 5  }
+	dissent = -5 
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #country_event = 2191557 #MANUALFIX unknown event trigger
+				 }  } 
+		# add_country_modifier = { name = "wartime_ic_10" duration = 360 }#command = {  type = wartime_ic_mod value = 10 }
+		 }
+	# add_country_modifier = { name = "research_1" duration = 360 }#command = { type = gain_tech which = 8600 }
+	country_event = 37
+	
+set_global_flag = 2191542_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 441
+title = "DH_EVENT_2191543_TITLE"
+desc = "DH_EVENT_2191543_DESC"
+trigger = {
+	GER = { war_with = ENG }
+	#country_event = 439
+	or = {
+		and = {
+			THIS = { ai = no }
+			#MANUALFIX submarine = { value = 10 when = now }
+			}
+		and = {
+			THIS = { ai = yes }
+			#MANUALFIX submarine = { value = 3 when = now }
+			}
+		}
+	year = 1916
+	#NOEQUIVALENT random =  15
+	
+tag = GER
+date = 1914.6.28
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191543 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  10 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2191543_Option7"
+	threat = { who = all value = 8  }
+	relation = { who = USA value = -50  }
+	relation = { who = BRA value = -50  }
+	# add_country_modifier = { name = "research_1" duration = 360 }#command = { type = gain_tech which = 8610 }
+	country_event = 38
+	country_event = 509
+	
+set_global_flag = 2191543_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 442
+title = "DH_EVENT_2191544_TITLE"
+desc = "DH_EVENT_2191544_DESC"
+trigger = {
+	GER = { war_with = ENG }
+	#country_event = 35
+	or = {
+		and = {
+			THIS = { ai = no }
+			#MANUALFIX submarine = { value = 10 when = now }
+			}
+		and = {
+			THIS = { ai = yes }
+			#MANUALFIX submarine = { value = 3 when = now }
+			}
+		}
+	#NOEQUIVALENT random =  10
+	
+tag = GER
+date = 1914.6.28
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191544 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  30 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2191544_Option7"
+	random_country = { limit = { tag = THIS 
+			 # MANUALFIX Intel diff intel_diff = { country = U08 country = ENG value = 10 }
+			  } 
+		country_event = 508
+		 }
+	random_country = { limit = { tag = THIS 
+			 # MANUALFIX Intel diff intel_diff = { country = U08 country = ENG value = 10 }
+			  } 
+		country_event = 40
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 # MANUALFIX Intel diff intel_diff = { country = U08 country = ENG value = 10 }
+				 }  } 
+		country_event = 507
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 # MANUALFIX Intel diff intel_diff = { country = U08 country = ENG value = 10 }
+				 }  } 
+		country_event = 39
+		 }
+	
+set_global_flag = 2191544_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 443
+title = "DH_EVENT_2191545_TITLE"
+desc = "DH_EVENT_2191545_DESC"
+trigger = {
+	GER = { war_with = ENG }
+	not = {
+		GER = { war_with = USA }
+		GER = { war_with = MEX }
+		USA = { war_with = MEX }
+		GER = { alliance_with = MEX }
+		USA = { alliance_with = MEX }
+		}
+	#MANUALFIX policy = { country = USA type = interventionism value = 5 }
+	
+tag = GER
+date = 1917.6.28
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191545 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  2 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2191545_Option7"
+	threat = { who = all value = 2  }
+	country_event = 183
+	random_country = { limit = { tag = THIS 
+			 # MANUALFIX Intel diff intel_diff = { country = ENG country = U08 value = 1 }
+			  } 
+		country_event = 510
+		 }
+	random_country = { limit = { tag = THIS 
+			 # MANUALFIX Intel diff intel_diff = { country = ENG country = U08 value = 1 }
+			  } 
+		country_event = 41
+		 }
+	set_global_flag = SLEEPEVENT_2191556 
+	
+set_global_flag = 2191545_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 444
+title = "DH_EVENT_2191556_TITLE"
+desc = "DH_EVENT_2191556_DESC"
+trigger = {
+	GER = { war_with = ENG }
+	not = {
+		GER = { war_with = USA }
+		GER = { war_with = MXR }
+		USA = { war_with = MXR }
+		GER = { alliance_with = MXR }
+		USA = { alliance_with = MXR }
+		}
+	#MANUALFIX policy = { country = USA type = interventionism value = 5 }
+	
+tag = GER
+date = 1917.6.28
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191556 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  2 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2191556_Option7"
+	threat = { who = all value = 2  }
+	country_event = 183
+	random_country = { limit = { tag = THIS 
+			 # MANUALFIX Intel diff intel_diff = { country = ENG country = U08 value = 1 }
+			  } 
+		country_event = 510
+		 }
+	random_country = { limit = { tag = THIS 
+			 # MANUALFIX Intel diff intel_diff = { country = ENG country = U08 value = 1 }
+			  } 
+		country_event = 41
+		 }
+	set_global_flag = SLEEPEVENT_2191545 
+	
+set_global_flag = 2191556_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 445
+title = "DH_EVENT_2191546_TITLE"
+desc = "DH_EVENT_2191546_DESC"
+trigger = {
+	#NOEQUIVALENT random =  40
+	not = {
+		 or = {
+			head_of_state = 855039
+			head_of_government = 855039
+			foreign_minister = 855039
+			armament_minister = 855039
+			minister_of_security = 855039
+			minister_of_intelligence = 855039
+			chief_of_staff = 855039
+			chief_of_army = 855039
+			chief_of_navy = 855039
+			chief_of_air = 855039
+			}
+		 }
+	GER = { war_with = FRA }
+	not = {
+		 2613 = { controlled_by = GER }
+		 }
+	
+tag = GER
+date = 1914.9.13
+
+not = { date = 1915.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191546 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  20 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2191546_Option7"
+	chief_of_staff = 855039
+	chief_of_army = 855039
+	#NOEQUIVALENT skill command = { type = add_leader_skill which = 855019 value = 1 }
+	remove_minister = 855072
+	kill_leader = 855020 
+	dissent = -2 
+	
+set_global_flag = 2191546_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 446
+title = "DH_EVENT_2191552_TITLE"
+desc = "DH_EVENT_2191552_DESC"
+trigger = { 
+tag = GER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191552 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2191552_Option7"
+	dissent = -3 
+	THIS = { end_war = FRA }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			 or = { 
+				 RUS = { war_with = THIS }
+				 SOV = { war_with = THIS }
+				 }  } 
+		#NOEQUIVALENT AI switch command = {  type = ai which = "switch/GER1914RussiaLeft.ai" }
+		 }
+	
+set_global_flag = 2191552_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 447
+title = "DH_EVENT_2191553_TITLE"
+desc = "DH_EVENT_2191553_DESC"
+trigger = { 
+tag = GER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191553 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2191553_Option7"
+	dissent = -3 
+	
+set_global_flag = 2191553_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 448
+title = "DH_EVENT_2191554_TITLE"
+desc = "DH_EVENT_2191554_DESC"
+trigger = { 
+tag = GER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191554 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2191554_Option7"
+	dissent = -3 
+	
+set_global_flag = 2191554_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 449
+title = "DH_EVENT_2191558_TITLE"
+desc = "DH_EVENT_2191558_DESC"
+trigger = {
+	#country_event = 438
+	not = {
+		 ENG = { war_with = GER }
+		 }
+	
+tag = GER
+date = 1914.1.1
+
+not = { date = 1999.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191558 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  31 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2191558_Option7"
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #country_event = 439
+				 }  } 
+		# add_country_modifier = { name = "wartime_ic_10" duration = 360 }#command = {  type = wartime_ic_mod value = 10 }
+		 }
+	# MANUALFIX stockpile command = { type = stockpile which = all when = war value = 20 }
+	GER = { relation = { who = ENG value = -50 } }
+	GER = { relation = { who = SWE value = -50 } }
+	GER = { relation = { who = NOR value = -50 } }
+	GER = { relation = { who = SPA value = -50 } }
+	GER = { relation = { who = POR value = -50 } }
+	GER = { relation = { who = GRE value = -50 } }
+	GER = { relation = { who = ALB value = -50 } }
+	GER = { relation = { who = USA value = -50 } }
+	GER = { relation = { who = CAN value = -50 } }
+	GER = { relation = { who = MEX value = -50 } }
+	GER = { relation = { who = BRA value = -50 } }
+	GER = { relation = { who = ARG value = -50 } }
+	GER = { relation = { who = CHL value = -50 } }
+	GER = { relation = { who = CHI value = -50 } }
+	GER = { relation = { who = JAP value = -50 } }
+	GER = { relation = { who = AST value = -50 } }
+	GER = { relation = { who = HOL value = -50 } }
+	
+set_global_flag = 2191558_EVENT_DONE
+
+}
+
+}
+

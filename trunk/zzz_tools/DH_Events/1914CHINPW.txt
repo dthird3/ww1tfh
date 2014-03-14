@@ -1,0 +1,1214 @@
+country_event = {
+id = 648
+title = "DH_EVENT_133011051_TITLE"
+desc = "DH_EVENT_133011051_DESC"
+trigger = {
+	or = {
+		or = {
+			and = {
+				not = {
+					#MANUALFIX area = { area = "Hunan" country = U74 data = 1 value = 70 }
+					}
+				exists = QIN
+				}
+			and = {
+				not = {
+					#MANUALFIX area = { area = "Hunan" country = UCH data = 1 value = 70 }
+					}
+				exists = CHI
+				}
+			}
+		#NOEQUIVALENT random =  3
+		}
+	or = {
+		and = {
+			CHI = { war_with = QIN }
+			exists = QIN
+			not = {
+				 exists = CHI
+				 }
+			}
+		and = {
+			CHI = { war_with = CHI }
+			exists = CHI
+			not = {
+				 exists = QIN
+				 }
+			}
+		}
+	
+tag = CHI
+
+not = { date = 1918.1.1
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011051 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_133011051_Option7"
+	# MANUALFIX secede area command = { type = secedearea which = CHI value = "Hunan" when = 2 }
+	random_country = { limit = { tag = THIS 
+			 exists = QIN
+			  } 
+		country_event = 713
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CHI
+			  } 
+		country_event = 713
+		 }
+	5709 = { hq_brigade = current }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22003 id = 10111 }
+			  } 
+		load_oob = 10111.txt
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX division_exists = { type = 22003 id = 10111 }
+				 }  } 
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		 }
+	
+set_global_flag = 133011051_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 649
+title = "DH_EVENT_133011052_TITLE"
+desc = "DH_EVENT_133011052_DESC"
+trigger = {
+	or = {
+		or = {
+			and = {
+				not = {
+					#MANUALFIX area = { area = "Jiangxi" country = U74 data = 1 value = 70 }
+					}
+				exists = QIN
+				}
+			and = {
+				not = {
+					#MANUALFIX area = { area = "Jiangxi" country = UCH data = 1 value = 70 }
+					}
+				exists = CHI
+				}
+			}
+		#NOEQUIVALENT random =  3
+		}
+	or = {
+		and = {
+			CHI = { war_with = QIN }
+			exists = QIN
+			not = {
+				 exists = CHI
+				 }
+			}
+		and = {
+			CHI = { war_with = CHI }
+			exists = CHI
+			not = {
+				 exists = QIN
+				 }
+			}
+		}
+	
+tag = CHI
+
+not = { date = 1918.1.1
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011052 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_133011052_Option7"
+	# MANUALFIX secede area command = { type = secedearea which = CHI value = "Jiangxi" when = 2 }
+	random_country = { limit = { tag = THIS 
+			 exists = QIN
+			  } 
+		country_event = 714
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CHI
+			  } 
+		country_event = 714
+		 }
+	5682 = { hq_brigade = current }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22003 id = 10041 }
+			  } 
+		load_oob = 10041.txt
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX division_exists = { type = 22003 id = 10041 }
+				 }  } 
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		 }
+	
+set_global_flag = 133011052_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 650
+title = "DH_EVENT_133011053_TITLE"
+desc = "DH_EVENT_133011053_DESC"
+trigger = {
+	#country_event = 642
+	or = {
+		or = {
+			and = {
+				not = {
+					#MANUALFIX area = { area = "Jiangsu" country = U74 data = 1 value = 70 }
+					}
+				exists = QIN
+				}
+			and = {
+				not = {
+					#MANUALFIX area = { area = "Jiangsu" country = UCH data = 1 value = 70 }
+					}
+				exists = CHI
+				}
+			}
+		#NOEQUIVALENT random =  2
+		}
+	or = {
+		and = {
+			CYN = { war_with = QIN }
+			exists = QIN
+			not = {
+				 exists = CHI
+				 }
+			}
+		and = {
+			CYN = { war_with = CHI }
+			exists = CHI
+			not = {
+				 exists = QIN
+				 }
+			}
+		}
+	
+tag = CYN
+
+not = { date = 1918.1.1
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011053 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_133011053_Option7"
+	# MANUALFIX secede area command = { type = secedearea which = CYN value = "Jiangsu" when = 2 }
+	random_country = { limit = { tag = THIS 
+			 exists = QIN
+			  } 
+		country_event = 714
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CHI
+			  } 
+		country_event = 714
+		 }
+	
+set_global_flag = 133011053_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 651
+title = "DH_EVENT_133011054_TITLE"
+desc = "DH_EVENT_133011054_DESC"
+trigger = {
+	#country_event = 642
+	or = {
+		or = {
+			and = {
+				not = {
+					#MANUALFIX area = { area = "Shanxi" country = U74 data = 1 value = 70 }
+					}
+				exists = QIN
+				}
+			and = {
+				not = {
+					#MANUALFIX area = { area = "Shanxi" country = UCH data = 1 value = 70 }
+					}
+				exists = CHI
+				}
+			}
+		#NOEQUIVALENT random =  5
+		}
+	or = {
+		and = {
+			CYN = { war_with = QIN }
+			exists = QIN
+			not = {
+				 exists = CHI
+				 }
+			}
+		and = {
+			CYN = { war_with = CHI }
+			exists = CHI
+			not = {
+				 exists = QIN
+				 }
+			}
+		}
+	
+tag = CYN
+
+not = { date = 1918.1.1
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011054 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  3 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_133011054_Option7"
+	# MANUALFIX secede area command = { type = secedearea which = CYN value = "Shanxi" when = 2 }
+	random_country = { limit = { tag = THIS 
+			 exists = QIN
+			  } 
+		country_event = 716
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CHI
+			  } 
+		country_event = 716
+		 }
+	
+set_global_flag = 133011054_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 652
+title = "DH_EVENT_133011055_TITLE"
+desc = "DH_EVENT_133011055_DESC"
+trigger = {
+	#country_event = 637
+	or = {
+		or = {
+			and = {
+				not = {
+					#MANUALFIX area = { area = "Jiangsu" country = U74 data = 1 value = 70 }
+					}
+				exists = QIN
+				}
+			and = {
+				not = {
+					#MANUALFIX area = { area = "Jiangsu" country = UCH data = 1 value = 70 }
+					}
+				exists = CHI
+				}
+			}
+		#NOEQUIVALENT random =  5
+		}
+	or = {
+		and = {
+			CHI = { war_with = QIN }
+			exists = QIN
+			not = {
+				 exists = CHI
+				 }
+			}
+		and = {
+			CHI = { war_with = CHI }
+			exists = CHI
+			not = {
+				 exists = QIN
+				 }
+			}
+		}
+	
+tag = CHI
+
+not = { date = 1918.1.1
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011055 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_133011055_Option7"
+	# MANUALFIX secede area command = { type = secedearea which = CHI value = "Jiangsu" when = 2 }
+	random_country = { limit = { tag = THIS 
+			 exists = QIN
+			  } 
+		country_event = 714
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CHI
+			  } 
+		country_event = 714
+		 }
+	5494 = { hq_brigade = current }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22003 id = 10021 }
+			  } 
+		load_oob = 10021.txt
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX division_exists = { type = 22003 id = 10021 }
+				 }  } 
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		 }
+	5542 = { hq_brigade = current }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22003 id = 10031 }
+			  } 
+		load_oob = 10031.txt
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX division_exists = { type = 22003 id = 10031 }
+				 }  } 
+		random_owned = { limit = { controlled_by = THIS  } militia_brigade = current militia_brigade = current militia_brigade = current }
+		 }
+	
+set_global_flag = 133011055_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 653
+title = "DH_EVENT_133011057_TITLE"
+desc = "DH_EVENT_133011057_DESC"
+trigger = {
+	#country_event = 637
+	or = {
+		or = {
+			and = {
+				not = {
+					#MANUALFIX area = { area = "Anhui" country = U74 data = 1 value = 70 }
+					}
+				exists = QIN
+				}
+			and = {
+				not = {
+					#MANUALFIX area = { area = "Anhui" country = UCH data = 1 value = 70 }
+					}
+				exists = CHI
+				}
+			}
+		#NOEQUIVALENT random =  1
+		}
+	or = {
+		and = {
+			CHI = { war_with = QIN }
+			exists = QIN
+			not = {
+				 exists = CHI
+				 }
+			}
+		and = {
+			CHI = { war_with = CHI }
+			exists = CHI
+			not = {
+				 exists = QIN
+				 }
+			}
+		}
+	
+tag = CHI
+
+not = { date = 1918.1.1
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011057 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_133011057_Option7"
+	# MANUALFIX secede area command = { type = secedearea which = CHI value = "Anhui" when = 2 }
+	random_country = { limit = { tag = THIS 
+			 exists = QIN
+			  } 
+		country_event = 719
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CHI
+			  } 
+		country_event = 719
+		 }
+	
+set_global_flag = 133011057_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 654
+title = "DH_EVENT_133011058_TITLE"
+desc = "DH_EVENT_133011058_DESC"
+trigger = {
+	or = {
+		or = {
+			and = {
+				not = {
+					#MANUALFIX area = { area = "Fujian" country = U74 data = 1 value = 70 }
+					}
+				exists = QIN
+				}
+			and = {
+				not = {
+					#MANUALFIX area = { area = "Fujian" country = UCH data = 1 value = 70 }
+					}
+				exists = CHI
+				}
+			}
+		#NOEQUIVALENT random =  2
+		}
+	or = {
+		and = {
+			CHI = { war_with = QIN }
+			exists = QIN
+			not = {
+				 exists = CHI
+				 }
+			}
+		and = {
+			CHI = { war_with = CHI }
+			exists = CHI
+			not = {
+				 exists = QIN
+				 }
+			}
+		}
+	
+tag = CHI
+
+not = { date = 1918.1.1
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011058 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_133011058_Option7"
+	# MANUALFIX secede area command = { type = secedearea which = CHI value = "Fujian" when = 2 }
+	random_country = { limit = { tag = THIS 
+			 exists = QIN
+			  } 
+		country_event = 720
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CHI
+			  } 
+		country_event = 720
+		 }
+	5757 = { hq_brigade = current }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22003 id = 10101 }
+			  } 
+		load_oob = 10101.txt
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX division_exists = { type = 22003 id = 10101 }
+				 }  } 
+		random_owned = { limit = { controlled_by = THIS  } militia_brigade = current militia_brigade = current militia_brigade = current }
+		 }
+	
+set_global_flag = 133011058_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 655
+title = "DH_EVENT_133011059_TITLE"
+desc = "DH_EVENT_133011059_DESC"
+trigger = {
+	or = {
+		or = {
+			and = {
+				not = {
+					#MANUALFIX area = { area = "Zhejiang" country = U74 data = 1 value = 70 }
+					}
+				exists = QIN
+				}
+			and = {
+				not = {
+					#MANUALFIX area = { area = "Zhejiang" country = UCH data = 1 value = 70 }
+					}
+				exists = CHI
+				}
+			}
+		#NOEQUIVALENT random =  3
+		}
+	or = {
+		and = {
+			CHI = { war_with = QIN }
+			exists = QIN
+			not = {
+				 exists = CHI
+				 }
+			}
+		and = {
+			CHI = { war_with = CHI }
+			exists = CHI
+			not = {
+				 exists = QIN
+				 }
+			}
+		}
+	
+tag = CHI
+
+not = { date = 1918.1.1
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011059 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_133011059_Option7"
+	# MANUALFIX secede area command = { type = secedearea which = CHI value = "Zhejiang" when = 2 }
+	random_country = { limit = { tag = THIS 
+			 exists = QIN
+			  } 
+		country_event = 721
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CHI
+			  } 
+		country_event = 721
+		 }
+	5541 = { hq_brigade = current }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22003 id = 10061 }
+			  } 
+		load_oob = 10061.txt
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX division_exists = { type = 22003 id = 10061 }
+				 }  } 
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		 }
+	
+set_global_flag = 133011059_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 656
+title = "DH_EVENT_133011060_TITLE"
+desc = "DH_EVENT_133011060_DESC"
+trigger = {
+	or = {
+		or = {
+			and = {
+				not = {
+					#MANUALFIX area = { area = "Hubei" country = U74 data = 1 value = 70 }
+					}
+				exists = QIN
+				}
+			and = {
+				not = {
+					#MANUALFIX area = { area = "Hubei" country = UCH data = 1 value = 70 }
+					}
+				exists = CHI
+				}
+			}
+		#NOEQUIVALENT random =  3
+		}
+	or = {
+		and = {
+			CHI = { war_with = QIN }
+			exists = QIN
+			not = {
+				 exists = CHI
+				 }
+			}
+		and = {
+			CHI = { war_with = CHI }
+			exists = CHI
+			not = {
+				 exists = QIN
+				 }
+			}
+		}
+	
+tag = CHI
+
+not = { date = 1918.1.1
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011060 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_133011060_Option7"
+	# MANUALFIX secede area command = { type = secedearea which = CHI value = "Hubei" when = 2 }
+	random_country = { limit = { tag = THIS 
+			 exists = QIN
+			  } 
+		country_event = 722
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CHI
+			  } 
+		country_event = 722
+		 }
+	7508 = { hq_brigade = current }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22003 id = 10011 }
+			  } 
+		load_oob = 10011.txt
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX division_exists = { type = 22003 id = 10011 }
+				 }  } 
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		 }
+	
+set_global_flag = 133011060_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 657
+title = "DH_EVENT_133011061_TITLE"
+desc = "DH_EVENT_133011061_DESC"
+trigger = {
+	or = {
+		or = {
+			and = {
+				not = {
+					#MANUALFIX area = { area = "Guizhou" country = U74 data = 1 value = 70 }
+					}
+				exists = QIN
+				}
+			and = {
+				not = {
+					#MANUALFIX area = { area = "Guizhou" country = UCH data = 1 value = 70 }
+					}
+				exists = CHI
+				}
+			}
+		#NOEQUIVALENT random =  10
+		}
+	or = {
+		and = {
+			CHI = { war_with = QIN }
+			exists = QIN
+			not = {
+				 exists = CHI
+				 }
+			}
+		and = {
+			CHI = { war_with = CHI }
+			exists = CHI
+			not = {
+				 exists = QIN
+				 }
+			}
+		}
+	
+tag = CHI
+
+not = { date = 1918.1.1
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011061 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_133011061_Option7"
+	# MANUALFIX secede area command = { type = secedearea which = CHI value = "Guizhou" when = 2 }
+	random_country = { limit = { tag = THIS 
+			 exists = QIN
+			  } 
+		country_event = 712
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CHI
+			  } 
+		country_event = 712
+		 }
+	7541 = { hq_brigade = current }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22003 id = 10131 }
+			  } 
+		load_oob = 10131.txt
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX division_exists = { type = 22003 id = 10131 }
+				 }  } 
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		 }
+	
+set_global_flag = 133011061_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 658
+title = "DH_EVENT_133011062_TITLE"
+desc = "DH_EVENT_133011062_DESC"
+trigger = {
+	or = {
+		or = {
+			and = {
+				not = {
+					#MANUALFIX area = { area = "Sichuan" country = U74 data = 1 value = 20 }
+					}
+				exists = QIN
+				}
+			and = {
+				not = {
+					#MANUALFIX area = { area = "Sichuan" country = UCH data = 1 value = 20 }
+					}
+				exists = CHI
+				}
+			}
+		}
+	or = {
+		and = {
+			CHI = { war_with = QIN }
+			exists = QIN
+			not = {
+				 exists = CHI
+				 }
+			}
+		and = {
+			CHI = { war_with = CHI }
+			exists = CHI
+			not = {
+				 exists = QIN
+				 }
+			}
+		}
+	
+tag = CHI
+
+not = { date = 1918.1.1
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011062 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_133011062_Option7"
+	# MANUALFIX secede area command = { type = secedearea which = CHI value = "Sichuan" when = 2 }
+	random_country = { limit = { tag = THIS 
+			 exists = QIN
+			  } 
+		country_event = 708
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CHI
+			  } 
+		country_event = 708
+		 }
+	9445 = { hq_brigade = current }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22003 id = 10081 }
+			  } 
+		load_oob = 10081.txt
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX division_exists = { type = 22003 id = 10081 }
+				 }  } 
+		random_owned = { limit = { controlled_by = THIS  } militia_brigade = current militia_brigade = current militia_brigade = current }
+		 }
+	
+set_global_flag = 133011062_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 659
+title = "DH_EVENT_133011018_TITLE"
+desc = "DH_EVENT_133011018_DESC"
+trigger = {
+	#country_event = 643
+	or = {
+		#MANUALFIX area = { area = "Anhui" country = U74 data = 1 value = 70 }
+		not = {
+			 #MANUALFIX area = { area = "Anhui" country = CHI data = 1 value = 30 }
+			 }
+		}
+	not = {
+		#MANUALFIX region = { region = "China" country = U74 data = 1 value = 50 }
+		}
+	CHI = { war_with = QIN }
+	not = {
+		 exists = CYN
+		 }
+	exists = QIN
+	not = {
+		 exists = CHI
+		 }
+	or = {
+		not = {
+			  
+			}
+		dissent = 30
+		}
+	dissent = 10
+	not = {
+		#country_event = 631
+		}
+	
+tag = QIN
+
+not = { date = 1918.1.1
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011018 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  3 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_133011018_Option7"
+	release = MAN
+	# MANUALFIX change flag command = { type = flag_ext where = MAN which = "_AHC" }
+	# MANUALFIX name command = { type = name where = MAN which = "CYN_AHC" }
+	ZZZ = { create_vassal = THIS } THIS = { inherit = ZZZ }
+	# MANUALFIX secede area command = { type = secedearea which = MAN value = "Anhui" when = 2 }
+	country_event = 660
+	dissent = 5 
+	# MANUALFIX remove unit command = { type = remove_division which = "1st SC Division" value = U74 }
+	# MANUALFIX remove unit command = { type = remove_division which = "2nd SC Division" value = U74 }
+	# MANUALFIX remove unit command = { type = remove_division which = "3rd SC Division" value = U74 }
+	# MANUALFIX remove unit command = { type = remove_division which = "4th SC Division" value = U74 }
+	# MANUALFIX remove unit command = { type = remove_division which = "5th SC Division" value = U74 }
+	# MANUALFIX remove unit command = { type = remove_division which = "6th SC Division" value = U74 }
+	
+set_global_flag = 133011018_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 660
+title = "DH_EVENT_133011019_TITLE"
+desc = "DH_EVENT_133011019_DESC"
+trigger = { 
+tag = MAN
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011019 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011019_Option7"
+	CYN = {
+		# MANUALFIX change flag command = { type = flag_ext where = CYN which = "_AHC" }
+		# MANUALFIX name command = { type = name where = CYN which = CYN_AHC }
+		# MANUALFIX secede area command = { type = secedearea which = U74 value = "Jilin" when = 1 }
+		# MANUALFIX secede area command = { type = secedearea which = U74 value = "Heilongjiang" when = 1 }
+		# MANUALFIX secede area command = { type = secedearea which = U74 value = "Rehe" when = 1 }
+		# MANUALFIX secede area command = { type = secedearea which = U74 value = "Liaoning" when = 1 }
+		create_alliance = QIN
+		5537 = { hq_brigade = current }
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615200 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615201 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615202 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615203 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615204 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615205 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615206 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615207 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615208 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615209 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615210 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615211 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615212 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615213 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615214 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615215 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615216 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615217 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615218 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615219 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615220 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615221 }
+		remove_minister = 615100 
+		remove_minister = 615101 
+		remove_minister = 615102 
+		remove_minister = 615103 
+		remove_minister = 615104 
+		remove_minister = 615105 
+		remove_minister = 615106 
+		remove_minister = 615107 
+		remove_minister = 615108 
+		remove_minister = 615109 
+		remove_minister = 615110 
+		remove_minister = 615111 
+		remove_minister = 615112 
+		remove_minister = 615113 
+		remove_minister = 615114 
+		remove_minister = 615115 
+		remove_minister = 615116 
+		remove_minister = 615117 
+		remove_minister = 615118 
+		remove_minister = 615119 
+		remove_minister = 615120 
+		remove_minister = 615121 
+		remove_minister = 615122 
+		remove_minister = 615123 
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615200 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615201 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615202 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615203 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615204 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615205 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615206 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615207 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615208 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615209 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615210 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615211 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615212 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615213 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615214 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615215 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615216 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615217 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615218 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615219 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615220 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615221 }
+		head_of_state = 615200 
+		head_of_government = 615201 
+		country_event = 661
+		}
+
+set_global_flag = 133011019_EVENT_DONE
+
+	}
+}
+
+country_event = {
+id = 661
+title = "DH_EVENT_133011300_TITLE"
+desc = "DH_EVENT_133011300_DESC"
+trigger = { 
+tag = QIN
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011300 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_133011300_Option7"
+	set_global_flag = SLEEPEVENT_133011301 
+	chief_of_staff = 1185123 
+	chief_of_army = 1185122 
+	head_of_state = 1185124 
+	head_of_government = 1185117 
+	
+set_global_flag = 133011300_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 0
+		 }
+	name = "DH_EVENT_133011300_Option8"
+	dissent = 5 
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	threat = { who = all value = -30  }
+	remove_minister = 1185122 
+	remove_minister = 1185123 
+	remove_minister = 1185124 
+	remove_minister = 1185110 
+	remove_minister = 1185111 
+	remove_minister = 1185108 
+	remove_minister = 1185106 
+	remove_minister = 1185107 
+	remove_minister = 1185109 
+	country_event = 662
+	
+set_global_flag = 133011300_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 662
+title = "DH_EVENT_133011301_TITLE"
+desc = "DH_EVENT_133011301_DESC"
+trigger = { 
+tag = CYN
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011301 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011301_Option7"
+	THIS = { end_war = CHI }
+	THIS = { end_war = CGX }
+	THIS = { end_war = SIK }
+	THIS = { end_war = CXB }
+	THIS = { end_war = CHC }
+	THIS = { end_war = CSX }
+	country_event = 663
+	
+set_global_flag = 133011301_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 663
+title = "DH_EVENT_133011336_TITLE"
+desc = "DH_EVENT_133011336_DESC"
+trigger = { 
+tag = CYN
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011336 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011336_Option7"
+	war = { target = QIN }
+	threat = { who = all value = -30  }
+	
+set_global_flag = 133011336_EVENT_DONE
+
+}
+
+}
+

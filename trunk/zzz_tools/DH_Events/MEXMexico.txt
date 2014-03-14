@@ -1,0 +1,2369 @@
+country_event = {
+id = 183
+title = "DH_EVENT_2038500_TITLE"
+desc = "DH_EVENT_2038500_DESC"
+picture = "zimmermann_telegram"
+
+trigger = { 
+tag = MEX
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038500 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2038500_Option7"
+	#Removed Blank command
+	
+set_global_flag = 2038500_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 184
+title = "DH_EVENT_2038501_TITLE"
+desc = "DH_EVENT_2038501_DESC"
+picture = "zimmermann_telegram"
+
+trigger = {
+	#country_event = 2038499 #MANUALFIX unknown event trigger
+	USA = { war_with = GER }
+	or = {
+		#country_event = 531
+		not = {
+			 #country_event = 509
+			 }
+		}
+	#NOEQUIVALENT random =  4
+	
+tag = MEX
+date = 1914.8.4
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038501 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  14 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2038501_Option7"
+	create_alliance = GER
+	
+set_global_flag = 2038501_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 185
+title = "DH_EVENT_2038502_TITLE"
+desc = "DH_EVENT_2038502_DESC"
+picture = "veracruz_occupation"
+
+trigger = {
+	9624 = { controlled_by = USA }
+	war = no
+	or = {
+		year = 1915
+		and = { 
+			 year = 1914
+			 month = 10
+			 }
+		not = {
+			 exists = MXR
+			 exists = MXR
+			 exists = MXR
+			 }
+		}
+	#NOEQUIVALENT random =  5
+	
+tag = MEX
+date = 1914.8.4
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038502 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  20 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2038502_Option7"
+	war = { target = USA }
+	
+set_global_flag = 2038502_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 186
+title = "DH_EVENT_2038503_TITLE"
+desc = "DH_EVENT_2038503_DESC"
+picture = "veracruz_occupation"
+
+trigger = { 
+tag = MEX
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038503 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 90
+		 }
+	name = "DH_EVENT_2038503_Option7"
+	country_event = 531
+	
+set_global_flag = 2038503_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 10
+		 }
+	name = "DH_EVENT_2038503_Option8"
+	dissent = 8 
+	THIS = { military_access = USA }
+	
+set_global_flag = 2038503_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 187
+title = "DH_EVENT_2038504_TITLE"
+desc = "DH_EVENT_2038504_DESC"
+picture = "zimmermann_telegram"
+
+trigger = { 
+tag = MXR
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038504 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2038504_Option7"
+	#Removed Blank command
+	
+set_global_flag = 2038504_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 188
+title = "DH_EVENT_2038505_TITLE"
+desc = "DH_EVENT_2038505_DESC"
+picture = "zimmermann_telegram"
+
+trigger = {
+	#country_event = 186
+	USA = { war_with = GER }
+	or = {
+		#country_event = 534
+		not = {
+			 #country_event = 509
+			 }
+		}
+	#NOEQUIVALENT random =  4
+	
+tag = MXR
+date = 1914.8.4
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038505 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  14 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2038505_Option7"
+	create_alliance = GER
+	
+set_global_flag = 2038505_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 189
+title = "DH_EVENT_2038506_TITLE"
+desc = "DH_EVENT_2038506_DESC"
+picture = "veracruz_occupation"
+
+trigger = { 
+tag = MXR
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038506 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 90
+		 }
+	name = "DH_EVENT_2038506_Option7"
+	country_event = 534
+	
+set_global_flag = 2038506_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 10
+		 }
+	name = "DH_EVENT_2038506_Option8"
+	dissent = 8 
+	THIS = { military_access = USA }
+	
+set_global_flag = 2038506_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 190
+title = "DH_EVENT_2038601_TITLE"
+desc = "DH_EVENT_2038601_DESC"
+picture = "provisionalgovernment"
+
+trigger = {
+	war = no
+	exists = MXR
+	exists = MXR
+	exists = MXR
+	not = {
+		exists = MEX
+		#country_event = 190
+		#country_event = 191
+		#country_event = 192
+		has_country_flag = MEX_Conv
+		}
+	
+
+date = 1914.1.1
+
+not = { date = 1920.12.30
+ }
+or = {
+tag = MXR
+tag = MXR
+tag = MXR
+}
+
+
+not = { has_global_flag = SLEEPEVENT_2038601 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  7 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2038601_Option7"
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	dissent = -5 
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 has_global_flag= MEX_Convention
+				 }  } 
+		country_event = 193
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 has_global_flag= MEX_Convention
+				 }  } 
+		set_global_flag = MEX_Convention 
+		 }
+	set_global_flag = SLEEPEVENT_2038602 
+	set_global_flag = SLEEPEVENT_2038603 
+	set_country_flag = MEX_Conv 
+	
+set_global_flag = 2038601_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 191
+title = "DH_EVENT_2038602_TITLE"
+desc = "DH_EVENT_2038602_DESC"
+picture = "provisionalgovernment"
+
+trigger = {
+	war = no
+	or = {
+		exists = MXR
+		exists = MXR
+		exists = MXR
+		}
+	or = {
+		not = {
+			 exists = MXR
+			 }
+		not = {
+			 exists = MXR
+			 }
+		not = {
+			 exists = MXR
+			 }
+		}
+	not = {
+		exists = MEX
+		#country_event = 2038600 #MANUALFIX unknown event trigger
+		#country_event = 191
+		#country_event = 192
+		has_country_flag = MEX_End
+		}
+	
+
+date = 1914.1.1
+
+not = { date = 1920.12.30
+ }
+or = {
+tag = MXR
+tag = MXR
+tag = MXR
+}
+
+
+not = { has_global_flag = SLEEPEVENT_2038602 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  7 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2038602_Option7"
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	dissent = -5 
+	random_country = { limit = { tag = THIS 
+			 exists = MXR
+			 exists = MXR
+			 not = {
+				 exists = MXR
+				 MXR = { war_with = MXR }
+				 }  } 
+		country_event = 210
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = MXR
+			 exists = MXR
+			 not = {
+				 exists = MXR
+				 MXR = { war_with = MXR }
+				 }  } 
+		country_event = 211
+		 }
+	set_country_flag = MEX_End 
+	set_global_flag = SLEEPEVENT_2038601 
+	set_global_flag = SLEEPEVENT_2038603 
+	
+set_global_flag = 2038602_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 192
+title = "DH_EVENT_2038603_TITLE"
+desc = "DH_EVENT_2038603_DESC"
+picture = "Rheinland"
+
+trigger = {
+	war = no
+	head_of_state = 170106
+	not = {
+		exists = MXR
+		exists = MXR
+		exists = MXR
+		#country_event = 2038600 #MANUALFIX unknown event trigger
+		#country_event = 190
+		#country_event = 192
+		}
+	
+tag = MEX
+date = 1914.1.1
+
+not = { date = 1920.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038603 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  7 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2038603_Option7"
+	dissent = -5 
+	7369 = { create_revolt = 3 }
+	9589 = { create_revolt = 3 }
+	set_country_flag = MEX_Conv 
+	set_global_flag = SLEEPEVENT_2038601 
+	set_global_flag = SLEEPEVENT_2038602 
+	
+set_global_flag = 2038603_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 193
+title = "DH_EVENT_2038604_TITLE"
+desc = "DH_EVENT_2038604_DESC"
+picture = "convention_of_aguascalientes"
+
+trigger = { 
+tag = MXR
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038604 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2038604_Option7"
+	dissent = 2 
+	country_event = 194
+	country_event = 195
+	clr_global_flag = MEX_Convention 
+	clr_country_flag = MEX_Conv 
+	set_global_flag = SLEEPEVENT_2038601 
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		#NOEQUIVALENT AI switch command = {  type = ai which = "switch/U57_Convention.ai" }
+		 }
+	
+set_global_flag = 2038604_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 194
+title = "DH_EVENT_2038605_TITLE"
+desc = "DH_EVENT_2038605_DESC"
+picture = "convention_of_aguascalientes"
+
+trigger = { 
+tag = MXR
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038605 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISexists = MXRexists = MXRnot = { MXR = { war_with = MXR } }not = { MXR = { alliance_with = MXR } }not = { MXR = { alliance_with = MXR } }not = { MXR = { alliance_with = MXR } } } } 
+	ai_chance = { factor = 90
+		 }
+	name = "DH_EVENT_2038605_Option7"
+	neutrality = -5
+	war = { target = MXR }
+	dissent = -5 
+	clr_country_flag = MEX_Conv 
+	set_global_flag = U58_alliance_U59 
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		#NOEQUIVALENT AI switch command = {  type = ai which = "switch/U58_Convention.ai" }
+		 }
+	
+set_global_flag = 2038605_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISexists = MXRexists = MXRnot = { MXR = { war_with = MXR } }not = { MXR = { alliance_with = MXR } }not = { MXR = { alliance_with = MXR } }not = { MXR = { alliance_with = MXR } } } } 
+	ai_chance = { factor = 5
+		 }
+	name = "DH_EVENT_2038605_Option8"
+	neutrality = -10
+	war = { target = MXR }
+	war = { target = MXR }
+	dissent = -2 
+	clr_country_flag = MEX_Conv 
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		#NOEQUIVALENT AI switch command = {  type = ai which = "switch/U58_Convention_B.ai" }
+		 }
+	
+set_global_flag = 2038605_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISexists = MXRnot = { exists = MXR }not = { MXR = { war_with = MXR } }not = { MXR = { alliance_with = MXR } } } } 
+	ai_chance = { factor = 90
+		 }
+	name = "DH_EVENT_2038605_Option9"
+	neutrality = -5
+	war = { target = MXR }
+	dissent = -5 
+	clr_country_flag = MEX_Conv 
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		#NOEQUIVALENT AI switch command = {  type = ai which = "switch/U58_Convention.ai" }
+		 }
+	
+set_global_flag = 2038605_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISexists = MXRnot = { MXR = { war_with = MXR } }THIS = { ai = yes } } } 
+	ai_chance = { factor = 5
+		 }
+	name = "DH_EVENT_2038605_Option10"
+	clr_country_flag = MEX_Conv 
+	country_event = 196
+	
+set_global_flag = 2038605_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 195
+title = "DH_EVENT_2038606_TITLE"
+desc = "DH_EVENT_2038606_DESC"
+picture = "convention_of_aguascalientes"
+
+trigger = { 
+tag = MXR
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038606 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISexists = MXRexists = MXRnot = { MXR = { war_with = MXR } }MXR = { war_with = MXR }not = { MXR = { alliance_with = MXR } }not = { MXR = { alliance_with = MXR } }has_global_flag= U58_alliance_U59 } } 
+	ai_chance = { factor = 90
+		 }
+	name = "DH_EVENT_2038606_Option7"
+	neutrality = -5
+	create_alliance = MXR
+	dissent = -5 
+	clr_country_flag = MEX_Conv 
+	clr_global_flag = U58_alliance_U59 
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		#NOEQUIVALENT AI switch command = {  type = ai which = "switch/U59_Convention.ai" }
+		 }
+	
+set_global_flag = 2038606_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISexists = MXRexists = MXRnot = { MXR = { alliance_with = MXR } }not = { MXR = { alliance_with = MXR } } } } 
+	ai_chance = { factor = 5
+		 }
+	name = "DH_EVENT_2038606_Option8"
+	neutrality = -10
+	war = { target = MXR }
+	war = { target = MXR }
+	dissent = -2 
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= U58_alliance_U59
+			  } 
+		clr_global_flag = U58_alliance_U59 
+		 }
+	clr_country_flag = MEX_Conv 
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		#NOEQUIVALENT AI switch command = {  type = ai which = "switch/U59_Convention_B.ai" }
+		 }
+	
+set_global_flag = 2038606_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISexists = MXRnot = { exists = MXR }not = { MXR = { war_with = MXR } }not = { MXR = { alliance_with = MXR } } } } 
+	ai_chance = { factor = 90
+		 }
+	name = "DH_EVENT_2038606_Option9"
+	neutrality = -5
+	war = { target = MXR }
+	dissent = -5 
+	clr_country_flag = MEX_Conv 
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		#NOEQUIVALENT AI switch command = {  type = ai which = "switch/U59_Convention.ai" }
+		 }
+	
+set_global_flag = 2038606_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISexists = MXRnot = { MXR = { war_with = MXR } }THIS = { ai = yes } } } 
+	ai_chance = { factor = 5
+		 }
+	name = "DH_EVENT_2038606_Option10"
+	clr_country_flag = MEX_Conv 
+	country_event = 197
+	
+set_global_flag = 2038606_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 196
+title = "DH_EVENT_2038607_TITLE"
+desc = "DH_EVENT_2038607_DESC"
+picture = "Peace_conference"
+
+trigger = { 
+tag = MXR
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038607 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2038607_Option7"
+	THIS = { inherit = MXR }
+	dissent = -3 
+	
+set_global_flag = 2038607_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 197
+title = "DH_EVENT_2038608_TITLE"
+desc = "DH_EVENT_2038608_DESC"
+picture = "Peace_conference"
+
+trigger = { 
+tag = MXR
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038608 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2038608_Option7"
+	THIS = { inherit = MXR }
+	dissent = -3 
+	
+set_global_flag = 2038608_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 198
+title = "DH_EVENT_2038609_TITLE"
+desc = "DH_EVENT_2038609_DESC"
+picture = "Rheinland"
+
+trigger = {
+	war = no
+	not = {
+		exists = MEX
+		exists = MXR
+		exists = MXR
+		}
+	9604 = { controlled_by = MXR }
+	
+tag = MXR
+date = 1914.1.1
+
+not = { date = 1920.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038609 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  7 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2038609_Option7"
+	dissent = -5 
+	MEX = {
+		country_event = 199
+		}
+
+set_global_flag = 2038609_EVENT_DONE
+
+	}
+}
+
+country_event = {
+id = 199
+title = "DH_EVENT_2038610_TITLE"
+desc = "DH_EVENT_2038610_DESC"
+picture = "Rheinland"
+
+trigger = { 
+tag = MEX
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038610 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2038610_Option7"
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170200 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170201 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170202 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170203 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170204 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170205 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170206 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170207 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170208 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170209 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170210 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170211 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170212 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170213 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170214 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170215 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170216 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170217 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170218 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170219 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170220 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170221 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170222 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170223 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170224 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170225 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170226 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170227 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170228 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170229 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170230 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170231 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170232 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170233 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170234 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170235 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170236 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170237 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170239 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170240 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170241 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170242 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170243 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170244 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170245 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170246 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170247 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170248 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170249 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170250 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170252 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170253 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170254 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170255 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170256 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170257 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170258 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170259 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170260 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170261 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170262 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170263 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170265 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170266 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170267 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170268 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170269 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170270 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170271 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170272 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170273 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170274 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170275 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170276 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170277 }
+	# add_country_modifier = { name = "democratic9" duration = 360 }#command = { type = set_domestic which = democratic value = 9 }
+	# add_country_modifier = { name = "rulingpartysupport" duration = 360 }#command = { type = set_domestic which = political_left value = 3 }
+	# add_country_modifier = { name = "democratic8" duration = 360 }#command = { type = set_domestic which = freedom value = 8 }
+	# add_country_modifier = { name = "freemarket9" duration = 360 }#command = { type = set_domestic which = free_market value = 9 }
+	national_unity = -5
+	neutrality = 16
+	head_of_state = 170200
+	head_of_government = 170200
+	foreign_minister = 170211
+	armament_minister = 170164
+	minister_of_security = 170232
+	minister_of_intelligence = 170003
+	chief_of_staff = 170241
+	chief_of_army = 170241
+	chief_of_navy = 170241
+	chief_of_air = 170277
+	# add_country_modifier = { name = "research_1" duration = 360 }#command = { type = waketeam which = 170025 }
+	# add_country_modifier = { name = "research_1" duration = 360 }#command = { type = waketeam which = 170017 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170330 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170331 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170332 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170333 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170334 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170335 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170336 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170337 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170338 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170339 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170340 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170341 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170342 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170343 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170344 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170345 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170346 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170347 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170348 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170349 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170350 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170351 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170352 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170353 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170354 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170355 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170356 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170357 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170358 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170359 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170360 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170361 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170362 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170363 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170364 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170365 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170366 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170367 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170368 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170369 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170370 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170371 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170372 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170373 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170374 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170375 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170376 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170377 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170378 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170379 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170380 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170381 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170382 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170383 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170384 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170385 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170386 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170387 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170388 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170389 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170390 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170391 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170392 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170393 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170394 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170395 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170396 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170397 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170398 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170399 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170400 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170401 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170402 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170403 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170404 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170405 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170406 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170407 }
+	remove_minister = 170106
+	remove_minister = 170107
+	remove_minister = 170106
+	remove_minister = 170107
+	remove_minister = 170110
+	remove_minister = 170111
+	remove_minister = 170112
+	remove_minister = 170113
+	remove_minister = 170114
+	remove_minister = 170115
+	remove_minister = 170116
+	remove_minister = 170117
+	remove_minister = 170118
+	remove_minister = 170112
+	remove_minister = 170115
+	remove_minister = 170121
+	remove_minister = 170122
+	remove_minister = 170123
+	remove_minister = 170124
+	remove_minister = 170112
+	remove_minister = 170121
+	remove_minister = 170127
+	remove_minister = 170128
+	remove_minister = 170129
+	remove_minister = 170130
+	remove_minister = 170127
+	remove_minister = 170128
+	remove_minister = 170129
+	remove_minister = 170130
+	remove_minister = 170128
+	remove_minister = 170129
+	remove_minister = 170130
+	remove_minister = 170138
+	remove_minister = 170139
+	remove_minister = 170127
+	remove_minister = 170128
+	remove_minister = 170129
+	kill_leader = 170062 
+	kill_leader = 170063 
+	kill_leader = 170064 
+	kill_leader = 170066 
+	kill_leader = 170067 
+	kill_leader = 170068 
+	kill_leader = 170069 
+	kill_leader = 170070 
+	kill_leader = 170071 
+	kill_leader = 170072 
+	kill_leader = 170073 
+	kill_leader = 170074 
+	kill_leader = 170075 
+	kill_leader = 70076 
+	kill_leader = 170077 
+	kill_leader = 170078 
+	kill_leader = 170079 
+	kill_leader = 170080 
+	kill_leader = 170081 
+	kill_leader = 170082 
+	kill_leader = 170083 
+	kill_leader = 170084 
+	kill_leader = 70085 
+	kill_leader = 170086 
+	kill_leader = 170087 
+	kill_leader = 170088 
+	kill_leader = 70089 
+	kill_leader = 170090 
+	kill_leader = 170091 
+	kill_leader = 170092 
+	kill_leader = 170093 
+	kill_leader = 170094 
+	kill_leader = 170095 
+	kill_leader = 170096 
+	kill_leader = 170097 
+	kill_leader = 170098 
+	kill_leader = 170099 
+	kill_leader = 170100 
+	kill_leader = 170101 
+	kill_leader = 170102 
+	kill_leader = 170103 
+	kill_leader = 170104 
+	kill_leader = 170105 
+	kill_leader = 170106 
+	kill_leader = 170107 
+	kill_leader = 170108 
+	kill_leader = 170109 
+	kill_leader = 170110 
+	kill_leader = 170111 
+	kill_leader = 170112 
+	kill_leader = 170113 
+	kill_leader = 170114 
+	kill_leader = 170115 
+	kill_leader = 170116 
+	kill_leader = 170117 
+	kill_leader = 170118 
+	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 170020 }
+	remove_minister = 170150
+	remove_minister = 170151
+	remove_minister = 170152
+	remove_minister = 170153
+	remove_minister = 170150
+	remove_minister = 170151
+	remove_minister = 170152
+	remove_minister = 170153
+	remove_minister = 170158
+	remove_minister = 170159
+	remove_minister = 170160
+	remove_minister = 170150
+	remove_minister = 170162
+	remove_minister = 170163
+	remove_minister = 170164
+	remove_minister = 170165
+	remove_minister = 170166
+	remove_minister = 170167
+	remove_minister = 170168
+	remove_minister = 170169
+	remove_minister = 170150
+	remove_minister = 170171
+	remove_minister = 170172
+	remove_minister = 170173
+	remove_minister = 170174
+	remove_minister = 170175
+	remove_minister = 170153
+	remove_minister = 170174
+	remove_minister = 170175
+	remove_minister = 170172
+	remove_minister = 170174
+	remove_minister = 170175
+	remove_minister = 170182
+	remove_minister = 170153
+	remove_minister = 170172
+	kill_leader = 170262 
+	kill_leader = 170317 
+	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 170021 }
+	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 170022 }
+	
+set_global_flag = 2038610_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 200
+title = "DH_EVENT_2038611_TITLE"
+desc = "DH_EVENT_2038611_DESC"
+picture = "Rheinland"
+
+trigger = {
+	war = no
+	not = {
+		exists = MEX
+		exists = MXR
+		exists = MXR
+		}
+	9604 = { controlled_by = MXR }
+	
+tag = MXR
+date = 1914.1.1
+
+not = { date = 1920.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038611 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  7 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2038611_Option7"
+	dissent = -5 
+	MEX = {
+		country_event = 201
+		}
+
+set_global_flag = 2038611_EVENT_DONE
+
+	}
+}
+
+country_event = {
+id = 201
+title = "DH_EVENT_2038612_TITLE"
+desc = "DH_EVENT_2038612_DESC"
+picture = "Rheinland"
+
+trigger = { 
+tag = MEX
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038612 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2038612_Option7"
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170150 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170151 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170152 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170154 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170155 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170156 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170158 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170159 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170160 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170161 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170162 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170163 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170164 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170165 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170166 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170167 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170168 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170169 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170170 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170171 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170172 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170173 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170174 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170175 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170177 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170178 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170179 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170180 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170181 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170182 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170184 }
+	# add_country_modifier = { name = "democratic8" duration = 360 }#command = { type = set_domestic which = democratic value = 8 }
+	# add_country_modifier = { name = "rulingpartysupport" duration = 360 }#command = { type = set_domestic which = political_left value = 7 }
+	# add_country_modifier = { name = "democratic9" duration = 360 }#command = { type = set_domestic which = freedom value = 9 }
+	# add_country_modifier = { name = "freemarket6" duration = 360 }#command = { type = set_domestic which = free_market value = 6 }
+	national_unity = -10
+	neutrality = 23
+	head_of_state = 170150
+	head_of_government = 170152
+	foreign_minister = 170160
+	armament_minister = 170165
+	minister_of_security = 170150
+	minister_of_intelligence = 170172
+	chief_of_staff = 170173
+	chief_of_army = 170174
+	chief_of_navy = 170174
+	chief_of_air = 170182
+	# add_country_modifier = { name = "research_1" duration = 360 }#command = { type = waketeam which = 170022 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170150 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170151 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170152 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170153 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170154 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170155 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170156 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170157 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170158 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170159 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170160 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170161 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170162 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170163 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170164 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170165 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170166 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170167 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170168 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170169 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170170 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170171 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170172 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170173 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170174 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170175 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170176 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170177 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170178 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170179 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170180 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170181 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170182 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170183 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170184 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170185 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170186 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170187 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170188 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170189 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170190 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170191 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170192 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170193 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170194 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170195 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170196 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170197 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170198 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170199 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170200 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170201 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170202 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170203 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170204 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170205 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170206 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170207 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170208 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170209 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170210 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170211 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170212 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170213 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170214 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170215 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170216 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170217 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170218 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170219 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170220 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170221 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170222 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170223 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170224 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170225 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170226 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170227 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170228 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170229 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170230 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170231 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170232 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170233 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170234 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170235 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170236 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170237 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170238 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170239 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170240 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170241 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170242 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170243 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170244 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170245 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170246 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170247 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170248 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170249 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170250 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170251 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170252 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170253 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170254 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170255 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170256 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170257 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170258 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170259 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170260 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170261 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170262 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170263 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170264 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170265 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170266 }
+	remove_minister = 170106
+	remove_minister = 170107
+	remove_minister = 170106
+	remove_minister = 170107
+	remove_minister = 170110
+	remove_minister = 170111
+	remove_minister = 170112
+	remove_minister = 170113
+	remove_minister = 170114
+	remove_minister = 170115
+	remove_minister = 170116
+	remove_minister = 170117
+	remove_minister = 170118
+	remove_minister = 170112
+	remove_minister = 170115
+	remove_minister = 170121
+	remove_minister = 170122
+	remove_minister = 170123
+	remove_minister = 170124
+	remove_minister = 170112
+	remove_minister = 170121
+	remove_minister = 170127
+	remove_minister = 170128
+	remove_minister = 170129
+	remove_minister = 170130
+	remove_minister = 170127
+	remove_minister = 170128
+	remove_minister = 170129
+	remove_minister = 170130
+	remove_minister = 170128
+	remove_minister = 170129
+	remove_minister = 170130
+	remove_minister = 170138
+	remove_minister = 170139
+	remove_minister = 170127
+	remove_minister = 170128
+	remove_minister = 170129
+	kill_leader = 170062 
+	kill_leader = 170063 
+	kill_leader = 170064 
+	kill_leader = 170066 
+	kill_leader = 170067 
+	kill_leader = 170068 
+	kill_leader = 170069 
+	kill_leader = 170070 
+	kill_leader = 170071 
+	kill_leader = 170072 
+	kill_leader = 170073 
+	kill_leader = 170074 
+	kill_leader = 170075 
+	kill_leader = 70076 
+	kill_leader = 170077 
+	kill_leader = 170078 
+	kill_leader = 170079 
+	kill_leader = 170080 
+	kill_leader = 170081 
+	kill_leader = 170082 
+	kill_leader = 170083 
+	kill_leader = 170084 
+	kill_leader = 70085 
+	kill_leader = 170086 
+	kill_leader = 170087 
+	kill_leader = 170088 
+	kill_leader = 70089 
+	kill_leader = 170090 
+	kill_leader = 170091 
+	kill_leader = 170092 
+	kill_leader = 170093 
+	kill_leader = 170094 
+	kill_leader = 170095 
+	kill_leader = 170096 
+	kill_leader = 170097 
+	kill_leader = 170098 
+	kill_leader = 170099 
+	kill_leader = 170100 
+	kill_leader = 170101 
+	kill_leader = 170102 
+	kill_leader = 170103 
+	kill_leader = 170104 
+	kill_leader = 170105 
+	kill_leader = 170106 
+	kill_leader = 170107 
+	kill_leader = 170108 
+	kill_leader = 170109 
+	kill_leader = 170110 
+	kill_leader = 170111 
+	kill_leader = 170112 
+	kill_leader = 170113 
+	kill_leader = 170114 
+	kill_leader = 170115 
+	kill_leader = 170116 
+	kill_leader = 170117 
+	kill_leader = 170118 
+	kill_leader = 170119 
+	kill_leader = 170120 
+	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 170020 }
+	remove_minister = 170200
+	remove_minister = 170201
+	remove_minister = 170202
+	remove_minister = 170203
+	remove_minister = 170200
+	remove_minister = 170201
+	remove_minister = 170202
+	remove_minister = 170203
+	remove_minister = 170164
+	remove_minister = 170209
+	remove_minister = 170210
+	remove_minister = 170211
+	remove_minister = 170212
+	remove_minister = 170213
+	remove_minister = 170214
+	remove_minister = 170215
+	remove_minister = 170216
+	remove_minister = 170217
+	remove_minister = 170218
+	remove_minister = 170219
+	remove_minister = 170220
+	remove_minister = 170164
+	remove_minister = 170222
+	remove_minister = 170219
+	remove_minister = 170203
+	remove_minister = 170225
+	remove_minister = 170226
+	remove_minister = 170227
+	remove_minister = 170228
+	remove_minister = 170229
+	remove_minister = 170226
+	remove_minister = 170231
+	remove_minister = 170232
+	remove_minister = 170233
+	remove_minister = 170234
+	remove_minister = 170203
+	remove_minister = 170236
+	remove_minister = 170237
+	remove_minister = 170238 
+	remove_minister = 170003
+	remove_minister = 170225
+	remove_minister = 170241
+	remove_minister = 170202
+	remove_minister = 170243
+	remove_minister = 170244
+	remove_minister = 170245
+	remove_minister = 170203
+	remove_minister = 170247
+	remove_minister = 170004
+	remove_minister = 170249
+	remove_minister = 170250
+	remove_minister = 170251 
+	remove_minister = 170003
+	remove_minister = 170225
+	remove_minister = 170241
+	remove_minister = 170202
+	remove_minister = 170243
+	remove_minister = 170244
+	remove_minister = 170245
+	remove_minister = 170203
+	remove_minister = 170247
+	remove_minister = 170004
+	remove_minister = 170249
+	remove_minister = 170250
+	remove_minister = 170264 
+	remove_minister = 170003
+	remove_minister = 170225
+	remove_minister = 170241
+	remove_minister = 170202
+	remove_minister = 170243
+	remove_minister = 170244
+	remove_minister = 170245
+	remove_minister = 170203
+	remove_minister = 170247
+	remove_minister = 170004
+	remove_minister = 170249
+	remove_minister = 170250
+	remove_minister = 170277
+	kill_leader = 170396 
+	kill_leader = 170403 
+	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 170017 }
+	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 170006 }
+	remove_minister = 170153
+	kill_leader = 170317 
+	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 170021 }
+	
+set_global_flag = 2038612_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 202
+title = "DH_EVENT_2038613_TITLE"
+desc = "DH_EVENT_2038613_DESC"
+picture = "Rheinland"
+
+trigger = {
+	war = no
+	not = {
+		exists = MEX
+		exists = MXR
+		exists = MXR
+		}
+	9604 = { controlled_by = MXR }
+	
+tag = MXR
+date = 1914.1.1
+
+not = { date = 1920.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038613 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  7 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2038613_Option7"
+	dissent = -5 
+	MEX = {
+		country_event = 203
+		}
+
+set_global_flag = 2038613_EVENT_DONE
+
+	}
+}
+
+country_event = {
+id = 203
+title = "DH_EVENT_2038614_TITLE"
+desc = "DH_EVENT_2038614_DESC"
+picture = "Rheinland"
+
+trigger = { 
+tag = MEX
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038614 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2038614_Option7"
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170150 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170151 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170153 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170154 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170155 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170157 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170158 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170159 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170160 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170161 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170162 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170163 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170164 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170165 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170166 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170167 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170168 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170169 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170170 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170171 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170172 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170174 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170175 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170176 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170177 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170178 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170179 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170180 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170181 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170182 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170183 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170184 }
+	# add_country_modifier = { name = "democratic9" duration = 360 }#command = { type = set_domestic which = democratic value = 9 }
+	# add_country_modifier = { name = "rulingpartysupport" duration = 360 }#command = { type = set_domestic which = political_left value = 9 }
+	# add_country_modifier = { name = "democratic9" duration = 360 }#command = { type = set_domestic which = freedom value = 9 }
+	# add_country_modifier = { name = "freemarket5" duration = 360 }#command = { type = set_domestic which = free_market value = 5 }
+	national_unity = -15
+	neutrality = 23
+	head_of_state = 170151
+	head_of_government = 170153
+	foreign_minister = 170160
+	armament_minister = 170165
+	minister_of_security = 170169
+	minister_of_intelligence = 170153
+	chief_of_staff = 170175
+	chief_of_army = 170153
+	chief_of_navy = 170175
+	chief_of_air = 170182
+	# add_country_modifier = { name = "research_1" duration = 360 }#command = { type = waketeam which = 170021 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170270 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170271 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170272 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170273 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170274 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170275 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170276 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170277 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170278 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170279 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170280 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170281 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170282 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170283 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170284 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170285 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170286 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170287 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170288 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170289 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170290 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170291 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170292 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170293 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170294 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170295 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170296 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170297 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170298 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170299 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170300 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170301 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170302 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170303 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170304 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170305 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170306 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170307 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170308 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170309 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170310 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170311 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170312 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170313 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170314 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170315 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170316 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170317 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170318 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170319 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170320 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170321 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170322 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170323 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170324 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170325 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170326 }
+	remove_minister = 170106
+	remove_minister = 170107
+	remove_minister = 170106
+	remove_minister = 170107
+	remove_minister = 170110
+	remove_minister = 170111
+	remove_minister = 170112
+	remove_minister = 170113
+	remove_minister = 170114
+	remove_minister = 170115
+	remove_minister = 170116
+	remove_minister = 170117
+	remove_minister = 170118
+	remove_minister = 170112
+	remove_minister = 170115
+	remove_minister = 170121
+	remove_minister = 170122
+	remove_minister = 170123
+	remove_minister = 170124
+	remove_minister = 170112
+	remove_minister = 170121
+	remove_minister = 170127
+	remove_minister = 170128
+	remove_minister = 170129
+	remove_minister = 170130
+	remove_minister = 170127
+	remove_minister = 170128
+	remove_minister = 170129
+	remove_minister = 170130
+	remove_minister = 170128
+	remove_minister = 170129
+	remove_minister = 170130
+	remove_minister = 170138
+	remove_minister = 170139
+	remove_minister = 170127
+	remove_minister = 170128
+	remove_minister = 170129
+	kill_leader = 170062 
+	kill_leader = 170063 
+	kill_leader = 170064 
+	kill_leader = 170066 
+	kill_leader = 170067 
+	kill_leader = 170068 
+	kill_leader = 170069 
+	kill_leader = 170070 
+	kill_leader = 170071 
+	kill_leader = 170072 
+	kill_leader = 170073 
+	kill_leader = 170074 
+	kill_leader = 170075 
+	kill_leader = 70076 
+	kill_leader = 170077 
+	kill_leader = 170078 
+	kill_leader = 170079 
+	kill_leader = 170080 
+	kill_leader = 170081 
+	kill_leader = 170082 
+	kill_leader = 170083 
+	kill_leader = 170084 
+	kill_leader = 70085 
+	kill_leader = 170086 
+	kill_leader = 170087 
+	kill_leader = 170088 
+	kill_leader = 70089 
+	kill_leader = 170090 
+	kill_leader = 170091 
+	kill_leader = 170092 
+	kill_leader = 170093 
+	kill_leader = 170094 
+	kill_leader = 170095 
+	kill_leader = 170096 
+	kill_leader = 170097 
+	kill_leader = 170098 
+	kill_leader = 170099 
+	kill_leader = 170100 
+	kill_leader = 170101 
+	kill_leader = 170102 
+	kill_leader = 170103 
+	kill_leader = 170104 
+	kill_leader = 170105 
+	kill_leader = 170106 
+	kill_leader = 170107 
+	kill_leader = 170108 
+	kill_leader = 170109 
+	kill_leader = 170110 
+	kill_leader = 170111 
+	kill_leader = 170112 
+	kill_leader = 170113 
+	kill_leader = 170114 
+	kill_leader = 170115 
+	kill_leader = 170116 
+	kill_leader = 170117 
+	kill_leader = 170118 
+	kill_leader = 170119 
+	kill_leader = 170120 
+	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 170020 }
+	remove_minister = 170200
+	remove_minister = 170201
+	remove_minister = 170202
+	remove_minister = 170203
+	remove_minister = 170200
+	remove_minister = 170201
+	remove_minister = 170202
+	remove_minister = 170203
+	remove_minister = 170164
+	remove_minister = 170209
+	remove_minister = 170210
+	remove_minister = 170211
+	remove_minister = 170212
+	remove_minister = 170213
+	remove_minister = 170214
+	remove_minister = 170215
+	remove_minister = 170216
+	remove_minister = 170217
+	remove_minister = 170218
+	remove_minister = 170219
+	remove_minister = 170220
+	remove_minister = 170164
+	remove_minister = 170222
+	remove_minister = 170219
+	remove_minister = 170203
+	remove_minister = 170225
+	remove_minister = 170226
+	remove_minister = 170227
+	remove_minister = 170228
+	remove_minister = 170229
+	remove_minister = 170226
+	remove_minister = 170231
+	remove_minister = 170232
+	remove_minister = 170233
+	remove_minister = 170234
+	remove_minister = 170203
+	remove_minister = 170236
+	remove_minister = 170237
+	remove_minister = 170238 
+	remove_minister = 170003
+	remove_minister = 170225
+	remove_minister = 170241
+	remove_minister = 170202
+	remove_minister = 170243
+	remove_minister = 170244
+	remove_minister = 170245
+	remove_minister = 170203
+	remove_minister = 170247
+	remove_minister = 170004
+	remove_minister = 170249
+	remove_minister = 170250
+	remove_minister = 170251 
+	remove_minister = 170003
+	remove_minister = 170225
+	remove_minister = 170241
+	remove_minister = 170202
+	remove_minister = 170243
+	remove_minister = 170244
+	remove_minister = 170245
+	remove_minister = 170203
+	remove_minister = 170247
+	remove_minister = 170004
+	remove_minister = 170249
+	remove_minister = 170250
+	remove_minister = 170264 
+	remove_minister = 170003
+	remove_minister = 170225
+	remove_minister = 170241
+	remove_minister = 170202
+	remove_minister = 170243
+	remove_minister = 170244
+	remove_minister = 170245
+	remove_minister = 170203
+	remove_minister = 170247
+	remove_minister = 170004
+	remove_minister = 170249
+	remove_minister = 170250
+	remove_minister = 170277
+	kill_leader = 170396 
+	kill_leader = 170403 
+	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 170017 }
+	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 170006 }
+	remove_minister = 170152
+	kill_leader = 170262 
+	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 170022 }
+	
+set_global_flag = 2038614_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 204
+title = "DH_EVENT_2038615_TITLE"
+desc = "DH_EVENT_2038615_DESC"
+picture = "Rheinland"
+
+trigger = {
+	war = no
+	not = {
+		exists = MEX
+		exists = MXR
+		}
+	exists = MXR
+	MXR = { alliance_with = MXR }
+	9604 = { controlled_by = MXR }
+	
+tag = MXR
+date = 1914.1.1
+
+not = { date = 1920.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038615 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  7 }
+
+is_triggered_only = no
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIS MXR = { ai = yes }  } } 
+	name = "DH_EVENT_2038615_Option7"
+	THIS = { inherit = MXR }
+	dissent = -5 
+	MEX = {
+		country_event = 201
+		}
+
+set_global_flag = 2038615_EVENT_DONE
+
+	}
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIS not = { MXR = { ai = yes } }  } } 
+	name = "DH_EVENT_2038615_Option8"
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	dissent = 5 
+	war = { target = MXR }
+	
+set_global_flag = 2038615_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 205
+title = "DH_EVENT_2038616_TITLE"
+desc = "DH_EVENT_2038616_DESC"
+picture = "Rheinland"
+
+trigger = {
+	war = no
+	not = {
+		exists = MEX
+		exists = MXR
+		}
+	exists = MXR
+	MXR = { alliance_with = MXR }
+	9604 = { controlled_by = MXR }
+	
+tag = MXR
+date = 1914.1.1
+
+not = { date = 1920.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038616 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  7 }
+
+is_triggered_only = no
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIS MXR = { ai = yes }  } } 
+	name = "DH_EVENT_2038616_Option7"
+	THIS = { inherit = MXR }
+	dissent = -5 
+	MEX = {
+		country_event = 203
+		}
+
+set_global_flag = 2038616_EVENT_DONE
+
+	}
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIS not = { MXR = { ai = yes } }  } } 
+	name = "DH_EVENT_2038616_Option8"
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	dissent = 5 
+	war = { target = MXR }
+	
+set_global_flag = 2038616_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 206
+title = "DH_EVENT_2038617_TITLE"
+desc = "DH_EVENT_2038617_DESC"
+picture = "diplomatic_campaign"
+
+trigger = {
+	exists = MXR
+	MXR = { war_with = MXR }
+	
+tag = MXR
+date = 1918.11.1
+
+not = { date = 1919.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038617 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  30 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2038617_Option7"
+	# add_country_modifier = { name = "freedom-1" duration = 360 }#command = { type = domestic which = freedom value = -1 }
+	# add_country_modifier = { name = "democratic-1" duration = 360 }#command = { type = domestic which = democratic value = -1 }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = no }
+			  } 
+		supplies = -50 
+		 }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = no }
+			  } 
+		money = -10 
+		 }
+	country_event = 207
+	
+set_global_flag = 2038617_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2038617_Option8"
+	# add_country_modifier = { name = "freedom1" duration = 360 }#command = { type = domestic which = freedom value = 1 }
+	# add_country_modifier = { name = "democratic1" duration = 360 }#command = { type = domestic which = democratic value = 1 }
+	dissent = 1 
+	set_global_flag = SLEEPEVENT_2038618 
+	
+set_global_flag = 2038617_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 207
+title = "DH_EVENT_2038618_TITLE"
+desc = "DH_EVENT_2038618_DESC"
+picture = "zapata_assassination"
+
+trigger = { 
+tag = MXR
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038618 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 80
+		 }
+	name = "DH_EVENT_2038618_Option7"
+	remove_minister = 1110001
+	kill_leader = 1110050 
+	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 1114500 }
+	head_of_state = 1110008
+	dissent = 10 
+	neutrality = 5
+	# add_country_modifier = { name = "professionalarmy-1" duration = 360 }#command = { type = domestic which = professional_army value = -1 }
+	relation = { who = MXR value = -150  }
+	relation = { who = MEX value = -150  }
+	# add_country_modifier = { name = "org_-15" duration = 360 }#command = { type = max_organization which = land value = -15 }
+	# add_country_modifier = { name = "morale_-15" duration = 360 }#command = { type = morale which = land value = -15 }
+	manpower = -10 
+	
+set_global_flag = 2038618_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2038618_Option8"
+	ai_chance = { factor = 10
+		 }
+	remove_minister = 1110001
+	kill_leader = 1110050 
+	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 1114500 }
+	head_of_state = 1110027
+	dissent = 10 
+	neutrality = 5
+	# add_country_modifier = { name = "professionalarmy-1" duration = 360 }#command = { type = domestic which = professional_army value = -1 }
+	relation = { who = MXR value = -150  }
+	relation = { who = MEX value = -150  }
+	# add_country_modifier = { name = "org_-15" duration = 360 }#command = { type = max_organization which = land value = -15 }
+	# add_country_modifier = { name = "morale_-15" duration = 360 }#command = { type = morale which = land value = -15 }
+	manpower = -10 
+	
+set_global_flag = 2038618_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIS THIS = { ai = yes }  } } 
+	ai_chance = { factor = 10
+		 }
+	name = "DH_EVENT_2038618_Option9"
+	country_event = 208
+	
+set_global_flag = 2038618_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 208
+title = "DH_EVENT_2038619_TITLE"
+desc = "DH_EVENT_2038619_DESC"
+picture = "diplomatic_campaign"
+
+trigger = { 
+tag = MXR
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038619 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2038619_Option7"
+	dissent = -5 
+	THIS = { inherit = MXR }
+	
+set_global_flag = 2038619_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 209
+title = "DH_EVENT_2038620_TITLE"
+desc = "DH_EVENT_2038620_DESC"
+picture = "plan_of_agua_prieta"
+
+trigger = {
+	war = no
+	#country_event = 198
+	head_of_state = 170150
+	not = {
+		exists = MXR
+		exists = MXR
+		exists = MXR
+		}
+	
+tag = MEX
+date = 1919.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+#NOEQUIVALENT one_action = yes
+
+
+not = { has_global_flag = SLEEPEVENT_2038620 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  90 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2038620_Option7"
+	ai_chance = { factor = 95
+		 }
+	dissent = 5 
+	# add_country_modifier = { name = "democratic8" duration = 360 }#command = { type = set_domestic which = democratic value = 8 }
+	# add_country_modifier = { name = "rulingpartysupport" duration = 360 }#command = { type = set_domestic which = political_left value = 7 }
+	head_of_state = 170202
+	head_of_government = 170202
+	foreign_minister = 170218
+	armament_minister = 170226
+	minister_of_security = 170203
+	minister_of_intelligence = 170225
+	chief_of_staff = 170247
+	chief_of_army = 170247
+	chief_of_navy = 170247
+	remove_minister = 170200
+	kill_leader = 170356 
+	kill_leader = 170394 
+	remove_minister = 170232
+	remove_minister = 170245
+	kill_leader = 170031 
+	
+set_global_flag = 2038620_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 5
+		 }
+	name = "DH_EVENT_2038620_Option8"
+	dissent = 5 
+	# add_country_modifier = { name = "freedom-2" duration = 360 }#command = { type = domestic which = freedom value = -2 }
+	head_of_state = 170281
+	head_of_government = 170282 
+	minister_of_security = 170232
+	chief_of_staff = 170245
+	chief_of_army = 170245
+	chief_of_navy = 170245
+	remove_minister = 170202
+	kill_leader = 170396 
+	remove_minister = 170201
+	kill_leader = 170385 
+	kill_leader = 170383 
+	remove_minister = 170203
+	kill_leader = 170352 
+	remove_minister = 170247
+	kill_leader = 170384 
+	kill_leader = 170369 
+	kill_leader = 170398 
+	kill_leader = 170362 
+	remove_minister = 170249
+	kill_leader = 170212 
+	
+set_global_flag = 2038620_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 210
+title = "DH_EVENT_2038621_TITLE"
+desc = "DH_EVENT_2038621_DESC"
+picture = "Peace_conference"
+
+trigger = { 
+tag = MXR
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038621 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 80
+		 }
+	name = "DH_EVENT_2038621_Option7"
+	neutrality = -5
+	war = { target = MXR }
+	dissent = -5 
+	clr_global_flag = MEX_Convention 
+	
+set_global_flag = 2038621_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIS THIS = { ai = yes }  } } 
+	ai_chance = { factor = 20
+		 }
+	name = "DH_EVENT_2038621_Option8"
+	country_event = 196
+	
+set_global_flag = 2038621_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 211
+title = "DH_EVENT_2038622_TITLE"
+desc = "DH_EVENT_2038622_DESC"
+picture = "Peace_conference"
+
+trigger = { 
+tag = MXR
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038622 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 80
+		 }
+	name = "DH_EVENT_2038622_Option7"
+	neutrality = -5
+	war = { target = MXR }
+	dissent = -5 
+	clr_global_flag = MEX_Convention 
+	
+set_global_flag = 2038622_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIS THIS = { ai = yes }  } } 
+	ai_chance = { factor = 20
+		 }
+	name = "DH_EVENT_2038622_Option8"
+	country_event = 197
+	
+set_global_flag = 2038622_EVENT_DONE
+
+}
+
+}
+
