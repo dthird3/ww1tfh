@@ -85,7 +85,7 @@ country_event = {
 
 		option = {
 			name = "opta_AUHE1"
-			ai_chance = { factor = 100 }			
+			ai_chance = { factor = 90 }			
 			set_country_flag = serbian_ultamatium
 			threat = { who = all value = 20 } 
 			threat = { who = USA value = -20 }						# USA doesn't care and is to remain neutral
@@ -98,7 +98,7 @@ country_event = {
 		}
 		option = {
 			name = "optb_AUHE1"
-			ai_chance = { factor = 0 }			
+			ai_chance = { factor = 10 }			
 			set_country_flag = serbian_ultamatium
 			threat = { who = all value = 5 } 
 			threat = { who = USA value = -5 }						# USA doesn't care and is to remain neutral
@@ -124,7 +124,7 @@ country_event = {
 
 		option = {
 			name = "opta_RUSE1"
-			ai_chance = { factor = 1000 }			
+			ai_chance = { factor = 100 }			
 			set_country_flag = russia_mobilized
 			manpower = 50
 			neutrality = -50
@@ -193,7 +193,7 @@ country_event = {
 
 		option = {
 			name = "opta_ITAE2"
-			ai_chance = { factor = 100 }
+			ai_chance = { factor = 60 }
 			neutrality = 70
 			relation = { who = ENG value = 50 }
 			relation = { who = FRA value = 50 }
@@ -207,7 +207,7 @@ country_event = {
 		}
 		option = {
 			name = "optb_ITAE2"
-			ai_chance = { factor = 0 }
+			ai_chance = { factor = 40 }
 			neutrality = 5
 			relation = { who = ENG value = -50 }
 			relation = { who = FRA value = -50 }
@@ -239,7 +239,7 @@ country_event = {
 
 		option = {
 			name = "opta_GERE2"
-			ai_chance = { factor = 100 }
+			ai_chance = { factor = 80 }
 			set_country_flag = germany_mobilize
 			neutrality = -50
 			manpower = 300
@@ -303,7 +303,7 @@ country_event = {
 		}
 		option = {
 			name = "optb_GERE2"
-			ai_chance = { factor = 0 }
+			ai_chance = { factor = 10 }
 			set_country_flag = germany_mobilize
 			neutrality = -50
 			manpower = 400
@@ -372,7 +372,7 @@ country_event = {
 		}
 		option = {
 			name = "optc_GERE2"
-			ai_chance = { factor = 0 }
+			ai_chance = { factor = 10 }
 			set_country_flag = germany_mobilize
 			neutrality = -50
 			manpower = 200
