@@ -1,0 +1,884 @@
+country_event = {
+id = 492
+title = "DH_EVENT_2250500_TITLE"
+desc = "DH_EVENT_2250500_DESC"
+trigger = {
+	war = yes
+	not = {
+		 MEX = { war_with = USA }
+		 }
+	not = {
+		 MXR = { war_with = USA }
+		 }
+	money =  10
+	9203 = { country_units_in_province = MXR }
+	#NOEQUIVALENT random =  5
+	
+tag = MXR
+date = 1914.8.4
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2250500 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  14 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2250500_Option7"
+	money = -100 
+	random_country = { limit = { tag = THIS 
+			 9038 = { country_units_in_province = USA }
+			  } 
+		country_event = 493
+		 }
+	random_country = { limit = { tag = THIS 
+			 9038 = { country_units_in_province = USA }
+			  } 
+		country_event = 519
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 9038 = { country_units_in_province = USA }
+				 }  } 
+		country_event = 494
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 9038 = { country_units_in_province = USA }
+				 }  } 
+		country_event = 520
+		 }
+	
+set_global_flag = 2250500_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 493
+title = "DH_EVENT_2250501_TITLE"
+desc = "DH_EVENT_2250501_DESC"
+trigger = { 
+tag = MXR
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2250501 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2250501_Option7"
+	supplies = 80 
+	rare_materials = 10 
+	crude_oil = 10 
+	metal = 20 
+	energy = 35 
+	
+set_global_flag = 2250501_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 494
+title = "DH_EVENT_2250502_TITLE"
+desc = "DH_EVENT_2250502_DESC"
+trigger = { 
+tag = MXR
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2250502 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2250502_Option7"
+	supplies = 160 
+	rare_materials = 20 
+	crude_oil = 20 
+	metal = 40 
+	energy = 70 
+	
+set_global_flag = 2250502_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 495
+title = "DH_EVENT_2250503_TITLE"
+desc = "DH_EVENT_2250503_DESC"
+trigger = {
+	war = yes
+	not = {
+		 MEX = { war_with = USA }
+		 }
+	not = {
+		 MXR = { war_with = USA }
+		 }
+	money =  10
+	9147 = { country_units_in_province = MXR }
+	#NOEQUIVALENT random =  5
+	
+tag = MXR
+date = 1914.8.4
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2250503 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  14 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2250503_Option7"
+	money = -100 
+	random_country = { limit = { tag = THIS 
+			 9093 = { country_units_in_province = USA }
+			  } 
+		country_event = 493
+		 }
+	random_country = { limit = { tag = THIS 
+			 9093 = { country_units_in_province = USA }
+			  } 
+		country_event = 521
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 9093 = { country_units_in_province = USA }
+				 }  } 
+		country_event = 494
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 9093 = { country_units_in_province = USA }
+				 }  } 
+		country_event = 522
+		 }
+	
+set_global_flag = 2250503_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 496
+title = "DH_EVENT_2250504_TITLE"
+desc = "DH_EVENT_2250504_DESC"
+trigger = {
+	war = yes
+	not = {
+		 MEX = { war_with = USA }
+		 }
+	not = {
+		 MXR = { war_with = USA }
+		 }
+	money =  10
+	9269 = { country_units_in_province = MXR }
+	#NOEQUIVALENT random =  5
+	
+tag = MXR
+date = 1914.8.4
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2250504 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  14 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2250504_Option7"
+	money = -100 
+	random_country = { limit = { tag = THIS 
+			 9329 = { country_units_in_province = USA }
+			  } 
+		country_event = 493
+		 }
+	random_country = { limit = { tag = THIS 
+			 9329 = { country_units_in_province = USA }
+			  } 
+		country_event = 523
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 9329 = { country_units_in_province = USA }
+				 }  } 
+		country_event = 494
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 9329 = { country_units_in_province = USA }
+				 }  } 
+		country_event = 524
+		 }
+	
+set_global_flag = 2250504_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 497
+title = "DH_EVENT_2250505_TITLE"
+desc = "DH_EVENT_2250505_DESC"
+trigger = {
+	war = yes
+	not = {
+		 MEX = { war_with = USA }
+		 }
+	not = {
+		 MXR = { war_with = USA }
+		 }
+	money =  10
+	or = {
+		9419 = { country_units_in_province = MXR }
+		9388 = { country_units_in_province = MXR }
+		}
+	#NOEQUIVALENT random =  5
+	
+tag = MXR
+date = 1914.8.4
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2250505 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  14 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2250505_Option7"
+	money = -100 
+	random_country = { limit = { tag = THIS 
+			 9420 = { country_units_in_province = USA }
+			  } 
+		country_event = 493
+		 }
+	random_country = { limit = { tag = THIS 
+			 9420 = { country_units_in_province = USA }
+			  } 
+		country_event = 525
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 9420 = { country_units_in_province = USA }
+				 }  } 
+		country_event = 494
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 9420 = { country_units_in_province = USA }
+				 }  } 
+		country_event = 526
+		 }
+	
+set_global_flag = 2250505_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 498
+title = "DH_EVENT_2250506_TITLE"
+desc = "DH_EVENT_2250506_DESC"
+trigger = {
+	war = yes
+	not = {
+		 MEX = { war_with = USA }
+		 }
+	not = {
+		 MXR = { war_with = USA }
+		 }
+	money =  10
+	7369 = { country_units_in_province = MXR }
+	#NOEQUIVALENT random =  5
+	
+tag = MXR
+date = 1914.8.4
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2250506 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  14 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2250506_Option7"
+	money = -100 
+	random_country = { limit = { tag = THIS 
+			 7350 = { country_units_in_province = USA }
+			  } 
+		country_event = 493
+		 }
+	random_country = { limit = { tag = THIS 
+			 7350 = { country_units_in_province = USA }
+			  } 
+		country_event = 527
+		 }
+	random_country = { limit = { tag = THIS 
+			 7350 = { country_units_in_province = USA }
+			  } 
+		country_event = 494
+		 }
+	random_country = { limit = { tag = THIS 
+			 7350 = { country_units_in_province = USA }
+			  } 
+		country_event = 528
+		 }
+	
+set_global_flag = 2250506_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 499
+title = "DH_EVENT_2250507_TITLE"
+desc = "DH_EVENT_2250507_DESC"
+trigger = {
+	war = yes
+	#NOEQUIVALENT random =  10
+	not = {
+		 total_ic = 7
+		 }
+	
+tag = MXR
+date = 1915.1.1
+
+not = { date = 1964.12.30
+ }
+
+
+#NOEQUIVALENT one_action = yes
+
+
+not = { has_global_flag = SLEEPEVENT_2250507 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  60 }
+
+is_triggered_only = no
+option = {
+	ai_chance = { factor = 5
+		 }
+	name = "DH_EVENT_2250507_Option7"
+	manpower = 0.5 
+	
+set_global_flag = 2250507_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 10
+		 }
+	name = "DH_EVENT_2250507_Option8"
+	manpower = 1 
+	
+set_global_flag = 2250507_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 20
+		 }
+	name = "DH_EVENT_2250507_Option9"
+	manpower = 2 
+	
+set_global_flag = 2250507_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 50
+		 }
+	name = "DH_EVENT_2250507_Option10"
+	manpower = 5 
+	
+set_global_flag = 2250507_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 500
+title = "DH_EVENT_2250508_TITLE"
+desc = "DH_EVENT_2250508_DESC"
+trigger = {
+	9604 = { controlled_by = MXR }
+	war = yes
+	not = {
+		    }
+	not = {
+		    }
+	not = {
+		    }
+	
+tag = MXR
+date = 1910.1.1
+
+not = { date = 1963.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2250508 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  15 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2250508_Option7"
+	# add_country_modifier = { name = "research_1" duration = 360 }#command = { type = waketeam which = 1114510 }
+	# add_country_modifier = { name = "research_1" duration = 360 }#command = { type = waketeam which = 1114511 }
+	# add_country_modifier = { name = "research_1" duration = 360 }#command = { type = waketeam which = 1114512 }
+	supplies = -100 
+	money = -30 
+	dissent = -2 
+	random_country = { limit = { tag = THIS 
+			 exists = MXR
+			 not = {
+				 MXR = { war_with = MXR }
+				 }  } 
+		relation = { who = MXR value = 5  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = MEX
+			 MXR = { war_with = MEX }
+			  } 
+		# add_country_modifier = { name = "research_1" duration = 360 }#command = {  type = steal_tech which = MEX value = -1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = MXR
+			 MXR = { war_with = MXR }
+			  } 
+		# add_country_modifier = { name = "research_1" duration = 360 }#command = {  type = steal_tech which = U57 value = -1 }
+		 }
+	
+set_global_flag = 2250508_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 501
+title = "DH_EVENT_2250509_TITLE"
+desc = "DH_EVENT_2250509_DESC"
+trigger = {
+	not = {
+		 9604 = { controlled_by = MXR }
+		 }
+	  
+	  
+	  
+	
+tag = MXR
+date = 1910.1.1
+
+not = { date = 1963.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2250509 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  15 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2250509_Option7"
+	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 1114510 }
+	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 1114511 }
+	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 1114512 }
+	supplies = 20 
+	dissent = 1 
+	
+set_global_flag = 2250509_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 502
+title = "DH_EVENT_2038550_TITLE"
+desc = "DH_EVENT_2038550_DESC"
+trigger = {
+	9604 = { controlled_by = MXR }
+	war = yes
+	not = {
+		    }
+	not = {
+		    }
+	not = {
+		    }
+	
+tag = MXR
+date = 1910.1.1
+
+not = { date = 1963.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038550 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  15 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2038550_Option7"
+	# add_country_modifier = { name = "research_1" duration = 360 }#command = { type = waketeam which = 1110010 }
+	# add_country_modifier = { name = "research_1" duration = 360 }#command = { type = waketeam which = 1110011 }
+	# add_country_modifier = { name = "research_1" duration = 360 }#command = { type = waketeam which = 1110012 }
+	supplies = -100 
+	money = -30 
+	dissent = -2 
+	random_country = { limit = { tag = THIS 
+			 exists = MXR
+			 not = {
+				 MXR = { war_with = MXR }
+				 }  } 
+		relation = { who = MXR value = 5  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = MEX
+			 MXR = { war_with = MEX }
+			  } 
+		# add_country_modifier = { name = "research_1" duration = 360 }#command = {  type = steal_tech which = MEX value = -1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = MXR
+			 MXR = { war_with = MXR }
+			  } 
+		# add_country_modifier = { name = "research_1" duration = 360 }#command = {  type = steal_tech which = U57 value = -1 }
+		 }
+	
+set_global_flag = 2038550_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 503
+title = "DH_EVENT_2038551_TITLE"
+desc = "DH_EVENT_2038551_DESC"
+trigger = {
+	not = {
+		 9604 = { controlled_by = MXR }
+		 }
+	  
+	  
+	  
+	
+tag = MXR
+date = 1910.1.1
+
+not = { date = 1963.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2038551 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  15 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2038551_Option7"
+	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 1110010 }
+	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 1110011 }
+	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 1110012 }
+	supplies = 20 
+	dissent = 1 
+	
+set_global_flag = 2038551_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 504
+title = "DH_EVENT_2038552_TITLE"
+desc = "DH_EVENT_2038552_DESC"
+trigger = {
+	war = yes
+	#NOEQUIVALENT random =  5
+	not = {
+		 supplies =  100
+		 }
+	not = {
+		 total_ic = 7
+		 }
+	
+tag = MXR
+date = 1910.1.1
+
+not = { date = 1920.12.30
+ }
+
+
+#NOEQUIVALENT one_action = yes
+
+
+not = { has_global_flag = SLEEPEVENT_2038552 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  60 }
+
+is_triggered_only = no
+option = {
+	ai_chance = { factor = 5
+		 }
+	name = "DH_EVENT_2038552_Option7"
+	supplies = 25
+	
+set_global_flag = 2038552_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 10
+		 }
+	name = "DH_EVENT_2038552_Option8"
+	supplies = 50
+	
+set_global_flag = 2038552_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 20
+		 }
+	name = "DH_EVENT_2038552_Option9"
+	supplies = 200
+	money = 20
+	
+set_global_flag = 2038552_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 50
+		 }
+	name = "DH_EVENT_2038552_Option10"
+	supplies = 350
+	money = 50
+	
+set_global_flag = 2038552_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 505
+title = "DH_EVENT_2038553_TITLE"
+desc = "DH_EVENT_2038553_DESC"
+trigger = {
+	war = yes
+	#NOEQUIVALENT random =  7
+	not = {
+		 supplies =  100
+		 }
+	not = {
+		 total_ic = 5
+		 }
+	or = {
+		and = {
+			9604 = { controlled_by = MEX }
+			MXR = { war_with = MEX }
+			}
+		and = {
+			9604 = { controlled_by = MXR }
+			MXR = { war_with = MXR }
+			}
+		}
+	
+tag = MXR
+date = 1910.1.1
+
+not = { date = 1917.12.30
+ }
+
+
+#NOEQUIVALENT one_action = yes
+
+
+not = { has_global_flag = SLEEPEVENT_2038553 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  45 }
+
+is_triggered_only = no
+option = {
+	ai_chance = { factor = 3
+		 }
+	name = "DH_EVENT_2038553_Option7"
+	supplies = 20
+	
+set_global_flag = 2038553_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 10
+		 }
+	name = "DH_EVENT_2038553_Option8"
+	supplies = 40
+	
+set_global_flag = 2038553_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 20
+		 }
+	name = "DH_EVENT_2038553_Option9"
+	supplies = 60
+	
+set_global_flag = 2038553_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 35
+		 }
+	name = "DH_EVENT_2038553_Option10"
+	supplies = 100
+	
+set_global_flag = 2038553_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 506
+title = "DH_EVENT_2038554_TITLE"
+desc = "DH_EVENT_2038554_DESC"
+trigger = {
+	war = yes
+	#NOEQUIVALENT random =  10
+	not = {
+		 total_ic = 7
+		 }
+	
+tag = MXR
+date = 1915.1.1
+
+not = { date = 1964.12.30
+ }
+
+
+#NOEQUIVALENT one_action = yes
+
+
+not = { has_global_flag = SLEEPEVENT_2038554 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  60 }
+
+is_triggered_only = no
+option = {
+	ai_chance = { factor = 5
+		 }
+	name = "DH_EVENT_2038554_Option7"
+	manpower = 0.5 
+	
+set_global_flag = 2038554_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 10
+		 }
+	name = "DH_EVENT_2038554_Option8"
+	manpower = 1 
+	
+set_global_flag = 2038554_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 20
+		 }
+	name = "DH_EVENT_2038554_Option9"
+	manpower = 2 
+	
+set_global_flag = 2038554_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 50
+		 }
+	name = "DH_EVENT_2038554_Option10"
+	manpower = 5 
+	
+set_global_flag = 2038554_EVENT_DONE
+
+}
+
+}
+

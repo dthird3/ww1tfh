@@ -1,0 +1,498 @@
+country_event = {
+id = 596
+title = "DH_EVENT_133011407_TITLE"
+desc = "DH_EVENT_133011407_DESC"
+trigger = {
+	or = {
+		has_global_flag= EVT_133011613
+		has_global_flag= EVT_133011614
+		}
+	#country_event = 620
+	#NOEQUIVALENT random =  25
+	
+tag = CHI
+date = 1914.7.5
+
+not = { date = 1925.12.29
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011407 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  15 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_133011407_Option7"
+	dissent = 5 
+	country_event = 597
+	remove_minister = 1325120 
+	
+set_global_flag = 133011407_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 597
+title = "DH_EVENT_133011408_TITLE"
+desc = "DH_EVENT_133011408_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011408 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011408_Option7"
+	dissent = 5 
+	country_event = 598
+	
+set_global_flag = 133011408_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 598
+title = "DH_EVENT_133011409_TITLE"
+desc = "DH_EVENT_133011409_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011409 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011409_Option7"
+	dissent = -3 
+	country_event = 599
+	
+set_global_flag = 133011409_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 599
+title = "DH_EVENT_133011410_TITLE"
+desc = "DH_EVENT_133011410_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011410 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011410_Option7"
+	dissent = -3 
+	country_event = 600
+	
+set_global_flag = 133011410_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 600
+title = "DH_EVENT_133011411_TITLE"
+desc = "DH_EVENT_133011411_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011411 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011411_Option7"
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 1325120 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 1325123 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 1325106 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 1325107 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 1325109 }
+	head_of_state = 1325215 
+	head_of_government = 1325120 
+	chief_of_staff = 1325106 
+	chief_of_army = 1325107 
+	chief_of_air = 1325109 
+	remove_minister = 1325200 
+	dissent = -1 
+	country_event = 601
+	
+set_global_flag = 133011411_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 601
+title = "DH_EVENT_133011412_TITLE"
+desc = "DH_EVENT_133011412_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+#NOEQUIVALENT one_action = yes
+
+
+not = { has_global_flag = SLEEPEVENT_133011412 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011412_Option7"
+	ai_chance = { factor = 70
+		 }
+	dissent = -1 
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= beiyang_axis
+			 faction = allies
+			  } 
+		country_event = 604
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= beiyang_allies
+			 faction = axis
+			  } 
+		country_event = 605
+		 }
+	random_country = { limit = { tag = THIS 
+			not = {
+				or = {
+					and = {
+						has_global_flag= beiyang_axis
+						faction = allies
+						}
+					and = {
+						has_global_flag= beiyang_allies
+						faction = axis
+						}
+					}
+				}
+			 } 
+		country_event = 602
+		 }
+	
+set_global_flag = 133011412_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_133011412_Option8"
+	ai_chance = { factor = 30
+		 }
+	dissent = -5 
+	country_event = 603
+	set_global_flag = puyi_dead 
+	
+set_global_flag = 133011412_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 602
+title = "DH_EVENT_133011413_TITLE"
+desc = "DH_EVENT_133011413_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011413 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011413_Option7"
+	ai_chance = { factor = 70
+		 }
+	dissent = -5 
+	set_global_flag = puyi_dead 
+	country_event = 603
+	
+set_global_flag = 133011413_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_133011413_Option8"
+	ai_chance = { factor = 30
+		 }
+	dissent = -10 
+	country_event = 603
+	
+set_global_flag = 133011413_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 603
+title = "DH_EVENT_133011416_TITLE"
+desc = "DH_EVENT_133011416_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+#NOEQUIVALENT one_action = yes
+
+
+not = { has_global_flag = SLEEPEVENT_133011416 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISyear = 1918 } } 
+	name = "DH_EVENT_133011416_Option7"
+	ai_chance = { factor = 10
+		 }
+	create_alliance = CHI
+	CHI = { non_aggression_pact = CHI }
+	THIS = { relation = { who = CHI value = 150  } }
+	country_event = 608
+	country_event = 768
+	
+set_global_flag = 133011416_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISyear = 1917 } } 
+	name = "DH_EVENT_133011416_Option8"
+	ai_chance = { factor = 10
+		 }
+	create_alliance = CHI
+	CHI = { non_aggression_pact = CHI }
+	THIS = { relation = { who = CHI value = 150  } }
+	country_event = 608
+	country_event = 768
+	
+set_global_flag = 133011416_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISyear = 1916 } } 
+	name = "DH_EVENT_133011416_Option9"
+	ai_chance = { factor = 10
+		 }
+	create_alliance = CHI
+	CHI = { non_aggression_pact = CHI }
+	THIS = { relation = { who = CHI value = 150  } }
+	country_event = 608
+	country_event = 768
+	
+set_global_flag = 133011416_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISyear = 1916 } } 
+	name = "DH_EVENT_133011416_Option10"
+	ai_chance = { factor = 10
+		 }
+	create_alliance = CHI
+	CHI = { non_aggression_pact = CHI }
+	THIS = { relation = { who = CHI value = 150  } }
+	country_event = 608
+	country_event = 768
+	
+set_global_flag = 133011416_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISyear = 1916 } } 
+	name = "DH_EVENT_133011416_Option11"
+	ai_chance = { factor = 10
+		 }
+	create_alliance = CHI
+	CHI = { non_aggression_pact = CHI }
+	THIS = { relation = { who = CHI value = 150  } }
+	country_event = 608
+	country_event = 768
+	
+set_global_flag = 133011416_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_133011416_Option12"
+	ai_chance = { factor = 0
+		 }
+	create_alliance = CHI
+	CHI = { non_aggression_pact = CHI }
+	THIS = { relation = { who = CHI value = 150  } }
+	country_event = 608
+	country_event = 768
+	
+set_global_flag = 133011416_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 604
+title = "DH_EVENT_133011414_TITLE"
+desc = "DH_EVENT_133011414_DESC"
+trigger = { 
+tag = JAP
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011414 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISor = {THIS = { ai = no }not = { has_global_flag= alternate_allies }} } } 
+	name = "DH_EVENT_133011414_Option7"
+	ai_chance = { factor = 70
+		 }
+	relation = { who = CHI value = -15  }
+	country_event = 606
+	
+set_global_flag = 133011414_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_133011414_Option8"
+	ai_chance = { factor = 30
+		 }
+	relation = { who = CHI value = 15  }
+	JAP = { non_aggression_pact = CHI }
+	country_event = 602
+	
+set_global_flag = 133011414_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 605
+title = "DH_EVENT_133011415_TITLE"
+desc = "DH_EVENT_133011415_DESC"
+trigger = { 
+tag = GER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011415 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISor = {THIS = { ai = no }not = { has_global_flag= alternate_axis }} } } 
+	name = "DH_EVENT_133011415_Option7"
+	ai_chance = { factor = 70
+		 }
+	relation = { who = CHI value = -15  }
+	country_event = 606
+	
+set_global_flag = 133011415_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_133011415_Option8"
+	ai_chance = { factor = 30
+		 }
+	relation = { who = CHI value = 15  }
+	GER = { non_aggression_pact = CHI }
+	country_event = 602
+	
+set_global_flag = 133011415_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 606
+title = "DH_EVENT_133011417_TITLE"
+desc = "DH_EVENT_133011417_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011417 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011417_Option7"
+	country_event = 603
+	
+set_global_flag = 133011417_EVENT_DONE
+
+}
+
+}
+

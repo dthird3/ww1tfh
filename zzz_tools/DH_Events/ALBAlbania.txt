@@ -1,0 +1,75 @@
+country_event = {
+id = 1
+title = "DH_EVENT_2058500_TITLE"
+desc = "DH_EVENT_2058500_DESC"
+picture = "foreign_volunteers"
+
+trigger = { 
+tag = ALB
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2058500 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2058500_Option1"
+	ai_chance = { factor = 50
+		 }
+	country_event = 369
+	random_country = { limit = { tag = THIS 
+			 FRA = { war_with = AUH }
+			  } 
+		country_event = 94
+		 }
+	
+set_global_flag = 2058500_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2058500_Option2"
+	ai_chance = { factor = 50
+		 }
+	war = { target = SER }
+	create_alliance = -1 
+	
+set_global_flag = 2058500_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 2
+title = "DH_EVENT_2058501_TITLE"
+desc = "DH_EVENT_2058501_DESC"
+picture = "diplomatic_campaign"
+
+trigger = { 
+tag = ALB
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2058501 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2058501_Option7"
+	
+set_global_flag = 2058501_EVENT_DONE
+
+}
+
+}
+

@@ -1,0 +1,946 @@
+country_event = {
+id = 607
+title = "DH_EVENT_133011500_TITLE"
+desc = "DH_EVENT_133011500_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011500 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011500_Option7"
+	# add_country_modifier = { name = "democratic4" duration = 360 }#command = { type = set_domestic which = democratic value = 4 }
+	# add_country_modifier = { name = "rulingpartysupport" duration = 360 }#command = { type = set_domestic which = political_left value = 5 }
+	# add_country_modifier = { name = "freemarket7" duration = 360 }#command = { type = set_domestic which = free_market value = 7 }
+	# add_country_modifier = { name = "democratic6" duration = 360 }#command = { type = set_domestic which = freedom value = 6 }
+	national_unity = 20
+	neutrality = -31
+	random_country = { limit = { tag = THIS 
+			 exists = CYN
+			 not = {
+				 CYN = { is_subject = yes }
+				 }  } 
+		create_alliance = CYN
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CGX
+			 not = {
+				 CGX = { is_subject = yes }
+				 }  } 
+		create_alliance = CGX
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 647
+			  } 
+		head_of_state = 55300 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 647
+			  } 
+		head_of_government = 55301 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 633
+			  } 
+		head_of_state = 55200 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 633
+			  } 
+		head_of_government = 55219 
+		 }
+	foreign_minister = 55325 
+	armament_minister = 55302 
+	minister_of_security = 55303 
+	minister_of_intelligence = 55304 
+	chief_of_staff = 55305 
+	chief_of_army = 55310 
+	
+set_global_flag = 133011500_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 608
+title = "DH_EVENT_133011504_TITLE"
+desc = "DH_EVENT_133011504_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011504 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011504_Option7"
+	# MANUALFIX secede area command = { type = secedearea which = CHI value = "Sichuan" when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = CHI value = "Hunan" when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = CHI value = "Hubei" when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = CHI value = "Guizhou" when = 1 }
+	country_event = 712
+	country_event = 713
+	country_event = 708
+	country_event = 722
+	country_event = 610
+	country_event = 609
+	country_event = 613
+	
+set_global_flag = 133011504_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 609
+title = "DH_EVENT_133011523_TITLE"
+desc = "DH_EVENT_133011523_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011523 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011523_Option7"
+	7508 = { hq_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+	7541 = { hq_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+	9445 = { hq_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } militia_brigade = current militia_brigade = current militia_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+	5709 = { hq_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+	
+set_global_flag = 133011523_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 610
+title = "DH_EVENT_133011502_TITLE"
+desc = "DH_EVENT_133011502_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011502 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011502_Option7"
+	CHI = { end_non_aggression_pact = CHI }
+	CHI = { end_non_aggression_pact = CHI }
+	war = { target = CHI }
+	country_event = 611
+	country_event = 612
+	
+set_global_flag = 133011502_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 611
+title = "DH_EVENT_133011503_TITLE"
+desc = "DH_EVENT_133011503_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+#NOEQUIVALENT one_action = yes
+
+
+not = { has_global_flag = SLEEPEVENT_133011503 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISyear = 1918 } } 
+	name = "DH_EVENT_133011503_Option7"
+	ai_chance = { factor = 10
+		 }
+	THIS = { end_war = CYN }
+	THIS = { end_war = CGX }
+	THIS = { end_war = CHI }
+	country_event = 614
+	CHI = { non_aggression_pact = CHI }
+	CHI = { non_aggression_pact = CGX }
+	CHI = { non_aggression_pact = CYN }
+	threat = { who = CHI value = -30  }
+	
+set_global_flag = 133011503_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_133011503_Option8"
+	ai_chance = { factor = 0
+		 }
+	THIS = { end_war = CYN }
+	THIS = { end_war = CGX }
+	THIS = { end_war = CHI }
+	country_event = 614
+	CHI = { non_aggression_pact = CHI }
+	CHI = { non_aggression_pact = CGX }
+	CHI = { non_aggression_pact = CYN }
+	threat = { who = CHI value = -30  }
+	
+set_global_flag = 133011503_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISyear = 1917 } } 
+	name = "DH_EVENT_133011503_Option9"
+	ai_chance = { factor = 10
+		 }
+	THIS = { end_war = CYN }
+	THIS = { end_war = CGX }
+	THIS = { end_war = CHI }
+	country_event = 614
+	CHI = { non_aggression_pact = CHI }
+	CHI = { non_aggression_pact = CGX }
+	CHI = { non_aggression_pact = CYN }
+	threat = { who = CHI value = -30  }
+	
+set_global_flag = 133011503_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISyear = 1917 } } 
+	name = "DH_EVENT_133011503_Option10"
+	ai_chance = { factor = 10
+		 }
+	THIS = { end_war = CYN }
+	THIS = { end_war = CGX }
+	THIS = { end_war = CHI }
+	country_event = 614
+	CHI = { non_aggression_pact = CHI }
+	CHI = { non_aggression_pact = CGX }
+	CHI = { non_aggression_pact = CYN }
+	threat = { who = CHI value = -30  }
+	
+set_global_flag = 133011503_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISyear = 1918 } } 
+	name = "DH_EVENT_133011503_Option11"
+	ai_chance = { factor = 10
+		 }
+	THIS = { end_war = CYN }
+	THIS = { end_war = CGX }
+	THIS = { end_war = CHI }
+	country_event = 614
+	CHI = { non_aggression_pact = CHI }
+	CHI = { non_aggression_pact = CGX }
+	CHI = { non_aggression_pact = CYN }
+	threat = { who = CHI value = -30  }
+	
+set_global_flag = 133011503_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISyear = 1919 } } 
+	name = "DH_EVENT_133011503_Option12"
+	ai_chance = { factor = 10
+		 }
+	THIS = { end_war = CYN }
+	THIS = { end_war = CGX }
+	THIS = { end_war = CHI }
+	country_event = 614
+	CHI = { non_aggression_pact = CHI }
+	CHI = { non_aggression_pact = CGX }
+	CHI = { non_aggression_pact = CYN }
+	threat = { who = CHI value = -30  }
+	
+set_global_flag = 133011503_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 612
+title = "DH_EVENT_133011505_TITLE"
+desc = "DH_EVENT_133011505_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011505 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011505_Option7"
+	# MANUALFIX remove unit command = { type = remove_division which = "Shanghai Mingbin" value = UCH }
+	5542 = { create_revolt = 3 }
+	5542 = { create_revolt = 3 }
+	5542 = { create_revolt = 3 }
+	
+set_global_flag = 133011505_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 613
+title = "DH_EVENT_133911001_TITLE"
+desc = "DH_EVENT_133911001_DESC"
+trigger = { 
+tag = REB
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133911001 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133911001_Option7"
+	# MANUALFIX secede area command = { type = secedearea which = CYN value = "Yunnan" when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = CGX value = "Guangxi" when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = CHI value = "Guangdong" when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = CHI value = "Sichuan" when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = CHI value = "Hunan" when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = CHI value = "Hubei" when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = CHI value = "Guizhou" when = 1 }
+	random_country = { limit = { tag = THIS 
+			 exists = CHI
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = U67 value = "Heilongjiang" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CHI
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = U67 value = "Jilin" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CHI
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CHI
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CHI
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CHI
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CHI
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CHI
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CHI
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CHI
+			  } 
+		 }
+	# MANUALFIX secede region command = { type = secederegion value = "China" which = UCH when = 1 }
+	
+set_global_flag = 133911001_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 614
+title = "DH_EVENT_133011506_TITLE"
+desc = "DH_EVENT_133011506_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011506 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011506_Option7"
+	country_event = 615
+	random_country = { limit = { tag = THIS 
+			 CHI = { war_with = THIS }
+			  } 
+		THIS = { end_war = CHI }
+		 }
+	CHI = { non_aggression_pact = CHI }
+	set_global_flag = SLEEPEVENT_133011509 
+	set_global_flag = SLEEPEVENT_133011510 
+	set_global_flag = SLEEPEVENT_133011511 
+	
+set_global_flag = 133011506_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 615
+title = "DH_EVENT_133011507_TITLE"
+desc = "DH_EVENT_133011507_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+#NOEQUIVALENT one_action = yes
+
+
+not = { has_global_flag = SLEEPEVENT_133011507 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIS#MANUALFIX area = { area = "Sichuan" country = -3 data = 1 value = 90 }#MANUALFIX area = { area = "Guizhou" country = -3 data = 1 value = 90 }#MANUALFIX area = { area = "Hunan" country = -3 data = 1 value = 90 }#MANUALFIX area = { area = "Hubei" country = -3 data = 1 value = 90 }#MANUALFIX area = { area = "Yunnan" country = -3 data = 1 value = 90 }#MANUALFIX area = { area = "Xikang" country = -3 data = 1 value = 60 }#MANUALFIX area = { area = "Guangxi" country = -3 data = 1 value = 90 }#MANUALFIX area = { area = "Guangdong" country = -3 data = 1 value = 70 }not = {or = {#MANUALFIX area = { area = "Fujian" country = -3 data = 1 value = 70 }#MANUALFIX area = { area = "Shaanxi" country = -3 data = 1 value = 70 }#MANUALFIX area = { area = "Henan" country = -3 data = 1 value = 70 }#MANUALFIX area = { area = "Anhui" country = -3 data = 1 value = 70 }#MANUALFIX area = { area = "Gansu" country = -3 data = 1 value = 50 }#MANUALFIX area = { area = "Jiangxi" country = -3 data = 1 value = 70 }}} } } 
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_133011507_Option7"
+	country_event = 616
+	THIS = { end_war = CHI }
+	
+set_global_flag = 133011507_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISnot = {or = {#MANUALFIX area = { area = "Sichuan" country = UCH data = 1 value = 70 }#MANUALFIX area = { area = "Guizhou" country = UCH data = 1 value = 70 }and = {#MANUALFIX area = { area = "Hunan" country = UCH data = 1 value = 70 }#MANUALFIX area = { area = "Hubei" country = UCH data = 1 value = 70 }}#MANUALFIX area = { area = "Yunnan" country = UCH data = 1 value = 15 }#MANUALFIX area = { area = "Xikang" country = UCH data = 1 value = 15 }#MANUALFIX area = { area = "Guangxi" country = UCH data = 1 value = 15 }#MANUALFIX area = { area = "Guangdong" country = UCH data = 1 value = 40 }}} } } 
+	ai_chance = { factor = 0
+		 }
+	name = "DH_EVENT_133011507_Option8"
+	country_event = 616
+	THIS = { end_war = CHI }
+	# MANUALFIX secede area command = { type = secedearea which = UCH value = "Hunan" when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = UCH value = "Hubei" when = 1 }
+	
+set_global_flag = 133011507_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISor = {#MANUALFIX area = { area = "Sichuan" country = UCH data = 1 value = 70 }#MANUALFIX area = { area = "Guizhou" country = UCH data = 1 value = 70 }and = {#MANUALFIX area = { area = "Hunan" country = UCH data = 1 value = 70 }#MANUALFIX area = { area = "Hubei" country = UCH data = 1 value = 70 }}#MANUALFIX area = { area = "Yunnan" country = UCH data = 1 value = 15 }#MANUALFIX area = { area = "Xikang" country = UCH data = 1 value = 15 }#MANUALFIX area = { area = "Guangxi" country = UCH data = 1 value = 15 }#MANUALFIX area = { area = "Guangdong" country = UCH data = 1 value = 40 }} } } 
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_133011507_Option9"
+	country_event = 616
+	THIS = { end_war = CHI }
+	# MANUALFIX secede area command = { type = secedearea which = UCH value = "Hunan" when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = UCH value = "Hubei" when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = UCH value = "Guizhou" when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = UCH value = "Sichuan" when = 1 }
+	
+set_global_flag = 133011507_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIS#MANUALFIX area = { area = "Sichuan" country = -3 data = 1 value = 90 }#MANUALFIX area = { area = "Guizhou" country = -3 data = 1 value = 90 }#MANUALFIX area = { area = "Hunan" country = -3 data = 1 value = 90 }#MANUALFIX area = { area = "Hubei" country = -3 data = 1 value = 90 }#MANUALFIX area = { area = "Yunnan" country = -3 data = 1 value = 90 }#MANUALFIX area = { area = "Xikang" country = -3 data = 1 value = 60 }#MANUALFIX area = { area = "Guangxi" country = -3 data = 1 value = 90 }#MANUALFIX area = { area = "Guangdong" country = -3 data = 1 value = 70 }or = {#MANUALFIX area = { area = "Fujian" country = -3 data = 1 value = 70 }#MANUALFIX area = { area = "Shaanxi" country = -3 data = 1 value = 70 }#MANUALFIX area = { area = "Henan" country = -3 data = 1 value = 70 }#MANUALFIX area = { area = "Anhui" country = -3 data = 1 value = 70 }#MANUALFIX area = { area = "Gansu" country = -3 data = 1 value = 50 }#MANUALFIX area = { area = "Jiangxi" country = -3 data = 1 value = 70 }} } } 
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_133011507_Option10"
+	country_event = 616
+	THIS = { end_war = CHI }
+	THIS = { end_war = CHI }
+	set_global_flag = 133011508_secede 
+	
+set_global_flag = 133011507_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 616
+title = "DH_EVENT_133011508_TITLE"
+desc = "DH_EVENT_133011508_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+#NOEQUIVALENT one_action = yes
+
+
+not = { has_global_flag = SLEEPEVENT_133011508 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISyear = 1918 } } 
+	ai_chance = { factor = 10
+		 }
+	name = "DH_EVENT_133011508_Option7"
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= 133011508_secede
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = CHI value = "Jiangsu" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= 133011508_secede
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = CHI value = "Jiangxi" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= 133011508_secede
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = CHI value = "Fujian" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= 133011508_secede
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = CHI value = "Zhejiang" when = 1 }
+		 }
+	THIS = { end_war = CHI }
+	THIS = { end_war = CYN }
+	THIS = { end_war = CGX }
+	CHI = { non_aggression_pact = CGX }
+	CHI = { non_aggression_pact = CYN }
+	CHI = { non_aggression_pact = CHI }
+	country_event = 584
+	threat = { who = CHI value = -30  }
+	country_event = 770
+	country_event = 739
+	
+set_global_flag = 133011508_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 10
+		 }
+	name = "DH_EVENT_133011508_Option8"
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= 133011508_secede
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = CHI value = "Jiangsu" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= 133011508_secede
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = CHI value = "Jiangxi" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= 133011508_secede
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = CHI value = "Fujian" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= 133011508_secede
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = CHI value = "Zhejiang" when = 1 }
+		 }
+	THIS = { end_war = CHI }
+	THIS = { end_war = CYN }
+	THIS = { end_war = CGX }
+	CHI = { non_aggression_pact = CGX }
+	CHI = { non_aggression_pact = CYN }
+	CHI = { non_aggression_pact = CHI }
+	country_event = 584
+	threat = { who = CHI value = -30  }
+	country_event = 770
+	country_event = 739
+	
+set_global_flag = 133011508_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISyear = 1918 } } 
+	ai_chance = { factor = 10
+		 }
+	name = "DH_EVENT_133011508_Option9"
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= 133011508_secede
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = CHI value = "Jiangsu" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= 133011508_secede
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = CHI value = "Jiangxi" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= 133011508_secede
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = CHI value = "Fujian" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= 133011508_secede
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = CHI value = "Zhejiang" when = 1 }
+		 }
+	THIS = { end_war = CHI }
+	THIS = { end_war = CYN }
+	THIS = { end_war = CGX }
+	CHI = { non_aggression_pact = CGX }
+	CHI = { non_aggression_pact = CYN }
+	CHI = { non_aggression_pact = CHI }
+	country_event = 584
+	threat = { who = CHI value = -30  }
+	country_event = 770
+	country_event = 739
+	
+set_global_flag = 133011508_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISyear = 1917 } } 
+	ai_chance = { factor = 10
+		 }
+	name = "DH_EVENT_133011508_Option10"
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= 133011508_secede
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = CHI value = "Jiangsu" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= 133011508_secede
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = CHI value = "Jiangxi" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= 133011508_secede
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = CHI value = "Fujian" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= 133011508_secede
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = CHI value = "Zhejiang" when = 1 }
+		 }
+	THIS = { end_war = CHI }
+	THIS = { end_war = CYN }
+	THIS = { end_war = CGX }
+	CHI = { non_aggression_pact = CGX }
+	CHI = { non_aggression_pact = CYN }
+	CHI = { non_aggression_pact = CHI }
+	country_event = 584
+	threat = { who = CHI value = -30  }
+	country_event = 770
+	country_event = 739
+	
+set_global_flag = 133011508_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 617
+title = "DH_EVENT_133011509_TITLE"
+desc = "DH_EVENT_133011509_DESC"
+trigger = {
+	not = {
+		 has_country_flag = 133011509
+		 }
+	not = {
+		 CHI = { is_subject = yes }
+		 }
+	not = {
+		 CHI = { is_subject = yes }
+		 }
+	#country_event = 584
+	or = {
+		and = {
+			tag = FRA
+			faction = allies
+			FRA = { war_with = GER }
+			2613 = { controlled_by = THIS }
+			}
+		and = {
+			tag = ENG
+			faction = allies
+			ENG = { war_with = GER }
+			1964 = { controlled_by = THIS }
+			}
+		and = {
+			tag = SOV
+			faction = allies
+			SOV = { war_with = GER }
+			1409 = { controlled_by = THIS }
+			}
+		and = {
+			tag = RUS
+			faction = allies
+			RUS = { war_with = GER }
+			699 = { controlled_by = THIS }
+			}
+		and = {
+			tag = JAP
+			faction = allies
+			JAP = { war_with = GER }
+			5315 = { controlled_by = THIS }
+			}
+		}
+	CHI = { war_with = CHI }
+	
+
+
+not = { date = 1925.12.29
+ }
+or = {
+tag = FRA
+tag = ENG
+tag = SOV
+tag = RUS
+tag = JAP
+}
+
+
+not = { has_global_flag = SLEEPEVENT_133011509 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  15 }
+
+is_triggered_only = yes
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISsupplies =  50or = {THIS = { ai = no }and = {has_global_flag= beiyang_alliesnot = { tag = JAP }}} } } 
+	ai_chance = { factor = 40
+		 }
+	name = "DH_EVENT_133011509_Option7"
+	country_event = 619
+	supplies = -500 
+	relation = { who = CHI value = 30  }
+	relation = { who = CHI value = -30  }
+	set_country_flag = 133011509 
+	
+set_global_flag = 133011509_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISsupplies =  50or = {THIS = { ai = no }has_global_flag= alternate_allies} } } 
+	ai_chance = { factor = 40
+		 }
+	name = "DH_EVENT_133011509_Option8"
+	country_event = 619
+	supplies = -500 
+	relation = { who = CHI value = -30  }
+	relation = { who = CHI value = 30  }
+	set_country_flag = 133011509 
+	
+set_global_flag = 133011509_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISTHIS = { ai = yes } } } 
+	ai_chance = { factor = 150
+		 }
+	name = "DH_EVENT_133011509_Option9"
+	set_country_flag = 133011509 
+	
+set_global_flag = 133011509_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 618
+title = "DH_EVENT_133011510_TITLE"
+desc = "DH_EVENT_133011510_DESC"
+trigger = {
+	not = {
+		 CHI = { is_subject = yes }
+		 }
+	not = {
+		 CHI = { is_subject = yes }
+		 }
+	not = {
+		 has_country_flag = 133011510
+		 }
+	#country_event = 584
+	or = {
+		and = {
+			tag = GER
+			faction = axis
+			or = {
+				FRA = { war_with = GER }
+				ENG = { war_with = GER }
+				RUS = { war_with = GER }
+				SOV = { war_with = GER }
+				}
+			1861 = { controlled_by = THIS }
+			}
+		and = {
+			tag = AUH
+			faction = axis
+			or = {
+				FRA = { war_with = AUH }
+				ENG = { war_with = AUH }
+				RUS = { war_with = AUH }
+				SOV = { war_with = AUH }
+				}
+			3026 = { controlled_by = THIS }
+			}
+		}
+	CHI = { war_with = CHI }
+	
+
+
+not = { date = 1925.12.29
+ }
+or = {
+tag = GER
+tag = AUH
+}
+
+
+not = { has_global_flag = SLEEPEVENT_133011510 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  15 }
+
+is_triggered_only = yes
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISsupplies =  50or = {THIS = { ai = no }has_global_flag= beiyang_axis} } } 
+	ai_chance = { factor = 40
+		 }
+	name = "DH_EVENT_133011510_Option7"
+	country_event = 619
+	supplies = -500 
+	relation = { who = CHI value = 30  }
+	relation = { who = CHI value = -30  }
+	set_country_flag = 133011510 
+	
+set_global_flag = 133011510_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISsupplies =  50or = {THIS = { ai = no }has_global_flag= alternate_axis} } } 
+	ai_chance = { factor = 40
+		 }
+	name = "DH_EVENT_133011510_Option8"
+	country_event = 619
+	supplies = -500 
+	relation = { who = CHI value = -30  }
+	relation = { who = CHI value = 30  }
+	set_country_flag = 133011510 
+	
+set_global_flag = 133011510_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISTHIS = { ai = yes } } } 
+	ai_chance = { factor = 150
+		 }
+	name = "DH_EVENT_133011510_Option9"
+	set_country_flag = 133011510 
+	
+set_global_flag = 133011510_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 619
+title = "DH_EVENT_133011511_TITLE"
+desc = "DH_EVENT_133011511_DESC"
+trigger = { 
+
+
+
+or = {
+tag = CHI
+tag = CHI
+}
+
+
+not = { has_global_flag = SLEEPEVENT_133011511 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISnot = { #country_event = 612 } } } 
+	name = "DH_EVENT_133011511_Option7"
+	supplies = 500 
+	
+set_global_flag = 133011511_EVENT_DONE
+
+}
+
+}
+

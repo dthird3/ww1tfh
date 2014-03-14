@@ -1,0 +1,1570 @@
+country_event = {
+id = 734
+title = "DH_EVENT_133011302_TITLE"
+desc = "DH_EVENT_133011302_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011302 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011302_Option7"
+	relation = { who = CHI value = -25  }
+	
+set_global_flag = 133011302_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 735
+title = "DH_EVENT_133011303_TITLE"
+desc = "DH_EVENT_133011303_DESC"
+trigger = {
+	or = {
+		and = {
+			year = 1916
+			#NOEQUIVALENT random =  5
+			}
+		and = {
+			year = 1917
+			#NOEQUIVALENT random =  5
+			}
+		and = {
+			year = 1918
+			#NOEQUIVALENT random =  5
+			}
+		and = {
+			year = 1919
+			#NOEQUIVALENT random =  5
+			}
+		year = 1920
+		#NOEQUIVALENT random =  2
+		}
+	#country_event = 662
+	
+tag = CHI
+
+not = { date = 1924.1.1
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011303 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  15 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011303_Option7"
+	relation = { who = CHI value = -25  }
+	# add_country_modifier = { name = "wartime_ic_10" duration = 360 }#command = { type = wartime_ic_mod value = 10 }
+	# add_country_modifier = { name = "peace_industry_5" duration = 360 }#command = { type = peacetime_ic_mod value = 5 }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = no }
+			  } 
+		supplies = -450 
+		 }
+	
+set_global_flag = 133011303_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 736
+title = "DH_EVENT_133011304_TITLE"
+desc = "DH_EVENT_133011304_DESC"
+trigger = {
+	#NOEQUIVALENT random =  40
+	#country_event = 662
+	
+tag = CHI
+
+not = { date = 1924.1.1
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011304 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  30 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_133011304_Option7"
+	#Removed Blank command
+	
+set_global_flag = 133011304_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 737
+title = "DH_EVENT_133011305_TITLE"
+desc = "DH_EVENT_133011305_DESC"
+trigger = {
+	or = {
+		and = {
+			year = 1916
+			#NOEQUIVALENT random =  5
+			}
+		and = {
+			year = 1917
+			#NOEQUIVALENT random =  5
+			}
+		and = {
+			year = 1918
+			#NOEQUIVALENT random =  5
+			}
+		and = {
+			year = 1919
+			#NOEQUIVALENT random =  5
+			}
+		year = 1920
+		#NOEQUIVALENT random =  2
+		}
+	#country_event = 735
+	
+tag = CHI
+
+not = { date = 1924.1.1
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011305 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  15 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011305_Option7"
+	#Removed Blank command
+	
+set_global_flag = 133011305_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 738
+title = "DH_EVENT_133011306_TITLE"
+desc = "DH_EVENT_133011306_DESC"
+trigger = {
+	#NOEQUIVALENT random =  20
+	#country_event = 736
+	
+tag = CHI
+
+not = { date = 1924.1.1
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011306 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  15 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_133011306_Option7"
+	ai_chance = { factor = 25
+		 }
+	relation = { who = CHI value = 15  }
+	set_country_flag = 133011306A 
+	dissent = 5 
+	
+set_global_flag = 133011306_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_133011306_Option8"
+	ai_chance = { factor = 25
+		 }
+	relation = { who = CHI value = -35  }
+	set_country_flag = 133011306B 
+	dissent = 5 
+	
+set_global_flag = 133011306_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_133011306_Option9"
+	ai_chance = { factor = 50
+		 }
+	relation = { who = CHI value = -15  }
+	dissent = 5 
+	
+set_global_flag = 133011306_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 739
+title = "DH_EVENT_133011307_TITLE"
+desc = "DH_EVENT_133011307_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011307 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011307_Option7"
+	release = MAN
+	release_vassal = MAN
+	country_event = 740
+	# MANUALFIX remove unit command = { type = remove_division which = "1 Dongbei Lujun" value = UCH }
+	# MANUALFIX remove unit command = { type = remove_division which = "2 Dongbei Lujun" value = UCH }
+	# MANUALFIX remove unit command = { type = remove_division which = "3 Dongbei Lujun" value = UCH }
+	
+set_global_flag = 133011307_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 740
+title = "DH_EVENT_133011308_TITLE"
+desc = "DH_EVENT_133011308_DESC"
+trigger = { 
+tag = MAN
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011308 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011308_Option7"
+	CHI = {
+		CHI = { non_aggression_pact = CHI }
+		CHI = { non_aggression_pact = CHI }
+		CHI = { non_aggression_pact = CHI }
+		CHI = { non_aggression_pact = CXB }
+		CHI = { non_aggression_pact = SIK }
+		CHI = { non_aggression_pact = CYN }
+		CHI = { non_aggression_pact = CGX }
+		# MANUALFIX secede area command = { type = secedearea which = U67 value = "Heilongjiang" when = 2 }
+		# MANUALFIX secede area command = { type = secedearea which = U67 value = "Jilin" when = 2 }
+		7139 = { hq_brigade = current }
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		capital = 7139
+		}
+
+set_global_flag = 133011308_EVENT_DONE
+
+	}
+}
+
+country_event = {
+id = 741
+title = "DH_EVENT_133011309_TITLE"
+desc = "DH_EVENT_133011309_DESC"
+trigger = {
+	exists = CHI
+	or = {
+		and = {
+			year = 1918
+			#NOEQUIVALENT random =  5
+			}
+		and = {
+			year = 1919
+			#NOEQUIVALENT random =  5
+			}
+		and = {
+			year = 1920
+			#NOEQUIVALENT random =  10
+			}
+		year = 1921
+		#NOEQUIVALENT random =  2
+		}
+	#country_event = 737
+	
+tag = CHI
+
+not = { date = 1924.1.1
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011309 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  15 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011309_Option7"
+	relation = { who = CHI value = 25  }
+	relation = { who = CHI value = -20  }
+	country_event = 742
+	
+set_global_flag = 133011309_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 742
+title = "DH_EVENT_133011310_TITLE"
+desc = "DH_EVENT_133011310_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011310 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011310_Option7"
+	ai_chance = { factor = 95
+		 }
+	relation = { who = CHI value = 100  }
+	relation = { who = CHI value = -200  }
+	
+set_global_flag = 133011310_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_133011310_Option8"
+	ai_chance = { factor = 5
+		 }
+	relation = { who = CHI value = -250  }
+	relation = { who = CHI value = 250  }
+	
+set_global_flag = 133011310_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 743
+title = "DH_EVENT_133011311_TITLE"
+desc = "DH_EVENT_133011311_DESC"
+trigger = {
+	exists = CHI
+	or = {
+		and = {
+			year = 1918
+			#NOEQUIVALENT random =  3
+			}
+		and = {
+			year = 1919
+			#NOEQUIVALENT random =  5
+			}
+		and = {
+			year = 1920
+			#NOEQUIVALENT random =  5
+			}
+		and = {
+			year = 1920
+			#NOEQUIVALENT random =  10
+			}
+		and = {
+			year = 1921
+			#NOEQUIVALENT random =  20
+			}
+		year = 1921
+		#NOEQUIVALENT random =  2
+		}
+	#country_event = 737
+	
+tag = CHI
+
+not = { date = 1924.1.1
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011311 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  15 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011311_Option7"
+	country_event = 744
+	relation = { who = CHI value = -20  }
+	
+set_global_flag = 133011311_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 744
+title = "DH_EVENT_133011312_TITLE"
+desc = "DH_EVENT_133011312_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011312 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011312_Option7"
+	relation = { who = CHI value = -5  }
+	
+set_global_flag = 133011312_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 745
+title = "DH_EVENT_133011313_TITLE"
+desc = "DH_EVENT_133011313_DESC"
+trigger = {
+	or = {
+		and = {
+			year = 1919
+			#NOEQUIVALENT random =  5
+			}
+		and = {
+			year = 1920
+			#NOEQUIVALENT random =  10
+			}
+		and = {
+			year = 1921
+			#NOEQUIVALENT random =  20
+			}
+		year = 1920
+		#NOEQUIVALENT random =  2
+		}
+	#country_event = 737
+	#country_event = 741
+	
+tag = CHI
+
+not = { date = 1924.1.1
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011313 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  15 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011313_Option7"
+	country_event = 746
+	country_event = 747
+	relation = { who = CHI value = -20  }
+	
+set_global_flag = 133011313_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 746
+title = "DH_EVENT_133011314_TITLE"
+desc = "DH_EVENT_133011314_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011314 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011314_Option7"
+	
+set_global_flag = 133011314_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 747
+title = "DH_EVENT_133011315_TITLE"
+desc = "DH_EVENT_133011315_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011315 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011315_Option7"
+	dissent = 5 
+	
+set_global_flag = 133011315_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 748
+title = "DH_EVENT_133011316_TITLE"
+desc = "DH_EVENT_133011316_DESC"
+trigger = {
+	or = {
+		and = {
+			#NOEQUIVALENT random =  25
+			not = {
+				 has_country_flag = 133011306A
+				 }
+			}
+		#NOEQUIVALENT random =  12
+		}
+	and = {
+		#country_event = 745
+		#country_event = 743
+		#country_event = 741
+		#country_event = 749
+		}
+	
+tag = CHI
+
+not = { date = 1924.1.1
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011316 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  15 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_133011316_Option7"
+	country_event = 751
+	
+set_global_flag = 133011316_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 749
+title = "DH_EVENT_133011317_TITLE"
+desc = "DH_EVENT_133011317_DESC"
+trigger = {
+	#NOEQUIVALENT random =  75
+	and = {
+		#country_event = 745
+		#country_event = 743
+		#country_event = 741
+		}
+	
+tag = CHI
+
+not = { date = 1924.1.1
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011317 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  15 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011317_Option7"
+	relation = { who = CHI value = -20  }
+	country_event = 750
+	
+set_global_flag = 133011317_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 750
+title = "DH_EVENT_133011318_TITLE"
+desc = "DH_EVENT_133011318_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011318 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011318_Option7"
+	relation = { who = CHI value = -20  }
+	
+set_global_flag = 133011318_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 751
+title = "DH_EVENT_133011319_TITLE"
+desc = "DH_EVENT_133011319_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011319 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011319_Option7"
+	country_event = 752
+	country_event = 753
+	random_country = { limit = { tag = THIS 
+			and = {
+				or = {
+					#country_event = 101
+					#country_event = 277
+					#country_event = 422
+					#country_event = 431
+					}
+				#country_event = 456
+				}
+			 } 
+		country_event = 754
+		 }
+	random_country = { limit = { tag = THIS 
+			and = {
+				#country_event = 416
+				or = {
+					#country_event = 448
+					#country_event = 401
+					#country_event = 289
+					}
+				}
+			 } 
+		country_event = 755
+		 }
+	CHI = { non_aggression_pact = CHI }
+	CHI = { non_aggression_pact = JAP }
+	ZZZ = { create_vassal = THIS } THIS = { inherit = ZZZ }
+	ZZZ = { create_vassal = THIS } THIS = { inherit = ZZZ }
+	CHI = { end_non_aggression_pact = CHI }
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	war = { target = CHI }
+	THIS = { end_war = CHI }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = no }
+			  } 
+		# MANUALFIX Demobilize command = {  type = demobilize which = land when = 0 where = 2 value = 7 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		# MANUALFIX Demobilize command = {  type = demobilize which = land when = 0 where = 2 value = 8 }
+		 }
+	threat = { who = CHI value = -20  }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 has_country_flag = 133011306B
+				 }  } 
+		random_owned = { create_revolt = 3 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 has_country_flag = 133011306B
+				 }  } 
+		random_owned = { create_revolt = 3 }
+		 }
+	random_owned = { create_revolt = 3 }
+	set_global_flag = SLEEPEVENT_133011302 
+	set_global_flag = SLEEPEVENT_133011303 
+	set_global_flag = SLEEPEVENT_133011304 
+	set_global_flag = SLEEPEVENT_133011305 
+	set_global_flag = SLEEPEVENT_133011306 
+	set_global_flag = SLEEPEVENT_133011307 
+	set_global_flag = SLEEPEVENT_133011308 
+	set_global_flag = SLEEPEVENT_133011309 
+	set_global_flag = SLEEPEVENT_133011310 
+	set_global_flag = SLEEPEVENT_133011311 
+	set_global_flag = SLEEPEVENT_133011312 
+	set_global_flag = SLEEPEVENT_133011313 
+	set_global_flag = SLEEPEVENT_133011314 
+	set_global_flag = SLEEPEVENT_133011315 
+	set_global_flag = SLEEPEVENT_133011316 
+	set_global_flag = SLEEPEVENT_133011317 
+	set_global_flag = SLEEPEVENT_133011318 
+	remove_minister = 1325215 
+	remove_minister = 1325319 
+	remove_minister = 1325327 
+	remove_minister = 1325301 
+	remove_minister = 1325317 
+	remove_minister = 1325323 
+	remove_minister = 1325329 
+	remove_minister = 1325330 
+	remove_minister = 1325331 
+	remove_minister = 1325332 
+	remove_minister = 1325333 
+	remove_minister = 1325321 
+	remove_minister = 1325324 
+	remove_minister = 1325305 
+	remove_minister = 1325335 
+	
+set_global_flag = 133011319_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 752
+title = "DH_EVENT_133011320_TITLE"
+desc = "DH_EVENT_133011320_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011320 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011320_Option7"
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	war = { target = CHI }
+	threat = { who = all value = -25  }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = no }
+			  } 
+		# MANUALFIX Demobilize command = {  type = demobilize which = land when = 0 where = 2 value = 5 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		# MANUALFIX Demobilize command = {  type = demobilize which = land when = 0 where = 2 value = 0 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		5018 = { hq_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		5143 = { hq_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		5019 = { hq_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		4785 = { hq_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		4885 = { hq_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		 }
+	CHI = { non_aggression_pact = CHI }
+	CHI = { non_aggression_pact = JAP }
+	country_event = 757
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		#NOEQUIVALENT AI switch command = {  type = ai which = "switch/U36_1914ZhiliWar.ai" }
+		 }
+	
+set_global_flag = 133011320_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 753
+title = "DH_EVENT_133011321_TITLE"
+desc = "DH_EVENT_133011321_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011321 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011321_Option7"
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	THIS = { end_war = CHI }
+	THIS = { end_war = CHI }
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = yes }
+			  } 
+		#NOEQUIVALENT AI switch command = {  type = ai which = "switch/U67_1914ZhiliWar.ai" }
+		 }
+	THIS = { end_military_access = CHI }
+	CHI = { non_aggression_pact = CHI }
+	CHI = { non_aggression_pact = CHI }
+	CHI = { non_aggression_pact = CHI }
+	
+set_global_flag = 133011321_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 754
+title = "DH_EVENT_133011322_TITLE"
+desc = "DH_EVENT_133011322_DESC"
+trigger = { 
+tag = JAP
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011322 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISsupplies =  100 } } 
+	name = "DH_EVENT_133011322_Option7"
+	ai_chance = { factor = 25
+		 }
+	country_event = 756
+	relation = { who = CHI value = 30  }
+	supplies = -1000 
+	
+set_global_flag = 133011322_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISsupplies =  100 } } 
+	name = "DH_EVENT_133011322_Option8"
+	ai_chance = { factor = 75
+		 }
+	country_event = 756
+	relation = { who = CHI value = 30  }
+	supplies = -1000 
+	
+set_global_flag = 133011322_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISTHIS = { ai = yes } } } 
+	ai_chance = { factor = 25
+		 }
+	name = "DH_EVENT_133011322_Option9"
+	#Removed Blank command
+	
+set_global_flag = 133011322_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 755
+title = "DH_EVENT_133011323_TITLE"
+desc = "DH_EVENT_133011323_DESC"
+trigger = { 
+tag = GER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011323 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISsupplies =  100 } } 
+	name = "DH_EVENT_133011323_Option7"
+	ai_chance = { factor = 25
+		 }
+	country_event = 756
+	relation = { who = CHI value = 30  }
+	supplies = -1000 
+	
+set_global_flag = 133011323_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISsupplies =  100 } } 
+	name = "DH_EVENT_133011323_Option8"
+	ai_chance = { factor = 75
+		 }
+	country_event = 756
+	relation = { who = CHI value = 30  }
+	supplies = -1000 
+	
+set_global_flag = 133011323_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISTHIS = { ai = yes } } } 
+	ai_chance = { factor = 25
+		 }
+	name = "DH_EVENT_133011323_Option9"
+	#Removed Blank command
+	
+set_global_flag = 133011323_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 756
+title = "DH_EVENT_133011324_TITLE"
+desc = "DH_EVENT_133011324_DESC"
+trigger = { 
+
+
+
+or = {
+tag = CHI
+tag = CHI
+}
+
+
+not = { has_global_flag = SLEEPEVENT_133011324 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011324_Option7"
+	supplies = 1000 
+	
+set_global_flag = 133011324_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 757
+title = "DH_EVENT_133011325_TITLE"
+desc = "DH_EVENT_133011325_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+#NOEQUIVALENT one_action = yes
+
+
+not = { has_global_flag = SLEEPEVENT_133011325 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011325_Option7"
+	country_event = 758
+	# add_country_modifier = { name = "morale_50" duration = 360 }#command = { type = morale which = land value = 50 }
+	country_event = 760
+	
+set_global_flag = 133011325_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_133011325_Option8"
+	country_event = 759
+	# add_country_modifier = { name = "morale_-50" duration = 360 }#command = { type = morale which = land value = -50 }
+	country_event = 760
+	remove_minister = 995122 
+	
+set_global_flag = 133011325_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 758
+title = "DH_EVENT_133011326_TITLE"
+desc = "DH_EVENT_133011326_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011326 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011326_Option7"
+	dissent = 5 
+	# add_country_modifier = { name = "morale_-50" duration = 360 }#command = { type = morale which = land value = -50 }
+	
+set_global_flag = 133011326_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 759
+title = "DH_EVENT_133011327_TITLE"
+desc = "DH_EVENT_133011327_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011327 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011327_Option7"
+	dissent = -5 
+	# add_country_modifier = { name = "morale_50" duration = 360 }#command = { type = morale which = land value = 50 }
+	
+set_global_flag = 133011327_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 760
+title = "DH_EVENT_133011328_TITLE"
+desc = "DH_EVENT_133011328_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011328 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISor = {THIS = { ai = no }not = { #country_event = 758 }} } } 
+	name = "DH_EVENT_133011328_Option7"
+	ai_chance = { factor = 90
+		 }
+	country_event = 761
+	create_alliance = CHI
+	
+set_global_flag = 133011328_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_133011328_Option8"
+	ai_chance = { factor = 10
+		 }
+	relation = { who = CHI value = 100  }
+	
+set_global_flag = 133011328_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 761
+title = "DH_EVENT_133011329_TITLE"
+desc = "DH_EVENT_133011329_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011329 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011329_Option7"
+	dissent = 5 
+	
+set_global_flag = 133011329_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 762
+title = "DH_EVENT_133011330_TITLE"
+desc = "DH_EVENT_133011330_DESC"
+trigger = {
+	not = {
+		 4979 = { controlled_by = THIS }
+		 }
+	#country_event = 750
+	
+tag = CHI
+
+not = {  }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011330 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_133011330_Option7"
+	dissent = 20 
+	# add_country_modifier = { name = "morale_-25" duration = 360 }#command = { type = morale which = land value = -25 }
+	
+set_global_flag = 133011330_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 763
+title = "DH_EVENT_133011331_TITLE"
+desc = "DH_EVENT_133011331_DESC"
+trigger = {
+	or = {
+		and = {
+			#country_event = 757
+			#country_event = 761
+			}
+		and = {
+			or = {
+				#country_event = 757
+				#country_event = 761
+				}
+			not = {
+				#country_event = 758
+				}
+			CHI = { surrender_progress = 10 }
+			}
+		and = {
+			#country_event = 758
+			CHI = { surrender_progress = 35 }
+			}
+		}
+	#country_event = 750
+	#NOEQUIVALENT random =  25
+	
+tag = CHI
+
+not = {  }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011331 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_133011331_Option7"
+	THIS = { inherit = CHI }
+	random_country = { limit = { tag = THIS 
+			 exists = CHI
+			  } 
+		country_event = 764
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 #country_event = 763
+				 not = {
+					 #country_event = 760
+					 } }  } 
+		create_alliance = CHI
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 757
+			  } 
+		# add_country_modifier = { name = "morale_-50" duration = 360 }#command = {  type = morale which = land value = -50 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 758
+			  } 
+		# add_country_modifier = { name = "morale_50" duration = 360 }#command = {  type = morale which = land value = 50 }
+		 }
+	set_global_flag = SLEEPEVENT_133011330 
+	set_global_flag = SLEEPEVENT_133011332 
+	set_global_flag = SLEEPEVENT_133011333 
+	set_global_flag = SLEEPEVENT_133011319 
+	set_global_flag = SLEEPEVENT_133011320 
+	set_global_flag = SLEEPEVENT_133011321 
+	set_global_flag = SLEEPEVENT_133011322 
+	set_global_flag = SLEEPEVENT_133011323 
+	set_global_flag = SLEEPEVENT_133011324 
+	set_global_flag = SLEEPEVENT_133011325 
+	set_global_flag = SLEEPEVENT_133011326 
+	set_global_flag = SLEEPEVENT_133011327 
+	set_global_flag = SLEEPEVENT_133011328 
+	set_global_flag = SLEEPEVENT_133011329 
+	
+set_global_flag = 133011331_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 764
+title = "DH_EVENT_133011334_TITLE"
+desc = "DH_EVENT_133011334_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011334 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011334_Option7"
+	# MANUALFIX secede region command = { type = secederegion value = "China" which = U36 when = 1 }
+	
+set_global_flag = 133011334_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 765
+title = "DH_EVENT_133011332_TITLE"
+desc = "DH_EVENT_133011332_DESC"
+trigger = {
+	CHI = { surrender_progress = 15 }
+	or = {
+		4681 = { controlled_by = CHI }
+		4736 = { controlled_by = CHI }
+		4788 = { controlled_by = CHI }
+		7094 = { controlled_by = CHI }
+		}
+	CHI = { war_with = CHI }
+	#country_event = 750
+	#country_event = 760
+	not = {
+		 #country_event = 762
+		 }
+	#NOEQUIVALENT random =  35
+	
+tag = CHI
+
+not = {  }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011332 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_133011332_Option7"
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	THIS = { end_war = CHI }
+	
+set_global_flag = 133011332_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 766
+title = "DH_EVENT_133011333_TITLE"
+desc = "DH_EVENT_133011333_DESC"
+trigger = {
+	or = {
+		not = {
+			exists = CHI
+			}
+		and = {
+			CHI = { surrender_progress = 40 }
+			4979 = { controlled_by = THIS }
+			5018 = { controlled_by = THIS }
+			5019 = { controlled_by = THIS }
+			5144 = { controlled_by = THIS }
+			}
+		}
+	#country_event = 750
+	#NOEQUIVALENT random =  35
+	
+tag = CHI
+
+not = {  }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011333 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_133011333_Option7"
+	THIS = { inherit = CHI }
+	random_country = { limit = { tag = THIS 
+			 exists = CHI
+			  } 
+		country_event = 767
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #country_event = 763
+				 } #country_event = 760
+			  } 
+		THIS = { end_war = CHI }
+		 }
+	release_vassal = CHI
+	random_country = { limit = { tag = THIS 
+			 #country_event = 757
+			  } 
+		# add_country_modifier = { name = "morale_50" duration = 360 }#command = {  type = morale which = land value = 50 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 758
+			  } 
+		# add_country_modifier = { name = "morale_-50" duration = 360 }#command = {  type = morale which = land value = -50 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 761
+			  } 
+		# add_country_modifier = { name = "morale_25" duration = 360 }#command = {  type = morale which = land value = 25 }
+		 }
+	set_global_flag = SLEEPEVENT_133011330 
+	set_global_flag = SLEEPEVENT_133011331 
+	set_global_flag = SLEEPEVENT_133011332 
+	set_global_flag = SLEEPEVENT_133011319 
+	set_global_flag = SLEEPEVENT_133011320 
+	set_global_flag = SLEEPEVENT_133011321 
+	set_global_flag = SLEEPEVENT_133011322 
+	set_global_flag = SLEEPEVENT_133011323 
+	set_global_flag = SLEEPEVENT_133011324 
+	set_global_flag = SLEEPEVENT_133011325 
+	set_global_flag = SLEEPEVENT_133011326 
+	set_global_flag = SLEEPEVENT_133011327 
+	set_global_flag = SLEEPEVENT_133011328 
+	set_global_flag = SLEEPEVENT_133011329 
+	
+set_global_flag = 133011333_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 767
+title = "DH_EVENT_133011335_TITLE"
+desc = "DH_EVENT_133011335_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011335 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011335_Option7"
+	# MANUALFIX secede region command = { type = secederegion value = "China" which = UCH when = 1 }
+	
+set_global_flag = 133011335_EVENT_DONE
+
+}
+
+}
+

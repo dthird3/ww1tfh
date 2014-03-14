@@ -1,0 +1,1151 @@
+country_event = {
+id = 130
+title = "DH_EVENT_2000500_TITLE"
+desc = "DH_EVENT_2000500_DESC"
+picture = "news_paper"
+
+trigger = {
+	war = yes
+	  
+	not = {
+		 has_country_flag = mutinies
+		 }
+	or = {
+		  
+		dissent = 20
+		and = {
+			dissent = 15
+			or = {
+				THIS = { surrender_progress = 5  }
+				THIS = { lost_IC = 5  }
+				}
+			}
+		and = {
+			dissent = 10
+			or = {
+				THIS = { surrender_progress = 15 }
+				THIS = { lost_IC = 15 }
+				}
+			}
+		or = {
+			THIS = { surrender_progress = 25 }
+			THIS = { lost_IC = 25 }
+			}
+		}
+	
+
+date = 1915.6.31
+
+not = { date = 1925.12.30
+ }
+or = {
+tag = AFG
+tag = ALB
+tag = ALG
+tag = ANG
+tag = ARA
+tag = ARG
+tag = ARM
+tag = AST
+tag = AUS
+tag = AZB
+tag = BEL
+tag = BEN
+tag = BLR
+tag = BOL
+tag = BOS
+tag = BRA
+tag = BRU
+tag = BUL
+tag = BUR
+tag = CAL
+tag = CAM
+tag = CAN
+tag = CGX
+tag = CHC
+tag = CHI
+tag = CHL
+tag = CMB
+tag = COL
+tag = CON
+tag = COS
+tag = CRO
+tag = CSA
+tag = CSX
+tag = CUB
+tag = CXB
+tag = CYN
+tag = CYP
+tag = CZE
+tag = DDR
+tag = DEN
+tag = DFR
+tag = EAF
+tag = ECU
+tag = EGY
+tag = ENG
+tag = EQA
+tag = EST
+tag = ETH
+tag = EUS
+tag = FIN
+tag = FLA
+tag = FRA
+tag = GAB
+tag = GEO
+tag = GER
+tag = GLD
+tag = GRE
+tag = GUA
+tag = GUI
+tag = GUY
+tag = HOL
+tag = HON
+tag = HUN
+tag = ICL
+tag = IDC
+tag = IND
+tag = INO
+tag = IRE
+tag = IRQ
+tag = ISR
+tag = ITA
+tag = JAP
+tag = JOR
+tag = KAZ
+tag = KOR
+tag = KUR
+tag = KYG
+tag = LAO
+tag = LAT
+tag = LBY
+tag = LEB
+tag = LIT
+tag = LUX
+tag = MAD
+tag = MAL
+tag = MAN
+tag = MEN
+tag = MEX
+tag = MLY
+tag = MON
+tag = MOR
+tag = MOZ
+tag = MTN
+tag = NAM
+tag = NIC
+tag = NIG
+tag = NOR
+tag = NZL
+tag = OMN
+tag = TUR
+tag = PAK
+tag = PAL
+tag = PAN
+tag = PAR
+tag = PER
+tag = PHI
+tag = POL
+tag = POR
+tag = PRI
+tag = PRK
+tag = PRU
+tag = QUE
+tag = RHO
+tag = ROM
+tag = RSI
+tag = RUS
+tag = SAF
+tag = SAL
+tag = SAR
+tag = SAU
+tag = SCA
+tag = SCH
+tag = SCO
+tag = SER
+tag = SIA
+tag = SIB
+tag = SIE
+tag = SIK
+tag = SLO
+tag = SLV
+tag = SOM
+tag = SOV
+tag = SPA
+tag = SPR
+tag = SUD
+tag = SWE
+tag = SYR
+tag = TAJ
+tag = TAN
+tag = TEX
+tag = TRA
+tag = TRK
+tag = TUN
+tag = TUR
+tag = UKR
+tag = URU
+tag = USA
+tag = UZB
+tag = VEN
+tag = VIE
+tag = WLL
+tag = YEM
+tag = YUG
+tag = U01
+tag = ENG
+tag = U03
+tag = U04
+tag = GER
+tag = AUH
+tag = U49
+tag = HJZ
+tag = ENG
+tag = JBS
+tag = SAU
+tag = U54
+tag = U55
+tag = U56
+tag = MXR
+tag = MXR
+tag = MXR
+tag = CHI
+tag = WHR
+tag = WHR
+tag = WHR
+}
+
+
+not = { has_global_flag = SLEEPEVENT_2000500 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  30 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2000500_Option7"
+	dissent = 3 
+	# MANUALFIX disorg command = { type = disorg_division which = -1 where = 20 }
+	random_country = { limit = { tag = THIS 
+			     } 
+		# MANUALFIX disorg command = {  type = disorg_division which = -1 where = 20 }
+		 }
+	random_country = { limit = { tag = THIS 
+			     } 
+		# MANUALFIX disorg command = {  type = disorg_division which = -1 where = 20 }
+		 }
+	random_country = { limit = { tag = THIS 
+			     } 
+		# MANUALFIX disorg command = {  type = disorg_division which = -1 where = 20 }
+		 }
+	random_country = { limit = { tag = THIS 
+			     } 
+		# MANUALFIX disorg command = {  type = disorg_division which = -1 where = 20 }
+		 }
+	random_country = { limit = { tag = THIS 
+			     } 
+		# MANUALFIX disorg command = {  type = disorg_division which = -1 where = 20 }
+		 }
+	random_country = { limit = { tag = THIS 
+			     } 
+		# MANUALFIX disorg command = {  type = disorg_division which = -1 where = 20 }
+		 }
+	random_country = { limit = { tag = THIS 
+			     } 
+		# MANUALFIX disorg command = {  type = disorg_division which = -1 where = 20 }
+		 }
+	random_country = { limit = { tag = THIS 
+			     } 
+		# MANUALFIX disorg command = {  type = disorg_division which = -1 where = 20 }
+		 }
+	random_country = { limit = { tag = THIS 
+			     } 
+		# MANUALFIX disorg command = {  type = disorg_division which = -1 where = 20 }
+		 }
+	random_country = { limit = { tag = THIS 
+			     } 
+		# MANUALFIX disorg command = {  type = disorg_division which = -1 where = 20 }
+		 }
+	random_country = { limit = { tag = THIS 
+			     } 
+		# MANUALFIX disorg command = {  type = disorg_division which = -1 where = 20 }
+		 }
+	random_country = { limit = { tag = THIS 
+			     } 
+		# MANUALFIX disorg command = {  type = disorg_division which = -1 where = 20 }
+		 }
+	random_country = { limit = { tag = THIS 
+			     } 
+		# MANUALFIX disorg command = {  type = disorg_division which = -1 where = 20 }
+		 }
+	random_country = { limit = { tag = THIS 
+			     } 
+		# MANUALFIX disorg command = {  type = disorg_division which = -1 where = 20 }
+		 }
+	random_country = { limit = { tag = THIS 
+			     } 
+		# MANUALFIX disorg command = {  type = disorg_division which = -1 where = 20 }
+		 }
+	random_country = { limit = { tag = THIS 
+			     } 
+		# MANUALFIX disorg command = {  type = disorg_division which = -1 where = 20 }
+		 }
+	random_country = { limit = { tag = THIS 
+			     } 
+		# MANUALFIX disorg command = {  type = disorg_division which = -1 where = 20 }
+		 }
+	set_country_flag = mutinies 
+	
+set_global_flag = 2000500_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 131
+title = "DH_EVENT_2000501_TITLE"
+desc = "DH_EVENT_2000501_DESC"
+picture = "news_paper"
+
+trigger = {
+	  
+	war = yes
+	not = {
+		 has_country_flag = war_weariness
+		 }
+	
+
+date = 1914.12.25
+
+not = { date = 1925.12.30
+ }
+or = {
+tag = AFG
+tag = ALB
+tag = ALG
+tag = ANG
+tag = ARA
+tag = ARG
+tag = ARM
+tag = AST
+tag = AUS
+tag = AZB
+tag = BEL
+tag = BEN
+tag = BLR
+tag = BOL
+tag = BOS
+tag = BRA
+tag = BRU
+tag = BUL
+tag = BUR
+tag = CAL
+tag = CAM
+tag = CAN
+tag = CGX
+tag = CHC
+tag = CHI
+tag = CHL
+tag = CMB
+tag = COL
+tag = CON
+tag = COS
+tag = CRO
+tag = CSA
+tag = CSX
+tag = CUB
+tag = CXB
+tag = CYN
+tag = CYP
+tag = CZE
+tag = DDR
+tag = DEN
+tag = DFR
+tag = EAF
+tag = ECU
+tag = EGY
+tag = ENG
+tag = EQA
+tag = EST
+tag = ETH
+tag = EUS
+tag = FIN
+tag = FLA
+tag = FRA
+tag = GAB
+tag = GEO
+tag = GER
+tag = GLD
+tag = GRE
+tag = GUA
+tag = GUI
+tag = GUY
+tag = HOL
+tag = HON
+tag = HUN
+tag = ICL
+tag = IDC
+tag = IND
+tag = INO
+tag = IRE
+tag = IRQ
+tag = ISR
+tag = ITA
+tag = JAP
+tag = JOR
+tag = KAZ
+tag = KOR
+tag = KUR
+tag = KYG
+tag = LAO
+tag = LAT
+tag = LBY
+tag = LEB
+tag = LIT
+tag = LUX
+tag = MAD
+tag = MAL
+tag = MAN
+tag = MEN
+tag = MEX
+tag = MLY
+tag = MON
+tag = MOR
+tag = MOZ
+tag = MTN
+tag = NAM
+tag = NIC
+tag = NIG
+tag = NOR
+tag = NZL
+tag = OMN
+tag = TUR
+tag = PAK
+tag = PAL
+tag = PAN
+tag = PAR
+tag = PER
+tag = PHI
+tag = POL
+tag = POR
+tag = PRI
+tag = PRK
+tag = PRU
+tag = QUE
+tag = RHO
+tag = ROM
+tag = RSI
+tag = RUS
+tag = SAF
+tag = SAL
+tag = SAR
+tag = SAU
+tag = SCA
+tag = SCH
+tag = SCO
+tag = SER
+tag = SIA
+tag = SIB
+tag = SIE
+tag = SIK
+tag = SLO
+tag = SLV
+tag = SOM
+tag = SOV
+tag = SPA
+tag = SPR
+tag = SUD
+tag = SWE
+tag = SYR
+tag = TAJ
+tag = TAN
+tag = TEX
+tag = TRA
+tag = TRK
+tag = TUN
+tag = TUR
+tag = UKR
+tag = URU
+tag = USA
+tag = UZB
+tag = VEN
+tag = VIE
+tag = WLL
+tag = YEM
+tag = YUG
+tag = U01
+tag = ENG
+tag = U03
+tag = U04
+tag = GER
+tag = AUH
+tag = U49
+tag = HJZ
+tag = ENG
+tag = JBS
+tag = SAU
+tag = U54
+tag = U55
+tag = U56
+tag = MXR
+tag = MXR
+tag = MXR
+tag = CHI
+tag = WHR
+tag = WHR
+tag = WHR
+}
+
+
+not = { has_global_flag = SLEEPEVENT_2000501 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  180 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2000501_Option1"
+	dissent = 3 
+	set_country_flag = war_weariness 
+	
+set_global_flag = 2000501_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 132
+title = "DH_EVENT_2000502_TITLE"
+desc = "DH_EVENT_2000502_DESC"
+picture = "news_paper"
+
+trigger = {
+	war = yes
+	  
+	not = {
+		 has_country_flag = general_strikes
+		 }
+	
+
+date = 1915.12.30
+
+not = { date = 1925.12.30
+ }
+or = {
+tag = AFG
+tag = ALB
+tag = ALG
+tag = ANG
+tag = ARA
+tag = ARG
+tag = ARM
+tag = AST
+tag = AUS
+tag = AZB
+tag = BEL
+tag = BEN
+tag = BLR
+tag = BOL
+tag = BOS
+tag = BRA
+tag = BRU
+tag = BUL
+tag = BUR
+tag = CAL
+tag = CAM
+tag = CAN
+tag = CGX
+tag = CHC
+tag = CHI
+tag = CHL
+tag = CMB
+tag = COL
+tag = CON
+tag = COS
+tag = CRO
+tag = CSA
+tag = CSX
+tag = CUB
+tag = CXB
+tag = CYN
+tag = CYP
+tag = CZE
+tag = DDR
+tag = DEN
+tag = DFR
+tag = EAF
+tag = ECU
+tag = EGY
+tag = ENG
+tag = EQA
+tag = EST
+tag = ETH
+tag = EUS
+tag = FIN
+tag = FLA
+tag = FRA
+tag = GAB
+tag = GEO
+tag = GER
+tag = GLD
+tag = GRE
+tag = GUA
+tag = GUI
+tag = GUY
+tag = HOL
+tag = HON
+tag = HUN
+tag = ICL
+tag = IDC
+tag = IND
+tag = INO
+tag = IRE
+tag = IRQ
+tag = ISR
+tag = ITA
+tag = JAP
+tag = JOR
+tag = KAZ
+tag = KOR
+tag = KUR
+tag = KYG
+tag = LAO
+tag = LAT
+tag = LBY
+tag = LEB
+tag = LIT
+tag = LUX
+tag = MAD
+tag = MAL
+tag = MAN
+tag = MEN
+tag = MEX
+tag = MLY
+tag = MON
+tag = MOR
+tag = MOZ
+tag = MTN
+tag = NAM
+tag = NIC
+tag = NIG
+tag = NOR
+tag = NZL
+tag = OMN
+tag = TUR
+tag = PAK
+tag = PAL
+tag = PAN
+tag = PAR
+tag = PER
+tag = PHI
+tag = POL
+tag = POR
+tag = PRI
+tag = PRK
+tag = PRU
+tag = QUE
+tag = RHO
+tag = ROM
+tag = RSI
+tag = RUS
+tag = SAF
+tag = SAL
+tag = SAR
+tag = SAU
+tag = SCA
+tag = SCH
+tag = SCO
+tag = SER
+tag = SIA
+tag = SIB
+tag = SIE
+tag = SIK
+tag = SLO
+tag = SLV
+tag = SOM
+tag = SOV
+tag = SPA
+tag = SPR
+tag = SUD
+tag = SWE
+tag = SYR
+tag = TAJ
+tag = TAN
+tag = TEX
+tag = TRA
+tag = TRK
+tag = TUN
+tag = TUR
+tag = UKR
+tag = URU
+tag = USA
+tag = UZB
+tag = VEN
+tag = VIE
+tag = WLL
+tag = YEM
+tag = YUG
+tag = U01
+tag = ENG
+tag = U03
+tag = U04
+tag = GER
+tag = AUH
+tag = U49
+tag = HJZ
+tag = ENG
+tag = JBS
+tag = SAU
+tag = U54
+tag = U55
+tag = U56
+tag = MXR
+tag = MXR
+tag = MXR
+tag = CHI
+tag = WHR
+tag = WHR
+tag = WHR
+}
+
+
+not = { has_global_flag = SLEEPEVENT_2000502 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  60 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2000502_Option1"
+	dissent = 5 
+	set_country_flag = general_strikes 
+	
+set_global_flag = 2000502_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 133
+title = "DH_EVENT_2000503_TITLE"
+desc = "DH_EVENT_2000503_DESC"
+picture = "news_paper"
+
+trigger = {
+	or = {
+		and = {
+			tag = FRA
+			#MANUALFIX region = { region = "France" country = -2 data = 1 value = 21 }
+			}
+		and = {
+			tag = ENG
+			or = {
+				#MANUALFIX region = { region = "Scotland" country = -2 data = 1 value = 10 }
+				#MANUALFIX region = { region = "England" country = -2 data = 1 value = 10 }
+				}
+			}
+		and = {
+			tag = GER
+			#MANUALFIX region = { region = "Germany" country = -2 data = 1 value = 19 }
+			}
+		and = {
+			tag = AUH
+			THIS = { surrender_progress = 19 }
+			}
+		and = {
+			tag = TUR
+			THIS = { surrender_progress = 20 }
+			}
+		and = {
+			tag = RUS
+			THIS = { surrender_progress = 20 }
+			}
+		and = {
+			tag = SOV
+			THIS = { surrender_progress = 20 }
+			}
+		and = {
+			tag = ITA
+			#MANUALFIX region = { region = "Italy" country = -2 data = 1 value = 21 }
+			}
+		}
+	war = yes
+	not = {
+		 has_country_flag = lost_20
+		 }
+	not = {
+		 THIS = { surrender_progress = 35 }
+		 }
+	not = {
+		 dissent = 40 
+		 }
+	
+
+date = 1914.12.25
+
+not = { date = 1925.12.30
+ }
+or = {
+tag = FRA
+tag = ENG
+tag = GER
+tag = AUH
+tag = TUR
+tag = RUS
+tag = SOV
+tag = ITA
+}
+
+
+not = { has_global_flag = SLEEPEVENT_2000503 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  30 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2000503_Option7"
+	dissent = 1 
+	random_country = { limit = { tag = THIS 
+			 tag = RUS
+			  } 
+		dissent = 1 
+		 }
+	set_country_flag = lost_20 
+	
+set_global_flag = 2000503_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 134
+title = "DH_EVENT_2000504_TITLE"
+desc = "DH_EVENT_2000504_DESC"
+picture = "news_paper"
+
+trigger = {
+	or = {
+		and = {
+			tag = FRA
+			#MANUALFIX region = { region = "France" country = -2 data = 1 value = 31 }
+			}
+		and = {
+			tag = ENG
+			or = {
+				#MANUALFIX region = { region = "Scotland" country = -2 data = 1 value = 15 }
+				#MANUALFIX region = { region = "England" country = -2 data = 1 value = 15 }
+				}
+			}
+		and = {
+			tag = GER
+			#MANUALFIX region = { region = "Germany" country = -2 data = 1 value = 29 }
+			}
+		and = {
+			tag = AUH
+			THIS = { surrender_progress = 29 }
+			}
+		and = {
+			tag = TUR
+			THIS = { surrender_progress = 30 }
+			}
+		and = {
+			tag = RUS
+			THIS = { surrender_progress = 30 }
+			}
+		and = {
+			tag = SOV
+			THIS = { surrender_progress = 30 }
+			}
+		and = {
+			tag = ITA
+			#MANUALFIX region = { region = "Italy" country = -2 data = 1 value = 31 }
+			}
+		}
+	war = yes
+	not = {
+		 has_country_flag = lost_30
+		 }
+	not = {
+		 THIS = { surrender_progress = 45 }
+		 }
+	not = {
+		 dissent = 40 
+		 }
+	
+
+date = 1914.12.25
+
+not = { date = 1925.12.30
+ }
+or = {
+tag = FRA
+tag = ENG
+tag = GER
+tag = AUH
+tag = TUR
+tag = RUS
+tag = SOV
+tag = ITA
+}
+
+
+not = { has_global_flag = SLEEPEVENT_2000504 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  30 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2000504_Option7"
+	dissent = 2 
+	random_country = { limit = { tag = THIS 
+			 tag = RUS
+			  } 
+		dissent = 1 
+		 }
+	set_country_flag = lost_30 
+	set_country_flag = lost_20 
+	
+set_global_flag = 2000504_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 135
+title = "DH_EVENT_2000505_TITLE"
+desc = "DH_EVENT_2000505_DESC"
+picture = "news_paper"
+
+trigger = {
+	or = {
+		and = {
+			tag = FRA
+			#MANUALFIX region = { region = "France" country = -2 data = 1 value = 41 }
+			}
+		and = {
+			tag = ENG
+			or = {
+				#MANUALFIX region = { region = "Scotland" country = -2 data = 1 value = 20 }
+				#MANUALFIX region = { region = "England" country = -2 data = 1 value = 20 }
+				}
+			}
+		and = {
+			tag = GER
+			#MANUALFIX region = { region = "Germany" country = -2 data = 1 value = 39 }
+			}
+		and = {
+			tag = AUH
+			THIS = { surrender_progress = 39 }
+			}
+		and = {
+			tag = TUR
+			THIS = { surrender_progress = 40 }
+			}
+		and = {
+			tag = RUS
+			THIS = { surrender_progress = 40 }
+			}
+		and = {
+			tag = SOV
+			THIS = { surrender_progress = 40 }
+			}
+		and = {
+			tag = ITA
+			#MANUALFIX region = { region = "Italy" country = -2 data = 1 value = 41 }
+			}
+		and = {
+			tag = SER
+			THIS = { surrender_progress = 40 }
+			}
+		and = {
+			tag = BUL
+			THIS = { surrender_progress = 40 }
+			}
+		and = {
+			tag = ROM
+			THIS = { surrender_progress = 40 }
+			}
+		and = {
+			tag = GRE
+			THIS = { surrender_progress = 40 }
+			}
+		}
+	war = yes
+	not = {
+		 has_country_flag = lost_40
+		 }
+	not = {
+		 dissent = 40 
+		 }
+	
+
+date = 1914.12.25
+
+not = { date = 1925.12.30
+ }
+or = {
+tag = FRA
+tag = ENG
+tag = GER
+tag = AUH
+tag = TUR
+tag = RUS
+tag = SOV
+tag = ITA
+tag = SER
+tag = BUL
+tag = ROM
+tag = GRE
+}
+
+
+not = { has_global_flag = SLEEPEVENT_2000505 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  30 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2000505_Option7"
+	dissent = 2 
+	random_country = { limit = { tag = THIS 
+			 tag = RUS
+			  } 
+		dissent = 1 
+		 }
+	random_country = { limit = { tag = THIS 
+			 tag = ENG
+			  } 
+		dissent = 1 
+		 }
+	set_country_flag = lost_40 
+	set_country_flag = lost_30 
+	set_country_flag = lost_20 
+	
+set_global_flag = 2000505_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 136
+title = "DH_EVENT_2000506_TITLE"
+desc = "DH_EVENT_2000506_DESC"
+picture = "news_paper"
+
+trigger = {
+	or = {
+		and = {
+			tag = FRA
+			#MANUALFIX region = { region = "France" country = -2 data = 1 value = 51 }
+			}
+		and = {
+			tag = ENG
+			or = {
+				#MANUALFIX region = { region = "Scotland" country = -2 data = 1 value = 25 }
+				#MANUALFIX region = { region = "England" country = -2 data = 1 value = 25 }
+				}
+			}
+		and = {
+			tag = GER
+			#MANUALFIX region = { region = "Germany" country = -2 data = 1 value = 49 }
+			}
+		and = {
+			tag = AUH
+			THIS = { surrender_progress = 49 }
+			}
+		and = {
+			tag = TUR
+			THIS = { surrender_progress = 50 }
+			}
+		and = {
+			tag = RUS
+			THIS = { surrender_progress = 50 }
+			}
+		and = {
+			tag = SOV
+			THIS = { surrender_progress = 50 }
+			}
+		and = {
+			tag = ITA
+			#MANUALFIX region = { region = "Italy" country = -2 data = 1 value = 51 }
+			}
+		}
+	war = yes
+	not = {
+		 has_country_flag = lost_50
+		 }
+	not = {
+		 dissent = 40 
+		 }
+	
+
+date = 1914.12.25
+
+not = { date = 1925.12.30
+ }
+or = {
+tag = FRA
+tag = ENG
+tag = GER
+tag = AUH
+tag = TUR
+tag = RUS
+tag = SOV
+tag = ITA
+}
+
+
+not = { has_global_flag = SLEEPEVENT_2000506 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  30 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2000506_Option7"
+	dissent = 2 
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 dissent = 20 
+				 }  } 
+		dissent = 10 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 dissent = 30 
+				 }  } 
+		dissent = 10 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 dissent = 35 
+				 }  } 
+		dissent = 5 
+		 }
+	set_country_flag = lost_50 
+	set_country_flag = lost_40 
+	set_country_flag = lost_30 
+	set_country_flag = lost_20 
+	
+set_global_flag = 2000506_EVENT_DONE
+
+}
+
+}
+

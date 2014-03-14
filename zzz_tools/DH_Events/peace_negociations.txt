@@ -1,0 +1,3687 @@
+country_event = {
+id = 273
+title = "DH_EVENT_2191512_TITLE"
+desc = "DH_EVENT_2191512_DESC"
+picture = "news_paper"
+
+trigger = {
+	#NOEQUIVALENT random =  25
+	or = {
+		#country_event = 104
+		#country_event = 105
+		}
+	
+tag = GER
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191512 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  7 }
+
+is_triggered_only = no
+option = {
+	ai_chance = { factor = 90
+		 }
+	name = "DH_EVENT_2191512_Option1"
+	country_event = 274
+	dissent = -20 
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 GER = { alliance_with = ITA }
+				 }  } 
+		 }
+	
+set_global_flag = 2191512_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 7
+		 }
+	name = "DH_EVENT_2191512_Option2"
+	country_event = 275
+	dissent = -20 
+	
+set_global_flag = 2191512_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 3
+		 }
+	name = "DH_EVENT_2191512_Option3"
+	country_event = 276
+	dissent = -20 
+	
+set_global_flag = 2191512_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 274
+title = "DH_EVENT_2002530_TITLE"
+desc = "DH_EVENT_2002530_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = FRA
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2002530 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_2002530_Option1"
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 dissent = 20 
+				 }  } 
+		dissent = 10 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 dissent = 30 
+				 }  } 
+		dissent = 5 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 dissent = 40 
+				 }  } 
+		dissent = 5 
+		 }
+	random_country = { limit = { tag = THIS 
+			 dissent = 60 
+			  } 
+		dissent = -20 
+		 }
+	random_country = { limit = { tag = THIS 
+			 dissent = 55 
+			  } 
+		dissent = -10 
+		 }
+	random_country = { limit = { tag = THIS 
+			 dissent = 50 
+			  } 
+		dissent = -5 
+		 }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "Slave Coast" }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "Ivory Coast" }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "Guinean Coast" }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "Cameroonian Jungle" }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "Central Africa Plains" }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "Madagascar" }
+	# MANUALFIX secede region command = { type = secederegion which = U08 value = "Morocco" }
+	ZZZ = { create_vassal = THIS } THIS = { inherit = ZZZ }
+	FRA = { money = -2000 }
+	GER = { money = 2000 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 #country_event = 454
+				 GER = { alliance_with = ITA }
+				 }  } 
+		# MANUALFIX secede region command = {  type = secederegion which = ITA value = "Tunisia" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 #country_event = 454
+				 GER = { alliance_with = ITA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 GER = { alliance_with = ITA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 #country_event = 454
+				 GER = { alliance_with = ITA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 #country_event = 454
+				 GER = { alliance_with = ITA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 #country_event = 454
+				 GER = { alliance_with = ITA }
+				 }  } 
+		 }
+	# MANUALFIX Demobilize command = { type = demobilize which = land when = 0 where = 0 value = 24 }
+	# MANUALFIX strength command = { type = strength which = land when = 0 where = 0 value = 0.33 }
+	# MANUALFIX Demobilize command = { type = demobilize which = battleship when = 0 where = 0 value = 6 }
+	# MANUALFIX Demobilize command = { type = demobilize which = battlecruiser when = 0 where = 0 value = 6 }
+	# MANUALFIX Demobilize command = { type = demobilize which = heavy_cruiser when = 0 where = 0 value = 10 }
+	
+set_global_flag = 2002530_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 275
+title = "DH_EVENT_2002531_TITLE"
+desc = "DH_EVENT_2002531_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = FRA
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2002531 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_2002531_Option1"
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 dissent = 10 
+				 }  } 
+		dissent = 5 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 dissent = 20 
+				 }  } 
+		dissent = 3 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 dissent = 35 
+				 }  } 
+		dissent = 3 
+		 }
+	random_country = { limit = { tag = THIS 
+			 dissent = 60 
+			  } 
+		dissent = -25 
+		 }
+	random_country = { limit = { tag = THIS 
+			 dissent = 55 
+			  } 
+		dissent = -15 
+		 }
+	random_country = { limit = { tag = THIS 
+			 dissent = 50 
+			  } 
+		dissent = -10 
+		 }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "Slave Coast" }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "Ivory Coast" }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "Guinean Coast" }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "Cameroonian Jungle" }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "Central Africa Plains" }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "Madagascar" }
+	FRA = { money = -1200 }
+	GER = { money = 1200 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 #country_event = 454
+				 GER = { alliance_with = ITA }
+				 }  } 
+		# MANUALFIX secede region command = {  type = secederegion which = ITA value = "Tunisia" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 #country_event = 454
+				 GER = { alliance_with = ITA }
+				 }  } 
+		 }
+	# MANUALFIX Demobilize command = { type = demobilize which = land when = 0 where = 0 value = 36 }
+	# MANUALFIX strength command = { type = strength which = land when = 0 where = 0 value = 0.33 }
+	# MANUALFIX Demobilize command = { type = demobilize which = battleship when = 0 where = 0 value = 8 }
+	# MANUALFIX Demobilize command = { type = demobilize which = battlecruiser when = 0 where = 0 value = 8 }
+	# MANUALFIX Demobilize command = { type = demobilize which = heavy_cruiser when = 0 where = 0 value = 12 }
+	
+set_global_flag = 2002531_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 276
+title = "DH_EVENT_2002532_TITLE"
+desc = "DH_EVENT_2002532_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = FRA
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2002532 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_2002532_Option1"
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 dissent = 10 
+				 }  } 
+		dissent = 3 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 dissent = 20 
+				 }  } 
+		dissent = 2 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 dissent = 25 
+				 }  } 
+		dissent = 2 
+		 }
+	random_country = { limit = { tag = THIS 
+			 dissent = 60 
+			  } 
+		dissent = -35 
+		 }
+	random_country = { limit = { tag = THIS 
+			 dissent = 50 
+			  } 
+		dissent = -20 
+		 }
+	random_country = { limit = { tag = THIS 
+			 dissent = 40 
+			  } 
+		dissent = -10 
+		 }
+	FRA = { money = -500 }
+	GER = { money = 500 }
+	# MANUALFIX Demobilize command = { type = demobilize which = land when = 0 where = 0 value = 48 }
+	# MANUALFIX strength command = { type = strength which = land when = 0 where = 0 value = 0.33 }
+	# MANUALFIX Demobilize command = { type = demobilize which = battleship when = 0 where = 0 value = 12 }
+	# MANUALFIX Demobilize command = { type = demobilize which = battlecruiser when = 0 where = 0 value = 12 }
+	# MANUALFIX Demobilize command = { type = demobilize which = heavy_cruiser when = 0 where = 0 value = 20 }
+	
+set_global_flag = 2002532_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 277
+title = "DH_EVENT_2191513_TITLE"
+desc = "DH_EVENT_2191513_DESC"
+picture = "news_paper"
+
+trigger = {
+	#country_event = 416
+	not = {
+		 #country_event = 431
+		 }
+	not = {
+		 #country_event = 277
+		 }
+	or = {
+		faction = allies
+		#country_event = 2001500 #MANUALFIX unknown event trigger
+		}
+	or = {
+		not = {
+			 BEL = { war_with = GER }
+			 }
+		#MANUALFIX area = { area = Wallonia country = -1 data = 1 value = 100 }
+		#MANUALFIX area = { area = Flanders country = -1 data = 1 value = 100 }
+		}
+	
+tag = GER
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191513 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	ai_chance = { factor = 95
+		 }
+	name = "DH_EVENT_2191513_Option1"
+	release_vassal = BEL
+	country_event = 278
+	
+set_global_flag = 2191513_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 5
+		 }
+	name = "DH_EVENT_2191513_Option2"
+	release_vassal = BEL
+	country_event = 279
+	
+set_global_flag = 2191513_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 278
+title = "DH_EVENT_2015500_TITLE"
+desc = "DH_EVENT_2015500_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = BEL
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2015500 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_2015500_Option1"
+	dissent = 5 
+	BEL = { money = -200 }
+	GER = { money = 200 }
+	# MANUALFIX secede region command = { type = secederegion which = U08 value = "Central Africa" }
+	# MANUALFIX Demobilize command = { type = demobilize which = land when = 0 where = 0 value = 5 }
+	# MANUALFIX strength command = { type = strength which = land when = 0 where = 0 value = 0.33 }
+	
+set_global_flag = 2015500_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 279
+title = "DH_EVENT_2015501_TITLE"
+desc = "DH_EVENT_2015501_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = BEL
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2015501 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_2015501_Option1"
+	dissent = 3 
+	BEL = { money = -100 }
+	GER = { money = 100 }
+	# MANUALFIX secede region command = { type = secederegion which = U08 value = "Central Africa" }
+	# MANUALFIX Demobilize command = { type = demobilize which = land when = 0 where = 0 value = 5 }
+	# MANUALFIX strength command = { type = strength which = land when = 0 where = 0 value = 0.33 }
+	
+set_global_flag = 2015501_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 280
+title = "DH_EVENT_2191550_TITLE"
+desc = "DH_EVENT_2191550_DESC"
+picture = "news_paper"
+
+trigger = {
+	#country_event = 416
+	not = {
+		 #country_event = 431
+		 }
+	not = {
+		 #country_event = 277
+		 }
+	faction = allies
+	or = {
+		not = {
+			 HOL = { war_with = GER }
+			 }
+		#MANUALFIX area = { area = Netherlands country = -1 data = 1 value = 100 }
+		}
+	
+tag = GER
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191550 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	ai_chance = { factor = 95
+		 }
+	name = "DH_EVENT_2191550_Option1"
+	release_vassal = HOL
+	country_event = 281
+	
+set_global_flag = 2191550_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 5
+		 }
+	name = "DH_EVENT_2191550_Option2"
+	release_vassal = HOL
+	THIS = { inherit = U05 }
+	country_event = 282
+	
+set_global_flag = 2191550_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 281
+title = "DH_EVENT_2015502_TITLE"
+desc = "DH_EVENT_2015502_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = HOL
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2015502 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_2015502_Option1"
+	dissent = 5 
+	HOL = { money = -100 }
+	GER = { money = 100 }
+	# MANUALFIX Demobilize command = { type = demobilize which = land when = 0 where = 0 value = 10 }
+	# MANUALFIX strength command = { type = strength which = land when = 0 where = 0 value = 0.33 }
+	
+set_global_flag = 2015502_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 282
+title = "DH_EVENT_2015503_TITLE"
+desc = "DH_EVENT_2015503_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = HOL
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2015503 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_2015503_Option1"
+	dissent = 3 
+	HOL = { money = -200 }
+	GER = { money = 200 }
+	# MANUALFIX secede region command = { type = secederegion which = U08 value = "Indonesia" }
+	# MANUALFIX Demobilize command = { type = demobilize which = land when = 0 where = 0 value = 10 }
+	# MANUALFIX strength command = { type = strength which = land when = 0 where = 0 value = 0.33 }
+	
+set_global_flag = 2015503_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 283
+title = "DH_EVENT_2002534_TITLE"
+desc = "DH_EVENT_2002534_DESC"
+picture = "news_paper"
+
+trigger = {
+	#NOEQUIVALENT random =  25
+	or = {
+		#country_event = 277
+		#country_event = 422
+		#country_event = 431
+		}
+	
+tag = FRA
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2002534 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  7 }
+
+is_triggered_only = no
+option = {
+	ai_chance = { factor = 90
+		 }
+	name = "DH_EVENT_2002534_Option1"
+	country_event = 284
+	dissent = -20 
+	
+set_global_flag = 2002534_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 7
+		 }
+	name = "DH_EVENT_2002534_Option2"
+	country_event = 285
+	dissent = -20 
+	
+set_global_flag = 2002534_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 3
+		 }
+	name = "DH_EVENT_2002534_Option3"
+	country_event = 286
+	dissent = -20 
+	
+set_global_flag = 2002534_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 284
+title = "DH_EVENT_2191521_TITLE"
+desc = "DH_EVENT_2191521_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = GER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191521 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_2191521_Option1"
+	dissent = 5 
+	THIS = { military_access = FRA }
+	random_country = { limit = { tag = THIS 
+			 FRA = { alliance_with = ITA }
+			  } 
+		THIS = { military_access = ITA }
+		 }
+	random_country = { limit = { tag = THIS 
+			 FRA = { alliance_with = ENG }
+			  } 
+		THIS = { military_access = ENG }
+		 }
+	random_country = { limit = { tag = THIS 
+			 BEL = { vassal_of = GER }
+			  } 
+		ZZZ = { create_vassal = THIS } THIS = { inherit = ZZZ }
+		 }
+	random_country = { limit = { tag = THIS 
+			 HOL = { vassal_of = GER }
+			  } 
+		ZZZ = { create_vassal = THIS } THIS = { inherit = ZZZ }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2001500 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2001500 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2001500 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = DEN
+				 } 1436 = { controlled_by = GER }
+			  } 
+		release = DEN
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = DEN
+			 not = {
+				 DEN = { war_with = FRA }
+				 } not = {
+				 DEN = { vassal_of = GER }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = U06
+				 } 1626 = { controlled_by = GER }
+			  } 
+		release = U06
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = LUX
+				 } 2429 = { controlled_by = GER }
+			  } 
+		release = LUX
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CZE
+			 2697 = { controlled_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = CZE
+				 } exists = AUH
+			 2697 = { controlled_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = CZE
+				 } exists = AUS
+			 2697 = { controlled_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = RUS
+			 not = {
+				 exists = POL
+				 RUS = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = RUS
+			 not = {
+				 exists = POL
+				 RUS = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = RUS
+			 not = {
+				 exists = POL
+				 RUS = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = RUS
+			 not = {
+				 exists = POL
+				 RUS = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = RUS
+			 not = {
+				 exists = POL
+				 RUS = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = RUS
+			 not = {
+				 exists = POL
+				 RUS = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = RUS
+			 not = {
+				 exists = POL
+				 RUS = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = RUS
+			 not = {
+				 exists = POL
+				 RUS = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = RUS
+			 not = {
+				 exists = LIT
+				 RUS = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = POL
+			 not = {
+				 exists = RUS
+				 POL = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede region command = {  type = secederegion which = POL value = "Poland" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = POL
+			 not = {
+				 exists = RUS
+				 POL = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = POL
+				 exists = RUS
+				 }  } 
+		set_global_flag = POL_indep_WWI 
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= POL_indep_WWI
+			  } 
+		release = POL
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= POL_indep_WWI
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = POL value = "Poland" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= POL_indep_WWI
+			  } 
+		country_event = 301
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= POL_indep_WWI
+			  } 
+		clr_global_flag = POL_indep_WWI 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = LIT
+				 exists = RUS
+				 }  } 
+		release = LIT
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = LIT
+			 not = {
+				 exists = RUS
+				 LIT = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = RUS
+			 not = {
+				 RUS = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede region command = { type = secederegion which = RUS value = "Finland" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = RUS
+			 not = {
+				 RUS = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede region command = { type = secederegion which = RUS value = "Baltic States" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = RUS
+			 not = {
+				 RUS = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede region command = { type = secederegion which = RUS value = "Belarus" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = RUS
+			 not = {
+				 RUS = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede region command = { type = secederegion which = RUS value = "Ukraine" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = LAT
+				 exists = RUS
+				 }  } 
+		release = LAT
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = EST
+				 exists = RUS
+				 }  } 
+		release = EST
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = ROM
+			 not = {
+				 exists = RUS
+				 ROM = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ROM value = "Bessarabia" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = SOV
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = SOV value = "Baltic States" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = SOV
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = SOV value = "Belarus" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = SOV
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = SOV value = "Ukraine" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2001500 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2001500 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 ENG = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 ENG = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 SAF = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede region command = { type = secederegion which = SAF value = "Southwest Africa" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 ENG = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede area command = { type = secedearea which = ENG value = "Tanganyika" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 BEL = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 BEL = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 ENG = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede area command = { type = secedearea which = ENG value = "Gold Coast" }
+		 }
+	# MANUALFIX secede area command = { type = secedearea which = FRA value = "Slave Coast" }
+	# MANUALFIX secede area command = { type = secedearea which = FRA value = "Cameroonian Jungle" }
+	# MANUALFIX secede area command = { type = secedearea which = FRA value = "Central Africa Plains" }
+	random_country = { limit = { tag = THIS 
+			 JAP = { alliance_with = FRA }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 CHI = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 not = {
+					 exists = CHI
+					 } CHI = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = AST
+			 not = {
+				 AST = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede region command = { type = secederegion which = AST value = "New Guinea" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = AST
+			 not = {
+				 AST = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede region command = { type = secederegion which = AST value = "Bismarck Archipelago" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = AST
+			 not = {
+				 AST = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede region command = { type = secederegion which = AST value = "North Solomon Islands" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = NZL
+			 not = {
+				 NZL = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 not = {
+					 exists = AST
+					 } AST = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede region command = { type = secederegion which = FRA value = "New Guinea" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 not = {
+					 exists = AST
+					 } AST = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede region command = { type = secederegion which = FRA value = "Bismarck Archipelago" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 not = {
+					 exists = AST
+					 } AST = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede region command = { type = secederegion which = FRA value = "North Solomon Islands" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 not = {
+					 exists = NZL
+					 } NZL = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 JAP = { alliance_with = FRA }
+			  } 
+		# MANUALFIX secede region command = { type = secederegion which = JAP value = "Asian Pacific" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 JAP = { alliance_with = FRA }
+				 } USA = { alliance_with = FRA }
+			  } 
+		# MANUALFIX secede region command = { type = secederegion which = USA value = "Asian Pacific" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 JAP = { alliance_with = FRA }
+				 USA = { alliance_with = FRA }
+				 } ENG = { alliance_with = FRA }
+			  } 
+		# MANUALFIX secede region command = { type = secederegion which = ENG value = "Asian Pacific" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 JAP = { alliance_with = FRA }
+				 USA = { alliance_with = FRA }
+				 ENG = { alliance_with = FRA }
+				 }  } 
+		# MANUALFIX secede region command = { type = secederegion which = FRA value = "Asian Pacific" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "Bechuanaland" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "North Rhodesia" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "South Rhodesia" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "Gold Coast" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "North Nigeria" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "South Nigeria" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "Kenya" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "Bougainville" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "Guadalcanal" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "Central Solomons" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = FRA value = "Slave Coast" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = FRA value = "Ivory Coast" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = FRA value = "Guinean Coast" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = FRA value = "Cameroonian Jungle" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = FRA value = "Central Africa Plains" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = FRA value = "Madagascar" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = FRA value = "Morocco" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = ITA value = "Libya" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	# MANUALFIX secede area command = { type = secedearea which = BEL value = Wallonia when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = BEL value = Flanders when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = BEL value = Shaba when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = BEL value = "Kongolese Jungle" when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = HOL value = Netherlands when = 1 }
+	# MANUALFIX secede region command = { type = secederegion which = HOL value = Indonesia when = 1 }
+	GER = { money = -2000 }
+	FRA = { money = 2000 }
+	# MANUALFIX Demobilize command = { type = demobilize which = land when = 0 where = 0 value = 24 }
+	# MANUALFIX strength command = { type = strength which = land when = 0 where = 0 value = 0.33 }
+	# MANUALFIX Demobilize command = { type = demobilize which = battleship when = 0 where = 0 value = 6 }
+	# MANUALFIX Demobilize command = { type = demobilize which = battlecruiser when = 0 where = 0 value = 6 }
+	# MANUALFIX Demobilize command = { type = demobilize which = heavy_cruiser when = 0 where = 0 value = 6 }
+	# MANUALFIX Demobilize command = { type = demobilize which = light_cruiser when = 0 where = 0 value = 6 }
+	# MANUALFIX Demobilize command = { type = demobilize which = destroyer when = 0 where = 0 value = 12 }
+	# MANUALFIX Demobilize command = { type = demobilize which = submarine when = 0 where = 0 value = 0 }
+	random_country = { limit = { tag = THIS 
+			 3579 = { owned_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 3580 = { owned_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 3578 = { owned_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 3918 = { owned_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 3710 = { owned_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 3917 = { owned_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 3988 = { owned_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 3987 = { owned_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 3776 = { owned_by = GER }
+			  } 
+		 }
+	
+set_global_flag = 2191521_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 285
+title = "DH_EVENT_2191522_TITLE"
+desc = "DH_EVENT_2191522_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = GER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191522 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_2191522_Option1"
+	dissent = 3 
+	THIS = { military_access = FRA }
+	random_country = { limit = { tag = THIS 
+			 FRA = { alliance_with = ITA }
+			  } 
+		THIS = { military_access = ITA }
+		 }
+	random_country = { limit = { tag = THIS 
+			 FRA = { alliance_with = ENG }
+			  } 
+		THIS = { military_access = ENG }
+		 }
+	random_country = { limit = { tag = THIS 
+			 BEL = { vassal_of = GER }
+			  } 
+		ZZZ = { create_vassal = THIS } THIS = { inherit = ZZZ }
+		 }
+	random_country = { limit = { tag = THIS 
+			 HOL = { vassal_of = GER }
+			  } 
+		ZZZ = { create_vassal = THIS } THIS = { inherit = ZZZ }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2001500 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = LUX
+				 } 2429 = { controlled_by = GER }
+			  } 
+		release = LUX
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = RUS
+			 not = {
+				 exists = POL
+				 RUS = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede region command = {  type = secederegion which = RUS value = "Poland" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = POL
+			 not = {
+				 exists = RUS
+				 POL = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede region command = {  type = secederegion which = POL value = "Poland" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = POL
+				 exists = RUS
+				 }  } 
+		set_global_flag = POL_indep_WWI 
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= POL_indep_WWI
+			  } 
+		release = POL
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= POL_indep_WWI
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = POL value = "Poland" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= POL_indep_WWI
+			  } 
+		country_event = 301
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = LIT
+				 exists = RUS
+				 }  } 
+		release = LIT
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = LIT
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = RUS
+			 not = {
+				 RUS = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede region command = { type = secederegion which = RUS value = "Finland" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = RUS
+			 not = {
+				 RUS = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede region command = { type = secederegion which = RUS value = "Baltic States" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = RUS
+			 not = {
+				 RUS = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede region command = { type = secederegion which = RUS value = "Belarus" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = RUS
+			 not = {
+				 RUS = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede region command = { type = secederegion which = RUS value = "Ukraine" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = LAT
+				 exists = RUS
+				 }  } 
+		release = LAT
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = EST
+				 exists = RUS
+				 }  } 
+		release = EST
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = ROM
+			 not = {
+				 exists = RUS
+				 ROM = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ROM value = "Bessarabia" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = SOV
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = SOV value = "Baltic States" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = SOV
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = SOV value = "Belarus" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = SOV
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = SOV value = "Ukraine" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2001500 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2001500 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 ENG = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 ENG = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 SAF = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede region command = { type = secederegion which = SAF value = "Southwest Africa" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 ENG = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede area command = { type = secedearea which = ENG value = "Tanganyika" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 BEL = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 BEL = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 ENG = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede area command = { type = secedearea which = ENG value = "Gold Coast" }
+		 }
+	# MANUALFIX secede area command = { type = secedearea which = FRA value = "Slave Coast" }
+	# MANUALFIX secede area command = { type = secedearea which = FRA value = "Cameroonian Jungle" }
+	# MANUALFIX secede area command = { type = secedearea which = FRA value = "Central Africa Plains" }
+	random_country = { limit = { tag = THIS 
+			 JAP = { alliance_with = FRA }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 CHI = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 not = {
+					 exists = CHI
+					 } CHI = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = AST
+			 not = {
+				 AST = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede region command = { type = secederegion which = AST value = "New Guinea" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = AST
+			 not = {
+				 AST = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede region command = { type = secederegion which = AST value = "Bismarck Archipelago" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = AST
+			 not = {
+				 AST = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede region command = { type = secederegion which = AST value = "North Solomon Islands" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = NZL
+			 not = {
+				 NZL = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 not = {
+					 exists = AST
+					 } AST = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede region command = { type = secederegion which = FRA value = "New Guinea" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 not = {
+					 exists = AST
+					 } AST = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede region command = { type = secederegion which = FRA value = "Bismarck Archipelago" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 not = {
+					 exists = AST
+					 } AST = { war_with = FRA }
+				 }  } 
+		# MANUALFIX secede region command = { type = secederegion which = FRA value = "North Solomon Islands" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 not = {
+					 exists = NZL
+					 } NZL = { war_with = FRA }
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 JAP = { alliance_with = FRA }
+			  } 
+		# MANUALFIX secede region command = { type = secederegion which = JAP value = "Asian Pacific" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "Bechuanaland" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "North Rhodesia" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "South Rhodesia" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "Gold Coast" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "North Nigeria" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "South Nigeria" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "Kenya" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "Bougainville" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "Guadalcanal" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "Central Solomons" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = FRA value = "Slave Coast" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = FRA value = "Ivory Coast" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = FRA value = "Guinean Coast" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = FRA value = "Cameroonian Jungle" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = FRA value = "Central Africa Plains" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = FRA value = "Madagascar" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = FRA value = "Morocco" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = ITA value = "Libya" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	# MANUALFIX secede area command = { type = secedearea which = BEL value = Wallonia when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = BEL value = Flanders when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = BEL value = Shaba when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = BEL value = "Kongolese Jungle" when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = HOL value = Netherlands when = 1 }
+	# MANUALFIX secede region command = { type = secederegion which = HOL value = Indonesia when = 1 }
+	GER = { money = -1200 }
+	FRA = { money = 1200 }
+	# MANUALFIX Demobilize command = { type = demobilize which = land when = 0 where = 0 value = 36 }
+	# MANUALFIX strength command = { type = strength which = land when = 0 where = 0 value = 0.33 }
+	# MANUALFIX Demobilize command = { type = demobilize which = battleship when = 0 where = 0 value = 9 }
+	# MANUALFIX Demobilize command = { type = demobilize which = battlecruiser when = 0 where = 0 value = 9 }
+	# MANUALFIX Demobilize command = { type = demobilize which = heavy_cruiser when = 0 where = 0 value = 9 }
+	# MANUALFIX Demobilize command = { type = demobilize which = light_cruiser when = 0 where = 0 value = 9 }
+	# MANUALFIX Demobilize command = { type = demobilize which = destroyer when = 0 where = 0 value = 18 }
+	# MANUALFIX Demobilize command = { type = demobilize which = submarine when = 0 where = 0 value = 3 }
+	random_country = { limit = { tag = THIS 
+			 3579 = { owned_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 3580 = { owned_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 3578 = { owned_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 3918 = { owned_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 3710 = { owned_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 3917 = { owned_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 3988 = { owned_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 3987 = { owned_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 3776 = { owned_by = GER }
+			  } 
+		 }
+	
+set_global_flag = 2191522_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 286
+title = "DH_EVENT_2191523_TITLE"
+desc = "DH_EVENT_2191523_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = GER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191523 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_2191523_Option1"
+	dissent = 1 
+	THIS = { military_access = FRA }
+	random_country = { limit = { tag = THIS 
+			 FRA = { alliance_with = ITA }
+			  } 
+		THIS = { military_access = ITA }
+		 }
+	random_country = { limit = { tag = THIS 
+			 FRA = { alliance_with = ENG }
+			  } 
+		THIS = { military_access = ENG }
+		 }
+	random_country = { limit = { tag = THIS 
+			 BEL = { vassal_of = GER }
+			  } 
+		ZZZ = { create_vassal = THIS } THIS = { inherit = ZZZ }
+		 }
+	random_country = { limit = { tag = THIS 
+			 HOL = { vassal_of = GER }
+			  } 
+		ZZZ = { create_vassal = THIS } THIS = { inherit = ZZZ }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2001500 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = LUX
+				 } 2429 = { controlled_by = GER }
+			  } 
+		release = LUX
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "Bechuanaland" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "North Rhodesia" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "South Rhodesia" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "Gold Coast" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "North Nigeria" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "South Nigeria" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "Kenya" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "Bougainville" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "Guadalcanal" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 280
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "Central Solomons" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = FRA value = "Slave Coast" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = FRA value = "Ivory Coast" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = FRA value = "Guinean Coast" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = FRA value = "Cameroonian Jungle" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = FRA value = "Central Africa Plains" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = FRA value = "Madagascar" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = FRA value = "Morocco" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 416
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = ITA value = "Libya" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2191547 #MANUALFIX unknown event trigger
+			  } 
+		 }
+	# MANUALFIX secede area command = { type = secedearea which = BEL value = Wallonia when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = BEL value = Flanders when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = BEL value = Shaba when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = BEL value = "Kongolese Jungle" when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = HOL value = Netherlands when = 1 }
+	# MANUALFIX secede region command = { type = secederegion which = HOL value = Indonesia when = 1 }
+	GER = { money = -500 }
+	FRA = { money = 500 }
+	# MANUALFIX Demobilize command = { type = demobilize which = land when = 0 where = 0 value = 48 }
+	# MANUALFIX strength command = { type = strength which = land when = 0 where = 0 value = 0.33 }
+	# MANUALFIX Demobilize command = { type = demobilize which = battleship when = 0 where = 0 value = 12 }
+	# MANUALFIX Demobilize command = { type = demobilize which = battlecruiser when = 0 where = 0 value = 12 }
+	# MANUALFIX Demobilize command = { type = demobilize which = heavy_cruiser when = 0 where = 0 value = 12 }
+	# MANUALFIX Demobilize command = { type = demobilize which = light_cruiser when = 0 where = 0 value = 12 }
+	# MANUALFIX Demobilize command = { type = demobilize which = destroyer when = 0 where = 0 value = 24 }
+	# MANUALFIX Demobilize command = { type = demobilize which = submarine when = 0 where = 0 value = 6 }
+	random_country = { limit = { tag = THIS 
+			 3579 = { owned_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 3580 = { owned_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 3578 = { owned_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 3918 = { owned_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 3710 = { owned_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 3917 = { owned_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 3988 = { owned_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 3987 = { owned_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 3776 = { owned_by = GER }
+			  } 
+		 }
+	
+set_global_flag = 2191523_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 287
+title = "DH_EVENT_2024501_TITLE"
+desc = "DH_EVENT_2024501_DESC"
+picture = "news_paper"
+
+trigger = {
+	or = {
+		#country_event = 463
+		#country_event = 2192505 #MANUALFIX unknown event trigger
+		}
+	exists = CZE
+	exists = HUN
+	exists = ROM
+	exists = SER
+	#NOEQUIVALENT random =  25
+	
+tag = AUS
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2024501 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  7 }
+
+is_triggered_only = no
+option = {
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_2024501_Option1"
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	random_country = { limit = { tag = THIS 
+			 AUS = { war_with = FRA }
+			  } 
+		THIS = { end_war = FRA }
+		 }
+	random_country = { limit = { tag = THIS 
+			 AUS = { war_with = RUS }
+			  } 
+		THIS = { end_war = RUS }
+		 }
+	random_country = { limit = { tag = THIS 
+			 AUS = { war_with = SOV }
+			  } 
+		THIS = { end_war = SOV }
+		 }
+	random_country = { limit = { tag = THIS 
+			 AUS = { war_with = SER }
+			  } 
+		THIS = { end_war = SER }
+		 }
+	dissent = 1 
+	THIS = { military_access = FRA }
+	random_country = { limit = { tag = THIS 
+			 FRA = { alliance_with = ITA }
+			  } 
+		THIS = { military_access = ITA }
+		 }
+	random_country = { limit = { tag = THIS 
+			 FRA = { alliance_with = ENG }
+			  } 
+		THIS = { military_access = ENG }
+		 }
+	# add_country_modifier = { name = "democratic8" duration = 360 }#command = { type = set_domestic which = democratic value = 8 }
+	# add_country_modifier = { name = "rulingpartysupport" duration = 360 }#command = { type = set_domestic which = political_left value = 7 }
+	head_of_state = 115130
+	head_of_government = 115123
+	foreign_minister = 115114
+	armament_minister = 115132
+	minister_of_security = 115119
+	AUH = { money = -100 }
+	FRA = { money = 100 }
+	random_country = { limit = { tag = THIS 
+			 ENG = { alliance_with = FRA }
+			  } 
+		AUH = { money = -100 }
+		ENG = { money = 100 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 ITA = { alliance_with = FRA }
+			  } 
+		AUH = { money = -100 }
+		ITA = { money = 100 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 USA = { alliance_with = FRA }
+			  } 
+		AUH = { money = -100 }
+		USA = { money = 100 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CZE
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = CZE value = "Czechoslovakia" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = RUS
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = RUS value = "Poland" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = POL
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = POL value = "Poland" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = ITA
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = ITA value = "Italy" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = SER
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = SER value = "East Serbia" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = SER
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = SER value = "Central Serbia" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = SER
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = SER value = "Croatia" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = SER
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = SER value = "Bosnia" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = ALB
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ALB value = "Albania" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = GRE
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = GRE value = "Thrace" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = GRE
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = GRE value = "Attica" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = GRE
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = GRE value = "Greek Island" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = RUS
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = RUS value = "Odessa" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = RUS
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			not = {
+				 exists = RUS
+				 } exists = SOV
+			not = {
+				 #country_event = 277
+				 #country_event = 422
+				 #country_event = 431
+				 }
+			2223 = { owned_by = GER }
+			2223 = { controlled_by = GER }
+			 } 
+		# MANUALFIX secede area command = {  type = secedearea which = U08 value = "Odessa" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			not = {
+				 exists = RUS
+				 } exists = SOV
+			not = {
+				 #country_event = 277
+				 #country_event = 422
+				 #country_event = 431
+				 }
+			2223 = { owned_by = GER }
+			2223 = { controlled_by = GER }
+			 } 
+		 }
+	random_country = { limit = { tag = THIS 
+			not = {
+				 exists = RUS
+				 } exists = SOV
+			or = {
+				#country_event = 277
+				 #country_event = 422
+				 #country_event = 431
+				not = {
+					 2223 = { controlled_by = GER }
+					 }
+				}
+			 } 
+		# MANUALFIX secede area command = {  type = secedearea which = SOV value = "Odessa" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = RUS
+				 } exists = SOV
+			  } 
+		 }
+	# MANUALFIX strength command = { type = strength which = naval when = 0 where = 0 org = 0 value = 0 }
+	# MANUALFIX strength command = { type = strength which = land when = 0 where = 0 org = 0 value = 0 }
+	
+set_global_flag = 2024501_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 288
+title = "DH_EVENT_2022501_TITLE"
+desc = "DH_EVENT_2022501_DESC"
+picture = "news_paper"
+
+trigger = {
+	or = {
+		#country_event = 463
+		#country_event = 2192505 #MANUALFIX unknown event trigger
+		}
+	#NOEQUIVALENT random =  25
+	
+tag = HUN
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2022501 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  7 }
+
+is_triggered_only = no
+option = {
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_2022501_Option1"
+	dissent = 5 
+	THIS = { military_access = FRA }
+	random_country = { limit = { tag = THIS 
+			 FRA = { alliance_with = ITA }
+			  } 
+		THIS = { military_access = ITA }
+		 }
+	random_country = { limit = { tag = THIS 
+			 FRA = { alliance_with = ENG }
+			  } 
+		THIS = { military_access = ENG }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = ROM
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = ROM value = "Romania" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = ROM
+				 }  } 
+		release = ROM
+		 }
+	HUN = { money = -100 }
+	FRA = { money = 100 }
+	random_country = { limit = { tag = THIS 
+			 ENG = { alliance_with = FRA }
+			  } 
+		HUN = { money = -100 }
+		ENG = { money = 100 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 ITA = { alliance_with = FRA }
+			  } 
+		HUN = { money = -100 }
+		ITA = { money = 100 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 USA = { alliance_with = FRA }
+			  } 
+		HUN = { money = -100 }
+		USA = { money = 100 }
+		 }
+	# MANUALFIX strength command = { type = strength which = land when = 0 where = 0 org = 0 value = 0 }
+	
+set_global_flag = 2022501_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 289
+title = "DH_EVENT_2007529_TITLE"
+desc = "DH_EVENT_2007529_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = SOV
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2007529 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2007529_Option7"
+	dissent = 1 
+	random_country = { limit = { tag = THIS 
+			 948 = { controlled_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 989 = { controlled_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = FIN
+				 }  } 
+		release = FIN
+		 }
+	# MANUALFIX secede region command = { type = secederegion which = FIN value = "Finland" when = 2 }
+	# MANUALFIX secede region command = { type = secederegion which = U08 value = "Poland" }
+	# MANUALFIX secede region command = { type = secederegion which = U08 value = "Baltic States" }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = AUH }
+			 not = {
+				 #country_event = 463
+				 }  } 
+		# MANUALFIX secede region command = {  type = secederegion which = U09 value = "Romania" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 #country_event = 463
+				 not = {
+					 GER = { alliance_with = AUH }
+					 } }  } 
+		# MANUALFIX secede region command = {  type = secederegion which = U08 value = "Romania" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 #country_event = 463
+				 not = {
+					 GER = { alliance_with = AUH }
+					 } }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 #country_event = 463
+				 not = {
+					 GER = { alliance_with = AUH }
+					 } }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = TUR }
+			 not = {
+				 or = { 
+					 #country_event = 2145510 #MANUALFIX unknown event trigger
+					 #country_event = 2145501 #MANUALFIX unknown event trigger
+					 } }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #country_event = 463
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #country_event = 463
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #country_event = 463
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #country_event = 463
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #country_event = 463
+				 }  } 
+		 }
+	country_event = 402
+	
+set_global_flag = 2007529_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 290
+title = "DH_EVENT_2007530_TITLE"
+desc = "DH_EVENT_2007530_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = SOV
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2007530 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2007530_Option7"
+	dissent = 5 
+	random_country = { limit = { tag = THIS 
+			 948 = { controlled_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 989 = { controlled_by = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = FIN
+				 }  } 
+		release = FIN
+		 }
+	# MANUALFIX secede region command = { type = secederegion which = FIN value = "Finland" when = 2 }
+	# MANUALFIX secede region command = { type = secederegion which = U08 value = "Poland" when = 1 }
+	# MANUALFIX secede region command = { type = secederegion which = U08 value = "Baltic States" when = 2 }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "Mozyr" when = 1 }
+	# MANUALFIX secede region command = { type = secederegion which = U08 value = "Ukraine" when = 2 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = AUH }
+			 not = {
+				 #country_event = 463
+				 }  } 
+		# MANUALFIX secede area command = {  type = secedearea which = U09 value = "Odessa" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = AUH }
+			 not = {
+				 #country_event = 463
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = AUH }
+			 not = {
+				 #country_event = 463
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			GER = { alliance_with = AUH }
+			not = {
+				 #country_event = 463
+				 }
+			not = {
+				 #country_event = 311
+				 }
+			 } 
+		# MANUALFIX secede area command = { type = secedearea which = U09 value = "Bessarabia" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			GER = { alliance_with = AUH }
+			not = {
+				 #country_event = 463
+				 }
+			#country_event = 311
+			 } 
+		 }
+	random_country = { limit = { tag = THIS 
+			GER = { alliance_with = AUH }
+			not = {
+				 #country_event = 463
+				 }
+			#country_event = 311
+			 } 
+		 }
+	random_country = { limit = { tag = THIS 
+			GER = { alliance_with = AUH }
+			not = {
+				 #country_event = 463
+				 }
+			#country_event = 311
+			 } 
+		 }
+	random_country = { limit = { tag = THIS 
+			GER = { alliance_with = AUH }
+			not = {
+				 #country_event = 463
+				 }
+			#country_event = 311
+			 } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 #country_event = 463
+				 not = {
+					 GER = { alliance_with = AUH }
+					 } }  } 
+		# MANUALFIX secede region command = {  type = secederegion which = U08 value = "Romania" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 #country_event = 463
+				 not = {
+					 GER = { alliance_with = AUH }
+					 } }  } 
+		# MANUALFIX secede area command = {  type = secedearea which = U08 value = "Odessa" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 #country_event = 463
+				 not = {
+					 GER = { alliance_with = AUH }
+					 } }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 #country_event = 463
+				 not = {
+					 GER = { alliance_with = AUH }
+					 } }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = TUR }
+			 not = {
+				 or = { 
+					 #country_event = 2145510 #MANUALFIX unknown event trigger
+					 #country_event = 2145501 #MANUALFIX unknown event trigger
+					 } }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = TUR }
+			 not = {
+				 or = { 
+					 #country_event = 2145510 #MANUALFIX unknown event trigger
+					 #country_event = 2145501 #MANUALFIX unknown event trigger
+					 } }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = TUR }
+			 not = {
+				 or = { 
+					 #country_event = 2145510 #MANUALFIX unknown event trigger
+					 #country_event = 2145501 #MANUALFIX unknown event trigger
+					 } }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = GEO
+				 } GER = { alliance_with = TUR }
+			 not = {
+				 or = { 
+					 #country_event = 2145510 #MANUALFIX unknown event trigger
+					 #country_event = 2145501 #MANUALFIX unknown event trigger
+					 } }  } 
+		release = GEO
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = AZB
+				 } GER = { alliance_with = TUR }
+			 not = {
+				 or = { 
+					 #country_event = 2145510 #MANUALFIX unknown event trigger
+					 #country_event = 2145501 #MANUALFIX unknown event trigger
+					 } }  } 
+		release = AZB
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = AUH }
+			 not = {
+				 #country_event = 463
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = AUH }
+			 not = {
+				 #country_event = 463
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = AUH }
+			 not = {
+				 #country_event = 463
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = AUH }
+			 not = {
+				 #country_event = 463
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = AUH }
+			 not = {
+				 #country_event = 463
+				 }  } 
+		 }
+	country_event = 402
+	
+set_global_flag = 2007530_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 291
+title = "DH_EVENT_2002553_TITLE"
+desc = "DH_EVENT_2002553_DESC"
+picture = "news_paper"
+
+trigger = {
+	#NOEQUIVALENT random =  25
+	#country_event = 294
+	or = {
+		#country_event = 454
+		has_global_flag= ITA_against_FRA
+		}
+	not = {
+		 #country_event = 292
+		 }
+	
+tag = FRA
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2002553 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  7 }
+
+is_triggered_only = no
+option = {
+	ai_chance = { factor = 90
+		 }
+	name = "DH_EVENT_2002553_Option1"
+	country_event = 292
+	dissent = -8 
+	clr_global_flag = ITA_against_FRA 
+	
+set_global_flag = 2002553_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 292
+title = "DH_EVENT_2006513_TITLE"
+desc = "DH_EVENT_2006513_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = ITA
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2006513 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2006513_Option7"
+	dissent = 3 
+	THIS = { military_access = FRA }
+	random_country = { limit = { tag = THIS 
+			 FRA = { alliance_with = ENG }
+			  } 
+		THIS = { military_access = ENG }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2001500 #MANUALFIX unknown event trigger
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = ENG value = "Ethiopia" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2001500 #MANUALFIX unknown event trigger
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = ENG value = "Horn of Africa" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #country_event = 2001500 #MANUALFIX unknown event trigger
+				 }  } 
+		# MANUALFIX secede region command = {  type = secederegion which = FRA value = "Ethiopia" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #country_event = 2001500 #MANUALFIX unknown event trigger
+				 }  } 
+		# MANUALFIX secede region command = {  type = secederegion which = FRA value = "Horn of Africa" }
+		 }
+	# MANUALFIX secede region command = { type = secederegion which = FRA value = "Libya" }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 has_global_flag= entente_hostility
+				 } #country_event = 157
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = GRE value = "Greek Island" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= entente_hostility
+			 #country_event = 157
+			 #country_event = 2001500 #MANUALFIX unknown event trigger
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = ENG value = "Greek Island" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= entente_hostility
+			 #country_event = 157
+			 not = {
+				 #country_event = 2001500 #MANUALFIX unknown event trigger
+				 }  } 
+		# MANUALFIX secede area command = {  type = secedearea which = FRA value = "Greek Island" }
+		 }
+	# MANUALFIX Demobilize command = { type = demobilize which = land when = 0 where = 0 value = 36 }
+	# MANUALFIX strength command = { type = strength which = land when = 0 where = 0 value = 0.33 }
+	# MANUALFIX Demobilize command = { type = demobilize which = battleship when = 0 where = 0 value = 8 }
+	# MANUALFIX Demobilize command = { type = demobilize which = battlecruiser when = 0 where = 0 value = 8 }
+	# MANUALFIX Demobilize command = { type = demobilize which = heavy_cruiser when = 0 where = 0 value = 16 }
+	
+set_global_flag = 2006513_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 293
+title = "DH_EVENT_2191548_TITLE"
+desc = "DH_EVENT_2191548_DESC"
+picture = "news_paper"
+
+trigger = {
+	#NOEQUIVALENT random =  25
+	#country_event = 294
+	or = {
+		#country_event = 164
+		has_global_flag= ITA_against_U08
+		}
+	not = {
+		 #country_event = 174
+		 }
+	
+tag = GER
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191548 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  7 }
+
+is_triggered_only = no
+option = {
+	ai_chance = { factor = 90
+		 }
+	name = "DH_EVENT_2191548_Option1"
+	country_event = 294
+	dissent = -8 
+	clr_global_flag = ITA_against_U08 
+	
+set_global_flag = 2191548_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 294
+title = "DH_EVENT_2006514_TITLE"
+desc = "DH_EVENT_2006514_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = ITA
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2006514 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2006514_Option7"
+	dissent = 3 
+	THIS = { military_access = GER }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = AUH }
+			  } 
+		THIS = { military_access = AUH }
+		 }
+	# MANUALFIX secede region command = { type = secederegion which = U08 value = "Ethiopia" }
+	# MANUALFIX secede region command = { type = secederegion which = U08 value = "Horn of Africa" }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2145500 #MANUALFIX unknown event trigger
+			 not = {
+				 and = { 
+					 #country_event = 2145510 #MANUALFIX unknown event trigger
+					 #country_event = 2145501 #MANUALFIX unknown event trigger
+					 } }  } 
+		# MANUALFIX secede region command = {  type = secederegion which = OTT value = "Libya" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #country_event = 2145500 #MANUALFIX unknown event trigger
+			 not = {
+				 and = { 
+					 #country_event = 2145510 #MANUALFIX unknown event trigger
+					 #country_event = 2145501 #MANUALFIX unknown event trigger
+					 } }  } 
+		# MANUALFIX secede area command = {  type = secedearea which = OTT value = "Greek Island" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #country_event = 2145500 #MANUALFIX unknown event trigger
+				 } or = { 
+				 not = {
+					 #country_event = 2145510 #MANUALFIX unknown event trigger
+					 } not = {
+					 #country_event = 2145501 #MANUALFIX unknown event trigger
+					 } }  } 
+		# MANUALFIX secede region command = {  type = secederegion which = U08 value = "Libya" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #country_event = 2145500 #MANUALFIX unknown event trigger
+				 } or = { 
+				 not = {
+					 #country_event = 2145510 #MANUALFIX unknown event trigger
+					 } not = {
+					 #country_event = 2145501 #MANUALFIX unknown event trigger
+					 } }  } 
+		# MANUALFIX secede area command = {  type = secedearea which = U08 value = "Greek Island" }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = AUH
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = AUH
+			  } 
+		 }
+	# MANUALFIX Demobilize command = { type = demobilize which = land when = 0 where = 0 value = 36 }
+	# MANUALFIX strength command = { type = strength which = land when = 0 where = 0 value = 0.33 }
+	# MANUALFIX Demobilize command = { type = demobilize which = battleship when = 0 where = 0 value = 8 }
+	# MANUALFIX Demobilize command = { type = demobilize which = battlecruiser when = 0 where = 0 value = 8 }
+	# MANUALFIX Demobilize command = { type = demobilize which = heavy_cruiser when = 0 where = 0 value = 16 }
+	
+set_global_flag = 2006514_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 295
+title = "DH_EVENT_2191551_TITLE"
+desc = "DH_EVENT_2191551_DESC"
+picture = "diplomatic_campaign"
+
+trigger = {
+	#NOEQUIVALENT random =  25
+	#country_event = 45
+	
+tag = GER
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191551 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	ai_chance = { factor = 90
+		 }
+	name = "DH_EVENT_2191551_Option1"
+	dissent = -15 
+	country_event = 296
+	
+set_global_flag = 2191551_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 10
+		 }
+	name = "DH_EVENT_2191551_Option3"
+	dissent = -5 
+	country_event = 297
+	
+set_global_flag = 2191551_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 296
+title = "DH_EVENT_2001561_TITLE"
+desc = "DH_EVENT_2001561_DESC"
+picture = "diplomatic_campaign"
+
+trigger = { 
+tag = ENG
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2001561 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2001561_Option1"
+	dissent = 5 
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "Bechuanaland" }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "North Rhodesia" }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "South Rhodesia" }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "Gold Coast" }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "North Nigeria" }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "South Nigeria" }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "Kenya" }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "Uganda" }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "Somaliland" }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "Bougainville" }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "Guadalcanal" }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "Central Solomons" }
+	random_country = { limit = { tag = THIS 
+			 TUR = { alliance_with = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 TUR = { alliance_with = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 TUR = { alliance_with = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 TUR = { alliance_with = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 TUR = { alliance_with = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 TUR = { alliance_with = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 TUR = { alliance_with = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 TUR = { alliance_with = GER }
+			 ENG = { vassal_of = ENG }
+			  } 
+		ZZZ = { create_vassal = THIS } THIS = { inherit = ZZZ }
+		 }
+	random_country = { limit = { tag = THIS 
+			 TUR = { alliance_with = GER }
+			 SAU = { vassal_of = ENG }
+			  } 
+		ZZZ = { create_vassal = THIS } THIS = { inherit = ZZZ }
+		 }
+	random_country = { limit = { tag = THIS 
+			 TUR = { alliance_with = GER }
+			 OMN = { vassal_of = ENG }
+			  } 
+		ZZZ = { create_vassal = THIS } THIS = { inherit = ZZZ }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = IRE
+			 IRE = { war_with = ENG }
+			 not = {
+				 is_in_any_faction = yes
+				 }  } 
+		THIS = { end_war = IRE }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = IRE
+				 }  } 
+		release = IRE
+		 }
+	# MANUALFIX secede area command = { type = secedearea which = IRE value = "Eire" when = 1 }
+	ENG = { money = -1500 }
+	GER = { money = 1500 }
+	# MANUALFIX Demobilize command = { type = demobilize which = land when = 0 where = 0 value = 36 }
+	# MANUALFIX strength command = { type = strength which = land when = 0 where = 0 value = 0.33 }
+	# MANUALFIX Demobilize command = { type = demobilize which = battleship when = 0 where = 0 value = 8 }
+	# MANUALFIX Demobilize command = { type = demobilize which = battlecruiser when = 0 where = 0 value = 8 }
+	# MANUALFIX Demobilize command = { type = demobilize which = heavy_cruiser when = 0 where = 0 value = 16 }
+	
+set_global_flag = 2001561_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 297
+title = "DH_EVENT_2001562_TITLE"
+desc = "DH_EVENT_2001562_DESC"
+picture = "diplomatic_campaign"
+
+trigger = { 
+tag = ENG
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2001562 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2001562_Option1"
+	dissent = 1 
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "Bechuanaland" }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "North Rhodesia" }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "South Rhodesia" }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "Gold Coast" }
+	random_country = { limit = { tag = THIS 
+			 TUR = { alliance_with = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 TUR = { alliance_with = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 TUR = { alliance_with = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 TUR = { alliance_with = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 TUR = { alliance_with = GER }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 TUR = { alliance_with = GER }
+			 ENG = { vassal_of = ENG }
+			  } 
+		ZZZ = { create_vassal = THIS } THIS = { inherit = ZZZ }
+		 }
+	ENG = { money = -500 }
+	GER = { money = 500 }
+	# MANUALFIX Demobilize command = { type = demobilize which = land when = 0 where = 0 value = 36 }
+	# MANUALFIX strength command = { type = strength which = land when = 0 where = 0 value = 0.33 }
+	# MANUALFIX Demobilize command = { type = demobilize which = battleship when = 0 where = 0 value = 8 }
+	# MANUALFIX Demobilize command = { type = demobilize which = battlecruiser when = 0 where = 0 value = 8 }
+	# MANUALFIX Demobilize command = { type = demobilize which = heavy_cruiser when = 0 where = 0 value = 16 }
+	
+set_global_flag = 2001562_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 298
+title = "DH_EVENT_2191555_TITLE"
+desc = "DH_EVENT_2191555_DESC"
+picture = "diplomatic_campaign"
+
+trigger = {
+	#NOEQUIVALENT random =  25
+	#country_event = 361
+	
+tag = GER
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191555 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  7 }
+
+is_triggered_only = no
+option = {
+	ai_chance = { factor = 90
+		 }
+	name = "DH_EVENT_2191555_Option1"
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = FIN
+				 }  } 
+		release = FIN
+		 }
+	country_event = 299
+	
+set_global_flag = 2191555_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 10
+		 }
+	name = "DH_EVENT_2191555_Option2"
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = FIN
+				 }  } 
+		release = FIN
+		 }
+	country_event = 300
+	
+set_global_flag = 2191555_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 299
+title = "DH_EVENT_2104547_TITLE"
+desc = "DH_EVENT_2104547_DESC"
+picture = "diplomatic_campaign"
+
+trigger = { 
+tag = RUS
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2104547 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2104547_Option7"
+	dissent = 5 
+	# MANUALFIX secede region command = { type = secederegion which = U08 value = "Poland" when = 1 }
+	# MANUALFIX secede region command = { type = secederegion which = U08 value = "Baltic States" when = 2 }
+	# MANUALFIX secede area command = { type = secedearea which = U08 value = "Mozyr" when = 1 }
+	# MANUALFIX secede region command = { type = secederegion which = U08 value = "Ukraine" when = 2 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = FIN
+				 }  } 
+		release = FIN
+		 }
+	# MANUALFIX secede region command = { type = secederegion which = FIN value = "Finland" when = 2 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = AUH }
+			 not = {
+				 #country_event = 463
+				 }  } 
+		# MANUALFIX secede region command = {  type = secederegion which = U09 value = "Romania" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = AUH }
+			 not = {
+				 #country_event = 463
+				 }  } 
+		# MANUALFIX secede area command = {  type = secedearea which = U09 value = "Odessa" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = AUH }
+			 not = {
+				 #country_event = 463
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 #country_event = 463
+				 not = {
+					 GER = { alliance_with = AUH }
+					 } }  } 
+		# MANUALFIX secede region command = {  type = secederegion which = U08 value = "Romania" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 #country_event = 463
+				 not = {
+					 GER = { alliance_with = AUH }
+					 } }  } 
+		# MANUALFIX secede area command = {  type = secedearea which = U08 value = "Odessa" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 #country_event = 463
+				 not = {
+					 GER = { alliance_with = AUH }
+					 } }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 #country_event = 463
+				 not = {
+					 GER = { alliance_with = AUH }
+					 } }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = TUR }
+			 not = {
+				 or = { 
+					 #country_event = 2145510 #MANUALFIX unknown event trigger
+					 #country_event = 2145501 #MANUALFIX unknown event trigger
+					 } }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = TUR }
+			 not = {
+				 or = { 
+					 #country_event = 2145510 #MANUALFIX unknown event trigger
+					 #country_event = 2145501 #MANUALFIX unknown event trigger
+					 } }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = TUR }
+			 not = {
+				 or = { 
+					 #country_event = 2145510 #MANUALFIX unknown event trigger
+					 #country_event = 2145501 #MANUALFIX unknown event trigger
+					 } }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = GEO
+				 } GER = { alliance_with = TUR }
+			 not = {
+				 or = { 
+					 #country_event = 2145510 #MANUALFIX unknown event trigger
+					 #country_event = 2145501 #MANUALFIX unknown event trigger
+					 } }  } 
+		release = GEO
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = AZB
+				 } GER = { alliance_with = TUR }
+			 not = {
+				 or = { 
+					 #country_event = 2145510 #MANUALFIX unknown event trigger
+					 #country_event = 2145501 #MANUALFIX unknown event trigger
+					 } }  } 
+		release = AZB
+		 }
+	# MANUALFIX Demobilize command = { type = demobilize which = land when = 0 where = 0 value = 36 }
+	# MANUALFIX strength command = { type = strength which = land when = 0 where = 0 value = 0.33 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = AUH }
+			 not = {
+				 #country_event = 463
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = AUH }
+			 not = {
+				 #country_event = 463
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = AUH }
+			 not = {
+				 #country_event = 463
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = AUH }
+			 not = {
+				 #country_event = 463
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = AUH }
+			 not = {
+				 #country_event = 463
+				 }  } 
+		 }
+	
+set_global_flag = 2104547_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 300
+title = "DH_EVENT_2104548_TITLE"
+desc = "DH_EVENT_2104548_DESC"
+picture = "diplomatic_campaign"
+
+trigger = { 
+tag = RUS
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2104548 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2104548_Option7"
+	dissent = 1 
+	# MANUALFIX secede region command = { type = secederegion which = U08 value = "Poland" when = 2 }
+	# MANUALFIX secede region command = { type = secederegion which = U08 value = "Baltic States" when = 1 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = FIN
+				 }  } 
+		release = FIN
+		 }
+	# MANUALFIX secede region command = { type = secederegion which = FIN value = "Finland" when = 2 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = AUH }
+			 not = {
+				 #country_event = 463
+				 }  } 
+		# MANUALFIX secede region command = {  type = secederegion which = U09 value = "Romania" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = AUH }
+			 not = {
+				 #country_event = 463
+				 }  } 
+		# MANUALFIX secede area command = {  type = secedearea which = U09 value = "Odessa" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = AUH }
+			 not = {
+				 #country_event = 463
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 #country_event = 463
+				 not = {
+					 GER = { alliance_with = AUH }
+					 } }  } 
+		# MANUALFIX secede region command = {  type = secederegion which = U08 value = "Romania" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 #country_event = 463
+				 not = {
+					 GER = { alliance_with = AUH }
+					 } }  } 
+		# MANUALFIX secede area command = {  type = secedearea which = U08 value = "Odessa" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 #country_event = 463
+				 not = {
+					 GER = { alliance_with = AUH }
+					 } }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 #country_event = 463
+				 not = {
+					 GER = { alliance_with = AUH }
+					 } }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = TUR }
+			 not = {
+				 or = { 
+					 #country_event = 2145510 #MANUALFIX unknown event trigger
+					 #country_event = 2145501 #MANUALFIX unknown event trigger
+					 } }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = TUR }
+			 not = {
+				 or = { 
+					 #country_event = 2145510 #MANUALFIX unknown event trigger
+					 #country_event = 2145501 #MANUALFIX unknown event trigger
+					 } }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = TUR }
+			 not = {
+				 or = { 
+					 #country_event = 2145510 #MANUALFIX unknown event trigger
+					 #country_event = 2145501 #MANUALFIX unknown event trigger
+					 } }  } 
+		 }
+	# MANUALFIX Demobilize command = { type = demobilize which = land when = 0 where = 0 value = 48 }
+	# MANUALFIX strength command = { type = strength which = land when = 0 where = 0 value = 0.33 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = AUH }
+			 not = {
+				 #country_event = 463
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = AUH }
+			 not = {
+				 #country_event = 463
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = AUH }
+			 not = {
+				 #country_event = 463
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = AUH }
+			 not = {
+				 #country_event = 463
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = AUH }
+			 not = {
+				 #country_event = 463
+				 }  } 
+		 }
+	
+set_global_flag = 2104548_EVENT_DONE
+
+}
+
+}
+

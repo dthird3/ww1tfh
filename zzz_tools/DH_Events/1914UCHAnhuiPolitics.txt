@@ -1,0 +1,321 @@
+country_event = {
+id = 768
+title = "DH_EVENT_133011900_TITLE"
+desc = "DH_EVENT_133011900_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011900 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011900_Option7"
+	#Removed Blank command
+	
+set_global_flag = 133011900_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 769
+title = "DH_EVENT_133011901_TITLE"
+desc = "DH_EVENT_133011901_DESC"
+trigger = {
+	or = {
+		and = {
+			and = {
+				month = may
+				year = 1914
+				}
+			not = {
+				and = {
+					year = 1916
+					month = april
+					}
+				}
+			not = {
+				 has_country_flag = 901_1
+				 }
+			not = {
+				 head_of_government = 1325114
+				 }
+			}
+		and = {
+			and = {
+				month = november
+				year = 1917
+				}
+			not = {
+				and = {
+					year = 1917
+					month = december
+					}
+				}
+			not = {
+				 has_country_flag = 901_2
+				 }
+			not = {
+				 head_of_government = 1325311
+				 }
+			}
+		and = {
+			and = {
+				month = december
+				year = 1917
+				}
+			not = {
+				and = {
+					year = 1918
+					month = march
+					}
+				}
+			not = {
+				 has_country_flag = 901_3
+				 }
+			not = {
+				 head_of_government = 1325218
+				 }
+			}
+		and = {
+			and = {
+				month = march
+				year = 1918
+				}
+			not = {
+				and = {
+					year = 1918
+					month = april
+					}
+				}
+			not = {
+				 has_country_flag = 901_4
+				 }
+			not = {
+				 head_of_government = 1325225
+				 }
+			}
+		and = {
+			and = {
+				month = april
+				year = 1918
+				}
+			not = {
+				and = {
+					year = 1918
+					month = november
+					}
+				}
+			not = {
+				 has_country_flag = 901_5
+				 }
+			not = {
+				 head_of_government = 1325120
+				 }
+			}
+		and = {
+			and = {
+				month = november
+				year = 1918
+				}
+			not = {
+				and = {
+					year = 1919
+					month = july
+					}
+				}
+			not = {
+				 has_country_flag = 901_6
+				 }
+			not = {
+				 head_of_government = 1325225
+				 }
+			}
+		and = {
+			and = {
+				month = october
+				year = 1919
+				}
+			not = {
+				and = {
+					year = 1920
+					month = june
+					}
+				}
+			not = {
+				 has_country_flag = 901_8
+				 }
+			not = {
+				 head_of_government = 1325230
+				 }
+			}
+		and = {
+			and = {
+				month = august
+				year = 1920
+				}
+			not = {
+				and = {
+					year = 1921
+					month = december
+					}
+				}
+			not = {
+				 has_country_flag = 901_10
+				 }
+			not = {
+				 head_of_government = 1325230
+				 }
+			}
+		}
+	
+tag = CHI
+
+not = {  }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011901 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  10 }
+
+is_triggered_only = no
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISand = {month = mayyear = 1914}not = {and = {year = 1916month = april}}not = { has_country_flag = 901_1 }not = { head_of_government = 1325114 } } } 
+	name = "DH_EVENT_133011901_Option7"
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 1325114 }
+	head_of_government = 1325114 
+	set_country_flag = 901_1 
+	
+set_global_flag = 133011901_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISand = {month = novemberyear = 1917}not = {and = {year = 1917month = december}}not = { has_country_flag = 901_2 }not = { head_of_government = 1325311 } } } 
+	name = "DH_EVENT_133011901_Option8"
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 1325311 }
+	head_of_government = 1325311 
+	set_country_flag = 901_2 
+	
+set_global_flag = 133011901_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISand = {month = decemberyear = 1917}not = {and = {year = 1918month = march}}not = { has_country_flag = 901_3 }not = { head_of_government = 1325218 } } } 
+	name = "DH_EVENT_133011901_Option9"
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 1325218 }
+	head_of_government = 1325218 
+	set_country_flag = 901_3 
+	
+set_global_flag = 133011901_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISand = {month = marchyear = 1918}not = {and = {year = 1918month = april}}not = { has_country_flag = 901_4 }not = { head_of_government = 1325225 } } } 
+	name = "DH_EVENT_133011901_Option10"
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 1325225 }
+	head_of_government = 1325225 
+	set_country_flag = 901_4 
+	
+set_global_flag = 133011901_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISand = {month = aprilyear = 1918}not = {and = {year = 1918month = november}}not = { has_country_flag = 901_5 }not = { head_of_government = 1325120 } } } 
+	name = "DH_EVENT_133011901_Option11"
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 1325120 }
+	head_of_government = 1325120 
+	set_country_flag = 901_5 
+	
+set_global_flag = 133011901_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISand = {month = novemberyear = 1918}not = {and = {year = 1919month = july}}not = { has_country_flag = 901_6 }not = { head_of_government = 1325225 } } } 
+	name = "DH_EVENT_133011901_Option12"
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 1325225 }
+	head_of_government = 1325225 
+	set_country_flag = 901_6 
+	
+set_global_flag = 133011901_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISand = {month = octoberyear = 1919}not = {and = {year = 1920month = june}}not = { has_country_flag = 901_8 }not = { head_of_government = 1325230 } } } 
+	name = "DH_EVENT_133011901_Option13"
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 1325230 }
+	head_of_government = 1325230 
+	set_country_flag = 901_8 
+	
+set_global_flag = 133011901_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISand = {month = augustyear = 1920}not = {and = {year = 1921month = december}}not = { has_country_flag = 901_10 }not = { head_of_government = 1325230 } } } 
+	name = "DH_EVENT_133011901_Option14"
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 1325230 }
+	head_of_government = 1325230 
+	set_country_flag = 901_10 
+	
+set_global_flag = 133011901_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISTHIS = { ai = no } } } 
+	name = "DH_EVENT_133011901_Option15"
+	dissent = 3 
+	
+set_global_flag = 133011901_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 770
+title = "DH_EVENT_133011902_TITLE"
+desc = "DH_EVENT_133011902_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011902 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011902_Option7"
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 1325224 }
+	head_of_state = 1325224 
+	dissent = 3 
+	country_event = 734
+	
+set_global_flag = 133011902_EVENT_DONE
+
+}
+
+}
+

@@ -1,0 +1,497 @@
+country_event = {
+id = 301
+title = "DH_EVENT_2193500_TITLE"
+desc = "DH_EVENT_2193500_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = POL
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2193500 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2193500_Option7"
+	# MANUALFIX secede region command = { type = secederegion which = U08 value = "Germany" }
+	# add_country_modifier = { name = "democratic8" duration = 360 }#command = { type = set_domestic which = democratic value = 8 }
+	# add_country_modifier = { name = "rulingpartysupport" duration = 360 }#command = { type = set_domestic which = political_left value = 7 }
+	head_of_state = 60170
+	head_of_government = 60155
+	foreign_minister = 60155
+	armament_minister = 60163
+	minister_of_security = 60172
+	chief_of_staff = 60137
+	chief_of_army = 60137
+	random_country = { limit = { tag = THIS 
+			 exists = SOV
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = SOV value = "Brest Litovsk" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = SOV
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = SOV value = "Grodno" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = SOV
+			  } 
+		 }
+	
+set_global_flag = 2193500_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 302
+title = "DH_EVENT_2193501_TITLE"
+desc = "DH_EVENT_2193501_DESC"
+picture = "austrohunarmy_march"
+
+trigger = {
+	not = {
+		 POL = { war = yes }
+		 }
+	not = {
+		 POL = { is_subject = yes }
+		 }
+	SOV = { war = yes }
+	#country_event = 101
+	#country_event = 2024500 #MANUALFIX unknown event trigger
+	or = {
+		#country_event = 401
+		#country_event = 289
+		}
+	1928 = { owned_by = POL }
+	2390 = { owned_by = POL }
+	1810 = { owned_by = POL }
+	  
+	
+tag = POL
+date = 1916.1.1
+
+not = { date = 1930.1.1
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2193501 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  180 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2193501_Option7"
+	ai_chance = { factor = 99
+		 }
+	random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } militia_brigade = current militia_brigade = current militia_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } militia_brigade = current militia_brigade = current militia_brigade = current }
+	relation = { who = EST value = -50  }
+	relation = { who = CZE value = 50  }
+	relation = { who = LAT value = 50  }
+	war = { target = SOV }
+	dissent = -10 
+	
+set_global_flag = 2193501_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2193501_Option8"
+	ai_chance = { factor = 1
+		 }
+	dissent = 3 
+	
+set_global_flag = 2193501_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 303
+title = "DH_EVENT_2193502_TITLE"
+desc = "DH_EVENT_2193502_DESC"
+picture = "diplomatic_campaign"
+
+trigger = {
+	#country_event = 301
+	SOV = { war_with = POL }
+	not = {
+		 POL = { surrender_progress = 20 }
+		 }
+	or = {
+		SOV = { surrender_progress = 40 }
+		and = {
+			1229 = { controlled_by = POL }
+			1884 = { controlled_by = POL }
+			3310 = { controlled_by = POL }
+			2519 = { controlled_by = POL }
+			2976 = { controlled_by = POL }
+			}
+		}
+	
+tag = POL
+
+not = {  }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2193502 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  7 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2193502_Option7"
+	ai_chance = { factor = 99
+		 }
+	set_global_flag = POLSOV_good_peace 
+	country_event = 304
+	
+set_global_flag = 2193502_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2193502_Option8"
+	ai_chance = { factor = 1
+		 }
+	set_global_flag = POLSOV_harsh_peace 
+	country_event = 304
+	
+set_global_flag = 2193502_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2193502_Option9"
+	ai_chance = { factor = 0
+		 }
+	dissent = 5 
+	
+set_global_flag = 2193502_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 304
+title = "DH_EVENT_2193503_TITLE"
+desc = "DH_EVENT_2193503_DESC"
+picture = "Peace_conference"
+
+trigger = { 
+tag = SOV
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2193503 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIS has_global_flag= POLSOV_good_peace  } } 
+	name = "DH_EVENT_2193503_Option7"
+	ai_chance = { factor = 100
+		 }
+	country_event = 305
+	# MANUALFIX secede area command = { type = secedearea which = POL value = "Brest Litovsk" when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = POL value = "Grodno" when = 1 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX area = { area = "Warsaw" country = SOV data = 1 value = 80 }
+			 } 
+		# MANUALFIX secede area command = {  type = secedearea which = POL value = "Warsaw" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX area = { area = "Polotsk" country = SOV data = 1 value =80 }
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = POL value = "Polotsk" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX area = { area = "Krakow" country = SOV data = 1 value = 20 }
+			 } 
+		# MANUALFIX secede area command = {  type = secedearea which = POL value = "Krakow" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX area = { area = "Poznan" country = SOV data = 1 value = 20 }
+			 } 
+		# MANUALFIX secede area command = {  type = secedearea which = POL value = "Poznan" when = 1 }
+		 }
+	THIS = { end_war = POL }
+	dissent = -5 
+	
+set_global_flag = 2193503_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIS has_global_flag= POLSOV_good_peace  } } 
+	ai_chance = { factor = 0
+		 }
+	name = "DH_EVENT_2193503_Option8"
+	dissent = 5 
+	
+set_global_flag = 2193503_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIS has_global_flag= POLSOV_harsh_peace  } } 
+	name = "DH_EVENT_2193503_Option9"
+	ai_chance = { factor = 50
+		 }
+	country_event = 305
+	# MANUALFIX secede area command = { type = secedearea which = POL value = "Brest Litovsk" when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = POL value = "Grodno" when = 1 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX area = { area = "Warsaw" country = SOV data = 1 value = 80 }
+			 } 
+		# MANUALFIX secede area command = {  type = secedearea which = POL value = "Warsaw" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX area = { area = "Polotsk" country = SOV data = 1 value =80 }
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = POL value = "Polotsk" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX area = { area = "Krakow" country = SOV data = 1 value = 20 }
+			 } 
+		# MANUALFIX secede area command = {  type = secedearea which = POL value = "Krakow" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX area = { area = "Poznan" country = SOV data = 1 value = 20 }
+			 } 
+		# MANUALFIX secede area command = {  type = secedearea which = POL value = "Poznan" when = 1 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = UKR
+				 }  } 
+		set_global_flag = POL_UKRpuppet 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = UKR
+				 }  } 
+		release = UKR
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= POL_UKRpuppet
+			  } 
+		# MANUALFIX secede region command = {  type = secederegion which = UKR value = "Ukraine" when = 1 }
+		 }
+	THIS = { end_war = POL }
+	dissent = -2 
+	
+set_global_flag = 2193503_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2193503_Option10"
+	ai_chance = { factor = 50
+		 }
+	#MANUALFIX trigger option random_country = { limit = { tag = THIS has_global_flag= POLSOV_harsh_peace  } } 
+	dissent = 3 
+	
+set_global_flag = 2193503_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 305
+title = "DH_EVENT_2193504_TITLE"
+desc = "DH_EVENT_2193504_DESC"
+picture = "Peace_conference"
+
+trigger = { 
+tag = POL
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2193504 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIS has_global_flag= POLSOV_good_peace  } } 
+	name = "DH_EVENT_2193504_Option7"
+	dissent = -10 
+	clr_global_flag = POLSOV_good_peace 
+	
+set_global_flag = 2193504_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIS has_global_flag= POLSOV_harsh_peace  } } 
+	name = "DH_EVENT_2193504_Option8"
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= POL_UKRpuppet
+			  } 
+		release_vassal = UKR
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= POL_UKRpuppet
+			  } 
+		create_alliance = UKR
+		 }
+	dissent = -15 
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= POL_UKRpuppet
+			  } 
+		clr_global_flag = POL_UKRpuppet 
+		 }
+	clr_global_flag = POLSOV_harsh_peace 
+	
+set_global_flag = 2193504_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 306
+title = "DH_EVENT_2193505_TITLE"
+trigger = {
+	has_global_flag= treaty_of_warsaw
+	SOV = { war_with = THIS }
+	or = {
+		POL = { surrender_progress = 70 }
+		POL = { lost_IC = 60 }
+		POL = { surrender_progress = 70 }
+		}
+	
+tag = POL
+
+not = {  }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2193505 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  7 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2193505_Option7"
+	ai_chance = { factor = 100
+		 }
+	country_event = 307
+	clr_global_flag = treaty_of_warsaw 
+	clr_country_flag = treaty_of_warsaw 
+	dissent = -5 
+	
+set_global_flag = 2193505_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2193505_Option8"
+	ai_chance = { factor = 0
+		 }
+	dissent = 5 
+	
+set_global_flag = 2193505_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 307
+title = "DH_EVENT_2193506_TITLE"
+trigger = { 
+tag = SOV
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2193506 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2193506_Option7"
+	ai_chance = { factor = 99
+		 }
+	THIS = { end_war = POL }
+	country_event = 13300512 #MANUALFIX unknown event trigger
+	
+set_global_flag = 2193506_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2193506_Option8"
+	ai_chance = { factor = 1
+		 }
+	dissent = 5 
+	release = UKR
+	war = { target = UKR }
+	
+set_global_flag = 2193506_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 308
+title = "DH_EVENT_2193507_TITLE"
+trigger = { 
+tag = POL
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2193507 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2193507_Option7"
+	dissent = -5 
+	relation = { who = SOV value = 150  }
+	
+set_global_flag = 2193507_EVENT_DONE
+
+}
+
+}
+
