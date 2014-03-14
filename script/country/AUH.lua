@@ -244,7 +244,7 @@ function P.DiploScore_Alliance(voDiploScoreObj)
 end
 function P.ForeignMinister_EvaluateDecision(voDecision)
 	local loDecisions = {
-		SER_ult = {Year = 1914, Month = 7, Day = 1, War = true, Country = "SER", Score = 100 }}
+		SER_ult = {Year = 1914, Month = 6, Day = 1, War = true, Country = "SER", Score = 100 }}
 
 	if loDecisions[voDecision.Name] then
 		if (voDecision.Year == loDecisions[voDecision.Name].Year
