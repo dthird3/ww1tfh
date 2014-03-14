@@ -224,29 +224,19 @@ function P.Buildings(voProductionData)
 end
 
 function P.DiploScore_Alliance(voDiploScoreObj)
-	local loScoreCheck = {
-		AUH = {Score = 200, WarCheck = true},
-		GER = {Score = 200, WarCheck = true}}	
-	--Utils.LUA_DEBUGOUT("Italian Alliance " .. tostring(voDiploScoreObj.Actor.Name))	
-	if loScoreCheck[voDiploScoreObj.Actor.Name] then
-		if loScoreCheck[voDiploScoreObj.Actor.Name].WarCheck then
-			local laWarCheck = {"ENG", "FRA", "RUS"}
+	if voDiploScoreObj.Actor.name == "AUH" or voDiploScoreObj.Actor.name == "GER" or voDiploScoreObj.Target.name == "AUH" or voDiploScoreObj.Target.name == "AUH" then
+		local loAHTag = CCountryDataBase.GetTag("AUH")
+		local loSERTag = CCountryDataBase.GetTag("SER")
+		local loAHCountry = loAHTag:GetCountry()
+		local loRelation = loAHCountry:GetRelation(loSERTag)
 		
-			for i = 1, table.getn(laWarCheck) do
-			
-				local loTag = CCountryDataBase.GetTag(laWarCheck[i])
-				local loRelation = voDiploScoreObj.Target.Country:GetRelation(loTag)
-				
-				
-				--Utils.LUA_DEBUGOUT("checking " .. tostring(loTag) .. "Score " .. tostring(loScoreCheck[voDiploScoreObj.Actor.Name].Score))	
-				
-				if not(loRelation:HasWar()) then
-					return loScoreCheck[voDiploScoreObj.Actor.Name].Score
-				else
-				end
-			end
+		
+		if not(voDiploScoreObj.Target.IsAtWar) and not(loRelation:HasWar()) then
+			return 200
+		else
+			return -200	
 		end
-	end	
+	end
 	
 	return voDiploScoreObj.Score
 end
