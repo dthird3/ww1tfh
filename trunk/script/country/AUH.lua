@@ -242,6 +242,32 @@ function P.DiploScore_Alliance(voDiploScoreObj)
 	
 	return voDiploScoreObj.Score
 end
+function P.ForeignMinister_EvaluateDecision(voDecision)
+	local loDecisions = {
+		SER_ult = {Year = 1914, Month = 7, Day = 1, War = true, Country = "SER", Score = 100 }}
+
+	if loDecisions[voDecision.Name] then
+		if (voDecision.Year == loDecisions[voDecision.Name].Year
+		and voDecision.Month >= loDecisions[voDecision.Name].Month
+		and voDecision.Day >= loDecisions[voDecision.Name].Day )
+		or
+		(voDecision.Year == loDecisions[voDecision.Name].Year
+		and voDecision.Month > loDecisions[voDecision.Name].Month)
+		or
+		(voDecision.Year > loDecisions[voDecision.Name].Year) then
+			if loDecisions[voDecision.Name].War then
+				ForeignMinister_War.PrepareWarDecision(CCountryDataBase.GetTag(loDecisions[voDecision.Name].Country), voDecision, 100)
+			else
+				return loDecisions[voDecision.Name].Score
+			end
+		else
+			return 0
+		end
+	end
+	
+	return voDecision.Score
+end
+
 -- #######################################
 -- SUPPORT METHODS
 -- Setup_Custom is called from GER_FAC.lua and GER.lua
