@@ -107,7 +107,7 @@ country_event = {
 			GER = { set_country_flag = stopped_unrest_subs }
 		}
 		option = {
-			name = "EVT1914_2008005_ACTIONB"						# Refuse to Stop
+			name = "EVT1914_2008005_ACTIONB"						# Refuse to Stop and keep convoy raiding bonus
 			ai_chance = { factor = 0 }
 			GER = {threat = { who = USA value = 5 }}
 			USA = { relation = { who = GER value = -40 }}
