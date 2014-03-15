@@ -1,0 +1,32 @@
+theatre= {
+	name = "Military Government of Hubei"
+	leader = 99999887
+	location = 7508
+	regiment = { type = hq_brigade name = "Military Government of Hubei" historical_model = 0 }
+	division= {
+		name = "1. Hubei Revolutionary Army"
+		location = 7508
+		regiment = { type = infantry_brigade name = "Budui Di 1 Xie/ Budui Di 2 Xie" historical_model = 1 }
+		regiment = { type = infantry_brigade name = "Budui Di 3 Xie/ Budui Di 4 Xie" historical_model = 1 }
+		regiment = { type = artillery_brigade name = "Paodui Di 1 Biao" historical_model = 1 }
+	}
+	division= {
+		name = "2. Hubei Revolutionary Army"
+		location = 7511 
+		regiment = { type = infantry_brigade name = "Budui Di 5 Xie/ Budui Di 6 Xie" historical_model = 1 }
+		regiment = { type = infantry_brigade name = "Budui Di 7 Xie/ Budui Di 8 Xie" historical_model = 1 }
+		regiment = { type = artillery_brigade name = "Paodui Di 2 Biao" historical_model = 1 }
+	}
+	division= {
+		name = "Hubei Militia"
+		location = 5620
+		regiment = { type = militia_brigade name = "Hubei Minbing Di 1/2 Xie" historical_model = 1 }
+		regiment = { type = militia_brigade name = "Hubei Minbing Di 3/4 Xie" historical_model = 1 }
+	}
+	division= {
+		name = "Wuchang Militia"
+		location = 7508
+		regiment = { type = militia_brigade name = "Wuchang Minbing Di 1/2 Xie" historical_model = 1 }
+		regiment = { type = militia_brigade name = "Wuchang Minbing Di 3/4 Xie" historical_model = 1 }
+	}
+}
