@@ -1,0 +1,32 @@
+diplomatic_decisions = {
+
+2084503_decision = {
+	potential = {
+		exists = ALB
+		THIS = { surrender_progress = 50 }
+		THIS = { lost_IC = 1 }
+		or = {
+			4368 = { controlled_by = SER }
+			4555 = { controlled_by = SER }
+			4495 = { controlled_by = SER }
+			}
+		not = {
+			3912 = { controlled_by = SER }
+			4243 = { controlled_by = SER }
+			SER = { war_with = ALB }
+			SER = { alliance_with = ALB }
+			}
+		tag = SER
+		date = 1914.1.1
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2084503 }
+		not = { has_country_flag = decision_2084503 } }
+	allow = { }
+	effect = { country_event = 368
+		set_country_flag = decision_2084503 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+}
