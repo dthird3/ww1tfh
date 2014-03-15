@@ -1,0 +1,1262 @@
+diplomatic_decisions = {
+	
+
+
+
+
+
+
+
+
+
+
+
+2001506_decision = {
+	potential = {
+		country_event = 8
+		4501 = { controlled_by = TUR }
+		ENG = { war_with = TUR }
+		not = {
+			#country_event = 2145501 #MANUALFIX unknown event trigger
+			GRE = { faction = allies }
+			ENG = { war_with = GRE }
+			}
+		tag = ENG
+		date = 1914.1.1
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2001506 }
+		not = { has_country_flag = decision_2001506 } }
+	allow = {
+		4611 = { controlled_by = GRE }
+		}
+	effect = { country_event = 12
+		set_country_flag = decision_2001506 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2002507_decision = {
+	potential = {
+		exists = GRE
+		FRA = { war_with = AUH }
+		#country_event = 2145501 #MANUALFIX unknown event trigger
+		not = {
+			GRE = { faction = allies }
+			GRE = { faction = axis }
+			FRA = { war_with = TUR }
+			country_event = 104
+			country_event = 105
+			}
+		tag = FRA
+		date = 1914.1.1
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2002507 }
+		not = { has_country_flag = decision_2002507 } }
+	allow = {
+		2613 = { controlled_by = THIS }
+		}
+	effect = { country_event = 84
+		set_country_flag = decision_2002507 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+2002508_decision = {
+	potential = {
+		exists = GRE
+		country_event = 313
+		FRA = { war_with = AUH }
+		not = {
+			GRE = { faction = allies }
+			GRE = { faction = axis }
+			country_event = 104
+			country_event = 105
+			}
+		tag = FRA
+		date = 1914.1.1
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2002508 }
+		not = { has_country_flag = decision_2002508 } }
+	allow = {
+		exists = SER
+		relation = { who = GRE value = 60 }
+		2613 = { controlled_by = THIS }
+		}
+	effect = { country_event = 85
+		set_country_flag = decision_2002508 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+
+
+2002513_decision = {
+	potential = {
+		exists = GRE
+		country_event = 147
+		has_global_flag= greece_mobilized
+		FRA = { war_with = AUH }
+		not = {
+			GRE = { faction = allies }
+			GRE = { faction = axis }
+			country_event = 104
+			country_event = 105
+			}
+		tag = FRA
+		date = 1914.1.1
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2002513 }
+		not = { has_country_flag = decision_2002513 } }
+	allow = { }
+	effect = { country_event = 90
+		set_country_flag = decision_2002513 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+
+
+
+
+2002521_decision = {
+	potential = {
+		exists = GRE
+		has_global_flag= entente_hostility
+		FRA = { war_with = AUH }
+		not = {
+			GRE = { faction = allies }
+			GRE = { faction = axis }
+			country_event = 104
+			country_event = 105
+			}
+		tag = FRA
+		date = 1914.1.1
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2002521 }
+		not = { has_country_flag = decision_2002521 } }
+	allow = { }
+	effect = { country_event = 97
+		set_country_flag = decision_2002521 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+2002522_decision = {
+	potential = {
+		exists = GRE
+		has_global_flag= entente_hostility
+		has_global_flag= greece_mobilized
+		country_event = 154
+		FRA = { war_with = AUH }
+		not = {
+			GRE = { faction = allies }
+			GRE = { faction = axis }
+			country_event = 104
+			country_event = 105
+			}
+		tag = FRA
+		date = 1914.1.1
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2002522 }
+		not = { has_country_flag = decision_2002522 } }
+	allow = { }
+	effect = { country_event = 98
+		set_country_flag = decision_2002522 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+2002533_decision = {
+	potential = {
+		exists = GRE
+		has_global_flag= entente_hostility
+		has_global_flag= greece_mobilized
+		country_event = 343
+		country_event = 99
+		FRA = { war_with = AUH }
+		not = {
+			GRE = { faction = allies }
+			GRE = { faction = axis }
+			country_event = 104
+			country_event = 105
+			}
+		tag = FRA
+		date = 1914.1.1
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2002533 }
+		not = { has_country_flag = decision_2002533 } }
+	allow = { }
+	effect = { country_event = 101
+		set_country_flag = decision_2002533 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2019509_decision = {
+	potential = {
+		not = {
+			head_of_government = 90010
+			has_global_flag= venizelos_incabinet
+			country_event = 143
+			GRE = { faction = allies }
+			GRE = { faction = axis }
+			FRA = { war_with = GRE }
+			}
+		tag = GRE
+		date = 1915.1.1
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2019509 }
+		not = { has_country_flag = decision_2019509 } }
+	allow = {
+		country_event = 142
+		}
+	effect = { country_event = 146
+		set_country_flag = decision_2019509 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2191508_decision = {
+	potential = {
+		exists = BUL
+		not = {
+			 exists = SER
+			 }
+		GER = { war = yes }
+		not = {
+			 BUL = { war_with = GER }
+			 }
+		not = {
+			 country_event = 101
+			 }
+		tag = GER
+		date = 1914.6.28
+		not = { date = 1914.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2191508 }
+		not = { has_country_flag = decision_2191508 } }
+	allow = {
+		not = {
+			 BUL = { alliance_with = GER }
+			 }
+		not = {
+			 BUL = { alliance_with = FRA }
+			 }
+		}
+	effect = { country_event = 413
+		set_country_flag = decision_2191508 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+2191510_decision = {
+	potential = {
+		exists = SER
+		exists = BUL
+		not = {
+			#country_event = 2145501 #MANUALFIX unknown event trigger
+			BUL = { faction = axis }
+			SER = { alliance_with = BUL }
+			AUH = { war_with = BUL }
+			}
+		tag = AUH
+		date = 1914.11.12
+		not = { date = 1914.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2191510 }
+		not = { has_country_flag = decision_2191510 } }
+	allow = {
+		or = {
+			#country_event = 2145500 #MANUALFIX unknown event trigger
+			TUR = { faction = axis }
+			}
+		}
+	effect = { country_event = 415
+		set_country_flag = decision_2191510 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2192502_decision = {
+	potential = {
+		country_event = 450
+		not = {
+			 country_event = 472
+			 }
+		tag = AUH
+		date = 1914.6.28
+		not = { date = 1914.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2192502 }
+		not = { has_country_flag = decision_2192502 } }
+	allow = { }
+	effect = { country_event = 453
+		set_country_flag = decision_2192502 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2192529_decision = {
+	potential = {
+		exists = BUL
+		war = yes
+		not = {
+			BUL = { faction = axis }
+			BUL = { faction = allies }
+			#country_event = 2192505 #MANUALFIX unknown event trigger
+			country_event = 463
+			country_event = 4
+			}
+		tag = AUH
+		date = 1915.2.1
+		not = { date = 1915.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2192529 }
+		not = { has_country_flag = decision_2192529 } }
+	allow = {
+		relation = { who = BUL value = 50 }
+		}
+	effect = { country_event = 479
+		set_country_flag = decision_2192529 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

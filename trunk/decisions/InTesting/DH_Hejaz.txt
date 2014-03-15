@@ -1,0 +1,143 @@
+diplomatic_decisions = {
+	
+2001508_decision = {
+	potential = {
+		TUR = { war_with = ENG }
+		exists = HJZ
+		not = {
+			 HJZ = { war_with = ENG }
+			 }
+		tag = ENG
+		date = 1916.1.1
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2001508 }
+		not = { has_country_flag = decision_2001508 } }
+	allow = {
+		5564 = { controlled_by = ENG }
+		}
+	effect = { country_event = 14
+		set_country_flag = decision_2001508 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+2001509_decision = {
+	potential = {
+		country_event = 13
+		TUR = { war_with = ENG }
+		exists = HJZ
+		not = {
+			 HJZ = { war_with = ENG }
+			 }
+		tag = ENG
+		date = 1916.6.1
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2001509 }
+		not = { has_country_flag = decision_2001509 } }
+	allow = {
+		5564 = { controlled_by = ENG }
+		}
+	effect = { country_event = 15
+		set_country_flag = decision_2001509 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+2001510_decision = {
+	potential = {
+		TUR = { war_with = ENG }
+		TUR = { war_with = HJZ }
+		not = {
+			 HJZ = { war_with = ENG }
+			 }
+		tag = ENG
+		date = 1917.1.1
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2001510 }
+		not = { has_country_flag = decision_2001510 } }
+	allow = {
+		5564 = { controlled_by = ENG }
+		}
+	effect = { country_event = 16
+		set_country_flag = decision_2001510 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+2001511_decision = {
+	potential = {
+		TUR = { war_with = ENG }
+		TUR = { war_with = HJZ }
+		not = {
+			 HJZ = { war_with = ENG }
+			 }
+		tag = ENG
+		date = 1917.1.1
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2001511 }
+		not = { has_country_flag = decision_2001511 } }
+	allow = {
+		5564 = { controlled_by = ENG }
+		not = {
+			 5634 = { controlled_by = TUR }
+			 }
+		supplies =  500
+		}
+	effect = { country_event = 17
+		set_country_flag = decision_2001511 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+2001512_decision = {
+	potential = {
+		country_event = 17
+		TUR = { war_with = ENG }
+		TUR = { war_with = HJZ }
+		not = {
+			 HJZ = { war_with = ENG }
+			 }
+		tag = ENG
+		date = 1918.2.1
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2001512 }
+		not = { has_country_flag = decision_2001512 } }
+	allow = {
+		5564 = { controlled_by = ENG }
+		not = {
+			 5634 = { controlled_by = TUR }
+			 }
+		supplies =  800
+		}
+	effect = { country_event = 18
+		set_country_flag = decision_2001512 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+
+2233502_decision = {
+	potential = {
+		war = no
+		country_event = 486
+		tag = HJZ
+		date = 1916.6.1
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2233502 }
+		not = { has_country_flag = decision_2233502 } }
+	allow = { TUR = { war_with = ENG }
+		 }
+	effect = { country_event = 488
+		set_country_flag = decision_2233502 }
+	ai_will_do = { factor = 1 }
+	}
+
+}

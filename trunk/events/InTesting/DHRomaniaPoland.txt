@@ -1,0 +1,562 @@
+country_event = {
+id = 309
+title = "DH_EVENT_2023500_TITLE"
+desc = "DH_EVENT_2023500_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = ROM
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2023500 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2023500_Option1"
+	ai_chance = { factor = 95
+		 }
+	create_alliance = FRA
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX policy = { type = professional_army value = 7 }
+				 }  } 
+		#country_event = 1350007 #MANUALFIX unknown event trigger
+		 }
+	country_event = 82
+	
+set_global_flag = 2023500_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2023500_Option2"
+	ai_chance = { factor = 5
+		 }
+	relation = { who = FRA value = -10  }
+	
+set_global_flag = 2023500_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 310
+title = "DH_EVENT_2023501_TITLE"
+desc = "DH_EVENT_2023501_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = ROM
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2023501 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2023501_Option7"
+	create_alliance = FRA
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX policy = { type = professional_army value = 7 }
+				 }  } 
+		#country_event = 1350007 #MANUALFIX unknown event trigger
+		 }
+	country_event = 82
+	
+set_global_flag = 2023501_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 311
+title = "DH_EVENT_2023502_TITLE"
+desc = "DH_EVENT_2023502_DESC"
+picture = "news_paper"
+
+trigger = {
+	ROM = { war_with = AUH }
+	or = {
+		and = {
+			ROM = { surrender_progress = 10 }
+			or = {
+				not = {
+					 RUS = { war_with = AUH }
+					 }
+				country_event = 341
+				}
+			}
+		ROM = { surrender_progress = 80 }
+		not = {
+			3710 = { controlled_by = ROM }
+			3917 = { controlled_by = ROM }
+			}
+		}
+	
+tag = ROM
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2023502 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  1 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2023502_Option7"
+	dissent = 5 
+	random_country = { limit = { tag = THIS 
+			faction = allies
+			ROM = { alliance_with = ITA }
+			not = {
+				ROM = { faction = allies }
+				 }  } 
+		# MANUALFIX alliance leadercommand = { type = alliance_leader which = ITA where = 0 }
+		 }
+	random_country = { limit = { tag = THIS 
+			faction = allies
+			ROM = { alliance_with = GRE }
+			not = {
+				ROM = { faction = allies }
+				 }  } 
+		# MANUALFIX alliance leadercommand = { type = alliance_leader which = GRE where = 0 }
+		 }
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	THIS = { end_war = GER }
+	THIS = { end_war = AUH }
+	# MANUALFIX secede area command = { type = secedearea which = U09 value = "Transylvania" }
+	# MANUALFIX Demobilize command = { type = demobilize which = land when = 0 where = 0 value = 10 }
+	# MANUALFIX strength command = { type = strength which = land when = 0 where = 0 value = 0.33 }
+	
+set_global_flag = 2023502_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 312
+title = "DH_EVENT_2023503_TITLE"
+desc = "DH_EVENT_2023503_DESC"
+picture = "news_paper"
+
+trigger = {
+	country_event = 310
+	#NOEQUIVALENT random =  25
+	
+tag = ROM
+date = 1914.6.28
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2023503 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2023503_Option7"
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 faction = axis
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 faction = axis
+				 }  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		THIS = { military_access = GER }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		THIS = { military_access = AUH }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		THIS = { military_access = BUL }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		THIS = { military_access = TUR }
+		 }
+	random_country = { limit = { tag = THIS 
+			 country_event = 289
+			 3377 = { owned_by = AUH }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 country_event = 289
+			 3038 = { owned_by = AUH }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 country_event = 289
+			 3172 = { owned_by = AUH }
+			  } 
+		 }
+	random_country = { limit = { tag = THIS 
+			 country_event = 289
+			 3307 = { owned_by = AUH }
+			  } 
+		 }
+	
+set_global_flag = 2023503_EVENT_DONE
+
+}
+
+}
+
+
+
+
+
+country_event = {
+id = 81
+title = "DH_EVENT_2002504_TITLE"
+desc = "DH_EVENT_2002504_DESC"
+picture = "news_paper"
+
+trigger = {
+	#NOEQUIVALENT random =  25
+	FRA = { war_with = AUH }
+	exists = ROM
+	not = {
+		ROM = { faction = allies }
+		ROM = { faction = allies }
+		ROM = { faction = axis }
+		country_event = 104
+		country_event = 105
+		country_event = 310
+		}
+	or = {
+		2698 = { controlled_by = RUS }
+		2832 = { controlled_by = RUS }
+		2766 = { controlled_by = RUS }
+		3372 = { controlled_by = RUS }
+		and = {
+			year = 1916
+			month = 7
+			3307 = { controlled_by = RUS }
+			3377 = { controlled_by = RUS }
+			}
+		}
+	2613 = { controlled_by = THIS }
+	
+tag = FRA
+date = 1914.6.28
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2002504 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2002504_Option1"
+	ai_chance = { factor = 90
+		 }
+	country_event = 309
+	
+set_global_flag = 2002504_EVENT_DONE
+
+}
+
+option = {
+	 #MANUALFIX trigger option random_country = { limit = { tag = THIS THIS = { ai = yes }  } } 
+	name = "DH_EVENT_2002504_Option2"
+	ai_chance = { factor = 10
+		 }
+	#Removed Blank command
+	
+set_global_flag = 2002504_EVENT_DONE
+
+}
+
+}
+
+
+country_event = {
+id = 83
+title = "DH_EVENT_2002506_TITLE"
+desc = "DH_EVENT_2002506_DESC"
+picture = "news_paper"
+
+trigger = {
+	#NOEQUIVALENT random =  15
+	exists = ROM
+	FRA = { war_with = AUH }
+	not = {
+		ROM = { faction = allies }
+		ROM = { faction = allies }
+		ROM = { faction = axis }
+		country_event = 104
+		country_event = 105
+		country_event = 310
+		}
+	or = {
+		2445 = { controlled_by = RUS }
+		2447 = { controlled_by = RUS }
+		2390 = { controlled_by = RUS }
+		2573 = { controlled_by = RUS }
+		2509 = { controlled_by = RUS }
+		2902 = { controlled_by = RUS }
+		}
+	2613 = { controlled_by = THIS }
+	
+tag = FRA
+date = 1916.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2002506 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = yes
+option = {
+	 #MANUALFIX trigger option random_country = { limit = { tag = THIS THIS = { ai = yes }  } } 
+	name = "DH_EVENT_2002506_Option1"
+	ai_chance = { factor = 95
+		 }
+	country_event = 310
+	
+set_global_flag = 2002506_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2002506_Option2"
+	ai_chance = { factor = 5
+		 }
+	#Removed Blank command
+	
+set_global_flag = 2002506_EVENT_DONE
+
+}
+
+}
+
+
+country_event = {
+id = 302
+title = "DH_EVENT_2193501_TITLE"
+desc = "DH_EVENT_2193501_DESC"
+picture = "austrohunarmy_march"
+
+trigger = {
+	not = {
+		 POL = { war = yes }
+		 }
+	not = {
+		 POL = { is_subject = yes }
+		 }
+	SOV = { war = yes }
+	country_event = 101
+	#country_event = 2024500 #MANUALFIX unknown event trigger
+	or = {
+		country_event = 401
+		country_event = 289
+		}
+	1928 = { owned_by = POL }
+	2390 = { owned_by = POL }
+	1810 = { owned_by = POL }
+	  
+	
+tag = POL
+date = 1916.1.1
+
+not = { date = 1930.1.1
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2193501 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  180 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2193501_Option7"
+	ai_chance = { factor = 99
+		 }
+	random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } militia_brigade = current militia_brigade = current militia_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } militia_brigade = current militia_brigade = current militia_brigade = current }
+	relation = { who = EST value = -50  }
+	relation = { who = CZE value = 50  }
+	relation = { who = LAT value = 50  }
+	war = { target = SOV }
+	dissent = -10 
+	
+set_global_flag = 2193501_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2193501_Option8"
+	ai_chance = { factor = 1
+		 }
+	dissent = 3 
+	
+set_global_flag = 2193501_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 303
+title = "DH_EVENT_2193502_TITLE"
+desc = "DH_EVENT_2193502_DESC"
+picture = "diplomatic_campaign"
+
+trigger = {
+	country_event = 301
+	SOV = { war_with = POL }
+	not = {
+		 POL = { surrender_progress = 20 }
+		 }
+	or = {
+		SOV = { surrender_progress = 40 }
+		and = {
+			1229 = { controlled_by = POL }
+			1884 = { controlled_by = POL }
+			3310 = { controlled_by = POL }
+			2519 = { controlled_by = POL }
+			2976 = { controlled_by = POL }
+			}
+		}
+	
+tag = POL
+
+not = {  }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2193502 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  7 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2193502_Option7"
+	ai_chance = { factor = 99
+		 }
+	set_global_flag = POLSOV_good_peace 
+	#country_event = 304
+	
+set_global_flag = 2193502_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2193502_Option8"
+	ai_chance = { factor = 1
+		 }
+	set_global_flag = POLSOV_harsh_peace 
+	#country_event = 304
+	
+set_global_flag = 2193502_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2193502_Option9"
+	ai_chance = { factor = 0
+		 }
+	dissent = 5 
+	
+set_global_flag = 2193502_EVENT_DONE
+
+}
+
+}
+
+country_event = {	
+id = 82	
+title = "DH_EVENT_2002505_TITLE"	
+desc = "DH_EVENT_2002505_DESC"	
+picture = "news_paper"
+
+trigger = { 
+tag = FRA
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2002505 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes	
+option = {
+	name = "DH_EVENT_2002505_Option7"
+	relation = { who = ROM value = 50  }
+	
+set_global_flag = 2002505_EVENT_DONE
+
+}
+								
+}
+
+
+
+
+

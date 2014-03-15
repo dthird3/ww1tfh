@@ -1,0 +1,1349 @@
+diplomatic_decisions = {
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2038501_decision = {
+	potential = { country_event = 2038499 #MANUALFIX unknown event trigger
+		 
+		tag = MEX
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2038501 }
+		not = { has_country_flag = decision_2038501 } }
+	allow = { USA = { war_with = GER }
+		 }
+	effect = { country_event = 184
+		set_country_flag = decision_2038501 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+2038502_decision = {
+	potential = { 9624 = { controlled_by = USA }
+		 
+		tag = MEX
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2038502 }
+		not = { has_country_flag = decision_2038502 } }
+	allow = { war = no 
+		 }
+	effect = { country_event = 185
+		set_country_flag = decision_2038502 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+2038505_decision = {
+	potential = {
+		country_event = 186
+		tag = MXR
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2038505 }
+		not = { has_country_flag = decision_2038505 } }
+	allow = {
+		USA = { war_with = GER }
+		}
+	effect = { country_event = 188
+		set_country_flag = decision_2038505 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2191545_decision = {
+	potential = {
+		GER = { war_with = ENG }
+		exists = MEX
+		not = {
+			 exists = MXR
+			 }
+		not = {
+			country_event = 298
+			GER = { war_with = USA }
+			GER = { war_with = MEX }
+			USA = { war_with = MEX }
+			GER = { alliance_with = MEX }
+			USA = { alliance_with = MEX }
+			}
+		tag = GER
+		date = 1917.6.28
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2191545 }
+		not = { has_country_flag = decision_2191545 } }
+	allow = {
+		#MANUALFIX policy = { country = USA type = interventionism value = 5 }
+		}
+	effect = { country_event = 443
+		set_country_flag = decision_2191545 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+2191556_decision = {
+	potential = {
+		exists = MXR
+		not = {
+			 exists = MEX
+			 }
+		GER = { war_with = ENG }
+		not = {
+			country_event = 442
+			GER = { war_with = USA }
+			GER = { war_with = MXR }
+			USA = { war_with = MXR }
+			GER = { alliance_with = MXR }
+			USA = { alliance_with = MXR }
+			}
+		tag = GER
+		date = 1917.6.28
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2191556 }
+		not = { has_country_flag = decision_2191556 } }
+	allow = {
+		#MANUALFIX policy = { country = USA type = interventionism value = 5 }
+		}
+	effect = { country_event = 444
+		set_country_flag = decision_2191556 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2250500_decision = {
+	potential = {
+		war = yes
+		not = {
+			 MEX = { war_with = USA }
+			 }
+		not = {
+			 MXR = { war_with = USA }
+			 }
+		tag = MXR
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2250500 }
+		not = { has_country_flag = decision_2250500 } }
+	allow = {
+		money =  10
+		9203 = { country_units_in_province = MXR }
+		}
+	effect = { country_event = 492
+		set_country_flag = decision_2250500 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+2250503_decision = {
+	potential = {
+		war = yes
+		not = {
+			 MEX = { war_with = USA }
+			 }
+		not = {
+			 MXR = { war_with = USA }
+			 }
+		tag = MXR
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2250503 }
+		not = { has_country_flag = decision_2250503 } }
+	allow = {
+		money =  10
+		9147 = { country_units_in_province = MXR }
+		}
+	effect = { country_event = 495
+		set_country_flag = decision_2250503 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+2250504_decision = {
+	potential = {
+		war = yes
+		not = {
+			 MEX = { war_with = USA }
+			 }
+		not = {
+			 MXR = { war_with = USA }
+			 }
+		tag = MXR
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2250504 }
+		not = { has_country_flag = decision_2250504 } }
+	allow = {
+		money =  10
+		9269 = { country_units_in_province = MXR }
+		}
+	effect = { country_event = 496
+		set_country_flag = decision_2250504 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+2250505_decision = {
+	potential = {
+		war = yes
+		not = {
+			 MEX = { war_with = USA }
+			 }
+		not = {
+			 MXR = { war_with = USA }
+			 }
+		tag = MXR
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2250505 }
+		not = { has_country_flag = decision_2250505 } }
+	allow = {
+		money =  10
+		or = {
+			9419 = { country_units_in_province = MXR }
+			9388 = { country_units_in_province = MXR }
+			}
+		}
+	effect = { country_event = 497
+		set_country_flag = decision_2250505 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+2250506_decision = {
+	potential = {
+		war = yes
+		not = {
+			 MEX = { war_with = USA }
+			 }
+		not = {
+			 MXR = { war_with = USA }
+			 }
+		tag = MXR
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2250506 }
+		not = { has_country_flag = decision_2250506 } }
+	allow = {
+		money =  10
+		7369 = { country_units_in_province = MXR }
+		}
+	effect = { country_event = 498
+		set_country_flag = decision_2250506 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2049522_decision = {
+	potential = {
+		exists = MXR
+		has_country_flag = USA_Mexican_Raids
+		tag = USA
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2049522 }
+		not = { has_country_flag = decision_2049522 } }
+	allow = {
+		war = no
+		}
+	effect = { country_event = 529
+		set_country_flag = decision_2049522 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+2049523_decision = {
+	potential = {
+		exists = MEX
+		country_event = 528
+		USA = { war_with = MXR }
+		not = {
+			 USA = { war_with = MEX }
+			 }
+		not = {
+			 country_event = 540
+			 }
+		tag = USA
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2049523 }
+		not = { has_country_flag = decision_2049523 } }
+	allow = {
+		relation = { who = MEX value = 75 }
+		}
+	effect = { country_event = 530
+		set_country_flag = decision_2049523 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+2049525_decision = {
+	potential = {
+		country_event = 530
+		USA = { war_with = MXR }
+		not = {
+			 USA = { war_with = MEX }
+			 }
+		tag = USA
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2049525 }
+		not = { has_country_flag = decision_2049525 } }
+	allow = {
+		not = {
+			 USA = { war_with = GER }
+			 }
+		not = {
+			 #MANUALFIX policy = { type = interventionism value = 4 }
+			 }
+		}
+	effect = { country_event = 532
+		set_country_flag = decision_2049525 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+2049535_decision = {
+	potential = {
+		exists = MXR
+		not = {
+			 exists = MEX
+			 }
+		country_event = 528
+		USA = { war_with = MXR }
+		not = {
+			 USA = { war_with = MXR }
+			 }
+		not = {
+			 country_event = 529
+			 }
+		tag = USA
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2049535 }
+		not = { has_country_flag = decision_2049535 } }
+	allow = {
+		relation = { who = MXR value = 75 }
+		}
+	effect = { country_event = 533
+		set_country_flag = decision_2049535 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+2049537_decision = {
+	potential = {
+		country_event = 540
+		USA = { war_with = MXR }
+		not = {
+			 USA = { war_with = MXR }
+			 }
+		tag = USA
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2049537 }
+		not = { has_country_flag = decision_2049537 } }
+	allow = {
+		not = {
+			 USA = { war_with = GER }
+			 }
+		not = {
+			 #MANUALFIX policy = { type = interventionism value = 4 }
+			 }
+		}
+	effect = { country_event = 535
+		set_country_flag = decision_2049537 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+2049526_decision = {
+	potential = {
+		or = {
+			country_event = 530
+			country_event = 533
+			}
+		or = {
+			USA = { war_with = MXR }
+			USA = { war_with = MXR }
+			USA = { war_with = MEX }
+			}
+		not = {
+			GER = { alliance_with = MXR }
+			GER = { alliance_with = MXR }
+			GER = { alliance_with = MEX }
+			#MANUALFIX region = { region = "Southwest US" country = -2 value = 5 }
+			#MANUALFIX region = { region = "Southcentral US" country = -2 value = 5 }
+			}
+		tag = USA
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2049526 }
+		not = { has_country_flag = decision_2049526 } }
+	allow = {
+		or = {
+			USA = { war_with = GER }
+			#MANUALFIX policy = { type = interventionism value = 4 }
+			}
+		}
+	effect = { country_event = 536
+		set_country_flag = decision_2049526 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

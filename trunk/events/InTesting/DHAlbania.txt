@@ -1,0 +1,197 @@
+country_event = {
+id = 1
+title = "DH_EVENT_2058500_TITLE"
+desc = "DH_EVENT_2058500_DESC"
+picture = "foreign_volunteers"
+
+trigger = { 
+tag = ALB
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2058500 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2058500_Option1"
+	ai_chance = { factor = 50
+		 }
+	country_event = 369
+	random_country = { limit = { tag = THIS 
+			 FRA = { war_with = AUH }
+			  } 
+		country_event = 94
+		 }
+	
+set_global_flag = 2058500_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2058500_Option2"
+	ai_chance = { factor = 50
+		 }
+	war = { target = SER }
+	
+set_global_flag = 2058500_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 2
+title = "DH_EVENT_2058501_TITLE"
+desc = "DH_EVENT_2058501_DESC"
+picture = "diplomatic_campaign"
+
+trigger = { 
+tag = ALB
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2058501 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2058501_Option7"
+	
+set_global_flag = 2058501_EVENT_DONE
+
+}
+
+}
+
+
+
+
+country_event = {
+id = 368
+title = "DH_EVENT_2084503_TITLE"
+desc = "DH_EVENT_2084503_DESC"
+picture = "news_paper"
+
+trigger = {
+	exists = ALB
+	THIS = { surrender_progress = 50 }
+	THIS = { lost_IC = 50 }
+	or = {
+		4368 = { controlled_by = SER }
+		4555 = { controlled_by = SER }
+		4495 = { controlled_by = SER }
+		}
+	not = {
+		3912 = { controlled_by = SER }
+		4243 = { controlled_by = SER }
+		SER = { war_with = ALB }
+		SER = { alliance_with = ALB }
+		}
+	
+tag = SER
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2084503 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2084503_Option1"
+	country_event = 1
+	
+set_global_flag = 2084503_EVENT_DONE
+
+}
+
+option = {
+	 #MANUALFIX trigger option random_country = { limit = { tag = THIS THIS = { ai = yes }  } } 
+	name = "DH_EVENT_2084503_Option2"
+	#Removed Blank command
+	
+set_global_flag = 2084503_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 94
+title = "DH_EVENT_2002518_TITLE"
+desc = "DH_EVENT_2002518_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = FRA
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2002518 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2002518_Option7"
+	#Removed Blank command
+	
+set_global_flag = 2002518_EVENT_DONE
+
+}
+
+}
+country_event = {
+id = 369
+title = "DH_EVENT_2084504_TITLE"
+desc = "DH_EVENT_2084504_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = SER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2084504 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2084504_Option7"
+	THIS = { inherit = ALB }
+	# MANUALFIX strength command = { type = strength which = land when = 1 where = 1 value = -0.25 }
+	# MANUALFIX disorg command = { type = disorg_division which = -1 where = 50 }
+	
+set_global_flag = 2084504_EVENT_DONE
+
+}
+
+}
+
+
+
+
+
+

@@ -1,4 +1,427 @@
+country_event = {
+id = 3
+title = "DH_EVENT_2020500_TITLE"
+desc = "DH_EVENT_2020500_DESC"
+picture = "diplomatic_campaign"
 
+trigger = { 
+tag = BUL
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2020500 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2020500_Option1"
+	ai_chance = { factor = 95
+		 }
+	join_faction = axis
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX policy = { type = professional_army value = 7 }
+				 }  } 
+		#country_event = 1350007 #MANUALFIX unknown event trigger
+		 }
+	country_event = 414
+	
+set_global_flag = 2020500_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2020500_Option2"
+	ai_chance = { factor = 5
+		 }
+	relation = { who = GER value = -15  }
+	
+set_global_flag = 2020500_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 4
+title = "DH_EVENT_2020501_TITLE"
+desc = "DH_EVENT_2020501_DESC"
+picture = "diplomatic_campaign"
+
+trigger = { 
+tag = BUL
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2020501 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_2020501_Option1"
+	join_faction = axis
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX policy = { type = professional_army value = 7 }
+				 }  } 
+		#country_event = 1350007 #MANUALFIX unknown event trigger
+		 }
+	country_event = 414
+	
+set_global_flag = 2020501_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 0
+		 }
+	name = "DH_EVENT_2020501_Option2"
+	relation = { who = GER value = -15  }
+	
+set_global_flag = 2020501_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 5
+title = "DH_EVENT_2020502_TITLE"
+desc = "DH_EVENT_2020502_DESC"
+picture = "diplomatic_campaign"
+
+trigger = {
+	#NOEQUIVALENT random =  20
+	or = {
+		BUL = { war_with = RUS }
+		BUL = { war_with = FRA }
+		}
+	or = {
+		or = {
+			and = {
+				or = {
+					not = {
+						 country_event = 482
+						 }
+					exists = SER
+					}
+				dissent = 10
+				}
+			dissent = 30
+			}
+		and = {
+			THIS = { surrender_progress = 75 }
+			THIS = { lost_IC = 75 }
+			}
+		and = {
+			THIS = { surrender_progress = 55 }
+			not = {
+				 4181 = { controlled_by = THIS }
+				 }
+			}
+		and = {
+			#NOEQUIVALENT random =  50
+			BUL = { ai = yes }
+			or = {
+				country_event = 463
+				country_event = 101
+				}
+			}
+		}
+	
+tag = BUL
+date = 1914.6.28
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2020502 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  7 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2020502_Option7"
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	random_country = { limit = { tag = THIS 
+			 BUL = { war_with = RUS }
+			  } 
+		THIS = { end_war = RUS }
+		 }
+	random_country = { limit = { tag = THIS 
+			 BUL = { war_with = FRA }
+			  } 
+		THIS = { end_war = FRA }
+		 }
+	random_country = { limit = { tag = THIS 
+			 BUL = { war_with = SOV }
+			  } 
+		THIS = { end_war = SOV }
+		 }
+	dissent = 5 
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = ROM
+				 }  } 
+		release = ROM
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = SER
+				 }  } 
+		release = SER
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = ALB
+				 }  } 
+		release = ALB
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = GRE
+				 }  } 
+		release = GRE
+		 }
+	# MANUALFIX Demobilize command = { type = demobilize which = land when = 0 where = 0 value = 5 }
+	# MANUALFIX strength command = { type = strength which = land when = 0 where = 0 value = 0.33 }
+	
+set_global_flag = 2020502_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 6
+title = "DH_EVENT_2020503_TITLE"
+desc = "DH_EVENT_2020503_DESC"
+picture = "diplomatic_campaign"
+
+trigger = {
+	#NOEQUIVALENT random =  25
+	country_event = 4
+	or = {
+		not = {
+			 exists = AUH
+			 }
+		country_event = 101
+		}
+	
+tag = BUL
+date = 1914.6.28
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2020503 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2020503_Option7"
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = ROM
+				 }  } 
+		release = ROM
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = SER
+				 }  } 
+		release = SER
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = ALB
+				 }  } 
+		release = ALB
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = GRE
+				 }  } 
+		release = GRE
+		 }
+	# MANUALFIX secede region command = { type = secederegion which = ROM value = "Romania" }
+	# MANUALFIX secede area command = { type = secedearea which = SER value = "East Serbia" }
+	# MANUALFIX secede area command = { type = secedearea which = SER value = "Central Serbia" }
+	# MANUALFIX secede area command = { type = secedearea which = ALB value = "Albania" }
+	# MANUALFIX secede area command = { type = secedearea which = GRE value = "Thrace" }
+	# MANUALFIX secede area command = { type = secedearea which = GRE value = "Attica" }
+	# MANUALFIX secede area command = { type = secedearea which = GRE value = "Greek Island" }
+	BUL = { money = -200 }
+	SER = { money = 200 }
+	random_country = { limit = { tag = THIS 
+			 FRA = { alliance_with = GRE }
+			  } 
+		BUL = { money = -200 }
+		GRE = { money = 200 }
+		 }
+	BUL = { money = -200 }
+	FRA = { money = 200 }
+	head_of_state = 95001 
+	
+set_global_flag = 2020503_EVENT_DONE
+
+}
+
+}
+country_event = {
+id = 11
+title = "DH_EVENT_2001505_TITLE"
+desc = "DH_EVENT_2001505_DESC"
+picture = "varyag"
+
+trigger = {
+	country_event = 8
+	not = {
+		 4501 = { controlled_by = TUR }
+		 }
+	
+tag = ENG
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2001505 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  1 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2001505_Option1"
+	dissent = -1 
+	set_global_flag = SLEEPEVENT_2001506 
+	set_global_flag = SLEEPEVENT_2001507 
+	
+set_global_flag = 2001505_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 12
+title = "DH_EVENT_2001506_TITLE"
+desc = "DH_EVENT_2001506_DESC"
+picture = "varyag"
+
+trigger = {
+	#NOEQUIVALENT random =  5
+	country_event = 8
+	4501 = { controlled_by = TUR }
+	4611 = { controlled_by = GRE }
+	ENG = { war_with = TUR }
+	not = {
+		#country_event = 2145501 #MANUALFIX unknown event trigger
+		FRA = { alliance_with = GRE }
+		ENG = { war_with = GRE }
+		}
+	
+tag = ENG
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2001506 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  15 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2001506_Option1"
+	country_event = 149
+	dissent = -2 
+	relation = { who = GRE value = -20  }
+	
+set_global_flag = 2001506_EVENT_DONE
+
+}
+
+option = {
+	 #MANUALFIX trigger option random_country = { limit = { tag = THIS THIS = { ai = yes }  } } 
+	name = "DH_EVENT_2001506_Option2"
+	dissent = -2 
+	relation = { who = GRE value = 5  }
+	
+set_global_flag = 2001506_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 13
+title = "DH_EVENT_2001507_TITLE"
+desc = "DH_EVENT_2001507_DESC"
+picture = "varyag"
+
+trigger = {
+	country_event = 9
+	ENG = { war_with = TUR }
+	4501 = { controlled_by = TUR }
+	not = {
+		country_event = 10
+		#country_event = 2145501 #MANUALFIX unknown event trigger
+		}
+	
+tag = ENG
+date = 1915.12.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2001507 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  15 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2001507_Option1"
+	dissent = 3 
+	
+set_global_flag = 2001507_EVENT_DONE
+
+}
+
+}
 country_event = {
 id = 84
 title = "DH_EVENT_2002507_TITLE"
@@ -9,10 +432,13 @@ trigger = {
 	#NOEQUIVALENT random =  25
 	exists = GRE
 	FRA = { war_with = AUH }
+	#country_event = 2145501 #MANUALFIX unknown event trigger
 	not = {
-		GRE = { faction = allies }
-		GRE = { faction = axis }
+		FRA = { alliance_with = GRE }
+		AUH = { alliance_with = GRE }
 		FRA = { war_with = TUR }
+		country_event = 104
+		country_event = 105
 		}
 	2613 = { controlled_by = THIS }
 	
@@ -61,16 +487,22 @@ desc = "DH_EVENT_2002508_DESC"
 picture = "news_paper"
 
 trigger = {
+	country_event = 313
 	exists = GRE
 	FRA = { war_with = AUH }
 	not = {
-		GRE = { faction = allies }
-		GRE = { faction = axis }
+		GRE = { alliance_with = AUH }
+		GRE = { alliance_with = FRA }
+		country_event = 104
+		country_event = 105
 		}
 	exists = SER
 	or = {
 		#NOEQUIVALENT random =  8
-
+		and = {
+			country_event = 11
+			#NOEQUIVALENT random =  18
+			}
 		and = {
 			not = {
 				 TUR = { war_with = FRA }
@@ -78,6 +510,7 @@ trigger = {
 			#NOEQUIVALENT random =  23
 			}
 		and = {
+			country_event = 11
 			not = {
 				 TUR = { war_with = FRA }
 				 }
@@ -102,15 +535,14 @@ mean_time_to_happen = { days =  15 }
 is_triggered_only = yes
 option = {
 	name = "DH_EVENT_2002508_Option7"
-	random_country = { limit = { tag = GRE	
+	random_country = { limit = { tag = THIS 
 			 not = {
-		BUL = { faction = axis }
+				 GER = { alliance_with = BUL }
 				 }  } 
 		country_event = 142
 		 }
-	random_country = { limit = { tag = GRE 
-	
-		BUL = { faction = axis }
+	random_country = { limit = { tag = THIS 
+			 GER = { alliance_with = BUL }
 			  } 
 		country_event = 141
 		 }
@@ -161,48 +593,6 @@ set_global_flag = 2002509_EVENT_DONE
 
 }
 
-country_event = {
-id = 87
-title = "DH_EVENT_2002510_TITLE"
-desc = "DH_EVENT_2002510_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = FRA
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2002510 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2002510_Option1"
-	ai_chance = { factor = 75
-		 }
-	#country_event = 10
-	manpower = -20 
-	supplies = -500 
-	
-set_global_flag = 2002510_EVENT_DONE
-
-}
-
-option = {
-	name = "DH_EVENT_2002510_Option2"
-	ai_chance = { factor = 25
-		 }
-	#Removed Blank command
-	
-set_global_flag = 2002510_EVENT_DONE
-
-}
-
-}
 
 country_event = {
 id = 88
@@ -295,12 +685,14 @@ picture = "news_paper"
 trigger = {
 	#NOEQUIVALENT random =  5
 	exists = GRE
-	has_global_flag = 2019510_EVENT_DONE
+	country_event = 147
 	has_global_flag= greece_mobilized
 	FRA = { war_with = AUH }
 	not = {
-		GRE = { faction = allies }
-		GRE = { faction = axis }
+		GRE = { alliance_with = FRA }
+		GRE = { alliance_with = AUH }
+		country_event = 104
+		country_event = 105
 		}
 	
 tag = FRA
@@ -429,65 +821,7 @@ set_global_flag = 2002517_EVENT_DONE
 
 }
 
-country_event = {
-id = 94
-title = "DH_EVENT_2002518_TITLE"
-desc = "DH_EVENT_2002518_DESC"
-picture = "news_paper"
 
-trigger = { 
-tag = FRA
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2002518 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2002518_Option7"
-	#Removed Blank command
-	
-set_global_flag = 2002518_EVENT_DONE
-
-}
-
-}
-
-country_event = {
-id = 95
-title = "DH_EVENT_2002519_TITLE"
-desc = "DH_EVENT_2002519_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = FRA
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2002519 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2002519_Option7"
-	ai_chance = { factor = 100
-		 }
-	relation = { who = GRE value = -15  }
-	
-set_global_flag = 2002519_EVENT_DONE
-
-}
-
-}
 
 country_event = {
 id = 96
@@ -532,8 +866,10 @@ trigger = {
 	has_global_flag= entente_hostility
 	FRA = { war_with = AUH }
 	not = {
-		GRE = { faction = allies }
-		GRE = { faction = axis }
+		GRE = { alliance_with = FRA }
+		GRE = { alliance_with = AUH }
+		country_event = 104
+		country_event = 105
 		}
 	
 tag = FRA
@@ -585,11 +921,13 @@ trigger = {
 	exists = GRE
 	has_global_flag= entente_hostility
 	has_global_flag= greece_mobilized
-	has_global_flag = 2019518_EVENT_DONE
+	country_event = 154
 	FRA = { war_with = AUH }
 	not = {
-		GRE = { faction = allies }
-		GRE = { faction = axis }
+		GRE = { alliance_with = FRA }
+		GRE = { alliance_with = AUH }
+		country_event = 104
+		country_event = 105
 		}
 	
 tag = FRA
@@ -706,11 +1044,14 @@ trigger = {
 	exists = GRE
 	has_global_flag= entente_hostility
 	has_global_flag= greece_mobilized
-	has_global_flag = 2002523_EVENT_DONE
+	country_event = 343
+	country_event = 99
 	FRA = { war_with = AUH }
 	not = {
-		GRE = { faction = allies }
-		GRE = { faction = axis }
+		GRE = { alliance_with = FRA }
+		GRE = { alliance_with = AUH }
+		country_event = 104
+		country_event = 105
 		}
 	
 tag = FRA
@@ -758,7 +1099,7 @@ picture = "news_paper"
 
 trigger = { 
 tag = GRE
-date = 1914.1.1
+date = 1914.7.1
 
 not = { date = 1925.12.30
  }
@@ -817,7 +1158,12 @@ option = {
 	name = "DH_EVENT_2019501_Option2"
 	dissent = 5 
 	create_alliance = SER
-
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX policy = { type = professional_army value = 7 }
+				 }  } 
+		#country_event = 1350007 #MANUALFIX unknown event trigger
+		 }
 	
 set_global_flag = 2019501_EVENT_DONE
 
@@ -849,8 +1195,13 @@ option = {
 		 }
 	name = "DH_EVENT_2019502_Option1"
 	dissent = 3 
-	GRE = { join_faction = allies }
-
+	join_faction = allies
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX policy = { type = professional_army value = 7 }
+				 }  } 
+		#country_event = 1350007 #MANUALFIX unknown event trigger
+		 }
 	
 set_global_flag = 2019502_EVENT_DONE
 
@@ -903,7 +1254,12 @@ option = {
 	name = "DH_EVENT_2019503_Option2"
 	dissent = 5 
 	create_alliance = SER
-
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX policy = { type = professional_army value = 7 }
+				 }  } 
+		#country_event = 1350007 #MANUALFIX unknown event trigger
+		 }
 	
 set_global_flag = 2019503_EVENT_DONE
 
@@ -936,8 +1292,13 @@ option = {
 		 }
 	country_event = 86
 	dissent = 3 
-	GRE = { join_faction = allies }
-
+	join_faction = allies
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX policy = { type = professional_army value = 7 }
+				 }  } 
+		#country_event = 1350007 #MANUALFIX unknown event trigger
+		 }
 	
 set_global_flag = 2019504_EVENT_DONE
 
@@ -979,8 +1340,13 @@ option = {
 	ai_chance = { factor = 5
 		 }
 	dissent = 3 
-	GRE = { join_faction = allies }
-
+	join_faction = allies
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX policy = { type = professional_army value = 7 }
+				 }  } 
+		#country_event = 1350007 #MANUALFIX unknown event trigger
+		 }
 	country_event = 86
 	
 set_global_flag = 2019505_EVENT_DONE
@@ -1005,7 +1371,7 @@ title = "DH_EVENT_2019506_TITLE"
 desc = "DH_EVENT_2019506_DESC"
 picture = "news_paper"
 
-trigger = { 
+trigger = {
 	#NOEQUIVALENT random =  15
 	
 tag = GRE
@@ -1041,7 +1407,7 @@ picture = "news_paper"
 
 trigger = {
 	#NOEQUIVALENT random =  15
-	has_global_flag = 2019505_EVENT_DONE
+	country_event = 142
 	
 tag = GRE
 date = 1915.8.1
@@ -1076,15 +1442,15 @@ picture = "news_paper"
 
 trigger = {
 	#NOEQUIVALENT random =  20
+	country_event = 8
 	not = {
-		has_global_flag = 2002508_EVENT_DONE
-		GRE = { faction = allies }
+		country_event = 85
+		FRA = { alliance_with = GRE }
 		}
 	
 tag = GRE
 date = 1914.1.1
-SER = { war_with = AUH }
-ENG = { war_with = TUR }
+
 not = { date = 1925.12.30
  }
 
@@ -1104,7 +1470,7 @@ option = {
 	dissent = 4 
 	country_event = 92
 	clr_global_flag = venizelos_incabinet 
-	head_of_government = 90178 
+	head_of_government = 90178
 	
 set_global_flag = 2019508_EVENT_DONE
 
@@ -1115,7 +1481,13 @@ option = {
 		 }
 	name = "DH_EVENT_2019508_Option2"
 	dissent = 5 
-	GRE = { join_faction = allies }
+	join_faction = allies
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX policy = { type = professional_army value = 7 }
+				 }  } 
+		#country_event = 1350007 #MANUALFIX unknown event trigger
+		 }
 	
 set_global_flag = 2019508_EVENT_DONE
 
@@ -1130,17 +1502,25 @@ desc = "DH_EVENT_2019509_DESC"
 picture = "news_paper"
 
 trigger = {
-	has_global_flag = 2019505_EVENT_DONE
+	country_event = 142
 	not = {
 		head_of_government = 90010
 		has_global_flag= venizelos_incabinet
-		has_global_flag = 2019506_EVENT_DONE
-		GRE = { faction = allies }
-		GRE = { faction = axis }
+		country_event = 143
+		GER = { alliance_with = GRE }
+		FRA = { alliance_with = GRE }
 		FRA = { war_with = GRE }
 		}
-
-		
+	or = {
+		#NOEQUIVALENT random =  20
+		and = {
+			#NOEQUIVALENT random =  40
+			or = {
+				country_event = 8
+				country_event = 7
+				}
+			}
+		}
 	
 tag = GRE
 date = 1915.1.1
@@ -1168,7 +1548,7 @@ option = {
 	random_country = { limit = { tag = THIS 
 			or = {
 				FRA = { war_with = BUL }
-		BUL = { faction = allies }
+				FRA = { alliance_with = BUL }
 				}
 			 } 
 		country_event = 89
@@ -1190,7 +1570,7 @@ trigger = {
 	#NOEQUIVALENT random =  30
 	not = {
 		has_global_flag= venizelos_incabinet
-		has_global_flag = 2002508_EVENT_DONE
+		country_event = 85
 		}
 	
 tag = GRE
@@ -1213,7 +1593,7 @@ option = {
 	dissent = -2 
 	country_event = 93
 	set_global_flag = venizelos_incabinet 
-	head_of_government = 90010 
+	head_of_government = 90010
 	
 set_global_flag = 2019510_EVENT_DONE
 
@@ -1228,16 +1608,15 @@ desc = "DH_EVENT_2019511_DESC"
 picture = "news_paper"
 
 trigger = {
-
+	country_event = 413
 	war = no
 	not = {
-		 has_global_flag = 2002508_EVENT_DONE
+		 country_event = 85
 		 }
 	
 tag = GRE
 date = 1914.1.1
-SER = { war_with = AUH }
-BUL = { faction = axis }
+
 not = { date = 1925.12.30
  }
 
@@ -1255,8 +1634,13 @@ option = {
 	ai_chance = { factor = 2
 		 }
 	dissent = 4 
-	GRE = { join_faction = allies }
-
+	join_faction = allies
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX policy = { type = professional_army value = 7 }
+				 }  } 
+		#country_event = 1350007 #MANUALFIX unknown event trigger
+		 }
 	
 set_global_flag = 2019511_EVENT_DONE
 
@@ -1267,7 +1651,12 @@ option = {
 	ai_chance = { factor = 95
 		 }
 	dissent = 1 
-
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX policy = { type = professional_army value = 7 }
+				 }  } 
+		#country_event = 1350007 #MANUALFIX unknown event trigger
+		 }
 	set_global_flag = greece_mobilized 
 	
 set_global_flag = 2019511_EVENT_DONE
@@ -1320,8 +1709,13 @@ option = {
 	ai_chance = { factor = 0
 		 }
 	dissent = 5 
-	GRE = { join_faction = allies }
-
+	join_faction = allies
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX policy = { type = professional_army value = 7 }
+				 }  } 
+		#country_event = 1350007 #MANUALFIX unknown event trigger
+		 }
 	
 set_global_flag = 2019512_EVENT_DONE
 
@@ -1363,7 +1757,11 @@ option = {
 	ai_chance = { factor = 0
 		 }
 	dissent = 1 
-
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX policy = { type = professional_army value = 7 }
+			  } 
+		#country_event = 1350005 #MANUALFIX unknown event trigger
+		 }
 	country_event = 91
 	clr_global_flag = greece_mobilized 
 	relation = { who = FRA value = 10  }
@@ -1382,10 +1780,11 @@ picture = "news_paper"
 
 trigger = {
 	#NOEQUIVALENT random =  15
+	country_event = 12
 	has_global_flag= venizelos_incabinet
 	not = {
-		GRE = { faction = allies }
-		GRE = { faction = axis }
+		FRA = { alliance_with = GRE }
+		GER = { alliance_with = GRE }
 		}
 	
 tag = GRE
@@ -1409,7 +1808,7 @@ option = {
 		 }
 	dissent = 1 
 	clr_global_flag = venizelos_incabinet 
-	head_of_government = 90199 
+	head_of_government = 90199
 	country_event = 92
 	
 set_global_flag = 2019514_EVENT_DONE
@@ -1436,14 +1835,15 @@ picture = "news_paper"
 
 trigger = {
 	#NOEQUIVALENT random =  20
+	country_event = 368
 	not = {
-		GRE = { faction = allies }
+		 FRA = { alliance_with = GRE }
 		 }
 	exists = SER
 	
 tag = GRE
 date = 1914.1.1
-GRE = { war_with = AUH }
+
 not = { date = 1925.12.30
  }
 
@@ -1507,11 +1907,11 @@ picture = "news_paper"
 
 trigger = {
 	#NOEQUIVALENT random =  25
-	has_global_flag = 2019515_EVENT_DONE
-	has_global_flag = 2019511_EVENT_DONE
+	country_event = 152
+	country_event = 148
 	FRA = { war_with = BUL }
 	not = {
-		GRE = { faction = allies }
+		 FRA = { alliance_with = GRE }
 		 }
 	
 tag = GRE
@@ -1592,7 +1992,7 @@ picture = "news_paper"
 
 trigger = {
 	#NOEQUIVALENT random =  25
-	has_global_flag = 2019517_EVENT_DONE
+	country_event = 153
 	head_of_government = 90199
 	
 tag = GRE
@@ -1647,7 +2047,11 @@ option = {
 	ai_chance = { factor = 100
 		 }
 	country_event = 99
-
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX policy = { type = professional_army value = 7 }
+			  } 
+		#country_event = 1350005 #MANUALFIX unknown event trigger
+		 }
 	relation = { who = FRA value = 15  }
 	
 set_global_flag = 2019520_EVENT_DONE
@@ -1674,7 +2078,7 @@ desc = "DH_EVENT_2019521_DESC"
 picture = "news_paper"
 
 trigger = {
-	has_global_flag = 2002522_EVENT_DONE
+	country_event = 98
 	
 tag = GRE
 date = 1914.1.1
@@ -1737,12 +2141,17 @@ option = {
 	ai_chance = { factor = 100
 		 }
 	dissent = 3 
-	GRE = { join_faction = allies }
-
+	join_faction = allies
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX policy = { type = professional_army value = 7 }
+				 }  } 
+		#country_event = 1350007 #MANUALFIX unknown event trigger
+		 }
 	clr_global_flag = entente_hostility 
 	clr_global_flag = greece_mobilized 
-	head_of_state = 90211 
-	head_of_government = 90010 
+	head_of_state = 90211
+	head_of_government = 90010
 	relation = { who = FRA value = 50  }
 	
 set_global_flag = 2019522_EVENT_DONE
@@ -1760,9 +2169,14 @@ option = {
 				 AUH = { war_with = GRE }
 				 }
 			 } 
-	GRE = { join_faction = axis }
+		join_faction = axis
 		 }
-
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX policy = { type = professional_army value = 7 }
+				 }  } 
+		#country_event = 1350007 #MANUALFIX unknown event trigger
+		 }
 	
 set_global_flag = 2019522_EVENT_DONE
 
@@ -1886,6 +2300,7 @@ desc = "DH_EVENT_2019525_DESC"
 picture = "news_paper"
 
 trigger = {
+	#country_event = 2019523 #MANUALFIX unknown event trigger
 	or = {
 		has_global_flag= GRE_against_U08
 		has_global_flag= GRE_against_OTT
@@ -1941,11 +2356,13 @@ option = {
 		 }
 	random_country = { limit = { tag = THIS 
 			 has_global_flag= GRE_against_U09
+			 country_event = 1
 			 not = {
 				 exists = ALB
 				 }  } 
 		 }
 	random_country = { limit = { tag = THIS 
+			 country_event = 1
 			 exists = ALB
 			  } 
 		 }
@@ -2042,6 +2459,7 @@ desc = "DH_EVENT_2019526_DESC"
 picture = "news_paper"
 
 trigger = {
+	#country_event = 2019523 #MANUALFIX unknown event trigger
 	has_global_flag= GRE_against_FRA
 	
 tag = GRE
@@ -2081,6 +2499,7 @@ option = {
 		ITA = { money = 100 }
 		 }
 	random_country = { limit = { tag = THIS 
+			 country_event = 1
 			 exists = ALB
 			  } 
 		 }
@@ -2120,5 +2539,271 @@ set_global_flag = 2019526_EVENT_DONE
 
 }
 
+country_event = {
+id = 413
+title = "DH_EVENT_2191508_TITLE"
+desc = "DH_EVENT_2191508_DESC"
+picture = "diplomatic_campaign"
 
+trigger = {
+	#NOEQUIVALENT random =  10
+	exists = BUL
+	not = {
+		 exists = SER
+		 }
+	GER = { war = yes }
+	not = {
+		 BUL = { war_with = GER }
+		 }
+	not = {
+		 country_event = 101
+		 }
+	not = {
+		 BUL = { alliance_with = GER }
+		 }
+	not = {
+		 BUL = { alliance_with = FRA }
+		 }
+	
+tag = GER
+date = 1914.6.28
+
+not = { date = 1914.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191508 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  3 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2191508_Option1"
+	ai_chance = { factor = 100
+		 }
+	country_event = 3
+	
+set_global_flag = 2191508_EVENT_DONE
+
+}
+
+option = {
+	 #MANUALFIX trigger option random_country = { limit = { tag = THIS THIS = { ai = yes }  } } 
+	name = "DH_EVENT_2191508_Option2"
+	ai_chance = { factor = 0
+		 }
+	#Removed Blank command
+	
+set_global_flag = 2191508_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 414
+title = "DH_EVENT_2191509_TITLE"
+desc = "DH_EVENT_2191509_DESC"
+picture = "diplomatic_campaign"
+
+trigger = { 
+tag = GER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191509 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2191509_Option7"
+	relation = { who = BUL value = 10  }
+	country_event = 140
+	
+set_global_flag = 2191509_EVENT_DONE
+
+}
+
+}
+
+country_event = {
+id = 415
+title = "DH_EVENT_2191510_TITLE"
+desc = "DH_EVENT_2191510_DESC"
+picture = "diplomatic_campaign"
+
+trigger = {
+	#NOEQUIVALENT random =  8
+	exists = SER
+	exists = BUL
+	not = {
+		#country_event = 2145501 #MANUALFIX unknown event trigger
+		AUH = { alliance_with = BUL }
+		SER = { alliance_with = BUL }
+		AUH = { war_with = BUL }
+		}
+	or = {
+		#country_event = 2145500 #MANUALFIX unknown event trigger
+		AUH = { alliance_with = TUR }
+		}
+	
+tag = AUH
+date = 1914.11.12
+
+not = { date = 1914.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191510 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  14 }
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_2191510_Option1"
+	country_event = 4
+	
+set_global_flag = 2191510_EVENT_DONE
+
+}
+
+option = {
+	 #MANUALFIX trigger option random_country = { limit = { tag = THIS THIS = { ai = yes }  } } 
+	ai_chance = { factor = 0
+		 }
+	name = "DH_EVENT_2191510_Option2"
+	#Removed Blank command
+	
+set_global_flag = 2191510_EVENT_DONE
+
+}
+
+}
+country_event = {
+id = 453
+title = "DH_EVENT_2192502_TITLE"
+desc = "DH_EVENT_2192502_DESC"
+trigger = {
+	country_event = 450
+	not = {
+		 country_event = 472
+		 }
+	#NOEQUIVALENT random =  25
+	
+tag = AUH
+date = 1914.6.28
+
+not = { date = 1914.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2192502 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  1 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2192502_Option7"
+	neutrality = -5
+	threat = { who = all value = 5  }
+	war = { target = SER }
+	dissent = -3 
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX policy = { type = professional_army value = 7 }
+				 }  } 
+		#country_event = 1350007 #MANUALFIX unknown event trigger
+		 }
+	#country_event = 314
+	country_event = 138
+	
+set_global_flag = 2192502_EVENT_DONE
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+country_event = {
+id = 479
+title = "DH_EVENT_2192529_TITLE"
+desc = "DH_EVENT_2192529_DESC"
+trigger = {
+	#NOEQUIVALENT random =  20
+	exists = BUL
+	exists = SER
+	FRA = { war_with = AUH }
+	not = {
+		BUL = { alliance_with = AUH }
+		BUL = { alliance_with = FRA }
+		#country_event = 2192505 #MANUALFIX unknown event trigger
+		country_event = 463
+		country_event = 4
+		}
+	
+tag = AUH
+date = 1915.2.1
+
+not = { date = 1915.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2192529 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  7 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2192529_Option7"
+	ai_chance = { factor = 100
+		 }
+	country_event = 4
+	
+set_global_flag = 2192529_EVENT_DONE
+
+}
+
+}
 
