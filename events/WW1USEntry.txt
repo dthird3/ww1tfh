@@ -199,7 +199,7 @@ country_event = {
 }
 
 
-# Battle of Jutland		Either Triggered by "Break the Blockade" or Date triggered if "Break the Blockade" not taken								
+# Battle of Jutland		Either Triggered by "Break the Blockade" or Date triggered if "Break the Blockade" not taken so long as Naval Battles fought								
 country_event = {
 
 		id = 100520
@@ -215,8 +215,8 @@ country_event = {
 					GER = { has_country_flag = break_blockade }
 			}
 			AND = {
-				GER = { total_sea_battles = 1 }
-				ENG = { total_sea_battles = 1 }
+				GER = { total_of_ours_sunk = 10 }
+				ENG = { total_of_ours_sunk = 10 }
 			}
 		}
 		
