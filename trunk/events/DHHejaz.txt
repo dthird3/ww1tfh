@@ -32,7 +32,7 @@ mean_time_to_happen = { days =  15 }
 is_triggered_only = yes
 option = {
 	name = "DH_EVENT_2001508_Option7"
-	country_event = 486
+	HJZ = { country_event = 486 }
 	
 set_global_flag = 2001508_EVENT_DONE
 
@@ -74,7 +74,7 @@ mean_time_to_happen = { days =  15 }
 is_triggered_only = yes
 option = {
 	name = "DH_EVENT_2001509_Option7"
-	country_event = 487
+	HJZ = { country_event = 487 }
 	
 set_global_flag = 2001509_EVENT_DONE
 
@@ -115,7 +115,7 @@ mean_time_to_happen = { days =  15 }
 is_triggered_only = yes
 option = {
 	name = "DH_EVENT_2001510_Option7"
-	country_event = 489
+	HJZ = { country_event = 489 }
 	
 set_global_flag = 2001510_EVENT_DONE
 
@@ -164,7 +164,7 @@ option = {
 			  } 
 		supplies = -5000 
 		 }
-	country_event = 490
+	HJZ = { country_event = 490 }
 	
 set_global_flag = 2001511_EVENT_DONE
 
@@ -214,7 +214,7 @@ option = {
 			  } 
 		supplies = -8000 
 		 }
-	country_event = 491
+	HJZ = { country_event = 491 }
 	
 set_global_flag = 2001512_EVENT_DONE
 
@@ -307,17 +307,18 @@ mean_time_to_happen = { days =  15 }
 is_triggered_only = yes
 option = {
 	name = "DH_EVENT_2233502_Option7"
-	ZZZ = { create_vassal = THIS } THIS = { inherit = ZZZ }
-	create_alliance = ENG
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 1065007 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 1065008 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 1065009 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 1065010 }
 	remove_minister = 1065002
 	remove_minister = 1065022 
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 1065011 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 1065012 }
-	
+	HJZ = { leave_alliance = TUR }
+	ASR = { leave_alliance = TUR }
+	YEM = { leave_alliance = TUR }
+	YEM = { leave_faction = axis }
+	HJZ = { leave_faction = axis }
+	ASR = { leave_faction = axis }
+	HJZ = { join_faction = allies }
+	YEM = { join_faction = allies }
+	ASR = { join_faction = allies }
+	JBS = { join_faction = axis }
 set_global_flag = 2233502_EVENT_DONE
 
 }
