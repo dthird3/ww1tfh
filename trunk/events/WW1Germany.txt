@@ -165,6 +165,17 @@ country_event = {
 		option = {
 			name = "EVT1914_2008007_ACTIONA"
 			ai_chance = { factor = 100 }
+			random_country = { limit = { exists = MEX }
+				MEX = { country_event = 183 }
+			}
+			random_country = { limit = { exists = MXR not = { exists = MEX } }
+				MXR = { country_event = 187 }
+			}
+			random = { 
+				chance = 50 
+				USA = { country_event = 100526 }
+				ENG = { country_event = 41 }
+			} 
 			GER = { set_country_flag = Send_Zimmermann }
 			GER = { clr_country_flag = stopped_unrest_subs }		# Give Germany Sub warfare bonuses back
 		}
