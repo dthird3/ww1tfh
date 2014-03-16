@@ -1,3 +1,62 @@
+#id = 3 #EVENTNAME: The Fall of Serbia
+#id = 4 #EVENTNAME: Central Power's proposal
+#id = 11 #EVENTNAME: A foot on Cape Helles
+#id = 12 #EVENTNAME: Seize Thessaloniki?
+#id = 13 #EVENTNAME: The Dardanelles' operation has failed
+#id = 84 #EVENTNAME: Ottoman Empire has fallen
+#id = 85 #EVENTNAME: Negotiate with Greece
+#id = 86 #EVENTNAME: Treaty of London signed!
+#id = 88 #EVENTNAME: The Gounalis plan
+#id = 89 #EVENTNAME: The Gounalis plan
+#id = 90 #EVENTNAME: Ask Greece for demobilization
+#id = 91 #EVENTNAME: Greece demobilizes!
+#id = 92 #EVENTNAME: Venizelos leaves Greek government
+#id = 93 #EVENTNAME: Venizelos is back
+#id = 96 #EVENTNAME: Greece grants Bulgaria military access
+#id = 97 #EVENTNAME: Athens on fire!
+#id = 98 #EVENTNAME: Renewed call for demobilization
+#id = 99 #EVENTNAME: Greece accepts our demands
+#id = 100 #EVENTNAME: The 'Vêpres Grecques'
+#id = 101 #EVENTNAME: Ultimatum to Greece
+#id = 137 #EVENTNAME: The Greek Case
+#id = 138 #EVENTNAME: Austria-Hungary declares war on Serbia!
+#id = 139 #EVENTNAME: Austria-Hungary declares war on Serbia!
+#id = 140 #EVENTNAME: Bulgaria joins the Central Powers!
+#id = 141 #EVENTNAME: Negotiation with the Entente
+#id = 142 #EVENTNAME: Negotiation with the Entente
+#id = 143 #EVENTNAME: King Konstantinos is sick!
+#id = 144 #EVENTNAME: King Konstantinos is back at its office
+#id = 145 #EVENTNAME: Greece and the Dardanelles
+#id = 146 #EVENTNAME: The Gounaris plan
+#id = 147 #EVENTNAME: Legislative elections, 1915
+#id = 148 #EVENTNAME: Bulgaria joins the Central Powers!
+#id = 149 #EVENTNAME: The Entente seizes Thessaloniki
+#id = 150 #EVENTNAME: The Entente asks for demobilization
+#id = 151 #EVENTNAME: Anticipated Elections
+#id = 152 #EVENTNAME: Serb refugees land on Corfu
+#id = 153 #EVENTNAME: Grant Bulgaria military access?
+#id = 154 #EVENTNAME: The Royal residence burns!
+#id = 155 #EVENTNAME: The Thessaloniki government
+#id = 156 #EVENTNAME: The Entente asks again for demobilization
+#id = 157 #EVENTNAME: The 'Vêpres Grecques'
+#id = 158 #EVENTNAME: Last warning from the Entente
+#id = 160 #EVENTNAME: The Treaty of Athens
+#id = 161 #EVENTNAME: The Treaty of Athens
+#id = 413 #EVENTNAME: The Fall of Serbia
+#id = 414 #EVENTNAME: Bulgaria joins the Central Powers!
+#id = 415 #EVENTNAME: Promises to Bulgaria
+#id = 479 #EVENTNAME: Agreement with Bulgaria
+#id = 368 #EVENTNAME: Evacuate through Albania?
+#id = 369 #EVENTNAME: Evacuate through Albania!
+#id = 1 #EVENTNAME: Let Serbian troops retreat?
+#id = 2 #EVENTNAME: Greece proclaimed the annexation of Northern Epirus
+#id = 94 #EVENTNAME: Serbian army evacuate through Albania!
+
+
+
+
+
+
 #Reaction to Fall of Serbia, whether to join in
 country_event = {
 id = 3
@@ -1877,8 +1936,8 @@ picture = "news_paper"
 trigger = {
 	#has_global_flag = 2019523_EVENT_DONE
 	or = {
-		has_global_flag= GRE_against_U08
-		has_global_flag= GRE_against_OTT
+		#has_global_flag= GRE_against_U08
+		#has_global_flag= GRE_against_OTT
 		}
 	
 tag = GRE
@@ -1899,121 +1958,6 @@ is_triggered_only = no
 option = {
 	name = "DH_EVENT_2019525_Option7"
 	dissent = 5 
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= GRE_against_U08
-			  } 
-		GRE = { money = -100 }
-		GER = { money = 100 }
-		 }
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= GRE_against_U09
-			  } 
-		GRE = { money = -100 }
-		AUH = { money = 100 }
-		 }
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= GRE_against_BUL
-			  } 
-		GRE = { money = -100 }
-		BUL = { money = 100 }
-		 }
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= GRE_against_OTT
-			  } 
-		GRE = { money = -100 }
-		TUR = { money = 100 }
-		 }
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= GRE_against_ITA
-			  } 
-		GRE = { money = -100 }
-		ITA = { money = 100 }
-		 }
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= GRE_against_U09
-			 #has_global_flag = 2058500_EVENT_DONE
-			 not = {
-				 exists = ALB
-				 }  } 
-		 }
-	random_country = { limit = { tag = THIS
-			 #has_global_flag = 2058500_EVENT_DONE
-			 exists = ALB
-			  } 
-		 }
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= GRE_against_BUL
-			  } 
-		 }
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= GRE_against_BUL
-			  } 
-		 }
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= GRE_against_BUL
-			  } 
-		 }
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= GRE_against_OTT
-			  } 
-		 }
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= GRE_against_OTT
-			  } 
-		 }
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= GRE_against_ITA
-			  } 
-		 }
-	random_country = { limit = { tag = THIS 
-			 5078 = { controlled_by = GRE }
-			  } 
-		 }
-	random_country = { limit = { tag = THIS 
-			 5138 = { controlled_by = GRE }
-			  } 
-		 }
-	random_country = { limit = { tag = THIS 
-			 4614 = { controlled_by = GRE }
-			  } 
-		 }
-	random_country = { limit = { tag = THIS 
-			 4614 = { controlled_by = GRE }
-			  } 
-		 }
-	random_country = { limit = { tag = THIS 
-			 4501 = { controlled_by = GRE }
-			  } 
-		 }
-	random_country = { limit = { tag = THIS 
-			 4374 = { controlled_by = GRE }
-			  } 
-		 }
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= GRE_against_U08
-			  } 
-		clr_global_flag = GRE_against_U08 
-		 }
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= GRE_against_U09
-			  } 
-		clr_global_flag = GRE_against_U09 
-		 }
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= GRE_against_BUL
-			  } 
-		clr_global_flag = GRE_against_BUL 
-		 }
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= GRE_against_OTT
-			  } 
-		clr_global_flag = GRE_against_OTT 
-		 }
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= GRE_against_ITA
-			  } 
-		clr_global_flag = GRE_against_ITA 
-		 }
 	
 set_global_flag = 2019525_EVENT_DONE
 
@@ -2029,7 +1973,7 @@ picture = "news_paper"
 
 trigger = {
 	#has_global_flag = 2019523_EVENT_DONE
-	has_global_flag= GRE_against_FRA
+	#has_global_flag= GRE_against_FRA
 	
 tag = GRE
 date = 1915.1.1
@@ -2049,52 +1993,7 @@ is_triggered_only = no
 option = {
 	name = "DH_EVENT_2019526_Option7"
 	dissent = 5 
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= GRE_against_FRA
-			  } 
-		GRE = { money = -100 }
-		FRA = { money = 100 }
-		 }
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= GRE_against_ENG
-			  } 
-		GRE = { money = -100 }
-		ENG = { money = 100 }
-		 }
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= GRE_against_ITA
-			  } 
-		GRE = { money = -100 }
-		ITA = { money = 100 }
-		 }
-	random_country = { limit = { tag = THIS 
-			 #has_global_flag = 2058500_EVENT_DONE
-			 exists = ALB
-			  } 
-		 }
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= GRE_against_ITA
-			  } 
-		 }
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= GRE_against_ENG
-			  } 
-		 }
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= GRE_against_FRA
-			  } 
-		clr_global_flag = GRE_against_FRA 
-		 }
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= GRE_against_eNG
-			  } 
-		clr_global_flag = GRE_against_ENG 
-		 }
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= GRE_against_ITA
-			  } 
-		clr_global_flag = GRE_against_ITA 
-		 }
+
 	
 set_global_flag = 2019526_EVENT_DONE
 
