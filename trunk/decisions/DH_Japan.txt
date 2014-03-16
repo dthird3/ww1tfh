@@ -1,3 +1,7 @@
+#2011500_decision = { #EVENTNAME: Ultimatum on Germany *CONFIRMED
+#2011503_decision = { #EVENTNAME: Offer peace to Germany
+
+
 diplomatic_decisions = {
 
 
@@ -14,7 +18,7 @@ diplomatic_decisions = {
 		not = { has_country_flag = decision_2011500 } }
 	allow = {
 		not = {
-			 JAP = { alliance_with = ENG }
+			 JAP = { faction = allies }
 			 }
 		}
 	effect = { country_event = 177

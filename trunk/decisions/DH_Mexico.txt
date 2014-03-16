@@ -1,3 +1,20 @@
+#2038501_decision = { #EVENTNAME: The United States declare war on Germany
+#2038502_decision = { #EVENTNAME: War against the United States
+#2038505_decision = { #EVENTNAME: The United States declare war on Germany
+#2250500_decision = { #EVENTNAME: Launch Raids on Tucson
+#2250503_decision = { #EVENTNAME: Launch Raids on El Paso
+#2250504_decision = { #EVENTNAME: Launch Raids on San Antonio
+#2250505_decision = { #EVENTNAME: Launch Raids on Corpus Christi
+#2250506_decision = { #EVENTNAME: Launch Raids on San Diego
+#2049522_decision = { #EVENTNAME: Intervention against Mexican rebels
+#2049523_decision = { #EVENTNAME: Ask for full transit agreement with Mexico
+#2049525_decision = { #EVENTNAME: Full scale invasion of Mexico
+#2049535_decision = { #EVENTNAME: Ask for full transit agreement with Mexico
+#2049537_decision = { #EVENTNAME: Full scale invasion of Mexico
+#2049526_decision = { #EVENTNAME: Restore diplomatic relations with Mexico
+
+
+
 diplomatic_decisions = {
 
 
@@ -347,9 +364,8 @@ diplomatic_decisions = {
 			USA = { war_with = MEX }
 			}
 		not = {
-			GER = { alliance_with = MXR }
-			GER = { alliance_with = MXR }
-			GER = { alliance_with = MEX }
+			MXR = { faction = axis }
+			MEX = { faction = axis }
 			any_owned_province = { not = { controlled_by = USA } }
 			}
 		tag = USA
