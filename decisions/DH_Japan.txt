@@ -1,0 +1,68 @@
+diplomatic_decisions = {
+
+
+#Ultimatum on Germany
+2011500_decision = {
+	potential = {
+		GER = { war_with = ENG }
+		war = no
+		tag = JAP
+		date = 1914.6.28
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2011500 }
+		not = { has_country_flag = decision_2011500 } }
+	allow = {
+		not = {
+			 JAP = { alliance_with = ENG }
+			 }
+		}
+	effect = { country_event = 177
+		set_country_flag = decision_2011500 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+#Offer peace to Germany
+2011503_decision = {
+	potential = {
+		JAP = { war_with = GER }
+		faction = allies
+		tag = JAP
+		date = 1914.4.24
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2011503 }
+		not = { has_country_flag = decision_2011503 } }
+	allow = {
+		not = {
+			 FRA = { faction = allies }
+			 }
+		not = {
+			 RUS = { faction = allies }
+			 }
+		not = {
+			 ENG = { faction = allies }
+			 }
+		not = {
+			 USA = { faction = allies }
+			 }
+		not = {
+			 SOV = { war_with = GER }
+			 }
+		not = {
+			 JAP = { surrender_progress = 5  }
+			 }
+		not = {
+			 GER = { surrender_progress = 5  }
+			 }
+		}
+	effect = { country_event = 180
+		set_country_flag = decision_2011503 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+}
