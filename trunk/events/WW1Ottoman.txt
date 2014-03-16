@@ -18,40 +18,40 @@ country_event = {
 		}
 }
 #Arab revolt
-country_event = {
+#country_event = {
 		
-		id = 700002
+#		id = 700002
 		
-		major = yes
+#		major = yes
 		
-		trigger = {
-			tag = TUR
-			not = { has_country_flag = arab_revolt }
-			exists = HJZ
-			TUR = { war_with = ENG }
-			date = 1916.7.10
-		}
+#		trigger = {
+#			tag = TUR
+#			not = { has_country_flag = arab_revolt }
+#			exists = HJZ
+#			TUR = { war_with = ENG }
+#			date = 1916.7.10
+#		}
 		
-		title = "TURE14"
-		desc = "desc_TURE14"
-		picture = "TURP14"
+#		title = "TURE14"
+#		desc = "desc_TURE14"
+#		picture = "TURP14"
 
-		option = {
-			name = "opta_TURE14"
-			ai_chance = { factor = 100 }
-			set_country_flag = arab_revolt
-			HJZ = { leave_alliance = TUR }
-			ASR = { leave_alliance = TUR }
-			YEM = { leave_alliance = TUR }
-			YEM = { leave_faction = axis }
-			HJZ = { leave_faction = axis }
-			ASR = { leave_faction = axis }
-			HJZ = { join_faction = allies }
-			YEM = { join_faction = allies }
-			ASR = { join_faction = allies }
-			JBS = { join_faction = axis }
-		}
-}
+#		option = {
+#			name = "opta_TURE14"
+#			ai_chance = { factor = 100 }
+#			set_country_flag = arab_revolt
+#			HJZ = { leave_alliance = TUR }
+#			ASR = { leave_alliance = TUR }
+#			YEM = { leave_alliance = TUR }
+#			YEM = { leave_faction = axis }
+#			HJZ = { leave_faction = axis }
+#			ASR = { leave_faction = axis }
+#			HJZ = { join_faction = allies }
+#			YEM = { join_faction = allies }
+#			ASR = { join_faction = allies }
+#			JBS = { join_faction = axis }
+#		}
+#}
 
 
 #October 29 – persuit of goeben and breslau

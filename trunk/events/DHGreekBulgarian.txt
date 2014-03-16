@@ -895,7 +895,7 @@ picture = "news_paper"
 trigger = { 
 tag = GRE
 
-
+AUH = { war_with = SER }
 
 
 
@@ -904,7 +904,7 @@ not = { has_global_flag = SLEEPEVENT_2019501 }
 }
 fire_only_once = yes
 
-is_triggered_only = yes
+is_triggered_only = no
 option = {
 	name = "DH_EVENT_2019501_Option1"
 	ai_chance = { factor = 100
@@ -2245,46 +2245,6 @@ option = {
 	name = "DH_EVENT_2191510_Option2"
 	
 set_global_flag = 2191510_EVENT_DONE
-
-}
-
-}
-country_event = {
-id = 453
-title = "DH_EVENT_2192502_TITLE"
-desc = "DH_EVENT_2192502_DESC"
-trigger = {
-	#has_global_flag = 2192500_EVENT_DONE
-	not = {
-		 #has_global_flag = 2192522_EVENT_DONE
-		 }
-	
-tag = AUH
-date = 1914.6.28
-
-not = { date = 1914.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2192502 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  1 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2192502_Option7"
-	neutrality = -5
-	threat = { who = all value = 5  }
-	war = { target = SER }
-	dissent = -3 
-
-	#country_event = 314
-	country_event = 138
-	
-set_global_flag = 2192502_EVENT_DONE
 
 }
 

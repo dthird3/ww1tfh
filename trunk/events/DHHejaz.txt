@@ -1,0 +1,413 @@
+
+#Letters with Hussein bin Ali
+country_event = {
+id = 14
+title = "DH_EVENT_2001508_TITLE"
+desc = "DH_EVENT_2001508_DESC"
+picture = "Ottoman_declaration_war"
+
+trigger = {
+	TUR = { war_with = ENG }
+	5564 = { controlled_by = ENG }
+	#NOEQUIVALENT random =  20
+	exists = HJZ
+	not = {
+		 HJZ = { war_with = ENG }
+		 }
+	
+tag = ENG
+date = 1916.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2001508 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  15 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2001508_Option7"
+	country_event = 486
+	
+set_global_flag = 2001508_EVENT_DONE
+
+}
+
+}
+
+#Promises for a great Arab Empire
+country_event = {
+id = 15
+title = "DH_EVENT_2001509_TITLE"
+desc = "DH_EVENT_2001509_DESC"
+picture = "Ottoman_declaration_war"
+
+trigger = {
+	has_global_flag = 2001507_EVENT_DONE
+	TUR = { war_with = ENG }
+	5564 = { controlled_by = ENG }
+	#NOEQUIVALENT random =  20
+	exists = HJZ
+	not = {
+		 HJZ = { war_with = ENG }
+		 }
+	
+tag = ENG
+date = 1916.6.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2001509 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  15 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2001509_Option7"
+	country_event = 487
+	
+set_global_flag = 2001509_EVENT_DONE
+
+}
+
+}
+
+#Send T.E. Lawrence
+country_event = {
+id = 16
+title = "DH_EVENT_2001510_TITLE"
+desc = "DH_EVENT_2001510_DESC"
+picture = "Ottoman_declaration_war"
+
+trigger = {
+	TUR = { war_with = ENG }
+	TUR = { war_with = HJZ }
+	5564 = { controlled_by = ENG }
+	#NOEQUIVALENT random =  20
+	not = {
+		 HJZ = { war_with = ENG }
+		 }
+	
+tag = ENG
+date = 1917.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2001510 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  15 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2001510_Option7"
+	country_event = 489
+	
+set_global_flag = 2001510_EVENT_DONE
+
+}
+
+}
+
+#Send assistance to Hedjaz
+country_event = {
+id = 17
+title = "DH_EVENT_2001511_TITLE"
+desc = "DH_EVENT_2001511_DESC"
+picture = "Ottoman_declaration_war"
+
+trigger = {
+	TUR = { war_with = ENG }
+	TUR = { war_with = HJZ }
+	not = {
+		 HJZ = { war_with = ENG }
+		 }
+	5564 = { controlled_by = ENG }
+	not = {
+		 5634 = { controlled_by = TUR }
+		 }
+	#NOEQUIVALENT random =  10
+	
+tag = ENG
+date = 1917.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2001511 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  10 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2001511_Option7"
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = no }
+			  } 
+		supplies = -5000 
+		 }
+	country_event = 490
+	
+set_global_flag = 2001511_EVENT_DONE
+
+}
+
+}
+
+#Renewed assistance to Hedjaz
+country_event = {
+id = 18
+title = "DH_EVENT_2001512_TITLE"
+desc = "DH_EVENT_2001512_DESC"
+picture = "Ottoman_declaration_war"
+
+trigger = {
+	has_global_flag = 2001510_EVENT_DONE
+	TUR = { war_with = ENG }
+	TUR = { war_with = HJZ }
+	not = {
+		 HJZ = { war_with = ENG }
+		 }
+	5564 = { controlled_by = ENG }
+	not = {
+		 5634 = { controlled_by = TUR }
+		 }
+	#NOEQUIVALENT random =  10
+	
+tag = ENG
+date = 1918.2.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2001512 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  10 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2001512_Option7"
+	random_country = { limit = { tag = THIS 
+			 THIS = { ai = no }
+			  } 
+		supplies = -8000 
+		 }
+	country_event = 491
+	
+set_global_flag = 2001512_EVENT_DONE
+
+}
+
+}
+
+
+#Letters with Henry MacMahon
+country_event = {
+id = 486
+title = "DH_EVENT_2233500_TITLE"
+desc = "DH_EVENT_2233500_DESC"
+trigger = { 
+tag = HJZ
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2233500 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2233500_Option7"
+	#Removed Blank command
+	
+set_global_flag = 2233500_EVENT_DONE
+
+}
+
+}
+
+#England promises a great Arab Empire
+country_event = {
+id = 487
+title = "DH_EVENT_2233501_TITLE"
+desc = "DH_EVENT_2233501_DESC"
+trigger = { 
+tag = HJZ
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2233501 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2233501_Option7"
+	dissent = -5 
+	
+set_global_flag = 2233501_EVENT_DONE
+
+}
+
+}
+
+#The Great Arab Revolt
+country_event = {
+id = 488
+title = "DH_EVENT_2233502_TITLE"
+desc = "DH_EVENT_2233502_DESC"
+trigger = {
+	war = no
+	has_global_flag = 2233500_EVENT_DONE
+	TUR = { war_with = ENG }
+	#NOEQUIVALENT random =  30
+	
+tag = HJZ
+date = 1916.6.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2233502 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  15 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2233502_Option7"
+	ZZZ = { create_vassal = THIS } THIS = { inherit = ZZZ }
+	create_alliance = ENG
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 1065007 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 1065008 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 1065009 }
+	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 1065010 }
+	remove_minister = 1065002
+	remove_minister = 1065022 
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 1065011 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 1065012 }
+	
+set_global_flag = 2233502_EVENT_DONE
+
+}
+
+}
+
+#T.E. Lawrence arrives
+country_event = {
+id = 489
+title = "DH_EVENT_2233503_TITLE"
+desc = "DH_EVENT_2233503_DESC"
+trigger = { 
+tag = HJZ
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2233503 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2233503_Option7"
+	dissent = -2 
+	# add_country_modifier = { name = "research_1" duration = 360 }#command = { type = waketeam which = 1065003 }
+	
+set_global_flag = 2233503_EVENT_DONE
+
+}
+
+}
+
+#Supplies from England
+country_event = {
+id = 490
+title = "DH_EVENT_2233504_TITLE"
+desc = "DH_EVENT_2233504_DESC"
+trigger = { 
+tag = HJZ
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2233504 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2233504_Option7"
+	dissent = -2 
+	supplies = 5000 
+	
+set_global_flag = 2233504_EVENT_DONE
+
+}
+
+}
+
+#Supplies from England
+country_event = {
+id = 491
+title = "DH_EVENT_2233505_TITLE"
+desc = "DH_EVENT_2233505_DESC"
+trigger = { 
+tag = HJZ
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2233505 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2233505_Option7"
+	dissent = -2 
+	supplies = 8000 
+	
+set_global_flag = 2233505_EVENT_DONE
+
+}
+
+}
+
