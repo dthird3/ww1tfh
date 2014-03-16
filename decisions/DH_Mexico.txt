@@ -1,0 +1,372 @@
+diplomatic_decisions = {
+
+
+
+#The United States declare war on Germany
+2038501_decision = {
+	potential = { 
+		#has_global_flag = 2038499_EVENT_DONE
+		 
+		tag = MEX
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2038501 }
+		not = { has_country_flag = decision_2038501 } }
+	allow = { USA = { war_with = GER }
+		 }
+	effect = { country_event = 184
+		set_country_flag = decision_2038501 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+#War against the United States
+2038502_decision = {
+	potential = { 9624 = { controlled_by = USA }
+		 
+		tag = MEX
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2038502 }
+		not = { has_country_flag = decision_2038502 } }
+	allow = { war = no 
+		 }
+	effect = { country_event = 185
+		set_country_flag = decision_2038502 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+#The United States declare war on Germany
+2038505_decision = {
+	potential = {
+		has_global_flag = 2038503_EVENT_DONE
+		tag = MXR
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2038505 }
+		not = { has_country_flag = decision_2038505 } }
+	allow = {
+		USA = { war_with = GER }
+		}
+	effect = { country_event = 188
+		set_country_flag = decision_2038505 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+#Launch Raids on Tucson
+2250500_decision = {
+	potential = {
+		war = yes
+		not = {
+			 MEX = { war_with = USA }
+			 }
+		not = {
+			 MXR = { war_with = USA }
+			 }
+		tag = MXR
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2250500 }
+		not = { has_country_flag = decision_2250500 } }
+	allow = {
+		money =  10
+		9203 = { country_units_in_province = MXR }
+		}
+	effect = { country_event = 492
+		set_country_flag = decision_2250500 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+#Launch Raids on El Paso
+2250503_decision = {
+	potential = {
+		war = yes
+		not = {
+			 MEX = { war_with = USA }
+			 }
+		not = {
+			 MXR = { war_with = USA }
+			 }
+		tag = MXR
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2250503 }
+		not = { has_country_flag = decision_2250503 } }
+	allow = {
+		money =  10
+		9147 = { country_units_in_province = MXR }
+		}
+	effect = { country_event = 495
+		set_country_flag = decision_2250503 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+#Launch Raids on San Antonio
+2250504_decision = {
+	potential = {
+		war = yes
+		not = {
+			 MEX = { war_with = USA }
+			 }
+		not = {
+			 MXR = { war_with = USA }
+			 }
+		tag = MXR
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2250504 }
+		not = { has_country_flag = decision_2250504 } }
+	allow = {
+		money =  10
+		9269 = { country_units_in_province = MXR }
+		}
+	effect = { country_event = 496
+		set_country_flag = decision_2250504 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+#Launch Raids on Corpus Christi
+2250505_decision = {
+	potential = {
+		war = yes
+		not = {
+			 MEX = { war_with = USA }
+			 }
+		not = {
+			 MXR = { war_with = USA }
+			 }
+		tag = MXR
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2250505 }
+		not = { has_country_flag = decision_2250505 } }
+	allow = {
+		money =  10
+		or = {
+			9419 = { country_units_in_province = MXR }
+			9388 = { country_units_in_province = MXR }
+			}
+		}
+	effect = { country_event = 497
+		set_country_flag = decision_2250505 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+#Launch Raids on San Diego
+2250506_decision = {
+	potential = {
+		war = yes
+		not = {
+			 MEX = { war_with = USA }
+			 }
+		not = {
+			 MXR = { war_with = USA }
+			 }
+		tag = MXR
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2250506 }
+		not = { has_country_flag = decision_2250506 } }
+	allow = {
+		money =  10
+		7369 = { country_units_in_province = MXR }
+		}
+	effect = { country_event = 498
+		set_country_flag = decision_2250506 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+#Intervention against Mexican rebels
+2049522_decision = {
+	potential = {
+		exists = MXR
+		has_country_flag = USA_Mexican_Raids
+		tag = USA
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2049522 }
+		not = { has_country_flag = decision_2049522 } }
+	allow = {
+		war = no
+		}
+	effect = { country_event = 529
+		set_country_flag = decision_2049522 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+#Ask for full transit agreement with Mexico
+2049523_decision = {
+	potential = {
+		exists = MEX
+		has_global_flag = 2049521_EVENT_DONE
+		USA = { war_with = MXR }
+		not = {
+			 USA = { war_with = MEX }
+			 }
+		#not = {
+			 #has_global_flag = 2049534_EVENT_DONE nogerman peace
+			 #}
+		tag = USA
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2049523 }
+		not = { has_country_flag = decision_2049523 } }
+	allow = {
+		relation = { who = MEX value = 75 }
+		}
+	effect = { country_event = 530
+		set_country_flag = decision_2049523 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+#Full scale invasion of Mexico
+2049525_decision = {
+	potential = {
+		has_global_flag = 2049523_EVENT_DONE
+		USA = { war_with = MXR }
+		not = {
+			 USA = { war_with = MEX }
+			 }
+		tag = USA
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2049525 }
+		not = { has_country_flag = decision_2049525 } }
+	allow = {
+		not = {
+			 USA = { war_with = GER }
+			 }
+		not = {
+			 neutrality = 20
+			 }
+		}
+	effect = { country_event = 532
+		set_country_flag = decision_2049525 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+#Ask for full transit agreement with Mexico
+2049535_decision = {
+	potential = {
+		exists = MXR
+		not = {
+			 exists = MEX
+			 }
+		has_global_flag = 2049521_EVENT_DONE
+		USA = { war_with = MXR }
+		not = {
+			 USA = { war_with = MXR }
+			 }
+		not = {
+			 has_global_flag = 2049522_EVENT_DONE
+			 }
+		tag = USA
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2049535 }
+		not = { has_country_flag = decision_2049535 } }
+	allow = {
+		relation = { who = MXR value = 75 }
+		}
+	effect = { country_event = 533
+		set_country_flag = decision_2049535 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+#Full scale invasion of Mexico
+2049537_decision = {
+	potential = {
+
+			 #has_global_flag = 2049534_EVENT_DONE german peace
+
+		USA = { war_with = MXR }
+		not = {
+			 USA = { war_with = MXR }
+			 }
+		tag = USA
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2049537 }
+		not = { has_country_flag = decision_2049537 } }
+	allow = {
+		not = {
+			 USA = { war_with = GER }
+			 }
+		not = {
+			 neutrality = 20
+			 }
+		}
+	effect = { country_event = 535
+		set_country_flag = decision_2049537 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+#Restore diplomatic relations with Mexico
+2049526_decision = {
+	potential = {
+		or = {
+			has_global_flag = 2049523_EVENT_DONE
+			has_global_flag = 2049535_EVENT_DONE
+			}
+		or = {
+			USA = { war_with = MXR }
+			USA = { war_with = MXR }
+			USA = { war_with = MEX }
+			}
+		not = {
+			GER = { alliance_with = MXR }
+			GER = { alliance_with = MXR }
+			GER = { alliance_with = MEX }
+			any_owned_province = { not = { controlled_by = USA } }
+			}
+		tag = USA
+		date = 1914.8.4
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2049526 }
+		not = { has_country_flag = decision_2049526 } }
+	allow = {
+		or = {
+			USA = { war_with = GER }
+			neutrality = 20
+			}
+		}
+	effect = { country_event = 536
+		set_country_flag = decision_2049526 }
+	ai_will_do = { factor = 1 }
+	}
+
+}
