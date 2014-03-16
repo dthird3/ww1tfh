@@ -399,6 +399,30 @@ country_event = {
 	}
 }
 
+country_event = {
+
+	id = 100338
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		date = 1918.9.16
+	}
+
+	mean_time_to_happen =  {
+		days = 0
+	}
+
+	title = "Disaster_Title"
+	desc = "Boyau_Dies_Desc"
+	picture = "French-crash"
+
+	option = {
+		name = "ACTION_NAME_DAMN"
+		ai_chance = { factor = 100 }
+		kill_leader = 5600
+	}
+}
+
 
 #############################  ENGLISH Reinforcements ########################
 
@@ -452,6 +476,30 @@ country_event = {
 
 country_event = {
 
+	id = 100343
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		date = 1918.5.27
+	}
+
+	mean_time_to_happen =  {
+		days = 0
+	}
+
+	title = "Disaster_Title"
+	desc = "Little_Dies_Desc"
+	picture = "Camel-crash"
+
+	option = {
+		name = "ACTION_NAME_DAMN"
+		ai_chance = { factor = 100 }
+		AST = {kill_leader = 225112}
+	}
+}
+
+country_event = {
+
 	id = 100344
 	fire_only_once = yes
 	trigger = {
@@ -471,6 +519,30 @@ country_event = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		FRA = {load_oob = "scenarios/spring_offensive/ENG_Reinforcements/ENG_Air_03.txt"}
+	}
+}
+
+country_event = {
+
+	id = 100345
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		date = 1918.7.9
+	}
+
+	mean_time_to_happen =  {
+		days = 0
+	}
+
+	title = "Disaster_Title"
+	desc = "Mccudden_Dies_Desc"
+	picture = "Camel-crash"
+
+	option = {
+		name = "ACTION_NAME_DAMN"
+		ai_chance = { factor = 100 }
+		ENG = {kill_leader = 1270002}
 	}
 }
 
@@ -497,6 +569,31 @@ country_event = {
 		FRA = {load_oob = "scenarios/spring_offensive/ENG_Reinforcements/ENG_Air_04.txt"}
 	}
 }
+
+country_event = {
+
+	id = 100347
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		date = 1918.7.18
+	}
+
+	mean_time_to_happen =  {
+		days = 0
+	}
+
+	title = "Disaster_Title"
+	desc = "Mannock_Dies_Desc"
+	picture = "Camel-crash"
+
+	option = {
+		name = "ACTION_NAME_DAMN"
+		ai_chance = { factor = 100 }
+		ENG = {kill_leader = 10972}
+	}
+}
+
 
 #############################  ITALIAN Reinforcements ########################
 
@@ -579,5 +676,53 @@ country_event = {
 		ai_chance = { factor = 100 }	
 		GER = {load_oob = "scenarios/spring_offensive/GER_Reinforcements/GER_Air_02.txt"}
 		GER = {supplies = 10000}
+	}
+}
+
+country_event = {
+
+	id = 100368
+	fire_only_once = yes
+	trigger = {
+		tag = GER
+		date = 1918.8.18
+	}
+
+	mean_time_to_happen =  {
+		days = 0
+	}
+
+	title = "Disaster_Title"
+	desc = "Lowenhardt_Dies_Desc"
+	picture = "Fokker-crash"
+
+	option = {
+		name = "ACTION_NAME_DAMN"
+		ai_chance = { factor = 100 }
+		kill_leader = 855344
+	}
+}
+
+country_event = {
+
+	id = 100370
+	fire_only_once = yes
+	trigger = {
+		tag = GER
+		date = 1918.9.27
+	}
+
+	mean_time_to_happen =  {
+		days = 0
+	}
+
+	title = "Disaster_Title"
+	desc = "Rumey_Dies_Desc"
+	picture = "Mid-Air-Crash"
+
+	option = {
+		name = "ACTION_NAME_DAMN"
+		ai_chance = { factor = 100 }
+		kill_leader = 855047
 	}
 }
