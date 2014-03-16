@@ -1,0 +1,631 @@
+
+#The Entente offered a white peace to Central Powers
+country_event = {
+id = 50
+title = "DH_EVENT_2001544_TITLE"
+desc = "DH_EVENT_2001544_DESC"
+picture = "diplomatic_campaign"
+
+trigger = { 
+tag = SER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2001544 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 10
+		 }
+	name = "DH_EVENT_2001544_Option7"
+	AUH = { country_event = 53 }
+	
+set_global_flag = 2001544_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 90
+		 }
+	name = "DH_EVENT_2001544_Option8"
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	
+set_global_flag = 2001544_EVENT_DONE
+
+}
+
+}
+
+#The Entente offered a white peace to Central Powers
+country_event = {
+id = 51
+title = "DH_EVENT_2001545_TITLE"
+desc = "DH_EVENT_2001545_DESC"
+picture = "diplomatic_campaign"
+
+trigger = { 
+tag = MTN
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2001545 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 80
+		 }
+	name = "DH_EVENT_2001545_Option7"
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	THIS = { end_war = GER }
+	THIS = { end_war = AUH }
+	AUH = { country_event = 54 }
+	
+set_global_flag = 2001545_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 20
+		 }
+	name = "DH_EVENT_2001545_Option8"
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	
+set_global_flag = 2001545_EVENT_DONE
+
+}
+
+}
+
+
+#Serbia surrendered to us!
+country_event = {
+id = 53
+title = "DH_EVENT_2001547_TITLE"
+desc = "DH_EVENT_2001547_DESC"
+picture = "diplomatic_campaign"
+
+trigger = { 
+tag = AUH
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2001547 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2001547_Option7"
+	dissent = -5 
+	THIS = { inherit = SER }
+	set_global_flag = SLEEPEVENT_2192535 
+	
+set_global_flag = 2001547_EVENT_DONE
+
+}
+
+}
+
+#Montenegro surrendered to us!
+country_event = {
+id = 54
+title = "DH_EVENT_2001548_TITLE"
+desc = "DH_EVENT_2001548_DESC"
+picture = "diplomatic_campaign"
+
+trigger = { 
+tag = AUH
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2001548 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2001548_Option7"
+	dissent = -2 
+	release_vassal = MTN
+	
+set_global_flag = 2001548_EVENT_DONE
+
+}
+
+}
+
+#The Entente offered a white peace to Central Powers
+country_event = {
+id = 55
+title = "DH_EVENT_2001549_TITLE"
+desc = "DH_EVENT_2001549_DESC"
+picture = "diplomatic_campaign"
+
+trigger = { 
+tag = HJZ
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2001549 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 10
+		 }
+	name = "DH_EVENT_2001549_Option7"
+	TUR = { country_event = 56 }
+	
+set_global_flag = 2001549_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 90
+		 }
+	name = "DH_EVENT_2001549_Option8"
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	
+set_global_flag = 2001549_EVENT_DONE
+
+}
+
+}
+
+#Hedjaz surrendered to us!
+country_event = {
+id = 56
+title = "DH_EVENT_2001550_TITLE"
+desc = "DH_EVENT_2001550_DESC"
+picture = "diplomatic_campaign"
+
+trigger = { 
+tag = TUR
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2001550 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2001550_Option7"
+	dissent = -5 
+	release_vassal = HJZ
+	
+set_global_flag = 2001550_EVENT_DONE
+
+}
+
+}
+
+#The Entente offered a white peace to Central Powers
+country_event = {
+id = 57
+title = "DH_EVENT_2001551_TITLE"
+desc = "DH_EVENT_2001551_DESC"
+picture = "diplomatic_campaign"
+
+trigger = { 
+tag = ENG
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2001551 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 50
+		 }
+	name = "DH_EVENT_2001551_Option7"
+	TUR = { country_event = 56 }
+	
+set_global_flag = 2001551_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 50
+		 }
+	name = "DH_EVENT_2001551_Option8"
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	
+set_global_flag = 2001551_EVENT_DONE
+
+}
+
+}
+
+
+
+#Ultimatum on Germany
+country_event = {
+id = 177
+title = "DH_EVENT_2011500_TITLE"
+desc = "DH_EVENT_2011500_DESC"
+picture = "diplomatic_campaign"
+
+trigger = {
+	GER = { war_with = ENG }
+	war = no
+	#NOEQUIVALENT random =  30
+	
+tag = JAP
+date = 1914.6.28
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2011500 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  20 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2011500_Option7"
+	ai_chance = { factor = 95
+		 }
+	GER = { country_event = 438 }
+	
+set_global_flag = 2011500_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2011500_Option8"
+	ai_chance = { factor = 5
+		 }
+	set_global_flag = JAP_ultimatum_extended 
+	GER = { country_event = 438 }
+	
+set_global_flag = 2011500_EVENT_DONE
+
+}
+
+}
+
+#Germany did not answer
+country_event = {
+id = 178
+title = "DH_EVENT_2011501_TITLE"
+desc = "DH_EVENT_2011501_DESC"
+picture = "diplomatic_campaign"
+
+trigger = { 
+tag = JAP
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2011501 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2011501_Option1"
+	ai_chance = { factor = 99
+		 }
+	join_faction = allies
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= JAP_ultimatum_extended
+			  } 
+		clr_global_flag = JAP_ultimatum_extended 
+		 }
+	
+set_global_flag = 2011501_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2011501_Option2"
+	ai_chance = { factor = 1
+		 }
+	dissent = 5 
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= JAP_ultimatum_extended
+			  } 
+		clr_global_flag = JAP_ultimatum_extended 
+		 }
+	
+set_global_flag = 2011501_EVENT_DONE
+
+}
+
+}
+
+#Germany accepts our conditions
+country_event = {
+id = 179
+title = "DH_EVENT_2011502_TITLE"
+desc = "DH_EVENT_2011502_DESC"
+picture = "news_paper"
+
+trigger = { 
+tag = JAP
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2011502 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2011502_Option1"
+	ai_chance = { factor = 99
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= JAP_ultimatum_extended
+			  } 
+		clr_global_flag = JAP_ultimatum_extended 
+		 }
+	relation = { who = ENG value = -25  }
+	neutrality = 30
+	
+set_global_flag = 2011502_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2011502_Option2"
+	ai_chance = { factor = 1
+		 }
+	dissent = 5 
+	threat = { who = all value = 20  }
+	join_fation = allies
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= JAP_ultimatum_extended
+			  } 
+		clr_global_flag = JAP_ultimatum_extended 
+		 }
+	
+set_global_flag = 2011502_EVENT_DONE
+
+}
+
+}
+
+#Offer peace to Germany
+country_event = {
+id = 180
+title = "DH_EVENT_2011503_TITLE"
+desc = "DH_EVENT_2011503_DESC"
+picture = "diplomatic_campaign"
+
+trigger = {
+	JAP = { war_with = GER }
+	faction = allies
+	
+tag = JAP
+date = 1914.4.24
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2011503 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  30 }
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_2011503_Option7"
+	GER = { country_event = 181 }
+	
+set_global_flag = 2011503_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 0
+		 }
+	name = "DH_EVENT_2011503_Option8"
+	dissent = 5 
+	
+set_global_flag = 2011503_EVENT_DONE
+
+}
+
+}
+
+#Japan offers a white peace
+country_event = {
+id = 181
+title = "DH_EVENT_2011504_TITLE"
+desc = "DH_EVENT_2011504_DESC"
+picture = "diplomatic_campaign"
+
+trigger = { 
+tag = GER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2011504 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_2011504_Option7"
+	dissent = -10 
+	random_country = { limit = { tag = THIS 
+			 JAP = { alliance_with = SER }
+			 exists = AUH
+			  } 
+		SER = { country_event = 50 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 JAP = { alliance_with = MTN }
+			 exists = AUH
+			  } 
+		MTN = { country_event = 51 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 JAP = { alliance_with = HJZ }
+			 TUR = { war_with = HJZ }
+			  } 
+		HJZ = { country_event = 55 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 JAP = { alliance_with = ENG }
+			 TUR = { war_with = ENG }
+			  } 
+		ENG = { country_event = 57 }
+		 }
+	JAP = { country_event = 182 }
+	
+set_global_flag = 2011504_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 0
+		 }
+	name = "DH_EVENT_2011504_Option8"
+	dissent = 5 
+	
+set_global_flag = 2011504_EVENT_DONE
+
+}
+
+}
+
+#Germany accepted our proposal
+country_event = {
+id = 182
+title = "DH_EVENT_2011505_TITLE"
+desc = "DH_EVENT_2011505_DESC"
+picture = "diplomatic_campaign"
+
+trigger = { 
+tag = JAP
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2011505 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2011505_Option7"
+	dissent = -10 
+	THIS = { end_war = GER }
+	THIS = { end_war = AUH }
+	set_global_flag = German_EndWWI 
+	
+set_global_flag = 2011505_EVENT_DONE
+
+}
+
+}
+
+
+#Japanese Ultimatum
+country_event = {
+id = 438
+title = "DH_EVENT_2191540_TITLE"
+desc = "DH_EVENT_2191540_DESC"
+trigger = { 
+tag = GER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191540 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2191540_Option1"
+	ai_chance = { factor = 75
+		 }
+	JAP = { country_event = 178 }
+	
+set_global_flag = 2191540_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2191540_Option2"
+	ai_chance = { factor = 25
+		 }
+	JAP = { country_event = 179 }
+	dissent = 5 
+	any_owned = { limit = { is_core = JAP } secede_province = JAP }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= JAP_ultimatum_extended
+			  } 
+		GER = { any_owned = { limit = { continent = oceania } secede_province = JAP } }
+		 }
+	
+set_global_flag = 2191540_EVENT_DONE
+
+}
+
+}
