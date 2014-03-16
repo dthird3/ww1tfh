@@ -1,0 +1,138 @@
+#id = 42 #EVENTNAME: Align Portugal
+#id = 43 #EVENTNAME: The British government invites us to participate in the war
+#id = 44 #EVENTNAME: Declare War Against Germany
+
+
+
+#EVENTNAME: Align Portugal
+country_event = {
+id = 42
+title = "DH_EVENT_2001536_TITLE"
+desc = "DH_EVENT_2001536_DESC"
+picture = "diplomatic_campaign"
+
+trigger = {
+	exists = POR
+	GER = { war_with = ENG }
+	2613 = { controlled_by = THIS }
+	#NOEQUIVALENT random =  30
+	not = {
+		POR = { war_with = ENG }
+		POR = { faction = allies }
+		POR = { faction = axis }
+		}
+	
+tag = ENG
+date = 1916.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2001536 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  30 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2001536_Option7"
+	POR = { country_event = 43 }
+	
+set_global_flag = 2001536_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: The British government invites us to participate in the war
+country_event = {
+id = 43
+title = "DH_EVENT_2001537_TITLE"
+desc = "DH_EVENT_2001537_DESC"
+picture = "diplomatic_campaign"
+
+trigger = { 
+tag = POR
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2001537 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2001537_Option7"
+	create_alliance = ENG
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX policy = { type = professional_army value = 7 }
+				 }  } 
+		#country_event = 1350007 #MANUALFIX unknown event trigger
+		 }
+	
+set_global_flag = 2001537_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2001537_Option8"
+	relation = { who = ENG value = -50  }
+	
+set_global_flag = 2001537_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Declare War Against Germany
+country_event = {
+id = 44
+title = "DH_EVENT_2001538_TITLE"
+desc = "DH_EVENT_2001538_DESC"
+picture = "diplomatic_campaign"
+
+trigger = {
+	exists = BRA
+	GER = { war_with = ENG }
+	not = {
+		BRA = { war_with = ENG }
+		BRA = { faction = allies }
+		BRA = { faction = axis }
+		}
+	#has_global_flag = 2191542_EVENT_DONE	
+	GER = { has_country_flag = break_blockade }
+	2613 = { controlled_by = THIS }
+	#NOEQUIVALENT random =  10
+	
+tag = BRA
+date = 1917.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2001538 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  30 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2001538_Option7"
+	create_alliance = ENG
+	
+set_global_flag = 2001538_EVENT_DONE
+
+}
+
+}
+

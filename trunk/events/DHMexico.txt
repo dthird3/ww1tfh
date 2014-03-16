@@ -1,39 +1,66 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#id = 41 #EVENTNAME: The Zimmermann telegram - we got'em!
+#id = 183 #EVENTNAME: The Zimmermann telegram
+#id = 184 #EVENTNAME: The United States declare war on Germany
+#id = 185 #EVENTNAME: War against the United States
+#id = 186 #EVENTNAME: United States ask for full transit
+#id = 187 #EVENTNAME: The Zimmermann telegram
+#id = 188 #EVENTNAME: The United States declare war on Germany
+#id = 189 #EVENTNAME: United States ask for full transit
+#id = 190 #EVENTNAME: Huerta has been defeated!
+#id = 191 #EVENTNAME: Huerta has been defeated!
+#id = 192 #EVENTNAME: Huerta is victorious!
+#id = 193 #EVENTNAME: Convention of Aguascalientes
+#id = 194 #EVENTNAME: Convention of Aguascalientes
+#id = 195 #EVENTNAME: Convention of Aguascalientes
+#id = 196 #EVENTNAME: Villistas submit to us
+#id = 197 #EVENTNAME: Zapatistas submit to us
+#id = 198 #EVENTNAME: Constitucionalistas win the Mexican Revolution
+#id = 199 #EVENTNAME: Carranza leads Mexico!
+#id = 200 #EVENTNAME: Villistas win the Mexican Revolution
+#id = 201 #EVENTNAME: Villa leads Mexico!
+#id = 202 #EVENTNAME: Zapatistas win the Mexican Revolution
+#id = 203 #EVENTNAME: Zapata leads Mexico!
+#id = 204 #EVENTNAME: Villistas and Zapatistas win the Mexican Revolution
+#id = 205 #EVENTNAME: Zapatistas and Villistas win the Mexican Revolution
+#id = 206 #EVENTNAME: General González suggests a plan for the assassination of Zapata
+#id = 207 #EVENTNAME: The tragedy! Zapata has been assassinated!
+#id = 208 #EVENTNAME: The Zapatistas submits to us!
+#id = 209 #EVENTNAME: Plan of Agua Prieta
+#id = 210 #EVENTNAME: The end of the Mexican Revolution?
+#id = 211 #EVENTNAME: The end of the Mexican Revolution?
+#id = 492 #EVENTNAME: Launch Raids on Tucson
+#id = 493 #EVENTNAME: Raid result : resistance encountered
+#id = 494 #EVENTNAME: Raid result : no resistance encountered
+#id = 495 #EVENTNAME: Launch Raids on El Paso
+#id = 496 #EVENTNAME: Launch Raids on San Antonio
+#id = 497 #EVENTNAME: Launch Raids on Corpus Christi
+#id = 498 #EVENTNAME: Launch Raids on San Diego
+#id = 499 #EVENTNAME: New recruits
+#id = 500 #EVENTNAME: Victory in Mexico city!
+#id = 501 #EVENTNAME: Loss of Mexico city
+#id = 502 #EVENTNAME: Victory in Mexico city!
+#id = 503 #EVENTNAME: Loss of Mexico city
+#id = 504 #EVENTNAME: Captured supplies
+#id = 505 #EVENTNAME: Smuggled supplies
+#id = 506 #EVENTNAME: New recruits
+#id = 519 #EVENTNAME: Tucson raided!
+#id = 520 #EVENTNAME: Tucson raided!
+#id = 521 #EVENTNAME: El Paso raided!
+#id = 522 #EVENTNAME: El Paso raided!
+#id = 523 #EVENTNAME: San Antonio raided!
+#id = 524 #EVENTNAME: San Antonio raided!
+#id = 525 #EVENTNAME: Corpus Christii raided!
+#id = 526 #EVENTNAME: Corpus Christii raided!
+#id = 527 #EVENTNAME: San Diego raided!
+#id = 528 #EVENTNAME: San Diego raided!
+#id = 529 #EVENTNAME: Intervention against Mexican rebels
+#id = 530 #EVENTNAME: Ask for full transit agreement with Mexico
+#id = 531 #EVENTNAME: Mexico rejects our proposal
+#id = 532 #EVENTNAME: Full scale invasion of Mexico
+#id = 533 #EVENTNAME: Ask for full transit agreement with Mexico
+#id = 534 #EVENTNAME: Mexico rejects our proposal
+#id = 535 #EVENTNAME: Full scale invasion of Mexico
+#id = 536 #EVENTNAME: Restore diplomatic relations with Mexico
 
 
 
@@ -47,10 +74,6 @@ picture = "zimmermann_telegram"
 
 trigger = { 
 tag = ENG
-
-
-
-
 
 not = { has_global_flag = SLEEPEVENT_2001535 }
 
@@ -67,147 +90,6 @@ set_global_flag = 2001535_EVENT_DONE
 }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #The Zimmermann telegram
 country_event = {
@@ -3829,238 +3711,3 @@ set_global_flag = 2049526_EVENT_DONE
 }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

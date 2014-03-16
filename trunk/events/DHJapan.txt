@@ -1,3 +1,17 @@
+#id = 50 #EVENTNAME: The Entente offered a white peace to Central Powers *CONFIRMED
+#id = 51 #EVENTNAME: The Entente offered a white peace to Central Powers *CONFIRMED
+#id = 53 #EVENTNAME: Serbia surrendered to us! *CONFIRMED
+#id = 54 #EVENTNAME: Montenegro surrendered to us! *CONFIRMED
+#id = 55 #EVENTNAME: The Entente offered a white peace to Central Powers *CONFIRMED
+#id = 56 #EVENTNAME: Hedjaz surrendered to us! *CONFIRMED
+#id = 57 #EVENTNAME: The Entente offered a white peace to Central Powers *CONFIRMED
+#id = 177 #EVENTNAME: Ultimatum on Germany *CONFIRMED
+#id = 178 #EVENTNAME: Germany did not answer *CONFIRMED
+#id = 179 #EVENTNAME: Germany accepts our conditions *CONFIRMED
+#id = 180 #EVENTNAME: Offer peace to Germany *CONFIRMED
+#id = 181 #EVENTNAME: Japan offers a white peace *CONFIRMED
+#id = 182 #EVENTNAME: Germany accepted our proposal *CONFIRMED
+#id = 438 #EVENTNAME: Japanese Ultimatum *CONFIRMED
 
 #The Entente offered a white peace to Central Powers
 country_event = {
@@ -223,7 +237,7 @@ is_triggered_only = yes
 option = {
 	name = "DH_EVENT_2001550_Option7"
 	dissent = -5 
-	release_vassal = HJZ
+	ENG = { release_vassal = HJZ }
 	
 set_global_flag = 2001550_EVENT_DONE
 
@@ -421,7 +435,7 @@ option = {
 		 }
 	dissent = 5 
 	threat = { who = all value = 20  }
-	join_fation = allies
+	join_faction = allies
 	random_country = { limit = { tag = THIS 
 			 has_global_flag= JAP_ultimatum_extended
 			  } 
@@ -526,7 +540,7 @@ option = {
 		HJZ = { country_event = 55 }
 		 }
 	random_country = { limit = { tag = THIS 
-			 JAP = { alliance_with = ENG }
+			 JAP = { faction = allies }
 			 TUR = { war_with = ENG }
 			  } 
 		ENG = { country_event = 57 }
@@ -618,10 +632,11 @@ option = {
 	JAP = { country_event = 179 }
 	dissent = 5 
 	any_owned = { limit = { is_core = JAP } secede_province = JAP }
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= JAP_ultimatum_extended
+	any_owned = { limit = { is_core = AST } secede_province = JAP }  
+	any_owned = { limit = { region = newguinea_region } secede_province = JAP }
+	random_country = { limit = { tag = GER 
+			 has_global_flag = JAP_ultimatum_extended
 			  } 
-		GER = { any_owned = { limit = { continent = oceania } secede_province = JAP } }
 		 }
 	
 set_global_flag = 2191540_EVENT_DONE
