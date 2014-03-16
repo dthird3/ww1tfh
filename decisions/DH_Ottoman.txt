@@ -1,0 +1,357 @@
+#2191560_decision = { #EVENTNAME: Baghdad Railway
+#2191562_decision = { #EVENTNAME: Baghdad Railway: Karapinar-Dorak
+#2191564_decision = { #EVENTNAME: Baghdad Railway: Tall Abyad - Rasulain
+#2191567_decision = { #EVENTNAME: Baghdad Railway: Nusaybin - Tall Kutschak
+#2191569_decision = { #EVENTNAME: Baghdad Railway: Tall Kutschak – Samarra
+#2191571_decision = { #EVENTNAME: Baghdad Railway: Rasulain - Nusaybin
+#2191580_decision = { #EVENTNAME: Extend military mission in the Ottoman Empire
+#2191581_decision = { #EVENTNAME: Prepare the Asienkorps
+#2191582_decision = { #EVENTNAME: Overhaul coastal defence at the Dardanelles
+#2001571_decision = { #EVENTNAME: Protect the oil fields in southern Persia
+#2104550_decision = { #EVENTNAME: Occupy northern Persia
+#2001572_decision = { #EVENTNAME: Make Qatar a protectorate
+
+
+
+diplomatic_decisions = {
+
+#DECISIONNAME: Baghdad Railway
+2191560_decision = {
+	potential = {
+		or = {
+			TUR = { faction = axis }
+			#has_global_flag = 2145514_EVENT_DONE
+			}
+		not = {
+			 #has_global_flag = 2191576_EVENT_DONE
+			 }
+		tag = GER
+		date = 1914.1.1
+		not = { date = 1999.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2191560 }
+		not = { has_country_flag = decision_2191560 } }
+	allow = {
+		or = {
+			TUR = { faction = axis }
+			#has_global_flag = 2145514_EVENT_DONE
+			}
+		or = {
+			4781 = { controlled_by = TUR }
+			4567 = { controlled_by = TUR }
+			5173 = { controlled_by = TUR }
+			4446 = { controlled_by = TUR }
+			4831 = { controlled_by = TUR }
+			}
+		}
+	effect = { country_event = 215
+		set_country_flag = decision_2191560 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+#DECISIONNAME: Baghdad Railway: Karapinar-Dorak
+2191562_decision = {
+	potential = {
+		TUR = { faction = axis }
+		4781 = { controlled_by = TUR }
+		has_country_flag = baghdad
+		tag = GER
+		date = 1914.1.1
+		not = { date = 1999.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2191562 }
+		not = { has_country_flag = decision_2191562 } }
+	allow = {
+		money =  50
+		metal =  1000
+		}
+	effect = { country_event = 218
+		set_country_flag = decision_2191562 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+#DECISIONNAME: Baghdad Railway: Tall Abyad - Rasulain
+2191564_decision = {
+	potential = {
+		TUR = { faction = axis }
+		4567 = { controlled_by = TUR }
+		has_country_flag = baghdad
+		tag = GER
+		date = 1914.1.1
+		not = { date = 1999.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2191564 }
+		not = { has_country_flag = decision_2191564 } }
+	allow = {
+		money =  50
+		metal =  1000
+		}
+	effect = { country_event = 220
+		set_country_flag = decision_2191564 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+#DECISIONNAME: Baghdad Railway: Nusaybin - Tall Kutschak
+2191567_decision = {
+	potential = {
+		TUR = { faction = axis }
+		4446 = { controlled_by = TUR }
+		has_country_flag = baghdad
+		tag = GER
+		date = 1914.1.1
+		not = { date = 1999.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2191567 }
+		not = { has_country_flag = decision_2191567 } }
+	allow = {
+		money =  50
+		metal =  1000
+		}
+	effect = { country_event = 222
+		set_country_flag = decision_2191567 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+#DECISIONNAME: Baghdad Railway: Tall Kutschak – Samarra
+2191569_decision = {
+	potential = {
+		TUR = { faction = axis }
+		4831 = { controlled_by = TUR }
+		has_country_flag = baghdad
+		tag = GER
+		date = 1914.1.1
+		not = { date = 1999.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2191569 }
+		not = { has_country_flag = decision_2191569 } }
+	allow = {
+		money =  50
+		metal =  1000
+		}
+	effect = { country_event = 224
+		set_country_flag = decision_2191569 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+#DECISIONNAME: Baghdad Railway: Rasulain - Nusaybin
+2191571_decision = {
+	potential = {
+		TUR = { faction = axis }
+		5173 = { controlled_by = TUR }
+		has_country_flag = baghdad
+		tag = GER
+		date = 1914.1.1
+		not = { date = 1999.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2191571 }
+		not = { has_country_flag = decision_2191571 } }
+	allow = {
+		money =  50
+		metal =  1000
+		}
+	effect = { country_event = 226
+		set_country_flag = decision_2191571 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+#DECISIONNAME: Extend military mission in the Ottoman Empire
+2191580_decision = {
+	potential = {
+		#has_global_flag = 2145514_EVENT_DONE
+		#has_global_flag= U08_OTT_Secret_Treaty
+		TUR = { faction = axis }
+		tag = GER
+		date = 1914.7.28
+		not = { date = 1917.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2191580 }
+		not = { has_country_flag = decision_2191580 } }
+	allow = {
+		GER = { war = yes }
+		BUL = { faction = axis }
+		not = {
+			 SER = { war_with = GER }
+			 }
+		supplies =  50
+		}
+	effect = { country_event = 250
+		set_country_flag = decision_2191580 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+#DECISIONNAME: Prepare the Asienkorps
+2191581_decision = {
+	potential = {
+		#has_global_flag = 2145524_EVENT_DONE
+		#has_global_flag= U08_OTT_Secret_Treaty
+		TUR = { faction = axis }
+		tag = GER
+		date = 1914.7.28
+		not = { date = 1917.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2191581 }
+		not = { has_country_flag = decision_2191581 } }
+	allow = {
+		GER = { war = yes }
+		BUL = { faction = axis }
+		not = {
+			 SER = { war_with = GER }
+			 }
+		manpower =  15
+		supplies =  200
+		or = {
+			not = {
+				 5567 = { controlled_by = TUR }
+				 }
+			not = {
+				 7496 = { controlled_by = TUR }
+				 }
+			not = {
+				 7374 = { controlled_by = TUR }
+				 }
+			not = {
+				 4188 = { controlled_by = TUR }
+				 }
+			not = {
+				 9213 = { controlled_by = TUR }
+				 }
+			not = {
+				 5332 = { controlled_by = TUR }
+				 }
+			}
+		}
+	effect = { country_event = 252
+		set_country_flag = decision_2191581 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+
+#DECISIONNAME: Overhaul coastal defence at the Dardanelles
+2191582_decision = {
+	potential = {
+		#has_global_flag = 2145514_EVENT_DONE
+		#has_global_flag= U08_OTT_Secret_Treaty
+		TUR = { faction = axis }
+		tag = GER
+		date = 1914.7.28
+		not = { date = 1917.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2191582 }
+		not = { has_country_flag = decision_2191582 } }
+	allow = {
+		TUR = { faction = axis }
+		TUR = { war = yes }
+		4501 = { controlled_by = TUR }
+		supplies =  10
+		}
+	effect = { country_event = 256
+		set_country_flag = decision_2191582 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+#DECISIONNAME: Protect the oil fields in southern Persia
+2001571_decision = {
+	potential = {
+		GER = { war_with = ENG }
+		not = {
+			 PER = { war_with = ENG }
+			 }
+		exists = PER
+		#has_global_flag = 2145519_EVENT_DONE
+		tag = ENG
+		date = 1914.7.28
+		not = { date = 1917.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2001571 }
+		not = { has_country_flag = decision_2001571 } }
+	allow = {
+		GER = { war_with = ENG }
+		9539 = { controlled_by = THIS }
+		}
+	effect = { country_event = 259
+		set_country_flag = decision_2001571 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+#DECISIONNAME: Occupy northern Persia
+2104550_decision = {
+	potential = {
+		GER = { war_with = RUS }
+		not = {
+			 PER = { war_with = RUS }
+			 }
+		exists = PER
+		#has_global_flag = 2145519_EVENT_DONE
+		tag = RUS
+		date = 1914.7.28
+		not = { date = 1917.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2104550 }
+		not = { has_country_flag = decision_2104550 } }
+	allow = {
+		GER = { war_with = RUS }
+		3524 = { controlled_by = THIS }
+		}
+	effect = { country_event = 261
+		set_country_flag = decision_2104550 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+
+#DECISIONNAME: Make Qatar a protectorate
+2001572_decision = {
+	potential = {
+		exists = ENG
+		not = {
+			 #has_global_flag = 2191550_EVENT_DONE
+			 }
+		tag = ENG
+		date = 1916.1.1
+		not = { date = 1925.12.30
+			 }
+		not = { has_global_flag = SLEEPEVENT_2001572 }
+		not = { has_country_flag = decision_2001572 } }
+	allow = {
+		not = {
+			 ENG = { war_with = ENG }
+			 }
+		not = {
+			 ENG = { is_subject = yes }
+			 }
+		or = {
+			ENG = { vassal_of = ENG }
+			SAU = { vassal_of = ENG }
+			OMN = { vassal_of = ENG }
+			}
+		}
+	effect = { country_event = 265
+		set_country_flag = decision_2001572 }
+	ai_will_do = { factor = 1 }
+	}
+
+}
