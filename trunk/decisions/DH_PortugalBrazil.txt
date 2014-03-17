@@ -1,5 +1,5 @@
-#2001536_decision = { #EVENTNAME: Align Portugal
-#2001538_decision = { #EVENTNAME: Declare War Against Germany
+#2001536_decision = { #EVENTNAME: Align Portugal *CONFIRMED
+#2001538_decision = { #EVENTNAME: Declare War Against Germany *CONFIRMED
 
 
 diplomatic_decisions = {
@@ -22,7 +22,7 @@ diplomatic_decisions = {
 		not = { has_country_flag = decision_2001536 } }
 	allow = {
 		relation = { who = POR value = 10 }
-		2613 = { controlled_by = THIS }
+		2613 = { controlled_by = FRA }
 		}
 	effect = { country_event = 42
 		set_country_flag = decision_2001536 }
@@ -50,7 +50,7 @@ diplomatic_decisions = {
 		not = { has_global_flag = SLEEPEVENT_2001538 }
 		not = { has_country_flag = decision_2001538 } }
 	allow = {
-		2613 = { controlled_by = THIS }
+		2613 = { controlled_by = FRA }
 		}
 	effect = { country_event = 44
 		set_country_flag = decision_2001538 }

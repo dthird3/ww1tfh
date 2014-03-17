@@ -1,0 +1,1010 @@
+#FRAFrance.txt#id = 121 #EVENTNAME: Pacifist Jaurès Assassination
+#FRAFrance.txt#id = 122 #EVENTNAME: Dissolve Viviani Administration
+#FRAFrance.txt#id = 124 #EVENTNAME: Appoint Foch as Supreme Allied Commander
+#FRAFrance.txt#id = 125 #EVENTNAME: Appoint Clemenceau as Prime Minister
+#ITAItaly.txt#id = 176 #EVENTNAME: Appoint Diaz as new Chief of Staff
+#U08GermanEmpire.txt#id = 418 #EVENTNAME: Sailor's mutiny!
+#U08GermanEmpire.txt#id = 419 #EVENTNAME: The Revolt spreads!
+#U08GermanEmpire.txt#id = 420 #EVENTNAME: Two republics proclaimed...
+#U08GermanEmpire.txt#id = 421 #EVENTNAME: Creation of Council of the People's Deputies
+#U08GermanEmpire.txt#id = 422 #EVENTNAME: Official abdication of Wilhelm II
+#U08GermanEmpire.txt#id = 445 #EVENTNAME: Appoint Von Falkenhayn as Chief of Staff
+#USAUSA.txt#id = 517 #EVENTNAME: The Matamoros Incident have been settled
+#USAUSA.txt#id = 518 #EVENTNAME: Leave Veracruz
+#USAUSA.txt#id = 541 #EVENTNAME: Occupation of Haiti
+#USAUSA.txt#id = 542 #EVENTNAME: Occupation of the Dominican Republic
+#USAUSA.txt#id = 543 #EVENTNAME: The Contestado War
+
+#EVENTNAME: Pacifist Jaurès Assassination
+country_event = {
+id = 121
+title = "DH_EVENT_2002549_TITLE"
+desc = "DH_EVENT_2002549_DESC"
+picture = "jaures"
+
+trigger = { 
+tag = FRA
+date = 1914.7.30
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_2002549 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2002549_Option7"
+	remove_minister = 5341
+	dissent = 1 
+	
+set_global_flag = 2002549_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Dissolve Viviani Administration
+country_event = {
+id = 122
+title = "DH_EVENT_2002550_TITLE"
+desc = "DH_EVENT_2002550_DESC"
+picture = "news_paper"
+
+trigger = {
+	month = 9
+	head_of_government = 5271
+	
+tag = FRA
+date = 1915.1.1
+
+not = { date = 1915.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2002550 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  30 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2002550_Option7"
+	head_of_government = 5274
+	foreign_minister = 5274
+	armament_minister = 5328
+	minister_of_security = 5330
+	dissent = -2 
+	
+set_global_flag = 2002550_EVENT_DONE
+
+}
+
+}
+
+
+#EVENTNAME: Appoint Foch as Supreme Allied Commander
+country_event = {
+id = 124
+title = "DH_EVENT_2002554_TITLE"
+desc = "DH_EVENT_2002554_DESC"
+picture = "WW1_Offensive"
+
+trigger = {
+	THIS = { ai = no }
+	FRA = { war_with = GER }
+	FRA = { faction = allies }
+	not = {
+		 or = {
+			head_of_state = 5234
+			head_of_government = 5234
+			foreign_minister = 5234
+			armament_minister = 5234
+			minister_of_security = 5234
+			minister_of_intelligence = 5234
+			chief_of_staff = 5234
+			chief_of_army = 5234
+			chief_of_navy = 5234
+			chief_of_air = 5234
+			}
+		 }
+	
+tag = FRA
+date = 1917.1.1
+
+not = { date = 1919.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2002554 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  30 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2002554_Option7"
+	chief_of_staff = 5234
+	random_country = { limit = { tag = THIS 
+			 ENG = { ai = yes }
+			  } 
+		# MANUALFIX military control command = {  type = military_control which = FRA where = ENG value = 1 }
+		 }
+	
+set_global_flag = 2002554_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Appoint Clemenceau as Prime Minister
+country_event = {
+id = 125
+title = "DH_EVENT_2002555_TITLE"
+desc = "DH_EVENT_2002555_DESC"
+trigger = {
+	#NOEQUIVALENT random =  10
+	FRA = { war_with = GER }
+	FRA = { faction = allies }
+	not = {
+		 or = {
+			head_of_state = 5287
+			head_of_government = 5287
+			foreign_minister = 5287
+			armament_minister = 5287
+			minister_of_security = 5287
+			minister_of_intelligence = 5287
+			chief_of_staff = 5287
+			chief_of_army = 5287
+			chief_of_navy = 5287
+			chief_of_air = 5287
+			}
+		 }
+	
+tag = FRA
+date = 1917.1.1
+
+not = { date = 1919.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2002555 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  30 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2002555_Option7"
+	head_of_government = 5287
+	armament_minister = 5287
+	
+set_global_flag = 2002555_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Appoint Diaz as new Chief of Staff
+country_event = {
+id = 176
+title = "DH_EVENT_2006516_TITLE"
+desc = "DH_EVENT_2006516_DESC"
+picture = "WW1_Offensive"
+
+trigger = {
+	#NOEQUIVALENT random =  35
+	ITA = { war_with = AUH }
+	or = {
+		head_of_state = 25143
+		head_of_government = 25143
+		foreign_minister = 25143
+		armament_minister = 25143
+		minister_of_security = 25143
+		minister_of_intelligence = 25143
+		chief_of_staff = 25143
+		chief_of_army = 25143
+		chief_of_navy = 25143
+		chief_of_air = 25143
+		}
+	not = {
+		 or = {
+			head_of_state = 25145
+			head_of_government = 25145
+			foreign_minister = 25145
+			armament_minister = 25145
+			minister_of_security = 25145
+			minister_of_intelligence = 25145
+			chief_of_staff = 25145
+			chief_of_army = 25145
+			chief_of_navy = 25145
+			chief_of_air = 25145
+			}
+		 }
+	or = {
+		not = {
+			 3562 = { controlled_by = THIS }
+			 }
+		not = {
+			 3561 = { controlled_by = THIS }
+			 }
+		not = {
+			 3429 = { controlled_by = THIS }
+			 }
+		}
+	
+tag = ITA
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2006516 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  30 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2006516_Option7"
+	chief_of_staff = 25145
+	random_country = { limit = { tag = THIS 
+			 or = {
+				head_of_state = 25143
+				head_of_government = 25143
+				foreign_minister = 25143
+				armament_minister = 25143
+				minister_of_security = 25143
+				minister_of_intelligence = 25143
+				chief_of_staff = 25143
+				chief_of_army = 25143
+				chief_of_navy = 25143
+				chief_of_air = 25143
+				}
+			  } 
+		chief_of_army = 25145
+		 }
+	remove_minister = 25143
+	kill_leader = 25319 
+	dissent = -1 
+	
+set_global_flag = 2006516_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Sailor's mutiny!
+country_event = {
+id = 418
+title = "DH_EVENT_2191515_TITLE"
+desc = "DH_EVENT_2191515_DESC"
+picture = "news_paper"
+
+trigger = {
+	#NOEQUIVALENT random =  25
+	dissent = 35
+	or = {
+		war = yes
+		#has_global_flag = 2191531_EVENT_DONE
+		#has_global_flag = 2191513_EVENT_DONE
+		}
+	
+tag = GER
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191515 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2191515_Option7"
+	dissent = 2 
+	
+set_global_flag = 2191515_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: The Revolt spreads!
+country_event = {
+id = 419
+title = "DH_EVENT_2191516_TITLE"
+desc = "DH_EVENT_2191516_DESC"
+picture = "news_paper"
+
+trigger = {
+	#NOEQUIVALENT random =  75
+	war = no
+	dissent = 30
+	
+tag = GER
+date = 1915.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191516 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  2 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2191516_Option7"
+	dissent = 2 
+	
+set_global_flag = 2191516_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Two republics proclaimed...
+country_event = {
+id = 420
+title = "DH_EVENT_2191517_TITLE"
+desc = "DH_EVENT_2191517_DESC"
+picture = "news_paper"
+
+trigger = {
+	#NOEQUIVALENT random =  75
+	has_global_flag = 2191515_EVENT_DONE
+	dissent = 30
+	
+tag = GER
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191517 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  3 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2191517_Option7"
+	dissent = 2 
+	
+set_global_flag = 2191517_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Creation of Council of the People's Deputies
+country_event = {
+id = 421
+title = "DH_EVENT_2191518_TITLE"
+desc = "DH_EVENT_2191518_DESC"
+picture = "news_paper"
+
+trigger = {
+	#NOEQUIVALENT random =  75
+	has_global_flag = 2191516_EVENT_DONE
+	dissent = 30
+	
+tag = GER
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191518 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  3 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2191518_Option7"
+	dissent = 1 
+	
+set_global_flag = 2191518_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Official abdication of Wilhelm II
+country_event = {
+id = 422
+title = "DH_EVENT_2191519_TITLE"
+desc = "DH_EVENT_2191519_DESC"
+picture = "news_paper"
+
+trigger = {
+	#NOEQUIVALENT random =  20
+	has_global_flag = 2191515_EVENT_DONE
+	
+tag = GER
+date = 1914.1.1
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191519 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2191519_Option7"
+	dissent = -20 
+	# MANUALFIX change flag command = { type = flag_ext where = U08 which = "_weimar" }
+	# add_country_modifier = { name = "democratic8" duration = 360 }#command = { type = set_domestic which = democratic value = 8 }
+	# add_country_modifier = { name = "rulingpartysupport" duration = 360 }#command = { type = set_domestic which = political_left value = 7 }
+	head_of_state = 855200
+	head_of_government = 855202
+	foreign_minister = 855212
+	armament_minister = 855204
+	minister_of_security = 855202
+	minister_of_intelligence = 855251
+	chief_of_staff = 855074
+	chief_of_army = 855089
+	chief_of_navy = 855262
+	chief_of_air = 855104
+	remove_minister = 855001
+	remove_minister = 855002
+	remove_minister = 855003
+	remove_minister = 855004
+	remove_minister = 855005
+	remove_minister = 855006
+	remove_minister = 855007
+	remove_minister = 855008
+	remove_minister = 855009
+	remove_minister = 855010
+	remove_minister = 855011
+	remove_minister = 855012
+	remove_minister = 855013
+	remove_minister = 855014
+	remove_minister = 855015
+	remove_minister = 855016
+	remove_minister = 855017
+	remove_minister = 855018
+	remove_minister = 855019
+	remove_minister = 855020
+	remove_minister = 855021
+	remove_minister = 855022
+	remove_minister = 855023
+	remove_minister = 855024
+	remove_minister = 855025
+	remove_minister = 855026
+	remove_minister = 855027
+	remove_minister = 855028
+	remove_minister = 855029
+	remove_minister = 855030
+	remove_minister = 855031
+	remove_minister = 855032
+	remove_minister = 855033
+	remove_minister = 855034
+	remove_minister = 855035
+	remove_minister = 855036
+	remove_minister = 855037
+	remove_minister = 855038
+	remove_minister = 855039
+	remove_minister = 855040
+	remove_minister = 855041
+	remove_minister = 855042
+	remove_minister = 855043
+	remove_minister = 855044
+	remove_minister = 855045
+	remove_minister = 855046
+	remove_minister = 855047
+	remove_minister = 855048
+	remove_minister = 855049
+	remove_minister = 855050
+	remove_minister = 855051
+	remove_minister = 855052
+	remove_minister = 855053
+	remove_minister = 855054
+	remove_minister = 855056
+	remove_minister = 855058
+	remove_minister = 855059
+	remove_minister = 855060
+	remove_minister = 855061
+	remove_minister = 855062
+	remove_minister = 855063
+	remove_minister = 855064
+	remove_minister = 855065
+	remove_minister = 855066
+	remove_minister = 855067
+	remove_minister = 855068
+	remove_minister = 855069
+	remove_minister = 855070
+	remove_minister = 855071
+	remove_minister = 855072
+	remove_minister = 855074
+	remove_minister = 855075
+	remove_minister = 855076
+	remove_minister = 855077
+	remove_minister = 855078
+	remove_minister = 855079
+	remove_minister = 855088
+	remove_minister = 855089
+	remove_minister = 855090
+	remove_minister = 855091
+	remove_minister = 855092
+	remove_minister = 855093
+	remove_minister = 855094
+	remove_minister = 855095
+	remove_minister = 855096
+	remove_minister = 855097
+	remove_minister = 855098
+	remove_minister = 855099
+	remove_minister = 855100
+	remove_minister = 855101
+	remove_minister = 855102
+	remove_minister = 855103
+	remove_minister = 855104
+	remove_minister = 855105
+	remove_minister = 855106
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855200 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855201 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855202 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855203 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855204 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855205 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855206 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855207 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855208 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855209 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855210 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855211 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855212 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855213 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855214 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855215 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855216 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855217 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855218 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855219 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855220 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855221 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855222 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855223 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855224 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855225 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855226 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855227 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855228 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855229 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855230 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855231 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855232 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855233 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855234 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855235 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855236 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855237 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855238 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855239 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855240 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855241 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855242 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855243 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855244 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855245 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855246 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855247 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855248 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855249 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855250 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855251 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855252 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855253 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855254 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855255 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855256 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855257 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855258 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855259 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855260 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855261 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855262 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855263 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855264 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855265 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855266 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855267 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855268 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 855269 }
+	
+set_global_flag = 2191519_EVENT_DONE
+
+}
+
+}
+
+
+
+
+
+
+
+
+#EVENTNAME: Appoint Von Falkenhayn as Chief of Staff
+country_event = {
+id = 445
+title = "DH_EVENT_2191546_TITLE"
+desc = "DH_EVENT_2191546_DESC"
+trigger = {
+	#NOEQUIVALENT random =  40
+	not = {
+		 or = {
+			head_of_state = 855039
+			head_of_government = 855039
+			foreign_minister = 855039
+			armament_minister = 855039
+			minister_of_security = 855039
+			minister_of_intelligence = 855039
+			chief_of_staff = 855039
+			chief_of_army = 855039
+			chief_of_navy = 855039
+			chief_of_air = 855039
+			}
+		 }
+	GER = { war_with = FRA }
+	not = {
+		 2613 = { controlled_by = GER }
+		 }
+	
+tag = GER
+date = 1914.9.13
+
+not = { date = 1915.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2191546 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  20 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2191546_Option7"
+	chief_of_staff = 855039
+	chief_of_army = 855039
+	#NOEQUIVALENT skill command = { type = add_leader_skill which = 855019 value = 1 }
+	remove_minister = 855072
+	kill_leader = 855020 
+	dissent = -2 
+	
+set_global_flag = 2191546_EVENT_DONE
+
+}
+
+}
+
+
+#EVENTNAME: The Matamoros Incident have been settled
+country_event = {
+id = 517
+title = "DH_EVENT_2049510_TITLE"
+desc = "DH_EVENT_2049510_DESC"
+trigger = {
+	war = no
+	9624 = { controlled_by = USA }
+	#NOEQUIVALENT random =  3
+	
+tag = USA
+date = 1914.10.10
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2049510 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  1 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2049510_Option7"
+	dissent = -1 
+	
+set_global_flag = 2049510_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Leave Veracruz
+country_event = {
+id = 518
+title = "DH_EVENT_2049511_TITLE"
+desc = "DH_EVENT_2049511_DESC"
+trigger = {
+	war_with = GER
+	9624 = { controlled_by = USA }
+	war = no
+	#NOEQUIVALENT random =  25
+	
+tag = USA
+date = 1914.8.4
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2049511 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  5 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_2049511_Option7"
+	dissent = -1 
+	random_country = { limit = { tag = THIS 
+			 exists = MEX
+			  } 
+		9567 = { secede_province = MEX }
+		9588 = { secede_province = MEX }
+		9624 = { secede_province = MEX }
+		9625 = { secede_province = MEX }
+		9643 = { secede_province = MEX }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = MXR
+			 not = {
+				 exists = MEX
+				 }  } 
+		9567 = { secede_province = MXR }
+		9588 = { secede_province = MXR }
+		9624 = { secede_province = MXR }
+		9625 = { secede_province = MXR }
+		9643 = { secede_province = MXR }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = MXR
+			 not = {
+				 exists = MEX
+				 exists = MXR
+				 }  } 
+		9567 = { secede_province = MXR }
+		9588 = { secede_province = MXR }
+		9624 = { secede_province = MXR }
+		9625 = { secede_province = MXR }
+		9643 = { secede_province = MXR }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = MXR
+			 not = {
+				 exists = MEX
+				 exists = MXR
+				 exists = MXR
+				 }  } 
+		9567 = { secede_province = MXR }
+		9588 = { secede_province = MXR }
+		9624 = { secede_province = MXR }
+		9625 = { secede_province = MXR }
+		9643 = { secede_province = MXR }
+		 }
+	
+set_global_flag = 2049511_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Occupation of Haiti
+country_event = {
+id = 541
+title = "DH_EVENT_2049538_TITLE"
+desc = "DH_EVENT_2049538_DESC"
+trigger = {
+	exists = HAI
+	not = {
+		 HAI = { is_subject = yes }
+		 }
+	not = {
+		 USA = { war_with = HAI }
+		 }
+	not = {
+		 USA = { alliance_with = HAI }
+		 }
+	not = {
+		 THIS = { surrender_progress = 5  }
+		 }
+	or = {
+		GER = { war_with = FRA }
+		GER = { war_with = ENG }
+		}
+	#NOEQUIVALENT random =  15
+	
+tag = USA
+date = 1915.7.27
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2049538 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  60 }
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 90
+		 }
+	name = "DH_EVENT_2049538_Option1"
+	release_vassal = HAI
+	dissent = -1 
+	supplies = -200 
+	neutrality = -5
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 DOM = { vassal_of = USA }
+				 }  } 
+		relation = { who = DOM value = -100  }
+		 }
+	
+set_global_flag = 2049538_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2049538_Option2"
+	ai_chance = { factor = 10
+		 }
+	dissent = 1 
+	neutrality = 5
+	
+set_global_flag = 2049538_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Occupation of the Dominican Republic
+country_event = {
+id = 542
+title = "DH_EVENT_2049539_TITLE"
+desc = "DH_EVENT_2049539_DESC"
+trigger = {
+	exists = DOM
+	not = {
+		 DOM = { is_subject = yes }
+		 }
+	not = {
+		 USA = { war_with = DOM }
+		 }
+	not = {
+		 USA = { alliance_with = DOM }
+		 }
+	not = {
+		 THIS = { surrender_progress = 5  }
+		 }
+	or = {
+		GER = { war_with = FRA }
+		GER = { war_with = ENG }
+		}
+	#NOEQUIVALENT random =  15
+	
+tag = USA
+date = 1916.5.12
+
+not = { date = 1925.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2049539 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  60 }
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 90
+		 }
+	name = "DH_EVENT_2049539_Option1"
+	release_vassal = DOM
+	dissent = -1 
+	supplies = -200 
+	neutrality = -5
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 HAI = { vassal_of = USA }
+				 }  } 
+		relation = { who = HAI value = -100  }
+		 }
+	
+set_global_flag = 2049539_EVENT_DONE
+
+}
+
+option = {
+	name = "DH_EVENT_2049539_Option2"
+	ai_chance = { factor = 10
+		 }
+	dissent = 1 
+	neutrality = 5
+	
+set_global_flag = 2049539_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: The Contestado War
+country_event = {
+id = 543
+title = "DH_EVENT_2049540_TITLE"
+desc = "DH_EVENT_2049540_DESC"
+trigger = { #NOEQUIVALENT random =  10
+	 
+tag = BRA
+date = 1912.10.1
+
+not = { date = 1918.12.30
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_2049540 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  60 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2049540_Option7"
+	10242 = { create_revolt = 3 }
+	dissent = 5 
+	
+set_global_flag = 2049540_EVENT_DONE
+
+}
+
+}
