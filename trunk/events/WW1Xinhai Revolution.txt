@@ -96,10 +96,12 @@ country_event = {
 				}
 			PRC = { load_oob = PRC_1911_Wuchang.txt }
 			PRC = { country_event = 999973}
-			add_country_modifier = {
+			PRC = { add_country_modifier = {
 				name = "officers_gain"
 				duration = 15
 			}
+			}
+			PRC = { remove_country_modifier = "qing_administration" }
 			set_country_flag = xinhai_revolution
 		}
 }
