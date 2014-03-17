@@ -1,9 +1,9 @@
-#id = 41 #EVENTNAME: The Zimmermann telegram - we got'em!
-#id = 183 #EVENTNAME: The Zimmermann telegram
+#id = 41 #EVENTNAME: The Zimmermann telegram - we got'em! *CONFIRMED
+#id = 183 #EVENTNAME: The Zimmermann telegram *CONFIRMED
 #id = 184 #EVENTNAME: The United States declare war on Germany
 #id = 185 #EVENTNAME: War against the United States
 #id = 186 #EVENTNAME: United States ask for full transit
-#id = 187 #EVENTNAME: The Zimmermann telegram
+#id = 187 #EVENTNAME: The Zimmermann telegram 
 #id = 188 #EVENTNAME: The United States declare war on Germany
 #id = 189 #EVENTNAME: United States ask for full transit
 #id = 190 #EVENTNAME: Huerta has been defeated!
@@ -131,12 +131,6 @@ picture = "zimmermann_telegram"
 trigger = {
 	#has_global_flag = 2038499_EVENT_DONE
 	USA = { war_with = GER }
-	or = {
-		has_global_flag = 2049524_EVENT_DONE
-		#not = {
-			 #has_global_flag = 2049502_EVENT_DONE unrestricted sub warfare
-			 #}
-		}
 	#NOEQUIVALENT random =  4
 	
 tag = MEX

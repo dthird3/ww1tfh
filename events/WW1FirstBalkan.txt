@@ -462,6 +462,7 @@ country_event = {
 			exists = BUL
 			exists = GRE
 			SER = { has_country_flag = first_balkan_done }
+			not = { SER = { has_country_flag = first_balkan_cleanup_done } }
 			date = 1913.3.1
 			}
 
@@ -508,6 +509,7 @@ country_event = {
 			SER = { end_military_access = MTN }  
 			SER = { end_military_access = ALB }  
 			SER = { end_military_access = BUL } 
+			SER = { set_country_flag = first_balkan_cleanup_done }
 			}
 }
 

@@ -1,19 +1,19 @@
-#FRAFrance.txt#id = 121 #EVENTNAME: Pacifist Jaurès Assassination
+#FRAFrance.txt#id = 121 #EVENTNAME: Pacifist Jaurès Assassination *CONFIRMED
 #FRAFrance.txt#id = 122 #EVENTNAME: Dissolve Viviani Administration
 #FRAFrance.txt#id = 124 #EVENTNAME: Appoint Foch as Supreme Allied Commander
 #FRAFrance.txt#id = 125 #EVENTNAME: Appoint Clemenceau as Prime Minister
-#ITAItaly.txt#id = 176 #EVENTNAME: Appoint Diaz as new Chief of Staff
+#ITAItaly.txt#id = 176 #EVENTNAME: Appoint Diaz as new Chief of Staff *CONFIRMED
 #U08GermanEmpire.txt#id = 418 #EVENTNAME: Sailor's mutiny!
 #U08GermanEmpire.txt#id = 419 #EVENTNAME: The Revolt spreads!
 #U08GermanEmpire.txt#id = 420 #EVENTNAME: Two republics proclaimed...
 #U08GermanEmpire.txt#id = 421 #EVENTNAME: Creation of Council of the People's Deputies
 #U08GermanEmpire.txt#id = 422 #EVENTNAME: Official abdication of Wilhelm II
-#U08GermanEmpire.txt#id = 445 #EVENTNAME: Appoint Von Falkenhayn as Chief of Staff
+#U08GermanEmpire.txt#id = 445 #EVENTNAME: Appoint Von Falkenhayn as Chief of Staff *CONFIRMED
 #USAUSA.txt#id = 517 #EVENTNAME: The Matamoros Incident have been settled
 #USAUSA.txt#id = 518 #EVENTNAME: Leave Veracruz
-#USAUSA.txt#id = 541 #EVENTNAME: Occupation of Haiti
+#USAUSA.txt#id = 541 #EVENTNAME: Occupation of Haiti *CONFIRMED
 #USAUSA.txt#id = 542 #EVENTNAME: Occupation of the Dominican Republic
-#USAUSA.txt#id = 543 #EVENTNAME: The Contestado War
+#USAUSA.txt#id = 543 #EVENTNAME: The Contestado War *CONFIRMED
 
 #EVENTNAME: Pacifist Jaurès Assassination
 country_event = {
@@ -876,7 +876,7 @@ option = {
 	ai_chance = { factor = 90
 		 }
 	name = "DH_EVENT_2049538_Option1"
-	release_vassal = HAI
+	create_vassal = HAI
 	dissent = -1 
 	supplies = -200 
 	neutrality = -5
@@ -948,7 +948,7 @@ option = {
 	ai_chance = { factor = 90
 		 }
 	name = "DH_EVENT_2049539_Option1"
-	release_vassal = DOM
+	create_vassal = DOM
 	dissent = -1 
 	supplies = -200 
 	neutrality = -5

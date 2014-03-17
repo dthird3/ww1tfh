@@ -1,5 +1,5 @@
 
-#id = 14 #EVENTNAME: Letters with Hussein bin Ali
+#id = 14 #EVENTNAME: Letters with Hussein bin Ali *CONFIRMED
 #id = 15 #EVENTNAME: Promises for a great Arab Empire
 #id = 16 #EVENTNAME: Send T.E. Lawrence
 #id = 17 #EVENTNAME: Send assistance to Hedjaz
@@ -61,7 +61,7 @@ desc = "DH_EVENT_2001509_DESC"
 picture = "Ottoman_declaration_war"
 
 trigger = {
-	has_global_flag = 2001507_EVENT_DONE
+	#has_global_flag = 2001507_EVENT_DONE
 	TUR = { war_with = ENG }
 	5564 = { controlled_by = ENG }
 	#NOEQUIVALENT random =  20
