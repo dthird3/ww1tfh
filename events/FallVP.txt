@@ -6887,34 +6887,6 @@ set_country_flag = fall_5759
 }}
 
 country_event = {
-id = 12346291
-trigger = {
-tag = JAP
-war = yes
-or = {
-ENG = { war_with = GER }
-RUS = { war_with = GER }
-FRA = { war_with = GER }
-ENG = { war_with = AUH }
-RUS = { war_with = AUH }
-FRA = { war_with = AUH }
-ENG = { war_with = TUR }
-RUS = { war_with = TUR }
-FRA = { war_with = TUR }
-}
-not = { controls = 6291 }
-not = { has_country_flag = fall_6291 }
-}
-title = "EVTNAME12346291"
-desc = "EVTDESC12346291"
-picture = "surrender"
-option = {
-name = "ACTION_NAME_DAMN"
-national_unity = -1
-set_country_flag = fall_6291
-}}
-
-country_event = {
 id = 12347009
 trigger = {
 tag = JAP
@@ -15918,21 +15890,6 @@ national_unity = 2
 clr_country_flag = fall_5759
 }}
 
-country_event = {
-id = 43216291
-trigger = {
-tag = JAP
-controls = 6291 
-has_country_flag = fall_6291
-}
-title = "EVTNAME43216291"
-desc = "EVTDESC43216291"
-picture = "regain"
-option = {
-name = "ACTION_NAME_HURRAH"
-national_unity = 1
-clr_country_flag = fall_6291
-}}
 
 country_event = {
 id = 43217009
