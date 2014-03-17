@@ -1,6 +1,6 @@
-#id = 42 #EVENTNAME: Align Portugal
-#id = 43 #EVENTNAME: The British government invites us to participate in the war
-#id = 44 #EVENTNAME: Declare War Against Germany
+#id = 42 #EVENTNAME: Align Portugal *CONFIRMED
+#id = 43 #EVENTNAME: The British government invites us to participate in the war *CONFIRMED
+#id = 44 #EVENTNAME: Declare War Against Germany *CONFIRMED
 
 
 
@@ -14,7 +14,7 @@ picture = "diplomatic_campaign"
 trigger = {
 	exists = POR
 	GER = { war_with = ENG }
-	2613 = { controlled_by = THIS }
+	2613 = { controlled_by = FRA }
 	#NOEQUIVALENT random =  30
 	not = {
 		POR = { war_with = ENG }
@@ -69,13 +69,8 @@ fire_only_once = yes
 is_triggered_only = yes
 option = {
 	name = "DH_EVENT_2001537_Option7"
-	create_alliance = ENG
-	random_country = { limit = { tag = THIS 
-			 not = {
-				 #MANUALFIX policy = { type = professional_army value = 7 }
-				 }  } 
-		#country_event = 1350007 #MANUALFIX unknown event trigger
-		 }
+	join_faction = allies
+
 	
 set_global_flag = 2001537_EVENT_DONE
 
@@ -108,7 +103,7 @@ trigger = {
 		}
 	#has_global_flag = 2191542_EVENT_DONE	
 	GER = { has_country_flag = break_blockade }
-	2613 = { controlled_by = THIS }
+	2613 = { controlled_by = FRA }
 	#NOEQUIVALENT random =  10
 	
 tag = BRA
@@ -128,7 +123,7 @@ mean_time_to_happen = { days =  30 }
 is_triggered_only = yes
 option = {
 	name = "DH_EVENT_2001538_Option7"
-	create_alliance = ENG
+	join_faction = allies
 	
 set_global_flag = 2001538_EVENT_DONE
 
