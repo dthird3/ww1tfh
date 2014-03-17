@@ -1,6 +1,6 @@
 Log of Audax.Validator, version 1.4 RC5 [1.4.4.0]
 
-Current Time: 3/14/2014 10:51:59 PM
+Current Time: 3/16/2014 11:36:42 PM
 .NET Version: 4.0.30319.18444
 OS Version: Microsoft Windows NT 6.1.7601 Service Pack 1
 Current Culture: en-US
@@ -13,7 +13,7 @@ System Directory: C:\Windows\system32
 User Name: [user_name <*****>]
 User Domain Name: [user_domain_name <*****-**>]
 User Interactive: True
-Tick Count: 1.12:51:20.8150000
+Tick Count: 00:08:42.2280000
 Shutdown Started: False
 
 ENVIRONMENT VARIABLES
@@ -108,7 +108,13 @@ File system tree
 ..\App\Audax.Validator.exe.config
 ..\App\Hydrus.dll
 ..\Data\dummy.txt
+..\Data\EventInfo.csv
+..\Data\flaganalysis_CountryFlag.txt
+..\Data\flaganalysis_GlobalFlag.txt
+..\Data\flaganalysis_ProvinceFlag.txt
+..\Data\flaganalysis_Variable.txt
 ..\Data\log.txt
+..\Data\save.txt
 ..\Dev\Audax.Clausewitz.dll
 ..\Dev\Audax.Clausewitz.xml
 ..\Dev\Audax.Validator.Europa.dll
@@ -479,77 +485,61 @@ DynamicErrors:
 ValidationManager: StatusLog > Beginning initialization...
 ValidationManager: StatusLog > Initialization complete!
 ValidationManager: StatusLog > Beginning validation...
-ValidationManager: StatusLog > Beginning Decisions validation...
-ValidationManager: StatusLog > Decisions validation complete in 3245 ms!
-ValidationManager: StatusLog > Cache hits: 43 Cache misses: 459
-ValidationManager: StatusLog > Validation complete!
-ValidationManager: StatusLog > Beginning validation...
 ValidationManager: StatusLog > Beginning Events validation...
-ValidationManager: StatusLog > Events validation complete in 10950 ms!
-ValidationManager: StatusLog > Cache hits: 122 Cache misses: 513
+ValidationManager: StatusLog > Events validation complete in 10806 ms!
+ValidationManager: StatusLog > Cache hits: 98 Cache misses: 497
 ValidationManager: StatusLog > Validation complete!
 ValidationManager: StatusLog > Beginning validation...
 ValidationManager: StatusLog > Beginning Decisions validation...
-ValidationManager: StatusLog > Decisions validation complete in 3342 ms!
-ValidationManager: StatusLog > Cache hits: 43 Cache misses: 459
+ValidationManager: StatusLog > Decisions validation complete in 3272 ms!
+ValidationManager: StatusLog > Cache hits: 52 Cache misses: 445
 ValidationManager: StatusLog > Validation complete!
 ValidationManager: StatusLog > Beginning validation...
 ValidationManager: StatusLog > Beginning Decisions validation...
-ValidationManager: StatusLog > Decisions validation complete in 3316 ms!
-ValidationManager: StatusLog > Cache hits: 43 Cache misses: 427
-ValidationManager: StatusLog > Validation complete!
-ValidationManager: StatusLog > Beginning validation...
+ValidationManager: StatusLog > Decisions validation complete in 2779 ms!
 ValidationManager: StatusLog > Beginning Events validation...
-ValidationManager: StatusLog > Events validation complete in 6735 ms!
-ValidationManager: StatusLog > Cache hits: 89 Cache misses: 479
-ValidationManager: StatusLog > Validation complete!
-ValidationManager: StatusLog > Beginning validation...
-ValidationManager: StatusLog > Beginning Events validation...
-ValidationManager: StatusLog > Events validation complete in 7222 ms!
-ValidationManager: StatusLog > Cache hits: 89 Cache misses: 479
-ValidationManager: StatusLog > Validation complete!
-ValidationManager: StatusLog > Beginning validation...
-ValidationManager: StatusLog > Beginning Events validation...
-ValidationManager: StatusLog > Events validation complete in 7594 ms!
-ValidationManager: StatusLog > Cache hits: 89 Cache misses: 479
-ValidationManager: StatusLog > Validation complete!
-ValidationManager: StatusLog > Beginning validation...
-ValidationManager: StatusLog > Beginning Events validation...
-ValidationManager: StatusLog > Events validation complete in 7323 ms!
-ValidationManager: StatusLog > Cache hits: 89 Cache misses: 480
+ValidationManager: StatusLog > Events validation complete in 5224 ms!
+ValidationManager: StatusLog > Cache hits: 147 Cache misses: 497
 ValidationManager: StatusLog > Validation complete!
 ValidationManager: StatusLog > Beginning validation...
 ValidationManager: StatusLog > Beginning Decisions validation...
-ValidationManager: StatusLog > Decisions validation complete in 2828 ms!
-ValidationManager: StatusLog > Cache hits: 44 Cache misses: 428
-ValidationManager: StatusLog > Validation complete!
-ValidationManager: StatusLog > Beginning validation...
-ValidationManager: StatusLog > Beginning Decisions validation...
-ValidationManager: StatusLog > Decisions validation complete in 2903 ms!
-ValidationManager: StatusLog > Cache hits: 43 Cache misses: 427
-ValidationManager: StatusLog > Validation complete!
-ValidationManager: StatusLog > Beginning validation...
-ValidationManager: StatusLog > Beginning Decisions validation...
-ValidationManager: StatusLog > Decisions validation complete in 3293 ms!
-ValidationManager: StatusLog > Cache hits: 44 Cache misses: 460
-ValidationManager: StatusLog > Validation complete!
-ValidationManager: StatusLog > Beginning validation...
-ValidationManager: StatusLog > Beginning Decisions validation...
-ValidationManager: StatusLog > Decisions validation complete in 14480 ms!
-ValidationManager: StatusLog > Cache hits: 44 Cache misses: 462
-ValidationManager: StatusLog > Validation complete!
-ValidationManager: StatusLog > Beginning validation...
-ValidationManager: StatusLog > Beginning Decisions validation...
-ValidationManager: StatusLog > Decisions validation complete in 3586 ms!
-ValidationManager: StatusLog > Cache hits: 44 Cache misses: 462
-ValidationManager: StatusLog > Validation complete!
-ValidationManager: StatusLog > Beginning validation...
+ValidationManager: StatusLog > Decisions validation complete in 3066 ms!
 ValidationManager: StatusLog > Beginning Events validation...
-ValidationManager: StatusLog > Events validation complete in 11338 ms!
-ValidationManager: StatusLog > Cache hits: 124 Cache misses: 516
+ValidationManager: StatusLog > Events validation complete in 5133 ms!
+ValidationManager: StatusLog > Cache hits: 147 Cache misses: 497
 ValidationManager: StatusLog > Validation complete!
 ValidationManager: StatusLog > Beginning validation...
+ValidationManager: StatusLog > Beginning Decisions validation...
+ValidationManager: StatusLog > Decisions validation complete in 3036 ms!
 ValidationManager: StatusLog > Beginning Events validation...
-ValidationManager: StatusLog > Events validation complete in 9132 ms!
-ValidationManager: StatusLog > Cache hits: 111 Cache misses: 503
+ValidationManager: StatusLog > Events validation complete in 5273 ms!
+ValidationManager: StatusLog > Cache hits: 147 Cache misses: 497
+ValidationManager: StatusLog > Validation complete!
+ValidationManager: StatusLog > Beginning validation...
+ValidationManager: StatusLog > Beginning Decisions validation...
+ValidationManager: StatusLog > Decisions validation complete in 2852 ms!
+ValidationManager: StatusLog > Beginning Events validation...
+ValidationManager: StatusLog > Events validation complete in 5108 ms!
+ValidationManager: StatusLog > Cache hits: 147 Cache misses: 497
+ValidationManager: StatusLog > Validation complete!
+ValidationManager: StatusLog > Beginning validation...
+ValidationManager: StatusLog > Beginning Decisions validation...
+ValidationManager: StatusLog > Decisions validation complete in 2773 ms!
+ValidationManager: StatusLog > Beginning Events validation...
+ValidationManager: StatusLog > Events validation complete in 5152 ms!
+ValidationManager: StatusLog > Cache hits: 147 Cache misses: 497
+ValidationManager: StatusLog > Validation complete!
+ValidationManager: StatusLog > Beginning validation...
+ValidationManager: StatusLog > Beginning Decisions validation...
+ValidationManager: StatusLog > Decisions validation complete in 3390 ms!
+ValidationManager: StatusLog > Beginning Events validation...
+ValidationManager: StatusLog > Events validation complete in 5343 ms!
+ValidationManager: StatusLog > Cache hits: 147 Cache misses: 497
+ValidationManager: StatusLog > Validation complete!
+ValidationManager: StatusLog > Beginning validation...
+ValidationManager: StatusLog > Beginning Decisions validation...
+ValidationManager: StatusLog > Decisions validation complete in 2676 ms!
+ValidationManager: StatusLog > Beginning Events validation...
+ValidationManager: StatusLog > Events validation complete in 5087 ms!
+ValidationManager: StatusLog > Cache hits: 147 Cache misses: 497
 ValidationManager: StatusLog > Validation complete!

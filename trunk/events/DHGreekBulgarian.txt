@@ -1,8 +1,8 @@
 #id = 3 #EVENTNAME: The Fall of Serbia
 #id = 4 #EVENTNAME: Central Power's proposal
 #id = 11 #EVENTNAME: A foot on Cape Helles
-#id = 12 #EVENTNAME: Seize Thessaloniki?
-#id = 13 #EVENTNAME: The Dardanelles' operation has failed
+#id = 12 #EVENTNAME: Seize Thessaloniki? *CONFIRMED
+#id = 13 #EVENTNAME: The Dardanelles' operation has failed *CONFIRMED
 #id = 84 #EVENTNAME: Ottoman Empire has fallen
 #id = 85 #EVENTNAME: Negotiate with Greece
 #id = 86 #EVENTNAME: Treaty of London signed!
@@ -10,25 +10,24 @@
 #id = 89 #EVENTNAME: The Gounalis plan
 #id = 90 #EVENTNAME: Ask Greece for demobilization
 #id = 91 #EVENTNAME: Greece demobilizes!
-#id = 92 #EVENTNAME: Venizelos leaves Greek government
-#id = 93 #EVENTNAME: Venizelos is back
+#id = 92 #EVENTNAME: Venizelos leaves Greek government *CONFIRMED
+#id = 93 #EVENTNAME: Venizelos is back *CONFIRMED
 #id = 96 #EVENTNAME: Greece grants Bulgaria military access
 #id = 97 #EVENTNAME: Athens on fire!
 #id = 98 #EVENTNAME: Renewed call for demobilization
 #id = 99 #EVENTNAME: Greece accepts our demands
 #id = 100 #EVENTNAME: The 'Vêpres Grecques'
 #id = 101 #EVENTNAME: Ultimatum to Greece
-#id = 137 #EVENTNAME: The Greek Case
-#id = 138 #EVENTNAME: Austria-Hungary declares war on Serbia!
+#id = 138 #EVENTNAME: Austria-Hungary declares war on Serbia! *CONFIRMED
 #id = 139 #EVENTNAME: Austria-Hungary declares war on Serbia!
 #id = 140 #EVENTNAME: Bulgaria joins the Central Powers!
 #id = 141 #EVENTNAME: Negotiation with the Entente
 #id = 142 #EVENTNAME: Negotiation with the Entente
-#id = 143 #EVENTNAME: King Konstantinos is sick!
+#id = 143 #EVENTNAME: King Konstantinos is sick! *CONFIRMED
 #id = 144 #EVENTNAME: King Konstantinos is back at its office
-#id = 145 #EVENTNAME: Greece and the Dardanelles
+#id = 145 #EVENTNAME: Greece and the Dardanelles *CONFIRMED
 #id = 146 #EVENTNAME: The Gounaris plan
-#id = 147 #EVENTNAME: Legislative elections, 1915
+#id = 147 #EVENTNAME: Legislative elections, 1915 *CONFIRMED
 #id = 148 #EVENTNAME: Bulgaria joins the Central Powers!
 #id = 149 #EVENTNAME: The Entente seizes Thessaloniki
 #id = 150 #EVENTNAME: The Entente asks for demobilization
@@ -40,7 +39,7 @@
 #id = 156 #EVENTNAME: The Entente asks again for demobilization
 #id = 157 #EVENTNAME: The 'Vêpres Grecques'
 #id = 158 #EVENTNAME: Last warning from the Entente
-#id = 160 #EVENTNAME: The Treaty of Athens
+#id = 160 #EVENTNAME: The Treaty of Athens *CONFIRMED
 #id = 161 #EVENTNAME: The Treaty of Athens
 #id = 413 #EVENTNAME: The Fall of Serbia
 #id = 414 #EVENTNAME: Bulgaria joins the Central Powers!
@@ -245,7 +244,7 @@ picture = "varyag"
 trigger = {
 	#has_global_flag = 2001503_EVENT_DONE
 	ENG = { war_with = TUR }
-	4501 = { controlled_by = TUR }
+	4503 = { controlled_by = TUR }
 	not = {
 		#has_global_flag = 2001504_EVENT_DONE
 		#has_global_flag = 2145501_EVENT_DONE
@@ -913,37 +912,6 @@ set_global_flag = 2002533_EVENT_DONE
 }
 
 }
-country_event = {
-id = 137
-title = "DH_EVENT_2019500_TITLE"
-desc = "DH_EVENT_2019500_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = GRE
-date = 1914.7.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2019500 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  1 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2019500_Option7"
-	set_global_flag = venizelos_incabinet 
-	
-set_global_flag = 2019500_EVENT_DONE
-
-}
-
-}
 
 country_event = {
 id = 138
@@ -1237,6 +1205,7 @@ trigger = {
 		has_global_flag = 2002508_EVENT_DONE
 		GRE = { faction = allies }
 		}
+		ENG = { war_with = TUR }
 	
 tag = GRE
 date = 1914.1.1

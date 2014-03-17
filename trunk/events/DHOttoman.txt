@@ -1,34 +1,34 @@
-#id = 215 #EVENTNAME: Baghdad Railway
-#id = 216 #EVENTNAME: Oil from Mosul
-#id = 217 #EVENTNAME: Oil in Mosul
-#id = 218 #EVENTNAME: Baghdad Railway: Karapinar-Dorak
-#id = 219 #EVENTNAME: Section completed
-#id = 220 #EVENTNAME: Baghdad Railway: Tall Abyad - Rasulain
-#id = 221 #EVENTNAME: Section completed
-#id = 222 #EVENTNAME: Baghdad Railway: Nusaybin - Tall Kutschak
-#id = 223 #EVENTNAME: Section completed
-#id = 224 #EVENTNAME: Baghdad Railway: Tall Kutschak – Samarra
-#id = 225 #EVENTNAME: Section completed
-#id = 226 #EVENTNAME: Baghdad Railway: Rasulain - Nusaybin
-#id = 227 #EVENTNAME: Section completed
-#id = 250 #EVENTNAME: Extend military mission in the Ottoman Empire
-#id = 251 #EVENTNAME: Germany extends its military support
-#id = 252 #EVENTNAME: Prepare the Asienkorps
-#id = 253 #EVENTNAME: The Asienkorps has arrived
-#id = 254 #EVENTNAME: The British naval mission leaves the country
-#id = 255 #EVENTNAME: The naval mission returns home from the Ottoman Empire
-#id = 256 #EVENTNAME: Overhaul coastal defence at the Dardanelles
-#id = 257 #EVENTNAME: The Dardanelles defense network will be improved
-#id = 258 #EVENTNAME: Overhaul of Dardanelles defense network completed
-#id = 259 #EVENTNAME: Protect the oil fields in southern Persia
-#id = 260 #EVENTNAME: The British Empire occupies southern territories
-#id = 261 #EVENTNAME: Occupy northern Persia
-#id = 262 #EVENTNAME: Russian Empire occupies northern territories
-#id = 263 #EVENTNAME: Leave southern Persia
-#id = 264 #EVENTNAME: Leave northern Persia
-#id = 265 #EVENTNAME: Make Qatar a protectorate
-#id = 267 #EVENTNAME: The German military mission leaves the country
-#id = 268 #EVENTNAME: The military mission to the Ottoman Empire returns home
+#id = 215 #EVENTNAME: Baghdad Railway *CONFIRMED
+#id = 216 #EVENTNAME: Oil from Mosul *CONFIRMED
+#id = 217 #EVENTNAME: Oil in Mosul *CONFIRMED 
+#id = 218 #EVENTNAME: Baghdad Railway: Karapinar-Dorak *CONFIRMED
+#id = 219 #EVENTNAME: Section completed *CONFIRMED
+#id = 220 #EVENTNAME: Baghdad Railway: Tall Abyad - Rasulain *CONFIRMED
+#id = 221 #EVENTNAME: Section completed *CONFIRMED
+#id = 222 #EVENTNAME: Baghdad Railway: Nusaybin - Tall Kutschak *CONFIRMED
+#id = 223 #EVENTNAME: Section completed *CONFIRMED
+#id = 224 #EVENTNAME: Baghdad Railway: Tall Kutschak – Samarra *CONFIRMED
+#id = 225 #EVENTNAME: Section completed *CONFIRMED
+#id = 226 #EVENTNAME: Baghdad Railway: Rasulain - Nusaybin *CONFIRMED
+#id = 227 #EVENTNAME: Section completed *CONFIRMED
+#id = 250 #EVENTNAME: Extend military mission in the Ottoman Empire *CONFIRMED
+#id = 251 #EVENTNAME: Germany extends its military support *CONFIRMED
+#id = 252 #EVENTNAME: Prepare the Asienkorps *CONFIRMED
+#id = 253 #EVENTNAME: The Asienkorps has arrived *CONFIRMED
+#id = 254 #EVENTNAME: The British naval mission leaves the country *CONFIRMED
+#id = 255 #EVENTNAME: The naval mission returns home from the Ottoman Empire *CONFIRMED
+#id = 256 #EVENTNAME: Overhaul coastal defence at the Dardanelles *CONFIRMED
+#id = 257 #EVENTNAME: The Dardanelles defense network will be improved *CONFIRMED
+#id = 258 #EVENTNAME: Overhaul of Dardanelles defense network completed *CONFIRMED
+#id = 259 #EVENTNAME: Protect the oil fields in southern Persia  *CONFIRMED
+#id = 260 #EVENTNAME: The British Empire occupies southern territories *CONFIRMED
+#id = 261 #EVENTNAME: Occupy northern Persia  *CONFIRMED
+#id = 262 #EVENTNAME: Russian Empire occupies northern territories *CONFIRMED
+#id = 263 #EVENTNAME: Leave southern Persia *CONFIRMED
+#id = 264 #EVENTNAME: Leave northern Persia *CONFIRMED
+#id = 265 #EVENTNAME: Make Qatar a protectorate *CONFIRMED
+#id = 267 #EVENTNAME: The German military mission leaves the country *CONFIRMED
+#id = 268 #EVENTNAME: The military mission to the Ottoman Empire returns home *CONFIRMED
 
 
 #EVENTNAME: Baghdad Railway
@@ -253,6 +253,7 @@ option = {
 	4730 = { infra  = 3  }
 	4677 = { infra  = 3  }
 	4731 = { infra  = 3  }
+	4832 = { infra  = 3  }
 	4931 = { infra  = 3  }
 	4976 = { infra  = 3  }
 	clr_country_flag = baghdad_1 
@@ -702,9 +703,12 @@ trigger = {
 	GER = { war = yes }
 	TUR = { war = yes }
 	BUL = { faction = axis }
+	or = {
+		SER = { government_in_exile = yes }
 	not = {
 		 SER = { war_with = GER }
 		 }
+	}
 	
 tag = GER
 date = 1914.7.28
@@ -846,8 +850,11 @@ trigger = {
 	GER = { war = yes }
 	TUR = { war = yes }
 	BUL = { faction = axis }
+	or = {
+		SER = { government_in_exile = yes }
 	not = {
 		 SER = { war_with = GER }
+		 }
 		 }
 	manpower =  30
 	supplies =  400
@@ -1043,7 +1050,7 @@ trigger = {
 	TUR = { faction = axis }
 	GER = { war = yes }
 	TUR = { war = yes }
-	4501 = { controlled_by = TUR }
+	4560 = { controlled_by = TUR }
 	
 tag = GER
 date = 1914.7.28
@@ -1131,9 +1138,9 @@ is_triggered_only = yes
 option = {
 	name = "DH_EVENT_2145529_Option7"
 	random_country = { limit = { tag = THIS 
-			 4501 = { controlled_by = TUR }
+			 4560 = { controlled_by = TUR }
 			  } 
-		4501 = { coastal_fort  = 2  }
+		4560 = { coastal_fort  = 2  }
 		 }
 	
 set_global_flag = 2145529_EVENT_DONE
@@ -1151,6 +1158,7 @@ picture = "abadan_oil"
 
 trigger = {
 	GER = { war_with = ENG }
+	TUR = { war_with = ENG }
 	ENG = { alliance_with = ENG }
 	not = {
 		 PER = { war_with = ENG }
@@ -1259,6 +1267,7 @@ trigger = {
 		 }
 	3524 = { controlled_by = THIS }
 	exists = PER
+	TUR = { war_with = RUS }
 	#has_global_flag = 2145519_EVENT_DONE
 	
 tag = RUS
@@ -1571,7 +1580,7 @@ option = {
 				 }  } 
 		THIS = { relation = { who = ENG value = 50  } }
 		 }
-	release_vassal = ENG
+	create_vassal = ENG
 	
 set_global_flag = 2001572_EVENT_DONE
 

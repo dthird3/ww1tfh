@@ -1,15 +1,15 @@
-#2191560_decision = { #EVENTNAME: Baghdad Railway
-#2191562_decision = { #EVENTNAME: Baghdad Railway: Karapinar-Dorak
-#2191564_decision = { #EVENTNAME: Baghdad Railway: Tall Abyad - Rasulain
-#2191567_decision = { #EVENTNAME: Baghdad Railway: Nusaybin - Tall Kutschak
-#2191569_decision = { #EVENTNAME: Baghdad Railway: Tall Kutschak – Samarra
-#2191571_decision = { #EVENTNAME: Baghdad Railway: Rasulain - Nusaybin
-#2191580_decision = { #EVENTNAME: Extend military mission in the Ottoman Empire
-#2191581_decision = { #EVENTNAME: Prepare the Asienkorps
-#2191582_decision = { #EVENTNAME: Overhaul coastal defence at the Dardanelles
-#2001571_decision = { #EVENTNAME: Protect the oil fields in southern Persia
-#2104550_decision = { #EVENTNAME: Occupy northern Persia
-#2001572_decision = { #EVENTNAME: Make Qatar a protectorate
+#2191560_decision = { #EVENTNAME: Baghdad Railway *CONFIRMED
+#2191562_decision = { #EVENTNAME: Baghdad Railway: Karapinar-Dorak *CONFIRMED
+#2191564_decision = { #EVENTNAME: Baghdad Railway: Tall Abyad - Rasulain *CONFIRMED
+#2191567_decision = { #EVENTNAME: Baghdad Railway: Nusaybin - Tall Kutschak *CONFIRMED
+#2191569_decision = { #EVENTNAME: Baghdad Railway: Tall Kutschak – Samarra *CONFIRMED
+#2191571_decision = { #EVENTNAME: Baghdad Railway: Rasulain - Nusaybin *CONFIRMED
+#2191580_decision = { #EVENTNAME: Extend military mission in the Ottoman Empire *CONFIRMED
+#2191581_decision = { #EVENTNAME: Prepare the Asienkorps *CONFIRMED
+#2191582_decision = { #EVENTNAME: Overhaul coastal defence at the Dardanelles *CONFIRMED
+#2001571_decision = { #EVENTNAME: Protect the oil fields in southern Persia *CONFIRMED
+#2104550_decision = { #EVENTNAME: Occupy northern Persia *CONFIRMED
+#2001572_decision = { #EVENTNAME: Make Qatar a protectorate *CONFIRMED
 
 
 
@@ -181,9 +181,12 @@ diplomatic_decisions = {
 	allow = {
 		GER = { war = yes }
 		BUL = { faction = axis }
-		not = {
-			 SER = { war_with = GER }
-			 }
+			or = {
+		SER = { government_in_exile = yes }
+	not = {
+		 SER = { war_with = GER }
+		 }
+	}
 		supplies =  50
 		}
 	effect = { country_event = 250
@@ -208,9 +211,12 @@ diplomatic_decisions = {
 	allow = {
 		GER = { war = yes }
 		BUL = { faction = axis }
-		not = {
-			 SER = { war_with = GER }
-			 }
+	or = {
+		SER = { government_in_exile = yes }
+	not = {
+		 SER = { war_with = GER }
+		 }
+	}
 		manpower =  15
 		supplies =  200
 		or = {
@@ -273,6 +279,7 @@ diplomatic_decisions = {
 2001571_decision = {
 	potential = {
 		GER = { war_with = ENG }
+		TUR = { war_with = ENG }
 		not = {
 			 PER = { war_with = ENG }
 			 }
@@ -299,6 +306,7 @@ diplomatic_decisions = {
 2104550_decision = {
 	potential = {
 		GER = { war_with = RUS }
+		TUR = { war_with = RUS }
 		not = {
 			 PER = { war_with = RUS }
 			 }
