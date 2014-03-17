@@ -1,14 +1,14 @@
-#id = 3 #EVENTNAME: The Fall of Serbia
-#id = 4 #EVENTNAME: Central Power's proposal
-#id = 11 #EVENTNAME: A foot on Cape Helles
+#id = 3 #EVENTNAME: The Fall of Serbia *CONFIRMED
+#id = 4 #EVENTNAME: Central Power's proposal *CONFIRMED
+#id = 11 #EVENTNAME: A foot on Cape Helles *CONFIRMED
 #id = 12 #EVENTNAME: Seize Thessaloniki? *CONFIRMED
 #id = 13 #EVENTNAME: The Dardanelles' operation has failed *CONFIRMED
-#id = 84 #EVENTNAME: Ottoman Empire has fallen
+#id = 84 #EVENTNAME: Ottoman Empire has fallen *CONFIRMED
 #id = 85 #EVENTNAME: Negotiate with Greece *CONFIRMED
-#id = 86 #EVENTNAME: Treaty of London signed!
-#id = 88 #EVENTNAME: The Gounalis plan
-#id = 89 #EVENTNAME: The Gounalis plan
-#id = 90 #EVENTNAME: Ask Greece for demobilization
+#id = 86 #EVENTNAME: Treaty of London signed! *CONFIRMED
+#id = 88 #EVENTNAME: The Gounalis plan *CONFIRMED
+#id = 89 #EVENTNAME: The Gounalis plan *CONFIRMED
+#id = 90 #EVENTNAME: Ask Greece for demobilization *CONFIRMED
 #id = 91 #EVENTNAME: Greece demobilizes!
 #id = 92 #EVENTNAME: Venizelos leaves Greek government *CONFIRMED
 #id = 93 #EVENTNAME: Venizelos is back *CONFIRMED
@@ -19,7 +19,7 @@
 #id = 100 #EVENTNAME: The 'Vêpres Grecques'
 #id = 101 #EVENTNAME: Ultimatum to Greece
 #id = 138 #EVENTNAME: Austria-Hungary declares war on Serbia! *CONFIRMED
-#id = 139 #EVENTNAME: Austria-Hungary declares war on Serbia!
+#id = 139 #EVENTNAME: Austria-Hungary declares war on Serbia! *CONFIRMED
 #id = 140 #EVENTNAME: Bulgaria joins the Central Powers!
 #id = 141 #EVENTNAME: Negotiation with the Entente
 #id = 142 #EVENTNAME: Negotiation with the Entente
@@ -30,7 +30,7 @@
 #id = 147 #EVENTNAME: Legislative elections, 1915 *CONFIRMED
 #id = 148 #EVENTNAME: Bulgaria joins the Central Powers!
 #id = 149 #EVENTNAME: The Entente seizes Thessaloniki
-#id = 150 #EVENTNAME: The Entente asks for demobilization
+#id = 150 #EVENTNAME: The Entente asks for demobilization *CONFIRMED
 #id = 151 #EVENTNAME: Anticipated Elections
 #id = 152 #EVENTNAME: Serb refugees land on Corfu
 #id = 153 #EVENTNAME: Grant Bulgaria military access?
@@ -152,7 +152,7 @@ picture = "varyag"
 trigger = {
 	#has_global_flag = 2001502_EVENT_DONE
 	not = {
-		 4501 = { controlled_by = TUR }
+		 4560 = { controlled_by = TUR }
 		 }
 	
 tag = ENG
@@ -190,8 +190,6 @@ picture = "varyag"
 
 trigger = {
 	#has_global_flag = 2001502_EVENT_DONE
-	4501 = { controlled_by = TUR }
-	4560 = { controlled_by = GRE }
 	ENG = { war_with = TUR }
 	not = {
 		#has_global_flag = 2145501_EVENT_DONE
