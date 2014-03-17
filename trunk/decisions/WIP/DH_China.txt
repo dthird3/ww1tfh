@@ -1,0 +1,1185 @@
+#1914CHIConstitutionalProtectionWar.txt#133011509_decision = { #EVENTNAME: Intervene in the Constitutional Protection War?
+#1914CHIConstitutionalProtectionWar.txt#133011510_decision = { #EVENTNAME: Intervene in the Constitutional Protection War?
+#1914CHINPWSetup.txt#133011012_decision = { #EVENTNAME: Form the Great Chinese Empire
+#1914CHIPreNPW.txt#133011002_decision = { #EVENTNAME: Demand Repatriation of Sun Zhongshan
+#1914CHIPreNPW.txt#133011015_decision = { #EVENTNAME: Twenty One Demands
+#1914CHIShangdong.txt#133011632_decision = { #EVENTNAME: Return Shangdong to China
+#1914CHIShangdong.txt#133011636_decision = { #EVENTNAME: Return Shangdong to China
+#1914CHIShangdong.txt#133011633_decision = { #EVENTNAME: Force Return of Shangdong
+#1914CHIShangdong.txt#133011637_decision = { #EVENTNAME: Force Return of Shangdong
+#1914CHIWWI.txt#133011613_decision = { #EVENTNAME: Ask for Beiyang Chinese Aid
+#1914CHIWWI.txt#133011614_decision = { #EVENTNAME: Ask for Beiyang Chinese Aid
+#1914U36AnhuiZhiliWar.txt#133011303_decision = { #EVENTNAME: Secretly Mobilize
+#1914U36AnhuiZhiliWar.txt#133011305_decision = { #EVENTNAME: Secretly Agitate Against the Anhui Leadership
+#1914U36AnhuiZhiliWar.txt#133011309_decision = { #EVENTNAME: Reaching out to the Fengtian Clique
+#1914U36AnhuiZhiliWar.txt#133011311_decision = { #EVENTNAME: Reaching out to the Southern Government
+#1914U36AnhuiZhiliWar.txt#133011313_decision = { #EVENTNAME: Reaching out to Neutral Warlords
+#1914U36AnhuiZhiliWar.txt#133011317_decision = { #EVENTNAME: Oust Anhui Control over the Central Army
+
+
+
+diplomatic_decisions = {
+
+
+#DECISIONNAME: Intervene in the Constitutional Protection War?
+133011509_decision = {
+	potential = {
+		not = {
+			 CHI = { is_subject = yes }
+			 }
+		not = {
+			 CHI = { is_subject = yes }
+			 }
+		has_global_flag = 133011501_EVENT_DONE
+		or = {
+			and = {
+				tag = FRA
+				faction = allies
+				FRA = { war_with = GER }
+				2613 = { controlled_by = THIS }
+				}
+			and = {
+				tag = ENG
+				faction = allies
+				ENG = { war_with = GER }
+				1964 = { controlled_by = THIS }
+				}
+			and = {
+				tag = SOV
+				faction = allies
+				SOV = { war_with = GER }
+				1409 = { controlled_by = THIS }
+				}
+			and = {
+				tag = RUS
+				faction = allies
+				RUS = { war_with = GER }
+				699 = { controlled_by = THIS }
+				}
+			and = {
+				tag = JAP
+				faction = allies
+				JAP = { war_with = GER }
+				5315 = { controlled_by = THIS }
+				}
+			}
+		not = {
+			 has_country_flag = 133011509
+			 }
+		not = { date = 1925.12.29
+			 }
+		or = {
+			tag = FRA
+			tag = ENG
+			tag = SOV
+			tag = RUS
+			tag = JAP
+			}
+		not = { has_global_flag = SLEEPEVENT_133011509 }
+		not = { has_country_flag = decision_133011509 } }
+	allow = {
+		CHI = { war_with = CHI }
+		}
+	effect = { country_event = 617
+		set_country_flag = decision_133011509 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+#DECISIONNAME: Intervene in the Constitutional Protection War?
+133011510_decision = {
+	potential = {
+		not = {
+			 CHI = { is_subject = yes }
+			 }
+		not = {
+			 CHI = { is_subject = yes }
+			 }
+		not = {
+			 has_country_flag = 133011510
+			 }
+		has_global_flag = 133011501_EVENT_DONE
+		or = {
+			and = {
+				tag = GER
+				faction = axis
+				or = {
+					FRA = { war_with = GER }
+					ENG = { war_with = GER }
+					RUS = { war_with = GER }
+					SOV = { war_with = GER }
+					}
+				1861 = { controlled_by = THIS }
+				}
+			and = {
+				tag = AUH
+				faction = axis
+				or = {
+					FRA = { war_with = AUH }
+					ENG = { war_with = AUH }
+					RUS = { war_with = AUH }
+					SOV = { war_with = AUH }
+					}
+				3026 = { controlled_by = THIS }
+				}
+			}
+		not = { date = 1925.12.29
+			 }
+		or = {
+			tag = GER
+			tag = AUH
+			}
+		not = { has_global_flag = SLEEPEVENT_133011510 }
+		not = { has_country_flag = decision_133011510 } }
+	allow = {
+		CHI = { war_with = CHI }
+		}
+	effect = { country_event = 618
+		set_country_flag = decision_133011510 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#DECISIONNAME: Form the Great Chinese Empire
+133011012_decision = {
+	potential = {
+		head_of_state = 1325100
+		not = {
+			 has_global_flag = 133011020_EVENT_DONE
+			 }
+		not = {
+			 has_global_flag = 133011009_EVENT_DONE
+			 }
+		tag = CHI
+		date = 1915.1.1
+		not = { date = 1915.12.29
+			 }
+		not = { has_global_flag = SLEEPEVENT_133011012 }
+		not = { has_country_flag = decision_133011012 } }
+	allow = {
+		or = {
+			has_global_flag = 133011015_EVENT_DONE
+			}
+		}
+	effect = { country_event = 643
+		set_country_flag = decision_133011012 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#DECISIONNAME: Demand Repatriation of Sun Zhongshan
+133011002_decision = {
+	potential = {
+		head_of_state = 1325100
+		not = {
+			has_global_flag= szs_returned
+			has_global_flag= szs_dead
+			}
+		tag = CHI
+		date = 1914.7.5
+		not = { date = 1990.12.29
+			 }
+		not = { has_global_flag = SLEEPEVENT_133011002 }
+		not = { has_country_flag = decision_133011002 } }
+	allow = {
+		}
+	effect = { country_event = 665
+		set_country_flag = decision_133011002 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+
+
+
+
+#DECISIONNAME: Twenty One Demands
+133011015_decision = {
+	potential = {
+		or = {
+			exists = CHI
+			and = {
+				exists = QIN
+				not = {
+					 has_global_flag = 133011401_EVENT_DONE
+					 }
+				}
+			}
+		tag = JAP
+		not = { date = 1915.12.29
+			 }
+		not = { has_global_flag = SLEEPEVENT_133011015 }
+		not = { has_country_flag = decision_133011015 } }
+	allow = {
+		or = {
+			exists = CHI
+			and = {
+				exists = QIN
+				not = {
+					 has_global_flag = 133011401_EVENT_DONE
+					 }
+				}
+			}
+		}
+	effect = { country_event = 672
+		set_country_flag = decision_133011015 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#DECISIONNAME: Return Shangdong to China
+133011632_decision = {
+	potential = {
+		or = {
+			has_global_flag = 133011630_EVENT_DONE
+			and = {
+				has_global_flag= shangdong_noint
+				has_global_flag = 2002533_EVENT_DONE
+				}
+			}
+		not = {
+			 JAP = { is_subject = yes }
+			 }
+		tag = JAP
+		date = 1916.7.5
+		not = { date = 1927.12.29
+			 }
+		not = { has_global_flag = SLEEPEVENT_133011632 }
+		not = { has_country_flag = decision_133011632 } }
+	allow = {
+		not = {
+			 CHI = { war_with = THIS }
+			 }
+		not = {
+			 CHI = { war_with = THIS }
+			 }
+		}
+	effect = { country_event = 699
+		set_country_flag = decision_133011632 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+#DECISIONNAME: Return Shangdong to China
+133011636_decision = {
+	potential = {
+		or = {
+			has_global_flag = 133011638_EVENT_DONE
+			and = {
+				has_global_flag= shangdong_noint
+				has_global_flag = 2191511_EVENT_DONE
+				}
+			}
+		or = {
+			and = {
+				tag = GER
+				faction = axis
+				}
+			and = {
+				tag = AUH
+				faction = axis
+				not = {
+					 faction = axis
+					 }
+				}
+			and = {
+				tag = ITA
+				faction = axis
+				not = {
+					faction = axis
+					faction = axis
+					}
+				}
+			and = {
+				tag = BUL
+				faction = axis
+				not = {
+					 faction = axis
+					 }
+				not = {
+					 faction = axis
+					 }
+				not = {
+					 faction = axis
+					 }
+				}
+			and = {
+				tag = TUR
+				faction = axis
+				not = {
+					 faction = axis
+					 }
+				not = {
+					 faction = axis
+					 }
+				not = {
+					 faction = axis
+					 }
+				not = {
+					 faction = axis
+					 }
+				}
+			}
+		not = {
+			or = {
+				and = {
+					tag = GER
+					GER = { is_subject = yes }
+					}
+				and = {
+					tag = AUH
+					AUH = { is_subject = yes }
+					}
+				and = {
+					tag = ITA
+					ITA = { is_subject = yes }
+					}
+				and = {
+					tag = BUL
+					BUL = { is_subject = yes }
+					}
+				and = {
+					tag = TUR
+					TUR = { is_subject = yes }
+					}
+				}
+			}
+		not = {
+			 has_global_flag= EVT_133011636
+			 }
+		date = 1916.7.5
+		not = { date = 1927.12.29
+			 }
+		or = {
+			tag = GER
+			tag = AUH
+			tag = ITA
+			tag = BUL
+			tag = TUR
+			}
+		not = { has_global_flag = SLEEPEVENT_133011636 }
+		not = { has_country_flag = decision_133011636 } }
+	allow = {
+		not = {
+			 CHI = { war_with = THIS }
+			 }
+		not = {
+			 CHI = { war_with = THIS }
+			 }
+		}
+	effect = { country_event = 700
+		set_country_flag = decision_133011636 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+#DECISIONNAME: Force Return of Shangdong
+133011633_decision = {
+	potential = {
+		or = {
+			has_global_flag = 133011630_EVENT_DONE
+			and = {
+				has_global_flag= shangdong_noint
+				has_global_flag = 2002533_EVENT_DONE
+				}
+			}
+		or = {
+			and = {
+				or = {
+					has_global_flag = 133011622_EVENT_DONE
+					has_global_flag = 133011625_EVENT_DONE
+					}
+				tag = CHI
+				}
+			and = {
+				or = {
+					has_global_flag = 133011623_EVENT_DONE
+					has_global_flag = 133011626_EVENT_DONE
+					}
+				tag = CHI
+				}
+			}
+		not = {
+			 has_global_flag= EVT_133011633
+			 }
+		date = 1916.7.5
+		not = { date = 1927.12.29
+			 }
+		or = {
+			tag = CHI
+			tag = CHI
+			}
+		not = { has_global_flag = SLEEPEVENT_133011633 }
+		not = { has_country_flag = decision_133011633 } }
+	allow = {
+		not = {
+			 JAP = { war_with = THIS }
+			 }
+		}
+	effect = { country_event = 701
+		set_country_flag = decision_133011633 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+#DECISIONNAME: Force Return of Shangdong
+133011637_decision = {
+	potential = {
+		or = {
+			has_global_flag = 133011638_EVENT_DONE
+			and = {
+				has_global_flag= shangdong_noint
+				has_global_flag = 2191511_EVENT_DONE
+				}
+			}
+		or = {
+			and = {
+				or = {
+					has_global_flag = 133011622_EVENT_DONE
+					has_global_flag = 133011625_EVENT_DONE
+					}
+				tag = CHI
+				}
+			and = {
+				or = {
+					has_global_flag = 133011623_EVENT_DONE
+					has_global_flag = 133011626_EVENT_DONE
+					}
+				tag = CHI
+				}
+			}
+		not = {
+			 has_global_flag= EVT_133011637
+			 }
+		date = 1916.7.5
+		not = { date = 1927.12.29
+			 }
+		or = {
+			tag = CHI
+			tag = CHI
+			}
+		not = { has_global_flag = SLEEPEVENT_133011637 }
+		not = { has_country_flag = decision_133011637 } }
+	allow = {
+		not = {
+			 GER = { war_with = THIS }
+			 faction = axis
+			 }
+		not = {
+			 AUH = { war_with = THIS }
+			 faction = axis
+			 }
+		not = {
+			 ITA = { war_with = THIS }
+			 faction = axis
+			 }
+		not = {
+			 BUL = { war_with = THIS }
+			 faction = axis
+			 }
+		not = {
+			 TUR = { war_with = THIS }
+			 faction = axis
+			 }
+		}
+	effect = { country_event = 702
+		set_country_flag = decision_133011637 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#DECISIONNAME: Ask for Beiyang Chinese Aid
+133011613_decision = {
+	potential = {
+		not = {
+			 has_global_flag= EVT_133011613
+			 }
+		not = {
+			 CHI = { is_subject = yes }
+			 }
+		not = {
+			 QIN = { is_subject = yes }
+			 }
+		exists = CHI
+		or = {
+			has_global_flag = 2191502_EVENT_DONE
+			has_global_flag = 2191538_EVENT_DONE
+			has_global_flag = 2192501_EVENT_DONE
+			has_global_flag = 2192527_EVENT_DONE
+			has_global_flag = 2104500_EVENT_DONE
+			has_global_flag = 2104540_EVENT_DONE
+			has_global_flag = 2191504_EVENT_DONE
+			}
+		or = {
+			and = {
+				tag = FRA
+				faction = allies
+				FRA = { war_with = GER }
+				2613 = { controlled_by = THIS }
+				}
+			and = {
+				tag = ENG
+				faction = allies
+				ENG = { war_with = GER }
+				1964 = { controlled_by = THIS }
+				}
+			and = {
+				tag = SOV
+				faction = allies
+				SOV = { war_with = GER }
+				1409 = { controlled_by = THIS }
+				}
+			and = {
+				tag = RUS
+				faction = allies
+				RUS = { war_with = GER }
+				699 = { controlled_by = THIS }
+				}
+			and = {
+				tag = JAP
+				faction = allies
+				JAP = { war_with = GER }
+				5315 = { controlled_by = THIS }
+				}
+			}
+		not = {
+			or = {
+				and = {
+					or = {
+						has_global_flag = 2002533_EVENT_DONE
+						has_global_flag = 2191513_EVENT_DONE
+						has_global_flag = 2191519_EVENT_DONE
+						has_global_flag = 2191531_EVENT_DONE
+						}
+					has_global_flag = 2192506_EVENT_DONE
+					}
+				and = {
+					has_global_flag = 2191511_EVENT_DONE
+					or = {
+						has_global_flag = 2191554_EVENT_DONE
+						has_global_flag = 2007528_EVENT_DONE
+						has_global_flag = 2007529_EVENT_DONE
+						}
+					}
+				}
+			}
+		or = {
+			and = {
+				exists = CHI
+				not = {
+					 faction = allies
+					 }
+				not = {
+					 faction = axis
+					 }
+				not = {
+					 faction = comintern
+					 }
+				}
+			and = {
+				exists = QIN
+				not = {
+					 faction = allies
+					 }
+				not = {
+					 faction = axis
+					 }
+				not = {
+					 faction = comintern
+					 }
+				}
+			}
+		not = {
+			 has_global_flag= beiyang_allies
+			 }
+		not = {
+			 has_global_flag= beiyang_axis
+			 }
+		not = {
+			 CHI = { war_with = THIS }
+			 }
+		not = {
+			 QIN = { war_with = THIS }
+			 }
+		not = { date = 1921.12.29
+			 }
+		or = {
+			tag = FRA
+			tag = ENG
+			tag = SOV
+			tag = RUS
+			tag = JAP
+			}
+		not = { has_global_flag = SLEEPEVENT_133011613 }
+		not = { has_country_flag = decision_133011613 } }
+	allow = {
+		not = {
+			 THIS = { surrender_progress = 15 }
+			 }
+		}
+	effect = { country_event = 723
+		set_country_flag = decision_133011613 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+#DECISIONNAME: Ask for Beiyang Chinese Aid
+133011614_decision = {
+	potential = {
+		not = {
+			 has_global_flag= EVT_133011614
+			 }
+		exists = CHI
+		not = {
+			 CHI = { is_subject = yes }
+			 }
+		not = {
+			 QIN = { is_subject = yes }
+			 }
+		or = {
+			has_global_flag = 2191502_EVENT_DONE
+			has_global_flag = 2191538_EVENT_DONE
+			has_global_flag = 2192501_EVENT_DONE
+			has_global_flag = 2192527_EVENT_DONE
+			has_global_flag = 2104500_EVENT_DONE
+			has_global_flag = 2104540_EVENT_DONE
+			has_global_flag = 2191504_EVENT_DONE
+			}
+		or = {
+			and = {
+				tag = GER
+				faction = axis
+				or = {
+					FRA = { war_with = GER }
+					ENG = { war_with = GER }
+					RUS = { war_with = GER }
+					SOV = { war_with = GER }
+					}
+				1861 = { controlled_by = THIS }
+				}
+			and = {
+				tag = AUH
+				faction = axis
+				or = {
+					FRA = { war_with = AUH }
+					ENG = { war_with = AUH }
+					RUS = { war_with = AUH }
+					SOV = { war_with = AUH }
+					}
+				3026 = { controlled_by = THIS }
+				}
+			}
+		not = {
+			or = {
+				and = {
+					or = {
+						has_global_flag = 2002533_EVENT_DONE
+						has_global_flag = 2191513_EVENT_DONE
+						has_global_flag = 2191519_EVENT_DONE
+						has_global_flag = 2191531_EVENT_DONE
+						}
+					has_global_flag = 2192506_EVENT_DONE
+					}
+				and = {
+					has_global_flag = 2191511_EVENT_DONE
+					or = {
+						has_global_flag = 2191554_EVENT_DONE
+						has_global_flag = 2007528_EVENT_DONE
+						has_global_flag = 2007529_EVENT_DONE
+						}
+					}
+				}
+			}
+		or = {
+			and = {
+				exists = CHI
+				not = {
+					 faction = allies
+					 }
+				not = {
+					 faction = axis
+					 }
+				not = {
+					 faction = comintern
+					 }
+				}
+			and = {
+				exists = QIN
+				not = {
+					 faction = allies
+					 }
+				not = {
+					 faction = axis
+					 }
+				not = {
+					 faction = comintern
+					 }
+				}
+			}
+		not = {
+			 CHI = { war_with = THIS }
+			 }
+		not = {
+			 QIN = { war_with = THIS }
+			 }
+		not = {
+			 has_global_flag= beiyang_axis
+			 }
+		not = {
+			 has_global_flag= beiyang_allies
+			 }
+		not = { date = 1921.12.29
+			 }
+		or = {
+			tag = GER
+			tag = AUH
+			}
+		not = { has_global_flag = SLEEPEVENT_133011614 }
+		not = { has_country_flag = decision_133011614 } }
+	allow = {
+		not = {
+			 THIS = { surrender_progress = 15 }
+			 }
+		}
+	effect = { country_event = 724
+		set_country_flag = decision_133011614 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+#DECISIONNAME: Secretly Mobilize
+133011303_decision = {
+	potential = {
+		has_global_flag = 133011301_EVENT_DONE
+		tag = CHI
+		not = { date = 1924.1.1
+			 }
+		not = { has_global_flag = SLEEPEVENT_133011303 }
+		not = { has_country_flag = decision_133011303 } }
+	allow = {
+		supplies =  45
+		}
+	effect = { country_event = 735
+		set_country_flag = decision_133011303 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+#DECISIONNAME: Secretly Agitate Against the Anhui Leadership
+133011305_decision = {
+	potential = {
+		has_global_flag = 133011303_EVENT_DONE
+		tag = CHI
+		not = { date = 1924.1.1
+			 }
+		not = { has_global_flag = SLEEPEVENT_133011305 }
+		not = { has_country_flag = decision_133011305 } }
+	allow = {
+		THIS = { ai = no }
+		}
+	effect = { country_event = 737
+		set_country_flag = decision_133011305 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+
+#DECISIONNAME: Reaching out to the Fengtian Clique
+133011309_decision = {
+	potential = {
+		exists = CHI
+		has_global_flag = 133011305_EVENT_DONE
+		tag = CHI
+		not = { date = 1924.1.1
+			 }
+		not = { has_global_flag = SLEEPEVENT_133011309 }
+		not = { has_country_flag = decision_133011309 } }
+	allow = {
+		THIS = { ai = no }
+		}
+	effect = { country_event = 741
+		set_country_flag = decision_133011309 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+#DECISIONNAME: Reaching out to the Southern Government
+133011311_decision = {
+	potential = {
+		exists = CHI
+		has_global_flag = 133011305_EVENT_DONE
+		tag = CHI
+		not = { date = 1924.1.1
+			 }
+		not = { has_global_flag = SLEEPEVENT_133011311 }
+		not = { has_country_flag = decision_133011311 } }
+	allow = {
+		THIS = { ai = no }
+		}
+	effect = { country_event = 743
+		set_country_flag = decision_133011311 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+#DECISIONNAME: Reaching out to Neutral Warlords
+133011313_decision = {
+	potential = {
+		has_global_flag = 133011305_EVENT_DONE
+		has_global_flag = 133011309_EVENT_DONE
+		tag = CHI
+		not = { date = 1924.1.1
+			 }
+		not = { has_global_flag = SLEEPEVENT_133011313 }
+		not = { has_country_flag = decision_133011313 } }
+	allow = {
+		THIS = { ai = no }
+		}
+	effect = { country_event = 745
+		set_country_flag = decision_133011313 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+
+#DECISIONNAME: Oust Anhui Control over the Central Army
+133011317_decision = {
+	potential = {
+		and = {
+			has_global_flag = 133011313_EVENT_DONE
+			has_global_flag = 133011311_EVENT_DONE
+			has_global_flag = 133011309_EVENT_DONE
+			}
+		tag = CHI
+		not = { date = 1924.1.1
+			 }
+		not = { has_global_flag = SLEEPEVENT_133011317 }
+		not = { has_country_flag = decision_133011317 } }
+	allow = {
+		THIS = { ai = no }
+		}
+	effect = { country_event = 749
+		set_country_flag = decision_133011317 }
+	ai_will_do = { factor = 1 }
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
