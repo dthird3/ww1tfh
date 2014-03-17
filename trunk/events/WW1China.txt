@@ -1,5 +1,43 @@
 #CHINA EVENT 70 - 80
 
+# Qing player directions
+
+country_event = {
+
+		id = 100076
+
+		major = yes
+		
+		is_triggered_only = yes
+
+		title = "CHIE6"
+		desc = "desc_CHIE6"
+		picture = "CHIP6"					
+
+		option = {
+			name = "opta_CHIE6"
+			ai_chance = { factor = 100 }
+		}
+}
+
+country_event = {
+
+		id = 100077
+
+		major = yes
+		
+		is_triggered_only = yes
+
+		title = "CHIE7"
+		desc = "desc_CHIE7"
+		picture = "CHIP7"					
+
+		option = {
+			name = "opta_CHIE7"
+			ai_chance = { factor = 100 }
+		}
+}
+
 # Second Guangzhou Uprising - 27/4/1911
 
 country_event = {
@@ -31,114 +69,249 @@ country_event = {
 		}
 }
 
+# The Railway Protection Movement
 
-# The Wuchang Uprising October 10
-  country_event = {
+country_event = {
 
-		id = 100071
-		
+		id = 100079
+
 		major = yes
 		
 		trigger = {
 			tag = QIN
-			NOT = { exists = CHI }
-			war = no
-			date = 1911.10.10
+			date = 1910.5.23	
+			not = { has_country_flag = four_powers_consortiumn }
 		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
-		
-		fire_only_once = yes
 
-		title = "CHIE1"
-		desc = "desc_CHIE1"
-		picture = "CHIP1"
+		mean_time_to_happen = {
+			days = 0
+		}
+
+		title = "CHIE9"
+		desc = "desc_CHIE9"
+		picture = "CHIP9"					
 
 		option = {
-			name = "opta_CHIE1"
+			name = "opta_CHIE9"
 			ai_chance = { factor = 100 }
-			QIN = { any_owned = { limit = { is_core = QIN } add_core = CHI } }
-			GER = { any_owned = { limit = { is_core = QIN } add_core = CHI } }
-			ENG = { any_owned = { limit = { is_core = QIN } add_core = CHI } }
-			POR = { any_owned = { limit = { is_core = QIN } add_core = CHI } }
-			JAP = { any_owned = { limit = { is_core = QIN } add_core = CHI } }
-			FRA = { any_owned = { limit = { is_core = QIN } add_core = CHI } }
-			hubei_region = { secede_province = CHI }							# 10 Oct 1911
-			hunan_region = { secede_province = CHI }							# 22 Oct 1911	
-																				# Shaanxi 22 Oct 1911		
-			jiangxi_region = { secede_province = CHI }							# 23 - 31 Oct 1911  
-																				# Shanxi Taiyuan 29 Oct 1911
-			yunnan_region = { secede_province = CHI }							# 30 Oct 1911																				
-			guangdong_region = { secede_province = CHI }						# 30 Oct 1911
-																				# Yuan Shikai becomes active joins QIN not CHI - Beiyang Army limited prior to this.
-			fujian_region = { secede_province = CHI }							# 1 Nov 1911
-																				# Shanghai, Jiangsu, 3 Nov 1911
-																				# Troops deployed for Battle of Nanking
-																				# Battle of Nanking 24 Nov - 2 Dec - Nanking new Capital
-			guizhou_region = { secede_province = CHI }							# 4 Nov 1911
-			anhui_region = { secede_province = CHI }							# 5 Nov 1911			
-			guangxi_region = { secede_province = CHI }							# 7 Nov 1911
-																				# Qing Transformation attempt
-																				# Shandong 13 Nov 1911	
-																				# Ningxia 17 Nov 1911																					
-			sichuan_region = { secede_province = CHI }							# 21 Nov 1911
-			xikang_region = { secede_province = CHI }							# Tibetan Independance (end 1911 - Independance ack end 1912)
-																				# Mongolian revolt end 1911 - Dec 29 1911
-																				# Xinjiang 28 Dec 1911 first failed, 7 Jan 1912 succeed
-																				# Republic of China declared 1/1/1912
-																				# Taiwan
-																				# Abdication 20/1/1912 signed 12/2/1912 enacted
+			relation = { who = USA value = 15 }
+			relation = { who = GER value = 15 }
+			relation = { who = FRA value = 15 }
+			relation = { who = ENG value = 15 }
+			set_country_flag = four_powers_consortiumn
+		}
+}
 
+country_event = {
 
-			CHI = { capital = 9444 }
-			CHI = { split_troops = 0.60 }							# additional defector's to CHI which also gets it's own OOB with 40+ brigades
-			QIN = {	war = {	
-					target = CHI
-					attacker_goal = { casus_belli= civil_war_2 }
-					defender_goal = { casus_belli = civil_war_1 }
-					}
-				}
-			CHI = { country_event = 100072 }
+		id = 999999
+
+		major = yes
+		
+		trigger = {
+			tag = QIN
+			date = 1911.5.9	
+			not = { has_country_flag = nationalization_of_railway }
+		}
+
+		mean_time_to_happen = {
+			days = 0
+		}
+
+		title = "CHIErailw1"
+		desc = "desc_CHIErailw1"
+		picture = "CHIPrailw1"					
+
+		option = {
+			name = "opta_CHIErailw1"
+			ai_chance = { factor = 100 }
+			relation = { who = USA value = 5 }
+			relation = { who = GER value = 5 }
+			relation = { who = FRA value = 5 }
+			relation = { who = ENG value = 5 }
+			national_unity = -5
+			popularity = -5
+			set_country_flag = nationalization_of_railway
+		}
+}
+
+country_event = {
+
+		id = 999998
+
+		major = yes
+		
+		trigger = {
+			tag = QIN
+			date = 1911.5.20	
+			not = { has_country_flag = chuanhan_hanguang_agreement }
+		}
+
+		mean_time_to_happen = {
+			days = 0
+		}
+
+		title = "CHIErailw2"
+		desc = "desc_CHIErailw2"
+		picture = "CHIPrailw2"					
+
+		option = {
+			name = "opta_CHIErailw2"
+			ai_chance = { factor = 100 }
+			relation = { who = USA value = 5 }
+			relation = { who = GER value = 5 }
+			relation = { who = FRA value = 5 }
+			relation = { who = ENG value = 5 }
+			money = 600
+			popularity = -10
+			set_country_flag = chuanhan_hanguang_agreement
+		}
+}
+
+country_event = {
+
+		id = 999997
+
+		major = yes
+		
+		trigger = {
+			tag = QIN
+			date = 1911.6.17	
+			not = { has_country_flag = railway_rotection_league }
+		}
+
+		mean_time_to_happen = {
+			days = 0
+		}
+
+		title = "CHIErailw3"
+		desc = "desc_CHIErailw3"
+		picture = "CHIPrailw3"					
+
+		option = {
+			name = "opta_CHIErailw3"
+			ai_chance = { factor = 100 }
+			dissent = 3
+			national_unity = -5
+			set_country_flag = railway_rotection_league
+		}
+}
+
+country_event = {
+
+		id = 999996
+
+		major = yes
+		
+		trigger = {
+			tag = QIN
+			date = 1911.8.24	
+			not = { has_country_flag = strikes_boycotts_chengdu }
+		}
+
+		mean_time_to_happen = {
+			days = 0
+		}
+
+		title = "CHIErailw4"
+		desc = "desc_CHIErailw4"
+		picture = "CHIPrailw4"					
+
+		option = {
+			name = "opta_CHIErailw4"
+			ai_chance = { factor = 100 }
+			dissent = 3
+			national_unity = -5
+			popularity = -5
+			set_country_flag = strikes_boycotts_chengdu
 			add_country_modifier = {
-				name = "officers_gain"
-				duration = 15
+				name = "strikes_boycotts_chengdu"
+				duration = 90
 			}
 		}
 }
 
- country_event = {
+country_event = {
 
-		id = 100072
-		
-		is_triggered_only = yes
-		
-		fire_only_once = yes
+		id = 999995
 
-		title = "CHIE1"
-		desc = "desc_CHIE1"
-		picture = "CHIP1"
+		major = yes
+		
+		trigger = {
+			tag = QIN
+			date = 1911.9.7	
+			not = { has_country_flag = arrest_pu }
+		}
+
+		mean_time_to_happen = {
+			days = 0
+		}
+
+		title = "CHIErailw5"
+		desc = "desc_CHIErailw5"
+		picture = "CHIPrailw5"					
 
 		option = {
-			name = "opta_CHIE1"
+			name = "opta_CHIErailw5"
+			ai_chance = { factor = 80 }
+			QIN = { country_event = 999994 }
+			remove_country_modifier = "strikes_boycotts_chengdu"
+			set_country_flag = arrest_pu
+		}
+		option = {
+			name = "optb_CHIErailw5"
+			ai_chance = { factor = 20 }
+			set_country_flag = arrest_pu
+		}
+}
+
+country_event = {
+
+		id = 999994
+
+		major = yes
+		
+		is_triggered_only = yes
+
+		title = "CHIErailw6"
+		desc = "desc_CHIErailw6"
+		picture = "CHIPrailw6"					
+
+		option = {
+			name = "opta_CHIErailw6"
 			ai_chance = { factor = 100 }
-			manpower = 200
-			load_oob = CHI_1910.txt					# 20 x INF & 20 x MIL brigades
-			rare_materials = 10000
-			crude_oil = 10000
-			supplies = 30000
-			energy = 20000
-			metal = 20000
-			money = 1200
-			add_country_modifier = {
-				name = "officers_gain"
-				duration = 30
-			}
-			add_country_modifier = {
-				name = "rebellion_administration"
-				duration = 365
-			}
+			dissent = 3
+			national_unity = -5
+		}
+}
+
+country_event = {
+
+		id = 999993
+
+		major = yes
+		
+		trigger = {
+			tag = QIN
+			date = 1911.9.8	
+			not = { has_country_flag = comrades_army }
+		}
+
+		mean_time_to_happen = {
+			days = 0
+		}
+
+		title = "CHIErailw7"
+		desc = "desc_CHIErailw7"
+		picture = "CHIPrailw7"					
+		option = {
+			name = "opta_CHIErailw7"
+			ai_chance = { factor = 100 }
+			9415 = { create_revolt = 1}
+			9444 = { create_revolt = 1}
+			9445 = { create_revolt = 1}
+			9501 = { create_revolt = 1}
+			set_country_flag = comrades_army
 		}
 }
 
@@ -212,65 +385,130 @@ country_event = {
 		}
 }
 
-#CHINESE CIVIL WAR SURRENDER QIN 
- country_event = {
+#CHINESE CIVIL WAR SURRENDER QIN
 
-		id = 100070
-		
-		is_triggered_only = yes
-		
+#Abdication of the Xuantong Emperor
+
+country_event = {
+
+		id = 999956
+
+		major = yes
+
 		fire_only_once = yes
 
-		title = "CHIE2"
-		desc = "desc_CHIE2"
-		picture = "CHIP2"
+		trigger = {
+			tag = PRC	
+			exists = QIN
+			exists = PRC
+			4979 = { controlled_by = PRC }
+		}
+
+		title = "PRCExhr10"
+		desc = "desc_PRCExhr10"
+		picture = "PRCExhr10"					
 
 		option = {
-			name = "opta_CHIE2"
+			name = "opta_PRCExhr10"
 			ai_chance = { factor = 100 }
 			inherit = QIN
 			capital = 5494
-			CHI = { set_country_flag = republic_china }
+			PRC = { set_country_flag = republic_china }
 			rare_materials = 8000
 			crude_oil = 4000
 			supplies = 10000
 			energy = 30000
 			metal = 30000
 			money = 400
-			CHI = { any_owned = { limit = { is_core = QIN } remove_core = QIN } }
+			PRC = { any_owned = { limit = { is_core = QIN } remove_core = QIN } }
 			GER = { any_owned = { limit = { is_core = QIN } remove_core = QIN } }
 			ENG = { any_owned = { limit = { is_core = QIN } remove_core = QIN } }
 			POR = { any_owned = { limit = { is_core = QIN } remove_core = QIN } }
 			JAP = { any_owned = { limit = { is_core = QIN } remove_core = QIN } }
 			FRA = { any_owned = { limit = { is_core = QIN } remove_core = QIN } }
-			CHI = { any_owned = { limit = { is_core = MON } secede_province = MON } }
+			PRC = { any_owned = { limit = { is_core = MON } secede_province = MON } }
 		}
 }
 
-# SURRENDER CHI REPUBS
- country_event = {
+country_event = {
 
-		id = 100073
-		
-		is_triggered_only = yes
-		
+		id = 999955
+
+		major = yes
+
 		fire_only_once = yes
 
-		title = "CHIE4"
-		desc = "desc_CHIE4"
-		picture = "CHIP2"
+		trigger = {
+			tag = PRC	
+			exists = QIN
+			exists = PRC
+			has_country_flag = yuan_accepted
+		}
+		
+		mean_time_to_happen = {
+			days = 15
+		}
+
+		title = "PRCExhr10"
+		desc = "desc_PRCExhr10"
+		picture = "PRCExhr10"					
 
 		option = {
-			name = "opta_CHIE4"
+			name = "opta_PRCExhr10"
 			ai_chance = { factor = 100 }
-			inherit = CHI
+			inherit = QIN
 			capital = 5494
+			PRC = { set_country_flag = republic_china }
 			rare_materials = 8000
 			crude_oil = 4000
 			supplies = 10000
 			energy = 30000
 			metal = 30000
 			money = 400
-			QIN = { any_owned = { limit = { is_core = CHI } remove_core = CHI } }
+			PRC = { any_owned = { limit = { is_core = QIN } remove_core = QIN } }
+			GER = { any_owned = { limit = { is_core = QIN } remove_core = QIN } }
+			ENG = { any_owned = { limit = { is_core = QIN } remove_core = QIN } }
+			POR = { any_owned = { limit = { is_core = QIN } remove_core = QIN } }
+			JAP = { any_owned = { limit = { is_core = QIN } remove_core = QIN } }
+			FRA = { any_owned = { limit = { is_core = QIN } remove_core = QIN } }
+			PRC = { any_owned = { limit = { is_core = MON } secede_province = MON } }
+		}
+}
+
+# SURRENDER PRC REPUBS
+# Failure of the revolution
+
+country_event = {
+
+		id = 999954
+		
+		is_triggered_only = yes		
+
+		major = yes
+
+		fire_only_once = yes
+
+		trigger = {
+			tag = QIN	
+			not = { has_country_flag = qing_victory }
+		}
+
+		title = "CHIExhr9"
+		desc = "desc_CHIExhr9"
+		picture = "CHIExhr9"
+
+		option = {
+			name = "opta_CHIExhr9"
+			ai_chance = { factor = 100 }
+			inherit = PRC
+			rare_materials = 8000
+			crude_oil = 4000
+			supplies = 10000
+			energy = 30000
+			metal = 30000
+			money = 400
+			QIN = { any_owned = { limit = { is_core = PRC } remove_core = PRC } }
+			
+			set_country_flag = qing_victory
 		}
 }

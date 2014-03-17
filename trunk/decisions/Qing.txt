@@ -18,3 +18,21 @@ diplomatic_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 } 
+
+diplomatic_decisions = {
+
+	protect_the_yellow_dragon_flag = {
+		potential = {
+			tag = QIN
+			not = { has_country_flag = protect_the_yellow_dragon_flag }
+		}
+		allow = { 	}
+		
+		effect = {
+			set_country_flag = protect_the_yellow_dragon_flag
+			QIN = { country_event = 100076 }
+			QIN = { country_event = 100077 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+} 
