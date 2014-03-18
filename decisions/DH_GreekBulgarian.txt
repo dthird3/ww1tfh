@@ -1,15 +1,15 @@
 #2001506_decision = { #EVENTNAME: Seize Thessaloniki? *CONFIRMED
 #2002507_decision = { #EVENTNAME: Ottoman Empire has fallen
 #2002508_decision = { #EVENTNAME: Negotiate with Greece *CONFIRMED
-#2002513_decision = { #EVENTNAME: Ask Greece for demobilization
-#2002521_decision = { #EVENTNAME: Athens on fire!
-#2002522_decision = { #EVENTNAME: Renewed call for demobilization
-#2002533_decision = { #EVENTNAME: Ultimatum to Greece
+#2002513_decision = { #EVENTNAME: Ask Greece for demobilization *CONFIRMED
+#2002521_decision = { #EVENTNAME: Athens on fire! *CONFIRMED
+#2002522_decision = { #EVENTNAME: Renewed call for demobilization  *CONFIRMED
+#2002533_decision = { #EVENTNAME: Ultimatum to Greece *CONFIRMED
 #2019509_decision = { #EVENTNAME: The Gounaris plan
 #2191508_decision = { #EVENTNAME: The Fall of Serbia
 #2191510_decision = { #EVENTNAME: Promises to Bulgaria
 #2192529_decision = { #EVENTNAME: Agreement with Bulgaria
-#2084503_decision = { #EVENTNAME: Evacuate through Albania?
+#2084503_decision = { #EVENTNAME: Evacuate through Albania? *CONFIRMED
 
 
 
@@ -81,7 +81,10 @@ diplomatic_decisions = {
 		not = { has_global_flag = SLEEPEVENT_2002508 }
 		not = { has_country_flag = decision_2002508 } }
 	allow = { 
+		and = {
 		exists = SER
+		not = { SER = { government_in_exile = yes } }
+		}
 		relation = { who = GRE value = 60 }
 		2613 = { controlled_by = THIS }
 		}
@@ -222,8 +225,11 @@ diplomatic_decisions = {
 2191508_decision = {
 	potential = {
 		exists = BUL
-		not = {
-			 exists = SER
+		not = {		
+		and = {
+		exists = SER
+		not = { SER = { government_in_exile = yes } }
+		}
 			 }
 		GER = { war = yes }
 		not = {
@@ -254,8 +260,11 @@ diplomatic_decisions = {
 
 #Promises to Bulgaria
 2191510_decision = {
-	potential = {
+	potential = {		
+		and = {
 		exists = SER
+		not = { SER = { government_in_exile = yes } }
+		}
 		exists = BUL
 		not = {
 			has_global_flag = 2020501_EVENT_DONE
@@ -279,24 +288,7 @@ diplomatic_decisions = {
 		set_country_flag = decision_2191510 }
 	ai_will_do = { factor = 1 }
 	}
-#Invade Serbia
-#2192502_decision = {
-#	potential = {
-#		#has_global_flag = 2192500_EVENT_DONE
-#		not = {
-#			 #has_global_flag = 2192522_EVENT_DONE
-#			 }
-#		tag = AUH
-#		date = 1914.6.28
-#		not = { date = 1914.12.30
-#			 }
-#		not = { has_global_flag = SLEEPEVENT_2192502 }
-#		not = { has_country_flag = decision_2192502 } }
-#	allow = { }
-#	effect = { country_event = 453
-#		set_country_flag = decision_2192502 }
-#	ai_will_do = { factor = 1 }
-#	}
+
 
 #Agreement with Bulgaria
 2192529_decision = {
@@ -329,15 +321,13 @@ diplomatic_decisions = {
 	potential = {
 		exists = ALB
 		THIS = { surrender_progress = 50 }
-		THIS = { lost_IC = 50 }
-		or = {
-			4368 = { controlled_by = SER }
-			4555 = { controlled_by = SER }
-			4495 = { controlled_by = SER }
-			}
+	not = { SER = { controls = 4368 } }
+	not = { SER = { controls = 3912 } }
+	or = {
+		SER = { controls = 4495 }
+		SER = { controls = 4609 }
+	}
 		not = {
-			3912 = { controlled_by = SER }
-			4243 = { controlled_by = SER }
 			SER = { war_with = ALB }
 			SER = { alliance_with = ALB }
 			}

@@ -1164,7 +1164,10 @@ trigger = {
 		 PER = { war_with = ENG }
 		 }
 	9539 = { controlled_by = THIS }
-	exists = PER
+		and = {
+		exists = PER
+		not = { PER = { government_in_exile = yes } }
+		}
 	#has_global_flag = 2145519_EVENT_DONE
 	
 tag = ENG
@@ -1266,7 +1269,10 @@ trigger = {
 		 PER = { war_with = RUS }
 		 }
 	3524 = { controlled_by = THIS }
-	exists = PER
+	and = {
+		exists = PER
+		not = { PER = { government_in_exile = yes } }
+		}
 	TUR = { war_with = RUS }
 	#has_global_flag = 2145519_EVENT_DONE
 	
@@ -1380,7 +1386,10 @@ trigger = {
 		 TUR = { war_with = ENG }
 		 }
 	#has_global_flag = 2145510_EVENT_DONE
-	exists = PER
+	and = {
+		exists = PER
+		not = { PER = { government_in_exile = yes } }
+		}
 	or = {
 		9336 = { controlled_by = THIS }
 		9366 = { controlled_by = THIS }
@@ -1459,7 +1468,10 @@ trigger = {
 		 TUR = { war_with = THIS }
 		 }
 	#has_global_flag = 2145510_EVENT_DONE
-	exists = PER
+	and = {
+		exists = PER
+		not = { PER = { government_in_exile = yes } }
+		}
 	or = {
 		3594 = { controlled_by = THIS }
 		7366 = { controlled_by = THIS }
@@ -1541,7 +1553,10 @@ desc = "DH_EVENT_2001572_DESC"
 picture = "qatar"
 
 trigger = {
-	exists = ENG
+	and = {
+		exists = ENG
+		not = { ENG = { government_in_exile = yes } }
+		}
 	not = {
 		 #has_global_flag = 2191550_EVENT_DONE
 		 }

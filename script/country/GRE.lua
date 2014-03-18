@@ -32,5 +32,15 @@ end
 -- #######################################
 -- DIPLOMACY SCORE GENERATION
 
+function P.DiploScore_OfferTrade(voDiploScoreObj)
+	local laTrade = {
+		FRA = {Score = 80}}
+	
+	if laTrade[voDiploScoreObj.Actor.Name] then
+		return voDiploScoreObj.Score + laTrade[voDiploScoreObj.Actor.Name].Score
+	end
+	
+	return voDiploScoreObj.Score
+end
 
 return AI_GRE

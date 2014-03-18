@@ -254,4 +254,12 @@ function P.Buildings(voProductionData)
 	return loProdBuilding
 end
 
+function P.DiploScore_GiveMilitaryAccess(voDiploScoreObj)
+	-- We are not in faction so do not give access to anyone who is at war with Greece
+
+	voDiploScoreObj.Score = 0
+	
+	return voDiploScoreObj.Score
+end
+
 return AI_DEFAULT_PUP
