@@ -1,44 +1,29 @@
-#id = 123 #EVENTNAME: Russians denounce Janin's behavior
-#id = 544 #EVENTNAME: Koltchak arrives!
+#id = 123 #EVENTNAME: Russians denounce Janin's behavior *CONFIRMED
+#id = 544 #EVENTNAME: Koltchak arrives! *CONFIRMED
 #id = 545 #EVENTNAME: Travel to Omsk *CONFIRMED
-#id = 546 #EVENTNAME: Coup Omsk and Samara
-#id = 547 #EVENTNAME: Join the White Army
-#id = 548 #EVENTNAME: Janin and the Czechoslovak Legion
-#id = 549 #EVENTNAME: Problems with the Czechoslovak Legion
-#id = 550 #EVENTNAME: Report Janin's behavior to the French
-#id = 551 #EVENTNAME: Janin remains in Russia
-#id = 552 #EVENTNAME: Janin is fired
-#id = 553 #EVENTNAME: Omsk is lost!
-#id = 554 #EVENTNAME: The Czechoslovak Legion defects
-#id = 555 #EVENTNAME: Koltchak executed!
-#id = 556 #EVENTNAME: Move capitol to Petrograd
-#id = 557 #EVENTNAME: Move capitol to Moscow
-#id = 558 #EVENTNAME: Move capitol to Tsarystine
-#id = 559 #EVENTNAME: Move capitol to Volgograd
-#id = 560 #EVENTNAME: Move capitol to Ekaterinburg
-#id = 561 #EVENTNAME: White Terror
-#id = 562 #EVENTNAME: Form Russia
-#id = 563 #EVENTNAME: The Volunteers army
-#id = 564 #EVENTNAME: New recruits
-#id = 565 #EVENTNAME: New recruits
-#id = 566 #EVENTNAME: Cossacks rise against the Bolsheviks
-#id = 567 #EVENTNAME: Move capitol to Petrograd
-#id = 568 #EVENTNAME: Move capitol to Moscow
-#id = 569 #EVENTNAME: Move capitol to Tsarystine
-#id = 570 #EVENTNAME: Move capitol to Volgograd
-#id = 571 #EVENTNAME: Move capitol to Ekaterinburg
-#id = 572 #EVENTNAME: Form Southern Russia
-#id = 573 #EVENTNAME: White Terror
-#id = 574 #EVENTNAME: The Arkhangelsk Government
-#id = 575 #EVENTNAME: Move capitol to Petrograd
-#id = 576 #EVENTNAME: Move capitol to Moscow
-#id = 577 #EVENTNAME: Move capitol to Tsarystine
-#id = 578 #EVENTNAME: Move capitol to Volgograd
-#id = 579 #EVENTNAME: Move capitol to Ekaterinburg
-#id = 580 #EVENTNAME: Form Northern Russia
-#id = 581 #EVENTNAME: White Terror
-#id = 582 #EVENTNAME: The Basmachi
-#id = 583 #EVENTNAME: Ismail Enver joins the movement
+#id = 546 #EVENTNAME: Coup Omsk and Samara *CONFIRMED
+#id = 547 #EVENTNAME: Join the White Army *CONFIRMED
+#id = 548 #EVENTNAME: Janin and the Czechoslovak Legion *CONFIRMED
+#id = 549 #EVENTNAME: Problems with the Czechoslovak Legion *CONFIRMED
+#id = 550 #EVENTNAME: Report Janin's behavior to the French *CONFIRMED
+#id = 551 #EVENTNAME: Janin remains in Russia *CONFIRMED
+#id = 552 #EVENTNAME: Janin is fired *CONFIRMED
+#id = 553 #EVENTNAME: Omsk is lost! *CONFIRMED
+#id = 554 #EVENTNAME: The Czechoslovak Legion defects *CONFIRMED
+#id = 555 #EVENTNAME: Koltchak executed! *CONFIRMED
+#id = 556 #EVENTNAME: Move capitol to Petrograd *CONFIRMED
+#id = 557 #EVENTNAME: Move capitol to Moscow *CONFIRMED
+#id = 558 #EVENTNAME: Move capitol to Tsarystine *CONFIRMED
+#id = 560 #EVENTNAME: Move capitol to Ekaterinburg *CONFIRMED
+#id = 561 #EVENTNAME: White Terror *CONFIRMED
+#id = 562 #EVENTNAME: Form Russia *CONFIRMED
+#id = 563 #EVENTNAME: The Volunteers army *CONFIRMED
+#id = 564 #EVENTNAME: New recruits  *CONFIRMED
+#id = 565 #EVENTNAME: New recruits  *CONFIRMED
+#id = 566 #EVENTNAME: Cossacks rise against the Bolsheviks  *CONFIRMED
+#id = 574 #EVENTNAME: The Arkhangelsk Government *CONFIRMED
+#id = 582 #EVENTNAME: The Basmachi *CONFIRMED
+#id = 583 #EVENTNAME: Ismail Enver joins the movement *CONFIRMED
 
 
 
@@ -108,11 +93,9 @@ not = { has_global_flag = SLEEPEVENT_2173500 }
 fire_only_once = yes
 mean_time_to_happen = { days =  3 }
 
-is_triggered_only = no
+is_triggered_only = yes
 option = {
 	name = "DH_EVENT_2173500_Option7"
-	# add_country_modifier = { name = "democratic7" duration = 360 }#command = { type = set_domestic which = democratic value = 7 }
-	# add_country_modifier = { name = "rulingpartysupport" duration = 360 }#command = { type = set_domestic which = political_left value = 6 }
 	3927 = { hq_brigade = current }
 	3927 = { infantry_brigade = current infantry_brigade = current infantry_brigade = current }
 	war = { target = SOV }
@@ -157,12 +140,7 @@ is_triggered_only = yes
 option = {
 	name = "DH_EVENT_2173501_Option7"
 	money = -50 
-	random_country = { limit = { tag = THIS 
-			 not = {
-				 WHR = { war_with = WHR }
-				 }  } 
-		create_alliance = WHR
-		 }
+	
 	
 set_global_flag = 2173501_EVENT_DONE
 
@@ -254,7 +232,7 @@ is_triggered_only = yes
 option = {
 	name = "DH_EVENT_2173503_Option7"
 	money = -50 
-	create_alliance = WHR
+	
 	
 set_global_flag = 2173503_EVENT_DONE
 
@@ -341,9 +319,7 @@ trigger = {
 		exists = SOV		not = { SOV = { government_in_exile = yes } }
 		}
 	money =  10
-	not = {
-		 dissent = 4 
-		 }
+
 	#NOEQUIVALENT random =  10
 	
 tag = WHR
@@ -439,10 +415,10 @@ trigger = {
 	not = {
 		8528 = { controlled_by = THIS }
 		1409 = { controlled_by = THIS }
-		699 = { controlled_by = THIS }
+		782 = { controlled_by = THIS }
 		8211 = { controlled_by = THIS }
 		2857 = { controlled_by = THIS }
-		1657 = { controlled_by = THIS }
+		2857 = { controlled_by = THIS }
 		}
 	
 tag = WHR
@@ -535,7 +511,7 @@ is_triggered_only = no
 option = {
 	name = "DH_EVENT_2173511_Option7"
 	dissent = 10 
-	#remove_minister = 65201 
+	remove_minister = 1360006 
 	#kill_leader = 11701 
 	
 set_global_flag = 2173511_EVENT_DONE
@@ -556,7 +532,7 @@ trigger = {
 		}
 		 }
 	war = no
-	699 = { controlled_by = THIS }
+	782 = { controlled_by = THIS }
 	
 tag = WHR
 date = 1914.8.4
@@ -576,7 +552,7 @@ is_triggered_only = yes
 option = {
 	name = "DH_EVENT_2173513_Option7"
 	dissent = 5 
-	capital = 699
+	capital = 782
 	
 set_global_flag = 2173513_EVENT_DONE
 
@@ -594,7 +570,7 @@ trigger = {
 			and = {
 		exists = SOV		not = { SOV = { government_in_exile = yes } }
 		}
-		699 = { controlled_by = THIS }
+		782 = { controlled_by = THIS }
 		}
 	war = no
 	1409 = { controlled_by = THIS }
@@ -635,11 +611,11 @@ trigger = {
 			and = {
 		exists = SOV		not = { SOV = { government_in_exile = yes } }
 		}
-		699 = { controlled_by = THIS }
+		782 = { controlled_by = THIS }
 		1409 = { controlled_by = THIS }
 		}
 	war = no
-	1657 = { controlled_by = THIS }
+	2857 = { controlled_by = THIS }
 	
 tag = WHR
 date = 1914.8.4
@@ -659,7 +635,7 @@ is_triggered_only = yes
 option = {
 	name = "DH_EVENT_2173514_Option7"
 	dissent = 5 
-	capital = 1657
+	capital = 2857
 	
 set_global_flag = 2173514_EVENT_DONE
 
@@ -667,48 +643,6 @@ set_global_flag = 2173514_EVENT_DONE
 
 }
 
-#EVENTNAME: Move capitol to Volgograd
-country_event = {
-id = 559
-title = "DH_EVENT_2173515_TITLE"
-desc = "DH_EVENT_2173515_DESC"
-trigger = {
-	not = {
-			and = {
-		exists = SOV		not = { SOV = { government_in_exile = yes } }
-		}
-		699 = { controlled_by = THIS }
-		1409 = { controlled_by = THIS }
-		1657 = { controlled_by = THIS }
-		}
-	war = no
-	2857 = { controlled_by = THIS }
-	
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2173515 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  20 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2173515_Option7"
-	dissent = 5 
-	capital = 2857
-	
-set_global_flag = 2173515_EVENT_DONE
-
-}
-
-}
 
 #EVENTNAME: Move capitol to Ekaterinburg
 country_event = {
@@ -720,9 +654,9 @@ trigger = {
 			and = {
 		exists = SOV		not = { SOV = { government_in_exile = yes } }
 		}
-		699 = { controlled_by = THIS }
+		782 = { controlled_by = THIS }
 		1409 = { controlled_by = THIS }
-		1657 = { controlled_by = THIS }
+		2857 = { controlled_by = THIS }
 		2857 = { controlled_by = THIS }
 		}
 	war = no
@@ -802,9 +736,9 @@ trigger = {
 		exists = RUS
 		dissent = 10
 		}
-	699 = { controlled_by = THIS }
+	782 = { controlled_by = THIS }
 	1409 = { controlled_by = THIS }
-	1657 = { controlled_by = THIS }
+	2857 = { controlled_by = THIS }
 	8211 = { controlled_by = THIS }
 	2857 = { controlled_by = THIS }
 	8528 = { controlled_by = THIS }
@@ -868,7 +802,6 @@ option = {
 	3309 = {  infantry_brigade = current infantry_brigade = current infantry_brigade = current }
 	948 = { hq_brigade = current }
 	948 = {  infantry_brigade = current infantry_brigade = current infantry_brigade = current }
-	war = { target = SOV }
 	
 set_global_flag = 2168500_EVENT_DONE
 
@@ -978,289 +911,6 @@ set_global_flag = 2168503_EVENT_DONE
 
 }
 
-#EVENTNAME: Move capitol to Petrograd
-country_event = {
-id = 567
-title = "DH_EVENT_2168504_TITLE"
-desc = "DH_EVENT_2168504_DESC"
-trigger = {
-	not = {
-		 	and = {
-		exists = SOV		not = { SOV = { government_in_exile = yes } }
-		}
-		 }
-	war = no
-	699 = { controlled_by = THIS }
-	
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2168504 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  20 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2168504_Option7"
-	dissent = 5 
-	capital = 699
-	
-set_global_flag = 2168504_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Move capitol to Moscow
-country_event = {
-id = 568
-title = "DH_EVENT_2168505_TITLE"
-desc = "DH_EVENT_2168505_DESC"
-trigger = {
-	not = {
-			and = {
-		exists = SOV		not = { SOV = { government_in_exile = yes } }
-		}
-		699 = { controlled_by = THIS }
-		}
-	war = no
-	1409 = { controlled_by = THIS }
-	
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2168505 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  20 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2168505_Option7"
-	dissent = 5 
-	capital = 1409
-	
-set_global_flag = 2168505_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Move capitol to Tsarystine
-country_event = {
-id = 569
-title = "DH_EVENT_2168506_TITLE"
-desc = "DH_EVENT_2168506_DESC"
-trigger = {
-	not = {
-			and = {
-		exists = SOV		not = { SOV = { government_in_exile = yes } }
-		}
-		699 = { controlled_by = THIS }
-		1409 = { controlled_by = THIS }
-		}
-	war = no
-	1657 = { controlled_by = THIS }
-	
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2168506 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  20 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2168506_Option7"
-	dissent = 5 
-	capital = 1657
-	
-set_global_flag = 2168506_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Move capitol to Volgograd
-country_event = {
-id = 570
-title = "DH_EVENT_2168507_TITLE"
-desc = "DH_EVENT_2168507_DESC"
-trigger = {
-	not = {
-			and = {
-		exists = SOV		not = { SOV = { government_in_exile = yes } }
-		}
-		699 = { controlled_by = THIS }
-		1409 = { controlled_by = THIS }
-		1657 = { controlled_by = THIS }
-		}
-	war = no
-	2857 = { controlled_by = THIS }
-	
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2168507 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  20 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2168507_Option7"
-	dissent = 5 
-	capital = 2857
-	
-set_global_flag = 2168507_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Move capitol to Ekaterinburg
-country_event = {
-id = 571
-title = "DH_EVENT_2168508_TITLE"
-desc = "DH_EVENT_2168508_DESC"
-trigger = {
-	not = {
-			and = {
-		exists = SOV		not = { SOV = { government_in_exile = yes } }
-		}
-		699 = { controlled_by = THIS }
-		1409 = { controlled_by = THIS }
-		1657 = { controlled_by = THIS }
-		2857 = { controlled_by = THIS }
-		}
-	war = no
-	8211 = { controlled_by = THIS }
-	
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2168508 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  20 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2168508_Option7"
-	dissent = 5 
-	capital = 8211
-	
-set_global_flag = 2168508_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Form Southern Russia
-country_event = {
-id = 572
-title = "DH_EVENT_2168509_TITLE"
-desc = "DH_EVENT_2168509_DESC"
-trigger = {
-	2587 = { controlled_by = WHR }
-	2857 = { controlled_by = WHR }
-	3384 = { controlled_by = WHR }
-	3719 = { controlled_by = WHR }
-	3651 = { controlled_by = WHR }
-	
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2168509 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  20 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2168509_Option7"
-	# MANUALFIX name command = { type = name where = UTC which = UTC_SOUTHERN_RUSSIA }
-	
-set_global_flag = 2168509_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: White Terror
-country_event = {
-id = 573
-title = "DH_EVENT_2168510_TITLE"
-desc = "DH_EVENT_2168510_DESC"
-trigger = {
-	#NOEQUIVALENT random =  8
-		and = {
-		exists = SOV		not = { SOV = { government_in_exile = yes } }
-		}
-	war = yes
-	
-tag = WHR
-date = 1914.6.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2168510 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  11 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2168510_Option7"
-	dissent = 2 
-	
-set_global_flag = 2168510_EVENT_DONE
-
-}
-
-}
 
 #EVENTNAME: The Arkhangelsk Government
 country_event = {
@@ -1299,285 +949,7 @@ set_global_flag = 2147500_EVENT_DONE
 
 }
 
-#EVENTNAME: Move capitol to Petrograd
-country_event = {
-id = 575
-title = "DH_EVENT_2147501_TITLE"
-desc = "DH_EVENT_2147501_DESC"
-trigger = {
-	not = {
-		 	and = {
-		exists = SOV		not = { SOV = { government_in_exile = yes } }
-		}
-		 }
-	war = no
-	699 = { controlled_by = THIS }
-	
-tag = WHR
-date = 1914.8.4
 
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2147501 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  20 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2147501_Option7"
-	dissent = 5 
-	capital = 699
-	
-set_global_flag = 2147501_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Move capitol to Moscow
-country_event = {
-id = 576
-title = "DH_EVENT_2147502_TITLE"
-desc = "DH_EVENT_2147502_DESC"
-trigger = {
-	not = {
-			and = {
-		exists = SOV		not = { SOV = { government_in_exile = yes } }
-		}
-		699 = { controlled_by = THIS }
-		}
-	war = no
-	1409 = { controlled_by = THIS }
-	
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2147502 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  20 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2147502_Option7"
-	dissent = 5 
-	capital = 1409
-	
-set_global_flag = 2147502_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Move capitol to Tsarystine
-country_event = {
-id = 577
-title = "DH_EVENT_2147503_TITLE"
-desc = "DH_EVENT_2147503_DESC"
-trigger = {
-	not = {
-			and = {
-		exists = SOV		not = { SOV = { government_in_exile = yes } }
-		}
-		699 = { controlled_by = THIS }
-		1409 = { controlled_by = THIS }
-		}
-	war = no
-	1657 = { controlled_by = THIS }
-	
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2147503 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  20 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2147503_Option7"
-	dissent = 5 
-	capital = 1657
-	
-set_global_flag = 2147503_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Move capitol to Volgograd
-country_event = {
-id = 578
-title = "DH_EVENT_2147504_TITLE"
-desc = "DH_EVENT_2147504_DESC"
-trigger = {
-	not = {
-			and = {
-		exists = SOV		not = { SOV = { government_in_exile = yes } }
-		}
-		699 = { controlled_by = THIS }
-		1409 = { controlled_by = THIS }
-		1657 = { controlled_by = THIS }
-		}
-	war = no
-	2857 = { controlled_by = THIS }
-	
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2147504 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  20 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2147504_Option7"
-	dissent = 5 
-	capital = 2857
-	
-set_global_flag = 2147504_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Move capitol to Ekaterinburg
-country_event = {
-id = 579
-title = "DH_EVENT_2147505_TITLE"
-desc = "DH_EVENT_2147505_DESC"
-trigger = {
-	not = {
-			and = {
-		exists = SOV		not = { SOV = { government_in_exile = yes } }
-		}
-		699 = { controlled_by = THIS }
-		1409 = { controlled_by = THIS }
-		1657 = { controlled_by = THIS }
-		2857 = { controlled_by = THIS }
-		}
-	war = no
-	8211 = { controlled_by = THIS }
-	
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2147505 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  20 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2147505_Option7"
-	dissent = 5 
-	capital = 8211
-	
-set_global_flag = 2147505_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Form Northern Russia
-country_event = {
-id = 580
-title = "DH_EVENT_2147506_TITLE"
-desc = "DH_EVENT_2147506_DESC"
-trigger = {
-	699 = { controlled_by = WHR }
-	
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2147506 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  20 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2147506_Option7"
-	# MANUALFIX name command = { type = name where = UGS which = UGS_NORTHERN_RUSSIA }
-	
-set_global_flag = 2147506_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: White Terror
-country_event = {
-id = 581
-title = "DH_EVENT_2147507_TITLE"
-desc = "DH_EVENT_2147507_DESC"
-trigger = {
-	#NOEQUIVALENT random =  8
-		and = {
-		exists = SOV		not = { SOV = { government_in_exile = yes } }
-		}
-	war = yes
-	
-tag = WHR
-date = 1914.6.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2147507 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  11 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2147507_Option7"
-	dissent = 2 
-	
-set_global_flag = 2147507_EVENT_DONE
-
-}
-
-}
 
 #EVENTNAME: The Basmachi
 country_event = {
@@ -1629,7 +1001,7 @@ trigger = {
 			#NOEQUIVALENT random =  25
 			}
 		}
-	
+	TUR = { war = no }
 tag = WHR
 date = 1914.8.4
 
