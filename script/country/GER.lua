@@ -268,5 +268,25 @@ function P.ForeignMinister_EvaluateDecision(voDecision)
 	return voDecision.Score
 end
 
+function P.DiploScore_OfferTrade(voDiploScoreObj)
+	local laTrade = {
+		CAN = {Score = -20},
+		AST = {Score = -20},
+		ENG = {Score = -20},
+		SAF = {Score = -20},
+		NZL = {Score = -20},
+		TUR = {Score = 40},
+		AUH = {Score = 60},
+		HOL = {Score = 100},
+		ITA = {Score = -20},
+		JAP = {Score = -50},
+		FRA = {Score = -50}}
+	
+	if laTrade[voDiploScoreObj.Actor.Name] then
+		return voDiploScoreObj.Score + laTrade[voDiploScoreObj.Actor.Name].Score
+	end
+	
+	return voDiploScoreObj.Score
+end
 
 return AI_GER
