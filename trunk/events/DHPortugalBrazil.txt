@@ -12,7 +12,10 @@ desc = "DH_EVENT_2001536_DESC"
 picture = "diplomatic_campaign"
 
 trigger = {
-	exists = POR
+		and = {
+		exists = POR
+		not = { POR = { government_in_exile = yes } }
+		}
 	GER = { war_with = ENG }
 	2613 = { controlled_by = FRA }
 	#NOEQUIVALENT random =  30
@@ -94,7 +97,10 @@ desc = "DH_EVENT_2001538_DESC"
 picture = "diplomatic_campaign"
 
 trigger = {
-	exists = BRA
+		and = {
+		exists = BRA
+		not = { BRA = { government_in_exile = yes } }
+		}
 	GER = { war_with = ENG }
 	not = {
 		BRA = { war_with = ENG }

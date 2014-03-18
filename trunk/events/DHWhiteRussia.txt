@@ -130,8 +130,12 @@ id = 545
 title = "DH_EVENT_2173501_TITLE"
 desc = "DH_EVENT_2173501_DESC"
 trigger = {
-	exists = WHR
-	exists = SOV
+		and = {
+		exists = WHR		not = {WHR = { government_in_exile = yes } }
+		}
+		and = {
+		exists = SOV		not = { SOV = { government_in_exile = yes } }
+		}
 	SOV = { war_with = WHR }
 	money =  5
 	
@@ -173,7 +177,9 @@ title = "DH_EVENT_2173502_TITLE"
 desc = "DH_EVENT_2173502_DESC"
 trigger = {
 	has_global_flag = 2173500_EVENT_DONE
-	exists = SOV
+		and = {
+		exists = SOV		not = { SOV = { government_in_exile = yes } }
+		}
 	SOV = { war_with = WHR }
 	money =  10
 	
@@ -221,8 +227,12 @@ title = "DH_EVENT_2173503_TITLE"
 desc = "DH_EVENT_2173503_DESC"
 trigger = {
 	has_global_flag = 2173501_EVENT_DONE
-	exists = WHR
-	exists = SOV
+		and = {
+		exists = WHR		not = {WHR = { government_in_exile = yes } }
+		}
+		and = {
+		exists = SOV		not = { SOV = { government_in_exile = yes } }
+		}
 	SOV = { war_with = WHR }
 	money =  5
 	
@@ -327,7 +337,9 @@ title = "DH_EVENT_2173506_TITLE"
 desc = "DH_EVENT_2173506_DESC"
 trigger = {
 	has_global_flag = 2173504_EVENT_DONE
-	exists = SOV
+		and = {
+		exists = SOV		not = { SOV = { government_in_exile = yes } }
+		}
 	money =  10
 	not = {
 		 dissent = 4 
@@ -539,7 +551,9 @@ title = "DH_EVENT_2173513_TITLE"
 desc = "DH_EVENT_2173513_DESC"
 trigger = {
 	not = {
-		 exists = SOV
+		 	and = {
+		exists = SOV		not = { SOV = { government_in_exile = yes } }
+		}
 		 }
 	war = no
 	699 = { controlled_by = THIS }
@@ -577,7 +591,9 @@ title = "DH_EVENT_2173512_TITLE"
 desc = "DH_EVENT_2173512_DESC"
 trigger = {
 	not = {
-		exists = SOV
+			and = {
+		exists = SOV		not = { SOV = { government_in_exile = yes } }
+		}
 		699 = { controlled_by = THIS }
 		}
 	war = no
@@ -616,7 +632,9 @@ title = "DH_EVENT_2173514_TITLE"
 desc = "DH_EVENT_2173514_DESC"
 trigger = {
 	not = {
-		exists = SOV
+			and = {
+		exists = SOV		not = { SOV = { government_in_exile = yes } }
+		}
 		699 = { controlled_by = THIS }
 		1409 = { controlled_by = THIS }
 		}
@@ -656,7 +674,9 @@ title = "DH_EVENT_2173515_TITLE"
 desc = "DH_EVENT_2173515_DESC"
 trigger = {
 	not = {
-		exists = SOV
+			and = {
+		exists = SOV		not = { SOV = { government_in_exile = yes } }
+		}
 		699 = { controlled_by = THIS }
 		1409 = { controlled_by = THIS }
 		1657 = { controlled_by = THIS }
@@ -697,7 +717,9 @@ title = "DH_EVENT_2173516_TITLE"
 desc = "DH_EVENT_2173516_DESC"
 trigger = {
 	not = {
-		exists = SOV
+			and = {
+		exists = SOV		not = { SOV = { government_in_exile = yes } }
+		}
 		699 = { controlled_by = THIS }
 		1409 = { controlled_by = THIS }
 		1657 = { controlled_by = THIS }
@@ -739,7 +761,9 @@ title = "DH_EVENT_2173517_TITLE"
 desc = "DH_EVENT_2173517_DESC"
 trigger = {
 	#NOEQUIVALENT random =  8
-	exists = SOV
+		and = {
+		exists = SOV		not = { SOV = { government_in_exile = yes } }
+		}
 	war = yes
 	
 tag = WHR
@@ -961,7 +985,9 @@ title = "DH_EVENT_2168504_TITLE"
 desc = "DH_EVENT_2168504_DESC"
 trigger = {
 	not = {
-		 exists = SOV
+		 	and = {
+		exists = SOV		not = { SOV = { government_in_exile = yes } }
+		}
 		 }
 	war = no
 	699 = { controlled_by = THIS }
@@ -999,7 +1025,9 @@ title = "DH_EVENT_2168505_TITLE"
 desc = "DH_EVENT_2168505_DESC"
 trigger = {
 	not = {
-		exists = SOV
+			and = {
+		exists = SOV		not = { SOV = { government_in_exile = yes } }
+		}
 		699 = { controlled_by = THIS }
 		}
 	war = no
@@ -1038,7 +1066,9 @@ title = "DH_EVENT_2168506_TITLE"
 desc = "DH_EVENT_2168506_DESC"
 trigger = {
 	not = {
-		exists = SOV
+			and = {
+		exists = SOV		not = { SOV = { government_in_exile = yes } }
+		}
 		699 = { controlled_by = THIS }
 		1409 = { controlled_by = THIS }
 		}
@@ -1078,7 +1108,9 @@ title = "DH_EVENT_2168507_TITLE"
 desc = "DH_EVENT_2168507_DESC"
 trigger = {
 	not = {
-		exists = SOV
+			and = {
+		exists = SOV		not = { SOV = { government_in_exile = yes } }
+		}
 		699 = { controlled_by = THIS }
 		1409 = { controlled_by = THIS }
 		1657 = { controlled_by = THIS }
@@ -1119,7 +1151,9 @@ title = "DH_EVENT_2168508_TITLE"
 desc = "DH_EVENT_2168508_DESC"
 trigger = {
 	not = {
-		exists = SOV
+			and = {
+		exists = SOV		not = { SOV = { government_in_exile = yes } }
+		}
 		699 = { controlled_by = THIS }
 		1409 = { controlled_by = THIS }
 		1657 = { controlled_by = THIS }
@@ -1198,7 +1232,9 @@ title = "DH_EVENT_2168510_TITLE"
 desc = "DH_EVENT_2168510_DESC"
 trigger = {
 	#NOEQUIVALENT random =  8
-	exists = SOV
+		and = {
+		exists = SOV		not = { SOV = { government_in_exile = yes } }
+		}
 	war = yes
 	
 tag = WHR
@@ -1270,7 +1306,9 @@ title = "DH_EVENT_2147501_TITLE"
 desc = "DH_EVENT_2147501_DESC"
 trigger = {
 	not = {
-		 exists = SOV
+		 	and = {
+		exists = SOV		not = { SOV = { government_in_exile = yes } }
+		}
 		 }
 	war = no
 	699 = { controlled_by = THIS }
@@ -1308,7 +1346,9 @@ title = "DH_EVENT_2147502_TITLE"
 desc = "DH_EVENT_2147502_DESC"
 trigger = {
 	not = {
-		exists = SOV
+			and = {
+		exists = SOV		not = { SOV = { government_in_exile = yes } }
+		}
 		699 = { controlled_by = THIS }
 		}
 	war = no
@@ -1347,7 +1387,9 @@ title = "DH_EVENT_2147503_TITLE"
 desc = "DH_EVENT_2147503_DESC"
 trigger = {
 	not = {
-		exists = SOV
+			and = {
+		exists = SOV		not = { SOV = { government_in_exile = yes } }
+		}
 		699 = { controlled_by = THIS }
 		1409 = { controlled_by = THIS }
 		}
@@ -1387,7 +1429,9 @@ title = "DH_EVENT_2147504_TITLE"
 desc = "DH_EVENT_2147504_DESC"
 trigger = {
 	not = {
-		exists = SOV
+			and = {
+		exists = SOV		not = { SOV = { government_in_exile = yes } }
+		}
 		699 = { controlled_by = THIS }
 		1409 = { controlled_by = THIS }
 		1657 = { controlled_by = THIS }
@@ -1428,7 +1472,9 @@ title = "DH_EVENT_2147505_TITLE"
 desc = "DH_EVENT_2147505_DESC"
 trigger = {
 	not = {
-		exists = SOV
+			and = {
+		exists = SOV		not = { SOV = { government_in_exile = yes } }
+		}
 		699 = { controlled_by = THIS }
 		1409 = { controlled_by = THIS }
 		1657 = { controlled_by = THIS }
@@ -1503,7 +1549,9 @@ title = "DH_EVENT_2147507_TITLE"
 desc = "DH_EVENT_2147507_DESC"
 trigger = {
 	#NOEQUIVALENT random =  8
-	exists = SOV
+		and = {
+		exists = SOV		not = { SOV = { government_in_exile = yes } }
+		}
 	war = yes
 	
 tag = WHR

@@ -1,0 +1,732 @@
+# The Wuchang Uprising October 10
+
+country_event = {
+
+		id = 999992
+
+		major = yes
+		
+		trigger = {
+			core = QIN
+			date = 1911.10.9	
+			not = { has_country_flag = revolutionaries_name_list }
+		}
+
+		mean_time_to_happen = {
+			days = 0
+		}
+
+		title = "CHIExhr1"
+		desc = "desc_CHIExhr1"
+		picture = "CHIPxhr1"					
+
+		option = {
+			name = "opta_CHIExhr1"
+			ai_chance = { factor = 100 }
+			set_country_flag = revolutionaries_name_list
+		}
+}
+
+country_event = {
+
+		id = 999991
+
+		major = yes
+		
+		trigger = {
+			core = QIN
+			date = 1911.10.10	
+			not = { has_country_flag = xinhai_revolution }
+		}
+
+		mean_time_to_happen = {
+			days = 0
+		}
+
+		title = "CHIE1"
+		desc = "desc_CHIE1"
+		picture = "CHIPxhrf"					
+
+		option = {
+			name = "opta_CHIE1"
+			ai_chance = { factor = 100 }
+			QIN = { any_owned = { limit = { is_core = QIN } add_core = PRC } }
+			GER = { any_owned = { limit = { is_core = QIN } add_core = PRC } }
+			ENG = { any_owned = { limit = { is_core = QIN } add_core = PRC } }
+			POR = { any_owned = { limit = { is_core = QIN } add_core = PRC } }
+			JAP = { any_owned = { limit = { is_core = QIN } add_core = PRC } }
+			FRA = { any_owned = { limit = { is_core = QIN } add_core = PRC } }
+			
+			QIN = { any_owned = { limit = { is_core = QIN } add_core = ROC } }
+			GER = { any_owned = { limit = { is_core = QIN } add_core = ROC } }
+			ENG = { any_owned = { limit = { is_core = QIN } add_core = ROC } }
+			POR = { any_owned = { limit = { is_core = QIN } add_core = ROC } }
+			JAP = { any_owned = { limit = { is_core = QIN } add_core = ROC } }
+			FRA = { any_owned = { limit = { is_core = QIN } add_core = ROC } }
+
+			7508 = { secede_province = PRC }
+			7511 = { secede_province = PRC }
+			5620 = { secede_province = PRC }
+			7515 = { secede_province = PRC }
+			5673 = { secede_province = PRC }
+			7512 = { secede_province = PRC }
+
+			QIN = { country_event = 999966 }
+
+			PRC = { capital = 7508 }
+			PRC = {	
+				
+				head_of_state = 99999964
+				head_of_government = 99999964
+				foreign_minister = 99999960
+				armament_minister = 99999958
+				minister_of_security = 99999959
+				minister_of_intelligence = 99999964
+				chief_of_staff = 99999962
+				chief_of_army = 99999961
+				chief_of_navy = 99999964
+				chief_of_air = 99999964	
+
+			}
+			QIN = {	war = {	
+					target = PRC
+					attacker_goal = { casus_belli= civil_war_2 }
+					defender_goal = { casus_belli = civil_war_1 }
+					}
+				}
+			PRC = { load_oob = PRC_1911_Wuchang.txt }
+			PRC = { country_event = 999973}
+			PRC = { add_country_modifier = {
+				name = "officers_gain"
+				duration = 15
+			}
+			}
+			PRC = { remove_country_modifier = "qing_administration" }
+			set_country_flag = xinhai_revolution
+		}
+}
+
+country_event = {
+
+		id = 999990
+
+		major = yes
+		
+		trigger = {
+			core = QIN
+			date = 1911.10.11	
+			not = { has_country_flag = second_uprising }
+		}
+
+		mean_time_to_happen = {
+			days = 0
+		}
+
+		title = "CHIExhr2"
+		desc = "desc_CHIExhr2"
+		picture = "CHIPxhr2"					
+
+		option = {
+			name = "opta_CHIExhr2"
+			ai_chance = { factor = 100 }
+			hunan_region = { secede_province = PRC }
+			7507 = { secede_province = PRC }
+			7510 = { secede_province = PRC }
+			5538 = { secede_province = PRC }
+			5660 = { secede_province = PRC }
+
+			QIN = { country_event = 999965 }
+	
+			PRC = {	load_oob = "PRC_1911_uprising2.txt" }
+			PRC = { country_event = 999972 }
+			set_country_flag = second_uprising
+		}
+}
+
+country_event = {
+
+		id = 999968
+
+		major = yes
+		
+		trigger = {
+			core = QIN
+			date = 1911.10.14	
+			not = { has_country_flag = yuan_shikai }
+			7508 = { controlled_by = PRC }
+		}
+
+		mean_time_to_happen = {
+			days = 10
+		}
+
+		title = "CHIExhr6"
+		desc = "desc_CHIExhr6"
+		picture = "CHIPxhr6"					
+
+		option = {
+			name = "opta_CHIExhr6"
+			ai_chance = { factor = 90 }
+			officer_pool = 2500
+			manpower = 100
+			popularity = -10
+			organisation = -10
+			national_unity = -5
+			set_country_flag = yuan_shikai
+		}
+
+		option = {
+			name = "optb_CHIExhr6"
+			ai_chance = { factor = 10 }
+			officer_pool = -100
+			manpower = -10
+			PRC = { split_troops = 0.10 }
+		}
+}
+
+country_event = {
+
+		id = 999989
+
+		major = yes
+		
+		trigger = {
+			core = QIN
+			date = 1911.10.22	
+			not = { has_country_flag = third_uprising }
+		}
+
+		mean_time_to_happen = {
+			days = 0
+		}
+
+		title = "CHIExhr3"
+		desc = "desc_CHIExhr3"
+		picture = "CHIPxhr2"					
+
+		option = {
+			name = "opta_CHIExhr3"
+			ai_chance = { factor = 100 }
+			7435 = { secede_province = PRC }
+			9296 = { secede_province = PRC }
+			5174 = { secede_province = PRC }
+			5110 = { secede_province = PRC }
+			7399 = { secede_province = PRC }
+			yunnan_region = { secede_province = PRC }
+
+			QIN = { country_event = 999964 }
+	
+			PRC = {	load_oob = "PRC_1911_uprising3.txt" }
+			PRC = { country_event = 999971 }
+			set_country_flag = third_uprising
+		}
+}
+
+country_event = {
+
+		id = 999988
+
+		major = yes
+		
+		trigger = {
+			core = QIN
+			date = 1911.11.2	
+			not = { has_country_flag = fourth_uprising }
+		}
+
+		mean_time_to_happen = {
+			days = 0
+		}
+
+		title = "CHIExhr4"
+		desc = "desc_CHIExhr4"
+		picture = "CHIPxhr2"					
+
+		option = {
+			name = "opta_CHIExhr4"
+			ai_chance = { factor = 100 }
+			anhui_region = { secede_province = PRC }
+			jiangsu_region = { secede_province = PRC }
+			chekiang_region = { secede_province = PRC }
+			5542 = { secede_province = PRC }
+
+			QIN = { country_event = 999963 }
+	
+			PRC = {	load_oob = "PRC_1911_uprising4.txt" }
+			PRC = { country_event = 999970 }
+			set_country_flag = fourth_uprising
+		}
+}
+
+country_event = {
+
+		id = 999967
+
+		major = yes
+		
+		trigger = {
+			core = QIN
+			date = 1911.11.8	
+			has_country_flag = yuan_shikai
+			not = { has_country_flag = prime_minister_yuan }
+		}
+
+		mean_time_to_happen = {
+			days = 10
+		}
+
+		title = "CHIExhr7"
+		desc = "desc_CHIExhr7"
+		picture = "CHIPxhr7"					
+
+		option = {
+			name = "opta_CHIExhr7"
+			ai_chance = { factor = 100 }
+			
+		QIN = {
+			head_of_government = 99999974
+			foreign_minister = 99999973
+			armament_minister = 99999970
+			minister_of_security = 99999972
+			minister_of_intelligence = 99999974
+			chief_of_staff = 99999974
+			chief_of_army = 99999971
+			chief_of_navy = 99999983
+			chief_of_air = 99999979 
+		}			
+	
+			set_country_flag = prime_minister_yuan
+		}
+}
+
+country_event = {
+
+		id = 999987
+
+		major = yes
+		
+		trigger = {
+			core = QIN
+			date = 1911.11.4	
+			not = { has_country_flag = fifth_uprising }
+		}
+
+		mean_time_to_happen = {
+			days = 0
+		}
+
+		title = "CHIExhr5"
+		desc = "desc_CHIExhr5"
+		picture = "CHIPxhr2"					
+
+		option = {
+			name = "opta_CHIExhr5"
+			ai_chance = { factor = 100 }
+			guizhou_region = { secede_province = PRC }
+			guangxi_region = { secede_province = PRC }
+			guangdong_region = { secede_province = PRC }
+			fujian_region = { secede_province = PRC }
+			sichuan_region = { secede_province = PRC }
+			9478 = { secede_province = PRC }
+
+			QIN = { country_event = 999962 }
+	
+			PRC = {	load_oob = "PRC_1911_uprising5.txt" }
+			PRC = { country_event = 999969 }
+			set_country_flag = fifth_uprising
+		}
+}
+
+country_event = {
+
+		id = 999959
+
+		major = yes
+		
+		is_triggered_only = yes
+
+		title = "CHIExhr8"
+		desc = "desc_CHIExhr8"
+		picture = "PRCExhr7"					
+
+		option = {
+			name = "opta_CHIExhr8"
+			ai_chance = { factor = 80 }
+			PRC = { country_event = 999958 }
+		}
+
+		option = {
+			name = "optb_CHIExhr8"
+			ai_chance = { factor = 20 }
+			organisation = 5
+			popularity = 5
+			national_unity = 1
+			PRC = { country_event = 999957 }
+		}
+}
+
+# PRC
+country_event = {
+
+		id = 999973
+
+		major = yes
+		
+		is_triggered_only = yes
+		
+		trigger = {
+			tag = PRC
+		}
+
+		title = "CHIE1"
+		desc = "desc_CHIE1"
+		picture = "CHIPxhrf"					
+
+		option = {
+			name = "opta_CHIE1"
+			ai_chance = { factor = 100 }
+			officer_pool = 500
+			manpower = 200
+			rare_materials = 10000
+			crude_oil = 10000
+			supplies = 30000
+			energy = 20000
+			metal = 20000
+			money = 1200
+			add_country_modifier = {
+				name = "officers_gain"
+				duration = 30
+			}
+			add_country_modifier = {
+				name = "rebellion_administration"
+				duration = 365
+			}
+		}
+}
+
+country_event = {
+
+		id = 999972
+
+		major = yes
+		
+		is_triggered_only = yes
+
+		title = "CHIExhr2"
+		desc = "desc_CHIExhr2"
+		picture = "CHIPxhr2"					
+
+		option = {
+			name = "opta_PRCExhr2"
+			ai_chance = { factor = 100 }
+			officer_pool = 100
+			manpower = 50
+			rare_materials = 300
+			crude_oil = 50
+			supplies = 1000
+			energy = 500
+			metal = 300
+			money = 100
+			national_unity = 1
+		}
+}
+
+country_event = {
+
+		id = 999971
+
+		major = yes
+		
+		is_triggered_only = yes
+
+		title = "CHIExhr3"
+		desc = "desc_CHIExhr3"
+		picture = "CHIPxhr2"					
+
+		option = {
+			name = "opta_PRCExhr3"
+			ai_chance = { factor = 100 }
+			officer_pool = 100
+			manpower = 50
+			rare_materials = 300
+			crude_oil = 50
+			supplies = 1000
+			energy = 500
+			metal = 300
+			money = 100
+			national_unity = 1
+		}
+}
+
+country_event = {
+
+		id = 999970
+
+		major = yes
+		
+		is_triggered_only = yes
+
+		title = "CHIExhr4"
+		desc = "desc_CHIExhr4"
+		picture = "CHIPxhr2"					
+
+		option = {
+			name = "opta_PRCExhr4"
+			ai_chance = { factor = 100 }
+			officer_pool = 100
+			manpower = 50
+			rare_materials = 300
+			crude_oil = 50
+			supplies = 1000
+			energy = 500
+			metal = 300
+			money = 100
+			national_unity = 1
+		}
+}
+
+country_event = {
+
+		id = 999969
+
+		major = yes
+		
+		is_triggered_only = yes
+
+		title = "CHIExhr5"
+		desc = "desc_CHIExhr5"
+		picture = "CHIPxhr2"					
+
+		option = {
+			name = "opta_PRCExhr5"
+			ai_chance = { factor = 100 }
+			officer_pool = 100
+			manpower = 50
+			rare_materials = 300
+			crude_oil = 50
+			supplies = 1000
+			energy = 500
+			metal = 300
+			money = 100
+			national_unity = 1
+		}
+}
+
+country_event = {
+
+		id = 999961
+
+		major = yes
+		
+		trigger = {
+			tag = PRC
+			date = 1911.12.29
+			5494 = { controlled_by = PRC }	
+			not = { has_country_flag = prc_election}
+		}
+
+		mean_time_to_happen = {
+			days = 10
+		}
+
+		title = "PRCExhr6"
+		desc = "desc_PRCExhr6"
+		picture = "PRCExhr6"					
+
+		option = {
+			name = "opta_PRCExhr6"
+			ai_chance = { factor = 100 } 
+
+		PRC ={
+			head_of_state = 99999956
+			head_of_government = 99999956
+			foreign_minister = 99999954
+			armament_minister = 99999953
+			minister_of_security = 99999957
+			minister_of_intelligence = 99999957
+			chief_of_staff = 99999957
+			chief_of_army = 99999957
+			chief_of_navy = 99999955
+			chief_of_air = 99999964 
+		
+			capital = 5494
+
+		}
+			national_unity = 5
+			organisation = 10
+			popularity = 10
+
+			set_country_flag = prc_election
+		}
+}
+
+country_event = {
+
+		id = 999960
+
+		major = yes
+		
+		is_triggered_only = yes
+
+		title = "PRCExhr7"
+		desc = "desc_PRCExhr7"
+		picture = "PRCExhr7"					
+
+		option = {
+			name = "opta_PRCExhr7"
+			ai_chance = { factor = 80 }
+			QIN = { country_event = 999959 }
+		}
+		
+		option = {
+			name = "optb_PRCExhr7"
+			ai_chance = { factor = 20 }
+			dissent = 5
+			national_unity = -3
+		}
+}
+
+country_event = {
+
+		id = 999958
+
+		major = yes
+		
+		is_triggered_only = yes
+
+		title = "PRCExhr8"
+		desc = "desc_PRCExhr8"
+		picture = "PRCExhr7"					
+
+		option = {
+			name = "opta_PRCExhr8"
+			ai_chance = { factor = 100 }
+			
+			set_country_flag = yuan_accepted
+		}
+}
+
+country_event = {
+
+		id = 999957
+
+		major = yes
+		
+		is_triggered_only = yes
+
+		title = "PRCExhr9"
+		desc = "desc_PRCExhr9"
+		picture = "PRCExhr7"					
+
+		option = {
+			name = "opta_PRCExhr9"
+			ai_chance = { factor = 100 }
+		}
+}
+
+#Qing's Army was routed
+
+country_event = {
+
+		id = 999966
+
+		major = yes
+		
+		is_triggered_only = yes
+
+		title = "CHIExhrar"
+		desc = "desc_CHIExhrar"
+		picture = "CHIPxhrar"					
+
+		option = {
+			name = "opta_CHIExhrar"
+			ai_chance = { factor = 100 }
+			remove_brigade = "Di 21 Huncheng Xie"
+			remove_brigade = "Paodui Di 8 Biao"
+
+			kill_leader = 99999985
+			kill_leader = 99999964	
+			kill_leader = 99999954	
+			kill_leader = 99999928		
+		}
+}
+
+country_event = {
+
+		id = 999965
+
+		major = yes
+		
+		is_triggered_only = yes
+
+		title = "CHIExhrar"
+		desc = "desc_CHIExhrar"
+		picture = "CHIPxhrar"					
+
+		option = {
+			name = "opta_CHIExhrar"
+			ai_chance = { factor = 100 }
+			remove_brigade = "Di 25 Huncheng Xie"	
+		}
+}
+
+country_event = {
+
+		id = 999964
+
+		major = yes
+		
+		is_triggered_only = yes
+
+		title = "CHIExhrar"
+		desc = "desc_CHIExhrar"
+		picture = "CHIPxhrar"					
+
+		option = {
+			name = "opta_CHIExhrar"
+			ai_chance = { factor = 100 }
+			remove_brigade = "Shaanxi Lujun Huncheng Xie"
+			remove_brigade = "Shanxi Lujun Huncheng Xie"
+			remove_brigade = "Di 27 Huncheng Xie"
+			remove_brigade = "Madui Di 19 Biao"	
+			remove_brigade = "Paodui Di 19 Biao"	
+		}
+}
+
+country_event = {
+
+		id = 999963
+
+		major = yes
+		
+		is_triggered_only = yes
+
+		title = "CHIExhrar"
+		desc = "desc_CHIExhrar"
+		picture = "CHIPxhrar"					
+
+		option = {
+			name = "opta_CHIExhrar"
+			ai_chance = { factor = 100 }
+			remove_brigade = "Zhejiang Lujun Huncheng Xie"
+		}
+}
+
+country_event = {
+
+		id = 999962
+
+		major = yes
+		
+		is_triggered_only = yes
+
+		title = "CHIExhrar"
+		desc = "desc_CHIExhrar"
+		picture = "CHIPxhrar"					
+
+		option = {
+			name = "opta_CHIExhrar"
+			ai_chance = { factor = 100 }
+			remove_brigade = "Guizhou Lujun"
+		}
+}

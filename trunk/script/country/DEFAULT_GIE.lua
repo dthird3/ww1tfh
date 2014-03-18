@@ -246,4 +246,12 @@ function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData
 	return Prod_Units.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, nil)
 end
 
+function P.DiploScore_GiveMilitaryAccess(voDiploScoreObj)
+	-- We are not in faction so do not give access to anyone who is at war with Greece
+
+	voDiploScoreObj.Score = 0
+	
+	return voDiploScoreObj.Score
+end
+
 return AI_DEFAULT_GIE

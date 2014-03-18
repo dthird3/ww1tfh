@@ -9,47 +9,48 @@
 #id = 88 #EVENTNAME: The Gounalis plan *CONFIRMED
 #id = 89 #EVENTNAME: The Gounalis plan *CONFIRMED
 #id = 90 #EVENTNAME: Ask Greece for demobilization *CONFIRMED
-#id = 91 #EVENTNAME: Greece demobilizes!
+#id = 91 #EVENTNAME: Greece demobilizes! *CONFIRMED
 #id = 92 #EVENTNAME: Venizelos leaves Greek government *CONFIRMED
 #id = 93 #EVENTNAME: Venizelos is back *CONFIRMED
-#id = 96 #EVENTNAME: Greece grants Bulgaria military access
-#id = 97 #EVENTNAME: Athens on fire!
-#id = 98 #EVENTNAME: Renewed call for demobilization
-#id = 99 #EVENTNAME: Greece accepts our demands
-#id = 100 #EVENTNAME: The 'Vêpres Grecques'
-#id = 101 #EVENTNAME: Ultimatum to Greece
+#id = 96 #EVENTNAME: Greece grants Bulgaria military access *CONFIRMED
+#id = 97 #EVENTNAME: Athens on fire! *CONFIRMED
+#id = 98 #EVENTNAME: Renewed call for demobilization  *CONFIRMED
+#id = 99 #EVENTNAME: Greece accepts our demands  *CONFIRMED
+#id = 100 #EVENTNAME: The 'Vêpres Grecques'  *CONFIRMED
+#id = 101 #EVENTNAME: Ultimatum to Greece  *CONFIRMED
 #id = 138 #EVENTNAME: Austria-Hungary declares war on Serbia! *CONFIRMED
 #id = 139 #EVENTNAME: Austria-Hungary declares war on Serbia! *CONFIRMED
-#id = 140 #EVENTNAME: Bulgaria joins the Central Powers!
-#id = 141 #EVENTNAME: Negotiation with the Entente
-#id = 142 #EVENTNAME: Negotiation with the Entente
+#id = 140 #EVENTNAME: Bulgaria joins the Central Powers!  *CONFIRMED
+#id = 141 #EVENTNAME: Negotiation with the Entente  *CONFIRMED
+#id = 142 #EVENTNAME: Negotiation with the Entente  *CONFIRMED
 #id = 143 #EVENTNAME: King Konstantinos is sick! *CONFIRMED
-#id = 144 #EVENTNAME: King Konstantinos is back at its office
+#id = 144 #EVENTNAME: King Konstantinos is back at its office *CONFIRMED
 #id = 145 #EVENTNAME: Greece and the Dardanelles *CONFIRMED
-#id = 146 #EVENTNAME: The Gounaris plan
+#id = 146 #EVENTNAME: The Gounaris plan *CONFIRMED
 #id = 147 #EVENTNAME: Legislative elections, 1915 *CONFIRMED
-#id = 148 #EVENTNAME: Bulgaria joins the Central Powers!
-#id = 149 #EVENTNAME: The Entente seizes Thessaloniki
+#id = 148 #EVENTNAME: Bulgaria joins the Central Powers! *CONFIRMED
+#id = 149 #EVENTNAME: The Entente seizes Thessaloniki *CONFIRMED
 #id = 150 #EVENTNAME: The Entente asks for demobilization *CONFIRMED
-#id = 151 #EVENTNAME: Anticipated Elections
-#id = 152 #EVENTNAME: Serb refugees land on Corfu
-#id = 153 #EVENTNAME: Grant Bulgaria military access?
-#id = 154 #EVENTNAME: The Royal residence burns!
-#id = 155 #EVENTNAME: The Thessaloniki government
-#id = 156 #EVENTNAME: The Entente asks again for demobilization
-#id = 157 #EVENTNAME: The 'Vêpres Grecques'
-#id = 158 #EVENTNAME: Last warning from the Entente
+#id = 151 #EVENTNAME: Anticipated Elections  *CONFIRMED
+#id = 152 #EVENTNAME: Serb refugees land on Corfu  *CONFIRMED
+#id = 153 #EVENTNAME: Grant Bulgaria military access?  *CONFIRMED
+#id = 154 #EVENTNAME: The Royal residence burns! *CONFIRMED
+#id = 155 #EVENTNAME: The Thessaloniki government *CONFIRMED
+#id = 156 #EVENTNAME: The Entente asks again for demobilization *CONFIRMED
+#id = 157 #EVENTNAME: The 'Vêpres Grecques' *CONFIRMED
+#id = 158 #EVENTNAME: Last warning from the Entente  *CONFIRMED
 #id = 160 #EVENTNAME: The Treaty of Athens *CONFIRMED
-#id = 161 #EVENTNAME: The Treaty of Athens
-#id = 413 #EVENTNAME: The Fall of Serbia
-#id = 414 #EVENTNAME: Bulgaria joins the Central Powers!
-#id = 415 #EVENTNAME: Promises to Bulgaria
-#id = 479 #EVENTNAME: Agreement with Bulgaria
-#id = 368 #EVENTNAME: Evacuate through Albania?
-#id = 369 #EVENTNAME: Evacuate through Albania!
-#id = 1 #EVENTNAME: Let Serbian troops retreat?
+#id = 161 #EVENTNAME: The Treaty of Athens  *CONFIRMED
+#id = 413 #EVENTNAME: The Fall of Serbia  *CONFIRMED
+#id = 414 #EVENTNAME: Bulgaria joins the Central Powers!  *CONFIRMED
+#id = 415 #EVENTNAME: Promises to Bulgaria  *CONFIRMED
+#id = 416 #EVENTNAME: Bulgaria joins the Central Powers!  *CONFIRMED
+#id = 479 #EVENTNAME: Agreement with Bulgaria  *CONFIRMED
+#id = 368 #EVENTNAME: Evacuate through Albania? *CONFIRMED
+#id = 369 #EVENTNAME: Evacuate through Albania! *CONFIRMED
+#id = 1 #EVENTNAME: Let Serbian troops retreat? *CONFIRMED
 #id = 2 #EVENTNAME: Greece proclaimed the annexation of Northern Epirus
-#id = 94 #EVENTNAME: Serbian army evacuate through Albania!
+#id = 94 #EVENTNAME: Serbian army evacuate through Albania! 
 
 
 
@@ -219,7 +220,7 @@ option = {
 	relation = { who = GRE value = -20  }
 	
 set_global_flag = 2001506_EVENT_DONE
-
+4720 = { change_controller = ENG } 
 }
 
 option = {
@@ -243,10 +244,6 @@ trigger = {
 	#has_global_flag = 2001503_EVENT_DONE
 	ENG = { war_with = TUR }
 	4503 = { controlled_by = TUR }
-	not = {
-		#has_global_flag = 2001504_EVENT_DONE
-		#has_global_flag = 2145501_EVENT_DONE
-		}
 	
 tag = ENG
 date = 1915.12.1
@@ -343,7 +340,10 @@ trigger = {
 		GRE = { faction = axis }
 		GRE = { faction = allies }
 		}
-	exists = SER
+				and = {
+		exists = SER
+		not = { SER = { government_in_exile = yes } }
+		}
 	not = {
 		TUR = { war_with = FRA }
 	}
@@ -1263,14 +1263,6 @@ trigger = {
 		GRE = { faction = allies }
 		FRA = { war_with = GRE }
 		}
-	or = {
-		and = {
-			or = {
-				#has_global_flag = 2001502_EVENT_DONE
-				#has_global_flag = 2001501_EVENT_DONE
-				}
-			}
-		}
 	
 tag = GRE
 date = 1915.1.1
@@ -1293,7 +1285,7 @@ option = {
 			 not = {
 				 FRA = { war_with = BUL }
 				 }  } 
-		country_event = 88
+		FRA = { country_event = 88 }
 		 }
 	random_country = { limit = { tag = FRA 
 			or = {
@@ -1301,7 +1293,7 @@ option = {
 				BUL = { faction = allies }
 				}
 			 } 
-		country_event = 89
+		FRA = { country_event = 89 }
 		 }
 	
 set_global_flag = 2019509_EVENT_DONE
@@ -1357,11 +1349,9 @@ desc = "DH_EVENT_2019511_DESC"
 picture = "news_paper"
 
 trigger = {
-	has_global_flag = 2191508_EVENT_DONE
+	#has_global_flag = 2191508_EVENT_DONE
 	war = no
-	not = {
-		 has_global_flag = 2002508_EVENT_DONE
-		 }
+	BUL = { faction = axis }
 	
 tag = GRE
 date = 1914.1.1
@@ -1515,7 +1505,7 @@ trigger = {
 		}
 	
 tag = GRE
-date = 1914.1.1
+date = 1916.1.1
 
 not = { date = 1925.12.30
  }
@@ -1565,7 +1555,10 @@ trigger = {
 	not = {
 		 GRE = { faction = allies }
 		 }
-	exists = SER
+		 		and = {
+		exists = SER
+		not = { SER = { government_in_exile = yes } }
+		}
 	
 tag = GRE
 date = 1914.1.1
@@ -1632,7 +1625,7 @@ desc = "DH_EVENT_2019517_DESC"
 picture = "news_paper"
 
 trigger = {
-	has_global_flag = 2019515_EVENT_DONE
+	#has_global_flag = 2019515_EVENT_DONE
 	has_global_flag = 2019511_EVENT_DONE
 	FRA = { war_with = BUL }
 	not = {
@@ -1718,6 +1711,7 @@ picture = "news_paper"
 trigger = {
 	has_global_flag = 2019517_EVENT_DONE
 	head_of_government = 90199
+	4720 = { controller = ENG }
 	
 tag = GRE
 date = 1914.1.1
@@ -1893,80 +1887,6 @@ set_global_flag = 2019522_EVENT_DONE
 }
 
 
-#The Treaty of Athens
-country_event = {
-id = 160
-title = "DH_EVENT_2019525_TITLE"
-desc = "DH_EVENT_2019525_DESC"
-picture = "news_paper"
-
-trigger = {
-	#has_global_flag = 2019523_EVENT_DONE
-	or = {
-		#has_global_flag= GRE_against_U08
-		#has_global_flag= GRE_against_OTT
-		}
-	
-tag = GRE
-date = 1915.1.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2019525 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  30 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2019525_Option7"
-	dissent = 5 
-	
-set_global_flag = 2019525_EVENT_DONE
-
-}
-
-}
-#Treaty of Athens
-country_event = {
-id = 161
-title = "DH_EVENT_2019526_TITLE"
-desc = "DH_EVENT_2019526_DESC"
-picture = "news_paper"
-
-trigger = {
-	#has_global_flag = 2019523_EVENT_DONE
-	#has_global_flag= GRE_against_FRA
-	
-tag = GRE
-date = 1915.1.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2019526 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  5 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2019526_Option7"
-	dissent = 5 
-
-	
-set_global_flag = 2019526_EVENT_DONE
-
-}
-
-}
 #The Fall of Serbia
 country_event = {
 id = 413
@@ -1976,8 +1896,10 @@ picture = "diplomatic_campaign"
 
 trigger = {
 	exists = BUL
-	not = {
-		 exists = SER
+	not = {		and = {
+		exists = SER
+		not = { SER = { government_in_exile = yes } }
+		}
 		 }
 	GER = { war = yes }
 	not = {
@@ -2059,6 +1981,42 @@ set_global_flag = 2191509_EVENT_DONE
 }
 
 }
+
+
+#Reaction to Bulgaria joining
+country_event = {
+id = 416
+title = "DH_EVENT_2191509_TITLE"
+desc = "DH_EVENT_2191509_DESC"
+picture = "diplomatic_campaign"
+
+trigger = { 
+tag = GER
+
+war = yes
+
+BUL = faction = axis
+
+
+
+not = { has_global_flag = 2191509_EVENT_DONE }
+not = { has_global_flag = SLEEPEVENT_2191509 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  1 }
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_2191509_Option7"
+	relation = { who = BUL value = 10  }
+	GRE = { country_event = 140 }
+	
+set_global_flag = 2191509_EVENT_DONE
+
+}
+
+}
+
 #Promises to Bulgaria follow up
 country_event = {
 id = 415
@@ -2067,7 +2025,10 @@ desc = "DH_EVENT_2191510_DESC"
 picture = "diplomatic_campaign"
 
 trigger = {
-	exists = SER
+			and = {
+		exists = SER
+		not = { SER = { government_in_exile = yes } }
+		}
 	exists = BUL
 	not = {
 		#has_global_flag = 2145501_EVENT_DONE
@@ -2146,8 +2107,11 @@ id = 479
 title = "DH_EVENT_2192529_TITLE"
 desc = "DH_EVENT_2192529_DESC"
 trigger = {
-	exists = BUL
-	exists = SER
+	exists = BUL		
+	and = {
+		exists = SER
+		not = { SER = { government_in_exile = yes } }
+		}
 	FRA = { war_with = AUH }
 	not = {
 		BUL = { faction = axis }
@@ -2194,15 +2158,13 @@ picture = "news_paper"
 trigger = {
 	exists = ALB
 	THIS = { surrender_progress = 50 }
-	THIS = { lost_IC = 50 }
+	not = { SER = { controls = 4368 } }
+	not = { SER = { controls = 3912 } }
 	or = {
-		4368 = { controlled_by = SER }
-		4555 = { controlled_by = SER }
-		4495 = { controlled_by = SER }
-		}
+		SER = { controls = 4495 }
+		SER = { controls = 4609 }
+	}
 	not = {
-		3912 = { controlled_by = SER }
-		4243 = { controlled_by = SER }
 		SER = { war_with = ALB }
 		SER = { alliance_with = ALB }
 		}
@@ -2260,7 +2222,7 @@ fire_only_once = yes
 is_triggered_only = yes
 option = {
 	name = "DH_EVENT_2084504_Option7"
-	THIS = { inherit = ALB }
+	ALB = { military_access = SER }
 	
 set_global_flag = 2084504_EVENT_DONE
 
@@ -2295,7 +2257,8 @@ option = {
 	random_country = { limit = { tag = FRA 
 			 FRA = { war_with = AUH }
 			  } 
-		country_event = 94
+		
+		FRA = { country_event = 94 }
 		 }
 	
 set_global_flag = 2058500_EVENT_DONE
