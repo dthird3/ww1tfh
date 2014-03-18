@@ -711,6 +711,7 @@ NOT = { controls = 989 } # Pskov
 			RUS = { any_owned = { limit = { is_core = LIT } secede_province = GER } }
 			RUS = { any_owned = { limit = { is_core = EST } secede_province = GER } }
 			RUS = { any_owned = { limit = { is_core = ROM } secede_province = GER } }
+			RUS = { any_owned = { limit = { is_core = PER } secede_province = PER } }
 			poland_danzig = { add_core = POL }
 			western_poland_region = { add_core = POL }
 			1306 = { add_core = LIT }
@@ -762,6 +763,7 @@ NOT = { controls = 989 } # Pskov
 				duration = 60
 				}
 			}
+			SOV = { country_event = 6 }
 			USA = { country_event = 100530 }				# USA response to Abdication/Fall of Russia
 		}
 }
@@ -802,6 +804,7 @@ country_event = {
 			RUS = { any_owned = { limit = { is_core = LIT } secede_province = GER } }
 			RUS = { any_owned = { limit = { is_core = EST } secede_province = GER } }
 			RUS = { any_owned = { limit = { is_core = ROM } secede_province = GER } }
+			RUS = { any_owned = { limit = { is_core = PER } secede_province = PER } }
 			poland_danzig = { add_core = POL }
 			western_poland_region = { add_core = POL }
 			1306 = { add_core = LIT }
@@ -853,11 +856,32 @@ country_event = {
 				duration = 60
 				}
 			}
+			SOV = { country_event = 6 }
 			USA = { country_event = 100530 }						# USA response to Abdication or Russian defeat
 		}
 }
 
+country_event = {
+		
+		id = 6
 
+		is_triggered_only = yes
+		
+		fire_only_once = yes
+		
+		major = yes
+		
+		title = "Troops Head Home"
+		desc = "After the treaty of Brest-Litovsk, most soldiers simply abandoned their posts and went home"
+		picture = "WARP1"
+
+		option = {
+			name = "Very well"
+			ai_chance = { factor = 100 }
+
+			ZZZ = { split_troops = 0.6 }
+		}
+}
 #Russian Civil War
   country_event = {
 
@@ -1501,7 +1525,7 @@ SOV_10682 = { secede_province = WHR }
 			WHR = { non_aggression_pact = AUH }
 			WHR = { non_aggression_pact = TUR }
 			WHR = { non_aggression_pact = BUL }
-			
+			WHR = { country_event = 544 }
 			SOV = { set_country_flag = civrus }
 			SOV = {	war = {	
 					target = WHR
