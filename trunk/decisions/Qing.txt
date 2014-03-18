@@ -1,26 +1,5 @@
 diplomatic_decisions = {
 
-	qing_administration = {
-		potential = {
-			tag = QIN
-			not = { has_country_modifier = qing_administration }
-			not = { has_country_flag = qing_admin }
-		}
-		allow = { 	}
-		
-		effect = {
-			set_country_flag = qing_admin
-			add_country_modifier = {
-				name = "qing_administration"
-				duration = -1
-			}
-		}
-		ai_will_do = { factor = 1 }
-	}
-} 
-
-diplomatic_decisions = {
-
 	protect_the_yellow_dragon_flag = {
 		potential = {
 			tag = QIN

@@ -2091,6 +2091,7 @@ uk_no_conscription = {
 russia_leadership_troubles = {
 
     potential = {
+		tag = RUS
 	}
 	trigger = {
 		tag = RUS
@@ -2111,6 +2112,7 @@ russia_leadership_troubles = {
 multiethnic_empire = {
 
     potential = {
+		tag = AUH
 	}
 	trigger = {
 		tag = AUH
@@ -2122,3 +2124,32 @@ multiethnic_empire = {
 	land_organisation = -0.05
 	icon = 5
 }
+qing_administration = {
+
+    potential = {
+		tag = QIN
+	}
+	trigger = {
+		tag = QIN
+	} 
+	
+	peace_consumer_goods_demand = 0.55
+	global_manpower_modifier = -0.65
+	global_leadership_modifier = -0.80
+	icon = 5
+}
+rebellion_administration = {
+
+    potential = {
+		tag = CHI
+	}
+	trigger = {
+		tag = CHI
+	} 
+	
+	peace_consumer_goods_demand = 0.50
+	global_manpower_modifier = -0.55
+	global_leadership_modifier = -0.70
+	icon = 5
+}
+
