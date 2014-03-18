@@ -217,6 +217,28 @@ function P.Buildings(voProductionData)
 	return loProdBuilding
 end
 
+
+function P.DiploScore_OfferTrade(voDiploScoreObj)
+	local laTrade = {
+		CAN = {Score = 20},
+		AST = {Score = 20},
+		ENG = {Score = 20},
+		SAF = {Score = 20},
+		NZL = {Score = 20},
+		GRE = {Score = 20},
+		GER = {Score = -20},
+		AUH = {Score = -20},
+		ITA = {Score = -20},
+		JAP = {Score = 50},
+		FRA = {Score = 50}}
+	
+	if laTrade[voDiploScoreObj.Actor.Name] then
+		return voDiploScoreObj.Score + laTrade[voDiploScoreObj.Actor.Name].Score
+	end
+	
+	return voDiploScoreObj.Score
+end
+
 -- #######################################
 -- FOREIGN MINISTER
 

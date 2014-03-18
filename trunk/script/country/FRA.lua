@@ -15,20 +15,20 @@ function P.TradeWeights(voResourceData)
 	
 		METAL = {
 			Buffer = 10, 			-- Amount extra to keep abouve our needs
-			BufferSaleCap = 10000, 	-- Amount we need in reserve before we sell the resource
-			BufferBuyCap = 5000, 	-- Amount we need before we stop actively buying (existing trades are NOT cancelled)
-			BufferCancelCap = 8000 -- Amount we need before we cancel trades simply because we have to much
+			BufferSaleCap = 90000, 	-- Amount we need in reserve before we sell the resource
+			BufferBuyCap = 20000, 	-- Amount we need before we stop actively buying (existing trades are NOT cancelled)
+			BufferCancelCap = 80000 -- Amount we need before we cancel trades simply because we have to much
 		},
 		RARE_MATERIALS = {
 			Buffer = 10,
-			BufferSaleCap = 10000,
-			BufferBuyCap = 5000,
-			BufferCancelCap = 8000},
+			BufferSaleCap = 90000,
+			BufferBuyCap = 20000,
+			BufferCancelCap = 80000},
 		ENERGY = {
 			Buffer = 10,
-			BufferSaleCap = 10000,
-			BufferBuyCap = 5000,
-			BufferCancelCap = 8000},
+			BufferSaleCap = 50000,
+			BufferBuyCap = 20000,
+			BufferCancelCap = 40000},
 		CRUDE_OIL = {
 			Buffer = 1,
 			BufferSaleCap = 5000},

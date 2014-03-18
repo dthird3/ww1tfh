@@ -245,4 +245,20 @@ end
 -- SUPPORT METHODS
 -- Setup_Custom is called from GER_FAC.lua and GER.lua
 
+function P.DiploScore_OfferTrade(voDiploScoreObj)
+	local laTrade = {
+		CAN = {Score = 20},
+		AST = {Score = 20},
+		SAF = {Score = 20},
+		NZL = {Score = 20},
+		TUR = {Score = 40},
+		GER = {Score = 60},
+		AUH = {Score = 60}}
+	
+	if laTrade[voDiploScoreObj.Actor.Name] then
+		return voDiploScoreObj.Score + laTrade[voDiploScoreObj.Actor.Name].Score
+	end
+	
+	return voDiploScoreObj.Score
+end
 return AI_RUS
