@@ -256,6 +256,7 @@ country_event = {
 			ai_chance = { factor = 80 }
 			QIN = { country_event = 999994 }
 			remove_country_modifier = "strikes_boycotts_chengdu"
+			QIN = { country_event = 999993}
 			set_country_flag = arrest_pu
 		}
 		option = {
@@ -290,16 +291,8 @@ country_event = {
 		id = 999993
 
 		major = yes
-		
-		trigger = {
-			tag = QIN
-			date = 1911.9.8	
-			not = { has_country_flag = comrades_army }
-		}
 
-		mean_time_to_happen = {
-			days = 0
-		}
+		is_triggered_only = yes		
 
 		title = "CHIErailw7"
 		desc = "desc_CHIErailw7"
@@ -311,7 +304,6 @@ country_event = {
 			9444 = { create_revolt = 1}
 			9445 = { create_revolt = 1}
 			9501 = { create_revolt = 1}
-			set_country_flag = comrades_army
 		}
 }
 
@@ -482,14 +474,13 @@ country_event = {
 
 		id = 999954
 		
-		is_triggered_only = yes		
-
 		major = yes
 
 		fire_only_once = yes
 
 		trigger = {
-			tag = QIN	
+			tag = QIN
+			PRC = { exists = no }	
 			not = { has_country_flag = qing_victory }
 		}
 
@@ -500,7 +491,6 @@ country_event = {
 		option = {
 			name = "opta_CHIExhr9"
 			ai_chance = { factor = 100 }
-			inherit = PRC
 			rare_materials = 8000
 			crude_oil = 4000
 			supplies = 10000
