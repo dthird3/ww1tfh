@@ -1,30 +1,30 @@
 capital = 5494
-government = imperial
-ideology = paternal_autocrat
-head_of_state = 99999999 # Xuantong Emperor
-head_of_government = 99999996 # Yikuang
-foreign_minister = 99999996
-armament_minister = 99999988
-minister_of_security = 99999993
-minister_of_intelligence = 99999986
-chief_of_staff = 99999986
-chief_of_army = 99999981
-chief_of_navy = 99999984
-chief_of_air = 99999979
+government = social_democracy
+ideology = social_conservative
+head_of_state = 899999
+head_of_government = 899998
+foreign_minister = 899997
+armament_minister = 899998
+minister_of_security = 899996
+minister_of_intelligence = 899995
+chief_of_staff = 899994
+chief_of_army = 899993
+chief_of_navy = 899992
+chief_of_air = 899994
 
 alignment = { x = 60 y = 61.6 }
-neutrality = 80
+neutrality = 100
 national_unity = 70
 officers_ratio = 0.5
 oob = "CHI_1910.txt"
 popularity = { 
 national_socialist = 0
 fascistic = 0
-paternal_autocrat = 55
-social_conservative = 8
-market_liberal = 13
-social_liberal = 20
-social_democrat = 4
+paternal_autocrat = 62
+social_conservative = 27
+market_liberal = 11
+social_liberal = 0
+social_democrat = 0
 left_wing_radical = 0
 leninist = 0
 stalinist = 0
@@ -32,10 +32,10 @@ stalinist = 0
 organization = { 
 national_socialist = 0
 fascistic = 0
-paternal_autocrat = 70
-social_conservative = 15
-market_liberal = 5
-social_liberal = 10
+paternal_autocrat = 65
+social_conservative = 40
+market_liberal = 15
+social_liberal = 0
 social_democrat = 0
 left_wing_radical = 0
 leninist = 0
@@ -48,12 +48,12 @@ education_investment_law = minimal_education_investment
 economic_law = full_civilian_economy
 conscription_law = volunteer_army
 civil_law = legalistic_restrictions
-energy = 4860
-metal = 2430
-rare_materials = 1215
-crude_oil = 1000
+energy = 240
+metal = 120
+rare_materials = 60
+crude_oil = 500
 money = 10
-fuel = 1000
+fuel = 500
 infantry_theory = 1
 infantry_practical = 1
 militia_theory = 2
@@ -154,7 +154,7 @@ battlecruiser_technology = 0
 battlecruiser_antiaircraft = 0
 battlecruiser_engine = 0
 battlecruiser_armour = 0
-lightcruiser_technology = 1
+lightcruiser_technology = 0
 lightcruiser_armament = 0
 lightcruiser_antiaircraft = 0
 lightcruiser_engine = 0
@@ -169,21 +169,21 @@ dreadnaught_engine = 0
 dreadnaught_antiaircraft = 0
 dreadnaught_armour = 0
 capitalship_armament = 0
-destroyer_technology = 1
-destroyer_armament = 10
+destroyer_technology = 0
+destroyer_armament = 00
 destroyer_antiaircraft = 0
-destroyer_engine = 10
-destroyer_armour = 10
-battleship_technology = 1
-battleship_engine = 12
+destroyer_engine = 00
+destroyer_armour = 00
+battleship_technology = 0
+battleship_engine = 00
 battleship_antiaircraft = 0
-battleship_armour = 12
-battleship_armament = 12
-protectedcruiser_technology = 1
-protectedcruiser_armament = 8
+battleship_armour = 00
+battleship_armament = 00
+protectedcruiser_technology = 0
+protectedcruiser_armament = 0
 protectedcruiser_antiaircraft = 0
-protectedcruiser_engine = 8
-protectedcruiser_armour = 8
+protectedcruiser_engine = 0
+protectedcruiser_armour = 0
 mediumsubmarine_technology = 0
 
 escort_carrier_technology = 0
@@ -324,9 +324,15 @@ strategic_bombardment_tactics = 0
 aerial_photography = 0
 scout_pilot_training = 0
 strategic_air_command = 0
+1913.4.15 = {
+neutrality = -10
+government = right_wing_republic
+ideology = paternal_autocrat
+set_country_flag = yuanshikai
+}
 
-  1910.5.1 = { decision = qing_administration }
-1913.4.15 = { set_country_flag = yuanshikai }
+1914.1.1 = { decision = rebellion_administration }
+
 
 
 
@@ -435,36 +441,36 @@ battlecruiser_technology = 0
 battlecruiser_antiaircraft = 0
 battlecruiser_engine = 0
 battlecruiser_armour = 0
-lightcruiser_technology = 1
+lightcruiser_technology = 0
 lightcruiser_armament = 0
 lightcruiser_antiaircraft = 0
 lightcruiser_engine = 0
 lightcruiser_armour = 0
 submarine_technology = 0
-submarine_torpedoes = 0
-submarine_antiaircraft = 0
 submarine_engine = 0
+submarine_antiaircraft = 0
 submarine_hull = 0
+submarine_torpedoes = 0
 super_heavy_battleship_technology = 0
-capitalship_armament = 0
-dreadnaught_antiaircraft = 0
 dreadnaught_engine = 0
+dreadnaught_antiaircraft = 0
 dreadnaught_armour = 0
-destroyer_technology = 1
-destroyer_armament = 10
+capitalship_armament = 0
+destroyer_technology = 0
+destroyer_armament = 00
 destroyer_antiaircraft = 0
-destroyer_engine = 10
-destroyer_armour = 10
-battleship_technology = 1
-battleship_armament = 12
+destroyer_engine = 00
+destroyer_armour = 00
+battleship_technology = 0
+battleship_engine = 00
 battleship_antiaircraft = 0
-battleship_engine = 12
-battleship_armour = 12
-protectedcruiser_technology = 1
-protectedcruiser_armament = 8
+battleship_armour = 00
+battleship_armament = 00
+protectedcruiser_technology = 0
+protectedcruiser_armament = 0
 protectedcruiser_antiaircraft = 0
-protectedcruiser_engine = 8
-protectedcruiser_armour = 8
+protectedcruiser_engine = 0
+protectedcruiser_armour = 0
 escort_carrier_technology = 0
 
 mediumsubmarine_technology = 0
@@ -609,35 +615,35 @@ strategic_air_command = 0
 
 
 1936.1.1 = {
-capital = 5494
-government = right_wing_autocrat
-ideology = paternal_autocrat
-head_of_state = 123452001
-head_of_government = 123452002
-foreign_minister = 123452003
-armament_minister = 123452004
-minister_of_security = 123452005
-minister_of_intelligence = 123452006
-chief_of_staff = 123452002
-chief_of_army = 123452008
-chief_of_navy = 123452009
-chief_of_air = 123452010
-alignment = { x = 60 y = 61.6 }
-neutrality = 80
+capital = 7417
+government = socialist_republic
+ideology = stalinist
+head_of_state = 123451001
+head_of_government = 123451001
+foreign_minister = 123451003
+armament_minister = 123451004
+minister_of_security = 123451005
+minister_of_intelligence = 123451006
+chief_of_staff = 123451007
+chief_of_army = 123451007
+chief_of_navy = 123451009
+chief_of_air = 123451010
+alignment = { x = -200 y = 200.0 }
+neutrality = 100
 national_unity = 70
-oob = "CHI_1936.txt"
-infantry_theory = 5
-infantry_practical = 5
+oob = "CHC_1936.txt"
+infantry_theory = 2.5
+infantry_practical = 2.5
 militia_theory = 10
-militia_practical = 10
+militia_practical = 5
 mobile_theory = 1
 mobile_practical = 1
-artillery_theory = 3
-artillery_practical = 3
+artillery_theory = 0 
+artillery_practical = 0 
 rocket_science = 0
 rocket_practical = 0 
-naval_engineering = 2.5
-destroyer_practical = 2.5
+naval_engineering = 0
+destroyer_practical = 0
 cruiser_practical = 0
 capitalship_practical = 0
 carrier_practical = 0 
@@ -647,306 +653,138 @@ electornicegineering_theory = 0
 electornicegineering_practical = 0
 automotive_theory = 0 
 armour_practical = 0
-aeronautic_engineering = 1
-single_engine_aircraft_practical = 0
+aeronautic_engineering = 0
+single_engine_aircraft_practical = 0 
 twin_engine_aircraft_practical = 0
 four_engine_aircraft_practical = 0
 spearhead_theory = 0 
-superior_firepower_theory = 0
-grand_battleplan_theory = 0
-human_wave_theory = 5 
+superior_firepower_theory = 0 
+grand_battleplan_theory = 0 
+human_wave_theory = 5
 land_doctrine_practical = 5 
 naval_doctrine_practical = 0 
 base_strike_doctrine = 0
-fleet_in_being_doctrine = 2.5
+fleet_in_being_doctrine = 0 
 sealane_interdiction_doctrine = 0
 air_doctrine_practical = 0 
-fighter_focus = 1
+fighter_focus = 0
 cas_focus = 0 
 tac_focus = 0
 nav_focus = 0 
 strategic_air_focus = 0 
-mechanicalengineering_theory = 2.5
-chemical_engineering = 1
+mechanicalengineering_theory = 0
+chemical_engineering = 0 
 jetengine_theory = 0 
 jetengine_practical = 0 
 nuclear_physics = 0
 nuclear_bomb = 0 
-transport_practical = 2.5
-officers_ratio = 0.5
+transport_practical = 0
 
 popularity = { 
 national_socialist = 0
 fascistic = 0
-paternal_autocrat = 62
-social_conservative = 27
-market_liberal = 11
+paternal_autocrat = 0
+social_conservative = 10
+market_liberal = 8
 social_liberal = 0
-social_democrat = 0
-left_wing_radical = 0
-leninist = 0
-stalinist = 0
+social_democrat = 10
+left_wing_radical = 16
+leninist = 15
+stalinist = 41
 }
 organization = { 
 national_socialist = 0
 fascistic = 0
-paternal_autocrat = 65
-social_conservative = 40
-market_liberal = 15
+paternal_autocrat = 0
+social_conservative = 10
+market_liberal = 20
 social_liberal = 0
-social_democrat = 0
-left_wing_radical = 0
-leninist = 0
-stalinist = 0
+social_democrat = 10
+left_wing_radical = 20
+leninist = 40
+stalinist = 80
 }
-training_laws = basic_training
-press_laws = censored_press
-industrial_policy_laws = mixed_industry
+training_laws = minimal_training
+press_laws = propaganda_press
+industrial_policy_laws = consumer_product_orientation
 education_investment_law = minimal_education_investment
 economic_law = full_civilian_economy
 conscription_law = volunteer_army
 civil_law = legalistic_restrictions
 }
-1937.11.21 = { capital = 9478 # Chongqing
-set_country_flag = hu_hanmin
-set_country_flag = chinese_ic_transfer
-} 
 1938.9.1 = {
-head_of_state = 123452001
-head_of_government = 123452026
-foreign_minister = 123452026
-armament_minister = 123452046
-minister_of_security = 123452063
-minister_of_intelligence = 123452063
-chief_of_staff = 123452045
-chief_of_army = 123452089
-chief_of_navy = 123452101
-chief_of_air = 123452047
-oob = "CHI_1938.txt"
-officers_ratio = 0.55
+head_of_state = 123451001
+head_of_government = 123451001
+foreign_minister = 123451003
+armament_minister = 123451004
+minister_of_security = 123451005
+minister_of_intelligence = 123451006
+chief_of_staff = 123451007
+chief_of_army = 123451007
+chief_of_navy = 123451009
+chief_of_air = 123451010
+oob = "CHC_1938.txt"
 }
 1939.9.1 = {
-head_of_state = 123452001
-head_of_government = 123452003
-foreign_minister = 123452035
-armament_minister = 123452047
-minister_of_security = 123452066
-minister_of_intelligence = 123452079
-chief_of_staff = 123452089
-chief_of_army = 123452097
-chief_of_navy = 123452102
-chief_of_air = 123452047
-oob = "CHI_1939.txt"
-officers_ratio = 0.60
+head_of_state = 123451001
+head_of_government = 123451001
+foreign_minister = 123451003
+armament_minister = 123451023
+minister_of_security = 123451030
+minister_of_intelligence = 123451037
+chief_of_staff = 123451007
+chief_of_army = 123451007
+chief_of_navy = 123451009
+chief_of_air = 123451010
+oob = "CHC_1939.txt"
 peoples_army = 2
 guerilla_warfare = 2
 }
-1940.5.10 = { 
-officers_ratio = 0.65 
-head_of_state = 123452001
-head_of_government = 123452003
-foreign_minister = 123452035
-armament_minister = 123452047
-minister_of_security = 123452066
-minister_of_intelligence = 123452079
-chief_of_staff = 123452089
-chief_of_army = 123452097
-chief_of_navy = 123452102
-chief_of_air = 123452047
-oob = "CHI_1940.txt"
+1940.5.10 = {
+head_of_state = 123451001
+head_of_government = 123451001
+foreign_minister = 123451003
+armament_minister = 123451023
+minister_of_security = 123451030
+minister_of_intelligence = 123451037
+chief_of_staff = 123451007
+chief_of_army = 123451007
+chief_of_navy = 123451009
+chief_of_air = 123451010
+oob = "CHC_1940.txt"
 peoples_army = 2
 guerilla_warfare = 2
 }
 1941.6.22 = {
-head_of_state = 123452001
-head_of_government = 123452003
-foreign_minister = 123452036
-armament_minister = 123452050
-minister_of_security = 123452068
-minister_of_intelligence = 123452080
-chief_of_staff = 123452090
-chief_of_army = 123452097
-chief_of_navy = 123452102
-chief_of_air = 123452109
-oob = "CHI_1941.txt"
-officers_ratio = 0.70
+head_of_state = 123451001
+head_of_government = 123451001
+foreign_minister = 123451003
+armament_minister = 123451024
+minister_of_security = 123451001
+minister_of_intelligence = 123451038
+chief_of_staff = 123451044
+chief_of_army = 123451049
+chief_of_navy = 123451009
+chief_of_air = 123451010
+oob = "CHC_1941.txt"
 peoples_army = 3
 guerilla_warfare = 3
-national_unity = 90
 }
-1941.12.7 = { oob = "CHI_DayOfInfamy.txt" 
-officers_ratio = 0.75
-}
-1941.12.9 = {
-join_faction = allies
-neutrality = 0
-}
-1942.6.4 = {
-officers_ratio = 0.80
-}
-1943.2.1 = { oob = "CHI_TheTideHasTurned.txt"
-officers_ratio = 0.85
-infantry_warfare = 2
-}
+1941.12.7 = { oob = "CHC_DayOfInfamy.txt" }
+1943.2.1 = { oob = "CHC_TheTideHasTurned.txt" infantry_warfare = 2 }
 1944.6.20 = {
-head_of_state = 123452002
-head_of_government = 123452002
-foreign_minister = 123452005
-armament_minister = 123452054
-minister_of_security = 123452055
-minister_of_intelligence = 123452083
-chief_of_staff = 123452035
-chief_of_army = 123452098
-chief_of_navy = 123452103
-chief_of_air = 123452010
-oob = "CHI_1944.txt"
+head_of_state = 123451001
+head_of_government = 123451001
+foreign_minister = 123451006
+armament_minister = 123451025
+minister_of_security = 123451033
+minister_of_intelligence = 123451003
+chief_of_staff = 123451045
+chief_of_army = 123451045
+chief_of_navy = 123451009
+chief_of_air = 123451010
+oob = "CHC_1944.txt"
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

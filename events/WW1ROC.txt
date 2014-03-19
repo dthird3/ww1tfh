@@ -25,14 +25,14 @@ country_event = {
 		option = {
 			name = "opta_ROCE1"
 			ai_chance = { factor = 100 }
-			release = CHC
+			release = CHI
 				
-			CHC = { inherit = PRC }
+			CHI = { inherit = PRC }
 			PRC = { any_owned = { limit = { is_core = PRC } remove_core = PRC } }
 
-			CHC = { split_troops = 1.00 }
+			CHI = { split_troops = 1.00 }
 			
-			CHC = { capital = 4979 }
+			CHI = { capital = 4979 }
 			
 			set_country_flag = beiyang_government
 		}
