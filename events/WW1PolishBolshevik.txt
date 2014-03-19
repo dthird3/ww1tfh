@@ -1,0 +1,1247 @@
+######################### Initialisation Event to set countries Manpower and resource levels ###################
+
+country_event = {
+
+	id = 100800
+	fire_only_once = yes
+	trigger = {
+		tag = LIT
+		date = 1920.4.25
+		has_global_flag = 2193501_EVENT_DONE
+	}
+
+	mean_time_to_happen =  {
+		days = 0
+	}
+
+		title = "Polish_Troops_Title"
+		desc = "Polish_Troops_Desc"
+		picture = "Polish_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		POL = {manpower = -220}
+		POL = {supplies = -2500}
+		SOV = {manpower = -216}
+		SOV = {supplies = -25000}
+	}
+}
+
+
+# =============================================  Ongoing Monitors  ====================================
+
+country_event = {																# Set and increment variables
+
+		id = 100801
+
+		trigger = {	tag = LIT 
+		has_global_flag = 2193501_EVENT_DONE }
+
+		title = "Polish_Troops_Title"
+		desc = "Polish_Troops_Desc"
+		picture = "Polish_Troops"
+
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }
+			POL = {set_variable = { which = PDEPLOY  value = +1928 }} 			# Set Warsaw as default deployment province (not working in OOB)
+			POL = {change_variable =  { which = PolDelay value = +1 }}			# Increment time factor for reinforcements
+			SOV = {change_variable =  { which = SovDelay value = +1 }}			# Increment time factor for withdrawls
+		}
+}
+
+# Galacian Mutiny							
+country_event = {
+
+		id = 100810
+
+		major = yes
+		
+		trigger = {
+			tag = SOV
+		has_global_flag = 2193501_EVENT_DONE
+			}
+
+		fire_only_once = yes
+
+		title = "EVT1914_2008100_NAME"
+		desc = "EVT1914_2008100_DESC"
+		picture = "Ukraine-Galacian"
+
+		option = {
+			name = "ACTION_NAME_DAMN"
+			ai_chance = { factor = 100 }	
+			2576 = { create_revolt = 1 }
+			2641 = { create_revolt = 1 }
+			2642 = { create_revolt = 1 }
+			remove_brigade = "3-ya Galacian Brigada"
+			remove_brigade = "2-ya Galacian Brigada"
+
+			random_list = { 
+					25 = { remove_brigade = "1-ya Galacian Brigada"
+						   remove_brigade = "Galacian Corps HQ" } 
+					75 = {POL = { country_event = 100811 }}
+			} 
+		}
+}
+
+
+# Galacian Mutiny							
+country_event = {
+
+		id = 100811
+
+		major = yes
+
+		is_triggered_only = yes
+
+		fire_only_once = yes
+
+		title = "EVT1914_2008100_NAME"
+		desc = "EVT1914_2008100_DESC"
+		picture = "Ukraine-Galacian"
+
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }
+			random_list = { 
+					40 = { load_oob = "scenarios/polish_bolshevik/reinforce_POL_OOB/POL_001.txt" } 
+					60 = { load_oob = "scenarios/polish_bolshevik/reinforce_POL_OOB/POL_002.txt" }
+			} 			
+		}
+}
+
+
+#########################################  Scheduled POLISH Reinforcements  ############################################
+
+country_event = {
+	
+	id = 100001
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date = 1920.5.22
+		has_global_flag = 2193501_EVENT_DONE
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Polish_Troops_Title"
+	desc = "Polish_Troops_Desc"
+	picture = "Polish_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_003.txt"}
+	}
+}
+
+
+country_event = {
+	
+	id = 100002
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date = 1920.6.1
+		has_global_flag = 2193501_EVENT_DONE
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Polish_Troops_Title"
+	desc = "Polish_Troops_Desc"
+	picture = "Polish_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_004.txt"}
+	}
+}
+
+country_event = {
+	
+	id = 100017
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date = 1920.7.1
+		has_global_flag = 2193501_EVENT_DONE
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Polish_Troops_Title"
+	desc = "Polish_Air_Desc"
+	picture = "Bristol_Fighter"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_AIR_1.txt"}
+	}
+}
+
+
+country_event = {
+	
+	id = 100003
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date = 1920.7.8
+		has_global_flag = 2193501_EVENT_DONE
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Polish_Troops_Title"
+	desc = "Polish_Troops_Desc"
+	picture = "Polish_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_005.txt"}
+	}
+}
+
+country_event = {
+	
+	id = 100004
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date = 1920.8.8
+		has_global_flag = 2193501_EVENT_DONE
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Polish_Troops_Title"
+	desc = "Polish_Troops_Desc"
+	picture = "Polish_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_006.txt"}
+	}
+}
+
+country_event = {
+	
+	id = 100005
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date = 1920.8.15
+		has_global_flag = 2193501_EVENT_DONE
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Polish_Troops_Title"
+	desc = "Polish_Troops_Desc"
+	picture = "Polish_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_007.txt"}
+	}
+}
+
+country_event = {
+	
+	id = 100006
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date = 1920.8.22
+		has_global_flag = 2193501_EVENT_DONE
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Polish_Troops_Title"
+	desc = "Polish_Troops_Desc"
+	picture = "Polish_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_008.txt"}
+	}
+}
+
+country_event = {
+	
+	id = 100007
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date = 1920.9.1
+		has_global_flag = 2193501_EVENT_DONE
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Polish_Troops_Title"
+	desc = "Polish_Troops_Desc"
+	picture = "Polish_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_009.txt"}
+	}
+}
+
+country_event = {
+	
+	id = 100008
+	fire_only_once = yes
+	trigger = {
+		tag = POL
+		date = 1920.9.8
+		has_global_flag = 2193501_EVENT_DONE
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Polish_Troops_Title"
+	desc = "Polish_Troops_Desc"
+	picture = "Polish_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_010.txt"}
+	}
+}
+
+##############################################  POLISH DESPERATE DEFENCE  #################################################
+
+country_event = {
+
+		id = 100010
+
+		major = yes
+		
+		trigger = {
+			tag = POL
+			POL = {not = {has_country_flag = "Desperate_Polish_Defence_1"}}
+			or = {
+			1928 = {any_neighbor_province = {controlled_by = SOV}}							# Bolsheviks approach Warsaw - 1st wave of Reinforcements
+			1810 = {any_neighbor_province = {controlled_by = SOV}}							# Bialystok     - This is a closer trigger line
+			2273 = {any_neighbor_province = {controlled_by = SOV}}							# Zwolen
+			1986 = {any_neighbor_province = {controlled_by = SOV}}							# Brzesc-Litewski
+			2568 = {any_neighbor_province = {controlled_by = SOV}}							# Jedrzejow
+#			1751 = {any_neighbor_province = {controlled_by = SOV}}							# Grodno		- This trigger line is further away from Warsaw
+#			1812 = {any_neighbor_province = {controlled_by = SOV}}							# Slonim
+#			1987 = {any_neighbor_province = {controlled_by = SOV}}							# Bereza      
+#			2388 = {any_neighbor_province = {controlled_by = SOV}}							# Sandomierz
+#			2218 = {any_neighbor_province = {controlled_by = SOV}}							# Chelm
+#			2445 = {any_neighbor_province = {controlled_by = SOV}}
+		has_global_flag = 2193501_EVENT_DONE							# Krakow
+			}
+		}
+		
+		fire_only_once = yes
+		
+		mean_time_to_happen =  { days = 0 }
+
+		title = "Desperate_Title"
+		desc = "Desperate_Desc"
+		picture = "Defend_Warsaw"
+
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }	
+			POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_GAR_2.txt"}  
+			POL = {set_country_flag = "Desperate_Polish_Defence_1"}
+			POL = {set_variable = { which = PolDelay value = 1 }}							# Delay Counter	incremented at start of Events file
+			}
+}
+
+country_event = {
+
+		id = 100011
+
+		major = yes
+		
+		trigger = {
+			tag = POL
+			POL = {has_country_flag = "Desperate_Polish_Defence_1"}
+			POL = {not = {has_country_flag = "Desperate_Polish_Defence_2"}}
+			POL = {check_variable = { which = PolDelay value = 4 }}
+		has_global_flag = 2193501_EVENT_DONE
+		}
+		
+		fire_only_once = yes
+		
+		mean_time_to_happen =  { days = 0 }									
+
+		title = "Desperate_Title"
+		desc = "Desperate_Desc"
+		picture = "Defend_Warsaw"
+
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }
+			POL = {set_country_flag = "Desperate_Polish_Defence_2"}			
+			POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_GAR_3.txt"} 
+			}
+}
+
+country_event = {								
+
+		id = 100015
+
+		major = yes
+		
+		trigger = {
+			tag = POL
+			POL = {not = {has_country_flag = "Defence_of_Poznan"}}
+			or = {
+			2096 = {any_neighbor_province = {controlled_by = SOV}}							# Bolsheviks approach Poznan - Release the Garrison
+			1980 = {any_neighbor_province = {controlled_by = SOV}}	
+			}
+		has_global_flag = 2193501_EVENT_DONE
+		}
+		
+		fire_only_once = yes
+
+		title = "Polish_Troops_Title"
+		desc = "Desperate_Poznan_Desc"
+		picture = "Defend_Warsaw"
+
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }	
+			POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_GAR_5.txt"}  
+			POL = {set_country_flag = "Defence_of_Poznan"}
+			}
+}
+
+
+#########################################  Scheduled BOLSHEVIK Reinforcements  ############################################
+
+country_event = {
+	
+	id = 200001
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date = 1920.5.1
+		has_global_flag = 2193501_EVENT_DONE
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Russian_Troops_Title"
+	desc = "Russian_Troops_Desc"
+	picture = "Russian_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_001.txt"}
+		SOV = {supplies = 2000}
+	}
+}
+
+country_event = {
+	
+	id = 200002
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date = 1920.5.8
+		has_global_flag = 2193501_EVENT_DONE
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Russian_Troops_Title"
+	desc = "Russian_Troops_Desc"
+	picture = "Russian_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_002.txt"}
+		}
+}
+
+country_event = {
+	
+	id = 200003
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date = 1920.5.15
+		has_global_flag = 2193501_EVENT_DONE
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Russian_Troops_Title"
+	desc = "Russian_Troops_Desc"
+	picture = "Russian_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_003.txt"}
+		SOV = {supplies = 2000}
+	}
+}
+
+country_event = {																			# Konarmiya arrive
+	
+	id = 200004
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date = 1920.5.22
+		has_global_flag = 2193501_EVENT_DONE
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Russian_Troops_Title"
+	desc = "Konarmiya_Arrive_Desc"
+	picture = "Konarmiya"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_004.txt"}
+		SOV = {supplies = 4000}
+	}
+}
+
+country_event = {																			# Brusilov's letter to raise volunteers for the Army
+	
+	id = 200018
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date = 1920.5.30
+		has_global_flag = 2193501_EVENT_DONE
+	}
+
+	mean_time_to_happen =  {
+		days = 0
+	}
+
+	title = "Brusilovs_letter_Title"
+	desc = "Brusilovs_letter_Desc"
+	picture = "Brusilov"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {manpower = 110}
+		SOV = {national_unity = 2}
+	}
+}
+
+country_event = {
+	
+	id = 200005
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date = 1920.6.15
+		has_global_flag = 2193501_EVENT_DONE
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Russian_Troops_Title"
+	desc = "Russian_Troops_Desc"
+	picture = "Russian_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_005.txt"}
+		SOV = {supplies = 2000}
+	}
+}
+
+country_event = {
+	
+	id = 200006
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date = 1920.6.22
+		has_global_flag = 2193501_EVENT_DONE
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Russian_Troops_Title"
+	desc = "Russian_Troops_Desc"
+	picture = "Russian_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_006.txt"}
+	}
+}
+
+country_event = {
+	
+	id = 200007
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date = 1920.7.8
+		SOV = {has_country_flag = "Lithuania_joins"}
+		1355 = {controlled_by = SOV}
+		has_global_flag = 2193501_EVENT_DONE
+	}
+
+	mean_time_to_happen =  { days = 1 }
+
+	title = "Russian_Troops_Title"
+	desc = "Lithuania_Desc"
+	picture = "7th_Regiment_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/LIT_002.txt"}  
+		SOV = {supplies = 2000}
+	}
+}
+
+country_event = {
+	
+	id = 200008
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date = 1920.7.15
+		has_global_flag = 2193501_EVENT_DONE
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Russian_Troops_Title"
+	desc = "Russian_Troops_Desc"
+	picture = "Russian_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_007.txt"}
+	}
+}
+
+country_event = {																			# Reinforcements released from the Latvian Garrison
+	
+	id = 200009
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date = 1920.7.22
+		not = {has_country_flag = Latvian_Garrison_Released}
+		has_global_flag = 2193501_EVENT_DONE
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Russian_Troops_Title"
+	desc = "Latvian_Garrison_Desc"
+	picture = "Russian_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+ 	    load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_GAR_1.txt"
+		SOV = {set_country_flag = Latvian_Garrison_1_Released}
+		SOV = {supplies = 2000}
+	}
+}
+
+country_event = {											
+	
+	id = 200016
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date = 1920.8.1
+		has_global_flag = 2193501_EVENT_DONE
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Russian_Troops_Title"
+	desc = "Russian_Air_Desc"
+	picture = "Russian_Scout"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_AIR_1.txt"}
+	}
+}
+
+country_event = {											
+	
+	id = 200010
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		date = 1920.8.7
+		has_global_flag = 2193501_EVENT_DONE
+	}
+
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "Russian_Troops_Title"
+	desc = "Russian_Troops_Desc"
+	picture = "Russian_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_008.txt"}
+		SOV = {supplies = 2000}
+	}
+}
+
+country_event = {																		# These reinforcements are either date driven OR emergency released
+	
+	id = 200011
+	
+	fire_only_once = yes
+	
+	trigger = { 
+			tag = SOV
+			date = 1920.8.18
+			not = {SOV = {has_country_flag = Emergency_3_Released}}
+	}
+
+#	mean_time_to_happen =  { days = 1 }
+
+	title = "Russian_Troops_Title"
+	desc = "Russian_Troops_Desc"
+	picture = "Russian_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_009.txt"}
+		SOV = {set_country_flag = Emergency_3_Released}
+	}
+}
+
+country_event = {																		# These reinforcements are either date driven OR emergency released
+	
+	id = 200012
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		date = 1920.9.11
+		not = {SOV = {has_country_flag = Emergency_2_Released}}
+		has_global_flag = 2193501_EVENT_DONE
+	}
+
+#	mean_time_to_happen =  { days = 1 }
+
+	title = "Russian_Troops_Title"
+	desc = "Russian_Troops_Desc"
+	picture = "Russian_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_010.txt"}
+		SOV = {supplies = 2000}
+		SOV = {set_country_flag = Emergency_2_Released}
+	}
+}
+
+country_event = {																		# These reinforcements are either date driven OR emergency released
+	
+	id = 200014
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+		date = 1920.10.1
+		not = {SOV = {has_country_flag = Emergency_1_Released}}
+		has_global_flag = 2193501_EVENT_DONE
+	}
+
+#	mean_time_to_happen =  { days = 1 }
+
+	title = "Russian_Troops_Title"
+	desc = "Russian_Troops_Desc"
+	picture = "Russian_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_011.txt"}
+		SOV = {supplies = 2000}
+		SOV = {set_country_flag = Emergency_1_Released}
+	}
+}
+
+###########################################  Release Russian LATVIAN Garrison  ################################################
+
+
+country_event = {
+
+		id = 200020
+
+		major = yes
+		
+		trigger = {
+			tag = SOV
+			not = {has_country_flag = Latvian_Garrison_Released}
+			or = {
+			1267 = {controlled_by = POL}							# Drissa        Polish cross north of the river Dvina
+			1105 = {controlled_by = POL}							# Rasony
+			1144 = {controlled_by = POL}							# Dominikovo
+			1403 = {controlled_by = POL}							# Drozdy
+			1107 = {controlled_by = POL}							# Sumilina        
+			1315 = {controlled_by = POL}							# Suraz
+			1270 = {controlled_by = POL}							# Velizh
+			1492 = {controlled_by = POL}							# Demidov
+			}
+		has_global_flag = 2193501_EVENT_DONE
+		}
+		
+		fire_only_once = yes
+
+	title = "Latvian_Garrison_Title"
+	desc = "Latvian_Garrison_Desc"
+	picture = "Russian_Troops"
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }	
+		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_GAR_2.txt"} 
+		random_country = {
+				limit = { not = {SOV = {has_country_flag = Latvian_Garrison_1_Released}}}
+				SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_GAR_1.txt"}
+				SOV = {supplies = 2000}
+		}		
+		SOV = {set_country_flag = Latvian_Garrison_Released}
+	}
+}
+
+
+##############################################  Lithuanian's Join Bolshevik's  #################################################
+
+country_event = {
+
+		id = 200030																			# Bolsheviks approach Lithuanian Border
+																							# Rework later to use LIT exped's
+		major = yes
+		
+		trigger = {
+			tag = SOV
+			SOV = {not = {has_country_flag = "Lithuania_joins"}}
+			or = {
+			1444 = {any_neighbor_province = {controlled_by = SOV}}							# Wilno - (Swieziany)
+			1630 = {any_neighbor_province = {controlled_by = SOV}}							# Suwali      
+			}
+		has_global_flag = 2193501_EVENT_DONE
+		}
+		
+		fire_only_once = yes
+		
+		mean_time_to_happen =  { days = 1 }
+
+		title = "Lithuania_Title"
+		desc = "Lithuania_Desc"
+		picture = "7th_Regiment_Troops"
+
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }	
+			SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/LIT_001.txt"} 
+			POL = { country_event = 200032 }			
+			SOV = {set_country_flag = "Lithuania_joins"}
+			SOV = {supplies = 500}
+			}
+}
+
+country_event = {													# Polish respond and activate their Lithuanian border garrison
+	
+		id = 200032
+		fire_only_once = yes
+		is_triggered_only = yes
+	
+		mean_time_to_happen =  { days = 1 }
+		
+		title = "Polish_Troops_Title"
+		desc = "Lithuania_Desc"
+		picture = "Polish_Troops"
+
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }	
+			POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_GAR_1.txt"}
+		}
+}
+
+
+
+#########################################  WITHDRAW KONARMIYA TO FIGHT WHITE RUSSIANS  #######################################
+
+country_event = {
+
+		id = 200034																			
+
+		major = yes
+		
+		trigger = {
+			tag = SOV
+			date = 1920.8.30
+		has_global_flag = 2193501_EVENT_DONE
+		}
+		
+		fire_only_once = yes
+		
+		title = "Russian_Withdraw_Title"								# Warning of Withdrawl of Konarmiya about 3 weeks later
+		desc = "Russian_Withdraw_Desc"
+		picture = "lenin"
+
+		option = {
+			name = "ACTION_NAME_DAMN"
+			ai_chance = { factor = 100 }
+			SOV = {set_country_flag = "Konarmiya_Withdrawl"}			
+		}
+}
+
+country_event = {														# Actual withdrawl
+	
+		id = 200036
+		
+		trigger = {
+			tag = SOV
+			SOV = {has_country_flag = "Konarmiya_Withdrawl"}
+		has_global_flag = 2193501_EVENT_DONE
+		}
+		
+		fire_only_once = yes
+	
+		mean_time_to_happen =  { days = 10 }
+		
+		title = "Russian_Withdraw_Title"								
+		desc = "Russian_Withdraw_Now_Desc"
+		picture = "Konarmiya"
+
+		option = {
+			name = "ACTION_NAME_DAMN"
+			ai_chance = { factor = 100 }	
+			remove_brigade = "4-ya Kavaleriiskaya Diviziya"
+			remove_brigade = "4-ya Kavaleriiskaya 1-ya brigada"
+			remove_brigade = "4-ya Kavaleriiskaya 2-ya brigada"
+			remove_brigade = "4-ya Kavaleriiskaya 3-ya brigada"
+			remove_brigade = "4-ya Kavaleriiskaya 4-ya brigada"
+			remove_brigade = "4-ya Kavaleriiskaya 5-ya brigada"
+			remove_brigade = "6-ya Kavaleriiskaya Diviziya"
+			remove_brigade = "6-ya Kavaleriiskaya 1-ya brigada"
+			remove_brigade = "6-ya Kavaleriiskaya 2-ya brigada"
+			remove_brigade = "6-ya Kavaleriiskaya 3-ya brigada"
+			remove_brigade = "6-ya Kavaleriiskaya 4-ya brigada"
+			remove_brigade = "6-ya Kavaleriiskaya 5-ya brigada"
+			remove_brigade = "11-ya Kavaleriiskaya Diviziya"
+			remove_brigade = "11-ya Kavaleriiskaya 1-ya brigada"
+			remove_brigade = "11-ya Kavaleriiskaya 2-ya brigada"
+			remove_brigade = "11-ya Kavaleriiskaya 3-ya brigada"
+			remove_brigade = "11-ya Kavaleriiskaya 4-ya brigada"
+			remove_brigade = "11-ya Kavaleriiskaya 5-ya brigada"
+			remove_brigade = "14-ya Kavaleriiskaya Diviziya"
+			remove_brigade = "14-ya Kavaleriiskaya 1-ya brigada"
+			remove_brigade = "14-ya Kavaleriiskaya 2-ya brigada"
+			remove_brigade = "14-ya Kavaleriiskaya 3-ya brigada"
+			remove_brigade = "14-ya Kavaleriiskaya 4-ya brigada"
+			remove_brigade = "14-ya Kavaleriiskaya 5-ya brigada"
+			remove_brigade = "SK Kavaleriiskaya brigada"
+			remove_brigade = "21/22 Kavaleriiskaya"
+			remove_brigade = "Moskva Strelkovaya brigada"
+			remove_brigade = "1-ya Kavaleriiskaya Armiya"
+		}
+}
+
+##############################################  BOLSHEVIK DESPERATE DEFENSE  #################################################
+
+
+country_event = {																	# This is triggered by proximity to Eastern edge
+
+		id = 200040
+
+		major = yes
+		
+		trigger = {
+			tag = SOV
+			or = {
+			not = {SOV = {has_country_flag = Emergency_1_Released}}					# Check there are reserves still available
+			not = {SOV = {has_country_flag = Emergency_2_Released}}
+			not = {SOV = {has_country_flag = Emergency_3_Released}}
+			}
+			or = {																	# Occupied provinces cause emergency
+			1534 = {controlled_by = POL}							# Vitsyebsk	   	Captured
+			1536 = {any_neighbor_province = {controlled_by = POL}}	# Smolensk     	and line of provinces south
+			1816 = {any_neighbor_province = {controlled_by = POL}}	# Krychaw	
+			1761 = {any_neighbor_province = {controlled_by = POL}}	# Novozybkopv			
+			2049 = {any_neighbor_province = {controlled_by = POL}}	# Chernihiv	
+			2339 = {any_neighbor_province = {controlled_by = POL}}	# Bobrovytsya					
+			2644 = {any_neighbor_province = {controlled_by = POL}}	# Horodysche	
+			2776 = {any_neighbor_province = {controlled_by = POL}}	# Mala Vyska
+			}
+		has_global_flag = 2193501_EVENT_DONE
+		}
+		
+		mean_time_to_happen =  { days = 4 }
+		
+		title = "Desperate_Russian_Troops_Title"
+		desc = "Desperate_Russian_Troops_Desc"
+		picture = "Russian_Troops"
+
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }
+			SOV = {supplies = 4000}
+			random_country = {
+				limit = { not = {SOV = {has_country_flag = Emergency_1_Released}}
+								 SOV = {has_country_flag = Emergency_2_Released}
+								 SOV = {has_country_flag = Emergency_3_Released}
+						}
+				SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_009.txt"}
+				SOV = {set_country_flag = Emergency_1_Released}
+			} 
+			random_country = {
+				limit = { not = {SOV = {has_country_flag = Emergency_2_Released}}
+								 SOV = {has_country_flag = Emergency_3_Released}
+						}
+				SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_010.txt"}
+				SOV = {set_country_flag = Emergency_2_Released}
+			}
+			random_country = {
+				limit = { not = {SOV = {has_country_flag = Emergency_3_Released}}
+						}
+				SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_011.txt"}
+				SOV = {set_country_flag = Emergency_3_Released}
+			}
+		}			
+}
+
+
+########################################################  Danzig Dockworker Strikes  ######################################################	
+
+country_event = {
+
+		id = 100814
+
+		major = yes
+		
+		trigger = { tag = POL 
+					date = 1920.5.10 
+		has_global_flag = 2193501_EVENT_DONE }
+
+#		fire_only_once = yes							# Strikes occurred repeatedly
+		
+		mean_time_to_happen =  { months = 2 }
+
+		title = "EVT1914_2008101_NAME"
+		desc = "EVT1914_2008101_DESC"
+		picture = "Danzig_1919"
+
+		option = {
+			name = "ACTION_NAME_DAMN"
+			ai_chance = { factor = 100 }	
+			POL = { supplies = -1500 }
+		}
+}
+
+
+########################################################  Control of Ukrainian Troops and Reinforcements ###################################################	
+											# Must control both Kiev and Lwow for Ukrainian Army to switch sides
+country_event = {
+
+		id = 100018	
+
+		major = yes
+		
+		trigger = {
+			tag = SOV
+			SOV = { not = {has_country_flag = "bolshevik_ukraine"} }
+			2223 = {controlled_by = SOV}													# Kiev
+			2509 = {controlled_by = SOV}	
+		has_global_flag = 2193501_EVENT_DONE												# Lwow
+			}
+		
+		mean_time_to_happen =  { days = 1 }
+
+		title = "Ukraine_Control_Title"
+		desc = "Ukraine_Control_Desc"
+		picture = "Russians_in_Kiev"
+
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }	
+			POL = {clr_country_flag = "polish_ukraine"}
+			UKR = {leave_faction = allies}
+			POL = {remove_brigade = "1. Ukrayina Armiya"}
+			POL = {remove_brigade = "6. Ukrayina Strelkovaya Diviziya"}
+			POL = {remove_brigade = "11. Ukrayina Strelkovaya Brigada"}
+			POL = {remove_brigade = "12. Ukrayina Strelkovaya Brigada"}
+			POL = {remove_brigade = "2. Ukrayina Strelkovaya Diviziya"}
+			POL = {remove_brigade = "3. Ukrayina Strelkovaya Brigada"}
+			POL = {remove_brigade = "4. Ukrayina Strelkovaya Brigada"}
+			POL = {remove_brigade = "Ukrayina Strelkovaya Brigada"}
+			POL = {remove_brigade = "Ukrayina Strelkovaya Brigada"}
+			SOV = {set_country_flag = "bolshevik_ukraine"}
+			UKR = {join_faction = comintern}
+			SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/UKR_001.txt"} 
+			}
+}
+
+country_event = {																			# Ukrainian reinforcements if Russian controlled
+
+		id = 100020
+		
+		trigger = {
+			tag = SOV
+			SOV = {has_country_flag = "bolshevik_ukraine"}
+			2223 = {controlled_by = SOV}													# Kiev
+			date = 1920.5.1
+		has_global_flag = 2193501_EVENT_DONE
+			}
+		
+		mean_time_to_happen = { months = 2 }
+
+		title = "Russian_Troops_Title"
+		desc = "Ukraine_Troops_Desc"
+		picture = "Ukraine-Galacian"
+
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }	
+			SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/UKR_002.txt"}
+			}
+}
+
+country_event = {
+
+		id = 100022
+
+		major = yes
+		
+		trigger = {
+			tag = POL
+			POL = { not = {has_country_flag = "polish_ukraine"} }
+			2223 = {controlled_by = POL}													# Kiev
+			2509 = {controlled_by = POL}	
+		has_global_flag = 2193501_EVENT_DONE												# Lwow
+			}
+		
+		mean_time_to_happen =  { days = 3 }
+
+		title = "Ukraine_Control_Title"
+		desc = "Ukraine_Control_Desc"
+		picture = "Ukraine-Galacian"
+
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }	
+			SOV = {clr_country_flag = "bolshevik_ukraine"}
+			UKR = {leave_faction = comintern}
+			SOV = {remove_brigade = "1. Ukrayina Armiya"}
+			SOV = {remove_brigade = "6. Ukrayina Strelkovaya Diviziya"}
+			SOV = {remove_brigade = "11. Ukrayina Strelkovaya Brigada"}
+			SOV = {remove_brigade = "12. Ukrayina Strelkovaya Brigada"}
+			SOV = {remove_brigade = "2. Ukrayina Strelkovaya Diviziya"}
+			SOV = {remove_brigade = "3. Ukrayina Strelkovaya Brigada"}
+			SOV = {remove_brigade = "4. Ukrayina Strelkovaya Brigada"}
+			SOV = {remove_brigade = "Ukrayina Strelkovaya Brigada"}
+			SOV = {remove_brigade = "Ukrayina Strelkovaya Brigada"}
+			POL = {set_country_flag = "polish_ukraine"}
+			UKR = {join_faction = allies}
+			POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/UKR_001.txt"} 
+			}
+}
+
+country_event = {																			# Ukrainian reinforcements if Polish controlled
+
+		id = 100024
+
+		trigger = {
+			tag = POL
+			POL = {has_country_flag = "polish_ukraine"}
+			2509 = {controlled_by = POL}													# Lwow
+			date = 1920.5.1
+		has_global_flag = 2193501_EVENT_DONE
+			}
+		
+		mean_time_to_happen = { months = 2 }
+
+		title = "Polish_Troops_Title"
+		desc = "Ukraine_Troops_Desc"
+		picture = "Ukraine-Galacian"
+
+		option = {
+			name = "ACTION_NAME_GREAT"
+			ai_chance = { factor = 100 }	
+			POL = {load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/UKR_002.txt"}
+			}
+}

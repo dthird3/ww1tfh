@@ -53,4 +53,21 @@ diplomatic_decisions = {
 			factor = 1
 		}
 	}
+	RUSE3 = {
+		potential = {
+			tag = RUS
+			war = yes
+			date = 1914.12.10
+			not = { has_country_flag = SIM }
+		}
+		allow = {
+			}
+		effect = {
+			country_event = 100150
+			set_country_flag = SIM
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 } 
