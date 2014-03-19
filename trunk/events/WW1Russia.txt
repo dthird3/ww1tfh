@@ -27,6 +27,28 @@ country_event = {
 			782 = { change_province_name = Petrograd }
 		}
 }
+country_event = {
+		
+		id = 100150
+		
+		fire_only_once = yes
+		
+		title = "RUSE3"
+		desc = "desc_RUSE3"
+		picture = "RUSP3"
+
+		option = {
+			name = "opta_RUSE3"
+			ai_chance = { factor = 100 }
+			dissent = 5
+			money = -50
+			load_oob = "SIM.txt"
+		}
+		option = {
+			name = "optb_RUSE3"
+			ai_chance = { factor = 0 }
+		}
+}
 #Rasputin
 country_event = {
 		

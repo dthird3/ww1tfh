@@ -19,6 +19,26 @@ song = {
 		}		
 	}
 }
+song = {
+	name = "getyourgun.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			USA = { 
+				faction = allies
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+			USA = { 
+				faction = allies
+			}
+			}
+		}		
+	}
+}
 
 song = {
 	name = "axis_marchofdominance.mp3"
