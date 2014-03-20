@@ -1,34 +1,3 @@
-######################### Initialisation Event to set countries Manpower and resource levels ###################
-
-country_event = {
-
-	id = 100800
-	fire_only_once = yes
-	trigger = {
-		tag = LIT
-		date = 1920.4.25
-		has_global_flag = 2193501_EVENT_DONE
-	}
-
-	mean_time_to_happen =  {
-		days = 0
-	}
-
-		title = "Polish_Troops_Title"
-		desc = "Polish_Troops_Desc"
-		picture = "Polish_Troops"
-
-	option = {
-		name = "ACTION_NAME_GREAT"
-		ai_chance = { factor = 100 }	
-		POL = {manpower = -220}
-		POL = {supplies = -2500}
-		SOV = {manpower = -216}
-		SOV = {supplies = -25000}
-	}
-}
-
-
 # =============================================  Ongoing Monitors  ====================================
 
 country_event = {																# Set and increment variables
@@ -471,7 +440,6 @@ country_event = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_001.txt"}
-		SOV = {supplies = 2000}
 	}
 }
 
@@ -522,7 +490,6 @@ country_event = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_003.txt"}
-		SOV = {supplies = 2000}
 	}
 }
 
@@ -548,7 +515,6 @@ country_event = {																			# Konarmiya arrive
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_004.txt"}
-		SOV = {supplies = 4000}
 	}
 }
 
@@ -574,6 +540,7 @@ country_event = {																			# Brusilov's letter to raise volunteers for 
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		SOV = {manpower = 110}
+		SOV = {officer_pool = 3000}
 		SOV = {national_unity = 2}
 	}
 }
@@ -600,7 +567,6 @@ country_event = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_005.txt"}
-		SOV = {supplies = 2000}
 	}
 }
 
@@ -651,7 +617,6 @@ country_event = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/LIT_002.txt"}  
-		SOV = {supplies = 2000}
 	}
 }
 
@@ -704,7 +669,6 @@ country_event = {																			# Reinforcements released from the Latvian G
 		ai_chance = { factor = 100 }	
  	    load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_GAR_1.txt"
 		SOV = {set_country_flag = Latvian_Garrison_1_Released}
-		SOV = {supplies = 2000}
 	}
 }
 
@@ -755,7 +719,6 @@ country_event = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_008.txt"}
-		SOV = {supplies = 2000}
 	}
 }
 
@@ -808,7 +771,6 @@ country_event = {																		# These reinforcements are either date driven
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_010.txt"}
-		SOV = {supplies = 2000}
 		SOV = {set_country_flag = Emergency_2_Released}
 	}
 }
@@ -836,7 +798,6 @@ country_event = {																		# These reinforcements are either date driven
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }	
 		SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_011.txt"}
-		SOV = {supplies = 2000}
 		SOV = {set_country_flag = Emergency_1_Released}
 	}
 }
@@ -879,7 +840,6 @@ country_event = {
 		random_country = {
 				limit = { not = {SOV = {has_country_flag = Latvian_Garrison_1_Released}}}
 				SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_GAR_1.txt"}
-				SOV = {supplies = 2000}
 		}		
 		SOV = {set_country_flag = Latvian_Garrison_Released}
 	}
@@ -918,7 +878,6 @@ country_event = {
 			SOV = {load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/LIT_001.txt"} 
 			POL = { country_event = 200032 }			
 			SOV = {set_country_flag = "Lithuania_joins"}
-			SOV = {supplies = 500}
 			}
 }
 
