@@ -171,27 +171,6 @@ diplomatic_decisions = {
 	}
 
 
-#DECISIONNAME: Move capitol to Volgograd
-2173515_decision = {
-	potential = {
-		not = {
-			 exists = SOV
-			 }
-		tag = WHR
-		date = 1914.8.4
-		not = { date = 1925.12.30
-			 }
-		not = { has_global_flag = SLEEPEVENT_2173515 }
-		not = { has_country_flag = decision_2173515 } }
-	allow = {
-		war = no
-		2857 = { controlled_by = THIS }
-		}
-	effect = { country_event = 559
-		set_country_flag = decision_2173515 }
-	ai_will_do = { factor = 1 }
-	}
-
 
 #DECISIONNAME: Move capitol to Ekaterinburg
 2173516_decision = {

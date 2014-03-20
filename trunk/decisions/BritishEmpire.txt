@@ -1,0 +1,94 @@
+diplomatic_decisions = {
+	ast_milcontrol = {
+		potential = {
+			tag = ENG
+			exists = AST
+			AST = { vassal_of = ENG }
+			war = yes
+		}
+		allow = {
+			not = { dissent = 1 }
+			or = {
+			AST = { total_amount_of_divisions = 1 }
+			AST = { total_amount_of_planes = 1 }
+			AST = { total_amount_of_ships = 1 }
+			}
+		}
+		effect = {
+			AST = { country_event = 800001 } 
+			dissent = 3
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	can_milcontrol = {
+		potential = {
+			tag = ENG
+			exists = CAN
+			CAN = { vassal_of = ENG }
+			war = yes
+		}
+		allow = {
+			not = { dissent = 1 }
+			or = {
+			CAN = { total_amount_of_divisions = 1 }
+			CAN = { total_amount_of_planes = 1 }
+			CAN = { total_amount_of_ships = 1 }
+			}
+		}
+		effect = {
+			CAN = { country_event = 800001 }
+			dissent = 3
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	nzl_milcontrol = {
+		potential = {
+			tag = ENG
+			exists = NZL
+			NZL = { vassal_of = ENG }
+			war = yes
+		}
+		allow = {
+			not = { dissent = 1 }
+			or = {
+			NZL = { total_amount_of_divisions = 1 }
+			NZL = { total_amount_of_planes = 1 }
+			NZL = { total_amount_of_ships = 1 }
+			}
+		}
+		effect = {
+			NZL = { country_event = 800001 } 
+			dissent = 3
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	saf_milcontrol = {
+		potential = {
+			tag = ENG
+			exists = SAF
+			SAF = { vassal_of = ENG }
+			war = yes
+		}
+		allow = {
+			not = { dissent = 1 }
+			or = {
+			SAF = { total_amount_of_divisions = 1 }
+			SAF = { total_amount_of_planes = 1 }
+			SAF = { total_amount_of_ships = 1 }
+			}
+		}
+		effect = {
+			SAF = { country_event = 800001 } 
+			dissent = 3
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+} 
