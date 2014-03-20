@@ -1,9 +1,4 @@
-###################################################################
-# Triggered modifiers are here.
-# these are checked for each countries once/month and then applied.
-#
-# Effects are fully scriptable here.
-###################################################################
+
 
 # Naval Supremacy in the West
 naval_supremacy_in_the_west = {
@@ -196,6 +191,7 @@ neutrality = {
 	icon = 18
 }
 
+#Entente
 triple_entente = {
 
 	potential = {
@@ -311,6 +307,7 @@ pact_of_steel_2 = {
 	icon = 22
 }
 
+#Roma oil
 roma_oil = {
 	potential = {
 		is_in_any_faction = yes
@@ -1942,7 +1939,7 @@ desperate_defence = {
 	org_regain = 0.05
 	icon = 25
 }
-
+# master of puppets
 master_puppets = {
 
 	potential = {
@@ -1973,6 +1970,7 @@ Caliph_of_Islam = {
 	global_manpower_modifier = 0.1
 	icon = 29
 }
+# Holy War
 Holy_War = {
 
     potential = {
@@ -1990,6 +1988,7 @@ Holy_War = {
 	global_manpower_modifier = 0.1
 	icon = 29
 }
+# No conscription
 uk_no_conscription = {
 
     potential = {
@@ -2006,6 +2005,7 @@ uk_no_conscription = {
 	land_organisation = -0.25
 	icon = 25
 }
+# Russian leadership trouble
 russia_leadership_troubles = {
 
     potential = {
@@ -2027,6 +2027,7 @@ russia_leadership_troubles = {
 	research_efficiency = -0.33
 	icon = 30
 }
+#Multiethnic
 multiethnic_empire = {
 
     potential = {
@@ -2042,6 +2043,7 @@ multiethnic_empire = {
 	land_organisation = -0.05
 	icon = 31
 }
+#Qing
 qing_administration = {
 
     potential = {
@@ -2056,6 +2058,7 @@ qing_administration = {
 	global_leadership_modifier = -0.80
 	icon = 32
 }
+#ROC
 rebellion_administration = {
 
     potential = {
@@ -2070,6 +2073,7 @@ rebellion_administration = {
 	global_leadership_modifier = -0.70
 	icon = 33
 }
+#US Army
 us_army = {
 	potential = {
 		tag = USA
@@ -2085,7 +2089,7 @@ us_army = {
 	global_resources = 0.1
 	icon = 19
 }
-
+#Ottomans Weakened
 Ottomans_weakened = {
 	potential = {
 		tag = TUR
@@ -2102,7 +2106,7 @@ Ottomans_weakened = {
 	global_ic = -0.05
 	icon = 29
 }
-
+#Blockade Germany
 blockade_of_central_powers = {
 	potential = {
 		tag = ENG
@@ -2113,7 +2117,7 @@ blockade_of_central_powers = {
 	convoy_raid = 0.7
 	icon = 34
 }
-
+#Unrestricted subs
 unrestricted_submarine_warfare = {
 	potential = {
 		tag = GER
@@ -2128,7 +2132,7 @@ unrestricted_submarine_warfare = {
 	icon = 34
 }
 
-
+#Ottoman regain
 Ottomans_regain = {
 	potential = {
 		tag = TUR
@@ -2145,7 +2149,7 @@ Ottomans_regain = {
 	icon = 29
 }
 
-
+#channel ports
 channel_ports = {
 	potential = {
 		tag = GER
@@ -2180,4 +2184,65 @@ channel_ports = {
 	
 	convoy_raid = 0.25
 	icon = 34
+}
+
+#channel ports
+blacksea_supplies = {
+	potential = {
+		tag = RUS
+		faction = allies
+	}
+	
+	trigger = { 
+		4503 = {
+			controller = {
+				faction = THIS
+			}
+		}
+		or = {	
+			3309 = {
+				controller = {
+					faction = THIS
+				}
+			}
+			3244 = {
+				controller = {
+					faction = THIS
+				}
+			}
+			3581 = {
+				controller = {
+					faction = THIS
+				}
+			}
+			3449 = {
+				controller = {
+					faction = THIS
+				}
+			}
+			3046 = {
+				controller = {
+					faction = THIS
+				}
+			}
+			2913 = {
+				controller = {
+					faction = THIS
+				}
+			}
+			3380 = {
+				controller = {
+					faction = THIS
+				}
+			}
+			4059 = {
+				controller = {
+					faction = THIS
+				}
+			}
+		}
+	}
+	
+	supply_throughput = 0.1
+	icon = 35
 }
