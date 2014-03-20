@@ -5,13 +5,13 @@ diplomatic_decisions = {
 			tag = PRC
 			CHI = { has_country_flag = yuan_shikai } 
 			NOT = { PRC = { has_country_flag = ns_peace_conference } }
+		}
 		allow = { has_country_flag = prc_election }
 		
 		effect = {
 			set_country_flag = ns_peace_conference
-			PRC = { country_event = 999960}
+			PRC = { country_event = 999960 }
 			}
-		}
 		ai_will_do = { factor = 1 }
 	}
 } 

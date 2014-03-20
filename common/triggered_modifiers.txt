@@ -224,20 +224,6 @@ unrestricted_submarine_warfare = {
 	icon = 9
 }
 
-auh_buildup = {
-	potential = {
-		tag = AUH
-	}
-	
-	trigger = {
-		AUH = { war = no }
-	}
-	
-	officer_recruitment = 0.1
-	global_manpower_modifier = 0.1
-	global_ic = 0.1
-	icon = 6
-}
 
 Ottomans_regain = {
 	potential = {
@@ -421,18 +407,6 @@ roma_oil = {
 	icon = 13
 }
 
-#roma_oil_2 = {
-#	potential = {
-#		faction = allies
-#	}
-#	trigger = {
-#		3778 = controller = { faction = allies }
-#	}
-#	
-#	fuel_conversion = 0.15
-#	global_crude_oil = 0.2
-#	icon = 7
-#}
 
 # Pact of Steel
 central_powers = {
@@ -468,17 +442,37 @@ general_winter = {
 	trigger = {
 		tag = RUS
 		war_with = GER
-		GER = {
-			OR = {
-				controls = 1534
-				controls = 2223
-				controls = 1991
-				controls = 3175
-				controls = 1535
-				controls = 1182
-				controls = 1102
-				controls = 909
-				controls = 782
+		
+		1928 = {
+			controller = {
+				faction = axis
+			}
+		}
+		OR = {		
+			1178 = {
+				controller = {
+					faction = axis
+				}
+			}	
+			1694 = {
+				controller = {
+					faction = axis
+				}
+			}	
+			3309 = {
+				controller = {
+					faction = axis
+				}
+			}
+			2223 = {
+				controller = {
+					faction = axis
+				}
+			}
+			1991 = {
+				controller = {
+					faction = axis
+				}
 			}
 		}
 		OR = {
@@ -491,6 +485,7 @@ general_winter = {
 	
 	org_regain = 0.3
 	reinforcement_bonus = 0.3
+	supply_throughput = 0.1
 	icon = 8
 }
 
@@ -522,7 +517,7 @@ great_naval_army = {
 great_air_army = {
 
 	trigger = {
-		total_amount_of_planes = 75
+		total_amount_of_planes = 25
 	}
 	
 	global_leadership = 0.15
@@ -560,7 +555,7 @@ veteran_army = {
 veteran_navy = {
 	
 	trigger = {
-		naval_battles_fought = 250
+		naval_battles_fought = 100
 	}
 	
 	naval_organisation = 0.05
@@ -573,7 +568,7 @@ veteran_navy = {
 veteran_air_force = {
 	
 	trigger = {
-		air_battles_fought = 250
+		air_battles_fought = 100
 	}
 	
 	air_organisation = 0.05
@@ -1020,11 +1015,6 @@ control_over_makassar_strait = {
 	trigger = {
 	OR = {
 		AND = {
-		6478 = {
-			controller = {
-				faction = THIS
-				}			
-			}
 		6508 = {
 			controller = {
 				faction = THIS
@@ -1077,7 +1067,6 @@ control_over_makassar_strait = {
 		}
 		
 	OR = {
-		controls = 6478
 		controls = 6508
 		controls = 6492 
 		controls = 6472 
@@ -1091,7 +1080,6 @@ control_over_makassar_strait = {
 		}
 		}
 			AND = {
-		controls = 6478
 		controls = 6508
 		controls = 6492 
 		controls = 6472 

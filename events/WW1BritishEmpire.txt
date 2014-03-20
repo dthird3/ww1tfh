@@ -1,0 +1,74 @@
+
+country_event = {
+
+		id = 800001
+
+		is_triggered_only = yes
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = no
+
+		title = "Britain asks for Troops"
+		desc = "Britain has requested that we provide direct military aid by giving them control of our armed forces"
+		picture = "BREE1"
+
+		option = {
+			name = "To war men!"
+			ai_chance = { factor = 100 }
+			ENG = { split_troops = 1 }
+			ENG = { country_event = 800002 }
+		}
+		option = {
+			name = "We will retain command"
+			ai_chance = { factor = 0 }
+			ENG = { country_event = 800003 }
+		}
+	
+}
+country_event = {
+
+		id = 800002
+
+		is_triggered_only = no
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = no
+
+		title = "Dominions Provide Troops"
+		desc = "Our dominion has accepted our request for our armed forces"
+		picture = "BREE1"
+
+		option = {
+			name = "Great!"
+			ai_chance = { factor = 100 }
+		}
+	
+}
+country_event = {
+
+		id = 800003
+
+		is_triggered_only = no
+		
+		mean_time_to_happen = {
+			days = 1
+		}
+		
+		fire_only_once = no
+
+		title = "Dominions Refuse"
+		desc = "Our dominion has refused our request for our armed forces"
+		picture = "BREE1"
+
+		option = {
+			name = "Ok"
+			ai_chance = { factor = 100 }
+		}
+	
+}
