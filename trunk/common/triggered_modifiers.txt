@@ -166,80 +166,7 @@ naval_supremacy_in_the_east = {
 	icon = 2
 }
 
-us_army = {
-	potential = {
-		tag = USA
-	}
-	
-	trigger = {
-		war_with = GER
-#		USA = { faction = allies }			Historically USA never joined the Entente faction
-	}
-	
-	global_leadership = 0.1
-	global_manpower_modifier = 0.05
-	global_resources = 0.1
-	icon = 11
-}
 
-Ottomans_weakened = {
-	potential = {
-		tag = TUR
-	}
-	
-	trigger = {
-		NOT = { has_country_flag = turkey_reg }
-		has_country_flag = turkey_disorg
-	}
-	
-	officer_recruitment = -0.15
-	org_regain = -0.2
-	global_manpower_modifier = -0.08
-	global_ic = -0.05
-	icon = 3
-}
-
-blockade_of_central_powers = {
-	potential = {
-		tag = ENG
-	}
-	
-	trigger = { has_country_flag = North_Sea_War_Zone }
-	
-	convoy_raid = 0.7
-	icon = 2
-}
-
-unrestricted_submarine_warfare = {
-	potential = {
-		tag = GER
-	}
-	
-	trigger = { 
-			has_country_flag = unrest_subs 
-			not = { has_country_flag = stopped_unrest_subs } 
-	}
-	
-	convoy_raid = 0.5
-	icon = 9
-}
-
-
-Ottomans_regain = {
-	potential = {
-		tag = TUR
-	}
-	
-	trigger = {
-		has_country_flag = turkey_reg
-	}
-	
-	officer_recruitment = 0.1
-	org_regain = 0.1
-	global_manpower_modifier = 0.25
-	global_ic = 0.25
-	icon = 3
-}
 
 
 # Neutrality
@@ -266,7 +193,7 @@ neutrality = {
 	research_efficiency = -0.05
 	espionage_bonus = 0.1
 	counter_espionage = 0.1
-	icon = 14
+	icon = 18
 }
 
 triple_entente = {
@@ -284,7 +211,7 @@ triple_entente = {
 	research_efficiency = 0.05
 	espionage_bonus = 0.2
 	counter_espionage = 0.1
-	icon = 14
+	icon = 21
 }
 
 # Polish Corridor POL
@@ -327,7 +254,7 @@ polish_corridor_ger = {
 	
 	supply_throughput = 0.01
 	naval_organisation = 0.05
-	icon = 15 
+	icon = 15
 }
 
 # Polish Corridor
@@ -381,7 +308,7 @@ pact_of_steel_2 = {
 	
 	global_supplies = 0.05
 	research_efficiency = 0.05
-	icon = 12
+	icon = 22
 }
 
 roma_oil = {
@@ -429,7 +356,7 @@ central_powers = {
 	
 	global_leadership_modifier = 0.05
 	supply_throughput = 0.10
-	icon = 12
+	icon = 23
 }
 
 #General Winter
@@ -486,7 +413,7 @@ general_winter = {
 	org_regain = 0.3
 	reinforcement_bonus = 0.3
 	supply_throughput = 0.1
-	icon = 8
+	icon = 24
 }
 
 # Great Army
@@ -498,7 +425,7 @@ great_army = {
 	
 	global_leadership = 0.15
 	org_regain = 0.15
-	icon = 5
+	icon = 25
 }
 	
 # Grand Fleet
@@ -510,7 +437,7 @@ great_naval_army = {
 	
 	global_leadership = 0.15
 	org_regain = 0.15
-	icon = 6
+	icon = 26
 }
 
 # Great Air Army
@@ -522,7 +449,7 @@ great_air_army = {
 	
 	global_leadership = 0.15
 	org_regain = 0.15
-	icon = 7
+	icon = 27
 }
 
 # Prosperous Convoy
@@ -548,7 +475,7 @@ veteran_army = {
 	land_organisation = 0.05
 	global_leadership_modifier = 0.05 
 	org_regain = 0.05
-	icon = 5
+	icon = 25
 }
 
 # Veteran Navy
@@ -561,7 +488,7 @@ veteran_navy = {
 	naval_organisation = 0.05
 	global_leadership_modifier = 0.05
 	org_regain = 0.05
-	icon = 6
+	icon = 26
 }
 
 # Veteran Air Force
@@ -574,7 +501,7 @@ veteran_air_force = {
 	air_organisation = 0.05
 	global_leadership_modifier = 0.05
 	org_regain = 0.05
-	icon = 7
+	icon = 27
 }
 
 # Control over the Mediterranean
@@ -2013,7 +1940,7 @@ desperate_defence = {
 	
 	territorial_pride = 0.2
 	org_regain = 0.05
-	icon = 5
+	icon = 25
 }
 
 master_puppets = {
@@ -2026,7 +1953,7 @@ master_puppets = {
 	
 	global_resources = 0.2
 	global_leadership_modifier = 0.1
-	icon = 5
+	icon = 28
 }
 
 #Caliph of Islam
@@ -2044,7 +1971,7 @@ Caliph_of_Islam = {
 	
 	territorial_pride = 0.2
 	global_manpower_modifier = 0.1
-	icon = 3
+	icon = 29
 }
 Holy_War = {
 
@@ -2061,7 +1988,7 @@ Holy_War = {
 	
 	territorial_pride = 0.5
 	global_manpower_modifier = 0.1
-	icon = 3
+	icon = 29
 }
 uk_no_conscription = {
 
@@ -2077,7 +2004,7 @@ uk_no_conscription = {
 	officer_recruitment = -0.45
 	research_efficiency = 0.05
 	land_organisation = -0.25
-	icon = 5
+	icon = 25
 }
 russia_leadership_troubles = {
 
@@ -2098,7 +2025,7 @@ russia_leadership_troubles = {
 	
 	officer_recruitment = -0.33
 	research_efficiency = -0.33
-	icon = 5
+	icon = 30
 }
 multiethnic_empire = {
 
@@ -2113,7 +2040,7 @@ multiethnic_empire = {
 	research_efficiency = -0.15
 	org_regain = -0.15
 	land_organisation = -0.05
-	icon = 5
+	icon = 31
 }
 qing_administration = {
 
@@ -2127,7 +2054,7 @@ qing_administration = {
 	peace_consumer_goods_demand = 0.55
 	global_manpower_modifier = -0.65
 	global_leadership_modifier = -0.80
-	icon = 5
+	icon = 32
 }
 rebellion_administration = {
 
@@ -2141,6 +2068,116 @@ rebellion_administration = {
 	peace_consumer_goods_demand = 0.50
 	global_manpower_modifier = -0.55
 	global_leadership_modifier = -0.70
-	icon = 5
+	icon = 33
+}
+us_army = {
+	potential = {
+		tag = USA
+	}
+	
+	trigger = {
+		war_with = GER
+#		USA = { faction = allies }			Historically USA never joined the Entente faction
+	}
+	
+	global_leadership = 0.1
+	global_manpower_modifier = 0.05
+	global_resources = 0.1
+	icon = 19
 }
 
+Ottomans_weakened = {
+	potential = {
+		tag = TUR
+	}
+	
+	trigger = {
+		NOT = { has_country_flag = turkey_reg }
+		has_country_flag = turkey_disorg
+	}
+	
+	officer_recruitment = -0.15
+	org_regain = -0.2
+	global_manpower_modifier = -0.08
+	global_ic = -0.05
+	icon = 29
+}
+
+blockade_of_central_powers = {
+	potential = {
+		tag = ENG
+	}
+	
+	trigger = { has_country_flag = North_Sea_War_Zone }
+	
+	convoy_raid = 0.7
+	icon = 34
+}
+
+unrestricted_submarine_warfare = {
+	potential = {
+		tag = GER
+	}
+	
+	trigger = { 
+			has_country_flag = unrest_subs 
+			not = { has_country_flag = stopped_unrest_subs } 
+	}
+	
+	convoy_raid = 0.5
+	icon = 34
+}
+
+
+Ottomans_regain = {
+	potential = {
+		tag = TUR
+	}
+	
+	trigger = {
+		has_country_flag = turkey_reg
+	}
+	
+	officer_recruitment = 0.1
+	org_regain = 0.1
+	global_manpower_modifier = 0.25
+	global_ic = 0.25
+	icon = 29
+}
+
+
+channel_ports = {
+	potential = {
+		tag = GER
+	}
+	
+	trigger = { 
+			has_country_flag = unrest_subs 
+			not = { has_country_flag = stopped_unrest_subs } 
+		or = {	
+			2197 = {
+				controller = {
+					faction = THIS
+				}
+			}
+			2137 = {
+				controller = {
+					faction = THIS
+				}
+			}
+			2195 = {
+				controller = {
+					faction = THIS
+				}
+			}
+			2194 = {
+				controller = {
+					faction = THIS
+				}
+			}
+		}
+	}
+	
+	convoy_raid = 0.25
+	icon = 34
+}
