@@ -25,7 +25,6 @@
 #id = 405 #EVENTNAME: Admiral Koltchak
 #id = 406 #EVENTNAME: Cossacks' Uprising
 #id = 407 #EVENTNAME: Red Terror
-#id = 433 #EVENTNAME: Revolution in Russia
 
 
 #EVENTNAME: Polish–Soviet War
@@ -806,13 +805,13 @@ is_triggered_only = yes
 option = {
 	name = "DH_EVENT_2007514_Option7"
 	dissent = 10 
-	random_country = { limit = { tag = THIS 
-			 THIS = { ai = no }
+	random_country = { limit = { tag = SOV 
+			 SOV = { ai = no }
 			  } 
 		money = -200 
 		 }
 	supplies = -500 
-	random_country = { limit = { tag = THIS 
+	random_country = { limit = { tag = SOV 
 			 has_country_flag = removedMOB7
 			  } 
 		manpower = 15 
@@ -1067,15 +1066,6 @@ trigger = {
 	not = {
 		 exists = WHR
 		 }
-	not = {
-		 exists = WHR
-		 }
-	not = {
-		 exists = WHR
-		 }
-	not = {
-		 exists = WHR
-		 }
 	1409 = { controlled_by = THIS }
 	699 = { controlled_by = THIS }
 	2857 = { controlled_by = THIS }
@@ -1101,9 +1091,6 @@ is_triggered_only = yes
 option = {
 	name = "DH_EVENT_2007520_Option7"
 	dissent = -10 
-	# MANUALFIX name command = { type = name where = SOV }
-	# MANUALFIX change flag command = { type = flag_ext where = SOV }
-	
 set_global_flag = 2007520_EVENT_DONE
 
 }
@@ -1518,34 +1505,3 @@ set_global_flag = 2007536_EVENT_DONE
 }
 
 }
-
-
-
-#EVENTNAME: Revolution in Russia
-country_event = {
-id = 433
-title = "DH_EVENT_2191533_TITLE"
-desc = "DH_EVENT_2191533_DESC"
-trigger = { 
-tag = GER
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2191533 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2191533_Option7"
-	#Removed Blank command
-	
-set_global_flag = 2191533_EVENT_DONE
-
-}
-
-}
-
