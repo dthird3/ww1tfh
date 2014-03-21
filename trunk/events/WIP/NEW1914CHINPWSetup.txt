@@ -1,0 +1,2622 @@
+#EVENTNAME: Insurrection
+country_event = {
+id = 637
+title = "DH_EVENT_133011009_TITLE"
+desc = "DH_EVENT_133011009_DESC"
+trigger = { 
+tag = ROC
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011009 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011009_Option7"
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = CGX
+				 }  } 
+		release = CGX
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = CYN
+				 }  } 
+		release = CYN
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = CXB
+				 }  } 
+		release = CXB
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = SIK
+				 }  } 
+		release = SIK
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 CGX = { war_with = THIS }
+				 }  } 
+		war = { target = CGX }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 CYN = { war_with = THIS }
+				 }  } 
+		war = { target = CYN }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 CXB = { war_with = THIS }
+				 }  } 
+		war = { target = CXB }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 SIK = { war_with = THIS }
+				 }  } 
+		war = { target = SIK }
+		 }
+	threat = { who = all value = -60  }
+	# MANUALFIX secede area command = { type = secedearea which = CYN value = "Yunnan" when = 2 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 9347 = { controlled_by = TIB }
+				 }  } 
+		9347 = { secede_province = CYN }
+		9348 = { secede_province = CYN }
+		9379 = { secede_province = CYN }
+		 }
+	9349 = { secede_province = CYN }
+	9476 = { secede_province = CYN }
+	9322 = { secede_province = CYN }
+	9380 = { secede_province = CYN }
+	9414 = { secede_province = CYN }
+	9444 = { secede_province = CYN }
+	9501 = { secede_province = CYN }
+	9445 = { secede_province = CYN }
+	5113 = { secede_province = CYN }
+	9477 = { secede_province = CYN }
+	9415 = { secede_province = CYN }
+	9324 = { secede_province = CYN }
+	9350 = { secede_province = CYN }
+	9381 = { secede_province = CYN }
+	4739 = { secede_province = CYN }
+	9382 = { secede_province = CYN }
+	9416 = { secede_province = CYN }
+	9446 = { secede_province = CYN }
+	9478 = { secede_province = CYN }
+	# MANUALFIX secede area command = { type = secedearea which = CGX value = "Guangxi" when = 2 }
+	5899 = { secede_province = CGX }
+	5900 = { secede_province = CGX }
+	5918 = { secede_province = CGX }
+	5883 = { secede_province = CGX }
+	5901 = { secede_province = CGX }
+	5902 = { secede_province = CGX }
+	5919 = { secede_province = CGX }
+	5932 = { secede_province = CGX }
+	5946 = { secede_province = CGX }
+	5850 = { secede_province = CGX }
+	5851 = { secede_province = CGX }
+	5865 = { secede_province = CGX }
+	5867 = { secede_province = CGX }
+	5884 = { secede_province = CGX }
+	5885 = { secede_province = CGX }
+	5903 = { secede_province = CGX }
+	5904 = { secede_province = CGX }
+	5965 = { secede_province = CGX }
+	5975 = { secede_province = CGX }
+	5976 = { secede_province = CGX }
+	5984 = { secede_province = CGX }
+	5985 = { secede_province = CGX }
+	5994 = { secede_province = CGX }
+	5752 = { secede_province = CGX }
+	5763 = { secede_province = CGX }
+	5764 = { secede_province = CGX }
+	5773 = { secede_province = CGX }
+	5774 = { secede_province = CGX }
+	5775 = { secede_province = CGX }
+	5789 = { secede_province = CGX }
+	5790 = { secede_province = CGX }
+	5803 = { secede_province = CGX }
+	5818 = { secede_province = CGX }
+	5819 = { secede_province = CGX }
+	5833 = { secede_province = CGX }
+	5834 = { secede_province = CGX }
+	5835 = { secede_province = CGX }
+	5776 = { secede_province = CGX }
+	5777 = { secede_province = CGX }
+	5805 = { secede_province = CGX }
+	5806 = { secede_province = CGX }
+	5820 = { secede_province = CGX }
+	5821 = { secede_province = CGX }
+	5836 = { secede_province = CGX }
+	5837 = { secede_province = CGX }
+	5852 = { secede_province = CGX }
+	5792 = { secede_province = CGX }
+	5793 = { secede_province = CGX }
+	5807 = { secede_province = CGX }
+	5808 = { secede_province = CGX }
+	5822 = { secede_province = CGX }
+	5823 = { secede_province = CGX }
+	5838 = { secede_province = CGX }
+	7541 = { secede_province = CGX }
+	7551 = { secede_province = CGX }
+	7562 = { secede_province = CGX }
+	9502 = { secede_province = CGX }
+	5804 = { secede_province = CGX }
+	7535 = { secede_province = CGX }
+	7536 = { secede_province = CGX }
+	7542 = { secede_province = CGX }
+	7552 = { secede_province = CGX }
+	5848 = { secede_province = CGX }
+	7522 = { secede_province = CGX }
+	7528 = { secede_province = CGX }
+	# MANUALFIX secede area command = { type = secedearea which = SIK value = "Xinjiang" when = 2 }
+	# MANUALFIX secede area command = { type = secedearea which = CXB value = "Suiyuan_Ningxia" when = 2 }
+	9167 = { secede_province = CXB }
+	9197 = { secede_province = CXB }
+	9198 = { secede_province = CXB }
+	9229 = { secede_province = CXB }
+	9230 = { secede_province = CXB }
+	9262 = { secede_province = CXB }
+	9263 = { secede_province = CXB }
+	9293 = { secede_province = CXB }
+	9199 = { secede_province = CXB }
+	9200 = { secede_province = CXB }
+	9231 = { secede_province = CXB }
+	9264 = { secede_province = CXB }
+	9323 = { secede_province = CXB }
+	9060 = { secede_province = CXB }
+	9086 = { secede_province = CXB }
+	9113 = { secede_province = CXB }
+	9114 = { secede_province = CXB }
+	9139 = { secede_province = CXB }
+	9140 = { secede_province = CXB }
+	9141 = { secede_province = CXB }
+	9168 = { secede_province = CXB }
+	9169 = { secede_province = CXB }
+	9115 = { secede_province = CXB }
+	9201 = { secede_province = CXB }
+	9170 = { secede_province = CXB }
+	9294 = { secede_province = CXB }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 9291 = { controlled_by = TIB }
+				 }  } 
+		9291 = { secede_province = CXB }
+		9292 = { secede_province = CXB }
+		9321 = { secede_province = CXB }
+		 }
+	
+set_global_flag = 133011009_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Nationalist Party Reformed
+country_event = {
+id = 638
+title = "DH_EVENT_133011010_TITLE"
+desc = "DH_EVENT_133011010_DESC"
+trigger = {
+	has_global_flag = 133011003_EVENT_DONE
+	not = {
+		CGX = { is_subject = yes }
+		CYN = { is_subject = yes }
+		CXB = { is_subject = yes }
+		}
+	not = {
+		has_global_flag= nat_reformed
+		}
+	
+tag = CYN
+date = 1913.11.1
+
+not = { date = 1990.12.29
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011010 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  3 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_133011010_Option7"
+	CHI = {
+		THIS = { inherit = CGX }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22003 id = 10191 }
+				 #MANUALFIX division_exists = { type = 22001 id = 10191 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10191 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22003 id = 10192 }
+				 #MANUALFIX division_exists = { type = 22001 id = 10192 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10192 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22003 id = 10193 }
+				 #MANUALFIX division_exists = { type = 22001 id = 10193 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10193 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22003 id = 10201 }
+				 #MANUALFIX division_exists = { type = 22001 id = 10201 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10201 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22003 id = 10202 }
+				 #MANUALFIX division_exists = { type = 22001 id = 10202 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10202 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22003 id = 10203 }
+				 #MANUALFIX division_exists = { type = 22001 id = 10203 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10203 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22003 id = 10204 }
+				 #MANUALFIX division_exists = { type = 22001 id = 10204 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10204 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 or = {
+					and = { 
+						 not = {
+							 #MANUALFIX division_exists = { type = 22001 id = 10191 }
+							 } #MANUALFIX division_exists = { type = 22003 id = 10191 }
+						 }
+					and = { 
+						 not = {
+							 #MANUALFIX division_exists = { type = 22001 id = 10192 }
+							 } #MANUALFIX division_exists = { type = 22003 id = 10192 }
+						 }
+					and = { 
+						 not = {
+							 #MANUALFIX division_exists = { type = 22001 id = 10193 }
+							 } #MANUALFIX division_exists = { type = 22003 id = 10193 }
+						 }
+					}  } 
+			7553 = { hq_brigade = current }
+			 }
+		random_country = { limit = { tag = THIS 
+				 not = {
+					 #MANUALFIX division_exists = { type = 22001 id = 10191 }
+					 } #MANUALFIX division_exists = { type = 22003 id = 10191 }
+				  } 
+			load_oob = 10191.txt
+			 }
+		random_country = { limit = { tag = THIS 
+				 not = {
+					 #MANUALFIX division_exists = { type = 22001 id = 10192 }
+					 } #MANUALFIX division_exists = { type = 22003 id = 10192 }
+				  } 
+			load_oob = 10192.txt
+			 }
+		random_country = { limit = { tag = THIS 
+				 not = {
+					 #MANUALFIX division_exists = { type = 22001 id = 10193 }
+					 } #MANUALFIX division_exists = { type = 22003 id = 10193 }
+				  } 
+			load_oob = 10193.txt
+			 }
+		random_country = { limit = { tag = THIS 
+				 or = {
+					and = { 
+						 not = {
+							 #MANUALFIX division_exists = { type = 22001 id = 10201 }
+							 } #MANUALFIX division_exists = { type = 22003 id = 10201 }
+						 }
+					and = { 
+						 not = {
+							 #MANUALFIX division_exists = { type = 22001 id = 10202 }
+							 } #MANUALFIX division_exists = { type = 22003 id = 10202 }
+						 }
+					and = { 
+						 not = {
+							 #MANUALFIX division_exists = { type = 22001 id = 10203 }
+							 } #MANUALFIX division_exists = { type = 22003 id = 10203 }
+						 }
+					and = { 
+						 not = {
+							 #MANUALFIX division_exists = { type = 22001 id = 10204 }
+							 } #MANUALFIX division_exists = { type = 22003 id = 10204 }
+						 }
+					}  } 
+			5834 = { hq_brigade = current }
+			 }
+		random_country = { limit = { tag = THIS 
+				 not = {
+					 #MANUALFIX division_exists = { type = 22001 id = 10201 }
+					 } #MANUALFIX division_exists = { type = 22003 id = 10201 }
+				  } 
+			load_oob = 10201.txt
+			 }
+		random_country = { limit = { tag = THIS 
+				 not = {
+					 #MANUALFIX division_exists = { type = 22001 id = 10202 }
+					 } #MANUALFIX division_exists = { type = 22003 id = 10202 }
+				  } 
+			load_oob = 10202.txt
+			 }
+		random_country = { limit = { tag = THIS 
+				 not = {
+					 #MANUALFIX division_exists = { type = 22001 id = 10203 }
+					 } #MANUALFIX division_exists = { type = 22003 id = 10203 }
+				  } 
+			load_oob = 10203.txt
+			 }
+		random_country = { limit = { tag = THIS 
+				 not = {
+					 #MANUALFIX division_exists = { type = 22001 id = 10204 }
+					 } #MANUALFIX division_exists = { type = 22003 id = 10204 }
+				  } 
+			load_oob = 10204.txt
+			 }
+		random_country = { limit = { tag = THIS 
+				 or = {
+					and = { 
+						 not = {
+							 #MANUALFIX division_exists = { type = 22003 id = 10191 }
+							 } not = {
+							 #MANUALFIX division_exists = { type = 22001 id = 10191 }
+							 } }
+					and = { 
+						 not = {
+							 #MANUALFIX division_exists = { type = 22003 id = 10192 }
+							 } not = {
+							 #MANUALFIX division_exists = { type = 22001 id = 10192 }
+							 } }
+					and = { 
+						 not = {
+							 #MANUALFIX division_exists = { type = 22003 id = 10193 }
+							 } not = {
+							 #MANUALFIX division_exists = { type = 22001 id = 10193 }
+							 } }
+					}  } 
+			7553 = { hq_brigade = current }
+			 }
+		random_country = { limit = { tag = THIS 
+				 not = {
+					 #MANUALFIX division_exists = { type = 22003 id = 10191 }
+					 } not = {
+					 #MANUALFIX division_exists = { type = 22001 id = 10191 }
+					 }  } 
+			random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+			 }
+		random_country = { limit = { tag = THIS 
+				 not = {
+					 #MANUALFIX division_exists = { type = 22003 id = 10192 }
+					 } not = {
+					 #MANUALFIX division_exists = { type = 22001 id = 10192 }
+					 }  } 
+			random_owned = { limit = { controlled_by = THIS  } militia_brigade = current militia_brigade = current militia_brigade = current }
+			 }
+		random_country = { limit = { tag = THIS 
+				 not = {
+					 #MANUALFIX division_exists = { type = 22003 id = 10193 }
+					 } not = {
+					 #MANUALFIX division_exists = { type = 22001 id = 10193 }
+					 }  } 
+			random_owned = { limit = { controlled_by = THIS  } militia_brigade = current militia_brigade = current militia_brigade = current }
+			 }
+		random_country = { limit = { tag = THIS 
+				 or = {
+					and = { 
+						 not = {
+							 #MANUALFIX division_exists = { type = 22003 id = 10201 }
+							 } not = {
+							 #MANUALFIX division_exists = { type = 22001 id = 10201 }
+							 } }
+					and = { 
+						 not = {
+							 #MANUALFIX division_exists = { type = 22003 id = 10202 }
+							 } not = {
+							 #MANUALFIX division_exists = { type = 22001 id = 10202 }
+							 } }
+					and = { 
+						 not = {
+							 #MANUALFIX division_exists = { type = 22003 id = 10203 }
+							 } not = {
+							 #MANUALFIX division_exists = { type = 22001 id = 10203 }
+							 } }
+					and = { 
+						 not = {
+							 #MANUALFIX division_exists = { type = 22003 id = 10204 }
+							 } not = {
+							 #MANUALFIX division_exists = { type = 22001 id = 10204 }
+							 } }
+					}  } 
+			5834 = { hq_brigade = current }
+			 }
+		random_country = { limit = { tag = THIS 
+				 not = {
+					 #MANUALFIX division_exists = { type = 22003 id = 10201 }
+					 } not = {
+					 #MANUALFIX division_exists = { type = 22001 id = 10201 }
+					 }  } 
+			random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+			 }
+		random_country = { limit = { tag = THIS 
+				 not = {
+					 #MANUALFIX division_exists = { type = 22003 id = 10202 }
+					 } not = {
+					 #MANUALFIX division_exists = { type = 22001 id = 10202 }
+					 }  } 
+			random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+			 }
+		random_country = { limit = { tag = THIS 
+				 not = {
+					 #MANUALFIX division_exists = { type = 22003 id = 10203 }
+					 } not = {
+					 #MANUALFIX division_exists = { type = 22001 id = 10203 }
+					 }  } 
+			random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+			 }
+		random_country = { limit = { tag = THIS 
+				 not = {
+					 #MANUALFIX division_exists = { type = 22003 id = 10204 }
+					 } not = {
+					 #MANUALFIX division_exists = { type = 22001 id = 10204 }
+					 }  } 
+			random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+			 }
+		# MANUALFIX secede area command = { type = secedearea which = CHI value = "Guangxi" when = 2 }
+		5787 = { secede_province = CHI }
+		5791 = { secede_province = CHI }
+		5801 = { secede_province = CHI }
+		7553 = { secede_province = CHI }
+		7564 = { secede_province = CHI }
+		5802 = { secede_province = CHI }
+		5817 = { secede_province = CHI }
+		5831 = { secede_province = CHI }
+		5832 = { secede_province = CHI }
+		5849 = { secede_province = CHI }
+		5866 = { secede_province = CHI }
+		7574 = { secede_province = CHI }
+		7587 = { secede_province = CHI }
+		7573 = { secede_province = CHI }
+		7585 = { secede_province = CHI }
+		7586 = { secede_province = CHI }
+		7596 = { secede_province = CHI }
+		5788 = { secede_province = CHI }
+		5830 = { secede_province = CHI }
+		7563 = { secede_province = CHI }
+		7575 = { secede_province = CHI }
+		5863 = { secede_province = CHI }
+		5864 = { secede_province = CHI }
+		5882 = { secede_province = CHI }
+		5846 = { secede_province = CHI }
+		5861 = { secede_province = CHI }
+		7605 = { secede_province = CHI }
+		5847 = { secede_province = CHI }
+		5862 = { secede_province = CHI }
+		5881 = { secede_province = CHI }
+		5899 = { secede_province = CHI }
+		5900 = { secede_province = CHI }
+		5918 = { secede_province = CHI }
+		5883 = { secede_province = CHI }
+		5901 = { secede_province = CHI }
+		5902 = { secede_province = CHI }
+		5919 = { secede_province = CHI }
+		5932 = { secede_province = CHI }
+		5946 = { secede_province = CHI }
+		5850 = { secede_province = CHI }
+		5851 = { secede_province = CHI }
+		5865 = { secede_province = CHI }
+		5867 = { secede_province = CHI }
+		5884 = { secede_province = CHI }
+		5885 = { secede_province = CHI }
+		5903 = { secede_province = CHI }
+		5904 = { secede_province = CHI }
+		5965 = { secede_province = CHI }
+		5975 = { secede_province = CHI }
+		5976 = { secede_province = CHI }
+		5984 = { secede_province = CHI }
+		5985 = { secede_province = CHI }
+		5994 = { secede_province = CHI }
+		5752 = { secede_province = CHI }
+		5763 = { secede_province = CHI }
+		5764 = { secede_province = CHI }
+		5773 = { secede_province = CHI }
+		5774 = { secede_province = CHI }
+		5775 = { secede_province = CHI }
+		5789 = { secede_province = CHI }
+		5790 = { secede_province = CHI }
+		5803 = { secede_province = CHI }
+		5818 = { secede_province = CHI }
+		5819 = { secede_province = CHI }
+		5833 = { secede_province = CHI }
+		5834 = { secede_province = CHI }
+		5835 = { secede_province = CHI }
+		5776 = { secede_province = CHI }
+		5777 = { secede_province = CHI }
+		5805 = { secede_province = CHI }
+		5806 = { secede_province = CHI }
+		5820 = { secede_province = CHI }
+		5821 = { secede_province = CHI }
+		5836 = { secede_province = CHI }
+		5837 = { secede_province = CHI }
+		5852 = { secede_province = CHI }
+		5792 = { secede_province = CHI }
+		5793 = { secede_province = CHI }
+		5807 = { secede_province = CHI }
+		5808 = { secede_province = CHI }
+		5822 = { secede_province = CHI }
+		5823 = { secede_province = CHI }
+		5838 = { secede_province = CHI }
+		7541 = { secede_province = CHI }
+		7551 = { secede_province = CHI }
+		7562 = { secede_province = CHI }
+		9502 = { secede_province = CHI }
+		5804 = { secede_province = CHI }
+		7535 = { secede_province = CHI }
+		7536 = { secede_province = CHI }
+		7542 = { secede_province = CHI }
+		7552 = { secede_province = CHI }
+		5848 = { secede_province = CHI }
+		7522 = { secede_province = CHI }
+		7528 = { secede_province = CHI }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10001 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10001 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10002 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10002 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10003 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10003 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10004 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10004 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10005 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10005 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10006 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10006 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10011 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10011 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10021 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10021 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10031 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10031 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10041 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10041 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10051 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10051 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10052 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10052 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10053 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10053 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10054 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10054 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10055 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10055 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10056 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10056 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10061 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10061 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10071 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10071 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10081 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10081 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10091 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10091 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10092 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10092 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10101 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10101 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10111 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10111 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10121 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10121 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10122 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10122 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10123 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10123 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10131 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10131 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10141 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10141 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10151 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10151 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10161 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10161 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10171 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10171 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10172 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10172 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10173 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10173 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10181 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10181 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10182 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10182 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10183 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10183 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10211 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10211 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10212 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10212 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10213 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10213 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10221 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10221 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10222 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10222 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10223 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10223 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10231 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10231 }
+			 }
+		random_country = { limit = { tag = THIS 
+				 #MANUALFIX division_exists = { type = 22001 id = 10232 }
+				  } 
+			# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10232 }
+			 }
+		create_alliance = CXB
+		random_country = { limit = { tag = THIS 
+				 exists = CHC
+				  } 
+			create_alliance = CHC
+			 }
+		random_country = { limit = { tag = THIS 
+				 not = {
+					 SIK = { is_subject = yes }
+					 }  } 
+			create_alliance = SIK
+			 }
+		war = { target = ROC }
+		threat = { who = all value = -30  }
+		dissent = -20 
+		random_country = { limit = { tag = THIS 
+				 exists = ROC
+				  } 
+			country_event = 707
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = ROC
+				  } 
+			country_event = 709
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = ROC
+				  } 
+			country_event = 710
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = ROC
+				  } 
+			country_event = 711
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = ROC
+				  } 
+			country_event = 717
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = ROC
+				  } 
+			country_event = 718
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = QIN
+				  } 
+			country_event = 707
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = QIN
+				  } 
+			country_event = 709
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = QIN
+				  } 
+			country_event = 710
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = QIN
+				  } 
+			country_event = 711
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = QIN
+				  } 
+			country_event = 717
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = QIN
+				  } 
+			country_event = 718
+			 }
+		# MANUALFIX change flag command = { type = flag_ext where = CHI which = "_REP" }
+		country_event = 642
+		country_event = 647
+		threat = { who = all value = -30  }
+		}
+
+set_global_flag = 133011010_EVENT_DONE
+
+	}
+}
+
+#EVENTNAME: Rise of Warlords
+country_event = {
+id = 639
+title = "DH_EVENT_133011011_TITLE"
+desc = "DH_EVENT_133011011_DESC"
+trigger = { 
+
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011011 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011011_Option7"
+	# MANUALFIX vp command = { type = province_keypoints which = 1239 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1272 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1264 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1293 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1339 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1238 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1389 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1365 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1251 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1282 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1226 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1282 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1283 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1262 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1264 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1255 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1259 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1292 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1293 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1390 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1386 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1388 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1303 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1369 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1373 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1365 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1375 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1352 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1358 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1315 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1307 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1323 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1251 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1247 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1245 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1199 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1203 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1202 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1209 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1317 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1308 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1378 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1330 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1328 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1389 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1322 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1242 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1252 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1217 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1220 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1360 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1305 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1340 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1266 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1273 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1281 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1294 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1379 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1383 value = 1 }
+	# MANUALFIX vp command = { type = province_keypoints which = 1367 value = 1 }
+	
+set_global_flag = 133011011_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: The National Protection War
+country_event = {
+id = 640
+title = "DH_EVENT_133011013_TITLE"
+desc = "DH_EVENT_133011013_DESC"
+trigger = { 
+tag = CYN
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011013 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011013_Option7"
+	relation = { who = QIN value = -25  }
+	CHI = {
+		random_country = { limit = { tag = THIS 
+				 not = {
+					 #MANUALFIX division_exists = { type = 22003 id = 10171 }
+					 }  } 
+			random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+			 }
+		random_country = { limit = { tag = THIS 
+				 not = {
+					 #MANUALFIX division_exists = { type = 22003 id = 10172 }
+					 }  } 
+			random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+			 }
+		random_country = { limit = { tag = THIS 
+				 not = {
+					 #MANUALFIX division_exists = { type = 22003 id = 10173 }
+					 }  } 
+			random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+			 }
+		random_country = { limit = { tag = THIS 
+				 not = {
+					 #MANUALFIX division_exists = { type = 22003 id = 10181 }
+					 }  } 
+			random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+			 }
+		random_country = { limit = { tag = THIS 
+				 not = {
+					 #MANUALFIX division_exists = { type = 22003 id = 10182 }
+					 }  } 
+			random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+			 }
+		random_country = { limit = { tag = THIS 
+				 not = {
+					 #MANUALFIX division_exists = { type = 22003 id = 10183 }
+					 }  } 
+			random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = CHC
+				  } 
+			relation = { who = CHC value = 35  }
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = CHC
+				  } 
+			CHI = { non_aggression_pact = CHC }
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = CGX
+				  } 
+			CHI = { non_aggression_pact = CGX }
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = CXB
+				  } 
+			CHI = { non_aggression_pact = CXB }
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = SIK
+				  } 
+			CHI = { non_aggression_pact = SIK }
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = CGX
+				  } 
+			relation = { who = CGX value = 35  }
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = CXB
+				  } 
+			relation = { who = CXB value = 35  }
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = SIK
+				  } 
+			relation = { who = SIK value = 35  }
+			 }
+		# MANUALFIX change flag command = { type = flag_ext where = CHI which = "_REP" }
+		# MANUALFIX name command = { type = name where = CHI which = CHI_NPA }
+		war = { target = QIN }
+		dissent = -20 
+		threat = { who = all value = -40  }
+		random_country = { limit = { tag = THIS 
+				 not = {
+					 has_global_flag = 133011018_EVENT_DONE
+					 } exists = CGX
+				  } 
+			country_event = 641
+			 }
+		# MANUALFIX secede area command = { type = secedearea which = CHI value = "Yunnan" when = 2 }
+		random_country = { limit = { tag = THIS 
+				 not = {
+					 9347 = { controlled_by = TIB }
+					 }  } 
+			9347 = { secede_province = CHI }
+			9348 = { secede_province = CHI }
+			9379 = { secede_province = CHI }
+			 }
+		9349 = { secede_province = CHI }
+		9476 = { secede_province = CHI }
+		9322 = { secede_province = CHI }
+		9380 = { secede_province = CHI }
+		9414 = { secede_province = CHI }
+		9444 = { secede_province = CHI }
+		9501 = { secede_province = CHI }
+		random_country = { limit = { tag = THIS 
+				 exists = QIN
+				  } 
+			country_event = 710
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = QIN
+				  } 
+			country_event = 711
+			 }
+		country_event = 647
+		}
+
+set_global_flag = 133011013_EVENT_DONE
+
+	}
+}
+
+#EVENTNAME: The National Protection War
+country_event = {
+id = 641
+title = "DH_EVENT_133011014_TITLE"
+desc = "DH_EVENT_133011014_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011014 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISexists = CGX } } 
+	name = "DH_EVENT_133011014_Option7"
+	THIS = { inherit = CGX }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22003 id = 10191 }
+			 #MANUALFIX division_exists = { type = 22001 id = 10191 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10191 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22003 id = 10192 }
+			 #MANUALFIX division_exists = { type = 22001 id = 10192 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10192 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22003 id = 10193 }
+			 #MANUALFIX division_exists = { type = 22001 id = 10193 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10193 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22003 id = 10201 }
+			 #MANUALFIX division_exists = { type = 22001 id = 10201 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10201 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22003 id = 10202 }
+			 #MANUALFIX division_exists = { type = 22001 id = 10202 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10202 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22003 id = 10203 }
+			 #MANUALFIX division_exists = { type = 22001 id = 10203 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10203 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22003 id = 10204 }
+			 #MANUALFIX division_exists = { type = 22001 id = 10204 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10204 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = {
+				and = { 
+					 not = {
+						 #MANUALFIX division_exists = { type = 22001 id = 10191 }
+						 } #MANUALFIX division_exists = { type = 22003 id = 10191 }
+					 }
+				and = { 
+					 not = {
+						 #MANUALFIX division_exists = { type = 22001 id = 10192 }
+						 } #MANUALFIX division_exists = { type = 22003 id = 10192 }
+					 }
+				and = { 
+					 not = {
+						 #MANUALFIX division_exists = { type = 22001 id = 10193 }
+						 } #MANUALFIX division_exists = { type = 22003 id = 10193 }
+					 }
+				}  } 
+		7553 = { hq_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX division_exists = { type = 22001 id = 10191 }
+				 } #MANUALFIX division_exists = { type = 22003 id = 10191 }
+			  } 
+		load_oob = 10191.txt
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX division_exists = { type = 22001 id = 10192 }
+				 } #MANUALFIX division_exists = { type = 22003 id = 10192 }
+			  } 
+		load_oob = 10192.txt
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX division_exists = { type = 22001 id = 10193 }
+				 } #MANUALFIX division_exists = { type = 22003 id = 10193 }
+			  } 
+		load_oob = 10193.txt
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = {
+				and = { 
+					 not = {
+						 #MANUALFIX division_exists = { type = 22001 id = 10201 }
+						 } #MANUALFIX division_exists = { type = 22003 id = 10201 }
+					 }
+				and = { 
+					 not = {
+						 #MANUALFIX division_exists = { type = 22001 id = 10202 }
+						 } #MANUALFIX division_exists = { type = 22003 id = 10202 }
+					 }
+				and = { 
+					 not = {
+						 #MANUALFIX division_exists = { type = 22001 id = 10203 }
+						 } #MANUALFIX division_exists = { type = 22003 id = 10203 }
+					 }
+				and = { 
+					 not = {
+						 #MANUALFIX division_exists = { type = 22001 id = 10204 }
+						 } #MANUALFIX division_exists = { type = 22003 id = 10204 }
+					 }
+				}  } 
+		5834 = { hq_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX division_exists = { type = 22001 id = 10201 }
+				 } #MANUALFIX division_exists = { type = 22003 id = 10201 }
+			  } 
+		load_oob = 10201.txt
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX division_exists = { type = 22001 id = 10202 }
+				 } #MANUALFIX division_exists = { type = 22003 id = 10202 }
+			  } 
+		load_oob = 10202.txt
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX division_exists = { type = 22001 id = 10203 }
+				 } #MANUALFIX division_exists = { type = 22003 id = 10203 }
+			  } 
+		load_oob = 10203.txt
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX division_exists = { type = 22001 id = 10204 }
+				 } #MANUALFIX division_exists = { type = 22003 id = 10204 }
+			  } 
+		load_oob = 10204.txt
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = {
+				and = { 
+					 not = {
+						 #MANUALFIX division_exists = { type = 22003 id = 10191 }
+						 } not = {
+						 #MANUALFIX division_exists = { type = 22001 id = 10191 }
+						 } }
+				and = { 
+					 not = {
+						 #MANUALFIX division_exists = { type = 22003 id = 10192 }
+						 } not = {
+						 #MANUALFIX division_exists = { type = 22001 id = 10192 }
+						 } }
+				and = { 
+					 not = {
+						 #MANUALFIX division_exists = { type = 22003 id = 10193 }
+						 } not = {
+						 #MANUALFIX division_exists = { type = 22001 id = 10193 }
+						 } }
+				}  } 
+		7553 = { hq_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX division_exists = { type = 22003 id = 10191 }
+				 } not = {
+				 #MANUALFIX division_exists = { type = 22001 id = 10191 }
+				 }  } 
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX division_exists = { type = 22003 id = 10192 }
+				 } not = {
+				 #MANUALFIX division_exists = { type = 22001 id = 10192 }
+				 }  } 
+		random_owned = { limit = { controlled_by = THIS  } militia_brigade = current militia_brigade = current militia_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX division_exists = { type = 22003 id = 10193 }
+				 } not = {
+				 #MANUALFIX division_exists = { type = 22001 id = 10193 }
+				 }  } 
+		random_owned = { limit = { controlled_by = THIS  } militia_brigade = current militia_brigade = current militia_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = {
+				and = { 
+					 not = {
+						 #MANUALFIX division_exists = { type = 22003 id = 10201 }
+						 } not = {
+						 #MANUALFIX division_exists = { type = 22001 id = 10201 }
+						 } }
+				and = { 
+					 not = {
+						 #MANUALFIX division_exists = { type = 22003 id = 10202 }
+						 } not = {
+						 #MANUALFIX division_exists = { type = 22001 id = 10202 }
+						 } }
+				and = { 
+					 not = {
+						 #MANUALFIX division_exists = { type = 22003 id = 10203 }
+						 } not = {
+						 #MANUALFIX division_exists = { type = 22001 id = 10203 }
+						 } }
+				and = { 
+					 not = {
+						 #MANUALFIX division_exists = { type = 22003 id = 10204 }
+						 } not = {
+						 #MANUALFIX division_exists = { type = 22001 id = 10204 }
+						 } }
+				}  } 
+		5834 = { hq_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX division_exists = { type = 22003 id = 10201 }
+				 } not = {
+				 #MANUALFIX division_exists = { type = 22001 id = 10201 }
+				 }  } 
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX division_exists = { type = 22003 id = 10202 }
+				 } not = {
+				 #MANUALFIX division_exists = { type = 22001 id = 10202 }
+				 }  } 
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX division_exists = { type = 22003 id = 10203 }
+				 } not = {
+				 #MANUALFIX division_exists = { type = 22001 id = 10203 }
+				 }  } 
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX division_exists = { type = 22003 id = 10204 }
+				 } not = {
+				 #MANUALFIX division_exists = { type = 22001 id = 10204 }
+				 }  } 
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		 }
+	# MANUALFIX secede area command = { type = secedearea which = CHI value = "Guangxi" when = 2 }
+	5787 = { secede_province = CHI }
+	5791 = { secede_province = CHI }
+	5801 = { secede_province = CHI }
+	7553 = { secede_province = CHI }
+	7564 = { secede_province = CHI }
+	5802 = { secede_province = CHI }
+	5817 = { secede_province = CHI }
+	5831 = { secede_province = CHI }
+	5832 = { secede_province = CHI }
+	5849 = { secede_province = CHI }
+	5866 = { secede_province = CHI }
+	7574 = { secede_province = CHI }
+	7587 = { secede_province = CHI }
+	7573 = { secede_province = CHI }
+	7585 = { secede_province = CHI }
+	7586 = { secede_province = CHI }
+	7596 = { secede_province = CHI }
+	5788 = { secede_province = CHI }
+	5830 = { secede_province = CHI }
+	7563 = { secede_province = CHI }
+	7575 = { secede_province = CHI }
+	5863 = { secede_province = CHI }
+	5864 = { secede_province = CHI }
+	5882 = { secede_province = CHI }
+	5846 = { secede_province = CHI }
+	5861 = { secede_province = CHI }
+	7605 = { secede_province = CHI }
+	5847 = { secede_province = CHI }
+	5862 = { secede_province = CHI }
+	5881 = { secede_province = CHI }
+	5899 = { secede_province = CHI }
+	5900 = { secede_province = CHI }
+	5918 = { secede_province = CHI }
+	5883 = { secede_province = CHI }
+	5901 = { secede_province = CHI }
+	5902 = { secede_province = CHI }
+	5919 = { secede_province = CHI }
+	5932 = { secede_province = CHI }
+	5946 = { secede_province = CHI }
+	5850 = { secede_province = CHI }
+	5851 = { secede_province = CHI }
+	5865 = { secede_province = CHI }
+	5867 = { secede_province = CHI }
+	5884 = { secede_province = CHI }
+	5885 = { secede_province = CHI }
+	5903 = { secede_province = CHI }
+	5904 = { secede_province = CHI }
+	5965 = { secede_province = CHI }
+	5975 = { secede_province = CHI }
+	5976 = { secede_province = CHI }
+	5984 = { secede_province = CHI }
+	5985 = { secede_province = CHI }
+	5994 = { secede_province = CHI }
+	5752 = { secede_province = CHI }
+	5763 = { secede_province = CHI }
+	5764 = { secede_province = CHI }
+	5773 = { secede_province = CHI }
+	5774 = { secede_province = CHI }
+	5775 = { secede_province = CHI }
+	5789 = { secede_province = CHI }
+	5790 = { secede_province = CHI }
+	5803 = { secede_province = CHI }
+	5818 = { secede_province = CHI }
+	5819 = { secede_province = CHI }
+	5833 = { secede_province = CHI }
+	5834 = { secede_province = CHI }
+	5835 = { secede_province = CHI }
+	5776 = { secede_province = CHI }
+	5777 = { secede_province = CHI }
+	5805 = { secede_province = CHI }
+	5806 = { secede_province = CHI }
+	5820 = { secede_province = CHI }
+	5821 = { secede_province = CHI }
+	5836 = { secede_province = CHI }
+	5837 = { secede_province = CHI }
+	5852 = { secede_province = CHI }
+	5792 = { secede_province = CHI }
+	5793 = { secede_province = CHI }
+	5807 = { secede_province = CHI }
+	5808 = { secede_province = CHI }
+	5822 = { secede_province = CHI }
+	5823 = { secede_province = CHI }
+	5838 = { secede_province = CHI }
+	7541 = { secede_province = CHI }
+	7551 = { secede_province = CHI }
+	7562 = { secede_province = CHI }
+	9502 = { secede_province = CHI }
+	5804 = { secede_province = CHI }
+	7535 = { secede_province = CHI }
+	7536 = { secede_province = CHI }
+	7542 = { secede_province = CHI }
+	7552 = { secede_province = CHI }
+	5848 = { secede_province = CHI }
+	7522 = { secede_province = CHI }
+	7528 = { secede_province = CHI }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10001 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10001 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10002 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10002 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10003 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10003 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10004 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10004 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10005 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10005 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10006 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10006 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10011 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10011 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10021 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10021 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10031 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10031 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10041 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10041 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10051 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10051 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10052 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10052 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10053 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10053 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10054 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10054 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10055 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10055 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10056 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10056 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10061 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10061 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10071 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10071 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10081 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10081 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10091 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10091 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10092 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10092 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10101 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10101 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10111 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10111 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10121 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10121 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10122 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10122 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10123 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10123 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10131 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10131 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10141 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10141 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10151 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10151 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10161 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10161 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10171 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10171 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10172 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10172 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10173 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10173 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10181 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10181 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10182 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10182 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10183 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10183 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10211 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10211 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10212 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10212 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10213 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10213 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10221 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10221 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10222 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10222 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10223 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10223 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10231 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10231 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22001 id = 10232 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22001 value = 10232 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = QIN
+			  } 
+		country_event = 707
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = QIN
+			  } 
+		country_event = 709
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = QIN
+			  } 
+		country_event = 712
+		 }
+	threat = { who = all value = -30  }
+	
+set_global_flag = 133011014_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Republican Allies Desert
+country_event = {
+id = 642
+title = "DH_EVENT_133011017_TITLE"
+desc = "DH_EVENT_133011017_DESC"
+trigger = { 
+tag = ROC
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011017 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011017_Option7"
+	QIN = {
+		head_of_state = 1185100 
+		head_of_government = 1185112 
+		country_event = 645
+		country_event = 639
+		random_country = { limit = { tag = THIS 
+				 exists = CHI
+				  } 
+			country_event = 639
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = CYN
+				  } 
+			country_event = 639
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = CGX
+				  } 
+			country_event = 639
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = CHC
+				  } 
+			country_event = 639
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = SIK
+				  } 
+			country_event = 639
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = CSX
+				  } 
+			country_event = 639
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = CXB
+				  } 
+			country_event = 639
+			 }
+		set_global_flag = SLEEPEVENT_133011012 
+		set_global_flag = SLEEPEVENT_133011021 
+		}
+
+set_global_flag = 133011017_EVENT_DONE
+
+	}
+}
+
+#EVENTNAME: Form the Great Chinese Empire
+country_event = {
+id = 643
+title = "DH_EVENT_133011012_TITLE"
+desc = "DH_EVENT_133011012_DESC"
+trigger = {
+	head_of_state = 1325100
+	or = {
+		has_global_flag = 133011015_EVENT_DONE
+		}
+	#NOEQUIVALENT random =  50
+	not = {
+		 has_global_flag = 133011020_EVENT_DONE
+		 }
+	not = {
+		 has_global_flag = 133011009_EVENT_DONE
+		 }
+	
+tag = ROC
+date = 1915.1.1
+
+not = { date = 1915.12.29
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011012 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  15 }
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011012_Option7"
+	QIN = {
+		dissent = 15 
+		head_of_state = 1185100 
+		head_of_government = 1185112 
+		random_country = { limit = { tag = THIS 
+				 not = {
+					 exists = CYN
+					 }  } 
+			release = CYN
+			 }
+		country_event = 645
+		country_event = 639
+		random_country = { limit = { tag = THIS 
+				 exists = CHI
+				  } 
+			country_event = 639
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = CYN
+				  } 
+			country_event = 639
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = CGX
+				  } 
+			country_event = 639
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = CHC
+				  } 
+			country_event = 639
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = SIK
+				  } 
+			country_event = 639
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = CSX
+				  } 
+			country_event = 639
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = CXB
+				  } 
+			country_event = 639
+			 }
+		set_global_flag = SLEEPEVENT_133011017 
+		set_global_flag = SLEEPEVENT_133011021 
+		set_global_flag = SLEEPEVENT_133011010 
+		set_global_flag = SLEEPEVENT_133011002 
+		}
+
+set_global_flag = 133011012_EVENT_DONE
+
+	}
+}
+
+#EVENTNAME: Republican Allies Desert
+country_event = {
+id = 644
+title = "DH_EVENT_133011021_TITLE"
+desc = "DH_EVENT_133011021_DESC"
+trigger = {
+	head_of_state = 1325100
+	not = {
+		 has_global_flag = 133011011_EVENT_DONE
+		 }
+	not = {
+		 has_global_flag = 133011009_EVENT_DONE
+		 }
+	or = {
+		and = {
+			year = 1916
+			dissent = 10
+			}
+		dissent = 40
+		}
+	
+tag = ROC
+date = 1915.1.1
+
+not = { date = 1916.1.1
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011021 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  15 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_133011021_Option7"
+	QIN = {
+		head_of_state = 1185100 
+		head_of_government = 1185112 
+		random_country = { limit = { tag = THIS 
+				 not = {
+					 exists = CYN
+					 }  } 
+			release = CYN
+			 }
+		country_event = 645
+		country_event = 639
+		random_country = { limit = { tag = THIS 
+				 exists = CHI
+				  } 
+			country_event = 639
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = CYN
+				  } 
+			country_event = 639
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = CGX
+				  } 
+			country_event = 639
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = CHC
+				  } 
+			country_event = 639
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = SIK
+				  } 
+			country_event = 639
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = CSX
+				  } 
+			country_event = 639
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = CXB
+				  } 
+			country_event = 639
+			 }
+		set_global_flag = SLEEPEVENT_133011012 
+		set_global_flag = SLEEPEVENT_133011017 
+		set_global_flag = SLEEPEVENT_133011010 
+		set_global_flag = SLEEPEVENT_133011002 
+		}
+
+set_global_flag = 133011021_EVENT_DONE
+
+	}
+}
+
+#EVENTNAME: Claiming the Mandate of Heaven
+country_event = {
+id = 645
+title = "DH_EVENT_133011020_TITLE"
+desc = "DH_EVENT_133011020_DESC"
+trigger = { 
+tag = QIN
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011020 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011020_Option7"
+	dissent = 15 
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 exists = CGX
+				 } not = {
+				 exists = CHI
+				 }  } 
+		release = CGX
+		 }
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	ZZZ = { create_vassal = THIS } THIS = { inherit = ZZZ }
+	ZZZ = { create_vassal = THIS } THIS = { inherit = ZZZ }
+	ZZZ = { create_vassal = THIS } THIS = { inherit = ZZZ }
+	ZZZ = { create_vassal = THIS } THIS = { inherit = ZZZ }
+	THIS = { add_core = 5744 }
+	THIS = { add_core = 5745 }
+	THIS = { add_core = 5756 }
+	THIS = { add_core = 5767 }
+	THIS = { add_core = 5768 }
+	THIS = { add_core = 5778 }
+	THIS = { add_core = 5779 }
+	THIS = { add_core = 5387 }
+	THIS = { add_core = 5405 }
+	THIS = { add_core = 5419 }
+	THIS = { add_core = 9232 }
+	THIS = { add_core = 5449 }
+	THIS = { add_core = 5450 }
+	THIS = { add_core = 5469 }
+	THIS = { add_core = 5437 }
+	THIS = { add_core = 5453 }
+	THIS = { add_core = 5473 }
+	THIS = { add_core = 5474 }
+	THIS = { add_core = 5495 }
+	THIS = { add_core = 5496 }
+	THIS = { add_core = 5278 }
+	THIS = { add_core = 5418 }
+	THIS = { add_core = 5420 }
+	THIS = { add_core = 5435 }
+	THIS = { add_core = 5537 }
+	THIS = { add_core = 5569 }
+	THIS = { add_core = 5570 }
+	THIS = { add_core = 5595 }
+	THIS = { add_core = 5432 }
+	THIS = { add_core = 5448 }
+	THIS = { add_core = 5468 }
+	THIS = { add_core = 5401 }
+	THIS = { add_core = 5417 }
+	THIS = { add_core = 5433 }
+	THIS = { add_core = 7457 }
+	THIS = { add_core = 7467 }
+	THIS = { add_core = 5383 }
+	THIS = { add_core = 5434 }
+	THIS = { add_core = 7468 }
+	THIS = { add_core = 7476 }
+	THIS = { add_core = 7487 }
+	THIS = { add_core = 5491 }
+	THIS = { add_core = 5513 }
+	THIS = { add_core = 5514 }
+	THIS = { add_core = 7493 }
+	THIS = { add_core = 7499 }
+	THIS = { add_core = 7498 }
+	THIS = { add_core = 7503 }
+	THIS = { add_core = 5618 }
+	THIS = { add_core = 5661 }
+	THIS = { add_core = 7508 }
+	THIS = { add_core = 5536 }
+	THIS = { add_core = 5568 }
+	THIS = { add_core = 5594 }
+	THIS = { add_core = 5617 }
+	THIS = { add_core = 5635 }
+	THIS = { add_core = 5571 }
+	THIS = { add_core = 5572 }
+	THIS = { add_core = 5596 }
+	THIS = { add_core = 5597 }
+	THIS = { add_core = 5619 }
+	THIS = { add_core = 5636 }
+	THIS = { add_core = 5637 }
+	THIS = { add_core = 5650 }
+	THIS = { add_core = 5494 }
+	THIS = { add_core = 5518 }
+	THIS = { add_core = 5540 }
+	THIS = { add_core = 5519 }
+	THIS = { add_core = 5542 }
+	THIS = { add_core = 5599 }
+	THIS = { add_core = 5621 }
+	THIS = { add_core = 5541 }
+	THIS = { add_core = 5573 }
+	THIS = { add_core = 5598 }
+	THIS = { add_core = 5638 }
+	THIS = { add_core = 5623 }
+	THIS = { add_core = 5653 }
+	THIS = { add_core = 5665 }
+	THIS = { add_core = 5674 }
+	THIS = { add_core = 5675 }
+	THIS = { add_core = 5685 }
+	THIS = { add_core = 5686 }
+	THIS = { add_core = 5695 }
+	THIS = { add_core = 5622 }
+	THIS = { add_core = 5639 }
+	THIS = { add_core = 5640 }
+	THIS = { add_core = 5651 }
+	THIS = { add_core = 5652 }
+	THIS = { add_core = 5664 }
+	THIS = { add_core = 5693 }
+	THIS = { add_core = 5694 }
+	THIS = { add_core = 5701 }
+	THIS = { add_core = 5702 }
+	THIS = { add_core = 5703 }
+	THIS = { add_core = 5710 }
+	THIS = { add_core = 5711 }
+	THIS = { add_core = 5719 }
+	THIS = { add_core = 5728 }
+	THIS = { add_core = 5717 }
+	THIS = { add_core = 5718 }
+	THIS = { add_core = 5726 }
+	THIS = { add_core = 5727 }
+	THIS = { add_core = 5734 }
+	THIS = { add_core = 5735 }
+	THIS = { add_core = 5736 }
+	THIS = { add_core = 5746 }
+	THIS = { add_core = 5757 }
+	THIS = { add_core = 5732 }
+	THIS = { add_core = 5742 }
+	THIS = { add_core = 5743 }
+	THIS = { add_core = 5753 }
+	THIS = { add_core = 5755 }
+	THIS = { add_core = 5765 }
+	THIS = { add_core = 5766 }
+	THIS = { add_core = 5660 }
+	THIS = { add_core = 5681 }
+	THIS = { add_core = 7517 }
+	THIS = { add_core = 5620 }
+	THIS = { add_core = 5673 }
+	THIS = { add_core = 7512 }
+	THIS = { add_core = 7515 }
+	THIS = { add_core = 5706 }
+	THIS = { add_core = 5715 }
+	THIS = { add_core = 5723 }
+	THIS = { add_core = 7519 }
+	THIS = { add_core = 7520 }
+	THIS = { add_core = 7524 }
+	THIS = { add_core = 5731 }
+	THIS = { add_core = 5741 }
+	THIS = { add_core = 5754 }
+	THIS = { add_core = 7530 }
+	THIS = { add_core = 7544 }
+	THIS = { add_core = 7554 }
+	THIS = { add_core = 7529 }
+	THIS = { add_core = 7537 }
+	THIS = { add_core = 7543 }
+	THIS = { add_core = 5707 }
+	THIS = { add_core = 7514 }
+	THIS = { add_core = 7523 }
+	THIS = { add_core = 9446 }
+	THIS = { add_core = 9478 }
+	THIS = { add_core = 4739 }
+	THIS = { add_core = 9382 }
+	THIS = { add_core = 9416 }
+	THIS = { add_core = 9324 }
+	THIS = { add_core = 9350 }
+	THIS = { add_core = 9381 }
+	THIS = { add_core = 9415 }
+	THIS = { add_core = 5113 }
+	THIS = { add_core = 9477 }
+	THIS = { add_core = 7541 }
+	THIS = { add_core = 7551 }
+	THIS = { add_core = 7562 }
+	THIS = { add_core = 9502 }
+	THIS = { add_core = 5804 }
+	THIS = { add_core = 7535 }
+	THIS = { add_core = 7536 }
+	THIS = { add_core = 7542 }
+	THIS = { add_core = 7552 }
+	THIS = { add_core = 7511 }
+	THIS = { add_core = 5848 }
+	THIS = { add_core = 7522 }
+	THIS = { add_core = 7528 }
+	THIS = { add_core = 5709 }
+	THIS = { add_core = 7516 }
+	THIS = { add_core = 7518 }
+	THIS = { add_core = 5724 }
+	THIS = { add_core = 5725 }
+	THIS = { add_core = 5733 }
+	THIS = { add_core = 5406 }
+	THIS = { add_core = 5421 }
+	THIS = { add_core = 5422 }
+	THIS = { add_core = 5454 }
+	THIS = { add_core = 5472 }
+	THIS = { add_core = 7497 }
+	THIS = { add_core = 7502 }
+	THIS = { add_core = 9352 }
+	THIS = { add_core = 5538 }
+	THIS = { add_core = 7492 }
+	THIS = { add_core = 7507 }
+	THIS = { add_core = 9295 }
+	THIS = { add_core = 9351 }
+	THIS = { add_core = 5400 }
+	THIS = { add_core = 5416 }
+	THIS = { add_core = 7447 }
+	THIS = { add_core = 7477 }
+	THIS = { add_core = 9445 }
+	THIS = { add_core = 5436 }
+	THIS = { add_core = 5452 }
+	THIS = { add_core = 5470 }
+	THIS = { add_core = 5471 }
+	THIS = { add_core = 5492 }
+	THIS = { add_core = 5493 }
+	THIS = { add_core = 5515 }
+	THIS = { add_core = 5516 }
+	THIS = { add_core = 5517 }
+	THIS = { add_core = 5539 }
+	THIS = { add_core = 7510 }
+	THIS = { add_core = 9383 }
+	THIS = { add_core = 5648 }
+	THIS = { add_core = 5649 }
+	THIS = { add_core = 5662 }
+	THIS = { add_core = 5671 }
+	THIS = { add_core = 5663 }
+	THIS = { add_core = 5672 }
+	THIS = { add_core = 5683 }
+	THIS = { add_core = 5684 }
+	THIS = { add_core = 5682 }
+	THIS = { add_core = 5691 }
+	THIS = { add_core = 5692 }
+	THIS = { add_core = 5698 }
+	THIS = { add_core = 5699 }
+	THIS = { add_core = 5700 }
+	THIS = { add_core = 5708 }
+	THIS = { add_core = 5716 }
+	THIS = { add_core = 5334 }
+	THIS = { add_core = 5361 }
+	THIS = { add_core = 5302 }
+	THIS = { add_core = 5362 }
+	THIS = { add_core = 5335 }
+	THIS = { add_core = 7417 }
+	THIS = { add_core = 7425 }
+	THIS = { add_core = 5241 }
+	THIS = { add_core = 7398 }
+	THIS = { add_core = 7410 }
+	THIS = { add_core = 4517 }
+	THIS = { add_core = 5177 }
+	THIS = { add_core = 5018 }
+	THIS = { add_core = 4934 }
+	THIS = { add_core = 4979 }
+	THIS = { add_core = 5053 }
+	THIS = { add_core = 4885 }
+	THIS = { add_core = 4886 }
+	THIS = { add_core = 4933 }
+	THIS = { add_core = 4978 }
+	THIS = { add_core = 5016 }
+	THIS = { add_core = 4977 }
+	THIS = { add_core = 5083 }
+	THIS = { add_core = 5110 }
+	THIS = { add_core = 5144 }
+	THIS = { add_core = 5207 }
+	THIS = { add_core = 5208 }
+	THIS = { add_core = 5209 }
+	THIS = { add_core = 5240 }
+	THIS = { add_core = 5273 }
+	THIS = { add_core = 7399 }
+	THIS = { add_core = 7405 }
+	THIS = { add_core = 7411 }
+	THIS = { add_core = 7446 }
+	THIS = { add_core = 5305 }
+	THIS = { add_core = 5306 }
+	THIS = { add_core = 5337 }
+	THIS = { add_core = 5338 }
+	THIS = { add_core = 5364 }
+	THIS = { add_core = 5365 }
+	THIS = { add_core = 5386 }
+	THIS = { add_core = 5403 }
+	THIS = { add_core = 5051 }
+	THIS = { add_core = 5111 }
+	THIS = { add_core = 5141 }
+	THIS = { add_core = 5174 }
+	THIS = { add_core = 5175 }
+	THIS = { add_core = 5300 }
+	THIS = { add_core = 5385 }
+	THIS = { add_core = 5404 }
+	THIS = { add_core = 7418 }
+	THIS = { add_core = 5206 }
+	THIS = { add_core = 5239 }
+	THIS = { add_core = 5271 }
+	THIS = { add_core = 5272 }
+	THIS = { add_core = 5301 }
+	THIS = { add_core = 5333 }
+	THIS = { add_core = 7436 }
+	THIS = { add_core = 5084 }
+	THIS = { add_core = 5085 }
+	THIS = { add_core = 5112 }
+	THIS = { add_core = 5363 }
+	THIS = { add_core = 5384 }
+	THIS = { add_core = 5402 }
+	THIS = { add_core = 5086 }
+	THIS = { add_core = 5143 }
+	THIS = { add_core = 5176 }
+	THIS = { add_core = 5054 }
+	THIS = { add_core = 5178 }
+	THIS = { add_core = 5179 }
+	THIS = { add_core = 5210 }
+	THIS = { add_core = 5242 }
+	THIS = { add_core = 5274 }
+	THIS = { add_core = 4935 }
+	THIS = { add_core = 4981 }
+	THIS = { add_core = 5019 }
+	THIS = { add_core = 5055 }
+	THIS = { add_core = 5142 }
+	THIS = { add_core = 5145 }
+	THIS = { add_core = 5211 }
+	THIS = { add_core = 5212 }
+	THIS = { add_core = 5243 }
+	THIS = { add_core = 5244 }
+	THIS = { add_core = 5245 }
+	THIS = { add_core = 5276 }
+	THIS = { add_core = 5277 }
+	THIS = { add_core = 5275 }
+	THIS = { add_core = 5303 }
+	THIS = { add_core = 5304 }
+	THIS = { add_core = 5336 }
+	THIS = { add_core = 7028 }
+	THIS = { add_core = 7044 }
+	THIS = { add_core = 7061 }
+	THIS = { add_core = 7062 }
+	THIS = { add_core = 7078 }
+	THIS = { add_core = 7079 }
+	THIS = { add_core = 7098 }
+	THIS = { add_core = 3993 }
+	THIS = { add_core = 4062 }
+	THIS = { add_core = 7099 }
+	THIS = { add_core = 4324 }
+	THIS = { add_core = 4387 }
+	THIS = { add_core = 4388 }
+	THIS = { add_core = 4454 }
+	THIS = { add_core = 4455 }
+	THIS = { add_core = 4520 }
+	THIS = { add_core = 4521 }
+	THIS = { add_core = 4579 }
+	THIS = { add_core = 4126 }
+	THIS = { add_core = 4128 }
+	THIS = { add_core = 4191 }
+	THIS = { add_core = 4192 }
+	THIS = { add_core = 4259 }
+	THIS = { add_core = 4260 }
+	THIS = { add_core = 4325 }
+	THIS = { add_core = 7119 }
+	THIS = { add_core = 7140 }
+	THIS = { add_core = 7164 }
+	THIS = { add_core = 4258 }
+	THIS = { add_core = 7097 }
+	THIS = { add_core = 7138 }
+	THIS = { add_core = 7139 }
+	THIS = { add_core = 7163 }
+	THIS = { add_core = 7188 }
+	THIS = { add_core = 7212 }
+	THIS = { add_core = 7060 }
+	THIS = { add_core = 7076 }
+	THIS = { add_core = 7095 }
+	THIS = { add_core = 7096 }
+	THIS = { add_core = 7117 }
+	THIS = { add_core = 7137 }
+	THIS = { add_core = 8827 }
+	THIS = { add_core = 8573 }
+	THIS = { add_core = 8636 }
+	THIS = { add_core = 8722 }
+	THIS = { add_core = 8748 }
+	THIS = { add_core = 8803 }
+	THIS = { add_core = 8773 }
+	THIS = { add_core = 8826 }
+	THIS = { add_core = 8872 }
+	THIS = { add_core = 7116 }
+	THIS = { add_core = 7136 }
+	THIS = { add_core = 7161 }
+	THIS = { add_core = 4681 }
+	THIS = { add_core = 7135 }
+	THIS = { add_core = 7159 }
+	THIS = { add_core = 7160 }
+	THIS = { add_core = 7183 }
+	THIS = { add_core = 7184 }
+	THIS = { add_core = 7208 }
+	THIS = { add_core = 7233 }
+	THIS = { add_core = 7259 }
+	THIS = { add_core = 7276 }
+	THIS = { add_core = 4323 }
+	THIS = { add_core = 4384 }
+	THIS = { add_core = 4385 }
+	THIS = { add_core = 4386 }
+	THIS = { add_core = 4451 }
+	THIS = { add_core = 4452 }
+	THIS = { add_core = 4453 }
+	THIS = { add_core = 4516 }
+	THIS = { add_core = 4518 }
+	THIS = { add_core = 4792 }
+	THIS = { add_core = 4841 }
+	THIS = { add_core = 4842 }
+	THIS = { add_core = 4891 }
+	THIS = { add_core = 4892 }
+	THIS = { add_core = 4514 }
+	THIS = { add_core = 4515 }
+	THIS = { add_core = 4572 }
+	THIS = { add_core = 4573 }
+	THIS = { add_core = 4629 }
+	THIS = { add_core = 4630 }
+	THIS = { add_core = 4631 }
+	THIS = { add_core = 4686 }
+	THIS = { add_core = 4737 }
+	THIS = { add_core = 4738 }
+	THIS = { add_core = 4682 }
+	THIS = { add_core = 4732 }
+	THIS = { add_core = 4784 }
+	THIS = { add_core = 4785 }
+	THIS = { add_core = 4833 }
+	THIS = { add_core = 4834 }
+	THIS = { add_core = 4932 }
+	THIS = { add_core = 7296 }
+	THIS = { add_core = 7312 }
+	THIS = { add_core = 7313 }
+	THIS = { add_core = 7325 }
+	THIS = { add_core = 7326 }
+	THIS = { add_core = 7338 }
+	THIS = { add_core = 8606 }
+	THIS = { add_core = 8670 }
+	THIS = { add_core = 8723 }
+	THIS = { add_core = 8749 }
+	THIS = { add_core = 8750 }
+	THIS = { add_core = 4450 }
+	THIS = { add_core = 7162 }
+	THIS = { add_core = 7186 }
+	THIS = { add_core = 7187 }
+	THIS = { add_core = 7210 }
+	THIS = { add_core = 7211 }
+	THIS = { add_core = 7237 }
+	THIS = { add_core = 7094 }
+	THIS = { add_core = 7115 }
+	THIS = { add_core = 8801 }
+	THIS = { add_core = 4571 }
+	THIS = { add_core = 4684 }
+	THIS = { add_core = 7185 }
+	THIS = { add_core = 7234 }
+	THIS = { add_core = 7235 }
+	THIS = { add_core = 7236 }
+	THIS = { add_core = 7260 }
+	THIS = { add_core = 7261 }
+	THIS = { add_core = 7297 }
+	THIS = { add_core = 4519 }
+	THIS = { add_core = 4577 }
+	THIS = { add_core = 4578 }
+	THIS = { add_core = 4633 }
+	THIS = { add_core = 4634 }
+	THIS = { add_core = 4689 }
+	THIS = { add_core = 4690 }
+	THIS = { add_core = 4574 }
+	THIS = { add_core = 4575 }
+	THIS = { add_core = 4576 }
+	THIS = { add_core = 4632 }
+	THIS = { add_core = 4687 }
+	THIS = { add_core = 4688 }
+	THIS = { add_core = 4740 }
+	THIS = { add_core = 4741 }
+	THIS = { add_core = 4793 }
+	THIS = { add_core = 4788 }
+	THIS = { add_core = 4837 }
+	THIS = { add_core = 4889 }
+	THIS = { add_core = 4936 }
+	THIS = { add_core = 4626 }
+	THIS = { add_core = 4627 }
+	THIS = { add_core = 4628 }
+	THIS = { add_core = 4680 }
+	THIS = { add_core = 4683 }
+	THIS = { add_core = 4733 }
+	THIS = { add_core = 4734 }
+	THIS = { add_core = 4735 }
+	THIS = { add_core = 4736 }
+	THIS = { add_core = 4786 }
+	THIS = { add_core = 4787 }
+	THIS = { add_core = 4835 }
+	THIS = { add_core = 4836 }
+	THIS = { add_core = 4887 }
+	THIS = { add_core = 4888 }
+	THIS = { add_core = 7277 }
+	THIS = { add_core = 7278 }
+	THIS = { add_core = 4685 }
+	THIS = { add_core = 4789 }
+	THIS = { add_core = 4790 }
+	THIS = { add_core = 4791 }
+	THIS = { add_core = 4838 }
+	THIS = { add_core = 4839 }
+	THIS = { add_core = 4840 }
+	THIS = { add_core = 4890 }
+	THIS = { add_core = 4937 }
+	THIS = { add_core = 4938 }
+	THIS = { add_core = 4982 }
+	THIS = { add_core = 6988 }
+	THIS = { add_core = 7043 }
+	THIS = { add_core = 7077 }
+	THIS = { add_core = 7118 }
+	THIS = { add_core = 8802 }
+	THIS = { add_core = 7075 }
+	THIS = { add_core = 8637 }
+	THIS = { add_core = 8720 }
+	THIS = { add_core = 8774 }
+	THIS = { add_core = 9265 }
+	THIS = { add_core = 9325 }
+	THIS = { add_core = 9233 }
+	THIS = { add_core = 9234 }
+	THIS = { add_core = 9266 }
+	THIS = { add_core = 5017 }
+	THIS = { add_core = 5050 }
+	THIS = { add_core = 5052 }
+	THIS = { add_core = 7359 }
+	THIS = { add_core = 7368 }
+	THIS = { add_core = 7378 }
+	THIS = { add_core = 7385 }
+	THIS = { add_core = 4980 }
+	THIS = { add_core = 5015 }
+	THIS = { add_core = 7337 }
+	THIS = { add_core = 7349 }
+	THIS = { add_core = 7360 }
+	THIS = { add_core = 5451 }
+	THIS = { add_core = 7435 }
+	THIS = { add_core = 9296 }
+	THIS = { add_core = 7209 }
+	THIS = { add_core = 7486 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 or = { 
+					 has_global_flag = 133011003_EVENT_DONE
+					 has_global_flag = 133011017_EVENT_DONE
+					 } } exists = CYN
+			  } 
+		country_event = 640
+		 }
+	country_event = 646
+	
+set_global_flag = 133011020_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Sichuan Divided Loyalties
+country_event = {
+id = 646
+title = "DH_EVENT_133001063_TITLE"
+desc = "DH_EVENT_133001063_DESC"
+trigger = { 
+tag = QIN
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133001063 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133001063_Option7"
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22000 id = 10071 }
+			  } 
+		# MANUALFIX unlock division command = {  type = unlock_division which = 22000 value = 10071 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX division_exists = { type = 22000 id = 10071 }
+				 }  } 
+		9415 = { hq_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 #MANUALFIX division_exists = { type = 22000 id = 10071 }
+				 }  } 
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 #MANUALFIX division_exists = { type = 22000 id = 10081 }
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = 22000 value = 10081 }
+		 }
+	
+set_global_flag = 133001063_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Cai E Returns
+country_event = {
+id = 647
+title = "DH_EVENT_133011400_TITLE"
+desc = "DH_EVENT_133011400_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011400 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011400_Option7"
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55216 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55212 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55210 }
+	head_of_state = 55210 
+	foreign_minister = 55212 
+	
+set_global_flag = 133011400_EVENT_DONE
+
+}
+
+}
+

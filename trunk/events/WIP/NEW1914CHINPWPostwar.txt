@@ -1,0 +1,2096 @@
+#EVENTNAME: Death of the Great Chinese Empire
+country_event = {
+id = 620
+title = "DH_EVENT_133011402_TITLE"
+desc = "DH_EVENT_133011402_DESC"
+trigger = {
+	or = {
+		and = {
+			not = {
+				#MANUALFIX region = { region = "China" country = U74 data = 1 value = 30 }
+				}
+			exists = QIN
+			}
+		and = {
+			not = {
+				#MANUALFIX region = { region = "China" country = UCH data = 1 value = 30 }
+				}
+			exists = ROC
+			}
+		dissent = 55
+		}
+	
+tag = QIN
+
+not = { date = 1918.1.1
+ }
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011402 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  3 }
+
+is_triggered_only = no
+option = {
+	name = "DH_EVENT_133011402_Option7"
+	ROC = {
+		# MANUALFIX name command = { type = name where = UCH which = UCH_CBY }
+		leave_faction = axis
+		leave_faction = allies
+		leave_faction = comintern
+		random_country = { limit = { tag = THIS 
+				 CHI = { war_with = ROC }
+				  } 
+			THIS = { end_war = CHI }
+			 }
+		random_country = { limit = { tag = THIS 
+				 CYN = { war_with = ROC }
+				  } 
+			THIS = { end_war = CYN }
+			 }
+		random_country = { limit = { tag = THIS 
+				 exists = CYN
+				  } 
+			THIS = { inherit = CYN }
+			 }
+		random_country = { limit = { tag = THIS 
+				 CXB = { war_with = ROC }
+				  } 
+			THIS = { end_war = CXB }
+			 }
+		random_country = { limit = { tag = THIS 
+				 SIK = { war_with = ROC }
+				  } 
+			THIS = { end_war = SIK }
+			 }
+		threat = { who = all value = -50  }
+		country_event = 621
+		country_event = 636
+		}
+
+set_global_flag = 133011402_EVENT_DONE
+
+	}
+}
+
+#EVENTNAME: Death of Yuan Shikai
+country_event = {
+id = 621
+title = "DH_EVENT_133011403_TITLE"
+desc = "DH_EVENT_133011403_DESC"
+trigger = { 
+tag = ROC
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011403 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011403_Option7"
+	# MANUALFIX secede area command = { type = secedearea which = CHI value = "Yunnan" when = 1 }
+	9347 = { secede_province = CHI }
+	9348 = { secede_province = CHI }
+	9379 = { secede_province = CHI }
+	9349 = { secede_province = CHI }
+	9476 = { secede_province = CHI }
+	9322 = { secede_province = CHI }
+	9380 = { secede_province = CHI }
+	9414 = { secede_province = CHI }
+	9444 = { secede_province = CHI }
+	9501 = { secede_province = CHI }
+	# MANUALFIX secede area command = { type = secedearea which = CHI value = "Guangxi" when = 1 }
+	# MANUALFIX secede area command = { type = secedearea which = CHI value = "Guangdong" when = 1 }
+	set_global_flag = SLEEPEVENT_133011022 
+	set_global_flag = SLEEPEVENT_133011001 
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 has_global_flag= 1913loan_revoked
+				 }  } 
+		country_event = 682
+		 }
+	# add_country_modifier = { name = "democratic3" duration = 360 }#command = { type = set_domestic which = democratic value = 3 }
+	# add_country_modifier = { name = "democratic4" duration = 360 }#command = { type = set_domestic which = freedom value = 4 }
+	# add_country_modifier = { name = "rulingpartysupport" duration = 360 }#command = { type = set_domestic which = political_left value = 4 }
+	head_of_state = 1325200 
+	head_of_government = 1325120 
+	foreign_minister = 1325203 
+	armament_minister = 1325202 
+	minister_of_security = 1325201 
+	minister_of_intelligence = 1325123 
+	chief_of_staff = 1325106 
+	chief_of_army = 1325107 
+	chief_of_navy = 1325213 
+	chief_of_air = 1325109 
+	remove_minister = 1325100 
+	remove_minister = 1325101 
+	remove_minister = 1325103 
+	remove_minister = 1325105 
+	remove_minister = 1325113 
+	remove_minister = 1325116 
+	remove_minister = 1325117 
+	remove_minister = 1325122 
+	dissent = -5 
+	# MANUALFIX secede area command = { type = secedearea which = UCH value = "Anhui" when = 2 }
+	country_event = 625
+	# MANUALFIX change flag command = { type = flag_ext where = UCH which = "_AHC" }
+	
+set_global_flag = 133011403_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Provinces rejoin the Republic of China
+country_event = {
+id = 622
+title = "DH_EVENT_133011604_TITLE"
+desc = "DH_EVENT_133011604_DESC"
+trigger = { 
+tag = ROC
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011604 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011604_Option7"
+	THIS = { add_core = 5744 }
+	THIS = { add_core = 5745 }
+	THIS = { add_core = 5756 }
+	THIS = { add_core = 5767 }
+	THIS = { add_core = 5768 }
+	THIS = { add_core = 5778 }
+	THIS = { add_core = 5779 }
+	THIS = { add_core = 5387 }
+	THIS = { add_core = 5405 }
+	THIS = { add_core = 5419 }
+	THIS = { add_core = 9232 }
+	THIS = { add_core = 5449 }
+	THIS = { add_core = 5450 }
+	THIS = { add_core = 5469 }
+	THIS = { add_core = 5437 }
+	THIS = { add_core = 5453 }
+	THIS = { add_core = 5473 }
+	THIS = { add_core = 5474 }
+	THIS = { add_core = 5495 }
+	THIS = { add_core = 5496 }
+	THIS = { add_core = 5278 }
+	THIS = { add_core = 5418 }
+	THIS = { add_core = 5420 }
+	THIS = { add_core = 5435 }
+	THIS = { add_core = 5537 }
+	THIS = { add_core = 5569 }
+	THIS = { add_core = 5570 }
+	THIS = { add_core = 5595 }
+	THIS = { add_core = 5432 }
+	THIS = { add_core = 5448 }
+	THIS = { add_core = 5468 }
+	THIS = { add_core = 5401 }
+	THIS = { add_core = 5417 }
+	THIS = { add_core = 5433 }
+	THIS = { add_core = 7457 }
+	THIS = { add_core = 7467 }
+	THIS = { add_core = 5383 }
+	THIS = { add_core = 5434 }
+	THIS = { add_core = 7468 }
+	THIS = { add_core = 7476 }
+	THIS = { add_core = 7487 }
+	THIS = { add_core = 5491 }
+	THIS = { add_core = 5513 }
+	THIS = { add_core = 5514 }
+	THIS = { add_core = 7493 }
+	THIS = { add_core = 7499 }
+	THIS = { add_core = 7498 }
+	THIS = { add_core = 7503 }
+	THIS = { add_core = 5618 }
+	THIS = { add_core = 5661 }
+	THIS = { add_core = 7508 }
+	THIS = { add_core = 5536 }
+	THIS = { add_core = 5568 }
+	THIS = { add_core = 5594 }
+	THIS = { add_core = 5617 }
+	THIS = { add_core = 5635 }
+	THIS = { add_core = 5571 }
+	THIS = { add_core = 5572 }
+	THIS = { add_core = 5596 }
+	THIS = { add_core = 5597 }
+	THIS = { add_core = 5619 }
+	THIS = { add_core = 5636 }
+	THIS = { add_core = 5637 }
+	THIS = { add_core = 5650 }
+	THIS = { add_core = 5494 }
+	THIS = { add_core = 5518 }
+	THIS = { add_core = 5540 }
+	THIS = { add_core = 5519 }
+	THIS = { add_core = 5542 }
+	THIS = { add_core = 5599 }
+	THIS = { add_core = 5621 }
+	THIS = { add_core = 5541 }
+	THIS = { add_core = 5573 }
+	THIS = { add_core = 5598 }
+	THIS = { add_core = 5638 }
+	THIS = { add_core = 5623 }
+	THIS = { add_core = 5653 }
+	THIS = { add_core = 5665 }
+	THIS = { add_core = 5674 }
+	THIS = { add_core = 5675 }
+	THIS = { add_core = 5685 }
+	THIS = { add_core = 5686 }
+	THIS = { add_core = 5695 }
+	THIS = { add_core = 5622 }
+	THIS = { add_core = 5639 }
+	THIS = { add_core = 5640 }
+	THIS = { add_core = 5651 }
+	THIS = { add_core = 5652 }
+	THIS = { add_core = 5664 }
+	THIS = { add_core = 5693 }
+	THIS = { add_core = 5694 }
+	THIS = { add_core = 5701 }
+	THIS = { add_core = 5702 }
+	THIS = { add_core = 5703 }
+	THIS = { add_core = 5710 }
+	THIS = { add_core = 5711 }
+	THIS = { add_core = 5719 }
+	THIS = { add_core = 5728 }
+	THIS = { add_core = 5717 }
+	THIS = { add_core = 5718 }
+	THIS = { add_core = 5726 }
+	THIS = { add_core = 5727 }
+	THIS = { add_core = 5734 }
+	THIS = { add_core = 5735 }
+	THIS = { add_core = 5736 }
+	THIS = { add_core = 5746 }
+	THIS = { add_core = 5757 }
+	THIS = { add_core = 5732 }
+	THIS = { add_core = 5742 }
+	THIS = { add_core = 5743 }
+	THIS = { add_core = 5753 }
+	THIS = { add_core = 5755 }
+	THIS = { add_core = 5765 }
+	THIS = { add_core = 5766 }
+	THIS = { add_core = 5660 }
+	THIS = { add_core = 5681 }
+	THIS = { add_core = 7517 }
+	THIS = { add_core = 5620 }
+	THIS = { add_core = 5673 }
+	THIS = { add_core = 7512 }
+	THIS = { add_core = 7515 }
+	THIS = { add_core = 5706 }
+	THIS = { add_core = 5715 }
+	THIS = { add_core = 5723 }
+	THIS = { add_core = 7519 }
+	THIS = { add_core = 7520 }
+	THIS = { add_core = 7524 }
+	THIS = { add_core = 5731 }
+	THIS = { add_core = 5741 }
+	THIS = { add_core = 5754 }
+	THIS = { add_core = 7530 }
+	THIS = { add_core = 7544 }
+	THIS = { add_core = 7554 }
+	THIS = { add_core = 7529 }
+	THIS = { add_core = 7537 }
+	THIS = { add_core = 7543 }
+	THIS = { add_core = 5707 }
+	THIS = { add_core = 7514 }
+	THIS = { add_core = 7523 }
+	THIS = { add_core = 9446 }
+	THIS = { add_core = 9478 }
+	THIS = { add_core = 4739 }
+	THIS = { add_core = 9382 }
+	THIS = { add_core = 9416 }
+	THIS = { add_core = 9324 }
+	THIS = { add_core = 9350 }
+	THIS = { add_core = 9381 }
+	THIS = { add_core = 9415 }
+	THIS = { add_core = 5113 }
+	THIS = { add_core = 9477 }
+	THIS = { add_core = 7541 }
+	THIS = { add_core = 7551 }
+	THIS = { add_core = 7562 }
+	THIS = { add_core = 9502 }
+	THIS = { add_core = 5804 }
+	THIS = { add_core = 7535 }
+	THIS = { add_core = 7536 }
+	THIS = { add_core = 7542 }
+	THIS = { add_core = 7552 }
+	THIS = { add_core = 7511 }
+	THIS = { add_core = 5848 }
+	THIS = { add_core = 7522 }
+	THIS = { add_core = 7528 }
+	THIS = { add_core = 5709 }
+	THIS = { add_core = 7516 }
+	THIS = { add_core = 7518 }
+	THIS = { add_core = 5724 }
+	THIS = { add_core = 5725 }
+	THIS = { add_core = 5733 }
+	THIS = { add_core = 5406 }
+	THIS = { add_core = 5421 }
+	THIS = { add_core = 5422 }
+	THIS = { add_core = 5454 }
+	THIS = { add_core = 5472 }
+	THIS = { add_core = 7497 }
+	THIS = { add_core = 7502 }
+	THIS = { add_core = 9352 }
+	THIS = { add_core = 5538 }
+	THIS = { add_core = 7492 }
+	THIS = { add_core = 7507 }
+	THIS = { add_core = 9295 }
+	THIS = { add_core = 9351 }
+	THIS = { add_core = 5400 }
+	THIS = { add_core = 5416 }
+	THIS = { add_core = 7447 }
+	THIS = { add_core = 7477 }
+	THIS = { add_core = 9445 }
+	THIS = { add_core = 5436 }
+	THIS = { add_core = 5452 }
+	THIS = { add_core = 5470 }
+	THIS = { add_core = 5471 }
+	THIS = { add_core = 5492 }
+	THIS = { add_core = 5493 }
+	THIS = { add_core = 5515 }
+	THIS = { add_core = 5516 }
+	THIS = { add_core = 5517 }
+	THIS = { add_core = 5539 }
+	THIS = { add_core = 7510 }
+	THIS = { add_core = 9383 }
+	THIS = { add_core = 5648 }
+	THIS = { add_core = 5649 }
+	THIS = { add_core = 5662 }
+	THIS = { add_core = 5671 }
+	THIS = { add_core = 5663 }
+	THIS = { add_core = 5672 }
+	THIS = { add_core = 5683 }
+	THIS = { add_core = 5684 }
+	THIS = { add_core = 5682 }
+	THIS = { add_core = 5691 }
+	THIS = { add_core = 5692 }
+	THIS = { add_core = 5698 }
+	THIS = { add_core = 5699 }
+	THIS = { add_core = 5700 }
+	THIS = { add_core = 5708 }
+	THIS = { add_core = 5716 }
+	THIS = { add_core = 5334 }
+	THIS = { add_core = 5361 }
+	THIS = { add_core = 5302 }
+	THIS = { add_core = 5362 }
+	THIS = { add_core = 5335 }
+	THIS = { add_core = 7417 }
+	THIS = { add_core = 7425 }
+	THIS = { add_core = 5241 }
+	THIS = { add_core = 7398 }
+	THIS = { add_core = 7410 }
+	THIS = { add_core = 4517 }
+	THIS = { add_core = 5177 }
+	THIS = { add_core = 5018 }
+	THIS = { add_core = 4934 }
+	THIS = { add_core = 4979 }
+	THIS = { add_core = 5053 }
+	THIS = { add_core = 4885 }
+	THIS = { add_core = 4886 }
+	THIS = { add_core = 4933 }
+	THIS = { add_core = 4978 }
+	THIS = { add_core = 5016 }
+	THIS = { add_core = 4977 }
+	THIS = { add_core = 5083 }
+	THIS = { add_core = 5110 }
+	THIS = { add_core = 5144 }
+	THIS = { add_core = 5207 }
+	THIS = { add_core = 5208 }
+	THIS = { add_core = 5209 }
+	THIS = { add_core = 5240 }
+	THIS = { add_core = 5273 }
+	THIS = { add_core = 7399 }
+	THIS = { add_core = 7405 }
+	THIS = { add_core = 7411 }
+	THIS = { add_core = 7446 }
+	THIS = { add_core = 5305 }
+	THIS = { add_core = 5306 }
+	THIS = { add_core = 5337 }
+	THIS = { add_core = 5338 }
+	THIS = { add_core = 5364 }
+	THIS = { add_core = 5365 }
+	THIS = { add_core = 5386 }
+	THIS = { add_core = 5403 }
+	THIS = { add_core = 5051 }
+	THIS = { add_core = 5111 }
+	THIS = { add_core = 5141 }
+	THIS = { add_core = 5174 }
+	THIS = { add_core = 5175 }
+	THIS = { add_core = 5300 }
+	THIS = { add_core = 5385 }
+	THIS = { add_core = 5404 }
+	THIS = { add_core = 7418 }
+	THIS = { add_core = 5206 }
+	THIS = { add_core = 5239 }
+	THIS = { add_core = 5271 }
+	THIS = { add_core = 5272 }
+	THIS = { add_core = 5301 }
+	THIS = { add_core = 5333 }
+	THIS = { add_core = 7436 }
+	THIS = { add_core = 5084 }
+	THIS = { add_core = 5085 }
+	THIS = { add_core = 5112 }
+	THIS = { add_core = 5363 }
+	THIS = { add_core = 5384 }
+	THIS = { add_core = 5402 }
+	THIS = { add_core = 5086 }
+	THIS = { add_core = 5143 }
+	THIS = { add_core = 5176 }
+	THIS = { add_core = 5054 }
+	THIS = { add_core = 5178 }
+	THIS = { add_core = 5179 }
+	THIS = { add_core = 5210 }
+	THIS = { add_core = 5242 }
+	THIS = { add_core = 5274 }
+	THIS = { add_core = 4935 }
+	THIS = { add_core = 4981 }
+	THIS = { add_core = 5019 }
+	THIS = { add_core = 5055 }
+	THIS = { add_core = 5142 }
+	THIS = { add_core = 5145 }
+	THIS = { add_core = 5211 }
+	THIS = { add_core = 5212 }
+	THIS = { add_core = 5243 }
+	THIS = { add_core = 5244 }
+	THIS = { add_core = 5245 }
+	THIS = { add_core = 5276 }
+	THIS = { add_core = 5277 }
+	THIS = { add_core = 5275 }
+	THIS = { add_core = 5303 }
+	THIS = { add_core = 5304 }
+	THIS = { add_core = 5336 }
+	THIS = { add_core = 7028 }
+	THIS = { add_core = 7044 }
+	THIS = { add_core = 7061 }
+	THIS = { add_core = 7062 }
+	THIS = { add_core = 7078 }
+	THIS = { add_core = 7079 }
+	THIS = { add_core = 7098 }
+	THIS = { add_core = 3993 }
+	THIS = { add_core = 4062 }
+	THIS = { add_core = 7099 }
+	THIS = { add_core = 4324 }
+	THIS = { add_core = 4387 }
+	THIS = { add_core = 4388 }
+	THIS = { add_core = 4454 }
+	THIS = { add_core = 4455 }
+	THIS = { add_core = 4520 }
+	THIS = { add_core = 4521 }
+	THIS = { add_core = 4579 }
+	THIS = { add_core = 4126 }
+	THIS = { add_core = 4128 }
+	THIS = { add_core = 4191 }
+	THIS = { add_core = 4192 }
+	THIS = { add_core = 4259 }
+	THIS = { add_core = 4260 }
+	THIS = { add_core = 4325 }
+	THIS = { add_core = 7119 }
+	THIS = { add_core = 7140 }
+	THIS = { add_core = 7164 }
+	THIS = { add_core = 4258 }
+	THIS = { add_core = 7097 }
+	THIS = { add_core = 7138 }
+	THIS = { add_core = 7139 }
+	THIS = { add_core = 7163 }
+	THIS = { add_core = 7188 }
+	THIS = { add_core = 7212 }
+	THIS = { add_core = 7060 }
+	THIS = { add_core = 7076 }
+	THIS = { add_core = 7095 }
+	THIS = { add_core = 7096 }
+	THIS = { add_core = 7117 }
+	THIS = { add_core = 7137 }
+	THIS = { add_core = 8827 }
+	THIS = { add_core = 8573 }
+	THIS = { add_core = 8636 }
+	THIS = { add_core = 8722 }
+	THIS = { add_core = 8748 }
+	THIS = { add_core = 8803 }
+	THIS = { add_core = 8773 }
+	THIS = { add_core = 8826 }
+	THIS = { add_core = 8872 }
+	THIS = { add_core = 7116 }
+	THIS = { add_core = 7136 }
+	THIS = { add_core = 7161 }
+	THIS = { add_core = 4681 }
+	THIS = { add_core = 7135 }
+	THIS = { add_core = 7159 }
+	THIS = { add_core = 7160 }
+	THIS = { add_core = 7183 }
+	THIS = { add_core = 7184 }
+	THIS = { add_core = 7208 }
+	THIS = { add_core = 7233 }
+	THIS = { add_core = 7259 }
+	THIS = { add_core = 7276 }
+	THIS = { add_core = 4323 }
+	THIS = { add_core = 4384 }
+	THIS = { add_core = 4385 }
+	THIS = { add_core = 4386 }
+	THIS = { add_core = 4451 }
+	THIS = { add_core = 4452 }
+	THIS = { add_core = 4453 }
+	THIS = { add_core = 4516 }
+	THIS = { add_core = 4518 }
+	THIS = { add_core = 4792 }
+	THIS = { add_core = 4841 }
+	THIS = { add_core = 4842 }
+	THIS = { add_core = 4891 }
+	THIS = { add_core = 4892 }
+	THIS = { add_core = 4514 }
+	THIS = { add_core = 4515 }
+	THIS = { add_core = 4572 }
+	THIS = { add_core = 4573 }
+	THIS = { add_core = 4629 }
+	THIS = { add_core = 4630 }
+	THIS = { add_core = 4631 }
+	THIS = { add_core = 4686 }
+	THIS = { add_core = 4737 }
+	THIS = { add_core = 4738 }
+	THIS = { add_core = 4682 }
+	THIS = { add_core = 4732 }
+	THIS = { add_core = 4784 }
+	THIS = { add_core = 4785 }
+	THIS = { add_core = 4833 }
+	THIS = { add_core = 4834 }
+	THIS = { add_core = 4932 }
+	THIS = { add_core = 7296 }
+	THIS = { add_core = 7312 }
+	THIS = { add_core = 7313 }
+	THIS = { add_core = 7325 }
+	THIS = { add_core = 7326 }
+	THIS = { add_core = 7338 }
+	THIS = { add_core = 8606 }
+	THIS = { add_core = 8670 }
+	THIS = { add_core = 8723 }
+	THIS = { add_core = 8749 }
+	THIS = { add_core = 8750 }
+	THIS = { add_core = 4450 }
+	THIS = { add_core = 7162 }
+	THIS = { add_core = 7186 }
+	THIS = { add_core = 7187 }
+	THIS = { add_core = 7210 }
+	THIS = { add_core = 7211 }
+	THIS = { add_core = 7237 }
+	THIS = { add_core = 7094 }
+	THIS = { add_core = 7115 }
+	THIS = { add_core = 8801 }
+	THIS = { add_core = 4571 }
+	THIS = { add_core = 4684 }
+	THIS = { add_core = 7185 }
+	THIS = { add_core = 7234 }
+	THIS = { add_core = 7235 }
+	THIS = { add_core = 7236 }
+	THIS = { add_core = 7260 }
+	THIS = { add_core = 7261 }
+	THIS = { add_core = 7297 }
+	THIS = { add_core = 4519 }
+	THIS = { add_core = 4577 }
+	THIS = { add_core = 4578 }
+	THIS = { add_core = 4633 }
+	THIS = { add_core = 4634 }
+	THIS = { add_core = 4689 }
+	THIS = { add_core = 4690 }
+	THIS = { add_core = 4574 }
+	THIS = { add_core = 4575 }
+	THIS = { add_core = 4576 }
+	THIS = { add_core = 4632 }
+	THIS = { add_core = 4687 }
+	THIS = { add_core = 4688 }
+	THIS = { add_core = 4740 }
+	THIS = { add_core = 4741 }
+	THIS = { add_core = 4793 }
+	THIS = { add_core = 4788 }
+	THIS = { add_core = 4837 }
+	THIS = { add_core = 4889 }
+	THIS = { add_core = 4936 }
+	THIS = { add_core = 4626 }
+	THIS = { add_core = 4627 }
+	THIS = { add_core = 4628 }
+	THIS = { add_core = 4680 }
+	THIS = { add_core = 4683 }
+	THIS = { add_core = 4733 }
+	THIS = { add_core = 4734 }
+	THIS = { add_core = 4735 }
+	THIS = { add_core = 4736 }
+	THIS = { add_core = 4786 }
+	THIS = { add_core = 4787 }
+	THIS = { add_core = 4835 }
+	THIS = { add_core = 4836 }
+	THIS = { add_core = 4887 }
+	THIS = { add_core = 4888 }
+	THIS = { add_core = 7277 }
+	THIS = { add_core = 7278 }
+	THIS = { add_core = 4685 }
+	THIS = { add_core = 4789 }
+	THIS = { add_core = 4790 }
+	THIS = { add_core = 4791 }
+	THIS = { add_core = 4838 }
+	THIS = { add_core = 4839 }
+	THIS = { add_core = 4840 }
+	THIS = { add_core = 4890 }
+	THIS = { add_core = 4937 }
+	THIS = { add_core = 4938 }
+	THIS = { add_core = 4982 }
+	THIS = { add_core = 6988 }
+	THIS = { add_core = 7043 }
+	THIS = { add_core = 7077 }
+	THIS = { add_core = 7118 }
+	THIS = { add_core = 8802 }
+	THIS = { add_core = 7075 }
+	THIS = { add_core = 8637 }
+	THIS = { add_core = 8720 }
+	THIS = { add_core = 8774 }
+	THIS = { add_core = 9265 }
+	THIS = { add_core = 9325 }
+	THIS = { add_core = 9233 }
+	THIS = { add_core = 9234 }
+	THIS = { add_core = 9266 }
+	THIS = { add_core = 5017 }
+	THIS = { add_core = 5050 }
+	THIS = { add_core = 5052 }
+	THIS = { add_core = 7359 }
+	THIS = { add_core = 7368 }
+	THIS = { add_core = 7378 }
+	THIS = { add_core = 7385 }
+	THIS = { add_core = 4980 }
+	THIS = { add_core = 5015 }
+	THIS = { add_core = 7337 }
+	THIS = { add_core = 7349 }
+	THIS = { add_core = 7360 }
+	THIS = { add_core = 5451 }
+	THIS = { add_core = 7435 }
+	THIS = { add_core = 9296 }
+	THIS = { add_core = 7209 }
+	THIS = { add_core = 7486 }
+	THIS = { add_core = 5246 }
+	THIS = { add_core = 5180 }
+	THIS = { add_core = 5181 }
+	THIS = { add_core = 5213 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011050_EVENT_DONE
+			  } 
+		5709 = { hq_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011050_EVENT_DONE
+			  } 
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 has_global_flag = 133011050_EVENT_DONE
+				 }  } 
+		# MANUALFIX unlock division command = {  type = unlock_division which = 22000 value = 10111 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011051_EVENT_DONE
+			  } 
+		5682 = { hq_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011051_EVENT_DONE
+			  } 
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 has_global_flag = 133011051_EVENT_DONE
+				 }  } 
+		# MANUALFIX unlock division command = {  type = unlock_division which = 22000 value = 10041 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 has_global_flag = 133011052_EVENT_DONE
+				 has_global_flag = 133011054_EVENT_DONE
+				 }  } 
+		5494 = { hq_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 has_global_flag = 133011052_EVENT_DONE
+				 has_global_flag = 133011054_EVENT_DONE
+				 }  } 
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 or = { 
+					 has_global_flag = 133011052_EVENT_DONE
+					 has_global_flag = 133011054_EVENT_DONE
+					 } }  } 
+		# MANUALFIX unlock division command = {  type = unlock_division which = 22000 value = 10021 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 has_global_flag = 133011053_EVENT_DONE
+				 has_global_flag = 133011055_EVENT_DONE
+				 }  } 
+		5174 = { hq_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 or = { 
+				 has_global_flag = 133011053_EVENT_DONE
+				 has_global_flag = 133011055_EVENT_DONE
+				 }  } 
+		random_owned = { limit = { controlled_by = THIS  } militia_brigade = current militia_brigade = current militia_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 or = { 
+					 has_global_flag = 133011053_EVENT_DONE
+					 has_global_flag = 133011055_EVENT_DONE
+					 } }  } 
+		# MANUALFIX unlock division command = {  type = unlock_division which = 22000 value = 10141 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011057_EVENT_DONE
+			  } 
+		5757 = { hq_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011057_EVENT_DONE
+			  } 
+		random_owned = { limit = { controlled_by = THIS  } militia_brigade = current militia_brigade = current militia_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 has_global_flag = 133011057_EVENT_DONE
+				 }  } 
+		# MANUALFIX unlock division command = {  type = unlock_division which = 22000 value = 10101 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011058_EVENT_DONE
+			  } 
+		5541 = { hq_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011058_EVENT_DONE
+			  } 
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 has_global_flag = 133011058_EVENT_DONE
+				 }  } 
+		# MANUALFIX unlock division command = {  type = unlock_division which = 22000 value = 10061 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011059_EVENT_DONE
+			  } 
+		7508 = { hq_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011059_EVENT_DONE
+			  } 
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 has_global_flag = 133011059_EVENT_DONE
+				 }  } 
+		# MANUALFIX unlock division command = {  type = unlock_division which = 22000 value = 10011 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011060_EVENT_DONE
+			  } 
+		7541 = { hq_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011060_EVENT_DONE
+			  } 
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 has_global_flag = 133011060_EVENT_DONE
+				 }  } 
+		# MANUALFIX unlock division command = {  type = unlock_division which = 22000 value = 10131 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011061_EVENT_DONE
+			  } 
+		9415 = { hq_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011061_EVENT_DONE
+			  } 
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 has_global_flag = 133011061_EVENT_DONE
+				 }  } 
+		# MANUALFIX unlock division command = {  type = unlock_division which = 22000 value = 10071 }
+		 }
+	country_event = 623
+	set_global_flag = SLEEPEVENT_133011051 
+	set_global_flag = SLEEPEVENT_133011052 
+	set_global_flag = SLEEPEVENT_133011053 
+	set_global_flag = SLEEPEVENT_133011054 
+	set_global_flag = SLEEPEVENT_133011055 
+	set_global_flag = SLEEPEVENT_133011057 
+	set_global_flag = SLEEPEVENT_133011058 
+	set_global_flag = SLEEPEVENT_133011059 
+	set_global_flag = SLEEPEVENT_133011060 
+	set_global_flag = SLEEPEVENT_133011061 
+	set_global_flag = SLEEPEVENT_133011062 
+	set_global_flag = SLEEPEVENT_133011018 
+	
+set_global_flag = 133011604_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: The Zhili Clique
+country_event = {
+id = 623
+title = "DH_EVENT_133011200_TITLE"
+desc = "DH_EVENT_133011200_DESC"
+trigger = { 
+tag = ROC
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011200 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011200_Option7"
+	release = MAN
+	release_vassal = MAN
+	4682 = { secede_province = MAN }
+	4732 = { secede_province = MAN }
+	4784 = { secede_province = MAN }
+	4785 = { secede_province = MAN }
+	4833 = { secede_province = MAN }
+	4834 = { secede_province = MAN }
+	4932 = { secede_province = MAN }
+	7296 = { secede_province = MAN }
+	7312 = { secede_province = MAN }
+	7313 = { secede_province = MAN }
+	7325 = { secede_province = MAN }
+	7326 = { secede_province = MAN }
+	7338 = { secede_province = MAN }
+	4885 = { secede_province = MAN }
+	4886 = { secede_province = MAN }
+	4933 = { secede_province = MAN }
+	4978 = { secede_province = MAN }
+	5016 = { secede_province = MAN }
+	5086 = { secede_province = MAN }
+	5143 = { secede_province = MAN }
+	5176 = { secede_province = MAN }
+	5018 = { secede_province = MAN }
+	5144 = { secede_province = MAN }
+	5207 = { secede_province = MAN }
+	5208 = { secede_province = MAN }
+	5209 = { secede_province = MAN }
+	5240 = { secede_province = MAN }
+	5273 = { secede_province = MAN }
+	4935 = { secede_province = MAN }
+	4981 = { secede_province = MAN }
+	5019 = { secede_province = MAN }
+	5055 = { secede_province = MAN }
+	# MANUALFIX remove unit command = { type = remove_division which = "Sichuan Lujun" value = UCH }
+	# MANUALFIX remove unit command = { type = remove_division which = "Frontal Division" value = UCH }
+	# MANUALFIX remove unit command = { type = remove_division which = "Left Division" value = UCH }
+	# MANUALFIX remove unit command = { type = remove_division which = "Hind Division" value = UCH }
+	# MANUALFIX remove unit command = { type = remove_division which = "Right Division" value = UCH }
+	# MANUALFIX remove unit command = { type = remove_division which = "Middle Division" value = UCH }
+	# MANUALFIX remove unit command = { type = remove_division which = "New Division" value = UCH }
+	remove_minister = 1325300 
+	remove_minister = 1325301 
+	remove_minister = 1325302 
+	remove_minister = 1325303 
+	remove_minister = 1325304 
+	remove_minister = 1325305 
+	remove_minister = 1325306 
+	remove_minister = 1325307 
+	remove_minister = 1325308 
+	remove_minister = 1325309 
+	remove_minister = 1325310 
+	remove_minister = 1325311 
+	remove_minister = 1325313 
+	remove_minister = 1325314 
+	remove_minister = 1325315 
+	remove_minister = 1325316 
+	remove_minister = 1325317 
+	remove_minister = 1325318 
+	remove_minister = 1325319 
+	remove_minister = 1325320 
+	remove_minister = 1325321 
+	remove_minister = 1325322 
+	remove_minister = 1325323 
+	remove_minister = 1325324 
+	remove_minister = 1325325 
+	remove_minister = 1325326 
+	remove_minister = 1325327 
+	remove_minister = 1325328 
+	remove_minister = 1325329 
+	remove_minister = 1325330 
+	remove_minister = 1325331 
+	remove_minister = 1325332 
+	remove_minister = 1325333 
+	remove_minister = 1325334 
+	remove_minister = 1325335 
+	country_event = 624
+	dissent = 5 
+	
+set_global_flag = 133011200_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: The Zhili Clique
+country_event = {
+id = 624
+title = "DH_EVENT_133011201_TITLE"
+desc = "DH_EVENT_133011201_DESC"
+trigger = { 
+tag = MAN
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011201 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011201_Option7"
+	ZHC = {
+		# MANUALFIX secede area command = { type = secedearea which = UCH value = "Jilin" when = 1 }
+		# MANUALFIX secede area command = { type = secedearea which = UCH value = "Heilongjiang" when = 1 }
+		# MANUALFIX secede area command = { type = secedearea which = UCH value = "Rehe" when = 1 }
+		# MANUALFIX secede area command = { type = secedearea which = UCH value = "Liaoning" when = 1 }
+		4682 = { secede_province = ZHC }
+		4732 = { secede_province = ZHC }
+		4784 = { secede_province = ZHC }
+		4785 = { secede_province = ZHC }
+		4833 = { secede_province = ZHC }
+		4834 = { secede_province = ZHC }
+		4932 = { secede_province = ZHC }
+		7296 = { secede_province = ZHC }
+		7312 = { secede_province = ZHC }
+		7313 = { secede_province = ZHC }
+		7325 = { secede_province = ZHC }
+		7326 = { secede_province = ZHC }
+		7338 = { secede_province = ZHC }
+		4885 = { secede_province = ZHC }
+		4886 = { secede_province = ZHC }
+		4933 = { secede_province = ZHC }
+		4978 = { secede_province = ZHC }
+		5016 = { secede_province = ZHC }
+		5086 = { secede_province = ZHC }
+		5143 = { secede_province = ZHC }
+		5176 = { secede_province = ZHC }
+		5018 = { secede_province = ZHC }
+		5144 = { secede_province = ZHC }
+		5207 = { secede_province = ZHC }
+		5208 = { secede_province = ZHC }
+		5209 = { secede_province = ZHC }
+		5240 = { secede_province = ZHC }
+		5273 = { secede_province = ZHC }
+		4935 = { secede_province = ZHC }
+		4981 = { secede_province = ZHC }
+		5019 = { secede_province = ZHC }
+		5055 = { secede_province = ZHC }
+		THIS = { add_core = 4682 }
+		THIS = { add_core = 4732 }
+		THIS = { add_core = 4784 }
+		THIS = { add_core = 4785 }
+		THIS = { add_core = 4833 }
+		THIS = { add_core = 4834 }
+		THIS = { add_core = 4932 }
+		THIS = { add_core = 7296 }
+		THIS = { add_core = 7312 }
+		THIS = { add_core = 7313 }
+		THIS = { add_core = 7325 }
+		THIS = { add_core = 7326 }
+		THIS = { add_core = 7338 }
+		THIS = { add_core = 4885 }
+		THIS = { add_core = 4886 }
+		THIS = { add_core = 4933 }
+		THIS = { add_core = 4978 }
+		THIS = { add_core = 5016 }
+		THIS = { add_core = 5086 }
+		THIS = { add_core = 5143 }
+		THIS = { add_core = 5176 }
+		THIS = { add_core = 5018 }
+		THIS = { add_core = 4934 }
+		THIS = { add_core = 4979 }
+		THIS = { add_core = 5053 }
+		THIS = { add_core = 5144 }
+		THIS = { add_core = 5207 }
+		THIS = { add_core = 5208 }
+		THIS = { add_core = 5209 }
+		THIS = { add_core = 5240 }
+		THIS = { add_core = 5273 }
+		THIS = { add_core = 4935 }
+		THIS = { add_core = 4981 }
+		THIS = { add_core = 5019 }
+		THIS = { add_core = 5055 }
+		9415 = { hq_brigade = current }
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		5018 = { hq_brigade = current }
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+		capital = 5018
+		create_alliance = ROC
+		}
+
+set_global_flag = 133011201_EVENT_DONE
+
+	}
+}
+
+#EVENTNAME: Collapse of the National Protection Alliance
+country_event = {
+id = 625
+title = "DH_EVENT_133011603_TITLE"
+desc = "DH_EVENT_133011603_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011603 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_133011603_Option7"
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011050_EVENT_DONE
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = UCH value = "Hunan" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011050_EVENT_DONE
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = "Hunan Lujun" value = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011051_EVENT_DONE
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = UCH value = "Jiangxi" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011051_EVENT_DONE
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = "Jiangxi Lujun" value = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011052_EVENT_DONE
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = UCH value = "Jiangsu" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011053_EVENT_DONE
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = UCH value = "Shanxi" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011054_EVENT_DONE
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = UCH value = "Jiangsu" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011054_EVENT_DONE
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = "Jiangsu Lujun" value = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011054_EVENT_DONE
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = "Shanghai Mingbin" value = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011056_EVENT_DONE
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = UCH value = "Anhui" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011057_EVENT_DONE
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = UCH value = "Fujian" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011057_EVENT_DONE
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = "Fujian Mingbin" value = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011058_EVENT_DONE
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = UCH value = "Zhejiang" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011058_EVENT_DONE
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = "Zhejiang Lujun" value = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011059_EVENT_DONE
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = UCH value = "Hubei" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011059_EVENT_DONE
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = "Hubei Lujun" value = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011060_EVENT_DONE
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = UCH value = "Guizhou" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011060_EVENT_DONE
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = "Guizhou Lujun" value = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011061_EVENT_DONE
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = UCH value = "Sichuan" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011061_EVENT_DONE
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = "Congqing Mingbin" value = CHI }
+		 }
+	release = CGX
+	# MANUALFIX secede area command = { type = secedearea which = CGX value = "Yunnan" when = 1 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 9347 = { controlled_by = TIB }
+				 }  } 
+		9347 = { secede_province = CGX }
+		9348 = { secede_province = CGX }
+		9379 = { secede_province = CGX }
+		 }
+	9349 = { secede_province = CGX }
+	9476 = { secede_province = CGX }
+	9322 = { secede_province = CGX }
+	9380 = { secede_province = CGX }
+	9414 = { secede_province = CGX }
+	9444 = { secede_province = CGX }
+	9501 = { secede_province = CGX }
+	# MANUALFIX secede area command = { type = secedearea which = CGX value = "Guangxi" when = 2 }
+	country_event = 626
+	capital = 5834
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	# MANUALFIX remove unit command = { type = remove_division which = "1 GX Division" value = CHI }
+	# MANUALFIX remove unit command = { type = remove_division which = "2 GX Division" value = CHI }
+	# MANUALFIX remove unit command = { type = remove_division which = "3 GX Division" value = CHI }
+	# MANUALFIX remove unit command = { type = remove_division which = "1 YQ Division" value = CHI }
+	# MANUALFIX remove unit command = { type = remove_division which = "2 YQ Division" value = CHI }
+	# MANUALFIX remove unit command = { type = remove_division which = "3 YQ Division" value = CHI }
+	# MANUALFIX remove unit command = { type = remove_division which = "4 YQ Division" value = CHI }
+	# MANUALFIX remove unit command = { type = remove_division which = "5 YQ Division" value = CHI }
+	# MANUALFIX remove unit command = { type = remove_division which = "6 YQ Division" value = CHI }
+	# MANUALFIX name command = { type = name where = CHI which = CHI_CPM }
+	country_event = 628
+	country_event = 628
+	country_event = 628
+	country_event = 622
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55302 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55303 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55304 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55305 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55306 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55307 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55308 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55309 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55310 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55311 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55312 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55313 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55314 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55315 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55316 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55317 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55318 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55319 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55320 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55321 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55322 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55323 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55324 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55325 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55326 }
+	head_of_state = 55319 
+	head_of_government = 55326 
+	foreign_minister = 55325 
+	country_event = 635
+	armament_minister = 55314 
+	minister_of_security = 55303 
+	minister_of_intelligence = 55304 
+	chief_of_staff = 55305 
+	chief_of_army = 55306 
+	chief_of_navy = 55307 
+	chief_of_air = 55308 
+	remove_minister = 55200 
+	remove_minister = 55201 
+	remove_minister = 55202 
+	remove_minister = 55203 
+	remove_minister = 55204 
+	remove_minister = 55205 
+	remove_minister = 55206 
+	remove_minister = 55207 
+	remove_minister = 55208 
+	remove_minister = 55209 
+	remove_minister = 55210 
+	remove_minister = 55211 
+	remove_minister = 55212 
+	remove_minister = 55213 
+	remove_minister = 55214 
+	remove_minister = 55216 
+	remove_minister = 55218 
+	remove_minister = 55219 
+	remove_minister = 55220 
+	remove_minister = 55221 
+	remove_minister = 55222 
+	remove_minister = 55223 
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 has_global_flag= szs_dead
+				 }  } 
+		country_event = 631
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag= szs_dead
+			  } 
+		country_event = 634
+		 }
+	ROC = { non_aggression_pact = CHI }
+	threat = { who = CHI value = -30  }
+	
+set_global_flag = 133011603_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 0
+		 }
+	name = "DH_EVENT_133011603_Option8"
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011061_EVENT_DONE
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = "Congqing Mingbin" value = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011050_EVENT_DONE
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = "Hunan Lujun" value = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011051_EVENT_DONE
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = "Jiangxi Lujun" value = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011054_EVENT_DONE
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = "Jiangsu Lujun" value = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011054_EVENT_DONE
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = "Shanghai Mingbin" value = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011057_EVENT_DONE
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = "Fujian Mingbin" value = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011058_EVENT_DONE
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = "Zhejiang Lujun" value = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011059_EVENT_DONE
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = "Hubei Lujun" value = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011060_EVENT_DONE
+			  } 
+		# MANUALFIX remove unit command = {  type = remove_division which = "Guizhou Lujun" value = CHI }
+		 }
+	# MANUALFIX remove unit command = { type = remove_division which = "1 GX Division" value = CHI }
+	# MANUALFIX remove unit command = { type = remove_division which = "2 GX Division" value = CHI }
+	# MANUALFIX remove unit command = { type = remove_division which = "3 GX Division" value = CHI }
+	# MANUALFIX remove unit command = { type = remove_division which = "1 GD Division" value = CHI }
+	# MANUALFIX remove unit command = { type = remove_division which = "2 GD Division" value = CHI }
+	# MANUALFIX remove unit command = { type = remove_division which = "3 GD Division" value = CHI }
+	# MANUALFIX remove unit command = { type = remove_division which = "4 GD Division" value = CHI }
+	CYN = {
+		release = CHI
+		# MANUALFIX name command = { type = name where = CYN }
+		country_event = 629
+		random_country = { limit = { tag = THIS 
+				 not = {
+					 has_global_flag= szs_dead
+					 }  } 
+			country_event = 631
+			 }
+		random_country = { limit = { tag = THIS 
+				 has_global_flag= szs_dead
+				  } 
+			country_event = 634
+			 }
+		country_event = 628
+		country_event = 628
+		country_event = 628
+		country_event = 622
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615100 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615101 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615102 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615103 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615104 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615105 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615106 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615107 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615108 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615109 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615110 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615111 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615112 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615113 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615114 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615116 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615118 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615119 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615120 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615121 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615122 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615123 }
+		remove_minister = 615200 
+		remove_minister = 615201 
+		remove_minister = 615202 
+		remove_minister = 615203 
+		remove_minister = 615204 
+		remove_minister = 615205 
+		remove_minister = 615206 
+		remove_minister = 615207 
+		remove_minister = 615208 
+		remove_minister = 615209 
+		remove_minister = 615210 
+		remove_minister = 615211 
+		remove_minister = 615212 
+		remove_minister = 615213 
+		remove_minister = 615214 
+		remove_minister = 615215 
+		remove_minister = 615216 
+		remove_minister = 615217 
+		remove_minister = 615218 
+		remove_minister = 615219 
+		remove_minister = 615220 
+		remove_minister = 615221 
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615100 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615101 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615102 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615103 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615104 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615105 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615106 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615107 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615108 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615109 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615110 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615111 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615112 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615113 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615114 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615116 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615118 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615119 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615120 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615121 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615122 }
+		# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615123 }
+		head_of_state = 615110 
+		foreign_minister = 615112 
+		country_event = 632
+		ROC = { non_aggression_pact = CHI }
+		threat = { who = CYN value = -30  }
+		}
+
+set_global_flag = 133011603_EVENT_DONE
+
+	}
+}
+
+#EVENTNAME: Collapse of the National Protection Alliance
+country_event = {
+id = 626
+title = "DH_EVENT_133011605_TITLE"
+desc = "DH_EVENT_133011605_DESC"
+trigger = { 
+
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011605 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011605_Option7"
+	release = CYN
+	# MANUALFIX secede area command = { type = secedearea which = CYN value = "Yunnan" when = 1 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 9347 = { controlled_by = TIB }
+				 }  } 
+		9347 = { secede_province = CYN }
+		9348 = { secede_province = CYN }
+		9379 = { secede_province = CYN }
+		 }
+	9349 = { secede_province = CYN }
+	9476 = { secede_province = CYN }
+	9322 = { secede_province = CYN }
+	9380 = { secede_province = CYN }
+	9414 = { secede_province = CYN }
+	9444 = { secede_province = CYN }
+	9501 = { secede_province = CYN }
+	7553 = { hq_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } militia_brigade = current militia_brigade = current militia_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } militia_brigade = current militia_brigade = current militia_brigade = current }
+	country_event = 627
+	
+set_global_flag = 133011605_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Collapse of the National Protection Alliance
+country_event = {
+id = 627
+title = "DH_EVENT_133011606_TITLE"
+desc = "DH_EVENT_133011606_DESC"
+trigger = { 
+
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011606 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011606_Option7"
+	7561 = { hq_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+	9322 = { hq_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615100 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615101 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615102 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615103 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615104 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615105 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615106 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615107 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615108 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615109 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615110 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615111 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615112 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615113 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615114 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615116 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615118 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615119 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615120 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615121 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615122 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615123 }
+	remove_minister = 615200 
+	remove_minister = 615201 
+	remove_minister = 615202 
+	remove_minister = 615203 
+	remove_minister = 615204 
+	remove_minister = 615205 
+	remove_minister = 615206 
+	remove_minister = 615207 
+	remove_minister = 615208 
+	remove_minister = 615209 
+	remove_minister = 615210 
+	remove_minister = 615211 
+	remove_minister = 615212 
+	remove_minister = 615213 
+	remove_minister = 615214 
+	remove_minister = 615215 
+	remove_minister = 615216 
+	remove_minister = 615217 
+	remove_minister = 615218 
+	remove_minister = 615219 
+	remove_minister = 615220 
+	remove_minister = 615221 
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615100 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615101 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615102 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615103 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615104 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615105 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615106 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615107 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615108 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615109 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615110 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615111 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615112 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615113 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615114 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615116 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615118 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615119 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615120 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615121 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615122 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 615123 }
+	head_of_state = 615110 
+	foreign_minister = 615112 
+	country_event = 632
+	
+set_global_flag = 133011606_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Collapse of the National Protection Alliance
+country_event = {
+id = 628
+title = "DH_EVENT_133011607_TITLE"
+desc = "DH_EVENT_133011607_DESC"
+trigger = { 
+
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011607 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011607_Option7"
+	leave_faction = axis
+	leave_faction = allies
+	leave_faction = comintern
+	
+set_global_flag = 133011607_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Collapse of the National Protection Alliance
+country_event = {
+id = 629
+title = "DH_EVENT_133011608_TITLE"
+desc = "DH_EVENT_133011608_DESC"
+trigger = { 
+
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011608 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011608_Option7"
+	# MANUALFIX name command = { type = name where = CHI which = CHI_CPM }
+	# MANUALFIX change flag command = { type = flag_ext where = CHI which = "_REP" }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55302 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55303 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55304 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55305 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55306 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55307 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55308 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55309 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55310 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55311 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55312 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55313 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55314 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55315 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55316 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55317 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55318 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55319 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55320 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55321 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55322 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55323 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55324 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55325 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55326 }
+	head_of_state = 55319 
+	head_of_government = 55326 
+	foreign_minister = 55325 
+	country_event = 635
+	armament_minister = 55314 
+	minister_of_security = 55303 
+	minister_of_intelligence = 55304 
+	chief_of_staff = 55305 
+	chief_of_army = 55306 
+	chief_of_navy = 55307 
+	chief_of_air = 55308 
+	remove_minister = 55200 
+	remove_minister = 55201 
+	remove_minister = 55202 
+	remove_minister = 55203 
+	remove_minister = 55204 
+	remove_minister = 55205 
+	remove_minister = 55206 
+	remove_minister = 55207 
+	remove_minister = 55208 
+	remove_minister = 55209 
+	remove_minister = 55210 
+	remove_minister = 55211 
+	remove_minister = 55212 
+	remove_minister = 55213 
+	remove_minister = 55214 
+	remove_minister = 55216 
+	remove_minister = 55218 
+	remove_minister = 55219 
+	remove_minister = 55220 
+	remove_minister = 55221 
+	remove_minister = 55222 
+	remove_minister = 55223 
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011050_EVENT_DONE
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = UCH value = "Hunan" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011051_EVENT_DONE
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = UCH value = "Jiangxi" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011052_EVENT_DONE
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = UCH value = "Jiangsu" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011053_EVENT_DONE
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = UCH value = "Shanxi" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011054_EVENT_DONE
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = UCH value = "Jiangsu" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011056_EVENT_DONE
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = UCH value = "Anhui" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011057_EVENT_DONE
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = UCH value = "Fujian" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011058_EVENT_DONE
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = UCH value = "Zhejiang" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011059_EVENT_DONE
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = UCH value = "Hubei" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011060_EVENT_DONE
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = UCH value = "Guizhou" when = 2 }
+		 }
+	random_country = { limit = { tag = THIS 
+			 has_global_flag = 133011061_EVENT_DONE
+			  } 
+		# MANUALFIX secede area command = {  type = secedearea which = UCH value = "Sichuan" when = 2 }
+		 }
+	release = CGX
+	# MANUALFIX secede area command = { type = secedearea which = CGX value = "Guangxi" when = 2 }
+	5834 = { hq_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+	country_event = 630
+	
+set_global_flag = 133011608_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Collapse of the National Protection Alliance
+country_event = {
+id = 630
+title = "DH_EVENT_133011609_TITLE"
+desc = "DH_EVENT_133011609_DESC"
+trigger = { 
+
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011609 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011609_Option7"
+	7553 = { hq_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } militia_brigade = current militia_brigade = current militia_brigade = current }
+	random_owned = { limit = { controlled_by = THIS  } militia_brigade = current militia_brigade = current militia_brigade = current }
+	
+set_global_flag = 133011609_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Sun Zhongshan Returns
+country_event = {
+id = 631
+title = "DH_EVENT_133011401_TITLE"
+desc = "DH_EVENT_133011401_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011401 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011401_Option7"
+	dissent = -5 
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55300 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55301 }
+	head_of_state = 55300 
+	head_of_government = 55301 
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 relation = { who = JAP value = 10 }
+				 }  } 
+		THIS = { relation = { who = JAP value = 100  } }
+		 }
+	random_country = { limit = { tag = THIS 
+			 relation = { who = ROC value = -1 }
+			  } 
+		THIS = { relation = { who = ROC value = -150  } }
+		 }
+	random_country = { limit = { tag = THIS 
+			 JAP = { war_with = THIS }
+			  } 
+		THIS = { end_war = JAP }
+		 }
+	JAP = { non_aggression_pact = CHI }
+	country_event = 607
+	
+set_global_flag = 133011401_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Cai E Dies
+country_event = {
+id = 632
+title = "DH_EVENT_133011404_TITLE"
+desc = "DH_EVENT_133011404_DESC"
+trigger = { 
+tag = CYN
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011404 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011404_Option7"
+	dissent = -5 
+	remove_minister = 615110 
+	remove_minister = 615112 
+	remove_minister = 615116 
+	random_country = { limit = { tag = THIS 
+			 exists = ROC
+			  } 
+		country_event = 633
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CGX
+			  } 
+		country_event = 633
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CHI
+			  } 
+		country_event = 633
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CSX
+			  } 
+		country_event = 633
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = SIK
+			  } 
+		country_event = 633
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = MEN
+			  } 
+		country_event = 633
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = CHC
+			  } 
+		country_event = 633
+		 }
+	
+set_global_flag = 133011404_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Cai E Dies
+country_event = {
+id = 633
+title = "DH_EVENT_133011405_TITLE"
+desc = "DH_EVENT_133011405_DESC"
+trigger = { 
+
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011405 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011405_Option7"
+	dissent = -5 
+	
+set_global_flag = 133011405_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Yunnan Domination
+country_event = {
+id = 634
+title = "DH_EVENT_133011406_TITLE"
+desc = "DH_EVENT_133011406_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011406 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011406_Option7"
+	remove_minister = 55200 
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55201 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55202 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55203 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55204 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55205 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55206 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55207 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55208 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55209 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55211 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55213 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55214 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55218 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55219 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55221 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55222 }
+	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 55223 }
+	head_of_state = 55200 
+	head_of_government = 55201 
+	chief_of_staff = 55206 
+	THIS = { inherit = CYN }
+	# MANUALFIX secede area command = { type = secedearea which = CHI value = "Yunnan" when = 2 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 9347 = { controlled_by = TIB }
+				 }  } 
+		9347 = { secede_province = CHI }
+		9348 = { secede_province = CHI }
+		9379 = { secede_province = CHI }
+		 }
+	9349 = { secede_province = CHI }
+	9476 = { secede_province = CHI }
+	9322 = { secede_province = CHI }
+	9380 = { secede_province = CHI }
+	9414 = { secede_province = CHI }
+	9444 = { secede_province = CHI }
+	9501 = { secede_province = CHI }
+	country_event = 607
+	
+set_global_flag = 133011406_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Wu Tingfang Leaves the Republic of China
+country_event = {
+id = 635
+title = "DH_EVENT_133011418_TITLE"
+desc = "DH_EVENT_133011418_DESC"
+trigger = { 
+tag = ROC
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011418 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133011418_Option7"
+	remove_minister = 1325208 
+	CYN = { non_aggression_pact = ROC }
+	CGX = { non_aggression_pact = ROC }
+	CXB = { non_aggression_pact = ROC }
+	SIK = { non_aggression_pact = ROC }
+	
+set_global_flag = 133011418_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: AI_EVENT
+country_event = {
+id = 636
+title = "DH_EVENT_133911000_TITLE"
+desc = "DH_EVENT_133911000_DESC"
+trigger = { 
+tag = REB
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133911000 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	name = "DH_EVENT_133911000_Option7"
+	# MANUALFIX secede region command = { type = secederegion value = "China" which = UCH when = 1 }
+	
+set_global_flag = 133911000_EVENT_DONE
+
+}
+
+}
+
