@@ -9,7 +9,6 @@
 #2191582_decision = { #EVENTNAME: Overhaul coastal defence at the Dardanelles *CONFIRMED
 #2001571_decision = { #EVENTNAME: Protect the oil fields in southern Persia *CONFIRMED
 #2104550_decision = { #EVENTNAME: Occupy northern Persia *CONFIRMED
-#2001572_decision = { #EVENTNAME: Make Qatar a protectorate *CONFIRMED
 
 
 
@@ -326,40 +325,3 @@ diplomatic_decisions = {
 		set_country_flag = decision_2104550 }
 	ai_will_do = { factor = 1 }
 	}
-
-
-
-
-
-#DECISIONNAME: Make Qatar a protectorate
-2001572_decision = {
-	potential = {
-		exists = ENG
-		not = {
-			 #has_global_flag = 2191550_EVENT_DONE
-			 }
-		tag = ENG
-		date = 1916.1.1
-		not = { date = 1925.12.30
-			 }
-		not = { has_global_flag = SLEEPEVENT_2001572 }
-		not = { has_country_flag = decision_2001572 } }
-	allow = {
-		not = {
-			 ENG = { war_with = ENG }
-			 }
-		not = {
-			 ENG = { is_subject = yes }
-			 }
-		or = {
-			ENG = { vassal_of = ENG }
-			SAU = { vassal_of = ENG }
-			OMN = { vassal_of = ENG }
-			}
-		}
-	effect = { country_event = 265
-		set_country_flag = decision_2001572 }
-	ai_will_do = { factor = 1 }
-	}
-
-}
