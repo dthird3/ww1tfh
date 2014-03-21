@@ -4,9 +4,9 @@
 #2007509_decision = { #EVENTNAME: War communism - phase two
 #2007510_decision = { #EVENTNAME: War communism - phase three
 #2007511_decision = { #EVENTNAME: New Economy Policy
-#2007512_decision = { #EVENTNAME: Creation of the Red Army
+#2007512_decision = { #EVENTNAME: Creation of the Red Army *CONFIRMED
 #2007513_decision = { #EVENTNAME: Order N.228
-#2007514_decision = { #EVENTNAME: Mass levy
+#2007514_decision = { #EVENTNAME: Mass levy *CONFIRMED
 #2007520_decision = { #EVENTNAME: Foundation of USSR *CONFIRMED
 
 
@@ -149,7 +149,7 @@ not = { date = 1930.1.1
 	potential = {
 		has_global_flag = 2007509_EVENT_DONE
 		has_global_flag = 2007516_EVENT_DONE
-		head_of_government = 30097
+		head_of_government = 30107
 		tag = SOV
 		date = 1918.1.1
 		not = { date = 1925.12.30
@@ -157,7 +157,7 @@ not = { date = 1930.1.1
 		not = { has_global_flag = SLEEPEVENT_2007511 }
 		not = { has_country_flag = decision_2007511 } }
 	allow = {
-		head_of_government = 30097
+		head_of_government = 30107
 		}
 	effect = { country_event = 384
 		set_country_flag = decision_2007511 }
@@ -178,7 +178,7 @@ not = { date = 1930.1.1
 	allow = {
 		money =  20
 		supplies =  50
-		has_global_flag = 2007502_EVENT_DONE
+		has_global_flag = imperial_dissolution
 		not = {
 			 dissent = 15 
 			 }
@@ -201,16 +201,7 @@ not = { date = 1930.1.1
 		not = { has_country_flag = decision_2007513 } }
 	allow = {
 		or = {
-			head_of_state = 30108
-			head_of_government = 30108
-			foreign_minister = 30108
-			armament_minister = 30108
-			minister_of_security = 30108
 			minister_of_intelligence = 30108
-			chief_of_staff = 30108
-			chief_of_army = 30108
-			chief_of_navy = 30108
-			chief_of_air = 30108
 			}
 		not = {
 			 dissent = 15 
