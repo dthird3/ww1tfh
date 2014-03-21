@@ -2039,8 +2039,8 @@ multiethnic_empire = {
 	
 	officer_recruitment = -0.15
 	research_efficiency = -0.15
-	org_regain = -0.05
-	land_organisation = -0.05
+	org_regain = -0.1
+	land_organisation = -0.1
 	icon = 31
 }
 #Qing
@@ -2245,4 +2245,54 @@ blacksea_supplies = {
 	
 	supply_throughput = 0.1
 	icon = 35
+}
+
+
+
+#Roma oil
+persian_oil = {
+	potential = {
+		is_in_any_faction = yes
+	}
+	trigger = {
+		3778 = {
+			controller = {
+				faction = THIS
+			}
+		}
+	}
+	
+	fuel_conversion = 0.15
+	global_crude_oil = 0.2
+	icon = 13
+}
+united_china = {
+	potential = {
+	or = {
+	tag = QIN
+	tag = PRC 
+	tag = ROC
+	tag = CHI
+	tag = ZHC
+	tag = FEC
+	tag = CYN 
+	tag = CXB
+	tag = CSX
+	tag = CGX
+	tag = SIK
+	tag = CHC
+	}
+	}
+	trigger = {
+	not = {
+		any_core = {
+			not = {
+				controlled_by = THIS
+			}
+		}
+		
+	}
+	global_leadership_modifier = 0.15
+	global_ic = 0.15
+	icon = 36
 }
