@@ -2186,7 +2186,7 @@ channel_ports = {
 	icon = 34
 }
 
-#channel ports
+#black sea supplies
 blacksea_supplies = {
 	potential = {
 		tag = RUS
@@ -2266,6 +2266,8 @@ persian_oil = {
 	global_crude_oil = 0.2
 	icon = 13
 }
+
+#United china
 united_china = {
 	potential = {
 	or = {
@@ -2284,13 +2286,16 @@ united_china = {
 	}
 	}
 	trigger = {
-	not = {
-		any_core = {
-			not = {
-				controlled_by = THIS
-			}
-		}
-		
+	war = no
+	controls = 5246
+	controls = 5181
+	controls = 5020
+	controls = 5886
+	controls = 5868
+	controls = 5919
+	controls = 9377
+	controls = 8892
+	controls = 5020
 	}
 	global_leadership_modifier = 0.15
 	global_ic = 0.15
