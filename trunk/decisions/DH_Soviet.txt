@@ -1,5 +1,5 @@
 #2193501_decision = { #EVENTNAME: Polish–Soviet War
-#2007507_decision = { #EVENTNAME: War communism - phase one
+#2007507_decision = { #EVENTNAME: War communism - phase one *CONFIRMED
 #2007508_decision = { #EVENTNAME: Prodrazvyorstka
 #2007509_decision = { #EVENTNAME: War communism - phase two
 #2007510_decision = { #EVENTNAME: War communism - phase three
@@ -7,7 +7,7 @@
 #2007512_decision = { #EVENTNAME: Creation of the Red Army
 #2007513_decision = { #EVENTNAME: Order N.228
 #2007514_decision = { #EVENTNAME: Mass levy
-#2007520_decision = { #EVENTNAME: Foundation of USSR
+#2007520_decision = { #EVENTNAME: Foundation of USSR *CONFIRMED
 
 
 
@@ -256,6 +256,7 @@ not = { date = 1930.1.1
 		war = no
 		tag = SOV
 		date = 1915.1.1
+		SOV = { has_country_flag = civrus }
 		not = { date = 1925.12.30
 			 }
 		not = { has_global_flag = SLEEPEVENT_2007520 }
