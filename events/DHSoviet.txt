@@ -1,25 +1,24 @@
 #id = 302 #EVENTNAME: Polish–Soviet War *CONFIRMED
 #id = 374 #EVENTNAME: Sovnarkom formed *CONFIRMED
 #id = 376 #EVENTNAME: The economy is collapsing! *CONFIRMED
-#id = 377 #EVENTNAME: The Railway War
-#id = 378 #EVENTNAME: Dissolution of the Constituent Assembly
-#id = 379 #EVENTNAME: Decrees on Land
+#id = 378 #EVENTNAME: Dissolution of the Constituent Assembly *CONFIRMED
+#id = 379 #EVENTNAME: Decrees on Land *CONFIRMED
 #id = 380 #EVENTNAME: War communism - phase one *CONFIRMED
-#id = 381 #EVENTNAME: Prodrazvyorstka
-#id = 382 #EVENTNAME: War communism - phase two
-#id = 383 #EVENTNAME: War communism - phase three
-#id = 384 #EVENTNAME: New Economy Policy
-#id = 385 #EVENTNAME: Creation of the Red Army
-#id = 386 #EVENTNAME: Order N.228
-#id = 387 #EVENTNAME: Mass levy
-#id = 388 #EVENTNAME: Peasants' rebellion
-#id = 389 #EVENTNAME: Tambov rebellion
-#id = 390 #EVENTNAME: Kronstadt rebellion
-#id = 391 #EVENTNAME: One of our ministers has died
-#id = 392 #EVENTNAME: Lenin withdraws from politics
+#id = 381 #EVENTNAME: Prodrazvyorstka *CONFIRMED
+#id = 382 #EVENTNAME: War communism - phase two *CONFIRMED
+#id = 383 #EVENTNAME: War communism - phase three *CONFIRMED
+#id = 384 #EVENTNAME: New Economy Policy *CONFIRMED
+#id = 385 #EVENTNAME: Creation of the Red Army *CONFIRMED
+#id = 386 #EVENTNAME: Order N.228 *CONFIRMED
+#id = 387 #EVENTNAME: Mass levy *CONFIRMED
+#id = 388 #EVENTNAME: Peasants' rebellion *CONFIRMED
+#id = 389 #EVENTNAME: Tambov rebellion *CONFIRMED
+#id = 390 #EVENTNAME: Kronstadt rebellion *CONFIRMED
+#id = 391 #EVENTNAME: One of our ministers has died *CONFIRMED
+#id = 392 #EVENTNAME: Lenin withdraws from politics *CONFIRMED
 #id = 393 #EVENTNAME: Foundation of USSR *CONFIRMED
 #id = 402 #EVENTNAME: The Left Socialist-Revolutionaries leave the government
-#id = 404 #EVENTNAME: The Arkhangelsk Government
+#id = 404 #EVENTNAME: The Arkhangelsk Government *CONFIRMED
 #id = 405 #EVENTNAME: Admiral Koltchak
 #id = 406 #EVENTNAME: Cossacks' Uprising
 #id = 407 #EVENTNAME: Red Terror
@@ -198,7 +197,7 @@ option = {
 	random_country = { limit = { year = 1919 } 
 		THIS = { head_of_state = 30001 }
 		 }
-	head_of_government = 30097
+	head_of_government = 30107
 	foreign_minister = 30095
 	chief_of_army = 30096 
 	join_faction = comintern
@@ -234,40 +233,6 @@ option = {
 	add_country_modifier = { name = "bolshevik_economy" duration = 360 }
 	
 set_global_flag = 2007503_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: The Railway War
-country_event = {
-id = 377
-title = "DH_EVENT_2007504_TITLE"
-desc = "DH_EVENT_2007504_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = SOV
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2007504 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2007504_Option7"
-	1949 = { create_revolt = 3 }
-	6746 = { create_revolt = 3 }
-	2587 = { create_revolt = 3 }
-	3384 = { create_revolt = 3 }
-	7105 = { create_revolt = 3 }
-	
-set_global_flag = 2007504_EVENT_DONE
 
 }
 
@@ -311,7 +276,7 @@ desc = "DH_EVENT_2007506_DESC"
 picture = "news_paper"
 
 trigger = {
-	has_global_flag = 2007502_EVENT_DONE
+	has_global_flag = imperial_dissolution
 	
 tag = SOV
 date = 1915.1.1
@@ -513,7 +478,7 @@ picture = "news_paper"
 trigger = {
 	has_global_flag = 2007509_EVENT_DONE
 	has_global_flag = 2007517_EVENT_DONE
-	head_of_government = 30097
+	head_of_government = 30107
 	
 tag = SOV
 date = 1918.1.1
@@ -551,7 +516,7 @@ picture = "news_paper"
 
 trigger = {
 	has_global_flag = 2007501_EVENT_DONE
-	has_global_flag = 2007502_EVENT_DONE
+	has_global_flag = imperial_dissolution
 	not = {
 		 dissent = 15 
 		 }
@@ -593,16 +558,7 @@ picture = "news_paper"
 trigger = {
 	has_global_flag = 2007511_EVENT_DONE
 	or = {
-		head_of_state = 30108
-		head_of_government = 30108
-		foreign_minister = 30108
-		armament_minister = 30108
-		minister_of_security = 30108
 		minister_of_intelligence = 30108
-		chief_of_staff = 30108
-		chief_of_army = 30108
-		chief_of_navy = 30108
-		chief_of_air = 30108
 		}
 	not = {
 		 dissent = 15 
@@ -877,7 +833,7 @@ desc = "DH_EVENT_2007519_DESC"
 picture = "minister_resign"
 
 trigger = {
-	minister_alive = 30097
+	minister_alive = 30107
 	or = {
 		#NOEQUIVALENT random =  2
 		and = {
@@ -903,12 +859,8 @@ mean_time_to_happen = { days =  60 }
 is_triggered_only = no
 option = {
 	name = "DH_EVENT_2007519_Option7"
-	random_country = { limit = { tag = THIS 
-			 head_of_government = 30097
-			  } 
-		head_of_government = 30008
-		 }
-	remove_minister = 30097
+	head_of_government = 30008
+	remove_minister = 30107
 	
 set_global_flag = 2007519_EVENT_DONE
 
