@@ -1,0 +1,2158 @@
+#EVENTNAME: Ask for Beiyang Chinese Aid
+country_event = {
+id = 723
+title = "DH_EVENT_133011613_TITLE"
+desc = "DH_EVENT_133011613_DESC"
+trigger = {
+	not = {
+		 has_global_flag= EVT_133011613
+		 }
+	exists = CHI
+	not = {
+		 ROC = { is_subject = yes }
+		 }
+	not = {
+		 QIN = { is_subject = yes }
+		 }
+	or = {
+		has_global_flag = 2191502_EVENT_DONE
+		has_global_flag = 2191538_EVENT_DONE
+		has_global_flag = 2192501_EVENT_DONE
+		has_global_flag = 2192527_EVENT_DONE
+		has_global_flag = 2104500_EVENT_DONE
+		has_global_flag = 2104540_EVENT_DONE
+		has_global_flag = 2191504_EVENT_DONE
+		}
+	not = {
+		 THIS = { surrender_progress = 15 }
+		 }
+	or = {
+		and = {
+			tag = FRA
+			faction = allies
+			FRA = { war_with = GER }
+			2613 = { controlled_by = THIS }
+			}
+		and = {
+			tag = ENG
+			faction = allies
+			ENG = { war_with = GER }
+			1964 = { controlled_by = THIS }
+			}
+		and = {
+			tag = SOV
+			faction = allies
+			SOV = { war_with = GER }
+			1409 = { controlled_by = THIS }
+			}
+		and = {
+			tag = RUS
+			faction = allies
+			RUS = { war_with = GER }
+			699 = { controlled_by = THIS }
+			}
+		and = {
+			tag = JAP
+			faction = allies
+			JAP = { war_with = GER }
+			5315 = { controlled_by = THIS }
+			}
+		}
+	not = {
+		or = {
+			and = {
+				or = {
+					has_global_flag = 2002533_EVENT_DONE
+					has_global_flag = 2191513_EVENT_DONE
+					has_global_flag = 2191519_EVENT_DONE
+					has_global_flag = 2191531_EVENT_DONE
+					}
+				has_global_flag = 2192506_EVENT_DONE
+				}
+			and = {
+				has_global_flag = 2191511_EVENT_DONE
+				or = {
+					has_global_flag = 2191554_EVENT_DONE
+					has_global_flag = 2007528_EVENT_DONE
+					has_global_flag = 2007529_EVENT_DONE
+					}
+				}
+			}
+		}
+	not = {
+		 faction = allies
+		 }
+	not = {
+		 faction = axis
+		 }
+	not = {
+		 faction = comintern
+		 }
+	not = {
+		 faction = allies
+		 }
+	not = {
+		 faction = axis
+		 }
+	not = {
+		 faction = comintern
+		 }
+	not = {
+		 has_global_flag= beiyang_allies
+		 }
+	not = {
+		 has_global_flag= beiyang_axis
+		 }
+	or = {
+		exists = ROC
+		exists = QIN
+		}
+	#NOEQUIVALENT random =  15
+	not = {
+		 ROC = { war_with = THIS }
+		 }
+	not = {
+		 QIN = { war_with = THIS }
+		 }
+	
+
+
+not = { date = 1921.12.29
+ }
+or = {
+tag = FRA
+tag = ENG
+tag = SOV
+tag = RUS
+tag = JAP
+}
+
+
+not = { has_global_flag = SLEEPEVENT_133011613 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  15 }
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_133011613_Option7"
+	set_global_flag = EVT_133011613 
+	random_country = { limit = { tag = THIS 
+			 exists = ROC
+			  } 
+		country_event = 725
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = QIN
+			  } 
+		country_event = 725
+		 }
+	
+set_global_flag = 133011613_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISTHIS = { ai = yes } } } 
+	ai_chance = { factor = 0
+		 }
+	name = "DH_EVENT_133011613_Option8"
+	#Removed Blank command
+	
+set_global_flag = 133011613_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Ask for Beiyang Chinese Aid
+country_event = {
+id = 724
+title = "DH_EVENT_133011614_TITLE"
+desc = "DH_EVENT_133011614_DESC"
+trigger = {
+	not = {
+		 has_global_flag= EVT_133011614
+		 }
+	exists = CHI
+	not = {
+		 ROC = { is_subject = yes }
+		 }
+	not = {
+		 QIN = { is_subject = yes }
+		 }
+	not = {
+		 THIS = { surrender_progress = 15 }
+		 }
+	or = {
+		has_global_flag = 2191502_EVENT_DONE
+		has_global_flag = 2191538_EVENT_DONE
+		has_global_flag = 2192501_EVENT_DONE
+		has_global_flag = 2192527_EVENT_DONE
+		has_global_flag = 2104500_EVENT_DONE
+		has_global_flag = 2104540_EVENT_DONE
+		has_global_flag = 2191504_EVENT_DONE
+		}
+	or = {
+		and = {
+			tag = GER
+			faction = axis
+			or = {
+				FRA = { war_with = GER }
+				ENG = { war_with = GER }
+				RUS = { war_with = GER }
+				SOV = { war_with = GER }
+				}
+			1861 = { controlled_by = THIS }
+			}
+		and = {
+			tag = AUH
+			faction = axis
+			or = {
+				FRA = { war_with = AUH }
+				ENG = { war_with = AUH }
+				RUS = { war_with = AUH }
+				SOV = { war_with = AUH }
+				}
+			3026 = { controlled_by = THIS }
+			}
+		}
+	not = {
+		or = {
+			and = {
+				or = {
+					has_global_flag = 2002533_EVENT_DONE
+					has_global_flag = 2191513_EVENT_DONE
+					has_global_flag = 2191519_EVENT_DONE
+					has_global_flag = 2191531_EVENT_DONE
+					}
+				has_global_flag = 2192506_EVENT_DONE
+				}
+			and = {
+				has_global_flag = 2191511_EVENT_DONE
+				or = {
+					has_global_flag = 2191554_EVENT_DONE
+					has_global_flag = 2007528_EVENT_DONE
+					has_global_flag = 2007529_EVENT_DONE
+					}
+				}
+			}
+		}
+	not = {
+		 faction = allies
+		 }
+	not = {
+		 faction = axis
+		 }
+	not = {
+		 faction = comintern
+		 }
+	not = {
+		 faction = allies
+		 }
+	not = {
+		 faction = axis
+		 }
+	not = {
+		 faction = comintern
+		 }
+	not = {
+		 has_global_flag= beiyang_axis
+		 }
+	not = {
+		 has_global_flag= beiyang_allies
+		 }
+	or = {
+		exists = ROC
+		exists = QIN
+		}
+	or = {
+		#NOEQUIVALENT random =  5
+		and = {
+			#NOEQUIVALENT random =  20
+			or = {
+				and = {
+					ROC = { war_with = JAP }
+					faction = allies
+					}
+				and = {
+					ROC = { war_with = ENG }
+					faction = allies
+					}
+				and = {
+					ROC = { war_with = FRA }
+					faction = allies
+					}
+				}
+			}
+		and = {
+			#NOEQUIVALENT random =  20
+			or = {
+				and = {
+					QIN = { war_with = JAP }
+					faction = allies
+					}
+				and = {
+					QIN = { war_with = ENG }
+					faction = allies
+					}
+				and = {
+					QIN = { war_with = FRA }
+					faction = allies
+					}
+				}
+			}
+		}
+	not = {
+		 ROC = { war_with = THIS }
+		 }
+	not = {
+		 QIN = { war_with = THIS }
+		 }
+	
+
+
+not = { date = 1921.12.29
+ }
+or = {
+tag = GER
+tag = AUH
+}
+
+
+not = { has_global_flag = SLEEPEVENT_133011614 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  15 }
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 20
+		 }
+	name = "DH_EVENT_133011614_Option7"
+	set_global_flag = EVT_133011614 
+	random_country = { limit = { tag = THIS 
+			 exists = ROC
+			  } 
+		country_event = 726
+		 }
+	random_country = { limit = { tag = THIS 
+			 exists = QIN
+			  } 
+		country_event = 726
+		 }
+	
+set_global_flag = 133011614_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISTHIS = { ai = yes } } } 
+	ai_chance = { factor = 80
+		 }
+	name = "DH_EVENT_133011614_Option8"
+	#Removed Blank command
+	
+set_global_flag = 133011614_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Join the Entente
+country_event = {
+id = 725
+title = "DH_EVENT_133011600_TITLE"
+desc = "DH_EVENT_133011600_DESC"
+trigger = { 
+
+
+
+or = {
+tag = ROC
+tag = QIN
+}
+
+
+not = { has_global_flag = SLEEPEVENT_133011600 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = ROC } } 
+	ai_chance = { factor = 90
+		 }
+	name = "DH_EVENT_133011600_Option7"
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		country_event = 727
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		country_event = 727
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		country_event = 727
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		country_event = 727
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		country_event = 727
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		country_event = 727
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = FRA value = 25  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = RUS value = 25  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = ENG value = 25  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = USA value = 25  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = JAP value = 35  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = ITA value = 25  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		relation = { who = GER value = -45  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		relation = { who = AUH value = -45  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		relation = { who = ITA value = -45  }
+		 }
+	set_global_flag = beiyang_allies 
+	country_event = 729
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		JAP = { non_aggression_pact = ROC }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		FRA = { non_aggression_pact = ROC }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		ENG = { non_aggression_pact = ROC }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		RUS = { non_aggression_pact = ROC }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		SOV = { non_aggression_pact = ROC }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		ITA = { non_aggression_pact = ROC }
+		 }
+	random_country = { limit = { tag = THIS 
+			 JAP = { war_with = THIS }
+			 faction = allies
+			  } 
+		THIS = { end_war = JAP }
+		 }
+	random_country = { limit = { tag = THIS 
+			 FRA = { war_with = THIS }
+			 faction = allies
+			  } 
+		THIS = { end_war = FRA }
+		 }
+	random_country = { limit = { tag = THIS 
+			 ENG = { war_with = THIS }
+			 faction = allies
+			  } 
+		THIS = { end_war = ENG }
+		 }
+	random_country = { limit = { tag = THIS 
+			 RUS = { war_with = THIS }
+			 faction = allies
+			  } 
+		THIS = { end_war = RUS }
+		 }
+	random_country = { limit = { tag = THIS 
+			 SOV = { war_with = THIS }
+			 faction = allies
+			  } 
+		THIS = { end_war = SOV }
+		 }
+	random_country = { limit = { tag = THIS 
+			 ITA = { war_with = THIS }
+			 faction = allies
+			  } 
+		THIS = { end_war = ITA }
+		 }
+	set_global_flag = SLEEPEVENT_133011614 
+	set_global_flag = SLEEPEVENT_133011613 
+	set_global_flag = SLEEPEVENT_133011600 
+	set_global_flag = SLEEPEVENT_133011618 
+	
+set_global_flag = 133011600_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = QIN } } 
+	ai_chance = { factor = 90
+		 }
+	name = "DH_EVENT_133011600_Option8"
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		country_event = 727
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		country_event = 727
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		country_event = 727
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		country_event = 727
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		country_event = 727
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		country_event = 727
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = FRA value = 25  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = RUS value = 25  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = ENG value = 25  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = USA value = 25  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = JAP value = 35  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = ITA value = 25  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		relation = { who = GER value = -45  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		relation = { who = AUH value = -45  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		relation = { who = ITA value = -45  }
+		 }
+	set_global_flag = beiyang_allies 
+	country_event = 729
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		JAP = { non_aggression_pact = QIN }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		FRA = { non_aggression_pact = QIN }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		ENG = { non_aggression_pact = QIN }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		RUS = { non_aggression_pact = QIN }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		SOV = { non_aggression_pact = QIN }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		ITA = { non_aggression_pact = QIN }
+		 }
+	random_country = { limit = { tag = THIS 
+			 JAP = { war_with = THIS }
+			 faction = allies
+			  } 
+		THIS = { end_war = JAP }
+		 }
+	random_country = { limit = { tag = THIS 
+			 FRA = { war_with = THIS }
+			 faction = allies
+			  } 
+		THIS = { end_war = FRA }
+		 }
+	random_country = { limit = { tag = THIS 
+			 ENG = { war_with = THIS }
+			 faction = allies
+			  } 
+		THIS = { end_war = ENG }
+		 }
+	random_country = { limit = { tag = THIS 
+			 RUS = { war_with = THIS }
+			 faction = allies
+			  } 
+		THIS = { end_war = RUS }
+		 }
+	random_country = { limit = { tag = THIS 
+			 SOV = { war_with = THIS }
+			 faction = allies
+			  } 
+		THIS = { end_war = SOV }
+		 }
+	random_country = { limit = { tag = THIS 
+			 ITA = { war_with = THIS }
+			 faction = allies
+			  } 
+		THIS = { end_war = ITA }
+		 }
+	set_global_flag = SLEEPEVENT_133011614 
+	set_global_flag = SLEEPEVENT_133011613 
+	set_global_flag = SLEEPEVENT_133011600 
+	set_global_flag = SLEEPEVENT_133011618 
+	
+set_global_flag = 133011600_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 10
+		 }
+	name = "DH_EVENT_133011600_Option9"
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = FRA value = -15  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = RUS value = -15  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = ENG value = -15  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = USA value = -15  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = JAP value = -15  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = ITA value = -15  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		relation = { who = GER value = 15  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		relation = { who = AUH value = 15  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		relation = { who = ITA value = 15  }
+		 }
+	set_global_flag = SLEEPEVENT_133011613 
+	set_global_flag = SLEEPEVENT_133011600 
+	
+set_global_flag = 133011600_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Join the Central Powers
+country_event = {
+id = 726
+title = "DH_EVENT_133011618_TITLE"
+desc = "DH_EVENT_133011618_DESC"
+trigger = { 
+
+
+
+or = {
+tag = ROC
+tag = QIN
+}
+
+
+not = { has_global_flag = SLEEPEVENT_133011618 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISor = {THIS = { ai = no }not = { faction = allies }}tag = ROC } } 
+	ai_chance = { factor = 40
+		 }
+	name = "DH_EVENT_133011618_Option7"
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		country_event = 728
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		country_event = 728
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = FRA value = -45  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = RUS value = -45  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = ENG value = -45  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = USA value = -45  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = JAP value = -55  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = ITA value = -35  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		relation = { who = GER value = 25  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		relation = { who = AUH value = 25  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		relation = { who = ITA value = 25  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		GER = { non_aggression_pact = ROC }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		AUH = { non_aggression_pact = ROC }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		ITA = { non_aggression_pact = ROC }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = THIS }
+			 faction = axis
+			  } 
+		THIS = { end_war = GER }
+		 }
+	random_country = { limit = { tag = THIS 
+			 AUH = { war_with = THIS }
+			 faction = axis
+			  } 
+		THIS = { end_war = AUH }
+		 }
+	random_country = { limit = { tag = THIS 
+			 ITA = { war_with = THIS }
+			 faction = axis
+			  } 
+		THIS = { end_war = ITA }
+		 }
+	set_global_flag = beiyang_axis 
+	country_event = 731
+	set_global_flag = SLEEPEVENT_133011614 
+	set_global_flag = SLEEPEVENT_133011613 
+	set_global_flag = SLEEPEVENT_133011600 
+	set_global_flag = SLEEPEVENT_133011618 
+	
+set_global_flag = 133011618_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISor = {THIS = { ai = no }not = { faction = allies }}tag = QIN } } 
+	ai_chance = { factor = 40
+		 }
+	name = "DH_EVENT_133011618_Option8"
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		country_event = 728
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		country_event = 728
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = FRA value = -45  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = RUS value = -45  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = ENG value = -45  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = USA value = -45  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = JAP value = -55  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = ITA value = -35  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		relation = { who = GER value = 25  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		relation = { who = AUH value = 25  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		relation = { who = ITA value = 25  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		GER = { non_aggression_pact = QIN }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		AUH = { non_aggression_pact = QIN }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		ITA = { non_aggression_pact = QIN }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = THIS }
+			 faction = axis
+			  } 
+		THIS = { end_war = GER }
+		 }
+	random_country = { limit = { tag = THIS 
+			 AUH = { war_with = THIS }
+			 faction = axis
+			  } 
+		THIS = { end_war = AUH }
+		 }
+	random_country = { limit = { tag = THIS 
+			 ITA = { war_with = THIS }
+			 faction = axis
+			  } 
+		THIS = { end_war = ITA }
+		 }
+	set_global_flag = beiyang_axis 
+	country_event = 731
+	set_global_flag = SLEEPEVENT_133011614 
+	set_global_flag = SLEEPEVENT_133011613 
+	set_global_flag = SLEEPEVENT_133011600 
+	set_global_flag = SLEEPEVENT_133011618 
+	
+set_global_flag = 133011618_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 60
+		 }
+	name = "DH_EVENT_133011618_Option9"
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = FRA value = 15  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = RUS value = 15  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = ENG value = 15  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = USA value = 15  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = JAP value = 15  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		relation = { who = ITA value = 15  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		relation = { who = GER value = -15  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		relation = { who = AUH value = -15  }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		relation = { who = ITA value = -15  }
+		 }
+	set_global_flag = SLEEPEVENT_133011614 
+	set_global_flag = SLEEPEVENT_133011618 
+	
+set_global_flag = 133011618_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Chinese Aid Arrives
+country_event = {
+id = 727
+title = "DH_EVENT_133011615_TITLE"
+desc = "DH_EVENT_133011615_DESC"
+trigger = { 
+
+
+
+
+
+#NOEQUIVALENT one_action = yes
+
+
+not = { has_global_flag = SLEEPEVENT_133011615 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISor = {tag = SOVtag = RUS} } } 
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_133011615_Option2"
+	manpower = 5 
+	
+set_global_flag = 133011615_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = JAP } } 
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_133011615_Option3"
+	manpower = 5 
+	
+set_global_flag = 133011615_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = ITA } } 
+	ai_chance = { factor = 100
+		 }
+	name = "DH_EVENT_133011615_Option4"
+	manpower = 1 
+	
+set_global_flag = 133011615_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = FRA } } 
+	ai_chance = { factor = 40
+		 }
+	name = "DH_EVENT_133011615_Option7"
+	manpower = 40 
+	
+set_global_flag = 133011615_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = FRA } } 
+	ai_chance = { factor = 10
+		 }
+	name = "DH_EVENT_133011615_Option8"
+	manpower = 20 
+	
+set_global_flag = 133011615_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = FRA } } 
+	ai_chance = { factor = 5
+		 }
+	name = "DH_EVENT_133011615_Option9"
+	manpower = 60 
+	
+set_global_flag = 133011615_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = FRA } } 
+	ai_chance = { factor = 5
+		 }
+	name = "DH_EVENT_133011615_Option10"
+	manpower = 10 
+	
+set_global_flag = 133011615_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = FRA } } 
+	ai_chance = { factor = 5
+		 }
+	name = "DH_EVENT_133011615_Option11"
+	manpower = 5 
+	
+set_global_flag = 133011615_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = ENG } } 
+	ai_chance = { factor = 40
+		 }
+	name = "DH_EVENT_133011615_Option12"
+	manpower = 10 
+	
+set_global_flag = 133011615_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = ENG } } 
+	ai_chance = { factor = 10
+		 }
+	name = "DH_EVENT_133011615_Option13"
+	manpower = 5 
+	
+set_global_flag = 133011615_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = ENG } } 
+	ai_chance = { factor = 5
+		 }
+	name = "DH_EVENT_133011615_Option14"
+	manpower = 15 
+	
+set_global_flag = 133011615_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = ENG } } 
+	ai_chance = { factor = 5
+		 }
+	name = "DH_EVENT_133011615_Option15"
+	manpower = 3 
+	
+set_global_flag = 133011615_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = ENG } } 
+	ai_chance = { factor = 5
+		 }
+	name = "DH_EVENT_133011615_Option16"
+	manpower = 1 
+	
+set_global_flag = 133011615_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Chinese Aid Arrives
+country_event = {
+id = 728
+title = "DH_EVENT_133011616_TITLE"
+desc = "DH_EVENT_133011616_DESC"
+trigger = { 
+
+
+
+
+
+#NOEQUIVALENT one_action = yes
+
+
+not = { has_global_flag = SLEEPEVENT_133011616 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = GER } } 
+	ai_chance = { factor = 40
+		 }
+	name = "DH_EVENT_133011616_Option7"
+	manpower = 50 
+	
+set_global_flag = 133011616_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = GER } } 
+	ai_chance = { factor = 10
+		 }
+	name = "DH_EVENT_133011616_Option8"
+	manpower = 30 
+	
+set_global_flag = 133011616_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = GER } } 
+	ai_chance = { factor = 5
+		 }
+	name = "DH_EVENT_133011616_Option9"
+	manpower = 70 
+	
+set_global_flag = 133011616_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = GER } } 
+	ai_chance = { factor = 5
+		 }
+	name = "DH_EVENT_133011616_Option10"
+	manpower = 20 
+	
+set_global_flag = 133011616_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = GER } } 
+	ai_chance = { factor = 5
+		 }
+	name = "DH_EVENT_133011616_Option11"
+	manpower = 10 
+	
+set_global_flag = 133011616_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = AUH } } 
+	ai_chance = { factor = 40
+		 }
+	name = "DH_EVENT_133011616_Option12"
+	manpower = 10 
+	
+set_global_flag = 133011616_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = AUH } } 
+	ai_chance = { factor = 10
+		 }
+	name = "DH_EVENT_133011616_Option13"
+	manpower = 5 
+	
+set_global_flag = 133011616_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = AUH } } 
+	ai_chance = { factor = 5
+		 }
+	name = "DH_EVENT_133011616_Option14"
+	manpower = 15 
+	
+set_global_flag = 133011616_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = AUH } } 
+	ai_chance = { factor = 5
+		 }
+	name = "DH_EVENT_133011616_Option15"
+	manpower = 3 
+	
+set_global_flag = 133011616_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = AUH } } 
+	ai_chance = { factor = 5
+		 }
+	name = "DH_EVENT_133011616_Option16"
+	manpower = 1 
+	
+set_global_flag = 133011616_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Beiyang Joins the Triple Entente
+country_event = {
+id = 729
+title = "DH_EVENT_133011619_TITLE"
+desc = "DH_EVENT_133011619_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011619 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISor = {and = {or = {relation = { who = JAP value = 15 }not = { faction = allies }}or = {relation = { who = ROC value = 50 }not = { faction = allies }}or = {relation = { who = QIN value = 50 }not = { faction = allies }}or = {relation = { who = ENG value = 50 }not = { faction = allies }}or = {relation = { who = FRA value = 50 }not = { faction = allies }}}THIS = { ai = no }} } } 
+	ai_chance = { factor = 15
+		 }
+	name = "DH_EVENT_133011619_Option7"
+	random_country = { limit = { tag = THIS 
+			not = {
+				or = {
+					relation = { who = JAP value = 15 }
+					not = {
+						 faction = allies
+						 }
+					}
+				or = {
+					relation = { who = ROC value = 50 }
+					not = {
+						 faction = allies
+						 }
+					}
+				or = {
+					relation = { who = QIN value = 50 }
+					not = {
+						 faction = allies
+						 }
+					}
+				or = {
+					relation = { who = ENG value = 50 }
+					not = {
+						 faction = allies
+						 }
+					}
+				or = {
+					relation = { who = FRA value = 50 }
+					not = {
+						 faction = allies
+						 }
+					}
+				}
+			 } 
+		dissent = 20 
+		 }
+	dissent = 10 
+	set_global_flag = alternate_allies 
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 ROC = { war_with = THIS }
+				 }  } 
+		ROC = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 QIN = { war_with = THIS }
+				 }  } 
+		QIN = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		JAP = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		FRA = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		ENG = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		RUS = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		SOV = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		ITA = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 JAP = { war_with = THIS }
+			 faction = allies
+			  } 
+		THIS = { end_war = JAP }
+		 }
+	random_country = { limit = { tag = THIS 
+			 FRA = { war_with = THIS }
+			 faction = allies
+			  } 
+		THIS = { end_war = FRA }
+		 }
+	random_country = { limit = { tag = THIS 
+			 ENG = { war_with = THIS }
+			 faction = allies
+			  } 
+		THIS = { end_war = ENG }
+		 }
+	random_country = { limit = { tag = THIS 
+			 RUS = { war_with = THIS }
+			 faction = allies
+			  } 
+		THIS = { end_war = RUS }
+		 }
+	random_country = { limit = { tag = THIS 
+			 SOV = { war_with = THIS }
+			 faction = allies
+			  } 
+		THIS = { end_war = SOV }
+		 }
+	random_country = { limit = { tag = THIS 
+			 ITA = { war_with = THIS }
+			 faction = allies
+			  } 
+		THIS = { end_war = ITA }
+		 }
+	relation = { who = ROC value = 20  }
+	
+set_global_flag = 133011619_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 50
+		 }
+	name = "DH_EVENT_133011619_Option8"
+	dissent = -5 
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		JAP = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		FRA = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		ENG = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		RUS = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		SOV = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		ITA = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		GER = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		AUH = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		ITA = { non_aggression_pact = CHI }
+		 }
+	
+set_global_flag = 133011619_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISexists = GERfaction = axis } } 
+	ai_chance = { factor = 30
+		 }
+	name = "DH_EVENT_133011619_Option9"
+	country_event = 730
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 relation = { who = GER value = 10 }
+				 }  } 
+		dissent = 5 
+		 }
+	
+set_global_flag = 133011619_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Secret Sino-German Pact
+country_event = {
+id = 730
+title = "DH_EVENT_133011620_TITLE"
+desc = "DH_EVENT_133011620_DESC"
+trigger = { 
+tag = GER
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011620 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 80
+		 }
+	name = "DH_EVENT_133011620_Option7"
+	country_event = 728
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		country_event = 728
+		 }
+	relation = { who = CHI value = 50  }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		GER = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		AUH = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		ITA = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = THIS }
+			 faction = axis
+			  } 
+		THIS = { end_war = GER }
+		 }
+	random_country = { limit = { tag = THIS 
+			 AUH = { war_with = THIS }
+			 faction = axis
+			  } 
+		THIS = { end_war = AUH }
+		 }
+	random_country = { limit = { tag = THIS 
+			 ITA = { war_with = THIS }
+			 faction = axis
+			  } 
+		THIS = { end_war = ITA }
+		 }
+	set_global_flag = alternate_axis 
+	
+set_global_flag = 133011620_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 20
+		 }
+	name = "DH_EVENT_133011620_Option8"
+	relation = { who = CHI value = -20  }
+	
+set_global_flag = 133011620_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Beiyang Joins the Central Powers
+country_event = {
+id = 731
+title = "DH_EVENT_133011621_TITLE"
+desc = "DH_EVENT_133011621_DESC"
+trigger = { 
+tag = CHI
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011621 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THISor = {and = {or = {relation = { who = GER value = 15 }not = { faction = axis }}or = {relation = { who = AUH value = 50 }not = { faction = axis }}}THIS = { ai = no }} } } 
+	ai_chance = { factor = 5
+		 }
+	name = "DH_EVENT_133011621_Option7"
+	random_country = { limit = { tag = THIS 
+			not = {
+				or = {
+					relation = { who = GER value = 15 }
+					not = {
+						 faction = axis
+						 }
+					}
+				or = {
+					relation = { who = AUH value = 50 }
+					not = {
+						 faction = axis
+						 }
+					}
+				}
+			 } 
+		dissent = 20 
+		 }
+	dissent = 10 
+	set_global_flag = alternate_axis 
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 ROC = { war_with = THIS }
+				 }  } 
+		ROC = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 QIN = { war_with = THIS }
+				 }  } 
+		QIN = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		GER = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		AUH = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		ITA = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 GER = { war_with = THIS }
+			 faction = axis
+			  } 
+		THIS = { end_war = GER }
+		 }
+	random_country = { limit = { tag = THIS 
+			 AUH = { war_with = THIS }
+			 faction = axis
+			  } 
+		THIS = { end_war = AUH }
+		 }
+	random_country = { limit = { tag = THIS 
+			 ITA = { war_with = THIS }
+			 faction = axis
+			  } 
+		THIS = { end_war = ITA }
+		 }
+	relation = { who = ROC value = 20  }
+	
+set_global_flag = 133011621_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 50
+		 }
+	name = "DH_EVENT_133011621_Option8"
+	dissent = -5 
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		JAP = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		FRA = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		ENG = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		RUS = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		SOV = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		ITA = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		GER = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		AUH = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = axis
+			  } 
+		ITA = { non_aggression_pact = CHI }
+		 }
+	
+set_global_flag = 133011621_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 45
+		 }
+	name = "DH_EVENT_133011621_Option9"
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		country_event = 732
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			 not = {
+				 faction = allies
+				 }  } 
+		country_event = 732
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			 not = {
+				 faction = allies
+				 } not = {
+				 faction = allies
+				 }  } 
+		country_event = 732
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			 not = {
+				 faction = allies
+				 } not = {
+				 faction = allies
+				 } not = {
+				 faction = allies
+				 }  } 
+		country_event = 732
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 relation = { who = FRA value = 10 }
+				 }  } 
+		dissent = 2 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 relation = { who = ENG value = 10 }
+				 }  } 
+		dissent = 2 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 relation = { who = RUS value = 10 }
+				 } exists = RUS
+			  } 
+		dissent = 2 
+		 }
+	random_country = { limit = { tag = THIS 
+			 not = {
+				 relation = { who = SOV value = 10 }
+				 } exists = SOV
+			  } 
+		dissent = 2 
+		 }
+	
+set_global_flag = 133011621_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Secret Sino-Entente Pact
+country_event = {
+id = 732
+title = "DH_EVENT_133011622_TITLE"
+desc = "DH_EVENT_133011622_DESC"
+trigger = { 
+
+
+
+
+
+
+not = { has_global_flag = SLEEPEVENT_133011622 }
+
+}
+fire_only_once = yes
+
+is_triggered_only = yes
+option = {
+	ai_chance = { factor = 80
+		 }
+	name = "DH_EVENT_133011622_Option7"
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		country_event = 727
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		country_event = 727
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		country_event = 727
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		country_event = 727
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		country_event = 727
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		country_event = 727
+		 }
+	relation = { who = CHI value = 50  }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		FRA = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		ENG = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		ITA = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		RUS = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		JAP = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 faction = allies
+			  } 
+		SOV = { non_aggression_pact = CHI }
+		 }
+	random_country = { limit = { tag = THIS 
+			 JAP = { war_with = THIS }
+			 faction = allies
+			  } 
+		THIS = { end_war = JAP }
+		 }
+	random_country = { limit = { tag = THIS 
+			 FRA = { war_with = THIS }
+			 faction = allies
+			  } 
+		THIS = { end_war = FRA }
+		 }
+	random_country = { limit = { tag = THIS 
+			 ENG = { war_with = THIS }
+			 faction = allies
+			  } 
+		THIS = { end_war = ENG }
+		 }
+	random_country = { limit = { tag = THIS 
+			 RUS = { war_with = THIS }
+			 faction = allies
+			  } 
+		THIS = { end_war = RUS }
+		 }
+	random_country = { limit = { tag = THIS 
+			 SOV = { war_with = THIS }
+			 faction = allies
+			  } 
+		THIS = { end_war = SOV }
+		 }
+	random_country = { limit = { tag = THIS 
+			 ITA = { war_with = THIS }
+			 faction = allies
+			  } 
+		THIS = { end_war = ITA }
+		 }
+	set_global_flag = alternate_allies 
+	
+set_global_flag = 133011622_EVENT_DONE
+
+}
+
+option = {
+	ai_chance = { factor = 20
+		 }
+	name = "DH_EVENT_133011622_Option8"
+	relation = { who = CHI value = -20  }
+	
+set_global_flag = 133011622_EVENT_DONE
+
+}
+
+}
+
+#EVENTNAME: Chinese Alliance Membership
+country_event = {
+id = 733
+title = "DH_EVENT_133011640_TITLE"
+desc = "DH_EVENT_133011640_DESC"
+trigger = {
+	not = {
+		 has_country_flag = 133011640_override
+		 }
+	or = {
+		and = {
+			faction = allies
+			or = {
+				not = {
+					 -1  = { non_aggression_pact = CHI }
+					 }
+				not = {
+					 -1  = { non_aggression_pact = ROC }
+					 }
+				not = {
+					 -1  = { non_aggression_pact = QIN }
+					 }
+				}
+			or = {
+				has_global_flag= alternate_allies
+				has_global_flag= beiyang_allies
+				}
+			}
+		and = {
+			faction = axis
+			or = {
+				not = {
+					 -1  = { non_aggression_pact = CHI }
+					 }
+				not = {
+					 -1  = { non_aggression_pact = ROC }
+					 }
+				not = {
+					 -1  = { non_aggression_pact = QIN }
+					 }
+				}
+			or = {
+				has_global_flag= alternate_axis
+				has_global_flag= beiyang_axis
+				}
+			}
+		}
+	
+
+date = 1914.7.5
+
+not = { date = 1921.12.29
+ }
+or = {
+tag = FRA
+tag = RUS
+tag = ENG
+tag = SOV
+tag = ITA
+tag = GER
+tag = AUH
+tag = JAP
+}
+
+
+not = { has_global_flag = SLEEPEVENT_133011640 }
+
+}
+fire_only_once = yes
+mean_time_to_happen = { days =  7 }
+
+is_triggered_only = no
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = FRA } } 
+	name = "DH_EVENT_133011640_Option7"
+	FRA = { non_aggression_pact = CHI }
+	FRA = { non_aggression_pact = ROC }
+	FRA = { non_aggression_pact = QIN }
+	
+set_global_flag = 133011640_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = RUS } } 
+	name = "DH_EVENT_133011640_Option8"
+	RUS = { non_aggression_pact = CHI }
+	RUS = { non_aggression_pact = ROC }
+	RUS = { non_aggression_pact = QIN }
+	
+set_global_flag = 133011640_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = ENG } } 
+	name = "DH_EVENT_133011640_Option9"
+	ENG = { non_aggression_pact = CHI }
+	ENG = { non_aggression_pact = ROC }
+	ENG = { non_aggression_pact = QIN }
+	
+set_global_flag = 133011640_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = SOV } } 
+	name = "DH_EVENT_133011640_Option10"
+	SOV = { non_aggression_pact = CHI }
+	SOV = { non_aggression_pact = ROC }
+	SOV = { non_aggression_pact = QIN }
+	
+set_global_flag = 133011640_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = JAP } } 
+	name = "DH_EVENT_133011640_Option11"
+	JAP = { non_aggression_pact = CHI }
+	JAP = { non_aggression_pact = ROC }
+	JAP = { non_aggression_pact = QIN }
+	
+set_global_flag = 133011640_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = ITA } } 
+	name = "DH_EVENT_133011640_Option12"
+	ITA = { non_aggression_pact = CHI }
+	ITA = { non_aggression_pact = ROC }
+	ITA = { non_aggression_pact = QIN }
+	
+set_global_flag = 133011640_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = GER } } 
+	name = "DH_EVENT_133011640_Option13"
+	GER = { non_aggression_pact = CHI }
+	GER = { non_aggression_pact = ROC }
+	GER = { non_aggression_pact = QIN }
+	
+set_global_flag = 133011640_EVENT_DONE
+
+}
+
+option = {
+	#MANUALFIX trigger option random_country = { limit = { tag = THIStag = AUH } } 
+	name = "DH_EVENT_133011640_Option14"
+	AUH = { non_aggression_pact = CHI }
+	AUH = { non_aggression_pact = ROC }
+	AUH = { non_aggression_pact = QIN }
+	
+set_global_flag = 133011640_EVENT_DONE
+
+}
+
+}
+
