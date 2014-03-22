@@ -224,7 +224,7 @@ function P.Buildings(voProductionData)
 end
 
 function P.DiploScore_Alliance(voDiploScoreObj)
-	if voDiploScoreObj.Actor.name == "AUH" or voDiploScoreObj.Actor.name == "GER" or voDiploScoreObj.Target.name == "AUH" or voDiploScoreObj.Target.name == "AUH" then
+	if voDiploScoreObj.Actor.name == "AUH" or voDiploScoreObj.Actor.name == "GER" or voDiploScoreObj.Target.name == "AUH" or voDiploScoreObj.Target.name == "GER" then
 		local loAHTag = CCountryDataBase.GetTag("AUH")
 		local loSERTag = CCountryDataBase.GetTag("SER")
 		local loAHCountry = loAHTag:GetCountry()
