@@ -1078,7 +1078,7 @@ picture = "news_paper"
 
 trigger = {
 	#NOEQUIVALENT random =  15
-	has_global_flag = 2007531_EVENT_DONE
+	exists = WHR
 	
 tag = SOV
 date = 1914.6.1
@@ -1137,10 +1137,6 @@ picture = "news_paper"
 trigger = {
 	exists = WHR
 	or = {
-		and = {
-			#NOEQUIVALENT random =  5
-			has_global_flag = 2007532_EVENT_DONE
-			}
 		and = {
 			not = {
 				2587 = { controlled_by = SOV }
