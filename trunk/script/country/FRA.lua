@@ -22,13 +22,13 @@ function P.TradeWeights(voResourceData)
 		RARE_MATERIALS = {
 			Buffer = 10,
 			BufferSaleCap = 90000,
-			BufferBuyCap = 20000,
+			BufferBuyCap = 0000,
 			BufferCancelCap = 80000},
 		ENERGY = {
 			Buffer = 10,
-			BufferSaleCap = 50000,
-			BufferBuyCap = 20000,
-			BufferCancelCap = 40000},
+			BufferSaleCap = 90000,
+			BufferBuyCap = 50000,
+			BufferCancelCap = 480000},
 		CRUDE_OIL = {
 			Buffer = 1,
 			BufferSaleCap = 5000},

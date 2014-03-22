@@ -43,4 +43,13 @@ function P.DiploScore_OfferTrade(voDiploScoreObj)
 	return voDiploScoreObj.Score
 end
 
+
+function P.DiploScore_Alliance(voDiploScoreObj)
+	if voDiploScoreObj.Actor.name == "SER" or voDiploScoreObj.Actor.name == "MTN" or voDiploScoreObj.Actor.name == "BUL" or voDiploScoreObj.Target.name == "SER" or voDiploScoreObj.Target.name == "MTN" or voDiploScoreObj.Target.name == "BUL" then
+		return 200
+	end
+	
+	return voDiploScoreObj.Score
+end
+
 return AI_GRE

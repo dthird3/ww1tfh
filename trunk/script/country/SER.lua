@@ -30,5 +30,11 @@ end
 -- #######################################
 -- DIPLOMACY SCORE GENERATION
 
-
+function P.DiploScore_Alliance(voDiploScoreObj)
+	if voDiploScoreObj.Actor.name == "GRE" or voDiploScoreObj.Actor.name == "MTN" or voDiploScoreObj.Actor.name == "BUL" or voDiploScoreObj.Target.name == "GRE" or voDiploScoreObj.Target.name == "MTN" or voDiploScoreObj.Target.name == "BUL" then
+		return 200
+	end
+	
+	return voDiploScoreObj.Score
+end
 return AI_SER

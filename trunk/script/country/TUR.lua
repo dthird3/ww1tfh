@@ -214,4 +214,18 @@ end
 -- SUPPORT METHODS
 -- Setup_Custom is called from GER_FAC.lua and GER.lua
 
+function P.DiploScore_Alliance(voDiploScoreObj)
+	if voDiploScoreObj.Actor.name == "HJZ" or voDiploScoreObj.Actor.name == "ASR" or voDiploScoreObj.Actor.name == "YEM" or voDiploScoreObj.Target.name == "HJZ" or voDiploScoreObj.Target.name == "ASR" or voDiploScoreObj.Target.name == "YEM" then
+		return 200
+	end
+	
+	return voDiploScoreObj.Score
+end
+
+
+function P.DiploScore_CallAlly(voDiploScoreObj)
+	voDiploScoreObj.Score = 0
+	
+	return voDiploScoreObj.Score
+end
 return AI_TUR
