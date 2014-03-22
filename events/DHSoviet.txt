@@ -17,7 +17,6 @@
 #id = 391 #EVENTNAME: One of our ministers has died *CONFIRMED
 #id = 392 #EVENTNAME: Lenin withdraws from politics *CONFIRMED
 #id = 393 #EVENTNAME: Foundation of USSR *CONFIRMED
-#id = 402 #EVENTNAME: The Left Socialist-Revolutionaries leave the government
 #id = 404 #EVENTNAME: The Arkhangelsk Government *CONFIRMED
 #id = 405 #EVENTNAME: Admiral Koltchak
 #id = 406 #EVENTNAME: Cossacks' Uprising
@@ -912,37 +911,6 @@ set_global_flag = 2007520_EVENT_DONE
 }
 
 
-
-#EVENTNAME: The Left Socialist-Revolutionaries leave the government
-country_event = {
-id = 402
-title = "DH_EVENT_2007531_TITLE"
-desc = "DH_EVENT_2007531_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = SOV
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2007531 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2007531_Option7"
-	dissent = 5 
-	1409 = { create_revolt = 3 }
-	
-set_global_flag = 2007531_EVENT_DONE
-
-}
-
-}
 
 #EVENTNAME: The Arkhangelsk Government
 country_event = {
