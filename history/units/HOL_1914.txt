@@ -1,149 +1,265 @@
-corps = {
-name = "1e Legerkorps"
-location = 1910
-regiment = { type = hq_brigade name = "1e Legerkorps HQ" historical_model = 0 }
+ corps = {
+	location = 1910 # Amsterdam
+	name = "1e Legerkorps"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "1e Legerkorps HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 1910  # Amsterdam
+		is_reserve = no
+		name = "1e Divisie"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "1e Divisie"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "1e Divisie"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 10 
+			name = "1e Divisie"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 1910  # Amsterdam
+		is_reserve = no
+		name = "2e Divisie"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "2e Divisie1"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "2e Divisie2"
+			historical_model = 2 
+			}
+		}
+	}
 
-division = {
-name = "1e Divisie"
-location = 1910
-is_reserve = no
+ corps = {
+	location = 2025 # Arnhem
+	name = "2e Legerkorps"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "2e Legerkorps HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 2025  # Arnhem
+		is_reserve = no
+		name = "3e Divisie"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "3e Divisie1"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "3e Divisie2"
+			historical_model = 2 
+			}
+		}
+	
+	 division = {
+		location = 2025  # Arnhem
+		is_reserve = no
+		name = "4e Divisie"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "4e Divisie1"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "4e Divisie2"
+			historical_model = 2 
+			}
+		}
+	}
 
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "1e Divisie"
-historical_model = 2}
+ corps = {
+	location = 6507 # Batavia
+	name = "Koninklijk Nederlands Indisch Leger"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Koninklijk Nederlands Indisch Leger HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 6530 # Bandung
+		name = "Ie Divisie 'Java'"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			name = "1st NEI Regiment"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 6531 # Tjilatjap
+		name = "IIe Divisie 'Java'"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			name = "2nd NEI Regiment"
+			historical_model = 0 
+			}
+		}
+	}
 
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "1e Divisie"
-historical_model = 2}
+ navy = {
+	location = 1910  # Amsterdam
+	base = 1910 # Amsterdam
+	name = "Koninklijke Marine"
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "HrMs Kortenaer"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "HrMs De Zeven Provincien"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "HrMs Martin Harpertszoon Tromp"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "HrMs Holland"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "HrMs Zeeland"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "HrMs Noord-Brabant"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = coastal_submarine 
+		experience = 15 
+		name = "1e Onderzeeboot Smaldeel"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = transport_ship 
+		name = "1e Transport Smaldeel"
+		historical_model = 0 
+		}
+	}
 
-regiment = {
-type = artillery_brigade
-experience = 10
-name = "1e Divisie"
-historical_model = 0}
-}
+ navy = {
+	location = 7793  # Soerabaja
+	base = 7793 # Soerabaja
+	name = "Oost-Indië Vloot"
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "HrMs Koningin Regentes"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "HrMs De Ruyter"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "HrMs Hertog Hendrik"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = destroyer 
+		experience = 15 
+		name = "1e Torpedobootjager Smaldeel"
+		historical_model = 9 
+		}
+	
+	 ship = {
+		type = transport_ship 
+		name = "2e Transport Smaldeel"
+		historical_model = 0 
+		}
+	}
 
-division = {
-name = "2e Divisie"
-location = 1910
-is_reserve = no
+ navy = {
+	location = 50  # Curaçao
+	base = 50 # Curaçao
+	name = "West-Indië Vloot"
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "HrMs Jacob Van Heemskerck"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "HrMs Gelderland"
+		historical_model = 2 
+		}
+	}
 
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "2e Divisie1"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "2e Divisie2"
-historical_model = 2}
-}
-}
-
-corps = {
-name = "2e Legerkorps"
-location = 2025
-regiment = { type = hq_brigade name = "2e Legerkorps HQ" historical_model = 0 }
-
-division = {
-name = "3e Divisie"
-location = 2025
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "3e Divisie1"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "3e Divisie2"
-historical_model = 2}
-}
-
-division = {
-name = "4e Divisie"
-location = 2025
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "4e Divisie1"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "4e Divisie2"
-historical_model = 2}
-}
-}
-
-corps = {
-name = "Koninklijk Nederlands Indisch Leger"
-location = 6507
-regiment = { type = hq_brigade name = "Koninklijk Nederlands Indisch Leger HQ" historical_model = 0 }
-
-division= {
-name = "Ie Divisie 'Java'"
-location = 6530
-regiment = { type = militia_brigade name = "1st NEI Regiment" historical_model = 0 is_reserve = yes}
-}
-
-division= {
-name = "IIe Divisie 'Java'"
-location = 6531
-regiment = { type = militia_brigade name = "2nd NEI Regiment"  historical_model = 0 is_reserve = yes }
-}
-}
-
-navy = {
-name = "Koninklijke Marine"
-location = 1910
-base = 1910
-
-ship = { type = heavy_cruiser name = "HrMs Kortenaer" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "HrMs De Zeven Provincien" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "HrMs Martin Harpertszoon Tromp" historical_model = 0 experience = 15 }
-ship = { type = protected_cruiser name = "HrMs Holland" historical_model = 2 experience = 15 }
-ship = { type = protected_cruiser name = "HrMs Zeeland" historical_model = 2 experience = 15 }
-ship = { type = protected_cruiser name = "HrMs Noord-Brabant" historical_model = 2 experience = 15 }
-ship = { type = coastal_submarine name = "1e Onderzeeboot Smaldeel" historical_model = 5 experience = 15 }
-
-ship = {
-name = "1e Transport Smaldeel"
-type = transport_ship
-historical_model = 0}
-
-}
-navy = {
-name = "Oost-Indië Vloot"
-location = 7793
-base = 7793
-ship = { type = heavy_cruiser name = "HrMs Koningin Regentes" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "HrMs De Ruyter" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "HrMs Hertog Hendrik" historical_model = 0 experience = 15 }
-ship = { type = destroyer name = "1e Torpedobootjager Smaldeel" historical_model = 9 experience = 15 }
-
-ship = {
-name = "2e Transport Smaldeel"
-type = transport_ship
-historical_model = 0}
-}
-
-navy = {
-name = "West-Indië Vloot"
-location = 50
-base = 50
-ship = { type = heavy_cruiser name = "HrMs Jacob Van Heemskerck" historical_model = 0 experience = 15 }
-ship = { type = protected_cruiser name = "HrMs Gelderland" historical_model = 2 experience = 15 }
-}

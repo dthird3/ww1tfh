@@ -1,37 +1,51 @@
-corps = {
-name = "Royal Bhutanese Army"
-location = 9472
-regiment = { type = hq_brigade name = "Royal Bhutanese Army HQ" historical_model = 0 }
+ corps = {
+	location = 9472 # Punakha
+	name = "Royal Bhutanese Army"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Royal Bhutanese Army HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 9472  # Punakha
+		is_reserve = no
+		name = "Household Division"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "Household Division1"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "Household Division2"
+			historical_model = 2 
+			}
+		}
+	
+	 division = {
+		location = 9472  # Punakha
+		is_reserve = no
+		name = "Royal Division"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "Royal Division1"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "Royal Division2"
+			historical_model = 1 
+			}
+		}
+	}
 
-division = {
-name = "Household Division"
-location = 9472
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 2
-name = "Household Division1"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 2
-name = "Household Division2"
-historical_model = 2}
-}
-
-division = {
-name = "Royal Division"
-location = 9472
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 2
-name = "Royal Division1"
-historical_model = 1}
-regiment = {
-type = infantry_brigade
-experience = 2
-name = "Royal Division2"
-historical_model = 1}
-}
-}

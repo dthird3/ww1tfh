@@ -1,210 +1,276 @@
-theatre = {
-name = "Australian Commonwealth Military Forces"
-location = 7989
+ theatre = {
+	location = 7989 # Sydney
+	name = "Australian Commonwealth Military Forces"
+	
+	 regiment = {
+		type = hq_brigade 
+		experience = 10 
+		name = "1st HQ Brigade"
+		historical_model = 1 
+		}
+	
+	 corps = {
+		location = 8057 # Melbourne
+		name = "Australian Imperial Forces"
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "Australian Imperial Forces"
+			historical_model = 0 
+			}
+		
+		 division = {
+			location = 8057 # Melbourne
+			name = "1st Australian Division"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "1/2 Australian Brigades"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "2/3 Australian Brigades"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = artillery_brigade 
+				experience = 10 
+				name = "1st Australian Division Artillery"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 8057 # Melbourne
+			name = "Australian 2nd Light Horse Brigade"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "Australian 2nd Light Horse Brigade"
+				historical_model = 2 
+				}
+			}
+		
+		 division = {
+			location = 8057 # Melbourne
+			name = "New Zealand and Australian Division"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "1st New Zealand Infantry Brigade"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "4th Australian Brigade"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = artillery_brigade 
+				experience = 10 
+				name = "1/2nd New Zealand Divisional Artillery"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 8057 # Melbourne
+			name = "New Zealand and Australian Mounted Division"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "Australian 1st Light Horse Brigade"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "Australian 3rd Light Horse Brigade"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "New Zealand Mounted Rifles Brigade"
+				historical_model = 2 
+				}
+			}
+		}
+	
+	 division = {
+		location = 7989 # Sydney
+		name = "2nd Australian Division"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "5/6 Australian Brigades"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "6/7 Australian Brigades"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 7989 # Sydney
+		name = "3rd Australian Division"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "9/10 Australian Brigades"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "10/11 Australian Brigades"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 7923 # Brisbane
+		name = "4th Australian Division"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "4/12 Australian Brigades"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "12/13 Australian Brigades"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 7923 # Brisbane
+		name = "5th Australian Division"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "8/14 Australian Brigades"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "14/15 Australian Brigades"
+			historical_model = 0 
+			}
+		}
+	
+	 navy = {
+		location = 7989  # Sydney
+		base = 7989 # Sydney
+		name = "Royal Australian Navy"
+		
+		 ship = {
+			type = battlecruiser 
+			experience = 15 
+			name = "HMAS Australia"
+			historical_model = 1 
+			}
+		
+		 ship = {
+			type = light_cruiser 
+			experience = 15 
+			name = "HMAS Sydney"
+			historical_model = 2 
+			}
+		
+		 ship = {
+			type = light_cruiser 
+			experience = 15 
+			name = "HMAS Melbourne"
+			historical_model = 2 
+			}
+		
+		 ship = {
+			type = protected_cruiser 
+			experience = 15 
+			name = "HMAS Encounter"
+			historical_model = 7 
+			}
+		
+		 ship = {
+			type = protected_cruiser 
+			experience = 15 
+			name = "HMAS Pioneer"
+			historical_model = 6 
+			}
+		}
+	
+	 navy = {
+		location = 7989  # Sydney
+		base = 7989 # Sydney
+		name = "Australian Transport Flotilla"
+		
+		 ship = {
+			type = transport_ship 
+			name = "Australian Flotilla"
+			historical_model = 0 
+			}
+		}
+	
+	 navy = {
+		location = 8057  # Melbourne
+		base = 8057 # Melbourne
+		name = "Melbourne Flotilla"
+		
+		 ship = {
+			type = destroyer 
+			experience = 15 
+			name = "Victorian and Tasmanian Flotilla"
+			historical_model = 9 
+			}
+		}
+	
+	 navy = {
+		location = 7989  # Sydney
+		base = 7989 # Sydney
+		name = "Australian Submarine Service"
+		
+		 ship = {
+			type = submarine 
+			experience = 15 
+			name = "E Flotilla"
+			historical_model = 1 
+			}
+		}
+	}
 
-regiment = {
-type = hq_brigade
-name = "1st HQ Brigade"
-historical_model = 1
-experience = 10
-}
-
-corps = {
-name = "Australian Imperial Forces"
-location = 8057
-regiment = { type = hq_brigade name = "Australian Imperial Forces" historical_model = 0}
-
-division = {
-name = "1st Australian Division"
-location = 8057
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "1/2 Australian Brigades"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "2/3 Australian Brigades"
-historical_model = 2}
-
-regiment = {
-type = artillery_brigade
-experience = 10
-name = "1st Australian Division Artillery"
-historical_model = 0}
-}
-
-division = {
-name = "Australian 2nd Light Horse Brigade"
-location = 8057
-
-regiment = {
-type = cavalry_brigade
-experience = 10
-name = "Australian 2nd Light Horse Brigade"
-historical_model = 2}
-}
-
-division = {
-name = "New Zealand and Australian Division"
-location = 8057
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "1st New Zealand Infantry Brigade"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "4th Australian Brigade"
-historical_model = 2}
-
-regiment = {
-type = artillery_brigade
-experience = 10
-name = "1/2nd New Zealand Divisional Artillery"
-historical_model = 0}
-}
-
-division = {
-name = "New Zealand and Australian Mounted Division"
-location = 8057
-
-regiment = {
-type = cavalry_brigade
-experience = 10
-name = "Australian 1st Light Horse Brigade"
-historical_model = 2}
-
-regiment = {
-type = cavalry_brigade
-experience = 10
-name = "Australian 3rd Light Horse Brigade"
-historical_model = 2}
-
-regiment = {
-type = cavalry_brigade
-experience = 10
-name = "New Zealand Mounted Rifles Brigade"
-historical_model = 2}
-}
-}
-
-division = {
-name = "2nd Australian Division"
-location = 7989
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "5/6 Australian Brigades"
-historical_model = 0
-is_reserve = yes}
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "6/7 Australian Brigades"
-historical_model = 0
-is_reserve = yes}
-}
-
-division = {
-name = "3rd Australian Division"
-location = 7989
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "9/10 Australian Brigades"
-historical_model = 0
-is_reserve = yes}
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "10/11 Australian Brigades"
-historical_model = 0
-is_reserve = yes}
-}
-
-division = {
-name = "4th Australian Division"
-location = 7923
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "4/12 Australian Brigades"
-historical_model = 0
-is_reserve = yes}
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "12/13 Australian Brigades"
-historical_model = 0
-is_reserve = yes}
-}
-
-division = {
-name = "5th Australian Division"
-location = 7923
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "8/14 Australian Brigades"
-historical_model = 0
-is_reserve = yes}
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "14/15 Australian Brigades"
-historical_model = 0
-is_reserve = yes}
-}
-
-navy = {
-name = "Royal Australian Navy"
-location = 7989
-base = 7989
-ship = { type = battlecruiser name = "HMAS Australia" historical_model = 1 experience = 15 }
-ship = { type = light_cruiser name = "HMAS Sydney" historical_model = 2 experience = 15 }
-ship = { type = light_cruiser name = "HMAS Melbourne" historical_model = 2 experience = 15 }
-ship = { type = protected_cruiser name = "HMAS Encounter" historical_model = 7 experience = 15 }
-ship = { type = protected_cruiser name = "HMAS Pioneer" historical_model = 6 experience = 15 }
-
-}
-navy = {
-name = "Australian Transport Flotilla"
-location = 7989
-base = 7989
-
-ship = {
-name = "Australian Flotilla"
-type = transport_ship
-historical_model = 0}
-}
-
-navy = {
-name = "Melbourne Flotilla"
-location = 8057
-base = 8057
-ship = { type = destroyer name = "Victorian and Tasmanian Flotilla" historical_model = 9 experience = 15 }
-}
-
-navy = {
-name = "Australian Submarine Service"
-location = 7989
-base = 7989
-ship = { type = submarine name = "E Flotilla" historical_model = 1 experience = 15 }
-
-}
-}

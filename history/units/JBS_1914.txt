@@ -1,23 +1,31 @@
-corps = {
-name = "Jabal Shammar Army"
-location = 9486
-regiment = { type = hq_brigade name = "Jabal Shammar Army HQ" historical_model = 0 }
+ corps = {
+	location = 9486 # Ha'il
+	name = "Jabal Shammar Army"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Jabal Shammar Army HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 9486  # Ha'il
+		is_reserve = yes
+		name = "Jabal Shammar Army"
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "Jabal Shammar 1. Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "Jabal Shammar 2. Brigade"
+			historical_model = 0 
+			}
+		}
+	}
 
-division = {
-name = "Jabal Shammar Army"
-location = 9486
-is_reserve = yes
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Jabal Shammar 1. Brigade"
-historical_model = 0}
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Jabal Shammar 2. Brigade"
-historical_model = 0}
-}
-}

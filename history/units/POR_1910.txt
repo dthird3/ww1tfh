@@ -1,64 +1,112 @@
-corps = {
-name = "Exército do Portugal"
-location = 4644
-regiment = { type = hq_brigade name = "Exército do Portugal HQ" historical_model = 0 }
+ corps = {
+	location = 4644 # Lisboa
+	name = "Exército do Portugal"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Exército do Portugal HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 4644  # Lisboa
+		is_reserve = no
+		name = "1o Batalhão de Infantaria"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "1o Batalhão de Infantaria1"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "1o Batalhão de Infantaria2"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 5 
+			name = "1o Batalhão de Infantaria4"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 4644  # Lisboa
+		is_reserve = no
+		name = "2o Batalhão de Infantaria"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "2o Batalhão de Infantaria1"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "2o Batalhão de Infantaria2"
+			historical_model = 2 
+			}
+		}
+	}
 
-division = {
-name = "1o Batalhão de Infantaria"
-location = 4644
-is_reserve = no
+ navy = {
+	location = 4644  # Lisboa
+	base = 4644 # Lisboa
+	name = "Armada Portuguesa"
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Vasco Da Gama"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Adamastor"
+		historical_model = 1 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "São Gabriel"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "São Rafael"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Almirante Reis"
+		historical_model = 3 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "República"
+		historical_model = 4 
+		}
+	
+	 ship = {
+		type = transport_ship 
+		name = "1a Flotilha de Navio de Transporte"
+		historical_model = 0 
+		}
+	}
 
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "1o Batalhão de Infantaria1"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "1o Batalhão de Infantaria2"
-historical_model = 1}
-
-regiment = {
-type = artillery_brigade
-experience = 5
-name = "1o Batalhão de Infantaria4"
-historical_model = 0}
-}
-
-division = {
-name = "2o Batalhão de Infantaria"
-location = 4644
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "2o Batalhão de Infantaria1"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "2o Batalhão de Infantaria2"
-historical_model = 2}
-}
-}
-
-navy = {
-name = "Armada Portuguesa"
-location = 4644
-base = 4644
-
-ship = { type = battleship name = "Vasco Da Gama" historical_model = 0 experience = 15 }
-ship = { type = protected_cruiser name = "Adamastor" historical_model = 1 experience = 15 }
-ship = { type = protected_cruiser name = "São Gabriel" historical_model = 2 experience = 15 }
-ship = { type = protected_cruiser name = "São Rafael" historical_model = 2 experience = 15 }
-ship = { type = protected_cruiser name = "Almirante Reis" historical_model = 3 experience = 15 }
-ship = { type = protected_cruiser name = "República" historical_model = 4 experience = 15 }
-ship = {
-name = "1a Flotilha de Navio de Transporte"
-type = transport_ship
-historical_model = 0}
-}

@@ -1,153 +1,207 @@
-corps = {
-name = "Kabul Corps"
-location = 9191
-regiment = { type = hq_brigade name = "Kabul Corps HQ" historical_model = 0 }
+ corps = {
+	location = 9191 # Kabul
+	name = "Kabul Corps"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Kabul Corps HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 9191  # Kabul
+		is_reserve = no
+		name = "Royal Household Division"
+		
+		 regiment = {
+			type = bergsjaeger_brigade 
+			experience = 10 
+			name = "Royal Household Division1"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = bergsjaeger_brigade 
+			experience = 10 
+			name = "Royal Household Division2"
+			historical_model = 1 
+			}
+		}
+	
+	 division = {
+		location = 9191  # Kabul
+		is_reserve = no
+		name = "1st Division"
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "1st Division1"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "1st Division2"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 9191  # Kabul
+		is_reserve = no
+		name = "2nd Division"
+		
+		 regiment = {
+			type = bergsjaeger_brigade 
+			experience = 5 
+			name = "2nd Division1"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = bergsjaeger_brigade 
+			experience = 5 
+			name = "2nd Division2"
+			historical_model = 0 
+			}
+		}
+	}
 
-division = {
-name = "Royal Household Division"
-location = 9191
-is_reserve = no
-regiment = {
-type = bergsjaeger_brigade
-experience = 10
-name = "Royal Household Division1"
-historical_model = 1}
-regiment = {
-type = bergsjaeger_brigade
-experience = 10
-name = "Royal Household Division2"
-historical_model = 1}
-}
+ corps = {
+	location = 9316 # Kandahar
+	name = "3rd Kandahar Division"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "3rd Kandahar Division HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 9316  # Kandahar
+		is_reserve = no
+		name = "3rd Kandahar Division"
+		
+		 regiment = {
+			type = bergsjaeger_brigade 
+			experience = 5 
+			name = "3rd Kandahar Division1"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = bergsjaeger_brigade 
+			experience = 5 
+			name = "3rd Kandahar Division2"
+			historical_model = 0 
+			}
+		}
+	}
 
-division = {
-name = "1st Division"
-location = 9191
-is_reserve = no
-regiment = {
-type = militia_brigade
-experience = 5
-name = "1st Division1"
-historical_model = 0}
-regiment = {
-type = militia_brigade
-experience = 5
-name = "1st Division2"
-historical_model = 0}
-}
+ corps = {
+	location = 9189 # Herat
+	name = "4th Herat Division"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "4th Herat Division HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 9189  # Herat
+		is_reserve = no
+		name = "4th Herat Division"
+		
+		 regiment = {
+			type = bergsjaeger_brigade 
+			experience = 5 
+			name = "4th Herat Division1"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = bergsjaeger_brigade 
+			experience = 5 
+			name = "4th Herat Division2"
+			historical_model = 0 
+			}
+		}
+	}
 
-division = {
-name = "2nd Division"
-location = 9191
-is_reserve = no
-regiment = {
-type = bergsjaeger_brigade
-experience = 5
-name = "2nd Division1"
-historical_model = 0}
-regiment = {
-type = bergsjaeger_brigade
-experience = 5
-name = "2nd Division2"
-historical_model = 0}
-}
+ corps = {
+	location = 9191 # Kabul
+	name = "5th Mazar-i-Sharif Brigade"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "5th Mazar-i-Sharif Brigade HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 9191  # Kabul
+		is_reserve = no
+		name = "5th Mazar-i-Sharif Brigade"
+		
+		 regiment = {
+			type = bergsjaeger_brigade 
+			experience = 5 
+			name = "5th Mazar-i-Sharif Brigade1"
+			historical_model = 0 
+			}
+		}
+	}
 
-}
-corps = {
-name = "3rd Kandahar Division"
-location = 9316
-regiment = { type = hq_brigade name = "3rd Kandahar Division HQ" historical_model = 0 }
+ corps = {
+	location = 9191 # Kabul
+	name = "Militia Reserves"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Militia Reserves HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 9191  # Kabul
+		is_reserve = no
+		name = "6th Badakhstan Brigade"
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 50 
+			name = "6th Badakhstan Brigade1"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 9191  # Kabul
+		is_reserve = no
+		name = "7th Jalabad Brigade"
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "7th Jalabad Brigade1"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 9191  # Kabul
+		is_reserve = no
+		name = "8th Khost Brigade"
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "8th Khost Brigade1"
+			historical_model = 0 
+			}
+		}
+	}
 
-division = {
-name = "3rd Kandahar Division"
-location = 9316
-is_reserve = no
-regiment = {
-type = bergsjaeger_brigade
-experience = 5
-name = "3rd Kandahar Division1"
-historical_model = 0}
-regiment = {
-type = bergsjaeger_brigade
-experience = 5
-name = "3rd Kandahar Division2"
-historical_model = 0}
-}
-
-}
-corps = {
-name = "4th Herat Division"
-location = 9189
-regiment = { type = hq_brigade name = "4th Herat Division HQ" historical_model = 0 }
-
-division = {
-name = "4th Herat Division"
-location = 9189
-is_reserve = no
-regiment = {
-type = bergsjaeger_brigade
-experience = 5
-name = "4th Herat Division1"
-historical_model = 0}
-regiment = {
-type = bergsjaeger_brigade
-experience = 5
-name = "4th Herat Division2"
-historical_model = 0}
-}
-
-}
-corps = {
-name = "5th Mazar-i-Sharif Brigade"
-location = 9191
-regiment = { type = hq_brigade name = "5th Mazar-i-Sharif Brigade HQ" historical_model = 0 }
-
-division = {
-name = "5th Mazar-i-Sharif Brigade"
-location = 9191
-is_reserve = no
-regiment = {
-type = bergsjaeger_brigade
-experience = 5
-name = "5th Mazar-i-Sharif Brigade1"
-historical_model = 0}
-}
-
-}
-corps = {
-name = "Militia Reserves"
-location = 9191
-regiment = { type = hq_brigade name = "Militia Reserves HQ" historical_model = 0 }
-
-division = {
-name = "6th Badakhstan Brigade"
-location = 9191
-is_reserve = no
-regiment = {
-type = militia_brigade
-experience = 50
-name = "6th Badakhstan Brigade1"
-historical_model = 0}
-}
-
-division = {
-name = "7th Jalabad Brigade"
-location = 9191
-is_reserve = no
-regiment = {
-type = militia_brigade
-experience = 5
-name = "7th Jalabad Brigade1"
-historical_model = 0}
-}
-
-division = {
-name = "8th Khost Brigade"
-location = 9191
-is_reserve = no
-regiment = {
-type = militia_brigade
-experience = 5
-name = "8th Khost Brigade1"
-historical_model = 0}
-}
-}

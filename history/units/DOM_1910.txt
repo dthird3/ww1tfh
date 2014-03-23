@@ -1,17 +1,24 @@
-corps = {
-name = "Ejercito de Rep. Dominicana"
-location = 7662
-regiment = { type = hq_brigade name = "Ejercito de Rep. Dominicana HQ" historical_model = 0 }
+ corps = {
+	location = 7662 # Santo Domingo
+	name = "Ejercito de Rep. Dominicana"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Ejercito de Rep. Dominicana HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 7662  # Santo Domingo
+		is_reserve = no
+		name = "I Brigada de Infantería"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "I Brigada de Infantería"
+			historical_model = 2 
+			}
+		}
+	}
 
-division = {
-name = "I Brigada de InfanterÃ­a"
-location = 7662
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "I Brigada de InfanterÃ­a"
-historical_model = 2}
-}
-}

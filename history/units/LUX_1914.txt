@@ -1,8 +1,27 @@
-division = {
-	name = "1. Infanteriedivision"
-	location = 2429
+ division = {
+	location = 2429  # Luxembourg
 	is_reserve = yes
-	regiment = { type = infantry_brigade name = "1. Infanterieregiment" historical_model = 2 experience = 10}
-	regiment = { type = infantry_brigade name = "2. Infanterieregiment" historical_model = 2 experience = 10}
-	regiment = { type = artillery_brigade name = "1. Artillerieregiment" historical_model = 1 experience = 10}
-}
+	name = "1. Infanteriedivision"
+	
+	 regiment = {
+		type = infantry_brigade 
+		experience = 10 
+		name = "1. Infanterieregiment"
+		historical_model = 2 
+		}
+	
+	 regiment = {
+		type = infantry_brigade 
+		experience = 10 
+		name = "2. Infanterieregiment"
+		historical_model = 2 
+		}
+	
+	 regiment = {
+		type = artillery_brigade 
+		experience = 10 
+		name = "1. Artillerieregiment"
+		historical_model = 1 
+		}
+	}
+

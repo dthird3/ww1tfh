@@ -1,17 +1,40 @@
-	division = {
-		name = "1. Milis TÃ¼meni 'Bingazi'"
-		leader = 720097
-		
-		location = 5484
-		regiment = { type = militia_brigade name = "1. Milis Alayi 'Bingazi'" historical_model = 1 is_reserve = no}
-		regiment = { type = militia_brigade name = "2. Milis Alayi 'Bingazi'" historical_model = 1 is_reserve = no}
+ division = {
+	location = 5484 # Bengasi
+	leader = 720097  # To be named once we have a mapping
+	name = "1. Milis Tümeni 'Bingazi'"
+	
+	 regiment = {
+		type = militia_brigade 
+		is_reserve = no 
+		name = "1. Milis Alayi 'Bingazi'"
+		historical_model = 1 
+		}
+	
+	 regiment = {
+		type = militia_brigade 
+		is_reserve = no 
+		name = "2. Milis Alayi 'Bingazi'"
+		historical_model = 1 
+		}
 	}
-		
-	division = {
-		name = "2. Milis TÃ¼meni 'Trablus'"
-		leader = 720147
 
-		location = 5445
-		regiment = { type = militia_brigade name = "3. Milis Alayi 'Trablus'" historical_model = 1 is_reserve = no}
-		regiment = { type = militia_brigade name = "4. Milis Alayi 'Trablus'" historical_model = 1 is_reserve = no}
+ division = {
+	location = 5445 # Tripoli
+	leader = 720147  # To be named once we have a mapping
+	name = "2. Milis Tümeni 'Trablus'"
+	
+	 regiment = {
+		type = militia_brigade 
+		is_reserve = no 
+		name = "3. Milis Alayi 'Trablus'"
+		historical_model = 1 
+		}
+	
+	 regiment = {
+		type = militia_brigade 
+		is_reserve = no 
+		name = "4. Milis Alayi 'Trablus'"
+		historical_model = 1 
+		}
 	}
+

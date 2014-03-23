@@ -1,4497 +1,5015 @@
-theatre = {
-name = "Berlin HQ"
-location = 1861
+ theatre = {
+	location = 1861 # Berlin
+	name = "Berlin HQ"
+	
+	 regiment = {
+		type = hq_brigade 
+		experience = 3 
+		name = "1st HQ Brigade"
+		historical_model = 3 
+		}
+	
+	 navy = {
+		location = 3904  # Pola
+		base = 3904 # Pola
+		name = "Mittelmeer-Division"
+		
+		 ship = {
+			type = battlecruiser 
+			experience = 15 
+			name = "SMS Goeben"
+			historical_model = 1 
+			}
+		
+		 ship = {
+			type = light_cruiser 
+			experience = 15 
+			name = "SMS Breslau"
+			historical_model = 2 
+			}
+		}
+	
+	 air = {
+		location = 1924  # Poznan
+		base = 1924 # Poznan
+		name = "Fliegertruppe - Ost"
+		
+		 wing = {
+			type = scout 
+			experience = 15 
+			name = "Feldflieger-Abteilung 3"
+			historical_model = 0 
+			}
+		
+		 wing = {
+			type = scout 
+			experience = 15 
+			name = "Feldflieger-Abteilung 4"
+			historical_model = 0 
+			}
+		}
+	
+	 army = {
+		location = 1921 # Frankfurt an der Oder
+		name = "1st Armee"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 0 
+			name = "6th HQ Brigade"
+			historical_model = 3 
+			}
+		
+		 regiment = {
+			type = engineer_brigade 
+			experience = 0 
+			name = "1. Armee Engineers"
+			historical_model = 0 
+			}
+		
+		 corps = {
+			location = 1742 # Stettin
+			name = "II. Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "II. Armeekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 1742 # Stettin
+				name = "3. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 20 
+					name = "5. Grenadier Brigade"
+					historical_model = 3 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "6. Infanterie-Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "3. Artillerie Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 1742 # Stettin
+				name = "4. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "7. Infanterie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "8. Infanterie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "4. Artillerie Brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 1924 # Poznan
+			name = "III. Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "III. Armeekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 1924 # Poznan
+				name = "5. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 20 
+					name = "9. Leib Grenadier Brigade"
+					historical_model = 3 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "10. Infanterie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = heavy_artillery_brigade 
+					experience = 10 
+					name = "5. Artillerie Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 1924 # Poznan
+				name = "6. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "11. Infanterie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "12. Infanterie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "6. Artillerie Brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2091 # Wittenberg
+			name = "IV. Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "IV. Armeekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2091 # Wittenberg
+				name = "7. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "13. Infanterie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "14. Infanterie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = heavy_artillery_brigade 
+					experience = 10 
+					name = "7. Artillerie Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2091 # Wittenberg
+				name = "8. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "15. Infanterie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "16. Infanterie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "8. Artillerie Brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 1623 # Greifswald
+			name = "IX. Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "IX. Armeekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 1623 # Greifswald
+				name = "17. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "33. Infanterie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "34. Infanterie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = heavy_artillery_brigade 
+					experience = 10 
+					name = "17. Artillerie Brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 1623 # Greifswald
+				name = "18. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "35. Infanterie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "36. Infanterie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "18. Artillerie Brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 1921 # Frankfurt an der Oder
+			name = "2. Hohere-Kavallerie-Kommando"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "2. Kavallerie-Kommando"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 1921 # Frankfurt an der Oder
+				name = "2. Kavallerie-Division"
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "5. Kavallerie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "8. Kavallerie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "Leibhussar Kavallerie Brigade"
+					historical_model = 2 
+					}
+				}
+			
+			 division = {
+				location = 1921 # Frankfurt an der Oder
+				name = "4. Kavallerie-Division"
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "3. Uhlan Kavallerie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "17. Dragoon Kavallerie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "18. Hussar Kavallerie Brigade"
+					historical_model = 2 
+					}
+				}
+			
+			 division = {
+				location = 1921 # Frankfurt an der Oder
+				name = "9. Kavallerie-Division"
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "13. Kavallerie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "14. Kavallerie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "19. Kavallerie Brigade"
+					historical_model = 2 
+					}
+				}
+			}
+		}
+	
+	 army = {
+		location = 1921 # Frankfurt an der Oder
+		name = "1st Armee Reserve"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 0 
+			name = "7th HQ Brigade"
+			historical_model = 3 
+			}
+		
+		 corps = {
+			location = 1860 # Pritzwalk
+			name = "III. Reservekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "III. Reservekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 1860 # Pritzwalk
+				name = "5. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "9. Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "10. Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 1860 # Pritzwalk
+				name = "6. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "11. Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "12. Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2091 # Wittenberg
+			name = "IV. Reservekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "IV. Reservekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2091 # Wittenberg
+				name = "7. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "13. Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "14. Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2091 # Wittenberg
+				name = "22. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "22. Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "22. Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 1860 # Pritzwalk
+				name = "11th Mixed Landwehr Brigade"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "11th Mixed Landwehr Brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 1683 # Kolberg
+				name = "27th Mixed Landwehr Brigade"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "27th Mixed Landwehr Brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 1742 # Stettin
+				name = "10th Mixed Landwehr Brigade"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "10th Mixed Landwehr Brigade"
+					historical_model = 0 
+					}
+				}
+			}
+		}
+	
+	 army = {
+		location = 1686 # Elbing
+		name = "8. Armee"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 0 
+			name = "17th HQ Brigade"
+			historical_model = 3 
+			}
+		
+		 regiment = {
+			type = engineer_brigade 
+			experience = 5 
+			name = "8. Armee Engineers"
+			historical_model = 0 
+			}
+		
+		 corps = {
+			location = 1527 # Königsberg
+			name = "I. Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "I. Armeekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 1527 # Königsberg
+				name = "1. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "1. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "1. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = heavy_artillery_brigade 
+					experience = 10 
+					name = "1. Artillerie brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 1527 # Königsberg
+				name = "2. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "3. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "4. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "2. Artillerie Brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 1626 # Danzig
+			name = "XVII. Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "XVII. Armeekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 1626 # Danzig
+				name = "35. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "69. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "70. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = heavy_artillery_brigade 
+					experience = 10 
+					name = "35. Artillerie brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 1626 # Danzig
+				name = "36. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "71. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "72. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "36. Artillerie brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 1748 # Osterode
+			name = "XX. Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "XX. Armeekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 1748 # Osterode
+				name = "37. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "73. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "75. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "37. Artillerie brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 1748 # Osterode
+				name = "41. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "72. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "74. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "41. Artillerie brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 1748 # Osterode
+				name = "1. Kavallerie-Division"
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "1. Kavallerie-Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "2. Kavallerie-Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "41. Kavallerie-Brigade"
+					historical_model = 2 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 1527 # Königsberg
+			name = "I. Reservekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "I. Reservekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 1527 # Königsberg
+				name = "1. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "1. Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "71. Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 1527 # Königsberg
+				name = "36. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "69. Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "70. Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 1866 # Torun
+				name = "3. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 5 
+					name = "5. Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 5 
+					name = "6. Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 1527 # Königsberg
+				name = "Konigsberg Garrison"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "9. Landwehr Brigade"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = garrison_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "Konigsberg Ersatz Brigade"
+					historical_model = 0 
+					}
+				}
+			}
+		}
+	
+	 army = {
+		location = 2208 # Dresden
+		name = "5th Armee Reserve"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 0 
+			name = "14th HQ Brigade"
+			historical_model = 3 
+			}
+		
+		 corps = {
+			location = 2208 # Dresden
+			name = "2nd Senior Landwehr Command"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 0 
+				name = "13th HQ Brigade"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2208 # Dresden
+				name = "43 Landwehr Brigade"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "43. Landwehr Brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 2208 # Dresden
+				name = "45. Landwehr Brigade"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "45. Landwehr Brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 2208 # Dresden
+				name = "53. Landwehr Brigade"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "53. Landwehr Brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 2208 # Dresden
+				name = "9. Bayerisches Landwehr Brigade"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "9. Bayerisches Landwehr Brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 2208 # Dresden
+				name = "16. Landwehr Brigade"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "16. Landwehr Brigade"
+					historical_model = 0 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2210 # Grünberg
+			name = "V. Reservekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "V. Reservekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2210 # Grünberg
+				name = "9. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "17. Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "19. Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2210 # Grünberg
+				name = "10. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "18. Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "77. Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2153 # Breslau
+			name = "VI. Reservekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "VI. Reservekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2153 # Breslau
+				name = "11. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "21. Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 10 
+					name = "23. Infanterie Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2153 # Breslau
+				name = "12. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "22. Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "23. Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2210 # Grünberg
+			name = "V. Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "V. Armeekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2210 # Grünberg
+				name = "9. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "17. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "18. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = heavy_artillery_brigade 
+					experience = 10 
+					name = "9. Artillerie brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2210 # Grünberg
+				name = "10. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "19. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "20. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "10. Artillerie brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 1866 # Torun
+				name = "35. Reserve Division"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "5. Landwehr Brigade"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "20. Landwehr Brigade"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "35. Reserve Artillerie Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 1924 # Poznan
+				name = "19. Landwehr Brigade"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "19. Landwehr Brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 2386 # Katowice
+				name = "69. Infantry Brigade"
+				
+				 regiment = {
+					type = garrison_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "69. Infantry Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 1861 # Berlin
+				name = "Bayerisches Ersatz-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "3. Bayerisches Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "59. Landwehr Brigade"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = garrison_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "55. Ersatz Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 1861 # Berlin
+				name = "Garde-Ersatz-Division"
+				
+				 regiment = {
+					type = garrison_brigade 
+					is_reserve = yes 
+					experience = 10 
+					name = "1. Garde Mixed Ersatz Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = garrison_brigade 
+					is_reserve = yes 
+					experience = 10 
+					name = "5. Garde Mixed Ersatz Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 1861 # Berlin
+				name = "4. Ersatz-Division"
+				
+				 regiment = {
+					type = garrison_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "9. Ersatz Brigade"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = garrison_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "13. Ersatz Brigade"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = garrison_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "33. Ersatz Brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 1861 # Berlin
+				name = "8. Ersatz-Division"
+				
+				 regiment = {
+					type = garrison_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "29. Ersatz Brigade"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = garrison_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "41. Ersatz Brigade"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = garrison_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "51. Ersatz Brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 1861 # Berlin
+				name = "10. Ersatz-Division"
+				
+				 regiment = {
+					type = garrison_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "37. Ersatz Brigade"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = garrison_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "25. Ersatz Brigade"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = garrison_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "43. Ersatz Brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 1861 # Berlin
+				name = "19. Ersatz-Division"
+				
+				 regiment = {
+					type = garrison_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "45. Ersatz Brigade"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = garrison_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "47. Ersatz Brigade"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = garrison_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "5. Bayerisches Landwehr Brigade"
+					historical_model = 0 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 1861 # Berlin
+			name = "Landwehr Korps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 0 
+				name = "19th HQ Brigade"
+				historical_model = 1 
+				}
+			
+			 division = {
+				location = 1861 # Berlin
+				name = "4. Landwehr Kommando"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "22. Landwehr Brigade"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "23. Landwehr Brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 1861 # Berlin
+				name = "3. Landwehr Kommando"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "17. Landwehr Brigade"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "18. Landwehr Brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 1861 # Berlin
+				name = "2. Landwehr Brigade"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "2. Landwehr Brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 1861 # Berlin
+				name = "6. Landwehr Brigade"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "6. Landwehr Brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 1861 # Berlin
+				name = "70. Landwehr Brigade"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "70. Landwehr Brigade"
+					historical_model = 0 
+					}
+				}
+			}
+		}
+	}
+
+ theatre = {
+	location = 2952 # München
+	name = "Munich HQ"
+	
+	 regiment = {
+		type = hq_brigade 
+		experience = 3 
+		name = "2nd HQ Brigade"
+		historical_model = 3 
+		}
+	
+	 army = {
+		location = 2818 # Heidenheim
+		name = "6. Armee"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 0 
+			name = "6. Armee HQ Brigade"
+			historical_model = 3 
+			}
+		
+		 regiment = {
+			type = engineer_brigade 
+			experience = 5 
+			name = "6. Armee Engineers"
+			historical_model = 0 
+			}
+		
+		 corps = {
+			location = 2553 # Saarbrücken
+			name = "XXI. Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "XXI. Armeekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2553 # Saarbrücken
+				name = "31. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "32. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "62. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = heavy_artillery_brigade 
+					experience = 10 
+					name = "31. Artillerie brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2553 # Saarbrücken
+				name = "42. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "59. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "60. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "1st Artillerie brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2818 # Heidenheim
+			name = "I. Bayerisches Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "I. Bayerisches Armeekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2818 # Heidenheim
+				name = "1. Bayerisches Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "1. Bayerisches Reserve Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "2. Bayerisches Reserve Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = heavy_artillery_brigade 
+					experience = 5 
+					name = "1. Bayerisches Artillerie brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2818 # Heidenheim
+				name = "2. Bayerisches Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "3. Bayerisches Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "4. Bayerisches Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "2. Bayerisches Artillerie"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2434 # Würzburg
+			name = "II. Bayerisches Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "II. Bayerisches Armeekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2434 # Würzburg
+				name = "3. Bayerisches Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "5. Bayerisches Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "6. Bayerisches Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "3. Bayerisches Artillerie brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2434 # Würzburg
+				name = "4. Bayerisches Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "7. Bayerisches Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "5. Bayerisches Reserve Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "5. Bayerisches Artillerie brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2558 # Nürnberg
+			name = "III. Bayerisches Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "III. Bayerisches Armeekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2558 # Nürnberg
+				name = "5. Bayerisches Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "11. Bayerisches Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "12. Bayerisches Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "6. Bayerisches Artillerie"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2558 # Nürnberg
+				name = "5. Bayerisches Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "5. Bayerisches Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "5. Bayerisches Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "5. Bayerisches Artillerie brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2952 # München
+			name = "I. Bayerisches Reservekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "I. Bayerisches Reservekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2952 # München
+				name = "1.Bayerisches Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "1.Bayerisches Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "2.Bayerisches Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2952 # München
+				name = "5. Bayerisches Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "9. Bayerisches Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "11. Bayerisches Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2952 # München
+				name = "5. Bayerisches Landwehr Brigade"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "5. Bayerisches Mixed Landwehr"
+					historical_model = 0 
+					}
+				}
+			}
+		}
+	
+	 army = {
+		location = 3085 # Konstanz
+		name = "7th Armee"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 0 
+			name = "16th HQ Brigade"
+			historical_model = 3 
+			}
+		
+		 regiment = {
+			type = engineer_brigade 
+			experience = 0 
+			name = "7. Armee Engineers"
+			historical_model = 0 
+			}
+		
+		 corps = {
+			location = 3084 # Lörrach
+			name = "XIV. Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "XIV. Armeekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 3084 # Lörrach
+				name = "28. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "55. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "56. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "28. Artillerie brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 3084 # Lörrach
+				name = "29. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 0 
+					name = "57. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 0 
+					name = "58. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "29. Artillerie brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2621 # Mosbach
+			name = "XIV. Reservekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "XIV. Reservekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2621 # Mosbach
+				name = "26. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "51. Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "52. Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2621 # Mosbach
+				name = "28. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "55. Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "56. Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 3085 # Konstanz
+				name = "60. Mixed Landwehr Brigade"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "60. Mixed Landwehr Brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 2815 # Straßburg
+				name = "30. Bayerisches Reserve Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "3. Bayerisches Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "50. Bayerisches Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "10. Bayerisches Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2618 # Metz
+				name = "33. Reserve Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "8. Bayerisches Brigade"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "66. Reserve Brigade"
+					historical_model = 0 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 3085 # Konstanz
+			name = "3. Hohere-Kavallerie-Kommando"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "3. Hohere Kavallerie-Kommando"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 3085 # Konstanz
+				name = "7. Kavallerie-Division"
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "26. Kavallerie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "30. Hussar Kavallerie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "42. Uhlan Kavallerie Brigade"
+					historical_model = 2 
+					}
+				}
+			
+			 division = {
+				location = 3085 # Konstanz
+				name = "8. Kavallerie-Division"
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 15 
+					name = "23. Kavallerie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "38. Jager zu Pferd Kavallerie"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "40. Kavallerie Brigade"
+					historical_model = 2 
+					}
+				}
+			
+			 division = {
+				location = 3085 # Konstanz
+				name = "Bayerische Kavallerie-Division"
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "1. Bayerische Heavy Reiter Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "4. Bayerische Uhlan Kavallerie"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "5. Bayerische Chevauleger Kavallerie"
+					historical_model = 2 
+					}
+				}
+			
+			 division = {
+				location = 2621 # Mosbach
+				name = "Upper Rhine Fortress Troops"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "1st Bayerisches Landwehr Brigade"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "2nd Bayerisches Landwehr Brigade"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "55. Mixed Landwehr Brigade"
+					historical_model = 0 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2815 # Straßburg
+			name = "XV. Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "XV. Armeekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2815 # Straßburg
+				name = "30. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "60. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "85. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = heavy_artillery_brigade 
+					experience = 10 
+					name = "30. Artillerie brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2815 # Straßburg
+				name = "39. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "62. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "82. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "39. Artillerie brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		}
+	
+	 army = {
+		location = 2436 # Plauen
+		name = "5th Armee"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 0 
+			name = "12th HQ Brigade"
+			historical_model = 3 
+			}
+		
+		 regiment = {
+			type = engineer_brigade 
+			experience = 0 
+			name = "5. Armee Engineer"
+			historical_model = 0 
+			}
+		
+		 corps = {
+			location = 2687 # Stuttgart
+			name = "XIII. Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "XIII. Armeekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2687 # Stuttgart
+				name = "26. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "51. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "52. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = heavy_artillery_brigade 
+					experience = 10 
+					name = "26. Artillerie brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2687 # Stuttgart
+				name = "27. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "53. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "54. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "27. Artillerie brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2618 # Metz
+			name = "XVI. Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "XVI. Armeekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2618 # Metz
+				name = "33. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "65. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "66. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "33. Artillerie brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2618 # Metz
+				name = "34. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "67. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "68. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "34. Artillerie brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2436 # Plauen
+			name = "4. Hohere-Kavallerie-Kommando"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "4. Kavallerie-Kommando"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2436 # Plauen
+				name = "6. Kavallerie-Division"
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "28. Kavallerie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "33. Kavallerie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "45. Kavallerie Brigade"
+					historical_model = 2 
+					}
+				}
+			
+			 division = {
+				location = 2436 # Plauen
+				name = "3. Kavallerie-Division"
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "16. Kavallerie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "22. Kavallerie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "25. Kavallerie Brigade"
+					historical_model = 2 
+					}
+				}
+			}
+		}
+	}
+
+ theatre = {
+	location = 2143 # Dortmund
+	name = "Bitburg HQ"
+	
+	 regiment = {
+		type = hq_brigade 
+		experience = 3 
+		name = "3rd HQ Brigade"
+		historical_model = 3 
+		}
+	
+	 army = {
+		location = 1736 # Bremen
+		name = "2nd Armee"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 0 
+			name = "8th HQ Brigade"
+			historical_model = 3 
+			}
+		
+		 regiment = {
+			type = engineer_brigade 
+			experience = 0 
+			name = "2. Armee Engineers"
+			historical_model = 0 
+			}
+		
+		 corps = {
+			location = 2027 # Münster
+			name = "VII. Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "VII. Armeekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2027 # Münster
+				name = "13. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "25. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "26. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = heavy_artillery_brigade 
+					experience = 10 
+					name = "13. Artillerie Brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 2027 # Münster
+				name = "14. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "27. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "28. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "14. Artillerie Brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 1857 # Hannover
+			name = "X. Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "X. Armeekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 1857 # Hannover
+				name = "19. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "37. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "38. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = heavy_artillery_brigade 
+					experience = 10 
+					name = "19. Artillerie brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 1857 # Hannover
+				name = "20. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "39. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "40. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "20. Artillerie Brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 1919 # Wittenberge
+			name = "Gardekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "Gardekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 1919 # Wittenberge
+				name = "1. Garde-Infanterie-Division"
+				
+				 regiment = {
+					type = waffen_brigade 
+					experience = 20 
+					name = "1. Garde Infantrie Brigade"
+					historical_model = 3 
+					}
+				
+				 regiment = {
+					type = waffen_brigade 
+					experience = 20 
+					name = "2. Garde Infantrie Brigade"
+					historical_model = 3 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 20 
+					name = "1. Garde-Artillery Brigade"
+					historical_model = 2 
+					}
+				}
+			
+			 division = {
+				location = 1919 # Wittenberge
+				name = "2. Garde-Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 20 
+					name = "3. Garde Infantrie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 20 
+					name = "4. Garde Infantrie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 20 
+					name = "2. Garde Artillerie Brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 1740 # Rostock
+			name = "Garde-Reservekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "Garde-Reservekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 1740 # Rostock
+				name = "3. Garde Infanterie Division"
+				
+				 regiment = {
+					type = waffen_brigade 
+					is_reserve = yes 
+					experience = 20 
+					name = "5th Garde Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 15 
+					name = "6. Infantrie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = heavy_artillery_brigade 
+					experience = 20 
+					name = "3. Garde Artillerie Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 1740 # Rostock
+				name = "1. Garde Reserve Division"
+				
+				 regiment = {
+					type = waffen_brigade 
+					is_reserve = yes 
+					experience = 15 
+					name = "1. Garde Reserve Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 10 
+					name = "15. Reserve Infantrie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					is_reserve = yes 
+					experience = 15 
+					name = "Garde Reserve Artillery"
+					historical_model = 1 
+					}
+				}
+			}
+		}
+	
+	 army = {
+		location = 1736 # Bremen
+		name = "2. Armee Reserve"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 0 
+			name = "9th HQ Brigade"
+			historical_model = 3 
+			}
+		
+		 corps = {
+			location = 1857 # Hannover
+			name = "X. Reservekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "X. Reservekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 1857 # Hannover
+				name = "2. Reserve-Garde-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 10 
+					name = "26. Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 10 
+					name = "38. Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 1857 # Hannover
+				name = "19. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "37. Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "39. Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2142 # Düsseldorf
+			name = "VII. Reservekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "VII. Reservekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2142 # Düsseldorf
+				name = "13. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "25. Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "28. Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2142 # Düsseldorf
+				name = "14. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "27. Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "28. Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 1570 # Wilhelmshaven
+				name = "25. Mixed Landwehr Brigade"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "25. Mixed Landwehr Brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 1619 # Emden
+				name = "29. Mixed Landwehr Brigade"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "29. Mixed Landwehr Brigade"
+					historical_model = 0 
+					}
+				}
+			}
+		}
+	
+	 army = {
+		location = 2143 # Dortmund
+		name = "3rd Armee"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 0 
+			name = "10th HQ Brigade"
+			historical_model = 3 
+			}
+		
+		 regiment = {
+			type = engineer_brigade 
+			experience = 0 
+			name = "3. Armee Engineers"
+			historical_model = 0 
+			}
+		
+		 corps = {
+			location = 2145 # Kassel
+			name = "XI. Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "XI. Armeekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2145 # Kassel
+				name = "22. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "43. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "44. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "22. Artillerie Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2145 # Kassel
+				name = "38. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "76. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "83. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "38. Artillerie Brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2143 # Dortmund
+			name = "1. Hohere-Kavallerie-Kommando"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "1. Kavallerie-Kommando"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2143 # Dortmund
+				name = "Garde-Kavallerie-Division"
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 20 
+					name = "1. Garde du Korps Kavallerie"
+					historical_model = 3 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 20 
+					name = "2. Garde Uhlan Kavallerie"
+					historical_model = 3 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 15 
+					name = "3. Garde Dragoon Kavallerie"
+					historical_model = 3 
+					}
+				}
+			
+			 division = {
+				location = 2143 # Dortmund
+				name = "5. Kavallerie-Division"
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "9. Kavallerie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "10. Kavallerie Brigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "12. Kavallerie Brigade"
+					historical_model = 2 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2377 # Halle
+			name = "XII. Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "XII. Armeekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2377 # Halle
+				name = "23. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "45. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "46. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = heavy_artillery_brigade 
+					experience = 10 
+					name = "23. Artillerie brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2377 # Halle
+				name = "32. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "63. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "64. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "32. Artillerie Brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2377 # Halle
+			name = "XIX. Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "XIX. Armeekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2377 # Halle
+				name = "24. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "47. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "48. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "24. Artillerie Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2377 # Halle
+				name = "40. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "88. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "89. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "40. Artillerie Brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2377 # Halle
+			name = "XII. Reservekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "XII. Reservekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2377 # Halle
+				name = "23. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "45. Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "46. Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2377 # Halle
+				name = "24. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "47. Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "48. Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2377 # Halle
+				name = "47. Mixed Landwehr Brigade"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "47. Mixed Landwehr Brigade"
+					historical_model = 0 
+					}
+				}
+			}
+		}
+	
+	 army = {
+		location = 1737 # Hamburg
+		name = "Armee Nord"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 0 
+			name = "18th HQ Brigade"
+			historical_model = 3 
+			}
+		
+		 corps = {
+			location = 1737 # Hamburg
+			name = "IX. Reservekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "IX. Reservekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 1737 # Hamburg
+				name = "17. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "81. Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "33. Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 1737 # Hamburg
+				name = "18. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "35. Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "36. Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 1737 # Hamburg
+			name = "1. Hohere Landwehr-Kommandeur"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "1. Landwehr-Kommandeur"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 1679 # Lübeck
+				name = "33. Landwehr Brigade"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "33. Landwehr Mixed Brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 1622 # Plön
+				name = "34. Landwehr Mixed Brigade"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "34. Landwehr Mixed Brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 1737 # Hamburg
+				name = "37. Landwehr Mixed Brigade"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "37. Landwehr Brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 1572 # Kiel
+				name = "38. Landwehr Mixed Brigade"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "38. Landwehr Brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 navy = {
+				location = 1570  # Wilhelmshaven
+				base = 1570 # Wilhelmshaven
+				name = "3. Cruiser schwadron"
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS Danzig"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS Stuttgart"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = protected_cruiser 
+					experience = 15 
+					name = "SMS Cormoran"
+					historical_model = 1 
+					}
+				
+				 ship = {
+					type = protected_cruiser 
+					experience = 15 
+					name = "SMS Geier"
+					historical_model = 1 
+					}
+				
+				 ship = {
+					type = protected_cruiser 
+					experience = 15 
+					name = "SMS Hela"
+					historical_model = 2 
+					}
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS Frauenlob"
+					historical_model = 0 
+					}
+				}
+			
+			 navy = {
+				location = 1570  # Wilhelmshaven
+				base = 1570 # Wilhelmshaven
+				name = "Cruiser schwadron Weser"
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS Berlin"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS Ariadne"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS Niobe"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = destroyer 
+					experience = 15 
+					name = "6. Zerstörergeschwader"
+					historical_model = 0 
+					}
+				}
+			
+			 navy = {
+				location = 1570  # Wilhelmshaven
+				base = 1570 # Wilhelmshaven
+				name = "Cruiser schwadron Elbe"
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS Nymphe"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS Medusa"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = destroyer 
+					experience = 15 
+					name = "7. Zerstörergeschwader"
+					historical_model = 4 
+					}
+				}
+			
+			 navy = {
+				location = 1570  # Wilhelmshaven
+				base = 1570 # Wilhelmshaven
+				name = "Flottenflaggschiff"
+				
+				 ship = {
+					type = dreadnaught 
+					experience = 15 
+					name = "SMS Friedrich der Grosse"
+					historical_model = 2 
+					}
+				}
+			
+			 navy = {
+				location = 1570  # Wilhelmshaven
+				base = 1570 # Wilhelmshaven
+				name = "1. Schlachtschwadron"
+				
+				 ship = {
+					type = dreadnaught 
+					experience = 15 
+					name = "SMS Nassau"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = dreadnaught 
+					experience = 15 
+					name = "SMS Westfalen"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = dreadnaught 
+					experience = 15 
+					name = "SMS Rheinland"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = dreadnaught 
+					experience = 15 
+					name = "SMS Posen"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = dreadnaught 
+					experience = 15 
+					name = "SMS Helgoland"
+					historical_model = 1 
+					}
+				
+				 ship = {
+					type = dreadnaught 
+					experience = 15 
+					name = "SMS Ostfriesland"
+					historical_model = 1 
+					}
+				
+				 ship = {
+					type = dreadnaught 
+					experience = 15 
+					name = "SMS Thüringen"
+					historical_model = 1 
+					}
+				
+				 ship = {
+					type = dreadnaught 
+					experience = 15 
+					name = "SMS Oldenburg"
+					historical_model = 1 
+					}
+				}
+			
+			 navy = {
+				location = 1570  # Wilhelmshaven
+				base = 1570 # Wilhelmshaven
+				name = "2. Schlachtschwadron"
+				
+				 ship = {
+					type = battleship 
+					experience = 15 
+					name = "SMS Deutschland"
+					historical_model = 12 
+					}
+				
+				 ship = {
+					type = battleship 
+					experience = 15 
+					name = "SMS Hessen"
+					historical_model = 10 
+					}
+				
+				 ship = {
+					type = battleship 
+					experience = 15 
+					name = "SMS Hannover"
+					historical_model = 12 
+					}
+				
+				 ship = {
+					type = battleship 
+					experience = 15 
+					name = "SMS Schlesien"
+					historical_model = 12 
+					}
+				
+				 ship = {
+					type = battleship 
+					experience = 15 
+					name = "SMS Schleswig-Holstein"
+					historical_model = 12 
+					}
+				
+				 ship = {
+					type = battleship 
+					experience = 15 
+					name = "SMS Braunschweig"
+					historical_model = 10 
+					}
+				
+				 ship = {
+					type = battleship 
+					experience = 15 
+					name = "SMS Elsaß"
+					historical_model = 10 
+					}
+				
+				 ship = {
+					type = battleship 
+					experience = 15 
+					name = "SMS Lothringen"
+					historical_model = 10 
+					}
+				
+				 ship = {
+					type = battleship 
+					experience = 15 
+					name = "SMS Pommern"
+					historical_model = 12 
+					}
+				}
+			
+			 navy = {
+				location = 1570  # Wilhelmshaven
+				base = 1570 # Wilhelmshaven
+				name = "3. Schlachtschwadron"
+				
+				 ship = {
+					type = dreadnaught 
+					experience = 15 
+					name = "SMS Kaiser"
+					historical_model = 2 
+					}
+				
+				 ship = {
+					type = dreadnaught 
+					experience = 15 
+					name = "SMS Kaiserin"
+					historical_model = 2 
+					}
+				
+				 ship = {
+					type = dreadnaught 
+					experience = 15 
+					name = "SMS König Albert"
+					historical_model = 2 
+					}
+				
+				 ship = {
+					type = dreadnaught 
+					experience = 15 
+					name = "SMS Prinzregent Luitpold"
+					historical_model = 2 
+					}
+				}
+			
+			 navy = {
+				location = 1570  # Wilhelmshaven
+				base = 1570 # Wilhelmshaven
+				name = "4. Schlachtschwadron"
+				
+				 ship = {
+					type = battleship 
+					experience = 15 
+					name = "SMS Wittelsbach"
+					historical_model = 9 
+					}
+				
+				 ship = {
+					type = battleship 
+					experience = 15 
+					name = "SMS Wettin"
+					historical_model = 9 
+					}
+				
+				 ship = {
+					type = battleship 
+					experience = 15 
+					name = "SMS Zähringen"
+					historical_model = 9 
+					}
+				
+				 ship = {
+					type = battleship 
+					experience = 15 
+					name = "SMS Schwaben"
+					historical_model = 9 
+					}
+				
+				 ship = {
+					type = battleship 
+					experience = 15 
+					name = "SMS Mecklenburg"
+					historical_model = 9 
+					}
+				}
+			
+			 navy = {
+				location = 1570  # Wilhelmshaven
+				base = 1570 # Wilhelmshaven
+				name = "5. Schlachtschwadron"
+				
+				 ship = {
+					type = battleship 
+					experience = 15 
+					name = "SMS Kaiser Friedrich III"
+					historical_model = 7 
+					}
+				
+				 ship = {
+					type = battleship 
+					experience = 15 
+					name = "SMS Kaiser Wilhelm II"
+					historical_model = 7 
+					}
+				
+				 ship = {
+					type = battleship 
+					experience = 15 
+					name = "SMS Kaiser Wilhelm der Große"
+					historical_model = 7 
+					}
+				
+				 ship = {
+					type = battleship 
+					experience = 15 
+					name = "SMS Kaiser Karl der Große"
+					historical_model = 7 
+					}
+				
+				 ship = {
+					type = battleship 
+					experience = 15 
+					name = "SMS Kaiser Barbarossa"
+					historical_model = 7 
+					}
+				
+				 ship = {
+					type = battleship 
+					experience = 15 
+					name = "SMS Kurfürst Friedrich Wilhelm"
+					historical_model = 5 
+					}
+				
+				 ship = {
+					type = battleship 
+					experience = 15 
+					name = "SMS Wörth"
+					historical_model = 5 
+					}
+				
+				 ship = {
+					type = battleship 
+					experience = 15 
+					name = "SMS Kaiser"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = battleship 
+					experience = 15 
+					name = "SMS Württemberg"
+					historical_model = 1 
+					}
+				}
+			
+			 navy = {
+				location = 1570  # Wilhelmshaven
+				base = 1570 # Wilhelmshaven
+				name = "U-bootdivision"
+				
+				 ship = {
+					type = coastal_submarine 
+					experience = 15 
+					name = "1. Unterseebootsflottille"
+					historical_model = 4 
+					}
+				
+				 ship = {
+					type = coastal_submarine 
+					experience = 15 
+					name = "2. Unterseebootsflottille"
+					historical_model = 4 
+					}
+				
+				 ship = {
+					type = coastal_submarine 
+					experience = 15 
+					name = "3. Unterseebootsflottille"
+					historical_model = 5 
+					}
+				
+				 ship = {
+					type = submarine 
+					experience = 15 
+					name = "4. Unterseebootsflottille"
+					historical_model = 1 
+					}
+				
+				 ship = {
+					type = submarine 
+					experience = 15 
+					name = "5. Unterseebootsflottille"
+					historical_model = 2 
+					}
+				}
+			
+			 navy = {
+				location = 1570  # Wilhelmshaven
+				base = 1570 # Wilhelmshaven
+				name = "Transportdivision"
+				
+				 ship = {
+					type = transport_ship 
+					experience = 15 
+					name = "1. Truppentransporterflottille"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = transport_ship 
+					experience = 15 
+					name = "2. Truppentransporterflottille"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = transport_ship 
+					experience = 15 
+					name = "3. Truppentransporterflottille"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = transport_ship 
+					experience = 15 
+					name = "4. Truppentransporterflottille"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = transport_ship 
+					experience = 15 
+					name = "5. Truppentransporterflottille"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = transport_ship 
+					experience = 15 
+					name = "6. Truppentransporterflottille"
+					historical_model = 0 
+					}
+				}
+			
+			 navy = {
+				location = 1570  # Wilhelmshaven
+				base = 1570 # Wilhelmshaven
+				name = "SMS Dresden"
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS Dresden"
+					historical_model = 0 
+					}
+				}
+			
+			 navy = {
+				location = 1570  # Wilhelmshaven
+				base = 1570 # Wilhelmshaven
+				name = "1. Cruiser schwadron"
+				
+				 ship = {
+					type = battlecruiser 
+					experience = 15 
+					name = "SMS Seydlitz"
+					historical_model = 2 
+					}
+				
+				 ship = {
+					type = battlecruiser 
+					experience = 15 
+					name = "SMS Von der Tann"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = battlecruiser 
+					experience = 15 
+					name = "SMS Moltke"
+					historical_model = 1 
+					}
+				
+				 ship = {
+					type = heavy_cruiser 
+					experience = 15 
+					name = "SMS Blücher"
+					historical_model = 9 
+					}
+				}
+			
+			 navy = {
+				location = 1570  # Wilhelmshaven
+				base = 1570 # Wilhelmshaven
+				name = "2. Crusier schwadron"
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS Straßburg"
+					historical_model = 2 
+					}
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS Stralsund"
+					historical_model = 2 
+					}
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS Kolberg"
+					historical_model = 1 
+					}
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS Mainz"
+					historical_model = 1 
+					}
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS Köln"
+					historical_model = 1 
+					}
+				
+				 ship = {
+					type = destroyer 
+					experience = 15 
+					name = "4. Zerstörergeschwader"
+					historical_model = 4 
+					}
+				
+				 ship = {
+					type = destroyer 
+					experience = 15 
+					name = "5. Zerstörergeschwader"
+					historical_model = 5 
+					}
+				}
+			
+			 navy = {
+				location = 1572  # Kiel
+				base = 1572 # Kiel
+				name = "6. Schlachtschwadron"
+				
+				 ship = {
+					type = heavy_cruiser 
+					experience = 15 
+					name = "SMS Siegfried"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = heavy_cruiser 
+					experience = 15 
+					name = "SMS Beowulf"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = heavy_cruiser 
+					experience = 15 
+					name = "SMS Frithjof"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = heavy_cruiser 
+					experience = 15 
+					name = "SMS Heimdall"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = heavy_cruiser 
+					experience = 15 
+					name = "SMS Hildebrand"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = heavy_cruiser 
+					experience = 15 
+					name = "SMS Hagen"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = heavy_cruiser 
+					experience = 15 
+					name = "SMS Odin"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = heavy_cruiser 
+					experience = 15 
+					name = "SMS Ägir"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = destroyer 
+					experience = 15 
+					name = "3. Zerstörergeschwader"
+					historical_model = 6 
+					}
+				
+				 ship = {
+					type = destroyer 
+					experience = 15 
+					name = "8. Zerstörergeschwader"
+					historical_model = 6 
+					}
+				
+				 ship = {
+					type = destroyer 
+					experience = 15 
+					name = "9. Zerstörergeschwader"
+					historical_model = 7 
+					}
+				}
+			
+			 navy = {
+				location = 1572  # Kiel
+				base = 1572 # Kiel
+				name = "7. Schlachtschwadron"
+				
+				 ship = {
+					type = battleship 
+					experience = 15 
+					name = "SMS Preußen"
+					historical_model = 10 
+					}
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS Stettin"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS Bremen"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS Hamburg"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS Lübeck"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS München"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = heavy_cruiser 
+					experience = 15 
+					name = "SMS Fürst Bismarck"
+					historical_model = 3 
+					}
+				
+				 ship = {
+					type = heavy_cruiser 
+					experience = 15 
+					name = "SMS Freya"
+					historical_model = 2 
+					}
+				
+				 ship = {
+					type = heavy_cruiser 
+					experience = 15 
+					name = "SMS Kaiserin Augusta"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS Gefion"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS Arcona"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = destroyer 
+					experience = 15 
+					name = "10. Zerstörergeschwader"
+					historical_model = 8 
+					}
+				
+				 ship = {
+					type = destroyer 
+					experience = 15 
+					name = "11. Zerstörergeschwader"
+					historical_model = 8 
+					}
+				
+				 ship = {
+					type = destroyer 
+					experience = 15 
+					name = "12. Zerstörergeschwader"
+					historical_model = 8 
+					}
+				
+				 ship = {
+					type = destroyer 
+					experience = 15 
+					name = "13. Zerstörergeschwader"
+					historical_model = 9 
+					}
+				
+				 ship = {
+					type = destroyer 
+					experience = 15 
+					name = "14. Zerstörergeschwader"
+					historical_model = 9 
+					}
+				
+				 ship = {
+					type = destroyer 
+					experience = 15 
+					name = "15. Zerstörergeschwader"
+					historical_model = 9 
+					}
+				
+				 ship = {
+					type = destroyer 
+					experience = 15 
+					name = "16. Zerstörergeschwader"
+					historical_model = 9 
+					}
+				
+				 ship = {
+					type = destroyer 
+					experience = 15 
+					name = "17. Zerstörergeschwader"
+					historical_model = 10 
+					}
+				}
+			
+			 navy = {
+				location = 1572  # Kiel
+				base = 1572 # Kiel
+				name = "4. Cruiser sschwadron"
+				
+				 ship = {
+					type = heavy_cruiser 
+					experience = 15 
+					name = "SMS Roon"
+					historical_model = 7 
+					}
+				
+				 ship = {
+					type = heavy_cruiser 
+					experience = 15 
+					name = "SMS Yorck"
+					historical_model = 7 
+					}
+				
+				 ship = {
+					type = heavy_cruiser 
+					experience = 15 
+					name = "SMS Prinz Adalbert"
+					historical_model = 5 
+					}
+				
+				 ship = {
+					type = heavy_cruiser 
+					experience = 15 
+					name = "SMS Prinz Heinrich"
+					historical_model = 4 
+					}
+				}
+			
+			 navy = {
+				location = 1740  # Rostock
+				base = 1740 # Rostock
+				name = "5. Cruiser schwadron"
+				
+				 ship = {
+					type = heavy_cruiser 
+					experience = 15 
+					name = "SMS Hansa"
+					historical_model = 2 
+					}
+				
+				 ship = {
+					type = heavy_cruiser 
+					experience = 15 
+					name = "SMS Victoria Luise"
+					historical_model = 2 
+					}
+				
+				 ship = {
+					type = heavy_cruiser 
+					experience = 15 
+					name = "SMS Hertha"
+					historical_model = 2 
+					}
+				
+				 ship = {
+					type = heavy_cruiser 
+					experience = 15 
+					name = "SMS Vineta"
+					historical_model = 2 
+					}
+				}
+			
+			 navy = {
+				location = 1740  # Rostock
+				base = 1740 # Rostock
+				name = "Cruiser gruppe Ostsee"
+				
+				 ship = {
+					type = heavy_cruiser 
+					experience = 15 
+					name = "SMS Friedrich Carl"
+					historical_model = 5 
+					}
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS Augsburg"
+					historical_model = 1 
+					}
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS Magdeburg"
+					historical_model = 2 
+					}
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS Amazone"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS Undine"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS Thetis"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = light_cruiser 
+					experience = 15 
+					name = "SMS Gazelle"
+					historical_model = 0 
+					}
+				
+				 ship = {
+					type = destroyer 
+					experience = 15 
+					name = "1. Zerstörergeschwader"
+					historical_model = 10 
+					}
+				
+				 ship = {
+					type = destroyer 
+					experience = 15 
+					name = "2. Zerstörergeschwader"
+					historical_model = 10 
+					}
+				}
+			
+			 air = {
+				location = 2374  # Frankfurt am Main
+				base = 2374 # Frankfurt am Main
+				name = "Fliegertruppe - West"
+				
+				 wing = {
+					type = scout 
+					experience = 15 
+					name = "Feldflieger-Abteilung 1"
+					historical_model = 0 
+					}
+				
+				 wing = {
+					type = scout 
+					experience = 15 
+					name = "Feldflieger-Abteilung 2"
+					historical_model = 0 
+					}
+				}
+			
+			 air = {
+				location = 2374  # Frankfurt am Main
+				base = 2374 # Frankfurt am Main
+				name = "Luftschifftruppe"
+				
+				 wing = {
+					type = airship 
+					experience = 15 
+					name = "Luftschiff-Abteilung 1"
+					historical_model = 0 
+					}
+				}
+			
+			 air = {
+				location = 1572  # Kiel
+				base = 1572 # Kiel
+				name = "Seefliegertruppe"
+				
+				 wing = {
+					type = cag 
+					experience = 15 
+					name = "I. Seeflieger-Abteilung"
+					historical_model = 0 
+					}
+				}
+			}
+		}
+	
+	 army = {
+		location = 2205 # Mühlhausen
+		name = "4th Armee"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 0 
+			name = "11th HQ Brigade"
+			historical_model = 3 
+			}
+		
+		 regiment = {
+			type = engineer_brigade 
+			experience = 0 
+			name = "4. Armee Engineers"
+			historical_model = 0 
+			}
+		
+		 corps = {
+			location = 2205 # Mühlhausen
+			name = "VI. Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "VI. Armeekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2205 # Mühlhausen
+				name = "11. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "21. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "22. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = heavy_artillery_brigade 
+					experience = 10 
+					name = "11. Artillerie brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2205 # Mühlhausen
+				name = "12. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "34. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "78. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "12. Artillerie Brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2374 # Frankfurt am Main
+			name = "VIII. Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "VIII. Armeekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2374 # Frankfurt am Main
+				name = "15. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "29. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "80. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = heavy_artillery_brigade 
+					experience = 10 
+					name = "15. Artillerie Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2374 # Frankfurt am Main
+				name = "16. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "30. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "31. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "16. Artillerie Brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2432 # Mainz
+			name = "XVIII. Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "XVIII. Armeekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2432 # Mainz
+				name = "21. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "41. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "42. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = heavy_artillery_brigade 
+					experience = 10 
+					name = "21. Artillerie brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2432 # Mainz
+				name = "25. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "49. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "50. Infanteriebrigade"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "25. Artillerie Brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2205 # Mühlhausen
+			name = "XVIII. Reservekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "XVIII. Reservekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2205 # Mühlhausen
+				name = "21. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "41. Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "42. Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2205 # Mühlhausen
+				name = "25. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "49. Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "50. Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2372 # Bonn
+			name = "VIII. Reservekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "VIII. Reservekorps HQ"
+				historical_model = 3 
+				}
+			
+			 division = {
+				location = 2372 # Bonn
+				name = "15. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "30. Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "32. Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2372 # Bonn
+				name = "16. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "29. Reserve Brigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "31. Reserve Brigade"
+					historical_model = 1 
+					}
+				}
+			}
+		}
+	}
+
+ theatre = {
+	location = 10130 # Dar es Salaam
+	name = "Dar es Salaam HQ"
+	
+	 regiment = {
+		type = hq_brigade 
+		experience = 10 
+		name = "Dar es Salaam HQ"
+		historical_model = 3 
+		}
+	
+	 division = {
+		location = 9986 # Douala
+		name = "Kamerun Garrison"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 10 
+			name = "Kamerun Garrison"
+			historical_model = 1 
+			}
+		}
+	
+	 division = {
+		location = 9955 # Lomé
+		name = "Togoland Para military"
+		
+		 regiment = {
+			type = police_brigade 
+			is_reserve = yes 
+			experience = 19 
+			name = "Togoland Para military"
+			historical_model = 1 
+			}
+		}
+	
+	 corps = {
+		location = 10130  # Dar es Salaam
+		leader = 855031
+		name = "Kaiserliche Schutztruppe"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 15 
+			name = "Kaiserliche Schutztruppe Ostafrika HQ"
+			historical_model = 3 
+			}
+		
+		 division = {
+			location = 10130 # Dar es Salaam
+			name = "Ostafrikanische Schutztruppe 1-10"
+			
+			 regiment = {
+				type = militia_brigade 
+				is_reserve = yes 
+				experience = 15 
+				name = "Ostafrikanische Schutztruppe 1-10"
+				historical_model = 1 
+				}
+			}
+		
+		 division = {
+			location = 10076 # Tanga
+			name = "Ostafrikanische Schutztruppe 11-14"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				is_reserve = yes 
+				experience = 15 
+				name = "Ostafrikanische Schutztruppe 11-14"
+				historical_model = 1 
+				}
+			}
+		
+		 division = {
+			location = 10089 # Kaiti
+			name = "Ostafrikanische Askari"
+			
+			 regiment = {
+				type = militia_brigade 
+				is_reserve = yes 
+				experience = 15 
+				name = "Ostafrikanische Askari"
+				historical_model = 0 
+				}
+			}
+		}
+	
+	 corps = {
+		location = 10381 # Lüderitz
+		name = "DSWA HQ"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 15 
+			name = "Deutsche Sur Oesteafrika HQ"
+			historical_model = 3 
+			}
+		
+		 division = {
+			location = 7997 # Keetmanshoop
+			name = "1. DSWA Regiment"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 15 
+				name = "1. DSWA Regiment"
+				historical_model = 1 
+				}
+			}
+		
+		 division = {
+			location = 7997 # Keetmanshoop
+			name = "2. DSWA Camel Regiment"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 15 
+				name = "2. DSWA Camel Regiment"
+				historical_model = 1 
+				}
+			}
+		
+		 division = {
+			location = 10381 # Lüderitz
+			name = "German Colonists"
+			
+			 regiment = {
+				type = militia_brigade 
+				is_reserve = yes 
+				experience = 10 
+				name = "German Colonists"
+				historical_model = 1 
+				}
+			}
+		}
+	
+	 navy = {
+		location = 9986  # Douala
+		base = 9986 # Douala
+		name = "SMS Karlsruhe"
+		
+		 ship = {
+			type = light_cruiser 
+			experience = 15 
+			name = "SMS Karlsruhe"
+			historical_model = 3 
+			}
+		}
+	
+	 navy = {
+		location = 10130  # Dar es Salaam
+		base = 10130 # Dar es Salaam
+		name = "SMS Königsberg"
+		
+		 ship = {
+			type = light_cruiser 
+			experience = 15 
+			name = "SMS Königsberg"
+			historical_model = 0 
+			}
+		}
+	}
+
+ theatre = {
+	location = 6445 # Angoram
+	name = "Qingdao HQ"
+	
+	 regiment = {
+		type = hq_brigade 
+		experience = 10 
+		name = "5th HQ Brigade"
+		historical_model = 3 
+		}
+	
+	 corps = {
+		location = 5246 # Qingdao
+		name = "Schutzgebiet Kiautschou"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 15 
+			name = "Schutzgebiet Kiautschou HQ"
+			historical_model = 3 
+			}
+		
+		 division = {
+			location = 5246 # Qingdao
+			name = "Schutzgebiet Kiautschou"
+			
+			 regiment = {
+				type = militia_brigade 
+				is_reserve = yes 
+				experience = 10 
+				name = "Schutzgebiet Kiautschou"
+				historical_model = 0 
+				}
+			}
+		
+		 navy = {
+			location = 5246  # Qingdao
+			base = 5246 # Qingdao
+			name = "Ostasienschwadron"
+			
+			 ship = {
+				type = heavy_cruiser 
+				experience = 15 
+				name = "SMS Scharnhorst"
+				historical_model = 8 
+				}
+			
+			 ship = {
+				type = heavy_cruiser 
+				experience = 15 
+				name = "SMS Gneisenau"
+				historical_model = 8 
+				}
+			
+			 ship = {
+				type = light_cruiser 
+				experience = 15 
+				name = "SMS Nürnberg"
+				historical_model = 0 
+				}
+			
+			 ship = {
+				type = light_cruiser 
+				experience = 15 
+				name = "SMS Leipzig"
+				historical_model = 0 
+				}
+			
+			 ship = {
+				type = light_cruiser 
+				experience = 15 
+				name = "SMS Emden"
+				historical_model = 0 
+				}
+			
+			 ship = {
+				type = destroyer 
+				experience = 15 
+				name = "18. Zerstörergeschwader"
+				historical_model = 2 
+				}
+			}
+		}
+	}
+
+ military_construction = {
+	cost = 4 
+	progress = 0 
+	duration = 254 
+	country = GER 
+	dreadnaught = { 
+		name = "SMS Großer Kurfürst"
+		historical_model = 3 
+		}
+	}
+
+ military_construction = {
+	cost = 4 
+	progress = 0 
+	duration = 374 
+	country = GER 
+	dreadnaught = { 
+		name = "SMS König"
+		historical_model = 3 
+		}
+	}
+
+ military_construction = {
+	cost = 4 
+	progress = 0 
+	duration = 374 
+	country = GER 
+	dreadnaught = { 
+		name = "SMS Markgraf"
+		historical_model = 3 
+		}
+	}
+
+ military_construction = {
+	cost = 4 
+	progress = 0 
+	duration = 404 
+	country = GER 
+	dreadnaught = { 
+		name = "SMS Kronprinz"
+		historical_model = 3 
+		}
+	}
+
+ military_construction = {
+	cost = 4 
+	progress = 0 
+	duration = 270 
+	country = GER 
+	battlecruiser = { 
+		name = "SMS Derfflinger"
+		historical_model = 3 
+		}
+	}
+
+ military_construction = {
+	cost = 2 
+	progress = 0 
+	duration = 34 
+	country = GER 
+	light_cruiser = { 
+		name = "SMS Rostock"
+		historical_model = 3 
+		}
+	}
+
+ military_construction = {
+	cost = 2 
+	progress = 0 
+	duration = 343 
+	country = GER 
+	light_cruiser = { 
+		name = "SMS Regensberg"
+		historical_model = 3 
+		}
+	}
+
+ military_construction = {
+	cost = 2 
+	progress = 0 
+	duration = 219 
+	country = GER 
+	light_cruiser = { 
+		name = "SMS Graudenz"
+		historical_model = 3 
+		}
+	}
+
+ military_construction = {
+	cost = 2 
+	progress = 0 
+	duration = 50 
+	country = GER 
+	destroyer = { 
+		name = "19. Zerstörergeschwader"
+		historical_model = 11 
+		}
+	}
+
+ military_construction = {
+	cost = 2 
+	progress = 0 
+	duration = 90 
+	country = GER 
+	submarine = { 
+		name = "6. Unterseebootsflottille"
+		historical_model = 2 
+		}
+	}
 
-regiment = {
-type = hq_brigade
-name = "1st HQ Brigade"
-historical_model = 3
-experience = 3
-}
-
-navy = {
-name = "Mittelmeer-Division"
-location = 3904
-base = 3904
-
-ship = { type = battlecruiser name = "SMS Goeben" historical_model = 1 experience = 15 }
-ship = { type = light_cruiser name = "SMS Breslau" historical_model = 2 experience = 15 }
-
-}
-
-air = {
-name = "Fliegertruppe - Ost"
-location = 1924
-base = 1924
-
-wing = {
-type = scout
-name = "Feldflieger-Abteilung 3"
-historical_model = 0
-experience = 15
-}
-wing = {
-type = scout
-name = "Feldflieger-Abteilung 4"
-historical_model = 0
-experience = 15
-}
-}
-
-army = {
-name = "1st Armee"
-location = 1921
-
-regiment = {
-type = hq_brigade
-name = "6th HQ Brigade"
-historical_model = 3
-experience = 0
-}
-
-regiment = {
-type = engineer_brigade
-name = "1. Armee Engineers"
-historical_model = 0
-experience = 0
-}
-
-corps = {
-name = "II. Armeekorps"
-location = 1742
-
-regiment = {
-type = hq_brigade
-name = "II. Armeekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "3. Infanterie-Division"
-location = 1742
-
-regiment = {
-type = infantry_brigade
-name = "5. Grenadier Brigade"
-historical_model = 3
-experience = 20
-}
-
-regiment = {
-type = infantry_brigade
-name = "6. Infanterie-Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "3. Artillerie Brigade"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "4. Infanterie-Division"
-location = 1742
-
-regiment = {
-type = infantry_brigade
-name = "7. Infanterie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "8. Infanterie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "4. Artillerie Brigade"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "III. Armeekorps"
-location = 1924
-
-regiment = {
-type = hq_brigade
-name = "III. Armeekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "5. Infanterie-Division"
-location = 1924
-
-regiment = {
-type = infantry_brigade
-name = "9. Leib Grenadier Brigade"
-historical_model = 3
-experience = 20
-}
-
-regiment = {
-type = infantry_brigade
-name = "10. Infanterie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = heavy_artillery_brigade
-name = "5. Artillerie Brigade"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "6. Infanterie-Division"
-location = 1924
-
-regiment = {
-type = infantry_brigade
-name = "11. Infanterie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "12. Infanterie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "6. Artillerie Brigade"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "IV. Armeekorps"
-location = 2091
-
-regiment = {
-type = hq_brigade
-name = "IV. Armeekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "7. Infanterie-Division"
-location = 2091
-
-regiment = {
-type = infantry_brigade
-name = "13. Infanterie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "14. Infanterie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = heavy_artillery_brigade
-name = "7. Artillerie Brigade"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "8. Infanterie-Division"
-location = 2091
-
-regiment = {
-type = infantry_brigade
-name = "15.  Infanterie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "16. Infanterie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "8. Artillerie Brigade"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "IX. Armeekorps"
-location = 1623
-
-regiment = {
-type = hq_brigade
-name = "IX. Armeekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "17. Infanterie-Division"
-location = 1623
-
-regiment = {
-type = infantry_brigade
-name = "33. Infanterie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "34. Infanterie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = heavy_artillery_brigade
-name = "17. Artillerie Brigade"
-historical_model = 0
-experience = 10
-}
-}
-
-division = {
-name = "18. Infanterie-Division"
-location = 1623
-
-regiment = {
-type = infantry_brigade
-name = "35. Infanterie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "36. Infanterie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "18. Artillerie Brigade"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "2. Hohere-Kavallerie-Kommando"
-location = 1921
-
-regiment = {
-type = hq_brigade
-name = "2. Kavallerie-Kommando"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "2. Kavallerie-Division"
-location = 1921
-
-regiment = {
-type = cavalry_brigade
-name = "5. Kavallerie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = cavalry_brigade
-name = "8. Kavallerie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = cavalry_brigade
-name = "Leibhussar Kavallerie Brigade"
-historical_model = 2
-experience = 10
-}
-}
-
-division = {
-name = "4. Kavallerie-Division"
-location = 1921
-
-regiment = {
-type = cavalry_brigade
-name = "3. Uhlan Kavallerie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = cavalry_brigade
-name = "17. Dragoon Kavallerie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = cavalry_brigade
-name = "18. Hussar Kavallerie Brigade"
-historical_model = 2
-experience = 10
-}
-}
-
-division = {
-name = "9. Kavallerie-Division"
-location = 1921
-
-regiment = {
-type = cavalry_brigade
-name = "13. Kavallerie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = cavalry_brigade
-name = "14. Kavallerie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = cavalry_brigade
-name = "19. Kavallerie Brigade"
-historical_model = 2
-experience = 10
-}
-}
-}
-}
-
-army = {
-name = "1st Armee Reserve"
-location = 1921
-
-regiment = {
-type = hq_brigade
-name = "7th HQ Brigade"
-historical_model = 3
-experience = 0
-}
-
-corps = {
-name = "III. Reservekorps"
-location = 1860
-
-regiment = {
-type = hq_brigade
-name = "III. Reservekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "5. Reserve-Division"
-location = 1860
-
-regiment = {
-type = infantry_brigade
-name = "9. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "10. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "6. Reserve-Division"
-location = 1860
-
-regiment = {
-type = infantry_brigade
-name = "11. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "12. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-}
-
-corps = {
-name = "IV. Reservekorps"
-location = 2091
-
-regiment = {
-type = hq_brigade
-name = "IV. Reservekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "7. Reserve-Division"
-location = 2091
-
-regiment = {
-type = infantry_brigade
-name = "13. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "14. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "22. Reserve-Division"
-location = 2091
-
-regiment = {
-type = infantry_brigade
-name = "22. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "22. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "11th Mixed Landwehr Brigade"
-location = 1860
-
-regiment = {
-type = militia_brigade
-name = "11th Mixed Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "27th Mixed Landwehr Brigade"
-location = 1683
-
-regiment = {
-type = militia_brigade
-name = "27th Mixed Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "10th Mixed Landwehr Brigade"
-location = 1742
-
-regiment = {
-type = militia_brigade
-name = "10th Mixed Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-}
-}
-
-army = {
-name = "8. Armee"
-location = 1686
-
-regiment = {
-type = hq_brigade
-name = "17th HQ Brigade"
-historical_model = 3
-experience = 0
-}
-
-regiment = {
-type = engineer_brigade
-name = "8. Armee Engineers"
-historical_model = 0
-experience = 5
-}
-
-corps = {
-name = "I. Armeekorps"
-location = 1527
-
-regiment = {
-type = hq_brigade
-name = "I. Armeekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "1. Infanterie-Division"
-location = 1527
-
-regiment = {
-type = infantry_brigade
-name = "1. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "1. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = heavy_artillery_brigade
-name = "1. Artillerie brigade"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "2. Infanterie-Division"
-location = 1527
-
-regiment = {
-type = infantry_brigade
-name = "3. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "4. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "2. Artillerie Brigade"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "XVII. Armeekorps"
-location = 1626
-
-regiment = {
-type = hq_brigade
-name = "XVII. Armeekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "35. Infanterie-Division"
-location = 1626
-
-regiment = {
-type = infantry_brigade
-name = "69. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "70. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = heavy_artillery_brigade
-name = "35. Artillerie brigade"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "36. Infanterie-Division"
-location = 1626
-
-regiment = {
-type = infantry_brigade
-name = "71. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "72. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "36. Artillerie brigade"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "XX. Armeekorps"
-location = 1748
-
-regiment = {
-type = hq_brigade
-name = "XX. Armeekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "37. Infanterie-Division"
-location = 1748
-
-regiment = {
-type = infantry_brigade
-name = "73. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "75. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "37. Artillerie brigade"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "41. Infanterie-Division"
-location = 1748
-
-regiment = {
-type = infantry_brigade
-name = "72. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "74. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "41. Artillerie brigade"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "1. Kavallerie-Division"
-location = 1748
-
-regiment = {
-type = cavalry_brigade
-name = "1. Kavallerie-Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = cavalry_brigade
-name = "2. Kavallerie-Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = cavalry_brigade
-name = "41. Kavallerie-Brigade"
-historical_model = 2
-experience = 10
-}
-}
-}
-
-corps = {
-name = "I. Reservekorps"
-location = 1527
-
-regiment = {
-type = hq_brigade
-name = "I. Reservekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "1. Reserve-Division"
-location = 1527
-
-regiment = {
-type = infantry_brigade
-name = "1. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "71. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "36. Reserve-Division"
-location = 1527
-
-regiment = {
-type = infantry_brigade
-name = "69. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "70. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "3. Reserve-Division"
-location = 1866
-
-regiment = {
-type = infantry_brigade
-name = "5. Reserve Brigade"
-historical_model = 1
-experience = 5
-}
-
-regiment = {
-type = infantry_brigade
-name = "6. Reserve Brigade"
-historical_model = 1
-experience = 5
-}
-}
-
-division = {
-name = "Konigsberg Garrison"
-location = 1527
-
-regiment = {
-type = militia_brigade
-name = "9. Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = garrison_brigade
-name = "Konigsberg Ersatz Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-}
-}
-
-army = {
-name = "5th Armee Reserve"
-location = 2208
-
-regiment = {
-type = hq_brigade
-name = "14th HQ Brigade"
-historical_model = 3
-experience = 0
-}
-
-corps = {
-name = "2nd Senior Landwehr Command"
-location = 2208
-
-regiment = {
-type = hq_brigade
-name = "13th HQ Brigade"
-historical_model = 3
-experience = 0
-}
-
-division = {
-name = "43 Landwehr Brigade"
-location = 2208
-
-regiment = {
-type = militia_brigade
-name = "43. Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "45. Landwehr Brigade"
-location = 2208
-
-regiment = {
-type = militia_brigade
-name = "45. Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "53. Landwehr Brigade"
-location = 2208
-
-regiment = {
-type = militia_brigade
-name = "53. Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "9. Bayerisches Landwehr Brigade"
-location = 2208
-
-regiment = {
-type = militia_brigade
-name = "9. Bayerisches Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "16. Landwehr Brigade"
-location = 2208
-
-regiment = {
-type = militia_brigade
-name = "16. Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-}
-
-corps = {
-name = "V. Reservekorps"
-location = 2210
-
-regiment = {
-type = hq_brigade
-name = "V. Reservekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "9. Reserve-Division"
-location = 2210
-
-regiment = {
-type = infantry_brigade
-name = "17. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "19. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "10. Reserve-Division"
-location = 2210
-
-regiment = {
-type = infantry_brigade
-name = "18. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "77. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-}
-
-corps = {
-name = "VI. Reservekorps"
-location = 2153
-
-regiment = {
-type = hq_brigade
-name = "VI. Reservekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "11. Reserve-Division"
-location = 2153
-
-regiment = {
-type = infantry_brigade
-name = "21. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "23. Infanterie Brigade"
-historical_model = 1
-experience = 10
-is_reserve = yes
-}
-}
-
-division = {
-name = "12. Reserve-Division"
-location = 2153
-
-regiment = {
-type = infantry_brigade
-name = "22. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "23. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-}
-
-corps = {
-name = "V. Armeekorps"
-location = 2210
-
-regiment = {
-type = hq_brigade
-name = "V. Armeekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "9. Infanterie-Division"
-location = 2210
-
-regiment = {
-type = infantry_brigade
-name = "17. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "18. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = heavy_artillery_brigade
-name = "9. Artillerie brigade"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "10. Infanterie-Division"
-location = 2210
-
-regiment = {
-type = infantry_brigade
-name = "19. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "20. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "10. Artillerie brigade"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "35. Reserve Division"
-location = 1866
-
-regiment = {
-type = militia_brigade
-name = "5. Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = militia_brigade
-name = "20. Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = artillery_brigade
-name = "35. Reserve Artillerie Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "19. Landwehr Brigade"
-location = 1924
-
-regiment = {
-type = militia_brigade
-name = "19. Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "69. Infantry Brigade"
-location = 2386
-
-regiment = {
-type = garrison_brigade
-name = "69. Infantry Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "Bayerisches Ersatz-Division"
-location = 1861
-
-regiment = {
-type = infantry_brigade
-name = "3. Bayerisches Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = militia_brigade
-name = "59. Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = garrison_brigade
-name = "55.  Ersatz Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "Garde-Ersatz-Division"
-location = 1861
-
-regiment = {
-type = garrison_brigade
-name = "1. Garde Mixed Ersatz Brigade"
-historical_model = 1
-experience = 10
-is_reserve = yes
-}
-
-regiment = {
-type = garrison_brigade
-name = "5. Garde Mixed Ersatz Brigade"
-historical_model = 1
-experience = 10
-is_reserve = yes
-}
-}
-
-division = {
-name = "4. Ersatz-Division"
-location = 1861
-
-regiment = {
-type = garrison_brigade
-name = "9. Ersatz Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = garrison_brigade
-name = "13. Ersatz Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = garrison_brigade
-name = "33. Ersatz Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "8. Ersatz-Division"
-location = 1861
-
-regiment = {
-type = garrison_brigade
-name = "29. Ersatz Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = garrison_brigade
-name = "41. Ersatz Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = garrison_brigade
-name = "51. Ersatz Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "10. Ersatz-Division"
-location = 1861
-
-regiment = {
-type = garrison_brigade
-name = "37. Ersatz Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = garrison_brigade
-name = "25. Ersatz Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = garrison_brigade
-name = "43. Ersatz Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "19. Ersatz-Division"
-location = 1861
-
-regiment = {
-type = garrison_brigade
-name = "45. Ersatz Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = garrison_brigade
-name = "47. Ersatz Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = garrison_brigade
-name = "5. Bayerisches Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-}
-
-corps = {
-name = "Landwehr Korps"
-location = 1861
-
-regiment = {
-type = hq_brigade
-name = "19th HQ Brigade"
-historical_model = 1
-experience = 0
-}
-
-division = {
-name = "4. Landwehr Kommando"
-location = 1861
-
-regiment = {
-type = militia_brigade
-name = "22. Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = militia_brigade
-name = "23. Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "3. Landwehr Kommando"
-location = 1861
-
-regiment = {
-type = militia_brigade
-name = "17. Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = militia_brigade
-name = "18. Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "2. Landwehr Brigade"
-location = 1861
-
-regiment = {
-type = militia_brigade
-name = "2. Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "6. Landwehr Brigade"
-location = 1861
-
-regiment = {
-type = militia_brigade
-name = "6. Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "70. Landwehr Brigade"
-location = 1861
-
-regiment = {
-type = militia_brigade
-name = "70. Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-}
-}
-}
-
-
-theatre = {
-name = "Munich HQ"
-location = 2952
-
-regiment = {
-type = hq_brigade
-name = "2nd HQ Brigade"
-historical_model = 3
-experience = 3
-}
-
-army = {
-name = "6. Armee"
-location = 2818
-
-regiment = {
-type = hq_brigade
-name = "6. Armee HQ Brigade"
-historical_model = 3
-experience = 0
-}
-
-regiment = {
-type = engineer_brigade
-name = "6. Armee Engineers"
-historical_model = 0
-experience = 5
-}
-
-corps = {
-name = "XXI. Armeekorps"
-location = 2553
-
-regiment = {
-type = hq_brigade
-name = "XXI. Armeekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "31. Infanterie-Division"
-location = 2553
-
-regiment = {
-type = infantry_brigade
-name = "32. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "62. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = heavy_artillery_brigade
-name = "31. Artillerie brigade"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "42. Infanterie-Division"
-location = 2553
-
-regiment = {
-type = infantry_brigade
-name = "59. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "60. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "1st Artillerie brigade"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "I. Bayerisches Armeekorps"
-location = 2818
-
-regiment = {
-type = hq_brigade
-name = "I. Bayerisches Armeekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "1. Bayerisches Infanterie-Division"
-location = 2818
-
-regiment = {
-type = infantry_brigade
-name = "1. Bayerisches Reserve Infanterie"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "2. Bayerisches Reserve Infanterie"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = heavy_artillery_brigade
-name = "1. Bayerisches Artillerie brigade"
-historical_model = 1
-experience = 5
-}
-}
-
-division = {
-name = "2. Bayerisches Infanterie-Division"
-location = 2818
-
-regiment = {
-type = infantry_brigade
-name = "3. Bayerisches Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "4. Bayerisches Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "2. Bayerisches Artillerie"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "II. Bayerisches Armeekorps"
-location = 2434
-
-regiment = {
-type = hq_brigade
-name = "II. Bayerisches Armeekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "3. Bayerisches Infanterie-Division"
-location = 2434
-
-regiment = {
-type = infantry_brigade
-name = "5. Bayerisches Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "6. Bayerisches Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "3. Bayerisches Artillerie brigade"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "4. Bayerisches Infanterie-Division"
-location = 2434
-
-regiment = {
-type = infantry_brigade
-name = "7. Bayerisches Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "5. Bayerisches Reserve Infanterie"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = artillery_brigade
-name = "5. Bayerisches Artillerie brigade"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "III. Bayerisches Armeekorps"
-location = 2558
-
-regiment = {
-type = hq_brigade
-name = "III. Bayerisches Armeekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "5. Bayerisches Infanterie-Division"
-location = 2558
-
-regiment = {
-type = infantry_brigade
-name = "11. Bayerisches Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "12. Bayerisches Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "6. Bayerisches Artillerie"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "5. Bayerisches Infanterie-Division"
-location = 2558
-
-regiment = {
-type = infantry_brigade
-name = "5. Bayerisches Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "5. Bayerisches Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "5. Bayerisches Artillerie brigade"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "I. Bayerisches Reservekorps"
-location = 2952
-
-regiment = {
-type = hq_brigade
-name = "I. Bayerisches Reservekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "1.Bayerisches Reserve-Division"
-location = 2952
-
-regiment = {
-type = infantry_brigade
-name = "1.Bayerisches Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "2.Bayerisches Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "5. Bayerisches Reserve-Division"
-location = 2952
-
-regiment = {
-type = infantry_brigade
-name = "9. Bayerisches Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "11. Bayerisches Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "5. Bayerisches Landwehr Brigade"
-location = 2952
-
-regiment = {
-type = militia_brigade
-name = "5. Bayerisches Mixed Landwehr"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-}
-}
-
-army = {
-name = "7th Armee"
-location = 3085
-
-regiment = {
-type = hq_brigade
-name = "16th HQ Brigade"
-historical_model = 3
-experience = 0
-}
-
-regiment = {
-type = engineer_brigade
-name = "7. Armee Engineers"
-historical_model = 0
-experience = 0
-}
-
-corps = {
-name = "XIV. Armeekorps"
-location = 3084
-
-regiment = {
-type = hq_brigade
-name = "XIV. Armeekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "28. Infanterie-Division"
-location = 3084
-
-regiment = {
-type = infantry_brigade
-name = "55. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "56. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "28. Artillerie brigade"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "29. Infanterie-Division"
-location = 3084
-
-regiment = {
-type = infantry_brigade
-name = "57. Infanteriebrigade"
-historical_model = 2
-experience = 0
-}
-
-regiment = {
-type = infantry_brigade
-name = "58. Infanteriebrigade"
-historical_model = 2
-experience = 0
-}
-
-regiment = {
-type = artillery_brigade
-name = "29. Artillerie brigade"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "XIV. Reservekorps"
-location = 2621
-
-regiment = {
-type = hq_brigade
-name = "XIV. Reservekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "26. Reserve-Division"
-location = 2621
-
-regiment = {
-type = infantry_brigade
-name = "51. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "52. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "28. Reserve-Division"
-location = 2621
-
-regiment = {
-type = infantry_brigade
-name = "55. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "56. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "60. Mixed Landwehr Brigade"
-location = 3085
-
-regiment = {
-type = militia_brigade
-name = "60. Mixed Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "30. Bayerisches Reserve Division"
-location = 2815
-
-regiment = {
-type = infantry_brigade
-name = "3. Bayerisches Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "50. Bayerisches Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "10. Bayerisches Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "33. Reserve Division"
-location = 2618
-
-regiment = {
-type = infantry_brigade
-name = "8. Bayerisches Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "66. Reserve Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-}
-
-corps = {
-name = "3. Hohere-Kavallerie-Kommando"
-location = 3085
-
-regiment = {
-type = hq_brigade
-name = "3. Hohere Kavallerie-Kommando"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "7. Kavallerie-Division"
-location = 3085
-
-regiment = {
-type = cavalry_brigade
-name = "26. Kavallerie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = cavalry_brigade
-name = "30. Hussar Kavallerie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = cavalry_brigade
-name = "42. Uhlan Kavallerie Brigade"
-historical_model = 2
-experience = 10
-}
-}
-
-division = {
-name = "8. Kavallerie-Division"
-location = 3085
-
-regiment = {
-type = cavalry_brigade
-name = "23. Kavallerie Brigade"
-historical_model = 2
-experience = 15
-}
-
-regiment = {
-type = cavalry_brigade
-name = "38. Jager zu Pferd Kavallerie"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = cavalry_brigade
-name = "40. Kavallerie Brigade"
-historical_model = 2
-experience = 10
-}
-}
-
-division = {
-name = "Bayerische Kavallerie-Division"
-location = 3085
-
-regiment = {
-type = cavalry_brigade
-name = "1. Bayerische Heavy Reiter Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = cavalry_brigade
-name = "4. Bayerische Uhlan Kavallerie"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = cavalry_brigade
-name = "5. Bayerische Chevauleger Kavallerie"
-historical_model = 2
-experience = 10
-}
-}
-
-division = {
-name = "Upper Rhine Fortress Troops"
-location = 2621
-
-regiment = {
-type = militia_brigade
-name = "1st Bayerisches Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = militia_brigade
-name = "2nd Bayerisches Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = militia_brigade
-name = "55. Mixed Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-}
-
-corps = {
-name = "XV. Armeekorps"
-location = 2815
-
-regiment = {
-type = hq_brigade
-name = "XV. Armeekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "30. Infanterie-Division"
-location = 2815
-
-regiment = {
-type = infantry_brigade
-name = "60. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "85. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = heavy_artillery_brigade
-name = "30. Artillerie brigade"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "39. Infanterie-Division"
-location = 2815
-
-regiment = {
-type = infantry_brigade
-name = "62. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "82. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "39. Artillerie brigade"
-historical_model = 1
-experience = 10
-}
-}
-}
-}
-
-army = {
-name = "5th Armee"
-location = 2436
-
-regiment = {
-type = hq_brigade
-name = "12th HQ Brigade"
-historical_model = 3
-experience = 0
-}
-
-regiment = {
-type = engineer_brigade
-name = "5. Armee Engineer"
-historical_model = 0
-experience = 0
-}
-
-corps = {
-name = "XIII. Armeekorps"
-location = 2687
-
-regiment = {
-type = hq_brigade
-name = "XIII. Armeekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "26. Infanterie-Division"
-location = 2687
-
-regiment = {
-type = infantry_brigade
-name = "51. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "52. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = heavy_artillery_brigade
-name = "26. Artillerie brigade"
-historical_model = 1
-experience =10
-}
-}
-
-division = {
-name = "27. Infanterie-Division"
-location = 2687
-
-regiment = {
-type = infantry_brigade
-name = "53. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "54. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "27. Artillerie brigade"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "XVI. Armeekorps"
-location = 2618
-
-regiment = {
-type = hq_brigade
-name = "XVI. Armeekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "33. Infanterie-Division"
-location = 2618
-
-regiment = {
-type = infantry_brigade
-name = "65. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "66. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "33. Artillerie brigade"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "34. Infanterie-Division"
-location = 2618
-
-regiment = {
-type = infantry_brigade
-name = "67. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "68. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "34. Artillerie brigade"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "4. Hohere-Kavallerie-Kommando"
-location = 2436
-
-regiment = {
-type = hq_brigade
-name = "4. Kavallerie-Kommando"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "6. Kavallerie-Division"
-location = 2436
-
-regiment = {
-type = cavalry_brigade
-name = "28. Kavallerie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = cavalry_brigade
-name = "33. Kavallerie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = cavalry_brigade
-name = "45. Kavallerie Brigade"
-historical_model = 2
-experience = 10
-}
-}
-
-division = {
-name = "3. Kavallerie-Division"
-location = 2436
-
-regiment = {
-type = cavalry_brigade
-name = "16. Kavallerie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = cavalry_brigade
-name = "22. Kavallerie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = cavalry_brigade
-name = "25. Kavallerie Brigade"
-historical_model = 2
-experience = 10
-}
-}
-}
-}
-}
-
-
-theatre = {
-name = "Bitburg HQ"
-location = 2143
-
-regiment = {
-type = hq_brigade
-name = "3rd HQ Brigade"
-historical_model = 3
-experience = 3
-}
-
-army = {
-name = "2nd Armee"
-location = 1736
-
-regiment = {
-type = hq_brigade
-name = "8th HQ Brigade"
-historical_model = 3
-experience = 0
-}
-
-regiment = {
-type = engineer_brigade
-name = "2. Armee Engineers"
-historical_model = 0
-experience = 0
-}
-
-corps = {
-name = "VII. Armeekorps"
-location = 2027
-
-regiment = {
-type = hq_brigade
-name = "VII. Armeekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "13. Infanterie-Division"
-location = 2027
-
-regiment = {
-type = infantry_brigade
-name = "25. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "26. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = heavy_artillery_brigade
-name = "13. Artillerie Brigade"
-historical_model = 0
-experience = 10
-}
-}
-
-division = {
-name = "14. Infanterie-Division"
-location = 2027
-
-regiment = {
-type = infantry_brigade
-name = "27. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "28. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "14. Artillerie Brigade"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "X. Armeekorps"
-location = 1857
-
-regiment = {
-type = hq_brigade
-name = "X. Armeekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "19. Infanterie-Division"
-location = 1857
-
-regiment = {
-type = infantry_brigade
-name = "37. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "38. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = heavy_artillery_brigade
-name = "19. Artillerie brigade"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "20. Infanterie-Division"
-location = 1857
-
-regiment = {
-type = infantry_brigade
-name = "39. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "40. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "20. Artillerie Brigade"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "Gardekorps"
-location = 1919
-
-regiment = {
-type = hq_brigade
-name = "Gardekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "1. Garde-Infanterie-Division"
-location = 1919
-
-regiment = {
-type = waffen_brigade
-name = "1. Garde Infantrie Brigade"
-historical_model = 3
-experience = 20
-}
-
-regiment = {
-type = waffen_brigade
-name = "2. Garde Infantrie Brigade"
-historical_model = 3
-experience = 20
-}
-
-regiment = {
-type = artillery_brigade
-name = "1. Garde-Artillery Brigade"
-historical_model = 2
-experience = 20
-}
-}
-
-division = {
-name = "2. Garde-Infanterie-Division"
-location = 1919
-
-regiment = {
-type = infantry_brigade
-name = "3. Garde Infantrie Brigade"
-historical_model = 2
-experience = 20
-}
-
-regiment = {
-type = infantry_brigade
-name = "4. Garde Infantrie Brigade"
-historical_model = 2
-experience = 20
-}
-
-regiment = {
-type = artillery_brigade
-name = "2. Garde Artillerie Brigade"
-historical_model = 1
-experience = 20
-}
-}
-}
-
-corps = {
-name = "Garde-Reservekorps"
-location = 1740
-
-regiment = {
-type = hq_brigade
-name = "Garde-Reservekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "3. Garde Infanterie Division"
-location = 1740
-
-regiment = {
-type = waffen_brigade
-name = "5th Garde Brigade"
-historical_model = 2
-experience = 20
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "6. Infantrie Brigade"
-historical_model = 2
-experience = 15
-is_reserve = yes
-}
-
-regiment = {
-type = heavy_artillery_brigade
-name = "3. Garde Artillerie Brigade"
-historical_model = 1
-experience = 20
-}
-}
-
-division = {
-name = "1. Garde Reserve Division"
-location = 1740
-
-regiment = {
-type = waffen_brigade
-name = "1. Garde Reserve Brigade"
-historical_model = 2
-experience = 15
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "15. Reserve Infantrie Brigade"
-historical_model = 2
-experience = 10
-is_reserve = yes
-}
-
-regiment = {
-type = artillery_brigade
-name = "Garde Reserve Artillery"
-historical_model = 1
-experience = 15
-is_reserve = yes
-}
-}
-}
-}
-
-army = {
-name = "2. Armee Reserve"
-location = 1736
-
-regiment = {
-type = hq_brigade
-name = "9th HQ Brigade"
-historical_model = 3
-experience = 0
-}
-
-corps = {
-name = "X. Reservekorps"
-location = 1857
-
-regiment = {
-type = hq_brigade
-name = "X. Reservekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "2. Reserve-Garde-Division"
-location = 1857
-
-regiment = {
-type = infantry_brigade
-name = "26. Reserve Brigade"
-historical_model = 1
-experience = 10
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "38. Reserve Brigade"
-historical_model = 1
-experience = 10
-is_reserve = yes
-}
-}
-
-division = {
-name = "19. Reserve-Division"
-location = 1857
-
-regiment = {
-type = infantry_brigade
-name = "37. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "39. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-}
-
-corps = {
-name = "VII. Reservekorps"
-location = 2142
-
-regiment = {
-type = hq_brigade
-name = "VII. Reservekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "13. Reserve-Division"
-location = 2142
-
-regiment = {
-type = infantry_brigade
-name = "25. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "28. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "14. Reserve-Division"
-location = 2142
-
-regiment = {
-type = infantry_brigade
-name = "27. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "28. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "25. Mixed Landwehr Brigade"
-location = 1570
-
-regiment = {
-type = militia_brigade
-name = "25. Mixed Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "29. Mixed Landwehr Brigade"
-location = 1619
-
-regiment = {
-type = militia_brigade
-name = "29. Mixed Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-}
-}
-
-army = {
-name = "3rd Armee"
-location = 2143
-
-regiment = {
-type = hq_brigade
-name = "10th HQ Brigade"
-historical_model = 3
-experience = 0
-}
-
-regiment = {
-type = engineer_brigade
-name = "3. Armee Engineers"
-historical_model = 0
-experience = 0
-}
-
-corps = {
-name = "XI. Armeekorps"
-location = 2145
-
-regiment = {
-type = hq_brigade
-name = "XI. Armeekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "22. Infanterie-Division"
-location = 2145
-
-regiment = {
-type = infantry_brigade
-name = "43. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "44. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "22. Artillerie Brigade"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "38. Infanterie-Division"
-location = 2145
-
-regiment = {
-type = infantry_brigade
-name = "76. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "83. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "38. Artillerie Brigade"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "1. Hohere-Kavallerie-Kommando"
-location = 2143
-
-regiment = {
-type = hq_brigade
-name = "1. Kavallerie-Kommando"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "Garde-Kavallerie-Division"
-location = 2143
-
-regiment = {
-type = cavalry_brigade
-name = "1. Garde du Korps Kavallerie"
-historical_model = 3
-experience = 20
-}
-
-regiment = {
-type = cavalry_brigade
-name = "2. Garde Uhlan Kavallerie"
-historical_model = 3
-experience = 20
-}
-
-regiment = {
-type = cavalry_brigade
-name = "3. Garde Dragoon Kavallerie"
-historical_model = 3
-experience = 15
-}
-}
-
-division = {
-name = "5. Kavallerie-Division"
-location = 2143
-
-regiment = {
-type = cavalry_brigade
-name = "9. Kavallerie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = cavalry_brigade
-name = "10. Kavallerie Brigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = cavalry_brigade
-name = "12. Kavallerie Brigade"
-historical_model = 2
-experience = 10
-}
-}
-}
-
-corps = {
-name = "XII. Armeekorps"
-location = 2377
-
-regiment = {
-type = hq_brigade
-name = "XII. Armeekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "23. Infanterie-Division"
-location = 2377
-
-regiment = {
-type = infantry_brigade
-name = "45. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "46. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = heavy_artillery_brigade
-name = "23. Artillerie brigade"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "32. Infanterie-Division"
-location = 2377
-
-regiment = {
-type = infantry_brigade
-name = "63. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "64. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "32. Artillerie Brigade"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "XIX. Armeekorps"
-location = 2377
-
-regiment = {
-type = hq_brigade
-name = "XIX.  Armeekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "24. Infanterie-Division"
-location = 2377
-
-regiment = {
-type = infantry_brigade
-name = "47. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "48. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "24. Artillerie Brigade"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "40. Infanterie-Division"
-location = 2377
-
-regiment = {
-type = infantry_brigade
-name = "88. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "89. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = artillery_brigade
-name = "40. Artillerie Brigade"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "XII. Reservekorps"
-location = 2377
-
-regiment = {
-type = hq_brigade
-name = "XII.  Reservekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "23. Reserve-Division"
-location = 2377
-
-regiment = {
-type = infantry_brigade
-name = "45. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "46. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "24. Reserve-Division"
-location = 2377
-
-regiment = {
-type = infantry_brigade
-name = "47. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "48. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "47. Mixed Landwehr Brigade"
-location = 2377
-
-regiment = {
-type = militia_brigade
-name = "47. Mixed Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-}
-}
-
-army = {
-name = "Armee Nord"
-location = 1737
-
-regiment = {
-type = hq_brigade
-name = "18th HQ Brigade"
-historical_model = 3
-experience = 0
-}
-
-corps = {
-name = "IX. Reservekorps"
-location = 1737
-
-regiment = {
-type = hq_brigade
-name = "IX. Reservekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "17. Reserve-Division"
-location = 1737
-
-regiment = {
-type = infantry_brigade
-name = "81. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "33. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "18. Reserve-Division"
-location = 1737
-
-regiment = {
-type = infantry_brigade
-name = "35. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "36. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-}
-
-corps = {
-name = "1. Hohere Landwehr-Kommandeur"
-location = 1737
-
-regiment = {
-type = hq_brigade
-name = "1. Landwehr-Kommandeur"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "33. Landwehr Brigade"
-location = 1679
-
-regiment = {
-type = militia_brigade
-name = "33. Landwehr Mixed Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "34. Landwehr Mixed Brigade"
-location = 1622
-
-regiment = {
-type = militia_brigade
-name = "34. Landwehr Mixed Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "37. Landwehr Mixed Brigade"
-location = 1737
-
-regiment = {
-type = militia_brigade
-name = "37. Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "38. Landwehr Mixed Brigade"
-location = 1572
-
-regiment = {
-type = militia_brigade
-name = "38. Landwehr Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-navy = {
-name = "3. Cruiser schwadron"
-location = 1570
-base = 1570
-
-ship = { type = light_cruiser name = "SMS Danzig" historical_model = 0 experience = 15 }
-ship = { type = light_cruiser name = "SMS Stuttgart" historical_model = 0 experience = 15 }
-ship = { type = protected_cruiser name = "SMS Cormoran" historical_model = 1 experience = 15 }
-ship = { type = protected_cruiser name = "SMS Geier" historical_model = 1 experience = 15 }
-ship = { type = protected_cruiser name = "SMS Hela" historical_model = 2 experience = 15 }
-ship = { type = light_cruiser name = "SMS Frauenlob" historical_model = 0 experience = 15 }
-
-
-}
-
- 
-navy = {
-name = "Cruiser schwadron Weser"
-location = 1570
-base = 1570
- 	
-ship = { type = light_cruiser name = "SMS Berlin" historical_model = 0 experience = 15 }
-ship = { type = light_cruiser name = "SMS Ariadne" historical_model = 0 experience = 15 }
-ship = { type = light_cruiser name = "SMS Niobe" historical_model = 0 experience = 15 }
-
-
- 	
-ship = {
-type = destroyer
-name = "6. Zerstörergeschwader"
-historical_model = 0
-experience = 15
-}
-
-}
-
- 
-navy = {
-name = "Cruiser schwadron Elbe"
-location = 1570
-base = 1570
- 	
-ship = { type = light_cruiser name = "SMS Nymphe" historical_model = 0 experience = 15 }
-ship = { type = light_cruiser name = "SMS Medusa" historical_model = 0 experience = 15 }
-
- 	
-ship = {
-type = destroyer
-name = "7. Zerstörergeschwader"
-historical_model = 4
-experience = 15
-}
-
-}
-
- 
-navy = {
-name = "Flottenflaggschiff"
-location = 1570
-base = 1570
- 	
-ship = { type = dreadnaught name = "SMS Friedrich der Grosse" historical_model = 2 experience = 15 }
-
-
-}
-
- 
-navy = {
-name = "1. Schlachtschwadron"
-location = 1570
-base = 1570
- 	
-ship = { type = dreadnaught name = "SMS Nassau" historical_model = 0 experience = 15 }
-ship = { type = dreadnaught name = "SMS Westfalen" historical_model = 0 experience = 15 }
-ship = { type = dreadnaught name = "SMS Rheinland" historical_model = 0 experience = 15 }
-ship = { type = dreadnaught name = "SMS Posen" historical_model = 0 experience = 15 }
-ship = { type = dreadnaught name = "SMS Helgoland" historical_model = 1 experience = 15 }
-ship = { type = dreadnaught name = "SMS Ostfriesland" historical_model = 1 experience = 15 }
-ship = { type = dreadnaught name = "SMS Thüringen" historical_model = 1 experience = 15 }
-ship = { type = dreadnaught name = "SMS Oldenburg" historical_model = 1 experience = 15 }
-
-
-}
-
- 
-navy = {
-name = "2. Schlachtschwadron"
-location = 1570
-base = 1570
- 	
-ship = { type = battleship name = "SMS Deutschland" historical_model = 12 experience = 15 }
-ship = { type = battleship name = "SMS Hessen" historical_model = 10 experience = 15 }
-ship = { type = battleship name = "SMS Hannover" historical_model = 12 experience = 15 }
-ship = { type = battleship name = "SMS Schlesien" historical_model = 12 experience = 15 }
-ship = { type = battleship name = "SMS Schleswig-Holstein" historical_model = 12 experience = 15 }
-ship = { type = battleship name = "SMS Braunschweig" historical_model = 10 experience = 15 }
-ship = { type = battleship name = "SMS Elsaß" historical_model = 10 experience = 15 }
-ship = { type = battleship name = "SMS Lothringen" historical_model = 10 experience = 15 }
-ship = { type = battleship name = "SMS Pommern" historical_model = 12 experience = 15 }
-
-
-}
-
- 
-navy = {
-name = "3. Schlachtschwadron"
-location = 1570
-base = 1570
- 	
-ship = { type = dreadnaught name = "SMS Kaiser" historical_model = 2 experience = 15 }
-ship = { type = dreadnaught name = "SMS Kaiserin" historical_model = 2 experience = 15 }
-ship = { type = dreadnaught name = "SMS König Albert" historical_model = 2 experience = 15 }
-ship = { type = dreadnaught name = "SMS Prinzregent Luitpold" historical_model = 2 experience = 15 }
-
-
-}
-
- 
-navy = {
-name = "4. Schlachtschwadron"
-location = 1570
-base = 1570
- 	
-ship = { type = battleship name = "SMS Wittelsbach" historical_model = 9 experience = 15 }
-ship = { type = battleship name = "SMS Wettin" historical_model = 9 experience = 15 }
-ship = { type = battleship name = "SMS Zähringen" historical_model = 9 experience = 15 }
-ship = { type = battleship name = "SMS Schwaben" historical_model = 9 experience = 15 }
-ship = { type = battleship name = "SMS Mecklenburg" historical_model = 9 experience = 15 }
-
-
-}
-
- 
-navy = {
-name = "5. Schlachtschwadron"
-location = 1570
-base = 1570 
- 
-ship = { type = battleship name = "SMS Kaiser Friedrich III" historical_model = 7 experience = 15 }
-ship = { type = battleship name = "SMS Kaiser Wilhelm II" historical_model = 7 experience = 15 }
-ship = { type = battleship name = "SMS Kaiser Wilhelm der Große" historical_model = 7 experience = 15 }
-ship = { type = battleship name = "SMS Kaiser Karl der Große" historical_model = 7 experience = 15 }
-ship = { type = battleship name = "SMS Kaiser Barbarossa" historical_model = 7 experience = 15 }
-ship = { type = battleship name = "SMS Kurfürst Friedrich Wilhelm" historical_model = 5 experience = 15 }
-ship = { type = battleship name = "SMS Wörth" historical_model = 5 experience = 15 }
-ship = { type = battleship name = "SMS Kaiser" historical_model = 0 experience = 15 }
-ship = { type = battleship name = "SMS Württemberg" historical_model = 1 experience = 15 }
-
-
-}
-
- 
-navy = {
-name = "U-bootdivision"
-location = 1570
-base = 1570
- 	
-ship = {
-type = coastal_submarine
-name = "1. Unterseebootsflottille"
-historical_model = 4
-experience = 15
-}
-
- 	
-ship = {
-type = coastal_submarine
-name = "2. Unterseebootsflottille"
-historical_model = 4
-experience = 15
-}
-
- 	
-ship = {
-type = coastal_submarine
-name = "3. Unterseebootsflottille"
-historical_model = 5
-experience = 15
-} 	
-
-ship = {
-type = submarine
-name = "4. Unterseebootsflottille"
-historical_model = 1
-experience = 15
-}
-ship = {
-type = submarine
-name = "5. Unterseebootsflottille"
-historical_model = 2
-experience = 15
-}
-
-}
-
- 
-navy = {
-name = "Transportdivision"
-location = 1570
-base = 1570
- 	
-ship = {
-type = transport_ship
-name = "1. Truppentransporterflottille"
-historical_model = 0
-experience = 15
-}
-
- 	
-ship = {
-type = transport_ship
-name = "2. Truppentransporterflottille"
-historical_model = 0
-experience = 15
-}
-
- 	
-ship = {
-type = transport_ship
-name = "3. Truppentransporterflottille"
-historical_model = 0
-experience = 15
-}
-ship = {
-type = transport_ship
-name = "4. Truppentransporterflottille"
-historical_model = 0
-experience = 15
-}
-ship = {
-type = transport_ship
-name = "5. Truppentransporterflottille"
-historical_model = 0
-experience = 15
-}
-ship = {
-type = transport_ship
-name = "6. Truppentransporterflottille"
-historical_model = 0
-experience = 15
-}
-
-}
-
- 
-navy = {
-name = "SMS Dresden"
-location = 1570
-base = 1570
- 	
-ship = { type = light_cruiser name = "SMS Dresden" historical_model = 0 experience = 15 }
-
-
-}
-
- 
-navy = {
-name = "1. Cruiser schwadron"
-location = 1570
-base = 1570
- 	
-ship = { type = battlecruiser name = "SMS Seydlitz" historical_model = 2 experience = 15 }
-ship = { type = battlecruiser name = "SMS Von der Tann" historical_model = 0 experience = 15 }
-ship = { type = battlecruiser name = "SMS Moltke" historical_model = 1 experience = 15 }
-ship = { type = heavy_cruiser name = "SMS Blücher" historical_model = 9 experience = 15 }
-
-
-}
-
- 
-navy = {
-name = "2. Crusier schwadron"
-location = 1570
-base = 1570
-ship = { type = light_cruiser name = "SMS Straßburg" historical_model = 2 experience = 15 }
-ship = { type = light_cruiser name = "SMS Stralsund" historical_model = 2 experience = 15 }
-ship = { type = light_cruiser name = "SMS Kolberg" historical_model = 1 experience = 15 }
-ship = { type = light_cruiser name = "SMS Mainz" historical_model = 1 experience = 15 }
-ship = { type = light_cruiser name = "SMS Köln" historical_model = 1 experience = 15 }
-
-
- 	
-ship = {
-type = destroyer
-name = "4. Zerstörergeschwader"
-historical_model = 4
-experience = 15
-}
-
- 	
-ship = {
-type = destroyer
-name = "5. Zerstörergeschwader"
-historical_model = 5
-experience = 15
-}
-
-}
-
- 
-navy = {
-name = "6. Schlachtschwadron"
-location = 1572
-base = 1572
- 	
-ship = { type = heavy_cruiser name = "SMS Siegfried" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "SMS Beowulf" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "SMS Frithjof" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "SMS Heimdall" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "SMS Hildebrand" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "SMS Hagen" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "SMS Odin" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "SMS Ägir" historical_model = 0 experience = 15 }
-
-
- 	
-ship = {
-type = destroyer
-name = "3. Zerstörergeschwader"
-historical_model = 6
-experience = 15
-}
-
- 	
-ship = {
-type = destroyer
-name = "8. Zerstörergeschwader"
-historical_model = 6
-experience = 15
-}
-
- 	
-ship = {
-type = destroyer
-name = "9. Zerstörergeschwader"
-historical_model = 7
-experience = 15
-}
-
-}
-
- 
-navy = {
-name = "7. Schlachtschwadron"
-location = 1572
-base = 1572
-ship = { type = battleship name = "SMS Preußen" historical_model = 10 experience = 15 }
-
-ship = { type = light_cruiser name = "SMS Stettin" historical_model = 0 experience = 15 }
-ship = { type = light_cruiser name = "SMS Bremen" historical_model = 0 experience = 15 }
-ship = { type = light_cruiser name = "SMS Hamburg" historical_model = 0 experience = 15 }
-ship = { type = light_cruiser name = "SMS Lübeck" historical_model = 0 experience = 15 }
-ship = { type = light_cruiser name = "SMS München" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "SMS Fürst Bismarck" historical_model = 3 experience = 15 }
-ship = { type = heavy_cruiser name = "SMS Freya" historical_model = 2 experience = 15 }
-ship = { type = heavy_cruiser name = "SMS Kaiserin Augusta" historical_model = 0 experience = 15 }
-ship = { type = light_cruiser name = "SMS Gefion" historical_model = 0 experience = 15 }
-ship = { type = light_cruiser name = "SMS Arcona" historical_model = 0 experience = 15 }
-
- 	
-ship = {
-type = destroyer
-name = "10. Zerstörergeschwader"
-historical_model = 8
-experience = 15
-}
-
- 	
-ship = {
-type = destroyer
-name = "11. Zerstörergeschwader"
-historical_model = 8
-experience = 15
-}
-
- 	
-ship = {
-type = destroyer
-name = "12. Zerstörergeschwader"
-historical_model = 8
-experience = 15
-}
-
- 	
-ship = {
-type = destroyer
-name = "13. Zerstörergeschwader"
-historical_model = 9
-experience = 15
-}
-
- 	
-ship = {
-type = destroyer
-name = "14. Zerstörergeschwader"
-historical_model = 9
-experience = 15
-}
-
- 	
-ship = {
-type = destroyer
-name = "15. Zerstörergeschwader"
-historical_model = 9
-experience = 15
-}
-
- 	
-ship = {
-type = destroyer
-name = "16. Zerstörergeschwader"
-historical_model = 9
-experience = 15
-}
-
- 	
-ship = {
-type = destroyer
-name = "17. Zerstörergeschwader"
-historical_model = 10
-experience = 15
-}
-
-}
-
- 
-navy = {
-name = "4. Cruiser sschwadron"
-location = 1572
-base = 1572
- 	
-ship = { type = heavy_cruiser name = "SMS Roon" historical_model = 7 experience = 15 }
-ship = { type = heavy_cruiser name = "SMS Yorck" historical_model = 7 experience = 15 }
-ship = { type = heavy_cruiser name = "SMS Prinz Adalbert" historical_model = 5 experience = 15 }
-ship = { type = heavy_cruiser name = "SMS Prinz Heinrich" historical_model = 4 experience = 15 }
-
-
-}
-
- 
-navy = {
-name = "5. Cruiser schwadron"
-location = 1740
-base = 1740
- 	
-ship = { type = heavy_cruiser name = "SMS Hansa" historical_model = 2 experience = 15 }
-ship = { type = heavy_cruiser name = "SMS Victoria Luise" historical_model = 2 experience = 15 }
-ship = { type = heavy_cruiser name = "SMS Hertha" historical_model = 2 experience = 15 }
-ship = { type = heavy_cruiser name = "SMS Vineta" historical_model = 2 experience = 15 }
-
-
-}
-
- 
-navy = {
-name = "Cruiser gruppe Ostsee"
-location = 1740
-base = 1740
- 	
-ship = { type = heavy_cruiser name = "SMS Friedrich Carl" historical_model = 5 experience = 15 }
-ship = { type = light_cruiser name = "SMS Augsburg" historical_model = 1 experience = 15 }
-ship = { type = light_cruiser name = "SMS Magdeburg" historical_model = 2 experience = 15 }
-ship = { type = light_cruiser name = "SMS Amazone" historical_model = 0 experience = 15 }
-ship = { type = light_cruiser name = "SMS Undine" historical_model = 0 experience = 15 }
-ship = { type = light_cruiser name = "SMS Thetis" historical_model = 0 experience = 15 }
-ship = { type = light_cruiser name = "SMS Gazelle" historical_model = 0 experience = 15 }
-
-
- 	
-ship = {
-type = destroyer
-name = "1. Zerstörergeschwader"
-historical_model = 10
-experience = 15
-}
-
- 	
-ship = {
-type = destroyer
-name = "2. Zerstörergeschwader"
-historical_model = 10
-experience = 15
-}
-
-}
-
- 
-air = {
-name = "Fliegertruppe - West"
-location = 2374
-base = 2374
- 	
-wing = {
-type = scout
-name = "Feldflieger-Abteilung 1"
-historical_model = 0
-experience = 15
-} 	
-wing = {
-type = scout
-name = "Feldflieger-Abteilung 2"
-historical_model = 0
-experience = 15
-}
-
-}
-
- 
-air = {
-name = "Luftschifftruppe"
-location = 2374
-base = 2374
- 	
-wing = {
-type = airship
-name = "Luftschiff-Abteilung 1"
-historical_model = 0
-experience = 15
-}
-
-
-}
-
- 
-air = {
-name = "Seefliegertruppe"
-location = 1572
-base = 1572
- 	
-wing = {
-type = cag
-name = "I. Seeflieger-Abteilung"
-historical_model = 0
-experience = 15
-}
-
-}
-}
-}
-
-army = {
-name = "4th Armee"
-location = 2205
- 	
-regiment = {
-type = hq_brigade
-name = "11th HQ Brigade"
-historical_model = 3
-experience = 0
-}
-
-regiment = {
-type = engineer_brigade
-name = "4. Armee Engineers"
-historical_model = 0
-experience = 0
-}
-
-corps = {
-name = "VI. Armeekorps"
-location = 2205
- 	
-regiment = {
-type = hq_brigade
-name = "VI. Armeekorps HQ"
-historical_model = 3
-experience = 15
-}
- 
-division = {
-name = "11. Infanterie-Division"
-location = 2205
- 	
-regiment = {
-type = infantry_brigade
-name = "21. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
- 	
-regiment = {
-type = infantry_brigade
-name = "22. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
- 	
-regiment = {
-type = heavy_artillery_brigade
-name = "11. Artillerie brigade"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "12. Infanterie-Division"
-location = 2205
- 	
-regiment = {
-type = infantry_brigade
-name = "34. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
- 	
-regiment = {
-type = infantry_brigade
-name = "78. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
- 	
-regiment = {
-type = artillery_brigade
-name = "12. Artillerie Brigade"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "VIII. Armeekorps"
-location = 2374
- 	
-regiment = {
-type = hq_brigade
-name = "VIII. Armeekorps HQ"
-historical_model = 3
-experience = 15
-}
- 
-division = {
-name = "15. Infanterie-Division"
-location = 2374
- 	
-regiment = {
-type = infantry_brigade
-name = "29. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
- 	
-regiment = {
-type = infantry_brigade
-name = "80. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
- 	
-regiment = {
-type = heavy_artillery_brigade
-name = "15. Artillerie Brigade"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "16. Infanterie-Division"
-location = 2374
- 	
-regiment = {
-type = infantry_brigade
-name = "30. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
- 	
-regiment = {
-type = infantry_brigade
-name = "31. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
- 	
-regiment = {
-type = artillery_brigade
-name = "16. Artillerie Brigade"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "XVIII. Armeekorps"
-location = 2432
- 	
-regiment = {
-type = hq_brigade
-name = "XVIII. Armeekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "21. Infanterie-Division"
-location = 2432
- 	
-regiment = {
-type = infantry_brigade
-name = "41. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
- 	
-regiment = {
-type = infantry_brigade
-name = "42. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
- 	
-regiment = {
-type = heavy_artillery_brigade
-name = "21. Artillerie brigade"
-historical_model = 1
-experience = 10
-}
-}
- 
-division = {
-name = "25. Infanterie-Division"
-location = 2432
- 	
-regiment = {
-type = infantry_brigade
-name = "49. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
- 	
-regiment = {
-type = infantry_brigade
-name = "50. Infanteriebrigade"
-historical_model = 2
-experience = 10
-}
- 	
-regiment = {
-type = artillery_brigade
-name = "25. Artillerie Brigade"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "XVIII. Reservekorps"
-location = 2205
- 	
-regiment = {
-type = hq_brigade
-name = "XVIII. Reservekorps HQ"
-historical_model = 3
-experience = 15
-}
- 
-division = {
-name = "21. Reserve-Division"
-location = 2205
- 	
-regiment = {
-type = infantry_brigade
-name = "41. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
- 	
-regiment = {
-type = infantry_brigade
-name = "42. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "25. Reserve-Division"
-location = 2205
- 	
-regiment = {
-type = infantry_brigade
-name = "49. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
- 	
-regiment = {
-type = infantry_brigade
-name = "50. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-}
-
-corps = {
-name = "VIII. Reservekorps"
-location = 2372
- 	
-regiment = {
-type = hq_brigade
-name = "VIII. Reservekorps HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "15. Reserve-Division"
-location = 2372
- 	
-regiment = {
-type = infantry_brigade
-name = "30. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
- 	
-regiment = {
-type = infantry_brigade
-name = "32. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "16. Reserve-Division"
-location = 2372
- 	
-regiment = {
-type = infantry_brigade
-name = "29. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
- 	
-regiment = {
-type = infantry_brigade
-name = "31. Reserve Brigade"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-}
-}
-}
-
-theatre = {
-name = "Dar es Salaam HQ"
-location = 10130
-
-regiment = {
-type = hq_brigade
-name = "Dar es Salaam HQ"
-historical_model = 3
-experience = 10
-}
-
-division = {
-name = "Kamerun Garrison"
-location = 9986
-
-regiment = {
-type = militia_brigade
-name = "Kamerun Garrison"
-historical_model = 1
-experience = 10
-is_reserve = yes
-}
-}
-
-division=
-{
-name="Togoland Para military"
-location=9955
-
-regiment=
-{
-	name="Togoland Para military"
-	type = police_brigade
-	experience=19
-	is_reserve=yes
-	historical_model = 1
-}
-}
-
-corps = {
-name = "Kaiserliche Schutztruppe"
-location = 10130
-leader = 855031
-
-regiment = {
-type = hq_brigade
-name = "Kaiserliche Schutztruppe Ostafrika HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "Ostafrikanische Schutztruppe 1-10"
-location = 10130
-
-regiment = {
-type = militia_brigade
-name = "Ostafrikanische Schutztruppe 1-10"
-historical_model = 1
-experience = 15
-is_reserve = yes
-}
-}
-
-division = {
-name = "Ostafrikanische Schutztruppe 11-14"
-location = 10076
-
-regiment = {
-type = cavalry_brigade
-name = "Ostafrikanische Schutztruppe 11-14"
-historical_model = 1
-experience = 15
-is_reserve = yes
-}
-}
-
-division = {
-name = "Ostafrikanische Askari"
-location = 10089
-
-regiment = {
-type = militia_brigade
-name = "Ostafrikanische Askari"
-historical_model = 0
-experience = 15
-is_reserve = yes
-}
-}
-}
-
-corps = {
-name = "DSWA HQ"
-location = 10381
-
-regiment = {
-type = hq_brigade
-name = "Deutsche Sur Oesteafrika HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "1. DSWA Regiment"
-location = 7997
-
-regiment = {
-type = cavalry_brigade
-name = "1. DSWA Regiment"
-historical_model = 1
-experience = 15
-}
-}
-
-division = {
-name = "2. DSWA Camel Regiment"
-location = 7997
-
-regiment = {
-type = cavalry_brigade
-name = "2. DSWA Camel Regiment"
-historical_model = 1
-experience = 15
-}
-}
-
-division = {
-name = "German Colonists"
-location = 10381
-
-regiment = {
-type = militia_brigade
-name = "German Colonists"
-historical_model = 1
-experience = 10
-is_reserve = yes
-}
-}
-}
-
-navy = {
-name = "SMS Karlsruhe"
-location = 9986
-base = 9986
- 	
-ship = { type = light_cruiser name = "SMS Karlsruhe" historical_model = 3 experience = 15 }
-
-}
- 
-navy = {
-name = "SMS Königsberg"
-location = 10130
-base = 10130
- 	
-ship = { type = light_cruiser name = "SMS Königsberg" historical_model = 0 experience = 15 }
-
-}
-}
-
-theatre = {
-name = "Qingdao HQ"
-location = 6445
- 	
-regiment = {
-type = hq_brigade
-name = "5th HQ Brigade"
-historical_model = 3
-experience = 10
-}
-
-corps = {
-name = "Schutzgebiet Kiautschou"
-location = 5246
- 	
-regiment = {
-type = hq_brigade
-name = "Schutzgebiet Kiautschou HQ"
-historical_model = 3
-experience = 15
-}
-
-division = {
-name = "Schutzgebiet Kiautschou"
-location = 5246
- 	
-regiment = {
-type = militia_brigade
-name = "Schutzgebiet Kiautschou"
-historical_model = 0
-experience = 10
-is_reserve = yes
-}
-}
- 
-navy = {
-name = "Ostasienschwadron"
-location = 5246
-base = 5246
- 	
-ship = { type = heavy_cruiser name = "SMS Scharnhorst" historical_model = 8 experience = 15 }
-ship = { type = heavy_cruiser name = "SMS Gneisenau" historical_model = 8 experience = 15 }
-ship = { type = light_cruiser name = "SMS Nürnberg" historical_model = 0 experience = 15 }
-ship = { type = light_cruiser name = "SMS Leipzig" historical_model = 0 experience = 15 }
-ship = { type = light_cruiser name = "SMS Emden" historical_model = 0 experience = 15 }
-
- 	
-ship = {
-type = destroyer
-name = "18. Zerstörergeschwader"
-historical_model = 2
-experience = 15
-} 
-}
-}
-}
-
-military_construction = {
-country = GER
-dreadnaught = {
-name = "SMS Großer Kurfürst"
-historical_model = 3}
-cost = 4
-progress = 0
-duration = 254}
-
-military_construction = {
-country = GER
-dreadnaught = {
-name = "SMS König"
-historical_model = 3}
-cost = 4
-progress = 0
-duration = 374}
-
-military_construction = {
-country = GER
-dreadnaught = {
-name = "SMS Markgraf"
-historical_model = 3}
-cost = 4
-progress = 0
-duration = 374}
-
-military_construction = {
-country = GER
-dreadnaught = {
-name = "SMS Kronprinz"
-historical_model = 3}
-cost = 4
-progress = 0
-duration = 404}
-
-military_construction = {
-country = GER
-battlecruiser = {
-name = "SMS Derfflinger"
-historical_model = 3}
-cost = 4
-progress = 0
-duration = 270}
-
-military_construction = {
-country = GER
-light_cruiser = {
-name = "SMS Rostock"
-historical_model = 3}
-cost = 2
-progress = 0
-duration = 34}
-
-military_construction = {
-country = GER
-light_cruiser = {
-name = "SMS Regensberg"
-historical_model = 3}
-cost = 2
-progress = 0
-duration = 343}
-
-military_construction = {
-country = GER
-light_cruiser = {
-name = "SMS Graudenz"
-historical_model = 3}
-cost = 2
-progress = 0
-duration = 219}
-
-military_construction = {
-country = GER
-destroyer = {
-name = "19. Zerstörergeschwader"
-historical_model = 11}
-cost = 2
-progress = 0
-duration = 50}
-
-
-military_construction = {
-country = GER
-submarine = {
-name = "6. Unterseebootsflottille"
-historical_model = 2}
-cost = 2
-progress = 0
-duration = 90}

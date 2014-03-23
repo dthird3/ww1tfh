@@ -1,23 +1,31 @@
-corps = {
-name = "Ejercito del Salvador"
-location = 9699
-regiment = { type = hq_brigade name = "Ejercito del Salvador HQ" historical_model = 0 }
+ corps = {
+	location = 9699 # El Salvador
+	name = "Ejercito del Salvador"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Ejercito del Salvador HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 9699  # El Salvador
+		is_reserve = no
+		name = "I Brigada de Infantería"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 0 
+			name = "I Brigada de Infantería"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 0 
+			name = "I Brigada de Infantería"
+			historical_model = 2 
+			}
+		}
+	}
 
-division = {
-name = "I Brigada de Infantería"
-location = 9699
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 0
-name = "I Brigada de Infantería"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 0
-name = "I Brigada de Infantería"
-historical_model = 2}
-}
-}

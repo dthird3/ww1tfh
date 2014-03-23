@@ -1,41 +1,51 @@
-corps = {
-name = "Ejercito de Cuba"
-location = 7576
-regiment = { type = hq_brigade name = "Ejercito de Cuba HQ" historical_model = 0 }
+ corps = {
+	location = 7576 # La Habana
+	name = "Ejercito de Cuba"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Ejercito de Cuba HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 7576  # La Habana
+		is_reserve = yes
+		name = "1a Brigada de Ejercito"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "1a Brigada de Ejercito1"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "1a Brigada de Ejercito2"
+			historical_model = 2 
+			}
+		}
+	
+	 division = {
+		location = 7576  # La Habana
+		is_reserve = no
+		name = "1a Brigada de Caballería 'Floridita'"
+		
+		 regiment = {
+			type = cavalry_brigade 
+			experience = 5 
+			name = "1a Brigada de Caballería 'Floridita'1"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = cavalry_brigade 
+			experience = 5 
+			name = "1a Brigada de Caballería 'Floridita'2"
+			historical_model = 2 
+			}
+		}
+	}
 
-division = {
-name = "1a Brigada de Ejercito"
-location = 7576
-is_reserve = yes
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "1a Brigada de Ejercito1"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "1a Brigada de Ejercito2"
-historical_model = 2}
-}
-
-division = {
-name = "1a Brigada de Caballería 'Floridita'"
-location = 7576
-is_reserve = no
-
-regiment = {
-type = cavalry_brigade
-experience = 5
-name = "1a Brigada de Caballería 'Floridita'1"
-historical_model = 2}
-
-regiment = {
-type = cavalry_brigade
-experience = 5
-name = "1a Brigada de Caballería 'Floridita'2"
-historical_model = 2}
-}
-}

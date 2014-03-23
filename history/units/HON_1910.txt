@@ -1,41 +1,51 @@
-corps = {
-name = "1a Divisi贸n"
-location = 9687
-regiment = { type = hq_brigade name = "1a Divisi贸n HQ" historical_model = 0 }
+ corps = {
+	location = 9687 # San Pedro Sula
+	name = "1a Divisi髇"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "1a Divisi髇 HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 9687  # San Pedro Sula
+		is_reserve = no
+		name = "1a Divisi髇"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "1a Divisi髇1"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "1a Divisi髇2"
+			historical_model = 2 
+			}
+		}
+	
+	 division = {
+		location = 9687  # San Pedro Sula
+		is_reserve = no
+		name = "2a Divisi髇"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "2a Divisi髇1"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "2a Divisi髇2"
+			historical_model = 2 
+			}
+		}
+	}
 
-division = {
-name = "1a Divisi贸n"
-location = 9687
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "1a Divisi贸n1"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "1a Divisi贸n2"
-historical_model = 2}
-}
-
-division = {
-name = "2a Divisi贸n"
-location = 9687
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "2a Divisi贸n1"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "2a Divisi贸n2"
-historical_model = 2}
-}
-}

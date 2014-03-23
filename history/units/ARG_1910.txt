@@ -1,143 +1,257 @@
-corps = {
-name = "1a División de Infantería"
-location = 10487
-regiment = { type = hq_brigade name = "1a División de Infantería HQ" historical_model = 0 }
+ corps = {
+	location = 10487 # Río Gallegos
+	name = "1a División de Infantería"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "1a División de Infantería HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 10487  # Río Gallegos
+		is_reserve = no
+		name = "1a División de Infantería"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "1a División de Infantería"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "1a División de Infantería"
+			historical_model = 2 
+			}
+		}
+	}
 
-division = {
-name = "1a División de Infantería"
-location = 10487
-is_reserve = no
+ corps = {
+	location = 7904 # La Plata
+	name = "2a División de Infantería"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "2a División de Infantería HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 7904  # La Plata
+		is_reserve = no
+		name = "2a División de Infantería"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "2a División de Infantería"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "2a División de Infantería"
+			historical_model = 2 
+			}
+		}
+	}
 
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "1a División de Infantería"
-historical_model = 2}
+ corps = {
+	location = 7899 # Buenos Aires
+	name = "3a División de Infantería"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "3a División de Infantería HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 7899  # Buenos Aires
+		is_reserve = no
+		name = "3a División de Infantería"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "3a División de Infantería"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "3a División de Infantería"
+			historical_model = 2 
+			}
+		}
+	}
 
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "1a División de Infantería"
-historical_model = 2}
-}
-}
+ corps = {
+	location = 7992 # Trelew
+	name = "4a División de Infantería"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "4a División de Infantería HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 7992  # Trelew
+		is_reserve = no
+		name = "4a División de Infantería"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "4a División de Infantería"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "4a División de Infantería"
+			historical_model = 2 
+			}
+		}
+	}
 
-corps = {
-name = "2a División de Infantería"
-location = 7904
-regiment = { type = hq_brigade name = "2a División de Infantería HQ" historical_model = 0 }
+ corps = {
+	location = 7992 # Trelew
+	name = "5a División de Infantería"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "5a División de Infantería HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 7992 # Trelew
+		name = "5a División de Infantería"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "5a División de Infantería"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "5a División de Infantería"
+			historical_model = 2 
+			}
+		}
+	}
 
-division = {
-name = "2a División de Infantería"
-location = 7904
-is_reserve = no
+ navy = {
+	location = 7899  # Buenos Aires
+	base = 7899 # Buenos Aires
+	name = "Armada Argentina"
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "ARA La Plata"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "ARA Los Andes"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "ARA Almirante Brown"
+		historical_model = 1 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "ARA Independencia"
+		historical_model = 4 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "ARA Libertad"
+		historical_model = 4 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "ARA Patagonia"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "ARA Veinticinco de Mayo"
+		historical_model = 1 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "ARA Nueve de Julio"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "ARA Buenos Aires"
+		historical_model = 3 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "ARA General Garibaldi"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "ARA General Belgrano"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "ARA General Pueyrredón"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "ARA General San Martín"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = transport_ship 
+		name = "1a Flotilla de Transporte"
+		historical_model = 0 
+		}
+	}
 
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "2a División de Infantería"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "2a División de Infantería"
-historical_model = 2}
-}
-}
-
-corps = {
-name = "3a División de Infantería"
-location = 7899
-regiment = { type = hq_brigade name = "3a División de Infantería HQ" historical_model = 0 }
-
-division = {
-name = "3a División de Infantería"
-location = 7899
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "3a División de Infantería"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "3a División de Infantería"
-historical_model = 2}
-}
-}
-
-corps = {
-name = "4a División de Infantería"
-location = 7992
-regiment = { type = hq_brigade name = "4a División de Infantería HQ" historical_model = 0 }
-
-division = {
-name = "4a División de Infantería"
-location = 7992
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "4a División de Infantería"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "4a División de Infantería"
-historical_model = 2}
-}
-}
-
-corps = {
-name = "5a División de Infantería"
-location = 7992
-regiment = { type = hq_brigade name = "5a División de Infantería HQ" historical_model = 0 }
-
-division = {
-name = "5a División de Infantería"
-location = 7992
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "5a División de Infantería"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "5a División de Infantería"
-historical_model = 2}
-}
-}
-
-navy = {
-name = "Armada Argentina"
-location = 7899
-base = 7899
-
-ship = { type = battleship name = "ARA La Plata" historical_model = 0 experience = 15 }
-ship = { type = battleship name = "ARA Los Andes" historical_model = 0 experience = 15 }
-ship = { type = battleship name = "ARA Almirante Brown" historical_model = 1 experience = 15 }
-ship = { type = battleship name = "ARA Independencia" historical_model = 4 experience = 15 }
-ship = { type = battleship name = "ARA Libertad" historical_model = 4 experience = 15 }
-ship = { type = protected_cruiser name = "ARA Patagonia" historical_model = 0 experience = 15 }
-ship = { type = protected_cruiser name = "ARA Veinticinco de Mayo" historical_model = 1 experience = 15 }
-ship = { type = protected_cruiser name = "ARA Nueve de Julio" historical_model = 2 experience = 15 }
-ship = { type = protected_cruiser name = "ARA Buenos Aires" historical_model = 3 experience = 15 }
-ship = { type = heavy_cruiser name = "ARA General Garibaldi" historical_model = 2 experience = 15 }
-ship = { type = heavy_cruiser name = "ARA General Belgrano" historical_model = 2 experience = 15 }
-ship = { type = heavy_cruiser name = "ARA General Pueyrredón" historical_model = 2 experience = 15 }
-ship = { type = heavy_cruiser name = "ARA General San Martín" historical_model = 2 experience = 15 }
-
-ship = {
-name = "1a Flotilla de Transporte"
-type = transport_ship
-historical_model = 0}
-}

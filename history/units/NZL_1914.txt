@@ -1,79 +1,113 @@
-corps = {
-name = "New Zealand Expeditionary Force"
-location = 8070
-regiment = { type = hq_brigade name = "New Zealand Expeditionary Force HQ" historical_model = 0 }
+ corps = {
+	location = 8070 # Wellington
+	name = "New Zealand Expeditionary Force"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "New Zealand Expeditionary Force HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 8070 # Wellington
+		name = "1st NZ Infantry Division"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "1/2nd New Zealand brigade"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "2/3rd New Zealand brigade"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 10 
+			name = "1st NZ Divisional Artillery"
+			historical_model = 0 
+			}
+		}
+	}
 
-division = {
-name = "1st NZ Infantry Division"
-location = 8070
+ corps = {
+	location = 8065 # Napier
+	name = "New Zealand Military Forces"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Northern Military District HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 8065 # Napier
+		name = "North Island Garrison"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "North Island Garrison"
+			historical_model = 1 
+			}
+		}
+	
+	 division = {
+		location = 10495 # Dunedin
+		name = "South Island Garrison"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "South Island Garrison"
+			historical_model = 1 
+			}
+		}
+	}
 
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "1/2nd New Zealand brigade"
-historical_model = 2}
+ navy = {
+	location = 8070  # Wellington
+	base = 8070 # Wellington
+	name = "Royal New Zealand Navy"
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "HMNZS Psyche"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "HMNZS Pyramus"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "HMNZS Philomel"
+		historical_model = 1 
+		}
+	}
 
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "2/3rd New Zealand brigade"
-historical_model = 2}
+ navy = {
+	location = 8070  # Wellington
+	base = 8070 # Wellington
+	name = "New Zealand Transport Fleet"
+	
+	 ship = {
+		type = transport_ship 
+		name = "1st Transport Flotilla"
+		historical_model = 0 
+		}
+	}
 
-regiment = {
-type = artillery_brigade
-experience = 10
-name = "1st NZ Divisional Artillery"
-historical_model = 0}
-}
-}
-
-corps = {
-name = "New Zealand Military Forces"
-location = 8065
-regiment = { type = hq_brigade name = "Northern Military District HQ" historical_model = 0 }
-
-division = {
-name = "North Island Garrison"
-location = 8065
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "North Island Garrison"
-historical_model = 1
-is_reserve = yes}
-}
-
-division = {
-name = "South Island Garrison"
-location = 10495
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "South Island Garrison"
-historical_model = 1
-is_reserve = yes}
-}
-}
-
-navy = {
-name = "Royal New Zealand Navy"
-location = 8070
-base = 8070
-
-ship = { type = protected_cruiser name = "HMNZS Psyche" historical_model = 6 experience = 15 }
-ship = { type = protected_cruiser name = "HMNZS Pyramus" historical_model = 6 experience = 15 }
-ship = { type = protected_cruiser name = "HMNZS Philomel" historical_model = 1 experience = 15 }
-}
-
-navy = {
-name = "New Zealand Transport Fleet"
-location = 8070
-base = 8070
-
-ship = {
-name = "1st Transport Flotilla"
-type = transport_ship
-historical_model = 0}
-}

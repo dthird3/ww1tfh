@@ -1,169 +1,170 @@
-theatre = {
-name = "Union Defense Force"
-location = 8054
+ theatre = {
+	location = 8054 # Cape Town
+	name = "Union Defense Force"
+	
+	 regiment = {
+		type = hq_brigade 
+		experience = 5 
+		name = "1st HQ Brigade"
+		historical_model = 1 
+		}
+	
+	 navy = {
+		location = 8054  # Cape Town
+		base = 8054 # Cape Town
+		name = "1st SAN Transport Flotilla"
+		
+		 ship = {
+			type = destroyer 
+			experience = 5 
+			name = "1st Escort Flotilla"
+			historical_model = 0 
+			}
+		
+		 ship = {
+			type = transport_ship 
+			experience = 5 
+			name = "1st SAN Transport Flotilla"
+			historical_model = 0 
+			}
+		}
+	
+	 corps = {
+		location = 8054 # Cape Town
+		name = "South African Permanent Force"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 0 
+			name = "South African Permanent Force HQ"
+			historical_model = 1 
+			}
+		
+		 division = {
+			location = 8054 # Cape Town
+			name = "1/2nd Mounted Rifle Regiments"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 5 
+				name = "1/2nd Mounted Rifle Regiments"
+				historical_model = 1 
+				}
+			}
+		
+		 division = {
+			location = 8054 # Cape Town
+			name = "3/4th Mounted Rifle Regiments"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 5 
+				name = "3/4th Mounted Rifle Regiments"
+				historical_model = 1 
+				}
+			}
+		
+		 division = {
+			location = 8054 # Cape Town
+			name = "5th Mounted Rifle & D.M.R. Regiments"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 5 
+				name = "5th Mounted Rifle & D.M.R. Regiments"
+				historical_model = 1 
+				}
+			}
+		}
+	
+	 corps = {
+		location = 7978 # Johannesburg
+		name = "South African Active Citizen Force"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 5 
+			name = "South African Active Citizen Force HQ"
+			historical_model = 1 
+			}
+		
+		 division = {
+			location = 8054 # Cape Town
+			name = "3/9th P.A. Guards Garrisons"
+			
+			 regiment = {
+				type = garrison_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "3/9th P.A. Guards Garrisons"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 8005 # East London
+			name = "Eastern Rifles & Kaffrarian Brigades"
+			
+			 regiment = {
+				type = militia_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "Eastern Rifles & Kaffrarian Brigades"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 7965 # Durban
+			name = "Durban Light & Duke of Edinburgh Rifles"
+			
+			 regiment = {
+				type = militia_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "Durban Light & Duke of Edinburgh Rifles"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 8054 # Cape Town
+			name = "Cape Town Highlanders & Kimberley"
+			
+			 regiment = {
+				type = militia_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "Cape Town Highlanders & Kimberley"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 7978 # Johannesburg
+			name = "Witwatersrand & Rand Light Infantry"
+			
+			 regiment = {
+				type = militia_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "Witwatersrand & Rand Light Infantry"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 8038 # Pretoria
+			name = "Transvaal Scottish & Pretoria Brigades"
+			
+			 regiment = {
+				type = militia_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "Transvaal Scottish & Pretoria Brigades"
+				historical_model = 0 
+				}
+			}
+		}
+	}
 
-regiment = {
-type = hq_brigade
-name = "1st HQ Brigade"
-historical_model = 1
-experience = 5
-}
-
-navy = {
-name = "1st SAN Transport Flotilla"
-location = 8054
-base = 8054
-
-ship = {
-type = destroyer
-name = "1st Escort Flotilla"
-historical_model = 0
-experience = 5
-}
-
-ship = {
-type = transport_ship
-name = "1st SAN Transport Flotilla"
-historical_model = 0
-experience = 5
-}
-}
-
-corps = {
-name = "South African Permanent Force"
-location = 8054
-
-regiment = {
-type = hq_brigade
-name = "South African Permanent Force HQ"
-historical_model = 1
-experience = 0
-}
-
-division = {
-name = "1/2nd Mounted Rifle Regiments"
-location = 8054
-
-regiment = {
-type = cavalry_brigade
-name = "1/2nd Mounted Rifle Regiments"
-historical_model = 1
-experience = 5
-}
-}
-
-division = {
-name = "3/4th Mounted Rifle Regiments"
-location = 8054
-
-regiment = {
-type = cavalry_brigade
-name = "3/4th Mounted Rifle Regiments"
-historical_model = 1
-experience = 5
-}
-}
-
-division = {
-name = "5th Mounted Rifle & D.M.R. Regiments"
-location = 8054
-
-regiment = {
-type = cavalry_brigade
-name = "5th Mounted Rifle & D.M.R. Regiments"
-historical_model = 1
-experience = 5
-}
-}
-}
-
-corps = {
-name = "South African Active Citizen Force"
-location = 7978
-
-regiment = {
-type = hq_brigade
-name = "South African Active Citizen Force HQ"
-historical_model = 1
-experience = 5
-}
-
-division = {
-name = "3/9th P.A. Guards Garrisons"
-location = 8054
-
-regiment = {
-type = garrison_brigade
-name = "3/9th P.A. Guards Garrisons"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "Eastern Rifles & Kaffrarian Brigades"
-location = 8005
-
-regiment = {
-type = militia_brigade
-name = "Eastern Rifles & Kaffrarian Brigades"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "Durban Light & Duke of Edinburgh Rifles"
-location = 7965
-
-regiment = {
-type = militia_brigade
-name = "Durban Light & Duke of Edinburgh Rifles"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "Cape Town Highlanders & Kimberley"
-location = 8054
-
-regiment = {
-type = militia_brigade
-name = "Cape Town Highlanders & Kimberley"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "Witwatersrand & Rand Light Infantry"
-location = 7978
-
-regiment = {
-type = militia_brigade
-name = "Witwatersrand & Rand Light Infantry"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "Transvaal Scottish & Pretoria Brigades"
-location = 8038
-
-regiment = {
-type = militia_brigade
-name = "Transvaal Scottish & Pretoria Brigades"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-}
-}

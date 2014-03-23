@@ -1,25 +1,37 @@
-corps = {
-name = "Ejercito de Uruguay"
-location = 7893
-regiment = { type = hq_brigade name = "Ejercito de Uruguay HQ" historical_model = 0 }
+ corps = {
+	location = 7893 # Montevideo
+	name = "Ejercito de Uruguay"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Ejercito de Uruguay HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 7893  # Montevideo
+		is_reserve = no
+		name = "4a Brigada de Inf. 'Don Claudio'"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "4a Brigada de Inf. 'Don Claudio'"
+			historical_model = 2 
+			}
+		}
+	
+	 navy = {
+		location = 7893 # Montevideo
+		base = 7893  # Montevideo
+		name = "Armada de Uruguay"
+		
+		 ship = {
+			type = protected_cruiser 
+			experience = 15 
+			name = "Montevido"
+			historical_model = 8 
+			}
+		}
+	}
 
-division = {
-name = "4a Brigada de Inf. 'Don Claudio'"
-location = 7893
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "4a Brigada de Inf. 'Don Claudio'"
-historical_model = 2}
-}
-
-navy = {
-name = "Armada de Uruguay"
-base = 7893
-location = 7893
-ship = { type = protected_cruiser name = "Montevido" historical_model = 8 experience = 15 }
-
-}
-}

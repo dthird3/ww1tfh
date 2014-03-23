@@ -1,90 +1,171 @@
-theatre = {
-name = "HÃ¦rens Hovedkvarter"
-location = 1482
-regiment = { type = hq_brigade name = "HÃ¦rens Hovedkvarter Brigade" historical_model = 0 }
+ theatre = {
+	location = 1482 # Copenhagen
+	name = "Hærens Hovedkvarter"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Hærens Hovedkvarter Brigade"
+		historical_model = 0 
+		}
+	
+	 corps = {
+		location = 1482 # Copenhagen
+		name = "Den Danske Hær"
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "Den Danske Hær HQ"
+			historical_model = 0 
+			}
+		
+		 division = {
+			location = 1482  # Copenhagen
+			is_reserve = no
+			name = "Den Kongelige Livgarde Division"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 15 
+				name = "Kongelige Livgarde and Guard Hussards Regiments"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "2. Brigade "
+				historical_model = 2 
+				}
+			}
+		
+		 division = {
+			location = 1482  # Copenhagen
+			is_reserve = yes
+			name = "Sikringsstyrken Division"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "1. Sikringsstyrken Brigade"
+				historical_model = 2 
+				}
+			}
+		
+		 division = {
+			location = 1301  # Århus
+			is_reserve = yes
+			name = "Københavns Amts Skyttekorps"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "1. Københavns Brigade"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "Korps Westenholz"
+				historical_model = 2 
+				}
+			}
+		
+		 division = {
+			location = 1482  # Copenhagen
+			is_reserve = no
+			name = "Dragoons Cavalry Brigade"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 5 
+				name = "1/2 Dragoons Regiments"
+				historical_model = 2 
+				}
+			}
+		}
+	
+	 navy = {
+		location = 1482  # Copenhagen
+		base = 1482 # Copenhagen
+		name = "Kongelige Danske Marine"
+		
+		 ship = {
+			type = heavy_cruiser 
+			experience = 15 
+			name = "KDM Herluf Trolle"
+			historical_model = 0 
+			}
+		
+		 ship = {
+			type = heavy_cruiser 
+			experience = 15 
+			name = "KDM Olfert Fischer"
+			historical_model = 0 
+			}
+		
+		 ship = {
+			type = heavy_cruiser 
+			experience = 15 
+			name = "KDM Peder Skram"
+			historical_model = 0 
+			}
+		
+		 ship = {
+			type = heavy_cruiser 
+			experience = 15 
+			name = "KDM Skjold"
+			historical_model = 0 
+			}
+		
+		 ship = {
+			type = heavy_cruiser 
+			experience = 15 
+			name = "KDM Iver Hvitfeldt"
+			historical_model = 5 
+			}
+		
+		 ship = {
+			type = heavy_cruiser 
+			experience = 15 
+			name = "KDM Odin"
+			historical_model = 0 
+			}
+		
+		 ship = {
+			type = heavy_cruiser 
+			experience = 15 
+			name = "KDM Gorm"
+			historical_model = 0 
+			}
+		
+		 ship = {
+			type = protected_cruiser 
+			experience = 15 
+			name = "KDM Heimdal"
+			historical_model = 2 
+			}
+		
+		 ship = {
+			type = protected_cruiser 
+			experience = 15 
+			name = "KDM Geiser"
+			historical_model = 2 
+			}
+		
+		 ship = {
+			type = protected_cruiser 
+			experience = 15 
+			name = "KDM Hekla"
+			historical_model = 2 
+			}
+		
+		 ship = {
+			type = protected_cruiser 
+			experience = 15 
+			name = "KDM Valkyrien"
+			historical_model = 1 
+			}
+		}
+	}
 
-corps = {
-name = "Den Danske HÃ¦r"
-location = 1482
-regiment = { type = hq_brigade name = "Den Danske HÃ¦r HQ" historical_model = 0 }
-
-division = {
-name = "Den Kongelige Livgarde Division"
-location = 1482
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 15
-name = "Kongelige Livgarde and Guard Hussards Regiments"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "2. Brigade "
-historical_model = 2}
-}
-
-division = {
-name = "Sikringsstyrken Division"
-location = 1482
-is_reserve = yes
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "1. Sikringsstyrken Brigade"
-historical_model = 2}
-}
-
-division = {
-name = "KÃ¸benhavns Amts Skyttekorps"
-location = 1301
-is_reserve = yes
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "1. KÃ¸benhavns Brigade"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "Korps Westenholz"
-historical_model = 2}
-}
-
-division = {
-name = "Dragoons Cavalry Brigade"
-location = 1482
-is_reserve = no
-
-regiment = {
-type = cavalry_brigade
-experience = 5
-name = "1/2 Dragoons Regiments"
-historical_model = 2}
-}
-}
-
-
-navy = {
-name = "Kongelige Danske Marine"
-location = 1482
-base = 1482
-
-ship = { type = heavy_cruiser name = "KDM Herluf Trolle" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "KDM Olfert Fischer" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "KDM Peder Skram" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "KDM Skjold" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "KDM Iver Hvitfeldt" historical_model = 5 experience = 15 }
-ship = { type = heavy_cruiser name = "KDM Odin" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "KDM Gorm" historical_model = 0 experience = 15 }
-ship = { type = protected_cruiser name = "KDM Heimdal" historical_model = 2 experience = 15 }
-ship = { type = protected_cruiser name = "KDM Geiser" historical_model = 2 experience = 15 }
-ship = { type = protected_cruiser name = "KDM Hekla" historical_model = 2 experience = 15 }
-ship = { type = protected_cruiser name = "KDM Valkyrien" historical_model = 1 experience = 15 }
-}
-}

@@ -1,3390 +1,3938 @@
-theatre = {
-name = "Paris HQ"
-location = 2613
+ theatre = {
+	location = 2613 # Paris
+	name = "Paris HQ"
+	
+	 regiment = {
+		type = hq_brigade 
+		experience = 3 
+		name = "1st HQ Brigade"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 2194 # Calais
+		name = "81eme Division d'Infanterie territoriale"
+		
+		 regiment = {
+			type = garrison_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "161eme brigade d'infanterie"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = garrison_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "2162eme brigade d'infanterie"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 2482 # Caen
+		name = "82eme Division d'Infanterie territoriale"
+		
+		 regiment = {
+			type = garrison_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "163eme brigade d'infanterie"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = garrison_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "164eme brigade d'infanterie"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 2608 # St. Malo
+		name = "87eme Division d'Infanterie territoriale"
+		
+		 regiment = {
+			type = garrison_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "173eme brigade d'infanterie"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = garrison_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "174eme brigade d'infanterie"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 2802 # St. Nazaire
+		name = "15e Division de Gendarmerie"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "13eme Militia Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "14eme Militia Brigade"
+			historical_model = 0 
+			}
+		}
+	
+	 corps = {
+		location = 2613 # Paris
+		name = "Gouvernement militaire de Paris"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 15 
+			name = "Gouvernement militaire de Paris HQ"
+			historical_model = 2 
+			}
+		
+		 division = {
+			location = 2737 # Lorient
+			name = "86eme Division d'Infanterie territoriale"
+			
+			 regiment = {
+				type = garrison_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "171eme brigade d'infanterie"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = garrison_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "172eme brigade d'infanterie"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 2613 # Paris
+			name = "88eme Division d'Infanterie territoriale"
+			
+			 regiment = {
+				type = garrison_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "175eme brigade d'infanterie"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = garrison_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "176eme brigade d'infanterie"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 3273 # La Rochelle
+			name = "85eme Division d'Infanterie territoriale"
+			
+			 regiment = {
+				type = garrison_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "169eme brigade d'infanterie"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = garrison_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "170eme brigade d'infanterie"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 2613 # Paris
+			name = "90eme Division Territoriale"
+			
+			 regiment = {
+				type = garrison_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "179eme brigade d'infanterie"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = garrison_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "180eme brigade d'infanterie"
+				historical_model = 0 
+				}
+			}
+		}
+	
+	 corps = {
+		location = 2613 # Paris
+		name = "1re groupe de reserve"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 5 
+			name = "9th HQ Brigade"
+			historical_model = 0 
+			}
+		
+		 division = {
+			location = 2613 # Paris
+			name = "58eme Division d'Infanterie de reserve"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "115eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "116eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 2613 # Paris
+			name = "63eme Division d'Infanterie de reserve"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "125eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "126eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 2613 # Paris
+			name = "66eme Division d'Infanterie de reserve"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "131eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "132eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			}
+		}
+	
+	 corps = {
+		location = 2613 # Paris
+		name = "Ministre de la Guerre"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 5 
+			name = "10th HQ Brigade"
+			historical_model = 0 
+			}
+		
+		 division = {
+			location = 2613 # Paris
+			name = "61eme Division d'Infanterie de reserve"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "121eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "122eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 2613 # Paris
+			name = "62eme Division d'Infanterie de reserve"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "123eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "124eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 2613 # Paris
+			name = "67eme Division d'Infanterie de reserve"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "67eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "67eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			}
+		}
+	
+	 corps = {
+		location = 2613 # Paris
+		name = "4eme groupe de reserve"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 5 
+			name = "11th HQ Brigade"
+			historical_model = 0 
+			}
+		
+		 division = {
+			location = 2613 # Paris
+			name = "51eme Division d'Infanterie de reserve"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "101eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "102eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 2613 # Paris
+			name = "53eme Division d'Infanterie de reserve"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "105eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "106eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 2613 # Paris
+			name = "69eme Division d'Infanterie de reserve"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "137eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "138eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			}
+		}
+	
+	 corps = {
+		location = 2613 # Paris
+		name = "Corps de cavalerie"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 5 
+			name = "14th HQ Brigade"
+			historical_model = 0 
+			}
+		
+		 division = {
+			location = 2613 # Paris
+			name = "1re Division de Cavalerie"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "2eme brigade de Cuirassiers"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "5eme brigade de Dragons"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "11eme brigade de Dragons"
+				historical_model = 1 
+				}
+			}
+		
+		 division = {
+			location = 2613 # Paris
+			name = "3eme Division de Cavalerie"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "4eme brigade de Cuirassiers"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "13eme brigade de Dragons"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "3eme brigade de Cavalerie legere"
+				historical_model = 1 
+				}
+			}
+		
+		 division = {
+			location = 2613 # Paris
+			name = "5eme Division de Cavalerie"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "3eme brigade de Dragons"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "7eme brigade de Dragons"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "5eme brigade de Cavalerie legere"
+				historical_model = 1 
+				}
+			}
+		}
+	
+	 army = {
+		location = 2612 # Vernon
+		name = "5eme Armee"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 5 
+			name = "15th HQ Brigade"
+			historical_model = 0 
+			}
+		
+		 corps = {
+			location = 2309 # Lille
+			name = "1er Corps d'armee HQ"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "Ire Corps d'armee HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 2309 # Lille
+				name = "1re Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "1re brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "1re brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "1re brigade d'artillerie"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 2309 # Lille
+				name = "2eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "3eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "4eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2309 # Lille
+				name = "1re Corps d'Infanterie Reserve"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "1re Corps d'Infanterie Reserve"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2425 # Amiens
+			name = "IIeme Corps d'armee HQ"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "IIeme Corps d'armee HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 2425 # Amiens
+				name = "3eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "5eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "6eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "2eme brigade d'artillerie"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 2425 # Amiens
+				name = "4eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "7eme brigade d'Infanterie"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "8eme brigade d'Infanterie"
+					historical_model = 2 
+					}
+				}
+			
+			 division = {
+				location = 2425 # Amiens
+				name = "2e Corps d'Infanterie reserve"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "2eme Corps d'Infanterie reserve"
+					historical_model = 1 
+					}
+				}
+			}
+		}
+	
+	 army = {
+		location = 2875 # Montargis
+		name = "3eme Armee"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 5 
+			name = "16th HQ Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = engineer_brigade 
+			experience = 10 
+			name = "3eme Armee Engineers"
+			historical_model = 0 
+			}
+		
+		 corps = {
+			location = 2616 # Ste Menehould
+			name = "VIeme Corps d'armee HQ"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "VIeme Corps d'armee HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 2616 # Ste Menehould
+				name = "12eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "23eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "24eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "6eme brigade d'artillerie"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 2616 # Ste Menehould
+				name = "40eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "79eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "80eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2616 # Ste Menehould
+				name = "42eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "83eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "84eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2741 # Le Mans
+			name = "IVeme Corps d'armee HQ"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "IVeme Corps d'armee HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 2741 # Le Mans
+				name = "7eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "13eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "14eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "4eme brigade d'artillerie"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 2741 # Le Mans
+				name = "8eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "15eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "16eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2808 # Orléans
+			name = "Veme Corps d'armee HQ"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "Veme Corps d'armee HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 2808 # Orléans
+				name = "9eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "17eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "18eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "5eme brigade d'artillerie"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 2808 # Orléans
+				name = "10eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "19eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "20eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2808 # Orléans
+				name = "7eme Division de Cavalerie"
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "6eme brigade de Cuirassiers"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "1re brigade de Dragons"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "7eme brigade de Cavalerie legere"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2875 # Montargis
+			name = "3eme groupe de reserve"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 5 
+				name = "8th HQ Brigade"
+				historical_model = 0 
+				}
+			
+			 division = {
+				location = 2875 # Montargis
+				name = "54eme Division d'Infanterie de reserve"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "107eme brigade d'Infanterie de reserve"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "108eme brigade d'Infanterie de reserve"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 2875 # Montargis
+				name = "55eme Division d'Infanterie de reserve"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "109eme brigade d'Infanterie de reserve"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "110eme brigade d'Infanterie de reserve"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 2875 # Montargis
+				name = "56eme Division d'Infanterie de reserve"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "111eme brigade d'Infanterie de reserve"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "112eme brigade d'Infanterie de reserve"
+					historical_model = 0 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2873 # Blois
+			name = "IXeme Corps d'armee HQ"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "IXeme Corps d'armee HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 2873 # Blois
+				name = "17eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "33eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "34eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "9eme brigade d'artillerie"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 2873 # Blois
+				name = "18eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "37eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "36eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2873 # Blois
+				name = "9eme Corps d'infanterie reserve"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "9eme Corps d'infanterie reserve"
+					historical_model = 0 
+					}
+				}
+			}
+		}
+	}
+
+ theatre = {
+	location = 3080 # Semur en Auxois
+	name = "Besancon HQ"
+	
+	 regiment = {
+		type = hq_brigade 
+		experience = 3 
+		name = "2nd HQ Brigade"
+		historical_model = 0 
+		}
+	
+	 corps = {
+		location = 2946 # Épinal
+		name = "Reserve des places du Nord-Est"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 5 
+			name = "12th HQ Brigade"
+			historical_model = 0 
+			}
+		
+		 division = {
+			location = 2946 # Épinal
+			name = "57eme Division d'Infanterie de reserve"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "113eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "114eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 2946 # Épinal
+			name = "73eme Division d'Infanterie de reserve"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "145eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "146eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 2946 # Épinal
+			name = "71eme Division d'Infanterie de reserve"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "141eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "142eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 2946 # Épinal
+			name = "72eme Division d'Infanterie de reserve"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "143eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "144eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			}
+		}
+	
+	 army = {
+		location = 3080 # Semur en Auxois
+		name = "1re Armee"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 5 
+			name = "19th HQ Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = engineer_brigade 
+			experience = 5 
+			name = "1eme Armee Engineers"
+			historical_model = 0 
+			}
+		
+		 corps = {
+			location = 2682 # Verdun
+			name = "XXIeme Corps d'armee HQ"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "XXIeme Corps d'armee HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 2682 # Verdun
+				name = "13eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "25eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "26eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "21eme brigade d'artillerie"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 2682 # Verdun
+				name = "43eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "85eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "86eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2682 # Verdun
+				name = "8eme Division de Cavalerie"
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "8eme brigade de Dragons"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "14eme brigade de Dragons"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "8eme brigade de Cavalerie legere"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 3149 # Belfort
+			name = "VIIeme Corps d'armee HQ"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "VIIeme Corps d'armee HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 3149 # Belfort
+				name = "14eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "27eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "28eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "7eme brigade d'artillerie"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 3149 # Belfort
+				name = "41eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "81eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "82eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 3149 # Belfort
+				name = "7eme Corps d'Infanterie reserve"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "7eme Corps d'Infanterie reserve"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 3149 # Belfort
+				name = "6eme Division de Cavalerie"
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "5eme brigade de Cuirassier"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "6eme brigade de Dragons"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "6eme brigade de Cavalerie legere"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 3144 # Dun sur Auron
+			name = "VIIIeme Corps d'armee HQ"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "VIIIeme Corps d'armee HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 3144 # Dun sur Auron
+				name = "15eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "29eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "30eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "8eme brigade d'artillerie"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 3144 # Dun sur Auron
+				name = "16eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "31eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "32eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 3144 # Dun sur Auron
+				name = "8eme Corps d'infanterie reserve"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "8eme Corps d'infanterie reserve"
+					historical_model = 0 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2683 # Nancy
+			name = "XXeme Corps d'armee HQ"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "XXeme Corps d'armee HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 2683 # Nancy
+				name = "11eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "21eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "22eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "20eme brigade d'artillerie"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 2683 # Nancy
+				name = "39eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "77eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "78eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 2683 # Nancy
+				name = "10eme Division de Cavalerie"
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "10eme brigade de Dragons"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "15eme brigade de Dragons"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "9eme brigade de Cavalerie legere"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 3351 # Besancon
+				name = "25e Division de Gendarmerie"
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "43eme Militia Brigade"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "44eme Militia Brigade"
+					historical_model = 0 
+					}
+				}
+			}
+		}
+	}
+
+ theatre = {
+	location = 3686 # Montbrison
+	name = "Bordeaux HQ"
+	
+	 regiment = {
+		type = hq_brigade 
+		experience = 3 
+		name = "3rd HQ Brigade"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 3479 # Bordeaux
+		name = "92eme Division d'Infanterie territoriale"
+		
+		 regiment = {
+			type = garrison_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "183eme brigade d'infanterie"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = garrison_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "184eme brigade d'infanterie"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 3961 # Toulouse
+		name = "91eme Division d'Infanterie territoriale"
+		
+		 regiment = {
+			type = garrison_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "181eme brigade d'infanterie"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = garrison_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "182eme brigade d'infanterie"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 3345 # Limoges
+		name = "89eme Division d'Infanterie territoriale"
+		
+		 regiment = {
+			type = garrison_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "177eme brigade d'infanterie"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = garrison_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "178eme brigade d'infanterie"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 3479 # Bordeaux
+		name = "16e Division de Gendarmerie"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "16eme Militia Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "17eme Militia Brigade"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 4228 # Perpignan
+		name = "17e Division de Gendarmerie"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "19eme Militia Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "20eme Militia Brigade"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 4229 # Marseille
+		name = "18e Division de Gendarmerie"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "22eme Militia Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "23eme Militia Brigade"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 4230 # Toulon
+		name = "19e Division de Gendarmerie"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "25eme Militia Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "26eme Militia Brigade"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 4106 # Nice
+		name = "21e Division de Gendarmerie"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "31eme Militia Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "32eme Militia Brigade"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 4038 # Cannes
+		name = "20e Division de Gendarmerie"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "28eme Militia Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "29eme Militia Brigade"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 3757 # Albertville
+		name = "24e Division de Gendarmerie"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "40eme Militia Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "41eme Militia Brigade"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 3826 # Briancon
+		name = "23e Division de Gendarmerie"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "37eme Militia Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "38eme Militia Brigade"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 3969 # Barcelonnette
+		name = "22e Division de Gendarmerie"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "34eme Militia Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "35eme Militia Brigade"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 3815 # Bayonne
+		name = "1er Division de Gendarmerie"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "46eme Militia Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "47eme Militia Brigade"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 4098 # Lannemezan
+		name = "2e Division de Gendarmerie"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "49eme Militia Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "50eme Militia Brigade"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 3622 # Annecy
+		name = "4e Division de Gendarmerie"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "55eme Militia Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "56eme Militia Brigade"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 4106 # Nice
+		name = "3e Division de Gendarmerie"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "52eme Militia Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "53eme Militia Brigade"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 3826 # Briancon
+		name = "5e Division de Gendarmerie"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "58eme Militia Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "59eme Militia Brigade"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 4486 # Ajàccio
+		name = "6e Division de Gendarmerie"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "61eme Militia Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "62eme Militia Brigade"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 3969 # Barcelonnette
+		name = "7e Division de Gendarmerie"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "64eme Militia Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "65eme Militia Brigade"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 3757 # Albertville
+		name = "10e Division de Gendarmerie"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "70eme Militia Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "71eme Militia Brigade"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 3622 # Annecy
+		name = "8e Division de Gendarmerie"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "67eme Militia Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "68eme Militia Brigade"
+			historical_model = 0 
+			}
+		}
+	
+	 corps = {
+		location = 3824 # Romans sur Isere
+		name = "Armee des Alpes"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 5 
+			name = "13th HQ Brigade"
+			historical_model = 0 
+			}
+		
+		 division = {
+			location = 3824 # Romans sur Isere
+			name = "64eme Division d'Infanterie de reserve"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "127eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "128eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 3824 # Romans sur Isere
+			name = "74eme Division d'Infanterie de reserve"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "147eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "148eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 3824 # Romans sur Isere
+			name = "65eme Division d'Infanterie de reserve"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "129eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "130eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 3824 # Romans sur Isere
+			name = "75eme Division d'Infanterie de reserve"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "149eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "150eme brigade d'Infanterie de reserve"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 3824 # Romans sur Isere
+			name = "Alpins d'territoriale"
+			
+			 regiment = {
+				type = bergsjaeger_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "Chasseurs alpins Brigade"
+				historical_model = 0 
+				}
+			}
+		}
+	
+	 army = {
+		location = 3751 # Villefranche
+		name = "4eme Armee"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 5 
+			name = "17th HQ Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = engineer_brigade 
+			experience = 5 
+			name = "4eme Armee Engineers"
+			historical_model = 0 
+			}
+		
+		 corps = {
+			location = 3345 # Limoges
+			name = "XIIeme Corps d'armee HQ"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "XIIeme Corps d'armee HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 3345 # Limoges
+				name = "23eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "45eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "46eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "12eme brigade d'artillerie"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 3345 # Limoges
+				name = "24eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "47eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "48eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 3961 # Toulouse
+			name = "XVIIeme Corps d'armee HQ"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "XVIIeme Corps d'armee HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 3961 # Toulouse
+				name = "33eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "65eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "66eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "17eme brigade d'artillerie"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 3961 # Toulouse
+				name = "34eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "67eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "34eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 3751 # Villefranche
+			name = "Corps d'armee colonial"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "Corps d'armee colonial HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 3751 # Villefranche
+				name = "1re Division d'infanterie coloniale"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 5 
+					name = "1re brigade d'infanterie coloniale"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "2eme brigade d'infanterie coloniale"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "Brigade d'artillerie coloniale"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 3751 # Villefranche
+				name = "2eme Division d'infanterie coloniale"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 5 
+					name = "3eme brigade d'infanterie coloniale"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 5 
+					name = "4eme brigade d'infanterie coloniale"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 3751 # Villefranche
+				name = "3eme Division d'infanterie coloniale"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 5 
+					name = "5eme brigade d'infanterie coloniale"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 5 
+					name = "6eme brigade d'infanterie coloniale"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 3751 # Villefranche
+				name = "9eme Division de Cavalerie"
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "1re brigade de Cuirassiers"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "9eme brigade de Dragons"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "16eme brigade de Dragons"
+					historical_model = 1 
+					}
+				}
+			}
+		}
+	
+	 army = {
+		location = 3686 # Montbrison
+		name = "2eme Armee"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 5 
+			name = "18th HQ Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = engineer_brigade 
+			experience = 5 
+			name = "2eme Armee Engineers"
+			historical_model = 0 
+			}
+		
+		 corps = {
+			location = 4033 # Montpellier
+			name = "XVIeme Corps d'armee HQ"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "XVIeme Corps d'armee HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 4033 # Montpellier
+				name = "31eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "61eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "61eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "16eme brigade d'artillerie"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 4033 # Montpellier
+				name = "32eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "63eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "64eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 4033 # Montpellier
+				name = "90eme Division d'Infanterie territoriale"
+				
+				 regiment = {
+					type = garrison_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "179eme brigade d'infanterie"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = garrison_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "180eme brigade d'infanterie"
+					historical_model = 0 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 4229 # Marseille
+			name = "XVeme Armee"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "XVeme Armee HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 4229 # Marseille
+				name = "29eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "57eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "58eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "15eme brigade d'artillerie"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 4229 # Marseille
+				name = "30eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "59eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "60eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 4229 # Marseille
+				name = "2eme Division de Cavalerie"
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "2eme brigade de Dragons"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "12eme brigade de Dragons"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "2eme brigade de Cavalerie legere"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 3479 # Bordeaux
+			name = "XVIIIeme Corps d'armee HQ"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "XVIIIeme Corps d'armee HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 3479 # Bordeaux
+				name = "35eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "69eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "70eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "13eme brigade d'artillerie"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 3479 # Bordeaux
+				name = "36eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "71eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "72eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 3550 # Clermont Ferrand
+			name = "XIIIeme Corps d'armee HQ"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "XIIIeme Corps d'armee HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 3550 # Clermont Ferrand
+				name = "25eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "49eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "50eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "13eme brigade d'artillerie"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 3550 # Clermont Ferrand
+				name = "26eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "51eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "52eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 3687 # Lyon
+			name = "XIVeme Corps d'armee HQ"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "XIVeme Corps d'armee HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 3687 # Lyon
+				name = "27eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "53eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "54eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "14eme brigade d'artillerie"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 3687 # Lyon
+				name = "28eme Division d'Infanterie"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "55eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "56eme brigade d'Infanterie"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 4038 # Cannes
+			name = "2eme groupe de reserve"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 5 
+				name = "7th HQ Brigade"
+				historical_model = 0 
+				}
+			
+			 division = {
+				location = 4038 # Cannes
+				name = "70eme Division d'Infanterie de reserve"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "139eme brigade d'Infanterie de reserve"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "140eme brigade d'Infanterie de reserve"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 4038 # Cannes
+				name = "59eme Division d'Infanterie de reserve"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "117eme brigade d'Infanterie de reserve"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "118eme brigade d'Infanterie de reserve"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 4038 # Cannes
+				name = "68eme Division d'Infanterie de reserve"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "135eme brigade d'Infanterie de reserve"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "136eme brigade d'Infanterie de reserve"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 4230 # Toulon
+				name = "d'Infanterie coloniale du Toulon"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 5 
+					name = "d'infanterie colonaile du Toulon"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 4230 # Toulon
+				name = "Legion d'Infanterie Foreign"
+				
+				 regiment = {
+					type = alpins_brigade 
+					experience = 15 
+					name = "Legion d'Infanterie Foreign"
+					historical_model = 2 
+					}
+				}
+			}
+		}
+	}
+
+ theatre = {
+	location = 5292 # Oran
+	name = "Tunis HQ"
+	
+	 regiment = {
+		type = hq_brigade 
+		experience = 3 
+		name = "4th HQ Brigade"
+		historical_model = 0 
+		}
+	
+	 corps = {
+		location = 5160 # Alger
+		name = "XIXeme Corps d'armee HQ"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 15 
+			name = "XIXeme Corps d'armee HQ"
+			historical_model = 2 
+			}
+		
+		 division = {
+			location = 5160 # Alger
+			name = "Division d'Alger"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "1re brigade d'infanterie d'Algerie"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = cavalry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "1re brigade de cavalerie d'Algerie"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 5292 # Oran
+			name = "Division d'Oran"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "2eme Brigade d'infanterie d'Algerie"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "4eme Brigade d'infanterie d'Algerie"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = cavalry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "2eme Brigade de Cavalerie d'Algerie"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 5198 # Constantine
+			name = "Division de Constantine"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "3eme Brigade d'infanterie d'Algerie"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = cavalry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "3eme brigade de Cavalerie d'Algerie"
+				historical_model = 0 
+				}
+			}
+		}
+	
+	 corps = {
+		location = 5134 # Tunis
+		name = "Division d'occupation de Tunisie"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 15 
+			name = "Division d'occupation de Tunisie HQ"
+			historical_model = 2 
+			}
+		
+		 division = {
+			location = 5134 # Tunis
+			name = "Division d'occupation de Tunisie"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "1re brigade d'occupation de Tunisie"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = cavalry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "Brigade de Cavalerie de Tunisie"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 5232 # Sousse
+			name = "2eme brigade d'occupation de Tunisie"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "2eme brigade d'occupation de Tunisie"
+				historical_model = 0 
+				}
+			}
+		}
+	}
+
+ theatre = {
+	location = 6108 # Quang Ngai
+	name = "Groupe de l'Indo-Chine"
+	
+	 regiment = {
+		type = hq_brigade 
+		experience = 3 
+		name = "5th HQ Brigade"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 6236 # Saigon
+		name = "d'infanterie coloniale do Saigon"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "d'infanterie coloniale du Saigon"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 6108 # Quang Ngai
+		name = "d'infanterie coloniale do Annam"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "d'infanterie colonial du Annam"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 5916 # Hanoi
+		name = "d'infanterie coloniale du Tonkin"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "d'infanterie colonial du Tonkin"
+			historical_model = 0 
+			}
+		}
+	}
+
+ theatre = {
+	location = 9744 # Sokolo
+	name = "Dakar HQ"
+	
+	 regiment = {
+		type = hq_brigade 
+		experience = 3 
+		name = "6th HQ Brigade"
+		historical_model = 0 
+		}
+	
+	 corps = {
+		location = 10231 # Antananarivo
+		name = "Groupe de l'Afrique orientale"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 15 
+			name = "Groupe de l'Afrique orientale HQ"
+			historical_model = 2 
+			}
+		
+		 division = {
+			location = 10231 # Antananarivo
+			name = "Brigade indigene de la cote francaise des Somalis"
+			
+			 regiment = {
+				type = militia_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "Indigene de la francaise des Somalis"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 10231 # Antananarivo
+			name = "1re brigade de tirailleurs malgaches"
+			
+			 regiment = {
+				type = militia_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "1/2/3 Regiment de tirailleurs malgaches"
+				historical_model = 0 
+				}
+			}
+		}
+	
+	 corps = {
+		location = 9741 # Dakar
+		name = "Groupe de l'Afrique occidentale"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 15 
+			name = "Groupe de l'Afrique occidentale HQ"
+			historical_model = 2 
+			}
+		
+		 division = {
+			location = 9729 # St. Louis
+			name = "1re Brigade de tirailleurs senegalais"
+			
+			 regiment = {
+				type = militia_brigade 
+				experience = 5 
+				name = "1/2 Regiments de tirailleurs senegalais"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 9741 # Dakar
+			name = "2eme Brigade de tirailleurs senegalais"
+			
+			 regiment = {
+				type = militia_brigade 
+				experience = 5 
+				name = "3/4 Regiments de tirailleurs senegalais"
+				historical_model = 0 
+				}
+			}
+		}
+	
+	 corps = {
+		location = 10021 # Libreville
+		name = "Groupe de l'Afrique Equatoriale"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 15 
+			name = "Groupe de l'Afrique Equatoriale HQ"
+			historical_model = 2 
+			}
+		
+		 division = {
+			location = 10021 # Libreville
+			name = "Regiments indigini du Gabon et Tchad"
+			
+			 regiment = {
+				type = militia_brigade 
+				experience = 5 
+				name = "Regiments indigini du Gabon et Tchad"
+				historical_model = 0 
+				}
+			}
+		}
+	}
+
+ navy = {
+	location = 4230  # Toulon
+	base = 4230 # Toulon
+	name = "1ère Armée Navale"
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Furieux"
+		historical_model = 1 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Achéron"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Cocyte"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Styx"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Jemmapes"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Valmy"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Bouvines"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Amiral Tréhouart"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Dévastation"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Terrible"
+		historical_model = 3 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Indomptable"
+		historical_model = 3 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Caïman"
+		historical_model = 3 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Requin"
+		historical_model = 3 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Formidable"
+		historical_model = 3 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Hoche"
+		historical_model = 3 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Marceau"
+		historical_model = 4 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Neptune"
+		historical_model = 4 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Brennus"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Charles Martel"
+		historical_model = 7 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Carnot"
+		historical_model = 7 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Jauréguiberry"
+		historical_model = 7 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Masséna"
+		historical_model = 8 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Bouvet"
+		historical_model = 8 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Charlemagne"
+		historical_model = 8 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Gaulois"
+		historical_model = 8 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "St. Louis"
+		historical_model = 8 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Henri IV"
+		historical_model = 10 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Suffren"
+		historical_model = 10 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "République"
+		historical_model = 11 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Patrie"
+		historical_model = 11 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Démocratie"
+		historical_model = 11 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Justice"
+		historical_model = 11 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Liberté"
+		historical_model = 11 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Verité"
+		historical_model = 11 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Ernest Renan"
+		historical_model = 8 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Edgar Quinet"
+		historical_model = 9 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Waldeck-Rousseau"
+		historical_model = 9 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Léon Gambetta"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Jules Ferry"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Victor Hugo"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Jules Michelet"
+		historical_model = 7 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "D'Entrecasteaux"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Bruix"
+		historical_model = 1 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Latouche-Tréville"
+		historical_model = 1 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Pothuau"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = destroyer 
+		name = "1e Escadrille de Contre-torpilleurs"
+		historical_model = 8 
+		}
+	
+	 ship = {
+		type = destroyer 
+		name = "2e Escadrille de Contre-torpilleurs"
+		historical_model = 7 
+		}
+	
+	 ship = {
+		type = destroyer 
+		name = "3e Escadrille de Contre-torpilleurs"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = destroyer 
+		name = "4e Escadrille de Contre-torpilleurs"
+		historical_model = 5 
+		}
+	}
+
+ navy = {
+	location = 2422  # Cherbourg
+	base = 2422 # Cherbourg
+	name = "2ème Division Légére"
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Amiral Aube"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Condé"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Gloire"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Marseillaise"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Dupleix"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Kléber"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Jeanne D'Arc"
+		historical_model = 3 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Gueydon"
+		historical_model = 4 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Dupetit-Thouars"
+		historical_model = 4 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Lavoisier"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Forbin"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Épervier"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Faucon"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Bombe"
+		historical_model = 3 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Couleuvrine"
+		historical_model = 3 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Flèche"
+		historical_model = 3 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Lance"
+		historical_model = 3 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Sainte-Barbe"
+		historical_model = 3 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Casabianca"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Cassini"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "D'Iberville"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Dunois"
+		historical_model = 7 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "La Hire"
+		historical_model = 7 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Foudre"
+		historical_model = 7 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Amiral Cécille"
+		historical_model = 1 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Isly"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Friant"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Du Chayla"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Châteaurenault"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Jurien De La Gravière"
+		historical_model = 8 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Alger"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Galilée"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Chasseloup-Laubat"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Pascal"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Catinat"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "D'Estrées"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Infernet"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Surcouf"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Lalande"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Guichen"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = destroyer 
+		name = "5e Escadrille de Contre-torpilleurs"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = destroyer 
+		name = "6e Escadrille de Contre-torpilleurs"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = destroyer 
+		name = "7e Escadrille de Contre-torpilleurs"
+		historical_model = 4 
+		}
+	}
+
+ navy = {
+	location = 2194  # Calais
+	base = 2194 # Calais
+	name = "Défense Mobile"
+	
+	 ship = {
+		type = destroyer 
+		name = "8e Escadrille de Contre-torpilleurs"
+		historical_model = 3 
+		}
+	}
+
+ navy = {
+	location = 5412  # Casablanca
+	base = 5412 # Casablanca
+	name = "Détail Speciale"
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Dupuy de Lôme"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Amiral Charner"
+		historical_model = 1 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Cassard"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Cosmao"
+		historical_model = 2 
+		}
+	}
+
+ navy = {
+	location = 6236  # Saigon
+	base = 6236 # Saigon
+	name = "Détail Orientale"
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Dupleix"
+		historical_model = 5 
+		}
+	}
+
+ navy = {
+	location = 485  # Guadeloupe
+	base = 485 # Guadeloupe
+	name = "Détail des Indes de l'Ouest"
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Descartes"
+		historical_model = 2 
+		}
+	}
+
+ navy = {
+	location = 6620  # Tahiti
+	base = 6620 # Tahiti
+	name = "Détail du Pacifique de Sud"
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Montcalm"
+		historical_model = 4 
+		}
+	}
+
+ navy = {
+	location = 2422  # Cherbourg
+	base = 2422 # Cherbourg
+	name = "1ère Division de Sous-Marins"
+	
+	 ship = {
+		type = coastal_submarine 
+		name = "1ère Escadrille de Sous-Marins"
+		historical_model = 0 
+		}
+	}
+
+ navy = {
+	location = 2194  # Calais
+	base = 2194 # Calais
+	name = "2ème Division de Sous-Marins"
+	
+	 ship = {
+		type = coastal_submarine 
+		name = "2ème Escadrille de Sous-Marins"
+		historical_model = 1 
+		}
+	}
+
+ navy = {
+	location = 4230  # Toulon
+	base = 4230 # Toulon
+	name = "3ème Division de Sous-Marins"
+	
+	 ship = {
+		type = coastal_submarine 
+		name = "3ème Escadrille de Sous-Marins"
+		historical_model = 1 
+		}
+	
+	 ship = {
+		type = coastal_submarine 
+		name = "4ème Escadrille de Sous-Marins"
+		historical_model = 1 
+		}
+	
+	 ship = {
+		type = submarine 
+		name = "5ème Escadrille de Sous-Marins"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = submarine 
+		name = "6ème Escadrille de Sous-Marins"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = submarine 
+		name = "7ème Escadrille de Sous-Marins"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = submarine 
+		name = "8ème Escadrille de Sous-Marins"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = submarine 
+		name = "9ème Escadrille de Sous-Marins"
+		historical_model = 0 
+		}
+	}
+
+ navy = {
+	location = 2870  # Nantes
+	base = 2870 # Nantes
+	name = "Transport Générale"
+	
+	 ship = {
+		type = transport_ship 
+		name = "1ère Flottille de Transport"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = transport_ship 
+		name = "2ème Flottille de Transport"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = transport_ship 
+		name = "3ème Flottille de Transport"
+		historical_model = 0 
+		}
+	}
+
+ navy = {
+	location = 5160  # Alger
+	base = 5160 # Alger
+	name = "Transport Expéditionnaire"
+	
+	 ship = {
+		type = transport_ship 
+		name = "4ème Flottille de Transport"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = transport_ship 
+		name = "5ème Flottille de Transport"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = transport_ship 
+		name = "6ème Flottille de Transport"
+		historical_model = 0 
+		}
+	}
+
+ military_construction = {
+	cost = 4 
+	progress = 0 
+	duration = 190 
+	country = FRA 
+	battleship = { 
+		name = "Danton"
+		historical_model = 12 
+		}
+	}
+
+ military_construction = {
+	cost = 4 
+	progress = 0 
+	duration = 344 
+	country = FRA 
+	battleship = { 
+		name = "Mirabeau"
+		historical_model = 12 
+		}
+	}
 
-regiment = {
-type = hq_brigade
-name = "1st HQ Brigade"
-historical_model = 0
-experience = 3
-}
-
-division = {
-name = "81eme Division d'Infanterie territoriale"
-location = 2194 
-
-regiment = {
-type = garrison_brigade
-name = "161eme brigade d'infanterie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = garrison_brigade
-name = "2162eme brigade d'infanterie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "82eme Division d'Infanterie territoriale"
-location = 2482 
-
-regiment = {
-type = garrison_brigade
-name = "163eme brigade d'infanterie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = garrison_brigade
-name = "164eme brigade d'infanterie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "87eme Division d'Infanterie territoriale"
-location = 2608 
-
-regiment = {
-type = garrison_brigade
-name = "173eme brigade d'infanterie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = garrison_brigade
-name = "174eme brigade d'infanterie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "15e Division de Gendarmerie"
-location = 2802
- 
-regiment = {
-type = militia_brigade
-name = "13eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = militia_brigade
-name = "14eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-corps = {
-name = "Gouvernement militaire de Paris"
-location = 2613
-
-regiment = {
-type = hq_brigade
-name = "Gouvernement militaire de Paris HQ"
-historical_model = 2
-experience = 15
-}
-
-division = {
-name = "86eme Division d'Infanterie territoriale"
-location = 2737
-
-regiment = {
-type = garrison_brigade
-name = "171eme brigade d'infanterie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = garrison_brigade
-name = "172eme brigade d'infanterie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "88eme Division d'Infanterie territoriale"
-location = 2613
-
-regiment = {
-type = garrison_brigade
-name = "175eme brigade d'infanterie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = garrison_brigade
-name = "176eme brigade d'infanterie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "85eme Division d'Infanterie territoriale"
-location = 3273
-
-regiment = {
-type = garrison_brigade
-name = "169eme brigade d'infanterie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = garrison_brigade
-name = "170eme brigade d'infanterie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "90eme Division Territoriale"
-location = 2613
-
-regiment = {
-type = garrison_brigade
-name = "179eme brigade d'infanterie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = garrison_brigade
-name = "180eme brigade d'infanterie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-}
-
-corps = {
-name = "1re groupe de reserve"
-location = 2613 
-regiment = {
-type = hq_brigade
-name = "9th HQ Brigade"
-historical_model = 0
-experience = 5
-}
-
-division = {
-name = "58eme Division d'Infanterie de reserve"
-location = 2613 
-
-regiment = {
-type = infantry_brigade
-name = "115eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = infantry_brigade
-name = "116eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "63eme Division d'Infanterie de reserve"
-location = 2613 
-regiment = {
-type = infantry_brigade
-name = "125eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = infantry_brigade
-name = "126eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "66eme Division d'Infanterie de reserve"
-location = 2613 
-
-regiment = {
-type = infantry_brigade
-name = "131eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = infantry_brigade
-name = "132eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-}
-
-corps = {
-name = "Ministre de la Guerre"
-location = 2613 
-regiment = {
-type = hq_brigade
-name = "10th HQ Brigade"
-historical_model = 0
-experience = 5
-}
-
-division = {
-name = "61eme Division d'Infanterie de reserve"
-location = 2613 
-regiment = {
-type = infantry_brigade
-name = "121eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = infantry_brigade
-name = "122eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "62eme Division d'Infanterie de reserve"
-location = 2613 
-
-regiment = {
-type = infantry_brigade
-name = "123eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = infantry_brigade
-name = "124eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "67eme Division d'Infanterie de reserve"
-location = 2613 
-
-regiment = {
-type = infantry_brigade
-name = "67eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-}
- 
-regiment = {
-type = infantry_brigade
-name = "67eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-}
-}
-}
-
-corps = {
-name = "4eme groupe de reserve"
-location = 2613 
-regiment = {
-type = hq_brigade
-name = "11th HQ Brigade"
-historical_model = 0
-experience = 5
-}
-
-division = {
-name = "51eme Division d'Infanterie de reserve"
-location = 2613 
-
-regiment = {
-type = infantry_brigade
-name = "101eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = infantry_brigade
-name = "102eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "53eme Division d'Infanterie de reserve"
-location = 2613 
-
-regiment = {
-type = infantry_brigade
-name = "105eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-}
- 
-regiment = {
-type = infantry_brigade
-name = "106eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-}
-}
-
-division = {
-name = "69eme Division d'Infanterie de reserve"
-location = 2613 
-
-regiment = {
-type = infantry_brigade
-name = "137eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-}
- 
-regiment = {
-type = infantry_brigade
-name = "138eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-}
-}
-}
-
-corps = {
-name = "Corps de cavalerie"
-location = 2613 
-
-regiment = {
-type = hq_brigade
-name = "14th HQ Brigade"
-historical_model = 0
-experience = 5
-}
-
-division = {
-name = "1re Division de Cavalerie"
-location = 2613 
-
-regiment = {
-type = cavalry_brigade
-name = "2eme brigade de Cuirassiers"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = cavalry_brigade
-name = "5eme brigade de Dragons"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = cavalry_brigade
-name = "11eme brigade de Dragons"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "3eme Division de Cavalerie"
-location = 2613 
-
-regiment = {
-type = cavalry_brigade
-name = "4eme brigade de Cuirassiers"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = cavalry_brigade
-name = "13eme brigade de Dragons"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = cavalry_brigade
-name = "3eme brigade de Cavalerie legere"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "5eme Division de Cavalerie"
-location = 2613 
-
-regiment = {
-type = cavalry_brigade
-name = "3eme brigade de Dragons"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = cavalry_brigade
-name = "7eme brigade de Dragons"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = cavalry_brigade
-name = "5eme brigade de Cavalerie legere"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-army = {
-name = "5eme Armee"
-location = 2612 
-
-regiment = {
-type = hq_brigade
-name = "15th HQ Brigade"
-historical_model = 0
-experience = 5
-}
-
-corps = {
-name = "1er Corps d'armee HQ"
-location = 2309 
-
-regiment = {
-type = hq_brigade
-name = "Ire Corps d'armee HQ"
-historical_model = 2
-experience = 15
-}
-
-division = {
-name = "1re Division d'Infanterie"
-location = 2309 
-
-regiment = {
-type = infantry_brigade
-name = "1re brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "1re brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = artillery_brigade
-name = "1re brigade d'artillerie"
-historical_model = 0
-experience = 10
-}
-}
-
-division = {
-name = "2eme Division d'Infanterie"
-location = 2309 
-
-regiment = {
-type = infantry_brigade
-name = "3eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "4eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "1re Corps d'Infanterie Reserve"
-location = 2309
- 
-regiment = {
-type = infantry_brigade
-name = "1re Corps d'Infanterie Reserve"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-}
-
-corps = {
-name = "IIeme Corps d'armee HQ"
-location = 2425 
-
-regiment = {
-type = hq_brigade
-name = "IIeme Corps d'armee HQ"
-historical_model = 2
-experience = 15
-}
-
-division = {
-name = "3eme Division d'Infanterie"
-location = 2425
- 
-regiment = {
-type = infantry_brigade
-name = "5eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "6eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = artillery_brigade
-name = "2eme brigade d'artillerie"
-historical_model = 0
-experience = 10
-}
-}
-
-division = {
-name = "4eme Division d'Infanterie"
-location = 2425 
-
-regiment = {
-type = infantry_brigade
-name = "7eme brigade d'Infanterie"
-historical_model = 2
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "8eme brigade d'Infanterie"
-historical_model = 2
-experience = 10
-}
-}
-
-division = {
-name = "2e Corps d'Infanterie reserve"
-location = 2425 
-
-regiment = {
-type = infantry_brigade
-name = "2eme Corps d'Infanterie reserve"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-}
-}
-
-army = {
-name = "3eme Armee"
-location = 2875 
-regiment = {
-type = hq_brigade
-name = "16th HQ Brigade"
-historical_model = 0
-experience = 5
-}
- 
-regiment = {
-type = engineer_brigade
-name = "3eme Armee Engineers"
-historical_model = 0
-experience = 10
-}
-
-corps = {
-name = "VIeme Corps d'armee HQ"
-location = 2616 
-
-regiment = {
-type = hq_brigade
-name = "VIeme Corps d'armee HQ"
-historical_model = 2
-experience = 15
-}
-
-division = {
-name = "12eme Division d'Infanterie"
-location = 2616 
-
-regiment = {
-type = infantry_brigade
-name = "23eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "24eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = artillery_brigade
-name = "6eme brigade d'artillerie"
-historical_model = 0
-experience = 10
-}
-}
-
-division = {
-name = "40eme Division d'Infanterie"
-location = 2616 
-
-regiment = {
-type = infantry_brigade
-name = "79eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "80eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "42eme Division d'Infanterie"
-location = 2616 
-
-regiment = {
-type = infantry_brigade
-name = "83eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "84eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "IVeme Corps d'armee HQ"
-location = 2741 
-
-regiment = {
-type = hq_brigade
-name = "IVeme Corps d'armee HQ"
-historical_model = 2
-experience = 15
-}
-
-division = {
-name = "7eme Division d'Infanterie"
-location = 2741 
-
-regiment = {
-type = infantry_brigade
-name = "13eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "14eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = artillery_brigade
-name = "4eme brigade d'artillerie"
-historical_model = 0
-experience = 10
-}
-}
-
-division = {
-name = "8eme Division d'Infanterie"
-location = 2741 
-
-regiment = {
-type = infantry_brigade
-name = "15eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "16eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "Veme Corps d'armee HQ"
-location = 2808 
-
-regiment = {
-type = hq_brigade
-name = "Veme Corps d'armee HQ"
-historical_model = 2
-experience = 15
-}
-
-division = {
-name = "9eme Division d'Infanterie"
-location = 2808 
-
-regiment = {
-type = infantry_brigade
-name = "17eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "18eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = artillery_brigade
-name = "5eme brigade d'artillerie"
-historical_model = 0
-experience = 10
-}
-}
-
-division = {
-name = "10eme Division d'Infanterie"
-location = 2808 
-
-regiment = {
-type = infantry_brigade
-name = "19eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "20eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "7eme Division de Cavalerie"
-location = 2808 
-
-regiment = {
-type = cavalry_brigade
-name = "6eme brigade de Cuirassiers"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = cavalry_brigade
-name = "1re brigade de Dragons"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = cavalry_brigade
-name = "7eme brigade de Cavalerie legere"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "3eme groupe de reserve"
-location = 2875 
-
-regiment = {
-type = hq_brigade
-name = "8th HQ Brigade"
-historical_model = 0
-experience = 5
-}
-
-division = {
-name = "54eme Division d'Infanterie de reserve"
-location = 2875 
-
-regiment = {
-type = infantry_brigade
-name = "107eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = infantry_brigade
-name = "108eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "55eme Division d'Infanterie de reserve"
-location = 2875 
-
-regiment = {
-type = infantry_brigade
-name = "109eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = infantry_brigade
-name = "110eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "56eme Division d'Infanterie de reserve"
-location = 2875 
-
-regiment = {
-type = infantry_brigade
-name = "111eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = infantry_brigade
-name = "112eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-}
-
-corps = {
-name = "IXeme Corps d'armee HQ"
-location = 2873 
-
-regiment = {
-type = hq_brigade
-name = "IXeme Corps d'armee HQ"
-historical_model = 2
-experience = 15
-}
-
-division = {
-name = "17eme Division d'Infanterie"
-location = 2873 
-
-regiment = {
-type = infantry_brigade
-name = "33eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "34eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = artillery_brigade
-name = "9eme brigade d'artillerie"
-historical_model = 0
-experience = 10
-}
-}
-
-division = {
-name = "18eme Division d'Infanterie"
-location = 2873 
-
-regiment = {
-type = infantry_brigade
-name = "37eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "36eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "9eme Corps d'infanterie reserve"
-location = 2873 
-
-regiment = {
-type = infantry_brigade
-name = "9eme Corps d'infanterie reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-}
-}
-}
-
-theatre = {
-name = "Besancon HQ"
-location = 3080 
-regiment = {
-type = hq_brigade
-name = "2nd HQ Brigade"
-historical_model = 0
-experience = 3
-}
-
-corps = {
-name = "Reserve des places du Nord-Est"
-location = 2946 
-
-regiment = {
-type = hq_brigade
-name = "12th HQ Brigade"
-historical_model = 0
-experience = 5
-}
-
-division = {
-name = "57eme Division d'Infanterie de reserve"
-location = 2946 
-
-regiment = {
-type = infantry_brigade
-name = "113eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = infantry_brigade
-name = "114eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "73eme Division d'Infanterie de reserve"
-location = 2946 
-
-regiment = {
-type = infantry_brigade
-name = "145eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = infantry_brigade
-name = "146eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "71eme Division d'Infanterie de reserve"
-location = 2946 
-
-regiment = {
-type = infantry_brigade
-name = "141eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = infantry_brigade
-name = "142eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "72eme Division d'Infanterie de reserve"
-location = 2946 
-
-regiment = {
-type = infantry_brigade
-name = "143eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = infantry_brigade
-name = "144eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-}
-
-army = {
-name = "1re Armee"
-location = 3080 
-
-regiment = {
-type = hq_brigade
-name = "19th HQ Brigade"
-historical_model = 0
-experience = 5
-}
- 
-regiment = {
-type = engineer_brigade
-name = "1eme Armee Engineers"
-historical_model = 0
-experience = 5
-}
-
-corps = {
-name = "XXIeme Corps d'armee HQ"
-location = 2682 
-
-regiment = {
-type = hq_brigade
-name = "XXIeme Corps d'armee HQ"
-historical_model = 2
-experience = 15
-}
-
-division = {
-name = "13eme Division d'Infanterie"
-location = 2682 
-
-regiment = {
-type = infantry_brigade
-name = "25eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "26eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = artillery_brigade
-name = "21eme brigade d'artillerie"
-historical_model = 0
-experience = 10
-}
-}
-
-division = {
-name = "43eme Division d'Infanterie"
-location = 2682
- 
-regiment = {
-type = infantry_brigade
-name = "85eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "86eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "8eme Division de Cavalerie"
-location = 2682 
-
-regiment = {
-type = cavalry_brigade
-name = "8eme brigade de Dragons"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = cavalry_brigade
-name = "14eme brigade de Dragons"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = cavalry_brigade
-name = "8eme brigade de Cavalerie legere"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "VIIeme Corps d'armee HQ"
-location = 3149
- 
-regiment = {
-type = hq_brigade
-name = "VIIeme Corps d'armee HQ"
-historical_model = 2
-experience = 15
-}
-
-division = {
-name = "14eme Division d'Infanterie"
-location = 3149 
-
-regiment = {
-type = infantry_brigade
-name = "27eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "28eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = artillery_brigade
-name = "7eme brigade d'artillerie"
-historical_model = 0
-experience = 10
-}
-}
-
-division = {
-name = "41eme Division d'Infanterie"
-location = 3149 
-
-regiment = {
-type = infantry_brigade
-name = "81eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "82eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "7eme Corps d'Infanterie reserve"
-location = 3149 
-
-regiment = {
-type = infantry_brigade
-name = "7eme Corps d'Infanterie reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "6eme Division de Cavalerie"
-location = 3149 
-
-regiment = {
-type = cavalry_brigade
-name = "5eme brigade de Cuirassier"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = cavalry_brigade
-name = "6eme brigade de Dragons"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = cavalry_brigade
-name = "6eme brigade de Cavalerie legere"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "VIIIeme Corps d'armee HQ"
-location = 3144
- 
-regiment = {
-type = hq_brigade
-name = "VIIIeme Corps d'armee HQ"
-historical_model = 2
-experience = 15
-}
-
-division = {
-name = "15eme Division d'Infanterie"
-location = 3144 
-
-regiment = {
-type = infantry_brigade
-name = "29eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "30eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = artillery_brigade
-name = "8eme brigade d'artillerie"
-historical_model = 0
-experience = 10
-}
-}
-
-division = {
-name = "16eme Division d'Infanterie"
-location = 3144 
-
-regiment = {
-type = infantry_brigade
-name = "31eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "32eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "8eme Corps d'infanterie reserve"
-location = 3144 
-
-regiment = {
-type = infantry_brigade
-name = "8eme Corps d'infanterie reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-}
-
-corps = {
-name = "XXeme Corps d'armee HQ"
-location = 2683 
-
-regiment = {
-type = hq_brigade
-name = "XXeme Corps d'armee HQ"
-historical_model = 2
-experience = 15
-}
-
-division = {
-name = "11eme Division d'Infanterie"
-location = 2683
- 
-regiment = {
-type = infantry_brigade
-name = "21eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "22eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = artillery_brigade
-name = "20eme brigade d'artillerie"
-historical_model = 0
-experience = 10
-}
-}
-
-division = {
-name = "39eme Division d'Infanterie"
-location = 2683 
-
-regiment = {
-type = infantry_brigade
-name = "77eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "78eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "10eme Division de Cavalerie"
-location = 2683
-
-regiment = {
-type = cavalry_brigade
-name = "10eme brigade de Dragons"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = cavalry_brigade
-name = "15eme brigade de Dragons"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = cavalry_brigade
-name = "9eme brigade de Cavalerie legere"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "25e Division de Gendarmerie"
-location = 3351 
-
-regiment = {
-type = militia_brigade
-name = "43eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = militia_brigade
-name = "44eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-}
-}
-}
-
-theatre = {
-name = "Bordeaux HQ"
-location = 3686 
-
-regiment = {
-type = hq_brigade
-name = "3rd HQ Brigade"
-historical_model = 0
-experience = 3
-}
-
-division = {
-name = "92eme Division d'Infanterie territoriale"
-location = 3479 
-
-regiment = {
-type = garrison_brigade
-name = "183eme brigade d'infanterie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = garrison_brigade
-name = "184eme brigade d'infanterie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "91eme Division d'Infanterie territoriale"
-location = 3961 
-
-regiment = {
-type = garrison_brigade
-name = "181eme brigade d'infanterie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = garrison_brigade
-name = "182eme brigade d'infanterie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "89eme Division d'Infanterie territoriale"
-location = 3345 
-
-regiment = {
-type = garrison_brigade
-name = "177eme brigade d'infanterie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = garrison_brigade
-name = "178eme brigade d'infanterie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "16e Division de Gendarmerie"
-location = 3479 
-
-regiment = {
-type = militia_brigade
-name = "16eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = militia_brigade
-name = "17eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "17e Division de Gendarmerie"
-location = 4228 
-
-regiment = {
-type = militia_brigade
-name = "19eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = militia_brigade
-name = "20eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "18e Division de Gendarmerie"
-location = 4229 
-
-regiment = {
-type = militia_brigade
-name = "22eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = militia_brigade
-name = "23eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "19e Division de Gendarmerie"
-location = 4230 
-
-regiment = {
-type = militia_brigade
-name = "25eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = militia_brigade
-name = "26eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "21e Division de Gendarmerie"
-location = 4106
- 
-regiment = {
-type = militia_brigade
-name = "31eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = militia_brigade
-name = "32eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "20e Division de Gendarmerie"
-location = 4038 
-
-regiment = {
-type = militia_brigade
-name = "28eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = militia_brigade
-name = "29eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "24e Division de Gendarmerie"
-location = 3757 
-
-regiment = {
-type = militia_brigade
-name = "40eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = militia_brigade
-name = "41eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "23e Division de Gendarmerie"
-location = 3826 
-
-regiment = {
-type = militia_brigade
-name = "37eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = militia_brigade
-name = "38eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "22e Division de Gendarmerie"
-location = 3969 
-
-regiment = {
-type = militia_brigade
-name = "34eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = militia_brigade
-name = "35eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "1er Division de Gendarmerie"
-location = 3815 
-
-regiment = {
-type = militia_brigade
-name = "46eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = militia_brigade
-name = "47eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "2e Division de Gendarmerie"
-location = 4098 
-regiment = {
-type = militia_brigade
-name = "49eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = militia_brigade
-name = "50eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "4e Division de Gendarmerie"
-location = 3622
- 
-regiment = {
-type = militia_brigade
-name = "55eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = militia_brigade
-name = "56eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "3e Division de Gendarmerie"
-location = 4106 
-
-regiment = {
-type = militia_brigade
-name = "52eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = militia_brigade
-name = "53eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "5e Division de Gendarmerie"
-location = 3826 
-
-regiment = {
-type = militia_brigade
-name = "58eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = militia_brigade
-name = "59eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "6e Division de Gendarmerie"
-location = 4486 
-
-regiment = {
-type = militia_brigade
-name = "61eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = militia_brigade
-name = "62eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "7e Division de Gendarmerie"
-location = 3969 
-
-regiment = {
-type = militia_brigade
-name = "64eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = militia_brigade
-name = "65eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "10e Division de Gendarmerie"
-location = 3757 
-
-regiment = {
-type = militia_brigade
-name = "70eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = militia_brigade
-name = "71eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "8e Division de Gendarmerie"
-location = 3622 
-
-regiment = {
-type = militia_brigade
-name = "67eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = militia_brigade
-name = "68eme Militia Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-corps = {
-name = "Armee des Alpes"
-location = 3824 
-
-regiment = {
-type = hq_brigade
-name = "13th HQ Brigade"
-historical_model = 0
-experience = 5
-}
-
-division = {
-name = "64eme Division d'Infanterie de reserve"
-location = 3824 
-
-regiment = {
-type = infantry_brigade
-name = "127eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = infantry_brigade
-name = "128eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "74eme Division d'Infanterie de reserve"
-location = 3824
- 
-regiment = {
-type = infantry_brigade
-name = "147eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = infantry_brigade
-name = "148eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "65eme Division d'Infanterie de reserve"
-location = 3824 
-
-regiment = {
-type = infantry_brigade
-name = "129eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = infantry_brigade
-name = "130eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "75eme Division d'Infanterie de reserve"
-location = 3824 
-
-regiment = {
-type = infantry_brigade
-name = "149eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = infantry_brigade
-name = "150eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "Alpins d'territoriale"
-location = 3824 
-
-regiment = {
-type = bergsjaeger_brigade
-name = "Chasseurs alpins Brigade"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-}
-
-army = {
-name = "4eme Armee"
-location = 3751
- 
-regiment = {
-type = hq_brigade
-name = "17th HQ Brigade"
-historical_model = 0
-experience = 5
-}
- 
-regiment = {
-type = engineer_brigade
-name = "4eme Armee Engineers"
-historical_model = 0
-experience = 5
-}
-
-corps = {
-name = "XIIeme Corps d'armee HQ"
-location = 3345 
-
-regiment = {
-type = hq_brigade
-name = "XIIeme Corps d'armee HQ"
-historical_model = 2
-experience = 15
-}
-
-division = {
-name = "23eme Division d'Infanterie"
-location = 3345 
-
-regiment = {
-type = infantry_brigade
-name = "45eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "46eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = artillery_brigade
-name = "12eme brigade d'artillerie"
-historical_model = 0
-experience = 10
-}
-}
-
-division = {
-name = "24eme Division d'Infanterie"
-location = 3345
- 
-regiment = {
-type = infantry_brigade
-name = "47eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "48eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "XVIIeme Corps d'armee HQ"
-location = 3961 
-
-regiment = {
-type = hq_brigade
-name = "XVIIeme Corps d'armee HQ"
-historical_model = 2
-experience = 15
-}
-
-division = {
-name = "33eme Division d'Infanterie"
-location = 3961 
-
-regiment = {
-type = infantry_brigade
-name = "65eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "66eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = artillery_brigade
-name = "17eme brigade d'artillerie"
-historical_model = 0
-experience = 10
-}
-}
-
-division = {
-name = "34eme Division d'Infanterie"
-location = 3961
- 
-regiment = {
-type = infantry_brigade
-name = "67eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "34eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "Corps d'armee colonial"
-location = 3751
- 
-regiment = {
-type = hq_brigade
-name = "Corps d'armee colonial HQ"
-historical_model = 2
-experience = 15
-}
-
-division = {
-name = "1re Division d'infanterie coloniale"
-location = 3751 
-
-regiment = {
-type = infantry_brigade
-name = "1re brigade d'infanterie coloniale"
-historical_model = 0
-experience = 5
-}
- 
-regiment = {
-type = infantry_brigade
-name = "2eme brigade d'infanterie coloniale"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = artillery_brigade
-name = "Brigade d'artillerie coloniale"
-historical_model = 0
-experience = 10
-}
-}
-
-division = {
-name = "2eme Division d'infanterie coloniale"
-location = 3751 
-
-regiment = {
-type = infantry_brigade
-name = "3eme brigade d'infanterie coloniale"
-historical_model = 0
-experience = 5
-}
- 
-regiment = {
-type = infantry_brigade
-name = "4eme brigade d'infanterie coloniale"
-historical_model = 0
-experience = 5
-}
-}
-
-division = {
-name = "3eme Division d'infanterie coloniale"
-location = 3751 
-
-regiment = {
-type = infantry_brigade
-name = "5eme brigade d'infanterie coloniale"
-historical_model = 0
-experience = 5
-}
- 
-regiment = {
-type = infantry_brigade
-name = "6eme brigade d'infanterie coloniale"
-historical_model = 0
-experience = 5
-}
-}
-
-division = {
-name = "9eme Division de Cavalerie"
-location = 3751 
-
-regiment = {
-type = cavalry_brigade
-name = "1re brigade de Cuirassiers"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = cavalry_brigade
-name = "9eme brigade de Dragons"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = cavalry_brigade
-name = "16eme brigade de Dragons"
-historical_model = 1
-experience = 10
-}
-}
-}
-}
-
-army = {
-name = "2eme Armee"
-location = 3686 
-
-regiment = {
-type = hq_brigade
-name = "18th HQ Brigade"
-historical_model = 0
-experience = 5
-}
- 
-regiment = {
-type = engineer_brigade
-name = "2eme Armee Engineers"
-historical_model = 0
-experience = 5
-}
-
-corps = {
-name = "XVIeme Corps d'armee HQ"
-location = 4033 
-
-regiment = {
-type = hq_brigade
-name = "XVIeme Corps d'armee HQ"
-historical_model = 2
-experience = 15
-}
-
-division = {
-name = "31eme Division d'Infanterie"
-location = 4033
- 
-regiment = {
-type = infantry_brigade
-name = "61eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "61eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = artillery_brigade
-name = "16eme brigade d'artillerie"
-historical_model = 0
-experience = 10
-}
-}
-
-division = {
-name = "32eme Division d'Infanterie"
-location = 4033
- 
-regiment = {
-type = infantry_brigade
-name = "63eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "64eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "90eme Division d'Infanterie territoriale"
-location = 4033 
-
-regiment = {
-type = garrison_brigade
-name = "179eme brigade d'infanterie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = garrison_brigade
-name = "180eme brigade d'infanterie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-}
-
-corps = {
-name = "XVeme Armee"
-location = 4229 
-
-regiment = {
-type = hq_brigade
-name = "XVeme Armee HQ"
-historical_model = 2
-experience = 15
-}
-
-division = {
-name = "29eme Division d'Infanterie"
-location = 4229 
-
-regiment = {
-type = infantry_brigade
-name = "57eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "58eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = artillery_brigade
-name = "15eme brigade d'artillerie"
-historical_model = 0
-experience = 10
-}
-}
-
-division = {
-name = "30eme Division d'Infanterie"
-location = 4229 
-
-regiment = {
-type = infantry_brigade
-name = "59eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "60eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
-}
-
-division = {
-name = "2eme Division de Cavalerie"
-location = 4229 
-
-regiment = {
-type = cavalry_brigade
-name = "2eme brigade de Dragons"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = cavalry_brigade
-name = "12eme brigade de Dragons"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = cavalry_brigade
-name = "2eme brigade de Cavalerie legere"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "XVIIIeme Corps d'armee HQ"
-location = 3479 
-
-regiment = {
-type = hq_brigade
-name = "XVIIIeme Corps d'armee HQ"
-historical_model = 2
-experience = 15
-}
-
-division = {
-name = "35eme Division d'Infanterie"
-location = 3479 
-
-regiment = {
-type = infantry_brigade
-name = "69eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "70eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = artillery_brigade
-name = "13eme brigade d'artillerie"
-historical_model = 0
-experience = 10
-}
-}
-
-division = {
-name = "36eme Division d'Infanterie"
-location = 3479 
-
-regiment = {
-type = infantry_brigade
-name = "71eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "72eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "XIIIeme Corps d'armee HQ"
-location = 3550 
-
-regiment = {
-type = hq_brigade
-name = "XIIIeme Corps d'armee HQ"
-historical_model = 2
-experience = 15
-}
-
-division = {
-name = "25eme Division d'Infanterie"
-location = 3550 
-
-regiment = {
-type = infantry_brigade
-name = "49eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "50eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = artillery_brigade
-name = "13eme brigade d'artillerie"
-historical_model = 0
-experience = 10
-}
-}
-
-division = {
-name = "26eme Division d'Infanterie"
-location = 3550 
-
-regiment = {
-type = infantry_brigade
-name = "51eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "52eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "XIVeme Corps d'armee HQ"
-location = 3687 
-
-regiment = {
-type = hq_brigade
-name = "XIVeme Corps d'armee HQ"
-historical_model = 2
-experience = 15
-}
-
-division = {
-name = "27eme Division d'Infanterie"
-location = 3687 
-
-regiment = {
-type = infantry_brigade
-name = "53eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "54eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = artillery_brigade
-name = "14eme brigade d'artillerie"
-historical_model = 0
-experience = 10
-}
-}
-
-division = {
-name = "28eme Division d'Infanterie"
-location = 3687 
-
-regiment = {
-type = infantry_brigade
-name = "55eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
- 
-regiment = {
-type = infantry_brigade
-name = "56eme brigade d'Infanterie"
-historical_model = 1
-experience = 10
-}
-}
-}
-
-corps = {
-name = "2eme groupe de reserve"
-location = 4038 
-
-regiment = {
-type = hq_brigade
-name = "7th HQ Brigade"
-historical_model = 0
-experience = 5
-}
-
-division = {
-name = "70eme Division d'Infanterie de reserve"
-location = 4038 
-
-regiment = {
-type = infantry_brigade
-name = "139eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = infantry_brigade
-name = "140eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "59eme Division d'Infanterie de reserve"
-location = 4038 
-
-regiment = {
-type = infantry_brigade
-name = "117eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = infantry_brigade
-name = "118eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "68eme Division d'Infanterie de reserve"
-location = 4038 
-
-regiment = {
-type = infantry_brigade
-name = "135eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = infantry_brigade
-name = "136eme brigade d'Infanterie de reserve"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "d'Infanterie coloniale du Toulon"
-location = 4230 
-
-regiment = {
-type = infantry_brigade
-name = "d'infanterie colonaile du Toulon"
-historical_model = 0
-experience = 5
-}
-}
-
-division = {
-name = "Legion d'Infanterie Foreign"
-location = 4230 
-
-regiment = {
-type = alpins_brigade
-name = "Legion d'Infanterie Foreign"
-historical_model = 2
-experience = 15
-}
-}
-}
-}
-}
-
-theatre = {
-name = "Tunis HQ"
-location = 5292 
-
-regiment = {
-type = hq_brigade
-name = "4th HQ Brigade"
-historical_model = 0
-experience = 3
-}
-
-corps = {
-name = "XIXeme Corps d'armee HQ"
-location = 5160 
-
-regiment = {
-type = hq_brigade
-name = "XIXeme Corps d'armee HQ"
-historical_model = 2
-experience = 15
-}
-
-division = {
-name = "Division d'Alger"
-location = 5160 
-
-regiment = {
-type = infantry_brigade
-name = "1re brigade d'infanterie d'Algerie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = cavalry_brigade
-name = "1re brigade de cavalerie d'Algerie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "Division d'Oran"
-location = 5292 
-
-regiment = {
-type = infantry_brigade
-name = "2eme Brigade d'infanterie d'Algerie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = infantry_brigade
-name = "4eme Brigade d'infanterie d'Algerie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = cavalry_brigade
-name = "2eme Brigade de Cavalerie d'Algerie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "Division de Constantine"
-location = 5198 
-
-regiment = {
-type = infantry_brigade
-name = "3eme Brigade d'infanterie d'Algerie"
-historical_model = 0
-experience = 5
-}
- 
-regiment = {
-type = cavalry_brigade
-name = "3eme brigade de Cavalerie d'Algerie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-}
-
-corps = {
-name = "Division d'occupation de Tunisie"
-location = 5134 
-
-regiment = {
-type = hq_brigade
-name = "Division d'occupation de Tunisie HQ"
-historical_model = 2
-experience = 15
-}
-
-division = {
-name = "Division d'occupation de Tunisie"
-location = 5134 
-
-regiment = {
-type = infantry_brigade
-name = "1re brigade d'occupation de Tunisie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
- 
-regiment = {
-type = cavalry_brigade
-name = "Brigade de Cavalerie de Tunisie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "2eme brigade d'occupation de Tunisie"
-location = 5232 
-
-regiment = {
-type = infantry_brigade
-name = "2eme brigade d'occupation de Tunisie"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-}
-}
-
-theatre = {
-name = "Groupe de l'Indo-Chine"
-location = 6108 
-
-regiment = {
-type = hq_brigade
-name = "5th HQ Brigade"
-historical_model = 0
-experience = 3
-}
-
-division = {
-name = "d'infanterie coloniale do Saigon"
-location = 6236 
-
-regiment = {
-type = militia_brigade
-name = "d'infanterie coloniale du Saigon"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "d'infanterie coloniale do Annam"
-location = 6108
- 
-regiment = {
-type = militia_brigade
-name = "d'infanterie colonial du Annam"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "d'infanterie coloniale du Tonkin"
-location = 5916 
-
-regiment = {
-type = militia_brigade
-name = "d'infanterie colonial du Tonkin"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-}
-
-theatre = {
-name = "Dakar HQ"
-location = 9744 
-
-regiment = {
-type = hq_brigade
-name = "6th HQ Brigade"
-historical_model = 0
-experience = 3
-}
-
-corps = {
-name = "Groupe de l'Afrique orientale"
-location = 10231 
-
-regiment = {
-type = hq_brigade
-name = "Groupe de l'Afrique orientale HQ"
-historical_model = 2
-experience = 15
-}
-
-division = {
-name = "Brigade indigene de la cote francaise des Somalis"
-location = 10231 
-
-regiment = {
-type = militia_brigade
-name = "Indigene de la francaise des Somalis"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "1re brigade de tirailleurs malgaches"
-location = 10231
- 
-regiment = {
-type = militia_brigade
-name = "1/2/3 Regiment de tirailleurs malgaches"
-historical_model = 0
-experience = 5
-is_reserve = yes
-}
-}
-}
-
-corps = {
-name = "Groupe de l'Afrique occidentale"
-location = 9741
- 
-regiment = {
-type = hq_brigade
-name = "Groupe de l'Afrique occidentale HQ"
-historical_model = 2
-experience = 15
-}
-
-division = {
-name = "1re Brigade de tirailleurs senegalais"
-location = 9729 
-
-regiment = {
-type = militia_brigade
-name = "1/2 Regiments de tirailleurs senegalais"
-historical_model = 0
-experience = 5
-}
-}
-
-division = {
-name = "2eme Brigade de tirailleurs senegalais"
-location = 9741 
-
-regiment = {
-type = militia_brigade
-name = "3/4 Regiments de tirailleurs senegalais"
-historical_model = 0
-experience = 5
-}
-}
-}
-
-corps = {
-name = "Groupe de l'Afrique Equatoriale"
-location = 10021 
-
-regiment = {
-type = hq_brigade
-name = "Groupe de l'Afrique Equatoriale HQ"
-historical_model = 2
-experience = 15
-}
-
-division = {
-name = "Regiments indigini du Gabon et Tchad"
-location = 10021 
-
-regiment = {
-type = militia_brigade
-name = "Regiments indigini du Gabon et Tchad"
-historical_model = 0
-experience = 5
-}
-}
-}
-}
-
-navy = {
-name = "1ère Armée Navale"
-location = 4230
-base = 4230
-
-ship = { type = battleship name = "Furieux" historical_model = 1 experience = 15 }
-ship = { type = heavy_cruiser name = "Achéron" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "Cocyte" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "Styx" historical_model = 0 experience = 15 }
-ship = { type = battleship name = "Jemmapes" historical_model = 5 experience = 15 }
-ship = { type = battleship name = "Valmy" historical_model = 5 experience = 15 }
-ship = { type = battleship name = "Bouvines" historical_model = 6 experience = 15 }
-ship = { type = battleship name = "Amiral Tréhouart" historical_model = 6 experience = 15 }
-ship = { type = battleship name = "Dévastation" historical_model = 0 experience = 15 }
-ship = { type = battleship name = "Terrible" historical_model = 3 experience = 15 }
-ship = { type = battleship name = "Indomptable" historical_model = 3 experience = 15 }
-ship = { type = battleship name = "Caïman" historical_model = 3 experience = 15 }
-ship = { type = battleship name = "Requin" historical_model = 3 experience = 15 }
-ship = { type = battleship name = "Formidable" historical_model = 3 experience = 15 }
-ship = { type = battleship name = "Hoche" historical_model = 3 experience = 15 }
-ship = { type = battleship name = "Marceau" historical_model = 4 experience = 15 }
-ship = { type = battleship name = "Neptune" historical_model = 4 experience = 15 }
-ship = { type = battleship name = "Brennus" historical_model = 6 experience = 15 }
-ship = { type = battleship name = "Charles Martel" historical_model = 7 experience = 15 }
-ship = { type = battleship name = "Carnot" historical_model = 7 experience = 15 }
-ship = { type = battleship name = "Jauréguiberry" historical_model = 7 experience = 15 }
-ship = { type = battleship name = "Masséna" historical_model = 8 experience = 15 }
-ship = { type = battleship name = "Bouvet" historical_model = 8 experience = 15 }
-ship = { type = battleship name = "Charlemagne" historical_model = 8 experience = 15 }
-ship = { type = battleship name = "Gaulois" historical_model = 8 experience = 15 }
-ship = { type = battleship name = "St. Louis" historical_model = 8 experience = 15 }
-ship = { type = battleship name = "Henri IV" historical_model = 10 experience = 15 }
-ship = { type = battleship name = "Suffren" historical_model = 10 experience = 15 }
-ship = { type = battleship name = "République" historical_model = 11 experience = 15 }
-ship = { type = battleship name = "Patrie" historical_model = 11 experience = 15 }
-ship = { type = battleship name = "Démocratie" historical_model = 11 experience = 15 }
-ship = { type = battleship name = "Justice" historical_model = 11 experience = 15 }
-ship = { type = battleship name = "Liberté" historical_model = 11 experience = 15 }
-ship = { type = battleship name = "Verité" historical_model = 11 experience = 15 }
-ship = { type = heavy_cruiser name = "Ernest Renan" historical_model = 8 experience = 15 }
-ship = { type = heavy_cruiser name = "Edgar Quinet" historical_model = 9 experience = 15 }
-ship = { type = heavy_cruiser name = "Waldeck-Rousseau" historical_model = 9 experience = 15 }
-ship = { type = heavy_cruiser name = "Léon Gambetta" historical_model = 6 experience = 15 }
-ship = { type = heavy_cruiser name = "Jules Ferry" historical_model = 6 experience = 15 }
-ship = { type = heavy_cruiser name = "Victor Hugo" historical_model = 6 experience = 15 }
-ship = { type = heavy_cruiser name = "Jules Michelet" historical_model = 7 experience = 15 }
-ship = { type = protected_cruiser name = "D'Entrecasteaux" historical_model = 6 experience = 15 }
-ship = { type = heavy_cruiser name = "Bruix" historical_model = 1 experience = 15 }
-ship = { type = heavy_cruiser name = "Latouche-Tréville" historical_model = 1 experience = 15 }
-ship = { type = heavy_cruiser name = "Pothuau" historical_model = 2 experience = 15 }
-
-ship = {
-name = "1e Escadrille de Contre-torpilleurs"
-type = destroyer
-historical_model = 8}
-
-ship = {
-name = "2e Escadrille de Contre-torpilleurs"
-type = destroyer
-historical_model = 7}
-
-ship = {
-name = "3e Escadrille de Contre-torpilleurs"
-type = destroyer
-historical_model = 6}
-
-ship = {
-name = "4e Escadrille de Contre-torpilleurs"
-type = destroyer
-historical_model = 5}
-}
-
-navy = {
-name = "2ème Division Légére"
-location = 2422
-base = 2422
-
-ship = { type = heavy_cruiser name = "Amiral Aube" historical_model = 5 experience = 15 }
-ship = { type = heavy_cruiser name = "Condé" historical_model = 5 experience = 15 }
-ship = { type = heavy_cruiser name = "Gloire" historical_model = 5 experience = 15 }
-ship = { type = heavy_cruiser name = "Marseillaise" historical_model = 5 experience = 15 }
-ship = { type = heavy_cruiser name = "Dupleix" historical_model = 5 experience = 15 }
-ship = { type = heavy_cruiser name = "Kléber" historical_model = 5 experience = 15 }
-ship = { type = heavy_cruiser name = "Jeanne D'Arc" historical_model = 3 experience = 15 }
-ship = { type = heavy_cruiser name = "Gueydon" historical_model = 4 experience = 15 }
-ship = { type = heavy_cruiser name = "Dupetit-Thouars" historical_model = 4 experience = 15 }
-ship = { type = protected_cruiser name = "Lavoisier" historical_model = 2 experience = 15 }
-ship = { type = protected_cruiser name = "Forbin" historical_model = 2 experience = 15 }
-ship = { type = protected_cruiser name = "Épervier" historical_model = 0 experience = 15 }
-ship = { type = protected_cruiser name = "Faucon" historical_model = 0 experience = 15 }
-ship = { type = protected_cruiser name = "Bombe" historical_model = 3 experience = 15 }
-ship = { type = protected_cruiser name = "Couleuvrine" historical_model = 3 experience = 15 }
-ship = { type = protected_cruiser name = "Flèche" historical_model = 3 experience = 15 }
-ship = { type = protected_cruiser name = "Lance" historical_model = 3 experience = 15 }
-ship = { type = protected_cruiser name = "Sainte-Barbe" historical_model = 3 experience = 15 }
-ship = { type = protected_cruiser name = "Casabianca" historical_model = 5 experience = 15 }
-ship = { type = protected_cruiser name = "Cassini" historical_model = 5 experience = 15 }
-ship = { type = protected_cruiser name = "D'Iberville" historical_model = 5 experience = 15 }
-ship = { type = protected_cruiser name = "Dunois" historical_model = 7 experience = 15 }
-ship = { type = protected_cruiser name = "La Hire" historical_model = 7 experience = 15 }
-ship = { type = protected_cruiser name = "Foudre" historical_model = 7 experience = 15 }
-ship = { type = protected_cruiser name = "Amiral Cécille" historical_model = 1 experience = 15 }
-ship = { type = protected_cruiser name = "Isly" historical_model = 2 experience = 15 }
-ship = { type = protected_cruiser name = "Friant" historical_model = 2 experience = 15 }
-ship = { type = protected_cruiser name = "Du Chayla" historical_model = 6 experience = 15 }
-ship = { type = protected_cruiser name = "Châteaurenault" historical_model = 6 experience = 15 }
-ship = { type = protected_cruiser name = "Jurien De La Gravière" historical_model = 8 experience = 15 }
-ship = { type = protected_cruiser name = "Alger" historical_model = 2 experience = 15 }
-ship = { type = protected_cruiser name = "Galilée" historical_model = 2 experience = 15 }
-ship = { type = protected_cruiser name = "Chasseloup-Laubat" historical_model = 2 experience = 15 }
-ship = { type = protected_cruiser name = "Pascal" historical_model = 2 experience = 15 }
-ship = { type = protected_cruiser name = "Catinat" historical_model = 6 experience = 15 }
-ship = { type = protected_cruiser name = "D'Estrées" historical_model = 6 experience = 15 }
-ship = { type = protected_cruiser name = "Infernet" historical_model = 6 experience = 15 }
-ship = { type = protected_cruiser name = "Surcouf" historical_model = 2 experience = 15 }
-ship = { type = protected_cruiser name = "Lalande" historical_model = 2 experience = 15 }
-ship = { type = protected_cruiser name = "Guichen" historical_model = 6 experience = 15 }
-
-
-ship = {
-name = "5e Escadrille de Contre-torpilleurs"
-type = destroyer
-historical_model = 5}
-
-ship = {
-name = "6e Escadrille de Contre-torpilleurs"
-type = destroyer
-historical_model = 5}
-
-ship = {
-name = "7e Escadrille de Contre-torpilleurs"
-type = destroyer
-historical_model = 4}
-
-}
-navy = {
-name = "Défense Mobile"
-location = 2194
-base = 2194
-
-ship = {
-name = "8e Escadrille de Contre-torpilleurs"
-type = destroyer
-historical_model = 3}
-}
-
-navy = {
-name = "Détail Speciale"
-location = 5412
-base = 5412
-
-ship = { type = heavy_cruiser name = "Dupuy de Lôme" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "Amiral Charner" historical_model = 1 experience = 15 }
-ship = { type = protected_cruiser name = "Cassard" historical_model = 6 experience = 15 }
-ship = { type = protected_cruiser name = "Cosmao" historical_model = 2 experience = 15 }
-}
-
-navy = {
-name = "Détail Orientale"
-location = 6236
-base = 6236
-
-ship = { type = heavy_cruiser name = "Dupleix" historical_model = 5 experience = 15 }
-}
-
-navy = {
-name = "Détail des Indes de l'Ouest"
-location = 485
-base = 485
-
-ship = { type = protected_cruiser name = "Descartes" historical_model = 2 experience = 15 }
-}
-
-navy = {
-name = "Détail du Pacifique de Sud"
-location = 6620
-base = 6620
-
-ship = { type = heavy_cruiser name = "Montcalm" historical_model = 4 experience = 15 }
-}
-
-navy = {
-name = "1ère Division de Sous-Marins"
-location = 2422
-base = 2422
-
-ship = {
-name = "1ère Escadrille de Sous-Marins"
-type = coastal_submarine
-historical_model = 0}
-
-}
-navy = {
-name = "2ème Division de Sous-Marins"
-location = 2194
-base = 2194
-
-ship = {
-name = "2ème Escadrille de Sous-Marins"
-type = coastal_submarine
-historical_model = 1}
-
-}
-navy = {
-name = "3ème Division de Sous-Marins"
-location = 4230
-base = 4230
-
-ship = {
-name = "3ème Escadrille de Sous-Marins"
-type = coastal_submarine
-historical_model = 1}
-
-ship = {
-name = "4ème Escadrille de Sous-Marins"
-type = coastal_submarine
-historical_model = 1}
-ship = {
-name = "5ème Escadrille de Sous-Marins"
-type = submarine
-historical_model = 0}
-ship = {
-name = "6ème Escadrille de Sous-Marins"
-type = submarine
-historical_model = 0}
-ship = {
-name = "7ème Escadrille de Sous-Marins"
-type = submarine
-historical_model = 0}
-ship = {
-name = "8ème Escadrille de Sous-Marins"
-type = submarine
-historical_model = 0}
-ship = {
-name = "9ème Escadrille de Sous-Marins"
-type = submarine
-historical_model = 0}
-
-}
-navy = {
-name = "Transport Générale"
-location = 2870
-base = 2870
-
-ship = {
-name = "1ère Flottille de Transport"
-type = transport_ship
-historical_model = 0}
-
-ship = {
-name = "2ème Flottille de Transport"
-type = transport_ship
-historical_model = 0}
-
-ship = {
-name = "3ème Flottille de Transport"
-type = transport_ship
-historical_model = 0}
-
-}
-navy = {
-name = "Transport Expéditionnaire"
-location = 5160
-base = 5160
-
-ship = {
-name = "4ème Flottille de Transport"
-type = transport_ship
-historical_model = 0}
-
-ship = {
-name = "5ème Flottille de Transport"
-type = transport_ship
-historical_model = 0}
-
-ship = {
-name = "6ème Flottille de Transport"
-type = transport_ship
-historical_model = 0}
-}
-
-military_construction = {
-country = FRA
-battleship = {
-name = "Danton"
-historical_model = 12}
-cost = 4
-progress = 0
-#duration = 390					
-duration = 190}					# Compensate for cancelled ship production
-
-military_construction = {
-country = FRA
-battleship = {
-name = "Mirabeau"
-historical_model = 12}
-cost = 4
-progress = 0
-#duration = 444
-duration = 344}					# Compensate for cancelled ship production
-
-#military_construction = {
-#country = FRA
-#battleship = {
-#name = "Voltaire"
-#historical_model = 12}
-#cost = 4
-#progress = 0
-#duration = 450}
-
-#military_construction = {
-#country = FRA
-#battleship = {
-#name = "Diderot"
-#historical_model = 12}
-#cost = 4
-#progress = 0
-#duration = 450}
-
-#military_construction = {
-#country = FRA
-#battleship = {
-#name = "Condorcet"
-#historical_model = 12}
-#cost = 4
-#progress = 0
-#duration = 450}
-
-#military_construction = {
-#country = FRA
-#battleship = {
-#name = "Vergniaud"
-#historical_model = 12}
-#cost = 4
-#progress = 0
-#duration = 501}

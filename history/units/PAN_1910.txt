@@ -1,23 +1,31 @@
-corps = {
-name = "Ejercito de Panama"
-location = 7722
-regiment = { type = hq_brigade name = "Ejercito de Panama HQ" historical_model = 0 }
+ corps = {
+	location = 7722 # Panamá
+	name = "Ejercito de Panama"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Ejercito de Panama HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 7722  # Panamá
+		is_reserve = no
+		name = "1a Brigada de Infantería"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 0 
+			name = "1a Brigada de Infantería"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 0 
+			name = "1a Brigada de Infantería"
+			historical_model = 2 
+			}
+		}
+	}
 
-division = {
-name = "1a Brigada de InfanterÃ­a"
-location = 7722
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 0
-name = "1a Brigada de InfanterÃ­a"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 0
-name = "1a Brigada de InfanterÃ­a"
-historical_model = 2}
-}
-}

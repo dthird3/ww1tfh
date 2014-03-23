@@ -1,23 +1,31 @@
-corps = {
-name = "Liberian Frontier Force"
-location = 9952
-regiment = { type = hq_brigade name = "Liberian Frontier Force HQ" historical_model = 0 }
+ corps = {
+	location = 9952 # Monrovia
+	name = "Liberian Frontier Force"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Liberian Frontier Force HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 9952  # Monrovia
+		is_reserve = no
+		name = "Liberian Frontier Force"
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 0 
+			name = "Liberian Frontier Force 1"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 0 
+			name = "Liberian Frontier Force 2"
+			historical_model = 0 
+			}
+		}
+	}
 
-division = {
-name = "Liberian Frontier Force"
-location = 9952
-is_reserve = no
-
-regiment = {
-type = militia_brigade
-experience = 0
-name = "Liberian Frontier Force 1"
-historical_model = 0}
-
-regiment = {
-type = militia_brigade
-experience = 0
-name = "Liberian Frontier Force 2"
-historical_model = 0}
-}
-}

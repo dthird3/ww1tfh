@@ -1,417 +1,987 @@
-theatre= {
+ theatre = {
+	location = 4979 # Beiping
+	leader = 99999997  # To be named once we have a mapping
 	name = "The Supreme Commander"
-	leader = 99999997
-	location = 4979
-	regiment = { type = hq_brigade name = "The Supreme Commander (Prince-Regent)" historical_model = 0 }
-	corps = {
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "The Supreme Commander (Prince-Regent)"
+		historical_model = 0 
+		}
+	
+	 corps = {
+		location = 4979 # Beiping
+		leader = 99999930  # To be named once we have a mapping
 		name = "Nine Gates Infantry Commander"
-		leader = 99999930
-		location = 4979
-		regiment = { type = hq_brigade name = "Nine Gates Infantry Commander" historical_model = 0 }
-		division= {
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "Nine Gates Infantry Commander"
+			historical_model = 0 
+			}
+		
+		 division = {
+			location = 4979 # Beiping
 			name = "Nine Gates Banner Garrison"
-			location = 4979 
-			regiment = { type = militia_brigade name = "Left Wing Banner Garrison" historical_model = 1 }
-			regiment = { type = militia_brigade name = "Right Wing Banner Garrison" historical_model = 1 }
+			
+			 regiment = {
+				type = militia_brigade 
+				name = "Left Wing Banner Garrison"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = militia_brigade 
+				name = "Right Wing Banner Garrison"
+				historical_model = 1 
+				}
+			}
 		}
-	}
-	division= {
+	
+	 division = {
+		location = 4785 # Chengde
 		name = "Rehe Lujun"
-		location = 4785 
-		regiment = { type = infantry_brigade name = "Rehe Lujun" historical_model = 1 }
-	}
-	division= {
+		
+		 regiment = {
+			type = infantry_brigade 
+			name = "Rehe Lujun"
+			historical_model = 1 
+			}
+		}
+	
+	 division = {
+		location = 4979 # Beiping
+		leader = 99999983  # To be named once we have a mapping
 		name = "Jinji Lujun Di 1 Zhen"
-		leader = 99999983
-		location = 4979 
-		regiment = { type = infantry_brigade name = "Budui Di 1 Xie/ Budui Di 2 Xie" historical_model = 1 }
-		regiment = { type = cavalry_brigade name = "Madui Di 1 Biao" historical_model = 1 }
-		regiment = { type = artillery_brigade name = "Paodui Di 1 Biao" historical_model = 1 }
-	}
-	division= {
+		
+		 regiment = {
+			type = infantry_brigade 
+			name = "Budui Di 1 Xie/ Budui Di 2 Xie"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "Madui Di 1 Biao"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			name = "Paodui Di 1 Biao"
+			historical_model = 1 
+			}
+		}
+	
+	 division = {
+		location = 5143 # Baoding
+		leader = 99999977  # To be named once we have a mapping
 		name = "Jinji Lujun Di 2 Zhen"
-		leader = 99999977
-		location = 5143
-		regiment = { type = infantry_brigade name = "Budui Di 3 Xie/ Budui Di 4 Xie" historical_model = 1 }
-		regiment = { type = cavalry_brigade name = "Madui Di 2 Biao" historical_model = 1 }
-		regiment = { type = artillery_brigade name = "Paodui Di 2 Biao" historical_model = 1 }
-	}
-	division= {
+		
+		 regiment = {
+			type = infantry_brigade 
+			name = "Budui Di 3 Xie/ Budui Di 4 Xie"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "Madui Di 2 Biao"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			name = "Paodui Di 2 Biao"
+			historical_model = 1 
+			}
+		}
+	
+	 division = {
+		location = 4452 # Xinjing
+		leader = 99999982  # To be named once we have a mapping
 		name = "Jinji Lujun Di 3 Zhen"
-		leader = 99999982
-		location = 4452
-		regiment = { type = infantry_brigade name = "Budui Di 5 Xie/ Budui Di 6 Xie" historical_model = 1 }
-		regiment = { type = cavalry_brigade name = "Madui Di 3 Biao" historical_model = 1 }
-		regiment = { type = artillery_brigade name = "Paodui Di 3 Biao" historical_model = 1 }
-	}
-
-	division= {
+		
+		 regiment = {
+			type = infantry_brigade 
+			name = "Budui Di 5 Xie/ Budui Di 6 Xie"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "Madui Di 3 Biao"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			name = "Paodui Di 3 Biao"
+			historical_model = 1 
+			}
+		}
+	
+	 division = {
+		location = 5178 # Cangzhou
+		leader = 99999981  # To be named once we have a mapping
 		name = "Jinji Lujun Di 4 Zhen"
-		leader = 99999981
-		location = 5178
-		regiment = { type = infantry_brigade name = "Budui Di 7 Xie/ Budui Di 8 Xie" historical_model = 1 }
-		regiment = { type = cavalry_brigade name = "Madui Di 4 Biao" historical_model = 1 }
-		regiment = { type = artillery_brigade name = "Paodui Di 4 Biao" historical_model = 1 }
-	}
-	division= {
+		
+		 regiment = {
+			type = infantry_brigade 
+			name = "Budui Di 7 Xie/ Budui Di 8 Xie"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "Madui Di 4 Biao"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			name = "Paodui Di 4 Biao"
+			historical_model = 1 
+			}
+		}
+	
+	 division = {
+		location = 5275 # Jinan
+		leader = 99999980  # To be named once we have a mapping
 		name = "Jinji Lujun Di 5 Zhen"
-		leader = 99999980
-		location = 5275
-		regiment = { type = infantry_brigade name = "Budui Di 9 Xie/ Budui Di 10 Xie" historical_model = 1 }
-		regiment = { type = cavalry_brigade name = "Madui Di 5 Biao" historical_model = 1 }
-		regiment = { type = artillery_brigade name = "Paodui Di 5 Biao" historical_model = 1 }
-	}	
-	division= {
+		
+		 regiment = {
+			type = infantry_brigade 
+			name = "Budui Di 9 Xie/ Budui Di 10 Xie"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "Madui Di 5 Biao"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			name = "Paodui Di 5 Biao"
+			historical_model = 1 
+			}
+		}
+	
+	 division = {
+		location = 4979 # Beiping
+		leader = 99999991  # To be named once we have a mapping
 		name = "Jinji Lujun Di 6 Zhen"
-		leader = 99999991
-		location = 4979
-		regiment = { type = infantry_brigade name = "Budui Di 11 Xie/ Budui Di 12 Xie" historical_model = 1 }
-		regiment = { type = cavalry_brigade name = "Madui Di 11 Biao" historical_model = 1 }
-		regiment = { type = artillery_brigade name = "Paodui Di 11 Biao" historical_model = 1 }
-	}
-	corps = {	
+		
+		 regiment = {
+			type = infantry_brigade 
+			name = "Budui Di 11 Xie/ Budui Di 12 Xie"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "Madui Di 11 Biao"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			name = "Paodui Di 11 Biao"
+			historical_model = 1 
+			}
+		}
+	
+	 corps = {
+		location = 5174 # Taiyuan
+		leader = 99999975  # To be named once we have a mapping
 		name = "P.G. and G.C. Shanxi"
-		leader = 99999975
-		location = 5174
-		regiment = { type = hq_brigade name = "Provincial Governor and G.C. of Shanxi" historical_model = 0 }	
-		division= {
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "Provincial Governor and G.C. of Shanxi"
+			historical_model = 0 
+			}
+		
+		 division = {
+			location = 5174 # Taiyuan
 			name = "Shanxi Lujun Huncheng Xie"
-			location = 5174
-			regiment = { type = infantry_brigade name = "Shanxi Lujun Huncheng Xie" historical_model = 1 }
+			
+			 regiment = {
+				type = infantry_brigade 
+				name = "Shanxi Lujun Huncheng Xie"
+				historical_model = 1 
+				}
+			}
 		}
-	}
-	army = {
+	
+	 army = {
+		location = 4685 # Mukden
+		leader = 99999974  # To be named once we have a mapping
 		name = "G.G. Dongsanxing"
-		leader = 99999974
-		location = 4685
-		regiment = { type = hq_brigade name = "Governor-General of Dongsanxing" historical_model = 0 }
-		division= {
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "Governor-General of Dongsanxing"
+			historical_model = 0 
+			}
+		
+		 division = {
+			location = 4685 # Mukden
+			leader = 99999933  # To be named once we have a mapping
 			name = "Dongsanxing Lujun Di 20 Zhen"
-			leader = 99999933
-			location = 4685
-			regiment = { type = infantry_brigade name = "Budui Di 39 Xie/ Budui Di 40 Xie" historical_model = 1 }
-			regiment = { type = cavalry_brigade name = "Madui Di 20 Biao" historical_model = 1 }
-		}
-		division= {
+			
+			 regiment = {
+				type = infantry_brigade 
+				name = "Budui Di 39 Xie/ Budui Di 40 Xie"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = cavalry_brigade 
+				name = "Madui Di 20 Biao"
+				historical_model = 1 
+				}
+			}
+		
+		 division = {
+			location = 4629 # Xinmin
 			name = "Fengtian Lujun Huncheng Xie "
-			location = 4629
-			regiment = { type = infantry_brigade name = "Fengtian Lujun Huncheng Xie " historical_model = 1 }
-		}
-		division= {
+			
+			 regiment = {
+				type = infantry_brigade 
+				name = "Fengtian Lujun Huncheng Xie "
+				historical_model = 1 
+				}
+			}
+		
+		 division = {
+			location = 4452 # Xinjing
 			name = "Jilin Lujun"
-			location = 4452
-			regiment = { type = infantry_brigade name = "Jilin Lujun" historical_model = 1 }
-		}
-		division= {
+			
+			 regiment = {
+				type = infantry_brigade 
+				name = "Jilin Lujun"
+				historical_model = 1 
+				}
+			}
+		
+		 division = {
+			location = 7095 # Qiqihar
 			name = "Heilongjiang Lujun"
-			location = 7095
-			regiment = { type = infantry_brigade name = "Heilongjiang Lujun" historical_model = 1 }
+			
+			 regiment = {
+				type = infantry_brigade 
+				name = "Heilongjiang Lujun"
+				historical_model = 1 
+				}
+			}
 		}
-	}
-	army = {
+	
+	 army = {
+		location = 5018 # Tianjin
+		leader = 99999979  # To be named once we have a mapping
 		name = "G.G. Zhili"
-		leader = 99999979
-		location = 5018
-		regiment = { type = hq_brigade name = "Governor-General of Zhili" historical_model = 0 }
-		corps = {	
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "Governor-General of Zhili"
+			historical_model = 0 
+			}
+		
+		 corps = {
+			location = 4886 # Miyun
+			leader = 99999978  # To be named once we have a mapping
 			name = "G.C. Zhili"
-			leader = 99999978
-			location = 4886
-			regiment = { type = hq_brigade name = "General-in-Chief of Zhili" historical_model = 0 }		
-		}
-		corps = {	
+			
+			 regiment = {
+				type = hq_brigade 
+				name = "General-in-Chief of Zhili"
+				historical_model = 0 
+				}
+			}
+		
+		 corps = {
+			location = 5275 # Jinan
+			leader = 99999971  # To be named once we have a mapping
 			name = "P.G. and G.C. Shandong"
-			leader = 99999971
-			location = 5275
-			regiment = { type = hq_brigade name = "Provincial Governor and G.C. of Shandong" historical_model = 0 }
-		}
-		corps = {	
+			
+			 regiment = {
+				type = hq_brigade 
+				name = "Provincial Governor and G.C. of Shandong"
+				historical_model = 0 
+				}
+			}
+		
+		 corps = {
+			location = 5401 # Kaifeng
+			leader = 99999970  # To be named once we have a mapping
 			name = "P.G. and G.C. Henan"
-			leader = 99999970
-			location = 5401
-			regiment = { type = hq_brigade name = "Provincial Governor and G.C. of Henan" historical_model = 1 }
-			division= {
+			
+			 regiment = {
+				type = hq_brigade 
+				name = "Provincial Governor and G.C. of Henan"
+				historical_model = 1 
+				}
+			
+			 division = {
+				location = 5401 # Kaifeng
 				name = "Henan Lujun Di 29 Huncheng Xie"
-				location = 5401
-				regiment = { type = infantry_brigade name = "Di 29 Huncheng Xie" historical_model = 1 }
+				
+				 regiment = {
+					type = infantry_brigade 
+					name = "Di 29 Huncheng Xie"
+					historical_model = 1 
+					}
+				}
 			}
 		}
-	}
-	army = {
+	
+	 army = {
+		location = 9170 # Lanzhou
+		leader = 99999969  # To be named once we have a mapping
 		name = "G.G. Shaan-Gan"
-		leader = 99999969
-		location = 9170
-		regiment = { type = hq_brigade name = "Governor-General of Shaan-Gan" historical_model = 0 }
-		corps = {	
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "Governor-General of Shaan-Gan"
+			historical_model = 0 
+			}
+		
+		 corps = {
+			location = 9202 # Xifeng
+			leader = 99999968  # To be named once we have a mapping
 			name = "G.C. Shaanxi"
-			leader = 99999968
-			location = 9202
-			regiment = { type = hq_brigade name = "General-in-Chief of Shaanxi" historical_model = 0 }
-			division= {
+			
+			 regiment = {
+				type = hq_brigade 
+				name = "General-in-Chief of Shaanxi"
+				historical_model = 0 
+				}
+			
+			 division = {
+				location = 7435 # Xi'an
 				name = "Shaanxi Lujun Huncheng Xie"
-				location = 7435
-				regiment = { type = infantry_brigade name = "Shaanxi Lujun Huncheng Xie" historical_model = 1 }
+				
+				 regiment = {
+					type = infantry_brigade 
+					name = "Shaanxi Lujun Huncheng Xie"
+					historical_model = 1 
+					}
+				}
 			}
-		}
-		corps = {	
+		
+		 corps = {
+			location = 9115 # Zhangye
+			leader = 99999996  # To be named once we have a mapping
 			name = "G.C. Gansu"
-			leader = 99999996
-			location = 9115
-			regiment = { type = hq_brigade name = "General-in-Chief of Gansu" historical_model = 0 }
-			division= {
+			
+			 regiment = {
+				type = hq_brigade 
+				name = "General-in-Chief of Gansu"
+				historical_model = 0 
+				}
+			
+			 division = {
+				location = 9115 # Zhangye
 				name = "Gansu Lujun Huncheng Xie"
-				location = 9115
-				regiment = { type = infantry_brigade name = "Gansu Lujun Huncheng Xie" historical_model = 1 }
+				
+				 regiment = {
+					type = infantry_brigade 
+					name = "Gansu Lujun Huncheng Xie"
+					historical_model = 1 
+					}
+				}
 			}
-		}
-		corps = {	
+		
+		 corps = {
+			location = 8955 # Ürümqi
+			leader = 99999967  # To be named once we have a mapping
 			name = "P.G. and G.C. Gan-Xin"
-			leader = 99999967
-			location = 8955
-			regiment = { type = hq_brigade name = "Provincial Governor and G.C. of Gan-Xin" historical_model = 0 }
-			division= {
+			
+			 regiment = {
+				type = hq_brigade 
+				name = "Provincial Governor and G.C. of Gan-Xin"
+				historical_model = 0 
+				}
+			
+			 division = {
+				location = 8955 # Ürümqi
 				name = "Xinjiang Lujun Di 35 Huncheng Xie"
-				location = 8955
-				regiment = { type = infantry_brigade name = "Di 35 Huncheng Xie" historical_model = 1 }
-			}
-			division= {
+				
+				 regiment = {
+					type = infantry_brigade 
+					name = "Di 35 Huncheng Xie"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 8953 # Yining
 				name = "Ili Lujun Huncheng Xie"
-				location = 8953
-				regiment = { type = infantry_brigade name = "Ili Lujun Huncheng Xie" historical_model = 1 }
+				
+				 regiment = {
+					type = infantry_brigade 
+					name = "Ili Lujun Huncheng Xie"
+					historical_model = 1 
+					}
+				}
 			}
 		}
-	}
-	army = {
+	
+	 army = {
+		location = 5494 # Nanjing
+		leader = 99999966  # To be named once we have a mapping
 		name = "G.G. Liangjiang"
-		leader = 99999966
-		location = 5494
-		regiment = { type = hq_brigade name = "Governor-General of Liangjiang" historical_model = 0 }
-		corps = {	
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "Governor-General of Liangjiang"
+			historical_model = 0 
+			}
+		
+		 corps = {
+			location = 5494 # Nanjing
+			leader = 99999965  # To be named once we have a mapping
 			name = "G.C. Jiangnan"
-			leader = 99999965
-			location = 5494
-			regiment = { type = hq_brigade name = "General-in-Chief of Jiangnan" historical_model = 0 }
-			division= {
+			
+			 regiment = {
+				type = hq_brigade 
+				name = "General-in-Chief of Jiangnan"
+				historical_model = 0 
+				}
+			
+			 division = {
+				location = 5573 # Suzhou
 				name = "Jiangsu Lujun Di 23 Huncheng Xie"
-				location = 5573
-				regiment = { type = infantry_brigade name = "Di 23 Huncheng Xie" historical_model = 1 }
-			}
-			division= {
+				
+				 regiment = {
+					type = infantry_brigade 
+					name = "Di 23 Huncheng Xie"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 5494 # Nanjing
+				leader = 99999964  # To be named once we have a mapping
 				name = "Jiangnan Lujun Di 9 Zhen"
-				leader = 99999964
-				location = 5494
-				regiment = { type = infantry_brigade name = "Budui Di 17 Xie/ Budui Di 18 Xie" historical_model = 1 }
-				regiment = { type = cavalry_brigade name = "Madui Di 9 Biao" historical_model = 1 }
-				regiment = { type = artillery_brigade name = "Paodui Di 9 Biao" historical_model = 1 }
-			}
-			division= {
+				
+				 regiment = {
+					type = infantry_brigade 
+					name = "Budui Di 17 Xie/ Budui Di 18 Xie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					name = "Madui Di 9 Biao"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					name = "Paodui Di 9 Biao"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 5494 # Nanjing
 				name = "Jiangning Lujun Huncheng Xie"
-				location = 5494
-				regiment = { type = infantry_brigade name = "Jiangning Lujun Huncheng Xie" historical_model = 1 }
+				
+				 regiment = {
+					type = infantry_brigade 
+					name = "Jiangning Lujun Huncheng Xie"
+					historical_model = 1 
+					}
+				}
 			}
-		}
-		corps = {	
+		
+		 corps = {
+			location = 5421 # Huaiyin
+			leader = 99999992  # To be named once we have a mapping
 			name = "G.C. Jiangbei"
-			leader = 99999992
-			location = 5421
-			regiment = { type = hq_brigade name = "General-in-Chief of Jiangbei" historical_model = 0 }
-			division= {
+			
+			 regiment = {
+				type = hq_brigade 
+				name = "General-in-Chief of Jiangbei"
+				historical_model = 0 
+				}
+			
+			 division = {
+				location = 5421 # Huaiyin
 				name = "Jiangbei Lujun Di 13 Huncheng Xie"
-				location = 5421
-				regiment = { type = infantry_brigade name = "Di 13 Huncheng Xie" historical_model = 1 }
+				
+				 regiment = {
+					type = infantry_brigade 
+					name = "Di 13 Huncheng Xie"
+					historical_model = 1 
+					}
+				}
 			}
-		}
-		corps = {	
+		
+		 corps = {
+			location = 5595 # Anqing
+			leader = 99999963  # To be named once we have a mapping
 			name = "P.G. and G.C. Anhui"
-			leader = 99999963
-			location = 5595
-			regiment = { type = hq_brigade name = "Provincial Governor and G.C. of Anhui" historical_model = 0 }
-			division= {
+			
+			 regiment = {
+				type = hq_brigade 
+				name = "Provincial Governor and G.C. of Anhui"
+				historical_model = 0 
+				}
+			
+			 division = {
+				location = 5595 # Anqing
 				name = "Anhui Lujun Di 31 Huncheng Xie"
-				location = 5595
-				regiment = { type = infantry_brigade name = "Di 31 Huncheng Xie" historical_model = 1 }
+				
+				 regiment = {
+					type = infantry_brigade 
+					name = "Di 31 Huncheng Xie"
+					historical_model = 1 
+					}
+				}
 			}
-		}
-		corps = {	
+		
+		 corps = {
+			location = 5681 # Nanchang
+			leader = 99999962  # To be named once we have a mapping
 			name = "P.G. and G.C. Jiangxi"
-			leader = 99999962
-			location = 5681
-			regiment = { type = hq_brigade name = "Provincial Governor and G.C. of Jiangxi" historical_model = 0 }
-			division= {
+			
+			 regiment = {
+				type = hq_brigade 
+				name = "Provincial Governor and G.C. of Jiangxi"
+				historical_model = 0 
+				}
+			
+			 division = {
+				location = 5681 # Nanchang
 				name = "Jiangxi Lujun Di 27 Huncheng Xie"
-				location = 5681
-				regiment = { type = infantry_brigade name = "Di 27 Huncheng Xie" historical_model = 1 }
+				
+				 regiment = {
+					type = infantry_brigade 
+					name = "Di 27 Huncheng Xie"
+					historical_model = 1 
+					}
+				}
 			}
 		}
-	}
-	army = {
+	
+	 army = {
+		location = 7508 # Wuhan
+		leader = 99999961  # To be named once we have a mapping
 		name = "G.G. Hubei-Hunan"
-		leader = 99999961
-		location = 7508
-		regiment = { type = hq_brigade name = "Governor-General of Hubei-Hunan" historical_model = 0 }
-		corps = {	
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "Governor-General of Hubei-Hunan"
+			historical_model = 0 
+			}
+		
+		 corps = {
+			location = 5538 # Zhongxiang
+			leader = 99999960  # To be named once we have a mapping
 			name = "G.C. Hubei"
-			leader = 99999960
-			location = 5538
-			regiment = { type = hq_brigade name = "General-in-Chief of Hubei" historical_model = 0 }
-			division= {
+			
+			 regiment = {
+				type = hq_brigade 
+				name = "General-in-Chief of Hubei"
+				historical_model = 0 
+				}
+			
+			 division = {
+				location = 7508 # Wuhan
 				name = "Hubei Lujun Di 21 Huncheng Xie"
-				location = 7508
-				regiment = { type = infantry_brigade name = "Di 21 Huncheng Xie" historical_model = 1 }
-			}
-			division= {
+				
+				 regiment = {
+					type = infantry_brigade 
+					name = "Di 21 Huncheng Xie"
+					historical_model = 1 
+					}
+				}
+			
+			 division = {
+				location = 7508 # Wuhan
 				name = "Hubei Lujun Di 8 Zhen"
-				location = 7508
-				regiment = { type = infantry_brigade name = "Budui Di 15 Xie/ Budui Di 16 Xie" historical_model = 1 }
-				regiment = { type = cavalry_brigade name = "Madui Di 8 Biao" historical_model = 1 }
-				regiment = { type = artillery_brigade name = "Paodui Di 8 Biao" historical_model = 1 }
+				
+				 regiment = {
+					type = infantry_brigade 
+					name = "Budui Di 15 Xie/ Budui Di 16 Xie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					name = "Madui Di 8 Biao"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					name = "Paodui Di 8 Biao"
+					historical_model = 1 
+					}
+				}
 			}
-		}
-		corps = {	
+		
+		 corps = {
+			location = 7537 # Hengyang
+			leader = 99999959  # To be named once we have a mapping
 			name = "G.C. Hunan"
-			leader = 99999959
-			location = 7537
-			regiment = { type = hq_brigade name = "General-in-Chief of Hunan" historical_model = 0 }
-			division= {
+			
+			 regiment = {
+				type = hq_brigade 
+				name = "General-in-Chief of Hunan"
+				historical_model = 0 
+				}
+			
+			 division = {
+				location = 7520 # Changsha
 				name = "Hunan Lujun Di 25 Huncheng Xie"
-				location = 7520
-				regiment = { type = infantry_brigade name = "Di 25 Huncheng Xie" historical_model = 1 }
+				
+				 regiment = {
+					type = infantry_brigade 
+					name = "Di 25 Huncheng Xie"
+					historical_model = 1 
+					}
+				}
 			}
 		}
-	}
-	army = {
+	
+	 army = {
+		location = 5728 # Fuzhou
+		leader = 99999958  # To be named once we have a mapping
 		name = "G.G. Min-Zhe"
-		leader = 99999958
-		location = 5728
-		regiment = { type = hq_brigade name = "Governor-General of Min-Zhe" historical_model = 0 }
-		corps = {	
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "Governor-General of Min-Zhe"
+			historical_model = 0 
+			}
+		
+		 corps = {
+			location = 5623 # Ningbo
+			leader = 99999957  # To be named once we have a mapping
 			name = "G.C. Zhejiang"
-			leader = 99999957
-			location = 5623
-			regiment = { type = hq_brigade name = "General-in-Chief of Zhejiang" historical_model = 0 }
-			division= {
+			
+			 regiment = {
+				type = hq_brigade 
+				name = "General-in-Chief of Zhejiang"
+				historical_model = 0 
+				}
+			
+			 division = {
+				location = 5599 # Songjiang
 				name = "Zhejiang Lujun Huncheng Xie"
-				location = 5599
-				regiment = { type = infantry_brigade name = "Zhejiang Lujun Huncheng Xie" historical_model = 1 }
+				
+				 regiment = {
+					type = infantry_brigade 
+					name = "Zhejiang Lujun Huncheng Xie"
+					historical_model = 1 
+					}
+				}
 			}
-		}
-		corps = {	
+		
+		 corps = {
+			location = 5746 # Quanzhou
+			leader = 99999955  # To be named once we have a mapping
 			name = "G.C. Fujian"
-			leader = 99999955
-			location = 5746
-			regiment = { type = hq_brigade name = "General-in-Chief of Fujian" historical_model = 0 }
-			division= {
+			
+			 regiment = {
+				type = hq_brigade 
+				name = "General-in-Chief of Fujian"
+				historical_model = 0 
+				}
+			
+			 division = {
+				location = 5728 # Fuzhou
+				leader = 99999954  # To be named once we have a mapping
 				name = "Fujian Lujun Di 10 Zhen"
-				leader = 99999954
-				location = 5728
-				regiment = { type = infantry_brigade name = "Budui Di 19 Xie/ Budui Di 20 Xie" historical_model = 1 }
-				regiment = { type = cavalry_brigade name = "Madui Di 10 Biao" historical_model = 1 }
-				regiment = { type = artillery_brigade name = "Paodui Di 10 Biao" historical_model = 1 }
+				
+				 regiment = {
+					type = infantry_brigade 
+					name = "Budui Di 19 Xie/ Budui Di 20 Xie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					name = "Madui Di 10 Biao"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					name = "Paodui Di 10 Biao"
+					historical_model = 1 
+					}
+				}
 			}
 		}
-	}
-	army = {
+	
+	 army = {
+		location = 5834 # Guangzhou
+		leader = 99999953  # To be named once we have a mapping
 		name = "G.G. Liangguang"
-		leader = 99999953
-		location = 5834
-		regiment = { type = hq_brigade name = "Governor-General of Liangguang" historical_model = 0 }
-		corps = {	
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "Governor-General of Liangguang"
+			historical_model = 0 
+			}
+		
+		 corps = {
+			location = 5834 # Guangzhou
+			leader = 99999952  # To be named once we have a mapping
 			name = "G.C. Guangdong"
-			leader = 99999952
-			location = 5834
-			regiment = { type = hq_brigade name = "General-in-Chief of Guangdong" historical_model = 0 }
-			division= {
+			
+			 regiment = {
+				type = hq_brigade 
+				name = "General-in-Chief of Guangdong"
+				historical_model = 0 
+				}
+			
+			 division = {
+				location = 5834 # Guangzhou
 				name = "Guangdong Lujun Huncheng Xie"
-				location = 5834
-				regiment = { type = infantry_brigade name = "Guangdong Lujun Huncheng Xie" historical_model = 1 }
+				
+				 regiment = {
+					type = infantry_brigade 
+					name = "Guangdong Lujun Huncheng Xie"
+					historical_model = 1 
+					}
+				}
 			}
-		}
-		corps = {	
+		
+		 corps = {
+			location = 7605 # Jingxi
+			leader = 99999951  # To be named once we have a mapping
 			name = "G.C. Guangxi"
-			leader = 99999951
-			location = 7605
-			regiment = { type = hq_brigade name = "General-in-Chief of Guangxi" historical_model = 0 }
-			division= {
+			
+			 regiment = {
+				type = hq_brigade 
+				name = "General-in-Chief of Guangxi"
+				historical_model = 0 
+				}
+			
+			 division = {
+				location = 7553 # Guilin
 				name = "Guangxi Lujun Huncheng Xie"
-				location = 7553
-				regiment = { type = infantry_brigade experience = 30 name = "Guangxi Lujun Huncheng Xie" historical_model = 1 }
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 30 
+					name = "Guangxi Lujun Huncheng Xie"
+					historical_model = 1 
+					}
+				}
 			}
 		}
-	}
-	army = {
+	
+	 army = {
+		location = 9415 # Chengdu
+		leader = 99999950  # To be named once we have a mapping
 		name = "G.G. Sichuan"
-		leader = 99999950
-		location = 9415
-		regiment = { type = hq_brigade name = "Governor-General of Sichuan" historical_model = 0 }
-		corps = {	
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "Governor-General of Sichuan"
+			historical_model = 0 
+			}
+		
+		 corps = {
+			location = 9415 # Chengdu
+			leader = 99999929  # To be named once we have a mapping
 			name = "G.C. Sichuan"
-			leader = 99999929
-			location = 9415
-			regiment = { type = hq_brigade name = "General-in-Chief of Sichuan" historical_model = 0 }
-			division= {
+			
+			 regiment = {
+				type = hq_brigade 
+				name = "General-in-Chief of Sichuan"
+				historical_model = 0 
+				}
+			
+			 division = {
+				location = 9415 # Chengdu
 				name = "Sichuan Lujun Di 33 Huncheng Xie"
-				location = 9415
-				regiment = { type = infantry_brigade name = "Sichuan Lujun Di 33 Huncheng Xie" historical_model = 1 }
+				
+				 regiment = {
+					type = infantry_brigade 
+					name = "Sichuan Lujun Di 33 Huncheng Xie"
+					historical_model = 1 
+					}
+				}
 			}
 		}
-	}
-	army = {
+	
+	 army = {
+		location = 7541 # Guiyang
+		leader = 99999948  # To be named once we have a mapping
 		name = "G.G. Yun-Gui"
-		leader = 99999948
-		location = 7541
-		regiment = { type = hq_brigade name = "Governor-General of Yun-Gui" historical_model = 0 }
-		corps = {	
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "Governor-General of Yun-Gui"
+			historical_model = 0 
+			}
+		
+		 corps = {
+			location = 9527 # Dali
+			leader = 99999928  # To be named once we have a mapping
 			name = "G.C. Yunnan"
-			leader = 99999928
-			location = 9527
-			regiment = { type = hq_brigade name = "General-in-Chief of Yunnan" historical_model = 0 }
-			division= {
+			
+			 regiment = {
+				type = hq_brigade 
+				name = "General-in-Chief of Yunnan"
+				historical_model = 0 
+				}
+			
+			 division = {
+				location = 7561 # Kunming
+				leader = 99999947  # To be named once we have a mapping
 				name = "Yunnan Lujun Di 19 Zhen"
-				leader = 99999947
-				location = 7561
-				regiment = { type = infantry_brigade name = "Budui Di 37 Xie/ Budui Di 38 Xie" historical_model = 1 }
-				regiment = { type = cavalry_brigade name = "Madui Di 19 Biao" historical_model = 1 }
-				regiment = { type = artillery_brigade name = "Paodui Di 19 Biao" historical_model = 1 }
+				
+				 regiment = {
+					type = infantry_brigade 
+					name = "Budui Di 37 Xie/ Budui Di 38 Xie"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					name = "Madui Di 19 Biao"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					name = "Paodui Di 19 Biao"
+					historical_model = 1 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 7562 # Anshun
+			leader = 99999927  # To be named once we have a mapping
+			name = "G.C. Guizhou"
+			
+			 regiment = {
+				type = hq_brigade 
+				name = "General-in-Chief of Guizhou"
+				historical_model = 1 
+				}
+			
+			 division = {
+				location = 7562 # Anshun
+				name = "Guizhou Lujun"
+				
+				 regiment = {
+					type = infantry_brigade 
+					name = "Guizhou Lujun"
+					historical_model = 1 
+					}
+				}
 			}
 		}
-		corps = {	
-			name = "G.C. Guizhou"
-			leader = 99999927
-			location = 7562
-			regiment = { type = hq_brigade name = "General-in-Chief of Guizhou" historical_model = 1 }
-			division= {
-				name = "Guizhou Lujun"
-				location = 7562
-				regiment = { type = infantry_brigade name = "Guizhou Lujun" historical_model = 1 }
-			}	
+	
+	 navy = {
+		location = 5542  # Shanghai
+		base = 5542 # Shanghai
+		leader = 99999985  # To be named once we have a mapping
+		name = "Xunyang Fleet"
+		
+		 ship = {
+			type = protected_cruiser 
+			experience = 15 
+			name = "Hai Chi"
+			historical_model = 8 
+			}
+		
+		 ship = {
+			type = protected_cruiser 
+			experience = 15 
+			name = "Hai Yung"
+			historical_model = 7 
+			}
+		
+		 ship = {
+			type = protected_cruiser 
+			experience = 15 
+			name = "Hai Chou"
+			historical_model = 7 
+			}
+		
+		 ship = {
+			type = protected_cruiser 
+			experience = 15 
+			name = "Hai Chen"
+			historical_model = 7 
+			}
+		
+		 ship = {
+			type = protected_cruiser 
+			experience = 15 
+			name = "Tong Ji"
+			historical_model = 6 
+			}
+		
+		 ship = {
+			type = protected_cruiser 
+			experience = 15 
+			name = "Bao Min"
+			historical_model = 4 
+			}
+		}
+	
+	 navy = {
+		location = 5542  # Shanghai
+		base = 5542 # Shanghai
+		leader = 99999984  # To be named once we have a mapping
+		name = "Changjiang Fleet"
+		
+		 ship = {
+			type = protected_cruiser 
+			experience = 15 
+			name = "Jing Qing"
+			historical_model = 2 
+			}
+		
+		 ship = {
+			type = protected_cruiser 
+			experience = 15 
+			name = "Nan Chen"
+			historical_model = 3 
+			}
+		
+		 ship = {
+			type = protected_cruiser 
+			experience = 15 
+			name = "Deng Ying Zhou"
+			historical_model = 1 
+			}
+		
+		 ship = {
+			type = destroyer 
+			experience = 15 
+			name = "Di 1 Yuleiting Jiandui"
+			historical_model = 6 
+			}
+		
+		 ship = {
+			type = destroyer 
+			experience = 15 
+			name = "Di 2 Yuleiting Jiandui"
+			historical_model = 7 
+			}
+		
+		 ship = {
+			type = transport_ship 
+			experience = 15 
+			name = "Di 1 Yunshu Jiandui"
+			historical_model = 0 
+			}
 		}
 	}
 
-navy = {
-	name = "Xunyang Fleet"
-	leader = 99999985
-	location = 5542
-	base = 5542
-
-	ship = { type = protected_cruiser name = "Hai Chi" historical_model = 8 experience = 15 }
-	ship = { type = protected_cruiser name = "Hai Yung" historical_model = 7 experience = 15 }
-	ship = { type = protected_cruiser name = "Hai Chou" historical_model = 7 experience = 15 }
-	ship = { type = protected_cruiser name = "Hai Chen" historical_model = 7 experience = 15 }
-	ship = { type = protected_cruiser name = "Tong Ji" historical_model = 6 experience = 15 }
-	ship = { type = protected_cruiser name = "Bao Min" historical_model = 4 experience = 15 }
-}
-
-navy = {
-	name = "Changjiang Fleet"
-	leader = 99999984
-	location = 5542
-	base = 5542
-
-	ship = { type = protected_cruiser name = "Jing Qing" historical_model = 2 experience = 15 }
-	ship = { type = protected_cruiser name = "Nan Chen" historical_model = 3 experience = 15 }
-	ship = { type = protected_cruiser name = "Deng Ying Zhou" historical_model = 1 experience = 15 }
-	ship = { type = destroyer name = "Di 1 Yuleiting Jiandui" historical_model = 6 experience = 15 }
-	ship = { type = destroyer name = "Di 2 Yuleiting Jiandui" historical_model = 7 experience = 15 }
-	ship = { type = transport_ship name = "Di 1 Yunshu Jiandui" historical_model = 0 experience = 15 }
-}
-}

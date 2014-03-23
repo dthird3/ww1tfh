@@ -1,92 +1,174 @@
-corps = {
-name = "Ejercito de Chile"
-location = 10336
-regiment = { type = hq_brigade name = "Ejercito de Chile HQ" historical_model = 0 }
+ corps = {
+	location = 10336 # Santiago
+	name = "Ejercito de Chile"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Ejercito de Chile HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 10336  # Santiago
+		is_reserve = no
+		name = "1. División de Infantería"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 20 
+			name = "1. División de Infantería1"
+			historical_model = 3 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 20 
+			name = "1. División de Infantería2"
+			historical_model = 3 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 20 
+			name = "1. División de Infantería4"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 10336  # Santiago
+		is_reserve = no
+		name = "2. División de Infantería"
+		
+		 regiment = {
+			type = bergsjaeger_brigade 
+			experience = 10 
+			name = "2. División de Infantería1"
+			historical_model = 3 
+			}
+		
+		 regiment = {
+			type = bergsjaeger_brigade 
+			experience = 10 
+			name = "2. División de Infantería2"
+			historical_model = 3 
+			}
+		}
+	
+	 division = {
+		location = 10336  # Santiago
+		is_reserve = no
+		name = "1. División de Montaña de Chile"
+		
+		 regiment = {
+			type = bergsjaeger_brigade 
+			experience = 5 
+			name = "1. División de Montaña de Chile1"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = bergsjaeger_brigade 
+			experience = 5 
+			name = "1. División de Montaña de Chile2"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 10336  # Santiago
+		is_reserve = no
+		name = "División Caballería nro. 1"
+		
+		 regiment = {
+			type = cavalry_brigade 
+			experience = 15 
+			name = "División Caballería nro. 11"
+			historical_model = 3 
+			}
+		
+		 regiment = {
+			type = cavalry_brigade 
+			experience = 15 
+			name = "División Caballería nro. 12"
+			historical_model = 3 
+			}
+		}
+	}
 
-division = {
-name = "1. División de Infantería"
-location = 10336
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 20
-name = "1. División de Infantería1"
-historical_model = 3}
-regiment = {
-type = infantry_brigade
-experience = 20
-name = "1. División de Infantería2"
-historical_model = 3}
+ navy = {
+	location = 10336  # Santiago
+	base = 10336 # Santiago
+	name = "Chilean Fleet"
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Huascar"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Almirante Cochrane"
+		historical_model = 1 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "Capitan Prat"
+		historical_model = 4 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "Esmeralda"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "O'Higgins"
+		historical_model = 3 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Presidente Errauriz"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Blanco Encalada"
+		historical_model = 1 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Ministro Zenteno"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "Chacabuco"
+		historical_model = 3 
+		}
+	
+	 ship = {
+		type = destroyer 
+		experience = 15 
+		name = "Flotilla des Destructores nro.1"
+		historical_model = 2 
+		}
+	}
 
-regiment = {
-type = artillery_brigade
-experience = 20
-name = "1. División de Infantería4"
-historical_model = 0}
-}
-
-division = {
-name = "2. División de Infantería"
-location = 10336
-is_reserve = no
-regiment = {
-type = bergsjaeger_brigade
-experience = 10
-name = "2. División de Infantería1"
-historical_model = 3}
-regiment = {
-type = bergsjaeger_brigade
-experience = 10
-name = "2. División de Infantería2"
-historical_model = 3}
-}
-
-division = {
-name = "1. División de Montaña de Chile"
-location = 10336
-is_reserve = no
-regiment = {
-type = bergsjaeger_brigade
-experience = 5
-name = "1. División de Montaña de Chile1"
-historical_model = 0}
-regiment = {
-type = bergsjaeger_brigade
-experience = 5
-name = "1. División de Montaña de Chile2"
-historical_model = 0}
-}
-
-division = {
-name = "División Caballería nro. 1"
-location = 10336
-is_reserve = no
-regiment = {
-type = cavalry_brigade
-experience = 15
-name = "División Caballería nro. 11"
-historical_model = 3}
-regiment = {
-type = cavalry_brigade
-experience = 15
-name = "División Caballería nro. 12"
-historical_model = 3}
-}
-}
-
-navy = {
-name = "Chilean Fleet"
-location = 10336
-base = 10336
-
-ship = { type = battleship name = "Huascar" historical_model = 0 experience = 15 }
-ship = { type = battleship name = "Almirante Cochrane" historical_model = 1 experience = 15 }
-ship = { type = battleship name = "Capitan Prat" historical_model = 4 experience = 15 }
-ship = { type = heavy_cruiser name = "Esmeralda" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "O'Higgins" historical_model = 3 experience = 15 }
-ship = { type = protected_cruiser name = "Presidente Errauriz" historical_model = 0 experience = 15 }
-ship = { type = protected_cruiser name = "Blanco Encalada" historical_model = 1 experience = 15 }
-ship = { type = protected_cruiser name = "Ministro Zenteno" historical_model = 2 experience = 15 }
-ship = { type = protected_cruiser name = "Chacabuco" historical_model = 3 experience = 15 }
-ship = { type = destroyer name = "Flotilla des Destructores nro.1" historical_model = 2 experience = 15 }
-}
