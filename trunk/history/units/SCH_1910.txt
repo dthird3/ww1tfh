@@ -1,172 +1,231 @@
-corps = {
-name = "I Armeekorps"
-location = 3422
-regiment = { type = hq_brigade name = "I Armeekorps HQ" historical_model = 0 }
+ corps = {
+	location = 3422 # Bern
+	name = "I Armeekorps"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "I Armeekorps HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 3422  # Bern
+		is_reserve = no
+		name = "1. Felddivision"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "1. Felddivision"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "1. Felddivision"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 10 
+			name = "1. Felddivision"
+			historical_model = 0 
+			}
+		}
+	}
 
-division = {
-name = "1. Felddivision"
-location = 3422
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "1. Felddivision"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "1. Felddivision"
-historical_model = 2}
-regiment = {
-type = artillery_brigade
-experience = 10
-name = "1. Felddivision"
-historical_model = 0}
-}
+ corps = {
+	location = 3285 # Zürich
+	name = "II Corps d' Armée"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "II Corps d' Armée HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 3285  # Zürich
+		is_reserve = no
+		name = "2. Division d' Infanterie"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "2. Division d' Infanterie"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "2. Division d' Infanterie"
+			historical_model = 1 
+			}
+		}
+	
+	 division = {
+		location = 3285  # Zürich
+		is_reserve = yes
+		name = "1. Alpenjägerdivision"
+		
+		 regiment = {
+			type = bergsjaeger_brigade 
+			experience = 10 
+			name = "1. Alpenjägerdivision"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = bergsjaeger_brigade 
+			experience = 10 
+			name = "1. Alpenjägerdivision"
+			historical_model = 2 
+			}
+		}
+	}
 
-}
-corps = {
-name = "II Corps d' Armée"
-location = 3285
-regiment = { type = hq_brigade name = "II Corps d' Armée HQ" historical_model = 0 }
+ corps = {
+	location = 3554 # Genève
+	name = "III Corpa di Armata"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "III Corpa di Armata HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 3554  # Genève
+		is_reserve = no
+		name = "3. Divisione di Fanteria"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "3. Divisione di Fanteria"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "3. Divisione di Fanteria"
+			historical_model = 1 
+			}
+		}
+	
+	 division = {
+		location = 3554  # Genève
+		is_reserve = no
+		name = "4. Felddivisionen"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "4. Felddivisionen"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "4. Felddivisionen"
+			historical_model = 2 
+			}
+		}
+	
+	 division = {
+		location = 3554  # Genève
+		is_reserve = yes
+		name = "2. Div. de Infanterie de Montagne"
+		
+		 regiment = {
+			type = bergsjaeger_brigade 
+			experience = 10 
+			name = "2. Div. de Infanterie de Montagne"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = bergsjaeger_brigade 
+			experience = 10 
+			name = "2. Div. de Infanterie de Montagne"
+			historical_model = 2 
+			}
+		}
+	}
 
-division = {
-name = "2. Division d' Infanterie"
-location = 3285
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "2. Division d' Infanterie"
-historical_model = 1}
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "2. Division d' Infanterie"
-historical_model = 1}
-}
+ corps = {
+	location = 3491 # Locarno
+	name = "IV Armeekorps"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "IV Armeekorps HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 3491  # Locarno
+		is_reserve = no
+		name = "5. Division d' Infanterie"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "5. Division d' Infanterie"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "5. Division d' Infanterie"
+			historical_model = 1 
+			}
+		}
+	
+	 division = {
+		location = 3491  # Locarno
+		is_reserve = no
+		name = "6. Divisione di Fanteria"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "6. Divisione di Fanteria"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "6. Divisione di Fanteria"
+			historical_model = 1 
+			}
+		}
+	
+	 division = {
+		location = 3491  # Locarno
+		is_reserve = yes
+		name = "3. Divisione di Alpinisti"
+		
+		 regiment = {
+			type = bergsjaeger_brigade 
+			experience = 10 
+			name = "3. Divisione di Alpinisti"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = bergsjaeger_brigade 
+			experience = 10 
+			name = "3. Divisione di Alpinisti"
+			historical_model = 2 
+			}
+		}
+	}
 
-division = {
-name = "1. Alpenjägerdivision"
-location = 3285
-is_reserve = yes
-regiment = {
-type = bergsjaeger_brigade
-experience = 10
-name = "1. Alpenjägerdivision"
-historical_model = 2}
-regiment = {
-type = bergsjaeger_brigade
-experience = 10
-name = "1. Alpenjägerdivision"
-historical_model = 2}
-}
-}
-
-corps = {
-name = "III Corpa di Armata"
-location = 3554
-regiment = { type = hq_brigade name = "III Corpa di Armata HQ" historical_model = 0 }
-
-division = {
-name = "3. Divisione di Fanteria"
-location = 3554
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "3. Divisione di Fanteria"
-historical_model = 1}
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "3. Divisione di Fanteria"
-historical_model = 1}
-}
-
-division = {
-name = "4. Felddivisionen"
-location = 3554
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "4. Felddivisionen"
-historical_model = 2}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "4. Felddivisionen"
-historical_model = 2}
-}
-
-division = {
-name = "2. Div. de Infanterie de Montagne"
-location = 3554
-is_reserve = yes
-regiment = {
-type = bergsjaeger_brigade
-experience = 10
-name = "2. Div. de Infanterie de Montagne"
-historical_model = 2}
-regiment = {
-type = bergsjaeger_brigade
-experience = 10
-name = "2. Div. de Infanterie de Montagne"
-historical_model = 2}
-}
-}
-
-corps = {
-name = "IV Armeekorps"
-location = 3491
-regiment = { type = hq_brigade name = "IV Armeekorps HQ" historical_model = 0 }
-
-division = {
-name = "5. Division d' Infanterie"
-location = 3491
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "5. Division d' Infanterie"
-historical_model = 1}
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "5. Division d' Infanterie"
-historical_model = 1}
-}
-
-division = {
-name = "6. Divisione di Fanteria"
-location = 3491
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "6. Divisione di Fanteria"
-historical_model = 1}
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "6. Divisione di Fanteria"
-historical_model = 1}
-}
-
-division = {
-name = "3. Divisione di Alpinisti"
-location = 3491
-is_reserve = yes
-regiment = {
-type = bergsjaeger_brigade
-experience = 10
-name = "3. Divisione di Alpinisti"
-historical_model = 2}
-regiment = {
-type = bergsjaeger_brigade
-experience = 10
-name = "3. Divisione di Alpinisti"
-historical_model = 2}
-}
-}

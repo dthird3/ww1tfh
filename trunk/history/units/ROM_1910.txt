@@ -1,295 +1,371 @@
-theatre = {
-name = "Royal Romanian Army"
-location = 3917
-regiment = { type = hq_brigade name = "Royal Romanian Army HQ" historical_model = 0 }
+ theatre = {
+	location = 3917 # Bucuresti
+	name = "Royal Romanian Army"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Royal Romanian Army HQ"
+		historical_model = 0 
+		}
+	
+	 corps = {
+		location = 3987 # Craiova
+		name = "I Corps"
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "I Corps HQ"
+			historical_model = 0 
+			}
+		
+		 division = {
+			location = 3987  # Craiova
+			is_reserve = no
+			name = "Divizia 1 Infanterie"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "1. Infanterie Brigazi"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "2. Infanterie Brigazi"
+				historical_model = 1 
+				}
+			}
+		
+		 division = {
+			location = 3987  # Craiova
+			is_reserve = no
+			name = "Divizia 2 Infanterie"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "4. Infanterie Brigazi"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "33. Infanterie Brigazi"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = artillery_brigade 
+				experience = 10 
+				name = "2. Artillerie Brigazi"
+				historical_model = 0 
+				}
+			}
+		}
+	
+	 corps = {
+		location = 3917 # Bucuresti
+		name = "II Corps"
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "II Corps HQ"
+			historical_model = 0 
+			}
+		
+		 division = {
+			location = 3917  # Bucuresti
+			is_reserve = yes
+			name = "Divizia 3 Infanterie"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "5. Infanterie Brigazi"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "6. Infanterie Brigazi"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = artillery_brigade 
+				experience = 5 
+				name = "3. Artillerie Brigazi"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 3917  # Bucuresti
+			is_reserve = no
+			name = "Divizia 4 Infanterie"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "8. Infanterie Brigazi"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "34. Infanterie Brigazi"
+				historical_model = 1 
+				}
+			}
+		
+		 division = {
+			location = 3917  # Bucuresti
+			is_reserve = no
+			name = "Divizia 9 Infanterie"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "19. Infanterie Brigazi"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "Frim. Infanterie Brigazi"
+				historical_model = 1 
+				}
+			}
+		
+		 division = {
+			location = 3987  # Craiova
+			is_reserve = no
+			name = "1. Brigazi Calarasi"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "1. Brigazi Calarasi"
+				historical_model = 1 
+				}
+			}
+		
+		 division = {
+			location = 3987  # Craiova
+			is_reserve = no
+			name = "2. Brigazi Calarasi"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "2. Brigazi Calarasi"
+				historical_model = 1 
+				}
+			}
+		}
+	
+	 corps = {
+		location = 3919 # Constanta
+		name = "III Corps"
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "III Corps HQ"
+			historical_model = 0 
+			}
+		
+		 division = {
+			location = 3919  # Constanta
+			is_reserve = no
+			name = "Divizia 5 Infanterie"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "9. Infanterie Brigazi"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "10. Infanterie Brigazi"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = artillery_brigade 
+				experience = 10 
+				name = "5. Artillerie Brigazi"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 3919  # Constanta
+			is_reserve = no
+			name = "Divizia 6 Infanterie"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "11. Infanterie Brigazi"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "12. Infanterie Brigazi"
+				historical_model = 1 
+				}
+			}
+		}
+	
+	 corps = {
+		location = 3306 # Iasi
+		name = "IV Corps"
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "IV Corps HQ"
+			historical_model = 0 
+			}
+		
+		 division = {
+			location = 3306  # Iasi
+			is_reserve = no
+			name = "Divizia 7 Infanterie"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "13. Infanterie Brigazi"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "14. Infanterie Brigazi"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = artillery_brigade 
+				experience = 10 
+				name = "7. Artillerie Brigazi"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 3306  # Iasi
+			is_reserve = yes
+			name = "Divizia 8 Infanterie"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "15. Infanterie Brigazi"
+				historical_model = 0 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "16. Infanterie Brigazi"
+				historical_model = 0 
+				}
+			}
+		}
+	
+	 corps = {
+		location = 3917 # Bucuresti
+		name = "Divizia 1 Cavalerie"
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "Divizia 1 Cavalerie HQ"
+			historical_model = 0 
+			}
+		
+		 division = {
+			location = 3917  # Bucuresti
+			is_reserve = no
+			name = "Divizia 1 Cavalerie"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "Brigazi 1. Rosiori"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "Brigazi 2. Rosiori"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "Brigazi 3. Rosiori"
+				historical_model = 1 
+				}
+			}
+		}
+	
+	 corps = {
+		location = 3919 # Constanta
+		name = "Divizia 2 Cavalerie"
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "Divizia 2 Cavalerie HQ"
+			historical_model = 0 
+			}
+		
+		 division = {
+			location = 3919  # Constanta
+			is_reserve = no
+			name = "Brigazi 4. Rosiori"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "Brigazi 5. Rosiori"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "Brigazi 6. Rosiori"
+				historical_model = 1 
+				}
+			}
+		}
+	
+	 navy = {
+		location = 3919  # Constanta
+		base = 3919 # Constanta
+		name = "Flota Marii Negre"
+		
+		 ship = {
+			type = protected_cruiser 
+			experience = 15 
+			name = "NMS Elisabeta"
+			historical_model = 0 
+			}
+		}
+	}
 
-corps = {
-name = "I Corps"
-location = 3987
-regiment = { type = hq_brigade name = "I Corps HQ" historical_model = 0 }
-
-division = {
-name = "Divizia 1 Infanterie"
-location = 3987
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "1. Infanterie Brigazi"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "2. Infanterie Brigazi"
-historical_model = 1}
-}
-
-division = {
-name = "Divizia 2 Infanterie"
-location = 3987
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "4. Infanterie Brigazi"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "33. Infanterie Brigazi"
-historical_model = 1}
-
-regiment = {
-type = artillery_brigade
-experience = 10
-name = "2. Artillerie Brigazi"
-historical_model = 0}
-}
-}
-
-corps = {
-name = "II Corps"
-location = 3917
-regiment = { type = hq_brigade name = "II Corps HQ" historical_model = 0 }
-
-division = {
-name = "Divizia 3 Infanterie"
-location = 3917
-is_reserve = yes
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "5. Infanterie Brigazi"
-historical_model = 0}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "6. Infanterie Brigazi"
-historical_model = 0}
-
-regiment = {
-type = artillery_brigade
-experience = 5
-name = "3. Artillerie Brigazi"
-historical_model = 0}
-}
-
-division = {
-name = "Divizia 4 Infanterie"
-location = 3917
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "8. Infanterie Brigazi"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "34. Infanterie Brigazi"
-historical_model = 1}
-}
-
-division = {
-name = "Divizia 9 Infanterie"
-location = 3917
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "19. Infanterie Brigazi"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "Frim. Infanterie Brigazi"
-historical_model = 1}
-}
-
-division = {
-name = "1. Brigazi Calarasi"
-location = 3987
-is_reserve = no
-
-regiment = {
-type = cavalry_brigade
-experience = 10
-name = "1. Brigazi Calarasi"
-historical_model = 1}
-}
-
-division = {
-name = "2. Brigazi Calarasi"
-location = 3987
-is_reserve = no
-
-regiment = {
-type = cavalry_brigade
-experience = 10
-name = "2. Brigazi Calarasi"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "III Corps"
-location = 3919
-regiment = { type = hq_brigade name = "III Corps HQ" historical_model = 0 }
-
-division = {
-name = "Divizia 5 Infanterie"
-location = 3919
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "9. Infanterie Brigazi"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "10. Infanterie Brigazi"
-historical_model = 1}
-
-regiment = {
-type = artillery_brigade
-experience = 10
-name = "5. Artillerie Brigazi"
-historical_model = 0}
-}
-
-division = {
-name = "Divizia 6 Infanterie"
-location = 3919
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "11. Infanterie Brigazi"
-historical_model = 1}
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "12. Infanterie Brigazi"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "IV Corps"
-location = 3306
-regiment = { type = hq_brigade name = "IV Corps HQ" historical_model = 0 }
-
-division = {
-name = "Divizia 7 Infanterie"
-location = 3306
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "13. Infanterie Brigazi"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "14. Infanterie Brigazi"
-historical_model = 1}
-
-regiment = {
-type = artillery_brigade
-experience = 10
-name = "7. Artillerie Brigazi"
-historical_model = 0}
-}
-
-division = {
-name = "Divizia 8 Infanterie"
-location = 3306
-is_reserve = yes
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "15. Infanterie Brigazi"
-historical_model = 0}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "16. Infanterie Brigazi"
-historical_model = 0}
-}
-}
-
-corps = {
-name = "Divizia 1 Cavalerie"
-location = 3917
-regiment = { type = hq_brigade name = "Divizia 1 Cavalerie HQ" historical_model = 0 }
-
-division = {
-name = "Divizia 1 Cavalerie"
-location = 3917
-is_reserve = no
-
-regiment = {
-type = cavalry_brigade
-experience = 10
-name = "Brigazi 1. Rosiori"
-historical_model = 1}
-regiment = {
-type = cavalry_brigade
-experience = 10
-name = "Brigazi 2. Rosiori"
-historical_model = 1}
-regiment = {
-type = cavalry_brigade
-experience = 10
-name = "Brigazi 3. Rosiori"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "Divizia 2 Cavalerie"
-location = 3919
-regiment = { type = hq_brigade name = "Divizia 2 Cavalerie HQ" historical_model = 0 }
-
-division = {
-name = "Brigazi 4. Rosiori"
-location = 3919
-is_reserve = no
-
-regiment = {
-type = cavalry_brigade
-experience = 10
-name = "Brigazi 5. Rosiori"
-historical_model = 1}
-
-regiment = {
-type = cavalry_brigade
-experience = 10
-name = "Brigazi 6. Rosiori"
-historical_model = 1}
-}
-}
-
-navy = {
-name = "Flota Marii Negre"
-location = 3919
-base = 3919
-ship = { type = protected_cruiser name = "NMS Elisabeta" historical_model = 0 experience = 15 }
-}
-}

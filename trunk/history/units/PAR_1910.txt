@@ -1,47 +1,58 @@
-corps = {
-name = "Ejercito de Paraguay"
-location = 10254
-regiment = { type = hq_brigade name = "Ejercito de Paraguay HQ" historical_model = 0 }
+ corps = {
+	location = 10254 # Asunción
+	name = "Ejercito de Paraguay"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Ejercito de Paraguay HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 10254  # Asunción
+		is_reserve = no
+		name = "I División de Infantería"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "I División de Infantería1"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "I División de Infantería2"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 10 
+			name = "I División de Infantería4"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 10254  # Asunción
+		is_reserve = no
+		name = "CVI Brigada de Policia Nacional"
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 0 
+			name = "CVI Brigada de Policia Nacional1"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 0 
+			name = "CVI Brigada de Policia Nacional2"
+			historical_model = 0 
+			}
+		}
+	}
 
-division = {
-name = "I División de Infantería"
-location = 10254
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "I División de Infantería1"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "I División de Infantería2"
-historical_model = 2}
-
-regiment = {
-type = artillery_brigade
-experience = 10
-name = "I División de Infantería4"
-historical_model = 0}
-}
-
-division = {
-name = "CVI Brigada de Policia Nacional"
-location = 10254
-is_reserve = no
-
-regiment = {
-type = militia_brigade
-experience = 0
-name = "CVI Brigada de Policia Nacional1"
-historical_model = 0}
-
-regiment = {
-type = militia_brigade
-experience = 0
-name = "CVI Brigada de Policia Nacional2"
-historical_model = 0}
-}
-}

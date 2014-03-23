@@ -1,475 +1,476 @@
-theatre = {
-name = "Skopje HQ"
-location = 4555
+ theatre = {
+	location = 4555 # Skopje
+	name = "Skopje HQ"
+	
+	 regiment = {
+		type = hq_brigade 
+		experience = 2 
+		name = "1st HQ Brigade"
+		historical_model = 1 
+		}
+	
+	 corps = {
+		location = 4050 # Valjevo
+		name = "Uzicka armija"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 10 
+			name = "Uzicka armija HQ"
+			historical_model = 3 
+			}
+		
+		 division = {
+			location = 4050 # Valjevo
+			name = "Sumadijska divizija II poziva"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "Sumadijska divizija II brigada 1"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "Sumadijska divizija II brigada 2"
+				historical_model = 2 
+				}
+			}
+		
+		 division = {
+			location = 4050 # Valjevo
+			name = "Uzicka brigada"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "Uzicka brigada"
+				historical_model = 2 
+				}
+			}
+		
+		 division = {
+			location = 4050 # Valjevo
+			name = "Lima sekcija"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "Lima sekcija brigada 1"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "Lima sekcija brigada 2"
+				historical_model = 2 
+				}
+			}
+		}
+	
+	 corps = {
+		location = 3912 # Beograd
+		name = "1. Armija"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 10 
+			name = "1. Armija HQ"
+			historical_model = 3 
+			}
+		
+		 division = {
+			location = 3912 # Beograd
+			name = "Timocka divizija I poziva"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "Timocka divizija I brigada 1"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "Timocka divizija I brigada 2"
+				historical_model = 2 
+				}
+			}
+		
+		 division = {
+			location = 3912 # Beograd
+			name = "Timocka divizija II poziva"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 10 
+				name = "Timocka divizija II brigada 1"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 10 
+				name = "Timocka divizija II brigada 2"
+				historical_model = 2 
+				}
+			}
+		
+		 division = {
+			location = 3912 # Beograd
+			name = "Moravska divizija II poziva"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 10 
+				name = "Moravska divizija II brigada 1"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 10 
+				name = "Moravska divizija II brigada 2"
+				historical_model = 2 
+				}
+			}
+		
+		 division = {
+			location = 3912 # Beograd
+			name = "Konjicka divizija"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "Konjicka brigada 1"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "Konjicka brigada 2"
+				historical_model = 2 
+				}
+			}
+		
+		 division = {
+			location = 3912 # Beograd
+			name = "Branicevska sekcija"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "Branicevska brigada 1"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "Branicevska brigada 2"
+				historical_model = 1 
+				}
+			}
+		}
+	
+	 corps = {
+		location = 3982 # Sabac
+		name = "2. Armija"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 10 
+			name = "2. Armija HQ"
+			historical_model = 3 
+			}
+		
+		 division = {
+			location = 3982 # Sabac
+			name = "Sumadijska divizija I poziva"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "Sumadijska divizija I brigada 1"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "Sumadijska divizija I brigada 2"
+				historical_model = 2 
+				}
+			}
+		
+		 division = {
+			location = 3982 # Sabac
+			name = "Dunavska divizija I poziva"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "Dunavska divizija I brigada 1"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "Dunavska divizija I brigada 2"
+				historical_model = 2 
+				}
+			}
+		
+		 division = {
+			location = 3982 # Sabac
+			name = "Kombinovana divizija I poziva"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "Kombinovana divizija I brigada 1"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "Kombinovana divizija I brigada 2"
+				historical_model = 2 
+				}
+			}
+		
+		 division = {
+			location = 3982 # Sabac
+			name = "Moravska divizija I poziva"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "Moravska divizija I brigada 1"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "Moravska divizija I brigada 2"
+				historical_model = 2 
+				}
+			}
+		}
+	
+	 corps = {
+		location = 4178 # Krusevac
+		name = "3. Armija"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 10 
+			name = "3. Armija HQ"
+			historical_model = 3 
+			}
+		
+		 division = {
+			location = 4178 # Krusevac
+			name = "Drinska divizija I poziva"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "Drinska divizija I brigada 1"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "Drinska divizija I brigada 2"
+				historical_model = 2 
+				}
+			}
+		
+		 division = {
+			location = 4178 # Krusevac
+			name = "Drinska divizija II poziva"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "Drinska divizija II brigada 1"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "Drinska divizija II brigada 2"
+				historical_model = 1 
+				}
+			}
+		
+		 division = {
+			location = 4178 # Krusevac
+			name = "Obrenovacska sekcija"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "Obrenovacska brigada 1"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "Obrenovacska brigada 2"
+				historical_model = 2 
+				}
+			}
+		
+		 division = {
+			location = 4178 # Krusevac
+			name = "Sabacka sekcija"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "Sabacka brigada 1"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "Sabacka brigada 2"
+				historical_model = 2 
+				}
+			}
+		
+		 division = {
+			location = 4178 # Krusevac
+			name = "Loznicka sekcija"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "Loznicka brigada 1"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "Loznicka brigada 2"
+				historical_model = 2 
+				}
+			}
+		
+		 division = {
+			location = 4178 # Krusevac
+			name = "Ljubovijska sekcija"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "Ljubovijska brigada 1"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "Ljubovijska brigada 2"
+				historical_model = 2 
+				}
+			}
+		}
+	
+	 corps = {
+		location = 4244 # Pirot
+		name = "Vardarska armija"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 10 
+			name = "Vardarska armija HQ"
+			historical_model = 3 
+			}
+		
+		 division = {
+			location = 4244 # Pirot
+			name = "Vardarska sekcija"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "Vardarska brigada 1"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "Vardarska brigada 2"
+				historical_model = 1 
+				}
+			}
+		
+		 division = {
+			location = 4244 # Pirot
+			name = "Kosovska sekcija"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "Kosovska brigada 1"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "Kosovska brigada 2"
+				historical_model = 1 
+				}
+			}
+		
+		 division = {
+			location = 4244 # Pirot
+			name = "Ibarska sekcija"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "Ibarska brigada 1"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "Ibarska brigada 2"
+				historical_model = 1 
+				}
+			}
+		}
+	}
 
-regiment = {
-type = hq_brigade
-name = "1st HQ Brigade"
-historical_model = 1
-experience = 2
-}
-
-corps = {
-name = "Uzicka armija"
-location = 4050
-
-regiment = {
-type = hq_brigade
-name = "Uzicka armija HQ"
-historical_model = 3
-experience = 10
-}
-
-division = {
-name = "Sumadijska divizija II poziva"
-location = 4050
-
-regiment = {
-type = infantry_brigade
-name = "Sumadijska divizija II brigada 1"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "Sumadijska divizija II brigada 2"
-historical_model = 2
-experience = 10
-}
-}
-
-division = {
-name = "Uzicka brigada"
-location = 4050
-
-regiment = {
-type = infantry_brigade
-name = "Uzicka brigada"
-historical_model = 2
-experience = 10
-}
-}
-
-division = {
-name = "Lima sekcija"
-location = 4050
-
-regiment = {
-type = infantry_brigade
-name = "Lima sekcija  brigada 1"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "Lima sekcija  brigada 2"
-historical_model = 2
-experience = 10
-}
-}
-}
-
-corps = {
-name = "1. Armija"
-location = 3912
-
-regiment = {
-type = hq_brigade
-name = "1. Armija HQ"
-historical_model = 3
-experience = 10
-}
-
-division = {
-name = "Timocka divizija I poziva"
-location = 3912
-
-regiment = {
-type = infantry_brigade
-name = "Timocka divizija I brigada 1"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "Timocka divizija I brigada 2"
-historical_model = 2
-experience = 10
-}
-}
-
-division = {
-name = "Timocka divizija II poziva"
-location = 3912
-
-regiment = {
-type = infantry_brigade
-name = "Timocka divizija II brigada 1"
-historical_model = 2
-experience = 10
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "Timocka divizija II brigada 2"
-historical_model = 2
-experience = 10
-is_reserve = yes
-}
-}
-
-division = {
-name = "Moravska divizija II poziva"
-location = 3912
-
-regiment = {
-type = infantry_brigade
-name = "Moravska divizija II brigada 1"
-historical_model = 2
-experience = 10
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "Moravska divizija II brigada 2"
-historical_model = 2
-experience = 10
-is_reserve = yes
-}
-}
-
-division = {
-name = "Konjicka divizija"
-location = 3912
-
-regiment = {
-type = cavalry_brigade
-name = "Konjicka brigada 1"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = cavalry_brigade
-name = "Konjicka brigada 2"
-historical_model = 2
-experience = 10
-}
-}
-
-division = {
-name = "Branicevska sekcija"
-location = 3912
-
-regiment = {
-type = infantry_brigade
-name = "Branicevska brigada 1"
-historical_model = 1
-experience = 5
-}
-
-regiment = {
-type = infantry_brigade
-name = "Branicevska brigada 2"
-historical_model = 1
-experience = 5
-}
-}
-}
-
-corps = {
-name = "2. Armija"
-location = 3982
-
-regiment = {
-type = hq_brigade
-name = "2. Armija HQ"
-historical_model = 3
-experience = 10
-}
-
-division = {
-name = "Sumadijska divizija I poziva"
-location = 3982
-
-regiment = {
-type = infantry_brigade
-name = "Sumadijska divizija I brigada 1"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "Sumadijska divizija I brigada 2"
-historical_model = 2
-experience = 10
-}
-}
-
-division = {
-name = "Dunavska divizija I poziva"
-location = 3982
-
-regiment = {
-type = infantry_brigade
-name = "Dunavska divizija I brigada 1"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "Dunavska divizija I brigada 2"
-historical_model = 2
-experience = 10
-}
-}
-
-division = {
-name = "Kombinovana divizija I poziva"
-location = 3982
-
-regiment = {
-type = infantry_brigade
-name = "Kombinovana divizija I brigada 1"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "Kombinovana divizija I brigada 2"
-historical_model = 2
-experience = 10
-}
-}
-
-division = {
-name = "Moravska divizija I poziva"
-location = 3982
-
-regiment = {
-type = infantry_brigade
-name = "Moravska divizija I brigada 1"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "Moravska divizija I brigada 2"
-historical_model = 2
-experience = 10
-}
-}
-}
-
-corps = {
-name = "3. Armija"
-location = 4178
-
-regiment = {
-type = hq_brigade
-name = "3. Armija HQ"
-historical_model = 3
-experience = 10
-}
-
-division = {
-name = "Drinska divizija I poziva"
-location = 4178
-
-regiment = {
-type = infantry_brigade
-name = "Drinska divizija I brigada 1"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "Drinska divizija I brigada 2"
-historical_model = 2
-experience = 10
-}
-}
-
-division = {
-name = "Drinska divizija II poziva"
-location = 4178
-
-regiment = {
-type = infantry_brigade
-name = "Drinska divizija II brigada 1"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "Drinska divizija II brigada 2"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "Obrenovacska sekcija"
-location = 4178
-
-regiment = {
-type = infantry_brigade
-name = "Obrenovacska brigada 1"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "Obrenovacska brigada 2"
-historical_model = 2
-experience = 10
-}
-}
-
-division = {
-name = "Sabacka sekcija"
-location = 4178
-
-regiment = {
-type = infantry_brigade
-name = "Sabacka brigada 1"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "Sabacka brigada 2"
-historical_model = 2
-experience = 10
-}
-}
-
-division = {
-name = "Loznicka sekcija"
-location = 4178
-
-regiment = {
-type = infantry_brigade
-name = "Loznicka brigada 1"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "Loznicka brigada 2"
-historical_model = 2
-experience = 10
-}
-}
-
-division = {
-name = "Ljubovijska sekcija"
-location = 4178
-
-regiment = {
-type = infantry_brigade
-name = "Ljubovijska brigada 1"
-historical_model = 2
-experience = 10
-}
-
-regiment = {
-type = infantry_brigade
-name = "Ljubovijska brigada 2"
-historical_model = 2
-experience = 10
-}
-}
-}
-
-corps = {
-name = "Vardarska armija"
-location = 4244
-
-regiment = {
-type = hq_brigade
-name = "Vardarska armija HQ"
-historical_model = 3
-experience = 10
-}
-
-division = {
-name = "Vardarska sekcija"
-location = 4244
-
-regiment = {
-type = infantry_brigade
-name = "Vardarska brigada 1"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "Vardarska brigada 2"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "Kosovska sekcija"
-location = 4244
-
-regiment = {
-type = infantry_brigade
-name = "Kosovska brigada 1"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "Kosovska brigada 2"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "Ibarska sekcija"
-location = 4244
-
-regiment = {
-type = infantry_brigade
-name = "Ibarska brigada 1"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "Ibarska brigada 2"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-}
-}

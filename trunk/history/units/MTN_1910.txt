@@ -1,79 +1,94 @@
-corps = {
-name = "Vojska Crne Gore"
-location = 4493
-regiment = { type = hq_brigade name = "Vojska Crne Gore HQ" historical_model = 0 }
+ corps = {
+	location = 4493 # Cetinje
+	name = "Vojska Crne Gore"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Vojska Crne Gore HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 4493 # Cetinje
+		name = "Pljevlja divizija"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 20 
+			name = "1. Pljevlja divizija"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 20 
+			name = "2. Pljevlja divizija"
+			historical_model = 2 
+			}
+		}
+	
+	 division = {
+		location = 4493 # Cetinje
+		name = "Hercegovina odreda"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 20 
+			name = "1. Hercegovina odreda"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 20 
+			name = "2. Hercegovina odreda"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 20 
+			name = "Hercegovina odreda"
+			historical_model = 2 
+			}
+		}
+	
+	 division = {
+		location = 4493 # Cetinje
+		name = "Lovcena odreda"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 20 
+			name = "1.Lovcena odreda"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 20 
+			name = "2. Lovcena odreda"
+			historical_model = 2 
+			}
+		}
+	
+	 division = {
+		location = 4493 # Cetinje
+		name = "Stara Srbija odreda"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 20 
+			name = "1. Stara Srbija odreda"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 20 
+			name = "2. Stara Srbija odreda"
+			historical_model = 2 
+			}
+		}
+	}
 
-division = {
-name = "Pljevlja divizija"
-location = 4493
-
-regiment = {
-type = infantry_brigade
-experience = 20
-name = "1. Pljevlja divizija"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 20
-name = "2. Pljevlja divizija"
-historical_model = 2}
-}
-
-division = {
-name = "Hercegovina odreda"
-location = 4493
-
-regiment = {
-type = infantry_brigade
-experience = 20
-name = "1. Hercegovina odreda"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 20
-name = "2. Hercegovina odreda"
-historical_model = 2}
-
-regiment = {
-type = artillery_brigade
-experience = 20
-name = "Hercegovina odreda"
-historical_model = 2}
-}
-
-division = {
-name = "Lovcena odreda"
-location = 4493
-
-regiment = {
-type = infantry_brigade
-experience = 20
-name = "1.Lovcena odreda"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 20
-name = "2. Lovcena odreda"
-historical_model = 2}
-}
-
-division = {
-name = "Stara Srbija odreda"
-location = 4493
-
-regiment = {
-type = infantry_brigade
-experience = 20
-name = "1. Stara Srbija odreda"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 20
-name = "2. Stara Srbija odreda"
-historical_model = 2}
-}
-}

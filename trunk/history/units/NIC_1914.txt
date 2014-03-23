@@ -1,29 +1,38 @@
-corps = {
-name = "Ejercito de Nicaragua"
-location = 9739
-regiment = { type = hq_brigade name = "Ejercito de Nicaragua HQ" historical_model = 0 }
+ corps = {
+	location = 9739 # Managua
+	name = "Ejercito de Nicaragua"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Ejercito de Nicaragua HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 9739  # Managua
+		is_reserve = no
+		name = "Guardia de Presidente"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 0 
+			name = "Guardia de Presidente"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 0 
+			name = "Guardia de Presidente"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 0 
+			name = "Guardia de Presidente"
+			historical_model = 0 
+			}
+		}
+	}
 
-division = {
-name = "Guardia de Presidente"
-location = 9739
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 0
-name = "Guardia de Presidente"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 0
-name = "Guardia de Presidente"
-historical_model = 2}
-
-regiment = {
-type = artillery_brigade
-experience = 0
-name = "Guardia de Presidente"
-historical_model = 0}
-}
-}

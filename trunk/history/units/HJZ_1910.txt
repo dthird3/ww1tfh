@@ -1,23 +1,31 @@
-corps = {
-name = "Hejaz Army"
-location = 9611
-regiment = { type = hq_brigade name = "Hejaz Army HQ" historical_model = 0 }
+ corps = {
+	location = 9611 # Makkah
+	name = "Hejaz Army"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Hejaz Army HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 9611  # Makkah
+		is_reserve = yes
+		name = "Hejaz Army"
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "Hejaz Army 1"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "Hejaz Army 2"
+			historical_model = 0 
+			}
+		}
+	}
 
-division = {
-name = "Hejaz Army"
-location = 9611
-is_reserve = yes
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Hejaz Army 1"
-historical_model = 0}
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Hejaz Army 2"
-historical_model = 0}
-}
-}

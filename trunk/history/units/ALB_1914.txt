@@ -1,27 +1,37 @@
-corps = {
-name = "Ushtria Kombatere"
-location = 4663
-regiment = { type = hq_brigade name = "Ushtria Kombatere HQ" historical_model = 0 }
+ corps = {
+	location = 4663 # Tirane
+	name = "Ushtria Kombatere"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Ushtria Kombatere HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 4663  # Tirane
+		is_reserve = no
+		name = "I Këmbësori Pjesëtim"
+		
+		 regiment = {
+			type = bergsjaeger_brigade 
+			experience = 10 
+			name = "I Këmbësori Pjesëtim"
+			historical_model = 2 
+			}
+		}
+	
+	 division = {
+		location = 4663  # Tirane
+		is_reserve = no
+		name = "I Polici Këmbësori Pjesëtim"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "I Polici Këmbësori Pjesëtim"
+			historical_model = 2 
+			}
+		}
+	}
 
-division = {
-name = "I Këmbësori Pjesëtim"
-location = 4663
-is_reserve = no
-regiment = {
-type = bergsjaeger_brigade
-experience = 10
-name = "I Këmbësori Pjesëtim"
-historical_model = 2}
-}
-
-division = {
-name = "I Polici Këmbësori Pjesëtim"
-location = 4663
-is_reserve = no
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "I Polici Këmbësori Pjesëtim"
-historical_model = 2}
-}
-}

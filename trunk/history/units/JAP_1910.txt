@@ -1,648 +1,1098 @@
-corps = {
-name = "1 Konoeshidan"
-location = 5315
-regiment = { type = hq_brigade name = "1 Konoeshidan HQ" historical_model = 0 }
+ corps = {
+	location = 5315 # Tokyo
+	name = "1 Konoeshidan"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "1 Konoeshidan HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 5315  # Tokyo
+		is_reserve = no
+		name = "1 Konoeshidan"
+		
+		 regiment = {
+			type = garrison_brigade 
+			experience = 5 
+			name = "1 Konoeshidan1"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = garrison_brigade 
+			experience = 5 
+			name = "1 Konoeshidan2"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 5 
+			name = "1 Konoeshidan4"
+			historical_model = 0 
+			}
+		}
+	}
+
+ corps = {
+	location = 5315 # Tokyo
+	name = "1 Hoheishidan"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "1 Hoheishidan HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 5315  # Tokyo
+		is_reserve = no
+		name = "1 Hoheishidan"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "1 Hoheishidan1"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "1 Hoheishidan2"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 10 
+			name = "1 Hoheishidan4"
+			historical_model = 0 
+			}
+		}
+	}
+
+ corps = {
+	location = 5315 # Tokyo
+	name = "2 Hoheishidan"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "2 Hoheishidan HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 5315  # Tokyo
+		is_reserve = no
+		name = "2 Hoheishidan"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "2 Hoheishidan1"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "2 Hoheishidan2"
+			historical_model = 1 
+			}
+		}
+	}
+
+ corps = {
+	location = 5543 # Nagasaki
+	name = "3 Hoheishidan"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "3 Hoheishidan HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 5543  # Nagasaki
+		is_reserve = no
+		name = "3 Hoheishidan"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "3 Hoheishidan1"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "3 Hoheishidan2"
+			historical_model = 1 
+			}
+		}
+	}
+
+ corps = {
+	location = 5315 # Tokyo
+	name = "4 Hoheishidan"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "4 Hoheishidan HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 5315  # Tokyo
+		is_reserve = no
+		name = "4 Hoheishidan"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "4 Hoheishidan1"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "4 Hoheishidan2"
+			historical_model = 1 
+			}
+		}
+	}
+
+ corps = {
+	location = 5759 # Naha
+	name = "5 Hoheishidan"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "5 Hoheishidan HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 5759  # Naha
+		is_reserve = no
+		name = "5 Hoheishidan"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "5 Hoheishidan1"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "5 Hoheishidan2"
+			historical_model = 1 
+			}
+		}
+	}
+
+ corps = {
+	location = 5456 # Matsuyama
+	name = "6 Hoheishidan"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "6 Hoheishidan HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 5456  # Matsuyama
+		is_reserve = no
+		name = "6 Hoheishidan"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "6 Hoheishidan1"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "6 Hoheishidan2"
+			historical_model = 1 
+			}
+		}
+	}
+
+ corps = {
+	location = 5346 # Nagoya
+	name = "7 Hoheishidan"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "7 Hoheishidan HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 5346  # Nagoya
+		is_reserve = no
+		name = "7 Hoheishidan"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "7 Hoheishidan1"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "7 Hoheishidan2"
+			historical_model = 1 
+			}
+		}
+	}
+
+ corps = {
+	location = 7238 # Sapporo
+	name = "8 Hoheishidan"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "8 Hoheishidan HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 7238  # Sapporo
+		is_reserve = no
+		name = "8 Hoheishidan"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "8 Hoheishidan1"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "8 Hoheishidan2"
+			historical_model = 1 
+			}
+		}
+	}
+
+ corps = {
+	location = 5370 # Osaka
+	name = "9 Hoheishidan"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "9 Hoheishidan HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 5370  # Osaka
+		is_reserve = no
+		name = "9 Hoheishidan"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "9 Hoheishidan1"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "9 Hoheishidan2"
+			historical_model = 1 
+			}
+		}
+	}
+
+ corps = {
+	location = 4986 # Akita
+	name = "10 Hoheishidan"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "10 Hoheishidan HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 4986  # Akita
+		is_reserve = no
+		name = "10 Hoheishidan"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "10 Hoheishidan1"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "10 Hoheishidan2"
+			historical_model = 1 
+			}
+		}
+	}
+
+ corps = {
+	location = 7009 # Toyohara
+	name = "11 Hoheishidan"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "11 Hoheishidan HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 7009  # Toyohara
+		is_reserve = no
+		name = "11 Hoheishidan"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "11 Hoheishidan1"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "11 Hoheishidan2"
+			historical_model = 1 
+			}
+		}
+	}
+
+ corps = {
+	location = 5425 # Hiroshima
+	name = "12 Hoheishidan"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "12 Hoheishidan HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 5425  # Hiroshima
+		is_reserve = no
+		name = "12 Hoheishidan"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "12 Hoheishidan1"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "12 Hoheishidan2"
+			historical_model = 1 
+			}
+		}
+	}
+
+ corps = {
+	location = 5641 # Kagoshima
+	name = "13 Hoheishidan"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "13 Hoheishidan HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 5641  # Kagoshima
+		is_reserve = no
+		name = "13 Hoheishidan"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "13 Hoheishidan1"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "13 Hoheishidan2"
+			historical_model = 1 
+			}
+		}
+	}
+
+ corps = {
+	location = 5218 # Kanazawa
+	name = "14 Hoheishidan"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "14 Hoheishidan HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 5218  # Kanazawa
+		is_reserve = no
+		name = "14 Hoheishidan"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "14 Hoheishidan1"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "14 Hoheishidan2"
+			historical_model = 1 
+			}
+		}
+	}
+
+ corps = {
+	location = 5056 # P'yongyang
+	name = "15 Hoheishidan"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "15 Hoheishidan HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 5056  # P'yongyang
+		is_reserve = no
+		name = "15 Hoheishidan"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "15 Hoheishidan1"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "15 Hoheishidan2"
+			historical_model = 1 
+			}
+		}
+	}
+
+ corps = {
+	location = 5809 # Gaoxiong
+	name = "16 Hoheishidan"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "16 Hoheishidan HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 5809  # Gaoxiong
+		is_reserve = no
+		name = "16 Hoheishidan"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "16 Hoheishidan1"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "16 Hoheishidan2"
+			historical_model = 1 
+			}
+		}
+	}
+
+ corps = {
+	location = 5120 # Sendai
+	name = "17 Hoheishidan"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "17 Hoheishidan HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 5120  # Sendai
+		is_reserve = no
+		name = "17 Hoheishidan"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "17 Hoheishidan1"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "17 Hoheishidan2"
+			historical_model = 1 
+			}
+		}
+	}
+
+ army = {
+	location = 5543 # Nagasaki
+	name = "Korean Army"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Korean Army HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 5543 # Nagasaki
+		name = "19. Hoheishidan"
+		
+		 regiment = {
+			type = infantry_brigade 
+			name = "73rd Infantry Regiment"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 5543 # Nagasaki
+		name = "20. Hoheishidan"
+		
+		 regiment = {
+			type = infantry_brigade 
+			name = "77th Infantry Regiment"
+			historical_model = 0 
+			}
+		}
+	}
+
+ division = {
+	location = 10642  # Iwo Jima
+	is_reserve = yes
+	name = "Iwo Jima Garrison"
+	
+	 regiment = {
+		type = garrison_brigade 
+		name = "Iwo Jima Regiment"
+		historical_model = 0 
+		}
+	}
+
+ navy = {
+	location = 5315  # Tokyo
+	base = 5315 # Tokyo
+	name = "1 Sentai"
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "IJN Katori"
+		historical_model = 11 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "IJN Sagami"
+		historical_model = 8 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "IJN Iki"
+		historical_model = 3 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "IJN Kasuga"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "IJN Nisshin"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = destroyer 
+		name = "Otowa-Sentai"
+		historical_model = 7 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "IJN Tsushima"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = destroyer 
+		name = "Tsushima-Sentai"
+		historical_model = 7 
+		}
+	}
+
+ navy = {
+	location = 5315  # Tokyo
+	base = 5315 # Tokyo
+	name = "2 Sentai"
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "IJN Iwami"
+		historical_model = 10 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "IJN Suwo"
+		historical_model = 8 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "IJN Aso"
+		historical_model = 4 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "IJN Tsukuba"
+		historical_model = 8 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "IJN Niitaka"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = destroyer 
+		name = "Niitaki-Sentai"
+		historical_model = 7 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "IJN Chitose"
+		historical_model = 3 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "IJN Kasagi"
+		historical_model = 3 
+		}
+	
+	 ship = {
+		type = destroyer 
+		name = "Chitose-Sentai"
+		historical_model = 7 
+		}
+	}
+
+ navy = {
+	location = 5218  # Kanazawa
+	base = 5218 # Kanazawa
+	name = "3 Sentai"
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "IJN Kashima"
+		historical_model = 11 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "IJN Mikasa"
+		historical_model = 9 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "IJN Okinoshima"
+		historical_model = 4 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "IJN Chin Yen"
+		historical_model = 1 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "IJN Mishima"
+		historical_model = 4 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "IJN Adzumo"
+		historical_model = 3 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "IJN Yakumo"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "IJN Asama"
+		historical_model = 1 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "IJN Chiyoda"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "IJN Tokiwa"
+		historical_model = 1 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "IJN Idzumo"
+		historical_model = 1 
+		}
+	}
+
+ navy = {
+	location = 5425  # Hiroshima
+	base = 5425 # Hiroshima
+	name = "4 Sentai"
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "IJN Tango"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "IJN Fuji"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "IJN Ikoma"
+		historical_model = 8 
+		}
+	
+	 ship = {
+		type = battlecruiser 
+		experience = 15 
+		name = "IJN Ibuki"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "IJN Iwate"
+		historical_model = 1 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "IJN Tsugaru"
+		historical_model = 4 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "IJN Soya"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "IJN Naniwa"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "IJN Takachicho"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "IJN Itsukushima"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "IJN Hashidate"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "IJN Akitsushima"
+		historical_model = 1 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "IJN Suma"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = destroyer 
+		name = "Suma-Sentai"
+		historical_model = 4 
+		}
+	}
+
+ navy = {
+	location = 5315  # Tokyo
+	base = 5315 # Tokyo
+	name = "5 Sentai"
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "IJN Shikishima"
+		historical_model = 7 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "IJN Asahi"
+		historical_model = 7 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "IJN Hizen"
+		historical_model = 9 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "IJN Okinoshima"
+		historical_model = 4 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "IJN Akashi"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = destroyer 
+		name = "Akitsushima-Sentai"
+		historical_model = 3 
+		}
+	}
+
+ navy = {
+	location = 5809  # Gaoxiong
+	base = 5809 # Gaoxiong
+	name = "6 Sentai"
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "IJN Otowa"
+		historical_model = 7 
+		}
+	
+	 ship = {
+		type = light_cruiser 
+		experience = 15 
+		name = "IJN Yodo"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = light_cruiser 
+		experience = 15 
+		name = "IJN Mogami"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "IJN Suzya"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "IJN Kasagi"
+		historical_model = 3 
+		}
+	
+	 ship = {
+		type = coastal_submarine 
+		name = "Dai 1 Sensuisentai"
+		historical_model = 1 
+		}
+	}
+
+ navy = {
+	location = 5315  # Tokyo
+	base = 5315 # Tokyo
+	name = "7 Sentai"
+	
+	 ship = {
+		type = transport_ship 
+		name = "Dai 1 Yuso Sentai"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = transport_ship 
+		name = "Dai 2 Yuso Sentai"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = transport_ship 
+		name = "Dai 3 Yuso Sentai"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = transport_ship 
+		name = "Dai 4 Yuso Sentai"
+		historical_model = 0 
+		}
+	}
+
+ military_construction = {
+	cost = 1 
+	progress = 0 
+	duration = 314 
+	country = JAP 
+	battleship = { 
+		name = "Aki"
+		historical_model = 1 
+		}
+	}
+
+ military_construction = {
+	cost = 1 
+	progress = 0 
+	duration = 297 
+	country = JAP 
+	battlecruiser = { 
+		name = "Kurama"
+		historical_model = 0 
+		}
+	}
+
+ military_construction = {
+	cost = 1 
+	progress = 0 
+	duration = 198 
+	country = JAP 
+	battleship = { 
+		name = "Satsuma"
+		historical_model = 12 
+		}
+	}
+
+ military_construction = {
+	cost = 1 
+	progress = 0 
+	duration = 5 
+	country = JAP 
+	light_cruiser = { 
+		name = "Tone"
+		historical_model = 1 
+		}
+	}
 
-division = {
-name = "1 Konoeshidan"
-location = 5315
-is_reserve = no
-
-regiment = {
-type = garrison_brigade
-experience = 5
-name = "1 Konoeshidan1"
-historical_model = 0}
-
-regiment = {
-type = garrison_brigade
-experience = 5
-name = "1 Konoeshidan2"
-historical_model = 0}
-
-regiment = {
-type = artillery_brigade
-experience = 5
-name = "1 Konoeshidan4"
-historical_model = 0}
-}
-}
-
-corps = {
-name = "1 Hoheishidan"
-location = 5315
-regiment = { type = hq_brigade name = "1 Hoheishidan HQ" historical_model = 0 }
-
-division = {
-name = "1 Hoheishidan"
-location = 5315
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "1 Hoheishidan1"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "1 Hoheishidan2"
-historical_model = 2}
-
-regiment = {
-type = artillery_brigade
-experience = 10
-name = "1 Hoheishidan4"
-historical_model = 0}
-}
-}
-
-corps = {
-name = "2 Hoheishidan"
-location = 5315
-regiment = { type = hq_brigade name = "2 Hoheishidan HQ" historical_model = 0 }
-
-division = {
-name = "2 Hoheishidan"
-location = 5315
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "2 Hoheishidan1"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "2 Hoheishidan2"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "3 Hoheishidan"
-location = 5543
-regiment = { type = hq_brigade name = "3 Hoheishidan HQ" historical_model = 0 }
-
-division = {
-name = "3 Hoheishidan"
-location = 5543
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "3 Hoheishidan1"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "3 Hoheishidan2"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "4 Hoheishidan"
-location = 5315
-regiment = { type = hq_brigade name = "4 Hoheishidan HQ" historical_model = 0 }
-
-division = {
-name = "4 Hoheishidan"
-location = 5315
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "4 Hoheishidan1"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "4 Hoheishidan2"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "5 Hoheishidan"
-location = 5759
-regiment = { type = hq_brigade name = "5 Hoheishidan HQ" historical_model = 0 }
-
-division = {
-name = "5 Hoheishidan"
-location = 5759
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "5 Hoheishidan1"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "5 Hoheishidan2"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "6 Hoheishidan"
-location = 5456
-regiment = { type = hq_brigade name = "6 Hoheishidan HQ" historical_model = 0 }
-
-division = {
-name = "6 Hoheishidan"
-location = 5456
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "6 Hoheishidan1"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "6 Hoheishidan2"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "7 Hoheishidan"
-location = 5346
-regiment = { type = hq_brigade name = "7 Hoheishidan HQ" historical_model = 0 }
-
-division = {
-name = "7 Hoheishidan"
-location = 5346
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "7 Hoheishidan1"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "7 Hoheishidan2"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "8 Hoheishidan"
-location = 7238
-regiment = { type = hq_brigade name = "8 Hoheishidan HQ" historical_model = 0 }
-
-division = {
-name = "8 Hoheishidan"
-location = 7238
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "8 Hoheishidan1"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "8 Hoheishidan2"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "9 Hoheishidan"
-location = 5370
-regiment = { type = hq_brigade name = "9 Hoheishidan HQ" historical_model = 0 }
-
-division = {
-name = "9 Hoheishidan"
-location = 5370
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "9 Hoheishidan1"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "9 Hoheishidan2"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "10 Hoheishidan"
-location = 4986
-regiment = { type = hq_brigade name = "10 Hoheishidan HQ" historical_model = 0 }
-
-division = {
-name = "10 Hoheishidan"
-location = 4986
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "10 Hoheishidan1"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "10 Hoheishidan2"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "11 Hoheishidan"
-location = 7009
-regiment = { type = hq_brigade name = "11 Hoheishidan HQ" historical_model = 0 }
-
-division = {
-name = "11 Hoheishidan"
-location = 7009
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "11 Hoheishidan1"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "11 Hoheishidan2"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "12 Hoheishidan"
-location = 5425
-regiment = { type = hq_brigade name = "12 Hoheishidan HQ" historical_model = 0 }
-
-division = {
-name = "12 Hoheishidan"
-location = 5425
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "12 Hoheishidan1"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "12 Hoheishidan2"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "13 Hoheishidan"
-location = 5641
-regiment = { type = hq_brigade name = "13 Hoheishidan HQ" historical_model = 0 }
-
-division = {
-name = "13 Hoheishidan"
-location = 5641
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "13 Hoheishidan1"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "13 Hoheishidan2"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "14 Hoheishidan"
-location = 5218
-regiment = { type = hq_brigade name = "14 Hoheishidan HQ" historical_model = 0 }
-
-division = {
-name = "14 Hoheishidan"
-location = 5218
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "14 Hoheishidan1"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "14 Hoheishidan2"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "15 Hoheishidan"
-location = 5056
-regiment = { type = hq_brigade name = "15 Hoheishidan HQ" historical_model = 0 }
-
-division = {
-name = "15 Hoheishidan"
-location = 5056
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "15 Hoheishidan1"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "15 Hoheishidan2"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "16 Hoheishidan"
-location = 5809
-regiment = { type = hq_brigade name = "16 Hoheishidan HQ" historical_model = 0 }
-
-division = {
-name = "16 Hoheishidan"
-location = 5809
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "16 Hoheishidan1"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "16 Hoheishidan2"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "17 Hoheishidan"
-location = 5120
-regiment = { type = hq_brigade name = "17 Hoheishidan HQ" historical_model = 0 }
-
-division = {
-name = "17 Hoheishidan"
-location = 5120
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "17 Hoheishidan1"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "17 Hoheishidan2"
-historical_model = 1}
-}
-}
-
-army = {
-name = "Korean Army"
-location = 5543
-regiment = { type = hq_brigade name = "Korean Army HQ" historical_model = 0 }
-
-division = {
-name = "19. Hoheishidan"
-location = 5543
-regiment = { type = infantry_brigade name = "73rd Infantry Regiment" historical_model = 0 }
-
-}
-
-division = {
-name = "20. Hoheishidan"
-location = 5543
-regiment = { type = infantry_brigade name = "77th Infantry Regiment" historical_model = 0 }
-}
-}
-
-division = {
-name = "Iwo Jima Garrison"
-location = 10642
-is_reserve = yes
-regiment = { type = garrison_brigade name = "Iwo Jima Regiment" historical_model = 0 }
-}
-
-
-navy = {
-name = "1 Sentai"
-location = 5315
-base = 5315
-
-ship = { type = battleship name = "IJN Katori" historical_model = 11 experience = 15 }
-ship = { type = battleship name = "IJN Sagami" historical_model = 8 experience = 15 }
-ship = { type = battleship name = "IJN Iki" historical_model = 3 experience = 15 }
-ship = { type = heavy_cruiser name = "IJN Kasuga" historical_model = 5 experience = 15 }
-ship = { type = heavy_cruiser name = "IJN Nisshin" historical_model = 5 experience = 15 }
-ship = {
-name = "Otowa-Sentai"
-type = destroyer
-historical_model = 7}
-ship = { type = protected_cruiser name = "IJN Tsushima" historical_model = 5 experience = 15 }
-ship = {
-name = "Tsushima-Sentai"
-type = destroyer
-historical_model = 7}
-}
-
-navy = {
-name = "2 Sentai"
-location = 5315
-base = 5315
-
-ship = { type = battleship name = "IJN Iwami" historical_model = 10 experience = 15 }
-ship = { type = battleship name = "IJN Suwo" historical_model = 8 experience = 15 }
-ship = { type = heavy_cruiser name = "IJN Aso" historical_model = 4 experience = 15 }
-ship = { type = heavy_cruiser name = "IJN Tsukuba" historical_model = 8 experience = 15 }
-ship = { type = protected_cruiser name = "IJN Niitaka" historical_model = 5 experience = 15 }
-ship = {
-name = "Niitaki-Sentai"
-type = destroyer
-historical_model = 7}
-
-ship = { type = protected_cruiser name = "IJN Chitose" historical_model = 3 experience = 15 }
-ship = { type = protected_cruiser name = "IJN Kasagi" historical_model = 3 experience = 15 }
-ship = {
-name = "Chitose-Sentai"
-type = destroyer
-historical_model = 7}
-}
-
-navy = {
-name = "3 Sentai"
-location = 5218
-base = 5218
-
-ship = { type = battleship name = "IJN Kashima" historical_model = 11 experience = 15 }
-ship = { type = battleship name = "IJN Mikasa" historical_model = 9 experience = 15 }
-ship = { type = battleship name = "IJN Okinoshima" historical_model = 4 experience = 15 }
-ship = { type = battleship name = "IJN Chin Yen" historical_model = 1 experience = 15 }
-ship = { type = battleship name = "IJN Mishima" historical_model = 4 experience = 15 }
-ship = { type = heavy_cruiser name = "IJN Adzumo" historical_model = 3 experience = 15 }
-ship = { type = heavy_cruiser name = "IJN Yakumo" historical_model = 2 experience = 15 }
-ship = { type = heavy_cruiser name = "IJN Asama" historical_model = 1 experience = 15 }
-ship = { type = heavy_cruiser name = "IJN Chiyoda" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "IJN Tokiwa" historical_model = 1 experience = 15 }
-ship = { type = heavy_cruiser name = "IJN Idzumo" historical_model = 1 experience = 15 }
-}
-
-navy = {
-name = "4 Sentai"
-location = 5425
-base = 5425
-ship = { type = battleship name = "IJN Tango" historical_model = 6 experience = 15 }
-ship = { type = battleship name = "IJN Fuji" historical_model = 5 experience = 15 }
-ship = { type = heavy_cruiser name = "IJN Ikoma" historical_model = 8 experience = 15 }
-ship = { type = battlecruiser name = "IJN Ibuki" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "IJN Iwate" historical_model = 1 experience = 15 }
-ship = { type = protected_cruiser name = "IJN Tsugaru" historical_model = 4 experience = 15 }
-ship = { type = protected_cruiser name = "IJN Soya" historical_model = 6 experience = 15 }
-ship = { type = protected_cruiser name = "IJN Naniwa" historical_model = 0 experience = 15 }
-ship = { type = protected_cruiser name = "IJN Takachicho" historical_model = 0 experience = 15 }
-ship = { type = protected_cruiser name = "IJN Itsukushima" historical_model = 0 experience = 15 }
-ship = { type = protected_cruiser name = "IJN Hashidate" historical_model = 0 experience = 15 }
-ship = { type = protected_cruiser name = "IJN Akitsushima" historical_model = 1 experience = 15 }
-ship = { type = protected_cruiser name = "IJN Suma" historical_model = 2 experience = 15 }
-ship = {
-name = "Suma-Sentai"
-type = destroyer
-historical_model = 4}
-}
-
-navy = {
-name = "5 Sentai"
-location = 5315
-base = 5315
-ship = { type = battleship name = "IJN Shikishima" historical_model = 7 experience = 15 }
-ship = { type = battleship name = "IJN Asahi" historical_model = 7 experience = 15 }
-ship = { type = battleship name = "IJN Hizen" historical_model = 9 experience = 15 }
-ship = { type = battleship name = "IJN Okinoshima" historical_model = 4 experience = 15 }
-ship = { type = protected_cruiser name = "IJN Akashi" historical_model = 2 experience = 15 }
-ship = {
-name = "Akitsushima-Sentai"
-type = destroyer
-historical_model = 3}
-}
-
-navy = {
-name = "6 Sentai"
-location = 5809
-base = 5809
-
-ship = { type = protected_cruiser name = "IJN Otowa" historical_model = 7 experience = 15 }
-ship = { type = light_cruiser name = "IJN Yodo" historical_model = 0 experience = 15 }
-ship = { type = light_cruiser name = "IJN Mogami" historical_model = 0 experience = 15 }
-ship = { type = protected_cruiser name = "IJN Suzya" historical_model = 6 experience = 15 }
-ship = { type = protected_cruiser name = "IJN Kasagi" historical_model = 3 experience = 15 }
-ship = {
-name = "Dai 1 Sensuisentai"
-type = coastal_submarine
-historical_model = 1}
-}
-
-navy = {
-name = "7 Sentai"
-location = 5315
-base = 5315
-
-ship = {
-name = "Dai 1 Yuso Sentai"
-type = transport_ship
-historical_model = 0}
-
-ship = {
-name = "Dai 2 Yuso Sentai"
-type = transport_ship
-historical_model = 0}
-
-ship = {
-name = "Dai 3 Yuso Sentai"
-type = transport_ship
-historical_model = 0}
-
-ship = {
-name = "Dai 4 Yuso Sentai"
-type = transport_ship
-historical_model = 0}
-}
-
-military_construction = {
-country = JAP
-battleship = {
-name = "Aki"
-historical_model = 1}
-cost = 1
-progress = 0
-duration = 314}
-
-military_construction = {
-country = JAP
-battlecruiser = {
-name = "Kurama"
-historical_model = 0}
-cost = 1
-progress = 0
-duration = 297}
-
-military_construction = {
-country = JAP
-battleship = {
-name = "Satsuma"
-historical_model = 12}
-cost = 1
-progress = 0
-duration = 198}
-
-military_construction = {
-country = JAP
-light_cruiser = {
-name = "Tone"
-historical_model = 1}
-cost = 1
-progress = 0
-duration = 5}

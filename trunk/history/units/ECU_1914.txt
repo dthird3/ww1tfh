@@ -1,34 +1,43 @@
-corps = {
-name = "Ejercito de Ecuador"
-location = 9974
-regiment = { type = hq_brigade name = "Ejercito de Ecuador HQ" historical_model = 0 }
+ corps = {
+	location = 9974 # Quito
+	name = "Ejercito de Ecuador"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Ejercito de Ecuador HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 9974  # Quito
+		is_reserve = no
+		name = "1a Brigada de Infantería"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "1a Brigada de Infantería"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "1a Brigada de Infantería"
+			historical_model = 2 
+			}
+		}
+	}
 
-division = {
-name = "1a Brigada de Infantería"
-location = 9974
-is_reserve = no
+ navy = {
+	location = 9982  # Manta
+	base = 9982 # Manta
+	name = "Ecuadorian Fleet"
+	
+	 ship = {
+		type = destroyer 
+		name = "1st Flotilla"
+		historical_model = 0 
+		}
+	}
 
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "1a Brigada de Infantería"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "1a Brigada de Infantería"
-historical_model = 2}
-}
-}
-
-navy = {
-name = "Ecuadorian Fleet"
-location = 9982
-base = 9982
-
-ship = {
-name = "1st Flotilla"
-type = destroyer
-historical_model = 0}
-}

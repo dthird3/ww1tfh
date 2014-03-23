@@ -1,70 +1,94 @@
-corps = {
-name = "Royal Canadian Army"
-location = 3342
-regiment = { type = hq_brigade name = "Royal Canadian Army HQ" historical_model = 0 }
+ corps = {
+	location = 3342 # Ottawa
+	name = "Royal Canadian Army"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Royal Canadian Army HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 3342 # Ottawa
+		name = "1st Canadian Infantry Div."
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "1/2 Canadian Brigades"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "2/3 Canadian Brigades"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 10 
+			name = "1st Canadian RFA Brigade"
+			historical_model = 0 
+			}
+		}
+	
+	 division = {
+		location = 3342 # Ottawa
+		name = "2nd Canadian Infantry Div."
+		
+		 regiment = {
+			type = garrison_brigade 
+			experience = 5 
+			name = "2/3 Canadian Brigades"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = garrison_brigade 
+			experience = 5 
+			name = "2/3 Canadian Brigades"
+			historical_model = 0 
+			}
+		}
+	}
 
-division = {
-name = "1st Canadian Infantry Div."
-location = 3342
+ navy = {
+	location = 6997  # Halifax
+	base = 6997 # Halifax
+	name = "Canadian Transport Fleet"
+	
+	 ship = {
+		type = transport_ship 
+		name = "1st Canadian Transport Squadron"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = transport_ship 
+		name = "2nd Canadian Transport Squadron"
+		historical_model = 0 
+		}
+	}
 
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "1/2 Canadian Brigades"
-historical_model = 2}
+ navy = {
+	location = 6997  # Halifax
+	base = 6997 # Halifax
+	name = "Royal Canadian Navy"
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "HMCS Rainbow"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "HMCS Niobe"
+		historical_model = 3 
+		}
+	}
 
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "2/3 Canadian Brigades"
-historical_model = 2}
-
-regiment = {
-type = artillery_brigade
-experience = 10
-name = "1st Canadian RFA Brigade"
-historical_model = 0}
-}
-
-division = {
-name = "2nd Canadian Infantry Div."
-location = 3342
-
-regiment = {
-type = garrison_brigade
-experience = 5
-name = "2/3 Canadian Brigades"
-historical_model = 0}
-
-regiment = {
-type = garrison_brigade
-experience = 5
-name = "2/3 Canadian Brigades"
-historical_model = 0}
-}
-}
-
-navy = {
-name = "Canadian Transport Fleet"
-location = 6997
-base = 6997
-
-ship = {
-name = "1st Canadian Transport Squadron"
-type = transport_ship
-historical_model = 0}
-
-ship = {
-name = "2nd Canadian Transport Squadron"
-type = transport_ship
-historical_model = 0}
-
-}
-navy = {
-name = "Royal Canadian Navy"
-location = 6997
-base = 6997
-
-ship = { type = protected_cruiser name = "HMCS Rainbow" historical_model = 2 experience = 15 }
-ship = { type = heavy_cruiser name = "HMCS Niobe" historical_model = 3 experience = 15 }
-}

@@ -1,62 +1,62 @@
-corps = {
-name = "Boer Rebels"
-location = 8038
-leader=855525				
+ corps = {
+	location = 8038  # Pretoria
+	leader = 855525
+	name = "Boer Rebels"
+	
+	 regiment = {
+		type = hq_brigade 
+		experience = 15 
+		name = "Boer HQ"
+		historical_model = 2 
+		}
+	
+	 division = {
+		location = 8038 # Pretoria
+		name = "1st Boer Commandos"
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 15 
+			name = "1st Boer Commandos"
+			historical_model = 2 
+			}
+		}
+	
+	 division = {
+		location = 10366 # Zoekmakaar
+		name = "2nd Boer Commandos"
+		
+		 regiment = {
+			type = cavalry_brigade 
+			experience = 15 
+			name = "2nd Boer Commandos"
+			historical_model = 2 
+			}
+		}
+	
+	 division = {
+		location = 7996 # Bloemfontein
+		name = "3rd Boer Commandos"
+		
+		 regiment = {
+			type = cavalry_brigade 
+			experience = 10 
+			name = "3rd Boer Commandos"
+			historical_model = 3 
+			}
+		}
+	
+	 division = {
+		location = 7986  # Maseru
+		leader = 855526
+		name = "4th Boer Commandos"
+		
+		 regiment = {
+			type = cavalry_brigade 
+			experience = 10 
+			name = "Orange Free State Boers"
+			historical_model = 3 
+			}
+		}
+	}
 
-regiment = {
-type = hq_brigade
-name = "Boer HQ"
-historical_model = 2
-experience = 15
-}
-
-division = {
-name = "1st Boer Commandos"
-location = 8038
-
-regiment = {
-type = militia_brigade
-name = "1st Boer Commandos"
-historical_model = 2
-experience = 15
-}
-}
-
-division = {
-name = "2nd Boer Commandos"
-location = 10366
-
-regiment = {
-type = cavalry_brigade
-name = "2nd Boer Commandos"
-historical_model = 2
-experience = 15
-}
-}
-
-division = {
-name = "3rd Boer Commandos"
-location = 7996
-
-regiment = {
-type = cavalry_brigade
-name = "3rd Boer Commandos"
-historical_model = 3
-experience = 10
-}
-}
-
-division = {
-name = "4th Boer Commandos"
-location = 7986
-leader=855526
-
-regiment = {
-type = cavalry_brigade
-name = "Orange Free State Boers"
-historical_model = 3
-experience = 10
-}
-}
-
-}

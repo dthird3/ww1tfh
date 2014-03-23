@@ -1,200 +1,370 @@
-corps = {
-name = "1:a Arméfördelningen"
-location = 1171
-regiment = { type = hq_brigade name = "1:a Arméfördelningen HQ" historical_model = 0 }
+ corps = {
+	location = 1171 # Göteborg
+	name = "1:a Arméfördelningen"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "1:a Arméfördelningen HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 1171  # Göteborg
+		is_reserve = no
+		name = "1:a Arméfördelningen"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "1:a Arméfördelningen1"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "1:a Arméfördelningen2"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 10 
+			name = "1:a Arméfördelningen4"
+			historical_model = 0 
+			}
+		}
+	}
 
-division = {
-name = "1:a Arméfördelningen"
-location = 1171
-is_reserve = no
+ corps = {
+	location = 1305 # Kalmar
+	name = "2:a Arméfördelningen"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "2:a Arméfördelningen HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 1305  # Kalmar
+		is_reserve = no
+		name = "2:a Arméfördelningen"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "2:a Arméfördelningen1"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "2:a Arméfördelningen2"
+			historical_model = 2 
+			}
+		}
+	}
 
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "1:a Arméfördelningen1"
-historical_model = 2}
+ corps = {
+	location = 651 # Hamrånge
+	name = "3:e Arméfördelningen"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "3:e Arméfördelningen HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 651  # Hamrånge
+		is_reserve = no
+		name = "3:e Arméfördelningen"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "3:e Arméfördelningen1"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "3:e Arméfördelningen2"
+			historical_model = 1 
+			}
+		}
+	}
 
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "1:a Arméfördelningen2"
-historical_model = 2}
+ corps = {
+	location = 862 # Stockholm
+	name = "4:e Arméfördelningen"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "4:e Arméfördelningen HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 862  # Stockholm
+		is_reserve = no
+		name = "4:e Arméfördelningen"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "4:e Arméfördelningen1"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "4:e Arméfördelningen2"
+			historical_model = 1 
+			}
+		}
+	}
 
-regiment = {
-type = artillery_brigade
-experience = 10
-name = "1:a Arméfördelningen4"
-historical_model = 0}
-}
-}
+ corps = {
+	location = 862 # Stockholm
+	name = "5:e Arméfördelningen"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "5:e Arméfördelningen HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 862  # Stockholm
+		is_reserve = no
+		name = "5:e Arméfördelningen"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "5:e Arméfördelningen1"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "5:e Arméfördelningen2"
+			historical_model = 1 
+			}
+		}
+	}
 
-corps = {
-name = "2:a Arméfördelningen"
-location = 1305
-regiment = { type = hq_brigade name = "2:a Arméfördelningen HQ" historical_model = 0 }
+ corps = {
+	location = 1173 # Jönköping
+	name = "6:e Arméfördelningen"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "6:e Arméfördelningen HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 1173  # Jönköping
+		is_reserve = no
+		name = "6:e Arméfördelningen"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "6:e Arméfördelningen1"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "6:e Arméfördelningen2"
+			historical_model = 1 
+			}
+		}
+	}
 
-division = {
-name = "2:a Arméfördelningen"
-location = 1305
-is_reserve = no
+ corps = {
+	location = 193 # Luleå
+	name = "Bodens Trupper"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Bodens Trupper HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 193  # Luleå
+		is_reserve = no
+		name = "Bodens Trupper"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "Bodens Trupper1"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "Bodens Trupper2"
+			historical_model = 2 
+			}
+		}
+	}
 
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "2:a Arméfördelningen1"
-historical_model = 2}
+ navy = {
+	location = 1349  # Karlskrona
+	base = 1349 # Karlskrona
+	name = "Svenska Flottan"
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "HMS Svea"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "HMS Göta"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "HMS Thule"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "HMS Oden"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "HMS Thor"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "HMS Niord"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "HMS Dristigheten"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "HMS Äran"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "HMS Wasa"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "HMS Tapperheten"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "HMS Manligheten"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "HMS Oscar II"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "HMS Fylgia"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "HMS Örnen"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "HMS Claes Horn"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "HMS Jacob Bagge"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "HMS Psilander"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "HMS Claes Uggla"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = destroyer 
+		experience = 15 
+		name = "1. Jagarflottiljen"
+		historical_model = 8 
+		}
+	
+	 ship = {
+		type = coastal_submarine 
+		experience = 15 
+		name = "1. Ubåtsflottiljen"
+		historical_model = 1 
+		}
+	}
 
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "2:a Arméfördelningen2"
-historical_model = 2}
-}
-}
-
-corps = {
-name = "3:e Arméfördelningen"
-location = 651
-regiment = { type = hq_brigade name = "3:e Arméfördelningen HQ" historical_model = 0 }
-
-division = {
-name = "3:e Arméfördelningen"
-location = 651
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "3:e Arméfördelningen1"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "3:e Arméfördelningen2"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "4:e Arméfördelningen"
-location = 862
-regiment = { type = hq_brigade name = "4:e Arméfördelningen HQ" historical_model = 0 }
-
-division = {
-name = "4:e Arméfördelningen"
-location = 862
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "4:e Arméfördelningen1"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "4:e Arméfördelningen2"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "5:e Arméfördelningen"
-location = 862
-regiment = { type = hq_brigade name = "5:e Arméfördelningen HQ" historical_model = 0 }
-
-division = {
-name = "5:e Arméfördelningen"
-location = 862
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "5:e Arméfördelningen1"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "5:e Arméfördelningen2"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "6:e Arméfördelningen"
-location = 1173
-regiment = { type = hq_brigade name = "6:e Arméfördelningen HQ" historical_model = 0 }
-
-division = {
-name = "6:e Arméfördelningen"
-location = 1173
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "6:e Arméfördelningen1"
-historical_model = 1}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "6:e Arméfördelningen2"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "Bodens Trupper"
-location = 193
-regiment = { type = hq_brigade name = "Bodens Trupper HQ" historical_model = 0 }
-
-division = {
-name = "Bodens Trupper"
-location = 193
-is_reserve = no
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "Bodens Trupper1"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "Bodens Trupper2"
-historical_model = 2}
-}
-}
-
-navy = {
-name = "Svenska Flottan"
-location = 1349
-base = 1349
-
-ship = { type = heavy_cruiser name = "HMS Svea" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "HMS Göta" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "HMS Thule" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "HMS Oden" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "HMS Thor" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "HMS Niord" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "HMS Dristigheten" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "HMS Äran" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "HMS Wasa" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "HMS Tapperheten" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "HMS Manligheten" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "HMS Oscar II" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "HMS Fylgia" historical_model = 0 experience = 15 }
-ship = { type = protected_cruiser name = "HMS Örnen" historical_model = 2 experience = 15 }
-ship = { type = protected_cruiser name = "HMS Claes Horn" historical_model = 2 experience = 15 }
-ship = { type = protected_cruiser name = "HMS Jacob Bagge" historical_model = 2 experience = 15 }
-ship = { type = protected_cruiser name = "HMS Psilander" historical_model = 2 experience = 15 }
-ship = { type = protected_cruiser name = "HMS Claes Uggla" historical_model = 2 experience = 15 }
-ship = { type = destroyer name = "1. Jagarflottiljen" historical_model = 8 experience = 15 }
-ship = { type = coastal_submarine name = "1. Ubåtsflottiljen" historical_model = 1 experience = 15 }
-}

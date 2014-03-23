@@ -1,17 +1,24 @@
-corps = {
-name = "La Grandé Armée du Haiti"
-location = 7661
-regiment = { type = hq_brigade name = "La Grandé Armée du Haiti HQ" historical_model = 0 }
+ corps = {
+	location = 7661 # Port au Prince
+	name = "La Grandé Armée du Haiti"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "La Grandé Armée du Haiti HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 7661  # Port au Prince
+		is_reserve = yes
+		name = "1ère Brigade d'Infanterie Haitien"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 0 
+			name = "1ère Brigade d'Infanterie Haitien"
+			historical_model = 1 
+			}
+		}
+	}
 
-division = {
-name = "1ère Brigade d'Infanterie Haitien"
-location = 7661
-is_reserve = yes
-
-regiment = {
-type = infantry_brigade
-experience = 0
-name = "1ère Brigade d'Infanterie Haitien"
-historical_model = 1}
-}
-}
