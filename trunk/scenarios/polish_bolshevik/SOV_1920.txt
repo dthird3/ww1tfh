@@ -1,654 +1,652 @@
-theatre = {
-name = "West Front HQ"
-location = 1536
-leader = 9910342
-
-regiment = {
-type = hq_brigade
-name = "1st HQ Brigada"
-historical_model = 5
-experience = 3
-}
-
-	air = {
-	name = "Workers and Peasants Red Air Fleet"
-	location = 1534
-	base = 1534
-
-	wing = {
-	type = scout
-	name = "1-ya Aviatsionnaya rota"						
-	historical_model = 3
-	experience = 15
-	}
-	}
-
-army = {
-name = "15th Red Banner Army"
-location = 1636
-leader = 30232
-
-regiment = {
-type = hq_brigade
-name = "3rd HQ Brigada"
-historical_model = 1
-experience = 0
-}
-
-	division = {
-	name = "2. Strelkovaya Diviziya"
-	location = 1322
-	leader = 00000
-
-	regiment = {
-	type = infantry_brigade
-	name = "1-ya Brigada"
-	historical_model = 5
-	experience = 5
-	}
-
-	regiment = {
-	type = infantry_brigade
-	name = "2-ya Brigada"
-	historical_model = 5
-	experience = 5
-	}
+ theatre = {
+	location = 1536  # Smolensk
+	leader = 9910342 # To be named once we have a mapping
+	name = "West Front HQ"
 	
-	regiment = {
-	type = artillery_brigade
-	name = "2-ya Artilleriiskaya Brigada"
-	historical_model = 4
-	experience = 5
-	}
-	}
-
-	division = {
-	name = "8. Strelkovaya Diviziya"
-	location = 1695
-	leader = 00000
-
-	regiment = {
-	type = infantry_brigade
-	name = "1-ya Brigada"
-	historical_model = 5
-	experience = 5
-	is_reserve = yes
-	}
-
-	regiment = {
-	type = infantry_brigade
-	name = "2-ya Brigada"
-	historical_model = 5
-	experience = 5
-	is_reserve = yes	
-	}
-	}
+	 regiment = {
+		type = hq_brigade 
+		experience = 3 
+		name = "1st HQ Brigada"
+		historical_model = 5 
+		}
 	
-	division = {
-	name = "10. Strelkovaya Diviziya"
-	location = 1362
-	leader = 00000
-
-	regiment = {
-	type = infantry_brigade
-	name = "1-ya Brigada"
-	historical_model = 5
-	experience = 5
-	is_reserve = yes	
-	}
-
-	regiment = {
-	type = infantry_brigade
-	name = "2-ya Brigada"
-	historical_model = 5
-	experience = 5
-	is_reserve = yes	
-	}
-	}
-
-	corps = {
-	name = "3-ya Kavaleriiskaya Korpus"
-	location = 1582
-	leader = 30791
-
-	regiment = {
-	type = hq_brigade
-	name = "1st HQ Brigada"
-	historical_model = 1
-	experience = 0
-	}
-
-	division = {
-	name = "15-ya Kavaleriiskaya Diviziya"
-	location = 1582
-	leader = 00000
-
-	regiment = {
-	type = cavalry_brigade
-	name = "15-ya Kavaleriiskaya 1-ya brigada"
-	historical_model = 5
-	experience = 5
-	}
-
-	regiment = {
-	type = cavalry_brigade
-	name = "15-ya Kavaleriiskaya 2-ya brigada"
-	historical_model = 5
-	experience = 5
-	}
-	}
-
-	division = {
-	name = "1-ya Kavkazskaya Kazach'ya 1-ya brigada"
-	location = 1582
-	leader = 00000
-
-	regiment = {
-	type = cavalry_brigade
-	name = "1-ya Kavkazskaya Kazach'ya 1-ya brigada"
-	historical_model = 5
-	experience = 5
-	}
-	}
-
-	division = {
-	name = "6/34-ya Kavaleriiskaya brigada"
-	location = 1582
-	leader = 00000
-
-	regiment = {
-	type = cavalry_brigade
-	name = "6/34-ya Kavaleriiskaya brigada"
-	historical_model = 5
-	experience = 5
-	}
-	}
-	}
-}
-
-army = {
-name = "3rd Army"
-location = 1534
-leader = 00000
-
-regiment = {
-type = hq_brigade
-name = "4th HQ Brigada"
-historical_model = 1
-experience = 0
-}
-
-	division = {
-	name = "17. Strelkovaya Diviziya"
-	location = 1148
-	leader = 00000
-
-	regiment = {
-	type = infantry_brigade
-	name = "1-ya Brigada"
-	historical_model = 5
-	experience = 5
-	is_reserve = yes
-	}
-
-	regiment = {
-	type = infantry_brigade
-	name = "2-ya Brigada"
-	historical_model = 5
-	experience = 5
-	is_reserve = yes
-	}
+	 air = {
+		location = 1534  # Vitsyebsk
+		base = 1534 # Vitsyebsk
+		name = "Workers and Peasants Red Air Fleet"
+		
+		 wing = {
+			type = scout 
+			experience = 15 
+			name = "1-ya Aviatsionnaya rota"
+			historical_model = 3 
+			}
+		}
 	
-	regiment = {
-	type = artillery_brigade
-	name = "17-ya Artilleriiskaya Brigada"
-	historical_model = 4
-	experience = 5
-	is_reserve = yes
-	}
-	}
-
-	division = {
-	name = "53. Strelkovaya Diviziya"
-	location = 1267
-	leader = 00000
-
-	regiment = {
-	type = infantry_brigade
-	name = "1-ya Brigada"
-	historical_model = 5
-	experience = 5
-	}
-
-	regiment = {
-	type = infantry_brigade
-	name = "2-ya Brigada"
-	historical_model = 5
-	experience = 5
-	}
+	 army = {
+		location = 1636  # Horki
+		leader = 30232 # To be named once we have a mapping
+		name = "15th Red Banner Army"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 0 
+			name = "3rd HQ Brigada"
+			historical_model = 1 
+			}
+		
+		 division = {
+			location = 1322  # Shklou
+			leader = 00000 # To be named once we have a mapping
+			name = "2. Strelkovaya Diviziya"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "1-ya Brigada"
+				historical_model = 5 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "2-ya Brigada"
+				historical_model = 5 
+				}
+			
+			 regiment = {
+				type = artillery_brigade 
+				experience = 5 
+				name = "2-ya Artilleriiskaya Brigada"
+				historical_model = 4 
+				}
+			}
+		
+		 division = {
+			location = 1695  # Mahilyow
+			leader = 00000 # To be named once we have a mapping
+			name = "8. Strelkovaya Diviziya"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "1-ya Brigada"
+				historical_model = 5 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "2-ya Brigada"
+				historical_model = 5 
+				}
+			}
+		
+		 division = {
+			location = 1362  # Bogushevsk
+			leader = 00000 # To be named once we have a mapping
+			name = "10. Strelkovaya Diviziya"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "1-ya Brigada"
+				historical_model = 5 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "2-ya Brigada"
+				historical_model = 5 
+				}
+			}
+		
+		 corps = {
+			location = 1582  # Orsha
+			leader = 30791 # To be named once we have a mapping
+			name = "3-ya Kavaleriiskaya Korpus"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 0 
+				name = "1st HQ Brigada"
+				historical_model = 1 
+				}
+			
+			 division = {
+				location = 1582  # Orsha
+				leader = 00000 # To be named once we have a mapping
+				name = "15-ya Kavaleriiskaya Diviziya"
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 5 
+					name = "15-ya Kavaleriiskaya 1-ya brigada"
+					historical_model = 5 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 5 
+					name = "15-ya Kavaleriiskaya 2-ya brigada"
+					historical_model = 5 
+					}
+				}
+			
+			 division = {
+				location = 1582  # Orsha
+				leader = 00000 # To be named once we have a mapping
+				name = "1-ya Kavkazskaya Kazach'ya 1-ya brigada"
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 5 
+					name = "1-ya Kavkazskaya Kazach'ya 1-ya brigada"
+					historical_model = 5 
+					}
+				}
+			
+			 division = {
+				location = 1582  # Orsha
+				leader = 00000 # To be named once we have a mapping
+				name = "6/34-ya Kavaleriiskaya brigada"
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 5 
+					name = "6/34-ya Kavaleriiskaya brigada"
+					historical_model = 5 
+					}
+				}
+			}
+		}
 	
-	regiment = {
-	type = artillery_brigade
-	name = "53-ya Artilleriiskaya Brigada"
-	historical_model = 4
-	experience = 5
-	}
-	}
-
-	division = {
-	name = "143-ya Brigada"
-	location = 1144
-
-	regiment = {
-	type = infantry_brigade
-	name = "143-ya Brigada"
-	historical_model = 5
-	experience = 5
-	}
-	}
-
-	division = {
-	name = "164-ya Brigada"
-	location = 1403
-
-	regiment = {
-	type = infantry_brigade
-	name = "164-ya Brigada"
-	historical_model = 5
-	experience = 5
-	}
-	}
-
-	division = {
-	name = "149/473 Regiments"
-	location = 1105
-
-	regiment = {
-	type = infantry_brigade
-	name = "149/473 Regiments"
-	historical_model = 5
-	experience = 5
-	}
-	}
-	}
-
+	 army = {
+		location = 1534  # Vitsyebsk
+		leader = 00000 # To be named once we have a mapping
+		name = "3rd Army"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 0 
+			name = "4th HQ Brigada"
+			historical_model = 1 
+			}
+		
+		 division = {
+			location = 1148  # Sianno
+			leader = 00000 # To be named once we have a mapping
+			name = "17. Strelkovaya Diviziya"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "1-ya Brigada"
+				historical_model = 5 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "2-ya Brigada"
+				historical_model = 5 
+				}
+			
+			 regiment = {
+				type = artillery_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "17-ya Artilleriiskaya Brigada"
+				historical_model = 4 
+				}
+			}
+		
+		 division = {
+			location = 1267  # Drissa
+			leader = 00000 # To be named once we have a mapping
+			name = "53. Strelkovaya Diviziya"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "1-ya Brigada"
+				historical_model = 5 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "2-ya Brigada"
+				historical_model = 5 
+				}
+			
+			 regiment = {
+				type = artillery_brigade 
+				experience = 5 
+				name = "53-ya Artilleriiskaya Brigada"
+				historical_model = 4 
+				}
+			}
+		
+		 division = {
+			location = 1144 # Dominikovo
+			name = "143-ya Brigada"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "143-ya Brigada"
+				historical_model = 5 
+				}
+			}
+		
+		 division = {
+			location = 1403 # Drozdy
+			name = "164-ya Brigada"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "164-ya Brigada"
+				historical_model = 5 
+				}
+			}
+		
+		 division = {
+			location = 1105 # Rasony
+			name = "149/473 Regiments"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "149/473 Regiments"
+				historical_model = 5 
+				}
+			}
+		}
 	
-corps = {
-name = "Mozyr Korpus"
-location = 1991
-leader = 30760
-
-regiment = {
-type = hq_brigade
-name = "Mozyr Brigada"
-historical_model = 1
-experience = 0
-}
-
-	division = {
-	name = "57. Strelkovaya Diviziya"
-	location = 1878
-	leader = 00000
-
-	regiment = {
-	type = infantry_brigade
-	name = "1-ya Brigada"
-	historical_model = 5
-	experience = 5
+	 corps = {
+		location = 1991  # Homel
+		leader = 30760 # To be named once we have a mapping
+		name = "Mozyr Korpus"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 0 
+			name = "Mozyr Brigada"
+			historical_model = 1 
+			}
+		
+		 division = {
+			location = 1878  # Chachersk
+			leader = 00000 # To be named once we have a mapping
+			name = "57. Strelkovaya Diviziya"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "1-ya Brigada"
+				historical_model = 5 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "2-ya Brigada"
+				historical_model = 5 
+				}
+			
+			 regiment = {
+				type = artillery_brigade 
+				experience = 5 
+				name = "57-ya Artilleriiskaya Brigada"
+				historical_model = 4 
+				}
+			}
+		
+		 division = {
+			location = 1876 # Slawharad
+			name = "Mozyr Brigada"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "Mozyr Brigada"
+				historical_model = 5 
+				}
+			}
+		
+		 division = {
+			location = 1881 # Choyniki
+			name = "2-ya Kavaleriiskaya brigada"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 5 
+				name = "2-ya Kavaleriiskaya brigada"
+				historical_model = 5 
+				}
+			}
+		}
 	}
 
-	regiment = {
-	type = infantry_brigade
-	name = "2-ya Brigada"
-	historical_model = 5
-	experience = 5
-	}
+ armygroup = {
+	location = 2339  # Bobrovytsya
+	leader = 30789 # To be named once we have a mapping
+	name = "South West Front"
 	
-	regiment = {
-	type = artillery_brigade
-	name = "57-ya Artilleriiskaya Brigada"
-	historical_model = 4
-	experience = 5
-	}
-	}
-
-	division = {
-	name = "Mozyr Brigada"
-	location = 1876
-
-	regiment = {
-	type = infantry_brigade
-	name = "Mozyr Brigada"
-	historical_model = 5
-	experience = 5
-	}
-	}
-
-	division = {
-	name = "2-ya Kavaleriiskaya brigada"
-	location = 1881
-
-	regiment = {
-	type = cavalry_brigade
-	name = "2-ya Kavaleriiskaya brigada"
-	historical_model = 5
-	experience = 5
-	}
-	}
-	}
-}
-
-
-armygroup = {
-name = "South West Front"
-location = 2339
-leader = 30789
-
-regiment = {
-type = hq_brigade
-name = "9th HQ Brigada"
-historical_model = 1
-experience = 0
-}
-
-	division = {
-	name = "392/536-ya Brigada"
-	location = 2223
-
-	regiment = {
-	type = infantry_brigade
-	name = "392/536-ya Brigada"
-	historical_model = 5
-	experience = 5
-	}
-	}
-
-	division = {
-	name = "Kazach'ya Brigada"
-	location = 2343
-
-	regiment = {
-	type = infantry_brigade
-	name = "Kazach'ya Brigada"
-	historical_model = 5
-	experience = 5
-	}
-	}
-
-
-army = {
-name = "12-ya Armiya"
-location = 2165
-leader = 00000
-
-regiment = {
-type = hq_brigade
-name = "12ya HQ Brigada"
-historical_model = 1
-experience = 0
-}
-
-	division = {
-	name = "17-ya Kavaleriiskaya Divizya"
-	location = 2398
-	leader = 00000
-
-	regiment = {
-	type = cavalry_brigade
-	name = "1-ya Brigada"
-	historical_model = 5
-	experience = 5
-	}
-
-	regiment = {
-	type = cavalry_brigade
-	name = "2-ya Brigada"
-	historical_model = 5
-	experience = 5
-	}
-	}
-
-	division = {
-	name = "1/7-ya Kavaleriiskaya Brigada"
-	location = 2223
-
-	regiment = {
-	type = cavalry_brigade
-	name = "1/7-ya Kavaleriiskaya Brigada"
-	historical_model = 5
-	experience = 5
-	}
-	}
-
-	division = {
-	name = "7. Strelkovaya Diviziya"
-	location = 2338
-	leader = 00000
-
-	regiment = {
-	type = infantry_brigade
-	name = "1-ya Brigada"
-	historical_model = 5
-	experience = 5
-	}
-
-	regiment = {
-	type = infantry_brigade
-	name = "2-ya Brigada"
-	historical_model = 5
-	experience = 5
-	}
+	 regiment = {
+		type = hq_brigade 
+		experience = 0 
+		name = "9th HQ Brigada"
+		historical_model = 1 
+		}
 	
-	regiment = {
-	type = artillery_brigade
-	name = "7-ya Artilleriiskaya Brigada"
-	historical_model = 4
-	experience = 5
-	}
-	}
-
-	division = {
-	name = "44. Strelkovaya Diviziya"
-	location = 2224
-	leader = 00000
-
-	regiment = {
-	type = infantry_brigade
-	name = "1-ya Brigada"
-	historical_model = 5
-	experience = 5
-	is_reserve = yes
-	}
-
-	regiment = {
-	type = infantry_brigade
-	name = "2-ya Brigada"
-	historical_model = 5
-	experience = 5
-	is_reserve = yes
-	}
-	}
+	 division = {
+		location = 2223 # Kyiv
+		name = "392/536-ya Brigada"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "392/536-ya Brigada"
+			historical_model = 5 
+			}
+		}
 	
-	division = {
-	name = "45. Strelkovaya Diviziya"
-	location = 2223
-	leader = 00000
-
-	regiment = {
-	type = infantry_brigade
-	name = "1-ya Brigada"
-	historical_model = 5
-	experience = 5
-	is_reserve = yes
-	}
-
-	regiment = {
-	type = infantry_brigade
-	name = "2-ya Brigada"
-	historical_model = 5
-	experience = 5
-	is_reserve = yes
-	}
-	}
-}
-
-army = {
-name = "14-ya Armiya"
-location = 2643
-leader = 9910346
-
-regiment = {
-type = hq_brigade
-name = "14-ya HQ Brigada"
-historical_model = 1
-experience = 0
-}
-
-	division = {
-	name = "41. Strelkovaya Diviziya"
-	location = 2454
-
-	regiment = {
-	type = infantry_brigade
-	name = "1-ya Brigada"
-	historical_model = 5
-	experience = 5
-	is_reserve = yes
-	}
-
-	regiment = {
-	type = infantry_brigade
-	name = "2-ya Brigada"
-	historical_model = 5
-	experience = 5
-	is_reserve = yes
-	}
-	}
+	 division = {
+		location = 2343 # Narodychi
+		name = "Kazach'ya Brigada"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "Kazach'ya Brigada"
+			historical_model = 5 
+			}
+		}
 	
-	division = {
-	name = "47. Strelkovaya Diviziya"
-	location = 2839
-
-	regiment = {
-	type = infantry_brigade
-	name = "1-ya Brigada"
-	historical_model = 5
-	experience = 5
-	}
-
-	regiment = {
-	type = infantry_brigade
-	name = "2-ya Brigada"
-	historical_model = 5
-	experience = 5
-	}
+	 army = {
+		location = 2165  # Brovary
+		leader = 00000 # To be named once we have a mapping
+		name = "12-ya Armiya"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 0 
+			name = "12ya HQ Brigada"
+			historical_model = 1 
+			}
+		
+		 division = {
+			location = 2398  # Andrushivka
+			leader = 00000 # To be named once we have a mapping
+			name = "17-ya Kavaleriiskaya Divizya"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 5 
+				name = "1-ya Brigada"
+				historical_model = 5 
+				}
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 5 
+				name = "2-ya Brigada"
+				historical_model = 5 
+				}
+			}
+		
+		 division = {
+			location = 2223 # Kyiv
+			name = "1/7-ya Kavaleriiskaya Brigada"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 5 
+				name = "1/7-ya Kavaleriiskaya Brigada"
+				historical_model = 5 
+				}
+			}
+		
+		 division = {
+			location = 2454  # Kodnya
+			leader = 00000 # To be named once we have a mapping
+			name = "7. Strelkovaya Diviziya"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "1-ya Brigada"
+				historical_model = 5 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "2-ya Brigada"
+				historical_model = 5 
+				}
+			
+			 regiment = {
+				type = artillery_brigade 
+				experience = 5 
+				name = "7-ya Artilleriiskaya Brigada"
+				historical_model = 4 
+				}
+			}
+		
+		 division = {
+			location = 2224  # Malyn
+			leader = 00000 # To be named once we have a mapping
+			name = "44. Strelkovaya Diviziya"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "1-ya Brigada"
+				historical_model = 5 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "2-ya Brigada"
+				historical_model = 5 
+				}
+			}
+		
+		 division = {
+			location = 2223  # Kyiv
+			leader = 00000 # To be named once we have a mapping
+			name = "45. Strelkovaya Diviziya"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "1-ya Brigada"
+				historical_model = 5 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "2-ya Brigada"
+				historical_model = 5 
+				}
+			}
+		}
 	
-	regiment = {
-	type = artillery_brigade
-	name = "47-ya Artilleriiskaya Brigada"
-	historical_model = 4
-	experience = 5
-	is_reserve = yes
+	 army = {
+		location = 2643  # Lypovets
+		leader = 9910346 # To be named once we have a mapping
+		name = "14-ya Armiya"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 0 
+			name = "14-ya HQ Brigada"
+			historical_model = 1 
+			}
+		
+		 division = {
+			location = 2338 # Radomyshi
+			name = "41. Strelkovaya Diviziya"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "1-ya Brigada"
+				historical_model = 5 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "2-ya Brigada"
+				historical_model = 5 
+				}
+			}
+		
+		 division = {
+			location = 2839 # Starhorod
+			name = "47. Strelkovaya Diviziya"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "1-ya Brigada"
+				historical_model = 5 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "2-ya Brigada"
+				historical_model = 5 
+				}
+			
+			 regiment = {
+				type = artillery_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "47-ya Artilleriiskaya Brigada"
+				historical_model = 4 
+				}
+			}
+		
+		 division = {
+			location = 2577 # Pohrebyshche
+			name = "58. Strelkovaya Diviziya"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "1-ya Brigada"
+				historical_model = 5 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "2-ya Brigada"
+				historical_model = 5 
+				}
+			}
+		
+		 division = {
+			location = 2709 # Stryzhavka
+			name = "60. Strelkovaya Diviziya"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "1-ya Brigada"
+				historical_model = 5 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "2-ya Brigada"
+				historical_model = 5 
+				}
+			
+			 regiment = {
+				type = artillery_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "60-ya Artilleriiskaya Brigada"
+				historical_model = 4 
+				}
+			}
+		
+		 corps = {
+			location = 2575 # Vinnytsya
+			name = "Galacian Corps HQ"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 0 
+				name = "Galacian Corps HQ"
+				historical_model = 1 
+				}
+			
+			 division = {
+				location = 2772 # Tulchyn
+				name = "1-ya Galacian Brigada"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "1-ya Galacian Brigada"
+					historical_model = 5 
+					}
+				}
+			
+			 division = {
+				location = 2641 # Illintsi
+				name = "2-ya Galacian Brigada"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "2-ya Galacian Brigada"
+					historical_model = 5 
+					}
+				}
+			
+			 division = {
+				location = 2575 # Vinnytsya
+				name = "3-ya Galacian Brigada"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "3-ya Galacian Brigada"
+					historical_model = 5 
+					}
+				}
+			}
+		}
 	}
-	}
-	
-	division = {
-	name = "58. Strelkovaya Diviziya"
-	location = 2577
 
-	regiment = {
-	type = infantry_brigade
-	name = "1-ya Brigada"
-	historical_model = 5
-	experience = 5
-	}
-
-	regiment = {
-	type = infantry_brigade
-	name = "2-ya Brigada"
-	historical_model = 5
-	experience = 5
-	}
-	}
-	
-	division = {
-	name = "60. Strelkovaya Diviziya"
-	location = 2709
-
-	regiment = {
-	type = infantry_brigade
-	name = "1-ya Brigada"
-	historical_model = 5
-	experience = 5
-	is_reserve = yes
-	}
-
-	regiment = {
-	type = infantry_brigade
-	name = "2-ya Brigada"
-	historical_model = 5
-	experience = 5
-	is_reserve = yes
-	}
-	
-	regiment = {
-	type = artillery_brigade
-	name = "60-ya Artilleriiskaya Brigada"
-	historical_model = 4
-	experience = 5
-	is_reserve = yes
-	}
-	}
-
-	corps = {															# Caution of name changes - must also change in Galacian Mutiny events to work		
-	name = "Galacian Corps HQ"
-	location = 2575
-
-	regiment = {
-	type = hq_brigade
-	name = "Galacian Corps HQ"
-	historical_model = 1
-	experience = 0
-	}
-	
-	division = {
-	name = "1-ya Galacian Brigada"
-	location = 2772
-
-	regiment = {
-	type = infantry_brigade
-	name = "1-ya Galacian Brigada"
-	historical_model = 5
-	experience = 5
-	is_reserve = yes
-	}
-	}
-	
-	division = {
-	name = "2-ya Galacian Brigada"
-	location = 2641
-
-	regiment = {
-	type = infantry_brigade
-	name = "2-ya Galacian Brigada"
-	historical_model = 5
-	experience = 5
-	is_reserve = yes
-	}
-	}
-
-	division = {
-	name = "3-ya Galacian Brigada"
-	location = 2575
-
-	regiment = {
-	type = infantry_brigade
-	name = "3-ya Galacian Brigada"
-	historical_model = 5
-	experience = 5
-	is_reserve = yes
-	}
-	}
-	}
-	}
-}	

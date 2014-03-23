@@ -1,24 +1,25 @@
-corps = {
+ corps = {
+	location = 2774 # Letychiv
 	name = "Galacian Corps HQ"
-	location = 2774
-
-	regiment = {
-	type = hq_brigade
-	name = "Galacian Corps HQ"
-	historical_model = 1
-	experience = 0
-	}
 	
-	division = {
-	name = "3rd Galacian Brigade"
-	location = 2774
+	 regiment = {
+		type = hq_brigade 
+		experience = 0 
+		name = "Galacian Corps HQ"
+		historical_model = 1 
+		}
+	
+	 division = {
+		location = 2774 # Letychiv
+		name = "3rd Galacian Brigade"
+		
+		 regiment = {
+			type = infantry_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "3rd Galacian Brigade"
+			historical_model = 5 
+			}
+		}
+	}
 
-	regiment = {
-	type = infantry_brigade
-	name = "3rd Galacian Brigade"
-	historical_model = 5
-	experience = 5
-	is_reserve = yes
-	}
-	}
-	}
