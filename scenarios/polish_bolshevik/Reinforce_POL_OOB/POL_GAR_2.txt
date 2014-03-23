@@ -1,37 +1,38 @@
-	division = {
-	name = "Warsaw Militia"
-	location = 1928 
-
-	regiment = {
-	type = militia_brigade
-	name = "Warsaw Militia"
-	historical_model = 3
-	experience = 0
-	is_reserve = yes
-	}
-	}
-
-	division = {
-	name = "Warsaw Clergy Militia"
-	location = 1928 
-
-	regiment = {
-	type = militia_brigade
-	name = "Warsaw Clergy Militia"
-	historical_model = 2
-	experience = 0
-	is_reserve = yes
-	}
-	}	
+	 division = {
+		location = 1928 # Warszawa
+		name = "Warsaw Militia"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 0 
+			name = "Warsaw Militia"
+			historical_model = 3 
+			}
+		}
 	
-	division = {
-	name = "J Cavalry Brigade"
-	location = 1928
-
-	regiment = {
-	type = cavalry_brigade
-	name = "J Cavalry Brigade"
-	historical_model = 5
-	experience = 5
-	}
-	}
+	 division = {
+		location = 1928 # Warszawa
+		name = "Warsaw Clergy Militia"
+		
+		 regiment = {
+			type = militia_brigade 
+			is_reserve = yes 
+			experience = 0 
+			name = "Warsaw Clergy Militia"
+			historical_model = 2 
+			}
+		}
+	
+	 division = {
+		location = 1928 # Warszawa
+		name = "J Cavalry Brigade"
+		
+		 regiment = {
+			type = cavalry_brigade 
+			experience = 5 
+			name = "J Cavalry Brigade"
+			historical_model = 5 
+			}
+		}
+	
