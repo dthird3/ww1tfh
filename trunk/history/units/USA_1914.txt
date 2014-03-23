@@ -1,868 +1,1507 @@
-corps = {
-name = "Eastern Department"
-location = 4279
-regiment = { type = hq_brigade name = "Eastern Department HQ" historical_model = 0 }
-
-division = {
-name = "1st Infantry Division"
-location = 4279
-is_reserve = yes
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "1st Infantry Brigade"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "Puerto Rico Garrison"
-location = 7670
-regiment = { type = hq_brigade name = "Puerto Rico Garrison HQ" historical_model = 0 }
-
-division = {
-name = "Puerto Rico Garrison"
-location = 7670
-is_reserve = yes
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Puerto Rico Garrison"
-historical_model = 0}
-}
-}
-
-
-corps = {
-name = "Southern Department"
-location = 9239
-regiment = { type = hq_brigade name = "Southern Department HQ" historical_model = 0 }
-
-division = {
-name = "2nd Infantry Brigade"
-location = 9239
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "2nd Infantry Brigade"
-historical_model = 2}
-}
-
-division = {
-name = "8th Infantry Brigade"
-location = 9093
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "8th Infantry Brigade"
-historical_model = 2}
-}
-
-division = {
-name = "The Cavalry Division"
-location = 9239
-is_reserve = no
-
-regiment = {
-type = cavalry_brigade
-experience = 10
-name = "1st Cavalry Brigade"
-historical_model = 2}
-
-regiment = {
-type = cavalry_brigade
-experience = 10
-name = "2nd Cavalry Brigade"
-historical_model = 2}
-
-regiment = {
-type = cavalry_brigade
-experience = 10
-name = "3rd Cavalry Brigade"
-historical_model = 2}
-}
-}
-
-corps = {
-name = "1st Field Army"
-location = 7494
-regiment = { type = hq_brigade name = "1st Field Army HQ" historical_model = 0 }
-
-division = {
-name = "2nd Infantry Division"
-location = 7494
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "5th Infantry Brigade"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "6th Infantry Brigade"
-historical_model = 2}
-
-regiment = {
-type = artillery_brigade
-experience = 10
-name = "2nd Divisional Artillery"
-historical_model = 0}
-}
-}
-
-corps = {
-name = "Western Department"
-location = 3658
-regiment = { type = hq_brigade name = "Western Department HQ" historical_model = 0 }
-
-division = {
-name = "3rd Infantry Division"
-location = 3658
-is_reserve = yes
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "7th Infantry Brigade"
-historical_model = 1}
-}
-}
-
-division = {
-name = "Alabama National Guard"
-location = 7442
-is_reserve = yes
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Alabama National Guard"
-historical_model = 0}
-}
-
-division = {
-name = "National Guard of the District of Columbia"
-location = 7300
-is_reserve = yes
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "National Guard of Columbia"
-historical_model = 0}
-}
-
-division = {
-name = "National Guard of Colorado"
-location = 8854
-is_reserve = yes
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "National Guard of Colorado"
-historical_model = 0}
-}
-
-division = {
-name = "Connecticut National Guard"
-location = 4146
-is_reserve = yes
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Connecticut National Guard"
-historical_model = 0}
-}
-
-
-corps = {
-name = "Illinois National Guard"
-location = 7104
-regiment = { type = hq_brigade name = "Illinois National Guard HQ" historical_model = 0 }
-
-division = {
-name = "Illinois National Guard"
-location = 7104
-is_reserve = yes
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Illinois 1st Brigade"
-historical_model = 0}
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Illinois 2nd Brigade"
-historical_model = 0}
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Illinois 3rd Brigade"
-historical_model = 0}
-}
-}
-
-division = {
-name = "Indiana National Guard"
-location = 7197
-is_reserve = yes
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Indiana National Guard"
-historical_model = 0}
-}
-
-division = {
-name = "Iowa National Guard"
-location = 8835
-is_reserve = yes
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Iowa National Guard"
-historical_model = 0}
-}
-
-division = {
-name = "Kentucky State Guard"
-location = 8993
-is_reserve = yes
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Kentucky State Guard"
-historical_model = 0}
-}
-
-division = {
-name = "Maryland National Guard"
-location = 4467
-is_reserve = yes
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Maryland National Guard"
-historical_model = 0}
-}
-
-corps = {
-name = "Massachusetts Volunteer Militia"
-location = 4016
-regiment = { type = hq_brigade name = "Massachusetts Volunteer Militia HQ" historical_model = 0 }
-
-division = {
-name = "Massachusetts Volunteer Militia"
-location = 4016
-is_reserve = yes
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Massachusetts 1st Militia"
-historical_model = 0}
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Massachusetts 2nd Militia"
-historical_model = 0}
-}
-}
-
-division = {
-name = "Minnesota National Guard"
-location = 8706
-is_reserve = yes
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Minnesota National Guard"
-historical_model = 0}
-}
-
-division = {
-name = "National Guard of California"
-location = 3533
-is_reserve = yes
-regiment = {
-type = militia_brigade
-experience = 5
-name = "National Guard of California"
-historical_model = 0}
-}
-
-division = {
-name = "National Guard of Georgia"
-location = 7422
-is_reserve = yes
-regiment = {
-type = militia_brigade
-experience = 5
-name = "National Guard of Georgia"
-historical_model = 0}
-}
-
-division = {
-name = "National Guard of Missouri"
-location = 7281
-is_reserve = yes
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "National Guard of Missouri"
-historical_model = 0}
-}
-
-division = {
-name = "National Guard of New Jersey"
-location = 4342
-is_reserve = yes
-regiment = {
-type = militia_brigade
-experience = 5
-name = "National Guard of New Jersey"
-historical_model = 0}
-}
-
-corps = {
-name = "National Guard of New York"
-location = 3943
-regiment = { type = hq_brigade name = "National Guard of New York HQ" historical_model = 0 }
-
-division = {
-name = "National Guard of New York"
-location = 3943
-is_reserve = yes
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "National Guard - New York 1st Brigade"
-historical_model = 0}
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "National Guard - New York 2nd Brigade"
-historical_model = 0}
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "National Guard - New York 3rd Brigade"
-historical_model = 0}
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "National Guard - New York 4th Brigade"
-historical_model = 0}
-}
-}
-
-corps = {
-name = "National Guard of Pennsylvania"
-location = 4340
-regiment = { type = hq_brigade name = "National Guard of Pennsylvania HQ" historical_model = 0 }
-
-division = {
-name = "National Guard of Pennsylvania"
-location = 4340
-is_reserve = yes
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Pennsylvania 1st Brigade"
-historical_model = 0}
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Pennsylvania 2nd Brigade"
-historical_model = 0}
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Pennsylvania 3rd Brigade"
-historical_model = 0}
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Pennsylvania 4th Brigade"
-historical_model = 0}
-}
-}
-
-division = {
-name = "National Guard of South Carolina"
-location = 7242
-is_reserve = yes
-regiment = {
-type = militia_brigade
-experience = 5
-name = "National Guard of South Carolina"
-historical_model = 0}
-}
-
-division = {
-name = "Nebraska National Guard"
-location = 8857
-is_reserve = yes
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Nebraska National Guard"
-historical_model = 0}
-}
-
-division = {
-name = "North Carolina National Guard"
-location = 5026
-is_reserve = yes
-regiment = {
-type = militia_brigade
-experience = 5
-name = "North Carolina National Guard"
-historical_model = 0}
-}
-
-corps = {
-name = "Ohio National Guard"
-location = 4333
-regiment = { type = hq_brigade name = "Ohio National Guard HQ" historical_model = 0 }
-
-division = {
-name = "Ohio National Guard"
-location = 4333
-is_reserve = yes
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Ohio National Guard 1st Brigade"
-historical_model = 0}
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Ohio National Guard 2nd Brigade"
-historical_model = 0}
-}
-}
-
-division = {
-name = "Texas National Guard"
-location = 9301
-is_reserve = yes
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Texas National Guard"
-historical_model = 0}
-}
-
-division = {
-name = "Virginia Volunteers"
-location = 4899
-is_reserve = yes
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Virginia Volunteers"
-historical_model = 0}
-}
-
-division = {
-name = "West Virginia National Guard"
-location = 7317
-is_reserve = yes
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "West Virginia National Guard"
-historical_model = 0}
-}
-
-division = {
-name = "Wisconsin National Guard"
-location = 3793
-is_reserve = yes
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Wisconsin National Guard"
-historical_model = 0}
-}
-
-division = {
-name = "National Guard of New Mexico"
-location = 8939
-is_reserve = yes
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "National Guard of New Mexico"
-historical_model = 0}
-}
-
-division = {
-name = "Wyoming National Guard"
-location = 9098
-is_reserve = yes
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Wyoming National Guard"
-historical_model = 0}
-}
-
-division = {
-name = "Oregon National Guard"
-location = 6774
-is_reserve = yes
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Oregon National Guard"
-historical_model = 0}
-}
-
-division = {
-name = "National Guard of Washington"
-location = 6697
-is_reserve = yes
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "National Guard of Washington"
-historical_model = 0}
-}
-
-corps = {
-name = "Hawaiian Department"
-location = 5825
-regiment = { type = hq_brigade name = "Hawaiian Department HQ" historical_model = 0 }
-
-division = {
-name = "1st Hawaiian Brigade"
-location = 5825
-is_reserve = yes
-
-regiment = {
-type = infantry_brigade
-experience = 5
-name = "1st Hawaiian Brigade"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "Philippine Department"
-location = 6142
-regiment = { type = hq_brigade name = "Philippine Department HQ" historical_model = 0 }
-
-division = {
-name = "Philippine Brigades"
-location = 6142
-is_reserve = yes
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "8th & 13th Infantry Regiments"
-historical_model = 2}
-
-regiment = {
-type = infantry_brigade
-experience = 10
-name = "15th & 24th Infantry Regiments"
-historical_model = 2}
-}
-
-division = {
-name = "Philippine Scouts"
-location = 6142
-is_reserve = yes
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Philippine Battalions 1-6"
-historical_model = 1}
-
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Philippine Scouts Battalions 7-13"
-historical_model = 1}
-}
-}
-
-corps = {
-name = "Canal Zone Garrison"
-location = 7717
-regiment = { type = hq_brigade name = "Canal Zone Garrison HQ" historical_model = 0 }
-
-division = {
-name = "Canal Zone Garrison"
-location = 7717
-is_reserve = yes
-regiment = {
-type = militia_brigade
-experience = 5
-name = "Canal Zone Garrison"
-historical_model = 1}
-}
-}
-
-navy = {
-name = "Atlantic Fleet"
-location = 4900
-base = 4900
-ship = { type = dreadnaught name = "USS Delaware" historical_model = 0 experience = 15 }
-ship = { type = dreadnaught name = "USS North Dakota" historical_model = 0 experience = 15 }
-ship = { type = dreadnaught name = "USS Florida" historical_model = 1 experience = 15 }
-ship = { type = dreadnaught name = "USS Utah" historical_model = 1 experience = 15 }
-ship = { type = dreadnaught name = "USS Wyoming" historical_model = 2 experience = 15 }
-ship = { type = dreadnaught name = "USS Arkansas" historical_model = 2 experience = 15 }
-ship = { type = battleship name = "USS Maine" historical_model = 8 experience = 15 }
-ship = { type = battleship name = "USS Missouri" historical_model = 8 experience = 15 }
-ship = { type = battleship name = "USS Ohio" historical_model = 8 experience = 15 }
-ship = { type = battleship name = "USS Nebraska" historical_model = 9 experience = 15 }
-ship = { type = battleship name = "USS Georgia" historical_model = 9 experience = 15 }
-ship = { type = battleship name = "USS Louisiana" historical_model = 10 experience = 15 }
-ship = { type = battleship name = "USS Vermont" historical_model = 11 experience = 15 }
-ship = { type = battleship name = "USS Minnesota" historical_model = 11 experience = 15 }
-ship = { type = battleship name = "USS South Carolina" historical_model = 12 experience = 15 }
-ship = { type = battleship name = "USS New Hampshire" historical_model = 11 experience = 15 }
-ship = { type = heavy_cruiser name = "USS North Carolina" historical_model = 6 experience = 15 }
-ship = { type = heavy_cruiser name = "USS Montana" historical_model = 6 experience = 15 }
-ship = { type = protected_cruiser name = "USS Des Moines" historical_model = 5 experience = 15 }
-ship = { type = protected_cruiser name = "USS Chattanooga" historical_model = 5 experience = 15 }
-ship = { type = protected_cruiser name = "USS Galveston" historical_model = 5 experience = 15 }
-ship = { type = protected_cruiser name = "USS Tacoma" historical_model = 5 experience = 15 }
-ship = { type = protected_cruiser name = "USS Cleveland" historical_model = 5 experience = 15 }
-ship = { type = heavy_cruiser name = "USS Maryland" historical_model = 5 experience = 15 }
-ship = { type = protected_cruiser name = "USS Cincinnati" historical_model = 1 experience = 15 }
-ship = { type = protected_cruiser name = "USS Boston" historical_model = 0 experience = 15 }
-ship = { type = protected_cruiser name = "USS Chicago" historical_model = 0 experience = 15 }
-ship = { type = protected_cruiser name = "USS Newark" historical_model = 0 experience = 15 }
-ship = { type = protected_cruiser name = "USS Baltimore" historical_model = 0 experience = 15 }
-ship = { type = protected_cruiser name = "USS Philadelphia" historical_model = 0 experience = 15 }
-ship = { type = protected_cruiser name = "USS San Francisco" historical_model = 0 experience = 15 }
-ship = { type = protected_cruiser name = "USS Olympia" historical_model = 0 experience = 15 }
-ship = { type = protected_cruiser name = "USS Raleigh" historical_model = 1 experience = 15 }
-ship = { type = protected_cruiser name = "USS Montgomery" historical_model = 1 experience = 15 }
-ship = { type = protected_cruiser name = "USS Marblehead" historical_model = 1 experience = 15 }
-ship = { type = protected_cruiser name = "USS New Orleans" historical_model = 2 experience = 15 }
-ship = { type = protected_cruiser name = "USS Albany" historical_model = 2 experience = 15 }
-ship = { type = destroyer name = "1st Destroyer Flotilla" historical_model = 9 experience = 15 }
-ship = { type = destroyer name = "2nd Destroyer Flotilla" historical_model = 9 experience = 15 }
-ship = { type = destroyer name = "3rd Destroyer Flotilla" historical_model = 10 experience = 15 }
-
-
-}
-navy = {
-name = "Submarine Flotilla"
-location = 7482
-base = 7482
-ship = { type = submarine name = "1st Submarine Flotilla" historical_model = 1 experience = 15 }
-ship = { type = submarine name = "2nd Submarine Flotilla" historical_model = 2 experience = 15 }
-ship = { type = coastal_submarine name = "3rd Submarine Flotilla" historical_model = 1 experience = 15 }
-ship = { type = coastal_submarine name = "4th Submarine Flotilla" historical_model = 2 experience = 15 }
-ship = { type = coastal_submarine name = "5th Submarine Flotilla" historical_model = 3 experience = 15 }
-
-
-}
-navy = {
-name = "Atlantic Reserve Fleet"
-location = 4900
-base = 4900
-ship = { type = battleship name = "USS Indiana" historical_model = 4 experience = 15 }
-ship = { type = battleship name = "USS Massachusetts" historical_model = 4 experience = 15 }
-ship = { type = battleship name = "USS Oregon" historical_model = 4 experience = 15 }
-ship = { type = battleship name = "USS Iowa" historical_model = 5 experience = 15 }
-ship = { type = battleship name = "USS Kearsarge" historical_model = 6 experience = 15 }
-ship = { type = battleship name = "USS Kentucky" historical_model = 6 experience = 15 }
-ship = { type = battleship name = "USS Illinois" historical_model = 7 experience = 15 }
-ship = { type = battleship name = "USS Alabama" historical_model = 7 experience = 15 }
-ship = { type = battleship name = "USS Wisconsin" historical_model = 7 experience = 15 }
-ship = { type = battleship name = "USS Missouri" historical_model = 8 experience = 15 }
-ship = { type = battleship name = "USS Idaho" historical_model = 12 experience = 15 }
-ship = { type = heavy_cruiser name = "USS Brooklyn" historical_model = 2 experience = 15 }
-ship = { type = protected_cruiser name = "USS Colombia" historical_model = 1 experience = 15 }
-ship = { type = protected_cruiser name = "USS Minneapolis" historical_model = 1 experience = 15 }
-
-
-}
-navy = {
-name = "Caribbean Squadron"
-location = 7482
-base = 7482
-ship = { type = battleship name = "USS Virginia" historical_model = 9 experience = 15 }
-ship = { type = battleship name = "USS New Jersey" historical_model = 9 experience = 15 }
-ship = { type = battleship name = "USS Rhode Island" historical_model = 9 experience = 15 }
-ship = { type = battleship name = "USS Connecticut" historical_model = 10 experience = 15 }
-ship = { type = battleship name = "USS Kansas" historical_model = 11 experience = 15 }
-ship = { type = battleship name = "USS Michigan" historical_model = 12 experience = 15 }
-ship = { type = light_cruiser name = "USS Chester" historical_model = 0 experience = 15 }
-ship = { type = light_cruiser name = "USS Birmingham" historical_model = 0 experience = 15 }
-ship = { type = light_cruiser name = "USS Salem" historical_model = 0 experience = 15 }
-ship = { type = destroyer name = "4th Destroyer Flotilla" historical_model = 0 experience = 15 }
-}
-navy = {
-name = "Pacific Fleet"
-location = 4694
-base = 4694
-ship = { type = heavy_cruiser name = "USS California" historical_model = 5 experience = 15 }
-ship = { type = heavy_cruiser name = "USS Tennessee" historical_model = 6 experience = 15 }
-ship = { type = heavy_cruiser name = "USS South Dakota" historical_model = 5 experience = 15 }
-ship = { type = heavy_cruiser name = "USS Washington" historical_model = 6 experience = 15 }
-ship = { type = heavy_cruiser name = "USS West Virginia" historical_model = 5 experience = 15 }
-ship = { type = heavy_cruiser name = "USS Colorado" historical_model = 5 experience = 15 }
-ship = { type = protected_cruiser name = "USS St. Louis" historical_model = 6 experience = 15 }
-ship = { type = protected_cruiser name = "USS Milwaukee" historical_model = 6 experience = 15 }
-ship = { type = protected_cruiser name = "USS Charleston" historical_model = 6 experience = 15 }
-ship = { type = destroyer name = "5th Destroyer Flotilla" historical_model = 7 experience = 15 }
-
-
-}
-navy = {
-name = "Asiatic Fleet"
-location = 6142
-base = 6142
-ship = { type = heavy_cruiser name = "USS Saratoga" historical_model = 0 experience = 15 }
-ship = { type = heavy_cruiser name = "USS Pittsburgh" historical_model = 5 experience = 15 }
-ship = { type = protected_cruiser name = "USS Denver" historical_model = 5 experience = 15 }
-
-ship = { type = destroyer name = "6th Destroyer Flotilla" historical_model = 2 experience = 15 }
-
-
-}
-navy = {
-name = "Atlantic Transport Fleet"
-location = 4279
-base = 4279
-
-ship = {
-name = "1st Transport Flotilla"
-type = transport_ship
-historical_model = 0}
-
-ship = {
-name = "2nd Transport Flotilla"
-type = transport_ship
-historical_model = 0}
-
-ship = {
-name = "3rd Transport Flotilla"
-type = transport_ship
-historical_model = 0}
-
-}
-navy = {
-name = "Caribbean Transport Fleet"
-location = 7482
-base = 7482
-
-ship = {
-name = "4th Transport Flotilla"
-type = transport_ship
-historical_model = 0}
-
-ship = {
-name = "5th Transport Flotilla"
-type = transport_ship
-historical_model = 0}
-
-}
-navy = {
-name = "Pacific Transport Fleet"
-location = 3658
-base = 3658
-
-ship = {
-name = "6th Transport Flotilla"
-type = transport_ship
-historical_model = 0}
-
-ship = {
-name = "7th Transport Flotilla"
-type = transport_ship
-historical_model = 0}
-
-ship = {
-name = "8th Transport Flotilla"
-type = transport_ship
-historical_model = 0}
-
-ship = {
-name = "9th Transport Flotilla"
-type = transport_ship
-historical_model = 0}
-}
-
-
-air = {
-name = "First Aero Squadron"
-location = 9329
-base = 9329
- 
-wing = {
-type = scout
-name = "First Aero Squadron	"
-historical_model = 0
-experience = 5
-}
-}
-
-
-
-military_construction = {
-country = USA
-dreadnaught = {
-name = "USS Texas"
-historical_model = 3}
-cost = 4
-progress = 0
-duration = 71}
-
-military_construction = {
-country = USA
-dreadnaught = {
-name = "USS New York"
-historical_model = 3}
-cost = 4
-progress = 0
-duration = 104}
-
-military_construction = {
-country = USA
-submarine = {
-name = "5th Submarine Flotilla"
-historical_model = 2}
-cost = 4
-progress = 0
-duration = 112}
+ corps = {
+	location = 4279 # New York
+	name = "Eastern Department"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Eastern Department HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 4279  # New York
+		is_reserve = yes
+		name = "1st Infantry Division"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "1st Infantry Brigade"
+			historical_model = 1 
+			}
+		}
+	}
+
+ corps = {
+	location = 7670 # Puerto Rico
+	name = "Puerto Rico Garrison"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Puerto Rico Garrison HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 7670  # Puerto Rico
+		is_reserve = yes
+		name = "Puerto Rico Garrison"
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "Puerto Rico Garrison"
+			historical_model = 0 
+			}
+		}
+	}
+
+ corps = {
+	location = 9239 # Rocksprings
+	name = "Southern Department"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Southern Department HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 9239 # Rocksprings
+		name = "2nd Infantry Brigade"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "2nd Infantry Brigade"
+			historical_model = 2 
+			}
+		}
+	
+	 division = {
+		location = 9093 # El Paso
+		name = "8th Infantry Brigade"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "8th Infantry Brigade"
+			historical_model = 2 
+			}
+		}
+	
+	 division = {
+		location = 9239  # Rocksprings
+		is_reserve = no
+		name = "The Cavalry Division"
+		
+		 regiment = {
+			type = cavalry_brigade 
+			experience = 10 
+			name = "1st Cavalry Brigade"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = cavalry_brigade 
+			experience = 10 
+			name = "2nd Cavalry Brigade"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = cavalry_brigade 
+			experience = 10 
+			name = "3rd Cavalry Brigade"
+			historical_model = 2 
+			}
+		}
+	}
+
+ corps = {
+	location = 7494 # Houston
+	name = "1st Field Army"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "1st Field Army HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 7494 # Houston
+		name = "2nd Infantry Division"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "5th Infantry Brigade"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "6th Infantry Brigade"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 10 
+			name = "2nd Divisional Artillery"
+			historical_model = 0 
+			}
+		}
+	}
+
+ corps = {
+	location = 3658 # San Francisco
+	name = "Western Department"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Western Department HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 3658  # San Francisco
+		is_reserve = yes
+		name = "3rd Infantry Division"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "7th Infantry Brigade"
+			historical_model = 1 
+			}
+		}
+	}
+
+ division = {
+	location = 7442  # Dothan
+	is_reserve = yes
+	name = "Alabama National Guard"
+	
+	 regiment = {
+		type = militia_brigade 
+		experience = 5 
+		name = "Alabama National Guard"
+		historical_model = 0 
+		}
+	}
+
+ division = {
+	location = 7300  # Newburg
+	is_reserve = yes
+	name = "National Guard of the District of Columbia"
+	
+	 regiment = {
+		type = militia_brigade 
+		experience = 5 
+		name = "National Guard of Columbia"
+		historical_model = 0 
+		}
+	}
+
+ division = {
+	location = 8854  # Denver
+	is_reserve = yes
+	name = "National Guard of Colorado"
+	
+	 regiment = {
+		type = militia_brigade 
+		experience = 5 
+		name = "National Guard of Colorado"
+		historical_model = 0 
+		}
+	}
+
+ division = {
+	location = 4146  # Trenton
+	is_reserve = yes
+	name = "Connecticut National Guard"
+	
+	 regiment = {
+		type = militia_brigade 
+		experience = 5 
+		name = "Connecticut National Guard"
+		historical_model = 0 
+		}
+	}
+
+ corps = {
+	location = 7104 # Chicago
+	name = "Illinois National Guard"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Illinois National Guard HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 7104  # Chicago
+		is_reserve = yes
+		name = "Illinois National Guard"
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "Illinois 1st Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "Illinois 2nd Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "Illinois 3rd Brigade"
+			historical_model = 0 
+			}
+		}
+	}
+
+ division = {
+	location = 7197  # Indianapolis
+	is_reserve = yes
+	name = "Indiana National Guard"
+	
+	 regiment = {
+		type = militia_brigade 
+		experience = 5 
+		name = "Indiana National Guard"
+		historical_model = 0 
+		}
+	}
+
+ division = {
+	location = 8835  # Des Moines
+	is_reserve = yes
+	name = "Iowa National Guard"
+	
+	 regiment = {
+		type = militia_brigade 
+		experience = 5 
+		name = "Iowa National Guard"
+		historical_model = 0 
+		}
+	}
+
+ division = {
+	location = 8993  # Corbin
+	is_reserve = yes
+	name = "Kentucky State Guard"
+	
+	 regiment = {
+		type = militia_brigade 
+		experience = 5 
+		name = "Kentucky State Guard"
+		historical_model = 0 
+		}
+	}
+
+ division = {
+	location = 4467  # Baltimore
+	is_reserve = yes
+	name = "Maryland National Guard"
+	
+	 regiment = {
+		type = militia_brigade 
+		experience = 5 
+		name = "Maryland National Guard"
+		historical_model = 0 
+		}
+	}
+
+ corps = {
+	location = 4016 # Boston
+	name = "Massachusetts Volunteer Militia"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Massachusetts Volunteer Militia HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 4016  # Boston
+		is_reserve = yes
+		name = "Massachusetts Volunteer Militia"
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "Massachusetts 1st Militia"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "Massachusetts 2nd Militia"
+			historical_model = 0 
+			}
+		}
+	}
+
+ division = {
+	location = 8706  # Minneapolis
+	is_reserve = yes
+	name = "Minnesota National Guard"
+	
+	 regiment = {
+		type = militia_brigade 
+		experience = 5 
+		name = "Minnesota National Guard"
+		historical_model = 0 
+		}
+	}
+
+ division = {
+	location = 3533  # Sacramento
+	is_reserve = yes
+	name = "National Guard of California"
+	
+	 regiment = {
+		type = militia_brigade 
+		experience = 5 
+		name = "National Guard of California"
+		historical_model = 0 
+		}
+	}
+
+ division = {
+	location = 7422  # Atlanta
+	is_reserve = yes
+	name = "National Guard of Georgia"
+	
+	 regiment = {
+		type = militia_brigade 
+		experience = 5 
+		name = "National Guard of Georgia"
+		historical_model = 0 
+		}
+	}
+
+ division = {
+	location = 7281  # St. Louis
+	is_reserve = yes
+	name = "National Guard of Missouri"
+	
+	 regiment = {
+		type = militia_brigade 
+		experience = 5 
+		name = "National Guard of Missouri"
+		historical_model = 0 
+		}
+	}
+
+ division = {
+	location = 4342  # Newark
+	is_reserve = yes
+	name = "National Guard of New Jersey"
+	
+	 regiment = {
+		type = militia_brigade 
+		experience = 5 
+		name = "National Guard of New Jersey"
+		historical_model = 0 
+		}
+	}
+
+ corps = {
+	location = 3943 # Albany
+	name = "National Guard of New York"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "National Guard of New York HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 3943  # Albany
+		is_reserve = yes
+		name = "National Guard of New York"
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "National Guard - New York 1st Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "National Guard - New York 2nd Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "National Guard - New York 3rd Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "National Guard - New York 4th Brigade"
+			historical_model = 0 
+			}
+		}
+	}
+
+ corps = {
+	location = 4340 # Harrisburg
+	name = "National Guard of Pennsylvania"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "National Guard of Pennsylvania HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 4340  # Harrisburg
+		is_reserve = yes
+		name = "National Guard of Pennsylvania"
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "Pennsylvania 1st Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "Pennsylvania 2nd Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "Pennsylvania 3rd Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "Pennsylvania 4th Brigade"
+			historical_model = 0 
+			}
+		}
+	}
+
+ division = {
+	location = 7242  # Columbia
+	is_reserve = yes
+	name = "National Guard of South Carolina"
+	
+	 regiment = {
+		type = militia_brigade 
+		experience = 5 
+		name = "National Guard of South Carolina"
+		historical_model = 0 
+		}
+	}
+
+ division = {
+	location = 8857  # Grand Island
+	is_reserve = yes
+	name = "Nebraska National Guard"
+	
+	 regiment = {
+		type = militia_brigade 
+		experience = 5 
+		name = "Nebraska National Guard"
+		historical_model = 0 
+		}
+	}
+
+ division = {
+	location = 5026  # Raleigh
+	is_reserve = yes
+	name = "North Carolina National Guard"
+	
+	 regiment = {
+		type = militia_brigade 
+		experience = 5 
+		name = "North Carolina National Guard"
+		historical_model = 0 
+		}
+	}
+
+ corps = {
+	location = 4333 # Columbus
+	name = "Ohio National Guard"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Ohio National Guard HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 4333  # Columbus
+		is_reserve = yes
+		name = "Ohio National Guard"
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "Ohio National Guard 1st Brigade"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "Ohio National Guard 2nd Brigade"
+			historical_model = 0 
+			}
+		}
+	}
+
+ division = {
+	location = 9301  # Austin
+	is_reserve = yes
+	name = "Texas National Guard"
+	
+	 regiment = {
+		type = militia_brigade 
+		experience = 5 
+		name = "Texas National Guard"
+		historical_model = 0 
+		}
+	}
+
+ division = {
+	location = 4899  # Richmond
+	is_reserve = yes
+	name = "Virginia Volunteers"
+	
+	 regiment = {
+		type = militia_brigade 
+		experience = 5 
+		name = "Virginia Volunteers"
+		historical_model = 0 
+		}
+	}
+
+ division = {
+	location = 7317  # Charleston
+	is_reserve = yes
+	name = "West Virginia National Guard"
+	
+	 regiment = {
+		type = militia_brigade 
+		experience = 5 
+		name = "West Virginia National Guard"
+		historical_model = 0 
+		}
+	}
+
+ division = {
+	location = 3793  # Milwaukee
+	is_reserve = yes
+	name = "Wisconsin National Guard"
+	
+	 regiment = {
+		type = militia_brigade 
+		experience = 5 
+		name = "Wisconsin National Guard"
+		historical_model = 0 
+		}
+	}
+
+ division = {
+	location = 8939  # Santa Fe
+	is_reserve = yes
+	name = "National Guard of New Mexico"
+	
+	 regiment = {
+		type = militia_brigade 
+		experience = 5 
+		name = "National Guard of New Mexico"
+		historical_model = 0 
+		}
+	}
+
+ division = {
+	location = 9098  # Jackson
+	is_reserve = yes
+	name = "Wyoming National Guard"
+	
+	 regiment = {
+		type = militia_brigade 
+		experience = 5 
+		name = "Wyoming National Guard"
+		historical_model = 0 
+		}
+	}
+
+ division = {
+	location = 6774  # Portland
+	is_reserve = yes
+	name = "Oregon National Guard"
+	
+	 regiment = {
+		type = militia_brigade 
+		experience = 5 
+		name = "Oregon National Guard"
+		historical_model = 0 
+		}
+	}
+
+ division = {
+	location = 6697  # Seattle
+	is_reserve = yes
+	name = "National Guard of Washington"
+	
+	 regiment = {
+		type = militia_brigade 
+		experience = 5 
+		name = "National Guard of Washington"
+		historical_model = 0 
+		}
+	}
+
+ corps = {
+	location = 5825 # Honolulu
+	name = "Hawaiian Department"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Hawaiian Department HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 5825  # Honolulu
+		is_reserve = yes
+		name = "1st Hawaiian Brigade"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "1st Hawaiian Brigade"
+			historical_model = 1 
+			}
+		}
+	}
+
+ corps = {
+	location = 6142 # Manila
+	name = "Philippine Department"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Philippine Department HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 6142  # Manila
+		is_reserve = yes
+		name = "Philippine Brigades"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "8th & 13th Infantry Regiments"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "15th & 24th Infantry Regiments"
+			historical_model = 2 
+			}
+		}
+	
+	 division = {
+		location = 6142  # Manila
+		is_reserve = yes
+		name = "Philippine Scouts"
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "Philippine Battalions 1-6"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "Philippine Scouts Battalions 7-13"
+			historical_model = 1 
+			}
+		}
+	}
+
+ corps = {
+	location = 7717 # Colón
+	name = "Canal Zone Garrison"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Canal Zone Garrison HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 7717  # Colón
+		is_reserve = yes
+		name = "Canal Zone Garrison"
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 5 
+			name = "Canal Zone Garrison"
+			historical_model = 1 
+			}
+		}
+	}
+
+ navy = {
+	location = 4900  # Norfolk
+	base = 4900 # Norfolk
+	name = "Atlantic Fleet"
+	
+	 ship = {
+		type = dreadnaught 
+		experience = 15 
+		name = "USS Delaware"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = dreadnaught 
+		experience = 15 
+		name = "USS North Dakota"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = dreadnaught 
+		experience = 15 
+		name = "USS Florida"
+		historical_model = 1 
+		}
+	
+	 ship = {
+		type = dreadnaught 
+		experience = 15 
+		name = "USS Utah"
+		historical_model = 1 
+		}
+	
+	 ship = {
+		type = dreadnaught 
+		experience = 15 
+		name = "USS Wyoming"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = dreadnaught 
+		experience = 15 
+		name = "USS Arkansas"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS Maine"
+		historical_model = 8 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS Missouri"
+		historical_model = 8 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS Ohio"
+		historical_model = 8 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS Nebraska"
+		historical_model = 9 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS Georgia"
+		historical_model = 9 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS Louisiana"
+		historical_model = 10 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS Vermont"
+		historical_model = 11 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS Minnesota"
+		historical_model = 11 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS South Carolina"
+		historical_model = 12 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS New Hampshire"
+		historical_model = 11 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "USS North Carolina"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "USS Montana"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "USS Des Moines"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "USS Chattanooga"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "USS Galveston"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "USS Tacoma"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "USS Cleveland"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "USS Maryland"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "USS Cincinnati"
+		historical_model = 1 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "USS Boston"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "USS Chicago"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "USS Newark"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "USS Baltimore"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "USS Philadelphia"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "USS San Francisco"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "USS Olympia"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "USS Raleigh"
+		historical_model = 1 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "USS Montgomery"
+		historical_model = 1 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "USS Marblehead"
+		historical_model = 1 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "USS New Orleans"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "USS Albany"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = destroyer 
+		experience = 15 
+		name = "1st Destroyer Flotilla"
+		historical_model = 9 
+		}
+	
+	 ship = {
+		type = destroyer 
+		experience = 15 
+		name = "2nd Destroyer Flotilla"
+		historical_model = 9 
+		}
+	
+	 ship = {
+		type = destroyer 
+		experience = 15 
+		name = "3rd Destroyer Flotilla"
+		historical_model = 10 
+		}
+	}
+
+ navy = {
+	location = 7482  # New Orleans
+	base = 7482 # New Orleans
+	name = "Submarine Flotilla"
+	
+	 ship = {
+		type = submarine 
+		experience = 15 
+		name = "1st Submarine Flotilla"
+		historical_model = 1 
+		}
+	
+	 ship = {
+		type = submarine 
+		experience = 15 
+		name = "2nd Submarine Flotilla"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = coastal_submarine 
+		experience = 15 
+		name = "3rd Submarine Flotilla"
+		historical_model = 1 
+		}
+	
+	 ship = {
+		type = coastal_submarine 
+		experience = 15 
+		name = "4th Submarine Flotilla"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = coastal_submarine 
+		experience = 15 
+		name = "5th Submarine Flotilla"
+		historical_model = 3 
+		}
+	}
+
+ navy = {
+	location = 4900  # Norfolk
+	base = 4900 # Norfolk
+	name = "Atlantic Reserve Fleet"
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS Indiana"
+		historical_model = 4 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS Massachusetts"
+		historical_model = 4 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS Oregon"
+		historical_model = 4 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS Iowa"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS Kearsarge"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS Kentucky"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS Illinois"
+		historical_model = 7 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS Alabama"
+		historical_model = 7 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS Wisconsin"
+		historical_model = 7 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS Missouri"
+		historical_model = 8 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS Idaho"
+		historical_model = 12 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "USS Brooklyn"
+		historical_model = 2 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "USS Colombia"
+		historical_model = 1 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "USS Minneapolis"
+		historical_model = 1 
+		}
+	}
+
+ navy = {
+	location = 7482  # New Orleans
+	base = 7482 # New Orleans
+	name = "Caribbean Squadron"
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS Virginia"
+		historical_model = 9 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS New Jersey"
+		historical_model = 9 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS Rhode Island"
+		historical_model = 9 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS Connecticut"
+		historical_model = 10 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS Kansas"
+		historical_model = 11 
+		}
+	
+	 ship = {
+		type = battleship 
+		experience = 15 
+		name = "USS Michigan"
+		historical_model = 12 
+		}
+	
+	 ship = {
+		type = light_cruiser 
+		experience = 15 
+		name = "USS Chester"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = light_cruiser 
+		experience = 15 
+		name = "USS Birmingham"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = light_cruiser 
+		experience = 15 
+		name = "USS Salem"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = destroyer 
+		experience = 15 
+		name = "4th Destroyer Flotilla"
+		historical_model = 0 
+		}
+	}
+
+ navy = {
+	location = 4694  # Los Angeles
+	base = 4694 # Los Angeles
+	name = "Pacific Fleet"
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "USS California"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "USS Tennessee"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "USS South Dakota"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "USS Washington"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "USS West Virginia"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "USS Colorado"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "USS St. Louis"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "USS Milwaukee"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "USS Charleston"
+		historical_model = 6 
+		}
+	
+	 ship = {
+		type = destroyer 
+		experience = 15 
+		name = "5th Destroyer Flotilla"
+		historical_model = 7 
+		}
+	}
+
+ navy = {
+	location = 6142  # Manila
+	base = 6142 # Manila
+	name = "Asiatic Fleet"
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "USS Saratoga"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = heavy_cruiser 
+		experience = 15 
+		name = "USS Pittsburgh"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = protected_cruiser 
+		experience = 15 
+		name = "USS Denver"
+		historical_model = 5 
+		}
+	
+	 ship = {
+		type = destroyer 
+		experience = 15 
+		name = "6th Destroyer Flotilla"
+		historical_model = 2 
+		}
+	}
+
+ navy = {
+	location = 4279  # New York
+	base = 4279 # New York
+	name = "Atlantic Transport Fleet"
+	
+	 ship = {
+		type = transport_ship 
+		name = "1st Transport Flotilla"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = transport_ship 
+		name = "2nd Transport Flotilla"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = transport_ship 
+		name = "3rd Transport Flotilla"
+		historical_model = 0 
+		}
+	}
+
+ navy = {
+	location = 7482  # New Orleans
+	base = 7482 # New Orleans
+	name = "Caribbean Transport Fleet"
+	
+	 ship = {
+		type = transport_ship 
+		name = "4th Transport Flotilla"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = transport_ship 
+		name = "5th Transport Flotilla"
+		historical_model = 0 
+		}
+	}
+
+ navy = {
+	location = 3658  # San Francisco
+	base = 3658 # San Francisco
+	name = "Pacific Transport Fleet"
+	
+	 ship = {
+		type = transport_ship 
+		name = "6th Transport Flotilla"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = transport_ship 
+		name = "7th Transport Flotilla"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = transport_ship 
+		name = "8th Transport Flotilla"
+		historical_model = 0 
+		}
+	
+	 ship = {
+		type = transport_ship 
+		name = "9th Transport Flotilla"
+		historical_model = 0 
+		}
+	}
+
+ air = {
+	location = 9329  # San Antonio
+	base = 9329 # San Antonio
+	name = "First Aero Squadron"
+	
+	 wing = {
+		type = scout 
+		experience = 5 
+		name = "First Aero Squadron"
+		historical_model = 0 
+		}
+	}
+
+ military_construction = {
+	cost = 4 
+	progress = 0 
+	duration = 71 
+	country = USA 
+	dreadnaught = { 
+		name = "USS Texas"
+		historical_model = 3 
+		}
+	}
+
+ military_construction = {
+	cost = 4 
+	progress = 0 
+	duration = 104 
+	country = USA 
+	dreadnaught = { 
+		name = "USS New York"
+		historical_model = 3 
+		}
+	}
+
+ military_construction = {
+	cost = 4 
+	progress = 0 
+	duration = 112 
+	country = USA 
+	submarine = { 
+		name = "5th Submarine Flotilla"
+		historical_model = 2 
+		}
+	}
+
