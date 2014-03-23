@@ -1,104 +1,381 @@
-theatre = {
-name = "Naval HQ"
-location = 1570
+ theatre = {
+	location = 1570 # Wilhelmshaven
+	name = "Naval HQ"
+	
+	 regiment = {
+		type = hq_brigade 
+		experience = 2 
+		name = "1st HQ Brigade"
+		historical_model = 1 
+		}
+	
+	 navy = {
+		location = 10531  # Helgoland Bight
+		base = 1570  # Wilhelmshaven
+		leader = 855032 # To be named once we have a mapping
+		name = "Hochseeflotte"
+		
+		 ship = {
+			type = battleship 
+			experience = 15 
+			name = "SMS Hessen"
+			historical_model = 10 
+			}
+		
+		 ship = {
+			type = battleship 
+			experience = 15 
+			name = "SMS Deutschland"
+			historical_model = 12 
+			}
+		
+		 ship = {
+			type = battleship 
+			experience = 15 
+			name = "SMS Hannover"
+			historical_model = 12 
+			}
+		
+		 ship = {
+			type = battleship 
+			experience = 15 
+			name = "SMS Pommern"
+			historical_model = 12 
+			}
+		
+		 ship = {
+			type = battleship 
+			experience = 15 
+			name = "SMS Schlesien"
+			historical_model = 12 
+			}
+		
+		 ship = {
+			type = battleship 
+			experience = 15 
+			name = "SMS Schleswig-Holstein"
+			historical_model = 12 
+			}
+		
+		 ship = {
+			type = dreadnaught 
+			experience = 15 
+			name = "SMS Nassau"
+			historical_model = 0 
+			}
+		
+		 ship = {
+			type = dreadnaught 
+			experience = 15 
+			name = "SMS Westfalen"
+			historical_model = 0 
+			}
+		
+		 ship = {
+			type = dreadnaught 
+			experience = 15 
+			name = "SMS Rheinland"
+			historical_model = 0 
+			}
+		
+		 ship = {
+			type = dreadnaught 
+			experience = 15 
+			name = "SMS Posen"
+			historical_model = 0 
+			}
+		
+		 ship = {
+			type = dreadnaught 
+			experience = 15 
+			name = "SMS Helgoland"
+			historical_model = 1 
+			}
+		
+		 ship = {
+			type = dreadnaught 
+			experience = 15 
+			name = "SMS Ostfriesland"
+			historical_model = 1 
+			}
+		
+		 ship = {
+			type = dreadnaught 
+			experience = 15 
+			name = "SMS Thüringen"
+			historical_model = 1 
+			}
+		
+		 ship = {
+			type = dreadnaught 
+			experience = 15 
+			name = "SMS Oldenburg"
+			historical_model = 1 
+			}
+		
+		 ship = {
+			type = dreadnaught 
+			experience = 15 
+			name = "SMS Kaiser"
+			historical_model = 2 
+			}
+		
+		 ship = {
+			type = dreadnaught 
+			experience = 15 
+			name = "SMS Friedrich der Grosse"
+			historical_model = 2 
+			}
+		
+		 ship = {
+			type = dreadnaught 
+			experience = 15 
+			name = "SMS Kaiserin"
+			historical_model = 2 
+			}
+		
+		 ship = {
+			type = dreadnaught 
+			experience = 15 
+			name = "SMS Prinzregent Luitpold"
+			historical_model = 2 
+			}
+		
+		 ship = {
+			type = dreadnaught 
+			experience = 15 
+			name = "SMS König"
+			historical_model = 3 
+			}
+		
+		 ship = {
+			type = dreadnaught 
+			experience = 15 
+			name = "SMS Grosser Kurfürst"
+			historical_model = 3 
+			}
+		
+		 ship = {
+			type = dreadnaught 
+			experience = 15 
+			name = "SMS Markgraf"
+			historical_model = 3 
+			}
+		
+		 ship = {
+			type = dreadnaught 
+			experience = 15 
+			name = "SMS Kronprinz"
+			historical_model = 3 
+			}
+		
+		 ship = {
+			type = light_cruiser 
+			experience = 15 
+			name = "SMS Frauenlob"
+			historical_model = 0 
+			}
+		
+		 ship = {
+			type = light_cruiser 
+			experience = 15 
+			name = "SMS Hamburg"
+			historical_model = 0 
+			}
+		
+		 ship = {
+			type = light_cruiser 
+			experience = 15 
+			name = "SMS München"
+			historical_model = 0 
+			}
+		
+		 ship = {
+			type = light_cruiser 
+			experience = 15 
+			name = "SMS Königsberg"
+			historical_model = 0 
+			}
+		
+		 ship = {
+			type = light_cruiser 
+			experience = 15 
+			name = "SMS Stuttgart"
+			historical_model = 0 
+			}
+		
+		 ship = {
+			type = light_cruiser 
+			experience = 15 
+			name = "SMS Rostock"
+			historical_model = 3 
+			}
+		
+		 ship = {
+			type = destroyer 
+			experience = 15 
+			name = "I. Torpedoboots Flottille"
+			historical_model = 12 
+			}
+		
+		 ship = {
+			type = destroyer 
+			experience = 15 
+			name = "III. Torpedoboots Flottille"
+			historical_model = 11 
+			}
+		
+		 ship = {
+			type = destroyer 
+			experience = 15 
+			name = "V. Torpedoboots Flottille"
+			historical_model = 10 
+			}
+		
+		 ship = {
+			type = destroyer 
+			experience = 15 
+			name = "VII. Torpedoboots Flottille"
+			historical_model = 10 
+			}
+		}
+	
+	 navy = {
+		location = 10531  # Helgoland Bight
+		base = 1570  # Wilhelmshaven
+		leader = 855034 # To be named once we have a mapping
+		name = "Aufklärungsstreitkräfte"
+		
+		 ship = {
+			type = battlecruiser 
+			experience = 15 
+			name = "SMS Von der Tann"
+			historical_model = 0 
+			}
+		
+		 ship = {
+			type = battlecruiser 
+			experience = 15 
+			name = "SMS Moltke"
+			historical_model = 1 
+			}
+		
+		 ship = {
+			type = battlecruiser 
+			experience = 15 
+			name = "SMS Seydlitz"
+			historical_model = 2 
+			}
+		
+		 ship = {
+			type = battlecruiser 
+			experience = 15 
+			name = "SMS Derfflinger"
+			historical_model = 3 
+			}
+		
+		 ship = {
+			type = battlecruiser 
+			experience = 15 
+			name = "SMS Lützow"
+			historical_model = 3 
+			}
+		
+		 ship = {
+			type = light_cruiser 
+			experience = 15 
+			name = "SMS Regensburg"
+			historical_model = 3 
+			}
+		
+		 ship = {
+			type = light_cruiser 
+			experience = 15 
+			name = "SMS Pillau"
+			historical_model = 3 
+			}
+		
+		 ship = {
+			type = light_cruiser 
+			experience = 15 
+			name = "SMS Elbing"
+			historical_model = 3 
+			}
+		
+		 ship = {
+			type = light_cruiser 
+			experience = 15 
+			name = "SMS Wiesbaden"
+			historical_model = 4 
+			}
+		
+		 ship = {
+			type = light_cruiser 
+			experience = 15 
+			name = "SMS Frankfurt"
+			historical_model = 4 
+			}
+		
+		 ship = {
+			type = destroyer 
+			experience = 15 
+			name = "II. Torpedoboots Flottille"
+			historical_model = 10 
+			}
+		
+		 ship = {
+			type = destroyer 
+			experience = 15 
+			name = "VI. Torpedoboots Flottille"
+			historical_model = 10 
+			}
+		
+		 ship = {
+			type = destroyer 
+			experience = 15 
+			name = "IX. Torpedoboots Flottille"
+			historical_model = 11 
+			}
+		
+		 ship = {
+			type = destroyer 
+			experience = 15 
+			name = "18. Halbsflottille"
+			historical_model = 12 
+			}
+		}
+	
+	 navy = {
+		location = 10531  # Helgoland Bight
+		base = 1570 # Wilhelmshaven
+		name = "U-bootdivision"
+		
+		 ship = {
+			type = submarine 
+			experience = 15 
+			name = "1. Unterseebootsflottille"
+			historical_model = 5 
+			}
+		
+		 ship = {
+			type = submarine 
+			experience = 15 
+			name = "2. Unterseebootsflottille"
+			historical_model = 5 
+			}
+		}
+	
+	 air = {
+		location = 1570  # Wilhelmshaven
+		base = 1570 # Wilhelmshaven
+		name = "Luftschifftruppe"
+		
+		 wing = {
+			type = airship 
+			experience = 15 
+			name = "Luftschiff-Abteilung 1"
+			historical_model = 1 
+			}
+		}
+	}
 
-regiment = {
-type = hq_brigade
-name = "1st HQ Brigade"
-historical_model = 1
-experience = 2
-}
-
-navy = {
-name = "Hochseeflotte"
-location = 10531
-base = 1570
-
-leader = 855032
-ship = { type = battleship name = "SMS Hessen" historical_model = 10 experience = 15 }
-ship = { type = battleship name = "SMS Deutschland" historical_model = 12 experience = 15 }
-ship = { type = battleship name = "SMS Hannover" historical_model = 12 experience = 15 }
-ship = { type = battleship name = "SMS Pommern" historical_model = 12 experience = 15 }
-ship = { type = battleship name = "SMS Schlesien" historical_model = 12 experience = 15 }
-ship = { type = battleship name = "SMS Schleswig-Holstein" historical_model = 12 experience = 15 }
-ship = { type = dreadnaught name = "SMS Nassau" historical_model = 0 experience = 15 }
-ship = { type = dreadnaught name = "SMS Westfalen" historical_model = 0 experience = 15 }
-ship = { type = dreadnaught name = "SMS Rheinland" historical_model = 0 experience = 15 }
-ship = { type = dreadnaught name = "SMS Posen" historical_model = 0 experience = 15 }
-ship = { type = dreadnaught name = "SMS Helgoland" historical_model = 1 experience = 15 }
-ship = { type = dreadnaught name = "SMS Ostfriesland" historical_model = 1 experience = 15 }
-ship = { type = dreadnaught name = "SMS Thüringen" historical_model = 1 experience = 15 }
-ship = { type = dreadnaught name = "SMS Oldenburg" historical_model = 1 experience = 15 }
-ship = { type = dreadnaught name = "SMS Kaiser" historical_model = 2 experience = 15 }
-ship = { type = dreadnaught name = "SMS Friedrich der Grosse" historical_model = 2 experience = 15 }
-ship = { type = dreadnaught name = "SMS Kaiserin" historical_model = 2 experience = 15 }
-ship = { type = dreadnaught name = "SMS Prinzregent Luitpold" historical_model = 2 experience = 15 }
-ship = { type = dreadnaught name = "SMS König" historical_model = 3 experience = 15 }
-ship = { type = dreadnaught name = "SMS Grosser Kurfürst" historical_model = 3 experience = 15 }
-ship = { type = dreadnaught name = "SMS Markgraf" historical_model = 3 experience = 15 }
-ship = { type = dreadnaught name = "SMS Kronprinz" historical_model = 3 experience = 15 }
-ship = { type = light_cruiser name = "SMS Frauenlob" historical_model = 0 experience = 15 }
-ship = { type = light_cruiser name = "SMS Hamburg" historical_model = 0 experience = 15 }
-ship = { type = light_cruiser name = "SMS München" historical_model = 0 experience = 15 }
-ship = { type = light_cruiser name = "SMS Königsberg" historical_model = 0 experience = 15 }
-ship = { type = light_cruiser name = "SMS Stuttgart" historical_model = 0 experience = 15 }
-ship = { type = light_cruiser name = "SMS Rostock" historical_model = 3 experience = 15 }
-
-ship = { type = destroyer name = "I. Torpedoboots Flottille" historical_model = 12 experience = 15  }
-ship = { type = destroyer name = "III. Torpedoboots Flottille" historical_model = 11 experience = 15  }
-ship = { type = destroyer name = "V. Torpedoboots Flottille" historical_model = 10 experience = 15  }
-ship = { type = destroyer name = "VII. Torpedoboots Flottille" historical_model = 10 experience = 15  }
-
-}
-
-navy = {
-name = "Aufklärungsstreitkräfte"
-location = 10531
-base = 1570
-
-leader = 855034
-ship = { type = battlecruiser name = "SMS Von der Tann" historical_model = 0 experience = 15 }
-ship = { type = battlecruiser name = "SMS Moltke" historical_model = 1 experience = 15 }
-ship = { type = battlecruiser name = "SMS Seydlitz" historical_model = 2 experience = 15 }
-ship = { type = battlecruiser name = "SMS Derfflinger" historical_model = 3 experience = 15 }
-ship = { type = battlecruiser name = "SMS Lützow" historical_model = 3 experience = 15 }
-ship = { type = light_cruiser name = "SMS Regensburg" historical_model = 3 experience = 15 }
-ship = { type = light_cruiser name = "SMS Pillau" historical_model = 3 experience = 15 }
-ship = { type = light_cruiser name = "SMS Elbing" historical_model = 3 experience = 15 }
-ship = { type = light_cruiser name = "SMS Wiesbaden" historical_model = 4 experience = 15 }
-ship = { type = light_cruiser name = "SMS Frankfurt" historical_model = 4 experience = 15 }
-ship = { type = destroyer name = "II. Torpedoboots Flottille" historical_model = 10 experience = 15  }
-ship = { type = destroyer name = "VI. Torpedoboots Flottille" historical_model = 10 experience = 15  }
-ship = { type = destroyer name = "IX. Torpedoboots Flottille" historical_model = 11 experience = 15  }
-ship = { type = destroyer name = "18. Halbsflottille" historical_model = 12 experience = 15  }
-
-
-}
-
- 
-navy = {
-name = "U-bootdivision"
-location = 10531
-base = 1570
- 	
-ship = { type = submarine name = "1. Unterseebootsflottille" historical_model = 5 experience = 15 }
-ship = { type = submarine name = "2. Unterseebootsflottille" historical_model = 5 experience = 15 }
-
-}
- 
-air = {
-name = "Luftschifftruppe"
-location = 1570
-base = 1570
- 	
-wing = {
-type = airship
-name = "Luftschiff-Abteilung 1"
-historical_model = 1
-experience = 15
-}
-
-
-}
-
-}

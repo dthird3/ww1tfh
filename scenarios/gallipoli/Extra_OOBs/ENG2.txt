@@ -1,31 +1,34 @@
-division = {
-name = "52nd (Lowland) Division"
-location = 5586
-leader = 10473
+ division = {
+	location = 5586  # El Iskandarîya
+	leader = 10473 # To be named once we have a mapping
+	name = "52nd (Lowland) Division"
+	
+	 regiment = {
+		type = infantry_brigade 
+		experience = 10 
+		name = "155th Brigade"
+		historical_model = 4 
+		}
+	
+	 regiment = {
+		type = infantry_brigade 
+		experience = 10 
+		name = "156th Brigade"
+		historical_model = 4 
+		}
+	
+	 regiment = {
+		type = infantry_brigade 
+		experience = 10 
+		name = "157th Brigade"
+		historical_model = 4 
+		}
+	
+	 regiment = {
+		type = artillery_brigade 
+		experience = 10 
+		name = "1st Lowland Brigade"
+		historical_model = 4 
+		}
+	}
 
-					
-regiment = {
-type = infantry_brigade
-name = "155th Brigade"
-historical_model = 4
-experience = 10
-}					
-regiment = {
-type = infantry_brigade
-name = "156th Brigade"
-historical_model = 4
-experience = 10
-}				
-regiment = {
-type = infantry_brigade
-name = "157th Brigade"
-historical_model = 4
-experience = 10
-}				
-regiment = {
-type = artillery_brigade
-name = "1st Lowland Brigade"
-historical_model = 4
-experience = 10
-}
-}

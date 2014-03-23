@@ -1,31 +1,34 @@
-division = {
-name = "13th (Western) Division"
-location = 5586
-leader = 10692
+ division = {
+	location = 5586  # El Iskandarîya
+	leader = 10692 # To be named once we have a mapping
+	name = "13th (Western) Division"
+	
+	 regiment = {
+		type = infantry_brigade 
+		experience = 10 
+		name = "38th Brigade"
+		historical_model = 4 
+		}
+	
+	 regiment = {
+		type = infantry_brigade 
+		experience = 10 
+		name = "39th Brigade"
+		historical_model = 4 
+		}
+	
+	 regiment = {
+		type = infantry_brigade 
+		experience = 10 
+		name = "40th Brigade"
+		historical_model = 4 
+		}
+	
+	 regiment = {
+		type = artillery_brigade 
+		experience = 10 
+		name = "LXVI Brigade, Royal field Artillery"
+		historical_model = 4 
+		}
+	}
 
-					
-regiment = {
-type = infantry_brigade
-name = "38th Brigade"
-historical_model = 4
-experience = 10
-}					
-regiment = {
-type = infantry_brigade
-name = "39th Brigade"
-historical_model = 4
-experience = 10
-}				
-regiment = {
-type = infantry_brigade
-name = "40th Brigade"
-historical_model = 4
-experience = 10
-}				
-regiment = {
-type = artillery_brigade
-name = "LXVI Brigade, Royal field Artillery"
-historical_model = 4
-experience = 10
-}
-}
