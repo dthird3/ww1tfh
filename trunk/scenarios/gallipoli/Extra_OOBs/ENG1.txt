@@ -1,31 +1,34 @@
-division = {
-name = "42nd (East Lancashire) Division"
-location = 5586
-leader = 10686
+ division = {
+	location = 5586  # El Iskandarîya
+	leader = 10686 # To be named once we have a mapping
+	name = "42nd (East Lancashire) Division"
+	
+	 regiment = {
+		type = infantry_brigade 
+		experience = 10 
+		name = "125th Brigade"
+		historical_model = 4 
+		}
+	
+	 regiment = {
+		type = infantry_brigade 
+		experience = 10 
+		name = "126th Brigade"
+		historical_model = 4 
+		}
+	
+	 regiment = {
+		type = infantry_brigade 
+		experience = 10 
+		name = "127th Brigade"
+		historical_model = 4 
+		}
+	
+	 regiment = {
+		type = artillery_brigade 
+		experience = 10 
+		name = "1st East Lancashire Brigade"
+		historical_model = 4 
+		}
+	}
 
-					
-regiment = {
-type = infantry_brigade
-name = "125th Brigade"
-historical_model = 4
-experience = 10
-}					
-regiment = {
-type = infantry_brigade
-name = "126th Brigade"
-historical_model = 4
-experience = 10
-}				
-regiment = {
-type = infantry_brigade
-name = "127th Brigade"
-historical_model = 4
-experience = 10
-}				
-regiment = {
-type = artillery_brigade
-name = "1st East Lancashire Brigade"
-historical_model = 4
-experience = 10
-}
-}

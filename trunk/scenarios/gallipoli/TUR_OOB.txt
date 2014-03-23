@@ -1,644 +1,661 @@
-theatre = {
-name = "Istanbul HQ"
-location = 4503
-
-regiment = {
-type = hq_brigade
-name = "1st HQ Brigade"
-historical_model = 1
-experience = 2
-}
-
-army = {
-name = "Fifth Army"
-location = 4560
-leader = 720288
+ theatre = {
+	location = 4503 # Istanbul
+	name = "Istanbul HQ"
+	
+	 regiment = {
+		type = hq_brigade 
+		experience = 2 
+		name = "1st HQ Brigade"
+		historical_model = 1 
+		}
+	
+	 army = {
+		location = 4560  # Gelibolu
+		leader = 720288 # To be named once we have a mapping
+		name = "Fifth Army"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 10 
+			name = "5th HQ Brigade"
+			historical_model = 0 
+			}
+		
+		 corps = {
+			location = 4560  # Gelibolu
+			leader = 720092 # To be named once we have a mapping
+			name = "III Corps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 10 
+				name = "2nd HQ Brigade"
+				historical_model = 0 
+				}
+			
+			 division = {
+				location = 4560  # Gelibolu
+				leader = 720128 # To be named once we have a mapping
+				name = "7th Division"
 				
-regiment = {
-type = hq_brigade
-name = "5th HQ Brigade"
-historical_model = 0
-experience = 10
-}
-
-corps = {
-name = "III Corps"
-location = 4560
-leader = 720092
-
-					
-regiment = {
-type = hq_brigade
-name = "2nd HQ Brigade"
-historical_model = 0
-experience = 10
-}
-division = {
-name = "7th Division"
-location = 4560
-leader = 720128
-
-					
-regiment = {
-type = infantry_brigade
-name = "19th Regiment"
-historical_model = 2
-experience = 10
-}					
-regiment = {
-type = infantry_brigade
-name = "20th Regiment"
-historical_model = 2
-experience = 10
-}				
-regiment = {
-type = infantry_brigade
-name = "21st Regiment"
-historical_model = 2
-experience = 10
-}				
-regiment = {
-type = artillery_brigade
-name = "7th Artillery Regiment"
-historical_model = 2
-experience = 10
-}
-}
-division = {
-name = "9th Division"
-location = 4560
-leader = 720159
-
-					
-regiment = {
-type = infantry_brigade
-name = "25th Regiment"
-historical_model = 2
-experience = 10
-}					
-regiment = {
-type = infantry_brigade
-name = "26th Regiment"
-historical_model = 2
-experience = 10
-}				
-regiment = {
-type = infantry_brigade
-name = "27th Regiment"
-historical_model = 2
-experience = 10
-}				
-regiment = {
-type = artillery_brigade
-name = "9th Artillery Regiment"
-historical_model = 2
-experience = 10
-}
-}
-division = {
-name = "19th Division"
-location = 4560
-leader = 720097
-
-					
-regiment = {
-type = infantry_brigade
-name = "57th Regiment"
-historical_model = 2
-experience = 10
-}					
-regiment = {
-type = infantry_brigade
-name = "72nd Regiment"
-historical_model = 2
-experience = 10
-}				
-regiment = {
-type = infantry_brigade
-name = "77th Regiment"
-historical_model = 2
-experience = 10
-}				
-regiment = {
-type = artillery_brigade
-name = "39th Artillery Regiment"
-historical_model = 2
-experience = 10
-}
-}
-}
-corps = {
-name = "XV Corps"
-location = 4721
-leader = 720302
-
-					
-regiment = {
-type = hq_brigade
-name = "3rd HQ Brigade"
-historical_model = 0
-experience = 10
-}
-division = {
-name = "3rd Division"
-location = 4772
-leader = 720290
-
-					
-regiment = {
-type = infantry_brigade
-name = "31st Regiment"
-historical_model = 2
-experience = 10
-}					
-regiment = {
-type = infantry_brigade
-name = "32nd Regiment"
-historical_model = 2
-experience = 10
-}				
-regiment = {
-type = infantry_brigade
-name = "39th Regiment"
-historical_model = 2
-experience = 10
-}				
-regiment = {
-type = artillery_brigade
-name = "3rd Artillery Regiment"
-historical_model = 2
-experience = 10
-}
-}
-division = {
-name = "11th Division"
-location = 4721
-leader = 720127
-
-					
-regiment = {
-type = infantry_brigade
-name = "33rd Regiment"
-historical_model = 2
-experience = 10
-}					
-regiment = {
-type = infantry_brigade
-name = "127th Regiment"
-historical_model = 2
-experience = 10
-}				
-regiment = {
-type = infantry_brigade
-name = "128th Regiment"
-historical_model = 2
-experience = 10
-}				
-regiment = {
-type = artillery_brigade
-name = "11th Artillery Regiment"
-historical_model = 2
-experience = 10
-}
-}
-division = {
-name = "5th Division"
-location = 4668
-leader = 720164
-
-					
-regiment = {
-type = infantry_brigade
-name = "13th Regiment"
-historical_model = 2
-experience = 10
-}					
-regiment = {
-type = infantry_brigade
-name = "14th Regiment"
-historical_model = 2
-experience = 10
-}				
-regiment = {
-type = infantry_brigade
-name = "15th Regiment"
-historical_model = 2
-experience = 10
-}				
-regiment = {
-type = artillery_brigade
-name = "5th Artillery Regiment"
-historical_model = 2
-experience = 10
-}
-}
-
-division = {
-name = "Independant Cavalry Brigade"
-location = 4560
-leader = 720161
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "19th Regiment"
+					historical_model = 2 
+					}
 				
-regiment = {
-type = cavalry_brigade
-name = "7th Cavalry Regimen"
-historical_model = 2
-experience = 10
-}
-}
-}
-}
-army = {
-name = "Second Army"
-location = 4503
-leader = 720288
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "20th Regiment"
+					historical_model = 2 
+					}
 				
-regiment = {
-type = hq_brigade
-name = "4th HQ Brigade"
-historical_model = 0
-experience = 10
-}
-
-corps = {
-name = "V. Kolordu"
-location = 4503
-
-regiment = {
-type = hq_brigade
-name = "V. Kolordu HQ"
-historical_model = 2
-experience = 10
-is_reserve = yes
-}
-
-division = {
-name = "13. Piyade Tumeni"
-location = 4502
-
-regiment = {
-type = infantry_brigade
-name = "13. Piyade Tumeni 1. Brig"
-historical_model = 2
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "13. Piyade Tumeni 2. Brig"
-historical_model = 2
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "14. Piyade Tumeni"
-location = 4501
-
-regiment = {
-type = infantry_brigade
-name = "14. Piyade Tumeni 1. Brig"
-historical_model = 2
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = militia_brigade
-name = "14. Piyade Tumeni"
-historical_model = 2
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "15. Piyade Tumeni"
-location = 4503
-
-regiment = {
-type = infantry_brigade
-name = "15. Piyade Tumeni 1. Brig"
-historical_model = 2
-experience = 5
-is_reserve = yes
-}
-}
-}
-
-corps = {
-name = "VI. Kolordu"
-location = 4439
-
-regiment = {
-type = hq_brigade
-name = "VI. Kolordu HQ"
-historical_model = 2
-experience = 10
-}
-
-division = {
-name = "16. Piyade Tumeni"
-location = 4561
-
-regiment = {
-type = infantry_brigade
-name = "16. Piyade Tumeni 1. Brig"
-historical_model = 2
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "16. Piyade Tumeni 2. Brig"
-historical_model = 2
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = artillery_brigade
-name = "16. Piyade Tumeni"
-historical_model = 2
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "24. Piyade Tumeni"
-location = 4722
-
-regiment = {
-type = infantry_brigade
-name = "24. Piyade Tumeni 1.Brig"
-historical_model = 2
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = militia_brigade
-name = "24. Piyade Tumeni 2.Brig"
-historical_model = 2
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "26. Piyade Tumeni"
-location = 4669
-
-regiment = {
-type = infantry_brigade
-name = "26. Piyade Tumeni 1. Brig"
-historical_model = 2
-experience = 5
-is_reserve = yes
-}
-}
-}
-}
-
-
-army = {
-name = "First Army"
-location = 4503
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "21st Regiment"
+					historical_model = 2 
+					}
 				
-regiment = {
-type = hq_brigade
-name = "6th HQ Brigade"
-historical_model = 0
-experience = 10
-}
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "7th Artillery Regiment"
+					historical_model = 2 
+					}
+				}
+			
+			 division = {
+				location = 4560  # Gelibolu
+				leader = 720159 # To be named once we have a mapping
+				name = "9th Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "25th Regiment"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "26th Regiment"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "27th Regiment"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "9th Artillery Regiment"
+					historical_model = 2 
+					}
+				}
+			
+			 division = {
+				location = 4560  # Gelibolu
+				leader = 720097 # To be named once we have a mapping
+				name = "19th Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "57th Regiment"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "72nd Regiment"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "77th Regiment"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "39th Artillery Regiment"
+					historical_model = 2 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 4721  # Canakkale
+			leader = 720302 # To be named once we have a mapping
+			name = "XV Corps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 10 
+				name = "3rd HQ Brigade"
+				historical_model = 0 
+				}
+			
+			 division = {
+				location = 4772  # Ayvacik
+				leader = 720290 # To be named once we have a mapping
+				name = "3rd Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "31st Regiment"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "32nd Regiment"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "39th Regiment"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "3rd Artillery Regiment"
+					historical_model = 2 
+					}
+				}
+			
+			 division = {
+				location = 4721  # Canakkale
+				leader = 720127 # To be named once we have a mapping
+				name = "11th Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "33rd Regiment"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "127th Regiment"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "128th Regiment"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "11th Artillery Regiment"
+					historical_model = 2 
+					}
+				}
+			
+			 division = {
+				location = 4668  # Biga
+				leader = 720164 # To be named once we have a mapping
+				name = "5th Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "13th Regiment"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "14th Regiment"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "15th Regiment"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "5th Artillery Regiment"
+					historical_model = 2 
+					}
+				}
+			
+			 division = {
+				location = 4560  # Gelibolu
+				leader = 720161 # To be named once we have a mapping
+				name = "Independant Cavalry Brigade"
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 10 
+					name = "7th Cavalry Regimen"
+					historical_model = 2 
+					}
+				}
+			}
+		}
+	
+	 army = {
+		location = 4503  # Istanbul
+		leader = 720288 # To be named once we have a mapping
+		name = "Second Army"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 10 
+			name = "4th HQ Brigade"
+			historical_model = 0 
+			}
+		
+		 corps = {
+			location = 4503 # Istanbul
+			name = "V. Kolordu"
+			
+			 regiment = {
+				type = hq_brigade 
+				is_reserve = yes 
+				experience = 10 
+				name = "V. Kolordu HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 4502 # Corlu
+				name = "13. Piyade Tumeni"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "13. Piyade Tumeni 1. Brig"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "13. Piyade Tumeni 2. Brig"
+					historical_model = 2 
+					}
+				}
+			
+			 division = {
+				location = 4501 # Tekirdag
+				name = "14. Piyade Tumeni"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "14. Piyade Tumeni 1. Brig"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "14. Piyade Tumeni"
+					historical_model = 2 
+					}
+				}
+			
+			 division = {
+				location = 4503 # Istanbul
+				name = "15. Piyade Tumeni"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "15. Piyade Tumeni 1. Brig"
+					historical_model = 2 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 4439 # Üsküdar
+			name = "VI. Kolordu"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 10 
+				name = "VI. Kolordu HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 4561 # Izmit
+				name = "16. Piyade Tumeni"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "16. Piyade Tumeni 1. Brig"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "16. Piyade Tumeni 2. Brig"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "16. Piyade Tumeni"
+					historical_model = 2 
+					}
+				}
+			
+			 division = {
+				location = 4722 # Bandirma
+				name = "24. Piyade Tumeni"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "24. Piyade Tumeni 1.Brig"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "24. Piyade Tumeni 2.Brig"
+					historical_model = 2 
+					}
+				}
+			
+			 division = {
+				location = 4669 # Karacabey
+				name = "26. Piyade Tumeni"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "26. Piyade Tumeni 1. Brig"
+					historical_model = 2 
+					}
+				}
+			}
+		}
+	
+	 army = {
+		location = 4503 # Istanbul
+		name = "First Army"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 10 
+			name = "6th HQ Brigade"
+			historical_model = 0 
+			}
+		
+		 corps = {
+			location = 4966 # Smyrna
+			name = "I. Kolordu"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 10 
+				name = "I. Kolordu HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 4966 # Smyrna
+				name = "2. Piyade Tumeni"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "2. Piyade Tumeni 1. Brig"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "2. Piyade Tumeni 2. Brig"
+					historical_model = 2 
+					}
+				}
+			
+			 division = {
+				location = 4966 # Smyrna
+				name = "1. Piyade Tumeni"
+				
+				 regiment = {
+					type = janissary_brigade 
+					is_reserve = yes 
+					experience = 10 
+					name = "1st Hcm Brigade"
+					historical_model = 3 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "1. Piyade Tumeni 2. Brig"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "1. Piyade Tumeni "
+					historical_model = 2 
+					}
+				}
+			
+			 division = {
+				location = 4966 # Smyrna
+				name = "3. Piyade Tumeni"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "3. Piyade Tumeni 2. Brig"
+					historical_model = 2 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 5046 # Alanya
+			name = "II. Kolordu"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 10 
+				name = "II. Kolordu HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 5046 # Alanya
+				name = "4. Piyade Tumeni"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "4. Piyade Tumeni 1.Brig"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "4. Piyade Tumeni 2.Brig"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "4. Piyade Tumeni "
+					historical_model = 2 
+					}
+				}
+			
+			 division = {
+				location = 5046 # Alanya
+				name = "5. Piyade Tumeni"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "5. Piyade Tumeni 1. Brig"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "5. Piyade Tumeni 2. Brig"
+					historical_model = 2 
+					}
+				}
+			
+			 division = {
+				location = 5046 # Alanya
+				name = "6. Piyade Tumeni"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "6. Piyade Tumeni"
+					historical_model = 2 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 5045 # Antalya
+			name = "IV. Kolordu"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 10 
+				name = "IV. Kolordu HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 5045 # Antalya
+				name = "10. Piyade Tumeni"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "10. Piyade Tumeni 1. Brig"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "10. Piyade Tumeni 2. Brig"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "10. Piyade Tumeni"
+					historical_model = 2 
+					}
+				}
+			
+			 division = {
+				location = 5045 # Antalya
+				name = "11. Piyade Tumeni"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "11. Piyade Tumeni 1. Brig"
+					historical_model = 2 
+					}
+				
+				 regiment = {
+					type = militia_brigade 
+					is_reserve = yes 
+					experience = 0 
+					name = "11. Piyade Tumeni"
+					historical_model = 2 
+					}
+				}
+			
+			 division = {
+				location = 4503 # Istanbul
+				name = "12. Piyade Tumeni"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "12. Piyade Tumeni"
+					historical_model = 1 
+					}
+				}
+			}
+		}
+	}
 
-corps = {
-name = "I. Kolordu"
-location = 4966
-
-regiment = {
-type = hq_brigade
-name = "I. Kolordu HQ"
-historical_model = 2
-experience = 10
-}
-
-division = {
-name = "2. Piyade Tumeni"
-location = 4966
-
-regiment = {
-type = infantry_brigade
-name = "2. Piyade Tumeni 1. Brig"
-historical_model = 2
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "2. Piyade Tumeni 2. Brig"
-historical_model = 2
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "1. Piyade Tumeni"
-location = 4966
-
-regiment = {
-type = janissary_brigade
-name = "1st Hcm Brigade"
-historical_model = 3
-experience = 10
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "1. Piyade Tumeni 2. Brig"
-historical_model = 2
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = artillery_brigade
-name = "1. Piyade Tumeni "
-historical_model = 2
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "3. Piyade Tumeni"
-location = 4966
-
-regiment = {
-type = infantry_brigade
-name = "3. Piyade Tumeni 2. Brig"
-historical_model = 2
-experience = 5
-is_reserve = yes
-}
-}
-}
-
-corps = {
-name = "II. Kolordu"
-location = 5046
-
-regiment = {
-type = hq_brigade
-name = "II. Kolordu HQ"
-historical_model = 2
-experience = 10
-}
-
-division = {
-name = "4. Piyade Tumeni"
-location = 5046
-
-regiment = {
-type = infantry_brigade
-name = "4. Piyade Tumeni 1.Brig"
-historical_model = 2
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "4. Piyade Tumeni 2.Brig"
-historical_model = 2
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = artillery_brigade
-name = "4. Piyade Tumeni "
-historical_model = 2
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "5. Piyade Tumeni"
-location = 5046
-
-regiment = {
-type = infantry_brigade
-name = "5. Piyade Tumeni 1. Brig"
-historical_model = 2
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "5. Piyade Tumeni 2. Brig"
-historical_model = 2
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "6. Piyade Tumeni"
-location = 5046
-
-regiment = {
-type = infantry_brigade
-name = "6. Piyade Tumeni"
-historical_model = 2
-experience = 5
-is_reserve = yes
-}
-}
-}
-
-corps = {
-name = "IV. Kolordu"
-location = 5045
-
-regiment = {
-type = hq_brigade
-name = "IV. Kolordu HQ"
-historical_model = 2
-experience = 10
-}
-
-division = {
-name = "10. Piyade Tumeni"
-location = 5045
-
-regiment = {
-type = infantry_brigade
-name = "10. Piyade Tumeni 1. Brig"
-historical_model = 2
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "10. Piyade Tumeni 2. Brig"
-historical_model = 2
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = artillery_brigade
-name = "10. Piyade Tumeni"
-historical_model = 2
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "11. Piyade Tumeni"
-location = 5045
-
-regiment = {
-type = infantry_brigade
-name = "11. Piyade Tumeni 1. Brig"
-historical_model = 2
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = militia_brigade
-name = "11. Piyade Tumeni"
-historical_model = 2
-experience = 0
-is_reserve = yes
-}
-}
-
-division = {
-name = "12. Piyade Tumeni"
-location = 4503
-
-regiment = {
-type = infantry_brigade
-name = "12. Piyade Tumeni"
-historical_model = 1
-experience = 5
-is_reserve = yes
-}
-}
-}
-}
-
-}
