@@ -116,7 +116,6 @@ country_event = { #May 25 – The United Kingdom's House of Commons passes Irish H
 
 }
 #April 14 – RMS Titanic strikes an iceberg in the northern Atlantic Ocean. 
-#She sinks the following day with the loss of 1500.
 country_event = {
 
 		id = 100206
@@ -125,12 +124,12 @@ country_event = {
 		
 		trigger = {
 			tag = ENG
-			date = 1912.3.3
+			date = 1912.4.15
 			NOT = { has_country_flag = titanic }
 		}
 		
 		mean_time_to_happen = {
-			days = 1
+			days = 0
 		}
 		
 		fire_only_once = yes

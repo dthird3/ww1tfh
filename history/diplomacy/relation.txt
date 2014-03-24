@@ -59,18 +59,28 @@ second = MTN
 value = -10
 start_date = 1910.1.1
 end_date = 1930.1.1}
+
 relation = {
 first = ALB
 second = TUR
 value = 50
 start_date = 1910.1.1
 end_date = 1930.1.1}
+
+relation = {
+first = SER
+second = TUR
+value = 50
+start_date = 1910.1.1
+end_date = 1930.1.1}
+
 relation = {
 first = ALB
 second = SER
-value = -10
+value = 40
 start_date = 1910.1.1
 end_date = 1930.1.1}
+
 relation = {
 first = ALB
 second = ENG
@@ -272,12 +282,14 @@ second = RUS
 value = -15
 start_date = 1910.1.1
 end_date = 1930.1.1}
+
 relation = {
 first = AUH
 second = SER
 value = -20
 start_date = 1910.1.1
 end_date = 1930.1.1}
+
 relation = {
 first = AUH
 second = SCH
@@ -595,12 +607,14 @@ second = RUS
 value = 75
 start_date = 1910.1.1
 end_date = 1930.1.1}
+
 relation = {
 first = BUL
 second = SER
-value = -15
+value = 75
 start_date = 1910.1.1
 end_date = 1930.1.1}
+
 relation = {
 first = BUL
 second = ENG
@@ -840,18 +854,14 @@ second = HON
 value = 50
 start_date = 1910.1.1
 end_date = 1930.1.1}
-relation = {
-first = COS
-second = MEX
-value = 10
-start_date = 1910.1.1
-end_date = 1930.1.1}
+
 relation = {
 first = COS
 second = NIC
 value = 50
 start_date = 1910.1.1
 end_date = 1930.1.1}
+
 relation = {
 first = COS
 second = PAN
@@ -895,12 +905,7 @@ second = HAI
 value = 30
 start_date = 1910.1.1
 end_date = 1930.1.1}
-relation = {
-first = CUB
-second = MEX
-value = 10
-start_date = 1910.1.1
-end_date = 1930.1.1}
+
 relation = {
 first = CUB
 second = PAN
@@ -1122,18 +1127,21 @@ second = SAU
 value = 10
 start_date = 1910.1.1
 end_date = 1930.1.1}
+
 relation = {
 first = FRA
 second = SER
 value = 75
 start_date = 1910.1.1
 end_date = 1930.1.1}
+
 relation = {
 first = FRA
 second = SAF
 value = 100
 start_date = 1910.1.1
 end_date = 1930.1.1}
+
 relation = {
 first = FRA
 second = SCH
@@ -1207,18 +1215,21 @@ second = RUS
 value = -20
 start_date = 1910.1.1
 end_date = 1930.1.1}
+
 relation = {
 first = GER
 second = SER
-value = -50
+value = 75
 start_date = 1910.1.1
 end_date = 1930.1.1}
+
 relation = {
 first = GER
 second = SAF
-value = 1
+value = 75
 start_date = 1910.1.1
 end_date = 1930.1.1}
+
 relation = {
 first = GER
 second = SWE
@@ -1256,12 +1267,14 @@ second = ROM
 value = 100
 start_date = 1910.1.1
 end_date = 1930.1.1}
+
 relation = {
 first = GRE
 second = SER
 value = 75
 start_date = 1910.1.1
 end_date = 1930.1.1}
+
 relation = {
 first = GRE
 second = ENG
@@ -1343,12 +1356,7 @@ second = LUX
 value = 150
 start_date = 1910.1.1
 end_date = 1930.1.1}
-relation = {
-first = HOL
-second = MEX
-value = 25
-start_date = 1910.1.1
-end_date = 1930.1.1}
+
 relation = {
 first = HOL
 second = NOR
@@ -1459,28 +1467,30 @@ second = SAU
 value = -25
 start_date = 1910.1.1
 end_date = 1930.1.1}
+
 relation = {
 first = ITA
 second = SER
 value = 75
 start_date = 1910.1.1
 end_date = 1930.1.1}
+
 relation = {
 first = ITA
 second = SAF
-value = 1
+value = 75
 start_date = 1910.1.1
 end_date = 1930.1.1}
 relation = {
 first = ITA
 second = SCH
-value = 1
+value = 75
 start_date = 1910.1.1
 end_date = 1930.1.1}
 relation = {
 first = ITA
 second = ENG
-value = -15
+value = 65
 start_date = 1910.1.1
 end_date = 1930.1.1}
 relation = {
@@ -1554,70 +1564,98 @@ start_date = 1910.1.1
 end_date = 1930.1.1}
 
 relation = {
-first = MEX
-second = ENG
-value = 50
-start_date = 1910.1.1
-end_date = 1930.1.1}
-
-relation = {
 first = ENG
 second = MEX
-value = 50
-start_date = 1910.1.1
-end_date = 1930.1.1}
-
-relation = {
-first = MEX
-second = GER
-value = 120
+value = 75
 start_date = 1910.1.1
 end_date = 1930.1.1}
 
 relation = {
 first = GER
 second = MEX
-value = 120
+value = 115
 start_date = 1910.1.1
 end_date = 1930.1.1}
 
 relation = {
-first = MEX
-second = USA
-value = 50
+first = AUH
+second = MEX
+value = 95
 start_date = 1910.1.1
 end_date = 1930.1.1}
 
 relation = {
 first = USA
 second = MEX
+value = 75
+start_date = 1910.1.1
+end_date = 1913.12.31}
+
+relation = {
+first = USA
+second = MEX
 value = 50
+start_date = 1914.1.1
+end_date = 1930.1.1}
+
+relation = {
+first = HOL
+second = MEX
+value = 55
+start_date = 1910.1.1
+end_date = 1930.1.1}
+
+relation = {
+first = CUB
+second = MEX
+value = 30
+start_date = 1910.1.1
+end_date = 1930.1.1}
+
+relation = {
+first = COS
+second = MEX
+value = 30
+start_date = 1910.1.1
+end_date = 1930.1.1}
+
+relation = {
+first = RUS
+second = MEX
+value = 60
+start_date = 1910.1.1
+end_date = 1930.1.1}
+
+relation = {
+first = FRA
+second = MEX
+value = 75
 start_date = 1910.1.1
 end_date = 1930.1.1}
 
 relation = {
 first = MTN
 second = SER
-value = 150
+value = 125
 start_date = 1910.1.1
 end_date = 1930.1.1}
 
 relation = {
 first = NEP
 second = NZL
-value = 200
+value = 125
 start_date = 1910.1.1
 end_date = 1930.1.1}
 relation = {
 first = NEP
 second = OMN
-value = 150
+value = 125
 start_date = 1910.1.1
 end_date = 1930.1.1}
 relation = {
 first = NEP
 second = SAF
-value = 200
+value = 125
 start_date = 1910.1.1
 end_date = 1930.1.1}
 relation = {
@@ -1869,9 +1907,10 @@ end_date = 1930.1.1}
 relation = {
 first = RUS
 second = SER
-value = 150
+value = 175
 start_date = 1910.1.1
 end_date = 1930.1.1}
+
 relation = {
 first = RUS
 second = SWE
@@ -2045,4 +2084,3 @@ value = 100
 start_date = 1936.1.1
 end_date = 1944.1.1
 }
-
