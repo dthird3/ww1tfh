@@ -185,12 +185,12 @@ function P.Alliance(voForeignMinisterData)
 							end
 						end
 					else
-						if loTarget.TargetScore < 50 then
+						if loTarget.TargetScore < -150 then
 						
-							--Utils.LUA_DEBUGOUT("check<50 " .. tostring(loTarget.ActorScore))
-							if P.Command_Alliance(voForeignMinisterData.minister, voForeignMinisterData.Tag, loTarget.Tag, true, 100) then
-								break
-							end
+							--Utils.LUA_DEBUGOUT("check<50 " .. tostring(loTarget.ActorScore).." from ".. tostring(voForeignMinisterData.Tag).." to "..  tostring(loTarget.Tag))
+							--if P.Command_Alliance(voForeignMinisterData.minister, voForeignMinisterData.Tag, loTarget.Tag, true, 100) then
+								--break
+							--end
 						end
 					end
 				end
@@ -203,7 +203,7 @@ function P.Command_Alliance(voMinister, voFromTag, voTargetTag, vbCancel, viScor
 
 	local loCommand = CAllianceAction(voFromTag, voTargetTag)
 	
-	--Utils.LUA_DEBUGOUT("cancelcheck " .. tostring(vbCancel))
+	--Utils.LUA_DEBUGOUT("cancelcheck " .. tostring(vbCancel).." from ")
 	if vbCancel then
 		loCommand:SetValue(false)
 	end

@@ -84,7 +84,7 @@ function P.SliderWeights(voProdSliders)
 
 	if voProdSliders.HasReinforceBonus then
 		laSliders = 4
-	elseif voProdSliders.Year >= 1914 or voProdSliders.IsAtWar or ( voProdSliders.Year == 1913 and voProdSliders.Month >= 7 ) then
+	elseif voProdSliders.Year >= 1913 or voProdSliders.IsAtWar or ( voProdSliders.Year == 1912 and voProdSliders.Month >= 7 ) then
 		laSliders = 0
 	else
 		laSliders = 1
