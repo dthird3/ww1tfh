@@ -2,21 +2,23 @@
 -- LUA Hearts of Iron 3 Production File
 -- Created By: Lothos
 -- Modified By: Lothos
--- Date Last Modified: 11/17/2013
+-- Date Last Modified: 1/25/2014
 -----------------------------------------------------------
--- --Utils.LUA_DEBUGOUT("Country: " .. tostring(ProductionData.Tag))
+-- Utils.LUA_DEBUGOUT("Country: " .. tostring(ProductionData.Tag))
 
 -- ###################################
 -- # Main Method called by the EXE
 -- #####################################
 function ProductionMinister_Tick(minister)
-	--Utils.LUA_DEBUGOUT("ProductionMinister_Tick")
+	Init_Globals() -- Localed in the globals.lua file
+
 	local ProductionData = {
 		Custom = nil,							-- Used to store custom variables
 		minister = minister,
 		ministerAI = nil,
-		Tag = minister:GetCountryTag(),
-		Country = nil,
+		Name = nil,							-- Country Name (String)
+		Tag = minister:GetCountryTag(),		-- Country Tag
+		Country = nil,						-- Country Object
 		Year = CCurrentGameState.GetCurrentDate():GetYear(),			-- Current in game Year (integer)
 		Month = CCurrentGameState.GetCurrentDate():GetMonthOfYear(),	-- Current in game Month (integer)
 		Day = CCurrentGameState.GetCurrentDate():GetDayOfMonth(),		-- Current in game Day (integer)
@@ -27,6 +29,7 @@ function ProductionMinister_Tick(minister)
 		IdeologyGroup = nil,				-- Group the countries Ideology belongs to
 		IdeologyGroupName = nil, 			-- Name of the ideology group (string)
 		IcOBJ = nil,						-- IC Object from Support_Functions.GetICBreakDown
+		NaOBJ = nil,						-- Core Provinces Break Down Object
 		PortsTotal = nil,					-- (integer) Total amount of ports the country has
 		IsAtWar = nil,						-- Boolean are they atwar with someone
 		TechStatus = nil,					-- TechStatus Object
@@ -96,9 +99,9 @@ function ProductionMinister_Tick(minister)
 	
 	-- Initialize Production Object
 	-- #################
-	ProductionData.Country = ProductionData.Tag:GetCountry()
+	ProductionData.Name = tostring(ProductionData.Tag)
+	ProductionData.Country = gbCountryObjects[ProductionData.Name].Country
 	
-	--Utils.LUA_DEBUGOUT("ProductionMinister_Tick" .. tostring(ProductionData.Tag))
 	-- Make sure we have a valid country to work with
 	if not(Support_Functions.IsValidCountry(ProductionData)) then
 		return false
@@ -115,7 +118,7 @@ function ProductionMinister_Tick(minister)
 	end
 
 	-- Initialize counts
-	for k, v in pairs(UnitTypes) do
+	for k, v in pairs(gbUnitTypes) do
 		ProductionData.Units[k] = {
 			Built = 0,
 			Building = 0,
@@ -128,6 +131,7 @@ function ProductionMinister_Tick(minister)
 	ProductionData.IsExile = ProductionData.Country:IsGovernmentInExile()
 	ProductionData.IsPuppet = ProductionData.Country:IsPuppet()
 	ProductionData.IcOBJ = Support_Functions.GetICBreakDown(ProductionData.Country)
+	ProductionData.NaOBJ = Support_Functions.GetNationalBreakDown(ProductionData)
 	ProductionData.PortsTotal = ProductionData.Country:GetNumOfPorts()
 	ProductionData.IsNaval = (ProductionData.PortsTotal > 0 and ProductionData.IcOBJ.IC >= 20)
 	ProductionData.Ideology = ProductionData.Country:GetRulingIdeology()
@@ -149,33 +153,22 @@ function ProductionMinister_Tick(minister)
 	-- Convoys
 	ProductionData = Prod_Convoy.ConstructConvoys(ProductionData, ProductionData.IC.Available)
 	
-	--Utils.LUA_DEBUGOUT("ProductionMinister_TickB")
 	-- Check to make sure they have Manpower
 	--    IC check added for performance. If none dont bother executing.
 	if ProductionData.Manpower.IsMobilizeCovered and ProductionData.IC.Available > 0.1 then
-	--Utils.LUA_DEBUGOUT("ProductionMinister_TickBA")
 		-- Performance, load only if Manpower/IC check past
-		ProductionData.FirePower.IsActive = (ProductionData.TechStatus:GetLevel(CTechnologyDataBase.GetTechnology("superior_firepower")) ~= 0)
-	--Utils.LUA_DEBUGOUT("ProductionMinister_TickBB")
-		ProductionData.Carrier.Size = 2 --ProductionData.TechStatus:GetLevel(CTechnologyDataBase.GetTechnology("carrier_flat_technology"))
-	----Utils.LUA_DEBUGOUT("ProductionMinister_TickBC")
-		--ProductionData.Carrier.Size = ProductionData.TechStatus:GetLevel(CTechnologyDataBase.GetTechnology("carrier_size_technology")) + ProductionData.Carrier.Size
-	--Utils.LUA_DEBUGOUT("ProductionMinister_TickBD")
+		ProductionData.FirePower.IsActive = (ProductionData.TechStatus:GetLevel(gbTechObjects["superior_firepower"].OBJ) ~= 0)
+		ProductionData.Carrier.Size = ProductionData.TechStatus:GetLevel(gbTechObjects["carrier_flat_technology"].OBJ)
+		ProductionData.Carrier.Size = ProductionData.TechStatus:GetLevel(gbTechObjects["carrier_size_technology"].OBJ) + ProductionData.Carrier.Size
 		ProductionData.Manpower.Total = ProductionData.Country:GetManpower():Get()
-	--Utils.LUA_DEBUGOUT("ProductionMinister_TickBE")
 		ProductionData.AirfieldsTotal = ProductionData.Country:GetNumOfAirfields()
-	--Utils.LUA_DEBUGOUT("ProductionMinister_TickBF")
 
 		-- These variables mainly used to call tech generator to calculate ratios
 		---   Placed in here for performance reasons.
 		ProductionData.TotalLeadership = ProductionData.Country:GetTotalLeadership():Get()
-	--Utils.LUA_DEBUGOUT("ProductionMinister_TickBG")
 		ProductionData.icSupplies = ProductionData.Country:GetICPart(CDistributionSetting._PRODUCTION_SUPPLY_):Get()
-	--Utils.LUA_DEBUGOUT("ProductionMinister_TickBH")
 		ProductionData.icSupplyPercentage = ProductionData.icSupplies / ProductionData.IcOBJ.IC
-	--Utils.LUA_DEBUGOUT("ProductionMinister_TickBI")
 		ProductionData.TechList = Support_Country.Call_Function(ProductionData, "TechList", ProductionData)
-	--Utils.LUA_DEBUGOUT("ProductionMinister_TickBJ")
 
 		-- Verify Build Ratios against available units
 		-- 1 = Land
@@ -183,14 +176,11 @@ function ProductionMinister_Tick(minister)
 		-- 3 = Sea
 		-- 4 = Other (Typically Buildings)
 		local laProdWeights = Support_Country.Call_Function(ProductionData, "ProductionWeights", ProductionData)
-	--Utils.LUA_DEBUGOUT("ProductionMinister_TickBK")
 		
 		if ProductionData.FirePower.IsActive then
 			ProductionData.FirePower.Units = Support_Country.Call_Function(ProductionData, "FirePower", ProductionData)
-	--Utils.LUA_DEBUGOUT("ProductionMinister_TickBL")
 		end
 
-	--Utils.LUA_DEBUGOUT("ProductionMinister_TickC")
 		-- Elite Units processing before anything else so IC is distributed after
 		ProductionData = Prod_Elite.Build(ProductionData, ProductionData.IC.Available)
 
@@ -200,21 +190,14 @@ function ProductionMinister_Tick(minister)
 		--local laTempTReq = ProductionData.ministerAI:GetTheatreSubUnitNeedCounts()
 		
 		-- Get the build counts
-		for subUnit in CSubUnitDataBase.GetSubUnitList() do
-			local lsUnitType = subUnit:GetKey():GetString() 
-			
-			if not(UnitTypes[lsUnitType] == nil) then
-				local nIndex = subUnit:GetIndex()
-
-				ProductionData.Units[lsUnitType].Built = laTempCurrent:GetAt(nIndex)
-				ProductionData.Units[lsUnitType].Building = laTempProd:GetAt(nIndex)
-				ProductionData.Units[lsUnitType].Total = ProductionData.Units[lsUnitType].Built + ProductionData.Units[lsUnitType].Building
-			end
+		for k, v in pairs(gbUnitObjects) do
+			ProductionData.Units[k].Built = laTempCurrent:GetAt(v.Index)
+			ProductionData.Units[k].Building = laTempProd:GetAt(v.Index)
+			ProductionData.Units[k].Total = ProductionData.Units[k].Built + ProductionData.Units[k].Building
 		end	
 		
-	--Utils.LUA_DEBUGOUT("ProductionMinister_TickD")
 		-- One loop to do all the counting (Performance)
-		for k, v in pairs(UnitTypes) do
+		for k, v in pairs(gbUnitTypes) do
 			v.Name = k
 			ProductionData = Prod_Units.UpdateCounts(ProductionData, v)
 		end
@@ -232,6 +215,12 @@ function ProductionMinister_Tick(minister)
 					end
 				end
 			end
+			-- Nothing was found so put it into construction
+			if laProdWeights[2] > 0 then
+				laProdWeights[4] = laProdWeights[2]
+			end
+
+			laProdWeights[2] = 0
 		end
 
 		-- If no ports do not build any naval units
@@ -246,9 +235,14 @@ function ProductionMinister_Tick(minister)
 					end
 				end
 			end
+			-- Nothing was found so put it into construction
+			if laProdWeights[3] > 0 then
+				laProdWeights[4] = laProdWeights[3]
+			end
+
+			laProdWeights[3] = 0
 		end
 
-	--Utils.LUA_DEBUGOUT("ProductionMinister_TickE")
 		-- Begin IC break down		
 		ProductionData.IC.Types.Land.Total = ProductionData.IC.Allocated * laProdWeights[1]
 		ProductionData.IC.Types.Air.Total = ProductionData.IC.Allocated * laProdWeights[2]
@@ -297,18 +291,15 @@ function ProductionMinister_Tick(minister)
 		end
 	end
 
-	--Utils.LUA_DEBUGOUT("ProductionMinister_TickF")
 	-- Reset Available to whicever is max in case some other area went over
 	ProductionData.IC.Available = math.max(ProductionData.IC.Available, ProductionData.IC.Types.Other.Available)
 
 	-- There is IC left so produce buildigns
 	if ProductionData.IC.Available > 0.1 then
-		--Utils.LUA_DEBUGOUT("BUILDING: " .. tostring(ProductionData.Tag))
 		ProductionData = Prod_Buildings.Build(ProductionData, ProductionData.IC.Available)
 	end
 
 	if math.random(4) == 1 then
 		ProductionData.minister:PrioritizeBuildQueue()
 	end
-	--Utils.LUA_DEBUGOUT("ProductionMinister_TickG")
 end

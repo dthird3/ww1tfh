@@ -1,6 +1,5 @@
 -- generate a relation value between our country and another
 function AI_GenerateNonHistoricalRelation(country, target)
-	--Utils.LUA_DEBUGOUT("AI_GenerateNonHistoricalRelation")
 	local desired = 25
 	local relation = country:GetRelation(target)
 	local targetCountry = target:GetCountry()
@@ -33,3 +32,4 @@ function AI_GenerateNonHistoricalRelation(country, target)
 
 	return desired
 end
+

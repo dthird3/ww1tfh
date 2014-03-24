@@ -27,8 +27,10 @@ end
 -- #######################################
 -- FOREIGN MINISTER
 function P.ForeignMinister_Alignment(voForeignMinisterData)
-	if not(voForeignMinisterData.HasFaction) and voForeignMinisterData.Year >=1913 then
+	if not(voForeignMinisterData.HasFaction) and voForeignMinisterData.Year >=1914 then
 		return ForeignMinister_Alignment.Alignment_Push("axis", voForeignMinisterData, true, true)
+	else
+		return ForeignMinister_Alignment.Alignment_Neutral(voForeignMinisterData)
 	end
 	return true
 end
