@@ -1,1030 +1,1199 @@
-#id = 123 #EVENTNAME: Russians denounce Janin's behavior *CONFIRMED
-#id = 544 #EVENTNAME: Koltchak arrives! *CONFIRMED
-#id = 545 #EVENTNAME: Travel to Omsk *CONFIRMED
-#id = 546 #EVENTNAME: Coup Omsk and Samara *CONFIRMED
-#id = 547 #EVENTNAME: Join the White Army *CONFIRMED
-#id = 548 #EVENTNAME: Janin and the Czechoslovak Legion *CONFIRMED
-#id = 549 #EVENTNAME: Problems with the Czechoslovak Legion *CONFIRMED
-#id = 550 #EVENTNAME: Report Janin's behavior to the French *CONFIRMED
-#id = 551 #EVENTNAME: Janin remains in Russia *CONFIRMED
-#id = 552 #EVENTNAME: Janin is fired *CONFIRMED
-#id = 553 #EVENTNAME: Omsk is lost! *CONFIRMED
-#id = 554 #EVENTNAME: The Czechoslovak Legion defects *CONFIRMED
-#id = 555 #EVENTNAME: Koltchak executed! *CONFIRMED
-#id = 556 #EVENTNAME: Move capitol to Petrograd *CONFIRMED
-#id = 557 #EVENTNAME: Move capitol to Moscow *CONFIRMED
-#id = 558 #EVENTNAME: Move capitol to Tsarystine *CONFIRMED
-#id = 560 #EVENTNAME: Move capitol to Ekaterinburg *CONFIRMED
-#id = 561 #EVENTNAME: White Terror *CONFIRMED
-#id = 562 #EVENTNAME: Form Russia *CONFIRMED
-#id = 563 #EVENTNAME: The Volunteers army *CONFIRMED
-#id = 564 #EVENTNAME: New recruits  *CONFIRMED
-#id = 565 #EVENTNAME: New recruits  *CONFIRMED
-#id = 566 #EVENTNAME: Cossacks rise against the Bolsheviks  *CONFIRMED
-#id = 574 #EVENTNAME: The Arkhangelsk Government *CONFIRMED
-#id = 582 #EVENTNAME: The Basmachi *CONFIRMED
-#id = 583 #EVENTNAME: Ismail Enver joins the movement *CONFIRMED
+#Russians denounce Janin's behavior
 
 
-
-#EVENTNAME: Russians denounce Janin's behavior
-country_event = {
-id = 123
-title = "DH_EVENT_2002551_TITLE"
-desc = "DH_EVENT_2002551_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = FRA
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2002551 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2002551_Option1"
-	ai_chance = { factor = 85
-		 }
-	relation = { who = WHR value = -100  }
-	WHR = { country_event = 551 }
-	
-set_global_flag = 2002551_EVENT_DONE
-
-}
-
-option = {
-	name = "DH_EVENT_2002551_Option2"
-	ai_chance = { factor = 15
-		 }
-	relation = { who = WHR value = 50  }
-	dissent = 3 
-	WHR = { country_event = 552 }
-	
-set_global_flag = 2002551_EVENT_DONE
-
-}
-
-}
-
-
-#EVENTNAME: Koltchak arrives!
-country_event = {
-id = 544
-title = "DH_EVENT_2173500_TITLE"
-desc = "DH_EVENT_2173500_DESC"
-trigger = { 
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2173500 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  3 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2173500_Option7"
-	3927 = { hq_brigade = current }
-	3927 = { infantry_brigade = current infantry_brigade = current infantry_brigade = current }
-	war = { target = SOV }
-	money = 125 
-	
-set_global_flag = 2173500_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Travel to Omsk
-country_event = {
-id = 545
-title = "DH_EVENT_2173501_TITLE"
-desc = "DH_EVENT_2173501_DESC"
-trigger = {
-		and = {
-		exists = WHR		not = {WHR = { government_in_exile = yes } }
-		}
-		and = {
-		exists = SOV		not = { SOV = { government_in_exile = yes } }
-		}
-	SOV = { war_with = WHR }
-	money =  5
-	
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2173501 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  20 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2173501_Option7"
-	money = -50 
-	
-	
-set_global_flag = 2173501_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Coup Omsk and Samara
-country_event = {
-id = 546
-title = "DH_EVENT_2173502_TITLE"
-desc = "DH_EVENT_2173502_DESC"
-trigger = {
-	has_global_flag = 2173500_EVENT_DONE
-		and = {
-		exists = SOV		not = { SOV = { government_in_exile = yes } }
-		}
-	SOV = { war_with = WHR }
-	money =  10
-	
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2173502 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  20 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2173502_Option7"
-	money = -100 
-	dissent = 5 
-	WHR = { country_event = 548 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 1360021 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 1360022 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 1360023 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 1360024 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 1360025 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 1360026 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 1360027 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 1360028 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 1360029 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 1360001 }
-	
-set_global_flag = 2173502_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Join the White Army
-country_event = {
-id = 547
-title = "DH_EVENT_2173503_TITLE"
-desc = "DH_EVENT_2173503_DESC"
-trigger = {
-	has_global_flag = 2173501_EVENT_DONE
-		and = {
-		exists = WHR		not = {WHR = { government_in_exile = yes } }
-		}
-		and = {
-		exists = SOV		not = { SOV = { government_in_exile = yes } }
-		}
-	SOV = { war_with = WHR }
-	money =  5
-	
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2173503 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  20 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2173503_Option7"
-	money = -50 
-	
-	
-set_global_flag = 2173503_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Janin and the Czechoslovak Legion
-country_event = {
-id = 548
-title = "DH_EVENT_2173504_TITLE"
-desc = "DH_EVENT_2173504_DESC"
-trigger = { 
-tag = WHR
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2173504 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2173504_Option7"
-	6674 = { hq_brigade = current }
-	6674 = { infantry_brigade = current infantry_brigade = current infantry_brigade = current }
-	6674 = { infantry_brigade = current infantry_brigade = current infantry_brigade = current }
-	6674 = { infantry_brigade = current infantry_brigade = current infantry_brigade = current }
-	
-set_global_flag = 2173504_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Problems with the Czechoslovak Legion
-country_event = {
-id = 549
-title = "DH_EVENT_2173505_TITLE"
-desc = "DH_EVENT_2173505_DESC"
-trigger = {
-	has_global_flag = 2173503_EVENT_DONE
-	#NOEQUIVALENT random =  10
-	not = {
-		 has_global_flag = 2173507_EVENT_DONE
-		 }
-	
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2173505 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  15 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2173505_Option7"
-	dissent = 1 
-	
-set_global_flag = 2173505_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Report Janin's behavior to the French
-country_event = {
-id = 550
-title = "DH_EVENT_2173506_TITLE"
-desc = "DH_EVENT_2173506_DESC"
-trigger = {
-	has_global_flag = 2173504_EVENT_DONE
-		and = {
-		exists = SOV		not = { SOV = { government_in_exile = yes } }
-		}
-	money =  10
-
-	#NOEQUIVALENT random =  10
-	
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2173506 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  15 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2173506_Option7"
-	money = -100 
-	dissent = 1 
-	FRA = { country_event = 123}
-	
-set_global_flag = 2173506_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Janin remains in Russia
-country_event = {
-id = 551
-title = "DH_EVENT_2173507_TITLE"
-desc = "DH_EVENT_2173507_DESC"
-trigger = { 
-tag = WHR
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2173507 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2173507_Option7"
-	dissent = 5 
-	
-set_global_flag = 2173507_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Janin is fired
-country_event = {
-id = 552
-title = "DH_EVENT_2173508_TITLE"
-desc = "DH_EVENT_2173508_DESC"
-trigger = { 
-tag = WHR
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2173508 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2173508_Option7"
-	dissent = 2 
-	
-set_global_flag = 2173508_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Omsk is lost!
-country_event = {
-id = 553
-title = "DH_EVENT_2173509_TITLE"
-desc = "DH_EVENT_2173509_DESC"
-trigger = {
-	has_global_flag = 2173501_EVENT_DONE
-	not = {
-		8528 = { controlled_by = THIS }
-		1409 = { controlled_by = THIS }
-		782 = { controlled_by = THIS }
-		8211 = { controlled_by = THIS }
-		2857 = { controlled_by = THIS }
-		2857 = { controlled_by = THIS }
-		}
-	
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2173509 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  10 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2173509_Option7"
-	dissent = 10 
-	
-set_global_flag = 2173509_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: The Czechoslovak Legion defects
-country_event = {
-id = 554
-title = "DH_EVENT_2173510_TITLE"
-desc = "DH_EVENT_2173510_DESC"
-trigger = {
-	has_global_flag = 2173508_EVENT_DONE
-	has_global_flag = 2173505_EVENT_DONE
-	not = {
-		 has_global_flag = 2173507_EVENT_DONE
-		 }
-	
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2173510 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  10 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2173510_Option7"
-	dissent = 10 
-	# MANUALFIX remove unit command = { type = remove_division which = "1. Czech Division" value = UER }
-	# MANUALFIX remove unit command = { type = remove_division which = "2. Czech Division" value = UER }
-	# MANUALFIX remove unit command = { type = remove_division which = "3. Czech Division" value = UER }
-	
-set_global_flag = 2173510_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Koltchak executed!
-country_event = {
-id = 555
-title = "DH_EVENT_2173511_TITLE"
-desc = "DH_EVENT_2173511_DESC"
-trigger = { has_global_flag = 2173509_EVENT_DONE
+ country_event = {
+	title = "DH_EVENT_2002551_TITLE"
+	desc = "DH_EVENT_2002551_DESC"
+	id = 123
 	 
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2173511 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  10 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2173511_Option7"
-	dissent = 10 
-	remove_minister = 1360006 
-	#kill_leader = 11701 
-	
-set_global_flag = 2173511_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Move capitol to Petrograd
-country_event = {
-id = 556
-title = "DH_EVENT_2173513_TITLE"
-desc = "DH_EVENT_2173513_DESC"
-trigger = {
-	not = {
-		 	and = {
-		exists = SOV		not = { SOV = { government_in_exile = yes } }
-		}
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = FRA
+		 not = {
+			 has_global_flag = SLEEPEVENT_2002551
+			 }
 		 }
-	war = no
-	782 = { controlled_by = THIS }
-	
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2173513 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  20 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2173513_Option7"
-	dissent = 5 
-	capital = 782
-	
-set_global_flag = 2173513_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Move capitol to Moscow
-country_event = {
-id = 557
-title = "DH_EVENT_2173512_TITLE"
-desc = "DH_EVENT_2173512_DESC"
-trigger = {
-	not = {
-			and = {
-		exists = SOV		not = { SOV = { government_in_exile = yes } }
-		}
-		782 = { controlled_by = THIS }
-		}
-	war = no
-	1409 = { controlled_by = THIS }
-	
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2173512 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  20 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2173512_Option7"
-	dissent = 5 
-	capital = 1409
-	
-set_global_flag = 2173512_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Move capitol to Tsarystine
-country_event = {
-id = 558
-title = "DH_EVENT_2173514_TITLE"
-desc = "DH_EVENT_2173514_DESC"
-trigger = {
-	not = {
-			and = {
-		exists = SOV		not = { SOV = { government_in_exile = yes } }
-		}
-		782 = { controlled_by = THIS }
-		1409 = { controlled_by = THIS }
-		}
-	war = no
-	2857 = { controlled_by = THIS }
-	
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2173514 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  20 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2173514_Option7"
-	dissent = 5 
-	capital = 2857
-	
-set_global_flag = 2173514_EVENT_DONE
-
-}
-
-}
-
-
-#EVENTNAME: Move capitol to Ekaterinburg
-country_event = {
-id = 560
-title = "DH_EVENT_2173516_TITLE"
-desc = "DH_EVENT_2173516_DESC"
-trigger = {
-	not = {
-			and = {
-		exists = SOV		not = { SOV = { government_in_exile = yes } }
-		}
-		782 = { controlled_by = THIS }
-		1409 = { controlled_by = THIS }
-		2857 = { controlled_by = THIS }
-		2857 = { controlled_by = THIS }
-		}
-	war = no
-	8211 = { controlled_by = THIS }
-	
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2173516 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  20 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2173516_Option7"
-	dissent = 5 
-	capital = 8211
-	
-set_global_flag = 2173516_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: White Terror
-country_event = {
-id = 561
-title = "DH_EVENT_2173517_TITLE"
-desc = "DH_EVENT_2173517_DESC"
-trigger = {
-	#NOEQUIVALENT random =  8
-		and = {
-		exists = SOV		not = { SOV = { government_in_exile = yes } }
-		}
-	war = yes
-	
-tag = WHR
-date = 1914.6.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2173517 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  11 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2173517_Option7"
-	dissent = 2 
-	
-set_global_flag = 2173517_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Form Russia
-country_event = {
-id = 562
-title = "DH_EVENT_2173518_TITLE"
-desc = "DH_EVENT_2173518_DESC"
-trigger = {
-	war = no
-	not = {
-		exists = RUS
-		dissent = 10
-		}
-	782 = { controlled_by = THIS }
-	1409 = { controlled_by = THIS }
-	2857 = { controlled_by = THIS }
-	8211 = { controlled_by = THIS }
-	2857 = { controlled_by = THIS }
-	8528 = { controlled_by = THIS }
-	
-
-date = 1914.1.1
-
-not = { date = 1963.12.30
- }
-or = {
-tag = WHR
-}
-
-
-not = { has_global_flag = SLEEPEVENT_2173518 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  90 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2173518_Option7"
-	dissent = -10 
-	RUS = {
-		}
-
-set_global_flag = 2173518_EVENT_DONE
-
+	option = {
+		 name = "DH_EVENT_2002551_Option1"
+		 ai_chance = {
+			 factor = 85
+			 }
+		 relation = {
+			 who = WHR
+			 value = -100
+			 }
+		 WHR = {
+			 country_event = 551
+			 }
+		 set_global_flag = 2002551_EVENT_DONE
+		 }
+	option = {
+		 name = "DH_EVENT_2002551_Option2"
+		 ai_chance = {
+			 factor = 15
+			 }
+		 relation = {
+			 who = WHR
+			 value = 50
+			 }
+		 dissent = 3
+		 WHR = {
+			 country_event = 552
+			 }
+		 set_global_flag = 2002551_EVENT_DONE
+		 }
 	}
-}
-
-#EVENTNAME: The Volunteers army
-country_event = {
-id = 563
-title = "DH_EVENT_2168500_TITLE"
-desc = "DH_EVENT_2168500_DESC"
-trigger = { 
-tag = WHR
-date = 1914.8.4
 
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2168500 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  2 }
+#Koltchak arrives!
+
+
+ country_event = {
+	title = "DH_EVENT_2173500_TITLE"
+	desc = "DH_EVENT_2173500_DESC"
+	id = 544
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 3
+		 }
+	trigger = {
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173500
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2173500_Option7"
+		 3927 = {
+			 hq_brigade = current
+			 }
+		 3927 = {
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 }
+		 war = {
+			 target = SOV
+			 }
+		 money = 125
+		 set_global_flag = 2173500_EVENT_DONE
+		 }
+	}
+
+#Travel to Omsk
+
+
+ country_event = {
+	title = "DH_EVENT_2173501_TITLE"
+	desc = "DH_EVENT_2173501_DESC"
+	id = 545
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 20
+		 }
+	trigger = {
+		 and = {
+			 exists = WHR
+			 not = {
+				 WHR = {
+					 government_in_exile = yes
+					 }
+				 }
+			 }
+		 and = {
+			 exists = SOV
+			 not = {
+				 SOV = {
+					 government_in_exile = yes
+					 }
+				 }
+			 }
+		 SOV = {
+			 war_with = WHR
+			 }
+		 money = 5
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173501
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2173501_Option7"
+		 money = -50
+		 set_global_flag = 2173501_EVENT_DONE
+		 }
+	}
+
+#Coup Omsk and Samara
+
+
+ country_event = {
+	title = "DH_EVENT_2173502_TITLE"
+	desc = "DH_EVENT_2173502_DESC"
+	id = 546
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 20
+		 }
+	trigger = {
+		 has_global_flag = 2173500_EVENT_DONE
+		 and = {
+			 exists = SOV
+			 not = {
+				 SOV = {
+					 government_in_exile = yes
+					 }
+				 }
+			 }
+		 SOV = {
+			 war_with = WHR
+			 }
+		 money = 10
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173502
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2173502_Option7"
+		 money = -100
+		 dissent = 5
+		 WHR = {
+			 country_event = 548
+			 }
+		 set_global_flag = 2173502_EVENT_DONE
+		 }
+	}
+
+#Join the White Army
+
+
+ country_event = {
+	title = "DH_EVENT_2173503_TITLE"
+	desc = "DH_EVENT_2173503_DESC"
+	id = 547
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 20
+		 }
+	trigger = {
+		 has_global_flag = 2173501_EVENT_DONE
+		 and = {
+			 exists = WHR
+			 not = {
+				 WHR = {
+					 government_in_exile = yes
+					 }
+				 }
+			 }
+		 and = {
+			 exists = SOV
+			 not = {
+				 SOV = {
+					 government_in_exile = yes
+					 }
+				 }
+			 }
+		 SOV = {
+			 war_with = WHR
+			 }
+		 money = 5
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173503
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2173503_Option7"
+		 money = -50
+		 set_global_flag = 2173503_EVENT_DONE
+		 }
+	}
+
+#Janin and the Czechoslovak Legion
+
+
+ country_event = {
+	title = "DH_EVENT_2173504_TITLE"
+	desc = "DH_EVENT_2173504_DESC"
+	id = 548
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = WHR
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173504
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2173504_Option7"
+		 6674 = {
+			 hq_brigade = current
+			 }
+		 6674 = {
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 }
+		 6674 = {
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 }
+		 6674 = {
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 }
+		 set_global_flag = 2173504_EVENT_DONE
+		 }
+	}
+
+#Problems with the Czechoslovak Legion
+
+
+ country_event = {
+	title = "DH_EVENT_2173505_TITLE"
+	desc = "DH_EVENT_2173505_DESC"
+	id = 549
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 15
+		 }
+	trigger = {
+		 has_global_flag = 2173503_EVENT_DONE
+		 not = {
+			 has_global_flag = 2173507_EVENT_DONE
+			 }
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173505
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2173505_Option7"
+		 dissent = 1
+		 set_global_flag = 2173505_EVENT_DONE
+		 }
+	}
+
+#Report Janin's behavior to the French
+
+
+ country_event = {
+	title = "DH_EVENT_2173506_TITLE"
+	desc = "DH_EVENT_2173506_DESC"
+	id = 550
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 15
+		 }
+	trigger = {
+		 has_global_flag = 2173504_EVENT_DONE
+		 and = {
+			 exists = SOV
+			 not = {
+				 SOV = {
+					 government_in_exile = yes
+					 }
+				 }
+			 }
+		 money = 10
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173506
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2173506_Option7"
+		 money = -100
+		 dissent = 1
+		 FRA = {
+			 country_event = 123
+			 }
+		 set_global_flag = 2173506_EVENT_DONE
+		 }
+	}
+
+#Janin remains in Russia
+
+
+ country_event = {
+	title = "DH_EVENT_2173507_TITLE"
+	desc = "DH_EVENT_2173507_DESC"
+	id = 551
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = WHR
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173507
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2173507_Option7"
+		 dissent = 5
+		 set_global_flag = 2173507_EVENT_DONE
+		 }
+	}
+
+#Janin is fired
+
+
+ country_event = {
+	title = "DH_EVENT_2173508_TITLE"
+	desc = "DH_EVENT_2173508_DESC"
+	id = 552
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = WHR
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173508
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2173508_Option7"
+		 dissent = 2
+		 set_global_flag = 2173508_EVENT_DONE
+		 }
+	}
+
+#Omsk is lost!
+
+
+ country_event = {
+	title = "DH_EVENT_2173509_TITLE"
+	desc = "DH_EVENT_2173509_DESC"
+	id = 553
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 10
+		 }
+	trigger = {
+		 has_global_flag = 2173501_EVENT_DONE
+		 not = {
+			 8528 = {
+				 controlled_by = THIS
+				 }
+			 1409 = {
+				 controlled_by = THIS
+				 }
+			 782 = {
+				 controlled_by = THIS
+				 }
+			 8211 = {
+				 controlled_by = THIS
+				 }
+			 2857 = {
+				 controlled_by = THIS
+				 }
+			 2857 = {
+				 controlled_by = THIS
+				 }
+			 }
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173509
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2173509_Option7"
+		 dissent = 10
+		 set_global_flag = 2173509_EVENT_DONE
+		 }
+	}
+
+#The Czechoslovak Legion defects
+
+
+ country_event = {
+	title = "DH_EVENT_2173510_TITLE"
+	desc = "DH_EVENT_2173510_DESC"
+	id = 554
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 10
+		 }
+	trigger = {
+		 has_global_flag = 2173508_EVENT_DONE
+		 has_global_flag = 2173505_EVENT_DONE
+		 not = {
+			 has_global_flag = 2173507_EVENT_DONE
+			 }
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173510
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2173510_Option7"
+		 dissent = 10
+		 set_global_flag = 2173510_EVENT_DONE
+		 }
+	}
+
+#Koltchak executed!
+
+
+ country_event = {
+	title = "DH_EVENT_2173511_TITLE"
+	desc = "DH_EVENT_2173511_DESC"
+	id = 555
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 10
+		 }
+	trigger = {
+		 has_global_flag = 2173509_EVENT_DONE
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173511
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2173511_Option7"
+		 dissent = 10
+		 remove_minister = 1360006
+		 set_global_flag = 2173511_EVENT_DONE
+		 }
+	}
+
+#Move capitol to Petrograd
+
+
+ country_event = {
+	title = "DH_EVENT_2173513_TITLE"
+	desc = "DH_EVENT_2173513_DESC"
+	id = 556
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 20
+		 }
+	trigger = {
+		 not = {
+			 and = {
+				 exists = SOV
+				 not = {
+					 SOV = {
+						 government_in_exile = yes
+						 }
+					 }
+				 }
+			 }
+		 war = no
+		 782 = {
+			 controlled_by = THIS
+			 }
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173513
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2173513_Option7"
+		 dissent = 5
+		 capital = 782
+		 set_global_flag = 2173513_EVENT_DONE
+		 }
+	}
+
+#Move capitol to Moscow
+
+
+ country_event = {
+	title = "DH_EVENT_2173512_TITLE"
+	desc = "DH_EVENT_2173512_DESC"
+	id = 557
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 20
+		 }
+	trigger = {
+		 not = {
+			 and = {
+				 exists = SOV
+				 not = {
+					 SOV = {
+						 government_in_exile = yes
+						 }
+					 }
+				 }
+			 782 = {
+				 controlled_by = THIS
+				 }
+			 }
+		 war = no
+		 1409 = {
+			 controlled_by = THIS
+			 }
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173512
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2173512_Option7"
+		 dissent = 5
+		 capital = 1409
+		 set_global_flag = 2173512_EVENT_DONE
+		 }
+	}
+
+#Move capitol to Tsarystine
+
+
+ country_event = {
+	title = "DH_EVENT_2173514_TITLE"
+	desc = "DH_EVENT_2173514_DESC"
+	id = 558
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 20
+		 }
+	trigger = {
+		 not = {
+			 and = {
+				 exists = SOV
+				 not = {
+					 SOV = {
+						 government_in_exile = yes
+						 }
+					 }
+				 }
+			 782 = {
+				 controlled_by = THIS
+				 }
+			 1409 = {
+				 controlled_by = THIS
+				 }
+			 }
+		 war = no
+		 2857 = {
+			 controlled_by = THIS
+			 }
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173514
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2173514_Option7"
+		 dissent = 5
+		 capital = 2857
+		 set_global_flag = 2173514_EVENT_DONE
+		 }
+	}
+
+#Move capitol to Ekaterinburg
+
+
+ country_event = {
+	title = "DH_EVENT_2173516_TITLE"
+	desc = "DH_EVENT_2173516_DESC"
+	id = 560
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 20
+		 }
+	trigger = {
+		 not = {
+			 and = {
+				 exists = SOV
+				 not = {
+					 SOV = {
+						 government_in_exile = yes
+						 }
+					 }
+				 }
+			 782 = {
+				 controlled_by = THIS
+				 }
+			 1409 = {
+				 controlled_by = THIS
+				 }
+			 2857 = {
+				 controlled_by = THIS
+				 }
+			 2857 = {
+				 controlled_by = THIS
+				 }
+			 }
+		 war = no
+		 8211 = {
+			 controlled_by = THIS
+			 }
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173516
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2173516_Option7"
+		 dissent = 5
+		 capital = 8211
+		 set_global_flag = 2173516_EVENT_DONE
+		 }
+	}
+
+#White Terror
+
+
+ country_event = {
+	title = "DH_EVENT_2173517_TITLE"
+	desc = "DH_EVENT_2173517_DESC"
+	id = 561
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 11
+		 }
+	trigger = {
+		 and = {
+			 exists = SOV
+			 not = {
+				 SOV = {
+					 government_in_exile = yes
+					 }
+				 }
+			 }
+		 war = yes
+		 tag = WHR
+		 date = 1914.6.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173517
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2173517_Option7"
+		 dissent = 2
+		 set_global_flag = 2173517_EVENT_DONE
+		 }
+	}
+
+#Form Russia
+
+
+ country_event = {
+	title = "DH_EVENT_2173518_TITLE"
+	desc = "DH_EVENT_2173518_DESC"
+	id = 562
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 90
+		 }
+	trigger = {
+		 war = no
+		 not = {
+			 exists = RUS
+			 dissent = 10
+			 }
+		 782 = {
+			 controlled_by = THIS
+			 }
+		 1409 = {
+			 controlled_by = THIS
+			 }
+		 2857 = {
+			 controlled_by = THIS
+			 }
+		 8211 = {
+			 controlled_by = THIS
+			 }
+		 2857 = {
+			 controlled_by = THIS
+			 }
+		 8528 = {
+			 controlled_by = THIS
+			 }
+		 date = 1914.1.1
+		 not = {
+			 date = 1963.12.30
+			 }
+		 or = {
+			 tag = WHR
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173518
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2173518_Option7"
+		 dissent = -10
+		 RUS = {
+			 }
+		 set_global_flag = 2173518_EVENT_DONE
+		 }
+	}
+
+#The Volunteers army
+
+
+ country_event = {
+	title = "DH_EVENT_2168500_TITLE"
+	desc = "DH_EVENT_2168500_DESC"
+	id = 563
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 2
+		 }
+	trigger = {
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2168500
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2168500_Option7"
+		 2587 = {
+			 hq_brigade = current
+			 }
+		 2587 = {
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 }
+		 3309 = {
+			 hq_brigade = current
+			 }
+		 3309 = {
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 }
+		 948 = {
+			 hq_brigade = current
+			 }
+		 948 = {
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 }
+		 set_global_flag = 2168500_EVENT_DONE
+		 }
+	}
+
+#New recruits
+
+
+ country_event = {
+	title = "DH_EVENT_2168501_TITLE"
+	desc = "DH_EVENT_2168501_DESC"
+	id = 564
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 15
+		 }
+	trigger = {
+		 war = yes
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2168501
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2168501_Option7"
+		 random_owned = {
+			 limit = {
+				 controlled_by = THIS
+				 }
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 }
+		 set_global_flag = 2168501_EVENT_DONE
+		 }
+	}
+
+#New recruits
+
+
+ country_event = {
+	title = "DH_EVENT_2168502_TITLE"
+	desc = "DH_EVENT_2168502_DESC"
+	id = 565
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 15
+		 }
+	trigger = {
+		 war = yes
+		 has_global_flag = 2173500_EVENT_DONE
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2168502
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2168502_Option7"
+		 random_owned = {
+			 limit = {
+				 controlled_by = THIS
+				 }
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 }
+		 set_global_flag = 2168502_EVENT_DONE
+		 }
+	}
+
+#Cossacks rise against the Bolsheviks
+
+
+ country_event = {
+	title = "DH_EVENT_2168503_TITLE"
+	desc = "DH_EVENT_2168503_DESC"
+	id = 566
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = WHR
+		 not = {
+			 has_global_flag = SLEEPEVENT_2168503
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2168503_Option7"
+		 2721 = {
+			 hq_brigade = current
+			 }
+		 2721 = {
+			 cavalry_brigade = current
+			 cavalry_brigade = current
+			 cavalry_brigade = current
+			 }
+		 2721 = {
+			 cavalry_brigade = current
+			 cavalry_brigade = current
+			 cavalry_brigade = current
+			 }
+		 2721 = {
+			 cavalry_brigade = current
+			 cavalry_brigade = current
+			 cavalry_brigade = current
+			 }
+		 2721 = {
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 }
+		 2721 = {
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 }
+		 set_global_flag = 2168503_EVENT_DONE
+		 }
+	}
+
+#The Arkhangelsk Government
+
+
+ country_event = {
+	title = "DH_EVENT_2147500_TITLE"
+	desc = "DH_EVENT_2147500_DESC"
+	id = 574
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	trigger = {
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2147500
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2147500_Option7"
+		 311 = {
+			 hq_brigade = current
+			 }
+		 311 = {
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 }
+		 46 = {
+			 hq_brigade = current
+			 }
+		 46 = {
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 }
+		 war = {
+			 target = SOV
+			 }
+		 set_global_flag = 2147500_EVENT_DONE
+		 }
+	}
+
+#The Basmachi
+
+
+ country_event = {
+	title = "DH_EVENT_2147508_TITLE"
+	desc = "DH_EVENT_2147508_DESC"
+	id = 582
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 5
+		 }
+	trigger = {
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2147508
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2147508_Option7"
+		 8998 = {
+			 hq_brigade = current
+			 }
+		 8998 = {
+			 militia_brigade = current
+			 militia_brigade = current
+			 militia_brigade = current
+			 }
+		 8998 = {
+			 militia_brigade = current
+			 militia_brigade = current
+			 militia_brigade = current
+			 }
+		 8998 = {
+			 cavalry_brigade = current
+			 cavalry_brigade = current
+			 cavalry_brigade = current
+			 }
+		 war = {
+			 target = SOV
+			 }
+		 set_global_flag = 2147508_EVENT_DONE
+		 }
+	}
+
+#Ismail Enver joins the movement
+
+
+ country_event = {
+	title = "DH_EVENT_2147509_TITLE"
+	desc = "DH_EVENT_2147509_DESC"
+	id = 583
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 20
+		 }
+	trigger = {
+		 war = yes
+		 or = {
+			 and = {
+				 not = {
+					 }
+				 }
+			 }
+		 TUR = {
+			 war = no
+			 }
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2147509
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2147509_Option7"
+		 8998 = {
+			 hq_brigade = current
+			 }
+		 8998 = {
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 }
+		 8998 = {
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 }
+		 set_global_flag = 2147509_EVENT_DONE
+		 }
+	}
 
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2168500_Option7"
-	# add_country_modifier = { name = "democratic5" duration = 360 }#command = { type = set_domestic which = democratic value = 5 }
-	# add_country_modifier = { name = "rulingpartysupport" duration = 360 }#command = { type = set_domestic which = political_left value = 5 }
-	2587 = { hq_brigade = current }
-	2587 = {  infantry_brigade = current infantry_brigade = current infantry_brigade = current }
-	3309 = { hq_brigade = current }
-	3309 = {  infantry_brigade = current infantry_brigade = current infantry_brigade = current }
-	948 = { hq_brigade = current }
-	948 = {  infantry_brigade = current infantry_brigade = current infantry_brigade = current }
-	
-set_global_flag = 2168500_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: New recruits
-country_event = {
-id = 564
-title = "DH_EVENT_2168501_TITLE"
-desc = "DH_EVENT_2168501_DESC"
-trigger = {
-	war = yes
-	#NOEQUIVALENT random =  15
-	
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2168501 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  15 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2168501_Option7"
-	random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
-	
-set_global_flag = 2168501_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: New recruits
-country_event = {
-id = 565
-title = "DH_EVENT_2168502_TITLE"
-desc = "DH_EVENT_2168502_DESC"
-trigger = {
-	war = yes
-	#NOEQUIVALENT random =  15
-	has_global_flag = 2173500_EVENT_DONE
-	
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2168502 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  15 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2168502_Option7"
-	random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current }
-	
-set_global_flag = 2168502_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Cossacks rise against the Bolsheviks
-country_event = {
-id = 566
-title = "DH_EVENT_2168503_TITLE"
-desc = "DH_EVENT_2168503_DESC"
-trigger = { 
-tag = WHR
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2168503 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2168503_Option7"
-	2721 = { hq_brigade = current }
-	2721 = {  cavalry_brigade = current cavalry_brigade = current cavalry_brigade = current }
-	2721 = {  cavalry_brigade = current cavalry_brigade = current cavalry_brigade = current }
-	2721 = {  cavalry_brigade = current cavalry_brigade = current cavalry_brigade = current }
-	2721 = {  infantry_brigade = current infantry_brigade = current infantry_brigade = current }
-	2721 = {  infantry_brigade = current infantry_brigade = current infantry_brigade = current }
-	
-set_global_flag = 2168503_EVENT_DONE
-
-}
-
-}
-
-
-#EVENTNAME: The Arkhangelsk Government
-country_event = {
-id = 574
-title = "DH_EVENT_2147500_TITLE"
-desc = "DH_EVENT_2147500_DESC"
-trigger = { 
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2147500 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  1 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2147500_Option7"
-	# add_country_modifier = { name = "democratic5" duration = 360 }#command = { type = set_domestic which = democratic value = 5 }
-	# add_country_modifier = { name = "rulingpartysupport" duration = 360 }#command = { type = set_domestic which = political_left value = 5 }
-	311 = { hq_brigade = current }
-	311 = {  infantry_brigade = current infantry_brigade = current infantry_brigade = current }
-	46 = { hq_brigade = current }
-	46 = {  infantry_brigade = current infantry_brigade = current infantry_brigade = current }
-	war = { target = SOV }
-	
-set_global_flag = 2147500_EVENT_DONE
-
-}
-
-}
-
-
-
-#EVENTNAME: The Basmachi
-country_event = {
-id = 582
-title = "DH_EVENT_2147508_TITLE"
-desc = "DH_EVENT_2147508_DESC"
-trigger = { 
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2147508 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  5 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2147508_Option7"
-	8998 = { hq_brigade = current }
-	8998 = {  militia_brigade = current militia_brigade = current militia_brigade = current }
-	8998 = {  militia_brigade = current militia_brigade = current militia_brigade = current }
-	8998 = {  cavalry_brigade = current cavalry_brigade = current cavalry_brigade = current }
-	war = { target = SOV }
-	
-set_global_flag = 2147508_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Ismail Enver joins the movement
-country_event = {
-id = 583
-title = "DH_EVENT_2147509_TITLE"
-desc = "DH_EVENT_2147509_DESC"
-trigger = {
-	war = yes
-	or = {
-		#NOEQUIVALENT random =  5
-		and = {
-			not = {
-				    }
-			#NOEQUIVALENT random =  25
-			}
-		}
-	TUR = { war = no }
-tag = WHR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2147509 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  20 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2147509_Option7"
-	8998 = { hq_brigade = current }
-	8998 = {  infantry_brigade = current infantry_brigade = current infantry_brigade = current }
-	8998 = {  infantry_brigade = current infantry_brigade = current infantry_brigade = current }
-	
-set_global_flag = 2147509_EVENT_DONE
-
-}
-
-}

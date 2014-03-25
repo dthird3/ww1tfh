@@ -1,1694 +1,2052 @@
-#id = 215 #EVENTNAME: Baghdad Railway *CONFIRMED
-#id = 216 #EVENTNAME: Oil from Mosul *CONFIRMED
-#id = 217 #EVENTNAME: Oil in Mosul *CONFIRMED 
-#id = 218 #EVENTNAME: Baghdad Railway: Karapinar-Dorak *CONFIRMED
-#id = 219 #EVENTNAME: Section completed *CONFIRMED
-#id = 220 #EVENTNAME: Baghdad Railway: Tall Abyad - Rasulain *CONFIRMED
-#id = 221 #EVENTNAME: Section completed *CONFIRMED
-#id = 222 #EVENTNAME: Baghdad Railway: Nusaybin - Tall Kutschak *CONFIRMED
-#id = 223 #EVENTNAME: Section completed *CONFIRMED
-#id = 224 #EVENTNAME: Baghdad Railway: Tall Kutschak – Samarra *CONFIRMED
-#id = 225 #EVENTNAME: Section completed *CONFIRMED
-#id = 226 #EVENTNAME: Baghdad Railway: Rasulain - Nusaybin *CONFIRMED
-#id = 227 #EVENTNAME: Section completed *CONFIRMED
-#id = 250 #EVENTNAME: Extend military mission in the Ottoman Empire *CONFIRMED
-#id = 251 #EVENTNAME: Germany extends its military support *CONFIRMED
-#id = 252 #EVENTNAME: Prepare the Asienkorps *CONFIRMED
-#id = 253 #EVENTNAME: The Asienkorps has arrived *CONFIRMED
-#id = 254 #EVENTNAME: The British naval mission leaves the country *CONFIRMED
-#id = 255 #EVENTNAME: The naval mission returns home from the Ottoman Empire *CONFIRMED
-#id = 256 #EVENTNAME: Overhaul coastal defence at the Dardanelles *CONFIRMED
-#id = 257 #EVENTNAME: The Dardanelles defense network will be improved *CONFIRMED
-#id = 258 #EVENTNAME: Overhaul of Dardanelles defense network completed *CONFIRMED
-#id = 259 #EVENTNAME: Protect the oil fields in southern Persia  *CONFIRMED
-#id = 260 #EVENTNAME: The British Empire occupies southern territories *CONFIRMED
-#id = 261 #EVENTNAME: Occupy northern Persia  *CONFIRMED
-#id = 262 #EVENTNAME: Russian Empire occupies northern territories *CONFIRMED
-#id = 263 #EVENTNAME: Leave southern Persia *CONFIRMED
-#id = 264 #EVENTNAME: Leave northern Persia *CONFIRMED
-#id = 267 #EVENTNAME: The German military mission leaves the country *CONFIRMED
-#id = 268 #EVENTNAME: The military mission to the Ottoman Empire returns home *CONFIRMED
+#Baghdad Railway
 
 
-#EVENTNAME: Baghdad Railway
-country_event = {
-id = 215
-title = "DH_EVENT_2191560_TITLE"
-desc = "DH_EVENT_2191560_DESC"
-picture = "baghdad_railway"
-
-trigger = {
-	or = {
-		TUR = { faction = axis }
-		#has_global_flag = 2145514_EVENT_DONE
-		}
-	or = {
-		4781 = { controlled_by = TUR }
-		4567 = { controlled_by = TUR }
-		5173 = { controlled_by = TUR }
-		4446 = { controlled_by = TUR }
-		4831 = { controlled_by = TUR }
-		}
-	
-tag = GER
-date = 1914.1.1
-
-not = { date = 1999.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2191560 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  15 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2191560_Option7"
-	set_country_flag = baghdad 
-	
-set_global_flag = 2191560_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Oil from Mosul
-country_event = {
-id = 216
-title = "DH_EVENT_2191561_TITLE"
-desc = "DH_EVENT_2191561_DESC"
-picture = "oil_mosul"
-
-trigger = {
-	has_global_flag = 2191562_EVENT_DONE
-	has_global_flag = 2191564_EVENT_DONE
-	has_global_flag = 2191571_EVENT_DONE
-	has_global_flag = 2191567_EVENT_DONE
-	has_global_flag = 2191569_EVENT_DONE
-	4446 = { controlled_by = TUR }
-	not = {
-		 GER = { war_with = TUR }
+ country_event = {
+	title = "DH_EVENT_2191560_TITLE"
+	desc = "DH_EVENT_2191560_DESC"
+	id = 215
+	 
+	picture = "baghdad_railway"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 15
 		 }
-	
-tag = GER
-date = 1914.1.1
-
-not = { date = 1999.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2191561 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  15 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2191561_Option7"
-	GER = { crude_oil = 500 }
-	TUR = { crude_oil = -500 }
-	TUR = { country_event = 217 }
-	
-set_global_flag = 2191561_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Oil in Mosul
-country_event = {
-id = 217
-title = "DH_EVENT_2191566_TITLE"
-desc = "DH_EVENT_2191566_DESC"
-picture = "oil_mosul"
-
-trigger = { 
-tag = TUR
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2191566 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2191566_Option7"
-	4446 = { crude_oil = 8  }
-	
-set_global_flag = 2191566_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Baghdad Railway: Karapinar-Dorak
-country_event = {
-id = 218
-title = "DH_EVENT_2191562_TITLE"
-desc = "DH_EVENT_2191562_DESC"
-picture = "br_adana"
-
-trigger = {
-	money =  100
-	metal =  1500
-	TUR = { faction = axis }
-	4781 = { controlled_by = TUR }
-	has_country_flag = baghdad
-	
-tag = GER
-date = 1914.1.1
-
-not = { date = 1999.12.30
- }
-
-#NOEQUIVALENT save_date = yes
-
-
-
-not = { has_global_flag = SLEEPEVENT_2191562 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  15 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2191562_Option7"
-	set_country_flag = baghdad_1 
-	metal = -10000 
-	money = -500 
-	
-set_global_flag = 2191562_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Section completed
-country_event = {
-id = 219
-title = "DH_EVENT_2191563_TITLE"
-desc = "DH_EVENT_2191563_DESC"
-picture = "br_adana"
-
-trigger = {
-	TUR = { faction = axis }
-	4781 = { controlled_by = TUR }
-	has_country_flag = baghdad_1
-	or = {
-		and = {
-			has_global_flag = 2191562_EVENT_DONE
-			#NOEQUIVALENT random =  10
-			}
-		and = {
-			has_global_flag = 2191562_EVENT_DONE
-			#NOEQUIVALENT random =  20
-			}
-		and = {
-			has_global_flag = 2191562_EVENT_DONE
-			#NOEQUIVALENT random =  30
-			}
-		and = {
-			has_global_flag = 2191562_EVENT_DONE
-			#NOEQUIVALENT random =  50
-			}
-		and = {
-			has_global_flag = 2191562_EVENT_DONE
-			#NOEQUIVALENT random =  75
-			}
-		has_global_flag = 2191562_EVENT_DONE
-		}
-	
-tag = GER
-date = 1914.1.1
-
-not = { date = 1999.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2191563 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  31 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2191563_Option7"
-	4728 = { infra  = 3  }
-	4675 = { infra  = 3  }
-	4621 = { infra  = 3  }
-	4676 = { infra  = 3  }
-	4730 = { infra  = 3  }
-	4677 = { infra  = 3  }
-	4731 = { infra  = 3  }
-	4832 = { infra  = 3  }
-	4931 = { infra  = 3  }
-	4976 = { infra  = 3  }
-	clr_country_flag = baghdad_1 
-	
-set_global_flag = 2191563_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Baghdad Railway: Tall Abyad - Rasulain
-country_event = {
-id = 220
-title = "DH_EVENT_2191564_TITLE"
-desc = "DH_EVENT_2191564_DESC"
-picture = "br_deireszor"
-
-trigger = {
-	money =  100
-	metal =  1500
-	TUR = { faction = axis }
-	4567 = { controlled_by = TUR }
-	has_country_flag = baghdad
-	
-tag = GER
-date = 1914.1.1
-
-not = { date = 1999.12.30
- }
-
-#NOEQUIVALENT save_date = yes
-
-
-
-not = { has_global_flag = SLEEPEVENT_2191564 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  15 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2191564_Option7"
-	set_country_flag = baghdad_2 
-	metal = -10000 
-	money = -500 
-	
-set_global_flag = 2191564_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Section completed
-country_event = {
-id = 221
-title = "DH_EVENT_2191565_TITLE"
-desc = "DH_EVENT_2191565_DESC"
-picture = "br_deireszor"
-
-trigger = {
-	TUR = { faction = axis }
-	4567 = { controlled_by = TUR }
-	has_country_flag = baghdad_2
-	or = {
-		and = {
-			has_global_flag = 2191564_EVENT_DONE
-			#NOEQUIVALENT random =  10
-			}
-		and = {
-			has_global_flag = 2191564_EVENT_DONE
-			#NOEQUIVALENT random =  20
-			}
-		and = {
-			has_global_flag = 2191564_EVENT_DONE
-			#NOEQUIVALENT random =  30
-			}
-		and = {
-			has_global_flag = 2191564_EVENT_DONE
-			#NOEQUIVALENT random =  50
-			}
-		and = {
-			has_global_flag = 2191564_EVENT_DONE
-			#NOEQUIVALENT random =  75
-			}
-		has_global_flag = 2191564_EVENT_DONE
-		}
-	
-tag = GER
-date = 1914.1.1
-
-not = { date = 1999.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2191565 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  31 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2191565_Option7"
-	5082 = { infra  = 2  }
-	5014 = { infra  = 2  }
-	7389 = { infra  = 2  }
-	5140 = { infra  = 3  }
-	5238 = { infra  = 3  }
-	5299 = { infra  = 3  }
-	clr_country_flag = baghdad_2 
-	
-set_global_flag = 2191565_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Baghdad Railway: Nusaybin - Tall Kutschak
-country_event = {
-id = 222
-title = "DH_EVENT_2191567_TITLE"
-desc = "DH_EVENT_2191567_DESC"
-picture = "br_mosul"
-
-trigger = {
-	money =  100
-	metal =  1500
-	TUR = { faction = axis }
-	4446 = { controlled_by = TUR }
-	has_country_flag = baghdad
-	
-tag = GER
-date = 1914.1.1
-
-not = { date = 1999.12.30
- }
-
-#NOEQUIVALENT save_date = yes
-
-
-
-not = { has_global_flag = SLEEPEVENT_2191567 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  15 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2191567_Option7"
-	set_country_flag = baghdad_3 
-	metal = -10000 
-	money = -500 
-	
-set_global_flag = 2191567_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Section completed
-country_event = {
-id = 223
-title = "DH_EVENT_2191568_TITLE"
-desc = "DH_EVENT_2191568_DESC"
-picture = "br_mosul"
-
-trigger = {
-	TUR = { faction = axis }
-	4446 = { controlled_by = TUR }
-	has_country_flag = baghdad_3
-	or = {
-		and = {
-			has_global_flag = 2191567_EVENT_DONE
-			#NOEQUIVALENT random =  10
-			}
-		and = {
-			has_global_flag = 2191567_EVENT_DONE
-			#NOEQUIVALENT random =  20
-			}
-		and = {
-			has_global_flag = 2191567_EVENT_DONE
-			#NOEQUIVALENT random =  30
-			}
-		and = {
-			has_global_flag = 2191567_EVENT_DONE
-			#NOEQUIVALENT random =  50
-			}
-		and = {
-			has_global_flag = 2191567_EVENT_DONE
-			#NOEQUIVALENT random =  75
-			}
-		has_global_flag = 2191567_EVENT_DONE
-		}
-	
-tag = GER
-date = 1914.1.1
-
-not = { date = 1999.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2191568 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  31 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2191568_Option7"
-	4830 = { infra  = 3  }
-	9125 = { infra  = 3  }
-	clr_country_flag = baghdad_3 
-	
-set_global_flag = 2191568_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Baghdad Railway: Tall Kutschak – Samarra
-country_event = {
-id = 224
-title = "DH_EVENT_2191569_TITLE"
-desc = "DH_EVENT_2191569_DESC"
-picture = "br_elhillah"
-
-trigger = {
-	money =  100
-	metal =  1500
-	TUR = { faction = axis }
-	4831 = { controlled_by = TUR }
-	has_country_flag = baghdad
-	
-tag = GER
-date = 1914.1.1
-
-not = { date = 1999.12.30
- }
-
-#NOEQUIVALENT save_date = yes
-
-
-
-not = { has_global_flag = SLEEPEVENT_2191569 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  15 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2191569_Option7"
-	set_country_flag = baghdad_4 
-	metal = -10000 
-	money = -500 
-	
-set_global_flag = 2191569_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Section completed
-country_event = {
-id = 225
-title = "DH_EVENT_2191570_TITLE"
-desc = "DH_EVENT_2191570_DESC"
-picture = "br_elhillah"
-
-trigger = {
-	TUR = { faction = axis }
-	4831 = { controlled_by = TUR }
-	has_country_flag = baghdad_4
-	or = {
-		and = {
-			has_global_flag = 2191569_EVENT_DONE
-			#NOEQUIVALENT random =  10
-			}
-		and = {
-			has_global_flag = 2191569_EVENT_DONE
-			#NOEQUIVALENT random =  20
-			}
-		and = {
-			has_global_flag = 2191569_EVENT_DONE
-			#NOEQUIVALENT random =  30
-			}
-		and = {
-			has_global_flag = 2191569_EVENT_DONE
-			#NOEQUIVALENT random =  50
-			}
-		and = {
-			has_global_flag = 2191569_EVENT_DONE
-			#NOEQUIVALENT random =  75
-			}
-		has_global_flag = 2191569_EVENT_DONE
-		}
-	
-tag = GER
-date = 1914.1.1
-
-not = { date = 1999.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2191570 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  31 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2191570_Option7"
-	7409 = { infra  = 3  }
-	9182 = { infra  = 3  }
-	clr_country_flag = baghdad_4 
-	
-set_global_flag = 2191570_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Baghdad Railway: Rasulain - Nusaybin
-country_event = {
-id = 226
-title = "DH_EVENT_2191571_TITLE"
-desc = "DH_EVENT_2191571_DESC"
-picture = "br_elqamisli"
-
-trigger = {
-	money =  100
-	metal =  1500
-	TUR = { faction = axis }
-	5173 = { controlled_by = TUR }
-	has_country_flag = baghdad
-	
-tag = GER
-date = 1914.1.1
-
-not = { date = 1999.12.30
- }
-
-#NOEQUIVALENT save_date = yes
-
-
-
-not = { has_global_flag = SLEEPEVENT_2191571 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  15 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2191571_Option7"
-	set_country_flag = baghdad_5 
-	metal = -10000 
-	money = -500 
-	
-set_global_flag = 2191571_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Section completed
-country_event = {
-id = 227
-title = "DH_EVENT_2191572_TITLE"
-desc = "DH_EVENT_2191572_DESC"
-picture = "br_elqamisli"
-
-trigger = {
-	TUR = { faction = axis }
-	5173 = { controlled_by = TUR }
-	has_country_flag = baghdad_5
-	or = {
-		and = {
-			has_global_flag = 2191571_EVENT_DONE
-			#NOEQUIVALENT random =  10
-			}
-		and = {
-			has_global_flag = 2191571_EVENT_DONE
-			#NOEQUIVALENT random =  20
-			}
-		and = {
-			has_global_flag = 2191571_EVENT_DONE
-			#NOEQUIVALENT random =  30
-			}
-		and = {
-			has_global_flag = 2191571_EVENT_DONE
-			#NOEQUIVALENT random =  50
-			}
-		and = {
-			has_global_flag = 2191571_EVENT_DONE
-			#NOEQUIVALENT random =  75
-			}
-		has_global_flag = 2191571_EVENT_DONE
-		}
-	
-tag = GER
-date = 1914.1.1
-
-not = { date = 1999.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2191572 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  31 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2191572_Option7"
-	9213 = { infra  = 3  }
-	clr_country_flag = baghdad_5 
-	
-set_global_flag = 2191572_EVENT_DONE
-
-}
-
-}
-
-
-
-#EVENTNAME: Extend military mission in the Ottoman Empire
-country_event = {
-id = 250
-title = "DH_EVENT_2191580_TITLE"
-desc = "DH_EVENT_2191580_DESC"
-picture = "german_military_mission"
-
-trigger = {
-	#has_global_flag = 2145514_EVENT_DONE
-	#has_global_flag= U08_OTT_Secret_Treaty
-	TUR = { faction = axis }
-	GER = { war = yes }
-	TUR = { war = yes }
-	BUL = { faction = axis }
-	or = {
-		SER = { government_in_exile = yes }
-	not = {
-		 SER = { war_with = GER }
+	trigger = {
+		 or = {
+			 TUR = {
+				 faction = axis
+				 }
+			 }
+		 or = {
+			 4781 = {
+				 controlled_by = TUR
+				 }
+			 4567 = {
+				 controlled_by = TUR
+				 }
+			 5173 = {
+				 controlled_by = TUR
+				 }
+			 4446 = {
+				 controlled_by = TUR
+				 }
+			 4831 = {
+				 controlled_by = TUR
+				 }
+			 }
+		 tag = GER
+		 date = 1914.1.1
+		 not = {
+			 date = 1999.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2191560
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2191560_Option7"
+		 set_country_flag = baghdad
+		 set_global_flag = 2191560_EVENT_DONE
 		 }
 	}
-	
-tag = GER
-date = 1914.7.28
 
-not = { date = 1917.12.30
- }
+#Oil from Mosul
 
 
+ country_event = {
+	title = "DH_EVENT_2191561_TITLE"
+	desc = "DH_EVENT_2191561_DESC"
+	id = 216
+	 
+	picture = "oil_mosul"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 15
+		 }
+	trigger = {
+		 has_global_flag = 2191562_EVENT_DONE
+		 has_global_flag = 2191564_EVENT_DONE
+		 has_global_flag = 2191571_EVENT_DONE
+		 has_global_flag = 2191567_EVENT_DONE
+		 has_global_flag = 2191569_EVENT_DONE
+		 4446 = {
+			 controlled_by = TUR
+			 }
+		 not = {
+			 GER = {
+				 war_with = TUR
+				 }
+			 }
+		 tag = GER
+		 date = 1914.1.1
+		 not = {
+			 date = 1999.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2191561
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2191561_Option7"
+		 GER = {
+			 crude_oil = 500
+			 }
+		 TUR = {
+			 crude_oil = -500
+			 }
+		 TUR = {
+			 country_event = 217
+			 }
+		 set_global_flag = 2191561_EVENT_DONE
+		 }
+	}
 
-not = { has_global_flag = SLEEPEVENT_2191580 }
+#Oil in Mosul
 
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  31 }
 
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2191580_Option7"
-	random_country = { limit = { tag = THIS 
+ country_event = {
+	title = "DH_EVENT_2191566_TITLE"
+	desc = "DH_EVENT_2191566_DESC"
+	id = 217
+	 
+	picture = "oil_mosul"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = TUR
+		 not = {
+			 has_global_flag = SLEEPEVENT_2191566
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2191566_Option7"
+		 4446 = {
+			 crude_oil = 8
+			 }
+		 set_global_flag = 2191566_EVENT_DONE
+		 }
+	}
+
+#Baghdad Railway: Karapinar-Dorak
+
+
+ country_event = {
+	title = "DH_EVENT_2191562_TITLE"
+	desc = "DH_EVENT_2191562_DESC"
+	id = 218
+	 
+	picture = "br_adana"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 15
+		 }
+	trigger = {
+		 money = 100
+		 metal = 1500
+		 TUR = {
+			 faction = axis
+			 }
+		 4781 = {
+			 controlled_by = TUR
+			 }
+		 has_country_flag = baghdad
+		 tag = GER
+		 date = 1914.1.1
+		 not = {
+			 date = 1999.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2191562
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2191562_Option7"
+		 set_country_flag = baghdad_1
+		 metal = -10000
+		 money = -500
+		 set_global_flag = 2191562_EVENT_DONE
+		 }
+	}
+
+#Section completed
+
+
+ country_event = {
+	title = "DH_EVENT_2191563_TITLE"
+	desc = "DH_EVENT_2191563_DESC"
+	id = 219
+	 
+	picture = "br_adana"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 31
+		 }
+	trigger = {
+		 TUR = {
+			 faction = axis
+			 }
+		 4781 = {
+			 controlled_by = TUR
+			 }
+		 has_country_flag = baghdad_1
+		 or = {
+			 and = {
+				 has_global_flag = 2191562_EVENT_DONE
+				 }
+			 and = {
+				 has_global_flag = 2191562_EVENT_DONE
+				 }
+			 and = {
+				 has_global_flag = 2191562_EVENT_DONE
+				 }
+			 and = {
+				 has_global_flag = 2191562_EVENT_DONE
+				 }
+			 and = {
+				 has_global_flag = 2191562_EVENT_DONE
+				 }
+			 has_global_flag = 2191562_EVENT_DONE
+			 }
+		 tag = GER
+		 date = 1914.1.1
+		 not = {
+			 date = 1999.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2191563
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2191563_Option7"
+		 4728 = {
+			 infra = 3
+			 }
+		 4675 = {
+			 infra = 3
+			 }
+		 4621 = {
+			 infra = 3
+			 }
+		 4676 = {
+			 infra = 3
+			 }
+		 4730 = {
+			 infra = 3
+			 }
+		 4677 = {
+			 infra = 3
+			 }
+		 4731 = {
+			 infra = 3
+			 }
+		 4832 = {
+			 infra = 3
+			 }
+		 4931 = {
+			 infra = 3
+			 }
+		 4976 = {
+			 infra = 3
+			 }
+		 clr_country_flag = baghdad_1
+		 set_global_flag = 2191563_EVENT_DONE
+		 }
+	}
+
+#Baghdad Railway: Tall Abyad - Rasulain
+
+
+ country_event = {
+	title = "DH_EVENT_2191564_TITLE"
+	desc = "DH_EVENT_2191564_DESC"
+	id = 220
+	 
+	picture = "br_deireszor"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 15
+		 }
+	trigger = {
+		 money = 100
+		 metal = 1500
+		 TUR = {
+			 faction = axis
+			 }
+		 4567 = {
+			 controlled_by = TUR
+			 }
+		 has_country_flag = baghdad
+		 tag = GER
+		 date = 1914.1.1
+		 not = {
+			 date = 1999.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2191564
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2191564_Option7"
+		 set_country_flag = baghdad_2
+		 metal = -10000
+		 money = -500
+		 set_global_flag = 2191564_EVENT_DONE
+		 }
+	}
+
+#Section completed
+
+
+ country_event = {
+	title = "DH_EVENT_2191565_TITLE"
+	desc = "DH_EVENT_2191565_DESC"
+	id = 221
+	 
+	picture = "br_deireszor"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 31
+		 }
+	trigger = {
+		 TUR = {
+			 faction = axis
+			 }
+		 4567 = {
+			 controlled_by = TUR
+			 }
+		 has_country_flag = baghdad_2
+		 or = {
+			 and = {
+				 has_global_flag = 2191564_EVENT_DONE
+				 }
+			 and = {
+				 has_global_flag = 2191564_EVENT_DONE
+				 }
+			 and = {
+				 has_global_flag = 2191564_EVENT_DONE
+				 }
+			 and = {
+				 has_global_flag = 2191564_EVENT_DONE
+				 }
+			 and = {
+				 has_global_flag = 2191564_EVENT_DONE
+				 }
+			 has_global_flag = 2191564_EVENT_DONE
+			 }
+		 tag = GER
+		 date = 1914.1.1
+		 not = {
+			 date = 1999.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2191565
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2191565_Option7"
+		 5082 = {
+			 infra = 2
+			 }
+		 5014 = {
+			 infra = 2
+			 }
+		 7389 = {
+			 infra = 2
+			 }
+		 5140 = {
+			 infra = 3
+			 }
+		 5238 = {
+			 infra = 3
+			 }
+		 5299 = {
+			 infra = 3
+			 }
+		 clr_country_flag = baghdad_2
+		 set_global_flag = 2191565_EVENT_DONE
+		 }
+	}
+
+#Baghdad Railway: Nusaybin - Tall Kutschak
+
+
+ country_event = {
+	title = "DH_EVENT_2191567_TITLE"
+	desc = "DH_EVENT_2191567_DESC"
+	id = 222
+	 
+	picture = "br_mosul"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 15
+		 }
+	trigger = {
+		 money = 100
+		 metal = 1500
+		 TUR = {
+			 faction = axis
+			 }
+		 4446 = {
+			 controlled_by = TUR
+			 }
+		 has_country_flag = baghdad
+		 tag = GER
+		 date = 1914.1.1
+		 not = {
+			 date = 1999.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2191567
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2191567_Option7"
+		 set_country_flag = baghdad_3
+		 metal = -10000
+		 money = -500
+		 set_global_flag = 2191567_EVENT_DONE
+		 }
+	}
+
+#Section completed
+
+
+ country_event = {
+	title = "DH_EVENT_2191568_TITLE"
+	desc = "DH_EVENT_2191568_DESC"
+	id = 223
+	 
+	picture = "br_mosul"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 31
+		 }
+	trigger = {
+		 TUR = {
+			 faction = axis
+			 }
+		 4446 = {
+			 controlled_by = TUR
+			 }
+		 has_country_flag = baghdad_3
+		 or = {
+			 and = {
+				 has_global_flag = 2191567_EVENT_DONE
+				 }
+			 and = {
+				 has_global_flag = 2191567_EVENT_DONE
+				 }
+			 and = {
+				 has_global_flag = 2191567_EVENT_DONE
+				 }
+			 and = {
+				 has_global_flag = 2191567_EVENT_DONE
+				 }
+			 and = {
+				 has_global_flag = 2191567_EVENT_DONE
+				 }
+			 has_global_flag = 2191567_EVENT_DONE
+			 }
+		 tag = GER
+		 date = 1914.1.1
+		 not = {
+			 date = 1999.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2191568
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2191568_Option7"
+		 4830 = {
+			 infra = 3
+			 }
+		 9125 = {
+			 infra = 3
+			 }
+		 clr_country_flag = baghdad_3
+		 set_global_flag = 2191568_EVENT_DONE
+		 }
+	}
+
+#Baghdad Railway: Tall Kutschak – Samarra
+
+
+ country_event = {
+	title = "DH_EVENT_2191569_TITLE"
+	desc = "DH_EVENT_2191569_DESC"
+	id = 224
+	 
+	picture = "br_elhillah"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 15
+		 }
+	trigger = {
+		 money = 100
+		 metal = 1500
+		 TUR = {
+			 faction = axis
+			 }
+		 4831 = {
+			 controlled_by = TUR
+			 }
+		 has_country_flag = baghdad
+		 tag = GER
+		 date = 1914.1.1
+		 not = {
+			 date = 1999.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2191569
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2191569_Option7"
+		 set_country_flag = baghdad_4
+		 metal = -10000
+		 money = -500
+		 set_global_flag = 2191569_EVENT_DONE
+		 }
+	}
+
+#Section completed
+
+
+ country_event = {
+	title = "DH_EVENT_2191570_TITLE"
+	desc = "DH_EVENT_2191570_DESC"
+	id = 225
+	 
+	picture = "br_elhillah"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 31
+		 }
+	trigger = {
+		 TUR = {
+			 faction = axis
+			 }
+		 4831 = {
+			 controlled_by = TUR
+			 }
+		 has_country_flag = baghdad_4
+		 or = {
+			 and = {
+				 has_global_flag = 2191569_EVENT_DONE
+				 }
+			 and = {
+				 has_global_flag = 2191569_EVENT_DONE
+				 }
+			 and = {
+				 has_global_flag = 2191569_EVENT_DONE
+				 }
+			 and = {
+				 has_global_flag = 2191569_EVENT_DONE
+				 }
+			 and = {
+				 has_global_flag = 2191569_EVENT_DONE
+				 }
+			 has_global_flag = 2191569_EVENT_DONE
+			 }
+		 tag = GER
+		 date = 1914.1.1
+		 not = {
+			 date = 1999.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2191570
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2191570_Option7"
+		 7409 = {
+			 infra = 3
+			 }
+		 9182 = {
+			 infra = 3
+			 }
+		 clr_country_flag = baghdad_4
+		 set_global_flag = 2191570_EVENT_DONE
+		 }
+	}
+
+#Baghdad Railway: Rasulain - Nusaybin
+
+
+ country_event = {
+	title = "DH_EVENT_2191571_TITLE"
+	desc = "DH_EVENT_2191571_DESC"
+	id = 226
+	 
+	picture = "br_elqamisli"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 15
+		 }
+	trigger = {
+		 money = 100
+		 metal = 1500
+		 TUR = {
+			 faction = axis
+			 }
+		 5173 = {
+			 controlled_by = TUR
+			 }
+		 has_country_flag = baghdad
+		 tag = GER
+		 date = 1914.1.1
+		 not = {
+			 date = 1999.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2191571
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2191571_Option7"
+		 set_country_flag = baghdad_5
+		 metal = -10000
+		 money = -500
+		 set_global_flag = 2191571_EVENT_DONE
+		 }
+	}
+
+#Section completed
+
+
+ country_event = {
+	title = "DH_EVENT_2191572_TITLE"
+	desc = "DH_EVENT_2191572_DESC"
+	id = 227
+	 
+	picture = "br_elqamisli"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 31
+		 }
+	trigger = {
+		 TUR = {
+			 faction = axis
+			 }
+		 5173 = {
+			 controlled_by = TUR
+			 }
+		 has_country_flag = baghdad_5
+		 or = {
+			 and = {
+				 has_global_flag = 2191571_EVENT_DONE
+				 }
+			 and = {
+				 has_global_flag = 2191571_EVENT_DONE
+				 }
+			 and = {
+				 has_global_flag = 2191571_EVENT_DONE
+				 }
+			 and = {
+				 has_global_flag = 2191571_EVENT_DONE
+				 }
+			 and = {
+				 has_global_flag = 2191571_EVENT_DONE
+				 }
+			 has_global_flag = 2191571_EVENT_DONE
+			 }
+		 tag = GER
+		 date = 1914.1.1
+		 not = {
+			 date = 1999.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2191572
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2191572_Option7"
+		 9213 = {
+			 infra = 3
+			 }
+		 clr_country_flag = baghdad_5
+		 set_global_flag = 2191572_EVENT_DONE
+		 }
+	}
+
+#Extend military mission in the Ottoman Empire
+
+#  Bronsart von Schellendorff
+#  von der Goltz R.
+#  von Lossow
+#  Buddecke
+#  Serno
+
+ country_event = {
+	title = "DH_EVENT_2191580_TITLE"
+	desc = "DH_EVENT_2191580_DESC"
+	id = 250
+	 
+	picture = "german_military_mission"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 31
+		 }
+	trigger = {
+		 TUR = {
+			 faction = axis
+			 }
+		 GER = {
+			 war = yes
+			 }
+		 TUR = {
+			 war = yes
+			 }
+		 BUL = {
+			 faction = axis
+			 }
+		 or = {
+			 SER = {
+				 government_in_exile = yes
+				 }
 			 not = {
-				 GER = { ai = yes }
-				 }  } 
-		supplies = -500 
+				 SER = {
+					 war_with = GER
+					 }
+				 }
+			 }
+		 tag = GER
+		 date = 1914.7.28
+		 not = {
+			 date = 1917.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2191580
+			 }
 		 }
-	relation = { who = TUR value = 10  }
-	TUR = { country_event = 251 }
-kill_leader = 13110191 #  Bronsart von Schellendorff
-kill_leader = 13110022 #  von der Goltz R.
-kill_leader = 13110171 #  von Lossow
-kill_leader = 13130041 #  Buddecke
-kill_leader = 13130025 #  Serno
-
-	
-set_global_flag = 2191580_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Germany extends its military support
-country_event = {
-id = 251
-title = "DH_EVENT_2145525_TITLE"
-desc = "DH_EVENT_2145525_DESC"
-picture = "german_military_mission"
-
-trigger = { 
-tag = TUR
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2145525 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2145525_Option7"
-	supplies = 500 
-	dissent = -1 
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 720217 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 720218 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 720220 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 720221 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 720222 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 720226 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 720227 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720268 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720269 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720270 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720271 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720272 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720274 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720275 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720276 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720277 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720278 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720279 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720280 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720281 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720282 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720283 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720284 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720285 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720286 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720287 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720289 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720290 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720291 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720292 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720293 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720294 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720295 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720296 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720297 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720299 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720300 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720301 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720302 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720303 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720304 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720305 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720306 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720310 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720311 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720312 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720313 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720314 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720315 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720316 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720317 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720318 }
-	# add_country_modifier = { name = "research_1" duration = 360 }#command = { type = waketeam which = 720031 }
-	# add_country_modifier = { name = "research_1" duration = 360 }#command = { type = waketeam which = 720032 }
-	#armament_minister = 720217 
-	#minister_of_intelligence = 720220 
-	#chief_of_staff = 720222 
-	#chief_of_air = 720226 
-	
-set_global_flag = 2145525_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Prepare the Asienkorps
-country_event = {
-id = 252
-title = "DH_EVENT_2191581_TITLE"
-desc = "DH_EVENT_2191581_DESC"
-picture = "asienkorps"
-
-trigger = {
-	#has_global_flag = 2145524_EVENT_DONE
-	#has_global_flag= U08_OTT_Secret_Treaty
-	TUR = { faction = axis }
-	GER = { war = yes }
-	TUR = { war = yes }
-	BUL = { faction = axis }
-	or = {
-		SER = { government_in_exile = yes }
-	not = {
-		 SER = { war_with = GER }
+	option = {
+		 name = "DH_EVENT_2191580_Option7"
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 not = {
+					 GER = {
+						 ai = yes
+						 }
+					 }
+				 }
+			 supplies = -500
+			 }
+		 relation = {
+			 who = TUR
+			 value = 10
+			 }
+		 TUR = {
+			 country_event = 251
+			 }
+		 kill_leader = 13110191
+		 kill_leader = 13110022
+		 kill_leader = 13110171
+		 kill_leader = 13130041
+		 kill_leader = 13130025
+		 set_global_flag = 2191580_EVENT_DONE
 		 }
+	}
+
+#Germany extends its military support
+
+
+ country_event = {
+	title = "DH_EVENT_2145525_TITLE"
+	desc = "DH_EVENT_2145525_DESC"
+	id = 251
+	 
+	picture = "german_military_mission"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = TUR
+		 not = {
+			 has_global_flag = SLEEPEVENT_2145525
+			 }
 		 }
-	manpower =  30
-	supplies =  400
-	or = {
-		not = {
-			 5567 = { controlled_by = TUR }
-			 }
-		not = {
-			 7496 = { controlled_by = TUR }
-			 }
-		not = {
-			 7374 = { controlled_by = TUR }
-			 }
-		not = {
-			 4188 = { controlled_by = TUR }
-			 }
-		not = {
-			 9213 = { controlled_by = TUR }
-			 }
-		not = {
-			 5332 = { controlled_by = TUR }
-			 }
-		}
-	
-tag = GER
-date = 1914.7.28
+	option = {
+		 name = "DH_EVENT_2145525_Option7"
+		 supplies = 500
+		 dissent = -1
+		 set_global_flag = 2145525_EVENT_DONE
+		 }
+	}
 
-not = { date = 1917.12.30
- }
+#Prepare the Asienkorps
 
+#  von Seeckt
+#  von Falkenhausen
+#  von Rebeur-Paschwitz
 
-
-not = { has_global_flag = SLEEPEVENT_2191581 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  31 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2191581_Option7"
-	relation = { who = TUR value = 10  }
-	TUR = { country_event = 253 }
-	manpower = -15 
-	random_country = { limit = { tag = THIS 
+ country_event = {
+	title = "DH_EVENT_2191581_TITLE"
+	desc = "DH_EVENT_2191581_DESC"
+	id = 252
+	 
+	picture = "asienkorps"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 31
+		 }
+	trigger = {
+		 TUR = {
+			 faction = axis
+			 }
+		 GER = {
+			 war = yes
+			 }
+		 TUR = {
+			 war = yes
+			 }
+		 BUL = {
+			 faction = axis
+			 }
+		 or = {
+			 SER = {
+				 government_in_exile = yes
+				 }
 			 not = {
-				 GER = { ai = yes }
-				 }  } 
-		supplies = -2000 
-		 }
-kill_leader = 13110104 #  von Seeckt
-kill_leader = 13110237 #  von Falkenhausen
-kill_leader = 13120023 #  von Rebeur-Paschwitz
-
-	remove_minister = 855039
-	remove_minister = 855075
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 855235 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 855038 }
-	
-set_global_flag = 2191581_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: The Asienkorps has arrived
-country_event = {
-id = 253
-title = "DH_EVENT_2145526_TITLE"
-desc = "DH_EVENT_2145526_DESC"
-picture = "asienkorps"
-
-trigger = { 
-tag = TUR
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2145526 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2145526_Option7"
-	dissent = -2 
-	4503 = { hq_brigade = current }
-	random_owned = { limit = { controlled_by = THIS  } infantry_brigade = current infantry_brigade = current infantry_brigade = current artillery_brigade = current }
-	4503 = { hq_brigade = current }
-	random_owned = { limit = { controlled_by = THIS  } hq_brigade = current hq_brigade = current hq_brigade = current }
-	4503 = { hq_brigade = current }
-	random_owned = { limit = { controlled_by = THIS has_building = air_base  } interceptor = current }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720298 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720273 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 720307 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 720223 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 720225 }
-kill_leader = 17510099 #  Bronsart von Schellendorf
-
-	#remove_minister = 720222 
-kill_leader = 17520029 #  Souchon
-
-	#remove_minister = 720224 
-	#chief_of_staff = 720223 
-	#chief_of_navy = 720225 
-	
-set_global_flag = 2145526_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: The British naval mission leaves the country
-country_event = {
-id = 254
-title = "DH_EVENT_2145527_TITLE"
-desc = "DH_EVENT_2145527_DESC"
-picture = "limpus"
-
-trigger = {
-	or = {
-		#has_global_flag = 2145519_EVENT_DONE
-		TUR = { war_with = ENG }
-		TUR = { war_with = RUS }
-		}
-	
-tag = TUR
-date = 1914.7.28
-
-not = { date = 1917.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2145527 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  10 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2145527_Option7"
-	#remove_minister = 720228 
-kill_leader = 17520030 #  Limpus
-
-	ENG = { country_event = 255 }
-	
-set_global_flag = 2145527_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: The naval mission returns home from the Ottoman Empire
-country_event = {
-id = 255
-title = "DH_EVENT_2001570_TITLE"
-desc = "DH_EVENT_2001570_DESC"
-picture = "limpus"
-
-trigger = { 
-tag = ENG
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2001570 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2001570_Option7"
-	relation = { who = TUR value = -25  }
-	
-set_global_flag = 2001570_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Overhaul coastal defence at the Dardanelles
-country_event = {
-id = 256
-title = "DH_EVENT_2191582_TITLE"
-desc = "DH_EVENT_2191582_DESC"
-picture = "sk_kaiserliche_marine"
-
-trigger = {
-	#has_global_flag = 2145514_EVENT_DONE
-	#has_global_flag= U08_OTT_Secret_Treaty
-	TUR = { faction = axis }
-	GER = { war = yes }
-	TUR = { war = yes }
-	4560 = { controlled_by = TUR }
-	
-tag = GER
-date = 1914.7.28
-
-not = { date = 1917.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2191582 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  31 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2191582_Option7"
-	random_country = { limit = { tag = THIS 
+				 SER = {
+					 war_with = GER
+					 }
+				 }
+			 }
+		 manpower = 30
+		 supplies = 400
+		 or = {
 			 not = {
-				 GER = { ai = yes }
-				 }  } 
-		supplies = -100 
+				 5567 = {
+					 controlled_by = TUR
+					 }
+				 }
+			 not = {
+				 7496 = {
+					 controlled_by = TUR
+					 }
+				 }
+			 not = {
+				 7374 = {
+					 controlled_by = TUR
+					 }
+				 }
+			 not = {
+				 4188 = {
+					 controlled_by = TUR
+					 }
+				 }
+			 not = {
+				 9213 = {
+					 controlled_by = TUR
+					 }
+				 }
+			 not = {
+				 5332 = {
+					 controlled_by = TUR
+					 }
+				 }
+			 }
+		 tag = GER
+		 date = 1914.7.28
+		 not = {
+			 date = 1917.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2191581
+			 }
 		 }
-	relation = { who = TUR value = 10  }
-	TUR = { country_event = 257 }
-	
-set_global_flag = 2191582_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: The Dardanelles defense network will be improved
-country_event = {
-id = 257
-title = "DH_EVENT_2145528_TITLE"
-desc = "DH_EVENT_2145528_DESC"
-picture = "sk_kaiserliche_marine"
-
-trigger = { 
-tag = TUR
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2145528 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2145528_Option7"
-	TUR = { country_event = 258 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 720219 }
-	
-set_global_flag = 2145528_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Overhaul of Dardanelles defense network completed
-country_event = {
-id = 258
-title = "DH_EVENT_2145529_TITLE"
-desc = "DH_EVENT_2145529_DESC"
-picture = "gallipoli_fort"
-
-trigger = { 
-tag = TUR
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2145529 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2145529_Option7"
-	random_country = { limit = { tag = THIS 
-			 4560 = { controlled_by = TUR }
-			  } 
-		4560 = { coastal_fort  = 2  }
+	option = {
+		 name = "DH_EVENT_2191581_Option7"
+		 relation = {
+			 who = TUR
+			 value = 10
+			 }
+		 TUR = {
+			 country_event = 253
+			 }
+		 manpower = -15
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 not = {
+					 GER = {
+						 ai = yes
+						 }
+					 }
+				 }
+			 supplies = -2000
+			 }
+		 kill_leader = 13110104
+		 kill_leader = 13110237
+		 kill_leader = 13120023
+		 remove_minister = 855039
+		 remove_minister = 855075
+		 set_global_flag = 2191581_EVENT_DONE
 		 }
-	
-set_global_flag = 2145529_EVENT_DONE
+	}
 
-}
+#The Asienkorps has arrived
 
-}
+#  Bronsart von Schellendorf
+#  Souchon
 
-#EVENTNAME: Protect the oil fields in southern Persia
-country_event = {
-id = 259
-title = "DH_EVENT_2001571_TITLE"
-desc = "DH_EVENT_2001571_DESC"
-picture = "abadan_oil"
-
-trigger = {
-	GER = { war_with = ENG }
-	TUR = { war_with = ENG }
-	ENG = { faction = allies }
-	not = {
-		 PER = { war_with = ENG }
+ country_event = {
+	title = "DH_EVENT_2145526_TITLE"
+	desc = "DH_EVENT_2145526_DESC"
+	id = 253
+	 
+	picture = "asienkorps"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = TUR
+		 not = {
+			 has_global_flag = SLEEPEVENT_2145526
+			 }
 		 }
-	9539 = { controlled_by = THIS }
-		and = {
-		exists = PER
-		not = { PER = { government_in_exile = yes } }
-		}
-	#has_global_flag = 2145519_EVENT_DONE
-	
-tag = ENG
-date = 1914.7.28
-
-not = { date = 1917.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2001571 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  20 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2001571_Option7"
-	relation = { who = PER value = -15  }
-	PER = { country_event = 260 }
-	
-set_global_flag = 2001571_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: The British Empire occupies southern territories
-country_event = {
-id = 260
-title = "DH_EVENT_2031002_TITLE"
-desc = "DH_EVENT_2031002_DESC"
-picture = "baghdad_captured"
-
-trigger = { 
-tag = PER
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2031002 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2031002_Option7"
-	relation = { who = ENG value = -15  }
-	9336 = { secede_province = ENG }
-	9366 = { secede_province = ENG }
-	9398 = { secede_province = ENG }
-	9429 = { secede_province = ENG }
-	9461 = { secede_province = ENG }
-	9462 = { secede_province = ENG }
-	9489 = { secede_province = ENG }
-	9515 = { secede_province = ENG }
-	9340 = { secede_province = ENG }
-	9401 = { secede_province = ENG }
-	9430 = { secede_province = ENG }
-	9463 = { secede_province = ENG }
-	9490 = { secede_province = ENG }
-	9491 = { secede_province = ENG }
-	9516 = { secede_province = ENG }
-	ENG = { add_core = 9336 }
-	ENG = { add_core = 9366 }
-	ENG = { add_core = 9398 }
-	ENG = { add_core = 9429 }
-	ENG = { add_core = 9461 }
-	ENG = { add_core = 9462 }
-	ENG = { add_core = 9489 }
-	ENG = { add_core = 9515 }
-	ENG = { add_core = 9340 }
-	ENG = { add_core = 9401 }
-	ENG = { add_core = 9430 }
-	ENG = { add_core = 9463 }
-	ENG = { add_core = 9490 }
-	ENG = { add_core = 9491 }
-	ENG = { add_core = 9516 }
-	
-set_global_flag = 2031002_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Occupy northern Persia
-country_event = {
-id = 261
-title = "DH_EVENT_2104550_TITLE"
-desc = "DH_EVENT_2104550_DESC"
-picture = "persia"
-
-trigger = {
-	GER = { war_with = RUS }
-	not = {
-		 PER = { war_with = RUS }
+	option = {
+		 name = "DH_EVENT_2145526_Option7"
+		 dissent = -2
+		 4503 = {
+			 hq_brigade = current
+			 }
+		 random_owned = {
+			 limit = {
+				 controlled_by = THIS
+				 }
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 infantry_brigade = current
+			 artillery_brigade = current
+			 }
+		 4503 = {
+			 hq_brigade = current
+			 }
+		 random_owned = {
+			 limit = {
+				 controlled_by = THIS
+				 }
+			 hq_brigade = current
+			 hq_brigade = current
+			 hq_brigade = current
+			 }
+		 4503 = {
+			 hq_brigade = current
+			 }
+		 random_owned = {
+			 limit = {
+				 controlled_by = THIS
+				 has_building = air_base
+				 }
+			 interceptor = current
+			 }
+		 kill_leader = 17510099
+		 kill_leader = 17520029
+		 set_global_flag = 2145526_EVENT_DONE
 		 }
-	3524 = { controlled_by = THIS }
-	and = {
-		exists = PER
-		not = { PER = { government_in_exile = yes } }
-		}
-	TUR = { war_with = RUS }
-	#has_global_flag = 2145519_EVENT_DONE
-	
-tag = RUS
-date = 1914.7.28
+	}
 
-not = { date = 1917.12.30
- }
+#The British naval mission leaves the country
 
+#  Limpus
 
-
-not = { has_global_flag = SLEEPEVENT_2104550 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  20 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2104550_Option7"
-	relation = { who = PER value = -15  }
-	PER = { country_event = 262 }
-	
-set_global_flag = 2104550_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Russian Empire occupies northern territories
-country_event = {
-id = 262
-title = "DH_EVENT_2031003_TITLE"
-desc = "DH_EVENT_2031003_DESC"
-picture = "baghdad_captured"
-
-trigger = { 
-tag = PER
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2031003 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2031003_Option7"
-	relation = { who = RUS value = -15  }
-	3594 = { secede_province = RUS }
-	7333 = { secede_province = RUS }
-	7346 = { secede_province = RUS }
-	7356 = { secede_province = RUS }
-	7366 = { secede_province = RUS }
-	7376 = { secede_province = RUS }
-	7383 = { secede_province = RUS }
-	8995 = { secede_province = RUS }
-	9020 = { secede_province = RUS }
-	9049 = { secede_province = RUS }
-	9074 = { secede_province = RUS }
-	3854 = { secede_province = RUS }
-	4625 = { secede_province = RUS }
-	7225 = { secede_province = RUS }
-	7270 = { secede_province = RUS }
-	8996 = { secede_province = RUS }
-	9075 = { secede_province = RUS }
-	9102 = { secede_province = RUS }
-	9128 = { secede_province = RUS }
-	RUS = { add_core = 3594 }
-	RUS = { add_core = 7333 }
-	RUS = { add_core = 7346 }
-	RUS = { add_core = 7356 }
-	RUS = { add_core = 7366 }
-	RUS = { add_core = 7376 }
-	RUS = { add_core = 7383 }
-	RUS = { add_core = 8995 }
-	RUS = { add_core = 9020 }
-	RUS = { add_core = 9049 }
-	RUS = { add_core = 9074 }
-	RUS = { add_core = 3854 }
-	RUS = { add_core = 4625 }
-	RUS = { add_core = 7225 }
-	RUS = { add_core = 7270 }
-	RUS = { add_core = 8996 }
-	RUS = { add_core = 9075 }
-	RUS = { add_core = 9102 }
-	RUS = { add_core = 9128 }
-	
-set_global_flag = 2031003_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Leave southern Persia
-country_event = {
-id = 263
-title = "DH_EVENT_2185006_TITLE"
-desc = "DH_EVENT_2185006_DESC"
-picture = "persia"
-
-trigger = {
-	#has_global_flag = 2031001_EVENT_DONE
-	not = {
-		 PER = { war_with = ENG }
+ country_event = {
+	title = "DH_EVENT_2145527_TITLE"
+	desc = "DH_EVENT_2145527_DESC"
+	id = 254
+	 
+	picture = "limpus"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 10
 		 }
-	not = {
-		 TUR = { war_with = ENG }
+	trigger = {
+		 or = {
+			 TUR = {
+				 war_with = ENG
+				 }
+			 TUR = {
+				 war_with = RUS
+				 }
+			 }
+		 tag = TUR
+		 date = 1914.7.28
+		 not = {
+			 date = 1917.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2145527
+			 }
 		 }
-	#has_global_flag = 2145510_EVENT_DONE
-	and = {
-		exists = PER
-		not = { PER = { government_in_exile = yes } }
-		}
-	or = {
-		9336 = { controlled_by = THIS }
-		9366 = { controlled_by = THIS }
-		9429 = { controlled_by = THIS }
-		9401 = { controlled_by = THIS }
-		}
-	
-tag = ENG
-date = 1914.7.28
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2185006 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  61 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2185006_Option7"
-	relation = { who = PER value = 5  }
-	9336 = { secede_province = PER }
-	9366 = { secede_province = PER }
-	9398 = { secede_province = PER }
-	9429 = { secede_province = PER }
-	9461 = { secede_province = PER }
-	9462 = { secede_province = PER }
-	9489 = { secede_province = PER }
-	9515 = { secede_province = PER }
-	9340 = { secede_province = PER }
-	9401 = { secede_province = PER }
-	9430 = { secede_province = PER }
-	9463 = { secede_province = PER }
-	9490 = { secede_province = PER }
-	9491 = { secede_province = PER }
-	9516 = { secede_province = PER }
-	remove_core = 9336
-	remove_core = 9366
-	remove_core = 9398
-	remove_core = 9429
-	remove_core = 9461
-	remove_core = 9462
-	remove_core = 9489
-	remove_core = 9515
-	remove_core = 9340
-	remove_core = 9401
-	remove_core = 9430
-	remove_core = 9463
-	remove_core = 9490
-	remove_core = 9491
-	remove_core = 9516
-	
-set_global_flag = 2185006_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: Leave northern Persia
-country_event = {
-id = 264
-title = "DH_EVENT_2104551_TITLE"
-desc = "DH_EVENT_2104551_DESC"
-picture = "persia"
-
-trigger = {
-	has_global_flag = 2031002_EVENT_DONE
-	not = {
-		 PER = { war_with = THIS }
+	option = {
+		 name = "DH_EVENT_2145527_Option7"
+		 kill_leader = 17520030
+		 ENG = {
+			 country_event = 255
+			 }
+		 set_global_flag = 2145527_EVENT_DONE
 		 }
-	not = {
-		 TUR = { war_with = THIS }
+	}
+
+#The naval mission returns home from the Ottoman Empire
+
+
+ country_event = {
+	title = "DH_EVENT_2001570_TITLE"
+	desc = "DH_EVENT_2001570_DESC"
+	id = 255
+	 
+	picture = "limpus"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = ENG
+		 not = {
+			 has_global_flag = SLEEPEVENT_2001570
+			 }
 		 }
-	#has_global_flag = 2145510_EVENT_DONE
-	and = {
-		exists = PER
-		not = { PER = { government_in_exile = yes } }
-		}
-	or = {
-		3594 = { controlled_by = THIS }
-		7366 = { controlled_by = THIS }
-		9049 = { controlled_by = THIS }
-		4625 = { controlled_by = THIS }
-		}
-	
-
-date = 1914.7.28
-
-not = { date = 1925.12.30
- }
-or = {
-tag = RUS
-tag = SOV
-}
-
-
-not = { has_global_flag = SLEEPEVENT_2104551 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  61 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2104551_Option7"
-	relation = { who = PER value = 5  }
-	3594 = { secede_province = PER }
-	7333 = { secede_province = PER }
-	7346 = { secede_province = PER }
-	7356 = { secede_province = PER }
-	7366 = { secede_province = PER }
-	7376 = { secede_province = PER }
-	7383 = { secede_province = PER }
-	8995 = { secede_province = PER }
-	9020 = { secede_province = PER }
-	9049 = { secede_province = PER }
-	9074 = { secede_province = PER }
-	3854 = { secede_province = PER }
-	4625 = { secede_province = PER }
-	7225 = { secede_province = PER }
-	7270 = { secede_province = PER }
-	8996 = { secede_province = PER }
-	9075 = { secede_province = PER }
-	9102 = { secede_province = PER }
-	9128 = { secede_province = PER }
-	remove_core = 3594
-	remove_core = 7333
-	remove_core = 7346
-	remove_core = 7356
-	remove_core = 7366
-	remove_core = 7376
-	remove_core = 7383
-	remove_core = 8995
-	remove_core = 9020
-	remove_core = 9049
-	remove_core = 9074
-	remove_core = 3854
-	remove_core = 4625
-	remove_core = 7225
-	remove_core = 7270
-	remove_core = 8996
-	remove_core = 9075
-	remove_core = 9102
-	remove_core = 9128
-	
-set_global_flag = 2104551_EVENT_DONE
-
-}
-
-}
-
-
-
-
-#EVENTNAME: The German military mission leaves the country
-country_event = {
-id = 267
-title = "DH_EVENT_2145531_TITLE"
-desc = "DH_EVENT_2145531_DESC"
-picture = "german_military_mission"
-
-trigger = {
-	or = {
-		#has_global_flag= End_to_U08_mission_to_OTT
-		GER = { war_with = TUR }
-		}
-	
-tag = TUR
-date = 1916.9.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2145531 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  31 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2145531_Option7"
-	TUR = { relation = { who = GER value = -50 } }
-	random_country = { limit = { tag = THIS 
-			 #has_global_flag= End_to_U08_mission_to_OTT
-			  } 
-		#clr_global_flag = End_to_U08_mission_to_OTT 
+	option = {
+		 name = "DH_EVENT_2001570_Option7"
+		 relation = {
+			 who = TUR
+			 value = -25
+			 }
+		 set_global_flag = 2001570_EVENT_DONE
 		 }
-	GER = { country_event = 268 }
-	#remove_minister = 720217 
-	#remove_minister = 720218 
-	#remove_minister = 720219 
-	#remove_minister = 720220 
-	#remove_minister = 720221 
-	#remove_minister = 720222 
-	#remove_minister = 720223 
-	#remove_minister = 720224 
-	#remove_minister = 720225 
-	#remove_minister = 720226 
-	#remove_minister = 720227 
-	#kill_leader = 720268 
-kill_leader = 17510098 #  Böhme
-kill_leader = 17510099 #  Bronsart von Schellendorf
- 
-	#kill_leader = 720271 
-kill_leader = 17510100 #  Ehrke
-kill_leader = 17510101 #  Falkenhayn
-kill_leader = 17510102 #  von Frankenberg und Proschlitz
-kill_leader = 17510103 #  Gleich
-kill_leader = 17510104 #  von der Goltz
-kill_leader = 17510105 #  Guhr
-kill_leader = 17510106 #  Hammerstein-Gesmold
-kill_leader = 17510107 #  Havik
-kill_leader = 17510108 #  Heuck
-kill_leader = 17520025 #  Hopman
+	}
 
-	#kill_leader = 720282 
-kill_leader = 17510109 #  Kannengiesser
-
-	#kill_leader = 720284 
-kill_leader = 17510110 #  Kreß von Kressenstein
-
-	#kill_leader = 720286 
-kill_leader = 17510111 #  Lenthe
-kill_leader = 17510112 #  Liman von Sanders
-kill_leader = 17510113 #  Lossow
-kill_leader = 17510114 #  Nicolai
-kill_leader = 17510115 #  Oppen
-kill_leader = 17510116 #  Posseldt
-kill_leader = 17510117 #  Pötrich
-kill_leader = 17510118 #  Rabe
-kill_leader = 17510119 #  Rohdewald
-kill_leader = 17510120 #  Schlee
-kill_leader = 17510121 #  Schraudenbach
-kill_leader = 17510122 #  Seeckt
-kill_leader = 17510123 #  Sodenstern
-kill_leader = 17510124 #  Tiller
-kill_leader = 17510125 #  Trommer
-kill_leader = 17510126 #  Weber
-
-	#kill_leader = 720303 
-	#kill_leader = 720304 
-kill_leader = 17520026 #  Merten
-kill_leader = 17520027 #  Pieper
-kill_leader = 17520028 #  Rebeur-Paschwitz
-kill_leader = 17520029 #  Souchon
-kill_leader = 17530012 #  Buddecke
-kill_leader = 17530013 #  Felmy
-kill_leader = 17530014 #  Goltz
-kill_leader = 17530015 #  Grone
-kill_leader = 17530016 #  Langfeld
-kill_leader = 17530017 #  Liebermann
-kill_leader = 17530018 #  Preußner
-kill_leader = 17530019 #  Schueler van Krieken
-kill_leader = 17530020 #  Serno
-
-	
-set_global_flag = 2145531_EVENT_DONE
-
-}
-
-}
-
-#EVENTNAME: The military mission to the Ottoman Empire returns home
-country_event = {
-id = 268
-title = "DH_EVENT_2191583_TITLE"
-desc = "DH_EVENT_2191583_DESC"
-picture = "german_military_mission"
-
-trigger = { 
-tag = GER
+#Overhaul coastal defence at the Dardanelles
 
 
+ country_event = {
+	title = "DH_EVENT_2191582_TITLE"
+	desc = "DH_EVENT_2191582_DESC"
+	id = 256
+	 
+	picture = "sk_kaiserliche_marine"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 31
+		 }
+	trigger = {
+		 TUR = {
+			 faction = axis
+			 }
+		 GER = {
+			 war = yes
+			 }
+		 TUR = {
+			 war = yes
+			 }
+		 4560 = {
+			 controlled_by = TUR
+			 }
+		 tag = GER
+		 date = 1914.7.28
+		 not = {
+			 date = 1917.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2191582
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2191582_Option7"
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 not = {
+					 GER = {
+						 ai = yes
+						 }
+					 }
+				 }
+			 supplies = -100
+			 }
+		 relation = {
+			 who = TUR
+			 value = 10
+			 }
+		 TUR = {
+			 country_event = 257
+			 }
+		 set_global_flag = 2191582_EVENT_DONE
+		 }
+	}
+
+#The Dardanelles defense network will be improved
 
 
+ country_event = {
+	title = "DH_EVENT_2145528_TITLE"
+	desc = "DH_EVENT_2145528_DESC"
+	id = 257
+	 
+	picture = "sk_kaiserliche_marine"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = TUR
+		 not = {
+			 has_global_flag = SLEEPEVENT_2145528
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2145528_Option7"
+		 TUR = {
+			 country_event = 258
+			 }
+		 set_global_flag = 2145528_EVENT_DONE
+		 }
+	}
 
-not = { has_global_flag = SLEEPEVENT_2191583 }
+#Overhaul of Dardanelles defense network completed
 
-}
-fire_only_once = yes
 
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2191583_Option7"
-	#Removed Blank command
-	
-set_global_flag = 2191583_EVENT_DONE
+ country_event = {
+	title = "DH_EVENT_2145529_TITLE"
+	desc = "DH_EVENT_2145529_DESC"
+	id = 258
+	 
+	picture = "gallipoli_fort"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = TUR
+		 not = {
+			 has_global_flag = SLEEPEVENT_2145529
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2145529_Option7"
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 4560 = {
+					 controlled_by = TUR
+					 }
+				 }
+			 4560 = {
+				 coastal_fort = 2
+				 }
+			 }
+		 set_global_flag = 2145529_EVENT_DONE
+		 }
+	}
 
-}
+#Protect the oil fields in southern Persia
 
-}
+
+ country_event = {
+	title = "DH_EVENT_2001571_TITLE"
+	desc = "DH_EVENT_2001571_DESC"
+	id = 259
+	 
+	picture = "abadan_oil"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 20
+		 }
+	trigger = {
+		 GER = {
+			 war_with = ENG
+			 }
+		 TUR = {
+			 war_with = ENG
+			 }
+		 ENG = {
+			 faction = allies
+			 }
+		 not = {
+			 PER = {
+				 war_with = ENG
+				 }
+			 }
+		 9539 = {
+			 controlled_by = THIS
+			 }
+		 and = {
+			 exists = PER
+			 not = {
+				 PER = {
+					 government_in_exile = yes
+					 }
+				 }
+			 }
+		 tag = ENG
+		 date = 1914.7.28
+		 not = {
+			 date = 1917.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2001571
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2001571_Option7"
+		 relation = {
+			 who = PER
+			 value = -15
+			 }
+		 PER = {
+			 country_event = 260
+			 }
+		 set_global_flag = 2001571_EVENT_DONE
+		 }
+	}
+
+#The British Empire occupies southern territories
+
+
+ country_event = {
+	title = "DH_EVENT_2031002_TITLE"
+	desc = "DH_EVENT_2031002_DESC"
+	id = 260
+	 
+	picture = "baghdad_captured"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = PER
+		 not = {
+			 has_global_flag = SLEEPEVENT_2031002
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2031002_Option7"
+		 relation = {
+			 who = ENG
+			 value = -15
+			 }
+		 9336 = {
+			 secede_province = ENG
+			 }
+		 9366 = {
+			 secede_province = ENG
+			 }
+		 9398 = {
+			 secede_province = ENG
+			 }
+		 9429 = {
+			 secede_province = ENG
+			 }
+		 9461 = {
+			 secede_province = ENG
+			 }
+		 9462 = {
+			 secede_province = ENG
+			 }
+		 9489 = {
+			 secede_province = ENG
+			 }
+		 9515 = {
+			 secede_province = ENG
+			 }
+		 9340 = {
+			 secede_province = ENG
+			 }
+		 9401 = {
+			 secede_province = ENG
+			 }
+		 9430 = {
+			 secede_province = ENG
+			 }
+		 9463 = {
+			 secede_province = ENG
+			 }
+		 9490 = {
+			 secede_province = ENG
+			 }
+		 9491 = {
+			 secede_province = ENG
+			 }
+		 9516 = {
+			 secede_province = ENG
+			 }
+		 ENG = {
+			 add_core = 9336
+			 }
+		 ENG = {
+			 add_core = 9366
+			 }
+		 ENG = {
+			 add_core = 9398
+			 }
+		 ENG = {
+			 add_core = 9429
+			 }
+		 ENG = {
+			 add_core = 9461
+			 }
+		 ENG = {
+			 add_core = 9462
+			 }
+		 ENG = {
+			 add_core = 9489
+			 }
+		 ENG = {
+			 add_core = 9515
+			 }
+		 ENG = {
+			 add_core = 9340
+			 }
+		 ENG = {
+			 add_core = 9401
+			 }
+		 ENG = {
+			 add_core = 9430
+			 }
+		 ENG = {
+			 add_core = 9463
+			 }
+		 ENG = {
+			 add_core = 9490
+			 }
+		 ENG = {
+			 add_core = 9491
+			 }
+		 ENG = {
+			 add_core = 9516
+			 }
+		 set_global_flag = 2031002_EVENT_DONE
+		 }
+	}
+
+#Occupy northern Persia
+
+
+ country_event = {
+	title = "DH_EVENT_2104550_TITLE"
+	desc = "DH_EVENT_2104550_DESC"
+	id = 261
+	 
+	picture = "persia"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 20
+		 }
+	trigger = {
+		 GER = {
+			 war_with = RUS
+			 }
+		 not = {
+			 PER = {
+				 war_with = RUS
+				 }
+			 }
+		 3524 = {
+			 controlled_by = THIS
+			 }
+		 and = {
+			 exists = PER
+			 not = {
+				 PER = {
+					 government_in_exile = yes
+					 }
+				 }
+			 }
+		 TUR = {
+			 war_with = RUS
+			 }
+		 tag = RUS
+		 date = 1914.7.28
+		 not = {
+			 date = 1917.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2104550
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2104550_Option7"
+		 relation = {
+			 who = PER
+			 value = -15
+			 }
+		 PER = {
+			 country_event = 262
+			 }
+		 set_global_flag = 2104550_EVENT_DONE
+		 }
+	}
+
+#Russian Empire occupies northern territories
+
+
+ country_event = {
+	title = "DH_EVENT_2031003_TITLE"
+	desc = "DH_EVENT_2031003_DESC"
+	id = 262
+	 
+	picture = "baghdad_captured"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = PER
+		 not = {
+			 has_global_flag = SLEEPEVENT_2031003
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2031003_Option7"
+		 relation = {
+			 who = RUS
+			 value = -15
+			 }
+		 3594 = {
+			 secede_province = RUS
+			 }
+		 7333 = {
+			 secede_province = RUS
+			 }
+		 7346 = {
+			 secede_province = RUS
+			 }
+		 7356 = {
+			 secede_province = RUS
+			 }
+		 7366 = {
+			 secede_province = RUS
+			 }
+		 7376 = {
+			 secede_province = RUS
+			 }
+		 7383 = {
+			 secede_province = RUS
+			 }
+		 8995 = {
+			 secede_province = RUS
+			 }
+		 9020 = {
+			 secede_province = RUS
+			 }
+		 9049 = {
+			 secede_province = RUS
+			 }
+		 9074 = {
+			 secede_province = RUS
+			 }
+		 3854 = {
+			 secede_province = RUS
+			 }
+		 4625 = {
+			 secede_province = RUS
+			 }
+		 7225 = {
+			 secede_province = RUS
+			 }
+		 7270 = {
+			 secede_province = RUS
+			 }
+		 8996 = {
+			 secede_province = RUS
+			 }
+		 9075 = {
+			 secede_province = RUS
+			 }
+		 9102 = {
+			 secede_province = RUS
+			 }
+		 9128 = {
+			 secede_province = RUS
+			 }
+		 RUS = {
+			 add_core = 3594
+			 }
+		 RUS = {
+			 add_core = 7333
+			 }
+		 RUS = {
+			 add_core = 7346
+			 }
+		 RUS = {
+			 add_core = 7356
+			 }
+		 RUS = {
+			 add_core = 7366
+			 }
+		 RUS = {
+			 add_core = 7376
+			 }
+		 RUS = {
+			 add_core = 7383
+			 }
+		 RUS = {
+			 add_core = 8995
+			 }
+		 RUS = {
+			 add_core = 9020
+			 }
+		 RUS = {
+			 add_core = 9049
+			 }
+		 RUS = {
+			 add_core = 9074
+			 }
+		 RUS = {
+			 add_core = 3854
+			 }
+		 RUS = {
+			 add_core = 4625
+			 }
+		 RUS = {
+			 add_core = 7225
+			 }
+		 RUS = {
+			 add_core = 7270
+			 }
+		 RUS = {
+			 add_core = 8996
+			 }
+		 RUS = {
+			 add_core = 9075
+			 }
+		 RUS = {
+			 add_core = 9102
+			 }
+		 RUS = {
+			 add_core = 9128
+			 }
+		 set_global_flag = 2031003_EVENT_DONE
+		 }
+	}
+
+#Leave southern Persia
+
+
+ country_event = {
+	title = "DH_EVENT_2185006_TITLE"
+	desc = "DH_EVENT_2185006_DESC"
+	id = 263
+	 
+	picture = "persia"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 61
+		 }
+	trigger = {
+		 not = {
+			 PER = {
+				 war_with = ENG
+				 }
+			 }
+		 not = {
+			 TUR = {
+				 war_with = ENG
+				 }
+			 }
+		 and = {
+			 exists = PER
+			 not = {
+				 PER = {
+					 government_in_exile = yes
+					 }
+				 }
+			 }
+		 or = {
+			 9336 = {
+				 controlled_by = THIS
+				 }
+			 9366 = {
+				 controlled_by = THIS
+				 }
+			 9429 = {
+				 controlled_by = THIS
+				 }
+			 9401 = {
+				 controlled_by = THIS
+				 }
+			 }
+		 tag = ENG
+		 date = 1914.7.28
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2185006
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2185006_Option7"
+		 relation = {
+			 who = PER
+			 value = 5
+			 }
+		 9336 = {
+			 secede_province = PER
+			 }
+		 9366 = {
+			 secede_province = PER
+			 }
+		 9398 = {
+			 secede_province = PER
+			 }
+		 9429 = {
+			 secede_province = PER
+			 }
+		 9461 = {
+			 secede_province = PER
+			 }
+		 9462 = {
+			 secede_province = PER
+			 }
+		 9489 = {
+			 secede_province = PER
+			 }
+		 9515 = {
+			 secede_province = PER
+			 }
+		 9340 = {
+			 secede_province = PER
+			 }
+		 9401 = {
+			 secede_province = PER
+			 }
+		 9430 = {
+			 secede_province = PER
+			 }
+		 9463 = {
+			 secede_province = PER
+			 }
+		 9490 = {
+			 secede_province = PER
+			 }
+		 9491 = {
+			 secede_province = PER
+			 }
+		 9516 = {
+			 secede_province = PER
+			 }
+		 remove_core = 9336
+		 remove_core = 9366
+		 remove_core = 9398
+		 remove_core = 9429
+		 remove_core = 9461
+		 remove_core = 9462
+		 remove_core = 9489
+		 remove_core = 9515
+		 remove_core = 9340
+		 remove_core = 9401
+		 remove_core = 9430
+		 remove_core = 9463
+		 remove_core = 9490
+		 remove_core = 9491
+		 remove_core = 9516
+		 set_global_flag = 2185006_EVENT_DONE
+		 }
+	}
+
+#Leave northern Persia
+
+
+ country_event = {
+	title = "DH_EVENT_2104551_TITLE"
+	desc = "DH_EVENT_2104551_DESC"
+	id = 264
+	 
+	picture = "persia"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 61
+		 }
+	trigger = {
+		 has_global_flag = 2031002_EVENT_DONE
+		 not = {
+			 PER = {
+				 war_with = THIS
+				 }
+			 }
+		 not = {
+			 TUR = {
+				 war_with = THIS
+				 }
+			 }
+		 and = {
+			 exists = PER
+			 not = {
+				 PER = {
+					 government_in_exile = yes
+					 }
+				 }
+			 }
+		 or = {
+			 3594 = {
+				 controlled_by = THIS
+				 }
+			 7366 = {
+				 controlled_by = THIS
+				 }
+			 9049 = {
+				 controlled_by = THIS
+				 }
+			 4625 = {
+				 controlled_by = THIS
+				 }
+			 }
+		 date = 1914.7.28
+		 not = {
+			 date = 1925.12.30
+			 }
+		 or = {
+			 tag = RUS
+			 tag = SOV
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2104551
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2104551_Option7"
+		 relation = {
+			 who = PER
+			 value = 5
+			 }
+		 3594 = {
+			 secede_province = PER
+			 }
+		 7333 = {
+			 secede_province = PER
+			 }
+		 7346 = {
+			 secede_province = PER
+			 }
+		 7356 = {
+			 secede_province = PER
+			 }
+		 7366 = {
+			 secede_province = PER
+			 }
+		 7376 = {
+			 secede_province = PER
+			 }
+		 7383 = {
+			 secede_province = PER
+			 }
+		 8995 = {
+			 secede_province = PER
+			 }
+		 9020 = {
+			 secede_province = PER
+			 }
+		 9049 = {
+			 secede_province = PER
+			 }
+		 9074 = {
+			 secede_province = PER
+			 }
+		 3854 = {
+			 secede_province = PER
+			 }
+		 4625 = {
+			 secede_province = PER
+			 }
+		 7225 = {
+			 secede_province = PER
+			 }
+		 7270 = {
+			 secede_province = PER
+			 }
+		 8996 = {
+			 secede_province = PER
+			 }
+		 9075 = {
+			 secede_province = PER
+			 }
+		 9102 = {
+			 secede_province = PER
+			 }
+		 9128 = {
+			 secede_province = PER
+			 }
+		 remove_core = 3594
+		 remove_core = 7333
+		 remove_core = 7346
+		 remove_core = 7356
+		 remove_core = 7366
+		 remove_core = 7376
+		 remove_core = 7383
+		 remove_core = 8995
+		 remove_core = 9020
+		 remove_core = 9049
+		 remove_core = 9074
+		 remove_core = 3854
+		 remove_core = 4625
+		 remove_core = 7225
+		 remove_core = 7270
+		 remove_core = 8996
+		 remove_core = 9075
+		 remove_core = 9102
+		 remove_core = 9128
+		 set_global_flag = 2104551_EVENT_DONE
+		 }
+	}
+
+#The German military mission leaves the country
+
+#  Böhme
+#  Bronsart von Schellendorf
+#  Ehrke
+#  Falkenhayn
+#  von Frankenberg und Proschlitz
+#  Gleich
+#  von der Goltz
+#  Guhr
+#  Hammerstein-Gesmold
+#  Havik
+#  Heuck
+#  Hopman
+#  Kannengiesser
+#  Kreß von Kressenstein
+#  Lenthe
+#  Liman von Sanders
+#  Lossow
+#  Nicolai
+#  Oppen
+#  Posseldt
+#  Pötrich
+#  Rabe
+#  Rohdewald
+#  Schlee
+#  Schraudenbach
+#  Seeckt
+#  Sodenstern
+#  Tiller
+#  Trommer
+#  Weber
+#  Merten
+#  Pieper
+#  Rebeur-Paschwitz
+#  Souchon
+#  Buddecke
+#  Felmy
+#  Goltz
+#  Grone
+#  Langfeld
+#  Liebermann
+#  Preußner
+#  Schueler van Krieken
+#  Serno
+
+ country_event = {
+	title = "DH_EVENT_2145531_TITLE"
+	desc = "DH_EVENT_2145531_DESC"
+	id = 267
+	 
+	picture = "german_military_mission"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 31
+		 }
+	trigger = {
+		 or = {
+			 GER = {
+				 war_with = TUR
+				 }
+			 }
+		 tag = TUR
+		 date = 1916.9.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2145531
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2145531_Option7"
+		 TUR = {
+			 relation = {
+				 who = GER
+				 value = -50
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 }
+			 }
+		 GER = {
+			 country_event = 268
+			 }
+		 kill_leader = 17510098
+		 kill_leader = 17510099
+		 kill_leader = 17510100
+		 kill_leader = 17510101
+		 kill_leader = 17510102
+		 kill_leader = 17510103
+		 kill_leader = 17510104
+		 kill_leader = 17510105
+		 kill_leader = 17510106
+		 kill_leader = 17510107
+		 kill_leader = 17510108
+		 kill_leader = 17520025
+		 kill_leader = 17510109
+		 kill_leader = 17510110
+		 kill_leader = 17510111
+		 kill_leader = 17510112
+		 kill_leader = 17510113
+		 kill_leader = 17510114
+		 kill_leader = 17510115
+		 kill_leader = 17510116
+		 kill_leader = 17510117
+		 kill_leader = 17510118
+		 kill_leader = 17510119
+		 kill_leader = 17510120
+		 kill_leader = 17510121
+		 kill_leader = 17510122
+		 kill_leader = 17510123
+		 kill_leader = 17510124
+		 kill_leader = 17510125
+		 kill_leader = 17510126
+		 kill_leader = 17520026
+		 kill_leader = 17520027
+		 kill_leader = 17520028
+		 kill_leader = 17520029
+		 kill_leader = 17530012
+		 kill_leader = 17530013
+		 kill_leader = 17530014
+		 kill_leader = 17530015
+		 kill_leader = 17530016
+		 kill_leader = 17530017
+		 kill_leader = 17530018
+		 kill_leader = 17530019
+		 kill_leader = 17530020
+		 set_global_flag = 2145531_EVENT_DONE
+		 }
+	}
+
+#The military mission to the Ottoman Empire returns home
+
+
+ country_event = {
+	title = "DH_EVENT_2191583_TITLE"
+	desc = "DH_EVENT_2191583_DESC"
+	id = 268
+	 
+	picture = "german_military_mission"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = GER
+		 not = {
+			 has_global_flag = SLEEPEVENT_2191583
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2191583_Option7"
+		 set_global_flag = 2191583_EVENT_DONE
+		 }
+	}
+

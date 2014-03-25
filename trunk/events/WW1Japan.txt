@@ -1,51 +1,63 @@
-#### NEW Emperor Japan  ####
+#Emperor Meiji dies
 
-country_event = {
 
-		id = 100902
+ country_event = {
+	title = "JAPE4"
+	desc = "desc_JAPE4"
+	id = 100902
+	 
+	picture = "JAPP4"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	trigger = {
+		 tag = JAP
+		 JAP = {
+			 head_of_state = 9999998
+			 }
+		 not = {
+			 has_country_flag = king_death_meiji
+			 }
+		 date = 1912.6.30
+		 }
+	option = {
+		 name = "opta_JAPE4"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 JAP = {
+			 head_of_state = 50286
+			 }
+		 set_country_flag = king_death_meiji
+		 }
+	}
 
-		trigger = {
-			tag = JAP
-			JAP = { head_of_state = 9999998 }
-			not = { has_country_flag = king_death_meiji }
-			date = 1912.6.30
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
-		
-		fire_only_once = yes
+#Japan–Korea Annexation Treaty
 
-		title = "JAPE4"
-		desc = "desc_JAPE4"
-		picture = "JAPP4"
 
-		option = {
-			name = "opta_JAPE4"
-			ai_chance = { factor = 100 }
-			JAP = { head_of_state = 50286 }
-			set_country_flag = king_death_meiji
-		}
-	
-}
+ country_event = {
+	title = "JAPE1"
+	desc = "desc_JAPE1"
+	id = 100100
+	 
+	picture = "JAPP1"
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_JAPE1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 JAP = {
+			 split_troops = 1.0
+			 }
+		 JAP = {
+			 inherit = KOR
+			 }
+		 }
+	}
 
- #### Japan–Korea Annexation Treaty  ####
-
-country_event = {
-
-		id = 100100
-
-		is_triggered_only = yes
-
-		title = "JAPE1"
-		desc = "desc_JAPE1"
-		picture = "JAPP1"
-
-		option = {
-			name = "opta_JAPE1"
-			ai_chance = { factor = 100 }
-			JAP = { split_troops = 1.0 }
-			JAP = { inherit = KOR }
-		}
-}

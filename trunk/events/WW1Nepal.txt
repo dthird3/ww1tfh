@@ -1,38 +1,51 @@
+#King Prithvi Dies!
 
-country_event = {
+# Tribhuvana
+# Tribhuvana
+# Tribhuvana
+# Tribhuvana
+# Tribhuvana
+# Tribhuvana
+# Tribhuvana
+# Tribhuvana
+# Tribhuvana
+# Tribhuvana
 
-		id = 100912
+ country_event = {
+	title = "NEPE1"
+	desc = "desc_NEPE1"
+	id = 100912
+	 
+	picture = "NEPP1"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	trigger = {
+		 tag = NEP
+		 NEP = {
+			 head_of_state = 999984
+			 }
+		 date = 1913.10.9
+		 }
+	option = {
+		 name = "opta_NEPE1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 head_of_state = 395001
+		 head_of_government = 395001
+		 foreign_minister = 395001
+		 armament_minister = 395001
+		 minister_of_security = 395001
+		 minister_of_intelligence = 395001
+		 chief_of_staff = 395001
+		 chief_of_army = 395001
+		 chief_of_navy = 395001
+		 chief_of_air = 395001
+		 remove_minister = 999984
+		 }
+	}
 
-		trigger = {
-			tag = NEP
-			NEP = { head_of_state = 999984 }
-			date = 1913.10.9
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
-		
-		fire_only_once = yes
-
-		title = "NEPE1"
-		desc = "desc_NEPE1"
-		picture = "NEPP1"
-
-		option = {
-			name = "opta_NEPE1"
-			ai_chance = { factor = 100 }
-head_of_state = 395001 # Tribhuvana
-head_of_government = 395001 # Tribhuvana
-foreign_minister = 395001 # Tribhuvana
-armament_minister = 395001 # Tribhuvana
-minister_of_security = 395001 # Tribhuvana
-minister_of_intelligence = 395001 # Tribhuvana
-chief_of_staff = 395001 # Tribhuvana
-chief_of_army = 395001 # Tribhuvana
-chief_of_navy = 395001 # Tribhuvana
-chief_of_air = 395001 # Tribhuvana
-			remove_minister  = 999984
-		}
-	
-}

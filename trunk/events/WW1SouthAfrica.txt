@@ -1,80 +1,133 @@
+#The Union of South Africa decides
 
- #### SOUTH AFRICA DECIDES TO JOIN ENTENTE OR STAY NEUTRAL ####
+# Maritz does not defect to the Rebels, so not available to GER player
+# Beyers does not defect to the Rebels, so not available to GER player
+# To limit chance of quickly rejoining Faction and War
 
-country_event = {
-
-		id = 2008000
-		
-		major = yes
-		is_triggered_only = yes
-			
-		title = "EVT1914_2008000_NAME"
-		desc = "EVT1914_2008000_DESC"
-		picture = "ENGP2"
-
-		option = {
-			name = "ACTION_NAME_JOIN_ENTENTE"
-			ai_chance = { factor = 90 }	
-			join_faction = allies
-			war = {	
-				target = GER
-				attacker_goal = { casus_belli = conquer }
-			}
-			dissent = +7
-			national_unity = -5
-			neutrality = -40
-			set_country_flag = boers
-
-		}
-		option = {
-			name = "ACTION_NAME_NEUTRAL"
-			ai_chance = { factor = 10 }
-			SAF = { leave_faction = allies }
-			SAF = { leave_alliance = ENG }
-			GER = { kill_leader = 13110327 }                # Maritz does not defect to the Rebels, so not available to GER player
-			GER = { kill_leader = 13110328 }                # Beyers does not defect to the Rebels, so not available to GER player
-			national_unity = +1
-			neutrality = +80			   			    # To limit chance of quickly rejoining Faction and War  
-			relation = { who = ENG value = -50 }
-			GER = {threat = { who = SAF value = -60 }}
-			AUH = {threat = { who = SAF value = -40 }}
-		}
-}
-
-
- #### BOERS REVOLT ABOUT SOUTH AFRICA JOINING UK IN WAR AGAINST GERMANY ####
-
-country_event = {
-
-		id = 2008001
-		trigger = {
-			tag = SAF
-			war_with = GER
-			date = 1910.5.6
-			has_country_flag = boers
-			NOT = { has_country_flag = boer_rebellion }
-		}
-		
-		major = yes								
-		fire_only_once = yes						
-		
-		mean_time_to_happen = {days = 1}		     
-
-		title = "EVT1914_2008001_NAME"
-		desc = "EVT1914_2008001_DESC"			   
-		picture = "ENGP2"
-		
-		option = {
-			name = "ACTION_NAME_GREAT"	
-			set_country_flag = boer_rebellion		   								   
-			SAF = { kill_leader = 16510008 }           # Maritz defects to the Rebels
-			SAF = { kill_leader = 16510010 }           # de Wet defects to the Rebels
-			remove_minister = 425097				 # C. Beyers defects to the Rebels
-			chief_of_staff = 425096					 # J. Smuts takes over
-			GER = { load_oob = "Boer_1914.txt" }     # Load Boer Rebels under German control
-			8038 = {supplies = 500}                  # Give Rebels a supply dump, IRL life they resisted for about 6 months
-			10366 = {supplies = 500}
-			7996 = {supplies = 500}
-			7986 = {supplies = 500}
-		}
+ country_event = {
+	title = "EVT1914_2008000_NAME"
+	desc = "EVT1914_2008000_DESC"
+	id = 2008000
+	 
+	picture = "ENGP2"
+	 
+	is_triggered_only = yes
+	 
+	major = yes
+	 
+	option = {
+		 name = "ACTION_NAME_JOIN_ENTENTE"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 join_faction = allies
+		 war = {
+			 target = GER
+			 attacker_goal = {
+				 casus_belli = conquer
+				 }
+			 }
+		 dissent = +7
+		 national_unity = -5
+		 neutrality = -40
+		 set_country_flag = boers
+		 }
+	option = {
+		 name = "ACTION_NAME_NEUTRAL"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 SAF = {
+			 leave_faction = allies
+			 }
+		 SAF = {
+			 leave_alliance = ENG
+			 }
+		 GER = {
+			 kill_leader = 13110327
+			 }
+		 GER = {
+			 kill_leader = 13110328
+			 }
+		 national_unity = +1
+		 neutrality = +80
+		 relation = {
+			 who = ENG
+			 value = -50
+			 }
+		 GER = {
+			 threat = {
+				 who = SAF
+				 value = -60
+				 }
+			 }
+		 AUH = {
+			 threat = {
+				 who = SAF
+				 value = -40
+				 }
+			 }
+		 }
 	}
+
+#Boer Rebellion against South Africa
+
+# Maritz defects to the Rebels
+# de Wet defects to the Rebels
+# C. Beyers defects to the Rebels
+# J. Smuts takes over
+# Load Boer Rebels under German control
+# Give Rebels a supply dump, IRL life they resisted for about 6 months
+
+ country_event = {
+	title = "EVT1914_2008001_NAME"
+	desc = "EVT1914_2008001_DESC"
+	id = 2008001
+	 
+	picture = "ENGP2"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	major = yes
+	 
+	trigger = {
+		 tag = SAF
+		 war_with = GER
+		 date = 1910.5.6
+		 has_country_flag = boers
+		 NOT = {
+			 has_country_flag = boer_rebellion
+			 }
+		 }
+	option = {
+		 name = "ACTION_NAME_GREAT"
+		 set_country_flag = boer_rebellion
+		 SAF = {
+			 kill_leader = 16510008
+			 }
+		 SAF = {
+			 kill_leader = 16510010
+			 }
+		 remove_minister = 425097
+		 chief_of_staff = 425096
+		 GER = {
+			 load_oob = "Boer_1914.txt"
+			 }
+		 8038 = {
+			 supplies = 500
+			 }
+		 10366 = {
+			 supplies = 500
+			 }
+		 7996 = {
+			 supplies = 500
+			 }
+		 7986 = {
+			 supplies = 500
+			 }
+		 }
+	}
+

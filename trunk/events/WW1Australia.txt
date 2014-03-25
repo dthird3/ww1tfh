@@ -1,57 +1,66 @@
+#William Ward Replaced!
 
-country_event = {
+# Thomas Denman, 3rd Baron Denman
 
-		id = 100913
+ country_event = {
+	title = "ASTE1"
+	desc = "desc_ASTE1"
+	id = 100913
+	 
+	picture = "ASTP1"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	trigger = {
+		 tag = AST
+		 AST = {
+			 head_of_state = 999981
+			 }
+		 date = 1911.7.31
+		 }
+	option = {
+		 name = "opta_ASTE1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 head_of_state = 999980
+		 remove_minister = 999981
+		 }
+	}
 
-		trigger = {
-			tag = AST
-			AST = { head_of_state = 999981 }
-			date = 1911.7.31
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
-		
-		fire_only_once = yes
+#Thomas Denman Replaced!
 
-		title = "ASTE1"
-		desc = "desc_ASTE1"
-		picture = "ASTP1"
+# Ronald Munro-Ferguson
 
-		option = {
-			name = "opta_ASTE1"
-			ai_chance = { factor = 100 }
-			head_of_state = 999980 # Thomas Denman, 3rd Baron Denman
-			remove_minister  = 999981
-		}
-	
-}
-country_event = {
+ country_event = {
+	title = "ASTE2"
+	desc = "desc_ASTE2"
+	id = 100914
+	 
+	picture = "ASTP2"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	trigger = {
+		 tag = AST
+		 AST = {
+			 head_of_state = 999980
+			 }
+		 date = 1914.5.18
+		 }
+	option = {
+		 name = "opta_ASTE2"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 head_of_state = 225175
+		 remove_minister = 999980
+		 }
+	}
 
-		id = 100914
-
-		trigger = {
-			tag = AST
-			AST = { head_of_state = 999980 }
-			date = 1914.5.18
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
-		
-		fire_only_once = yes
-
-		title = "ASTE2"
-		desc = "desc_ASTE2"
-		picture = "ASTP2"
-
-		option = {
-			name = "opta_ASTE2"
-			ai_chance = { factor = 100 }
-			head_of_state = 225175 # Ronald Munro-Ferguson
-			remove_minister  = 999980
-		}
-	
-}

@@ -1,2341 +1,2500 @@
-#id = 3 #EVENTNAME: The Fall of Serbia *CONFIRMED
-#id = 4 #EVENTNAME: Central Power's proposal *CONFIRMED
-#id = 11 #EVENTNAME: A foot on Cape Helles *CONFIRMED
-#id = 12 #EVENTNAME: Seize Thessaloniki? *CONFIRMED
-#id = 13 #EVENTNAME: The Dardanelles' operation has failed *CONFIRMED
-#id = 84 #EVENTNAME: Ottoman Empire has fallen *CONFIRMED
-#id = 85 #EVENTNAME: Negotiate with Greece *CONFIRMED
-#id = 86 #EVENTNAME: Treaty of London signed! *CONFIRMED
-#id = 88 #EVENTNAME: The Gounalis plan *CONFIRMED
-#id = 89 #EVENTNAME: The Gounalis plan *CONFIRMED
-#id = 90 #EVENTNAME: Ask Greece for demobilization *CONFIRMED
-#id = 91 #EVENTNAME: Greece demobilizes! *CONFIRMED
-#id = 92 #EVENTNAME: Venizelos leaves Greek government *CONFIRMED
-#id = 93 #EVENTNAME: Venizelos is back *CONFIRMED
-#id = 96 #EVENTNAME: Greece grants Bulgaria military access *CONFIRMED
-#id = 97 #EVENTNAME: Athens on fire! *CONFIRMED
-#id = 98 #EVENTNAME: Renewed call for demobilization  *CONFIRMED
-#id = 99 #EVENTNAME: Greece accepts our demands  *CONFIRMED
-#id = 100 #EVENTNAME: The 'Vêpres Grecques'  *CONFIRMED
-#id = 101 #EVENTNAME: Ultimatum to Greece  *CONFIRMED
-#id = 138 #EVENTNAME: Austria-Hungary declares war on Serbia! *CONFIRMED
-#id = 139 #EVENTNAME: Austria-Hungary declares war on Serbia! *CONFIRMED
-#id = 140 #EVENTNAME: Bulgaria joins the Central Powers!  *CONFIRMED
-#id = 141 #EVENTNAME: Negotiation with the Entente  *CONFIRMED
-#id = 142 #EVENTNAME: Negotiation with the Entente  *CONFIRMED
-#id = 143 #EVENTNAME: King Konstantinos is sick! *CONFIRMED
-#id = 144 #EVENTNAME: King Konstantinos is back at its office *CONFIRMED
-#id = 145 #EVENTNAME: Greece and the Dardanelles *CONFIRMED
-#id = 146 #EVENTNAME: The Gounaris plan *CONFIRMED
-#id = 147 #EVENTNAME: Legislative elections, 1915 *CONFIRMED
-#id = 148 #EVENTNAME: Bulgaria joins the Central Powers! *CONFIRMED
-#id = 149 #EVENTNAME: The Entente seizes Thessaloniki *CONFIRMED
-#id = 150 #EVENTNAME: The Entente asks for demobilization *CONFIRMED
-#id = 151 #EVENTNAME: Anticipated Elections  *CONFIRMED
-#id = 152 #EVENTNAME: Serb refugees land on Corfu  *CONFIRMED
-#id = 153 #EVENTNAME: Grant Bulgaria military access?  *CONFIRMED
-#id = 154 #EVENTNAME: The Royal residence burns! *CONFIRMED
-#id = 155 #EVENTNAME: The Thessaloniki government *CONFIRMED
-#id = 156 #EVENTNAME: The Entente asks again for demobilization *CONFIRMED
-#id = 157 #EVENTNAME: The 'Vêpres Grecques' *CONFIRMED
-#id = 158 #EVENTNAME: Last warning from the Entente  *CONFIRMED
-#id = 160 #EVENTNAME: The Treaty of Athens *CONFIRMED
-#id = 161 #EVENTNAME: The Treaty of Athens  *CONFIRMED
-#id = 413 #EVENTNAME: The Fall of Serbia  *CONFIRMED
-#id = 414 #EVENTNAME: Bulgaria joins the Central Powers!  *CONFIRMED
-#id = 415 #EVENTNAME: Promises to Bulgaria  *CONFIRMED
-#id = 416 #EVENTNAME: Bulgaria joins the Central Powers!  *CONFIRMED
-#id = 479 #EVENTNAME: Agreement with Bulgaria  *CONFIRMED
-#id = 368 #EVENTNAME: Evacuate through Albania? *CONFIRMED
-#id = 369 #EVENTNAME: Evacuate through Albania! *CONFIRMED
-#id = 1 #EVENTNAME: Let Serbian troops retreat? *CONFIRMED
-#id = 2 #EVENTNAME: Greece proclaimed the annexation of Northern Epirus
-#id = 94 #EVENTNAME: Serbian army evacuate through Albania! 
+#The Fall of Serbia
 
 
-
-
-
-
-#Reaction to Fall of Serbia, whether to join in
-country_event = {
-id = 3
-title = "DH_EVENT_2020500_TITLE"
-desc = "DH_EVENT_2020500_DESC"
-picture = "diplomatic_campaign"
-
-trigger = { 
-tag = BUL
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2020500 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2020500_Option1"
-	ai_chance = { factor = 95
+ country_event = {
+	title = "DH_EVENT_2020500_TITLE"
+	desc = "DH_EVENT_2020500_DESC"
+	id = 3
+	 
+	picture = "diplomatic_campaign"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = BUL
+		 not = {
+			 has_global_flag = SLEEPEVENT_2020500
+			 }
 		 }
-	join_faction = axis
-	GER = { country_event = 414 }
-	
-set_global_flag = 2020500_EVENT_DONE
-
-}
-
-option = {
-	name = "DH_EVENT_2020500_Option2"
-	ai_chance = { factor = 5
+	option = {
+		 name = "DH_EVENT_2020500_Option1"
+		 ai_chance = {
+			 factor = 95
+			 }
+		 join_faction = axis
+		 GER = {
+			 country_event = 414
+			 }
+		 set_global_flag = 2020500_EVENT_DONE
 		 }
-	relation = { who = GER value = -15  }
-	
-set_global_flag = 2020500_EVENT_DONE
-
-}
-
-}
-#Promises to Bulgaria - bulgarian follow  up
-country_event = {
-id = 4
-title = "DH_EVENT_2020501_TITLE"
-desc = "DH_EVENT_2020501_DESC"
-picture = "diplomatic_campaign"
-
-trigger = { 
-tag = BUL
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2020501 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	ai_chance = { factor = 100
+	option = {
+		 name = "DH_EVENT_2020500_Option2"
+		 ai_chance = {
+			 factor = 5
+			 }
+		 relation = {
+			 who = GER
+			 value = -15
+			 }
+		 set_global_flag = 2020500_EVENT_DONE
 		 }
-	name = "DH_EVENT_2020501_Option1"
-	join_faction = axis
-	GER = { country_event = 414 }
-	
-set_global_flag = 2020501_EVENT_DONE
+	}
 
-}
+#Central Power's proposal
 
-option = {
-	ai_chance = { factor = 0
+
+ country_event = {
+	title = "DH_EVENT_2020501_TITLE"
+	desc = "DH_EVENT_2020501_DESC"
+	id = 4
+	 
+	picture = "diplomatic_campaign"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = BUL
+		 not = {
+			 has_global_flag = SLEEPEVENT_2020501
+			 }
 		 }
-	name = "DH_EVENT_2020501_Option2"
-	relation = { who = GER value = -15  }
-	
-set_global_flag = 2020501_EVENT_DONE
-
-}
-
-}
-
+	option = {
+		 ai_chance = {
+			 factor = 100
+			 }
+		 name = "DH_EVENT_2020501_Option1"
+		 join_faction = axis
+		 GER = {
+			 country_event = 414
+			 }
+		 set_global_flag = 2020501_EVENT_DONE
+		 }
+	option = {
+		 ai_chance = {
+			 factor = 0
+			 }
+		 name = "DH_EVENT_2020501_Option2"
+		 relation = {
+			 who = GER
+			 value = -15
+			 }
+		 set_global_flag = 2020501_EVENT_DONE
+		 }
+	}
 
 #A foot on Cape Helles
-country_event = {
-id = 11
-title = "DH_EVENT_2001505_TITLE"
-desc = "DH_EVENT_2001505_DESC"
-picture = "varyag"
 
-trigger = {
-	#has_global_flag = 2001502_EVENT_DONE
-	not = {
-		 4560 = { controlled_by = TUR }
+
+ country_event = {
+	title = "DH_EVENT_2001505_TITLE"
+	desc = "DH_EVENT_2001505_DESC"
+	id = 11
+	 
+	picture = "varyag"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 1
 		 }
-	
-tag = ENG
-date = 1914.1.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2001505 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  1 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2001505_Option1"
-	dissent = -1 
-	set_global_flag = SLEEPEVENT_2001506 
-	set_global_flag = SLEEPEVENT_2001507 
-	
-set_global_flag = 2001505_EVENT_DONE
-
-}
-
-}
-#Follow Up to putting pressure on greece over Thessaloniki
-country_event = {
-id = 12
-title = "DH_EVENT_2001506_TITLE"
-desc = "DH_EVENT_2001506_DESC"
-picture = "varyag"
-
-trigger = {
-	#has_global_flag = 2001502_EVENT_DONE
-	ENG = { war_with = TUR }
-	not = {
-		#has_global_flag = 2145501_EVENT_DONE
-		GRE = { faction = allies }
-		ENG = { war_with = GRE }
-		}
-	
-tag = ENG
-date = 1914.1.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2001506 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  15 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2001506_Option1"
-	GRE = { country_event = 149 }
-	dissent = -2 
-	relation = { who = GRE value = -20  }
-	
-set_global_flag = 2001506_EVENT_DONE
-4720 = { secede_province = ENG }
-4720 = { change_controller = ENG } 
-ENG = { remove_core = 4720 } 
-}
-
-option = {
-	name = "DH_EVENT_2001506_Option2"
-	dissent = -2 
-	relation = { who = GRE value = 5  }
-	
-set_global_flag = 2001506_EVENT_DONE
-
-}
-
-}
-#The Dardanelles' operation has failed
-country_event = {
-id = 13
-title = "DH_EVENT_2001507_TITLE"
-desc = "DH_EVENT_2001507_DESC"
-picture = "varyag"
-
-trigger = {
-	#has_global_flag = 2001503_EVENT_DONE
-	ENG = { war_with = TUR }
-	4503 = { controlled_by = TUR }
-	
-tag = ENG
-date = 1915.12.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2001507 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  15 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2001507_Option1"
-	dissent = 3 
-	
-set_global_flag = 2001507_EVENT_DONE
-
-}
-
-}
-#Follow up to French asking after Ottoman falls
-country_event = {
-id = 84
-title = "DH_EVENT_2002507_TITLE"
-desc = "DH_EVENT_2002507_DESC"
-picture = "news_paper"
-
-trigger = {
-	exists = GRE
-	FRA = { war_with = AUH }
-	not = { 4503 = { controlled_by = TUR } }
-	not = {
-		GRE = { faction = allies }
-		GRE = { faction = axis }
-		FRA = { war_with = TUR }
-		#has_global_flag = 2002527_EVENT_DONE
-		#has_global_flag = 2002528_EVENT_DONE
-		}
-	2613 = { controlled_by = FRA }
-	
-tag = FRA
-date = 1914.1.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2002507 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  5 }
-
-is_triggered_only = yes
-option = {
-	ai_chance = { factor = 95
-		 }
-	name = "DH_EVENT_2002507_Option1"
-	GRE = { country_event = 139 }
-	
-set_global_flag = 2002507_EVENT_DONE
-
-}
-
-option = {
-	ai_chance = { factor = 5
-		 }
-	name = "DH_EVENT_2002507_Option2"
-	#Removed Blank command
-	
-set_global_flag = 2002507_EVENT_DONE
-
-}
-
-}
-#Follow up to initial French decision to put pressure on
-country_event = {
-id = 85
-title = "DH_EVENT_2002508_TITLE"
-desc = "DH_EVENT_2002508_DESC"
-picture = "news_paper"
-
-trigger = {
-	#has_global_flag = 2104500_EVENT_DONE
-	exists = GRE
-	FRA = { war_with = AUH }
-	not = {
-		GRE = { faction = axis }
-		GRE = { faction = allies }
-		}
-				and = {
-		exists = SER
-		not = { SER = { government_in_exile = yes } }
-		}
-	not = {
-		TUR = { war_with = FRA }
-	}
-	
-tag = FRA
-date = 1914.1.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2002508 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  15 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2002508_Option7"
-	random_country = { limit = { tag = THIS 
-			 not = {
-				 BUL = { faction = axis }
-				 }  } 
-		GRE = { country_event = 142 }
-		 }
-	random_country = { limit = { tag = THIS 
-			 BUL = { faction = axis }
-			  } 
-		GRE = { country_event = 141 }
-		 }
-	
-set_global_flag = 2002508_EVENT_DONE
-
-}
-
-option = { 
-	name = "DH_EVENT_2002508_Option8"
-	ai_chance = { factor = 0
-		 }
-	#Removed Blank command
-	
-set_global_flag = 2002508_EVENT_DONE
-
-}
-
-}
-#Greece Joins the entente
-country_event = {
-id = 86
-title = "DH_EVENT_2002509_TITLE"
-desc = "DH_EVENT_2002509_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = FRA
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2002509 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2002509_Option7"
-	relation = { who = GRE value = 50  }
-	
-set_global_flag = 2002509_EVENT_DONE
-
-}
-
-}
-
-#Gounaris plan follow up, bulgaria neutral
-country_event = {
-id = 88
-title = "DH_EVENT_2002511_TITLE"
-desc = "DH_EVENT_2002511_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = FRA
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2002511 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2002511_Option1"
-	ai_chance = { factor = 5
-		 }
-	GRE = { join_faction = allies }
-	
-set_global_flag = 2002511_EVENT_DONE
-
-}
-
-option = {
-	ai_chance = { factor = 95
-		 }
-	name = "DH_EVENT_2002511_Option2"
-	relation = { who = GRE value = -10  }
-	
-set_global_flag = 2002511_EVENT_DONE
-
-}
-
-}
-#Gounaris plan follow up, bulgaria not neutral
-country_event = {
-id = 89
-title = "DH_EVENT_2002512_TITLE"
-desc = "DH_EVENT_2002512_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = FRA
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2002512 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2002512_Option1"
-	ai_chance = { factor = 95
-		 }
-	GRE = { join_faction = allies }
-	
-set_global_flag = 2002512_EVENT_DONE
-
-}
-
-option = {
-	ai_chance = { factor = 5
-		 }
-	name = "DH_EVENT_2002512_Option2"
-	relation = { who = GRE value = -10  }
-	
-set_global_flag = 2002512_EVENT_DONE
-
-}
-
-}
-#Follow up to asking greece to demobilize
-country_event = {
-id = 90
-title = "DH_EVENT_2002513_TITLE"
-desc = "DH_EVENT_2002513_DESC"
-picture = "news_paper"
-
-trigger = {
-	exists = GRE
-	has_global_flag = 2019510_EVENT_DONE
-	has_global_flag= greece_mobilized
-	FRA = { war_with = AUH }
-	not = {
-		GRE = { faction = allies }
-		GRE = { faction = axis }
-		}
-	
-tag = FRA
-date = 1914.1.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2002513 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  15 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2002513_Option1"
-	ai_chance = { factor = 100
-		 }
-	relation = { who = GRE value = -5  }
-	GRE = { country_event = 150 }
-	
-set_global_flag = 2002513_EVENT_DONE
-
-}
-
-option = {
-	name = "DH_EVENT_2002513_Option2"
-	ai_chance = { factor = 0
-		 }
-	relation = { who = GRE value = 5  }
-	
-set_global_flag = 2002513_EVENT_DONE
-
-}
-
-}
-#Greece have demobilized
-country_event = {
-id = 91
-title = "DH_EVENT_2002514_TITLE"
-desc = "DH_EVENT_2002514_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = FRA
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2002514 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2002514_Option7"
-	relation = { who = GRE value = 15  }
-	
-set_global_flag = 2002514_EVENT_DONE
-
-}
-
-}
-
-country_event = {
-id = 92
-title = "DH_EVENT_2002516_TITLE"
-desc = "DH_EVENT_2002516_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = FRA
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2002516 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2002516_Option7"
-	relation = { who = GRE value = -5  }
-	
-set_global_flag = 2002516_EVENT_DONE
-
-}
-
-}
-
-country_event = {
-id = 93
-title = "DH_EVENT_2002517_TITLE"
-desc = "DH_EVENT_2002517_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = FRA
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2002517 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2002517_Option7"
-	relation = { who = GRE value = 5  }
-	
-set_global_flag = 2002517_EVENT_DONE
-
-}
-
-}
-
-
-
-country_event = {
-id = 96
-title = "DH_EVENT_2002520_TITLE"
-desc = "DH_EVENT_2002520_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = FRA
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2002520 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2002520_Option7"
-	ai_chance = { factor = 100
-		 }
-	relation = { who = GRE value = -15  }
-	
-set_global_flag = 2002520_EVENT_DONE
-
-}
-
-}
-
-country_event = {
-id = 97
-title = "DH_EVENT_2002521_TITLE"
-desc = "DH_EVENT_2002521_DESC"
-picture = "news_paper"
-
-trigger = {
-	exists = GRE
-	has_global_flag= entente_hostility
-	FRA = { war_with = AUH }
-	not = {
-		GRE = { faction = allies }
-		GRE = { faction = axis }
-		#has_global_flag = 2002527_EVENT_DONE
-		#has_global_flag = 2002528_EVENT_DONE
-		}
-	
-tag = FRA
-date = 1914.1.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2002521 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  7 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2002521_Option1"
-	ai_chance = { factor = 100
-		 }
-	GRE = { country_event = 154 }
-	
-set_global_flag = 2002521_EVENT_DONE
-
-}
-
-option = {
-	name = "DH_EVENT_2002521_Option2"
-	ai_chance = { factor = 0
-		 }
-	relation = { who = GRE value = 5  }
-	
-set_global_flag = 2002521_EVENT_DONE
-
-}
-
-}
-#Follow up to renewed call for greek demobilization
-country_event = {
-id = 98
-title = "DH_EVENT_2002522_TITLE"
-desc = "DH_EVENT_2002522_DESC"
-picture = "news_paper"
-
-trigger = {
-	exists = GRE
-	has_global_flag= entente_hostility
-	has_global_flag= greece_mobilized
-	has_global_flag = 2019518_EVENT_DONE
-	FRA = { war_with = AUH }
-	not = {
-		GRE = { faction = allies }
-		GRE = { faction = axis }
-		#has_global_flag = 2002527_EVENT_DONE
-		#has_global_flag = 2002528_EVENT_DONE
-		}
-	
-tag = FRA
-date = 1914.1.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2002522 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  7 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2002522_Option1"
-	ai_chance = { factor = 100
-		 }
-	GRE = { country_event = 156 }
-	
-set_global_flag = 2002522_EVENT_DONE
-
-}
-
-option = {
-	name = "DH_EVENT_2002522_Option2"
-	ai_chance = { factor = 0
-		 }
-	relation = { who = GRE value = 5  }
-	
-set_global_flag = 2002522_EVENT_DONE
-
-}
-
-}
-#Greece agrees to demobilize
-country_event = {
-id = 99
-title = "DH_EVENT_2002523_TITLE"
-desc = "DH_EVENT_2002523_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = FRA
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2002523 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2002523_Option7"
-	ai_chance = { factor = 100
-		 }
-	relation = { who = GRE value = 15  }
-	# MANUALFIX secede area command = { type = secedearea which = GRE value = "Thrace" }
-	# MANUALFIX secede area command = { type = secedearea which = GRE value = "Attica" }
-	# MANUALFIX secede area command = { type = secedearea which = GRE value = "Greek Island" }
-	
-set_global_flag = 2002523_EVENT_DONE
-
-}
-
-}
-
-country_event = {
-id = 100
-title = "DH_EVENT_2002524_TITLE"
-desc = "DH_EVENT_2002524_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = FRA
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2002524 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2002524_Option7"
-	ai_chance = { factor = 100
-		 }
-	dissent = 1 
-	
-set_global_flag = 2002524_EVENT_DONE
-
-}
-
-}
-#Ultimatum to greece follow up
-country_event = {
-id = 101
-title = "DH_EVENT_2002533_TITLE"
-desc = "DH_EVENT_2002533_DESC"
-picture = "news_paper"
-
-trigger = {
-	exists = GRE
-	has_global_flag= entente_hostility
-	has_global_flag= greece_mobilized
-	##has_global_flag = 2104530_EVENT_DONE
-	has_global_flag = 2002523_EVENT_DONE
-	FRA = { war_with = AUH }
-	not = {
-		GRE = { faction = allies }
-		GRE = { faction = axis }
-		#has_global_flag = 2002527_EVENT_DONE
-		#has_global_flag = 2002528_EVENT_DONE
-		}
-	
-tag = FRA
-date = 1914.1.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2002533 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  5 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2002533_Option1"
-	ai_chance = { factor = 100
-		 }
-	GRE = { country_event = 158 }
-	
-set_global_flag = 2002533_EVENT_DONE
-
-}
-
-option = {
-	name = "DH_EVENT_2002533_Option2"
-	ai_chance = { factor = 0
-		 }
-	relation = { who = GRE value = 5  }
-	
-set_global_flag = 2002533_EVENT_DONE
-
-}
-
-}
-
-country_event = {
-id = 138
-title = "DH_EVENT_2019501_TITLE"
-desc = "DH_EVENT_2019501_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = GRE
-
-AUH = { war_with = SER }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2019501 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2019501_Option1"
-	ai_chance = { factor = 100
-		 }
-	dissent = 3 
-	
-set_global_flag = 2019501_EVENT_DONE
-
-}
-
-option = {
-	ai_chance = { factor = 0
-		 }
-	name = "DH_EVENT_2019501_Option2"
-	dissent = 5 
-	create_alliance = SER
-war = {
-	target = AUH
-}
-
-	
-set_global_flag = 2019501_EVENT_DONE
-
-}
-
-}
-#Greece deciding once Ottoman falls
-country_event = {
-id = 139
-title = "DH_EVENT_2019502_TITLE"
-desc = "DH_EVENT_2019502_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = GRE
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2019502 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	ai_chance = { factor = 90
-		 }
-	name = "DH_EVENT_2019502_Option1"
-	dissent = 3 
-	join_faction = allies
-	
-set_global_flag = 2019502_EVENT_DONE
-
-}
-
-option = {
-	ai_chance = { factor = 10
-		 }
-	name = "DH_EVENT_2019502_Option2"
-	dissent = 5 
-	
-set_global_flag = 2019502_EVENT_DONE
-
-}
-
-}
-#Reaction to Bulgaria joining axis
-country_event = {
-id = 140
-title = "DH_EVENT_2019503_TITLE"
-desc = "DH_EVENT_2019503_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = GRE
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2019503 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2019503_Option1"
-	ai_chance = { factor = 95
-		 }
-	dissent = 5 
-	
-set_global_flag = 2019503_EVENT_DONE
-
-}
-
-option = {
-	ai_chance = { factor = 5
-		 }
-	name = "DH_EVENT_2019503_Option2"
-	dissent = 5 
-	create_alliance = SER
-	
-set_global_flag = 2019503_EVENT_DONE
-
-}
-
-}
-#Greek reaction to French pressure when bulgaria is in axis
-country_event = {
-id = 141
-title = "DH_EVENT_2019504_TITLE"
-desc = "DH_EVENT_2019504_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = GRE
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2019504 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2019504_Option1"
-	ai_chance = { factor = 90
-		 }
-	FRA = { country_event = 86 }
-	dissent = 3 
-	join_faction = allies
-	
-set_global_flag = 2019504_EVENT_DONE
-
-}
-
-option = {
-	name = "DH_EVENT_2019504_Option2"
-	ai_chance = { factor = 10
-		 }
-	dissent = 5 
-	
-set_global_flag = 2019504_EVENT_DONE
-
-}
-
-}
-#Greek reaction to French pressure when Bulgaria not in axis
-country_event = {
-id = 142
-title = "DH_EVENT_2019505_TITLE"
-desc = "DH_EVENT_2019505_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = GRE
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2019505 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2019505_Option1"
-	ai_chance = { factor = 5
-		 }
-	dissent = 3 
-	join_faction = allies
-	FRA = { country_event = 86 }
-	
-set_global_flag = 2019505_EVENT_DONE
-
-}
-
-option = {
-	name = "DH_EVENT_2019505_Option2"
-	ai_chance = { factor = 95
-		 }
-	dissent = 5 
-	
-set_global_flag = 2019505_EVENT_DONE
-
-}
-
-}
-#King Konstantinos is sick!
-country_event = {
-id = 143
-title = "DH_EVENT_2019506_TITLE"
-desc = "DH_EVENT_2019506_DESC"
-picture = "news_paper"
-
-trigger = {
-	
-tag = GRE
-date = 1915.4.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2019506 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  15 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2019506_Option7"
-	dissent = 1 
-	
-set_global_flag = 2019506_EVENT_DONE
-
-}
-
-}
-#King Konstantinos is back at its office
-country_event = {
-id = 144
-title = "DH_EVENT_2019507_TITLE"
-desc = "DH_EVENT_2019507_DESC"
-picture = "news_paper"
-
-trigger = {
-	has_global_flag = 2019505_EVENT_DONE
-	
-tag = GRE
-date = 1915.8.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2019507 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  13 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2019507_Option7"
-	dissent = -2 
-	
-set_global_flag = 2019507_EVENT_DONE
-
-}
-
-}
-#Greece and the Dardanelles
-country_event = {
-id = 145
-title = "DH_EVENT_2019508_TITLE"
-desc = "DH_EVENT_2019508_DESC"
-picture = "news_paper"
-
-trigger = {
-	#has_global_flag = 2001502_EVENT_DONE
-	not = {
-		has_global_flag = 2002508_EVENT_DONE
-		GRE = { faction = allies }
-		}
-		ENG = { war_with = TUR }
-	
-tag = GRE
-date = 1914.1.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2019508 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  5 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2019508_Option1"
-	ai_chance = { factor = 95
-		 }
-	dissent = 4 
-	FRA = { country_event = 92 }
-	clr_global_flag = venizelos_incabinet 
-	head_of_government = 90178
-	
-set_global_flag = 2019508_EVENT_DONE
-
-}
-
-option = {
-	ai_chance = { factor = 5
-		 }
-	name = "DH_EVENT_2019508_Option2"
-	dissent = 5 
-	join_faction = allies
-
-	
-set_global_flag = 2019508_EVENT_DONE
-
-}
-
-}
-#Gounaris plan follow up
-country_event = {
-id = 146
-title = "DH_EVENT_2019509_TITLE"
-desc = "DH_EVENT_2019509_DESC"
-picture = "news_paper"
-
-trigger = {
-	has_global_flag = 2019505_EVENT_DONE
-	not = {
-		head_of_government = 90010
-		has_global_flag= venizelos_incabinet
-		has_global_flag = 2019506_EVENT_DONE
-		GRE = { faction = axis }
-		GRE = { faction = allies }
-		FRA = { war_with = GRE }
-		}
-	
-tag = GRE
-date = 1915.1.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2019509 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  3 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2019509_Option1"
-	random_country = { limit = { tag = FRA 
-			 not = {
-				 FRA = { war_with = BUL }
-				 }  } 
-		FRA = { country_event = 88 }
-		 }
-	random_country = { limit = { tag = FRA 
-			or = {
-				FRA = { war_with = BUL }
-				BUL = { faction = allies }
-				}
-			 } 
-		FRA = { country_event = 89 }
-		 }
-	
-set_global_flag = 2019509_EVENT_DONE
-
-}
-
-}
-#Legislative elections, 1915
-country_event = {
-id = 147
-title = "DH_EVENT_2019510_TITLE"
-desc = "DH_EVENT_2019510_DESC"
-picture = "news_paper"
-
-trigger = {
-	not = {
-		has_global_flag= venizelos_incabinet
-		has_global_flag = 2002508_EVENT_DONE
-		}
-	
-tag = GRE
-date = 1915.6.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2019510 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  7 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2019510_Option7"
-	dissent = -2 
-	FRA = { country_event = 93 }
-	set_global_flag = venizelos_incabinet 
-	head_of_government = 90010
-	
-set_global_flag = 2019510_EVENT_DONE
-
-}
-
-}
-#Bulgaria joins the Central Powers!
-country_event = {
-id = 148
-title = "DH_EVENT_2019511_TITLE"
-desc = "DH_EVENT_2019511_DESC"
-picture = "news_paper"
-
-trigger = {
-	#has_global_flag = 2191508_EVENT_DONE
-	war = no
-	BUL = { faction = axis }
-	
-tag = GRE
-date = 1914.1.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2019511 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  2 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2019511_Option1"
-	ai_chance = { factor = 2
-		 }
-	dissent = 4 
-	join_faction = allies
-
-	
-set_global_flag = 2019511_EVENT_DONE
-
-}
-
-option = {
-	name = "DH_EVENT_2019511_Option2"
-	ai_chance = { factor = 95
-		 }
-	dissent = 1 
-
-	set_global_flag = greece_mobilized 
-	
-set_global_flag = 2019511_EVENT_DONE
-
-}
-
-option = {
-	name = "DH_EVENT_2019511_Option3"
-	ai_chance = { factor = 3
-		 }
-	dissent = 3 
-	
-set_global_flag = 2019511_EVENT_DONE
-
-}
-
-}
-#Greece Reaction to Thessaloniki pressure
-country_event = {
-id = 149
-title = "DH_EVENT_2019512_TITLE"
-desc = "DH_EVENT_2019512_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = GRE
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2019512 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2019512_Option1"
-	ai_chance = { factor = 100
-		 }
-	dissent = 4 
-	
-set_global_flag = 2019512_EVENT_DONE
-
-}
-
-option = {
-	name = "DH_EVENT_2019512_Option2"
-	ai_chance = { factor = 0
-		 }
-	dissent = 5 
-	join_faction = allies
-	
-set_global_flag = 2019512_EVENT_DONE
-
-}
-
-}
-#France asks greece to demobilize, what is the reaction?
-country_event = {
-id = 150
-title = "DH_EVENT_2019513_TITLE"
-desc = "DH_EVENT_2019513_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = GRE
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2019513 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2019513_Option1"
-	ai_chance = { factor = 100
-		 }
-	relation = { who = FRA value = -10  }
-	
-set_global_flag = 2019513_EVENT_DONE
-
-}
-
-option = {
-	name = "DH_EVENT_2019513_Option2"
-	ai_chance = { factor = 0
-		 }
-	dissent = 1 
-	FRA = { country_event = 91 }
-	clr_global_flag = greece_mobilized 
-	relation = { who = FRA value = 10  }
-	
-set_global_flag = 2019513_EVENT_DONE
-
-}
-
-}
-#Anticipated Elections
-country_event = {
-id = 151
-title = "DH_EVENT_2019514_TITLE"
-desc = "DH_EVENT_2019514_DESC"
-picture = "news_paper"
-
-trigger = {
-	has_global_flag = 2001506_EVENT_DONE
-	has_global_flag= venizelos_incabinet
-	not = {
-		GRE = { faction = allies }
-		GRE = { faction = axis }
-		}
-	
-tag = GRE
-date = 1916.1.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2019514 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  7 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2019514_Option1"
-	ai_chance = { factor = 100
-		 }
-	dissent = 1 
-	clr_global_flag = venizelos_incabinet 
-	head_of_government = 90199
-	FRA = { country_event = 92 }
-	
-set_global_flag = 2019514_EVENT_DONE
-
-}
-
-option = {
-	name = "DH_EVENT_2019514_Option2"
-	ai_chance = { factor = 0
-		 }
-	#Removed Blank command
-	
-set_global_flag = 2019514_EVENT_DONE
-
-}
-
-}
-#Serb refugees land on Corfu
-country_event = {
-id = 152
-title = "DH_EVENT_2019515_TITLE"
-desc = "DH_EVENT_2019515_DESC"
-picture = "news_paper"
-
-trigger = {
-	has_global_flag = 2084503_EVENT_DONE
-	not = {
-		 GRE = { faction = allies }
-		 }
-		 		and = {
-		exists = SER
-		not = { SER = { government_in_exile = yes } }
-		}
-	
-tag = GRE
-date = 1914.1.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2019515 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  15 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2019515_Option1"
-	ai_chance = { factor = 100
-		 }
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= venizelos_incabinet
-			  } 
-		dissent = 1 
-		 }
-	relation = { who = SER value = -15  }
-	random_country = { limit = { tag = THIS 
-			 exists = ALB
-			  } 
-		relation = { who = ALB value = -15  }
-		 }
-	
-set_global_flag = 2019515_EVENT_DONE
-
-}
-
-option = {
-	name = "DH_EVENT_2019515_Option2"
-	ai_chance = { factor = 0
-		 }
-	random_country = { limit = { tag = THIS 
-			 not = {
-				 has_global_flag= venizelos_incabinet
-				 }  } 
-		dissent = 1 
-		 }
-	relation = { who = SER value = 5  }
-	random_country = { limit = { tag = THIS 
-			 exists = ALB
-			  } 
-		relation = { who = ALB value = 5  }
-		 }
-	
-set_global_flag = 2019515_EVENT_DONE
-
-}
-
-}
-#Grant Bulgaria military access?
-country_event = {
-id = 153
-title = "DH_EVENT_2019517_TITLE"
-desc = "DH_EVENT_2019517_DESC"
-picture = "news_paper"
-
-trigger = {
-	#has_global_flag = 2019515_EVENT_DONE
-	has_global_flag = 2019511_EVENT_DONE
-	FRA = { war_with = BUL }
-	not = {
-		 GRE = { faction = allies }
-		 }
-	
-tag = GRE
-date = 1914.1.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2019517 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  15 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2019517_Option1"
-	ai_chance = { factor = 100
-		 }
-	set_global_flag = entente_hostility 
-	FRA = { country_event = 96 }
-	
-set_global_flag = 2019517_EVENT_DONE
-
-}
-
-option = {
-	name = "DH_EVENT_2019517_Option2"
-	ai_chance = { factor = 0
-		 }
-	#Removed Blank command
-	
-set_global_flag = 2019517_EVENT_DONE
-
-}
-
-}
-
-country_event = {
-id = 154
-title = "DH_EVENT_2019518_TITLE"
-desc = "DH_EVENT_2019518_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = GRE
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2019518 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2019518_Option7"
-	ai_chance = { factor = 100
-		 }
-	dissent = 3 
-	relation = { who = FRA value = -20  }
-	
-set_global_flag = 2019518_EVENT_DONE
-
-}
-
-}
-#The Thessaloniki government
-country_event = {
-id = 155
-title = "DH_EVENT_2019519_TITLE"
-desc = "DH_EVENT_2019519_DESC"
-picture = "news_paper"
-
-trigger = {
-	has_global_flag = 2019517_EVENT_DONE
-	head_of_government = 90199
-	4720 = { controlled_by = ENG }
-	
-tag = GRE
-date = 1914.1.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2019519 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  15 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2019519_Option7"
-	ai_chance = { factor = 100
-		 }
-	dissent = 4 
-	relation = { who = FRA value = -50  }
-	
-set_global_flag = 2019519_EVENT_DONE
-
-}
-
-}
-#France again asks for demobilization
-country_event = {
-id = 156
-title = "DH_EVENT_2019520_TITLE"
-desc = "DH_EVENT_2019520_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = GRE
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2019520 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2019520_Option1"
-	ai_chance = { factor = 100
-		 }
-	FRA = { country_event = 99 }
-
-	relation = { who = FRA value = 15  }
-	
-set_global_flag = 2019520_EVENT_DONE
-
-}
-
-option = {
-	name = "DH_EVENT_2019520_Option2"
-	ai_chance = { factor = 0
-		 }
-	dissent = 5 
-	war = { target = FRA }
-	
-set_global_flag = 2019520_EVENT_DONE
-
-}
-
-}
-#The 'Vêpres Grecques'
-country_event = {
-id = 157
-title = "DH_EVENT_2019521_TITLE"
-desc = "DH_EVENT_2019521_DESC"
-picture = "news_paper"
-
-trigger = {
-	has_global_flag = 2002522_EVENT_DONE
-	
-tag = GRE
-date = 1914.1.1
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2019521 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  30 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2019521_Option1"
-	ai_chance = { factor = 100
-		 }
-	country_event = 100
-	
-set_global_flag = 2019521_EVENT_DONE
-
-}
-
-option = {
-	name = "DH_EVENT_2019521_Option2"
-	ai_chance = { factor = 0
-		 }
-	dissent = 5 
-	
-set_global_flag = 2019521_EVENT_DONE
-
-}
-
-}
-#Follow up to French ultimatum
-country_event = {
-id = 158
-title = "DH_EVENT_2019522_TITLE"
-desc = "DH_EVENT_2019522_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = GRE
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2019522 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2019522_Option1"
-	ai_chance = { factor = 100
-		 }
-	dissent = 3 
-	join_faction = allies
-	clr_global_flag = entente_hostility 
-	clr_global_flag = greece_mobilized 
-	head_of_state = 90211
-	head_of_government = 90010
-	relation = { who = FRA value = 50  }
-	
-set_global_flag = 2019522_EVENT_DONE
-
-}
-
-option = {
-	name = "DH_EVENT_2019522_Option2"
-	ai_chance = { factor = 0
-		 }
-	dissent = 5 
-	random_country = { limit = { tag = THIS 
-			FRA = { war_with = AUH }
-			not = {
-				 AUH = { war_with = GRE }
+	trigger = {
+		 not = {
+			 4560 = {
+				 controlled_by = TUR
 				 }
-			 } 
-		join_faction = axis
+			 }
+		 tag = ENG
+		 date = 1914.1.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2001505
+			 }
 		 }
-	
-set_global_flag = 2019522_EVENT_DONE
+	option = {
+		 name = "DH_EVENT_2001505_Option1"
+		 dissent = -1
+		 set_global_flag = SLEEPEVENT_2001506
+		 set_global_flag = SLEEPEVENT_2001507
+		 set_global_flag = 2001505_EVENT_DONE
+		 }
+	}
 
-}
+#Seize Thessaloniki?
 
-}
 
+ country_event = {
+	title = "DH_EVENT_2001506_TITLE"
+	desc = "DH_EVENT_2001506_DESC"
+	id = 12
+	 
+	picture = "varyag"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 15
+		 }
+	trigger = {
+		 ENG = {
+			 war_with = TUR
+			 }
+		 not = {
+			 GRE = {
+				 faction = allies
+				 }
+			 ENG = {
+				 war_with = GRE
+				 }
+			 }
+		 tag = ENG
+		 date = 1914.1.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2001506
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2001506_Option1"
+		 GRE = {
+			 country_event = 149
+			 }
+		 dissent = -2
+		 relation = {
+			 who = GRE
+			 value = -20
+			 }
+		 set_global_flag = 2001506_EVENT_DONE
+		 4720 = {
+			 secede_province = ENG
+			 }
+		 4720 = {
+			 change_controller = ENG
+			 }
+		 ENG = {
+			 remove_core = 4720
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2001506_Option2"
+		 dissent = -2
+		 relation = {
+			 who = GRE
+			 value = 5
+			 }
+		 set_global_flag = 2001506_EVENT_DONE
+		 }
+	}
+
+#The Dardanelles' operation has failed
+
+
+ country_event = {
+	title = "DH_EVENT_2001507_TITLE"
+	desc = "DH_EVENT_2001507_DESC"
+	id = 13
+	 
+	picture = "varyag"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 15
+		 }
+	trigger = {
+		 ENG = {
+			 war_with = TUR
+			 }
+		 4503 = {
+			 controlled_by = TUR
+			 }
+		 tag = ENG
+		 date = 1915.12.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2001507
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2001507_Option1"
+		 dissent = 3
+		 set_global_flag = 2001507_EVENT_DONE
+		 }
+	}
+
+#Ottoman Empire has fallen
+
+
+ country_event = {
+	title = "DH_EVENT_2002507_TITLE"
+	desc = "DH_EVENT_2002507_DESC"
+	id = 84
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 5
+		 }
+	trigger = {
+		 exists = GRE
+		 FRA = {
+			 war_with = AUH
+			 }
+		 not = {
+			 4503 = {
+				 controlled_by = TUR
+				 }
+			 }
+		 not = {
+			 GRE = {
+				 faction = allies
+				 }
+			 GRE = {
+				 faction = axis
+				 }
+			 FRA = {
+				 war_with = TUR
+				 }
+			 }
+		 2613 = {
+			 controlled_by = FRA
+			 }
+		 tag = FRA
+		 date = 1914.1.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2002507
+			 }
+		 }
+	option = {
+		 ai_chance = {
+			 factor = 95
+			 }
+		 name = "DH_EVENT_2002507_Option1"
+		 GRE = {
+			 country_event = 139
+			 }
+		 set_global_flag = 2002507_EVENT_DONE
+		 }
+	option = {
+		 ai_chance = {
+			 factor = 5
+			 }
+		 name = "DH_EVENT_2002507_Option2"
+		 set_global_flag = 2002507_EVENT_DONE
+		 }
+	}
+
+#Negotiate with Greece
+
+
+ country_event = {
+	title = "DH_EVENT_2002508_TITLE"
+	desc = "DH_EVENT_2002508_DESC"
+	id = 85
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 15
+		 }
+	trigger = {
+		 exists = GRE
+		 FRA = {
+			 war_with = AUH
+			 }
+		 not = {
+			 GRE = {
+				 faction = axis
+				 }
+			 GRE = {
+				 faction = allies
+				 }
+			 }
+		 and = {
+			 exists = SER
+			 not = {
+				 SER = {
+					 government_in_exile = yes
+					 }
+				 }
+			 }
+		 not = {
+			 TUR = {
+				 war_with = FRA
+				 }
+			 }
+		 tag = FRA
+		 date = 1914.1.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2002508
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2002508_Option7"
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 not = {
+					 BUL = {
+						 faction = axis
+						 }
+					 }
+				 }
+			 GRE = {
+				 country_event = 142
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 BUL = {
+					 faction = axis
+					 }
+				 }
+			 GRE = {
+				 country_event = 141
+				 }
+			 }
+		 set_global_flag = 2002508_EVENT_DONE
+		 }
+	option = {
+		 name = "DH_EVENT_2002508_Option8"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 set_global_flag = 2002508_EVENT_DONE
+		 }
+	}
+
+#Treaty of London signed!
+
+
+ country_event = {
+	title = "DH_EVENT_2002509_TITLE"
+	desc = "DH_EVENT_2002509_DESC"
+	id = 86
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = FRA
+		 not = {
+			 has_global_flag = SLEEPEVENT_2002509
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2002509_Option7"
+		 relation = {
+			 who = GRE
+			 value = 50
+			 }
+		 set_global_flag = 2002509_EVENT_DONE
+		 }
+	}
+
+#The Gounalis plan
+
+
+ country_event = {
+	title = "DH_EVENT_2002511_TITLE"
+	desc = "DH_EVENT_2002511_DESC"
+	id = 88
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = FRA
+		 not = {
+			 has_global_flag = SLEEPEVENT_2002511
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2002511_Option1"
+		 ai_chance = {
+			 factor = 5
+			 }
+		 GRE = {
+			 join_faction = allies
+			 }
+		 set_global_flag = 2002511_EVENT_DONE
+		 }
+	option = {
+		 ai_chance = {
+			 factor = 95
+			 }
+		 name = "DH_EVENT_2002511_Option2"
+		 relation = {
+			 who = GRE
+			 value = -10
+			 }
+		 set_global_flag = 2002511_EVENT_DONE
+		 }
+	}
+
+#The Gounalis plan
+
+
+ country_event = {
+	title = "DH_EVENT_2002512_TITLE"
+	desc = "DH_EVENT_2002512_DESC"
+	id = 89
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = FRA
+		 not = {
+			 has_global_flag = SLEEPEVENT_2002512
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2002512_Option1"
+		 ai_chance = {
+			 factor = 95
+			 }
+		 GRE = {
+			 join_faction = allies
+			 }
+		 set_global_flag = 2002512_EVENT_DONE
+		 }
+	option = {
+		 ai_chance = {
+			 factor = 5
+			 }
+		 name = "DH_EVENT_2002512_Option2"
+		 relation = {
+			 who = GRE
+			 value = -10
+			 }
+		 set_global_flag = 2002512_EVENT_DONE
+		 }
+	}
+
+#Ask Greece for demobilization
+
+
+ country_event = {
+	title = "DH_EVENT_2002513_TITLE"
+	desc = "DH_EVENT_2002513_DESC"
+	id = 90
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 15
+		 }
+	trigger = {
+		 exists = GRE
+		 has_global_flag = 2019510_EVENT_DONE
+		 has_global_flag = greece_mobilized
+		 FRA = {
+			 war_with = AUH
+			 }
+		 not = {
+			 GRE = {
+				 faction = allies
+				 }
+			 GRE = {
+				 faction = axis
+				 }
+			 }
+		 tag = FRA
+		 date = 1914.1.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2002513
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2002513_Option1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 relation = {
+			 who = GRE
+			 value = -5
+			 }
+		 GRE = {
+			 country_event = 150
+			 }
+		 set_global_flag = 2002513_EVENT_DONE
+		 }
+	option = {
+		 name = "DH_EVENT_2002513_Option2"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 relation = {
+			 who = GRE
+			 value = 5
+			 }
+		 set_global_flag = 2002513_EVENT_DONE
+		 }
+	}
+
+#Greece demobilizes!
+
+
+ country_event = {
+	title = "DH_EVENT_2002514_TITLE"
+	desc = "DH_EVENT_2002514_DESC"
+	id = 91
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = FRA
+		 not = {
+			 has_global_flag = SLEEPEVENT_2002514
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2002514_Option7"
+		 relation = {
+			 who = GRE
+			 value = 15
+			 }
+		 set_global_flag = 2002514_EVENT_DONE
+		 }
+	}
+
+#Venizelos leaves Greek government
+
+
+ country_event = {
+	title = "DH_EVENT_2002516_TITLE"
+	desc = "DH_EVENT_2002516_DESC"
+	id = 92
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = FRA
+		 not = {
+			 has_global_flag = SLEEPEVENT_2002516
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2002516_Option7"
+		 relation = {
+			 who = GRE
+			 value = -5
+			 }
+		 set_global_flag = 2002516_EVENT_DONE
+		 }
+	}
+
+#Venizelos is back
+
+
+ country_event = {
+	title = "DH_EVENT_2002517_TITLE"
+	desc = "DH_EVENT_2002517_DESC"
+	id = 93
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = FRA
+		 not = {
+			 has_global_flag = SLEEPEVENT_2002517
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2002517_Option7"
+		 relation = {
+			 who = GRE
+			 value = 5
+			 }
+		 set_global_flag = 2002517_EVENT_DONE
+		 }
+	}
+
+#Greece grants Bulgaria military access
+
+
+ country_event = {
+	title = "DH_EVENT_2002520_TITLE"
+	desc = "DH_EVENT_2002520_DESC"
+	id = 96
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = FRA
+		 not = {
+			 has_global_flag = SLEEPEVENT_2002520
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2002520_Option7"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 relation = {
+			 who = GRE
+			 value = -15
+			 }
+		 set_global_flag = 2002520_EVENT_DONE
+		 }
+	}
+
+#Athens on fire!
+
+
+ country_event = {
+	title = "DH_EVENT_2002521_TITLE"
+	desc = "DH_EVENT_2002521_DESC"
+	id = 97
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 7
+		 }
+	trigger = {
+		 exists = GRE
+		 has_global_flag = entente_hostility
+		 FRA = {
+			 war_with = AUH
+			 }
+		 not = {
+			 GRE = {
+				 faction = allies
+				 }
+			 GRE = {
+				 faction = axis
+				 }
+			 }
+		 tag = FRA
+		 date = 1914.1.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2002521
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2002521_Option1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 GRE = {
+			 country_event = 154
+			 }
+		 set_global_flag = 2002521_EVENT_DONE
+		 }
+	option = {
+		 name = "DH_EVENT_2002521_Option2"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 relation = {
+			 who = GRE
+			 value = 5
+			 }
+		 set_global_flag = 2002521_EVENT_DONE
+		 }
+	}
+
+#Renewed call for demobilization
+
+
+ country_event = {
+	title = "DH_EVENT_2002522_TITLE"
+	desc = "DH_EVENT_2002522_DESC"
+	id = 98
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 7
+		 }
+	trigger = {
+		 exists = GRE
+		 has_global_flag = entente_hostility
+		 has_global_flag = greece_mobilized
+		 has_global_flag = 2019518_EVENT_DONE
+		 FRA = {
+			 war_with = AUH
+			 }
+		 not = {
+			 GRE = {
+				 faction = allies
+				 }
+			 GRE = {
+				 faction = axis
+				 }
+			 }
+		 tag = FRA
+		 date = 1914.1.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2002522
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2002522_Option1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 GRE = {
+			 country_event = 156
+			 }
+		 set_global_flag = 2002522_EVENT_DONE
+		 }
+	option = {
+		 name = "DH_EVENT_2002522_Option2"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 relation = {
+			 who = GRE
+			 value = 5
+			 }
+		 set_global_flag = 2002522_EVENT_DONE
+		 }
+	}
+
+#Greece accepts our demands
+
+
+ country_event = {
+	title = "DH_EVENT_2002523_TITLE"
+	desc = "DH_EVENT_2002523_DESC"
+	id = 99
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = FRA
+		 not = {
+			 has_global_flag = SLEEPEVENT_2002523
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2002523_Option7"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 relation = {
+			 who = GRE
+			 value = 15
+			 }
+		 set_global_flag = 2002523_EVENT_DONE
+		 }
+	}
+
+#The 'Vêpres Grecques'
+
+
+ country_event = {
+	title = "DH_EVENT_2002524_TITLE"
+	desc = "DH_EVENT_2002524_DESC"
+	id = 100
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = FRA
+		 not = {
+			 has_global_flag = SLEEPEVENT_2002524
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2002524_Option7"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 dissent = 1
+		 set_global_flag = 2002524_EVENT_DONE
+		 }
+	}
+
+#Ultimatum to Greece
+
+
+ country_event = {
+	title = "DH_EVENT_2002533_TITLE"
+	desc = "DH_EVENT_2002533_DESC"
+	id = 101
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 5
+		 }
+	trigger = {
+		 exists = GRE
+		 has_global_flag = entente_hostility
+		 has_global_flag = greece_mobilized
+		 has_global_flag = 2002523_EVENT_DONE
+		 FRA = {
+			 war_with = AUH
+			 }
+		 not = {
+			 GRE = {
+				 faction = allies
+				 }
+			 GRE = {
+				 faction = axis
+				 }
+			 }
+		 tag = FRA
+		 date = 1914.1.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2002533
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2002533_Option1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 GRE = {
+			 country_event = 158
+			 }
+		 set_global_flag = 2002533_EVENT_DONE
+		 }
+	option = {
+		 name = "DH_EVENT_2002533_Option2"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 relation = {
+			 who = GRE
+			 value = 5
+			 }
+		 set_global_flag = 2002533_EVENT_DONE
+		 }
+	}
+
+#Austria-Hungary declares war on Serbia!
+
+
+ country_event = {
+	title = "DH_EVENT_2019501_TITLE"
+	desc = "DH_EVENT_2019501_DESC"
+	id = 138
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	trigger = {
+		 tag = GRE
+		 AUH = {
+			 war_with = SER
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2019501
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2019501_Option1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 dissent = 3
+		 set_global_flag = 2019501_EVENT_DONE
+		 }
+	option = {
+		 ai_chance = {
+			 factor = 0
+			 }
+		 name = "DH_EVENT_2019501_Option2"
+		 dissent = 5
+		 create_alliance = SER
+		 war = {
+			 target = AUH
+			 }
+		 set_global_flag = 2019501_EVENT_DONE
+		 }
+	}
+
+#Austria-Hungary declares war on Serbia!
+
+
+ country_event = {
+	title = "DH_EVENT_2019502_TITLE"
+	desc = "DH_EVENT_2019502_DESC"
+	id = 139
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = GRE
+		 not = {
+			 has_global_flag = SLEEPEVENT_2019502
+			 }
+		 }
+	option = {
+		 ai_chance = {
+			 factor = 90
+			 }
+		 name = "DH_EVENT_2019502_Option1"
+		 dissent = 3
+		 join_faction = allies
+		 set_global_flag = 2019502_EVENT_DONE
+		 }
+	option = {
+		 ai_chance = {
+			 factor = 10
+			 }
+		 name = "DH_EVENT_2019502_Option2"
+		 dissent = 5
+		 set_global_flag = 2019502_EVENT_DONE
+		 }
+	}
+
+#Bulgaria joins the Central Powers!
+
+
+ country_event = {
+	title = "DH_EVENT_2019503_TITLE"
+	desc = "DH_EVENT_2019503_DESC"
+	id = 140
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = GRE
+		 not = {
+			 has_global_flag = SLEEPEVENT_2019503
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2019503_Option1"
+		 ai_chance = {
+			 factor = 95
+			 }
+		 dissent = 5
+		 set_global_flag = 2019503_EVENT_DONE
+		 }
+	option = {
+		 ai_chance = {
+			 factor = 5
+			 }
+		 name = "DH_EVENT_2019503_Option2"
+		 dissent = 5
+		 create_alliance = SER
+		 set_global_flag = 2019503_EVENT_DONE
+		 }
+	}
+
+#Negotiation with the Entente
+
+
+ country_event = {
+	title = "DH_EVENT_2019504_TITLE"
+	desc = "DH_EVENT_2019504_DESC"
+	id = 141
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = GRE
+		 not = {
+			 has_global_flag = SLEEPEVENT_2019504
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2019504_Option1"
+		 ai_chance = {
+			 factor = 90
+			 }
+		 FRA = {
+			 country_event = 86
+			 }
+		 dissent = 3
+		 join_faction = allies
+		 set_global_flag = 2019504_EVENT_DONE
+		 }
+	option = {
+		 name = "DH_EVENT_2019504_Option2"
+		 ai_chance = {
+			 factor = 10
+			 }
+		 dissent = 5
+		 set_global_flag = 2019504_EVENT_DONE
+		 }
+	}
+
+#Negotiation with the Entente
+
+
+ country_event = {
+	title = "DH_EVENT_2019505_TITLE"
+	desc = "DH_EVENT_2019505_DESC"
+	id = 142
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = GRE
+		 not = {
+			 has_global_flag = SLEEPEVENT_2019505
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2019505_Option1"
+		 ai_chance = {
+			 factor = 5
+			 }
+		 dissent = 3
+		 join_faction = allies
+		 FRA = {
+			 country_event = 86
+			 }
+		 set_global_flag = 2019505_EVENT_DONE
+		 }
+	option = {
+		 name = "DH_EVENT_2019505_Option2"
+		 ai_chance = {
+			 factor = 95
+			 }
+		 dissent = 5
+		 set_global_flag = 2019505_EVENT_DONE
+		 }
+	}
+
+#King Konstantinos is sick!
+
+
+ country_event = {
+	title = "DH_EVENT_2019506_TITLE"
+	desc = "DH_EVENT_2019506_DESC"
+	id = 143
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 15
+		 }
+	trigger = {
+		 tag = GRE
+		 date = 1915.4.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2019506
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2019506_Option7"
+		 dissent = 1
+		 set_global_flag = 2019506_EVENT_DONE
+		 }
+	}
+
+#King Konstantinos is back at its office
+
+
+ country_event = {
+	title = "DH_EVENT_2019507_TITLE"
+	desc = "DH_EVENT_2019507_DESC"
+	id = 144
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 13
+		 }
+	trigger = {
+		 has_global_flag = 2019505_EVENT_DONE
+		 tag = GRE
+		 date = 1915.8.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2019507
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2019507_Option7"
+		 dissent = -2
+		 set_global_flag = 2019507_EVENT_DONE
+		 }
+	}
+
+#Greece and the Dardanelles
+
+
+ country_event = {
+	title = "DH_EVENT_2019508_TITLE"
+	desc = "DH_EVENT_2019508_DESC"
+	id = 145
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 5
+		 }
+	trigger = {
+		 not = {
+			 has_global_flag = 2002508_EVENT_DONE
+			 GRE = {
+				 faction = allies
+				 }
+			 }
+		 ENG = {
+			 war_with = TUR
+			 }
+		 tag = GRE
+		 date = 1914.1.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2019508
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2019508_Option1"
+		 ai_chance = {
+			 factor = 95
+			 }
+		 dissent = 4
+		 FRA = {
+			 country_event = 92
+			 }
+		 clr_global_flag = venizelos_incabinet
+		 head_of_government = 90178
+		 set_global_flag = 2019508_EVENT_DONE
+		 }
+	option = {
+		 ai_chance = {
+			 factor = 5
+			 }
+		 name = "DH_EVENT_2019508_Option2"
+		 dissent = 5
+		 join_faction = allies
+		 set_global_flag = 2019508_EVENT_DONE
+		 }
+	}
+
+#The Gounaris plan
+
+
+ country_event = {
+	title = "DH_EVENT_2019509_TITLE"
+	desc = "DH_EVENT_2019509_DESC"
+	id = 146
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 3
+		 }
+	trigger = {
+		 has_global_flag = 2019505_EVENT_DONE
+		 not = {
+			 head_of_government = 90010
+			 has_global_flag = venizelos_incabinet
+			 has_global_flag = 2019506_EVENT_DONE
+			 GRE = {
+				 faction = axis
+				 }
+			 GRE = {
+				 faction = allies
+				 }
+			 FRA = {
+				 war_with = GRE
+				 }
+			 }
+		 tag = GRE
+		 date = 1915.1.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2019509
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2019509_Option1"
+		 random_country = {
+			 limit = {
+				 tag = FRA
+				 not = {
+					 FRA = {
+						 war_with = BUL
+						 }
+					 }
+				 }
+			 FRA = {
+				 country_event = 88
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = FRA
+				 or = {
+					 FRA = {
+						 war_with = BUL
+						 }
+					 BUL = {
+						 faction = allies
+						 }
+					 }
+				 }
+			 FRA = {
+				 country_event = 89
+				 }
+			 }
+		 set_global_flag = 2019509_EVENT_DONE
+		 }
+	}
+
+#Legislative elections, 1915
+
+
+ country_event = {
+	title = "DH_EVENT_2019510_TITLE"
+	desc = "DH_EVENT_2019510_DESC"
+	id = 147
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 7
+		 }
+	trigger = {
+		 not = {
+			 has_global_flag = venizelos_incabinet
+			 has_global_flag = 2002508_EVENT_DONE
+			 }
+		 tag = GRE
+		 date = 1915.6.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2019510
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2019510_Option7"
+		 dissent = -2
+		 FRA = {
+			 country_event = 93
+			 }
+		 set_global_flag = venizelos_incabinet
+		 head_of_government = 90010
+		 set_global_flag = 2019510_EVENT_DONE
+		 }
+	}
+
+#Bulgaria joins the Central Powers!
+
+
+ country_event = {
+	title = "DH_EVENT_2019511_TITLE"
+	desc = "DH_EVENT_2019511_DESC"
+	id = 148
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 2
+		 }
+	trigger = {
+		 war = no
+		 BUL = {
+			 faction = axis
+			 }
+		 tag = GRE
+		 date = 1914.1.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2019511
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2019511_Option1"
+		 ai_chance = {
+			 factor = 2
+			 }
+		 dissent = 4
+		 join_faction = allies
+		 set_global_flag = 2019511_EVENT_DONE
+		 }
+	option = {
+		 name = "DH_EVENT_2019511_Option2"
+		 ai_chance = {
+			 factor = 95
+			 }
+		 dissent = 1
+		 set_global_flag = greece_mobilized
+		 set_global_flag = 2019511_EVENT_DONE
+		 }
+	option = {
+		 name = "DH_EVENT_2019511_Option3"
+		 ai_chance = {
+			 factor = 3
+			 }
+		 dissent = 3
+		 set_global_flag = 2019511_EVENT_DONE
+		 }
+	}
+
+#The Entente seizes Thessaloniki
+
+
+ country_event = {
+	title = "DH_EVENT_2019512_TITLE"
+	desc = "DH_EVENT_2019512_DESC"
+	id = 149
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = GRE
+		 not = {
+			 has_global_flag = SLEEPEVENT_2019512
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2019512_Option1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 dissent = 4
+		 set_global_flag = 2019512_EVENT_DONE
+		 }
+	option = {
+		 name = "DH_EVENT_2019512_Option2"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 dissent = 5
+		 join_faction = allies
+		 set_global_flag = 2019512_EVENT_DONE
+		 }
+	}
+
+#The Entente asks for demobilization
+
+
+ country_event = {
+	title = "DH_EVENT_2019513_TITLE"
+	desc = "DH_EVENT_2019513_DESC"
+	id = 150
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = GRE
+		 not = {
+			 has_global_flag = SLEEPEVENT_2019513
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2019513_Option1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 relation = {
+			 who = FRA
+			 value = -10
+			 }
+		 set_global_flag = 2019513_EVENT_DONE
+		 }
+	option = {
+		 name = "DH_EVENT_2019513_Option2"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 dissent = 1
+		 FRA = {
+			 country_event = 91
+			 }
+		 clr_global_flag = greece_mobilized
+		 relation = {
+			 who = FRA
+			 value = 10
+			 }
+		 set_global_flag = 2019513_EVENT_DONE
+		 }
+	}
+
+#Anticipated Elections
+
+
+ country_event = {
+	title = "DH_EVENT_2019514_TITLE"
+	desc = "DH_EVENT_2019514_DESC"
+	id = 151
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 7
+		 }
+	trigger = {
+		 has_global_flag = 2001506_EVENT_DONE
+		 has_global_flag = venizelos_incabinet
+		 not = {
+			 GRE = {
+				 faction = allies
+				 }
+			 GRE = {
+				 faction = axis
+				 }
+			 }
+		 tag = GRE
+		 date = 1916.1.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2019514
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2019514_Option1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 dissent = 1
+		 clr_global_flag = venizelos_incabinet
+		 head_of_government = 90199
+		 FRA = {
+			 country_event = 92
+			 }
+		 set_global_flag = 2019514_EVENT_DONE
+		 }
+	option = {
+		 name = "DH_EVENT_2019514_Option2"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 set_global_flag = 2019514_EVENT_DONE
+		 }
+	}
+
+#Serb refugees land on Corfu
+
+
+ country_event = {
+	title = "DH_EVENT_2019515_TITLE"
+	desc = "DH_EVENT_2019515_DESC"
+	id = 152
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 15
+		 }
+	trigger = {
+		 has_global_flag = 2084503_EVENT_DONE
+		 not = {
+			 GRE = {
+				 faction = allies
+				 }
+			 }
+		 and = {
+			 exists = SER
+			 not = {
+				 SER = {
+					 government_in_exile = yes
+					 }
+				 }
+			 }
+		 tag = GRE
+		 date = 1914.1.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2019515
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2019515_Option1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 has_global_flag = venizelos_incabinet
+				 }
+			 dissent = 1
+			 }
+		 relation = {
+			 who = SER
+			 value = -15
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 exists = ALB
+				 }
+			 relation = {
+				 who = ALB
+				 value = -15
+				 }
+			 }
+		 set_global_flag = 2019515_EVENT_DONE
+		 }
+	option = {
+		 name = "DH_EVENT_2019515_Option2"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 not = {
+					 has_global_flag = venizelos_incabinet
+					 }
+				 }
+			 dissent = 1
+			 }
+		 relation = {
+			 who = SER
+			 value = 5
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 exists = ALB
+				 }
+			 relation = {
+				 who = ALB
+				 value = 5
+				 }
+			 }
+		 set_global_flag = 2019515_EVENT_DONE
+		 }
+	}
+
+#Grant Bulgaria military access?
+
+
+ country_event = {
+	title = "DH_EVENT_2019517_TITLE"
+	desc = "DH_EVENT_2019517_DESC"
+	id = 153
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 15
+		 }
+	trigger = {
+		 has_global_flag = 2019511_EVENT_DONE
+		 FRA = {
+			 war_with = BUL
+			 }
+		 not = {
+			 GRE = {
+				 faction = allies
+				 }
+			 }
+		 tag = GRE
+		 date = 1914.1.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2019517
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2019517_Option1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 set_global_flag = entente_hostility
+		 FRA = {
+			 country_event = 96
+			 }
+		 set_global_flag = 2019517_EVENT_DONE
+		 }
+	option = {
+		 name = "DH_EVENT_2019517_Option2"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 set_global_flag = 2019517_EVENT_DONE
+		 }
+	}
+
+#The Royal residence burns!
+
+
+ country_event = {
+	title = "DH_EVENT_2019518_TITLE"
+	desc = "DH_EVENT_2019518_DESC"
+	id = 154
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = GRE
+		 not = {
+			 has_global_flag = SLEEPEVENT_2019518
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2019518_Option7"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 dissent = 3
+		 relation = {
+			 who = FRA
+			 value = -20
+			 }
+		 set_global_flag = 2019518_EVENT_DONE
+		 }
+	}
+
+#The Thessaloniki government
+
+
+ country_event = {
+	title = "DH_EVENT_2019519_TITLE"
+	desc = "DH_EVENT_2019519_DESC"
+	id = 155
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 15
+		 }
+	trigger = {
+		 has_global_flag = 2019517_EVENT_DONE
+		 head_of_government = 90199
+		 4720 = {
+			 controlled_by = ENG
+			 }
+		 tag = GRE
+		 date = 1914.1.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2019519
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2019519_Option7"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 dissent = 4
+		 relation = {
+			 who = FRA
+			 value = -50
+			 }
+		 set_global_flag = 2019519_EVENT_DONE
+		 }
+	}
+
+#The Entente asks again for demobilization
+
+
+ country_event = {
+	title = "DH_EVENT_2019520_TITLE"
+	desc = "DH_EVENT_2019520_DESC"
+	id = 156
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = GRE
+		 not = {
+			 has_global_flag = SLEEPEVENT_2019520
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2019520_Option1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 FRA = {
+			 country_event = 99
+			 }
+		 relation = {
+			 who = FRA
+			 value = 15
+			 }
+		 set_global_flag = 2019520_EVENT_DONE
+		 }
+	option = {
+		 name = "DH_EVENT_2019520_Option2"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 dissent = 5
+		 war = {
+			 target = FRA
+			 }
+		 set_global_flag = 2019520_EVENT_DONE
+		 }
+	}
+
+#The 'Vêpres Grecques'
+
+
+ country_event = {
+	title = "DH_EVENT_2019521_TITLE"
+	desc = "DH_EVENT_2019521_DESC"
+	id = 157
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 30
+		 }
+	trigger = {
+		 has_global_flag = 2002522_EVENT_DONE
+		 tag = GRE
+		 date = 1914.1.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2019521
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2019521_Option1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 country_event = 100
+		 set_global_flag = 2019521_EVENT_DONE
+		 }
+	option = {
+		 name = "DH_EVENT_2019521_Option2"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 dissent = 5
+		 set_global_flag = 2019521_EVENT_DONE
+		 }
+	}
+
+#Last warning from the Entente
+
+
+ country_event = {
+	title = "DH_EVENT_2019522_TITLE"
+	desc = "DH_EVENT_2019522_DESC"
+	id = 158
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = GRE
+		 not = {
+			 has_global_flag = SLEEPEVENT_2019522
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2019522_Option1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 dissent = 3
+		 join_faction = allies
+		 clr_global_flag = entente_hostility
+		 clr_global_flag = greece_mobilized
+		 head_of_state = 90211
+		 head_of_government = 90010
+		 relation = {
+			 who = FRA
+			 value = 50
+			 }
+		 set_global_flag = 2019522_EVENT_DONE
+		 }
+	option = {
+		 name = "DH_EVENT_2019522_Option2"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 dissent = 5
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 FRA = {
+					 war_with = AUH
+					 }
+				 not = {
+					 AUH = {
+						 war_with = GRE
+						 }
+					 }
+				 }
+			 join_faction = axis
+			 }
+		 set_global_flag = 2019522_EVENT_DONE
+		 }
+	}
 
 #The Fall of Serbia
-country_event = {
-id = 413
-title = "DH_EVENT_2191508_TITLE"
-desc = "DH_EVENT_2191508_DESC"
-picture = "diplomatic_campaign"
 
-trigger = {
-	exists = BUL
-	not = {		and = {
-		exists = SER
-		not = { SER = { government_in_exile = yes } }
-		}
+
+ country_event = {
+	title = "DH_EVENT_2191508_TITLE"
+	desc = "DH_EVENT_2191508_DESC"
+	id = 413
+	 
+	picture = "diplomatic_campaign"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 3
 		 }
-	GER = { war = yes }
-	not = {
-		 BUL = { war_with = GER }
+	trigger = {
+		 exists = BUL
+		 not = {
+			 and = {
+				 exists = SER
+				 not = {
+					 SER = {
+						 government_in_exile = yes
+						 }
+					 }
+				 }
+			 }
+		 GER = {
+			 war = yes
+			 }
+		 not = {
+			 BUL = {
+				 war_with = GER
+				 }
+			 }
+		 not = {
+			 has_global_flag = 2002533_EVENT_DONE
+			 }
+		 not = {
+			 BUL = {
+				 faction = axis
+				 }
+			 }
+		 not = {
+			 BUL = {
+				 faction = allies
+				 }
+			 }
+		 tag = GER
+		 date = 1914.6.28
+		 not = {
+			 date = 1914.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2191508
+			 }
 		 }
-	not = {
-		 has_global_flag = 2002533_EVENT_DONE
+	option = {
+		 name = "DH_EVENT_2191508_Option1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 BUL = {
+			 country_event = 3
+			 }
+		 set_global_flag = 2191508_EVENT_DONE
 		 }
-	not = {
-		 BUL = { faction = axis }
+	option = {
+		 name = "DH_EVENT_2191508_Option2"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 set_global_flag = 2191508_EVENT_DONE
 		 }
-	not = {
-		 BUL = { faction = allies }
-		 }
-	
-tag = GER
-date = 1914.6.28
-
-not = { date = 1914.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2191508 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  3 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2191508_Option1"
-	ai_chance = { factor = 100
-		 }
-	BUL = { country_event = 3 }
-	
-set_global_flag = 2191508_EVENT_DONE
-
-}
-
-option = {
-	name = "DH_EVENT_2191508_Option2"
-	ai_chance = { factor = 0
-		 }
-	
-set_global_flag = 2191508_EVENT_DONE
-
-}
-
-}
-
-#Reaction to Bulgaria joining
-country_event = {
-id = 414
-title = "DH_EVENT_2191509_TITLE"
-desc = "DH_EVENT_2191509_DESC"
-picture = "diplomatic_campaign"
-
-trigger = { 
-tag = GER
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2191509 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2191509_Option7"
-	relation = { who = BUL value = 10  }
-	GRE = { country_event = 140 }
-	
-set_global_flag = 2191509_EVENT_DONE
-
-}
-
-}
-
-
-#Reaction to Bulgaria joining
-country_event = {
-id = 416
-title = "DH_EVENT_2191509_TITLE"
-desc = "DH_EVENT_2191509_DESC"
-picture = "diplomatic_campaign"
-
-trigger = { 
-tag = GER
-
-war = yes
-
-BUL = { faction = axis }
-
-
-
-not = { has_global_flag = 2191509_EVENT_DONE }
-not = { has_global_flag = SLEEPEVENT_2191509 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  1 }
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2191509_Option7"
-	relation = { who = BUL value = 10  }
-	GRE = { country_event = 140 }
-	
-set_global_flag = 2191509_EVENT_DONE
-
-}
-
-}
-
-#Promises to Bulgaria follow up
-country_event = {
-id = 415
-title = "DH_EVENT_2191510_TITLE"
-desc = "DH_EVENT_2191510_DESC"
-picture = "diplomatic_campaign"
-
-trigger = {
-			and = {
-		exists = SER
-		not = { SER = { government_in_exile = yes } }
-		}
-	exists = BUL
-	not = {
-		#has_global_flag = 2145501_EVENT_DONE
-		BUL = { faction = axis }
-		SER = { alliance_with = BUL }
-		AUH = { war_with = BUL }
-		}
-	or = {
-		#has_global_flag = 2145500_EVENT_DONE
-		TUR = { faction = axis }
-		}
-	
-tag = AUH
-date = 1914.11.12
-
-not = { date = 1914.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2191510 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  14 }
-
-is_triggered_only = yes
-option = {
-	ai_chance = { factor = 100
-		 }
-	name = "DH_EVENT_2191510_Option1"
-	BUL = { country_event = 4 }
-	
-set_global_flag = 2191510_EVENT_DONE
-
-}
-
-option = {
-	ai_chance = { factor = 0
-		 }
-	name = "DH_EVENT_2191510_Option2"
-	
-set_global_flag = 2191510_EVENT_DONE
-
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#Agreement with Bulgaria - follow up
-country_event = {
-id = 479
-title = "DH_EVENT_2192529_TITLE"
-desc = "DH_EVENT_2192529_DESC"
-trigger = {
-	exists = BUL		
-	and = {
-		exists = SER
-		not = { SER = { government_in_exile = yes } }
-		}
-	FRA = { war_with = AUH }
-	not = {
-		BUL = { faction = axis }
-		BUL = { faction = allies }
-		#has_global_flag = 2192505_EVENT_DONE
-		#has_global_flag = 2192512_EVENT_DONE
-		has_global_flag = 2020501_EVENT_DONE
-		
-		}
-	
-tag = AUH
-date = 1915.2.1
-
-not = { date = 1915.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2192529 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  7 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2192529_Option7"
-	ai_chance = { factor = 100
-		 }
-	BUL = { country_event = 4 }
-	
-set_global_flag = 2192529_EVENT_DONE
-
-}
-
-}
-#Evacuate through Albania?	
-country_event = {
-id = 368
-title = "DH_EVENT_2084503_TITLE"
-desc = "DH_EVENT_2084503_DESC"
-picture = "news_paper"
-
-trigger = {
-	exists = ALB
-	THIS = { surrender_progress = 50 }
-	not = { SER = { controls = 4368 } }
-	not = { SER = { controls = 3912 } }
-	or = {
-		SER = { controls = 4495 }
-		SER = { controls = 4609 }
 	}
-	not = {
-		SER = { war_with = ALB }
-		SER = { alliance_with = ALB }
-		}
-	
-tag = SER
-date = 1914.1.1
 
-not = { date = 1925.12.30
- }
+#Bulgaria joins the Central Powers!
 
 
-
-not = { has_global_flag = SLEEPEVENT_2084503 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  5 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2084503_Option1"
-	ALB = { country_event = 1 }
-	
-set_global_flag = 2084503_EVENT_DONE
-
-}
-
-option = {
-	name = "DH_EVENT_2084503_Option2"
-	
-set_global_flag = 2084503_EVENT_DONE
-
-}
-
-}
-
-country_event = {
-id = 369
-title = "DH_EVENT_2084504_TITLE"
-desc = "DH_EVENT_2084504_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = SER
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2084504 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2084504_Option7"
-	ALB = { military_access = SER }
-	
-set_global_flag = 2084504_EVENT_DONE
-
-}
-
-}
-#Evacuate Through Albania Follow up
-country_event = {
-id = 1
-title = "DH_EVENT_2058500_TITLE"
-desc = "DH_EVENT_2058500_DESC"
-picture = "foreign_volunteers"
-
-trigger = { 
-tag = ALB
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2058500 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2058500_Option1"
-	ai_chance = { factor = 50
+ country_event = {
+	title = "DH_EVENT_2191509_TITLE"
+	desc = "DH_EVENT_2191509_DESC"
+	id = 414
+	 
+	picture = "diplomatic_campaign"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = GER
+		 not = {
+			 has_global_flag = SLEEPEVENT_2191509
+			 }
 		 }
-	SER = { country_event = 369 }
-	random_country = { limit = { tag = FRA 
-			 FRA = { war_with = AUH }
-			  } 
-		
-		FRA = { country_event = 94 }
+	option = {
+		 name = "DH_EVENT_2191509_Option7"
+		 relation = {
+			 who = BUL
+			 value = 10
+			 }
+		 GRE = {
+			 country_event = 140
+			 }
+		 set_global_flag = 2191509_EVENT_DONE
 		 }
-	
-set_global_flag = 2058500_EVENT_DONE
+	}
 
-}
+#Bulgaria joins the Central Powers!
 
-option = {
-	name = "DH_EVENT_2058500_Option2"
-	ai_chance = { factor = 50
+
+ country_event = {
+	title = "DH_EVENT_2191509_TITLE"
+	desc = "DH_EVENT_2191509_DESC"
+	id = 416
+	 
+	picture = "diplomatic_campaign"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 1
 		 }
-	war = { target = SER }
-	
-set_global_flag = 2058500_EVENT_DONE
+	trigger = {
+		 tag = GER
+		 war = yes
+		 BUL = {
+			 faction = axis
+			 }
+		 not = {
+			 has_global_flag = 2191509_EVENT_DONE
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2191509
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2191509_Option7"
+		 relation = {
+			 who = BUL
+			 value = 10
+			 }
+		 GRE = {
+			 country_event = 140
+			 }
+		 set_global_flag = 2191509_EVENT_DONE
+		 }
+	}
 
-}
-
-}
-
-country_event = {
-id = 2
-title = "DH_EVENT_2058501_TITLE"
-desc = "DH_EVENT_2058501_DESC"
-picture = "diplomatic_campaign"
-
-trigger = { 
-tag = ALB
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2058501 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2058501_Option7"
-	
-set_global_flag = 2058501_EVENT_DONE
-
-}
-
-}
-
-#Exvacuation through albania agreed
-country_event = {
-id = 94
-title = "DH_EVENT_2002518_TITLE"
-desc = "DH_EVENT_2002518_DESC"
-picture = "news_paper"
-
-trigger = { 
-tag = FRA
+#Promises to Bulgaria
 
 
+ country_event = {
+	title = "DH_EVENT_2191510_TITLE"
+	desc = "DH_EVENT_2191510_DESC"
+	id = 415
+	 
+	picture = "diplomatic_campaign"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 14
+		 }
+	trigger = {
+		 and = {
+			 exists = SER
+			 not = {
+				 SER = {
+					 government_in_exile = yes
+					 }
+				 }
+			 }
+		 exists = BUL
+		 not = {
+			 BUL = {
+				 faction = axis
+				 }
+			 SER = {
+				 alliance_with = BUL
+				 }
+			 AUH = {
+				 war_with = BUL
+				 }
+			 }
+		 or = {
+			 TUR = {
+				 faction = axis
+				 }
+			 }
+		 tag = AUH
+		 date = 1914.11.12
+		 not = {
+			 date = 1914.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2191510
+			 }
+		 }
+	option = {
+		 ai_chance = {
+			 factor = 100
+			 }
+		 name = "DH_EVENT_2191510_Option1"
+		 BUL = {
+			 country_event = 4
+			 }
+		 set_global_flag = 2191510_EVENT_DONE
+		 }
+	option = {
+		 ai_chance = {
+			 factor = 0
+			 }
+		 name = "DH_EVENT_2191510_Option2"
+		 set_global_flag = 2191510_EVENT_DONE
+		 }
+	}
+
+#Agreement with Bulgaria
 
 
+ country_event = {
+	title = "DH_EVENT_2192529_TITLE"
+	desc = "DH_EVENT_2192529_DESC"
+	id = 479
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 7
+		 }
+	trigger = {
+		 exists = BUL
+		 and = {
+			 exists = SER
+			 not = {
+				 SER = {
+					 government_in_exile = yes
+					 }
+				 }
+			 }
+		 FRA = {
+			 war_with = AUH
+			 }
+		 not = {
+			 BUL = {
+				 faction = axis
+				 }
+			 BUL = {
+				 faction = allies
+				 }
+			 has_global_flag = 2020501_EVENT_DONE
+			 }
+		 tag = AUH
+		 date = 1915.2.1
+		 not = {
+			 date = 1915.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2192529
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2192529_Option7"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 BUL = {
+			 country_event = 4
+			 }
+		 set_global_flag = 2192529_EVENT_DONE
+		 }
+	}
 
-not = { has_global_flag = SLEEPEVENT_2002518 }
+#Evacuate through Albania?
 
-}
-fire_only_once = yes
 
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2002518_Option7"
-	#Removed Blank command
-	
-set_global_flag = 2002518_EVENT_DONE
+ country_event = {
+	title = "DH_EVENT_2084503_TITLE"
+	desc = "DH_EVENT_2084503_DESC"
+	id = 368
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 5
+		 }
+	trigger = {
+		 exists = ALB
+		 THIS = {
+			 surrender_progress = 50
+			 }
+		 not = {
+			 SER = {
+				 controls = 4368
+				 }
+			 }
+		 not = {
+			 SER = {
+				 controls = 3912
+				 }
+			 }
+		 or = {
+			 SER = {
+				 controls = 4495
+				 }
+			 SER = {
+				 controls = 4609
+				 }
+			 }
+		 not = {
+			 SER = {
+				 war_with = ALB
+				 }
+			 SER = {
+				 alliance_with = ALB
+				 }
+			 }
+		 tag = SER
+		 date = 1914.1.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2084503
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2084503_Option1"
+		 ALB = {
+			 country_event = 1
+			 }
+		 set_global_flag = 2084503_EVENT_DONE
+		 }
+	option = {
+		 name = "DH_EVENT_2084503_Option2"
+		 set_global_flag = 2084503_EVENT_DONE
+		 }
+	}
 
-}
+#Evacuate through Albania!
 
-}
+
+ country_event = {
+	title = "DH_EVENT_2084504_TITLE"
+	desc = "DH_EVENT_2084504_DESC"
+	id = 369
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = SER
+		 not = {
+			 has_global_flag = SLEEPEVENT_2084504
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2084504_Option7"
+		 ALB = {
+			 military_access = SER
+			 }
+		 set_global_flag = 2084504_EVENT_DONE
+		 }
+	}
+
+#Let Serbian troops retreat?
+
+
+ country_event = {
+	title = "DH_EVENT_2058500_TITLE"
+	desc = "DH_EVENT_2058500_DESC"
+	id = 1
+	 
+	picture = "foreign_volunteers"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = ALB
+		 not = {
+			 has_global_flag = SLEEPEVENT_2058500
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2058500_Option1"
+		 ai_chance = {
+			 factor = 50
+			 }
+		 SER = {
+			 country_event = 369
+			 }
+		 random_country = {
+			 limit = {
+				 tag = FRA
+				 FRA = {
+					 war_with = AUH
+					 }
+				 }
+			 FRA = {
+				 country_event = 94
+				 }
+			 }
+		 set_global_flag = 2058500_EVENT_DONE
+		 }
+	option = {
+		 name = "DH_EVENT_2058500_Option2"
+		 ai_chance = {
+			 factor = 50
+			 }
+		 war = {
+			 target = SER
+			 }
+		 set_global_flag = 2058500_EVENT_DONE
+		 }
+	}
+
+#Greece proclaimed the annexation of Northern Epirus
+
+
+ country_event = {
+	title = "DH_EVENT_2058501_TITLE"
+	desc = "DH_EVENT_2058501_DESC"
+	id = 2
+	 
+	picture = "diplomatic_campaign"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = ALB
+		 not = {
+			 has_global_flag = SLEEPEVENT_2058501
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2058501_Option7"
+		 set_global_flag = 2058501_EVENT_DONE
+		 }
+	}
+
+#Serbian army evacuate through Albania!
+
+
+ country_event = {
+	title = "DH_EVENT_2002518_TITLE"
+	desc = "DH_EVENT_2002518_DESC"
+	id = 94
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = FRA
+		 not = {
+			 has_global_flag = SLEEPEVENT_2002518
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2002518_Option7"
+		 set_global_flag = 2002518_EVENT_DONE
+		 }
+	}
+

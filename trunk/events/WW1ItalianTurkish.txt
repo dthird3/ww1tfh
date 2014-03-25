@@ -1,169 +1,306 @@
-#### ITALY OTTO WAR  ####
+#Italo-Turkish War
 
-country_event = {
 
-		id = 100113
-		
-		is_triggered_only = yes
-		
-		fire_only_once = yes
+ country_event = {
+	title = "ITAE1"
+	desc = "desc_ITAE1"
+	id = 100113
+	 
+	picture = "ITAP1"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_ITAE1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 TUR = {
+			 neutrality = -20
+			 }
+		 ITA = {
+			 war = {
+				 target = TUR
+				 attacker_goal = {
+					 casus_belli = aquire_all_cores
+					 }
+				 }
+			 }
+		 ITA = {
+			 end_war = CRT
+			 }
+		 ITA = {
+			 non_aggression_pact = CRT
+			 }
+		 ITA = {
+			 end_war = HJZ
+			 }
+		 ITA = {
+			 non_aggression_pact = HJZ
+			 }
+		 ITA = {
+			 end_war = ASR
+			 }
+		 ITA = {
+			 non_aggression_pact = ASR
+			 }
+		 ITA = {
+			 end_war = YEM
+			 }
+		 ITA = {
+			 non_aggression_pact = YEM
+			 }
+		 TUR = {
+			 set_country_flag = turkey_disorg
+			 }
+		 TUR = {
+			 country_event = 100304
+			 }
+		 }
+	}
 
-		title = "ITAE1"
-		desc = "desc_ITAE1"
-		picture = "ITAP1" 
+#Italo-Turkish War
 
-		option = {
-			name = "opta_ITAE1"
-			ai_chance = { factor = 100 }
-			TUR = { neutrality = -20 }
-			ITA = {	war = {	
-					target = TUR
-					attacker_goal = { casus_belli=aquire_all_cores }
-					}
-				}
-			ITA = { end_war = CRT }
-			ITA = { non_aggression_pact = CRT }
-			ITA = { end_war = HJZ }
-			ITA = { non_aggression_pact = HJZ }
-			ITA = { end_war = ASR }
-			ITA = { non_aggression_pact = ASR }
-			ITA = { end_war = YEM }
-			ITA = { non_aggression_pact = YEM }
-			TUR = { set_country_flag = turkey_disorg }
-			TUR = { country_event = 100304 }				
-		}
-}
 
-# Locally raised Libyan (20,000 Arabs) volunteers to support Ottomans 
-country_event = {											
+ country_event = {
+	title = "ITAE1"
+	desc = "desc_ITAE1"
+	id = 100304
+	 
+	picture = "ottoman_volunteers"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_TURE1a"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 TUR = {
+			 load_oob = "Libyan.txt"
+			 }
+		 5484 = {
+			 supplies = 2000
+			 }
+		 5511 = {
+			 supplies = 2000
+			 }
+		 }
+	}
 
-		id = 100304
-		
-		is_triggered_only = yes
-		
-		fire_only_once = yes
+#Treaty of Lausanne
 
-		title = "ITAE1"
-		desc = "desc_ITAE1"
-		picture = "ottoman_volunteers" 
 
-		option = {
-			name = "opta_TURE1a"
-			ai_chance = { factor = 100 }
-			TUR = { load_oob = "Libyan.txt" }
-			5484 = {supplies = 2000}
-			5511 = {supplies = 2000}
-		}
-}
+ country_event = {
+	title = "TURE1"
+	desc = "desc_TURE1"
+	id = 100114
+	 
+	picture = "ITAP1"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	major = yes
+	 
+	option = {
+		 name = "opta_TURE1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 TUR = {
+			 neutrality = -10
+			 }
+		 ITA = {
+			 any_owned = {
+				 limit = {
+					 is_core = CRT
+					 }
+				 secede_province = CRT
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = ITA
+					 }
+				 secede_province = ITA
+				 }
+			 }
+		 14154 = {
+			 secede_province = GRE
+			 }
+		 end_war = ITA
+		 TUR = {
+			 military_access = ITA
+			 }
+		 ITA = {
+			 military_access = TUR
+			 }
+		 ITA = {
+			 military_access = ENG
+			 }
+		 TUR = {
+			 military_access = ENG
+			 }
+		 ITA = {
+			 military_access = GRE
+			 }
+		 TUR = {
+			 military_access = GRE
+			 }
+		 TUR = {
+			 military_access = AUH
+			 }
+		 }
+	}
 
-country_event = {
+#Treaty of Lausanne
 
-		id = 100114
 
-		major = yes
-		
-		is_triggered_only = yes
-		
-		fire_only_once = yes
+ country_event = {
+	title = "TURE1z"
+	desc = "desc_TURE1z"
+	id = 100303
+	 
+	picture = "ITAP1"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	major = yes
+	 
+	option = {
+		 name = "opta_TURE1z"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 TUR = {
+			 neutrality = -10
+			 }
+		 ITA = {
+			 any_owned = {
+				 limit = {
+					 is_core = CRT
+					 }
+				 secede_province = CRT
+				 }
+			 }
+		 14154 = {
+			 secede_province = GRE
+			 }
+		 TUR = {
+			 national_unity = 8
+			 }
+		 end_war = ITA
+		 TUR = {
+			 military_access = ITA
+			 }
+		 ITA = {
+			 military_access = TUR
+			 }
+		 ITA = {
+			 military_access = ENG
+			 }
+		 TUR = {
+			 military_access = ENG
+			 }
+		 ITA = {
+			 military_access = GRE
+			 }
+		 TUR = {
+			 military_access = GRE
+			 }
+		 TUR = {
+			 military_access = AUH
+			 }
+		 ITA = {
+			 military_access = AUH
+			 }
+		 }
+	}
 
-		title = "TURE1"
-		desc = "desc_TURE1"
-		picture = "ITAP1"
+#Treaty of Lausanne - End of Cleanup
 
-		option = {
-			name = "opta_TURE1"
-			ai_chance = { factor = 100 }
-			TUR = { neutrality = -10 }
-			#libya_region = { secede_province = ITA } 
-			#10731 = { secede_province = ITA } 
-			#5138 = { secede_province = ITA } 
-			ITA = { any_owned = { limit = { is_core = CRT } secede_province = CRT } }
-			TUR = { any_owned = { limit = { is_core = ITA } secede_province = ITA } }
-			14154 = { secede_province = GRE }
-			end_war = ITA
-			TUR = { military_access = ITA } 
-			ITA = { military_access = TUR }  
-			ITA = { military_access = ENG }  
-			TUR = { military_access = ENG }  
-			ITA = { military_access = GRE }  
-			TUR = { military_access = GRE }  
-			TUR = { military_access = AUH }  
-		}
-}
 
-country_event = {
+ country_event = {
+	title = "MILACCESS1"
+	desc = "desc_MILACCESS1"
+	id = 100301
+	 
+	picture = "milaccess"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	trigger = {
+		 tag = TUR
+		 war = no
+		 date = 1913.1.1
+		 OR = {
+			 TUR = {
+				 military_access = ITA
+				 }
+			 ITA = {
+				 military_access = TUR
+				 }
+			 ITA = {
+				 military_access = ENG
+				 }
+			 TUR = {
+				 military_access = ENG
+				 }
+			 ITA = {
+				 military_access = GRE
+				 }
+			 TUR = {
+				 military_access = GRE
+				 }
+			 TUR = {
+				 military_access = AUH
+				 }
+			 ITA = {
+				 military_access = AUH
+				 }
+			 }
+		 }
+	option = {
+		 name = "opta_TURE1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 TUR = {
+			 end_military_access = ITA
+			 }
+		 ITA = {
+			 end_military_access = TUR
+			 }
+		 ITA = {
+			 end_military_access = ENG
+			 }
+		 TUR = {
+			 end_military_access = ENG
+			 }
+		 ITA = {
+			 end_military_access = GRE
+			 }
+		 TUR = {
+			 end_military_access = GRE
+			 }
+		 TUR = {
+			 end_military_access = AUH
+			 }
+		 ITA = {
+			 end_military_access = AUH
+			 }
+		 }
+	}
 
-		id = 100303
-
-		major = yes
-		
-		is_triggered_only = yes
-		
-		fire_only_once = yes
-
-		title = "TURE1z"
-		desc = "desc_TURE1z"
-		picture = "ITAP1"
-
-		option = {
-			name = "opta_TURE1z"
-			ai_chance = { factor = 100 }
-			TUR = { neutrality = -10 }
-			ITA = { any_owned = { limit = { is_core = CRT } secede_province = CRT } }
-			14154 = { secede_province = GRE }
-			TUR = { national_unity = 8 }
-			end_war = ITA
-			TUR = { military_access = ITA } 
-			ITA = { military_access = TUR }  
-			ITA = { military_access = ENG }  
-			TUR = { military_access = ENG }  
-			ITA = { military_access = GRE }  
-			TUR = { military_access = GRE }  
-			TUR = { military_access = AUH }  
-			ITA = { military_access = AUH }  
-		}
-}
-
-country_event = {
-
-		id = 100301
-		
-		trigger = {
-			tag = TUR
-			war = no
-			date = 1913.1.1
-			OR = {
-				TUR = { military_access = ITA } 
-				ITA = { military_access = TUR }   
-				ITA = { military_access = ENG }  
-				TUR = { military_access = ENG }  
-				ITA = { military_access = GRE }  
-				TUR = { military_access = GRE }  
-				TUR = { military_access = AUH } 
-				ITA = { military_access = AUH }
-			}
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
-		
-		fire_only_once = yes
-
-		title = "MILACCESS1"
-		desc = "desc_MILACCESS1"
-		picture = "milaccess"
-
-		option = {
-			name = "opta_TURE1"
-			ai_chance = { factor = 100 }
-			TUR = { end_military_access = ITA } 
-			ITA = { end_military_access = TUR }   
-			ITA = { end_military_access = ENG }  
-			TUR = { end_military_access = ENG }  
-			ITA = { end_military_access = GRE }  
-			TUR = { end_military_access = GRE }  
-			TUR = { end_military_access = AUH } 
-			ITA = { end_military_access = AUH }
-		}
-}

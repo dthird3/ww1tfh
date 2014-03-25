@@ -1,37 +1,69 @@
-#BULGARIA JOINS THE WAR
-#BULGARIA FALLS
-country_event = {
-		
-		id = 190013
-		
-		is_triggered_only = yes
-		
-		fire_only_once = yes
-		
-		major = yes
-		
-		title = "WARE10"
-		desc = "desc_WARE10"
-		picture = "WARP10"
+#Treaty of Neuilly-sur-Seine
 
-		option = {
-			name = "opta_WARE10"
-			set_country_flag = war_over
-			BUL = { any_country = { limit = { war_with = BUL } end_war = BUL } }
-			BUL = { leave_faction = axis } #PROVINCES TO CEDE
-			4613 = { add_core = GRE }
-			4614 = { add_core = GRE }
-			BUL = { any_owned = { limit = { is_core = GRE } secede_province = GRE } }
-			
-			ENG = { guarantee = BUL }
-			BUL = { neutrality = 100 }
-			any_country = {
-				limit = { faction = allies }
-				non_aggression_pact = BUL
-			}
-			any_country = {
-				limit = { faction = allies }
-				threat = { who = BUL value = -150 }
-			}
-		}
-}
+#PROVINCES TO CEDE
+
+ country_event = {
+	title = "WARE10"
+	desc = "desc_WARE10"
+	id = 190013
+	 
+	picture = "WARP10"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	major = yes
+	 
+	option = {
+		 name = "opta_WARE10"
+		 set_country_flag = war_over
+		 BUL = {
+			 any_country = {
+				 limit = {
+					 war_with = BUL
+					 }
+				 end_war = BUL
+				 }
+			 }
+		 BUL = {
+			 leave_faction = axis
+			 }
+		 4613 = {
+			 add_core = GRE
+			 }
+		 4614 = {
+			 add_core = GRE
+			 }
+		 BUL = {
+			 any_owned = {
+				 limit = {
+					 is_core = GRE
+					 }
+				 secede_province = GRE
+				 }
+			 }
+		 ENG = {
+			 guarantee = BUL
+			 }
+		 BUL = {
+			 neutrality = 100
+			 }
+		 any_country = {
+			 limit = {
+				 faction = allies
+				 }
+			 non_aggression_pact = BUL
+			 }
+		 any_country = {
+			 limit = {
+				 faction = allies
+				 }
+			 threat = {
+				 who = BUL
+				 value = -150
+				 }
+			 }
+		 }
+	}
+
