@@ -1,17 +1,20 @@
-air = {
-expeditionary_owner = ENG
-name = "No20. Royal Flying Corps"
-location = 2613
-base = 2613
-leader = 10944
+ air = {
+	location = 2613  # Paris
+	base = 2613  # Paris
+	leader = 12530009 # Douglas W.S.
+	expeditionary_owner = ENG 
+	name = "No20. Royal Flying Corps"
+	
+	 wing = {
+		type = scout 
+		name = "41st Scout Squadron"
+		historical_model = 4 
+		}
+	
+	 wing = {
+		type = scout 
+		name = "42nd Scout Squadron"
+		historical_model = 4 
+		}
+	}
 
-wing = {
-name = "41st Scout Squadron"
-type = scout
-historical_model = 4}
-
-wing = {
-name = "42nd Scout Squadron"
-type = scout
-historical_model = 4}
-}

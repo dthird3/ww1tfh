@@ -1,80 +1,77 @@
-armygroup = {
-expeditionary_owner = USA
-name = "American Expeditionary Force"
-location = 2483
-dig_in = 00.000
-leader = 240574
+ armygroup = {
+	location = 2483  # Le Havre
+	leader = 17810001 # Pershing, J.J.
+	expeditionary_owner = USA 
+	name = "American Expeditionary Force"
+	
+	 regiment = {
+		type = hq_brigade 
+		experience = 0 
+		name = "AEF HQ"
+		historical_model = 0 
+		}
+	
+	 army = {
+		location = 2483  # Le Havre
+		leader = 17810006 # Liggett, H
+		expeditionary_owner = USA 
+		name = "1st Army"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 0 
+			name = "1st Army HQ"
+			historical_model = 0 
+			}
+		
+		 corps = {
+			location = 2483  # Le Havre
+			leader = 17810068 # Sturgis, S.D.
+			expeditionary_owner = USA 
+			name = "1st Corps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 0 
+				name = "1st Corps HQ"
+				historical_model = 0 
+				}
+			
+			 division = {
+				location = 2483  # Le Havre
+				leader = 17810052 # Johnson, E.M.
+				expeditionary_owner = USA 
+				name = "77th (Metropolitan) Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 2 
+					name = "153rd Infantry Brigade"
+					historical_model = 6 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 2 
+					name = "153/154th Infantry Brigade"
+					historical_model = 6 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 2 
+					name = "154th Infantry Brigade"
+					historical_model = 6 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 2 
+					name = "77th Division Artillery"
+					historical_model = 6 
+					}
+				}
+			}
+		}
+	}
 
-regiment = {
-type = hq_brigade
-name = "AEF HQ"
-historical_model = 0
-experience = 0
-}
-
-army = {
-expeditionary_owner = USA
-name = "1st Army"
-location = 2483
-dig_in = 00.000
-leader = 240579
-
-regiment = {
-type = hq_brigade
-name = "1st Army HQ"
-historical_model = 0
-experience = 0
-}
-
-corps = {
-expeditionary_owner = USA
-name = "1st Corps"
-location = 2483
-dig_in = 00.000
-leader = 240642
-
-regiment = {
-type = hq_brigade
-name = "1st Corps HQ"
-historical_model = 0
-experience = 0
-}
-
-division = {
-expeditionary_owner = USA
-name = "77th (Metropolitan) Division"
-location = 2483
-dig_in = 00.000
-leader = 240626
-
-regiment = {
-type = infantry_brigade
-name = "153rd Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "153/154th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "154th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = artillery_brigade
-name = "77th Division Artillery"
-historical_model = 6
-experience = 2
-}
-}
-}
-}
-}

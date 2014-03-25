@@ -1,266 +1,259 @@
-corps = {
-expeditionary_owner = USA
-name = "5th Corps"
-location = 2605
-dig_in = 00.000
-leader = 240583
+ corps = {
+	location = 2605  # Brest
+	leader = 17810010 # Funston
+	expeditionary_owner = USA 
+	name = "5th Corps"
+	
+	 regiment = {
+		type = hq_brigade 
+		experience = 0 
+		name = "5th Corps HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 2605  # Brest
+		leader = 17810008 # Cameron, G.H
+		expeditionary_owner = USA 
+		name = "4th (Ivy) Division"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "7th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "7/8th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "8th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 2 
+			name = "4th Division Artillery"
+			historical_model = 6 
+			}
+		}
+	
+	 division = {
+		location = 2605  # Brest
+		leader = 17810029 # McMahon, J.E.
+		expeditionary_owner = USA 
+		name = "5th Division"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "9th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "9/10th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "10th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 2 
+			name = "10th Division Artillery"
+			historical_model = 6 
+			}
+		}
+	
+	 division = {
+		location = 2483  # Le Havre
+		leader = 17810014 # Muir, C.H.
+		expeditionary_owner = USA 
+		name = "28th (Keystone) Division"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "55th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "55/56th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "56th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 2 
+			name = "28th Division Artillery"
+			historical_model = 6 
+			}
+		}
+	
+	 division = {
+		location = 2605  # Brest
+		leader = 17810019 # Bell G. Jnr
+		expeditionary_owner = USA 
+		name = "33rd (Prarie) Division"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "65th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "65/66th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "66th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 2 
+			name = "33rd Division Artillery"
+			historical_model = 6 
+			}
+		}
+	
+	 division = {
+		location = 2483  # Le Havre
+		leader = 17810434 # Wright, W.M.
+		expeditionary_owner = USA 
+		name = "35th (Santa Fe) Division"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "69th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "69/70th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "70th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 2 
+			name = "35th Division Artillery"
+			historical_model = 6 
+			}
+		}
+	
+	 division = {
+		location = 2483  # Le Havre
+		leader = 17810435 # Dean, J.T.
+		expeditionary_owner = USA 
+		name = "78th (Lightning) Division"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "155th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "155/165th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "156th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 2 
+			name = "78th Division Artillery"
+			historical_model = 6 
+			}
+		}
+	
+	 division = {
+		location = 2483  # Le Havre
+		leader = 17810070 # Burnham, W.P.
+		expeditionary_owner = USA 
+		name = "82nd (All American) Division"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "164th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "163/164th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "164th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 2 
+			name = "82nd Division Artillery"
+			historical_model = 6 
+			}
+		}
+	}
 
-regiment = {
-type = hq_brigade
-name = "5th Corps HQ"
-historical_model = 0
-experience = 0
-}
-
-division = {
-expeditionary_owner = USA
-name = "4th (Ivy) Division"
-location = 2605
-dig_in = 00.000
-leader = 240581
-
-regiment = {
-type = infantry_brigade
-name = "7th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "7/8th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "8th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = artillery_brigade
-name = "4th Division Artillery"
-historical_model = 6
-experience = 2
-}
-}
-
-division = {
-expeditionary_owner = USA
-name = "5th Division"
-location = 2605
-dig_in = 00.000
-leader = 240603
-
-regiment = {
-type = infantry_brigade
-name = "9th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "9/10th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "10th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = artillery_brigade
-name = "10th Division Artillery"
-historical_model = 6
-experience = 2
-}
-}
-
-division = {
-expeditionary_owner = USA
-name = "28th (Keystone) Division"
-location = 2483
-dig_in = 00.000
-leader = 240588
-
-regiment = {
-type = infantry_brigade
-name = "55th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "55/56th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "56th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = artillery_brigade
-name = "28th Division Artillery"
-historical_model = 6
-experience = 2
-}
-}
-
-division = {
-expeditionary_owner = USA
-name = "33rd (Prarie) Division"
-location = 2605
-dig_in = 00.000
-leader = 240593
-
-regiment = {
-type = infantry_brigade
-name = "65th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "65/66th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "66th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = artillery_brigade
-name = "33rd Division Artillery"
-historical_model = 6
-experience = 2
-}
-}
-
-division = {
-expeditionary_owner = USA
-name = "35th (Santa Fe) Division"
-location = 2483
-dig_in = 00.000
-leader = 241286
-
-regiment = {
-type = infantry_brigade
-name = "69th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "69/70th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "70th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = artillery_brigade
-name = "35th Division Artillery"
-historical_model = 6
-experience = 2
-}
-}
-
-division = {
-expeditionary_owner = USA
-name = "78th (Lightning) Division"
-location = 2483
-dig_in = 00.000
-leader = 241287
-
-regiment = {
-type = infantry_brigade
-name = "155th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "155/165th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "156th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = artillery_brigade
-name = "78th Division Artillery"
-historical_model = 6
-experience = 2
-}
-}
-
-division = {
-expeditionary_owner = USA
-name = "82nd (All American) Division"
-location = 2483
-dig_in = 00.000
-leader = 240644
-
-regiment = {
-type = infantry_brigade
-name = "164th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "163/164th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "164th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = artillery_brigade
-name = "82nd Division Artillery"
-historical_model = 6
-experience = 2
-}
-}
-}

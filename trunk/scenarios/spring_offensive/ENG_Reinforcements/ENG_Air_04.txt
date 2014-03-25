@@ -1,17 +1,20 @@
-air = {
-expeditionary_owner = ENG
-name = "No7. Royal Flying Corps"
-location = 2613
-base = 2613
-leader = 10941
+ air = {
+	location = 2613  # Paris
+	base = 2613  # Paris
+	leader = 12530007 # Capper
+	expeditionary_owner = ENG 
+	name = "No7. Royal Flying Corps"
+	
+	 wing = {
+		type = interceptor 
+		name = "13th Fighter Squadron"
+		historical_model = 3 
+		}
+	
+	 wing = {
+		type = interceptor 
+		name = "14th Fighter Squadron"
+		historical_model = 3 
+		}
+	}
 
-wing = {
-name = "13th Fighter Squadron"
-type = interceptor
-historical_model = 3}
-
-wing = {
-name = "14th Fighter Squadron"
-type = interceptor
-historical_model = 3}
-}
