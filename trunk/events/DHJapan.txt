@@ -417,11 +417,8 @@ option = {
 	name = "DH_EVENT_2011502_Option1"
 	ai_chance = { factor = 99
 		 }
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= JAP_ultimatum_extended
-			  } 
-		clr_global_flag = JAP_ultimatum_extended 
-		 }
+
+	clr_global_flag = JAP_ultimatum_extended 
 	relation = { who = ENG value = -25  }
 	neutrality = 30
 	
@@ -436,11 +433,20 @@ option = {
 	dissent = 5 
 	threat = { who = all value = 20  }
 	join_faction = allies
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= JAP_ultimatum_extended
-			  } 
-		clr_global_flag = JAP_ultimatum_extended 
+
+	clr_global_flag = JAP_ultimatum_extended 
+	
+set_global_flag = 2011502_EVENT_DONE
+
+}
+option = {
+	name = "DH_EVENT_2011502_Option3"
+	ai_chance = { factor = 0
 		 }
+	dissent = 5 
+	threat = { who = all value = 20  }
+	join_faction = axis
+	clr_global_flag = JAP_ultimatum_extended 
 	
 set_global_flag = 2011502_EVENT_DONE
 
