@@ -281,7 +281,36 @@ country_event = {
 				name = "schlieffen"
 				duration = 90
 			}
-			
+			add_wargoal = {
+				target = FRA
+				war_goal = { casus_belli = german_france }
+			}
+			add_wargoal = {
+				target = ENG
+				war_goal = { casus_belli = axis_england }
+			}
+			add_wargoal = {
+				target = RUS
+				war_goal = { casus_belli = axis_russia }
+			}
+			FRA = {
+				add_wargoal = {
+					target = GER
+					war_goal = { casus_belli = allies_germany }
+				}
+			}
+			RUS = {
+				add_wargoal = {
+					target = GER
+					war_goal = { casus_belli = allies_germany }
+				}
+			}
+			ENG = {
+				add_wargoal = {
+					target = GER
+					war_goal = { casus_belli = allies_germany }
+				}
+			}
 			random_country = {
 				limit = {
 					tag = AUH
@@ -351,6 +380,36 @@ country_event = {
 				duration = 60
 			}
 			
+			add_wargoal = {
+				target = FRA
+				war_goal = { casus_belli = german_france }
+			}
+			add_wargoal = {
+				target = ENG
+				war_goal = { casus_belli = axis_england }
+			}
+			add_wargoal = {
+				target = RUS
+				war_goal = { casus_belli = axis_russia }
+			}
+			FRA = {
+				add_wargoal = {
+					target = GER
+					war_goal = { casus_belli = allies_germany }
+				}
+			}
+			RUS = {
+				add_wargoal = {
+					target = GER
+					war_goal = { casus_belli = allies_germany }
+				}
+			}
+			ENG = {
+				add_wargoal = {
+					target = GER
+					war_goal = { casus_belli = allies_germany }
+				}
+			}
 			random_country = {
 				limit = {
 					tag = AUH
@@ -399,6 +458,37 @@ country_event = {
 				target = ENG
 				attacker_goal = { casus_belli = axis_england }
 				defender_goal = { casus_belli = allies_germany }
+			}
+			
+			add_wargoal = {
+				target = FRA
+				war_goal = { casus_belli = german_france }
+			}
+			add_wargoal = {
+				target = ENG
+				war_goal = { casus_belli = axis_england }
+			}
+			add_wargoal = {
+				target = RUS
+				war_goal = { casus_belli = axis_russia }
+			}
+			FRA = {
+				add_wargoal = {
+					target = GER
+					war_goal = { casus_belli = allies_germany }
+				}
+			}
+			RUS = {
+				add_wargoal = {
+					target = GER
+					war_goal = { casus_belli = allies_germany }
+				}
+			}
+			ENG = {
+				add_wargoal = {
+					target = GER
+					war_goal = { casus_belli = allies_germany }
+				}
 			}
 			random_country = {
 				limit = {

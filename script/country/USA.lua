@@ -226,9 +226,9 @@ function P.DiploScore_OfferTrade(voDiploScoreObj)
 		SAF = {Score = 20},
 		NZL = {Score = 20},
 		GRE = {Score = 20},
-		GER = {Score = -20},
-		AUH = {Score = -20},
-		ITA = {Score = -20},
+		GER = {Score = 40},
+		AUH = {Score = 40},
+		ITA = {Score = 20},
 		JAP = {Score = 50},
 		FRA = {Score = 50}}
 	
