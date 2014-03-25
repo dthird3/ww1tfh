@@ -11,18 +11,18 @@ country_event = {
 		
 		fire_only_once = no
 
-		title = "Britain asks for Troops"
-		desc = "Britain has requested that we provide direct military aid by giving them control of our armed forces"
-		picture = "BREE1"
+		title = "BREE1"
+		desc = "desc_BREE1"
+		picture = "BREE2"
 
 		option = {
-			name = "To war men!"
+			name = "opta_BREE1"
 			ai_chance = { factor = 100 }
 			ENG = { split_troops = 1 }
 			ENG = { country_event = 800002 }
 		}
 		option = {
-			name = "We will retain command"
+			name = "optb_BREE1"
 			ai_chance = { factor = 0 }
 			ENG = { country_event = 800003 }
 		}
@@ -36,12 +36,12 @@ country_event = {
 		
 		fire_only_once = no
 
-		title = "Dominions Provide Troops"
-		desc = "Our dominion has accepted our request for our armed forces"
+		title = "BREE2"
+		desc = "desc_BREE2"
 		picture = "BREE1"
 
 		option = {
-			name = "Great!"
+			name = "desc_BREE2"
 			ai_chance = { factor = 100 }
 		}
 	
@@ -54,12 +54,12 @@ country_event = {
 		
 		fire_only_once = no
 
-		title = "Dominions Refuse"
-		desc = "Our dominion has refused our request for our armed forces"
-		picture = "BREE1"
+		title = "BREE3"
+		desc = "desc_BREE3"
+		picture = "BREE3"
 
 		option = {
-			name = "Ok"
+			name = "desc_BREE3"
 			ai_chance = { factor = 100 }
 		}
 	
