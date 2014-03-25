@@ -1,93 +1,91 @@
-corps = {
-expeditionary_owner = USA
-name = "4th Corps"
-location = 2605
-dig_in = 00.000
-leader = 240588
+ corps = {
+	location = 2605  # Brest
+	leader = 17810014 # Muir, C.H.
+	expeditionary_owner = USA 
+	name = "4th Corps"
+	
+	 regiment = {
+		type = hq_brigade 
+		experience = 0 
+		name = "4th Corps HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 2605  # Brest
+		leader = 17810433 # Crawford, C.
+		expeditionary_owner = USA 
+		name = "3rd (Rock of the Marne) Division"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "5th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "5/6th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "6th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 2 
+			name = "3rd Division Artillery"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = light_armor_brigade 
+			experience = 4 
+			name = "306th Tank Brigade"
+			historical_model = 2 
+			}
+		}
+	
+	 division = {
+		location = 2605  # Brest
+		leader = 17810083 # Hoffman, R
+		expeditionary_owner = USA 
+		name = "93rd (Colored) Division"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "185th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "185/186th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "186th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 2 
+			name = "93rd Division Artillery"
+			historical_model = 6 
+			}
+		}
+	}
 
-regiment = {
-type = hq_brigade
-name = "4th Corps HQ"
-historical_model = 0
-experience = 0
-}
-
-division = {
-expeditionary_owner = USA
-name = "3rd (Rock of the Marne) Division"
-location = 2605
-dig_in = 00.000
-leader = 241285
-
-regiment = {
-type = infantry_brigade
-name = "5th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "5/6th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "6th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = artillery_brigade
-name = "3rd Division Artillery"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = light_armor_brigade
-name = "306th Tank Brigade"
-historical_model = 2
-experience = 4
-}
-}
-
-division = {
-expeditionary_owner = USA
-name = "93rd (Colored) Division"
-location = 2605
-dig_in = 00.000
-leader = 240657
-
-regiment = {
-type = infantry_brigade
-name = "185th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "185/186th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "186th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = artillery_brigade
-name = "93rd Division Artillery"
-historical_model = 6
-experience = 2
-}
-}
-}

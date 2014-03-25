@@ -1,122 +1,119 @@
-corps = {
-expeditionary_owner = USA
-name = "2nd Corps"
-location = 2605
-dig_in = 00.000
-leader = 240576
+ corps = {
+	location = 2605  # Brest
+	leader = 17810003 # Harbord
+	expeditionary_owner = USA 
+	name = "2nd Corps"
+	
+	 regiment = {
+		type = hq_brigade 
+		experience = 0 
+		name = "2nd Corps HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 2605  # Brest
+		leader = 17810032 # Barth, C.H.
+		expeditionary_owner = USA 
+		name = "7th Division"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "13th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "13/14th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "14th Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 2 
+			name = "7th Division Artillery"
+			historical_model = 6 
+			}
+		}
+	
+	 division = {
+		location = 2605  # Brest
+		leader = 17810056 # Smith W.R.
+		expeditionary_owner = USA 
+		name = "36th (Panther) Division"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "71st Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "71/72nd Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "72nd Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 2 
+			name = "36th Division Artillery"
+			historical_model = 6 
+			}
+		}
+	
+	 division = {
+		location = 2605  # Brest
+		leader = 17810078 # Getty, N.R.
+		expeditionary_owner = USA 
+		name = "88th Division"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "171st Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "171/172nd Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 2 
+			name = "172nd Infantry Brigade"
+			historical_model = 6 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 2 
+			name = "88th Division Artillery"
+			historical_model = 6 
+			}
+		}
+	}
 
-regiment = {
-type = hq_brigade
-name = "2nd Corps HQ"
-historical_model = 0
-experience = 0
-}
-
-division = {
-expeditionary_owner = USA
-name = "7th Division"
-location = 2605
-dig_in = 00.000
-leader = 240606
-
-regiment = {
-type = infantry_brigade
-name = "13th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "13/14th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "14th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = artillery_brigade
-name = "7th Division Artillery"
-historical_model = 6
-experience = 2
-}
-}
-
-division = {
-expeditionary_owner = USA
-name = "36th (Panther) Division"
-location = 2605
-dig_in = 00.000
-leader = 240630
-
-regiment = {
-type = infantry_brigade
-name = "71st Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "71/72nd Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "72nd Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = artillery_brigade
-name = "36th Division Artillery"
-historical_model = 6
-experience = 2
-}
-}
-
-division = {
-expeditionary_owner = USA
-name = "88th Division"
-location = 2605
-dig_in = 00.000
-leader = 240652
-
-regiment = {
-type = infantry_brigade
-name = "171st Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "171/172nd Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "172nd Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = artillery_brigade
-name = "88th Division Artillery"
-historical_model = 6
-experience = 2
-}
-}
-}
