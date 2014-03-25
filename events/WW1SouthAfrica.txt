@@ -14,7 +14,7 @@ country_event = {
 
 		option = {
 			name = "ACTION_NAME_JOIN_ENTENTE"
-			ai_chance = { factor = 100 }	
+			ai_chance = { factor = 90 }	
 			join_faction = allies
 			war = {	
 				target = GER
@@ -28,7 +28,7 @@ country_event = {
 		}
 		option = {
 			name = "ACTION_NAME_NEUTRAL"
-			ai_chance = { factor = 0 }
+			ai_chance = { factor = 10 }
 			SAF = { leave_faction = allies }
 			SAF = { leave_alliance = ENG }
 			GER = { kill_leader = 13110327 }                # Maritz does not defect to the Rebels, so not available to GER player
