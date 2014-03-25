@@ -5,11 +5,15 @@ country_event = {											# One time event at start to Ensure US Neutrality an
 		id = 100501
 
 		trigger = {
-			tag = USA										
+#		random_country = { limit = { ai = yes }}           # Event display only to AI country			
+#		trigger = {{ ai = yes }		
+			tag = LUX										
 			not = {year = 1915}
 			not = {month = 2}
 		}
 		fire_only_once = yes
+	
+		
 		title = "USAE6"
 		desc = "desc_USAE6"
 		picture = "USAP6"
@@ -19,13 +23,13 @@ country_event = {											# One time event at start to Ensure US Neutrality an
 			ai_chance = { factor = 100 }					
 			AUH = {threat = { who = USA value = -20 }}		
 			GER = {threat = { who = USA value = -30 }}
-			USA = {relation = { who = CAN value = 75 }}		
+			USA = {relation = { who = CAN value = 75 }}		# Relations don't set properly in Relations file, fix here.
 			USA = {relation = { who = FRA value = 65 }}
 			USA = {relation = { who = SAF value = 75 }}		
 			USA = {relation = { who = AST value = 75 }}		
 			USA = {relation = { who = NZL value = 75 }}
-			USA = {relation = { who = RUS value = 50 }}		# was at -50, now set to 0 which is about historical
-			USA = {relation = { who = GER value = 75 }}		# Restore reasonable relations with USA until later events worsen it
+			USA = {relation = { who = RUS value = 50 }}		
+			USA = {relation = { who = GER value = 75 }}		
 			USA = {relation = { who = AUH value = 75 }}		
 		}
 }
@@ -362,6 +366,34 @@ country_event = {
 			USA = { neutrality = -15 }
 			GER = {threat = { who = USA value = 25 }}
 			USA = { relation = { who = RUS value = 80 }}
+		}
+}
+
+###  USA Initial surge of volunteers on DOW of GER  ###
+### USA also get US_Army modifier set under triggered_modifiers ###
+country_event = {
+		
+		id = 100532
+		
+		major = no
+		
+		trigger = {
+			tag = USA
+			USA = { war_with = GER } 
+			NOT = { USA = { has_country_flag = Initial_Draft } }
+		}		
+		
+		fire_only_once = yes
+		
+		title = "ENGE8"
+		desc = "desc_ENGE8"
+		picture = "USA_Draft"
+
+		option = {
+			name = "opta_ENGE8"
+			ai_chance = { factor = 100 }		
+			USA = {manpower = 100}	
+			USA = { set_country_flag = Initial_Draft }			
 		}
 }
 
