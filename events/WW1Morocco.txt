@@ -1,146 +1,224 @@
+#Agadir Crisis
 
- #July 1 – The presence of the German warship Panther in the Moroccan port of Agadir triggers the Agadir Crisis.
- country_event = {
-
-		id = 100137
-
-		major = yes
-		
-		trigger = {
-			tag = GER
-			exists = FRA
-			exists = MOR
-			exists = ENG
-			war = no
-			date = 1911.7.1
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
-		
-		fire_only_once = yes
-
-		title = "GERE1"
-		desc = "desc_GERE1"
-		picture = "GERP1"
-
-		option = {
-			name = "opta_GERE1"
-			ai_chance = { factor = 100 }
-			FRA = { set_country_flag = agadir }
-			GER = { neutrality = -30 }
-			AUH = { neutrality = -30 }			
-			GER = { dissent = 3 }
-			GER = { money = -50 }
-			threat = { who = all value = 10 }
-			FRA = { country_event = 100138 }
-			ENG = { country_event = 100138 }
-			RUS = { country_event = 100139 }
-		}
-}
 
  country_event = {
+	title = "GERE1"
+	desc = "desc_GERE1"
+	id = 100137
+	 
+	picture = "GERP1"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	major = yes
+	 
+	trigger = {
+		 tag = GER
+		 exists = FRA
+		 exists = MOR
+		 exists = ENG
+		 war = no
+		 date = 1911.7.1
+		 }
+	option = {
+		 name = "opta_GERE1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 FRA = {
+			 set_country_flag = agadir
+			 }
+		 GER = {
+			 neutrality = -30
+			 }
+		 AUH = {
+			 neutrality = -30
+			 }
+		 GER = {
+			 dissent = 3
+			 }
+		 GER = {
+			 money = -50
+			 }
+		 threat = {
+			 who = all
+			 value = 10
+			 }
+		 FRA = {
+			 country_event = 100138
+			 }
+		 ENG = {
+			 country_event = 100138
+			 }
+		 RUS = {
+			 country_event = 100139
+			 }
+		 }
+	}
 
-		id = 100138
-		
-		is_triggered_only = yes
-		
-		fire_only_once = yes
+#Agadir Crisis
 
-		title = "GERE1"
-		desc = "desc_GERE1"
-		picture = "GERP1"
-
-		option = {
-			name = "opta_GERE1"
-			ai_chance = { factor = 100 }
-			threat = { who = all value = 5 }
-			THIS = { manpower = 20 }
-			THIS = { neutrality = -30 }
-			10021 = { secede_province = GER }
-			10021 = { add_core = GER }
-		}
-}
 
  country_event = {
+	title = "GERE1"
+	desc = "desc_GERE1"
+	id = 100138
+	 
+	picture = "GERP1"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_GERE1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 threat = {
+			 who = all
+			 value = 5
+			 }
+		 THIS = {
+			 manpower = 20
+			 }
+		 THIS = {
+			 neutrality = -30
+			 }
+		 10021 = {
+			 secede_province = GER
+			 }
+		 10021 = {
+			 add_core = GER
+			 }
+		 }
+	}
 
-		id = 100139
-		
-		is_triggered_only = yes
-		
-		fire_only_once = yes
+#Agadir Crisis
 
-		title = "GERE1"
-		desc = "desc_GERE1"
-		picture = "GERP1"
 
-		option = {
-			name = "opta_GERE1"
-			ai_chance = { factor = 100 }
-			threat = { who = all value = 5 }
-			THIS = { manpower = 50 }
-			THIS = { neutrality = -30 }
-		}
-}
+ country_event = {
+	title = "GERE1"
+	desc = "desc_GERE1"
+	id = 100139
+	 
+	picture = "GERP1"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_GERE1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 threat = {
+			 who = all
+			 value = 5
+			 }
+		 THIS = {
+			 manpower = 50
+			 }
+		 THIS = {
+			 neutrality = -30
+			 }
+		 }
+	}
 
-#MOROCCO
-country_event = {
+#Treaty of Fez
 
-		id = 100115
 
-		major = yes
-		
-		trigger = {
-			tag = FRA
-			exists = MOR
-			date = 1912.3.30
-			FRA = { has_country_flag = agadir }
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
-		
-		fire_only_once = yes
+ country_event = {
+	title = "FRAE1"
+	desc = "desc_FRAE1"
+	id = 100115
+	 
+	picture = "FRAP1"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	major = yes
+	 
+	trigger = {
+		 tag = FRA
+		 exists = MOR
+		 date = 1912.3.30
+		 FRA = {
+			 has_country_flag = agadir
+			 }
+		 }
+	option = {
+		 name = "opta_FRAE1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 FRA = {
+			 inherit = MOR
+			 }
+		 5324 = {
+			 secede_province = SPR
+			 }
+		 5323 = {
+			 secede_province = SPR
+			 }
+		 5322 = {
+			 secede_province = SPR
+			 }
+		 5321 = {
+			 secede_province = SPR
+			 }
+		 5319 = {
+			 secede_province = SPR
+			 }
+		 5318 = {
+			 secede_province = SPR
+			 }
+		 5258 = {
+			 secede_province = SPR
+			 }
+		 SPR = {
+			 country_event = 100116
+			 }
+		 10021 = {
+			 secede_province = GER
+			 }
+		 10073 = {
+			 secede_province = GER
+			 }
+		 9922 = {
+			 secede_province = GER
+			 }
+		 9844 = {
+			 secede_province = GER
+			 }
+		 }
+	}
 
-		title = "FRAE1"
-		desc = "desc_FRAE1"
-		picture = "FRAP1"
+#Treaty of Fez
 
-		option = {
-			name = "opta_FRAE1"
-			ai_chance = { factor = 100 }
-			FRA = { inherit = MOR }
-			5324 = { secede_province = SPR }
-			5323 = { secede_province = SPR }
-			5322 = { secede_province = SPR }
-			5321 = { secede_province = SPR }
-			5319 = { secede_province = SPR }
-			5318 = { secede_province = SPR }
-			5258 = { secede_province = SPR }
-			SPR = { country_event = 100116 }
-			10021 = { secede_province = GER }
-			10073 = { secede_province = GER }
-			9922 = { secede_province = GER }
-			9844 = { secede_province = GER }
-		}
-}
 
-#MOROCCO
-country_event = {
+ country_event = {
+	title = "FRAE1"
+	desc = "desc_FRAE1"
+	id = 100116
+	 
+	picture = "FRAP1"
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_FRAE1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 neutrality = -30
+		 }
+	}
 
-		id = 100116
-
-		is_triggered_only = yes
-
-		title = "FRAE1"
-		desc = "desc_FRAE1"
-		picture = "FRAP1"
-
-		option = {
-			name = "opta_FRAE1"
-			ai_chance = { factor = 100 }
-			neutrality = -30
-		}
-}

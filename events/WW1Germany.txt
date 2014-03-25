@@ -1,266 +1,551 @@
-# Commence the Zeppelin bombings	======================================================================================================================					
-#												# This is to be set as a German National Decision - with bonus modifiers if accepted 
-country_event = {
+#Commence Zeppelin campaign
 
-		id = 100510
 
-		is_triggered_only = yes
-		
-		major = yes
-
-		fire_only_once = yes
-
-		title = "EVT1914_2001560_NAME"
-		desc = "EVT1914_2001560_DESC"
-		picture = "zeppelin_london"
-
-		option = {
-			name = "EVT1914_2001560_ACTIONA"
-			ai_chance = { factor = 100 }
-			USA = { neutrality = -2 }
-			USA = { relation = { who = GER value = -10 }}
-			GER = { add_country_modifier = { name = Zeppelin_bombing duration = 365 } }
-			ENG = { country_event = 100511 }
-		}
-}
-
-	country_event = {
-		
-		id = 100511
-		
-		is_triggered_only = yes
-		
-		fire_only_once = yes
-		
-		title = "EVT1914_2001560_NAME"
-		desc = "EVT1914_2001560_DESC"
-		picture = "zeppelin_london"
-
-		option = {
-			name = "ACTION_NAME_OK"
-			ai_chance = { factor = 100 }
-			dissent = 5
-			national_unity = -2
-		}
+ country_event = {
+	title = "EVT1914_2001560_NAME"
+	desc = "EVT1914_2001560_DESC"
+	id = 100510
+	 
+	picture = "zeppelin_london"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	major = yes
+	 
+	option = {
+		 name = "EVT1914_2001560_ACTIONA"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 USA = {
+			 neutrality = -2
+			 }
+		 USA = {
+			 relation = {
+				 who = GER
+				 value = -10
+				 }
+			 }
+		 GER = {
+			 add_country_modifier = {
+				 name = Zeppelin_bombing
+				 duration = 365
+				 }
+			 }
+		 ENG = {
+			 country_event = 100511
+			 }
+		 }
 	}
 
-# Unlimited submarine warfare		German auto retaliation to North Sea War Zone
-country_event = {
-
-		id = 100512
-
-		major = yes
-		
-		trigger = {
-			tag = GER
-			GER = {	war_with = ENG }					
-			USA = { war = no }
-			date = 1915.2.1												
-			ENG = { has_country_flag = North_Sea_War_Zone }
-			NOT = { has_country_flag = unrest_subs }
-		}
-		
-		fire_only_once = yes
-
-		title = "USAE7"
-		desc = "desc_USAE7"
-		picture = "USAP7"
-
-		option = {
-			name = "opta_USAE7"
-			ai_chance = { factor = 100 }
-			USA = { neutrality = -1 }
-			GER = { threat = { who = USA value = 2 }}
-			set_country_flag = unrest_subs
-		}
-}
+#Commence Zeppelin campaign
 
 
-# USA Demands end to Unrestricted Submarine Warfare								
-country_event = {
+ country_event = {
+	title = "EVT1914_2001560_NAME"
+	desc = "EVT1914_2001560_DESC"
+	id = 100511
+	 
+	picture = "zeppelin_london"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "ACTION_NAME_OK"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 dissent = 5
+		 national_unity = -2
+		 }
+	}
 
-		id = 100517
-
-		major = yes
-		
-		trigger = {
-			tag = GER
-			GER = {	war_with = ENG }						
-			USA = { has_country_flag = lusitania }
-			not = { USA = { has_country_flag = demand_no_unrest_subs } }
-		}
-			
-		mean_time_to_happen = {	days = 2 }
-		
-		fire_only_once = yes
-
-		title = "EVT1914_2008005_NAME"
-		desc = "EVT1914_2008005_DESC"
-		picture = "USAP8"
-
-		option = {
-			name = "EVT1914_2008005_ACTIONA"						# Agree to Stop - lose convoy raiding bonus
-			ai_chance = { factor = 100 }
-			USA = { neutrality = 5 }
-			USA = { relation = { who = GER value = 10 }}
-			USA = { set_country_flag = demand_no_unrest_subs }		
-			GER = { set_country_flag = stopped_unrest_subs }
-		}
-		option = {
-			name = "EVT1914_2008005_ACTIONB"						# Refuse to Stop and keep convoy raiding bonus
-			ai_chance = { factor = 0 }
-			GER = {threat = { who = USA value = 5 }}
-			USA = { relation = { who = GER value = -40 }}
-			USA = { set_country_flag = demand_no_unrest_subs }
-		}
-}
-
-# Break the Blockade			Germany National Decision - gets bonuses to help defeat the UK Navy
-country_event = {				
-
-		id = 100518
-
-		major = yes
-		
-		is_triggered_only = yes
-		
-		fire_only_once = yes
-
-		title = "EVT1914_2008006_NAME"
-		desc = "EVT1914_2008006_DESC"
-		picture = "German_Fleet"
-
-		option = {
-			name = "EVT1914_2008006_ACTIONA"
-			ai_chance = { factor = 100 }
-			add_country_modifier = { name = break_UK_blockade duration = 90 }	 	# German Naval bonuses for 3 months  
-			USA = { country_event = 100520 } 										# Battle of Jutland event
-        }
-}
+#Unrestricted Submarine Warfare
 
 
-# Send Zimmermann Telegram and Resume Sub war         This is to happen approx 8 months after Jutland or by 1/2/17 whichever comes first?
-country_event = {
+ country_event = {
+	title = "USAE7"
+	desc = "desc_USAE7"
+	id = 100512
+	 
+	picture = "USAP7"
+	 
+	fire_only_once = yes
+	 
+	major = yes
+	 
+	trigger = {
+		 tag = GER
+		 GER = {
+			 war_with = ENG
+			 }
+		 USA = {
+			 war = no
+			 }
+		 date = 1915.2.1
+		 ENG = {
+			 has_country_flag = North_Sea_War_Zone
+			 }
+		 NOT = {
+			 has_country_flag = unrest_subs
+			 }
+		 }
+	option = {
+		 name = "opta_USAE7"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 USA = {
+			 neutrality = -1
+			 }
+		 GER = {
+			 threat = {
+				 who = USA
+				 value = 2
+				 }
+			 }
+		 set_country_flag = unrest_subs
+		 }
+	}
 
-		id = 100521
+#US Ultimatium to Stop Submarine attacks
 
-		major = yes
-		
-		trigger = {
-			tag = GER
-			GER = {	war_with = ENG }
-			GER = { has_country_flag = stopped_unrest_subs }
-			USA = { has_country_flag = Jutland } 
-			NOT = { GER = { has_country_flag = Send_Zimmermann } }
-		}
-		
-		mean_time_to_happen = {	months = 8 }
-		
-		fire_only_once = yes
+# Agree to Stop - lose convoy raiding bonus
+# Refuse to Stop and keep convoy raiding bonus
 
-		title = "EVT1914_2008007_NAME"
-		desc = "EVT1914_2008007_DESC"
-		picture = "Zimmermann_Telegram"
+ country_event = {
+	title = "EVT1914_2008005_NAME"
+	desc = "EVT1914_2008005_DESC"
+	id = 100517
+	 
+	picture = "USAP8"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 2
+		 }
+	major = yes
+	 
+	trigger = {
+		 tag = GER
+		 GER = {
+			 war_with = ENG
+			 }
+		 USA = {
+			 has_country_flag = lusitania
+			 }
+		 not = {
+			 USA = {
+				 has_country_flag = demand_no_unrest_subs
+				 }
+			 }
+		 }
+	option = {
+		 name = "EVT1914_2008005_ACTIONA"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 USA = {
+			 neutrality = 5
+			 }
+		 USA = {
+			 relation = {
+				 who = GER
+				 value = 10
+				 }
+			 }
+		 USA = {
+			 set_country_flag = demand_no_unrest_subs
+			 }
+		 GER = {
+			 set_country_flag = stopped_unrest_subs
+			 }
+		 }
+	option = {
+		 name = "EVT1914_2008005_ACTIONB"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 GER = {
+			 threat = {
+				 who = USA
+				 value = 5
+				 }
+			 }
+		 USA = {
+			 relation = {
+				 who = GER
+				 value = -40
+				 }
+			 }
+		 USA = {
+			 set_country_flag = demand_no_unrest_subs
+			 }
+		 }
+	}
 
-		option = {
-			name = "EVT1914_2008007_ACTIONA"
-			ai_chance = { factor = 100 }
-			random_country = { limit = { exists = MEX }
-				MEX = { country_event = 183 }
-			}
-			random_country = { limit = { exists = MXR not = { exists = MEX } }
-				MXR = { country_event = 187 }
-			}
-			random = { 
-				chance = 50 
-				USA = { country_event = 100526 }
-				ENG = { country_event = 41 }
-			} 
-			GER = { set_country_flag = Send_Zimmermann }
-			GER = { clr_country_flag = stopped_unrest_subs }		# Give Germany Sub warfare bonuses back
-		}
-}
-# Germany Takes Brussels
-country_event = {
+#Break the UK Blockade
 
-		id = 100540
+# German Naval bonuses for 3 months
 
-		
-		trigger = {
-			tag = GER
-			GER = {	war_with = ENG }
-			controls = 2311
-			NOT = { has_country_flag = brussels_taken }
-		}
-		
-		mean_time_to_happen = {	days = 1 }
-		
-		fire_only_once = yes
+ country_event = {
+	title = "EVT1914_2008006_NAME"
+	desc = "EVT1914_2008006_DESC"
+	id = 100518
+	 
+	picture = "German_Fleet"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	major = yes
+	 
+	option = {
+		 name = "EVT1914_2008006_ACTIONA"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 add_country_modifier = {
+			 name = break_UK_blockade
+			 duration = 90
+			 }
+		 USA = {
+			 country_event = 100520
+			 }
+		 }
+	}
 
-		title = "EVENT100522_TITLE"
-		desc = "EVENT100522_DESC"
-		picture = "Brussels"
+#Resume the Submarine War
 
-		option = {
-			name = "EVENT100522_ACTIONA"
-			manpower = 100
-			set_country_flag = brussels_taken
-		}
-}
+# Give Germany Sub warfare bonuses back
+
+ country_event = {
+	title = "EVT1914_2008007_NAME"
+	desc = "EVT1914_2008007_DESC"
+	id = 100521
+	 
+	picture = "Zimmermann_Telegram"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 months = 8
+		 }
+	major = yes
+	 
+	trigger = {
+		 tag = GER
+		 GER = {
+			 war_with = ENG
+			 }
+		 GER = {
+			 has_country_flag = stopped_unrest_subs
+			 }
+		 USA = {
+			 has_country_flag = Jutland
+			 }
+		 NOT = {
+			 GER = {
+				 has_country_flag = Send_Zimmermann
+				 }
+			 }
+		 }
+	option = {
+		 name = "EVT1914_2008007_ACTIONA"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 random_country = {
+			 limit = {
+				 exists = MEX
+				 }
+			 MEX = {
+				 country_event = 183
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 exists = MXR
+				 not = {
+					 exists = MEX
+					 }
+				 }
+			 MXR = {
+				 country_event = 187
+				 }
+			 }
+		 random = {
+			 chance = 50
+			 USA = {
+				 country_event = 100526
+				 }
+			 ENG = {
+				 country_event = 41
+				 }
+			 }
+		 GER = {
+			 set_country_flag = Send_Zimmermann
+			 }
+		 GER = {
+			 clr_country_flag = stopped_unrest_subs
+			 }
+		 }
+	}
+
+#Brussels has Fallen
 
 
-#FALL OF GERMANY
-country_event = {
-		
-		id = 190002
-		
-		is_triggered_only = yes
-		
-		fire_only_once = yes
-		
-		major = yes
-		
-		title = "WARE2"
-		desc = "desc_WARE2"
-		picture = "WARP2"
+ country_event = {
+	title = "EVENT100522_TITLE"
+	desc = "EVENT100522_DESC"
+	id = 100540
+	 
+	picture = "Brussels"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	trigger = {
+		 tag = GER
+		 GER = {
+			 war_with = ENG
+			 }
+		 controls = 2311
+		 NOT = {
+			 has_country_flag = brussels_taken
+			 }
+		 }
+	option = {
+		 name = "EVENT100522_ACTIONA"
+		 manpower = 100
+		 set_country_flag = brussels_taken
+		 }
+	}
 
-		option = {
-			name = "opta_WARE2"
-			ai_chance = { factor = 100 }
-			set_country_flag = war_over
-			
-			GER = { any_country = { limit = { war_with = GER } end_war = GER } }
-			GER = { leave_faction = axis }
-			GER = { any_owned = { limit = { is_core = UKR } secede_province = UKR } }
-			GER = { any_owned = { limit = { is_core = LAT } secede_province = LAT } }
-			GER = { any_owned = { limit = { is_core = LIT } secede_province = LIT } }
-			GER = { any_owned = { limit = { is_core = EST } secede_province = EST } }
-			GER = { any_owned = { limit = { is_core = ROM } secede_province = ROM } }
-			GER = { any_owned = { limit = { is_core = RUS } secede_province = RUS } }
-			GER = { any_owned = { limit = { is_core = POL } secede_province = POL } }
-			GER = { any_owned = { limit = { is_core = JAP } secede_province = JAP } }
-			GER = { any_owned = { limit = { is_core = AST } secede_province = AST } }
-			GER = { any_owned = { limit = { is_core = ENG } secede_province = ENG } }
-			GER = { any_owned = { limit = { is_core = FRA } secede_province = FRA } }
-			GER = { any_owned = { limit = { is_core = SAF } secede_province = SAF } }
-			GER = { any_owned = { limit = { is_core = DEN } secede_province = DEN } }
-			GER = { any_owned = { limit = { is_core = RUS } secede_province = RUS } }
-			GER = { any_owned = { limit = { is_core = SOV } secede_province = SOV } }
-			GER = { any_owned = { limit = { is_core = NZL } secede_province = NZL } }
-			UKR = { any_owned = { limit = { is_core = GER } remove_core = GER } }
-			AUH = { any_owned = { limit = { is_core = GER } remove_core = GER } }
-			
-			ENG = { guarantee = GER }
-			GER = { neutrality = 100 }
-			any_country = {
-				limit = { faction = allies }
-				non_aggression_pact = GER
-			}
-			ENG = { threat = { who = GER value = -150 } }
-			FRA = { threat = { who = GER value = -150 } }
-			ITA = { threat = { who = GER value = -150 } }
-			RUS = { threat = { who = GER value = -150 } }
-			
-			6617 = { secede_province = NZL } 
-		}
-}
+#Treaty of Versailles
+
+
+ country_event = {
+	title = "WARE2"
+	desc = "desc_WARE2"
+	id = 190002
+	 
+	picture = "WARP2"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	major = yes
+	 
+	option = {
+		 name = "opta_WARE2"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 set_country_flag = war_over
+		 GER = {
+			 any_country = {
+				 limit = {
+					 war_with = GER
+					 }
+				 end_war = GER
+				 }
+			 }
+		 GER = {
+			 leave_faction = axis
+			 }
+		 GER = {
+			 any_owned = {
+				 limit = {
+					 is_core = UKR
+					 }
+				 secede_province = UKR
+				 }
+			 }
+		 GER = {
+			 any_owned = {
+				 limit = {
+					 is_core = LAT
+					 }
+				 secede_province = LAT
+				 }
+			 }
+		 GER = {
+			 any_owned = {
+				 limit = {
+					 is_core = LIT
+					 }
+				 secede_province = LIT
+				 }
+			 }
+		 GER = {
+			 any_owned = {
+				 limit = {
+					 is_core = EST
+					 }
+				 secede_province = EST
+				 }
+			 }
+		 GER = {
+			 any_owned = {
+				 limit = {
+					 is_core = ROM
+					 }
+				 secede_province = ROM
+				 }
+			 }
+		 GER = {
+			 any_owned = {
+				 limit = {
+					 is_core = RUS
+					 }
+				 secede_province = RUS
+				 }
+			 }
+		 GER = {
+			 any_owned = {
+				 limit = {
+					 is_core = POL
+					 }
+				 secede_province = POL
+				 }
+			 }
+		 GER = {
+			 any_owned = {
+				 limit = {
+					 is_core = JAP
+					 }
+				 secede_province = JAP
+				 }
+			 }
+		 GER = {
+			 any_owned = {
+				 limit = {
+					 is_core = AST
+					 }
+				 secede_province = AST
+				 }
+			 }
+		 GER = {
+			 any_owned = {
+				 limit = {
+					 is_core = ENG
+					 }
+				 secede_province = ENG
+				 }
+			 }
+		 GER = {
+			 any_owned = {
+				 limit = {
+					 is_core = FRA
+					 }
+				 secede_province = FRA
+				 }
+			 }
+		 GER = {
+			 any_owned = {
+				 limit = {
+					 is_core = SAF
+					 }
+				 secede_province = SAF
+				 }
+			 }
+		 GER = {
+			 any_owned = {
+				 limit = {
+					 is_core = DEN
+					 }
+				 secede_province = DEN
+				 }
+			 }
+		 GER = {
+			 any_owned = {
+				 limit = {
+					 is_core = RUS
+					 }
+				 secede_province = RUS
+				 }
+			 }
+		 GER = {
+			 any_owned = {
+				 limit = {
+					 is_core = SOV
+					 }
+				 secede_province = SOV
+				 }
+			 }
+		 GER = {
+			 any_owned = {
+				 limit = {
+					 is_core = NZL
+					 }
+				 secede_province = NZL
+				 }
+			 }
+		 UKR = {
+			 any_owned = {
+				 limit = {
+					 is_core = GER
+					 }
+				 remove_core = GER
+				 }
+			 }
+		 AUH = {
+			 any_owned = {
+				 limit = {
+					 is_core = GER
+					 }
+				 remove_core = GER
+				 }
+			 }
+		 ENG = {
+			 guarantee = GER
+			 }
+		 GER = {
+			 neutrality = 100
+			 }
+		 any_country = {
+			 limit = {
+				 faction = allies
+				 }
+			 non_aggression_pact = GER
+			 }
+		 ENG = {
+			 threat = {
+				 who = GER
+				 value = -150
+				 }
+			 }
+		 FRA = {
+			 threat = {
+				 who = GER
+				 value = -150
+				 }
+			 }
+		 ITA = {
+			 threat = {
+				 who = GER
+				 value = -150
+				 }
+			 }
+		 RUS = {
+			 threat = {
+				 who = GER
+				 value = -150
+				 }
+			 }
+		 6617 = {
+			 secede_province = NZL
+			 }
+		 }
+	}
+

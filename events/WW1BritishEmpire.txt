@@ -1,66 +1,129 @@
+#Britain asks for Troops
 
-country_event = {
 
-		id = 800001
+ country_event = {
+	title = "Britain
+	 asks
+	 for
+	 Troops"
+	desc = "Britain
+	 has
+	 requested
+	 that
+	 we
+	 provide
+	 direct
+	 military
+	 aid
+	 by
+	 giving
+	 them
+	 control
+	 of
+	 our
+	 armed
+	 forces"
+	id = 800001
+	 
+	picture = "BREE1"
+	 
+	fire_only_once = no
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	option = {
+		 name = "To
+		 war
+		 men!"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 ENG = {
+			 split_troops = 1
+			 }
+		 ENG = {
+			 country_event = 800002
+			 }
+		 }
+	option = {
+		 name = "We
+		 will
+		 retain
+		 command"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 ENG = {
+			 country_event = 800003
+			 }
+		 }
+	}
 
-		is_triggered_only = yes
-		
-		mean_time_to_happen = {
-			days = 1
-		}
-		
-		fire_only_once = no
+#Dominions Provide Troops
 
-		title = "BREE1"
-		desc = "desc_BREE1"
-		picture = "BREE2"
 
-		option = {
-			name = "opta_BREE1"
-			ai_chance = { factor = 100 }
-			ENG = { split_troops = 1 }
-			ENG = { country_event = 800002 }
-		}
-		option = {
-			name = "optb_BREE1"
-			ai_chance = { factor = 0 }
-			ENG = { country_event = 800003 }
-		}
-	
-}
-country_event = {
+ country_event = {
+	title = "Dominions
+	 Provide
+	 Troops"
+	desc = "Our
+	 dominion
+	 has
+	 accepted
+	 our
+	 request
+	 for
+	 our
+	 armed
+	 forces"
+	id = 800002
+	 
+	picture = "BREE1"
+	 
+	fire_only_once = no
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "Great!"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 }
+	}
 
-		id = 800002
+#Dominions Refuse
 
-		is_triggered_only = yes
-		
-		fire_only_once = no
 
-		title = "BREE2"
-		desc = "desc_BREE2"
-		picture = "BREE1"
+ country_event = {
+	title = "Dominions
+	 Refuse"
+	desc = "Our
+	 dominion
+	 has
+	 refused
+	 our
+	 request
+	 for
+	 our
+	 armed
+	 forces"
+	id = 800003
+	 
+	picture = "BREE1"
+	 
+	fire_only_once = no
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "Ok"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 }
+	}
 
-		option = {
-			name = "desc_BREE2"
-			ai_chance = { factor = 100 }
-		}
-	
-}
-country_event = {
-
-		id = 800003
-
-		is_triggered_only = yes
-		
-		fire_only_once = no
-
-		title = "BREE3"
-		desc = "desc_BREE3"
-		picture = "BREE3"
-
-		option = {
-			name = "desc_BREE3"
-			ai_chance = { factor = 100 }
-		}
-	
-}

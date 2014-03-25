@@ -1,239 +1,382 @@
-# Albania 1910 Revolt
-country_event = {
+#Albanian Uprising!
 
-		id = 2084505
 
-		major = yes
-		
-		trigger = {
-			tag = TUR
-			NOT = { exists = ALB }
-			date = 1910.5.3
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
-		
-		fire_only_once = yes
-
-		title = "TURE2"							
-		desc = "desc_TURE1910"
-		picture = "TURP2"
-
-		option = {
-			name = "opta_TURE2"
-			ai_chance = { factor = 100 }
-			dissent = 2
-			4368 = { secede_province = ALB }
-			4610 = { secede_province = ALB }
-			4718 = { secede_province = ALB }
-			4555 = { secede_province = ALB }
-			4368 = { militia_brigade = current }
-			4610 = { militia_brigade = current }
-			4718 = { militia_brigade = current }
-			4555 = { militia_brigade = current }
-			4368 = {supplies = 500}
-			4610 = {supplies = 500}
-			4718 = {supplies = 500}
-			4555 = {supplies = 500}
-			ALB = {	war = {	
-					target = TUR
-					attacker_goal = { casus_belli=aquire_all_cores }
-					}
-			}
-		}
-}
-
-# Albania 1911 Revolt
-country_event = {
-
-		id = 2084506
-
-		major = yes
-		
-		trigger = {
-			tag = TUR
-			NOT = { exists = ALB }
-			date = 1911.3.24
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
-		
-		fire_only_once = yes
-
-		title = "TURE2"							
-		desc = "desc_TURE1911"
-		picture = "TURP2"
-
-		option = {
-			name = "opta_TURE2"
-			ai_chance = { factor = 100 }
-			dissent = 2
-			4494 = { secede_province = ALB }
-			4430 = { secede_province = ALB }
-			4494 = { militia_brigade = current }
-			4430 = { militia_brigade = current }
-			4494 = {supplies = 500}
-			4430 = {supplies = 500}
-			ALB = {	war = {	
-					target = TUR
-					attacker_goal = { casus_belli=aquire_all_cores }
-					}
-			}
-		}
-}
-
-## Albania revolution 1912
-country_event = {
-
-		id = 100119
-
-		major = yes
-		
-		trigger = {
-			tag = TUR
-			NOT = { exists = ALB }
-			exists = MTN
-			exists = BUL
-			exists = GRE
-			date = 1912.9.20
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
-		
-		fire_only_once = yes
-
-		title = "TURE2"
-		desc = "desc_TURE2"
-		picture = "TURP2"
-
-		option = {
-			name = "opta_TURE2"
-			ai_chance = { factor = 100 }
-			4716 = { secede_province = ALB }
-			4608 = { secede_province = ALB }
-			4663 = { secede_province = ALB }
-			4663 = { bergsjaeger_brigade = current }
-			4663 = { infantry_brigade = current }
-			4663 = { infantry_brigade = current }
-			4663 = { infantry_brigade = current }
-			4716 = { infantry_brigade = current }
-			4716 = { infantry_brigade = current }
-			ALB = { capital = 4663 }
-			ALB = { manpower = 150 }
-			ALB = { supplies = 4000 }
-			TUR = {	set_country_flag = alb_war }
-			ALB = {	war = {	
-					target = TUR
-					attacker_goal = { casus_belli=aquire_all_cores }
-					}
-			}
-		}
-}
-
-country_event = {
-
-		id = 100120
-
-		is_triggered_only = yes
-		
-		fire_only_once = yes
-
-		title = "TURE3"
-		desc = "desc_TURE3"
-		picture = "TURP3"
-
-		option = {
-			name = "opta_TURE3"
-			ai_chance = { factor = 100 }
-			TUR = { set_country_flag = form_albania }
-			capital = 4663
-		}
-}
-
-country_event = {
-	id = 2084503	# Evacuate through Albania ?
-		
+ country_event = {
+	title = "TURE2"
+	desc = "desc_TURE1910"
+	id = 2084505
+	 
+	picture = "TURP2"
+	 
 	fire_only_once = yes
-	
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	major = yes
+	 
 	trigger = {
-			tag = SER
-			NOT = { SER = { controls = 4368 } }
-			NOT = { SER = { controls = 3912 } }
-			OR = {
-				SER = { controls = 4495 }
-				SER = { controls = 4609 }
-			}
-			exists = ALB
-			faction = allies
-			war_with = AUH
-			NOT = { SER = { war_with = ALB } }
-			NOT = { SER = { alliance_with = ALB } }
-			NOT = { ALB = { military_access = SER } }
-			NOT = { SER = { has_country_flag = retreat_alb } }
+		 tag = TUR
+		 NOT = {
+			 exists = ALB
+			 }
+		 date = 1910.5.3
+		 }
+	option = {
+		 name = "opta_TURE2"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 dissent = 2
+		 4368 = {
+			 secede_province = ALB
+			 }
+		 4610 = {
+			 secede_province = ALB
+			 }
+		 4718 = {
+			 secede_province = ALB
+			 }
+		 4555 = {
+			 secede_province = ALB
+			 }
+		 4368 = {
+			 militia_brigade = current
+			 }
+		 4610 = {
+			 militia_brigade = current
+			 }
+		 4718 = {
+			 militia_brigade = current
+			 }
+		 4555 = {
+			 militia_brigade = current
+			 }
+		 4368 = {
+			 supplies = 500
+			 }
+		 4610 = {
+			 supplies = 500
+			 }
+		 4718 = {
+			 supplies = 500
+			 }
+		 4555 = {
+			 supplies = 500
+			 }
+		 ALB = {
+			 war = {
+				 target = TUR
+				 attacker_goal = {
+					 casus_belli = aquire_all_cores
+					 }
+				 }
+			 }
+		 }
 	}
-   
+
+#Albanian Uprising!
+
+
+ country_event = {
+	title = "TURE2"
+	desc = "desc_TURE1911"
+	id = 2084506
+	 
+	picture = "TURP2"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	major = yes
+	 
+	trigger = {
+		 tag = TUR
+		 NOT = {
+			 exists = ALB
+			 }
+		 date = 1911.3.24
+		 }
+	option = {
+		 name = "opta_TURE2"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 dissent = 2
+		 4494 = {
+			 secede_province = ALB
+			 }
+		 4430 = {
+			 secede_province = ALB
+			 }
+		 4494 = {
+			 militia_brigade = current
+			 }
+		 4430 = {
+			 militia_brigade = current
+			 }
+		 4494 = {
+			 supplies = 500
+			 }
+		 4430 = {
+			 supplies = 500
+			 }
+		 ALB = {
+			 war = {
+				 target = TUR
+				 attacker_goal = {
+					 casus_belli = aquire_all_cores
+					 }
+				 }
+			 }
+		 }
+	}
+
+#Albanian Uprising!
+
+
+ country_event = {
+	title = "TURE2"
+	desc = "desc_TURE2"
+	id = 100119
+	 
+	picture = "TURP2"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	major = yes
+	 
+	trigger = {
+		 tag = TUR
+		 NOT = {
+			 exists = ALB
+			 }
+		 exists = MTN
+		 exists = BUL
+		 exists = GRE
+		 date = 1912.9.20
+		 }
+	option = {
+		 name = "opta_TURE2"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 4716 = {
+			 secede_province = ALB
+			 }
+		 4608 = {
+			 secede_province = ALB
+			 }
+		 4663 = {
+			 secede_province = ALB
+			 }
+		 4663 = {
+			 bergsjaeger_brigade = current
+			 }
+		 4663 = {
+			 infantry_brigade = current
+			 }
+		 4663 = {
+			 infantry_brigade = current
+			 }
+		 4663 = {
+			 infantry_brigade = current
+			 }
+		 4716 = {
+			 infantry_brigade = current
+			 }
+		 4716 = {
+			 infantry_brigade = current
+			 }
+		 ALB = {
+			 capital = 4663
+			 }
+		 ALB = {
+			 manpower = 150
+			 }
+		 ALB = {
+			 supplies = 4000
+			 }
+		 TUR = {
+			 set_country_flag = alb_war
+			 }
+		 ALB = {
+			 war = {
+				 target = TUR
+				 attacker_goal = {
+					 casus_belli = aquire_all_cores
+					 }
+				 }
+			 }
+		 }
+	}
+
+#Assembly of Vlorë
+
+
+ country_event = {
+	title = "TURE3"
+	desc = "desc_TURE3"
+	id = 100120
+	 
+	picture = "TURP3"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_TURE3"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 TUR = {
+			 set_country_flag = form_albania
+			 }
+		 capital = 4663
+		 }
+	}
+
+#Evacuate through Albania?
+
+# Evacuate through Albania ?
+# Retreat into Albania
+# Do not retreat into Albania
+
+ country_event = {
 	title = "EVT1914_2084503_NAME"
-	desc = "EVT1914_2084503_DESC" 
+	desc = "EVT1914_2084503_DESC"
+	id = 2084503
+	 
 	picture = "news_paper"
-
+	 
+	fire_only_once = yes
+	 
+	trigger = {
+		 tag = SER
+		 NOT = {
+			 SER = {
+				 controls = 4368
+				 }
+			 }
+		 NOT = {
+			 SER = {
+				 controls = 3912
+				 }
+			 }
+		 OR = {
+			 SER = {
+				 controls = 4495
+				 }
+			 SER = {
+				 controls = 4609
+				 }
+			 }
+		 exists = ALB
+		 faction = allies
+		 war_with = AUH
+		 NOT = {
+			 SER = {
+				 war_with = ALB
+				 }
+			 }
+		 NOT = {
+			 SER = {
+				 alliance_with = ALB
+				 }
+			 }
+		 NOT = {
+			 ALB = {
+				 military_access = SER
+				 }
+			 }
+		 NOT = {
+			 SER = {
+				 has_country_flag = retreat_alb
+				 }
+			 }
+		 }
 	option = {
-		ai_chance = { factor = 100 }
-		name = "EVT1914_2084503_ACTIONA" # Retreat into Albania
-		ALB = { country_event = 2058500 }
-		SER = { set_country_flag = retreat_alb }
+		 ai_chance = {
+			 factor = 100
+			 }
+		 name = "EVT1914_2084503_ACTIONA"
+		 ALB = {
+			 country_event = 2058500
+			 }
+		 SER = {
+			 set_country_flag = retreat_alb
+			 }
+		 }
+	option = {
+		 name = "EVT1914_2084503_ACTIONB"
+		 }
 	}
-	option = { 
-		name = "EVT1914_2084503_ACTIONB" # Do not retreat into Albania
+
+#Let Serbian troops retreat?
+
+# No, resist!
+
+ country_event = {
+	title = "EVT1914_2058500_NAME"
+	desc = "EVT1914_2058500_DESC"
+	id = 2058500
+	 
+	picture = "foreign_volunteers"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "EVT1914_2058500_ACTIONA"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 SER = {
+			 country_event = 2084504
+			 }
+		 SER = {
+			 military_access = ALB
+			 }
+		 }
+	option = {
+		 name = "EVT1914_2058500_ACTIONB"
+		 war = {
+			 target = SER
+			 attacker_goal = {
+				 casus_belli = conquer
+				 }
+			 defender_goal = {
+				 casus_belli = conquer
+				 }
+			 }
+		 join_faction = axis
+		 }
 	}
-}
 
-country_event = {
-   id = 2058500
-   
-   	
-	is_triggered_only = yes
-		
-	fire_only_once = yes
-   
-   title = "EVT1914_2058500_NAME"
-   desc = "EVT1914_2058500_DESC" 
-   picture = "foreign_volunteers"
+#Evacuate through Albania!
 
-   option = {
-		name = "EVT1914_2058500_ACTIONA"
-		ai_chance = { factor = 100 }
-		SER = { country_event = 2084504 }
-		SER = { military_access = ALB } 
-   }
-   option = {
-		name = "EVT1914_2058500_ACTIONB" # No, resist!
-war = {
-	target = SER
-	attacker_goal = { casus_belli = conquer }
-	defender_goal = { casus_belli = conquer }
-}
-		join_faction = axis
-   }
-}
+#Great !
 
-country_event = {
-	id = 2084504
-		
-	is_triggered_only = yes
-		
-	fire_only_once = yes
-   
+ country_event = {
 	title = "EVT1914_2084504_NAME"
-	desc = "EVT1914_2084504_DESC" 
+	desc = "EVT1914_2084504_DESC"
+	id = 2084504
+	 
 	picture = "news_paper"
-
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
 	option = {
-		name = "ACTION_NAME_GREAT" #Great !
-   }
-}
+		 name = "ACTION_NAME_GREAT"
+		 }
+	}
+

@@ -1,3718 +1,3855 @@
-#id = 41 #EVENTNAME: The Zimmermann telegram - we got'em! *CONFIRMED
-#id = 183 #EVENTNAME: The Zimmermann telegram *CONFIRMED
-#id = 184 #EVENTNAME: The United States declare war on Germany
-#id = 185 #EVENTNAME: War against the United States
-#id = 186 #EVENTNAME: United States ask for full transit
-#id = 187 #EVENTNAME: The Zimmermann telegram 
-#id = 188 #EVENTNAME: The United States declare war on Germany
-#id = 189 #EVENTNAME: United States ask for full transit
-#id = 190 #EVENTNAME: Huerta has been defeated!
-#id = 191 #EVENTNAME: Huerta has been defeated!
-#id = 192 #EVENTNAME: Huerta is victorious!
-#id = 193 #EVENTNAME: Convention of Aguascalientes
-#id = 194 #EVENTNAME: Convention of Aguascalientes
-#id = 195 #EVENTNAME: Convention of Aguascalientes
-#id = 196 #EVENTNAME: Villistas submit to us
-#id = 197 #EVENTNAME: Zapatistas submit to us
-#id = 198 #EVENTNAME: Constitucionalistas win the Mexican Revolution
-#id = 199 #EVENTNAME: Carranza leads Mexico!
-#id = 200 #EVENTNAME: Villistas win the Mexican Revolution
-#id = 201 #EVENTNAME: Villa leads Mexico!
-#id = 202 #EVENTNAME: Zapatistas win the Mexican Revolution
-#id = 203 #EVENTNAME: Zapata leads Mexico!
-#id = 204 #EVENTNAME: Villistas and Zapatistas win the Mexican Revolution
-#id = 205 #EVENTNAME: Zapatistas and Villistas win the Mexican Revolution
-#id = 206 #EVENTNAME: General González suggests a plan for the assassination of Zapata
-#id = 207 #EVENTNAME: The tragedy! Zapata has been assassinated!
-#id = 208 #EVENTNAME: The Zapatistas submits to us!
-#id = 209 #EVENTNAME: Plan of Agua Prieta
-#id = 210 #EVENTNAME: The end of the Mexican Revolution?
-#id = 211 #EVENTNAME: The end of the Mexican Revolution?
-#id = 492 #EVENTNAME: Launch Raids on Tucson
-#id = 493 #EVENTNAME: Raid result : resistance encountered
-#id = 494 #EVENTNAME: Raid result : no resistance encountered
-#id = 495 #EVENTNAME: Launch Raids on El Paso
-#id = 496 #EVENTNAME: Launch Raids on San Antonio
-#id = 497 #EVENTNAME: Launch Raids on Corpus Christi
-#id = 498 #EVENTNAME: Launch Raids on San Diego
-#id = 499 #EVENTNAME: New recruits
-#id = 500 #EVENTNAME: Victory in Mexico city!
-#id = 501 #EVENTNAME: Loss of Mexico city
-#id = 502 #EVENTNAME: Victory in Mexico city!
-#id = 503 #EVENTNAME: Loss of Mexico city
-#id = 504 #EVENTNAME: Captured supplies
-#id = 505 #EVENTNAME: Smuggled supplies
-#id = 506 #EVENTNAME: New recruits
-#id = 519 #EVENTNAME: Tucson raided!
-#id = 520 #EVENTNAME: Tucson raided!
-#id = 521 #EVENTNAME: El Paso raided!
-#id = 522 #EVENTNAME: El Paso raided!
-#id = 523 #EVENTNAME: San Antonio raided!
-#id = 524 #EVENTNAME: San Antonio raided!
-#id = 525 #EVENTNAME: Corpus Christii raided!
-#id = 526 #EVENTNAME: Corpus Christii raided!
-#id = 527 #EVENTNAME: San Diego raided!
-#id = 528 #EVENTNAME: San Diego raided!
-#id = 529 #EVENTNAME: Intervention against Mexican rebels
-#id = 530 #EVENTNAME: Ask for full transit agreement with Mexico
-#id = 531 #EVENTNAME: Mexico rejects our proposal
-#id = 532 #EVENTNAME: Full scale invasion of Mexico
-#id = 533 #EVENTNAME: Ask for full transit agreement with Mexico
-#id = 534 #EVENTNAME: Mexico rejects our proposal
-#id = 535 #EVENTNAME: Full scale invasion of Mexico
-#id = 536 #EVENTNAME: Restore diplomatic relations with Mexico
-
-
-
-
 #The Zimmermann telegram - we got'em!
-country_event = {
-id = 41
-title = "DH_EVENT_2001535_TITLE"
-desc = "DH_EVENT_2001535_DESC"
-picture = "zimmermann_telegram"
 
-trigger = { 
-tag = ENG
 
-not = { has_global_flag = SLEEPEVENT_2001535 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2001535_Option7"
-	#Removed Blank command
-	
-set_global_flag = 2001535_EVENT_DONE
-
-}
-
-}
+ country_event = {
+	title = "DH_EVENT_2001535_TITLE"
+	desc = "DH_EVENT_2001535_DESC"
+	id = 41
+	 
+	picture = "zimmermann_telegram"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = ENG
+		 not = {
+			 has_global_flag = SLEEPEVENT_2001535
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2001535_Option7"
+		 set_global_flag = 2001535_EVENT_DONE
+		 }
+	}
 
 #The Zimmermann telegram
-country_event = {
-id = 183
-title = "DH_EVENT_2038500_TITLE"
-desc = "DH_EVENT_2038500_DESC"
-picture = "zimmermann_telegram"
-
-trigger = { 
-tag = MEX
 
 
-
-
-
-not = { has_global_flag = SLEEPEVENT_2038500 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2038500_Option7"
-	#Removed Blank command
-	
-set_global_flag = 2038500_EVENT_DONE
-
-}
-
-}
+ country_event = {
+	title = "DH_EVENT_2038500_TITLE"
+	desc = "DH_EVENT_2038500_DESC"
+	id = 183
+	 
+	picture = "zimmermann_telegram"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = MEX
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038500
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2038500_Option7"
+		 set_global_flag = 2038500_EVENT_DONE
+		 }
+	}
 
 #The United States declare war on Germany
-country_event = {
-id = 184
-title = "DH_EVENT_2038501_TITLE"
-desc = "DH_EVENT_2038501_DESC"
-picture = "zimmermann_telegram"
-
-trigger = {
-	#has_global_flag = 2038499_EVENT_DONE
-	USA = { war_with = GER }
-	#NOEQUIVALENT random =  4
-	
-tag = MEX
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
 
 
-
-not = { has_global_flag = SLEEPEVENT_2038501 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  14 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2038501_Option7"
-	join_faction = axis
-	
-set_global_flag = 2038501_EVENT_DONE
-
-}
-
-}
+ country_event = {
+	title = "DH_EVENT_2038501_TITLE"
+	desc = "DH_EVENT_2038501_DESC"
+	id = 184
+	 
+	picture = "zimmermann_telegram"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 14
+		 }
+	trigger = {
+		 USA = {
+			 war_with = GER
+			 }
+		 tag = MEX
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038501
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2038501_Option7"
+		 join_faction = axis
+		 set_global_flag = 2038501_EVENT_DONE
+		 }
+	}
 
 #War against the United States
-country_event = {
-id = 185
-title = "DH_EVENT_2038502_TITLE"
-desc = "DH_EVENT_2038502_DESC"
-picture = "veracruz_occupation"
 
-trigger = {
-	9624 = { controlled_by = USA }
-	war = no
-	or = {
-		year = 1915
-		and = { 
-			 year = 1914
-			 month = 10
+
+ country_event = {
+	title = "DH_EVENT_2038502_TITLE"
+	desc = "DH_EVENT_2038502_DESC"
+	id = 185
+	 
+	picture = "veracruz_occupation"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 20
+		 }
+	trigger = {
+		 9624 = {
+			 controlled_by = USA
 			 }
-		not = {
-			 exists = MXR
+		 war = no
+		 or = {
+			 year = 1915
+			 and = {
+				 year = 1914
+				 month = 10
+				 }
+			 not = {
+				 exists = MXR
+				 }
 			 }
-		}
-	#NOEQUIVALENT random =  5
-	
-tag = MEX
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2038502 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  20 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2038502_Option7"
-	war = { target = USA }
-	
-set_global_flag = 2038502_EVENT_DONE
-
-}
-
-}
+		 tag = MEX
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038502
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2038502_Option7"
+		 war = {
+			 target = USA
+			 }
+		 set_global_flag = 2038502_EVENT_DONE
+		 }
+	}
 
 #United States ask for full transit
-country_event = {
-id = 186
-title = "DH_EVENT_2038503_TITLE"
-desc = "DH_EVENT_2038503_DESC"
-picture = "veracruz_occupation"
-
-trigger = { 
-tag = MEX
 
 
-
-
-
-not = { has_global_flag = SLEEPEVENT_2038503 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	ai_chance = { factor = 90
+ country_event = {
+	title = "DH_EVENT_2038503_TITLE"
+	desc = "DH_EVENT_2038503_DESC"
+	id = 186
+	 
+	picture = "veracruz_occupation"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = MEX
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038503
+			 }
 		 }
-	name = "DH_EVENT_2038503_Option7"
-	USA = { country_event = 531 }
-	
-set_global_flag = 2038503_EVENT_DONE
-
-}
-
-option = {
-	ai_chance = { factor = 10
+	option = {
+		 ai_chance = {
+			 factor = 90
+			 }
+		 name = "DH_EVENT_2038503_Option7"
+		 USA = {
+			 country_event = 531
+			 }
+		 set_global_flag = 2038503_EVENT_DONE
 		 }
-	name = "DH_EVENT_2038503_Option8"
-	dissent = 8 
-	THIS = { military_access = USA }
-	
-set_global_flag = 2038503_EVENT_DONE
-
-}
-
-}
+	option = {
+		 ai_chance = {
+			 factor = 10
+			 }
+		 name = "DH_EVENT_2038503_Option8"
+		 dissent = 8
+		 THIS = {
+			 military_access = USA
+			 }
+		 set_global_flag = 2038503_EVENT_DONE
+		 }
+	}
 
 #The Zimmermann telegram
-country_event = {
-id = 187
-title = "DH_EVENT_2038504_TITLE"
-desc = "DH_EVENT_2038504_DESC"
-picture = "zimmermann_telegram"
-
-trigger = { 
-tag = MXR
 
 
-
-
-
-not = { has_global_flag = SLEEPEVENT_2038504 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2038504_Option7"
-	#Removed Blank command
-	
-set_global_flag = 2038504_EVENT_DONE
-
-}
-
-}
+ country_event = {
+	title = "DH_EVENT_2038504_TITLE"
+	desc = "DH_EVENT_2038504_DESC"
+	id = 187
+	 
+	picture = "zimmermann_telegram"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = MXR
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038504
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2038504_Option7"
+		 set_global_flag = 2038504_EVENT_DONE
+		 }
+	}
 
 #The United States declare war on Germany
-country_event = {
-id = 188
-title = "DH_EVENT_2038505_TITLE"
-desc = "DH_EVENT_2038505_DESC"
-picture = "zimmermann_telegram"
-
-trigger = {
-	has_global_flag = 2038503_EVENT_DONE
-	USA = { war_with = GER }
-	or = {
-		has_global_flag = 2049536_EVENT_DONE
-		#not = {
-			 #has_global_flag = 2049502_EVENT_DONE unrestricted sub warfare
-			 #}
-		}
-	#NOEQUIVALENT random =  4
-	
-tag = MXR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
 
 
-
-not = { has_global_flag = SLEEPEVENT_2038505 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  14 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2038505_Option7"
-	join_faction = axis
-	
-set_global_flag = 2038505_EVENT_DONE
-
-}
-
-}
+ country_event = {
+	title = "DH_EVENT_2038505_TITLE"
+	desc = "DH_EVENT_2038505_DESC"
+	id = 188
+	 
+	picture = "zimmermann_telegram"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 14
+		 }
+	trigger = {
+		 has_global_flag = 2038503_EVENT_DONE
+		 USA = {
+			 war_with = GER
+			 }
+		 or = {
+			 has_global_flag = 2049536_EVENT_DONE
+			 }
+		 tag = MXR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038505
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2038505_Option7"
+		 join_faction = axis
+		 set_global_flag = 2038505_EVENT_DONE
+		 }
+	}
 
 #United States ask for full transit
-country_event = {
-id = 189
-title = "DH_EVENT_2038506_TITLE"
-desc = "DH_EVENT_2038506_DESC"
-picture = "veracruz_occupation"
-
-trigger = { 
-tag = MXR
 
 
-
-
-
-not = { has_global_flag = SLEEPEVENT_2038506 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	ai_chance = { factor = 90
+ country_event = {
+	title = "DH_EVENT_2038506_TITLE"
+	desc = "DH_EVENT_2038506_DESC"
+	id = 189
+	 
+	picture = "veracruz_occupation"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = MXR
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038506
+			 }
 		 }
-	name = "DH_EVENT_2038506_Option7"
-	USA = { country_event = 534 }
-	
-set_global_flag = 2038506_EVENT_DONE
-
-}
-
-option = {
-	ai_chance = { factor = 10
+	option = {
+		 ai_chance = {
+			 factor = 90
+			 }
+		 name = "DH_EVENT_2038506_Option7"
+		 USA = {
+			 country_event = 534
+			 }
+		 set_global_flag = 2038506_EVENT_DONE
 		 }
-	name = "DH_EVENT_2038506_Option8"
-	dissent = 8 
-	THIS = { military_access = USA }
-	
-set_global_flag = 2038506_EVENT_DONE
-
-}
-
-}
+	option = {
+		 ai_chance = {
+			 factor = 10
+			 }
+		 name = "DH_EVENT_2038506_Option8"
+		 dissent = 8
+		 THIS = {
+			 military_access = USA
+			 }
+		 set_global_flag = 2038506_EVENT_DONE
+		 }
+	}
 
 #Huerta has been defeated!
-country_event = {
-id = 190
-title = "DH_EVENT_2038601_TITLE"
-desc = "DH_EVENT_2038601_DESC"
-picture = "provisionalgovernment"
-
-trigger = {
-	war = no
-	exists = MXR
-	not = {
-		exists = MEX
-		has_global_flag = 2038601_EVENT_DONE
-		has_global_flag = 2038602_EVENT_DONE
-		has_global_flag = 2038603_EVENT_DONE
-		has_country_flag = MEX_Conv
-		}
-	
-
-date = 1914.1.1
-
-not = { date = 1920.12.30
- }
-or = {
-tag = MXR
-}
 
 
-not = { has_global_flag = SLEEPEVENT_2038601 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  7 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2038601_Option7"
-	leave_faction = axis
-	leave_faction = allies
-	leave_faction = comintern
-	dissent = -5 
-	random_country = { limit = { tag = THIS 
-			 not = {
-				 has_global_flag= MEX_Convention
-				 }  } 
-		MXR = { country_event = 193 }
+ country_event = {
+	title = "DH_EVENT_2038601_TITLE"
+	desc = "DH_EVENT_2038601_DESC"
+	id = 190
+	 
+	picture = "provisionalgovernment"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 7
 		 }
-	random_country = { limit = { tag = THIS 
-			 not = {
-				 has_global_flag= MEX_Convention
-				 }  } 
-		set_global_flag = MEX_Convention 
+	trigger = {
+		 war = no
+		 exists = MXR
+		 not = {
+			 exists = MEX
+			 has_global_flag = 2038601_EVENT_DONE
+			 has_global_flag = 2038602_EVENT_DONE
+			 has_global_flag = 2038603_EVENT_DONE
+			 has_country_flag = MEX_Conv
+			 }
+		 date = 1914.1.1
+		 not = {
+			 date = 1920.12.30
+			 }
+		 or = {
+			 tag = MXR
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038601
+			 }
 		 }
-	set_global_flag = SLEEPEVENT_2038602 
-	set_global_flag = SLEEPEVENT_2038603 
-	set_country_flag = MEX_Conv 
-	
-set_global_flag = 2038601_EVENT_DONE
-
-}
-
-}
+	option = {
+		 name = "DH_EVENT_2038601_Option7"
+		 leave_faction = axis
+		 leave_faction = allies
+		 leave_faction = comintern
+		 dissent = -5
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 not = {
+					 has_global_flag = MEX_Convention
+					 }
+				 }
+			 MXR = {
+				 country_event = 193
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 not = {
+					 has_global_flag = MEX_Convention
+					 }
+				 }
+			 set_global_flag = MEX_Convention
+			 }
+		 set_global_flag = SLEEPEVENT_2038602
+		 set_global_flag = SLEEPEVENT_2038603
+		 set_country_flag = MEX_Conv
+		 set_global_flag = 2038601_EVENT_DONE
+		 }
+	}
 
 #Huerta has been defeated!
-country_event = {
-id = 191
-title = "DH_EVENT_2038602_TITLE"
-desc = "DH_EVENT_2038602_DESC"
-picture = "provisionalgovernment"
 
-trigger = {
-	war = no
-	or = {
-		exists = MXR
-		}
-	or = {
-		not = {
+
+ country_event = {
+	title = "DH_EVENT_2038602_TITLE"
+	desc = "DH_EVENT_2038602_DESC"
+	id = 191
+	 
+	picture = "provisionalgovernment"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 7
+		 }
+	trigger = {
+		 war = no
+		 or = {
 			 exists = MXR
 			 }
-		}
-	not = {
-		exists = MEX
-		#has_global_flag = 2038600_EVENT_DONE
-		has_global_flag = 2038602_EVENT_DONE
-		has_global_flag = 2038603_EVENT_DONE
-		has_country_flag = MEX_End
-		}
-	
-
-date = 1914.1.1
-
-not = { date = 1920.12.30
- }
-or = {
-tag = MXR
-}
-
-
-not = { has_global_flag = SLEEPEVENT_2038602 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  7 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2038602_Option7"
-	leave_faction = axis
-	leave_faction = allies
-	leave_faction = comintern
-	dissent = -5 
-	random_country = { limit = { tag = THIS 
-			 exists = MXR
+		 or = {
 			 not = {
 				 exists = MXR
-				 MXR = { war_with = MXR }
-				 }  } 
-		MXR = { country_event = 210 }
+				 }
+			 }
+		 not = {
+			 exists = MEX
+			 has_global_flag = 2038602_EVENT_DONE
+			 has_global_flag = 2038603_EVENT_DONE
+			 has_country_flag = MEX_End
+			 }
+		 date = 1914.1.1
+		 not = {
+			 date = 1920.12.30
+			 }
+		 or = {
+			 tag = MXR
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038602
+			 }
 		 }
-	random_country = { limit = { tag = THIS 
-			 exists = MXR
-			 not = {
+	option = {
+		 name = "DH_EVENT_2038602_Option7"
+		 leave_faction = axis
+		 leave_faction = allies
+		 leave_faction = comintern
+		 dissent = -5
+		 random_country = {
+			 limit = {
+				 tag = THIS
 				 exists = MXR
-				 MXR = { war_with = MXR }
-				 }  } 
-		MXR = { country_event = 211 }
+				 not = {
+					 exists = MXR
+					 MXR = {
+						 war_with = MXR
+						 }
+					 }
+				 }
+			 MXR = {
+				 country_event = 210
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 exists = MXR
+				 not = {
+					 exists = MXR
+					 MXR = {
+						 war_with = MXR
+						 }
+					 }
+				 }
+			 MXR = {
+				 country_event = 211
+				 }
+			 }
+		 set_country_flag = MEX_End
+		 set_global_flag = SLEEPEVENT_2038601
+		 set_global_flag = SLEEPEVENT_2038603
+		 set_global_flag = 2038602_EVENT_DONE
 		 }
-	set_country_flag = MEX_End 
-	set_global_flag = SLEEPEVENT_2038601 
-	set_global_flag = SLEEPEVENT_2038603 
-	
-set_global_flag = 2038602_EVENT_DONE
-
-}
-
-}
+	}
 
 #Huerta is victorious!
-country_event = {
-id = 192
-title = "DH_EVENT_2038603_TITLE"
-desc = "DH_EVENT_2038603_DESC"
-picture = "Rheinland"
-
-trigger = {
-	war = no
-	head_of_state = 170106
-	not = {
-		exists = MXR
-		#has_global_flag = 2038600_EVENT_DONE
-		has_global_flag = 2038601_EVENT_DONE
-		has_global_flag = 2038603_EVENT_DONE
-		}
-	
-tag = MEX
-date = 1914.1.1
-
-not = { date = 1920.12.30
- }
 
 
-
-not = { has_global_flag = SLEEPEVENT_2038603 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  7 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2038603_Option7"
-	dissent = -5 
-	7369 = { create_revolt = 3 }
-	9589 = { create_revolt = 3 }
-	set_country_flag = MEX_Conv 
-	set_global_flag = SLEEPEVENT_2038601 
-	set_global_flag = SLEEPEVENT_2038602 
-	
-set_global_flag = 2038603_EVENT_DONE
-
-}
-
-}
+ country_event = {
+	title = "DH_EVENT_2038603_TITLE"
+	desc = "DH_EVENT_2038603_DESC"
+	id = 192
+	 
+	picture = "Rheinland"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 7
+		 }
+	trigger = {
+		 war = no
+		 head_of_state = 170106
+		 not = {
+			 exists = MXR
+			 has_global_flag = 2038601_EVENT_DONE
+			 has_global_flag = 2038603_EVENT_DONE
+			 }
+		 tag = MEX
+		 date = 1914.1.1
+		 not = {
+			 date = 1920.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038603
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2038603_Option7"
+		 dissent = -5
+		 7369 = {
+			 create_revolt = 3
+			 }
+		 9589 = {
+			 create_revolt = 3
+			 }
+		 set_country_flag = MEX_Conv
+		 set_global_flag = SLEEPEVENT_2038601
+		 set_global_flag = SLEEPEVENT_2038602
+		 set_global_flag = 2038603_EVENT_DONE
+		 }
+	}
 
 #Convention of Aguascalientes
-country_event = {
-id = 193
-title = "DH_EVENT_2038604_TITLE"
-desc = "DH_EVENT_2038604_DESC"
-picture = "convention_of_aguascalientes"
-
-trigger = { 
-tag = MXR
 
 
-
-
-
-not = { has_global_flag = SLEEPEVENT_2038604 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2038604_Option7"
-	dissent = 2 
-	MXR = { country_event = 194 }
-	MXR = { country_event = 195 }
-	clr_global_flag = MEX_Convention 
-	clr_country_flag = MEX_Conv 
-	set_global_flag = SLEEPEVENT_2038601 
-	random_country = { limit = { tag = THIS 
-			 THIS = { ai = yes }
-			  } 
-		#NOEQUIVALENT AI switch command = {  type = ai which = "switch/U57_Convention.ai" }
+ country_event = {
+	title = "DH_EVENT_2038604_TITLE"
+	desc = "DH_EVENT_2038604_DESC"
+	id = 193
+	 
+	picture = "convention_of_aguascalientes"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = MXR
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038604
+			 }
 		 }
-	
-set_global_flag = 2038604_EVENT_DONE
-
-}
-
-}
+	option = {
+		 name = "DH_EVENT_2038604_Option7"
+		 dissent = 2
+		 MXR = {
+			 country_event = 194
+			 }
+		 MXR = {
+			 country_event = 195
+			 }
+		 clr_global_flag = MEX_Convention
+		 clr_country_flag = MEX_Conv
+		 set_global_flag = SLEEPEVENT_2038601
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 THIS = {
+					 ai = yes
+					 }
+				 }
+			 }
+		 set_global_flag = 2038604_EVENT_DONE
+		 }
+	}
 
 #Convention of Aguascalientes
-country_event = {
-id = 194
-title = "DH_EVENT_2038605_TITLE"
-desc = "DH_EVENT_2038605_DESC"
-picture = "convention_of_aguascalientes"
-
-trigger = { 
-tag = MXR
 
 
-
-
-
-not = { has_global_flag = SLEEPEVENT_2038605 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	#MANUALFIX trigger option random_country = { limit = { tag = THISexists = MXRexists = MXRnot = { MXR = { war_with = MXR } }not = { MXR = { alliance_with = MXR } }not = { MXR = { alliance_with = MXR } }not = { MXR = { alliance_with = MXR } } } } 
-	ai_chance = { factor = 90
+ country_event = {
+	title = "DH_EVENT_2038605_TITLE"
+	desc = "DH_EVENT_2038605_DESC"
+	id = 194
+	 
+	picture = "convention_of_aguascalientes"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = MXR
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038605
+			 }
 		 }
-	name = "DH_EVENT_2038605_Option7"
-	neutrality = -5
-	war = { target = MXR }
-	dissent = -5 
-	clr_country_flag = MEX_Conv 
-	set_global_flag = U58_alliance_U59 
-	random_country = { limit = { tag = THIS 
-			 THIS = { ai = yes }
-			  } 
-		#NOEQUIVALENT AI switch command = {  type = ai which = "switch/U58_Convention.ai" }
+	option = {
+		 ai_chance = {
+			 factor = 90
+			 }
+		 name = "DH_EVENT_2038605_Option7"
+		 neutrality = -5
+		 war = {
+			 target = MXR
+			 }
+		 dissent = -5
+		 clr_country_flag = MEX_Conv
+		 set_global_flag = U58_alliance_U59
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 THIS = {
+					 ai = yes
+					 }
+				 }
+			 }
+		 set_global_flag = 2038605_EVENT_DONE
 		 }
-	
-set_global_flag = 2038605_EVENT_DONE
-
-}
-
-option = {
-	#MANUALFIX trigger option random_country = { limit = { tag = THISexists = MXRexists = MXRnot = { MXR = { war_with = MXR } }not = { MXR = { alliance_with = MXR } }not = { MXR = { alliance_with = MXR } }not = { MXR = { alliance_with = MXR } } } } 
-	ai_chance = { factor = 5
+	option = {
+		 ai_chance = {
+			 factor = 5
+			 }
+		 name = "DH_EVENT_2038605_Option8"
+		 neutrality = -10
+		 war = {
+			 target = MXR
+			 }
+		 dissent = -2
+		 clr_country_flag = MEX_Conv
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 THIS = {
+					 ai = yes
+					 }
+				 }
+			 }
+		 set_global_flag = 2038605_EVENT_DONE
 		 }
-	name = "DH_EVENT_2038605_Option8"
-	neutrality = -10
-	war = { target = MXR }
-	dissent = -2 
-	clr_country_flag = MEX_Conv 
-	random_country = { limit = { tag = THIS 
-			 THIS = { ai = yes }
-			  } 
-		#NOEQUIVALENT AI switch command = {  type = ai which = "switch/U58_Convention_B.ai" }
+	option = {
+		 ai_chance = {
+			 factor = 90
+			 }
+		 name = "DH_EVENT_2038605_Option9"
+		 neutrality = -5
+		 war = {
+			 target = MXR
+			 }
+		 dissent = -5
+		 clr_country_flag = MEX_Conv
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 THIS = {
+					 ai = yes
+					 }
+				 }
+			 }
+		 set_global_flag = 2038605_EVENT_DONE
 		 }
-	
-set_global_flag = 2038605_EVENT_DONE
-
-}
-
-option = {
-	#MANUALFIX trigger option random_country = { limit = { tag = THISexists = MXRnot = { exists = MXR }not = { MXR = { war_with = MXR } }not = { MXR = { alliance_with = MXR } } } } 
-	ai_chance = { factor = 90
+	option = {
+		 ai_chance = {
+			 factor = 5
+			 }
+		 name = "DH_EVENT_2038605_Option10"
+		 clr_country_flag = MEX_Conv
+		 MXR = {
+			 country_event = 196
+			 }
+		 set_global_flag = 2038605_EVENT_DONE
 		 }
-	name = "DH_EVENT_2038605_Option9"
-	neutrality = -5
-	war = { target = MXR }
-	dissent = -5 
-	clr_country_flag = MEX_Conv 
-	random_country = { limit = { tag = THIS 
-			 THIS = { ai = yes }
-			  } 
-		#NOEQUIVALENT AI switch command = {  type = ai which = "switch/U58_Convention.ai" }
-		 }
-	
-set_global_flag = 2038605_EVENT_DONE
-
-}
-
-option = {
-	#MANUALFIX trigger option random_country = { limit = { tag = THISexists = MXRnot = { MXR = { war_with = MXR } }THIS = { ai = yes } } } 
-	ai_chance = { factor = 5
-		 }
-	name = "DH_EVENT_2038605_Option10"
-	clr_country_flag = MEX_Conv 
-	MXR = { country_event = 196 }
-	
-set_global_flag = 2038605_EVENT_DONE
-
-}
-
-}
+	}
 
 #Convention of Aguascalientes
-country_event = {
-id = 195
-title = "DH_EVENT_2038606_TITLE"
-desc = "DH_EVENT_2038606_DESC"
-picture = "convention_of_aguascalientes"
-
-trigger = { 
-tag = MXR
 
 
-
-
-
-not = { has_global_flag = SLEEPEVENT_2038606 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	#MANUALFIX trigger option random_country = { limit = { tag = THISexists = MXRexists = MXRnot = { MXR = { war_with = MXR } }MXR = { war_with = MXR }not = { MXR = { alliance_with = MXR } }not = { MXR = { alliance_with = MXR } }has_global_flag= U58_alliance_U59 } } 
-	ai_chance = { factor = 90
+ country_event = {
+	title = "DH_EVENT_2038606_TITLE"
+	desc = "DH_EVENT_2038606_DESC"
+	id = 195
+	 
+	picture = "convention_of_aguascalientes"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = MXR
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038606
+			 }
 		 }
-	name = "DH_EVENT_2038606_Option7"
-	neutrality = -5
-	create_alliance = MXR
-	dissent = -5 
-	clr_country_flag = MEX_Conv 
-	clr_global_flag = U58_alliance_U59 
-	random_country = { limit = { tag = THIS 
-			 THIS = { ai = yes }
-			  } 
-		#NOEQUIVALENT AI switch command = {  type = ai which = "switch/U59_Convention.ai" }
+	option = {
+		 ai_chance = {
+			 factor = 90
+			 }
+		 name = "DH_EVENT_2038606_Option7"
+		 neutrality = -5
+		 create_alliance = MXR
+		 dissent = -5
+		 clr_country_flag = MEX_Conv
+		 clr_global_flag = U58_alliance_U59
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 THIS = {
+					 ai = yes
+					 }
+				 }
+			 }
+		 set_global_flag = 2038606_EVENT_DONE
 		 }
-	
-set_global_flag = 2038606_EVENT_DONE
-
-}
-
-option = {
-	#MANUALFIX trigger option random_country = { limit = { tag = THISexists = MXRexists = MXRnot = { MXR = { alliance_with = MXR } }not = { MXR = { alliance_with = MXR } } } } 
-	ai_chance = { factor = 5
+	option = {
+		 ai_chance = {
+			 factor = 5
+			 }
+		 name = "DH_EVENT_2038606_Option8"
+		 neutrality = -10
+		 war = {
+			 target = MXR
+			 }
+		 dissent = -2
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 has_global_flag = U58_alliance_U59
+				 }
+			 clr_global_flag = U58_alliance_U59
+			 }
+		 clr_country_flag = MEX_Conv
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 THIS = {
+					 ai = yes
+					 }
+				 }
+			 }
+		 set_global_flag = 2038606_EVENT_DONE
 		 }
-	name = "DH_EVENT_2038606_Option8"
-	neutrality = -10
-	war = { target = MXR }
-	dissent = -2 
-	random_country = { limit = { tag = THIS 
-			 has_global_flag= U58_alliance_U59
-			  } 
-		clr_global_flag = U58_alliance_U59 
+	option = {
+		 ai_chance = {
+			 factor = 90
+			 }
+		 name = "DH_EVENT_2038606_Option9"
+		 neutrality = -5
+		 war = {
+			 target = MXR
+			 }
+		 dissent = -5
+		 clr_country_flag = MEX_Conv
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 THIS = {
+					 ai = yes
+					 }
+				 }
+			 }
+		 set_global_flag = 2038606_EVENT_DONE
 		 }
-	clr_country_flag = MEX_Conv 
-	random_country = { limit = { tag = THIS 
-			 THIS = { ai = yes }
-			  } 
-		#NOEQUIVALENT AI switch command = {  type = ai which = "switch/U59_Convention_B.ai" }
+	option = {
+		 ai_chance = {
+			 factor = 5
+			 }
+		 name = "DH_EVENT_2038606_Option10"
+		 clr_country_flag = MEX_Conv
+		 MXR = {
+			 country_event = 197
+			 }
+		 set_global_flag = 2038606_EVENT_DONE
 		 }
-	
-set_global_flag = 2038606_EVENT_DONE
-
-}
-
-option = {
-	#MANUALFIX trigger option random_country = { limit = { tag = THISexists = MXRnot = { exists = MXR }not = { MXR = { war_with = MXR } }not = { MXR = { alliance_with = MXR } } } } 
-	ai_chance = { factor = 90
-		 }
-	name = "DH_EVENT_2038606_Option9"
-	neutrality = -5
-	war = { target = MXR }
-	dissent = -5 
-	clr_country_flag = MEX_Conv 
-	random_country = { limit = { tag = THIS 
-			 THIS = { ai = yes }
-			  } 
-		#NOEQUIVALENT AI switch command = {  type = ai which = "switch/U59_Convention.ai" }
-		 }
-	
-set_global_flag = 2038606_EVENT_DONE
-
-}
-
-option = {
-	#MANUALFIX trigger option random_country = { limit = { tag = THISexists = MXRnot = { MXR = { war_with = MXR } }THIS = { ai = yes } } } 
-	ai_chance = { factor = 5
-		 }
-	name = "DH_EVENT_2038606_Option10"
-	clr_country_flag = MEX_Conv 
-	MXR = { country_event = 197 }
-	
-set_global_flag = 2038606_EVENT_DONE
-
-}
-
-}
+	}
 
 #Villistas submit to us
-country_event = {
-id = 196
-title = "DH_EVENT_2038607_TITLE"
-desc = "DH_EVENT_2038607_DESC"
-picture = "Peace_conference"
-
-trigger = { 
-tag = MXR
 
 
-
-
-
-not = { has_global_flag = SLEEPEVENT_2038607 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2038607_Option7"
-	THIS = { inherit = MXR }
-	dissent = -3 
-	
-set_global_flag = 2038607_EVENT_DONE
-
-}
-
-}
+ country_event = {
+	title = "DH_EVENT_2038607_TITLE"
+	desc = "DH_EVENT_2038607_DESC"
+	id = 196
+	 
+	picture = "Peace_conference"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = MXR
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038607
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2038607_Option7"
+		 THIS = {
+			 inherit = MXR
+			 }
+		 dissent = -3
+		 set_global_flag = 2038607_EVENT_DONE
+		 }
+	}
 
 #Zapatistas submit to us
-country_event = {
-id = 197
-title = "DH_EVENT_2038608_TITLE"
-desc = "DH_EVENT_2038608_DESC"
-picture = "Peace_conference"
-
-trigger = { 
-tag = MXR
 
 
-
-
-
-not = { has_global_flag = SLEEPEVENT_2038608 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2038608_Option7"
-	THIS = { inherit = MXR }
-	dissent = -3 
-	
-set_global_flag = 2038608_EVENT_DONE
-
-}
-
-}
+ country_event = {
+	title = "DH_EVENT_2038608_TITLE"
+	desc = "DH_EVENT_2038608_DESC"
+	id = 197
+	 
+	picture = "Peace_conference"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = MXR
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038608
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2038608_Option7"
+		 THIS = {
+			 inherit = MXR
+			 }
+		 dissent = -3
+		 set_global_flag = 2038608_EVENT_DONE
+		 }
+	}
 
 #Constitucionalistas win the Mexican Revolution
-country_event = {
-id = 198
-title = "DH_EVENT_2038609_TITLE"
-desc = "DH_EVENT_2038609_DESC"
-picture = "Rheinland"
-
-trigger = {
-	war = no
-	not = {
-		exists = MEX
-		exists = MXR
-		}
-	9604 = { controlled_by = MXR }
-	
-tag = MXR
-date = 1914.1.1
-
-not = { date = 1920.12.30
- }
 
 
-
-not = { has_global_flag = SLEEPEVENT_2038609 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  7 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2038609_Option7"
-	dissent = -5 
-	MEX = {
-		country_event = 199
-		}
-
-set_global_flag = 2038609_EVENT_DONE
-
+ country_event = {
+	title = "DH_EVENT_2038609_TITLE"
+	desc = "DH_EVENT_2038609_DESC"
+	id = 198
+	 
+	picture = "Rheinland"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 7
+		 }
+	trigger = {
+		 war = no
+		 not = {
+			 exists = MEX
+			 exists = MXR
+			 }
+		 9604 = {
+			 controlled_by = MXR
+			 }
+		 tag = MXR
+		 date = 1914.1.1
+		 not = {
+			 date = 1920.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038609
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2038609_Option7"
+		 dissent = -5
+		 MEX = {
+			 country_event = 199
+			 }
+		 set_global_flag = 2038609_EVENT_DONE
+		 }
 	}
-}
 
 #Carranza leads Mexico!
-country_event = {
-id = 199
-title = "DH_EVENT_2038610_TITLE"
-desc = "DH_EVENT_2038610_DESC"
-picture = "Rheinland"
 
-trigger = { 
-tag = MEX
+#  Aguilar
+#  Altamirano
+#  Argumedo
+#  Beltrán Castañares
+#  Blanquet
+#  Bravo
+#  Cartón
+#  Cejudo
+#  Carmen Curiel
+#  Casso López
+#  Chacón
+#  Dávila
+#  Delgadillo
+#  Lambotte
+#  Eguía Lis
+#  Escandón y Barrón
+#  Gallardo
+#  Gil
+#  Gorostieta y Velarde
+#  Harrotian
+#  Huerta
+#  Jiménez Castro
+#  Arnold
+#  Lojero
+#  Maas Águila
+#  Maas Flores
+#  Andringa
+#  Maldonado
+#  Medina Barrón
+#  Mercado
+#  Mier
+#  Mondragón
+#  Morelos
+#  Mass
+#  Monter
+#  Navarro
+#  Ocón
+#  Ojeda
+#  Olea
+#  Orozco
+#  Orpinel
+#  Poloney
+#  Rasgado
+#  Reyes
+#  Robles
+#  Rojas
+#  Rubio Navarrete
+#  Ruiz
+#  Salazar
+#  Soberanes
+#  Téllez
+#  Toro
+#  Trucy Aubert
+#  Velasco
+#  Yarza
+#  Zozaya
+#  Zapata Emiliano
 
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2038610 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2038610_Option7"
-	national_unity = -5
-	neutrality = 16
-	head_of_state = 170200
-	head_of_government = 170200
-	foreign_minister = 170211
-	armament_minister = 170164
-	minister_of_security = 170232
-	minister_of_intelligence = 170003
-	chief_of_staff = 170241
-	chief_of_army = 170241
-	chief_of_navy = 170241
-	chief_of_air = 170277
-	remove_minister = 170106
-	remove_minister = 170107
-	remove_minister = 170110
-	remove_minister = 170111
-	remove_minister = 170112
-	remove_minister = 170113
-	remove_minister = 170114
-	remove_minister = 170115
-	remove_minister = 170116
-	remove_minister = 170117
-	remove_minister = 170118
-	remove_minister = 170121
-	remove_minister = 170122
-	remove_minister = 170123
-	remove_minister = 170124
-	remove_minister = 170127
-	remove_minister = 170128
-	remove_minister = 170129
-	remove_minister = 170130
-	remove_minister = 170138
-	remove_minister = 170139
-	kill_leader = 14710001 #  Aguilar
-kill_leader = 14710002 #  Altamirano
-kill_leader = 14710003 #  Argumedo
-kill_leader = 14710004 #  Beltrán Castañares
-kill_leader = 14710005 #  Blanquet
-kill_leader = 14710006 #  Bravo
-kill_leader = 14710007 #  Cartón
-kill_leader = 14710008 #  Cejudo
-kill_leader = 14710009 #  Carmen Curiel
-kill_leader = 14710010 #  Casso López
-kill_leader = 14710011 #  Chacón
-kill_leader = 14710012 #  Dávila
-kill_leader = 14710013 #  Delgadillo
-kill_leader = 10810024 #  Lambotte
-kill_leader = 14710015 #  Eguía Lis
-kill_leader = 14710016 #  Escandón y Barrón
-kill_leader = 14710017 #  Gallardo
-kill_leader = 14710018 #  Gil
-kill_leader = 14710019 #  Gorostieta y Velarde
-kill_leader = 14710020 #  Harrotian
-kill_leader = 14710021 #  Huerta
-kill_leader = 14710022 #  Jiménez Castro
-kill_leader = 10810033 #  Arnold
-kill_leader = 14710024 #  Lojero
-kill_leader = 14710025 #  Maas Águila
-kill_leader = 14710026 #  Maas Flores
-kill_leader = 10810037 #  Andringa
-kill_leader = 14710028 #  Maldonado
-kill_leader = 14710029 #  Medina Barrón
-kill_leader = 14710030 #  Mercado
-kill_leader = 14710031 #  Mier
-kill_leader = 14710032 #  Mondragón
-kill_leader = 14710033 #  Morelos
-kill_leader = 14710034 #  Mass
-kill_leader = 14710035 #  Monter
-kill_leader = 14710036 #  Navarro
-kill_leader = 14710037 #  Ocón
-kill_leader = 14710038 #  Ojeda
-kill_leader = 14710039 #  Olea
-kill_leader = 14710040 #  Orozco
-kill_leader = 14710041 #  Orpinel
-kill_leader = 14710042 #  Poloney
-kill_leader = 14710043 #  Rasgado
-kill_leader = 14710044 #  Reyes
-kill_leader = 14710045 #  Robles
-kill_leader = 14710046 #  Rojas
-kill_leader = 14710047 #  Rubio Navarrete
-kill_leader = 14710048 #  Ruiz
-kill_leader = 14710049 #  Salazar
-kill_leader = 14710050 #  Soberanes
-kill_leader = 14710051 #  Téllez
-kill_leader = 14710052 #  Toro
-kill_leader = 14710053 #  Trucy Aubert
-kill_leader = 14710054 #  Velasco
-kill_leader = 14710055 #  Yarza
-kill_leader = 14710056 #  Zozaya
-
-	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 170020 }
-	remove_minister = 170150
-	remove_minister = 170151
-	remove_minister = 170152
-	remove_minister = 170153
-	remove_minister = 170158
-	remove_minister = 170159
-	remove_minister = 170160
-	remove_minister = 170162
-	remove_minister = 170163
-	remove_minister = 170164
-	remove_minister = 170165
-	remove_minister = 170166
-	remove_minister = 170167
-	remove_minister = 170168
-	remove_minister = 170169
-	remove_minister = 170171
-	remove_minister = 170172
-	remove_minister = 170173
-	remove_minister = 170174
-	remove_minister = 170175
-	remove_minister = 170182
-	#kill_leader = 170262 
-	kill_leader = 14710184 #  Zapata Emiliano
-
-	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 170021 }
-	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 170022 }
-	
-set_global_flag = 2038610_EVENT_DONE
-
-}
-
-}
+ country_event = {
+	title = "DH_EVENT_2038610_TITLE"
+	desc = "DH_EVENT_2038610_DESC"
+	id = 199
+	 
+	picture = "Rheinland"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = MEX
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038610
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2038610_Option7"
+		 national_unity = -5
+		 neutrality = 16
+		 head_of_state = 170200
+		 head_of_government = 170200
+		 foreign_minister = 170211
+		 armament_minister = 170164
+		 minister_of_security = 170232
+		 minister_of_intelligence = 170003
+		 chief_of_staff = 170241
+		 chief_of_army = 170241
+		 chief_of_navy = 170241
+		 chief_of_air = 170277
+		 remove_minister = 170106
+		 remove_minister = 170107
+		 remove_minister = 170110
+		 remove_minister = 170111
+		 remove_minister = 170112
+		 remove_minister = 170113
+		 remove_minister = 170114
+		 remove_minister = 170115
+		 remove_minister = 170116
+		 remove_minister = 170117
+		 remove_minister = 170118
+		 remove_minister = 170121
+		 remove_minister = 170122
+		 remove_minister = 170123
+		 remove_minister = 170124
+		 remove_minister = 170127
+		 remove_minister = 170128
+		 remove_minister = 170129
+		 remove_minister = 170130
+		 remove_minister = 170138
+		 remove_minister = 170139
+		 kill_leader = 14710001
+		 kill_leader = 14710002
+		 kill_leader = 14710003
+		 kill_leader = 14710004
+		 kill_leader = 14710005
+		 kill_leader = 14710006
+		 kill_leader = 14710007
+		 kill_leader = 14710008
+		 kill_leader = 14710009
+		 kill_leader = 14710010
+		 kill_leader = 14710011
+		 kill_leader = 14710012
+		 kill_leader = 14710013
+		 kill_leader = 10810024
+		 kill_leader = 14710015
+		 kill_leader = 14710016
+		 kill_leader = 14710017
+		 kill_leader = 14710018
+		 kill_leader = 14710019
+		 kill_leader = 14710020
+		 kill_leader = 14710021
+		 kill_leader = 14710022
+		 kill_leader = 10810033
+		 kill_leader = 14710024
+		 kill_leader = 14710025
+		 kill_leader = 14710026
+		 kill_leader = 10810037
+		 kill_leader = 14710028
+		 kill_leader = 14710029
+		 kill_leader = 14710030
+		 kill_leader = 14710031
+		 kill_leader = 14710032
+		 kill_leader = 14710033
+		 kill_leader = 14710034
+		 kill_leader = 14710035
+		 kill_leader = 14710036
+		 kill_leader = 14710037
+		 kill_leader = 14710038
+		 kill_leader = 14710039
+		 kill_leader = 14710040
+		 kill_leader = 14710041
+		 kill_leader = 14710042
+		 kill_leader = 14710043
+		 kill_leader = 14710044
+		 kill_leader = 14710045
+		 kill_leader = 14710046
+		 kill_leader = 14710047
+		 kill_leader = 14710048
+		 kill_leader = 14710049
+		 kill_leader = 14710050
+		 kill_leader = 14710051
+		 kill_leader = 14710052
+		 kill_leader = 14710053
+		 kill_leader = 14710054
+		 kill_leader = 14710055
+		 kill_leader = 14710056
+		 remove_minister = 170150
+		 remove_minister = 170151
+		 remove_minister = 170152
+		 remove_minister = 170153
+		 remove_minister = 170158
+		 remove_minister = 170159
+		 remove_minister = 170160
+		 remove_minister = 170162
+		 remove_minister = 170163
+		 remove_minister = 170164
+		 remove_minister = 170165
+		 remove_minister = 170166
+		 remove_minister = 170167
+		 remove_minister = 170168
+		 remove_minister = 170169
+		 remove_minister = 170171
+		 remove_minister = 170172
+		 remove_minister = 170173
+		 remove_minister = 170174
+		 remove_minister = 170175
+		 remove_minister = 170182
+		 kill_leader = 14710184
+		 set_global_flag = 2038610_EVENT_DONE
+		 }
+	}
 
 #Villistas win the Mexican Revolution
-country_event = {
-id = 200
-title = "DH_EVENT_2038611_TITLE"
-desc = "DH_EVENT_2038611_DESC"
-picture = "Rheinland"
-
-trigger = {
-	war = no
-	not = {
-		exists = MEX
-		exists = MXR
-		}
-	9604 = { controlled_by = MXR }
-	
-tag = MXR
-date = 1914.1.1
-
-not = { date = 1920.12.30
- }
 
 
-
-not = { has_global_flag = SLEEPEVENT_2038611 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  7 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2038611_Option7"
-	dissent = -5 
-	MEX = {
-		country_event = 201
-		}
-
-set_global_flag = 2038611_EVENT_DONE
-
+ country_event = {
+	title = "DH_EVENT_2038611_TITLE"
+	desc = "DH_EVENT_2038611_DESC"
+	id = 200
+	 
+	picture = "Rheinland"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 7
+		 }
+	trigger = {
+		 war = no
+		 not = {
+			 exists = MEX
+			 exists = MXR
+			 }
+		 9604 = {
+			 controlled_by = MXR
+			 }
+		 tag = MXR
+		 date = 1914.1.1
+		 not = {
+			 date = 1920.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038611
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2038611_Option7"
+		 dissent = -5
+		 MEX = {
+			 country_event = 201
+			 }
+		 set_global_flag = 2038611_EVENT_DONE
+		 }
 	}
-}
 
 #Villa leads Mexico!
-country_event = {
-id = 201
-title = "DH_EVENT_2038612_TITLE"
-desc = "DH_EVENT_2038612_DESC"
-picture = "Rheinland"
 
-trigger = { 
-tag = MEX
+#  Aguilar
+#  Altamirano
+#  Argumedo
+#  Beltrán Castañares
+#  Blanquet
+#  Bravo
+#  Cartón
+#  Cejudo
+#  Carmen Curiel
+#  Casso López
+#  Chacón
+#  Dávila
+#  Delgadillo
+#  Lambotte
+#  Eguía Lis
+#  Escandón y Barrón
+#  Gallardo
+#  Gil
+#  Gorostieta y Velarde
+#  Harrotian
+#  Huerta
+#  Jiménez Castro
+#  Arnold
+#  Lojero
+#  Maas Águila
+#  Maas Flores
+#  Andringa
+#  Maldonado
+#  Medina Barrón
+#  Mercado
+#  Mier
+#  Mondragón
+#  Morelos
+#  Mass
+#  Monter
+#  Navarro
+#  Ocón
+#  Ojeda
+#  Olea
+#  Orozco
+#  Orpinel
+#  Poloney
+#  Rasgado
+#  Reyes
+#  Robles
+#  Rojas
+#  Rubio Navarrete
+#  Ruiz
+#  Salazar
+#  Soberanes
+#  Téllez
+#  Toro
+#  Trucy Aubert
+#  Velasco
+#  Yarza
+#  Zozaya
+#  Azueta
+#  Villasana
+#  Obregón
+#  Malpica
+#  Zapata Emiliano
 
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2038612 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2038612_Option7"
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170150 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170151 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170152 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170154 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170155 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170156 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170158 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170159 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170160 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170161 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170162 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170163 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170164 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170165 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170166 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170167 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170168 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170169 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170170 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170171 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170172 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170173 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170174 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170175 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170177 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170178 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170179 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170180 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170181 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170182 }
-	# add_country_modifier = { name = "support_1" duration = 360 }#command = { type = wakeminister which = 170184 }
-	# add_country_modifier = { name = "democratic8" duration = 360 }#command = { type = set_domestic which = democratic value = 8 }
-	# add_country_modifier = { name = "rulingpartysupport" duration = 360 }#command = { type = set_domestic which = political_left value = 7 }
-	# add_country_modifier = { name = "democratic9" duration = 360 }#command = { type = set_domestic which = freedom value = 9 }
-	# add_country_modifier = { name = "freemarket6" duration = 360 }#command = { type = set_domestic which = free_market value = 6 }
-	national_unity = -10
-	neutrality = 23
-	head_of_state = 170150
-	head_of_government = 170152
-	foreign_minister = 170160
-	armament_minister = 170165
-	minister_of_security = 170150
-	minister_of_intelligence = 170172
-	chief_of_staff = 170173
-	chief_of_army = 170174
-	chief_of_navy = 170174
-	chief_of_air = 170182
-	# add_country_modifier = { name = "research_1" duration = 360 }#command = { type = waketeam which = 170022 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170150 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170151 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170152 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170153 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170154 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170155 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170156 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170157 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170158 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170159 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170160 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170161 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170162 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170163 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170164 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170165 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170166 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170167 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170168 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170169 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170170 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170171 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170172 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170173 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170174 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170175 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170176 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170177 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170178 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170179 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170180 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170181 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170182 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170183 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170184 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170185 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170186 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170187 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170188 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170189 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170190 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170191 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170192 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170193 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170194 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170195 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170196 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170197 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170198 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170199 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170200 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170201 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170202 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170203 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170204 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170205 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170206 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170207 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170208 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170209 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170210 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170211 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170212 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170213 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170214 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170215 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170216 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170217 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170218 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170219 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170220 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170221 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170222 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170223 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170224 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170225 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170226 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170227 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170228 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170229 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170230 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170231 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170232 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170233 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170234 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170235 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170236 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170237 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170238 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170239 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170240 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170241 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170242 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170243 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170244 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170245 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170246 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170247 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170248 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170249 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170250 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170251 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170252 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170253 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170254 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170255 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170256 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170257 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170258 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170259 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170260 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170261 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170262 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170263 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170264 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170265 }
-	# add_country_modifier = { name = "officers_1" duration = 360 }#command = { type = wakeleader which = 170266 }
-	remove_minister = 170106
-	remove_minister = 170107
-	remove_minister = 170110
-	remove_minister = 170111
-	remove_minister = 170112
-	remove_minister = 170113
-	remove_minister = 170114
-	remove_minister = 170115
-	remove_minister = 170116
-	remove_minister = 170117
-	remove_minister = 170118
-	remove_minister = 170121
-	remove_minister = 170122
-	remove_minister = 170123
-	remove_minister = 170124
-	remove_minister = 170127
-	remove_minister = 170128
-	remove_minister = 170129
-	remove_minister = 170130
-	remove_minister = 170138
-	remove_minister = 170139
-kill_leader = 14710001 #  Aguilar
-kill_leader = 14710002 #  Altamirano
-kill_leader = 14710003 #  Argumedo
-kill_leader = 14710004 #  Beltrán Castañares
-kill_leader = 14710005 #  Blanquet
-kill_leader = 14710006 #  Bravo
-kill_leader = 14710007 #  Cartón
-kill_leader = 14710008 #  Cejudo
-kill_leader = 14710009 #  Carmen Curiel
-kill_leader = 14710010 #  Casso López
-kill_leader = 14710011 #  Chacón
-kill_leader = 14710012 #  Dávila
-kill_leader = 14710013 #  Delgadillo
-kill_leader = 10810024 #  Lambotte
-kill_leader = 14710015 #  Eguía Lis
-kill_leader = 14710016 #  Escandón y Barrón
-kill_leader = 14710017 #  Gallardo
-kill_leader = 14710018 #  Gil
-kill_leader = 14710019 #  Gorostieta y Velarde
-kill_leader = 14710020 #  Harrotian
-kill_leader = 14710021 #  Huerta
-kill_leader = 14710022 #  Jiménez Castro
-kill_leader = 10810033 #  Arnold
-kill_leader = 14710024 #  Lojero
-kill_leader = 14710025 #  Maas Águila
-kill_leader = 14710026 #  Maas Flores
-kill_leader = 10810037 #  Andringa
-kill_leader = 14710028 #  Maldonado
-kill_leader = 14710029 #  Medina Barrón
-kill_leader = 14710030 #  Mercado
-kill_leader = 14710031 #  Mier
-kill_leader = 14710032 #  Mondragón
-kill_leader = 14710033 #  Morelos
-kill_leader = 14710034 #  Mass
-kill_leader = 14710035 #  Monter
-kill_leader = 14710036 #  Navarro
-kill_leader = 14710037 #  Ocón
-kill_leader = 14710038 #  Ojeda
-kill_leader = 14710039 #  Olea
-kill_leader = 14710040 #  Orozco
-kill_leader = 14710041 #  Orpinel
-kill_leader = 14710042 #  Poloney
-kill_leader = 14710043 #  Rasgado
-kill_leader = 14710044 #  Reyes
-kill_leader = 14710045 #  Robles
-kill_leader = 14710046 #  Rojas
-kill_leader = 14710047 #  Rubio Navarrete
-kill_leader = 14710048 #  Ruiz
-kill_leader = 14710049 #  Salazar
-kill_leader = 14710050 #  Soberanes
-kill_leader = 14710051 #  Téllez
-kill_leader = 14710052 #  Toro
-kill_leader = 14710053 #  Trucy Aubert
-kill_leader = 14710054 #  Velasco
-kill_leader = 14710055 #  Yarza
-kill_leader = 14710056 #  Zozaya
-kill_leader = 14720001 #  Azueta
-kill_leader = 14730001 #  Villasana
-
-	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 170020 }
-	remove_minister = 170200
-	remove_minister = 170201
-	remove_minister = 170202
-	remove_minister = 170203
-	remove_minister = 170164
-	remove_minister = 170209
-	remove_minister = 170210
-	remove_minister = 170211
-	remove_minister = 170212
-	remove_minister = 170213
-	remove_minister = 170214
-	remove_minister = 170215
-	remove_minister = 170216
-	remove_minister = 170217
-	remove_minister = 170218
-	remove_minister = 170219
-	remove_minister = 170220
-	remove_minister = 170222
-	remove_minister = 170225
-	remove_minister = 170226
-	remove_minister = 170227
-	remove_minister = 170228
-	remove_minister = 170229
-	remove_minister = 170231
-	remove_minister = 170232
-	remove_minister = 170233
-	remove_minister = 170234
-	remove_minister = 170236
-	remove_minister = 170237
-	#remove_minister = 170238 
-	remove_minister = 170003
-	remove_minister = 170241
-	remove_minister = 170243
-	remove_minister = 170244
-	remove_minister = 170245
-	remove_minister = 170247
-	remove_minister = 170004
-	remove_minister = 170249
-	remove_minister = 170250
-	#remove_minister = 170251 
-	#remove_minister = 170264 
-	remove_minister = 170277
-kill_leader = 14710252 #  Obregón
-kill_leader = 14720002 #  Malpica
-
-	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 170017 }
-	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 170006 }
-	remove_minister = 170153
-kill_leader = 14710184 #  Zapata Emiliano
-
-	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 170021 }
-	
-set_global_flag = 2038612_EVENT_DONE
-
-}
-
-}
+ country_event = {
+	title = "DH_EVENT_2038612_TITLE"
+	desc = "DH_EVENT_2038612_DESC"
+	id = 201
+	 
+	picture = "Rheinland"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = MEX
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038612
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2038612_Option7"
+		 national_unity = -10
+		 neutrality = 23
+		 head_of_state = 170150
+		 head_of_government = 170152
+		 foreign_minister = 170160
+		 armament_minister = 170165
+		 minister_of_security = 170150
+		 minister_of_intelligence = 170172
+		 chief_of_staff = 170173
+		 chief_of_army = 170174
+		 chief_of_navy = 170174
+		 chief_of_air = 170182
+		 remove_minister = 170106
+		 remove_minister = 170107
+		 remove_minister = 170110
+		 remove_minister = 170111
+		 remove_minister = 170112
+		 remove_minister = 170113
+		 remove_minister = 170114
+		 remove_minister = 170115
+		 remove_minister = 170116
+		 remove_minister = 170117
+		 remove_minister = 170118
+		 remove_minister = 170121
+		 remove_minister = 170122
+		 remove_minister = 170123
+		 remove_minister = 170124
+		 remove_minister = 170127
+		 remove_minister = 170128
+		 remove_minister = 170129
+		 remove_minister = 170130
+		 remove_minister = 170138
+		 remove_minister = 170139
+		 kill_leader = 14710001
+		 kill_leader = 14710002
+		 kill_leader = 14710003
+		 kill_leader = 14710004
+		 kill_leader = 14710005
+		 kill_leader = 14710006
+		 kill_leader = 14710007
+		 kill_leader = 14710008
+		 kill_leader = 14710009
+		 kill_leader = 14710010
+		 kill_leader = 14710011
+		 kill_leader = 14710012
+		 kill_leader = 14710013
+		 kill_leader = 10810024
+		 kill_leader = 14710015
+		 kill_leader = 14710016
+		 kill_leader = 14710017
+		 kill_leader = 14710018
+		 kill_leader = 14710019
+		 kill_leader = 14710020
+		 kill_leader = 14710021
+		 kill_leader = 14710022
+		 kill_leader = 10810033
+		 kill_leader = 14710024
+		 kill_leader = 14710025
+		 kill_leader = 14710026
+		 kill_leader = 10810037
+		 kill_leader = 14710028
+		 kill_leader = 14710029
+		 kill_leader = 14710030
+		 kill_leader = 14710031
+		 kill_leader = 14710032
+		 kill_leader = 14710033
+		 kill_leader = 14710034
+		 kill_leader = 14710035
+		 kill_leader = 14710036
+		 kill_leader = 14710037
+		 kill_leader = 14710038
+		 kill_leader = 14710039
+		 kill_leader = 14710040
+		 kill_leader = 14710041
+		 kill_leader = 14710042
+		 kill_leader = 14710043
+		 kill_leader = 14710044
+		 kill_leader = 14710045
+		 kill_leader = 14710046
+		 kill_leader = 14710047
+		 kill_leader = 14710048
+		 kill_leader = 14710049
+		 kill_leader = 14710050
+		 kill_leader = 14710051
+		 kill_leader = 14710052
+		 kill_leader = 14710053
+		 kill_leader = 14710054
+		 kill_leader = 14710055
+		 kill_leader = 14710056
+		 kill_leader = 14720001
+		 kill_leader = 14730001
+		 remove_minister = 170200
+		 remove_minister = 170201
+		 remove_minister = 170202
+		 remove_minister = 170203
+		 remove_minister = 170164
+		 remove_minister = 170209
+		 remove_minister = 170210
+		 remove_minister = 170211
+		 remove_minister = 170212
+		 remove_minister = 170213
+		 remove_minister = 170214
+		 remove_minister = 170215
+		 remove_minister = 170216
+		 remove_minister = 170217
+		 remove_minister = 170218
+		 remove_minister = 170219
+		 remove_minister = 170220
+		 remove_minister = 170222
+		 remove_minister = 170225
+		 remove_minister = 170226
+		 remove_minister = 170227
+		 remove_minister = 170228
+		 remove_minister = 170229
+		 remove_minister = 170231
+		 remove_minister = 170232
+		 remove_minister = 170233
+		 remove_minister = 170234
+		 remove_minister = 170236
+		 remove_minister = 170237
+		 remove_minister = 170003
+		 remove_minister = 170241
+		 remove_minister = 170243
+		 remove_minister = 170244
+		 remove_minister = 170245
+		 remove_minister = 170247
+		 remove_minister = 170004
+		 remove_minister = 170249
+		 remove_minister = 170250
+		 remove_minister = 170277
+		 kill_leader = 14710252
+		 kill_leader = 14720002
+		 remove_minister = 170153
+		 kill_leader = 14710184
+		 set_global_flag = 2038612_EVENT_DONE
+		 }
+	}
 
 #Zapatistas win the Mexican Revolution
-country_event = {
-id = 202
-title = "DH_EVENT_2038613_TITLE"
-desc = "DH_EVENT_2038613_DESC"
-picture = "Rheinland"
-
-trigger = {
-	war = no
-	not = {
-		exists = MEX
-		exists = MXR
-		}
-	9604 = { controlled_by = MXR }
-	
-tag = MXR
-date = 1914.1.1
-
-not = { date = 1920.12.30
- }
 
 
-
-not = { has_global_flag = SLEEPEVENT_2038613 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  7 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2038613_Option7"
-	dissent = -5 
-	MEX = {
-		country_event = 203
-		}
-
-set_global_flag = 2038613_EVENT_DONE
-
+ country_event = {
+	title = "DH_EVENT_2038613_TITLE"
+	desc = "DH_EVENT_2038613_DESC"
+	id = 202
+	 
+	picture = "Rheinland"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 7
+		 }
+	trigger = {
+		 war = no
+		 not = {
+			 exists = MEX
+			 exists = MXR
+			 }
+		 9604 = {
+			 controlled_by = MXR
+			 }
+		 tag = MXR
+		 date = 1914.1.1
+		 not = {
+			 date = 1920.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038613
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2038613_Option7"
+		 dissent = -5
+		 MEX = {
+			 country_event = 203
+			 }
+		 set_global_flag = 2038613_EVENT_DONE
+		 }
 	}
-}
 
 #Zapata leads Mexico!
-country_event = {
-id = 203
-title = "DH_EVENT_2038614_TITLE"
-desc = "DH_EVENT_2038614_DESC"
-picture = "Rheinland"
 
-trigger = { 
-tag = MEX
+#  Aguilar
+#  Altamirano
+#  Argumedo
+#  Beltrán Castañares
+#  Blanquet
+#  Bravo
+#  Cartón
+#  Cejudo
+#  Carmen Curiel
+#  Casso López
+#  Chacón
+#  Dávila
+#  Delgadillo
+#  Lambotte
+#  Eguía Lis
+#  Escandón y Barrón
+#  Gallardo
+#  Gil
+#  Gorostieta y Velarde
+#  Harrotian
+#  Huerta
+#  Jiménez Castro
+#  Arnold
+#  Lojero
+#  Maas Águila
+#  Maas Flores
+#  Andringa
+#  Maldonado
+#  Medina Barrón
+#  Mercado
+#  Mier
+#  Mondragón
+#  Morelos
+#  Mass
+#  Monter
+#  Navarro
+#  Ocón
+#  Ojeda
+#  Olea
+#  Orozco
+#  Orpinel
+#  Poloney
+#  Rasgado
+#  Reyes
+#  Robles
+#  Rojas
+#  Rubio Navarrete
+#  Ruiz
+#  Salazar
+#  Soberanes
+#  Téllez
+#  Toro
+#  Trucy Aubert
+#  Velasco
+#  Yarza
+#  Zozaya
+#  Azueta
+#  Villasana
+#  Obregón
+#  Malpica
+#  Sánchez
 
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2038614 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2038614_Option7"
-	national_unity = -15
-	neutrality = 23
-	head_of_state = 170151
-	head_of_government = 170153
-	foreign_minister = 170160
-	armament_minister = 170165
-	minister_of_security = 170169
-	minister_of_intelligence = 170153
-	chief_of_staff = 170175
-	chief_of_army = 170153
-	chief_of_navy = 170175
-	chief_of_air = 170182
-	remove_minister = 170106
-	remove_minister = 170107
-	remove_minister = 170110
-	remove_minister = 170111
-	remove_minister = 170112
-	remove_minister = 170113
-	remove_minister = 170114
-	remove_minister = 170115
-	remove_minister = 170116
-	remove_minister = 170117
-	remove_minister = 170118
-	remove_minister = 170121
-	remove_minister = 170122
-	remove_minister = 170123
-	remove_minister = 170124
-	remove_minister = 170127
-	remove_minister = 170128
-	remove_minister = 170129
-	remove_minister = 170130
-	remove_minister = 170138
-	remove_minister = 170139
-kill_leader = 14710001 #  Aguilar
-kill_leader = 14710002 #  Altamirano
-kill_leader = 14710003 #  Argumedo
-kill_leader = 14710004 #  Beltrán Castañares
-kill_leader = 14710005 #  Blanquet
-kill_leader = 14710006 #  Bravo
-kill_leader = 14710007 #  Cartón
-kill_leader = 14710008 #  Cejudo
-kill_leader = 14710009 #  Carmen Curiel
-kill_leader = 14710010 #  Casso López
-kill_leader = 14710011 #  Chacón
-kill_leader = 14710012 #  Dávila
-kill_leader = 14710013 #  Delgadillo
-kill_leader = 10810024 #  Lambotte
-kill_leader = 14710015 #  Eguía Lis
-kill_leader = 14710016 #  Escandón y Barrón
-kill_leader = 14710017 #  Gallardo
-kill_leader = 14710018 #  Gil
-kill_leader = 14710019 #  Gorostieta y Velarde
-kill_leader = 14710020 #  Harrotian
-kill_leader = 14710021 #  Huerta
-kill_leader = 14710022 #  Jiménez Castro
-kill_leader = 10810033 #  Arnold
-kill_leader = 14710024 #  Lojero
-kill_leader = 14710025 #  Maas Águila
-kill_leader = 14710026 #  Maas Flores
-kill_leader = 10810037 #  Andringa
-kill_leader = 14710028 #  Maldonado
-kill_leader = 14710029 #  Medina Barrón
-kill_leader = 14710030 #  Mercado
-kill_leader = 14710031 #  Mier
-kill_leader = 14710032 #  Mondragón
-kill_leader = 14710033 #  Morelos
-kill_leader = 14710034 #  Mass
-kill_leader = 14710035 #  Monter
-kill_leader = 14710036 #  Navarro
-kill_leader = 14710037 #  Ocón
-kill_leader = 14710038 #  Ojeda
-kill_leader = 14710039 #  Olea
-kill_leader = 14710040 #  Orozco
-kill_leader = 14710041 #  Orpinel
-kill_leader = 14710042 #  Poloney
-kill_leader = 14710043 #  Rasgado
-kill_leader = 14710044 #  Reyes
-kill_leader = 14710045 #  Robles
-kill_leader = 14710046 #  Rojas
-kill_leader = 14710047 #  Rubio Navarrete
-kill_leader = 14710048 #  Ruiz
-kill_leader = 14710049 #  Salazar
-kill_leader = 14710050 #  Soberanes
-kill_leader = 14710051 #  Téllez
-kill_leader = 14710052 #  Toro
-kill_leader = 14710053 #  Trucy Aubert
-kill_leader = 14710054 #  Velasco
-kill_leader = 14710055 #  Yarza
-kill_leader = 14710056 #  Zozaya
-kill_leader = 14720001 #  Azueta
-kill_leader = 14730001 #  Villasana
-
-	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 170020 }
-	remove_minister = 170200
-	remove_minister = 170201
-	remove_minister = 170202
-	remove_minister = 170203
-	remove_minister = 170164
-	remove_minister = 170209
-	remove_minister = 170210
-	remove_minister = 170211
-	remove_minister = 170212
-	remove_minister = 170213
-	remove_minister = 170214
-	remove_minister = 170215
-	remove_minister = 170216
-	remove_minister = 170217
-	remove_minister = 170218
-	remove_minister = 170219
-	remove_minister = 170220
-	remove_minister = 170222
-	remove_minister = 170225
-	remove_minister = 170226
-	remove_minister = 170227
-	remove_minister = 170228
-	remove_minister = 170229
-	remove_minister = 170231
-	remove_minister = 170232
-	remove_minister = 170233
-	remove_minister = 170234
-	remove_minister = 170236
-	remove_minister = 170237
-	#remove_minister = 170238 
-	remove_minister = 170003
-	remove_minister = 170241
-	remove_minister = 170243
-	remove_minister = 170244
-	remove_minister = 170245
-	remove_minister = 170247
-	remove_minister = 170004
-	remove_minister = 170249
-	remove_minister = 170250
-	#remove_minister = 170251 
-	#remove_minister = 170264 
-	remove_minister = 170277
-kill_leader = 14710252 #  Obregón
-kill_leader = 14720002 #  Malpica
-
-	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 170017 }
-	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 170006 }
-	remove_minister = 170152
-kill_leader = 14710126 #  Sánchez
-
-	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 170022 }
-	
-set_global_flag = 2038614_EVENT_DONE
-
-}
-
-}
+ country_event = {
+	title = "DH_EVENT_2038614_TITLE"
+	desc = "DH_EVENT_2038614_DESC"
+	id = 203
+	 
+	picture = "Rheinland"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = MEX
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038614
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2038614_Option7"
+		 national_unity = -15
+		 neutrality = 23
+		 head_of_state = 170151
+		 head_of_government = 170153
+		 foreign_minister = 170160
+		 armament_minister = 170165
+		 minister_of_security = 170169
+		 minister_of_intelligence = 170153
+		 chief_of_staff = 170175
+		 chief_of_army = 170153
+		 chief_of_navy = 170175
+		 chief_of_air = 170182
+		 remove_minister = 170106
+		 remove_minister = 170107
+		 remove_minister = 170110
+		 remove_minister = 170111
+		 remove_minister = 170112
+		 remove_minister = 170113
+		 remove_minister = 170114
+		 remove_minister = 170115
+		 remove_minister = 170116
+		 remove_minister = 170117
+		 remove_minister = 170118
+		 remove_minister = 170121
+		 remove_minister = 170122
+		 remove_minister = 170123
+		 remove_minister = 170124
+		 remove_minister = 170127
+		 remove_minister = 170128
+		 remove_minister = 170129
+		 remove_minister = 170130
+		 remove_minister = 170138
+		 remove_minister = 170139
+		 kill_leader = 14710001
+		 kill_leader = 14710002
+		 kill_leader = 14710003
+		 kill_leader = 14710004
+		 kill_leader = 14710005
+		 kill_leader = 14710006
+		 kill_leader = 14710007
+		 kill_leader = 14710008
+		 kill_leader = 14710009
+		 kill_leader = 14710010
+		 kill_leader = 14710011
+		 kill_leader = 14710012
+		 kill_leader = 14710013
+		 kill_leader = 10810024
+		 kill_leader = 14710015
+		 kill_leader = 14710016
+		 kill_leader = 14710017
+		 kill_leader = 14710018
+		 kill_leader = 14710019
+		 kill_leader = 14710020
+		 kill_leader = 14710021
+		 kill_leader = 14710022
+		 kill_leader = 10810033
+		 kill_leader = 14710024
+		 kill_leader = 14710025
+		 kill_leader = 14710026
+		 kill_leader = 10810037
+		 kill_leader = 14710028
+		 kill_leader = 14710029
+		 kill_leader = 14710030
+		 kill_leader = 14710031
+		 kill_leader = 14710032
+		 kill_leader = 14710033
+		 kill_leader = 14710034
+		 kill_leader = 14710035
+		 kill_leader = 14710036
+		 kill_leader = 14710037
+		 kill_leader = 14710038
+		 kill_leader = 14710039
+		 kill_leader = 14710040
+		 kill_leader = 14710041
+		 kill_leader = 14710042
+		 kill_leader = 14710043
+		 kill_leader = 14710044
+		 kill_leader = 14710045
+		 kill_leader = 14710046
+		 kill_leader = 14710047
+		 kill_leader = 14710048
+		 kill_leader = 14710049
+		 kill_leader = 14710050
+		 kill_leader = 14710051
+		 kill_leader = 14710052
+		 kill_leader = 14710053
+		 kill_leader = 14710054
+		 kill_leader = 14710055
+		 kill_leader = 14710056
+		 kill_leader = 14720001
+		 kill_leader = 14730001
+		 remove_minister = 170200
+		 remove_minister = 170201
+		 remove_minister = 170202
+		 remove_minister = 170203
+		 remove_minister = 170164
+		 remove_minister = 170209
+		 remove_minister = 170210
+		 remove_minister = 170211
+		 remove_minister = 170212
+		 remove_minister = 170213
+		 remove_minister = 170214
+		 remove_minister = 170215
+		 remove_minister = 170216
+		 remove_minister = 170217
+		 remove_minister = 170218
+		 remove_minister = 170219
+		 remove_minister = 170220
+		 remove_minister = 170222
+		 remove_minister = 170225
+		 remove_minister = 170226
+		 remove_minister = 170227
+		 remove_minister = 170228
+		 remove_minister = 170229
+		 remove_minister = 170231
+		 remove_minister = 170232
+		 remove_minister = 170233
+		 remove_minister = 170234
+		 remove_minister = 170236
+		 remove_minister = 170237
+		 remove_minister = 170003
+		 remove_minister = 170241
+		 remove_minister = 170243
+		 remove_minister = 170244
+		 remove_minister = 170245
+		 remove_minister = 170247
+		 remove_minister = 170004
+		 remove_minister = 170249
+		 remove_minister = 170250
+		 remove_minister = 170277
+		 kill_leader = 14710252
+		 kill_leader = 14720002
+		 remove_minister = 170152
+		 kill_leader = 14710126
+		 set_global_flag = 2038614_EVENT_DONE
+		 }
+	}
 
 #Villistas and Zapatistas win the Mexican Revolution
-country_event = {
-id = 204
-title = "DH_EVENT_2038615_TITLE"
-desc = "DH_EVENT_2038615_DESC"
-picture = "Rheinland"
-
-trigger = {
-	war = no
-	not = {
-		exists = MEX
-		}
-	exists = MXR
-	9604 = { controlled_by = MXR }
-	
-tag = MXR
-date = 1914.1.1
-
-not = { date = 1920.12.30
- }
 
 
-
-not = { has_global_flag = SLEEPEVENT_2038615 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  7 }
-
-is_triggered_only = no
-option = {
-	#MANUALFIX trigger option random_country = { limit = { tag = THIS MXR = { ai = yes }  } } 
-	name = "DH_EVENT_2038615_Option7"
-	THIS = { inherit = MXR }
-	dissent = -5 
-	MEX = {
-		country_event = 201
-		}
-
-set_global_flag = 2038615_EVENT_DONE
-
+ country_event = {
+	title = "DH_EVENT_2038615_TITLE"
+	desc = "DH_EVENT_2038615_DESC"
+	id = 204
+	 
+	picture = "Rheinland"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 7
+		 }
+	trigger = {
+		 war = no
+		 not = {
+			 exists = MEX
+			 }
+		 exists = MXR
+		 9604 = {
+			 controlled_by = MXR
+			 }
+		 tag = MXR
+		 date = 1914.1.1
+		 not = {
+			 date = 1920.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038615
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2038615_Option7"
+		 THIS = {
+			 inherit = MXR
+			 }
+		 dissent = -5
+		 MEX = {
+			 country_event = 201
+			 }
+		 set_global_flag = 2038615_EVENT_DONE
+		 }
+	option = {
+		 name = "DH_EVENT_2038615_Option8"
+		 leave_faction = axis
+		 leave_faction = allies
+		 leave_faction = comintern
+		 dissent = 5
+		 war = {
+			 target = MXR
+			 }
+		 set_global_flag = 2038615_EVENT_DONE
+		 }
 	}
-option = {
-	#MANUALFIX trigger option random_country = { limit = { tag = THIS not = { MXR = { ai = yes } }  } } 
-	name = "DH_EVENT_2038615_Option8"
-	leave_faction = axis
-	leave_faction = allies
-	leave_faction = comintern
-	dissent = 5 
-	war = { target = MXR }
-	
-set_global_flag = 2038615_EVENT_DONE
-
-}
-
-}
 
 #Zapatistas and Villistas win the Mexican Revolution
-country_event = {
-id = 205
-title = "DH_EVENT_2038616_TITLE"
-desc = "DH_EVENT_2038616_DESC"
-picture = "Rheinland"
-
-trigger = {
-	war = no
-	not = {
-		exists = MEX
-		}
-	exists = MXR
-	9604 = { controlled_by = MXR }
-	
-tag = MXR
-date = 1914.1.1
-
-not = { date = 1920.12.30
- }
 
 
-
-not = { has_global_flag = SLEEPEVENT_2038616 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  7 }
-
-is_triggered_only = no
-option = {
-	#MANUALFIX trigger option random_country = { limit = { tag = THIS MXR = { ai = yes }  } } 
-	name = "DH_EVENT_2038616_Option7"
-	THIS = { inherit = MXR }
-	dissent = -5 
-	MEX = {
-		country_event = 203
-		}
-
-set_global_flag = 2038616_EVENT_DONE
-
+ country_event = {
+	title = "DH_EVENT_2038616_TITLE"
+	desc = "DH_EVENT_2038616_DESC"
+	id = 205
+	 
+	picture = "Rheinland"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 7
+		 }
+	trigger = {
+		 war = no
+		 not = {
+			 exists = MEX
+			 }
+		 exists = MXR
+		 9604 = {
+			 controlled_by = MXR
+			 }
+		 tag = MXR
+		 date = 1914.1.1
+		 not = {
+			 date = 1920.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038616
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2038616_Option7"
+		 THIS = {
+			 inherit = MXR
+			 }
+		 dissent = -5
+		 MEX = {
+			 country_event = 203
+			 }
+		 set_global_flag = 2038616_EVENT_DONE
+		 }
+	option = {
+		 name = "DH_EVENT_2038616_Option8"
+		 leave_faction = axis
+		 leave_faction = allies
+		 leave_faction = comintern
+		 dissent = 5
+		 war = {
+			 target = MXR
+			 }
+		 set_global_flag = 2038616_EVENT_DONE
+		 }
 	}
-option = {
-	#MANUALFIX trigger option random_country = { limit = { tag = THIS not = { MXR = { ai = yes } }  } } 
-	name = "DH_EVENT_2038616_Option8"
-	leave_faction = axis
-	leave_faction = allies
-	leave_faction = comintern
-	dissent = 5 
-	war = { target = MXR }
-	
-set_global_flag = 2038616_EVENT_DONE
-
-}
-
-}
 
 #General González suggests a plan for the assassination of Zapata
-country_event = {
-id = 206
-title = "DH_EVENT_2038617_TITLE"
-desc = "DH_EVENT_2038617_DESC"
-picture = "diplomatic_campaign"
-
-trigger = {
-	exists = MXR
-	MXR = { war_with = MXR }
-	
-tag = MXR
-date = 1918.11.1
-
-not = { date = 1919.12.30
- }
 
 
-
-not = { has_global_flag = SLEEPEVENT_2038617 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  30 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2038617_Option7"
-	# add_country_modifier = { name = "freedom-1" duration = 360 }#command = { type = domestic which = freedom value = -1 }
-	# add_country_modifier = { name = "democratic-1" duration = 360 }#command = { type = domestic which = democratic value = -1 }
-	random_country = { limit = { tag = THIS 
-			 THIS = { ai = no }
-			  } 
-		supplies = -50 
+ country_event = {
+	title = "DH_EVENT_2038617_TITLE"
+	desc = "DH_EVENT_2038617_DESC"
+	id = 206
+	 
+	picture = "diplomatic_campaign"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 30
 		 }
-	random_country = { limit = { tag = THIS 
-			 THIS = { ai = no }
-			  } 
-		money = -10 
+	trigger = {
+		 exists = MXR
+		 MXR = {
+			 war_with = MXR
+			 }
+		 tag = MXR
+		 date = 1918.11.1
+		 not = {
+			 date = 1919.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038617
+			 }
 		 }
-	MXR = { country_event = 207 }
-	
-set_global_flag = 2038617_EVENT_DONE
-
-}
-
-option = {
-	name = "DH_EVENT_2038617_Option8"
-	# add_country_modifier = { name = "freedom1" duration = 360 }#command = { type = domestic which = freedom value = 1 }
-	# add_country_modifier = { name = "democratic1" duration = 360 }#command = { type = domestic which = democratic value = 1 }
-	dissent = 1 
-	set_global_flag = SLEEPEVENT_2038618 
-	
-set_global_flag = 2038617_EVENT_DONE
-
-}
-
-}
+	option = {
+		 name = "DH_EVENT_2038617_Option7"
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 THIS = {
+					 ai = no
+					 }
+				 }
+			 supplies = -50
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 THIS = {
+					 ai = no
+					 }
+				 }
+			 money = -10
+			 }
+		 MXR = {
+			 country_event = 207
+			 }
+		 set_global_flag = 2038617_EVENT_DONE
+		 }
+	option = {
+		 name = "DH_EVENT_2038617_Option8"
+		 dissent = 1
+		 set_global_flag = SLEEPEVENT_2038618
+		 set_global_flag = 2038617_EVENT_DONE
+		 }
+	}
 
 #The tragedy! Zapata has been assassinated!
-country_event = {
-id = 207
-title = "DH_EVENT_2038618_TITLE"
-desc = "DH_EVENT_2038618_DESC"
-picture = "zapata_assassination"
 
-trigger = { 
-tag = MXR
+#  Zapata Emiliano
+#  Zapata Emiliano
 
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2038618 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	ai_chance = { factor = 80
+ country_event = {
+	title = "DH_EVENT_2038618_TITLE"
+	desc = "DH_EVENT_2038618_DESC"
+	id = 207
+	 
+	picture = "zapata_assassination"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = MXR
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038618
+			 }
 		 }
-	name = "DH_EVENT_2038618_Option7"
-	#remove_minister = 1110001
-kill_leader = 15110195 #  Zapata Emiliano
-
-	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 1114500 }
-	#head_of_state = 1110008
-	dissent = 10 
-	neutrality = 5
-	# add_country_modifier = { name = "professionalarmy-1" duration = 360 }#command = { type = domestic which = professional_army value = -1 }
-	relation = { who = MXR value = -150  }
-	relation = { who = MEX value = -150  }
-	# add_country_modifier = { name = "org_-15" duration = 360 }#command = { type = max_organization which = land value = -15 }
-	# add_country_modifier = { name = "morale_-15" duration = 360 }#command = { type = morale which = land value = -15 }
-	manpower = -10 
-	
-set_global_flag = 2038618_EVENT_DONE
-
-}
-
-option = {
-	name = "DH_EVENT_2038618_Option8"
-	ai_chance = { factor = 10
+	option = {
+		 ai_chance = {
+			 factor = 80
+			 }
+		 name = "DH_EVENT_2038618_Option7"
+		 kill_leader = 15110195
+		 dissent = 10
+		 neutrality = 5
+		 relation = {
+			 who = MXR
+			 value = -150
+			 }
+		 relation = {
+			 who = MEX
+			 value = -150
+			 }
+		 manpower = -10
+		 set_global_flag = 2038618_EVENT_DONE
 		 }
-	#remove_minister = 1110001
-kill_leader = 15110195 #  Zapata Emiliano
- 
-	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 1114500 }
-	#head_of_state = 1110027
-	dissent = 10 
-	neutrality = 5
-	# add_country_modifier = { name = "professionalarmy-1" duration = 360 }#command = { type = domestic which = professional_army value = -1 }
-	relation = { who = MXR value = -150  }
-	relation = { who = MEX value = -150  }
-	# add_country_modifier = { name = "org_-15" duration = 360 }#command = { type = max_organization which = land value = -15 }
-	# add_country_modifier = { name = "morale_-15" duration = 360 }#command = { type = morale which = land value = -15 }
-	manpower = -10 
-	
-set_global_flag = 2038618_EVENT_DONE
-
-}
-
-option = {
-	#MANUALFIX trigger option random_country = { limit = { tag = THIS THIS = { ai = yes }  } } 
-	ai_chance = { factor = 10
+	option = {
+		 name = "DH_EVENT_2038618_Option8"
+		 ai_chance = {
+			 factor = 10
+			 }
+		 kill_leader = 15110195
+		 dissent = 10
+		 neutrality = 5
+		 relation = {
+			 who = MXR
+			 value = -150
+			 }
+		 relation = {
+			 who = MEX
+			 value = -150
+			 }
+		 manpower = -10
+		 set_global_flag = 2038618_EVENT_DONE
 		 }
-	name = "DH_EVENT_2038618_Option9"
-	MXR = { country_event = 208 }
-	
-set_global_flag = 2038618_EVENT_DONE
-
-}
-
-}
+	option = {
+		 ai_chance = {
+			 factor = 10
+			 }
+		 name = "DH_EVENT_2038618_Option9"
+		 MXR = {
+			 country_event = 208
+			 }
+		 set_global_flag = 2038618_EVENT_DONE
+		 }
+	}
 
 #The Zapatistas submits to us!
-country_event = {
-id = 208
-title = "DH_EVENT_2038619_TITLE"
-desc = "DH_EVENT_2038619_DESC"
-picture = "diplomatic_campaign"
-
-trigger = { 
-tag = MXR
 
 
-
-
-
-not = { has_global_flag = SLEEPEVENT_2038619 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2038619_Option7"
-	dissent = -5 
-	THIS = { inherit = MXR }
-	
-set_global_flag = 2038619_EVENT_DONE
-
-}
-
-}
+ country_event = {
+	title = "DH_EVENT_2038619_TITLE"
+	desc = "DH_EVENT_2038619_DESC"
+	id = 208
+	 
+	picture = "diplomatic_campaign"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = MXR
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038619
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2038619_Option7"
+		 dissent = -5
+		 THIS = {
+			 inherit = MXR
+			 }
+		 set_global_flag = 2038619_EVENT_DONE
+		 }
+	}
 
 #Plan of Agua Prieta
-country_event = {
-id = 209
-title = "DH_EVENT_2038620_TITLE"
-desc = "DH_EVENT_2038620_DESC"
-picture = "plan_of_agua_prieta"
 
-trigger = {
-	war = no
-	has_global_flag = 2038609_EVENT_DONE
-	head_of_state = 170150
-	not = {
-		exists = MXR
-		}
-	
-tag = MEX
-date = 1919.1.1
+#  Murguía López de Lara
+#  Obregón
+#  Herrero Hernández
+#  Calles
+#  Hill
+#  Flores
+#  Piña
+#  Cruz
+#  Méndez
 
-not = { date = 1925.12.30
- }
-
-
-#NOEQUIVALENT one_action = yes
-
-
-not = { has_global_flag = SLEEPEVENT_2038620 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  90 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2038620_Option7"
-	ai_chance = { factor = 95
+ country_event = {
+	title = "DH_EVENT_2038620_TITLE"
+	desc = "DH_EVENT_2038620_DESC"
+	id = 209
+	 
+	picture = "plan_of_agua_prieta"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 90
 		 }
-	dissent = 5 
-	# add_country_modifier = { name = "democratic8" duration = 360 }#command = { type = set_domestic which = democratic value = 8 }
-	# add_country_modifier = { name = "rulingpartysupport" duration = 360 }#command = { type = set_domestic which = political_left value = 7 }
-	head_of_state = 170202
-	head_of_government = 170202
-	foreign_minister = 170218
-	armament_minister = 170226
-	minister_of_security = 170203
-	minister_of_intelligence = 170225
-	chief_of_staff = 170247
-	chief_of_army = 170247
-	chief_of_navy = 170247
-	remove_minister = 170200
-	#kill_leader = 170356 
-kill_leader = 14710250 #  Murguía López de Lara
-
-	remove_minister = 170232
-	remove_minister = 170245
-	#kill_leader = 170031 
-	
-set_global_flag = 2038620_EVENT_DONE
-
-}
-
-option = {
-	ai_chance = { factor = 5
+	trigger = {
+		 war = no
+		 has_global_flag = 2038609_EVENT_DONE
+		 head_of_state = 170150
+		 not = {
+			 exists = MXR
+			 }
+		 tag = MEX
+		 date = 1919.1.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038620
+			 }
 		 }
-	name = "DH_EVENT_2038620_Option8"
-	dissent = 5 
-	# add_country_modifier = { name = "freedom-2" duration = 360 }#command = { type = domestic which = freedom value = -2 }
-	head_of_state = 170281
-	head_of_government = 170281 
-	minister_of_security = 170232
-	chief_of_staff = 170245
-	chief_of_army = 170245
-	chief_of_navy = 170245
-	remove_minister = 170202
-kill_leader = 14710252 #  Obregón
- 
-	remove_minister = 170201
-	#kill_leader = 170385 
-kill_leader = 14710240 #  Herrero Hernández
-
-	remove_minister = 170203
-	remove_minister = 170247
-kill_leader = 14710213 #  Calles
-kill_leader = 14710241 #  Hill
-kill_leader = 14710228 #  Flores
-kill_leader = 14710254 #  Piña
-kill_leader = 14710221 #  Cruz
-
-	remove_minister = 170249
-	kill_leader = 14710098 #  Méndez
-
-	
-set_global_flag = 2038620_EVENT_DONE
-
-}
-
-}
+	option = {
+		 name = "DH_EVENT_2038620_Option7"
+		 ai_chance = {
+			 factor = 95
+			 }
+		 dissent = 5
+		 head_of_state = 170202
+		 head_of_government = 170202
+		 foreign_minister = 170218
+		 armament_minister = 170226
+		 minister_of_security = 170203
+		 minister_of_intelligence = 170225
+		 chief_of_staff = 170247
+		 chief_of_army = 170247
+		 chief_of_navy = 170247
+		 remove_minister = 170200
+		 kill_leader = 14710250
+		 remove_minister = 170232
+		 remove_minister = 170245
+		 set_global_flag = 2038620_EVENT_DONE
+		 }
+	option = {
+		 ai_chance = {
+			 factor = 5
+			 }
+		 name = "DH_EVENT_2038620_Option8"
+		 dissent = 5
+		 head_of_state = 170281
+		 head_of_government = 170281
+		 minister_of_security = 170232
+		 chief_of_staff = 170245
+		 chief_of_army = 170245
+		 chief_of_navy = 170245
+		 remove_minister = 170202
+		 kill_leader = 14710252
+		 remove_minister = 170201
+		 kill_leader = 14710240
+		 remove_minister = 170203
+		 remove_minister = 170247
+		 kill_leader = 14710213
+		 kill_leader = 14710241
+		 kill_leader = 14710228
+		 kill_leader = 14710254
+		 kill_leader = 14710221
+		 remove_minister = 170249
+		 kill_leader = 14710098
+		 set_global_flag = 2038620_EVENT_DONE
+		 }
+	}
 
 #The end of the Mexican Revolution?
-country_event = {
-id = 210
-title = "DH_EVENT_2038621_TITLE"
-desc = "DH_EVENT_2038621_DESC"
-picture = "Peace_conference"
-
-trigger = { 
-tag = MXR
 
 
-
-
-
-not = { has_global_flag = SLEEPEVENT_2038621 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	ai_chance = { factor = 80
+ country_event = {
+	title = "DH_EVENT_2038621_TITLE"
+	desc = "DH_EVENT_2038621_DESC"
+	id = 210
+	 
+	picture = "Peace_conference"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = MXR
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038621
+			 }
 		 }
-	name = "DH_EVENT_2038621_Option7"
-	neutrality = -5
-	war = { target = MXR }
-	dissent = -5 
-	clr_global_flag = MEX_Convention 
-	
-set_global_flag = 2038621_EVENT_DONE
-
-}
-
-option = {
-	#MANUALFIX trigger option random_country = { limit = { tag = THIS THIS = { ai = yes }  } } 
-	ai_chance = { factor = 20
+	option = {
+		 ai_chance = {
+			 factor = 80
+			 }
+		 name = "DH_EVENT_2038621_Option7"
+		 neutrality = -5
+		 war = {
+			 target = MXR
+			 }
+		 dissent = -5
+		 clr_global_flag = MEX_Convention
+		 set_global_flag = 2038621_EVENT_DONE
 		 }
-	name = "DH_EVENT_2038621_Option8"
-	MXR = { country_event = 196 }
-	
-set_global_flag = 2038621_EVENT_DONE
-
-}
-
-}
+	option = {
+		 ai_chance = {
+			 factor = 20
+			 }
+		 name = "DH_EVENT_2038621_Option8"
+		 MXR = {
+			 country_event = 196
+			 }
+		 set_global_flag = 2038621_EVENT_DONE
+		 }
+	}
 
 #The end of the Mexican Revolution?
-country_event = {
-id = 211
-title = "DH_EVENT_2038622_TITLE"
-desc = "DH_EVENT_2038622_DESC"
-picture = "Peace_conference"
-
-trigger = { 
-tag = MXR
 
 
-
-
-
-not = { has_global_flag = SLEEPEVENT_2038622 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	ai_chance = { factor = 80
+ country_event = {
+	title = "DH_EVENT_2038622_TITLE"
+	desc = "DH_EVENT_2038622_DESC"
+	id = 211
+	 
+	picture = "Peace_conference"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = MXR
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038622
+			 }
 		 }
-	name = "DH_EVENT_2038622_Option7"
-	neutrality = -5
-	war = { target = MXR }
-	dissent = -5 
-	clr_global_flag = MEX_Convention 
-	
-set_global_flag = 2038622_EVENT_DONE
-
-}
-
-option = {
-	#MANUALFIX trigger option random_country = { limit = { tag = THIS THIS = { ai = yes }  } } 
-	ai_chance = { factor = 20
+	option = {
+		 ai_chance = {
+			 factor = 80
+			 }
+		 name = "DH_EVENT_2038622_Option7"
+		 neutrality = -5
+		 war = {
+			 target = MXR
+			 }
+		 dissent = -5
+		 clr_global_flag = MEX_Convention
+		 set_global_flag = 2038622_EVENT_DONE
 		 }
-	name = "DH_EVENT_2038622_Option8"
-	MXR = { country_event = 197 }
-	
-set_global_flag = 2038622_EVENT_DONE
-
-}
-
-}
-
-
-
+	option = {
+		 ai_chance = {
+			 factor = 20
+			 }
+		 name = "DH_EVENT_2038622_Option8"
+		 MXR = {
+			 country_event = 197
+			 }
+		 set_global_flag = 2038622_EVENT_DONE
+		 }
+	}
 
 #Launch Raids on Tucson
-country_event = {
-id = 492
-title = "DH_EVENT_2250500_TITLE"
-desc = "DH_EVENT_2250500_DESC"
-trigger = {
-	war = yes
-	not = {
-		 MEX = { war_with = USA }
+
+
+ country_event = {
+	title = "DH_EVENT_2250500_TITLE"
+	desc = "DH_EVENT_2250500_DESC"
+	id = 492
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 14
 		 }
-	not = {
-		 MXR = { war_with = USA }
+	trigger = {
+		 war = yes
+		 not = {
+			 MEX = {
+				 war_with = USA
+				 }
+			 }
+		 not = {
+			 MXR = {
+				 war_with = USA
+				 }
+			 }
+		 money = 10
+		 9203 = {
+			 country_units_in_province = MXR
+			 }
+		 tag = MXR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2250500
+			 }
 		 }
-	money =  10
-	9203 = { country_units_in_province = MXR }
-	#NOEQUIVALENT random =  5
-	
-tag = MXR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2250500 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  14 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2250500_Option7"
-	money = -100 
-	random_country = { limit = { tag = THIS 
-			 9038 = { country_units_in_province = USA }
-			  } 
-		 MXR = { country_event = 493 }
+	option = {
+		 name = "DH_EVENT_2250500_Option7"
+		 money = -100
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 9038 = {
+					 country_units_in_province = USA
+					 }
+				 }
+			 MXR = {
+				 country_event = 493
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 9038 = {
+					 country_units_in_province = USA
+					 }
+				 }
+			 USA = {
+				 country_event = 519
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 not = {
+					 9038 = {
+						 country_units_in_province = USA
+						 }
+					 }
+				 }
+			 MXR = {
+				 country_event = 494
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 not = {
+					 9038 = {
+						 country_units_in_province = USA
+						 }
+					 }
+				 }
+			 USA = {
+				 country_event = 520
+				 }
+			 }
+		 set_global_flag = 2250500_EVENT_DONE
 		 }
-	random_country = { limit = { tag = THIS 
-			 9038 = { country_units_in_province = USA }
-			  } 
-		USA = { country_event = 519 }
-		 }
-	random_country = { limit = { tag = THIS 
-			 not = {
-				 9038 = { country_units_in_province = USA }
-				 }  } 
-		MXR = { country_event = 494 }
-		 }
-	random_country = { limit = { tag = THIS 
-			 not = {
-				 9038 = { country_units_in_province = USA }
-				 }  } 
-		USA = { country_event = 520 }
-		 }
-	
-set_global_flag = 2250500_EVENT_DONE
-
-}
-
-}
+	}
 
 #Raid result : resistance encountered
-country_event = {
-id = 493
-title = "DH_EVENT_2250501_TITLE"
-desc = "DH_EVENT_2250501_DESC"
-trigger = { 
-tag = MXR
 
 
-
-
-
-not = { has_global_flag = SLEEPEVENT_2250501 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2250501_Option7"
-	supplies = 80 
-	rare_materials = 10 
-	crude_oil = 10 
-	metal = 20 
-	energy = 35 
-	
-set_global_flag = 2250501_EVENT_DONE
-
-}
-
-}
+ country_event = {
+	title = "DH_EVENT_2250501_TITLE"
+	desc = "DH_EVENT_2250501_DESC"
+	id = 493
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = MXR
+		 not = {
+			 has_global_flag = SLEEPEVENT_2250501
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2250501_Option7"
+		 supplies = 80
+		 rare_materials = 10
+		 crude_oil = 10
+		 metal = 20
+		 energy = 35
+		 set_global_flag = 2250501_EVENT_DONE
+		 }
+	}
 
 #Raid result : no resistance encountered
-country_event = {
-id = 494
-title = "DH_EVENT_2250502_TITLE"
-desc = "DH_EVENT_2250502_DESC"
-trigger = { 
-tag = MXR
 
 
-
-
-
-not = { has_global_flag = SLEEPEVENT_2250502 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2250502_Option7"
-	supplies = 160 
-	rare_materials = 20 
-	crude_oil = 20 
-	metal = 40 
-	energy = 70 
-	
-set_global_flag = 2250502_EVENT_DONE
-
-}
-
-}
+ country_event = {
+	title = "DH_EVENT_2250502_TITLE"
+	desc = "DH_EVENT_2250502_DESC"
+	id = 494
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = MXR
+		 not = {
+			 has_global_flag = SLEEPEVENT_2250502
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2250502_Option7"
+		 supplies = 160
+		 rare_materials = 20
+		 crude_oil = 20
+		 metal = 40
+		 energy = 70
+		 set_global_flag = 2250502_EVENT_DONE
+		 }
+	}
 
 #Launch Raids on El Paso
-country_event = {
-id = 495
-title = "DH_EVENT_2250503_TITLE"
-desc = "DH_EVENT_2250503_DESC"
-trigger = {
-	war = yes
-	not = {
-		 MEX = { war_with = USA }
+
+
+ country_event = {
+	title = "DH_EVENT_2250503_TITLE"
+	desc = "DH_EVENT_2250503_DESC"
+	id = 495
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 14
 		 }
-	not = {
-		 MXR = { war_with = USA }
+	trigger = {
+		 war = yes
+		 not = {
+			 MEX = {
+				 war_with = USA
+				 }
+			 }
+		 not = {
+			 MXR = {
+				 war_with = USA
+				 }
+			 }
+		 money = 10
+		 9147 = {
+			 country_units_in_province = MXR
+			 }
+		 tag = MXR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2250503
+			 }
 		 }
-	money =  10
-	9147 = { country_units_in_province = MXR }
-	#NOEQUIVALENT random =  5
-	
-tag = MXR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2250503 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  14 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2250503_Option7"
-	money = -100 
-	random_country = { limit = { tag = THIS 
-			 9093 = { country_units_in_province = USA }
-			  } 
-		MXR = { country_event = 493 }
+	option = {
+		 name = "DH_EVENT_2250503_Option7"
+		 money = -100
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 9093 = {
+					 country_units_in_province = USA
+					 }
+				 }
+			 MXR = {
+				 country_event = 493
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 9093 = {
+					 country_units_in_province = USA
+					 }
+				 }
+			 USA = {
+				 country_event = 521
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 not = {
+					 9093 = {
+						 country_units_in_province = USA
+						 }
+					 }
+				 }
+			 MXR = {
+				 country_event = 494
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 not = {
+					 9093 = {
+						 country_units_in_province = USA
+						 }
+					 }
+				 }
+			 USA = {
+				 country_event = 522
+				 }
+			 }
+		 set_global_flag = 2250503_EVENT_DONE
 		 }
-	random_country = { limit = { tag = THIS 
-			 9093 = { country_units_in_province = USA }
-			  } 
-		USA = { country_event = 521 }
-		 }
-	random_country = { limit = { tag = THIS 
-			 not = {
-				 9093 = { country_units_in_province = USA }
-				 }  } 
-		MXR = { country_event = 494 }
-		 }
-	random_country = { limit = { tag = THIS 
-			 not = {
-				 9093 = { country_units_in_province = USA }
-				 }  } 
-		USA = { country_event = 522 }
-		 }
-	
-set_global_flag = 2250503_EVENT_DONE
-
-}
-
-}
+	}
 
 #Launch Raids on San Antonio
-country_event = {
-id = 496
-title = "DH_EVENT_2250504_TITLE"
-desc = "DH_EVENT_2250504_DESC"
-trigger = {
-	war = yes
-	not = {
-		 MEX = { war_with = USA }
+
+
+ country_event = {
+	title = "DH_EVENT_2250504_TITLE"
+	desc = "DH_EVENT_2250504_DESC"
+	id = 496
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 14
 		 }
-	not = {
-		 MXR = { war_with = USA }
+	trigger = {
+		 war = yes
+		 not = {
+			 MEX = {
+				 war_with = USA
+				 }
+			 }
+		 not = {
+			 MXR = {
+				 war_with = USA
+				 }
+			 }
+		 money = 10
+		 9269 = {
+			 country_units_in_province = MXR
+			 }
+		 tag = MXR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2250504
+			 }
 		 }
-	money =  10
-	9269 = { country_units_in_province = MXR }
-	#NOEQUIVALENT random =  5
-	
-tag = MXR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2250504 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  14 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2250504_Option7"
-	money = -100 
-	random_country = { limit = { tag = THIS 
-			 9329 = { country_units_in_province = USA }
-			  } 
-		MXR = { country_event = 493 }
+	option = {
+		 name = "DH_EVENT_2250504_Option7"
+		 money = -100
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 9329 = {
+					 country_units_in_province = USA
+					 }
+				 }
+			 MXR = {
+				 country_event = 493
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 9329 = {
+					 country_units_in_province = USA
+					 }
+				 }
+			 USA = {
+				 country_event = 523
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 not = {
+					 9329 = {
+						 country_units_in_province = USA
+						 }
+					 }
+				 }
+			 MXR = {
+				 country_event = 494
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 not = {
+					 9329 = {
+						 country_units_in_province = USA
+						 }
+					 }
+				 }
+			 USA = {
+				 country_event = 524
+				 }
+			 }
+		 set_global_flag = 2250504_EVENT_DONE
 		 }
-	random_country = { limit = { tag = THIS 
-			 9329 = { country_units_in_province = USA }
-			  } 
-		USA = { country_event = 523 }
-		 }
-	random_country = { limit = { tag = THIS 
-			 not = {
-				 9329 = { country_units_in_province = USA }
-				 }  } 
-		MXR = { country_event = 494 }
-		 }
-	random_country = { limit = { tag = THIS 
-			 not = {
-				 9329 = { country_units_in_province = USA }
-				 }  } 
-		USA = { country_event = 524 }
-		 }
-	
-set_global_flag = 2250504_EVENT_DONE
-
-}
-
-}
+	}
 
 #Launch Raids on Corpus Christi
-country_event = {
-id = 497
-title = "DH_EVENT_2250505_TITLE"
-desc = "DH_EVENT_2250505_DESC"
-trigger = {
-	war = yes
-	not = {
-		 MEX = { war_with = USA }
+
+
+ country_event = {
+	title = "DH_EVENT_2250505_TITLE"
+	desc = "DH_EVENT_2250505_DESC"
+	id = 497
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 14
 		 }
-	not = {
-		 MXR = { war_with = USA }
+	trigger = {
+		 war = yes
+		 not = {
+			 MEX = {
+				 war_with = USA
+				 }
+			 }
+		 not = {
+			 MXR = {
+				 war_with = USA
+				 }
+			 }
+		 money = 10
+		 or = {
+			 9419 = {
+				 country_units_in_province = MXR
+				 }
+			 9388 = {
+				 country_units_in_province = MXR
+				 }
+			 }
+		 tag = MXR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2250505
+			 }
 		 }
-	money =  10
-	or = {
-		9419 = { country_units_in_province = MXR }
-		9388 = { country_units_in_province = MXR }
-		}
-	#NOEQUIVALENT random =  5
-	
-tag = MXR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2250505 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  14 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2250505_Option7"
-	money = -100 
-	random_country = { limit = { tag = THIS 
-			 9420 = { country_units_in_province = USA }
-			  } 
-		MXR = { country_event = 493 }
+	option = {
+		 name = "DH_EVENT_2250505_Option7"
+		 money = -100
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 9420 = {
+					 country_units_in_province = USA
+					 }
+				 }
+			 MXR = {
+				 country_event = 493
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 9420 = {
+					 country_units_in_province = USA
+					 }
+				 }
+			 USA = {
+				 country_event = 525
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 not = {
+					 9420 = {
+						 country_units_in_province = USA
+						 }
+					 }
+				 }
+			 MXR = {
+				 country_event = 494
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 not = {
+					 9420 = {
+						 country_units_in_province = USA
+						 }
+					 }
+				 }
+			 USA = {
+				 country_event = 526
+				 }
+			 }
+		 set_global_flag = 2250505_EVENT_DONE
 		 }
-	random_country = { limit = { tag = THIS 
-			 9420 = { country_units_in_province = USA }
-			  } 
-		USA = { country_event = 525 }
-		 }
-	random_country = { limit = { tag = THIS 
-			 not = {
-				 9420 = { country_units_in_province = USA }
-				 }  } 
-		MXR = { country_event = 494 }
-		 }
-	random_country = { limit = { tag = THIS 
-			 not = {
-				 9420 = { country_units_in_province = USA }
-				 }  } 
-		USA = { country_event = 526 }
-		 }
-	
-set_global_flag = 2250505_EVENT_DONE
-
-}
-
-}
+	}
 
 #Launch Raids on San Diego
-country_event = {
-id = 498
-title = "DH_EVENT_2250506_TITLE"
-desc = "DH_EVENT_2250506_DESC"
-trigger = {
-	war = yes
-	not = {
-		 MEX = { war_with = USA }
+
+
+ country_event = {
+	title = "DH_EVENT_2250506_TITLE"
+	desc = "DH_EVENT_2250506_DESC"
+	id = 498
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 14
 		 }
-	not = {
-		 MXR = { war_with = USA }
+	trigger = {
+		 war = yes
+		 not = {
+			 MEX = {
+				 war_with = USA
+				 }
+			 }
+		 not = {
+			 MXR = {
+				 war_with = USA
+				 }
+			 }
+		 money = 10
+		 7369 = {
+			 country_units_in_province = MXR
+			 }
+		 tag = MXR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2250506
+			 }
 		 }
-	money =  10
-	7369 = { country_units_in_province = MXR }
-	#NOEQUIVALENT random =  5
-	
-tag = MXR
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2250506 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  14 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2250506_Option7"
-	money = -100 
-	random_country = { limit = { tag = THIS 
-			 7350 = { country_units_in_province = USA }
-			  } 
-		MXR = { country_event = 493 }
+	option = {
+		 name = "DH_EVENT_2250506_Option7"
+		 money = -100
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 7350 = {
+					 country_units_in_province = USA
+					 }
+				 }
+			 MXR = {
+				 country_event = 493
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 7350 = {
+					 country_units_in_province = USA
+					 }
+				 }
+			 USA = {
+				 country_event = 527
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 7350 = {
+					 country_units_in_province = USA
+					 }
+				 }
+			 MXR = {
+				 country_event = 494
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 7350 = {
+					 country_units_in_province = USA
+					 }
+				 }
+			 USA = {
+				 country_event = 528
+				 }
+			 }
+		 set_global_flag = 2250506_EVENT_DONE
 		 }
-	random_country = { limit = { tag = THIS 
-			 7350 = { country_units_in_province = USA }
-			  } 
-		USA = { country_event = 527 }
-		 }
-	random_country = { limit = { tag = THIS 
-			 7350 = { country_units_in_province = USA }
-			  } 
-		MXR = { country_event = 494 }
-		 }
-	random_country = { limit = { tag = THIS 
-			 7350 = { country_units_in_province = USA }
-			  } 
-		USA = { country_event = 528 }
-		 }
-	
-set_global_flag = 2250506_EVENT_DONE
-
-}
-
-}
+	}
 
 #New recruits
-country_event = {
-id = 499
-title = "DH_EVENT_2250507_TITLE"
-desc = "DH_EVENT_2250507_DESC"
-trigger = {
-	war = yes
-	#NOEQUIVALENT random =  10
-	not = {
-		 total_ic = 7
+
+
+ country_event = {
+	title = "DH_EVENT_2250507_TITLE"
+	desc = "DH_EVENT_2250507_DESC"
+	id = 499
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 60
 		 }
-	
-tag = MXR
-date = 1915.1.1
-
-not = { date = 1964.12.30
- }
-
-
-#NOEQUIVALENT one_action = yes
-
-
-not = { has_global_flag = SLEEPEVENT_2250507 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  60 }
-
-is_triggered_only = no
-option = {
-	ai_chance = { factor = 5
+	trigger = {
+		 war = yes
+		 not = {
+			 total_ic = 7
+			 }
+		 tag = MXR
+		 date = 1915.1.1
+		 not = {
+			 date = 1964.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2250507
+			 }
 		 }
-	name = "DH_EVENT_2250507_Option7"
-	manpower = 0.5 
-	
-set_global_flag = 2250507_EVENT_DONE
-
-}
-
-option = {
-	ai_chance = { factor = 10
+	option = {
+		 ai_chance = {
+			 factor = 5
+			 }
+		 name = "DH_EVENT_2250507_Option7"
+		 manpower = 0.5
+		 set_global_flag = 2250507_EVENT_DONE
 		 }
-	name = "DH_EVENT_2250507_Option8"
-	manpower = 1 
-	
-set_global_flag = 2250507_EVENT_DONE
-
-}
-
-option = {
-	ai_chance = { factor = 20
+	option = {
+		 ai_chance = {
+			 factor = 10
+			 }
+		 name = "DH_EVENT_2250507_Option8"
+		 manpower = 1
+		 set_global_flag = 2250507_EVENT_DONE
 		 }
-	name = "DH_EVENT_2250507_Option9"
-	manpower = 2 
-	
-set_global_flag = 2250507_EVENT_DONE
-
-}
-
-option = {
-	ai_chance = { factor = 50
+	option = {
+		 ai_chance = {
+			 factor = 20
+			 }
+		 name = "DH_EVENT_2250507_Option9"
+		 manpower = 2
+		 set_global_flag = 2250507_EVENT_DONE
 		 }
-	name = "DH_EVENT_2250507_Option10"
-	manpower = 5 
-	
-set_global_flag = 2250507_EVENT_DONE
-
-}
-
-}
+	option = {
+		 ai_chance = {
+			 factor = 50
+			 }
+		 name = "DH_EVENT_2250507_Option10"
+		 manpower = 5
+		 set_global_flag = 2250507_EVENT_DONE
+		 }
+	}
 
 #Victory in Mexico city!
-country_event = {
-id = 500
-title = "DH_EVENT_2250508_TITLE"
-desc = "DH_EVENT_2250508_DESC"
-trigger = {
-	9604 = { controlled_by = MXR }
-	war = yes
-	not = {
-		    }
-	not = {
-		    }
-	not = {
-		    }
-	
-tag = MXR
-date = 1910.1.1
-
-not = { date = 1963.12.30
- }
 
 
-
-not = { has_global_flag = SLEEPEVENT_2250508 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  15 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2250508_Option7"
-	# add_country_modifier = { name = "research_1" duration = 360 }#command = { type = waketeam which = 1114510 }
-	# add_country_modifier = { name = "research_1" duration = 360 }#command = { type = waketeam which = 1114511 }
-	# add_country_modifier = { name = "research_1" duration = 360 }#command = { type = waketeam which = 1114512 }
-	supplies = -100 
-	money = -30 
-	dissent = -2 
-	random_country = { limit = { tag = THIS 
-			 exists = MXR
-			 not = {
-				 MXR = { war_with = MXR }
-				 }  } 
-		relation = { who = MXR value = 5  }
+ country_event = {
+	title = "DH_EVENT_2250508_TITLE"
+	desc = "DH_EVENT_2250508_DESC"
+	id = 500
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 15
 		 }
-	random_country = { limit = { tag = THIS 
-			 exists = MEX
-			 MXR = { war_with = MEX }
-			  } 
-		# add_country_modifier = { name = "research_1" duration = 360 }#command = {  type = steal_tech which = MEX value = -1 }
+	trigger = {
+		 9604 = {
+			 controlled_by = MXR
+			 }
+		 war = yes
+		 not = {
+			 }
+		 not = {
+			 }
+		 not = {
+			 }
+		 tag = MXR
+		 date = 1910.1.1
+		 not = {
+			 date = 1963.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2250508
+			 }
 		 }
-	random_country = { limit = { tag = THIS 
-			 exists = MXR
-			 MXR = { war_with = MXR }
-			  } 
-		# add_country_modifier = { name = "research_1" duration = 360 }#command = {  type = steal_tech which = U57 value = -1 }
+	option = {
+		 name = "DH_EVENT_2250508_Option7"
+		 supplies = -100
+		 money = -30
+		 dissent = -2
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 exists = MXR
+				 not = {
+					 MXR = {
+						 war_with = MXR
+						 }
+					 }
+				 }
+			 relation = {
+				 who = MXR
+				 value = 5
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 exists = MEX
+				 MXR = {
+					 war_with = MEX
+					 }
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 exists = MXR
+				 MXR = {
+					 war_with = MXR
+					 }
+				 }
+			 }
+		 set_global_flag = 2250508_EVENT_DONE
 		 }
-	
-set_global_flag = 2250508_EVENT_DONE
-
-}
-
-}
+	}
 
 #Loss of Mexico city
-country_event = {
-id = 501
-title = "DH_EVENT_2250509_TITLE"
-desc = "DH_EVENT_2250509_DESC"
-trigger = {
-	not = {
-		 9604 = { controlled_by = MXR }
+
+
+ country_event = {
+	title = "DH_EVENT_2250509_TITLE"
+	desc = "DH_EVENT_2250509_DESC"
+	id = 501
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 15
 		 }
-	  
-	  
-	  
-	
-tag = MXR
-date = 1910.1.1
-
-not = { date = 1963.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2250509 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  15 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2250509_Option7"
-	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 1114510 }
-	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 1114511 }
-	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 1114512 }
-	supplies = 20 
-	dissent = 1 
-	
-set_global_flag = 2250509_EVENT_DONE
-
-}
-
-}
+	trigger = {
+		 not = {
+			 9604 = {
+				 controlled_by = MXR
+				 }
+			 }
+		 tag = MXR
+		 date = 1910.1.1
+		 not = {
+			 date = 1963.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2250509
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2250509_Option7"
+		 supplies = 20
+		 dissent = 1
+		 set_global_flag = 2250509_EVENT_DONE
+		 }
+	}
 
 #Victory in Mexico city!
-country_event = {
-id = 502
-title = "DH_EVENT_2038550_TITLE"
-desc = "DH_EVENT_2038550_DESC"
-trigger = {
-	9604 = { controlled_by = MXR }
-	war = yes
-	not = {
-		    }
-	not = {
-		    }
-	not = {
-		    }
-	
-tag = MXR
-date = 1910.1.1
-
-not = { date = 1963.12.30
- }
 
 
-
-not = { has_global_flag = SLEEPEVENT_2038550 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  15 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2038550_Option7"
-	# add_country_modifier = { name = "research_1" duration = 360 }#command = { type = waketeam which = 1110010 }
-	# add_country_modifier = { name = "research_1" duration = 360 }#command = { type = waketeam which = 1110011 }
-	# add_country_modifier = { name = "research_1" duration = 360 }#command = { type = waketeam which = 1110012 }
-	supplies = -100 
-	money = -30 
-	dissent = -2 
-	random_country = { limit = { tag = THIS 
-			 exists = MXR
-			 not = {
-				 MXR = { war_with = MXR }
-				 }  } 
-		relation = { who = MXR value = 5  }
+ country_event = {
+	title = "DH_EVENT_2038550_TITLE"
+	desc = "DH_EVENT_2038550_DESC"
+	id = 502
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 15
 		 }
-	random_country = { limit = { tag = THIS 
-			 exists = MEX
-			 MXR = { war_with = MEX }
-			  } 
-		# add_country_modifier = { name = "research_1" duration = 360 }#command = {  type = steal_tech which = MEX value = -1 }
+	trigger = {
+		 9604 = {
+			 controlled_by = MXR
+			 }
+		 war = yes
+		 not = {
+			 }
+		 not = {
+			 }
+		 not = {
+			 }
+		 tag = MXR
+		 date = 1910.1.1
+		 not = {
+			 date = 1963.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038550
+			 }
 		 }
-	random_country = { limit = { tag = THIS 
-			 exists = MXR
-			 MXR = { war_with = MXR }
-			  } 
-		# add_country_modifier = { name = "research_1" duration = 360 }#command = {  type = steal_tech which = U57 value = -1 }
+	option = {
+		 name = "DH_EVENT_2038550_Option7"
+		 supplies = -100
+		 money = -30
+		 dissent = -2
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 exists = MXR
+				 not = {
+					 MXR = {
+						 war_with = MXR
+						 }
+					 }
+				 }
+			 relation = {
+				 who = MXR
+				 value = 5
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 exists = MEX
+				 MXR = {
+					 war_with = MEX
+					 }
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 exists = MXR
+				 MXR = {
+					 war_with = MXR
+					 }
+				 }
+			 }
+		 set_global_flag = 2038550_EVENT_DONE
 		 }
-	
-set_global_flag = 2038550_EVENT_DONE
-
-}
-
-}
+	}
 
 #Loss of Mexico city
-country_event = {
-id = 503
-title = "DH_EVENT_2038551_TITLE"
-desc = "DH_EVENT_2038551_DESC"
-trigger = {
-	not = {
-		 9604 = { controlled_by = MXR }
+
+
+ country_event = {
+	title = "DH_EVENT_2038551_TITLE"
+	desc = "DH_EVENT_2038551_DESC"
+	id = 503
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 15
 		 }
-	  
-	  
-	  
-	
-tag = MXR
-date = 1910.1.1
-
-not = { date = 1963.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2038551 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  15 }
-
-is_triggered_only = no
-option = {
-	name = "DH_EVENT_2038551_Option7"
-	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 1110010 }
-	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 1110011 }
-	# add_country_modifier = { name = "research_minus_1" duration = 360 }#command = { type = sleepteam which = 1110012 }
-	supplies = 20 
-	dissent = 1 
-	
-set_global_flag = 2038551_EVENT_DONE
-
-}
-
-}
+	trigger = {
+		 not = {
+			 9604 = {
+				 controlled_by = MXR
+				 }
+			 }
+		 tag = MXR
+		 date = 1910.1.1
+		 not = {
+			 date = 1963.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038551
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2038551_Option7"
+		 supplies = 20
+		 dissent = 1
+		 set_global_flag = 2038551_EVENT_DONE
+		 }
+	}
 
 #Captured supplies
-country_event = {
-id = 504
-title = "DH_EVENT_2038552_TITLE"
-desc = "DH_EVENT_2038552_DESC"
-trigger = {
-	war = yes
-	#NOEQUIVALENT random =  5
-	not = {
-		 supplies =  100
+
+
+ country_event = {
+	title = "DH_EVENT_2038552_TITLE"
+	desc = "DH_EVENT_2038552_DESC"
+	id = 504
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 60
 		 }
-	not = {
-		 total_ic = 7
+	trigger = {
+		 war = yes
+		 not = {
+			 supplies = 100
+			 }
+		 not = {
+			 total_ic = 7
+			 }
+		 tag = MXR
+		 date = 1910.1.1
+		 not = {
+			 date = 1920.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038552
+			 }
 		 }
-	
-tag = MXR
-date = 1910.1.1
-
-not = { date = 1920.12.30
- }
-
-
-#NOEQUIVALENT one_action = yes
-
-
-not = { has_global_flag = SLEEPEVENT_2038552 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  60 }
-
-is_triggered_only = no
-option = {
-	ai_chance = { factor = 5
+	option = {
+		 ai_chance = {
+			 factor = 5
+			 }
+		 name = "DH_EVENT_2038552_Option7"
+		 supplies = 25
+		 set_global_flag = 2038552_EVENT_DONE
 		 }
-	name = "DH_EVENT_2038552_Option7"
-	supplies = 25
-	
-set_global_flag = 2038552_EVENT_DONE
-
-}
-
-option = {
-	ai_chance = { factor = 10
+	option = {
+		 ai_chance = {
+			 factor = 10
+			 }
+		 name = "DH_EVENT_2038552_Option8"
+		 supplies = 50
+		 set_global_flag = 2038552_EVENT_DONE
 		 }
-	name = "DH_EVENT_2038552_Option8"
-	supplies = 50
-	
-set_global_flag = 2038552_EVENT_DONE
-
-}
-
-option = {
-	ai_chance = { factor = 20
+	option = {
+		 ai_chance = {
+			 factor = 20
+			 }
+		 name = "DH_EVENT_2038552_Option9"
+		 supplies = 200
+		 money = 20
+		 set_global_flag = 2038552_EVENT_DONE
 		 }
-	name = "DH_EVENT_2038552_Option9"
-	supplies = 200
-	money = 20
-	
-set_global_flag = 2038552_EVENT_DONE
-
-}
-
-option = {
-	ai_chance = { factor = 50
+	option = {
+		 ai_chance = {
+			 factor = 50
+			 }
+		 name = "DH_EVENT_2038552_Option10"
+		 supplies = 350
+		 money = 50
+		 set_global_flag = 2038552_EVENT_DONE
 		 }
-	name = "DH_EVENT_2038552_Option10"
-	supplies = 350
-	money = 50
-	
-set_global_flag = 2038552_EVENT_DONE
-
-}
-
-}
+	}
 
 #Smuggled supplies
-country_event = {
-id = 505
-title = "DH_EVENT_2038553_TITLE"
-desc = "DH_EVENT_2038553_DESC"
-trigger = {
-	war = yes
-	#NOEQUIVALENT random =  7
-	not = {
-		 supplies =  100
+
+
+ country_event = {
+	title = "DH_EVENT_2038553_TITLE"
+	desc = "DH_EVENT_2038553_DESC"
+	id = 505
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 45
 		 }
-	not = {
-		 total_ic = 5
+	trigger = {
+		 war = yes
+		 not = {
+			 supplies = 100
+			 }
+		 not = {
+			 total_ic = 5
+			 }
+		 or = {
+			 and = {
+				 9604 = {
+					 controlled_by = MEX
+					 }
+				 MXR = {
+					 war_with = MEX
+					 }
+				 }
+			 and = {
+				 9604 = {
+					 controlled_by = MXR
+					 }
+				 MXR = {
+					 war_with = MXR
+					 }
+				 }
+			 }
+		 tag = MXR
+		 date = 1910.1.1
+		 not = {
+			 date = 1917.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038553
+			 }
 		 }
-	or = {
-		and = {
-			9604 = { controlled_by = MEX }
-			MXR = { war_with = MEX }
-			}
-		and = {
-			9604 = { controlled_by = MXR }
-			MXR = { war_with = MXR }
-			}
-		}
-	
-tag = MXR
-date = 1910.1.1
-
-not = { date = 1917.12.30
- }
-
-
-#NOEQUIVALENT one_action = yes
-
-
-not = { has_global_flag = SLEEPEVENT_2038553 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  45 }
-
-is_triggered_only = no
-option = {
-	ai_chance = { factor = 3
+	option = {
+		 ai_chance = {
+			 factor = 3
+			 }
+		 name = "DH_EVENT_2038553_Option7"
+		 supplies = 20
+		 set_global_flag = 2038553_EVENT_DONE
 		 }
-	name = "DH_EVENT_2038553_Option7"
-	supplies = 20
-	
-set_global_flag = 2038553_EVENT_DONE
-
-}
-
-option = {
-	ai_chance = { factor = 10
+	option = {
+		 ai_chance = {
+			 factor = 10
+			 }
+		 name = "DH_EVENT_2038553_Option8"
+		 supplies = 40
+		 set_global_flag = 2038553_EVENT_DONE
 		 }
-	name = "DH_EVENT_2038553_Option8"
-	supplies = 40
-	
-set_global_flag = 2038553_EVENT_DONE
-
-}
-
-option = {
-	ai_chance = { factor = 20
+	option = {
+		 ai_chance = {
+			 factor = 20
+			 }
+		 name = "DH_EVENT_2038553_Option9"
+		 supplies = 60
+		 set_global_flag = 2038553_EVENT_DONE
 		 }
-	name = "DH_EVENT_2038553_Option9"
-	supplies = 60
-	
-set_global_flag = 2038553_EVENT_DONE
-
-}
-
-option = {
-	ai_chance = { factor = 35
+	option = {
+		 ai_chance = {
+			 factor = 35
+			 }
+		 name = "DH_EVENT_2038553_Option10"
+		 supplies = 100
+		 set_global_flag = 2038553_EVENT_DONE
 		 }
-	name = "DH_EVENT_2038553_Option10"
-	supplies = 100
-	
-set_global_flag = 2038553_EVENT_DONE
-
-}
-
-}
+	}
 
 #New recruits
-country_event = {
-id = 506
-title = "DH_EVENT_2038554_TITLE"
-desc = "DH_EVENT_2038554_DESC"
-trigger = {
-	war = yes
-	#NOEQUIVALENT random =  10
-	not = {
-		 total_ic = 7
+
+
+ country_event = {
+	title = "DH_EVENT_2038554_TITLE"
+	desc = "DH_EVENT_2038554_DESC"
+	id = 506
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 60
 		 }
-	
-tag = MXR
-date = 1915.1.1
-
-not = { date = 1964.12.30
- }
-
-
-#NOEQUIVALENT one_action = yes
-
-
-not = { has_global_flag = SLEEPEVENT_2038554 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  60 }
-
-is_triggered_only = no
-option = {
-	ai_chance = { factor = 5
+	trigger = {
+		 war = yes
+		 not = {
+			 total_ic = 7
+			 }
+		 tag = MXR
+		 date = 1915.1.1
+		 not = {
+			 date = 1964.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2038554
+			 }
 		 }
-	name = "DH_EVENT_2038554_Option7"
-	manpower = 0.5 
-	
-set_global_flag = 2038554_EVENT_DONE
-
-}
-
-option = {
-	ai_chance = { factor = 10
+	option = {
+		 ai_chance = {
+			 factor = 5
+			 }
+		 name = "DH_EVENT_2038554_Option7"
+		 manpower = 0.5
+		 set_global_flag = 2038554_EVENT_DONE
 		 }
-	name = "DH_EVENT_2038554_Option8"
-	manpower = 1 
-	
-set_global_flag = 2038554_EVENT_DONE
-
-}
-
-option = {
-	ai_chance = { factor = 20
+	option = {
+		 ai_chance = {
+			 factor = 10
+			 }
+		 name = "DH_EVENT_2038554_Option8"
+		 manpower = 1
+		 set_global_flag = 2038554_EVENT_DONE
 		 }
-	name = "DH_EVENT_2038554_Option9"
-	manpower = 2 
-	
-set_global_flag = 2038554_EVENT_DONE
-
-}
-
-option = {
-	ai_chance = { factor = 50
+	option = {
+		 ai_chance = {
+			 factor = 20
+			 }
+		 name = "DH_EVENT_2038554_Option9"
+		 manpower = 2
+		 set_global_flag = 2038554_EVENT_DONE
 		 }
-	name = "DH_EVENT_2038554_Option10"
-	manpower = 5 
-	
-set_global_flag = 2038554_EVENT_DONE
-
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
+	option = {
+		 ai_chance = {
+			 factor = 50
+			 }
+		 name = "DH_EVENT_2038554_Option10"
+		 manpower = 5
+		 set_global_flag = 2038554_EVENT_DONE
+		 }
+	}
 
 #Tucson raided!
-country_event = {
-id = 519
-title = "DH_EVENT_2049512_TITLE"
-desc = "DH_EVENT_2049512_DESC"
-trigger = { 
-tag = USA
 
 
-
-
-
-not = { has_global_flag = SLEEPEVENT_2049512 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2049512_Option7"
-	dissent = 1 
-	supplies = -80 
-	rare_materials = -10 
-	crude_oil = -10 
-	metal = -20 
-	energy = -35 
-	random_country = { limit = { tag = THIS 
-			 not = {
-				 has_country_flag = USA_Mexican_Raids
-				 }  } 
-		set_country_flag = USA_Mexican_Raids 
+ country_event = {
+	title = "DH_EVENT_2049512_TITLE"
+	desc = "DH_EVENT_2049512_DESC"
+	id = 519
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = USA
+		 not = {
+			 has_global_flag = SLEEPEVENT_2049512
+			 }
 		 }
-	
-set_global_flag = 2049512_EVENT_DONE
-
-}
-
-}
+	option = {
+		 name = "DH_EVENT_2049512_Option7"
+		 dissent = 1
+		 supplies = -80
+		 rare_materials = -10
+		 crude_oil = -10
+		 metal = -20
+		 energy = -35
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 not = {
+					 has_country_flag = USA_Mexican_Raids
+					 }
+				 }
+			 set_country_flag = USA_Mexican_Raids
+			 }
+		 set_global_flag = 2049512_EVENT_DONE
+		 }
+	}
 
 #Tucson raided!
-country_event = {
-id = 520
-title = "DH_EVENT_2049513_TITLE"
-desc = "DH_EVENT_2049513_DESC"
-trigger = { 
-tag = USA
 
 
-
-
-
-not = { has_global_flag = SLEEPEVENT_2049513 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2049513_Option7"
-	dissent = 3 
-	supplies = -160 
-	rare_materials = -20 
-	crude_oil = -20 
-	metal = -40 
-	energy = -70 
-	random_country = { limit = { tag = THIS 
-			 not = {
-				 has_country_flag = USA_Mexican_Raids
-				 }  } 
-		set_country_flag = USA_Mexican_Raids 
+ country_event = {
+	title = "DH_EVENT_2049513_TITLE"
+	desc = "DH_EVENT_2049513_DESC"
+	id = 520
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = USA
+		 not = {
+			 has_global_flag = SLEEPEVENT_2049513
+			 }
 		 }
-	
-set_global_flag = 2049513_EVENT_DONE
-
-}
-
-}
+	option = {
+		 name = "DH_EVENT_2049513_Option7"
+		 dissent = 3
+		 supplies = -160
+		 rare_materials = -20
+		 crude_oil = -20
+		 metal = -40
+		 energy = -70
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 not = {
+					 has_country_flag = USA_Mexican_Raids
+					 }
+				 }
+			 set_country_flag = USA_Mexican_Raids
+			 }
+		 set_global_flag = 2049513_EVENT_DONE
+		 }
+	}
 
 #El Paso raided!
-country_event = {
-id = 521
-title = "DH_EVENT_2049514_TITLE"
-desc = "DH_EVENT_2049514_DESC"
-trigger = { 
-tag = USA
 
 
-
-
-
-not = { has_global_flag = SLEEPEVENT_2049514 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2049514_Option7"
-	dissent = 1 
-	supplies = -80 
-	rare_materials = -10 
-	crude_oil = -10 
-	metal = -20 
-	energy = -35 
-	random_country = { limit = { tag = THIS 
-			 not = {
-				 has_country_flag = USA_Mexican_Raids
-				 }  } 
-		set_country_flag = USA_Mexican_Raids 
+ country_event = {
+	title = "DH_EVENT_2049514_TITLE"
+	desc = "DH_EVENT_2049514_DESC"
+	id = 521
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = USA
+		 not = {
+			 has_global_flag = SLEEPEVENT_2049514
+			 }
 		 }
-	
-set_global_flag = 2049514_EVENT_DONE
-
-}
-
-}
+	option = {
+		 name = "DH_EVENT_2049514_Option7"
+		 dissent = 1
+		 supplies = -80
+		 rare_materials = -10
+		 crude_oil = -10
+		 metal = -20
+		 energy = -35
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 not = {
+					 has_country_flag = USA_Mexican_Raids
+					 }
+				 }
+			 set_country_flag = USA_Mexican_Raids
+			 }
+		 set_global_flag = 2049514_EVENT_DONE
+		 }
+	}
 
 #El Paso raided!
-country_event = {
-id = 522
-title = "DH_EVENT_2049515_TITLE"
-desc = "DH_EVENT_2049515_DESC"
-trigger = { 
-tag = USA
 
 
-
-
-
-not = { has_global_flag = SLEEPEVENT_2049515 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2049515_Option7"
-	dissent = 3 
-	supplies = -160 
-	rare_materials = -20 
-	crude_oil = -20 
-	metal = -40 
-	energy = -70 
-	random_country = { limit = { tag = THIS 
-			 not = {
-				 has_country_flag = USA_Mexican_Raids
-				 }  } 
-		set_country_flag = USA_Mexican_Raids 
+ country_event = {
+	title = "DH_EVENT_2049515_TITLE"
+	desc = "DH_EVENT_2049515_DESC"
+	id = 522
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = USA
+		 not = {
+			 has_global_flag = SLEEPEVENT_2049515
+			 }
 		 }
-	
-set_global_flag = 2049515_EVENT_DONE
-
-}
-
-}
+	option = {
+		 name = "DH_EVENT_2049515_Option7"
+		 dissent = 3
+		 supplies = -160
+		 rare_materials = -20
+		 crude_oil = -20
+		 metal = -40
+		 energy = -70
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 not = {
+					 has_country_flag = USA_Mexican_Raids
+					 }
+				 }
+			 set_country_flag = USA_Mexican_Raids
+			 }
+		 set_global_flag = 2049515_EVENT_DONE
+		 }
+	}
 
 #San Antonio raided!
-country_event = {
-id = 523
-title = "DH_EVENT_2049516_TITLE"
-desc = "DH_EVENT_2049516_DESC"
-trigger = { 
-tag = USA
 
 
-
-
-
-not = { has_global_flag = SLEEPEVENT_2049516 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2049516_Option7"
-	dissent = 1 
-	supplies = -80 
-	rare_materials = -10 
-	crude_oil = -10 
-	metal = -20 
-	energy = -35 
-	random_country = { limit = { tag = THIS 
-			 not = {
-				 has_country_flag = USA_Mexican_Raids
-				 }  } 
-		set_country_flag = USA_Mexican_Raids 
+ country_event = {
+	title = "DH_EVENT_2049516_TITLE"
+	desc = "DH_EVENT_2049516_DESC"
+	id = 523
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = USA
+		 not = {
+			 has_global_flag = SLEEPEVENT_2049516
+			 }
 		 }
-	
-set_global_flag = 2049516_EVENT_DONE
-
-}
-
-}
+	option = {
+		 name = "DH_EVENT_2049516_Option7"
+		 dissent = 1
+		 supplies = -80
+		 rare_materials = -10
+		 crude_oil = -10
+		 metal = -20
+		 energy = -35
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 not = {
+					 has_country_flag = USA_Mexican_Raids
+					 }
+				 }
+			 set_country_flag = USA_Mexican_Raids
+			 }
+		 set_global_flag = 2049516_EVENT_DONE
+		 }
+	}
 
 #San Antonio raided!
-country_event = {
-id = 524
-title = "DH_EVENT_2049517_TITLE"
-desc = "DH_EVENT_2049517_DESC"
-trigger = { 
-tag = USA
 
 
-
-
-
-not = { has_global_flag = SLEEPEVENT_2049517 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2049517_Option7"
-	dissent = 3 
-	supplies = -160 
-	rare_materials = -20 
-	crude_oil = -20 
-	metal = -40 
-	energy = -70 
-	random_country = { limit = { tag = THIS 
-			 not = {
-				 has_country_flag = USA_Mexican_Raids
-				 }  } 
-		set_country_flag = USA_Mexican_Raids 
+ country_event = {
+	title = "DH_EVENT_2049517_TITLE"
+	desc = "DH_EVENT_2049517_DESC"
+	id = 524
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = USA
+		 not = {
+			 has_global_flag = SLEEPEVENT_2049517
+			 }
 		 }
-	
-set_global_flag = 2049517_EVENT_DONE
-
-}
-
-}
+	option = {
+		 name = "DH_EVENT_2049517_Option7"
+		 dissent = 3
+		 supplies = -160
+		 rare_materials = -20
+		 crude_oil = -20
+		 metal = -40
+		 energy = -70
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 not = {
+					 has_country_flag = USA_Mexican_Raids
+					 }
+				 }
+			 set_country_flag = USA_Mexican_Raids
+			 }
+		 set_global_flag = 2049517_EVENT_DONE
+		 }
+	}
 
 #Corpus Christii raided!
-country_event = {
-id = 525
-title = "DH_EVENT_2049518_TITLE"
-desc = "DH_EVENT_2049518_DESC"
-trigger = { 
-tag = USA
 
 
-
-
-
-not = { has_global_flag = SLEEPEVENT_2049518 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2049518_Option7"
-	dissent = 1 
-	supplies = -80 
-	rare_materials = -10 
-	crude_oil = -10 
-	metal = -20 
-	energy = -35 
-	random_country = { limit = { tag = THIS 
-			 not = {
-				 has_country_flag = USA_Mexican_Raids
-				 }  } 
-		set_country_flag = USA_Mexican_Raids 
+ country_event = {
+	title = "DH_EVENT_2049518_TITLE"
+	desc = "DH_EVENT_2049518_DESC"
+	id = 525
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = USA
+		 not = {
+			 has_global_flag = SLEEPEVENT_2049518
+			 }
 		 }
-	
-set_global_flag = 2049518_EVENT_DONE
-
-}
-
-}
+	option = {
+		 name = "DH_EVENT_2049518_Option7"
+		 dissent = 1
+		 supplies = -80
+		 rare_materials = -10
+		 crude_oil = -10
+		 metal = -20
+		 energy = -35
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 not = {
+					 has_country_flag = USA_Mexican_Raids
+					 }
+				 }
+			 set_country_flag = USA_Mexican_Raids
+			 }
+		 set_global_flag = 2049518_EVENT_DONE
+		 }
+	}
 
 #Corpus Christii raided!
-country_event = {
-id = 526
-title = "DH_EVENT_2049519_TITLE"
-desc = "DH_EVENT_2049519_DESC"
-trigger = { 
-tag = USA
 
 
-
-
-
-not = { has_global_flag = SLEEPEVENT_2049519 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2049519_Option7"
-	dissent = 3 
-	supplies = -160 
-	rare_materials = -20 
-	crude_oil = -20 
-	metal = -40 
-	energy = -70 
-	random_country = { limit = { tag = THIS 
-			 not = {
-				 has_country_flag = USA_Mexican_Raids
-				 }  } 
-		set_country_flag = USA_Mexican_Raids 
+ country_event = {
+	title = "DH_EVENT_2049519_TITLE"
+	desc = "DH_EVENT_2049519_DESC"
+	id = 526
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = USA
+		 not = {
+			 has_global_flag = SLEEPEVENT_2049519
+			 }
 		 }
-	
-set_global_flag = 2049519_EVENT_DONE
-
-}
-
-}
+	option = {
+		 name = "DH_EVENT_2049519_Option7"
+		 dissent = 3
+		 supplies = -160
+		 rare_materials = -20
+		 crude_oil = -20
+		 metal = -40
+		 energy = -70
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 not = {
+					 has_country_flag = USA_Mexican_Raids
+					 }
+				 }
+			 set_country_flag = USA_Mexican_Raids
+			 }
+		 set_global_flag = 2049519_EVENT_DONE
+		 }
+	}
 
 #San Diego raided!
-country_event = {
-id = 527
-title = "DH_EVENT_2049520_TITLE"
-desc = "DH_EVENT_2049520_DESC"
-trigger = { 
-tag = USA
 
 
-
-
-
-not = { has_global_flag = SLEEPEVENT_2049520 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2049520_Option7"
-	dissent = 1 
-	supplies = -80 
-	rare_materials = -10 
-	crude_oil = -10 
-	metal = -20 
-	energy = -35 
-	random_country = { limit = { tag = THIS 
-			 not = {
-				 has_country_flag = USA_Mexican_Raids
-				 }  } 
-		set_country_flag = USA_Mexican_Raids 
+ country_event = {
+	title = "DH_EVENT_2049520_TITLE"
+	desc = "DH_EVENT_2049520_DESC"
+	id = 527
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = USA
+		 not = {
+			 has_global_flag = SLEEPEVENT_2049520
+			 }
 		 }
-	
-set_global_flag = 2049520_EVENT_DONE
-
-}
-
-}
+	option = {
+		 name = "DH_EVENT_2049520_Option7"
+		 dissent = 1
+		 supplies = -80
+		 rare_materials = -10
+		 crude_oil = -10
+		 metal = -20
+		 energy = -35
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 not = {
+					 has_country_flag = USA_Mexican_Raids
+					 }
+				 }
+			 set_country_flag = USA_Mexican_Raids
+			 }
+		 set_global_flag = 2049520_EVENT_DONE
+		 }
+	}
 
 #San Diego raided!
-country_event = {
-id = 528
-title = "DH_EVENT_2049521_TITLE"
-desc = "DH_EVENT_2049521_DESC"
-trigger = { 
-tag = USA
 
 
-
-
-
-not = { has_global_flag = SLEEPEVENT_2049521 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2049521_Option7"
-	dissent = 3 
-	supplies = -160 
-	rare_materials = -20 
-	crude_oil = -20 
-	metal = -40 
-	energy = -70 
-	random_country = { limit = { tag = THIS 
-			 not = {
-				 has_country_flag = USA_Mexican_Raids
-				 }  } 
-		set_country_flag = USA_Mexican_Raids 
+ country_event = {
+	title = "DH_EVENT_2049521_TITLE"
+	desc = "DH_EVENT_2049521_DESC"
+	id = 528
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = USA
+		 not = {
+			 has_global_flag = SLEEPEVENT_2049521
+			 }
 		 }
-	
-set_global_flag = 2049521_EVENT_DONE
-
-}
-
-}
+	option = {
+		 name = "DH_EVENT_2049521_Option7"
+		 dissent = 3
+		 supplies = -160
+		 rare_materials = -20
+		 crude_oil = -20
+		 metal = -40
+		 energy = -70
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 not = {
+					 has_country_flag = USA_Mexican_Raids
+					 }
+				 }
+			 set_country_flag = USA_Mexican_Raids
+			 }
+		 set_global_flag = 2049521_EVENT_DONE
+		 }
+	}
 
 #Intervention against Mexican rebels
-country_event = {
-id = 529
-title = "DH_EVENT_2049522_TITLE"
-desc = "DH_EVENT_2049522_DESC"
-trigger = {
-	exists = MXR
-	has_country_flag = USA_Mexican_Raids
-	war = no
-	#NOEQUIVALENT random =  25
-	
-tag = USA
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
 
 
-
-not = { has_global_flag = SLEEPEVENT_2049522 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  15 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2049522_Option7"
-	war = { target = MXR }
-	
-set_global_flag = 2049522_EVENT_DONE
-
-}
-
-}
+ country_event = {
+	title = "DH_EVENT_2049522_TITLE"
+	desc = "DH_EVENT_2049522_DESC"
+	id = 529
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 15
+		 }
+	trigger = {
+		 exists = MXR
+		 has_country_flag = USA_Mexican_Raids
+		 war = no
+		 tag = USA
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2049522
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2049522_Option7"
+		 war = {
+			 target = MXR
+			 }
+		 set_global_flag = 2049522_EVENT_DONE
+		 }
+	}
 
 #Ask for full transit agreement with Mexico
-country_event = {
-id = 530
-title = "DH_EVENT_2049523_TITLE"
-desc = "DH_EVENT_2049523_DESC"
-trigger = {
-	exists = MEX
-	has_global_flag = 2049521_EVENT_DONE
-	USA = { war_with = MXR }
-	not = {
-		 USA = { war_with = MEX }
+
+
+ country_event = {
+	title = "DH_EVENT_2049523_TITLE"
+	desc = "DH_EVENT_2049523_DESC"
+	id = 530
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 7
 		 }
-	#not = {
-		 #has_global_flag = 2049534_EVENT_DONE german peace
-		 #}
-	#NOEQUIVALENT random =  10
-	
-tag = USA
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2049523 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  7 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2049523_Option7"
-	MEX = { country_event = 186 }
-	set_global_flag = SLEEPEVENT_2049535 
-	
-set_global_flag = 2049523_EVENT_DONE
-
-}
-
-}
-
-#Mexico rejects our proposal
-country_event = {
-id = 531
-title = "DH_EVENT_2049524_TITLE"
-desc = "DH_EVENT_2049524_DESC"
-trigger = { 
-tag = USA
-
-
-
-
-
-not = { has_global_flag = SLEEPEVENT_2049524 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2049524_Option7"
-	relation = { who = MEX value = -25  }
-	
-set_global_flag = 2049524_EVENT_DONE
-
-}
-
-}
-
-#Full scale invasion of Mexico
-country_event = {
-id = 532
-title = "DH_EVENT_2049525_TITLE"
-desc = "DH_EVENT_2049525_DESC"
-trigger = {
-	has_global_flag = 2049523_EVENT_DONE
-	USA = { war_with = MXR }
-	not = {
-		 USA = { war_with = GER }
-		 }
-	not = {
-		 neutrality = 20
-		 }
-	#NOEQUIVALENT random =  5
-	
-tag = USA
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2049525 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  14 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2049525_Option7"
-	war = { target = MEX }
-	neutrality = -5
-	
-set_global_flag = 2049525_EVENT_DONE
-
-}
-
-}
-
-#Ask for full transit agreement with Mexico
-country_event = {
-id = 533
-title = "DH_EVENT_2049535_TITLE"
-desc = "DH_EVENT_2049535_DESC"
-trigger = {
-	exists = MXR
-	not = {
+	trigger = {
 		 exists = MEX
+		 has_global_flag = 2049521_EVENT_DONE
+		 USA = {
+			 war_with = MXR
+			 }
+		 not = {
+			 USA = {
+				 war_with = MEX
+				 }
+			 }
+		 tag = USA
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2049523
+			 }
 		 }
-	has_global_flag = 2049521_EVENT_DONE
-	USA = { war_with = MXR }
-	not = {
-		 USA = { war_with = MXR }
+	option = {
+		 name = "DH_EVENT_2049523_Option7"
+		 MEX = {
+			 country_event = 186
+			 }
+		 set_global_flag = SLEEPEVENT_2049535
+		 set_global_flag = 2049523_EVENT_DONE
 		 }
-	not = {
-		 has_global_flag = 2049522_EVENT_DONE
-		 }
-	#NOEQUIVALENT random =  10
-	
-tag = USA
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
-
-
-
-not = { has_global_flag = SLEEPEVENT_2049535 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  7 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2049535_Option7"
-	MXR = { country_event = 189 }
-	set_global_flag = SLEEPEVENT_2049523 
-	
-set_global_flag = 2049535_EVENT_DONE
-
-}
-
-}
+	}
 
 #Mexico rejects our proposal
-country_event = {
-id = 534
-title = "DH_EVENT_2049536_TITLE"
-desc = "DH_EVENT_2049536_DESC"
-trigger = { 
-tag = USA
 
 
-
-
-
-not = { has_global_flag = SLEEPEVENT_2049536 }
-
-}
-fire_only_once = yes
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2049536_Option7"
-	relation = { who = MEX value = -25  }
-	
-set_global_flag = 2049536_EVENT_DONE
-
-}
-
-}
+ country_event = {
+	title = "DH_EVENT_2049524_TITLE"
+	desc = "DH_EVENT_2049524_DESC"
+	id = 531
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = USA
+		 not = {
+			 has_global_flag = SLEEPEVENT_2049524
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2049524_Option7"
+		 relation = {
+			 who = MEX
+			 value = -25
+			 }
+		 set_global_flag = 2049524_EVENT_DONE
+		 }
+	}
 
 #Full scale invasion of Mexico
-country_event = {
-id = 535
-title = "DH_EVENT_2049537_TITLE"
-desc = "DH_EVENT_2049537_DESC"
-trigger = {
-	#has_global_flag = 2049534_EVENT_DONE german peace
-	USA = { war_with = MXR }
-	not = {
-		 USA = { war_with = MXR }
+
+
+ country_event = {
+	title = "DH_EVENT_2049525_TITLE"
+	desc = "DH_EVENT_2049525_DESC"
+	id = 532
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 14
 		 }
-	not = {
-		 USA = { war_with = GER }
+	trigger = {
+		 has_global_flag = 2049523_EVENT_DONE
+		 USA = {
+			 war_with = MXR
+			 }
+		 not = {
+			 USA = {
+				 war_with = GER
+				 }
+			 }
+		 not = {
+			 neutrality = 20
+			 }
+		 tag = USA
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2049525
+			 }
 		 }
-	not = {
-		 neutrality = 20
+	option = {
+		 name = "DH_EVENT_2049525_Option7"
+		 war = {
+			 target = MEX
+			 }
+		 neutrality = -5
+		 set_global_flag = 2049525_EVENT_DONE
 		 }
-	#NOEQUIVALENT random =  5
-	
-tag = USA
-date = 1914.8.4
+	}
 
-not = { date = 1925.12.30
- }
+#Ask for full transit agreement with Mexico
 
 
+ country_event = {
+	title = "DH_EVENT_2049535_TITLE"
+	desc = "DH_EVENT_2049535_DESC"
+	id = 533
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 7
+		 }
+	trigger = {
+		 exists = MXR
+		 not = {
+			 exists = MEX
+			 }
+		 has_global_flag = 2049521_EVENT_DONE
+		 USA = {
+			 war_with = MXR
+			 }
+		 not = {
+			 USA = {
+				 war_with = MXR
+				 }
+			 }
+		 not = {
+			 has_global_flag = 2049522_EVENT_DONE
+			 }
+		 tag = USA
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2049535
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2049535_Option7"
+		 MXR = {
+			 country_event = 189
+			 }
+		 set_global_flag = SLEEPEVENT_2049523
+		 set_global_flag = 2049535_EVENT_DONE
+		 }
+	}
 
-not = { has_global_flag = SLEEPEVENT_2049537 }
+#Mexico rejects our proposal
 
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  14 }
 
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2049537_Option7"
-	war = { target = MXR }
-	neutrality = -5
-	
-set_global_flag = 2049537_EVENT_DONE
+ country_event = {
+	title = "DH_EVENT_2049536_TITLE"
+	desc = "DH_EVENT_2049536_DESC"
+	id = 534
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = USA
+		 not = {
+			 has_global_flag = SLEEPEVENT_2049536
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2049536_Option7"
+		 relation = {
+			 who = MEX
+			 value = -25
+			 }
+		 set_global_flag = 2049536_EVENT_DONE
+		 }
+	}
 
-}
+#Full scale invasion of Mexico
 
-}
+
+ country_event = {
+	title = "DH_EVENT_2049537_TITLE"
+	desc = "DH_EVENT_2049537_DESC"
+	id = 535
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 14
+		 }
+	trigger = {
+		 USA = {
+			 war_with = MXR
+			 }
+		 not = {
+			 USA = {
+				 war_with = MXR
+				 }
+			 }
+		 not = {
+			 USA = {
+				 war_with = GER
+				 }
+			 }
+		 not = {
+			 neutrality = 20
+			 }
+		 tag = USA
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2049537
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2049537_Option7"
+		 war = {
+			 target = MXR
+			 }
+		 neutrality = -5
+		 set_global_flag = 2049537_EVENT_DONE
+		 }
+	}
 
 #Restore diplomatic relations with Mexico
-country_event = {
-id = 536
-title = "DH_EVENT_2049526_TITLE"
-desc = "DH_EVENT_2049526_DESC"
-trigger = {
-	or = {
-		has_global_flag = 2049523_EVENT_DONE
-		has_global_flag = 2049535_EVENT_DONE
-		}
-	or = {
-		USA = { war_with = MXR }
-		USA = { war_with = MEX }
-		}
-	not = {
-		GER = { alliance_with = MXR }
-		GER = { alliance_with = MEX }
-			any_owned_province = { not = { controlled_by = USA } }
-		}
-	or = {
-		USA = { war_with = GER }
-		 neutrality = 20
-		}
-	#NOEQUIVALENT random =  5
-	
-tag = USA
-date = 1914.8.4
-
-not = { date = 1925.12.30
- }
 
 
-
-not = { has_global_flag = SLEEPEVENT_2049526 }
-
-}
-fire_only_once = yes
-mean_time_to_happen = { days =  14 }
-
-is_triggered_only = yes
-option = {
-	name = "DH_EVENT_2049526_Option7"
-	random_country = { limit = { tag = THIS 
-			 USA = { war_with = MXR }
-			  } 
-		THIS = { end_war = MXR }
+ country_event = {
+	title = "DH_EVENT_2049526_TITLE"
+	desc = "DH_EVENT_2049526_DESC"
+	id = 536
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 14
 		 }
-	random_country = { limit = { tag = THIS 
-			 USA = { war_with = MXR }
-			  } 
-		THIS = { end_war = MXR }
+	trigger = {
+		 or = {
+			 has_global_flag = 2049523_EVENT_DONE
+			 has_global_flag = 2049535_EVENT_DONE
+			 }
+		 or = {
+			 USA = {
+				 war_with = MXR
+				 }
+			 USA = {
+				 war_with = MEX
+				 }
+			 }
+		 not = {
+			 GER = {
+				 alliance_with = MXR
+				 }
+			 GER = {
+				 alliance_with = MEX
+				 }
+			 any_owned_province = {
+				 not = {
+					 controlled_by = USA
+					 }
+				 }
+			 }
+		 or = {
+			 USA = {
+				 war_with = GER
+				 }
+			 neutrality = 20
+			 }
+		 tag = USA
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2049526
+			 }
 		 }
-	random_country = { limit = { tag = THIS 
-			 USA = { war_with = MEX }
-			  } 
-		THIS = { end_war = MEX }
+	option = {
+		 name = "DH_EVENT_2049526_Option7"
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 USA = {
+					 war_with = MXR
+					 }
+				 }
+			 THIS = {
+				 end_war = MXR
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 USA = {
+					 war_with = MXR
+					 }
+				 }
+			 THIS = {
+				 end_war = MXR
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 USA = {
+					 war_with = MEX
+					 }
+				 }
+			 THIS = {
+				 end_war = MEX
+				 }
+			 }
+		 neutrality = -5
+		 set_global_flag = 2049526_EVENT_DONE
 		 }
-	neutrality = -5
-	
-set_global_flag = 2049526_EVENT_DONE
+	}
 
-}
-
-}

@@ -1,272 +1,640 @@
+#Ottoman–German Alliance
 
 
-#2 - A secret treaty between Turkey and Germany secures Turkish neutrality. (relations improve)
-country_event = {
-		
-		id = 100146
-		
-		is_triggered_only = yes
-		
-		title = "TURE10"
-		desc = "desc_TURE10"
-		picture = "TURP10"
+ country_event = {
+	title = "TURE10"
+	desc = "desc_TURE10"
+	id = 100146
+	 
+	picture = "TURP10"
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_TURE10"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 ENG = {
+			 country_event = 190501
+			 }
+		 }
+	}
 
-		option = {
-			name = "opta_TURE10"
-			ai_chance = { factor = 100 }
-			ENG = { country_event = 190501 }
-		}
-}
-#Arab revolt
-#country_event = {
-		
-#		id = 700002
-		
-#		major = yes
-		
-#		trigger = {
-#			tag = TUR
-#			not = { has_country_flag = arab_revolt }
-#			exists = HJZ
-#			TUR = { war_with = ENG }
-#			date = 1916.7.10
-#		}
-		
-#		title = "TURE14"
-#		desc = "desc_TURE14"
-#		picture = "TURP14"
-
-#		option = {
-#			name = "opta_TURE14"
-#			ai_chance = { factor = 100 }
-#			set_country_flag = arab_revolt
-#			HJZ = { leave_alliance = TUR }
-#			ASR = { leave_alliance = TUR }
-#			YEM = { leave_alliance = TUR }
-#			YEM = { leave_faction = axis }
-#			HJZ = { leave_faction = axis }
-#			ASR = { leave_faction = axis }
-#			HJZ = { join_faction = allies }
-#			YEM = { join_faction = allies }
-#			ASR = { join_faction = allies }
-#			JBS = { join_faction = axis }
-#		}
-#}
+#Pursuit of Goeben and Breslau
 
 
-#October 29 – persuit of goeben and breslau
-country_event = {
-		
-		id = 100701
-		
-		major = yes
+ country_event = {
+	title = "TURE11"
+	desc = "desc_TURE11"
+	id = 100701
+	 
+	picture = "TURP11"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	major = yes
+	 
+	trigger = {
+		 tag = TUR
+		 is_subject = no
+		 AUH = {
+			 has_country_flag = serbian_ultamatium
+			 }
+		 GER = {
+			 war_with = FRA
+			 }
+		 date = 1914.8.10
+		 }
+	option = {
+		 name = "opta_TURE11"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 neutrality = -10
+		 relation = {
+			 who = ENG
+			 value = -40
+			 }
+		 relation = {
+			 who = FRA
+			 value = -40
+			 }
+		 relation = {
+			 who = RUS
+			 value = -40
+			 }
+		 relation = {
+			 who = GER
+			 value = 40
+			 }
+		 relation = {
+			 who = AUH
+			 value = 20
+			 }
+		 set_country_flag = goeben
+		 }
+	option = {
+		 name = "optb_TURE11"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 neutrality = +20
+		 set_country_flag = no_goeben
+		 relation = {
+			 who = ENG
+			 value = 40
+			 }
+		 relation = {
+			 who = FRA
+			 value = 40
+			 }
+		 relation = {
+			 who = RUS
+			 value = 40
+			 }
+		 relation = {
+			 who = GER
+			 value = -40
+			 }
+		 relation = {
+			 who = AUH
+			 value = -20
+			 }
+		 }
+	}
 
-		trigger = {
-			tag = TUR
-			is_subject = no
-			AUH = { has_country_flag = serbian_ultamatium }
-			GER = { war_with = FRA }
-			date = 1914.8.10
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
-		
-		fire_only_once = yes
-		
-		title = "TURE11"
-		desc = "desc_TURE11"
-		picture = "TURP11"
-
-		option = {
-			name = "opta_TURE11"
-			ai_chance = { factor = 100 }
-			neutrality = -10
-			relation = { who = ENG value = -40 }
-			relation = { who = FRA value = -40 }
-			relation = { who = RUS value = -40 }
-			relation = { who = GER value = 40 }
-			relation = { who = AUH value = 20 }
-			set_country_flag = goeben
-		}
-		option = {
-			name = "optb_TURE11"
-			ai_chance = { factor = 0 }
-			neutrality = +20
-			set_country_flag = no_goeben
-			relation = { who = ENG value = 40 }
-			relation = { who = FRA value = 40 }
-			relation = { who = RUS value = 40 }
-			relation = { who = GER value = -40 }
-			relation = { who = AUH value = -20 }
-		}
-}
+#Armistice of Mudros
 
 
-#FALL OF OTTO
-country_event = {
-		
-		id = 190004
-		
-		is_triggered_only = yes
-		
-		fire_only_once = yes
-		
-		major = yes
-		
-		title = "WARE4"
-		desc = "desc_WARE4"
-		picture = "WARP4"
+ country_event = {
+	title = "WARE4"
+	desc = "desc_WARE4"
+	id = 190004
+	 
+	picture = "WARP4"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	major = yes
+	 
+	option = {
+		 name = "opta_WARE4"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 TUR = {
+			 country_event = 190008
+			 }
+		 }
+	option = {
+		 name = "opta_WARE41"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 set_country_flag = war_over
+		 TUR = {
+			 country_event = 190009
+			 }
+		 }
+	}
 
-		option = {
-			name = "opta_WARE4"
-			ai_chance = { factor = 100 }
-			TUR = { country_event = 190008 }
-		}
-		option = {
-			name = "opta_WARE41"
-			ai_chance = { factor = 0 }
-			set_country_flag = war_over
-			TUR = { country_event = 190009 }
-		}
-}
+#Armistice of Mudros
 
-country_event = {
-		
-		id = 190008
-		
-		is_triggered_only = yes
-		
-		fire_only_once = yes
-		
-		title = "WARE4"
-		desc = "desc_WARE4"
-		picture = "WARP4"
 
-		option = {
-			name = "opta_WARE4"
-			ai_chance = { factor = 100 }
-			set_country_flag = war_over
-			TUR = { any_country = { limit = { war_with = TUR } end_war = TUR } }			
-			
-			ENG = { guarantee = TUR }
-			TUR = { neutrality = 100 }
-			any_country = {
-				limit = { faction = allies }
-				non_aggression_pact = TUR
-			}
-			any_country = {
-				limit = { faction = allies }
-				threat = { who = TUR value = -150 }
-			}
-			
-			TUR = { any_owned = { limit = { is_core = YEM } secede_province = YEM } }
-			4976 = { add_core = SYR }
-			5014 = { add_core = SYR }
-			5049 = { add_core = SYR }
-			egypt_and_middle_east = { add_core = ENG }
-			egypt_and_middle_east = { secede_province = ENG }
-			#TUR = { any_owned = { limit = { is_core = ENG } secede_province = ENG } }
-			TUR = { any_owned = { limit = { is_core = IRQ } secede_province = IRQ } }
-			TUR = { any_owned = { limit = { is_core = ITA } secede_province = ITA } }
-			TUR = { any_owned = { limit = { is_core = GRE } secede_province = GRE } }
-			TUR = { any_owned = { limit = { is_core = YUG } secede_province = YUG } }
-			TUR = { any_owned = { limit = { is_core = SER } secede_province = SER } }
-			TUR = { any_owned = { limit = { is_core = HJZ } secede_province = HJZ } }
-			TUR = { any_owned = { limit = { is_core = ASR } secede_province = ASR } }
-			TUR = { any_owned = { limit = { is_core = ALB } secede_province = ALB } }
-			TUR = { any_owned = { limit = { is_core = MTN } secede_province = MTN } }
-			4614 = { secede_province = GRE }
-			4614 = { add_core = GRE }
-			TUR = { any_owned = { limit = { is_core = BUL } secede_province = BUL } }
-			TUR = { any_owned = { limit = { is_core = SYR } secede_province = SYR } }
-			TUR = { any_owned = { limit = { is_core = YEM } secede_province = ENG } }
-			TUR = { any_owned = { limit = { is_core = SAU } secede_province = SAU } }
-			TUR = { any_owned = { limit = { is_core = GRE } secede_province = GRE } }
-			ENG = { any_owned = { limit = { is_core = GRE } secede_province = GRE } }
-			TUR = { leave_faction = axis }
-			FRA = { create_vassal = SYR }
-			ENG = { create_vassal = IRQ }
-			4439 = { secede_province = ENG }
-			4503 = { secede_province = ENG }
-			4560 = { secede_province = ENG }
-			4436 = { secede_province = ENG }
-			4772 = { secede_province = ENG }
-			4721 = { secede_province = ENG }
-			4668 = { secede_province = ENG }
-			4374 = { secede_province = ENG }
-			ENG = { any_owned = { limit = { owned_by = ENG } add_core = ENG } }
-			capital = 4619
-			ENG = { create_vassal = TUR }
-		}
-}
+ country_event = {
+	title = "WARE4"
+	desc = "desc_WARE4"
+	id = 190008
+	 
+	picture = "WARP4"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_WARE4"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 set_country_flag = war_over
+		 TUR = {
+			 any_country = {
+				 limit = {
+					 war_with = TUR
+					 }
+				 end_war = TUR
+				 }
+			 }
+		 ENG = {
+			 guarantee = TUR
+			 }
+		 TUR = {
+			 neutrality = 100
+			 }
+		 any_country = {
+			 limit = {
+				 faction = allies
+				 }
+			 non_aggression_pact = TUR
+			 }
+		 any_country = {
+			 limit = {
+				 faction = allies
+				 }
+			 threat = {
+				 who = TUR
+				 value = -150
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = YEM
+					 }
+				 secede_province = YEM
+				 }
+			 }
+		 4976 = {
+			 add_core = SYR
+			 }
+		 5014 = {
+			 add_core = SYR
+			 }
+		 5049 = {
+			 add_core = SYR
+			 }
+		 egypt_and_middle_east = {
+			 add_core = ENG
+			 }
+		 egypt_and_middle_east = {
+			 secede_province = ENG
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = IRQ
+					 }
+				 secede_province = IRQ
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = ITA
+					 }
+				 secede_province = ITA
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = GRE
+					 }
+				 secede_province = GRE
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = YUG
+					 }
+				 secede_province = YUG
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = SER
+					 }
+				 secede_province = SER
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = HJZ
+					 }
+				 secede_province = HJZ
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = ASR
+					 }
+				 secede_province = ASR
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = ALB
+					 }
+				 secede_province = ALB
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = MTN
+					 }
+				 secede_province = MTN
+				 }
+			 }
+		 4614 = {
+			 secede_province = GRE
+			 }
+		 4614 = {
+			 add_core = GRE
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = BUL
+					 }
+				 secede_province = BUL
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = SYR
+					 }
+				 secede_province = SYR
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = YEM
+					 }
+				 secede_province = ENG
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = SAU
+					 }
+				 secede_province = SAU
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = GRE
+					 }
+				 secede_province = GRE
+				 }
+			 }
+		 ENG = {
+			 any_owned = {
+				 limit = {
+					 is_core = GRE
+					 }
+				 secede_province = GRE
+				 }
+			 }
+		 TUR = {
+			 leave_faction = axis
+			 }
+		 FRA = {
+			 create_vassal = SYR
+			 }
+		 ENG = {
+			 create_vassal = IRQ
+			 }
+		 4439 = {
+			 secede_province = ENG
+			 }
+		 4503 = {
+			 secede_province = ENG
+			 }
+		 4560 = {
+			 secede_province = ENG
+			 }
+		 4436 = {
+			 secede_province = ENG
+			 }
+		 4772 = {
+			 secede_province = ENG
+			 }
+		 4721 = {
+			 secede_province = ENG
+			 }
+		 4668 = {
+			 secede_province = ENG
+			 }
+		 4374 = {
+			 secede_province = ENG
+			 }
+		 ENG = {
+			 any_owned = {
+				 limit = {
+					 owned_by = ENG
+					 }
+				 add_core = ENG
+				 }
+			 }
+		 capital = 4619
+		 ENG = {
+			 create_vassal = TUR
+			 }
+		 }
+	}
 
-country_event = {
-		
-		id = 190009
-		
-		is_triggered_only = yes
-		
-		fire_only_once = yes
-		
-		title = "WARE4"
-		desc = "desc_WARE4"
-		picture = "WARP4"
+#Armistice of Mudros
 
-		option = {
-			name = "opta_WARE41"
-			ai_chance = { factor = 0 }
-			set_country_flag = war_over
-			TUR = { any_country = { limit = { war_with = TUR } end_war = TUR } }
-			
-						ENG = { guarantee = TUR }
-			TUR = { neutrality = 100 }
-			any_country = {
-				limit = { faction = allies }
-				non_aggression_pact = TUR
-			}
-			any_country = {
-				limit = { faction = allies }
-				threat = { who = TUR value = -150 }
-			}
-			
-			TUR = { any_owned = { limit = { is_core = YEM } secede_province = YEM } }
-			4976 = { add_core = SYR }
-			5014 = { add_core = SYR }
-			5049 = { add_core = SYR }
-			egypt_and_middle_east = { add_core = ENG }
-			egypt_and_middle_east = { secede_province = ENG }
-			#TUR = { any_owned = { limit = { is_core = ENG } secede_province = ENG } }
-			TUR = { any_owned = { limit = { is_core = IRQ } secede_province = IRQ } }
-			TUR = { any_owned = { limit = { is_core = ITA } secede_province = ITA } }
-			TUR = { any_owned = { limit = { is_core = GRE } secede_province = GRE } }
-			TUR = { any_owned = { limit = { is_core = YUG } secede_province = YUG } }
-			TUR = { any_owned = { limit = { is_core = SER } secede_province = SER } }
-			TUR = { any_owned = { limit = { is_core = ARM } secede_province = ARM } }
-			TUR = { any_owned = { limit = { is_core = HJZ } secede_province = HJZ } }
-			TUR = { any_owned = { limit = { is_core = ASR } secede_province = ASR } }
-			TUR = { any_owned = { limit = { is_core = ALB } secede_province = ALB } }
-			TUR = { any_owned = { limit = { is_core = MTN } secede_province = MTN } }
-			4614 = { secede_province = GRE }
-			TUR_5042 = { add_core = GRE }
-			4614 = { add_core = GRE }
-			TUR_4560 = { add_core = GRE }
-			4502 = { add_core = GRE }
-			4438 = { add_core = GRE }
-			4375 = { add_core = GRE }
-			4437 = { add_core = GRE }
-			TUR_4922 = { add_core = GRE }
-			TUR = { any_owned = { limit = { is_core = GRE } secede_province = GRE } }
-			TUR = { any_owned = { limit = { is_core = BUL } secede_province = BUL } }
-			TUR = { any_owned = { limit = { is_core = SYR } secede_province = SYR } }
-			TUR = { any_owned = { limit = { is_core = YEM } secede_province = ENG } }
-			TUR = { any_owned = { limit = { is_core = SAU } secede_province = SAU } }
-			ENG = { any_owned = { limit = { is_core = GRE } secede_province = GRE } }
-			TUR = { leave_faction = axis }
-			FRA = { create_vassal = SYR }
-			ENG = { create_vassal = IRQ }
-			ENG = { any_owned = { limit = { owned_by = ENG } add_core = ENG } }
-			capital = 4619
-		}
-}
+
+ country_event = {
+	title = "WARE4"
+	desc = "desc_WARE4"
+	id = 190009
+	 
+	picture = "WARP4"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_WARE41"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 set_country_flag = war_over
+		 TUR = {
+			 any_country = {
+				 limit = {
+					 war_with = TUR
+					 }
+				 end_war = TUR
+				 }
+			 }
+		 ENG = {
+			 guarantee = TUR
+			 }
+		 TUR = {
+			 neutrality = 100
+			 }
+		 any_country = {
+			 limit = {
+				 faction = allies
+				 }
+			 non_aggression_pact = TUR
+			 }
+		 any_country = {
+			 limit = {
+				 faction = allies
+				 }
+			 threat = {
+				 who = TUR
+				 value = -150
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = YEM
+					 }
+				 secede_province = YEM
+				 }
+			 }
+		 4976 = {
+			 add_core = SYR
+			 }
+		 5014 = {
+			 add_core = SYR
+			 }
+		 5049 = {
+			 add_core = SYR
+			 }
+		 egypt_and_middle_east = {
+			 add_core = ENG
+			 }
+		 egypt_and_middle_east = {
+			 secede_province = ENG
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = IRQ
+					 }
+				 secede_province = IRQ
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = ITA
+					 }
+				 secede_province = ITA
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = GRE
+					 }
+				 secede_province = GRE
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = YUG
+					 }
+				 secede_province = YUG
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = SER
+					 }
+				 secede_province = SER
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = ARM
+					 }
+				 secede_province = ARM
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = HJZ
+					 }
+				 secede_province = HJZ
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = ASR
+					 }
+				 secede_province = ASR
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = ALB
+					 }
+				 secede_province = ALB
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = MTN
+					 }
+				 secede_province = MTN
+				 }
+			 }
+		 4614 = {
+			 secede_province = GRE
+			 }
+		 TUR_5042 = {
+			 add_core = GRE
+			 }
+		 4614 = {
+			 add_core = GRE
+			 }
+		 TUR_4560 = {
+			 add_core = GRE
+			 }
+		 4502 = {
+			 add_core = GRE
+			 }
+		 4438 = {
+			 add_core = GRE
+			 }
+		 4375 = {
+			 add_core = GRE
+			 }
+		 4437 = {
+			 add_core = GRE
+			 }
+		 TUR_4922 = {
+			 add_core = GRE
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = GRE
+					 }
+				 secede_province = GRE
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = BUL
+					 }
+				 secede_province = BUL
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = SYR
+					 }
+				 secede_province = SYR
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = YEM
+					 }
+				 secede_province = ENG
+				 }
+			 }
+		 TUR = {
+			 any_owned = {
+				 limit = {
+					 is_core = SAU
+					 }
+				 secede_province = SAU
+				 }
+			 }
+		 ENG = {
+			 any_owned = {
+				 limit = {
+					 is_core = GRE
+					 }
+				 secede_province = GRE
+				 }
+			 }
+		 TUR = {
+			 leave_faction = axis
+			 }
+		 FRA = {
+			 create_vassal = SYR
+			 }
+		 ENG = {
+			 create_vassal = IRQ
+			 }
+		 ENG = {
+			 any_owned = {
+				 limit = {
+					 owned_by = ENG
+					 }
+				 add_core = ENG
+				 }
+			 }
+		 capital = 4619
+		 }
+	}
+

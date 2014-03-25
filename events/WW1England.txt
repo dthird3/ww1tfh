@@ -1,454 +1,780 @@
- #### NEW KING 1910 BRITAIN  ####
-
-country_event = {
-
-		id = 100110
-
-		trigger = {
-			tag = ENG
-			ENG = { head_of_state = 9999999 }
-			date = 1910.5.6
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
-		
-		fire_only_once = yes
-
-		title = "ENGE1"
-		desc = "desc_ENGE1"
-		picture = "ENGP1"
-
-		option = {
-			name = "opta_ENGE1"
-			ai_chance = { factor = 100 }
-			ENG = { head_of_state = 10001 }
-			set_country_flag = king_death_george
-		}	
-}
-
- #### SOUTH AFRICA INDEPENDANCE FROM BRITAIN  ####
-
-country_event = {
-
-		id = 100111
-
-		is_triggered_only = yes
-		
-		major = yes 
-		
-		fire_only_once = yes
-
-		title = "ENGE2"
-		desc = "desc_ENGE2"
-		picture = "ENGP2"
-
-		option = {
-			name = "opta_ENGE2"
-			ai_chance = { factor = 100 }
-			release = SAF
-			ZZZ = { create_vassal = SAF }
-			SAF = { inherit = ZZZ }
-			manpower = 200
-			ENG = { military_access = SAF }
-			SAF = {money = 100}
-			SAF = {manpower = 20}
-			SAF = {energy = 1000}
-			SAF = {rare_materials = 500}
-			SAF = {metal = 500}
-			SAF = {supplies = 1000}
-			SAF = { remove_brigade = "1st Inf Brigade" }
-			SAF = { remove_brigade = "2nd Inf Brigade" }
-			SAF = { remove_brigade = "3rd Inf Brigade" }
-			SAF = { remove_brigade = "4th Inf Brigade" }
-			SAF = { remove_brigade = "5th Inf Brigade" }
-			SAF = { remove_brigade = "6th Inf Brigade" }
-			SAF = { remove_brigade = "7th Inf Brigade" }
-			SAF = { remove_brigade = "8th Inf Brigade" }
-			SAF = { remove_brigade = "9th Inf Brigade" }
-			SAF = { remove_brigade = "10th Inf Brigade" }
-			SAF = { remove_brigade = "11th Inf Brigade" }
-			SAF = { remove_brigade = "12th Inf Brigade" }
-			SAF = { remove_brigade = "13th Inf Brigade" }
-			SAF = { remove_brigade = "14th Inf Brigade" }
-			SAF = { remove_brigade = "15th Inf Brigade" }
-			SAF = { remove_brigade = "16th Inf Brigade" }
-			SAF = { remove_brigade = "17th Inf Brigade" }
-			SAF = { remove_brigade = "18th Inf Brigade" }
-			SAF = { load_oob = "SAF_1910.txt" }
-			set_country_flag = saf_release
-			SAF = { leave_faction = allies }
-			}	
-}
-
-country_event = { #May 25 – The United Kingdom's House of Commons passes Irish Home Rule.
-
-		id = 100140
-		
-		major = yes
-		
-		trigger = {
-			tag = ENG
-			NOT = { exists = IRE }
-			war = no
-			date = 1914.5.25
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
-		
-		fire_only_once = yes
-
-		title = "ENGE3"
-		desc = "desc_ENGE3"
-		picture = "ENGP3"
-
-		option = {
-			name = "opta_ENGE3"
-			ai_chance = { factor = 100 }
-			manpower = 20
-			dissent = -3
-			neutrality = -15
-		}
-	
-
-}
-#April 14 – RMS Titanic strikes an iceberg in the northern Atlantic Ocean. 
-country_event = {
-
-		id = 100206
-
-		major = yes
-		
-		trigger = {
-			tag = ENG
-			date = 1912.4.15
-			NOT = { has_country_flag = titanic }
-		}
-		
-		mean_time_to_happen = {
-			days = 0
-		}
-		
-		fire_only_once = yes
-
-		title = "USAE3"
-		desc = "desc_USAE3"
-		picture = "USAP3"
-
-		option = {
-			name = "opta_USAE3"
-			set_country_flag = titanic
-			ai_chance = { factor = 10 }
-			dissent = -3
-			}
-	
-}
-#November 5 – The United Kingdom annexes Cyprus
-	country_event = {
-		
-		id = 100151
-		
-		major = yes
+#King Edward VII dies
 
 
-		is_triggered_only = yes
-		
-		fire_only_once = yes
-		
-		title = "ENGE4"
-		desc = "desc_ENGE4"
-		picture = "ENGP4"
+ country_event = {
+	title = "ENGE1"
+	desc = "desc_ENGE1"
+	id = 100110
+	 
+	picture = "ENGP1"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	trigger = {
+		 tag = ENG
+		 ENG = {
+			 head_of_state = 9999999
+			 }
+		 date = 1910.5.6
+		 }
+	option = {
+		 name = "opta_ENGE1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 ENG = {
+			 head_of_state = 10001
+			 }
+		 set_country_flag = king_death_george
+		 }
+	}
 
-		option = {
-			name = "opta_ENGE4"
-			ai_chance = { factor = 100 }
-			TUR = { country_event = 100152 }
-		}
-}
-
-	country_event = {
-		
-		id = 100152
-		
-		is_triggered_only = yes
-		
-		fire_only_once = yes
-		
-		title = "ENGE4"
-		desc = "desc_ENGE4"
-		picture = "ENGP4"
-
-		option = {
-			name = "opta_ENGE4"
-			ai_chance = { factor = 100 }
-		}
-}
-
-
-
-#FALL OF ENG
-country_event = {
-		
-		id = 190005
-		
-		is_triggered_only = yes
-		
-		fire_only_once = yes
-		
-		major = yes
-		
-		title = "WARE5"
-		desc = "desc_WARE5"
-		picture = "WARP5"
-
-		option = {
-			name = "Puppet the United Kingdom"
-			set_country_flag = war_over
-			dissent = 10
-			ENG = { any_country = { limit = { war_with = ENG } end_war = ENG } }
-			ENG = { leave_faction = allies }
-			ENG = { any_owned = { limit = { is_core = TUR } secede_province = TUR } }
-			ENG_9578 = { secede_province = TUR }
-			GER = { create_vassal = ENG }
-		}
-		option = {
-			name = "Inherit colonies only"
-			ai_chance = { factor = 100 }
-			set_country_flag = war_over
-			dissent = 5
-			ENG = { any_country = { limit = { war_with = ENG } end_war = ENG } }
-			ENG = { leave_faction = allies }
-			ENG = { any_owned = { limit = { is_core = TUR } secede_province = TUR } }
-			ENG_9578 = { secede_province = TUR }
-			GER = { guarantee = ENG }
-			ENG = { neutrality = 100 }
-			any_country = {
-				limit = { faction = axis }
-				non_aggression_pact = ENG
-			}
-			any_country = {
-				limit = { faction = axis }
-				threat = { who = ENG value = -150 }
-			}
-			ENG = { country_event = 190006 }
-		}
-		option = {
-			name = "Inherit colonies and Puppet"
-			set_country_flag = war_over
-			dissent = 15
-			ENG = { any_country = { limit = { war_with = ENG } end_war = ENG } }
-			ENG = { leave_faction = allies }
-			GER = { create_vassal = ENG }
-			ENG = { any_owned = { limit = { is_core = TUR } secede_province = TUR } }
-			ENG_9578 = { secede_province = TUR }
-			GER = { guarantee = ENG }
-			ENG = { neutrality = 100 }
-			any_country = {
-				limit = { faction = axis }
-				non_aggression_pact = ENG
-			}
-			any_country = {
-				limit = { faction = axis }
-				threat = { who = ENG value = -150 }
-			}
-			ENG = { country_event = 190006 }
-		}
-}
-country_event = {
-		
-		id = 190006
-		
-		is_triggered_only = yes
-		
-		fire_only_once = yes
-		
-		title = "WARE5"
-		desc = "desc_WARE5"
-		picture = "WARP5"
-
-		option = {
-			name = "opta_WARE5"
-			ai_chance = { factor = 100 }
-			5181 = { secede_province = GER }
-			5868 = { secede_province = GER }
-			9756 = { secede_province = GER }
-			9915 = { secede_province = GER }
-			9935 = { secede_province = GER }
-			5191 = { secede_province = GER }
-			6394 = { secede_province = GER }
-			5359 = { secede_province = GER }
-			9862 = { secede_province = GER }
-			9977 = { secede_province = GER }
-			9970 = { secede_province = GER }
-			5213 = { secede_province = GER }
-			ENG_9969 = { secede_province = GER }
-			ENG_9837 = { secede_province = GER }
-			ENG_9902 = { secede_province = GER }
-			ENG_9879 = { secede_province = GER }
-			ENG_9780 = { secede_province = GER }
-			ENG_9841 = { secede_province = GER }
-			ENG_9932 = { secede_province = GER }
-			ENG_9956 = { secede_province = GER }
-			ENG_10394 = { secede_province = GER }
-			ENG_8030 = { secede_province = GER }
-			ENG_8020 = { secede_province = GER }
-			ENG_10271 = { secede_province = GER }
-			ENG_10259 = { secede_province = GER }
-			CAN_8487 = { secede_province = GER }
-			CAN_3737 = { secede_province = GER }
-		}
-}
+#South Africa Independence
 
 
-# Easter Uprising in Ireland
-country_event = {						
-		
-		id = 190007
-		
-		major = yes
-		
-		trigger = {
-			tag = ENG
-			date = 1916.1.1
-			ENG = { war_with = GER }
-			NOT = { exists = IRE }
-			NOT = { has_country_flag = easter }
-		}
-		
-		mean_time_to_happen = {
-			months = 1
-		}
-		
-		fire_only_once = yes
-		
-		title = "IREE1"
-		desc = "desc_IREE1"
-		picture = "IREP1"
+ country_event = {
+	title = "ENGE2"
+	desc = "desc_ENGE2"
+	id = 100111
+	 
+	picture = "ENGP2"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	major = yes
+	 
+	option = {
+		 name = "opta_ENGE2"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 release = SAF
+		 ZZZ = {
+			 create_vassal = SAF
+			 }
+		 SAF = {
+			 inherit = ZZZ
+			 }
+		 manpower = 200
+		 ENG = {
+			 military_access = SAF
+			 }
+		 SAF = {
+			 money = 100
+			 }
+		 SAF = {
+			 manpower = 20
+			 }
+		 SAF = {
+			 energy = 1000
+			 }
+		 SAF = {
+			 rare_materials = 500
+			 }
+		 SAF = {
+			 metal = 500
+			 }
+		 SAF = {
+			 supplies = 1000
+			 }
+		 SAF = {
+			 remove_brigade = "1st
+			 Inf
+			 Brigade"
+			 }
+		 SAF = {
+			 remove_brigade = "2nd
+			 Inf
+			 Brigade"
+			 }
+		 SAF = {
+			 remove_brigade = "3rd
+			 Inf
+			 Brigade"
+			 }
+		 SAF = {
+			 remove_brigade = "4th
+			 Inf
+			 Brigade"
+			 }
+		 SAF = {
+			 remove_brigade = "5th
+			 Inf
+			 Brigade"
+			 }
+		 SAF = {
+			 remove_brigade = "6th
+			 Inf
+			 Brigade"
+			 }
+		 SAF = {
+			 remove_brigade = "7th
+			 Inf
+			 Brigade"
+			 }
+		 SAF = {
+			 remove_brigade = "8th
+			 Inf
+			 Brigade"
+			 }
+		 SAF = {
+			 remove_brigade = "9th
+			 Inf
+			 Brigade"
+			 }
+		 SAF = {
+			 remove_brigade = "10th
+			 Inf
+			 Brigade"
+			 }
+		 SAF = {
+			 remove_brigade = "11th
+			 Inf
+			 Brigade"
+			 }
+		 SAF = {
+			 remove_brigade = "12th
+			 Inf
+			 Brigade"
+			 }
+		 SAF = {
+			 remove_brigade = "13th
+			 Inf
+			 Brigade"
+			 }
+		 SAF = {
+			 remove_brigade = "14th
+			 Inf
+			 Brigade"
+			 }
+		 SAF = {
+			 remove_brigade = "15th
+			 Inf
+			 Brigade"
+			 }
+		 SAF = {
+			 remove_brigade = "16th
+			 Inf
+			 Brigade"
+			 }
+		 SAF = {
+			 remove_brigade = "17th
+			 Inf
+			 Brigade"
+			 }
+		 SAF = {
+			 remove_brigade = "18th
+			 Inf
+			 Brigade"
+			 }
+		 SAF = {
+			 load_oob = "SAF_1910.txt"
+			 }
+		 set_country_flag = saf_release
+		 SAF = {
+			 leave_faction = allies
+			 }
+		 }
+	}
 
-		option = {
-			name = "opta_IREE1"
-			ai_chance = { factor = 100 }
-			ireland_dublin = { secede_province = IRE }
-			IRE = { load_oob = "IRE_1914.txt" }
-			IRE = {
-				war = {
-					target = ENG
-					attacker_goal = { casus_belli = aquire_all_cores }
-					defender_goal = { casus_belli = conquer }
-				}
-			}
-			set_country_flag = easter
-			USA = { relation = { who = ENG value = -20 }}			# USA upset with UK military action against Ireland
-		}
-}
-country_event = {
-		
-		id = 190501
-		
-		major = yes
-		
-		is_triggered_only = yes
-		
-		fire_only_once = yes
-		
-		title = "ENGE6"
-		desc = "desc_ENGE6"
-		picture = "ENGP6"
+#Government of Ireland Act 1914
 
-		option = {
-			name = "opta_ENGE6"
-			ai_chance = { factor = 100 }
-			dissent = 2
-			relation = { who = TUR value = -50 }
-			money = -50
-			load_oob = "ErinAgincourt.txt"			
-		}
-		option = {
-			name = "optb_ENGE6"
-			relation = { who = TUR value = 20 }
-			money = 50
-			TUR = { load_oob = "ReshadiehSultan.txt" }			
-		}
-}
-country_event = {
-		
-		id = 190502
-		
-		major = no
-		
-		is_triggered_only = yes
-		
-		fire_only_once = yes
-		
-		title = "ENGE8"
-		desc = "desc_ENGE8"
-		picture = "ENGP8"
+#May 25 – The United Kingdom's House of Commons passes Irish Home Rule.
 
-		option = {
-			name = "opta_ENGE8"
-			ai_chance = { factor = 100 }		
-			add_country_modifier = {
-				name = "volunteer_army_uk"
-				duration = 90
-			}		
-		}
-}
-country_event = {
-		
-		id = 100509
-		
-		major = yes
-		
-		trigger = {
-			tag = ENG
-			date = 1915.10.15
-			ENG = { war_with = GER }
-			NOT = { has_country_flag = hmscanada }
-		}
-		
-		fire_only_once = yes
-		
-		title = "ENGE7"
-		desc = "desc_ENGE7"
-		picture = "ENGP7"
+ country_event = {
+	title = "ENGE3"
+	desc = "desc_ENGE3"
+	id = 100140
+	 
+	picture = "ENGP3"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	major = yes
+	 
+	trigger = {
+		 tag = ENG
+		 NOT = {
+			 exists = IRE
+			 }
+		 war = no
+		 date = 1914.5.25
+		 }
+	option = {
+		 name = "opta_ENGE3"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 manpower = 20
+		 dissent = -3
+		 neutrality = -15
+		 }
+	}
 
-		option = {
-			name = "opta_ENGE7"
-			ai_chance = { factor = 100 }
-			money = -150
-			load_oob = "HMSCanada.txt"
-			set_country_flag = hmscanada
-		}
-		option = {
-			name = "optb_ENGE7"
-			money = 150
-			CHL = { load_oob = "AlmiranteLatorre.txt" }
-			set_country_flag = hmscanada			
-		}
-}
+#Sinking of the Titanic!
 
-#UK Declaration of North Sea War Zone	=======================================  Road to USA Entry  =============================================					
-country_event = {
 
-		id = 100508
-		
-		is_triggered_only = yes
+ country_event = {
+	title = "USAE3"
+	desc = "desc_USAE3"
+	id = 100206
+	 
+	picture = "USAP3"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 0
+		 }
+	major = yes
+	 
+	trigger = {
+		 tag = ENG
+		 date = 1912.4.15
+		 NOT = {
+			 has_country_flag = titanic
+			 }
+		 }
+	option = {
+		 name = "opta_USAE3"
+		 set_country_flag = titanic
+		 ai_chance = {
+			 factor = 10
+			 }
+		 dissent = -3
+		 }
+	}
 
-		major = yes
-		
-		fire_only_once = yes
-		
-		title = "EVT1914_2001556_NAME"
-		desc = "EVT1914_2001556_DESC"
-		picture = "Grand_Fleet"
+#Cyprus Annexation
 
-		option = {
-			name = "EVT1914_2001556_ACTIONA"
-			ai_chance = { factor = 100 }
-			USA = { relation = { who = ENG value = -20 }}
-			USA = { neutrality = 2 }
-		}
-}
+
+ country_event = {
+	title = "ENGE4"
+	desc = "desc_ENGE4"
+	id = 100151
+	 
+	picture = "ENGP4"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	major = yes
+	 
+	option = {
+		 name = "opta_ENGE4"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 TUR = {
+			 country_event = 100152
+			 }
+		 }
+	}
+
+#Cyprus Annexation
+
+
+ country_event = {
+	title = "ENGE4"
+	desc = "desc_ENGE4"
+	id = 100152
+	 
+	picture = "ENGP4"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_ENGE4"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 }
+	}
+
+#Fall of the British Empire
+
+
+ country_event = {
+	title = "WARE5"
+	desc = "desc_WARE5"
+	id = 190005
+	 
+	picture = "WARP5"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	major = yes
+	 
+	option = {
+		 name = "Puppet
+		 the
+		 United
+		 Kingdom"
+		 set_country_flag = war_over
+		 dissent = 10
+		 ENG = {
+			 any_country = {
+				 limit = {
+					 war_with = ENG
+					 }
+				 end_war = ENG
+				 }
+			 }
+		 ENG = {
+			 leave_faction = allies
+			 }
+		 ENG = {
+			 any_owned = {
+				 limit = {
+					 is_core = TUR
+					 }
+				 secede_province = TUR
+				 }
+			 }
+		 ENG_9578 = {
+			 secede_province = TUR
+			 }
+		 GER = {
+			 create_vassal = ENG
+			 }
+		 }
+	option = {
+		 name = "Inherit
+		 colonies
+		 only"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 set_country_flag = war_over
+		 dissent = 5
+		 ENG = {
+			 any_country = {
+				 limit = {
+					 war_with = ENG
+					 }
+				 end_war = ENG
+				 }
+			 }
+		 ENG = {
+			 leave_faction = allies
+			 }
+		 ENG = {
+			 any_owned = {
+				 limit = {
+					 is_core = TUR
+					 }
+				 secede_province = TUR
+				 }
+			 }
+		 ENG_9578 = {
+			 secede_province = TUR
+			 }
+		 GER = {
+			 guarantee = ENG
+			 }
+		 ENG = {
+			 neutrality = 100
+			 }
+		 any_country = {
+			 limit = {
+				 faction = axis
+				 }
+			 non_aggression_pact = ENG
+			 }
+		 any_country = {
+			 limit = {
+				 faction = axis
+				 }
+			 threat = {
+				 who = ENG
+				 value = -150
+				 }
+			 }
+		 ENG = {
+			 country_event = 190006
+			 }
+		 }
+	option = {
+		 name = "Inherit
+		 colonies
+		 and
+		 Puppet"
+		 set_country_flag = war_over
+		 dissent = 15
+		 ENG = {
+			 any_country = {
+				 limit = {
+					 war_with = ENG
+					 }
+				 end_war = ENG
+				 }
+			 }
+		 ENG = {
+			 leave_faction = allies
+			 }
+		 GER = {
+			 create_vassal = ENG
+			 }
+		 ENG = {
+			 any_owned = {
+				 limit = {
+					 is_core = TUR
+					 }
+				 secede_province = TUR
+				 }
+			 }
+		 ENG_9578 = {
+			 secede_province = TUR
+			 }
+		 GER = {
+			 guarantee = ENG
+			 }
+		 ENG = {
+			 neutrality = 100
+			 }
+		 any_country = {
+			 limit = {
+				 faction = axis
+				 }
+			 non_aggression_pact = ENG
+			 }
+		 any_country = {
+			 limit = {
+				 faction = axis
+				 }
+			 threat = {
+				 who = ENG
+				 value = -150
+				 }
+			 }
+		 ENG = {
+			 country_event = 190006
+			 }
+		 }
+	}
+
+#Fall of the British Empire
+
+
+ country_event = {
+	title = "WARE5"
+	desc = "desc_WARE5"
+	id = 190006
+	 
+	picture = "WARP5"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_WARE5"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 5181 = {
+			 secede_province = GER
+			 }
+		 5868 = {
+			 secede_province = GER
+			 }
+		 9756 = {
+			 secede_province = GER
+			 }
+		 9915 = {
+			 secede_province = GER
+			 }
+		 9935 = {
+			 secede_province = GER
+			 }
+		 5191 = {
+			 secede_province = GER
+			 }
+		 6394 = {
+			 secede_province = GER
+			 }
+		 5359 = {
+			 secede_province = GER
+			 }
+		 9862 = {
+			 secede_province = GER
+			 }
+		 9977 = {
+			 secede_province = GER
+			 }
+		 9970 = {
+			 secede_province = GER
+			 }
+		 5213 = {
+			 secede_province = GER
+			 }
+		 ENG_9969 = {
+			 secede_province = GER
+			 }
+		 ENG_9837 = {
+			 secede_province = GER
+			 }
+		 ENG_9902 = {
+			 secede_province = GER
+			 }
+		 ENG_9879 = {
+			 secede_province = GER
+			 }
+		 ENG_9780 = {
+			 secede_province = GER
+			 }
+		 ENG_9841 = {
+			 secede_province = GER
+			 }
+		 ENG_9932 = {
+			 secede_province = GER
+			 }
+		 ENG_9956 = {
+			 secede_province = GER
+			 }
+		 ENG_10394 = {
+			 secede_province = GER
+			 }
+		 ENG_8030 = {
+			 secede_province = GER
+			 }
+		 ENG_8020 = {
+			 secede_province = GER
+			 }
+		 ENG_10271 = {
+			 secede_province = GER
+			 }
+		 ENG_10259 = {
+			 secede_province = GER
+			 }
+		 CAN_8487 = {
+			 secede_province = GER
+			 }
+		 CAN_3737 = {
+			 secede_province = GER
+			 }
+		 }
+	}
+
+#Easter Rising!
+
+# USA upset with UK military action against Ireland
+
+ country_event = {
+	title = "IREE1"
+	desc = "desc_IREE1"
+	id = 190007
+	 
+	picture = "IREP1"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 months = 1
+		 }
+	major = yes
+	 
+	trigger = {
+		 tag = ENG
+		 date = 1916.1.1
+		 ENG = {
+			 war_with = GER
+			 }
+		 NOT = {
+			 exists = IRE
+			 }
+		 NOT = {
+			 has_country_flag = easter
+			 }
+		 }
+	option = {
+		 name = "opta_IREE1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 ireland_dublin = {
+			 secede_province = IRE
+			 }
+		 IRE = {
+			 load_oob = "IRE_1914.txt"
+			 }
+		 IRE = {
+			 war = {
+				 target = ENG
+				 attacker_goal = {
+					 casus_belli = aquire_all_cores
+					 }
+				 defender_goal = {
+					 casus_belli = conquer
+					 }
+				 }
+			 }
+		 set_country_flag = easter
+		 USA = {
+			 relation = {
+				 who = ENG
+				 value = -20
+				 }
+			 }
+		 }
+	}
+
+#Seizure of the Sultan Osman I and Reshadieh
+
+
+ country_event = {
+	title = "ENGE6"
+	desc = "desc_ENGE6"
+	id = 190501
+	 
+	picture = "ENGP6"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	major = yes
+	 
+	option = {
+		 name = "opta_ENGE6"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 dissent = 2
+		 relation = {
+			 who = TUR
+			 value = -50
+			 }
+		 money = -50
+		 load_oob = "ErinAgincourt.txt"
+		 }
+	option = {
+		 name = "optb_ENGE6"
+		 relation = {
+			 who = TUR
+			 value = 20
+			 }
+		 money = 50
+		 TUR = {
+			 load_oob = "ReshadiehSultan.txt"
+			 }
+		 }
+	}
+
+#A Surge of Volunteers
+
+
+ country_event = {
+	title = "ENGE8"
+	desc = "desc_ENGE8"
+	id = 190502
+	 
+	picture = "ENGP8"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	major = no
+	 
+	option = {
+		 name = "opta_ENGE8"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 add_country_modifier = {
+			 name = "volunteer_army_uk"
+			 duration = 90
+			 }
+		 }
+	}
+
+#Purchase of the Almirante Latorre
+
+
+ country_event = {
+	title = "ENGE7"
+	desc = "desc_ENGE7"
+	id = 100509
+	 
+	picture = "ENGP7"
+	 
+	fire_only_once = yes
+	 
+	major = yes
+	 
+	trigger = {
+		 tag = ENG
+		 date = 1915.10.15
+		 ENG = {
+			 war_with = GER
+			 }
+		 NOT = {
+			 has_country_flag = hmscanada
+			 }
+		 }
+	option = {
+		 name = "opta_ENGE7"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 money = -150
+		 load_oob = "HMSCanada.txt"
+		 set_country_flag = hmscanada
+		 }
+	option = {
+		 name = "optb_ENGE7"
+		 money = 150
+		 CHL = {
+			 load_oob = "AlmiranteLatorre.txt"
+			 }
+		 set_country_flag = hmscanada
+		 }
+	}
+
+#Declare North Sea a War Zone
+
+
+ country_event = {
+	title = "EVT1914_2001556_NAME"
+	desc = "EVT1914_2001556_DESC"
+	id = 100508
+	 
+	picture = "Grand_Fleet"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	major = yes
+	 
+	option = {
+		 name = "EVT1914_2001556_ACTIONA"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 USA = {
+			 relation = {
+				 who = ENG
+				 value = -20
+				 }
+			 }
+		 USA = {
+			 neutrality = 2
+			 }
+		 }
+	}
+

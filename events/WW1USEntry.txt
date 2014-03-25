@@ -1,400 +1,701 @@
-# Declaration of Neutrality  ===============================================================================================================================
+#US Declaration of Neutrality
 
-country_event = {											# One time event at start to Ensure US Neutrality and "Peace maker" 
+# Relations don't set properly in Relations file, fix here.
 
-		id = 100501
+ country_event = {
+	title = "USAE6"
+	desc = "desc_USAE6"
+	id = 100501
+	 
+	picture = "USAP6"
+	 
+	fire_only_once = yes
+	 
+	trigger = {
+		 tag = USA
+		 not = {
+			 year = 1915
+			 }
+		 not = {
+			 month = 2
+			 }
+		 }
+	option = {
+		 name = "opta_USAE6"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 AUH = {
+			 threat = {
+				 who = USA
+				 value = -20
+				 }
+			 }
+		 GER = {
+			 threat = {
+				 who = USA
+				 value = -30
+				 }
+			 }
+		 USA = {
+			 relation = {
+				 who = CAN
+				 value = 75
+				 }
+			 }
+		 USA = {
+			 relation = {
+				 who = FRA
+				 value = 65
+				 }
+			 }
+		 USA = {
+			 relation = {
+				 who = SAF
+				 value = 75
+				 }
+			 }
+		 USA = {
+			 relation = {
+				 who = AST
+				 value = 75
+				 }
+			 }
+		 USA = {
+			 relation = {
+				 who = NZL
+				 value = 75
+				 }
+			 }
+		 USA = {
+			 relation = {
+				 who = RUS
+				 value = 50
+				 }
+			 }
+		 USA = {
+			 relation = {
+				 who = GER
+				 value = 75
+				 }
+			 }
+		 USA = {
+			 relation = {
+				 who = AUH
+				 value = 75
+				 }
+			 }
+		 }
+	}
 
-		trigger = {
-#		random_country = { limit = { ai = yes }}           # Event display only to AI country			
-#		trigger = {{ ai = yes }		
-			tag = LUX										
-			not = {year = 1915}
-			not = {month = 2}
-		}
-		fire_only_once = yes
-	
-		
-		title = "USAE6"
-		desc = "desc_USAE6"
-		picture = "USAP6"
-
-		option = {
-			name = "opta_USAE6"
-			ai_chance = { factor = 100 }					
-			AUH = {threat = { who = USA value = -20 }}		
-			GER = {threat = { who = USA value = -30 }}
-			USA = {relation = { who = CAN value = 75 }}		# Relations don't set properly in Relations file, fix here.
-			USA = {relation = { who = FRA value = 65 }}
-			USA = {relation = { who = SAF value = 75 }}		
-			USA = {relation = { who = AST value = 75 }}		
-			USA = {relation = { who = NZL value = 75 }}
-			USA = {relation = { who = RUS value = 50 }}		
-			USA = {relation = { who = GER value = 75 }}		
-			USA = {relation = { who = AUH value = 75 }}		
-		}
-}
-
-country_event = {											# Ensure US Neutrality and "Peace maker" to avoid undesired effects during start of WW1
-
-		id = 100502
-
-		major = yes
-		
-		trigger = {
-			tag = USA
-			war = no
-			GER = {	war_with = ENG }		
-			NOT = { has_country_flag = neutr }	
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
-		
-		fire_only_once = yes
-
-		title = "USAE6"
-		desc = "desc_USAE6"
-		picture = "USAP6"
-
-		option = {
-			name = "opta_USAE6"
-			ai_chance = { factor = 100 }					
-			USA = { neutrality = +40 }
-			AUH = {threat = { who = USA value = -20 }}		
-			GER = {threat = { who = USA value = -35 }}	
-			set_country_flag = neutr
-		}
-}
-
-# Preparedness Movement aids US volunteers to enlist in Canadian army units ==========================================================================================
-country_event = {
-
-		id = 100504
-
-		major = yes
-		
-		trigger = {
-			tag = USA
-			war = no
-			GER = {	war_with = ENG }				
-			NOT = { CAN = { has_country_flag = US_volunteers }}
-			USA = { has_country_flag = neutr }							
-		}
-		
-		mean_time_to_happen = {	months = 8 }
-		
-		fire_only_once = yes
-
-		title = "EVT1914_2008004_NAME"
-		desc = "EVT1914_2008004_DESC"
-		picture = "Canadian_recruit"
-
-		option = {
-			name = "EVT1914_2008004_ACTIONA"
-			ai_chance = { factor = 100 }
-			CAN = { set_country_flag = US_volunteers }		 
-			CAN = { manpower = 5 }
-			GER = {threat = { who = USA value = 2 }}
-		}
-}
-
-# Poison Gas Developed        Search for Chemical Weapons factories disguised as Rocket Test sites!
-country_event = {
-
-		id = 100528
-
-		major = yes
-		
-		trigger = {
-			tag = USA
-			USA = { has_country_flag = neutr }
-			NOT = { USA = { has_country_flag = Chemical_detected } }
-			OR = {
-				GER = {any_owned_province = { has_building = rocket_test}}
-				AUH = {any_owned_province = { has_building = rocket_test}}
-				ENG = {any_owned_province = { has_building = rocket_test}}
-				FRA = {any_owned_province = { has_building = rocket_test}}
-				ITA = {any_owned_province = { has_building = rocket_test}}
-				RUS = {any_owned_province = { has_building = rocket_test}}
-				TUR = {any_owned_province = { has_building = rocket_test}}
-				}	
-		}
-		
-		fire_only_once = yes
-
-		title = "EVT1914_2008003_NAME"
-		desc = "EVT1914_2008003_DESC"
-		picture = "poison_gas"
-
-		option = {
-			name = "EVT1914_2008003_ACTIONA"
-			ai_chance = { factor = 100 }
-			USA = {neutrality = -2}
-			USA = {set_country_flag = Chemical_detected}
-		}
-}
-# Sinking of the Steamer Harpalyce
-country_event = {
-
-		id = 100514
-
-		major = yes
-		
-		trigger = {
-			tag = USA
-			war = no
-			GER = {	war_with = ENG }						
-			GER = { has_country_flag = Atrocities }
-			date = 1915.04.10								
-			NOT = { USA = { has_country_flag = harpalyce } }
-		}
-		
-		mean_time_to_happen = { days = 1 }
-			
-		fire_only_once = yes
-
-		title = "EVT1914_2001555_NAME"
-		desc = "EVT1914_2001555_DESC"
-		picture = "Harpalyce"
-
-		option = {
-			name = "EVT1914_2001555_ACTIONA"
-			ai_chance = { factor = 100 }
-			USA = { neutrality = -2 }
-			GER = { threat = { who = USA value = 1 }}
-			USA = { relation = { who = GER value = -10 }}     
-			USA = { set_country_flag = harpalyce }
-		}
-}
+#US Declaration of Neutrality
 
 
-#Sinking of Lusitania										 
-country_event = {
+ country_event = {
+	title = "USAE6"
+	desc = "desc_USAE6"
+	id = 100502
+	 
+	picture = "USAP6"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	major = yes
+	 
+	trigger = {
+		 tag = USA
+		 war = no
+		 GER = {
+			 war_with = ENG
+			 }
+		 NOT = {
+			 has_country_flag = neutr
+			 }
+		 }
+	option = {
+		 name = "opta_USAE6"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 USA = {
+			 neutrality = +40
+			 }
+		 AUH = {
+			 threat = {
+				 who = USA
+				 value = -20
+				 }
+			 }
+		 GER = {
+			 threat = {
+				 who = USA
+				 value = -35
+				 }
+			 }
+		 set_country_flag = neutr
+		 }
+	}
 
-		id = 100516
-
-		major = yes
-		
-		trigger = {
-			tag = USA
-			war = no
-			GER = {	war_with = ENG }						
-			GER = { has_country_flag = unrest_subs }
-			NOT = { USA = { has_country_flag = lusitania } }
-		}
-			
-		mean_time_to_happen = {	months = 3 }
-		
-		fire_only_once = yes
-
-		title = "USAE8"
-		desc = "desc_USAE8"
-		picture = "USAP8"
-
-		option = {
-			name = "opta_USAE8"
-			ai_chance = { factor = 100 }
-			USA = { neutrality = -4 }
-			GER = {threat = { who = USA value = 3 }}
-			USA = { relation = { who = GER value = -20 }}
-			USA = { set_country_flag = lusitania }
-		}
-}
-
-
-# Battle of Jutland		Either Triggered by "Break the Blockade" or Date triggered if "Break the Blockade" not taken so long as Naval Battles fought								
-country_event = {
-
-		id = 100520
-
-		major = yes
-		
-		trigger = {
-			tag = USA
-			GER = {	war_with = ENG }								
-			NOT = { USA = { has_country_flag = Jutland } }
-			OR = {
-					date = 1916.4.1									
-					GER = { has_country_flag = break_blockade }
-			}
-			AND = {
-				GER = { total_of_ours_sunk = 10 }
-				ENG = { total_of_ours_sunk = 10 }
-			}
-		}
-		
-		mean_time_to_happen = {	days = 1 }
-		
-		fire_only_once = yes
-
-		title = "EVT1914_2001557_NAME"
-		desc = "EVT1914_2001557_DESC"
-		picture = "Seydlitz"
-
-		option = {
-			name = "EVT1914_2001557_ACTIONA"
-			ai_chance = { factor = 100 }
-			USA = { neutrality = -10 }
-			GER = { threat = { who = USA value = 4 }}
-			USA = {set_country_flag = Jutland}				
-		}
-}
+#US Volunteers for Canada
 
 
-# Zimmermann Telegram Intercepted				(Maybe this could be optional - like a 15% to get through undetected?)
-country_event = {
+ country_event = {
+	title = "EVT1914_2008004_NAME"
+	desc = "EVT1914_2008004_DESC"
+	id = 100504
+	 
+	picture = "Canadian_recruit"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 months = 8
+		 }
+	major = yes
+	 
+	trigger = {
+		 tag = USA
+		 war = no
+		 GER = {
+			 war_with = ENG
+			 }
+		 NOT = {
+			 CAN = {
+				 has_country_flag = US_volunteers
+				 }
+			 }
+		 USA = {
+			 has_country_flag = neutr
+			 }
+		 }
+	option = {
+		 name = "EVT1914_2008004_ACTIONA"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 CAN = {
+			 set_country_flag = US_volunteers
+			 }
+		 CAN = {
+			 manpower = 5
+			 }
+		 GER = {
+			 threat = {
+				 who = USA
+				 value = 2
+				 }
+			 }
+		 }
+	}
 
-		id = 100526
-
-		major = yes
-		
-		trigger = {
-			tag = USA
-			GER = {	war_with = ENG }
-			GER = { has_country_flag = Send_Zimmermann }
-			NOT = { USA = { has_country_flag = Zimmermann_intercepted } }
-		}
-		
-		is_triggered_only = yes
-		
-		mean_time_to_happen = { days = 1 }
-		
-		fire_only_once = yes
-
-		title = "EVT1914_2001558_NAME"
-		desc = "EVT1914_2001558_DESC"
-		picture = "Zimmermann_Telegram"
-
-		option = {
-			name = "EVT1914_2001558_ACTIONA"
-			ai_chance = { factor = 100 }
-			USA = { relation = { who = GER value = -30 }}
-			GER = { threat = { who = USA value = 4 }}
-			USA = {set_country_flag = Zimmermann_intercepted}
-		}
-}
-
-
-#German Sabotage at Black Tom Pier
-country_event = {
-
-		id = 100522
-
-		major = yes
-		
-		trigger = {
-			tag = USA
-			GER = {	war_with = ENG }
-			USA = { has_country_flag = Jutland } 
-#			date = 1916.7.30
-			NOT = { USA = { has_country_flag = Black_Tom } }
-		}
-		
-		mean_time_to_happen = { months = 2 }
-		
-		fire_only_once = yes
-
-		title = "EVT1914_2001554_NAME"
-		desc = "EVT1914_2001554_DESC"
-		picture = "Black_Tom_Pier"
-
-		option = {
-			name = "EVT1914_2001554_ACTIONA"
-			ai_chance = { factor = 100 }
-			GER = { threat = { who = USA value = 1 }}
-			USA = { relation = { who = GER value = -5 }}
-			USA = { set_country_flag = Black_Tom }
-		}
-}
+#Chemical Weapons Factory detected
 
 
-#German Sabotage at Kingsland Munitions Factory
-country_event = {
+ country_event = {
+	title = "EVT1914_2008003_NAME"
+	desc = "EVT1914_2008003_DESC"
+	id = 100528
+	 
+	picture = "poison_gas"
+	 
+	fire_only_once = yes
+	 
+	major = yes
+	 
+	trigger = {
+		 tag = USA
+		 USA = {
+			 has_country_flag = neutr
+			 }
+		 NOT = {
+			 USA = {
+				 has_country_flag = Chemical_detected
+				 }
+			 }
+		 OR = {
+			 GER = {
+				 any_owned_province = {
+					 has_building = rocket_test
+					 }
+				 }
+			 AUH = {
+				 any_owned_province = {
+					 has_building = rocket_test
+					 }
+				 }
+			 ENG = {
+				 any_owned_province = {
+					 has_building = rocket_test
+					 }
+				 }
+			 FRA = {
+				 any_owned_province = {
+					 has_building = rocket_test
+					 }
+				 }
+			 ITA = {
+				 any_owned_province = {
+					 has_building = rocket_test
+					 }
+				 }
+			 RUS = {
+				 any_owned_province = {
+					 has_building = rocket_test
+					 }
+				 }
+			 TUR = {
+				 any_owned_province = {
+					 has_building = rocket_test
+					 }
+				 }
+			 }
+		 }
+	option = {
+		 name = "EVT1914_2008003_ACTIONA"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 USA = {
+			 neutrality = -2
+			 }
+		 USA = {
+			 set_country_flag = Chemical_detected
+			 }
+		 }
+	}
 
-		id = 100524
-
-		major = yes
-		
-		trigger = {
-			tag = USA
-			GER = {	war_with = ENG }
-			USA = { has_country_flag = Jutland } 
-#			date = 1917.1.11
-			NOT = { USA = { has_country_flag = Kingsland } }
-		}
-		
-		mean_time_to_happen = { months = 7 }
-		
-		fire_only_once = yes
-
-		title = "EVT1914_2001559_NAME"
-		desc = "EVT1914_2001559_DESC"
-		picture = "kingsland"
-
-		option = {
-			name = "EVT1914_2001559_ACTIONA"
-			ai_chance = { factor = 100 }
-			GER = { threat = { who = USA value = 1 }}
-			USA = { relation = { who = GER value = -5 }}
-			USA = {set_country_flag = Kingsland }
-		}
-}
+#The sinking of the steamer Harpalyce
 
 
-#        ============================================================== EVENTS INDEPENDANT OF UNRESTRICTED SUB WAR ==================================================================
-# Abdication of the Tsar - This is to be a backup to bring in USA to war if all else fails 
-country_event = {	
+ country_event = {
+	title = "EVT1914_2001555_NAME"
+	desc = "EVT1914_2001555_DESC"
+	id = 100514
+	 
+	picture = "Harpalyce"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	major = yes
+	 
+	trigger = {
+		 tag = USA
+		 war = no
+		 GER = {
+			 war_with = ENG
+			 }
+		 GER = {
+			 has_country_flag = Atrocities
+			 }
+		 date = 1915.04.10
+		 NOT = {
+			 USA = {
+				 has_country_flag = harpalyce
+				 }
+			 }
+		 }
+	option = {
+		 name = "EVT1914_2001555_ACTIONA"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 USA = {
+			 neutrality = -2
+			 }
+		 GER = {
+			 threat = {
+				 who = USA
+				 value = 1
+				 }
+			 }
+		 USA = {
+			 relation = {
+				 who = GER
+				 value = -10
+				 }
+			 }
+		 USA = {
+			 set_country_flag = harpalyce
+			 }
+		 }
+	}
 
-		id = 100530
+#The sinking of the Lusitania
 
-		major = yes
-		
-		is_triggered_only = yes
-		
-		mean_time_to_happen = { months = 1 }
-		
-		fire_only_once = yes
 
-		title = "EVT1914_2008008_NAME"
-		desc = "EVT1914_2008008_DESC"
-		picture = "abdic"
+ country_event = {
+	title = "USAE8"
+	desc = "desc_USAE8"
+	id = 100516
+	 
+	picture = "USAP8"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 months = 3
+		 }
+	major = yes
+	 
+	trigger = {
+		 tag = USA
+		 war = no
+		 GER = {
+			 war_with = ENG
+			 }
+		 GER = {
+			 has_country_flag = unrest_subs
+			 }
+		 NOT = {
+			 USA = {
+				 has_country_flag = lusitania
+				 }
+			 }
+		 }
+	option = {
+		 name = "opta_USAE8"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 USA = {
+			 neutrality = -4
+			 }
+		 GER = {
+			 threat = {
+				 who = USA
+				 value = 3
+				 }
+			 }
+		 USA = {
+			 relation = {
+				 who = GER
+				 value = -20
+				 }
+			 }
+		 USA = {
+			 set_country_flag = lusitania
+			 }
+		 }
+	}
 
-		option = {
-			name = "ACTION_NAME_GREAT"
-			ai_chance = { factor = 100 }
-			USA = { neutrality = -15 }
-			GER = {threat = { who = USA value = 25 }}
-			USA = { relation = { who = RUS value = 80 }}
-		}
-}
+#Battle of Jutland
 
-###  USA Initial surge of volunteers on DOW of GER  ###
-### USA also get US_Army modifier set under triggered_modifiers ###
-country_event = {
-		
-		id = 100532
-		
-		major = no
-		
-		trigger = {
-			tag = USA
-			USA = { war_with = GER } 
-			NOT = { USA = { has_country_flag = Initial_Draft } }
-		}		
-		
-		fire_only_once = yes
-		
-		title = "ENGE8"
-		desc = "desc_ENGE8"
-		picture = "USA_Draft"
 
-		option = {
-			name = "opta_ENGE8"
-			ai_chance = { factor = 100 }		
-			USA = {manpower = 100}	
-			USA = { set_country_flag = Initial_Draft }			
-		}
-}
+ country_event = {
+	title = "EVT1914_2001557_NAME"
+	desc = "EVT1914_2001557_DESC"
+	id = 100520
+	 
+	picture = "Seydlitz"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	major = yes
+	 
+	trigger = {
+		 tag = USA
+		 GER = {
+			 war_with = ENG
+			 }
+		 NOT = {
+			 USA = {
+				 has_country_flag = Jutland
+				 }
+			 }
+		 OR = {
+			 date = 1916.4.1
+			 GER = {
+				 has_country_flag = break_blockade
+				 }
+			 }
+		 AND = {
+			 GER = {
+				 total_of_ours_sunk = 10
+				 }
+			 ENG = {
+				 total_of_ours_sunk = 10
+				 }
+			 }
+		 }
+	option = {
+		 name = "EVT1914_2001557_ACTIONA"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 USA = {
+			 neutrality = -10
+			 }
+		 GER = {
+			 threat = {
+				 who = USA
+				 value = 4
+				 }
+			 }
+		 USA = {
+			 set_country_flag = Jutland
+			 }
+		 }
+	}
 
-# OPTION FOR MEXICAN DOW based on Send_Zimmermann AND US DOW on Germany?
+#Zimmermann Telegram Intercepted
+
+
+ country_event = {
+	title = "EVT1914_2001558_NAME"
+	desc = "EVT1914_2001558_DESC"
+	id = 100526
+	 
+	picture = "Zimmermann_Telegram"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	major = yes
+	 
+	trigger = {
+		 tag = USA
+		 GER = {
+			 war_with = ENG
+			 }
+		 GER = {
+			 has_country_flag = Send_Zimmermann
+			 }
+		 NOT = {
+			 USA = {
+				 has_country_flag = Zimmermann_intercepted
+				 }
+			 }
+		 }
+	option = {
+		 name = "EVT1914_2001558_ACTIONA"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 USA = {
+			 relation = {
+				 who = GER
+				 value = -30
+				 }
+			 }
+		 GER = {
+			 threat = {
+				 who = USA
+				 value = 4
+				 }
+			 }
+		 USA = {
+			 set_country_flag = Zimmermann_intercepted
+			 }
+		 }
+	}
+
+#Black Tom explosion
+
+
+ country_event = {
+	title = "EVT1914_2001554_NAME"
+	desc = "EVT1914_2001554_DESC"
+	id = 100522
+	 
+	picture = "Black_Tom_Pier"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 months = 2
+		 }
+	major = yes
+	 
+	trigger = {
+		 tag = USA
+		 GER = {
+			 war_with = ENG
+			 }
+		 USA = {
+			 has_country_flag = Jutland
+			 }
+		 NOT = {
+			 USA = {
+				 has_country_flag = Black_Tom
+				 }
+			 }
+		 }
+	option = {
+		 name = "EVT1914_2001554_ACTIONA"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 GER = {
+			 threat = {
+				 who = USA
+				 value = 1
+				 }
+			 }
+		 USA = {
+			 relation = {
+				 who = GER
+				 value = -5
+				 }
+			 }
+		 USA = {
+			 set_country_flag = Black_Tom
+			 }
+		 }
+	}
+
+#Kingsland explosion
+
+
+ country_event = {
+	title = "EVT1914_2001559_NAME"
+	desc = "EVT1914_2001559_DESC"
+	id = 100524
+	 
+	picture = "kingsland"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 months = 7
+		 }
+	major = yes
+	 
+	trigger = {
+		 tag = USA
+		 GER = {
+			 war_with = ENG
+			 }
+		 USA = {
+			 has_country_flag = Jutland
+			 }
+		 NOT = {
+			 USA = {
+				 has_country_flag = Kingsland
+				 }
+			 }
+		 }
+	option = {
+		 name = "EVT1914_2001559_ACTIONA"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 GER = {
+			 threat = {
+				 who = USA
+				 value = 1
+				 }
+			 }
+		 USA = {
+			 relation = {
+				 who = GER
+				 value = -5
+				 }
+			 }
+		 USA = {
+			 set_country_flag = Kingsland
+			 }
+		 }
+	}
+
+#Tsar Nicholas Abdicates!
+
+
+ country_event = {
+	title = "EVT1914_2008008_NAME"
+	desc = "EVT1914_2008008_DESC"
+	id = 100530
+	 
+	picture = "abdic"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 months = 1
+		 }
+	major = yes
+	 
+	option = {
+		 name = "ACTION_NAME_GREAT"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 USA = {
+			 neutrality = -15
+			 }
+		 GER = {
+			 threat = {
+				 who = USA
+				 value = 25
+				 }
+			 }
+		 USA = {
+			 relation = {
+				 who = RUS
+				 value = 80
+				 }
+			 }
+		 }
+	}
+
+#A Surge of Volunteers
+
+
+ country_event = {
+	title = "WargoalE1"
+	desc = "desc_WargoalE1"
+	id = 8001
+	 
+	picture = "newspaper"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	trigger = {
+		 faction = axis
+		 war_with = RUS
+		 not = {
+			 has_country_flag = russia_wargoal
+			 }
+		 not = {
+			 has_wargoal = RUS
+			 }
+		 }
+	option = {
+		 name = "opta_WargoalE1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 set_country_flag = russia_wargoal
+		 add_wargoal = {
+			 target = RUS
+			 war_goal = {
+				 casus_belli = axis_russia
+				 }
+			 }
+		 }
+	option = {
+		 name = "optb_WargoalE1"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 set_country_flag = russia_wargoal
+		 }
+	}
+

@@ -1,297 +1,358 @@
- #### June 28 – Serb nationalist Gavrilo Princip assassinates Austrian Archduke Franz Ferdinand of Austria and his wife, Duchess Sophie, in Sarajevo.
-country_event = {
+#Plans for Russia
 
-		id = 8001
-		
 
-		trigger = {
-			faction = axis
-			war_with = RUS
-			not = { has_country_flag = russia_wargoal }
-			not = { has_wargoal = RUS }
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
+ country_event = {
+	title = "WargoalE2"
+	desc = "desc_WargoalE2"
+	id = 8002
+	 
+	picture = "newspaper"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	trigger = {
+		 faction = axis
+		 war_with = FRA
+		 not = {
+			 has_country_flag = france_wargoal
+			 }
+		 not = {
+			 has_wargoal = FRA
+			 }
+		 }
+	option = {
+		 name = "opta_WargoalE2"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 set_country_flag = france_wargoal
+		 add_wargoal = {
+			 target = FRA
+			 war_goal = {
+				 casus_belli = german_france
+				 }
+			 }
+		 }
+	option = {
+		 name = "optb_WargoalE2"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 set_country_flag = france_wargoal
+		 }
+	}
 
-		fire_only_once = yes
+#Plans for France
 
-		title = "WargoalE1"
-		desc = "desc_WargoalE1"
-		picture = "newspaper"
 
-		option = {
-			name = "opta_WargoalE1"
-			ai_chance = { factor = 100 }
-			set_country_flag = russia_wargoal
-			add_wargoal = {
-				target = RUS
-				war_goal = { casus_belli = axis_russia }
-			}
-		}
-		option = {
-			name = "optb_WargoalE1"
-			ai_chance = { factor = 0 }
-			set_country_flag = russia_wargoal
-		}
-}
-country_event = {
+ country_event = {
+	title = "WargoalE3"
+	desc = "desc_WargoalE3"
+	id = 8003
+	 
+	picture = "newspaper"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	trigger = {
+		 faction = axis
+		 war_with = ENG
+		 not = {
+			 has_country_flag = england_wargoal
+			 }
+		 not = {
+			 has_wargoal = ENG
+			 }
+		 }
+	option = {
+		 name = "opta_WargoalE3"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 set_country_flag = england_wargoal
+		 add_wargoal = {
+			 target = ENG
+			 war_goal = {
+				 casus_belli = axis_england
+				 }
+			 }
+		 }
+	option = {
+		 name = "optb_WargoalE3"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 set_country_flag = england_wargoal
+		 }
+	}
 
-		id = 8002
-		
+#Plans for England
 
-		trigger = {
-			faction = axis
-			war_with = FRA
-			not = { has_country_flag = france_wargoal }
-			not = { has_wargoal = FRA }
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
 
-		fire_only_once = yes
+ country_event = {
+	title = "WargoalE4"
+	desc = "desc_WargoalE4"
+	id = 8004
+	 
+	picture = "newspaper"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	trigger = {
+		 faction = axis
+		 war_with = ROM
+		 not = {
+			 has_country_flag = romania_wargoal
+			 }
+		 not = {
+			 has_wargoal = ROM
+			 }
+		 }
+	option = {
+		 name = "opta_WargoalE4"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 set_country_flag = romania_wargoal
+		 add_wargoal = {
+			 target = ROM
+			 war_goal = {
+				 casus_belli = axis_romania
+				 }
+			 }
+		 }
+	option = {
+		 name = "optb_WargoalE4"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 set_country_flag = romania_wargoal
+		 }
+	}
 
-		title = "WargoalE2"
-		desc = "desc_WargoalE2"
-		picture = "newspaper"
+#Plans for Romania
 
-		option = {
-			name = "opta_WargoalE2"
-			ai_chance = { factor = 100 }
-			set_country_flag = france_wargoal
-			add_wargoal = {
-				target = FRA
-				war_goal = { casus_belli = german_france }
-			}
-		}
-		option = {
-			name = "optb_WargoalE2"
-			ai_chance = { factor = 0 }
-			set_country_flag = france_wargoal
-		}
-}
-country_event = {
 
-		id = 8003
-		
+ country_event = {
+	title = "WargoalE5"
+	desc = "desc_WargoalE5"
+	id = 8005
+	 
+	picture = "newspaper"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	trigger = {
+		 faction = allies
+		 war_with = BUL
+		 not = {
+			 has_country_flag = bulgaria_wargoal
+			 }
+		 not = {
+			 has_wargoal = BUL
+			 }
+		 }
+	option = {
+		 name = "opta_WargoalE5"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 set_country_flag = bulgaria_wargoal
+		 add_wargoal = {
+			 target = BUL
+			 war_goal = {
+				 casus_belli = allies_bulgaria
+				 }
+			 }
+		 }
+	option = {
+		 name = "optb_WargoalE5"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 set_country_flag = bulgaria_wargoal
+		 }
+	}
 
-		trigger = {
-			faction = axis
-			war_with = ENG
-			not = { has_country_flag = england_wargoal }
-			not = { has_wargoal = ENG }
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
+#Plans for Bulgaria
 
-		fire_only_once = yes
 
-		title = "WargoalE3"
-		desc = "desc_WargoalE3"
-		picture = "newspaper"
+ country_event = {
+	title = "WargoalE6"
+	desc = "desc_WargoalE6"
+	id = 8006
+	 
+	picture = "newspaper"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	trigger = {
+		 faction = allies
+		 war_with = GER
+		 not = {
+			 has_country_flag = germany_wargoal
+			 }
+		 not = {
+			 has_wargoal = GER
+			 }
+		 }
+	option = {
+		 name = "opta_WargoalE6"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 set_country_flag = germany_wargoal
+		 add_wargoal = {
+			 target = GER
+			 war_goal = {
+				 casus_belli = allies_germany
+				 }
+			 }
+		 }
+	option = {
+		 name = "optb_WargoalE6"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 set_country_flag = germany_wargoal
+		 }
+	}
 
-		option = {
-			name = "opta_WargoalE3"
-			ai_chance = { factor = 100 }
-			set_country_flag = england_wargoal
-			add_wargoal = {
-				target = ENG
-				war_goal = { casus_belli = axis_england }
-			}
-		}
-		option = {
-			name = "optb_WargoalE3"
-			ai_chance = { factor = 0 }
-			set_country_flag = england_wargoal
-		}
-}
-country_event = {
+#Plans for Germany
 
-		id = 8004
-		
 
-		trigger = {
-			faction = axis
-			war_with = ROM
-			not = { has_country_flag = romania_wargoal }
-			not = { has_wargoal = ROM }
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
+ country_event = {
+	title = "WargoalE7"
+	desc = "desc_WargoalE7"
+	id = 8007
+	 
+	picture = "newspaper"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	trigger = {
+		 faction = allies
+		 war_with = AUH
+		 not = {
+			 has_country_flag = austria_wargoal
+			 }
+		 not = {
+			 has_wargoal = AUH
+			 }
+		 }
+	option = {
+		 name = "opta_WargoalE7"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 set_country_flag = austria_wargoal
+		 add_wargoal = {
+			 target = AUH
+			 war_goal = {
+				 casus_belli = allies_austria
+				 }
+			 }
+		 }
+	option = {
+		 name = "optb_WargoalE7"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 set_country_flag = austria_wargoal
+		 }
+	}
 
-		fire_only_once = yes
+#Plans for Austria
 
-		title = "WargoalE4"
-		desc = "desc_WargoalE4"
-		picture = "newspaper"
 
-		option = {
-			name = "opta_WargoalE4"
-			ai_chance = { factor = 100 }
-			set_country_flag = romania_wargoal
-			add_wargoal = {
-				target = ROM
-				war_goal = { casus_belli = axis_romania }
-			}
-		}
-		option = {
-			name = "optb_WargoalE4"
-			ai_chance = { factor = 0 }
-			set_country_flag = romania_wargoal
-		}
-}
-country_event = {
+ country_event = {
+	title = "WargoalE8"
+	desc = "desc_WargoalE8"
+	id = 8008
+	 
+	picture = "newspaper"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	trigger = {
+		 faction = allies
+		 war_with = TUR
+		 not = {
+			 has_country_flag = ottoman_wargoal
+			 }
+		 not = {
+			 has_wargoal = TUR
+			 }
+		 }
+	option = {
+		 name = "opta_WargoalE8"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 set_country_flag = ottoman_wargoal
+		 add_wargoal = {
+			 target = TUR
+			 war_goal = {
+				 casus_belli = allies_austria
+				 }
+			 }
+		 }
+	option = {
+		 name = "optb_WargoalE8"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 set_country_flag = ottoman_wargoal
+		 }
+	}
 
-		id = 8005
-		
+#Plans for the Ottomans
 
-		trigger = {
-			faction = allies
-			war_with = BUL
-			not = { has_country_flag = bulgaria_wargoal }
-			not = { has_wargoal = BUL }
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
 
-		fire_only_once = yes
+ country_event = {
+	title = "CHIExhr1"
+	desc = "desc_CHIExhr1"
+	id = 999992
+	 
+	picture = "CHIPxhr1"
+	 
+	mean_time_to_happen = {
+		 days = 0
+		 }
+	trigger = {
+		 tag = QIN
+		 date = 1911.10.9
+		 not = {
+			 has_country_flag = revolutionaries_name_list
+			 }
+		 }
+	option = {
+		 name = "opta_CHIExhr1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 set_country_flag = revolutionaries_name_list
+		 }
+	}
 
-		title = "WargoalE5"
-		desc = "desc_WargoalE5"
-		picture = "newspaper"
-
-		option = {
-			name = "opta_WargoalE5"
-			ai_chance = { factor = 100 }
-			set_country_flag = bulgaria_wargoal
-			add_wargoal = {
-				target = BUL
-				war_goal = { casus_belli = allies_bulgaria }
-			}
-		}
-		option = {
-			name = "optb_WargoalE5"
-			ai_chance = { factor = 0 }
-			set_country_flag = bulgaria_wargoal
-		}
-}
-country_event = {
-
-		id = 8006
-		
-
-		trigger = {
-			faction = allies
-			war_with = GER
-			not = { has_country_flag = germany_wargoal }
-			not = { has_wargoal = GER }
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
-
-		fire_only_once = yes
-
-		title = "WargoalE6"
-		desc = "desc_WargoalE6"
-		picture = "newspaper"
-
-		option = {
-			name = "opta_WargoalE6"
-			ai_chance = { factor = 100 }
-			set_country_flag = germany_wargoal
-			add_wargoal = {
-				target = GER
-				war_goal = { casus_belli = allies_germany }
-			}
-		}
-		option = {
-			name = "optb_WargoalE6"
-			ai_chance = { factor = 0 }
-			set_country_flag = germany_wargoal
-		}
-}
-country_event = {
-
-		id = 8007
-		
-
-		trigger = {
-			faction = allies
-			war_with = AUH
-			not = { has_country_flag = austria_wargoal }
-			not = { has_wargoal = AUH }
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
-
-		fire_only_once = yes
-
-		title = "WargoalE7"
-		desc = "desc_WargoalE7"
-		picture = "newspaper"
-
-		option = {
-			name = "opta_WargoalE7"
-			ai_chance = { factor = 100 }
-			set_country_flag = austria_wargoal
-			add_wargoal = {
-				target = AUH
-				war_goal = { casus_belli = allies_austria }
-			}
-		}
-		option = {
-			name = "optb_WargoalE7"
-			ai_chance = { factor = 0 }
-			set_country_flag = austria_wargoal
-		}
-}
-country_event = {
-
-		id = 8008
-		
-
-		trigger = {
-			faction = allies
-			war_with = TUR
-			not = { has_country_flag = ottoman_wargoal }
-			not = { has_wargoal = TUR }
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
-
-		fire_only_once = yes
-
-		title = "WargoalE8"
-		desc = "desc_WargoalE8"
-		picture = "newspaper"
-
-		option = {
-			name = "opta_WargoalE8"
-			ai_chance = { factor = 100 }
-			set_country_flag = ottoman_wargoal
-			add_wargoal = {
-				target = TUR
-				war_goal = { casus_belli = allies_austria }
-			}
-		}
-		option = {
-			name = "optb_WargoalE8"
-			ai_chance = { factor = 0 }
-			set_country_flag = ottoman_wargoal
-		}
-}

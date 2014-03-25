@@ -1,29 +1,33 @@
+#Pedro Montt Dies!
 
-country_event = {
+# RamÌÝn Barros Luco
 
-		id = 100919
+ country_event = {
+	title = "CHLE1"
+	desc = "desc_CHLE1"
+	id = 100919
+	 
+	picture = "CHLP1"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	trigger = {
+		 tag = CHL
+		 CHL = {
+			 head_of_state = 210139
+			 }
+		 date = 1910.8.16
+		 }
+	option = {
+		 name = "opta_CHLE1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 head_of_state = 210140
+		 remove_minister = 210139
+		 }
+	}
 
-		trigger = {
-			tag = CHL
-			CHL = { head_of_state = 210139 }
-			date = 1910.8.16
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
-		
-		fire_only_once = yes
-
-		title = "CHLE1"
-		desc = "desc_CHLE1"
-		picture = "CHLP1"
-
-		option = {
-			name = "opta_CHLE1"
-			ai_chance = { factor = 100 }
-			head_of_state = 210140 # RamÌÝn Barros Luco
-			remove_minister  = 210139
-		}
-	
-}

@@ -1,1097 +1,2295 @@
-## BALKAN ALLIANCE - SERBIA
-country_event = {
-
-		id = 100117
-
-		major = yes
-
-		is_triggered_only = yes
-		
-		fire_only_once = yes
-
-		title = "SERE1"
-		desc = "desc_SERE1"
-		picture = "SERP1"
-
-		option = {
-			create_alliance = MTN
-			create_alliance = BUL
-			create_alliance = GRE
-			name = "opta_SERE1"
-			ai_chance = { factor = 100 }
-			TUR = { country_event = 100118 }
-			MTN = { country_event = 100118 }
-			BUL = { country_event = 100118 }		
-			SER = { end_war = CRT }
-			SER = { non_aggression_pact = CRT }
-			SER = { end_war = HJZ }
-			SER = { non_aggression_pact = HJZ }
-			SER = { end_war = ASR }
-			SER = { non_aggression_pact = ASR }
-			SER = { end_war = YEM }
-			SER = { non_aggression_pact = YEM }			
-			BUL = { end_war = CRT }
-			BUL = { non_aggression_pact = CRT }
-			BUL = { end_war = HJZ }
-			BUL = { non_aggression_pact = HJZ }
-			BUL = { end_war = ASR }
-			BUL = { non_aggression_pact = ASR }
-			BUL = { end_war = YEM }
-			BUL = { non_aggression_pact = YEM }			
-			MTN = { end_war = CRT }
-			MTN = { non_aggression_pact = CRT }
-			MTN = { end_war = HJZ }
-			MTN = { non_aggression_pact = HJZ }
-			MTN = { end_war = ASR }
-			MTN = { non_aggression_pact = ASR }
-			MTN = { end_war = YEM }
-			MTN = { non_aggression_pact = YEM }			
-			GRE = { end_war = CRT }
-			GRE = { non_aggression_pact = CRT }
-			GRE = { end_war = HJZ }
-			GRE = { non_aggression_pact = HJZ }
-			GRE = { end_war = ASR }
-			GRE = { non_aggression_pact = ASR }
-			GRE = { end_war = YEM }
-			GRE = { non_aggression_pact = YEM }
-			BUL = { manpower = 40 }
-			GRE = { country_event = 100118 }
-			set_country_flag = league_formed
-		}
-}
-
-country_event = {
-
-		id = 100118
-
-		is_triggered_only = yes
-
-		fire_only_once = yes
-
-		title = "SERE1"
-		desc = "desc_SERE1"
-		picture = "SERP1"
-
-		option = {
-			name = "opta_SERE1"
-			ai_chance = { factor = 100 }
-			THIS = { manpower = 20 }
-		}
-}
+#The Balkan League
 
 
-#FIRST BALKAN WAR
-country_event = {
+ country_event = {
+	title = "SERE1"
+	desc = "desc_SERE1"
+	id = 100117
+	 
+	picture = "SERP1"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	major = yes
+	 
+	option = {
+		 create_alliance = MTN
+		 create_alliance = BUL
+		 create_alliance = GRE
+		 name = "opta_SERE1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 TUR = {
+			 country_event = 100118
+			 }
+		 MTN = {
+			 country_event = 100118
+			 }
+		 BUL = {
+			 country_event = 100118
+			 }
+		 SER = {
+			 end_war = CRT
+			 }
+		 SER = {
+			 non_aggression_pact = CRT
+			 }
+		 SER = {
+			 end_war = HJZ
+			 }
+		 SER = {
+			 non_aggression_pact = HJZ
+			 }
+		 SER = {
+			 end_war = ASR
+			 }
+		 SER = {
+			 non_aggression_pact = ASR
+			 }
+		 SER = {
+			 end_war = YEM
+			 }
+		 SER = {
+			 non_aggression_pact = YEM
+			 }
+		 BUL = {
+			 end_war = CRT
+			 }
+		 BUL = {
+			 non_aggression_pact = CRT
+			 }
+		 BUL = {
+			 end_war = HJZ
+			 }
+		 BUL = {
+			 non_aggression_pact = HJZ
+			 }
+		 BUL = {
+			 end_war = ASR
+			 }
+		 BUL = {
+			 non_aggression_pact = ASR
+			 }
+		 BUL = {
+			 end_war = YEM
+			 }
+		 BUL = {
+			 non_aggression_pact = YEM
+			 }
+		 MTN = {
+			 end_war = CRT
+			 }
+		 MTN = {
+			 non_aggression_pact = CRT
+			 }
+		 MTN = {
+			 end_war = HJZ
+			 }
+		 MTN = {
+			 non_aggression_pact = HJZ
+			 }
+		 MTN = {
+			 end_war = ASR
+			 }
+		 MTN = {
+			 non_aggression_pact = ASR
+			 }
+		 MTN = {
+			 end_war = YEM
+			 }
+		 MTN = {
+			 non_aggression_pact = YEM
+			 }
+		 GRE = {
+			 end_war = CRT
+			 }
+		 GRE = {
+			 non_aggression_pact = CRT
+			 }
+		 GRE = {
+			 end_war = HJZ
+			 }
+		 GRE = {
+			 non_aggression_pact = HJZ
+			 }
+		 GRE = {
+			 end_war = ASR
+			 }
+		 GRE = {
+			 non_aggression_pact = ASR
+			 }
+		 GRE = {
+			 end_war = YEM
+			 }
+		 GRE = {
+			 non_aggression_pact = YEM
+			 }
+		 BUL = {
+			 manpower = 40
+			 }
+		 GRE = {
+			 country_event = 100118
+			 }
+		 set_country_flag = league_formed
+		 }
+	}
 
-		id = 100122
+#The Balkan League
 
-		major = yes
 
-		is_triggered_only = yes
-		
-		fire_only_once = yes
+ country_event = {
+	title = "SERE1"
+	desc = "desc_SERE1"
+	id = 100118
+	 
+	picture = "SERP1"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_SERE1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 THIS = {
+			 manpower = 20
+			 }
+		 }
+	}
 
-		title = "TURE4"
-		desc = "desc_TURE4"
-		picture = "TURP4"
+#First Balkan War
 
-		option = {
-			name = "opta_TURE4"
-			ai_chance = { factor = 100 }
-			MTN = { country_event = 100123 }
-			BUL = { country_event = 100123 }
-			GRE = { country_event = 100123 }
-			TUR = { country_event = 100124 }
-			BUL = { set_country_flag = first_balkan_war }
-			MTN = { set_country_flag = first_balkan_war }
-			GRE = { set_country_flag = first_balkan_war }
-		}
-}
 
-country_event = {
+ country_event = {
+	title = "TURE4"
+	desc = "desc_TURE4"
+	id = 100122
+	 
+	picture = "TURP4"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	major = yes
+	 
+	option = {
+		 name = "opta_TURE4"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 MTN = {
+			 country_event = 100123
+			 }
+		 BUL = {
+			 country_event = 100123
+			 }
+		 GRE = {
+			 country_event = 100123
+			 }
+		 TUR = {
+			 country_event = 100124
+			 }
+		 BUL = {
+			 set_country_flag = first_balkan_war
+			 }
+		 MTN = {
+			 set_country_flag = first_balkan_war
+			 }
+		 GRE = {
+			 set_country_flag = first_balkan_war
+			 }
+		 }
+	}
 
-		id = 100123
+#First Balkan War
 
-		is_triggered_only = yes
 
-		title = "TURE4"
-		desc = "desc_TURE4"
-		picture = "TURP4"
+ country_event = {
+	title = "TURE4"
+	desc = "desc_TURE4"
+	id = 100123
+	 
+	picture = "TURP4"
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_TURE4"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 THIS = {
+			 manpower = 50
+			 }
+		 THIS = {
+			 national_unity = +5
+			 }
+		 }
+	}
 
-		option = {
-			name = "opta_TURE4"
-			ai_chance = { factor = 100 }
-			THIS = { manpower = 50 }
-			THIS = { national_unity = +5 }
-		}
-	
-}
+#First Balkan War
 
-country_event = {
 
-		id = 100124
+ country_event = {
+	title = "TURE4"
+	desc = "desc_TURE4"
+	id = 100124
+	 
+	picture = "TURP4"
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_TURE4"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 THIS = {
+			 manpower = 20
+			 }
+		 }
+	}
 
-		is_triggered_only = yes
-
-		title = "TURE4"
-		desc = "desc_TURE4"
-		picture = "TURP4"
-
-		option = {
-			name = "opta_TURE4"
-			ai_chance = { factor = 100 }
-			THIS = { manpower = 20 }
-				}
-}
-
-#----------------------------NO KOCKOUTS------------------------------------
 #Treaty of London
 
-country_event = {
 
-		id = 100125
+ country_event = {
+	title = "TURE5"
+	desc = "desc_TURE5"
+	id = 100125
+	 
+	picture = "TURP5"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	major = yes
+	 
+	option = {
+		 name = "opta_TURE5"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 MTN = {
+			 country_event = 100126
+			 }
+		 BUL = {
+			 country_event = 100126
+			 }
+		 GRE = {
+			 country_event = 100126
+			 }
+		 TUR = {
+			 country_event = 100127
+			 }
+		 BUL = {
+			 set_country_flag = first_balkan_done
+			 }
+		 BUL = {
+			 leave_alliance = SER
+			 }
+		 GRE = {
+			 leave_alliance = SER
+			 }
+		 MTN = {
+			 leave_alliance = SER
+			 }
+		 TUR = {
+			 set_country_flag = turkey_reg
+			 }
+		 BUL = {
+			 end_war = HJZ
+			 }
+		 BUL = {
+			 end_war = ASR
+			 }
+		 BUL = {
+			 end_war = YEM
+			 }
+		 SER = {
+			 end_war = HJZ
+			 }
+		 SER = {
+			 end_war = ASR
+			 }
+		 SER = {
+			 end_war = YEM
+			 }
+		 MTN = {
+			 end_war = HJZ
+			 }
+		 MTN = {
+			 end_war = ASR
+			 }
+		 MTN = {
+			 end_war = YEM
+			 }
+		 GRE = {
+			 end_war = HJZ
+			 }
+		 GRE = {
+			 end_war = ASR
+			 }
+		 GRE = {
+			 end_war = YEM
+			 }
+		 TUR = {
+			 military_access = GRE
+			 }
+		 TUR = {
+			 military_access = MTN
+			 }
+		 TUR = {
+			 military_access = ALB
+			 }
+		 TUR = {
+			 military_access = BUL
+			 }
+		 TUR = {
+			 military_access = SER
+			 }
+		 GRE = {
+			 military_access = TUR
+			 }
+		 GRE = {
+			 military_access = MTN
+			 }
+		 GRE = {
+			 military_access = ALB
+			 }
+		 GRE = {
+			 military_access = BUL
+			 }
+		 GRE = {
+			 military_access = SER
+			 }
+		 MTN = {
+			 military_access = TUR
+			 }
+		 MTN = {
+			 military_access = GRE
+			 }
+		 MTN = {
+			 military_access = ALB
+			 }
+		 MTN = {
+			 military_access = BUL
+			 }
+		 MTN = {
+			 military_access = SER
+			 }
+		 ALB = {
+			 military_access = TUR
+			 }
+		 ALB = {
+			 military_access = GRE
+			 }
+		 ALB = {
+			 military_access = MTN
+			 }
+		 ALB = {
+			 military_access = BUL
+			 }
+		 ALB = {
+			 military_access = SER
+			 }
+		 BUL = {
+			 military_access = TUR
+			 }
+		 BUL = {
+			 military_access = GRE
+			 }
+		 BUL = {
+			 military_access = MTN
+			 }
+		 BUL = {
+			 military_access = ALB
+			 }
+		 BUL = {
+			 military_access = SER
+			 }
+		 SER = {
+			 military_access = TUR
+			 }
+		 SER = {
+			 military_access = GRE
+			 }
+		 SER = {
+			 military_access = MTN
+			 }
+		 SER = {
+			 military_access = ALB
+			 }
+		 SER = {
+			 military_access = BUL
+			 }
+		 }
+	}
 
-		major = yes
-		
-		is_triggered_only = yes
-
-		fire_only_once = yes
-
-		title = "TURE5"
-		desc = "desc_TURE5"
-		picture = "TURP5"
-
-		option = {
-			name = "opta_TURE5"
-			ai_chance = { factor = 100 }
-#			TUR = { manpower = 20 }
-#			GRE = { manpower = 20 }
-#			SER = { manpower = 20 }
-#			ROM = { manpower = 20 }
-			MTN = { country_event = 100126 }
-			BUL = { country_event = 100126 }
-			GRE = { country_event = 100126 }
-			TUR = { country_event = 100127 }
-			BUL = { set_country_flag = first_balkan_done }
-			BUL = { leave_alliance = SER }
-			GRE = { leave_alliance = SER } 
-			MTN = { leave_alliance = SER }
-			TUR = { set_country_flag = turkey_reg }
-			BUL = { end_war = HJZ }
-			BUL = { end_war = ASR }
-			BUL = { end_war = YEM }
-			SER = { end_war = HJZ }
-			SER = { end_war = ASR }
-			SER = { end_war = YEM }
-			MTN = { end_war = HJZ }
-			MTN = { end_war = ASR }
-			MTN = { end_war = YEM }
-			GRE = { end_war = HJZ }
-			GRE = { end_war = ASR }
-			GRE = { end_war = YEM }
-			TUR = { military_access = GRE }  
-			TUR = { military_access = MTN }  
-			TUR = { military_access = ALB }  
-			TUR = { military_access = BUL }  
-			TUR = { military_access = SER }  
-			GRE = { military_access = TUR }  
-			GRE = { military_access = MTN }  
-			GRE = { military_access = ALB }  
-			GRE = { military_access = BUL }  
-			GRE = { military_access = SER }   
-			MTN = { military_access = TUR }  
-			MTN = { military_access = GRE }  
-			MTN = { military_access = ALB }  
-			MTN = { military_access = BUL }  
-			MTN = { military_access = SER }   
-			ALB = { military_access = TUR }  
-			ALB = { military_access = GRE }  
-			ALB = { military_access = MTN }  
-			ALB = { military_access = BUL }  
-			ALB = { military_access = SER }   
-			BUL = { military_access = TUR }  
-			BUL = { military_access = GRE }  
-			BUL = { military_access = MTN }  
-			BUL = { military_access = ALB }  
-			BUL = { military_access = SER }    
-			SER = { military_access = TUR }  
-			SER = { military_access = GRE }  
-			SER = { military_access = MTN }  
-			SER = { military_access = ALB }  
-			SER = { military_access = BUL }  
-		}
-}
+#Treaty of London - End of Cleanup
 
 
-country_event = {
+ country_event = {
+	title = "MILACCESS2"
+	desc = "desc_MILACCESS2"
+	id = 100302
+	 
+	picture = "milaccess"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	trigger = {
+		 tag = SER
+		 exists = TUR
+		 OR = {
+			 SER = {
+				 has_country_flag = first_balkan_done
+				 }
+			 SER = {
+				 has_country_flag = first_balkan_surrender
+				 }
+			 }
+		 not = {
+			 SER = {
+				 has_country_flag = first_balkan_cleanup_done
+				 }
+			 }
+		 date = 1913.3.1
+		 }
+	option = {
+		 name = "opta_TURE4"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 TUR = {
+			 end_military_access = GRE
+			 }
+		 TUR = {
+			 end_military_access = MTN
+			 }
+		 TUR = {
+			 end_military_access = ALB
+			 }
+		 TUR = {
+			 end_military_access = BUL
+			 }
+		 TUR = {
+			 end_military_access = SER
+			 }
+		 GRE = {
+			 end_military_access = TUR
+			 }
+		 GRE = {
+			 end_military_access = MTN
+			 }
+		 GRE = {
+			 end_military_access = ALB
+			 }
+		 GRE = {
+			 end_military_access = BUL
+			 }
+		 GRE = {
+			 end_military_access = SER
+			 }
+		 MTN = {
+			 end_military_access = TUR
+			 }
+		 MTN = {
+			 end_military_access = GRE
+			 }
+		 MTN = {
+			 end_military_access = ALB
+			 }
+		 MTN = {
+			 end_military_access = BUL
+			 }
+		 MTN = {
+			 end_military_access = SER
+			 }
+		 ALB = {
+			 end_military_access = TUR
+			 }
+		 ALB = {
+			 end_military_access = GRE
+			 }
+		 ALB = {
+			 end_military_access = MTN
+			 }
+		 ALB = {
+			 end_military_access = BUL
+			 }
+		 ALB = {
+			 end_military_access = SER
+			 }
+		 BUL = {
+			 end_military_access = TUR
+			 }
+		 BUL = {
+			 end_military_access = GRE
+			 }
+		 BUL = {
+			 end_military_access = MTN
+			 }
+		 BUL = {
+			 end_military_access = ALB
+			 }
+		 BUL = {
+			 end_military_access = SER
+			 }
+		 SER = {
+			 end_military_access = TUR
+			 }
+		 SER = {
+			 end_military_access = GRE
+			 }
+		 SER = {
+			 end_military_access = MTN
+			 }
+		 SER = {
+			 end_military_access = ALB
+			 }
+		 SER = {
+			 end_military_access = BUL
+			 }
+		 SER = {
+			 set_country_flag = first_balkan_cleanup_done
+			 }
+		 }
+	}
 
-		id = 100302
-		
-		trigger = {
-			tag = SER
-			exists = TUR
-			OR = {
-				SER = { has_country_flag = first_balkan_done }
-				SER = { has_country_flag = first_balkan_surrender }
-			}
-			not = { SER = { has_country_flag = first_balkan_cleanup_done } }
-			date = 1913.3.1
-		}
-
-		mean_time_to_happen = {
-			days = 1
-		}
-		
-		fire_only_once = yes
-
-
-		title = "MILACCESS2"
-		desc = "desc_MILACCESS2"
-		picture = "milaccess"
-
-		option = {
-			name = "opta_TURE4"
-			ai_chance = { factor = 100 }
-			TUR = { end_military_access = GRE }  
-			TUR = { end_military_access = MTN }  
-			TUR = { end_military_access = ALB }  
-			TUR = { end_military_access = BUL }  
-			TUR = { end_military_access = SER }  
-			GRE = { end_military_access = TUR }  
-			GRE = { end_military_access = MTN }  
-			GRE = { end_military_access = ALB }  
-			GRE = { end_military_access = BUL }  
-			GRE = { end_military_access = SER }   
-			MTN = { end_military_access = TUR }  
-			MTN = { end_military_access = GRE }  
-			MTN = { end_military_access = ALB }  
-			MTN = { end_military_access = BUL }  
-			MTN = { end_military_access = SER }   
-			ALB = { end_military_access = TUR }  
-			ALB = { end_military_access = GRE }  
-			ALB = { end_military_access = MTN }  
-			ALB = { end_military_access = BUL }  
-			ALB = { end_military_access = SER }   
-			BUL = { end_military_access = TUR }  
-			BUL = { end_military_access = GRE }  
-			BUL = { end_military_access = MTN }  
-			BUL = { end_military_access = ALB }  
-			BUL = { end_military_access = SER }    
-			SER = { end_military_access = TUR }  
-			SER = { end_military_access = GRE }  
-			SER = { end_military_access = MTN }  
-			SER = { end_military_access = ALB }  
-			SER = { end_military_access = BUL } 
-			SER = { set_country_flag = first_balkan_cleanup_done }
-		}
-}
-
-
-country_event = {
-
-		id = 100126
-
-		is_triggered_only = yes
-
-		title = "TURE5"
-		desc = "desc_TURE5"
-		picture = "TURP5"
-
-		option = {
-			name = "opta_TURE5"
-			ai_chance = { factor = 100 }
-		}
-}
-
-country_event = {
-
-		id = 100127
-
-		is_triggered_only = yes
-
-		title = "TURE5"
-		desc = "desc_TURE5"
-		picture = "TURP5"
-
-		option = {
-			name = "opta_TURE5"
-			ai_chance = { factor = 100 }
-			4666 = { secede_province = BUL }
-			4613 = { secede_province = BUL }
-			4248 = { secede_province = BUL }
-			4313 = { secede_province = BUL }
-			4374 = { secede_province = BUL }
-			4434 = { secede_province = BUL }
-			4436 = { secede_province = BUL }
-			4498 = { secede_province = BUL }
-			4499 = { secede_province = BUL }
-			4497 = { secede_province = BUL }
-			4500 = { secede_province = BUL }
-			4556 = { secede_province = BUL }
-			4611 = { secede_province = BUL }
-			4612 = { secede_province = BUL }
-			4557 = { secede_province = BUL }
-			4558 = { secede_province = BUL }
-			4559 = { secede_province = BUL }
-			4614 = { secede_province = BUL }
-			4240 = { secede_province = MTN }
-			4306 = { secede_province = MTN }
-			4367 = { secede_province = MTN }
-			4430 = { secede_province = MTN }
-			4368 = { secede_province = SER }
-			4495 = { secede_province = SER }
-			4176 = { secede_province = SER }
-			4431 = { secede_province = SER }
-			4432 = { secede_province = SER }
-			4496 = { secede_province = SER }
-			4555 = { secede_province = SER }
-			4609 = { secede_province = SER }
-			4610 = { secede_province = SER }
-			4664 = { secede_province = SER }
-			4241 = { secede_province = SER }
-			4307 = { secede_province = SER }
-			4718 = { secede_province = GRE }
-			4665 = { secede_province = GRE }
-			4719 = { secede_province = GRE }
-			4467 = { secede_province = GRE }
-			4720 = { secede_province = GRE }
-			4770 = { secede_province = GRE }
-			4771 = { secede_province = GRE }
-			4819 = { secede_province = GRE }
-			4820 = { secede_province = GRE }
-			4821 = { secede_province = GRE }
-			4870 = { secede_province = GRE }
-			4871 = { secede_province = GRE }
-			4872 = { secede_province = GRE }
-			4918 = { secede_province = GRE }
-			4667 = { secede_province = GRE }
-			4663 = { secede_province = ALB } 
-			4494 = { secede_province = ALB }
-			4608 = { secede_province = ALB }
-			4717 = { secede_province = ALB } 
-			4554 = { secede_province = ALB } 
-			4608 = { secede_province = ALB } 
-			4716 = { secede_province = ALB } 
-			4769 = { secede_province = ALB } 
-			SER = { end_war = TUR }
-		}
-	
-}
-#----------------------------BULGARIA KOCKOUT------------------------------------
 #Treaty of London
 
-country_event = {
 
-		id = 100310
+ country_event = {
+	title = "TURE5"
+	desc = "desc_TURE5"
+	id = 100126
+	 
+	picture = "TURP5"
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_TURE5"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 }
+	}
 
-		major = yes
-		
-		is_triggered_only = yes
-
-		fire_only_once = yes
-
-		title = "TURE5"
-		desc = "desc_TURE5"
-		picture = "TURP5"
-
-		option = {
-			name = "opta_TURE5"
-			ai_chance = { factor = 100 }
-#			TUR = { manpower = 20 }
-#			GRE = { manpower = 20 }
-#			SER = { manpower = 20 }
-#			ROM = { manpower = 20 }
-			MTN = { country_event = 100312 }
-			GRE = { country_event = 100312 }
-			TUR = { country_event = 100313 }
-			GRE = { leave_alliance = SER } 
-			MTN = { leave_alliance = SER }
-			TUR = { set_country_flag = turkey_reg }
-			BUL = { end_war = HJZ }
-			BUL = { end_war = ASR }
-			BUL = { end_war = YEM }
-			SER = { end_war = HJZ }
-			SER = { end_war = ASR }
-			SER = { end_war = YEM }
-			MTN = { end_war = HJZ }
-			MTN = { end_war = ASR }
-			MTN = { end_war = YEM }
-			GRE = { end_war = HJZ }
-			GRE = { end_war = ASR }
-			GRE = { end_war = YEM }
-			TUR = { military_access = GRE }  
-			TUR = { military_access = MTN }  
-			TUR = { military_access = ALB }  
-			TUR = { military_access = BUL }  
-			TUR = { military_access = SER }  
-			GRE = { military_access = TUR }  
-			GRE = { military_access = MTN }  
-			GRE = { military_access = ALB }  
-			GRE = { military_access = BUL }  
-			GRE = { military_access = SER }   
-			MTN = { military_access = TUR }  
-			MTN = { military_access = GRE }  
-			MTN = { military_access = ALB }  
-			MTN = { military_access = BUL }  
-			MTN = { military_access = SER }   
-			ALB = { military_access = TUR }  
-			ALB = { military_access = GRE }  
-			ALB = { military_access = MTN }  
-			ALB = { military_access = BUL }  
-			ALB = { military_access = SER }   
-			BUL = { military_access = TUR }  
-			BUL = { military_access = GRE }  
-			BUL = { military_access = MTN }  
-			BUL = { military_access = ALB }  
-			BUL = { military_access = SER }    
-			SER = { military_access = TUR }  
-			SER = { military_access = GRE }  
-			SER = { military_access = MTN }  
-			SER = { military_access = ALB }  
-			SER = { military_access = BUL }  
-		}
-}
-
-
-country_event = {
-
-		id = 100311
-		
-		trigger = {
-			tag = SER
-			exists = TUR
-			exists = MTN
-			exists = BUL
-			exists = GRE
-			SER = { has_country_flag = first_balkan_done }
-			not = { SER = { has_country_flag = first_balkan_cleanup_done } }
-			date = 1913.3.1
-			}
-
-		mean_time_to_happen = {
-			days = 1
-		}
-		
-		fire_only_once = yes
-
-		title = "MILACCESS2"
-		desc = "desc_MILACCESS2"
-		picture = "TURP5"
-
-		option = {
-			name = "opta_TURE4"
-			ai_chance = { factor = 100 }
-			TUR = { end_military_access = GRE }  
-			TUR = { end_military_access = MTN }  
-			TUR = { end_military_access = ALB }  
-			TUR = { end_military_access = BUL }  
-			TUR = { end_military_access = SER }  
-			GRE = { end_military_access = TUR }  
-			GRE = { end_military_access = MTN }  
-			GRE = { end_military_access = ALB }  
-			GRE = { end_military_access = BUL }  
-			GRE = { end_military_access = SER }   
-			MTN = { end_military_access = TUR }  
-			MTN = { end_military_access = GRE }  
-			MTN = { end_military_access = ALB }  
-			MTN = { end_military_access = BUL }  
-			MTN = { end_military_access = SER }   
-			ALB = { end_military_access = TUR }  
-			ALB = { end_military_access = GRE }  
-			ALB = { end_military_access = MTN }  
-			ALB = { end_military_access = BUL }  
-			ALB = { end_military_access = SER }   
-			BUL = { end_military_access = TUR }  
-			BUL = { end_military_access = GRE }  
-			BUL = { end_military_access = MTN }  
-			BUL = { end_military_access = ALB }  
-			BUL = { end_military_access = SER }    
-			SER = { end_military_access = TUR }  
-			SER = { end_military_access = GRE }  
-			SER = { end_military_access = MTN }  
-			SER = { end_military_access = ALB }  
-			SER = { end_military_access = BUL } 
-			SER = { set_country_flag = first_balkan_cleanup_done }
-			}
-}
-
-
-country_event = {
-
-		id = 100312
-
-		is_triggered_only = yes
-
-		title = "TURE5"
-		desc = "desc_TURE5"
-		picture = "TURP5"
-
-		option = {
-			name = "opta_TURE5"
-			ai_chance = { factor = 100 }
-		}
-	
-}
-
-country_event = {
-
-		id = 100313
-
-		is_triggered_only = yes
-
-		title = "TURE5"
-		desc = "desc_TURE5"
-		picture = "TURP5"
-
-		option = {
-			name = "opta_TURE5"
-			ai_chance = { factor = 100 }
-			4240 = { secede_province = MTN }
-			4306 = { secede_province = MTN }
-			4367 = { secede_province = MTN }
-			4430 = { secede_province = MTN }
-			4368 = { secede_province = SER }
-			4495 = { secede_province = SER }
-			4176 = { secede_province = SER }
-			4431 = { secede_province = SER }
-			4432 = { secede_province = SER }
-			4496 = { secede_province = SER }
-			4555 = { secede_province = SER }
-			4609 = { secede_province = SER }
-			4610 = { secede_province = SER }
-			4664 = { secede_province = SER }
-			4241 = { secede_province = SER }
-			4307 = { secede_province = SER }
-			4718 = { secede_province = GRE }
-			4665 = { secede_province = GRE }
-			4719 = { secede_province = GRE }
-			4467 = { secede_province = GRE }
-			4720 = { secede_province = GRE }
-			4770 = { secede_province = GRE }
-			4771 = { secede_province = GRE }
-			4819 = { secede_province = GRE }
-			4820 = { secede_province = GRE }
-			4821 = { secede_province = GRE }
-			4870 = { secede_province = GRE }
-			4871 = { secede_province = GRE }
-			4872 = { secede_province = GRE }
-			4918 = { secede_province = GRE }
-			4667 = { secede_province = GRE }
-			4663 = { secede_province = ALB } 
-			4494 = { secede_province = ALB }
-			4608 = { secede_province = ALB }
-			4717 = { secede_province = ALB } 
-			4554 = { secede_province = ALB } 
-			4608 = { secede_province = ALB } 
-			4716 = { secede_province = ALB } 
-			4769 = { secede_province = ALB } 
-			SER = { end_war = TUR }
-		}
-}
-
-country_event = {
-
-		id = 100314
-
-		is_triggered_only = yes
-
-		title = "balkbul"
-		desc = "desc_balkbul"
-		picture = "TURP5"
-
-		option = {
-			name = "opta_balkbul"
-		}
-}
-
-#----------------------------MTN KOCKOUT------------------------------------
 #Treaty of London
 
-country_event = {
 
-		id = 100320
+ country_event = {
+	title = "TURE5"
+	desc = "desc_TURE5"
+	id = 100127
+	 
+	picture = "TURP5"
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_TURE5"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 4666 = {
+			 secede_province = BUL
+			 }
+		 4613 = {
+			 secede_province = BUL
+			 }
+		 4248 = {
+			 secede_province = BUL
+			 }
+		 4313 = {
+			 secede_province = BUL
+			 }
+		 4374 = {
+			 secede_province = BUL
+			 }
+		 4434 = {
+			 secede_province = BUL
+			 }
+		 4436 = {
+			 secede_province = BUL
+			 }
+		 4498 = {
+			 secede_province = BUL
+			 }
+		 4499 = {
+			 secede_province = BUL
+			 }
+		 4497 = {
+			 secede_province = BUL
+			 }
+		 4500 = {
+			 secede_province = BUL
+			 }
+		 4556 = {
+			 secede_province = BUL
+			 }
+		 4611 = {
+			 secede_province = BUL
+			 }
+		 4612 = {
+			 secede_province = BUL
+			 }
+		 4557 = {
+			 secede_province = BUL
+			 }
+		 4558 = {
+			 secede_province = BUL
+			 }
+		 4559 = {
+			 secede_province = BUL
+			 }
+		 4614 = {
+			 secede_province = BUL
+			 }
+		 4240 = {
+			 secede_province = MTN
+			 }
+		 4306 = {
+			 secede_province = MTN
+			 }
+		 4367 = {
+			 secede_province = MTN
+			 }
+		 4430 = {
+			 secede_province = MTN
+			 }
+		 4368 = {
+			 secede_province = SER
+			 }
+		 4495 = {
+			 secede_province = SER
+			 }
+		 4176 = {
+			 secede_province = SER
+			 }
+		 4431 = {
+			 secede_province = SER
+			 }
+		 4432 = {
+			 secede_province = SER
+			 }
+		 4496 = {
+			 secede_province = SER
+			 }
+		 4555 = {
+			 secede_province = SER
+			 }
+		 4609 = {
+			 secede_province = SER
+			 }
+		 4610 = {
+			 secede_province = SER
+			 }
+		 4664 = {
+			 secede_province = SER
+			 }
+		 4241 = {
+			 secede_province = SER
+			 }
+		 4307 = {
+			 secede_province = SER
+			 }
+		 4718 = {
+			 secede_province = GRE
+			 }
+		 4665 = {
+			 secede_province = GRE
+			 }
+		 4719 = {
+			 secede_province = GRE
+			 }
+		 4467 = {
+			 secede_province = GRE
+			 }
+		 4720 = {
+			 secede_province = GRE
+			 }
+		 4770 = {
+			 secede_province = GRE
+			 }
+		 4771 = {
+			 secede_province = GRE
+			 }
+		 4819 = {
+			 secede_province = GRE
+			 }
+		 4820 = {
+			 secede_province = GRE
+			 }
+		 4821 = {
+			 secede_province = GRE
+			 }
+		 4870 = {
+			 secede_province = GRE
+			 }
+		 4871 = {
+			 secede_province = GRE
+			 }
+		 4872 = {
+			 secede_province = GRE
+			 }
+		 4918 = {
+			 secede_province = GRE
+			 }
+		 4667 = {
+			 secede_province = GRE
+			 }
+		 4663 = {
+			 secede_province = ALB
+			 }
+		 4494 = {
+			 secede_province = ALB
+			 }
+		 4608 = {
+			 secede_province = ALB
+			 }
+		 4717 = {
+			 secede_province = ALB
+			 }
+		 4554 = {
+			 secede_province = ALB
+			 }
+		 4608 = {
+			 secede_province = ALB
+			 }
+		 4716 = {
+			 secede_province = ALB
+			 }
+		 4769 = {
+			 secede_province = ALB
+			 }
+		 SER = {
+			 end_war = TUR
+			 }
+		 }
+	}
 
-		major = yes
-		
-		is_triggered_only = yes
-
-		fire_only_once = yes
-
-		title = "TURE5"
-		desc = "desc_TURE5"
-		picture = "TURP5"
-
-		option = {
-			name = "opta_TURE5"
-			ai_chance = { factor = 100 }
-#			TUR = { manpower = 20 }
-#			GRE = { manpower = 20 }
-#			SER = { manpower = 20 }
-#			ROM = { manpower = 20 }
-			MTN = { country_event = 100322 }
-			GRE = { country_event = 100322 }
-			TUR = { country_event = 100323 }
-			GRE = { leave_alliance = SER } 
-			BUL = { leave_alliance = SER }
-			TUR = { set_country_flag = turkey_reg }
-			BUL = { end_war = HJZ }
-			BUL = { end_war = ASR }
-			BUL = { end_war = YEM }
-			SER = { end_war = HJZ }
-			SER = { end_war = ASR }
-			SER = { end_war = YEM }
-			MTN = { end_war = HJZ }
-			MTN = { end_war = ASR }
-			MTN = { end_war = YEM }
-			GRE = { end_war = HJZ }
-			GRE = { end_war = ASR }
-			GRE = { end_war = YEM }
-			TUR = { military_access = GRE }  
-			TUR = { military_access = MTN }  
-			TUR = { military_access = ALB }  
-			TUR = { military_access = BUL }  
-			TUR = { military_access = SER }  
-			GRE = { military_access = TUR }  
-			GRE = { military_access = MTN }  
-			GRE = { military_access = ALB }  
-			GRE = { military_access = BUL }  
-			GRE = { military_access = SER }   
-			MTN = { military_access = TUR }  
-			MTN = { military_access = GRE }  
-			MTN = { military_access = ALB }  
-			MTN = { military_access = BUL }  
-			MTN = { military_access = SER }   
-			ALB = { military_access = TUR }  
-			ALB = { military_access = GRE }  
-			ALB = { military_access = MTN }  
-			ALB = { military_access = BUL }  
-			ALB = { military_access = SER }   
-			BUL = { military_access = TUR }  
-			BUL = { military_access = GRE }  
-			BUL = { military_access = MTN }  
-			BUL = { military_access = ALB }  
-			BUL = { military_access = SER }    
-			SER = { military_access = TUR }  
-			SER = { military_access = GRE }  
-			SER = { military_access = MTN }  
-			SER = { military_access = ALB }  
-			SER = { military_access = BUL }  
-		}
-}
-
-
-country_event = {
-
-		id = 100322
-
-		is_triggered_only = yes
-
-		title = "TURE5"
-		desc = "desc_TURE5"
-		picture = "TURP5"
-
-		option = {
-			name = "opta_TURE5"
-			ai_chance = { factor = 100 }
-		}
-}
-
-country_event = {
-
-		id = 100323
-
-		is_triggered_only = yes
-
-		title = "TURE5"
-		desc = "desc_TURE5"
-		picture = "TURP5"
-
-		option = {
-			name = "opta_TURE5"
-			ai_chance = { factor = 100 }
-			4666 = { secede_province = BUL }
-			4613 = { secede_province = BUL }
-			4248 = { secede_province = BUL }
-			4313 = { secede_province = BUL }
-			4374 = { secede_province = BUL }
-			4434 = { secede_province = BUL }
-			4436 = { secede_province = BUL }
-			4498 = { secede_province = BUL }
-			4499 = { secede_province = BUL }
-			4497 = { secede_province = BUL }
-			4500 = { secede_province = BUL }
-			4556 = { secede_province = BUL }
-			4611 = { secede_province = BUL }
-			4612 = { secede_province = BUL }
-			4557 = { secede_province = BUL }
-			4558 = { secede_province = BUL }
-			4559 = { secede_province = BUL }
-			4614 = { secede_province = BUL }
-			4240 = { secede_province = SER }
-			4306 = { secede_province = SER }
-			4367 = { secede_province = SER }
-			4430 = { secede_province = SER }
-			4368 = { secede_province = SER }
-			4495 = { secede_province = SER }
-			4176 = { secede_province = SER }
-			4431 = { secede_province = SER }
-			4432 = { secede_province = SER }
-			4496 = { secede_province = SER }
-			4555 = { secede_province = SER }
-			4609 = { secede_province = SER }
-			4610 = { secede_province = SER }
-			4664 = { secede_province = SER }
-			4241 = { secede_province = SER }
-			4307 = { secede_province = SER }
-			4718 = { secede_province = GRE }
-			4665 = { secede_province = GRE }
-			4719 = { secede_province = GRE }
-			4467 = { secede_province = GRE }
-			4720 = { secede_province = GRE }
-			4770 = { secede_province = GRE }
-			4771 = { secede_province = GRE }
-			4819 = { secede_province = GRE }
-			4820 = { secede_province = GRE }
-			4821 = { secede_province = GRE }
-			4870 = { secede_province = GRE }
-			4871 = { secede_province = GRE }
-			4872 = { secede_province = GRE }
-			4918 = { secede_province = GRE }
-			4667 = { secede_province = GRE }
-			4663 = { secede_province = ALB } 
-			4494 = { secede_province = ALB }
-			4608 = { secede_province = ALB }
-			4717 = { secede_province = ALB } 
-			4554 = { secede_province = ALB } 
-			4608 = { secede_province = ALB } 
-			4716 = { secede_province = ALB } 
-			4769 = { secede_province = ALB } 
-			SER = { end_war = TUR }
-		}
-}
-
-country_event = {
-
-		id = 100324
-
-		is_triggered_only = yes
-
-		title = "balkmtn"
-		desc = "desc_balkmtn"
-		picture = "TURP5"
-
-		option = {
-			name = "opta_balkmtn"
-		}
-	
-}
-
-#----------------------------GRE KOCKOUT------------------------------------
 #Treaty of London
 
-country_event = {
 
-		id = 100330
+ country_event = {
+	title = "TURE5"
+	desc = "desc_TURE5"
+	id = 100310
+	 
+	picture = "TURP5"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	major = yes
+	 
+	option = {
+		 name = "opta_TURE5"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 MTN = {
+			 country_event = 100312
+			 }
+		 GRE = {
+			 country_event = 100312
+			 }
+		 TUR = {
+			 country_event = 100313
+			 }
+		 GRE = {
+			 leave_alliance = SER
+			 }
+		 MTN = {
+			 leave_alliance = SER
+			 }
+		 TUR = {
+			 set_country_flag = turkey_reg
+			 }
+		 BUL = {
+			 end_war = HJZ
+			 }
+		 BUL = {
+			 end_war = ASR
+			 }
+		 BUL = {
+			 end_war = YEM
+			 }
+		 SER = {
+			 end_war = HJZ
+			 }
+		 SER = {
+			 end_war = ASR
+			 }
+		 SER = {
+			 end_war = YEM
+			 }
+		 MTN = {
+			 end_war = HJZ
+			 }
+		 MTN = {
+			 end_war = ASR
+			 }
+		 MTN = {
+			 end_war = YEM
+			 }
+		 GRE = {
+			 end_war = HJZ
+			 }
+		 GRE = {
+			 end_war = ASR
+			 }
+		 GRE = {
+			 end_war = YEM
+			 }
+		 TUR = {
+			 military_access = GRE
+			 }
+		 TUR = {
+			 military_access = MTN
+			 }
+		 TUR = {
+			 military_access = ALB
+			 }
+		 TUR = {
+			 military_access = BUL
+			 }
+		 TUR = {
+			 military_access = SER
+			 }
+		 GRE = {
+			 military_access = TUR
+			 }
+		 GRE = {
+			 military_access = MTN
+			 }
+		 GRE = {
+			 military_access = ALB
+			 }
+		 GRE = {
+			 military_access = BUL
+			 }
+		 GRE = {
+			 military_access = SER
+			 }
+		 MTN = {
+			 military_access = TUR
+			 }
+		 MTN = {
+			 military_access = GRE
+			 }
+		 MTN = {
+			 military_access = ALB
+			 }
+		 MTN = {
+			 military_access = BUL
+			 }
+		 MTN = {
+			 military_access = SER
+			 }
+		 ALB = {
+			 military_access = TUR
+			 }
+		 ALB = {
+			 military_access = GRE
+			 }
+		 ALB = {
+			 military_access = MTN
+			 }
+		 ALB = {
+			 military_access = BUL
+			 }
+		 ALB = {
+			 military_access = SER
+			 }
+		 BUL = {
+			 military_access = TUR
+			 }
+		 BUL = {
+			 military_access = GRE
+			 }
+		 BUL = {
+			 military_access = MTN
+			 }
+		 BUL = {
+			 military_access = ALB
+			 }
+		 BUL = {
+			 military_access = SER
+			 }
+		 SER = {
+			 military_access = TUR
+			 }
+		 SER = {
+			 military_access = GRE
+			 }
+		 SER = {
+			 military_access = MTN
+			 }
+		 SER = {
+			 military_access = ALB
+			 }
+		 SER = {
+			 military_access = BUL
+			 }
+		 }
+	}
 
-		major = yes
-		
-		is_triggered_only = yes
-
-		fire_only_once = yes
-
-		title = "TURE5"
-		desc = "desc_TURE5"
-		picture = "TURP5"
-
-		option = {
-			name = "opta_TURE5"
-			ai_chance = { factor = 100 }
-#			TUR = { manpower = 20 }
-#			MTN = { manpower = 20 }
-#			SER = { manpower = 20 }
-#			ROM = { manpower = 20 }
-			MTN = { country_event = 100332 }
-			BUL = { country_event = 100332 }
-			TUR = { country_event = 100333 }
-			MTN = { leave_alliance = SER } 
-			BUL = { leave_alliance = SER }
-			TUR = { set_country_flag = turkey_reg }
-			BUL = { end_war = HJZ }
-			BUL = { end_war = ASR }
-			BUL = { end_war = YEM }
-			SER = { end_war = HJZ }
-			SER = { end_war = ASR }
-			SER = { end_war = YEM }
-			MTN = { end_war = HJZ }
-			MTN = { end_war = ASR }
-			MTN = { end_war = YEM }
-			GRE = { end_war = HJZ }
-			GRE = { end_war = ASR }
-			GRE = { end_war = YEM }
-			TUR = { military_access = GRE }  
-			TUR = { military_access = MTN }  
-			TUR = { military_access = ALB }  
-			TUR = { military_access = BUL }  
-			TUR = { military_access = SER }  
-			GRE = { military_access = TUR }  
-			GRE = { military_access = MTN }  
-			GRE = { military_access = ALB }  
-			GRE = { military_access = BUL }  
-			GRE = { military_access = SER }   
-			MTN = { military_access = TUR }  
-			MTN = { military_access = GRE }  
-			MTN = { military_access = ALB }  
-			MTN = { military_access = BUL }  
-			MTN = { military_access = SER }   
-			ALB = { military_access = TUR }  
-			ALB = { military_access = GRE }  
-			ALB = { military_access = MTN }  
-			ALB = { military_access = BUL }  
-			ALB = { military_access = SER }   
-			BUL = { military_access = TUR }  
-			BUL = { military_access = GRE }  
-			BUL = { military_access = MTN }  
-			BUL = { military_access = ALB }  
-			BUL = { military_access = SER }    
-			SER = { military_access = TUR }  
-			SER = { military_access = GRE }  
-			SER = { military_access = MTN }  
-			SER = { military_access = ALB }  
-			SER = { military_access = BUL }  
-		}
-}
+#Treaty of London - End of Cleanup
 
 
-country_event = {
+ country_event = {
+	title = "MILACCESS2"
+	desc = "desc_MILACCESS2"
+	id = 100311
+	 
+	picture = "TURP5"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	trigger = {
+		 tag = SER
+		 exists = TUR
+		 exists = MTN
+		 exists = BUL
+		 exists = GRE
+		 SER = {
+			 has_country_flag = first_balkan_done
+			 }
+		 not = {
+			 SER = {
+				 has_country_flag = first_balkan_cleanup_done
+				 }
+			 }
+		 date = 1913.3.1
+		 }
+	option = {
+		 name = "opta_TURE4"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 TUR = {
+			 end_military_access = GRE
+			 }
+		 TUR = {
+			 end_military_access = MTN
+			 }
+		 TUR = {
+			 end_military_access = ALB
+			 }
+		 TUR = {
+			 end_military_access = BUL
+			 }
+		 TUR = {
+			 end_military_access = SER
+			 }
+		 GRE = {
+			 end_military_access = TUR
+			 }
+		 GRE = {
+			 end_military_access = MTN
+			 }
+		 GRE = {
+			 end_military_access = ALB
+			 }
+		 GRE = {
+			 end_military_access = BUL
+			 }
+		 GRE = {
+			 end_military_access = SER
+			 }
+		 MTN = {
+			 end_military_access = TUR
+			 }
+		 MTN = {
+			 end_military_access = GRE
+			 }
+		 MTN = {
+			 end_military_access = ALB
+			 }
+		 MTN = {
+			 end_military_access = BUL
+			 }
+		 MTN = {
+			 end_military_access = SER
+			 }
+		 ALB = {
+			 end_military_access = TUR
+			 }
+		 ALB = {
+			 end_military_access = GRE
+			 }
+		 ALB = {
+			 end_military_access = MTN
+			 }
+		 ALB = {
+			 end_military_access = BUL
+			 }
+		 ALB = {
+			 end_military_access = SER
+			 }
+		 BUL = {
+			 end_military_access = TUR
+			 }
+		 BUL = {
+			 end_military_access = GRE
+			 }
+		 BUL = {
+			 end_military_access = MTN
+			 }
+		 BUL = {
+			 end_military_access = ALB
+			 }
+		 BUL = {
+			 end_military_access = SER
+			 }
+		 SER = {
+			 end_military_access = TUR
+			 }
+		 SER = {
+			 end_military_access = GRE
+			 }
+		 SER = {
+			 end_military_access = MTN
+			 }
+		 SER = {
+			 end_military_access = ALB
+			 }
+		 SER = {
+			 end_military_access = BUL
+			 }
+		 SER = {
+			 set_country_flag = first_balkan_cleanup_done
+			 }
+		 }
+	}
 
-		id = 100332
-
-		is_triggered_only = yes
-
-		title = "TURE5"
-		desc = "desc_TURE5"
-		picture = "TURP5"
-
-		option = {
-			name = "opta_TURE5"
-			ai_chance = { factor = 100 }
-		}
-}
-
-country_event = {
-
-		id = 100333
-
-		is_triggered_only = yes
-
-		title = "TURE5"
-		desc = "desc_TURE5"
-		picture = "TURP5"
-
-		option = {
-			name = "opta_TURE5"
-			ai_chance = { factor = 100 }
-			4666 = { secede_province = BUL }
-			4613 = { secede_province = BUL }
-			4248 = { secede_province = BUL }
-			4313 = { secede_province = BUL }
-			4374 = { secede_province = BUL }
-			4434 = { secede_province = BUL }
-			4436 = { secede_province = BUL }
-			4498 = { secede_province = BUL }
-			4499 = { secede_province = BUL }
-			4497 = { secede_province = BUL }
-			4500 = { secede_province = BUL }
-			4556 = { secede_province = BUL }
-			4611 = { secede_province = BUL }
-			4612 = { secede_province = BUL }
-			4557 = { secede_province = BUL }
-			4558 = { secede_province = BUL }
-			4559 = { secede_province = BUL }
-			4614 = { secede_province = BUL }
-			4240 = { secede_province = MTN }
-			4306 = { secede_province = MTN }
-			4367 = { secede_province = MTN }
-			4430 = { secede_province = MTN }
-			4368 = { secede_province = SER }
-			4495 = { secede_province = SER }
-			4176 = { secede_province = SER }
-			4431 = { secede_province = SER }
-			4432 = { secede_province = SER }
-			4496 = { secede_province = SER }
-			4555 = { secede_province = SER }
-			4609 = { secede_province = SER }
-			4610 = { secede_province = SER }
-			4664 = { secede_province = SER }
-			4241 = { secede_province = SER }
-			4307 = { secede_province = SER }
-			4718 = { secede_province = SER }
-			4665 = { secede_province = SER }
-			4719 = { secede_province = BUL }
-			4467 = { secede_province = BUL }
-			4720 = { secede_province = BUL }
-			4770 = { secede_province = ALB }
-			4771 = { secede_province = SER }
-			4819 = { secede_province = ALB }
-			4820 = { secede_province = SER }
-			4821 = { secede_province = BUL }
-			4870 = { secede_province = ALB }
-			4871 = { secede_province = ALB }
-			4872 = { secede_province = SER }
-			4918 = { secede_province = ALB }
-			4667 = { secede_province = BUL }
-			4663 = { secede_province = ALB } 
-			4494 = { secede_province = ALB }
-			4608 = { secede_province = ALB }
-			4717 = { secede_province = ALB } 
-			4554 = { secede_province = ALB } 
-			4608 = { secede_province = ALB } 
-			4716 = { secede_province = ALB } 
-			4769 = { secede_province = ALB } 
-			SER = { end_war = TUR }
-		}
-}
-
-country_event = {
-
-		id = 100334
-
-		is_triggered_only = yes
-
-		title = "balkgre"
-		desc = "desc_balkgre"
-		picture = "TURP5"
-
-		option = {
-			name = "opta_balkgre"
-		}
-}
-
-#--------------------------------------------------------------------------------------------------
-#----------------------------SER KOCKOUT------------------------------------
 #Treaty of London
 
-country_event = {
 
-		id = 100340
+ country_event = {
+	title = "TURE5"
+	desc = "desc_TURE5"
+	id = 100312
+	 
+	picture = "TURP5"
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_TURE5"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 }
+	}
 
-		major = yes
-		
-		is_triggered_only = yes
-
-		fire_only_once = yes
-
-		title = "TURE5"
-		desc = "desc_TURE5z"
-		picture = "TURP5"
-
-		option = {
-			name = "opta_TURE5z"
-			ai_chance = { factor = 100 }
-#			TUR = { manpower = 20 }
-#			MTN = { manpower = 20 }
-#			SER = { manpower = 20 }
-#			ROM = { manpower = 20 }
-			MTN = { country_event = 100342 }
-			BUL = { country_event = 100342 }
-			TUR = { country_event = 100343 }
-			TUR = { country_event = 100344 }
-			MTN = { leave_alliance = SER } 
-			BUL = { leave_alliance = SER }
-			TUR = { set_country_flag = turkey_reg }
-			BUL = { end_war = HJZ }
-			BUL = { end_war = ASR }
-			BUL = { end_war = YEM }
-			SER = { end_war = HJZ }
-			SER = { end_war = ASR }
-			SER = { end_war = YEM }
-			MTN = { end_war = HJZ }
-			MTN = { end_war = ASR }
-			MTN = { end_war = YEM }
-			GRE = { end_war = HJZ }
-			GRE = { end_war = ASR }
-			GRE = { end_war = YEM }
-			TUR = { military_access = GRE }  
-			TUR = { military_access = MTN }  
-			TUR = { military_access = ALB }  
-			TUR = { military_access = BUL }  
-			TUR = { military_access = SER }  
-			GRE = { military_access = TUR }  
-			GRE = { military_access = MTN }  
-			GRE = { military_access = ALB }  
-			GRE = { military_access = BUL }  
-			GRE = { military_access = SER }   
-			MTN = { military_access = TUR }  
-			MTN = { military_access = GRE }  
-			MTN = { military_access = ALB }  
-			MTN = { military_access = BUL }  
-			MTN = { military_access = SER }   
-			ALB = { military_access = TUR }  
-			ALB = { military_access = GRE }  
-			ALB = { military_access = MTN }  
-			ALB = { military_access = BUL }  
-			ALB = { military_access = SER }   
-			BUL = { military_access = TUR }  
-			BUL = { military_access = GRE }  
-			BUL = { military_access = MTN }  
-			BUL = { military_access = ALB }  
-			BUL = { military_access = SER }    
-			SER = { military_access = TUR }  
-			SER = { military_access = GRE }  
-			SER = { military_access = MTN }  
-			SER = { military_access = ALB }  
-			SER = { military_access = BUL } 
-			SER = { end_war = TUR } 
-		}
-}
+#Treaty of London
 
 
-country_event = {
+ country_event = {
+	title = "TURE5"
+	desc = "desc_TURE5"
+	id = 100313
+	 
+	picture = "TURP5"
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_TURE5"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 4240 = {
+			 secede_province = MTN
+			 }
+		 4306 = {
+			 secede_province = MTN
+			 }
+		 4367 = {
+			 secede_province = MTN
+			 }
+		 4430 = {
+			 secede_province = MTN
+			 }
+		 4368 = {
+			 secede_province = SER
+			 }
+		 4495 = {
+			 secede_province = SER
+			 }
+		 4176 = {
+			 secede_province = SER
+			 }
+		 4431 = {
+			 secede_province = SER
+			 }
+		 4432 = {
+			 secede_province = SER
+			 }
+		 4496 = {
+			 secede_province = SER
+			 }
+		 4555 = {
+			 secede_province = SER
+			 }
+		 4609 = {
+			 secede_province = SER
+			 }
+		 4610 = {
+			 secede_province = SER
+			 }
+		 4664 = {
+			 secede_province = SER
+			 }
+		 4241 = {
+			 secede_province = SER
+			 }
+		 4307 = {
+			 secede_province = SER
+			 }
+		 4718 = {
+			 secede_province = GRE
+			 }
+		 4665 = {
+			 secede_province = GRE
+			 }
+		 4719 = {
+			 secede_province = GRE
+			 }
+		 4467 = {
+			 secede_province = GRE
+			 }
+		 4720 = {
+			 secede_province = GRE
+			 }
+		 4770 = {
+			 secede_province = GRE
+			 }
+		 4771 = {
+			 secede_province = GRE
+			 }
+		 4819 = {
+			 secede_province = GRE
+			 }
+		 4820 = {
+			 secede_province = GRE
+			 }
+		 4821 = {
+			 secede_province = GRE
+			 }
+		 4870 = {
+			 secede_province = GRE
+			 }
+		 4871 = {
+			 secede_province = GRE
+			 }
+		 4872 = {
+			 secede_province = GRE
+			 }
+		 4918 = {
+			 secede_province = GRE
+			 }
+		 4667 = {
+			 secede_province = GRE
+			 }
+		 4663 = {
+			 secede_province = ALB
+			 }
+		 4494 = {
+			 secede_province = ALB
+			 }
+		 4608 = {
+			 secede_province = ALB
+			 }
+		 4717 = {
+			 secede_province = ALB
+			 }
+		 4554 = {
+			 secede_province = ALB
+			 }
+		 4608 = {
+			 secede_province = ALB
+			 }
+		 4716 = {
+			 secede_province = ALB
+			 }
+		 4769 = {
+			 secede_province = ALB
+			 }
+		 SER = {
+			 end_war = TUR
+			 }
+		 }
+	}
 
-		id = 100342
+#Bulgaria has Capitulated!
 
-		is_triggered_only = yes
 
-		title = "TURE5"
-		desc = "desc_TURE5z"
-		picture = "TURP5"
+ country_event = {
+	title = "balkbul"
+	desc = "desc_balkbul"
+	id = 100314
+	 
+	picture = "TURP5"
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_balkbul"
+		 }
+	}
 
-		option = {
-			name = "opta_TURE5z"
-			ai_chance = { factor = 100 }
-		}
-}
+#Treaty of London
 
-country_event = {
 
-		id = 100343
+ country_event = {
+	title = "TURE5"
+	desc = "desc_TURE5"
+	id = 100320
+	 
+	picture = "TURP5"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	major = yes
+	 
+	option = {
+		 name = "opta_TURE5"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 MTN = {
+			 country_event = 100322
+			 }
+		 GRE = {
+			 country_event = 100322
+			 }
+		 TUR = {
+			 country_event = 100323
+			 }
+		 GRE = {
+			 leave_alliance = SER
+			 }
+		 BUL = {
+			 leave_alliance = SER
+			 }
+		 TUR = {
+			 set_country_flag = turkey_reg
+			 }
+		 BUL = {
+			 end_war = HJZ
+			 }
+		 BUL = {
+			 end_war = ASR
+			 }
+		 BUL = {
+			 end_war = YEM
+			 }
+		 SER = {
+			 end_war = HJZ
+			 }
+		 SER = {
+			 end_war = ASR
+			 }
+		 SER = {
+			 end_war = YEM
+			 }
+		 MTN = {
+			 end_war = HJZ
+			 }
+		 MTN = {
+			 end_war = ASR
+			 }
+		 MTN = {
+			 end_war = YEM
+			 }
+		 GRE = {
+			 end_war = HJZ
+			 }
+		 GRE = {
+			 end_war = ASR
+			 }
+		 GRE = {
+			 end_war = YEM
+			 }
+		 TUR = {
+			 military_access = GRE
+			 }
+		 TUR = {
+			 military_access = MTN
+			 }
+		 TUR = {
+			 military_access = ALB
+			 }
+		 TUR = {
+			 military_access = BUL
+			 }
+		 TUR = {
+			 military_access = SER
+			 }
+		 GRE = {
+			 military_access = TUR
+			 }
+		 GRE = {
+			 military_access = MTN
+			 }
+		 GRE = {
+			 military_access = ALB
+			 }
+		 GRE = {
+			 military_access = BUL
+			 }
+		 GRE = {
+			 military_access = SER
+			 }
+		 MTN = {
+			 military_access = TUR
+			 }
+		 MTN = {
+			 military_access = GRE
+			 }
+		 MTN = {
+			 military_access = ALB
+			 }
+		 MTN = {
+			 military_access = BUL
+			 }
+		 MTN = {
+			 military_access = SER
+			 }
+		 ALB = {
+			 military_access = TUR
+			 }
+		 ALB = {
+			 military_access = GRE
+			 }
+		 ALB = {
+			 military_access = MTN
+			 }
+		 ALB = {
+			 military_access = BUL
+			 }
+		 ALB = {
+			 military_access = SER
+			 }
+		 BUL = {
+			 military_access = TUR
+			 }
+		 BUL = {
+			 military_access = GRE
+			 }
+		 BUL = {
+			 military_access = MTN
+			 }
+		 BUL = {
+			 military_access = ALB
+			 }
+		 BUL = {
+			 military_access = SER
+			 }
+		 SER = {
+			 military_access = TUR
+			 }
+		 SER = {
+			 military_access = GRE
+			 }
+		 SER = {
+			 military_access = MTN
+			 }
+		 SER = {
+			 military_access = ALB
+			 }
+		 SER = {
+			 military_access = BUL
+			 }
+		 }
+	}
 
-		is_triggered_only = yes
+#Treaty of London
 
-		title = "TURE5"
-		desc = "desc_TURE5z"
-		picture = "TURP5"
 
-		option = {
-			name = "opta_TURE5z"
-			ai_chance = { factor = 100 }
-			SER = { end_war = TUR }
-		}
-}
+ country_event = {
+	title = "TURE5"
+	desc = "desc_TURE5"
+	id = 100322
+	 
+	picture = "TURP5"
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_TURE5"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 }
+	}
 
-country_event = {
+#Treaty of London
 
-		id = 100344
 
-		is_triggered_only = yes
+ country_event = {
+	title = "TURE5"
+	desc = "desc_TURE5"
+	id = 100323
+	 
+	picture = "TURP5"
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_TURE5"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 4666 = {
+			 secede_province = BUL
+			 }
+		 4613 = {
+			 secede_province = BUL
+			 }
+		 4248 = {
+			 secede_province = BUL
+			 }
+		 4313 = {
+			 secede_province = BUL
+			 }
+		 4374 = {
+			 secede_province = BUL
+			 }
+		 4434 = {
+			 secede_province = BUL
+			 }
+		 4436 = {
+			 secede_province = BUL
+			 }
+		 4498 = {
+			 secede_province = BUL
+			 }
+		 4499 = {
+			 secede_province = BUL
+			 }
+		 4497 = {
+			 secede_province = BUL
+			 }
+		 4500 = {
+			 secede_province = BUL
+			 }
+		 4556 = {
+			 secede_province = BUL
+			 }
+		 4611 = {
+			 secede_province = BUL
+			 }
+		 4612 = {
+			 secede_province = BUL
+			 }
+		 4557 = {
+			 secede_province = BUL
+			 }
+		 4558 = {
+			 secede_province = BUL
+			 }
+		 4559 = {
+			 secede_province = BUL
+			 }
+		 4614 = {
+			 secede_province = BUL
+			 }
+		 4240 = {
+			 secede_province = SER
+			 }
+		 4306 = {
+			 secede_province = SER
+			 }
+		 4367 = {
+			 secede_province = SER
+			 }
+		 4430 = {
+			 secede_province = SER
+			 }
+		 4368 = {
+			 secede_province = SER
+			 }
+		 4495 = {
+			 secede_province = SER
+			 }
+		 4176 = {
+			 secede_province = SER
+			 }
+		 4431 = {
+			 secede_province = SER
+			 }
+		 4432 = {
+			 secede_province = SER
+			 }
+		 4496 = {
+			 secede_province = SER
+			 }
+		 4555 = {
+			 secede_province = SER
+			 }
+		 4609 = {
+			 secede_province = SER
+			 }
+		 4610 = {
+			 secede_province = SER
+			 }
+		 4664 = {
+			 secede_province = SER
+			 }
+		 4241 = {
+			 secede_province = SER
+			 }
+		 4307 = {
+			 secede_province = SER
+			 }
+		 4718 = {
+			 secede_province = GRE
+			 }
+		 4665 = {
+			 secede_province = GRE
+			 }
+		 4719 = {
+			 secede_province = GRE
+			 }
+		 4467 = {
+			 secede_province = GRE
+			 }
+		 4720 = {
+			 secede_province = GRE
+			 }
+		 4770 = {
+			 secede_province = GRE
+			 }
+		 4771 = {
+			 secede_province = GRE
+			 }
+		 4819 = {
+			 secede_province = GRE
+			 }
+		 4820 = {
+			 secede_province = GRE
+			 }
+		 4821 = {
+			 secede_province = GRE
+			 }
+		 4870 = {
+			 secede_province = GRE
+			 }
+		 4871 = {
+			 secede_province = GRE
+			 }
+		 4872 = {
+			 secede_province = GRE
+			 }
+		 4918 = {
+			 secede_province = GRE
+			 }
+		 4667 = {
+			 secede_province = GRE
+			 }
+		 4663 = {
+			 secede_province = ALB
+			 }
+		 4494 = {
+			 secede_province = ALB
+			 }
+		 4608 = {
+			 secede_province = ALB
+			 }
+		 4717 = {
+			 secede_province = ALB
+			 }
+		 4554 = {
+			 secede_province = ALB
+			 }
+		 4608 = {
+			 secede_province = ALB
+			 }
+		 4716 = {
+			 secede_province = ALB
+			 }
+		 4769 = {
+			 secede_province = ALB
+			 }
+		 SER = {
+			 end_war = TUR
+			 }
+		 }
+	}
 
-		title = "balkserb"
-		desc = "desc_balkserb"
-		picture = "TURP5"
+#Montenegro has Capitulated!
 
-		option = {
-			name = "opta_balkserb"
-			ai_chance = { factor = 100 }
-		}
-	
-}
+
+ country_event = {
+	title = "balkmtn"
+	desc = "desc_balkmtn"
+	id = 100324
+	 
+	picture = "TURP5"
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_balkmtn"
+		 }
+	}
+
+#Treaty of London
+
+
+ country_event = {
+	title = "TURE5"
+	desc = "desc_TURE5"
+	id = 100330
+	 
+	picture = "TURP5"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	major = yes
+	 
+	option = {
+		 name = "opta_TURE5"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 MTN = {
+			 country_event = 100332
+			 }
+		 BUL = {
+			 country_event = 100332
+			 }
+		 TUR = {
+			 country_event = 100333
+			 }
+		 MTN = {
+			 leave_alliance = SER
+			 }
+		 BUL = {
+			 leave_alliance = SER
+			 }
+		 TUR = {
+			 set_country_flag = turkey_reg
+			 }
+		 BUL = {
+			 end_war = HJZ
+			 }
+		 BUL = {
+			 end_war = ASR
+			 }
+		 BUL = {
+			 end_war = YEM
+			 }
+		 SER = {
+			 end_war = HJZ
+			 }
+		 SER = {
+			 end_war = ASR
+			 }
+		 SER = {
+			 end_war = YEM
+			 }
+		 MTN = {
+			 end_war = HJZ
+			 }
+		 MTN = {
+			 end_war = ASR
+			 }
+		 MTN = {
+			 end_war = YEM
+			 }
+		 GRE = {
+			 end_war = HJZ
+			 }
+		 GRE = {
+			 end_war = ASR
+			 }
+		 GRE = {
+			 end_war = YEM
+			 }
+		 TUR = {
+			 military_access = GRE
+			 }
+		 TUR = {
+			 military_access = MTN
+			 }
+		 TUR = {
+			 military_access = ALB
+			 }
+		 TUR = {
+			 military_access = BUL
+			 }
+		 TUR = {
+			 military_access = SER
+			 }
+		 GRE = {
+			 military_access = TUR
+			 }
+		 GRE = {
+			 military_access = MTN
+			 }
+		 GRE = {
+			 military_access = ALB
+			 }
+		 GRE = {
+			 military_access = BUL
+			 }
+		 GRE = {
+			 military_access = SER
+			 }
+		 MTN = {
+			 military_access = TUR
+			 }
+		 MTN = {
+			 military_access = GRE
+			 }
+		 MTN = {
+			 military_access = ALB
+			 }
+		 MTN = {
+			 military_access = BUL
+			 }
+		 MTN = {
+			 military_access = SER
+			 }
+		 ALB = {
+			 military_access = TUR
+			 }
+		 ALB = {
+			 military_access = GRE
+			 }
+		 ALB = {
+			 military_access = MTN
+			 }
+		 ALB = {
+			 military_access = BUL
+			 }
+		 ALB = {
+			 military_access = SER
+			 }
+		 BUL = {
+			 military_access = TUR
+			 }
+		 BUL = {
+			 military_access = GRE
+			 }
+		 BUL = {
+			 military_access = MTN
+			 }
+		 BUL = {
+			 military_access = ALB
+			 }
+		 BUL = {
+			 military_access = SER
+			 }
+		 SER = {
+			 military_access = TUR
+			 }
+		 SER = {
+			 military_access = GRE
+			 }
+		 SER = {
+			 military_access = MTN
+			 }
+		 SER = {
+			 military_access = ALB
+			 }
+		 SER = {
+			 military_access = BUL
+			 }
+		 }
+	}
+
+#Treaty of London
+
+
+ country_event = {
+	title = "TURE5"
+	desc = "desc_TURE5"
+	id = 100332
+	 
+	picture = "TURP5"
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_TURE5"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 }
+	}
+
+#Treaty of London
+
+
+ country_event = {
+	title = "TURE5"
+	desc = "desc_TURE5"
+	id = 100333
+	 
+	picture = "TURP5"
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_TURE5"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 4666 = {
+			 secede_province = BUL
+			 }
+		 4613 = {
+			 secede_province = BUL
+			 }
+		 4248 = {
+			 secede_province = BUL
+			 }
+		 4313 = {
+			 secede_province = BUL
+			 }
+		 4374 = {
+			 secede_province = BUL
+			 }
+		 4434 = {
+			 secede_province = BUL
+			 }
+		 4436 = {
+			 secede_province = BUL
+			 }
+		 4498 = {
+			 secede_province = BUL
+			 }
+		 4499 = {
+			 secede_province = BUL
+			 }
+		 4497 = {
+			 secede_province = BUL
+			 }
+		 4500 = {
+			 secede_province = BUL
+			 }
+		 4556 = {
+			 secede_province = BUL
+			 }
+		 4611 = {
+			 secede_province = BUL
+			 }
+		 4612 = {
+			 secede_province = BUL
+			 }
+		 4557 = {
+			 secede_province = BUL
+			 }
+		 4558 = {
+			 secede_province = BUL
+			 }
+		 4559 = {
+			 secede_province = BUL
+			 }
+		 4614 = {
+			 secede_province = BUL
+			 }
+		 4240 = {
+			 secede_province = MTN
+			 }
+		 4306 = {
+			 secede_province = MTN
+			 }
+		 4367 = {
+			 secede_province = MTN
+			 }
+		 4430 = {
+			 secede_province = MTN
+			 }
+		 4368 = {
+			 secede_province = SER
+			 }
+		 4495 = {
+			 secede_province = SER
+			 }
+		 4176 = {
+			 secede_province = SER
+			 }
+		 4431 = {
+			 secede_province = SER
+			 }
+		 4432 = {
+			 secede_province = SER
+			 }
+		 4496 = {
+			 secede_province = SER
+			 }
+		 4555 = {
+			 secede_province = SER
+			 }
+		 4609 = {
+			 secede_province = SER
+			 }
+		 4610 = {
+			 secede_province = SER
+			 }
+		 4664 = {
+			 secede_province = SER
+			 }
+		 4241 = {
+			 secede_province = SER
+			 }
+		 4307 = {
+			 secede_province = SER
+			 }
+		 4718 = {
+			 secede_province = SER
+			 }
+		 4665 = {
+			 secede_province = SER
+			 }
+		 4719 = {
+			 secede_province = BUL
+			 }
+		 4467 = {
+			 secede_province = BUL
+			 }
+		 4720 = {
+			 secede_province = BUL
+			 }
+		 4770 = {
+			 secede_province = ALB
+			 }
+		 4771 = {
+			 secede_province = SER
+			 }
+		 4819 = {
+			 secede_province = ALB
+			 }
+		 4820 = {
+			 secede_province = SER
+			 }
+		 4821 = {
+			 secede_province = BUL
+			 }
+		 4870 = {
+			 secede_province = ALB
+			 }
+		 4871 = {
+			 secede_province = ALB
+			 }
+		 4872 = {
+			 secede_province = SER
+			 }
+		 4918 = {
+			 secede_province = ALB
+			 }
+		 4667 = {
+			 secede_province = BUL
+			 }
+		 4663 = {
+			 secede_province = ALB
+			 }
+		 4494 = {
+			 secede_province = ALB
+			 }
+		 4608 = {
+			 secede_province = ALB
+			 }
+		 4717 = {
+			 secede_province = ALB
+			 }
+		 4554 = {
+			 secede_province = ALB
+			 }
+		 4608 = {
+			 secede_province = ALB
+			 }
+		 4716 = {
+			 secede_province = ALB
+			 }
+		 4769 = {
+			 secede_province = ALB
+			 }
+		 SER = {
+			 end_war = TUR
+			 }
+		 }
+	}
+
+#Greece has Capitulated!
+
+
+ country_event = {
+	title = "balkgre"
+	desc = "desc_balkgre"
+	id = 100334
+	 
+	picture = "TURP5"
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_balkgre"
+		 }
+	}
+
+#Treaty of London
+
+
+ country_event = {
+	title = "TURE5"
+	desc = "desc_TURE5z"
+	id = 100340
+	 
+	picture = "TURP5"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	major = yes
+	 
+	option = {
+		 name = "opta_TURE5z"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 MTN = {
+			 country_event = 100342
+			 }
+		 BUL = {
+			 country_event = 100342
+			 }
+		 TUR = {
+			 country_event = 100343
+			 }
+		 TUR = {
+			 country_event = 100344
+			 }
+		 MTN = {
+			 leave_alliance = SER
+			 }
+		 BUL = {
+			 leave_alliance = SER
+			 }
+		 TUR = {
+			 set_country_flag = turkey_reg
+			 }
+		 BUL = {
+			 end_war = HJZ
+			 }
+		 BUL = {
+			 end_war = ASR
+			 }
+		 BUL = {
+			 end_war = YEM
+			 }
+		 SER = {
+			 end_war = HJZ
+			 }
+		 SER = {
+			 end_war = ASR
+			 }
+		 SER = {
+			 end_war = YEM
+			 }
+		 MTN = {
+			 end_war = HJZ
+			 }
+		 MTN = {
+			 end_war = ASR
+			 }
+		 MTN = {
+			 end_war = YEM
+			 }
+		 GRE = {
+			 end_war = HJZ
+			 }
+		 GRE = {
+			 end_war = ASR
+			 }
+		 GRE = {
+			 end_war = YEM
+			 }
+		 TUR = {
+			 military_access = GRE
+			 }
+		 TUR = {
+			 military_access = MTN
+			 }
+		 TUR = {
+			 military_access = ALB
+			 }
+		 TUR = {
+			 military_access = BUL
+			 }
+		 TUR = {
+			 military_access = SER
+			 }
+		 GRE = {
+			 military_access = TUR
+			 }
+		 GRE = {
+			 military_access = MTN
+			 }
+		 GRE = {
+			 military_access = ALB
+			 }
+		 GRE = {
+			 military_access = BUL
+			 }
+		 GRE = {
+			 military_access = SER
+			 }
+		 MTN = {
+			 military_access = TUR
+			 }
+		 MTN = {
+			 military_access = GRE
+			 }
+		 MTN = {
+			 military_access = ALB
+			 }
+		 MTN = {
+			 military_access = BUL
+			 }
+		 MTN = {
+			 military_access = SER
+			 }
+		 ALB = {
+			 military_access = TUR
+			 }
+		 ALB = {
+			 military_access = GRE
+			 }
+		 ALB = {
+			 military_access = MTN
+			 }
+		 ALB = {
+			 military_access = BUL
+			 }
+		 ALB = {
+			 military_access = SER
+			 }
+		 BUL = {
+			 military_access = TUR
+			 }
+		 BUL = {
+			 military_access = GRE
+			 }
+		 BUL = {
+			 military_access = MTN
+			 }
+		 BUL = {
+			 military_access = ALB
+			 }
+		 BUL = {
+			 military_access = SER
+			 }
+		 SER = {
+			 military_access = TUR
+			 }
+		 SER = {
+			 military_access = GRE
+			 }
+		 SER = {
+			 military_access = MTN
+			 }
+		 SER = {
+			 military_access = ALB
+			 }
+		 SER = {
+			 military_access = BUL
+			 }
+		 SER = {
+			 end_war = TUR
+			 }
+		 }
+	}
+
+#Treaty of London
+
+
+ country_event = {
+	title = "TURE5"
+	desc = "desc_TURE5z"
+	id = 100342
+	 
+	picture = "TURP5"
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_TURE5z"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 }
+	}
+
+#Treaty of London
+
+
+ country_event = {
+	title = "TURE5"
+	desc = "desc_TURE5z"
+	id = 100343
+	 
+	picture = "TURP5"
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_TURE5z"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 SER = {
+			 end_war = TUR
+			 }
+		 }
+	}
+
+#Serbia has Capitulated!
+
+
+ country_event = {
+	title = "balkserb"
+	desc = "desc_balkserb"
+	id = 100344
+	 
+	picture = "TURP5"
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_balkserb"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 }
+	}
+

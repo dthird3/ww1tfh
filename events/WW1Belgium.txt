@@ -1,67 +1,113 @@
+#Charles de Broqueville appointed Prime Minister
 
-country_event = {
 
-		id = 100905
+ country_event = {
+	title = "BELE1"
+	desc = "desc_BELE1"
+	id = 100905
+	 
+	picture = "BELP1"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	trigger = {
+		 tag = BEL
+		 BEL = {
+			 head_of_government = 70181
+			 }
+		 date = 1911.6.17
+		 }
+	option = {
+		 name = "opta_BELE1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 BEL = {
+			 head_of_government = 70166
+			 }
+		 }
+	}
 
-		trigger = {
-			tag = BEL
-			BEL = { head_of_government = 70181 }
-			date = 1911.6.17
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
-		
-		fire_only_once = yes
+#Atrocities commited in Belgium
 
-		title = "BELE1"
-		desc = "desc_BELE1"
-		picture = "BELP1"
+# Arlon
+# Dinant
+# Bruxelles
+# Namur
 
-		option = {
-			name = "opta_BELE1"
-			ai_chance = { factor = 100 }
-			BEL = { head_of_government = 70166 }
-		}
-	
-}
+ country_event = {
+	title = "EVT1914_2008002_NAME"
+	desc = "EVT1914_2008002_DESC"
+	id = 100506
+	 
+	picture = "Louvain1915"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 months = 3
+		 }
+	major = yes
+	 
+	trigger = {
+		 tag = BEL
+		 GER = {
+			 war_with = BEL
+			 }
+		 NOT = {
+			 GER = {
+				 has_country_flag = Atrocities
+				 }
+			 }
+		 or = {
+			 2489 = {
+				 controller = {
+					 faction = axis
+					 }
+				 }
+			 2428 = {
+				 controller = {
+					 faction = axis
+					 }
+				 }
+			 2311 = {
+				 controller = {
+					 faction = axis
+					 }
+				 }
+			 2369 = {
+				 controller = {
+					 faction = axis
+					 }
+				 }
+			 }
+		 }
+	option = {
+		 name = "EVT1914_2008002_ACTIONA"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 USA = {
+			 neutrality = -3
+			 }
+		 GER = {
+			 threat = {
+				 who = USA
+				 value = 1
+				 }
+			 }
+		 USA = {
+			 relation = {
+				 who = GER
+				 value = -10
+				 }
+			 }
+		 GER = {
+			 set_country_flag = Atrocities
+			 }
+		 }
+	}
 
-# War Atrocities in Belgium  ================================================================================================================================
-country_event = {
-
-		id = 100506
-
-		major = yes
-		
-		trigger = {
-			tag = BEL
-			GER = {	war_with = BEL }						
-			NOT = { GER = { has_country_flag = Atrocities }}
-			or = {
-			2489 = {controller = {faction = axis}}							# Arlon
-			2428 = {controller = {faction = axis}}							# Dinant
-			2311 = {controller = {faction = axis}}							# Bruxelles
-			2369 = {controller = {faction = axis}}							# Namur
-			}
-		}
-			
-		mean_time_to_happen = {								
-			months = 3
-		}
-		
-		fire_only_once = yes
-
-		title = "EVT1914_2008002_NAME"
-		desc = "EVT1914_2008002_DESC"
-		picture = "Louvain1915"
-
-		option = {
-			name = "EVT1914_2008002_ACTIONA"
-			ai_chance = { factor = 100 }
-			USA = { neutrality = -3 }
-			GER = {threat = { who = USA value = 1 }}
-			USA = {relation = { who = GER value = -10 }}
-			GER = {set_country_flag = Atrocities}
-		}
-}

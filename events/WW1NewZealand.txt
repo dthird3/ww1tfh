@@ -1,57 +1,66 @@
+#William Plunket Replaced!
 
-country_event = {
+# The Lord Islington
 
-		id = 100915
+ country_event = {
+	title = "NZLE1"
+	desc = "desc_NZLE1"
+	id = 100915
+	 
+	picture = "NZLP1"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	trigger = {
+		 tag = NZL
+		 NZL = {
+			 head_of_state = 999978
+			 }
+		 date = 1910.6.8
+		 }
+	option = {
+		 name = "opta_NZLE1"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 head_of_state = 999979
+		 remove_minister = 999978
+		 }
+	}
 
-		trigger = {
-			tag = NZL
-			NZL = { head_of_state = 999978 }
-			date = 1910.6.8
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
-		
-		fire_only_once = yes
+#The Lord Islington Replaced!
 
-		title = "NZLE1"
-		desc = "desc_NZLE1"
-		picture = "NZLP1"
+# Arthur Foljambe
 
-		option = {
-			name = "opta_NZLE1"
-			ai_chance = { factor = 100 }
-			head_of_state = 999979 # The Lord Islington
-			remove_minister  = 999978
-		}
-	
-}
-country_event = {
+ country_event = {
+	title = "NZLE2"
+	desc = "desc_NZLE2"
+	id = 100916
+	 
+	picture = "NZLP2"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	trigger = {
+		 tag = NZL
+		 NZL = {
+			 head_of_state = 999979
+			 }
+		 date = 1912.12.3
+		 }
+	option = {
+		 name = "opta_NZLE2"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 head_of_state = 215107
+		 remove_minister = 999979
+		 }
+	}
 
-		id = 100916
-
-		trigger = {
-			tag = NZL
-			NZL = { head_of_state = 999979 }
-			date = 1912.12.3
-		}
-		
-		mean_time_to_happen = {
-			days = 1
-		}
-		
-		fire_only_once = yes
-
-		title = "NZLE2"
-		desc = "desc_NZLE2"
-		picture = "NZLP2"
-
-		option = {
-			name = "opta_NZLE2"
-			ai_chance = { factor = 100 }
-			head_of_state = 215107 # Arthur Foljambe
-			remove_minister  = 999979
-		}
-	
-}
