@@ -224,7 +224,12 @@ end
 
 
 function P.DiploScore_CallAlly(voDiploScoreObj)
-	voDiploScoreObj.Score = 0
+
+	if voDiploScoreObj.Actor.Name == "HJZ" or voDiploScoreObj.Target.Name == "HJZ" or voDiploScoreObj.Actor.Name == "ASR" or voDiploScoreObj.Target.Name == "ASR" or voDiploScoreObj.Actor.Name == "YEM" or voDiploScoreObj.Target.Name == "YEM" then
+		voDiploScoreObj.Score = 0
+	else
+		voDiploScoreObj.Score = 200
+	end if
 	
 	return voDiploScoreObj.Score
 end
