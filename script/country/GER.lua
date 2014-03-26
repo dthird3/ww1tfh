@@ -289,4 +289,55 @@ function P.DiploScore_OfferTrade(voDiploScoreObj)
 	return voDiploScoreObj.Score
 end
 
+
+function P.ForeignMinister_CallAlly(voForeignMinisterData)
+	-- Make sure Germany is in the Axis and if not let default code run
+	if voForeignMinisterData.FactionName ~= "axis" then
+		return true
+	end
+	
+	-- Get a list of all your allies
+	local laAllies = {}
+
+	for loAllyTag in voForeignMinisterData.Country:GetAllies() do
+		local lbLoad = true
+		local loAllyCountry = loAllyTag:GetCountry()
+
+		-- Only call our allies and our puppets
+		if loAllyCountry:IsPuppet() then
+			if loAllyCountry:GetOverlord() ~= voForeignMinisterData.Tag then
+				lbLoad = false
+			end
+		end
+		
+		if lbLoad then
+			local loAlly = {
+				Name = tostring(loAllyTag),
+				Tag = loAllyTag,
+				Country = loAllyCountry,
+				Continent = loAllyCountry:GetActingCapitalLocation():GetContinent(),
+				Score = DiploScore_CallAlly(voForeignMinisterData.ministerAI, voForeignMinisterData.Tag, loAllyTag, loAllyTag, nil)
+			}
+
+			laAllies[loAlly.Name] = loAlly
+		end
+	end
+	
+	
+	-- Go through our Wars
+	for loTargetTag in voForeignMinisterData.Country:GetCurrentAtWarWith() do
+		if loTargetTag:IsValid() then
+			local lsTargetTag = tostring(loTargetTag)
+			
+			-- Call in all potential allies
+			for k, v in pairs(laAllies) do
+				-- Check to see if the two are already at war?
+						ForeignMinister_CallAlly.Execute_CallAlly(voForeignMinisterData.ministerAI, voForeignMinisterData.Tag, v.Tag, loTargetTag)
+			end
+		end
+	end
+	
+	return false
+end
+
 return AI_GER
