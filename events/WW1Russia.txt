@@ -1,5 +1,5 @@
-#Petrograd
 
+#Petrograd
 
  country_event = {
 	title = "RUSE2"
@@ -29,8 +29,8 @@
 		 }
 	}
 
-#Sikorsky Ilya Muromets
 
+#Sikorsky Ilya Muromets
 
  country_event = {
 	title = "RUSE3"
@@ -60,8 +60,8 @@
 		 }
 	}
 
-#Rasputin Murdered!
 
+#Rasputin Murdered!
 
  country_event = {
 	title = "rasp"
@@ -95,8 +95,8 @@
 		 }
 	}
 
-#Tsar Nicholas Abdicates!
 
+#Tsar Nicholas Abdicates!
 #Baku
 #Kyiv
 #Warsaw
@@ -586,17 +586,17 @@
 				 date = 1917.3.15
 				 OR = {
 					 NOT = {
-						 controls = 7307
-						 }
+						 controls = 7307 #Baki
+						}
 					 NOT = {
-						 controls = 2223
-						 }
+						 controls = 2223 #Kyiv
+						}
 					 NOT = {
-						 controls = 1928
-						 }
+						 controls = 1928 #Warszawa
+						}
 					 NOT = {
-						 controls = 1178
-						 }
+						 controls = 1178 #Riga
+						}
 					 }
 				 }
 			 AND = {
@@ -604,51 +604,51 @@
 				 OR = {
 					 AND = {
 						 NOT = {
-							 controls = 7307
-							 }
+							 controls = 7307 #Baki
+							}
 						 NOT = {
-							 controls = 2223
-							 }
+							 controls = 2223 #Kyiv
+							}
 						 }
 					 AND = {
 						 NOT = {
-							 controls = 7307
-							 }
+							 controls = 7307 #Baki
+							}
 						 NOT = {
-							 controls = 1928
-							 }
+							 controls = 1928 #Warszawa
+							}
 						 }
 					 AND = {
 						 NOT = {
-							 controls = 7307
-							 }
+							 controls = 7307 #Baki
+							}
 						 NOT = {
-							 controls = 1178
-							 }
+							 controls = 1178 #Riga
+							}
 						 }
 					 AND = {
 						 NOT = {
-							 controls = 2223
-							 }
+							 controls = 2223 #Kyiv
+							}
 						 NOT = {
-							 controls = 1928
-							 }
+							 controls = 1928 #Warszawa
+							}
 						 }
 					 AND = {
 						 NOT = {
-							 controls = 2223
-							 }
+							 controls = 2223 #Kyiv
+							}
 						 NOT = {
-							 controls = 1178
-							 }
+							 controls = 1178 #Riga
+							}
 						 }
 					 AND = {
 						 NOT = {
-							 controls = 1928
-							 }
+							 controls = 1928 #Warszawa
+							}
 						 NOT = {
-							 controls = 1178
-							 }
+							 controls = 1178 #Riga
+							}
 						 }
 					 }
 				 }
@@ -657,47 +657,47 @@
 				 OR = {
 					 AND = {
 						 NOT = {
-							 controls = 7307
-							 }
+							 controls = 7307 #Baki
+							}
 						 NOT = {
-							 controls = 2223
-							 }
+							 controls = 2223 #Kyiv
+							}
 						 NOT = {
-							 controls = 1928
-							 }
+							 controls = 1928 #Warszawa
+							}
 						 }
 					 AND = {
 						 NOT = {
-							 controls = 7307
-							 }
+							 controls = 7307 #Baki
+							}
 						 NOT = {
-							 controls = 2223
-							 }
+							 controls = 2223 #Kyiv
+							}
 						 NOT = {
-							 controls = 1178
-							 }
+							 controls = 1178 #Riga
+							}
 						 }
 					 AND = {
 						 NOT = {
-							 controls = 7307
-							 }
+							 controls = 7307 #Baki
+							}
 						 NOT = {
-							 controls = 1928
-							 }
+							 controls = 1928 #Warszawa
+							}
 						 NOT = {
-							 controls = 1178
-							 }
+							 controls = 1178 #Riga
+							}
 						 }
 					 AND = {
 						 NOT = {
-							 controls = 2223
-							 }
+							 controls = 2223 #Kyiv
+							}
 						 NOT = {
-							 controls = 1928
-							 }
+							 controls = 1928 #Warszawa
+							}
 						 NOT = {
-							 controls = 1178
-							 }
+							 controls = 1178 #Riga
+							}
 						 }
 					 }
 				 }
@@ -724,8 +724,8 @@
 		 }
 	}
 
-#Treaty of Brest-Litovsk
 
+#Treaty of Brest-Litovsk
 #Baku
 #Kyiv
 #Warsaw
@@ -1189,17 +1189,17 @@
 		 has_country_flag = bolsheviks
 		 OR = {
 			 NOT = {
-				 controls = 7307
-				 }
+				 controls = 7307 #Baki
+				}
 			 NOT = {
-				 controls = 2223
-				 }
+				 controls = 2223 #Kyiv
+				}
 			 NOT = {
-				 controls = 1928
-				 }
+				 controls = 1928 #Warszawa
+				}
 			 NOT = {
-				 controls = 1178
-				 }
+				 controls = 1178 #Riga
+				}
 			 }
 		 }
 	option = {
@@ -1496,8 +1496,8 @@
 		 }
 	}
 
-#Treaty of Brest-Litovsk
 
+#Treaty of Brest-Litovsk
 # USA response to Abdication or Russian defeat
 
  country_event = {
@@ -1815,27 +1815,12 @@
 		 }
 	}
 
+
 #Troops Head Home
 
-
  country_event = {
-	title = "Troops
-	 Head
-	 Home"
-	desc = "After
-	 the
-	 treaty
-	 of
-	 Brest-Litovsk,
-	 most
-	 soldiers
-	 simply
-	 abandoned
-	 their
-	 posts
-	 and
-	 went
-	 home"
+	title = "RUSE4"
+	desc = "desc_RUSE4"
 	id = 6
 	 
 	picture = "WARP1"
@@ -1847,8 +1832,7 @@
 	major = yes
 	 
 	option = {
-		 name = "Very
-		 well"
+		 name = "opta_RUSE4"
 		 ai_chance = {
 			 factor = 100
 			 }
@@ -1860,8 +1844,8 @@
 		 }
 	}
 
-#Russian Civil War
 
+#Russian Civil War
 
  country_event = {
 	title = "ruscivil"

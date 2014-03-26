@@ -1,646 +1,893 @@
-#Air_Reinforcements_Title
 
+######################### Initialisation Event to set countries Manpower and resource levels ###################
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "Air_Reinforcements_Title"
+	desc = "German_Airforce_Desc"
+	id = 100300
 	 
-	picture = "CHIPxhrar"
+	picture = "FokkerDVII"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 0
+		 }
+	trigger = {
+		 tag = USA
+		 date = 1918.3.20
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_GREAT"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 GER = {
+			supplies = 5000}
+		 GER = {
+			manpower = -450}
+		 GER = {
+			rare_materials = 2000}
+		 FRA = {
+			manpower = -350}
 		 }
 	}
 
-#American_Troops_Title
 
-# MP from 2 US Depot Divisions disbanded
+#############################  USA Reinforcements ########################
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "American_Troops_Title"
+	desc = "American_Troops_Desc"
+	id = 100301
 	 
-	picture = "CHIPxhrar"
+	picture = "USAP9"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 1
+		 }
+	trigger = {
+		 tag = FRA
+		 date = 1918.4.7
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_GREAT"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 FRA = {
+			load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_01_APR.txt"}
+		 FRA = {
+			manpower = 52}
 		 }
 	}
 
-#Air_Reinforcements_Title
+#Reinforcements Have Arrived
 
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "Air_Reinforcements_Title"
+	desc = "American_Airforce_Desc"
+	id = 100303
 	 
-	picture = "CHIPxhrar"
+	picture = "SpadVII"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 1
+		 }
+	trigger = {
+		 tag = FRA
+		 date = 1918.5.1
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_GREAT"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 FRA = {
+			load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_Air_01.txt"}
 		 }
 	}
 
-#American_Troops_Title
+#Reinforcements Have Arrived
 
-# MP from 1 US Depot Division disbanded
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "American_Troops_Title"
+	desc = "American_Troops_Desc"
+	id = 100305
 	 
-	picture = "CHIPxhrar"
+	picture = "USAP9"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 1
+		 }
+	trigger = {
+		 tag = FRA
+		 date = 1918.5.7
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_GREAT"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 FRA = {
+			load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_02_MAY.txt"}
+		 FRA = {
+			manpower = 26}
 		 }
 	}
 
-#American_Troops_Title
+#Reinforcements Have Arrived
 
-# MP from 1 US Depot Division disbanded
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "American_Troops_Title"
+	desc = "American_Troops_Desc"
+	id = 100309
 	 
-	picture = "CHIPxhrar"
+	picture = "USAP9"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 1
+		 }
+	trigger = {
+		 tag = FRA
+		 date = 1918.6.7
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_GREAT"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 FRA = {
+			load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_03_JUN.txt"}
+		 FRA = {
+			manpower = 26}
 		 }
 	}
 
-#Air_Reinforcements_Title
+#Reinforcements Have Arrived
 
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "Air_Reinforcements_Title"
+	desc = "American_Airforce_Desc"
+	id = 100307
 	 
-	picture = "CHIPxhrar"
+	picture = "SpadVII"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 1
+		 }
+	trigger = {
+		 tag = FRA
+		 date = 1918.7.1
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_GREAT"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 FRA = {
+			load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_Air_02.txt"}
 		 }
 	}
 
-#American_Troops_Title
+#Reinforcements Have Arrived
 
-# MP from 1 US Depot Division disbanded
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "American_Troops_Title"
+	desc = "American_Troops_Desc"
+	id = 100311
 	 
-	picture = "CHIPxhrar"
+	picture = "USAP9"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 1
+		 }
+	trigger = {
+		 tag = FRA
+		 date = 1918.7.7
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_GREAT"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 FRA = {
+			load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_04_JUL.txt"}
+		 FRA = {
+			manpower = 26}
 		 }
 	}
 
-#American_Troops_Title
+#Reinforcements Have Arrived
 
-# MP from 1 US Depot Division disbanded
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "American_Troops_Title"
+	desc = "American_Troops_Desc"
+	id = 100313
 	 
-	picture = "CHIPxhrar"
+	picture = "USAP9"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 1
+		 }
+	trigger = {
+		 tag = FRA
+		 date = 1918.8.7
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_GREAT"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 FRA = {
+			load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_05_AUG.txt"}
+		 FRA = {
+			manpower = 26}
 		 }
 	}
 
-#American_Troops_Title
+#Reinforcements Have Arrived
 
-# MP from 1 US Depot Division disbanded
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "American_Troops_Title"
+	desc = "American_Troops_Desc"
+	id = 100315
 	 
-	picture = "CHIPxhrar"
+	picture = "USAP9"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 1
+		 }
+	trigger = {
+		 tag = FRA
+		 date = 1918.9.1
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_GREAT"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 FRA = {
+			load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_06_SEP.txt"}
+		 FRA = {
+			manpower = 26}
 		 }
 	}
 
-#Air_Reinforcements_Title
+#Reinforcements Have Arrived
 
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "Air_Reinforcements_Title"
+	desc = "American_Airforce_Desc"
+	id = 100316
 	 
-	picture = "CHIPxhrar"
+	picture = "SpadVII"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 1
+		 }
+	trigger = {
+		 tag = FRA
+		 date = 1918.9.15
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_GREAT"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 FRA = {
+			load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_Air_03.txt"}
 		 }
 	}
 
-#American_Troops_Title
+#Reinforcements Have Arrived
 
-# MP from 1 US Depot Division disbanded
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "American_Troops_Title"
+	desc = "American_Troops_Desc"
+	id = 100317
 	 
-	picture = "CHIPxhrar"
+	picture = "USAP9"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 1
+		 }
+	trigger = {
+		 tag = FRA
+		 date = 1918.10.7
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_GREAT"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 FRA = {
+			load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_07_OCT.txt"}
+		 FRA = {
+			manpower = 26}
 		 }
 	}
 
-#American_Troops_Title
+#Reinforcements Have Arrived
 
-# MP from 1 US Depot Division disbanded
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "American_Troops_Title"
+	desc = "American_Troops_Desc"
+	id = 100319
 	 
-	picture = "CHIPxhrar"
+	picture = "USAP9"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 1
+		 }
+	trigger = {
+		 tag = FRA
+		 date = 1918.11.1
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_GREAT"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 FRA = {
+			load_oob = "scenarios/spring_offensive/USA_Reinforcements/USA_08_NOV.txt"}
+		 FRA = {
+			manpower = 26}
 		 }
 	}
 
-#Air_Reinforcements_Title
 
+#############################  FRENCH Reinforcements ########################
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "Air_Reinforcements_Title"
+	desc = "French_Airforce_Desc"
+	id = 100330
 	 
-	picture = "CHIPxhrar"
+	picture = "Neiuport"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 1
+		 }
+	trigger = {
+		 tag = FRA
+		 date = 1918.5.1
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_GREAT"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 FRA = {
+			load_oob = "scenarios/spring_offensive/FRA_Reinforcements/FRA_Air_01.txt"}
 		 }
 	}
 
-#Air_Reinforcements_Title
+#Reinforcements Have Arrived
 
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "Air_Reinforcements_Title"
+	desc = "French_Airforce_Desc"
+	id = 100332
 	 
-	picture = "CHIPxhrar"
+	picture = "Neiuport"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 1
+		 }
+	trigger = {
+		 tag = FRA
+		 date = 1918.6.1
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_GREAT"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 FRA = {
+			load_oob = "scenarios/spring_offensive/FRA_Reinforcements/FRA_Air_02.txt"}
 		 }
 	}
 
-#Air_Reinforcements_Title
+#Reinforcements Have Arrived
 
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "Air_Reinforcements_Title"
+	desc = "French_Airforce_Desc"
+	id = 100334
 	 
-	picture = "CHIPxhrar"
+	picture = "Neiuport"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 1
+		 }
+	trigger = {
+		 tag = FRA
+		 date = 1918.7.1
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_GREAT"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 FRA = {
+			load_oob = "scenarios/spring_offensive/FRA_Reinforcements/FRA_Air_03.txt"}
 		 }
 	}
 
-#Air_Reinforcements_Title
+#Reinforcements Have Arrived
 
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "Air_Reinforcements_Title"
+	desc = "French_Airforce_Desc"
+	id = 100336
 	 
-	picture = "CHIPxhrar"
+	picture = "Neiuport"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 1
+		 }
+	trigger = {
+		 tag = FRA
+		 date = 1918.8.1
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_GREAT"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 FRA = {
+			load_oob = "scenarios/spring_offensive/FRA_Reinforcements/FRA_Air_04.txt"}
 		 }
 	}
 
-#Disaster_Title
+#Disaster!
 
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "Disaster_Title"
+	desc = "Boyau_Dies_Desc"
+	id = 100338
 	 
-	picture = "CHIPxhrar"
+	picture = "French-crash"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 0
+		 }
+	trigger = {
+		 tag = FRA
+		 date = 1918.9.16
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_DAMN"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 kill_leader = 5600
 		 }
 	}
 
-#Air_Reinforcements_Title
 
+#############################  ENGLISH Reinforcements ########################
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "Air_Reinforcements_Title"
+	desc = "British_Airforce_Desc"
+	id = 100340
 	 
-	picture = "CHIPxhrar"
+	picture = "Sopwith"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 0
+		 }
+	trigger = {
+		 tag = FRA
+		 date = 1918.4.15
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_GREAT"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 FRA = {
+			load_oob = "scenarios/spring_offensive/ENG_Reinforcements/ENG_Air_01.txt"}
 		 }
 	}
 
-#Air_Reinforcements_Title
+#Reinforcements Have Arrived
 
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "Air_Reinforcements_Title"
+	desc = "British_Airforce_Desc"
+	id = 100342
 	 
-	picture = "CHIPxhrar"
+	picture = "Sopwith"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 0
+		 }
+	trigger = {
+		 tag = FRA
+		 date = 1918.5.15
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_GREAT"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 FRA = {
+			load_oob = "scenarios/spring_offensive/ENG_Reinforcements/ENG_Air_02.txt"}
 		 }
 	}
 
-#Disaster_Title
+#Disaster!
 
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "Disaster_Title"
+	desc = "Little_Dies_Desc"
+	id = 100343
 	 
-	picture = "CHIPxhrar"
+	picture = "Camel-crash"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 0
+		 }
+	trigger = {
+		 tag = FRA
+		 date = 1918.5.27
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_DAMN"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 AST = {
+			kill_leader = 225112}
 		 }
 	}
 
-#Air_Reinforcements_Title
+#Reinforcements Have Arrived
 
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "Air_Reinforcements_Title"
+	desc = "British_Airforce_Desc"
+	id = 100344
 	 
-	picture = "CHIPxhrar"
+	picture = "Sopwith"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 0
+		 }
+	trigger = {
+		 tag = FRA
+		 date = 1918.6.15
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_GREAT"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 FRA = {
+			load_oob = "scenarios/spring_offensive/ENG_Reinforcements/ENG_Air_03.txt"}
 		 }
 	}
 
-#Disaster_Title
+#Disaster!
 
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "Disaster_Title"
+	desc = "Mccudden_Dies_Desc"
+	id = 100345
 	 
-	picture = "CHIPxhrar"
+	picture = "Camel-crash"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 0
+		 }
+	trigger = {
+		 tag = FRA
+		 date = 1918.7.9
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_DAMN"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 ENG = {
+			kill_leader = 1270002}
 		 }
 	}
 
-#Air_Reinforcements_Title
+#Reinforcements Have Arrived
 
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "Air_Reinforcements_Title"
+	desc = "British_Airforce_Desc"
+	id = 100346
 	 
-	picture = "CHIPxhrar"
+	picture = "Sopwith"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 0
+		 }
+	trigger = {
+		 tag = FRA
+		 date = 1918.7.15
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_GREAT"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 FRA = {
+			load_oob = "scenarios/spring_offensive/ENG_Reinforcements/ENG_Air_04.txt"}
 		 }
 	}
 
-#Disaster_Title
+#Disaster!
 
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "Disaster_Title"
+	desc = "Mannock_Dies_Desc"
+	id = 100347
 	 
-	picture = "CHIPxhrar"
+	picture = "Camel-crash"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 0
+		 }
+	trigger = {
+		 tag = FRA
+		 date = 1918.7.18
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_DAMN"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 ENG = {
+			kill_leader = 10972}
 		 }
 	}
 
-#Disaster_Title
 
+#############################  ITALIAN Reinforcements ########################
+#############################  GERMAN Events ########################
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "Disaster_Title"
+	desc = "Richthofen_Dies_Desc"
+	id = 100360
 	 
-	picture = "CHIPxhrar"
+	picture = "FokkerCrash"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 0
+		 }
+	trigger = {
+		 tag = GER
+		 date = 1918.4.21
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_DAMN"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 kill_leader = 855040
 		 }
 	}
 
-#Air_Reinforcements_Title
+#Reinforcements Have Arrived
 
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "Air_Reinforcements_Title"
+	desc = "German_Airforce_Desc"
+	id = 100362
 	 
-	picture = "CHIPxhrar"
+	picture = "FokkerDVII"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 1
+		 }
+	trigger = {
+		 tag = GER
+		 date = 1918.5.1
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_GREAT"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 GER = {
+			load_oob = "scenarios/spring_offensive/GER_Reinforcements/GER_Air_01.txt"}
+		 GER = {
+			supplies = 10000}
 		 }
 	}
 
-#Air_Reinforcements_Title
+#Reinforcements Have Arrived
 
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "Air_Reinforcements_Title"
+	desc = "German_Airforce_Desc"
+	id = 100366
 	 
-	picture = "CHIPxhrar"
+	picture = "FokkerDVII"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 1
+		 }
+	trigger = {
+		 tag = GER
+		 date = 1918.7.1
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_GREAT"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 GER = {
+			load_oob = "scenarios/spring_offensive/GER_Reinforcements/GER_Air_02.txt"}
+		 GER = {
+			supplies = 10000}
 		 }
 	}
 
-#Disaster_Title
+#Disaster!
 
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "Disaster_Title"
+	desc = "Lowenhardt_Dies_Desc"
+	id = 100368
 	 
-	picture = "CHIPxhrar"
+	picture = "Fokker-crash"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 0
+		 }
+	trigger = {
+		 tag = GER
+		 date = 1918.8.18
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_DAMN"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 kill_leader = 855344
 		 }
 	}
 
-#Disaster_Title
+#Disaster!
 
 
  country_event = {
-	title = "CHIExhrar"
-	desc = "desc_CHIExhrar"
-	id = 999962
+	title = "Disaster_Title"
+	desc = "Rumey_Dies_Desc"
+	id = 100370
 	 
-	picture = "CHIPxhrar"
+	picture = "Mid-Air-Crash"
 	 
-	is_triggered_only = yes
+	fire_only_once = yes
 	 
+	mean_time_to_happen = 
+	 {
+		 days = 0
+		 }
+	trigger = {
+		 tag = GER
+		 date = 1918.9.27
+		 }
 	option = {
-		 name = "opta_CHIExhrar"
+		 name = "ACTION_NAME_DAMN"
 		 ai_chance = {
 			 factor = 100
 			 }
-		 remove_brigade = "Guizhou
-		 Lujun"
+		 kill_leader = 855047
 		 }
 	}
 
