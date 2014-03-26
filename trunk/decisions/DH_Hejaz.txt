@@ -1,155 +1,244 @@
-#2001508_decision = { #EVENTNAME: Letters with Hussein bin Ali *CONFIRMED
-#2001509_decision = { #EVENTNAME: Promises for a great Arab Empire *CONFIRMED
-#2001510_decision = { #EVENTNAME: Send T.E. Lawrence *CONFIRMED
-#2001511_decision = { #EVENTNAME: Send assistance to Hedjaz *CONFIRMED
-#2001512_decision = { #EVENTNAME: Renewed assistance to Hedjaz *CONFIRMED
-#2233502_decision = { #EVENTNAME: The Great Arab Revolt *CONFIRMED
-
-
 
 diplomatic_decisions = {
-
-
-#Letters with Hussein bin Ali
-2001508_decision = {
-	potential = {
-		TUR = { war_with = ENG }
-		exists = HJZ
-		not = {
-			 HJZ = { war_with = ENG }
+	 2001508_decision = {
+		ai_will_do = {
+			 factor = 1
 			 }
-		tag = ENG
-		date = 1916.1.1
-		not = { date = 1925.12.30
+		potential = {
+			 TUR = {
+				 war_with = ENG
+				 }
+			 exists = HJZ
+			 not = {
+				 HJZ = {
+					 war_with = ENG
+					 }
+				 }
+			 tag = ENG
+			 date = 1916.1.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_global_flag = SLEEPEVENT_2001508
+				 }
+			 not = {
+				 has_country_flag = decision_2001508
+				 }
 			 }
-		not = { has_global_flag = SLEEPEVENT_2001508 }
-		not = { has_country_flag = decision_2001508 } }
-	allow = {
-		5564 = { controlled_by = ENG }
+		allow = {
+			 5564 = {
+				 controlled_by = ENG
+				 }
+			 }
+		effect = {
+			 country_event = 14
+			 set_country_flag = decision_2001508
+			 }
 		}
-	effect = { country_event = 14
-		set_country_flag = decision_2001508 }
-	ai_will_do = { factor = 1 }
-	}
+	
 
-
-#Promises for a great Arab Empire
-2001509_decision = {
-	potential = {
-		#has_global_flag = 2001507_EVENT_DONE
-		TUR = { war_with = ENG }
-		exists = HJZ
-		not = {
-			 HJZ = { war_with = ENG }
+	 2001509_decision = {
+		ai_will_do = {
+			 factor = 1
 			 }
-		tag = ENG
-		date = 1916.6.1
-		not = { date = 1925.12.30
+		potential = {
+			 TUR = {
+				 war_with = ENG
+				 }
+			 exists = HJZ
+			 not = {
+				 HJZ = {
+					 war_with = ENG
+					 }
+				 }
+			 tag = ENG
+			 date = 1916.6.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_global_flag = SLEEPEVENT_2001509
+				 }
+			 not = {
+				 has_country_flag = decision_2001509
+				 }
 			 }
-		not = { has_global_flag = SLEEPEVENT_2001509 }
-		not = { has_country_flag = decision_2001509 } }
-	allow = {
-		5564 = { controlled_by = ENG }
+		allow = {
+			 5564 = {
+				 controlled_by = ENG
+				 }
+			 }
+		effect = {
+			 country_event = 15
+			 set_country_flag = decision_2001509
+			 }
 		}
-	effect = { country_event = 15
-		set_country_flag = decision_2001509 }
-	ai_will_do = { factor = 1 }
-	}
+	
 
-
-#Send T.E. Lawrence
-2001510_decision = {
-	potential = {
-		TUR = { war_with = ENG }
-		TUR = { war_with = HJZ }
-		not = {
-			 HJZ = { war_with = ENG }
+	 2001510_decision = {
+		ai_will_do = {
+			 factor = 1
 			 }
-		tag = ENG
-		date = 1917.1.1
-		not = { date = 1925.12.30
+		potential = {
+			 TUR = {
+				 war_with = ENG
+				 }
+			 TUR = {
+				 war_with = HJZ
+				 }
+			 not = {
+				 HJZ = {
+					 war_with = ENG
+					 }
+				 }
+			 tag = ENG
+			 date = 1917.1.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_global_flag = SLEEPEVENT_2001510
+				 }
+			 not = {
+				 has_country_flag = decision_2001510
+				 }
 			 }
-		not = { has_global_flag = SLEEPEVENT_2001510 }
-		not = { has_country_flag = decision_2001510 } }
-	allow = {
-		5564 = { controlled_by = ENG }
+		allow = {
+			 5564 = {
+				 controlled_by = ENG
+				 }
+			 }
+		effect = {
+			 country_event = 16
+			 set_country_flag = decision_2001510
+			 }
 		}
-	effect = { country_event = 16
-		set_country_flag = decision_2001510 }
-	ai_will_do = { factor = 1 }
-	}
+	
 
-
-#Send assistance to Hedjaz
-2001511_decision = {
-	potential = {
-		TUR = { war_with = ENG }
-		TUR = { war_with = HJZ }
-		not = {
-			 HJZ = { war_with = ENG }
+	 2001511_decision = {
+		ai_will_do = {
+			 factor = 1
 			 }
-		tag = ENG
-		date = 1917.1.1
-		not = { date = 1925.12.30
+		potential = {
+			 TUR = {
+				 war_with = ENG
+				 }
+			 TUR = {
+				 war_with = HJZ
+				 }
+			 not = {
+				 HJZ = {
+					 war_with = ENG
+					 }
+				 }
+			 tag = ENG
+			 date = 1917.1.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_global_flag = SLEEPEVENT_2001511
+				 }
+			 not = {
+				 has_country_flag = decision_2001511
+				 }
 			 }
-		not = { has_global_flag = SLEEPEVENT_2001511 }
-		not = { has_country_flag = decision_2001511 } }
-	allow = {
-		5564 = { controlled_by = ENG }
-		not = {
-			 5647 = { controlled_by = TUR }
+		allow = {
+			 5564 = {
+				 controlled_by = ENG
+				 }
+			 not = {
+				 5647 = {
+					 controlled_by = TUR
+					 }
+				 }
+			 supplies = 
+			 500
 			 }
-		supplies =  500
+		effect = {
+			 country_event = 17
+			 set_country_flag = decision_2001511
+			 }
 		}
-	effect = { country_event = 17
-		set_country_flag = decision_2001511 }
-	ai_will_do = { factor = 1 }
-	}
+	
 
-
-#Renewed assistance to Hedjaz
-2001512_decision = {
-	potential = {
-		has_global_flag = 2001511_EVENT_DONE
-		TUR = { war_with = ENG }
-		TUR = { war_with = HJZ }
-		not = {
-			 HJZ = { war_with = ENG }
+	 2001512_decision = {
+		ai_will_do = {
+			 factor = 1
 			 }
-		tag = ENG
-		date = 1918.2.1
-		not = { date = 1925.12.30
+		potential = {
+			 has_global_flag = 2001511_EVENT_DONE
+			 TUR = {
+				 war_with = ENG
+				 }
+			 TUR = {
+				 war_with = HJZ
+				 }
+			 not = {
+				 HJZ = {
+					 war_with = ENG
+					 }
+				 }
+			 tag = ENG
+			 date = 1918.2.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_global_flag = SLEEPEVENT_2001512
+				 }
+			 not = {
+				 has_country_flag = decision_2001512
+				 }
 			 }
-		not = { has_global_flag = SLEEPEVENT_2001512 }
-		not = { has_country_flag = decision_2001512 } }
-	allow = {
-		5564 = { controlled_by = ENG }
-		not = {
-			 5647 = { controlled_by = TUR }
+		allow = {
+			 5564 = {
+				 controlled_by = ENG
+				 }
+			 not = {
+				 5647 = {
+					 controlled_by = TUR
+					 }
+				 }
+			 supplies = 
+			 800
 			 }
-		supplies =  800
+		effect = {
+			 country_event = 18
+			 set_country_flag = decision_2001512
+			 }
 		}
-	effect = { country_event = 18
-		set_country_flag = decision_2001512 }
-	ai_will_do = { factor = 1 }
-	}
+	
 
-
-#The Great Arab Revolt
-2233502_decision = {
-	potential = {
-		war = no
-		has_global_flag = 2233500_EVENT_DONE
-		tag = HJZ
-		date = 1916.6.1
-		not = { date = 1925.12.30
+	 2233502_decision = {
+		ai_will_do = {
+			 factor = 1
 			 }
-		not = { has_global_flag = SLEEPEVENT_2233502 }
-		not = { has_country_flag = decision_2233502 } }
-	allow = { TUR = { war_with = ENG }
-		 }
-	effect = { country_event = 488
-		set_country_flag = decision_2233502 }
-	ai_will_do = { factor = 1 }
+		potential = {
+			 war = no
+			 has_global_flag = 2233500_EVENT_DONE
+			 tag = HJZ
+			 date = 1916.6.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_global_flag = SLEEPEVENT_2233502
+				 }
+			 not = {
+				 has_country_flag = decision_2233502
+				 }
+			 }
+		allow = {
+			 TUR = {
+				 war_with = ENG
+				 }
+			 }
+		effect = {
+			 country_event = 488
+			 set_country_flag = decision_2233502
+			 }
+		}
 	}
-}
+
