@@ -2297,6 +2297,326 @@
 				}
 			}
 		}
+		
+			
+	 army = {
+		location = 2205  # Mühlhausen
+		name = "4. Armee"
+		
+		 regiment = {
+			type = hq_brigade 
+			experience = 0 
+			name = "11th HQ Brigade"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = engineer_brigade 
+			experience = 0 
+			name = "4. Armee Engineers"
+			historical_model = 0 
+			}
+		
+		 corps = {
+			location = 2205  # Mühlhausen
+			name = "VI. Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "VI. Armeekorps HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 2205  # Mühlhausen
+				name = "11. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "21. Infanteriebrigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "22. Infanteriebrigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "11. Artillerie brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 2205  # Mühlhausen
+				name = "12. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "34. Infanteriebrigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "78. Infanteriebrigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "12. Artillerie Brigade"
+					historical_model = 0 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2374  # Frankfurt am Main
+			name = "VIII. Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "VIII. Armeekorps HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 2374  # Frankfurt am Main
+				name = "15. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "29. Infanteriebrigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "80. Infanteriebrigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "15. Artillerie Brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 2374  # Frankfurt am Main
+				name = "16. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "30. Infanteriebrigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "31. Infanteriebrigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "16. Artillerie Brigade"
+					historical_model = 0 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2432  # Mainz
+			name = "XVIII. Armeekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "XVIII. Armeekorps HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 2432  # Mainz
+				name = "21. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "41. Infanteriebrigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "42. Infanteriebrigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "21. Artillerie brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 2432  # Mainz
+				name = "25. Infanterie-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "49. Infanteriebrigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					experience = 10 
+					name = "50. Infanteriebrigade"
+					historical_model = 1 
+					}
+				
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "25. Artillerie Brigade"
+					historical_model = 0 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2205  # Mühlhausen
+			name = "XVIII. Reservekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "XVIII. Reservekorps HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 2205  # Mühlhausen
+				name = "21. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "41. Reserve Brigade"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "42. Reserve Brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 2205  # Mühlhausen
+				name = "25. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "49. Reserve Brigade"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "50. Reserve Brigade"
+					historical_model = 0 
+					}
+				}
+			}
+		
+		 corps = {
+			location = 2372  # Bonn
+			name = "VIII. Reservekorps"
+			
+			 regiment = {
+				type = hq_brigade 
+				experience = 15 
+				name = "VIII. Reservekorps HQ"
+				historical_model = 2 
+				}
+			
+			 division = {
+				location = 2372  # Bonn
+				name = "15. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "30. Reserve Brigade"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "32. Reserve Brigade"
+					historical_model = 0 
+					}
+				}
+			
+			 division = {
+				location = 2372  # Bonn
+				name = "16. Reserve-Division"
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "29. Reserve Brigade"
+					historical_model = 0 
+					}
+				
+				 regiment = {
+					type = infantry_brigade 
+					is_reserve = yes 
+					experience = 5 
+					name = "31. Reserve Brigade"
+					historical_model = 0 
+					}
+				}
+			}
+		}
 	}
 
  theatre = {
@@ -2716,325 +3036,6 @@
 					is_reserve = yes 
 					experience = 5 
 					name = "36. Reserve Brigade"
-					historical_model = 0 
-					}
-				}
-			}
-		}
-	
-	 army = {
-		location = 2205  # Mühlhausen
-		name = "4th Armee"
-		
-		 regiment = {
-			type = hq_brigade 
-			experience = 0 
-			name = "11th HQ Brigade"
-			historical_model = 2 
-			}
-		
-		 regiment = {
-			type = engineer_brigade 
-			experience = 0 
-			name = "4. Armee Engineers"
-			historical_model = 0 
-			}
-		
-		 corps = {
-			location = 2205  # Mühlhausen
-			name = "VI. Armeekorps"
-			
-			 regiment = {
-				type = hq_brigade 
-				experience = 15 
-				name = "VI. Armeekorps HQ"
-				historical_model = 2 
-				}
-			
-			 division = {
-				location = 2205  # Mühlhausen
-				name = "11. Infanterie-Division"
-				
-				 regiment = {
-					type = infantry_brigade 
-					experience = 10 
-					name = "21. Infanteriebrigade"
-					historical_model = 1 
-					}
-				
-				 regiment = {
-					type = infantry_brigade 
-					experience = 10 
-					name = "22. Infanteriebrigade"
-					historical_model = 1 
-					}
-				
-				 regiment = {
-					type = artillery_brigade 
-					experience = 10 
-					name = "11. Artillerie brigade"
-					historical_model = 0 
-					}
-				}
-			
-			 division = {
-				location = 2205  # Mühlhausen
-				name = "12. Infanterie-Division"
-				
-				 regiment = {
-					type = infantry_brigade 
-					experience = 10 
-					name = "34. Infanteriebrigade"
-					historical_model = 1 
-					}
-				
-				 regiment = {
-					type = infantry_brigade 
-					experience = 10 
-					name = "78. Infanteriebrigade"
-					historical_model = 1 
-					}
-				
-				 regiment = {
-					type = artillery_brigade 
-					experience = 10 
-					name = "12. Artillerie Brigade"
-					historical_model = 0 
-					}
-				}
-			}
-		
-		 corps = {
-			location = 2374  # Frankfurt am Main
-			name = "VIII. Armeekorps"
-			
-			 regiment = {
-				type = hq_brigade 
-				experience = 15 
-				name = "VIII. Armeekorps HQ"
-				historical_model = 2 
-				}
-			
-			 division = {
-				location = 2374  # Frankfurt am Main
-				name = "15. Infanterie-Division"
-				
-				 regiment = {
-					type = infantry_brigade 
-					experience = 10 
-					name = "29. Infanteriebrigade"
-					historical_model = 1 
-					}
-				
-				 regiment = {
-					type = infantry_brigade 
-					experience = 10 
-					name = "80. Infanteriebrigade"
-					historical_model = 1 
-					}
-				
-				 regiment = {
-					type = artillery_brigade 
-					experience = 10 
-					name = "15. Artillerie Brigade"
-					historical_model = 0 
-					}
-				}
-			
-			 division = {
-				location = 2374  # Frankfurt am Main
-				name = "16. Infanterie-Division"
-				
-				 regiment = {
-					type = infantry_brigade 
-					experience = 10 
-					name = "30. Infanteriebrigade"
-					historical_model = 1 
-					}
-				
-				 regiment = {
-					type = infantry_brigade 
-					experience = 10 
-					name = "31. Infanteriebrigade"
-					historical_model = 1 
-					}
-				
-				 regiment = {
-					type = artillery_brigade 
-					experience = 10 
-					name = "16. Artillerie Brigade"
-					historical_model = 0 
-					}
-				}
-			}
-		
-		 corps = {
-			location = 2432  # Mainz
-			name = "XVIII. Armeekorps"
-			
-			 regiment = {
-				type = hq_brigade 
-				experience = 15 
-				name = "XVIII. Armeekorps HQ"
-				historical_model = 2 
-				}
-			
-			 division = {
-				location = 2432  # Mainz
-				name = "21. Infanterie-Division"
-				
-				 regiment = {
-					type = infantry_brigade 
-					experience = 10 
-					name = "41. Infanteriebrigade"
-					historical_model = 1 
-					}
-				
-				 regiment = {
-					type = infantry_brigade 
-					experience = 10 
-					name = "42. Infanteriebrigade"
-					historical_model = 1 
-					}
-				
-				 regiment = {
-					type = artillery_brigade 
-					experience = 10 
-					name = "21. Artillerie brigade"
-					historical_model = 0 
-					}
-				}
-			
-			 division = {
-				location = 2432  # Mainz
-				name = "25. Infanterie-Division"
-				
-				 regiment = {
-					type = infantry_brigade 
-					experience = 10 
-					name = "49. Infanteriebrigade"
-					historical_model = 1 
-					}
-				
-				 regiment = {
-					type = infantry_brigade 
-					experience = 10 
-					name = "50. Infanteriebrigade"
-					historical_model = 1 
-					}
-				
-				 regiment = {
-					type = artillery_brigade 
-					experience = 10 
-					name = "25. Artillerie Brigade"
-					historical_model = 0 
-					}
-				}
-			}
-		
-		 corps = {
-			location = 2205  # Mühlhausen
-			name = "XVIII. Reservekorps"
-			
-			 regiment = {
-				type = hq_brigade 
-				experience = 15 
-				name = "XVIII. Reservekorps HQ"
-				historical_model = 2 
-				}
-			
-			 division = {
-				location = 2205  # Mühlhausen
-				name = "21. Reserve-Division"
-				
-				 regiment = {
-					type = infantry_brigade 
-					is_reserve = yes 
-					experience = 5 
-					name = "41. Reserve Brigade"
-					historical_model = 0 
-					}
-				
-				 regiment = {
-					type = infantry_brigade 
-					is_reserve = yes 
-					experience = 5 
-					name = "42. Reserve Brigade"
-					historical_model = 0 
-					}
-				}
-			
-			 division = {
-				location = 2205  # Mühlhausen
-				name = "25. Reserve-Division"
-				
-				 regiment = {
-					type = infantry_brigade 
-					is_reserve = yes 
-					experience = 5 
-					name = "49. Reserve Brigade"
-					historical_model = 0 
-					}
-				
-				 regiment = {
-					type = infantry_brigade 
-					is_reserve = yes 
-					experience = 5 
-					name = "50. Reserve Brigade"
-					historical_model = 0 
-					}
-				}
-			}
-		
-		 corps = {
-			location = 2372  # Bonn
-			name = "VIII. Reservekorps"
-			
-			 regiment = {
-				type = hq_brigade 
-				experience = 15 
-				name = "VIII. Reservekorps HQ"
-				historical_model = 2 
-				}
-			
-			 division = {
-				location = 2372  # Bonn
-				name = "15. Reserve-Division"
-				
-				 regiment = {
-					type = infantry_brigade 
-					is_reserve = yes 
-					experience = 5 
-					name = "30. Reserve Brigade"
-					historical_model = 0 
-					}
-				
-				 regiment = {
-					type = infantry_brigade 
-					is_reserve = yes 
-					experience = 5 
-					name = "32. Reserve Brigade"
-					historical_model = 0 
-					}
-				}
-			
-			 division = {
-				location = 2372  # Bonn
-				name = "16. Reserve-Division"
-				
-				 regiment = {
-					type = infantry_brigade 
-					is_reserve = yes 
-					experience = 5 
-					name = "29. Reserve Brigade"
-					historical_model = 0 
-					}
-				
-				 regiment = {
-					type = infantry_brigade 
-					is_reserve = yes 
-					experience = 5 
-					name = "31. Reserve Brigade"
 					historical_model = 0 
 					}
 				}
