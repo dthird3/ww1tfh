@@ -2310,3 +2310,84 @@ united_china = {
 	global_ic = 0.15
 	icon = 36
 }
+#German Africa
+german_africa = {
+	potential = {
+		tag = GER
+	}
+	trigger = {
+			OR = {
+				10130 = {
+					controller = {
+						faction = axis
+					}
+				}
+				10350 = {
+					controller = {
+						faction = axis
+					}
+				}
+				9986 = {
+					controller = {
+						faction = axis
+					}
+				}
+				9955 = {
+					controller = {
+						faction = axis
+					}
+				}
+			}
+	}
+
+	global_rare_materials = 0.1
+	icon = 37
+}
+#German Pacific
+german_pacific = {
+	potential = {
+		tag = GER
+	}
+	trigger = {
+			OR = {
+				6439 = {
+					controller = {
+						faction = axis
+					}
+				}
+				6467 = {
+					controller = {
+						faction = axis
+					}
+				}
+				10651 = {
+					controller = {
+						faction = axis
+					}
+				}
+				10658 = {
+					controller = {
+						faction = axis
+					}
+				}
+				10663 = {
+					controller = {
+						faction = axis
+					}
+				}
+				5966 = {
+					controller = {
+						faction = axis
+					}
+				}
+				5246 = {
+					controller = {
+						faction = axis
+					}
+				}
+			}
+	}
+
+	global_rare_materials = 0.1
+	icon = 38
+}
