@@ -229,7 +229,7 @@ function P.DiploScore_CallAlly(voDiploScoreObj)
 		voDiploScoreObj.Score = 0
 	else
 		voDiploScoreObj.Score = 200
-	end if
+	end
 	
 	return voDiploScoreObj.Score
 end
