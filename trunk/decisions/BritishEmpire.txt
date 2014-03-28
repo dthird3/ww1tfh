@@ -1,157 +1,154 @@
 
 diplomatic_decisions = {
- ast_milcontrol = {
-	ai_will_do = {
-		 factor = 0
-		 }
-	potential = {
-		 tag = ENG
-		 exists = AST
-		 AST = {
-			 vassal_of = ENG
+	 ast_milcontrol = {#Request_Australian_Troops
+		ai_will_do = {
+			 factor = 0
 			 }
-		 war = yes
-		 ai = no
-		 }
-	allow = {
-		 not = {
-			 dissent = 1
-			 }
-		 or = {
+		potential = {
+			 tag = ENG
+			 exists = AST
 			 AST = {
-				 total_amount_of_divisions = 1
+				 vassal_of = ENG
 				 }
+			 war = yes
+			 ai = no
+			 }
+		allow = {
+			 not = {
+				 dissent = 1
+				 }
+			 or = {
+				 AST = {
+					 total_amount_of_divisions = 1
+					 }
+				 AST = {
+					 total_amount_of_planes = 1
+					 }
+				 AST = {
+					 total_amount_of_ships = 1
+					 }
+				 }
+			 }
+		effect = {
 			 AST = {
-				 total_amount_of_planes = 1
-				 }
-			 AST = {
-				 total_amount_of_ships = 1
-				 }
+				 country_event = 800001 #Britain_asks_for_Troops
+				}
+			 dissent = 3
 			 }
-		 }
-	effect = {
-		 AST = {
-			 country_event = 800001 #800001
-			}
-		 dissent = 3
-		 }
-	}
+		}
+	
 
-
-
- can_milcontrol = {
-	ai_will_do = {
-		 factor = 0
-		 }
-	potential = {
-		 tag = ENG
-		 exists = CAN
-		 CAN = {
-			 vassal_of = ENG
+	 can_milcontrol = {#Request_Canadian_Troops
+		ai_will_do = {
+			 factor = 0
 			 }
-		 war = yes
-		 ai = no
-		 }
-	allow = {
-		 not = {
-			 dissent = 1
-			 }
-		 or = {
+		potential = {
+			 tag = ENG
+			 exists = CAN
 			 CAN = {
-				 total_amount_of_divisions = 1
+				 vassal_of = ENG
 				 }
+			 war = yes
+			 ai = no
+			 }
+		allow = {
+			 not = {
+				 dissent = 1
+				 }
+			 or = {
+				 CAN = {
+					 total_amount_of_divisions = 1
+					 }
+				 CAN = {
+					 total_amount_of_planes = 1
+					 }
+				 CAN = {
+					 total_amount_of_ships = 1
+					 }
+				 }
+			 }
+		effect = {
 			 CAN = {
-				 total_amount_of_planes = 1
-				 }
-			 CAN = {
-				 total_amount_of_ships = 1
-				 }
+				 country_event = 800001 #Britain_asks_for_Troops
+				}
+			 dissent = 3
 			 }
-		 }
-	effect = {
-		 CAN = {
-			 country_event = 800001 #800001
-			}
-		 dissent = 3
-		 }
-	}
+		}
+	
 
-
-
- nzl_milcontrol = {
-	ai_will_do = {
-		 factor = 0
-		 }
-	potential = {
-		 tag = ENG
-		 exists = NZL
-		 NZL = {
-			 vassal_of = ENG
+	 nzl_milcontrol = {#Request_New_Zealand_Troops
+		ai_will_do = {
+			 factor = 0
 			 }
-		 war = yes
-		 ai = no
-		 }
-	allow = {
-		 not = {
-			 dissent = 1
-			 }
-		 or = {
+		potential = {
+			 tag = ENG
+			 exists = NZL
 			 NZL = {
-				 total_amount_of_divisions = 1
+				 vassal_of = ENG
 				 }
+			 war = yes
+			 ai = no
+			 }
+		allow = {
+			 not = {
+				 dissent = 1
+				 }
+			 or = {
+				 NZL = {
+					 total_amount_of_divisions = 1
+					 }
+				 NZL = {
+					 total_amount_of_planes = 1
+					 }
+				 NZL = {
+					 total_amount_of_ships = 1
+					 }
+				 }
+			 }
+		effect = {
 			 NZL = {
-				 total_amount_of_planes = 1
+				 country_event = 800001 #Britain_asks_for_Troops
+				}
+			 dissent = 3
+			 }
+		}
+	
+
+	 saf_milcontrol = {#Request_South_African_Troops
+		ai_will_do = {
+			 factor = 0
+			 }
+		potential = {
+			 tag = ENG
+			 exists = SAF
+			 SAF = {
+				 vassal_of = ENG
 				 }
-			 NZL = {
-				 total_amount_of_ships = 1
+			 war = yes
+			 ai = no
+			 }
+		allow = {
+			 not = {
+				 dissent = 1
+				 }
+			 or = {
+				 SAF = {
+					 total_amount_of_divisions = 1
+					 }
+				 SAF = {
+					 total_amount_of_planes = 1
+					 }
+				 SAF = {
+					 total_amount_of_ships = 1
+					 }
 				 }
 			 }
-		 }
-	effect = {
-		 NZL = {
-			 country_event = 800001 #800001
-			}
-		 dissent = 3
-		 }
+		effect = {
+			 SAF = {
+				 country_event = 800001 #Britain_asks_for_Troops
+				}
+			 dissent = 3
+			 }
+		}
 	}
-
-
-
- saf_milcontrol = {
-	ai_will_do = {
-		 factor = 0
-		 }
-	potential = {
-		 tag = ENG
-		 exists = SAF
-		 SAF = {
-			 vassal_of = ENG
-			 }
-		 war = yes
-		 ai = no
-		 }
-	allow = {
-		 not = {
-			 dissent = 1
-			 }
-		 or = {
-			 SAF = {
-				 total_amount_of_divisions = 1
-				 }
-			 SAF = {
-				 total_amount_of_planes = 1
-				 }
-			 SAF = {
-				 total_amount_of_ships = 1
-				 }
-			 }
-		 }
-	effect = {
-		 SAF = {
-			 country_event = 800001 #800001
-			}
-		 dissent = 3
-		 }
-	}
-}
 

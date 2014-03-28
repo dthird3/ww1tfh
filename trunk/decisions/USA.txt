@@ -1,54 +1,53 @@
 
 diplomatic_decisions = {
- USA_NIC = {
-ai_will_do = {
- factor = 1
- }
-potential = {
- tag = USA
- exists = NIC
- date = 1912.6.1
- NOT = {
-	 THIS = {
-		 has_country_flag = ban_nic
-		 }
-	 }
- }
-allow = {
- war = no
- }
-effect = {
- set_country_flag = ban_nic
- country_event = 100300 #100300
-dissent = 2
- money = 100
- }
-}
+	 USA_NIC = {#Banana_Wars:_Nicaragua
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = USA
+			 exists = NIC
+			 date = 1912.6.1
+			 NOT = {
+				 THIS = {
+					 has_country_flag = ban_nic
+					 }
+				 }
+			 }
+		allow = {
+			 war = no
+			 }
+		effect = {
+			 set_country_flag = ban_nic
+			 country_event = 100300 #Occupation_of_Nicaragua
+			dissent = 2
+			 money = 100
+			 }
+		}
+	
 
-
-
- new_deal2 = {
-ai_will_do = {
- factor = 1
- }
-potential = {
- tag = USA
- not = {
-	 has_country_modifier = us_new_deal
-	 }
- not = {
-	 has_country_flag = nd
-	 }
- }
-allow = {
- }
-effect = {
- set_country_flag = nd
- add_country_modifier = {
-	 name = "us_new_deal"
-	 duration = -1
-	 }
- }
-}
-}
+	 new_deal2 = {#Pre-World_War_I_reform_and_economic_volatility
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = USA
+			 not = {
+				 has_country_modifier = us_new_deal
+				 }
+			 not = {
+				 has_country_flag = nd
+				 }
+			 }
+		allow = {
+			 }
+		effect = {
+			 set_country_flag = nd
+			 add_country_modifier = {
+				 name = "us_new_deal"
+				 duration = -1
+				 }
+			 }
+		}
+	}
 

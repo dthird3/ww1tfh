@@ -1,29 +1,29 @@
 
 diplomatic_decisions = {
- ns_peace_conference = {
-ai_will_do = {
- factor = 1
- }
-potential = {
- tag = PRC
- CHI = {
-	 has_country_flag = yuan_shikai
-	 }
- NOT = {
-	 PRC = {
-		 has_country_flag = ns_peace_conference
-		 }
-	 }
- }
-allow = {
- has_country_flag = prc_election
- }
-effect = {
- set_country_flag = ns_peace_conference
- PRC = {
-	 country_event = 999960 #999960
+	 ns_peace_conference = {#North_-_South_peace_conference
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = PRC
+			 CHI = {
+				 has_country_flag = yuan_shikai
+				 }
+			 NOT = {
+				 PRC = {
+					 has_country_flag = ns_peace_conference
+					 }
+				 }
+			 }
+		allow = {
+			 has_country_flag = prc_election
+			 }
+		effect = {
+			 set_country_flag = ns_peace_conference
+			 PRC = {
+				 country_event = 999960 #Peace_Conference_of_Northern-Southern
+				}
+			 }
+		}
 	}
- }
-}
-}
 

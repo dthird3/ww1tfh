@@ -1,37 +1,37 @@
 
 diplomatic_decisions = {
- annex_CRT = {
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 tag = GRE
-		 exists = TUR
-		 NOT = {
-			 GRE = {
-				 has_country_flag = cretegreek
+	 annex_CRT = {#Annexation_of_Crete
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = GRE
+			 exists = TUR
+			 NOT = {
+				 GRE = {
+					 has_country_flag = cretegreek
+					 }
 				 }
 			 }
-		 }
-	allow = {
-		 war = no
-		 date = 1913.3.20
-		 BUL = {
-			 has_country_flag = first_balkan_war
+		allow = {
+			 war = no
+			 date = 1913.3.20
+			 BUL = {
+				 has_country_flag = first_balkan_war
+				 }
 			 }
-		 }
-	effect = {
-		 GRE = {
-			 set_country_flag = cretegreek
+		effect = {
+			 GRE = {
+				 set_country_flag = cretegreek
+				 }
+			 GRE = {
+				 manpower = 20
+				 }
+			 CRT = {
+				 country_event = 100200 #End_of_the_Cretan_State
+				}
+			 dissent = 5
 			 }
-		 GRE = {
-			 manpower = 20
-			 }
-		 CRT = {
-			 country_event = 100200 #100200
-			}
-		 dissent = 5
-		 }
+		}
 	}
-}
 
