@@ -1,26 +1,26 @@
 
 diplomatic_decisions = {
- protect_the_yellow_dragon_flag = {
-ai_will_do = {
- factor = 1
- }
-potential = {
- tag = QIN
- not = {
-	 has_country_flag = protect_the_yellow_dragon_flag
-	 }
- }
-allow = {
- }
-effect = {
- set_country_flag = protect_the_yellow_dragon_flag
- QIN = {
-	 country_event = 100076 #100076
+	 protect_the_yellow_dragon_flag = {#Protect_the_Yellow_Dragon_Flag!
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = QIN
+			 not = {
+				 has_country_flag = protect_the_yellow_dragon_flag
+				 }
+			 }
+		allow = {
+			 }
+		effect = {
+			 set_country_flag = protect_the_yellow_dragon_flag
+			 QIN = {
+				 country_event = 100076 #Protect_the_Yellow_Dragon_Flag!
+				}
+			 QIN = {
+				 country_event = 100077 #Something_you_must_keep_in_mind
+				}
+			 }
+		}
 	}
- QIN = {
-	 country_event = 100077 #100077
-	}
- }
-}
-}
 

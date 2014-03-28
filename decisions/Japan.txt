@@ -1,35 +1,35 @@
 
 diplomatic_decisions = {
- annex_KOR = {
-ai_will_do = {
- factor = 1
- }
-potential = {
- tag = JAP
- exists = KOR
- NOT = {
-	 THIS = {
-		 has_country_flag = jap_kor
-		 }
-	 }
- }
-allow = {
- KOR = {
-	 vassal_of = JAP
-	 }
- war = no
- date = 1910.8.22
- }
-effect = {
- JAP = {
-	 manpower = 20
-	 }
- KOR = {
-	 country_event = 100100 #100100
+	 annex_KOR = {#Japan–Korea_Annexation_Treaty
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = JAP
+			 exists = KOR
+			 NOT = {
+				 THIS = {
+					 has_country_flag = jap_kor
+					 }
+				 }
+			 }
+		allow = {
+			 KOR = {
+				 vassal_of = JAP
+				 }
+			 war = no
+			 date = 1910.8.22
+			 }
+		effect = {
+			 JAP = {
+				 manpower = 20
+				 }
+			 KOR = {
+				 country_event = 100100 #Japan–Korea_Annexation_Treaty
+				}
+			 dissent = 5
+			 set_country_flag = jap_kor
+			 }
+		}
 	}
- dissent = 5
- set_country_flag = jap_kor
- }
-}
-}
 

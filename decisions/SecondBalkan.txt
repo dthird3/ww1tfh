@@ -1,190 +1,187 @@
 
 diplomatic_decisions = {
- serb_alliance2 = {
-ai_will_do = {
- factor = 1
- }
-potential = {
- tag = SER
- exists = TUR
- exists = BUL
- exists = GRE
- SER = {
-	 has_country_flag = first_balkan_done
-	 }
- GRE = {
-	 has_country_flag = first_balkan_done
-	 }
- NOT = {
-	 SER = {
-		 has_country_flag = first_balkan_surrender
-		 }
-	 }
- NOT = {
-	 GRE = {
-		 has_country_flag = first_balkan_surrender
-		 }
-	 }
- NOT = {
-	 SER = {
-		 has_country_flag = has_serb_alliance
-		 }
-	 }
- war = no
- }
-allow = {
- war = no
- date = 1913.6.1
- }
-effect = {
- SER = {
-	 country_event = 100128 #100128
+	 serb_alliance2 = {#Sign_the_Greek-Serbian_Alliance
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = SER
+			 exists = TUR
+			 exists = BUL
+			 exists = GRE
+			 SER = {
+				 has_country_flag = first_balkan_done
+				 }
+			 GRE = {
+				 has_country_flag = first_balkan_done
+				 }
+			 NOT = {
+				 SER = {
+					 has_country_flag = first_balkan_surrender
+					 }
+				 }
+			 NOT = {
+				 GRE = {
+					 has_country_flag = first_balkan_surrender
+					 }
+				 }
+			 NOT = {
+				 SER = {
+					 has_country_flag = has_serb_alliance
+					 }
+				 }
+			 war = no
+			 }
+		allow = {
+			 war = no
+			 date = 1913.6.1
+			 }
+		effect = {
+			 SER = {
+				 country_event = 100128 #Greek_Serbian_Alliance_of_1913
+				}
+			 create_alliance = GRE
+			 SER = {
+				 set_country_flag = has_serb_alliance
+				 }
+			 }
+		}
+	
+
+	 second_balkan = {#Claim_Northern_Macedonia
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = BUL
+			 exists = TUR
+			 exists = BUL
+			 exists = GRE
+			 exists = SER
+			 SER = {
+				 has_country_flag = first_balkan_done
+				 }
+			 GRE = {
+				 has_country_flag = first_balkan_done
+				 }
+			 BUL = {
+				 has_country_flag = first_balkan_done
+				 }
+			 NOT = {
+				 SER = {
+					 has_country_flag = first_balkan_surrender
+					 }
+				 }
+			 NOT = {
+				 BUL = {
+					 has_country_flag = first_balkan_surrender
+					 }
+				 }
+			 NOT = {
+				 GRE = {
+					 has_country_flag = first_balkan_surrender
+					 }
+				 }
+			 NOT = {
+				 BUL = {
+					 has_country_flag = second_balkan_started
+					 }
+				 }
+			 SER = {
+				 has_country_flag = has_serb_alliance
+				 }
+			 war = no
+			 }
+		allow = {
+			 war = no
+			 }
+		effect = {
+			 BUL = {
+				 country_event = 100130 #Second_Balkan_War
+				}
+			 BUL = {
+				 war = {
+					 target = SER
+					 }
+				 }
+			 BUL = {
+				 war = {
+					 target = GRE
+					 }
+				 }
+			 BUL = {
+				 set_country_flag = second_balkan_started
+				 }
+			 }
+		}
+	
+
+	 ROM_Intervention = {#Romanian_Intervention
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = ROM
+			 exists = BUL
+			 date = 1912.10.8
+			 NOT = {
+				 BUL = {
+					 has_country_flag = lose_balkans
+					 }
+				 }
+			 NOT = {
+				 THIS = {
+					 has_country_flag = room_int
+					 }
+				 }
+			 BUL = {
+				 has_country_flag = second_balkan_war
+				 }
+			 }
+		allow = {
+			 war = no
+			 }
+		effect = {
+			 set_country_flag = room_int
+			 country_event = 100132 #Intervention
+			dissent = -5
+			 neutrality = -25
+			 money = 100
+			 }
+		}
+	
+
+	 TUR_Intervention = {#Turkish_Intervention
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = TUR
+			 exists = BUL
+			 date = 1912.10.8
+			 NOT = {
+				 BUL = {
+					 has_country_flag = lose_balkans
+					 }
+				 }
+			 NOT = {
+				 THIS = {
+					 has_country_flag = turr_inv
+					 }
+				 }
+			 BUL = {
+				 has_country_flag = second_balkan_war
+				 }
+			 }
+		allow = {
+			 war = no
+			 }
+		effect = {
+			 set_country_flag = turr_inv
+			 country_event = 100132 #Intervention
+			dissent = -5
+			 money = 100
+			 }
+		}
 	}
- create_alliance = GRE
- SER = {
-	 set_country_flag = has_serb_alliance
-	 }
- }
-}
-
-
-
- second_balkan = {
-ai_will_do = {
- factor = 1
- }
-potential = {
- tag = BUL
- exists = TUR
- exists = BUL
- exists = GRE
- exists = SER
- SER = {
-	 has_country_flag = first_balkan_done
-	 }
- GRE = {
-	 has_country_flag = first_balkan_done
-	 }
- BUL = {
-	 has_country_flag = first_balkan_done
-	 }
- NOT = {
-	 SER = {
-		 has_country_flag = first_balkan_surrender
-		 }
-	 }
- NOT = {
-	 BUL = {
-		 has_country_flag = first_balkan_surrender
-		 }
-	 }
- NOT = {
-	 GRE = {
-		 has_country_flag = first_balkan_surrender
-		 }
-	 }
- NOT = {
-	 BUL = {
-		 has_country_flag = second_balkan_started
-		 }
-	 }
- SER = {
-	 has_country_flag = has_serb_alliance
-	 }
- war = no
- }
-allow = {
- war = no
- }
-effect = {
- BUL = {
-	 country_event = 100130 #100130
-	}
- BUL = {
-	 war = {
-		 target = SER
-		 }
-	 }
- BUL = {
-	 war = {
-		 target = GRE
-		 }
-	 }
- BUL = {
-	 set_country_flag = second_balkan_started
-	 }
- }
-}
-
-
-
- ROM_Intervention = {
-ai_will_do = {
- factor = 1
- }
-potential = {
- tag = ROM
- exists = BUL
- date = 1912.10.8
- NOT = {
-	 BUL = {
-		 has_country_flag = lose_balkans
-		 }
-	 }
- NOT = {
-	 THIS = {
-		 has_country_flag = room_int
-		 }
-	 }
- BUL = {
-	 has_country_flag = second_balkan_war
-	 }
- }
-allow = {
- war = no
- }
-effect = {
- set_country_flag = room_int
- country_event = 100132 #100132
-dissent = -5
- neutrality = -25
- money = 100
- }
-}
-
-
-
- TUR_Intervention = {
-ai_will_do = {
- factor = 1
- }
-potential = {
- tag = TUR
- exists = BUL
- date = 1912.10.8
- NOT = {
-	 BUL = {
-		 has_country_flag = lose_balkans
-		 }
-	 }
- NOT = {
-	 THIS = {
-		 has_country_flag = turr_inv
-		 }
-	 }
- BUL = {
-	 has_country_flag = second_balkan_war
-	 }
- }
-allow = {
- war = no
- }
-effect = {
- set_country_flag = turr_inv
- country_event = 100132 #100132
-dissent = -5
- money = 100
- }
-}
-}
 
