@@ -1,136 +1,143 @@
 
 diplomatic_decisions = {
-	 libya_war = {
-		ai_will_do = {
-			 factor = 1
-			 }
-		potential = {
-			 tag = ITA
-			 exists = TUR
-			 date = 1911.1.1
-			 NOT = {
-				 ITA = {
-					 has_country_flag = libya_war
-					 }
-				 }
-			 NOT = {
-				 5511 = {
-					 controlled_by = ITA
-					 }
-				 }
-			 }
-		allow = {
-			 war = no
-			 date = 1911.9.29
-			 }
-		effect = {
-			 ITA = {
-				 country_event = 100113
-				 }
-			 money = 100
-			 manpower = 20
-			 set_country_flag = libya_war
-			 neutrality = -10
-			 }
-		}
-	
-
-	 libya_peace = {
-		ai_will_do = {
-			 factor = 1
-			 }
-		potential = {
-			 tag = ITA
-			 exists = TUR
-			 date = 1911.1.1
+ libya_war = {
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 tag = ITA
+		 exists = TUR
+		 date = 1911.1.1
+		 NOT = {
 			 ITA = {
 				 has_country_flag = libya_war
 				 }
-			 NOT = {
-				 ITA = {
-					 has_country_flag = libya_peace
-					 }
-				 }
-			 NOT = {
-				 ITA = {
-					 has_country_flag = libya_draw
-					 }
-				 }
-			 TUR = {
-				 war_with = ITA
-				 }
-			 NOT = {
-				 TUR = {
-					 war_with = ENG
-					 }
+			 }
+		 NOT = {
+			 5511 = {
+				#Tobruch
+				controlled_by = ITA
 				 }
 			 }
-		allow = {
-			 date = 1912.3.1
-			 OR = {
-				 5511 = {
-					 controlled_by = ITA
-					 }
-				 5484 = {
-					 controlled_by = ITA
-					 }
-				 }
-			 OR = {
-				 5445 = {
-					 controlled_by = ITA
-					 }
-				 5483 = {
-					 controlled_by = ITA
-					 }
-				 }
-			 }
-		effect = {
-			 TUR = {
-				 country_event = 100114}
-			 set_country_flag = libya_peace
-			 }
-		}
-	
-
-	 libya_draw = {
-		ai_will_do = {
-			 factor = 1
-			 }
-		potential = {
-			 tag = ITA
-			 exists = TUR
-			 date = 1911.1.1
-			 ITA = {
-				 has_country_flag = libya_war
-				 }
-			 NOT = {
-				 ITA = {
-					 has_country_flag = libya_peace
-					 }
-				 }
-			 NOT = {
-				 ITA = {
-					 has_country_flag = libya_draw
-					 }
-				 }
-			 TUR = {
-				 war_with = ITA
-				 }
-			 NOT = {
-				 TUR = {
-					 war_with = ENG
-					 }
-				 }
-			 }
-		allow = {
-			 date = 1912.9.1
-			 }
-		effect = {
-			 TUR = {
-				 country_event = 100303}
-			 set_country_flag = libya_draw
-			 neutrality = +20
-			 }
-		}
+		 }
+	allow = {
+		 war = no
+		 date = 1911.9.29
+		 }
+	effect = {
+		 ITA = {
+			 country_event = 100113 #100113
+			}
+		 money = 100
+		 manpower = 20
+		 set_country_flag = libya_war
+		 neutrality = -10
+		 }
 	}
+
+
+
+ libya_peace = {
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 tag = ITA
+		 exists = TUR
+		 date = 1911.1.1
+		 ITA = {
+			 has_country_flag = libya_war
+			 }
+		 NOT = {
+			 ITA = {
+				 has_country_flag = libya_peace
+				 }
+			 }
+		 NOT = {
+			 ITA = {
+				 has_country_flag = libya_draw
+				 }
+			 }
+		 TUR = {
+			 war_with = ITA
+			 }
+		 NOT = {
+			 TUR = {
+				 war_with = ENG
+				 }
+			 }
+		 }
+	allow = {
+		 date = 1912.3.1
+		 OR = {
+			 5511 = {
+				#Tobruch
+				controlled_by = ITA
+				 }
+			 5484 = {
+				#Bengasi
+				controlled_by = ITA
+				 }
+			 }
+		 OR = {
+			 5445 = {
+				#Tripoli
+				controlled_by = ITA
+				 }
+			 5483 = {
+				#Misurata
+				controlled_by = ITA
+				 }
+			 }
+		 }
+	effect = {
+		 TUR = {
+			 country_event = 100114} #100114}
+	set_country_flag = libya_peace
+	 }
+}
+
+
+
+ libya_draw = {
+ai_will_do = {
+	 factor = 1
+	 }
+potential = {
+	 tag = ITA
+	 exists = TUR
+	 date = 1911.1.1
+	 ITA = {
+		 has_country_flag = libya_war
+		 }
+	 NOT = {
+		 ITA = {
+			 has_country_flag = libya_peace
+			 }
+		 }
+	 NOT = {
+		 ITA = {
+			 has_country_flag = libya_draw
+			 }
+		 }
+	 TUR = {
+		 war_with = ITA
+		 }
+	 NOT = {
+		 TUR = {
+			 war_with = ENG
+			 }
+		 }
+	 }
+allow = {
+	 date = 1912.9.1
+	 }
+effect = {
+	 TUR = {
+		 country_event = 100303} #100303}
+set_country_flag = libya_draw
+ neutrality = +20
+ }
+}
+}
 

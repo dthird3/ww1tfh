@@ -25,8 +25,8 @@
 			 }
 		 join_faction = axis
 		 GER = {
-			 country_event = 414
-			 }
+			 country_event = 414 #Bulgaria_joins_the_Central_Powers!
+			}
 		 set_global_flag = 2020500_EVENT_DONE
 		 }
 	option = {
@@ -69,8 +69,8 @@
 		 name = "DH_EVENT_2020501_Option1"
 		 join_faction = axis
 		 GER = {
-			 country_event = 414
-			 }
+			 country_event = 414 #Bulgaria_joins_the_Central_Powers!
+			}
 		 set_global_flag = 2020501_EVENT_DONE
 		 }
 	option = {
@@ -105,8 +105,8 @@
 		 }
 	trigger = {
 		 not = {
-			 4560 = {
-				 controlled_by = TUR
+			 4560 = {#Gelibolu
+				controlled_by = TUR
 				 }
 			 }
 		 tag = ENG
@@ -168,19 +168,19 @@
 	option = {
 		 name = "DH_EVENT_2001506_Option1"
 		 GRE = {
-			 country_event = 149
-			 }
+			 country_event = 149 #The_Entente_seizes_Thessaloniki
+			}
 		 dissent = -2
 		 relation = {
 			 who = GRE
 			 value = -20
 			 }
 		 set_global_flag = 2001506_EVENT_DONE
-		 4720 = {
-			 secede_province = ENG
+		 4720 = {#Salonica
+			secede_province = ENG
 			 }
-		 4720 = {
-			 change_controller = ENG
+		 4720 = {#Salonica
+			change_controller = ENG
 			 }
 		 ENG = {
 			 remove_core = 4720
@@ -218,8 +218,8 @@
 		 ENG = {
 			 war_with = TUR
 			 }
-		 4503 = {
-			 controlled_by = TUR
+		 4503 = {#Istanbul
+			controlled_by = TUR
 			 }
 		 tag = ENG
 		 date = 1915.12.1
@@ -260,8 +260,8 @@
 			 war_with = AUH
 			 }
 		 not = {
-			 4503 = {
-				 controlled_by = TUR
+			 4503 = {#Istanbul
+				controlled_by = TUR
 				 }
 			 }
 		 not = {
@@ -275,8 +275,8 @@
 				 war_with = TUR
 				 }
 			 }
-		 2613 = {
-			 controlled_by = FRA
+		 2613 = {#Paris
+			controlled_by = FRA
 			 }
 		 tag = FRA
 		 date = 1914.1.1
@@ -293,8 +293,8 @@
 			 }
 		 name = "DH_EVENT_2002507_Option1"
 		 GRE = {
-			 country_event = 139
-			 }
+			 country_event = 139 #Austria-Hungary_declares_war_on_Serbia!
+			}
 		 set_global_flag = 2002507_EVENT_DONE
 		 }
 	option = {
@@ -370,8 +370,8 @@
 					 }
 				 }
 			 GRE = {
-				 country_event = 142
-				 }
+				 country_event = 142 #Negotiation_with_the_Entente
+				}
 			 }
 		 random_country = {
 			 limit = {
@@ -381,8 +381,8 @@
 					 }
 				 }
 			 GRE = {
-				 country_event = 141
-				 }
+				 country_event = 141 #Negotiation_with_the_Entente
+				}
 			 }
 		 set_global_flag = 2002508_EVENT_DONE
 		 }
@@ -562,8 +562,8 @@
 			 value = -5
 			 }
 		 GRE = {
-			 country_event = 150
-			 }
+			 country_event = 150 #The_Entente_asks_for_demobilization
+			}
 		 set_global_flag = 2002513_EVENT_DONE
 		 }
 	option = {
@@ -748,8 +748,8 @@
 			 factor = 100
 			 }
 		 GRE = {
-			 country_event = 154
-			 }
+			 country_event = 154 #The_Royal_residence_burns!
+			}
 		 set_global_flag = 2002521_EVENT_DONE
 		 }
 	option = {
@@ -813,8 +813,8 @@
 			 factor = 100
 			 }
 		 GRE = {
-			 country_event = 156
-			 }
+			 country_event = 156 #The_Entente_asks_again_for_demobilization
+			}
 		 set_global_flag = 2002522_EVENT_DONE
 		 }
 	option = {
@@ -941,8 +941,8 @@
 			 factor = 100
 			 }
 		 GRE = {
-			 country_event = 158
-			 }
+			 country_event = 158 #Last_warning_from_the_Entente
+			}
 		 set_global_flag = 2002533_EVENT_DONE
 		 }
 	option = {
@@ -1107,8 +1107,8 @@
 			 factor = 90
 			 }
 		 FRA = {
-			 country_event = 86
-			 }
+			 country_event = 86 #Treaty_of_London_signed!
+			}
 		 dissent = 3
 		 join_faction = allies
 		 set_global_flag = 2019504_EVENT_DONE
@@ -1151,8 +1151,8 @@
 		 dissent = 3
 		 join_faction = allies
 		 FRA = {
-			 country_event = 86
-			 }
+			 country_event = 86 #Treaty_of_London_signed!
+			}
 		 set_global_flag = 2019505_EVENT_DONE
 		 }
 	option = {
@@ -1277,11 +1277,11 @@
 			 }
 		 dissent = 4
 		 FRA = {
-			 country_event = 92
-			 }
+			 country_event = 92 #Venizelos_leaves_Greek_government
+			}
 		 clr_global_flag = venizelos_incabinet
-		 head_of_government = 90178
-		 set_global_flag = 2019508_EVENT_DONE
+		 head_of_government = 13200090 #Dimitrios_Gounaris
+		set_global_flag = 2019508_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -1314,8 +1314,8 @@
 	trigger = {
 		 has_global_flag = 2019505_EVENT_DONE
 		 not = {
-			 head_of_government = 90010
-			 has_global_flag = venizelos_incabinet
+			 head_of_government = 13200008 #Eleftherios_Venizelos
+			has_global_flag = venizelos_incabinet
 			 has_global_flag = 2019506_EVENT_DONE
 			 GRE = {
 				 faction = axis
@@ -1348,8 +1348,8 @@
 					 }
 				 }
 			 FRA = {
-				 country_event = 88
-				 }
+				 country_event = 88 #The_Gounalis_plan
+				}
 			 }
 		 random_country = {
 			 limit = {
@@ -1364,8 +1364,8 @@
 					 }
 				 }
 			 FRA = {
-				 country_event = 89
-				 }
+				 country_event = 89 #The_Gounalis_plan
+				}
 			 }
 		 set_global_flag = 2019509_EVENT_DONE
 		 }
@@ -1406,11 +1406,11 @@
 		 name = "DH_EVENT_2019510_Option7"
 		 dissent = -2
 		 FRA = {
-			 country_event = 93
-			 }
+			 country_event = 93 #Venizelos_is_back
+			}
 		 set_global_flag = venizelos_incabinet
-		 head_of_government = 90010
-		 set_global_flag = 2019510_EVENT_DONE
+		 head_of_government = 13200008 #Eleftherios_Venizelos
+		set_global_flag = 2019510_EVENT_DONE
 		 }
 	}
 
@@ -1550,8 +1550,8 @@
 			 }
 		 dissent = 1
 		 FRA = {
-			 country_event = 91
-			 }
+			 country_event = 91 #Greece_demobilizes!
+			}
 		 clr_global_flag = greece_mobilized
 		 relation = {
 			 who = FRA
@@ -1605,10 +1605,10 @@
 			 }
 		 dissent = 1
 		 clr_global_flag = venizelos_incabinet
-		 head_of_government = 90199
-		 FRA = {
-			 country_event = 92
-			 }
+		 head_of_government = 13200103 #Spiridon_Lambros
+		FRA = {
+			 country_event = 92 #Venizelos_leaves_Greek_government
+			}
 		 set_global_flag = 2019514_EVENT_DONE
 		 }
 	option = {
@@ -1764,8 +1764,8 @@
 			 }
 		 set_global_flag = entente_hostility
 		 FRA = {
-			 country_event = 96
-			 }
+			 country_event = 96 #Greece_grants_Bulgaria_military_access
+			}
 		 set_global_flag = 2019517_EVENT_DONE
 		 }
 	option = {
@@ -1830,9 +1830,9 @@
 		 }
 	trigger = {
 		 has_global_flag = 2019517_EVENT_DONE
-		 head_of_government = 90199
-		 4720 = {
-			 controlled_by = ENG
+		 head_of_government = 13200103 #Spiridon_Lambros
+		4720 = {#Salonica
+			controlled_by = ENG
 			 }
 		 tag = GRE
 		 date = 1914.1.1
@@ -1883,8 +1883,8 @@
 			 factor = 100
 			 }
 		 FRA = {
-			 country_event = 99
-			 }
+			 country_event = 99 #Greece_accepts_our_demands
+			}
 		 relation = {
 			 who = FRA
 			 value = 15
@@ -1937,8 +1937,8 @@
 		 ai_chance = {
 			 factor = 100
 			 }
-		 country_event = 100
-		 set_global_flag = 2019521_EVENT_DONE
+		 country_event = 100 #The_'Vêpres_Grecques'
+		set_global_flag = 2019521_EVENT_DONE
 		 }
 	option = {
 		 name = "DH_EVENT_2019521_Option2"
@@ -1979,9 +1979,9 @@
 		 join_faction = allies
 		 clr_global_flag = entente_hostility
 		 clr_global_flag = greece_mobilized
-		 head_of_state = 90211
-		 head_of_government = 90010
-		 relation = {
+		 head_of_state = 13200110 #Alexandros_I
+		head_of_government = 13200008 #Eleftherios_Venizelos
+		relation = {
 			 who = FRA
 			 value = 50
 			 }
@@ -2076,8 +2076,8 @@
 			 factor = 100
 			 }
 		 BUL = {
-			 country_event = 3
-			 }
+			 country_event = 3 #The_Fall_of_Serbia
+			}
 		 set_global_flag = 2191508_EVENT_DONE
 		 }
 	option = {
@@ -2116,8 +2116,8 @@
 			 value = 10
 			 }
 		 GRE = {
-			 country_event = 140
-			 }
+			 country_event = 140 #Bulgaria_joins_the_Central_Powers!
+			}
 		 set_global_flag = 2191509_EVENT_DONE
 		 }
 	}
@@ -2159,8 +2159,8 @@
 			 value = 10
 			 }
 		 GRE = {
-			 country_event = 140
-			 }
+			 country_event = 140 #Bulgaria_joins_the_Central_Powers!
+			}
 		 set_global_flag = 2191509_EVENT_DONE
 		 }
 	}
@@ -2223,8 +2223,8 @@
 			 }
 		 name = "DH_EVENT_2191510_Option1"
 		 BUL = {
-			 country_event = 4
-			 }
+			 country_event = 4 #Central_Power's_proposal
+			}
 		 set_global_flag = 2191510_EVENT_DONE
 		 }
 	option = {
@@ -2288,8 +2288,8 @@
 			 factor = 100
 			 }
 		 BUL = {
-			 country_event = 4
-			 }
+			 country_event = 4 #Central_Power's_proposal
+			}
 		 set_global_flag = 2192529_EVENT_DONE
 		 }
 	}
@@ -2354,8 +2354,8 @@
 	option = {
 		 name = "DH_EVENT_2084503_Option1"
 		 ALB = {
-			 country_event = 1
-			 }
+			 country_event = 1 #Let_Serbian_troops_retreat?
+			}
 		 set_global_flag = 2084503_EVENT_DONE
 		 }
 	option = {
@@ -2419,8 +2419,8 @@
 			 factor = 50
 			 }
 		 SER = {
-			 country_event = 369
-			 }
+			 country_event = 369 #Evacuate_through_Albania!
+			}
 		 random_country = {
 			 limit = {
 				 tag = FRA
@@ -2429,8 +2429,8 @@
 					 }
 				 }
 			 FRA = {
-				 country_event = 94
-				 }
+				 country_event = 94 #Serbian_army_evacuate_through_Albania!
+				}
 			 }
 		 set_global_flag = 2058500_EVENT_DONE
 		 }

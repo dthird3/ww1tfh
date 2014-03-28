@@ -1,147 +1,125 @@
 
 diplomatic_decisions = {
-	 dictator_ship = {
-		potential = {
-			 dissent = 20
-			 government_in_exile = no
-			 NOT = 
-			 {
-				 
-				 government = national_socialism
-				 }
-			 NOT = 
-			 {
-				 
-				 government = fascist_republic
-				 }
-			 NOT = 
-			 {
-				 
-				 government = germanic_fascist_republic
-				 }
-			 NOT = 
-			 {
-				 
-				 government = right_wing_republic
-				 }
-			 NOT = 
-			 {
-				 
-				 government = hungarian_right_wing_republic
-				 }
-			 NOT = 
-			 {
-				 
-				 government = right_wing_autocrat
-				 }
-			 NOT = 
-			 {
-				 
-				 government = absolute_monarchy
-				 }
-			 NOT = 
-			 {
-				 
-				 government = imperial
-				 }
-			 NOT = 
-			 {
-				 
-				 government = socialist_republic
-				 }
-			 NOT = 
-			 {
-				 
-				 government = federal_socialist_republic
-				 }
-			 NOT = 
-			 {
-				 
-				 government = tsar_autocracy
-				 }
-			 NOT = 
-			 {
-				 
-				 government = dual_monarchy
-				 }
-			 }
-		allow = {
-			 }
-		effect = {
-			 dissent = 5
-			 national_unity = -15
-			 organisation = 30
-			 government = fascist_republic
-			 }
-		}
-	
+ dictator_ship = {
+potential = {
+ dissent = 20
+ government_in_exile = no
+ NOT = {
+	 government = national_socialism
+	 }
+ NOT = {
+	 government = fascist_republic
+	 }
+ NOT = {
+	 government = germanic_fascist_republic
+	 }
+ NOT = {
+	 government = right_wing_republic
+	 }
+ NOT = {
+	 government = hungarian_right_wing_republic
+	 }
+ NOT = {
+	 government = right_wing_autocrat
+	 }
+ NOT = {
+	 government = absolute_monarchy
+	 }
+ NOT = {
+	 government = imperial
+	 }
+ NOT = {
+	 government = socialist_republic
+	 }
+ NOT = {
+	 government = federal_socialist_republic
+	 }
+ NOT = {
+	 government = tsar_autocracy
+	 }
+ NOT = {
+	 government = dual_monarchy
+	 }
+ }
+allow = {
+ }
+effect = {
+ dissent = 5
+ national_unity = -15
+ organisation = 30
+ government = fascist_republic
+ }
+}
 
-	 form_yugoslavia = {
-		ai_will_do = {
-			 factor = 1
-			 }
-		potential = {
-			 tag = SER
-			 has_country_flag = form_yugo
-			 NOT = {
-				 ENG = {
-					 has_country_flag = yugoslavia_now
-					 }
-				 }
-			 }
-		allow = {
-			 war = no
-			 }
-		effect = {
-			 SER = {
-				 any_owned = {
-					 limit = {
-						 is_core = SER
-						 }
-					 add_core = YUG
-					 }
-				 }
-			 MTN = {
-				 any_owned = {
-					 limit = {
-						 is_core = MTN
-						 }
-					 add_core = YUG
-					 }
-				 }
-			 YUG = {
-				 inherit = MTN
-				 }
-			 YUG = {
-				 inherit = SER
-				 }
-			 money = 100
-			 manpower = 20
-			 ENG = {
-				 set_country_flag = yugoslavia_now
-				 }
-			 }
-		}
-	
 
-	 RUSE3 = {
-		ai_will_do = {
-			 factor = 1
+
+ form_yugoslavia = {
+ai_will_do = {
+ factor = 1
+ }
+potential = {
+ tag = SER
+ has_country_flag = form_yugo
+ NOT = {
+	 ENG = {
+		 has_country_flag = yugoslavia_now
+		 }
+	 }
+ }
+allow = {
+ war = no
+ }
+effect = {
+ SER = {
+	 any_owned = {
+		 limit = {
+			 is_core = SER
 			 }
-		potential = {
-			 tag = RUS
-			 war = yes
-			 date = 1914.12.10
-			 not = {
-				 has_country_flag = SIM
-				 }
+		 add_core = YUG
+		 }
+	 }
+ MTN = {
+	 any_owned = {
+		 limit = {
+			 is_core = MTN
 			 }
-		allow = {
-			 }
-		effect = {
-			 country_event = 100150
-			 set_country_flag = SIM
-			 }
-		}
-	}
+		 add_core = YUG
+		 }
+	 }
+ YUG = {
+	 inherit = MTN
+	 }
+ YUG = {
+	 inherit = SER
+	 }
+ money = 100
+ manpower = 20
+ ENG = {
+	 set_country_flag = yugoslavia_now
+	 }
+ }
+}
+
+
+
+ RUSE3 = {
+ai_will_do = {
+ factor = 1
+ }
+potential = {
+ tag = RUS
+ war = yes
+ date = 1914.12.10
+ not = {
+	 has_country_flag = SIM
+	 }
+ }
+allow = {
+ }
+effect = {
+ country_event = 100150 #100150
+set_country_flag = SIM
+ }
+}
+}
 

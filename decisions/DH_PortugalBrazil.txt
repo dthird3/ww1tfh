@@ -1,97 +1,100 @@
 
 diplomatic_decisions = {
-	 2001536_decision = {
-		ai_will_do = {
-			 factor = 1
+ 2001536_decision = {
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 exists = POR
+		 GER = {
+			 war_with = ENG
 			 }
-		potential = {
-			 exists = POR
-			 GER = {
+		 not = {
+			 POR = {
 				 war_with = ENG
 				 }
-			 not = {
-				 POR = {
-					 war_with = ENG
-					 }
-				 POR = {
-					 faction = allies
-					 }
-				 POR = {
-					 faction = axis
-					 }
+			 POR = {
+				 faction = allies
 				 }
-			 tag = ENG
-			 date = 1916.1.1
-			 not = {
-				 date = 1925.12.30
-				 }
-			 not = {
-				 has_global_flag = SLEEPEVENT_2001536
-				 }
-			 not = {
-				 has_country_flag = decision_2001536
+			 POR = {
+				 faction = axis
 				 }
 			 }
-		allow = {
-			 relation = {
-				 who = POR
-				 value = 10
-				 }
-			 2613 = {
-				 controlled_by = FRA
-				 }
+		 tag = ENG
+		 date = 1916.1.1
+		 not = {
+			 date = 1925.12.30
 			 }
-		effect = {
-			 country_event = 42
-			 set_country_flag = decision_2001536
+		 not = {
+			 has_global_flag = SLEEPEVENT_2001536
 			 }
-		}
-	
-
-	 2001538_decision = {
-		ai_will_do = {
-			 factor = 1
+		 not = {
+			 has_country_flag = decision_2001536
 			 }
-		potential = {
-			 exists = BRA
-			 GER = {
-				 war_with = ENG
-				 }
-			 not = {
-				 BRA = {
-					 war_with = ENG
-					 }
-				 BRA = {
-					 faction = allies
-					 }
-				 BRA = {
-					 faction = axis
-					 }
-				 }
-			 GER = {
-				 has_country_flag = break_blockade
-				 }
-			 tag = BRA
-			 date = 1917.1.1
-			 not = {
-				 date = 1925.12.30
-				 }
-			 not = {
-				 has_global_flag = SLEEPEVENT_2001538
-				 }
-			 not = {
-				 has_country_flag = decision_2001538
-				 }
+		 }
+	allow = {
+		 relation = {
+			 who = POR
+			 value = 10
 			 }
-		allow = {
-			 2613 = {
-				 controlled_by = FRA
-				 }
+		 2613 = {
+			#Paris
+			controlled_by = FRA
 			 }
-		effect = {
-			 country_event = 44
-			 set_country_flag = decision_2001538
-			 }
-		}
+		 }
+	effect = {
+		 country_event = 42 #Align_Portugal
+		set_country_flag = decision_2001536
+		 }
 	}
+
+
+
+ 2001538_decision = {
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 exists = BRA
+		 GER = {
+			 war_with = ENG
+			 }
+		 not = {
+			 BRA = {
+				 war_with = ENG
+				 }
+			 BRA = {
+				 faction = allies
+				 }
+			 BRA = {
+				 faction = axis
+				 }
+			 }
+		 GER = {
+			 has_country_flag = break_blockade
+			 }
+		 tag = BRA
+		 date = 1917.1.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2001538
+			 }
+		 not = {
+			 has_country_flag = decision_2001538
+			 }
+		 }
+	allow = {
+		 2613 = {
+			#Paris
+			controlled_by = FRA
+			 }
+		 }
+	effect = {
+		 country_event = 44 #Declare_War_Against_Germany
+		set_country_flag = decision_2001538
+		 }
+	}
+}
 
