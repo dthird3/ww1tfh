@@ -30,14 +30,14 @@
 		 SOV = {
 			 war = yes
 			 }
-		 1928 = {
-			 owned_by = POL
+		 1928 = {#Warszawa
+			owned_by = POL
 			 }
-		 2509 = {
-			 owned_by = POL
+		 2509 = {#Lwów
+			owned_by = POL
 			 }
-		 1986 = {
-			 owned_by = POL
+		 1986 = {#Brzesc_Litewski
+			owned_by = POL
 			 }
 		 tag = POL
 		 date = 1916.1.1
@@ -372,24 +372,24 @@
 					 }
 				 }
 			 THIS = {
-				 head_of_state = 30095
-				 }
+				 head_of_state = 17100074 #Leon_Trotsky
+				}
 			 }
 		 random_country = {
 			 limit = {
 				 year = 1919
 				 }
 			 THIS = {
-				 head_of_state = 30001
-				 }
+				 head_of_state = 17100001 #Mikhail_I._Kalinin
+				}
 			 }
-		 head_of_government = 30107
-		 foreign_minister = 30095
-		 chief_of_army = 30096
-		 join_faction = comintern
+		 head_of_government = 17100082 #Vladimir_Lenin
+		foreign_minister = 17100074 #Leon_Trotsky
+		chief_of_army = 17100075 #Nikolai_Krylenko
+		join_faction = comintern
 		 SOV = {
-			 country_event = 378
-			 }
+			 country_event = 378 #Dissolution_of_the_Constituent_Assembly
+			}
 		 set_global_flag = 2007501_EVENT_DONE
 		 }
 	}
@@ -593,17 +593,17 @@
 		 not = {
 			 dissent = 10
 			 }
-		 1409 = {
-			 controlled_by = THIS
+		 1409 = {#Moskva
+			controlled_by = THIS
 			 }
-		 699 = {
-			 controlled_by = THIS
+		 699 = {#Sestroretsk
+			controlled_by = THIS
 			 }
-		 2857 = {
-			 controlled_by = THIS
+		 2857 = {#Tsaritsyn
+			controlled_by = THIS
 			 }
-		 1330 = {
-			 controlled_by = THIS
+		 1330 = {#Kazan
+			controlled_by = THIS
 			 }
 		 tag = SOV
 		 date = 1917.1.1
@@ -647,17 +647,17 @@
 		 not = {
 			 dissent = 10
 			 }
-		 1409 = {
-			 controlled_by = THIS
+		 1409 = {#Moskva
+			controlled_by = THIS
 			 }
-		 699 = {
-			 controlled_by = THIS
+		 699 = {#Sestroretsk
+			controlled_by = THIS
 			 }
-		 2857 = {
-			 controlled_by = THIS
+		 2857 = {#Tsaritsyn
+			controlled_by = THIS
 			 }
-		 1330 = {
-			 controlled_by = THIS
+		 1330 = {#Kazan
+			controlled_by = THIS
 			 }
 		 tag = SOV
 		 date = 1918.1.1
@@ -699,8 +699,8 @@
 	trigger = {
 		 has_global_flag = 2007509_EVENT_DONE
 		 has_global_flag = 2007517_EVENT_DONE
-		 head_of_government = 30107
-		 tag = SOV
+		 head_of_government = 17100082 #Vladimir_Lenin
+		tag = SOV
 		 date = 1918.1.1
 		 not = {
 			 date = 1925.12.30
@@ -778,8 +778,8 @@
 	trigger = {
 		 has_global_flag = 2007511_EVENT_DONE
 		 or = {
-			 minister_of_intelligence = 30108
-			 }
+			 minister_of_intelligence = 17100083 #Felix_Dzerzhinsky
+			}
 		 not = {
 			 dissent = 15
 			 }
@@ -907,47 +907,47 @@
 	option = {
 		 name = "DH_EVENT_2007515_Option7"
 		 dissent = 10
-		 1949 = {
-			 create_revolt = 3
+		 1949 = {#Tambov
+			create_revolt = 3
 			 }
-		 1412 = {
-			 create_revolt = 3
+		 1412 = {#Lukhovitsy
+			create_revolt = 3
 			 }
-		 1589 = {
-			 create_revolt = 3
+		 1589 = {#Tula
+			create_revolt = 3
 			 }
-		 1498 = {
-			 create_revolt = 3
+		 1498 = {#Kaluga
+			create_revolt = 3
 			 }
-		 1229 = {
-			 create_revolt = 3
+		 1229 = {#Liezna
+			create_revolt = 3
 			 }
-		 1148 = {
-			 create_revolt = 3
+		 1148 = {#Sianno
+			create_revolt = 3
 			 }
-		 989 = {
-			 create_revolt = 3
+		 989 = {#Pskov
+			create_revolt = 3
 			 }
-		 909 = {
-			 create_revolt = 3
+		 909 = {#Novgorod
+			create_revolt = 3
 			 }
-		 1699 = {
-			 create_revolt = 3
+		 1699 = {#Kasciukovicy
+			create_revolt = 3
 			 }
-		 2003 = {
-			 create_revolt = 3
+		 2003 = {#Krasnolesnyy
+			create_revolt = 3
 			 }
-		 2068 = {
-			 create_revolt = 3
+		 2068 = {#Saratov
+			create_revolt = 3
 			 }
-		 1601 = {
-			 create_revolt = 3
+		 1601 = {#Penza
+			create_revolt = 3
 			 }
-		 1703 = {
-			 create_revolt = 3
+		 1703 = {#Dimitrovsk
+			create_revolt = 3
 			 }
-		 1109 = {
-			 create_revolt = 3
+		 1109 = {#Dubno
+			create_revolt = 3
 			 }
 		 set_global_flag = 2007515_EVENT_DONE
 		 }
@@ -984,26 +984,26 @@
 	option = {
 		 name = "DH_EVENT_2007516_Option7"
 		 dissent = 5
-		 1949 = {
-			 create_revolt = 3
+		 1949 = {#Tambov
+			create_revolt = 3
 			 }
-		 1949 = {
-			 create_revolt = 3
+		 1949 = {#Tambov
+			create_revolt = 3
 			 }
-		 1949 = {
-			 create_revolt = 3
+		 1949 = {#Tambov
+			create_revolt = 3
 			 }
-		 1949 = {
-			 create_revolt = 3
+		 1949 = {#Tambov
+			create_revolt = 3
 			 }
-		 1949 = {
-			 create_revolt = 3
+		 1949 = {#Tambov
+			create_revolt = 3
 			 }
-		 1949 = {
-			 create_revolt = 3
+		 1949 = {#Tambov
+			create_revolt = 3
 			 }
-		 1949 = {
-			 create_revolt = 3
+		 1949 = {#Tambov
+			create_revolt = 3
 			 }
 		 set_global_flag = 2007516_EVENT_DONE
 		 }
@@ -1032,8 +1032,8 @@
 			 dissent = 10
 			 has_global_flag = 2007509_EVENT_DONE
 			 }
-		 699 = {
-			 controlled_by = THIS
+		 699 = {#Sestroretsk
+			controlled_by = THIS
 			 }
 		 tag = SOV
 		 date = 1915.1.1
@@ -1047,11 +1047,11 @@
 	option = {
 		 name = "DH_EVENT_2007517_Option7"
 		 dissent = 5
-		 699 = {
-			 create_revolt = 3
+		 699 = {#Sestroretsk
+			create_revolt = 3
 			 }
-		 699 = {
-			 create_revolt = 3
+		 699 = {#Sestroretsk
+			create_revolt = 3
 			 }
 		 set_global_flag = 2007517_EVENT_DONE
 		 }
@@ -1083,12 +1083,12 @@
 		 random_country = {
 			 limit = {
 				 tag = THIS
-				 head_of_state = 30112
-				 }
-			 head_of_state = 30001
-			 }
-		 remove_minister = 30112
-		 set_global_flag = 2007518_EVENT_DONE
+				 head_of_state = 17100084 #Yakov_Sverdlov
+				}
+			 head_of_state = 17100001 #Mikhail_I._Kalinin
+			}
+		 remove_minister = 17100084 #Yakov_Sverdlov
+		set_global_flag = 2007518_EVENT_DONE
 		 }
 	}
 
@@ -1110,8 +1110,8 @@
 		 days = 60
 		 }
 	trigger = {
-		 minister_alive = 30107
-		 or = {
+		 minister_alive = 17100082 #Vladimir_Lenin
+		or = {
 			 and = {
 				 year = 1923
 				 month = 8
@@ -1128,9 +1128,9 @@
 		 }
 	option = {
 		 name = "DH_EVENT_2007519_Option7"
-		 head_of_government = 30008
-		 remove_minister = 30107
-		 set_global_flag = 2007519_EVENT_DONE
+		 head_of_government = 17100008 #Kliment_Y._Voroshilov
+		remove_minister = 17100082 #Vladimir_Lenin
+		set_global_flag = 2007519_EVENT_DONE
 		 }
 	}
 
@@ -1156,23 +1156,23 @@
 		 not = {
 			 exists = WHR
 			 }
-		 1409 = {
-			 controlled_by = THIS
+		 1409 = {#Moskva
+			controlled_by = THIS
 			 }
-		 699 = {
-			 controlled_by = THIS
+		 699 = {#Sestroretsk
+			controlled_by = THIS
 			 }
-		 2857 = {
-			 controlled_by = THIS
+		 2857 = {#Tsaritsyn
+			controlled_by = THIS
 			 }
-		 1330 = {
-			 controlled_by = THIS
+		 1330 = {#Kazan
+			controlled_by = THIS
 			 }
-		 8528 = {
-			 controlled_by = THIS
+		 8528 = {#Omsk
+			controlled_by = THIS
 			 }
-		 4390 = {
-			 controlled_by = THIS
+		 4390 = {#Vladivostok
+			controlled_by = THIS
 			 }
 		 tag = SOV
 		 date = 1915.1.1
@@ -1221,365 +1221,365 @@
 	option = {
 		 name = "DH_EVENT_2007533_Option7"
 		 release = WHR
-		 129 = {
-			 secede_province = WHR
+		 129 = {#Kestenga
+			secede_province = WHR
 			 }
-		 130 = {
-			 secede_province = WHR
+		 130 = {#Karelaksha
+			secede_province = WHR
 			 }
-		 146 = {
-			 secede_province = WHR
+		 146 = {#Loukhi
+			secede_province = WHR
 			 }
-		 147 = {
-			 secede_province = WHR
+		 147 = {#Gridino
+			secede_province = WHR
 			 }
-		 149 = {
-			 secede_province = WHR
+		 149 = {#Yuma
+			secede_province = WHR
 			 }
-		 150 = {
-			 secede_province = WHR
+		 150 = {#Kannusuo
+			secede_province = WHR
 			 }
-		 165 = {
-			 secede_province = WHR
+		 165 = {#Buldyri
+			secede_province = WHR
 			 }
-		 198 = {
-			 secede_province = WHR
+		 198 = {#Pingosalma
+			secede_province = WHR
 			 }
-		 211 = {
-			 secede_province = WHR
+		 211 = {#Pongoma
+			secede_province = WHR
 			 }
-		 239 = {
-			 secede_province = WHR
+		 239 = {#Chirka_Kem
+			secede_province = WHR
 			 }
-		 240 = {
-			 secede_province = WHR
+		 240 = {#Soroka
+			secede_province = WHR
 			 }
-		 255 = {
-			 secede_province = WHR
+		 255 = {#Kolezhma
+			secede_province = WHR
 			 }
-		 268 = {
-			 secede_province = WHR
+		 268 = {#Kem
+			secede_province = WHR
 			 }
-		 269 = {
-			 secede_province = WHR
+		 269 = {#Yelmozero
+			secede_province = WHR
 			 }
-		 270 = {
-			 secede_province = WHR
+		 270 = {#Panozero
+			secede_province = WHR
 			 }
-		 287 = {
-			 secede_province = WHR
+		 287 = {#Segezha
+			secede_province = WHR
 			 }
-		 307 = {
-			 secede_province = WHR
+		 307 = {#Rugozero
+			secede_province = WHR
 			 }
-		 224 = {
-			 secede_province = WHR
+		 224 = {#Tishkozero
+			secede_province = WHR
 			 }
-		 237 = {
-			 secede_province = WHR
+		 237 = {#Muezero
+			secede_province = WHR
 			 }
-		 285 = {
-			 secede_province = WHR
+		 285 = {#Reboly
+			secede_province = WHR
 			 }
-		 286 = {
-			 secede_province = WHR
+		 286 = {#Porozero
+			secede_province = WHR
 			 }
-		 305 = {
-			 secede_province = WHR
+		 305 = {#Lendery
+			secede_province = WHR
 			 }
-		 306 = {
-			 secede_province = WHR
+		 306 = {#Padany
+			secede_province = WHR
 			 }
-		 329 = {
-			 secede_province = WHR
+		 329 = {#Lazarevo
+			secede_province = WHR
 			 }
-		 330 = {
-			 secede_province = WHR
+		 330 = {#Kolezhma
+			secede_province = WHR
 			 }
-		 353 = {
-			 secede_province = WHR
+		 353 = {#Pryakkila
+			secede_province = WHR
 			 }
-		 354 = {
-			 secede_province = WHR
+		 354 = {#Maselskaya
+			secede_province = WHR
 			 }
-		 379 = {
-			 secede_province = WHR
+		 379 = {#Kyappaselga
+			secede_province = WHR
 			 }
-		 405 = {
-			 secede_province = WHR
+		 405 = {#Medvezhegorsk
+			secede_province = WHR
 			 }
-		 406 = {
-			 secede_province = WHR
+		 406 = {#Sungu
+			secede_province = WHR
 			 }
-		 91 = {
-			 secede_province = WHR
+		 91 = {#Uhta
+			secede_province = WHR
 			 }
-		 210 = {
-			 secede_province = WHR
+		 210 = {#Olanga
+			secede_province = WHR
 			 }
-		 222 = {
-			 secede_province = WHR
+		 222 = {#Voinitsa
+			secede_province = WHR
 			 }
-		 223 = {
-			 secede_province = WHR
+		 223 = {#Yuvalaksha
+			secede_province = WHR
 			 }
-		 238 = {
-			 secede_province = WHR
+		 238 = {#Kentozero
+			secede_province = WHR
 			 }
-		 253 = {
-			 secede_province = WHR
+		 253 = {#Sofyanga
+			secede_province = WHR
 			 }
-		 267 = {
-			 secede_province = WHR
+		 267 = {#Kostomuksha
+			secede_province = WHR
 			 }
-		 148 = {
-			 secede_province = WHR
+		 148 = {#Kamenka
+			secede_province = WHR
 			 }
-		 166 = {
-			 secede_province = WHR
+		 166 = {#Unezhma
+			secede_province = WHR
 			 }
-		 271 = {
-			 secede_province = WHR
+		 271 = {#Nyukhcha
+			secede_province = WHR
 			 }
-		 288 = {
-			 secede_province = WHR
+		 288 = {#Sumskiy_Posad
+			secede_province = WHR
 			 }
-		 309 = {
-			 secede_province = WHR
+		 309 = {#Petrovski_Yam
+			secede_province = WHR
 			 }
-		 331 = {
-			 secede_province = WHR
+		 331 = {#Chelmuzhi
+			secede_province = WHR
 			 }
-		 332 = {
-			 secede_province = WHR
+		 332 = {#Korosozero
+			secede_province = WHR
 			 }
-		 355 = {
-			 secede_province = WHR
+		 355 = {#Danilovo
+			secede_province = WHR
 			 }
-		 356 = {
-			 secede_province = WHR
+		 356 = {#Chelozero
+			secede_province = WHR
 			 }
-		 378 = {
-			 secede_province = WHR
+		 378 = {#Gabselga
+			secede_province = WHR
 			 }
-		 311 = {
-			 secede_province = WHR
+		 311 = {#Arkhangelsk
+			secede_province = WHR
 			 }
-		 357 = {
-			 secede_province = WHR
+		 357 = {#Siyuskoe
+			secede_province = WHR
 			 }
-		 359 = {
-			 secede_province = WHR
+		 359 = {#Puchunga
+			secede_province = WHR
 			 }
-		 384 = {
-			 secede_province = WHR
+		 384 = {#Kodimskiy
+			secede_province = WHR
 			 }
-		 410 = {
-			 secede_province = WHR
+		 410 = {#Tarnogskiy_Gorodok
+			secede_province = WHR
 			 }
-		 411 = {
-			 secede_province = WHR
+		 411 = {#Shenkursk
+			secede_province = WHR
 			 }
-		 412 = {
-			 secede_province = WHR
+		 412 = {#Abramkovo
+			secede_province = WHR
 			 }
-		 440 = {
-			 secede_province = WHR
+		 440 = {#Tarnya
+			secede_province = WHR
 			 }
-		 441 = {
-			 secede_province = WHR
+		 441 = {#Ust_Padensk
+			secede_province = WHR
 			 }
-		 477 = {
-			 secede_province = WHR
+		 477 = {#Velsk
+			secede_province = WHR
 			 }
-		 512 = {
-			 secede_province = WHR
+		 512 = {#Velsk
+			secede_province = WHR
 			 }
-		 75 = {
-			 secede_province = WHR
+		 75 = {#Severodvinsk
+			secede_province = WHR
 			 }
-		 92 = {
-			 secede_province = WHR
+		 92 = {#Krasnogorsk
+			secede_province = WHR
 			 }
-		 110 = {
-			 secede_province = WHR
+		 110 = {#Samoded
+			secede_province = WHR
 			 }
-		 169 = {
-			 secede_province = WHR
+		 169 = {#Durakova
+			secede_province = WHR
 			 }
-		 185 = {
-			 secede_province = WHR
+		 185 = {#Bol'shaya_Tovra
+			secede_province = WHR
 			 }
-		 289 = {
-			 secede_province = WHR
+		 289 = {#Onega
+			secede_province = WHR
 			 }
-		 308 = {
-			 secede_province = WHR
+		 308 = {#Yarnema
+			secede_province = WHR
 			 }
-		 310 = {
-			 secede_province = WHR
+		 310 = {#Kodino
+			secede_province = WHR
 			 }
-		 312 = {
-			 secede_province = WHR
+		 312 = {#Yemetsk
+			secede_province = WHR
 			 }
-		 333 = {
-			 secede_province = WHR
+		 333 = {#Yangory
+			secede_province = WHR
 			 }
-		 334 = {
-			 secede_province = WHR
+		 334 = {#Yaremskaya
+			secede_province = WHR
 			 }
-		 335 = {
-			 secede_province = WHR
+		 335 = {#Yemtsa
+			secede_province = WHR
 			 }
-		 380 = {
-			 secede_province = WHR
+		 380 = {#Velikoye_Ozero
+			secede_province = WHR
 			 }
-		 381 = {
-			 secede_province = WHR
+		 381 = {#Oksova
+			secede_province = WHR
 			 }
-		 382 = {
-			 secede_province = WHR
+		 382 = {#Plesetsk
+			secede_province = WHR
 			 }
-		 408 = {
-			 secede_province = WHR
+		 408 = {#Zavoloch'e
+			secede_province = WHR
 			 }
-		 437 = {
-			 secede_province = WHR
+		 437 = {#Yangozero
+			secede_province = WHR
 			 }
-		 438 = {
-			 secede_province = WHR
+		 438 = {#Karelsk'aya
+			secede_province = WHR
 			 }
-		 439 = {
-			 secede_province = WHR
+		 439 = {#Nyandoma
+			secede_province = WHR
 			 }
-		 476 = {
-			 secede_province = WHR
+		 476 = {#Kargopol
+			secede_province = WHR
 			 }
-		 77 = {
-			 secede_province = WHR
+		 77 = {#Verkhnyaya_Toyma
+			secede_province = WHR
 			 }
-		 79 = {
-			 secede_province = WHR
+		 79 = {#Bugrino
+			secede_province = WHR
 			 }
-		 95 = {
-			 secede_province = WHR
+		 95 = {#Oseredok
+			secede_province = WHR
 			 }
-		 96 = {
-			 secede_province = WHR
+		 96 = {#Khabarovka
+			secede_province = WHR
 			 }
-		 97 = {
-			 secede_province = WHR
+		 97 = {#Burduy
+			secede_province = WHR
 			 }
-		 115 = {
-			 secede_province = WHR
+		 115 = {#Kargopolskoe
+			secede_province = WHR
 			 }
-		 131 = {
-			 secede_province = WHR
+		 131 = {#Vizhas
+			secede_province = WHR
 			 }
-		 132 = {
-			 secede_province = WHR
+		 132 = {#Sula
+			secede_province = WHR
 			 }
-		 151 = {
-			 secede_province = WHR
+		 151 = {#Nyrza
+			secede_province = WHR
 			 }
-		 152 = {
-			 secede_province = WHR
+		 152 = {#Kaprogorsk
+			secede_province = WHR
 			 }
-		 167 = {
-			 secede_province = WHR
+		 167 = {#Mezen
+			secede_province = WHR
 			 }
-		 171 = {
-			 secede_province = WHR
+		 171 = {#Koida
+			secede_province = WHR
 			 }
-		 184 = {
-			 secede_province = WHR
+		 184 = {#Pinega
+			secede_province = WHR
 			 }
-		 186 = {
-			 secede_province = WHR
+		 186 = {#Vozhgorskoe
+			secede_province = WHR
 			 }
-		 199 = {
-			 secede_province = WHR
+		 199 = {#Ust'_Vayen'ga
+			secede_province = WHR
 			 }
-		 290 = {
-			 secede_province = WHR
+		 290 = {#Ust'_Pinega
+			secede_province = WHR
 			 }
-		 336 = {
-			 secede_province = WHR
+		 336 = {#Naryan_Mar
+			secede_province = WHR
 			 }
-		 358 = {
-			 secede_province = WHR
+		 358 = {#Indiga
+			secede_province = WHR
 			 }
-		 383 = {
-			 secede_province = WHR
+		 383 = {#Yertom
+			secede_province = WHR
 			 }
-		 385 = {
-			 secede_province = WHR
+		 385 = {#Denisovka
+			secede_province = WHR
 			 }
-		 409 = {
-			 secede_province = WHR
+		 409 = {#Yuromsk
+			secede_province = WHR
 			 }
-		 413 = {
-			 secede_province = WHR
+		 413 = {#Makarikha
+			secede_province = WHR
 			 }
-		 442 = {
-			 secede_province = WHR
+		 442 = {#Rakulka
+			secede_province = WHR
 			 }
-		 446 = {
-			 secede_province = WHR
+		 446 = {#Ryabovo
+			secede_province = WHR
 			 }
-		 450 = {
-			 secede_province = WHR
+		 450 = {#Chasovsk
+			secede_province = WHR
 			 }
-		 478 = {
-			 secede_province = WHR
+		 478 = {#Sura
+			secede_province = WHR
 			 }
-		 513 = {
-			 secede_province = WHR
+		 513 = {#Ust_Tsilma
+			secede_province = WHR
 			 }
-		 514 = {
-			 secede_province = WHR
+		 514 = {#Gorka
+			secede_province = WHR
 			 }
-		 515 = {
-			 secede_province = WHR
+		 515 = {#Nikolsk
+			secede_province = WHR
 			 }
-		 516 = {
-			 secede_province = WHR
+		 516 = {#Koslan
+			secede_province = WHR
 			 }
-		 517 = {
-			 secede_province = WHR
+		 517 = {#Yarensk
+			secede_province = WHR
 			 }
-		 547 = {
-			 secede_province = WHR
+		 547 = {#Solvychegodsk
+			secede_province = WHR
 			 }
-		 552 = {
-			 secede_province = WHR
+		 552 = {#Chibya
+			secede_province = WHR
 			 }
-		 630 = {
-			 secede_province = WHR
+		 630 = {#Vyiski
+			secede_province = WHR
 			 }
-		 632 = {
-			 secede_province = WHR
+		 632 = {#Slobodzhikovo
+			secede_province = WHR
 			 }
-		 634 = {
-			 secede_province = WHR
+		 634 = {#Pezmog
+			secede_province = WHR
 			 }
-		 708 = {
-			 secede_province = WHR
+		 708 = {#Oshkurya
+			secede_province = WHR
 			 }
-		 712 = {
-			 secede_province = WHR
+		 712 = {#Ukhta
+			secede_province = WHR
 			 }
-		 794 = {
-			 secede_province = WHR
+		 794 = {#Ust'_Vym'
+			secede_province = WHR
 			 }
-		 836 = {
-			 secede_province = WHR
+		 836 = {#Storochevsk
+			secede_province = WHR
 			 }
-		 6625 = {
-			 secede_province = WHR
+		 6625 = {#Pozheg
+			secede_province = WHR
 			 }
-		 8104 = {
-			 secede_province = WHR
+		 8104 = {#Chernaya
+			secede_province = WHR
 			 }
 		 set_global_flag = 2007533_EVENT_DONE
 		 }
@@ -1616,62 +1616,62 @@
 	option = {
 		 name = "DH_EVENT_2007534_Option7"
 		 release = WHR
-		 8603 = {
-			 secede_province = WHR
+		 8603 = {#Aksenovo_Zilovskoye
+			secede_province = WHR
 			 }
-		 8604 = {
-			 secede_province = WHR
+		 8604 = {#Mogocha
+			secede_province = WHR
 			 }
-		 8667 = {
-			 secede_province = WHR
+		 8667 = {#Shilka
+			secede_province = WHR
 			 }
-		 8668 = {
-			 secede_province = WHR
+		 8668 = {#Ust'_Karsk
+			secede_province = WHR
 			 }
-		 8695 = {
-			 secede_province = WHR
+		 8695 = {#Byrka
+			secede_province = WHR
 			 }
-		 8721 = {
-			 secede_province = WHR
+		 8721 = {#Otpor
+			secede_province = WHR
 			 }
-		 8747 = {
-			 secede_province = WHR
+		 8747 = {#Balei
+			secede_province = WHR
 			 }
-		 8634 = {
-			 secede_province = WHR
+		 8634 = {#Vershino_Darasunskiy
+			secede_province = WHR
 			 }
-		 8693 = {
-			 secede_province = WHR
+		 8693 = {#Garbun_Dzagal
+			secede_province = WHR
 			 }
-		 8746 = {
-			 secede_province = WHR
+		 8746 = {#Olovyarmaya
+			secede_province = WHR
 			 }
-		 8771 = {
-			 secede_province = WHR
+		 8771 = {#Mildigun
+			secede_province = WHR
 			 }
-		 8798 = {
-			 secede_province = WHR
+		 8798 = {#Khilok
+			secede_province = WHR
 			 }
-		 3927 = {
-			 secede_province = WHR
+		 3927 = {#Youyi
+			secede_province = WHR
 			 }
-		 4061 = {
-			 secede_province = WHR
+		 4061 = {#Qitaihe
+			secede_province = WHR
 			 }
-		 4063 = {
-			 secede_province = WHR
+		 4063 = {#Lesozavodsk
+			secede_province = WHR
 			 }
-		 4127 = {
-			 secede_province = WHR
+		 4127 = {#Mikhailovka
+			secede_province = WHR
 			 }
-		 4193 = {
-			 secede_province = WHR
+		 4193 = {#Grodekovo
+			secede_province = WHR
 			 }
-		 4195 = {
-			 secede_province = WHR
+		 4195 = {#Kamen_Rubolov
+			secede_province = WHR
 			 }
-		 4261 = {
-			 secede_province = WHR
+		 4261 = {#Spassk
+			secede_province = WHR
 			 }
 		 set_global_flag = 2007534_EVENT_DONE
 		 }
@@ -1699,11 +1699,11 @@
 		 or = {
 			 and = {
 				 not = {
-					 2587 = {
-						 controlled_by = SOV
+					 2587 = {#Lyssytchansk
+						controlled_by = SOV
 						 }
-					 3384 = {
-						 controlled_by = SOV
+					 3384 = {#Kurganinsk
+						controlled_by = SOV
 						 }
 					 }
 				 }
@@ -1720,66 +1720,66 @@
 	option = {
 		 name = "DH_EVENT_2007535_Option7"
 		 dissent = 5
-		 2787 = {
-			 secede_province = WHR
+		 2787 = {#Nikolaevskaya
+			secede_province = WHR
 			 }
-		 2788 = {
-			 secede_province = WHR
+		 2788 = {#Podgorenskaya
+			secede_province = WHR
 			 }
-		 2851 = {
-			 secede_province = WHR
+		 2851 = {#Kuznetsovka
+			secede_province = WHR
 			 }
-		 2852 = {
-			 secede_province = WHR
+		 2852 = {#Pobeda
+			secede_province = WHR
 			 }
-		 2853 = {
-			 secede_province = WHR
+		 2853 = {#Zimovniki
+			secede_province = WHR
 			 }
-		 2916 = {
-			 secede_province = WHR
+		 2916 = {#Leninskiy
+			secede_province = WHR
 			 }
-		 2917 = {
-			 secede_province = WHR
+		 2917 = {#Veselovskoye
+			secede_province = WHR
 			 }
-		 2918 = {
-			 secede_province = WHR
+		 2918 = {#Orlovskiy
+			secede_province = WHR
 			 }
-		 2919 = {
-			 secede_province = WHR
+		 2919 = {#Matsinin
+			secede_province = WHR
 			 }
-		 2982 = {
-			 secede_province = WHR
+		 2982 = {#Karpovka
+			secede_province = WHR
 			 }
-		 2983 = {
-			 secede_province = WHR
+		 2983 = {#Stepnoy_Kurgan
+			secede_province = WHR
 			 }
-		 2984 = {
-			 secede_province = WHR
+		 2984 = {#Proletarsk
+			secede_province = WHR
 			 }
-		 2985 = {
-			 secede_province = WHR
+		 2985 = {#Mokryy_Gashun
+			secede_province = WHR
 			 }
-		 2986 = {
-			 secede_province = WHR
+		 2986 = {#Mamonkin
+			secede_province = WHR
 			 }
-		 3053 = {
-			 secede_province = WHR
+		 3053 = {#Kurgannyy
+			secede_province = WHR
 			 }
-		 3054 = {
-			 secede_province = WHR
+		 3054 = {#Pyatiletka
+			secede_province = WHR
 			 }
-		 3120 = {
-			 secede_province = WHR
+		 3120 = {#Bashanta
+			secede_province = WHR
 			 }
-		 3121 = {
-			 secede_province = WHR
+		 3121 = {#Uralan
+			secede_province = WHR
 			 }
-		 3122 = {
-			 secede_province = WHR
+		 3122 = {#Salsk
+			secede_province = WHR
 			 }
 		 WHR = {
-			 country_event = 566
-			 }
+			 country_event = 566 #Cossacks_rise_against_the_Bolsheviks
+			}
 		 set_global_flag = 2007535_EVENT_DONE
 		 }
 	}

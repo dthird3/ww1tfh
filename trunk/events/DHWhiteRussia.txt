@@ -28,8 +28,8 @@
 			 value = -100
 			 }
 		 WHR = {
-			 country_event = 551
-			 }
+			 country_event = 551 #Janin_remains_in_Russia
+			}
 		 set_global_flag = 2002551_EVENT_DONE
 		 }
 	option = {
@@ -43,8 +43,8 @@
 			 }
 		 dissent = 3
 		 WHR = {
-			 country_event = 552
-			 }
+			 country_event = 552 #Janin_is_fired
+			}
 		 set_global_flag = 2002551_EVENT_DONE
 		 }
 	}
@@ -76,11 +76,11 @@
 		 }
 	option = {
 		 name = "DH_EVENT_2173500_Option7"
-		 3927 = {
-			 hq_brigade = current
+		 3927 = {#Youyi
+			hq_brigade = current
 			 }
-		 3927 = {
-			 infantry_brigade = current
+		 3927 = {#Youyi
+			infantry_brigade = current
 			 infantry_brigade = current
 			 infantry_brigade = current
 			 }
@@ -187,8 +187,8 @@
 		 money = -100
 		 dissent = 5
 		 WHR = {
-			 country_event = 548
-			 }
+			 country_event = 548 #Janin_and_the_Czechoslovak_Legion
+			}
 		 set_global_flag = 2173502_EVENT_DONE
 		 }
 	}
@@ -266,21 +266,21 @@
 		 }
 	option = {
 		 name = "DH_EVENT_2173504_Option7"
-		 6674 = {
-			 hq_brigade = current
+		 6674 = {#Kyshtym
+			hq_brigade = current
 			 }
-		 6674 = {
-			 infantry_brigade = current
-			 infantry_brigade = current
-			 infantry_brigade = current
-			 }
-		 6674 = {
-			 infantry_brigade = current
+		 6674 = {#Kyshtym
+			infantry_brigade = current
 			 infantry_brigade = current
 			 infantry_brigade = current
 			 }
-		 6674 = {
+		 6674 = {#Kyshtym
+			infantry_brigade = current
 			 infantry_brigade = current
+			 infantry_brigade = current
+			 }
+		 6674 = {#Kyshtym
+			infantry_brigade = current
 			 infantry_brigade = current
 			 infantry_brigade = current
 			 }
@@ -364,8 +364,8 @@
 		 money = -100
 		 dissent = 1
 		 FRA = {
-			 country_event = 123
-			 }
+			 country_event = 123 #Russians_denounce_Janin's_behavior
+			}
 		 set_global_flag = 2173506_EVENT_DONE
 		 }
 	}
@@ -438,23 +438,23 @@
 	trigger = {
 		 has_global_flag = 2173501_EVENT_DONE
 		 not = {
-			 8528 = {
-				 controlled_by = THIS
+			 8528 = {#Omsk
+				controlled_by = THIS
 				 }
-			 1409 = {
-				 controlled_by = THIS
+			 1409 = {#Moskva
+				controlled_by = THIS
 				 }
-			 782 = {
-				 controlled_by = THIS
+			 782 = {#St._Petersburg
+				controlled_by = THIS
 				 }
-			 8211 = {
-				 controlled_by = THIS
+			 8211 = {#Sverdlovsk
+				controlled_by = THIS
 				 }
-			 2857 = {
-				 controlled_by = THIS
+			 2857 = {#Tsaritsyn
+				controlled_by = THIS
 				 }
-			 2857 = {
-				 controlled_by = THIS
+			 2857 = {#Tsaritsyn
+				controlled_by = THIS
 				 }
 			 }
 		 tag = WHR
@@ -539,8 +539,8 @@
 	option = {
 		 name = "DH_EVENT_2173511_Option7"
 		 dissent = 10
-		 remove_minister = 1360006
-		 set_global_flag = 2173511_EVENT_DONE
+		 remove_minister = 17900006 #Aleksandr_Kolchak
+		set_global_flag = 2173511_EVENT_DONE
 		 }
 	}
 
@@ -571,8 +571,8 @@
 				 }
 			 }
 		 war = no
-		 782 = {
-			 controlled_by = THIS
+		 782 = {#St._Petersburg
+			controlled_by = THIS
 			 }
 		 tag = WHR
 		 date = 1914.8.4
@@ -616,13 +616,13 @@
 						 }
 					 }
 				 }
-			 782 = {
-				 controlled_by = THIS
+			 782 = {#St._Petersburg
+				controlled_by = THIS
 				 }
 			 }
 		 war = no
-		 1409 = {
-			 controlled_by = THIS
+		 1409 = {#Moskva
+			controlled_by = THIS
 			 }
 		 tag = WHR
 		 date = 1914.8.4
@@ -666,16 +666,16 @@
 						 }
 					 }
 				 }
-			 782 = {
-				 controlled_by = THIS
+			 782 = {#St._Petersburg
+				controlled_by = THIS
 				 }
-			 1409 = {
-				 controlled_by = THIS
+			 1409 = {#Moskva
+				controlled_by = THIS
 				 }
 			 }
 		 war = no
-		 2857 = {
-			 controlled_by = THIS
+		 2857 = {#Tsaritsyn
+			controlled_by = THIS
 			 }
 		 tag = WHR
 		 date = 1914.8.4
@@ -719,22 +719,22 @@
 						 }
 					 }
 				 }
-			 782 = {
-				 controlled_by = THIS
+			 782 = {#St._Petersburg
+				controlled_by = THIS
 				 }
-			 1409 = {
-				 controlled_by = THIS
+			 1409 = {#Moskva
+				controlled_by = THIS
 				 }
-			 2857 = {
-				 controlled_by = THIS
+			 2857 = {#Tsaritsyn
+				controlled_by = THIS
 				 }
-			 2857 = {
-				 controlled_by = THIS
+			 2857 = {#Tsaritsyn
+				controlled_by = THIS
 				 }
 			 }
 		 war = no
-		 8211 = {
-			 controlled_by = THIS
+		 8211 = {#Sverdlovsk
+			controlled_by = THIS
 			 }
 		 tag = WHR
 		 date = 1914.8.4
@@ -815,23 +815,23 @@
 			 exists = RUS
 			 dissent = 10
 			 }
-		 782 = {
-			 controlled_by = THIS
+		 782 = {#St._Petersburg
+			controlled_by = THIS
 			 }
-		 1409 = {
-			 controlled_by = THIS
+		 1409 = {#Moskva
+			controlled_by = THIS
 			 }
-		 2857 = {
-			 controlled_by = THIS
+		 2857 = {#Tsaritsyn
+			controlled_by = THIS
 			 }
-		 8211 = {
-			 controlled_by = THIS
+		 8211 = {#Sverdlovsk
+			controlled_by = THIS
 			 }
-		 2857 = {
-			 controlled_by = THIS
+		 2857 = {#Tsaritsyn
+			controlled_by = THIS
 			 }
-		 8528 = {
-			 controlled_by = THIS
+		 8528 = {#Omsk
+			controlled_by = THIS
 			 }
 		 date = 1914.1.1
 		 not = {
@@ -880,27 +880,27 @@
 		 }
 	option = {
 		 name = "DH_EVENT_2168500_Option7"
-		 2587 = {
-			 hq_brigade = current
+		 2587 = {#Lyssytchansk
+			hq_brigade = current
 			 }
-		 2587 = {
-			 infantry_brigade = current
-			 infantry_brigade = current
-			 infantry_brigade = current
-			 }
-		 3309 = {
-			 hq_brigade = current
-			 }
-		 3309 = {
-			 infantry_brigade = current
+		 2587 = {#Lyssytchansk
+			infantry_brigade = current
 			 infantry_brigade = current
 			 infantry_brigade = current
 			 }
-		 948 = {
-			 hq_brigade = current
+		 3309 = {#Odessa
+			hq_brigade = current
 			 }
-		 948 = {
+		 3309 = {#Odessa
+			infantry_brigade = current
 			 infantry_brigade = current
+			 infantry_brigade = current
+			 }
+		 948 = {#Gdov
+			hq_brigade = current
+			 }
+		 948 = {#Gdov
+			infantry_brigade = current
 			 infantry_brigade = current
 			 infantry_brigade = current
 			 }
@@ -1009,31 +1009,31 @@
 		 }
 	option = {
 		 name = "DH_EVENT_2168503_Option7"
-		 2721 = {
-			 hq_brigade = current
+		 2721 = {#Konstatinovsk
+			hq_brigade = current
 			 }
-		 2721 = {
-			 cavalry_brigade = current
-			 cavalry_brigade = current
-			 cavalry_brigade = current
-			 }
-		 2721 = {
-			 cavalry_brigade = current
+		 2721 = {#Konstatinovsk
+			cavalry_brigade = current
 			 cavalry_brigade = current
 			 cavalry_brigade = current
 			 }
-		 2721 = {
-			 cavalry_brigade = current
+		 2721 = {#Konstatinovsk
+			cavalry_brigade = current
 			 cavalry_brigade = current
 			 cavalry_brigade = current
 			 }
-		 2721 = {
+		 2721 = {#Konstatinovsk
+			cavalry_brigade = current
+			 cavalry_brigade = current
+			 cavalry_brigade = current
+			 }
+		 2721 = {#Konstatinovsk
+			infantry_brigade = current
 			 infantry_brigade = current
 			 infantry_brigade = current
-			 infantry_brigade = current
 			 }
-		 2721 = {
-			 infantry_brigade = current
+		 2721 = {#Konstatinovsk
+			infantry_brigade = current
 			 infantry_brigade = current
 			 infantry_brigade = current
 			 }
@@ -1068,19 +1068,19 @@
 		 }
 	option = {
 		 name = "DH_EVENT_2147500_Option7"
-		 311 = {
-			 hq_brigade = current
+		 311 = {#Arkhangelsk
+			hq_brigade = current
 			 }
-		 311 = {
-			 infantry_brigade = current
+		 311 = {#Arkhangelsk
+			infantry_brigade = current
 			 infantry_brigade = current
 			 infantry_brigade = current
 			 }
-		 46 = {
-			 hq_brigade = current
+		 46 = {#Murmansk
+			hq_brigade = current
 			 }
-		 46 = {
-			 infantry_brigade = current
+		 46 = {#Murmansk
+			infantry_brigade = current
 			 infantry_brigade = current
 			 infantry_brigade = current
 			 }
@@ -1118,21 +1118,21 @@
 		 }
 	option = {
 		 name = "DH_EVENT_2147508_Option7"
-		 8998 = {
-			 hq_brigade = current
+		 8998 = {#Bukhara
+			hq_brigade = current
 			 }
-		 8998 = {
-			 militia_brigade = current
-			 militia_brigade = current
-			 militia_brigade = current
-			 }
-		 8998 = {
-			 militia_brigade = current
+		 8998 = {#Bukhara
+			militia_brigade = current
 			 militia_brigade = current
 			 militia_brigade = current
 			 }
-		 8998 = {
-			 cavalry_brigade = current
+		 8998 = {#Bukhara
+			militia_brigade = current
+			 militia_brigade = current
+			 militia_brigade = current
+			 }
+		 8998 = {#Bukhara
+			cavalry_brigade = current
 			 cavalry_brigade = current
 			 cavalry_brigade = current
 			 }
@@ -1180,16 +1180,16 @@
 		 }
 	option = {
 		 name = "DH_EVENT_2147509_Option7"
-		 8998 = {
-			 hq_brigade = current
+		 8998 = {#Bukhara
+			hq_brigade = current
 			 }
-		 8998 = {
-			 infantry_brigade = current
+		 8998 = {#Bukhara
+			infantry_brigade = current
 			 infantry_brigade = current
 			 infantry_brigade = current
 			 }
-		 8998 = {
-			 infantry_brigade = current
+		 8998 = {#Bukhara
+			infantry_brigade = current
 			 infantry_brigade = current
 			 infantry_brigade = current
 			 }

@@ -10,8 +10,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 0
 		 }
 	trigger = {
@@ -24,11 +23,11 @@
 			 factor = 100
 			 }
 		 POL = {
-			manpower = -220}
+			 manpower = -220}
 		 SOV = {
-			manpower = -216}
+			 manpower = -216}
 		 SOV = {
-			supplies = -2000}
+			 supplies = -2000}
 		 }
 	}
 
@@ -43,7 +42,7 @@
 	picture = "Polish_Troops"
 	 
 	trigger = {
-		tag = LIT
+		 tag = LIT
 		 }
 	option = {
 		 name = "ACTION_NAME_GREAT"
@@ -51,20 +50,17 @@
 			 factor = 100
 			 }
 		 POL = {
-			set_variable = {
+			 set_variable = {
 				 which = PDEPLOY
-				 
 				 value = +1928
 				 }}
 		 POL = {
-			change_variable = 
-			 {
+			 change_variable = {
 				 which = PolDelay
 				 value = +1
 				 }}
 		 SOV = {
-			change_variable = 
-			 {
+			 change_variable = {
 				 which = SovDelay
 				 value = +1
 				 }}
@@ -93,17 +89,17 @@
 		 ai_chance = {
 			 factor = 100
 			 }
-		 2576 = {
-			 create_revolt = 1
+		 2576 = {#Zhashkiv
+			create_revolt = 1
 			 }
-		 2641 = {
-			 create_revolt = 1
+		 2641 = {#Illintsi
+			create_revolt = 1
 			 }
-		 2642 = {
-			 create_revolt = 1
+		 2642 = {#Monastyryshche
+			create_revolt = 1
 			 }
 		 SOV = {
-			supplies = -500}
+			 supplies = -500}
 		 remove_brigade = "3-ya
 		 Galacian
 		 Brigada"
@@ -111,18 +107,18 @@
 		 Galacian
 		 Brigada"
 		 random_list = {
-			 25 = {
-				 remove_brigade = "1-ya
+			 25 = {#Andselv
+				remove_brigade = "1-ya
 				 Galacian
 				 Brigada"
 				 remove_brigade = "Galacian
 				 Corps
 				 HQ"
 				 }
-			 75 = {
+			 75 = {#Severodvinsk
 				POL = {
-					 country_event = 100811
-					 }}
+					 country_event = 100811 #100811
+					}}
 			 }
 		 }
 	}
@@ -149,11 +145,11 @@
 			 factor = 100
 			 }
 		 random_list = {
-			 40 = {
-				 load_oob = "scenarios/polish_bolshevik/reinforce_POL_OOB/POL_001.txt"
+			 40 = {#Suolovuopme
+				load_oob = "scenarios/polish_bolshevik/reinforce_POL_OOB/POL_001.txt"
 				 }
-			 60 = {
-				 load_oob = "scenarios/polish_bolshevik/reinforce_POL_OOB/POL_002.txt"
+			 60 = {#Monchegorsk
+				load_oob = "scenarios/polish_bolshevik/reinforce_POL_OOB/POL_002.txt"
 				 }
 			 }
 		 }
@@ -172,8 +168,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 1
 		 }
 	trigger = {
@@ -186,14 +181,14 @@
 			 factor = 100
 			 }
 		 POL = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_003.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_003.txt"}
 		 POL = {
-			officer_pool = 200}
+			 officer_pool = 200}
 		 }
 	}
 
-#Reinforcements Have Arrived
 
+#Reinforcements Have Arrived
 
  country_event = {
 	title = "Polish_Troops_Title"
@@ -204,8 +199,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 1
 		 }
 	trigger = {
@@ -218,14 +212,14 @@
 			 factor = 100
 			 }
 		 POL = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_004.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_004.txt"}
 		 POL = {
-			officer_pool = 800}
+			 officer_pool = 800}
 		 }
 	}
 
-#Reinforcements Have Arrived
 
+#Reinforcements Have Arrived
 
  country_event = {
 	title = "Polish_Troops_Title"
@@ -236,8 +230,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 1
 		 }
 	trigger = {
@@ -250,12 +243,12 @@
 			 factor = 100
 			 }
 		 POL = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_AIR_1.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_AIR_1.txt"}
 		 }
 	}
 
-#Reinforcements Have Arrived
 
+#Reinforcements Have Arrived
 
  country_event = {
 	title = "Polish_Troops_Title"
@@ -266,8 +259,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 1
 		 }
 	trigger = {
@@ -280,14 +272,14 @@
 			 factor = 100
 			 }
 		 POL = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_005.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_005.txt"}
 		 POL = {
-			officer_pool = 250}
+			 officer_pool = 250}
 		 }
 	}
 
-#Reinforcements Have Arrived
 
+#Reinforcements Have Arrived
 
  country_event = {
 	title = "Polish_Troops_Title"
@@ -298,8 +290,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 1
 		 }
 	trigger = {
@@ -312,14 +303,14 @@
 			 factor = 100
 			 }
 		 POL = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_006.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_006.txt"}
 		 POL = {
-			officer_pool = 600}
+			 officer_pool = 600}
 		 }
 	}
 
-#Reinforcements Have Arrived
 
+#Reinforcements Have Arrived
 
  country_event = {
 	title = "Polish_Troops_Title"
@@ -330,8 +321,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 1
 		 }
 	trigger = {
@@ -344,14 +334,14 @@
 			 factor = 100
 			 }
 		 POL = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_007.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_007.txt"}
 		 POL = {
-			officer_pool = 400}
+			 officer_pool = 400}
 		 }
 	}
 
-#Reinforcements Have Arrived
 
+#Reinforcements Have Arrived
 
  country_event = {
 	title = "Polish_Troops_Title"
@@ -362,8 +352,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 1
 		 }
 	trigger = {
@@ -376,14 +365,14 @@
 			 factor = 100
 			 }
 		 POL = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_008.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_008.txt"}
 		 POL = {
-			officer_pool = 800}
+			 officer_pool = 800}
 		 }
 	}
 
-#Reinforcements Have Arrived
 
+#Reinforcements Have Arrived
 
  country_event = {
 	title = "Polish_Troops_Title"
@@ -394,8 +383,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 1
 		 }
 	trigger = {
@@ -408,14 +396,14 @@
 			 factor = 100
 			 }
 		 POL = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_009.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_009.txt"}
 		 POL = {
-			officer_pool = 400}
+			 officer_pool = 400}
 		 }
 	}
 
-#Reinforcements Have Arrived
 
+#Reinforcements Have Arrived
 
  country_event = {
 	title = "Polish_Troops_Title"
@@ -426,8 +414,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 1
 		 }
 	trigger = {
@@ -440,9 +427,9 @@
 			 factor = 100
 			 }
 		 POL = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_010.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_010.txt"}
 		 POL = {
-			officer_pool = 600}
+			 officer_pool = 600}
 		 }
 	}
 
@@ -464,8 +451,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 0
 		 }
 	major = yes
@@ -473,24 +459,24 @@
 	trigger = {
 		 tag = POL
 		 POL = {
-			not = {
-				has_country_flag = "Desperate_Polish_Defence_1"}}
+			 not = {
+				 has_country_flag = "Desperate_Polish_Defence_1"}}
 		 or = {
-			 1928 = {
+			 1928 = {#Warszawa
 				any_neighbor_province = {
-					controlled_by = SOV}}
-			 1810 = {
+					 controlled_by = SOV}}
+			 1810 = {#Bialystok
 				any_neighbor_province = {
-					controlled_by = SOV}}
-			 2273 = {
+					 controlled_by = SOV}}
+			 2273 = {#Zwolen
 				any_neighbor_province = {
-					controlled_by = SOV}}
-			 1986 = {
+					 controlled_by = SOV}}
+			 1986 = {#Brzesc_Litewski
 				any_neighbor_province = {
-					controlled_by = SOV}}
-			 2568 = {
+					 controlled_by = SOV}}
+			 2568 = {#Jedrzejow
 				any_neighbor_province = {
-					controlled_by = SOV}}
+					 controlled_by = SOV}}
 			 }
 		 }
 	option = {
@@ -499,21 +485,21 @@
 			 factor = 100
 			 }
 		 POL = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_GAR_2.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_GAR_2.txt"}
 		 POL = {
-			officer_pool = 250}
+			 officer_pool = 250}
 		 POL = {
-			set_country_flag = "Desperate_Polish_Defence_1"}
+			 set_country_flag = "Desperate_Polish_Defence_1"}
 		 POL = {
-			set_variable = {
+			 set_variable = {
 				 which = PolDelay
 				 value = 1
 				 }}
 		 }
 	}
 
-#Rally to Warsaw's Defence!
 
+#Rally to Warsaw's Defence!
 
  country_event = {
 	title = "Desperate_Title"
@@ -524,8 +510,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 0
 		 }
 	major = yes
@@ -533,12 +518,12 @@
 	trigger = {
 		 tag = POL
 		 POL = {
-			has_country_flag = "Desperate_Polish_Defence_1"}
+			 has_country_flag = "Desperate_Polish_Defence_1"}
 		 POL = {
-			not = {
-				has_country_flag = "Desperate_Polish_Defence_2"}}
+			 not = {
+				 has_country_flag = "Desperate_Polish_Defence_2"}}
 		 POL = {
-			check_variable = {
+			 check_variable = {
 				 which = PolDelay
 				 value = 4
 				 }}
@@ -549,16 +534,16 @@
 			 factor = 100
 			 }
 		 POL = {
-			set_country_flag = "Desperate_Polish_Defence_2"}
+			 set_country_flag = "Desperate_Polish_Defence_2"}
 		 POL = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_GAR_3.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_GAR_3.txt"}
 		 POL = {
-			officer_pool = 250}
+			 officer_pool = 250}
 		 }
 	}
 
-#Reinforcements Have Arrived
 
+#Reinforcements Have Arrived
 
  country_event = {
 	title = "Polish_Troops_Title"
@@ -569,8 +554,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 0
 		 }
 	major = yes
@@ -578,15 +562,15 @@
 	trigger = {
 		 tag = POL
 		 POL = {
-			not = {
-				has_country_flag = "Defence_of_Poznan"}}
+			 not = {
+				 has_country_flag = "Defence_of_Poznan"}}
 		 or = {
-			 2096 = {
+			 2096 = {#Rawicz
 				any_neighbor_province = {
-					controlled_by = SOV}}
-			 1980 = {
+					 controlled_by = SOV}}
+			 1980 = {#Rogozno
 				any_neighbor_province = {
-					controlled_by = SOV}}
+					 controlled_by = SOV}}
 			 }
 		 }
 	option = {
@@ -595,11 +579,11 @@
 			 factor = 100
 			 }
 		 POL = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_GAR_5.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_GAR_5.txt"}
 		 POL = {
-			officer_pool = 400}
+			 officer_pool = 400}
 		 POL = {
-			set_country_flag = "Defence_of_Poznan"}
+			 set_country_flag = "Defence_of_Poznan"}
 		 }
 	}
 
@@ -616,8 +600,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 1
 		 }
 	trigger = {
@@ -630,16 +613,16 @@
 			 factor = 100
 			 }
 		 SOV = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_001.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_001.txt"}
 		 SOV = {
-			supplies = 2000}
+			 supplies = 2000}
 		 SOV = {
-			officer_pool = 1000}
+			 officer_pool = 1000}
 		 }
 	}
 
-#Reinforcements Have Arrived
 
+#Reinforcements Have Arrived
 
  country_event = {
 	title = "Russian_Troops_Title"
@@ -650,8 +633,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 1
 		 }
 	trigger = {
@@ -664,16 +646,16 @@
 			 factor = 100
 			 }
 		 SOV = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_002.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_002.txt"}
 		 SOV = {
-			supplies = 2000}
+			 supplies = 2000}
 		 SOV = {
-			officer_pool = 3100}
+			 officer_pool = 3100}
 		 }
 	}
 
-#Reinforcements Have Arrived
 
+#Reinforcements Have Arrived
 
  country_event = {
 	title = "Russian_Troops_Title"
@@ -684,8 +666,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 1
 		 }
 	trigger = {
@@ -698,16 +679,16 @@
 			 factor = 100
 			 }
 		 SOV = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_003.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_003.txt"}
 		 SOV = {
-			supplies = 2000}
+			 supplies = 2000}
 		 SOV = {
-			officer_pool = 1700}
+			 officer_pool = 1700}
 		 }
 	}
 
-#Reinforcements Have Arrived
 
+#Reinforcements Have Arrived
 
  country_event = {
 	title = "Russian_Troops_Title"
@@ -718,8 +699,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 1
 		 }
 	trigger = {
@@ -732,16 +712,16 @@
 			 factor = 100
 			 }
 		 SOV = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_004.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_004.txt"}
 		 SOV = {
-			supplies = 4000}
+			 supplies = 4000}
 		 SOV = {
-			officer_pool = 4700}
+			 officer_pool = 4700}
 		 }
 	}
 
-#Brusilov's appeal
 
+#Brusilov's appeal
 
  country_event = {
 	title = "Brusilovs_letter_Title"
@@ -752,8 +732,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 0
 		 }
 	trigger = {
@@ -766,16 +745,16 @@
 			 factor = 100
 			 }
 		 SOV = {
-			manpower = 110}
+			 manpower = 110}
 		 SOV = {
-			national_unity = 1}
+			 national_unity = 1}
 		 SOV = {
-			officer_pool = 2000}
+			 officer_pool = 2000}
 		 }
 	}
 
-#Reinforcements Have Arrived
 
+#Reinforcements Have Arrived
 
  country_event = {
 	title = "Russian_Troops_Title"
@@ -786,8 +765,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 1
 		 }
 	trigger = {
@@ -800,16 +778,16 @@
 			 factor = 100
 			 }
 		 SOV = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_005.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_005.txt"}
 		 SOV = {
-			supplies = 2000}
+			 supplies = 2000}
 		 SOV = {
-			officer_pool = 1400}
+			 officer_pool = 1400}
 		 }
 	}
 
-#Reinforcements Have Arrived
 
+#Reinforcements Have Arrived
 
  country_event = {
 	title = "Russian_Troops_Title"
@@ -820,8 +798,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 1
 		 }
 	trigger = {
@@ -834,14 +811,14 @@
 			 factor = 100
 			 }
 		 SOV = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_006.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_006.txt"}
 		 SOV = {
-			officer_pool = 1200}
+			 officer_pool = 1200}
 		 }
 	}
 
-#Reinforcements Have Arrived
 
+#Reinforcements Have Arrived
 
  country_event = {
 	title = "Russian_Troops_Title"
@@ -852,16 +829,15 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 1
 		 }
 	trigger = {
 		 tag = SOV
 		 date = 1920.7.8
 		 SOV = {
-			has_country_flag = "Lithuania_joins"}
-		 1355 = {
+			 has_country_flag = "Lithuania_joins"}
+		 1355 = {#Zarasai
 			controlled_by = SOV}
 		 }
 	option = {
@@ -870,16 +846,16 @@
 			 factor = 100
 			 }
 		 SOV = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/LIT_002.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/LIT_002.txt"}
 		 SOV = {
-			supplies = 1000}
+			 supplies = 1000}
 		 SOV = {
-			officer_pool = 600}
+			 officer_pool = 600}
 		 }
 	}
 
-#Reinforcements Have Arrived
 
+#Reinforcements Have Arrived
 
  country_event = {
 	title = "Russian_Troops_Title"
@@ -890,8 +866,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 1
 		 }
 	trigger = {
@@ -904,14 +879,14 @@
 			 factor = 100
 			 }
 		 SOV = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_007.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_007.txt"}
 		 SOV = {
-			officer_pool = 600}
+			 officer_pool = 600}
 		 }
 	}
 
-#Reinforcements Have Arrived
 
+#Reinforcements Have Arrived
 
  country_event = {
 	title = "Russian_Troops_Title"
@@ -922,15 +897,14 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 1
 		 }
 	trigger = {
 		 tag = SOV
 		 date = 1920.7.22
 		 not = {
-			has_country_flag = Latvian_Garrison_Released}
+			 has_country_flag = Latvian_Garrison_Released}
 		 }
 	option = {
 		 name = "ACTION_NAME_GREAT"
@@ -939,16 +913,16 @@
 			 }
 		 load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_GAR_1.txt"
 		 SOV = {
-			set_country_flag = Latvian_Garrison_1_Released}
+			 set_country_flag = Latvian_Garrison_1_Released}
 		 SOV = {
-			supplies = 2000}
+			 supplies = 2000}
 		 SOV = {
-			officer_pool = 900}
+			 officer_pool = 900}
 		 }
 	}
 
-#Reinforcements Have Arrived
 
+#Reinforcements Have Arrived
 
  country_event = {
 	title = "Russian_Troops_Title"
@@ -959,8 +933,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 1
 		 }
 	trigger = {
@@ -973,12 +946,12 @@
 			 factor = 100
 			 }
 		 SOV = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_AIR_1.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_AIR_1.txt"}
 		 }
 	}
 
-#Reinforcements Have Arrived
 
+#Reinforcements Have Arrived
 
  country_event = {
 	title = "Russian_Troops_Title"
@@ -989,8 +962,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 1
 		 }
 	trigger = {
@@ -1003,11 +975,11 @@
 			 factor = 100
 			 }
 		 SOV = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_008.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_008.txt"}
 		 SOV = {
-			supplies = 2000}
+			 supplies = 2000}
 		 SOV = {
-			officer_pool = 800}
+			 officer_pool = 800}
 		 }
 	}
 
@@ -1027,8 +999,8 @@
 		 tag = SOV
 		 date = 1920.8.18
 		 not = {
-			SOV = {
-				has_country_flag = Emergency_3_Released}}
+			 SOV = {
+				 has_country_flag = Emergency_3_Released}}
 		 }
 	option = {
 		 name = "ACTION_NAME_GREAT"
@@ -1036,11 +1008,11 @@
 			 factor = 100
 			 }
 		 SOV = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_009.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_009.txt"}
 		 SOV = {
-			officer_pool = 800}
+			 officer_pool = 800}
 		 SOV = {
-			set_country_flag = Emergency_3_Released}
+			 set_country_flag = Emergency_3_Released}
 		 }
 	}
 
@@ -1060,8 +1032,8 @@
 		 tag = SOV
 		 date = 1920.9.11
 		 not = {
-			SOV = {
-				has_country_flag = Emergency_2_Released}}
+			 SOV = {
+				 has_country_flag = Emergency_2_Released}}
 		 }
 	option = {
 		 name = "ACTION_NAME_GREAT"
@@ -1069,13 +1041,13 @@
 			 factor = 100
 			 }
 		 SOV = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_010.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_010.txt"}
 		 SOV = {
-			supplies = 2000}
+			 supplies = 2000}
 		 SOV = {
-			officer_pool = 1200}
+			 officer_pool = 1200}
 		 SOV = {
-			set_country_flag = Emergency_2_Released}
+			 set_country_flag = Emergency_2_Released}
 		 }
 	}
 
@@ -1095,8 +1067,8 @@
 		 tag = SOV
 		 date = 1920.10.1
 		 not = {
-			SOV = {
-				has_country_flag = Emergency_1_Released}}
+			 SOV = {
+				 has_country_flag = Emergency_1_Released}}
 		 }
 	option = {
 		 name = "ACTION_NAME_GREAT"
@@ -1104,13 +1076,13 @@
 			 factor = 100
 			 }
 		 SOV = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_011.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_011.txt"}
 		 SOV = {
-			supplies = 2000}
+			 supplies = 2000}
 		 SOV = {
-			officer_pool = 800}
+			 officer_pool = 800}
 		 SOV = {
-			set_country_flag = Emergency_1_Released}
+			 set_country_flag = Emergency_1_Released}
 		 }
 	}
 
@@ -1131,23 +1103,23 @@
 	trigger = {
 		 tag = SOV
 		 not = {
-			has_country_flag = Latvian_Garrison_Released}
+			 has_country_flag = Latvian_Garrison_Released}
 		 or = {
-			 1267 = {
+			 1267 = {#Drissa
 				controlled_by = POL}
-			 1105 = {
+			 1105 = {#Rasony
 				controlled_by = POL}
-			 1144 = {
+			 1144 = {#Dominikovo
 				controlled_by = POL}
-			 1403 = {
+			 1403 = {#Drozdy
 				controlled_by = POL}
-			 1107 = {
+			 1107 = {#Sumilina
 				controlled_by = POL}
-			 1315 = {
+			 1315 = {#Suraz
 				controlled_by = POL}
-			 1270 = {
+			 1270 = {#Velizh
 				controlled_by = POL}
-			 1492 = {
+			 1492 = {#Demidov
 				controlled_by = POL}
 			 }
 		 }
@@ -1157,21 +1129,21 @@
 			 factor = 100
 			 }
 		 SOV = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_GAR_2.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_GAR_2.txt"}
 		 random_country = {
 			 limit = {
 				 not = {
-					SOV = {
-						has_country_flag = Latvian_Garrison_1_Released}}}
+					 SOV = {
+						 has_country_flag = Latvian_Garrison_1_Released}}}
 			 SOV = {
-				load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_GAR_1.txt"}
+				 load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_GAR_1.txt"}
 			 SOV = {
-				supplies = 2000}
+				 supplies = 2000}
 			 SOV = {
-				officer_pool = 900}
+				 officer_pool = 900}
 			 }
 		 SOV = {
-			set_country_flag = Latvian_Garrison_Released}
+			 set_country_flag = Latvian_Garrison_Released}
 		 }
 	}
 
@@ -1187,8 +1159,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 1
 		 }
 	major = yes
@@ -1196,15 +1167,15 @@
 	trigger = {
 		 tag = SOV
 		 SOV = {
-			not = {
-				has_country_flag = "Lithuania_joins"}}
+			 not = {
+				 has_country_flag = "Lithuania_joins"}}
 		 or = {
-			 1444 = {
+			 1444 = {#Swieziany
 				any_neighbor_province = {
-					controlled_by = SOV}}
-			 1630 = {
+					 controlled_by = SOV}}
+			 1630 = {#Suwalki
 				any_neighbor_province = {
-					controlled_by = SOV}}
+					 controlled_by = SOV}}
 			 }
 		 }
 	option = {
@@ -1213,21 +1184,21 @@
 			 factor = 100
 			 }
 		 SOV = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/LIT_001.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/LIT_001.txt"}
 		 POL = {
-			 country_event = 200032
-			 }
+			 country_event = 200032 #200032
+			}
 		 SOV = {
-			set_country_flag = "Lithuania_joins"}
+			 set_country_flag = "Lithuania_joins"}
 		 SOV = {
-			supplies = 500}
+			 supplies = 500}
 		 SOV = {
-			officer_pool = 600}
+			 officer_pool = 600}
 		 }
 	}
 
-#Reinforcements Have Arrived
 
+#Reinforcements Have Arrived
 
  country_event = {
 	title = "Polish_Troops_Title"
@@ -1240,8 +1211,7 @@
 	 
 	is_triggered_only = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 1
 		 }
 	option = {
@@ -1250,9 +1220,9 @@
 			 factor = 100
 			 }
 		 POL = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_GAR_1.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_GAR_1.txt"}
 		 POL = {
-			officer_pool = 700}
+			 officer_pool = 700}
 		 }
 	}
 
@@ -1280,12 +1250,12 @@
 			 factor = 100
 			 }
 		 SOV = {
-			set_country_flag = "Konarmiya_Withdrawl"}
+			 set_country_flag = "Konarmiya_Withdrawl"}
 		 }
 	}
 
-#Bolshevik troops have been ordered to withdraw
 
+#Bolshevik troops have been ordered to withdraw
 
  country_event = {
 	title = "Russian_Withdraw_Title"
@@ -1296,14 +1266,13 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 10
 		 }
 	trigger = {
 		 tag = SOV
 		 SOV = {
-			has_country_flag = "Konarmiya_Withdrawl"}
+			 has_country_flag = "Konarmiya_Withdrawl"}
 		 }
 	option = {
 		 name = "ACTION_NAME_DAMN"
@@ -1311,7 +1280,7 @@
 			 factor = 100
 			 }
 		 SOV = {
-			officer_pool = -4700}
+			 officer_pool = -4700}
 		 remove_brigade = "4-ya
 		 Kavaleriiskaya
 		 Diviziya"
@@ -1428,8 +1397,7 @@
 	 
 	picture = "Russian_Troops"
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 4
 		 }
 	major = yes
@@ -1438,39 +1406,39 @@
 		 tag = SOV
 		 or = {
 			 not = {
-				SOV = {
-					has_country_flag = Emergency_1_Released}}
+				 SOV = {
+					 has_country_flag = Emergency_1_Released}}
 			 not = {
-				SOV = {
-					has_country_flag = Emergency_2_Released}}
+				 SOV = {
+					 has_country_flag = Emergency_2_Released}}
 			 not = {
-				SOV = {
-					has_country_flag = Emergency_3_Released}}
+				 SOV = {
+					 has_country_flag = Emergency_3_Released}}
 			 }
 		 or = {
-			 1534 = {
+			 1534 = {#Vitsyebsk
 				controlled_by = POL}
-			 1536 = {
+			 1536 = {#Smolensk
 				any_neighbor_province = {
-					controlled_by = POL}}
-			 1816 = {
+					 controlled_by = POL}}
+			 1816 = {#Krychaw
 				any_neighbor_province = {
-					controlled_by = POL}}
-			 1761 = {
+					 controlled_by = POL}}
+			 1761 = {#Novozybkov
 				any_neighbor_province = {
-					controlled_by = POL}}
-			 2049 = {
+					 controlled_by = POL}}
+			 2049 = {#Chernihiv
 				any_neighbor_province = {
-					controlled_by = POL}}
-			 2339 = {
+					 controlled_by = POL}}
+			 2339 = {#Bobrovytsya
 				any_neighbor_province = {
-					controlled_by = POL}}
-			 2644 = {
+					 controlled_by = POL}}
+			 2644 = {#Horodysche
 				any_neighbor_province = {
-					controlled_by = POL}}
-			 2776 = {
+					 controlled_by = POL}}
+			 2776 = {#Mala_Vyska
 				any_neighbor_province = {
-					controlled_by = POL}}
+					 controlled_by = POL}}
 			 }
 		 }
 	option = {
@@ -1479,51 +1447,51 @@
 			 factor = 100
 			 }
 		 SOV = {
-			supplies = 4000}
+			 supplies = 4000}
 		 random_country = {
 			 limit = {
 				 not = {
-					SOV = {
-						has_country_flag = Emergency_1_Released}}
+					 SOV = {
+						 has_country_flag = Emergency_1_Released}}
 				 SOV = {
-					has_country_flag = Emergency_2_Released}
+					 has_country_flag = Emergency_2_Released}
 				 SOV = {
-					has_country_flag = Emergency_3_Released}
+					 has_country_flag = Emergency_3_Released}
 				 }
 			 SOV = {
-				load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_009.txt"}
+				 load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_009.txt"}
 			 SOV = {
-				officer_pool = 800}
+				 officer_pool = 800}
 			 SOV = {
-				set_country_flag = Emergency_1_Released}
+				 set_country_flag = Emergency_1_Released}
 			 }
 		 random_country = {
 			 limit = {
 				 not = {
-					SOV = {
-						has_country_flag = Emergency_2_Released}}
+					 SOV = {
+						 has_country_flag = Emergency_2_Released}}
 				 SOV = {
-					has_country_flag = Emergency_3_Released}
+					 has_country_flag = Emergency_3_Released}
 				 }
 			 SOV = {
-				load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_010.txt"}
+				 load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_010.txt"}
 			 SOV = {
-				officer_pool = 120}
+				 officer_pool = 120}
 			 SOV = {
-				set_country_flag = Emergency_2_Released}
+				 set_country_flag = Emergency_2_Released}
 			 }
 		 random_country = {
 			 limit = {
 				 not = {
-					SOV = {
-						has_country_flag = Emergency_3_Released}}
+					 SOV = {
+						 has_country_flag = Emergency_3_Released}}
 				 }
 			 SOV = {
-				load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_011.txt"}
+				 load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/SOV_011.txt"}
 			 SOV = {
-				officer_pool = 800}
+				 officer_pool = 800}
 			 SOV = {
-				set_country_flag = Emergency_3_Released}
+				 set_country_flag = Emergency_3_Released}
 			 }
 		 }
 	}
@@ -1539,8 +1507,7 @@
 	 
 	picture = "Danzig_1919"
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 months = 2
 		 }
 	major = yes
@@ -1558,7 +1525,7 @@
 			 supplies = -1500
 			 }
 		 POL = {
-			set_country_flag = Danzig_stikes}
+			 set_country_flag = Danzig_stikes}
 		 }
 	}
 
@@ -1572,8 +1539,7 @@
 	 
 	picture = "Russians_in_Kiev"
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 1
 		 }
 	major = yes
@@ -1582,11 +1548,11 @@
 		 tag = SOV
 		 SOV = {
 			 not = {
-				has_country_flag = "bolshevik_ukraine"}
+				 has_country_flag = "bolshevik_ukraine"}
 			 }
-		 2223 = {
+		 2223 = {#Kyiv
 			controlled_by = SOV}
-		 2509 = {
+		 2509 = {#Lwów
 			controlled_by = SOV}
 		 }
 	option = {
@@ -1595,62 +1561,62 @@
 			 factor = 100
 			 }
 		 POL = {
-			clr_country_flag = "polish_ukraine"}
+			 clr_country_flag = "polish_ukraine"}
 		 UKR = {
-			leave_faction = allies}
+			 leave_faction = allies}
 		 POL = {
-			remove_brigade = "1.
+			 remove_brigade = "1.
 			 Ukrayina
 			 Armiya"}
 		 POL = {
-			remove_brigade = "6.
+			 remove_brigade = "6.
 			 Ukrayina
 			 Strelkovaya
 			 Diviziya"}
 		 POL = {
-			remove_brigade = "11.
+			 remove_brigade = "11.
 			 Ukrayina
 			 Strelkovaya
 			 Brigada"}
 		 POL = {
-			remove_brigade = "12.
+			 remove_brigade = "12.
 			 Ukrayina
 			 Strelkovaya
 			 Brigada"}
 		 POL = {
-			remove_brigade = "2.
+			 remove_brigade = "2.
 			 Ukrayina
 			 Strelkovaya
 			 Diviziya"}
 		 POL = {
-			remove_brigade = "3.
+			 remove_brigade = "3.
 			 Ukrayina
 			 Strelkovaya
 			 Brigada"}
 		 POL = {
-			remove_brigade = "4.
+			 remove_brigade = "4.
 			 Ukrayina
 			 Strelkovaya
 			 Brigada"}
 		 POL = {
-			remove_brigade = "Ukrayina
+			 remove_brigade = "Ukrayina
 			 Strelkovaya
 			 Brigada"}
 		 POL = {
-			remove_brigade = "Ukrayina
+			 remove_brigade = "Ukrayina
 			 Strelkovaya
 			 Brigada"}
 		 SOV = {
-			set_country_flag = "bolshevik_ukraine"}
+			 set_country_flag = "bolshevik_ukraine"}
 		 UKR = {
-			join_faction = comintern}
+			 join_faction = comintern}
 		 SOV = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/UKR_001.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/UKR_001.txt"}
 		 }
 	}
 
-#Reinforcements Have Arrived
 
+#Reinforcements Have Arrived
 
  country_event = {
 	title = "Russian_Troops_Title"
@@ -1665,8 +1631,8 @@
 	trigger = {
 		 tag = SOV
 		 SOV = {
-			has_country_flag = "bolshevik_ukraine"}
-		 2223 = {
+			 has_country_flag = "bolshevik_ukraine"}
+		 2223 = {#Kyiv
 			controlled_by = SOV}
 		 date = 1920.5.1
 		 }
@@ -1676,14 +1642,14 @@
 			 factor = 100
 			 }
 		 SOV = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/UKR_002.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/UKR_002.txt"}
 		 SOV = {
-			officer_pool = 200}
+			 officer_pool = 200}
 		 }
 	}
 
-#The Ukraine is now under our control
 
+#The Ukraine is now under our control
 
  country_event = {
 	title = "Ukraine_Control_Title"
@@ -1692,8 +1658,7 @@
 	 
 	picture = "Ukraine-Galacian"
 	 
-	mean_time_to_happen = 
-	 {
+	mean_time_to_happen = {
 		 days = 3
 		 }
 	major = yes
@@ -1702,11 +1667,11 @@
 		 tag = POL
 		 POL = {
 			 not = {
-				has_country_flag = "polish_ukraine"}
+				 has_country_flag = "polish_ukraine"}
 			 }
-		 2223 = {
+		 2223 = {#Kyiv
 			controlled_by = POL}
-		 2509 = {
+		 2509 = {#Lwów
 			controlled_by = POL}
 		 }
 	option = {
@@ -1715,62 +1680,62 @@
 			 factor = 100
 			 }
 		 SOV = {
-			clr_country_flag = "bolshevik_ukraine"}
+			 clr_country_flag = "bolshevik_ukraine"}
 		 UKR = {
-			leave_faction = comintern}
+			 leave_faction = comintern}
 		 SOV = {
-			remove_brigade = "1.
+			 remove_brigade = "1.
 			 Ukrayina
 			 Armiya"}
 		 SOV = {
-			remove_brigade = "6.
+			 remove_brigade = "6.
 			 Ukrayina
 			 Strelkovaya
 			 Diviziya"}
 		 SOV = {
-			remove_brigade = "11.
+			 remove_brigade = "11.
 			 Ukrayina
 			 Strelkovaya
 			 Brigada"}
 		 SOV = {
-			remove_brigade = "12.
+			 remove_brigade = "12.
 			 Ukrayina
 			 Strelkovaya
 			 Brigada"}
 		 SOV = {
-			remove_brigade = "2.
+			 remove_brigade = "2.
 			 Ukrayina
 			 Strelkovaya
 			 Diviziya"}
 		 SOV = {
-			remove_brigade = "3.
+			 remove_brigade = "3.
 			 Ukrayina
 			 Strelkovaya
 			 Brigada"}
 		 SOV = {
-			remove_brigade = "4.
+			 remove_brigade = "4.
 			 Ukrayina
 			 Strelkovaya
 			 Brigada"}
 		 SOV = {
-			remove_brigade = "Ukrayina
+			 remove_brigade = "Ukrayina
 			 Strelkovaya
 			 Brigada"}
 		 SOV = {
-			remove_brigade = "Ukrayina
+			 remove_brigade = "Ukrayina
 			 Strelkovaya
 			 Brigada"}
 		 POL = {
-			set_country_flag = "polish_ukraine"}
+			 set_country_flag = "polish_ukraine"}
 		 UKR = {
-			join_faction = allies}
+			 join_faction = allies}
 		 POL = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/UKR_001.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/UKR_001.txt"}
 		 }
 	}
 
-#Reinforcements Have Arrived
 
+#Reinforcements Have Arrived
 
  country_event = {
 	title = "Polish_Troops_Title"
@@ -1785,8 +1750,8 @@
 	trigger = {
 		 tag = POL
 		 POL = {
-			has_country_flag = "polish_ukraine"}
-		 2509 = {
+			 has_country_flag = "polish_ukraine"}
+		 2509 = {#Lwów
 			controlled_by = POL}
 		 date = 1920.5.1
 		 }
@@ -1796,9 +1761,9 @@
 			 factor = 100
 			 }
 		 POL = {
-			load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/UKR_002.txt"}
+			 load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/UKR_002.txt"}
 		 POL = {
-			officer_pool = 800}
+			 officer_pool = 800}
 		 }
 	}
 

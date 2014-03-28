@@ -64,14 +64,14 @@
 		 ai_chance = {
 			 factor = 100
 			 }
-		 2576 = {
-			 create_revolt = 1
+		 2576 = {#Zhashkiv
+			create_revolt = 1
 			 }
-		 2641 = {
-			 create_revolt = 1
+		 2641 = {#Illintsi
+			create_revolt = 1
 			 }
-		 2642 = {
-			 create_revolt = 1
+		 2642 = {#Monastyryshche
+			create_revolt = 1
 			 }
 		 remove_brigade = "3-ya
 		 Galacian
@@ -80,18 +80,18 @@
 		 Galacian
 		 Brigada"
 		 random_list = {
-			 25 = {
-				 remove_brigade = "1-ya
+			 25 = {#Andselv
+				remove_brigade = "1-ya
 				 Galacian
 				 Brigada"
 				 remove_brigade = "Galacian
 				 Corps
 				 HQ"
 				 }
-			 75 = {
-				 POL = {
-					 country_event = 100811
-					 }
+			 75 = {#Severodvinsk
+				POL = {
+					 country_event = 100811 #100811
+					}
 				 }
 			 }
 		 }
@@ -119,11 +119,11 @@
 			 factor = 100
 			 }
 		 random_list = {
-			 40 = {
-				 load_oob = "scenarios/polish_bolshevik/reinforce_POL_OOB/POL_001.txt"
+			 40 = {#Suolovuopme
+				load_oob = "scenarios/polish_bolshevik/reinforce_POL_OOB/POL_001.txt"
 				 }
-			 60 = {
-				 load_oob = "scenarios/polish_bolshevik/reinforce_POL_OOB/POL_002.txt"
+			 60 = {#Monchegorsk
+				load_oob = "scenarios/polish_bolshevik/reinforce_POL_OOB/POL_002.txt"
 				 }
 			 }
 		 }
@@ -440,28 +440,28 @@
 				 }
 			 }
 		 or = {
-			 1928 = {
-				 any_neighbor_province = {
+			 1928 = {#Warszawa
+				any_neighbor_province = {
 					 controlled_by = SOV
 					 }
 				 }
-			 1810 = {
-				 any_neighbor_province = {
+			 1810 = {#Bialystok
+				any_neighbor_province = {
 					 controlled_by = SOV
 					 }
 				 }
-			 2273 = {
-				 any_neighbor_province = {
+			 2273 = {#Zwolen
+				any_neighbor_province = {
 					 controlled_by = SOV
 					 }
 				 }
-			 1986 = {
-				 any_neighbor_province = {
+			 1986 = {#Brzesc_Litewski
+				any_neighbor_province = {
 					 controlled_by = SOV
 					 }
 				 }
-			 2568 = {
-				 any_neighbor_province = {
+			 2568 = {#Jedrzejow
+				any_neighbor_province = {
 					 controlled_by = SOV
 					 }
 				 }
@@ -560,13 +560,13 @@
 				 }
 			 }
 		 or = {
-			 2096 = {
-				 any_neighbor_province = {
+			 2096 = {#Rawicz
+				any_neighbor_province = {
 					 controlled_by = SOV
 					 }
 				 }
-			 1980 = {
-				 any_neighbor_province = {
+			 1980 = {#Rogozno
+				any_neighbor_province = {
 					 controlled_by = SOV
 					 }
 				 }
@@ -831,8 +831,8 @@
 		 SOV = {
 			 has_country_flag = "Lithuania_joins"
 			 }
-		 1355 = {
-			 controlled_by = SOV
+		 1355 = {#Zarasai
+			controlled_by = SOV
 			 }
 		 has_global_flag = 2193501_EVENT_DONE
 		 }
@@ -1110,29 +1110,29 @@
 			 has_country_flag = Latvian_Garrison_Released
 			 }
 		 or = {
-			 1267 = {
-				 controlled_by = POL
+			 1267 = {#Drissa
+				controlled_by = POL
 				 }
-			 1105 = {
-				 controlled_by = POL
+			 1105 = {#Rasony
+				controlled_by = POL
 				 }
-			 1144 = {
-				 controlled_by = POL
+			 1144 = {#Dominikovo
+				controlled_by = POL
 				 }
-			 1403 = {
-				 controlled_by = POL
+			 1403 = {#Drozdy
+				controlled_by = POL
 				 }
-			 1107 = {
-				 controlled_by = POL
+			 1107 = {#Sumilina
+				controlled_by = POL
 				 }
-			 1315 = {
-				 controlled_by = POL
+			 1315 = {#Suraz
+				controlled_by = POL
 				 }
-			 1270 = {
-				 controlled_by = POL
+			 1270 = {#Velizh
+				controlled_by = POL
 				 }
-			 1492 = {
-				 controlled_by = POL
+			 1492 = {#Demidov
+				controlled_by = POL
 				 }
 			 }
 		 has_global_flag = 2193501_EVENT_DONE
@@ -1190,13 +1190,13 @@
 				 }
 			 }
 		 or = {
-			 1444 = {
-				 any_neighbor_province = {
+			 1444 = {#Swieziany
+				any_neighbor_province = {
 					 controlled_by = SOV
 					 }
 				 }
-			 1630 = {
-				 any_neighbor_province = {
+			 1630 = {#Suwalki
+				any_neighbor_province = {
 					 controlled_by = SOV
 					 }
 				 }
@@ -1212,8 +1212,8 @@
 			 load_oob = "scenarios/polish_bolshevik/Reinforce_SOV_OOB/LIT_001.txt"
 			 }
 		 POL = {
-			 country_event = 200032
-			 }
+			 country_event = 200032 #200032
+			}
 		 SOV = {
 			 set_country_flag = "Lithuania_joins"
 			 }
@@ -1456,41 +1456,41 @@
 				 }
 			 }
 		 or = {
-			 1534 = {
-				 controlled_by = POL
+			 1534 = {#Vitsyebsk
+				controlled_by = POL
 				 }
-			 1536 = {
-				 any_neighbor_province = {
+			 1536 = {#Smolensk
+				any_neighbor_province = {
 					 controlled_by = POL
 					 }
 				 }
-			 1816 = {
-				 any_neighbor_province = {
+			 1816 = {#Krychaw
+				any_neighbor_province = {
 					 controlled_by = POL
 					 }
 				 }
-			 1761 = {
-				 any_neighbor_province = {
+			 1761 = {#Novozybkov
+				any_neighbor_province = {
 					 controlled_by = POL
 					 }
 				 }
-			 2049 = {
-				 any_neighbor_province = {
+			 2049 = {#Chernihiv
+				any_neighbor_province = {
 					 controlled_by = POL
 					 }
 				 }
-			 2339 = {
-				 any_neighbor_province = {
+			 2339 = {#Bobrovytsya
+				any_neighbor_province = {
 					 controlled_by = POL
 					 }
 				 }
-			 2644 = {
-				 any_neighbor_province = {
+			 2644 = {#Horodysche
+				any_neighbor_province = {
 					 controlled_by = POL
 					 }
 				 }
-			 2776 = {
-				 any_neighbor_province = {
+			 2776 = {#Mala_Vyska
+				any_neighbor_province = {
 					 controlled_by = POL
 					 }
 				 }
@@ -1615,11 +1615,11 @@
 				 has_country_flag = "bolshevik_ukraine"
 				 }
 			 }
-		 2223 = {
-			 controlled_by = SOV
+		 2223 = {#Kyiv
+			controlled_by = SOV
 			 }
-		 2509 = {
-			 controlled_by = SOV
+		 2509 = {#Lwów
+			controlled_by = SOV
 			 }
 		 has_global_flag = 2193501_EVENT_DONE
 		 }
@@ -1715,8 +1715,8 @@
 		 SOV = {
 			 has_country_flag = "bolshevik_ukraine"
 			 }
-		 2223 = {
-			 controlled_by = SOV
+		 2223 = {#Kyiv
+			controlled_by = SOV
 			 }
 		 date = 1920.5.1
 		 has_global_flag = 2193501_EVENT_DONE
@@ -1754,11 +1754,11 @@
 				 has_country_flag = "polish_ukraine"
 				 }
 			 }
-		 2223 = {
-			 controlled_by = POL
+		 2223 = {#Kyiv
+			controlled_by = POL
 			 }
-		 2509 = {
-			 controlled_by = POL
+		 2509 = {#Lwów
+			controlled_by = POL
 			 }
 		 has_global_flag = 2193501_EVENT_DONE
 		 }
@@ -1854,8 +1854,8 @@
 		 POL = {
 			 has_country_flag = "polish_ukraine"
 			 }
-		 2509 = {
-			 controlled_by = POL
+		 2509 = {#Lwów
+			controlled_by = POL
 			 }
 		 date = 1920.5.1
 		 has_global_flag = 2193501_EVENT_DONE

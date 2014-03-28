@@ -8,7 +8,7 @@ diplomatic_decisions = {
 			 tag = TUR
 			 exists = ALB
 			 TUR = {
-				has_country_flag = alb_war
+				 has_country_flag = alb_war
 				 }
 			 NOT = {
 				 TUR = {
@@ -21,33 +21,40 @@ diplomatic_decisions = {
 			 }
 		allow = {
 			 4663 = {
-				 controlled_by = ALB
+				#Tirane
+				controlled_by = ALB
 				 }
 			 }
 		effect = {
 			 ALB = {
-				 country_event = 100120}
-			 set_country_flag = alb_peace
-			 4717 = {
-				 secede_province = ALB
-				 }
-			 4554 = {
-				 secede_province = ALB
-				 }
-			 4608 = {
-				 secede_province = ALB
-				 }
-			 4663 = {
-				 secede_province = ALB
-				 }
-			 4716 = {
-				 secede_province = ALB
-				 }
-			 4769 = {
-				 secede_province = ALB
-				 }
-			 end_war = ALB
+				 country_event = 100120} #100120}
+		set_country_flag = alb_peace
+		 4717 = {
+			#Korce
+			secede_province = ALB
 			 }
-		}
+		 4554 = {
+			#Rreshen
+			secede_province = ALB
+			 }
+		 4608 = {
+			#Lezhe
+			secede_province = ALB
+			 }
+		 4663 = {
+			#Tirane
+			secede_province = ALB
+			 }
+		 4716 = {
+			#Durres
+			secede_province = ALB
+			 }
+		 4769 = {
+			#Vlore
+			secede_province = ALB
+			 }
+		 end_war = ALB
+		 }
 	}
+}
 

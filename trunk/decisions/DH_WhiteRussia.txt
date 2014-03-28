@@ -1,320 +1,334 @@
 
 diplomatic_decisions = {
-	 2173501_decision = {
-		ai_will_do = {
-			 factor = 1
+ 2173501_decision = {
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 exists = WHR
+		 exists = SOV
+		 SOV = {
+			 war_with = WHR
 			 }
-		potential = {
-			 exists = WHR
-			 exists = SOV
-			 SOV = {
-				 war_with = WHR
-				 }
-			 tag = WHR
-			 date = 1914.8.4
-			 not = {
-				 date = 1925.12.30
-				 }
-			 not = {
-				 has_global_flag = SLEEPEVENT_2173501
-				 }
-			 not = {
-				 has_country_flag = decision_2173501
-				 }
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
 			 }
-		allow = {
-			 money = 
-			 5
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173501
 			 }
-		effect = {
-			 country_event = 545
-			 set_country_flag = decision_2173501
+		 not = {
+			 has_country_flag = decision_2173501
 			 }
-		}
-	
-
-	 2173502_decision = {
-		ai_will_do = {
-			 factor = 1
-			 }
-		potential = {
-			 has_global_flag = 2173500_EVENT_DONE
-			 exists = SOV
-			 SOV = {
-				 war_with = WHR
-				 }
-			 tag = WHR
-			 date = 1914.8.4
-			 not = {
-				 date = 1925.12.30
-				 }
-			 not = {
-				 has_global_flag = SLEEPEVENT_2173502
-				 }
-			 not = {
-				 has_country_flag = decision_2173502
-				 }
-			 }
-		allow = {
-			 money = 
-			 10
-			 }
-		effect = {
-			 country_event = 546
-			 set_country_flag = decision_2173502
-			 }
-		}
-	
-
-	 2173503_decision = {
-		ai_will_do = {
-			 factor = 1
-			 }
-		potential = {
-			 has_global_flag = 2173501_EVENT_DONE
-			 exists = WHR
-			 exists = SOV
-			 SOV = {
-				 war_with = WHR
-				 }
-			 tag = WHR
-			 date = 1914.8.4
-			 not = {
-				 date = 1925.12.30
-				 }
-			 not = {
-				 has_global_flag = SLEEPEVENT_2173503
-				 }
-			 not = {
-				 has_country_flag = decision_2173503
-				 }
-			 }
-		allow = {
-			 money = 
-			 5
-			 }
-		effect = {
-			 country_event = 547
-			 set_country_flag = decision_2173503
-			 }
-		}
-	
-
-	 2173506_decision = {
-		ai_will_do = {
-			 factor = 1
-			 }
-		potential = {
-			 has_global_flag = 2173504_EVENT_DONE
-			 exists = SOV
-			 tag = WHR
-			 date = 1914.8.4
-			 not = {
-				 date = 1925.12.30
-				 }
-			 not = {
-				 has_global_flag = SLEEPEVENT_2173506
-				 }
-			 not = {
-				 has_country_flag = decision_2173506
-				 }
-			 }
-		allow = {
-			 money = 
-			 10
-			 not = {
-				 dissent = 10
-				 }
-			 }
-		effect = {
-			 country_event = 550
-			 set_country_flag = decision_2173506
-			 }
-		}
-	
-
-	 2173513_decision = {
-		ai_will_do = {
-			 factor = 1
-			 }
-		potential = {
-			 not = {
-				 exists = SOV
-				 }
-			 tag = WHR
-			 date = 1914.8.4
-			 not = {
-				 date = 1925.12.30
-				 }
-			 not = {
-				 has_global_flag = SLEEPEVENT_2173513
-				 }
-			 not = {
-				 has_country_flag = decision_2173513
-				 }
-			 }
-		allow = {
-			 war = no
-			 782 = {
-				 controlled_by = THIS
-				 }
-			 }
-		effect = {
-			 country_event = 556
-			 set_country_flag = decision_2173513
-			 }
-		}
-	
-
-	 2173512_decision = {
-		ai_will_do = {
-			 factor = 1
-			 }
-		potential = {
-			 not = {
-				 exists = SOV
-				 }
-			 tag = WHR
-			 date = 1914.8.4
-			 not = {
-				 date = 1925.12.30
-				 }
-			 not = {
-				 has_global_flag = SLEEPEVENT_2173512
-				 }
-			 not = {
-				 has_country_flag = decision_2173512
-				 }
-			 }
-		allow = {
-			 war = no
-			 1409 = {
-				 controlled_by = THIS
-				 }
-			 }
-		effect = {
-			 country_event = 557
-			 set_country_flag = decision_2173512
-			 }
-		}
-	
-
-	 2173514_decision = {
-		ai_will_do = {
-			 factor = 1
-			 }
-		potential = {
-			 not = {
-				 exists = SOV
-				 }
-			 tag = WHR
-			 date = 1914.8.4
-			 not = {
-				 date = 1925.12.30
-				 }
-			 not = {
-				 has_global_flag = SLEEPEVENT_2173514
-				 }
-			 not = {
-				 has_country_flag = decision_2173514
-				 }
-			 }
-		allow = {
-			 war = no
-			 2857 = {
-				 controlled_by = THIS
-				 }
-			 }
-		effect = {
-			 country_event = 558
-			 set_country_flag = decision_2173514
-			 }
-		}
-	
-
-	 2173516_decision = {
-		ai_will_do = {
-			 factor = 1
-			 }
-		potential = {
-			 not = {
-				 exists = SOV
-				 }
-			 tag = WHR
-			 date = 1914.8.4
-			 not = {
-				 date = 1925.12.30
-				 }
-			 not = {
-				 has_global_flag = SLEEPEVENT_2173516
-				 }
-			 not = {
-				 has_country_flag = decision_2173516
-				 }
-			 }
-		allow = {
-			 war = no
-			 8211 = {
-				 controlled_by = THIS
-				 }
-			 }
-		effect = {
-			 country_event = 560
-			 set_country_flag = decision_2173516
-			 }
-		}
-	
-
-	 2173518_decision = {
-		ai_will_do = {
-			 factor = 1
-			 }
-		potential = {
-			 not = {
-				 exists = RUS
-				 }
-			 date = 1914.1.1
-			 not = {
-				 date = 1963.12.30
-				 }
-			 or = {
-				 tag = WHR
-				 }
-			 not = {
-				 has_global_flag = SLEEPEVENT_2173518
-				 }
-			 not = {
-				 has_country_flag = decision_2173518
-				 }
-			 }
-		allow = {
-			 war = no
-			 not = {
-				 dissent = 10
-				 }
-			 782 = {
-				 controlled_by = THIS
-				 }
-			 1409 = {
-				 controlled_by = THIS
-				 }
-			 2857 = {
-				 controlled_by = THIS
-				 }
-			 8211 = {
-				 controlled_by = THIS
-				 }
-			 2857 = {
-				 controlled_by = THIS
-				 }
-			 8528 = {
-				 controlled_by = THIS
-				 }
-			 }
-		effect = {
-			 country_event = 562
-			 set_country_flag = decision_2173518
-			 }
-		}
+		 }
+	allow = {
+		 money = 5
+		 }
+	effect = {
+		 country_event = 545 #Travel_to_Omsk
+		set_country_flag = decision_2173501
+		 }
 	}
+
+
+
+ 2173502_decision = {
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 has_global_flag = 2173500_EVENT_DONE
+		 exists = SOV
+		 SOV = {
+			 war_with = WHR
+			 }
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173502
+			 }
+		 not = {
+			 has_country_flag = decision_2173502
+			 }
+		 }
+	allow = {
+		 money = 10
+		 }
+	effect = {
+		 country_event = 546 #Coup_Omsk_and_Samara
+		set_country_flag = decision_2173502
+		 }
+	}
+
+
+
+ 2173503_decision = {
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 has_global_flag = 2173501_EVENT_DONE
+		 exists = WHR
+		 exists = SOV
+		 SOV = {
+			 war_with = WHR
+			 }
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173503
+			 }
+		 not = {
+			 has_country_flag = decision_2173503
+			 }
+		 }
+	allow = {
+		 money = 5
+		 }
+	effect = {
+		 country_event = 547 #Join_the_White_Army
+		set_country_flag = decision_2173503
+		 }
+	}
+
+
+
+ 2173506_decision = {
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 has_global_flag = 2173504_EVENT_DONE
+		 exists = SOV
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173506
+			 }
+		 not = {
+			 has_country_flag = decision_2173506
+			 }
+		 }
+	allow = {
+		 money = 10
+		 not = {
+			 dissent = 10
+			 }
+		 }
+	effect = {
+		 country_event = 550 #Report_Janin's_behavior_to_the_French
+		set_country_flag = decision_2173506
+		 }
+	}
+
+
+
+ 2173513_decision = {
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 not = {
+			 exists = SOV
+			 }
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173513
+			 }
+		 not = {
+			 has_country_flag = decision_2173513
+			 }
+		 }
+	allow = {
+		 war = no
+		 782 = {
+			#St._Petersburg
+			controlled_by = THIS
+			 }
+		 }
+	effect = {
+		 country_event = 556 #Move_capitol_to_Petrograd
+		set_country_flag = decision_2173513
+		 }
+	}
+
+
+
+ 2173512_decision = {
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 not = {
+			 exists = SOV
+			 }
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173512
+			 }
+		 not = {
+			 has_country_flag = decision_2173512
+			 }
+		 }
+	allow = {
+		 war = no
+		 1409 = {
+			#Moskva
+			controlled_by = THIS
+			 }
+		 }
+	effect = {
+		 country_event = 557 #Move_capitol_to_Moscow
+		set_country_flag = decision_2173512
+		 }
+	}
+
+
+
+ 2173514_decision = {
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 not = {
+			 exists = SOV
+			 }
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173514
+			 }
+		 not = {
+			 has_country_flag = decision_2173514
+			 }
+		 }
+	allow = {
+		 war = no
+		 2857 = {
+			#Tsaritsyn
+			controlled_by = THIS
+			 }
+		 }
+	effect = {
+		 country_event = 558 #Move_capitol_to_Tsarystine
+		set_country_flag = decision_2173514
+		 }
+	}
+
+
+
+ 2173516_decision = {
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 not = {
+			 exists = SOV
+			 }
+		 tag = WHR
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173516
+			 }
+		 not = {
+			 has_country_flag = decision_2173516
+			 }
+		 }
+	allow = {
+		 war = no
+		 8211 = {
+			#Sverdlovsk
+			controlled_by = THIS
+			 }
+		 }
+	effect = {
+		 country_event = 560 #Move_capitol_to_Ekaterinburg
+		set_country_flag = decision_2173516
+		 }
+	}
+
+
+
+ 2173518_decision = {
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 not = {
+			 exists = RUS
+			 }
+		 date = 1914.1.1
+		 not = {
+			 date = 1963.12.30
+			 }
+		 or = {
+			 tag = WHR
+			 }
+		 not = {
+			 has_global_flag = SLEEPEVENT_2173518
+			 }
+		 not = {
+			 has_country_flag = decision_2173518
+			 }
+		 }
+	allow = {
+		 war = no
+		 not = {
+			 dissent = 10
+			 }
+		 782 = {
+			#St._Petersburg
+			controlled_by = THIS
+			 }
+		 1409 = {
+			#Moskva
+			controlled_by = THIS
+			 }
+		 2857 = {
+			#Tsaritsyn
+			controlled_by = THIS
+			 }
+		 8211 = {
+			#Sverdlovsk
+			controlled_by = THIS
+			 }
+		 2857 = {
+			#Tsaritsyn
+			controlled_by = THIS
+			 }
+		 8528 = {
+			#Omsk
+			controlled_by = THIS
+			 }
+		 }
+	effect = {
+		 country_event = 562 #Form_Russia
+		set_country_flag = decision_2173518
+		 }
+	}
+}
 

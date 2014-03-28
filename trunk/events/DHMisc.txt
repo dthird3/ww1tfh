@@ -21,8 +21,8 @@
 		 }
 	option = {
 		 name = "DH_EVENT_2002549_Option7"
-		 remove_minister = 5341
-		 dissent = 1
+		 remove_minister = 12900145 #Jean_Jaurès
+		dissent = 1
 		 set_global_flag = 2002549_EVENT_DONE
 		 }
 	}
@@ -46,8 +46,8 @@
 		 }
 	trigger = {
 		 month = 9
-		 head_of_government = 5271
-		 tag = FRA
+		 head_of_government = 12900108 #René_Viviani
+		tag = FRA
 		 date = 1915.1.1
 		 not = {
 			 date = 1915.12.30
@@ -58,11 +58,11 @@
 		 }
 	option = {
 		 name = "DH_EVENT_2002550_Option7"
-		 head_of_government = 5274
-		 foreign_minister = 5274
-		 armament_minister = 5328
-		 minister_of_security = 5330
-		 dissent = -2
+		 head_of_government = 12900111 #Aristide_Briand
+		foreign_minister = 12900111 #Aristide_Briand
+		armament_minister = 12900138 #Joseph_Gallieni
+		minister_of_security = 12900139 #Louis_Malvy
+		dissent = -2
 		 set_global_flag = 2002550_EVENT_DONE
 		 }
 	}
@@ -96,8 +96,8 @@
 			 }
 		 not = {
 			 or = {
-				 chief_of_staff = 5234
-				 }
+				 chief_of_staff = 12900081 #Ferdinand_Foch
+				}
 			 }
 		 tag = FRA
 		 date = 1917.1.1
@@ -110,8 +110,8 @@
 		 }
 	option = {
 		 name = "DH_EVENT_2002554_Option7"
-		 chief_of_staff = 5234
-		 random_country = {
+		 chief_of_staff = 12900081 #Ferdinand_Foch
+		random_country = {
 			 limit = {
 				 tag = THIS
 				 ENG = {
@@ -147,8 +147,8 @@
 			 }
 		 not = {
 			 or = {
-				 head_of_government = 5287
-				 }
+				 head_of_government = 12900118 #Georges_Clemenceau
+				}
 			 }
 		 tag = FRA
 		 date = 1917.1.1
@@ -161,9 +161,9 @@
 		 }
 	option = {
 		 name = "DH_EVENT_2002555_Option7"
-		 head_of_government = 5287
-		 armament_minister = 5287
-		 set_global_flag = 2002555_EVENT_DONE
+		 head_of_government = 12900118 #Georges_Clemenceau
+		armament_minister = 12900118 #Georges_Clemenceau
+		set_global_flag = 2002555_EVENT_DONE
 		 }
 	}
 
@@ -190,27 +190,27 @@
 			 war_with = AUH
 			 }
 		 or = {
-			 chief_of_staff = 25143
-			 }
+			 chief_of_staff = 14100085 #Luigi_Cadorna
+			}
 		 not = {
 			 or = {
-				 chief_of_staff = 25145
-				 }
+				 chief_of_staff = 14100086 #Armando_Diaz
+				}
 			 }
 		 or = {
 			 not = {
-				 3562 = {
-					 controlled_by = THIS
+				 3562 = {#Udine
+					controlled_by = THIS
 					 }
 				 }
 			 not = {
-				 3561 = {
-					 controlled_by = THIS
+				 3561 = {#Treviso
+					controlled_by = THIS
 					 }
 				 }
 			 not = {
-				 3429 = {
-					 controlled_by = THIS
+				 3429 = {#Lienz
+					controlled_by = THIS
 					 }
 				 }
 			 }
@@ -225,19 +225,19 @@
 		 }
 	option = {
 		 name = "DH_EVENT_2006516_Option7"
-		 chief_of_staff = 25145
-		 random_country = {
+		 chief_of_staff = 14100086 #Armando_Diaz
+		random_country = {
 			 limit = {
 				 tag = THIS
 				 or = {
-					 chief_of_army = 25143
-					 }
+					 chief_of_army = 14100085 #Luigi_Cadorna
+					}
 				 }
-			 chief_of_army = 25145
-			 }
-		 remove_minister = 25143
-		 kill_leader = 14110023
-		 dissent = -1
+			 chief_of_army = 14100086 #Armando_Diaz
+			}
+		 remove_minister = 14100085 #Luigi_Cadorna
+		kill_leader = 14110023 #Cadorna
+		dissent = -1
 		 set_global_flag = 2006516_EVENT_DONE
 		 }
 	}
@@ -419,112 +419,112 @@
 	option = {
 		 name = "DH_EVENT_2191519_Option7"
 		 dissent = -20
-		 head_of_state = 855200
-		 head_of_government = 855202
-		 foreign_minister = 855212
-		 armament_minister = 855204
-		 minister_of_security = 855202
-		 minister_of_intelligence = 855251
-		 chief_of_staff = 855074
-		 chief_of_army = 855089
-		 chief_of_navy = 855262
-		 chief_of_air = 855104
-		 remove_minister = 855001
-		 remove_minister = 855002
-		 remove_minister = 855003
-		 remove_minister = 855004
-		 remove_minister = 855005
-		 remove_minister = 855006
-		 remove_minister = 855007
-		 remove_minister = 855008
-		 remove_minister = 855009
-		 remove_minister = 855010
-		 remove_minister = 855011
-		 remove_minister = 855012
-		 remove_minister = 855013
-		 remove_minister = 855014
-		 remove_minister = 855015
-		 remove_minister = 855016
-		 remove_minister = 855017
-		 remove_minister = 855018
-		 remove_minister = 855019
-		 remove_minister = 855020
-		 remove_minister = 855021
-		 remove_minister = 855022
-		 remove_minister = 855023
-		 remove_minister = 855024
-		 remove_minister = 855025
-		 remove_minister = 855026
-		 remove_minister = 855027
-		 remove_minister = 855028
-		 remove_minister = 855029
-		 remove_minister = 855030
-		 remove_minister = 855031
-		 remove_minister = 855032
-		 remove_minister = 855033
-		 remove_minister = 855034
-		 remove_minister = 855035
-		 remove_minister = 855036
-		 remove_minister = 855037
-		 remove_minister = 855038
-		 remove_minister = 855039
-		 remove_minister = 855040
-		 remove_minister = 855041
-		 remove_minister = 855042
-		 remove_minister = 855043
-		 remove_minister = 855044
-		 remove_minister = 855045
-		 remove_minister = 855046
-		 remove_minister = 855047
-		 remove_minister = 855048
-		 remove_minister = 855049
-		 remove_minister = 855050
-		 remove_minister = 855051
-		 remove_minister = 855052
-		 remove_minister = 855053
-		 remove_minister = 855054
-		 remove_minister = 855056
-		 remove_minister = 855058
-		 remove_minister = 855059
-		 remove_minister = 855060
-		 remove_minister = 855061
-		 remove_minister = 855062
-		 remove_minister = 855063
-		 remove_minister = 855064
-		 remove_minister = 855065
-		 remove_minister = 855066
-		 remove_minister = 855067
-		 remove_minister = 855068
-		 remove_minister = 855069
-		 remove_minister = 855070
-		 remove_minister = 855071
-		 remove_minister = 855072
-		 remove_minister = 855074
-		 remove_minister = 855075
-		 remove_minister = 855076
-		 remove_minister = 855077
-		 remove_minister = 855078
-		 remove_minister = 855079
-		 remove_minister = 855088
-		 remove_minister = 855089
-		 remove_minister = 855090
-		 remove_minister = 855091
-		 remove_minister = 855092
-		 remove_minister = 855093
-		 remove_minister = 855094
-		 remove_minister = 855095
-		 remove_minister = 855096
-		 remove_minister = 855097
-		 remove_minister = 855098
-		 remove_minister = 855099
-		 remove_minister = 855100
-		 remove_minister = 855101
-		 remove_minister = 855102
-		 remove_minister = 855103
-		 remove_minister = 855104
-		 remove_minister = 855105
-		 remove_minister = 855106
-		 set_global_flag = 2191519_EVENT_DONE
+		 head_of_state = 13100272 #Vollzugsrat
+		head_of_government = 13100274 #Friedrich_Ebert
+		foreign_minister = 13100283 #Hugo_Haase
+		armament_minister = 13100275 #Philipp_Scheidemann
+		minister_of_security = 13100274 #Friedrich_Ebert
+		minister_of_intelligence = 13100314 #Martin_Braune
+		chief_of_staff = 13100247 #Paul_von_Hindenburg
+		chief_of_army = 13100254 #Wilhelm_Groener
+		chief_of_navy = 13100318 #Maximilian_Rogge
+		chief_of_air = 13100269 #Ernst_von_Hoeppner
+		remove_minister = 13100177 #Wilhelm_II
+		remove_minister = 13100178 #Wilhelm_III
+		remove_minister = 13100179 #Bernhard_von_Bülow
+		remove_minister = 13100180 #Theobald_von_Bethmann-Hollweg
+		remove_minister = 13100181 #Georg_Michaelis
+		remove_minister = 13100182 #Georg_von_Hertling
+		remove_minister = 13100183 #Maximilian_von_Baden
+		remove_minister = 13100184 #Wilhelm_Eduard_von_Schoen
+		remove_minister = 13100185 #Alfred_von_Kiderlen-Waechter
+		remove_minister = 13100186 #Gottlieb_von_Jagow
+		remove_minister = 13100187 #Arthur_Zimmermann
+		remove_minister = 13100188 #Richard_von_Kühlmann
+		remove_minister = 13100189 #Paul_von_Hintze
+		remove_minister = 13100190 #Wilhelm_Heinrich_Solf
+		remove_minister = 13100191 #Adolf_Marschall_von_Bieberstein
+		remove_minister = 13100192 #Hans_von_Wangenheim
+		remove_minister = 13100193 #Paul_Metternich
+		remove_minister = 13100194 #Johann_Heinrich_von_Bernstorff
+		remove_minister = 13100195 #Adolf_Georg_von_Maltzan
+		remove_minister = 13100196 #Otto_Wiedfeldt
+		remove_minister = 13100197 #Julius_von_Waldthausen
+		remove_minister = 13100198 #Karl_von_Luxburg
+		remove_minister = 13100199 #Nikolaus_von_Wallwitz
+		remove_minister = 13100200 #Franz_Olshausen
+		remove_minister = 13100201 #Adolf_Pauli
+		remove_minister = 13100202 #Friedrich_von_Keller
+		remove_minister = 13100203 #Franz_von_Reichenau
+		remove_minister = 13100204 #Eugen_Rümelin
+		remove_minister = 13100205 #Ulrich_von_Brockdorff-Rantzau
+		remove_minister = 13100206 #Konstantin_von_Neurath
+		remove_minister = 13100207 #Hugo_von_Radolin
+		remove_minister = 13100208 #Leopold_von_Hoesch
+		remove_minister = 13100209 #Hellmuth_Lucius_von_Stoedten
+		remove_minister = 13100210 #Heinrich_von_Tschirschky
+		remove_minister = 13100211 #Ernst_Langwerth_von_Simmern
+		remove_minister = 13100212 #Friedrich_Sthamer
+		remove_minister = 13100213 #Karl_von_Einem
+		remove_minister = 13100214 #Josias_von_Heeringen
+		remove_minister = 13100215 #Erich_von_Falkenhayn
+		remove_minister = 13100216 #Adolf_Wild_von_Hohenborn
+		remove_minister = 13100217 #Hermann_von_Stein
+		remove_minister = 13100218 #Heinrich_Scheuch
+		remove_minister = 13100219 #Alfred_von_Tirpitz
+		remove_minister = 13100220 #Eduard_von_Capelle
+		remove_minister = 13100221 #Paul_Behncke
+		remove_minister = 13100222 #Ernst_Karl_August_Klemens_von_Mann
+		remove_minister = 13100223 #Hermann_von_Stengel
+		remove_minister = 13100224 #Reinhold_von_Sydow
+		remove_minister = 13100225 #Adolf_Wermuth
+		remove_minister = 13100226 #Hermann_Kühn
+		remove_minister = 13100227 #Karl_Helfferich
+		remove_minister = 13100228 #Siegfried_von_Roedern
+		remove_minister = 13100229 #Rudolf_Schwander
+		remove_minister = 13100230 #Hans_Karl_von_Stein_zu_Nord-_und_Ostheim
+		remove_minister = 13100231 #Clemens_von_Delbrück
+		remove_minister = 13100232 #Max_Wallraf
+		remove_minister = 13100233 #Friedrich_von_Moltke
+		remove_minister = 13100234 #Johann_von_Dallwitz
+		remove_minister = 13100235 #Friedrich_Wilhelm_von_Loebell
+		remove_minister = 13100236 #Wilhelm_Arnold_Drews
+		remove_minister = 13100237 #Tilo_von_Wilmowsky
+		remove_minister = 13100238 #Karl_Trimborn
+		remove_minister = 13100239 #Karl_Brose
+		remove_minister = 13100240 #Wilhelm_Heye
+		remove_minister = 13100241 #Walter_Nicolai
+		remove_minister = 13100242 #Alfred_Tapken
+		remove_minister = 13100243 #Walter_Isendahl
+		remove_minister = 13100244 #Paul_Ebert
+		remove_minister = 13100245 #Friedrich_Gempp
+		remove_minister = 13100246 #Helmuth_von_Moltke
+		remove_minister = 13100247 #Paul_von_Hindenburg
+		remove_minister = 13100248 #Hans_von_Seeckt
+		remove_minister = 13100249 #August_von_Mackensen
+		remove_minister = 13100250 #Colmar_von_der_Goltz
+		remove_minister = 13100251 #Hermann_von_Eichhorn
+		remove_minister = 13100252 #Karl_von_Bülow
+		remove_minister = 13100253 #Erich_Ludendorff
+		remove_minister = 13100254 #Wilhelm_Groener
+		remove_minister = 13100255 #Wilhelm_Büchsel
+		remove_minister = 13100256 #Friedrich_von_Baudissin
+		remove_minister = 13100257 #Max_von_Fischel
+		remove_minister = 13100258 #August_von_Heeringen
+		remove_minister = 13100259 #Hugo_von_Pohl
+		remove_minister = 13100260 #Gustav_Bachmann
+		remove_minister = 13100261 #Henning_von_Holtzendorff
+		remove_minister = 13100262 #Reinhard_Scheer
+		remove_minister = 13100263 #Adolf_von_Trotha
+		remove_minister = 13100264 #Andreas_Michelsen
+		remove_minister = 13100265 #Walter_von_Eberhardt
+		remove_minister = 13100266 #Richard_Roethe
+		remove_minister = 13100267 #Wilhelm_Siegert
+		remove_minister = 13100268 #Hermann_von_der_Lieth-Thomsen
+		remove_minister = 13100269 #Ernst_von_Hoeppner
+		remove_minister = 13100270 #Wilhelm_Haehnelt
+		remove_minister = 13100271 #Peter_Strasser
+		set_global_flag = 2191519_EVENT_DONE
 		 }
 	}
 
@@ -547,16 +547,16 @@
 	trigger = {
 		 not = {
 			 or = {
-				 chief_of_staff = 855039
-				 chief_of_army = 855039
-				 }
+				 chief_of_staff = 13100215 #Erich_von_Falkenhayn
+				chief_of_army = 13100215 #Erich_von_Falkenhayn
+				}
 			 }
 		 GER = {
 			 war_with = FRA
 			 }
 		 not = {
-			 2613 = {
-				 controlled_by = GER
+			 2613 = {#Paris
+				controlled_by = GER
 				 }
 			 }
 		 tag = GER
@@ -570,11 +570,11 @@
 		 }
 	option = {
 		 name = "DH_EVENT_2191546_Option7"
-		 chief_of_staff = 855039
-		 chief_of_army = 855039
-		 remove_minister = 855072
-		 kill_leader = 13110040
-		 dissent = -2
+		 chief_of_staff = 13100215 #Erich_von_Falkenhayn
+		chief_of_army = 13100215 #Erich_von_Falkenhayn
+		remove_minister = 13100246 #Helmuth_von_Moltke
+		kill_leader = 13110040 #von_Moltke_H.
+		dissent = -2
 		 set_global_flag = 2191546_EVENT_DONE
 		 }
 	}
@@ -596,8 +596,8 @@
 		 }
 	trigger = {
 		 war = no
-		 9624 = {
-			 controlled_by = USA
+		 9624 = {#Veracruz
+			controlled_by = USA
 			 }
 		 tag = USA
 		 date = 1914.10.10
@@ -632,8 +632,8 @@
 		 }
 	trigger = {
 		 war_with = GER
-		 9624 = {
-			 controlled_by = USA
+		 9624 = {#Veracruz
+			controlled_by = USA
 			 }
 		 war = no
 		 tag = USA
@@ -653,20 +653,20 @@
 				 tag = THIS
 				 exists = MEX
 				 }
-			 9567 = {
-				 secede_province = MEX
+			 9567 = {#Tampico
+				secede_province = MEX
 				 }
-			 9588 = {
-				 secede_province = MEX
+			 9588 = {#Poza_Rica
+				secede_province = MEX
 				 }
-			 9624 = {
-				 secede_province = MEX
+			 9624 = {#Veracruz
+				secede_province = MEX
 				 }
-			 9625 = {
-				 secede_province = MEX
+			 9625 = {#Comalcalco
+				secede_province = MEX
 				 }
-			 9643 = {
-				 secede_province = MEX
+			 9643 = {#Coatzacoalcos
+				secede_province = MEX
 				 }
 			 }
 		 random_country = {
@@ -677,45 +677,20 @@
 					 exists = MEX
 					 }
 				 }
-			 9567 = {
-				 secede_province = MXR
+			 9567 = {#Tampico
+				secede_province = MXR
 				 }
-			 9588 = {
-				 secede_province = MXR
+			 9588 = {#Poza_Rica
+				secede_province = MXR
 				 }
-			 9624 = {
-				 secede_province = MXR
+			 9624 = {#Veracruz
+				secede_province = MXR
 				 }
-			 9625 = {
-				 secede_province = MXR
+			 9625 = {#Comalcalco
+				secede_province = MXR
 				 }
-			 9643 = {
-				 secede_province = MXR
-				 }
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 exists = MXR
-				 not = {
-					 exists = MEX
-					 exists = MXR
-					 }
-				 }
-			 9567 = {
-				 secede_province = MXR
-				 }
-			 9588 = {
-				 secede_province = MXR
-				 }
-			 9624 = {
-				 secede_province = MXR
-				 }
-			 9625 = {
-				 secede_province = MXR
-				 }
-			 9643 = {
-				 secede_province = MXR
+			 9643 = {#Coatzacoalcos
+				secede_province = MXR
 				 }
 			 }
 		 random_country = {
@@ -727,20 +702,45 @@
 					 exists = MXR
 					 }
 				 }
-			 9567 = {
-				 secede_province = MXR
+			 9567 = {#Tampico
+				secede_province = MXR
 				 }
-			 9588 = {
-				 secede_province = MXR
+			 9588 = {#Poza_Rica
+				secede_province = MXR
 				 }
-			 9624 = {
-				 secede_province = MXR
+			 9624 = {#Veracruz
+				secede_province = MXR
 				 }
-			 9625 = {
-				 secede_province = MXR
+			 9625 = {#Comalcalco
+				secede_province = MXR
 				 }
-			 9643 = {
-				 secede_province = MXR
+			 9643 = {#Coatzacoalcos
+				secede_province = MXR
+				 }
+			 }
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 exists = MXR
+				 not = {
+					 exists = MEX
+					 exists = MXR
+					 }
+				 }
+			 9567 = {#Tampico
+				secede_province = MXR
+				 }
+			 9588 = {#Poza_Rica
+				secede_province = MXR
+				 }
+			 9624 = {#Veracruz
+				secede_province = MXR
+				 }
+			 9625 = {#Comalcalco
+				secede_province = MXR
+				 }
+			 9643 = {#Coatzacoalcos
+				secede_province = MXR
 				 }
 			 }
 		 set_global_flag = 2049511_EVENT_DONE
@@ -955,8 +955,8 @@
 		 }
 	option = {
 		 name = "DH_EVENT_2049540_Option7"
-		 10242 = {
-			 create_revolt = 3
+		 10242 = {#Curitiba
+			create_revolt = 3
 			 }
 		 dissent = 5
 		 set_global_flag = 2049540_EVENT_DONE

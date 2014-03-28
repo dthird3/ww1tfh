@@ -1,69 +1,68 @@
-#
-# AI is not to take this decision
+
 diplomatic_decisions = {
-	 break_blockade = {
-		ai_will_do = {
-			 factor = 0
+ break_blockade = {
+	ai_will_do = {
+		 factor = 0
+		 }
+	potential = {
+		 tag = GER
+		 GER = {
+			 war_with = ENG
 			 }
-		potential = {
-			 tag = GER
+		 ENG = {
+			 has_country_flag = North_Sea_War_Zone
+			 }
+		 NOT = {
 			 GER = {
-				war_with = ENG
-				 }
-			 ENG = {
-				 has_country_flag = North_Sea_War_Zone
-				 }
-			 NOT = {
-				 GER = {
-					 has_country_flag = break_blockade
-					 }
+				 has_country_flag = break_blockade
 				 }
 			 }
-		allow = {
-			 ai = no
+		 }
+	allow = {
+		 ai = no
+		 }
+	effect = {
+		 GER = {
+			 set_country_flag = break_blockade
 			 }
-		effect = {
-			 GER = {
-				 set_country_flag = break_blockade
-				 }
-			 GER = {
-				 country_event = 100518
-				 }
-			 }
-		}
-	
-#
-# Doesn't seem to trigger
-	 zeppelin_bombing = {
-		ai_will_do = {
-			 factor = 1
-			 }
-		potential = {
-			 tag = GER
-			 GER = {
-				war_with = ENG
-				 }
-			 NOT = {
-				 GER = {
-					 has_country_flag = Zeppelin_bombing
-					 }
-				 }
-			 }
-		allow = {
-			 not = {
-				 ENG = {
-					 strat_bomb_impact = 0.0
-					 }
-				 }
-			 }
-		effect = {
-			 GER = {
-				 set_country_flag = Zeppelin_bombing
-				 }
-			 GER = {
-				 country_event = 100510
-				 }
-			 }
-		}
+		 GER = {
+			 country_event = 100518 #100518
+			}
+		 }
 	}
+
+
+
+ zeppelin_bombing = {
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 tag = GER
+		 GER = {
+			 war_with = ENG
+			 }
+		 NOT = {
+			 GER = {
+				 has_country_flag = Zeppelin_bombing
+				 }
+			 }
+		 }
+	allow = {
+		 not = {
+			 ENG = {
+				 strat_bomb_impact = 0.0
+				 }
+			 }
+		 }
+	effect = {
+		 GER = {
+			 set_country_flag = Zeppelin_bombing
+			 }
+		 GER = {
+			 country_event = 100510 #100510
+			}
+		 }
+	}
+}
 
