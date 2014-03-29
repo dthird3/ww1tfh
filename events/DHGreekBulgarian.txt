@@ -14,9 +14,6 @@
 	 
 	trigger = {
 		 tag = BUL
-		 not = {
-			 has_global_flag = SLEEPEVENT_2020500
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2020500_Option1"
@@ -27,7 +24,6 @@
 		 GER = {
 			 country_event = 414 #Bulgaria_joins_the_Central_Powers!
 			}
-		 set_global_flag = 2020500_EVENT_DONE
 		 }
 	option = {
 		 name = "DH_EVENT_2020500_Option2"
@@ -38,7 +34,6 @@
 			 who = GER
 			 value = -15
 			 }
-		 set_global_flag = 2020500_EVENT_DONE
 		 }
 	}
 
@@ -58,9 +53,6 @@
 	 
 	trigger = {
 		 tag = BUL
-		 not = {
-			 has_global_flag = SLEEPEVENT_2020501
-			 }
 		 }
 	option = {
 		 ai_chance = {
@@ -71,7 +63,6 @@
 		 GER = {
 			 country_event = 414 #Bulgaria_joins_the_Central_Powers!
 			}
-		 set_global_flag = 2020501_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -82,7 +73,6 @@
 			 who = GER
 			 value = -15
 			 }
-		 set_global_flag = 2020501_EVENT_DONE
 		 }
 	}
 
@@ -113,9 +103,6 @@
 		 date = 1914.1.1
 		 not = {
 			 date = 1925.12.30
-			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2001505
 			 }
 		 }
 	option = {
@@ -161,7 +148,7 @@
 			 date = 1925.12.30
 			 }
 		 not = {
-			 has_global_flag = SLEEPEVENT_2001506
+			 has_global_flag = SLEEPEVENT_2001506#
 			 }
 		 }
 	option = {
@@ -226,7 +213,7 @@
 			 date = 1925.12.30
 			 }
 		 not = {
-			 has_global_flag = SLEEPEVENT_2001507
+			 has_global_flag = SLEEPEVENT_2001507#
 			 }
 		 }
 	option = {
@@ -281,9 +268,7 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2002507
-			 }
+
 		 }
 	option = {
 		 ai_chance = {
@@ -350,9 +335,6 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2002508
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2002508_Option7"
@@ -407,9 +389,6 @@
 	 
 	trigger = {
 		 tag = FRA
-		 not = {
-			 has_global_flag = SLEEPEVENT_2002509
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2002509_Option7"
@@ -436,9 +415,6 @@
 	 
 	trigger = {
 		 tag = FRA
-		 not = {
-			 has_global_flag = SLEEPEVENT_2002511
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2002511_Option1"
@@ -477,9 +453,6 @@
 	 
 	trigger = {
 		 tag = FRA
-		 not = {
-			 has_global_flag = SLEEPEVENT_2002512
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2002512_Option1"
@@ -539,9 +512,6 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2002513
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2002513_Option1"
@@ -584,9 +554,6 @@
 	 
 	trigger = {
 		 tag = FRA
-		 not = {
-			 has_global_flag = SLEEPEVENT_2002514
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2002514_Option7"
@@ -613,9 +580,6 @@
 	 
 	trigger = {
 		 tag = FRA
-		 not = {
-			 has_global_flag = SLEEPEVENT_2002516
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2002516_Option7"
@@ -642,9 +606,6 @@
 	 
 	trigger = {
 		 tag = FRA
-		 not = {
-			 has_global_flag = SLEEPEVENT_2002517
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2002517_Option7"
@@ -671,9 +632,6 @@
 	 
 	trigger = {
 		 tag = FRA
-		 not = {
-			 has_global_flag = SLEEPEVENT_2002520
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2002520_Option7"
@@ -722,9 +680,6 @@
 		 date = 1914.1.1
 		 not = {
 			 date = 1925.12.30
-			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2002521
 			 }
 		 }
 	option = {
@@ -786,9 +741,6 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2002522
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2002522_Option1"
@@ -829,9 +781,6 @@
 	 
 	trigger = {
 		 tag = FRA
-		 not = {
-			 has_global_flag = SLEEPEVENT_2002523
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2002523_Option7"
@@ -862,9 +811,6 @@
 	 
 	trigger = {
 		 tag = FRA
-		 not = {
-			 has_global_flag = SLEEPEVENT_2002524
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2002524_Option7"
@@ -913,9 +859,6 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2002533
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2002533_Option1"
@@ -959,9 +902,6 @@
 		 AUH = {
 			 war_with = SER
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2019501
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2019501_Option1"
@@ -969,7 +909,6 @@
 			 factor = 100
 			 }
 		 dissent = 3
-		 set_global_flag = 2019501_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -981,7 +920,6 @@
 		 war = {
 			 target = AUH
 			 }
-		 set_global_flag = 2019501_EVENT_DONE
 		 }
 	}
 
@@ -1001,9 +939,6 @@
 	 
 	trigger = {
 		 tag = GRE
-		 not = {
-			 has_global_flag = SLEEPEVENT_2019502
-			 }
 		 }
 	option = {
 		 ai_chance = {
@@ -1012,7 +947,6 @@
 		 name = "DH_EVENT_2019502_Option1"
 		 dissent = 3
 		 join_faction = allies
-		 set_global_flag = 2019502_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -1020,7 +954,6 @@
 			 }
 		 name = "DH_EVENT_2019502_Option2"
 		 dissent = 5
-		 set_global_flag = 2019502_EVENT_DONE
 		 }
 	}
 
@@ -1040,9 +973,6 @@
 	 
 	trigger = {
 		 tag = GRE
-		 not = {
-			 has_global_flag = SLEEPEVENT_2019503
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2019503_Option1"
@@ -1050,7 +980,6 @@
 			 factor = 95
 			 }
 		 dissent = 5
-		 set_global_flag = 2019503_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -1059,7 +988,6 @@
 		 name = "DH_EVENT_2019503_Option2"
 		 dissent = 5
 		 create_alliance = SER
-		 set_global_flag = 2019503_EVENT_DONE
 		 }
 	}
 
@@ -1079,9 +1007,6 @@
 	 
 	trigger = {
 		 tag = GRE
-		 not = {
-			 has_global_flag = SLEEPEVENT_2019504
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2019504_Option1"
@@ -1093,7 +1018,6 @@
 			}
 		 dissent = 3
 		 join_faction = allies
-		 set_global_flag = 2019504_EVENT_DONE
 		 }
 	option = {
 		 name = "DH_EVENT_2019504_Option2"
@@ -1101,7 +1025,6 @@
 			 factor = 10
 			 }
 		 dissent = 5
-		 set_global_flag = 2019504_EVENT_DONE
 		 }
 	}
 
@@ -1121,9 +1044,6 @@
 	 
 	trigger = {
 		 tag = GRE
-		 not = {
-			 has_global_flag = SLEEPEVENT_2019505
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2019505_Option1"
@@ -1170,9 +1090,6 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2019506
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2019506_Option7"
@@ -1205,14 +1122,10 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2019507
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2019507_Option7"
 		 dissent = -2
-		 set_global_flag = 2019507_EVENT_DONE
 		 }
 	}
 
@@ -1248,9 +1161,6 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2019508
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2019508_Option1"
@@ -1263,7 +1173,6 @@
 			}
 		 clr_global_flag = venizelos_incabinet
 		 head_of_government = 13200090 #Dimitrios_Gounaris
-		set_global_flag = 2019508_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -1272,7 +1181,6 @@
 		 name = "DH_EVENT_2019508_Option2"
 		 dissent = 5
 		 join_faction = allies
-		 set_global_flag = 2019508_EVENT_DONE
 		 }
 	}
 
@@ -1314,9 +1222,6 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2019509
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2019509_Option1"
@@ -1349,7 +1254,6 @@
 				 country_event = 89 #The_Gounalis_plan
 				}
 			 }
-		 set_global_flag = 2019509_EVENT_DONE
 		 }
 	}
 
@@ -1379,9 +1283,6 @@
 		 date = 1915.6.1
 		 not = {
 			 date = 1925.12.30
-			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2019510
 			 }
 		 }
 	option = {
@@ -1422,9 +1323,6 @@
 		 date = 1914.1.1
 		 not = {
 			 date = 1925.12.30
-			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2019511
 			 }
 		 }
 	option = {
@@ -1471,9 +1369,6 @@
 	 
 	trigger = {
 		 tag = GRE
-		 not = {
-			 has_global_flag = SLEEPEVENT_2019512
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2019512_Option1"
@@ -1481,7 +1376,6 @@
 			 factor = 100
 			 }
 		 dissent = 4
-		 set_global_flag = 2019512_EVENT_DONE
 		 }
 	option = {
 		 name = "DH_EVENT_2019512_Option2"
@@ -1490,7 +1384,6 @@
 			 }
 		 dissent = 5
 		 join_faction = allies
-		 set_global_flag = 2019512_EVENT_DONE
 		 }
 	}
 
@@ -1510,9 +1403,6 @@
 	 
 	trigger = {
 		 tag = GRE
-		 not = {
-			 has_global_flag = SLEEPEVENT_2019513
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2019513_Option1"
@@ -1523,7 +1413,6 @@
 			 who = FRA
 			 value = -10
 			 }
-		 set_global_flag = 2019513_EVENT_DONE
 		 }
 	option = {
 		 name = "DH_EVENT_2019513_Option2"
@@ -1539,7 +1428,6 @@
 			 who = FRA
 			 value = 10
 			 }
-		 set_global_flag = 2019513_EVENT_DONE
 		 }
 	}
 
@@ -1576,9 +1464,6 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2019514
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2019514_Option1"
@@ -1591,14 +1476,12 @@
 		FRA = {
 			 country_event = 92 #Venizelos_leaves_Greek_government
 			}
-		 set_global_flag = 2019514_EVENT_DONE
 		 }
 	option = {
 		 name = "DH_EVENT_2019514_Option2"
 		 ai_chance = {
 			 factor = 0
 			 }
-		 set_global_flag = 2019514_EVENT_DONE
 		 }
 	}
 
@@ -1639,9 +1522,6 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2019515
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2019515_Option1"
@@ -1669,7 +1549,6 @@
 				 value = -15
 				 }
 			 }
-		 set_global_flag = 2019515_EVENT_DONE
 		 }
 	option = {
 		 name = "DH_EVENT_2019515_Option2"
@@ -1699,7 +1578,6 @@
 				 value = 5
 				 }
 			 }
-		 set_global_flag = 2019515_EVENT_DONE
 		 }
 	}
 
@@ -1734,9 +1612,6 @@
 		 date = 1914.1.1
 		 not = {
 			 date = 1925.12.30
-			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2019517
 			 }
 		 }
 	option = {
@@ -1775,9 +1650,6 @@
 	 
 	trigger = {
 		 tag = GRE
-		 not = {
-			 has_global_flag = SLEEPEVENT_2019518
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2019518_Option7"
@@ -1821,9 +1693,6 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2019519
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2019519_Option7"
@@ -1835,7 +1704,6 @@
 			 who = FRA
 			 value = -50
 			 }
-		 set_global_flag = 2019519_EVENT_DONE
 		 }
 	}
 
@@ -1855,9 +1723,6 @@
 	 
 	trigger = {
 		 tag = GRE
-		 not = {
-			 has_global_flag = SLEEPEVENT_2019520
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2019520_Option1"
@@ -1871,7 +1736,6 @@
 			 who = FRA
 			 value = 15
 			 }
-		 set_global_flag = 2019520_EVENT_DONE
 		 }
 	option = {
 		 name = "DH_EVENT_2019520_Option2"
@@ -1882,7 +1746,6 @@
 		 war = {
 			 target = FRA
 			 }
-		 set_global_flag = 2019520_EVENT_DONE
 		 }
 	}
 
@@ -1910,9 +1773,6 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2019521
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2019521_Option1"
@@ -1920,7 +1780,6 @@
 			 factor = 100
 			 }
 		 country_event = 100 #The_'Vêpres_Grecques'
-		set_global_flag = 2019521_EVENT_DONE
 		 }
 	option = {
 		 name = "DH_EVENT_2019521_Option2"
@@ -1928,7 +1787,6 @@
 			 factor = 0
 			 }
 		 dissent = 5
-		 set_global_flag = 2019521_EVENT_DONE
 		 }
 	}
 
@@ -1948,9 +1806,6 @@
 	 
 	trigger = {
 		 tag = GRE
-		 not = {
-			 has_global_flag = SLEEPEVENT_2019522
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2019522_Option1"
@@ -1967,7 +1822,6 @@
 			 who = FRA
 			 value = 50
 			 }
-		 set_global_flag = 2019522_EVENT_DONE
 		 }
 	option = {
 		 name = "DH_EVENT_2019522_Option2"
@@ -1989,7 +1843,6 @@
 				 }
 			 join_faction = axis
 			 }
-		 set_global_flag = 2019522_EVENT_DONE
 		 }
 	}
 
@@ -2048,9 +1901,6 @@
 		 not = {
 			 date = 1914.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2191508
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2191508_Option1"
@@ -2060,14 +1910,12 @@
 		 BUL = {
 			 country_event = 3 #The_Fall_of_Serbia
 			}
-		 set_global_flag = 2191508_EVENT_DONE
 		 }
 	option = {
 		 name = "DH_EVENT_2191508_Option2"
 		 ai_chance = {
 			 factor = 0
 			 }
-		 set_global_flag = 2191508_EVENT_DONE
 		 }
 	}
 
@@ -2087,9 +1935,6 @@
 	 
 	trigger = {
 		 tag = GER
-		 not = {
-			 has_global_flag = SLEEPEVENT_2191509
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2191509_Option7"
@@ -2129,9 +1974,6 @@
 			 }
 		 not = {
 			 has_global_flag = 2191509_EVENT_DONE
-			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2191509
 			 }
 		 }
 	option = {
@@ -2195,9 +2037,6 @@
 		 not = {
 			 date = 1914.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2191510
-			 }
 		 }
 	option = {
 		 ai_chance = {
@@ -2207,14 +2046,12 @@
 		 BUL = {
 			 country_event = 4 #Central_Power's_proposal
 			}
-		 set_global_flag = 2191510_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
 			 factor = 0
 			 }
 		 name = "DH_EVENT_2191510_Option2"
-		 set_global_flag = 2191510_EVENT_DONE
 		 }
 	}
 
@@ -2253,15 +2090,11 @@
 			 BUL = {
 				 faction = allies
 				 }
-			 has_global_flag = 2020501_EVENT_DONE
 			 }
 		 tag = AUH
 		 date = 1915.2.1
 		 not = {
 			 date = 1915.12.30
-			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2192529
 			 }
 		 }
 	option = {
@@ -2272,7 +2105,6 @@
 		 BUL = {
 			 country_event = 4 #Central_Power's_proposal
 			}
-		 set_global_flag = 2192529_EVENT_DONE
 		 }
 	}
 
@@ -2329,9 +2161,6 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2084503
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2084503_Option1"
@@ -2362,16 +2191,12 @@
 	 
 	trigger = {
 		 tag = SER
-		 not = {
-			 has_global_flag = SLEEPEVENT_2084504
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2084504_Option7"
 		 ALB = {
 			 military_access = SER
 			 }
-		 set_global_flag = 2084504_EVENT_DONE
 		 }
 	}
 
@@ -2391,9 +2216,6 @@
 	 
 	trigger = {
 		 tag = ALB
-		 not = {
-			 has_global_flag = SLEEPEVENT_2058500
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2058500_Option1"
@@ -2414,7 +2236,6 @@
 				 country_event = 94 #Serbian_army_evacuate_through_Albania!
 				}
 			 }
-		 set_global_flag = 2058500_EVENT_DONE
 		 }
 	option = {
 		 name = "DH_EVENT_2058500_Option2"
@@ -2424,7 +2245,6 @@
 		 war = {
 			 target = SER
 			 }
-		 set_global_flag = 2058500_EVENT_DONE
 		 }
 	}
 
@@ -2444,13 +2264,9 @@
 	 
 	trigger = {
 		 tag = ALB
-		 not = {
-			 has_global_flag = SLEEPEVENT_2058501
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2058501_Option7"
-		 set_global_flag = 2058501_EVENT_DONE
 		 }
 	}
 
@@ -2470,9 +2286,6 @@
 	 
 	trigger = {
 		 tag = FRA
-		 not = {
-			 has_global_flag = SLEEPEVENT_2002518
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2002518_Option7"
