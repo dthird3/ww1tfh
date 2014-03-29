@@ -19,6 +19,8 @@
 peace_order = { 
 	civil_war
 	mexico_revolution
+	civil_war_1
+	civil_war_2
 	second_balkans
 	second_balkans_bulg
 	axis_romania
@@ -29,22 +31,17 @@ peace_order = {
 	allies_germany
 	allies_austria
 	allies_ottoman
-	civil_war_1
-	civil_war_2
 	puppet
 	aquire_all_cores
 	aquire_territory
-	china_war_goal
-	vichy_war_goal
-	barbarossa_war_goal
-	japan_USA_goal
-	restore_france
 	conquer
 	install_communism 
 	liberate_as_democracy 
 	#liberate_as_communist 
 	install_democracy 
 }
+
+
 # Civil war
 civil_war = {
 	sprite_index = 4
@@ -53,13 +50,13 @@ civil_war = {
 	is_valid = {
 		THIS = { 
 			OR = {
-				tag = SPA 
-				tag = SPR
+				tag = SOV 
+				tag = WHR
 			}
 		}
 		OR = {
-			tag = SPA 
-			tag = SPR
+			tag = SOV 
+			tag = WHR
 		}
 	}
 
@@ -69,6 +66,7 @@ civil_war = {
 	
 	war_name = CIVIL_WAR_NAME
 }
+
 mexico_revolution = {
 	sprite_index = 4
 	is_triggered_only = yes
@@ -84,7 +82,7 @@ mexico_revolution = {
 		government_in_exile = no
 	}
 
-	#is_civil_war = yes #this is a civil war
+	is_civil_war = yes #this is a civil war
 
 	on_completion = { 
 		MXR = { country_event = 190011 }
@@ -93,6 +91,52 @@ mexico_revolution = {
 	war_name = WAR_CONQUEST_NAME
 }
 
+# Civil war
+civil_war_1 = {
+	sprite_index = 4
+	is_triggered_only = yes
+	
+	is_valid = {
+		THIS = { 
+			tag = CHI
+		}
+		tag = QIN
+		QIN = { exists = yes }
+		CHI = { exists = yes }
+		government_in_exile = no
+	}
+
+	#is_civil_war = yes #this is a civil war
+
+	on_completion = { 
+		CHI = { country_event = 999956 }
+	}
+	
+	war_name = WAR_CONQUEST_NAME
+}
+
+civil_war_2 = {
+	sprite_index = 4
+	is_triggered_only = yes
+	
+	is_valid = {
+		THIS = { 
+			tag = QIN
+		}
+		tag = CHI
+		QIN = { exists = yes }
+		CHI = { exists = yes }
+		government_in_exile = no
+	}
+
+	#is_civil_war = yes #this is a civil war
+	
+	on_completion = { 
+		QIN = { country_event = 999954 }
+	}
+	
+	war_name = WAR_CONQUEST_NAME
+}
 second_balkans = {
 	sprite_index = 1
 	is_triggered_only = yes
@@ -356,52 +400,6 @@ allies_ottoman = {
 	war_name = WAR_CONQUEST_NAME
 }
 
-# Civil war
-civil_war_1 = {
-	sprite_index = 4
-	is_triggered_only = yes
-	
-	is_valid = {
-		THIS = { 
-			tag = CHI
-		}
-		tag = QIN
-		QIN = { exists = yes }
-		CHI = { exists = yes }
-		government_in_exile = no
-	}
-
-	#is_civil_war = yes #this is a civil war
-
-	on_completion = { 
-		CHI = { country_event = 999956 }
-	}
-	
-	war_name = WAR_CONQUEST_NAME
-}
-
-civil_war_2 = {
-	sprite_index = 4
-	is_triggered_only = yes
-	
-	is_valid = {
-		THIS = { 
-			tag = QIN
-		}
-		tag = CHI
-		QIN = { exists = yes }
-		CHI = { exists = yes }
-		government_in_exile = no
-	}
-
-	#is_civil_war = yes #this is a civil war
-	
-	on_completion = { 
-		QIN = { country_event = 999954 }
-	}
-	
-	war_name = WAR_CONQUEST_NAME
-}
 
 conquer = {
 	sprite_index = 4
@@ -563,107 +561,4 @@ install_communism = {
 	
 	war_name = WAR_INSTALL_COMMUNIST
 }
-vichy_war_goal = {
-	sprite_index = 1
-	is_triggered_only = yes
 
-	always = yes
-	
-	is_valid = {
-		this = { 
-			tag = GER
-		}
-		tag = FRA
-		FRA = { 
-			NOT = { has_country_flag = fr_signs_peace }
-		}
-		NOT = {
-			# has no "conquer" from anyone
-			# has no "puppet" from anyone
-			has_cb = { type = conquer }
-			has_cb = { type = puppet }
-		}
-	}
-
-	handles_peace = yes
-	threat = 10
-	on_completion = { 
-		country_event = 1004 #vichy
-	}
-}
-
-barbarossa_war_goal = {
-	sprite_index = 1
-	is_triggered_only = yes
-
-	always = yes
-	
-	is_valid = {
-		this = { 
-			tag = GER
-		}
-		tag = SOV
-	}
-	handles_peace = yes
-	threat = 20
-	on_completion = { country_event = 1007 } 
-	
-}
-
-china_war_goal = {
-	sprite_index = 1
-	is_triggered_only = yes
-
-	always = yes
-	
-	is_valid = {
-		this = { 
-			tag = JAP
-		}
-		tag = CHI
-	}
-	handles_peace = yes
-	on_completion = { country_event = 2520 } 
-	
-}
-
-restore_france = {
-	sprite_index = 3
-	is_triggered_only = yes
-
-	always = yes
-	
-	is_valid = {
-		this = { 
-			NOT = { faction = axis }
-		}
-		tag = VIC
-	}
-
-	on_completion = { country_event = 2518 } 
-	
-}
-
-japan_USA_goal = {
-	sprite_index = 1
-	is_triggered_only = yes
-
-	always = yes
-	
-	is_valid = {
-		this = { 
-			tag = JAP
-		}
-		tag = USA
-	}
-	 
-	po_demand_provinces = yes
-	
-	allowed_province = {
-		OR = {
-			region = US_pacific_bases_region
-			region = Alaska_region
-			region = US_west_coast_cities
-		}
-	}
-}
