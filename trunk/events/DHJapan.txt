@@ -14,9 +14,6 @@
 	 
 	trigger = {
 		 tag = SER
-		 not = {
-			 has_global_flag = SLEEPEVENT_2001544
-			 }
 		 }
 	option = {
 		 ai_chance = {
@@ -54,9 +51,6 @@
 	 
 	trigger = {
 		 tag = MTN
-		 not = {
-			 has_global_flag = SLEEPEVENT_2001545
-			 }
 		 }
 	option = {
 		 ai_chance = {
@@ -103,9 +97,6 @@
 	 
 	trigger = {
 		 tag = AUH
-		 not = {
-			 has_global_flag = SLEEPEVENT_2001547
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2001547_Option7"
@@ -113,7 +104,6 @@
 		 THIS = {
 			 inherit = SER
 			 }
-		 set_global_flag = SLEEPEVENT_2192535
 		 }
 	}
 
@@ -133,9 +123,6 @@
 	 
 	trigger = {
 		 tag = AUH
-		 not = {
-			 has_global_flag = SLEEPEVENT_2001548
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2001548_Option7"
@@ -160,9 +147,6 @@
 	 
 	trigger = {
 		 tag = HJZ
-		 not = {
-			 has_global_flag = SLEEPEVENT_2001549
-			 }
 		 }
 	option = {
 		 ai_chance = {
@@ -200,9 +184,6 @@
 	 
 	trigger = {
 		 tag = TUR
-		 not = {
-			 has_global_flag = SLEEPEVENT_2001550
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2001550_Option7"
@@ -229,9 +210,6 @@
 	 
 	trigger = {
 		 tag = ENG
-		 not = {
-			 has_global_flag = SLEEPEVENT_2001551
-			 }
 		 }
 	option = {
 		 ai_chance = {
@@ -280,9 +258,6 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2011500
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2011500_Option7"
@@ -292,7 +267,6 @@
 		 GER = {
 			 country_event = 438 #Japanese_Ultimatum
 			}
-		 set_global_flag = 2011500_EVENT_DONE
 		 }
 	option = {
 		 name = "DH_EVENT_2011500_Option8"
@@ -303,7 +277,6 @@
 		 GER = {
 			 country_event = 438 #Japanese_Ultimatum
 			}
-		 set_global_flag = 2011500_EVENT_DONE
 		 }
 	}
 
@@ -323,9 +296,6 @@
 	 
 	trigger = {
 		 tag = JAP
-		 not = {
-			 has_global_flag = SLEEPEVENT_2011501
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2011501_Option1"
@@ -340,7 +310,6 @@
 				 }
 			 clr_global_flag = JAP_ultimatum_extended
 			 }
-		 set_global_flag = 2011501_EVENT_DONE
 		 }
 	option = {
 		 name = "DH_EVENT_2011501_Option2"
@@ -355,7 +324,6 @@
 				 }
 			 clr_global_flag = JAP_ultimatum_extended
 			 }
-		 set_global_flag = 2011501_EVENT_DONE
 		 }
 	}
 
@@ -375,9 +343,6 @@
 	 
 	trigger = {
 		 tag = JAP
-		 not = {
-			 has_global_flag = SLEEPEVENT_2011502
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2011502_Option1"
@@ -390,7 +355,6 @@
 			 value = -25
 			 }
 		 neutrality = 30
-		 set_global_flag = 2011502_EVENT_DONE
 		 }
 	option = {
 		 name = "DH_EVENT_2011502_Option2"
@@ -404,7 +368,6 @@
 			 }
 		 join_faction = allies
 		 clr_global_flag = JAP_ultimatum_extended
-		 set_global_flag = 2011502_EVENT_DONE
 		 }
 	option = {
 		 name = "DH_EVENT_2011502_Option3"
@@ -418,7 +381,6 @@
 			 }
 		 join_faction = axis
 		 clr_global_flag = JAP_ultimatum_extended
-		 set_global_flag = 2011502_EVENT_DONE
 		 }
 	}
 
@@ -449,9 +411,6 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2011503
-			 }
 		 }
 	option = {
 		 ai_chance = {
@@ -461,7 +420,6 @@
 		 GER = {
 			 country_event = 181 #Japan_offers_a_white_peace
 			}
-		 set_global_flag = 2011503_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -469,7 +427,6 @@
 			 }
 		 name = "DH_EVENT_2011503_Option8"
 		 dissent = 5
-		 set_global_flag = 2011503_EVENT_DONE
 		 }
 	}
 
@@ -489,9 +446,6 @@
 	 
 	trigger = {
 		 tag = GER
-		 not = {
-			 has_global_flag = SLEEPEVENT_2011504
-			 }
 		 }
 	option = {
 		 ai_chance = {
@@ -554,7 +508,6 @@
 		 JAP = {
 			 country_event = 182 #Germany_accepted_our_proposal
 			}
-		 set_global_flag = 2011504_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -562,7 +515,6 @@
 			 }
 		 name = "DH_EVENT_2011504_Option8"
 		 dissent = 5
-		 set_global_flag = 2011504_EVENT_DONE
 		 }
 	}
 
@@ -582,9 +534,6 @@
 	 
 	trigger = {
 		 tag = JAP
-		 not = {
-			 has_global_flag = SLEEPEVENT_2011505
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2011505_Option7"
@@ -595,8 +544,6 @@
 		 THIS = {
 			 end_war = AUH
 			 }
-		 set_global_flag = German_EndWWI
-		 set_global_flag = 2011505_EVENT_DONE
 		 }
 	}
 
@@ -614,9 +561,6 @@
 	 
 	trigger = {
 		 tag = GER
-		 not = {
-			 has_global_flag = SLEEPEVENT_2191540
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2191540_Option1"
@@ -626,7 +570,6 @@
 		 JAP = {
 			 country_event = 178 #Germany_did_not_answer
 			}
-		 set_global_flag = 2191540_EVENT_DONE
 		 }
 	option = {
 		 name = "DH_EVENT_2191540_Option2"
@@ -661,7 +604,6 @@
 				 has_global_flag = JAP_ultimatum_extended
 				 }
 			 }
-		 set_global_flag = 2191540_EVENT_DONE
 		 }
 	}
 

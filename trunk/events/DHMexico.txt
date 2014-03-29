@@ -14,9 +14,6 @@
 	 
 	trigger = {
 		 tag = ENG
-		 not = {
-			 has_global_flag = SLEEPEVENT_2001535
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2001535_Option7"
@@ -39,13 +36,9 @@
 	 
 	trigger = {
 		 tag = MEX
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038500
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2038500_Option7"
-		 set_global_flag = 2038500_EVENT_DONE
 		 }
 	}
 
@@ -75,14 +68,10 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038501
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2038501_Option7"
 		 join_faction = axis
-		 set_global_flag = 2038501_EVENT_DONE
 		 }
 	}
 
@@ -123,16 +112,12 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038502
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2038502_Option7"
 		 war = {
 			 target = USA
 			 }
-		 set_global_flag = 2038502_EVENT_DONE
 		 }
 	}
 
@@ -152,9 +137,6 @@
 	 
 	trigger = {
 		 tag = MEX
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038503
-			 }
 		 }
 	option = {
 		 ai_chance = {
@@ -164,7 +146,7 @@
 		 USA = {
 			 country_event = 531 #Mexico_rejects_our_proposal
 			}
-		 set_global_flag = 2038503_EVENT_DONE
+		 set_global_flag = 2038503_EVENT_DONE#
 		 }
 	option = {
 		 ai_chance = {
@@ -175,7 +157,7 @@
 		 THIS = {
 			 military_access = USA
 			 }
-		 set_global_flag = 2038503_EVENT_DONE
+		 set_global_flag = 2038503_EVENT_DONE#
 		 }
 	}
 
@@ -195,13 +177,9 @@
 	 
 	trigger = {
 		 tag = MXR
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038504
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2038504_Option7"
-		 set_global_flag = 2038504_EVENT_DONE
 		 }
 	}
 
@@ -223,26 +201,22 @@
 		 days = 14
 		 }
 	trigger = {
-		 has_global_flag = 2038503_EVENT_DONE
+		 has_global_flag = 2038503_EVENT_DONE#
 		 USA = {
 			 war_with = GER
 			 }
 		 or = {
-			 has_global_flag = 2049536_EVENT_DONE
+			 has_global_flag = 2049536_EVENT_DONE#
 			 }
 		 tag = MXR
 		 date = 1914.8.4
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038505
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2038505_Option7"
 		 join_faction = axis
-		 set_global_flag = 2038505_EVENT_DONE
 		 }
 	}
 
@@ -262,9 +236,6 @@
 	 
 	trigger = {
 		 tag = MXR
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038506
-			 }
 		 }
 	option = {
 		 ai_chance = {
@@ -274,7 +245,6 @@
 		 USA = {
 			 country_event = 534 #Mexico_rejects_our_proposal
 			}
-		 set_global_flag = 2038506_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -285,7 +255,6 @@
 		 THIS = {
 			 military_access = USA
 			 }
-		 set_global_flag = 2038506_EVENT_DONE
 		 }
 	}
 
@@ -311,9 +280,9 @@
 		 exists = MXR
 		 not = {
 			 exists = MEX
-			 has_global_flag = 2038601_EVENT_DONE
-			 has_global_flag = 2038602_EVENT_DONE
-			 has_global_flag = 2038603_EVENT_DONE
+			 has_global_flag = 2038601_EVENT_DONE#
+			 has_global_flag = 2038602_EVENT_DONE#
+			 has_global_flag = 2038603_EVENT_DONE#
 			 has_country_flag = MEX_Conv
 			 }
 		 date = 1914.1.1
@@ -324,7 +293,7 @@
 			 tag = MXR
 			 }
 		 not = {
-			 has_global_flag = SLEEPEVENT_2038601
+			 has_global_flag = SLEEPEVENT_2038601#
 			 }
 		 }
 	option = {
@@ -353,10 +322,10 @@
 				 }
 			 set_global_flag = MEX_Convention
 			 }
-		 set_global_flag = SLEEPEVENT_2038602
-		 set_global_flag = SLEEPEVENT_2038603
+		 set_global_flag = SLEEPEVENT_2038602#
+		 set_global_flag = SLEEPEVENT_2038603#
 		 set_country_flag = MEX_Conv
-		 set_global_flag = 2038601_EVENT_DONE
+		 set_global_flag = 2038601_EVENT_DONE#
 		 }
 	}
 
@@ -389,8 +358,8 @@
 			 }
 		 not = {
 			 exists = MEX
-			 has_global_flag = 2038602_EVENT_DONE
-			 has_global_flag = 2038603_EVENT_DONE
+			 has_global_flag = 2038602_EVENT_DONE#
+			 has_global_flag = 2038603_EVENT_DONE#
 			 has_country_flag = MEX_End
 			 }
 		 date = 1914.1.1
@@ -401,7 +370,7 @@
 			 tag = MXR
 			 }
 		 not = {
-			 has_global_flag = SLEEPEVENT_2038602
+			 has_global_flag = SLEEPEVENT_2038602#
 			 }
 		 }
 	option = {
@@ -443,7 +412,7 @@
 		 set_country_flag = MEX_End
 		 set_global_flag = SLEEPEVENT_2038601
 		 set_global_flag = SLEEPEVENT_2038603
-		 set_global_flag = 2038602_EVENT_DONE
+		 set_global_flag = 2038602_EVENT_DONE#
 		 }
 	}
 
@@ -469,8 +438,8 @@
 		 head_of_state = 14700068 #Victoriano_Huerta
 		not = {
 			 exists = MXR
-			 has_global_flag = 2038601_EVENT_DONE
-			 has_global_flag = 2038603_EVENT_DONE
+			 has_global_flag = 2038601_EVENT_DONE#
+			 has_global_flag = 2038603_EVENT_DONE#
 			 }
 		 tag = MEX
 		 date = 1914.1.1
@@ -478,7 +447,7 @@
 			 date = 1920.12.30
 			 }
 		 not = {
-			 has_global_flag = SLEEPEVENT_2038603
+			 has_global_flag = SLEEPEVENT_2038603#
 			 }
 		 }
 	option = {
@@ -493,7 +462,7 @@
 		 set_country_flag = MEX_Conv
 		 set_global_flag = SLEEPEVENT_2038601
 		 set_global_flag = SLEEPEVENT_2038602
-		 set_global_flag = 2038603_EVENT_DONE
+		 set_global_flag = 2038603_EVENT_DONE#
 		 }
 	}
 
@@ -513,9 +482,6 @@
 	 
 	trigger = {
 		 tag = MXR
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038604
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2038604_Option7"
@@ -537,7 +503,6 @@
 					 }
 				 }
 			 }
-		 set_global_flag = 2038604_EVENT_DONE
 		 }
 	}
 
@@ -557,9 +522,6 @@
 	 
 	trigger = {
 		 tag = MXR
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038605
-			 }
 		 }
 	option = {
 		 ai_chance = {
@@ -581,7 +543,6 @@
 					 }
 				 }
 			 }
-		 set_global_flag = 2038605_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -602,7 +563,6 @@
 					 }
 				 }
 			 }
-		 set_global_flag = 2038605_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -623,7 +583,6 @@
 					 }
 				 }
 			 }
-		 set_global_flag = 2038605_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -634,7 +593,6 @@
 		 MXR = {
 			 country_event = 196 #Villistas_submit_to_us
 			}
-		 set_global_flag = 2038605_EVENT_DONE
 		 }
 	}
 
@@ -654,9 +612,6 @@
 	 
 	trigger = {
 		 tag = MXR
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038606
-			 }
 		 }
 	option = {
 		 ai_chance = {
@@ -676,7 +631,6 @@
 					 }
 				 }
 			 }
-		 set_global_flag = 2038606_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -704,7 +658,6 @@
 					 }
 				 }
 			 }
-		 set_global_flag = 2038606_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -725,7 +678,6 @@
 					 }
 				 }
 			 }
-		 set_global_flag = 2038606_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -736,7 +688,6 @@
 		 MXR = {
 			 country_event = 197 #Zapatistas_submit_to_us
 			}
-		 set_global_flag = 2038606_EVENT_DONE
 		 }
 	}
 
@@ -756,9 +707,6 @@
 	 
 	trigger = {
 		 tag = MXR
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038607
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2038607_Option7"
@@ -766,7 +714,6 @@
 			 inherit = MXR
 			 }
 		 dissent = -3
-		 set_global_flag = 2038607_EVENT_DONE
 		 }
 	}
 
@@ -786,9 +733,6 @@
 	 
 	trigger = {
 		 tag = MXR
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038608
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2038608_Option7"
@@ -796,7 +740,6 @@
 			 inherit = MXR
 			 }
 		 dissent = -3
-		 set_global_flag = 2038608_EVENT_DONE
 		 }
 	}
 
@@ -831,9 +774,6 @@
 		 not = {
 			 date = 1920.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038609
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2038609_Option7"
@@ -841,7 +781,7 @@
 		 MEX = {
 			 country_event = 199 #Carranza_leads_Mexico!
 			}
-		 set_global_flag = 2038609_EVENT_DONE
+		 set_global_flag = 2038609_EVENT_DONE#
 		 }
 	}
 
@@ -918,9 +858,6 @@
 	 
 	trigger = {
 		 tag = MEX
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038610
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2038610_Option7"
@@ -1035,7 +972,6 @@
 		remove_minister = 14700108 #Alfredo_Serratos_Amador
 		remove_minister = 14700109 #Pedro_Caloca_Larios
 		kill_leader = 14710184 #Zapata_Emiliano
-		set_global_flag = 2038610_EVENT_DONE
 		 }
 	}
 
@@ -1070,9 +1006,6 @@
 		 not = {
 			 date = 1920.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038611
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2038611_Option7"
@@ -1080,7 +1013,6 @@
 		 MEX = {
 			 country_event = 201 #Villa_leads_Mexico!
 			}
-		 set_global_flag = 2038611_EVENT_DONE
 		 }
 	}
 
@@ -1161,9 +1093,6 @@
 	 
 	trigger = {
 		 tag = MEX
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038612
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2038612_Option7"
@@ -1301,7 +1230,6 @@
 		kill_leader = 14720002 #Malpica
 		remove_minister = 14700092 #Emiliano_Zapata
 		kill_leader = 14710184 #Zapata_Emiliano
-		set_global_flag = 2038612_EVENT_DONE
 		 }
 	}
 
@@ -1336,9 +1264,6 @@
 		 not = {
 			 date = 1920.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038613
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2038613_Option7"
@@ -1346,7 +1271,6 @@
 		 MEX = {
 			 country_event = 203 #Zapata_leads_Mexico!
 			}
-		 set_global_flag = 2038613_EVENT_DONE
 		 }
 	}
 
@@ -1427,9 +1351,6 @@
 	 
 	trigger = {
 		 tag = MEX
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038614
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2038614_Option7"
@@ -1567,7 +1488,6 @@
 		kill_leader = 14720002 #Malpica
 		remove_minister = 14700091 #Francisco_'Pancho'_Villa
 		kill_leader = 14710126 #Sánchez
-		set_global_flag = 2038614_EVENT_DONE
 		 }
 	}
 
@@ -1602,9 +1522,6 @@
 		 not = {
 			 date = 1920.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038615
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2038615_Option7"
@@ -1615,7 +1532,6 @@
 		 MEX = {
 			 country_event = 201 #Villa_leads_Mexico!
 			}
-		 set_global_flag = 2038615_EVENT_DONE
 		 }
 	option = {
 		 name = "DH_EVENT_2038615_Option8"
@@ -1626,7 +1542,6 @@
 		 war = {
 			 target = MXR
 			 }
-		 set_global_flag = 2038615_EVENT_DONE
 		 }
 	}
 
@@ -1661,9 +1576,6 @@
 		 not = {
 			 date = 1920.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038616
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2038616_Option7"
@@ -1674,7 +1586,6 @@
 		 MEX = {
 			 country_event = 203 #Zapata_leads_Mexico!
 			}
-		 set_global_flag = 2038616_EVENT_DONE
 		 }
 	option = {
 		 name = "DH_EVENT_2038616_Option8"
@@ -1685,7 +1596,6 @@
 		 war = {
 			 target = MXR
 			 }
-		 set_global_flag = 2038616_EVENT_DONE
 		 }
 	}
 
@@ -1716,9 +1626,6 @@
 		 not = {
 			 date = 1919.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038617
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2038617_Option7"
@@ -1743,13 +1650,11 @@
 		 MXR = {
 			 country_event = 207 #The_tragedy!_Zapata_has_been_assassinated!
 			}
-		 set_global_flag = 2038617_EVENT_DONE
 		 }
 	option = {
 		 name = "DH_EVENT_2038617_Option8"
 		 dissent = 1
 		 set_global_flag = SLEEPEVENT_2038618
-		 set_global_flag = 2038617_EVENT_DONE
 		 }
 	}
 
@@ -1772,7 +1677,7 @@
 	trigger = {
 		 tag = MXR
 		 not = {
-			 has_global_flag = SLEEPEVENT_2038618
+			 has_global_flag = SLEEPEVENT_2038618#
 			 }
 		 }
 	option = {
@@ -1792,7 +1697,6 @@
 			 value = -150
 			 }
 		 manpower = -10
-		 set_global_flag = 2038618_EVENT_DONE
 		 }
 	option = {
 		 name = "DH_EVENT_2038618_Option8"
@@ -1811,7 +1715,6 @@
 			 value = -150
 			 }
 		 manpower = -10
-		 set_global_flag = 2038618_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -1821,7 +1724,6 @@
 		 MXR = {
 			 country_event = 208 #The_Zapatistas_submits_to_us!
 			}
-		 set_global_flag = 2038618_EVENT_DONE
 		 }
 	}
 
@@ -1841,9 +1743,6 @@
 	 
 	trigger = {
 		 tag = MXR
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038619
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2038619_Option7"
@@ -1851,7 +1750,6 @@
 		 THIS = {
 			 inherit = MXR
 			 }
-		 set_global_flag = 2038619_EVENT_DONE
 		 }
 	}
 
@@ -1883,7 +1781,7 @@
 		 }
 	trigger = {
 		 war = no
-		 has_global_flag = 2038609_EVENT_DONE
+		 has_global_flag = 2038609_EVENT_DONE#
 		 head_of_state = 14700089 #Francisco_Lagos_ChÁzaro
 		not = {
 			 exists = MXR
@@ -1892,9 +1790,6 @@
 		 date = 1919.1.1
 		 not = {
 			 date = 1925.12.30
-			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038620
 			 }
 		 }
 	option = {
@@ -1916,7 +1811,6 @@
 		kill_leader = 14710250 #Murguía_López_de_Lara
 		remove_minister = 14700133 #Manuel_Aguirre_Berlanga
 		remove_minister = 14700141 #Francisco_L._Urquizo
-		set_global_flag = 2038620_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -1943,7 +1837,6 @@
 		kill_leader = 14710221 #Cruz
 		remove_minister = 14700143 #Francisco_Roque_Serrano
 		kill_leader = 14710098 #Méndez
-		set_global_flag = 2038620_EVENT_DONE
 		 }
 	}
 
@@ -1963,9 +1856,6 @@
 	 
 	trigger = {
 		 tag = MXR
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038621
-			 }
 		 }
 	option = {
 		 ai_chance = {
@@ -1978,7 +1868,6 @@
 			 }
 		 dissent = -5
 		 clr_global_flag = MEX_Convention
-		 set_global_flag = 2038621_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -1988,7 +1877,6 @@
 		 MXR = {
 			 country_event = 196 #Villistas_submit_to_us
 			}
-		 set_global_flag = 2038621_EVENT_DONE
 		 }
 	}
 
@@ -2008,9 +1896,6 @@
 	 
 	trigger = {
 		 tag = MXR
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038622
-			 }
 		 }
 	option = {
 		 ai_chance = {
@@ -2023,7 +1908,6 @@
 			 }
 		 dissent = -5
 		 clr_global_flag = MEX_Convention
-		 set_global_flag = 2038622_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -2033,7 +1917,6 @@
 		 MXR = {
 			 country_event = 197 #Zapatistas_submit_to_us
 			}
-		 set_global_flag = 2038622_EVENT_DONE
 		 }
 	}
 
@@ -2072,9 +1955,6 @@
 		 date = 1914.8.4
 		 not = {
 			 date = 1925.12.30
-			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2250500
 			 }
 		 }
 	option = {
@@ -2128,7 +2008,6 @@
 				 country_event = 520 #Tucson_raided!
 				}
 			 }
-		 set_global_flag = 2250500_EVENT_DONE
 		 }
 	}
 
@@ -2146,9 +2025,6 @@
 	 
 	trigger = {
 		 tag = MXR
-		 not = {
-			 has_global_flag = SLEEPEVENT_2250501
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2250501_Option7"
@@ -2157,7 +2033,6 @@
 		 crude_oil = 10
 		 metal = 20
 		 energy = 35
-		 set_global_flag = 2250501_EVENT_DONE
 		 }
 	}
 
@@ -2175,9 +2050,6 @@
 	 
 	trigger = {
 		 tag = MXR
-		 not = {
-			 has_global_flag = SLEEPEVENT_2250502
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2250502_Option7"
@@ -2186,7 +2058,6 @@
 		 crude_oil = 20
 		 metal = 40
 		 energy = 70
-		 set_global_flag = 2250502_EVENT_DONE
 		 }
 	}
 
@@ -2225,9 +2096,6 @@
 		 date = 1914.8.4
 		 not = {
 			 date = 1925.12.30
-			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2250503
 			 }
 		 }
 	option = {
@@ -2281,7 +2149,6 @@
 				 country_event = 522 #El_Paso_raided!
 				}
 			 }
-		 set_global_flag = 2250503_EVENT_DONE
 		 }
 	}
 
@@ -2320,9 +2187,6 @@
 		 date = 1914.8.4
 		 not = {
 			 date = 1925.12.30
-			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2250504
 			 }
 		 }
 	option = {
@@ -2376,7 +2240,6 @@
 				 country_event = 524 #San_Antonio_raided!
 				}
 			 }
-		 set_global_flag = 2250504_EVENT_DONE
 		 }
 	}
 
@@ -2420,9 +2283,6 @@
 		 date = 1914.8.4
 		 not = {
 			 date = 1925.12.30
-			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2250505
 			 }
 		 }
 	option = {
@@ -2476,7 +2336,6 @@
 				 country_event = 526 #Corpus_Christii_raided!
 				}
 			 }
-		 set_global_flag = 2250505_EVENT_DONE
 		 }
 	}
 
@@ -2515,9 +2374,6 @@
 		 date = 1914.8.4
 		 not = {
 			 date = 1925.12.30
-			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2250506
 			 }
 		 }
 	option = {
@@ -2567,7 +2423,6 @@
 				 country_event = 528 #San_Diego_raided!
 				}
 			 }
-		 set_global_flag = 2250506_EVENT_DONE
 		 }
 	}
 
@@ -2596,9 +2451,6 @@
 		 not = {
 			 date = 1964.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2250507
-			 }
 		 }
 	option = {
 		 ai_chance = {
@@ -2606,7 +2458,6 @@
 			 }
 		 name = "DH_EVENT_2250507_Option7"
 		 manpower = 0.5
-		 set_global_flag = 2250507_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -2614,7 +2465,6 @@
 			 }
 		 name = "DH_EVENT_2250507_Option8"
 		 manpower = 1
-		 set_global_flag = 2250507_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -2622,7 +2472,6 @@
 			 }
 		 name = "DH_EVENT_2250507_Option9"
 		 manpower = 2
-		 set_global_flag = 2250507_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -2630,7 +2479,6 @@
 			 }
 		 name = "DH_EVENT_2250507_Option10"
 		 manpower = 5
-		 set_global_flag = 2250507_EVENT_DONE
 		 }
 	}
 
@@ -2664,9 +2512,6 @@
 		 date = 1910.1.1
 		 not = {
 			 date = 1963.12.30
-			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2250508
 			 }
 		 }
 	option = {
@@ -2707,7 +2552,6 @@
 					 }
 				 }
 			 }
-		 set_global_flag = 2250508_EVENT_DONE
 		 }
 	}
 
@@ -2737,15 +2581,11 @@
 		 not = {
 			 date = 1963.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2250509
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2250509_Option7"
 		 supplies = 20
 		 dissent = 1
-		 set_global_flag = 2250509_EVENT_DONE
 		 }
 	}
 
@@ -2779,9 +2619,6 @@
 		 date = 1910.1.1
 		 not = {
 			 date = 1963.12.30
-			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038550
 			 }
 		 }
 	option = {
@@ -2822,7 +2659,6 @@
 					 }
 				 }
 			 }
-		 set_global_flag = 2038550_EVENT_DONE
 		 }
 	}
 
@@ -2852,15 +2688,11 @@
 		 not = {
 			 date = 1963.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038551
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2038551_Option7"
 		 supplies = 20
 		 dissent = 1
-		 set_global_flag = 2038551_EVENT_DONE
 		 }
 	}
 
@@ -2892,9 +2724,6 @@
 		 not = {
 			 date = 1920.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038552
-			 }
 		 }
 	option = {
 		 ai_chance = {
@@ -2902,7 +2731,6 @@
 			 }
 		 name = "DH_EVENT_2038552_Option7"
 		 supplies = 25
-		 set_global_flag = 2038552_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -2910,7 +2738,6 @@
 			 }
 		 name = "DH_EVENT_2038552_Option8"
 		 supplies = 50
-		 set_global_flag = 2038552_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -2919,7 +2746,6 @@
 		 name = "DH_EVENT_2038552_Option9"
 		 supplies = 200
 		 money = 20
-		 set_global_flag = 2038552_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -2928,7 +2754,6 @@
 		 name = "DH_EVENT_2038552_Option10"
 		 supplies = 350
 		 money = 50
-		 set_global_flag = 2038552_EVENT_DONE
 		 }
 	}
 
@@ -2978,9 +2803,6 @@
 		 not = {
 			 date = 1917.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038553
-			 }
 		 }
 	option = {
 		 ai_chance = {
@@ -2988,7 +2810,6 @@
 			 }
 		 name = "DH_EVENT_2038553_Option7"
 		 supplies = 20
-		 set_global_flag = 2038553_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -2996,7 +2817,6 @@
 			 }
 		 name = "DH_EVENT_2038553_Option8"
 		 supplies = 40
-		 set_global_flag = 2038553_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -3004,7 +2824,6 @@
 			 }
 		 name = "DH_EVENT_2038553_Option9"
 		 supplies = 60
-		 set_global_flag = 2038553_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -3012,7 +2831,6 @@
 			 }
 		 name = "DH_EVENT_2038553_Option10"
 		 supplies = 100
-		 set_global_flag = 2038553_EVENT_DONE
 		 }
 	}
 
@@ -3041,9 +2859,6 @@
 		 not = {
 			 date = 1964.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038554
-			 }
 		 }
 	option = {
 		 ai_chance = {
@@ -3051,7 +2866,6 @@
 			 }
 		 name = "DH_EVENT_2038554_Option7"
 		 manpower = 0.5
-		 set_global_flag = 2038554_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -3059,7 +2873,6 @@
 			 }
 		 name = "DH_EVENT_2038554_Option8"
 		 manpower = 1
-		 set_global_flag = 2038554_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -3067,7 +2880,6 @@
 			 }
 		 name = "DH_EVENT_2038554_Option9"
 		 manpower = 2
-		 set_global_flag = 2038554_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -3075,7 +2887,6 @@
 			 }
 		 name = "DH_EVENT_2038554_Option10"
 		 manpower = 5
-		 set_global_flag = 2038554_EVENT_DONE
 		 }
 	}
 
@@ -3093,9 +2904,6 @@
 	 
 	trigger = {
 		 tag = USA
-		 not = {
-			 has_global_flag = SLEEPEVENT_2049512
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2049512_Option7"
@@ -3114,7 +2922,6 @@
 				 }
 			 set_country_flag = USA_Mexican_Raids
 			 }
-		 set_global_flag = 2049512_EVENT_DONE
 		 }
 	}
 
@@ -3132,9 +2939,6 @@
 	 
 	trigger = {
 		 tag = USA
-		 not = {
-			 has_global_flag = SLEEPEVENT_2049513
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2049513_Option7"
@@ -3153,7 +2957,6 @@
 				 }
 			 set_country_flag = USA_Mexican_Raids
 			 }
-		 set_global_flag = 2049513_EVENT_DONE
 		 }
 	}
 
@@ -3171,9 +2974,6 @@
 	 
 	trigger = {
 		 tag = USA
-		 not = {
-			 has_global_flag = SLEEPEVENT_2049514
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2049514_Option7"
@@ -3192,7 +2992,6 @@
 				 }
 			 set_country_flag = USA_Mexican_Raids
 			 }
-		 set_global_flag = 2049514_EVENT_DONE
 		 }
 	}
 
@@ -3210,9 +3009,6 @@
 	 
 	trigger = {
 		 tag = USA
-		 not = {
-			 has_global_flag = SLEEPEVENT_2049515
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2049515_Option7"
@@ -3231,7 +3027,6 @@
 				 }
 			 set_country_flag = USA_Mexican_Raids
 			 }
-		 set_global_flag = 2049515_EVENT_DONE
 		 }
 	}
 
@@ -3249,9 +3044,6 @@
 	 
 	trigger = {
 		 tag = USA
-		 not = {
-			 has_global_flag = SLEEPEVENT_2049516
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2049516_Option7"
@@ -3270,7 +3062,6 @@
 				 }
 			 set_country_flag = USA_Mexican_Raids
 			 }
-		 set_global_flag = 2049516_EVENT_DONE
 		 }
 	}
 
@@ -3288,9 +3079,6 @@
 	 
 	trigger = {
 		 tag = USA
-		 not = {
-			 has_global_flag = SLEEPEVENT_2049517
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2049517_Option7"
@@ -3309,7 +3097,6 @@
 				 }
 			 set_country_flag = USA_Mexican_Raids
 			 }
-		 set_global_flag = 2049517_EVENT_DONE
 		 }
 	}
 
@@ -3327,9 +3114,6 @@
 	 
 	trigger = {
 		 tag = USA
-		 not = {
-			 has_global_flag = SLEEPEVENT_2049518
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2049518_Option7"
@@ -3348,7 +3132,6 @@
 				 }
 			 set_country_flag = USA_Mexican_Raids
 			 }
-		 set_global_flag = 2049518_EVENT_DONE
 		 }
 	}
 
@@ -3366,9 +3149,6 @@
 	 
 	trigger = {
 		 tag = USA
-		 not = {
-			 has_global_flag = SLEEPEVENT_2049519
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2049519_Option7"
@@ -3387,7 +3167,6 @@
 				 }
 			 set_country_flag = USA_Mexican_Raids
 			 }
-		 set_global_flag = 2049519_EVENT_DONE
 		 }
 	}
 
@@ -3405,9 +3184,6 @@
 	 
 	trigger = {
 		 tag = USA
-		 not = {
-			 has_global_flag = SLEEPEVENT_2049520
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2049520_Option7"
@@ -3426,7 +3202,6 @@
 				 }
 			 set_country_flag = USA_Mexican_Raids
 			 }
-		 set_global_flag = 2049520_EVENT_DONE
 		 }
 	}
 
@@ -3444,9 +3219,6 @@
 	 
 	trigger = {
 		 tag = USA
-		 not = {
-			 has_global_flag = SLEEPEVENT_2049521
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2049521_Option7"
@@ -3465,7 +3237,7 @@
 				 }
 			 set_country_flag = USA_Mexican_Raids
 			 }
-		 set_global_flag = 2049521_EVENT_DONE
+		 set_global_flag = 2049521_EVENT_DONE#
 		 }
 	}
 
@@ -3493,16 +3265,13 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2049522
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2049522_Option7"
 		 war = {
 			 target = MXR
 			 }
-		 set_global_flag = 2049522_EVENT_DONE
+		 set_global_flag = 2049522_EVENT_DONE#
 		 }
 	}
 
@@ -3523,7 +3292,7 @@
 		 }
 	trigger = {
 		 exists = MEX
-		 has_global_flag = 2049521_EVENT_DONE
+		 has_global_flag = 2049521_EVENT_DONE#
 		 USA = {
 			 war_with = MXR
 			 }
@@ -3538,7 +3307,7 @@
 			 date = 1925.12.30
 			 }
 		 not = {
-			 has_global_flag = SLEEPEVENT_2049523
+			 has_global_flag = SLEEPEVENT_2049523#
 			 }
 		 }
 	option = {
@@ -3547,7 +3316,7 @@
 			 country_event = 186 #United_States_ask_for_full_transit
 			}
 		 set_global_flag = SLEEPEVENT_2049535
-		 set_global_flag = 2049523_EVENT_DONE
+		 set_global_flag = 2049523_EVENT_DONE#
 		 }
 	}
 
@@ -3565,9 +3334,6 @@
 	 
 	trigger = {
 		 tag = USA
-		 not = {
-			 has_global_flag = SLEEPEVENT_2049524
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2049524_Option7"
@@ -3575,7 +3341,6 @@
 			 who = MEX
 			 value = -25
 			 }
-		 set_global_flag = 2049524_EVENT_DONE
 		 }
 	}
 
@@ -3595,7 +3360,7 @@
 		 days = 14
 		 }
 	trigger = {
-		 has_global_flag = 2049523_EVENT_DONE
+		 has_global_flag = 2049523_EVENT_DONE#
 		 USA = {
 			 war_with = MXR
 			 }
@@ -3612,9 +3377,6 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2049525
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2049525_Option7"
@@ -3622,7 +3384,6 @@
 			 target = MEX
 			 }
 		 neutrality = -5
-		 set_global_flag = 2049525_EVENT_DONE
 		 }
 	}
 
@@ -3646,7 +3407,7 @@
 		 not = {
 			 exists = MEX
 			 }
-		 has_global_flag = 2049521_EVENT_DONE
+		 has_global_flag = 2049521_EVENT_DONE#
 		 USA = {
 			 war_with = MXR
 			 }
@@ -3656,7 +3417,7 @@
 				 }
 			 }
 		 not = {
-			 has_global_flag = 2049522_EVENT_DONE
+			 has_global_flag = 2049522_EVENT_DONE#
 			 }
 		 tag = USA
 		 date = 1914.8.4
@@ -3664,7 +3425,7 @@
 			 date = 1925.12.30
 			 }
 		 not = {
-			 has_global_flag = SLEEPEVENT_2049535
+			 has_global_flag = SLEEPEVENT_2049535#
 			 }
 		 }
 	option = {
@@ -3673,7 +3434,7 @@
 			 country_event = 189 #United_States_ask_for_full_transit
 			}
 		 set_global_flag = SLEEPEVENT_2049523
-		 set_global_flag = 2049535_EVENT_DONE
+		 set_global_flag = 2049535_EVENT_DONE#
 		 }
 	}
 
@@ -3691,9 +3452,6 @@
 	 
 	trigger = {
 		 tag = USA
-		 not = {
-			 has_global_flag = SLEEPEVENT_2049536
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2049536_Option7"
@@ -3701,7 +3459,7 @@
 			 who = MEX
 			 value = -25
 			 }
-		 set_global_flag = 2049536_EVENT_DONE
+		 set_global_flag = 2049536_EVENT_DONE#
 		 }
 	}
 
@@ -3742,9 +3500,6 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2049537
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2049537_Option7"
@@ -3752,7 +3507,6 @@
 			 target = MXR
 			 }
 		 neutrality = -5
-		 set_global_flag = 2049537_EVENT_DONE
 		 }
 	}
 
@@ -3773,8 +3527,8 @@
 		 }
 	trigger = {
 		 or = {
-			 has_global_flag = 2049523_EVENT_DONE
-			 has_global_flag = 2049535_EVENT_DONE
+			 has_global_flag = 2049523_EVENT_DONE#
+			 has_global_flag = 2049535_EVENT_DONE#
 			 }
 		 or = {
 			 USA = {
@@ -3807,9 +3561,6 @@
 		 date = 1914.8.4
 		 not = {
 			 date = 1925.12.30
-			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2049526
 			 }
 		 }
 	option = {
@@ -3848,7 +3599,6 @@
 				 }
 			 }
 		 neutrality = -5
-		 set_global_flag = 2049526_EVENT_DONE
 		 }
 	}
 

@@ -14,9 +14,6 @@
 	 
 	trigger = {
 		 tag = FRA
-		 not = {
-			 has_global_flag = SLEEPEVENT_2002551
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2002551_Option1"
@@ -30,7 +27,6 @@
 		 WHR = {
 			 country_event = 551 #Janin_remains_in_Russia
 			}
-		 set_global_flag = 2002551_EVENT_DONE
 		 }
 	option = {
 		 name = "DH_EVENT_2002551_Option2"
@@ -45,7 +41,6 @@
 		 WHR = {
 			 country_event = 552 #Janin_is_fired
 			}
-		 set_global_flag = 2002551_EVENT_DONE
 		 }
 	}
 
@@ -69,9 +64,6 @@
 		 date = 1914.8.4
 		 not = {
 			 date = 1925.12.30
-			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2173500
 			 }
 		 }
 	option = {
@@ -133,9 +125,6 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2173501
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2173501_Option7"
@@ -178,9 +167,6 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2173502
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2173502_Option7"
@@ -189,7 +175,6 @@
 		 WHR = {
 			 country_event = 548 #Janin_and_the_Czechoslovak_Legion
 			}
-		 set_global_flag = 2173502_EVENT_DONE
 		 }
 	}
 
@@ -235,9 +220,6 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2173503
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2173503_Option7"
@@ -260,9 +242,6 @@
 	 
 	trigger = {
 		 tag = WHR
-		 not = {
-			 has_global_flag = SLEEPEVENT_2173504
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2173504_Option7"
@@ -313,9 +292,6 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2173505
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2173505_Option7"
@@ -355,9 +331,6 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2173506
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2173506_Option7"
@@ -366,7 +339,6 @@
 		 FRA = {
 			 country_event = 123 #Russians_denounce_Janin's_behavior
 			}
-		 set_global_flag = 2173506_EVENT_DONE
 		 }
 	}
 
@@ -384,9 +356,6 @@
 	 
 	trigger = {
 		 tag = WHR
-		 not = {
-			 has_global_flag = SLEEPEVENT_2173507
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2173507_Option7"
@@ -409,9 +378,6 @@
 	 
 	trigger = {
 		 tag = WHR
-		 not = {
-			 has_global_flag = SLEEPEVENT_2173508
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2173508_Option7"
@@ -462,9 +428,6 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2173509
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2173509_Option7"
@@ -499,14 +462,10 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2173510
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2173510_Option7"
 		 dissent = 10
-		 set_global_flag = 2173510_EVENT_DONE
 		 }
 	}
 
@@ -532,15 +491,11 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2173511
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2173511_Option7"
 		 dissent = 10
 		 remove_minister = 17900006 #Aleksandr_Kolchak
-		set_global_flag = 2173511_EVENT_DONE
 		 }
 	}
 
@@ -579,15 +534,11 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2173513
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2173513_Option7"
 		 dissent = 5
 		 capital = 782
-		 set_global_flag = 2173513_EVENT_DONE
 		 }
 	}
 
@@ -629,15 +580,11 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2173512
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2173512_Option7"
 		 dissent = 5
 		 capital = 1409
-		 set_global_flag = 2173512_EVENT_DONE
 		 }
 	}
 
@@ -682,15 +629,11 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2173514
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2173514_Option7"
 		 dissent = 5
 		 capital = 2857
-		 set_global_flag = 2173514_EVENT_DONE
 		 }
 	}
 
@@ -741,15 +684,11 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2173516
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2173516_Option7"
 		 dissent = 5
 		 capital = 8211
-		 set_global_flag = 2173516_EVENT_DONE
 		 }
 	}
 
@@ -783,14 +722,10 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2173517
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2173517_Option7"
 		 dissent = 2
-		 set_global_flag = 2173517_EVENT_DONE
 		 }
 	}
 
@@ -840,16 +775,10 @@
 		 or = {
 			 tag = WHR
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2173518
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2173518_Option7"
 		 dissent = -10
-		 RUS = {
-			 }
-		 set_global_flag = 2173518_EVENT_DONE
 		 }
 	}
 
@@ -873,9 +802,6 @@
 		 date = 1914.8.4
 		 not = {
 			 date = 1925.12.30
-			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2168500
 			 }
 		 }
 	option = {
@@ -904,7 +830,6 @@
 			 infantry_brigade = current
 			 infantry_brigade = current
 			 }
-		 set_global_flag = 2168500_EVENT_DONE
 		 }
 	}
 
@@ -930,9 +855,6 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2168501
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2168501_Option7"
@@ -944,7 +866,6 @@
 			 infantry_brigade = current
 			 infantry_brigade = current
 			 }
-		 set_global_flag = 2168501_EVENT_DONE
 		 }
 	}
 
@@ -971,9 +892,6 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2168502
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2168502_Option7"
@@ -985,7 +903,6 @@
 			 infantry_brigade = current
 			 infantry_brigade = current
 			 }
-		 set_global_flag = 2168502_EVENT_DONE
 		 }
 	}
 
@@ -1003,9 +920,6 @@
 	 
 	trigger = {
 		 tag = WHR
-		 not = {
-			 has_global_flag = SLEEPEVENT_2168503
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2168503_Option7"
@@ -1037,7 +951,6 @@
 			 infantry_brigade = current
 			 infantry_brigade = current
 			 }
-		 set_global_flag = 2168503_EVENT_DONE
 		 }
 	}
 
@@ -1062,9 +975,6 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2147500
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2147500_Option7"
@@ -1087,7 +997,6 @@
 		 war = {
 			 target = SOV
 			 }
-		 set_global_flag = 2147500_EVENT_DONE
 		 }
 	}
 
@@ -1111,9 +1020,6 @@
 		 date = 1914.8.4
 		 not = {
 			 date = 1925.12.30
-			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2147508
 			 }
 		 }
 	option = {
@@ -1139,7 +1045,6 @@
 		 war = {
 			 target = SOV
 			 }
-		 set_global_flag = 2147508_EVENT_DONE
 		 }
 	}
 
@@ -1174,9 +1079,6 @@
 		 not = {
 			 date = 1925.12.30
 			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2147509
-			 }
 		 }
 	option = {
 		 name = "DH_EVENT_2147509_Option7"
@@ -1193,7 +1095,6 @@
 			 infantry_brigade = current
 			 infantry_brigade = current
 			 }
-		 set_global_flag = 2147509_EVENT_DONE
 		 }
 	}
 
