@@ -1,6 +1,6 @@
 
 #US Declaration of Neutrality
-# Relations don't set properly in Relations file, fix here.
+####### Relations don't set properly in Relations file, fix here NOT TO DISPLAY AS POP UP ######.
 
  country_event = {
 	title = "USAE6"
@@ -12,7 +12,7 @@
 	fire_only_once = yes
 	 
 	trigger = {
-		 tag = USA
+		 tag = LUX
 		 not = {
 			 year = 1915
 			 }
@@ -447,7 +447,7 @@
 	}
 
 
-#Zimmermann Telegram Intercepted
+#Zimmermann Telegram Intercepted - only 50% chance of being intercepted
 
  country_event = {
 	title = "EVT1914_2001558_NAME"
@@ -457,28 +457,11 @@
 	picture = "Zimmermann_Telegram"
 	 
 	fire_only_once = yes
-	 
 	is_triggered_only = yes
 	 
-	mean_time_to_happen = {
-		 days = 1
-		 }
+	mean_time_to_happen = { days = 1 }
 	major = yes
 	 
-	trigger = {
-		 tag = USA
-		 GER = {
-			 war_with = ENG
-			 }
-		 GER = {
-			 has_country_flag = Send_Zimmermann
-			 }
-		 NOT = {
-			 USA = {
-				 has_country_flag = Zimmermann_intercepted
-				 }
-			 }
-		 }
 	option = {
 		 name = "EVT1914_2001558_ACTIONA"
 		 ai_chance = {
@@ -651,51 +634,3 @@
 			 }
 		 }
 	}
-
-
-#A Surge of Volunteers
-
- country_event = {
-	title = "WargoalE1"
-	desc = "desc_WargoalE1"
-	id = 8001
-	 
-	picture = "newspaper"
-	 
-	fire_only_once = yes
-	 
-	mean_time_to_happen = {
-		 days = 1
-		 }
-	trigger = {
-		 faction = axis
-		 war_with = RUS
-		 not = {
-			 has_country_flag = russia_wargoal
-			 }
-		 not = {
-			 has_wargoal = RUS
-			 }
-		 }
-	option = {
-		 name = "opta_WargoalE1"
-		 ai_chance = {
-			 factor = 100
-			 }
-		 set_country_flag = russia_wargoal
-		 add_wargoal = {
-			 target = RUS
-			 war_goal = {
-				 casus_belli = axis_russia
-				 }
-			 }
-		 }
-	option = {
-		 name = "optb_WargoalE1"
-		 ai_chance = {
-			 factor = 0
-			 }
-		 set_country_flag = russia_wargoal
-		 }
-	}
-
