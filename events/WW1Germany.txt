@@ -261,6 +261,10 @@
 		 ai_chance = {
 			 factor = 100
 			 }
+			 
+		 GER = { set_country_flag = Send_Zimmermann	 }
+		 GER = { clr_country_flag = stopped_unrest_subs	 }	 
+			 
 		 random_country = {
 			 limit = {
 				 exists = MEX
@@ -280,6 +284,7 @@
 				 country_event = 187 #The_Zimmermann_telegram
 				}
 			 }
+			 
 		 random = {
 			 chance = 50
 			 USA = {
@@ -288,12 +293,6 @@
 			 ENG = {
 				 country_event = 41 #The_Zimmermann_telegram_-_we_got'em!
 				}
-			 }
-		 GER = {
-			 set_country_flag = Send_Zimmermann
-			 }
-		 GER = {
-			 clr_country_flag = stopped_unrest_subs
 			 }
 		 }
 	}

@@ -1,27 +1,4 @@
-
-#The Zimmermann telegram - we got'em!
-
- country_event = {
-	title = "DH_EVENT_2001535_TITLE"
-	desc = "DH_EVENT_2001535_DESC"
-	id = 41
-	 
-	picture = "zimmermann_telegram"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	trigger = {
-		 tag = ENG
-		 }
-	option = {
-		 name = "DH_EVENT_2001535_Option7"
-		 }
-	}
-
-
-#The Zimmermann telegram
+#The Zimmermann telegram received by Mexico
 
  country_event = {
 	title = "DH_EVENT_2038500_TITLE"
@@ -39,6 +16,49 @@
 		 }
 	option = {
 		 name = "DH_EVENT_2038500_Option7"
+		 }
+	}
+
+# alternatively 	
+#The Zimmermann telegram received by Mexican Rebel government
+
+ country_event = {
+	title = "DH_EVENT_2038504_TITLE"
+	desc = "DH_EVENT_2038504_DESC"
+	id = 187
+	 
+	picture = "zimmermann_telegram"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = MXR
+		 }
+	option = {
+		 name = "DH_EVENT_2038504_Option7"
+		 }
+	}
+
+#The Zimmermann telegram intercepted by the British - we got'em!   50/50 chance
+
+ country_event = {
+	title = "DH_EVENT_2001535_TITLE"
+	desc = "DH_EVENT_2001535_DESC"
+	id = 41
+	 
+	picture = "zimmermann_telegram"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = ENG
+		 }
+	option = {
+		 name = "DH_EVENT_2001535_Option7"
 		 }
 	}
 
@@ -158,28 +178,6 @@
 			 military_access = USA
 			 }
 		 set_global_flag = 2038503_EVENT_DONE#
-		 }
-	}
-
-
-#The Zimmermann telegram
-
- country_event = {
-	title = "DH_EVENT_2038504_TITLE"
-	desc = "DH_EVENT_2038504_DESC"
-	id = 187
-	 
-	picture = "zimmermann_telegram"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	trigger = {
-		 tag = MXR
-		 }
-	option = {
-		 name = "DH_EVENT_2038504_Option7"
 		 }
 	}
 
