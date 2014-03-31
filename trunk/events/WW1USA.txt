@@ -14,36 +14,27 @@
 	 
 	option = {
 		 name = "opta_USAE1"
-		 USA = {
-			 create_vassal = NIC
-			 }
+		 USA = { create_vassal = NIC }
 		 dissent = 10
 		 manpower = 20
 		 neutrality = -1
+		 money = 100
 		 }
 	option = {
-		 name = "Annexation
-		 shall
-		 protect
-		 our
-		 interests"
+		 name = "Annexation shall protect our interests"
 		 dissent = 10
-		 USA = {
-			 inherit = NIC
-			 }
+		 USA = { inherit = NIC }
 		 manpower = 20
 		 neutrality = -1
+		 money = 100
 		 }
 	option = {
-		 name = "Occupation
-		 will
-		 suffice"
-		 ai_chance = {
-			 factor = 100
-			 }
+		 name = "Occupation will suffice"
+		 ai_chance = { factor = 100 }
 		 dissent = -10
 		 manpower = 100
 		 neutrality = -1
+		 money = 100
 		 }
 	}
 
