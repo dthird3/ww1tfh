@@ -1,85 +1,3 @@
-
-diplomatic_decisions = {
-	 2038501_decision = {#The_United_States_declare_war_on_Germany
-		ai_will_do = {
-			 factor = 1
-			 }
-		potential = {
-			 tag = MEX
-			 date = 1914.8.4
-			 not = {
-				 date = 1925.12.30
-				 }
-			 not = {
-				 has_country_flag = decision_2038501
-				 }
-			 }
-		allow = {
-			 USA = {
-				 war_with = GER
-				 }
-			 }
-		effect = {
-			 country_event = 184 #The_United_States_declare_war_on_Germany
-			set_country_flag = decision_2038501
-			 }
-		}
-	
-
-	 2038502_decision = {#War_against_the_United_States
-		ai_will_do = {
-			 factor = 1
-			 }
-		potential = {
-			 9624 = {#Veracruz
-				controlled_by = USA
-				 }
-			 tag = MEX
-			 date = 1914.8.4
-			 not = {
-				 date = 1925.12.30
-				 }
-			 not = {
-				 has_country_flag = decision_2038502
-				 }
-			 }
-		allow = {
-			 war = no
-			 }
-		effect = {
-			 country_event = 185 #War_against_the_United_States
-			set_country_flag = decision_2038502
-			 }
-		}
-	
-
-	 2038505_decision = {#The_United_States_declare_war_on_Germany
-		ai_will_do = {
-			 factor = 1
-			 }
-		potential = {
-			 has_global_flag = 2038503_EVENT_DONE
-			 tag = MXR
-			 date = 1914.8.4
-			 not = {
-				 date = 1925.12.30
-				 }
-			 not = {
-				 has_country_flag = decision_2038505
-				 }
-			 }
-		allow = {
-			 USA = {
-				 war_with = GER
-				 }
-			 }
-		effect = {
-			 country_event = 188 #The_United_States_declare_war_on_Germany
-			set_country_flag = decision_2038505
-			 }
-		}
-	
-
 	 2250500_decision = {#Launch_Raids_on_Tucson
 		ai_will_do = {
 			 factor = 1
@@ -87,14 +5,9 @@ diplomatic_decisions = {
 		potential = {
 			 war = yes
 			 not = {
-				 MEX = {
-					 war_with = USA
-					 }
+				 MEX = { war_with = USA }
 				 }
-			 not = {
-				 MXR = {
-					 war_with = USA
-					 }
+			 not = { MXR = { war_with = USA }
 				 }
 			 tag = MXR
 			 date = 1914.8.4
@@ -291,11 +204,9 @@ diplomatic_decisions = {
 				 has_country_flag = decision_2049522
 				 }
 			 }
-		allow = {
-			 war = no
-			 }
+		allow = { war = no }
 		effect = {
-			 country_event = 529 #Intervention_against_Mexican_rebels
+			country_event = 529 #Intervention_against_Mexican_rebels
 			set_country_flag = decision_2049522
 			 }
 		}
@@ -523,3 +434,83 @@ diplomatic_decisions = {
 		}
 	}
 
+diplomatic_decisions = {
+	 2038501_decision = {#The_United_States_declare_war_on_Germany
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = MEX
+			 date = 1914.8.4
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2038501
+				 }
+			 }
+		allow = {
+			 USA = {
+				 war_with = GER
+				 }
+			 }
+		effect = {
+			 country_event = 184 #The_United_States_declare_war_on_Germany
+			set_country_flag = decision_2038501
+			 }
+		}
+	
+
+	 2038502_decision = {#War_against_the_United_States
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 9624 = {#Veracruz
+				controlled_by = USA
+				 }
+			 tag = MEX
+			 date = 1914.8.4
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2038502
+				 }
+			 }
+		allow = {
+			 war = no
+			 }
+		effect = {
+			 country_event = 185 #War_against_the_United_States
+			set_country_flag = decision_2038502
+			 }
+		}
+	
+
+	 2038505_decision = {#The_United_States_declare_war_on_Germany
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 has_global_flag = 2038503_EVENT_DONE
+			 tag = MXR
+			 date = 1914.8.4
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2038505
+				 }
+			 }
+		allow = {
+			 USA = {
+				 war_with = GER
+				 }
+			 }
+		effect = {
+			 country_event = 188 #The_United_States_declare_war_on_Germany
+			set_country_flag = decision_2038505
+			 }
+		}
+	
