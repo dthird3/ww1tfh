@@ -1,0 +1,182 @@
+ theatre = {
+	leader = 15110118
+	location = 9237  					# Yecora
+	name = "Ejercito de Maderistas"
+	
+	regiment = {
+		type = hq_brigade 
+		name = "Ejercito de Orozco HQ"
+		historical_model = 0 
+		}
+
+ corps = {
+	location = 9237  					# Yecora
+	name = "Ejercito de Orozco"
+	
+	regiment = {
+		type = hq_brigade 
+		name = "Ejercito de Orozco HQ"
+		historical_model = 0 
+		}
+	
+	division = {
+		location = 9237  				# Yecora
+		is_reserve = no 
+		name = "1. División de Maderistas"
+		
+		regiment = {
+			type = militia_brigade 
+			name = "1. Brigada de Maderistas"
+			experience = 2 
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			name = "2. Brigada de Maderistas"
+			experience = 2
+			historical_model = 2 
+			}
+		}
+		
+	division = {
+		location = 9237  				# Yecora
+		name = "3. Brigada de Maderistas"
+		is_reserve = yes 
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "3. Brigada de Maderistas"
+			experience = 2
+			historical_model = 0 
+			}
+		}
+		
+	division = {
+		location = 9268					# Chihuahua
+		name = "4. Brigada de Maderistas"
+		is_reserve = yes 
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "4. Brigada de Maderistas"
+			experience = 2
+			historical_model = 0 
+			}
+		}
+	}
+	
+	corps = {
+	location = 9236  					# Guaymas
+	name = "Ejercito de Maytorena"
+	
+	regiment = {
+		type = hq_brigade 
+		name = "Ejercito de Maytorena HQ"
+		historical_model = 0 
+		}
+	
+	division = {
+		location = 9236  					# Guaymas
+		is_reserve = no 
+		name = "2. División de Maderistas"
+		
+		regiment = {
+			type = militia_brigade 
+			name = "5. Brigada de Maderistas"
+			experience = 2 
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			name = "6. Brigada de Maderistas"
+			experience = 2
+			historical_model = 2 
+			}
+		}
+		
+	division = {
+		location = 9236  					# Guaymas
+		name = "7. Brigada de Maderistas"
+		is_reserve = yes 
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "7. Brigada de Maderistas"
+			experience = 2
+			historical_model = 0 
+			}
+		}
+		
+	division = {
+		location = 9236  					# Guaymas
+		name = "8. Brigada de Maderistas"
+		is_reserve = yes 
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "8. Brigada de Maderistas"
+			experience = 2
+			historical_model = 0 
+			}
+		}
+	}
+	
+	corps = {
+	location = 9327							# San Juanito
+	name = "Ejercito de Villa"
+	
+	regiment = {
+		type = hq_brigade 
+		name = "Ejercito de Villa HQ"
+		historical_model = 0 
+		}
+	
+	division = {
+	location = 9327							# San Juanito
+		is_reserve = no 
+		name = "3. División de Maderistas"
+		
+		regiment = {
+			type = militia_brigade 
+			name = "9. Brigada de Maderistas"
+			experience = 2 
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			name = "10. Brigada de Maderistas"
+			experience = 2
+			historical_model = 2 
+			}
+		}
+		
+	division = {
+	location = 9327							# San Juanito
+		name = "11. Brigada de Maderistas"
+		is_reserve = yes 
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "11. Brigada de Maderistas"
+			experience = 2
+			historical_model = 0 
+			}
+		}
+		
+	division = {
+	location = 9327							# San Juanito
+		name = "12. Brigada de Maderistas"
+		is_reserve = yes 
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "12. Brigada de Maderistas"
+			experience = 2
+			historical_model = 0 
+			}
+		}
+	}
+}
