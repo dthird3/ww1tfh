@@ -23,13 +23,15 @@
 		 name = "EVT1910_101002_OPTA"   # Dismiss allegations of fraud and take power anyway trigger revolution sooner
 		 ai_chance = { factor = 0 }
 		 MXR = { country_event = 101006 }   # Trigger revolution sooner
-		 dissent = -3
+		 dissent = 3
+		 national_unity = -5
 		 }
 	option = {
 		 name = "EVT1910_101002_OPTB"   # Allow the petitions of fraud to be reviewed by the Mexican Congress
 		 ai_chance = { factor = 100 }
 		 MEX = { country_event = 101004 }
-		 dissent = -10
+		 dissent = 10
+		 national_unity = -5
 		 }	 
 	}
 	
@@ -48,8 +50,6 @@
 	
 	mean_time_to_happen = { days = 1 }
 	
-	is_triggered_only = yes
-
 	trigger = {
 		 tag = MEX
 		 exists = MEX
@@ -76,20 +76,29 @@
 		
 	major = yes
 	
-	mean_time_to_happen = { days = 1 }
+	mean_time_to_happen = { days = 30 }
 	
 	is_triggered_only = yes
 
 	trigger = {
 		 tag = MEX
 		 exists = MEX
- 		 date = 1910.11.19
+# 		 date = 1910.11.19
 		 }
 		 
 	option = {
 		 name = "ACTION_NAME_FIGHT"
-		 
-		 }
+		 national_unity = -5
+		 MEX = {
+			any_owned = {
+				limit = { is_core = MEX }
+				add_core = MXR
+				}
+			}
+			7508 = {#Wuhan					### Define Mexican provinces
+			secede_province = PRC
+			 }
+		}
 	}	
 	
 	
