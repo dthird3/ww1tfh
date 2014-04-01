@@ -1,0 +1,57 @@
+  corps = {
+	location = 9623  					# Morelo
+	name = "Ejército Libertador del Sur"
+	
+	regiment = {
+		type = hq_brigade 
+		name = "Ejército Libertador del Sur HQ"
+		historical_model = 0 
+		}
+	
+	division = {
+	location = 9623  					# Morelo
+		is_reserve = no 
+		name = "1. División de Zapatistas"
+		
+		regiment = {
+			type = militia_brigade 
+			name = "1. Brigada de Zapatistas"
+			experience = 2 
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			name = "2. Brigada de Zapatistas"
+			experience = 2
+			historical_model = 2 
+			}
+		}
+		
+	division = {
+	location = 9623  					# Morelo
+		name = "3. Brigada de Zapatistas"
+		is_reserve = yes 
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "3. Brigada de Zapatistas"
+			experience = 2
+			historical_model = 0 
+			}
+		}
+		
+	division = {
+	location = 9623  					# Morelo
+		name = "4. Brigada de Zapatistas"
+		is_reserve = yes 
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "4. Brigada de Zapatistas"
+			experience = 2
+			historical_model = 0 
+			}
+		}
+		
+	}

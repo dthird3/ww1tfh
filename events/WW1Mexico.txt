@@ -5,7 +5,7 @@
 	desc = "EVT1910_101002_DESC"
 	id = 101002
 	 
-	picture = "diaz_election"
+	picture = "diaz-corral"
 	 
 	fire_only_once = yes
 	
@@ -84,23 +84,43 @@
 		 tag = MEX
 		 exists = MEX
 # 		 date = 1910.11.19
-		 }
+		}
 		 
 	option = {
 		 name = "ACTION_NAME_FIGHT"
 		 national_unity = -5
-		 MEX = {
-			any_owned = {
-				limit = { is_core = MEX }
-				add_core = MXR
+		 MXR = { war = { target = MEX }
+				 attacker_goal = { casus_belli = mexico_revolution }
 				}
-			}
-			7508 = {#Wuhan					### Define Mexican provinces
-			secede_province = PRC
-			 }
-		}
-	}	
-	
+		any_owned = {
+				limit = { is_core = MEX }
+				add_core = MXR }
+			9268 = { secede_province = MXR }   # Chihuahua
+			9237 = { secede_province = MXR }   # Yecora
+			9298 = { secede_province = MXR }   # Uruachic
+			9203 = { secede_province = MXR }   # Hermosillo
+			9173 = { secede_province = MXR }   # Huepac
+			9236 = { secede_province = MXR }   # Guaymas
+			9479 = { secede_province = MXR }   # Durango
+			9418 = { secede_province = MXR }   # El Palmito
+			9327 = { secede_province = MXR }   # San Juanito
+			
+			MXR = { load_oob = MXR_1910_madero.txt }
+			MXR = { capital = 9268 }
+			MXR = { supplies = 5000 }
+			9203 = { supplies = 10000 }        # Hermosillo
+			9327 = { supplies = 5000 }         # San Juanito
+			MXR = { officer_pool = 3300 }
+			MXR = { money = 100 }
+			MXR = { energy = 300 }
+			MXR = { rare_materials = 50 }
+			MXR = { metal = 50 }
+		}			
+	}
+
+
+# Magonista's Rebels 29/1/11
+# Zapata Army 10/3/11	
 	
 	
 	
@@ -3717,7 +3737,7 @@
 	}
 	
 	
-#End of the Revolution
+#End of the Revolution - Rebel Victory
 
  country_event = {
 	title = "WARE8"
