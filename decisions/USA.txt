@@ -1,5 +1,29 @@
+# Protect ourselves from Mexico - Diaz
 
 diplomatic_decisions = {
+	 USA_DIAZ = {
+		ai_will_do = { factor = 1 }
+			 
+		potential = {
+			tag = USA
+			MEX = { war_with = MXR }
+			date = 1911.2.1
+			NOT = { 
+				THIS = { has_country_flag = diaz_crisis	}
+				}
+			}
+			 
+		allow = { 
+			MEX = { lost_national = 0.40 }   # Mexico has lost 40% of cores to rebels
+		}
+		 
+		effect = {
+			 set_country_flag = diaz_crisis
+			 country_event = 100503    		# Protect ourselves from Mexico - Diaz
+			 }
+		}
+
+
 	 USA_NIC = {#Banana_Wars:_Nicaragua
 		ai_will_do = {
 			 factor = 1
