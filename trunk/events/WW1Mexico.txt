@@ -20,19 +20,19 @@
 		 }
 		 
 	option = {
-		 name = "EVT1910_101002_OPTA"   # Dismiss allegations of fraud and take power anyway trigger revolution sooner
-		 ai_chance = { factor = 0 }
-		 MXR = { country_event = 101006 }   # Trigger revolution sooner
-		 dissent = 3
-		 national_unity = -5
-		 }
+		name = "EVT1910_101002_OPTA"   # Dismiss allegations of fraud and take power anyway trigger revolution sooner
+		ai_chance = { factor = 0 }
+		MXR = { country_event = 101006 }   # Trigger revolution sooner
+		dissent = 3
+		national_unity = -5
+		}
 	option = {
-		 name = "EVT1910_101002_OPTB"   # Allow the petitions of fraud to be reviewed by the Mexican Congress
-		 ai_chance = { factor = 100 }
-		 MEX = { country_event = 101004 }
-		 dissent = 10
-		 national_unity = -5
-		 }	 
+		name = "EVT1910_101002_OPTB"   # Allow the petitions of fraud to be reviewed by the Mexican Congress
+		ai_chance = { factor = 100 }
+		MEX = { country_event = 101004 }
+		dissent = 10
+		national_unity = -5
+		}	 
 	}
 	
 # Mexican 1910 Elections Decided    The Mexican Congress denied the request on September 27, 1910, and declared Díaz and Corral elected.
@@ -82,6 +82,7 @@
 
 	trigger = {
 		 tag = MEX
+		 not = { has_country_flag = madero_revolt }
 		 exists = MEX
 # 		 date = 1910.11.19
 		}
@@ -101,8 +102,8 @@
 			9203 = { secede_province = MXR }   # Hermosillo
 			9173 = { secede_province = MXR }   # Huepac
 			9236 = { secede_province = MXR }   # Guaymas
-			9479 = { secede_province = MXR }   # Durango
-			9418 = { secede_province = MXR }   # El Palmito
+#			9479 = { secede_province = MXR }   # Durango
+#			9418 = { secede_province = MXR }   # El Palmito
 			9327 = { secede_province = MXR }   # San Juanito
 			
 			MXR = { load_oob = MXR_1910_madero.txt }
@@ -110,19 +111,110 @@
 			MXR = { supplies = 5000 }
 			9203 = { supplies = 10000 }        # Hermosillo
 			9327 = { supplies = 5000 }         # San Juanito
-			MXR = { officer_pool = 3300 }
+			MXR = { officer_pool = 850 }
 			MXR = { money = 100 }
 			MXR = { energy = 300 }
 			MXR = { rare_materials = 50 }
 			MXR = { metal = 50 }
+			MEX = { set_country_flag = madero_revolt }
 		}			
 	}
 
 
-# Magonista's Rebels 29/1/11
-# Zapata Army 10/3/11	
+# Magonista's Rebel 29/1/11  - notify Mexico
+
+ country_event = {
+	title = "EVT1910_101008_TITLE"
+	desc = "EVT1910_101008_DESC"
+	id = 101008
+	 
+	picture = "magonistas"
+	 
+	fire_only_once = yes
+	 
+	major = yes
 	
+	mean_time_to_happen = { days = 60 }
+	 
+	trigger = {
+		tag = MEX
+		MEX = {	war_with = MXR }
+		 }
+		 
+	option = {
+		name = "ACTION_NAME_DAMN"
+		ai_chance = { factor = 100 }
+		9090 = { create_revolt = 1 }
+		7369 = { create_revolt = 1 }
+		MEX = { national_unity = -1 }
+		}
+	}
 	
+
+# US Army and Navy manoeuvres 6/3/11 
+
+ country_event = {
+	title = "EVT1910_101010_TITLE"
+	desc = "EVT1910_101010_DESC"
+	id = 101010
+	 
+	picture = "american_troops_mexico"
+	 
+	fire_only_once = yes
+		
+	major = yes
+	
+	is_triggered_only = yes
+		 
+	option = {
+		ai_chance = { factor = 100 }
+		name = "ACTION_NAME_DAMN"
+		MEX = { national_unity = -3 }
+		}
+	}
+
+
+# Zapata Army joins revolution 10/3/11		
+
+ country_event = {
+	title = "EVT1910_101012_TITLE"
+	desc = "EVT1910_101012_DESC"
+	id = 101012
+	 
+	picture = "zapata_troops"
+	 
+	fire_only_once = yes
+		
+	major = yes
+	
+	mean_time_to_happen = { days = 14 }
+
+	trigger = {
+		tag = MEX
+		MEX = {	war_with = MXR }
+		MEX = { lost_national = 0.40 }   # Mexico has lost 40% of cores to rebels
+		not = { MEX = { has_country_flag = zapata_revolt_diaz } }
+# 		date = 1911.3.10
+		}
+		 
+	option = {
+		name = "ACTION_NAME_FIGHT"
+		national_unity = -1
+			9623 = { secede_province = MXR }   # Morelos - Cuernavaca
+			MXR = { load_oob = MXR_1910_zapata.txt }
+			MXR = { supplies = 2000 }
+			MXR = { officer_pool = 240 }
+			MXR = { money = 30 }
+			MXR = { energy = 100 }
+			MXR = { rare_materials = 10 }
+			MXR = { metal = 10 }
+			MEX = { load_oob = MEX_1910_mexcity.txt }
+			MEX = { officer_pool = 40 }
+			MEX = { set_country_flag = zapata_revolt_diaz }
+		}			
+	}	
+	
+# 27th March attempt coup d'etat of Diaz	
 	
 
 #Huerta has been defeated!

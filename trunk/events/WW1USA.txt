@@ -1,5 +1,33 @@
+#  Protect ourselves from Mexico - Diaz
 
-#Occupation of Nicaragua
+ country_event = {
+	title = "EVT1910_100503_TITLE"
+	desc = "EVT1910_100503_DESC"
+	id = 100503
+	 
+	picture = "american_troops_mexico"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		ai_chance = { factor = 100 }
+		name = "EVT1910_100503_OPTA"		# Protect ourselves
+		neutrality = -2
+		money = -100
+		MEX = { country_event = 101010 }
+		}
+		
+	option = {
+		ai_chance = { factor = 0 }
+		name = "EVT1910_100503_OPTB"		# Ignore them - stand down
+		USA = { national_unity = -1 }
+		}
+	}
+	
+	
+#  Occupation of Nicaragua
 
  country_event = {
 	title = "USAE1"
