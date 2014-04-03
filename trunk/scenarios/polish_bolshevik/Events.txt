@@ -82,12 +82,8 @@
 		 }
 	option = {
 		 name = "ACTION_NAME_DAMN"
-		 ai_chance = {
-			 factor = 100
-			 }
-		 2576 = {#Zhashkiv
-			create_revolt = 1
-			 }
+		 ai_chance = { factor = 100 }
+		 2576 = { create_revolt = 1 }						#Zhashkiv
 		 2641 = {#Illintsi
 			create_revolt = 1
 			 }
@@ -96,25 +92,16 @@
 			 }
 		 SOV = {
 			 supplies = -500}
-		 remove_brigade = "3-ya
-		 Galacian
-		 Brigada"
-		 remove_brigade = "2-ya
-		 Galacian
-		 Brigada"
+		 remove_brigade = "3-ya Galacian Brigada"
+		 remove_brigade = "2-ya Galacian Brigada"
 		 random_list = {
 			 25 = {#Andselv
-				remove_brigade = "1-ya
-				 Galacian
-				 Brigada"
-				 remove_brigade = "Galacian
-				 Corps
-				 HQ"
+				remove_brigade = "1-ya Galacian Brigada"
+				remove_brigade = "Galacian Corps HQ"
 				 }
 			 75 = {#Severodvinsk
-				POL = {
-					 country_event = 100811 #100811
-					}}
+				POL = { country_event = 100811 }
+				}
 			 }
 		 }
 	}

@@ -121,7 +121,7 @@
 	}
 
 
-# Magonista's Rebel 29/1/11  - notify Mexico
+# Magonista's Rebel 29/1/11  
 
  country_event = {
 	title = "EVT1910_101008_TITLE"
@@ -175,6 +175,7 @@
 
 
 # Zapata Army joins revolution 10/3/11		
+#### num_of_cities = x  another alternative to lost_national
 
  country_event = {
 	title = "EVT1910_101012_TITLE"
@@ -200,22 +201,186 @@
 	option = {
 		name = "ACTION_NAME_FIGHT"
 		national_unity = -1
-			9623 = { secede_province = MXR }   # Morelos - Cuernavaca
+			9623 = { secede_province = MXR }   				   # Morelos - Cuernavaca (Immediately next to Mexico City)
 			MXR = { load_oob = MXR_1910_zapata.txt }
-			MXR = { supplies = 2000 }
+			9623 = { supplies = 2000 }
 			MXR = { officer_pool = 240 }
 			MXR = { money = 30 }
 			MXR = { energy = 100 }
 			MXR = { rare_materials = 10 }
 			MXR = { metal = 10 }
-			MEX = { load_oob = MEX_1910_mexcity.txt }
+			MEX = { load_oob = MEX_1910_mexcity.txt }		   # Defence Militia for Mexico City 
 			MEX = { officer_pool = 40 }
 			MEX = { set_country_flag = zapata_revolt_diaz }
 		}			
 	}	
 	
-# 27th March attempt coup d'etat of Diaz	
 	
+# 27th March Mexican Officers attempt coup d'etat of Diaz	
+
+ country_event = {
+	title = "EVT1910_101014_TITLE"
+	desc = "EVT1910_101014_DESC"
+	id = 101014
+	 
+	picture = "soldiers_in_streets"
+	 
+	fire_only_once = yes
+		
+	major = yes
+	
+	mean_time_to_happen = { days = 3 }
+
+	trigger = {
+		tag = MEX
+		MEX = {	war_with = MXR }
+		MEX = {
+			not = { has_country_flag = "diaz_coup_attempt" }}
+		or = {
+			9604 = {													# Mexico City
+				any_neighbor_province = { controlled_by = MXR }
+				}
+			}
+		}
+		
+	option = {
+		name = "ACTION_NAME_DAMN"				 
+		random_list = {
+			20 = { MEX = { country_event = 101016 } }		   # Mexican Officers attempt successful coup of Diaz
+			80 = { MEX = { country_event = 101018 }	}		   # Mexican Officers attempt failed coup of Diaz
+			}
+		MEX = { set_country_flag = "diaz_coup_attempt"}
+		}
+	}
+	
+
+# Mexican Officers SUCCESSFUL coup of Diaz	
+	
+ country_event = {
+	title = "EVT1910_101016_TITLE"
+	desc = "EVT1910_101016_DESC"
+	id = 101016
+	 
+	picture = "madero_election"
+	 
+#	fire_only_once = yes
+		
+	major = yes
+
+	is_triggered_only = yes
+		 
+	option = {
+		name = "EVT1910_101016_OPTA"				
+		MXR = { country_event = 101022 }                  # Rebels stand down
+		}			
+	}
+	
+	
+# Mexican Officers FAILED coup of Diaz	
+	
+ country_event = {
+	title = "EVT1910_101018_TITLE"
+	desc = "EVT1910_101018_DESC"
+	id = 101018
+	 
+	picture = "failed_coup"
+	 
+#	fire_only_once = yes
+		
+	major = yes
+
+	is_triggered_only = yes
+		 
+	option = {
+		name = "ACTION_NAME_FIGHT"
+		dissent = 5
+		}			
+	}	
+	
+	
+#   Fall of Mexico City to Madero
+##  What other AI conditions will trigger another unexpected Mexican defeat event?????
+
+ country_event = {
+	title = "EVT1910_101020_TITLE"
+	desc = "EVT1910_101020_DESC"
+	id = 101020
+	 
+	picture = "soldiers_in_streets"
+	
+	fire_only_once = yes
+	
+	major = yes
+	 
+	trigger = {
+		tag = MEX
+		MEX = {	war_with = MXR }
+		MEX = {	not = { controls = 9604 }           # Ciudad Mexico
+		}
+	}
+		
+	option = {										
+		name = "EVT1910_101020_OPTA"				# End Diaz Regime
+		MXR = {	country_event = 101022 }            # Rebels stand down
+		}
+	}
+
+	
+#   Madero Rebel Victory
+
+ country_event = {
+	title = "EVT1910_101022_TITLE"
+	desc = "EVT1910_101022_DESC"
+	id = 101022
+	 
+	picture = "madero_election"
+	
+	fire_only_once = yes
+	
+	major = yes
+	 
+	is_triggered_only = yes
+	
+	option = {										
+		name = "EVT1910_101022_OPTA"
+		MXR = { ZZZ = { split_troops = 1.00 } }		# Rebels stand down and return to farms and homes
+		any_country = { relation = { who = MXR value = 75 } }
+		MEX = {	country_event = 101024 }			# Diaz resigns
+		}
+	}	
+	
+	
+#   Diaz Resigns
+
+ country_event = {
+	title = "EVT1910_101024_TITLE"
+	desc = "EVT1910_101024_DESC"
+	id = 101024
+	 
+	picture = "diaz_on_horse"
+	
+	fire_only_once = yes
+	
+	major = yes
+	 
+	is_triggered_only = yes
+	
+	option = {										
+		name = "EVT1910_101024_OPTA"
+		MEX = { end_war = MXR }
+		MEX = { remove_brigade = "1. Brigada de Milicia" }  # City garrison stands down
+		MEX = { remove_brigade = "2. Brigada de Milicia" }
+		MEX = { MXR = { split_troops = 1.00 } }		# Federal Mexican Army comes under control of new Government
+		MXR = { inherit = MEX }
+		MXR = { capital = 9604 }       				# Ciudad de México
+		MXR = { money = +200 }	
+		}
+	}	
+	
+####   Allow for Rebel defeat - Diaz takes Govt, later retires and hands over to Vice President - later new revolution against them 	
+
+	
+#####################################################################	
 
 #Huerta has been defeated!
 
@@ -3824,37 +3989,6 @@
 		 name = "DH_EVENT_2038502_Option7"
 		 war = {
 			 target = USA
-			 }
-		 }
-	}
-	
-	
-#End of the Revolution - Rebel Victory
-
- country_event = {
-	title = "WARE8"
-	desc = "desc_WARE8"
-	id = 190011
-	 
-	picture = "WARP8"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	major = yes
-	 
-	option = {
-		 name = "opta_WARE8"
-		 set_country_flag = mexico_war
-		 MEX = {
-			 dissent = -10
-			 }
-		 MEX = {
-			 end_war = MXR
-			 }
-		 MXR = {
-			 inherit = MEX
 			 }
 		 }
 	}
