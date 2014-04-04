@@ -1,1167 +1,547 @@
- theatre = {
-	location = 4503  # Istanbul
-	name = "Istanbul Karargâhi"
-	
-	 regiment = {
-		type = hq_brigade 
-		experience = 2 
-		name = "1. Kolordusu"
-		historical_model = 1 
+theatre = {
+	name="Istanbul Karargâhi"
+	location = 4503
+	regiment = { type = hq_brigade name = "Istanbul Karargâhi" historical_model = 2 experience = 2 }
+
+	army = {
+		name = "1. Ordu"
+		leader = {
+			id = 720119
+			type = 37
 		}
-	
-	 corps = {
-		location = 4503  # Istanbul
-		name = "I. Kolordu"
-		
-		 regiment = {
-			type = hq_brigade 
-			experience = 10 
-			name = "I. Kolordusu"
-			historical_model = 2 
+		location = 4503
+		regiment = { type = hq_brigade name = "1. Ordu" historical_model = 2 experience = 5 }
+
+		corps = {
+			name = "I. Kolordu"
+			leader = {
+				id = 720103
+				type = 37
 			}
-		
-		 division = {
-			location = 4503  # Istanbul
-			name = "2. Piyade Tumeni"
+			location = 4503
+			regiment = { type = hq_brigade name = "I. Kolordu" historical_model = 2 experience = 5 }
+			regiment = { type = cavalry_brigade name = "1. Süvari Tugayi 'Davutpasa'" historical_model = 2 experience = 5 }
+			regiment = { type = cavalry_brigade name = "2. Süvari Tugayi 'Davutpasa'" historical_model = 2 experience = 5 }
 			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "2. Piyade Tumeni 1. Tugay"
-				historical_model = 2 
+			division = {
+				name = "1. Piyade Tümeni 'Harbiye'"
+				leader = {
+					id = 720095
+					type = 37
 				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "2. Piyade Tumeni 2. Tugay"
-				historical_model = 2 
-				}
+				location = 4503
+				is_reserve = yes
+				regiment = { type = janissary_brigade name = "1. Piyade Alayi" historical_model = 2 experience = 10 }
+				regiment = { type = janissary_brigade name = "2. Piyade Alayi" historical_model = 2 experience = 10 }
+				regiment = { type = artillery_brigade name = "1. Topçu Alayi" historical_model = 2 experience = 5 }
 			}
-		
-		 division = {
-			location = 4503  # Istanbul
-			name = "1. Piyade Tumeni"
-			
-			 regiment = {
-				type = janissary_brigade 
-				is_reserve = yes 
-				experience = 10 
-				name = "1. Hucum Tugay"
-				historical_model = 3 
+
+			division = {
+				name = "2. Piyade Tümeni 'Selimiye'"
+				leader = {
+					id = 720146
+					type = 37
 				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "1. Piyade Tumeni 2. Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = artillery_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "1. Topçu Tugayi"
-				historical_model = 1 
-				}
+				location = 4503
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "3. Piyade Alayi" historical_model = 2 experience = 5 }
+				regiment = { type = infantry_brigade name = "4. Piyade Alayi" historical_model = 2 experience = 5 }
+				regiment = { type = artillery_brigade name = "2. Topçu Alayi" historical_model = 2 experience = 5 }
 			}
-		
-		 division = {
-			location = 4503  # Istanbul
-			name = "3. Piyade Tumeni"
 			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "3. Piyade Tumeni 2. Tugay"
-				historical_model = 2 
+			division = {
+				name = "3. Piyade Tümeni 'Pangalti'"
+				leader = {
+					id = 720202
+					type = 37
 				}
+				location = 4503
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "5. Piyade Alayi" historical_model = 2 experience = 5 }
+				regiment = { type = infantry_brigade name = "6. Piyade Alayi" historical_model = 2 experience = 5 }
+				regiment = { type = artillery_brigade name = "3. Topçu Alayi" historical_model = 2 experience = 5 }
+			}
+			
+			division = {
+				name = "Istanbul Garnizon"
+				location = 4503
+				is_reserve = yes
+				regiment = { type = garrison_brigade name = "3. Garnizon Alayi 'Istanbul'" historical_model = 2 }
+				regiment = { type = garrison_brigade name = "4. Garnizon Alayi 'Istanbul'" historical_model = 2 }
 			}
 		}
-	
-	 corps = {
-		location = 4503  # Istanbul
-		name = "II. Kolordu"
-		
-		 regiment = {
-			type = hq_brigade 
-			experience = 10 
-			name = "II. Kolordusu"
-			historical_model = 2 
+
+		corps = {
+			name = "II. Kolordu"
+			leader = {
+				id = 720131
+				type = 37
 			}
-		
-		 division = {
-			location = 4503  # Istanbul
-			name = "4. Piyade Tumeni"
+			location = 4374
+			regiment = { type = hq_brigade name = "II. Kolordu" historical_model = 2 experience = 5 }
 			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "4. Piyade Tumeni 1.Tugay"
-				historical_model = 2 
+			division = {
+				name = "4. Piyade Tümeni 'Kirk Kilise'"
+				leader = {
+					id = 720099
+					type = 37
 				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "4. Piyade Tumeni 2.Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = artillery_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "4. Topçu Tugayi"
-				historical_model = 1 
-				}
+				location = 4374
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "10. Piyade Alayi" historical_model = 1 experience = 5 }
+				regiment = { type = infantry_brigade name = "11. Piyade Alayi" historical_model = 1 experience = 2 }
+				regiment = { type = artillery_brigade name = "4. Topçu Alayi" historical_model = 1 experience = 2 }
 			}
-		
-		 division = {
-			location = 4503  # Istanbul
-			name = "5. Piyade Tumeni"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "5. Piyade Tumeni 1. Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "5. Piyade Tumeni 2. Tugay"
-				historical_model = 2 
-				}
+
+			division = {
+				name = "5. Piyade Tümeni 'Çorlu'"
+				location = 4502
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "13. Piyade Alayi" historical_model = 2 experience = 10 }
+				regiment = { type = infantry_brigade name = "14. Piyade Alayi" historical_model = 2 experience = 10 }
+				regiment = { type = artillery_brigade name = "5. Topçu Alayi" historical_model = 2 experience = 10 }
 			}
-		
-		 division = {
-			location = 4503  # Istanbul
-			name = "6. Piyade Tumeni"
 			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "6. Piyade Tumeni"
-				historical_model = 2 
+			division = {
+				name = "6. Piyade Tümeni"
+				leader = {
+					id = 720102
+					type = 37
 				}
+				location = 4436
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "16. Piyade Alayi" historical_model = 2 experience = 5 }
+				regiment = { type = infantry_brigade name = "17. Piyade Alayi" historical_model = 1 }
+				regiment = { type = artillery_brigade name = "6. Topçu Alayi" historical_model = 1 experience = 5 }
 			}
 		}
-	
-	 corps = {
-		location = 4503  # Istanbul
-		name = "III. Kolordu"
-		
-		 regiment = {
-			type = hq_brigade 
-			experience = 10 
-			name = "III. Kolordusu"
-			historical_model = 2 
+
+		corps = {
+			name = "III. Kolordu"
+			leader = {
+				id = 720092
+				type = 37
 			}
-		
-		 division = {
-			location = 4503  # Istanbul
-			name = "7. Piyade Tumeni"
+			location = 4501
+			regiment = { type = hq_brigade name = "III. Kolordu" historical_model = 2 experience = 10 }
+			regiment = { type = cavalry_brigade name = "3. Süvari Tugayi" historical_model = 2 experience = 10 }
 			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "7. Piyade Tumeni 1. Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "7. Piyade Tumeni 2. Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = artillery_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "7. Topçu Tugayi"
-				historical_model = 1 
-				}
+			division = {
+				name = "7. Piyade Tümeni 'Tekirdag'"
+				location = 4501
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "19. Piyade Alayi" historical_model = 2 experience = 5 }
+				regiment = { type = infantry_brigade name = "20. Piyade Alayi" historical_model = 2 }
+				regiment = { type = artillery_brigade name = "7. Topçu Alayi" historical_model = 2 experience = 5 }
 			}
-		
-		 division = {
-			location = 4503  # Istanbul
-			name = "8. Piyade Tumeni"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "8. Piyade Tumeni 1. Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "8. Piyade Tumeni 2. Tugay"
-				historical_model = 2 
-				}
+
+			division = {
+				name = "8. Piyade Tümeni"
+				location = 4560
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "22. Piyade Alayi" historical_model = 2 experience = 5 }
+				regiment = { type = infantry_brigade name = "23. Piyade Alayi" historical_model = 2 }
+				regiment = { type = artillery_brigade name = "8. Topçu Alayi" historical_model = 2 experience = 5 }
 			}
-		
-		 division = {
-			location = 4503  # Istanbul
-			name = "9. Piyade Tumeni"
 			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "9. Piyade Tumeni"
-				historical_model = 2 
+			division = {
+				name = "9. Piyade Tümeni 'Gelibolu'"
+				leader = {
+					id = 720159
+					type = 37
 				}
+				location = 4560
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "25. Piyade Alayi" historical_model = 2 experience = 5 }
+				regiment = { type = infantry_brigade name = "27. Piyade Alayi" historical_model = 2 experience = 2 }
+				regiment = { type = artillery_brigade name = "9. Topçu Alayi" historical_model = 2 experience = 2 }
 			}
-		
-		 division = {
-			location = 4503  # Istanbul
-			name = "1. Süvari Tugayi"
 			
-			 regiment = {
-				type = cavalry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "1. Süvari Tugayi"
-				historical_model = 2 
+			division = {
+				name = "Çanakkale Garnizon"
+				leader = {
+					id = 720090
+					type = 37
 				}
+				location = 4721
+				is_reserve = yes
+				regiment = { type = garrison_brigade name = "1. Garnizon Alayi 'Çanakkale'" historical_model = 2 experience = 5 }
+				regiment = { type = garrison_brigade name = "2. Garnizon Alayi 'Çanakkale'" historical_model = 2 experience = 5 }
+				regiment = { type = heavy_artillery_brigade name = "1. Agir Topçu Alayi 'Çanakkale'" historical_model = 2 experience = 5 }
 			}
 		}
-	
-	 corps = {
-		location = 4966  # Smyrna
-		name = "IV. Kolordu"
 		
-		 regiment = {
-			type = hq_brigade 
-			experience = 10 
-			name = "IV. Kolordusu"
-			historical_model = 2 
+		corps = {
+			name = "IV. Kolordu"
+			location = 4503
+			regiment = { type = hq_brigade name = "IV. Kolordu" historical_model = 1 }
+			
+			division = {
+				name = "10. Piyade Tümeni"
+				location = 4503
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "28. Piyade Alayi" historical_model = 2 experience = 5 }
+				regiment = { type = infantry_brigade name = "29. Piyade Alayi" historical_model = 2 experience = 5 }
+				regiment = { type = artillery_brigade name = "10. Topçu Alayi" historical_model = 2 experience = 10 }
 			}
-		
-		 division = {
-			location = 4966  # Smyrna
-			name = "10. Piyade Tumeni"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "10. Piyade Tumeni 1. Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "10. Piyade Tumeni 2. Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = artillery_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "10. Topçu Tugayi"
-				historical_model = 1 
-				}
+
+			division = {
+				name = "11. Piyade Tümeni"
+				location = 4503
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "31. Piyade Alayi" historical_model = 1 experience = 5 }
+				regiment = { type = infantry_brigade name = "32. Piyade Alayi" historical_model = 1 }
 			}
-		
-		 division = {
-			location = 4966  # Smyrna
-			name = "11. Piyade Tumeni"
 			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "11. Piyade Tumeni 1. Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = militia_brigade 
-				is_reserve = yes 
-				experience = 0 
-				name = "11. Milis Tugay"
-				historical_model = 2 
-				}
-			}
-		
-		 division = {
-			location = 4966  # Smyrna
-			name = "12. Piyade Tumeni"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "12. Piyade Tumeni"
-				historical_model = 2 
-				}
+			division = {
+				name = "12. Piyade Tümeni"
+				location = 4503
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "34. Piyade Alayi" historical_model = 1 experience = 5 }
+				regiment = { type = infantry_brigade name = "35. Piyade Alayi" historical_model = 1 }
 			}
 		}
-	
-	 corps = {
-		location = 4619  # Ankara
-		name = "V. Kolordu"
 		
-		 regiment = {
-			type = hq_brigade 
-			is_reserve = yes 
-			experience = 10 
-			name = "V. Kolordusu"
-			historical_model = 2 
+		division = {
+			name = "19. Piyade Tümeni"
+			leader = {
+				id=720097
+				type=37
 			}
+			location = 4501
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "57. Piyade Alayi" historical_model = 2 experience = 10 }
+			regiment = { type = infantry_brigade name = "72. Piyade Alayi" historical_model = 1 }
+			regiment = { type = artillery_brigade name = "19. Topçu Alayi" historical_model = 1 experience = 10 }
+		}
 		
-		 division = {
-			location = 4619  # Ankara
-			name = "13. Piyade Tumeni"
+		division = {
+			name = "20. Piyade Tümeni"
+			location = 4503
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "36. Piyade Alayi" historical_model = 2 experience = 5 }
+			regiment = { type = infantry_brigade name = "77. Piyade Alayi" historical_model = 1 }
+		}
+	}
+
+	army = {
+		name = "2. Ordu"
+		location = 4966
+		regiment = { type = hq_brigade name = "2. Ordu" historical_model = 2 experience = 2 }
+
+		corps = {
+			name = "V. Kolordu"
+			location = 4966
+			regiment = { type = hq_brigade name = "V. Kolordu" historical_model = 2 experience = 5 }
 			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "13. Piyade Tumeni 1. Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "13. Piyade Tumeni 2. Tugay"
-				historical_model = 2 
-				}
+			division = {
+				name = "13. Piyade Tümeni"
+				location = 4966
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "37. Piyade Alayi" historical_model = 1 experience = 5 }
+				regiment = { type = infantry_brigade name = "38. Piyade Alayi" historical_model = 1 experience = 5 }
 			}
-		
-		 division = {
-			location = 4619  # Ankara
-			name = "14. Piyade Tumeni"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "14. Piyade Tumeni 1. Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = militia_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "14. Milis Tugay"
-				historical_model = 2 
-				}
+
+			division = {
+				name = "14. Piyade Tümeni"
+				location = 5045
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "40. Piyade Alayi" historical_model = 1 experience = 5 }
+				regiment = { type = infantry_brigade name = "41. Piyade Alayi" historical_model = 1 experience = 5 }
 			}
-		
-		 division = {
-			location = 4619  # Ankara
-			name = "15. Piyade Tumeni"
 			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "15. Piyade Tumeni 1. Tugay"
-				historical_model = 2 
-				}
+			division = {
+				name = "15. Piyade Tümeni"
+				location = 5046
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "43. Piyade Alayi" historical_model = 1 experience = 5 }
+				regiment = { type = infantry_brigade name = "44. Piyade Alayi" historical_model = 1 experience = 5 }
 			}
 		}
-	
-	 corps = {
-		location = 7374  # Aleppo
-		name = "VI. Kolordu"
-		
-		 regiment = {
-			type = hq_brigade 
-			experience = 10 
-			name = "VI. Kolordusu"
-			historical_model = 2 
+
+		corps = {
+			name = "VI. Kolordu"
+			location = 4503
+			regiment = { type = hq_brigade name = "VI. Kolordu" historical_model = 2 experience = 10 }
+			
+			division = {
+				name = "16. Piyade Tümeni"
+				location = 4503
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "47. Piyade Alayi" historical_model = 2 experience = 5 }
+				regiment = { type = artillery_brigade name = "15. Topçu Alayi" historical_model = 2 experience = 5 }
 			}
-		
-		 division = {
-			location = 7374  # Aleppo
-			name = "16. Piyade Tumeni"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "16. Piyade Tumeni 1. Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "16. Piyade Tumeni 2. Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = artillery_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "16. Topçu Tugayi"
-				historical_model = 1 
-				}
+
+			division = {
+				name = "24. Piyade Tümeni"
+				location = 4503
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "66. Piyade Alayi" historical_model = 2 experience = 5 }
+				regiment = { type = infantry_brigade name = "67. Piyade Alayi" historical_model = 2 experience = 5 }
 			}
-		
-		 division = {
-			location = 7374  # Aleppo
-			name = "24. Piyade Tumeni"
 			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "24. Piyade Tumeni 1.Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = militia_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "24. Milis Tugay"
-				historical_model = 2 
-				}
-			}
-		
-		 division = {
-			location = 7374  # Aleppo
-			name = "26. Piyade Tumeni"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "26. Piyade Tumeni 1. Tugay"
-				historical_model = 2 
-				}
+			division = {
+				name = "26. Piyade Tümeni"
+				location = 4503
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "69. Piyade Alayi" historical_model = 1 }
+				regiment = { type = infantry_brigade name = "70. Piyade Alayi" historical_model = 1 }
 			}
 		}
+		
+		division = {
+			name = "21. Piyade Tümeni"
+			location = 4725
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "55. Piyade Alayi" historical_model = 2 }
+			regiment = { type = artillery_brigade name = "21. Topçu Alayi" historical_model = 2 }
+		}
+			
+		division = {
+			name = "Samsun Garnizon"
+			location = 4253
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "24. Garnizon Alayi 'Samsun'" historical_model = 2 }
+		}
+	}
+
+	army = {
+		name = "3. Ordu"
+		location = 4513
+		regiment = { type = hq_brigade name = "3. Ordu" historical_model = 2 }
+		regiment = { type = cavalry_brigade name = "25. Süvari Tugayi" historical_model = 2 }
+
+		corps = {
+			name = "IX. Kolordu"
+			location = 4513
+			regiment = { type = hq_brigade name = "IX. Kolordu" historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "9. Süvari Tugayi" historical_model = 2 experience = 3 }
+			
+			division = {
+				name = "17. Piyade Tümeni"
+				location = 4513
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "49. Piyade Alayi" historical_model = 2 experience = 5 }
+				regiment = { type = infantry_brigade name = "50. Piyade Alayi" historical_model = 2 experience = 5 }
+			}
+			
+			division = {
+				name = "28. Piyade Tümeni"
+				location = 4513
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "82. Piyade Alayi" historical_model = 2 experience = 5 }
+				regiment = { type = infantry_brigade name = "83. Piyade Alayi" historical_model = 2 experience = 5 }
+				regiment = { type = artillery_brigade name = "28. Topçu Alayi" historical_model = 2 experience = 10 }
+			}
+
+			division = {
+				name = "29. Piyade Tümeni"
+				location = 4448
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "85. Piyade Alayi" historical_model = 1 experience = 5 }
+				regiment = { type = artillery_brigade name = "29. Topçu Alayi" historical_model = 1 experience = 5 }
+			}
+			
+			division = {
+				name = "Trabzon Garnizon"
+				location = 4188
+				is_reserve = yes
+				regiment = { type = garrison_brigade name = "22. Garnizon Alayi 'Trabzon'" historical_model = 2 }
+			}
+		}
+		
+		corps = {
+			name = "X. Kolordu"
+			location = 4513
+			regiment = { type = hq_brigade name = "X. Kolordu" historical_model = 2 }
+			
+			division = {
+				name = "30. Piyade Tümeni"
+				location = 4513
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "88. Piyade Alayi" historical_model = 2 experience = 5 }
+				regiment = { type = infantry_brigade name = "89. Piyade Alayi" historical_model = 2 experience = 5 }
+			}
+			
+			division = {
+				name = "31. Piyade Tümeni"
+				location = 4513
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "91. Piyade Alayi" historical_model = 2 experience = 5 }
+				regiment = { type = infantry_brigade name = "92. Piyade Alayi" historical_model = 2 experience = 5 }
+			}
+			
+			division = {
+				name = "32. Piyade Tümeni"
+				location = 4513
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "94. Piyade Alayi" historical_model = 1 }
+				regiment = { type = infantry_brigade name = "95. Piyade Alayi" historical_model = 1 }
+			}
+		}
+		
+		corps = {
+			name = "XI. Kolordu"
+			location = 7304
+			regiment = { type = hq_brigade name = "XI. Kolordu" historical_model = 2 experience = 2 }
+			
+			division = {
+				name = "18. Piyade Tümeni"
+				location = 7304
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "51. Piyade Alayi" historical_model = 2 experience = 5 }
+				regiment = { type = infantry_brigade name = "52. Piyade Alayi" historical_model = 2 experience = 5 }
+			}
+			
+			division = {
+				name = "33. Piyade Tümeni 'Van'"
+				location = 7304
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "97. Piyade Alayi" historical_model = 1 experience = 5 }
+				regiment = { type = infantry_brigade name = "98. Piyade Alayi" historical_model = 1 experience = 5 }
+			}
+
+			division = {
+				name = "34. Piyade Tümeni 'Mus'"
+				location = 7285
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "100. Piyade Alayi" historical_model = 1 }
+				regiment = { type = infantry_brigade name = "101. Piyade Alayi" historical_model = 1 }
+			}
+		}
+		
+		division = {
+			name = "1. Asiret Süvari Tümeni"
+			location = 4513
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "10. Süvari Tugayi" historical_model = 1 experience = 10 }
+			regiment = { type = cavalry_brigade name = "11. Süvari Tugayi" historical_model = 1 experience = 10 }
+		}
+		
+		division = {
+			name = "2. Asiret Süvari Tümeni"
+			location = 7305
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "12. Süvari Tugayi" historical_model = 1 experience = 10 }
+			regiment = { type = cavalry_brigade name = "13. Süvari Tugayi" historical_model = 1 experience = 10 }
+		}
+	}
+
+	army = {
+		name = "4. Ordu"
+		location = 9100
+		regiment = { type = hq_brigade name = "4. Ordu" historical_model = 2 }
+
+		corps = {
+			name = "VIII. Kolordu"
+			location = 5299
+			regiment = { type = hq_brigade name = "VIII. Kolordu" historical_model = 2 experience = 5 }
+			
+			division = {
+				name = "23. Piyade Tümeni"
+				location = 7374
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "68. Piyade Alayi" historical_model = 2 experience = 5 }
+				regiment = { type = infantry_brigade name = "69. Piyade Alayi" historical_model = 1 experience = 5 }
+			}
+			
+			division = {
+				name = "25. Piyade Tümeni"
+				location = 5566
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "73. Piyade Alayi" historical_model = 2 experience = 5 }
+				regiment = { type = infantry_brigade name = "74. Piyade Alayi" historical_model = 1 experience = 5 }
+				regiment = { type = artillery_brigade name = "25. Topçu Alayi" historical_model = 2 experience = 5 }
+			}
+			
+			division = {
+				name = "27. Piyade Tümeni"
+				location = 5299
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "80. Piyade Alayi" historical_model = 1 }
+				regiment = { type = infantry_brigade name = "81. Piyade Alayi" historical_model = 1 }
+			}
+			
+			division = {
+				name = "Kudüs Garnizon"
+				location = 5567
+				regiment = { type = garrison_brigade name = "9. Garnizon Alayi 'Kudüs'" historical_model = 2 is_reserve = yes}
+			}
+		}
+		
+		corps = {
+			name = "XII. Kolordu"
+			location = 9100
+			regiment = { type = hq_brigade name = "XII. Kolordu" historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "13. Süvari Tugayi" historical_model = 2 }
+			
+			division = {
+				name = "35. Piyade Tümeni 'Musul'"
+				location = 9100
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "103. Piyade Alayi" historical_model = 2 experience = 5 }
+				regiment = { type = infantry_brigade name = "104. Piyade Alayi" historical_model = 2 experience = 5 }
+				regiment = { type = artillery_brigade name = "35. Topçu Alayi" historical_model = 2 experience = 10 }
+			}
+			
+			division = {
+				name = "36. Piyade Tümeni 'Bagdat'"
+				location = 9213
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "106. Piyade Alayi" historical_model = 1 experience = 5 }
+				regiment = { type = infantry_brigade name = "107. Piyade Alayi" historical_model = 1 experience = 5 }
+			}
+		}
+		
+		corps = {
+			name = "XIII. Kolordu"
+			location = 9365
+			regiment = { type = hq_brigade name = "XIII. Kolordu" historical_model = 2 }
+		
+			division = {
+				name = "37. Piyade Tümeni 'Basra'"
+				location = 9365
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "109. Piyade Alayi" historical_model = 1 experience = 5 }
+				regiment = { type = infantry_brigade name = "110. Piyade Alayi" historical_model = 1 experience = 5 }
+			}
+		}
+	}
 	
-	 corps = {
-		location = 9365  # Al Basrah
+	corps = {
 		name = "VII. Kolordu"
+		location = 9808
+		regiment = { type = hq_brigade name = "XII. Kolordu" historical_model = 1 }
 		
-		 regiment = {
-			type = hq_brigade 
-			experience = 10 
-			name = "VII. Kolordusu"
-			historical_model = 2 
-			}
-		
-		 division = {
-			location = 9365  # Al Basrah
-			name = "39. Piyade Tumeni"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "39. Piyade Tumeni 1. Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "39. Piyade Tumeni 2. Tugay"
-				historical_model = 2 
-				}
-			}
-		
-		 division = {
-			location = 9365  # Al Basrah
-			name = "40. Piyade Tumeni"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "40. Piyade Tumeni 1. Tugay"
-				historical_model = 2 
-				}
-			}
-		}
-	
-	 corps = {
-		location = 7374  # Aleppo
-		name = "VIII. Kolordu"
-		
-		 regiment = {
-			type = hq_brigade 
-			experience = 10 
-			name = "VIII. Kolordusu"
-			historical_model = 2 
-			}
-		
-		 division = {
-			location = 7374  # Aleppo
-			name = "23. Piyade Tumeni"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "23. Piyade Tumeni 1. Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "23. Piyade Tumeni 2. Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = artillery_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "23. Topçu Tugayi"
-				historical_model = 1 
-				}
-			}
-		
-		 division = {
-			location = 7374  # Aleppo
-			name = "25. Piyade Tumeni"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "25. Piyade Tumeni 1.Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = militia_brigade 
-				is_reserve = yes 
-				experience = 0 
-				name = "25. Milis Tugay"
-				historical_model = 2 
-				}
-			}
-		
-		 division = {
-			location = 7374  # Aleppo
-			name = "27. Piyade Tumeni"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "27. Piyade Tumeni 1. Tugay"
-				historical_model = 2 
-				}
-			}
-		}
-	
-	 corps = {
-		location = 4513  # Erzurum
-		name = "IX. Kolordu"
-		
-		 regiment = {
-			type = hq_brigade 
-			experience = 10 
-			name = "IX. Kolordusu"
-			historical_model = 2 
-			}
-		
-		 division = {
-			location = 4513  # Erzurum
-			name = "17. Piyade Tumeni"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "17. Piyade Tumeni 1. Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "17. Piyade Tumeni 2. Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = artillery_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "17. Topçu Tugayi"
-				historical_model = 0 
-				}
-			}
-		
-		 division = {
-			location = 4513  # Erzurum
-			name = "28. Piyade Tumeni"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "28. Piyade Tumeni 1.Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = militia_brigade 
-				is_reserve = yes 
-				experience = 0 
-				name = "28. Milis Tugay"
-				historical_model = 2 
-				}
-			}
-		
-		 division = {
-			location = 4513  # Erzurum
-			name = "29. Piyade Tumeni"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "29. Piyade Tumeni 1. Tugay"
-				historical_model = 2 
-				}
-			}
-		}
-	
-	 corps = {
-		location = 4188  # Trabzon
-		name = "X. Kolordu"
-		
-		 regiment = {
-			type = hq_brigade 
-			experience = 10 
-			name = "X. Kolordusu"
-			historical_model = 2 
-			}
-		
-		 division = {
-			location = 4188  # Trabzon
-			name = "30. Piyade Tumeni"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "30. Piyade Tumeni 1. Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "30. Piyade Tumeni 2. Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = artillery_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "30. Topçu Tugayi"
-				historical_model = 1 
-				}
-			}
-		
-		 division = {
-			location = 4188  # Trabzon
-			name = "31. Piyade Tumeni"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "31. Piyade Tumeni 1. Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = militia_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "31. Milis Tugay"
-				historical_model = 2 
-				}
-			}
-		
-		 division = {
-			location = 4188  # Trabzon
-			name = "32. Piyade Tumeni"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "32. Piyade Tumeni 1. Tugay"
-				historical_model = 2 
-				}
-			}
-		}
-	
-	 corps = {
-		location = 7332  # Batman
-		name = "XI. Kolordu"
-		
-		 regiment = {
-			type = hq_brigade 
-			experience = 10 
-			name = "XI. Kolordusu"
-			historical_model = 2 
-			}
-		
-		 division = {
-			location = 7332  # Batman
-			name = "18. Piyade Tumeni"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "18. Piyade Tumeni 1. Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "18. Piyade Tumeni 2. Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = artillery_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "18. Topçu Tugayi"
-				historical_model = 1 
-				}
-			}
-		
-		 division = {
-			location = 7332  # Batman
-			name = "33. Piyade Tumeni"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "33. Piyade Tumeni 1. Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = militia_brigade 
-				is_reserve = yes 
-				experience = 0 
-				name = "33. Milis Tugay"
-				historical_model = 2 
-				}
-			}
-		
-		 division = {
-			location = 7332  # Batman
-			name = "34. Piyade Tumeni"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "34. Piyade Tumeni 1. Tugay"
-				historical_model = 2 
-				}
-			}
-		
-		 division = {
-			location = 7332  # Batman
-			name = "2. Süvari Tugayi"
-			
-			 regiment = {
-				type = cavalry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "2. Süvari Tugayi"
-				historical_model = 2 
-				}
-			}
-		
-		 division = {
-			location = 7332  # Batman
-			name = "Van Gendamerie Süvari Tugayi"
-			
-			 regiment = {
-				type = cavalry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "Van Gendamerie Süvari Tugayi"
-				historical_model = 2 
-				}
-			}
-		}
-	
-	 corps = {
-		location = 9213  # Baghdad
-		name = "XII. Kolordu"
-		
-		 regiment = {
-			type = hq_brigade 
-			experience = 10 
-			name = "XII. Kolordusu"
-			historical_model = 2 
-			}
-		
-		 division = {
-			location = 9213  # Baghdad
-			name = "35. Piyade Tumeni"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "35. Piyade Tumeni 1. Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "35. Piyade Tumeni 2. Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = artillery_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "35. Topçu Tugayi"
-				historical_model = 0 
-				}
-			}
-		
-		 division = {
-			location = 9213  # Baghdad
-			name = "36. Piyade Tumeni"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "36. Piyade Tumeni 1. Tugay"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = militia_brigade 
-				is_reserve = yes 
-				experience = 0 
-				name = "36. Milis Tugay"
-				historical_model = 0 
-				}
-			}
-		
-		 navy = {
-			location = 4966  # Smyrna
-			base = 4966  # Smyrna
-			name = "Turkce Deniz Filosu"
-			
-			 ship = {
-				type = battleship 
-				experience = 15 
-				name = "Hayreddin Barbarossa"
-				historical_model = 5 
-				}
-			
-			 ship = {
-				type = battleship 
-				experience = 15 
-				name = "Turgut Reis"
-				historical_model = 5 
-				}
-			
-			 ship = {
-				type = heavy_cruiser 
-				experience = 15 
-				name = "Nijimi Sevket"
-				historical_model = 2 
-				}
-			
-			 ship = {
-				type = heavy_cruiser 
-				experience = 15 
-				name = "Muin-i-Zaffer"
-				historical_model = 3 
-				}
-			
-			 ship = {
-				type = heavy_cruiser 
-				experience = 15 
-				name = "Idjalieh"
-				historical_model = 6 
-				}
-			
-			 ship = {
-				type = heavy_cruiser 
-				experience = 15 
-				name = "Messudieh"
-				historical_model = 5 
-				}
-			
-			 ship = {
-				type = protected_cruiser 
-				experience = 15 
-				name = "Abdul Hamid"
-				historical_model = 5 
-				}
-			
-			 ship = {
-				type = protected_cruiser 
-				experience = 15 
-				name = "Medjidieh"
-				historical_model = 6 
-				}
-			
-			 ship = {
-				type = destroyer 
-				experience = 15 
-				name = "1. Filotilla Torpido Ve Denizalti"
-				historical_model = 9 
-				}
-			
-			 ship = {
-				type = transport_ship 
-				experience = 10 
-				name = "Reschid Pasha Filotillasi"
-				historical_model = 0 
-				}
-			}
+		division = {
+			name = "39. Piyade Tümeni"
+			location = 9808
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "115. Piyade Alayi" historical_model = 1 experience = 5 }
 		}
 	}
+}
 
- division = {
-	location = 4721  # Canakkale
-	name = "Dardanelles Garnizon Tümeni"
-	
-	 regiment = {
-		type = garrison_brigade 
-		is_reserve = no 
-		experience = 0 
-		name = "1. Garnizon Tugayi"
-		historical_model = 1 
-		}
-	
-	 regiment = {
-		type = garrison_brigade 
-		is_reserve = no 
-		experience = 0 
-		name = "2. Garnizon Tugayi"
-		historical_model = 1 
-		}
+navy = {
+	name = "Osmanli Donanmasi"
+	location = 4966
+	base = 4966
+
+	ship = { type = battleship name = "Barbaros Hayreddin" historical_model = 5 experience = 15 }
+	ship = { type = battleship name = "Turgut Reis" historical_model = 5 experience = 15 }
+	ship = { type = heavy_cruiser name = "Osmâniye" historical_model = 6 experience = 15 }
+	ship = { type = heavy_cruiser name = "Necm-i Sevket" historical_model = 2 experience = 15 }
+	ship = { type = heavy_cruiser name = "Muîn-i Zafer" historical_model = 3 experience = 15 }
+	ship = { type = heavy_cruiser name = "Abdülhamid" historical_model = 4 experience = 15 }
+	ship = { type = heavy_cruiser name = "Mesûdiye" historical_model = 5 experience = 15 }
+	ship = { type = protected_cruiser name = "Heibetnuma" historical_model = 5 experience = 15 }
+	ship = { type = protected_cruiser name = "Mecidiye" historical_model = 6 experience = 15 }
+	ship = { type = destroyer name = "1. Muhrip Filotillasi" historical_model = 9 experience = 15 }
+
+	ship = {
+		type = transport_ship
+		name = "1. Nakliye Filosu"
+		historical_model = 0
+		experience = 10
 	}
-
- division = {
-	location = 4503  # Istanbul
-	name = "Bosphorus Garnizon Tümeni"
-	
-	 regiment = {
-		type = garrison_brigade 
-		is_reserve = no 
-		experience = 0 
-		name = "4. Garnizon Tugayi"
-		historical_model = 1 
-		}
-	
-	 regiment = {
-		type = garrison_brigade 
-		is_reserve = no 
-		experience = 0 
-		name = "5. Garnizon Tugayi"
-		historical_model = 1 
-		}
-	}
-
- division = {
-	location = 4436  # Edirne
-	name = "Adrianople Garnizon Tümeni"
-	
-	 regiment = {
-		type = garrison_brigade 
-		is_reserve = no 
-		experience = 0 
-		name = "7. Garnizon Tugayi"
-		historical_model = 1 
-		}
-	
-	 regiment = {
-		type = garrison_brigade 
-		is_reserve = no 
-		experience = 0 
-		name = "8. Garnizon Tugayi"
-		historical_model = 1 
-		}
-	}
-
- division = {
-	location = 4966  # Smyrna
-	name = "Smyrna Garnizon Tümeni"
-	
-	 regiment = {
-		type = garrison_brigade 
-		is_reserve = no 
-		experience = 0 
-		name = "10. Garnizon Tugayi"
-		historical_model = 1 
-		}
-	
-	 regiment = {
-		type = garrison_brigade 
-		is_reserve = no 
-		experience = 0 
-		name = "11. Garnizon Tugayi"
-		historical_model = 1 
-		}
-	}
-
- division = {
-	location = 7374  # Aleppo
-	name = "Aleppo Garnizon Tümeni"
-	
-	 regiment = {
-		type = garrison_brigade 
-		is_reserve = no 
-		experience = 0 
-		name = "13. Garnizon Tugayi"
-		historical_model = 1 
-		}
-	
-	 regiment = {
-		type = garrison_brigade 
-		is_reserve = no 
-		experience = 0 
-		name = "14. Garnizon Tugayi"
-		historical_model = 1 
-		}
-	}
-
- division = {
-	location = 5299  # Beirut
-	name = "Beirut Garnizon Tümeni"
-	
-	 regiment = {
-		type = garrison_brigade 
-		is_reserve = no 
-		experience = 0 
-		name = "16. Garnizon Tugayi"
-		historical_model = 1 
-		}
-	
-	 regiment = {
-		type = garrison_brigade 
-		is_reserve = no 
-		experience = 0 
-		name = "17. Garnizon Tugayi"
-		historical_model = 1 
-		}
-	}
-
- division = {
-	location = 5567  # Jerusalem
-	name = "Jerusalem Garnizon Tümeni"
-	
-	 regiment = {
-		type = garrison_brigade 
-		is_reserve = no 
-		experience = 0 
-		name = "19. Garnizon Tugayi"
-		historical_model = 1 
-		}
-	
-	 regiment = {
-		type = garrison_brigade 
-		is_reserve = no 
-		experience = 0 
-		name = "20. Garnizon Tugayi"
-		historical_model = 1 
-		}
-	}
-
- division = {
-	location = 9213  # Baghdad
-	name = "Baghdad Garnizon Tümeni"
-	
-	 regiment = {
-		type = garrison_brigade 
-		is_reserve = no 
-		experience = 0 
-		name = "22. Garnizon Tugayi"
-		historical_model = 1 
-		}
-	
-	 regiment = {
-		type = garrison_brigade 
-		is_reserve = no 
-		experience = 0 
-		name = "23. Garnizon Tugayi"
-		historical_model = 1 
-		}
-	}
-
- division = {
-	location = 4188  # Trabzon
-	name = "Trabzon Garnizon Tümeni"
-	
-	 regiment = {
-		type = garrison_brigade 
-		is_reserve = no 
-		experience = 0 
-		name = "25. Garnizon Tugayi"
-		historical_model = 1 
-		}
-	
-	 regiment = {
-		type = garrison_brigade 
-		is_reserve = no 
-		experience = 0 
-		name = "26. Garnizon Tugayi"
-		historical_model = 1 
-		}
-	}
-
+}
