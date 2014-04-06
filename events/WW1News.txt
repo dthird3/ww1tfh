@@ -8,24 +8,24 @@
 	 
 	picture = "NEWP1"
 	 
-
 	trigger = {
 		 date = 1910.4.20
-		 not = { date = 1910.4.22 }
 		 not = {
-				has_country_flag = halley
-			}
-		ai = no
+			 date = 1910.4.22
+			 }
+		 not = {
+			 has_country_flag = halley
+			 }
+		 ai = no
 		 }
 	option = {
 		 name = "opta_NEWE1"
 		 ai_chance = {
 			 factor = 100
 			 }
-			set_country_flag = halley
-		}
+		 set_country_flag = halley
+		 }
 	}
-
 
 
 #Roald Amundsen
@@ -37,23 +37,25 @@
 	 
 	picture = "NEWP2"
 	 
-
 	trigger = {
 		 date = 1911.12.14
-		 not = { date = 1911.12.16 }
 		 not = {
-				has_country_flag = amundsen
-			}
-		ai = no
+			 date = 1911.12.16
+			 }
+		 not = {
+			 has_country_flag = amundsen
+			 }
+		 ai = no
 		 }
 	option = {
 		 name = "opta_NEWE2"
 		 ai_chance = {
 			 factor = 100
 			 }
-			set_country_flag = amundsen
-		}
+		 set_country_flag = amundsen
+		 }
 	}
+
 
 #Ernest Rutherford identifies the atomic nucleus
 
@@ -64,23 +66,26 @@
 	 
 	picture = "NEWP3"
 	 
-
 	trigger = {
 		 date = 1911.6.30
-		 not = { date = 1911.7.2 }
 		 not = {
-				has_country_flag = rutherford
-			}
-		ai = no
+			 date = 1911.7.2
+			 }
+		 not = {
+			 has_country_flag = rutherford
+			 }
+		 ai = no
 		 }
 	option = {
 		 name = "opta_NEWE3"
 		 ai_chance = {
 			 factor = 100
 			 }
-			set_country_flag = rutherford
-		}
+		 set_country_flag = rutherford
+		 }
 	}
+
+
 #U.S. explorer Hiram Bingham discovers Incan city of Machu Picchu.
 
  country_event = {
@@ -90,23 +95,26 @@
 	 
 	picture = "NEWP4"
 	 
-
 	trigger = {
 		 date = 1911.6.24
-		 not = { date = 1911.6.26 }
 		 not = {
-				has_country_flag = machupicchu
-			}
-		ai = no
+			 date = 1911.6.26
+			 }
+		 not = {
+			 has_country_flag = machupicchu
+			 }
+		 ai = no
 		 }
 	option = {
 		 name = "opta_NEWE4"
 		 ai_chance = {
 			 factor = 100
 			 }
-			set_country_flag = machupicchu
-		}
+		 set_country_flag = machupicchu
+		 }
 	}
+
+
 #Ford Motor Company introduces the first moving assembly line
 
  country_event = {
@@ -116,24 +124,27 @@
 	 
 	picture = "NEWP5"
 	 
-
 	trigger = {
 		 date = 1913.6.30
-		 not = { date = 1913.7.2 }
 		 not = {
-				has_country_flag = assemblyline
-			}
-		ai = no
+			 date = 1913.7.2
+			 }
+		 not = {
+			 has_country_flag = assemblyline
+			 }
+		 ai = no
 		 }
 	option = {
 		 name = "opta_NEWE5"
 		 ai_chance = {
 			 factor = 100
 			 }
-			set_country_flag = assemblyline
-		}
+		 set_country_flag = assemblyline
+		 }
 	}
-#Suffragettes demonstrate in London and Washington, D.C. 
+
+
+#Suffragettes demonstrate in London and Washington, D.C.
 
  country_event = {
 	title = "NEWE6"
@@ -142,23 +153,26 @@
 	 
 	picture = "NEWP6"
 	 
-
 	trigger = {
 		 date = 1913.3.1
-		 not = { date = 1913.3.3 }
 		 not = {
-				has_country_flag = suffragettes
-			}
-		ai = no
+			 date = 1913.3.3
+			 }
+		 not = {
+			 has_country_flag = suffragettes
+			 }
+		 ai = no
 		 }
 	option = {
 		 name = "opta_NEWE6"
 		 ai_chance = {
 			 factor = 100
 			 }
-			set_country_flag = suffragettes
-		}
+		 set_country_flag = suffragettes
+		 }
 	}
+
+
 #Dutch dancer Mata Hari is convicted and executed as a German spy.
 
  country_event = {
@@ -168,24 +182,28 @@
 	 
 	picture = "NEWP7"
 	 
-
 	trigger = {
 		 date = 1917.2.13
-		 not = { date = 1917.2.15 }
 		 not = {
-				has_country_flag = matahari
-			}
-		FRA = { war_with = GER }
-		ai = no
+			 date = 1917.2.15
+			 }
+		 not = {
+			 has_country_flag = matahari
+			 }
+		 FRA = {
+			 war_with = GER
+			 }
+		 ai = no
 		 }
 	option = {
 		 name = "opta_NEWE7"
 		 ai_chance = {
 			 factor = 100
 			 }
-			set_country_flag = matahari
-		}
+		 set_country_flag = matahari
+		 }
 	}
+
 
 #Spanish Flu
 
@@ -196,28 +214,29 @@
 	 
 	picture = "NEWP8"
 	 
-
 	trigger = {
 		 date = 1918.1.30
-		 not = { date = 1918.2.1 }
 		 not = {
-				has_country_flag = spanishflu
-			}
+			 date = 1918.2.1
+			 }
+		 not = {
+			 has_country_flag = spanishflu
+			 }
 		 }
 	option = {
 		 name = "opta_NEWE8"
 		 ai_chance = {
 			 factor = 100
 			 }
-			set_country_flag = spanishflu
-			
-			add_country_modifier = {
-				name = "spanish_flu"
-				duration = 900
+		 set_country_flag = spanishflu
+		 add_country_modifier = {
+			 name = "spanish_flu"
+			 duration = 900
 			 }
-		}
+		 }
 	}
-	
+
+
 #Prohibition
 
  country_event = {
@@ -227,29 +246,35 @@
 	 
 	picture = "NEWP9"
 	 
-
 	trigger = {
 		 date = 1920.1.17
-		 not = { date = 1920.1.19 }
 		 not = {
-				has_country_flag = prohibition
-			}
-		tag = USA
-		not = { FRA = { war_with = GER } }
+			 date = 1920.1.19
+			 }
+		 not = {
+			 has_country_flag = prohibition
+			 }
+		 tag = USA
+		 not = {
+			 FRA = {
+				 war_with = GER
+				 }
+			 }
 		 }
 	option = {
 		 name = "opta_NEWE9"
 		 ai_chance = {
 			 factor = 100
 			 }
-			set_country_flag = prohibition
-			
-			add_country_modifier = {
-				name = "prohibition"
-				duration = 3000
+		 set_country_flag = prohibition
+		 add_country_modifier = {
+			 name = "prohibition"
+			 duration = 3000
 			 }
-		}
+		 }
 	}
+
+
 #March on Rome
 
  country_event = {
@@ -259,37 +284,44 @@
 	 
 	picture = "NEWP10"
 	 
-
 	trigger = {
 		 date = 1922.10.22
-		 not = { date = 1922.10.24 }
 		 not = {
-				has_country_flag = marchonrome
-			}
-		tag = ITA
-		war = no
-		not = { FRA = { war_with = GER } }
+			 date = 1922.10.24
+			 }
+		 not = {
+			 has_country_flag = marchonrome
+			 }
+		 tag = ITA
+		 war = no
+		 not = {
+			 FRA = {
+				 war_with = GER
+				 }
+			 }
 		 }
 	option = {
 		 name = "opta_NEWE10"
 		 ai_chance = {
 			 factor = 100
 			 }
-			set_country_flag = marchonrome
-			head_of_state = 14100135 #Mussolini
-			head_of_government = 14100136
-			foreign_minister = 14100137
-			armament_minister = 14100138
-			minister_of_security = 14100139
-			minister_of_intelligence = 14100140
-			chief_of_staff = 14100141
-			chief_of_army = 14100142
-			chief_of_navy = 14100143
-			chief_of_air = 14100144    
-			popularity = 50  
-			organisation = 50
-		}
+		 set_country_flag = marchonrome
+		 head_of_state = 14100135 #Benito_Mussolini
+		head_of_government = 14100136 #Achille_Starace
+		foreign_minister = 14100137 #Eduardo_Moroni
+		armament_minister = 14100138 #Giampietro_Pellegrini
+		minister_of_security = 14100139 #Guido_Buffarini-Guidi
+		minister_of_intelligence = 14100140 #Carlo_Sambruni
+		chief_of_staff = 14100141 #Gastone_Gambara
+		chief_of_army = 14100142 #Rodolfo_Graziani
+		chief_of_navy = 14100143 #Pier_Angelo_Brandimarte
+		chief_of_air = 14100144 #Arrigo_Tessari
+		popularity = 50
+		 organisation = 50
+		 }
 	}
+
+
 #Beer Hall Putsch
 
  country_event = {
@@ -299,20 +331,22 @@
 	 
 	picture = "NEWP11"
 	 
-
 	trigger = {
 		 date = 1923.11.8
-		 not = { date = 1923.11.10 }
 		 not = {
-				has_country_flag = beerhall
-			}
-		ai = no
+			 date = 1923.11.10
+			 }
+		 not = {
+			 has_country_flag = beerhall
+			 }
+		 ai = no
 		 }
 	option = {
 		 name = "opta_NEWE11"
 		 ai_chance = {
 			 factor = 100
 			 }
-			set_country_flag = beerhall
-		}
+		 set_country_flag = beerhall
+		 }
 	}
+
