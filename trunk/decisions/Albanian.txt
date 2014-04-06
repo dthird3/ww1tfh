@@ -1,54 +1,54 @@
 
-diplomatic_decisions = {
-	 alb_conceed = {#Meet_Albanian_Demands
-		ai_will_do = {
-			 factor = 1
+
+ alb_conceed = {#Meet_Albanian_Demands
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 tag = TUR
+		 exists = ALB
+		 TUR = {
+			 has_country_flag = alb_war
 			 }
-		potential = {
-			 tag = TUR
-			 exists = ALB
+		 NOT = {
 			 TUR = {
-				 has_country_flag = alb_war
-				 }
-			 NOT = {
-				 TUR = {
-					 has_country_flag = alb_peace
-					 }
-				 }
-			 TUR = {
-				 war_with = ALB
+				 has_country_flag = alb_peace
 				 }
 			 }
-		allow = {
-			 4663 = {#Tirane
-				controlled_by = ALB
-				 }
+		 TUR = {
+			 war_with = ALB
 			 }
-		effect = {
-			 ALB = {
-				 country_event = 100120 #Assembly_of_Vlorë
-				}
-			 set_country_flag = alb_peace
-			 4717 = {#Korce
-				secede_province = ALB
-				 }
-			 4554 = {#Rreshen
-				secede_province = ALB
-				 }
-			 4608 = {#Lezhe
-				secede_province = ALB
-				 }
-			 4663 = {#Tirane
-				secede_province = ALB
-				 }
-			 4716 = {#Durres
-				secede_province = ALB
-				 }
-			 4769 = {#Vlore
-				secede_province = ALB
-				 }
-			 end_war = ALB
+		 }
+	allow = {
+		 4663 = {#Tirane
+			controlled_by = ALB
 			 }
-		}
+		 }
+	effect = {
+		 ALB = {
+			 country_event = 100120 #Assembly_of_Vlorë
+			}
+		 set_country_flag = alb_peace
+		 4717 = {#Korce
+			secede_province = ALB
+			 }
+		 4554 = {#Rreshen
+			secede_province = ALB
+			 }
+		 4608 = {#Lezhe
+			secede_province = ALB
+			 }
+		 4663 = {#Tirane
+			secede_province = ALB
+			 }
+		 4716 = {#Durres
+			secede_province = ALB
+			 }
+		 4769 = {#Vlore
+			secede_province = ALB
+			 }
+		 end_war = ALB
+		 }
 	}
+}
 
