@@ -14,24 +14,28 @@
 	mean_time_to_happen = { days = 0 }
 
 	trigger = {
-		 tag = MEX
-		 exists = MEX
- 		 date = 1910.7.10
-		 }
+		tag = MEX
+		exists = MEX
+		MEX = { not = { has_country_flag = "diaz_rigged_election" } }
+ 		date = 1910.7.10
+		}
 		 
 	option = {
-		name = "EVT1910_101002_OPTA"   # Dismiss allegations of fraud and take power anyway trigger revolution sooner
+		name = "EVT1910_101002_OPTA"       # Dismiss allegations of fraud and take power anyway - trigger revolution sooner
 		ai_chance = { factor = 0 }
-		MXR = { country_event = 101006 }   # Trigger revolution sooner
-		dissent = 3
+		MEX = { set_country_flag = "diaz_rigged_election" }
+		MEX = { set_country_flag = "diaz_election_decided" }
+		MEX = { country_event = 101005 }   # Trigger revolution sooner
+		dissent = 8
 		national_unity = -5
 		}
 	option = {
-		name = "EVT1910_101002_OPTB"   # Allow the petitions of fraud to be reviewed by the Mexican Congress
+		name = "EVT1910_101002_OPTB"       # Allow the petitions of fraud to be reviewed by the Mexican Congress
 		ai_chance = { factor = 100 }
+		MEX = { set_country_flag = "diaz_rigged_election" }
 		MEX = { country_event = 101004 }
-		dissent = 10
-		national_unity = -5
+		MEX = { dissent = 4 }
+		MEX = { national_unity = -5 }
 		}	 
 	}
 	
@@ -43,27 +47,56 @@
 	id = 101004
 	 
 	picture = "madero_election"
-	 
-	fire_only_once = yes
 		
 	major = yes
 	
-	mean_time_to_happen = { days = 1 }
+	mean_time_to_happen = { days = 90 }
+		 
+	fire_only_once = yes
 	
 	trigger = {
-		 tag = MEX
-		 exists = MEX
- 		 date = 1910.9.27
-		 }
+		tag = MEX
+		exists = MEX
+		date = 1910.8.1
+		MEX = { has_country_flag = "diaz_rigged_election" }
+		not = { USA = { has_country_flag = "diaz_crisis_over" } }
+ 		}
 		 
 	option = {
-		 name = "ACTION_NAME_OF_COURSE"
-		 MXR = { country_event = 101006 }   # Trigger revolution
-		 }
+		name = "ACTION_NAME_OF_COURSE"
+		MEX = { set_country_flag = "diaz_election_decided" }
+		MEX = { dissent = 4 }
+		MEX = { country_event = 101005 }   			# Trigger revolution
+		}
+	}	
+	
+	
+# Madero goes to USA and prepares for revolution
+
+ country_event = {
+	title = "EVT1910_101005_TITLE"
+	desc = "EVT1910_101005_DESC"
+	id = 101005
+	 
+	picture = "madero_leading_troops"
+	 
+	major = yes
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "ACTION_NAME_DAMN"
+		any_owned = {
+				limit = { is_core = MEX }
+				add_core = MXR }
+		MEX = { country_event = 101006 }
+		}			
 	}	
 
 		
-# Madero Crosses the Rio Grande and issues his proclamation to revolt
+# Madero Crosses the Rio Grande and issues his proclamation to revolt date = 1910.11.19
 
  country_event = {
 	title = "EVT1910_101006_TITLE"
@@ -72,40 +105,31 @@
 	 
 	picture = "madero_leading_troops"
 	 
-	fire_only_once = yes
-		
 	major = yes
 	
-	mean_time_to_happen = { days = 30 }
+	mean_time_to_happen = { days = 60 }
 	
-	is_triggered_only = yes
+	fire_only_once = yes
+	
+#	is_triggered_only = yes
 
 	trigger = {
-		 tag = MEX
-		 not = { has_country_flag = madero_revolt }
-		 exists = MEX
-# 		 date = 1910.11.19
+		tag = MEX
+		exists = MEX
+		MEX = { has_country_flag = "diaz_election_decided" }
 		}
-		 
+
 	option = {
-		 name = "ACTION_NAME_FIGHT"
-		 national_unity = -5
-		 MXR = { war = { target = MEX }
-				 attacker_goal = { casus_belli = mexico_revolution }
-				}
-		any_owned = {
-				limit = { is_core = MEX }
-				add_core = MXR }
+		name = "ACTION_NAME_FIGHT"
+			MEX = { national_unity = -5 }
+			USA = { end_guarantee = MEX } 
 			9268 = { secede_province = MXR }   # Chihuahua
 			9237 = { secede_province = MXR }   # Yecora
 			9298 = { secede_province = MXR }   # Uruachic
 			9203 = { secede_province = MXR }   # Hermosillo
 			9173 = { secede_province = MXR }   # Huepac
 			9236 = { secede_province = MXR }   # Guaymas
-#			9479 = { secede_province = MXR }   # Durango
-#			9418 = { secede_province = MXR }   # El Palmito
 			9327 = { secede_province = MXR }   # San Juanito
-			
 			MXR = { load_oob = MXR_1910_madero.txt }
 			MXR = { capital = 9268 }
 			MXR = { supplies = 5000 }
@@ -116,7 +140,11 @@
 			MXR = { energy = 300 }
 			MXR = { rare_materials = 50 }
 			MXR = { metal = 50 }
-			MEX = { set_country_flag = madero_revolt }
+			MXR = { war = { target = MEX
+				attacker_goal = { casus_belli = mexico_revolution }
+				}
+			}
+			MEX = { set_country_flag = "madero_revolt" }
 		}			
 	}
 
@@ -137,9 +165,9 @@
 	mean_time_to_happen = { days = 60 }
 	 
 	trigger = {
-		tag = MEX
 		MEX = {	war_with = MXR }
-		 }
+		MEX = {	has_country_flag = "madero_revolt" }
+		}
 		 
 	option = {
 		name = "ACTION_NAME_DAMN"
@@ -174,7 +202,7 @@
 	}
 
 
-# Zapata Army joins revolution 10/3/11		
+# Zapata Army joins revolution  10/3/11		
 #### num_of_cities = x  another alternative to lost_national
 
  country_event = {
@@ -187,15 +215,13 @@
 	fire_only_once = yes
 		
 	major = yes
-	
-	mean_time_to_happen = { days = 14 }
 
 	trigger = {
 		tag = MEX
 		MEX = {	war_with = MXR }
-		MEX = { lost_national = 0.40 }   # Mexico has lost 40% of cores to rebels
+		MEX = { lost_national = 0.40 }   						# Mexico has lost 40% of cores to rebels
+		MEX = {	has_country_flag = "madero_revolt" }
 		not = { MEX = { has_country_flag = zapata_revolt_diaz } }
-# 		date = 1911.3.10
 		}
 		 
 	option = {
@@ -262,8 +288,6 @@
 	id = 101016
 	 
 	picture = "madero_election"
-	 
-#	fire_only_once = yes
 		
 	major = yes
 
@@ -284,8 +308,6 @@
 	id = 101018
 	 
 	picture = "failed_coup"
-	 
-#	fire_only_once = yes
 		
 	major = yes
 
@@ -370,14 +392,27 @@
 		MEX = { end_war = MXR }
 		MEX = { remove_brigade = "1. Brigada de Milicia" }  # City garrison stands down
 		MEX = { remove_brigade = "2. Brigada de Milicia" }
-		MEX = { MXR = { split_troops = 1.00 } }		# Federal Mexican Army comes under control of new Government
+		MEX = { MXR = { split_troops = 1.00 } }				# Federal Mexican Army comes under control of new Government
 		MXR = { inherit = MEX }
-		MXR = { capital = 9604 }       				# Ciudad de México
+		MXR = { capital = 9604 }       						# Ciudad de México
 		MXR = { money = +200 }	
+		USA = { set_country_flag = "diaz_crisis_over" }
 		}
 	}	
 	
 ####   Allow for Rebel defeat - Diaz takes Govt, later retires and hands over to Vice President - later new revolution against them 	
+####   On Rebel defeat set "diaz_crisis_over" flag for USA, Diaz regime to recover some NU etc
+
+
+### Election to bring Madero into President
+### Loss of support for Madero
+### Other Rebel Leaders leave Party
+### Ten Tragic Days - USA & Rebels involved
+### Huerta Coup
+### Rebels rise up and DOW Huerta
+### Tampico & Vera Cruz effects
+### Defeat Huerta
+
 
 	
 #####################################################################	

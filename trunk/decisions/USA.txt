@@ -1,26 +1,28 @@
-# Protect ourselves from Mexico - Diaz
+# Protect ourselves from Mexico - Diaz  date = 1911.2.1
 
 diplomatic_decisions = {
 	 USA_DIAZ = {
+	 
 		ai_will_do = { factor = 1 }
 			 
 		potential = {
 			tag = USA
 			MEX = { war_with = MXR }
-			date = 1911.2.1
+			MEX = {	has_country_flag = "madero_revolt" }
 			NOT = { 
-				THIS = { has_country_flag = diaz_crisis	}
+				USA = { has_country_flag = "diaz_crisis" }			# Have not responded to the Crisis already
+				USA = { has_country_flag = "diaz_crisis_over" }		# The Crisis has not ended yet (USA is to lose the Decision if they don't respond while it's current)
 				}
 			}
 			 
 		allow = { 
-			MEX = { lost_national = 0.40 }   # Mexico has lost 40% of cores to rebels
+			MEX = { lost_national = 0.40 }   						# Mexico has lost 40% of cores to rebels
 		}
 		 
 		effect = {
-			 set_country_flag = diaz_crisis
-			 country_event = 100503    		# Protect ourselves from Mexico - Diaz
-			 }
+			set_country_flag = "diaz_crisis"
+			country_event = 100503    								# Protect ourselves from Mexico - Diaz
+			}
 		}
 
 
