@@ -1,3 +1,5 @@
+### CONSIDER GLOBAL FLAGS in some cases
+
 # Mexican 1910 Rigged Elections
 
  country_event = {
@@ -145,6 +147,7 @@
 				}
 			}
 			MEX = { set_country_flag = "madero_revolt" }
+# Check leaders , Caranza, Villa, Orozco and Reyes for MXR
 		}			
 	}
 
@@ -394,9 +397,12 @@
 		MEX = { remove_brigade = "2. Brigada de Milicia" }
 		MEX = { MXR = { split_troops = 1.00 } }				# Federal Mexican Army comes under control of new Government
 		MXR = { inherit = MEX }
+#   Francisco de la Barra, a member of Mexico’s old elite, served briefly as president for 6 months pending an election  ###
+#   New Madero minister's are the SAME as Diaz (atm) until election later   ###
 		MXR = { capital = 9604 }       						# Ciudad de México
 		MXR = { money = +200 }	
 		USA = { set_country_flag = "diaz_crisis_over" }
+		MXR = { set_country_flag = "diaz_defeated" }
 		}
 	}	
 	
@@ -404,13 +410,197 @@
 ####   On Rebel defeat set "diaz_crisis_over" flag for USA, Diaz regime to recover some NU etc
 
 
-### Election to bring Madero into President
-### Loss of support for Madero
-### Other Rebel Leaders leave Party
-### Ten Tragic Days - USA & Rebels involved
-### Huerta Coup
-### Rebels rise up and DOW Huerta
+# Election to bring Madero into President  November 1911 - 6 months after Diaz resigns
+
+ country_event = {
+	title = "EVT1910_101026_TITLE"
+	desc = "EVT1910_101026_DESC"
+	id = 101026
+	 
+	picture = "something"
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	mean_time_to_happen = { months = 6 }
+
+	trigger = {
+		tag = MXR
+		MXR = { has_country_flag = "diaz_defeated" }
+	}
+	
+	option = {										
+		name = "ACTION_NAME_GREAT"
+		MXR = { set_country_flag = "madero_president" }
+## make Madero minister President and remove Francisco de la Barra - add Madero's VP Pino Suarez
+# General Felipe Angeles - Madero's leader
+		}
+	}	
+
+	
+# November 1911 Zapata rebels pop ups. 
+
+ country_event = {
+	title = "EVT1910_101028_TITLE"
+	desc = "EVT1910_101028_DESC"
+	id = 101028
+	 
+	picture = "zapata_troops"
+	
+#	fire_only_once = yes      continual rebel pop up
+	
+	major = yes
+	
+	mean_time_to_happen = { days = 7 }
+
+	trigger = {
+		tag = MXR
+		MXR = { has_country_flag = "madero_president" }
+		not = { MXR = { has_country_flag = "huerta_president" } }
+# country_units_in_province = x 
+	}
+	
+	option = {										
+		name = "ACTION_NAME_DAMN"
+		9623 = { create_revolt = 2 }    # Morelos
+		not = { MXR = { country_units_in_province = 1 }
+				9623 = { supplies = 20 } }
+		9604 = { create_revolt = 2 }    # Mexico City needs to be garrisoned
+		MXR = { set_country_flag = "zapata_rebels" }
+		}
+	}
+	
+# December 1911 Bernardo Reyes, one of Díaz’s generals, led a rebellion based in Nuevo Leon.
+# revolts of General Bernardo Reyes in Nuevo León, in December 1912   ***** IS IT 1911 or 1912? *****
+# Reyes leader leaves MXR - kill leader out of MXR
+# Rebels uprising in 9355, 9419, 9480, 9449
+
+ country_event = {
+	title = "EVT1910_101030_TITLE"
+	desc = "EVT1910_101030_DESC"
+	id = 101030
+	 
+	picture = "something"
+	
+	fire_only_once = yes      # Once off rebellion 
+	
+	major = yes
+	
+	mean_time_to_happen = { days = 7 }
+
+	trigger = {
+		tag = MXR
+		MXR = { has_country_flag = "zapata_rebels" }
+		not = { MXR = { has_country_flag = "huerta_president" } }
+# country_units_in_province = x 
+	}
+	
+	option = {										
+		name = "ACTION_NAME_DAMN"
+		9355 = { create_revolt = 4 }    # Nuevo Laredo
+		not = { MXR = { country_units_in_province = 1 }
+				9355 = { supplies = 20 } }
+		9419 = { create_revolt = 4 }    # Monterrey
+		not = { MXR = { country_units_in_province = 1 }
+				9419 = { supplies = 20 } }
+		9480 = { create_revolt = 4 }    # Galeana
+		not = { MXR = { country_units_in_province = 1 }
+				9480 = { supplies = 20 } }
+		9449 = { create_revolt = 4 }    # Mendez
+		not = { MXR = { country_units_in_province = 1 }
+				9449 = { supplies = 20 } }
+		}
+	}
+
+
+# Orozco Rebellion Mar-Oct 1912 Northern states - refused to attack Zapata   
+# Orozco and his Colorados remained at large at Chihuahua
+
+ country_event = {
+	title = "EVT1910_101032_TITLE"
+	desc = "EVT1910_101032_DESC"
+	id = 101032
+	 
+	picture = "something"
+	
+#	fire_only_once = yes      continual rebel pop up
+	
+	major = yes
+	
+	mean_time_to_happen = { days = 7 }
+
+	trigger = {
+		tag = MXR
+		MXR = { has_country_flag = "zapata_rebels" }
+		not = { MXR = { has_country_flag = "huerta_president" } }
+# country_units_in_province = x 
+	}
+	
+	option = {										
+		name = "ACTION_NAME_DAMN"
+		9268 = { create_revolt = 4 }    # Chihuahua
+		not = { MXR = { country_units_in_province = 1 }
+				9268 = { supplies = 20 } }
+		9237 = { create_revolt = 4 }    # Yecora
+		9298 = { create_revolt = 4 }    # Uruachic
+		not = { MXR = { country_units_in_province = 1 }
+				9298 = { supplies = 20 } }
+		9203 = { create_revolt = 4 }    # Hermosillo
+		not = { MXR = { country_units_in_province = 1 }
+				9203 = { supplies = 20 } }
+		}
+	}
+
+	
+# Rebellion in the Gulf state of Veracruz led by General Félix Díaz, nephew of the deposed dictator. 16 Oct 1912
+
+ country_event = {
+	title = "EVT1910_101034_TITLE"
+	desc = "EVT1910_101034_DESC"
+	id = 101034
+	 
+	picture = "something"
+	
+	fire_only_once = yes      # Once off rebellion
+	
+	major = yes
+	
+	mean_time_to_happen = { days = 7 }
+
+	trigger = {
+		tag = MXR
+		MXR = { has_country_flag = "zapata_rebels" }
+		not = { MXR = { has_country_flag = "huerta_president" } }
+	}
+	
+	option = {										
+		name = "ACTION_NAME_DAMN"
+		9624 = { create_revolt = 4 }    # Vera Cruz
+		not = { MXR = { country_units_in_province = 1 }
+				9624 = { supplies = 20 } }
+		}
+	}
+	
+
+# Ten Tragic Days - USA & Rebels involved
+# US Decision to support coup - increase chances of success (lowers MXR NU)
+# Release of Reyes and Diaz - cadets attack palace
+# Ambassador Wilson now took the view that President Madero, by not surrendering instantly to the mutineers, was responsible for the bloodshed.
+# The American Ambassador, Henry Lane Wilson, however, on this day told all visitors at the Embassy that the Madero government had practically fallen
+# Huerta Coup
+
+
+# Rebels rise up and DOW Huerta
+# After this was accomplished, however, Zapata reunited with Villa and the other revolutionaries
+# Orozco, however, sided with Huerta and Huerta made him one of his generals.
+# Venustiano Carranza, a politician and rancher from Coahuila, was at the forefront of opposition to Huerta, 
+# and organized his own rebel army, called the Constitutionalists, with the secret support of the United States
+#  Villa, Zapata, Carranza and Álvaro Obregón led the fight against Huerta
 ### Tampico & Vera Cruz effects
+# April 1914, U.S. opposition to Huerta had reached its peak when American forces seized and occupied the port of Veracruz, 
+# cutting off arms, supplies and money from Germany, which supported Huerta
+
 ### Defeat Huerta
 
 
@@ -456,9 +646,6 @@
 		 }
 	option = {
 		 name = "DH_EVENT_2038601_Option7"
-		 leave_faction = axis
-		 leave_faction = allies
-		 leave_faction = comintern
 		 dissent = -5
 		 random_country = {
 			 limit = {
