@@ -417,7 +417,7 @@
 	desc = "EVT1910_101026_DESC"
 	id = 101026
 	 
-	picture = "something"
+	picture = "madero_election"
 	
 	fire_only_once = yes
 	
@@ -458,97 +458,78 @@
 		tag = MXR
 		MXR = { has_country_flag = "madero_president" }
 		not = { MXR = { has_country_flag = "huerta_president" } }
-# country_units_in_province = x 
 	}
 	
 	option = {										
 		name = "ACTION_NAME_DAMN"
-		9623 = { create_revolt = 2 }    # Morelos
-		not = { MXR = { country_units_in_province = 1 }
-				9623 = { supplies = 20 } }
-		9604 = { create_revolt = 2 }    # Mexico City needs to be garrisoned
+		9623 = { create_revolt = 4 }    # Morelos
+		9604 = { create_revolt = 4 }    # Mexico City needs to be garrisoned
 		MXR = { set_country_flag = "zapata_rebels" }
 		}
 	}
+
 	
 # December 1911 Bernardo Reyes, one of Díaz’s generals, led a rebellion based in Nuevo Leon.
-# revolts of General Bernardo Reyes in Nuevo León, in December 1912   ***** IS IT 1911 or 1912? *****
-# Reyes leader leaves MXR - kill leader out of MXR
-# Rebels uprising in 9355, 9419, 9480, 9449
 
  country_event = {
 	title = "EVT1910_101030_TITLE"
 	desc = "EVT1910_101030_DESC"
 	id = 101030
 	 
-	picture = "something"
+	picture = "Mex_Rebels"
 	
 	fire_only_once = yes      # Once off rebellion 
 	
 	major = yes
 	
-	mean_time_to_happen = { days = 7 }
+	mean_time_to_happen = { days = 15 }
 
 	trigger = {
 		tag = MXR
-		MXR = { has_country_flag = "zapata_rebels" }
+		MXR = { has_country_flag = "reyes_rebels" }
 		not = { MXR = { has_country_flag = "huerta_president" } }
-# country_units_in_province = x 
 	}
 	
 	option = {										
 		name = "ACTION_NAME_DAMN"
-		9355 = { create_revolt = 4 }    # Nuevo Laredo
-		not = { MXR = { country_units_in_province = 1 }
-				9355 = { supplies = 20 } }
-		9419 = { create_revolt = 4 }    # Monterrey
-		not = { MXR = { country_units_in_province = 1 }
-				9419 = { supplies = 20 } }
-		9480 = { create_revolt = 4 }    # Galeana
-		not = { MXR = { country_units_in_province = 1 }
-				9480 = { supplies = 20 } }
-		9449 = { create_revolt = 4 }    # Mendez
-		not = { MXR = { country_units_in_province = 1 }
-				9449 = { supplies = 20 } }
+		9355 = { create_revolt = 8 }    # Nuevo Laredo
+		9419 = { create_revolt = 8 }    # Monterrey
+		9480 = { create_revolt = 8 }    # Galeana
+		9449 = { create_revolt = 8 }    # Mendez
+		MXR = { set_country_flag = "reyes_rebels" }
+# Reyes leader leaves MXR - kill leader out of MXR
 		}
 	}
 
 
 # Orozco Rebellion Mar-Oct 1912 Northern states - refused to attack Zapata   
-# Orozco and his Colorados remained at large at Chihuahua
 
  country_event = {
 	title = "EVT1910_101032_TITLE"
 	desc = "EVT1910_101032_DESC"
 	id = 101032
 	 
-	picture = "something"
+	picture = "Mex_Rebels"
 	
 #	fire_only_once = yes      continual rebel pop up
 	
 	major = yes
 	
-	mean_time_to_happen = { days = 7 }
+	mean_time_to_happen = { months = 4 }
 
 	trigger = {
 		tag = MXR
 		MXR = { has_country_flag = "zapata_rebels" }
 		not = { MXR = { has_country_flag = "huerta_president" } }
-# country_units_in_province = x 
 	}
 	
 	option = {										
 		name = "ACTION_NAME_DAMN"
-		9268 = { create_revolt = 4 }    # Chihuahua
-		not = { MXR = { country_units_in_province = 1 }
-				9268 = { supplies = 20 } }
-		9237 = { create_revolt = 4 }    # Yecora
-		9298 = { create_revolt = 4 }    # Uruachic
-		not = { MXR = { country_units_in_province = 1 }
-				9298 = { supplies = 20 } }
-		9203 = { create_revolt = 4 }    # Hermosillo
-		not = { MXR = { country_units_in_province = 1 }
-				9203 = { supplies = 20 } }
+		9268 = { create_revolt = 8 }    # Chihuahua
+		9237 = { create_revolt = 8 }    # Yecora
+		9298 = { create_revolt = 8 }    # Uruachic
+		9203 = { create_revolt = 8 }    # Hermosillo
+		MXR = { set_country_flag = "orozco_rebels" }
 		}
 	}
 
@@ -560,13 +541,13 @@
 	desc = "EVT1910_101034_DESC"
 	id = 101034
 	 
-	picture = "something"
+	picture = "Mex_Rebels"
 	
 	fire_only_once = yes      # Once off rebellion
 	
 	major = yes
 	
-	mean_time_to_happen = { days = 7 }
+	mean_time_to_happen = { months = 10 }
 
 	trigger = {
 		tag = MXR
@@ -576,19 +557,155 @@
 	
 	option = {										
 		name = "ACTION_NAME_DAMN"
-		9624 = { create_revolt = 4 }    # Vera Cruz
-		not = { MXR = { country_units_in_province = 1 }
-				9624 = { supplies = 20 } }
+		9624 = { create_revolt = 6 }    # Vera Cruz
+#		9203 = { empty = yes }
+		MXR = { set_country_flag = "diaz_rebels" }
 		}
 	}
 	
 
-# Ten Tragic Days - USA & Rebels involved
-# US Decision to support coup - increase chances of success (lowers MXR NU)
-# Release of Reyes and Diaz - cadets attack palace
+# US Decision to support coup - increase chances of success 
+
+ country_event = {
+	title = "EVT1910_101036_TITLE"
+	desc = "EVT1910_101036_DESC"
+	id = 101036
+	 
+	picture = "something"
+	
+	fire_only_once = yes      
+	
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = {	
+		ai_chance = { factor = 100 }
+		name = "EVT1910_101036_OPTA"
+		USA = { set_country_flag = "support_madero_coup" }
+		MXR = {	country_event = 101038 }        # Ten Tragic Days
+		}
+	option = {	
+		ai_chance = { factor = 0 }	
+		USA = { set_country_flag = "no_madero_coup" }
+		name = "EVT1910_101036_OPTB"			
+		MXR = {	country_event = 101040 }        # Ten Tragic Days
+		}
+	}
+
+	
+# Ten Tragic Days - USA, Rebels & Huerta coup Madero
+# USA support coup attempt
+
+ country_event = {
+	title = "EVT1910_101038_TITLE"
+	desc = "EVT1910_101038_DESC"
+	id = 101038
+	 
+	picture = "ten_tragic_days"
+	
+	fire_only_once = yes      
+	
+	major = yes
+	
+	option = {										
+		name = "ACTION_NAME_DAMN"
+		9604 = { create_revolt = 8 }    # Mexico City
+		random_list = {
+			90 = { MXR = { country_event = 101042 } }
+			10 = { MXR = { country_event = 101044 } }
+			}
+		}
+	}
+	
+		
+# Ten Tragic Days - USA, Rebels & Huerta coup Madero
+# USA DO NOT support coup attempt
+
+ country_event = {
+	title = "EVT1910_101040_TITLE"
+	desc = "EVT1910_101040_DESC"
+	id = 101040
+	 
+	picture = "ten_tragic_days"
+	
+	fire_only_once = yes      
+	
+	major = yes
+	
+	option = {										
+		name = "ACTION_NAME_DAMN"
+		9604 = { create_revolt = 8 }    # Mexico City
+		random_list = {
+			60 = { MXR = { country_event = 101042 } }
+			40 = { MXR = { country_event = 101044 } }
+			}
+		}
+	}
+
+	
+# Ten Tragic Days - Madero coup successful
+
+ country_event = {
+	title = "EVT1910_101042_TITLE"
+	desc = "EVT1910_101042_DESC"
+	id = 101042
+	 
+	picture = "huerta"
+	
+	fire_only_once = yes      
+	
+	major = yes
+	
+	mean_time_to_happen = { days = 2 }
+
+	trigger = {
+		tag = MXR
+		or = {
+			USA = { has_country_flag = "support_madero_coup" }
+			USA = { has_country_flag = "no_madero_coup" }
+		}
+	}
+	
+	option = {										
+		name = "ACTION_NAME_DAMN"
+		# Kill Madero and VP
+		# Huerta takes power
+		}
+	}
+	
+# Ten Tragic Days - Madero coup fails
+
+ country_event = {
+	title = "EVT1910_101044_TITLE"
+	desc = "EVT1910_101044_DESC"
+	id = 101044
+	 
+	picture = "failed_coup"
+	
+	fire_only_once = yes      
+	
+	major = yes
+	
+	mean_time_to_happen = { days = 2 }
+
+	trigger = {
+		tag = MXR
+		or = {
+			USA = { has_country_flag = "support_madero_coup" }
+			USA = { has_country_flag = "no_madero_coup" }
+		}
+	}
+	
+	option = {										
+		name = "ACTION_NAME_DAMN"
+		# Kill Huetra, Reyes & Diaz
+		}
+	}
+	
+	
 # Ambassador Wilson now took the view that President Madero, by not surrendering instantly to the mutineers, was responsible for the bloodshed.
 # The American Ambassador, Henry Lane Wilson, however, on this day told all visitors at the Embassy that the Madero government had practically fallen
-# Huerta Coup
 
 
 # Rebels rise up and DOW Huerta
