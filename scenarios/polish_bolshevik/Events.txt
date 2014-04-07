@@ -450,19 +450,19 @@
 			 not = {
 				 has_country_flag = "Desperate_Polish_Defence_1"}}
 		 or = {
-			 1928 = {#Warszawa
+			 1928 = {								#Warszawa
 				any_neighbor_province = {
 					 controlled_by = SOV}}
-			 1810 = {#Bialystok
+			 1810 = {								#Bialystok
 				any_neighbor_province = {
 					 controlled_by = SOV}}
-			 2273 = {#Zwolen
+			 2273 = {								#Zwolen
 				any_neighbor_province = {
 					 controlled_by = SOV}}
-			 1986 = {#Brzesc_Litewski
+			 1986 = {								#Brzesc_Litewski
 				any_neighbor_province = {
 					 controlled_by = SOV}}
-			 2568 = {#Jedrzejow
+			 2568 = {								#Jedrzejow
 				any_neighbor_province = {
 					 controlled_by = SOV}}
 			 }
@@ -569,7 +569,7 @@
 		 POL = {
 			 load_oob = "scenarios/polish_bolshevik/Reinforce_POL_OOB/POL_GAR_5.txt"}
 		 POL = {
-			 officer_pool = 400}
+			 officer_pool = 250}
 		 POL = {
 			 set_country_flag = "Defence_of_Poznan"}
 		 }
@@ -987,8 +987,7 @@
 		 tag = SOV
 		 date = 1920.8.18
 		 not = {
-			 SOV = {
-				 has_country_flag = Emergency_3_Released}}
+			 SOV = { has_country_flag = Emergency_3_Released}}
 		 }
 	option = {
 		 name = "ACTION_NAME_GREAT"
@@ -1319,14 +1318,11 @@
 		 tag = SOV
 		 or = {
 			 not = {
-				 SOV = {
-					 has_country_flag = Emergency_1_Released}}
+				 SOV = { has_country_flag = Emergency_1_Released}}
 			 not = {
-				 SOV = {
-					 has_country_flag = Emergency_2_Released}}
+				 SOV = { has_country_flag = Emergency_2_Released}}
 			 not = {
-				 SOV = {
-					 has_country_flag = Emergency_3_Released}}
+				 SOV = { has_country_flag = Emergency_3_Released}}
 			 }
 		 or = {
 			 1534 = {#Vitsyebsk
