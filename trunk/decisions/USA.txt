@@ -45,12 +45,13 @@ diplomatic_decisions = {
 			MXR = { has_country_flag = "reyes_rebels" }
 			MXR = { has_country_flag = "orozco_rebels" }
 			MXR = { has_country_flag = "diaz_rebels" }
-			MXR = { num_of_revolts = 1  }   						# Mexico has rebel revolts in progress
+			MXR = { num_of_revolts = 1  }   							# Mexico has rebel revolts in progress
+# TEMP CODE CHANGE FOR TESTING - MXR = { num_of_revolts = 1  }
 		}
 		 
 		effect = {
 			USA = { set_country_flag = "madero_coup" }
-			USA = { country_event = 101036 }     								# Madero intervention
+			USA = { country_event = 101036 }     						# Madero intervention
 			}
 		}
 

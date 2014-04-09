@@ -163,7 +163,7 @@
 			type = cavalry_brigade 
 			name = "11. Brigada de Maderistas"
 			experience = 2
-			historical_model = 0 
+			historical_model = 1 
 			}
 		}
 		
@@ -176,7 +176,7 @@
 			type = cavalry_brigade 
 			name = "12. Brigada de Maderistas"
 			experience = 2
-			historical_model = 0 
+			historical_model = 1 
 			}
 		}
 	}
@@ -187,9 +187,9 @@ military_construction = {
 	progress = 45 
 	duration = 60 
 	country = MXR 
-	militia = { 
+	militia_brigade = { 
 		name = "13. Brigada de Maderistas"
-		historical_model = 1 
+		historical_model = 2 
 		}
 	}
 	
@@ -198,8 +198,19 @@ military_construction = {
 	progress = 30 
 	duration = 60 
 	country = MXR 
-	militia = { 
+	militia_brigade = { 
 		name = "14. Brigada de Maderistas"
-		historical_model = 1 
+		historical_model = 2 
+		}
+	}
+	
+military_construction = {
+	cost = 1 
+	progress = 30 
+	duration = 70 
+	country = MXR 
+	cavalry_brigade = { 
+		name = "15. Brigada de Maderistas"
+		historical_model = 2 
 		}
 	}

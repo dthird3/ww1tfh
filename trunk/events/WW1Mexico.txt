@@ -27,7 +27,7 @@
 		ai_chance = { factor = 0 }
 		MEX = { set_country_flag = "diaz_rigged_election" }
 		MEX = { set_country_flag = "diaz_election_decided" }
-		MEX = { country_event = 101005 }   # Trigger revolution sooner
+#		MEX = { country_event = 101005 }   # Trigger revolution sooner
 		dissent = 8
 		national_unity = -5
 		}
@@ -35,7 +35,7 @@
 		name = "EVT1910_101002_OPTB"       # Allow the petitions of fraud to be reviewed by the Mexican Congress
 		ai_chance = { factor = 100 }
 		MEX = { set_country_flag = "diaz_rigged_election" }
-		MEX = { country_event = 101004 }
+#		MEX = { country_event = 101004 }
 		MEX = { dissent = 4 }
 		MEX = { national_unity = -5 }
 		}	 
@@ -58,9 +58,9 @@
 	
 	trigger = {
 		tag = MEX
-		exists = MEX
-		date = 1910.8.1
+#		date = 1910.9.07
 		MEX = { has_country_flag = "diaz_rigged_election" }
+		not = { MEX = { has_country_flag = "diaz_election_decided" } }
 		not = { USA = { has_country_flag = "diaz_crisis_over" } }
  		}
 		 
@@ -68,7 +68,8 @@
 		name = "ACTION_NAME_OF_COURSE"
 		MEX = { set_country_flag = "diaz_election_decided" }
 		MEX = { dissent = 4 }
-		MEX = { country_event = 101005 }   			# Trigger revolution
+		MEX = { national_unity = -5 }
+#		MEX = { country_event = 101005 }   			# Trigger revolution
 		}
 	}	
 	
@@ -93,7 +94,6 @@
 		any_owned = {
 				limit = { is_core = MEX }
 				add_core = MXR }
-		MEX = { country_event = 101006 }
 		}			
 	}	
 
@@ -112,18 +112,16 @@
 	mean_time_to_happen = { days = 60 }
 	
 	fire_only_once = yes
-	
-#	is_triggered_only = yes
 
 	trigger = {
 		tag = MEX
-		exists = MEX
 		MEX = { has_country_flag = "diaz_election_decided" }
 		}
 
 	option = {
 		name = "ACTION_NAME_FIGHT"
 			MEX = { national_unity = -5 }
+			MEX = { dissent = 5 }
 			USA = { end_guarantee = MEX } 
 			9268 = { secede_province = MXR }   # Chihuahua
 			9237 = { secede_province = MXR }   # Yecora
@@ -139,7 +137,7 @@
 			9327 = { supplies = 5000 }         # San Juanito
 			MXR = { officer_pool = 850 }
 			MXR = { money = 100 }
-			MXR = { energy = 300 }
+			MXR = { energy = 600 }
 			MXR = { rare_materials = 50 }
 			MXR = { metal = 50 }
 			MXR = { war = { target = MEX
@@ -168,6 +166,7 @@
 	mean_time_to_happen = { days = 60 }
 	 
 	trigger = {
+		tag = MEX
 		MEX = {	war_with = MXR }
 		MEX = {	has_country_flag = "madero_revolt" }
 		}
@@ -200,7 +199,8 @@
 	option = {
 		ai_chance = { factor = 100 }
 		name = "ACTION_NAME_DAMN"
-		MEX = { national_unity = -3 }
+		MEX = { national_unity = -4 }
+		MEX = { dissent = 5 }
 		}
 	}
 
@@ -231,8 +231,9 @@
 		name = "ACTION_NAME_FIGHT"
 		national_unity = -1
 			9623 = { secede_province = MXR }   				   # Morelos - Cuernavaca (Immediately next to Mexico City)
+			9642 = { secede_province = MXR }   				   # Puebla
 			MXR = { load_oob = MXR_1910_zapata.txt }
-			9623 = { supplies = 2000 }
+			9642 = { supplies = 1000 }
 			MXR = { officer_pool = 240 }
 			MXR = { money = 30 }
 			MXR = { energy = 100 }
@@ -464,6 +465,7 @@
 		name = "ACTION_NAME_DAMN"
 		9623 = { create_revolt = 4 }    # Morelos
 		9604 = { create_revolt = 4 }    # Mexico City needs to be garrisoned
+		MXR = { dissent = 3 }
 		MXR = { set_country_flag = "zapata_rebels" }
 		}
 	}
@@ -492,10 +494,11 @@
 	
 	option = {										
 		name = "ACTION_NAME_DAMN"
-		9355 = { create_revolt = 8 }    # Nuevo Laredo
-		9419 = { create_revolt = 8 }    # Monterrey
-		9480 = { create_revolt = 8 }    # Galeana
-		9449 = { create_revolt = 8 }    # Mendez
+		9355 = { create_revolt = 6 }    # Nuevo Laredo
+		9419 = { create_revolt = 6 }    # Monterrey
+		9480 = { create_revolt = 6 }    # Galeana
+		9449 = { create_revolt = 6 }    # Mendez
+		MXR = { dissent = 3 }
 		MXR = { set_country_flag = "reyes_rebels" }
 # Reyes leader leaves MXR - kill leader out of MXR
 		}
@@ -529,6 +532,7 @@
 		9237 = { create_revolt = 8 }    # Yecora
 		9298 = { create_revolt = 8 }    # Uruachic
 		9203 = { create_revolt = 8 }    # Hermosillo
+		MXR = { dissent = 3 }
 		MXR = { set_country_flag = "orozco_rebels" }
 		}
 	}
@@ -571,7 +575,7 @@
 	desc = "EVT1910_101036_DESC"
 	id = 101036
 	 
-	picture = "something"
+	picture = "henry_wilson"
 	
 	fire_only_once = yes      
 	
@@ -597,14 +601,18 @@
 # Ten Tragic Days - USA, Rebels & Huerta coup Madero
 # USA support coup attempt
 
+# dissent = x   (possible this could be used)
+
  country_event = {
 	title = "EVT1910_101038_TITLE"
 	desc = "EVT1910_101038_DESC"
 	id = 101038
 	 
-	picture = "ten_tragic_days"
+	picture = "soldiers_in_streets"
 	
-	fire_only_once = yes      
+	fire_only_once = yes  
+
+	is_triggered_only = yes
 	
 	major = yes
 	
@@ -627,9 +635,11 @@
 	desc = "EVT1910_101040_DESC"
 	id = 101040
 	 
-	picture = "ten_tragic_days"
+	picture = "soldiers_in_streets"
 	
-	fire_only_once = yes      
+	fire_only_once = yes 
+
+	is_triggered_only = yes	
 	
 	major = yes
 	
@@ -699,15 +709,11 @@
 	
 	option = {										
 		name = "ACTION_NAME_DAMN"
-		# Kill Huetra, Reyes & Diaz
+		# Kill Huetra, Reyes & Diaz, Mondragon
 		}
 	}
-	
-	
-# Ambassador Wilson now took the view that President Madero, by not surrendering instantly to the mutineers, was responsible for the bloodshed.
-# The American Ambassador, Henry Lane Wilson, however, on this day told all visitors at the Embassy that the Madero government had practically fallen
 
-
+	
 # Rebels rise up and DOW Huerta
 # After this was accomplished, however, Zapata reunited with Villa and the other revolutionaries
 # Orozco, however, sided with Huerta and Huerta made him one of his generals.
@@ -3020,39 +3026,6 @@
 	}
 
 
-#Loss of Mexico city
-
- country_event = {
-	title = "DH_EVENT_2250509_TITLE"
-	desc = "DH_EVENT_2250509_DESC"
-	id = 501
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = {
-		 days = 15
-		 }
-	trigger = {
-		 not = {
-			 9604 = {#Ciudad_de_México
-				controlled_by = MXR
-				 }
-			 }
-		 tag = MXR
-		 date = 1910.1.1
-		 not = {
-			 date = 1963.12.30
-			 }
-		 }
-	option = {
-		 name = "DH_EVENT_2250509_Option7"
-		 supplies = 20
-		 dissent = 1
-		 }
-	}
-
 
 #Victory in Mexico city!
 
@@ -3127,39 +3100,6 @@
 	}
 
 
-#Loss of Mexico city
-
- country_event = {
-	title = "DH_EVENT_2038551_TITLE"
-	desc = "DH_EVENT_2038551_DESC"
-	id = 503
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = {
-		 days = 15
-		 }
-	trigger = {
-		 not = {
-			 9604 = {#Ciudad_de_México
-				controlled_by = MXR
-				 }
-			 }
-		 tag = MXR
-		 date = 1910.1.1
-		 not = {
-			 date = 1963.12.30
-			 }
-		 }
-	option = {
-		 name = "DH_EVENT_2038551_Option7"
-		 supplies = 20
-		 dissent = 1
-		 }
-	}
-
 
 #Captured supplies
 
@@ -3172,49 +3112,34 @@
 	 
 	is_triggered_only = no
 	 
-	mean_time_to_happen = {
-		 days = 60
-		 }
+	mean_time_to_happen = { days = 60 }
+	
 	trigger = {
 		 war = yes
-		 not = {
-			 supplies = 100
-			 }
-		 not = {
-			 total_ic = 7
-			 }
+		 not = { supplies = 100 }
+		 not = { total_ic = 7 }
 		 tag = MXR
 		 date = 1910.1.1
-		 not = {
-			 date = 1920.12.30
-			 }
+		 not = { date = 1920.12.30 }
 		 }
 	option = {
-		 ai_chance = {
-			 factor = 5
-			 }
+		 ai_chance = { factor = 5 }
 		 name = "DH_EVENT_2038552_Option7"
 		 supplies = 25
 		 }
 	option = {
-		 ai_chance = {
-			 factor = 10
-			 }
+		 ai_chance = { factor = 10 }
 		 name = "DH_EVENT_2038552_Option8"
 		 supplies = 50
 		 }
 	option = {
-		 ai_chance = {
-			 factor = 20
-			 }
+		 ai_chance = { factor = 20 }
 		 name = "DH_EVENT_2038552_Option9"
 		 supplies = 200
 		 money = 20
 		 }
 	option = {
-		 ai_chance = {
-			 factor = 50
-			 }
+		 ai_chance = { factor = 50 }
 		 name = "DH_EVENT_2038552_Option10"
 		 supplies = 350
 		 money = 50
@@ -3233,20 +3158,14 @@
 	 
 	is_triggered_only = no
 	 
-	mean_time_to_happen = {
-		 days = 45
-		 }
+	mean_time_to_happen = { days = 45 }
 	trigger = {
 		 war = yes
-		 not = {
-			 supplies = 100
-			 }
-		 not = {
-			 total_ic = 5
-			 }
+		 not = { supplies = 100 }
+		 not = { total_ic = 5 }
 		 or = {
 			 and = {
-				 9604 = {#Ciudad_de_México
+				 9604 = {						#Ciudad_de_México
 					controlled_by = MEX
 					 }
 				 MXR = {
@@ -3254,7 +3173,7 @@
 					 }
 				 }
 			 and = {
-				 9604 = {#Ciudad_de_México
+				 9604 = {						#Ciudad_de_México
 					controlled_by = MXR
 					 }
 				 MXR = {
@@ -3262,37 +3181,26 @@
 					 }
 				 }
 			 }
+			 
 		 tag = MXR
 		 date = 1910.1.1
-		 not = {
-			 date = 1917.12.30
-			 }
+		 not = { date = 1917.12.30 }
 		 }
-	option = {
-		 ai_chance = {
-			 factor = 3
-			 }
+	option = { ai_chance = { factor = 3 }
 		 name = "DH_EVENT_2038553_Option7"
 		 supplies = 20
 		 }
-	option = {
-		 ai_chance = {
-			 factor = 10
-			 }
+	option = { ai_chance = { factor = 10 }
 		 name = "DH_EVENT_2038553_Option8"
 		 supplies = 40
 		 }
 	option = {
-		 ai_chance = {
-			 factor = 20
-			 }
+		 ai_chance = { factor = 20 }
 		 name = "DH_EVENT_2038553_Option9"
 		 supplies = 60
 		 }
 	option = {
-		 ai_chance = {
-			 factor = 35
-			 }
+		 ai_chance = { factor = 35 }
 		 name = "DH_EVENT_2038553_Option10"
 		 supplies = 100
 		 }
@@ -3310,9 +3218,7 @@
 	 
 	is_triggered_only = no
 	 
-	mean_time_to_happen = {
-		 days = 60
-		 }
+	mean_time_to_happen = { days = 60 }
 	trigger = {
 		 war = yes
 		 not = {
@@ -3325,30 +3231,22 @@
 			 }
 		 }
 	option = {
-		 ai_chance = {
-			 factor = 5
-			 }
+		 ai_chance = { factor = 5 }
 		 name = "DH_EVENT_2038554_Option7"
 		 manpower = 0.5
 		 }
 	option = {
-		 ai_chance = {
-			 factor = 10
-			 }
+		 ai_chance = { factor = 10 }
 		 name = "DH_EVENT_2038554_Option8"
 		 manpower = 1
 		 }
 	option = {
-		 ai_chance = {
-			 factor = 20
-			 }
+		 ai_chance = { factor = 20 }
 		 name = "DH_EVENT_2038554_Option9"
 		 manpower = 2
 		 }
 	option = {
-		 ai_chance = {
-			 factor = 50
-			 }
+		 ai_chance = { factor = 50 }
 		 name = "DH_EVENT_2038554_Option10"
 		 manpower = 5
 		 }
@@ -4065,14 +3963,6 @@
 		 neutrality = -5
 		 }
 	}
-
-	
-	
-
-
-
-
-
 
 
 #United States ask for full transit
