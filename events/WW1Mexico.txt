@@ -1,4 +1,19 @@
+
 ### CONSIDER GLOBAL FLAGS in some cases
+### Consider using 
+
+#occupied = { local_revolt_risk = 2 }			#2% revolt risk!
+
+#revolt_risk = {
+#	local_ic = -0.02
+#	local_manpower_modifier = -0.02
+#	local_resources = -0.02
+#}
+
+# local_revolt_risk         add a constant value to revolt_risk to a province. 
+# local_partisan_Support    add an increase of revolt_risk, so you can see it as Derivation in time of revolt_risk
+
+
 
 # Mexican 1910 Rigged Elections
 
@@ -27,7 +42,7 @@
 		ai_chance = { factor = 0 }
 		MEX = { set_country_flag = "diaz_rigged_election" }
 		MEX = { set_country_flag = "diaz_election_decided" }
-#		MEX = { country_event = 101005 }   # Trigger revolution sooner
+		MEX = { country_event = 101005 }   # Trigger revolution sooner
 		dissent = 8
 		national_unity = -5
 		}
@@ -52,13 +67,12 @@
 		
 	major = yes
 	
-	mean_time_to_happen = { days = 90 }
+	mean_time_to_happen = { days = 60 }
 		 
 	fire_only_once = yes
 	
 	trigger = {
 		tag = MEX
-#		date = 1910.9.07
 		MEX = { has_country_flag = "diaz_rigged_election" }
 		not = { MEX = { has_country_flag = "diaz_election_decided" } }
 		not = { USA = { has_country_flag = "diaz_crisis_over" } }
@@ -69,12 +83,13 @@
 		MEX = { set_country_flag = "diaz_election_decided" }
 		MEX = { dissent = 4 }
 		MEX = { national_unity = -5 }
-#		MEX = { country_event = 101005 }   			# Trigger revolution
+		MEX = { country_event = 101005 }   			# Trigger revolution
 		}
 	}	
 	
 	
 # Madero goes to USA and prepares for revolution
+# may want to delay this a month
 
  country_event = {
 	title = "EVT1910_101005_TITLE"
@@ -135,7 +150,7 @@
 			MXR = { supplies = 5000 }
 			9203 = { supplies = 10000 }        # Hermosillo
 			9327 = { supplies = 5000 }         # San Juanito
-			MXR = { officer_pool = 850 }
+			MXR = { officer_pool = 800 }
 			MXR = { money = 100 }
 			MXR = { energy = 600 }
 			MXR = { rare_materials = 50 }
@@ -239,8 +254,8 @@
 			MXR = { energy = 100 }
 			MXR = { rare_materials = 10 }
 			MXR = { metal = 10 }
-			MEX = { load_oob = MEX_1910_mexcity.txt }		   # Defence Militia for Mexico City 
-			MEX = { officer_pool = 40 }
+#			MEX = { load_oob = MEX_1910_mexcity.txt }		   # Defence Militia for Mexico City 
+#			MEX = { officer_pool = 40 }
 			MEX = { set_country_flag = zapata_revolt_diaz }
 		}			
 	}	
@@ -326,6 +341,7 @@
 	
 #   Fall of Mexico City to Madero
 ##  What other AI conditions will trigger another unexpected Mexican defeat event?????
+#   Another condition is Loss of Ciudad Juarez and 50% of cores?
 
  country_event = {
 	title = "EVT1910_101020_TITLE"
@@ -439,6 +455,22 @@
 		}
 	}	
 
+	
+### Consider using 
+
+#occupied = { local_revolt_risk = 2 }			#2% revolt risk!
+
+#revolt_risk = {
+#	local_ic = -0.02
+#	local_manpower_modifier = -0.02
+#	local_resources = -0.02
+#}
+
+# local_revolt_risk         add a constant value to revolt_risk to a province. 
+# local_partisan_Support    add an increase of revolt_risk, so you can see it as Derivation in time of revolt_risk
+	
+	
+	
 	
 # November 1911 Zapata rebels pop ups. 
 
@@ -587,13 +619,13 @@
 		ai_chance = { factor = 100 }
 		name = "EVT1910_101036_OPTA"
 		USA = { set_country_flag = "support_madero_coup" }
-		MXR = {	country_event = 101038 }        # Ten Tragic Days
+#		MXR = {	country_event = 101038 }        # Ten Tragic Days
 		}
 	option = {	
 		ai_chance = { factor = 0 }	
 		USA = { set_country_flag = "no_madero_coup" }
 		name = "EVT1910_101036_OPTB"			
-		MXR = {	country_event = 101040 }        # Ten Tragic Days
+#		MXR = {	country_event = 101040 }        # Ten Tragic Days
 		}
 	}
 
@@ -612,9 +644,16 @@
 	
 	fire_only_once = yes  
 
-	is_triggered_only = yes
+#	is_triggered_only = yes
 	
 	major = yes
+	
+	mean_time_to_happen = { days = 5 }
+
+	trigger = {
+		tag = MXR
+		USA = { has_country_flag = "support_madero_coup" }
+	}
 	
 	option = {										
 		name = "ACTION_NAME_DAMN"
@@ -639,9 +678,16 @@
 	
 	fire_only_once = yes 
 
-	is_triggered_only = yes	
+#	is_triggered_only = yes	
 	
 	major = yes
+	
+	mean_time_to_happen = { days = 5 }
+	
+	trigger = {
+		tag = MXR
+		USA = { has_country_flag = "no_madero_coup" }
+	}
 	
 	option = {										
 		name = "ACTION_NAME_DAMN"
@@ -681,6 +727,9 @@
 		name = "ACTION_NAME_DAMN"
 		# Kill Madero and VP
 		# Huerta takes power
+		USA = { clr_country_flag = "support_madero_coup" }
+		USA = { clr_country_flag = "no_madero_coup" }
+		MXR = { set_country_flag = "Ten_Tragic_Days" }
 		}
 	}
 	
@@ -710,16 +759,76 @@
 	option = {										
 		name = "ACTION_NAME_DAMN"
 		# Kill Huetra, Reyes & Diaz, Mondragon
+		USA = { clr_country_flag = "support_madero_coup" }
+		USA = { clr_country_flag = "no_madero_coup" }
+		MXR = { set_country_flag = "Ten_Tragic_Days" }
 		}
 	}
 
 	
-# Rebels rise up and DOW Huerta
+# Carranza Rebels rise up and DOW Madero/Huerta
+# may want to delay this a month
+
+ country_event = {
+	title = "EVT1910_101046_TITLE"
+	desc = "EVT1910_101046_DESC"
+	id = 101046
+	 
+	picture = "caranza_troops"
+	 
+	major = yes
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 30 }
+
+	trigger = {
+		tag = MXR
+		MXR = { has_country_flag = "Ten_Tragic_Days" }
+		}
+
+	option = {
+		name = "ACTION_NAME_FIGHT"
+			any_owned = {
+			limit = { is_core = MXR }
+			add_core = MXC }
+			MXR = { national_unity = -5 }
+			MXR = { dissent = 5 }
+			9268 = { secede_province = MXC }   # Chihuahua
+			9237 = { secede_province = MXC }   # Yecora
+			9298 = { secede_province = MXC }   # Uruachic
+			9203 = { secede_province = MXC }   # Hermosillo
+			9173 = { secede_province = MXC }   # Huepac
+			9236 = { secede_province = MXC }   # Guaymas
+			9327 = { secede_province = MXC }   # San Juanito
+			MXC = { load_oob = MXC_1913_carranza.txt }
+			MXC = { capital = 9268 }
+			MXC = { supplies = 5000 }
+			9203 = { supplies = 10000 }        # Hermosillo
+			9327 = { supplies = 5000 }         # San Juanito
+			MXC = { officer_pool = 800 }
+			MXC = { money = 100 }
+			MXC = { energy = 600 }
+			MXC = { rare_materials = 50 }
+			MXC = { metal = 50 }
+			MXC = { war = { target = MXR
+				attacker_goal = { casus_belli = mexico_revolution }
+				}
+			}
+			MXR = { set_country_flag = "carranza_revolt" }
+		}			
+	}
+
+
+# After his inauguration in March of that year, President Woodrow Wilson was informed of events in Mexico by a clandestine agent, 
+# reporter William Bayard Hale and was appalled by Henry Lane Wilson's assistance to the Huerta coup d'etat against Madero. 
+# The President supplanted him by sending as his personal envoy John Lind on 17 July, 1913 the President dismissed Ambassador Wilson.
 # After this was accomplished, however, Zapata reunited with Villa and the other revolutionaries
 # Orozco, however, sided with Huerta and Huerta made him one of his generals.
 # Venustiano Carranza, a politician and rancher from Coahuila, was at the forefront of opposition to Huerta, 
 # and organized his own rebel army, called the Constitutionalists, with the secret support of the United States
-#  Villa, Zapata, Carranza and Álvaro Obregón led the fight against Huerta
+# Villa, Zapata, Carranza and Álvaro Obregón led the fight against Huerta
+# Feliz Diaz sent to Japan as ambassador by Heurta
 ### Tampico & Vera Cruz effects
 # April 1914, U.S. opposition to Huerta had reached its peak when American forces seized and occupied the port of Veracruz, 
 # cutting off arms, supplies and money from Germany, which supported Huerta
