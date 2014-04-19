@@ -1,346 +1,121 @@
 
 diplomatic_decisions = {
- 2001506_decision = {#Seize_Thessaloniki?
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 4560 = {#Gelibolu
-			controlled_by = TUR
+	 2001506_decision = {#Seize_Thessaloniki?
+		ai_will_do = {
+			 factor = 1
 			 }
-		 ENG = {
-			 war_with = TUR
-			 }
-		 not = {
-			 GRE = {
-				 faction = allies
-				 }
-			 ENG = {
-				 war_with = GRE
-				 }
-			 }
-		 tag = ENG
-		 date = 1914.1.1
-		 not = {
-			 date = 1925.12.30
-			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2001506
-			 }
-		 not = {
-			 has_country_flag = decision_2001506
-			 }
-		 }
-	allow = {
-		 4720 = {#Salonica
-			controlled_by = GRE
-			 }
-		 }
-	effect = {
-		 country_event = 12 #Seize_Thessaloniki?
-		set_country_flag = decision_2001506
-		 }
-	}
-
-
-
- 2002507_decision = {#Ottoman_Empire_has_fallen
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 exists = GRE
-		 FRA = {
-			 war_with = AUH
-			 }
-		 not = {
-			 4503 = {#Istanbul
+		potential = {
+			 4560 = {#Gelibolu
 				controlled_by = TUR
 				 }
-			 }
-		 not = {
-			 GRE = {
-				 faction = allies
-				 }
-			 GRE = {
-				 faction = axis
-				 }
-			 FRA = {
+			 ENG = {
 				 war_with = TUR
 				 }
-			 }
-		 tag = FRA
-		 date = 1914.1.1
-		 not = {
-			 date = 1925.12.30
-			 }
-		 not = {
-			 has_country_flag = decision_2002507
-			 }
-		 }
-	allow = {
-		 2613 = {#Paris
-			controlled_by = THIS
-			 }
-		 }
-	effect = {
-		 country_event = 84 #Ottoman_Empire_has_fallen
-		set_country_flag = decision_2002507
-		 }
-	}
-
-
-
- 2002508_decision = {#Negotiate_with_Greece
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 exists = GRE
-		 FRA = {
-			 war_with = AUH
-			 }
-		 not = {
-			 GRE = {
-				 faction = allies
-				 }
-			 GRE = {
-				 faction = axis
-				 }
-			 }
-		 tag = FRA
-		 date = 1914.1.1
-		 not = {
-			 date = 1925.12.30
-			 }
-		 not = {
-			 has_country_flag = decision_2002508
-			 }
-		 }
-	allow = {
-		 and = {
-			 exists = SER
 			 not = {
-				 SER = {
-					 government_in_exile = yes
+				 GRE = {
+					 faction = allies
+					 }
+				 ENG = {
+					 war_with = GRE
 					 }
 				 }
-			 }
-		 relation = {
-			 who = GRE
-			 value = 60
-			 }
-		 2613 = {#Paris
-			controlled_by = THIS
-			 }
-		 }
-	effect = {
-		 country_event = 85 #Negotiate_with_Greece
-		set_country_flag = decision_2002508
-		 }
-	}
-
-
-
- 2002513_decision = {#Ask_Greece_for_demobilization
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 exists = GRE
-		 has_global_flag = 2019510_EVENT_DONE
-		 has_global_flag= greece_mobilized
-		 FRA = {
-			 war_with = AUH
-			 }
-		 not = {
-			 GRE = {
-				 faction = allies
+			 tag = ENG
+			 date = 1914.1.1
+			 not = {
+				 date = 1925.12.30
 				 }
-			 GRE = {
-				 faction = axis
+			 not = {
+				 has_global_flag = SLEEPEVENT_2001506
+				 }
+			 not = {
+				 has_country_flag = decision_2001506
 				 }
 			 }
-		 tag = FRA
-		 date = 1914.1.1
-		 not = {
-			 date = 1925.12.30
-			 }
-		 not = {
-			 has_country_flag = decision_2002513
-			 }
-		 }
-	allow = {
-		 }
-	effect = {
-		 country_event = 90 #Ask_Greece_for_demobilization
-		set_country_flag = decision_2002513
-		 }
-	}
-
-
-
- 2002521_decision = {#Athens_on_fire!
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 exists = GRE
-		 has_global_flag= entente_hostility
-		 FRA = {
-			 war_with = AUH
-			 }
-		 not = {
-			 GRE = {
-				 faction = allies
-				 }
-			 GRE = {
-				 faction = axis
+		allow = {
+			 4720 = {#Salonica
+				controlled_by = GRE
 				 }
 			 }
-		 tag = FRA
-		 date = 1914.1.1
-		 not = {
-			 date = 1925.12.30
+		effect = {
+			 country_event = 12 #Seize_Thessaloniki?
+			set_country_flag = decision_2001506
 			 }
-		 not = {
-			 has_country_flag = decision_2002521
-			 }
-		 }
-	allow = {
-		 }
-	effect = {
-		 country_event = 97 #Athens_on_fire!
-		set_country_flag = decision_2002521
-		 }
-	}
+		}
+	
 
-
-
- 2002522_decision = {#Renewed_call_for_demobilization
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 exists = GRE
-		 has_global_flag= entente_hostility
-		 has_global_flag= greece_mobilized
-		 has_global_flag = 2019518_EVENT_DONE
-		 FRA = {
-			 war_with = AUH
+	 2002507_decision = {#Ottoman_Empire_has_fallen
+		ai_will_do = {
+			 factor = 1
 			 }
-		 not = {
-			 GRE = {
-				 faction = allies
-				 }
-			 GRE = {
-				 faction = axis
-				 }
-			 }
-		 tag = FRA
-		 date = 1914.1.1
-		 not = {
-			 date = 1925.12.30
-			 }
-		 not = {
-			 has_country_flag = decision_2002522
-			 }
-		 }
-	allow = {
-		 }
-	effect = {
-		 country_event = 98 #Renewed_call_for_demobilization
-		set_country_flag = decision_2002522
-		 }
-	}
-
-
-
- 2002533_decision = {#Ultimatum_to_Greece
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 exists = GRE
-		 has_global_flag= entente_hostility
-		 has_global_flag= greece_mobilized
-		 has_global_flag = 2002523_EVENT_DONE
-		 FRA = {
-			 war_with = AUH
-			 }
-		 not = {
-			 GRE = {
-				 faction = allies
-				 }
-			 GRE = {
-				 faction = axis
-				 }
-			 }
-		 tag = FRA
-		 date = 1914.1.1
-		 not = {
-			 date = 1925.12.30
-			 }
-		 not = {
-			 has_country_flag = decision_2002533
-			 }
-		 }
-	allow = {
-		 }
-	effect = {
-		 country_event = 101 #Ultimatum_to_Greece
-		set_country_flag = decision_2002533
-		 }
-	}
-
-
-
- 2019509_decision = {#The_Gounaris_plan
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 not = {
-			 head_of_government = 13200008 #
-			has_global_flag= venizelos_incabinet
-			 has_global_flag = 2019506_EVENT_DONE
-			 GRE = {
-				 faction = allies
-				 }
-			 GRE = {
-				 faction = axis
-				 }
+		potential = {
+			 exists = GRE
 			 FRA = {
-				 war_with = GRE
+				 war_with = AUH
+				 }
+			 not = {
+				 4503 = {#Istanbul
+					controlled_by = TUR
+					 }
+				 }
+			 not = {
+				 GRE = {
+					 faction = allies
+					 }
+				 GRE = {
+					 faction = axis
+					 }
+				 FRA = {
+					 war_with = TUR
+					 }
+				 }
+			 tag = FRA
+			 date = 1914.1.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2002507
 				 }
 			 }
-		 tag = GRE
-		 date = 1915.1.1
-		 not = {
-			 date = 1925.12.30
+		allow = {
+			 2613 = {#Paris
+				controlled_by = THIS
+				 }
 			 }
-		 not = {
-			 has_country_flag = decision_2019509
+		effect = {
+			 country_event = 84 #Ottoman_Empire_has_fallen
+			set_country_flag = decision_2002507
 			 }
-		 }
-	allow = {
-		 has_global_flag = 2019505_EVENT_DONE
-		 }
-	effect = {
-		 country_event = 146 #The_Gounaris_plan
-		set_country_flag = decision_2019509
-		 }
-	}
+		}
+	
 
-
-
- 2191508_decision = {#The_Fall_of_Serbia
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 exists = BUL
-		 not = {
+	 2002508_decision = {#Negotiate_with_Greece
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 exists = GRE
+			 FRA = {
+				 war_with = AUH
+				 }
+			 not = {
+				 GRE = {
+					 faction = allies
+					 }
+				 GRE = {
+					 faction = axis
+					 }
+				 }
+			 tag = FRA
+			 date = 1914.1.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2002508
+				 }
+			 }
+		allow = {
 			 and = {
 				 exists = SER
 				 not = {
@@ -349,184 +124,398 @@ diplomatic_decisions = {
 						 }
 					 }
 				 }
-			 }
-		 GER = {
-			 war = yes
-			 }
-		 not = {
-			 BUL = {
-				 war_with = GER
+			 relation = {
+				 who = GRE
+				 value = 60
+				 }
+			 2613 = {#Paris
+				controlled_by = THIS
 				 }
 			 }
-		 not = {
-			 has_global_flag = 2002533_EVENT_DONE
+		effect = {
+			 country_event = 85 #Negotiate_with_Greece
+			set_country_flag = decision_2002508
 			 }
-		 tag = GER
-		 date = 1914.6.28
-		 not = {
-			 date = 1914.12.30
+		}
+	
+
+	 2002513_decision = {#Ask_Greece_for_demobilization
+		ai_will_do = {
+			 factor = 1
 			 }
-		 not = {
-			 has_country_flag = decision_2191508
-			 }
-		 }
-	allow = {
-		 not = {
-			 BUL = {
-				 faction = axis
+		potential = {
+			 exists = GRE
+			 has_global_flag = 2019510_EVENT_DONE
+			 has_global_flag= greece_mobilized
+			 FRA = {
+				 war_with = AUH
 				 }
-			 }
-		 not = {
-			 BUL = {
-				 faction = allies
-				 }
-			 }
-		 }
-	effect = {
-		 country_event = 413 #The_Fall_of_Serbia
-		set_country_flag = decision_2191508
-		 }
-	}
-
-
-
- 2191510_decision = {#Promises_to_Bulgaria
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 and = {
-			 exists = SER
 			 not = {
-				 SER = {
-					 government_in_exile = yes
+				 GRE = {
+					 faction = allies
+					 }
+				 GRE = {
+					 faction = axis
+					 }
+				 }
+			 tag = FRA
+			 date = 1914.1.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2002513
+				 }
+			 }
+		allow = {
+			 }
+		effect = {
+			 country_event = 90 #Ask_Greece_for_demobilization
+			set_country_flag = decision_2002513
+			 }
+		}
+	
+
+	 2002521_decision = {#Athens_on_fire!
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 exists = GRE
+			 has_global_flag= entente_hostility
+			 FRA = {
+				 war_with = AUH
+				 }
+			 not = {
+				 GRE = {
+					 faction = allies
+					 }
+				 GRE = {
+					 faction = axis
+					 }
+				 }
+			 tag = FRA
+			 date = 1914.1.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2002521
+				 }
+			 }
+		allow = {
+			 }
+		effect = {
+			 country_event = 97 #Athens_on_fire!
+			set_country_flag = decision_2002521
+			 }
+		}
+	
+
+	 2002522_decision = {#Renewed_call_for_demobilization
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 exists = GRE
+			 has_global_flag= entente_hostility
+			 has_global_flag= greece_mobilized
+			 has_global_flag = 2019518_EVENT_DONE
+			 FRA = {
+				 war_with = AUH
+				 }
+			 not = {
+				 GRE = {
+					 faction = allies
+					 }
+				 GRE = {
+					 faction = axis
+					 }
+				 }
+			 tag = FRA
+			 date = 1914.1.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2002522
+				 }
+			 }
+		allow = {
+			 }
+		effect = {
+			 country_event = 98 #Renewed_call_for_demobilization
+			set_country_flag = decision_2002522
+			 }
+		}
+	
+
+	 2002533_decision = {#Ultimatum_to_Greece
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 exists = GRE
+			 has_global_flag= entente_hostility
+			 has_global_flag= greece_mobilized
+			 has_global_flag = 2002523_EVENT_DONE
+			 FRA = {
+				 war_with = AUH
+				 }
+			 not = {
+				 GRE = {
+					 faction = allies
+					 }
+				 GRE = {
+					 faction = axis
+					 }
+				 }
+			 tag = FRA
+			 date = 1914.1.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2002533
+				 }
+			 }
+		allow = {
+			 }
+		effect = {
+			 country_event = 101 #Ultimatum_to_Greece
+			set_country_flag = decision_2002533
+			 }
+		}
+	
+
+	 2019509_decision = {#The_Gounaris_plan
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 not = {
+				 head_of_government = 13200008 #
+				has_global_flag= venizelos_incabinet
+				 has_global_flag = 2019506_EVENT_DONE
+				 GRE = {
+					 faction = allies
+					 }
+				 GRE = {
+					 faction = axis
+					 }
+				 FRA = {
+					 war_with = GRE
+					 }
+				 }
+			 tag = GRE
+			 date = 1915.1.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2019509
+				 }
+			 }
+		allow = {
+			 has_global_flag = 2019505_EVENT_DONE
+			 }
+		effect = {
+			 country_event = 146 #The_Gounaris_plan
+			set_country_flag = decision_2019509
+			 }
+		}
+	
+
+	 2191508_decision = {#The_Fall_of_Serbia
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 exists = BUL
+			 not = {
+				 and = {
+					 exists = SER
+					 not = {
+						 SER = {
+							 government_in_exile = yes
+							 }
+						 }
+					 }
+				 }
+			 GER = {
+				 war = yes
+				 }
+			 not = {
+				 BUL = {
+					 war_with = GER
+					 }
+				 }
+			 not = {
+				 has_global_flag = 2002533_EVENT_DONE
+				 }
+			 tag = GER
+			 date = 1914.6.28
+			 not = {
+				 date = 1914.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2191508
+				 }
+			 }
+		allow = {
+			 not = {
+				 BUL = {
+					 faction = axis
+					 }
+				 }
+			 not = {
+				 BUL = {
+					 faction = allies
 					 }
 				 }
 			 }
-		 exists = BUL
-		 not = {
-			 BUL = {
-				 faction = axis
+		effect = {
+			 country_event = 413 #The_Fall_of_Serbia
+			set_country_flag = decision_2191508
+			 }
+		}
+	
+
+	 2191510_decision = {#Promises_to_Bulgaria
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 and = {
+				 exists = SER
+				 not = {
+					 SER = {
+						 government_in_exile = yes
+						 }
+					 }
 				 }
-			 SER = {
-				 alliance_with = BUL
+			 exists = BUL
+			 not = {
+				 BUL = {
+					 faction = axis
+					 }
+				 SER = {
+					 alliance_with = BUL
+					 }
+				 AUH = {
+					 war_with = BUL
+					 }
 				 }
-			 AUH = {
-				 war_with = BUL
+			 tag = AUH
+			 date = 1914.11.12
+			 not = {
+				 date = 1914.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2191510
 				 }
 			 }
-		 tag = AUH
-		 date = 1914.11.12
-		 not = {
-			 date = 1914.12.30
-			 }
-		 not = {
-			 has_country_flag = decision_2191510
-			 }
-		 }
-	allow = {
-		 or = {
-			 TUR = {
-				 faction = axis
+		allow = {
+			 or = {
+				 TUR = {
+					 faction = axis
+					 }
 				 }
 			 }
-		 }
-	effect = {
-		 country_event = 415 #Promises_to_Bulgaria
-		set_country_flag = decision_2191510
-		 }
+		effect = {
+			 country_event = 415 #Promises_to_Bulgaria
+			set_country_flag = decision_2191510
+			 }
+		}
+	
+
+	 2192529_decision = {#Agreement_with_Bulgaria
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 exists = BUL
+			 war = yes
+			 not = {
+				 BUL = {
+					 faction = axis
+					 }
+				 BUL = {
+					 faction = allies
+					 }
+				 }
+			 tag = AUH
+			 date = 1915.2.1
+			 not = {
+				 date = 1915.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2192529
+				 }
+			 }
+		allow = {
+			 relation = {
+				 who = BUL
+				 value = 50
+				 }
+			 }
+		effect = {
+			 country_event = 479 #Agreement_with_Bulgaria
+			set_country_flag = decision_2192529
+			 }
+		}
+	
+
+	 2084503_decision = {#Evacuate_through_Albania?
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 exists = ALB
+			 THIS = {
+				 surrender_progress = 50
+				 }
+			 not = {
+				 SER = {
+					 controls = 4368 #Pristina
+					}
+				 }
+			 not = {
+				 SER = {
+					 controls = 3912 #Beograd
+					}
+				 }
+			 or = {
+				 SER = {
+					 controls = 4495 #Tetovo
+					}
+				 SER = {
+					 controls = 4609 #Gostivar
+					}
+				 }
+			 not = {
+				 SER = {
+					 war_with = ALB
+					 }
+				 SER = {
+					 alliance_with = ALB
+					 }
+				 }
+			 tag = SER
+			 date = 1914.1.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2084503
+				 }
+			 }
+		allow = {
+			 }
+		effect = {
+			 country_event = 368 #Evacuate_through_Albania?
+			set_country_flag = decision_2084503
+			 }
+		}
 	}
-
-
-
- 2192529_decision = {#Agreement_with_Bulgaria
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 exists = BUL
-		 war = yes
-		 not = {
-			 BUL = {
-				 faction = axis
-				 }
-			 BUL = {
-				 faction = allies
-				 }
-			 }
-		 tag = AUH
-		 date = 1915.2.1
-		 not = {
-			 date = 1915.12.30
-			 }
-		 not = {
-			 has_country_flag = decision_2192529
-			 }
-		 }
-	allow = {
-		 relation = {
-			 who = BUL
-			 value = 50
-			 }
-		 }
-	effect = {
-		 country_event = 479 #Agreement_with_Bulgaria
-		set_country_flag = decision_2192529
-		 }
-	}
-
-
-
- 2084503_decision = {#Evacuate_through_Albania?
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 exists = ALB
-		 THIS = {
-			 surrender_progress = 50
-			 }
-		 not = {
-			 SER = {
-				 controls = 4368 #Pristina
-				}
-			 }
-		 not = {
-			 SER = {
-				 controls = 3912 #Beograd
-				}
-			 }
-		 or = {
-			 SER = {
-				 controls = 4495 #Tetovo
-				}
-			 SER = {
-				 controls = 4609 #Gostivar
-				}
-			 }
-		 not = {
-			 SER = {
-				 war_with = ALB
-				 }
-			 SER = {
-				 alliance_with = ALB
-				 }
-			 }
-		 tag = SER
-		 date = 1914.1.1
-		 not = {
-			 date = 1925.12.30
-			 }
-		 not = {
-			 has_country_flag = decision_2084503
-			 }
-		 }
-	allow = {
-		 }
-	effect = {
-		 country_event = 368 #Evacuate_through_Albania?
-		set_country_flag = decision_2084503
-		 }
-	}
-}
 

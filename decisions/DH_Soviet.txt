@@ -1,363 +1,354 @@
 
 diplomatic_decisions = {
- 2193501_decision = {#Polish–Soviet_War
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 POL = {
-			 war = no
+	 2193501_decision = {#Polish–Soviet_War
+		ai_will_do = {
+			 factor = 1
 			 }
-		 not = {
+		potential = {
 			 POL = {
-				 is_subject = yes
+				 war = no
+				 }
+			 not = {
+				 POL = {
+					 is_subject = yes
+					 }
+				 }
+			 SOV = {
+				 war = yes
+				 }
+			 1928 = {#Warszawa
+				owned_by = POL
+				 }
+			 2509 = {#Lwów
+				owned_by = POL
+				 }
+			 1986 = {#Brzesc_Litewski
+				owned_by = POL
+				 }
+			 tag = POL
+			 date = 1916.1.1
+			 not = {
+				 date = 1930.1.1
+				 }
+			 not = {
+				 has_country_flag = decision_2193501
 				 }
 			 }
-		 SOV = {
-			 war = yes
-			 }
-		 1928 = {#Warszawa
-			owned_by = POL
-			 }
-		 2509 = {#Lwów
-			owned_by = POL
-			 }
-		 1986 = {#Brzesc_Litewski
-			owned_by = POL
-			 }
-		 tag = POL
-		 date = 1916.1.1
-		 not = {
-			 date = 1930.1.1
-			 }
-		 not = {
-			 has_country_flag = decision_2193501
-			 }
-		 }
-	allow = {
-		 not = {
-			 POL = {
+		allow = {
+			 not = {
+				 POL = {
+					 war = yes
+					 }
+				 }
+			 not = {
+				 POL = {
+					 is_subject = yes
+					 }
+				 }
+			 SOV = {
 				 war = yes
 				 }
 			 }
-		 not = {
-			 POL = {
-				 is_subject = yes
+		effect = {
+			 country_event = 302 #Polish–Soviet_War
+			set_country_flag = decision_2193501
+			 }
+		}
+	
+
+	 2007507_decision = {#War_communism_-_phase_one
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 has_global_flag = 2007505_EVENT_DONE
+			 tag = SOV
+			 date = 1915.1.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2007507
 				 }
 			 }
-		 SOV = {
-			 war = yes
+		allow = {
+			 not = {
+				 dissent = 10
+				 }
 			 }
-		 }
-	effect = {
-		 country_event = 302 #Polish–Soviet_War
-		set_country_flag = decision_2193501
-		 }
-	}
-
-
-
- 2007507_decision = {#War_communism_-_phase_one
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 has_global_flag = 2007505_EVENT_DONE
-		 tag = SOV
-		 date = 1915.1.1
-		 not = {
-			 date = 1925.12.30
+		effect = {
+			 country_event = 380 #War_communism_-_phase_one
+			set_country_flag = decision_2007507
 			 }
-		 not = {
-			 has_country_flag = decision_2007507
-			 }
-		 }
-	allow = {
-		 not = {
-			 dissent = 10
-			 }
-		 }
-	effect = {
-		 country_event = 380 #War_communism_-_phase_one
-		set_country_flag = decision_2007507
-		 }
-	}
-
-
-
- 2007508_decision = {#Prodrazvyorstka
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 has_global_flag = 2007506_EVENT_DONE
-		 tag = SOV
-		 date = 1916.1.1
-		 not = {
-			 date = 1925.12.30
-			 }
-		 not = {
-			 has_country_flag = decision_2007508
-			 }
-		 }
-	allow = {
-		 not = {
-			 dissent = 10
-			 }
-		 }
-	effect = {
-		 country_event = 381 #Prodrazvyorstka
-		set_country_flag = decision_2007508
-		 }
-	}
-
-
-
- 2007509_decision = {#War_communism_-_phase_two
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 has_global_flag = 2007506_EVENT_DONE
-		 tag = SOV
-		 date = 1917.1.1
-		 not = {
-			 date = 1925.12.30
-			 }
-		 not = {
-			 has_country_flag = decision_2007509
-			 }
-		 }
-	allow = {
-		 not = {
-			 dissent = 10
-			 }
-		 1409 = {#Moskva
-			controlled_by = THIS
-			 }
-		 699 = {#Sestroretsk
-			controlled_by = THIS
-			 }
-		 2857 = {#Tsaritsyn
-			controlled_by = THIS
-			 }
-		 1330 = {#Kazan
-			controlled_by = THIS
-			 }
-		 }
-	effect = {
-		 country_event = 382 #War_communism_-_phase_two
-		set_country_flag = decision_2007509
-		 }
-	}
-
-
-
- 2007510_decision = {#War_communism_-_phase_three
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 has_global_flag = 2007508_EVENT_DONE
-		 tag = SOV
-		 date = 1918.1.1
-		 not = {
-			 date = 1925.12.30
-			 }
-		 not = {
-			 has_country_flag = decision_2007510
-			 }
-		 }
-	allow = {
-		 not = {
-			 dissent = 10
-			 }
-		 1409 = {#Moskva
-			controlled_by = THIS
-			 }
-		 699 = {#Sestroretsk
-			controlled_by = THIS
-			 }
-		 2857 = {#Tsaritsyn
-			controlled_by = THIS
-			 }
-		 1330 = {#Kazan
-			controlled_by = THIS
-			 }
-		 }
-	effect = {
-		 country_event = 383 #War_communism_-_phase_three
-		set_country_flag = decision_2007510
-		 }
-	}
-
-
-
- 2007511_decision = {#New_Economy_Policy
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 has_global_flag = 2007509_EVENT_DONE
-		 has_global_flag = 2007516_EVENT_DONE
-		 head_of_government = 17100082 #
-		tag = SOV
-		 date = 1918.1.1
-		 not = {
-			 date = 1925.12.30
-			 }
-		 not = {
-			 has_country_flag = decision_2007511
-			 }
-		 }
-	allow = {
-		 head_of_government = 17100082 #
 		}
-	effect = {
-		 country_event = 384 #New_Economy_Policy
-		set_country_flag = decision_2007511
-		 }
-	}
+	
 
-
-
- 2007512_decision = {#Creation_of_the_Red_Army
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 has_global_flag = 2007501_EVENT_DONE
-		 tag = SOV
-		 date = 1915.1.1
-		 not = {
-			 date = 1925.12.30
+	 2007508_decision = {#Prodrazvyorstka
+		ai_will_do = {
+			 factor = 1
 			 }
-		 not = {
-			 has_country_flag = decision_2007512
+		potential = {
+			 has_global_flag = 2007506_EVENT_DONE
+			 tag = SOV
+			 date = 1916.1.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2007508
+				 }
 			 }
-		 }
-	allow = {
-		 money = 20
-		 supplies = 50
-		 has_global_flag = imperial_dissolution
-		 not = {
-			 dissent = 15
+		allow = {
+			 not = {
+				 dissent = 10
+				 }
 			 }
-		 }
-	effect = {
-		 country_event = 385 #Creation_of_the_Red_Army
-		set_country_flag = decision_2007512
-		 }
-	}
+		effect = {
+			 country_event = 381 #Prodrazvyorstka
+			set_country_flag = decision_2007508
+			 }
+		}
+	
 
-
-
- 2007513_decision = {#Order_N.228
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 has_global_flag = 2007511_EVENT_DONE
-		 tag = SOV
-		 date = 1915.1.1
-		 not = {
-			 date = 1925.12.30
+	 2007509_decision = {#War_communism_-_phase_two
+		ai_will_do = {
+			 factor = 1
 			 }
-		 not = {
-			 has_country_flag = decision_2007513
+		potential = {
+			 has_global_flag = 2007506_EVENT_DONE
+			 tag = SOV
+			 date = 1917.1.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2007509
+				 }
 			 }
-		 }
-	allow = {
-		 or = {
-			 minister_of_intelligence = 17100083 #
+		allow = {
+			 not = {
+				 dissent = 10
+				 }
+			 1409 = {#Moskva
+				controlled_by = THIS
+				 }
+			 699 = {#Sestroretsk
+				controlled_by = THIS
+				 }
+			 2857 = {#Tsaritsyn
+				controlled_by = THIS
+				 }
+			 1330 = {#Kazan
+				controlled_by = THIS
+				 }
+			 }
+		effect = {
+			 country_event = 382 #War_communism_-_phase_two
+			set_country_flag = decision_2007509
+			 }
+		}
+	
+
+	 2007510_decision = {#War_communism_-_phase_three
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 has_global_flag = 2007508_EVENT_DONE
+			 tag = SOV
+			 date = 1918.1.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2007510
+				 }
+			 }
+		allow = {
+			 not = {
+				 dissent = 10
+				 }
+			 1409 = {#Moskva
+				controlled_by = THIS
+				 }
+			 699 = {#Sestroretsk
+				controlled_by = THIS
+				 }
+			 2857 = {#Tsaritsyn
+				controlled_by = THIS
+				 }
+			 1330 = {#Kazan
+				controlled_by = THIS
+				 }
+			 }
+		effect = {
+			 country_event = 383 #War_communism_-_phase_three
+			set_country_flag = decision_2007510
+			 }
+		}
+	
+
+	 2007511_decision = {#New_Economy_Policy
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 has_global_flag = 2007509_EVENT_DONE
+			 has_global_flag = 2007516_EVENT_DONE
+			 head_of_government = 17100082 #
+			tag = SOV
+			 date = 1918.1.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2007511
+				 }
+			 }
+		allow = {
+			 head_of_government = 17100082 #
 			}
-		 not = {
-			 dissent = 15
+		effect = {
+			 country_event = 384 #New_Economy_Policy
+			set_country_flag = decision_2007511
 			 }
-		 }
-	effect = {
-		 country_event = 386 #Order_N.228
-		set_country_flag = decision_2007513
-		 }
+		}
+	
+
+	 2007512_decision = {#Creation_of_the_Red_Army
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 has_global_flag = 2007501_EVENT_DONE
+			 tag = SOV
+			 date = 1915.1.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2007512
+				 }
+			 }
+		allow = {
+			 money = 20
+			 supplies = 50
+			 has_global_flag = imperial_dissolution
+			 not = {
+				 dissent = 15
+				 }
+			 }
+		effect = {
+			 country_event = 385 #Creation_of_the_Red_Army
+			set_country_flag = decision_2007512
+			 }
+		}
+	
+
+	 2007513_decision = {#Order_N.228
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 has_global_flag = 2007511_EVENT_DONE
+			 tag = SOV
+			 date = 1915.1.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2007513
+				 }
+			 }
+		allow = {
+			 or = {
+				 minister_of_intelligence = 17100083 #
+				}
+			 not = {
+				 dissent = 15
+				 }
+			 }
+		effect = {
+			 country_event = 386 #Order_N.228
+			set_country_flag = decision_2007513
+			 }
+		}
+	
+
+	 2007514_decision = {#Mass_levy
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 has_global_flag = 2007512_EVENT_DONE
+			 tag = SOV
+			 date = 1915.1.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2007514
+				 }
+			 }
+		allow = {
+			 money = 20
+			 supplies = 50
+			 not = {
+				 dissent = 15
+				 }
+			 }
+		effect = {
+			 country_event = 387 #Mass_levy
+			set_country_flag = decision_2007514
+			 }
+		}
+	
+
+	 2007520_decision = {#Foundation_of_USSR
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 war = no
+			 tag = SOV
+			 date = 1915.1.1
+			 SOV = {
+				 has_country_flag = civrus
+				 }
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2007520
+				 }
+			 }
+		allow = {
+			 not = {
+				 exists = WHR
+				 }
+			 1409 = {#Moskva
+				controlled_by = THIS
+				 }
+			 699 = {#Sestroretsk
+				controlled_by = THIS
+				 }
+			 2857 = {#Tsaritsyn
+				controlled_by = THIS
+				 }
+			 1330 = {#Kazan
+				controlled_by = THIS
+				 }
+			 8528 = {#Omsk
+				controlled_by = THIS
+				 }
+			 4390 = {#Vladivostok
+				controlled_by = THIS
+				 }
+			 }
+		effect = {
+			 country_event = 393 #Foundation_of_USSR
+			set_country_flag = decision_2007520
+			 }
+		}
 	}
-
-
-
- 2007514_decision = {#Mass_levy
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 has_global_flag = 2007512_EVENT_DONE
-		 tag = SOV
-		 date = 1915.1.1
-		 not = {
-			 date = 1925.12.30
-			 }
-		 not = {
-			 has_country_flag = decision_2007514
-			 }
-		 }
-	allow = {
-		 money = 20
-		 supplies = 50
-		 not = {
-			 dissent = 15
-			 }
-		 }
-	effect = {
-		 country_event = 387 #Mass_levy
-		set_country_flag = decision_2007514
-		 }
-	}
-
-
-
- 2007520_decision = {#Foundation_of_USSR
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 war = no
-		 tag = SOV
-		 date = 1915.1.1
-		 SOV = {
-			 has_country_flag = civrus
-			 }
-		 not = {
-			 date = 1925.12.30
-			 }
-		 not = {
-			 has_country_flag = decision_2007520
-			 }
-		 }
-	allow = {
-		 not = {
-			 exists = WHR
-			 }
-		 1409 = {#Moskva
-			controlled_by = THIS
-			 }
-		 699 = {#Sestroretsk
-			controlled_by = THIS
-			 }
-		 2857 = {#Tsaritsyn
-			controlled_by = THIS
-			 }
-		 1330 = {#Kazan
-			controlled_by = THIS
-			 }
-		 8528 = {#Omsk
-			controlled_by = THIS
-			 }
-		 4390 = {#Vladivostok
-			controlled_by = THIS
-			 }
-		 }
-	effect = {
-		 country_event = 393 #Foundation_of_USSR
-		set_country_flag = decision_2007520
-		 }
-	}
-}
 

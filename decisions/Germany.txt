@@ -1,68 +1,67 @@
 
 diplomatic_decisions = {
- break_blockade = {#Break_the_UK_Blockade
-	ai_will_do = {
-		 factor = 0
-		 }
-	potential = {
-		 tag = GER
-		 GER = {
-			 war_with = ENG
+	 break_blockade = {#Break_the_UK_Blockade
+		ai_will_do = {
+			 factor = 0
 			 }
-		 ENG = {
-			 has_country_flag = North_Sea_War_Zone
-			 }
-		 NOT = {
+		potential = {
+			 tag = GER
 			 GER = {
-				 has_country_flag = break_blockade
+				 war_with = ENG
 				 }
-			 }
-		 }
-	allow = {
-		 ai = no
-		 }
-	effect = {
-		 GER = {
-			 set_country_flag = break_blockade
-			 }
-		 GER = {
-			 country_event = 100518 #Break_the_UK_Blockade
-			}
-		 }
-	}
-
-
-
- zeppelin_bombing = {#Start_the_Zeppelin_campaign
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 tag = GER
-		 GER = {
-			 war_with = ENG
-			 }
-		 NOT = {
-			 GER = {
-				 has_country_flag = Zeppelin_bombing
-				 }
-			 }
-		 }
-	allow = {
-		 not = {
 			 ENG = {
-				 strat_bomb_impact = 0.0
+				 has_country_flag = North_Sea_War_Zone
+				 }
+			 NOT = {
+				 GER = {
+					 has_country_flag = break_blockade
+					 }
 				 }
 			 }
-		 }
-	effect = {
-		 GER = {
-			 set_country_flag = Zeppelin_bombing
+		allow = {
+			 ai = no
 			 }
-		 GER = {
-			 country_event = 100510 #Commence_Zeppelin_campaign
-			}
-		 }
+		effect = {
+			 GER = {
+				 set_country_flag = break_blockade
+				 }
+			 GER = {
+				 country_event = 100518 #Break_the_UK_Blockade
+				}
+			 }
+		}
+	
+
+	 zeppelin_bombing = {#Start_the_Zeppelin_campaign
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = GER
+			 GER = {
+				 war_with = ENG
+				 }
+			 NOT = {
+				 GER = {
+					 has_country_flag = Zeppelin_bombing
+					 }
+				 }
+			 }
+		allow = {
+			 not = {
+				 ENG = {
+					 strat_bomb_impact = 0.0
+					 }
+				 }
+			 }
+		effect = {
+			 GER = {
+				 set_country_flag = Zeppelin_bombing
+				 }
+			 GER = {
+				 country_event = 100510 #Commence_Zeppelin_campaign
+				}
+			 }
+		}
 	}
-}
 

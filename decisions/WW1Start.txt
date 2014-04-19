@@ -1,54 +1,53 @@
 
 diplomatic_decisions = {
- SER_ult = {#Serbian_Ultimatium
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 tag = AUH
-		 exists = SER
-		 has_country_flag = murder_of_franz_ferdinand
-		 NOT = {
-			 has_country_flag = ser_ultamatium
+	 SER_ult = {#Serbian_Ultimatium
+		ai_will_do = {
+			 factor = 1
 			 }
-		 war = no
-		 }
-	allow = {
-		 war = no
-		 }
-	effect = {
-		 set_country_flag = ser_ultamatium
-		 SER = {
-			 country_event = 100148 #Austrian_Demands
-			}
-		 dissent = 2
-		 money = 100
-		 manpower = 30
-		 }
-	}
-
-
-
- vs_plan = {#Schlieffen_Plan
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 tag = GER
-		 has_country_flag = russia_mobilized
-		 NOT = {
-			 has_country_flag = vsplan
+		potential = {
+			 tag = AUH
+			 exists = SER
+			 has_country_flag = murder_of_franz_ferdinand
+			 NOT = {
+				 has_country_flag = ser_ultamatium
+				 }
+			 war = no
 			 }
-		 }
-	allow = {
-		 war = no
-		 }
-	effect = {
-		 set_country_flag = vsplan
-		 GER = {
-			 country_event = 100145 #Schlieffen_Plan
-			}
-		 }
+		allow = {
+			 war = no
+			 }
+		effect = {
+			 set_country_flag = ser_ultamatium
+			 SER = {
+				 country_event = 100148 #Austrian_Demands
+				}
+			 dissent = 2
+			 money = 100
+			 manpower = 30
+			 }
+		}
+	
+
+	 vs_plan = {#Schlieffen_Plan
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = GER
+			 has_country_flag = russia_mobilized
+			 NOT = {
+				 has_country_flag = vsplan
+				 }
+			 }
+		allow = {
+			 war = no
+			 }
+		effect = {
+			 set_country_flag = vsplan
+			 GER = {
+				 country_event = 100145 #Schlieffen_Plan
+				}
+			 }
+		}
 	}
-}
 

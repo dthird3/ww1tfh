@@ -1,229 +1,224 @@
 
 diplomatic_decisions = {
- 2001508_decision = {#Letters_with_Hussein_bin_Ali
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 TUR = {
-			 war_with = ENG
+	 2001508_decision = {#Letters_with_Hussein_bin_Ali
+		ai_will_do = {
+			 factor = 1
 			 }
-		 exists = HJZ
-		 not = {
-			 HJZ = {
+		potential = {
+			 TUR = {
+				 war_with = ENG
+				 }
+			 exists = HJZ
+			 not = {
+				 HJZ = {
+					 war_with = ENG
+					 }
+				 }
+			 tag = ENG
+			 date = 1916.1.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2001508
+				 }
+			 }
+		allow = {
+			 5564 = {#El'Arîsh
+				controlled_by = ENG
+				 }
+			 }
+		effect = {
+			 country_event = 14 #Letters_with_Hussein_bin_Ali
+			set_country_flag = decision_2001508
+			 }
+		}
+	
+
+	 2001509_decision = {#Promises_for_a_great_Arab_Empire
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 TUR = {
+				 war_with = ENG
+				 }
+			 exists = HJZ
+			 not = {
+				 HJZ = {
+					 war_with = ENG
+					 }
+				 }
+			 tag = ENG
+			 date = 1916.6.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2001509
+				 }
+			 }
+		allow = {
+			 5564 = {#El'Arîsh
+				controlled_by = ENG
+				 }
+			 }
+		effect = {
+			 country_event = 15 #Promises_for_a_great_Arab_Empire
+			set_country_flag = decision_2001509
+			 }
+		}
+	
+
+	 2001510_decision = {#Send_T.E._Lawrence
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 TUR = {
+				 war_with = ENG
+				 }
+			 TUR = {
+				 war_with = HJZ
+				 }
+			 not = {
+				 HJZ = {
+					 war_with = ENG
+					 }
+				 }
+			 tag = ENG
+			 date = 1917.1.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2001510
+				 }
+			 }
+		allow = {
+			 5564 = {#El'Arîsh
+				controlled_by = ENG
+				 }
+			 }
+		effect = {
+			 country_event = 16 #Send_T.E._Lawrence
+			set_country_flag = decision_2001510
+			 }
+		}
+	
+
+	 2001511_decision = {#Send_assistance_to_Hedjaz
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 TUR = {
+				 war_with = ENG
+				 }
+			 TUR = {
+				 war_with = HJZ
+				 }
+			 not = {
+				 HJZ = {
+					 war_with = ENG
+					 }
+				 }
+			 tag = ENG
+			 date = 1917.1.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2001511
+				 }
+			 }
+		allow = {
+			 5564 = {#El'Arîsh
+				controlled_by = ENG
+				 }
+			 not = {
+				 5647 = {#Al_'Aqabah
+					controlled_by = TUR
+					 }
+				 }
+			 supplies = 500
+			 }
+		effect = {
+			 country_event = 17 #Send_assistance_to_Hedjaz
+			set_country_flag = decision_2001511
+			 }
+		}
+	
+
+	 2001512_decision = {#Renewed_assistance_to_Hedjaz
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 has_global_flag = 2001511_EVENT_DONE
+			 TUR = {
+				 war_with = ENG
+				 }
+			 TUR = {
+				 war_with = HJZ
+				 }
+			 not = {
+				 HJZ = {
+					 war_with = ENG
+					 }
+				 }
+			 tag = ENG
+			 date = 1918.2.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2001512
+				 }
+			 }
+		allow = {
+			 5564 = {#El'Arîsh
+				controlled_by = ENG
+				 }
+			 not = {
+				 5647 = {#Al_'Aqabah
+					controlled_by = TUR
+					 }
+				 }
+			 supplies = 800
+			 }
+		effect = {
+			 country_event = 18 #Renewed_assistance_to_Hedjaz
+			set_country_flag = decision_2001512
+			 }
+		}
+	
+
+	 2233502_decision = {#The_Great_Arab_Revolt
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 war = no
+			 has_global_flag = 2233500_EVENT_DONE
+			 tag = HJZ
+			 date = 1916.6.1
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2233502
+				 }
+			 }
+		allow = {
+			 TUR = {
 				 war_with = ENG
 				 }
 			 }
-		 tag = ENG
-		 date = 1916.1.1
-		 not = {
-			 date = 1925.12.30
+		effect = {
+			 country_event = 488 #The_Great_Arab_Revolt
+			set_country_flag = decision_2233502
 			 }
-		 not = {
-			 has_country_flag = decision_2001508
-			 }
-		 }
-	allow = {
-		 5564 = {#El'Arîsh
-			controlled_by = ENG
-			 }
-		 }
-	effect = {
-		 country_event = 14 #Letters_with_Hussein_bin_Ali
-		set_country_flag = decision_2001508
-		 }
+		}
 	}
-
-
-
- 2001509_decision = {#Promises_for_a_great_Arab_Empire
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 TUR = {
-			 war_with = ENG
-			 }
-		 exists = HJZ
-		 not = {
-			 HJZ = {
-				 war_with = ENG
-				 }
-			 }
-		 tag = ENG
-		 date = 1916.6.1
-		 not = {
-			 date = 1925.12.30
-			 }
-		 not = {
-			 has_country_flag = decision_2001509
-			 }
-		 }
-	allow = {
-		 5564 = {#El'Arîsh
-			controlled_by = ENG
-			 }
-		 }
-	effect = {
-		 country_event = 15 #Promises_for_a_great_Arab_Empire
-		set_country_flag = decision_2001509
-		 }
-	}
-
-
-
- 2001510_decision = {#Send_T.E._Lawrence
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 TUR = {
-			 war_with = ENG
-			 }
-		 TUR = {
-			 war_with = HJZ
-			 }
-		 not = {
-			 HJZ = {
-				 war_with = ENG
-				 }
-			 }
-		 tag = ENG
-		 date = 1917.1.1
-		 not = {
-			 date = 1925.12.30
-			 }
-		 not = {
-			 has_country_flag = decision_2001510
-			 }
-		 }
-	allow = {
-		 5564 = {#El'Arîsh
-			controlled_by = ENG
-			 }
-		 }
-	effect = {
-		 country_event = 16 #Send_T.E._Lawrence
-		set_country_flag = decision_2001510
-		 }
-	}
-
-
-
- 2001511_decision = {#Send_assistance_to_Hedjaz
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 TUR = {
-			 war_with = ENG
-			 }
-		 TUR = {
-			 war_with = HJZ
-			 }
-		 not = {
-			 HJZ = {
-				 war_with = ENG
-				 }
-			 }
-		 tag = ENG
-		 date = 1917.1.1
-		 not = {
-			 date = 1925.12.30
-			 }
-		 not = {
-			 has_country_flag = decision_2001511
-			 }
-		 }
-	allow = {
-		 5564 = {#El'Arîsh
-			controlled_by = ENG
-			 }
-		 not = {
-			 5647 = {#Al_'Aqabah
-				controlled_by = TUR
-				 }
-			 }
-		 supplies = 500
-		 }
-	effect = {
-		 country_event = 17 #Send_assistance_to_Hedjaz
-		set_country_flag = decision_2001511
-		 }
-	}
-
-
-
- 2001512_decision = {#Renewed_assistance_to_Hedjaz
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 has_global_flag = 2001511_EVENT_DONE
-		 TUR = {
-			 war_with = ENG
-			 }
-		 TUR = {
-			 war_with = HJZ
-			 }
-		 not = {
-			 HJZ = {
-				 war_with = ENG
-				 }
-			 }
-		 tag = ENG
-		 date = 1918.2.1
-		 not = {
-			 date = 1925.12.30
-			 }
-		 not = {
-			 has_country_flag = decision_2001512
-			 }
-		 }
-	allow = {
-		 5564 = {#El'Arîsh
-			controlled_by = ENG
-			 }
-		 not = {
-			 5647 = {#Al_'Aqabah
-				controlled_by = TUR
-				 }
-			 }
-		 supplies = 800
-		 }
-	effect = {
-		 country_event = 18 #Renewed_assistance_to_Hedjaz
-		set_country_flag = decision_2001512
-		 }
-	}
-
-
-
- 2233502_decision = {#The_Great_Arab_Revolt
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 war = no
-		 has_global_flag = 2233500_EVENT_DONE
-		 tag = HJZ
-		 date = 1916.6.1
-		 not = {
-			 date = 1925.12.30
-			 }
-		 not = {
-			 has_country_flag = decision_2233502
-			 }
-		 }
-	allow = {
-		 TUR = {
-			 war_with = ENG
-			 }
-		 }
-	effect = {
-		 country_event = 488 #The_Great_Arab_Revolt
-		set_country_flag = decision_2233502
-		 }
-	}
-}
 
