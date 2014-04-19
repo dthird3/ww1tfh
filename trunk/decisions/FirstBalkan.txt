@@ -1,1091 +1,1082 @@
 
 diplomatic_decisions = {
- serb_alliance = {#Arrange_the_Balkan_League
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 tag = SER
-		 exists = TUR
-		 exists = MTN
-		 exists = BUL
-		 exists = GRE
-		 NOT = {
+	 serb_alliance = {#Arrange_the_Balkan_League
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = SER
+			 exists = TUR
+			 exists = MTN
+			 exists = BUL
+			 exists = GRE
+			 NOT = {
+				 SER = {
+					 has_country_flag = league_formed
+					 }
+				 }
+			 date = 1912.3.13
+			 }
+		allow = {
+			 war = no
+			 date = 1912.3.13
+			 }
+		effect = {
+			 SER = {
+				 country_event = 100117 #The_Balkan_League
+				}
+			 set_country_flag = league_formed
+			 manpower = 20
+			 }
+		}
+	
+
+	 first_balkan = {#Call_the_Balkan_League_to_War
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = SER
+			 exists = TUR
+			 exists = MTN
+			 exists = BUL
+			 exists = GRE
 			 SER = {
 				 has_country_flag = league_formed
 				 }
+			 NOT = {
+				 SER = {
+					 has_country_flag = first_balkan_war
+					 }
+				 }
+			 war = no
+			 date = 1912.10.8
 			 }
-		 date = 1912.3.13
-		 }
-	allow = {
-		 war = no
-		 date = 1912.3.13
-		 }
-	effect = {
-		 SER = {
-			 country_event = 100117 #The_Balkan_League
-			}
-		 set_country_flag = league_formed
-		 manpower = 20
-		 }
-	}
-
-
-
- first_balkan = {#Call_the_Balkan_League_to_War
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 tag = SER
-		 exists = TUR
-		 exists = MTN
-		 exists = BUL
-		 exists = GRE
-		 SER = {
-			 has_country_flag = league_formed
+		allow = {
+			 war = no
+			 date = 1912.10.8
 			 }
-		 NOT = {
+		effect = {
+			 SER = {
+				 country_event = 100122 #First_Balkan_War
+				}
+			 SER = {
+				 war = {
+					 target = TUR
+					 }
+				 }
+			 BUL = {
+				 war = {
+					 target = TUR
+					 }
+				 }
+			 MTN = {
+				 war = {
+					 target = TUR
+					 }
+				 }
+			 GRE = {
+				 war = {
+					 target = TUR
+					 }
+				 }
+			 SER = {
+				 manpower = 100
+				 }
+			 SER = {
+				 set_country_flag = first_balkan_war
+				 }
+			 MTN = {
+				 set_country_flag = first_balkan_war
+				 }
+			 GRE = {
+				 set_country_flag = first_balkan_war
+				 }
+			 BUL = {
+				 set_country_flag = first_balkan_war
+				 }
+			 }
+		}
+	
+
+	 first_balkan_peace_1 = {#Negotiate_Peace_on_Our_Terms
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = SER
+			 exists = TUR
+			 exists = MTN
+			 exists = BUL
+			 exists = GRE
+			 TUR = {
+				 war_with = SER
+				 }
 			 SER = {
 				 has_country_flag = first_balkan_war
 				 }
-			 }
-		 war = no
-		 date = 1912.10.8
-		 }
-	allow = {
-		 war = no
-		 date = 1912.10.8
-		 }
-	effect = {
-		 SER = {
-			 country_event = 100122 #First_Balkan_War
-			}
-		 SER = {
-			 war = {
-				 target = TUR
-				 }
-			 }
-		 BUL = {
-			 war = {
-				 target = TUR
-				 }
-			 }
-		 MTN = {
-			 war = {
-				 target = TUR
-				 }
-			 }
-		 GRE = {
-			 war = {
-				 target = TUR
-				 }
-			 }
-		 SER = {
-			 manpower = 100
-			 }
-		 SER = {
-			 set_country_flag = first_balkan_war
-			 }
-		 MTN = {
-			 set_country_flag = first_balkan_war
-			 }
-		 GRE = {
-			 set_country_flag = first_balkan_war
-			 }
-		 BUL = {
-			 set_country_flag = first_balkan_war
-			 }
-		 }
-	}
-
-
-
- first_balkan_peace_1 = {#Negotiate_Peace_on_Our_Terms
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 tag = SER
-		 exists = TUR
-		 exists = MTN
-		 exists = BUL
-		 exists = GRE
-		 TUR = {
-			 war_with = SER
-			 }
-		 SER = {
-			 has_country_flag = first_balkan_war
-			 }
-		 NOT = {
-			 SER = {
-				 has_country_flag = first_balkan_done
-				 }
-			 }
-		 NOT = {
-			 SER = {
-				 has_country_flag = first_balkan_surrender
-				 }
-			 }
-		 NOT = {
-			 GRE = {
-				 has_country_flag = first_balkan_surrender
-				 }
-			 }
-		 NOT = {
-			 MTN = {
-				 has_country_flag = first_balkan_surrender
-				 }
-			 }
-		 NOT = {
-			 BUL = {
-				 has_country_flag = first_balkan_surrender
-				 }
-			 }
-		 }
-	allow = {
-		 OR = {
-			 4248 = {#Burgas
-				controlled_by = ALB
-				 }
-			 4248 = {#Burgas
-				controlled_by = SER
-				 }
-			 4248 = {#Burgas
-				controlled_by = MTN
-				 }
-			 4248 = {#Burgas
-				controlled_by = GRE
-				 }
-			 4248 = {#Burgas
-				controlled_by = BUL
-				 }
-			 4614 = {#Thasos
-				controlled_by = ALB
-				 }
-			 4614 = {#Thasos
-				controlled_by = SER
-				 }
-			 4614 = {#Thasos
-				controlled_by = MTN
-				 }
-			 4614 = {#Thasos
-				controlled_by = GRE
-				 }
-			 4614 = {#Thasos
-				controlled_by = BUL
-				 }
-			 4436 = {#Edirne
-				controlled_by = ALB
-				 }
-			 4436 = {#Edirne
-				controlled_by = SER
-				 }
-			 4436 = {#Edirne
-				controlled_by = MTN
-				 }
-			 4436 = {#Edirne
-				controlled_by = GRE
-				 }
-			 4436 = {#Edirne
-				controlled_by = BUL
-				 }
-			 4374 = {#Kirklareli
-				controlled_by = ALB
-				 }
-			 4374 = {#Kirklareli
-				controlled_by = SER
-				 }
-			 4374 = {#Kirklareli
-				controlled_by = MTN
-				 }
-			 4374 = {#Kirklareli
-				controlled_by = GRE
-				 }
-			 4374 = {#Kirklareli
-				controlled_by = BUL
-				 }
-			 }
-		 OR = {
-			 4555 = {#Skopje
-				controlled_by = ALB
-				 }
-			 4555 = {#Skopje
-				controlled_by = SER
-				 }
-			 4555 = {#Skopje
-				controlled_by = MTN
-				 }
-			 4555 = {#Skopje
-				controlled_by = GRE
-				 }
-			 4555 = {#Skopje
-				controlled_by = BUL
-				 }
-			 }
-		 OR = {
-			 4720 = {#Salonica
-				controlled_by = ALB
-				 }
-			 4720 = {#Salonica
-				controlled_by = SER
-				 }
-			 4720 = {#Salonica
-				controlled_by = MTN
-				 }
-			 4720 = {#Salonica
-				controlled_by = GRE
-				 }
-			 4720 = {#Salonica
-				controlled_by = BUL
-				 }
-			 }
-		 }
-	effect = {
-		 SER = {
-			 country_event = 100125 #Treaty_of_London
-			}
-		 SER = {
-			 end_war = TUR
-			 }
-		 BUL = {
-			 end_war = TUR
-			 }
-		 MTN = {
-			 end_war = TUR
-			 }
-		 GRE = {
-			 end_war = TUR
-			 }
-		 SER = {
-			 set_country_flag = first_balkan_done
-			 }
-		 BUL = {
-			 set_country_flag = first_balkan_done
-			 }
-		 GRE = {
-			 set_country_flag = first_balkan_done
-			 }
-		 MTN = {
-			 set_country_flag = first_balkan_done
-			 }
-		 }
-	}
-
-
-
- first_balkan_bul = {#Make_Separate_Peace
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 tag = BUL
-		 exists = TUR
-		 TUR = {
-			 war_with = BUL
-			 }
-		 BUL = {
-			 has_country_flag = first_balkan_war
-			 }
-		 NOT = {
-			 SER = {
-				 has_country_flag = first_balkan_done
-				 }
-			 }
-		 NOT = {
-			 BUL = {
-				 has_country_flag = first_balkan_surrender
-				 }
-			 }
-		 }
-	allow = {
-		 OR = {
-			 4371 = {#Sofiya
-				controlled_by = TUR
-				 }
-			 AND = {
-				 4435 = {#Plovdiv
-					controlled_by = TUR
-					 }
-				 4123 = {#Varna
-					controlled_by = TUR
-					 }
-				 OR = {
-					 4498 = {#Blagoevgrad
-						controlled_by = TUR
-						 }
-					 4434 = {#Stanke_Dimitrov
-						controlled_by = TUR
-						 }
-					 4372 = {#Pazardzhik
-						controlled_by = TUR
-						 }
-					 4311 = {#Sopot
-						controlled_by = TUR
-						 }
-					 4181 = {#Vratsa
-						controlled_by = TUR
-						 }
-					 4310 = {#Berkovica
-						controlled_by = TUR
-						 }
-					 4433 = {#Pernik
-						controlled_by = TUR
-						 }
+			 NOT = {
+				 SER = {
+					 has_country_flag = first_balkan_done
 					 }
 				 }
-			 }
-		 }
-	effect = {
-		 SER = {
-			 country_event = 100314 #Bulgaria_has_Capitulated!
-			}
-		 GRE = {
-			 country_event = 100314 #Bulgaria_has_Capitulated!
-			}
-		 MTN = {
-			 country_event = 100314 #Bulgaria_has_Capitulated!
-			}
-		 BUL = {
-			 end_war = TUR
-			 }
-		 BUL = {
-			 leave_alliance = SER
-			 }
-		 BUL = {
-			 set_country_flag = first_balkan_surrender
-			 }
-		 }
-	}
-
-
-
- first_balkan_mtn = {#Make_Separate_Peace
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 tag = MTN
-		 exists = TUR
-		 TUR = {
-			 war_with = MTN
-			 }
-		 MTN = {
-			 has_country_flag = first_balkan_war
-			 }
-		 NOT = {
-			 SER = {
-				 has_country_flag = first_balkan_done
+			 NOT = {
+				 SER = {
+					 has_country_flag = first_balkan_surrender
+					 }
 				 }
-			 }
-		 NOT = {
-			 MTN = {
-				 has_country_flag = first_balkan_surrender
-				 }
-			 }
-		 }
-	allow = {
-		 OR = {
-			 4305 = {#Niksic
-				controlled_by = TUR
-				 }
-			 4493 = {#Cetinje
-				controlled_by = TUR
-				 }
-			 }
-		 }
-	effect = {
-		 SER = {
-			 country_event = 100324 #Montenegro_has_Capitulated!
-			}
-		 GRE = {
-			 country_event = 100324 #Montenegro_has_Capitulated!
-			}
-		 BUL = {
-			 country_event = 100324 #Montenegro_has_Capitulated!
-			}
-		 MTN = {
-			 end_war = TUR
-			 }
-		 MTN = {
-			 leave_alliance = SER
-			 }
-		 MTN = {
-			 set_country_flag = first_balkan_surrender
-			 }
-		 }
-	}
-
-
-
- first_balkan_gre = {#Make_Separate_Peace
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 tag = GRE
-		 exists = TUR
-		 TUR = {
-			 war_with = GRE
-			 }
-		 GRE = {
-			 has_country_flag = first_balkan_war
-			 }
-		 NOT = {
-			 SER = {
-				 has_country_flag = first_balkan_done
-				 }
-			 }
-		 NOT = {
-			 GRE = {
-				 has_country_flag = first_balkan_surrender
-				 }
-			 }
-		 }
-	allow = {
-		 OR = {
-			 5041 = {#Amfissa
-				controlled_by = TUR
-				 }
-			 5077 = {#Chalkida
-				controlled_by = TUR
-				 }
-			 5137 = {#Nafplio
-				controlled_by = TUR
-				 }
-			 }
-		 }
-	effect = {
-		 SER = {
-			 country_event = 100334 #Greece_has_Capitulated!
-			}
-		 MTN = {
-			 country_event = 100334 #Greece_has_Capitulated!
-			}
-		 BUL = {
-			 country_event = 100334 #Greece_has_Capitulated!
-			}
-		 GRE = {
-			 end_war = TUR
-			 }
-		 GRE = {
-			 leave_alliance = SER
-			 }
-		 GRE = {
-			 set_country_flag = first_balkan_surrender
-			 }
-		 }
-	}
-
-
-
- first_balkan_ser = {#Make_Peace
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 tag = SER
-		 exists = TUR
-		 TUR = {
-			 war_with = SER
-			 }
-		 SER = {
-			 has_country_flag = first_balkan_war
-			 }
-		 NOT = {
-			 SER = {
-				 has_country_flag = first_balkan_done
-				 }
-			 }
-		 NOT = {
-			 SER = {
-				 has_country_flag = first_balkan_surrender
-				 }
-			 }
-		 }
-	allow = {
-		 OR = {
-			 4050 = {#Valjevo
-				controlled_by = TUR
-				 }
-			 4116 = {#Pozega
-				controlled_by = TUR
-				 }
-			 4051 = {#Arandelovac
-				controlled_by = TUR
-				 }
-			 3983 = {#Panavo
-				controlled_by = TUR
-				 }
-			 AND = {
+			 NOT = {
 				 GRE = {
 					 has_country_flag = first_balkan_surrender
 					 }
+				 }
+			 NOT = {
 				 MTN = {
 					 has_country_flag = first_balkan_surrender
 					 }
 				 }
-			 AND = {
-				 GRE = {
-					 has_country_flag = first_balkan_surrender
-					 }
+			 NOT = {
 				 BUL = {
 					 has_country_flag = first_balkan_surrender
 					 }
 				 }
-			 AND = {
+			 }
+		allow = {
+			 OR = {
+				 4248 = {#Burgas
+					controlled_by = ALB
+					 }
+				 4248 = {#Burgas
+					controlled_by = SER
+					 }
+				 4248 = {#Burgas
+					controlled_by = MTN
+					 }
+				 4248 = {#Burgas
+					controlled_by = GRE
+					 }
+				 4248 = {#Burgas
+					controlled_by = BUL
+					 }
+				 4614 = {#Thasos
+					controlled_by = ALB
+					 }
+				 4614 = {#Thasos
+					controlled_by = SER
+					 }
+				 4614 = {#Thasos
+					controlled_by = MTN
+					 }
+				 4614 = {#Thasos
+					controlled_by = GRE
+					 }
+				 4614 = {#Thasos
+					controlled_by = BUL
+					 }
+				 4436 = {#Edirne
+					controlled_by = ALB
+					 }
+				 4436 = {#Edirne
+					controlled_by = SER
+					 }
+				 4436 = {#Edirne
+					controlled_by = MTN
+					 }
+				 4436 = {#Edirne
+					controlled_by = GRE
+					 }
+				 4436 = {#Edirne
+					controlled_by = BUL
+					 }
+				 4374 = {#Kirklareli
+					controlled_by = ALB
+					 }
+				 4374 = {#Kirklareli
+					controlled_by = SER
+					 }
+				 4374 = {#Kirklareli
+					controlled_by = MTN
+					 }
+				 4374 = {#Kirklareli
+					controlled_by = GRE
+					 }
+				 4374 = {#Kirklareli
+					controlled_by = BUL
+					 }
+				 }
+			 OR = {
+				 4555 = {#Skopje
+					controlled_by = ALB
+					 }
+				 4555 = {#Skopje
+					controlled_by = SER
+					 }
+				 4555 = {#Skopje
+					controlled_by = MTN
+					 }
+				 4555 = {#Skopje
+					controlled_by = GRE
+					 }
+				 4555 = {#Skopje
+					controlled_by = BUL
+					 }
+				 }
+			 OR = {
+				 4720 = {#Salonica
+					controlled_by = ALB
+					 }
+				 4720 = {#Salonica
+					controlled_by = SER
+					 }
+				 4720 = {#Salonica
+					controlled_by = MTN
+					 }
+				 4720 = {#Salonica
+					controlled_by = GRE
+					 }
+				 4720 = {#Salonica
+					controlled_by = BUL
+					 }
+				 }
+			 }
+		effect = {
+			 SER = {
+				 country_event = 100125 #Treaty_of_London
+				}
+			 SER = {
+				 end_war = TUR
+				 }
+			 BUL = {
+				 end_war = TUR
+				 }
+			 MTN = {
+				 end_war = TUR
+				 }
+			 GRE = {
+				 end_war = TUR
+				 }
+			 SER = {
+				 set_country_flag = first_balkan_done
+				 }
+			 BUL = {
+				 set_country_flag = first_balkan_done
+				 }
+			 GRE = {
+				 set_country_flag = first_balkan_done
+				 }
+			 MTN = {
+				 set_country_flag = first_balkan_done
+				 }
+			 }
+		}
+	
+
+	 first_balkan_bul = {#Make_Separate_Peace
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = BUL
+			 exists = TUR
+			 TUR = {
+				 war_with = BUL
+				 }
+			 BUL = {
+				 has_country_flag = first_balkan_war
+				 }
+			 NOT = {
+				 SER = {
+					 has_country_flag = first_balkan_done
+					 }
+				 }
+			 NOT = {
 				 BUL = {
 					 has_country_flag = first_balkan_surrender
 					 }
+				 }
+			 }
+		allow = {
+			 OR = {
+				 4371 = {#Sofiya
+					controlled_by = TUR
+					 }
+				 AND = {
+					 4435 = {#Plovdiv
+						controlled_by = TUR
+						 }
+					 4123 = {#Varna
+						controlled_by = TUR
+						 }
+					 OR = {
+						 4498 = {#Blagoevgrad
+							controlled_by = TUR
+							 }
+						 4434 = {#Stanke_Dimitrov
+							controlled_by = TUR
+							 }
+						 4372 = {#Pazardzhik
+							controlled_by = TUR
+							 }
+						 4311 = {#Sopot
+							controlled_by = TUR
+							 }
+						 4181 = {#Vratsa
+							controlled_by = TUR
+							 }
+						 4310 = {#Berkovica
+							controlled_by = TUR
+							 }
+						 4433 = {#Pernik
+							controlled_by = TUR
+							 }
+						 }
+					 }
+				 }
+			 }
+		effect = {
+			 SER = {
+				 country_event = 100314 #Bulgaria_has_Capitulated!
+				}
+			 GRE = {
+				 country_event = 100314 #Bulgaria_has_Capitulated!
+				}
+			 MTN = {
+				 country_event = 100314 #Bulgaria_has_Capitulated!
+				}
+			 BUL = {
+				 end_war = TUR
+				 }
+			 BUL = {
+				 leave_alliance = SER
+				 }
+			 BUL = {
+				 set_country_flag = first_balkan_surrender
+				 }
+			 }
+		}
+	
+
+	 first_balkan_mtn = {#Make_Separate_Peace
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = MTN
+			 exists = TUR
+			 TUR = {
+				 war_with = MTN
+				 }
+			 MTN = {
+				 has_country_flag = first_balkan_war
+				 }
+			 NOT = {
+				 SER = {
+					 has_country_flag = first_balkan_done
+					 }
+				 }
+			 NOT = {
 				 MTN = {
 					 has_country_flag = first_balkan_surrender
 					 }
 				 }
-			 date = 1913.1.31
 			 }
-		 }
-	effect = {
-		 SER = {
-			 country_event = 100340 #Treaty_of_London
-			}
-		 SER = {
-			 end_war = TUR
-			 }
-		 MTN = {
-			 end_war = TUR
-			 }
-		 GRE = {
-			 end_war = TUR
-			 }
-		 BUL = {
-			 end_war = TUR
-			 }
-		 GRE = {
-			 leave_alliance = SER
-			 }
-		 BUL = {
-			 leave_alliance = SER
-			 }
-		 MTN = {
-			 leave_alliance = SER
-			 }
-		 SER = {
-			 set_country_flag = first_balkan_surrender
-			 }
-		 MTN = {
-			 set_country_flag = first_balkan_surrender
-			 }
-		 GRE = {
-			 set_country_flag = first_balkan_surrender
-			 }
-		 BUL = {
-			 set_country_flag = first_balkan_surrender
-			 }
-		 SER = {
-			 set_country_flag = first_balkan_done
-			 }
-		 }
-	}
-
-
-
- first_balkan_peace_bul = {#Negotiate_Peace_on_Our_Terms
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 tag = SER
-		 exists = TUR
-		 exists = MTN
-		 exists = GRE
-		 TUR = {
-			 war_with = SER
-			 }
-		 BUL = {
-			 has_country_flag = first_balkan_war
-			 }
-		 NOT = {
-			 SER = {
-				 has_country_flag = first_balkan_done
+		allow = {
+			 OR = {
+				 4305 = {#Niksic
+					controlled_by = TUR
+					 }
+				 4493 = {#Cetinje
+					controlled_by = TUR
+					 }
 				 }
 			 }
-		 NOT = {
+		effect = {
 			 SER = {
-				 has_country_flag = first_balkan_surrender
-				 }
-			 }
-		 NOT = {
+				 country_event = 100324 #Montenegro_has_Capitulated!
+				}
 			 GRE = {
-				 has_country_flag = first_balkan_surrender
-				 }
-			 }
-		 NOT = {
+				 country_event = 100324 #Montenegro_has_Capitulated!
+				}
+			 BUL = {
+				 country_event = 100324 #Montenegro_has_Capitulated!
+				}
 			 MTN = {
-				 has_country_flag = first_balkan_surrender
+				 end_war = TUR
+				 }
+			 MTN = {
+				 leave_alliance = SER
+				 }
+			 MTN = {
+				 set_country_flag = first_balkan_surrender
 				 }
 			 }
-		 BUL = {
-			 has_country_flag = first_balkan_surrender
-			 }
-		 }
-	allow = {
-		 OR = {
-			 4248 = {#Burgas
-				controlled_by = ALB
-				 }
-			 4248 = {#Burgas
-				controlled_by = SER
-				 }
-			 4248 = {#Burgas
-				controlled_by = MTN
-				 }
-			 4248 = {#Burgas
-				controlled_by = GRE
-				 }
-			 4248 = {#Burgas
-				controlled_by = BUL
-				 }
-			 4614 = {#Thasos
-				controlled_by = ALB
-				 }
-			 4614 = {#Thasos
-				controlled_by = SER
-				 }
-			 4614 = {#Thasos
-				controlled_by = MTN
-				 }
-			 4614 = {#Thasos
-				controlled_by = GRE
-				 }
-			 4614 = {#Thasos
-				controlled_by = BUL
-				 }
-			 4436 = {#Edirne
-				controlled_by = ALB
-				 }
-			 4436 = {#Edirne
-				controlled_by = SER
-				 }
-			 4436 = {#Edirne
-				controlled_by = MTN
-				 }
-			 4436 = {#Edirne
-				controlled_by = GRE
-				 }
-			 4436 = {#Edirne
-				controlled_by = BUL
-				 }
-			 4374 = {#Kirklareli
-				controlled_by = ALB
-				 }
-			 4374 = {#Kirklareli
-				controlled_by = SER
-				 }
-			 4374 = {#Kirklareli
-				controlled_by = MTN
-				 }
-			 4374 = {#Kirklareli
-				controlled_by = GRE
-				 }
-			 4374 = {#Kirklareli
-				controlled_by = BUL
-				 }
-			 }
-		 OR = {
-			 4555 = {#Skopje
-				controlled_by = ALB
-				 }
-			 4555 = {#Skopje
-				controlled_by = SER
-				 }
-			 4555 = {#Skopje
-				controlled_by = MTN
-				 }
-			 4555 = {#Skopje
-				controlled_by = GRE
-				 }
-			 4555 = {#Skopje
-				controlled_by = BUL
-				 }
-			 }
-		 OR = {
-			 4720 = {#Salonica
-				controlled_by = ALB
-				 }
-			 4720 = {#Salonica
-				controlled_by = SER
-				 }
-			 4720 = {#Salonica
-				controlled_by = MTN
-				 }
-			 4720 = {#Salonica
-				controlled_by = GRE
-				 }
-			 4720 = {#Salonica
-				controlled_by = BUL
-				 }
-			 }
-		 }
-	effect = {
-		 SER = {
-			 country_event = 100310 #Treaty_of_London
-			}
-		 SER = {
-			 end_war = TUR
-			 }
-		 BUL = {
-			 end_war = TUR
-			 }
-		 MTN = {
-			 end_war = TUR
-			 }
-		 GRE = {
-			 end_war = TUR
-			 }
-		 SER = {
-			 set_country_flag = first_balkan_done
-			 }
-		 GRE = {
-			 set_country_flag = first_balkan_done
-			 }
-		 MTN = {
-			 set_country_flag = first_balkan_done
-			 }
-		 }
-	}
+		}
+	
 
-
-
- first_balkan_peace_mtn = {#Negotiate_Peace_on_Our_Terms
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 tag = SER
-		 exists = TUR
-		 exists = BUL
-		 exists = GRE
-		 TUR = {
-			 war_with = SER
+	 first_balkan_gre = {#Make_Separate_Peace
+		ai_will_do = {
+			 factor = 1
 			 }
-		 BUL = {
-			 has_country_flag = first_balkan_war
-			 }
-		 NOT = {
-			 SER = {
-				 has_country_flag = first_balkan_done
+		potential = {
+			 tag = GRE
+			 exists = TUR
+			 TUR = {
+				 war_with = GRE
 				 }
-			 }
-		 NOT = {
-			 SER = {
-				 has_country_flag = first_balkan_surrender
-				 }
-			 }
-		 NOT = {
 			 GRE = {
-				 has_country_flag = first_balkan_surrender
+				 has_country_flag = first_balkan_war
+				 }
+			 NOT = {
+				 SER = {
+					 has_country_flag = first_balkan_done
+					 }
+				 }
+			 NOT = {
+				 GRE = {
+					 has_country_flag = first_balkan_surrender
+					 }
 				 }
 			 }
-		 NOT = {
+		allow = {
+			 OR = {
+				 5041 = {#Amfissa
+					controlled_by = TUR
+					 }
+				 5077 = {#Chalkida
+					controlled_by = TUR
+					 }
+				 5137 = {#Nafplio
+					controlled_by = TUR
+					 }
+				 }
+			 }
+		effect = {
+			 SER = {
+				 country_event = 100334 #Greece_has_Capitulated!
+				}
+			 MTN = {
+				 country_event = 100334 #Greece_has_Capitulated!
+				}
+			 BUL = {
+				 country_event = 100334 #Greece_has_Capitulated!
+				}
+			 GRE = {
+				 end_war = TUR
+				 }
+			 GRE = {
+				 leave_alliance = SER
+				 }
+			 GRE = {
+				 set_country_flag = first_balkan_surrender
+				 }
+			 }
+		}
+	
+
+	 first_balkan_ser = {#Make_Peace
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = SER
+			 exists = TUR
+			 TUR = {
+				 war_with = SER
+				 }
+			 SER = {
+				 has_country_flag = first_balkan_war
+				 }
+			 NOT = {
+				 SER = {
+					 has_country_flag = first_balkan_done
+					 }
+				 }
+			 NOT = {
+				 SER = {
+					 has_country_flag = first_balkan_surrender
+					 }
+				 }
+			 }
+		allow = {
+			 OR = {
+				 4050 = {#Valjevo
+					controlled_by = TUR
+					 }
+				 4116 = {#Pozega
+					controlled_by = TUR
+					 }
+				 4051 = {#Arandelovac
+					controlled_by = TUR
+					 }
+				 3983 = {#Panavo
+					controlled_by = TUR
+					 }
+				 AND = {
+					 GRE = {
+						 has_country_flag = first_balkan_surrender
+						 }
+					 MTN = {
+						 has_country_flag = first_balkan_surrender
+						 }
+					 }
+				 AND = {
+					 GRE = {
+						 has_country_flag = first_balkan_surrender
+						 }
+					 BUL = {
+						 has_country_flag = first_balkan_surrender
+						 }
+					 }
+				 AND = {
+					 BUL = {
+						 has_country_flag = first_balkan_surrender
+						 }
+					 MTN = {
+						 has_country_flag = first_balkan_surrender
+						 }
+					 }
+				 date = 1913.1.31
+				 }
+			 }
+		effect = {
+			 SER = {
+				 country_event = 100340 #Treaty_of_London
+				}
+			 SER = {
+				 end_war = TUR
+				 }
+			 MTN = {
+				 end_war = TUR
+				 }
+			 GRE = {
+				 end_war = TUR
+				 }
+			 BUL = {
+				 end_war = TUR
+				 }
+			 GRE = {
+				 leave_alliance = SER
+				 }
+			 BUL = {
+				 leave_alliance = SER
+				 }
+			 MTN = {
+				 leave_alliance = SER
+				 }
+			 SER = {
+				 set_country_flag = first_balkan_surrender
+				 }
+			 MTN = {
+				 set_country_flag = first_balkan_surrender
+				 }
+			 GRE = {
+				 set_country_flag = first_balkan_surrender
+				 }
+			 BUL = {
+				 set_country_flag = first_balkan_surrender
+				 }
+			 SER = {
+				 set_country_flag = first_balkan_done
+				 }
+			 }
+		}
+	
+
+	 first_balkan_peace_bul = {#Negotiate_Peace_on_Our_Terms
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = SER
+			 exists = TUR
+			 exists = MTN
+			 exists = GRE
+			 TUR = {
+				 war_with = SER
+				 }
+			 BUL = {
+				 has_country_flag = first_balkan_war
+				 }
+			 NOT = {
+				 SER = {
+					 has_country_flag = first_balkan_done
+					 }
+				 }
+			 NOT = {
+				 SER = {
+					 has_country_flag = first_balkan_surrender
+					 }
+				 }
+			 NOT = {
+				 GRE = {
+					 has_country_flag = first_balkan_surrender
+					 }
+				 }
+			 NOT = {
+				 MTN = {
+					 has_country_flag = first_balkan_surrender
+					 }
+				 }
 			 BUL = {
 				 has_country_flag = first_balkan_surrender
 				 }
 			 }
-		 MTN = {
-			 has_country_flag = first_balkan_surrender
-			 }
-		 }
-	allow = {
-		 OR = {
-			 4248 = {#Burgas
-				controlled_by = ALB
+		allow = {
+			 OR = {
+				 4248 = {#Burgas
+					controlled_by = ALB
+					 }
+				 4248 = {#Burgas
+					controlled_by = SER
+					 }
+				 4248 = {#Burgas
+					controlled_by = MTN
+					 }
+				 4248 = {#Burgas
+					controlled_by = GRE
+					 }
+				 4248 = {#Burgas
+					controlled_by = BUL
+					 }
+				 4614 = {#Thasos
+					controlled_by = ALB
+					 }
+				 4614 = {#Thasos
+					controlled_by = SER
+					 }
+				 4614 = {#Thasos
+					controlled_by = MTN
+					 }
+				 4614 = {#Thasos
+					controlled_by = GRE
+					 }
+				 4614 = {#Thasos
+					controlled_by = BUL
+					 }
+				 4436 = {#Edirne
+					controlled_by = ALB
+					 }
+				 4436 = {#Edirne
+					controlled_by = SER
+					 }
+				 4436 = {#Edirne
+					controlled_by = MTN
+					 }
+				 4436 = {#Edirne
+					controlled_by = GRE
+					 }
+				 4436 = {#Edirne
+					controlled_by = BUL
+					 }
+				 4374 = {#Kirklareli
+					controlled_by = ALB
+					 }
+				 4374 = {#Kirklareli
+					controlled_by = SER
+					 }
+				 4374 = {#Kirklareli
+					controlled_by = MTN
+					 }
+				 4374 = {#Kirklareli
+					controlled_by = GRE
+					 }
+				 4374 = {#Kirklareli
+					controlled_by = BUL
+					 }
 				 }
-			 4248 = {#Burgas
-				controlled_by = SER
+			 OR = {
+				 4555 = {#Skopje
+					controlled_by = ALB
+					 }
+				 4555 = {#Skopje
+					controlled_by = SER
+					 }
+				 4555 = {#Skopje
+					controlled_by = MTN
+					 }
+				 4555 = {#Skopje
+					controlled_by = GRE
+					 }
+				 4555 = {#Skopje
+					controlled_by = BUL
+					 }
 				 }
-			 4248 = {#Burgas
-				controlled_by = MTN
-				 }
-			 4248 = {#Burgas
-				controlled_by = GRE
-				 }
-			 4248 = {#Burgas
-				controlled_by = BUL
-				 }
-			 4614 = {#Thasos
-				controlled_by = ALB
-				 }
-			 4614 = {#Thasos
-				controlled_by = SER
-				 }
-			 4614 = {#Thasos
-				controlled_by = MTN
-				 }
-			 4614 = {#Thasos
-				controlled_by = GRE
-				 }
-			 4614 = {#Thasos
-				controlled_by = BUL
-				 }
-			 4436 = {#Edirne
-				controlled_by = ALB
-				 }
-			 4436 = {#Edirne
-				controlled_by = SER
-				 }
-			 4436 = {#Edirne
-				controlled_by = MTN
-				 }
-			 4436 = {#Edirne
-				controlled_by = GRE
-				 }
-			 4436 = {#Edirne
-				controlled_by = BUL
-				 }
-			 4374 = {#Kirklareli
-				controlled_by = ALB
-				 }
-			 4374 = {#Kirklareli
-				controlled_by = SER
-				 }
-			 4374 = {#Kirklareli
-				controlled_by = MTN
-				 }
-			 4374 = {#Kirklareli
-				controlled_by = GRE
-				 }
-			 4374 = {#Kirklareli
-				controlled_by = BUL
-				 }
-			 }
-		 OR = {
-			 4555 = {#Skopje
-				controlled_by = ALB
-				 }
-			 4555 = {#Skopje
-				controlled_by = SER
-				 }
-			 4555 = {#Skopje
-				controlled_by = MTN
-				 }
-			 4555 = {#Skopje
-				controlled_by = GRE
-				 }
-			 4555 = {#Skopje
-				controlled_by = BUL
-				 }
-			 }
-		 OR = {
-			 4720 = {#Salonica
-				controlled_by = ALB
-				 }
-			 4720 = {#Salonica
-				controlled_by = SER
-				 }
-			 4720 = {#Salonica
-				controlled_by = MTN
-				 }
-			 4720 = {#Salonica
-				controlled_by = GRE
-				 }
-			 4720 = {#Salonica
-				controlled_by = BUL
+			 OR = {
+				 4720 = {#Salonica
+					controlled_by = ALB
+					 }
+				 4720 = {#Salonica
+					controlled_by = SER
+					 }
+				 4720 = {#Salonica
+					controlled_by = MTN
+					 }
+				 4720 = {#Salonica
+					controlled_by = GRE
+					 }
+				 4720 = {#Salonica
+					controlled_by = BUL
+					 }
 				 }
 			 }
-		 }
-	effect = {
-		 SER = {
-			 country_event = 100320 #Treaty_of_London
-			}
-		 SER = {
-			 end_war = TUR
-			 }
-		 BUL = {
-			 end_war = TUR
-			 }
-		 MTN = {
-			 end_war = TUR
-			 }
-		 GRE = {
-			 end_war = TUR
-			 }
-		 SER = {
-			 set_country_flag = first_balkan_done
-			 }
-		 BUL = {
-			 set_country_flag = first_balkan_done
-			 }
-		 GRE = {
-			 set_country_flag = first_balkan_done
-			 }
-		 }
-	}
-
-
-
- first_balkan_peace_gre = {#Negotiate_Peace_on_Our_Terms
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 tag = SER
-		 exists = TUR
-		 exists = MTN
-		 exists = BUL
-		 TUR = {
-			 war_with = SER
-			 }
-		 BUL = {
-			 has_country_flag = first_balkan_war
-			 }
-		 NOT = {
+		effect = {
 			 SER = {
-				 has_country_flag = first_balkan_done
-				 }
-			 }
-		 NOT = {
+				 country_event = 100310 #Treaty_of_London
+				}
 			 SER = {
-				 has_country_flag = first_balkan_surrender
+				 end_war = TUR
+				 }
+			 BUL = {
+				 end_war = TUR
+				 }
+			 MTN = {
+				 end_war = TUR
+				 }
+			 GRE = {
+				 end_war = TUR
+				 }
+			 SER = {
+				 set_country_flag = first_balkan_done
+				 }
+			 GRE = {
+				 set_country_flag = first_balkan_done
+				 }
+			 MTN = {
+				 set_country_flag = first_balkan_done
 				 }
 			 }
-		 NOT = {
+		}
+	
+
+	 first_balkan_peace_mtn = {#Negotiate_Peace_on_Our_Terms
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = SER
+			 exists = TUR
+			 exists = BUL
+			 exists = GRE
+			 TUR = {
+				 war_with = SER
+				 }
+			 BUL = {
+				 has_country_flag = first_balkan_war
+				 }
+			 NOT = {
+				 SER = {
+					 has_country_flag = first_balkan_done
+					 }
+				 }
+			 NOT = {
+				 SER = {
+					 has_country_flag = first_balkan_surrender
+					 }
+				 }
+			 NOT = {
+				 GRE = {
+					 has_country_flag = first_balkan_surrender
+					 }
+				 }
+			 NOT = {
+				 BUL = {
+					 has_country_flag = first_balkan_surrender
+					 }
+				 }
 			 MTN = {
 				 has_country_flag = first_balkan_surrender
 				 }
 			 }
-		 NOT = {
+		allow = {
+			 OR = {
+				 4248 = {#Burgas
+					controlled_by = ALB
+					 }
+				 4248 = {#Burgas
+					controlled_by = SER
+					 }
+				 4248 = {#Burgas
+					controlled_by = MTN
+					 }
+				 4248 = {#Burgas
+					controlled_by = GRE
+					 }
+				 4248 = {#Burgas
+					controlled_by = BUL
+					 }
+				 4614 = {#Thasos
+					controlled_by = ALB
+					 }
+				 4614 = {#Thasos
+					controlled_by = SER
+					 }
+				 4614 = {#Thasos
+					controlled_by = MTN
+					 }
+				 4614 = {#Thasos
+					controlled_by = GRE
+					 }
+				 4614 = {#Thasos
+					controlled_by = BUL
+					 }
+				 4436 = {#Edirne
+					controlled_by = ALB
+					 }
+				 4436 = {#Edirne
+					controlled_by = SER
+					 }
+				 4436 = {#Edirne
+					controlled_by = MTN
+					 }
+				 4436 = {#Edirne
+					controlled_by = GRE
+					 }
+				 4436 = {#Edirne
+					controlled_by = BUL
+					 }
+				 4374 = {#Kirklareli
+					controlled_by = ALB
+					 }
+				 4374 = {#Kirklareli
+					controlled_by = SER
+					 }
+				 4374 = {#Kirklareli
+					controlled_by = MTN
+					 }
+				 4374 = {#Kirklareli
+					controlled_by = GRE
+					 }
+				 4374 = {#Kirklareli
+					controlled_by = BUL
+					 }
+				 }
+			 OR = {
+				 4555 = {#Skopje
+					controlled_by = ALB
+					 }
+				 4555 = {#Skopje
+					controlled_by = SER
+					 }
+				 4555 = {#Skopje
+					controlled_by = MTN
+					 }
+				 4555 = {#Skopje
+					controlled_by = GRE
+					 }
+				 4555 = {#Skopje
+					controlled_by = BUL
+					 }
+				 }
+			 OR = {
+				 4720 = {#Salonica
+					controlled_by = ALB
+					 }
+				 4720 = {#Salonica
+					controlled_by = SER
+					 }
+				 4720 = {#Salonica
+					controlled_by = MTN
+					 }
+				 4720 = {#Salonica
+					controlled_by = GRE
+					 }
+				 4720 = {#Salonica
+					controlled_by = BUL
+					 }
+				 }
+			 }
+		effect = {
+			 SER = {
+				 country_event = 100320 #Treaty_of_London
+				}
+			 SER = {
+				 end_war = TUR
+				 }
 			 BUL = {
+				 end_war = TUR
+				 }
+			 MTN = {
+				 end_war = TUR
+				 }
+			 GRE = {
+				 end_war = TUR
+				 }
+			 SER = {
+				 set_country_flag = first_balkan_done
+				 }
+			 BUL = {
+				 set_country_flag = first_balkan_done
+				 }
+			 GRE = {
+				 set_country_flag = first_balkan_done
+				 }
+			 }
+		}
+	
+
+	 first_balkan_peace_gre = {#Negotiate_Peace_on_Our_Terms
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = SER
+			 exists = TUR
+			 exists = MTN
+			 exists = BUL
+			 TUR = {
+				 war_with = SER
+				 }
+			 BUL = {
+				 has_country_flag = first_balkan_war
+				 }
+			 NOT = {
+				 SER = {
+					 has_country_flag = first_balkan_done
+					 }
+				 }
+			 NOT = {
+				 SER = {
+					 has_country_flag = first_balkan_surrender
+					 }
+				 }
+			 NOT = {
+				 MTN = {
+					 has_country_flag = first_balkan_surrender
+					 }
+				 }
+			 NOT = {
+				 BUL = {
+					 has_country_flag = first_balkan_surrender
+					 }
+				 }
+			 GRE = {
 				 has_country_flag = first_balkan_surrender
 				 }
 			 }
-		 GRE = {
-			 has_country_flag = first_balkan_surrender
-			 }
-		 }
-	allow = {
-		 OR = {
-			 4248 = {#Burgas
-				controlled_by = ALB
+		allow = {
+			 OR = {
+				 4248 = {#Burgas
+					controlled_by = ALB
+					 }
+				 4248 = {#Burgas
+					controlled_by = SER
+					 }
+				 4248 = {#Burgas
+					controlled_by = MTN
+					 }
+				 4248 = {#Burgas
+					controlled_by = GRE
+					 }
+				 4248 = {#Burgas
+					controlled_by = BUL
+					 }
+				 4614 = {#Thasos
+					controlled_by = ALB
+					 }
+				 4614 = {#Thasos
+					controlled_by = SER
+					 }
+				 4614 = {#Thasos
+					controlled_by = MTN
+					 }
+				 4614 = {#Thasos
+					controlled_by = GRE
+					 }
+				 4614 = {#Thasos
+					controlled_by = BUL
+					 }
+				 4436 = {#Edirne
+					controlled_by = ALB
+					 }
+				 4436 = {#Edirne
+					controlled_by = SER
+					 }
+				 4436 = {#Edirne
+					controlled_by = MTN
+					 }
+				 4436 = {#Edirne
+					controlled_by = GRE
+					 }
+				 4436 = {#Edirne
+					controlled_by = BUL
+					 }
+				 4374 = {#Kirklareli
+					controlled_by = ALB
+					 }
+				 4374 = {#Kirklareli
+					controlled_by = SER
+					 }
+				 4374 = {#Kirklareli
+					controlled_by = MTN
+					 }
+				 4374 = {#Kirklareli
+					controlled_by = GRE
+					 }
+				 4374 = {#Kirklareli
+					controlled_by = BUL
+					 }
 				 }
-			 4248 = {#Burgas
-				controlled_by = SER
+			 OR = {
+				 4555 = {#Skopje
+					controlled_by = ALB
+					 }
+				 4555 = {#Skopje
+					controlled_by = SER
+					 }
+				 4555 = {#Skopje
+					controlled_by = MTN
+					 }
+				 4555 = {#Skopje
+					controlled_by = GRE
+					 }
+				 4555 = {#Skopje
+					controlled_by = BUL
+					 }
 				 }
-			 4248 = {#Burgas
-				controlled_by = MTN
-				 }
-			 4248 = {#Burgas
-				controlled_by = GRE
-				 }
-			 4248 = {#Burgas
-				controlled_by = BUL
-				 }
-			 4614 = {#Thasos
-				controlled_by = ALB
-				 }
-			 4614 = {#Thasos
-				controlled_by = SER
-				 }
-			 4614 = {#Thasos
-				controlled_by = MTN
-				 }
-			 4614 = {#Thasos
-				controlled_by = GRE
-				 }
-			 4614 = {#Thasos
-				controlled_by = BUL
-				 }
-			 4436 = {#Edirne
-				controlled_by = ALB
-				 }
-			 4436 = {#Edirne
-				controlled_by = SER
-				 }
-			 4436 = {#Edirne
-				controlled_by = MTN
-				 }
-			 4436 = {#Edirne
-				controlled_by = GRE
-				 }
-			 4436 = {#Edirne
-				controlled_by = BUL
-				 }
-			 4374 = {#Kirklareli
-				controlled_by = ALB
-				 }
-			 4374 = {#Kirklareli
-				controlled_by = SER
-				 }
-			 4374 = {#Kirklareli
-				controlled_by = MTN
-				 }
-			 4374 = {#Kirklareli
-				controlled_by = GRE
-				 }
-			 4374 = {#Kirklareli
-				controlled_by = BUL
-				 }
-			 }
-		 OR = {
-			 4555 = {#Skopje
-				controlled_by = ALB
-				 }
-			 4555 = {#Skopje
-				controlled_by = SER
-				 }
-			 4555 = {#Skopje
-				controlled_by = MTN
-				 }
-			 4555 = {#Skopje
-				controlled_by = GRE
-				 }
-			 4555 = {#Skopje
-				controlled_by = BUL
-				 }
-			 }
-		 OR = {
-			 4720 = {#Salonica
-				controlled_by = ALB
-				 }
-			 4720 = {#Salonica
-				controlled_by = SER
-				 }
-			 4720 = {#Salonica
-				controlled_by = MTN
-				 }
-			 4720 = {#Salonica
-				controlled_by = GRE
-				 }
-			 4720 = {#Salonica
-				controlled_by = BUL
+			 OR = {
+				 4720 = {#Salonica
+					controlled_by = ALB
+					 }
+				 4720 = {#Salonica
+					controlled_by = SER
+					 }
+				 4720 = {#Salonica
+					controlled_by = MTN
+					 }
+				 4720 = {#Salonica
+					controlled_by = GRE
+					 }
+				 4720 = {#Salonica
+					controlled_by = BUL
+					 }
 				 }
 			 }
-		 }
-	effect = {
-		 SER = {
-			 country_event = 100330 #Treaty_of_London
-			}
-		 SER = {
-			 end_war = TUR
+		effect = {
+			 SER = {
+				 country_event = 100330 #Treaty_of_London
+				}
+			 SER = {
+				 end_war = TUR
+				 }
+			 BUL = {
+				 end_war = TUR
+				 }
+			 MTN = {
+				 end_war = TUR
+				 }
+			 GRE = {
+				 end_war = TUR
+				 }
+			 SER = {
+				 set_country_flag = first_balkan_done
+				 }
+			 BUL = {
+				 set_country_flag = first_balkan_done
+				 }
+			 MTN = {
+				 set_country_flag = first_balkan_done
+				 }
 			 }
-		 BUL = {
-			 end_war = TUR
-			 }
-		 MTN = {
-			 end_war = TUR
-			 }
-		 GRE = {
-			 end_war = TUR
-			 }
-		 SER = {
-			 set_country_flag = first_balkan_done
-			 }
-		 BUL = {
-			 set_country_flag = first_balkan_done
-			 }
-		 MTN = {
-			 set_country_flag = first_balkan_done
-			 }
-		 }
+		}
 	}
-}
 

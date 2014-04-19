@@ -1,91 +1,89 @@
 
 diplomatic_decisions = {
- saf_release = {#South_African_Union
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 tag = ENG
-		 has_country_flag = king_death_george
-		 NOT = {
-			 ENG = {
-				 has_country_flag = saf_release
+	 saf_release = {#South_African_Union
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = ENG
+			 has_country_flag = king_death_george
+			 NOT = {
+				 ENG = {
+					 has_country_flag = saf_release
+					 }
 				 }
 			 }
-		 }
-	allow = {
-		 war = no
-		 date = 1910.5.31
-		 }
-	effect = {
-		 ENG = {
-			 country_event = 100111 #South_Africa_Independence
-			}
-		 set_country_flag = saf_release
-		 }
-	}
-
-
-
- north_sea_war = {#Declare_North_Sea_War_Zone
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 tag = ENG
-		 ENG = {
-			 war_with = GER
+		allow = {
+			 war = no
+			 date = 1910.5.31
 			 }
-		 NOT = {
+		effect = {
 			 ENG = {
-				 has_country_flag = North_Sea_War_Zone
+				 country_event = 100111 #South_Africa_Independence
+				}
+			 set_country_flag = saf_release
+			 }
+		}
+	
+
+	 north_sea_war = {#Declare_North_Sea_War_Zone
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = ENG
+			 ENG = {
+				 war_with = GER
+				 }
+			 NOT = {
+				 ENG = {
+					 has_country_flag = North_Sea_War_Zone
+					 }
 				 }
 			 }
-		 }
-	allow = {
-		 date = 1914.11.1
-		 }
-	effect = {
-		 ENG = {
-			 country_event = 100508 #Declare_North_Sea_a_War_Zone
-			}
-		 set_country_flag = North_Sea_War_Zone
-		 }
-	}
-
-
-
- annex_cyprus = {#Annex_Cyprus
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 tag = ENG
-		 exists = yes
-		 war_with = TUR
-		 date = 1914.11.5
-		 NOT = {
+		allow = {
+			 date = 1914.11.1
+			 }
+		effect = {
 			 ENG = {
-				 has_country_flag = cyprus
+				 country_event = 100508 #Declare_North_Sea_a_War_Zone
+				}
+			 set_country_flag = North_Sea_War_Zone
+			 }
+		}
+	
+
+	 annex_cyprus = {#Annex_Cyprus
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = ENG
+			 exists = yes
+			 war_with = TUR
+			 date = 1914.11.5
+			 NOT = {
+				 ENG = {
+					 has_country_flag = cyprus
+					 }
 				 }
 			 }
-		 }
-	allow = {
-		 5139 = {#Lefkosia
-			controlled_by = ENG
+		allow = {
+			 5139 = {#Lefkosia
+				controlled_by = ENG
+				 }
+			 5172 = {#Lemesos
+				controlled_by = ENG
+				 }
 			 }
-		 5172 = {#Lemesos
-			controlled_by = ENG
+		effect = {
+			 ENG = {
+				 country_event = 100151 #Cyprus_Annexation
+				}
+			 add_core = 5139
+			 add_core = 5172
+			 set_country_flag = cyprus
 			 }
-		 }
-	effect = {
-		 ENG = {
-			 country_event = 100151 #Cyprus_Annexation
-			}
-		 add_core = 5139
-		 add_core = 5172
-		 set_country_flag = cyprus
-		 }
+		}
 	}
-}
 

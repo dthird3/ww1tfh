@@ -1,97 +1,96 @@
 
 diplomatic_decisions = {
- 2011500_decision = {#Ultimatum_on_Germany
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 GER = {
-			 war_with = ENG
+	 2011500_decision = {#Ultimatum_on_Germany
+		ai_will_do = {
+			 factor = 1
 			 }
-		 war = no
-		 tag = JAP
-		 date = 1914.6.28
-		 not = {
-			 date = 1925.12.30
+		potential = {
+			 GER = {
+				 war_with = ENG
+				 }
+			 war = no
+			 tag = JAP
+			 date = 1914.6.28
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2011500
+				 }
 			 }
-		 not = {
-			 has_country_flag = decision_2011500
+		allow = {
+			 not = {
+				 JAP = {
+					 faction = allies
+					 }
+				 }
 			 }
-		 }
-	allow = {
-		 not = {
+		effect = {
+			 country_event = 177 #Ultimatum_on_Germany
+			set_country_flag = decision_2011500
+			 }
+		}
+	
+
+	 2011503_decision = {#Offer_peace_to_Germany
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
 			 JAP = {
-				 faction = allies
-				 }
-			 }
-		 }
-	effect = {
-		 country_event = 177 #Ultimatum_on_Germany
-		set_country_flag = decision_2011500
-		 }
-	}
-
-
-
- 2011503_decision = {#Offer_peace_to_Germany
-	ai_will_do = {
-		 factor = 1
-		 }
-	potential = {
-		 JAP = {
-			 war_with = GER
-			 }
-		 faction = allies
-		 tag = JAP
-		 date = 1914.4.24
-		 not = {
-			 date = 1925.12.30
-			 }
-		 not = {
-			 has_country_flag = decision_2011503
-			 }
-		 }
-	allow = {
-		 not = {
-			 FRA = {
-				 faction = allies
-				 }
-			 }
-		 not = {
-			 RUS = {
-				 faction = allies
-				 }
-			 }
-		 not = {
-			 ENG = {
-				 faction = allies
-				 }
-			 }
-		 not = {
-			 USA = {
-				 faction = allies
-				 }
-			 }
-		 not = {
-			 SOV = {
 				 war_with = GER
 				 }
-			 }
-		 not = {
-			 JAP = {
-				 surrender_progress = 5
+			 faction = allies
+			 tag = JAP
+			 date = 1914.4.24
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2011503
 				 }
 			 }
-		 not = {
-			 GER = {
-				 surrender_progress = 5
+		allow = {
+			 not = {
+				 FRA = {
+					 faction = allies
+					 }
+				 }
+			 not = {
+				 RUS = {
+					 faction = allies
+					 }
+				 }
+			 not = {
+				 ENG = {
+					 faction = allies
+					 }
+				 }
+			 not = {
+				 USA = {
+					 faction = allies
+					 }
+				 }
+			 not = {
+				 SOV = {
+					 war_with = GER
+					 }
+				 }
+			 not = {
+				 JAP = {
+					 surrender_progress = 5
+					 }
+				 }
+			 not = {
+				 GER = {
+					 surrender_progress = 5
+					 }
 				 }
 			 }
-		 }
-	effect = {
-		 country_event = 180 #Offer_peace_to_Germany
-		set_country_flag = decision_2011503
-		 }
+		effect = {
+			 country_event = 180 #Offer_peace_to_Germany
+			set_country_flag = decision_2011503
+			 }
+		}
 	}
-}
 
