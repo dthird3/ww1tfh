@@ -1,123 +1,125 @@
 
 diplomatic_decisions = {
-	 dictator_ship = {#Consolidate_Power
-		potential = {
-			 dissent = 20
-			 government_in_exile = no
-			 NOT = {
-				 government = national_socialism
-				 }
-			 NOT = {
-				 government = fascist_republic
-				 }
-			 NOT = {
-				 government = germanic_fascist_republic
-				 }
-			 NOT = {
-				 government = right_wing_republic
-				 }
-			 NOT = {
-				 government = hungarian_right_wing_republic
-				 }
-			 NOT = {
-				 government = right_wing_autocrat
-				 }
-			 NOT = {
-				 government = absolute_monarchy
-				 }
-			 NOT = {
-				 government = imperial
-				 }
-			 NOT = {
-				 government = socialist_republic
-				 }
-			 NOT = {
-				 government = federal_socialist_republic
-				 }
-			 NOT = {
-				 government = tsar_autocracy
-				 }
-			 NOT = {
-				 government = dual_monarchy
-				 }
+ dictator_ship = {#Consolidate_Power
+	potential = {
+		 dissent = 20
+		 government_in_exile = no
+		 NOT = {
+			 government = national_socialism
 			 }
-		allow = {
-			 }
-		effect = {
-			 dissent = 5
-			 national_unity = -15
-			 organisation = 30
+		 NOT = {
 			 government = fascist_republic
 			 }
-		}
-	
-
-	 form_yugoslavia = {#Form_Yugoslavia?_(You_will_lose_the_game)
-		ai_will_do = {
-			 factor = 1
+		 NOT = {
+			 government = germanic_fascist_republic
 			 }
-		potential = {
-			 tag = SER
-			 has_country_flag = form_yugo
-			 NOT = {
-				 ENG = {
-					 has_country_flag = yugoslavia_now
-					 }
-				 }
+		 NOT = {
+			 government = right_wing_republic
 			 }
-		allow = {
-			 war = no
+		 NOT = {
+			 government = hungarian_right_wing_republic
 			 }
-		effect = {
-			 SER = {
-				 any_owned = {
-					 limit = {
-						 is_core = SER
-						 }
-					 add_core = YUG
-					 }
-				 }
-			 MTN = {
-				 any_owned = {
-					 limit = {
-						 is_core = MTN
-						 }
-					 add_core = YUG
-					 }
-				 }
-			 YUG = {
-				 inherit = MTN
-				 }
-			 YUG = {
-				 inherit = SER
-				 }
-			 money = 100
-			 manpower = 20
-			 ENG = {
-				 set_country_flag = yugoslavia_now
-				 }
+		 NOT = {
+			 government = right_wing_autocrat
 			 }
-		}
-	
-
-	 RUSE3 = {#Sikorsky_Ilya_Muromets
-		ai_will_do = {
-			 factor = 1
+		 NOT = {
+			 government = absolute_monarchy
 			 }
-		potential = {
-			 tag = RUS
-			 war = yes
-			 date = 1914.12.10
-			 not = {
-				 has_country_flag = SIM
-				 }
+		 NOT = {
+			 government = imperial
 			 }
-		allow = {
+		 NOT = {
+			 government = socialist_republic
 			 }
-		effect = {
-			 country_event = 100150 #Sikorsky_Ilya_Muromets
-			set_country_flag = SIM
+		 NOT = {
+			 government = federal_socialist_republic
 			 }
-		}
+		 NOT = {
+			 government = tsar_autocracy
+			 }
+		 NOT = {
+			 government = dual_monarchy
+			 }
+		 }
+	allow = {
+		 }
+	effect = {
+		 dissent = 5
+		 national_unity = -15
+		 organisation = 30
+		 government = fascist_republic
+		 }
 	}
+
+
+
+ form_yugoslavia = {#Form_Yugoslavia?_(You_will_lose_the_game)
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 tag = SER
+		 has_country_flag = form_yugo
+		 NOT = {
+			 ENG = {
+				 has_country_flag = yugoslavia_now
+				 }
+			 }
+		 }
+	allow = {
+		 war = no
+		 }
+	effect = {
+		 SER = {
+			 any_owned = {
+				 limit = {
+					 is_core = SER
+					 }
+				 add_core = YUG
+				 }
+			 }
+		 MTN = {
+			 any_owned = {
+				 limit = {
+					 is_core = MTN
+					 }
+				 add_core = YUG
+				 }
+			 }
+		 YUG = {
+			 inherit = MTN
+			 }
+		 YUG = {
+			 inherit = SER
+			 }
+		 money = 100
+		 manpower = 20
+		 ENG = {
+			 set_country_flag = yugoslavia_now
+			 }
+		 }
+	}
+
+
+
+ RUSE3 = {#Sikorsky_Ilya_Muromets
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 tag = RUS
+		 war = yes
+		 date = 1914.12.10
+		 not = {
+			 has_country_flag = SIM
+			 }
+		 }
+	allow = {
+		 }
+	effect = {
+		 country_event = 100150 #Sikorsky_Ilya_Muromets
+		set_country_flag = SIM
+		 }
+	}
+}
 

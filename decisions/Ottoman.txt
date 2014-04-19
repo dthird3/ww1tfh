@@ -1,80 +1,81 @@
 
 diplomatic_decisions = {
-	 ottger = {#Ottoman–German_Alliance
-		ai_will_do = {
-			 factor = 1
-			 }
-		potential = {
-			 tag = TUR
-			 exists = GER
-			 is_subject = no
-			 NOT = {
-				 THIS = {
-					 has_country_flag = turk_alliance
-					 }
+ ottger = {#Ottoman–German_Alliance
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 tag = TUR
+		 exists = GER
+		 is_subject = no
+		 NOT = {
+			 THIS = {
+				 has_country_flag = turk_alliance
 				 }
 			 }
-		allow = {
-			 war = no
-			 GER = {
-				 war_with = RUS
-				 }
-			 date = 1914.8.2
+		 }
+	allow = {
+		 war = no
+		 GER = {
+			 war_with = RUS
 			 }
-		effect = {
-			 GER = {
-				 country_event = 100146 #Ottoman–German_Alliance
-				}
-			 TUR = {
-				 country_event = 100146 #Ottoman–German_Alliance
-				}
-			 TUR = {
-				 manpower = 125
-				 }
-			 TUR = {
-				 neutrality = -20
-				 }
-			 relation = {
-				 who = GER
-				 value = 100
-				 }
-			 relation = {
-				 who = AUH
-				 value = 100
-				 }
-			 national_unity = 5
-			 set_country_flag = turk_alliance
+		 date = 1914.8.2
+		 }
+	effect = {
+		 GER = {
+			 country_event = 100146 #Ottoman–German_Alliance
+			}
+		 TUR = {
+			 country_event = 100146 #Ottoman–German_Alliance
+			}
+		 TUR = {
+			 manpower = 125
 			 }
-		}
-	
-
-	 ottshell = {#Attack_Russian_Ports
-		ai_will_do = {
-			 factor = 1
+		 TUR = {
+			 neutrality = -20
 			 }
-		potential = {
-			 tag = TUR
-			 exists = RUS
-			 has_country_flag = turk_alliance
-			 is_subject = no
-			 NOT = {
-				 THIS = {
-					 has_country_flag = otto_war
-					 }
-				 }
+		 relation = {
+			 who = GER
+			 value = 100
 			 }
-		allow = {
-			 war = no
-			 date = 1914.10.1
+		 relation = {
+			 who = AUH
+			 value = 100
 			 }
-		effect = {
-			 set_country_flag = otto_war
-			 TUR = {
-				 join_faction = axis
-				 }
-			 neutrality = -30
-			 manpower = 150
-			 }
-		}
+		 national_unity = 5
+		 set_country_flag = turk_alliance
+		 }
 	}
+
+
+
+ ottshell = {#Attack_Russian_Ports
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 tag = TUR
+		 exists = RUS
+		 has_country_flag = turk_alliance
+		 is_subject = no
+		 NOT = {
+			 THIS = {
+				 has_country_flag = otto_war
+				 }
+			 }
+		 }
+	allow = {
+		 war = no
+		 date = 1914.10.1
+		 }
+	effect = {
+		 set_country_flag = otto_war
+		 TUR = {
+			 join_faction = axis
+			 }
+		 neutrality = -30
+		 manpower = 150
+		 }
+	}
+}
 
