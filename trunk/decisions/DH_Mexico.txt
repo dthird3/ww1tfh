@@ -1,22 +1,36 @@
-diplomatic_decisions = {
 
+diplomatic_decisions = {
 	 2250500_decision = {#Launch_Raids_on_Tucson
-		ai_will_do = { factor = 1 }
+		ai_will_do = {
+			 factor = 1
+			 }
 		potential = {
 			 war = yes
-			 not = { MEX = { war_with = USA } }
-			 not = { MXR = { war_with = USA } }
+			 not = {
+				 MEX = {
+					 war_with = USA
+					 }
+				 }
+			 not = {
+				 MXR = {
+					 war_with = USA
+					 }
+				 }
 			 tag = MXR
 			 date = 1914.8.4
-			 not = { date = 1925.12.30 }
-			 not = { has_country_flag = decision_2250500 }
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2250500
+				 }
 			 }
 		allow = {
-			money = 10
-#			country_units_in_province = 01
-			9203 = { empty = yes }
-#			country_units_in_province = 9203
-			}
+			 money = 10
+			 9203 = {#Hermosillo
+				empty = yes
+				 }
+			 }
 		effect = {
 			 country_event = 492 #Launch_Raids_on_Tucson
 			set_country_flag = decision_2250500
@@ -197,9 +211,11 @@ diplomatic_decisions = {
 				 has_country_flag = decision_2049522
 				 }
 			 }
-		allow = { war = no }
+		allow = {
+			 war = no
+			 }
 		effect = {
-			country_event = 529 #Intervention_against_Mexican_rebels
+			 country_event = 529 #Intervention_against_Mexican_rebels
 			set_country_flag = decision_2049522
 			 }
 		}
@@ -425,6 +441,7 @@ diplomatic_decisions = {
 			set_country_flag = decision_2049526
 			 }
 		}
+	
 
 	 2038501_decision = {#The_United_States_declare_war_on_Germany
 		ai_will_do = {
@@ -504,4 +521,5 @@ diplomatic_decisions = {
 			set_country_flag = decision_2038505
 			 }
 		}
-}
+	}
+
