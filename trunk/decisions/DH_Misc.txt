@@ -1,323 +1,323 @@
 
 diplomatic_decisions = {
-	 2002550_decision = {#Dissolve_Viviani_Administration
-		ai_will_do = {
-			 factor = 1
+ 2002550_decision = {#Dissolve_Viviani_Administration
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 head_of_government = 12900108 #
+		tag = FRA
+		 date = 1915.1.1
+		 not = {
+			 date = 1915.12.30
 			 }
-		potential = {
-			 head_of_government = 12900108 #
-			tag = FRA
-			 date = 1915.1.1
-			 not = {
-				 date = 1915.12.30
-				 }
+		 not = {
+			 has_country_flag = decision_2002550
+			 }
+		 }
+	allow = {
+		 }
+	effect = {
+		 country_event = 122 #Dissolve_Viviani_Administration
+		set_country_flag = decision_2002550
+		 }
+	}
 
-			 not = {
-				 has_country_flag = decision_2002550
-				 }
-			 }
-		allow = {
-			 }
-		effect = {
-			 country_event = 122 #Dissolve_Viviani_Administration
-			set_country_flag = decision_2002550
-			 }
-		}
-	
 
-	 2002554_decision = {#Appoint_Foch_as_Supreme_Allied_Commander
-		ai_will_do = {
-			 factor = 1
-			 }
-		potential = {
-			 FRA = {
-				 war_with = GER
-				 }
-			 FRA = {
-				 faction = allies
-				 }
-			 ENG = {
-				 ai = yes
-				 }
-			 tag = FRA
-			 date = 1917.1.1
-			 not = {
-				 date = 1919.12.30
-				 }
 
-			 not = {
-				 has_country_flag = decision_2002554
-				 }
+ 2002554_decision = {#Appoint_Foch_as_Supreme_Allied_Commander
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 FRA = {
+			 war_with = GER
 			 }
-		allow = {
-			 not = {
-				 or = {
-					 chief_of_staff = 12900081 #
-					}
-				 }
+		 FRA = {
+			 faction = allies
 			 }
-		effect = {
-			 country_event = 124 #Appoint_Foch_as_Supreme_Allied_Commander
-			set_country_flag = decision_2002554
+		 ENG = {
+			 ai = yes
 			 }
-		}
-	
-
-	 2002555_decision = {#Appoint_Clemenceau_as_Prime_Minister
-		ai_will_do = {
-			 factor = 1
+		 tag = FRA
+		 date = 1917.1.1
+		 not = {
+			 date = 1919.12.30
 			 }
-		potential = {
-			 FRA = {
-				 war_with = GER
-				 }
-			 tag = FRA
-			 date = 1917.1.1
-			 not = {
-				 date = 1919.12.30
-				 }
-
-			 not = {
-				 has_country_flag = decision_2002555
-				 }
+		 not = {
+			 has_country_flag = decision_2002554
 			 }
-		allow = {
-			 not = {
-				 or = {
-					 head_of_government = 12900118 #
-					}
-				 }
-			 }
-		effect = {
-			 country_event = 125 #Appoint_Clemenceau_as_Prime_Minister
-			set_country_flag = decision_2002555
-			 }
-		}
-	
-
-	 2006516_decision = {#Appoint_Diaz_as_new_Chief_of_Staff
-		ai_will_do = {
-			 factor = 1
-			 }
-		potential = {
-			 ITA = {
-				 war_with = AUH
-				 }
-			 tag = ITA
-			 date = 1914.1.1
-			 not = {
-				 date = 1925.12.30
-				 }
-
-			 not = {
-				 has_country_flag = decision_2006516
-				 }
-			 }
-		allow = {
+		 }
+	allow = {
+		 not = {
 			 or = {
-				 chief_of_staff = 14100085 #
+				 chief_of_staff = 12900081 #
 				}
-			 not = {
-				 or = {
-					 chief_of_staff = 14100086 #
-					}
-				 }
-			 or = {
-				 not = {
-					 3562 = {#Udine
-						controlled_by = THIS
-						 }
-					 }
-				 not = {
-					 3561 = {#Treviso
-						controlled_by = THIS
-						 }
-					 }
-				 not = {
-					 3429 = {#Lienz
-						controlled_by = THIS
-						 }
-					 }
-				 }
 			 }
-		effect = {
-			 country_event = 176 #Appoint_Diaz_as_new_Chief_of_Staff
-			set_country_flag = decision_2006516
-			 }
-		}
-	
+		 }
+	effect = {
+		 country_event = 124 #Appoint_Foch_as_Supreme_Allied_Commander
+		set_country_flag = decision_2002554
+		 }
+	}
 
-	 2191546_decision = {#Appoint_Von_Falkenhayn_as_Chief_of_Staff
-		ai_will_do = {
-			 factor = 1
+
+
+ 2002555_decision = {#Appoint_Clemenceau_as_Prime_Minister
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 FRA = {
+			 war_with = GER
 			 }
-		potential = {
+		 tag = FRA
+		 date = 1917.1.1
+		 not = {
+			 date = 1919.12.30
+			 }
+		 not = {
+			 has_country_flag = decision_2002555
+			 }
+		 }
+	allow = {
+		 not = {
+			 or = {
+				 head_of_government = 12900118 #
+				}
+			 }
+		 }
+	effect = {
+		 country_event = 125 #Appoint_Clemenceau_as_Prime_Minister
+		set_country_flag = decision_2002555
+		 }
+	}
+
+
+
+ 2006516_decision = {#Appoint_Diaz_as_new_Chief_of_Staff
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 ITA = {
+			 war_with = AUH
+			 }
+		 tag = ITA
+		 date = 1914.1.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_country_flag = decision_2006516
+			 }
+		 }
+	allow = {
+		 or = {
+			 chief_of_staff = 14100085 #
+			}
+		 not = {
+			 or = {
+				 chief_of_staff = 14100086 #
+				}
+			 }
+		 or = {
 			 not = {
-				 or = {
-					 chief_of_staff = 13100215 #
-					chief_of_army = 13100215 #
-					}
+				 3562 = {#Udine
+					controlled_by = THIS
+					 }
 				 }
+			 not = {
+				 3561 = {#Treviso
+					controlled_by = THIS
+					 }
+				 }
+			 not = {
+				 3429 = {#Lienz
+					controlled_by = THIS
+					 }
+				 }
+			 }
+		 }
+	effect = {
+		 country_event = 176 #Appoint_Diaz_as_new_Chief_of_Staff
+		set_country_flag = decision_2006516
+		 }
+	}
+
+
+
+ 2191546_decision = {#Appoint_Von_Falkenhayn_as_Chief_of_Staff
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 not = {
+			 or = {
+				 chief_of_staff = 13100215 #
+				chief_of_army = 13100215 #
+				}
+			 }
+		 GER = {
+			 war_with = FRA
+			 }
+		 tag = GER
+		 date = 1914.9.13
+		 not = {
+			 date = 1915.12.30
+			 }
+		 not = {
+			 has_country_flag = decision_2191546
+			 }
+		 }
+	allow = {
+		 not = {
+			 2613 = {#Paris
+				controlled_by = GER
+				 }
+			 }
+		 }
+	effect = {
+		 country_event = 445 #Appoint_Von_Falkenhayn_as_Chief_of_Staff
+		set_country_flag = decision_2191546
+		 }
+	}
+
+
+
+ 2049511_decision = {#Leave_Veracruz
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 war_with = GER
+		 9624 = {#Veracruz
+			controlled_by = USA
+			 }
+		 tag = USA
+		 date = 1914.8.4
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_country_flag = decision_2049511
+			 }
+		 }
+	allow = {
+		 war = no
+		 }
+	effect = {
+		 country_event = 518 #Leave_Veracruz
+		set_country_flag = decision_2049511
+		 }
+	}
+
+
+
+ 2049538_decision = {#Occupation_of_Haiti
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 exists = HAI
+		 not = {
+			 HAI = {
+				 is_subject = yes
+				 }
+			 }
+		 not = {
+			 USA = {
+				 war_with = HAI
+				 }
+			 }
+		 not = {
+			 USA = {
+				 alliance_with = HAI
+				 }
+			 }
+		 not = {
+			 THIS = {
+				 surrender_progress = 5
+				 }
+			 }
+		 or = {
 			 GER = {
 				 war_with = FRA
 				 }
-			 tag = GER
-			 date = 1914.9.13
-			 not = {
-				 date = 1915.12.30
-				 }
-
-			 not = {
-				 has_country_flag = decision_2191546
+			 GER = {
+				 war_with = ENG
 				 }
 			 }
-		allow = {
-			 not = {
-				 2613 = {#Paris
-					controlled_by = GER
-					 }
-				 }
+		 tag = USA
+		 date = 1915.7.27
+		 not = {
+			 date = 1925.12.30
 			 }
-		effect = {
-			 country_event = 445 #Appoint_Von_Falkenhayn_as_Chief_of_Staff
-			set_country_flag = decision_2191546
+		 not = {
+			 has_country_flag = decision_2049538
 			 }
-		}
-	
-
-	 2049511_decision = {#Leave_Veracruz
-		ai_will_do = {
-			 factor = 1
-			 }
-		potential = {
-			 war_with = GER
-			 9624 = {#Veracruz
-				controlled_by = USA
-				 }
-			 tag = USA
-			 date = 1914.8.4
-			 not = {
-				 date = 1925.12.30
-				 }
-			 not = {
-				 has_country_flag = decision_2049511
-				 }
-			 }
-		allow = {
-			 war = no
-			 }
-		effect = {
-			 country_event = 518 #Leave_Veracruz
-			set_country_flag = decision_2049511
-			 }
-		}
-	
-
-	 2049538_decision = {#Occupation_of_Haiti
-		ai_will_do = {
-			 factor = 1
-			 }
-		potential = {
-			 exists = HAI
-			 not = {
-				 HAI = {
-					 is_subject = yes
-					 }
-				 }
-			 not = {
-				 USA = {
-					 war_with = HAI
-					 }
-				 }
-			 not = {
-				 USA = {
-					 alliance_with = HAI
-					 }
-				 }
-			 not = {
-				 THIS = {
-					 surrender_progress = 5
-					 }
-				 }
-			 or = {
-				 GER = {
-					 war_with = FRA
-					 }
-				 GER = {
-					 war_with = ENG
-					 }
-				 }
-			 tag = USA
-			 date = 1915.7.27
-			 not = {
-				 date = 1925.12.30
-				 }
-
-			 not = {
-				 has_country_flag = decision_2049538
-				 }
-			 }
-		allow = {
-			 supplies = 20
-			 }
-		effect = {
-			 country_event = 541 #Occupation_of_Haiti
-			set_country_flag = decision_2049538
-			 }
-		}
-	
-
-	 2049539_decision = {#Occupation_of_the_Dominican_Republic
-		ai_will_do = {
-			 factor = 1
-			 }
-		potential = {
-			 exists = DOM
-			 not = {
-				 DOM = {
-					 is_subject = yes
-					 }
-				 }
-			 not = {
-				 USA = {
-					 war_with = DOM
-					 }
-				 }
-			 not = {
-				 USA = {
-					 alliance_with = DOM
-					 }
-				 }
-			 not = {
-				 THIS = {
-					 surrender_progress = 5
-					 }
-				 }
-			 or = {
-				 GER = {
-					 war_with = FRA
-					 }
-				 GER = {
-					 war_with = ENG
-					 }
-				 }
-			 tag = USA
-			 date = 1916.5.12
-			 not = {
-				 date = 1925.12.30
-				 }
-
-			 not = {
-				 has_country_flag = decision_2049539
-				 }
-			 }
-		allow = {
-			 supplies = 20
-			 }
-		effect = {
-			 country_event = 542 #Occupation_of_the_Dominican_Republic
-			set_country_flag = decision_2049539
-			 }
-		}
+		 }
+	allow = {
+		 supplies = 20
+		 }
+	effect = {
+		 country_event = 541 #Occupation_of_Haiti
+		set_country_flag = decision_2049538
+		 }
 	}
+
+
+
+ 2049539_decision = {#Occupation_of_the_Dominican_Republic
+	ai_will_do = {
+		 factor = 1
+		 }
+	potential = {
+		 exists = DOM
+		 not = {
+			 DOM = {
+				 is_subject = yes
+				 }
+			 }
+		 not = {
+			 USA = {
+				 war_with = DOM
+				 }
+			 }
+		 not = {
+			 USA = {
+				 alliance_with = DOM
+				 }
+			 }
+		 not = {
+			 THIS = {
+				 surrender_progress = 5
+				 }
+			 }
+		 or = {
+			 GER = {
+				 war_with = FRA
+				 }
+			 GER = {
+				 war_with = ENG
+				 }
+			 }
+		 tag = USA
+		 date = 1916.5.12
+		 not = {
+			 date = 1925.12.30
+			 }
+		 not = {
+			 has_country_flag = decision_2049539
+			 }
+		 }
+	allow = {
+		 supplies = 20
+		 }
+	effect = {
+		 country_event = 542 #Occupation_of_the_Dominican_Republic
+		set_country_flag = decision_2049539
+		 }
+	}
+}
 
