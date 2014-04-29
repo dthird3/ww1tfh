@@ -17,9 +17,7 @@
 	 
 	option = {
 		 name = "ACTION_NAME_JOIN_ENTENTE"
-		 ai_chance = {
-			 factor = 100
-			 }
+		 ai_chance = { factor = 100 }
 		 join_faction = allies
 		 war = {
 			 target = GER
@@ -88,9 +86,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = {
-		 days = 1
-		 }
+	mean_time_to_happen = { days = 1 }
 	major = yes
 	 
 	trigger = {
@@ -98,9 +94,7 @@
 		 war_with = GER
 		 date = 1910.5.6
 		 has_country_flag = boers
-		 NOT = {
-			 has_country_flag = boer_rebellion
-			 }
+		 NOT = { has_country_flag = boer_rebellion }
 		 }
 	option = {
 		 name = "ACTION_NAME_GREAT"
@@ -113,10 +107,8 @@
 			}
 		 remove_minister = 16500052 #Christiaan_Beyers
 		chief_of_staff = 16500051 #Jan_Smuts
-		GER = {
-			 load_oob = "Boer_1914.txt"
-			 }
-		 8038 = {#Pretoria
+		GER = { load_oob = "Boer_1914.txt" }
+		 8038 = {              #Pretoria
 			supplies = 500
 			 }
 		 10366 = {#Zoekmakaar
@@ -130,4 +122,3 @@
 			 }
 		 }
 	}
-
