@@ -14,6 +14,14 @@
 # local_partisan_Support    add an increase of revolt_risk, so you can see it as Derivation in time of revolt_risk
 
 
+#surrender_progress
+#Unlike the lost_national, this checks directly for surrender progress.
+#Since FTM 3.05, the surrender formula is counted as CoreStillControlledVPs / OwnedVPs;
+#i.e. the x per cent loss of victory points located in provinces,
+#which the current country has both cores and ownership of
+#Syntax: surrender_progress = x
+
+
 
 # Mexican 1910 Rigged Elections
 
@@ -2497,7 +2505,7 @@
 	
 #Launch Raids on Tucson
 
- country_event = {
+country_event = {
 	title = "DH_EVENT_2250500_TITLE"
 	desc = "DH_EVENT_2250500_DESC"
 	id = 492
@@ -2506,89 +2514,35 @@
 	 
 	is_triggered_only = yes
 	 
-	mean_time_to_happen = {
-		 days = 14
-		 }
-	trigger = {
-		 war = yes
-		 not = {
-			 MEX = {
-				 war_with = USA
-				 }
-			 }
-		 not = {
-			 MXR = {
-				 war_with = USA
-				 }
-			 }
-		 money = 10
-		 9203 = {#Hermosillo
-			country_units_in_province = MXR
-			 }
-		 tag = MXR
-		 date = 1914.8.4
-		 not = {
-			 date = 1925.12.30
-			 }
-		 }
+	mean_time_to_happen = {	days = 7 }
+		 
 	option = {
-		 name = "DH_EVENT_2250500_Option7"
-		 money = -100
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 9038 = {#Yuma
-					country_units_in_province = USA
-					 }
-				 }
-			 MXR = {
-				 country_event = 493 #Raid_result_:_resistance_encountered
-				}
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 9038 = {#Yuma
-					country_units_in_province = USA
-					 }
-				 }
-			 USA = {
-				 country_event = 519 #Tucson_raided!
-				}
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 not = {
-					 9038 = {#Yuma
-						country_units_in_province = USA
-						 }
-					 }
-				 }
-			 MXR = {
-				 country_event = 494 #Raid_result_:_no_resistance_encountered
-				}
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 not = {
-					 9038 = {#Yuma
-						country_units_in_province = USA
-						 }
-					 }
-				 }
-			 USA = {
-				 country_event = 520 #Tucson_raided!
-				}
-			 }
-		 }
+		name = "DH_EVENT_2250500_Option7"
+		money = -10
+		random_country = {
+			limit = {
+				tag = USA
+				9092 = { units_in_province = 1 }   				#Tucson
+			}
+			MXR = { country_event = 493 }            			#Raid_result_:_resistance_encountered
+			USA = { country_event = 519 }             			#Tucson_raided!
+			}
+		
+		random_country = {
+			limit = {
+				tag = USA
+				not = {	9092 = { units_in_province = 1 } }    	#Tucson
+			}
+			MXR = {	country_event = 494 }                   	#Raid_result_:_no_resistance_encountered
+			USA = { country_event = 520 }						#Tucson_raided!
+		}
 	}
+}
 
 
 #Raid result : resistance encountered
 
- country_event = {
+country_event = {
 	title = "DH_EVENT_2250501_TITLE"
 	desc = "DH_EVENT_2250501_DESC"
 	id = 493
@@ -2598,16 +2552,15 @@
 	is_triggered_only = yes
 	 
 	trigger = {
-		 tag = MXR
-		 }
+		tag = MXR
+		}
 	option = {
-		 name = "DH_EVENT_2250501_Option7"
-		 supplies = 80
-		 rare_materials = 10
-		 crude_oil = 10
-		 metal = 20
-		 energy = 35
-		 }
+		name = "DH_EVENT_2250501_Option7"
+		supplies = 80
+		rare_materials = 10
+		metal = 20
+		energy = 35
+		}
 	}
 
 
@@ -2623,16 +2576,15 @@
 	is_triggered_only = yes
 	 
 	trigger = {
-		 tag = MXR
-		 }
+		tag = MXR
+		}
 	option = {
-		 name = "DH_EVENT_2250502_Option7"
-		 supplies = 160
-		 rare_materials = 20
-		 crude_oil = 20
-		 metal = 40
-		 energy = 70
-		 }
+		name = "DH_EVENT_2250502_Option7"
+		supplies = 160
+		rare_materials = 20
+		metal = 40
+		energy = 70
+		}
 	}
 
 
@@ -2650,47 +2602,24 @@
 	mean_time_to_happen = {
 		 days = 14
 		 }
-	trigger = {
-		 war = yes
-		 not = {
-			 MEX = {
-				 war_with = USA
-				 }
-			 }
-		 not = {
-			 MXR = {
-				 war_with = USA
-				 }
-			 }
-		 money = 10
-		 9147 = {#Ciudad_Juárez
-			country_units_in_province = MXR
-			 }
-		 tag = MXR
-		 date = 1914.8.4
-		 not = {
-			 date = 1925.12.30
-			 }
-		 }
+
 	option = {
-		 name = "DH_EVENT_2250503_Option7"
-		 money = -100
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 9093 = {#El_Paso
-					country_units_in_province = USA
-					 }
-				 }
-			 MXR = {
-				 country_event = 493 #Raid_result_:_resistance_encountered
+		name = "DH_EVENT_2250503_Option7"
+		money = -100
+		random_country = {
+			limit = {
+				tag = USA
+				9093 = { units_in_province = 1 }                                #El_Paso
 				}
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 9093 = {#El_Paso
-					country_units_in_province = USA
+			MXR = {
+				country_event = 493 #Raid_result_:_resistance_encountered
+			}
+		}
+		random_country = {
+			limit = {
+				 tag = USA
+				 9093 = {                                  #El_Paso
+					units_in_province = 1
 					 }
 				 }
 			 USA = {
@@ -2702,7 +2631,7 @@
 				 tag = THIS
 				 not = {
 					 9093 = {#El_Paso
-						country_units_in_province = USA
+						units_in_province = 1
 						 }
 					 }
 				 }
@@ -2715,7 +2644,7 @@
 				 tag = THIS
 				 not = {
 					 9093 = {#El_Paso
-						country_units_in_province = USA
+						units_in_province = 1
 						 }
 					 }
 				 }
@@ -2755,7 +2684,7 @@
 			 }
 		 money = 10
 		 9269 = {#Ciudad_Acuña
-			country_units_in_province = MXR
+			units_in_province = 1
 			 }
 		 tag = MXR
 		 date = 1914.8.4
@@ -2770,7 +2699,7 @@
 			 limit = {
 				 tag = THIS
 				 9329 = {#San_Antonio
-					country_units_in_province = USA
+					units_in_province = 1
 					 }
 				 }
 			 MXR = {
@@ -2781,7 +2710,7 @@
 			 limit = {
 				 tag = THIS
 				 9329 = {#San_Antonio
-					country_units_in_province = USA
+					units_in_province = 1
 					 }
 				 }
 			 USA = {
@@ -2793,7 +2722,7 @@
 				 tag = THIS
 				 not = {
 					 9329 = {#San_Antonio
-						country_units_in_province = USA
+						units_in_province = 1
 						 }
 					 }
 				 }
@@ -2806,7 +2735,7 @@
 				 tag = THIS
 				 not = {
 					 9329 = {#San_Antonio
-						country_units_in_province = USA
+						units_in_province = 1
 						 }
 					 }
 				 }
@@ -2847,10 +2776,10 @@
 		 money = 10
 		 or = {
 			 9419 = {#Monterrey
-				country_units_in_province = MXR
+				units_in_province = 1
 				 }
 			 9388 = {#Reynosa
-				country_units_in_province = MXR
+				units_in_province = 1
 				 }
 			 }
 		 tag = MXR
@@ -2866,7 +2795,7 @@
 			 limit = {
 				 tag = THIS
 				 9420 = {#Corpus_Christi
-					country_units_in_province = USA
+					units_in_province = 1
 					 }
 				 }
 			 MXR = {
@@ -2877,7 +2806,7 @@
 			 limit = {
 				 tag = THIS
 				 9420 = {#Corpus_Christi
-					country_units_in_province = USA
+					units_in_province = 1
 					 }
 				 }
 			 USA = {
@@ -2889,7 +2818,7 @@
 				 tag = THIS
 				 not = {
 					 9420 = {#Corpus_Christi
-						country_units_in_province = USA
+						units_in_province = 1
 						 }
 					 }
 				 }
@@ -2902,7 +2831,7 @@
 				 tag = THIS
 				 not = {
 					 9420 = {#Corpus_Christi
-						country_units_in_province = USA
+						units_in_province = 1
 						 }
 					 }
 				 }
@@ -2942,7 +2871,7 @@
 			 }
 		 money = 10
 		 7369 = {#Tijuana
-			country_units_in_province = MXR
+			units_in_province = 1
 			 }
 		 tag = MXR
 		 date = 1914.8.4
@@ -2957,7 +2886,7 @@
 			 limit = {
 				 tag = THIS
 				 7350 = {#San_Diego
-					country_units_in_province = USA
+					units_in_province = 1
 					 }
 				 }
 			 MXR = {
@@ -2968,7 +2897,7 @@
 			 limit = {
 				 tag = THIS
 				 7350 = {#San_Diego
-					country_units_in_province = USA
+					units_in_province = 1
 					 }
 				 }
 			 USA = {
@@ -2979,7 +2908,7 @@
 			 limit = {
 				 tag = THIS
 				 7350 = {#San_Diego
-					country_units_in_province = USA
+					units_in_province = 1
 					 }
 				 }
 			 MXR = {
@@ -2990,7 +2919,7 @@
 			 limit = {
 				 tag = THIS
 				 7350 = {#San_Diego
-					country_units_in_province = USA
+					units_in_province = 1
 					 }
 				 }
 			 USA = {
@@ -3359,7 +3288,7 @@
 
 #Tucson raided!
 
- country_event = {
+country_event = {
 	title = "DH_EVENT_2049512_TITLE"
 	desc = "DH_EVENT_2049512_DESC"
 	id = 519
@@ -3368,27 +3297,26 @@
 	 
 	is_triggered_only = yes
 	 
-	trigger = {
-		 tag = USA
-		 }
+	trigger = { tag = USA }
+	
 	option = {
-		 name = "DH_EVENT_2049512_Option7"
-		 dissent = 1
-		 supplies = -80
-		 rare_materials = -10
-		 crude_oil = -10
-		 metal = -20
-		 energy = -35
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 not = {
-					 has_country_flag = USA_Mexican_Raids
-					 }
-				 }
-			 set_country_flag = USA_Mexican_Raids
-			 }
-		 }
+		name = "DH_EVENT_2049512_Option7"
+		dissent = 1
+		supplies = -80
+		rare_materials = -10
+		crude_oil = -10
+		metal = -20
+		energy = -35
+		random_country = {
+			limit = {
+				tag = THIS
+				not = {
+					has_country_flag = USA_Mexican_Raids
+					}
+				}
+			set_country_flag = USA_Mexican_Raids
+			}
+		}
 	}
 
 

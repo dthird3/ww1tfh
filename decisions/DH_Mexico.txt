@@ -1,44 +1,31 @@
-
 diplomatic_decisions = {
-	 2250500_decision = {#Launch_Raids_on_Tucson
-		ai_will_do = {
-			 factor = 1
-			 }
+	 2250500_decision = {                                #Launch_Raids_on_Tucson
+		ai_will_do = { factor = 1 }
+		
 		potential = {
-			 war = yes
-			 not = {
-				 MEX = {
-					 war_with = USA
-					 }
-				 }
-			 not = {
-				 MXR = {
-					 war_with = USA
-					 }
-				 }
-			 tag = MXR
-			 date = 1914.8.4
-			 not = {
-				 date = 1925.12.30
-				 }
-			 not = {
-				 has_country_flag = decision_2250500
-				 }
-			 }
+#			war = yes
+			not = { MEX = { war_with = USA } }
+			not = { MXR = { war_with = USA } }
+			tag = MXR
+#			date = 1914.8.4
+			date = 1910.5.1
+			not = { date = 1923.12.31 }
+			not = { has_country_flag = decision_2250500 }
+			}
+			
 		allow = {
-			 money = 10
-			 9203 = {#Hermosillo
-				empty = yes
-				 }
-			 }
-		effect = {
-			 country_event = 492 #Launch_Raids_on_Tucson
+			money = 10
+			9117 = { country_units_in_province = 1 }      #Nogales
+			}
+			 
+		effect = { 
+			country_event = 492                           #Launch_Raids_on_Tucson
 			set_country_flag = decision_2250500
-			 }
+			}
 		}
 	
 
-	 2250503_decision = {#Launch_Raids_on_El_Paso
+	 2250503_decision = {								  #Launch_Raids_on_El_Paso
 		ai_will_do = {
 			 factor = 1
 			 }
@@ -57,7 +44,7 @@ diplomatic_decisions = {
 			 tag = MXR
 			 date = 1914.8.4
 			 not = {
-				 date = 1925.12.30
+				 date = 1923.12.31
 				 }
 			 not = {
 				 has_country_flag = decision_2250503
@@ -95,7 +82,7 @@ diplomatic_decisions = {
 			 tag = MXR
 			 date = 1914.8.4
 			 not = {
-				 date = 1925.12.30
+				 date = 1923.12.31
 				 }
 			 not = {
 				 has_country_flag = decision_2250504
@@ -133,7 +120,7 @@ diplomatic_decisions = {
 			 tag = MXR
 			 date = 1914.8.4
 			 not = {
-				 date = 1925.12.30
+				 date = 1923.12.31
 				 }
 			 not = {
 				 has_country_flag = decision_2250505
@@ -176,7 +163,7 @@ diplomatic_decisions = {
 			 tag = MXR
 			 date = 1914.8.4
 			 not = {
-				 date = 1925.12.30
+				 date = 1923.12.31
 				 }
 			 not = {
 				 has_country_flag = decision_2250506
@@ -205,7 +192,7 @@ diplomatic_decisions = {
 			 tag = USA
 			 date = 1914.8.4
 			 not = {
-				 date = 1925.12.30
+				 date = 1923.12.31
 				 }
 			 not = {
 				 has_country_flag = decision_2049522
@@ -239,7 +226,7 @@ diplomatic_decisions = {
 			 tag = USA
 			 date = 1914.8.4
 			 not = {
-				 date = 1925.12.30
+				 date = 1923.12.31
 				 }
 			 not = {
 				 has_global_flag = SLEEPEVENT_2049523
@@ -278,7 +265,7 @@ diplomatic_decisions = {
 			 tag = USA
 			 date = 1914.8.4
 			 not = {
-				 date = 1925.12.30
+				 date = 1923.12.31
 				 }
 			 not = {
 				 has_country_flag = decision_2049525
@@ -325,7 +312,7 @@ diplomatic_decisions = {
 			 tag = USA
 			 date = 1914.8.4
 			 not = {
-				 date = 1925.12.30
+				 date = 1923.12.31
 				 }
 			 not = {
 				 has_global_flag = SLEEPEVENT_2049535
@@ -363,7 +350,7 @@ diplomatic_decisions = {
 			 tag = USA
 			 date = 1914.8.4
 			 not = {
-				 date = 1925.12.30
+				 date = 1923.12.31
 				 }
 			 not = {
 				 has_country_flag = decision_2049537
@@ -422,7 +409,7 @@ diplomatic_decisions = {
 			 tag = USA
 			 date = 1914.8.4
 			 not = {
-				 date = 1925.12.30
+				 date = 1923.12.31
 				 }
 			 not = {
 				 has_country_flag = decision_2049526
@@ -451,7 +438,7 @@ diplomatic_decisions = {
 			 tag = MEX
 			 date = 1914.8.4
 			 not = {
-				 date = 1925.12.30
+				 date = 1923.12.31
 				 }
 			 not = {
 				 has_country_flag = decision_2038501
@@ -480,7 +467,7 @@ diplomatic_decisions = {
 			 tag = MEX
 			 date = 1914.8.4
 			 not = {
-				 date = 1925.12.30
+				 date = 1923.12.31
 				 }
 			 not = {
 				 has_country_flag = decision_2038502
@@ -505,7 +492,7 @@ diplomatic_decisions = {
 			 tag = MXR
 			 date = 1914.8.4
 			 not = {
-				 date = 1925.12.30
+				 date = 1923.12.31
 				 }
 			 not = {
 				 has_country_flag = decision_2038505
