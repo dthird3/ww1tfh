@@ -44,15 +44,14 @@
 		MEX = { set_country_flag = "diaz_election_decided" }
 		MEX = { country_event = 101005 }   # Trigger revolution sooner
 		dissent = 8
-		national_unity = -5
+		national_unity = -1
 		}
 	option = {
 		name = "EVT1910_101002_OPTB"       # Allow the petitions of fraud to be reviewed by the Mexican Congress
 		ai_chance = { factor = 100 }
 		MEX = { set_country_flag = "diaz_rigged_election" }
-#		MEX = { country_event = 101004 }
 		MEX = { dissent = 4 }
-		MEX = { national_unity = -5 }
+		MEX = { national_unity = -1 }
 		}	 
 	}
 	
@@ -66,13 +65,12 @@
 	picture = "madero_election"
 		
 	major = yes
-	
-	mean_time_to_happen = { days = 60 }
 		 
 	fire_only_once = yes
 	
 	trigger = {
 		tag = MEX
+		date = 1910.9.27
 		MEX = { has_country_flag = "diaz_rigged_election" }
 		not = { MEX = { has_country_flag = "diaz_election_decided" } }
 		not = { USA = { has_country_flag = "diaz_crisis_over" } }
@@ -82,14 +80,12 @@
 		name = "ACTION_NAME_OF_COURSE"
 		MEX = { set_country_flag = "diaz_election_decided" }
 		MEX = { dissent = 4 }
-		MEX = { national_unity = -5 }
 		MEX = { country_event = 101005 }   			# Trigger revolution
 		}
 	}	
 	
 	
 # Madero goes to USA and prepares for revolution
-# may want to delay this a month
 
  country_event = {
 	title = "EVT1910_101005_TITLE"
@@ -103,6 +99,8 @@
 	fire_only_once = yes
 	
 	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 14 }
 
 	option = {
 		name = "ACTION_NAME_DAMN"
@@ -124,7 +122,7 @@
 	 
 	major = yes
 	
-	mean_time_to_happen = { days = 60 }
+	mean_time_to_happen = { days = 30 }
 	
 	fire_only_once = yes
 
@@ -135,9 +133,13 @@
 
 	option = {
 		name = "ACTION_NAME_FIGHT"
-			MEX = { national_unity = -5 }
+			ai_chance = { factor = 100 }
+			MEX = { national_unity = -2 }
 			MEX = { dissent = 5 }
 			USA = { end_guarantee = MEX } 
+			MEX = { kill_leader = 14710040 }
+			MEX = { kill_leader = 14710044 }
+			MEX = { kill_leader = 14710109 }
 			9268 = { secede_province = MXR }   # Chihuahua
 			9237 = { secede_province = MXR }   # Yecora
 			9298 = { secede_province = MXR }   # Uruachic
@@ -153,14 +155,11 @@
 			MXR = { officer_pool = 800 }
 			MXR = { money = 100 }
 			MXR = { energy = 600 }
-			MXR = { rare_materials = 50 }
-			MXR = { metal = 50 }
-			MXR = { war = { target = MEX
-				attacker_goal = { casus_belli = mexico_revolution }
-				}
-			}
+			MXR = { rare_materials = 100 }
+			MXR = { metal = 100 }
 			MEX = { set_country_flag = "madero_revolt" }
-# Check leaders , Caranza, Villa, Orozco and Reyes for MXR
+			MXR = { war = { target = MEX } }
+# Check leaders , Caranza, Villa, for MXR
 		}			
 	}
 
@@ -191,7 +190,7 @@
 		ai_chance = { factor = 100 }
 		9090 = { create_revolt = 1 }
 		7369 = { create_revolt = 1 }
-		MEX = { national_unity = -1 }
+		MEX = { dissent = 4 }
 		}
 	}
 	
@@ -214,7 +213,7 @@
 	option = {
 		ai_chance = { factor = 100 }
 		name = "ACTION_NAME_DAMN"
-		MEX = { national_unity = -4 }
+		MEX = { national_unity = -1 }
 		MEX = { dissent = 5 }
 		}
 	}
@@ -244,7 +243,7 @@
 		 
 	option = {
 		name = "ACTION_NAME_FIGHT"
-		national_unity = -1
+			MEX = { dissent = 4 }
 			9623 = { secede_province = MXR }   				   # Morelos - Cuernavaca (Immediately next to Mexico City)
 			9642 = { secede_province = MXR }   				   # Puebla
 			MXR = { load_oob = MXR_1910_zapata.txt }
@@ -254,8 +253,6 @@
 			MXR = { energy = 100 }
 			MXR = { rare_materials = 10 }
 			MXR = { metal = 10 }
-#			MEX = { load_oob = MEX_1910_mexcity.txt }		   # Defence Militia for Mexico City 
-#			MEX = { officer_pool = 40 }
 			MEX = { set_country_flag = zapata_revolt_diaz }
 		}			
 	}	
@@ -334,7 +331,7 @@
 		 
 	option = {
 		name = "ACTION_NAME_FIGHT"
-		dissent = 5
+		dissent = 3
 		}			
 	}	
 	
@@ -410,8 +407,6 @@
 	option = {										
 		name = "EVT1910_101024_OPTA"
 		MEX = { end_war = MXR }
-		MEX = { remove_brigade = "1. Brigada de Milicia" }  # City garrison stands down
-		MEX = { remove_brigade = "2. Brigada de Milicia" }
 		MEX = { MXR = { split_troops = 1.00 } }				# Federal Mexican Army comes under control of new Government
 		MXR = { inherit = MEX }
 #   Francisco de la Barra, a member of Mexico’s old elite, served briefly as president for 6 months pending an election  ###
