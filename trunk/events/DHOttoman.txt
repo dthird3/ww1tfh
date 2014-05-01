@@ -162,8 +162,8 @@
 	option = {
 		 name = "DH_EVENT_2191562_Option7"
 		 set_country_flag = baghdad_1
-		 metal = -10000
-		 money = -500
+		 metal = -1000
+		 money = -50
 		 set_global_flag = 2191562_EVENT_DONE
 		 }
 	}
@@ -289,8 +289,8 @@
 	option = {
 		 name = "DH_EVENT_2191564_Option7"
 		 set_country_flag = baghdad_2
-		 metal = -10000
-		 money = -500
+		 metal = -1000
+		 money = -50
 		 set_global_flag = 2191564_EVENT_DONE
 		 }
 	}
@@ -404,8 +404,8 @@
 	option = {
 		 name = "DH_EVENT_2191567_Option7"
 		 set_country_flag = baghdad_3
-		 metal = -10000
-		 money = -500
+		 metal = -1000
+		 money = -50
 		 set_global_flag = 2191567_EVENT_DONE
 		 }
 	}
@@ -507,8 +507,8 @@
 	option = {
 		 name = "DH_EVENT_2191569_Option7"
 		 set_country_flag = baghdad_4
-		 metal = -10000
-		 money = -500
+		 metal = -1000
+		 money = -50
 		 set_global_flag = 2191569_EVENT_DONE
 		 }
 	}
@@ -610,8 +610,8 @@
 	option = {
 		 name = "DH_EVENT_2191571_Option7"
 		 set_country_flag = baghdad_5
-		 metal = -10000
-		 money = -500
+		 metal = -1000
+		 money = -50
 		 set_global_flag = 2191571_EVENT_DONE
 		 }
 	}
@@ -745,7 +745,7 @@
 		 TUR = {
 			 country_event = 251 #Germany_extends_its_military_support
 			}
-		 kill_leader = 13110191 #Bronsart_von_Schellendorff
+	    kill_leader = 13110191 #Bronsart_von_Schellendorff
 		kill_leader = 13110022 #von_der_Goltz_R.
 		kill_leader = 13110171 #von_Lossow
 		kill_leader = 13130041 #Buddecke
@@ -881,7 +881,7 @@
 				 }
 			 supplies = -2000
 			 }
-		 kill_leader = 13110104 #von_Seeckt
+		kill_leader = 13110104 #von_Seeckt
 		kill_leader = 13110237 #von_Falkenhausen
 		kill_leader = 13120023 #von_Rebeur-Paschwitz
 		remove_minister = 13100215 #Erich_von_Falkenhayn
@@ -911,30 +911,27 @@
 	option = {
 		 name = "DH_EVENT_2145526_Option7"
 		 dissent = -2
-		 4503 = {#Istanbul
+		 4503 = {                                 #Istanbul
 			hq_brigade = current
 			 }
 		 random_owned = {
 			 limit = {
 				 controlled_by = THIS
 				 }
-			 infantry_brigade = current
 			 infantry_brigade = current
 			 infantry_brigade = current
 			 artillery_brigade = current
 			 }
-		 4503 = {#Istanbul
+		 4503 = {                                  #Istanbul
 			hq_brigade = current
 			 }
 		 random_owned = {
-			 limit = {
-				 controlled_by = THIS
-				 }
+			 limit = { controlled_by = THIS }
 			 hq_brigade = current
 			 hq_brigade = current
 			 hq_brigade = current
 			 }
-		 4503 = {#Istanbul
+		 4503 = {                                 #Istanbul
 			hq_brigade = current
 			 }
 		 random_owned = {
@@ -944,7 +941,7 @@
 				 }
 			 interceptor = current
 			 }
-		 kill_leader = 17510099 #Bronsart_von_Schellendorf
+		kill_leader = 17510099 #Bronsart_von_Schellendorf
 		kill_leader = 17520029 #Souchon
 		}
 	}
