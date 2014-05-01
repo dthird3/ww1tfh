@@ -1,6 +1,29 @@
-
+	 new_deal2 = {                                  #Pre-World_War_I_reform_and_economic_volatility
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = USA
+			 not = {
+				 has_country_modifier = us_new_deal
+				 }
+			 not = {
+				 has_country_flag = nd
+				 }
+			 }
+		allow = {
+			 }
+		effect = {
+			 set_country_flag = nd
+			 add_country_modifier = {
+				 name = "us_new_deal"
+				 duration = -1
+				 }
+			 }
+		}
+		
 diplomatic_decisions = {
-	 USA_DIAZ = {#Mexican_Revolutionaries
+	 USA_DIAZ = {                                    #Mexican_Revolutionaries
 		ai_will_do = {
 			 factor = 1
 			 }
@@ -33,7 +56,7 @@ diplomatic_decisions = {
 		}
 	
 
-	 USA_madero = {#Replace_Madero
+	 USA_madero = {                                             #Replace_Madero
 		ai_will_do = {
 			 factor = 1
 			 }
@@ -80,7 +103,7 @@ diplomatic_decisions = {
 		}
 	
 
-	 USA_NIC = {#Banana_Wars:_Nicaragua
+	 USA_NIC = {                                             #Banana_Wars:_Nicaragua
 		ai_will_do = {
 			 factor = 1
 			 }
@@ -94,38 +117,10 @@ diplomatic_decisions = {
 					 }
 				 }
 			 }
-		allow = {
-			 war = no
-			 }
+		allow = { war = no }
 		effect = {
 			 set_country_flag = ban_nic
-			 country_event = 100300 #Occupation_of_Nicaragua
+			 country_event = 100300                         #Occupation_of_Nicaragua
 			}
 		}
-	
-
-	 new_deal2 = {#Pre-World_War_I_reform_and_economic_volatility
-		ai_will_do = {
-			 factor = 1
-			 }
-		potential = {
-			 tag = USA
-			 not = {
-				 has_country_modifier = us_new_deal
-				 }
-			 not = {
-				 has_country_flag = nd
-				 }
-			 }
-		allow = {
-			 }
-		effect = {
-			 set_country_flag = nd
-			 add_country_modifier = {
-				 name = "us_new_deal"
-				 duration = -1
-				 }
-			 }
-		}
 	}
-
