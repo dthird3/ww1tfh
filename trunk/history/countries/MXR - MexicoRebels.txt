@@ -14,7 +14,7 @@ chief_of_air = 15100009 #Gustavo_Salinas_Camina
 
 
 alignment = { x = -40 y = -7.6 }
-neutrality = 80
+neutrality = 100
 national_unity = 80
 officers_ratio = 1.2
 
@@ -44,12 +44,12 @@ stalinist = 0
 }
 
 training_laws = minimal_training
-press_laws = free_press
-industrial_policy_laws = consumer_product_orientation
+press_laws = censored_press
+industrial_policy_laws = mixed_industry
 education_investment_law = average_education_investment
-economic_law = full_civilian_economy
-conscription_law = volunteer_army
-civil_law = open_society
+economic_law = total_economic_mobilisation
+conscription_law = service_by_requirement
+civil_law = limited_restrictions
 energy = 240
 metal = 120
 rare_materials = 60
@@ -330,6 +330,9 @@ strategic_air_command = 0
 
 
 
+
+
+
 1914.1.1 = {
 infantry_theory = 1
 infantry_practical = 1
@@ -602,5 +605,7 @@ scout_pilot_training = 0
 strategic_air_command = 0
 }
 
-1914.1.1 = { oob = "MXR_1914.txt" }  # Carranza's army
+1914.1.1 = { head_of_state = 15100001                #Francisco_I._Madero
+			 head_of_government = 15100001 }         #Francisco_I._Madero
+1914.1.1 = { oob = "MXR_1914.txt" }                  # Heurta's army
 1914.1.1 = { neutrality = 100 }

@@ -1,4 +1,6 @@
-	 new_deal2 = {                                  #Pre-World_War_I_reform_and_economic_volatility
+diplomatic_decisions = {	
+ 
+		new_deal2 = {                                  #Pre-World_War_I_reform_and_economic_volatility
 		ai_will_do = {
 			 factor = 1
 			 }
@@ -21,8 +23,7 @@
 				 }
 			 }
 		}
-		
-diplomatic_decisions = {
+
 	 USA_DIAZ = {                                    #Mexican_Revolutionaries
 		ai_will_do = {
 			 factor = 1
@@ -62,43 +63,22 @@ diplomatic_decisions = {
 			 }
 		potential = {
 			 tag = USA
-			 MXR = {
-				 has_country_flag = "zapata_rebels"
-				 }
+			 MXR = { has_country_flag = "zapata_rebels" }
 			 NOT = {
-				 MXR = {
-					 has_country_flag = "huerta_president"
-					 }
-				 USA = {
-					 has_country_flag = "madero_coup"
-					 }
+				 MXR = { has_country_flag = "huerta_president" }
+				 USA = { has_country_flag = "madero_coup" }
 				 }
 			 }
 		allow = {
-			 MXR = {
-				 has_country_flag = "zapata_rebels"
-				 }
-			 MXR = {
-				 has_country_flag = "reyes_rebels"
-				 }
-			 MXR = {
-				 has_country_flag = "orozco_rebels"
-				 }
-			 MXR = {
-				 has_country_flag = "diaz_rebels"
-				 }
-			 MXR = {
-				 num_of_revolts = 1
-				 
-				 }
+			 MXR = { has_country_flag = "zapata_rebels" }
+			 MXR = { has_country_flag = "reyes_rebels" }
+			 MXR = { has_country_flag = "orozco_rebels" }
+			 MXR = { has_country_flag = "diaz_rebels" }
+			 MXR = { num_of_revolts = 1	}
 			 }
 		effect = {
-			 USA = {
-				 set_country_flag = "madero_coup"
-				 }
-			 USA = {
-				 country_event = 101036 #101036
-				}
+			 USA = { set_country_flag = "madero_coup" }
+			 USA = { country_event = 101036 } #101036	
 			 }
 		}
 	
