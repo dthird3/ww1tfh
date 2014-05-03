@@ -3,7 +3,7 @@ diplomatic_decisions = {
 		ai_will_do = { factor = 1 }
 		
 		potential = {
-#			war = yes
+			war = yes
 			not = { MEX = { war_with = USA } }
 			not = { MXR = { war_with = USA } }
 			tag = MXR
@@ -15,7 +15,7 @@ diplomatic_decisions = {
 			
 		allow = {
 			money = 10
-			9117 = { country_units_in_province = 1 }      #Nogales
+			MXR = { 9117 = { units_in_province = 1 } }     #Nogales
 			}
 			 
 		effect = { 
@@ -51,13 +51,11 @@ diplomatic_decisions = {
 				 }
 			 }
 		allow = {
-			 money = 10
-			 9147 = {#Ciudad_Juárez
-				country_units_in_province = MXR
-				 }
-			 }
+			money = 10
+			MXR = { 9147 = { units_in_province = 1 } }    #Ciudad_Juárez
+			}
 		effect = {
-			 country_event = 495 #Launch_Raids_on_El_Paso
+			 country_event = 495                          #Launch_Raids_on_El_Paso
 			set_country_flag = decision_2250503
 			 }
 		}
@@ -89,19 +87,18 @@ diplomatic_decisions = {
 				 }
 			 }
 		allow = {
-			 money = 10
-			 9269 = {#Ciudad_Acuña
-				country_units_in_province = MXR
-				 }
-			 }
+			money = 10
+			MXR = { 9269 = { units_in_province = 1 } }     #Ciudad_Acuña
+			}
+			
 		effect = {
-			 country_event = 496 #Launch_Raids_on_San_Antonio
+			country_event = 496                            #Launch_Raids_on_San_Antonio
 			set_country_flag = decision_2250504
-			 }
+			}
 		}
 	
 
-	 2250505_decision = {#Launch_Raids_on_Corpus_Christi
+	 2250505_decision = {                                    #Launch_Raids_on_Corpus_Christi
 		ai_will_do = {
 			 factor = 1
 			 }
@@ -127,24 +124,21 @@ diplomatic_decisions = {
 				 }
 			 }
 		allow = {
-			 money = 10
-			 or = {
-				 9419 = {#Monterrey
-					country_units_in_province = MXR
-					 }
-				 9388 = {#Reynosa
-					country_units_in_province = MXR
-					 }
-				 }
-			 }
+			money = 10
+			or = {
+				MXR = { 9419 = { units_in_province = 1 } }        #Monterrey
+				MXR = { 9388 = { units_in_province = 1 } }        #Reynosa
+				}
+			}
+
 		effect = {
-			 country_event = 497 #Launch_Raids_on_Corpus_Christi
+			 country_event = 497                         #Launch_Raids_on_Corpus_Christi
 			set_country_flag = decision_2250505
 			 }
 		}
 	
 
-	 2250506_decision = {#Launch_Raids_on_San_Diego
+	 2250506_decision = {                                #Launch_Raids_on_San_Diego
 		ai_will_do = {
 			 factor = 1
 			 }
@@ -170,13 +164,11 @@ diplomatic_decisions = {
 				 }
 			 }
 		allow = {
-			 money = 10
-			 7369 = {#Tijuana
-				country_units_in_province = MXR
-				 }
-			 }
+			money = 10
+			MXR = { 7369 = { units_in_province = 1 } }     #Tijuana
+			}
 		effect = {
-			 country_event = 498 #Launch_Raids_on_San_Diego
+			 country_event = 498                           #Launch_Raids_on_San_Diego
 			set_country_flag = decision_2250506
 			 }
 		}

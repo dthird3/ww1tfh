@@ -14,13 +14,6 @@
 # local_partisan_Support    add an increase of revolt_risk, so you can see it as Derivation in time of revolt_risk
 
 
-#surrender_progress
-#Unlike the lost_national, this checks directly for surrender progress.
-#Since FTM 3.05, the surrender formula is counted as CoreStillControlledVPs / OwnedVPs;
-#i.e. the x per cent loss of victory points located in provinces,
-#which the current country has both cores and ownership of
-#Syntax: surrender_progress = x
-
 
 
 # Mexican 1910 Rigged Elections
@@ -62,6 +55,7 @@
 		MEX = { national_unity = -1 }
 		}	 
 	}
+	
 	
 # Mexican 1910 Elections Decided    The Mexican Congress denied the request on September 27, 1910, and declared Díaz and Corral elected.
 
@@ -106,12 +100,12 @@
 	
 	fire_only_once = yes
 	
+	mean_time_to_happen = { days = 15 }
+	
 	trigger = {
 		tag = MEX
 		MEX = { has_country_flag = "diaz_election_decided" }
 	}
-	
-	mean_time_to_happen = { days = 15 }
 
 	option = {
 		name = "ACTION_NAME_DAMN"
@@ -134,7 +128,7 @@
 	 
 	major = yes
 	
-	mean_time_to_happen = { days = 30 }
+	mean_time_to_happen = { days = 20 }
 	
 	fire_only_once = yes
 
@@ -282,17 +276,13 @@
 		
 	major = yes
 	
-	mean_time_to_happen = { days = 3 }
+	mean_time_to_happen = { days = 0 }
 
 	trigger = {
 		tag = MEX
 		MEX = {	war_with = MXR }
 		MEX = { not = { has_country_flag = "diaz_coup_attempt" }}
-		or = {
-			9604 = {													# Mexico City
-				any_neighbor_province = { controlled_by = MXR }
-				}
-			}
+		9604 = { any_neighbor_province = { controlled_by = MXR } }	# Mexico City
 		}
 		
 	option = {
@@ -365,7 +355,7 @@
 		or = {
 			 MEX = { not = { controls = 9604 } }                   # Ciudad Mexico
 			 MEX = { MEX = { not = { controls = 9147 } }           # Ciudad Juarez
-					 MEX = { surrender_progress = 0.6 } }  
+					 MEX = { surrender_progress = 50 } }  
 			}
 	}
 		
@@ -420,8 +410,9 @@
 		MEX = { end_war = MXR }
 		MEX = { MXR = { split_troops = 1.00 } }				# Federal Mexican Army comes under control of new Government
 		MXR = { inherit = MEX }
-#   Francisco de la Barra, a member of Mexico’s old elite, served briefly as president for 6 months pending an election  ###
-#   New Madero minister's are the SAME as Diaz (atm) until election later   ###
+		any_owned = {
+				limit = { is_core = MXR }
+				remove_core = MEX }
 		MXR = { capital = 9604 }       						# Ciudad de México
 		MXR = { money = +200 }	
 		USA = { set_country_flag = "diaz_crisis_over" }
@@ -432,34 +423,8 @@
 ####   Allow for Rebel defeat - Diaz takes Govt, later retires and hands over to Vice President - later new revolution against them 	
 ####   On Rebel defeat set "diaz_crisis_over" flag for USA, Diaz regime to recover some NU etc
 
-
-# Election to bring Madero into President  November 1911 - 6 months after Diaz resigns
-
- country_event = {
-	title = "EVT1910_101026_TITLE"
-	desc = "EVT1910_101026_DESC"
-	id = 101026
-	 
-	picture = "madero_election"
-	
-	fire_only_once = yes
-	
-	major = yes
-	
-	mean_time_to_happen = { months = 5 }
-
-	trigger = {
-		tag = MXR
-		MXR = { has_country_flag = "diaz_defeated" }
-	}
-	
-	option = {										
-		name = "ACTION_NAME_GREAT"
-		MXR = { set_country_flag = "madero_president" }
 ## make Madero minister President and remove Francisco de la Barra - add Madero's VP Pino Suarez
 # General Felipe Angeles - Madero's leader
-		}
-	}	
 
 	
 ### Consider using 
@@ -491,19 +456,21 @@
 	
 	major = yes
 	
-	mean_time_to_happen = { days = 7 }
+	mean_time_to_happen = { months = 3 }
 
 	trigger = {
 		tag = MXR
-		MXR = { has_country_flag = "madero_president" }
+		MXR = { has_country_flag = "diaz_defeated" }
 		not = { MXR = { has_country_flag = "huerta_president" } }
 	}
 	
 	option = {										
 		name = "ACTION_NAME_DAMN"
-		9623 = { create_revolt = 4 }    # Morelos
-		9604 = { create_revolt = 4 }    # Mexico City needs to be garrisoned
+		9623 = { create_revolt = 4 }                                   # Morelos
+		9623 = { random_neighbor_province = { create_revolt = 4 } }    # Morelos
+		9604 = { random_neighbor_province = { create_revolt = 4 } }    # Mexico City needs to be garrisoned
 		MXR = { dissent = 3 }
+		MXR = { kill_leader = 15110195 }
 		MXR = { set_country_flag = "zapata_rebels" }
 		}
 	}
@@ -526,19 +493,21 @@
 
 	trigger = {
 		tag = MXR
-		MXR = { has_country_flag = "reyes_rebels" }
+		MXR = { has_country_flag = "zapata_rebels" }
 		not = { MXR = { has_country_flag = "huerta_president" } }
 	}
 	
 	option = {										
 		name = "ACTION_NAME_DAMN"
 		9355 = { create_revolt = 6 }    # Nuevo Laredo
+		9355 = { random_neighbor_province = { create_revolt = 6 } }
 		9419 = { create_revolt = 6 }    # Monterrey
 		9480 = { create_revolt = 6 }    # Galeana
+		9480 = { random_neighbor_province = { create_revolt = 6 } }
 		9449 = { create_revolt = 6 }    # Mendez
 		MXR = { dissent = 3 }
+		MXR = { kill_leader = 15110130 }
 		MXR = { set_country_flag = "reyes_rebels" }
-# Reyes leader leaves MXR - kill leader out of MXR
 		}
 	}
 
@@ -556,7 +525,7 @@
 	
 	major = yes
 	
-	mean_time_to_happen = { months = 4 }
+	mean_time_to_happen = { months = 3 }
 
 	trigger = {
 		tag = MXR
@@ -566,11 +535,13 @@
 	
 	option = {										
 		name = "ACTION_NAME_DAMN"
-		9268 = { create_revolt = 8 }    # Chihuahua
-		9237 = { create_revolt = 8 }    # Yecora
-		9298 = { create_revolt = 8 }    # Uruachic
-		9203 = { create_revolt = 8 }    # Hermosillo
+		9268 = { create_revolt = 4 }                                   # Chihuahua
+		9268 = { random_neighbor_province = { create_revolt = 4 } }    # Chihuahua
+		9237 = { random_neighbor_province = { create_revolt = 4 } }    # Yecora
+		9298 = { random_neighbor_province = { create_revolt = 4 } }    # Uruachic
+		9203 = { random_neighbor_province = { create_revolt = 4 } }    # Hermosillo
 		MXR = { dissent = 3 }
+		MXR = { kill_leader = 15110202 }
 		MXR = { set_country_flag = "orozco_rebels" }
 		}
 	}
@@ -589,7 +560,7 @@
 	
 	major = yes
 	
-	mean_time_to_happen = { months = 10 }
+	mean_time_to_happen = { months = 8 }
 
 	trigger = {
 		tag = MXR
@@ -600,7 +571,8 @@
 	option = {										
 		name = "ACTION_NAME_DAMN"
 		9624 = { create_revolt = 6 }    # Vera Cruz
-#		9203 = { empty = yes }
+		9624 = { random_neighbor_province = { create_revolt = 4 } }
+		MXR = { dissent = 3 }
 		MXR = { set_country_flag = "diaz_rebels" }
 		}
 	}
@@ -731,8 +703,9 @@
 	
 	option = {										
 		name = "ACTION_NAME_DAMN"
-		# Kill Madero and VP
-		# Huerta takes power
+		remove_minister = 15100001			# Madero
+		head_of_state = 15100032			# Huerta
+		head_of_government = 15100032		# Huerta
 		USA = { clr_country_flag = "support_madero_coup" }
 		USA = { clr_country_flag = "no_madero_coup" }
 		MXR = { set_country_flag = "Ten_Tragic_Days" }
@@ -763,8 +736,9 @@
 	}
 	
 	option = {										
-		name = "ACTION_NAME_DAMN"
-		# Kill Huetra, Reyes & Diaz, Mondragon
+		name = "ACTION_NAME_GREAT"
+		remove_minister = 15100032			# Huerta
+		kill_leader = 15110202				# Huerta
 		USA = { clr_country_flag = "support_madero_coup" }
 		USA = { clr_country_flag = "no_madero_coup" }
 		MXR = { set_country_flag = "Ten_Tragic_Days" }
@@ -786,7 +760,7 @@
 	
 	fire_only_once = yes
 
-	mean_time_to_happen = { days = 30 }
+	mean_time_to_happen = { days = 15 }
 
 	trigger = {
 		tag = MXR
@@ -796,9 +770,9 @@
 	option = {
 		name = "ACTION_NAME_FIGHT"
 			any_owned = {
-			limit = { is_core = MXR }
-			add_core = MXC }
-			MXR = { national_unity = -5 }
+				limit = { is_core = MXR }
+				add_core = MXC }
+			MXR = { national_unity = -1 }
 			MXR = { dissent = 5 }
 			9268 = { secede_province = MXC }   # Chihuahua
 			9237 = { secede_province = MXC }   # Yecora
@@ -817,10 +791,7 @@
 			MXC = { energy = 600 }
 			MXC = { rare_materials = 50 }
 			MXC = { metal = 50 }
-			MXC = { war = { target = MXR
-				attacker_goal = { casus_belli = mexico_revolution }
-				}
-			}
+			MXC = { war = { target = MXR } }
 			MXR = { set_country_flag = "carranza_revolt" }
 		}			
 	}
@@ -834,7 +805,6 @@
 # Venustiano Carranza, a politician and rancher from Coahuila, was at the forefront of opposition to Huerta, 
 # and organized his own rebel army, called the Constitutionalists, with the secret support of the United States
 # Villa, Zapata, Carranza and Álvaro Obregón led the fight against Huerta
-# Feliz Diaz sent to Japan as ambassador by Heurta
 ### Tampico & Vera Cruz effects
 # April 1914, U.S. opposition to Huerta had reached its peak when American forces seized and occupied the port of Veracruz, 
 # cutting off arms, supplies and money from Germany, which supported Huerta
