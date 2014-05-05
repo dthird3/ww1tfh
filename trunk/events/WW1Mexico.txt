@@ -169,6 +169,11 @@
 		}			
 	}
 
+# The first legion of foreign mercenaries, during the 1910 Madero revolt, was the Falange de los Extranjeros (Foreign Phalanx), 
+# which included Giuseppe ("Peppino") Garibaldi, grandson of the famed Italian unifier, as well as many American recruits.
+# Later, during the revolt against the coup d'état of Victoriano Huerta, many of the same foreigners and others were recruited 
+# and enlisted by Pancho Villa and his División del Norte. 	
+	
 
 # Magonista's Rebel 29/1/11  
 
@@ -709,6 +714,7 @@
 		USA = { clr_country_flag = "support_madero_coup" }
 		USA = { clr_country_flag = "no_madero_coup" }
 		MXR = { set_country_flag = "Ten_Tragic_Days" }
+		MXR = { set_country_flag = "Huerta_Coup" }
 		}
 	}
 	
@@ -805,13 +811,29 @@
 # Venustiano Carranza, a politician and rancher from Coahuila, was at the forefront of opposition to Huerta, 
 # and organized his own rebel army, called the Constitutionalists, with the secret support of the United States
 # Villa, Zapata, Carranza and Álvaro Obregón led the fight against Huerta
-### Tampico & Vera Cruz effects
-# April 1914, U.S. opposition to Huerta had reached its peak when American forces seized and occupied the port of Veracruz, 
-# cutting off arms, supplies and money from Germany, which supported Huerta
 
 ### Defeat Huerta
 
 
+#   USA Occupies Vera Cruz
+
+ country_event = {
+	title = "EVT1914_101050_TITLE"
+	desc = "EVT1914_101050_DESC"
+	id = 101050
+	 
+	picture = "Vera_Cruz_1"
+	
+	fire_only_once = yes
+	
+	major = yes
+	 
+	is_triggered_only = yes
+	
+	option = {										
+		name = "ACTION_NAME_DAMN"
+		}
+	}
 	
 ##################   DH EVENTS  ###################################################	
 
@@ -4147,7 +4169,7 @@ country_event = {
 			 }
 		 }
 	option = {
-		 name = "DH_EVENT_2038501_Option7"
+		 name = "ACTION_NAME_OK"
 		 join_faction = axis
 		 }
 	}
@@ -4175,23 +4197,19 @@ country_event = {
 			 }
 		 war = no
 		 or = {
-			 year = 1915
-			 and = {
-				 year = 1914
-				 month = 10
-				 }
-			 not = {
-				 exists = MXR
-				 }
-			 }
-		 tag = MEX
-		 date = 1914.8.4
-		 not = {
-			 date = 1925.12.30
-			 }
+			year = 1915
+			and = {
+				year = 1914
+				month = 10
+			}
+			not = { exists = MXR }
+		}
+		tag = MEX
+		date = 1914.8.4
+		not = { date = 1925.12.30 }
 		 }
 	option = {
-		 name = "DH_EVENT_2038502_Option7"
+		 name = "ACTION_NAME_OK"
 		 war = {
 			 target = USA
 			 }

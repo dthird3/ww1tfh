@@ -166,44 +166,33 @@
 	 
 	is_triggered_only = yes
 	 
-	mean_time_to_happen = {
-		 days = 30
-		 }
+	mean_time_to_happen = { days = 30 }
 	trigger = {
-		 ITA = {
-			 war_with = AUH
-			 }
-		 or = {
-			 chief_of_staff = 14100085 #Luigi_Cadorna
-			}
-		 not = {
-			 or = {
-				 chief_of_staff = 14100086 #Armando_Diaz
-				}
-			 }
+		 ITA = { war_with = AUH }
+		 or = { chief_of_staff = 14100085 }                 #Luigi_Cadorna
+		 not = { or = { chief_of_staff = 14100086 } }         #Armando_Diaz
 		 or = {
 			 not = {
-				 3562 = {#Udine
+				 3562 = {								#Udine
 					controlled_by = THIS
 					 }
 				 }
 			 not = {
-				 3561 = {#Treviso
+				 3561 = {								#Treviso
 					controlled_by = THIS
 					 }
 				 }
 			 not = {
-				 3429 = {#Lienz
+				 3429 = {									#Lienz
 					controlled_by = THIS
 					 }
 				 }
 			 }
 		 tag = ITA
 		 date = 1914.1.1
-		 not = {
-			 date = 1925.12.30
-			 }
+		 not = { date = 1923.12.31 }
 		 }
+		 
 	option = {
 		 name = "DH_EVENT_2006516_Option7"
 		 chief_of_staff = 14100086 #Armando_Diaz
@@ -239,16 +228,12 @@
 	mean_time_to_happen = {
 		 days = 5
 		 }
-	trigger = {
-		 dissent = 35
-		 or = {
-			 war = yes
-			 }
-		 tag = GER
-		 date = 1914.1.1
-		 not = {
-			 date = 1925.12.30
-			 }
+	trigger = { dissent = 35
+			or = {
+				war = yes }
+		tag = GER
+		date = 1914.1.1
+		not = { date = 1923.12.31 }
 		 }
 	option = {
 		 name = "DH_EVENT_2191515_Option7"
@@ -538,336 +523,6 @@
 	}
 
 
-#The Matamoros Incident have been settled
-
- country_event = {
-	title = "DH_EVENT_2049510_TITLE"
-	desc = "DH_EVENT_2049510_DESC"
-	id = 517
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = {
-		 days = 1
-		 }
-	trigger = {
-		 war = no
-		 9624 = {#Veracruz
-			controlled_by = USA
-			 }
-		 tag = USA
-		 date = 1914.10.10
-		 not = {
-			 date = 1925.12.30
-			 }
-		 }
-	option = {
-		 name = "DH_EVENT_2049510_Option7"
-		 dissent = -1
-		 }
-	}
-
-
-#Leave Veracruz
-
- country_event = {
-	title = "DH_EVENT_2049511_TITLE"
-	desc = "DH_EVENT_2049511_DESC"
-	id = 518
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	mean_time_to_happen = {
-		 days = 5
-		 }
-	trigger = {
-		 war_with = GER
-		 9624 = {#Veracruz
-			controlled_by = USA
-			 }
-		 war = no
-		 tag = USA
-		 date = 1914.8.4
-		 not = {
-			 date = 1925.12.30
-			 }
-		 }
-	option = {
-		 name = "DH_EVENT_2049511_Option7"
-		 dissent = -1
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 exists = MEX
-				 }
-			 9567 = {#Tampico
-				secede_province = MEX
-				 }
-			 9588 = {#Poza_Rica
-				secede_province = MEX
-				 }
-			 9624 = {#Veracruz
-				secede_province = MEX
-				 }
-			 9625 = {#Comalcalco
-				secede_province = MEX
-				 }
-			 9643 = {#Coatzacoalcos
-				secede_province = MEX
-				 }
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 exists = MXR
-				 not = {
-					 exists = MEX
-					 }
-				 }
-			 9567 = {#Tampico
-				secede_province = MXR
-				 }
-			 9588 = {#Poza_Rica
-				secede_province = MXR
-				 }
-			 9624 = {#Veracruz
-				secede_province = MXR
-				 }
-			 9625 = {#Comalcalco
-				secede_province = MXR
-				 }
-			 9643 = {#Coatzacoalcos
-				secede_province = MXR
-				 }
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 exists = MXR
-				 not = {
-					 exists = MEX
-					 exists = MXR
-					 }
-				 }
-			 9567 = {#Tampico
-				secede_province = MXR
-				 }
-			 9588 = {#Poza_Rica
-				secede_province = MXR
-				 }
-			 9624 = {#Veracruz
-				secede_province = MXR
-				 }
-			 9625 = {#Comalcalco
-				secede_province = MXR
-				 }
-			 9643 = {#Coatzacoalcos
-				secede_province = MXR
-				 }
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 exists = MXR
-				 not = {
-					 exists = MEX
-					 exists = MXR
-					 }
-				 }
-			 9567 = {#Tampico
-				secede_province = MXR
-				 }
-			 9588 = {#Poza_Rica
-				secede_province = MXR
-				 }
-			 9624 = {#Veracruz
-				secede_province = MXR
-				 }
-			 9625 = {#Comalcalco
-				secede_province = MXR
-				 }
-			 9643 = {#Coatzacoalcos
-				secede_province = MXR
-				 }
-			 }
-		 }
-	}
-
-
-#Occupation of Haiti
-
- country_event = {
-	title = "DH_EVENT_2049538_TITLE"
-	desc = "DH_EVENT_2049538_DESC"
-	id = 541
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	mean_time_to_happen = {
-		 days = 60
-		 }
-	trigger = {
-		 exists = HAI
-		 not = {
-			 HAI = {
-				 is_subject = yes
-				 }
-			 }
-		 not = {
-			 USA = {
-				 war_with = HAI
-				 }
-			 }
-		 not = {
-			 USA = {
-				 alliance_with = HAI
-				 }
-			 }
-		 not = {
-			 THIS = {
-				 surrender_progress = 5
-				 }
-			 }
-		 or = {
-			 GER = {
-				 war_with = FRA
-				 }
-			 GER = {
-				 war_with = ENG
-				 }
-			 }
-		 tag = USA
-		 date = 1915.7.27
-		 not = {
-			 date = 1925.12.30
-			 }
-		 }
-	option = {
-		 ai_chance = {
-			 factor = 90
-			 }
-		 name = "DH_EVENT_2049538_Option1"
-		 create_vassal = HAI
-		 dissent = -1
-		 supplies = -200
-		 neutrality = -5
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 not = {
-					 DOM = {
-						 vassal_of = USA
-						 }
-					 }
-				 }
-			 relation = {
-				 who = DOM
-				 value = -100
-				 }
-			 }
-		 }
-	option = {
-		 name = "DH_EVENT_2049538_Option2"
-		 ai_chance = {
-			 factor = 10
-			 }
-		 dissent = 1
-		 neutrality = 5
-		 }
-	}
-
-
-#Occupation of the Dominican Republic
-
- country_event = {
-	title = "DH_EVENT_2049539_TITLE"
-	desc = "DH_EVENT_2049539_DESC"
-	id = 542
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	mean_time_to_happen = {
-		 days = 60
-		 }
-	trigger = {
-		 exists = DOM
-		 not = {
-			 DOM = {
-				 is_subject = yes
-				 }
-			 }
-		 not = {
-			 USA = {
-				 war_with = DOM
-				 }
-			 }
-		 not = {
-			 USA = {
-				 alliance_with = DOM
-				 }
-			 }
-		 not = {
-			 THIS = {
-				 surrender_progress = 5
-				 }
-			 }
-		 or = {
-			 GER = {
-				 war_with = FRA
-				 }
-			 GER = {
-				 war_with = ENG
-				 }
-			 }
-		 tag = USA
-		 date = 1916.5.12
-		 not = {
-			 date = 1925.12.30
-			 }
-		 }
-	option = {
-		 ai_chance = {
-			 factor = 90
-			 }
-		 name = "DH_EVENT_2049539_Option1"
-		 create_vassal = DOM
-		 dissent = -1
-		 supplies = -200
-		 neutrality = -5
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 not = {
-					 HAI = {
-						 vassal_of = USA
-						 }
-					 }
-				 }
-			 relation = {
-				 who = HAI
-				 value = -100
-				 }
-			 }
-		 }
-	option = {
-		 name = "DH_EVENT_2049539_Option2"
-		 ai_chance = {
-			 factor = 10
-			 }
-		 dissent = 1
-		 neutrality = 5
-		 }
-	}
-
-
 #The Contestado War
 #NOEQUIVALENT random =  10
 
@@ -898,4 +553,3 @@
 		 dissent = 5
 		 }
 	}
-
