@@ -137,6 +137,31 @@
 		 }
 	}
 
+		
+#The Tampico Incident (Pre-cusor to occupation on Vera Cruz)
+
+ country_event = {
+	title = "EVT1914_101494_TITLE"
+	desc = "EVT1914_101494_DESC"
+	id = 101494
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		war = no
+		9624 = { controlled_by = USA }                               # Veracruz
+		tag = USA
+		date = 1914.10.10
+		not = { date = 1923.12.31 }
+		}
+	option = {
+		name = "ACTION_NAME_GREAT"
+		}
+	}
+	
 
 #We did it!  The Panama Canal is officially opened.
 
@@ -149,9 +174,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = {
-		 days = 0
-		 }
+	mean_time_to_happen = { days = 0 }
 	major = yes
 	 
 	trigger = {
@@ -166,3 +189,184 @@
 		 money = 100
 		 }
 	}
+	
+
+# Occupy Veracruz
+
+ country_event = {
+	title = "EVT1914_101510_TITLE"
+	desc = "EVT1914_101510_DESC"
+	id = 101510
+	
+	picture = "Ypiranga"
+	
+	major = yes
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		name = "ACTION_NAME_OK"
+		USA = { country_event = 101512 }				# Stop the arms shipment
+	}
+}	
+
+
+# Occupy Veracruz
+
+ country_event = {
+	title = "EVT1914_101512_TITLE"
+	desc = "EVT1914_101512_DESC"
+	id = 101512
+	
+	picture = "Vera_Cruz_2"
+	
+	major = yes
+	 
+	fire_only_once = yes
+	
+	mean_time_to_happen = { days = 30 }
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		name = "EVT1914_101512_DESC"
+		dissent = 2
+		9624 = { add_core = USA }
+		9624 = { secede_province = USA }				# Veracruz
+		MXR = { country_event = 101050 }				# Occupy Veracruz
+		MXC = { country_event = 101050 }				# Occupy Veracruz
+	}
+}	
+		
+	
+#Leave Veracruz
+
+ country_event = {
+	title = "DH_EVENT_2049511_TITLE"
+	desc = "DH_EVENT_2049511_DESC"
+	id = 518
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 5
+		 }
+	trigger = {
+		 war_with = GER
+		 9624 = { controlled_by = USA }                                #Veracruz
+		 war = no
+		 tag = USA
+		 date = 1914.8.4
+		 not = { date = 1923.12.31 }
+		 }
+	option = {
+		name = "DH_EVENT_2049511_Option7"
+		dissent = -1
+		random_country = {
+			limit = {
+				tag = THIS
+				exists = MEX }
+			9624 = { secede_province = MEX }						#Veracruz
+			9624 = { remove_core = USA }
+		}
+		random_country = {
+			limit = {
+				tag = THIS
+				exists = MXR
+				not = { exists = MEX }
+				}
+			9624 = { secede_province = MXR }						#Veracruz
+		}
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 exists = MXR
+				 not = {
+					 exists = MEX
+					 exists = MXR
+					 }
+				 }
+			9624 = { secede_province = MXR }						#Veracruz
+			 }
+		random_country = {
+			 limit = {
+				 tag = THIS
+				 exists = MXR
+				 not = {
+					 exists = MEX
+					 exists = MXR
+					 }
+				 }
+			9624 = { secede_province = MXR }						#Veracruz
+		}
+		}
+	}
+
+
+#Occupation of Haiti
+# Setup rebels
+
+ country_event = {
+	title = "EVT1914_101506_TITLE"
+	desc = "EVT1914_101506_DESC"
+	id = 101506
+	
+	picture = "Haiti"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		ai_chance = { factor = 100 }
+		name = "ACTION_NAME_OK"
+		create_vassal = HAI
+		set_country_flag = Haiti_Occupied
+		dissent = -1
+		supplies = -20
+		money = 100
+		relation = { who = HAI value = 30 }
+		random_country = {
+			limit = { tag = THIS
+					not = { DOM = { vassal_of = USA } }
+			}
+			relation = { who = DOM value = -30 }
+		}
+	}
+}
+
+
+#Occupation of the Dominican Republic  13th May 1916
+
+ country_event = {
+	title = "EVT1914_101508_TITLE"
+	desc = "EVT1914_101508_DESC"
+	id = 101508
+	
+	picture = "Haiti"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = { factor = 100 }
+		name = "ACTION_NAME_OK"
+		create_vassal = DOM
+		set_country_flag = Dom_Repubic_occupied
+		dissent = -1
+		supplies = -20
+		money = 100
+		relation = { who = DOM value = 30 }
+		random_country = {
+			limit = { tag = THIS
+				not = { HAI = { vassal_of = USA } }
+			}
+			relation = { who = HAI value = -30 }
+		}
+	}
+}

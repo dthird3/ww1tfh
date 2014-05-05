@@ -103,4 +103,89 @@ diplomatic_decisions = {
 			 country_event = 100300                         #Occupation_of_Nicaragua
 			}
 		}
+	
+
+	Occupy_Haiti = {                           	   			#Occupation_of_Haiti
+		ai_will_do = { factor = 1 }
+		potential = {
+			exists = HAI
+			not = {	HAI = { is_subject = yes } }
+			not = {	USA = {	war_with = HAI } }
+			not = { USA = { alliance_with = HAI } }
+			tag = USA
+			date = 1915.7.27
+			not = { date = 1923.12.31 }
+			not = { has_country_flag = Haiti_Occupied }
+		}
+		allow = { supplies = 20 }
+		effect = { country_event = 101506 }					#Occupation_of_Haiti
 	}
+	
+
+	Occupy_Dom_Republic = {                                 #Occupation_of_the_Dominican_Republic
+		ai_will_do = { factor = 1 }
+		potential = {
+			exists = DOM
+			not = { DOM = { is_subject = yes } }
+			not = { USA = { war_with = DOM } }
+			not = { USA = { alliance_with = DOM } }
+			tag = USA
+			date = 1916.5.12
+			not = { date = 1923.12.31 }
+			not = { has_country_flag = Dom_Repubic_occupied }
+		}
+		allow = { supplies = 20 }
+		effect = { country_event = 101508 }					# Occupation_of_the_Dominican_Republic
+	}
+		
+
+	Occupy_Vera_Cruz = {                                    # S.S. Ypiranga arms shipment en-route
+		ai_will_do = { factor = 1 }
+		potential = {
+			MXR = { has_country_flag = "Huerta_Coup" }
+			MXR = { head_of_state = 15100032 }              # Huerta is Head of State
+			MXR = { not = { has_country_flag = Vera_Cruz_occupied } }
+		}
+		
+		allow = { 
+			MXR = { war_with = MXC }
+		}
+		
+		effect = {
+			USA = { country_event = 101510 }				# Occupy Vera cruz
+			USA = { set_country_flag = Vera_Cruz_occupied }
+		}
+	}
+
+
+
+
+		
+		
+	 2049511_decision = {                                   #Leave_Veracruz
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 war_with = GER
+			 9624 = {										#Veracruz
+				controlled_by = USA
+				 }
+			 tag = USA
+			 date = 1914.8.4
+			 not = {
+				 date = 1925.12.30
+				 }
+			 not = {
+				 has_country_flag = decision_2049511
+				 }
+			 }
+		allow = {
+			 war = no
+			 }
+		effect = {
+			 country_event = 518 							#Leave_Veracruz
+			set_country_flag = decision_2049511
+			 }
+	}
+}
