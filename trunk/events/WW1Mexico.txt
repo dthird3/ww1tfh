@@ -811,9 +811,28 @@
 # Venustiano Carranza, a politician and rancher from Coahuila, was at the forefront of opposition to Huerta, 
 # and organized his own rebel army, called the Constitutionalists, with the secret support of the United States
 # Villa, Zapata, Carranza and Álvaro Obregón led the fight against Huerta
-
 ### Defeat Huerta
 
+
+
+#   USA embargoes arms to MXR
+
+ country_event = {
+	title = "EVT1914_101048_TITLE"
+	desc = "EVT1914_101048_DESC"
+	id = 101048
+	 
+	picture = "USS_Utah"
+	
+	major = yes
+	 
+	is_triggered_only = yes
+	
+	option = {										
+		name = "ACTION_NAME_OK"
+		}
+	}
+	
 
 #   USA Occupies Vera Cruz
 
@@ -824,16 +843,53 @@
 	 
 	picture = "Vera_Cruz_1"
 	
-	fire_only_once = yes
-	
 	major = yes
 	 
 	is_triggered_only = yes
 	
 	option = {										
 		name = "ACTION_NAME_DAMN"
+#		MXR = { threat { who = USA value = 5 } }
 		}
 	}
+	
+#   Niagara Peace Treaty
+
+ country_event = {
+	title = "EVT1914_101052_TITLE"
+	desc = "EVT1914_101052_DESC"
+	id = 101052
+	 
+	picture = "Niagara_peace"
+	
+	major = yes
+	 
+	is_triggered_only = yes
+	
+	option = {										
+		name = "ACTION_NAME_OK"
+#		MXR = { threat { who = USA value = -5 } }
+		}
+	}	
+	
+#   USA leaves Veracruz
+
+ country_event = {
+	title = "EVT1914_101054_TITLE"
+	desc = "EVT1914_101054_DESC"
+	id = 101054
+	 
+	picture = "Troops_Leave"
+	
+	major = yes
+	 
+	is_triggered_only = yes
+	
+	option = {										
+		name = "ACTION_NAME_GREAT"
+#		MXC = { threat { who = USA value = -5 } }
+		}
+	}		
 	
 ##################   DH EVENTS  ###################################################	
 

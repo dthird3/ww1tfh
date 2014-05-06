@@ -136,31 +136,6 @@
 		 set_country_flag = panamerican
 		 }
 	}
-
-		
-#The Tampico Incident (Pre-cusor to occupation on Vera Cruz)
-
- country_event = {
-	title = "EVT1914_101494_TITLE"
-	desc = "EVT1914_101494_DESC"
-	id = 101494
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = { days = 1 }
-	trigger = {
-		war = no
-		9624 = { controlled_by = USA }                               # Veracruz
-		tag = USA
-		date = 1914.10.10
-		not = { date = 1923.12.31 }
-		}
-	option = {
-		name = "ACTION_NAME_GREAT"
-		}
-	}
 	
 
 #We did it!  The Panama Canal is officially opened.
@@ -191,7 +166,7 @@
 	}
 	
 
-# Occupy Veracruz
+# Stop arms shipment on S.S. Ypiranga
 
  country_event = {
 	title = "EVT1914_101510_TITLE"
@@ -203,12 +178,16 @@
 	major = yes
 	 
 	fire_only_once = yes
+		
+	mean_time_to_happen = { days = 30 }
 	 
-	is_triggered_only = yes
+	trigger = {
+		USA = { has_country_flag = Huerta_embargoed }
+	}
 	 
 	option = {
-		name = "ACTION_NAME_OK"
-		USA = { country_event = 101512 }				# Stop the arms shipment
+		name = "EVT1914_101510_OPT"
+		USA = { country_event = 101512 }				# Occupy Veracruz
 	}
 }	
 
@@ -225,90 +204,90 @@
 	major = yes
 	 
 	fire_only_once = yes
-	
-	mean_time_to_happen = { days = 30 }
 	 
 	is_triggered_only = yes
 	 
 	option = {
-		name = "EVT1914_101512_DESC"
+		name = "EVT1914_101512_OPT"
 		dissent = 2
 		9624 = { add_core = USA }
 		9624 = { secede_province = USA }				# Veracruz
 		MXR = { country_event = 101050 }				# Occupy Veracruz
 		MXC = { country_event = 101050 }				# Occupy Veracruz
+		USA = { set_country_flag = Veracruz_occupied }
 	}
 }	
+
+
+# Peace Treaty of Niagara Falls - terms for US withdrawal from Veracruz On May 27, 1914 - Huerta surrender's
 		
+ country_event = {
+	title = "EVT1914_101514_TITLE"
+	desc = "EVT1914_101514_DESC"
+	id = 101514
 	
-#Leave Veracruz
+	picture = "Niagara_peace"
+	
+	major = yes
+	 
+	fire_only_once = yes
+		
+	mean_time_to_happen = { days = 30 }
+	 
+	trigger = {
+		USA = { has_country_flag = Veracruz_occupied }
+	}
+	 
+	option = {
+		name = "ACTION_NAME_GREAT"
+		MXR = { country_event = 101052 }				#Peace Treaty
+		MXC = { country_event = 101052 }				#Peace Treaty
+		USA = { set_country_flag = Niagara_Peace }
+	}
+}
+
+		
+#Leave Veracruz    (REWORK to return Veracruz after war is over - regardless of who wins)
 
  country_event = {
-	title = "DH_EVENT_2049511_TITLE"
-	desc = "DH_EVENT_2049511_DESC"
-	id = 518
+	title = "EVT1914_101516_TITLE"
+	desc = "EVT1914_101516_DESC"
+	id = 101516
+	
+	picture = "Troops_Leave"
 	 
 	fire_only_once = yes
 	 
 	is_triggered_only = yes
-	 
-	mean_time_to_happen = {
-		 days = 5
-		 }
-	trigger = {
-		 war_with = GER
-		 9624 = { controlled_by = USA }                                #Veracruz
-		 war = no
-		 tag = USA
-		 date = 1914.8.4
-		 not = { date = 1923.12.31 }
-		 }
+
 	option = {
-		name = "DH_EVENT_2049511_Option7"
+		name = "EVT1914_101516_OPT"
 		dissent = -1
 		random_country = {
 			limit = {
-				tag = THIS
-				exists = MEX }
-			9624 = { secede_province = MEX }						#Veracruz
+				tag = USA
+				exists = MXC
+				not = { exists = MXR }	}
+			9624 = { secede_province = MXC }						#Veracruz
 			9624 = { remove_core = USA }
 		}
 		random_country = {
 			limit = {
-				tag = THIS
+				tag = USA
 				exists = MXR
-				not = { exists = MEX }
-				}
+				not = { exists = MXC }	}
 			9624 = { secede_province = MXR }						#Veracruz
+			9624 = { remove_core = USA }
 		}
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 exists = MXR
-				 not = {
-					 exists = MEX
-					 exists = MXR
-					 }
-				 }
-			9624 = { secede_province = MXR }						#Veracruz
-			 }
-		random_country = {
-			 limit = {
-				 tag = THIS
-				 exists = MXR
-				 not = {
-					 exists = MEX
-					 exists = MXR
-					 }
-				 }
-			9624 = { secede_province = MXR }						#Veracruz
-		}
-		}
+
+		MXR = { remove_country_modifier = "weapons_embargo" }
+		USA = { clr_country_flag = Veracruz_occupied }
 	}
+}
 
 
 #Occupation of Haiti
-# Setup rebels
+# Setup rebels & US Mil Police
 
  country_event = {
 	title = "EVT1914_101506_TITLE"
@@ -320,7 +299,7 @@
 	fire_only_once = yes
 	 
 	is_triggered_only = yes
-	 
+	
 	option = {
 		ai_chance = { factor = 100 }
 		name = "ACTION_NAME_OK"

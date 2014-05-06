@@ -84,19 +84,17 @@ diplomatic_decisions = {
 	
 
 	 USA_NIC = {                                             #Banana_Wars:_Nicaragua
-		ai_will_do = {
-			 factor = 1
-			 }
+		ai_will_do = { factor = 1 }
 		potential = {
-			 tag = USA
-			 exists = NIC
-			 date = 1912.6.1
-			 NOT = {
-				 THIS = {
-					 has_country_flag = ban_nic
-					 }
-				 }
-			 }
+			tag = USA
+			exists = NIC
+			date = 1912.6.1
+			NOT = {
+				THIS = {
+					has_country_flag = ban_nic
+				}
+			}
+		}
 		allow = { war = no }
 		effect = {
 			 set_country_flag = ban_nic
@@ -114,7 +112,6 @@ diplomatic_decisions = {
 			not = { USA = { alliance_with = HAI } }
 			tag = USA
 			date = 1915.7.27
-			not = { date = 1923.12.31 }
 			not = { has_country_flag = Haiti_Occupied }
 		}
 		allow = { supplies = 20 }
@@ -131,20 +128,20 @@ diplomatic_decisions = {
 			not = { USA = { alliance_with = DOM } }
 			tag = USA
 			date = 1916.5.12
-			not = { date = 1923.12.31 }
 			not = { has_country_flag = Dom_Repubic_occupied }
 		}
 		allow = { supplies = 20 }
 		effect = { country_event = 101508 }					# Occupation_of_the_Dominican_Republic
 	}
-		
 
-	Occupy_Vera_Cruz = {                                    # S.S. Ypiranga arms shipment en-route
+	
+	Embargo_Huerta = {                                    # US Arms embargo on Huerta - Mexico
 		ai_will_do = { factor = 1 }
 		potential = {
+			tag = USA
 			MXR = { has_country_flag = "Huerta_Coup" }
-			MXR = { head_of_state = 15100032 }              # Huerta is Head of State
-			MXR = { not = { has_country_flag = Vera_Cruz_occupied } }
+			MXR = { head_of_state = 15100032 }                 # Huerta is Head of State
+			USA = { not = { has_country_flag = Huerta_embargoed } }
 		}
 		
 		allow = { 
@@ -152,40 +149,33 @@ diplomatic_decisions = {
 		}
 		
 		effect = {
-			USA = { country_event = 101510 }				# Occupy Vera cruz
-			USA = { set_country_flag = Vera_Cruz_occupied }
+			MXR = { add_country_modifier = { 
+				name = "weapons_embargo" 
+				duration = 360
+				} 
+			}
+			USA = { set_country_flag = Huerta_embargoed }
+			MXR = { country_event = 101048 }					# USA embargoes MXR
+			MXC = { country_event = 101048 }					# USA embargoes MXR
 		}
 	}
 
-
-
-
-		
-		
-	 2049511_decision = {                                   #Leave_Veracruz
-		ai_will_do = {
-			 factor = 1
-			 }
+	
+#  (REWORK to return Veracruz after war is over - regardless of who wins)		
+	Leave_Veracruz = {                                   		#Leave_Veracruz
+		ai_will_do = { factor = 1 }
 		potential = {
-			 war_with = GER
-			 9624 = {										#Veracruz
-				controlled_by = USA
-				 }
-			 tag = USA
-			 date = 1914.8.4
-			 not = {
-				 date = 1925.12.30
-				 }
-			 not = {
-				 has_country_flag = decision_2049511
-				 }
-			 }
+			USA = { has_country_flag = Veracruz_occupied }
+		}
 		allow = {
-			 war = no
-			 }
+			USA = { has_country_flag = Niagara_Peace }
+			not = { MXR = { head_of_state = 15100032 } }        # Huerta is NOT Head of State
+		}
+
 		effect = {
-			 country_event = 518 							#Leave_Veracruz
-			set_country_flag = decision_2049511
-			 }
+			USA = { country_event = 101516 }					# USA Leave_Veracruz
+			MXR = { country_event = 101054 }					# USA Leave_Veracruz
+			MXC = { country_event = 101054 }					# USA Leave_Veracruz
+		}
 	}
 }
