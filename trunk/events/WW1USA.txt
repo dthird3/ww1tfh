@@ -210,8 +210,6 @@
 	option = {
 		name = "EVT1914_101512_OPT"
 		dissent = 2
-		9624 = { add_core = USA }
-		9624 = { secede_province = USA }				# Veracruz
 		MXR = { country_event = 101050 }				# Occupy Veracruz
 		MXC = { country_event = 101050 }				# Occupy Veracruz
 		USA = { set_country_flag = Veracruz_occupied }
@@ -263,22 +261,17 @@
 	option = {
 		name = "EVT1914_101516_OPT"
 		dissent = -1
-		random_country = {
-			limit = {
-				tag = USA
-				exists = MXC
-				not = { exists = MXR }	}
-			9624 = { secede_province = MXC }						#Veracruz
-			9624 = { remove_core = USA }
-		}
-		random_country = {
-			limit = {
-				tag = USA
-				exists = MXR
-				not = { exists = MXC }	}
-			9624 = { secede_province = MXR }						#Veracruz
-			9624 = { remove_core = USA }
-		}
+		USA = { 9624 = { secede_province = MXC } }						#Veracruz
+		9624 = { remove_core = USA }
+
+#		random_country = {
+#			limit = {
+#				tag = USA
+#				exists = MXR
+#				not = { exists = MXC }	}
+#			9624 = { secede_province = MXR }						#Veracruz
+#			9624 = { remove_core = USA }
+#		}
 
 		MXR = { remove_country_modifier = "weapons_embargo" }
 		USA = { clr_country_flag = Veracruz_occupied }
