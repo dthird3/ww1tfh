@@ -1,192 +1,348 @@
  theatre = {
-	leader = 000000
-	location = 9237  					# Yecora
+	leader = 20510118					# Carranza
+	location = 9237  					# 
 	name = "Ejercito de Constitutionalistas"
 	
 	regiment = {
 		type = hq_brigade 
-		name = "Ejercito de Orozco HQ"
+		name = "Ejercito de Carranza HQ"
 		historical_model = 0 
 		}
 
- corps = {
-	leader = 15110202					# Orozco
-	location = 9237  					# Yecora
-	name = "Ejercito de Orozco"
+ army = {
+	leader = 20510060					# Álvaro Obregón (Northwest Corps)
+	location = 9326  					# Los Mochis
+	name = "Army of Operations"
 	
 	regiment = {
 		type = hq_brigade 
-		name = "Ejercito de Orozco HQ"
+		name = "Northwest Corps HQ"
 		historical_model = 0 
 		}
 	
 	division = {
 		dig_in = 10
-		location = 9237  				# Yecora
+		location = 9385  				# Culiacan
 		is_reserve = no 
 		name = "1. División de Constitutionalistas"
 		
 		regiment = {
 			type = militia_brigade 
 			name = "1. Brigada de Constitutionalistas"
-			experience = 2 
-			historical_model = 2 
+			experience = 3 
+			historical_model = 3 
 			}
 		
 		 regiment = {
 			type = militia_brigade 
 			name = "2. Brigada de Constitutionalistas"
-			experience = 2
-			historical_model = 2 
+			experience = 3
+			historical_model = 3 
 			}
 		}
 		
 	division = {
 		dig_in = 10
-		location = 9237  				# Yecora
+		location = 9385  				# Culiacan
 		name = "3. Brigada de Constitutionalistas"
 		is_reserve = no
 		
 		 regiment = {
 			type = cavalry_brigade 
 			name = "3. Brigada de Constitutionalistas"
-			experience = 2
-			historical_model = 1 
+			experience = 3
+			historical_model = 3 
 			}
 		}
 		
 	division = {
 		dig_in = 10
-		location = 9268					# Chihuahua
+		location = 9385  				# Culiacan
 		name = "4. Brigada de Constitutionalistas"
 		is_reserve = no
 		
 		 regiment = {
 			type = cavalry_brigade 
 			name = "4. Brigada de Constitutionalistas"
-			experience = 2
-			historical_model = 1 
+			experience = 3
+			historical_model = 3 
 			}
 		}
 	}
 	
-	corps = {
-	leader = 15110060					# Obregon
-	location = 9236  					# Guaymas
-	name = "Ejercito de Maytorena"
+	army = {
+	leader = 20510042					# González
+	location = 9449  					# Mendez
+	name = "Northeast Corps"
 	
 	regiment = {
 		type = hq_brigade 
-		name = "Ejercito de Maytorena HQ"
+		name = "Northeast Corps HQ"
 		historical_model = 0 
 		}
 	
 	division = {
 		dig_in = 10
-		location = 9236  					# Guaymas
+		location = 9480  					# Galena
 		is_reserve = no 
 		name = "2. División de Constitutionalistas"
 		
 		regiment = {
 			type = militia_brigade 
 			name = "5. Brigada de Constitutionalistas"
-			experience = 2 
-			historical_model = 2 
+			experience = 3 
+			historical_model = 3 
 			}
 		
 		 regiment = {
 			type = militia_brigade 
 			name = "6. Brigada de Constitutionalistas"
-			experience = 2
-			historical_model = 2 
+			experience = 3
+			historical_model = 3 
 			}
 		}
 		
 	division = {
 		dig_in = 10
-		location = 9236  					# Guaymas
+		location = 9449  					# Mendez
 		name = "7. Brigada de Constitutionalistas"
 		is_reserve = no
 		
 		 regiment = {
 			type = cavalry_brigade 
 			name = "7. Brigada de Constitutionalistas"
-			experience = 2
-			historical_model = 1 
+			experience = 3
+			historical_model = 3 
 			}
 		}
 		
 	division = {
 		dig_in = 10
-		location = 9236  					# Guaymas
+		location = 9505  					# San Nicols
 		name = "8. Brigada de Constitutionalistas"
 		is_reserve = no
 		
 		 regiment = {
 			type = cavalry_brigade 
 			name = "8. Brigada de Constitutionalistas"
-			experience = 2
-			historical_model = 1 
+			experience = 3
+			historical_model = 3 
 			}
 		}
 	}
 	
-	corps = {
-	location = 9327							# San Juanito
-	name = "Ejercito de Villa"
+	army = {
+	leader = 20510059						# Natera
+	location = 9268							# Chihuahua
+	name = "Central Corps"
 	
 	regiment = {
 		type = hq_brigade 
-		name = "Ejercito de Villa HQ"
+		name = "Central Corps HQ"
 		historical_model = 0 
 		}
 	
 	division = {
 	dig_in = 10
-	location = 9327							# San Juanito
+	location = 9354							# Hidalgo de
 		is_reserve = no 
 		name = "3. División de Constitutionalistas"
 		
 		regiment = {
 			type = militia_brigade 
 			name = "9. Brigada de Constitutionalistas"
-			experience = 2 
-			historical_model = 2 
+			experience = 3 
+			historical_model = 3 
 			}
 		
 		 regiment = {
 			type = militia_brigade 
 			name = "10. Brigada de Constitutionalistas"
-			experience = 2
-			historical_model = 2 
+			experience = 3
+			historical_model = 3 
+			}
+		}
+		
+	corps = {
+	leader = 20510203						# Villa
+	location = 9298							# Uruachic
+	name = "División del Norte"
+	
+	regiment = {
+		type = hq_brigade 
+		name = "División del Norte HQ"
+		historical_model = 0 
+		}
+		
+	division = {
+	location = 9327							# San Juanito
+		name = "1. Los dorados"
+		is_reserve = no
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "1. Brigada de Los dorados"
+			experience = 3
+			historical_model = 3 
+			}
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "2. Brigada de Los dorados"
+			experience = 3
+			historical_model = 3 
+			}
+		}
+		
+	division = {
+	location = 9327							# San Juanito
+		name = "2. Los dorados"
+		is_reserve = no
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "3. Brigada de Los dorados"
+			experience = 3
+			historical_model = 3 
+			}
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "4. Brigada de Los dorados"
+			experience = 3
+			historical_model = 3 
+			}
+		}
+		
+	division = {
+	location = 9327							# San Juanito
+		name = "3. Los dorados"
+		is_reserve = no
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "5. Brigada de Los dorados"
+			experience = 3
+			historical_model = 3 
+			}
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "6. Brigada de Los dorados"
+			experience = 3
+			historical_model = 3 
+			}
+		}
+		
+	division = {
+	location = 9327							# San Juanito
+		name = "4. Los dorados"
+		is_reserve = no
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "7. Brigada de Los dorados"
+			experience = 3
+			historical_model = 3 
+			}
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "8. Brigada de Los dorados"
+			experience = 3
+			historical_model = 3 
+			}
+		}
+		
+	division = {
+	location = 9298							# Uruachic
+		name = "5. Los dorados"
+		is_reserve = no
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "9. Brigada de Los dorados"
+			experience = 3
+			historical_model = 3 
+			}
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "10. Brigada de Los dorados"
+			experience = 3
+			historical_model = 3 
+			}
+		}
+		
+		division = {
+		location = 9268							# Chihuahua
+		name = "6. Los dorados"
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "11. Brigada de Los dorados"
+			experience = 3
+			historical_model = 3 
+			}
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "12. Brigada de Los dorados"
+			experience = 3
+			historical_model = 3 
+			}
+		}
+	}
+	}
+	
+	corps = {
+	leader = 20510195
+	location = 9623  					# Morelo
+	name = "Ejercito Libertador del Sur"
+	
+	regiment = {
+		type = hq_brigade 
+		name = "Ejercito Libertador del Sur HQ"
+		historical_model = 0 
+		}
+	
+	division = {
+	dig_in = 10
+	location = 9623  					# Morelo
+		name = "1. División de Zapatistas"
+		
+		regiment = {
+			type = militia_brigade 
+			name = "1. Brigada de Zapatistas"
+			experience = 3 
+			historical_model = 3 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			name = "2. Brigada de Zapatistas"
+			experience = 3
+			historical_model = 3 
 			}
 		}
 		
 	division = {
 	dig_in = 10
-	location = 9327							# San Juanito
-		name = "11. Brigada de Constitutionalistas"
-		is_reserve = no
+	location = 9623  					# Morelo
+		name = "2. División de Zapatistas"
 		
 		 regiment = {
 			type = cavalry_brigade 
-			name = "11. Brigada de Constitutionalistas"
-			experience = 2
-			historical_model = 1 
+			name = "3. Brigada de Zapatistas"
+			experience = 3
+			historical_model = 3 
 			}
-		}
-		
-	division = {
-	dig_in = 10
-	location = 9327							# San Juanito
-		name = "12. Brigada de Constitutionalistas"
-		is_reserve = no
 		
 		 regiment = {
 			type = cavalry_brigade 
-			name = "12. Brigada de Constitutionalistas"
-			experience = 2
-			historical_model = 1 
+			name = "4. Brigada de Zapatistas"
+			experience = 3
+			historical_model = 3 
 			}
 		}
 	}
@@ -196,10 +352,10 @@ military_construction = {
 	cost = 1 
 	progress = 45 
 	duration = 60 
-	country = MXR 
+	country = MXC 
 	militia_brigade = { 
 		name = "13. Brigada de Constitutionalistas"
-		historical_model = 2 
+		historical_model = 3 
 		}
 	}
 	
@@ -207,10 +363,10 @@ military_construction = {
 	cost = 1 
 	progress = 30 
 	duration = 60 
-	country = MXR 
+	country = MXC 
 	militia_brigade = { 
 		name = "14. Brigada de Constitutionalistas"
-		historical_model = 2 
+		historical_model = 3 
 		}
 	}
 	
@@ -218,9 +374,20 @@ military_construction = {
 	cost = 1 
 	progress = 30 
 	duration = 70 
-	country = MXR 
+	country = MXC 
 	cavalry_brigade = { 
-		name = "15. Brigada de Constitutionalistas"
-		historical_model = 2 
+		name = "11. Brigada de Los dorados"
+		historical_model = 3 
+		}
+	}
+	
+military_construction = {
+	cost = 1 
+	progress = 30 
+	duration = 70 
+	country = MXC 
+	cavalry_brigade = { 
+		name = "12. Brigada de Los dorados"
+		historical_model = 3 
 		}
 	}

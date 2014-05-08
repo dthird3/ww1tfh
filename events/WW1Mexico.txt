@@ -758,15 +758,13 @@
 	
 # Carranza Rebels rise up and DOW Madero/Huerta
 # may want to delay this a month
-#  in reality the Constitutionalist army was made up of only the Northwest Corps (renamed the Army of Operations) under Álvaro Obregón, 
-# the Northeast Corps under Pablo González, and the Central Corps under Pánfilo Natera.
 
  country_event = {
 	title = "EVT1910_101046_TITLE"
 	desc = "EVT1910_101046_DESC"
 	id = 101046
 	 
-	picture = "caranza_troops"
+	picture = "villa_troops"
 	 
 	major = yes
 	
@@ -794,26 +792,31 @@
 			9236 = { secede_province = MXC }   # Guaymas
 			9327 = { secede_province = MXC }   # San Juanito
 			MXC = { load_oob = MXC_1913_carranza.txt }
-			MXC = { capital = 9268 }
+			MXC = { capital = 9236 }
 			MXC = { supplies = 5000 }
 			9203 = { supplies = 10000 }        # Hermosillo
 			9327 = { supplies = 5000 }         # San Juanito
-			MXC = { officer_pool = 800 }
 			MXC = { money = 100 }
 			MXC = { energy = 600 }
 			MXC = { rare_materials = 50 }
 			MXC = { metal = 50 }
 			MXC = { war = { target = MXR } }
 			MXR = { set_country_flag = "carranza_revolt" }
+			9660 = { add_province_modifier = { name = "mex_rev" duration = 360 } }
+			9674 = { add_province_modifier = { name = "mex_rev" duration = 360 } }
+			9589 = { add_province_modifier = { name = "mex_rev" duration = 360 } }
+			9588 = { add_province_modifier = { name = "mex_rev" duration = 360 } }
+			9659 = { add_province_modifier = { name = "mex_rev" duration = 360 } }
+			9622 = { add_province_modifier = { name = "mex_rev" duration = 360 } }
+			kill_leader = 15110195				# Rebel leaders leave MXR
+			kill_leader = 15110060
+			kill_leader = 15110203
+			kill_leader = 15110042			
+#  HOW TO GET THESE TO APPLY TO THE 1914 START?????			
 		}			
 	}
 
-
-# Villa, Zapata, Carranza and Álvaro Obregón led the fight against Huerta
-# and organized his own rebel army, called the Constitutionalists, with the secret support of the United States
 # Villa recruits Gringo's
-# Orozco, however, sided with Huerta and Huerta made him one of his generals.
-
 
 ### Defeat Huerta
 

@@ -1,173 +1,173 @@
- corps = {
-	location = 9604  # Ciudad de México
-	name = "Ejercito de Mexico"
+ theatre = {
+	location = 9604                  # Ciudad de México
+	leader = 15110204
+	name = "Ejército Mexicano"
 	
 	 regiment = {
+		type = hq_brigade 
+		name = "Ejército Mexicano HQ"
+		historical_model = 0 
+		}
+		
+	division = {
+		location = 9604                  # Ciudad de México
+		dig_in = 5
+		name = "1. Brigada de Ciudad de Mexico"
+		
+		regiment = {
+			type = militia_brigade 
+			name = "1. Brigada de Ciudad de Mexico"
+			experience = 2 
+			historical_model = 3 
+			}
+		regiment = {
+			type = militia_brigade 
+			name = "2. Brigada de Ciudad de Mexico"
+			experience = 2 
+			historical_model = 3 
+			}	
+		}		
+		
+
+ corps = {
+	leader = 15110202
+	location = 9566                 	 # Pachuca
+	name = "Ejercito de Mexico"
+	
+	regiment = {
 		type = hq_brigade 
 		name = "Ejercito de Mexico HQ"
 		historical_model = 0 
 		}
 	
-	 division = {
-		location = 9604  # Ciudad de México
-		is_reserve = no 
-		name = "I División de Infantería"
+	division = {
+		location = 9550  			 	# Ciudad Mante
+		name = "1. Brigada de Infantería"
 		
-		 regiment = {
+		regiment = {
 			type = infantry_brigade 
-			experience = 15 
-			name = "I División de Infantería1"
-			historical_model = 2 
+			name = "1. Brigada de Infantería"
+			experience = 5 
+			historical_model = 3 
 			}
-		
-		 regiment = {
-			type = infantry_brigade 
-			experience = 15 
-			name = "I División de Infantería2"
-			historical_model = 2 
-			}
-		}
-	}
-
- corps = {
-	location = 9604  # Ciudad de México
-	name = "I Cuerpo del Ejército"
-	
-	 regiment = {
-		type = hq_brigade 
-		name = "I Cuerpo del Ejército HQ"
-		historical_model = 0 
-		}
-	
-	 division = {
-		location = 9604  # Ciudad de México
-		is_reserve = no 
-		name = "II División de Infantería"
-		
-		 regiment = {
-			type = infantry_brigade 
-			experience = 15 
-			name = "II División de Infantería1"
-			historical_model = 2 
-			}
-		
-		 regiment = {
-			type = infantry_brigade 
-			experience = 15 
-			name = "II División de Infantería2"
-			historical_model = 2 
-			}
-		}
-	}
-
- corps = {
-	location = 9604  # Ciudad de México
-	name = "II Cuerpo del Ejército"
-	
-	 regiment = {
-		type = hq_brigade 
-		name = "II Cuerpo del Ejército HQ"
-		historical_model = 0 
-		}
-	
-	 division = {
-		location = 9604  # Ciudad de México
-		is_reserve = no 
-		name = "III División de Infantería"
-		
-		 regiment = {
-			type = infantry_brigade 
-			experience = 15 
-			name = "III División de Infantería1"
-			historical_model = 2 
-			}
-		
-		 regiment = {
-			type = infantry_brigade 
-			experience = 15 
-			name = "III División de Infantería2"
-			historical_model = 2 
-			}
-		}
-	}
-
- corps = {
-	location = 9604  # Ciudad de México
-	name = "Milicia de Mexico"
-	
-	 regiment = {
-		type = hq_brigade 
-		name = "Milicia de Mexico HQ"
-		historical_model = 0 
-		}
-	
-	 division = {
-		location = 9604  # Ciudad de México
-		is_reserve = no 
-		name = "Guardia Rural"
-		
-		 regiment = {
+		regiment = {
 			type = militia_brigade 
-			experience = 15 
-			name = "Guardia Rural1"
-			historical_model = 2 
+			name = "1. Brigada de Milicia"
+			experience = 2 
+			historical_model = 3 
 			}
+		}
 		
-		 regiment = {
+	division = {
+		location = 9418  			 	# El Palmito
+		name = "2. Brigada de Infantería"
+		regiment = {
+			type = infantry_brigade 
+			name = "2. Brigada de Infantería"
+			experience = 5
+			historical_model = 3 
+			}
+		regiment = {
 			type = militia_brigade 
-			experience = 15 
-			name = "Guardia Rural2"
-			historical_model = 2 
+			name = "2. Brigada de Milicia"
+			experience = 2 
+			historical_model = 3 
+			}	
+		}
+			
+	division = {
+		location = 9417  				# Mazatlan
+		name = "3. Brigada de Infantería"
+		
+		regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "3. Brigada de Infantería"
+			historical_model = 3 
+			}
+		regiment = {
+			type = militia_brigade 
+			name = "3. Brigada de Milicia"
+			experience = 2 
+			historical_model = 3 
 			}
 		}
-	}
+	
+	division = {
+		location = 9448  				# Torreon
+		dig_in = 5
+		name = "1. División de Caballería"
+		
+		 regiment = {
+			type = cavalry_brigade
+			name = "1. Brigada de Caballería"
+			experience = 5			
+			historical_model = 3 
+			}
+		
+		 regiment = {
+			type = cavalry_brigade 
+			name = "2. Brigada de Caballería"
+			experience = 5
+			historical_model = 3 
+			}
+		}
 
- corps = {
-	location = 9238  # Ojinaga
-	name = "Caballería de Mexico"
-	
-	 regiment = {
-		type = hq_brigade 
-		name = "Caballería de Mexico HQ"
-		historical_model = 0 
-		}
-	
-	 division = {
-		location = 9238  # Ojinaga
-		is_reserve = yes 
-		name = "I División de Caballería"
+	division = {
+		location = 9567					# Tampico
+		name = "1. Guardia Rurale"
 		
-		 regiment = {
-			type = cavalry_brigade 
-			historical_model = 0 
-			}
-		
-		 regiment = {
-			type = cavalry_brigade 
-			historical_model = 0 
+		regiment = {
+			type = cavalry_brigade  
+			name = "1. Guardia Rurale"
+			experience = 5 
+			historical_model = 3 
 			}
 		}
-	
-	 division = {
-		location = 9238  # Ojinaga
-		is_reserve = yes 
-		name = "II División de Caballería"
 		
-		 regiment = {
-			type = cavalry_brigade 
-			historical_model = 0 
-			}
+	division = {
+		location = 9530  				# Ciudad Victoria
+		name = "2. Guardia Rurale"
 		
-		 regiment = {
-			type = cavalry_brigade 
-			historical_model = 0 
+		regiment = {
+			type = cavalry_brigade  
+			name = "2. Guardia Rurale"
+			experience = 5 
+			historical_model = 3 
 			}
 		}
 	}
+		
+	division = {
+			location = 9624  			    # Veracruz
+			name = "Guardia Rurale"
+			
+			 regiment = {
+				type = police_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "Guardia Rurale"
+				historical_model = 1 
+				}
+			}
+			
+	division = {
+			location = 9567					# Tampico
+			name = "Guardia Rurale"
+			
+			 regiment = {
+				type = police_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "Guardia Rurale"
+				historical_model = 1 
+				}
+			}
+
 
  navy = {
-	location = 9658  # Acapulco
-	base = 9658  # Acapulco
+	location = 9658  					# Acapulco
+	base = 9658  						# Acapulco
 	name = "Armada de Mexico"
 	
 	 ship = {
@@ -177,4 +177,4 @@
 		historical_model = 0 
 		}
 	}
-
+}
