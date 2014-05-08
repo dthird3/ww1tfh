@@ -155,7 +155,6 @@
 			9327 = { secede_province = MXR }   # San Juanito
 			MXR = { load_oob = MXR_1910_madero.txt }
 			MXR = { capital = 9268 }
-			MXR = { supplies = 5000 }
 			9203 = { supplies = 10000 }        # Hermosillo
 			9327 = { supplies = 5000 }         # San Juanito
 			MXR = { officer_pool = 800 }
@@ -173,6 +172,7 @@
 # which included Giuseppe ("Peppino") Garibaldi, grandson of the famed Italian unifier, as well as many American recruits.
 # Later, during the revolt against the coup d'état of Victoriano Huerta, many of the same foreigners and others were recruited 
 # and enlisted by Pancho Villa and his División del Norte. 	
+#  División del Norte at its height numbered some 50,000 men. (1915?)
 	
 
 # Magonista's Rebel 29/1/11  
@@ -464,6 +464,7 @@
 	mean_time_to_happen = { months = 3 }
 
 	trigger = {
+# MEX doesn't exist AND Madero is Head of State of MXR and NOT 10 Tragic days
 		tag = MXR
 		MXR = { has_country_flag = "diaz_defeated" }
 		not = { MXR = { has_country_flag = "huerta_president" } }
@@ -500,6 +501,7 @@
 		tag = MXR
 		MXR = { has_country_flag = "zapata_rebels" }
 		not = { MXR = { has_country_flag = "huerta_president" } }
+# MEX doesn't exist AND Madero is Head of State of MXR and NOT 10 Tragic days		
 	}
 	
 	option = {										
@@ -536,6 +538,7 @@
 		tag = MXR
 		MXR = { has_country_flag = "zapata_rebels" }
 		not = { MXR = { has_country_flag = "huerta_president" } }
+# MEX doesn't exist AND Madero is Head of State of MXR and NOT 10 Tragic days		
 	}
 	
 	option = {										
@@ -571,6 +574,7 @@
 		tag = MXR
 		MXR = { has_country_flag = "zapata_rebels" }
 		not = { MXR = { has_country_flag = "huerta_president" } }
+# MEX doesn't exist AND Madero is Head of State of MXR and NOT 10 Tragic days		
 	}
 	
 	option = {										
@@ -676,8 +680,8 @@
 		name = "ACTION_NAME_DAMN"
 		9604 = { create_revolt = 8 }    # Mexico City
 		random_list = {
-			60 = { MXR = { country_event = 101042 } }
-			40 = { MXR = { country_event = 101044 } }
+			70 = { MXR = { country_event = 101042 } }
+			30 = { MXR = { country_event = 101044 } }
 			}
 		}
 	}
@@ -754,6 +758,8 @@
 	
 # Carranza Rebels rise up and DOW Madero/Huerta
 # may want to delay this a month
+#  in reality the Constitutionalist army was made up of only the Northwest Corps (renamed the Army of Operations) under Álvaro Obregón, 
+# the Northeast Corps under Pablo González, and the Central Corps under Pánfilo Natera.
 
  country_event = {
 	title = "EVT1910_101046_TITLE"
@@ -803,14 +809,12 @@
 	}
 
 
-# After his inauguration in March of that year, President Woodrow Wilson was informed of events in Mexico by a clandestine agent, 
-# reporter William Bayard Hale and was appalled by Henry Lane Wilson's assistance to the Huerta coup d'etat against Madero. 
-# The President supplanted him by sending as his personal envoy John Lind on 17 July, 1913 the President dismissed Ambassador Wilson.
-# After this was accomplished, however, Zapata reunited with Villa and the other revolutionaries
-# Orozco, however, sided with Huerta and Huerta made him one of his generals.
-# Venustiano Carranza, a politician and rancher from Coahuila, was at the forefront of opposition to Huerta, 
-# and organized his own rebel army, called the Constitutionalists, with the secret support of the United States
 # Villa, Zapata, Carranza and Álvaro Obregón led the fight against Huerta
+# and organized his own rebel army, called the Constitutionalists, with the secret support of the United States
+# Villa recruits Gringo's
+# Orozco, however, sided with Huerta and Huerta made him one of his generals.
+
+
 ### Defeat Huerta
 
 
@@ -849,6 +853,8 @@
 	
 	option = {										
 		name = "ACTION_NAME_DAMN"
+		9624 = { add_core = USA }
+		MXR = { 9624 = { secede_province = USA } }				# Veracruz
 #		MXR = { threat { who = USA value = 5 } }
 		}
 	}
@@ -889,7 +895,19 @@
 		name = "ACTION_NAME_GREAT"
 #		MXC = { threat { who = USA value = -5 } }
 		}
-	}		
+	}	
+
+
+
+
+# Huerta defeated
+# Villa and Zapata turn on Carranza
+# When fighting broke out in 1914 between the Constitutionalists (Carranza, Obregón, etc.) and the Conventionalists (Villa and Zapata) 
+# following the Convention of Aguascalientes, the Constitutional Army numbered 57,000 men, to Villa and Zapata's 72,000 men. 
+# But as the Constitutionalists grew stronger, Villa and Zapata grew weaker. 
+# Eventually the war against the Conventionalists was won after the assassination of Zapata in 1919 and the surrender of Villa in July 1920. 
+# By 1917, the main fighting of the civil war between the two factions was over, with some minor revolts by Felicistas (supporters of Félix Díaz, 
+# nephew of ousted president Porfirio Díaz). This marked the end of any real resistance to Carranza.	
 	
 ##################   DH EVENTS  ###################################################	
 
@@ -4271,3 +4289,17 @@ country_event = {
 			 }
 		 }
 	}
+	
+	
+	
+	
+# However, when Carranza's autocratic rule was threatened, the threat would come from the Constitutionalist army he had set up. 
+# Carranza was assassinated after he tried to have Obregón arrested on false charges (Obregón was put up for election for president, 
+# which threatened Carranza and his choice of successor, Ignacio Bonillas) and Obregón, under the Plan of Agua Prieta, 
+# marched on Mexico City with his army. Carranza fled the capital and was killed in the Sierra Norte of Puebla on 21 May 1920.
+# In 1920 Obregón, with Gens. Plutarco Elías Calles and Adolfo de la Huerta, led a revolt against Carranza under the Plan of Agua Prieta. 
+# Their agents assassinated Carranza on May 21, 1920.
+
+
+# In 1920, Obregón was elected president, and some other former Constitutionalist generals would eventually become presidents and 
+# leading politicians in the years ahead.
