@@ -164,7 +164,36 @@
 		 money = 100
 		 }
 	}
+
+# Tampico happens approx 12 months after coup and is a trigger for Ypiranga
+# Tampico and Veracruz only happen if MXR & Huerta	
+
+ country_event = {
+	title = "EVT1914_101504_TITLE"
+	desc = "EVT1914_101504_DESC"
+	id = 101504
 	
+	picture = "US_troops_wharf"
+	
+	major = yes
+	 
+	fire_only_once = yes
+		
+	mean_time_to_happen = { months = 10 }
+	 
+	trigger = {
+			exists = MXR
+			exists = MXC
+			MXR = { head_of_state = 15100032 }              # Huerta is Head of State
+			MXR = { war_with = MXC }
+			USA = { not = { has_country_flag = Tampico } }
+	}
+	 
+	option = {
+		name = "ACTION_NAME_OK"
+		USA = { set_country_flag = Tampico }
+	}
+}	
 
 # Stop arms shipment on S.S. Ypiranga
 
@@ -179,9 +208,10 @@
 	 
 	fire_only_once = yes
 		
-	mean_time_to_happen = { days = 30 }
+	mean_time_to_happen = { days = 60 }
 	 
 	trigger = {
+		USA = { has_country_flag = Tampico }
 		USA = { has_country_flag = Huerta_embargoed }
 	}
 	 
@@ -274,13 +304,13 @@
 #		}
 
 		MXR = { remove_country_modifier = "weapons_embargo" }
+		USA = { clr_country_flag = Huerta_embargoed }
 		USA = { clr_country_flag = Veracruz_occupied }
 	}
 }
 
 
 #Occupation of Haiti
-# Setup rebels & US Mil Police
 
  country_event = {
 	title = "EVT1914_101506_TITLE"
@@ -308,6 +338,7 @@
 			}
 			relation = { who = DOM value = -30 }
 		}
+		7645 = { add_province_modifier = { name = "mex_rev" duration = 730 } }   # revolt risk doesn't seem to create rebels
 	}
 }
 
@@ -340,5 +371,6 @@
 			}
 			relation = { who = HAI value = -30 }
 		}
+		7652 = { add_province_modifier = { name = "mex_rev" duration = 730 } }    # revolt risk doesn't seem to create rebels
 	}
 }

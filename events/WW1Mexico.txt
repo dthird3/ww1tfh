@@ -1,18 +1,7 @@
-
 ### CONSIDER GLOBAL FLAGS in some cases
 ### Consider using 
 
-#occupied = { local_revolt_risk = 2 }			#2% revolt risk!
-
-#revolt_risk = {
-#	local_ic = -0.02
-#	local_manpower_modifier = -0.02
-#	local_resources = -0.02
-#}
-
-# local_revolt_risk         add a constant value to revolt_risk to a province. 
 # local_partisan_Support    add an increase of revolt_risk, so you can see it as Derivation in time of revolt_risk
-
 
 
 
@@ -44,8 +33,8 @@
 		MEX = { set_country_flag = "diaz_rigged_election" }
 		MEX = { set_country_flag = "diaz_election_decided" }
 		MEX = { country_event = 101005 }   # Trigger revolution sooner
-		dissent = 8
-		national_unity = -1
+		MEX = { dissent = 4 }
+		MEX = { national_unity = -1 }
 		}
 	option = {
 		name = "EVT1910_101002_OPTB"       # Allow the petitions of fraud to be reviewed by the Mexican Congress
@@ -155,8 +144,10 @@
 			9327 = { secede_province = MXR }   # San Juanito
 			MXR = { load_oob = MXR_1910_madero.txt }
 			MXR = { capital = 9268 }
-			9203 = { supplies = 10000 }        # Hermosillo
-			9327 = { supplies = 5000 }         # San Juanito
+			MXR = { supplies = 5000 }
+			9203 = { supplies = 5000 }         # Hermosillo
+			9327 = { supplies = 1000 }         # San Juanito
+			9237 = { supplies = 4000 }         # Yecora			
 			MXR = { officer_pool = 800 }
 			MXR = { money = 100 }
 			MXR = { energy = 600 }
@@ -164,16 +155,9 @@
 			MXR = { metal = 100 }
 			MEX = { set_country_flag = "madero_revolt" }
 			MXR = { war = { target = MEX } }
-# Check leaders , Caranza, Villa, for MXR
 		}			
 	}
 
-# The first legion of foreign mercenaries, during the 1910 Madero revolt, was the Falange de los Extranjeros (Foreign Phalanx), 
-# which included Giuseppe ("Peppino") Garibaldi, grandson of the famed Italian unifier, as well as many American recruits.
-# Later, during the revolt against the coup d'état of Victoriano Huerta, many of the same foreigners and others were recruited 
-# and enlisted by Pancho Villa and his División del Norte. 	
-#  División del Norte at its height numbered some 50,000 men. (1915?)
-	
 
 # Magonista's Rebel 29/1/11  
 
@@ -193,7 +177,6 @@
 	trigger = {
 		tag = MEX
 		MEX = {	war_with = MXR }
-		MEX = {	has_country_flag = "madero_revolt" }
 		}
 		 
 	option = {
@@ -417,7 +400,7 @@
 		MXR = { inherit = MEX }
 		any_owned = {
 				limit = { is_core = MXR }
-				remove_core = MEX }
+				remove_core = MEX }	###### NOT WORKING ########
 		MXR = { capital = 9604 }       						# Ciudad de México
 		MXR = { money = +200 }	
 		USA = { set_country_flag = "diaz_crisis_over" }
@@ -434,18 +417,16 @@
 	
 ### Consider using 
 
-#occupied = { local_revolt_risk = 2 }			#2% revolt risk!
-
 #revolt_risk = {
 #	local_ic = -0.02
 #	local_manpower_modifier = -0.02
 #	local_resources = -0.02
 #}
-
-# local_revolt_risk         add a constant value to revolt_risk to a province. 
 # local_partisan_Support    add an increase of revolt_risk, so you can see it as Derivation in time of revolt_risk
 	
-	
+
+#  División del Norte at its height numbered some 50,000 men. (1915?)
+		
 	
 	
 # November 1911 Zapata rebels pop ups. 
@@ -467,7 +448,7 @@
 # MEX doesn't exist AND Madero is Head of State of MXR and NOT 10 Tragic days
 		tag = MXR
 		MXR = { has_country_flag = "diaz_defeated" }
-		not = { MXR = { has_country_flag = "huerta_president" } }
+		not = { MXR = { has_country_flag = "Ten_Tragic_Days" } }
 	}
 	
 	option = {										
@@ -476,7 +457,7 @@
 		9623 = { random_neighbor_province = { create_revolt = 4 } }    # Morelos
 		9604 = { random_neighbor_province = { create_revolt = 4 } }    # Mexico City needs to be garrisoned
 		MXR = { dissent = 3 }
-		MXR = { kill_leader = 15110195 }
+		MXR = { kill_leader = 15110195 }		###### NOT WORKING ######
 		MXR = { set_country_flag = "zapata_rebels" }
 		}
 	}
@@ -500,7 +481,7 @@
 	trigger = {
 		tag = MXR
 		MXR = { has_country_flag = "zapata_rebels" }
-		not = { MXR = { has_country_flag = "huerta_president" } }
+		not = { MXR = { has_country_flag = "Ten_Tragic_Days" } }
 # MEX doesn't exist AND Madero is Head of State of MXR and NOT 10 Tragic days		
 	}
 	
@@ -537,7 +518,7 @@
 	trigger = {
 		tag = MXR
 		MXR = { has_country_flag = "zapata_rebels" }
-		not = { MXR = { has_country_flag = "huerta_president" } }
+		not = { MXR = { has_country_flag = "Ten_Tragic_Days" } }
 # MEX doesn't exist AND Madero is Head of State of MXR and NOT 10 Tragic days		
 	}
 	
@@ -573,7 +554,7 @@
 	trigger = {
 		tag = MXR
 		MXR = { has_country_flag = "zapata_rebels" }
-		not = { MXR = { has_country_flag = "huerta_president" } }
+		not = { MXR = { has_country_flag = "Ten_Tragic_Days" } }
 # MEX doesn't exist AND Madero is Head of State of MXR and NOT 10 Tragic days		
 	}
 	
@@ -606,13 +587,11 @@
 		ai_chance = { factor = 100 }
 		name = "EVT1910_101036_OPTA"
 		USA = { set_country_flag = "support_madero_coup" }
-#		MXR = {	country_event = 101038 }        # Ten Tragic Days
 		}
 	option = {	
 		ai_chance = { factor = 0 }	
 		USA = { set_country_flag = "no_madero_coup" }
 		name = "EVT1910_101036_OPTB"			
-#		MXR = {	country_event = 101040 }        # Ten Tragic Days
 		}
 	}
 
@@ -630,8 +609,6 @@
 	picture = "soldiers_in_streets"
 	
 	fire_only_once = yes  
-
-#	is_triggered_only = yes
 	
 	major = yes
 	
@@ -665,8 +642,6 @@
 	
 	fire_only_once = yes 
 
-#	is_triggered_only = yes	
-	
 	major = yes
 	
 	mean_time_to_happen = { days = 5 }
@@ -678,7 +653,7 @@
 	
 	option = {										
 		name = "ACTION_NAME_DAMN"
-		9604 = { create_revolt = 8 }    # Mexico City
+		9604 = { create_revolt = 1 }    # Mexico City
 		random_list = {
 			70 = { MXR = { country_event = 101042 } }
 			30 = { MXR = { country_event = 101044 } }
@@ -784,42 +759,42 @@
 				add_core = MXC }
 			MXR = { national_unity = -1 }
 			MXR = { dissent = 5 }
-			9268 = { secede_province = MXC }   # Chihuahua
-			9237 = { secede_province = MXC }   # Yecora
-			9298 = { secede_province = MXC }   # Uruachic
-			9203 = { secede_province = MXC }   # Hermosillo
-			9173 = { secede_province = MXC }   # Huepac
-			9236 = { secede_province = MXC }   # Guaymas
-			9327 = { secede_province = MXC }   # San Juanito
+			9203 = { secede_province = MXC }   # Hermosillo			
+			9145 = { secede_province = MXC }   # Caborca
+			9118 = { secede_province = MXC }   # Agua Prieta
+			9174 = { secede_province = MXC }   # Natora
+			9147 = { secede_province = MXC }   # Ciudad Juarez
+			9419 = { secede_province = MXC }   # Monterrey
+			9449 = { secede_province = MXC }   # Mendez
 			MXC = { load_oob = MXC_1913_carranza.txt }
-			MXC = { capital = 9236 }
+			MXC = { officer_pool = 1000 }
 			MXC = { supplies = 5000 }
-			9203 = { supplies = 10000 }        # Hermosillo
-			9327 = { supplies = 5000 }         # San Juanito
+			9419 = { supplies = 5000 }         # Monterrey
+			9147 = { supplies = 5000 }         # Ciudad Juarez
 			MXC = { money = 100 }
 			MXC = { energy = 600 }
 			MXC = { rare_materials = 50 }
 			MXC = { metal = 50 }
 			MXC = { war = { target = MXR } }
-			MXR = { set_country_flag = "carranza_revolt" }
-			9660 = { add_province_modifier = { name = "mex_rev" duration = 360 } }
-			9674 = { add_province_modifier = { name = "mex_rev" duration = 360 } }
-			9589 = { add_province_modifier = { name = "mex_rev" duration = 360 } }
-			9588 = { add_province_modifier = { name = "mex_rev" duration = 360 } }
-			9659 = { add_province_modifier = { name = "mex_rev" duration = 360 } }
-			9622 = { add_province_modifier = { name = "mex_rev" duration = 360 } }
+#  HOW TO GET THESE TO APPLY TO THE 1914 START?????		
+			9660 = { add_province_modifier = { name = "mex_rev" duration = 730 } }
+			9660 = { create_revolt = 1 }
+			9674 = { add_province_modifier = { name = "mex_rev" duration = 730 } }
+			9674 = { create_revolt = 1 }
+			9589 = { add_province_modifier = { name = "mex_rev" duration = 730 } }
+			9589 = { create_revolt = 1 }
+			9588 = { add_province_modifier = { name = "mex_rev" duration = 730 } }
+			9588 = { create_revolt = 1 }
+			9659 = { add_province_modifier = { name = "mex_rev" duration = 730 } }
+			9659 = { create_revolt = 1 }
+			9622 = { add_province_modifier = { name = "mex_rev" duration = 730 } }
+			9622 = { create_revolt = 1 }
 			kill_leader = 15110195				# Rebel leaders leave MXR
 			kill_leader = 15110060
 			kill_leader = 15110203
 			kill_leader = 15110042			
-#  HOW TO GET THESE TO APPLY TO THE 1914 START?????			
 		}			
 	}
-
-# Villa recruits Gringo's
-
-### Defeat Huerta
-
 
 
 #   USA embargoes arms to MXR
@@ -902,9 +877,13 @@
 
 
 
+# Villa recruits Gringo's
 
 # Huerta defeated
+# On defeat of Huerta ensure embargoes and flags are cleared
+
 # Villa and Zapata turn on Carranza
+
 # When fighting broke out in 1914 between the Constitutionalists (Carranza, Obregón, etc.) and the Conventionalists (Villa and Zapata) 
 # following the Convention of Aguascalientes, the Constitutional Army numbered 57,000 men, to Villa and Zapata's 72,000 men. 
 # But as the Constitutionalists grew stronger, Villa and Zapata grew weaker. 

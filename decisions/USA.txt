@@ -30,19 +30,11 @@ diplomatic_decisions = {
 			 }
 		potential = {
 			 tag = USA
-			 MEX = {
-				 war_with = MXR
-				 }
-			 MEX = {
-				has_country_flag = "madero_revolt"
-				 }
+			 MEX = { war_with = MXR }
+			 MEX = { has_country_flag = "madero_revolt" }
 			 NOT = {
-				 USA = {
-					 has_country_flag = "diaz_crisis"
-					 }
-				 USA = {
-					 has_country_flag = "diaz_crisis_over"
-					 }
+				 USA = { has_country_flag = "diaz_crisis" }
+				 USA = { has_country_flag = "diaz_crisis_over" }
 				 }
 			 }
 		allow = {
@@ -58,16 +50,12 @@ diplomatic_decisions = {
 	
 
 	 USA_madero = {                                             #Replace_Madero
-		ai_will_do = {
-			 factor = 1
-			 }
+		ai_will_do = { factor = 1 }
 		potential = {
 			 tag = USA
 			 MXR = { has_country_flag = "zapata_rebels" }
-			 NOT = {
-				 MXR = { has_country_flag = "huerta_president" }
-				 USA = { has_country_flag = "madero_coup" }
-				 }
+			 MXR = { head_of_state = 15100001 }                 # Madero is Head of State
+			 NOT = { USA = { has_country_flag = "madero_coup" }	}
 			 }
 		allow = {
 			 MXR = { has_country_flag = "zapata_rebels" }
@@ -135,12 +123,14 @@ diplomatic_decisions = {
 	}
 
 	
-	Embargo_Huerta = {                                    # US Arms embargo on Huerta - Mexico
+	Embargo_Huerta = {                                      # US Arms embargo on Huerta - Mexico
 		ai_will_do = { factor = 1 }
 		potential = {
 			tag = USA
 #			MXR = { has_country_flag = "Huerta_Coup" }
-			MXR = { head_of_state = 15100032 }                 # Huerta is Head of State
+			exists = MXR
+			exists = MXC
+			MXR = { head_of_state = 15100032 }              # Huerta is Head of State
 			USA = { not = { has_country_flag = Huerta_embargoed } }
 		}
 		
@@ -151,12 +141,12 @@ diplomatic_decisions = {
 		effect = {
 			MXR = { add_country_modifier = { 
 				name = "weapons_embargo" 
-				duration = 360
+				duration = 600
 				} 
 			}
-			USA = { set_country_flag = Huerta_embargoed }
-			MXR = { country_event = 101048 }					# USA embargoes MXR
-			MXC = { country_event = 101048 }					# USA embargoes MXR
+		USA = { set_country_flag = Huerta_embargoed }
+		MXR = { country_event = 101048 }					# USA embargoes MXR
+		MXC = { country_event = 101048 }					# USA embargoes MXR
 		}
 	}
 
@@ -169,7 +159,10 @@ diplomatic_decisions = {
 		}
 		allow = {
 			USA = { has_country_flag = Niagara_Peace }
+		or = { 
 			not = { MXR = { head_of_state = 15100032 } }        # Huerta is NOT Head of State
+			not = { exists = MXR }
+		}
 		}
 
 		effect = {
