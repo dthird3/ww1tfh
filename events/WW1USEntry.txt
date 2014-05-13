@@ -99,43 +99,33 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = {
-		 days = 1
-		 }
+	mean_time_to_happen = { days = 1 }
 	major = yes
 	 
 	trigger = {
-		 tag = USA
-		 war = no
-		 GER = {
-			 war_with = ENG
-			 }
-		 NOT = {
-			 has_country_flag = neutr
-			 }
-		 }
+		tag = USA
+		war = no
+		GER = { war_with = ENG }
+		USA = { NOT = { has_country_flag = neutr } }
+		}
 	option = {
-		 name = "opta_USAE6"
-		 ai_chance = {
-			 factor = 100
-			 }
-		 USA = {
-			 neutrality = +40
-			 }
-		 AUH = {
+		name = "opta_USAE6"
+		ai_chance = { factor = 100 }
+		USA = { neutrality = +40 }
+		AUH = {
 			 threat = {
 				 who = USA
 				 value = -20
 				 }
 			 }
-		 GER = {
+		GER = {
 			 threat = {
 				 who = USA
 				 value = -35
 				 }
 			 }
-		 set_country_flag = neutr
-		 }
+		USA = { set_country_flag = neutr }
+		}
 	}
 
 
