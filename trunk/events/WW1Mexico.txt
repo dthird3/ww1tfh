@@ -263,8 +263,6 @@
 	fire_only_once = yes
 		
 	major = yes
-	
-	mean_time_to_happen = { days = 0 }
 
 	trigger = {
 		tag = MEX
@@ -599,8 +597,6 @@
 # Ten Tragic Days - USA, Rebels & Huerta coup Madero
 # USA support coup attempt
 
-# dissent = x   (possible this could be used)
-
  country_event = {
 	title = "EVT1910_101038_TITLE"
 	desc = "EVT1910_101038_DESC"
@@ -621,7 +617,7 @@
 	
 	option = {										
 		name = "ACTION_NAME_DAMN"
-		9604 = { create_revolt = 8 }    # Mexico City
+		9604 = { random_neighbor_province = { create_revolt = 4 } }    # Mexico City
 		random_list = {
 			90 = { MXR = { country_event = 101042 } }
 			10 = { MXR = { country_event = 101044 } }
@@ -653,7 +649,7 @@
 	
 	option = {										
 		name = "ACTION_NAME_DAMN"
-		9604 = { create_revolt = 1 }    # Mexico City
+		9604 = { random_neighbor_province = { create_revolt = 4 } }    # Mexico City
 		random_list = {
 			70 = { MXR = { country_event = 101042 } }
 			30 = { MXR = { country_event = 101044 } }
@@ -687,15 +683,17 @@
 	
 	option = {										
 		name = "ACTION_NAME_DAMN"
-		remove_minister = 15100001			# Madero
-		head_of_state = 15100032			# Huerta
-		head_of_government = 15100032		# Huerta
+		MXR = { remove_minister = 100001 }			# Madero
+		MXR = { kill_leader = 110118 }				# Madero
+		MXR = { head_of_state = 100032 }				# Huerta
+		MXR = { head_of_government = 100032 }			# Huerta
 		USA = { clr_country_flag = "support_madero_coup" }
 		USA = { clr_country_flag = "no_madero_coup" }
 		MXR = { set_country_flag = "Ten_Tragic_Days" }
 		MXR = { set_country_flag = "Huerta_Coup" }
 		}
 	}
+	
 	
 # Ten Tragic Days - Madero coup fails
 
