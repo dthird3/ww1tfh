@@ -26,46 +26,6 @@
 		}
 	}
 	
-	
-#  Occupation of Nicaragua  date = 1912.6.1
-
- country_event = {
-	title = "USAE1"
-	desc = "desc_USAE1"
-	id = 100300
-	 
-	picture = "USAP1"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	option = {
-		 name = "opta_USAE1"
-		 USA = { create_vassal = NIC }
-		 dissent = 10
-		 manpower = 20
-		 neutrality = -1
-		 money = 100
-		 }
-	option = {
-		 name = "Annexation shall protect our interests"
-		 dissent = 10
-		 USA = { inherit = NIC }
-		 manpower = 20
-		 neutrality = -1
-		 money = 100
-		 }
-	option = {
-		 name = "Occupation will suffice"
-		 ai_chance = { factor = 100 }
-		 dissent = -10
-		 manpower = 100
-		 neutrality = -1
-		 money = 100
-		 }
-	}
-
 
 #Organization of American States
 
@@ -137,7 +97,47 @@
 		 }
 	}
 	
+	
+#  Occupation of Nicaragua  date = 1912.6.1
 
+ country_event = {
+	title = "USAE1"
+	desc = "desc_USAE1"
+	id = 100300
+	 
+	picture = "USAP1"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_USAE1"
+		 USA = { create_vassal = NIC }
+		 dissent = 10
+		 manpower = 20
+		 neutrality = -1
+		 money = 100
+		 }
+	option = {
+		 name = "Annexation shall protect our interests"
+		 dissent = 10
+		 USA = { inherit = NIC }
+		 manpower = 20
+		 neutrality = -1
+		 money = 100
+		 }
+	option = {
+		 name = "Occupation will suffice"
+		 ai_chance = { factor = 100 }
+		 dissent = -10
+		 manpower = 100
+		 neutrality = -1
+		 money = 100
+		 }
+	}
+	
+	
 #We did it!  The Panama Canal is officially opened.
 
  country_event = {
