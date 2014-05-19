@@ -48,3 +48,68 @@
 		 }
 	}
 
+
+#KMT win the first election campaign
+
+ country_event = {
+	title = "ROCE2"
+	desc = "desc_ROCE2"
+	id = 999952
+	 
+	picture = "ROCE2"
+
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 30
+		 }
+	 
+	trigger = {
+		 tag = ROC
+		 date = 1913.1.1
+		 not = { has_country_flag = KMT_win_elc }
+		 }
+	 
+	option = {
+		 name = "opta_ROCE2"
+		 ai_chance = {
+			 factor = 100
+			 }
+			 head_of_government = ¡§minister id¡¨ #Song Jiaoren
+			 national_unity = 5
+			 popularity = 10
+			 organisation = 10
+			 set_country_flag = KMT_win_elc
+		}
+	}
+
+
+#Song Jiaoren was kiled
+
+ country_event = {
+	title = "ROCE3"
+	desc = "desc_ROCE3"
+	id = 999951
+	 
+	picture = "ROCE3"
+	 
+	fire_only_once = yes
+ 
+	trigger = {
+		 tag = ROC
+		 date = 1913.1.1
+		 has_country_flag = KMT_win_elc
+		 not = { has_country_flag = KMT_song }
+		 }
+		 
+	option = {
+		 name = "opta_ROCE2"
+		 ai_chance = {
+			 factor = 100
+			 }
+			 head_of_government = ¡§minister id¡¨ #Song Jiaoren
+			 national_unity = 5
+			 popularity = 10
+			 organisation = 10
+		}
+	}
