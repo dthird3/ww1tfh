@@ -84,7 +84,7 @@
 	}
 
 
-#Song Jiaoren was kiled
+#the threat from KMT
 
  country_event = {
 	title = "ROCE3"
@@ -99,17 +99,130 @@
 		 tag = ROC
 		 date = 1913.1.1
 		 has_country_flag = KMT_win_elc
-		 not = { has_country_flag = KMT_song }
+		 not = { has_country_flag = KMT_threat }
 		 }
 		 
 	option = {
-		 name = "opta_ROCE2"
+		 name = "opta_ROCE3"
 		 ai_chance = {
 			 factor = 100
 			 }
-			 head_of_government = ¡§minister id¡¨ #Song Jiaoren
 			 national_unity = 5
-			 popularity = 10
-			 organisation = 10
+			 add_country_modifier = ¡§name of modifier¡¨
+			 country_event = 999950 #the reaction of Yuan
+			 set_country_flag = KMT_threat
 		}
 	}
+	
+	
+#the reaction of Yuan
+
+ country_event = {
+	title = "ROCE4"
+	desc = "desc_ROCE4"
+	id = 999950
+	 
+	picture = "ROCE4"
+	
+	is_triggered_only = yes
+ 
+	option = {
+		 name = "opta_ROCE4"
+		 ai_chance = {
+			 factor = 90
+			 }
+			 country_event = 999949 #Song Jiaoren was killed
+		}
+		
+		option = {
+		 name = "optb_ROCE4" #take it easy...
+		 ai_chance = {
+			 factor = 10
+			 }
+			 set_country_flag = not_kill_Song
+		}
+	}
+	
+	
+#Song Jiaoren was killed
+
+ country_event = {
+	title = "ROCE5"
+	desc = "desc_ROCE5"
+	id = 999949
+	 
+	picture = "ROCE5"
+	
+	is_triggered_only = yes
+ 
+	option = {
+		 name = "opta_ROCE5"
+		 ai_chance = {
+			 factor = 100
+			 }
+			 national_unity = -5
+			 dissent = 5
+			 remove_minister = "" #Song Jiaoren
+			 remove_country_modifier = ¡§name of modifier¡¨
+			 set_country_flag = KMT_Song
+		}
+	}
+	
+
+#Second Revolution
+
+ country_event = {
+	title = "ROCE6"
+	desc = "desc_ROCE6"
+	id = 999948
+	 
+	picture = "ROCE6"
+	
+	trigger = {
+		 tag = ROC
+		 has_country_flag = KMT_Song
+		 not = { has_country_flag = 2nd_Revolution }
+		 }
+ 
+	option = {
+		 name = "opta_ROCE6"
+		 ai_chance = {
+			 factor = 100
+			 }
+			 dissent = 3
+			 remove_minister = ""
+			 kill_leader = ""
+			 5834 = { #Guangzhou
+			 create_revolt = 1
+			 }
+			 set_country_flag = 2nd_Revolution
+		}
+	}
+
+	
+#Second Revolution failed
+
+ country_event = {
+	title = "ROCE7"
+	desc = "desc_ROCE7"
+	id = 999947
+	 
+	picture = "ROCE7"
+	
+	trigger = {
+		 tag = ROC
+		 5494 = { #Nanjing
+		 controlled_by = ROC
+			 } 
+		 not = { has_country_flag = 2nd_Revolution_failed }
+		 }
+ 
+	option = {
+		 name = "opta_ROCE7"
+		 ai_chance = {
+			 factor = 100
+			 }
+			 set_country_flag = 2nd_Revolution_failed
+		}
+	}
+	
