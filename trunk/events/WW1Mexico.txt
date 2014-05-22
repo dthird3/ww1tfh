@@ -133,8 +133,8 @@
 			MEX = { dissent = 5 }
 			USA = { end_guarantee = MEX } 
 			MEX = { kill_leader = 14710040 }
-			MEX = { kill_leader = 14710044 }
-			MEX = { kill_leader = 14710109 }
+			MEX = { kill_leader = 4710044 }
+			MEX = { kill_leader = 471109 }
 			9268 = { secede_province = MXR }   # Chihuahua
 			9237 = { secede_province = MXR }   # Yecora
 			9298 = { secede_province = MXR }   # Uruachic
@@ -395,10 +395,10 @@
 		name = "EVT1910_101024_OPTA"
 		MEX = { end_war = MXR }
 		MEX = { MXR = { split_troops = 1.00 } }				# Federal Mexican Army comes under control of new Government
-		MXR = { inherit = MEX }
 		any_owned = {
-				limit = { is_core = MXR }
-				remove_core = MEX }	###### NOT WORKING ########
+			limit = { is_core = MXR }
+			remove_core = MEX }	
+		MXR = { inherit = MEX }
 		MXR = { capital = 9604 }       						# Ciudad de México
 		MXR = { money = +200 }	
 		USA = { set_country_flag = "diaz_crisis_over" }
@@ -455,7 +455,7 @@
 		9623 = { random_neighbor_province = { create_revolt = 4 } }    # Morelos
 		9604 = { random_neighbor_province = { create_revolt = 4 } }    # Mexico City needs to be garrisoned
 		MXR = { dissent = 3 }
-		MXR = { kill_leader = 15110195 }		###### NOT WORKING ######
+		MXR = { kill_leader = 15110195 }		
 		MXR = { set_country_flag = "zapata_rebels" }
 		}
 	}
@@ -470,7 +470,7 @@
 	 
 	picture = "Mex_Rebels"
 	
-	fire_only_once = yes      # Once off rebellion 
+#	fire_only_once = yes      # continual rebel pop up
 	
 	major = yes
 	
@@ -683,9 +683,9 @@
 	
 	option = {										
 		name = "ACTION_NAME_DAMN"
-		MXR = { remove_minister = 100001 }			# Madero
-		MXR = { kill_leader = 110118 }				# Madero
-		MXR = { head_of_state = 100032 }				# Huerta
+		MXR = { remove_minister = 15100001 }			# Madero
+		MXR = { kill_leader = 15110118 }				# Madero
+		MXR = { head_of_state = 15100032 }				# Huerta
 		MXR = { head_of_government = 100032 }			# Huerta
 		USA = { clr_country_flag = "support_madero_coup" }
 		USA = { clr_country_flag = "no_madero_coup" }
@@ -877,174 +877,104 @@
 
 # Villa recruits Gringo's
 
-# Huerta defeated
-# On defeat of Huerta ensure embargoes and flags are cleared
-
 # Villa and Zapata turn on Carranza
-
 # When fighting broke out in 1914 between the Constitutionalists (Carranza, Obregón, etc.) and the Conventionalists (Villa and Zapata) 
 # following the Convention of Aguascalientes, the Constitutional Army numbered 57,000 men, to Villa and Zapata's 72,000 men. 
+
 # But as the Constitutionalists grew stronger, Villa and Zapata grew weaker. 
+
 # Eventually the war against the Conventionalists was won after the assassination of Zapata in 1919 and the surrender of Villa in July 1920. 
 # By 1917, the main fighting of the civil war between the two factions was over, with some minor revolts by Felicistas (supporters of Félix Díaz, 
 # nephew of ousted president Porfirio Díaz). This marked the end of any real resistance to Carranza.	
+
+
+#Huerta has been defeated!
+# On defeat of Huerta ensure embargoes and flags are cleared
+
+ country_event = {
+	title = "EVT1914_101056_TITLE"
+	desc = "EVT1914_101056_DESC"
+	id = 101056
+	 
+	picture = "provisionalgovernment"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = { days = 7 }
+	
+	trigger = {
+		war = no
+		tag = MXC
+		exists = MXC
+		not = {
+			exists = MXR
+			has_country_flag = MEX_Conv }
+	}
+		
+	option = {
+		name = "ACTION_NAME_GREAT"
+
+		random_country = {
+			limit = {
+				tag = THIS
+				not = { has_global_flag = MEX_Convention }
+				}
+			MXC = {	country_event = 193 }                             #Convention_of_Aguascalientes
+			}
+		 random_country = {
+			limit = {
+				tag = THIS
+				not = { has_global_flag = MEX_Convention }
+				}
+			set_global_flag = MEX_Convention
+			}
+		set_country_flag = MEX_Conv
+		}
+	}
+
+
+# Convention of Aguascalientes
+
+# After the meeting, the newly reconciled Villa and Zapata entered Mexico City on 6 December, at the head of an army of 60,000 men. 
+# Carranza and his supporters consequently fled to Veracruz.
+
+ country_event = {
+	title = "EVT1914_101058_TITLE"
+	desc = "EVT1914_101058_DESC"
+	id = 101058
+	 
+	picture = "convention_of_aguascalientes"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = {
+		 tag = MXR
+		 }
+	option = {
+		 name = "DH_EVENT_2038604_Option7"
+		 dissent = 2
+		 MXR = { country_event = 194                              #Convention_of_Aguascalientes
+			}
+		 MXR = { country_event = 195                              #Convention_of_Aguascalientes
+			}
+		 clr_global_flag = MEX_Convention
+		 clr_country_flag = MEX_Conv
+		 set_global_flag = SLEEPEVENT_2038601
+		 random_country = {
+			 limit = {
+				 tag = THIS
+				 THIS = {
+					 ai = yes
+					 }
+				 }
+			 }
+		 }
+	}	
+	
 	
 ##################   DH EVENTS  ###################################################	
-
-#Huerta has been defeated!
-
- country_event = {
-	title = "DH_EVENT_2038601_TITLE"
-	desc = "DH_EVENT_2038601_DESC"
-	id = 190
-	 
-	picture = "provisionalgovernment"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = {
-		 days = 7
-		 }
-	trigger = {
-		 war = no
-		 exists = MXR
-		 not = {
-			 exists = MEX
-			 has_global_flag = 2038601_EVENT_DONE#
-			 has_global_flag = 2038602_EVENT_DONE#
-			 has_global_flag = 2038603_EVENT_DONE#
-			 has_country_flag = MEX_Conv
-			 }
-		 date = 1914.1.1
-		 not = {
-			 date = 1920.12.30
-			 }
-		 or = {
-			 tag = MXR
-			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038601#
-			 }
-		 }
-	option = {
-		 name = "DH_EVENT_2038601_Option7"
-		 dissent = -5
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 not = {
-					 has_global_flag = MEX_Convention
-					 }
-				 }
-			 MXR = {
-				 country_event = 193 #Convention_of_Aguascalientes
-				}
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 not = {
-					 has_global_flag = MEX_Convention
-					 }
-				 }
-			 set_global_flag = MEX_Convention
-			 }
-		 set_global_flag = SLEEPEVENT_2038602#
-		 set_global_flag = SLEEPEVENT_2038603#
-		 set_country_flag = MEX_Conv
-		 set_global_flag = 2038601_EVENT_DONE#
-		 }
-	}
-
-
-#Huerta has been defeated!
-
- country_event = {
-	title = "DH_EVENT_2038602_TITLE"
-	desc = "DH_EVENT_2038602_DESC"
-	id = 191
-	 
-	picture = "provisionalgovernment"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = {
-		 days = 7
-		 }
-	trigger = {
-		 war = no
-		 or = {
-			 exists = MXR
-			 }
-		 or = {
-			 not = {
-				 exists = MXR
-				 }
-			 }
-		 not = {
-			 exists = MEX
-			 has_global_flag = 2038602_EVENT_DONE#
-			 has_global_flag = 2038603_EVENT_DONE#
-			 has_country_flag = MEX_End
-			 }
-		 date = 1914.1.1
-		 not = {
-			 date = 1920.12.30
-			 }
-		 or = {
-			 tag = MXR
-			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038602#
-			 }
-		 }
-	option = {
-		 name = "DH_EVENT_2038602_Option7"
-		 leave_faction = axis
-		 leave_faction = allies
-		 leave_faction = comintern
-		 dissent = -5
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 exists = MXR
-				 not = {
-					 exists = MXR
-					 MXR = {
-						 war_with = MXR
-						 }
-					 }
-				 }
-			 MXR = {
-				 country_event = 210 #The_end_of_the_Mexican_Revolution?
-				}
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 exists = MXR
-				 not = {
-					 exists = MXR
-					 MXR = {
-						 war_with = MXR
-						 }
-					 }
-				 }
-			 MXR = {
-				 country_event = 211 #The_end_of_the_Mexican_Revolution?
-				}
-			 }
-		 set_country_flag = MEX_End
-		 set_global_flag = SLEEPEVENT_2038601
-		 set_global_flag = SLEEPEVENT_2038603
-		 set_global_flag = 2038602_EVENT_DONE#
-		 }
-	}
-
 
 #Huerta is victorious!
 
@@ -1092,231 +1022,6 @@
 		 set_global_flag = SLEEPEVENT_2038601
 		 set_global_flag = SLEEPEVENT_2038602
 		 set_global_flag = 2038603_EVENT_DONE#
-		 }
-	}
-
-
-#Convention of Aguascalientes
-
- country_event = {
-	title = "DH_EVENT_2038604_TITLE"
-	desc = "DH_EVENT_2038604_DESC"
-	id = 193
-	 
-	picture = "convention_of_aguascalientes"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	trigger = {
-		 tag = MXR
-		 }
-	option = {
-		 name = "DH_EVENT_2038604_Option7"
-		 dissent = 2
-		 MXR = {
-			 country_event = 194 #Convention_of_Aguascalientes
-			}
-		 MXR = {
-			 country_event = 195 #Convention_of_Aguascalientes
-			}
-		 clr_global_flag = MEX_Convention
-		 clr_country_flag = MEX_Conv
-		 set_global_flag = SLEEPEVENT_2038601
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 THIS = {
-					 ai = yes
-					 }
-				 }
-			 }
-		 }
-	}
-
-
-#Convention of Aguascalientes
-
- country_event = {
-	title = "DH_EVENT_2038605_TITLE"
-	desc = "DH_EVENT_2038605_DESC"
-	id = 194
-	 
-	picture = "convention_of_aguascalientes"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	trigger = {
-		 tag = MXR
-		 }
-	option = {
-		 ai_chance = {
-			 factor = 90
-			 }
-		 name = "DH_EVENT_2038605_Option7"
-		 neutrality = -5
-		 war = {
-			 target = MXR
-			 }
-		 dissent = -5
-		 clr_country_flag = MEX_Conv
-		 set_global_flag = U58_alliance_U59
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 THIS = {
-					 ai = yes
-					 }
-				 }
-			 }
-		 }
-	option = {
-		 ai_chance = {
-			 factor = 5
-			 }
-		 name = "DH_EVENT_2038605_Option8"
-		 neutrality = -10
-		 war = {
-			 target = MXR
-			 }
-		 dissent = -2
-		 clr_country_flag = MEX_Conv
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 THIS = {
-					 ai = yes
-					 }
-				 }
-			 }
-		 }
-	option = {
-		 ai_chance = {
-			 factor = 90
-			 }
-		 name = "DH_EVENT_2038605_Option9"
-		 neutrality = -5
-		 war = {
-			 target = MXR
-			 }
-		 dissent = -5
-		 clr_country_flag = MEX_Conv
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 THIS = {
-					 ai = yes
-					 }
-				 }
-			 }
-		 }
-	option = {
-		 ai_chance = {
-			 factor = 5
-			 }
-		 name = "DH_EVENT_2038605_Option10"
-		 clr_country_flag = MEX_Conv
-		 MXR = {
-			 country_event = 196 #Villistas_submit_to_us
-			}
-		 }
-	}
-
-
-#Convention of Aguascalientes
-
- country_event = {
-	title = "DH_EVENT_2038606_TITLE"
-	desc = "DH_EVENT_2038606_DESC"
-	id = 195
-	 
-	picture = "convention_of_aguascalientes"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	trigger = {
-		 tag = MXR
-		 }
-	option = {
-		 ai_chance = {
-			 factor = 90
-			 }
-		 name = "DH_EVENT_2038606_Option7"
-		 neutrality = -5
-		 create_alliance = MXR
-		 dissent = -5
-		 clr_country_flag = MEX_Conv
-		 clr_global_flag = U58_alliance_U59
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 THIS = {
-					 ai = yes
-					 }
-				 }
-			 }
-		 }
-	option = {
-		 ai_chance = {
-			 factor = 5
-			 }
-		 name = "DH_EVENT_2038606_Option8"
-		 neutrality = -10
-		 war = {
-			 target = MXR
-			 }
-		 dissent = -2
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 has_global_flag = U58_alliance_U59
-				 }
-			 clr_global_flag = U58_alliance_U59
-			 }
-		 clr_country_flag = MEX_Conv
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 THIS = {
-					 ai = yes
-					 }
-				 }
-			 }
-		 }
-	option = {
-		 ai_chance = {
-			 factor = 90
-			 }
-		 name = "DH_EVENT_2038606_Option9"
-		 neutrality = -5
-		 war = {
-			 target = MXR
-			 }
-		 dissent = -5
-		 clr_country_flag = MEX_Conv
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 THIS = {
-					 ai = yes
-					 }
-				 }
-			 }
-		 }
-	option = {
-		 ai_chance = {
-			 factor = 5
-			 }
-		 name = "DH_EVENT_2038606_Option10"
-		 clr_country_flag = MEX_Conv
-		 MXR = {
-			 country_event = 197 #Zapatistas_submit_to_us
-			}
 		 }
 	}
 
