@@ -1,53 +1,54 @@
-  corps = {
-	leader = 15110195
-	location = 9623  					# Morelo
+ corps = {
+	location = 9623  # Cuernavaca
+	leader = 60002 # Zapata, Emiliano
 	name = "Ejercito Libertador del Sur"
 	
-	regiment = {
+	 regiment = {
 		type = hq_brigade 
 		name = "Ejercito Libertador del Sur HQ"
 		historical_model = 0 
 		}
 	
-	division = {
-	dig_in = 10
-	location = 9623  					# Morelo
+	 division = {
+		location = 9623  # Cuernavaca
+		dig_in = 10 
 		is_reserve = yes 
 		name = "1. División de Zapatistas"
 		
-		regiment = {
+		 regiment = {
 			type = militia_brigade 
-			name = "1. Brigada de Zapatistas"
 			experience = 2 
+			name = "1. Brigada de Zapatistas"
 			historical_model = 2 
 			}
 		
 		 regiment = {
 			type = militia_brigade 
+			experience = 2 
 			name = "2. Brigada de Zapatistas"
-			experience = 2
 			historical_model = 2 
 			}
 		}
-		
-	division = {
-	dig_in = 10
-	location = 9623  					# Morelo
+	
+	 division = {
+		location = 9623  # Cuernavaca
+		dig_in = 10 
+		is_reserve = yes
 		name = "2. División de Zapatistas"
-		is_reserve = yes 
 		
 		 regiment = {
 			type = cavalry_brigade 
+			experience = 2 
 			name = "3. Brigada de Zapatistas"
-			experience = 2
 			historical_model = 1 
 			}
 		
 		 regiment = {
 			type = cavalry_brigade 
+			experience = 2 
 			name = "4. Brigada de Zapatistas"
-			experience = 2
 			historical_model = 1 
 			}
 		}
 	}
+

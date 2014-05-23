@@ -1,227 +1,222 @@
  theatre = {
-	leader = 15110118					# Madero
-	location = 9237  					# Yecora
+	location = 9237  # Yécora
+	leader = 60001 # Madero, F
 	name = "Ejercito de Maderistas"
 	
-	regiment = {
-		type = hq_brigade 
-		name = "Ejercito de Orozco HQ"
-		historical_model = 0 
-		}
-
- corps = {
-	leader = 15110202					# Orozco
-	location = 9237  					# Yecora
-	name = "Ejercito de Orozco"
-	
-	regiment = {
+	 regiment = {
 		type = hq_brigade 
 		name = "Ejercito de Orozco HQ"
 		historical_model = 0 
 		}
 	
-	division = {
-		dig_in = 10
-		location = 9237  				# Yecora
-		is_reserve = no 
-		name = "1. División de Maderistas"
-		
-		regiment = {
-			type = militia_brigade 
-			name = "1. Brigada de Maderistas"
-			experience = 2 
-			historical_model = 2 
-			}
+	 corps = {
+		location = 9237  # Yécora
+		leader = 60003 # Orozco, Pascual
+		name = "Ejercito de Orozco"
 		
 		 regiment = {
-			type = militia_brigade 
-			name = "2. Brigada de Maderistas"
-			experience = 2
-			historical_model = 2 
+			type = hq_brigade 
+			name = "Ejercito de Orozco HQ"
+			historical_model = 0 
 			}
-		}
 		
-	division = {
-		dig_in = 10
-		location = 9237  				# Yecora
-		name = "3. Brigada de Maderistas"
-		is_reserve = no
+		 division = {
+			location = 9237  # Yécora
+			dig_in = 10 
+			is_reserve = no 
+			name = "1. División de Maderistas"
+			
+			 regiment = {
+				type = militia_brigade 
+				experience = 2 
+				name = "1. Brigada de Maderistas"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = militia_brigade 
+				experience = 2 
+				name = "2. Brigada de Maderistas"
+				historical_model = 2 
+				}
+			}
 		
-		 regiment = {
-			type = cavalry_brigade 
+		 division = {
+			location = 9237  # Yécora
+			dig_in = 10 
+			is_reserve = no
 			name = "3. Brigada de Maderistas"
-			experience = 2
-			historical_model = 1 
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 2 
+				name = "3. Brigada de Maderistas"
+				historical_model = 1 
+				}
 			}
-		}
 		
-	division = {
-		dig_in = 10
-		location = 9268					# Chihuahua
-		name = "4. Brigada de Maderistas"
-		is_reserve = no
-		
-		 regiment = {
-			type = cavalry_brigade 
+		 division = {
+			location = 9268  # Chihuahua
+			dig_in = 10 
+			is_reserve = no
 			name = "4. Brigada de Maderistas"
-			experience = 2
-			historical_model = 1 
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 2 
+				name = "4. Brigada de Maderistas"
+				historical_model = 1 
+				}
 			}
 		}
-	}
 	
-	corps = {
-	leader = 15110060					# Obregon
-	location = 9236  					# Guaymas
-	name = "Ejercito de Maytorena"
-	
-	regiment = {
-		type = hq_brigade 
-		name = "Ejercito de Maytorena HQ"
-		historical_model = 0 
-		}
-	
-	division = {
-		dig_in = 10
-		location = 9236  					# Guaymas
-		is_reserve = no 
-		name = "2. División de Maderistas"
-		
-		regiment = {
-			type = militia_brigade 
-			name = "5. Brigada de Maderistas"
-			experience = 2 
-			historical_model = 2 
-			}
+	 corps = {
+		location = 9236  # Guaymas
+		leader = 60004 # Obregón, A
+		name = "Ejercito de Maytorena"
 		
 		 regiment = {
-			type = militia_brigade 
-			name = "6. Brigada de Maderistas"
-			experience = 2
-			historical_model = 2 
+			type = hq_brigade 
+			name = "Ejercito de Maytorena HQ"
+			historical_model = 0 
 			}
-		}
 		
-	division = {
-		dig_in = 10
-		location = 9236  					# Guaymas
-		name = "7. Brigada de Maderistas"
-		is_reserve = no
+		 division = {
+			location = 9236  # Guaymas
+			dig_in = 10 
+			is_reserve = no 
+			name = "2. División de Maderistas"
+			
+			 regiment = {
+				type = militia_brigade 
+				experience = 2 
+				name = "5. Brigada de Maderistas"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = militia_brigade 
+				experience = 2 
+				name = "6. Brigada de Maderistas"
+				historical_model = 2 
+				}
+			}
 		
-		 regiment = {
-			type = cavalry_brigade 
+		 division = {
+			location = 9236  # Guaymas
+			dig_in = 10 
+			is_reserve = no
 			name = "7. Brigada de Maderistas"
-			experience = 2
-			historical_model = 1 
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 2 
+				name = "7. Brigada de Maderistas"
+				historical_model = 1 
+				}
 			}
-		}
 		
-	division = {
-		dig_in = 10
-		location = 9236  					# Guaymas
-		name = "8. Brigada de Maderistas"
-		is_reserve = no
-		
-		 regiment = {
-			type = cavalry_brigade 
+		 division = {
+			location = 9236  # Guaymas
+			dig_in = 10 
+			is_reserve = no
 			name = "8. Brigada de Maderistas"
-			experience = 2
-			historical_model = 1 
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 2 
+				name = "8. Brigada de Maderistas"
+				historical_model = 1 
+				}
 			}
 		}
-	}
 	
-	corps = {
-	leader = 15110203						# Villa
-	location = 9327							# San Juanito
-	name = "Ejercito de Villa"
-	
-	regiment = {
-		type = hq_brigade 
-		name = "Ejercito de Villa HQ"
-		historical_model = 0 
-		}
-	
-	division = {
-	dig_in = 10
-	location = 9327							# San Juanito
-		is_reserve = no 
-		name = "3. División de Maderistas"
-		
-		regiment = {
-			type = militia_brigade 
-			name = "9. Brigada de Maderistas"
-			experience = 2 
-			historical_model = 2 
-			}
+	 corps = {
+		location = 9327  # San Juanito
+		leader = 60005 # Villa, F (Pancho)
+		name = "Ejercito de Villa"
 		
 		 regiment = {
-			type = militia_brigade 
-			name = "10. Brigada de Maderistas"
-			experience = 2
-			historical_model = 2 
+			type = hq_brigade 
+			name = "Ejercito de Villa HQ"
+			historical_model = 0 
 			}
-		}
 		
-	division = {
-	dig_in = 10
-	location = 9327							# San Juanito
-		name = "11. Brigada de Maderistas"
-		is_reserve = no
+		 division = {
+			location = 9327  # San Juanito
+			dig_in = 10 
+			is_reserve = no 
+			name = "3. División de Maderistas"
+			
+			 regiment = {
+				type = militia_brigade 
+				experience = 2 
+				name = "9. Brigada de Maderistas"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = militia_brigade 
+				experience = 2 
+				name = "10. Brigada de Maderistas"
+				historical_model = 2 
+				}
+			}
 		
-		 regiment = {
-			type = cavalry_brigade 
+		 division = {
+			location = 9327  # San Juanito
+			dig_in = 10 
+			is_reserve = no
 			name = "11. Brigada de Maderistas"
-			experience = 2
-			historical_model = 1 
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 2 
+				name = "11. Brigada de Maderistas"
+				historical_model = 1 
+				}
 			}
-		}
 		
-	division = {
-	dig_in = 10
-	location = 9327							# San Juanito
-		name = "12. Brigada de Maderistas"
-		is_reserve = no
-		
-		 regiment = {
-			type = cavalry_brigade 
+		 division = {
+			location = 9327  # San Juanito
+			dig_in = 10 
+			is_reserve = no
 			name = "12. Brigada de Maderistas"
-			experience = 2
-			historical_model = 1 
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 2 
+				name = "12. Brigada de Maderistas"
+				historical_model = 1 
+				}
 			}
 		}
 	}
-}
 
-military_construction = {
+ military_construction = {
 	cost = 1 
 	progress = 45 
 	duration = 65 
 	country = MXR 
-	infantry_brigade = { 
-		name = "Falange de los Extranjeros"
-		historical_model = 2 
-		}
+	name = "Falange de los Extranjeros"
+	historical_model = 2 
 	}
-	
-military_construction = {
+
+ military_construction = {
 	cost = 1 
 	progress = 30 
 	duration = 60 
 	country = MXR 
-	militia_brigade = { 
-		name = "14. Brigada de Maderistas"
-		historical_model = 2 
-		}
+	name = "14. Brigada de Maderistas"
+	historical_model = 2 
 	}
-	
-military_construction = {
+
+ military_construction = {
 	cost = 1 
 	progress = 30 
 	duration = 70 
 	country = MXR 
-	cavalry_brigade = { 
-		name = "15. Brigada de Maderistas"
-		historical_model = 2 
-		}
+	name = "15. Brigada de Maderistas"
+	historical_model = 2 
 	}
+

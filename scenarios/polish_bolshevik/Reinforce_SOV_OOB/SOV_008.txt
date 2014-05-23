@@ -1,38 +1,39 @@
-division = {
-name = "46-ya Strelkovaya Diviziya"
-location = 2282
-leader = 00000
+ division = {
+	location = 2282  # Pryluky
+	leader = 00000 # Can't match leader
+	name = "46-ya Strelkovaya Diviziya"
 	
-regiment = {
-type = infantry_brigade
-name = "1-ya brigada"
-historical_model = 5
-experience = 5
-}
+	 regiment = {
+		type = infantry_brigade 
+		experience = 5 
+		name = "1-ya brigada"
+		historical_model = 5 
+		}
+	
+	 regiment = {
+		type = infantry_brigade 
+		experience = 5 
+		name = "2-ya brigada"
+		historical_model = 5 
+		}
+	
+	 regiment = {
+		type = artillery_brigade 
+		experience = 5 
+		name = "46-ya Artilleriiskaya Brigada"
+		historical_model = 4 
+		}
+	}
 
-regiment = {
-type = infantry_brigade
-name = "2-ya brigada"
-historical_model = 5
-experience = 5
-}
+ division = {
+	location = 2282 # Pryluky
+	name = "8-ya Kavaleriiskaya brigada"
+	
+	 regiment = {
+		type = cavalry_brigade 
+		experience = 5 
+		name = "8-ya Kavaleriiskaya brigada"
+		historical_model = 5 
+		}
+	}
 
-regiment = {
-type = artillery_brigade
-name = "46-ya Artilleriiskaya Brigada"
-historical_model = 4
-experience = 5
-}
-}
-
-division = {
-name = "8-ya Kavaleriiskaya brigada"
-location = 2282
-
-regiment = {
-type = cavalry_brigade
-name = "8-ya Kavaleriiskaya brigada"
-historical_model = 5
-experience = 5
-}
-}

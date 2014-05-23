@@ -1,73 +1,74 @@
-division = {
-name = "33-ya Strelkovaya Diviziya"
-location = 1536
-leader = 00000
+ division = {
+	location = 1536  # Smolensk
+	leader = 00000 # Can't match leader
+	name = "33-ya Strelkovaya Diviziya"
 	
-regiment = {
-type = infantry_brigade
-name = "1-ya brigada"
-historical_model = 5
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "2-ya brigada"
-historical_model = 5
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "10-ya Kavaleriiskaya Diviziya"
-location = 1536
-leader = 00000
-
-regiment = {
-type = cavalry_brigade
-name = "10-ya Kavaleriiskaya 1-ya brigada"
-historical_model = 5
-experience = 5
-}
-
-regiment = {
-type = cavalry_brigade
-name = "10-ya Kavaleriiskaya 2-ya brigada"
-historical_model = 5
-experience = 5
-}
-}
-
-division = {
-name = "85/86 Kavaleriiskaya"
-location = 1536
-
-regiment = {
-type = cavalry_brigade
-name = "85/86 Kavaleriiskaya"
-historical_model = 5
-experience = 5
-}
-}
-
-division = {
-name = "24-ya Strelkovaya Diviziya"
-location = 2282
-leader = 00000
+	 regiment = {
+		type = infantry_brigade 
+		is_reserve = yes 
+		experience = 5 
+		name = "1-ya brigada"
+		historical_model = 5 
+		}
 	
-regiment = {
-type = infantry_brigade
-name = "1-ya brigada"
-historical_model = 5
-experience = 5
-}
+	 regiment = {
+		type = infantry_brigade 
+		is_reserve = yes 
+		experience = 5 
+		name = "2-ya brigada"
+		historical_model = 5 
+		}
+	}
 
-regiment = {
-type = infantry_brigade
-name = "2-ya brigada"
-historical_model = 5
-experience = 5
-}
-}
+ division = {
+	location = 1536  # Smolensk
+	leader = 00000 # Can't match leader
+	name = "10-ya Kavaleriiskaya Diviziya"
+	
+	 regiment = {
+		type = cavalry_brigade 
+		experience = 5 
+		name = "10-ya Kavaleriiskaya 1-ya brigada"
+		historical_model = 5 
+		}
+	
+	 regiment = {
+		type = cavalry_brigade 
+		experience = 5 
+		name = "10-ya Kavaleriiskaya 2-ya brigada"
+		historical_model = 5 
+		}
+	}
+
+ division = {
+	location = 1536 # Smolensk
+	name = "85/86 Kavaleriiskaya"
+	
+	 regiment = {
+		type = cavalry_brigade 
+		experience = 5 
+		name = "85/86 Kavaleriiskaya"
+		historical_model = 5 
+		}
+	}
+
+ division = {
+	location = 2282  # Pryluky
+	leader = 00000 # Can't match leader
+	name = "24-ya Strelkovaya Diviziya"
+	
+	 regiment = {
+		type = infantry_brigade 
+		experience = 5 
+		name = "1-ya brigada"
+		historical_model = 5 
+		}
+	
+	 regiment = {
+		type = infantry_brigade 
+		experience = 5 
+		name = "2-ya brigada"
+		historical_model = 5 
+		}
+	}
+

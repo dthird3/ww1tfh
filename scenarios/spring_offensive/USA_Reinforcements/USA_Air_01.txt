@@ -1,17 +1,19 @@
-air = {
-leader = 240682
-expeditionary_owner = USA
-name = "1st Army Bombardment Wing"
-location = 2605
-base = 2605
+ air = {
+	location = 2605  # Brest
+	base = 2605 # Brest
+	leader = 240682  # Can't match leader
+	expeditionary_owner = USA 
+	name = "1st Army Bombardment Wing"
+	
+	 wing = {
+		type = tactical_bomber 
+		name = "1st Bombardment Group"
+		historical_model = 3
+		}
+	
+	 wing = {
+		type = tactical_bomber 
+		name = "2nd Bombardment Group"
+		historical_model = 3} 
+	}
 
-wing = {
-name = "1st Bombardment Group"
-type = tactical_bomber
-historical_model = 3}
-
-wing = {
-name = "2nd Bombardment Group"
-type = tactical_bomber
-historical_model = 3}
-}
