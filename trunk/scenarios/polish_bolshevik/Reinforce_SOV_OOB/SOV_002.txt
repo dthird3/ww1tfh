@@ -1,161 +1,162 @@
-army = {
-name = "13. Armiya"
-location = 1536
-leader = 00000
-
-regiment = {
-type = hq_brigade
-name = "13. Armiya"
-historical_model = 1
-experience = 0
-}
-
-division = {
-name = "6-ya Strelkovaya Diviziya"
-location = 1536
-leader = 00000
+ army = {
+	location = 1536  # Smolensk
+	leader = 00000 # Can't match leader
+	name = "13. Armiya"
 	
-regiment = {
-type = infantry_brigade
-name = "1-ya brigada"
-historical_model = 5
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "2-ya brigada"
-historical_model = 5
-experience = 5
-is_reserve = yes
-}
-}
-
-division = {
-name = "15-ya Strelkovaya Diviziya"
-location = 1536
-leader = 00000
+	 regiment = {
+		type = hq_brigade 
+		experience = 0 
+		name = "13. Armiya"
+		historical_model = 1 
+		}
 	
-regiment = {
-type = infantry_brigade
-name = "1-ya brigada"
-historical_model = 5
-experience = 5
-}
-
-regiment = {
-type = infantry_brigade
-name = "2-ya brigada"
-historical_model = 5
-experience = 5
-}
-
-regiment = {
-type = artillery_brigade
-name = "15-ya Artilleriiskaya Brigada"
-historical_model = 4
-experience = 5
-}
-}
-
-division = {
-name = "29-ya Strelkovaya Diviziya"
-location = 1536
-leader = 00000
+	 division = {
+		location = 1536  # Smolensk
+		leader = 00000 # Can't match leader
+		name = "6-ya Strelkovaya Diviziya"
+		
+		 regiment = {
+			type = infantry_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "1-ya brigada"
+			historical_model = 5 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "2-ya brigada"
+			historical_model = 5 
+			}
+		}
 	
-regiment = {
-type = infantry_brigade
-name = "1-ya brigada"
-historical_model = 5
-experience = 5
-}
-
-regiment = {
-type = infantry_brigade
-name = "2-ya brigada"
-historical_model = 5
-experience = 5
-}
-
-regiment = {
-type = artillery_brigade
-name = "29-ya Artilleriiskaya Brigada"
-historical_model = 4
-experience = 5
-}
-}
-
-division = {
-name = "56-ya Strelkovaya Diviziya"
-location = 1536
-leader = 00000
+	 division = {
+		location = 1536  # Smolensk
+		leader = 00000 # Can't match leader
+		name = "15-ya Strelkovaya Diviziya"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "1-ya brigada"
+			historical_model = 5 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "2-ya brigada"
+			historical_model = 5 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 5 
+			name = "15-ya Artilleriiskaya Brigada"
+			historical_model = 4 
+			}
+		}
 	
-regiment = {
-type = infantry_brigade
-name = "1-ya brigada"
-historical_model = 5
-experience = 5
-is_reserve = yes
-}
-
-regiment = {
-type = infantry_brigade
-name = "2-ya brigada"
-historical_model = 5
-experience = 5
-is_reserve = yes
-}
-}
-}
-
-division = {
-name = "25-ya Strelkovaya Diviziya"
-location = 2282
-leader = 00000
+	 division = {
+		location = 1536  # Smolensk
+		leader = 00000 # Can't match leader
+		name = "29-ya Strelkovaya Diviziya"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "1-ya brigada"
+			historical_model = 5 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "2-ya brigada"
+			historical_model = 5 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 5 
+			name = "29-ya Artilleriiskaya Brigada"
+			historical_model = 4 
+			}
+		}
 	
-regiment = {
-type = infantry_brigade
-name = "1-ya brigada"
-historical_model = 5
-experience = 5
-}
+	 division = {
+		location = 1536  # Smolensk
+		leader = 00000 # Can't match leader
+		name = "56-ya Strelkovaya Diviziya"
+		
+		 regiment = {
+			type = infantry_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "1-ya brigada"
+			historical_model = 5 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			is_reserve = yes 
+			experience = 5 
+			name = "2-ya brigada"
+			historical_model = 5 
+			}
+		}
+	}
 
-regiment = {
-type = infantry_brigade
-name = "2-ya brigada"
-historical_model = 5
-experience = 5
-}
+ division = {
+	location = 2282  # Pryluky
+	leader = 00000 # Can't match leader
+	name = "25-ya Strelkovaya Diviziya"
+	
+	 regiment = {
+		type = infantry_brigade 
+		experience = 5 
+		name = "1-ya brigada"
+		historical_model = 5 
+		}
+	
+	 regiment = {
+		type = infantry_brigade 
+		experience = 5 
+		name = "2-ya brigada"
+		historical_model = 5 
+		}
+	
+	 regiment = {
+		type = artillery_brigade 
+		experience = 5 
+		name = "25-ya Artilleriiskaya Brigada"
+		historical_model = 4 
+		}
+	}
 
-regiment = {
-type = artillery_brigade
-name = "25-ya Artilleriiskaya Brigada"
-historical_model = 4
-experience = 5
-}
-}
+ division = {
+	location = 2282 # Pryluky
+	name = "Odessa Morskoi Brigada"
+	
+	 regiment = {
+		type = marine_brigade 
+		experience = 5 
+		name = "Odessa Morskoi Brigada"
+		historical_model = 5 
+		}
+	}
 
-division = {
-name = "Odessa Morskoi Brigada"
-location = 2282
+ division = {
+	location = 2282 # Pryluky
+	name = "25-ya Kavaleriiskaya brigada"
+	
+	 regiment = {
+		type = cavalry_brigade 
+		experience = 5 
+		name = "25-ya Kavaleriiskaya brigada"
+		historical_model = 5 
+		}
+	}
 
-regiment = {
-type = marine_brigade
-name = "Odessa Morskoi Brigada"
-historical_model = 5
-experience = 5
-}
-}
-
-division = {
-name = "25-ya Kavaleriiskaya brigada"
-location = 2282
-
-regiment = {
-type = cavalry_brigade
-name = "25-ya Kavaleriiskaya brigada"
-historical_model = 5
-experience = 5
-}
-}

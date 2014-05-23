@@ -1,38 +1,36 @@
-theatre = {
-#	expeditionary_owner = LIT							# Next release bring LIT into war and use either exped's or Nationals.
+ theatre = {
+	location = 1355 # Zarasai
 	name = "Kaunas HQ"
-	location = 1355
-
-	regiment = {
-	type = hq_brigade
-	name = "1st HQ Brigade"
-	historical_model = 1
-	experience = 2
-	}
 	
-	division = {
-#	expeditionary_owner = LIT
-	name = "1/2 Lithuanian Regiments"
-	location = 1355
-
-	regiment = {
-	type = infantry_brigade
-	name = "1/2 Lithuanian Regiments"
-	historical_model = 4
-	experience = 5
-	}
-	}
-
-	division = {
-#	expeditionary_owner = LIT
-	name = "3/4 Lithuanian Regiments"
-	location = 1355
+	 regiment = {
+		type = hq_brigade 
+		experience = 2 
+		name = "1st HQ Brigade"
+		historical_model = 1 
+		}
 	
-	regiment = {
-	type = infantry_brigade
-	name = "3/4 Lithuanian Regiments"
-	historical_model = 4
-	experience = 5
+	 division = {
+		location = 1355 # Zarasai
+		name = "1/2 Lithuanian Regiments"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "1/2 Lithuanian Regiments"
+			historical_model = 4 
+			}
+		}
+	
+	 division = {
+		location = 1355 # Zarasai
+		name = "3/4 Lithuanian Regiments"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "3/4 Lithuanian Regiments"
+			historical_model = 4 
+			}
+		}
 	}
-	}
-}
+

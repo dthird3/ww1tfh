@@ -1,5 +1,5 @@
  theatre = {
-	location = 9604                  # Ciudad de México
+	location = 9604  # Ciudad de México
 	name = "Ejército Mexicano"
 	
 	 regiment = {
@@ -7,114 +7,115 @@
 		name = "Ejército Mexicano HQ"
 		historical_model = 0 
 		}
-
- corps = {
-	leader = 14710228
-	location = 9604                 	 # Ciudad de México
-	name = "Ejercito de Mexico"
 	
-	regiment = {
-		type = hq_brigade 
-		name = "Ejercito de Mexico HQ"
-		historical_model = 0 
-		}
-	
-	division = {
-		location = 9604  			 	# Ciudad de México
-		is_reserve = no 
-		name = "1. Brigada de Infantería"
+	 corps = {
+		location = 9604  # Ciudad de México
+		leader = 55001 # Flores, M
+		name = "Ejercito de Mexico"
 		
 		 regiment = {
-			type = infantry_brigade 
-			experience = 5 
+			type = hq_brigade 
+			name = "Ejercito de Mexico HQ"
+			historical_model = 0 
+			}
+		
+		 division = {
+			location = 9604  # Ciudad de México
+			is_reserve = no 
 			name = "1. Brigada de Infantería"
-			historical_model = 2 
-			}
-		}
-		
-	division = {
-		location = 9604  			 	# Ciudad de México
-		is_reserve = yes 
-		name = "2. Brigada de Infantería"
-		 regiment = {
-			type = infantry_brigade 
-			experience = 5 
-			name = "2. Brigada de Infantería"
-			historical_model = 2 
-			}
-		}
 			
-	 division = {
-		location = 9604  				# Ciudad de México
-		is_reserve = yes 
-		name = "3. Brigada de Infantería"
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "1. Brigada de Infantería"
+				historical_model = 2 
+				}
+			}
 		
-		 regiment = {
-			type = infantry_brigade 
-			experience = 5 
+		 division = {
+			location = 9604  # Ciudad de México
+			is_reserve = yes 
+			name = "2. Brigada de Infantería"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "2. Brigada de Infantería"
+				historical_model = 2 
+				}
+			}
+		
+		 division = {
+			location = 9604  # Ciudad de México
+			is_reserve = yes 
 			name = "3. Brigada de Infantería"
-			historical_model = 2 
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "3. Brigada de Infantería"
+				historical_model = 2 
+				}
+			}
+		
+		 division = {
+			location = 9604  # Ciudad de México
+			is_reserve = yes 
+			name = "1. División de Caballería"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 5 
+				name = "1. Brigada de Caballería"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 5 
+				name = "2. Brigada de Caballería"
+				historical_model = 1 
+				}
 			}
 		}
 	
 	 division = {
-		location = 9604  				# Ciudad de México
-		is_reserve = yes
-		name = "1. División de Caballería"
-		
-		 regiment = {
-			type = cavalry_brigade
-			name = "1. Brigada de Caballería"
-			experience = 5			
-			historical_model = 1 
-			}
-		
-		 regiment = {
-			type = cavalry_brigade 
-			name = "2. Brigada de Caballería"
-			experience = 5
-			historical_model = 1 
-			}
-		}
-	}
-
-	division = {
-		location = 9147					# Ciudad Juarez
+		location = 9147  # Ciudad Juárez
 		is_reserve = no 
 		name = "1. Guardia Rurale"
 		
-		regiment = {
-			type = cavalry_brigade  
-			name = "1. Guardia Rurale"
+		 regiment = {
+			type = cavalry_brigade 
 			experience = 5 
+			name = "1. Guardia Rurale"
 			historical_model = 0 
 			}
 		}
-		
-	division = {
-		location = 9355  				# Nuevo Laredo
+	
+	 division = {
+		location = 9355  # Nuevo Laredo
 		is_reserve = no 
 		name = "2. Guardia Rurale"
 		
-		regiment = {
-			type = cavalry_brigade  
-			name = "2. Guardia Rurale"
+		 regiment = {
+			type = cavalry_brigade 
 			experience = 5 
+			name = "2. Guardia Rurale"
 			historical_model = 0 
 			}
 		}
-
-
- navy = {
-	location = 9658  # Acapulco
-	base = 9658  # Acapulco
-	name = "Armada de Mexico"
 	
-	 ship = {
-		type = protected_cruiser 
-		experience = 15 
-		name = "Zaragosa"
-		historical_model = 0 
+	 navy = {
+		location = 9658  # Acapulco
+		base = 9658  # Acapulco
+		name = "Armada de Mexico"
+		
+		 ship = {
+			type = protected_cruiser 
+			experience = 15 
+			name = "Zaragosa"
+			historical_model = 0 
+			}
 		}
 	}
-}
+

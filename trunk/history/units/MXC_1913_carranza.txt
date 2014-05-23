@@ -1,334 +1,329 @@
  theatre = {
-	leader = 20510118					# Carranza
-	location = 9203 					# Hermosillo
+	location = 9203  # Hermosillo
+	leader = 59001 # Carranza, V
 	name = "Ejercito de Constitutionalistas"
 	
-	regiment = {
+	 regiment = {
 		type = hq_brigade 
 		name = "Ejercito de Carranza HQ"
 		historical_model = 0 
 		}
-
- army = {
-	leader = 20510060					# Álvaro Obregón (Northwest Corps)
-	location = 9203 					# Hermosillo
-	name = "Army of Operations"
 	
-	regiment = {
-		type = hq_brigade 
-		name = "Northwest Corps HQ"
-		historical_model = 0 
-		}
-	
-	division = {
-		dig_in = 10
-		location = 9203 					# Hermosillo
-		is_reserve = no 
-		name = "1. División de Constitutionalistas"
-		
-		regiment = {
-			type = militia_brigade 
-			name = "1. Brigada de Constitutionalistas"
-			experience = 3 
-			historical_model = 3 
-			}
+	 army = {
+		location = 9203  # Hermosillo
+		leader = 59003 # Obregón, A
+		name = "Army of Operations"
 		
 		 regiment = {
-			type = militia_brigade 
-			name = "2. Brigada de Constitutionalistas"
-			experience = 3
-			historical_model = 3 
+			type = hq_brigade 
+			name = "Northwest Corps HQ"
+			historical_model = 0 
 			}
-		}
 		
-	division = {
-		dig_in = 10
-		location = 9203 					# Hermosillo
-		name = "3. Brigada de Constitutionalistas"
-		is_reserve = no
+		 division = {
+			location = 9203  # Hermosillo
+			dig_in = 10 
+			is_reserve = no 
+			name = "1. División de Constitutionalistas"
+			
+			 regiment = {
+				type = militia_brigade 
+				experience = 3 
+				name = "1. Brigada de Constitutionalistas"
+				historical_model = 3 
+				}
+			
+			 regiment = {
+				type = militia_brigade 
+				experience = 3 
+				name = "2. Brigada de Constitutionalistas"
+				historical_model = 3 
+				}
+			}
 		
-		 regiment = {
-			type = cavalry_brigade 
+		 division = {
+			location = 9203  # Hermosillo
+			dig_in = 10 
+			is_reserve = no
 			name = "3. Brigada de Constitutionalistas"
-			experience = 3
-			historical_model = 3 
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 3 
+				name = "3. Brigada de Constitutionalistas"
+				historical_model = 3 
+				}
 			}
-		}
 		
-	division = {
-		dig_in = 10
-		location = 9145 					# Caborca
-		name = "4. Brigada de Constitutionalistas"
-		is_reserve = no
-		
-		 regiment = {
-			type = cavalry_brigade 
+		 division = {
+			location = 9145  # Caborca
+			dig_in = 10 
+			is_reserve = no
 			name = "4. Brigada de Constitutionalistas"
-			experience = 3
-			historical_model = 3 
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 3 
+				name = "4. Brigada de Constitutionalistas"
+				historical_model = 3 
+				}
+			}
+		}
+	
+	 army = {
+		location = 9419  # Monterrey
+		leader = 59007 # González Peña
+		name = "Northeast Corps"
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "Northeast Corps HQ"
+			historical_model = 0 
+			}
+		
+		 division = {
+			location = 9419  # Monterrey
+			dig_in = 10 
+			is_reserve = no 
+			name = "3. División de Constitutionalistas"
+			
+			 regiment = {
+				type = militia_brigade 
+				experience = 3 
+				name = "5. Brigada de Constitutionalistas"
+				historical_model = 3 
+				}
+			
+			 regiment = {
+				type = militia_brigade 
+				experience = 3 
+				name = "6. Brigada de Constitutionalistas"
+				historical_model = 3 
+				}
+			}
+		
+		 division = {
+			location = 9419  # Monterrey
+			dig_in = 10 
+			is_reserve = no
+			name = "4. División de Constitutionalistas"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 3 
+				name = "7. Brigada de Constitutionalistas"
+				historical_model = 3 
+				}
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 3 
+				name = "8. Brigada de Constitutionalistas"
+				historical_model = 3 
+				}
+			}
+		
+		 division = {
+			location = 9449  # Méndez
+			dig_in = 10 
+			is_reserve = no
+			name = "5. División de Constitutionalistas"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 3 
+				name = "9. Brigada de Constitutionalistas"
+				historical_model = 3 
+				}
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 3 
+				name = "10. Brigada de Constitutionalistas"
+				historical_model = 3 
+				}
+			}
+		}
+	
+	 army = {
+		location = 9147  # Ciudad Juárez
+		leader = 59009 # Natera García
+		name = "Central Corps"
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "Central Corps HQ"
+			historical_model = 0 
+			}
+		
+		 division = {
+			location = 9147  # Ciudad Juárez
+			dig_in = 10 
+			is_reserve = no 
+			name = "6. División de Constitutionalistas"
+			
+			 regiment = {
+				type = militia_brigade 
+				experience = 3 
+				name = "11. Brigada de Constitutionalistas"
+				historical_model = 3 
+				}
+			
+			 regiment = {
+				type = militia_brigade 
+				experience = 3 
+				name = "12. Brigada de Constitutionalistas"
+				historical_model = 3 
+				}
+			}
+		
+		 corps = {
+			location = 9174  # Nátora
+			leader = 59004 # Villa, F (Pancho)
+			name = "División del Norte"
+			
+			 regiment = {
+				type = hq_brigade 
+				name = "División del Norte HQ"
+				historical_model = 0 
+				}
+			
+			 division = {
+				location = 9174  # Nátora
+				is_reserve = no
+				name = "1. Los dorados"
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 3 
+					name = "1. Brigada de Los dorados"
+					historical_model = 3 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 3 
+					name = "2. Brigada de Los dorados"
+					historical_model = 3 
+					}
+				}
+			
+			 division = {
+				location = 9174  # Nátora
+				is_reserve = no
+				name = "2. Los dorados"
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 3 
+					name = "3. Brigada de Los dorados"
+					historical_model = 3 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 3 
+					name = "4. Brigada de Los dorados"
+					historical_model = 3 
+					}
+				}
+			
+			 division = {
+				location = 9174  # Nátora
+				is_reserve = no
+				name = "3. Los dorados"
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 3 
+					name = "5. Brigada de Los dorados"
+					historical_model = 3 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 3 
+					name = "6. Brigada de Los dorados"
+					historical_model = 3 
+					}
+				}
+			
+			 division = {
+				location = 9174  # Nátora
+				is_reserve = no
+				name = "4. Los dorados"
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 3 
+					name = "7. Brigada de Los dorados"
+					historical_model = 3 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 3 
+					name = "8. Brigada de Los dorados"
+					historical_model = 3 
+					}
+				}
+			
+			 division = {
+				location = 9118  # AguaPrieta
+				is_reserve = no
+				name = "5. Los dorados"
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 3 
+					name = "9. Brigada de Los dorados"
+					historical_model = 3 
+					}
+				
+				 regiment = {
+					type = cavalry_brigade 
+					experience = 3 
+					name = "10. Brigada de Los dorados"
+					historical_model = 3 
+					}
+				}
 			}
 		}
 	}
-	
-	army = {
-	leader = 20510042					# González
-	location = 9419  					# Monterrey
-	name = "Northeast Corps"
-	
-	regiment = {
-		type = hq_brigade 
-		name = "Northeast Corps HQ"
-		historical_model = 0 
-		}
-	
-	division = {
-		dig_in = 10
-		location = 9419  					# Monterrey
-		is_reserve = no 
-		name = "3. División de Constitutionalistas"
-		
-		regiment = {
-			type = militia_brigade 
-			name = "5. Brigada de Constitutionalistas"
-			experience = 3 
-			historical_model = 3 
-			}
-		
-		 regiment = {
-			type = militia_brigade 
-			name = "6. Brigada de Constitutionalistas"
-			experience = 3
-			historical_model = 3 
-			}
-		}
-		
-	division = {
-		dig_in = 10
-		location = 9419  					# Monterrey
-		name = "4. División de Constitutionalistas"
-		is_reserve = no
-		
-		regiment = {
-			type = cavalry_brigade 
-			name = "7. Brigada de Constitutionalistas"
-			experience = 3
-			historical_model = 3 
-			}
-		regiment = {
-			type = cavalry_brigade 
-			name = "8. Brigada de Constitutionalistas"
-			experience = 3
-			historical_model = 3 
-			}
-		}
-		
-	division = {
-		dig_in = 10
-		location = 9449  					# Mendez
-		name = "5. División de Constitutionalistas"
-		is_reserve = no
-		
-		regiment = {
-			type = cavalry_brigade 
-			name = "9. Brigada de Constitutionalistas"
-			experience = 3
-			historical_model = 3 
-			}
-		regiment = {
-			type = cavalry_brigade 
-			name = "10. Brigada de Constitutionalistas"
-			experience = 3
-			historical_model = 3 
-			}	
-		}
-	}
-	
-	army = {
-	leader = 20510059						# Natera
-	location = 9147							# Ciudad Juarez
-	name = "Central Corps"
-	
-	regiment = {
-		type = hq_brigade 
-		name = "Central Corps HQ"
-		historical_model = 0 
-		}
-	
-	division = {
-	dig_in = 10
-	location = 9147							# Ciudad Juarez
-		is_reserve = no 
-		name = "6. División de Constitutionalistas"
-		
-		regiment = {
-			type = militia_brigade 
-			name = "11. Brigada de Constitutionalistas"
-			experience = 3 
-			historical_model = 3 
-			}
-		
-		 regiment = {
-			type = militia_brigade 
-			name = "12. Brigada de Constitutionalistas"
-			experience = 3
-			historical_model = 3 
-			}
-		}
-		
-	corps = {
-	leader = 20510203						# Villa
-	location = 9174							# Natora
-	name = "División del Norte"
-	
-	regiment = {
-		type = hq_brigade 
-		name = "División del Norte HQ"
-		historical_model = 0 
-		}
-		
-	division = {
-	location = 9174							# Natora
-		name = "1. Los dorados"
-		is_reserve = no
-		
-		 regiment = {
-			type = cavalry_brigade 
-			name = "1. Brigada de Los dorados"
-			experience = 3
-			historical_model = 3 
-			}
-		
-		 regiment = {
-			type = cavalry_brigade 
-			name = "2. Brigada de Los dorados"
-			experience = 3
-			historical_model = 3 
-			}
-		}
-		
-	division = {
-	location = 9174							# Natora
-		name = "2. Los dorados"
-		is_reserve = no
-		
-		 regiment = {
-			type = cavalry_brigade 
-			name = "3. Brigada de Los dorados"
-			experience = 3
-			historical_model = 3 
-			}
-		
-		 regiment = {
-			type = cavalry_brigade 
-			name = "4. Brigada de Los dorados"
-			experience = 3
-			historical_model = 3 
-			}
-		}
-		
-	division = {
-	location = 9174							# Natora
-		name = "3. Los dorados"
-		is_reserve = no
-		
-		 regiment = {
-			type = cavalry_brigade 
-			name = "5. Brigada de Los dorados"
-			experience = 3
-			historical_model = 3 
-			}
-		
-		 regiment = {
-			type = cavalry_brigade 
-			name = "6. Brigada de Los dorados"
-			experience = 3
-			historical_model = 3 
-			}
-		}
-		
-	division = {
-	location = 9174							# Natora
-		name = "4. Los dorados"
-		is_reserve = no
-		
-		 regiment = {
-			type = cavalry_brigade 
-			name = "7. Brigada de Los dorados"
-			experience = 3
-			historical_model = 3 
-			}
-		
-		 regiment = {
-			type = cavalry_brigade 
-			name = "8. Brigada de Los dorados"
-			experience = 3
-			historical_model = 3 
-			}
-		}
-		
-	division = {
-	location = 9118							# Agua Prieta
-		name = "5. Los dorados"
-		is_reserve = no
-		
-		 regiment = {
-			type = cavalry_brigade 
-			name = "9. Brigada de Los dorados"
-			experience = 3
-			historical_model = 3 
-			}
-		
-		 regiment = {
-			type = cavalry_brigade 
-			name = "10. Brigada de Los dorados"
-			experience = 3
-			historical_model = 3 
-			}
-		}
-	}
-}
-}
 
-military_construction = {
+ military_construction = {
 	cost = 1 
 	progress = 45 
 	duration = 65 
 	country = MXC 
-	infantry_brigade = { 
-		name = "Falange de los Extranjeros"
-		historical_model = 3 
-		}
+	name = "Falange de los Extranjeros"
+	historical_model = 3 
 	}
-	
-military_construction = {
+
+ military_construction = {
 	cost = 1 
 	progress = 30 
 	duration = 60 
 	country = MXC 
-	militia_brigade = { 
-		name = "14. Brigada de Constitutionalistas"
-		historical_model = 3 
-		}
+	name = "14. Brigada de Constitutionalistas"
+	historical_model = 3 
 	}
-	
-military_construction = {
+
+ military_construction = {
 	cost = 1 
 	progress = 30 
 	duration = 70 
 	country = MXC 
-	cavalry_brigade = { 
-		name = "11. Brigada de Los dorados"
-		historical_model = 3 
-		}
+	name = "11. Brigada de Los dorados"
+	historical_model = 3 
 	}
-	
-military_construction = {
+
+ military_construction = {
 	cost = 1 
 	progress = 30 
 	duration = 70 
 	country = MXC 
-	cavalry_brigade = { 
-		name = "12. Brigada de Los dorados"
-		historical_model = 3 
-		}
+	name = "12. Brigada de Los dorados"
+	historical_model = 3 
 	}
+

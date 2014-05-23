@@ -1,16 +1,18 @@
-air = {
-leader = 855357
-name = "Fliegertruppe 6"
-location = 2311
-base = 2311
+ air = {
+	location = 2311  # Bruxelles
+	base = 2311 # Bruxelles
+	leader = 855357  # Can't match leader
+	name = "Fliegertruppe 6"
+	
+	 wing = {
+		type = interceptor 
+		name = "Feldflieger-Abteilung 11"
+		historical_model = 4
+		}
+	
+	 wing = {
+		type = interceptor 
+		name = "Feldflieger-Abteilung 12"
+		historical_model = 4} 
+	}
 
-wing = {
-name = "Feldflieger-Abteilung 11"
-type = interceptor
-historical_model = 4}
-
-wing = {
-name = "Feldflieger-Abteilung 12"
-type = interceptor
-historical_model = 4}
-}

@@ -1,35 +1,36 @@
-division = {
-expeditionary_owner = USA
-name = "34th (Sandstorm) Division"
-location = 2605
-dig_in = 00.000
-leader = 240625
+ division = {
+	location = 2605  # Brest
+	dig_in = 00.000 
+	leader = 240625 # Can't match leader
+	expeditionary_owner = USA 
+	name = "34th (Sandstorm) Division"
+	
+	 regiment = {
+		type = infantry_brigade 
+		experience = 2 
+		name = "67th Infantry Brigade"
+		historical_model = 6 
+		}
+	
+	 regiment = {
+		type = infantry_brigade 
+		experience = 2 
+		name = "67/68th Infantry Brigade"
+		historical_model = 6 
+		}
+	
+	 regiment = {
+		type = infantry_brigade 
+		experience = 2 
+		name = "68th Infantry Brigade"
+		historical_model = 6 
+		}
+	
+	 regiment = {
+		type = artillery_brigade 
+		experience = 2 
+		name = "34th Division Artillery"
+		historical_model = 6 
+		}
+	}
 
-regiment = {
-type = infantry_brigade
-name = "67th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "67/68th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = infantry_brigade
-name = "68th Infantry Brigade"
-historical_model = 6
-experience = 2
-}
-
-regiment = {
-type = artillery_brigade
-name = "34th Division Artillery"
-historical_model = 6
-experience = 2
-}
-}

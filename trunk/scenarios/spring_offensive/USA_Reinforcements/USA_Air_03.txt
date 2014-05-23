@@ -1,17 +1,19 @@
-air = {
-leader = 240684
-expeditionary_owner = USA
-name = "2nd Army Air Service"
-location = 2605
-base = 2605
+ air = {
+	location = 2605  # Brest
+	base = 2605 # Brest
+	leader = 240684  # Can't match leader
+	expeditionary_owner = USA 
+	name = "2nd Army Air Service"
+	
+	 wing = {
+		type = interceptor 
+		name = "3rd Pursuit Wing"
+		historical_model = 3
+		}
+	
+	 wing = {
+		type = interceptor 
+		name = "4th Pursuit Wing"
+		historical_model = 3} 
+	}
 
-wing = {
-name = "3rd Pursuit Wing"
-type = interceptor
-historical_model = 3}
-
-wing = {
-name = "4th Pursuit Wing"
-type = interceptor
-historical_model = 3}
-}
