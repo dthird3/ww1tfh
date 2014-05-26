@@ -132,9 +132,9 @@
 			MEX = { national_unity = -2 }
 			MEX = { dissent = 5 }
 			USA = { end_guarantee = MEX } 
-			MEX = { kill_leader = 14710040 }
-			MEX = { kill_leader = 4710044 }
-			MEX = { kill_leader = 471109 }
+			MEX = { kill_leader = 55006 } #Orozco,_Pascual
+			MEX = { kill_leader = 55002 } #Reyes,_B
+			MEX = { kill_leader = 55007 } #Ortega_Ramírez
 			9268 = { secede_province = MXR }   # Chihuahua
 			9237 = { secede_province = MXR }   # Yecora
 			9298 = { secede_province = MXR }   # Uruachic
@@ -455,7 +455,7 @@
 		9623 = { random_neighbor_province = { create_revolt = 4 } }    # Morelos
 		9604 = { random_neighbor_province = { create_revolt = 4 } }    # Mexico City needs to be garrisoned
 		MXR = { dissent = 3 }
-		MXR = { kill_leader = 15110195 }		
+		MXR = { kill_leader = 60002 } #Zapata,_Emiliano		
 		MXR = { set_country_flag = "zapata_rebels" }
 		}
 	}
@@ -492,7 +492,7 @@
 		9480 = { random_neighbor_province = { create_revolt = 6 } }
 		9449 = { create_revolt = 6 }    # Mendez
 		MXR = { dissent = 3 }
-		MXR = { kill_leader = 15110130 }
+		MXR = { kill_leader = 60008  } #Reyes,_B
 		MXR = { set_country_flag = "reyes_rebels" }
 		}
 	}
@@ -528,7 +528,7 @@
 		9298 = { random_neighbor_province = { create_revolt = 4 } }    # Uruachic
 		9203 = { random_neighbor_province = { create_revolt = 4 } }    # Hermosillo
 		MXR = { dissent = 3 }
-		MXR = { kill_leader = 15110202 }
+		MXR = { kill_leader = 60003 } #Orozco,_Pascual
 		MXR = { set_country_flag = "orozco_rebels" }
 		}
 	}
@@ -684,7 +684,7 @@
 	option = {										
 		name = "ACTION_NAME_DAMN"
 		MXR = { remove_minister = 15100001 }			# Madero
-		MXR = { kill_leader = 15110118 }				# Madero
+		MXR = { kill_leader = 60001 }					#Madero,_F
 		MXR = { head_of_state = 15100032 }				# Huerta
 		MXR = { head_of_government = 100032 }			# Huerta
 		USA = { clr_country_flag = "support_madero_coup" }
@@ -721,7 +721,7 @@
 	option = {										
 		name = "ACTION_NAME_GREAT"
 		remove_minister = 15100032			# Huerta
-		kill_leader = 15110202				# Huerta
+		kill_leader = 60003 #Orozco,_Pascual
 		USA = { clr_country_flag = "support_madero_coup" }
 		USA = { clr_country_flag = "no_madero_coup" }
 		MXR = { set_country_flag = "Ten_Tragic_Days" }
@@ -787,10 +787,11 @@
 			9659 = { create_revolt = 1 }
 			9622 = { add_province_modifier = { name = "mex_rev" duration = 730 } }
 			9622 = { create_revolt = 1 }
-			kill_leader = 15110195				# Rebel leaders leave MXR
-			kill_leader = 15110060
-			kill_leader = 15110203
-			kill_leader = 15110042			
+kill_leader = 60002 #Zapata,_Emiliano
+kill_leader = 60004 #Obregón,_A
+kill_leader = 60005 #Villa,_F_(Pancho)
+kill_leader = 60009 #González_Peña
+			
 		}			
 	}
 
@@ -1226,62 +1227,63 @@
 		remove_minister = 14700086 #José_Refugio_Velasco
 		remove_minister = 14700087 #Miguel_Lebrija
 		remove_minister = 14700088 #Juan_Guillermo_Villasana
-		kill_leader = 14710001 #Aguilar
-		kill_leader = 14710002 #Altamirano
-		kill_leader = 14710003 #Argumedo
-		kill_leader = 14710004 #Beltrán_Castañares
-		kill_leader = 14710005 #Blanquet
-		kill_leader = 14710006 #Bravo
-		kill_leader = 14710007 #Cartón
-		kill_leader = 14710008 #Cejudo
-		kill_leader = 14710009 #Carmen_Curiel
-		kill_leader = 14710010 #Casso_López
-		kill_leader = 14710011 #Chacón
-		kill_leader = 14710012 #Dávila
-		kill_leader = 14710013 #Delgadillo
-		kill_leader = 10810024 #Lambotte
-		kill_leader = 14710015 #Eguía_Lis
-		kill_leader = 14710016 #Escandón_y_Barrón
-		kill_leader = 14710017 #Gallardo
-		kill_leader = 14710018 #Gil
-		kill_leader = 14710019 #Gorostieta_y_Velarde
-		kill_leader = 14710020 #Harrotian
-		kill_leader = 14710021 #Huerta
-		kill_leader = 14710022 #Jiménez_Castro
-		kill_leader = 10810033 #Arnold
-		kill_leader = 14710024 #Lojero
-		kill_leader = 14710025 #Maas_Águila
+kill_leader = 55009 #Aguilar
+kill_leader = 55010 #Altamirano
+kill_leader = 55011 #Argumedo
+kill_leader = 55012 #Beltrán_Castañares
+kill_leader = 55013 #Blanquet
+kill_leader = 55014 #Bravo
+kill_leader = 55015 #Cartón
+kill_leader = 55016 #Cejudo
+kill_leader = 55017 #Carmen_Curiel
+kill_leader = 55018 #Casso_López
+kill_leader = 55019 #Chacón
+kill_leader = 55020 #Dávila
+kill_leader = 55021 #Delgadillo
+kill_leader = 9024 #Lambotte
+kill_leader = 55023 #Eguía_Lis
+kill_leader = 55024 #Escandón_y_Barrón
+kill_leader = 55025 #Gallardo
+kill_leader = 55026 #Gil
+kill_leader = 55027 #Gorostieta_y_Velarde
+kill_leader = 55028 #Harrotian
+kill_leader = 55005 #Huerta,_V
+kill_leader = 55029 #Jiménez_Castro
+kill_leader = 9033 #Arnold
+kill_leader = 55031 #Lojero
+kill_leader = 55032 #Maas_Águila
 		kill_leader = 14710026 #Maas_Flores
-		kill_leader = 10810037 #Andringa
-		kill_leader = 14710028 #Maldonado
-		kill_leader = 14710029 #Medina_Barrón
-		kill_leader = 14710030 #Mercado
-		kill_leader = 14710031 #Mier
-		kill_leader = 14710032 #Mondragón
-		kill_leader = 14710033 #Morelos
-		kill_leader = 14710034 #Mass
-		kill_leader = 14710035 #Monter
-		kill_leader = 14710036 #Navarro
-		kill_leader = 14710037 #Ocón
-		kill_leader = 14710038 #Ojeda
-		kill_leader = 14710039 #Olea
-		kill_leader = 14710040 #Orozco
-		kill_leader = 14710041 #Orpinel
-		kill_leader = 14710042 #Poloney
-		kill_leader = 14710043 #Rasgado
-		kill_leader = 14710044 #Reyes
-		kill_leader = 14710045 #Robles
-		kill_leader = 14710046 #Rojas
-		kill_leader = 14710047 #Rubio_Navarrete
-		kill_leader = 14710048 #Ruiz
-		kill_leader = 14710049 #Salazar
-		kill_leader = 14710050 #Soberanes
-		kill_leader = 14710051 #Téllez
-		kill_leader = 14710052 #Toro
-		kill_leader = 14710053 #Trucy_Aubert
-		kill_leader = 14710054 #Velasco
-		kill_leader = 14710055 #Yarza
-		kill_leader = 14710056 #Zozaya
+kill_leader = 9037 #Andringa
+kill_leader = 55034 #Maldonado
+kill_leader = 55035 #Medina_Barrón
+kill_leader = 55036 #Mercado
+kill_leader = 55037 #Mier
+kill_leader = 55038 #Mondragón
+kill_leader = 55039 #Morelos
+kill_leader = 55040 #Mass
+kill_leader = 55041 #Monter
+kill_leader = 55042 #Navarro
+kill_leader = 55043 #Ocón
+kill_leader = 55044 #Ojeda
+kill_leader = 55045 #Olea
+kill_leader = 55006 #Orozco,_Pascual
+kill_leader = 55046 #Orpinel
+kill_leader = 55047 #Poloney
+kill_leader = 55048 #Rasgado
+kill_leader = 55002 #Reyes,_B
+kill_leader = 55049 #Robles
+kill_leader = 55050 #Rojas
+kill_leader = 55051 #Rubio_Navarrete
+kill_leader = 55052 #Ruiz
+kill_leader = 55053 #Salazar
+kill_leader = 55054 #Soberanes
+kill_leader = 55055 #Téllez
+kill_leader = 55056 #Toro
+kill_leader = 55057 #Trucy_Aubert
+kill_leader = 55058 #Velasco
+kill_leader = 55059 #Yarza
+kill_leader = 55060 #Zozaya
+
 		remove_minister = 14700089 #Francisco_Lagos_ChÁzaro
 		remove_minister = 14700090 #Eulalio_Gutiérrez_Ortiz
 		remove_minister = 14700091 #Francisco_'Pancho'_Villa
@@ -1461,64 +1463,66 @@
 		remove_minister = 14700086 #José_Refugio_Velasco
 		remove_minister = 14700087 #Miguel_Lebrija
 		remove_minister = 14700088 #Juan_Guillermo_Villasana
-		kill_leader = 14710001 #Aguilar
-		kill_leader = 14710002 #Altamirano
-		kill_leader = 14710003 #Argumedo
-		kill_leader = 14710004 #Beltrán_Castañares
-		kill_leader = 14710005 #Blanquet
-		kill_leader = 14710006 #Bravo
-		kill_leader = 14710007 #Cartón
-		kill_leader = 14710008 #Cejudo
-		kill_leader = 14710009 #Carmen_Curiel
-		kill_leader = 14710010 #Casso_López
-		kill_leader = 14710011 #Chacón
-		kill_leader = 14710012 #Dávila
-		kill_leader = 14710013 #Delgadillo
-		kill_leader = 10810024 #Lambotte
-		kill_leader = 14710015 #Eguía_Lis
-		kill_leader = 14710016 #Escandón_y_Barrón
-		kill_leader = 14710017 #Gallardo
-		kill_leader = 14710018 #Gil
-		kill_leader = 14710019 #Gorostieta_y_Velarde
-		kill_leader = 14710020 #Harrotian
-		kill_leader = 14710021 #Huerta
-		kill_leader = 14710022 #Jiménez_Castro
-		kill_leader = 10810033 #Arnold
-		kill_leader = 14710024 #Lojero
-		kill_leader = 14710025 #Maas_Águila
+kill_leader = 55009 #Aguilar
+kill_leader = 55010 #Altamirano
+kill_leader = 55011 #Argumedo
+kill_leader = 55012 #Beltrán_Castañares
+kill_leader = 55013 #Blanquet
+kill_leader = 55014 #Bravo
+kill_leader = 55015 #Cartón
+kill_leader = 55016 #Cejudo
+kill_leader = 55017 #Carmen_Curiel
+kill_leader = 55018 #Casso_López
+kill_leader = 55019 #Chacón
+kill_leader = 55020 #Dávila
+kill_leader = 55021 #Delgadillo
+kill_leader = 9024 #Lambotte
+kill_leader = 55023 #Eguía_Lis
+kill_leader = 55024 #Escandón_y_Barrón
+kill_leader = 55025 #Gallardo
+kill_leader = 55026 #Gil
+kill_leader = 55027 #Gorostieta_y_Velarde
+kill_leader = 55028 #Harrotian
+kill_leader = 55005 #Huerta,_V
+kill_leader = 55029 #Jiménez_Castro
+kill_leader = 9033 #Arnold
+kill_leader = 55031 #Lojero
+kill_leader = 55032 #Maas_Águila
+
 		kill_leader = 14710026 #Maas_Flores
-		kill_leader = 10810037 #Andringa
-		kill_leader = 14710028 #Maldonado
-		kill_leader = 14710029 #Medina_Barrón
-		kill_leader = 14710030 #Mercado
-		kill_leader = 14710031 #Mier
-		kill_leader = 14710032 #Mondragón
-		kill_leader = 14710033 #Morelos
-		kill_leader = 14710034 #Mass
-		kill_leader = 14710035 #Monter
-		kill_leader = 14710036 #Navarro
-		kill_leader = 14710037 #Ocón
-		kill_leader = 14710038 #Ojeda
-		kill_leader = 14710039 #Olea
-		kill_leader = 14710040 #Orozco
-		kill_leader = 14710041 #Orpinel
-		kill_leader = 14710042 #Poloney
-		kill_leader = 14710043 #Rasgado
-		kill_leader = 14710044 #Reyes
-		kill_leader = 14710045 #Robles
-		kill_leader = 14710046 #Rojas
-		kill_leader = 14710047 #Rubio_Navarrete
-		kill_leader = 14710048 #Ruiz
-		kill_leader = 14710049 #Salazar
-		kill_leader = 14710050 #Soberanes
-		kill_leader = 14710051 #Téllez
-		kill_leader = 14710052 #Toro
-		kill_leader = 14710053 #Trucy_Aubert
-		kill_leader = 14710054 #Velasco
-		kill_leader = 14710055 #Yarza
-		kill_leader = 14710056 #Zozaya
-		kill_leader = 14720001 #Azueta
-		kill_leader = 14730001 #Villasana
+kill_leader = 9037 #Andringa
+kill_leader = 55034 #Maldonado
+kill_leader = 55035 #Medina_Barrón
+kill_leader = 55036 #Mercado
+kill_leader = 55037 #Mier
+kill_leader = 55038 #Mondragón
+kill_leader = 55039 #Morelos
+kill_leader = 55040 #Mass
+kill_leader = 55041 #Monter
+kill_leader = 55042 #Navarro
+kill_leader = 55043 #Ocón
+kill_leader = 55044 #Ojeda
+kill_leader = 55045 #Olea
+kill_leader = 55006 #Orozco,_Pascual
+kill_leader = 55046 #Orpinel
+kill_leader = 55047 #Poloney
+kill_leader = 55048 #Rasgado
+kill_leader = 55002 #Reyes,_B
+kill_leader = 55049 #Robles
+kill_leader = 55050 #Rojas
+kill_leader = 55051 #Rubio_Navarrete
+kill_leader = 55052 #Ruiz
+kill_leader = 55053 #Salazar
+kill_leader = 55054 #Soberanes
+kill_leader = 55055 #Téllez
+kill_leader = 55056 #Toro
+kill_leader = 55057 #Trucy_Aubert
+kill_leader = 55058 #Velasco
+kill_leader = 55059 #Yarza
+kill_leader = 55060 #Zozaya
+kill_leader = 55061 #Azueta
+kill_leader = 55062 #Villasana
+
 		remove_minister = 14700110 #Venustiano_Carranza
 		remove_minister = 14700111 #Adolfo_de_la_Huerta_
 		remove_minister = 14700112 #Álvaro_Obregón
@@ -1558,8 +1562,9 @@
 		remove_minister = 14700143 #Francisco_Roque_Serrano
 		remove_minister = 14700144 #Joaquín_Amaro_Domínguez
 		remove_minister = 14700145 #Alberto_Salinas_Carranza
-		kill_leader = 14710252 #Obregón
-		kill_leader = 14720002 #Malpica
+kill_leader = 55004 #Obregón
+kill_leader = 55261 #Malpica
+
 		remove_minister = 14700092 #Emiliano_Zapata
 		kill_leader = 14710184 #Zapata_Emiliano
 		 }
@@ -1719,64 +1724,65 @@
 		remove_minister = 14700086 #José_Refugio_Velasco
 		remove_minister = 14700087 #Miguel_Lebrija
 		remove_minister = 14700088 #Juan_Guillermo_Villasana
-		kill_leader = 14710001 #Aguilar
-		kill_leader = 14710002 #Altamirano
-		kill_leader = 14710003 #Argumedo
-		kill_leader = 14710004 #Beltrán_Castañares
-		kill_leader = 14710005 #Blanquet
-		kill_leader = 14710006 #Bravo
-		kill_leader = 14710007 #Cartón
-		kill_leader = 14710008 #Cejudo
-		kill_leader = 14710009 #Carmen_Curiel
-		kill_leader = 14710010 #Casso_López
-		kill_leader = 14710011 #Chacón
-		kill_leader = 14710012 #Dávila
-		kill_leader = 14710013 #Delgadillo
-		kill_leader = 10810024 #Lambotte
-		kill_leader = 14710015 #Eguía_Lis
-		kill_leader = 14710016 #Escandón_y_Barrón
-		kill_leader = 14710017 #Gallardo
-		kill_leader = 14710018 #Gil
-		kill_leader = 14710019 #Gorostieta_y_Velarde
-		kill_leader = 14710020 #Harrotian
-		kill_leader = 14710021 #Huerta
-		kill_leader = 14710022 #Jiménez_Castro
-		kill_leader = 10810033 #Arnold
-		kill_leader = 14710024 #Lojero
-		kill_leader = 14710025 #Maas_Águila
+kill_leader = 55009 #Aguilar
+kill_leader = 55010 #Altamirano
+kill_leader = 55011 #Argumedo
+kill_leader = 55012 #Beltrán_Castañares
+kill_leader = 55013 #Blanquet
+kill_leader = 55014 #Bravo
+kill_leader = 55015 #Cartón
+kill_leader = 55016 #Cejudo
+kill_leader = 55017 #Carmen_Curiel
+kill_leader = 55018 #Casso_López
+kill_leader = 55019 #Chacón
+kill_leader = 55020 #Dávila
+kill_leader = 55021 #Delgadillo
+kill_leader = 9024 #Lambotte
+kill_leader = 55023 #Eguía_Lis
+kill_leader = 55024 #Escandón_y_Barrón
+kill_leader = 55025 #Gallardo
+kill_leader = 55026 #Gil
+kill_leader = 55027 #Gorostieta_y_Velarde
+kill_leader = 55028 #Harrotian
+kill_leader = 55005 #Huerta,_V
+kill_leader = 55029 #Jiménez_Castro
+kill_leader = 9033 #Arnold
+kill_leader = 55031 #Lojero
+kill_leader = 55032 #Maas_Águila
 		kill_leader = 14710026 #Maas_Flores
-		kill_leader = 10810037 #Andringa
-		kill_leader = 14710028 #Maldonado
-		kill_leader = 14710029 #Medina_Barrón
-		kill_leader = 14710030 #Mercado
-		kill_leader = 14710031 #Mier
-		kill_leader = 14710032 #Mondragón
-		kill_leader = 14710033 #Morelos
-		kill_leader = 14710034 #Mass
-		kill_leader = 14710035 #Monter
-		kill_leader = 14710036 #Navarro
-		kill_leader = 14710037 #Ocón
-		kill_leader = 14710038 #Ojeda
-		kill_leader = 14710039 #Olea
-		kill_leader = 14710040 #Orozco
-		kill_leader = 14710041 #Orpinel
-		kill_leader = 14710042 #Poloney
-		kill_leader = 14710043 #Rasgado
-		kill_leader = 14710044 #Reyes
-		kill_leader = 14710045 #Robles
-		kill_leader = 14710046 #Rojas
-		kill_leader = 14710047 #Rubio_Navarrete
-		kill_leader = 14710048 #Ruiz
-		kill_leader = 14710049 #Salazar
-		kill_leader = 14710050 #Soberanes
-		kill_leader = 14710051 #Téllez
-		kill_leader = 14710052 #Toro
-		kill_leader = 14710053 #Trucy_Aubert
-		kill_leader = 14710054 #Velasco
-		kill_leader = 14710055 #Yarza
-		kill_leader = 14710056 #Zozaya
-		kill_leader = 14720001 #Azueta
-		kill_leader = 14730001 #Villasana
+kill_leader = 9037 #Andringa
+kill_leader = 55034 #Maldonado
+kill_leader = 55035 #Medina_Barrón
+kill_leader = 55036 #Mercado
+kill_leader = 55037 #Mier
+kill_leader = 55038 #Mondragón
+kill_leader = 55039 #Morelos
+kill_leader = 55040 #Mass
+kill_leader = 55041 #Monter
+kill_leader = 55042 #Navarro
+kill_leader = 55043 #Ocón
+kill_leader = 55044 #Ojeda
+kill_leader = 55045 #Olea
+kill_leader = 55006 #Orozco,_Pascual
+kill_leader = 55046 #Orpinel
+kill_leader = 55047 #Poloney
+kill_leader = 55048 #Rasgado
+kill_leader = 55002 #Reyes,_B
+kill_leader = 55049 #Robles
+kill_leader = 55050 #Rojas
+kill_leader = 55051 #Rubio_Navarrete
+kill_leader = 55052 #Ruiz
+kill_leader = 55053 #Salazar
+kill_leader = 55054 #Soberanes
+kill_leader = 55055 #Téllez
+kill_leader = 55056 #Toro
+kill_leader = 55057 #Trucy_Aubert
+kill_leader = 55058 #Velasco
+kill_leader = 55059 #Yarza
+kill_leader = 55060 #Zozaya
+kill_leader = 55061 #Azueta
+kill_leader = 55062 #Villasana
+
 		remove_minister = 14700110 #Venustiano_Carranza
 		remove_minister = 14700111 #Adolfo_de_la_Huerta_
 		remove_minister = 14700112 #Álvaro_Obregón
@@ -1816,10 +1822,11 @@
 		remove_minister = 14700143 #Francisco_Roque_Serrano
 		remove_minister = 14700144 #Joaquín_Amaro_Domínguez
 		remove_minister = 14700145 #Alberto_Salinas_Carranza
-		kill_leader = 14710252 #Obregón
-		kill_leader = 14720002 #Malpica
 		remove_minister = 14700091 #Francisco_'Pancho'_Villa
-		kill_leader = 14710126 #Sánchez
+kill_leader = 55004 #Obregón
+kill_leader = 55261 #Malpica
+kill_leader = 55129 #Sánchez
+
 		 }
 	}
 
@@ -2017,7 +2024,8 @@
 			 factor = 80
 			 }
 		 name = "DH_EVENT_2038618_Option7"
-		 kill_leader = 15110195 #Zapata_Emiliano
+kill_leader = 60002 #Zapata,_Emiliano
+
 		dissent = 10
 		 neutrality = 5
 		 relation = {
@@ -2035,7 +2043,8 @@
 		 ai_chance = {
 			 factor = 10
 			 }
-		 kill_leader = 15110195 #Zapata_Emiliano
+kill_leader = 60002 #Zapata,_Emiliano
+
 		dissent = 10
 		 neutrality = 5
 		 relation = {
@@ -2140,7 +2149,8 @@
 		chief_of_army = 14700142 #Benjamín_Hill
 		chief_of_navy = 14700142 #Benjamín_Hill
 		remove_minister = 14700110 #Venustiano_Carranza
-		kill_leader = 14710250 #Murguía_López_de_Lara
+kill_leader = 55253 #Murguía_López_de_Lara
+
 		remove_minister = 14700133 #Manuel_Aguirre_Berlanga
 		remove_minister = 14700141 #Francisco_L._Urquizo
 		 }
@@ -2157,18 +2167,22 @@
 		chief_of_army = 14700141 #Francisco_L._Urquizo
 		chief_of_navy = 14700141 #Francisco_L._Urquizo
 		remove_minister = 14700112 #Álvaro_Obregón
-		kill_leader = 14710252 #Obregón
+kill_leader = 55004 #Obregón
+
 		remove_minister = 14700111 #Adolfo_de_la_Huerta_
-		kill_leader = 14710240 #Herrero_Hernández
+kill_leader = 55243 #Herrero_Hernández
+
 		remove_minister = 14700113 #Plutarco_Elías_Calles
 		remove_minister = 14700142 #Benjamín_Hill
-		kill_leader = 14710213 #Calles
-		kill_leader = 14710241 #Hill
-		kill_leader = 14710228 #Flores
-		kill_leader = 14710254 #Piña
-		kill_leader = 14710221 #Cruz
+kill_leader = 55217 #Calles
+kill_leader = 55244 #Hill
+kill_leader = 55001 #Flores,_M
+kill_leader = 55256 #Piña
+kill_leader = 55225 #Cruz
+
 		remove_minister = 14700143 #Francisco_Roque_Serrano
-		kill_leader = 14710098 #Méndez
+kill_leader = 55104 #Méndez
+
 		 }
 	}
 
