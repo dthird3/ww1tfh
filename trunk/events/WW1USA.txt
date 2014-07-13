@@ -374,3 +374,32 @@
 		7652 = { add_province_modifier = { name = "mex_rev" duration = 730 } }    # revolt risk doesn't seem to create rebels
 	}
 }
+# America Chooses New Freedom 
+country_event = {   
+id = 100533		
+major = yes
+		trigger = {
+		tag = USA	
+		ideology = social_liberal 	
+		date = 1912.11.5	
+		}	
+		fire_only_once = yes
+	title = "democrats_win_TITLE" 		
+	desc = "desc_democrats_win"	
+	option = {		
+	name = "1912_democrats_win_ACTIONA"	head_of_state = 17800230	
+	head_of_government = 17800280	
+	consumer_goods_demand = -0.025		
+	money = -100		
+	supplies = -50		
+	dissent = -3		
+	foreign_minister = 17800223	
+	armament_minister = 17800254 	
+	minister_of_security = 17800268 	
+	minister_of_intelligence = 17800244 	
+	chief_of_staff = 17800201 	
+	chief_of_army = 1700288 	
+	chief_of_navy = 1700289 	
+	chief_of_air = 17800191		
+	}
+	}		 
