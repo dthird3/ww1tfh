@@ -1,17 +1,18 @@
-color = { 255  244  190 }
+color = { 183  182  138 }
 graphical_culture = Japanese
 
 default_templates = {
-	binary_infantry = {
+	generic_infantry = {
 		infantry_brigade
-		cavalry_brigade
-		artillery_brigade	
+		infantry_brigade
+		infantry_brigade
 	}
-	binary_milita = {
+	generic_milita = {
 		militia_brigade
-		cavalry_brigade
+		militia_brigade
+		militia_brigade
 	}
-	binary_cavalry = {
+	generic_cavalry = {
 		cavalry_brigade
 		cavalry_brigade
 	}
@@ -19,89 +20,104 @@ default_templates = {
 
 unit_names = {
 	infantry_brigade = {
-		"Jiangbei Lujun Di 7 Zhen" "Hubei Lujun Di 11 Zhen" "Jiangsu Lujun Di 12 Zhen" "Hunan Lujun Di 13 Zhen" "Jiangxi Lujun Di 14 Zhen" "Henan Lujun Di 15 Zhen" "Anhui Lujun Di 16 Zhen" "Sichuan Lujun Di 17 Zhen"
-		"Xinjiang Lujun Di 18 Zhen" "Zhejiang Lujun Di 21 Zhen" "Shanxi Lujun Di 22 Zhen" "Dongsanxing Lujun Di 23 Zhen" "Lujun Di 24 Zhen" "Guangxi Lujun Di 25 Zhen" "Guangdong Lujun Di 26 Zhen" "Lujun Di 27 Zhen"
-		"Lujun Di 28 Zhen" "Lujun Di 29 Zhen" "Lujun Di 30 Zhen" "Lujun Di 31 Zhen" "Lujun Di 32 Zhen" "Lujun Di 33 Zhen" "Lujun Di 34 Zhen" "Lujun Di 34 Zhen" "Lujun Di 35 Zhen" "Lujun Di 36 Zhen"
+		"Di'1 Shi" "Di'2 Shi" "Di'3 Shi" "Di'4 Shi" "Di'5 Shi" "Di'6 Shi" "Di'7 Shi" "Di'8 Shi" "Di'9 Shi" "Di'10 Shi" "Di'12 Shi" 
+		"Di'14 Shi" "Di'15 Shi" "Di'17 Shi" "Di'19 Shi" "Di'21 Shi" "Di'22 Shi" "Di'25 Shi" "Di'28 Shi" "Di'29 Shi" "Di'30 Shi" "Di'35 Shi" 
+		"Di'38 Shi" "Di'40 Shi" "Di'42 Shi" "Di'46 Shi" "Di'47 Shi" "Di'49 Shi" "Di'50 Shi" "Di'51 Shi" "Di'57 Shi" "Di'58 Shi" "Di'61 Shi" 
+		"Di'62 Shi" "Di'63 Shi" "Di'64 Shi" "Di'65 Shi" "Di'66 Shi" "Di'69 Shi" 
 	}
 	cavalry_brigade = {
-		"Madui Di 1 Xie" "Madui Di 2 Xie" "Madui Di 3 Xie" "Madui Di 4 Xie" "Madui Di 5 Xie" "Madui Di 6 Xie" "Madui Di 7 Xie" "Madui Di 8 Xie"
-		"Madui Di 9 Xie" "Madui Di 10 Xie" "Madui Di 11 Xie" "Madui Di 12 Xie" "Madui Di 13 Xie" "Madui Di 14 Xie" "Madui Di 15 Xie" "Madui Di 16 Xie"
-		"Madui Di 17 Xie" "Madui Di 18 Xie" "Madui Di 19 Xie" "Madui Di 20 Xie" "Madui Di 21 Xie" "Madui Di 22 Xie" "Madui Di 23 Xie" "Madui Di 24 Xie"
+		"Qibing Di'1 Shi" "Qibing Di'2 Shi" "Qibing Di'3 Shi" "Qibing Di'4 Shi" "Qibing Di'5 Shi" "Qibing Di'6 Shi" "Qibing Di'7 Shi" "Qibing Di'8 Shi" "Qibing Di'9 Shi" "Qibing Di'10 Shi" "Qibing Di'11 Shi" 
+		"Qibing Di'12 Shi" "Qibing Di'13 Shi" "Qibing Di'14 Shi" "Qibing Di'15 Shi" 
 	}
 	light_armor_brigade = {
-		"Zhuangjia Di 1 Zhen" "Zhuangjia Di 2 Zhen" "Zhuangjia Di 3 Zhen" "Zhuangjia Di 4 Zhen" "Zhuangjia Di 5 Zhen" "Zhuangjia Di 6 Zhen" "Zhuangjia Di 7 Zhen" "Zhuangjia Di 8 Zhen" "Zhuangjia Di 9 Zhen" "Zhuangjia Di 10 Zhen" 
-		"Zhuangjia Di 11 Zhen" "Zhuangjia Di 12 Zhen" "Zhuangjia Di 13 Zhen" "Zhuangjia Di 14 Zhen" "Zhuangjia Di 15 Zhen" "Zhuangjia Di 16 Zhen" "Zhuangjia Di 17 Zhen" "Zhuangjia Di 18 Zhen" "Zhuangjia Di 19 Zhen" "Zhuangjia Di 20 Zhen"
-		"Zhuangjia Di 21 Zhen" "Zhuangjia Di 22 Zhen" "Zhuangjia Di 23 Zhen" "Zhuangjia Di 24 Zhen" "Zhuangjia Di 25 Zhen" "Zhuangjia Di 26 Zhen" "Zhuangjia Di 27 Zhen" "Zhuangjia Di 28 Zhen" "Zhuangjia Di 29 Zhen" "Zhuangjia Di 30 Zhen" 
+		"Zhuangjiabing Di'1 Shi" "Zhuangjiabing Di'2 Shi" "Zhuangjiabing Di'3 Shi" "Zhuangjiabing Di'4 Shi" "Zhuangjiabing Di'5 Shi" "Zhuangjiabing Di'6 Shi" "Zhuangjiabing Di'7 Shi" "Zhuangjiabing Di'8 Shi" "Zhuangjiabing Di'9 Shi" "Zhuangjiabing Di'10 Shi" "Zhuangjiabing Di'11 Shi" 
+		"Zhuangjiabing Di'12 Shi" "Zhuangjiabing Di'13 Shi" "Zhuangjiabing Di'14 Shi" "Zhuangjiabing Di'15 Shi" "Zhuangjiabing Di'16 Shi" "Zhuangjiabing Di'17 Shi" "Zhuangjiabing Di'18 Shi" "Zhuangjiabing Di'19 Shi" "Zhuangjiabing Di'20 Shi" 
 	}
 	armor_brigade = {
-		"Zhuangjia Di 1 Zhen" "Zhuangjia Di 2 Zhen" "Zhuangjia Di 3 Zhen" "Zhuangjia Di 4 Zhen" "Zhuangjia Di 5 Zhen" "Zhuangjia Di 6 Zhen" "Zhuangjia Di 7 Zhen" "Zhuangjia Di 8 Zhen" "Zhuangjia Di 9 Zhen" "Zhuangjia Di 10 Zhen" 
-		"Zhuangjia Di 11 Zhen" "Zhuangjia Di 12 Zhen" "Zhuangjia Di 13 Zhen" "Zhuangjia Di 14 Zhen" "Zhuangjia Di 15 Zhen" "Zhuangjia Di 16 Zhen" "Zhuangjia Di 17 Zhen" "Zhuangjia Di 18 Zhen" "Zhuangjia Di 19 Zhen" "Zhuangjia Di 20 Zhen"
-		"Zhuangjia Di 21 Zhen" "Zhuangjia Di 22 Zhen" "Zhuangjia Di 23 Zhen" "Zhuangjia Di 24 Zhen" "Zhuangjia Di 25 Zhen" "Zhuangjia Di 26 Zhen" "Zhuangjia Di 27 Zhen" "Zhuangjia Di 28 Zhen" "Zhuangjia Di 29 Zhen" "Zhuangjia Di 30 Zhen" 
+		"Zhuangjiabing Di'1 Shi" "Zhuangjiabing Di'2 Shi" "Zhuangjiabing Di'3 Shi" "Zhuangjiabing Di'4 Shi" "Zhuangjiabing Di'5 Shi" "Zhuangjiabing Di'6 Shi" "Zhuangjiabing Di'7 Shi" "Zhuangjiabing Di'8 Shi" "Zhuangjiabing Di'9 Shi" "Zhuangjiabing Di'10 Shi" "Zhuangjiabing Di'11 Shi" 
+		"Zhuangjiabing Di'12 Shi" "Zhuangjiabing Di'13 Shi" "Zhuangjiabing Di'14 Shi" "Zhuangjiabing Di'15 Shi" "Zhuangjiabing Di'16 Shi" "Zhuangjiabing Di'17 Shi" "Zhuangjiabing Di'18 Shi" "Zhuangjiabing Di'19 Shi" "Zhuangjiabing Di'20 Shi" 
 	}
 	marine_brigade = {
-		"Luzhan Dui Di 1 Zhen" "Luzhan Dui Di 2 Zhen" "Luzhan Dui Di 3 Zhen" "Luzhan Dui Di 4 Zhen" "Luzhan Dui Di 5 Zhen" "Luzhan Dui Di 6 Zhen" "Luzhan Dui Di 7 Zhen" "Luzhan Dui Di 8 Zhen" "Luzhan Dui Di 9 Zhen" "Luzhan Dui Di 10 Zhen"  
-		"Luzhan Dui Di 11 Zhen" "Luzhan Dui Di 12 Zhen" "Luzhan Dui Di 13 Zhen" "Luzhan Dui Di 14 Zhen" "Luzhan Dui Di 15 Zhen" "Luzhan Dui Di 16 Zhen" "Luzhan Dui Di 17 Zhen" "Luzhan Dui Di 18 Zhen" "Luzhan Dui Di 19 Zhen" "Luzhan Dui Di 20 Zhen" 
+		"Luzhan Dui Di'1 Shi" "Luzhan Dui Di'2 Shi" "Luzhan Dui Di'3 Shi" "Luzhan Dui Di'4 Shi" "Luzhan Dui Di'5 Shi" "Luzhan Dui Di'6 Shi" "Luzhan Dui Di'7 Shi" "Luzhan Dui Di'8 Shi" "Luzhan Dui Di'9 Shi" "Luzhan Dui Di'10 Shi" "Luzhan Dui Di'11 Shi" 
+		"Luzhan Dui Di'12 Shi" "Luzhan Dui Di'13 Shi" "Luzhan Dui Di'14 Shi" "Luzhan Dui Di'15 Shi" 
 	}
 	bergsjaeger_brigade = {
-		"Shandi Di 1 Zhen" "Shandi Di 2 Zhen" "Shandi Di 3 Zhen" "Shandi Di 4 Zhen" "Shandi Di 5 Zhen" "Shandi Di 6 Zhen" "Shandi Di 7 Zhen" "Shandi Di 8 Zhen" "Shandi Di 9 Zhen" "Shandi Di 10 Zhen"  
-		"Shandi Di 11 Zhen" "Shandi Di 12 Zhen" "Shandi Di 13 Zhen" "Shandi Di 14 Zhen" "Shandi Di 15 Zhen" "Shandi Di 16 Zhen" "Shandi Di 17 Zhen" "Shandi Di 18 Zhen" "Shandi Di 19 Zhen" "Shandi Di 20 Zhen" 
+		"Pabing Di'1 Shi" "Pabing Di'2 Shi" "Pabing Di'3 Shi" "Pabing Di'4 Shi" "Pabing Di'5 Shi" "Pabing Di'6 Shi" "Pabing Di'7 Shi" "Pabing Di'8 Shi" "Pabing Di'9 Shi" "Pabing Di'10 Shi" "Pabing Di'12 Shi" 
+		"Pabing Di'14 Shi" "Pabing Di'15 Shi" "Pabing Di'17 Shi" "Pabing Di'19 Shi" 
 	}
 	garrison_brigade = {
-		"Hubei Xunfang Dui" "Hunan Xunfang Dui" "Jilin Xunfang Dui" "Heilongjiang Xunfang Dui" "Rehe Xunfang Dui" "Zhili Xunfang Dui" "Shandong Xunfang Dui" "Henan Xunfang Dui" "Shaanxi Xunfang Dui" "Gansu Xunfang Dui"
-		"Xinjiang Xunfang Dui" "Ili Xunfang Dui" "Shanxi Xunfang Dui" "Fengtian Xunfang Dui" "Jiangsu Xunfang Dui" "Jiangning Xunfang Dui" "Changjiang Xunfang Dui" "Anhui Xunfang Dui" "Jiangxi Xunfang Dui" "Zhejiang Xunfang Dui"
-		"Fujian Xunfang Dui" "Guangdong Xunfang Dui" "Guangxi Xunfang Dui" "Sichuan Xunfang Dui" "Yunnan Xunfang Dui" "Guizhou Xunfang Dui"
+		"Urumqi-Shi Baoan Zongdui" "Di'1 Shi" "Di'2 Shi" "Di'3 Shi" "Di'4 Shi" "Di'5 Shi" "Di'6 Shi" "Di'7 Shi" "Di'8 Shi" "Di'10 Shi" "Di'12 Shi" 
+		"Di'14 Shi" "Di'15 Shi" "Di'17 Shi" "Di'19 Shi" "Di'21 Shi" "Di'22 Shi" "Di'25 Shi" "Di'28 Shi" "Di'29 Shi" "Di'30 Shi" "Di'35 Shi" 
+		"Di'38 Shi" "Di'40 Shi" "Di'42 Shi" "Di'46 Shi" "Di'47 Shi" "Di'49 Shi" "Di'50 Shi" 
 	}
 	hq_brigade = {
-		"Di 4 Jun" "Di 5 Jun" "Di 6 Jun" "Di 7 Jun" "Di 8 Jun" "Di 9 Jun" "Di 10 Jun"
+		"Di'1 Zhandou Silingbu" "Di'2 Zhandou Silingbu" "Di'3 Zhandou Silingbu" "Di'4 Zhandou Silingbu" "Di'5 Zhandou Silingbu" "Di'6 Zhandou Silingbu" "Di'7 Zhandou Silingbu" "Di'8 Zhandou Silingbu" "Di'9 Zhandou Silingbu" 
 	}
 	militia_brigade = {
-		"Jifu Banner Garrison" "Shengjing Banner Garrison" "Jilin Banner Garrison" "Heilongjiang Banner Garrison" "Chengdu Banner Garrison" "Zhili Green Standard Army" "Shandong Green Standard Army" "Shanxi Green Standard Army" "Henan Green Standard Army" "Jiangsu Green Standard Army"
-		"Guangzhou Banner Garrison" "Jingzhou Banner Garrison" "Xian Banner Garrison" "Fuzhou Banner Garrison" "Hangzhou Banner Garrison" "Jiangnan Green Standard Army" "Anhui Green Standard Army" "Jiangxi Green Standard Army" "Fujian Green Standard Army" "Zhejiang Green Standard Army"
-		"Ningxia Banner Garrison" "Jiangning Banner Garrison" "Shanxi Banner Garrison" "Qinghai Banner Army" "Ili Banner Garrison" "Hubei Green Standard Army" "Hunan Green Standard Army" "Shaanxi Green Standard Army" "Gansu Green Standard Army" "Xinjiang Green Standard Army" 
-		"Xinjiang Banner Garrison" "Xizang Banner Army" "Inner Mongolia Banner Army" "Outer Mongolia Banner Army" "Ili Green Standard Army" "Sichuan Green Standard Army" "Guangdong Green Standard Army" "Guangxi Green Standard Army" "Yunnan Green Standard Army" "Guizhou Green Standard Army"
+		"Xinjiang Baoan Zongdui" "8. Min Shi" "9. Min Shi" "10. Min Shi" "12. Min Shi" "14. Min Shi" "15. Min Shi" "17. Min Shi" "19. Min Shi" "21. Min Shi" "22. Min Shi" 
+		"25. Min Shi" "28. Min Shi" "29. Min Shi" "30. Min Shi" "35. Min Shi" "38. Min Shi" "40. Min Shi" "42. Min Shi" "46. Min Shi" "47. Min Shi" "49. Min Shi" 
+		"50. Min Shi" "51. Min Shi" 
 	}
 	interceptor = {
-		"Di 1 Hangkong Dui" "Di 2 Hangkong Dui" "Di 3 Hangkong Dui" "Di 4 Hangkong Dui" "Di 5 Hangkong Dui" "Di 6 Hangkong Dui" "Di 7 Hangkong Dui" "Di 8 Hangkong Dui" "Di 9 Hangkong Dui" "Di 10 Hangkong Dui" "Di 11 Hangkong Dui" 
-		"Di 12 Hangkong Dui" "Di 13 Hangkong Dui" "Di 14 Hangkong Dui" "Di 15 Hangkong Dui" "Di 16 Hangkong Dui" "Di 17 Hangkong Dui" "Di 18 Hangkong Dui" "Di 19 Hangkong Dui" "Di 20 Hangkong Dui" 
+		"1. Zhandouji Dadui" "2. Zhandouji Dadui" "3. Zhandouji Dadui" "4. Zhandouji Dadui" "5. Zhandouji Dadui" "6. Zhandouji Dadui" "7. Zhandouji Dadui" "8. Zhandouji Dadui" "9. Zhandouji Dadui" "10. Zhandouji Dadui" 
+	}
+	scout = {
+		"1. Zhandouji Dadui" "2. Zhandouji Dadui" "3. Zhandouji Dadui" "4. Zhandouji Dadui" "5. Zhandouji Dadui" "6. Zhandouji Dadui" "7. Zhandouji Dadui" "8. Zhandouji Dadui" "9. Zhandouji Dadui" "10. Zhandouji Dadui" 
 	}
 	tactical_bomber = {
-		"Di 1 Hangkong Dui" "Di 2 Hangkong Dui" "Di 3 Hangkong Dui" "Di 4 Hangkong Dui" "Di 5 Hangkong Dui" "Di 6 Hangkong Dui" "Di 7 Hangkong Dui" "Di 8 Hangkong Dui" "Di 9 Hangkong Dui" "Di 10 Hangkong Dui" "Di 11 Hangkong Dui" 
-		"Di 12 Hangkong Dui" "Di 13 Hangkong Dui" "Di 14 Hangkong Dui" "Di 15 Hangkong Dui" "Di 16 Hangkong Dui" "Di 17 Hangkong Dui" "Di 18 Hangkong Dui" "Di 19 Hangkong Dui" "Di 20 Hangkong Dui" 
+		"1. TAC Hongzhaji Dadui" "2. TAC Hongzhaji Dadui" "3. TAC Hongzhaji Dadui" "4. TAC Hongzhaji Dadui" "5. TAC Hongzhaji Dadui" "6. TAC Hongzhaji Dadui" "7. TAC Hongzhaji Dadui" "8. TAC Hongzhaji Dadui" "9. TAC Hongzhaji Dadui" "10. TAC Hongzhaji Dadui" 
 	}
 	dreadnaught = {
-		"Zhao He" "Fei Hong" "Ying Rui"
+		"Nan'Shin" "Pao'Nim" "Ying'Ching" "Ton'Chi" "Hai'Yung" "Hai'Shew" "Hai'Shen" "Ying'Swei" 
 	}
 	light_cruiser = {
-		"Zhao He" "Fei Hong" "Ying Rui"
+		"Hai'Shen" "Ying'Swei" "Fei'Hung" "Chao'Ho" "Hai'Chi" "Ying'Swei" "Chao'Ho" "Ning'Hai" "Ping'Hai" 
 	}
 	heavy_cruiser = {
-		"Zhao He" "Fei Hong" "Ying Rui"
+		"Ping'hai" "Ning'hai" "Chung'king" "Nan'Shin" "Pao'Nim" "Ying'Ching" "Ton'Chi" "Hai'Yung" "Hai'Shew" 
 	}
 	battlecruiser = {
-		"Zhao He" "Fei Hong" "Ying Rui"
+		"Fei'Hung" "Chao'Ho" "Hai'Chi" "Ying'Swei" "Chao'Ho" "Ning'Hai" "Ping'Hai" 
 	}
 	destroyer = {
-		"Di 3 Yuleiting Jiandui" "Di 4 Yuleiting Jiandui" "Di 5 Yuleiting Jiandui" "Di 6 Yuleiting Jiandui" "Di 7 Yuleiting Jiandui" "Di 8 Yuleiting Jiandui" "Di 9 Yuleiting Jiandui" "Di 10 Yuleiting Jiandui"
-		"Di 11 Yuleiting Jiandui" "Di 12 Yuleiting Jiandui" "Di 13 Yuleiting Jiandui" "Di 14 Yuleiting Jiandui" "Di 15 Yuleiting Jiandui" "Di 16 Yuleiting Jiandui" "Di 17 Yuleiting Jiandui" "Di 18 Yuleiting Jiandui" "Di 19 Yuleiting Jiandui" "Di 20 Yuleiting Jiandui"
+		"1. Quzujian Dadui" "2. Quzujian Dadui" "3. Quzujian Dadui" "4. Quzujian Dadui" "5. Quzujian Dadui" "6. Quzujian Dadui" "7. Quzujian Dadui" "8. Quzujian Dadui" "9. Quzujian Dadui" "10. Quzujian Dadui" 
 	}
 	carrier = {
-		"Zhao He" "Fei Hong" "Ying Rui"
-	}
-	escort_carrier = {
-		"Zhao He" "Fei Hong" "Ying Rui"
+		"Nan'Shin" "Pao'Nim" "Ying'Ching" "Ton'Chi" "Hai'Yung" "Hai'Shew" "Hai'Shen" "Ying'Swei" "Fei'Hung" "Chao'Ho" "Hai'Chi" 
+		"Ying'Swei" "Chao'Ho" "Ning'Hai" "Ping'Hai" 
 	}
 	submarine = {
-		"Di 1 Qianting Jiandui" "Di 2 Qianting Jiandui" "Di 3 Qianting Jiandui" "Di 4 Qianting Jiandui" "Di 5 Qianting Jiandui" "Di 6 Qianting Jiandui" "Di 7 Qianting Jiandui" "Di 8 Qianting Jiandui" "Di 9 Qianting Jiandui" "Di 10 Qianting Jiandui" "Di 11 Qianting Jiandui" 
-		"Di 12 Qianting Jiandui" "Di 13 Qianting Jiandui" "Di 14 Qianting Jiandui" "Di 15 Qianting Jiandui" 
+		"1. Qianting Budui" "2. Qianting Budui" "3. Qianting Budui" "4. Qianting Budui" "5. Qianting Budui" "6. Qianting Budui" "7. Qianting Budui" "8. Qianting Budui" "9. Qianting Budui" "10. Qianting Budui" 
+	}
+	coastal_submarine = {
+		"1. Qianting Budui" "2. Qianting Budui" "3. Qianting Budui" "4. Qianting Budui" "5. Qianting Budui" "6. Qianting Budui" "7. Qianting Budui" "8. Qianting Budui" "9. Qianting Budui" "10. Qianting Budui" 
+	}
+	longrange_submarine = {
+		"1. Qianting Budui" "2. Qianting Budui" "3. Qianting Budui" "4. Qianting Budui" "5. Qianting Budui" "6. Qianting Budui" "7. Qianting Budui" "8. Qianting Budui" "9. Qianting Budui" "10. Qianting Budui" 
 	}
 	transport_ship = {
-		"Di 1 Yunshu Jiandui" "Di 2 Yunshu Jiandui" "Di 3 Yunshu Jiandui" "Di 4 Yunshu Jiandui" "Di 5 Yunshu Jiandui" "Di 6 Yunshu Jiandui" "Di 7 Yunshu Jiandui" "Di 8 Yunshu Jiandui" "Di 9 Yunshu Jiandui" "Di 10 Yunshu Jiandui" "Di 11 Yunshu Jiandui" 
-		"Di 12 Yunshu Jiandui" "Di 13 Yunshu Jiandui" "Di 14 Yunshu Jiandui" "Di 15 Yunshu Jiandui" "Di 16 Yunshu Jiandui" "Di 17 Yunshu Jiandui" "Di 18 Yunshu Jiandui" "Di 19 Yunshu Jiandui" "Di 20 Yunshu Jiandui" 
+		"1. Yunshuji Dadui" "2. Yunshuji Dadui" "3. Yunshuji Dadui" "4. Yunshuji Dadui" "5. Yunshuji Dadui" "6. Yunshuji Dadui" "7. Yunshuji Dadui" "8. Yunshuji Dadui" "9. Yunshuji Dadui" "10. Yunshuji Dadui" 
 	}
 
 }
 
-
 ministers = {
-#21100000
+21100001 = { 
+	name = "Tan Yankai"
+	start_date = 1911.1.1 
+	death_date = 1935.12.31 
+	picture = HNC1
+	ideology = fascistic
+	loyalty = 1.00 
+	head_of_state = popular_figurehead
+	head_of_government = political_protege
+	foreign_minister = ideological_crusader
+	armament_minister = infantry_proponent
+	minister_of_security = crime_fighter
+	minister_of_intelligence = political_specialist
+	chief_of_staff = school_of_psychology
+	chief_of_army = static_defence_doctrine
+	chief_of_navy = base_control_doctrine
+	chief_of_air = air_superiority_doctrine
+	}
 }
