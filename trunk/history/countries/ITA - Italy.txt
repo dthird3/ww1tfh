@@ -1,16 +1,17 @@
 capital = 4549
 government = constitutional_monarchy
 ideology = social_conservative
-head_of_state = 14100001 #Vittorio_Emanuele_III
-head_of_government = 14100111 #Luigi_Luzzatti
-foreign_minister = 14100104 #Sidney_Sonnino
-armament_minister = 14100128 #Eduardo_Daneo
-minister_of_security = 14100114 #Antonio_Salandra
-minister_of_intelligence = 14100120 #Rosolino_Poggi
-chief_of_staff = 14100085 #Luigi_Cadorna
-chief_of_army = 14100134 #Carlo_Porro
-chief_of_navy = 14100098 #Leone_Viale
-chief_of_air = 14100082 #Mario_Calderara
+head_of_state = 46001 #Vittorio_Emanuele_III
+head_of_government = 46111 #Luigi_Luzzatti
+foreign_minister = 46104 #Sidney_Sonnino
+armament_minister = 46128 #Eduardo_Daneo
+minister_of_security = 46114 #Antonio_Salandra
+minister_of_intelligence = 46120 #Rosolino_Poggi
+chief_of_staff = 46085 #Luigi_Cadorna
+chief_of_army = 46134 #Carlo_Porro
+chief_of_navy = 46098 #Leone_Viale
+chief_of_air = 46082 #Mario_Calderara
+
 
 
 alignment = { x = 150 y = 150.0 }
@@ -325,7 +326,10 @@ strategic_bombardment_tactics = 0
 aerial_photography = 0
 scout_pilot_training = 0
 strategic_air_command = 0
-1911.3.30 = { head_of_government =14100110 } #Giovanni_Giolitti
+1911.3.30 = { 
+head_of_government = 46110 #Giovanni_Giolitti
+
+ }
 1911.9.29 = { set_country_flag = libya_war }
 1912.9.29 = { set_country_flag = libya_peace }
 
@@ -608,6 +612,7 @@ strategic_air_command = 0
 }
 1914.1.1 = { oob = "ITA_1914.txt" }
 1914.3.21 = {
-head_of_government =14100114 #Antonio_Salandra
+head_of_government = 46114 #Antonio_Salandra
+
 
 }

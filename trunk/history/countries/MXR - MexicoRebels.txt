@@ -1,16 +1,17 @@
 capital = 9604
 government = social_democracy
 ideology = social_democrat
-head_of_state = 15100001 #Francisco_I._Madero
-head_of_government = 15100001 #Francisco_I._Madero
-foreign_minister = 15100002 #Eduardo_Hay
-armament_minister = 15100003 #Enrique_Estrada_Reynoso
-minister_of_security = 15100004 #Francisco_U._Benavides
-minister_of_intelligence = 15100005 #Plutarco_E.Calles
-chief_of_staff = 15100006 #Benjamin_G._Hill
-chief_of_army = 15100007 #Pablo_Quiroga_Escamillo
-chief_of_navy = 15100008 #Hector_Meixueiro
-chief_of_air = 15100009 #Gustavo_Salinas_Camina
+head_of_state = 60001 #Francisco_I._Madero
+head_of_government = 60001 #Francisco_I._Madero
+foreign_minister = 60002 #Eduardo_Hay
+armament_minister = 60003 #Enrique_Estrada_Reynoso
+minister_of_security = 60004 #Francisco_U._Benavides
+minister_of_intelligence = 60005 #Plutarco_E.Calles
+chief_of_staff = 60006 #Benjamin_G._Hill
+chief_of_army = 60007 #Pablo_Quiroga_Escamillo
+chief_of_navy = 60008 #Hector_Meixueiro
+chief_of_air = 60009 #Gustavo_Salinas_Camina
+
 
 
 alignment = { x = -40 y = -7.6 }
@@ -605,8 +606,11 @@ scout_pilot_training = 0
 strategic_air_command = 0
 }
 
-1914.1.1 = { head_of_state = 15100032                # V. Huerta
-			 head_of_government = 15100032 }         # V. Huerta
+1914.1.1 = { 
+head_of_state = 60032 #Victoriano_Huerta
+
+			 head_of_government = 60032 #Victoriano_Huerta
+ }     
 1914.1.1 = { oob = "MXR_1914.txt" }                  # Huerta's army
 1914.1.1 = { neutrality = 100 
 			 officers_ratio = 1.0

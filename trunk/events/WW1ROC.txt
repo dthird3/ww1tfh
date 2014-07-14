@@ -75,7 +75,7 @@
 		 ai_chance = {
 			 factor = 100
 			 }
-			 head_of_government = ¡§minister id¡¨ #Song Jiaoren
+			 #head_of_government = §minister id¨ #Song Jiaoren
 			 national_unity = 5
 			 popularity = 10
 			 organisation = 10
@@ -108,8 +108,8 @@
 			 factor = 100
 			 }
 			 national_unity = 5
-			 add_country_modifier = ¡§name of modifier¡¨
-			 country_event = 999950 #the reaction of Yuan
+			 #add_country_modifier = §name of modifier¨
+			 country_event = 999946 #the reaction of Yuan
 			 set_country_flag = KMT_threat
 		}
 	}
@@ -120,7 +120,7 @@
  country_event = {
 	title = "ROCE4"
 	desc = "desc_ROCE4"
-	id = 999950
+	id = 999946
 	 
 	picture = "ROCE4"
 	
@@ -131,7 +131,7 @@
 		 ai_chance = {
 			 factor = 90
 			 }
-			 country_event = 999949 #Song Jiaoren was killed
+			 country_event = 999945 #Song Jiaoren was killed
 		}
 		
 		option = {
@@ -149,7 +149,7 @@
  country_event = {
 	title = "ROCE5"
 	desc = "desc_ROCE5"
-	id = 999949
+	id = 999945
 	 
 	picture = "ROCE5"
 	
@@ -162,8 +162,8 @@
 			 }
 			 national_unity = -5
 			 dissent = 5
-			 remove_minister = "" #Song Jiaoren
-			 remove_country_modifier = ¡§name of modifier¡¨
+			 #remove_minister = "" #Song Jiaoren
+			 #remove_country_modifier = §name of modifier¨
 			 set_country_flag = KMT_Song
 		}
 	}
@@ -190,8 +190,8 @@
 			 factor = 100
 			 }
 			 dissent = 3
-			 remove_minister = ""
-			 kill_leader = ""
+			 #remove_minister = ""
+			 #kill_leader = ""
 			 5834 = { #Guangzhou
 			 create_revolt = 1
 			 }

@@ -683,10 +683,10 @@
 	
 	option = {										
 		name = "ACTION_NAME_DAMN"
-		MXR = { remove_minister = 15100001 }			# Madero
+		MXR = { remove_minister = 60001 }			#Francisco_I._Madero
 		MXR = { kill_leader = 60001 }					#Madero,_F
-		MXR = { head_of_state = 15100032 }				# Huerta
-		MXR = { head_of_government = 100032 }			# Huerta
+		MXR = { head_of_state = 60032  }				#Victoriano_Huerta
+		MXR = { head_of_government = 60032 }			# Victoriano_Huerta
 		USA = { clr_country_flag = "support_madero_coup" }
 		USA = { clr_country_flag = "no_madero_coup" }
 		MXR = { set_country_flag = "Ten_Tragic_Days" }
@@ -720,7 +720,7 @@
 	
 	option = {										
 		name = "ACTION_NAME_GREAT"
-		remove_minister = 15100032			# Huerta
+		remove_minister = 60032 #Victoriano_Huerta
 		kill_leader = 60003 #Orozco,_Pascual
 		USA = { clr_country_flag = "support_madero_coup" }
 		USA = { clr_country_flag = "no_madero_coup" }
@@ -995,7 +995,7 @@ kill_leader = 60009 #González_Peña
 		 }
 	trigger = {
 		 war = no
-		 head_of_state = 14700068 #Victoriano_Huerta
+		 #head_of_state = 14700068 #Victoriano_Huerta
 		not = {
 			 exists = MXR
 			 has_global_flag = 2038601_EVENT_DONE#
@@ -1196,37 +1196,44 @@ kill_leader = 60009 #González_Peña
 		 name = "DH_EVENT_2038610_Option7"
 		 national_unity = -5
 		 neutrality = 16
-		 head_of_state = 14700110 #Venustiano_Carranza
-		head_of_government = 14700110 #Venustiano_Carranza
-		foreign_minister = 14700116 #CÁndido_Aguilar
-		armament_minister = 14700098 #Francisco_Escudero
-		minister_of_security = 14700133 #Manuel_Aguirre_Berlanga
-		minister_of_intelligence = 14700002 #Eduardo_Hay
-		chief_of_staff = 14700138 #Ignacio_L._Pesqueira
-		chief_of_army = 14700138 #Ignacio_L._Pesqueira
-		chief_of_navy = 14700138 #Ignacio_L._Pesqueira
-		chief_of_air = 14700145 #Alberto_Salinas_Carranza
-		remove_minister = 14700068 #Victoriano_Huerta
-		remove_minister = 14700069 #Félix_Díaz
-		remove_minister = 14700070 #Francisco_León_de_la_Barra
-		remove_minister = 14700071 #Carlos_Pereyra
-		remove_minister = 14700072 #Manuel_Garza_Aldape
-		remove_minister = 14700073 #Federico_Gamboa
-		remove_minister = 14700074 #Antonio_de_la_Peña_y_Reyes
-		remove_minister = 14700075 #Querido_Moheno
-		remove_minister = 14700076 #José_López_Portillo_y_Rojas
-		remove_minister = 14700077 #Roberto_Esteva_Ruiz
-		remove_minister = 14700078 #Francisco_S._Carvajal
-		remove_minister = 14700079 #Ignacio_Alcocer
-		remove_minister = 14700080 #Salomé_Botello
-		remove_minister = 14700081 #Alberto_García_Granados
-		remove_minister = 14700082 #Aureliano_Urrutia
-		remove_minister = 14700083 #Pascual_Orozco
-		remove_minister = 14700084 #Manuel_Mondragón
-		remove_minister = 14700085 #Aureliano_Blanquet
-		remove_minister = 14700086 #José_Refugio_Velasco
-		remove_minister = 14700087 #Miguel_Lebrija
-		remove_minister = 14700088 #Juan_Guillermo_Villasana
+		head_of_state = 55109 #Venustiano_Carranza
+		head_of_government = 55109 #Venustiano_Carranza
+		foreign_minister = 55115 #Cándido_Aguilar
+armament_minister = 55097 #Francisco_Escudero
+
+		minister_of_security = 55132 #Manuel_Aguirre_Berlanga
+
+
+		minister_of_intelligence = 55002 #Eduardo_Hay
+
+		chief_of_staff = 55137 #Ignacio_L._Pesqueira
+
+		chief_of_army = 55137 #Ignacio_L._Pesqueira
+		chief_of_navy = 55137 #Ignacio_L._Pesqueira
+		chief_of_air = 55144 #Alberto_Salinas_Carranza
+
+		remove_minister = 60032 #Victoriano_Huerta
+remove_minister = 55068 #Félix_Díaz
+remove_minister = 55069 #Francisco_León_de_la_Barra
+remove_minister = 55070 #Carlos_Pereyra
+remove_minister = 55071 #Manuel_Garza_Aldape
+remove_minister = 55072 #Federico_Gamboa
+remove_minister = 55073 #Antonio_de_la_Peña_y_Reyes
+remove_minister = 55074 #Querido_Moheno
+remove_minister = 55075 #José_López_Portillo_y_Rojas
+remove_minister = 55076 #Roberto_Esteva_Ruiz
+remove_minister = 55077 #Francisco_S._Carvajal
+remove_minister = 55078 #Ignacio_Alcocer
+remove_minister = 55079 #Salomé_Botello
+remove_minister = 55080 #Alberto_García_Granados
+remove_minister = 55081 #Aureliano_Urrutia
+remove_minister = 55082 #Pascual_Orozco
+remove_minister = 55083 #Manuel_Mondragón
+remove_minister = 55084 #Aureliano_Blanquet
+remove_minister = 55085 #José_Refugio_Velasco
+remove_minister = 55086 #Miguel_Lebrija
+remove_minister = 55087 #Juan_Guillermo_Villasana
+
 kill_leader = 55009 #Aguilar
 kill_leader = 55010 #Altamirano
 kill_leader = 55011 #Argumedo
@@ -1252,7 +1259,7 @@ kill_leader = 55029 #Jiménez_Castro
 kill_leader = 9033 #Arnold
 kill_leader = 55031 #Lojero
 kill_leader = 55032 #Maas_Águila
-		kill_leader = 14710026 #Maas_Flores
+		#kill_leader = 14710026 #Maas_Flores
 kill_leader = 9037 #Andringa
 kill_leader = 55034 #Maldonado
 kill_leader = 55035 #Medina_Barrón
@@ -1284,28 +1291,29 @@ kill_leader = 55058 #Velasco
 kill_leader = 55059 #Yarza
 kill_leader = 55060 #Zozaya
 
-		remove_minister = 14700089 #Francisco_Lagos_ChÁzaro
-		remove_minister = 14700090 #Eulalio_Gutiérrez_Ortiz
-		remove_minister = 14700091 #Francisco_'Pancho'_Villa
-		remove_minister = 14700092 #Emiliano_Zapata
-		remove_minister = 14700093 #José_Ortiz_Rodriguez
-		remove_minister = 14700094 #Miguel_Díaz_Lombardo
-		remove_minister = 14700095 #Ignacio_Borrego
-		remove_minister = 14700096 #Alberto_B._Piña
-		remove_minister = 14700097 #Julio_Ramírez_Wiella
-		remove_minister = 14700098 #Francisco_Escudero
-		remove_minister = 14700099 #Valentín_Gama_y_Cruz
-		remove_minister = 14700100 #Luis_Zubiría_y_Campa
-		remove_minister = 14700101 #Adolfo_Francisco_Salinas
-		remove_minister = 14700102 #Santiago_GonzÁlez_Cordero
-		remove_minister = 14700103 #José_Lucio_Blanco_Fuentes
-		remove_minister = 14700104 #José_Quevedo
-		remove_minister = 14700105 #José_Isabel_Robles
-		remove_minister = 14700106 #Francisco_'Pancho'_Villa_
-		remove_minister = 14700107 #Francisco_Pacheco
-		remove_minister = 14700108 #Alfredo_Serratos_Amador
-		remove_minister = 14700109 #Pedro_Caloca_Larios
-		kill_leader = 14710184 #Zapata_Emiliano
+remove_minister = 55088 #Francisco_Lagos_Cházaro
+remove_minister = 55089 #Eulalio_Gutiérrez_Ortiz
+remove_minister = 55090 #Francisco_'Pancho'_Villa
+remove_minister = 55091 #Emiliano_Zapata
+remove_minister = 55092 #José_Ortiz_Rodriguez
+remove_minister = 55093 #Miguel_Díaz_Lombardo
+remove_minister = 55094 #Ignacio_Borrego
+remove_minister = 55095 #Alberto_B._Piña
+remove_minister = 55096 #Julio_Ramírez_Wiella
+remove_minister = 55097 #Francisco_Escudero
+remove_minister = 55098 #Valentín_Gama_y_Cruz
+remove_minister = 55099 #Luis_Zubiría_y_Campa
+remove_minister = 55100 #Adolfo_Francisco_Salinas
+remove_minister = 55101 #Santiago_González_Cordero
+remove_minister = 55102 #José_Lucio_Blanco_Fuentes
+remove_minister = 55103 #José_Quevedo
+remove_minister = 55104 #José_Isabel_Robles
+remove_minister = 55105 #Francisco_'Pancho'_Villa_
+remove_minister = 55106 #Francisco_Pacheco
+remove_minister = 55107 #Alfredo_Serratos_Amador
+remove_minister = 55108 #Pedro_Caloca_Larios
+
+		#kill_leader = 14710184 #Zapata_Emiliano
 		 }
 	}
 
@@ -1432,37 +1440,46 @@ kill_leader = 55060 #Zozaya
 		 name = "DH_EVENT_2038612_Option7"
 		 national_unity = -10
 		 neutrality = 23
-		 head_of_state = 14700089 #Francisco_Lagos_ChÁzaro
-		head_of_government = 14700091 #Francisco_'Pancho'_Villa
-		foreign_minister = 14700095 #Ignacio_Borrego
-		armament_minister = 14700099 #Valentín_Gama_y_Cruz
-		minister_of_security = 14700089 #Francisco_Lagos_ChÁzaro
-		minister_of_intelligence = 14700105 #José_Isabel_Robles
-		chief_of_staff = 14700106 #Francisco_'Pancho'_Villa_
-		chief_of_army = 14700107 #Francisco_Pacheco
-		chief_of_navy = 14700107 #Francisco_Pacheco
-		chief_of_air = 14700109 #Pedro_Caloca_Larios
-		remove_minister = 14700068 #Victoriano_Huerta
-		remove_minister = 14700069 #Félix_Díaz
-		remove_minister = 14700070 #Francisco_León_de_la_Barra
-		remove_minister = 14700071 #Carlos_Pereyra
-		remove_minister = 14700072 #Manuel_Garza_Aldape
-		remove_minister = 14700073 #Federico_Gamboa
-		remove_minister = 14700074 #Antonio_de_la_Peña_y_Reyes
-		remove_minister = 14700075 #Querido_Moheno
-		remove_minister = 14700076 #José_López_Portillo_y_Rojas
-		remove_minister = 14700077 #Roberto_Esteva_Ruiz
-		remove_minister = 14700078 #Francisco_S._Carvajal
-		remove_minister = 14700079 #Ignacio_Alcocer
-		remove_minister = 14700080 #Salomé_Botello
-		remove_minister = 14700081 #Alberto_García_Granados
-		remove_minister = 14700082 #Aureliano_Urrutia
-		remove_minister = 14700083 #Pascual_Orozco
-		remove_minister = 14700084 #Manuel_Mondragón
-		remove_minister = 14700085 #Aureliano_Blanquet
-		remove_minister = 14700086 #José_Refugio_Velasco
-		remove_minister = 14700087 #Miguel_Lebrija
-		remove_minister = 14700088 #Juan_Guillermo_Villasana
+		head_of_state = 55088 #Francisco_Lagos_Cházaro
+
+		head_of_government = 55090 #Francisco_'Pancho'_Villa
+
+		foreign_minister = 55094 #Ignacio_Borrego
+armament_minister = 55098 #Valentín_Gama_y_Cruz
+
+		minister_of_security = 55088 #Francisco_Lagos_Cházaro
+
+		minister_of_intelligence = 55104 #José_Isabel_Robles
+
+		chief_of_staff = 55105 #Francisco_'Pancho'_Villa_
+
+		chief_of_army = 55106 #Francisco_Pacheco
+
+		chief_of_navy = 55106 #Francisco_Pacheco
+		chief_of_air = 55108 #Pedro_Caloca_Larios
+
+		remove_minister = 60032 #Victoriano_Huerta
+remove_minister = 55068 #Félix_Díaz
+remove_minister = 55069 #Francisco_León_de_la_Barra
+remove_minister = 55070 #Carlos_Pereyra
+remove_minister = 55071 #Manuel_Garza_Aldape
+remove_minister = 55072 #Federico_Gamboa
+remove_minister = 55073 #Antonio_de_la_Peña_y_Reyes
+remove_minister = 55074 #Querido_Moheno
+remove_minister = 55075 #José_López_Portillo_y_Rojas
+remove_minister = 55076 #Roberto_Esteva_Ruiz
+remove_minister = 55077 #Francisco_S._Carvajal
+remove_minister = 55078 #Ignacio_Alcocer
+remove_minister = 55079 #Salomé_Botello
+remove_minister = 55080 #Alberto_García_Granados
+remove_minister = 55081 #Aureliano_Urrutia
+remove_minister = 55082 #Pascual_Orozco
+remove_minister = 55083 #Manuel_Mondragón
+remove_minister = 55084 #Aureliano_Blanquet
+remove_minister = 55085 #José_Refugio_Velasco
+remove_minister = 55086 #Miguel_Lebrija
+remove_minister = 55087 #Juan_Guillermo_Villasana
+
 kill_leader = 55009 #Aguilar
 kill_leader = 55010 #Altamirano
 kill_leader = 55011 #Argumedo
@@ -1489,7 +1506,7 @@ kill_leader = 9033 #Arnold
 kill_leader = 55031 #Lojero
 kill_leader = 55032 #Maas_Águila
 
-		kill_leader = 14710026 #Maas_Flores
+		#kill_leader = 14710026 #Maas_Flores
 kill_leader = 9037 #Andringa
 kill_leader = 55034 #Maldonado
 kill_leader = 55035 #Medina_Barrón
@@ -1522,51 +1539,51 @@ kill_leader = 55059 #Yarza
 kill_leader = 55060 #Zozaya
 kill_leader = 55061 #Azueta
 kill_leader = 55062 #Villasana
+remove_minister = 55109 #Venustiano_Carranza
+remove_minister = 55110 #Adolfo_de_la_Huerta_
+remove_minister = 55111 #Álvaro_Obregón
+remove_minister = 55112 #Plutarco_Elías_Calles
+remove_minister = 55097 #Francisco_Escudero
+remove_minister = 55113 #Isidro_Fabela_Alfaro
+remove_minister = 55114 #Jesús_Acuña
+remove_minister = 55115 #Cándido_Aguilar
+remove_minister = 55116 #Alfonso_Siller
+remove_minister = 55117 #Ernesto_Garza_Pérez
+remove_minister = 55118 #Salvador_Diego_Fernández
+remove_minister = 55119 #Hilario_Medina
+remove_minister = 55120 #Juan_Sánchez_Azcona
+remove_minister = 55121 #Miguel_Covarrubias_Acosta
+remove_minister = 55122 #Cutberto_Hidalgo
+remove_minister = 55123 #Alberto_José_Pani
+remove_minister = 55124 #Aarón_Sáenz
+remove_minister = 55125 #Pastor_Rouaix
+remove_minister = 55126 #Jacinto_Blas_Treviño
+remove_minister = 55127 #Rafael_Zubarán_Capmany
+remove_minister = 55128 #Miguel_Alessio_Robles
+remove_minister = 55129 #Manuel_Pérez_Treviño
+remove_minister = 55130 #Luis_Napoleón_Morones
+remove_minister = 55131 #Adolfo_de_la_Huerta
+remove_minister = 55132 #Manuel_Aguirre_Berlanga
+remove_minister = 55133 #Gilberto_Valenzuela
+remove_minister = 55134 #_José_Inocente_Lugo
+remove_minister = 55135 #Enrique_Colunga
+remove_minister = 55136 #Romeo_Ortega
+remove_minister = 55002 #Eduardo_Hay
+remove_minister = 55137 #Ignacio_L._Pesqueira
+remove_minister = 55138 #Jesús_Agustín_Castro
+remove_minister = 55139 #Juan_José_Ríos
+remove_minister = 55140 #Francisco_L._Urquizo
+remove_minister = 55141 #Benjamín_Hill
+remove_minister = 55003 #Enrique_Estrada_Reynoso
+remove_minister = 55142 #Francisco_Roque_Serrano
+remove_minister = 55143 #Joaquín_Amaro_Domínguez
+remove_minister = 55144 #Alberto_Salinas_Carranza
 
-		remove_minister = 14700110 #Venustiano_Carranza
-		remove_minister = 14700111 #Adolfo_de_la_Huerta_
-		remove_minister = 14700112 #Álvaro_Obregón
-		remove_minister = 14700113 #Plutarco_Elías_Calles
-		remove_minister = 14700098 #Francisco_Escudero
-		remove_minister = 14700114 #Isidro_Fabela_Alfaro
-		remove_minister = 14700115 #Jesús_Acuña
-		remove_minister = 14700116 #CÁndido_Aguilar
-		remove_minister = 14700117 #Alfonso_Siller
-		remove_minister = 14700118 #Ernesto_Garza_Pérez
-		remove_minister = 14700119 #Salvador_Diego_FernÁndez
-		remove_minister = 14700120 #Hilario_Medina
-		remove_minister = 14700121 #Juan_SÁnchez_Azcona
-		remove_minister = 14700122 #Miguel_Covarrubias_Acosta
-		remove_minister = 14700123 #Cutberto_Hidalgo
-		remove_minister = 14700124 #Alberto_José_Pani
-		remove_minister = 14700125 #Aarón_SÁenz
-		remove_minister = 14700126 #Pastor_Rouaix
-		remove_minister = 14700127 #Jacinto_Blas_Treviño
-		remove_minister = 14700128 #Rafael_ZubarÁn_Capmany
-		remove_minister = 14700129 #Miguel_Alessio_Robles
-		remove_minister = 14700130 #Manuel_Pérez_Treviño
-		remove_minister = 14700131 #Luis_Napoleón_Morones
-		remove_minister = 14700132 #Adolfo_de_la_Huerta
-		remove_minister = 14700133 #Manuel_Aguirre_Berlanga
-		remove_minister = 14700134 #Gilberto_Valenzuela
-		remove_minister = 14700135 #_José_Inocente_Lugo
-		remove_minister = 14700136 #Enrique_Colunga
-		remove_minister = 14700137 #Romeo_Ortega
-		remove_minister = 14700002 #Eduardo_Hay
-		remove_minister = 14700138 #Ignacio_L._Pesqueira
-		remove_minister = 14700139 #Jesús_Agustín_Castro
-		remove_minister = 14700140 #Juan_José_Ríos
-		remove_minister = 14700141 #Francisco_L._Urquizo
-		remove_minister = 14700142 #Benjamín_Hill
-		remove_minister = 14700003 #Enrique_Estrada_Reynoso
-		remove_minister = 14700143 #Francisco_Roque_Serrano
-		remove_minister = 14700144 #Joaquín_Amaro_Domínguez
-		remove_minister = 14700145 #Alberto_Salinas_Carranza
 kill_leader = 55004 #Obregón
 kill_leader = 55261 #Malpica
+remove_minister = 55091 #Emiliano_Zapata
 
-		remove_minister = 14700092 #Emiliano_Zapata
-		kill_leader = 14710184 #Zapata_Emiliano
+		#kill_leader = 14710184 #Zapata_Emiliano
 		 }
 	}
 
@@ -1693,37 +1710,47 @@ kill_leader = 55261 #Malpica
 		 name = "DH_EVENT_2038614_Option7"
 		 national_unity = -15
 		 neutrality = 23
-		 head_of_state = 14700090 #Eulalio_Gutiérrez_Ortiz
-		head_of_government = 14700092 #Emiliano_Zapata
-		foreign_minister = 14700095 #Ignacio_Borrego
-		armament_minister = 14700099 #Valentín_Gama_y_Cruz
-		minister_of_security = 14700103 #José_Lucio_Blanco_Fuentes
-		minister_of_intelligence = 14700092 #Emiliano_Zapata
-		chief_of_staff = 14700108 #Alfredo_Serratos_Amador
-		chief_of_army = 14700092 #Emiliano_Zapata
-		chief_of_navy = 14700108 #Alfredo_Serratos_Amador
-		chief_of_air = 14700109 #Pedro_Caloca_Larios
-		remove_minister = 14700068 #Victoriano_Huerta
-		remove_minister = 14700069 #Félix_Díaz
-		remove_minister = 14700070 #Francisco_León_de_la_Barra
-		remove_minister = 14700071 #Carlos_Pereyra
-		remove_minister = 14700072 #Manuel_Garza_Aldape
-		remove_minister = 14700073 #Federico_Gamboa
-		remove_minister = 14700074 #Antonio_de_la_Peña_y_Reyes
-		remove_minister = 14700075 #Querido_Moheno
-		remove_minister = 14700076 #José_López_Portillo_y_Rojas
-		remove_minister = 14700077 #Roberto_Esteva_Ruiz
-		remove_minister = 14700078 #Francisco_S._Carvajal
-		remove_minister = 14700079 #Ignacio_Alcocer
-		remove_minister = 14700080 #Salomé_Botello
-		remove_minister = 14700081 #Alberto_García_Granados
-		remove_minister = 14700082 #Aureliano_Urrutia
-		remove_minister = 14700083 #Pascual_Orozco
-		remove_minister = 14700084 #Manuel_Mondragón
-		remove_minister = 14700085 #Aureliano_Blanquet
-		remove_minister = 14700086 #José_Refugio_Velasco
-		remove_minister = 14700087 #Miguel_Lebrija
-		remove_minister = 14700088 #Juan_Guillermo_Villasana
+		head_of_state = 55089 #Eulalio_Gutiérrez_Ortiz
+
+		head_of_government = 55091 #Emiliano_Zapata
+
+		foreign_minister = 55094 #Ignacio_Borrego
+armament_minister = 55098 #Valentín_Gama_y_Cruz
+
+		minister_of_security = 55102 #José_Lucio_Blanco_Fuentes
+
+		minister_of_intelligence = 55091 #Emiliano_Zapata
+
+		chief_of_staff = 55107 #Alfredo_Serratos_Amador
+
+		chief_of_army = 55091 #Emiliano_Zapata
+
+		chief_of_navy = 55107 #Alfredo_Serratos_Amador
+
+		chief_of_air = 55108 #Pedro_Caloca_Larios
+
+		#remove_minister = 14700068 #Victoriano_Huerta
+remove_minister = 55068 #Félix_Díaz
+remove_minister = 55069 #Francisco_León_de_la_Barra
+remove_minister = 55070 #Carlos_Pereyra
+remove_minister = 55071 #Manuel_Garza_Aldape
+remove_minister = 55072 #Federico_Gamboa
+remove_minister = 55073 #Antonio_de_la_Peña_y_Reyes
+remove_minister = 55074 #Querido_Moheno
+remove_minister = 55075 #José_López_Portillo_y_Rojas
+remove_minister = 55076 #Roberto_Esteva_Ruiz
+remove_minister = 55077 #Francisco_S._Carvajal
+remove_minister = 55078 #Ignacio_Alcocer
+remove_minister = 55079 #Salomé_Botello
+remove_minister = 55080 #Alberto_García_Granados
+remove_minister = 55081 #Aureliano_Urrutia
+remove_minister = 55082 #Pascual_Orozco
+remove_minister = 55083 #Manuel_Mondragón
+remove_minister = 55084 #Aureliano_Blanquet
+remove_minister = 55085 #José_Refugio_Velasco
+remove_minister = 55086 #Miguel_Lebrija
+remove_minister = 55087 #Juan_Guillermo_Villasana
+
 kill_leader = 55009 #Aguilar
 kill_leader = 55010 #Altamirano
 kill_leader = 55011 #Argumedo
@@ -1749,7 +1776,7 @@ kill_leader = 55029 #Jiménez_Castro
 kill_leader = 9033 #Arnold
 kill_leader = 55031 #Lojero
 kill_leader = 55032 #Maas_Águila
-		kill_leader = 14710026 #Maas_Flores
+		#kill_leader = 14710026 #Maas_Flores
 kill_leader = 9037 #Andringa
 kill_leader = 55034 #Maldonado
 kill_leader = 55035 #Medina_Barrón
@@ -1782,47 +1809,47 @@ kill_leader = 55059 #Yarza
 kill_leader = 55060 #Zozaya
 kill_leader = 55061 #Azueta
 kill_leader = 55062 #Villasana
+remove_minister = 55109 #Venustiano_Carranza
+remove_minister = 55110 #Adolfo_de_la_Huerta_
+remove_minister = 55111 #Álvaro_Obregón
+remove_minister = 55112 #Plutarco_Elías_Calles
+remove_minister = 55097 #Francisco_Escudero
+remove_minister = 55113 #Isidro_Fabela_Alfaro
+remove_minister = 55114 #Jesús_Acuña
+remove_minister = 55115 #Cándido_Aguilar
+remove_minister = 55116 #Alfonso_Siller
+remove_minister = 55117 #Ernesto_Garza_Pérez
+remove_minister = 55118 #Salvador_Diego_Fernández
+remove_minister = 55119 #Hilario_Medina
+remove_minister = 55120 #Juan_Sánchez_Azcona
+remove_minister = 55121 #Miguel_Covarrubias_Acosta
+remove_minister = 55122 #Cutberto_Hidalgo
+remove_minister = 55123 #Alberto_José_Pani
+remove_minister = 55124 #Aarón_Sáenz
+remove_minister = 55125 #Pastor_Rouaix
+remove_minister = 55126 #Jacinto_Blas_Treviño
+remove_minister = 55127 #Rafael_Zubarán_Capmany
+remove_minister = 55128 #Miguel_Alessio_Robles
+remove_minister = 55129 #Manuel_Pérez_Treviño
+remove_minister = 55130 #Luis_Napoleón_Morones
+remove_minister = 55131 #Adolfo_de_la_Huerta
+remove_minister = 55132 #Manuel_Aguirre_Berlanga
+remove_minister = 55133 #Gilberto_Valenzuela
+remove_minister = 55134 #_José_Inocente_Lugo
+remove_minister = 55135 #Enrique_Colunga
+remove_minister = 55136 #Romeo_Ortega
+remove_minister = 55002 #Eduardo_Hay
+remove_minister = 55137 #Ignacio_L._Pesqueira
+remove_minister = 55138 #Jesús_Agustín_Castro
+remove_minister = 55139 #Juan_José_Ríos
+remove_minister = 55140 #Francisco_L._Urquizo
+remove_minister = 55141 #Benjamín_Hill
+remove_minister = 55003 #Enrique_Estrada_Reynoso
+remove_minister = 55142 #Francisco_Roque_Serrano
+remove_minister = 55143 #Joaquín_Amaro_Domínguez
+remove_minister = 55144 #Alberto_Salinas_Carranza
+remove_minister = 55090 #Francisco_'Pancho'_Villa
 
-		remove_minister = 14700110 #Venustiano_Carranza
-		remove_minister = 14700111 #Adolfo_de_la_Huerta_
-		remove_minister = 14700112 #Álvaro_Obregón
-		remove_minister = 14700113 #Plutarco_Elías_Calles
-		remove_minister = 14700098 #Francisco_Escudero
-		remove_minister = 14700114 #Isidro_Fabela_Alfaro
-		remove_minister = 14700115 #Jesús_Acuña
-		remove_minister = 14700116 #CÁndido_Aguilar
-		remove_minister = 14700117 #Alfonso_Siller
-		remove_minister = 14700118 #Ernesto_Garza_Pérez
-		remove_minister = 14700119 #Salvador_Diego_FernÁndez
-		remove_minister = 14700120 #Hilario_Medina
-		remove_minister = 14700121 #Juan_SÁnchez_Azcona
-		remove_minister = 14700122 #Miguel_Covarrubias_Acosta
-		remove_minister = 14700123 #Cutberto_Hidalgo
-		remove_minister = 14700124 #Alberto_José_Pani
-		remove_minister = 14700125 #Aarón_SÁenz
-		remove_minister = 14700126 #Pastor_Rouaix
-		remove_minister = 14700127 #Jacinto_Blas_Treviño
-		remove_minister = 14700128 #Rafael_ZubarÁn_Capmany
-		remove_minister = 14700129 #Miguel_Alessio_Robles
-		remove_minister = 14700130 #Manuel_Pérez_Treviño
-		remove_minister = 14700131 #Luis_Napoleón_Morones
-		remove_minister = 14700132 #Adolfo_de_la_Huerta
-		remove_minister = 14700133 #Manuel_Aguirre_Berlanga
-		remove_minister = 14700134 #Gilberto_Valenzuela
-		remove_minister = 14700135 #_José_Inocente_Lugo
-		remove_minister = 14700136 #Enrique_Colunga
-		remove_minister = 14700137 #Romeo_Ortega
-		remove_minister = 14700002 #Eduardo_Hay
-		remove_minister = 14700138 #Ignacio_L._Pesqueira
-		remove_minister = 14700139 #Jesús_Agustín_Castro
-		remove_minister = 14700140 #Juan_José_Ríos
-		remove_minister = 14700141 #Francisco_L._Urquizo
-		remove_minister = 14700142 #Benjamín_Hill
-		remove_minister = 14700003 #Enrique_Estrada_Reynoso
-		remove_minister = 14700143 #Francisco_Roque_Serrano
-		remove_minister = 14700144 #Joaquín_Amaro_Domínguez
-		remove_minister = 14700145 #Alberto_Salinas_Carranza
-		remove_minister = 14700091 #Francisco_'Pancho'_Villa
 kill_leader = 55004 #Obregón
 kill_leader = 55261 #Malpica
 kill_leader = 55129 #Sánchez
@@ -2123,7 +2150,8 @@ kill_leader = 60002 #Zapata,_Emiliano
 	trigger = {
 		 war = no
 		 has_global_flag = 2038609_EVENT_DONE#
-		 head_of_state = 14700089 #Francisco_Lagos_ChÁzaro
+		 head_of_state = 55088 #Francisco_Lagos_Cházaro
+
 		not = {
 			 exists = MXR
 			 }
@@ -2139,20 +2167,27 @@ kill_leader = 60002 #Zapata,_Emiliano
 			 factor = 95
 			 }
 		 dissent = 5
-		 head_of_state = 14700112 #Álvaro_Obregón
-		head_of_government = 14700112 #Álvaro_Obregón
-		foreign_minister = 14700123 #Cutberto_Hidalgo
-		armament_minister = 14700128 #Rafael_ZubarÁn_Capmany
-		minister_of_security = 14700113 #Plutarco_Elías_Calles
-		minister_of_intelligence = 14700127 #Jacinto_Blas_Treviño
-		chief_of_staff = 14700142 #Benjamín_Hill
-		chief_of_army = 14700142 #Benjamín_Hill
-		chief_of_navy = 14700142 #Benjamín_Hill
-		remove_minister = 14700110 #Venustiano_Carranza
-kill_leader = 55253 #Murguía_López_de_Lara
+		head_of_state = 55111 #Álvaro_Obregón
 
-		remove_minister = 14700133 #Manuel_Aguirre_Berlanga
-		remove_minister = 14700141 #Francisco_L._Urquizo
+		head_of_government = 55111 #Álvaro_Obregón
+
+		foreign_minister = 55122 #Cutberto_Hidalgo
+armament_minister = 55127 #Rafael_Zubarán_Capmany
+
+		minister_of_security = 55112 #Plutarco_Elías_Calles
+
+		minister_of_intelligence = 55126 #Jacinto_Blas_Treviño
+
+		chief_of_staff = 55141 #Benjamín_Hill
+
+		chief_of_army = 55141 #Benjamín_Hill
+		chief_of_navy = 55141 #Benjamín_Hill
+remove_minister = 55109 #Venustiano_Carranza
+
+kill_leader = 55253 #Murguía_López_de_Lara
+remove_minister = 55132 #Manuel_Aguirre_Berlanga
+remove_minister = 55140 #Francisco_L._Urquizo
+
 		 }
 	option = {
 		 ai_chance = {
@@ -2160,27 +2195,35 @@ kill_leader = 55253 #Murguía_López_de_Lara
 			 }
 		 name = "DH_EVENT_2038620_Option8"
 		 dissent = 5
-		 head_of_state = 14700146 #Ignacio_Bonillas_Frajio
-		head_of_government = 14700146 #Ignacio_Bonillas_Frajio
-		minister_of_security = 14700133 #Manuel_Aguirre_Berlanga
-		chief_of_staff = 14700141 #Francisco_L._Urquizo
-		chief_of_army = 14700141 #Francisco_L._Urquizo
-		chief_of_navy = 14700141 #Francisco_L._Urquizo
-		remove_minister = 14700112 #Álvaro_Obregón
+		head_of_state = 55145 #Ignacio_Bonillas_Frajio
+
+		head_of_government = 55145 #Ignacio_Bonillas_Frajio
+
+		minister_of_security = 55132 #Manuel_Aguirre_Berlanga
+
+		chief_of_staff = 55140 #Francisco_L._Urquizo
+
+		chief_of_army = 55140 #Francisco_L._Urquizo
+		chief_of_navy = 55140 #Francisco_L._Urquizo
+remove_minister = 55111 #Álvaro_Obregón
+
 kill_leader = 55004 #Obregón
 
-		remove_minister = 14700111 #Adolfo_de_la_Huerta_
+remove_minister = 55110 #Adolfo_de_la_Huerta_
+
 kill_leader = 55243 #Herrero_Hernández
 
-		remove_minister = 14700113 #Plutarco_Elías_Calles
-		remove_minister = 14700142 #Benjamín_Hill
+remove_minister = 55112 #Plutarco_Elías_Calles
+remove_minister = 55141 #Benjamín_Hill
+
 kill_leader = 55217 #Calles
 kill_leader = 55244 #Hill
 kill_leader = 55001 #Flores,_M
 kill_leader = 55256 #Piña
 kill_leader = 55225 #Cruz
 
-		remove_minister = 14700143 #Francisco_Roque_Serrano
+remove_minister = 55142 #Francisco_Roque_Serrano
+
 kill_leader = 55104 #Méndez
 
 		 }
