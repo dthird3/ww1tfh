@@ -54,7 +54,7 @@ diplomatic_decisions = {
 		potential = {
 			 tag = USA
 			 MXR = { has_country_flag = "zapata_rebels" }
-			 MXR = { head_of_state = 15100001 }                 # Madero is Head of State
+			 MXR = { head_of_state = 60001 }                 # Madero is Head of State
 			 NOT = { USA = { has_country_flag = "madero_coup" }	}
 			 }
 		allow = {
@@ -129,7 +129,7 @@ diplomatic_decisions = {
 #			MXR = { has_country_flag = "Huerta_Coup" }
 			exists = MXR
 			exists = MXC
-			MXR = { head_of_state = 15100032 }              # Huerta is Head of State
+			MXR = { head_of_state = 60032 }              # Huerta is Head of State
 			USA = { not = { has_country_flag = Huerta_embargoed } }
 		}
 		
@@ -159,7 +159,7 @@ diplomatic_decisions = {
 		allow = {
 			USA = { has_country_flag = Niagara_Peace }
 		or = { 
-			not = { MXR = { head_of_state = 15100032 } }        # Huerta is NOT Head of State
+			not = { MXR = { head_of_state = 60032 } }        # Huerta is NOT Head of State
 			not = { exists = MXR }
 		}
 		}

@@ -1,16 +1,13 @@
 capital = 1964
 government = constitutional_monarchy
 ideology = social_conservative
-head_of_state = 12500309 #Edward_VII
-head_of_government = 12500115 #Herbert_Henry_Asquith
-foreign_minister = 12500105 #Edward_Grey
-armament_minister = 10291 #
-minister_of_security = 10312 #
-minister_of_intelligence = 12500118 #George_MacDonogh
-chief_of_staff = 10243 #
-chief_of_army = 10243 #
-chief_of_navy = 12500099 #Louis_Alexander_Mountbatten
-chief_of_air = 12500081 #David_Henderson
+head_of_state = 28309 #Edward_VII
+head_of_government = 28115 #Herbert_Henry_Asquith
+foreign_minister = 28105 #Edward_Grey
+minister_of_intelligence = 28118 #George_MacDonogh
+chief_of_navy = 28099 #Louis_Alexander_Mountbatten
+chief_of_air = 28081 #David_Henderson
+
 
 join_faction = allies
 alignment = { x = 0 y = -146 }
@@ -325,17 +322,20 @@ aerial_photography = 0
 scout_pilot_training = 0
 strategic_air_command = 0
 1910.5.31 = { set_country_flag = saf_release }
-1910.6.1 = { head_of_state = 12500001 } # George V
+1910.6.1 = { 
+head_of_state = 28001 #George_V
+}
 1911.1.31 = {
-head_of_government =12500115 #Herbert_Henry_Asquith
-foreign_minister =12500105 #Edward_Grey
-armament_minister =12500224 #David_Lloyd_George
-minister_of_security =12500130 #Reginald_McKenna
-minister_of_intelligence =12500118 #George_MacDonogh
-chief_of_staff =12500088 #Charles_Douglas
-chief_of_army =12500088 #Charles_Douglas
-chief_of_navy =12500099 #Louis_Alexander_Mountbatten
-chief_of_air =12500081 #David_Henderson
+head_of_government = 28115 #Herbert_Henry_Asquith
+foreign_minister = 28105 #Edward_Grey
+armament_minister = 28224 #David_Lloyd_George
+minister_of_security = 28130 #Reginald_McKenna
+minister_of_intelligence = 28118 #George_MacDonogh
+chief_of_staff = 28088 #Charles_Douglas
+chief_of_army = 28088 #Charles_Douglas
+chief_of_navy = 28099 #Louis_Alexander_Mountbatten
+chief_of_air = 28081 #David_Henderson
+
 
 }
 1912.3.3 = { set_country_flag = titanic }
@@ -617,6 +617,7 @@ strategic_air_command = 0
 }
 1914.1.1 = { oob = "ENG_1914.txt" }
 1916.12.7 = {
-head_of_government =12500224 #David_Lloyd_George
+head_of_government = 28224 #David_Lloyd_George
+
 
 }

@@ -1171,7 +1171,8 @@
 			 country_event = 92 #Venizelos_leaves_Greek_government
 			}
 		 clr_global_flag = venizelos_incabinet
-		 head_of_government = 13200090 #Dimitrios_Gounaris
+head_of_government = 35090 #Dimitrios_Gounaris
+
 		}
 	option = {
 		 ai_chance = {
@@ -1203,7 +1204,8 @@
 	trigger = {
 		 has_global_flag = 2019505_EVENT_DONE
 		 not = {
-			 head_of_government = 13200008 #Eleftherios_Venizelos
+head_of_government = 35008 #Eleftherios_Venizelos
+
 			has_global_flag = venizelos_incabinet
 			 has_global_flag = 2019506_EVENT_DONE
 			 GRE = {
@@ -1291,7 +1293,8 @@
 			 country_event = 93 #Venizelos_is_back
 			}
 		 set_global_flag = venizelos_incabinet
-		 head_of_government = 13200008 #Eleftherios_Venizelos
+head_of_government = 35008 #Eleftherios_Venizelos
+
 		set_global_flag = 2019510_EVENT_DONE
 		 }
 	}
@@ -1471,7 +1474,8 @@
 			 }
 		 dissent = 1
 		 clr_global_flag = venizelos_incabinet
-		 head_of_government = 13200103 #Spiridon_Lambros
+		 head_of_government = 35103 #Spiridon_Lambros
+
 		FRA = {
 			 country_event = 92 #Venizelos_leaves_Greek_government
 			}
@@ -1683,7 +1687,8 @@
 		 }
 	trigger = {
 		 has_global_flag = 2019517_EVENT_DONE
-		 head_of_government = 13200103 #Spiridon_Lambros
+		 head_of_government = 35103 #Spiridon_Lambros
+
 		4720 = {#Salonica
 			controlled_by = ENG
 			 }
@@ -1815,8 +1820,10 @@
 		 join_faction = allies
 		 clr_global_flag = entente_hostility
 		 clr_global_flag = greece_mobilized
-		 head_of_state = 13200110 #Alexandros_I
-		head_of_government = 13200008 #Eleftherios_Venizelos
+head_of_state = 35110 #Alexandros_I
+
+		head_of_government = 35008 #Eleftherios_Venizelos
+
 		relation = {
 			 who = FRA
 			 value = 50

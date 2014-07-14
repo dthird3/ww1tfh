@@ -366,7 +366,7 @@
 					 }
 				 }
 			 THIS = {
-				 head_of_state = 17100074 #Leon_Trotsky
+				 head_of_state = 85074 #Leon_Trotsky
 				}
 			 }
 		 random_country = {
@@ -374,12 +374,16 @@
 				 year = 1919
 				 }
 			 THIS = {
-				 head_of_state = 17100001 #Mikhail_I._Kalinin
+				 head_of_state = 85001 #Mikhail_I._Kalinin
+
 				}
 			 }
-		 head_of_government = 17100082 #Vladimir_Lenin
-		foreign_minister = 17100074 #Leon_Trotsky
-		chief_of_army = 17100075 #Nikolai_Krylenko
+		 head_of_government = 85082 #Vladimir_Lenin
+
+		foreign_minister = 85074 #Leon_Trotsky
+
+		chief_of_army = 85075 #Nikolai_Krylenko
+
 		join_faction = comintern
 		 SOV = {
 			 country_event = 378 #Dissolution_of_the_Constituent_Assembly
@@ -669,7 +673,8 @@
 	trigger = {
 		 has_global_flag = 2007509_EVENT_DONE
 		 has_global_flag = 2007517_EVENT_DONE
-		 head_of_government = 17100082 #Vladimir_Lenin
+		 head_of_government = 85082 #Vladimir_Lenin
+
 		tag = SOV
 		 date = 1918.1.1
 		 not = {
@@ -742,7 +747,8 @@
 	trigger = {
 		 has_global_flag = 2007511_EVENT_DONE
 		 or = {
-			 minister_of_intelligence = 17100083 #Felix_Dzerzhinsky
+			 minister_of_intelligence = 85083 #Felix_Dzerzhinsky
+
 			}
 		 not = {
 			 dissent = 15
@@ -1029,11 +1035,14 @@
 		 random_country = {
 			 limit = {
 				 tag = THIS
-				 head_of_state = 17100084 #Yakov_Sverdlov
+				 head_of_state = 85084 #Yakov_Sverdlov
+
 				}
-			 head_of_state = 17100001 #Mikhail_I._Kalinin
+			 head_of_state = 85001 #Mikhail_I._Kalinin
+
 			}
-		 remove_minister = 17100084 #Yakov_Sverdlov
+remove_minister = 85084 #Yakov_Sverdlov
+
 		}
 	}
 
@@ -1055,7 +1064,7 @@
 		 days = 60
 		 }
 	trigger = {
-		 minister_alive = 17100082 #Vladimir_Lenin
+		 minister_alive = 85082 #Vladimir_Lenin
 		or = {
 			 and = {
 				 year = 1923
@@ -1070,8 +1079,10 @@
 		 }
 	option = {
 		 name = "DH_EVENT_2007519_Option7"
-		 head_of_government = 17100008 #Kliment_Y._Voroshilov
-		remove_minister = 17100082 #Vladimir_Lenin
+		 head_of_government = 85008 #Kliment_Y._Voroshilov
+
+remove_minister = 85082 #Vladimir_Lenin
+
 		}
 	}
 
