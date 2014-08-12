@@ -16,7 +16,7 @@ neutrality = 0
 national_unity = 70
 
 
-oob = "FIN_1936.txt"
+1918.1.1 = {oob = "scenarios/finnish_civil_war/FIN_oob.txt"}
 
 
 infantry_theory = 2.5
@@ -128,103 +128,8 @@ training_laws = basic_training
 press_laws = free_press
 industrial_policy_laws = mixed_industry
 education_investment_law = medium_large_education_investment
-economic_law = full_civilian_economy
-conscription_law = volunteer_army
+economic_law = basic_mobilization
+conscription_law = one_year_draft
 civil_law = open_society
 
-1938.9.1 = {
-	head_of_state = 29043
-	head_of_government = 29054
-	foreign_minister = 29067
-	armament_minister = 29086
-	minister_of_security = 29106
-	minister_of_intelligence = 29005
-	chief_of_staff = 29138
-	chief_of_army = 29007
-	chief_of_navy = 29009
-	chief_of_air = 29010
-	oob = "FIN_1938.txt"
-}
-1939.9.1 = {
-	head_of_state = 29043
-	head_of_government = 29039
-	foreign_minister = 29068
-	armament_minister = 29093
-	minister_of_security = 29051
-	minister_of_intelligence = 29009
-	chief_of_staff = 29008
-	chief_of_army = 29007
-	chief_of_navy = 29148
-	chief_of_air = 29155
-	infantry_warfare = 2
-	assault_concentration = 2
-	mass_assault = 2
-	
-}
-1939.11.30 = {
-	neutrality = 30
-	economic_law = full_mobilisation
-	conscription_law = service_by_requirement
-	join_faction = axis
-	oob = "scenarios/winter_war/FIN_oob.txt"
-}
-1940.5.10 = {
-	head_of_state = 29043
-	head_of_government = 29039
-	foreign_minister = 29068
-	armament_minister = 29093
-	minister_of_security = 29051
-	minister_of_intelligence = 29009
-	chief_of_staff = 29008
-	chief_of_army = 29007
-	chief_of_navy = 29148
-	chief_of_air = 29155
-	oob = "FIN_1940.txt"
-	infantry_warfare = 2
-	assault_concentration = 2
-	mass_assault = 2
-}
-1941.6.22 = {
-	head_of_state = 29039
-	head_of_government = 29059
-	foreign_minister = 29074
-	armament_minister = 29035
-	minister_of_security = 29107
-	minister_of_intelligence = 29123
-	chief_of_staff = 29034
-	chief_of_army = 29034
-	chief_of_navy = 29148
-	chief_of_air = 29153
-	oob = "FIN_1941.txt"
-	infantry_warfare = 3
-	mass_assault = 3
-	peoples_army = 2
-}
-# 1941.6.25 = {
-1941.6.20 = {
-	join_faction = axis
-	neutrality = 0
-} # Co-belligerent
-1941.12.7 = { 
-	oob = "FIN_DayOfInfamy.txt"
-	collaboration_government  = SOV
-}
-1943.2.1 = {
-	oob = "FIN_TheTideHasTurned.txt"
-	blitzkrieg = 2
-	mechanized_offensive = 2
-	central_planning = 2	
-}
-1944.6.20 = {
-	head_of_state = 29039
-	head_of_government = 29064
-	foreign_minister = 29075
-	armament_minister = 29098
-	minister_of_security = 29062
-	minister_of_intelligence = 29097
-	chief_of_staff = 29034
-	chief_of_army = 29034
-	chief_of_navy = 29150
-	chief_of_air = 29155
-	oob = "FIN_1944.txt"
-}
+

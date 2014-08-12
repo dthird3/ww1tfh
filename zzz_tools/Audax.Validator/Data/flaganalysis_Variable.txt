@@ -1,9 +1,16 @@
 Flag Analysis for Variable
 
 Summary
-Warnings: 0
-Total flags: 0 in 0 names
+Warnings: 1
+Total flags: 4 in 2 names
 
+Warnings
+sovdelay
+	set|cng: <mod>\scenarios\polish_bolshevik\events.txt (Line 58, column 5) [change_variable = {   which = SovDelay  value = +1 }]
 
 
 Summary (excluding warnings)
+poldelay
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 514, column 5) [check_variable = {   which = PolDelay  value = 4 }]
+	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 482, column 5) [set_variable = {   which = PolDelay  value = 1 }]
+	set|cng: <mod>\scenarios\polish_bolshevik\events.txt (Line 53, column 5) [change_variable = {   which = PolDelay  value = +1 }]
