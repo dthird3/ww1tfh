@@ -1,26 +1,99 @@
-31001 = { 
-	name = "von Gerich"
+31001100 = { 
+	name = "Mannerheim" # ylipäällikkö
+	type = land 
+	max_skill = 6 
+	skill = 4 
+	loyalty = 5.00 
+	picture = F100 
+	country = FIN 
+	add_trait = winter_specialist 
+	add_trait = defensive_doctrine
+	 history = {
+		 1918.1.1 = { rank = 4 }
+		 1918.1.1 = { rank = 4 }
+		 1932.1.1 = { rank = 4 }
+		 1932.1.1 = { rank = 4 }
+		 1930.1.1 = { rank = 4 }
+		}
+	}
+
+31001101 = { 
+	name = "Löfström" #Itäarmeija
 	type = land 
 	max_skill = 5 
 	skill = 2 
 	loyalty = 5.00 
-	picture = 8148 
+	picture = F101 
 	country = FIN 
 	add_trait = winter_specialist 
 	 history = {
-		 1918.1.1 = { rank = 1 }
-		 1918.1.1 = { rank = 1 }
-		 1932.1.1 = { rank = 2 }
+		 1918.1.1 = { rank = 3 }
+		 1918.1.1 = { rank = 3 }
+		 1932.1.1 = { rank = 3 }
+		 1932.1.1 = { rank = 3 }
+		 1930.1.1 = { rank = 3 }
+		}
+	}
+
+31001102 = { 
+	name = "Theslöf" #High rank officer
+	type = land 
+	max_skill = 5 
+	skill = 1 
+	loyalty = 5.00 
+	picture = 442 
+	country = FIN 
+	add_trait = commando
+	 history = {
+		 1918.1.1 = { rank = 3 }
+		 1918.1.1 = { rank = 3 }
+		 1932.1.1 = { rank = 3 }
+		 1932.1.1 = { rank = 3 }
+		 1930.1.1 = { rank = 3 }
+		}
+	}
+	
+31001103 = { 
+	name = "Mexmontan" #High rank officer
+	type = land 
+	max_skill = 5 
+	skill = 2 
+	loyalty = 5.00 
+	picture = F113 
+	country = FIN 
+	 history = {
+		 1918.1.1 = { rank = 3 }
+		 1918.1.1 = { rank = 3 }
+		 1932.1.1 = { rank = 3 }
 		 1932.1.1 = { rank = 3 }
 		 1930.1.1 = { rank = 0 }
 		}
 	}
 
-31002 = { 
-	name = "Mexmontan"
+31001104 = { 
+	name = "Wetzer" #Hämeen ryhmä
 	type = land 
 	max_skill = 5 
 	skill = 2 
+	loyalty = 5.00 
+	picture = F104 
+	country = FIN 
+	add_trait = fortress_buster
+	add_trait = winter_specialist
+	 history = {
+		 1918.1.1 = { rank = 3 }
+		 1918.1.1 = { rank = 3 }
+		 1932.1.1 = { rank = 3 }
+		 1932.1.1 = { rank = 3 }
+		 1930.1.1 = { rank = 0 }
+		}
+	}
+	
+31001105 = { 
+	name = "von Gerich" #Pohjanmaan rykmentit
+	type = land 
+	max_skill = 5 
+	skill = 1 
 	loyalty = 5.00 
 	picture = 441 
 	country = FIN 
@@ -34,13 +107,66 @@
 		}
 	}
 
-31003 = { 
-	name = "Theslöf"
+31001106 = { 
+	name = "Linder" #Satakunnan ryhmä
+	type = land 
+	max_skill = 6 
+	skill = 2 
+	loyalty = 5.00 
+	picture = F106 
+	country = FIN 
+	add_trait = winter_specialist 
+	 history = {
+		 1918.1.1 = { rank = 2 }
+		 1918.1.1 = { rank = 2 }
+		 1932.1.1 = { rank = 2 }
+		 1932.1.1 = { rank = 3 }
+		 1930.1.1 = { rank = 0 }
+		}
+	}
+	
+31001107 = { 
+	name = "Sihvo" #Karjalan ryhmä
+	type = land 
+	max_skill = 7 
+	skill = 3 
+	loyalty = 5.00 
+	picture = F107 
+	country = FIN 
+	add_trait = winter_specialist	
+	 history = {
+		 1918.1.1 = { rank = 2 }
+		 1918.1.1 = { rank = 2 }
+		 1932.1.1 = { rank = 2 }
+		 1932.1.1 = { rank = 3 }
+		 1930.1.1 = { rank = 0 }
+		}
+	}
+
+31001108 = { 
+	name = "von Adlerflug" #Savon ryhmä
 	type = land 
 	max_skill = 5 
 	skill = 2 
 	loyalty = 5.00 
-	picture = 442 
+	picture = F108
+	country = FIN  
+	 history = {
+		 1918.1.1 = { rank = 2 }
+		 1918.1.1 = { rank = 2 }
+		 1932.1.1 = { rank = 2 }
+		 1932.1.1 = { rank = 3 }
+		 1930.1.1 = { rank = 0 }
+		}
+	}
+	
+31001109 = { 
+	name = "Elfvengren" #Karjalan divisioona
+	type = land 
+	max_skill = 5 
+	skill = 2 
+	loyalty = 5.00 
+	picture = F109 
 	country = FIN 
 	add_trait = winter_specialist 
 	 history = {
@@ -51,4 +177,59 @@
 		 1930.1.1 = { rank = 0 }
 		}
 	}
+
+310011010 = { 
+	name = "Heiskanen"
+	type = land 
+	max_skill = 6 
+	skill = 2 
+	loyalty = 5.00 
+	picture = F110
+	country = FIN 
+	add_trait = winter_specialist 
+	 history = {
+		 1918.1.1 = { rank = 1 }
+		 1918.1.1 = { rank = 1 }
+		 1932.1.1 = { rank = 2 }
+		 1932.1.1 = { rank = 3 }
+		 1930.1.1 = { rank = 0 }
+		}
+	}
+	
+310011011 = { 
+	name = "Hjalmarson"
+	type = land 
+	max_skill = 5 
+	skill = 2 
+	loyalty = 5.00 
+	picture = F111 
+	country = FIN 
+	add_trait = trickster 
+	 history = {
+		 1918.1.1 = { rank = 1 }
+		 1918.1.1 = { rank = 1 }
+		 1932.1.1 = { rank = 2 }
+		 1932.1.1 = { rank = 3 }
+		 1930.1.1 = { rank = 0 }
+		}
+	}
+
+310011012 = { 
+	name = "Ståhlberg"
+	type = land 
+	max_skill = 4 
+	skill = 1 
+	loyalty = 5.00 
+	picture = F112
+	country = FIN 
+	 history = {
+		 1918.1.1 = { rank = 1 }
+		 1918.1.1 = { rank = 1 }
+		 1932.1.1 = { rank = 2 }
+		 1932.1.1 = { rank = 3 }
+		 1930.1.1 = { rank = 0 }
+		}
+	}
+	
+
 

@@ -1,64 +1,69 @@
 Flag Analysis for CountryFlag
 
 Summary
-Warnings: 22
-Total flags: 32 in 22 names
+Warnings: 2
+Total flags: 45 in 14 names
 
 Warnings
-alb_peace
-	set|set: <mod>\history\countries\TUR - Turkey.txt (Line 328, column 14) [set_country_flag = alb_peace]
-ban_nic
-	set|set: <mod>\history\countries\USA - USA.txt (Line 332, column 14) [set_country_flag = ban_nic]
-cretegreek
-	set|set: <mod>\history\countries\GRE - Greece.txt (Line 336, column 1) [set_country_flag = cretegreek]
-diaz_crisis_over
-	set|set: <mod>\history\countries\USA - USA.txt (Line 336, column 14) [set_country_flag = "diaz_crisis_over"]
-first_balkan_cleanup_done
-	set|set: <mod>\history\countries\SER - Serbia.txt (Line 340, column 1) [set_country_flag = first_balkan_cleanup_done]
-first_balkan_done
-	set|set: <mod>\history\countries\SER - Serbia.txt (Line 337, column 1) [set_country_flag = first_balkan_done]
-first_balkan_war
-	set|set: <mod>\history\countries\SER - Serbia.txt (Line 333, column 1) [set_country_flag = first_balkan_war]
-huerta_coup
-	set|set: <mod>\history\countries\MXR - MexicoRebels.txt (Line 613, column 5) [set_country_flag = "Huerta_Coup"]
-jap_kor
-	set|set: <mod>\history\countries\JAP - Japan.txt (Line 328, column 1) [set_country_flag = jap_kor]
-king_death_meiji
-	set|set: <mod>\history\countries\JAP - Japan.txt (Line 332, column 1) [set_country_flag = king_death_meiji]
-league_formed
-	set|set: <mod>\history\countries\SER - Serbia.txt (Line 329, column 1) [set_country_flag = league_formed]
-libya_peace
-	set|set: <mod>\history\countries\ITA - Italy.txt (Line 330, column 15) [set_country_flag = libya_peace]
-libya_war
-	set|set: <mod>\history\countries\ITA - Italy.txt (Line 329, column 15) [set_country_flag = libya_war]
-lose_balkans
-	set|set: <mod>\history\countries\BUL - Bulgaria.txt (Line 333, column 1) [set_country_flag = lose_balkans]
-panamerican
-	set|set: <mod>\history\countries\USA - USA.txt (Line 330, column 14) [set_country_flag = panamerican]
-room_int
-	set|set: <mod>\history\countries\ROM - Romania.txt (Line 329, column 1) [set_country_flag = room_int]
-saf_release
-	set|set: <mod>\history\countries\ENG - United Kingdom.txt (Line 327, column 15) [set_country_flag = saf_release]
-second_balkan_started
-	set|set: <mod>\history\countries\BUL - Bulgaria.txt (Line 329, column 1) [set_country_flag = second_balkan_started]
-tampico
-	set|set: <mod>\history\countries\MXR - MexicoRebels.txt (Line 614, column 5) [set_country_flag = "Tampico"]
-titanic
-	set|set: <mod>\history\countries\ENG - United Kingdom.txt (Line 341, column 14) [set_country_flag = titanic]
-turr_inv
-	set|set: <mod>\history\countries\TUR - Turkey.txt (Line 329, column 1) [set_country_flag = turr_inv]
-yuanshikai
-	set|set: <mod>\history\countries\CHC - Communist China.txt (Line 332, column 1) [set_country_flag = yuanshikai]
-	set|set: <mod>\history\countries\CHI - Nationalist China.txt (Line 332, column 1) [set_country_flag = yuanshikai]
-	set|set: <mod>\history\countries\FEC - Fengtian.txt (Line 332, column 1) [set_country_flag = yuanshikai]
-	set|set: <mod>\history\countries\GDC - Guangdong.txt (Line 332, column 1) [set_country_flag = yuanshikai]
-	set|set: <mod>\history\countries\GMJ - Guominjun.txt (Line 332, column 1) [set_country_flag = yuanshikai]
-	set|set: <mod>\history\countries\GZC - Guizhou.txt (Line 332, column 1) [set_country_flag = yuanshikai]
-	set|set: <mod>\history\countries\HNC - Hunan.txt (Line 332, column 1) [set_country_flag = yuanshikai]
-	set|set: <mod>\history\countries\PRC - Provisional ROC.txt (Line 322, column 1) [set_country_flag = yuanshikai]
-	set|set: <mod>\history\countries\ROC - ROC.txt (Line 330, column 1) [set_country_flag = yuanshikai]
-	set|set: <mod>\history\countries\SCC - Sichuan.txt (Line 332, column 1) [set_country_flag = yuanshikai]
-	set|set: <mod>\history\countries\ZHC - Zhili.txt (Line 332, column 1) [set_country_flag = yuanshikai]
+danzig_stikes
+	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 1437, column 5) [set_country_flag = Danzig_stikes]
+disorganized_soviets
+	set|clr: <mod>\scenarios\finnish_civil_war\events.txt (Line 41, column 4) [clr_country_flag = disorganized_soviets]
 
 
 Summary (excluding warnings)
+bolshevik_ukraine
+	set|clr: <mod>\scenarios\polish_bolshevik\events.txt (Line 1568, column 5) [clr_country_flag = "bolshevik_ukraine"]
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1519, column 5) [has_country_flag = "bolshevik_ukraine"]
+	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 1495, column 5) [set_country_flag = "bolshevik_ukraine"]
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1460, column 6) [has_country_flag = "bolshevik_ukraine"]
+defence_of_poznan
+	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 574, column 5) [set_country_flag = "Defence_of_Poznan"]
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 554, column 6) [has_country_flag = "Defence_of_Poznan"]
+desperate_polish_defence_1
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 509, column 5) [has_country_flag = "Desperate_Polish_Defence_1"]
+	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 480, column 5) [set_country_flag = "Desperate_Polish_Defence_1"]
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 451, column 6) [has_country_flag = "Desperate_Polish_Defence_1"]
+desperate_polish_defence_2
+	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 525, column 5) [set_country_flag = "Desperate_Polish_Defence_2"]
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 512, column 6) [has_country_flag = "Desperate_Polish_Defence_2"]
+emergency_1_released
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1364, column 8) [has_country_flag = Emergency_1_Released]
+	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 1375, column 6) [set_country_flag = Emergency_1_Released]
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1321, column 14) [has_country_flag = Emergency_1_Released]
+	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 1072, column 5) [set_country_flag = Emergency_1_Released]
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1058, column 6) [has_country_flag = Emergency_1_Released]
+emergency_2_released
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1366, column 7) [has_country_flag = Emergency_2_Released]
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1381, column 8) [has_country_flag = Emergency_2_Released]
+	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 1390, column 6) [set_country_flag = Emergency_2_Released]
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1323, column 14) [has_country_flag = Emergency_2_Released]
+	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 1037, column 5) [set_country_flag = Emergency_2_Released]
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1023, column 6) [has_country_flag = Emergency_2_Released]
+emergency_3_released
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1368, column 7) [has_country_flag = Emergency_3_Released]
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1383, column 7) [has_country_flag = Emergency_3_Released]
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1396, column 8) [has_country_flag = Emergency_3_Released]
+	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 1403, column 6) [set_country_flag = Emergency_3_Released]
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1325, column 14) [has_country_flag = Emergency_3_Released]
+	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 1002, column 5) [set_country_flag = Emergency_3_Released]
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 990, column 13) [has_country_flag = Emergency_3_Released]
+konarmiya_withdrawl
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1262, column 5) [has_country_flag = "Konarmiya_Withdrawl"]
+	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 1240, column 5) [set_country_flag = "Konarmiya_Withdrawl"]
+latvian_garrison_1_released
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1124, column 8) [has_country_flag = Latvian_Garrison_1_Released]
+	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 904, column 5) [set_country_flag = Latvian_Garrison_1_Released]
+latvian_garrison_released
+	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 1133, column 5) [set_country_flag = Latvian_Garrison_Released]
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1093, column 5) [has_country_flag = Latvian_Garrison_Released]
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 895, column 5) [has_country_flag = Latvian_Garrison_Released]
+lithuania_joins
+	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 1179, column 5) [set_country_flag = "Lithuania_joins"]
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1158, column 6) [has_country_flag = "Lithuania_joins"]
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 827, column 5) [has_country_flag = "Lithuania_joins"]
+polish_ukraine
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1614, column 5) [has_country_flag = "polish_ukraine"]
+	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 1590, column 5) [set_country_flag = "polish_ukraine"]
+	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1555, column 6) [has_country_flag = "polish_ukraine"]
+	set|clr: <mod>\scenarios\polish_bolshevik\events.txt (Line 1473, column 5) [clr_country_flag = "polish_ukraine"]
