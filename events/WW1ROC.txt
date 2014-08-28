@@ -75,7 +75,7 @@
 		 ai_chance = {
 			 factor = 100
 			 }
-			 #head_of_government = §minister id¨ #Song Jiaoren
+			 #head_of_government = song
 			 national_unity = 5
 			 popularity = 10
 			 organisation = 10
@@ -108,7 +108,7 @@
 			 factor = 100
 			 }
 			 national_unity = 5
-			 #add_country_modifier = §name of modifier¨
+			 #add_country_modifier = chinese_want_peace		 
 			 country_event = 999946 #the reaction of Yuan
 			 set_country_flag = KMT_threat
 		}
@@ -163,7 +163,7 @@
 			 national_unity = -5
 			 dissent = 5
 			 #remove_minister = "" #Song Jiaoren
-			 #remove_country_modifier = §name of modifier¨
+			 #remove_country_modifier = chinese_want_peace			 
 			 set_country_flag = KMT_Song
 		}
 	}
@@ -174,7 +174,7 @@
  country_event = {
 	title = "ROCE6"
 	desc = "desc_ROCE6"
-	id = 999948
+	id = 999944
 	 
 	picture = "ROCE6"
 	
@@ -205,7 +205,7 @@
  country_event = {
 	title = "ROCE7"
 	desc = "desc_ROCE7"
-	id = 999947
+	id = 999943
 	 
 	picture = "ROCE7"
 	
@@ -223,6 +223,193 @@
 			 factor = 100
 			 }
 			 set_country_flag = 2nd_Revolution_failed
+		}
+	}
+	
+#Yang Du support for a return of a monarchy
+
+ country_event = {
+	title = "ROCE8"
+	desc = "desc_ROCE8"
+	id = 999942
+	 
+	picture = "ROCE8"
+	
+	trigger = {
+		 tag = ROC
+		 war = no
+		 #minister_alive = Yuan
+		 has_country_flag = 2nd_Revolution_failed
+		 }
+ 
+	option = {
+		 name = "opta_ROCE8"
+		 ai_chance = {
+			 factor = 90
+			 }
+			 country_event = 999941 #EOC
+			 set_country_flag = prepared_to_be_emperor
+		}
+		
+	option = {
+		 name = "optb_ROCE8"
+		 ai_chance = {
+			 factor = 10
+			 }
+			set_country_flag = yuan_is_not_emperor 
+		}
+	}
+	
+#EOC
+
+ country_event = {
+	title = "ROCE9"
+	desc = "desc_ROCE9"
+	id = 999941
+	 
+	picture = "ROCE9"
+	
+	trigger = {
+		 tag = ROC
+		 has_country_flag = prepared_to_be_emperor
+		 }
+ 
+	option = {
+		 name = "opta_ROCE8"
+		 ai_chance = {
+			 factor = 100
+			 }
+			 government = imperial
+			 set_country_flag = empire_of_china
+		}
+	}
+	
+##National Protection War Events
+#War Start
+
+ country_event = {
+	title = "ROCE10"
+	desc = "desc_ROCE10"
+	id = 999940
+	 
+	picture = "ROCE10"
+	
+	trigger = {
+		 tag = ROC
+		 has_country_flag = prepared_to_be_emperor
+		 not = { has_country_flag = national_protection_war }
+		 }
+ 
+	option = {
+		 name = "opta_ROCE10"
+		 ai_chance = {
+			 factor = 100
+			 }
+			 release = CYN
+			 release = CGX
+			 release = GZC
+			 release = HNC
+			 war = CYN
+			 war = CGX
+			 war = GZC
+			 war = HNC
+			 set_country_flag = national_protection_war
+		}
+	}
+	
+#War End
+#Yuan win 
+country_event = {
+	title = "ROCE11"
+	desc = "desc_ROCE11"
+	id = 999939
+	 
+	picture = "ROCE11"
+	
+	trigger = {
+		 tag = ROC
+		 has_country_flag = national_protection_war
+		 not = { has_country_flag = national_protection_war_end }
+		 not = { has_country_flag = yuan_as_emperor }
+		 not = { has_country_flag = the_press_from_generals } 
+		 ROC = { controls = 7561 }
+		 ROC = { controls = 7541 }
+		 ROC = { controls = 5862 }
+		 }
+ 
+	option = {
+		 name = "opta_ROCE11"
+		 ai_chance = {
+			 factor = 100
+			 }
+			 ROC = { inherit = CYN }
+			 ROC = { inherit = CGX }
+			 ROC = { inherit = GZC }
+			 ROC = { inherit = HNC }
+			 set_country_flag = national_protection_war_end
+			 set_country_flag = yuan_as_emperor
+		}
+	}
+	
+#National Protection Army win 1
+#The press from Generals
+country_event = {
+	title = "ROCE12"
+	desc = "desc_ROCE12"
+	id = 999938
+	 
+	picture = "ROCE12"
+	
+	trigger = {
+		 tag = ROC
+		 has_country_flag = national_protection_war
+		 not = { has_country_flag = national_protection_war_end }
+		 not = { has_country_flag = the_press_from_generals }
+		 }
+ 
+	option = {
+		 name = "opta_ROCE12"
+		 ai_chance = {
+			 factor = 100
+			 }
+			 ROC = { end_war = CYN }
+			 ROC = { end_war = CGX }
+			 ROC = { end_war = GZC }
+			 ROC = { end_war = HNC }
+			 set_country_flag = the_press_from_generals
+			 set_country_flag = yuan_is_not_emperor 
+		}
+	}
+	
+#National Protection Army win 2
+country_event = {
+	title = "ROCE13"
+	desc = "desc_ROCE13"
+	id = 999937
+	 
+	picture = "ROCE13"
+	
+	trigger = {
+		 tag = ROC
+		 has_country_flag = national_protection_war
+		 not = { has_country_flag = national_protection_war_end }
+		 not = { has_country_flag = the_press_from_generals }
+		 not = { has_country_flag = national_protection_army_win }
+		 not = { ROC = { controls = 5459 } }
+		 not = { ROC = { controls = 7338 } }
+		 }
+ 
+	option = {
+		 name = "opta_ROCE13"
+		 ai_chance = {
+			 factor = 100
+			 }
+			 ROC = { end_war = CYN }
+			 ROC = { end_war = CGX }
+			 ROC = { end_war = GZC }
+			 ROC = { end_war = HNC }
+			 set_country_flag = the_press_from_generals
+			 set_country_flag = yuan_is_not_emperor 
 		}
 	}
 	
