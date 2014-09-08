@@ -1,4 +1,3 @@
-
 #Baghdad Railway
 
  country_event = {
@@ -12,9 +11,7 @@
 	 
 	is_triggered_only = yes
 	 
-	mean_time_to_happen = {
-		 days = 15
-		 }
+	mean_time_to_happen = { days = 15 }
 	trigger = {
 		 or = {
 			 TUR = {
@@ -40,9 +37,7 @@
 			 }
 		 tag = GER
 		 date = 1914.1.1
-		 not = {
-			 date = 1999.12.30
-			 }
+		 not = { date = 1999.12.30 }
 		 }
 	option = {
 		 name = "DH_EVENT_2191560_Option7"
@@ -164,7 +159,6 @@
 		 set_country_flag = baghdad_1
 		 metal = -1000
 		 money = -50
-		 set_global_flag = 2191562_EVENT_DONE
 		 }
 	}
 
@@ -193,24 +187,7 @@
 			controlled_by = TUR
 			 }
 		 has_country_flag = baghdad_1
-		 or = {
-			 and = {
-				 has_global_flag = 2191562_EVENT_DONE
-				 }
-			 and = {
-				 has_global_flag = 2191562_EVENT_DONE
-				 }
-			 and = {
-				 has_global_flag = 2191562_EVENT_DONE
-				 }
-			 and = {
-				 has_global_flag = 2191562_EVENT_DONE
-				 }
-			 and = {
-				 has_global_flag = 2191562_EVENT_DONE
-				 }
-			 has_global_flag = 2191562_EVENT_DONE
-			 }
+	
 		 tag = GER
 		 date = 1914.1.1
 		 not = {
@@ -249,7 +226,7 @@
 		 4976 = {#Iskenderun
 			infra = 3
 			 }
-		 clr_country_flag = baghdad_1
+
 		 }
 	}
 
@@ -291,7 +268,6 @@
 		 set_country_flag = baghdad_2
 		 metal = -1000
 		 money = -50
-		 set_global_flag = 2191564_EVENT_DONE
 		 }
 	}
 
@@ -320,24 +296,7 @@
 			controlled_by = TUR
 			 }
 		 has_country_flag = baghdad_2
-		 or = {
-			 and = {
-				 has_global_flag = 2191564_EVENT_DONE
-				 }
-			 and = {
-				 has_global_flag = 2191564_EVENT_DONE
-				 }
-			 and = {
-				 has_global_flag = 2191564_EVENT_DONE
-				 }
-			 and = {
-				 has_global_flag = 2191564_EVENT_DONE
-				 }
-			 and = {
-				 has_global_flag = 2191564_EVENT_DONE
-				 }
-			 has_global_flag = 2191564_EVENT_DONE
-			 }
+
 		 tag = GER
 		 date = 1914.1.1
 		 not = {
@@ -364,7 +323,6 @@
 		 5299 = {#Beirut
 			infra = 3
 			 }
-		 clr_country_flag = baghdad_2
 		 }
 	}
 
@@ -406,7 +364,6 @@
 		 set_country_flag = baghdad_3
 		 metal = -1000
 		 money = -50
-		 set_global_flag = 2191567_EVENT_DONE
 		 }
 	}
 
@@ -435,24 +392,7 @@
 			controlled_by = TUR
 			 }
 		 has_country_flag = baghdad_3
-		 or = {
-			 and = {
-				 has_global_flag = 2191567_EVENT_DONE
-				 }
-			 and = {
-				 has_global_flag = 2191567_EVENT_DONE
-				 }
-			 and = {
-				 has_global_flag = 2191567_EVENT_DONE
-				 }
-			 and = {
-				 has_global_flag = 2191567_EVENT_DONE
-				 }
-			 and = {
-				 has_global_flag = 2191567_EVENT_DONE
-				 }
-			 has_global_flag = 2191567_EVENT_DONE
-			 }
+
 		 tag = GER
 		 date = 1914.1.1
 		 not = {
@@ -467,7 +407,6 @@
 		 9125 = {#Dayr_az_Zawr
 			infra = 3
 			 }
-		 clr_country_flag = baghdad_3
 		 }
 	}
 
@@ -494,7 +433,7 @@
 		 TUR = {
 			 faction = axis
 			 }
-		 4831 = {#Tikrit
+		 4831 = {                    #Tikrit
 			controlled_by = TUR
 			 }
 		 has_country_flag = baghdad
@@ -509,7 +448,6 @@
 		 set_country_flag = baghdad_4
 		 metal = -1000
 		 money = -50
-		 set_global_flag = 2191569_EVENT_DONE
 		 }
 	}
 
@@ -531,31 +469,12 @@
 		 days = 31
 		 }
 	trigger = {
-		 TUR = {
-			 faction = axis
-			 }
-		 4831 = {#Tikrit
+		 TUR = { faction = axis }
+		 4831 = {                     #Tikrit
 			controlled_by = TUR
 			 }
 		 has_country_flag = baghdad_4
-		 or = {
-			 and = {
-				 has_global_flag = 2191569_EVENT_DONE
-				 }
-			 and = {
-				 has_global_flag = 2191569_EVENT_DONE
-				 }
-			 and = {
-				 has_global_flag = 2191569_EVENT_DONE
-				 }
-			 and = {
-				 has_global_flag = 2191569_EVENT_DONE
-				 }
-			 and = {
-				 has_global_flag = 2191569_EVENT_DONE
-				 }
-			 has_global_flag = 2191569_EVENT_DONE
-			 }
+
 		 tag = GER
 		 date = 1914.1.1
 		 not = {
@@ -570,7 +489,6 @@
 		 9182 = {#Ba´quba
 			infra = 3
 			 }
-		 clr_country_flag = baghdad_4
 		 }
 	}
 
@@ -612,7 +530,6 @@
 		 set_country_flag = baghdad_5
 		 metal = -1000
 		 money = -50
-		 set_global_flag = 2191571_EVENT_DONE
 		 }
 	}
 
@@ -641,24 +558,7 @@
 			controlled_by = TUR
 			 }
 		 has_country_flag = baghdad_5
-		 or = {
-			 and = {
-				 has_global_flag = 2191571_EVENT_DONE
-				 }
-			 and = {
-				 has_global_flag = 2191571_EVENT_DONE
-				 }
-			 and = {
-				 has_global_flag = 2191571_EVENT_DONE
-				 }
-			 and = {
-				 has_global_flag = 2191571_EVENT_DONE
-				 }
-			 and = {
-				 has_global_flag = 2191571_EVENT_DONE
-				 }
-			 has_global_flag = 2191571_EVENT_DONE
-			 }
+
 		 tag = GER
 		 date = 1914.1.1
 		 not = {
@@ -670,7 +570,6 @@
 		 9213 = {#Baghdad
 			infra = 3
 			 }
-		 clr_country_flag = baghdad_5
 		 }
 	}
 
@@ -750,7 +649,6 @@ kill_leader = 34023 #von_der_Goltz_R.
 kill_leader = 34235 #von_Lossow
 kill_leader = 34355 #Buddecke
 kill_leader = 34182 #Serno
-
 		}
 	}
 
@@ -799,33 +697,21 @@ kill_leader = 34182 #Serno
 		 days = 31
 		 }
 	trigger = {
-		 TUR = {
-			 faction = axis
-			 }
-		 GER = {
-			 war = yes
-			 }
-		 TUR = {
-			 war = yes
-			 }
-		 BUL = {
-			 faction = axis
-			 }
+		 TUR = { faction = axis }
+		 GER = { war = yes }
+		 TUR = { war = yes }
+		 BUL = { faction = axis }
 		 or = {
-			 SER = {
-				 government_in_exile = yes
-				 }
+			 SER = { government_in_exile = yes }
 			 not = {
-				 SER = {
-					 war_with = GER
-					 }
+				 SER = { war_with = GER }
 				 }
 			 }
 		 manpower = 30
 		 supplies = 400
 		 or = {
 			 not = {
-				 5567 = {#Jerusalem
+				 5567 = {					#Jerusalem
 					controlled_by = TUR
 					 }
 				 }
@@ -857,9 +743,7 @@ kill_leader = 34182 #Serno
 			 }
 		 tag = GER
 		 date = 1914.7.28
-		 not = {
-			 date = 1917.12.30
-			 }
+		 not = { date = 1917.12.30 }
 		 }
 	option = {
 		 name = "DH_EVENT_2191581_Option7"
@@ -875,9 +759,7 @@ kill_leader = 34182 #Serno
 			 limit = {
 				 tag = THIS
 				 not = {
-					 GER = {
-						 ai = yes
-						 }
+					 GER = { ai = yes }
 					 }
 				 }
 			 supplies = -2000
@@ -918,9 +800,7 @@ remove_minister = 34248 #Hans_von_Seeckt
 			hq_brigade = current
 			 }
 		 random_owned = {
-			 limit = {
-				 controlled_by = THIS
-				 }
+			 limit = { controlled_by = THIS }
 			 infantry_brigade = current
 			 infantry_brigade = current
 			 artillery_brigade = current
