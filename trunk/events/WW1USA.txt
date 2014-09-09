@@ -182,6 +182,7 @@
 	mean_time_to_happen = { months = 10 }
 	 
 	trigger = {
+			tag = USA
 			exists = MXR
 			exists = MXC
 			MXR = { head_of_state = 60032  }              #Victoriano_Huerta
@@ -211,6 +212,7 @@
 	mean_time_to_happen = { days = 60 }
 	 
 	trigger = {
+		tag = USA
 		USA = { has_country_flag = Tampico }
 		USA = { has_country_flag = Huerta_embargoed }
 	}
@@ -241,7 +243,6 @@
 		name = "EVT1914_101512_OPT"
 		dissent = 2
 		MXR = { country_event = 101050 }				# Occupy Veracruz
-		MXC = { country_event = 101050 }				# Occupy Veracruz
 		USA = { set_country_flag = Veracruz_occupied }
 	}
 }	
@@ -293,15 +294,6 @@
 		dissent = -1
 		USA = { 9624 = { secede_province = MXC } }						#Veracruz
 		9624 = { remove_core = USA }
-
-#		random_country = {
-#			limit = {
-#				tag = USA
-#				exists = MXR
-#				not = { exists = MXC }	}
-#			9624 = { secede_province = MXR }						#Veracruz
-#			9624 = { remove_core = USA }
-#		}
 
 		MXR = { remove_country_modifier = "weapons_embargo" }
 		USA = { clr_country_flag = Huerta_embargoed }

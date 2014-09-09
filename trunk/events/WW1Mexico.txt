@@ -873,12 +873,10 @@ kill_leader = 60009 #González_Peña
 #		MXC = { threat { who = USA value = -5 } }
 		}
 	}	
+	
 
+########## Constitutionalist v's Conventionalists ##########
 
-
-# Villa recruits Gringo's
-
-# Villa and Zapata turn on Carranza
 # When fighting broke out in 1914 between the Constitutionalists (Carranza, Obregón, etc.) and the Conventionalists (Villa and Zapata) 
 # following the Convention of Aguascalientes, the Constitutional Army numbered 57,000 men, to Villa and Zapata's 72,000 men. 
 
@@ -888,9 +886,8 @@ kill_leader = 60009 #González_Peña
 # By 1917, the main fighting of the civil war between the two factions was over, with some minor revolts by Felicistas (supporters of Félix Díaz, 
 # nephew of ousted president Porfirio Díaz). This marked the end of any real resistance to Carranza.	
 
+# Villa recruits Gringo's
 
-#Huerta has been defeated!
-# On defeat of Huerta ensure embargoes and flags are cleared
 
  country_event = {
 	title = "EVT1914_101056_TITLE"
@@ -904,7 +901,6 @@ kill_leader = 60009 #González_Peña
 	mean_time_to_happen = { days = 7 }
 	
 	trigger = {
-		war = no
 		tag = MXC
 		exists = MXC
 		not = {
@@ -913,31 +909,18 @@ kill_leader = 60009 #González_Peña
 	}
 		
 	option = {
-		name = "ACTION_NAME_GREAT"
-
-		random_country = {
-			limit = {
-				tag = THIS
-				not = { has_global_flag = MEX_Convention }
-				}
-			MXC = {	country_event = 193 }                             #Convention_of_Aguascalientes
+			name = "ACTION_NAME_GREAT"
+			MXC = { capital = 9604 }       								# Ciudad de México
+			MXC = { set_country_flag = MEX_Conv }
+			MXC = {	country_event = 101058 }                            # Convention_of_Aguascalientes
 			}
-		 random_country = {
-			limit = {
-				tag = THIS
-				not = { has_global_flag = MEX_Convention }
-				}
-			set_global_flag = MEX_Convention
-			}
-		set_country_flag = MEX_Conv
-		}
 	}
 
 
 # Convention of Aguascalientes
 
 # After the meeting, the newly reconciled Villa and Zapata entered Mexico City on 6 December, at the head of an army of 60,000 men. 
-# Carranza and his supporters consequently fled to Veracruz.
+
 
  country_event = {
 	title = "EVT1914_101058_TITLE"
@@ -949,31 +932,68 @@ kill_leader = 60009 #González_Peña
 	fire_only_once = yes
 	 
 	is_triggered_only = yes
-	 
-	trigger = {
-		 tag = MXR
-		 }
+		 
+	mean_time_to_happen = { months = 2 }	 
+		 
 	option = {
-		 name = "DH_EVENT_2038604_Option7"
-		 dissent = 2
-		 MXR = { country_event = 194                              #Convention_of_Aguascalientes
+		name = "EVT1914_101058_OPTA"
+		MXC = { country_event = 101060                           # Give in to Villa and Zapata
 			}
-		 MXR = { country_event = 195                              #Convention_of_Aguascalientes
+	}		
+	option = {
+		name = "EVT1914_101058_OPTB"
+		ai_chance = { factor = 100 }		
+		MXC = { country_event = 101062                           # Fight for our country
 			}
-		 clr_global_flag = MEX_Convention
-		 clr_country_flag = MEX_Conv
-		 set_global_flag = SLEEPEVENT_2038601
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 THIS = {
-					 ai = yes
-					 }
-				 }
-			 }
-		 }
+		}
 	}	
 	
+
+
+
+# Carranza and his supporters fled to Veracruz.
+
+ country_event = {
+	title = "EVT1910_101062_TITLE"
+	desc = "EVT1910_101062_DESC"
+	id = 101062
+	 
+	picture = "villa_troops"
+	 
+	major = yes
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "ACTION_NAME_FIGHT"
+			MXC = { ZZZ = { split_troops = 1.00 } }		# Constitutionalist Army breaks up, some stand down.
+			9604 = { secede_province = MXR }   # Mexico City			
+			9623 = { secede_province = MXR }   # Cuernavaca
+			9566 = { secede_province = MXR }   # Pachuca
+			9504 = { secede_province = MXR }   # Zactecas
+			9479 = { secede_province = MXR }   # Durango
+			MXC = { load_oob = MXC_Convention.txt }
+			MXR = { load_oob = MXR_Convention.txt }
+			MXR = { national_unity = -2 }
+			MXR = { dissent = 5 }
+			MXR = { officer_pool = 1000 }
+			MXR = { supplies = 5000 }
+			9604 = { supplies = 5000 }         # Mexico City
+			MXR = { money = 100 }
+			MXR = { energy = 600 }
+			MXR = { rare_materials = 50 }
+			MXR = { metal = 50 }
+			MXR = { war = { target = MXC } }
+# Remove Zapata and Villa from from MXC
+			kill_leader = 60002 #Zapata,_Emiliano
+			kill_leader = 60005 #Villa,_F_(Pancho)
+		}			
+	}
+
+
+
 	
 ##################   DH EVENTS  ###################################################	
 
