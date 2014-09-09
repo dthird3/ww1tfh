@@ -1,117 +1,68 @@
 Log of Audax.Validator, version 1.2 [1.2.11.0]
 
-Current Time: 1.8.2014 7:53:53
-.NET Version: 4.0.30319.1022
-OS Version: Microsoft Windows NT 6.1.7601 Service Pack 1
-Current Culture: fi-FI
-Current UI Culture: fi-FI
-Command Line: "C:\SteamSSD\SteamApps\common\Hearts of Iron 3\tfh\mod\ww1tfh\zzz_tools\Audax.Validator\App\Audax.Validator.exe" 
+Current Time: 9/09/2014 12:58:46 AM
+.NET Version: 4.0.30319.34014
+OS Version: Microsoft Windows NT 6.2.9200.0
+Current Culture: en-AU
+Current UI Culture: en-GB
+Command Line: "D:\Paradox Interactive 4.02\Hearts of Iron III\tfh\mod\ww1tfh\zzz_tools\Audax.Validator\App\Audax.Validator.exe" 
 Processor Count: 4
-Current Directory: C:\SteamSSD\SteamApps\common\Hearts of Iron 3\tfh\mod\ww1tfh\zzz_tools\Audax.Validator\App
-Machine Name: TAPANI-PC
-System Directory: C:\Windows\system32
-User Name: Tapani
-User Domain Name: Tapani-PC
+Current Directory: D:\Paradox Interactive 4.02\Hearts of Iron III\tfh\mod\ww1tfh\zzz_tools\Audax.Validator\App
+Machine Name: TREVOR
+System Directory: C:\WINDOWS\system32
+User Name: T
+User Domain Name: TREVOR
 User Interactive: True
-Tick Count: 00:01:18.1090000
+Tick Count: 4.15:05:58.2500000
 Shutdown Started: False
 
 ENVIRONMENT VARIABLES
-COMPUTERNAME: TAPANI-PC
-HOMEPATH: \Users\Tapani
-LOCALAPPDATA: C:\Users\Tapani\AppData\Local
-PSModulePath: C:\Windows\system32\WindowsPowerShell\v1.0\Modules\
+COMPUTERNAME: TREVOR
+USERPROFILE: C:\Users\T
+HOMEPATH: \Users\T
+LOCALAPPDATA: C:\Users\T\AppData\Local
+PSModulePath: C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\
 PROCESSOR_ARCHITECTURE: AMD64
-CommonProgramW6432: C:\Program Files\Common Files
+Path: C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\TortoiseSVN\bin
 CommonProgramFiles(x86): C:\Program Files (x86)\Common Files
 ProgramFiles(x86): C:\Program Files (x86)
 PROCESSOR_LEVEL: 6
-windows_tracing_flags: 3
-LOGONSERVER: \\TAPANI-PC
-USERNAME: Tapani
-HOMEDRIVE: C:
-USERPROFILE: C:\Users\Tapani
-SystemRoot: C:\Windows
-TEMP: C:\Users\Tapani\AppData\Local\Temp
-PUBLIC: C:\Users\Public
-ALLUSERSPROFILE: C:\ProgramData
-FP_NO_HOST_CHECK: NO
-APPDATA: C:\Users\Tapani\AppData\Roaming
-ProgramData: C:\ProgramData
+LOGONSERVER: \\MicrosoftAccount
 PATHEXT: .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
-OS: Windows_NT
-CommonProgramFiles: C:\Program Files\Common Files
-PROCESSOR_IDENTIFIER: Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
-ComSpec: C:\Windows\system32\cmd.exe
+HOMEDRIVE: C:
+SystemRoot: C:\WINDOWS
 SESSIONNAME: Console
+ALLUSERSPROFILE: C:\ProgramData
+PUBLIC: C:\Users\Public
+FP_NO_HOST_CHECK: NO
+APPDATA: C:\Users\T\AppData\Roaming
+PROCESSOR_REVISION: 3a09
+USERNAME: T
+CommonProgramW6432: C:\Program Files\Common Files
+CommonProgramFiles: C:\Program Files\Common Files
+OS: Windows_NT
+USERDOMAIN_ROAMINGPROFILE: TREVOR
+PROCESSOR_IDENTIFIER: Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+ComSpec: C:\WINDOWS\system32\cmd.exe
 SystemDrive: C:
-PROCESSOR_REVISION: 3c03
+TEMP: C:\Users\T\AppData\Local\Temp
 ProgramFiles: C:\Program Files
 NUMBER_OF_PROCESSORS: 4
-windows_tracing_logfile: C:\BVTBin\Tests\installpackage\csilogfile.log
-TMP: C:\Users\Tapani\AppData\Local\Temp
+TMP: C:\Users\T\AppData\Local\Temp
+ProgramData: C:\ProgramData
 ProgramW6432: C:\Program Files
-Path: C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;Z:\Program Files HDD\SVN\bin
-USERDOMAIN: Tapani-PC
-windir: C:\Windows
+windir: C:\WINDOWS
+USERDOMAIN: TREVOR
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 StatusLog > Beginning initialization...
 StatusLog > Initialization complete!
-StatusLog > 
-StatusLog > 
-StatusLog > 
-StatusLog > ERROR
-StatusLog > System.IO.DirectoryNotFoundException: Polun C:\SteamSSD\SteamApps\common\Hearts of Iron 3\tfh\mod\ww1tfh\scenarios\tfh\mod\ osaa ei löytynyt.
-StatusLog >    kohteessa System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-StatusLog >    kohteessa System.IO.FileSystemEnumerableIterator`1.CommonInit()
-StatusLog >    kohteessa System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler)
-StatusLog >    kohteessa System.IO.Directory.EnumerateFiles(String path, String searchPattern, SearchOption searchOption)
-StatusLog >    kohteessa Audax.Clausewitz.IO.Hoi3Tfh.Hoi3TfhFileSystem.EnumerateMods()
-StatusLog >    kohteessa Audax.Validator.ValidationManager.SetPath(GameFileSystem system)
-StatusLog >    kohteessa Audax.Validator.ValidationManager.Run(Dispatcher dispatcher)
-StatusLog > 
-StatusLog > 
-StatusLog > 
-StatusLog > ERROR
-StatusLog > System.IO.DirectoryNotFoundException: Polun C:\SteamSSD\SteamApps\common\Hearts of Iron 3\tfh\mod\ww1tfh\scenarios\finnish_civil_war\tfh\mod\ osaa ei löytynyt.
-StatusLog >    kohteessa System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-StatusLog >    kohteessa System.IO.FileSystemEnumerableIterator`1.CommonInit()
-StatusLog >    kohteessa System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler)
-StatusLog >    kohteessa System.IO.Directory.EnumerateFiles(String path, String searchPattern, SearchOption searchOption)
-StatusLog >    kohteessa Audax.Clausewitz.IO.Hoi3Tfh.Hoi3TfhFileSystem.EnumerateMods()
-StatusLog >    kohteessa Audax.Validator.ValidationManager.SetPath(GameFileSystem system)
-StatusLog >    kohteessa Audax.Validator.ValidationManager.Run(Dispatcher dispatcher)
-StatusLog > 
-StatusLog > 
-StatusLog > 
-StatusLog > ERROR
-StatusLog > System.IO.DirectoryNotFoundException: Polun C:\SteamSSD\SteamApps\common\Hearts of Iron 3\tfh\mod\ww1tfh\scenarios\finnish_civil_war\tfh\mod\ osaa ei löytynyt.
-StatusLog >    kohteessa System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-StatusLog >    kohteessa System.IO.FileSystemEnumerableIterator`1.CommonInit()
-StatusLog >    kohteessa System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler)
-StatusLog >    kohteessa System.IO.Directory.EnumerateFiles(String path, String searchPattern, SearchOption searchOption)
-StatusLog >    kohteessa Audax.Clausewitz.IO.Hoi3Tfh.Hoi3TfhFileSystem.EnumerateMods()
-StatusLog >    kohteessa Audax.Validator.ValidationManager.SetPath(GameFileSystem system)
-StatusLog >    kohteessa Audax.Validator.ValidationManager.Run(Dispatcher dispatcher)
-StatusLog > 
-StatusLog > 
-StatusLog > 
-StatusLog > ERROR
-StatusLog > System.IO.DirectoryNotFoundException: Polun C:\SteamSSD\SteamApps\common\Hearts of Iron 3\tfh\mod\ww1tfh\scenarios\finnish_civil_war\tfh\mod\ osaa ei löytynyt.
-StatusLog >    kohteessa System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-StatusLog >    kohteessa System.IO.FileSystemEnumerableIterator`1.CommonInit()
-StatusLog >    kohteessa System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler)
-StatusLog >    kohteessa System.IO.Directory.EnumerateFiles(String path, String searchPattern, SearchOption searchOption)
-StatusLog >    kohteessa Audax.Clausewitz.IO.Hoi3Tfh.Hoi3TfhFileSystem.EnumerateMods()
-StatusLog >    kohteessa Audax.Validator.ValidationManager.SetPath(GameFileSystem system)
-StatusLog >    kohteessa Audax.Validator.ValidationManager.Run(Dispatcher dispatcher)
 StatusLog > Beginning validation...
-StatusLog > Beginning Scenarios validation...
-StatusLog > Scenarios validation complete!
+StatusLog > Beginning Events validation...
+StatusLog > Events validation complete!
 StatusLog > Validation complete!
 StatusLog > Beginning validation...
-StatusLog > Beginning Scenarios validation...
-StatusLog > Scenarios validation complete!
+StatusLog > Beginning Events validation...
+StatusLog > Events validation complete!
 StatusLog > Validation complete!
