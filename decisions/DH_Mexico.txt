@@ -1,16 +1,18 @@
+## Need to review all and fix to trigger as needed ##
+
 diplomatic_decisions = {
 	 2250500_decision = {                                #Launch_Raids_on_Tucson
 		ai_will_do = { factor = 1 }
 		
 		potential = {
+			tag = MXR
 			war = yes
 			not = { MEX = { war_with = USA } }
 			not = { MXR = { war_with = USA } }
-			tag = MXR
-#			date = 1914.8.4
-			date = 1910.5.1
+			date = 1914.8.4
 			not = { date = 1923.12.31 }
 			not = { has_country_flag = decision_2250500 }
+			MXC = { has_country_flag = "Constitutionalist_in_power" }
 			}
 			
 		allow = {
