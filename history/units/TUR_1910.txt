@@ -1,5 +1,6 @@
  theatre = {
 	location = 4503 # Istanbul
+	name = "Istanbul Karargâhi"
 	
 	 regiment = {
 		type = hq_brigade 
@@ -123,9 +124,10 @@
 				
 				 regiment = {
 					type = heavy_artillery_brigade 
-					is_reserve = no} 
-				name = "1. Agir Topçu Alayi 'Istanbul'"
-				historical_model = 0 
+					is_reserve = no 
+					name = "1. Agir Topçu Alayi 'Istanbul'"
+					historical_model = 0 
+					}
 				}
 			}
 		}
@@ -209,9 +211,10 @@
 			
 			 regiment = {
 				type = heavy_artillery_brigade 
-				is_reserve = no} 
-			name = "2. Agir Topçu Alayi 'Çanakkale'"
-			historical_model = 0 
+				is_reserve = no 
+				name = "2. Agir Topçu Alayi 'Çanakkale'"
+				historical_model = 0 
+				}
 			}
 		}
 	}
@@ -407,9 +410,10 @@
 		
 		 regiment = {
 			type = garrison_brigade 
-			is_reserve = no} 
-		name = "4. Garnizon Alayi 'Edirne'"
-		historical_model = 1 
+			is_reserve = no 
+			name = "4. Garnizon Alayi 'Edirne'"
+			historical_model = 1 
+			}
 		}
 	}
 
@@ -1125,6 +1129,7 @@
 
  theatre = {
 	location = 5484 # Bengasi
+	name = "Trablusgarp Karargâhi"
 	
 	 regiment = {
 		type = hq_brigade 
@@ -1163,7 +1168,7 @@
 			}
 		}
 	
-	 division = {
+	division = {
 		location = 5484 # Bengasi
 		leader = 90013 # Mustafa Kemal
 		name = "1. Milis Tümeni 'Bingazi'"
@@ -1177,9 +1182,10 @@
 		
 		 regiment = {
 			type = militia_brigade 
-			is_reserve = no} 
-		name = "2. Milis Alayi 'Bingazi'"
-		historical_model = 1 
+			is_reserve = no 
+			name = "2. Milis Alayi 'Bingazi'"
+			historical_model = 1
+			}
 		}
 	}
 
@@ -1197,9 +1203,10 @@
 	
 	 regiment = {
 		type = militia_brigade 
-		is_reserve = no} 
-	name = "4. Milis Alayi 'Trablus'"
-	historical_model = 1 
+		is_reserve = no
+		name = "4. Milis Alayi 'Trablus'"
+		historical_model = 1 
+		}
 	}
 
  navy = {
@@ -1333,4 +1340,3 @@
 		historical_model = 0 
 		}
 	}
-
