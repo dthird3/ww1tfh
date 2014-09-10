@@ -2,7 +2,7 @@ Flag Analysis for CountryFlag
 
 Summary
 Warnings: 38
-Total flags: 2123 in 580 names
+Total flags: 2122 in 580 names
 
 Warnings
 alb_war
@@ -15,7 +15,7 @@ break_blockade
 diaz_rebels
 	set|set: <mod>\events\WW1Mexico.txt (Line 564, column 11) [set_country_flag = "diaz_rebels"]
 dom_repubic_occupied
-	set|set: <mod>\events\WW1USA.txt (Line 363, column 3) [set_country_flag = Dom_Repubic_occupied]
+	set|set: <mod>\events\WW1USA.txt (Line 355, column 3) [set_country_flag = Dom_Repubic_occupied]
 emperor_franz_dead
 	set|set: <mod>\events\WW1Austria.txt (Line 33, column 4) [set_country_flag = emperor_franz_dead]
 empire_of_china
@@ -37,14 +37,14 @@ germany_mobilize
 goeben
 	set|set: <mod>\events\WW1Ottoman.txt (Line 78, column 4) [set_country_flag = goeben]
 haiti_occupied
-	set|set: <mod>\events\WW1USA.txt (Line 330, column 3) [set_country_flag = Haiti_Occupied]
+	set|set: <mod>\events\WW1USA.txt (Line 322, column 3) [set_country_flag = Haiti_Occupied]
 has_serb_alliance
 	set|set: <mod>\events\WW1SecondBalkan.txt (Line 23, column 5) [set_country_flag = has_serb_alliance]
 huerta_coup
 	set|set: <mod>\events\WW1Mexico.txt (Line 693, column 11) [set_country_flag = "Huerta_Coup"]
 huerta_embargoed
-	set|clr: <mod>\events\WW1USA.txt (Line 307, column 11) [clr_country_flag = Huerta_embargoed]
-	chk|chk: <mod>\events\WW1USA.txt (Line 215, column 11) [has_country_flag = Huerta_embargoed]
+	set|clr: <mod>\events\WW1USA.txt (Line 299, column 11) [clr_country_flag = Huerta_embargoed]
+	chk|chk: <mod>\events\WW1USA.txt (Line 217, column 11) [has_country_flag = Huerta_embargoed]
 king_death_george
 	set|set: <mod>\events\WW1England.txt (Line 33, column 4) [set_country_flag = king_death_george]
 league_formed
@@ -54,7 +54,7 @@ murder_of_franz_ferdinand
 national_protection_army_win
 	chk|chk: <mod>\events\WW1ROC.txt (Line 397, column 12) [has_country_flag = national_protection_army_win]
 niagara_peace
-	set|set: <mod>\events\WW1USA.txt (Line 273, column 11) [set_country_flag = Niagara_Peace]
+	set|set: <mod>\events\WW1USA.txt (Line 274, column 11) [set_country_flag = Niagara_Peace]
 no_goeben
 	set|set: <mod>\events\WW1Ottoman.txt (Line 86, column 4) [set_country_flag = no_goeben]
 north_sea_war_zone
@@ -2497,10 +2497,9 @@ matahari
 	set|set: <mod>\events\WW1News.txt (Line 203, column 4) [set_country_flag = matahari]
 	chk|chk: <mod>\events\WW1News.txt (Line 191, column 5) [has_country_flag = matahari]
 mex_conv
-	set|set: <mod>\events\WW1Mexico.txt (Line 1022, column 4) [set_country_flag = MEX_Conv]
-	set|clr: <mod>\events\WW1Mexico.txt (Line 964, column 4) [clr_country_flag = MEX_Conv]
-	set|set: <mod>\events\WW1Mexico.txt (Line 932, column 3) [set_country_flag = MEX_Conv]
-	chk|chk: <mod>\events\WW1Mexico.txt (Line 912, column 4) [has_country_flag = MEX_Conv]
+	set|set: <mod>\events\WW1Mexico.txt (Line 1063, column 4) [set_country_flag = MEX_Conv]
+	set|set: <mod>\events\WW1Mexico.txt (Line 914, column 12) [set_country_flag = MEX_Conv]
+	chk|chk: <mod>\events\WW1Mexico.txt (Line 908, column 4) [has_country_flag = MEX_Conv]
 national_protection_war
 	chk|chk: <mod>\events\WW1ROC.txt (Line 394, column 4) [has_country_flag = national_protection_war]
 	chk|chk: <mod>\events\WW1ROC.txt (Line 365, column 4) [has_country_flag = national_protection_war]
@@ -2624,9 +2623,9 @@ support_madero_coup
 	chk|chk: <mod>\events\WW1Mexico.txt (Line 615, column 11) [has_country_flag = "support_madero_coup"]
 	set|set: <mod>\events\WW1Mexico.txt (Line 587, column 11) [set_country_flag = "support_madero_coup"]
 tampico
-	chk|chk: <mod>\events\WW1USA.txt (Line 214, column 11) [has_country_flag = Tampico]
-	set|set: <mod>\events\WW1USA.txt (Line 194, column 11) [set_country_flag = Tampico]
-	chk|chk: <mod>\events\WW1USA.txt (Line 189, column 20) [has_country_flag = Tampico]
+	chk|chk: <mod>\events\WW1USA.txt (Line 216, column 11) [has_country_flag = Tampico]
+	set|set: <mod>\events\WW1USA.txt (Line 195, column 11) [set_country_flag = Tampico]
+	chk|chk: <mod>\events\WW1USA.txt (Line 190, column 20) [has_country_flag = Tampico]
 ten_tragic_days
 	chk|chk: <mod>\events\WW1Mexico.txt (Line 750, column 11) [has_country_flag = "Ten_Tragic_Days"]
 	set|set: <mod>\events\WW1Mexico.txt (Line 727, column 11) [set_country_flag = "Ten_Tragic_Days"]
@@ -2655,31 +2654,31 @@ us_volunteers
 	set|set: <mod>\events\WW1USEntry.txt (Line 169, column 5) [set_country_flag = US_volunteers]
 	chk|chk: <mod>\events\WW1USEntry.txt (Line 156, column 6) [has_country_flag = US_volunteers]
 usa_mexican_raids
-	chk|chk: <mod>\events\WW1Mexico.txt (Line 3433, column 4) [has_country_flag = USA_Mexican_Raids]
-	chk|chk: <mod>\events\WW1Mexico.txt (Line 3406, column 7) [has_country_flag = USA_Mexican_Raids]
-	set|set: <mod>\events\WW1Mexico.txt (Line 3409, column 5) [set_country_flag = USA_Mexican_Raids]
-	chk|chk: <mod>\events\WW1Mexico.txt (Line 3371, column 7) [has_country_flag = USA_Mexican_Raids]
-	set|set: <mod>\events\WW1Mexico.txt (Line 3374, column 5) [set_country_flag = USA_Mexican_Raids]
-	chk|chk: <mod>\events\WW1Mexico.txt (Line 3336, column 7) [has_country_flag = USA_Mexican_Raids]
-	set|set: <mod>\events\WW1Mexico.txt (Line 3339, column 5) [set_country_flag = USA_Mexican_Raids]
-	chk|chk: <mod>\events\WW1Mexico.txt (Line 3301, column 7) [has_country_flag = USA_Mexican_Raids]
-	set|set: <mod>\events\WW1Mexico.txt (Line 3304, column 5) [set_country_flag = USA_Mexican_Raids]
-	chk|chk: <mod>\events\WW1Mexico.txt (Line 3266, column 7) [has_country_flag = USA_Mexican_Raids]
-	set|set: <mod>\events\WW1Mexico.txt (Line 3269, column 5) [set_country_flag = USA_Mexican_Raids]
-	chk|chk: <mod>\events\WW1Mexico.txt (Line 3231, column 7) [has_country_flag = USA_Mexican_Raids]
-	set|set: <mod>\events\WW1Mexico.txt (Line 3234, column 5) [set_country_flag = USA_Mexican_Raids]
-	chk|chk: <mod>\events\WW1Mexico.txt (Line 3196, column 7) [has_country_flag = USA_Mexican_Raids]
-	set|set: <mod>\events\WW1Mexico.txt (Line 3199, column 5) [set_country_flag = USA_Mexican_Raids]
-	chk|chk: <mod>\events\WW1Mexico.txt (Line 3161, column 7) [has_country_flag = USA_Mexican_Raids]
-	set|set: <mod>\events\WW1Mexico.txt (Line 3164, column 5) [set_country_flag = USA_Mexican_Raids]
-	chk|chk: <mod>\events\WW1Mexico.txt (Line 3126, column 7) [has_country_flag = USA_Mexican_Raids]
-	set|set: <mod>\events\WW1Mexico.txt (Line 3129, column 5) [set_country_flag = USA_Mexican_Raids]
-	chk|chk: <mod>\events\WW1Mexico.txt (Line 3091, column 6) [has_country_flag = USA_Mexican_Raids]
-	set|set: <mod>\events\WW1Mexico.txt (Line 3094, column 4) [set_country_flag = USA_Mexican_Raids]
+	chk|chk: <mod>\events\WW1Mexico.txt (Line 3474, column 4) [has_country_flag = USA_Mexican_Raids]
+	chk|chk: <mod>\events\WW1Mexico.txt (Line 3447, column 7) [has_country_flag = USA_Mexican_Raids]
+	set|set: <mod>\events\WW1Mexico.txt (Line 3450, column 5) [set_country_flag = USA_Mexican_Raids]
+	chk|chk: <mod>\events\WW1Mexico.txt (Line 3412, column 7) [has_country_flag = USA_Mexican_Raids]
+	set|set: <mod>\events\WW1Mexico.txt (Line 3415, column 5) [set_country_flag = USA_Mexican_Raids]
+	chk|chk: <mod>\events\WW1Mexico.txt (Line 3377, column 7) [has_country_flag = USA_Mexican_Raids]
+	set|set: <mod>\events\WW1Mexico.txt (Line 3380, column 5) [set_country_flag = USA_Mexican_Raids]
+	chk|chk: <mod>\events\WW1Mexico.txt (Line 3342, column 7) [has_country_flag = USA_Mexican_Raids]
+	set|set: <mod>\events\WW1Mexico.txt (Line 3345, column 5) [set_country_flag = USA_Mexican_Raids]
+	chk|chk: <mod>\events\WW1Mexico.txt (Line 3307, column 7) [has_country_flag = USA_Mexican_Raids]
+	set|set: <mod>\events\WW1Mexico.txt (Line 3310, column 5) [set_country_flag = USA_Mexican_Raids]
+	chk|chk: <mod>\events\WW1Mexico.txt (Line 3272, column 7) [has_country_flag = USA_Mexican_Raids]
+	set|set: <mod>\events\WW1Mexico.txt (Line 3275, column 5) [set_country_flag = USA_Mexican_Raids]
+	chk|chk: <mod>\events\WW1Mexico.txt (Line 3237, column 7) [has_country_flag = USA_Mexican_Raids]
+	set|set: <mod>\events\WW1Mexico.txt (Line 3240, column 5) [set_country_flag = USA_Mexican_Raids]
+	chk|chk: <mod>\events\WW1Mexico.txt (Line 3202, column 7) [has_country_flag = USA_Mexican_Raids]
+	set|set: <mod>\events\WW1Mexico.txt (Line 3205, column 5) [set_country_flag = USA_Mexican_Raids]
+	chk|chk: <mod>\events\WW1Mexico.txt (Line 3167, column 7) [has_country_flag = USA_Mexican_Raids]
+	set|set: <mod>\events\WW1Mexico.txt (Line 3170, column 5) [set_country_flag = USA_Mexican_Raids]
+	chk|chk: <mod>\events\WW1Mexico.txt (Line 3132, column 6) [has_country_flag = USA_Mexican_Raids]
+	set|set: <mod>\events\WW1Mexico.txt (Line 3135, column 4) [set_country_flag = USA_Mexican_Raids]
 veracruz_occupied
-	set|clr: <mod>\events\WW1USA.txt (Line 308, column 11) [clr_country_flag = Veracruz_occupied]
-	chk|chk: <mod>\events\WW1USA.txt (Line 266, column 11) [has_country_flag = Veracruz_occupied]
-	set|set: <mod>\events\WW1USA.txt (Line 245, column 11) [set_country_flag = Veracruz_occupied]
+	set|clr: <mod>\events\WW1USA.txt (Line 300, column 11) [clr_country_flag = Veracruz_occupied]
+	chk|chk: <mod>\events\WW1USA.txt (Line 267, column 11) [has_country_flag = Veracruz_occupied]
+	set|set: <mod>\events\WW1USA.txt (Line 246, column 11) [set_country_flag = Veracruz_occupied]
 win_balkans
 	set|set: <mod>\events\WW1SecondBalkan.txt (Line 839, column 5) [set_country_flag = win_balkans]
 	chk|chk: <mod>\events\WW1SecondBalkan.txt (Line 671, column 6) [has_country_flag = win_balkans]

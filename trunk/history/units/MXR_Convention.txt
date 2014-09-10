@@ -11,7 +11,6 @@
 	
 	 division = {
 		location = 9623  # Cuernavaca
-		dig_in = 10 
 		name = "1. División de Zapatistas"
 		
 		 regiment = {
@@ -31,7 +30,6 @@
 	
 	 division = {
 		location = 9623  # Cuernavaca
-		dig_in = 10 
 		name = "2. División de Zapatistas"
 		
 		 regiment = {
@@ -48,32 +46,51 @@
 			historical_model = 3 
 			}
 		}
+		
+	 division = {
+		location = 9623  # Cuernavaca
+		name = "3. División de Zapatistas"
+		
+		 regiment = {
+			type = cavalry_brigade 
+			experience = 3 
+			name = "5. Brigada de Zapatistas"
+			historical_model = 3 
+			}
+		
+		 regiment = {
+			type = cavalry_brigade 
+			experience = 3 
+			name = "6. Brigada de Zapatistas"
+			historical_model = 3 
+			}
+		}
 	}
 	
  corps = {
-	location = 9174  # Nátora
+	location = 9604  # Mexico
 	leader = 59004 # Villa, F (Pancho)
 	name = "División del Norte"
 			
-		 regiment = {
+		regiment = {
 			type = hq_brigade 
 			name = "División del Norte HQ"
 			historical_model = 0 
 			}
 			
-		 division = {
-			location = 9174  # Nátora
+		division = {
+			location = 9604  # Mexico
 			is_reserve = no
 			name = "1. Los dorados"
 				
-			 regiment = {
+			regiment = {
 				type = cavalry_brigade 
 				experience = 3 
 				name = "1. Brigada de Los dorados"
 				historical_model = 3 
 				}
 				
-			 regiment = {
+			regiment = {
 				type = cavalry_brigade 
 				experience = 3 
 				name = "2. Brigada de Los dorados"
@@ -81,8 +98,8 @@
 				}
 			}
 			
-		 division = {
-			location = 9174  # Nátora
+		division = {
+			location = 9604  # Mexico
 			is_reserve = no
 			name = "2. Los dorados"
 				
@@ -101,8 +118,8 @@
 				}
 			}
 			
-		 division = {
-			location = 9174  # Nátora
+		division = {
+			location = 9604  # Mexico
 			is_reserve = no
 			name = "3. Los dorados"
 				
@@ -121,8 +138,8 @@
 				}
 			}
 			
-		 division = {
-			location = 9174  # Nátora
+		division = {
+			location = 9604  # Mexico
 			is_reserve = no
 			name = "4. Los dorados"
 				
@@ -141,8 +158,8 @@
 				}
 			}
 			
-		 division = {
-			location = 9118  # AguaPrieta
+		division = {
+			location = 9604  # Mexico
 			is_reserve = no
 			name = "5. Los dorados"
 				
@@ -160,4 +177,61 @@
 				historical_model = 3 
 				}
 			}
+			
+	division = {
+		location = 9479  # Durango
+		name = "1. División de Villistas"
+		
+		 regiment = {
+			type = militia_brigade
+			experience = 3 
+			name = "1. Brigada de Villistas"
+			historical_model = 3 
+			}
+		
+		 regiment = {
+			type = militia_brigade
+			experience = 3 
+			name = "2. Brigada de Villistas"
+			historical_model = 3 
+			}
 		}
+		
+	division = {
+		location = 9479  # Durango
+		name = "2. División de Villistas"
+		
+		 regiment = {
+			type = militia_brigade
+			experience = 3 
+			name = "3. Brigada de Villistas"
+			historical_model = 3 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 3 
+			name = "4. Brigada de Villistas"
+			historical_model = 3 
+			}
+		}	
+		
+	division = {
+		location = 9479  # Durango
+		name = "3. División de Villistas"
+		
+		 regiment = {
+			type = militia_brigade
+			experience = 3 
+			name = "5. Brigada de Villistas"
+			historical_model = 3 
+			}
+		
+		 regiment = {
+			type = militia_brigade 
+			experience = 3 
+			name = "6. Brigada de Villistas"
+			historical_model = 3 
+			}
+		}
+	}

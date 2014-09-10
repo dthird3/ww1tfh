@@ -937,18 +937,34 @@ kill_leader = 60009 #González_Peña
 		 
 	option = {
 		name = "EVT1914_101058_OPTA"
-		MXC = { country_event = 101060                           # Give in to Villa and Zapata
-			}
+		MXC = { country_event = 101060 }                          # Give in to Villa and Zapata
 	}		
 	option = {
 		name = "EVT1914_101058_OPTB"
 		ai_chance = { factor = 100 }		
-		MXC = { country_event = 101062                           # Fight for our country
-			}
+		MXC = { country_event = 101062 }                          # Fight for our country
 		}
 	}	
 	
+# Carranza gives into Villa and Zapata
 
+ country_event = {
+	title = "EVT1910_101060_TITLE"
+	desc = "EVT1910_101060_DESC"
+	id = 101060
+	 
+	picture = "villa_troops"
+	 
+	major = yes
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "ACTION_NAME_FIGHT"
+	}			
+}
 
 
 # Carranza and his supporters fled to Veracruz.
@@ -968,27 +984,34 @@ kill_leader = 60009 #González_Peña
 
 	option = {
 		name = "ACTION_NAME_FIGHT"
-			MXC = { ZZZ = { split_troops = 1.00 } }		# Constitutionalist Army breaks up, some stand down.
+			MXC = { ZZZ = { split_troops = 1.00 } }		# Constitutionalist Army breaks up and flee to Veracruz.
+			remove_brigade = "Ejercito de Carranza HQ"
 			9604 = { secede_province = MXR }   # Mexico City			
 			9623 = { secede_province = MXR }   # Cuernavaca
 			9566 = { secede_province = MXR }   # Pachuca
 			9504 = { secede_province = MXR }   # Zactecas
 			9479 = { secede_province = MXR }   # Durango
-			MXC = { load_oob = MXC_Convention.txt }
-			MXR = { load_oob = MXR_Convention.txt }
+			MXC = { capital = 9624 }       								# Veracruz
+			MXC = { officer_pool = 2000 }
+			9624 = { supplies = 5000 }         							# Veracruz
+			MXR = { supplies = 5000 }
+			MXR = { capital = 9604 }       								# Ciudad de México
 			MXR = { national_unity = -2 }
 			MXR = { dissent = 5 }
 			MXR = { officer_pool = 1000 }
 			MXR = { supplies = 5000 }
-			9604 = { supplies = 5000 }         # Mexico City
+			9604 = { supplies = 5000 }         							# Mexico City
 			MXR = { money = 100 }
 			MXR = { energy = 600 }
 			MXR = { rare_materials = 50 }
 			MXR = { metal = 50 }
 			MXR = { war = { target = MXC } }
 # Remove Zapata and Villa from from MXC
+# Make Durango a VP city
 			kill_leader = 60002 #Zapata,_Emiliano
 			kill_leader = 60005 #Villa,_F_(Pancho)
+			MXC = { load_oob = MXC_Convention.txt }
+			MXR = { load_oob = MXR_Convention.txt }			
 		}			
 	}
 

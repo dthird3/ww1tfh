@@ -1,48 +1,48 @@
- theatre = {
-	location = 9203  # Hermosillo
+theatre = {
+	location = 9624  # Veracruz
 	leader = 59001 # Carranza, V
 	name = "Ejercito de Constitutionalistas"
 	
-	 regiment = {
+	regiment = {
 		type = hq_brigade 
 		name = "Ejercito de Carranza HQ"
 		historical_model = 0 
 		}
 	
-	 army = {
-		location = 9203  # Hermosillo
+	army = {
+		location = 9624  # Veracruz
 		leader = 59003 # Obregón, A
 		name = "Army of Operations"
 		
-		 regiment = {
+		regiment = {
 			type = hq_brigade 
 			name = "Northwest Corps HQ"
 			historical_model = 0 
 			}
 		
-		 division = {
-			location = 9203  # Hermosillo
+		division = {
+			location = 9624  # Veracruz
 			dig_in = 10 
 			is_reserve = no 
 			name = "1. División de Constitutionalistas"
 			
-			 regiment = {
-				type = militia_brigade 
-				experience = 3 
-				name = "1. Brigada de Constitutionalistas"
+			regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "1. Brigada de Infantería"
 				historical_model = 3 
 				}
-			
-			 regiment = {
-				type = militia_brigade 
-				experience = 3 
-				name = "2. Brigada de Constitutionalistas"
+				
+			regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "2. Brigada de Infantería"
 				historical_model = 3 
 				}
 			}
 		
-		 division = {
-			location = 9203  # Hermosillo
+		division = {
+			location = 9624  # Veracruz
 			dig_in = 10 
 			is_reserve = no
 			name = "3. Brigada de Constitutionalistas"
@@ -55,8 +55,8 @@
 				}
 			}
 		
-		 division = {
-			location = 9145  # Caborca
+		division = {
+			location = 9624  # Veracruz
 			dig_in = 10 
 			is_reserve = no
 			name = "4. Brigada de Constitutionalistas"
@@ -70,52 +70,52 @@
 			}
 		}
 	
-	 army = {
-		location = 9419  # Monterrey
+	army = {
+		location = 9624  # Veracruz
 		leader = 59007 # González Peña
 		name = "Northeast Corps"
 		
-		 regiment = {
+		regiment = {
 			type = hq_brigade 
 			name = "Northeast Corps HQ"
 			historical_model = 0 
 			}
 		
-		 division = {
-			location = 9419  # Monterrey
+		division = {
+			location = 9624  # Veracruz
 			dig_in = 10 
 			is_reserve = no 
 			name = "3. División de Constitutionalistas"
 			
-			 regiment = {
-				type = militia_brigade 
-				experience = 3 
-				name = "5. Brigada de Constitutionalistas"
+			regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "3. Brigada de Infantería"
 				historical_model = 3 
 				}
-			
-			 regiment = {
-				type = militia_brigade 
-				experience = 3 
-				name = "6. Brigada de Constitutionalistas"
+				
+			regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "4. Brigada de Infantería"
 				historical_model = 3 
 				}
 			}
 		
-		 division = {
-			location = 9419  # Monterrey
+		division = {
+			location = 9624  # Veracruz
 			dig_in = 10 
 			is_reserve = no
 			name = "4. División de Constitutionalistas"
 			
-			 regiment = {
+			regiment = {
 				type = cavalry_brigade 
 				experience = 3 
 				name = "7. Brigada de Constitutionalistas"
 				historical_model = 3 
 				}
 			
-			 regiment = {
+			regiment = {
 				type = cavalry_brigade 
 				experience = 3 
 				name = "8. Brigada de Constitutionalistas"
@@ -123,20 +123,20 @@
 				}
 			}
 		
-		 division = {
-			location = 9449  # Méndez
+		division = {
+			location = 9624  # Veracruz
 			dig_in = 10 
 			is_reserve = no
 			name = "5. División de Constitutionalistas"
 			
-			 regiment = {
+			regiment = {
 				type = cavalry_brigade 
 				experience = 3 
 				name = "9. Brigada de Constitutionalistas"
 				historical_model = 3 
 				}
 			
-			 regiment = {
+			regiment = {
 				type = cavalry_brigade 
 				experience = 3 
 				name = "10. Brigada de Constitutionalistas"
@@ -145,39 +145,81 @@
 			}
 		}
 	
-	 army = {
-		location = 9147  # Ciudad Juárez
+	army = {
+		location = 9624  # Veracruz
 		leader = 59009 # Natera García
 		name = "Central Corps"
 		
-		 regiment = {
+		regiment = {
 			type = hq_brigade 
 			name = "Central Corps HQ"
 			historical_model = 0 
 			}
 		
-		 division = {
-			location = 9147  # Ciudad Juárez
+		division = {
+			location = 9624  # Veracruz
 			dig_in = 10 
 			is_reserve = no 
 			name = "6. División de Constitutionalistas"
 			
-			 regiment = {
+			regiment = {
 				type = militia_brigade 
 				experience = 3 
 				name = "11. Brigada de Constitutionalistas"
 				historical_model = 3 
 				}
 			
-			 regiment = {
+			regiment = {
 				type = militia_brigade 
 				experience = 3 
 				name = "12. Brigada de Constitutionalistas"
 				historical_model = 3 
 				}
 			}
+			
+		division = {
+			location = 9624  # Veracruz
+			dig_in = 10 
+			is_reserve = no 
+			name = "7. División de Constitutionalistas"
+			
+			regiment = {
+				type = militia_brigade 
+				experience = 3 
+				name = "13. Brigada de Constitutionalistas"
+				historical_model = 3 
+				}
+			}
+			
+		division = {
+			location = 9624  # Veracruz
+			dig_in = 10 
+			is_reserve = no
+			name = "5. División de Constitutionalistas"
+			
+			regiment = {
+				type = cavalry_brigade 
+				experience = 3 
+				name = "11. Brigada de Constitutionalistas"
+				historical_model = 3 
+				}
+			}
+			
+		}
+		
+	navy = {
+		location = 9658  # Acapulco
+		base = 9658  # Acapulco
+		name = "Armada de Mexico"
+		
+		ship = {
+			type = protected_cruiser 
+			experience = 15 
+			name = "Zaragosa"
+			historical_model = 0 
 		}
 	}
+}
 
  military_construction = {
 	cost = 1 
@@ -205,7 +247,7 @@
 	duration = 70 
 	country = MXC 
 	cavalry_brigade = {
-	name = "11. Brigada de Los dorados"
+	name = "12. Brigada de Constitutionalistas"
 	historical_model = 3 
 	}}
 
@@ -215,7 +257,6 @@
 	duration = 70 
 	country = MXC 
 	cavalry_brigade = {
-	name = "12. Brigada de Los dorados"
+	name = "13. Brigada de Constitutionalistas"
 	historical_model = 3 
 	}}
-
