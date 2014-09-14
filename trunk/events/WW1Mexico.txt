@@ -413,20 +413,6 @@
 # General Felipe Angeles - Madero's leader
 
 	
-### Consider using 
-
-#revolt_risk = {
-#	local_ic = -0.02
-#	local_manpower_modifier = -0.02
-#	local_resources = -0.02
-#}
-# local_partisan_Support    add an increase of revolt_risk, so you can see it as Derivation in time of revolt_risk
-	
-
-#  División del Norte at its height numbered some 50,000 men. (1915?)
-		
-	
-	
 # November 1911 Zapata rebels pop ups. 
 
  country_event = {
@@ -474,13 +460,12 @@
 	
 	major = yes
 	
-	mean_time_to_happen = { days = 15 }
+	mean_time_to_happen = { days = 30 }
 
 	trigger = {
 		tag = MXR
 		MXR = { has_country_flag = "zapata_rebels" }
 		not = { MXR = { has_country_flag = "Ten_Tragic_Days" } }
-# MEX doesn't exist AND Madero is Head of State of MXR and NOT 10 Tragic days		
 	}
 	
 	option = {										
@@ -517,7 +502,6 @@
 		tag = MXR
 		MXR = { has_country_flag = "zapata_rebels" }
 		not = { MXR = { has_country_flag = "Ten_Tragic_Days" } }
-# MEX doesn't exist AND Madero is Head of State of MXR and NOT 10 Tragic days		
 	}
 	
 	option = {										
@@ -553,7 +537,6 @@
 		tag = MXR
 		MXR = { has_country_flag = "zapata_rebels" }
 		not = { MXR = { has_country_flag = "Ten_Tragic_Days" } }
-# MEX doesn't exist AND Madero is Head of State of MXR and NOT 10 Tragic days		
 	}
 	
 	option = {										
@@ -787,10 +770,10 @@
 			9659 = { create_revolt = 1 }
 			9622 = { add_province_modifier = { name = "mex_rev" duration = 730 } }
 			9622 = { create_revolt = 1 }
-kill_leader = 60002 #Zapata,_Emiliano
-kill_leader = 60004 #Obregón,_A
-kill_leader = 60005 #Villa,_F_(Pancho)
-kill_leader = 60009 #González_Peña
+			kill_leader = 60002 #Zapata,_Emiliano
+			kill_leader = 60004 #Obregón,_A
+			kill_leader = 60005 #Villa,_F_(Pancho)
+			kill_leader = 60009 #González_Peña
 			
 		}			
 	}
@@ -806,7 +789,7 @@ kill_leader = 60009 #González_Peña
 	picture = "USS_Utah"
 	
 	major = yes
-	 
+	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {										
@@ -985,7 +968,6 @@ kill_leader = 60009 #González_Peña
 	option = {
 		name = "ACTION_NAME_FIGHT"
 			MXC = { ZZZ = { split_troops = 1.00 } }		# Constitutionalist Army breaks up and flee to Veracruz.
-			remove_brigade = "Ejercito de Carranza HQ"
 			9604 = { secede_province = MXR }   # Mexico City			
 			9623 = { secede_province = MXR }   # Cuernavaca
 			9566 = { secede_province = MXR }   # Pachuca
@@ -1010,13 +992,19 @@ kill_leader = 60009 #González_Peña
 			MXR = { manpower = -100 }
 			
 # Remove leaders who changed sides
+			MXR = { head_of_state = 60035 }				    			# Villa
+			MXR = { head_of_government = 60036 }						# Zapata
+			remove_minister = 59055 									# Villa
+			remove_minister = 59056 									# Zapata
 			kill_leader = 59002 #Zapata,_Emiliano
 			kill_leader = 59004 #Villa,_F_(Pancho)
+			kill_leader = 60001 #Madero, F
 			kill_leader = 60004 #Obregón, A
 			kill_leader = 60006 #Huerta, V
 			
 			MXC = { load_oob = MXC_Convention.txt }
-			MXR = { load_oob = MXR_Convention.txt }		
+			MXR = { load_oob = MXR_Convention.txt }	
+			remove_brigade = "Ejercito de Carranza HQ"			
 			MXR = { war = { target = MXC } }
 		}			
 	}
