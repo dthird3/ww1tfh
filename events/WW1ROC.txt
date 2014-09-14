@@ -11,7 +11,7 @@
 	 
 	mean_time_to_happen = {
 		 days = 15
-		 }
+	}
 	major = yes
 	 
 	trigger = {
@@ -19,34 +19,29 @@
 		 has_country_flag = republic_china
 		 not = {
 			 has_country_flag = beiyang_government
-			 }
 		 }
+	}
 	option = {
 		 name = "opta_ROCE1"
 		 ai_chance = {
 			 factor = 100
-			 }
+		 }
 		 release = ROC
 		 ROC = {
 			 inherit = PRC
-			 }
+		 }
 		 PRC = {
-			 any_owned = {
-				 limit = {
-					 is_core = PRC
-					 }
-				 remove_core = PRC
-				 }
-			 }
+			 any_owned = { limit = { is_core = PRC } remove_core = PRC }
+		 }
 		 ROC = {
 			 split_troops = 1.00
-			 }
+		 }
 		 ROC = {
 			 capital = 4979
-			 }
-		 set_country_flag = beiyang_government
 		 }
+		 set_country_flag = beiyang_government
 	}
+}
 
 
 #KMT win the first election campaign
@@ -62,26 +57,27 @@
 	 
 	mean_time_to_happen = {
 		 days = 30
-		 }
+	}
 	 
 	trigger = {
 		 tag = ROC
 		 date = 1913.1.1
 		 not = { has_country_flag = KMT_win_elc }
-		 }
+		 has_country_flag = beiyang_government
+	}
 	 
 	option = {
 		 name = "opta_ROCE2"
 		 ai_chance = {
 			 factor = 100
-			 }
-			 #head_of_government = song
+		 }
+			 head_of_government = 124016
 			 national_unity = 5
 			 popularity = 10
 			 organisation = 10
 			 set_country_flag = KMT_win_elc
-		}
 	}
+}
 
 
 #the threat from KMT
@@ -100,19 +96,19 @@
 		 date = 1913.1.1
 		 has_country_flag = KMT_win_elc
 		 not = { has_country_flag = KMT_threat }
-		 }
+	}
 		 
 	option = {
 		 name = "opta_ROCE3"
 		 ai_chance = {
 			 factor = 100
-			 }
+		 }
 			 national_unity = 5
 			 #add_country_modifier = chinese_want_peace		 
 			 country_event = 999946 #the reaction of Yuan
 			 set_country_flag = KMT_threat
-		}
 	}
+}
 	
 	
 #the reaction of Yuan
@@ -130,18 +126,18 @@
 		 name = "opta_ROCE4"
 		 ai_chance = {
 			 factor = 90
-			 }
+		 }
 			 country_event = 999945 #Song Jiaoren was killed
-		}
+	}
 		
-		option = {
+	option = {
 		 name = "optb_ROCE4" #take it easy...
 		 ai_chance = {
 			 factor = 10
-			 }
+		 }
 			 set_country_flag = not_kill_Song
-		}
 	}
+}
 	
 	
 #Song Jiaoren was killed
@@ -159,14 +155,14 @@
 		 name = "opta_ROCE5"
 		 ai_chance = {
 			 factor = 100
-			 }
+		 }
 			 national_unity = -5
 			 dissent = 5
-			 #remove_minister = "" #Song Jiaoren
+			 remove_minister = 124016
 			 #remove_country_modifier = chinese_want_peace			 
 			 set_country_flag = KMT_Song
-		}
 	}
+}
 	
 
 #Second Revolution
@@ -182,22 +178,20 @@
 		 tag = ROC
 		 has_country_flag = KMT_Song
 		 not = { has_country_flag = 2nd_Revolution }
-		 }
+	}
  
 	option = {
 		 name = "opta_ROCE6"
 		 ai_chance = {
 			 factor = 100
-			 }
+		 }
 			 dissent = 3
-			 #remove_minister = ""
-			 #kill_leader = ""
 			 5834 = { #Guangzhou
-			 create_revolt = 1
+			   create_revolt = 1
 			 }
 			 set_country_flag = 2nd_Revolution
-		}
 	}
+}
 
 	
 #Second Revolution failed
@@ -213,18 +207,19 @@
 		 tag = ROC
 		 5494 = { #Nanjing
 		 controlled_by = ROC
-			 } 
+		 } 
+		 has_country_flag = 2nd_Revolution
 		 not = { has_country_flag = 2nd_Revolution_failed }
-		 }
+	}
  
 	option = {
 		 name = "opta_ROCE7"
 		 ai_chance = {
 			 factor = 100
-			 }
+		 }
 			 set_country_flag = 2nd_Revolution_failed
-		}
 	}
+}
 	
 #Yang Du support for a return of a monarchy
 
@@ -238,29 +233,30 @@
 	trigger = {
 		 tag = ROC
 		 war = no
-		 #minister_alive = Yuan
+		 minister_alive = 124001
 		 has_country_flag = 2nd_Revolution_failed
-		 }
+		 not = { has_country_flag = prepared_to_be_emperor }
+	}
  
 	option = {
 		 name = "opta_ROCE8"
 		 ai_chance = {
 			 factor = 90
-			 }
+		 }
 			 country_event = 999941 #EOC
 			 set_country_flag = prepared_to_be_emperor
-		}
+	}
 		
 	option = {
 		 name = "optb_ROCE8"
 		 ai_chance = {
 			 factor = 10
-			 }
+		 }
 			set_country_flag = yuan_is_not_emperor 
-		}
 	}
+}
 	
-#EOC
+#Empire of China
 
  country_event = {
 	title = "ROCE9"
@@ -272,17 +268,18 @@
 	trigger = {
 		 tag = ROC
 		 has_country_flag = prepared_to_be_emperor
-		 }
+		 not = { has_country_flag = empire_of_china }
+  }
  
 	option = {
 		 name = "opta_ROCE8"
 		 ai_chance = {
 			 factor = 100
-			 }
+		 }
 			 government = imperial
 			 set_country_flag = empire_of_china
-		}
 	}
+}
 	
 ##National Protection War Events
 #War Start
@@ -298,24 +295,59 @@
 		 tag = ROC
 		 has_country_flag = prepared_to_be_emperor
 		 not = { has_country_flag = national_protection_war }
-		 }
+	}
  
 	option = {
 		 name = "opta_ROCE10"
 		 ai_chance = {
 			 factor = 100
-			 }
+		 }
+		 
+		 hunan_region = { 
+			secede_province = HNC add_core = HNC
+		}
+		
+		guizhou_region = { 
+			secede_province = GZC add_core = GZC
+		}
+		
+		guangxi_region = { 
+			secede_province = CGX add_core = CGX
+		}
+		
+		yunnan_region = { 
+			secede_province = CYN add_core = CYN
+		}
+		
 			 release = CYN
 			 release = CGX
 			 release = GZC
 			 release = HNC
-			 war = CYN
-			 war = CGX
-			 war = GZC
-			 war = HNC
+			 ROC = {	
+			 	war = {	
+					target = CYN
+					attacker_goal = { casus_belli = civil_war }
+					defender_goal = { casus_belli = civil_war }
+				} 
+				war = {	
+					target = CGX
+					attacker_goal = { casus_belli = civil_war }
+					defender_goal = { casus_belli = civil_war }
+				} 
+				war = {	
+					target = GZC
+					attacker_goal = { casus_belli = civil_war }
+					defender_goal = { casus_belli = civil_war }
+				} 
+				war = {	
+					target = HNC
+					attacker_goal = { casus_belli = civil_war }
+					defender_goal = { casus_belli = civil_war }
+				} 
+			 }
 			 set_country_flag = national_protection_war
-		}
 	}
+}
 	
 #War End
 #Yuan win 
@@ -335,21 +367,21 @@ country_event = {
 		 ROC = { controls = 7561 }
 		 ROC = { controls = 7541 }
 		 ROC = { controls = 5862 }
-		 }
+	}
  
 	option = {
 		 name = "opta_ROCE11"
 		 ai_chance = {
 			 factor = 100
-			 }
+		 }
 			 ROC = { inherit = CYN }
 			 ROC = { inherit = CGX }
 			 ROC = { inherit = GZC }
 			 ROC = { inherit = HNC }
 			 set_country_flag = national_protection_war_end
 			 set_country_flag = yuan_as_emperor
-		}
 	}
+}
 	
 #National Protection Army win 1
 #The press from Generals
@@ -365,21 +397,21 @@ country_event = {
 		 has_country_flag = national_protection_war
 		 not = { has_country_flag = national_protection_war_end }
 		 not = { has_country_flag = the_press_from_generals }
-		 }
+	}
  
 	option = {
 		 name = "opta_ROCE12"
 		 ai_chance = {
 			 factor = 100
-			 }
+		 }
 			 ROC = { end_war = CYN }
 			 ROC = { end_war = CGX }
 			 ROC = { end_war = GZC }
 			 ROC = { end_war = HNC }
 			 set_country_flag = the_press_from_generals
 			 set_country_flag = yuan_is_not_emperor 
-		}
 	}
+}
 	
 #National Protection Army win 2
 country_event = {
@@ -397,19 +429,19 @@ country_event = {
 		 not = { has_country_flag = national_protection_army_win }
 		 not = { ROC = { controls = 5459 } }
 		 not = { ROC = { controls = 7338 } }
-		 }
+	}
  
 	option = {
 		 name = "opta_ROCE13"
 		 ai_chance = {
 			 factor = 100
-			 }
+		 }
 			 ROC = { end_war = CYN }
 			 ROC = { end_war = CGX }
 			 ROC = { end_war = GZC }
 			 ROC = { end_war = HNC }
 			 set_country_flag = the_press_from_generals
 			 set_country_flag = yuan_is_not_emperor 
-		}
 	}
+}
 	
