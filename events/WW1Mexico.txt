@@ -143,6 +143,8 @@
 			9236 = { secede_province = MXR }   # Guaymas
 			9327 = { secede_province = MXR }   # San Juanito
 			MXR = { load_oob = MXR_1910_madero.txt }
+			MEX = { relation = { who = USA value = -70 } }
+			MXR = { relation = { who = USA value = 70 } }
 			MXR = { capital = 9268 }
 			MXR = { supplies = 5000 }
 			9203 = { supplies = 5000 }         # Hermosillo
@@ -185,6 +187,13 @@
 		9090 = { create_revolt = 1 }
 		7369 = { create_revolt = 1 }
 		MEX = { dissent = 4 }
+		random_country = {
+				limit = { tag = MXR
+					MXR = { ai = yes }
+				}
+				MXR = { load_oob = MXR_1910_madero_AI.txt }
+				MXR = { officer_pool = 800 }
+			}
 		}
 	}
 	
@@ -860,16 +869,9 @@
 
 ########## Constitutionalist v's Conventionalists ##########
 
-# When fighting broke out in 1914 between the Constitutionalists (Carranza, Obregón, etc.) and the Conventionalists (Villa and Zapata) 
-# following the Convention of Aguascalientes, the Constitutional Army numbered 57,000 men, to Villa and Zapata's 72,000 men. 
-
-# But as the Constitutionalists grew stronger, Villa and Zapata grew weaker. 
-
 # Eventually the war against the Conventionalists was won after the assassination of Zapata in 1919 and the surrender of Villa in July 1920. 
 # By 1917, the main fighting of the civil war between the two factions was over, with some minor revolts by Felicistas (supporters of Félix Díaz, 
 # nephew of ousted president Porfirio Díaz). This marked the end of any real resistance to Carranza.	
-
-# Villa recruits Gringo's
 
 
  country_event = {
@@ -881,7 +883,7 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = { days = 7 }
+	mean_time_to_happen = { days = 4 }
 	
 	trigger = {
 		tag = MXC
@@ -895,15 +897,12 @@
 			name = "ACTION_NAME_GREAT"
 			MXC = { capital = 9604 }       								# Ciudad de México
 			MXC = { set_country_flag = MEX_Conv }
-			MXC = {	country_event = 101058 }                            # Convention_of_Aguascalientes
+#			MXC = { country_event = 101058 }	                        # Convention_of_Aguascalientes
 			}
 	}
 
 
 # Convention of Aguascalientes
-
-# After the meeting, the newly reconciled Villa and Zapata entered Mexico City on 6 December, at the head of an army of 60,000 men. 
-
 
  country_event = {
 	title = "EVT1914_101058_TITLE"
@@ -914,7 +913,10 @@
 	 
 	fire_only_once = yes
 	 
-	is_triggered_only = yes
+	trigger = {
+		tag = MXC
+		MXC = { has_country_flag = "MEX_Conv" }
+		}
 		 
 	mean_time_to_happen = { months = 2 }	 
 		 
@@ -994,13 +996,13 @@
 # Remove leaders who changed sides
 			MXR = { head_of_state = 60035 }				    			# Villa
 			MXR = { head_of_government = 60036 }						# Zapata
-			remove_minister = 59055 									# Villa
-			remove_minister = 59056 									# Zapata
-			kill_leader = 59002 #Zapata,_Emiliano
-			kill_leader = 59004 #Villa,_F_(Pancho)
-			kill_leader = 60001 #Madero, F
-			kill_leader = 60004 #Obregón, A
-			kill_leader = 60006 #Huerta, V
+			MXR = { remove_minister = 59055 }							# Villa
+			MXR = { remove_minister = 59056 }							# Zapata
+			MXC = { kill_leader = 59002 }  	#Zapata,_Emiliano
+			MXC = { kill_leader = 59004 }  	#Villa,_F_(Pancho)
+			MXR = { kill_leader = 60001 }	#Madero, F
+			MXR = { kill_leader = 60004 }	#Obregón, A
+			MXR = { kill_leader = 60006 }	#Huerta, V
 			
 			MXC = { load_oob = MXC_Convention.txt }
 			MXR = { load_oob = MXR_Convention.txt }	
@@ -1010,7 +1012,35 @@
 	}
 
 
+# Villa recruits Gringo's
 
+ country_event = {
+	title = "EVT1914_101064_TITLE"
+	desc = "EVT1914_101064_DESC"
+	id = 101064
+	 
+	picture = "Gringos"
+	 
+	major = yes
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = { months = 12 }
+
+	trigger = {
+		tag = MXR
+		exists = MXR
+		exists = MXC
+		MXR = { head_of_state = 60035 }				    			# Villa
+		MXR = { war_with = MXC }
+	}
+
+	option = {
+		name = "ACTION_NAME_GREAT"
+			MXR = { load_oob = MXR_Gringos.txt }
+			9147 = { supplies = 200 }  			
+		}			
+	}
 	
 ##################   DH EVENTS  ###################################################	
 
