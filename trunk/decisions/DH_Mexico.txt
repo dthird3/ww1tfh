@@ -1,7 +1,7 @@
 ## Need to review all and fix to trigger as needed ##
 
 diplomatic_decisions = {
-	 2250500_decision = {                                #Launch_Raids_on_Tucson
+	 101500_decision = {                                #Launch_Raids_on_Tucson
 		ai_will_do = { factor = 1 }
 		
 		potential = {
@@ -11,7 +11,7 @@ diplomatic_decisions = {
 			not = { MXR = { war_with = USA } }
 			date = 1914.8.4
 			not = { date = 1923.12.31 }
-			not = { has_country_flag = decision_2250500 }
+			not = { has_country_flag = raid_tucson }
 			MXC = { has_country_flag = "Constitutionalist_in_power" }
 			}
 			
@@ -21,8 +21,8 @@ diplomatic_decisions = {
 			}
 			 
 		effect = { 
-			country_event = 492                           #Launch_Raids_on_Tucson
-			set_country_flag = decision_2250500
+			country_event = 101500                           #Launch_Raids_on_Tucson
+			set_country_flag = raid_tucson
 			}
 		}
 	
