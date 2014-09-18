@@ -2382,9 +2382,10 @@ kill_leader = 55104 #Méndez
 #Launch Raids on Tucson
 
 country_event = {
-	title = "DH_EVENT_2250500_TITLE"
-	desc = "DH_EVENT_2250500_DESC"
-	id = 492
+	title = "EVT1914_101500_TITLE"
+	desc = "EVT1914_101500_DESC"
+#	desc = "DH_EVENT_2250500_DESC"
+	id = 101500
 	 
 	fire_only_once = yes
 	 
@@ -2393,15 +2394,15 @@ country_event = {
 	mean_time_to_happen = {	days = 7 }
 		 
 	option = {
-		name = "DH_EVENT_2250500_Option7"
+		name = "EVT1914_101500_OPTA"
 		money = -10
 		random_country = {
 			limit = {
 				tag = USA
 				9092 = { units_in_province = 1 }   				#Tucson
 			}
-			MXR = { country_event = 493 }            			#Raid_result_:_resistance_encountered
-			USA = { country_event = 519 }             			#Tucson_raided!
+			MXR = { country_event = 101493 }            			#Raid_result_:_resistance_encountered
+			USA = { country_event = 101500 }             			#Tucson_raided!
 			}
 		
 		random_country = {
@@ -2409,8 +2410,8 @@ country_event = {
 				tag = USA
 				not = {	9092 = { units_in_province = 1 } }    	#Tucson
 			}
-			MXR = {	country_event = 494 }                   	#Raid_result_:_no_resistance_encountered
-			USA = { country_event = 520 }						#Tucson_raided!
+			MXR = {	country_event = 101494 }                   	#Raid_result_:_no_resistance_encountered
+			USA = { country_event = 101500 }						#Tucson_raided!
 		}
 	}
 }
@@ -2421,7 +2422,7 @@ country_event = {
 country_event = {
 	title = "DH_EVENT_2250501_TITLE"
 	desc = "DH_EVENT_2250501_DESC"
-	id = 493
+	id = 101493
 	 
 	fire_only_once = yes
 	 
@@ -2445,7 +2446,7 @@ country_event = {
  country_event = {
 	title = "DH_EVENT_2250502_TITLE"
 	desc = "DH_EVENT_2250502_DESC"
-	id = 494
+	id = 101494
 	 
 	fire_only_once = yes
 	 

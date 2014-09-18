@@ -370,27 +370,33 @@
 
 
 # America Chooses New Freedom 
-country_event = {   
-id = 100533		
-major = yes
-		trigger = {
-		tag = USA	
-		ideology = social_liberal 	
-		date = 1912.11.5	
-		}	
-		fire_only_once = yes
+country_event = { 
 	title = "democrats_win_TITLE" 		
 	desc = "desc_Wilson_wins"	
+	id = 100533
 	
+	picture = "diaz-corral"
+	mean_time_to_happen = { days = 0 }
+	
+	major = yes
+
+	trigger = {
+		tag = USA	
+		ideology = social_liberal 	
+		date = 1912.11.7	
+		}
+		
+	fire_only_once = yes
+		
 	option = {		
 	name = "1912_democrats_win_ACTIONA"	
-	head_of_state = 93232 #Woodrow_Wilson	
+	head_of_state = 93232 		#Woodrow_Wilson	
 	head_of_government = 93280	
 	#consumer_goods_demand = -0.025		
 	money = -100		
 	supplies = -50		
 	dissent = -3		
-	foreign_minister = 93223 #William_Jennings_Bryan
+	foreign_minister = 93223 	#William_Jennings_Bryan
 	armament_minister = 93254 	
 	minister_of_security = 93268 	
 	minister_of_intelligence = 93244 	
@@ -398,5 +404,5 @@ major = yes
 	chief_of_army = 93288 	
 	chief_of_navy = 93289 	
 	chief_of_air = 93191		
-	set_country_flag = newfreedom	}
-	}		 
+	set_country_flag = newfreedom }
+}		 
