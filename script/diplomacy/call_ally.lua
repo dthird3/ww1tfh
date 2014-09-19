@@ -54,7 +54,7 @@ function DiploScore_CallAlly(voAI, voActorTag, voRecipientTag, voObserverTag, vo
 		loDiploScoreObj.Score = 100
 	else
 		-- Must be an alliance so return alliance score
-		loDiploScoreObj.Score = DiploScore_Alliance(voAI, voActorTag, voRecipientTag, voObserverTag, nil)
+		loDiploScoreObj.Score = 0 --DiploScore_Alliance(voAI, voActorTag, voRecipientTag, voObserverTag, nil)
 	end
 
 	loDiploScoreObj.Target.IsExile = loDiploScoreObj.Target.Country:IsGovernmentInExile()
