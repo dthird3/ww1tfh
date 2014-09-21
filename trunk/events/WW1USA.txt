@@ -375,24 +375,24 @@ country_event = {
 	desc = "desc_Wilson_wins"	
 	id = 100533
 	
-	picture = "diaz-corral"
-	mean_time_to_happen = { days = 0 }
+	picture = "NewFreedom"
+		mean_time_to_happen = { days = 0 }
 	
 	major = yes
 
 	trigger = {
 		tag = USA	
 		ideology = social_liberal 	
-		date = 1912.11.7	
+		date = 1912.11.5	
 		}
 		
 	fire_only_once = yes
-		
+
+	
 	option = {		
 	name = "1912_democrats_win_ACTIONA"	
 	head_of_state = 93232 		#Woodrow_Wilson	
-	head_of_government = 93280	
-	#consumer_goods_demand = -0.025		
+	head_of_government = 93280		
 	money = -100		
 	supplies = -50		
 	dissent = -3		
@@ -405,4 +405,32 @@ country_event = {
 	chief_of_navy = 93289 	
 	chief_of_air = 93191		
 	set_country_flag = newfreedom }
+}		 
+# America Chooses New Nationalism 
+country_event = { 
+	title = "Teddy_wins_TITLE"		
+	desc = "desc_Teddy_wins"	
+	id = 100534
+	
+	picture = "NewNationalism"
+		mean_time_to_happen = { days = 0 }
+	
+	major = yes
+
+	trigger = {
+		tag = USA	
+		ideology = social_democrat 	
+		date = 1912.11.5	
+		}
+		
+	fire_only_once = yes
+
+	
+	option = {		
+	name = "1912_Teddy_wins_ACTION"
+	head_of_state = 93228  head_of_government = 93279
+		
+	money = -200		
+	supplies = -100		
+	dissent = -5		neutrality = -5		set_country_flag = new_nationalism}
 }		 
