@@ -13,11 +13,7 @@
 	id = 101002
 	 
 	picture = "diaz-corral"
-	 
 	fire_only_once = yes
-	
-	major = yes
-	
 	mean_time_to_happen = { days = 0 }
 
 	trigger = {
@@ -54,8 +50,6 @@
 	id = 101004
 	 
 	picture = "madero_election"
-		
-	major = yes
 		 
 	fire_only_once = yes
 	
@@ -86,10 +80,8 @@
 	picture = "madero_leading_troops"
 	 
 	major = yes
-	
 	fire_only_once = yes
-	
-	mean_time_to_happen = { days = 15 }
+	mean_time_to_happen = { days = 1 }
 	
 	trigger = {
 		tag = MEX
@@ -116,9 +108,7 @@
 	picture = "madero_leading_troops"
 	 
 	major = yes
-	
 	mean_time_to_happen = { days = 20 }
-	
 	fire_only_once = yes
 
 	trigger = {
@@ -171,9 +161,6 @@
 	picture = "magonistas"
 	 
 	fire_only_once = yes
-	 
-	major = yes
-	
 	mean_time_to_happen = { days = 30 }
 	 
 	trigger = {
@@ -208,9 +195,7 @@
 	picture = "american_troops_mexico"
 	 
 	fire_only_once = yes
-		
 	major = yes
-	
 	is_triggered_only = yes
 		 
 	option = {
@@ -232,8 +217,6 @@
 	picture = "zapata_troops"
 	 
 	fire_only_once = yes
-		
-	major = yes
 
 	trigger = {
 		tag = MEX
@@ -270,8 +253,6 @@
 	picture = "soldiers_in_streets"
 	 
 	fire_only_once = yes
-		
-	major = yes
 
 	trigger = {
 		tag = MEX
@@ -301,7 +282,6 @@
 	picture = "madero_election"
 		
 	major = yes
-
 	is_triggered_only = yes
 		 
 	option = {
@@ -321,7 +301,6 @@
 	picture = "failed_coup"
 		
 	major = yes
-
 	is_triggered_only = yes
 		 
 	option = {
@@ -341,9 +320,7 @@
 	picture = "soldiers_in_streets"
 	
 	fire_only_once = yes
-	
-	major = yes
-	 
+
 	trigger = {
 		tag = MEX
 		MEX = {	war_with = MXR }
@@ -371,9 +348,7 @@
 	picture = "madero_election"
 	
 	fire_only_once = yes
-	
 	major = yes
-	 
 	is_triggered_only = yes
 	
 	option = {										
@@ -399,9 +374,6 @@
 	picture = "diaz_on_horse"
 	
 	fire_only_once = yes
-	
-	major = yes
-	 
 	is_triggered_only = yes
 	
 	option = {										
@@ -432,13 +404,9 @@
 	picture = "zapata_troops"
 	
 #	fire_only_once = yes      continual rebel pop up
-	
-	major = yes
-	
-	mean_time_to_happen = { months = 3 }
+	mean_time_to_happen = { months = 2 }
 
 	trigger = {
-# MEX doesn't exist AND Madero is Head of State of MXR and NOT 10 Tragic days
 		tag = MXR
 		MXR = { has_country_flag = "diaz_defeated" }
 		not = { MXR = { has_country_flag = "Ten_Tragic_Days" } }
@@ -466,10 +434,7 @@
 	picture = "Mex_Rebels"
 	
 #	fire_only_once = yes      # continual rebel pop up
-	
-	major = yes
-	
-	mean_time_to_happen = { days = 30 }
+	mean_time_to_happen = { months = 2 }
 
 	trigger = {
 		tag = MXR
@@ -502,10 +467,7 @@
 	picture = "Mex_Rebels"
 	
 #	fire_only_once = yes      continual rebel pop up
-	
-	major = yes
-	
-	mean_time_to_happen = { months = 3 }
+	mean_time_to_happen = { months = 4 }
 
 	trigger = {
 		tag = MXR
@@ -537,9 +499,6 @@
 	picture = "Mex_Rebels"
 	
 	fire_only_once = yes      # Once off rebellion
-	
-	major = yes
-	
 	mean_time_to_happen = { months = 8 }
 
 	trigger = {
@@ -568,9 +527,6 @@
 	picture = "henry_wilson"
 	
 	fire_only_once = yes      
-	
-	major = yes
-
 	is_triggered_only = yes
 	
 	option = {	
@@ -597,9 +553,7 @@
 	picture = "soldiers_in_streets"
 	
 	fire_only_once = yes  
-	
 	major = yes
-	
 	mean_time_to_happen = { days = 5 }
 
 	trigger = {
@@ -629,9 +583,7 @@
 	picture = "soldiers_in_streets"
 	
 	fire_only_once = yes 
-
 	major = yes
-	
 	mean_time_to_happen = { days = 5 }
 	
 	trigger = {
@@ -660,9 +612,7 @@
 	picture = "huerta"
 	
 	fire_only_once = yes      
-	
 	major = yes
-	
 	mean_time_to_happen = { days = 2 }
 
 	trigger = {
@@ -697,9 +647,7 @@
 	picture = "failed_coup"
 	
 	fire_only_once = yes      
-	
 	major = yes
-	
 	mean_time_to_happen = { days = 2 }
 
 	trigger = {
@@ -730,9 +678,7 @@
 	id = 101046
 	 
 	picture = "villa_troops"
-	 
 	major = yes
-	
 	fire_only_once = yes
 
 	mean_time_to_happen = { days = 15 }
@@ -783,7 +729,6 @@
 			kill_leader = 60004 #Obregón,_A
 			kill_leader = 60005 #Villa,_F_(Pancho)
 			kill_leader = 60009 #González_Peña
-			
 		}			
 	}
 
@@ -815,9 +760,7 @@
 	id = 101050
 	 
 	picture = "Vera_Cruz_1"
-	
 	major = yes
-	 
 	is_triggered_only = yes
 	
 	option = {										
@@ -836,9 +779,6 @@
 	id = 101052
 	 
 	picture = "Niagara_peace"
-	
-	major = yes
-	 
 	is_triggered_only = yes
 	
 	option = {										
@@ -855,9 +795,7 @@
 	id = 101054
 	 
 	picture = "Troops_Leave"
-	
 	major = yes
-	 
 	is_triggered_only = yes
 	
 	option = {										
@@ -882,9 +820,6 @@
 	picture = "provisional_government"
 	 
 	fire_only_once = yes
-	
-	major = yes
-	 
 	mean_time_to_happen = { days = 4 }
 	
 	trigger = {
@@ -913,8 +848,6 @@
 	picture = "convention_of_aguascalientes"
 	 
 	fire_only_once = yes
-	
-	major = yes
 	 
 	trigger = {
 		tag = MXC
@@ -944,9 +877,7 @@
 	picture = "failed_coup"
 	 
 	major = yes
-	
 	fire_only_once = yes
-
 	is_triggered_only = yes
 
 	option = { name = "ACTION_NAME_DAMN" }			
@@ -963,9 +894,7 @@
 	picture = "constitutionalist_troops"
 	 
 	major = yes
-	
 	fire_only_once = yes
-
 	is_triggered_only = yes
 
 	option = {
@@ -1021,11 +950,9 @@
 	id = 101064
 	 
 	picture = "Gringos"
-	 
+ 
 	major = yes
-	
 	fire_only_once = yes
-	
 	mean_time_to_happen = { months = 12 }
 
 	trigger = {
