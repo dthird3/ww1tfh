@@ -332,8 +332,6 @@ strategic_air_command = 0
 
 
 
-
-
 1914.1.1 = {
 infantry_theory = 1
 infantry_practical = 1
@@ -387,9 +385,9 @@ militia_support = 1
 militia_guns = 1
 militia_at = 0
 infantry_activation = 1
-smallarms_technology = 0
-infantry_support = 0
-infantry_guns = 0
+smallarms_technology = 2
+infantry_support = 2
+infantry_guns = 2
 infantry_at = 0
 engineer_brigade_activation = 0
 engineer_bridging_equipment = 0
@@ -536,22 +534,22 @@ elastic_defence = 0
 operational_level_command_structure = 0
 schwerpunkt = 0
 blitzkrieg = 0
-tactical_command_structure = 0
+tactical_command_structure = 1
 superior_firepower = 0
 delay_doctrine = 0
 integrated_support_doctrine = 0
-mechanized_offensive = 0
-infantry_warfare = 0
+mechanized_offensive = 1
+infantry_warfare = 1
 trench_warfare = 0
 central_planning = 0
 grand_battle_plan = 0
-mass_assault = 0
+mass_assault = 1
 special_forces = 0
 assault_concentration = 0
-operational_level_organisation = 0
-large_front = 0
-human_wave = 0
-peoples_army = 0
+operational_level_organisation = 1
+large_front = 1
+human_wave = 1
+peoples_army = 1
 large_formations = 0
 guerilla_warfare = 0
 fleet_auxiliary_carrier_doctrine = 0
@@ -606,14 +604,10 @@ scout_pilot_training = 0
 strategic_air_command = 0
 }
 
-1914.1.1 = { 
-head_of_state = 60032 #Victoriano_Huerta
-
-			 head_of_government = 60032 #Victoriano_Huerta
- }     
-1914.1.1 = { oob = "MXR_1914.txt" }                  # Huerta's army
+1914.1.1 = { head_of_state = 60032             # Victoriano_Huerta
+			 head_of_government = 60032 }      # Victoriano_Huerta
+ 
+1914.1.1 = { oob = "MXR_1914.txt" }            # Huerta's army
 1914.1.1 = { neutrality = 100 
 			 officers_ratio = 1.0
-			 set_country_flag = "Huerta_Coup"
-			 set_country_flag = "Tampico" } 
-			 
+			 set_country_flag = "Huerta_Coup" } 			 
