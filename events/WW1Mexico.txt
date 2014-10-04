@@ -800,7 +800,6 @@
 	
 	option = {										
 		name = "ACTION_NAME_GREAT"
-#		MXC = { threat { who = USA value = -5 } }
 		}
 	}	
 	
@@ -834,6 +833,7 @@
 			name = "ACTION_NAME_GREAT"
 			MXC = { capital = 9604 }       								# Ciudad de México
 			MXC = { set_country_flag = MEX_Conv }
+			USA = { set_country_flag = Niagara_Peace }					# Ensure USA leaves Vera Cruz if not already triggered.
 			}
 	}
 
