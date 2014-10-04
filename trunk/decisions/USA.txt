@@ -126,10 +126,9 @@ diplomatic_decisions = {
 		ai_will_do = { factor = 1 }
 		potential = {
 			tag = USA
-#			MXR = { has_country_flag = "Huerta_Coup" }
 			exists = MXR
 			exists = MXC
-			MXR = { head_of_state = 60032 }              # Huerta is Head of State
+			MXR = { head_of_state = 60032 }                 # Huerta is Head of State
 			USA = { not = { has_country_flag = Huerta_embargoed } }
 		}
 		
@@ -145,27 +144,6 @@ diplomatic_decisions = {
 			}
 		USA = { set_country_flag = Huerta_embargoed }
 		MXR = { country_event = 101048 }					# USA embargoes MXR
-		}
-	}
-
-	
-#  (REWORK to return Veracruz after war is over - regardless of who wins)		
-	Leave_Veracruz = {                                   		#Leave_Veracruz
-		ai_will_do = { factor = 1 }
-		potential = {
-			USA = { has_country_flag = Veracruz_occupied }
-		}
-		allow = {
-			USA = { has_country_flag = Niagara_Peace }
-		or = { 
-			not = { MXR = { head_of_state = 60032 } }        # Huerta is NOT Head of State
-			not = { exists = MXR }
-		}
-		}
-
-		effect = {
-			USA = { country_event = 101516 }					# USA Leave_Veracruz
-			MXC = { country_event = 101054 }					# USA Leave_Veracruz
 		}
 	}
 }
