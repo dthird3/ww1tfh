@@ -704,14 +704,15 @@
 			9449 = { secede_province = MXC }   # Mendez
 			MXC = { load_oob = MXC_1913_carranza.txt }
 			MXC = { officer_pool = 1000 }
-			MXC = { supplies = 5000 }
-			9419 = { supplies = 5000 }         # Monterrey
-			9147 = { supplies = 5000 }         # Ciudad Juarez
-			MXC = { money = 100 }
-			MXC = { energy = 600 }
-			MXC = { rare_materials = 50 }
-			MXC = { metal = 50 }
+			MXC = { supplies = +5000 }
+			9419 = { supplies = +5000 }         # Monterrey
+			9147 = { supplies = +5000 }         # Ciudad Juarez
+			MXC = { money = +100 }
+			MXC = { energy = +600 }
+			MXC = { rare_materials = +100 }
+			MXC = { metal = +100 }
 			MXC = { war = { target = MXR } }
+			USA = { relation = { who = MXR value = -50 }
 #  HOW TO GET THESE TO APPLY TO THE 1914 START?????		
 			9660 = { add_province_modifier = { name = "mex_rev" duration = 730 } }
 			9660 = { create_revolt = 1 }
@@ -767,7 +768,7 @@
 		name = "ACTION_NAME_DAMN"
 		9624 = { add_core = USA }
 		MXR = { 9624 = { secede_province = USA } }				# Veracruz
-#		MXR = { threat { who = USA value = 5 } }
+		USA = { relation = { who = MXR value = -50 }
 		}
 	}
 	
@@ -908,13 +909,13 @@
 			9479 = { secede_province = MXR }   # Durango
 			MXC = { capital = 9624 }       								# Veracruz
 			MXC = { officer_pool = 2000 }
-			9624 = { supplies = 2000 }         							# Veracruz
-			MXC = { supplies = 3000 }
-			MXC = { money = 100 }
-			MXC = { energy = 600 }
-			MXC = { rare_materials = 50 }
-			MXC = { metal = 50 }
-			MXC = { manpower = 50 }
+			9624 = { supplies = +2000 }         							# Veracruz
+			MXC = { supplies = +3000 }
+			MXC = { money = +100 }
+			MXC = { energy = +600 }
+			MXC = { rare_materials = +100 }
+			MXC = { metal = +100 }
+			MXC = { manpower = +50 }
 
 			MXR = { capital = 9604 }       								# Ciudad de México
 			MXR = { national_unity = +5 }
@@ -951,10 +952,7 @@
 	id = 101064
 	 
 	picture = "Gringos"
- 
-	major = yes
-	fire_only_once = yes
-	mean_time_to_happen = { months = 12 }
+ 	mean_time_to_happen = { months = 12 }
 
 	trigger = {
 		tag = MXR
@@ -967,1167 +965,137 @@
 	option = {
 		name = "ACTION_NAME_GREAT"
 			MXR = { load_oob = MXR_Gringos.txt }
-			9147 = { supplies = 200 }  			
+			9147 = { supplies = +200 }  			
 		}			
-	}
+}
 	
-##################   DH EVENTS  ###################################################	
+	
+# New recruits (If rebels hold at least 20% of territory)
 
-#Huerta is victorious!
+country_event = {
+	title = "EVT1914_101066_TITLE"
+	desc = "EVT1914_101066_DESC"
+	picture = "villa_troops"
+	id = 101066
+	 
+	mean_time_to_happen = { days = 90 }
+	
+	trigger = {
+		exists = MXR
+		exists = MXC
+		MXR = { head_of_state = 60035 }				    			# Villa
+		MXR = { war_with = MXC }
+		MXR = { not = { lost_national = 0.80 } }
+		date = 1914.10.1 }
+
+	option = {
+		ai_chance = { factor = 1 }
+		name = "ACTION_NAME_GREAT"
+		random_list = {
+			15 = { MXR = { manpower = 3 }}
+			20 = { MXR = { manpower = 2 }}
+			30 = { MXR = { manpower = 1 }}
+			35 = { MXR = { manpower = 0.5 }}
+		}
+	}
+}
+
+
+# Captured supplies
 
  country_event = {
-	title = "DH_EVENT_2038603_TITLE"
-	desc = "DH_EVENT_2038603_DESC"
-	id = 192
+	title = "DH_EVENT_2038552_TITLE"
+	desc = "DH_EVENT_2038552_DESC"
+	id = 504
 	 
-	picture = "Rheinland"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = {
-		 days = 7
-		 }
+	mean_time_to_happen = { days = 90 }
+	
 	trigger = {
-		 war = no
-		 #head_of_state = 14700068 #Victoriano_Huerta
-		not = {
-			 exists = MXR
-			 has_global_flag = 2038601_EVENT_DONE#
-			 has_global_flag = 2038603_EVENT_DONE#
-			 }
-		 tag = MEX
-		 date = 1914.1.1
-		 not = {
-			 date = 1920.12.30
-			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038603#
-			 }
-		 }
+		tag = MXR
+		war = yes
+		not = { supplies = 100 }
+		not = { total_ic = 7 }
+		date = 1910.1.1
+		not = { date = 1923.12.30 } }
 	option = {
-		 name = "DH_EVENT_2038603_Option7"
-		 dissent = -5
-		 7369 = {#Tijuana
-			create_revolt = 3
-			 }
-		 9589 = {#Mérida
-			create_revolt = 3
-			 }
-		 set_country_flag = MEX_Conv
-		 set_global_flag = SLEEPEVENT_2038601
-		 set_global_flag = SLEEPEVENT_2038602
-		 set_global_flag = 2038603_EVENT_DONE#
-		 }
+		ai_chance = { factor = 5 }
+		name = "DH_EVENT_2038552_Option7"
+		supplies = 25 }
+	option = {
+		ai_chance = { factor = 10 }
+		name = "DH_EVENT_2038552_Option8"
+		supplies = 50 }
+	option = {
+		ai_chance = { factor = 20 }
+		name = "DH_EVENT_2038552_Option9"
+		supplies = 200
+		money = 20 }
+	option = {
+		ai_chance = { factor = 50 }
+		name = "DH_EVENT_2038552_Option10"
+		supplies = 350
+		money = 50 }
 	}
 
 
-#Villistas submit to us
+# Smuggled supplies
 
  country_event = {
-	title = "DH_EVENT_2038607_TITLE"
-	desc = "DH_EVENT_2038607_DESC"
-	id = 196
+	title = "DH_EVENT_2038553_TITLE"
+	desc = "DH_EVENT_2038553_DESC"
+	id = 505
 	 
-	picture = "Peace_conference"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
+	mean_time_to_happen = { days = 90 }
 	trigger = {
-		 tag = MXR
-		 }
-	option = {
-		 name = "DH_EVENT_2038607_Option7"
-		 THIS = {
-			 inherit = MXR
-			 }
-		 dissent = -3
-		 }
-	}
-
-
-#Zapatistas submit to us
-
- country_event = {
-	title = "DH_EVENT_2038608_TITLE"
-	desc = "DH_EVENT_2038608_DESC"
-	id = 197
-	 
-	picture = "Peace_conference"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	trigger = {
-		 tag = MXR
-		 }
-	option = {
-		 name = "DH_EVENT_2038608_Option7"
-		 THIS = {
-			 inherit = MXR
-			 }
-		 dissent = -3
-		 }
-	}
-
-
-#Constitutionalistas win the Mexican Revolution
-
- country_event = {
-	title = "DH_EVENT_2038609_TITLE"
-	desc = "DH_EVENT_2038609_DESC"
-	id = 198
-	 
-	picture = "Rheinland"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = { days = 7 }
-	trigger = {
-		 war = no
-		 not = {
-			 exists = MEX
-			 exists = MXR
-			 }
-		 9604 = {#Ciudad_de_México
-			controlled_by = MXR
-			 }
-		 tag = MXR
-		 date = 1914.1.1
-		 not = {
-			 date = 1920.12.30
-			 }
-		 }
-	option = {
-		 name = "DH_EVENT_2038609_Option7"
-		 dissent = -5
-		 MEX = {
-			 country_event = 199 #Carranza_leads_Mexico!
+		war = yes
+		not = { supplies = 100 }
+		not = { total_ic = 5 }
+		or = {
+			and = {
+				9604 = {						#Ciudad_de_México
+					controlled_by = MEX }
+				MXR = { war_with = MEX }
+				}
+			and = {
+				9604 = {						#Ciudad_de_México
+					controlled_by = MXR }
+				MXR = { war_with = MXR }
+				}
 			}
-		 set_global_flag = 2038609_EVENT_DONE#
+			 
+		tag = MXR
+		date = 1910.1.1
+		not = { date = 1917.12.30 } }
+		
+	option = { ai_chance = { factor = 3 }
+		 name = "DH_EVENT_2038553_Option7"
+		 supplies = 20
+		 }
+	option = { ai_chance = { factor = 10 }
+		 name = "DH_EVENT_2038553_Option8"
+		 supplies = 40
+		 }
+	option = {
+		 ai_chance = { factor = 20 }
+		 name = "DH_EVENT_2038553_Option9"
+		 supplies = 60
+		 }
+	option = {
+		 ai_chance = { factor = 35 }
+		 name = "DH_EVENT_2038553_Option10"
+		 supplies = 100
 		 }
 	}
 
+##################  ASSASSINATION of ZAPATA and VILLA#############################
 
-#Carranza leads Mexico!
-#  Aguilar
-#  Altamirano
-#  Argumedo
-#  Beltrán Castañares
-#  Blanquet
-#  Bravo
-#  Cartón
-#  Cejudo
-#  Carmen Curiel
-#  Casso López
-#  Chacón
-#  Dávila
-#  Delgadillo
-#  Lambotte
-#  Eguía Lis
-#  Escandón y Barrón
-#  Gallardo
-#  Gil
-#  Gorostieta y Velarde
-#  Harrotian
-#  Huerta
-#  Jiménez Castro
-#  Arnold
-#  Lojero
-#  Maas Águila
-#  Maas Flores
-#  Andringa
-#  Maldonado
-#  Medina Barrón
-#  Mercado
-#  Mier
-#  Mondragón
-#  Morelos
-#  Mass
-#  Monter
-#  Navarro
-#  Ocón
-#  Ojeda
-#  Olea
-#  Orozco
-#  Orpinel
-#  Poloney
-#  Rasgado
-#  Reyes
-#  Robles
-#  Rojas
-#  Rubio Navarrete
-#  Ruiz
-#  Salazar
-#  Soberanes
-#  Téllez
-#  Toro
-#  Trucy Aubert
-#  Velasco
-#  Yarza
-#  Zozaya
-#  Zapata Emiliano
 
- country_event = {
-	title = "DH_EVENT_2038610_TITLE"
-	desc = "DH_EVENT_2038610_DESC"
-	id = 199
-	 
-	picture = "Rheinland"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	trigger = {
-		 tag = MEX
-		 }
-	option = {
-		 name = "DH_EVENT_2038610_Option7"
-		 national_unity = -5
-		 neutrality = 16
-		head_of_state = 55109 #Venustiano_Carranza
-		head_of_government = 55109 #Venustiano_Carranza
-		foreign_minister = 55115 #Cándido_Aguilar
-armament_minister = 55097 #Francisco_Escudero
 
-		minister_of_security = 55132 #Manuel_Aguirre_Berlanga
 
+	
+##################   EVENTS after Constitutionals v's Conventionalists ###################################################	
 
-		minister_of_intelligence = 55002 #Eduardo_Hay
-
-		chief_of_staff = 55137 #Ignacio_L._Pesqueira
-
-		chief_of_army = 55137 #Ignacio_L._Pesqueira
-		chief_of_navy = 55137 #Ignacio_L._Pesqueira
-		chief_of_air = 55144 #Alberto_Salinas_Carranza
-
-		remove_minister = 60032 #Victoriano_Huerta
-remove_minister = 55068 #Félix_Díaz
-remove_minister = 55069 #Francisco_León_de_la_Barra
-remove_minister = 55070 #Carlos_Pereyra
-remove_minister = 55071 #Manuel_Garza_Aldape
-remove_minister = 55072 #Federico_Gamboa
-remove_minister = 55073 #Antonio_de_la_Peña_y_Reyes
-remove_minister = 55074 #Querido_Moheno
-remove_minister = 55075 #José_López_Portillo_y_Rojas
-remove_minister = 55076 #Roberto_Esteva_Ruiz
-remove_minister = 55077 #Francisco_S._Carvajal
-remove_minister = 55078 #Ignacio_Alcocer
-remove_minister = 55079 #Salomé_Botello
-remove_minister = 55080 #Alberto_García_Granados
-remove_minister = 55081 #Aureliano_Urrutia
-remove_minister = 55082 #Pascual_Orozco
-remove_minister = 55083 #Manuel_Mondragón
-remove_minister = 55084 #Aureliano_Blanquet
-remove_minister = 55085 #José_Refugio_Velasco
-remove_minister = 55086 #Miguel_Lebrija
-remove_minister = 55087 #Juan_Guillermo_Villasana
-
-kill_leader = 55009 #Aguilar
-kill_leader = 55010 #Altamirano
-kill_leader = 55011 #Argumedo
-kill_leader = 55012 #Beltrán_Castañares
-kill_leader = 55013 #Blanquet
-kill_leader = 55014 #Bravo
-kill_leader = 55015 #Cartón
-kill_leader = 55016 #Cejudo
-kill_leader = 55017 #Carmen_Curiel
-kill_leader = 55018 #Casso_López
-kill_leader = 55019 #Chacón
-kill_leader = 55020 #Dávila
-kill_leader = 55021 #Delgadillo
-kill_leader = 9024 #Lambotte
-kill_leader = 55023 #Eguía_Lis
-kill_leader = 55024 #Escandón_y_Barrón
-kill_leader = 55025 #Gallardo
-kill_leader = 55026 #Gil
-kill_leader = 55027 #Gorostieta_y_Velarde
-kill_leader = 55028 #Harrotian
-kill_leader = 55005 #Huerta,_V
-kill_leader = 55029 #Jiménez_Castro
-kill_leader = 9033 #Arnold
-kill_leader = 55031 #Lojero
-kill_leader = 55032 #Maas_Águila
-		#kill_leader = 14710026 #Maas_Flores
-kill_leader = 9037 #Andringa
-kill_leader = 55034 #Maldonado
-kill_leader = 55035 #Medina_Barrón
-kill_leader = 55036 #Mercado
-kill_leader = 55037 #Mier
-kill_leader = 55038 #Mondragón
-kill_leader = 55039 #Morelos
-kill_leader = 55040 #Mass
-kill_leader = 55041 #Monter
-kill_leader = 55042 #Navarro
-kill_leader = 55043 #Ocón
-kill_leader = 55044 #Ojeda
-kill_leader = 55045 #Olea
-kill_leader = 55006 #Orozco,_Pascual
-kill_leader = 55046 #Orpinel
-kill_leader = 55047 #Poloney
-kill_leader = 55048 #Rasgado
-kill_leader = 55002 #Reyes,_B
-kill_leader = 55049 #Robles
-kill_leader = 55050 #Rojas
-kill_leader = 55051 #Rubio_Navarrete
-kill_leader = 55052 #Ruiz
-kill_leader = 55053 #Salazar
-kill_leader = 55054 #Soberanes
-kill_leader = 55055 #Téllez
-kill_leader = 55056 #Toro
-kill_leader = 55057 #Trucy_Aubert
-kill_leader = 55058 #Velasco
-kill_leader = 55059 #Yarza
-kill_leader = 55060 #Zozaya
-
-remove_minister = 55088 #Francisco_Lagos_Cházaro
-remove_minister = 55089 #Eulalio_Gutiérrez_Ortiz
-remove_minister = 55090 #Francisco_'Pancho'_Villa
-remove_minister = 55091 #Emiliano_Zapata
-remove_minister = 55092 #José_Ortiz_Rodriguez
-remove_minister = 55093 #Miguel_Díaz_Lombardo
-remove_minister = 55094 #Ignacio_Borrego
-remove_minister = 55095 #Alberto_B._Piña
-remove_minister = 55096 #Julio_Ramírez_Wiella
-remove_minister = 55097 #Francisco_Escudero
-remove_minister = 55098 #Valentín_Gama_y_Cruz
-remove_minister = 55099 #Luis_Zubiría_y_Campa
-remove_minister = 55100 #Adolfo_Francisco_Salinas
-remove_minister = 55101 #Santiago_González_Cordero
-remove_minister = 55102 #José_Lucio_Blanco_Fuentes
-remove_minister = 55103 #José_Quevedo
-remove_minister = 55104 #José_Isabel_Robles
-remove_minister = 55105 #Francisco_'Pancho'_Villa_
-remove_minister = 55106 #Francisco_Pacheco
-remove_minister = 55107 #Alfredo_Serratos_Amador
-remove_minister = 55108 #Pedro_Caloca_Larios
-
-		#kill_leader = 14710184 #Zapata_Emiliano
-		 }
-	}
-
-
-#Villistas win the Mexican Revolution
-
- country_event = {
-	title = "DH_EVENT_2038611_TITLE"
-	desc = "DH_EVENT_2038611_DESC"
-	id = 200
-	 
-	picture = "Rheinland"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = {
-		 days = 7
-		 }
-	trigger = {
-		 war = no
-		 not = {
-			 exists = MEX
-			 exists = MXR
-			 }
-		 9604 = {#Ciudad_de_México
-			controlled_by = MXR
-			 }
-		 tag = MXR
-		 date = 1914.1.1
-		 not = {
-			 date = 1920.12.30
-			 }
-		 }
-	option = {
-		 name = "DH_EVENT_2038611_Option7"
-		 dissent = -5
-		 MEX = {
-			 country_event = 201 #Villa_leads_Mexico!
-			}
-		 }
-	}
-
-
-#Villa leads Mexico!
-#  Aguilar
-#  Altamirano
-#  Argumedo
-#  Beltrán Castañares
-#  Blanquet
-#  Bravo
-#  Cartón
-#  Cejudo
-#  Carmen Curiel
-#  Casso López
-#  Chacón
-#  Dávila
-#  Delgadillo
-#  Lambotte
-#  Eguía Lis
-#  Escandón y Barrón
-#  Gallardo
-#  Gil
-#  Gorostieta y Velarde
-#  Harrotian
-#  Huerta
-#  Jiménez Castro
-#  Arnold
-#  Lojero
-#  Maas Águila
-#  Maas Flores
-#  Andringa
-#  Maldonado
-#  Medina Barrón
-#  Mercado
-#  Mier
-#  Mondragón
-#  Morelos
-#  Mass
-#  Monter
-#  Navarro
-#  Ocón
-#  Ojeda
-#  Olea
-#  Orozco
-#  Orpinel
-#  Poloney
-#  Rasgado
-#  Reyes
-#  Robles
-#  Rojas
-#  Rubio Navarrete
-#  Ruiz
-#  Salazar
-#  Soberanes
-#  Téllez
-#  Toro
-#  Trucy Aubert
-#  Velasco
-#  Yarza
-#  Zozaya
-#  Azueta
-#  Villasana
-#  Obregón
-#  Malpica
-#  Zapata Emiliano
-
- country_event = {
-	title = "DH_EVENT_2038612_TITLE"
-	desc = "DH_EVENT_2038612_DESC"
-	id = 201
-	 
-	picture = "Rheinland"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	trigger = {
-		 tag = MEX
-		 }
-	option = {
-		 name = "DH_EVENT_2038612_Option7"
-		 national_unity = -10
-		 neutrality = 23
-		head_of_state = 55088 #Francisco_Lagos_Cházaro
-
-		head_of_government = 55090 #Francisco_'Pancho'_Villa
-
-		foreign_minister = 55094 #Ignacio_Borrego
-armament_minister = 55098 #Valentín_Gama_y_Cruz
-
-		minister_of_security = 55088 #Francisco_Lagos_Cházaro
-
-		minister_of_intelligence = 55104 #José_Isabel_Robles
-
-		chief_of_staff = 55105 #Francisco_'Pancho'_Villa_
-
-		chief_of_army = 55106 #Francisco_Pacheco
-
-		chief_of_navy = 55106 #Francisco_Pacheco
-		chief_of_air = 55108 #Pedro_Caloca_Larios
-
-		remove_minister = 60032 #Victoriano_Huerta
-remove_minister = 55068 #Félix_Díaz
-remove_minister = 55069 #Francisco_León_de_la_Barra
-remove_minister = 55070 #Carlos_Pereyra
-remove_minister = 55071 #Manuel_Garza_Aldape
-remove_minister = 55072 #Federico_Gamboa
-remove_minister = 55073 #Antonio_de_la_Peña_y_Reyes
-remove_minister = 55074 #Querido_Moheno
-remove_minister = 55075 #José_López_Portillo_y_Rojas
-remove_minister = 55076 #Roberto_Esteva_Ruiz
-remove_minister = 55077 #Francisco_S._Carvajal
-remove_minister = 55078 #Ignacio_Alcocer
-remove_minister = 55079 #Salomé_Botello
-remove_minister = 55080 #Alberto_García_Granados
-remove_minister = 55081 #Aureliano_Urrutia
-remove_minister = 55082 #Pascual_Orozco
-remove_minister = 55083 #Manuel_Mondragón
-remove_minister = 55084 #Aureliano_Blanquet
-remove_minister = 55085 #José_Refugio_Velasco
-remove_minister = 55086 #Miguel_Lebrija
-remove_minister = 55087 #Juan_Guillermo_Villasana
-
-kill_leader = 55009 #Aguilar
-kill_leader = 55010 #Altamirano
-kill_leader = 55011 #Argumedo
-kill_leader = 55012 #Beltrán_Castañares
-kill_leader = 55013 #Blanquet
-kill_leader = 55014 #Bravo
-kill_leader = 55015 #Cartón
-kill_leader = 55016 #Cejudo
-kill_leader = 55017 #Carmen_Curiel
-kill_leader = 55018 #Casso_López
-kill_leader = 55019 #Chacón
-kill_leader = 55020 #Dávila
-kill_leader = 55021 #Delgadillo
-kill_leader = 9024 #Lambotte
-kill_leader = 55023 #Eguía_Lis
-kill_leader = 55024 #Escandón_y_Barrón
-kill_leader = 55025 #Gallardo
-kill_leader = 55026 #Gil
-kill_leader = 55027 #Gorostieta_y_Velarde
-kill_leader = 55028 #Harrotian
-kill_leader = 55005 #Huerta,_V
-kill_leader = 55029 #Jiménez_Castro
-kill_leader = 9033 #Arnold
-kill_leader = 55031 #Lojero
-kill_leader = 55032 #Maas_Águila
-
-		#kill_leader = 14710026 #Maas_Flores
-kill_leader = 9037 #Andringa
-kill_leader = 55034 #Maldonado
-kill_leader = 55035 #Medina_Barrón
-kill_leader = 55036 #Mercado
-kill_leader = 55037 #Mier
-kill_leader = 55038 #Mondragón
-kill_leader = 55039 #Morelos
-kill_leader = 55040 #Mass
-kill_leader = 55041 #Monter
-kill_leader = 55042 #Navarro
-kill_leader = 55043 #Ocón
-kill_leader = 55044 #Ojeda
-kill_leader = 55045 #Olea
-kill_leader = 55006 #Orozco,_Pascual
-kill_leader = 55046 #Orpinel
-kill_leader = 55047 #Poloney
-kill_leader = 55048 #Rasgado
-kill_leader = 55002 #Reyes,_B
-kill_leader = 55049 #Robles
-kill_leader = 55050 #Rojas
-kill_leader = 55051 #Rubio_Navarrete
-kill_leader = 55052 #Ruiz
-kill_leader = 55053 #Salazar
-kill_leader = 55054 #Soberanes
-kill_leader = 55055 #Téllez
-kill_leader = 55056 #Toro
-kill_leader = 55057 #Trucy_Aubert
-kill_leader = 55058 #Velasco
-kill_leader = 55059 #Yarza
-kill_leader = 55060 #Zozaya
-kill_leader = 55061 #Azueta
-kill_leader = 55062 #Villasana
-remove_minister = 55109 #Venustiano_Carranza
-remove_minister = 55110 #Adolfo_de_la_Huerta_
-remove_minister = 55111 #Álvaro_Obregón
-remove_minister = 55112 #Plutarco_Elías_Calles
-remove_minister = 55097 #Francisco_Escudero
-remove_minister = 55113 #Isidro_Fabela_Alfaro
-remove_minister = 55114 #Jesús_Acuña
-remove_minister = 55115 #Cándido_Aguilar
-remove_minister = 55116 #Alfonso_Siller
-remove_minister = 55117 #Ernesto_Garza_Pérez
-remove_minister = 55118 #Salvador_Diego_Fernández
-remove_minister = 55119 #Hilario_Medina
-remove_minister = 55120 #Juan_Sánchez_Azcona
-remove_minister = 55121 #Miguel_Covarrubias_Acosta
-remove_minister = 55122 #Cutberto_Hidalgo
-remove_minister = 55123 #Alberto_José_Pani
-remove_minister = 55124 #Aarón_Sáenz
-remove_minister = 55125 #Pastor_Rouaix
-remove_minister = 55126 #Jacinto_Blas_Treviño
-remove_minister = 55127 #Rafael_Zubarán_Capmany
-remove_minister = 55128 #Miguel_Alessio_Robles
-remove_minister = 55129 #Manuel_Pérez_Treviño
-remove_minister = 55130 #Luis_Napoleón_Morones
-remove_minister = 55131 #Adolfo_de_la_Huerta
-remove_minister = 55132 #Manuel_Aguirre_Berlanga
-remove_minister = 55133 #Gilberto_Valenzuela
-remove_minister = 55134 #_José_Inocente_Lugo
-remove_minister = 55135 #Enrique_Colunga
-remove_minister = 55136 #Romeo_Ortega
-remove_minister = 55002 #Eduardo_Hay
-remove_minister = 55137 #Ignacio_L._Pesqueira
-remove_minister = 55138 #Jesús_Agustín_Castro
-remove_minister = 55139 #Juan_José_Ríos
-remove_minister = 55140 #Francisco_L._Urquizo
-remove_minister = 55141 #Benjamín_Hill
-remove_minister = 55003 #Enrique_Estrada_Reynoso
-remove_minister = 55142 #Francisco_Roque_Serrano
-remove_minister = 55143 #Joaquín_Amaro_Domínguez
-remove_minister = 55144 #Alberto_Salinas_Carranza
-
-kill_leader = 55004 #Obregón
-kill_leader = 55261 #Malpica
-remove_minister = 55091 #Emiliano_Zapata
-
-		#kill_leader = 14710184 #Zapata_Emiliano
-		 }
-	}
-
-
-#Zapatistas win the Mexican Revolution
-
- country_event = {
-	title = "DH_EVENT_2038613_TITLE"
-	desc = "DH_EVENT_2038613_DESC"
-	id = 202
-	 
-	picture = "Rheinland"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = {
-		 days = 7
-		 }
-	trigger = {
-		 war = no
-		 not = {
-			 exists = MEX
-			 exists = MXR
-			 }
-		 9604 = {#Ciudad_de_México
-			controlled_by = MXR
-			 }
-		 tag = MXR
-		 date = 1914.1.1
-		 not = {
-			 date = 1920.12.30
-			 }
-		 }
-	option = {
-		 name = "DH_EVENT_2038613_Option7"
-		 dissent = -5
-		 MEX = {
-			 country_event = 203 #Zapata_leads_Mexico!
-			}
-		 }
-	}
-
-
-#Zapata leads Mexico!
-#  Aguilar
-#  Altamirano
-#  Argumedo
-#  Beltrán Castañares
-#  Blanquet
-#  Bravo
-#  Cartón
-#  Cejudo
-#  Carmen Curiel
-#  Casso López
-#  Chacón
-#  Dávila
-#  Delgadillo
-#  Lambotte
-#  Eguía Lis
-#  Escandón y Barrón
-#  Gallardo
-#  Gil
-#  Gorostieta y Velarde
-#  Harrotian
-#  Huerta
-#  Jiménez Castro
-#  Arnold
-#  Lojero
-#  Maas Águila
-#  Maas Flores
-#  Andringa
-#  Maldonado
-#  Medina Barrón
-#  Mercado
-#  Mier
-#  Mondragón
-#  Morelos
-#  Mass
-#  Monter
-#  Navarro
-#  Ocón
-#  Ojeda
-#  Olea
-#  Orozco
-#  Orpinel
-#  Poloney
-#  Rasgado
-#  Reyes
-#  Robles
-#  Rojas
-#  Rubio Navarrete
-#  Ruiz
-#  Salazar
-#  Soberanes
-#  Téllez
-#  Toro
-#  Trucy Aubert
-#  Velasco
-#  Yarza
-#  Zozaya
-#  Azueta
-#  Villasana
-#  Obregón
-#  Malpica
-#  Sánchez
-
- country_event = {
-	title = "DH_EVENT_2038614_TITLE"
-	desc = "DH_EVENT_2038614_DESC"
-	id = 203
-	 
-	picture = "Rheinland"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	trigger = {
-		 tag = MEX
-		 }
-	option = {
-		 name = "DH_EVENT_2038614_Option7"
-		 national_unity = -15
-		 neutrality = 23
-		head_of_state = 55089 #Eulalio_Gutiérrez_Ortiz
-
-		head_of_government = 55091 #Emiliano_Zapata
-
-		foreign_minister = 55094 #Ignacio_Borrego
-armament_minister = 55098 #Valentín_Gama_y_Cruz
-
-		minister_of_security = 55102 #José_Lucio_Blanco_Fuentes
-
-		minister_of_intelligence = 55091 #Emiliano_Zapata
-
-		chief_of_staff = 55107 #Alfredo_Serratos_Amador
-
-		chief_of_army = 55091 #Emiliano_Zapata
-
-		chief_of_navy = 55107 #Alfredo_Serratos_Amador
-
-		chief_of_air = 55108 #Pedro_Caloca_Larios
-
-		#remove_minister = 14700068 #Victoriano_Huerta
-remove_minister = 55068 #Félix_Díaz
-remove_minister = 55069 #Francisco_León_de_la_Barra
-remove_minister = 55070 #Carlos_Pereyra
-remove_minister = 55071 #Manuel_Garza_Aldape
-remove_minister = 55072 #Federico_Gamboa
-remove_minister = 55073 #Antonio_de_la_Peña_y_Reyes
-remove_minister = 55074 #Querido_Moheno
-remove_minister = 55075 #José_López_Portillo_y_Rojas
-remove_minister = 55076 #Roberto_Esteva_Ruiz
-remove_minister = 55077 #Francisco_S._Carvajal
-remove_minister = 55078 #Ignacio_Alcocer
-remove_minister = 55079 #Salomé_Botello
-remove_minister = 55080 #Alberto_García_Granados
-remove_minister = 55081 #Aureliano_Urrutia
-remove_minister = 55082 #Pascual_Orozco
-remove_minister = 55083 #Manuel_Mondragón
-remove_minister = 55084 #Aureliano_Blanquet
-remove_minister = 55085 #José_Refugio_Velasco
-remove_minister = 55086 #Miguel_Lebrija
-remove_minister = 55087 #Juan_Guillermo_Villasana
-
-kill_leader = 55009 #Aguilar
-kill_leader = 55010 #Altamirano
-kill_leader = 55011 #Argumedo
-kill_leader = 55012 #Beltrán_Castañares
-kill_leader = 55013 #Blanquet
-kill_leader = 55014 #Bravo
-kill_leader = 55015 #Cartón
-kill_leader = 55016 #Cejudo
-kill_leader = 55017 #Carmen_Curiel
-kill_leader = 55018 #Casso_López
-kill_leader = 55019 #Chacón
-kill_leader = 55020 #Dávila
-kill_leader = 55021 #Delgadillo
-kill_leader = 9024 #Lambotte
-kill_leader = 55023 #Eguía_Lis
-kill_leader = 55024 #Escandón_y_Barrón
-kill_leader = 55025 #Gallardo
-kill_leader = 55026 #Gil
-kill_leader = 55027 #Gorostieta_y_Velarde
-kill_leader = 55028 #Harrotian
-kill_leader = 55005 #Huerta,_V
-kill_leader = 55029 #Jiménez_Castro
-kill_leader = 9033 #Arnold
-kill_leader = 55031 #Lojero
-kill_leader = 55032 #Maas_Águila
-		#kill_leader = 14710026 #Maas_Flores
-kill_leader = 9037 #Andringa
-kill_leader = 55034 #Maldonado
-kill_leader = 55035 #Medina_Barrón
-kill_leader = 55036 #Mercado
-kill_leader = 55037 #Mier
-kill_leader = 55038 #Mondragón
-kill_leader = 55039 #Morelos
-kill_leader = 55040 #Mass
-kill_leader = 55041 #Monter
-kill_leader = 55042 #Navarro
-kill_leader = 55043 #Ocón
-kill_leader = 55044 #Ojeda
-kill_leader = 55045 #Olea
-kill_leader = 55006 #Orozco,_Pascual
-kill_leader = 55046 #Orpinel
-kill_leader = 55047 #Poloney
-kill_leader = 55048 #Rasgado
-kill_leader = 55002 #Reyes,_B
-kill_leader = 55049 #Robles
-kill_leader = 55050 #Rojas
-kill_leader = 55051 #Rubio_Navarrete
-kill_leader = 55052 #Ruiz
-kill_leader = 55053 #Salazar
-kill_leader = 55054 #Soberanes
-kill_leader = 55055 #Téllez
-kill_leader = 55056 #Toro
-kill_leader = 55057 #Trucy_Aubert
-kill_leader = 55058 #Velasco
-kill_leader = 55059 #Yarza
-kill_leader = 55060 #Zozaya
-kill_leader = 55061 #Azueta
-kill_leader = 55062 #Villasana
-remove_minister = 55109 #Venustiano_Carranza
-remove_minister = 55110 #Adolfo_de_la_Huerta_
-remove_minister = 55111 #Álvaro_Obregón
-remove_minister = 55112 #Plutarco_Elías_Calles
-remove_minister = 55097 #Francisco_Escudero
-remove_minister = 55113 #Isidro_Fabela_Alfaro
-remove_minister = 55114 #Jesús_Acuña
-remove_minister = 55115 #Cándido_Aguilar
-remove_minister = 55116 #Alfonso_Siller
-remove_minister = 55117 #Ernesto_Garza_Pérez
-remove_minister = 55118 #Salvador_Diego_Fernández
-remove_minister = 55119 #Hilario_Medina
-remove_minister = 55120 #Juan_Sánchez_Azcona
-remove_minister = 55121 #Miguel_Covarrubias_Acosta
-remove_minister = 55122 #Cutberto_Hidalgo
-remove_minister = 55123 #Alberto_José_Pani
-remove_minister = 55124 #Aarón_Sáenz
-remove_minister = 55125 #Pastor_Rouaix
-remove_minister = 55126 #Jacinto_Blas_Treviño
-remove_minister = 55127 #Rafael_Zubarán_Capmany
-remove_minister = 55128 #Miguel_Alessio_Robles
-remove_minister = 55129 #Manuel_Pérez_Treviño
-remove_minister = 55130 #Luis_Napoleón_Morones
-remove_minister = 55131 #Adolfo_de_la_Huerta
-remove_minister = 55132 #Manuel_Aguirre_Berlanga
-remove_minister = 55133 #Gilberto_Valenzuela
-remove_minister = 55134 #_José_Inocente_Lugo
-remove_minister = 55135 #Enrique_Colunga
-remove_minister = 55136 #Romeo_Ortega
-remove_minister = 55002 #Eduardo_Hay
-remove_minister = 55137 #Ignacio_L._Pesqueira
-remove_minister = 55138 #Jesús_Agustín_Castro
-remove_minister = 55139 #Juan_José_Ríos
-remove_minister = 55140 #Francisco_L._Urquizo
-remove_minister = 55141 #Benjamín_Hill
-remove_minister = 55003 #Enrique_Estrada_Reynoso
-remove_minister = 55142 #Francisco_Roque_Serrano
-remove_minister = 55143 #Joaquín_Amaro_Domínguez
-remove_minister = 55144 #Alberto_Salinas_Carranza
-remove_minister = 55090 #Francisco_'Pancho'_Villa
-
-kill_leader = 55004 #Obregón
-kill_leader = 55261 #Malpica
-kill_leader = 55129 #Sánchez
-
-		 }
-	}
-
-
-#Villistas and Zapatistas win the Mexican Revolution
-
- country_event = {
-	title = "DH_EVENT_2038615_TITLE"
-	desc = "DH_EVENT_2038615_DESC"
-	id = 204
-	 
-	picture = "Rheinland"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = {
-		 days = 7
-		 }
-	trigger = {
-		 war = no
-		 not = {
-			 exists = MEX
-			 }
-		 exists = MXR
-		 9604 = {#Ciudad_de_México
-			controlled_by = MXR
-			 }
-		 tag = MXR
-		 date = 1914.1.1
-		 not = {
-			 date = 1920.12.30
-			 }
-		 }
-	option = {
-		 name = "DH_EVENT_2038615_Option7"
-		 THIS = {
-			 inherit = MXR
-			 }
-		 dissent = -5
-		 MEX = {
-			 country_event = 201 #Villa_leads_Mexico!
-			}
-		 }
-	option = {
-		 name = "DH_EVENT_2038615_Option8"
-		 leave_faction = axis
-		 leave_faction = allies
-		 leave_faction = comintern
-		 dissent = 5
-		 war = {
-			 target = MXR
-			 }
-		 }
-	}
-
-
-#Zapatistas and Villistas win the Mexican Revolution
-
- country_event = {
-	title = "DH_EVENT_2038616_TITLE"
-	desc = "DH_EVENT_2038616_DESC"
-	id = 205
-	 
-	picture = "Rheinland"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = {
-		 days = 7
-		 }
-	trigger = {
-		 war = no
-		 not = {
-			 exists = MEX
-			 }
-		 exists = MXR
-		 9604 = {#Ciudad_de_México
-			controlled_by = MXR
-			 }
-		 tag = MXR
-		 date = 1914.1.1
-		 not = {
-			 date = 1920.12.30
-			 }
-		 }
-	option = {
-		 name = "DH_EVENT_2038616_Option7"
-		 THIS = {
-			 inherit = MXR
-			 }
-		 dissent = -5
-		 MEX = {
-			 country_event = 203 #Zapata_leads_Mexico!
-			}
-		 }
-	option = {
-		 name = "DH_EVENT_2038616_Option8"
-		 leave_faction = axis
-		 leave_faction = allies
-		 leave_faction = comintern
-		 dissent = 5
-		 war = {
-			 target = MXR
-			 }
-		 }
-	}
-
-
-#General González suggests a plan for the assassination of Zapata
-
- country_event = {
-	title = "DH_EVENT_2038617_TITLE"
-	desc = "DH_EVENT_2038617_DESC"
-	id = 206
-	 
-	picture = "diplomatic_campaign"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = {
-		 days = 30
-		 }
-	trigger = {
-		 exists = MXR
-		 MXR = {
-			 war_with = MXR
-			 }
-		 tag = MXR
-		 date = 1918.11.1
-		 not = {
-			 date = 1919.12.30
-			 }
-		 }
-	option = {
-		 name = "DH_EVENT_2038617_Option7"
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 THIS = {
-					 ai = no
-					 }
-				 }
-			 supplies = -50
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 THIS = {
-					 ai = no
-					 }
-				 }
-			 money = -10
-			 }
-		 MXR = {
-			 country_event = 207 #The_tragedy!_Zapata_has_been_assassinated!
-			}
-		 }
-	option = {
-		 name = "DH_EVENT_2038617_Option8"
-		 dissent = 1
-		 set_global_flag = SLEEPEVENT_2038618
-		 }
-	}
-
-
-#The tragedy! Zapata has been assassinated!
-#  Zapata Emiliano
-#  Zapata Emiliano
-
- country_event = {
-	title = "DH_EVENT_2038618_TITLE"
-	desc = "DH_EVENT_2038618_DESC"
-	id = 207
-	 
-	picture = "zapata_assassination"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	trigger = {
-		 tag = MXR
-		 not = {
-			 has_global_flag = SLEEPEVENT_2038618#
-			 }
-		 }
-	option = {
-		 ai_chance = {
-			 factor = 80
-			 }
-		 name = "DH_EVENT_2038618_Option7"
-kill_leader = 60002 #Zapata,_Emiliano
-
-		dissent = 10
-		 neutrality = 5
-		 relation = {
-			 who = MXR
-			 value = -150
-			 }
-		 relation = {
-			 who = MEX
-			 value = -150
-			 }
-		 manpower = -10
-		 }
-	option = {
-		 name = "DH_EVENT_2038618_Option8"
-		 ai_chance = {
-			 factor = 10
-			 }
-kill_leader = 60002 #Zapata,_Emiliano
-
-		dissent = 10
-		 neutrality = 5
-		 relation = {
-			 who = MXR
-			 value = -150
-			 }
-		 relation = {
-			 who = MEX
-			 value = -150
-			 }
-		 manpower = -10
-		 }
-	option = {
-		 ai_chance = {
-			 factor = 10
-			 }
-		 name = "DH_EVENT_2038618_Option9"
-		 MXR = {
-			 country_event = 208 #The_Zapatistas_submits_to_us!
-			}
-		 }
-	}
-
-
-#The Zapatistas submits to us!
-
- country_event = {
-	title = "DH_EVENT_2038619_TITLE"
-	desc = "DH_EVENT_2038619_DESC"
-	id = 208
-	 
-	picture = "diplomatic_campaign"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	trigger = {
-		 tag = MXR
-		 }
-	option = {
-		 name = "DH_EVENT_2038619_Option7"
-		 dissent = -5
-		 THIS = {
-			 inherit = MXR
-			 }
-		 }
-	}
-
-
-#Plan of Agua Prieta
-#  Murguía López de Lara
-#  Obregón
-#  Herrero Hernández
-#  Calles
-#  Hill
-#  Flores
-#  Piña
-#  Cruz
-#  Méndez
+#  Plan of Agua Prieta
 
  country_event = {
 	title = "DH_EVENT_2038620_TITLE"
@@ -2138,171 +1106,60 @@ kill_leader = 60002 #Zapata,_Emiliano
 	 
 	fire_only_once = yes
 	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = {
-		 days = 90
-		 }
+	mean_time_to_happen = { days = 90 }
+	
 	trigger = {
-		 war = no
-		 has_global_flag = 2038609_EVENT_DONE#
-		 head_of_state = 55088 #Francisco_Lagos_Cházaro
-
-		not = {
-			 exists = MXR
-			 }
-		 tag = MEX
-		 date = 1919.1.1
-		 not = {
-			 date = 1925.12.30
-			 }
-		 }
+		war = no
+		has_global_flag = 2038609_EVENT_DONE	#
+		head_of_state = 55088 					#Francisco_Lagos_Cházaro
+		not = { exists = MXR }
+		tag = MEX
+		date = 1919.1.1
+		not = { date = 1923.12.30 }
+		}
 	option = {
-		 name = "DH_EVENT_2038620_Option7"
-		 ai_chance = {
-			 factor = 95
-			 }
-		 dissent = 5
-		head_of_state = 55111 #Álvaro_Obregón
-
-		head_of_government = 55111 #Álvaro_Obregón
-
-		foreign_minister = 55122 #Cutberto_Hidalgo
-armament_minister = 55127 #Rafael_Zubarán_Capmany
-
-		minister_of_security = 55112 #Plutarco_Elías_Calles
-
-		minister_of_intelligence = 55126 #Jacinto_Blas_Treviño
-
-		chief_of_staff = 55141 #Benjamín_Hill
-
-		chief_of_army = 55141 #Benjamín_Hill
-		chief_of_navy = 55141 #Benjamín_Hill
-remove_minister = 55109 #Venustiano_Carranza
-
-kill_leader = 55253 #Murguía_López_de_Lara
-remove_minister = 55132 #Manuel_Aguirre_Berlanga
-remove_minister = 55140 #Francisco_L._Urquizo
-
-		 }
-	option = {
-		 ai_chance = {
-			 factor = 5
-			 }
-		 name = "DH_EVENT_2038620_Option8"
-		 dissent = 5
-		head_of_state = 55145 #Ignacio_Bonillas_Frajio
-
-		head_of_government = 55145 #Ignacio_Bonillas_Frajio
-
-		minister_of_security = 55132 #Manuel_Aguirre_Berlanga
-
-		chief_of_staff = 55140 #Francisco_L._Urquizo
-
-		chief_of_army = 55140 #Francisco_L._Urquizo
-		chief_of_navy = 55140 #Francisco_L._Urquizo
-remove_minister = 55111 #Álvaro_Obregón
-
-kill_leader = 55004 #Obregón
-
-remove_minister = 55110 #Adolfo_de_la_Huerta_
-
-kill_leader = 55243 #Herrero_Hernández
-
-remove_minister = 55112 #Plutarco_Elías_Calles
-remove_minister = 55141 #Benjamín_Hill
-
-kill_leader = 55217 #Calles
-kill_leader = 55244 #Hill
-kill_leader = 55001 #Flores,_M
-kill_leader = 55256 #Piña
-kill_leader = 55225 #Cruz
-
-remove_minister = 55142 #Francisco_Roque_Serrano
-
-kill_leader = 55104 #Méndez
-
-		 }
-	}
-
-
-#The end of the Mexican Revolution?
-
- country_event = {
-	title = "DH_EVENT_2038621_TITLE"
-	desc = "DH_EVENT_2038621_DESC"
-	id = 210
-	 
-	picture = "Peace_conference"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	trigger = {
-		 tag = MXR
-		 }
-	option = {
-		 ai_chance = {
-			 factor = 80
-			 }
-		 name = "DH_EVENT_2038621_Option7"
-		 neutrality = -5
-		 war = {
-			 target = MXR
-			 }
-		 dissent = -5
-		 clr_global_flag = MEX_Convention
-		 }
-	option = {
-		 ai_chance = {
-			 factor = 20
-			 }
-		 name = "DH_EVENT_2038621_Option8"
-		 MXR = {
-			 country_event = 196 #Villistas_submit_to_us
-			}
-		 }
-	}
-
-
-#The end of the Mexican Revolution?
-
- country_event = {
-	title = "DH_EVENT_2038622_TITLE"
-	desc = "DH_EVENT_2038622_DESC"
-	id = 211
-	 
-	picture = "Peace_conference"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	trigger = {
-		 tag = MXR
-		 }
-	option = {
-		 ai_chance = {
-			 factor = 80
-			 }
-		 name = "DH_EVENT_2038622_Option7"
-		 neutrality = -5
-		 war = {
-			 target = MXR
-			 }
-		 dissent = -5
-		 clr_global_flag = MEX_Convention
-		 }
-	option = {
-		 ai_chance = {
-			 factor = 20
-			 }
-		 name = "DH_EVENT_2038622_Option8"
-		 MXR = {
-			 country_event = 197 #Zapatistas_submit_to_us
-			}
-		 }
+		name = "DH_EVENT_2038620_Option7"
+		ai_chance = { factor = 95 }
+		dissent = 5
+		head_of_state = 55111 				#Álvaro_Obregón
+		head_of_government = 55111 			#Álvaro_Obregón
+		foreign_minister = 55122 			#Cutberto_Hidalgo
+		armament_minister = 55127 			#Rafael_Zubarán_Capmany
+		minister_of_security = 55112 		#Plutarco_Elías_Calles
+		minister_of_intelligence = 55126 	#Jacinto_Blas_Treviño
+		chief_of_staff = 55141 				#Benjamín_Hill
+		chief_of_army = 55141 				#Benjamín_Hill
+		chief_of_navy = 55141 				#Benjamín_Hill
+		
+		remove_minister = 55109 			#Venustiano_Carranza
+		kill_leader = 55253 				#Murguía_López_de_Lara
+		remove_minister = 55132 			#Manuel_Aguirre_Berlanga
+		remove_minister = 55140 			#Francisco_L._Urquizo }
+		
+	option = { ai_chance = { factor = 5 }
+		name = "DH_EVENT_2038620_Option8"
+		dissent = 5
+		head_of_state = 55145 				#Ignacio_Bonillas_Frajio
+		head_of_government = 55145 			#Ignacio_Bonillas_Frajio
+		minister_of_security = 55132 		#Manuel_Aguirre_Berlanga
+		chief_of_staff = 55140 				#Francisco_L._Urquizo
+		chief_of_army = 55140 				#Francisco_L._Urquizo
+		chief_of_navy = 55140 				#Francisco_L._Urquizo
+		
+		remove_minister = 55111 			#Álvaro_Obregón
+		kill_leader = 55004 				#Obregón
+		remove_minister = 55110 			#Adolfo_de_la_Huerta_
+		kill_leader = 55243 				#Herrero_Hernández
+		remove_minister = 55112 			#Plutarco_Elías_Calles
+		remove_minister = 55141 			#Benjamín_Hill
+		kill_leader = 55217 				#Calles
+		kill_leader = 55244 				#Hill
+		kill_leader = 55001 				#Flores,_M
+		kill_leader = 55256 				#Piña
+		kill_leader = 55225 				#Cruz
+		remove_minister = 55142 			#Francisco_Roque_Serrano
+		kill_leader = 55104 				#Méndez
+		}
 	}
 
 
@@ -2340,7 +1197,7 @@ country_event = {
 				not = {	9092 = { units_in_province = 1 } }    	#Tucson
 			}
 			MXR = {	country_event = 101494 }                   	#Raid_result_:_no_resistance_encountered
-			USA = { country_event = 101500 }						#Tucson_raided!
+			USA = { country_event = 101500 }					#Tucson_raided!
 		}
 	}
 }
@@ -2735,329 +1592,6 @@ country_event = {
 		 }
 	}
 
-
-#New recruits
-
- country_event = {
-	title = "DH_EVENT_2250507_TITLE"
-	desc = "DH_EVENT_2250507_DESC"
-	id = 499
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = {
-		 days = 60
-		 }
-	trigger = {
-		 war = yes
-		 not = {
-			 total_ic = 7
-			 }
-		 tag = MXR
-		 date = 1915.1.1
-		 not = { date = 1923.12.31 }
-		 }
-	option = {
-		 ai_chance = { factor = 5 }
-		 name = "DH_EVENT_2250507_Option7"
-		 manpower = 0.5
-		 }
-	option = {
-		 ai_chance = { factor = 10 }
-		 name = "DH_EVENT_2250507_Option8"
-		 manpower = 1
-		 }
-	option = {
-		 ai_chance = {
-			 factor = 20
-			 }
-		 name = "DH_EVENT_2250507_Option9"
-		 manpower = 2
-		 }
-	option = {
-		 ai_chance = { factor = 50 }
-		 name = "DH_EVENT_2250507_Option10"
-		 manpower = 5
-		 }
-	}
-
-
-#Victory in Mexico city!
-
- country_event = {
-	title = "DH_EVENT_2250508_TITLE"
-	desc = "DH_EVENT_2250508_DESC"
-	id = 500
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = { days = 15 }
-	trigger = {
-		 9604 = {                               #Ciudad_de_México
-			controlled_by = MXR }
-		 war = yes
-		 not = {			 }
-		 not = {			 }
-		 not = {			 }
-		 tag = MXR
-		 date = 1910.1.1
-		 not = { date = 1923.12.31 }
-		 }
-	option = {
-		 name = "DH_EVENT_2250508_Option7"
-		 supplies = -100
-		 money = -30
-		 dissent = -2
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 exists = MXR
-				 not = { MXR = { war_with = MXR } }
-				 }
-			 relation = {
-				 who = MXR
-				 value = 5
-				 }
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 exists = MEX
-				 MXR = { war_with = MEX }
-				 }
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 exists = MXR
-				 MXR = {
-					 war_with = MXR
-					 }
-				 }
-			 }
-		 }
-	}
-
-
-
-#Victory in Mexico city!
-
- country_event = {
-	title = "DH_EVENT_2038550_TITLE"
-	desc = "DH_EVENT_2038550_DESC"
-	id = 502
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = {
-		 days = 15
-		 }
-	trigger = {
-		 9604 = {                             #Ciudad_de_México
-			controlled_by = MXR }
-		 war = yes
-		 not = {		 }
-		 not = {		 }
-		 not = {		 }
-		 tag = MXR
-		 date = 1910.1.1
-		 not = { date = 1923.12.30 }
-		 }
-	option = {
-		 name = "DH_EVENT_2038550_Option7"
-		 supplies = -100
-		 money = -30
-		 dissent = -2
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 exists = MXR
-				 not = {
-					 MXR = {
-						 war_with = MXR
-						 }
-					 }
-				 }
-			 relation = {
-				 who = MXR
-				 value = 5
-				 }
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 exists = MEX
-				 MXR = {
-					 war_with = MEX
-					 }
-				 }
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 exists = MXR
-				 MXR = {
-					 war_with = MXR
-					 }
-				 }
-			 }
-		 }
-	}
-
-
-
-#Captured supplies
-
- country_event = {
-	title = "DH_EVENT_2038552_TITLE"
-	desc = "DH_EVENT_2038552_DESC"
-	id = 504
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = { days = 60 }
-	
-	trigger = {
-		 war = yes
-		 not = { supplies = 100 }
-		 not = { total_ic = 7 }
-		 tag = MXR
-		 date = 1910.1.1
-		 not = { date = 1923.12.30 }
-		 }
-	option = {
-		 ai_chance = { factor = 5 }
-		 name = "DH_EVENT_2038552_Option7"
-		 supplies = 25
-		 }
-	option = {
-		 ai_chance = { factor = 10 }
-		 name = "DH_EVENT_2038552_Option8"
-		 supplies = 50
-		 }
-	option = {
-		 ai_chance = { factor = 20 }
-		 name = "DH_EVENT_2038552_Option9"
-		 supplies = 200
-		 money = 20
-		 }
-	option = {
-		 ai_chance = { factor = 50 }
-		 name = "DH_EVENT_2038552_Option10"
-		 supplies = 350
-		 money = 50
-		 }
-	}
-
-
-#Smuggled supplies
-
- country_event = {
-	title = "DH_EVENT_2038553_TITLE"
-	desc = "DH_EVENT_2038553_DESC"
-	id = 505
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = { days = 45 }
-	trigger = {
-		 war = yes
-		 not = { supplies = 100 }
-		 not = { total_ic = 5 }
-		 or = {
-			 and = {
-				 9604 = {						#Ciudad_de_México
-					controlled_by = MEX }
-				 MXR = { war_with = MEX }
-				 }
-			 and = {
-				 9604 = {						#Ciudad_de_México
-					controlled_by = MXR }
-				 MXR = { war_with = MXR }
-				 }
-			 }
-			 
-		 tag = MXR
-		 date = 1910.1.1
-		 not = { date = 1917.12.30 }
-		 }
-	option = { ai_chance = { factor = 3 }
-		 name = "DH_EVENT_2038553_Option7"
-		 supplies = 20
-		 }
-	option = { ai_chance = { factor = 10 }
-		 name = "DH_EVENT_2038553_Option8"
-		 supplies = 40
-		 }
-	option = {
-		 ai_chance = { factor = 20 }
-		 name = "DH_EVENT_2038553_Option9"
-		 supplies = 60
-		 }
-	option = {
-		 ai_chance = { factor = 35 }
-		 name = "DH_EVENT_2038553_Option10"
-		 supplies = 100
-		 }
-	}
-
-
-#New recruits
-
- country_event = {
-	title = "DH_EVENT_2038554_TITLE"
-	desc = "DH_EVENT_2038554_DESC"
-	id = 506
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = { days = 60 }
-	trigger = {
-		 war = yes
-		 not = {
-			 total_ic = 7
-			 }
-		 tag = MXR
-		 date = 1915.1.1
-		 not = {
-			 date = 1964.12.30
-			 }
-		 }
-	option = {
-		 ai_chance = { factor = 5 }
-		 name = "DH_EVENT_2038554_Option7"
-		 manpower = 0.5
-		 }
-	option = {
-		 ai_chance = { factor = 10 }
-		 name = "DH_EVENT_2038554_Option8"
-		 manpower = 1
-		 }
-	option = {
-		 ai_chance = { factor = 20 }
-		 name = "DH_EVENT_2038554_Option9"
-		 manpower = 2
-		 }
-	option = {
-		 ai_chance = { factor = 50 }
-		 name = "DH_EVENT_2038554_Option10"
-		 manpower = 5
-		 }
-	}
-
-
 	################################### RAIDS RESULTS ######################################
 	
 #Tucson raided!
@@ -3431,9 +1965,7 @@ country_event = {
 		 war = no
 		 tag = USA
 		 date = 1914.8.4
-		 not = {
-			 date = 1925.12.30
-			 }
+		 not = { date = 1923.12.30 }
 		 }
 	option = {
 		 name = "DH_EVENT_2049522_Option7"
@@ -3804,14 +2336,10 @@ country_event = {
 			 }
 		 name = "DH_EVENT_2038503_Option8"
 		 dissent = 8
-		 THIS = {
-			 military_access = USA
-			 }
+		 THIS = { military_access = USA }
 		 set_global_flag = 2038503_EVENT_DONE#
 		 }
 	}
-
-
 
 
 ############################################################################
@@ -3905,12 +2433,8 @@ country_event = {
 	 
 	is_triggered_only = yes
 	 
-	trigger = {
-		 tag = MEX
-		 }
-	option = {
-		 name = "DH_EVENT_2038500_Option7"
-		 }
+	trigger = { tag = MEX }
+	option = { name = "DH_EVENT_2038500_Option7" }
 	}
 
 # alternatively 	
@@ -3948,12 +2472,8 @@ country_event = {
 	 
 	is_triggered_only = yes
 	 
-	trigger = {
-		 tag = ENG
-		 }
-	option = {
-		 name = "DH_EVENT_2001535_Option7"
-		 }
+	trigger = { tag = ENG }
+	option = { name = "DH_EVENT_2001535_Option7" }
 	}
 
 
@@ -4001,20 +2521,15 @@ country_event = {
 	 
 	is_triggered_only = yes
 	 
-	mean_time_to_happen = {
-		 days = 20
-		 }
+	mean_time_to_happen = { days = 20 }
+	
 	trigger = {
 		 9624 = {                           #Veracruz
-			controlled_by = USA
-			 }
+			controlled_by = USA }
 		 war = no
-		 or = {
-			year = 1915
-			and = {
-				year = 1914
-				month = 10
-			}
+		 or = {	year = 1915
+			and = {	year = 1914
+					month = 10 }
 			not = { exists = MXR }
 		}
 		tag = MEX
@@ -4023,21 +2538,18 @@ country_event = {
 		 }
 	option = {
 		 name = "ACTION_NAME_OK"
-		 war = {
-			 target = USA
-			 }
+		 war = { target = USA }
 		 }
 	}
-	
-	
 	
 	
 # However, when Carranza's autocratic rule was threatened, the threat would come from the Constitutionalist army he had set up. 
 # Carranza was assassinated after he tried to have Obregón arrested on false charges (Obregón was put up for election for president, 
 # which threatened Carranza and his choice of successor, Ignacio Bonillas) and Obregón, under the Plan of Agua Prieta, 
-# marched on Mexico City with his army. Carranza fled the capital and was killed in the Sierra Norte of Puebla on 21 May 1920.
+# marched on Mexico City with his army. 
 # In 1920 Obregón, with Gens. Plutarco Elías Calles and Adolfo de la Huerta, led a revolt against Carranza under the Plan of Agua Prieta. 
 # Their agents assassinated Carranza on May 21, 1920.
+# Carranza fled the capital and was killed in the Sierra Norte of Puebla on 21 May 1920.
 
 
 # In 1920, Obregón was elected president, and some other former Constitutionalist generals would eventually become presidents and 
