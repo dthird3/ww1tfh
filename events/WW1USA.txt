@@ -286,6 +286,7 @@
 	picture = "Troops_Leave"
 	 
 	fire_only_once = yes
+	major = yes
 	mean_time_to_happen = { days = 15 }
 	 
 	trigger = {
@@ -300,6 +301,7 @@
 		USA = { 9624 = { secede_province = MXC } }						#Veracruz
 		9624 = { remove_core = USA }
 		MXC = { country_event = 101054 }					# USA Leave_Veracruz
+		MXR = { country_event = 101054 }					# USA Leave_Veracruz
 		MXR = { remove_country_modifier = "weapons_embargo" }
 		USA = { clr_country_flag = Huerta_embargoed }
 		USA = { clr_country_flag = Veracruz_occupied }
