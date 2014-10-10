@@ -1,9 +1,3 @@
-### CONSIDER GLOBAL FLAGS in some cases
-### Consider using 
-
-# local_partisan_Support    add an increase of revolt_risk, so you can see it as Derivation in time of revolt_risk
-
-
 
 # Mexican 1910 Rigged Elections
 
@@ -176,13 +170,12 @@
 		MEX = { dissent = 4 }
 		random_country = {
 				limit = { tag = MXR
-					MXR = { ai = yes }
-				}
+					MXR = { ai = yes } }
 				MXR = { load_oob = MXR_1910_madero_AI.txt }
 				MXR = { officer_pool = 800 }
-			}
+				}
 		}
-	}
+	}	
 	
 
 # US Army and Navy manoeuvres 6/3/11 
@@ -207,7 +200,6 @@
 
 
 # Zapata Army joins revolution  10/3/11		
-#### num_of_cities = x  another alternative to lost_national
 
  country_event = {
 	title = "EVT1910_101012_TITLE"
@@ -230,7 +222,7 @@
 		name = "ACTION_NAME_FIGHT"
 			MEX = { dissent = 4 }
 			9623 = { secede_province = MXR }   				   # Morelos - Cuernavaca (Immediately next to Mexico City)
-			9658 = { secede_province = MXR }   				   # Acapulco (to allow supply route so they don't starve to death
+			9658 = { secede_province = MXR }   				   # Acapulco to allow supply route so they don't starve to death
 			MXR = { load_oob = MXR_1910_zapata.txt }
 			9642 = { supplies = 1000 }
 			MXR = { officer_pool = 240 }
@@ -257,7 +249,7 @@
 	trigger = {
 		tag = MEX
 		MEX = {	war_with = MXR }
-		MEX = { not = { has_country_flag = "diaz_coup_attempt" }}
+		MEX = { not = { has_country_flag = "diaz_coup_attempt" } }
 		9604 = { any_neighbor_province = { controlled_by = MXR } }	# Mexico City
 		}
 		
@@ -353,13 +345,13 @@
 	
 	option = {										
 		name = "EVT1910_101022_OPTA"
-		MXR = { ZZZ = { split_troops = 1.00 } }		# Rebels stand down and return to farms and homes
+		MXR = { ZZZ = { split_troops = 1.00 } }				# Rebels stand down and return to farms and homes
 		any_country = { relation = { who = MXR value = 75 } }
 		MXR = { capital = 9604 }       						# Ciudad de México
 		MXR = { money = +200 }	
 		USA = { set_country_flag = "diaz_crisis_over" }
 		MXR = { set_country_flag = "diaz_defeated" }
-		MEX = {	country_event = 101024 }			# Diaz resigns
+		MEX = {	country_event = 101024 }					# Diaz resigns
 		}
 	}	
 	
@@ -625,15 +617,17 @@
 	
 	option = {										
 		name = "ACTION_NAME_DAMN"
-		MXR = { remove_minister = 60001 }			    #Francisco_I._Madero
-		MXR = { kill_leader = 60001 }					#Madero,_F
-		MXR = { head_of_state = 60032 }				    #Victoriano_Huerta
-		MXR = { head_of_government = 60032 }			# Victoriano_Huerta
+		MXR = { remove_minister = 60001 }			    	# Francisco_I._Madero
+		MXR = { kill_leader = 60001 }						# Madero,_F
+		MXR = { head_of_state = 60032 }				    	# Victoriano_Huerta
+		MXR = { head_of_government = 60032 }				# Victoriano_Huerta
 		USA = { clr_country_flag = "support_madero_coup" }
 		USA = { clr_country_flag = "no_madero_coup" }
 		MXR = { set_country_flag = "Ten_Tragic_Days" }
 		MXR = { set_country_flag = "Huerta_Coup" }
-		MXR = { government = right_wing_autocrat }		MXR = { ideology = paternal_autocrat } }
+		MXR = { government = right_wing_autocrat }		
+		MXR = { ideology = paternal_autocrat } 
+		}
 	}
 	
 	
@@ -713,7 +707,7 @@
 			MXC = { metal = +100 }
 			MXC = { war = { target = MXR } }
 			USA = { relation = { who = MXR value = -50 }
-#  HOW TO GET THESE TO APPLY TO THE 1914 START?????		
+
 			9660 = { add_province_modifier = { name = "mex_rev" duration = 730 } }
 			9660 = { create_revolt = 1 }
 			9674 = { add_province_modifier = { name = "mex_rev" duration = 730 } }
@@ -732,6 +726,7 @@
 			kill_leader = 60009 #González_Peña
 		}			
 	}
+}
 
 
 #   USA embargoes arms to MXR
@@ -743,13 +738,10 @@
 	 
 	picture = "USS_Utah"
 	
-	major = yes
 	fire_only_once = yes
 	is_triggered_only = yes
 	
-	option = {										
-		name = "ACTION_NAME_OK"
-		}
+	option = {	name = "ACTION_NAME_OK"	}
 	}
 	
 
@@ -768,9 +760,9 @@
 		name = "ACTION_NAME_DAMN"
 		9624 = { add_core = USA }
 		MXR = { 9624 = { secede_province = USA } }				# Veracruz
-		USA = { relation = { who = MXR value = -50 }
-		}
+		USA = { relation = { who = MXR value = -50 } }
 	}
+}
 	
 #   Niagara Peace Treaty
 
@@ -784,7 +776,7 @@
 	
 	option = {										
 		name = "ACTION_NAME_OK"
-#		MXR = { threat { who = USA value = -5 } }
+		USA = { relation = { who = MXC value = 50 } }
 		}
 	}	
 	
@@ -796,13 +788,11 @@
 	id = 101054
 	 
 	picture = "Troops_Leave"
-	major = yes
+
 	is_triggered_only = yes
 	
-	option = {										
-		name = "ACTION_NAME_GREAT"
-		}
-	}	
+	option = {	name = "ACTION_NAME_GREAT" }
+ }	
 	
 
 ########## Constitutionalist v's Conventionalists ##########
@@ -970,7 +960,7 @@
 }
 	
 	
-# New recruits (If rebels hold at least 20% of territory)
+# New recruits If rebels hold at least 20% of territory
 
 country_event = {
 	title = "EVT1914_101066_TITLE"
@@ -1091,15 +1081,13 @@ country_event = {
 #As the war went on in 1919, Zapata began to run out of essential supplies, such as ammunition, and decided to acquire them from Guajardo. 
 #Zapata went to Guajardo's camp to negotiate with the colonel, whom he had not met before. However, Zapata had walked into a trap. 
 #Guajardo’s soldiers attacked Zapata, killing him and routing his forces. 
-#Venustiano Carranza rewarded Guajardo with a promotion to general and a cash prize of 100,000 pesos for having "successfully completed the 
-#difficult commission that was conferred to him.
 
 # Later that year, Carranza assembled the constitutional convention drafting the new constitution. 
 # With this, Carranza also gained support of the communists and anarchists, who were formed into “Red Battalions” to confront the forces of Villa 
 # and those remaining of Zapata’s. This further turned the tide, causing Villa to surrender in 1920. 
 # He negotiated a peace deal with Carranza, ending all hostilities and granting him a small estate, thus ending the war.
 
-#Later that year, Carranza held elections for the presidency. Obregón, a reformist general who pushed for the new constitution, 
+# Later that year, Carranza held elections for the presidency. Obregón, a reformist general who pushed for the new constitution, 
 # was to oppose him for the seat. Carranza orchestrated a sham election, allowing Ignacio Bonillas to win. 
 # Carranza then fled to Guerrero where he staged a short coup to bring him into the presidency but was killed on horseback while fleeing 
 # from Mexico City to Veracruz.
@@ -2004,7 +1992,7 @@ country_event = {
 		 }
 	trigger = {
 		 exists = MEX
-		 has_global_flag = 2049521_EVENT_DONE#
+		 has_global_flag = 2049521_EVENT_DONE
 		 USA = {
 			 war_with = MXR
 			 }
@@ -2019,7 +2007,7 @@ country_event = {
 			 date = 1925.12.30
 			 }
 		 not = {
-			 has_global_flag = SLEEPEVENT_2049523#
+			 has_global_flag = SLEEPEVENT_2049523
 			 }
 		 }
 	option = {
@@ -2072,7 +2060,7 @@ country_event = {
 		 days = 14
 		 }
 	trigger = {
-		 has_global_flag = 2049523_EVENT_DONE#
+		 has_global_flag = 2049523_EVENT_DONE
 		 USA = {
 			 war_with = MXR
 			 }
@@ -2119,7 +2107,7 @@ country_event = {
 		 not = {
 			 exists = MEX
 			 }
-		 has_global_flag = 2049521_EVENT_DONE#
+		 has_global_flag = 2049521_EVENT_DONE
 		 USA = {
 			 war_with = MXR
 			 }
@@ -2129,7 +2117,7 @@ country_event = {
 				 }
 			 }
 		 not = {
-			 has_global_flag = 2049522_EVENT_DONE#
+			 has_global_flag = 2049522_EVENT_DONE
 			 }
 		 tag = USA
 		 date = 1914.8.4
@@ -2137,7 +2125,7 @@ country_event = {
 			 date = 1925.12.30
 			 }
 		 not = {
-			 has_global_flag = SLEEPEVENT_2049535#
+			 has_global_flag = SLEEPEVENT_2049535
 			 }
 		 }
 	option = {
@@ -2171,7 +2159,7 @@ country_event = {
 			 who = MEX
 			 value = -25
 			 }
-		 set_global_flag = 2049536_EVENT_DONE#
+		 set_global_flag = 2049536_EVENT_DONE
 		 }
 	}
 
@@ -2239,8 +2227,8 @@ country_event = {
 		 }
 	trigger = {
 		 or = {
-			 has_global_flag = 2049523_EVENT_DONE#
-			 has_global_flag = 2049535_EVENT_DONE#
+			 has_global_flag = 2049523_EVENT_DONE
+			 has_global_flag = 2049535_EVENT_DONE
 			 }
 		 or = {
 			 USA = {
@@ -2339,7 +2327,7 @@ country_event = {
 		 USA = {
 			 country_event = 531 #Mexico_rejects_our_proposal
 			}
-		 set_global_flag = 2038503_EVENT_DONE#
+		 set_global_flag = 2038503_EVENT_DONE
 		 }
 	option = {
 		 ai_chance = {
@@ -2348,7 +2336,7 @@ country_event = {
 		 name = "DH_EVENT_2038503_Option8"
 		 dissent = 8
 		 THIS = { military_access = USA }
-		 set_global_flag = 2038503_EVENT_DONE#
+		 set_global_flag = 2038503_EVENT_DONE
 		 }
 	}
 
@@ -2552,16 +2540,3 @@ country_event = {
 		 war = { target = USA }
 		 }
 	}
-	
-	
-# However, when Carranza's autocratic rule was threatened, the threat would come from the Constitutionalist army he had set up. 
-# Carranza was assassinated after he tried to have Obregón arrested on false charges (Obregón was put up for election for president, 
-# which threatened Carranza and his choice of successor, Ignacio Bonillas) and Obregón, under the Plan of Agua Prieta, 
-# marched on Mexico City with his army. 
-# In 1920 Obregón, with Gens. Plutarco Elías Calles and Adolfo de la Huerta, led a revolt against Carranza under the Plan of Agua Prieta. 
-# Their agents assassinated Carranza on May 21, 1920.
-# Carranza fled the capital and was killed in the Sierra Norte of Puebla on 21 May 1920.
-
-
-# In 1920, Obregón was elected president, and some other former Constitutionalist generals would eventually become presidents and 
-# leading politicians in the years ahead.
