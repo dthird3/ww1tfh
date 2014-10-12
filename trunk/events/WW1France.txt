@@ -1,5 +1,132 @@
+# French National Unity Boost at start of war
 
-#EVTNAME992910
+country_event = {
+	title = "EVT1914_190050_TITLE"
+	desc = "EVT1914_190050_DESC"
+	id = 190050
+	 
+	picture = "FRAP2"
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = FRA
+		FRA = {	war_with = GER }
+ 		}
+		
+	mean_time_to_happen = { months = 3 }
+		 
+	option = {
+		name = "ACTION_NAME_GREAT"
+		FRA = { national_unity = 10 }
+		}
+}
+
+
+# French Army Mutiny - after February Russian Revolution
+
+country_event = {
+	title = "EVT1914_190100_TITLE"
+	desc = "EVT1914_190100_DESC"
+	id = 190100
+	 
+	picture = "Mutiny"
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+		
+	mean_time_to_happen = { days = 30 }
+		 
+	option = {
+		name = "ACTION_NAME_DAMN"
+		FRA = { set_country_flag = "French_mutiny" }
+		FRA = { dissent = +6 }
+		FRA = { add_country_modifier = 
+				{ name = army_mutiny 
+				duration = 30} }
+		FRA = { add_country_modifier = 
+				{ name = army_demoralised 
+				duration = 999} }
+		FRA = { officer_pool = -250 }
+		FRA = { manpower = -33 }
+		FRA = { national_unity = -2 }
+		}
+}
+
+
+# Repression of Mutiny	
+	country_event = {
+	title = "EVT1914_190104_TITLE"
+	desc = "EVT1914_190104_DESC"
+	id = 190104
+	 
+	picture = "Mutineer"
+		
+	trigger = {
+		tag = FRA
+		FRA = { has_country_flag = "French_mutiny" }
+		FRA = { not = { dissent = 3 } }
+ 		}
+		 
+	option = {
+		name = "EVT1914_190104_OPTA"
+		FRA = { clr_country_flag = "French_mutiny" }
+		FRA = { remove_country_modifier = army_mutiny }
+		}
+}
+
+	
+# Mutiny continues	if human France only
+	country_event = {
+	title = "EVT1914_190102_TITLE"
+	desc = "EVT1914_190102_DESC"
+	id = 190102
+	 
+	picture = "Mutiny"
+	
+	mean_time_to_happen = { days = 7 }
+		
+	trigger = {
+		FRA = { has_country_flag = "French_mutiny" }
+		FRA = { ai = no }
+ 		}
+		 
+	option = {
+		name = "ACTION_NAME_DAMN"
+		FRA = { dissent = +1 }
+		FRA = { officer_pool = -50 }
+		FRA = { manpower = -3 }
+		FRA = { remove_country_modifier = army_mutiny }		# Reset modifier to last another 30 days
+		FRA = { add_country_modifier = 
+				{ name = army_mutiny 
+				duration = 30} }
+		}
+	}
+	
+	
+
+# Army morale restored with USA entering the war	
+	country_event = {
+	title = "EVT1914_190106_TITLE"
+	desc = "EVT1914_190106_DESC"
+	id = 190106
+	 
+	picture = "USAP9"
+	
+	fire_only_once = yes
+	mean_time_to_happen = { months = 4 }
+		
+	trigger = {
+		USA = {	war_with = GER }
+ 		}
+		 
+	option = {
+		name = "ACTION_NAME_GREAT"
+		FRA = { remove_country_modifier = army_demoralised }
+		}
+}
+
 
  country_event = {
 	title = "EVTNAME992910"
@@ -241,4 +368,3 @@
 			 }
 		 }
 	}
-
