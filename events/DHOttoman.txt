@@ -9,14 +9,11 @@
 	 
 	fire_only_once = yes
 	 
-	is_triggered_only = yes
-	 
 	mean_time_to_happen = { days = 15 }
+	
 	trigger = {
 		 or = {
-			 TUR = {
-				 faction = axis
-				 }
+			 TUR = { faction = axis }
 			 }
 		 or = {
 			 4781 = {#Kayseri
@@ -37,7 +34,7 @@
 			 }
 		 tag = GER
 		 date = 1914.1.1
-		 not = { date = 1999.12.30 }
+		 not = { date = 1923.12.30 }
 		 }
 	option = {
 		 name = "DH_EVENT_2191560_Option7"
@@ -59,9 +56,7 @@
 	 
 	is_triggered_only = no
 	 
-	mean_time_to_happen = {
-		 days = 15
-		 }
+	mean_time_to_happen = { days = 15 }
 	trigger = {
 		 has_global_flag = 2191562_EVENT_DONE
 		 has_global_flag = 2191564_EVENT_DONE
@@ -72,27 +67,17 @@
 			controlled_by = TUR
 			 }
 		 not = {
-			 GER = {
-				 war_with = TUR
-				 }
+			 GER = { war_with = TUR }
 			 }
 		 tag = GER
 		 date = 1914.1.1
-		 not = {
-			 date = 1999.12.30
-			 }
+		 not = { date = 1923.12.30 }
 		 }
 	option = {
 		 name = "DH_EVENT_2191561_Option7"
-		 GER = {
-			 crude_oil = 500
-			 }
-		 TUR = {
-			 crude_oil = -500
-			 }
-		 TUR = {
-			 country_event = 217 #Oil_in_Mosul
-			}
+		 GER = { crude_oil = 500 }
+		 TUR = { crude_oil = -500 }
+		 TUR = { country_event = 217 }            #Oil_in_Mosul
 		 }
 	}
 
@@ -110,9 +95,7 @@
 	 
 	is_triggered_only = yes
 	 
-	trigger = {
-		 tag = TUR
-		 }
+	trigger = { tag = TUR }
 	option = {
 		 name = "DH_EVENT_2191566_Option7"
 		 4446 = {#Tal_Afar
@@ -133,26 +116,19 @@
 	 
 	fire_only_once = yes
 	 
-	is_triggered_only = yes
-	 
-	mean_time_to_happen = {
-		 days = 15
-		 }
+	mean_time_to_happen = { days = 15 }
+	
 	trigger = {
 		 money = 100
 		 metal = 1500
-		 TUR = {
-			 faction = axis
-			 }
+		 TUR = { faction = axis }
 		 4781 = {#Kayseri
 			controlled_by = TUR
 			 }
 		 has_country_flag = baghdad
 		 tag = GER
 		 date = 1914.1.1
-		 not = {
-			 date = 1999.12.30
-			 }
+		 not = { date = 1923.12.30 }
 		 }
 	option = {
 		 name = "DH_EVENT_2191562_Option7"
@@ -174,15 +150,10 @@
 	 
 	fire_only_once = yes
 	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = {
-		 days = 31
-		 }
+	mean_time_to_happen = { days = 45 }
+	
 	trigger = {
-		 TUR = {
-			 faction = axis
-			 }
+		 TUR = { faction = axis }
 		 4781 = {#Kayseri
 			controlled_by = TUR
 			 }
@@ -190,15 +161,12 @@
 	
 		 tag = GER
 		 date = 1914.1.1
-		 not = {
-			 date = 1999.12.30
-			 }
+		 not = { date = 1923.12.30 }
 		 }
 	option = {
 		 name = "DH_EVENT_2191563_Option7"
-		 4728 = {#Kirikkale
-			infra = 3
-			 }
+		 4728 = { infra = 3 }					#Kirikkale
+			
 		 4675 = {#Delice
 			infra = 3
 			 }
@@ -221,12 +189,11 @@
 			infra = 3
 			 }
 		 4931 = {#Islahye
-			infra = 3
+			infra = 1
 			 }
 		 4976 = {#Iskenderun
-			infra = 3
+			infra = 2
 			 }
-
 		 }
 	}
 
@@ -242,26 +209,19 @@
 	 
 	fire_only_once = yes
 	 
-	is_triggered_only = yes
-	 
-	mean_time_to_happen = {
-		 days = 15
-		 }
+	mean_time_to_happen = { days = 15 }
+	
 	trigger = {
 		 money = 100
 		 metal = 1500
-		 TUR = {
-			 faction = axis
-			 }
+		 TUR = { faction = axis }
 		 4567 = {#Al_Raqqah
 			controlled_by = TUR
 			 }
 		 has_country_flag = baghdad
 		 tag = GER
 		 date = 1914.1.1
-		 not = {
-			 date = 1999.12.30
-			 }
+		 not = { date = 1923.12.30 }
 		 }
 	option = {
 		 name = "DH_EVENT_2191564_Option7"
@@ -283,15 +243,9 @@
 	 
 	fire_only_once = yes
 	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = {
-		 days = 31
-		 }
-	trigger = {
-		 TUR = {
-			 faction = axis
-			 }
+	mean_time_to_happen = { days = 31 }
+	
+	trigger = { TUR = { faction = axis }
 		 4567 = {#Al_Raqqah
 			controlled_by = TUR
 			 }
@@ -299,29 +253,27 @@
 
 		 tag = GER
 		 date = 1914.1.1
-		 not = {
-			 date = 1999.12.30
-			 }
+		 not = { date = 1923.12.30 }
 		 }
 	option = {
 		 name = "DH_EVENT_2191565_Option7"
 		 5082 = {#Al_Ladhiqiyah
-			infra = 2
+			infra = 1
 			 }
 		 5014 = {#Kirikhan
-			infra = 2
+			infra = 1
 			 }
 		 7389 = {#Hamah
-			infra = 2
+			infra = 1
 			 }
 		 5140 = {#Tartus
-			infra = 3
+			infra = 1
 			 }
 		 5238 = {#Tarabulus
-			infra = 3
+			infra = 1
 			 }
 		 5299 = {#Beirut
-			infra = 3
+			infra = 2
 			 }
 		 }
 	}
@@ -340,9 +292,8 @@
 	 
 	is_triggered_only = yes
 	 
-	mean_time_to_happen = {
-		 days = 15
-		 }
+	mean_time_to_happen = { days = 15 }
+	
 	trigger = {
 		 money = 100
 		 metal = 1500
@@ -355,9 +306,7 @@
 		 has_country_flag = baghdad
 		 tag = GER
 		 date = 1914.1.1
-		 not = {
-			 date = 1999.12.30
-			 }
+		 not = { date = 1923.12.30 }
 		 }
 	option = {
 		 name = "DH_EVENT_2191567_Option7"
@@ -379,15 +328,9 @@
 	 
 	fire_only_once = yes
 	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = {
-		 days = 31
-		 }
+	mean_time_to_happen = { days = 31 }
 	trigger = {
-		 TUR = {
-			 faction = axis
-			 }
+		 TUR = { faction = axis }
 		 4446 = {#Tal_Afar
 			controlled_by = TUR
 			 }
@@ -395,9 +338,7 @@
 
 		 tag = GER
 		 date = 1914.1.1
-		 not = {
-			 date = 1999.12.30
-			 }
+		 not = { date = 1923.12.30 }
 		 }
 	option = {
 		 name = "DH_EVENT_2191568_Option7"
@@ -424,24 +365,18 @@
 	 
 	is_triggered_only = yes
 	 
-	mean_time_to_happen = {
-		 days = 15
-		 }
+	mean_time_to_happen = { days = 15 }
 	trigger = {
 		 money = 100
 		 metal = 1500
-		 TUR = {
-			 faction = axis
-			 }
+		 TUR = { faction = axis }
 		 4831 = {                    #Tikrit
 			controlled_by = TUR
 			 }
 		 has_country_flag = baghdad
 		 tag = GER
 		 date = 1914.1.1
-		 not = {
-			 date = 1999.12.30
-			 }
+		 not = { date = 1923.12.30 }
 		 }
 	option = {
 		 name = "DH_EVENT_2191569_Option7"
@@ -463,11 +398,7 @@
 	 
 	fire_only_once = yes
 	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = {
-		 days = 31
-		 }
+	mean_time_to_happen = { days = 31 }
 	trigger = {
 		 TUR = { faction = axis }
 		 4831 = {                     #Tikrit
@@ -477,9 +408,7 @@
 
 		 tag = GER
 		 date = 1914.1.1
-		 not = {
-			 date = 1999.12.30
-			 }
+		 not = { date = 1923.12.30 }
 		 }
 	option = {
 		 name = "DH_EVENT_2191570_Option7"
@@ -487,7 +416,7 @@
 			infra = 3
 			 }
 		 9182 = {#Ba´quba
-			infra = 3
+			infra = 1
 			 }
 		 }
 	}
@@ -506,24 +435,19 @@
 	 
 	is_triggered_only = yes
 	 
-	mean_time_to_happen = {
-		 days = 15
-		 }
+	mean_time_to_happen = { days = 15 }
+	
 	trigger = {
 		 money = 100
 		 metal = 1500
-		 TUR = {
-			 faction = axis
-			 }
+		 TUR = { faction = axis }
 		 5173 = {#Al_Qamishi
 			controlled_by = TUR
 			 }
 		 has_country_flag = baghdad
 		 tag = GER
 		 date = 1914.1.1
-		 not = {
-			 date = 1999.12.30
-			 }
+		 not = { date = 1923.12.30 }
 		 }
 	option = {
 		 name = "DH_EVENT_2191571_Option7"
@@ -545,15 +469,10 @@
 	 
 	fire_only_once = yes
 	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = {
-		 days = 31
-		 }
+	mean_time_to_happen = { days = 15 }
+	
 	trigger = {
-		 TUR = {
-			 faction = axis
-			 }
+		 TUR = { faction = axis }
 		 5173 = {#Al_Qamishi
 			controlled_by = TUR
 			 }
@@ -561,14 +480,12 @@
 
 		 tag = GER
 		 date = 1914.1.1
-		 not = {
-			 date = 1999.12.30
-			 }
+		 not = { date = 1923.12.30 }
 		 }
 	option = {
 		 name = "DH_EVENT_2191572_Option7"
 		 9213 = {#Baghdad
-			infra = 3
+			infra = 2
 			 }
 		 }
 	}
