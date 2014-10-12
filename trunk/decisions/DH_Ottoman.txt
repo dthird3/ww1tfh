@@ -1,75 +1,38 @@
 
 diplomatic_decisions = {
 	 2191560_decision = {#Baghdad_Railway
-		ai_will_do = {
-			 factor = 1
-			 }
+		ai_will_do = { factor = 1 }
 		potential = {
-			 or = {
-				 TUR = {
-					 faction = axis
-					 }
-				 }
+			 or = { TUR = { faction = axis } }
 			 tag = GER
 			 date = 1914.1.1
-			 not = {
-				 date = 1999.12.30
-				 }
-			 not = {
-				 has_country_flag = decision_2191560
-				 }
+			 not = { date = 1923.12.30 }
+			 not = { has_country_flag = decision_2191560 }
 			 }
 		allow = {
-			 or = {
-				 TUR = {
-					 faction = axis
-					 }
-				 }
-			 or = {
-				 4781 = {#Kayseri
-					controlled_by = TUR
-					 }
-				 4567 = {#Al_Raqqah
-					controlled_by = TUR
-					 }
-				 5173 = {#Al_Qamishi
-					controlled_by = TUR
-					 }
-				 4446 = {#Tal_Afar
-					controlled_by = TUR
-					 }
-				 4831 = {#Tikrit
-					controlled_by = TUR
-					 }
-				 }
+			 money = 50
+			 metal = 1000
 			 }
+			 
 		effect = {
-			 country_event = 215 #Baghdad_Railway
+			country_event = 215 #Baghdad_Railway
 			set_country_flag = decision_2191560
 			 }
 		}
 	
 
 	 2191562_decision = {#Baghdad_Railway:_Karapinar-Dorak
-		ai_will_do = {
-			 factor = 1
-			 }
+		ai_will_do = { factor = 1 }
 		potential = {
-			 TUR = {
-				 faction = axis
-				 }
+			 TUR = { faction = axis }
 			 4781 = {#Kayseri
 				controlled_by = TUR
 				 }
 			 has_country_flag = baghdad
 			 tag = GER
 			 date = 1914.1.1
-			 not = {
-				 date = 1999.12.30
-				 }
-			 not = {
-				 has_country_flag = decision_2191562
-				 }
+			 not = { date = 1923.12.30 }
+			 not = { has_country_flag = decision_2191562 }
 			 }
 		allow = {
 			 money = 50
@@ -87,21 +50,15 @@ diplomatic_decisions = {
 			 factor = 1
 			 }
 		potential = {
-			 TUR = {
-				 faction = axis
-				 }
+			 TUR = { faction = axis }
 			 4567 = {#Al_Raqqah
 				controlled_by = TUR
 				 }
 			 has_country_flag = baghdad
 			 tag = GER
 			 date = 1914.1.1
-			 not = {
-				 date = 1999.12.30
-				 }
-			 not = {
-				 has_country_flag = decision_2191564
-				 }
+			 not = { date = 1923.12.30 }
+			 not = { has_country_flag = decision_2191564 }
 			 }
 		allow = {
 			 money = 50
@@ -128,9 +85,7 @@ diplomatic_decisions = {
 			 has_country_flag = baghdad
 			 tag = GER
 			 date = 1914.1.1
-			 not = {
-				 date = 1999.12.30
-				 }
+			 not = { date = 1923.12.30 }
 			 not = {
 				 has_country_flag = decision_2191567
 				 }
@@ -151,18 +106,14 @@ diplomatic_decisions = {
 			 factor = 1
 			 }
 		potential = {
-			 TUR = {
-				 faction = axis
-				 }
+			 TUR = { faction = axis }
 			 4831 = {#Tikrit
 				controlled_by = TUR
 				 }
 			 has_country_flag = baghdad
 			 tag = GER
 			 date = 1914.1.1
-			 not = {
-				 date = 1999.12.30
-				 }
+			 not = { date = 1923.12.30 }
 			 not = {
 				 has_country_flag = decision_2191569
 				 }
@@ -192,9 +143,7 @@ diplomatic_decisions = {
 			 has_country_flag = baghdad
 			 tag = GER
 			 date = 1914.1.1
-			 not = {
-				 date = 1999.12.30
-				 }
+			 not = { date = 1923.12.30 }
 			 not = {
 				 has_country_flag = decision_2191571
 				 }
@@ -330,29 +279,19 @@ diplomatic_decisions = {
 	
 
 	 2191582_decision = {#Overhaul_coastal_defence_at_the_Dardanelles
-		ai_will_do = {
-			 factor = 1
-			 }
+		ai_will_do = { factor = 1 }
 		potential = {
-			 TUR = {
-				 faction = axis
-				 }
+			 TUR = { faction = axis }
 			 tag = GER
 			 date = 1914.7.28
-			 not = {
-				 date = 1917.12.30
-				 }
+			 not = { date = 1917.12.30 }
 			 not = {
 				 has_country_flag = decision_2191582
 				 }
 			 }
 		allow = {
-			 TUR = {
-				 faction = axis
-				 }
-			 TUR = {
-				 war = yes
-				 }
+			 TUR = { faction = axis }
+			 TUR = { war = yes }
 			 4501 = {#Tekirdag
 				controlled_by = TUR
 				 }
@@ -366,9 +305,7 @@ diplomatic_decisions = {
 	
 
 	 2001571_decision = {#Protect_the_oil_fields_in_southern_Persia
-		ai_will_do = {
-			 factor = 1
-			 }
+		ai_will_do = { factor = 1 }
 		potential = {
 			 GER = {
 				 war_with = ENG
