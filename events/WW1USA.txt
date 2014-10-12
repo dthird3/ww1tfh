@@ -290,6 +290,7 @@
 	mean_time_to_happen = { days = 15 }
 	 
 	trigger = {
+		tag = USA
 		USA = { has_country_flag = Veracruz_occupied }
 		USA = { has_country_flag = Niagara_Peace }
 		not = { MXR = { war_with = MXC } }
@@ -300,11 +301,11 @@
 		dissent = -1
 		USA = { 9624 = { secede_province = MXC } }						#Veracruz
 		9624 = { remove_core = USA }
+		USA = { clr_country_flag = Veracruz_occupied }
 		MXC = { country_event = 101054 }					# USA Leave_Veracruz
 		MXR = { country_event = 101054 }					# USA Leave_Veracruz
 		MXR = { remove_country_modifier = "weapons_embargo" }
 		USA = { clr_country_flag = Huerta_embargoed }
-		USA = { clr_country_flag = Veracruz_occupied }
 	}
 }
 

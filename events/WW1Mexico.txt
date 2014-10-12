@@ -753,7 +753,7 @@
 	id = 101050
 	 
 	picture = "Vera_Cruz_1"
-	major = yes
+
 	is_triggered_only = yes
 	
 	option = {										
@@ -971,6 +971,7 @@ country_event = {
 	mean_time_to_happen = { days = 90 }
 	
 	trigger = {
+		tag = MXR
 		exists = MXR
 		exists = MXC
 		MXR = { head_of_state = 60035 }				    			# Villa
