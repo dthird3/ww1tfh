@@ -139,12 +139,14 @@ diplomatic_decisions = {
 		effect = {
 			MXR = { add_country_modifier = { 
 				name = "weapons_embargo" 
-				duration = 600
+				duration = 730
 				} 
 			}
-		USA = { set_country_flag = Huerta_embargoed }
-		MXR = { country_event = 101048 }					# USA embargoes MXR
-		MXC = { country_event = 101048 }					# USA embargoes MXC
+			USA = { set_country_flag = Huerta_embargoed }
+			USA = { relation = { who = MXC value = +30 } }
+			USA = { relation = { who = MXR value = -50 } }
+			MXR = { country_event = 101048 }					# USA embargoes MXR
+			MXC = { country_event = 101048 }					# USA embargoes MXC
 		}
 	}
 }
