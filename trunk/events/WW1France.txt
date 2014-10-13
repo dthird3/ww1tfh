@@ -105,6 +105,32 @@ country_event = {
 	}
 	
 	
+# Mutiny - broken promise - More French Offensives
+	country_event = {
+	title = "EVT1914_190105_TITLE"
+	desc = "EVT1914_190105_DESC"
+	id = 190105
+	 
+	picture = "Mutiny"
+	
+	mean_time_to_happen = { days = 7 }
+		
+	trigger = {
+		FRA = { ai = no }
+		FRA = { has_country_modifier = army_demoralised }
+		FRA = { total_offensives = 4 }
+ 		}
+		 
+	option = {
+		name = "ACTION_NAME_DAMN"
+		FRA = { dissent = +4 }
+		FRA = { officer_pool = -50 }
+		FRA = { manpower = -3 }
+		FRA = { remove_country_modifier = army_mutiny }		# Reset modifier to last another 30 days
+		FRA = { add_country_modifier = { name = army_mutiny   duration = 30} }
+		}
+	}	
+	
 
 # Army morale restored with USA entering the war	
 	country_event = {
@@ -115,7 +141,7 @@ country_event = {
 	picture = "USAP9"
 	
 	fire_only_once = yes
-	mean_time_to_happen = { months = 4 }
+	mean_time_to_happen = { months = 5 }
 		
 	trigger = {
 		USA = {	war_with = GER }
