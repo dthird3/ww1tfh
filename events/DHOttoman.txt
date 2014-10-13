@@ -707,9 +707,8 @@ remove_minister = 34248 #Hans_von_Seeckt
 	 
 	is_triggered_only = yes
 	 
-	trigger = {
-		 tag = TUR
-		 }
+	trigger = { tag = TUR }
+	
 	option = {
 		 name = "DH_EVENT_2145526_Option7"
 		 dissent = -2
@@ -717,23 +716,12 @@ remove_minister = 34248 #Hans_von_Seeckt
 			hq_brigade = current
 			 }
 		 random_owned = {
-			 limit = { controlled_by = THIS }
+			 limit = { controlled_by = TUR }
 			 infantry_brigade = current
 			 infantry_brigade = current
 			 artillery_brigade = current
 			 }
-		 4503 = {                                  #Istanbul
-			hq_brigade = current
-			 }
-		 random_owned = {
-			 limit = { controlled_by = THIS }
-			 hq_brigade = current
-			 hq_brigade = current
-			 hq_brigade = current
-			 }
-		 4503 = {                                 #Istanbul
-			hq_brigade = current
-			 }
+
 		 random_owned = {
 			 limit = {
 				 controlled_by = THIS
