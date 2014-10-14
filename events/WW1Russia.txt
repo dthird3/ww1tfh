@@ -712,15 +712,13 @@ remove_minister = 76059 #Nikolai_II
 		head_of_state = 76092 #Michael_II
 
 		set_country_flag = dual_power
-		 set_country_flag = bolsheviks
-		 add_country_modifier = {
-			 name = "dual_power"
-			 duration = 180
-			 }
-		 USA = {
-			 country_event = 100530 #100530
-			}
-		 }
+		set_country_flag = bolsheviks
+		add_country_modifier = {
+			name = "dual_power"
+			duration = 180 }
+		USA = { country_event = 100530 }	# USA possibly joins the war
+		FRA = { country_event = 190100 }	# French army mutiny possibly
+		}
 	}
 
 
