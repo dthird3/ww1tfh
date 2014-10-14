@@ -329,6 +329,119 @@
 		 set_country_flag = brussels_taken
 		 }
 	}
+	
+	
+# Air Aces die 1914
+
+ country_event = {
+	title = "Disaster_Title"
+	desc = "EVT1914_190200_DESC"
+	id = 100560
+	 
+	picture = "Fokker-crash"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		date = 1914.08.01
+		air_battles_fought = 40
+	}
+		
+	option = {
+		name = "ACTION_NAME_DAMN"
+		random_list = { 
+				25 = { kill_leader = 34104 } 	
+				25 = { kill_leader = 34172 } 	
+				25 = { kill_leader = 34223 }	
+				25 = { kill_leader = 34322 } 			
+				}
+		}
+	}	
+	
+# Air Aces die 1915
+
+ country_event = {
+	title = "Disaster_Title"
+	desc = "EVT1914_190200_DESC"
+	id = 100562
+	 
+	picture = "Fokker-crash"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		date = 1915.02.01
+		air_battles_fought = 140
+	}
+		
+	option = {
+		name = "ACTION_NAME_DAMN"
+		random_list = { 
+				25 = { kill_leader = 34170 } 	
+				25 = { kill_leader = 34060 } 	
+				25 = { kill_leader = 34176 }	
+				25 = { kill_leader = 34177 } 			
+				}
+		}
+	}	
+	
+# Air Aces die 1916
+
+ country_event = {
+	title = "Disaster_Title"
+	desc = "EVT1914_190200_DESC"
+	id = 100564
+	 
+	picture = "Fokker-crash"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		date = 1916.02.01
+		air_battles_fought = 240
+	}
+		
+	option = {
+		name = "ACTION_NAME_DAMN"
+		random_list = { 
+				25 = { kill_leader = 34061 } 	
+				25 = { kill_leader = 34062 } 	
+				25 = { kill_leader = 34063 }	
+				25 = { kill_leader = 34070 } 			
+				}
+		}
+	}
+	
+# Air Aces die 1917
+
+ country_event = {
+	title = "Disaster_Title"
+	desc = "EVT1914_190200_DESC"
+	id = 100566
+	 
+	picture = "Fokker-crash"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		date = 1917.02.01
+		air_battles_fought = 340
+	}
+		
+	option = {
+		name = "ACTION_NAME_DAMN"
+		random_list = { 
+				25 = { kill_leader = 34180 } 	
+				25 = { kill_leader = 34224 } 	
+				25 = { kill_leader = 34317 }	
+				25 = { kill_leader = 34318 } 			
+				}
+		}
+	}	
 
 
 #Treaty of Versailles

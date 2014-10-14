@@ -154,6 +154,120 @@ country_event = {
 }
 
 
+# Air Aces die 1914
+
+ country_event = {
+	title = "Disaster_Title"
+	desc = "EVT1914_190200_DESC"
+	id = 190200
+	 
+	picture = "French-crash"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FRA
+		date = 1914.08.01
+		air_battles_fought = 40
+	}
+		
+	option = {
+		name = "ACTION_NAME_DAMN"
+		random_list = { 
+				25 = { kill_leader = 32516 } 	#1911
+				25 = { kill_leader = 32380 } 	#1908
+				25 = { kill_leader = 32384 }	#1914
+				25 = { kill_leader = 32387 } 	#1913			
+				}
+		}
+	}
+	
+# Air Aces die 1915
+
+ country_event = {
+	title = "Disaster_Title"
+	desc = "EVT1914_190200_DESC"
+	id = 190202
+	 
+	picture = "French-crash"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FRA
+		date = 1915.02.01
+		air_battles_fought = 140
+	}
+		
+	option = {
+		name = "ACTION_NAME_DAMN"
+		random_list = { 
+				25 = { kill_leader = 32371 } 	#1908
+				25 = { kill_leader = 32382 } 	#1915
+				25 = { kill_leader = 32388 } 	#1915
+				25 = { kill_leader = 32369 } 	#1914
+				}
+		}
+	}
+	
+# Air Aces die 1916
+
+ country_event = {
+	title = "Disaster_Title"
+	desc = "EVT1914_190200_DESC"
+	id = 190204
+	 
+	picture = "French-crash"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FRA
+		date = 1916.02.01
+		air_battles_fought = 240
+	}
+		
+	option = {
+		name = "ACTION_NAME_DAMN"
+		random_list = { 
+				25 = { kill_leader = 32370 } 	#1916
+				25 = { kill_leader = 32372 }	#1916
+				25 = { kill_leader = 32381 } 	#1916
+				25 = { kill_leader = 32385 }	#1916
+				}
+		}
+	}	
+	
+
+# Air Aces die 1917
+
+ country_event = {
+	title = "Disaster_Title"
+	desc = "EVT1914_190200_DESC"
+	id = 190206
+	 
+	picture = "French-crash"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FRA
+		date = 1917.02.01
+		air_battles_fought = 340
+	}
+		
+	option = {
+		name = "ACTION_NAME_DAMN"
+		random_list = { 
+				25 = { kill_leader = 32375 } 	#1916
+				25 = { kill_leader = 32378 }	#1916
+				25 = { kill_leader = 32379 } 	#1916
+				25 = { kill_leader = 32383 }	#1916
+				}
+		}
+	}	
+
+
  country_event = {
 	title = "EVTNAME992910"
 	desc = "EVTDESC992910"
