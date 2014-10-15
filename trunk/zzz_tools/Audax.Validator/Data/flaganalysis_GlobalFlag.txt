@@ -1,14 +1,22 @@
 Flag Analysis for GlobalFlag
 
 Summary
-Warnings: 7
-Total flags: 174 in 52 names
+Warnings: 12
+Total flags: 212 in 59 names
 
 Warnings
-2001511_event_done
-	set|set: <mod>\events\DHHejaz.txt (Line 207, column 4) [set_global_flag = 2001511_EVENT_DONE]
-2007516_event_done
-	set|set: <mod>\events\DHSoviet.txt (Line 966, column 4) [set_global_flag = 2007516_EVENT_DONE]
+2038503_event_done
+	chk|chk: <mod>\decisions\DH_Mexico.txt (Line 483, column 4) [has_global_flag = 2038503_EVENT_DONE]
+2049521_event_done
+	chk|chk: <mod>\decisions\DH_Mexico.txt (Line 294, column 5) [has_global_flag = 2049521_EVENT_DONE]
+	chk|chk: <mod>\decisions\DH_Mexico.txt (Line 211, column 5) [has_global_flag = 2049521_EVENT_DONE]
+2049522_event_done
+	chk|chk: <mod>\decisions\DH_Mexico.txt (Line 304, column 6) [has_global_flag = 2049522_EVENT_DONE]
+2049523_event_done
+	chk|chk: <mod>\decisions\DH_Mexico.txt (Line 376, column 6) [has_global_flag = 2049523_EVENT_DONE]
+	chk|chk: <mod>\decisions\DH_Mexico.txt (Line 250, column 5) [has_global_flag = 2049523_EVENT_DONE]
+2049535_event_done
+	chk|chk: <mod>\decisions\DH_Mexico.txt (Line 377, column 6) [has_global_flag = 2049535_EVENT_DONE]
 2191562_event_done
 	chk|chk: <mod>\events\DHOttoman.txt (Line 61, column 4) [has_global_flag = 2191562_EVENT_DONE]
 2191564_event_done
@@ -19,6 +27,10 @@ Warnings
 	chk|chk: <mod>\events\DHOttoman.txt (Line 65, column 4) [has_global_flag = 2191569_EVENT_DONE]
 2191571_event_done
 	chk|chk: <mod>\events\DHOttoman.txt (Line 63, column 4) [has_global_flag = 2191571_EVENT_DONE]
+sleepevent_2049523
+	chk|chk: <mod>\decisions\DH_Mexico.txt (Line 226, column 6) [has_global_flag = SLEEPEVENT_2049523]
+sleepevent_2049535
+	chk|chk: <mod>\decisions\DH_Mexico.txt (Line 312, column 6) [has_global_flag = SLEEPEVENT_2049535]
 
 
 Summary (excluding warnings)
@@ -29,6 +41,9 @@ Summary (excluding warnings)
 2001510_event_done
 	chk|chk: <mod>\events\DHHejaz.txt (Line 229, column 4) [has_global_flag = 2001510_EVENT_DONE]
 	set|set: <mod>\events\DHHejaz.txt (Line 146, column 4) [set_global_flag = 2001510_EVENT_DONE]
+2001511_event_done
+	chk|chk: <mod>\decisions\DH_Hejaz.txt (Line 158, column 5) [has_global_flag = 2001511_EVENT_DONE]
+	set|set: <mod>\events\DHHejaz.txt (Line 207, column 4) [set_global_flag = 2001511_EVENT_DONE]
 2002508_event_done
 	chk|chk: <mod>\events\DHGreekBulgarian.txt (Line 1281, column 5) [has_global_flag = 2002508_EVENT_DONE]
 	chk|chk: <mod>\events\DHGreekBulgarian.txt (Line 1150, column 5) [has_global_flag = 2002508_EVENT_DONE]
@@ -39,33 +54,43 @@ Summary (excluding warnings)
 	set|set: <mod>\events\DHGreekBulgarian.txt (Line 763, column 4) [set_global_flag = 2002522_EVENT_DONE]
 	set|set: <mod>\events\DHGreekBulgarian.txt (Line 752, column 4) [set_global_flag = 2002522_EVENT_DONE]
 2002523_event_done
+	chk|chk: <mod>\decisions\DH_GreekBulgarian.txt (Line 261, column 5) [has_global_flag = 2002523_EVENT_DONE]
 	chk|chk: <mod>\events\DHGreekBulgarian.txt (Line 844, column 4) [has_global_flag = 2002523_EVENT_DONE]
 	set|set: <mod>\events\DHGreekBulgarian.txt (Line 793, column 4) [set_global_flag = 2002523_EVENT_DONE]
 2002533_event_done
+	chk|chk: <mod>\decisions\DH_GreekBulgarian.txt (Line 354, column 6) [has_global_flag = 2002533_EVENT_DONE]
 	chk|chk: <mod>\events\DHGreekBulgarian.txt (Line 1893, column 5) [has_global_flag = 2002533_EVENT_DONE]
 	set|set: <mod>\events\DHGreekBulgarian.txt (Line 881, column 4) [set_global_flag = 2002533_EVENT_DONE]
 	set|set: <mod>\events\DHGreekBulgarian.txt (Line 870, column 4) [set_global_flag = 2002533_EVENT_DONE]
 2007501_event_done
+	chk|chk: <mod>\decisions\DH_Soviet.txt (Line 225, column 5) [has_global_flag = 2007501_EVENT_DONE]
 	chk|chk: <mod>\events\DHSoviet.txt (Line 710, column 4) [has_global_flag = 2007501_EVENT_DONE]
 	set|set: <mod>\events\DHSoviet.txt (Line 391, column 4) [set_global_flag = 2007501_EVENT_DONE]
 2007505_event_done
+	chk|chk: <mod>\decisions\DH_Soviet.txt (Line 64, column 5) [has_global_flag = 2007505_EVENT_DONE]
 	chk|chk: <mod>\events\DHSoviet.txt (Line 496, column 4) [has_global_flag = 2007505_EVENT_DONE]
 	set|set: <mod>\events\DHSoviet.txt (Line 441, column 4) [set_global_flag = 2007505_EVENT_DONE]
 2007506_event_done
+	chk|chk: <mod>\decisions\DH_Soviet.txt (Line 118, column 5) [has_global_flag = 2007506_EVENT_DONE]
+	chk|chk: <mod>\decisions\DH_Soviet.txt (Line 91, column 5) [has_global_flag = 2007506_EVENT_DONE]
 	chk|chk: <mod>\events\DHSoviet.txt (Line 573, column 4) [has_global_flag = 2007506_EVENT_DONE]
 	chk|chk: <mod>\events\DHSoviet.txt (Line 534, column 4) [has_global_flag = 2007506_EVENT_DONE]
 	set|set: <mod>\events\DHSoviet.txt (Line 474, column 4) [set_global_flag = 2007506_EVENT_DONE]
 2007508_event_done
+	chk|chk: <mod>\decisions\DH_Soviet.txt (Line 157, column 5) [has_global_flag = 2007508_EVENT_DONE]
 	chk|chk: <mod>\events\DHSoviet.txt (Line 624, column 4) [has_global_flag = 2007508_EVENT_DONE]
 	set|set: <mod>\events\DHSoviet.txt (Line 551, column 4) [set_global_flag = 2007508_EVENT_DONE]
 2007509_event_done
+	chk|chk: <mod>\decisions\DH_Soviet.txt (Line 196, column 5) [has_global_flag = 2007509_EVENT_DONE]
 	chk|chk: <mod>\events\DHSoviet.txt (Line 991, column 5) [has_global_flag = 2007509_EVENT_DONE]
 	chk|chk: <mod>\events\DHSoviet.txt (Line 674, column 4) [has_global_flag = 2007509_EVENT_DONE]
 	set|set: <mod>\events\DHSoviet.txt (Line 602, column 4) [set_global_flag = 2007509_EVENT_DONE]
 2007511_event_done
+	chk|chk: <mod>\decisions\DH_Soviet.txt (Line 255, column 5) [has_global_flag = 2007511_EVENT_DONE]
 	chk|chk: <mod>\events\DHSoviet.txt (Line 748, column 4) [has_global_flag = 2007511_EVENT_DONE]
 	set|set: <mod>\events\DHSoviet.txt (Line 688, column 4) [set_global_flag = 2007511_EVENT_DONE]
 2007512_event_done
+	chk|chk: <mod>\decisions\DH_Soviet.txt (Line 286, column 5) [has_global_flag = 2007512_EVENT_DONE]
 	chk|chk: <mod>\events\DHSoviet.txt (Line 787, column 4) [has_global_flag = 2007512_EVENT_DONE]
 	set|set: <mod>\events\DHSoviet.txt (Line 726, column 4) [set_global_flag = 2007512_EVENT_DONE]
 2007513_event_done
@@ -77,18 +102,24 @@ Summary (excluding warnings)
 2007515_event_done
 	chk|chk: <mod>\events\DHSoviet.txt (Line 988, column 4) [has_global_flag = 2007515_EVENT_DONE]
 	set|set: <mod>\events\DHSoviet.txt (Line 913, column 4) [set_global_flag = 2007515_EVENT_DONE]
+2007516_event_done
+	chk|chk: <mod>\decisions\DH_Soviet.txt (Line 197, column 5) [has_global_flag = 2007516_EVENT_DONE]
+	set|set: <mod>\events\DHSoviet.txt (Line 966, column 4) [set_global_flag = 2007516_EVENT_DONE]
 2007517_event_done
 	set|set: <mod>\events\DHSoviet.txt (Line 1011, column 4) [set_global_flag = 2007517_EVENT_DONE]
 	chk|chk: <mod>\events\DHSoviet.txt (Line 675, column 4) [has_global_flag = 2007517_EVENT_DONE]
 2019505_event_done
+	chk|chk: <mod>\decisions\DH_GreekBulgarian.txt (Line 320, column 5) [has_global_flag = 2019505_EVENT_DONE]
 	chk|chk: <mod>\events\DHGreekBulgarian.txt (Line 1205, column 4) [has_global_flag = 2019505_EVENT_DONE]
 	chk|chk: <mod>\events\DHGreekBulgarian.txt (Line 1118, column 4) [has_global_flag = 2019505_EVENT_DONE]
 	set|set: <mod>\events\DHGreekBulgarian.txt (Line 1065, column 4) [set_global_flag = 2019505_EVENT_DONE]
 	set|set: <mod>\events\DHGreekBulgarian.txt (Line 1057, column 4) [set_global_flag = 2019505_EVENT_DONE]
 2019506_event_done
+	chk|chk: <mod>\decisions\DH_GreekBulgarian.txt (Line 299, column 6) [has_global_flag = 2019506_EVENT_DONE]
 	chk|chk: <mod>\events\DHGreekBulgarian.txt (Line 1210, column 5) [has_global_flag = 2019506_EVENT_DONE]
 	set|set: <mod>\events\DHGreekBulgarian.txt (Line 1096, column 4) [set_global_flag = 2019506_EVENT_DONE]
 2019510_event_done
+	chk|chk: <mod>\decisions\DH_GreekBulgarian.txt (Line 148, column 5) [has_global_flag = 2019510_EVENT_DONE]
 	set|set: <mod>\events\DHGreekBulgarian.txt (Line 1298, column 3) [set_global_flag = 2019510_EVENT_DONE]
 	chk|chk: <mod>\events\DHGreekBulgarian.txt (Line 496, column 4) [has_global_flag = 2019510_EVENT_DONE]
 2019511_event_done
@@ -101,6 +132,7 @@ Summary (excluding warnings)
 	set|set: <mod>\events\DHGreekBulgarian.txt (Line 1636, column 4) [set_global_flag = 2019517_EVENT_DONE]
 	set|set: <mod>\events\DHGreekBulgarian.txt (Line 1629, column 4) [set_global_flag = 2019517_EVENT_DONE]
 2019518_event_done
+	chk|chk: <mod>\decisions\DH_GreekBulgarian.txt (Line 223, column 5) [has_global_flag = 2019518_EVENT_DONE]
 	set|set: <mod>\events\DHGreekBulgarian.txt (Line 1667, column 4) [set_global_flag = 2019518_EVENT_DONE]
 	chk|chk: <mod>\events\DHGreekBulgarian.txt (Line 726, column 4) [has_global_flag = 2019518_EVENT_DONE]
 2031002_event_done
@@ -111,10 +143,12 @@ Summary (excluding warnings)
 	set|set: <mod>\events\DHGreekBulgarian.txt (Line 2176, column 4) [set_global_flag = 2084503_EVENT_DONE]
 	chk|chk: <mod>\events\DHGreekBulgarian.txt (Line 1509, column 4) [has_global_flag = 2084503_EVENT_DONE]
 2173500_event_done
+	chk|chk: <mod>\decisions\DH_WhiteRussia.txt (Line 37, column 5) [has_global_flag = 2173500_EVENT_DONE]
 	chk|chk: <mod>\events\DHWhiteRussia.txt (Line 890, column 4) [has_global_flag = 2173500_EVENT_DONE]
 	chk|chk: <mod>\events\DHWhiteRussia.txt (Line 152, column 4) [has_global_flag = 2173500_EVENT_DONE]
 	set|set: <mod>\events\DHWhiteRussia.txt (Line 83, column 4) [set_global_flag = 2173500_EVENT_DONE]
 2173501_event_done
+	chk|chk: <mod>\decisions\DH_WhiteRussia.txt (Line 66, column 5) [has_global_flag = 2173501_EVENT_DONE]
 	chk|chk: <mod>\events\DHWhiteRussia.txt (Line 405, column 4) [has_global_flag = 2173501_EVENT_DONE]
 	chk|chk: <mod>\events\DHWhiteRussia.txt (Line 197, column 4) [has_global_flag = 2173501_EVENT_DONE]
 	set|set: <mod>\events\DHWhiteRussia.txt (Line 132, column 4) [set_global_flag = 2173501_EVENT_DONE]
@@ -122,6 +156,7 @@ Summary (excluding warnings)
 	chk|chk: <mod>\events\DHWhiteRussia.txt (Line 286, column 4) [has_global_flag = 2173503_EVENT_DONE]
 	set|set: <mod>\events\DHWhiteRussia.txt (Line 227, column 4) [set_global_flag = 2173503_EVENT_DONE]
 2173504_event_done
+	chk|chk: <mod>\decisions\DH_WhiteRussia.txt (Line 96, column 5) [has_global_flag = 2173504_EVENT_DONE]
 	chk|chk: <mod>\events\DHWhiteRussia.txt (Line 319, column 4) [has_global_flag = 2173504_EVENT_DONE]
 	set|set: <mod>\events\DHWhiteRussia.txt (Line 266, column 4) [set_global_flag = 2173504_EVENT_DONE]
 2173505_event_done
@@ -190,15 +225,22 @@ Summary (excluding warnings)
 	chk|chk: <mod>\events\WW1PolishBolshevik.txt (Line 60, column 4) [has_global_flag = 2193501_EVENT_DONE]
 	chk|chk: <mod>\events\WW1PolishBolshevik.txt (Line 16, column 4) [has_global_flag = 2193501_EVENT_DONE]
 2233500_event_done
+	chk|chk: <mod>\decisions\DH_Hejaz.txt (Line 203, column 5) [has_global_flag = 2233500_EVENT_DONE]
 	chk|chk: <mod>\events\DHHejaz.txt (Line 331, column 4) [has_global_flag = 2233500_EVENT_DONE]
 	set|set: <mod>\events\DHHejaz.txt (Line 289, column 4) [set_global_flag = 2233500_EVENT_DONE]
 entente_hostility
+	chk|chk: <mod>\decisions\DH_GreekBulgarian.txt (Line 259, column 5) [has_global_flag = entente_hostility]
+	chk|chk: <mod>\decisions\DH_GreekBulgarian.txt (Line 221, column 5) [has_global_flag = entente_hostility]
+	chk|chk: <mod>\decisions\DH_GreekBulgarian.txt (Line 185, column 5) [has_global_flag = entente_hostility]
 	set|clr: <mod>\events\DHGreekBulgarian.txt (Line 1821, column 4) [clr_global_flag = entente_hostility]
 	set|set: <mod>\events\DHGreekBulgarian.txt (Line 1625, column 4) [set_global_flag = entente_hostility]
 	chk|chk: <mod>\events\DHGreekBulgarian.txt (Line 842, column 4) [has_global_flag = entente_hostility]
 	chk|chk: <mod>\events\DHGreekBulgarian.txt (Line 724, column 4) [has_global_flag = entente_hostility]
 	chk|chk: <mod>\events\DHGreekBulgarian.txt (Line 666, column 4) [has_global_flag = entente_hostility]
 greece_mobilized
+	chk|chk: <mod>\decisions\DH_GreekBulgarian.txt (Line 260, column 5) [has_global_flag = greece_mobilized]
+	chk|chk: <mod>\decisions\DH_GreekBulgarian.txt (Line 222, column 5) [has_global_flag = greece_mobilized]
+	chk|chk: <mod>\decisions\DH_GreekBulgarian.txt (Line 149, column 5) [has_global_flag = greece_mobilized]
 	set|clr: <mod>\events\DHGreekBulgarian.txt (Line 1822, column 4) [clr_global_flag = greece_mobilized]
 	set|clr: <mod>\events\DHGreekBulgarian.txt (Line 1428, column 4) [clr_global_flag = greece_mobilized]
 	set|set: <mod>\events\DHGreekBulgarian.txt (Line 1345, column 4) [set_global_flag = greece_mobilized]
@@ -206,9 +248,10 @@ greece_mobilized
 	chk|chk: <mod>\events\DHGreekBulgarian.txt (Line 725, column 4) [has_global_flag = greece_mobilized]
 	chk|chk: <mod>\events\DHGreekBulgarian.txt (Line 497, column 4) [has_global_flag = greece_mobilized]
 imperial_dissolution
+	chk|chk: <mod>\decisions\DH_Soviet.txt (Line 238, column 5) [has_global_flag = imperial_dissolution]
 	chk|chk: <mod>\events\DHSoviet.txt (Line 711, column 4) [has_global_flag = imperial_dissolution]
 	chk|chk: <mod>\events\DHSoviet.txt (Line 463, column 4) [has_global_flag = imperial_dissolution]
-	set|set: <mod>\events\WW1Russia.txt (Line 1840, column 3) [set_global_flag = imperial_dissolution]
+	set|set: <mod>\events\WW1Russia.txt (Line 1838, column 3) [set_global_flag = imperial_dissolution]
 jap_ultimatum_extended
 	chk|chk: <mod>\events\DHJapan.txt (Line 604, column 6) [has_global_flag = JAP_ultimatum_extended]
 	set|clr: <mod>\events\DHJapan.txt (Line 383, column 4) [clr_global_flag = JAP_ultimatum_extended]
@@ -220,12 +263,14 @@ jap_ultimatum_extended
 	set|clr: <mod>\events\DHJapan.txt (Line 311, column 5) [clr_global_flag = JAP_ultimatum_extended]
 	set|set: <mod>\events\DHJapan.txt (Line 276, column 4) [set_global_flag = JAP_ultimatum_extended]
 sleepevent_2001506
+	chk|chk: <mod>\decisions\DH_GreekBulgarian.txt (Line 28, column 6) [has_global_flag = SLEEPEVENT_2001506]
 	chk|chk: <mod>\events\DHGreekBulgarian.txt (Line 151, column 5) [has_global_flag = SLEEPEVENT_2001506]
 	set|set: <mod>\events\DHGreekBulgarian.txt (Line 111, column 4) [set_global_flag = SLEEPEVENT_2001506]
 sleepevent_2001507
 	chk|chk: <mod>\events\DHGreekBulgarian.txt (Line 216, column 5) [has_global_flag = SLEEPEVENT_2001507]
 	set|set: <mod>\events\DHGreekBulgarian.txt (Line 112, column 4) [set_global_flag = SLEEPEVENT_2001507]
 venizelos_incabinet
+	chk|chk: <mod>\decisions\DH_GreekBulgarian.txt (Line 298, column 5) [has_global_flag = venizelos_incabinet]
 	chk|chk: <mod>\events\DHGreekBulgarian.txt (Line 1565, column 7) [has_global_flag = venizelos_incabinet]
 	chk|chk: <mod>\events\DHGreekBulgarian.txt (Line 1537, column 6) [has_global_flag = venizelos_incabinet]
 	set|clr: <mod>\events\DHGreekBulgarian.txt (Line 1476, column 4) [clr_global_flag = venizelos_incabinet]
