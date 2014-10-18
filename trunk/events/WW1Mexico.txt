@@ -347,7 +347,6 @@
 		name = "EVT1910_101022_OPTA"
 		MXR = { ZZZ = { split_troops = 1.00 } }				# Rebels stand down and return to farms and homes
 		any_country = { relation = { who = MXR value = 75 } }
-		MXR = { capital = 9604 }       						# Ciudad de México
 		MXR = { money = +200 }	
 		USA = { set_country_flag = "diaz_crisis_over" }
 		MXR = { set_country_flag = "diaz_defeated" }
@@ -376,6 +375,7 @@
 			limit = { is_core = MXR }
 			remove_core = MEX }	
 		MXR = { inherit = MEX }
+		MXR = { capital = 9604 }       						# Ciudad de México
 		}
 	}	
 	
