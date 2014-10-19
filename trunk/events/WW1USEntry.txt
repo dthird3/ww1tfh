@@ -644,13 +644,23 @@
 	 
 	trigger = { 
 			tag = USA
-			USA = { war_with = GER } 
+			or = {
+				USA = { war_with = GER }
+				USA = { war_with = AUH }
+				USA = { war_with = ITA }
+				USA = { war_with = FRA }
+				USA = { war_with = ENG }
+				USA = { war_with = RUS }
+				USA = { war_with = TUR }
+				USA = { war_with = JAP }
 			}
+		}
 	
 	option = {
 		name = "ACTION_NAME_GREAT"
 		ai_chance = { factor = 100 }
 		USA = { remove_country_modifier = "us_new_deal" }
-		USA = { manpower = 60 }
+		USA = { manpower = 500 }
+		neutrality = -100
 		}
 	}
