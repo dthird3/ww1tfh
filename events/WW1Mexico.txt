@@ -664,7 +664,6 @@
 
 	
 # Carranza Rebels rise up and DOW Madero/Huerta
-# may want to delay this a month
 
  country_event = {
 	title = "EVT1910_101046_TITLE"
@@ -706,7 +705,7 @@
 			MXC = { rare_materials = +100 }
 			MXC = { metal = +100 }
 			MXC = { war = { target = MXR } }
-			USA = { relation = { who = MXR value = -50 }
+			USA = { relation = { who = MXR value = -50 } }
 
 			9660 = { add_province_modifier = { name = "mex_rev" duration = 730 } }
 			9660 = { create_revolt = 1 }
@@ -722,11 +721,10 @@
 			9622 = { create_revolt = 1 }
 			kill_leader = 60002 #Zapata,_Emiliano
 			kill_leader = 60004 #Obregón,_A
-			kill_leader = 60005 #Villa,_F_(Pancho)
+			kill_leader = 60005 #Villa,_F_
 			kill_leader = 60009 #González_Peña
 		}			
 	}
-}
 
 
 #   USA embargoes arms to MXR
@@ -798,8 +796,8 @@
 ########## Constitutionalist v's Conventionalists ##########
 
 # Eventually the war against the Conventionalists was won after the assassination of Zapata in 1919 and the surrender of Villa in July 1920. 
-# By 1917, the main fighting of the civil war between the two factions was over, with some minor revolts by Felicistas (supporters of Félix Díaz, 
-# nephew of ousted president Porfirio Díaz). This marked the end of any real resistance to Carranza.	
+# By 1917, the main fighting of the civil war between the two factions was over, with some minor revolts by Felicistas, supporters of Félix Díaz, 
+# nephew of ousted president Porfirio Díaz. This marked the end of any real resistance to Carranza.	
 
 
  country_event = {
@@ -843,7 +841,7 @@
 	trigger = {
 		tag = MXC
 		MXC = { has_country_flag = "MEX_Conv" }
-		not = { USA = { has_country_flag = Veracruz_occupied } }
+		not = { USA = { has_country_flag = Veracruz_occupied }
 		}
 		 
 	mean_time_to_happen = { months = 2 }	 
@@ -857,7 +855,8 @@
 		ai_chance = { factor = 100 }		
 		MXC = { country_event = 101062 }                          # Fight for our country
 		}
-	}	
+	}
+}	
 	
 # Carranza gives into Villa and Zapata
 
@@ -972,8 +971,6 @@ country_event = {
 	
 	trigger = {
 		tag = MXR
-		exists = MXR
-		exists = MXC
 		MXR = { head_of_state = 60035 }				    			# Villa
 		MXR = { war_with = MXC }
 		MXR = { not = { lost_national = 0.80 } }
@@ -1134,8 +1131,7 @@ country_event = {
 		remove_minister = 55109 			#Venustiano_Carranza
 		kill_leader = 55253 				#Murguía_López_de_Lara
 		remove_minister = 55132 			#Manuel_Aguirre_Berlanga
-		remove_minister = 55140 			#Francisco_L._Urquizo 
-		}
+		remove_minister = 55140 			#Francisco_L._Urquizo }
 		
 	option = { ai_chance = { factor = 5 }
 		name = "DH_EVENT_2038620_Option8"
@@ -1188,8 +1184,8 @@ country_event = {
 				tag = USA
 				9092 = { units_in_province = 1 }   				#Tucson
 			}
-			MXR = { country_event = 101493 }            			#Raid_result_:_resistance_encountered
-			USA = { country_event = 101500 }             			#Tucson_raided!
+			MXR = { country_event = 101493 }            		#Raid_result_:_resistance_encountered
+			USA = { country_event = 101500 }         
 			}
 		
 		random_country = {
@@ -1198,7 +1194,7 @@ country_event = {
 				not = {	9092 = { units_in_province = 1 } }    	#Tucson
 			}
 			MXR = {	country_event = 101494 }                   	#Raid_result_:_no_resistance_encountered
-			USA = { country_event = 101500 }					#Tucson_raided!
+			USA = { country_event = 101500 }			
 		}
 	}
 }
@@ -1957,23 +1953,10 @@ country_event = {
 	 
 	is_triggered_only = yes
 	 
-	mean_time_to_happen = {
-		 days = 15
-		 }
-	trigger = {
-		 exists = MXR
-		 has_country_flag = USA_Mexican_Raids
-		 war = no
-		 tag = USA
-		 date = 1914.8.4
-		 not = { date = 1923.12.30 }
-		 }
 	option = {
 		 name = "DH_EVENT_2049522_Option7"
-		 war = {
-			 target = MXR
-			 }
-		 set_global_flag = 2049522_EVENT_DONE#
+# PUNATIVE EXPEDITION
+		 set_global_flag = 2049522_EVENT_DONE
 		 }
 	}
 
@@ -1989,397 +1972,13 @@ country_event = {
 	 
 	is_triggered_only = yes
 	 
-	mean_time_to_happen = {
-		 days = 7
-		 }
-	trigger = {
-		 exists = MEX
-		 has_global_flag = 2049521_EVENT_DONE
-		 USA = {
-			 war_with = MXR
-			 }
-		 not = {
-			 USA = {
-				 war_with = MEX
-				 }
-			 }
-		 tag = USA
-		 date = 1914.8.4
-		 not = {
-			 date = 1925.12.30
-			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2049523
-			 }
-		 }
+# MEXICO RESPOND
 	option = {
 		 name = "DH_EVENT_2049523_Option7"
-		 MEX = {
-			 country_event = 186 #United_States_ask_for_full_transit
-			}
-		 set_global_flag = SLEEPEVENT_2049535
-		 set_global_flag = 2049523_EVENT_DONE#
+		 MEX = { country_event = 186 }
 		 }
 	}
 
-
-#Mexico rejects our proposal
-
- country_event = {
-	title = "DH_EVENT_2049524_TITLE"
-	desc = "DH_EVENT_2049524_DESC"
-	id = 531
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	trigger = {
-		 tag = USA
-		 }
-	option = {
-		 name = "DH_EVENT_2049524_Option7"
-		 relation = {
-			 who = MEX
-			 value = -25
-			 }
-		 }
-	}
-
-
-#Full scale invasion of Mexico
-
- country_event = {
-	title = "DH_EVENT_2049525_TITLE"
-	desc = "DH_EVENT_2049525_DESC"
-	id = 532
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	mean_time_to_happen = {
-		 days = 14
-		 }
-	trigger = {
-		 has_global_flag = 2049523_EVENT_DONE
-		 USA = {
-			 war_with = MXR
-			 }
-		 not = {
-			 USA = {
-				 war_with = GER
-				 }
-			 }
-		 not = {
-			 neutrality = 20
-			 }
-		 tag = USA
-		 date = 1914.8.4
-		 not = {
-			 date = 1925.12.30
-			 }
-		 }
-	option = {
-		 name = "DH_EVENT_2049525_Option7"
-		 war = {
-			 target = MEX
-			 }
-		 neutrality = -5
-		 }
-	}
-
-
-#Ask for full transit agreement with Mexico
-
- country_event = {
-	title = "DH_EVENT_2049535_TITLE"
-	desc = "DH_EVENT_2049535_DESC"
-	id = 533
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	mean_time_to_happen = {
-		 days = 7
-		 }
-	trigger = {
-		 exists = MXR
-		 not = {
-			 exists = MEX
-			 }
-		 has_global_flag = 2049521_EVENT_DONE
-		 USA = {
-			 war_with = MXR
-			 }
-		 not = {
-			 USA = {
-				 war_with = MXR
-				 }
-			 }
-		 not = {
-			 has_global_flag = 2049522_EVENT_DONE
-			 }
-		 tag = USA
-		 date = 1914.8.4
-		 not = {
-			 date = 1925.12.30
-			 }
-		 not = {
-			 has_global_flag = SLEEPEVENT_2049535
-			 }
-		 }
-	option = {
-		 name = "DH_EVENT_2049535_Option7"
-		 MXR = {
-			 country_event = 189 #United_States_ask_for_full_transit
-			}
-		 set_global_flag = SLEEPEVENT_2049523
-		 set_global_flag = 2049535_EVENT_DONE#
-		 }
-	}
-
-
-#Mexico rejects our proposal
-
- country_event = {
-	title = "DH_EVENT_2049536_TITLE"
-	desc = "DH_EVENT_2049536_DESC"
-	id = 534
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	trigger = {
-		 tag = USA
-		 }
-	option = {
-		 name = "DH_EVENT_2049536_Option7"
-		 relation = {
-			 who = MEX
-			 value = -25
-			 }
-		 set_global_flag = 2049536_EVENT_DONE
-		 }
-	}
-
-
-#Full scale invasion of Mexico
-
- country_event = {
-	title = "DH_EVENT_2049537_TITLE"
-	desc = "DH_EVENT_2049537_DESC"
-	id = 535
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	mean_time_to_happen = {
-		 days = 14
-		 }
-	trigger = {
-		 USA = {
-			 war_with = MXR
-			 }
-		 not = {
-			 USA = {
-				 war_with = MXR
-				 }
-			 }
-		 not = {
-			 USA = {
-				 war_with = GER
-				 }
-			 }
-		 not = {
-			 neutrality = 20
-			 }
-		 tag = USA
-		 date = 1914.8.4
-		 not = {
-			 date = 1925.12.30
-			 }
-		 }
-	option = {
-		 name = "DH_EVENT_2049537_Option7"
-		 war = {
-			 target = MXR
-			 }
-		 neutrality = -5
-		 }
-	}
-
-
-#Restore diplomatic relations with Mexico
-
- country_event = {
-	title = "DH_EVENT_2049526_TITLE"
-	desc = "DH_EVENT_2049526_DESC"
-	id = 536
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	mean_time_to_happen = {
-		 days = 14
-		 }
-	trigger = {
-		 or = {
-			 has_global_flag = 2049523_EVENT_DONE
-			 has_global_flag = 2049535_EVENT_DONE
-			 }
-		 or = {
-			 USA = {
-				 war_with = MXR
-				 }
-			 USA = {
-				 war_with = MEX
-				 }
-			 }
-		 not = {
-			 GER = {
-				 alliance_with = MXR
-				 }
-			 GER = {
-				 alliance_with = MEX
-				 }
-			 any_owned_province = {
-				 not = {
-					 controlled_by = USA
-					 }
-				 }
-			 }
-		 or = {
-			 USA = {
-				 war_with = GER
-				 }
-			 neutrality = 20
-			 }
-		 tag = USA
-		 date = 1914.8.4
-		 not = {
-			 date = 1925.12.30
-			 }
-		 }
-	option = {
-		 name = "DH_EVENT_2049526_Option7"
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 USA = {
-					 war_with = MXR
-					 }
-				 }
-			 THIS = {
-				 end_war = MXR
-				 }
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 USA = {
-					 war_with = MXR
-					 }
-				 }
-			 THIS = {
-				 end_war = MXR
-				 }
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 USA = {
-					 war_with = MEX
-					 }
-				 }
-			 THIS = {
-				 end_war = MEX
-				 }
-			 }
-		 neutrality = -5
-		 }
-	}
-
-
-#United States ask for full transit
-
- country_event = {
-	title = "DH_EVENT_2038503_TITLE"
-	desc = "DH_EVENT_2038503_DESC"
-	id = 186
-	 
-	picture = "veracruz_occupation"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	trigger = {
-		 tag = MEX
-		 }
-	option = {
-		 ai_chance = {
-			 factor = 90
-			 }
-		 name = "DH_EVENT_2038503_Option7"
-		 USA = {
-			 country_event = 531 #Mexico_rejects_our_proposal
-			}
-		 set_global_flag = 2038503_EVENT_DONE
-		 }
-	option = {
-		 ai_chance = {
-			 factor = 10
-			 }
-		 name = "DH_EVENT_2038503_Option8"
-		 dissent = 8
-		 THIS = { military_access = USA }
-		 set_global_flag = 2038503_EVENT_DONE
-		 }
-	}
-
-
-############################################################################
-#United States ask for full transit
-
- country_event = {
-	title = "DH_EVENT_2038506_TITLE"
-	desc = "DH_EVENT_2038506_DESC"
-	id = 189
-	 
-	picture = "veracruz_occupation"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	trigger = {
-		 tag = MXR
-		 }
-	option = {
-		 ai_chance = {
-			 factor = 90
-			 }
-		 name = "DH_EVENT_2038506_Option7"
-		 USA = {
-			 country_event = 534 #Mexico_rejects_our_proposal
-			}
-		 }
-	option = {
-		 ai_chance = {
-			 factor = 10
-			 }
-		 name = "DH_EVENT_2038506_Option8"
-		 dissent = 8
-		 THIS = {
-			 military_access = USA
-			 }
-		 }
-	}
 	
 #### LATE WAR EVENTS - sequencing in chronological order	
 
@@ -2398,11 +1997,9 @@ country_event = {
 	 
 	is_triggered_only = yes
 	 
-	mean_time_to_happen = {
-		 days = 14
-		 }
+	mean_time_to_happen = { days = 14 }
 	trigger = {
-		 has_global_flag = 2038503_EVENT_DONE#
+		 has_global_flag = 2038503_EVENT_DONE				## Mexico rejects USA transit rights
 		 USA = {
 			 war_with = GER
 			 }
@@ -2478,7 +2075,7 @@ country_event = {
 	}
 
 
-#The United States declare war on Germany - what does Mexico do
+#The United States declare war on Germany - Mexico joins Germany
 
  country_event = {
 	title = "DH_EVENT_2038501_TITLE"
@@ -2493,52 +2090,13 @@ country_event = {
 	 
 	mean_time_to_happen = { days = 14 }
 	trigger = {
-		 USA = {
-			 war_with = GER
-			 }
+		 USA = { war_with = GER }
 		 tag = MEX
 		 date = 1914.8.4
-		 not = {
-			 date = 1925.12.30
-			 }
+		 not = { date = 1925.12.30 }
 		 }
 	option = {
 		 name = "ACTION_NAME_OK"
 		 join_faction = axis
-		 }
-	}
-
-
-#War against the United States
-
- country_event = {
-	title = "DH_EVENT_2038502_TITLE"
-	desc = "DH_EVENT_2038502_DESC"
-	id = 185
-	 
-	picture = "veracruz_occupation"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	mean_time_to_happen = { days = 20 }
-	
-	trigger = {
-		 9624 = {                           #Veracruz
-			controlled_by = USA }
-		 war = no
-		 or = {	year = 1915
-			and = {	year = 1914
-					month = 10 }
-			not = { exists = MXR }
-		}
-		tag = MEX
-		date = 1914.8.4
-		not = { date = 1925.12.30 }
-		 }
-	option = {
-		 name = "ACTION_NAME_OK"
-		 war = { target = USA }
 		 }
 	}
