@@ -66,7 +66,7 @@ diplomatic_decisions = {
 			 }
 		effect = {
 			 USA = { set_country_flag = "madero_coup" }
-			 USA = { country_event = 101036 } #101036	
+			 USA = { country_event = 101036 } 
 			 }
 		}
 	
@@ -127,8 +127,6 @@ diplomatic_decisions = {
 		ai_will_do = { factor = 1 }
 		potential = {
 			tag = USA
-			exists = MXR
-			exists = MXC
 			MXR = { head_of_state = 60032 }                 # Huerta is Head of State
 			USA = { not = { has_country_flag = Huerta_embargoed } }
 		}
@@ -144,7 +142,7 @@ diplomatic_decisions = {
 				} 
 			}
 			USA = { set_country_flag = Huerta_embargoed }
-			USA = { relation = { who = MXC value = +30 } }
+			USA = { relation = { who = MXC value = +50 } }
 			USA = { relation = { who = MXR value = -50 } }
 			MXR = { country_event = 101048 }					# USA embargoes MXR
 			MXC = { country_event = 101048 }					# USA embargoes MXC
