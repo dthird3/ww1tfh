@@ -1956,6 +1956,7 @@ country_event = {
 	option = {
 		 name = "DH_EVENT_2049522_Option7"
 # PUNATIVE EXPEDITION
+# country event 530
 		 set_global_flag = 2049522_EVENT_DONE
 		 }
 	}
@@ -1975,50 +1976,14 @@ country_event = {
 # MEXICO RESPOND
 	option = {
 		 name = "DH_EVENT_2049523_Option7"
-		 MEX = { country_event = 186 }
+		 MEX = { country_event = ??? }
 		 }
 	}
 
-	
-#### LATE WAR EVENTS - sequencing in chronological order	
 
 	########################################################################
 	
-#The United States declare war on Germany
-
- country_event = {
-	title = "DH_EVENT_2038505_TITLE"
-	desc = "DH_EVENT_2038505_DESC"
-	id = 188
-	 
-	picture = "zimmermann_telegram"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	mean_time_to_happen = { days = 14 }
-	trigger = {
-		 has_global_flag = 2038503_EVENT_DONE				## Mexico rejects USA transit rights
-		 USA = {
-			 war_with = GER
-			 }
-		 or = {
-			 has_global_flag = 2049536_EVENT_DONE#
-			 }
-		 tag = MXR
-		 date = 1914.8.4
-		 not = {
-			 date = 1925.12.30
-			 }
-		 }
-	option = {
-		 name = "DH_EVENT_2038505_Option7"
-		 join_faction = axis
-		 }
-	}
-	
-#The Zimmermann telegram received by Mexico
+#The Zimmermann telegram received by Mexico - if Porfiro Diaz
 
  country_event = {
 	title = "DH_EVENT_2038500_TITLE"
@@ -2033,9 +1998,10 @@ country_event = {
 	 
 	trigger = { tag = MEX }
 	option = { name = "DH_EVENT_2038500_Option7" }
+	MEX = { set_country_flag = Receive_Zimmermann }
 	}
 
-# alternatively 	
+
 #The Zimmermann telegram received by Mexican Rebel government
 
  country_event = {
@@ -2049,13 +2015,30 @@ country_event = {
 	 
 	is_triggered_only = yes
 	 
-	trigger = {
-		 tag = MXR
-		 }
-	option = {
-		 name = "DH_EVENT_2038504_Option7"
-		 }
+	trigger = { tag = MXR }
+	option = { name = "DH_EVENT_2038504_Option7" }
+	MXR = { set_country_flag = Receive_Zimmermann }
 	}
+	
+
+#The Zimmermann telegram received by Mexican Constitutionalist government
+
+ country_event = {
+	title = "DH_EVENT_2038504_TITLE"
+	desc = "DH_EVENT_2038504_DESC"
+	id = 186
+	 
+	picture = "zimmermann_telegram"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	trigger = { tag = MXC }
+	option = { name = "DH_EVENT_2038504_Option7" }
+	MXC = { set_country_flag = Receive_Zimmermann }
+	}	
+
 
 #The Zimmermann telegram intercepted by the British    50/50 chance
 
@@ -2070,12 +2053,11 @@ country_event = {
 	 
 	is_triggered_only = yes
 	 
-	trigger = { tag = ENG }
 	option = { name = "DH_EVENT_2001535_Option7" }
 	}
 
-
-#The United States declare war on Germany - Mexico joins Germany
+	
+# MEX Mexico joins CP
 
  country_event = {
 	title = "DH_EVENT_2038501_TITLE"
@@ -2088,15 +2070,48 @@ country_event = {
 	 
 	is_triggered_only = yes
 	 
-	mean_time_to_happen = { days = 14 }
-	trigger = {
-		 USA = { war_with = GER }
-		 tag = MEX
-		 date = 1914.8.4
-		 not = { date = 1925.12.30 }
-		 }
 	option = {
 		 name = "ACTION_NAME_OK"
+		 join_faction = axis
+		 }
+	}
+	
+	
+# MXR Mexico joins CP
+
+ country_event = {
+	title = "DH_EVENT_2038505_TITLE"
+	desc = "DH_EVENT_2038505_DESC"
+	id = 188
+	 
+	picture = "zimmermann_telegram"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "DH_EVENT_2038505_Option7"
+		 join_faction = axis
+		 }
+	}
+	
+	
+# MXC Mexico joins CP
+
+ country_event = {
+	title = "DH_EVENT_2038505_TITLE"
+	desc = "DH_EVENT_2038505_DESC"
+	id = 189
+	 
+	picture = "zimmermann_telegram"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "DH_EVENT_2038505_Option7"
 		 join_faction = axis
 		 }
 	}
