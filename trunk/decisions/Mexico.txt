@@ -1,0 +1,166 @@
+diplomatic_decisions = {
+	101500_decision = {                                	    #Launch_Raids_on_Tucson
+		ai_will_do = { factor = 1 }
+		
+		potential = {
+			tag = MXR
+			MXR = { war_with = MXC }
+			MXR = { head_of_state = 60035 }				    # Villa
+			not = { MXR = { war_with = USA } }
+			not = { has_country_flag = raid_tucson }
+			}
+			
+		allow = {
+			money = 10
+			MXR = { 9117 = { units_in_province = 1 } }     	# Nogales
+			}
+			 
+		effect = { 
+			country_event = 101500                          # Launch_Raids_on_Tucson
+			set_country_flag = raid_tucson
+			set_country_flag = USA_Mexican_Raids			
+			}
+		}
+		
+		
+	101502_decision = {                                		# Launch_Raids_on_El_Paso
+		ai_will_do = { factor = 1 }
+		
+		potential = {
+			tag = MXR
+			MXR = { war_with = MXC }
+			MXR = { head_of_state = 60035 }				    # Villa
+			not = { MXR = { war_with = USA } }
+			not = { has_country_flag = raid_elpaso }
+			}
+			
+		allow = {
+			money = 10
+			MXR = { 9147 = { units_in_province = 1 } }    	# Ciudad_Juárez
+			}
+			 
+		effect = { 
+			country_event = 101510                          # Launch_Raids_on_El_Paso
+			set_country_flag = raid_elpaso
+			set_country_flag = USA_Mexican_Raids			
+			}
+		}
+
+		
+	101504_decision = {                                		# Launch_Raids_on_San_Antonio
+		ai_will_do = { factor = 1 }
+		
+		potential = {
+			tag = MXR
+			MXR = { war_with = MXC }
+			MXR = { head_of_state = 60035 }				    # Villa
+			not = { MXR = { war_with = USA } }
+			not = { has_country_flag = raid_sanantonio }
+			}
+			
+		allow = {
+			money = 10
+			MXR = { 9269 = { units_in_province = 1 } }      # Ciudad_Acuña
+			}
+			 
+		effect = { 
+			country_event = 101520                          # Launch_Raids_on_San_Antonio
+			set_country_flag = raid_sanantonio
+			set_country_flag = USA_Mexican_Raids			
+			}
+		}		
+
+		
+	101504_decision = {                                		# Launch_Raids_on_Corpus_Christi
+		ai_will_do = { factor = 1 }
+		
+		potential = {
+			tag = MXR
+			MXR = { war_with = MXC }
+			MXR = { head_of_state = 60035 }				    # Villa
+			not = { MXR = { war_with = USA } }
+			not = { has_country_flag = raid_corpuschristi }
+			}
+			
+		allow = {
+			money = 10
+			or = {
+				MXR = { 9419 = { units_in_province = 1 } }        #Monterrey
+				MXR = { 9388 = { units_in_province = 1 } }        #Reynosa
+				}
+			}
+			 
+		effect = { 
+			country_event = 101530                           # Launch_Raids_on_Corpus_Christi
+			set_country_flag = raid_corpuschristi
+			set_country_flag = USA_Mexican_Raids
+			}
+		}		
+
+			
+	101506_decision = {                                		 # Launch_Raids_on_San_Diego
+		ai_will_do = { factor = 1 }
+		
+		potential = {
+			tag = MXR
+			MXR = { war_with = MXC }
+			MXR = { head_of_state = 60035 }				     # Villa
+			not = { MXR = { war_with = USA } }
+			not = { has_country_flag = raid_sandiego }
+			}
+			
+		allow = {
+			money = 10
+			MXR = { 7369 = { units_in_province = 1 } }       # Tijuana
+			}
+			 
+		effect = { 
+			country_event = 101540                           # Launch_Raids_on_San_Diego
+			set_country_flag = raid_sandiego
+			set_country_flag = USA_Mexican_Raids
+			}
+		}		
+
+	
+# Intervention_against_Mexican_rebels
+ 
+	101510_decision = {                                   
+		ai_will_do = { factor = 1 }
+		
+		potential = {
+			MXR = { war_with = MXC }
+			MXR = { has_country_flag = USA_Mexican_Raids }
+			tag = USA
+			not = { has_country_flag = Punitive_Expedition }
+			}
+			
+		allow = { war = no }
+		
+		effect = {
+#			country_event = PUNITIVE EXPEDITION ONLY - Flavour event - but can kill VILLA
+			set_country_flag = Punitive_Expedition
+		}
+	}
+	
+
+	2038501_decision = {                                         # Mexico joins Germany when USA joins entente
+		ai_will_do = { factor = 0 }
+		potential = {
+			tag = MXC
+			# maybe MXR
+			USA = { war_with = GER }
+			not = { has_country_flag = decision_2038501 }
+#			MXC = { has_country_flag = Receive_Zimmermann }
+			}
+			
+		allow = { USA = { war_with = GER } }
+		
+		effect = {
+			country_event = 184     # MEX  
+#country_event = 188      MXR
+#country_event = 189      MXC	
+# Reject option of war		
+			set_country_flag = decision_2038501
+			 }
+		}
+}
