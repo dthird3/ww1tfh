@@ -1160,14 +1160,13 @@ country_event = {
 	}
 
 
-#############  MEXICAN RAIDS ##############	
+############# MEXICAN RAIDS ##############	
 	
 #Launch Raids on Tucson
 
 country_event = {
 	title = "EVT1914_101500_TITLE"
 	desc = "EVT1914_101500_DESC"
-#	desc = "DH_EVENT_2250500_DESC"
 	id = 101500
 	 
 	fire_only_once = yes
@@ -1178,44 +1177,193 @@ country_event = {
 		 
 	option = {
 		name = "EVT1914_101500_OPTA"
-		money = -10
+		money = -20
 		random_country = {
 			limit = {
 				tag = USA
-				9092 = { units_in_province = 1 }   				#Tucson
+				9092 = { units_in_province = 1 }   				
 			}
-			MXR = { country_event = 101493 }            		#Raid_result_:_resistance_encountered
-			USA = { country_event = 101500 }         
+			MXR = { country_event = 101550 }            		#Raid_result_:_resistance_encountered
+			USA = { country_event = 101554 }         
 			}
 		
 		random_country = {
 			limit = {
 				tag = USA
-				not = {	9092 = { units_in_province = 1 } }    	#Tucson
+				not = {	9092 = { units_in_province = 1 } }    
 			}
-			MXR = {	country_event = 101494 }                   	#Raid_result_:_no_resistance_encountered
-			USA = { country_event = 101500 }			
+			MXR = {	country_event = 101552 }                   	#Raid_result_:_no_resistance_encountered
+			USA = { country_event = 101556 }			
 		}
 	}
 }
 
 
-#Raid result : resistance encountered
+#Launch Raids on El Paso
 
 country_event = {
-	title = "DH_EVENT_2250501_TITLE"
-	desc = "DH_EVENT_2250501_DESC"
-	id = 101493
+	title = "EVT1914_101510_TITLE"
+	desc = "EVT1914_101500_DESC"
+	id = 101510
 	 
 	fire_only_once = yes
 	 
 	is_triggered_only = yes
 	 
-	trigger = {
-		tag = MXR
-		}
+	mean_time_to_happen = {	days = 7 }
+		 
 	option = {
-		name = "DH_EVENT_2250501_Option7"
+		name = "EVT1914_101510_OPTA"
+		money = -20
+		random_country = {
+			limit = {
+				tag = USA
+				9093 = { units_in_province = 1 }              
+			}
+			MXR = { country_event = 101550 }            		#Raid_result_:_resistance_encountered
+			USA = { country_event = 101558 }         
+		}
+		
+		random_country = {
+			limit = {
+				tag = USA
+				not = {	9093 = { units_in_province = 1 } }    	
+			}
+			MXR = {	country_event = 101552 }                   	#Raid_result_:_no_resistance_encountered
+			USA = { country_event = 101560 }			
+		}
+	}
+}
+
+
+#Launch Raids on San Antonio
+
+ country_event = {
+	title = "EVT1914_101520_TITLE"
+	desc = "EVT1914_101520_DESC"
+	id = 101520
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {	days = 7 }
+		 
+	option = {
+		name = "EVT1914_101520_OPTA"
+		money = -20
+		random_country = {
+			limit = {
+				tag = USA
+				9269 = { units_in_province = 1 }               
+			}
+			MXR = { country_event = 101550 }            		#Raid_result_:_resistance_encountered
+			USA = { country_event = 101562 }         
+		}
+		
+		random_country = {
+			limit = {
+				tag = USA
+				not = {	9269 = { units_in_province = 1 } }    
+			}
+			MXR = {	country_event = 101552 }                   	#Raid_result_:_no_resistance_encountered
+			USA = { country_event = 101564 }			
+		}
+	}
+}
+
+
+#Launch Raids on Corpus Christi
+
+ country_event = {
+	title = "EVT1914_101530_TITLE"
+	desc = "EVT1914_101530_DESC"
+	id = 101530
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {	days = 7 }
+		 
+	option = {
+		name = "EVT1914_101530_OPTA"
+		money = -20
+		random_country = {
+			limit = {
+				tag = USA
+				or = { 9419 = { units_in_province = 1 }					# Monterrey
+					   9388 = { units_in_province = 1 }	}				# Reynosa      
+			}
+			MXR = { country_event = 101550 }            		#Raid_result_:_resistance_encountered
+			USA = { country_event = 101566 }         
+		}
+		
+		random_country = {
+			limit = {
+				tag = USA
+				or = {
+					not = { 9419 = { units_in_province = 1 } }			# Monterrey
+					not = { 9388 = { units_in_province = 1 } }			# Reynosa  
+				}			
+			}
+			MXR = {	country_event = 101552 }                   	#Raid_result_:_no_resistance_encountered
+			USA = { country_event = 101568 }			
+		}
+	}
+}
+
+
+#Launch Raids on San Diego
+
+ country_event = {
+	title = "EVT1914_101540_TITLE"
+	desc = "EVT1914_101540_DESC"
+	id = 101540
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {	days = 7 }
+		 
+	option = {
+		name = "EVT1914_101540_OPTA"
+		money = -20
+		random_country = {
+			limit = {
+				tag = USA
+				7369 = { units_in_province = 1 }               
+			}
+			MXR = { country_event = 101550 }            		#Raid_result_:_resistance_encountered
+			USA = { country_event = 101570 }         
+		}
+		
+		random_country = {
+			limit = {
+				tag = USA
+				not = {	7369 = { units_in_province = 1 } }    
+			}
+			MXR = {	country_event = 101552 }                   	#Raid_result_:_no_resistance_encountered
+			USA = { country_event = 101572 }			
+		}
+	}
+}
+	
+
+#Raid result : resistance encountered
+
+country_event = {
+	title = "EVT1914_101550_TITLE"
+	desc = "EVT1914_101550_DESC"
+	id = 101550
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	
+	option = {
+		name = "ACTION_NAME_OKAY"
 		supplies = 80
 		rare_materials = 10
 		metal = 20
@@ -1227,435 +1375,72 @@ country_event = {
 #Raid result : no resistance encountered
 
  country_event = {
-	title = "DH_EVENT_2250502_TITLE"
-	desc = "DH_EVENT_2250502_DESC"
-	id = 101494
+	title = "EVT1914_101552_TITLE"
+	desc = "EVT1914_101552_DESC"
+	id = 101552
 	 
 	fire_only_once = yes
 	 
 	is_triggered_only = yes
-	 
-	trigger = {
-		tag = MXR
-		}
+	
 	option = {
-		name = "DH_EVENT_2250502_Option7"
+		name = "ACTION_NAME_OKAY"
 		supplies = 160
 		rare_materials = 20
 		metal = 40
 		energy = 70
+		money = 20
 		}
 	}
-
-
-#Launch Raids on El Paso
-
- country_event = {
-	title = "DH_EVENT_2250503_TITLE"
-	desc = "DH_EVENT_2250503_DESC"
-	id = 495
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	mean_time_to_happen = {
-		 days = 14
-		 }
-
-	option = {
-		name = "DH_EVENT_2250503_Option7"
-		money = -100
-		random_country = {
-			limit = {
-				tag = USA
-				9093 = { units_in_province = 1 }                                #El_Paso
-				}
-			MXR = {
-				country_event = 493 #Raid_result_:_resistance_encountered
-			}
-		}
-		random_country = {
-			limit = {
-				 tag = USA
-				 9093 = {                                  #El_Paso
-					units_in_province = 1
-					 }
-				 }
-			 USA = {
-				 country_event = 521 #El_Paso_raided!
-				}
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 not = {
-					 9093 = {#El_Paso
-						units_in_province = 1
-						 }
-					 }
-				 }
-			 MXR = {
-				 country_event = 494 #Raid_result_:_no_resistance_encountered
-				}
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 not = {
-					 9093 = {#El_Paso
-						units_in_province = 1
-						 }
-					 }
-				 }
-			 USA = {
-				 country_event = 522 #El_Paso_raided!
-				}
-			 }
-		 }
-	}
-
-
-#Launch Raids on San Antonio
-
- country_event = {
-	title = "DH_EVENT_2250504_TITLE"
-	desc = "DH_EVENT_2250504_DESC"
-	id = 496
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	mean_time_to_happen = {
-		 days = 14
-		 }
-	trigger = {
-		 war = yes
-		 not = {
-			 MEX = {
-				 war_with = USA
-				 }
-			 }
-		 not = {
-			 MXR = {
-				 war_with = USA
-				 }
-			 }
-		 money = 10
-		 9269 = {#Ciudad_Acuña
-			units_in_province = 1
-			 }
-		 tag = MXR
-		 date = 1914.8.4
-		 not = {
-			 date = 1925.12.30
-			 }
-		 }
-	option = {
-		 name = "DH_EVENT_2250504_Option7"
-		 money = -100
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 9329 = {#San_Antonio
-					units_in_province = 1
-					 }
-				 }
-			 MXR = {
-				 country_event = 493 #Raid_result_:_resistance_encountered
-				}
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 9329 = {#San_Antonio
-					units_in_province = 1
-					 }
-				 }
-			 USA = {
-				 country_event = 523 #San_Antonio_raided!
-				}
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 not = {
-					 9329 = {#San_Antonio
-						units_in_province = 1
-						 }
-					 }
-				 }
-			 MXR = {
-				 country_event = 494 #Raid_result_:_no_resistance_encountered
-				}
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 not = {
-					 9329 = {#San_Antonio
-						units_in_province = 1
-						 }
-					 }
-				 }
-			 USA = {
-				 country_event = 524 #San_Antonio_raided!
-				}
-			 }
-		 }
-	}
-
-
-#Launch Raids on Corpus Christi
-
- country_event = {
-	title = "DH_EVENT_2250505_TITLE"
-	desc = "DH_EVENT_2250505_DESC"
-	id = 497
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	mean_time_to_happen = {
-		 days = 14
-		 }
-	trigger = {
-		 war = yes
-		 not = {
-			 MEX = {
-				 war_with = USA
-				 }
-			 }
-		 not = {
-			 MXR = {
-				 war_with = USA
-				 }
-			 }
-		 money = 10
-		 or = {
-			 9419 = {#Monterrey
-				units_in_province = 1
-				 }
-			 9388 = {#Reynosa
-				units_in_province = 1
-				 }
-			 }
-		 tag = MXR
-		 date = 1914.8.4
-		 not = {
-			 date = 1925.12.30
-			 }
-		 }
-	option = {
-		 name = "DH_EVENT_2250505_Option7"
-		 money = -100
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 9420 = {#Corpus_Christi
-					units_in_province = 1
-					 }
-				 }
-			 MXR = {
-				 country_event = 493 #Raid_result_:_resistance_encountered
-				}
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 9420 = {#Corpus_Christi
-					units_in_province = 1
-					 }
-				 }
-			 USA = {
-				 country_event = 525 #Corpus_Christii_raided!
-				}
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 not = {
-					 9420 = {#Corpus_Christi
-						units_in_province = 1
-						 }
-					 }
-				 }
-			 MXR = {
-				 country_event = 494 #Raid_result_:_no_resistance_encountered
-				}
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 not = {
-					 9420 = {#Corpus_Christi
-						units_in_province = 1
-						 }
-					 }
-				 }
-			 USA = {
-				 country_event = 526 #Corpus_Christii_raided!
-				}
-			 }
-		 }
-	}
-
-
-#Launch Raids on San Diego
-
- country_event = {
-	title = "DH_EVENT_2250506_TITLE"
-	desc = "DH_EVENT_2250506_DESC"
-	id = 498
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	mean_time_to_happen = {
-		 days = 14
-		 }
-	trigger = {
-		 war = yes
-		 not = {
-			 MEX = {
-				 war_with = USA
-				 }
-			 }
-		 not = {
-			 MXR = {
-				 war_with = USA
-				 }
-			 }
-		 money = 10
-		 7369 = {#Tijuana
-			units_in_province = 1
-			 }
-		 tag = MXR
-		 date = 1914.8.4
-		 not = {
-			 date = 1925.12.30
-			 }
-		 }
-	option = {
-		 name = "DH_EVENT_2250506_Option7"
-		 money = -100
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 7350 = {#San_Diego
-					units_in_province = 1
-					 }
-				 }
-			 MXR = {
-				 country_event = 493 #Raid_result_:_resistance_encountered
-				}
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 7350 = {#San_Diego
-					units_in_province = 1
-					 }
-				 }
-			 USA = {
-				 country_event = 527 #San_Diego_raided!
-				}
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 7350 = {#San_Diego
-					units_in_province = 1
-					 }
-				 }
-			 MXR = {
-				 country_event = 494 #Raid_result_:_no_resistance_encountered
-				}
-			 }
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 7350 = {#San_Diego
-					units_in_province = 1
-					 }
-				 }
-			 USA = {
-				 country_event = 528 #San_Diego_raided!
-				}
-			 }
-		 }
-	}
-
-	################################### RAIDS RESULTS ######################################
 	
-#Tucson raided!
+
+	################################### NOTIFY USA OF RAIDS ######################################
+	
+#Tucson raided resisted!
 
 country_event = {
-	title = "DH_EVENT_2049512_TITLE"
-	desc = "DH_EVENT_2049512_DESC"
-	id = 519
+	title = "EVT1914_101554_TITLE"
+	desc = "EVT1914_101554_DESC"
+	id = 101554
 	 
 	fire_only_once = yes
 	 
 	is_triggered_only = yes
 	 
-	trigger = { tag = USA }
-	
 	option = {
-		name = "DH_EVENT_2049512_Option7"
+		name = "ACTION_NAME_DAMN"
 		dissent = 1
 		supplies = -80
 		rare_materials = -10
 		crude_oil = -10
 		metal = -20
 		energy = -35
-		random_country = {
-			limit = {
-				tag = THIS
-				not = {
-					has_country_flag = USA_Mexican_Raids
-					}
-				}
-			set_country_flag = USA_Mexican_Raids
-			}
+		USA = { set_country_flag = USA_Mexican_Raids }
 		}
 	}
 
 
-#Tucson raided!
+#Tucson raided not resisted!
 
  country_event = {
-	title = "DH_EVENT_2049513_TITLE"
-	desc = "DH_EVENT_2049513_DESC"
-	id = 520
+	title = "EVT1914_101554_TITLE"
+	desc = "EVT1914_101556_DESC"
+	id = 101556
 	 
 	fire_only_once = yes
 	 
 	is_triggered_only = yes
 	 
-	trigger = {
-		 tag = USA
-		 }
 	option = {
-		 name = "DH_EVENT_2049513_Option7"
+		name = "ACTION_NAME_DAMN"
 		 dissent = 3
 		 supplies = -160
 		 rare_materials = -20
 		 crude_oil = -20
 		 metal = -40
 		 energy = -70
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 not = {
-					 has_country_flag = USA_Mexican_Raids
-					 }
-				 }
-			 set_country_flag = USA_Mexican_Raids
-			 }
+		 money = -20
+		 USA = { set_country_flag = USA_Mexican_Raids }
 		 }
 	}
 
@@ -1663,9 +1448,9 @@ country_event = {
 #El Paso raided!
 
  country_event = {
-	title = "DH_EVENT_2049514_TITLE"
-	desc = "DH_EVENT_2049514_DESC"
-	id = 521
+	title = "EVT1914_101558_TITLE"
+	desc = "EVT1914_101558_DESC"
+	id = 101558
 	 
 	fire_only_once = yes
 	 
@@ -1675,22 +1460,14 @@ country_event = {
 		 tag = USA
 		 }
 	option = {
-		 name = "DH_EVENT_2049514_Option7"
+		name = "ACTION_NAME_DAMN"
 		 dissent = 1
 		 supplies = -80
 		 rare_materials = -10
 		 crude_oil = -10
 		 metal = -20
 		 energy = -35
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 not = {
-					 has_country_flag = USA_Mexican_Raids
-					 }
-				 }
-			 set_country_flag = USA_Mexican_Raids
-			 }
+		 USA = { set_country_flag = USA_Mexican_Raids }
 		 }
 	}
 
@@ -1698,246 +1475,172 @@ country_event = {
 #El Paso raided!
 
  country_event = {
-	title = "DH_EVENT_2049515_TITLE"
-	desc = "DH_EVENT_2049515_DESC"
-	id = 522
+	title = "EVT1914_101560_TITLE"
+	desc = "EVT1914_101560_DESC"
+	id = 101560
 	 
 	fire_only_once = yes
 	 
 	is_triggered_only = yes
 	 
-	trigger = {
-		 tag = USA
-		 }
 	option = {
-		 name = "DH_EVENT_2049515_Option7"
-		 dissent = 3
-		 supplies = -160
-		 rare_materials = -20
-		 crude_oil = -20
-		 metal = -40
-		 energy = -70
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 not = {
-					 has_country_flag = USA_Mexican_Raids
-					 }
-				 }
-			 set_country_flag = USA_Mexican_Raids
-			 }
-		 }
+		name = "ACTION_NAME_DAMN"
+		dissent = 3
+		supplies = -160
+		rare_materials = -20
+		crude_oil = -20
+		metal = -40
+		energy = -70
+		money = -20
+		USA = { set_country_flag = USA_Mexican_Raids }
+		}
 	}
 
 
 #San Antonio raided!
 
  country_event = {
-	title = "DH_EVENT_2049516_TITLE"
-	desc = "DH_EVENT_2049516_DESC"
-	id = 523
+	title = "EVT1914_101562_TITLE"
+	desc = "EVT1914_101562_DESC"
+	id = 101562
 	 
 	fire_only_once = yes
 	 
 	is_triggered_only = yes
 	 
-	trigger = {
-		 tag = USA
-		 }
 	option = {
-		 name = "DH_EVENT_2049516_Option7"
-		 dissent = 1
-		 supplies = -80
-		 rare_materials = -10
-		 crude_oil = -10
-		 metal = -20
-		 energy = -35
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 not = {
-					 has_country_flag = USA_Mexican_Raids
-					 }
-				 }
-			 set_country_flag = USA_Mexican_Raids
-			 }
-		 }
+		name = "ACTION_NAME_DAMN"
+		dissent = 1
+		supplies = -80
+		rare_materials = -10
+		crude_oil = -10
+		metal = -20
+		energy = -35
+		USA = { set_country_flag = USA_Mexican_Raids }
+		}
 	}
 
 
 #San Antonio raided!
 
  country_event = {
-	title = "DH_EVENT_2049517_TITLE"
-	desc = "DH_EVENT_2049517_DESC"
-	id = 524
+	title = "EVT1914_101564_TITLE"
+	desc = "EVT1914_101564_DESC"
+	id = 101564
 	 
 	fire_only_once = yes
 	 
 	is_triggered_only = yes
-	 
-	trigger = {
-		 tag = USA
-		 }
+
 	option = {
-		 name = "DH_EVENT_2049517_Option7"
-		 dissent = 3
-		 supplies = -160
-		 rare_materials = -20
-		 crude_oil = -20
-		 metal = -40
-		 energy = -70
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 not = {
-					 has_country_flag = USA_Mexican_Raids
-					 }
-				 }
-			 set_country_flag = USA_Mexican_Raids
-			 }
-		 }
+		name = "ACTION_NAME_DAMN"
+		dissent = 3
+		supplies = -160
+		rare_materials = -20
+		crude_oil = -20
+		metal = -40
+		energy = -70
+		money = -20
+		USA = { set_country_flag = USA_Mexican_Raids }
+		}
 	}
 
 
 #Corpus Christii raided!
 
  country_event = {
-	title = "DH_EVENT_2049518_TITLE"
-	desc = "DH_EVENT_2049518_DESC"
-	id = 525
+	title = "EVT1914_101566_TITLE"
+	desc = "EVT1914_101566_DESC"
+	id = 101566
 	 
 	fire_only_once = yes
 	 
 	is_triggered_only = yes
-	 
-	trigger = {
-		 tag = USA
-		 }
+
 	option = {
-		 name = "DH_EVENT_2049518_Option7"
-		 dissent = 1
-		 supplies = -80
-		 rare_materials = -10
-		 crude_oil = -10
-		 metal = -20
-		 energy = -35
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 not = {
-					 has_country_flag = USA_Mexican_Raids
-					 }
-				 }
-			 set_country_flag = USA_Mexican_Raids
-			 }
-		 }
+		name = "ACTION_NAME_DAMN"
+		dissent = 1
+		supplies = -80
+		rare_materials = -10
+		crude_oil = -10
+		metal = -20
+		energy = -35
+		USA = { set_country_flag = USA_Mexican_Raids }
+		}
 	}
 
 
 #Corpus Christii raided!
 
  country_event = {
-	title = "DH_EVENT_2049519_TITLE"
-	desc = "DH_EVENT_2049519_DESC"
-	id = 526
+	title = "EVT1914_101568_TITLE"
+	desc = "EVT1914_101568_DESC"
+	id = 101568
 	 
 	fire_only_once = yes
 	 
 	is_triggered_only = yes
-	 
-	trigger = {
-		 tag = USA
-		 }
+
 	option = {
-		 name = "DH_EVENT_2049519_Option7"
-		 dissent = 3
-		 supplies = -160
-		 rare_materials = -20
-		 crude_oil = -20
-		 metal = -40
-		 energy = -70
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 not = {
-					 has_country_flag = USA_Mexican_Raids
-					 }
-				 }
-			 set_country_flag = USA_Mexican_Raids
-			 }
-		 }
+		name = "ACTION_NAME_DAMN"
+		dissent = 3
+		supplies = -160
+		rare_materials = -20
+		crude_oil = -20
+		metal = -40
+		energy = -70
+		money = -20
+		USA = { set_country_flag = USA_Mexican_Raids }
+		}
 	}
 
 
 #San Diego raided!
 
  country_event = {
-	title = "DH_EVENT_2049520_TITLE"
-	desc = "DH_EVENT_2049520_DESC"
-	id = 527
+	title = "EVT1914_101570_TITLE"
+	desc = "EVT1914_101570_DESC"
+	id = 101570
 	 
 	fire_only_once = yes
 	 
 	is_triggered_only = yes
-	 
-	trigger = {
-		 tag = USA
-		 }
+
 	option = {
-		 name = "DH_EVENT_2049520_Option7"
-		 dissent = 1
-		 supplies = -80
-		 rare_materials = -10
-		 crude_oil = -10
-		 metal = -20
-		 energy = -35
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 not = {
-					 has_country_flag = USA_Mexican_Raids
-					 }
-				 }
-			 set_country_flag = USA_Mexican_Raids
-			 }
-		 }
+		name = "ACTION_NAME_DAMN"
+		dissent = 1
+		supplies = -80
+		rare_materials = -10
+		crude_oil = -10
+		metal = -20
+		energy = -35
+		USA = { set_country_flag = USA_Mexican_Raids }
+		}
 	}
 
 
 #San Diego raided!
 
  country_event = {
-	title = "DH_EVENT_2049521_TITLE"
-	desc = "DH_EVENT_2049521_DESC"
-	id = 528
+	title = "EVT1914_101572_TITLE"
+	desc = "EVT1914_101572_DESC"
+	id = 101572
 	 
 	fire_only_once = yes
 	 
 	is_triggered_only = yes
-	 
-	trigger = {
-		 tag = USA
-		 }
+
 	option = {
-		 name = "DH_EVENT_2049521_Option7"
-		 dissent = 3
-		 supplies = -160
-		 rare_materials = -20
-		 crude_oil = -20
-		 metal = -40
-		 energy = -70
-		 random_country = {
-			 limit = {
-				 tag = THIS
-				 not = {
-					 has_country_flag = USA_Mexican_Raids
-					 }
-				 }
-			 set_country_flag = USA_Mexican_Raids
-			 }
-		 set_global_flag = 2049521_EVENT_DONE#
-		 }
+		name = "ACTION_NAME_DAMN"
+		dissent = 3
+		supplies = -160
+		rare_materials = -20
+		crude_oil = -20
+		metal = -40
+		energy = -70
+		money = -20
+		USA = { set_country_flag = USA_Mexican_Raids }
+		}
 	}
 
 	#################################################################################
@@ -1945,9 +1648,9 @@ country_event = {
 #Intervention against Mexican rebels
 
  country_event = {
-	title = "DH_EVENT_2049522_TITLE"
-	desc = "DH_EVENT_2049522_DESC"
-	id = 529
+	title = "EVT1914_101580_TITLE"
+	desc = "EVT1914_101580_DESC"
+	id = 101580
 	 
 	fire_only_once = yes
 	 
@@ -1957,7 +1660,6 @@ country_event = {
 		 name = "DH_EVENT_2049522_Option7"
 # PUNATIVE EXPEDITION
 # country event 530
-		 set_global_flag = 2049522_EVENT_DONE
 		 }
 	}
 
@@ -1967,7 +1669,7 @@ country_event = {
  country_event = {
 	title = "DH_EVENT_2049523_TITLE"
 	desc = "DH_EVENT_2049523_DESC"
-	id = 530
+	id = 101582
 	 
 	fire_only_once = yes
 	 
@@ -1976,7 +1678,7 @@ country_event = {
 # MEXICO RESPOND
 	option = {
 		 name = "DH_EVENT_2049523_Option7"
-		 MEX = { country_event = ??? }
+#		 MEX = { country_event = ??? }
 		 }
 	}
 

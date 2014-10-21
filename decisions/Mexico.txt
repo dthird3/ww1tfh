@@ -11,14 +11,13 @@ diplomatic_decisions = {
 			}
 			
 		allow = {
-			money = 10
+			money = 20
 			MXR = { 9117 = { units_in_province = 1 } }     	# Nogales
 			}
 			 
 		effect = { 
 			country_event = 101500                          # Launch_Raids_on_Tucson
 			set_country_flag = raid_tucson
-			set_country_flag = USA_Mexican_Raids			
 			}
 		}
 		
@@ -35,14 +34,13 @@ diplomatic_decisions = {
 			}
 			
 		allow = {
-			money = 10
+			money = 20
 			MXR = { 9147 = { units_in_province = 1 } }    	# Ciudad_Juárez
 			}
 			 
 		effect = { 
 			country_event = 101510                          # Launch_Raids_on_El_Paso
 			set_country_flag = raid_elpaso
-			set_country_flag = USA_Mexican_Raids			
 			}
 		}
 
@@ -59,19 +57,18 @@ diplomatic_decisions = {
 			}
 			
 		allow = {
-			money = 10
+			money = 20
 			MXR = { 9269 = { units_in_province = 1 } }      # Ciudad_Acuña
 			}
 			 
 		effect = { 
 			country_event = 101520                          # Launch_Raids_on_San_Antonio
 			set_country_flag = raid_sanantonio
-			set_country_flag = USA_Mexican_Raids			
 			}
 		}		
 
 		
-	101504_decision = {                                		# Launch_Raids_on_Corpus_Christi
+	101506_decision = {                                		# Launch_Raids_on_Corpus_Christi
 		ai_will_do = { factor = 1 }
 		
 		potential = {
@@ -83,7 +80,7 @@ diplomatic_decisions = {
 			}
 			
 		allow = {
-			money = 10
+			money = 20
 			or = {
 				MXR = { 9419 = { units_in_province = 1 } }        #Monterrey
 				MXR = { 9388 = { units_in_province = 1 } }        #Reynosa
@@ -93,12 +90,11 @@ diplomatic_decisions = {
 		effect = { 
 			country_event = 101530                           # Launch_Raids_on_Corpus_Christi
 			set_country_flag = raid_corpuschristi
-			set_country_flag = USA_Mexican_Raids
 			}
 		}		
 
 			
-	101506_decision = {                                		 # Launch_Raids_on_San_Diego
+	101508_decision = {                                		 # Launch_Raids_on_San_Diego
 		ai_will_do = { factor = 1 }
 		
 		potential = {
@@ -110,14 +106,13 @@ diplomatic_decisions = {
 			}
 			
 		allow = {
-			money = 10
+			money = 20
 			MXR = { 7369 = { units_in_province = 1 } }       # Tijuana
 			}
 			 
 		effect = { 
 			country_event = 101540                           # Launch_Raids_on_San_Diego
 			set_country_flag = raid_sandiego
-			set_country_flag = USA_Mexican_Raids
 			}
 		}		
 
@@ -129,7 +124,7 @@ diplomatic_decisions = {
 		
 		potential = {
 			MXR = { war_with = MXC }
-			MXR = { has_country_flag = USA_Mexican_Raids }
+			USA = { has_country_flag = USA_Mexican_Raids }
 			tag = USA
 			not = { has_country_flag = Punitive_Expedition }
 			}
