@@ -491,7 +491,7 @@
 	picture = "Mex_Rebels"
 	
 	fire_only_once = yes      # Once off rebellion
-	mean_time_to_happen = { months = 8 }
+	mean_time_to_happen = { months = 9 }
 
 	trigger = {
 		tag = MXR
@@ -992,9 +992,10 @@ country_event = {
 # Captured supplies
 
  country_event = {
-	title = "DH_EVENT_2038552_TITLE"
-	desc = "DH_EVENT_2038552_DESC"
-	id = 504
+	title = "EVT1914_101068_TITLE"
+	desc = "EVT1914_101068_DESC"
+#	picture = "villa_troops"	
+	id = 101068
 	 
 	mean_time_to_happen = { days = 90 }
 	
@@ -1003,161 +1004,77 @@ country_event = {
 		war = yes
 		not = { supplies = 100 }
 		not = { total_ic = 7 }
-		date = 1910.1.1
-		not = { date = 1923.12.30 } }
+		date = 1910.12.01
+		not = { date = 1920.01.01 } }
 	option = {
 		ai_chance = { factor = 5 }
-		name = "DH_EVENT_2038552_Option7"
-		supplies = 25 }
+		name = "ACTION_NAME_GREAT"
+		supplies = 25
+		money = 100	}
 	option = {
 		ai_chance = { factor = 10 }
-		name = "DH_EVENT_2038552_Option8"
-		supplies = 50 }
+		name = "ACTION_NAME_GREAT"
+		supplies = 50
+		money = 75	}
 	option = {
 		ai_chance = { factor = 20 }
-		name = "DH_EVENT_2038552_Option9"
+		name = "ACTION_NAME_GREAT"
 		supplies = 200
-		money = 20 }
+		money = 10 }
 	option = {
 		ai_chance = { factor = 50 }
-		name = "DH_EVENT_2038552_Option10"
-		supplies = 350
-		money = 50 }
+		name = "ACTION_NAME_GREAT"
+		supplies = 350 }
 	}
 
 
 # Smuggled supplies
 
  country_event = {
-	title = "DH_EVENT_2038553_TITLE"
-	desc = "DH_EVENT_2038553_DESC"
-	id = 505
+	title = "EVT1914_101070_TITLE"
+	desc = "EVT1914_101070_DESC"
+#	picture = "villa_troops"
+	id = 101070
 	 
 	mean_time_to_happen = { days = 90 }
+	
 	trigger = {
-		war = yes
+		tag = MXR
+		date = 1910.1.1
+		not = { date = 1917.12.30 } 
 		not = { supplies = 100 }
 		not = { total_ic = 5 }
 		or = {
 			and = {
-				9604 = {						#Ciudad_de_México
-					controlled_by = MEX }
+				9604 = { controlled_by = MEX }      #Ciudad_de_México
 				MXR = { war_with = MEX }
 				}
 			and = {
-				9604 = {						#Ciudad_de_México
-					controlled_by = MXR }
-				MXR = { war_with = MXR }
+				9604 = { controlled_by = MXC }		#Ciudad_de_México
+				MXR = { war_with = MXC }
 				}
-			}
-			 
-		tag = MXR
-		date = 1910.1.1
-		not = { date = 1917.12.30 } }
-		
-	option = { ai_chance = { factor = 3 }
-		 name = "DH_EVENT_2038553_Option7"
-		 supplies = 20
-		 }
-	option = { ai_chance = { factor = 10 }
-		 name = "DH_EVENT_2038553_Option8"
-		 supplies = 40
-		 }
-	option = {
-		 ai_chance = { factor = 20 }
-		 name = "DH_EVENT_2038553_Option9"
-		 supplies = 60
-		 }
-	option = {
-		 ai_chance = { factor = 35 }
-		 name = "DH_EVENT_2038553_Option10"
-		 supplies = 100
-		 }
-	}
-
-##################  ASSASSINATION of ZAPATA and VILLA#############################
-#As the war went on in 1919, Zapata began to run out of essential supplies, such as ammunition, and decided to acquire them from Guajardo. 
-#Zapata went to Guajardo's camp to negotiate with the colonel, whom he had not met before. However, Zapata had walked into a trap. 
-#Guajardo’s soldiers attacked Zapata, killing him and routing his forces. 
-
-# Later that year, Carranza assembled the constitutional convention drafting the new constitution. 
-# With this, Carranza also gained support of the communists and anarchists, who were formed into “Red Battalions” to confront the forces of Villa 
-# and those remaining of Zapata’s. This further turned the tide, causing Villa to surrender in 1920. 
-# He negotiated a peace deal with Carranza, ending all hostilities and granting him a small estate, thus ending the war.
-
-# Later that year, Carranza held elections for the presidency. Obregón, a reformist general who pushed for the new constitution, 
-# was to oppose him for the seat. Carranza orchestrated a sham election, allowing Ignacio Bonillas to win. 
-# Carranza then fled to Guerrero where he staged a short coup to bring him into the presidency but was killed on horseback while fleeing 
-# from Mexico City to Veracruz.
-	
-##################   EVENTS after Constitutionals v's Conventionalists ###################################################	
-
-#  Plan of Agua Prieta
-
- country_event = {
-	title = "DH_EVENT_2038620_TITLE"
-	desc = "DH_EVENT_2038620_DESC"
-	id = 209
-	 
-	picture = "plan_of_agua_prieta"
-	 
-	fire_only_once = yes
-	 
-	mean_time_to_happen = { days = 90 }
-	
-	trigger = {
-		war = no
-		has_global_flag = 2038609_EVENT_DONE	#
-		head_of_state = 55088 					#Francisco_Lagos_Cházaro
-		not = { exists = MXR }
-		tag = MEX
-		date = 1919.1.1
-		not = { date = 1923.12.30 }
-		}
-	option = {
-		name = "DH_EVENT_2038620_Option7"
-		ai_chance = { factor = 95 }
-		dissent = 5
-		head_of_state = 55111 				#Álvaro_Obregón
-		head_of_government = 55111 			#Álvaro_Obregón
-		foreign_minister = 55122 			#Cutberto_Hidalgo
-		armament_minister = 55127 			#Rafael_Zubarán_Capmany
-		minister_of_security = 55112 		#Plutarco_Elías_Calles
-		minister_of_intelligence = 55126 	#Jacinto_Blas_Treviño
-		chief_of_staff = 55141 				#Benjamín_Hill
-		chief_of_army = 55141 				#Benjamín_Hill
-		chief_of_navy = 55141 				#Benjamín_Hill
-		
-		remove_minister = 55109 			#Venustiano_Carranza
-		kill_leader = 55253 				#Murguía_López_de_Lara
-		remove_minister = 55132 			#Manuel_Aguirre_Berlanga
-		remove_minister = 55140 			#Francisco_L._Urquizo }
-		
-	option = { ai_chance = { factor = 5 }
-		name = "DH_EVENT_2038620_Option8"
-		dissent = 5
-		head_of_state = 55145 				#Ignacio_Bonillas_Frajio
-		head_of_government = 55145 			#Ignacio_Bonillas_Frajio
-		minister_of_security = 55132 		#Manuel_Aguirre_Berlanga
-		chief_of_staff = 55140 				#Francisco_L._Urquizo
-		chief_of_army = 55140 				#Francisco_L._Urquizo
-		chief_of_navy = 55140 				#Francisco_L._Urquizo
-		
-		remove_minister = 55111 			#Álvaro_Obregón
-		kill_leader = 55004 				#Obregón
-		remove_minister = 55110 			#Adolfo_de_la_Huerta_
-		kill_leader = 55243 				#Herrero_Hernández
-		remove_minister = 55112 			#Plutarco_Elías_Calles
-		remove_minister = 55141 			#Benjamín_Hill
-		kill_leader = 55217 				#Calles
-		kill_leader = 55244 				#Hill
-		kill_leader = 55001 				#Flores,_M
-		kill_leader = 55256 				#Piña
-		kill_leader = 55225 				#Cruz
-		remove_minister = 55142 			#Francisco_Roque_Serrano
-		kill_leader = 55104 				#Méndez
 		}
 	}
+		
+	option = { ai_chance = { factor = 15 }
+		name = "ACTION_NAME_GREAT"
+		supplies = 20
+		}
+	option = { ai_chance = { factor = 20 }
+		name = "ACTION_NAME_GREAT"
+		supplies = 40
+		}
+	option = {
+		ai_chance = { factor = 35 }
+		name = "ACTION_NAME_GREAT"
+		supplies = 60
+		}
+	option = {
+		ai_chance = { factor = 30 }
+		name = "ACTION_NAME_GREAT"
+		supplies = 100
+		}
+}
 
 
 ############# MEXICAN RAIDS ##############	
@@ -1165,9 +1082,10 @@ country_event = {
 #Launch Raids on Tucson
 
 country_event = {
-	title = "EVT1914_101500_TITLE"
-	desc = "EVT1914_101500_DESC"
-	id = 101500
+	title = "EVT1914_101600_TITLE"
+	desc = "EVT1914_101600_DESC"
+	picture = "villa_troops"
+	id = 101600
 	 
 	fire_only_once = yes
 	 
@@ -1176,15 +1094,15 @@ country_event = {
 	mean_time_to_happen = {	days = 7 }
 		 
 	option = {
-		name = "EVT1914_101500_OPTA"
+		name = "EVT1914_101600_OPTA"
 		money = -20
 		random_country = {
 			limit = {
 				tag = USA
 				9092 = { units_in_province = 1 }   				
 			}
-			MXR = { country_event = 101550 }            		#Raid_result_:_resistance_encountered
-			USA = { country_event = 101554 }         
+			MXR = { country_event = 101650 }            		#Raid_result_:_resistance_encountered
+			USA = { country_event = 101654 }         
 			}
 		
 		random_country = {
@@ -1192,8 +1110,8 @@ country_event = {
 				tag = USA
 				not = {	9092 = { units_in_province = 1 } }    
 			}
-			MXR = {	country_event = 101552 }                   	#Raid_result_:_no_resistance_encountered
-			USA = { country_event = 101556 }			
+			MXR = {	country_event = 101652 }                   	#Raid_result_:_no_resistance_encountered
+			USA = { country_event = 101656 }			
 		}
 	}
 }
@@ -1202,9 +1120,10 @@ country_event = {
 #Launch Raids on El Paso
 
 country_event = {
-	title = "EVT1914_101510_TITLE"
-	desc = "EVT1914_101500_DESC"
-	id = 101510
+	title = "EVT1914_101600_TITLE"
+	desc = "EVT1914_101600_DESC"
+	picture = "villa_troops"
+	id = 101610
 	 
 	fire_only_once = yes
 	 
@@ -1213,15 +1132,15 @@ country_event = {
 	mean_time_to_happen = {	days = 7 }
 		 
 	option = {
-		name = "EVT1914_101510_OPTA"
+		name = "EVT1914_101610_OPTA"
 		money = -20
 		random_country = {
 			limit = {
 				tag = USA
 				9093 = { units_in_province = 1 }              
 			}
-			MXR = { country_event = 101550 }            		#Raid_result_:_resistance_encountered
-			USA = { country_event = 101558 }         
+			MXR = { country_event = 101650 }            		#Raid_result_:_resistance_encountered
+			USA = { country_event = 101658 }         
 		}
 		
 		random_country = {
@@ -1229,8 +1148,8 @@ country_event = {
 				tag = USA
 				not = {	9093 = { units_in_province = 1 } }    	
 			}
-			MXR = {	country_event = 101552 }                   	#Raid_result_:_no_resistance_encountered
-			USA = { country_event = 101560 }			
+			MXR = {	country_event = 101652 }                   	#Raid_result_:_no_resistance_encountered
+			USA = { country_event = 101660 }			
 		}
 	}
 }
@@ -1239,9 +1158,10 @@ country_event = {
 #Launch Raids on San Antonio
 
  country_event = {
-	title = "EVT1914_101520_TITLE"
-	desc = "EVT1914_101520_DESC"
-	id = 101520
+	title = "EVT1914_101600_TITLE"
+	desc = "EVT1914_101600_DESC"
+	picture = "villa_troops"	
+	id = 101620
 	 
 	fire_only_once = yes
 	 
@@ -1250,15 +1170,15 @@ country_event = {
 	mean_time_to_happen = {	days = 7 }
 		 
 	option = {
-		name = "EVT1914_101520_OPTA"
+		name = "EVT1914_101620_OPTA"
 		money = -20
 		random_country = {
 			limit = {
 				tag = USA
 				9269 = { units_in_province = 1 }               
 			}
-			MXR = { country_event = 101550 }            		#Raid_result_:_resistance_encountered
-			USA = { country_event = 101562 }         
+			MXR = { country_event = 101650 }            		#Raid_result_:_resistance_encountered
+			USA = { country_event = 101662 }         
 		}
 		
 		random_country = {
@@ -1266,8 +1186,8 @@ country_event = {
 				tag = USA
 				not = {	9269 = { units_in_province = 1 } }    
 			}
-			MXR = {	country_event = 101552 }                   	#Raid_result_:_no_resistance_encountered
-			USA = { country_event = 101564 }			
+			MXR = {	country_event = 101652 }                   	#Raid_result_:_no_resistance_encountered
+			USA = { country_event = 101664 }			
 		}
 	}
 }
@@ -1276,9 +1196,10 @@ country_event = {
 #Launch Raids on Corpus Christi
 
  country_event = {
-	title = "EVT1914_101530_TITLE"
-	desc = "EVT1914_101530_DESC"
-	id = 101530
+	title = "EVT1914_101600_TITLE"
+	desc = "EVT1914_101600_DESC"
+	picture = "villa_troops"	
+	id = 101630
 	 
 	fire_only_once = yes
 	 
@@ -1287,28 +1208,32 @@ country_event = {
 	mean_time_to_happen = {	days = 7 }
 		 
 	option = {
-		name = "EVT1914_101530_OPTA"
+		name = "EVT1914_101630_OPTA"
 		money = -20
 		random_country = {
 			limit = {
 				tag = USA
+				not = { has_country_flag = corpuschristi_raided }
 				or = { 9419 = { units_in_province = 1 }					# Monterrey
 					   9388 = { units_in_province = 1 }	}				# Reynosa      
 			}
-			MXR = { country_event = 101550 }            		#Raid_result_:_resistance_encountered
-			USA = { country_event = 101566 }         
+			MXR = { country_event = 101650 }            		#Raid_result_:_resistance_encountered
+			USA = { country_event = 101666 }
+			USA = { set_country_flag = corpuschristi_raided }			
 		}
 		
 		random_country = {
 			limit = {
 				tag = USA
+				not = { has_country_flag = corpuschristi_raided }
 				or = {
 					not = { 9419 = { units_in_province = 1 } }			# Monterrey
 					not = { 9388 = { units_in_province = 1 } }			# Reynosa  
 				}			
 			}
-			MXR = {	country_event = 101552 }                   	#Raid_result_:_no_resistance_encountered
-			USA = { country_event = 101568 }			
+			MXR = {	country_event = 101652 }                   	#Raid_result_:_no_resistance_encountered
+			USA = { country_event = 101668 }
+			USA = { set_country_flag = corpuschristi_raided }			
 		}
 	}
 }
@@ -1317,9 +1242,10 @@ country_event = {
 #Launch Raids on San Diego
 
  country_event = {
-	title = "EVT1914_101540_TITLE"
-	desc = "EVT1914_101540_DESC"
-	id = 101540
+	title = "EVT1914_101600_TITLE"
+	desc = "EVT1914_101600_DESC"
+	picture = "villa_troops"	
+	id = 101640
 	 
 	fire_only_once = yes
 	 
@@ -1328,15 +1254,15 @@ country_event = {
 	mean_time_to_happen = {	days = 7 }
 		 
 	option = {
-		name = "EVT1914_101540_OPTA"
+		name = "EVT1914_101640_OPTA"
 		money = -20
 		random_country = {
 			limit = {
 				tag = USA
 				7369 = { units_in_province = 1 }               
 			}
-			MXR = { country_event = 101550 }            		#Raid_result_:_resistance_encountered
-			USA = { country_event = 101570 }         
+			MXR = { country_event = 101650 }            		#Raid_result_:_resistance_encountered
+			USA = { country_event = 101670 }         
 		}
 		
 		random_country = {
@@ -1344,8 +1270,8 @@ country_event = {
 				tag = USA
 				not = {	7369 = { units_in_province = 1 } }    
 			}
-			MXR = {	country_event = 101552 }                   	#Raid_result_:_no_resistance_encountered
-			USA = { country_event = 101572 }			
+			MXR = {	country_event = 101652 }                   	#Raid_result_:_no_resistance_encountered
+			USA = { country_event = 101672 }			
 		}
 	}
 }
@@ -1354,16 +1280,15 @@ country_event = {
 #Raid result : resistance encountered
 
 country_event = {
-	title = "EVT1914_101550_TITLE"
-	desc = "EVT1914_101550_DESC"
-	id = 101550
-	 
-	fire_only_once = yes
+	title = "EVT1914_101650_TITLE"
+	desc = "EVT1914_101650_DESC"
+	picture = "Mex_raid"	
+	id = 101650
 	 
 	is_triggered_only = yes
 	
 	option = {
-		name = "ACTION_NAME_OKAY"
+		name = "ACTION_NAME_DAMN"
 		supplies = 80
 		rare_materials = 10
 		metal = 20
@@ -1375,16 +1300,15 @@ country_event = {
 #Raid result : no resistance encountered
 
  country_event = {
-	title = "EVT1914_101552_TITLE"
-	desc = "EVT1914_101552_DESC"
-	id = 101552
-	 
-	fire_only_once = yes
+	title = "EVT1914_101652_TITLE"
+	desc = "EVT1914_101652_DESC"
+	picture = "Mex_raid"
+	id = 101652
 	 
 	is_triggered_only = yes
 	
 	option = {
-		name = "ACTION_NAME_OKAY"
+		name = "ACTION_NAME_GREAT"
 		supplies = 160
 		rare_materials = 20
 		metal = 40
@@ -1394,14 +1318,15 @@ country_event = {
 	}
 	
 
-	################################### NOTIFY USA OF RAIDS ######################################
+################################### NOTIFY USA OF RAIDS ######################################
 	
 #Tucson raided resisted!
 
 country_event = {
-	title = "EVT1914_101554_TITLE"
-	desc = "EVT1914_101554_DESC"
-	id = 101554
+	title = "EVT1914_101654_TITLE"
+	desc = "EVT1914_101654_DESC"
+	picture = "villa_troops"
+	id = 101654
 	 
 	fire_only_once = yes
 	 
@@ -1415,7 +1340,9 @@ country_event = {
 		crude_oil = -10
 		metal = -20
 		energy = -35
-		USA = { set_country_flag = USA_Mexican_Raids }
+		random = { chance = 50
+				USA = { set_country_flag = USA_Mexican_Raids } 
+				}
 		}
 	}
 
@@ -1423,9 +1350,10 @@ country_event = {
 #Tucson raided not resisted!
 
  country_event = {
-	title = "EVT1914_101554_TITLE"
-	desc = "EVT1914_101556_DESC"
-	id = 101556
+	title = "EVT1914_101654_TITLE"
+	desc = "EVT1914_101656_DESC"
+	picture = "villa_troops"
+	id = 101656
 	 
 	fire_only_once = yes
 	 
@@ -1440,69 +1368,20 @@ country_event = {
 		 metal = -40
 		 energy = -70
 		 money = -20
-		 USA = { set_country_flag = USA_Mexican_Raids }
+		random = { chance = 50
+				USA = { set_country_flag = USA_Mexican_Raids } 
+				}
 		 }
 	}
 
 
-#El Paso raided!
+#El Paso raided resisted!
 
  country_event = {
-	title = "EVT1914_101558_TITLE"
-	desc = "EVT1914_101558_DESC"
-	id = 101558
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	trigger = {
-		 tag = USA
-		 }
-	option = {
-		name = "ACTION_NAME_DAMN"
-		 dissent = 1
-		 supplies = -80
-		 rare_materials = -10
-		 crude_oil = -10
-		 metal = -20
-		 energy = -35
-		 USA = { set_country_flag = USA_Mexican_Raids }
-		 }
-	}
-
-
-#El Paso raided!
-
- country_event = {
-	title = "EVT1914_101560_TITLE"
-	desc = "EVT1914_101560_DESC"
-	id = 101560
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	option = {
-		name = "ACTION_NAME_DAMN"
-		dissent = 3
-		supplies = -160
-		rare_materials = -20
-		crude_oil = -20
-		metal = -40
-		energy = -70
-		money = -20
-		USA = { set_country_flag = USA_Mexican_Raids }
-		}
-	}
-
-
-#San Antonio raided!
-
- country_event = {
-	title = "EVT1914_101562_TITLE"
-	desc = "EVT1914_101562_DESC"
-	id = 101562
+	title = "EVT1914_101658_TITLE"
+	desc = "EVT1914_101654_DESC"
+	picture = "villa_troops"
+	id = 101658
 	 
 	fire_only_once = yes
 	 
@@ -1516,17 +1395,75 @@ country_event = {
 		crude_oil = -10
 		metal = -20
 		energy = -35
-		USA = { set_country_flag = USA_Mexican_Raids }
+		random = { chance = 50
+				USA = { set_country_flag = USA_Mexican_Raids } 
+				}
 		}
 	}
 
 
-#San Antonio raided!
+#El Paso raided not resisted!
 
  country_event = {
-	title = "EVT1914_101564_TITLE"
-	desc = "EVT1914_101564_DESC"
-	id = 101564
+	title = "EVT1914_101658_TITLE"
+	desc = "EVT1914_101656_DESC"
+	picture = "villa_troops"
+	id = 101660
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		name = "ACTION_NAME_DAMN"
+		dissent = 3
+		supplies = -160
+		rare_materials = -20
+		crude_oil = -20
+		metal = -40
+		energy = -70
+		money = -20
+		random = { chance = 50
+				USA = { set_country_flag = USA_Mexican_Raids } 
+				}
+		}
+	}
+
+
+#San Antonio raided resisted!
+
+ country_event = {
+	title = "EVT1914_101662_TITLE"
+	desc = "EVT1914_101654_DESC"
+	picture = "villa_troops"
+	id = 101662
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		name = "ACTION_NAME_DAMN"
+		dissent = 1
+		supplies = -80
+		rare_materials = -10
+		crude_oil = -10
+		metal = -20
+		energy = -35
+		random = { chance = 50
+				USA = { set_country_flag = USA_Mexican_Raids } 
+				}
+		}
+	}
+
+
+#San Antonio raided not resisted!
+
+ country_event = {
+	title = "EVT1914_101662_TITLE"
+	desc = "EVT1914_101656_DESC"
+	picture = "villa_troops"
+	id = 101664
 	 
 	fire_only_once = yes
 	 
@@ -1541,17 +1478,20 @@ country_event = {
 		metal = -40
 		energy = -70
 		money = -20
-		USA = { set_country_flag = USA_Mexican_Raids }
+		random = { chance = 50
+				USA = { set_country_flag = USA_Mexican_Raids } 
+				}
 		}
 	}
 
 
-#Corpus Christii raided!
+#Corpus Christii raided resisted!
 
  country_event = {
-	title = "EVT1914_101566_TITLE"
-	desc = "EVT1914_101566_DESC"
-	id = 101566
+	title = "EVT1914_101666_TITLE"
+	desc = "EVT1914_101654_DESC"
+	picture = "villa_troops"
+	id = 101666
 	 
 	fire_only_once = yes
 	 
@@ -1565,17 +1505,20 @@ country_event = {
 		crude_oil = -10
 		metal = -20
 		energy = -35
-		USA = { set_country_flag = USA_Mexican_Raids }
+		random = { chance = 50
+				USA = { set_country_flag = USA_Mexican_Raids } 
+				}
 		}
 	}
 
 
-#Corpus Christii raided!
+#Corpus Christii raided not resisted!
 
  country_event = {
-	title = "EVT1914_101568_TITLE"
-	desc = "EVT1914_101568_DESC"
-	id = 101568
+	title = "EVT1914_101666_TITLE"
+	desc = "EVT1914_101656_DESC"
+	picture = "villa_troops"
+	id = 101668
 	 
 	fire_only_once = yes
 	 
@@ -1590,17 +1533,20 @@ country_event = {
 		metal = -40
 		energy = -70
 		money = -20
-		USA = { set_country_flag = USA_Mexican_Raids }
+		random = { chance = 50
+				USA = { set_country_flag = USA_Mexican_Raids } 
+				}
 		}
 	}
 
 
-#San Diego raided!
+#San Diego raided resisted!
 
  country_event = {
-	title = "EVT1914_101570_TITLE"
-	desc = "EVT1914_101570_DESC"
-	id = 101570
+	title = "EVT1914_101670_TITLE"
+	desc = "EVT1914_101654_DESC"
+	picture = "villa_troops"
+	id = 101670
 	 
 	fire_only_once = yes
 	 
@@ -1614,17 +1560,20 @@ country_event = {
 		crude_oil = -10
 		metal = -20
 		energy = -35
-		USA = { set_country_flag = USA_Mexican_Raids }
+		random = { chance = 50
+				USA = { set_country_flag = USA_Mexican_Raids } 
+				}
 		}
 	}
 
 
-#San Diego raided!
+#San Diego raided not resisted!
 
  country_event = {
-	title = "EVT1914_101572_TITLE"
-	desc = "EVT1914_101572_DESC"
-	id = 101572
+	title = "EVT1914_101670_TITLE"
+	desc = "EVT1914_101656_DESC"
+	picture = "villa_troops"
+	id = 101672
 	 
 	fire_only_once = yes
 	 
@@ -1639,49 +1588,28 @@ country_event = {
 		metal = -40
 		energy = -70
 		money = -20
-		USA = { set_country_flag = USA_Mexican_Raids }
+		random = { chance = 50
+				USA = { set_country_flag = USA_Mexican_Raids } 
+				}
 		}
 	}
 
-	#################################################################################
 
-#Intervention against Mexican rebels
+# Mexico notified of Punitive Expedition
 
  country_event = {
-	title = "EVT1914_101580_TITLE"
-	desc = "EVT1914_101580_DESC"
-	id = 101580
+	title = "EVT1914_101674_TITLE"
+	desc = "EVT1914_101674_DESC"
+	picture = "US_Troops"
+	id = 101674
 	 
 	fire_only_once = yes
 	 
 	is_triggered_only = yes
 	 
-	option = {
-		 name = "DH_EVENT_2049522_Option7"
-# PUNATIVE EXPEDITION
-# country event 530
-		 }
+	option = { name = "ACTION_NAME_OK" }
 	}
-
-
-#Ask for full transit agreement with Mexico
-
- country_event = {
-	title = "DH_EVENT_2049523_TITLE"
-	desc = "DH_EVENT_2049523_DESC"
-	id = 101582
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-# MEXICO RESPOND
-	option = {
-		 name = "DH_EVENT_2049523_Option7"
-#		 MEX = { country_event = ??? }
-		 }
-	}
-
+	
 
 	########################################################################
 	
@@ -1817,3 +1745,90 @@ country_event = {
 		 join_faction = axis
 		 }
 	}
+	
+
+##################  ASSASSINATION of ZAPATA and VILLA#############################
+#As the war went on in 1919, Zapata began to run out of essential supplies, such as ammunition, and decided to acquire them from Guajardo. 
+#Zapata went to Guajardo's camp to negotiate with the colonel, whom he had not met before. However, Zapata had walked into a trap. 
+#Guajardo’s soldiers attacked Zapata, killing him and routing his forces. 
+
+# Later that year, Carranza assembled the constitutional convention drafting the new constitution. 
+# With this, Carranza also gained support of the communists and anarchists, who were formed into “Red Battalions” to confront the forces of Villa 
+# and those remaining of Zapata’s. This further turned the tide, causing Villa to surrender in 1920. 
+# He negotiated a peace deal with Carranza, ending all hostilities and granting him a small estate, thus ending the war.
+
+
+	
+	
+	
+##################   EVENTS after Constitutionals v's Conventionalists ###################################################	
+# Later that year, Carranza held elections for the presidency. Obregón, a reformist general who pushed for the new constitution, 
+# was to oppose him for the seat. Carranza orchestrated a sham election, allowing Ignacio Bonillas to win. 
+# Carranza then fled to Guerrero where he staged a short coup to bring him into the presidency but was killed on horseback while fleeing 
+# from Mexico City to Veracruz.
+	
+
+#  Plan of Agua Prieta
+
+ country_event = {
+	title = "DH_EVENT_2038620_TITLE"
+	desc = "DH_EVENT_2038620_DESC"
+	picture = "plan_of_agua_prieta"
+	id = 209
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = { days = 90 }
+	
+	trigger = {
+		war = no
+		head_of_state = 55088 				#Francisco_Lagos_Cházaro
+		not = { exists = MXR }
+		tag = MXC
+		date = 1919.1.1
+		not = { date = 1923.12.30 }
+		}
+	option = {
+		name = "DH_EVENT_2038620_Option7"
+		ai_chance = { factor = 95 }
+		dissent = 5
+		head_of_state = 55111 				#Álvaro_Obregón
+		head_of_government = 55111 			#Álvaro_Obregón
+		foreign_minister = 55122 			#Cutberto_Hidalgo
+		armament_minister = 55127 			#Rafael_Zubarán_Capmany
+		minister_of_security = 55112 		#Plutarco_Elías_Calles
+		minister_of_intelligence = 55126 	#Jacinto_Blas_Treviño
+		chief_of_staff = 55141 				#Benjamín_Hill
+		chief_of_army = 55141 				#Benjamín_Hill
+		chief_of_navy = 55141 				#Benjamín_Hill
+		remove_minister = 55109 			#Venustiano_Carranza
+		kill_leader = 55253 				#Murguía_López_de_Lara
+		remove_minister = 55132 			#Manuel_Aguirre_Berlanga
+		remove_minister = 55140 			#Francisco_L._Urquizo 
+		}
+		
+	option = { 
+		ai_chance = { factor = 5 }
+		name = "DH_EVENT_2038620_Option8"
+		dissent = 5
+		head_of_state = 55145 				#Ignacio_Bonillas_Frajio
+		head_of_government = 55145 			#Ignacio_Bonillas_Frajio
+		minister_of_security = 55132 		#Manuel_Aguirre_Berlanga
+		chief_of_staff = 55140 				#Francisco_L._Urquizo
+		chief_of_army = 55140 				#Francisco_L._Urquizo
+		chief_of_navy = 55140 				#Francisco_L._Urquizo
+		remove_minister = 55111 			#Álvaro_Obregón
+		kill_leader = 55004 				#Obregón
+		remove_minister = 55110 			#Adolfo_de_la_Huerta_
+		kill_leader = 55243 				#Herrero_Hernández
+		remove_minister = 55112 			#Plutarco_Elías_Calles
+		remove_minister = 55141 			#Benjamín_Hill
+		kill_leader = 55217 				#Calles
+		kill_leader = 55244 				#Hill
+		kill_leader = 55001 				#Flores,_M
+		kill_leader = 55256 				#Piña
+		kill_leader = 55225 				#Cruz
+		remove_minister = 55142 			#Francisco_Roque_Serrano
+		kill_leader = 55104 				#Méndez
+		}
+	}	

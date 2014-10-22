@@ -6,8 +6,9 @@ diplomatic_decisions = {
 			tag = MXR
 			MXR = { war_with = MXC }
 			MXR = { head_of_state = 60035 }				    # Villa
-			not = { MXR = { war_with = USA } }
 			not = { has_country_flag = raid_tucson }
+			not = {	USA = { has_country_flag = Punitive_Expedition } }
+
 			}
 			
 		allow = {
@@ -16,7 +17,7 @@ diplomatic_decisions = {
 			}
 			 
 		effect = { 
-			country_event = 101500                          # Launch_Raids_on_Tucson
+			country_event = 101600                          # Launch_Raids_on_Tucson
 			set_country_flag = raid_tucson
 			}
 		}
@@ -29,7 +30,7 @@ diplomatic_decisions = {
 			tag = MXR
 			MXR = { war_with = MXC }
 			MXR = { head_of_state = 60035 }				    # Villa
-			not = { MXR = { war_with = USA } }
+			not = {	USA = { has_country_flag = Punitive_Expedition } }
 			not = { has_country_flag = raid_elpaso }
 			}
 			
@@ -39,7 +40,7 @@ diplomatic_decisions = {
 			}
 			 
 		effect = { 
-			country_event = 101510                          # Launch_Raids_on_El_Paso
+			country_event = 101610                          # Launch_Raids_on_El_Paso
 			set_country_flag = raid_elpaso
 			}
 		}
@@ -52,7 +53,7 @@ diplomatic_decisions = {
 			tag = MXR
 			MXR = { war_with = MXC }
 			MXR = { head_of_state = 60035 }				    # Villa
-			not = { MXR = { war_with = USA } }
+			not = {	USA = { has_country_flag = Punitive_Expedition } }
 			not = { has_country_flag = raid_sanantonio }
 			}
 			
@@ -62,7 +63,7 @@ diplomatic_decisions = {
 			}
 			 
 		effect = { 
-			country_event = 101520                          # Launch_Raids_on_San_Antonio
+			country_event = 101620                          # Launch_Raids_on_San_Antonio
 			set_country_flag = raid_sanantonio
 			}
 		}		
@@ -75,7 +76,7 @@ diplomatic_decisions = {
 			tag = MXR
 			MXR = { war_with = MXC }
 			MXR = { head_of_state = 60035 }				    # Villa
-			not = { MXR = { war_with = USA } }
+			not = {	USA = { has_country_flag = Punitive_Expedition } }
 			not = { has_country_flag = raid_corpuschristi }
 			}
 			
@@ -88,7 +89,7 @@ diplomatic_decisions = {
 			}
 			 
 		effect = { 
-			country_event = 101530                           # Launch_Raids_on_Corpus_Christi
+			country_event = 101630                           # Launch_Raids_on_Corpus_Christi
 			set_country_flag = raid_corpuschristi
 			}
 		}		
@@ -101,7 +102,7 @@ diplomatic_decisions = {
 			tag = MXR
 			MXR = { war_with = MXC }
 			MXR = { head_of_state = 60035 }				     # Villa
-			not = { MXR = { war_with = USA } }
+			not = {	USA = { has_country_flag = Punitive_Expedition } }
 			not = { has_country_flag = raid_sandiego }
 			}
 			
@@ -111,32 +112,11 @@ diplomatic_decisions = {
 			}
 			 
 		effect = { 
-			country_event = 101540                           # Launch_Raids_on_San_Diego
+			country_event = 101640                           # Launch_Raids_on_San_Diego
 			set_country_flag = raid_sandiego
 			}
 		}		
 
-	
-# Intervention_against_Mexican_rebels
- 
-	101510_decision = {                                   
-		ai_will_do = { factor = 1 }
-		
-		potential = {
-			MXR = { war_with = MXC }
-			USA = { has_country_flag = USA_Mexican_Raids }
-			tag = USA
-			not = { has_country_flag = Punitive_Expedition }
-			}
-			
-		allow = { war = no }
-		
-		effect = {
-#			country_event = PUNITIVE EXPEDITION ONLY - Flavour event - but can kill VILLA
-			set_country_flag = Punitive_Expedition
-		}
-	}
-	
 
 	2038501_decision = {                                         # Mexico joins Germany when USA joins entente
 		ai_will_do = { factor = 0 }

@@ -148,4 +148,27 @@ diplomatic_decisions = {
 			MXC = { country_event = 101048 }					# USA embargoes MXC
 		}
 	}
+	
+		
+# Intervention_against_Mexican_rebels
+ 
+	101510_decision = {                                   
+		ai_will_do = { factor = 1 }
+		
+		potential = {
+			USA = { has_country_flag = USA_Mexican_Raids }
+			MXR = { war_with = MXC }
+			USA = { not = { has_country_flag = Punitive_Expedition } }
+			}
+			
+		allow = { USA = { war = no } }
+		
+		effect = {
+				MXR = { country_event = 101674 }      
+				MXC = { country_event = 101674 }
+				USA = { country_event = 101680 }
+				USA = { set_country_flag = Punitive_Expedition } 
+			}
+		}
+	}
 }

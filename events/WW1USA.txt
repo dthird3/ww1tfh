@@ -134,6 +134,77 @@
 		 money = 100
 		 }
 	}
+
+	
+# America Chooses New Freedom 
+country_event = { 
+	title = "democrats_win_TITLE" 		
+	desc = "desc_Wilson_wins"
+	picture = "US_Wilson_election"	
+	id = 100533
+	
+	mean_time_to_happen = { days = 0 }
+	
+	major = yes
+
+	trigger = {
+		tag = USA	
+		ideology = social_liberal 	
+		date = 1912.11.5
+		not = { has_country_flag = newfreedom }
+		}
+		
+	fire_only_once = yes
+	
+	option = {		
+	name = "1912_democrats_win_ACTIONA"	
+	head_of_state = 93232 		#Woodrow_Wilson	
+	head_of_government = 93280		
+	money = -100		
+	supplies = -50		
+	dissent = -3		
+	foreign_minister = 93223 	#William_Jennings_Bryan
+	armament_minister = 93254 	
+	minister_of_security = 93268 	
+	minister_of_intelligence = 93244 	
+	chief_of_staff = 93201 	
+	chief_of_army = 93288 	
+	chief_of_navy = 93289 	
+	chief_of_air = 93191		
+	set_country_flag = newfreedom }
+}	
+	
+	
+# America Chooses New Nationalism 
+country_event = { 
+	title = "Teddy_wins_TITLE"		
+	desc = "desc_Teddy_wins"
+	picture = "US_Roosevelt_election"	
+	id = 100534
+	
+	mean_time_to_happen = { days = 0 }
+	
+	major = yes
+
+	trigger = {
+		tag = USA	
+		ideology = social_democrat 	
+		date = 1912.11.5
+		not = { has_country_flag = new_nationalism }
+		}
+		
+	fire_only_once = yes
+	
+	option = {		
+	name = "1912_Teddy_wins_ACTION"
+	head_of_state = 93228  head_of_government = 93279
+		
+	money = -200		
+	supplies = -100		
+	dissent = -5
+	neutrality = -5	
+	set_country_flag = new_nationalism}
+}		 	
 	
 	
 #We did it!  The Panama Canal is officially opened.
@@ -376,71 +447,22 @@
 }
 
 
-# America Chooses New Freedom 
-country_event = { 
-	title = "democrats_win_TITLE" 		
-	desc = "desc_Wilson_wins"	
-	id = 100533
-	
-	picture = "US_Wilson_election"
-		mean_time_to_happen = { days = 0 }
-	
-	major = yes
+# Punitive Expedition hunt for Villa
 
-	trigger = {
-		tag = USA	
-		ideology = social_liberal 	
-		date = 1912.11.5
-		not = { has_country_flag = newfreedom }
-		}
-		
-	fire_only_once = yes
-	
-	option = {		
-	name = "1912_democrats_win_ACTIONA"	
-	head_of_state = 93232 		#Woodrow_Wilson	
-	head_of_government = 93280		
-	money = -100		
-	supplies = -50		
-	dissent = -3		
-	foreign_minister = 93223 	#William_Jennings_Bryan
-	armament_minister = 93254 	
-	minister_of_security = 93268 	
-	minister_of_intelligence = 93244 	
-	chief_of_staff = 93201 	
-	chief_of_army = 93288 	
-	chief_of_navy = 93289 	
-	chief_of_air = 93191		
-	set_country_flag = newfreedom }
-}	
+ country_event = {
+	title = "EVT1914_101680_TITLE"
+	desc = "EVT1914_101680_DESC"
+	picture = "US_Troops"
+	id = 101680
 	 
-# America Chooses New Nationalism 
-country_event = { 
-	title = "Teddy_wins_TITLE"		
-	desc = "desc_Teddy_wins"	
-	id = 100534
-	
-	picture = "US_Roosevelt_election"
-		mean_time_to_happen = { days = 0 }
-	
-	major = yes
-
-	trigger = {
-		tag = USA	
-		ideology = social_democrat 	
-		date = 1912.11.5
-		not = { has_country_flag = new_nationalism }
-		}
-		
 	fire_only_once = yes
-	
-	option = {		
-	name = "1912_Teddy_wins_ACTION"
-	head_of_state = 93228  head_of_government = 93279
-		
-	money = -200		
-	supplies = -100		
-	dissent = -5
-	neutrality = -5	
-	set_country_flag = new_nationalism}
-}		 
+	 
+	trigger = 
+		USA = { has_country_flag = Punitive_Expedition }
+	 
+	option = {
+		name = "ACTION_NAME_OK"
+		USA = { set_country_flag = Punitive_Expedition }
+		USA = { country_event = 101676 } 
+		}
+}
