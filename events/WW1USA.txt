@@ -447,7 +447,7 @@ country_event = {
 }
 
 
-# Punitive Expedition hunt for Villa
+# Punitive Expedition starts
 
  country_event = {
 	title = "EVT1914_101680_TITLE"
@@ -456,13 +456,61 @@ country_event = {
 	id = 101680
 	 
 	fire_only_once = yes
-	 
-	trigger = 
-		USA = { has_country_flag = Punitive_Expedition }
+	major = yes
+	is_triggered_only = yes
 	 
 	option = {
+		name = "EVT1914_101680_OPTA"
+		USA = { set_country_flag = Hunt_Villa } 
+		}
+}
+
+
+# Hunt for Villa - Caught him
+
+ country_event = {
+	title = "EVT1914_101676_TITLE"
+	desc = "EVT1914_101676_DESC"
+	picture = "Wanted_Villa"
+	id = 101676
+	 
+	fire_only_once = yes
+	
+	mean_time_to_happen = { months = 16 }
+	
+	major = yes
+	
+	trigger = {
+		USA = { has_country_flag = Hunt_Villa } 
+		}
+	 
+	option = {
+		name = "ACTION_NAME_GREAT"
+		MXR = { remove_minister = 60035 }
+		MXR = { kill_leader = 60005 }
+		USA = { clr_country_flag = Hunt_Villa }
+		}
+}
+
+
+# End the Punitive Expedition - Villa not found
+
+ country_event = {
+	title = "EVT1914_101678_TITLE"
+	desc = "EVT1914_101678_DESC"
+	picture = "US_Troops"
+	id = 101678
+	 
+	fire_only_once = yes
+	major = yes
+	
+	trigger = { 
+		USA = { has_country_flag = Hunt_Villa }
+		USA = { war_with = GER } 
+		}
+	
+	option = {
 		name = "ACTION_NAME_OK"
-		USA = { set_country_flag = Punitive_Expedition }
-		USA = { country_event = 101676 } 
+		USA = { clr_country_flag = Hunt_Villa } 
 		}
 }
