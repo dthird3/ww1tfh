@@ -5,7 +5,7 @@ country_event = {
 	
 	fire_only_once = yes
 	
-	tag = FIN
+	tag = { FIN }
 	
 	title = "EVTNAME4501"
 	desc = "EVTDESC4501"
@@ -24,7 +24,9 @@ country_event = {
 	
 	id = 2
 	fire_only_once = yes
-	trigger = { tag = SOV }
+	trigger = {
+		tag = SOV
+	}
 
 	mean_time_to_happen =  {
 		months = 6
@@ -34,6 +36,9 @@ country_event = {
 	desc = "FWW_SOV_desc"
 	picture = "Winter_War"
 
-	option = { name = "Event_ex"
-			   clr_country_flag = disorganized_soviets }
+	option = {
+		name = "Event_ex"
+			clr_country_flag = disorganized_soviets
+	}
 }
+
