@@ -1,5 +1,5 @@
 diplomatic_decisions = {
-	101500_decision = {                                	    #Launch_Raids_on_Tucson
+	Raid_on_Tucson = {                                	    # Launch_Raids_on_Tucson
 		ai_will_do = { factor = 1 }
 		
 		potential = {
@@ -23,7 +23,7 @@ diplomatic_decisions = {
 		}
 		
 		
-	101502_decision = {                                		# Launch_Raids_on_El_Paso
+	Raid_on_El_Paso = {                                		# Launch_Raids_on_El_Paso
 		ai_will_do = { factor = 1 }
 		
 		potential = {
@@ -37,6 +37,7 @@ diplomatic_decisions = {
 		allow = {
 			money = 20
 			MXR = { 9147 = { units_in_province = 1 } }    	# Ciudad_Juárez
+			date = 1916.03.01 								# limit Gringoes triggering the event
 			}
 			 
 		effect = { 
@@ -46,7 +47,7 @@ diplomatic_decisions = {
 		}
 
 		
-	101504_decision = {                                		# Launch_Raids_on_San_Antonio
+	Raid_on_San_Antonio = {                                	# Launch_Raids_on_San_Antonio
 		ai_will_do = { factor = 1 }
 		
 		potential = {
@@ -69,13 +70,13 @@ diplomatic_decisions = {
 		}		
 
 		
-	101506_decision = {                                		# Launch_Raids_on_Corpus_Christi
+	Raid_on_Corpus_Christi = {                                		# Launch_Raids_on_Corpus_Christi
 		ai_will_do = { factor = 1 }
 		
 		potential = {
 			tag = MXR
 			MXR = { war_with = MXC }
-			MXR = { head_of_state = 60035 }				    # Villa
+			MXR = { head_of_state = 60035 }				         # Villa
 			not = {	USA = { has_country_flag = Punitive_Expedition } }
 			not = { has_country_flag = raid_corpuschristi }
 			}
@@ -83,59 +84,37 @@ diplomatic_decisions = {
 		allow = {
 			money = 20
 			or = {
-				MXR = { 9419 = { units_in_province = 1 } }        #Monterrey
-				MXR = { 9388 = { units_in_province = 1 } }        #Reynosa
+				MXR = { 9481 = { units_in_province = 1 } }        # Matamoros
+				MXR = { 9388 = { units_in_province = 1 } }        # Reynosa
 				}
 			}
 			 
 		effect = { 
-			country_event = 101630                           # Launch_Raids_on_Corpus_Christi
+			country_event = 101630                               # Launch_Raids_on_Corpus_Christi
 			set_country_flag = raid_corpuschristi
 			}
 		}		
 
 			
-	101508_decision = {                                		 # Launch_Raids_on_San_Diego
+	Raid_on_San_Diego = {                                		 # Launch_Raids_on_San_Diego
 		ai_will_do = { factor = 1 }
 		
 		potential = {
 			tag = MXR
 			MXR = { war_with = MXC }
-			MXR = { head_of_state = 60035 }				     # Villa
+			MXR = { head_of_state = 60035 }				         # Villa
 			not = {	USA = { has_country_flag = Punitive_Expedition } }
 			not = { has_country_flag = raid_sandiego }
 			}
 			
 		allow = {
 			money = 20
-			MXR = { 7369 = { units_in_province = 1 } }       # Tijuana
+			MXR = { 7369 = { units_in_province = 1 } }           # Tijuana
 			}
 			 
 		effect = { 
-			country_event = 101640                           # Launch_Raids_on_San_Diego
+			country_event = 101640                               # Launch_Raids_on_San_Diego
 			set_country_flag = raid_sandiego
 			}
 		}		
-
-
-	2038501_decision = {                                         # Mexico joins Germany when USA joins entente
-		ai_will_do = { factor = 0 }
-		potential = {
-			tag = MXC
-			# maybe MXR
-			USA = { war_with = GER }
-			not = { has_country_flag = decision_2038501 }
-#			MXC = { has_country_flag = Receive_Zimmermann }
-			}
-			
-		allow = { USA = { war_with = GER } }
-		
-		effect = {
-			country_event = 184     # MEX  
-#country_event = 188      MXR
-#country_event = 189      MXC	
-# Reject option of war		
-			set_country_flag = decision_2038501
-			 }
-		}
 }

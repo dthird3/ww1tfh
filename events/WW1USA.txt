@@ -110,29 +110,28 @@
 	is_triggered_only = yes
 	 
 	option = {
-		 name = "opta_USAE1"
-		 USA = { create_vassal = NIC }
-		 dissent = 10
-		 manpower = 20
-		 neutrality = -1
-		 money = 100
-		 }
+		name = "opta_USAE1"
+		ai_chance = { factor = 10 }
+		USA = { create_vassal = NIC }
+		dissent = 10
+		neutrality = -1
+		money = 100
+		}
 	option = {
-		 name = "Annexation shall protect our interests"
-		 dissent = 10
-		 USA = { inherit = NIC }
-		 manpower = 20
-		 neutrality = -1
-		 money = 100
-		 }
+		name = "Annexation shall protect our interests"
+		ai_chance = { factor = 10 }
+		USA = { inherit = NIC }
+		dissent = 10
+		neutrality = -1
+		}
 	option = {
-		 name = "Occupation will suffice"
-		 ai_chance = { factor = 100 }
-		 dissent = -10
-		 manpower = 100
-		 neutrality = -1
-		 money = 100
-		 }
+		name = "Occupation will suffice"
+		ai_chance = { factor = 80 }
+		dissent = -10
+		manpower = 10
+		neutrality = -1
+		money = 250
+		}
 	}
 
 	
@@ -282,6 +281,8 @@ country_event = {
 	 
 	trigger = {
 		tag = USA
+		MXC = { war_with = MXR }
+		MXR = { head_of_state = 60032  }              #Victoriano_Huerta
 		USA = { has_country_flag = Tampico }
 		USA = { has_country_flag = Huerta_embargoed }
 	}
@@ -452,8 +453,9 @@ country_event = {
  country_event = {
 	title = "EVT1914_101680_TITLE"
 	desc = "EVT1914_101680_DESC"
-	picture = "US_Troops"
 	id = 101680
+	
+	picture = "US_Troops"
 	 
 	fire_only_once = yes
 	major = yes
@@ -461,6 +463,8 @@ country_event = {
 	 
 	option = {
 		name = "EVT1914_101680_OPTA"
+		manpower = 20
+		MXR = { relation = { who = USA value = -50 } }
 		USA = { set_country_flag = Hunt_Villa } 
 		}
 }
@@ -471,8 +475,9 @@ country_event = {
  country_event = {
 	title = "EVT1914_101676_TITLE"
 	desc = "EVT1914_101676_DESC"
-	picture = "Wanted_Villa"
 	id = 101676
+	
+	picture = "Wanted_Villa"
 	 
 	fire_only_once = yes
 	
@@ -485,9 +490,12 @@ country_event = {
 		}
 	 
 	option = {
+		tag = USA
 		name = "ACTION_NAME_GREAT"
 		MXR = { remove_minister = 60035 }
 		MXR = { kill_leader = 60005 }
+		MXR = national_unity = -20
+		MXR = { dissent = 10 }
 		USA = { clr_country_flag = Hunt_Villa }
 		}
 }
@@ -510,7 +518,9 @@ country_event = {
 		}
 	
 	option = {
+		tag = USA
 		name = "ACTION_NAME_OK"
+		USA = { dissent = 2 }
 		USA = { clr_country_flag = Hunt_Villa } 
 		}
 }

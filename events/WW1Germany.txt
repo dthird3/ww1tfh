@@ -255,25 +255,26 @@
 			 }
 		 }
 	option = {
-		 name = "EVT1914_2008007_ACTIONA"
+		 name = "EVT1914_2008007_ACTIONA"						 # The_Zimmermann_telegram goes to Mexico City
 		 ai_chance = { factor = 100 }
 		 GER = { set_country_flag = Send_Zimmermann }
 		 GER = { clr_country_flag = stopped_unrest_subs }
 		 random_country = {
-			 limit = { exists = MEX }
-			 MEX = { country_event = 183 }                   # The_Zimmermann_telegram goes to MEX
+			 limit = { 9604 = { controlled_by = MEX } }
+			 MEX = { country_event = 101690 }                  
 			 }
 		 random_country = {
-			 limit = { exists = MXR
-					   not = { exists = MEX }
-					 }
-			 MXR = { country_event = 187 }					 # The_Zimmermann_telegram goes to MXR
+			 limit = { 9604 = { controlled_by = MXR } }
+			 MXR = { country_event = 101692 }                
 			 }
-##############   											 # The_Zimmermann_telegram goes to MXC
+		 random_country = {
+			 limit = { 9604 = { controlled_by = MXC } }
+			 MXC = { country_event = 101694 }                 
+			 }
 		 random = {
-			 chance = 50
+			 chance = 60
 			 USA = { country_event = 100526 }
-			 ENG = { country_event = 41 }						
+			 ENG = { country_event = 100498 }						
 			 }
 		 }
 	}
