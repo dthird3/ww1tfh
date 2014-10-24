@@ -1,605 +1,593 @@
- corps = {
+theatre = {
 	location = 5315  # Tokyo
-	name = "1 Konoeshidan"
+	name = "Japanese Theatre"
 	
-	 regiment = {
+	regiment = {
 		type = hq_brigade 
-		name = "1 Konoeshidan HQ"
+		name = "Japanese Theatre HQ"
 		historical_model = 0 
-		}
-	
-	 division = {
+		} 
+		
+	division = {
 		location = 5315  # Tokyo
-		is_reserve = no 
+		is_reserve = yes
+		name = "1. Jiei Kikeishidan Rentai"
+			
+		regiment = {
+			type = cavalry_brigade 
+			experience = 5 
+			name = "1. Jiei Kikeishidan Rentai"
+			historical_model = 1 
+		}
+	}
+	
+	division = {
+		location = 5315  # Tokyo
+		is_reserve = yes
+		name = "2. Jiei Kikeishidan Rentai"
+			
+		regiment = {
+			type = cavalry_brigade 
+			experience = 5 
+			name = "2. Jiei Kikeishidan Rentai"
+			historical_model = 1 
+		}
+	}
+			
+	division = {
+		location = 5315  # Tokyo
+		is_reserve = yes
+		name = "3. Jiei Kikeishidan Rentai"
+			
+		regiment = {
+			type = cavalry_brigade 
+			experience = 5 
+			name = "3. Jiei Kikeishidan Rentai"
+			historical_model = 1 
+		}
+	}
+			
+	division = {
+		location = 5315  # Tokyo
+		is_reserve = yes
+		name = "4. Jiei Kikeishidan Rentai"
+			
+		regiment = {
+			type = cavalry_brigade 
+			experience = 5 
+			name = "4. Jiei Kikeishidan Rentai"
+			historical_model = 1 
+		}
+	}
+	
+	division = {
+		location = 5315  # Tokyo
+		is_reserve = yes 
 		name = "1 Konoeshidan"
 		
 		 regiment = {
 			type = garrison_brigade 
 			experience = 5 
-			name = "1 Konoeshidan1"
+			name = "1 Konoeshidan/1"
 			historical_model = 0 
 			}
 		
 		 regiment = {
 			type = garrison_brigade 
 			experience = 5 
-			name = "1 Konoeshidan2"
+			name = "1 Konoeshidan/2"
 			historical_model = 0 
 			}
-		
-		 regiment = {
-			type = artillery_brigade 
-			experience = 5 
-			name = "1 Konoeshidan4"
-			historical_model = 0 
-			}
-		}
 	}
 
  corps = {
 	location = 5315  # Tokyo
-	name = "1 Hoheishidan"
+	name = "1. Gun"
 	
 	 regiment = {
 		type = hq_brigade 
-		name = "1 Hoheishidan HQ"
+		name = "1. Gun HQ"
 		historical_model = 0 
+		}
+		
+	 division = {
+		location = 5315  # Tokyo
+		is_reserve = no 
+		name = "Imperial Guard Hoheishidan"
+		
+		 regiment = {
+			type = imperial_brigade 
+			experience = 15 
+			name = "1 Imperial Guard Rentai"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = imperial_brigade 
+			experience = 15 
+			name = "2 Imperial Guard Rentai"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = artillery_brigade 
+			experience = 10 
+			name = "1 Imperial Guard Artillery"
+			historical_model = 0 
+			}
 		}
 	
 	 division = {
 		location = 5315  # Tokyo
-		is_reserve = no 
+		is_reserve = yes 
 		name = "1 Hoheishidan"
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 10 
-			name = "1 Hoheishidan1"
+			name = "1 Hoheishidan/1"
 			historical_model = 2 
 			}
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 10 
-			name = "1 Hoheishidan2"
+			name = "1 Hoheishidan/2"
 			historical_model = 2 
 			}
 		
 		 regiment = {
 			type = artillery_brigade 
 			experience = 10 
-			name = "1 Hoheishidan4"
+			name = "1 Hoheishidan"
 			historical_model = 0 
 			}
-		}
-	}
-
- corps = {
-	location = 5315  # Tokyo
-	name = "2 Hoheishidan"
-	
-	 regiment = {
-		type = hq_brigade 
-		name = "2 Hoheishidan HQ"
-		historical_model = 0 
 		}
 	
 	 division = {
 		location = 5315  # Tokyo
-		is_reserve = no 
+		is_reserve = yes 
 		name = "2 Hoheishidan"
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 5 
-			name = "2 Hoheishidan1"
+			name = "2 Hoheishidan/1"
 			historical_model = 1 
 			}
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 5 
-			name = "2 Hoheishidan2"
+			name = "2 Hoheishidan/2"
 			historical_model = 1 
 			}
 		}
-	}
-
- corps = {
-	location = 5543  # Nagasaki
-	name = "3 Hoheishidan"
-	
-	 regiment = {
-		type = hq_brigade 
-		name = "3 Hoheishidan HQ"
-		historical_model = 0 
-		}
-	
-	 division = {
-		location = 5543  # Nagasaki
-		is_reserve = no 
-		name = "3 Hoheishidan"
 		
-		 regiment = {
-			type = infantry_brigade 
-			experience = 5 
-			name = "3 Hoheishidan1"
-			historical_model = 1 
-			}
-		
-		 regiment = {
-			type = infantry_brigade 
-			experience = 5 
-			name = "3 Hoheishidan2"
-			historical_model = 1 
-			}
-		}
-	}
-
- corps = {
-	location = 5315  # Tokyo
-	name = "4 Hoheishidan"
-	
-	 regiment = {
-		type = hq_brigade 
-		name = "4 Hoheishidan HQ"
-		historical_model = 0 
-		}
-	
 	 division = {
 		location = 5315  # Tokyo
-		is_reserve = no 
+		is_reserve = yes 
 		name = "4 Hoheishidan"
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 5 
-			name = "4 Hoheishidan1"
+			name = "4 Hoheishidan/1"
 			historical_model = 1 
 			}
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 5 
-			name = "4 Hoheishidan2"
+			name = "4 Hoheishidan/2"
 			historical_model = 1 
 			}
 		}
 	}
 
+
  corps = {
-	location = 5759  # Naha
-	name = "5 Hoheishidan"
+	location = 5543  # Nagasaki
+	name = "2. Gun"
 	
 	 regiment = {
 		type = hq_brigade 
-		name = "5 Hoheishidan HQ"
+		name = "2. Gun HQ"
 		historical_model = 0 
 		}
 	
 	 division = {
-		location = 5759  # Naha
-		is_reserve = no 
-		name = "5 Hoheishidan"
+		location = 5543  # Nagasaki
+		is_reserve = yes 
+		name = "3 Hoheishidan"
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 5 
-			name = "5 Hoheishidan1"
+			name = "3 Hoheishidan"
 			historical_model = 1 
 			}
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 5 
-			name = "5 Hoheishidan2"
+			name = "3 Hoheishidan"
 			historical_model = 1 
 			}
-		}
-	}
-
- corps = {
-	location = 5456  # Matsuyama
-	name = "6 Hoheishidan"
-	
-	 regiment = {
-		type = hq_brigade 
-		name = "6 Hoheishidan HQ"
-		historical_model = 0 
 		}
 	
 	 division = {
 		location = 5456  # Matsuyama
-		is_reserve = no 
+		is_reserve = yes 
 		name = "6 Hoheishidan"
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 5 
-			name = "6 Hoheishidan1"
+			name = "6 Hoheishidan"
 			historical_model = 1 
 			}
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 5 
-			name = "6 Hoheishidan2"
+			name = "6 Hoheishidan"
+			historical_model = 1 
+			}
+		}
+	
+	 division = {
+		location = 5425  # Hiroshima
+		is_reserve = yes 
+		name = "12 Hoheishidan"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "12 Hoheishidan"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "12 Hoheishidan"
+			historical_model = 1 
+			}
+		}
+	
+	 division = {
+		location = 5641  # Kagoshima
+		is_reserve = yes 
+		name = "13 Hoheishidan"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "13 Hoheishidan"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "13 Hoheishidan"
 			historical_model = 1 
 			}
 		}
 	}
 
+
  corps = {
-	location = 5346  # Nagoya
-	name = "7 Hoheishidan"
+	location = 5759  # Naha
+	name = "3. Gun"
 	
 	 regiment = {
 		type = hq_brigade 
-		name = "7 Hoheishidan HQ"
+		name = "3. Gun HQ"
 		historical_model = 0 
 		}
 	
 	 division = {
-		location = 5346  # Nagoya
-		is_reserve = no 
-		name = "7 Hoheishidan"
+		location = 5759  # Naha
+		is_reserve = yes 
+		name = "5 Hoheishidan"
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 5 
-			name = "7 Hoheishidan1"
+			name = "5 Hoheishidan"
 			historical_model = 1 
 			}
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 5 
-			name = "7 Hoheishidan2"
+			name = "5 Hoheishidan"
 			historical_model = 1 
 			}
 		}
 	}
 
+	
  corps = {
-	location = 7238  # Sapporo
-	name = "8 Hoheishidan"
+	location = 4986  # Akita
+	name = "4. Gun"
 	
 	 regiment = {
 		type = hq_brigade 
-		name = "8 Hoheishidan HQ"
+		name = "4. Gun HQ"
 		historical_model = 0 
 		}
-	
+		
 	 division = {
 		location = 7238  # Sapporo
-		is_reserve = no 
+		is_reserve = yes 
 		name = "8 Hoheishidan"
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 5 
-			name = "8 Hoheishidan1"
+			name = "8 Hoheishidan"
 			historical_model = 1 
 			}
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 5 
-			name = "8 Hoheishidan2"
+			name = "8 Hoheishidan"
 			historical_model = 1 
 			}
 		}
-	}
 
- corps = {
-	location = 5370  # Osaka
-	name = "9 Hoheishidan"
-	
-	 regiment = {
-		type = hq_brigade 
-		name = "9 Hoheishidan HQ"
-		historical_model = 0 
-		}
-	
-	 division = {
-		location = 5370  # Osaka
-		is_reserve = no 
-		name = "9 Hoheishidan"
-		
-		 regiment = {
-			type = infantry_brigade 
-			experience = 5 
-			name = "9 Hoheishidan1"
-			historical_model = 1 
-			}
-		
-		 regiment = {
-			type = infantry_brigade 
-			experience = 5 
-			name = "9 Hoheishidan2"
-			historical_model = 1 
-			}
-		}
-	}
-
- corps = {
-	location = 4986  # Akita
-	name = "10 Hoheishidan"
-	
-	 regiment = {
-		type = hq_brigade 
-		name = "10 Hoheishidan HQ"
-		historical_model = 0 
-		}
-	
 	 division = {
 		location = 4986  # Akita
-		is_reserve = no 
+		is_reserve = yes 
 		name = "10 Hoheishidan"
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 5 
-			name = "10 Hoheishidan1"
+			name = "10 Hoheishidan"
 			historical_model = 1 
 			}
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 5 
-			name = "10 Hoheishidan2"
+			name = "10 Hoheishidan"
 			historical_model = 1 
+			}
+		}
+	
+	 division = {
+		location = 5120  # Sendai
+		is_reserve = yes 
+		name = "17 Hoheishidan"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "17 Hoheishidan"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "17 Hoheishidan"
+			historical_model = 1 
+			}
+		}
+	}
+
+
+ corps = {
+	location = 5346  # Nagoya
+	name = "5. Gun"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "5. Gun HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		location = 5346  # Nagoya
+		is_reserve = yes 
+		name = "7 Hoheishidan"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "7 Hoheishidan"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "7 Hoheishidan"
+			historical_model = 1 
+			}
+		}
+
+	division = {
+		location = 5370  # Osaka
+		is_reserve = yes 
+		name = "9 Hoheishidan"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "9 Hoheishidan"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "9 Hoheishidan"
+			historical_model = 1 
+			}
+		}
+
+	division = {
+		location = 5218  # Kanazawa
+		is_reserve = yes 
+		name = "14 Hoheishidan"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "14 Hoheishidan"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "14 Hoheishidan"
+			historical_model = 1 
+			}
+		}
+		
+	division = {
+		location = 5370  # Osaka
+		is_reserve = yes 
+		name = "2 Konoeshidan"
+		
+		 regiment = {
+			type = garrison_brigade 
+			experience = 5 
+			name = "2 Konoeshidan"
+			historical_model = 0 
+			}
+		
+		 regiment = {
+			type = garrison_brigade 
+			experience = 5 
+			name = "2 Konoeshidan"
+			historical_model = 0 
 			}
 		}
 	}
 
  corps = {
 	location = 7009  # Toyohara
-	name = "11 Hoheishidan"
+	name = "6. Gun"
 	
 	 regiment = {
 		type = hq_brigade 
-		name = "11 Hoheishidan HQ"
+		name = "6. Gun HQ"
 		historical_model = 0 
 		}
 	
 	 division = {
 		location = 7009  # Toyohara
-		is_reserve = no 
+		is_reserve = yes 
 		name = "11 Hoheishidan"
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 5 
-			name = "11 Hoheishidan1"
+			name = "11 Hoheishidan"
 			historical_model = 1 
 			}
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 5 
-			name = "11 Hoheishidan2"
+			name = "11 Hoheishidan"
 			historical_model = 1 
 			}
 		}
 	}
-
- corps = {
-	location = 5425  # Hiroshima
-	name = "12 Hoheishidan"
 	
-	 regiment = {
-		type = hq_brigade 
-		name = "12 Hoheishidan HQ"
-		historical_model = 0 
-		}
-	
-	 division = {
-		location = 5425  # Hiroshima
-		is_reserve = no 
-		name = "12 Hoheishidan"
-		
-		 regiment = {
-			type = infantry_brigade 
-			experience = 5 
-			name = "12 Hoheishidan1"
-			historical_model = 1 
-			}
-		
-		 regiment = {
-			type = infantry_brigade 
-			experience = 5 
-			name = "12 Hoheishidan2"
-			historical_model = 1 
-			}
-		}
-	}
-
- corps = {
-	location = 5641  # Kagoshima
-	name = "13 Hoheishidan"
-	
-	 regiment = {
-		type = hq_brigade 
-		name = "13 Hoheishidan HQ"
-		historical_model = 0 
-		}
-	
-	 division = {
-		location = 5641  # Kagoshima
-		is_reserve = no 
-		name = "13 Hoheishidan"
-		
-		 regiment = {
-			type = infantry_brigade 
-			experience = 5 
-			name = "13 Hoheishidan1"
-			historical_model = 1 
-			}
-		
-		 regiment = {
-			type = infantry_brigade 
-			experience = 5 
-			name = "13 Hoheishidan2"
-			historical_model = 1 
-			}
-		}
-	}
-
- corps = {
-	location = 5218  # Kanazawa
-	name = "14 Hoheishidan"
-	
-	 regiment = {
-		type = hq_brigade 
-		name = "14 Hoheishidan HQ"
-		historical_model = 0 
-		}
-	
-	 division = {
-		location = 5218  # Kanazawa
-		is_reserve = no 
-		name = "14 Hoheishidan"
-		
-		 regiment = {
-			type = infantry_brigade 
-			experience = 5 
-			name = "14 Hoheishidan1"
-			historical_model = 1 
-			}
-		
-		 regiment = {
-			type = infantry_brigade 
-			experience = 5 
-			name = "14 Hoheishidan2"
-			historical_model = 1 
-			}
-		}
-	}
-
- corps = {
-	location = 5056  # P'yongyang
-	name = "15 Hoheishidan"
-	
-	 regiment = {
-		type = hq_brigade 
-		name = "15 Hoheishidan HQ"
-		historical_model = 0 
-		}
-	
-	 division = {
-		location = 5056  # P'yongyang
-		is_reserve = no 
-		name = "15 Hoheishidan"
-		
-		 regiment = {
-			type = infantry_brigade 
-			experience = 5 
-			name = "15 Hoheishidan1"
-			historical_model = 1 
-			}
-		
-		 regiment = {
-			type = infantry_brigade 
-			experience = 5 
-			name = "15 Hoheishidan2"
-			historical_model = 1 
-			}
-		}
-	}
-
  corps = {
 	location = 5809  # Gaoxiong
-	name = "16 Hoheishidan"
+	name = "8. Gun"
 	
 	 regiment = {
 		type = hq_brigade 
-		name = "16 Hoheishidan HQ"
+		name = "8. Gun HQ"
 		historical_model = 0 
 		}
 	
 	 division = {
 		location = 5809  # Gaoxiong
-		is_reserve = no 
+		is_reserve = yes 
 		name = "16 Hoheishidan"
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 5 
-			name = "16 Hoheishidan1"
+			name = "16 Hoheishidan"
 			historical_model = 1 
 			}
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 5 
-			name = "16 Hoheishidan2"
+			name = "16 Hoheishidan"
 			historical_model = 1 
 			}
 		}
 	}
+}
 
- corps = {
-	location = 5120  # Sendai
-	name = "17 Hoheishidan"
-	
-	 regiment = {
-		type = hq_brigade 
-		name = "17 Hoheishidan HQ"
-		historical_model = 0 
-		}
-	
-	 division = {
-		location = 5120  # Sendai
-		is_reserve = no 
-		name = "17 Hoheishidan"
-		
-		 regiment = {
-			type = infantry_brigade 
-			experience = 5 
-			name = "17 Hoheishidan1"
-			historical_model = 1 
-			}
-		
-		 regiment = {
-			type = infantry_brigade 
-			experience = 5 
-			name = "17 Hoheishidan2"
-			historical_model = 1 
-			}
-		}
-	}
 
  corps = {
 	location = 5056  # P'yongyang
-	name = "18 Hoheishidan"
+	name = "7. Gun"
 	
 	 regiment = {
 		type = hq_brigade 
-		name = "18 Hoheishidan HQ"
+		name = "7. Gun HQ"
 		historical_model = 0 
 		}
 	
 	 division = {
 		location = 5056  # P'yongyang
-		is_reserve = no 
+		is_reserve = yes 
+		name = "15 Hoheishidan"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "15 Hoheishidan"
+			historical_model = 1 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "15 Hoheishidan"
+			historical_model = 1 
+			}
+		}
+	
+	 division = {
+		location = 5056  # P'yongyang
+		is_reserve = yes 
 		name = "18 Hoheishidan"
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 5 
-			name = "18 Hoheishidan1"
+			name = "18 Hoheishidan"
 			historical_model = 1 
 			}
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 5 
-			name = "18 Hoheishidan2"
+			name = "18 Hoheishidan"
 			historical_model = 1 
 			}
 		}
 	}
+
 
  navy = {
 	location = 5315  # Tokyo
@@ -1129,4 +1117,3 @@
 		historical_model = 0 
 		}
 	}
-
