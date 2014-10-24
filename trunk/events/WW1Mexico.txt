@@ -626,7 +626,6 @@
 		MXR = { set_country_flag = "Ten_Tragic_Days" }
 		MXR = { set_country_flag = "Huerta_Coup" }
 		MXR = { government = right_wing_autocrat }		
-		MXR = { ideology = paternal_autocrat } 
 		}
 	}
 	
@@ -841,7 +840,7 @@
 	trigger = {
 		tag = MXC
 		MXC = { has_country_flag = "MEX_Conv" }
-		not = { USA = { has_country_flag = Veracruz_occupied }
+		not = { USA = { has_country_flag = Veracruz_occupied } }
 		}
 		 
 	mean_time_to_happen = { months = 2 }	 
@@ -849,14 +848,14 @@
 	option = {
 		name = "EVT1914_101058_OPTA"
 		MXC = { country_event = 101060 }                          # Give in to Villa and Zapata
-	}		
+		}		
 	option = {
+		ai_chance = { factor = 100 }
 		name = "EVT1914_101058_OPTB"
-		ai_chance = { factor = 100 }		
 		MXC = { country_event = 101062 }                          # Fight for our country
 		}
 	}
-}	
+
 	
 # Carranza gives into Villa and Zapata
 
@@ -891,28 +890,23 @@
 	option = {
 		name = "ACTION_NAME_FIGHT"
 			MXC = { ZZZ = { split_troops = 1.00 } }		# Constitutionalist Army breaks up and flee to Veracruz.
+			MXC = { capital = 9624 }       								# Veracruz
+			9624 = { supplies = +2000 }         						# Veracruz
 			9604 = { secede_province = MXR }   # Mexico City			
 			9623 = { secede_province = MXR }   # Cuernavaca
 			9566 = { secede_province = MXR }   # Pachuca
 			9504 = { secede_province = MXR }   # Zactecas
 			9479 = { secede_province = MXR }   # Durango
-			MXC = { capital = 9624 }       								# Veracruz
-			MXC = { officer_pool = 2000 }
-			9624 = { supplies = +2000 }         							# Veracruz
-			MXC = { supplies = +3000 }
-			MXC = { money = +100 }
-			MXC = { energy = +600 }
-			MXC = { rare_materials = +100 }
-			MXC = { metal = +100 }
-			MXC = { manpower = +50 }
-
 			MXR = { capital = 9604 }       								# Ciudad de México
-			MXR = { national_unity = +5 }
 			MXR = { dissent = 5 }
-			MXR = { officer_pool = 1200 }
+			MXR = { officer_pool = 1000 }
 			9604 = { supplies = 2000 }         							# Mexico City
 			MXR = { supplies = 3000 }
 			MXR = { manpower = -100 }
+			MXR = { money = 100 }
+			MXR = { energy = 600 }
+			MXR = { rare_materials = 100 }
+			MXR = { metal = 100 }
 			
 # Remove leaders who changed sides
 			MXR = { head_of_state = 60035 }				    			# Villa
@@ -945,10 +939,9 @@
 
 	trigger = {
 		tag = MXR
-		exists = MXR
-		exists = MXC
 		MXR = { head_of_state = 60035 }				    			# Villa
 		MXR = { war_with = MXC }
+		not = { date = 1917.12.31 }
 	}
 
 	option = {
@@ -1325,7 +1318,7 @@ country_event = {
 country_event = {
 	title = "EVT1914_101654_TITLE"
 	desc = "EVT1914_101654_DESC"
-	picture = "villa_troops"
+	picture = "american_troops_mexico"
 	id = 101654
 	 
 	fire_only_once = yes
@@ -1352,7 +1345,7 @@ country_event = {
  country_event = {
 	title = "EVT1914_101654_TITLE"
 	desc = "EVT1914_101656_DESC"
-	picture = "villa_troops"
+	picture = "Mex_raid"
 	id = 101656
 	 
 	fire_only_once = yes
@@ -1380,7 +1373,7 @@ country_event = {
  country_event = {
 	title = "EVT1914_101658_TITLE"
 	desc = "EVT1914_101654_DESC"
-	picture = "villa_troops"
+	picture = "american_troops_mexico"
 	id = 101658
 	 
 	fire_only_once = yes
@@ -1407,7 +1400,7 @@ country_event = {
  country_event = {
 	title = "EVT1914_101658_TITLE"
 	desc = "EVT1914_101656_DESC"
-	picture = "villa_troops"
+	picture = "Mex_raid"
 	id = 101660
 	 
 	fire_only_once = yes
@@ -1435,7 +1428,7 @@ country_event = {
  country_event = {
 	title = "EVT1914_101662_TITLE"
 	desc = "EVT1914_101654_DESC"
-	picture = "villa_troops"
+	picture = "american_troops_mexico"
 	id = 101662
 	 
 	fire_only_once = yes
@@ -1462,7 +1455,7 @@ country_event = {
  country_event = {
 	title = "EVT1914_101662_TITLE"
 	desc = "EVT1914_101656_DESC"
-	picture = "villa_troops"
+	picture = "Mex_raid"
 	id = 101664
 	 
 	fire_only_once = yes
@@ -1490,7 +1483,7 @@ country_event = {
  country_event = {
 	title = "EVT1914_101666_TITLE"
 	desc = "EVT1914_101654_DESC"
-	picture = "villa_troops"
+	picture = "american_troops_mexico"
 	id = 101666
 	 
 	fire_only_once = yes
@@ -1517,7 +1510,7 @@ country_event = {
  country_event = {
 	title = "EVT1914_101666_TITLE"
 	desc = "EVT1914_101656_DESC"
-	picture = "villa_troops"
+	picture = "Mex_raid"
 	id = 101668
 	 
 	fire_only_once = yes
@@ -1545,7 +1538,7 @@ country_event = {
  country_event = {
 	title = "EVT1914_101670_TITLE"
 	desc = "EVT1914_101654_DESC"
-	picture = "villa_troops"
+	picture = "american_troops_mexico"
 	id = 101670
 	 
 	fire_only_once = yes
@@ -1572,7 +1565,7 @@ country_event = {
  country_event = {
 	title = "EVT1914_101670_TITLE"
 	desc = "EVT1914_101656_DESC"
-	picture = "villa_troops"
+	picture = "Mex_raid"
 	id = 101672
 	 
 	fire_only_once = yes
@@ -1603,7 +1596,6 @@ country_event = {
 	picture = "Wanted_Villa"
 	id = 101674
 	 
-	major = yes 
 	is_triggered_only = yes
 	 
 	option = { name = "ACTION_NAME_OK" }
@@ -1617,17 +1609,17 @@ country_event = {
  country_event = {
 	title = "DH_EVENT_2038500_TITLE"
 	desc = "DH_EVENT_2038500_DESC"
-	id = 183
-	 
-	picture = "zimmermann_telegram"
+	picture = "Zimmermann_Telegram"
+	id = 101690
 	 
 	fire_only_once = yes
-	 
+
 	is_triggered_only = yes
-	 
-	trigger = { tag = MEX }
-	option = { name = "DH_EVENT_2038500_Option7" }
-	MEX = { set_country_flag = Receive_Zimmermann }
+	
+	option = { 
+		name = "DH_EVENT_2038500_Option7" 
+		MEX = { set_country_flag = Receive_Zimmermann }
+		}
 	}
 
 
@@ -1636,18 +1628,17 @@ country_event = {
  country_event = {
 	title = "DH_EVENT_2038504_TITLE"
 	desc = "DH_EVENT_2038504_DESC"
-	id = 187
-	 
-	picture = "zimmermann_telegram"
+	picture = "Zimmermann_Telegram"
+	id = 101692
 	 
 	fire_only_once = yes
-	 
+
 	is_triggered_only = yes
-	 
-	trigger = { tag = MXR }
-	option = { name = "DH_EVENT_2038504_Option7" }
-	MXR = { set_country_flag = Receive_Zimmermann }
-	}
+	
+	option = { name = "DH_EVENT_2038504_Option7" 
+			MXR = { set_country_flag = Receive_Zimmermann }
+			}
+	}		
 	
 
 #The Zimmermann telegram received by Mexican Constitutionalist government
@@ -1655,35 +1646,18 @@ country_event = {
  country_event = {
 	title = "DH_EVENT_2038504_TITLE"
 	desc = "DH_EVENT_2038504_DESC"
-	id = 186
-	 
-	picture = "zimmermann_telegram"
-	 
-	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	trigger = { tag = MXC }
-	option = { name = "DH_EVENT_2038504_Option7" }
-	MXC = { set_country_flag = Receive_Zimmermann }
-	}	
-
-
-#The Zimmermann telegram intercepted by the British    50/50 chance
-
- country_event = {
-	title = "DH_EVENT_2001535_TITLE"
-	desc = "DH_EVENT_2001535_DESC"
-	id = 41
-	 
-	picture = "zimmermann_telegram"
+	picture = "Zimmermann_Telegram"
+	id = 101694
 	 
 	fire_only_once = yes
-	 
+ 
 	is_triggered_only = yes
 	 
-	option = { name = "DH_EVENT_2001535_Option7" }
-	}
+	option = { 
+		name = "DH_EVENT_2038504_Option7" 
+		MXC = { set_country_flag = Receive_Zimmermann }
+		}
+	}		
 
 	
 # MEX Mexico joins CP
@@ -1691,18 +1665,27 @@ country_event = {
  country_event = {
 	title = "DH_EVENT_2038501_TITLE"
 	desc = "DH_EVENT_2038501_DESC"
-	id = 184
-	 
-	picture = "zimmermann_telegram"
-	 
+	picture = "Zimmermann_Telegram"
+	id = 101696
+
 	fire_only_once = yes
+	major = yes
+	mean_time_to_happen = { days = 15 }
 	 
-	is_triggered_only = yes
+	trigger = {
+		MEX = { has_country_flag = Receive_Zimmermann }
+		USA = { war_with = GER }
+		}
 	 
 	option = {
-		 name = "ACTION_NAME_OK"
-		 join_faction = axis
-		 }
+		ai_chance = { factor = 10 }
+		name = "ACTION_NAME_WAR"
+		MEX = { join_faction = axis }
+		}
+	option = {
+		ai_chance = { factor = 90 }
+		name = "ACTION_NAME_NEUTRAL"
+		}
 	}
 	
 	
@@ -1711,18 +1694,27 @@ country_event = {
  country_event = {
 	title = "DH_EVENT_2038505_TITLE"
 	desc = "DH_EVENT_2038505_DESC"
-	id = 188
-	 
-	picture = "zimmermann_telegram"
-	 
+	picture = "Zimmermann_Telegram"
+	id = 101698
+
 	fire_only_once = yes
+	major = yes
+	mean_time_to_happen = { days = 15 }
 	 
-	is_triggered_only = yes
+	trigger = {
+		MXR = { has_country_flag = Receive_Zimmermann }
+		USA = { war_with = GER }		
+		}
 	 
 	option = {
-		 name = "DH_EVENT_2038505_Option7"
-		 join_faction = axis
-		 }
+		ai_chance = { factor = 20 }
+		name = "ACTION_NAME_WAR"
+		MXR = { join_faction = axis }
+		}
+	option = {
+		ai_chance = { factor = 80 }
+		name = "ACTION_NAME_NEUTRAL"
+		}
 	}
 	
 	
@@ -1731,18 +1723,27 @@ country_event = {
  country_event = {
 	title = "DH_EVENT_2038505_TITLE"
 	desc = "DH_EVENT_2038505_DESC"
-	id = 189
-	 
-	picture = "zimmermann_telegram"
-	 
+	picture = "Zimmermann_Telegram"
+	id = 101699
+
 	fire_only_once = yes
+	major = yes
+	mean_time_to_happen = { days = 15 }
 	 
-	is_triggered_only = yes
+	trigger = {
+		MXC = { has_country_flag = Receive_Zimmermann }
+		USA = { war_with = GER }		
+		}
 	 
 	option = {
-		 name = "DH_EVENT_2038505_Option7"
-		 join_faction = axis
-		 }
+		ai_chance = { factor = 5 }
+		name = "ACTION_NAME_WAR"
+		MXC = { join_faction = axis }
+		}
+	option = {
+		ai_chance = { factor = 95 }
+		name = "ACTION_NAME_NEUTRAL"
+		}
 	}
 	
 
@@ -1755,18 +1756,12 @@ country_event = {
 # With this, Carranza also gained support of the communists and anarchists, who were formed into “Red Battalions” to confront the forces of Villa 
 # and those remaining of Zapata’s. This further turned the tide, causing Villa to surrender in 1920. 
 # He negotiated a peace deal with Carranza, ending all hostilities and granting him a small estate, thus ending the war.
-
-
-	
-	
+# CONSIDER TRIGGERS and EFFECTS if war gets this far #############################
 	
 ##################   EVENTS after Constitutionals v's Conventionalists ###################################################	
-# Later that year, Carranza held elections for the presidency. Obregón, a reformist general who pushed for the new constitution, 
-# was to oppose him for the seat. Carranza orchestrated a sham election, allowing Ignacio Bonillas to win. 
-# Carranza then fled to Guerrero where he staged a short coup to bring him into the presidency but was killed on horseback while fleeing 
-# from Mexico City to Veracruz.
-	
 
+
+#### Consider the creation of MXU as the final United Mexico when Ministers and Leaders are done ####
 #  Plan of Agua Prieta
 
  country_event = {
@@ -1780,10 +1775,9 @@ country_event = {
 	mean_time_to_happen = { days = 90 }
 	
 	trigger = {
-		war = no
-		head_of_state = 55088 				#Francisco_Lagos_Cházaro
-		not = { exists = MXR }
 		tag = MXC
+		war = no
+		not = { exists = MXR }
 		date = 1919.1.1
 		not = { date = 1923.12.30 }
 		}

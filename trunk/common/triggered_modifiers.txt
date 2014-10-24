@@ -1,5 +1,3 @@
-
-
 # Naval Supremacy in the West
 naval_supremacy_in_the_west = {
 
@@ -2085,7 +2083,7 @@ us_army = {
 	}
 	
 	global_leadership = 0.1
-	global_manpower_modifier = 0.05
+	global_manpower_modifier = 0.20
 	global_resources = 0.1
 	icon = 19
 }
@@ -2390,4 +2388,14 @@ german_pacific = {
 
 	global_rare_materials = 0.1
 	icon = 38
+}
+
+# Minor Wars - e.g. Mexican Expedition
+expedition_war = {
+	potential = { tag = USA	}
+	
+	trigger = {	USA = { has_country_flag = Hunt_Villa } }
+
+	global_manpower_modifier = -0.02
+	icon = 25
 }
