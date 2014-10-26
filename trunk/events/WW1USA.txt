@@ -486,15 +486,15 @@ country_event = {
 	major = yes
 	
 	trigger = {
+		tag = USA
 		USA = { has_country_flag = Hunt_Villa } 
 		}
 	 
 	option = {
-		tag = USA
 		name = "ACTION_NAME_GREAT"
 		MXR = { remove_minister = 60035 }
 		MXR = { kill_leader = 60005 }
-		MXR = national_unity = -20
+		MXR = { national_unity = -20 }
 		MXR = { dissent = 10 }
 		USA = { clr_country_flag = Hunt_Villa }
 		}
@@ -513,12 +513,12 @@ country_event = {
 	major = yes
 	
 	trigger = { 
+		tag = USA
 		USA = { has_country_flag = Hunt_Villa }
 		USA = { war_with = GER } 
 		}
 	
 	option = {
-		tag = USA
 		name = "ACTION_NAME_OK"
 		USA = { dissent = 2 }
 		USA = { clr_country_flag = Hunt_Villa } 
