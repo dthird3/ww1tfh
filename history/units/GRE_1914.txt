@@ -1,13 +1,13 @@
- corps = {
+ army = {
 	location = 5076  # Athina
-	name = "Vasilikos Ellinikos Stratos"
+	name = "IV Stratos"
 	
 	 regiment = {
 		type = hq_brigade 
 		name = "Vasilikos Ellinikos Stratos HQ"
 		historical_model = 0 
 		}
-	}
+		
 
  corps = {
 	location = 5076  # Athina
@@ -21,67 +21,60 @@
 	
 	 division = {
 		location = 5076  # Athina
-		is_reserve = no 
-		name = "I Merarchia"
+		is_reserve = yes 
+		name = "I Merarchia Pezikou"
 		
 		 regiment = {
-			type = bergsjaeger_brigade 
+			type = infantry_brigade 
 			experience = 20 
-			name = "I Merarchia1"
+			name = "4 & 5 Syntagma Pezikou"
 			historical_model = 2 
 			}
 		
 		 regiment = {
-			type = bergsjaeger_brigade 
+			type = infantry_brigade
 			experience = 20 
-			name = "I Merarchia2"
+			name = "1/38 Syntagma Evzones"
 			historical_model = 2 
 			}
 		}
 	
 	 division = {
 		location = 5076  # Athina
-		is_reserve = no 
-		name = "II Merarchia"
+		is_reserve = yes 
+		name = "II Merarchia Pezikou"
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 20 
-			name = "II Merarchia1"
+			name = "1 & 7 Syntagma Pezikou"
 			historical_model = 2 
 			}
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 20 
-			name = "II Merarchia2"
+			name = "34 Syntagma Pezikou"
 			historical_model = 2 
-			}
-		
-		 regiment = {
-			type = artillery_brigade 
-			experience = 20 
-			name = "II Merarchia4"
-			historical_model = 0 
 			}
 		}
 	
 	 division = {
 		location = 5076  # Athina
-		is_reserve = no 
-		name = "XIII Merarchia"
+		is_reserve = yes 
+		name = "XIII Merarchia Pezikou"
 		
 		 regiment = {
-			type = bergsjaeger_brigade 
+			type = infantry_brigade 
 			experience = 20 
-			name = "XIII Merarchia1"
+			name = "2 & 3 Syntagma Pezikou"
 			historical_model = 2 
 			}
 		
 		 regiment = {
-			type = bergsjaeger_brigade 
+			type = infantry_brigade 
 			experience = 20 
-			name = "XIII Merarchia2"
+			name = "5/42 Syntagma Evzones"
 			historical_model = 2 
 			}
 		}
@@ -99,60 +92,60 @@
 	
 	 division = {
 		location = 5106  # Patra
-		is_reserve = no 
-		name = "III Merarchia"
+		is_reserve = yes 
+		name = "III Merarchia Pezikou"
 		
 		 regiment = {
-			type = bergsjaeger_brigade 
+			type = infantry_brigade 
 			experience = 20 
-			name = "III Merarchia1"
+			name = "6 & 12 Syntagma Pezikou"
 			historical_model = 2 
 			}
 		
 		 regiment = {
-			type = bergsjaeger_brigade 
+			type = infantry_brigade 
 			experience = 20 
-			name = "III Merarchia2"
+			name = "2/39 Syntagma Evzones"
 			historical_model = 2 
 			}
 		}
 	
 	 division = {
 		location = 5106  # Patra
-		is_reserve = no 
-		name = "IV Merarchia"
+		is_reserve = yes 
+		name = "IV Merarchia Pezikou"
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 20 
-			name = "IV Merarchia1"
+			name = "8 & 11 Syntagma Pezikou"
 			historical_model = 2 
 			}
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 20 
-			name = "IV Merarchia2"
+			name = "35 Syntagma Pezikou"
 			historical_model = 2 
 			}
 		}
 	
 	 division = {
 		location = 5106  # Patra
-		is_reserve = no 
-		name = "XIV Merarchia"
+		is_reserve = yes 
+		name = "XIV Merarchia Pezikou"
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 20 
-			name = "XIV Merarchia1"
+			name = "6 & 36 Syntagma Pezikou"
 			historical_model = 2 
 			}
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 20 
-			name = "XIV Merarchia2"
+			name = "1/14 Syntagma Cretans"
 			historical_model = 2 
 			}
 		}
@@ -170,70 +163,83 @@
 	
 	 division = {
 		location = 4720  # Salonica
-		is_reserve = no 
-		name = "X Merarchia"
+		is_reserve = yes 
+		name = "X Merarchia Pezikou"
 		
 		 regiment = {
 			type = bergsjaeger_brigade 
 			experience = 20 
-			name = "X Merarchia1"
+			name = "29 & 30 Syntagma Pezikou"
 			historical_model = 2 
 			}
 		
 		 regiment = {
 			type = bergsjaeger_brigade 
 			experience = 20 
-			name = "X Merarchia2"
+			name = "4/41 Syntagma Evzones"
 			historical_model = 2 
 			}
 		}
 	
 	 division = {
 		location = 4720  # Salonica
-		is_reserve = no 
-		name = "XI Merarchia"
+		is_reserve = yes 
+		name = "XI Merarchia Pezikou"
 		
 		 regiment = {
-			type = infantry_brigade 
+			type = bergsjaeger_brigade 
 			experience = 20 
-			name = "XI Merarchia1"
+			name = "13 & 27 Syntagma Pezikou"
 			historical_model = 2 
 			}
 		
 		 regiment = {
-			type = infantry_brigade 
+			type = bergsjaeger_brigade 
 			experience = 20 
-			name = "XI Merarchia2"
+			name = "28 Syntagma Pezikou"
+			historical_model = 2 
+			}
+		}
+	
+	 division = {
+		location = 4720  # Salonica
+		is_reserve = yes 
+		name = "XII Merarchia Pezikou"
+		
+		regiment = {
+			type = bergsjaeger_brigade 
+			experience = 20 
+			name = "31 & 32 Syntagma Pezikou"
 			historical_model = 2 
 			}
 		
-		 regiment = {
+		regiment = {
+			type = bergsjaeger_brigade 
+			experience = 20 
+			name = "33 Syntagma Pezikou"
+			historical_model = 2 
+			}
+		
+		regiment = {
 			type = artillery_brigade 
-			experience = 20 
-			name = "XI Merarchia4"
-			historical_model = 0 
+			experience = 10 
+			name = "Thessaloniki Frourio"
+			historical_model = 1 
 			}
 		}
+	}
 	
-	 division = {
+	division = {
 		location = 4720  # Salonica
-		is_reserve = no 
-		name = "XII Merarchia"
+		is_reserve = yes 
+		name = "Merarchia Ippikou"
 		
-		 regiment = {
-			type = infantry_brigade 
-			experience = 20 
-			name = "XII Merarchia1"
+		regiment = {
+			type = cavalry_brigade 
+			experience = 10 
+			name = "1 & 3 Ippikou"
 			historical_model = 2 
 			}
-		
-		 regiment = {
-			type = infantry_brigade 
-			experience = 20 
-			name = "XII Merarchia2"
-			historical_model = 2 
-			}
-		}
 	}
 
  corps = {
@@ -248,67 +254,60 @@
 	
 	 division = {
 		location = 4613  # Kavala
-		is_reserve = no 
-		name = "V Merarchia"
+		is_reserve = yes 
+		name = "V Merarchia Pezikou"
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 20 
-			name = "V Merarchia1"
+			name = "22 & 23 Syntagma Pezikou"
 			historical_model = 2 
 			}
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 20 
-			name = "V Merarchia2"
-			historical_model = 2 
-			}
-		
-		 regiment = {
-			type = artillery_brigade 
-			experience = 20 
-			name = "V Merarchia4"
-			historical_model = 0 
-			}
-		}
-	
-	 division = {
-		location = 4613  # Kavala
-		is_reserve = no 
-		name = "VI Merarchia"
-		
-		 regiment = {
-			type = infantry_brigade 
-			experience = 20 
-			name = "VI Merarchia1"
-			historical_model = 2 
-			}
-		
-		 regiment = {
-			type = infantry_brigade 
-			experience = 20 
-			name = "VI Merarchia2"
+			name = "3/37 Syntagma Cretans"
 			historical_model = 2 
 			}
 		}
 	
 	 division = {
 		location = 4613  # Kavala
-		is_reserve = no 
-		name = "VII Merarchia"
+		is_reserve = yes 
+		name = "VI Merarchia Pezikou"
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 20 
-			name = "VII Merarchia1"
+			name = "16 & 17 Syntagma Pezikou"
 			historical_model = 2 
 			}
 		
 		 regiment = {
 			type = infantry_brigade 
 			experience = 20 
-			name = "VII Merarchia2"
+			name = "18 Syntagma Pezikou"
+			historical_model = 2 
+			}
+		}
+	
+	 division = {
+		location = 4613  # Kavala
+		is_reserve = yes 
+		name = "VII Merarchia Pezikou"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 20 
+			name = "19 & 20 Syntagma Pezikou"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 20 
+			name = "2/21 Syntagma Cretans"
 			historical_model = 2 
 			}
 		}
@@ -326,99 +325,46 @@
 	
 	 division = {
 		location = 4819  # Ioannina
-		is_reserve = no 
-		name = "VIII Merarchia"
-		
-		 regiment = {
-			type = infantry_brigade 
-			experience = 20 
-			name = "VIII Merarchia1"
-			historical_model = 2 
-			}
-		
-		 regiment = {
-			type = infantry_brigade 
-			experience = 20 
-			name = "VIII Merarchia2"
-			historical_model = 2 
-			}
-		
-		 regiment = {
-			type = artillery_brigade 
-			experience = 20 
-			name = "VIII Merarchia4"
-			historical_model = 0 
-			}
-		}
-	
-	 division = {
-		location = 4819  # Ioannina
-		is_reserve = no 
-		name = "IX Merarchia"
+		is_reserve = yes 
+		name = "VIII Merarchia Pezikou"
 		
 		 regiment = {
 			type = bergsjaeger_brigade 
 			experience = 20 
-			name = "IX Merarchia1"
+			name = "10 & 15 Syntagma Pezikou"
 			historical_model = 2 
 			}
 		
 		 regiment = {
 			type = bergsjaeger_brigade 
 			experience = 20 
-			name = "IX Merarchia2"
+			name = "24 Syntagma Pezikou"
 			historical_model = 2 
 			}
-		}
-	}
-
- corps = {
-	location = 4720  # Salonica
-	name = "Thessaloniki Frourio"
-	
-	 regiment = {
-		type = hq_brigade 
-		name = "Thessaloniki Frourio HQ"
-		historical_model = 0 
-		}
-	
-	 division = {
-		location = 4720  # Salonica
-		is_reserve = no 
-		name = "Thessaloniki Frourio"
-		
-		 regiment = {
-			type = garrison_brigade 
-			experience = 10 
-			name = "Thessaloniki Frourio1"
-			historical_model = 1 
-			}
-		}
-	}
-
- corps = {
-	location = 4819  # Ioannina
-	name = "Ioannina Frourio"
-	
-	 regiment = {
-		type = hq_brigade 
-		name = "Ioannina Frourio HQ"
-		historical_model = 0 
 		}
 	
 	 division = {
 		location = 4819  # Ioannina
-		is_reserve = no 
-		name = "Ioannina Frourio"
+		is_reserve = yes 
+		name = "IX Merarchia Pezikou"
 		
 		 regiment = {
-			type = garrison_brigade 
-			experience = 10 
-			name = "Ioannina Frourio1"
-			historical_model = 1 
+			type = bergsjaeger_brigade 
+			experience = 20 
+			name = "25 & 26 Syntagma Pezikou"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = bergsjaeger_brigade 
+			experience = 20 
+			name = "3/40 Syntagma Evzones"
+			historical_model = 2 
 			}
 		}
 	}
+}
+
 
  navy = {
 	location = 5076  # Athina
