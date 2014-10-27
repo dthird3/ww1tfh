@@ -18,7 +18,8 @@
 # Order that CBs are executed in a peace treaty
 peace_order = { 
 	civil_war
-	mexico_revolution
+	mexico_revolution_madero
+	mexico_revolution_diaz
 	civil_war_1
 	civil_war_2
 	second_balkans
@@ -67,7 +68,7 @@ civil_war = {
 	war_name = CIVIL_WAR_NAME
 }
 
-mexico_revolution = {
+mexico_revolution_madero = {
 	sprite_index = 4
 	is_triggered_only = yes
 	
@@ -82,10 +83,34 @@ mexico_revolution = {
 		government_in_exile = no
 	}
 
-	is_civil_war = yes #this is a civil war
+	is_civil_war = yes 
 
 	on_completion = { 
-		MXR = { country_event = 190011 }
+		MXR = { country_event = 101022 }
+	}
+	
+	war_name = WAR_CONQUEST_NAME
+}
+####  Mexican cb_types need review and may not be needed
+mexico_revolution_diaz = {
+	sprite_index = 4
+	is_triggered_only = yes
+	
+	is_valid = {
+		THIS = { 
+			tag = MEX
+			government_in_exile = no
+		}
+		tag = MXR
+		MEX = { exists = yes }
+		MXR = { exists = yes }
+		government_in_exile = no
+	}
+
+	is_civil_war = yes 
+
+	on_completion = { 
+		MEX = { country_event = 101022 }
 	}
 	
 	war_name = WAR_CONQUEST_NAME
