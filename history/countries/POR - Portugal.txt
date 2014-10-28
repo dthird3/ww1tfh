@@ -332,18 +332,9 @@ head_of_state = 70062 #Teófilo_Braga
 head_of_government = 70057 #Bernadino_Machado
 chief_of_staff = 70049 #João_José_Sinel_de_Cordes
 chief_of_army = 70049 #João_José_Sinel_de_Cordes
-
-
 }
 
-1911.8.24 = {
-head_of_state = 70074 #Manuel_d'Arriaga
-
-
-}
-
-
-
+1911.8.24 = { head_of_state = 70074 } #Manuel_d'Arriaga
 
 
 
@@ -403,9 +394,9 @@ militia_support = 1
 militia_guns = 1
 militia_at = 0
 infantry_activation = 1
-smallarms_technology = 0
-infantry_support = 0
-infantry_guns = 0
+smallarms_technology = 2
+infantry_support = 2
+infantry_guns = 2
 infantry_at = 0
 engineer_brigade_activation = 0
 engineer_bridging_equipment = 0
@@ -438,10 +429,10 @@ aa_brigade = 0
 aa_barrell_ammo = 0
 aa_carriage_sights = 0
 art_brigade = 1
-art_barrell_ammo = 1
-art_carriage_sights = 1
-art_barrell = 1
-art_howitzer = 1
+art_barrell_ammo = 3
+art_carriage_sights = 3
+art_barrell = 3
+art_howitzer = 3
 heavycruiser_technology = 0
 heavycruiser_armament =0
 heavycruiser_antiaircraft = 0
@@ -546,25 +537,25 @@ supply_organisation = 0
 civil_defence = 0
 combat_engineering = 0
 rolling_barrage = 0
-mobile_warfare = 0
+mobile_warfare = 1
 spearhead_doctrine = 0
 elastic_defence = 0
 operational_level_command_structure = 0
 schwerpunkt = 0
 blitzkrieg = 0
-tactical_command_structure = 0
+tactical_command_structure = 1
 superior_firepower = 0
-delay_doctrine = 0
+delay_doctrine = 3
 integrated_support_doctrine = 0
-mechanized_offensive = 0
-infantry_warfare = 1
+mechanized_offensive = 1
+infantry_warfare = 3
 trench_warfare = 0
 central_planning = 0
 grand_battle_plan = 0
-mass_assault = 1
+mass_assault = 3
 special_forces = 0
-assault_concentration = 0
-operational_level_organisation = 0
+assault_concentration = 3
+operational_level_organisation = 2
 large_front = 0
 human_wave = 0
 peoples_army = 0
@@ -621,5 +612,5 @@ aerial_photography = 0
 scout_pilot_training = 0
 strategic_air_command = 0
 }
-1914.1.1 = { oob = "POR_1914.txt" }
 
+1914.1.1 = { oob = "POR_1914.txt" }
