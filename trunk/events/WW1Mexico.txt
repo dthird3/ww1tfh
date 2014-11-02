@@ -381,7 +381,36 @@
 	
 ####   Allow for Rebel defeat - Diaz takes Govt, later retires and hands over to Vice President - later new revolution against them 	
 ####   On Rebel defeat set "diaz_crisis_over" flag for USA, Diaz regime to recover some NU etc
+	
+#   Diaz Government Victory
 
+# country_event = {
+#	title = "EVT1910_101025_TITLE"
+#	desc = "EVT1910_101025_DESC"
+#	id = 101025
+	 
+#	picture = "madero_election"
+	
+##	major = yes
+	
+#	trigger = {
+#		tag = MEX
+#		MEX = {	war_with = MXR }
+#		or = {
+#			 MEX = { not = { controls = 9604 } }                   # Ciudad Mexico
+#			 MEX = { MEX = { not = { controls = 9147 } }           # Ciudad Juarez
+#					 MXR = { surrender_progress = 55 } }  
+#			}
+#	}
+	
+#	option = {										
+#		name = "EVT1910_101025_OPTA"
+#		any_country = { relation = { who = MXR value = 75 } }
+#		USA = { set_country_flag = "diaz_crisis_over" }
+#		MEX = {	country_event = 101024 }					# Diaz resigns
+#		}
+#	}	
+	
 
 # November 1911 Zapata rebels pop ups. 
 
@@ -502,31 +531,6 @@
 		9624 = { random_neighbor_province = { create_revolt = 4 } }
 		MXR = { dissent = 3 }
 		MXR = { set_country_flag = "diaz_rebels" }
-		}
-	}
-	
-
-# US Decision to support coup - increase chances of success 
-
- country_event = {
-	title = "EVT1910_101036_TITLE"
-	desc = "EVT1910_101036_DESC"
-	id = 101036
-	 
-	picture = "henry_wilson"
-	
-	fire_only_once = yes      
-	is_triggered_only = yes
-	
-	option = {	
-		ai_chance = { factor = 100 }
-		name = "EVT1910_101036_OPTA"
-		USA = { set_country_flag = "support_madero_coup" }
-		}
-	option = {	
-		ai_chance = { factor = 0 }	
-		USA = { set_country_flag = "no_madero_coup" }
-		name = "EVT1910_101036_OPTB"			
 		}
 	}
 
