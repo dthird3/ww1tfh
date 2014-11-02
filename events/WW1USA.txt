@@ -94,6 +94,31 @@
 		 set_country_flag = panamerican
 		 }
 	}
+		
+
+# US Decision to support coup - increase chances of success 
+
+ country_event = {
+	title = "EVT1910_101036_TITLE"
+	desc = "EVT1910_101036_DESC"
+	id = 101036
+	 
+	picture = "henry_wilson"
+	
+	fire_only_once = yes      
+	is_triggered_only = yes
+	
+	option = {	
+		ai_chance = { factor = 100 }
+		name = "EVT1910_101036_OPTA"
+		USA = { set_country_flag = "support_madero_coup" }
+		}
+	option = {	
+		ai_chance = { factor = 0 }	
+		USA = { set_country_flag = "no_madero_coup" }
+		name = "EVT1910_101036_OPTB"			
+		}
+	}
 	
 	
 #  Occupation of Nicaragua  date = 1912.6.1
@@ -113,7 +138,7 @@
 		name = "opta_USAE1"
 		ai_chance = { factor = 10 }
 		USA = { create_vassal = NIC }
-		dissent = 10
+		dissent = 5
 		neutrality = -1
 		money = 100
 		}
@@ -128,7 +153,7 @@
 		name = "Occupation will suffice"
 		ai_chance = { factor = 80 }
 		dissent = -10
-		manpower = 10
+		manpower = 15
 		neutrality = -1
 		money = 250
 		}
