@@ -140,12 +140,8 @@
 			MXR = { rare_materials = 100 }
 			MXR = { metal = 100 }
 			MEX = { set_country_flag = "madero_revolt" }
-			MXR = { war = { target = MEX 
-						attacker_goal = { casus_belli = mexico_madero_revolution }
-						defender_goal = { casus_belli = mexico_madero_revolution }
-				} 		
-			}
-		}			
+			MXR = { war = { target = MEX } }
+		}
 	}
 
 
@@ -708,11 +704,7 @@
 			MXC = { energy = +600 }
 			MXC = { rare_materials = +100 }
 			MXC = { metal = +100 }
-			MXC = { war = { target = MXR 
-						attacker_goal = { casus_belli = mexico_constitutional_revolution }
-						defender_goal = { casus_belli = mexico_constitutional_revolution }
-					}
-			}
+			MXC = { war = { target = MXR } }
 			USA = { relation = { who = MXR value = -50 } }
 
 			9660 = { add_province_modifier = { name = "mex_rev" duration = 730 } }
@@ -931,11 +923,7 @@
 			MXC = { load_oob = MXC_Convention.txt }
 			MXR = { load_oob = MXR_Convention.txt }	
 			remove_brigade = "Ejercito de Carranza HQ"			
-			MXR = { war = { target = MXC 
-						attacker_goal = { casus_belli = mexico_conventionalist_revolution }
-						defender_goal = { casus_belli = mexico_conventionalist_revolution }
-					}
-			}
+			MXR = { war = { target = MXC } }
 		}			
 	}
 
