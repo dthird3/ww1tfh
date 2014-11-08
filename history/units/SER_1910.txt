@@ -1,476 +1,440 @@
- theatre = {
+theatre = {
 	location = 4555  # Skopje
-	name = "Skopje HQ"
+	leader = 82003
+	name = "Skopje GHQ"
 	
-	 regiment = {
+	regiment = {
 		type = hq_brigade 
 		experience = 2 
-		name = "1st HQ Brigade"
-		historical_model = 1 
-		}
-	
-	 corps = {
-		location = 4050  # Valjevo
-		name = "Uzicka armija"
-		
-		 regiment = {
-			type = hq_brigade 
+		name = "Skopje GHQ"
+		historical_model = 2 
+	}
+			
+	division = {
+		location = 4555  # Skopje
+		name = "Konjicka divizija I poziva"
+			
+		regiment = {
+			type = cavalry_brigade 
 			experience = 10 
-			name = "Uzicka armija HQ"
-			historical_model = 3 
+			is_reserve = yes
+			name = "1. konjica brigade I poziva"
+			historical_model = 1 
 			}
-		
-		 division = {
-			location = 4050  # Valjevo
-			name = "Sumadijska divizija II poziva"
 			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "Sumadijska divizija II brigada 1"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "Sumadijska divizija II brigada 2"
-				historical_model = 2 
-				}
+		regiment = {
+			type = cavalry_brigade 
+			experience = 10 
+			is_reserve = yes
+			name = "1. konjica brigade I poziva"
+			historical_model = 1 
 			}
-		
-		 division = {
-			location = 4050  # Valjevo
-			name = "Uzicka brigada"
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "Uzicka brigada"
-				historical_model = 2 
-				}
-			}
-		
-		 division = {
-			location = 4050  # Valjevo
-			name = "Lima sekcija"
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "Lima sekcija brigada 1"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "Lima sekcija brigada 2"
-				historical_model = 2 
-				}
-			}
-		}
+	}
 	
-	 corps = {
+	division = {
+		location = 4555  # Skopje
+		name = "Skopje garnizona"
+			
+		regiment = {
+			type = garrison_brigade 
+			experience = 10 
+			is_reserve = yes
+			name = "Skopje garnizona"
+			historical_model = 1 
+			}
+			
+		regiment = {
+			type = garrison_brigade  
+			experience = 10 
+			is_reserve = yes
+			name = "Skopje garnizona"
+			historical_model = 1 
+			}
+	}
+	
+	division = {
 		location = 3912  # Beograd
+		name = "Beograd garnizona"
+			
+		regiment = {
+			type = garrison_brigade 
+			experience = 10 
+			is_reserve = yes
+			name = "Beograd garnizona"
+			historical_model = 1 
+			}
+			
+		regiment = {
+			type = garrison_brigade  
+			experience = 10 
+			is_reserve = yes
+			name = "Beograd garnizona"
+			historical_model = 1 
+			}
+	}
+	
+	army = {
+		location = 3912  # Beograd
+		leader = 82004
 		name = "1. Armija"
 		
-		 regiment = {
+		regiment = {
 			type = hq_brigade 
-			experience = 10 
+			experience = 20 
 			name = "1. Armija HQ"
 			historical_model = 3 
 			}
-		
-		 division = {
+			
+		division = {
 			location = 3912  # Beograd
-			name = "Timocka divizija I poziva"
+			leader = 82021
+			name = "1. Konjicka divizija"
 			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "Timocka divizija I brigada 1"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "Timocka divizija I brigada 2"
-				historical_model = 2 
-				}
-			}
-		
-		 division = {
-			location = 3912  # Beograd
-			name = "Timocka divizija II poziva"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 10 
-				name = "Timocka divizija II brigada 1"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 10 
-				name = "Timocka divizija II brigada 2"
-				historical_model = 2 
-				}
-			}
-		
-		 division = {
-			location = 3912  # Beograd
-			name = "Moravska divizija II poziva"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 10 
-				name = "Moravska divizija II brigada 1"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 10 
-				name = "Moravska divizija II brigada 2"
-				historical_model = 2 
-				}
-			}
-		
-		 division = {
-			location = 3912  # Beograd
-			name = "Konjicka divizija"
-			
-			 regiment = {
+			regiment = {
 				type = cavalry_brigade 
-				experience = 10 
-				name = "Konjicka brigada 1"
+				experience = 20 
+				name = "1. konjica brigade"
 				historical_model = 2 
 				}
 			
-			 regiment = {
+			regiment = {
 				type = cavalry_brigade 
-				experience = 10 
-				name = "Konjicka brigada 2"
+				experience = 20 
+				name = "2. konjica brigade"
 				historical_model = 2 
 				}
-			}
-		
-		 division = {
-			location = 3912  # Beograd
-			name = "Branicevska sekcija"
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 5 
-				name = "Branicevska brigada 1"
-				historical_model = 1 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 5 
-				name = "Branicevska brigada 2"
-				historical_model = 1 
-				}
-			}
-		}
+			}	
 	
-	 corps = {
-		location = 3982  # Sabac
+		division = {
+			location = 3912  # Beograd
+			leader = 82036
+			name = "5. divizija Timocka"
+			
+			regiment = {
+				type = infantry_brigade 
+				experience = 20 
+				name = "9. pjesadijske brigade"
+				historical_model = 2 
+				}
+			
+			regiment = {
+				type = infantry_brigade 
+				experience = 20 
+				name = "10. pjesadijske brigade"
+				historical_model = 2 
+				}
+			}
+				
+		division = {
+			location = 3912  # Beograd
+			name = "5. divizija Timocka I poziva"
+			
+			regiment = {
+				type = infantry_brigade 
+				experience = 15 
+				is_reserve = yes
+				name = "29. pjesadijske brigade"
+				historical_model = 1 
+				}
+			
+			regiment = {
+				type = infantry_brigade 
+				experience = 15 
+				is_reserve = yes
+				name = "30. pjesadijske brigade"
+				historical_model = 1 
+				}
+			}
+		
+		division = {
+			location = 3912  # Beograd
+			name = "1. divizija Moravska I poziva"
+			
+			regiment = {
+				type = infantry_brigade 
+				experience = 15 
+				is_reserve = yes
+				name = "21. pjesadijske brigade"
+				historical_model = 1 
+				}
+			
+			regiment = {
+				type = infantry_brigade 
+				experience = 15 
+				is_reserve = yes
+				name = "22. pjesadijske brigade"
+				historical_model = 1 
+				}
+			}
+				
+		division = {
+			location = 3912  # Beograd
+			name = "3. divizija Dunavska I poziva"
+			
+			regiment = {
+				type = infantry_brigade 
+				experience = 15 
+				is_reserve = yes
+				name = "25. pjesadijske brigade"
+				historical_model = 1 
+				}
+			
+			regiment = {
+				type = infantry_brigade 
+				experience = 15
+				is_reserve = yes				
+				name = "26. pjesadijske brigade"
+				historical_model = 1 
+				}
+			}
+		
+		division = {
+			location = 3912  # Beograd
+			name = "3. divizija Dunavska I poziva"
+			
+			regiment = {
+				type = militia_brigade 
+				experience = 10 
+				is_reserve = yes
+				name = "5. brigade 3. poziva"
+				historical_model = 1 
+				}
+			}
+	}
+	
+	army = {
+		location = 3984  # Pozarevac
+		leader = 82002
 		name = "2. Armija"
 		
-		 regiment = {
+		regiment = {
 			type = hq_brigade 
-			experience = 10 
+			experience = 20 
 			name = "2. Armija HQ"
-			historical_model = 3 
+			historical_model = 2 
 			}
 		
-		 division = {
-			location = 3982  # Sabac
-			name = "Sumadijska divizija I poziva"
+		division = {
+			location = 3984  # Pozarevac
+			leader = 82028
+			name = "1. divizija Moravska"
 			
-			 regiment = {
+			regiment = {
 				type = infantry_brigade 
-				experience = 10 
-				name = "Sumadijska brigada 1"
+				experience = 20 
+				name = "1. pjesadijske brigade"
 				historical_model = 2 
 				}
 			
-			 regiment = {
+			regiment = {
 				type = infantry_brigade 
-				experience = 10 
-				name = "Sumadijska brigada 2"
+				experience = 20 
+				name = "2. pjesadijske brigade"
 				historical_model = 2 
 				}
+				
+			 regiment = {
+				type = artillery_brigade 
+				experience = 15 
+				name = "Vojska artiljerije"
+				historical_model = 1 
+				}	
 			}
-		
-		 division = {
-			location = 3982  # Sabac
-			name = "Dunavska divizija I poziva"
 			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "Dunavska brigada 1"
-				historical_model = 2 
-				}
+		division = {
+			location = 3984  # Pozarevac
+			leader = 82019
+			name = "Kombinovana divizija"
 			
-			 regiment = {
+			regiment = {
 				type = infantry_brigade 
-				experience = 10 
-				name = "Dunavska brigada 2"
-				historical_model = 2 
-				}
-			}
-		
-		 division = {
-			location = 3982  # Sabac
-			name = "Kombinovana divizija I poziva"
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "Kombinovana brigada 1"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "Kombinovana brigada 2"
-				historical_model = 2 
-				}
-			}
-		
-		 division = {
-			location = 3982  # Sabac
-			name = "Moravska divizija I poziva"
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "Moravska brigada 1"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "Moravska brigada 2"
-				historical_model = 2 
-				}
-			}
-		}
-	
-	 corps = {
-		location = 4178  # Krusevac
-		name = "3. Armija"
-		
-		 regiment = {
-			type = hq_brigade 
-			experience = 10 
-			name = "3. Armija HQ"
-			historical_model = 3 
-			}
-		
-		 division = {
-			location = 4178  # Krusevac
-			name = "Drinska divizija I poziva"
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "Drinska brigada 1"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "Drinska brigada 2"
-				historical_model = 2 
-				}
-			}
-		
-		 division = {
-			location = 4178  # Krusevac
-			name = "Drinska divizija II poziva"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "Drinska brigada 1"
+				experience = 20 
+				is_reserve = yes
+				name = "1. Kombinovana brigade"
 				historical_model = 1 
 				}
 			
-			 regiment = {
+			regiment = {
 				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "Drinska brigada 2"
+				experience = 20 
+				is_reserve = yes
+				name = "2. Kombinovana brigade"
 				historical_model = 1 
 				}
 			}
-		
-		 division = {
-			location = 4178  # Krusevac
-			name = "Obrenovacska sekcija"
 			
-			 regiment = {
+		division = {
+			location = 3984  # Pozarevac
+			name = "4. divizija Sumadijska"
+			
+			regiment = {
 				type = infantry_brigade 
-				experience = 10 
-				name = "Obrenovacska brigada 1"
+				experience = 20 
+				name = "7. pjesadijske brigade"
 				historical_model = 2 
 				}
 			
-			 regiment = {
+			regiment = {
 				type = infantry_brigade 
-				experience = 10 
-				name = "Obrenovacska brigada 2"
-				historical_model = 2 
-				}
-			}
-		
-		 division = {
-			location = 4178  # Krusevac
-			name = "Sabacka sekcija"
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "Sabacka brigada 1"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "Sabacka brigada 2"
+				experience = 20 
+				name = "8. pjesadijske brigade"
 				historical_model = 2 
 				}
 			}
 		
-		 division = {
-			location = 4178  # Krusevac
-			name = "Loznicka sekcija"
+		division = {
+			location = 3984  # Pozarevac
+			leader = 82030
+			name = "3. divizija Dunavska"
 			
-			 regiment = {
+			regiment = {
 				type = infantry_brigade 
-				experience = 10 
-				name = "Loznicka brigada 1"
+				experience = 20 
+				name = "5. pjesadijske brigade"
 				historical_model = 2 
 				}
 			
-			 regiment = {
+			regiment = {
 				type = infantry_brigade 
-				experience = 10 
-				name = "Loznicka brigada 2"
+				experience = 20 
+				name = "6. pjesadijske brigade"
 				historical_model = 2 
 				}
 			}
-		
-		 division = {
-			location = 4178  # Krusevac
-			name = "Ljubovijska sekcija"
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "Ljubovijska brigada 1"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "Ljubovijska brigada 2"
-				historical_model = 2 
-				}
-			}
-		}
-	
-	 corps = {
-		location = 4244  # Pirot
-		name = "Vardarska armija"
-		
-		 regiment = {
-			type = hq_brigade 
-			experience = 10 
-			name = "Vardarska armija HQ"
-			historical_model = 3 
-			}
-		
-		 division = {
-			location = 4244  # Pirot
-			name = "Vardarska sekcija"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "Vardarska brigada 1"
-				historical_model = 1 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "Vardarska brigada 2"
-				historical_model = 1 
-				}
-			}
-		
-		 division = {
-			location = 4244  # Pirot
-			name = "Kosovska sekcija"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "Kosovska brigada 1"
-				historical_model = 1 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "Kosovska brigada 2"
-				historical_model = 1 
-				}
-			}
-		
-		 division = {
-			location = 4244  # Pirot
-			name = "Ibarska sekcija"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "Ibarska brigada 1"
-				historical_model = 1 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 5 
-				name = "Ibarska brigada 2"
-				historical_model = 1 
-				}
-			}
-		}
 	}
 
+	
+	army = {
+		location = 4050  # Valjevo
+		leader = 82005
+		name = "3. Armija"
+		
+		regiment = {
+			type = hq_brigade 
+			experience = 20 									
+			name = "3. Armija HQ"								
+			historical_model = 2 
+			}
+
+		division = {
+			location = 4050  # Valjevo
+			name = "2. divizija Drinska"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 20 
+				name = "3. pjesadijske brigade"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 20 
+				name = "4. pjesadijske brigade"
+				historical_model = 2 
+				}
+			}	
+			
+		division = {
+			location = 4050  # Valjevo
+			name = "2. divizija Drinska I poziva"
+			
+			regiment = {
+				type = infantry_brigade 
+				experience = 15
+				is_reserve = yes				
+				name = "23. pjesadijske brigade"
+				historical_model = 1 
+				}
+			
+			regiment = {
+				type = infantry_brigade 
+				experience = 15 
+				is_reserve = yes
+				name = "24. pjesadijske brigade"
+				historical_model = 1 
+				}
+			}			
+	
+		division = {
+			location = 4050  # Valjevo
+			name = "Obrenovacska brigade"
+			
+			regiment = {
+				type = militia_brigade 
+				experience = 10 
+				is_reserve = yes
+				name = "4. brigade 3. poziva"
+				historical_model = 1 
+				}
+			}
+	}
+			
+	corps = {
+		location = 4555  # Skopje
+		leader = 82006
+		name = "Uzicka armija"
+		
+		regiment = {
+			type = hq_brigade 
+			experience = 20 
+			name = "Uzicka armija HQ"
+			historical_model = 2 
+			}
+			
+		division = {
+			location = 4555  # Skopje
+			leader = 82011
+			name = "4. divizija Sumadijska I poziva"
+			
+			regiment = {
+				type = infantry_brigade 
+				experience = 15 
+				is_reserve = yes
+				name = "27. pjesadijske brigade"
+				historical_model = 1 
+				}
+			
+			regiment = {
+				type = infantry_brigade 
+				experience = 15 
+				is_reserve = yes
+				name = "28. pjesadijske brigade"
+				historical_model = 1 
+				}
+			}
+	
+		division = {
+			location = 4555  # Skopje
+			name = "Uzicka brigade"
+			
+			regiment = {
+				type = infantry_brigade 
+				experience = 12 
+				name = "Uzicka brigade"
+				historical_model = 1 
+				}
+			}
+			
+		division = {
+			location = 4555  # Skopje
+			name = "Cetnik divizije"
+			
+			regiment = {
+				type = infantry_brigade 
+				experience = 15
+				is_reserve = yes
+				name = "Gornjak cetnik"
+				historical_model = 1 
+				}
+			
+			regiment = {
+				type = infantry_brigade 
+				experience = 15
+				is_reserve = yes
+				name = "Zlatibor cetnik"
+				historical_model = 1 
+				}
+			}
+		}
+}
