@@ -1,0 +1,84 @@
+ corps = {
+	expeditionary_owner = POR
+	leader = 70028
+	location = 4644  # Lisboa
+	name = "Corpo Expedicionário Português"
+	
+	 regiment = {
+		type = hq_brigade 
+		name = "Corpo Expedicionário Português HQ"
+		historical_model = 0 
+		}
+	
+	 division = {
+		expeditionary_owner = POR
+		leader = 70006
+		location = 4644  # Lisboa
+		is_reserve = no 
+		name = "1o Divisão de Infantaria"
+		
+		regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "1o Brigada de Infantaria"
+			historical_model = 3 
+			}
+		
+		regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "2o Brigada de Infantaria"
+			historical_model = 3 
+			}
+					
+		regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "3o Brigada de Infantaria"
+			historical_model = 3 
+			}
+		
+		regiment = {
+			type = artillery_brigade 
+			experience = 5 
+			name = "1o Brigada de Artilharia"
+			historical_model = 2 
+			}
+		}
+	
+	 division = {
+		expeditionary_owner = POR
+		leader = 70029
+		location = 4644  # Lisboa
+		is_reserve = no 
+		name = "2o Divisão de Infantaria"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "4o Brigada de Infantaria"
+			historical_model = 3 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "5o Brigada de Infantaria"
+			historical_model = 3 
+			}
+					
+		 regiment = {
+			type = infantry_brigade 
+			experience = 5 
+			name = "6o Brigada de Infantaria"
+			historical_model = 3 
+			}
+			
+		 regiment = {
+			type = artillery_brigade 
+			experience = 5 
+			name = "2o Brigada de Artilharia"
+			historical_model = 2 
+			}
+		}
+}

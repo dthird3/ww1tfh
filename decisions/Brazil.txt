@@ -1,50 +1,4 @@
-
 diplomatic_decisions = {
-	 2001536_decision = {#Align_Portugal
-		ai_will_do = {
-			 factor = 1
-			 }
-		potential = {
-			 exists = POR
-			 GER = {
-				 war_with = ENG
-				 }
-			 not = {
-				 POR = {
-					 war_with = ENG
-					 }
-				 POR = {
-					 faction = allies
-					 }
-				 POR = {
-					 faction = axis
-					 }
-				 }
-			 tag = ENG
-			 date = 1916.1.1
-			 not = {
-				 date = 1925.12.30
-				 }
-			 not = {
-				 has_country_flag = decision_2001536
-				 }
-			 }
-		allow = {
-			 relation = {
-				 who = POR
-				 value = 10
-				 }
-			 2613 = {#Paris
-				controlled_by = FRA
-				 }
-			 }
-		effect = {
-			 country_event = 42 #Align_Portugal
-			set_country_flag = decision_2001536
-			 }
-		}
-	
-
 	 2001538_decision = {#Declare_War_Against_Germany
 		ai_will_do = {
 			 factor = 1
@@ -88,4 +42,3 @@ diplomatic_decisions = {
 			 }
 		}
 	}
-
