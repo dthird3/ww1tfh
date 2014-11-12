@@ -2,7 +2,7 @@ Flag Analysis for CountryFlag
 
 Summary
 Warnings: 17
-Total flags: 2453 in 673 names
+Total flags: 2452 in 673 names
 
 Warnings
 austria_axis
@@ -153,11 +153,12 @@ bolshevik_ukraine
 bolsheviks
 	chk|chk: <mod>\events\WW1Russia.txt (Line 1186, column 4) [has_country_flag = bolsheviks]
 	set|set: <mod>\events\WW1Russia.txt (Line 715, column 3) [set_country_flag = bolsheviks]
+brazil_joins_faction
+	chk|chk: <mod>\decisions\Brazil.txt (Line 15, column 12) [has_country_flag = Brazil_joins_faction]
+	set|set: <mod>\decisions\Brazil.txt (Line 25, column 4) [set_country_flag = Brazil_joins_faction]
 break_blockade
-	chk|chk: <mod>\decisions\Brazil.txt (Line 23, column 6) [has_country_flag = break_blockade]
 	chk|chk: <mod>\decisions\Germany.txt (Line 17, column 7) [has_country_flag = break_blockade]
 	set|set: <mod>\decisions\Germany.txt (Line 26, column 6) [set_country_flag = break_blockade]
-	chk|chk: <mod>\events\WW1Brazil.txt (Line 41, column 5) [has_country_flag = break_blockade]
 	chk|chk: <mod>\events\WW1USEntry.txt (Line 394, column 6) [has_country_flag = break_blockade]
 brussels_taken
 	set|set: <mod>\events\WW1Germany.txt (Line 310, column 4) [set_country_flag = brussels_taken]
@@ -205,9 +206,6 @@ decision_2001511
 decision_2001512
 	chk|chk: <mod>\decisions\DH_Hejaz.txt (Line 176, column 6) [has_country_flag = decision_2001512]
 	set|set: <mod>\decisions\DH_Hejaz.txt (Line 192, column 4) [set_country_flag = decision_2001512]
-decision_2001538
-	chk|chk: <mod>\decisions\Brazil.txt (Line 31, column 6) [has_country_flag = decision_2001538]
-	set|set: <mod>\decisions\Brazil.txt (Line 41, column 4) [set_country_flag = decision_2001538]
 decision_2001571
 	chk|chk: <mod>\decisions\DH_Ottoman.txt (Line 328, column 6) [has_country_flag = decision_2001571]
 	set|set: <mod>\decisions\DH_Ottoman.txt (Line 341, column 4) [set_country_flag = decision_2001571]
@@ -2701,8 +2699,8 @@ hunt_villa
 	chk|chk: <mod>\events\WW1USA.txt (Line 515, column 11) [has_country_flag = Hunt_Villa]
 	set|set: <mod>\events\WW1USA.txt (Line 493, column 11) [set_country_flag = Hunt_Villa]
 impound_german_merchants
-	chk|chk: <mod>\decisions\England.txt (Line 100, column 20) [has_country_flag = impound_german_merchants]
-	set|set: <mod>\decisions\England.txt (Line 107, column 4) [set_country_flag = impound_german_merchants]
+	chk|chk: <mod>\decisions\England.txt (Line 100, column 12) [has_country_flag = impound_german_merchants]
+	set|set: <mod>\decisions\England.txt (Line 109, column 4) [set_country_flag = impound_german_merchants]
 intervention_balkan
 	chk|chk: <mod>\events\WW1SecondBalkan.txt (Line 683, column 5) [has_country_flag = intervention_balkan]
 	chk|chk: <mod>\events\WW1SecondBalkan.txt (Line 686, column 5) [has_country_flag = intervention_balkan]
@@ -2856,6 +2854,7 @@ no_madero_coup
 	chk|chk: <mod>\events\WW1Mexico.txt (Line 584, column 11) [has_country_flag = "no_madero_coup"]
 	set|set: <mod>\events\WW1USA.txt (Line 118, column 11) [set_country_flag = "no_madero_coup"]
 north_sea_war_zone
+	chk|chk: <mod>\decisions\Brazil.txt (Line 13, column 12) [has_country_flag = North_Sea_War_Zone]
 	chk|chk: <mod>\decisions\England.txt (Line 39, column 7) [has_country_flag = North_Sea_War_Zone]
 	set|set: <mod>\decisions\England.txt (Line 50, column 5) [set_country_flag = North_Sea_War_Zone]
 	chk|chk: <mod>\decisions\Germany.txt (Line 13, column 6) [has_country_flag = North_Sea_War_Zone]
@@ -3057,7 +3056,7 @@ turr_inv
 	chk|chk: <mod>\decisions\SecondBalkan.txt (Line 169, column 7) [has_country_flag = turr_inv]
 	set|set: <mod>\decisions\SecondBalkan.txt (Line 180, column 5) [set_country_flag = turr_inv]
 unrest_subs
-	chk|chk: <mod>\decisions\England.txt (Line 95, column 12) [has_country_flag = unrest_subs]
+	chk|chk: <mod>\decisions\England.txt (Line 104, column 15) [has_country_flag = unrest_subs]
 	set|set: <mod>\events\WW1Germany.txt (Line 111, column 4) [set_country_flag = unrest_subs]
 	chk|chk: <mod>\events\WW1Germany.txt (Line 94, column 5) [has_country_flag = unrest_subs]
 	chk|chk: <mod>\events\WW1USEntry.txt (Line 330, column 5) [has_country_flag = unrest_subs]
