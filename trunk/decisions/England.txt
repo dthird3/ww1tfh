@@ -90,14 +90,14 @@ diplomatic_decisions = {
 		ai_will_do = { factor = 1 }
 			 
 		potential = {
+			tag = ENG
 			exists = POR
 			GER = { war_with = ENG }
-			GER = { has_country_flag = unrest_subs }
 			not = {
 				POR = { war_with = ENG }
 				POR = { faction = axis }
 				}
-			ENG = { not = { has_country_flag = impound_german_merchants } }
+			not = { has_country_flag = impound_german_merchants } 
 			}
 			
 		allow = { date = 1916.1.1 
@@ -106,7 +106,7 @@ diplomatic_decisions = {
 		
 		effect = {
 			ENG = { country_event = 100494 }		# Portugal to impound German Merchant ships
-			ENG = { set_country_flag = impound_german_merchants }
+			set_country_flag = impound_german_merchants
 			}
 	}
 }
