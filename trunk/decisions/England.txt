@@ -1,4 +1,3 @@
-
 diplomatic_decisions = {
 	 saf_release = {#South_African_Union
 		ai_will_do = {
@@ -19,7 +18,7 @@ diplomatic_decisions = {
 			 }
 		effect = {
 			 ENG = {
-				 country_event = 100111 #South_Africa_Independence
+				 country_event = 100111 	# South_Africa_Independence
 				}
 			 set_country_flag = saf_release
 			 }
@@ -46,7 +45,7 @@ diplomatic_decisions = {
 			 }
 		effect = {
 			 ENG = {
-				 country_event = 100508 #Declare_North_Sea_a_War_Zone
+				 country_event = 100508 		# Declare_North_Sea_a_War_Zone
 				}
 			 set_country_flag = North_Sea_War_Zone
 			 }
@@ -78,12 +77,36 @@ diplomatic_decisions = {
 			 }
 		effect = {
 			 ENG = {
-				 country_event = 100151 #Cyprus_Annexation
+				 country_event = 100151 		# Cyprus_Annexation
 				}
 			 add_core = 5139
 			 add_core = 5172
 			 set_country_flag = cyprus
 			 }
 		}
-	}
 
+
+	portugal_joins_faction = {					# Bring Portugal into the War
+		ai_will_do = { factor = 1 }
+			 
+		potential = {
+			exists = POR
+			GER = { war_with = ENG }
+			GER = { has_country_flag = unrest_subs }
+			not = {
+				POR = { war_with = ENG }
+				POR = { faction = axis }
+				}
+			ENG = { not = { has_country_flag = impound_german_merchants } }
+			}
+			
+		allow = { date = 1916.1.1 
+				  GER = { has_country_flag = unrest_subs }
+				}
+		
+		effect = {
+			ENG = { country_event = 100494 }		# Portugal to impound German Merchant ships
+			ENG = { set_country_flag = impound_german_merchants }
+			}
+	}
+}

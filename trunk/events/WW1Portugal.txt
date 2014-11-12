@@ -1,0 +1,86 @@
+# UK instructs Portugal to impound German Merchant ships
+
+country_event = {
+	title = "EVT1914_100495_NAME"
+	desc = "EVT1914_100495_DESC"
+	id = 100495
+	 
+	picture = "Harpalyce"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	major = yes
+	 
+	option = {
+		name = "EVT1914_100495_OPTA"
+		ai_chance = { factor = 100 }
+		POR = { 
+			join_faction = allies
+			relation = {
+				who = ENG
+				value = 40
+			}
+			relation = {
+				who = FRA
+				value = 40
+			}
+			relation = {
+				who = GER
+				value = -40
+			}
+			relation = {
+				who = AUH
+				value = -40
+			}
+		}
+		GER = {
+			threat = {
+				 who = POR
+				 value = 20
+				}
+			 }
+		POR = { neutrality = -20 }
+	}
+		option = {
+			name = "EVT1914_100495_OPTB"
+			POR = { 
+			relation = {
+			who = ENG
+			value = -50 } }
+		}
+	}
+	
+	
+# Portugal sends Expeditionary Army to UK
+
+country_event = {
+	title = "EVT1914_100496_NAME"
+	desc = "EVT1914_100496_DESC"
+	id = 100496
+	 
+	picture = "Portugese_troops"
+	 
+	fire_only_once = yes
+	 
+	trigger = {
+			POR = { war_with = GER }
+			POR = { ai = yes }
+	}
+	 
+	option = {
+		name = "EVT1914_100496_OPTA"
+		ai_chance = { factor = 100 }
+		POR = { remove_brigade = "1o Brigada de Infantaria" }
+		POR = { remove_brigade = "2o Brigada de Infantaria" }
+		POR = { remove_brigade = "3o Brigada de Infantaria" }
+		POR = { remove_brigade = "1o Brigada de Artilharia" }
+		POR = { remove_brigade = "4o Brigada de Infantaria" }
+		POR = { remove_brigade = "5o Brigada de Infantaria" }
+		POR = { remove_brigade = "6o Brigada de Infantaria" }
+		POR = { remove_brigade = "2o Brigada de Artilharia" }
+		ENG = { load_oob = "POR_1916_Exped.txt" }
+		ENG = { country_event = 100497 }
+	}
+}

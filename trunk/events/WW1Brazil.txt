@@ -1,0 +1,54 @@
+#Declare War Against Germany
+
+ country_event = {
+	title = "DH_EVENT_2001538_TITLE"
+	desc = "DH_EVENT_2001538_DESC"
+	id = 44
+	 
+	picture = "diplomatic_campaign"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = {
+		 days = 30
+		 }
+	trigger = {
+		 and = {
+			 exists = BRA
+			 not = {
+				 BRA = {
+					 government_in_exile = yes
+					 }
+				 }
+			 }
+		 GER = {
+			 war_with = ENG
+			 }
+		 not = {
+			 BRA = {
+				 war_with = ENG
+				 }
+			 BRA = {
+				 faction = allies
+				 }
+			 BRA = {
+				 faction = axis
+				 }
+			 }
+		 GER = {
+			 has_country_flag = break_blockade
+			 }
+		 2613 = {#Paris
+			controlled_by = FRA
+			 }
+		 tag = BRA
+		 date = 1917.1.1
+		 }
+	option = {
+		 name = "DH_EVENT_2001538_Option7"
+		 join_faction = allies
+		 }
+	}
+
