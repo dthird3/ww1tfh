@@ -2,24 +2,17 @@
 diplomatic_decisions = {
 	 break_blockade = {#Break_the_UK_Blockade
 		ai_will_do = {
-			 factor = 0
+			 factor = 1
 			 }
 		potential = {
 			 tag = GER
-			 GER = {
-				 war_with = ENG
-				 }
-			 ENG = {
-				 has_country_flag = North_Sea_War_Zone
-				 }
+			 GER = { war_with = ENG }
 			 NOT = {
-				 GER = {
-					 has_country_flag = break_blockade
-					 }
+				 GER = { has_country_flag = break_blockade }
 				 }
 			 }
 		allow = {
-			 ai = no
+			 ENG = { has_country_flag = North_Sea_War_Zone }
 			 }
 		effect = {
 			 GER = {
