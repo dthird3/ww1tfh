@@ -190,7 +190,7 @@
 	}
 
 
-#Break the UK Blockade
+# Break the UK Blockade
 # German Naval bonuses for 3 months
 
  country_event = {
@@ -219,6 +219,30 @@
 			 country_event = 100520 #100520
 			}
 		 }
+	}
+
+	
+# UK Blockade Broken
+ country_event = {
+	title = "EVT1914_100519_NAME"
+	desc = "EVT1914_100519_DESC"
+	id = 100519
+	 
+	picture = "German_Fleet"
+	major = yes 
+	fire_only_once = yes
+	 
+	trigger = {
+		tag = GER
+		has_country_flag = break_blockade
+		ENG = { total_of_ours_sunk = 60 }
+	}
+	 
+	option = {
+		ai_chance = { factor = 100 }
+		name = "ACTION_NAME_GREAT"
+		ENG = { set_country_flag = UK_Blockade_Broken }
+		}
 	}
 
 

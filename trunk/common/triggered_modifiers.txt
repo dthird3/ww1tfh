@@ -2110,7 +2110,10 @@ blockade_of_central_powers = {
 		tag = ENG
 	}
 	
-	trigger = { has_country_flag = North_Sea_War_Zone }
+	trigger = { 
+		has_country_flag = North_Sea_War_Zone 
+		not = { has_country_flag = UK_Blockade_Broken } 
+		}
 	
 	convoy_raid = 0.7
 	icon = 34
