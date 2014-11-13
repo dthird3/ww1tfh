@@ -1,5 +1,5 @@
 diplomatic_decisions = {
-	 2001538_decision = {						#Declare_War_Against_Germany
+	 2001538_decision = {						
 		ai_will_do = { factor = 1 }
 		
 		potential = {
@@ -14,8 +14,7 @@ diplomatic_decisions = {
 		}
 		
 		allow = {
-#			GER = { has_country_flag = break_blockade }
-			ENG = { has_country_flag = North_Sea_War_Zone }        # Temp - replace when convoy raiding test has been implemented
+			GER = { has_country_flag = unrest_subs }
 			date = 1917.2.1
 		}
 		
