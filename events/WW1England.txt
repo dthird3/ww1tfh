@@ -526,6 +526,31 @@
 			 }
 		 }
 	}
+	
+	
+# Attempt arms shipment interception (for Irish Rebellion)
+
+ country_event = {
+	title = "EVT1914_190042_NAME"
+	desc = "EVT1914_190042_DESC"
+	id = 190042
+	 
+	picture = "libau"
+	fire_only_once = yes
+	major = yes
+	mean_time_to_happen = { days = 60 }
+
+	trigger = {
+		tag = ENG
+		not = { has_country_flag = easter }
+		GER = { has_country_flag = libau_sent }
+		}
+	
+	option = {
+		name = "ACTION_NAME_GREAT"
+		clr_country_flag = libau_arms_delivered
+		}
+	}	
 
 
 #Easter Rising!
@@ -540,14 +565,14 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = {
-		 months = 1
-		 }
+	mean_time_to_happen = { days = 30 }
 	major = yes
 	 
 	trigger = {
 		 tag = ENG
-		 date = 1916.1.1
+		 or = { date = 1916.3.1
+				GER = { has_country_flag = libau_arms_delivered }
+			  }
 		 ENG = {
 			 war_with = GER
 			 }
@@ -560,15 +585,12 @@
 		 }
 	option = {
 		 name = "opta_IREE1"
-		 ai_chance = {
-			 factor = 100
-			 }
+		 ai_chance = { factor = 100 }
 		 ireland_dublin = {
 			 secede_province = IRE
 			 }
-		 IRE = {
-			 load_oob = "IRE_1914.txt"
-			 }
+		 IRE = { load_oob = "IRE_1914.txt" }
+		 IRE = { officer_pool = 150 }
 		 IRE = {
 			 war = {
 				 target = ENG
@@ -587,6 +609,43 @@
 				 value = -20
 				 }
 			 }
+		 }
+	}
+	
+	
+# German support for Irish rebellion
+
+ country_event = {
+	title = "EVT1914_190043_NAME"
+	desc = "EVT1914_190043_DESC"
+	id = 190043
+	 
+	picture = "Libau"
+	fire_only_once = yes
+	major = yes
+	 
+	trigger = {
+		 tag = ENG
+		 has_country_flag = easter
+		 GER = { has_country_flag = libau_arms_delivered }
+		 exists = IRE
+		 }
+
+	option = {
+		 name = "ACTION_NAME_GREAT"
+		 ai_chance = { factor = 100 }
+		 random_list = { 
+			50 = { IRE = { officer_pool = 0} } 
+			30 = { IRE = { officer_pool = 10} 
+				   IRE = { money = 100} }
+			15 = { IRE = { officer_pool = 50}
+				   IRE = { money = 50} }			
+			5 = { IRE = { officer_pool = 100}
+				  IRE = { money = 10} }			
+			}
+		 1843 = { supplies = 200 }
+		 1340 = { supplies = 200 }
+		 1563 = { supplies = 200 }
 		 }
 	}
 
