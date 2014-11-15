@@ -331,6 +331,27 @@
 		 }
 	}
 	
+
+# Support the Irish	
+ country_event = {
+	title = "EVT1914_190041_NAME"
+	desc = "EVT1914_190041_DESC"
+	id = 190041
+	 
+	picture = "libau"
+	fire_only_once = yes
+#	mean_time_to_happen = { days = 15 }
+	is_triggered_only = yes
+	
+	option = {
+		 name = "EVT1914_190041_OPTA"
+		 GER = { supplies = -600 }
+		 GER = { money = -100 }
+		 GER = { set_country_flag = libau_sent }
+		 GER = { set_country_flag = libau_arms_delivered }
+		 }
+	}
+		
 	
 # Air Aces die 1914
 
