@@ -538,7 +538,7 @@
 	picture = "libau"
 	fire_only_once = yes
 	major = yes
-	mean_time_to_happen = { days = 60 }
+	mean_time_to_happen = { days = 45 }
 
 	trigger = {
 		tag = ENG
@@ -590,7 +590,10 @@
 			 secede_province = IRE
 			 }
 		 IRE = { load_oob = "IRE_1914.txt" }
-		 IRE = { officer_pool = 150 }
+		 IRE = { officer_pool = 200 }
+		 1843 = { supplies = 100 }
+		 1340 = { supplies = 100 }
+		 1563 = { supplies = 200 }
 		 IRE = {
 			 war = {
 				 target = ENG
