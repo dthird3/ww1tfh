@@ -1,23 +1,24 @@
  theatre = {
 	location = 4371  # Sofiya
+	leader = 12056
 	name = "Sofiya HQ"
 	
 	 regiment = {
 		type = hq_brigade 
 		experience = 10 
-		name = "1st HQ Brigada"
+		name = "Sofiya GHQ Brigada"
 		historical_model = 1 
 		}
 	
 	 division = {
 		location = 4123  # Varna
-		name = "4-a Konna brigada"
+		name = "4-ti kavaleriiska brigada"
 		
 		 regiment = {
 			type = cavalry_brigade 
 			is_reserve = yes 
-			experience = 10 
-			name = "4-a Konna brigada"
+			experience = 5
+			name = "4-ti kavaleriiska brigada"
 			historical_model = 2 
 			}
 		}
@@ -29,7 +30,7 @@
 		 regiment = {
 			type = garrison_brigade 
 			is_reserve = yes 
-			experience = 5 
+			experience = 0 
 			name = "Border Companies"
 			historical_model = 0 
 			}
@@ -42,375 +43,338 @@
 		 regiment = {
 			type = garrison_brigade 
 			is_reserve = yes 
-			experience = 5 
+			experience = 0 
 			name = "Border Companies"
 			historical_model = 0 
 			}
 		}
 	
-	 corps = {
+	 army = {
 		location = 4371  # Sofiya
-		name = "1-va Armija"
+		leader = 12030		
+		name = "1-va Armiya"
 		
 		 regiment = {
 			type = hq_brigade 
-			name = "1-va Armija HQ"
+			name = "1-va Armiya HQ"
 			historical_model = 0 
 			}
 		
-		 regiment = {
-			type = engineer_brigade 
-			experience = 10 
-			name = "Bulgarian Engineer Corps"
-			historical_model = 0 
-			}
-		
-		 division = {
+		division = {
 			location = 4371  # Sofiya
-			name = "1-ta 'Sofiyska' Pehotna Divizija"
+			name = "1-va 'Sofiyska' pekhotna diviziya"
 			
 			 regiment = {
 				type = infantry_brigade 
 				is_reserve = yes 
-				experience = 10 
-				name = "1-ta 'Sofiyska' Pehotna brigada 1"
+				experience = 5 
+				name = "1-va pekhotna brigada"
 				historical_model = 2 
 				}
 			
 			 regiment = {
 				type = infantry_brigade 
 				is_reserve = yes 
-				experience = 10 
-				name = "1-ta 'Sofiyska' Pehotna brigada 2"
+				experience = 5 
+				name = "2-ri pekhotna brigada"
 				historical_model = 2 
 				}
 			
 			 regiment = {
-				type = artillery_brigade 
+				type = infantry_brigade 
 				is_reserve = yes 
-				experience = 10 
-				name = "1-ta 'Sofiyska' Pehotna Artilleriska"
+				experience = 0 
+				name = "3-ta pekhotna brigada"
+				historical_model = 1 
+				}
+				
+			regiment = {
+				type = engineer_brigade 
+				experience = 0 
+				name = "Bulgarski inzhener Corps"
 				historical_model = 0 
+				}	
+		}
+		
+		 division = {
+			location = 4371  # Sofiya
+			name = "6-ta 'Bdinska' pekhotna diviziya"
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "16 pekhotna brigada"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				is_reserve = yes 
+				experience = 5 
+				name = "17 pekhotna brigada"
+				historical_model = 2 
 				}
 			}
 		
 		 division = {
 			location = 4371  # Sofiya
-			name = "6-ta 'Bdinska' Pehotna Divizija"
+			name = "7-mi 'Rilska' pekhotna diviziya"
 			
 			 regiment = {
 				type = infantry_brigade 
 				is_reserve = yes 
-				experience = 10 
-				name = "6-ta 'Bdinska' Pehotna brigada 1"
+				experience = 5 
+				name = "19 pekhotna brigadaa"
 				historical_model = 2 
 				}
 			
 			 regiment = {
 				type = infantry_brigade 
 				is_reserve = yes 
-				experience = 10 
-				name = "6-ta 'Bdinska' Pehotna brigada 2"
+				experience = 5 
+				name = "20 pekhotna brigada"
 				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = artillery_brigade 
-				is_reserve = yes 
-				experience = 10 
-				name = "6-ta 'Bdinska' Pehotna Artilleriska"
-				historical_model = 0 
 				}
 			}
 		
 		 division = {
 			location = 4371  # Sofiya
-			name = "7-ma 'Rilska' Pekhotna Divizija"
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 10 
-				name = "7-ma 'Rilska' Pekhotna brigada 1"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				is_reserve = yes 
-				experience = 10 
-				name = "7-ma 'Rilska' Pekhotna brigada 2"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = artillery_brigade 
-				is_reserve = yes 
-				experience = 10 
-				name = "7-ma 'Rilska' Pehotna Artilleriska"
-				historical_model = 0 
-				}
-			}
-		
-		 division = {
-			location = 4371  # Sofiya
-			name = "1-ta Konna brigada"
+			name = "1-va kavaleriiska brigada"
 			
 			 regiment = {
 				type = cavalry_brigade 
-				experience = 15 
-				name = "1-ta Konna brigada & Lejbgard Cavalry"
+				experience = 5 
+				name = "1-va kavaleriiska & Lejbgard kavaleriiska"
 				historical_model = 2 
 				}
 			}
 		}
 	
-	 corps = {
+	 army = {
 		location = 4435  # Plovdiv
-		name = "2-ra Armija"
+		leader = 12023
+		name = "2-ra Armiya"
 		
 		 regiment = {
 			type = hq_brigade 
-			name = "2-ra Armija HQ"
+			name = "2-ra Armiya HQ"
 			historical_model = 0 
 			}
 		
 		 division = {
 			location = 4435  # Plovdiv
-			name = "2-ta 'Trakiyska' Pekhotna Divizija"
+			name = "2-ra 'Trakiyska' pekhotna diviziya"
 			
 			 regiment = {
 				type = infantry_brigade 
 				is_reserve = yes 
-				experience = 10 
-				name = "2-ta 'Trakiyska' Pekhotna brigada 1"
+				experience = 5 
+				name = "4-ti pekhotna brigada"
 				historical_model = 2 
 				}
 			
 			 regiment = {
 				type = infantry_brigade 
 				is_reserve = yes 
-				experience = 10 
-				name = "2-ta 'Trakiyska' Pekhotna brigada 2"
+				experience = 5 
+				name = "5-ti pekhotna brigada"
 				historical_model = 2 
 				}
 			
 			 regiment = {
-				type = artillery_brigade 
+				type = infantry_brigade 
 				is_reserve = yes 
-				experience = 10 
-				name = "2-ta 'Trakiyska' Pehotna Artilleriska"
-				historical_model = 0 
+				experience = 0 
+				name = "6-ta pekhotna brigada"
+				historical_model = 1 
 				}
 			}
 		
 		 division = {
 			location = 4435  # Plovdiv
-			name = "3-a 'Balkanska' Pehotna Divizija"
+			name = "3-ta 'Balkanska' pekhotna diviziya"
 			
 			 regiment = {
 				type = infantry_brigade 
 				is_reserve = yes 
-				experience = 10 
-				name = "3-a 'Balkanska' Pehotna brigada 1"
+				experience = 5 
+				name = "7-ma pekhotna brigada"
 				historical_model = 2 
 				}
 			
 			 regiment = {
 				type = infantry_brigade 
 				is_reserve = yes 
-				experience = 10 
-				name = "3-a 'Balkanska' Pehotna brigada 2"
+				experience = 5 
+				name = "8-mi pekhotna brigada"
 				historical_model = 2 
 				}
 			
 			 regiment = {
-				type = artillery_brigade 
+				type = infantry_brigade 
 				is_reserve = yes 
-				experience = 10 
-				name = "3-a 'Balkanska' Pehotna Artilleriska"
-				historical_model = 0 
+				experience = 0 
+				name = "9-ti pekhotna brigada"
+				historical_model = 1 
 				}
 			}
 		
 		 division = {
 			location = 4435  # Plovdiv
-			name = "8-ta 'Tundzhavska' Pehotna Divizija"
+			name = "8-mi 'Tundzhavska' pekhotna diviziya"
 			
 			 regiment = {
 				type = infantry_brigade 
 				is_reserve = yes 
-				experience = 10 
-				name = "8-ta 'Tundzhavska' Pehotna brigada 1"
+				experience = 5 
+				name = "22 pekhotna brigada"
 				historical_model = 2 
 				}
 			
 			 regiment = {
 				type = infantry_brigade 
 				is_reserve = yes 
-				experience = 10 
-				name = "8-ta 'Tundzhavska' Pehotna brigada 2"
+				experience = 5 
+				name = "23 pekhotna brigada"
 				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = artillery_brigade 
-				is_reserve = yes 
-				experience = 10 
-				name = "8-ta 'Tundzhavska' Pehotna Artilleriska"
-				historical_model = 0 
 				}
 			}
 		
 		 division = {
 			location = 4435  # Plovdiv
-			name = "10-ta 'Belomorska' Pekhotna Divizija"
+			name = "10-ti 'Belomorska' Pekhotna diviziya"
 			
 			 regiment = {
 				type = infantry_brigade 
 				is_reserve = yes 
-				experience = 10 
-				name = "10-ta 'Belomorska' Pekhotna brigada 1"
+				experience = 5 
+				name = "28 pekhotna brigada"
 				historical_model = 2 
 				}
 			
 			 regiment = {
 				type = infantry_brigade 
 				is_reserve = yes 
-				experience = 10 
-				name = "10-ta 'Belomorska' Pekhotna brigada 2"
+				experience = 5 
+				name = "29 pekhotna brigada"
 				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = artillery_brigade 
-				is_reserve = yes 
-				experience = 10 
-				name = "10-ta 'Belomorska' Pehotna Artilleriska"
-				historical_model = 0 
 				}
 			}
 		
 		 division = {
 			location = 4435  # Plovdiv
-			name = "2-ta Konna brigada"
+			name = "2-ri kavaleriiska brigada"
 			
 			 regiment = {
 				type = cavalry_brigade 
 				is_reserve = yes 
-				experience = 10 
-				name = "2-ta Konna brigada"
+				experience = 5 
+				name = "2-ri kavaleriiska brigada"
 				historical_model = 2 
 				}
 			}
 		}
 	
-	 corps = {
+	 army = {
 		location = 4056  # Ruse
-		name = "3-ta Armija"
+		leader = 12015
+		name = "3-ta Armiya"
 		
 		 regiment = {
 			type = hq_brigade 
-			name = "3-ta Armija HQ"
+			name = "3-ta Armiya HQ"
 			historical_model = 0 
 			}
 		
 		 division = {
 			location = 4056  # Ruse
-			name = "4-ta 'Preslavska' Pekhotna Divizija"
+			name = "4-ti 'Preslavska' Pekhotna diviziya"
 			
 			 regiment = {
 				type = infantry_brigade 
 				is_reserve = yes 
-				experience = 10 
-				name = "4-ta 'Preslavska' Pekhotna brigada 1"
+				experience = 5 
+				name = "10-ti pekhotna brigada"
 				historical_model = 2 
 				}
 			
 			 regiment = {
 				type = infantry_brigade 
 				is_reserve = yes 
-				experience = 10 
-				name = "4-ta 'Preslavska' Pekhotna brigada 2"
+				experience = 5 
+				name = "11 pekhotna brigada"
 				historical_model = 2 
 				}
 			
 			 regiment = {
-				type = artillery_brigade 
+				type = infantry_brigade 
 				is_reserve = yes 
-				experience = 10 
-				name = "4-ta 'Preslavska' Pekhotna Artilleriska"
-				historical_model = 0 
+				experience = 0 
+				name = "12 pekhotna brigada"
+				historical_model = 1 
 				}
 			}
 		
 		 division = {
 			location = 4056  # Ruse
-			name = "5-ta 'Danubian' Pehotna Divizija"
+			name = "5-ti 'Dunavska' pekhotna diviziya"
 			
 			 regiment = {
 				type = infantry_brigade 
 				is_reserve = yes 
-				experience = 10 
-				name = "5-ta 'Danubian' Pehotna brigada 1"
+				experience = 5 
+				name = "13 pekhotna brigada"
 				historical_model = 2 
 				}
 			
 			 regiment = {
 				type = infantry_brigade 
 				is_reserve = yes 
-				experience = 10 
-				name = "5-ta 'Danubian' Pehotna brigada 2"
+				experience = 5 
+				name = "14 pekhotna brigada"
 				historical_model = 2 
 				}
 			
 			 regiment = {
-				type = artillery_brigade 
+				type = infantry_brigade 
 				is_reserve = yes 
-				experience = 10 
-				name = "5-ta 'Danubian' Pekhotna Artilleriska"
-				historical_model = 0 
+				experience = 0 
+				name = "15 pekhotna brigada"
+				historical_model = 1 
 				}
 			}
 		
 		 division = {
 			location = 4056  # Ruse
-			name = "9-ta 'Plevenska' Pehotna Divizija"
+			name = "9-ti 'Plevenska' pekhotna diviziya"
 			
 			 regiment = {
 				type = infantry_brigade 
 				is_reserve = yes 
-				experience = 10 
-				name = "9-ta 'Plevenska' Pehotna brigada 1"
+				experience = 5 
+				name = "25 pekhotna brigada"
 				historical_model = 2 
 				}
 			
 			 regiment = {
 				type = infantry_brigade 
 				is_reserve = yes 
-				experience = 10 
-				name = "9-ta 'Plevenska' Pehotna brigada 2"
+				experience = 5 
+				name = "26 pekhotna brigada"
 				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = artillery_brigade 
-				is_reserve = yes 
-				experience = 10 
-				name = "9-ta 'Plevenska' Pekhotna Artilleriska"
-				historical_model = 0 
 				}
 			}
 		
 		 division = {
 			location = 4056  # Ruse
-			name = "3-a Konna brigada"
+			name = "3-ta kavaleriiska brigada"
 			
 			 regiment = {
 				type = cavalry_brigade 
 				is_reserve = yes 
-				experience = 10 
-				name = "3-a Konna brigada"
+				experience = 5 
+				name = "3-ta kavaleriiska brigada"
 				historical_model = 2 
 				}
 			}
@@ -428,4 +392,3 @@
 			}
 		}
 	}
-
