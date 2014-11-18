@@ -1,0 +1,42 @@
+diplomatic_decisions = {
+
+	appoint_diaz = {					    #Appoint_Diaz_as_new_Chief_of_Staff
+		ai_will_do = { factor = 1 }
+		
+		potential = {
+			 tag = ITA
+			 ITA = { war_with = AUH }
+			 date = 1915.1.1
+			 not = { date = 1923.12.30 }
+			 not = {
+				 has_country_flag = decision_appoint_Diaz
+				 }
+			 }
+			 
+		allow = { 
+			chief_of_staff = 46085            #Luigi_Cadorna
+			or = {
+				 not = {
+					 3562 = {#Udine
+						controlled_by = THIS
+						 }
+					 }
+				 not = {
+					 3561 = {#Treviso
+						controlled_by = THIS
+						 }
+					 }
+				 not = {
+					 3429 = {#Lienz
+						controlled_by = THIS
+						 }
+					 }
+				 }
+			 }
+			 
+		effect = {
+			country_event = 176 				#Appoint_Diaz_as_new_Chief_of_Staff
+			set_country_flag = decision_appoint_Diaz
+			}
+	}
+}

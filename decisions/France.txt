@@ -1,0 +1,71 @@
+diplomatic_decisions = {
+
+	Dissolve_Viviani = {                      #Dissolve_Viviani_Administration
+		ai_will_do = { factor = 1 }
+		
+		potential = {
+			tag = FRA
+			head_of_government = 32108 #René_Viviani
+			not = { has_country_flag = Dissolve_Viviani }
+			}
+			 
+		allow = {
+			date = 1915.1.1
+			not = { date = 1915.12.30 }	}
+		
+		effect = {
+			country_event = 122                 #Dissolve_Viviani_Administration
+			set_country_flag = Dissolve_Viviani
+			}
+	}
+	
+
+	 Appoint_Foch = {                       # Appoint_Foch_as_Supreme_Allied_Commander
+		ai_will_do = { factor = 1 }
+		
+		potential = {
+			 FRA = { war_with = GER }
+			 FRA = { faction = allies }
+			 tag = FRA
+			 date = 1917.1.1
+			 not = {
+				date = 1917.12.30 }
+			 not = { has_country_flag = Appoint_Foch }
+			 }
+			 
+		allow = {
+			 not = { chief_of_staff = 32081 #Ferdinand_Foch
+				}
+			 }
+			 
+		effect = {
+			country_event = 124                 #Appoint_Foch_as_Supreme_Allied_Commander
+			set_country_flag = Appoint_Foch
+			}
+		}
+	
+
+	 Appoint_Clemenceau = {#Appoint_Clemenceau_as_Prime_Minister
+		ai_will_do = { factor = 1 }
+		
+		potential = {
+			 FRA = { war_with = GER }
+			 tag = FRA
+			 date = 1917.1.1
+			 not = {
+				 date = 1919.12.30
+				 }
+			 not = {
+				 has_country_flag = Appoint_Clemenceau
+				 }
+			 }
+		allow = {
+			 not = { head_of_government = 32118 #Georges_Clemenceau
+				 }
+			 }
+		effect = {
+			country_event = 125 #Appoint_Clemenceau_as_Prime_Minister
+			set_country_flag = Appoint_Clemenceau
+			}
+		}
+}

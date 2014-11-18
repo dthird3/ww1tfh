@@ -1,6 +1,36 @@
+#The Contestado War
+
+country_event = {
+	title = "DH_EVENT_2049540_TITLE"
+	desc = "DH_EVENT_2049540_DESC"
+	id = 543
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 60
+		 }
+	trigger = {
+		 tag = BRA
+		 date = 1912.10.1
+		 not = {
+			 date = 1918.12.30
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2049540_Option7"
+		 10242 = {#Curitiba
+			create_revolt = 3
+			 }
+		 dissent = 5
+		 }
+}
+
+
 # Create event for the sinking of SS Parana and maybe the Brazilian Army Exped plan?
 # Decision to DOW Germany should then change to trigger from the sinking.
-
 
 
 # Brazil Declares War Against Germany
