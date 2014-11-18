@@ -1,24 +1,23 @@
 Flag Analysis for CountryFlag
 
 Summary
-Warnings: 14
-Total flags: 2575 in 677 names
+Warnings: 13
+Total flags: 2476 in 675 names
 
 Warnings
 austria_axis
 	set|set: <mod>\events\WW1FranzFerdinand.txt (Line 269, column 4) [set_country_flag = austria_axis]
-danzig_stikes
-	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 1437, column 5) [set_country_flag = Danzig_stikes]
-disorganized_soviets
-	set|clr: <mod>\scenarios\finnish_civil_war\events.txt (Line 41, column 4) [clr_country_flag = disorganized_soviets]
 emperor_franz_dead
 	set|set: <mod>\events\WW1Austria.txt (Line 33, column 4) [set_country_flag = emperor_franz_dead]
 form_albania
 	set|set: <mod>\events\WW1Albania.txt (Line 216, column 5) [set_country_flag = form_albania]
+germany_mobilize
+	set|set: <mod>\events\WW1FranzFerdinand.txt (Line 771, column 4) [set_country_flag = germany_mobilize]
+	set|set: <mod>\events\WW1FranzFerdinand.txt (Line 598, column 4) [set_country_flag = germany_mobilize]
+	set|set: <mod>\events\WW1FranzFerdinand.txt (Line 434, column 4) [set_country_flag = germany_mobilize]
 goeben
 	set|set: <mod>\events\WW1Ottoman.txt (Line 78, column 4) [set_country_flag = goeben]
 huerta_coup
-	set|set: <mod>\history\countries\MXR - MexicoRebels.txt (Line 613, column 5) [set_country_flag = "Huerta_Coup"]
 	set|set: <mod>\events\WW1Mexico.txt (Line 628, column 11) [set_country_flag = "Huerta_Coup"]
 national_protection_army_win
 	chk|chk: <mod>\events\WW1ROC.txt (Line 429, column 12) [has_country_flag = national_protection_army_win]
@@ -27,7 +26,7 @@ no_goeben
 not_kill_song
 	set|set: <mod>\events\WW1ROC.txt (Line 138, column 5) [set_country_flag = not_kill_Song]
 portugal_death
-	set|set: <mod>\events\WW1Other.txt (Line 45, column 3) [set_country_flag = portugal_death]
+	set|set: <mod>\events\WW1Portugal.txt (Line 34, column 3) [set_country_flag = portugal_death]
 removedmob7
 	chk|chk: <mod>\events\DHSoviet.txt (Line 814, column 6) [has_country_flag = removedMOB7]
 	chk|chk: <mod>\events\DHSoviet.txt (Line 828, column 6) [has_country_flag = removedMOB7]
@@ -42,12 +41,10 @@ zimmermann_intercepted
 
 Summary (excluding warnings)
 2nd_revolution
-	set|set: <mod>\history\countries\ROC - ROC.txt (Line 618, column 2) [set_country_flag = 2nd_Revolution]
 	chk|chk: <mod>\events\WW1ROC.txt (Line 211, column 4) [has_country_flag = 2nd_Revolution]
 	set|set: <mod>\events\WW1ROC.txt (Line 192, column 5) [set_country_flag = 2nd_Revolution]
 	chk|chk: <mod>\events\WW1ROC.txt (Line 180, column 12) [has_country_flag = 2nd_Revolution]
 2nd_revolution_failed
-	set|set: <mod>\history\countries\ROC - ROC.txt (Line 619, column 2) [set_country_flag = 2nd_Revolution_failed]
 	chk|chk: <mod>\events\WW1ROC.txt (Line 237, column 4) [has_country_flag = 2nd_Revolution_failed]
 	set|set: <mod>\events\WW1ROC.txt (Line 220, column 5) [set_country_flag = 2nd_Revolution_failed]
 	chk|chk: <mod>\events\WW1ROC.txt (Line 212, column 12) [has_country_flag = 2nd_Revolution_failed]
@@ -55,7 +52,6 @@ agadir
 	chk|chk: <mod>\events\WW1Morocco.txt (Line 154, column 5) [has_country_flag = agadir]
 	set|set: <mod>\events\WW1Morocco.txt (Line 32, column 5) [set_country_flag = agadir]
 alb_peace
-	set|set: <mod>\history\countries\TUR - Turkey.txt (Line 329, column 14) [set_country_flag = alb_peace]
 	chk|chk: <mod>\decisions\Albanian.txt (Line 15, column 7) [has_country_flag = alb_peace]
 	set|set: <mod>\decisions\Albanian.txt (Line 31, column 5) [set_country_flag = alb_peace]
 alb_war
@@ -64,6 +60,15 @@ alb_war
 amundsen
 	set|set: <mod>\events\WW1News.txt (Line 55, column 4) [set_country_flag = amundsen]
 	chk|chk: <mod>\events\WW1News.txt (Line 46, column 5) [has_country_flag = amundsen]
+appoint_clemenceau
+	chk|chk: <mod>\decisions\France.txt (Line 59, column 6) [has_country_flag = Appoint_Clemenceau]
+	set|set: <mod>\decisions\France.txt (Line 68, column 4) [set_country_flag = Appoint_Clemenceau]
+appoint_foch
+	chk|chk: <mod>\decisions\France.txt (Line 33, column 13) [has_country_flag = Appoint_Foch]
+	set|set: <mod>\decisions\France.txt (Line 43, column 4) [set_country_flag = Appoint_Foch]
+appoint_von_falkenhayn
+	chk|chk: <mod>\decisions\Germany.txt (Line 11, column 13) [has_country_flag = Appoint_Von_Falkenhayn]
+	set|set: <mod>\decisions\Germany.txt (Line 22, column 4) [set_country_flag = Appoint_Von_Falkenhayn]
 arrest_pu
 	set|set: <mod>\events\WW1Qing.txt (Line 325, column 4) [set_country_flag = arrest_pu]
 	set|set: <mod>\events\WW1Qing.txt (Line 318, column 4) [set_country_flag = arrest_pu]
@@ -107,14 +112,12 @@ baghdad_5
 	chk|chk: <mod>\events\DHOttoman.txt (Line 479, column 4) [has_country_flag = baghdad_5]
 	set|set: <mod>\events\DHOttoman.txt (Line 454, column 4) [set_country_flag = baghdad_5]
 ban_nic
-	set|set: <mod>\history\countries\USA - USA.txt (Line 334, column 14) [set_country_flag = ban_nic]
 	chk|chk: <mod>\decisions\USA.txt (Line 82, column 6) [has_country_flag = ban_nic]
 	set|set: <mod>\decisions\USA.txt (Line 88, column 5) [set_country_flag = ban_nic]
 beerhall
 	set|set: <mod>\events\WW1News.txt (Line 350, column 4) [set_country_flag = beerhall]
 	chk|chk: <mod>\events\WW1News.txt (Line 341, column 5) [has_country_flag = beerhall]
 beiyang_government
-	set|set: <mod>\history\countries\ROC - ROC.txt (Line 614, column 2) [set_country_flag = beiyang_government]
 	chk|chk: <mod>\events\WW1Qing.txt (Line 409, column 5) [has_country_flag = beiyang_government]
 	chk|chk: <mod>\events\WW1ROC.txt (Line 66, column 4) [has_country_flag = beiyang_government]
 	set|set: <mod>\events\WW1ROC.txt (Line 42, column 4) [set_country_flag = beiyang_government]
@@ -133,10 +136,6 @@ bolshevik_ukraine
 	chk|chk: <mod>\events\WW1PolishBolshevik.txt (Line 1609, column 5) [has_country_flag = "bolshevik_ukraine"]
 	set|set: <mod>\events\WW1PolishBolshevik.txt (Line 1582, column 5) [set_country_flag = "bolshevik_ukraine"]
 	chk|chk: <mod>\events\WW1PolishBolshevik.txt (Line 1532, column 6) [has_country_flag = "bolshevik_ukraine"]
-	set|clr: <mod>\scenarios\polish_bolshevik\events.txt (Line 1568, column 5) [clr_country_flag = "bolshevik_ukraine"]
-	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1519, column 5) [has_country_flag = "bolshevik_ukraine"]
-	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 1495, column 5) [set_country_flag = "bolshevik_ukraine"]
-	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1460, column 6) [has_country_flag = "bolshevik_ukraine"]
 bolsheviks
 	chk|chk: <mod>\events\WW1Russia.txt (Line 1186, column 4) [has_country_flag = bolsheviks]
 	set|set: <mod>\events\WW1Russia.txt (Line 715, column 3) [set_country_flag = bolsheviks]
@@ -144,13 +143,13 @@ brazil_joins_faction
 	chk|chk: <mod>\decisions\Brazil.txt (Line 13, column 12) [has_country_flag = Brazil_joins_faction]
 	set|set: <mod>\decisions\Brazil.txt (Line 23, column 4) [set_country_flag = Brazil_joins_faction]
 break_blockade
-	chk|chk: <mod>\decisions\Germany.txt (Line 10, column 14) [has_country_flag = break_blockade]
-	set|set: <mod>\decisions\Germany.txt (Line 25, column 6) [set_country_flag = break_blockade]
-	chk|chk: <mod>\events\WW1Germany.txt (Line 233, column 3) [has_country_flag = break_blockade]
+	chk|chk: <mod>\decisions\Germany.txt (Line 35, column 14) [has_country_flag = break_blockade]
+	set|set: <mod>\decisions\Germany.txt (Line 50, column 6) [set_country_flag = break_blockade]
+	chk|chk: <mod>\events\WW1Germany.txt (Line 256, column 3) [has_country_flag = break_blockade]
 	chk|chk: <mod>\events\WW1USEntry.txt (Line 394, column 6) [has_country_flag = break_blockade]
 brussels_taken
-	set|set: <mod>\events\WW1Germany.txt (Line 330, column 4) [set_country_flag = brussels_taken]
-	chk|chk: <mod>\events\WW1Germany.txt (Line 324, column 5) [has_country_flag = brussels_taken]
+	set|set: <mod>\events\WW1Germany.txt (Line 353, column 4) [set_country_flag = brussels_taken]
+	chk|chk: <mod>\events\WW1Germany.txt (Line 347, column 5) [has_country_flag = brussels_taken]
 bulgaria_wargoal
 	set|set: <mod>\events\WW1Wargoals.txt (Line 227, column 4) [set_country_flag = bulgaria_wargoal]
 	set|set: <mod>\events\WW1Wargoals.txt (Line 214, column 4) [set_country_flag = bulgaria_wargoal]
@@ -171,7 +170,6 @@ corpuschristi_raided
 	chk|chk: <mod>\events\WW1Mexico.txt (Line 1222, column 13) [has_country_flag = corpuschristi_raided]
 	set|set: <mod>\events\WW1Mexico.txt (Line 1230, column 12) [set_country_flag = corpuschristi_raided]
 cretegreek
-	set|set: <mod>\history\countries\GRE - Greece.txt (Line 338, column 1) [set_country_flag = cretegreek]
 	chk|chk: <mod>\decisions\Greek.txt (Line 12, column 7) [has_country_flag = cretegreek]
 	set|set: <mod>\decisions\Greek.txt (Line 25, column 6) [set_country_flag = cretegreek]
 cyprus
@@ -216,18 +214,6 @@ decision_2002522
 decision_2002533
 	chk|chk: <mod>\decisions\DH_GreekBulgarian.txt (Line 279, column 6) [has_country_flag = decision_2002533]
 	set|set: <mod>\decisions\DH_GreekBulgarian.txt (Line 286, column 4) [set_country_flag = decision_2002533]
-decision_2002550
-	chk|chk: <mod>\decisions\DH_Misc.txt (Line 15, column 6) [has_country_flag = decision_2002550]
-	set|set: <mod>\decisions\DH_Misc.txt (Line 22, column 4) [set_country_flag = decision_2002550]
-decision_2002554
-	chk|chk: <mod>\decisions\DH_Misc.txt (Line 47, column 6) [has_country_flag = decision_2002554]
-	set|set: <mod>\decisions\DH_Misc.txt (Line 60, column 4) [set_country_flag = decision_2002554]
-decision_2002555
-	chk|chk: <mod>\decisions\DH_Misc.txt (Line 79, column 6) [has_country_flag = decision_2002555]
-	set|set: <mod>\decisions\DH_Misc.txt (Line 91, column 4) [set_country_flag = decision_2002555]
-decision_2006516
-	chk|chk: <mod>\decisions\DH_Misc.txt (Line 110, column 6) [has_country_flag = decision_2006516]
-	set|set: <mod>\decisions\DH_Misc.txt (Line 144, column 4) [set_country_flag = decision_2006516]
 decision_2007507
 	chk|chk: <mod>\decisions\DH_Soviet.txt (Line 71, column 6) [has_country_flag = decision_2007507]
 	set|set: <mod>\decisions\DH_Soviet.txt (Line 81, column 4) [set_country_flag = decision_2007507]
@@ -303,9 +289,6 @@ decision_2191508
 decision_2191510
 	chk|chk: <mod>\decisions\DH_GreekBulgarian.txt (Line 415, column 6) [has_country_flag = decision_2191510]
 	set|set: <mod>\decisions\DH_GreekBulgarian.txt (Line 427, column 4) [set_country_flag = decision_2191510]
-decision_2191546
-	chk|chk: <mod>\decisions\DH_Misc.txt (Line 170, column 6) [has_country_flag = decision_2191546]
-	set|set: <mod>\decisions\DH_Misc.txt (Line 182, column 4) [set_country_flag = decision_2191546]
 decision_2191560
 	chk|chk: <mod>\decisions\DH_Ottoman.txt (Line 10, column 13) [has_country_flag = decision_2191560]
 	set|set: <mod>\decisions\DH_Ottoman.txt (Line 19, column 4) [set_country_flag = decision_2191560]
@@ -342,27 +325,23 @@ decision_2193501
 decision_2233502
 	chk|chk: <mod>\decisions\DH_Hejaz.txt (Line 210, column 6) [has_country_flag = decision_2233502]
 	set|set: <mod>\decisions\DH_Hejaz.txt (Line 220, column 4) [set_country_flag = decision_2233502]
+decision_appoint_diaz
+	chk|chk: <mod>\decisions\Italy.txt (Line 12, column 6) [has_country_flag = decision_appoint_Diaz]
+	set|set: <mod>\decisions\Italy.txt (Line 39, column 4) [set_country_flag = decision_appoint_Diaz]
 defence_of_poznan
 	set|set: <mod>\events\WW1PolishBolshevik.txt (Line 577, column 5) [set_country_flag = "Defence_of_Poznan"]
 	chk|chk: <mod>\events\WW1PolishBolshevik.txt (Line 551, column 6) [has_country_flag = "Defence_of_Poznan"]
-	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 574, column 5) [set_country_flag = "Defence_of_Poznan"]
-	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 554, column 6) [has_country_flag = "Defence_of_Poznan"]
 demand_no_unrest_subs
-	set|set: <mod>\events\WW1Germany.txt (Line 183, column 5) [set_country_flag = demand_no_unrest_subs]
-	set|set: <mod>\events\WW1Germany.txt (Line 159, column 5) [set_country_flag = demand_no_unrest_subs]
-	chk|chk: <mod>\events\WW1Germany.txt (Line 140, column 6) [has_country_flag = demand_no_unrest_subs]
+	set|set: <mod>\events\WW1Germany.txt (Line 206, column 5) [set_country_flag = demand_no_unrest_subs]
+	set|set: <mod>\events\WW1Germany.txt (Line 182, column 5) [set_country_flag = demand_no_unrest_subs]
+	chk|chk: <mod>\events\WW1Germany.txt (Line 163, column 6) [has_country_flag = demand_no_unrest_subs]
 desperate_polish_defence_1
 	chk|chk: <mod>\events\WW1PolishBolshevik.txt (Line 503, column 5) [has_country_flag = "Desperate_Polish_Defence_1"]
 	set|set: <mod>\events\WW1PolishBolshevik.txt (Line 472, column 5) [set_country_flag = "Desperate_Polish_Defence_1"]
 	chk|chk: <mod>\events\WW1PolishBolshevik.txt (Line 431, column 6) [has_country_flag = "Desperate_Polish_Defence_1"]
-	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 509, column 5) [has_country_flag = "Desperate_Polish_Defence_1"]
-	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 480, column 5) [set_country_flag = "Desperate_Polish_Defence_1"]
-	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 451, column 6) [has_country_flag = "Desperate_Polish_Defence_1"]
 desperate_polish_defence_2
 	set|set: <mod>\events\WW1PolishBolshevik.txt (Line 524, column 5) [set_country_flag = "Desperate_Polish_Defence_2"]
 	chk|chk: <mod>\events\WW1PolishBolshevik.txt (Line 507, column 6) [has_country_flag = "Desperate_Polish_Defence_2"]
-	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 525, column 5) [set_country_flag = "Desperate_Polish_Defence_2"]
-	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 512, column 6) [has_country_flag = "Desperate_Polish_Defence_2"]
 diaz_coup_attempt
 	set|set: <mod>\events\WW1Mexico.txt (Line 262, column 11) [set_country_flag = "diaz_coup_attempt"]
 	chk|chk: <mod>\events\WW1Mexico.txt (Line 252, column 19) [has_country_flag = "diaz_coup_attempt"]
@@ -370,7 +349,6 @@ diaz_crisis
 	chk|chk: <mod>\decisions\USA.txt (Line 36, column 14) [has_country_flag = "diaz_crisis"]
 	set|set: <mod>\decisions\USA.txt (Line 46, column 5) [set_country_flag = "diaz_crisis"]
 diaz_crisis_over
-	set|set: <mod>\history\countries\USA - USA.txt (Line 340, column 14) [set_country_flag = "diaz_crisis_over"]
 	chk|chk: <mod>\decisions\USA.txt (Line 37, column 14) [has_country_flag = "diaz_crisis_over"]
 	set|set: <mod>\events\WW1Mexico.txt (Line 351, column 11) [set_country_flag = "diaz_crisis_over"]
 	chk|chk: <mod>\events\WW1Mexico.txt (Line 55, column 19) [has_country_flag = "diaz_crisis_over"]
@@ -390,6 +368,9 @@ diaz_rigged_election
 	set|set: <mod>\events\WW1Mexico.txt (Line 32, column 11) [set_country_flag = "diaz_rigged_election"]
 	set|set: <mod>\events\WW1Mexico.txt (Line 23, column 11) [set_country_flag = "diaz_rigged_election"]
 	chk|chk: <mod>\events\WW1Mexico.txt (Line 16, column 19) [has_country_flag = "diaz_rigged_election"]
+dissolve_viviani
+	chk|chk: <mod>\decisions\France.txt (Line 9, column 12) [has_country_flag = Dissolve_Viviani]
+	set|set: <mod>\decisions\France.txt (Line 18, column 4) [set_country_flag = Dissolve_Viviani]
 dom_repubic_occupied
 	chk|chk: <mod>\decisions\USA.txt (Line 119, column 12) [has_country_flag = Dom_Repubic_occupied]
 	set|set: <mod>\events\WW1USA.txt (Line 460, column 3) [set_country_flag = Dom_Repubic_occupied]
@@ -400,7 +381,7 @@ dual_power
 	chk|chk: <mod>\events\WW1Russia.txt (Line 579, column 5) [has_country_flag = dual_power]
 	chk|chk: <mod>\events\WW1Russia.txt (Line 82, column 5) [has_country_flag = dual_power]
 easter
-	chk|chk: <mod>\decisions\Germany.txt (Line 74, column 20) [has_country_flag = easter]
+	chk|chk: <mod>\decisions\Germany.txt (Line 99, column 20) [has_country_flag = easter]
 	chk|chk: <mod>\events\WW1England.txt (Line 632, column 4) [has_country_flag = easter]
 	set|set: <mod>\events\WW1England.txt (Line 608, column 4) [set_country_flag = easter]
 	chk|chk: <mod>\events\WW1England.txt (Line 583, column 5) [has_country_flag = easter]
@@ -411,11 +392,6 @@ emergency_1_released
 	chk|chk: <mod>\events\WW1PolishBolshevik.txt (Line 1361, column 7) [has_country_flag = Emergency_1_Released]
 	set|set: <mod>\events\WW1PolishBolshevik.txt (Line 1072, column 5) [set_country_flag = Emergency_1_Released]
 	chk|chk: <mod>\events\WW1PolishBolshevik.txt (Line 1058, column 6) [has_country_flag = Emergency_1_Released]
-	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1364, column 8) [has_country_flag = Emergency_1_Released]
-	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 1375, column 6) [set_country_flag = Emergency_1_Released]
-	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1321, column 14) [has_country_flag = Emergency_1_Released]
-	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 1072, column 5) [set_country_flag = Emergency_1_Released]
-	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1058, column 6) [has_country_flag = Emergency_1_Released]
 emergency_2_released
 	chk|chk: <mod>\events\WW1PolishBolshevik.txt (Line 1433, column 7) [has_country_flag = Emergency_2_Released]
 	chk|chk: <mod>\events\WW1PolishBolshevik.txt (Line 1450, column 8) [has_country_flag = Emergency_2_Released]
@@ -423,12 +399,6 @@ emergency_2_released
 	chk|chk: <mod>\events\WW1PolishBolshevik.txt (Line 1366, column 7) [has_country_flag = Emergency_2_Released]
 	set|set: <mod>\events\WW1PolishBolshevik.txt (Line 1036, column 5) [set_country_flag = Emergency_2_Released]
 	chk|chk: <mod>\events\WW1PolishBolshevik.txt (Line 1022, column 6) [has_country_flag = Emergency_2_Released]
-	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1366, column 7) [has_country_flag = Emergency_2_Released]
-	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1381, column 8) [has_country_flag = Emergency_2_Released]
-	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 1390, column 6) [set_country_flag = Emergency_2_Released]
-	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1323, column 14) [has_country_flag = Emergency_2_Released]
-	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 1037, column 5) [set_country_flag = Emergency_2_Released]
-	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1023, column 6) [has_country_flag = Emergency_2_Released]
 emergency_3_released
 	chk|chk: <mod>\events\WW1PolishBolshevik.txt (Line 1436, column 7) [has_country_flag = Emergency_3_Released]
 	chk|chk: <mod>\events\WW1PolishBolshevik.txt (Line 1454, column 7) [has_country_flag = Emergency_3_Released]
@@ -437,13 +407,6 @@ emergency_3_released
 	chk|chk: <mod>\events\WW1PolishBolshevik.txt (Line 1371, column 7) [has_country_flag = Emergency_3_Released]
 	set|set: <mod>\events\WW1PolishBolshevik.txt (Line 1000, column 5) [set_country_flag = Emergency_3_Released]
 	chk|chk: <mod>\events\WW1PolishBolshevik.txt (Line 987, column 6) [has_country_flag = Emergency_3_Released]
-	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1368, column 7) [has_country_flag = Emergency_3_Released]
-	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1383, column 7) [has_country_flag = Emergency_3_Released]
-	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1396, column 8) [has_country_flag = Emergency_3_Released]
-	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 1403, column 6) [set_country_flag = Emergency_3_Released]
-	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1325, column 14) [has_country_flag = Emergency_3_Released]
-	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 1002, column 5) [set_country_flag = Emergency_3_Released]
-	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 990, column 13) [has_country_flag = Emergency_3_Released]
 empire_of_china
 	chk|chk: <mod>\events\WW1ROC.txt (Line 296, column 4) [has_country_flag = empire_of_china]
 	set|set: <mod>\events\WW1ROC.txt (Line 280, column 5) [set_country_flag = empire_of_china]
@@ -2563,19 +2526,17 @@ fall_9974
 	set|set: <mod>\events\FallVP.txt (Line 16967, column 4) [set_country_flag = fall_9974]
 	chk|chk: <mod>\events\FallVP.txt (Line 16961, column 5) [has_country_flag = fall_9974]
 fall_of_paris
-	set|set: <mod>\events\WW1France.txt (Line 293, column 4) [set_country_flag = fall_of_paris]
-	chk|chk: <mod>\events\WW1France.txt (Line 284, column 5) [has_country_flag = fall_of_paris]
+	set|set: <mod>\events\WW1France.txt (Line 384, column 4) [set_country_flag = fall_of_paris]
+	chk|chk: <mod>\events\WW1France.txt (Line 375, column 5) [has_country_flag = fall_of_paris]
 fifth_uprising
 	set|set: <mod>\events\WW1Xinhai Revolution.txt (Line 529, column 4) [set_country_flag = fifth_uprising]
 	chk|chk: <mod>\events\WW1Xinhai Revolution.txt (Line 483, column 5) [has_country_flag = fifth_uprising]
 first_balkan_cleanup_done
-	set|set: <mod>\history\countries\SER - Serbia.txt (Line 342, column 1) [set_country_flag = first_balkan_cleanup_done]
 	set|set: <mod>\events\WW1FirstBalkan.txt (Line 1079, column 5) [set_country_flag = first_balkan_cleanup_done]
 	chk|chk: <mod>\events\WW1FirstBalkan.txt (Line 978, column 6) [has_country_flag = first_balkan_cleanup_done]
 	set|set: <mod>\events\WW1FirstBalkan.txt (Line 565, column 5) [set_country_flag = first_balkan_cleanup_done]
 	chk|chk: <mod>\events\WW1FirstBalkan.txt (Line 464, column 6) [has_country_flag = first_balkan_cleanup_done]
 first_balkan_done
-	set|set: <mod>\history\countries\SER - Serbia.txt (Line 339, column 1) [set_country_flag = first_balkan_done]
 	chk|chk: <mod>\decisions\FirstBalkan.txt (Line 934, column 7) [has_country_flag = first_balkan_done]
 	set|set: <mod>\decisions\FirstBalkan.txt (Line 1071, column 6) [set_country_flag = first_balkan_done]
 	set|set: <mod>\decisions\FirstBalkan.txt (Line 1074, column 6) [set_country_flag = first_balkan_done]
@@ -2607,8 +2568,6 @@ first_balkan_done
 	chk|chk: <mod>\events\WW1FirstBalkan.txt (Line 456, column 6) [has_country_flag = first_balkan_done]
 	set|set: <mod>\events\WW1FirstBalkan.txt (Line 293, column 5) [set_country_flag = first_balkan_done]
 first_balkan_surrender
-	chk|chk: <mod>\common\cb_types.txt (Line 222, column 20) [has_country_flag = first_balkan_surrender]
-	chk|chk: <mod>\common\cb_types.txt (Line 195, column 20) [has_country_flag = first_balkan_surrender]
 	chk|chk: <mod>\decisions\FirstBalkan.txt (Line 939, column 7) [has_country_flag = first_balkan_surrender]
 	chk|chk: <mod>\decisions\FirstBalkan.txt (Line 944, column 7) [has_country_flag = first_balkan_surrender]
 	chk|chk: <mod>\decisions\FirstBalkan.txt (Line 949, column 7) [has_country_flag = first_balkan_surrender]
@@ -2649,7 +2608,6 @@ first_balkan_surrender
 	chk|chk: <mod>\decisions\SecondBalkan.txt (Line 25, column 7) [has_country_flag = first_balkan_surrender]
 	chk|chk: <mod>\events\WW1FirstBalkan.txt (Line 459, column 6) [has_country_flag = first_balkan_surrender]
 first_balkan_war
-	set|set: <mod>\history\countries\SER - Serbia.txt (Line 335, column 1) [set_country_flag = first_balkan_war]
 	chk|chk: <mod>\decisions\FirstBalkan.txt (Line 930, column 6) [has_country_flag = first_balkan_war]
 	chk|chk: <mod>\decisions\FirstBalkan.txt (Line 764, column 6) [has_country_flag = first_balkan_war]
 	chk|chk: <mod>\decisions\FirstBalkan.txt (Line 598, column 6) [has_country_flag = first_balkan_war]
@@ -2677,29 +2635,17 @@ fourth_uprising
 	set|set: <mod>\events\WW1Xinhai Revolution.txt (Line 412, column 4) [set_country_flag = fourth_uprising]
 	chk|chk: <mod>\events\WW1Xinhai Revolution.txt (Line 372, column 5) [has_country_flag = fourth_uprising]
 fr_signs_peace
-	chk|chk: <mod>\common\cb_types.txt (Line 301, column 12) [has_country_flag = fr_signs_peace]
-	set|set: <mod>\events\WW1France.txt (Line 315, column 4) [set_country_flag = fr_signs_peace]
-	chk|chk: <mod>\events\WW1France.txt (Line 287, column 5) [has_country_flag = fr_signs_peace]
+	set|set: <mod>\events\WW1France.txt (Line 406, column 4) [set_country_flag = fr_signs_peace]
+	chk|chk: <mod>\events\WW1France.txt (Line 378, column 5) [has_country_flag = fr_signs_peace]
 france_wargoal
 	set|set: <mod>\events\WW1Wargoals.txt (Line 89, column 4) [set_country_flag = france_wargoal]
 	set|set: <mod>\events\WW1Wargoals.txt (Line 76, column 4) [set_country_flag = france_wargoal]
 	chk|chk: <mod>\events\WW1Wargoals.txt (Line 65, column 5) [has_country_flag = france_wargoal]
 french_mutiny
-	chk|chk: <mod>\events\WW1France.txt (Line 91, column 11) [has_country_flag = "French_mutiny"]
-	set|clr: <mod>\events\WW1France.txt (Line 74, column 11) [clr_country_flag = "French_mutiny"]
-	chk|chk: <mod>\events\WW1France.txt (Line 68, column 11) [has_country_flag = "French_mutiny"]
-	set|set: <mod>\events\WW1France.txt (Line 43, column 11) [set_country_flag = "French_mutiny"]
-germany_mobilize
-	chk|chk: <mod>\common\cb_types.txt (Line 431, column 12) [has_country_flag = germany_mobilize]
-	chk|chk: <mod>\common\cb_types.txt (Line 405, column 12) [has_country_flag = germany_mobilize]
-	chk|chk: <mod>\common\cb_types.txt (Line 379, column 12) [has_country_flag = germany_mobilize]
-	chk|chk: <mod>\common\cb_types.txt (Line 353, column 12) [has_country_flag = germany_mobilize]
-	chk|chk: <mod>\common\cb_types.txt (Line 327, column 12) [has_country_flag = germany_mobilize]
-	chk|chk: <mod>\common\cb_types.txt (Line 273, column 12) [has_country_flag = germany_mobilize]
-	chk|chk: <mod>\common\cb_types.txt (Line 247, column 12) [has_country_flag = germany_mobilize]
-	set|set: <mod>\events\WW1FranzFerdinand.txt (Line 771, column 4) [set_country_flag = germany_mobilize]
-	set|set: <mod>\events\WW1FranzFerdinand.txt (Line 598, column 4) [set_country_flag = germany_mobilize]
-	set|set: <mod>\events\WW1FranzFerdinand.txt (Line 434, column 4) [set_country_flag = germany_mobilize]
+	chk|chk: <mod>\events\WW1France.txt (Line 182, column 11) [has_country_flag = "French_mutiny"]
+	set|clr: <mod>\events\WW1France.txt (Line 165, column 11) [clr_country_flag = "French_mutiny"]
+	chk|chk: <mod>\events\WW1France.txt (Line 159, column 11) [has_country_flag = "French_mutiny"]
+	set|set: <mod>\events\WW1France.txt (Line 134, column 11) [set_country_flag = "French_mutiny"]
 germany_wargoal
 	set|set: <mod>\events\WW1Wargoals.txt (Line 273, column 4) [set_country_flag = germany_wargoal]
 	set|set: <mod>\events\WW1Wargoals.txt (Line 260, column 4) [set_country_flag = germany_wargoal]
@@ -2714,8 +2660,6 @@ harpalyce
 	set|set: <mod>\events\WW1USEntry.txt (Line 301, column 5) [set_country_flag = harpalyce]
 	chk|chk: <mod>\events\WW1USEntry.txt (Line 276, column 6) [has_country_flag = harpalyce]
 has_serb_alliance
-	chk|chk: <mod>\common\cb_types.txt (Line 219, column 12) [has_country_flag = has_serb_alliance]
-	chk|chk: <mod>\common\cb_types.txt (Line 193, column 12) [has_country_flag = has_serb_alliance]
 	chk|chk: <mod>\decisions\SecondBalkan.txt (Line 91, column 6) [has_country_flag = has_serb_alliance]
 	chk|chk: <mod>\decisions\SecondBalkan.txt (Line 30, column 7) [has_country_flag = has_serb_alliance]
 	set|set: <mod>\decisions\SecondBalkan.txt (Line 45, column 6) [set_country_flag = has_serb_alliance]
@@ -2750,11 +2694,10 @@ intervention_balkan
 	chk|chk: <mod>\events\WW1SecondBalkan.txt (Line 228, column 6) [has_country_flag = intervention_balkan]
 	set|set: <mod>\events\WW1SecondBalkan.txt (Line 170, column 4) [set_country_flag = intervention_balkan]
 jap_kor
-	set|set: <mod>\history\countries\JAP - Japan.txt (Line 329, column 1) [set_country_flag = jap_kor]
 	chk|chk: <mod>\decisions\Japan.txt (Line 12, column 7) [has_country_flag = jap_kor]
 	set|set: <mod>\decisions\Japan.txt (Line 31, column 5) [set_country_flag = jap_kor]
 jutland
-	chk|chk: <mod>\events\WW1Germany.txt (Line 269, column 5) [has_country_flag = Jutland]
+	chk|chk: <mod>\events\WW1Germany.txt (Line 292, column 5) [has_country_flag = Jutland]
 	chk|chk: <mod>\events\WW1USEntry.txt (Line 503, column 5) [has_country_flag = Jutland]
 	chk|chk: <mod>\events\WW1USEntry.txt (Line 449, column 5) [has_country_flag = Jutland]
 	set|set: <mod>\events\WW1USEntry.txt (Line 421, column 5) [set_country_flag = Jutland]
@@ -2763,45 +2706,33 @@ king_death_george
 	chk|chk: <mod>\decisions\England.txt (Line 8, column 5) [has_country_flag = king_death_george]
 	set|set: <mod>\events\WW1England.txt (Line 33, column 4) [set_country_flag = king_death_george]
 king_death_meiji
-	set|set: <mod>\history\countries\JAP - Japan.txt (Line 333, column 1) [set_country_flag = king_death_meiji]
 	set|set: <mod>\events\WW1Japan.txt (Line 36, column 4) [set_country_flag = king_death_meiji]
 	chk|chk: <mod>\events\WW1Japan.txt (Line 23, column 5) [has_country_flag = king_death_meiji]
 kingsland
 	set|set: <mod>\events\WW1USEntry.txt (Line 529, column 5) [set_country_flag = Kingsland]
 	chk|chk: <mod>\events\WW1USEntry.txt (Line 507, column 6) [has_country_flag = Kingsland]
 kmt_song
-	set|set: <mod>\history\countries\ROC - ROC.txt (Line 617, column 2) [set_country_flag = KMT_Song]
 	chk|chk: <mod>\events\WW1ROC.txt (Line 179, column 4) [has_country_flag = KMT_Song]
 	set|set: <mod>\events\WW1ROC.txt (Line 163, column 5) [set_country_flag = KMT_Song]
 	chk|chk: <mod>\events\WW1ROCYuan.txt (Line 19, column 5) [has_country_flag = KMT_Song]
 kmt_threat
-	set|set: <mod>\history\countries\ROC - ROC.txt (Line 616, column 2) [set_country_flag = KMT_threat]
 	set|set: <mod>\events\WW1ROC.txt (Line 109, column 5) [set_country_flag = KMT_threat]
 	chk|chk: <mod>\events\WW1ROC.txt (Line 98, column 12) [has_country_flag = KMT_threat]
 kmt_win_elc
-	set|set: <mod>\history\countries\ROC - ROC.txt (Line 615, column 2) [set_country_flag = KMT_win_elc]
 	chk|chk: <mod>\events\WW1ROC.txt (Line 97, column 4) [has_country_flag = KMT_win_elc]
 	set|set: <mod>\events\WW1ROC.txt (Line 78, column 5) [set_country_flag = KMT_win_elc]
 	chk|chk: <mod>\events\WW1ROC.txt (Line 65, column 12) [has_country_flag = KMT_win_elc]
 konarmiya_withdrawl
 	chk|chk: <mod>\events\WW1PolishBolshevik.txt (Line 1292, column 5) [has_country_flag = "Konarmiya_Withdrawl"]
 	set|set: <mod>\events\WW1PolishBolshevik.txt (Line 1269, column 5) [set_country_flag = "Konarmiya_Withdrawl"]
-	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1262, column 5) [has_country_flag = "Konarmiya_Withdrawl"]
-	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 1240, column 5) [set_country_flag = "Konarmiya_Withdrawl"]
 latvian_garrison_1_released
 	chk|chk: <mod>\events\WW1PolishBolshevik.txt (Line 1144, column 8) [has_country_flag = Latvian_Garrison_1_Released]
 	set|set: <mod>\events\WW1PolishBolshevik.txt (Line 903, column 5) [set_country_flag = Latvian_Garrison_1_Released]
-	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1124, column 8) [has_country_flag = Latvian_Garrison_1_Released]
-	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 904, column 5) [set_country_flag = Latvian_Garrison_1_Released]
 latvian_garrison_released
 	set|set: <mod>\events\WW1PolishBolshevik.txt (Line 1153, column 5) [set_country_flag = Latvian_Garrison_Released]
 	chk|chk: <mod>\events\WW1PolishBolshevik.txt (Line 1102, column 5) [has_country_flag = Latvian_Garrison_Released]
 	chk|chk: <mod>\events\WW1PolishBolshevik.txt (Line 892, column 5) [has_country_flag = Latvian_Garrison_Released]
-	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 1133, column 5) [set_country_flag = Latvian_Garrison_Released]
-	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1093, column 5) [has_country_flag = Latvian_Garrison_Released]
-	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 895, column 5) [has_country_flag = Latvian_Garrison_Released]
 league_formed
-	set|set: <mod>\history\countries\SER - Serbia.txt (Line 331, column 1) [set_country_flag = league_formed]
 	chk|chk: <mod>\decisions\FirstBalkan.txt (Line 45, column 6) [has_country_flag = league_formed]
 	chk|chk: <mod>\decisions\FirstBalkan.txt (Line 15, column 7) [has_country_flag = league_formed]
 	set|set: <mod>\decisions\FirstBalkan.txt (Line 28, column 5) [set_country_flag = league_formed]
@@ -2810,23 +2741,21 @@ libau_arms_delivered
 	chk|chk: <mod>\events\WW1England.txt (Line 633, column 12) [has_country_flag = libau_arms_delivered]
 	chk|chk: <mod>\events\WW1England.txt (Line 574, column 13) [has_country_flag = libau_arms_delivered]
 	set|clr: <mod>\events\WW1England.txt (Line 551, column 3) [clr_country_flag = libau_arms_delivered]
-	set|set: <mod>\events\WW1Germany.txt (Line 351, column 12) [set_country_flag = libau_arms_delivered]
+	set|set: <mod>\events\WW1Germany.txt (Line 374, column 12) [set_country_flag = libau_arms_delivered]
 libau_sent
-	chk|chk: <mod>\decisions\Germany.txt (Line 73, column 20) [has_country_flag = libau_sent]
-	set|set: <mod>\decisions\Germany.txt (Line 89, column 13) [set_country_flag = libau_sent]
+	chk|chk: <mod>\decisions\Germany.txt (Line 98, column 20) [has_country_flag = libau_sent]
+	set|set: <mod>\decisions\Germany.txt (Line 114, column 13) [set_country_flag = libau_sent]
 	chk|chk: <mod>\events\WW1England.txt (Line 546, column 11) [has_country_flag = libau_sent]
-	set|set: <mod>\events\WW1Germany.txt (Line 350, column 12) [set_country_flag = libau_sent]
+	set|set: <mod>\events\WW1Germany.txt (Line 373, column 12) [set_country_flag = libau_sent]
 libya_draw
 	chk|chk: <mod>\decisions\ItalianTurkish.txt (Line 114, column 7) [has_country_flag = libya_draw]
 	set|set: <mod>\decisions\ItalianTurkish.txt (Line 133, column 5) [set_country_flag = libya_draw]
 	chk|chk: <mod>\decisions\ItalianTurkish.txt (Line 56, column 7) [has_country_flag = libya_draw]
 libya_peace
-	set|set: <mod>\history\countries\ITA - Italy.txt (Line 334, column 15) [set_country_flag = libya_peace]
 	chk|chk: <mod>\decisions\ItalianTurkish.txt (Line 109, column 7) [has_country_flag = libya_peace]
 	chk|chk: <mod>\decisions\ItalianTurkish.txt (Line 51, column 7) [has_country_flag = libya_peace]
 	set|set: <mod>\decisions\ItalianTurkish.txt (Line 91, column 5) [set_country_flag = libya_peace]
 libya_war
-	set|set: <mod>\history\countries\ITA - Italy.txt (Line 333, column 15) [set_country_flag = libya_war]
 	chk|chk: <mod>\decisions\ItalianTurkish.txt (Line 105, column 6) [has_country_flag = libya_war]
 	chk|chk: <mod>\decisions\ItalianTurkish.txt (Line 47, column 6) [has_country_flag = libya_war]
 	chk|chk: <mod>\decisions\ItalianTurkish.txt (Line 13, column 7) [has_country_flag = libya_war]
@@ -2835,13 +2764,7 @@ lithuania_joins
 	set|set: <mod>\events\WW1PolishBolshevik.txt (Line 1210, column 5) [set_country_flag = "Lithuania_joins"]
 	chk|chk: <mod>\events\WW1PolishBolshevik.txt (Line 1181, column 6) [has_country_flag = "Lithuania_joins"]
 	chk|chk: <mod>\events\WW1PolishBolshevik.txt (Line 824, column 5) [has_country_flag = "Lithuania_joins"]
-	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 1179, column 5) [set_country_flag = "Lithuania_joins"]
-	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1158, column 6) [has_country_flag = "Lithuania_joins"]
-	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 827, column 5) [has_country_flag = "Lithuania_joins"]
 lose_balkans
-	chk|chk: <mod>\common\cb_types.txt (Line 220, column 20) [has_country_flag = lose_balkans]
-	chk|chk: <mod>\common\cb_types.txt (Line 194, column 20) [has_country_flag = lose_balkans]
-	set|set: <mod>\history\countries\BUL - Bulgaria.txt (Line 334, column 1) [set_country_flag = lose_balkans]
 	chk|chk: <mod>\decisions\SecondBalkan.txt (Line 164, column 7) [has_country_flag = lose_balkans]
 	chk|chk: <mod>\decisions\SecondBalkan.txt (Line 129, column 7) [has_country_flag = lose_balkans]
 	set|set: <mod>\events\WW1SecondBalkan.txt (Line 758, column 5) [set_country_flag = lose_balkans]
@@ -2853,7 +2776,7 @@ lose_balkans
 	set|set: <mod>\events\WW1SecondBalkan.txt (Line 270, column 5) [set_country_flag = lose_balkans]
 	chk|chk: <mod>\events\WW1SecondBalkan.txt (Line 218, column 6) [has_country_flag = lose_balkans]
 lusitania
-	chk|chk: <mod>\events\WW1Germany.txt (Line 136, column 5) [has_country_flag = lusitania]
+	chk|chk: <mod>\events\WW1Germany.txt (Line 159, column 5) [has_country_flag = lusitania]
 	set|set: <mod>\events\WW1USEntry.txt (Line 359, column 5) [set_country_flag = lusitania]
 	chk|chk: <mod>\events\WW1USEntry.txt (Line 334, column 6) [has_country_flag = lusitania]
 machupicchu
@@ -2908,8 +2831,6 @@ new_nationalism
 	set|set: <mod>\events\WW1USA.txt (Line 230, column 2) [set_country_flag = new_nationalism]
 	chk|chk: <mod>\events\WW1USA.txt (Line 217, column 11) [has_country_flag = new_nationalism]
 newfreedom
-	set|set: <mod>\history\countries\USA - USA.txt (Line 655, column 5) [set_country_flag = newfreedom]
-	set|set: <mod>\history\countries\USA - USA.txt (Line 336, column 15) [set_country_flag = newfreedom]
 	set|set: <mod>\events\WW1USA.txt (Line 198, column 2) [set_country_flag = newfreedom]
 	chk|chk: <mod>\events\WW1USA.txt (Line 178, column 11) [has_country_flag = newfreedom]
 niagara_peace
@@ -2927,9 +2848,9 @@ no_madero_coup
 north_sea_war_zone
 	chk|chk: <mod>\decisions\England.txt (Line 39, column 7) [has_country_flag = North_Sea_War_Zone]
 	set|set: <mod>\decisions\England.txt (Line 50, column 5) [set_country_flag = North_Sea_War_Zone]
-	chk|chk: <mod>\decisions\Germany.txt (Line 17, column 16) [has_country_flag = North_Sea_War_Zone]
-	chk|chk: <mod>\decisions\Germany.txt (Line 20, column 16) [has_country_flag = North_Sea_War_Zone]
-	chk|chk: <mod>\events\WW1Germany.txt (Line 87, column 5) [has_country_flag = North_Sea_War_Zone]
+	chk|chk: <mod>\decisions\Germany.txt (Line 42, column 16) [has_country_flag = North_Sea_War_Zone]
+	chk|chk: <mod>\decisions\Germany.txt (Line 45, column 16) [has_country_flag = North_Sea_War_Zone]
+	chk|chk: <mod>\events\WW1Germany.txt (Line 110, column 5) [has_country_flag = North_Sea_War_Zone]
 	chk|chk: <mod>\common\triggered_modifiers.txt (Line 2114, column 3) [has_country_flag = North_Sea_War_Zone]
 ns_peace_conference
 	chk|chk: <mod>\decisions\PRC.txt (Line 14, column 7) [has_country_flag = ns_peace_conference]
@@ -2939,9 +2860,9 @@ octrev
 	set|set: <mod>\events\WW1Russia.txt (Line 1797, column 5) [set_country_flag = octrev]
 	set|set: <mod>\events\WW1Russia.txt (Line 1479, column 5) [set_country_flag = octrev]
 oly_games
-	set|set: <mod>\events\WW1Other.txt (Line 89, column 4) [set_country_flag = oly_games]
-	set|set: <mod>\events\WW1Other.txt (Line 77, column 4) [set_country_flag = oly_games]
-	chk|chk: <mod>\events\WW1Other.txt (Line 66, column 5) [has_country_flag = oly_games]
+	set|set: <mod>\events\WW1Other.txt (Line 29, column 4) [set_country_flag = oly_games]
+	set|set: <mod>\events\WW1Other.txt (Line 19, column 4) [set_country_flag = oly_games]
+	chk|chk: <mod>\events\WW1Other.txt (Line 12, column 12) [has_country_flag = oly_games]
 orozco_rebels
 	chk|chk: <mod>\decisions\USA.txt (Line 64, column 13) [has_country_flag = "orozco_rebels"]
 	set|set: <mod>\events\WW1Mexico.txt (Line 505, column 11) [set_country_flag = "orozco_rebels"]
@@ -2953,7 +2874,6 @@ ottoman_wargoal
 	set|set: <mod>\events\WW1Wargoals.txt (Line 352, column 4) [set_country_flag = ottoman_wargoal]
 	chk|chk: <mod>\events\WW1Wargoals.txt (Line 341, column 5) [has_country_flag = ottoman_wargoal]
 panamerican
-	set|set: <mod>\history\countries\USA - USA.txt (Line 332, column 14) [set_country_flag = panamerican]
 	set|set: <mod>\events\WW1USA.txt (Line 94, column 4) [set_country_flag = panamerican]
 	chk|chk: <mod>\events\WW1USA.txt (Line 48, column 5) [has_country_flag = panamerican]
 polish_ukraine
@@ -2961,10 +2881,6 @@ polish_ukraine
 	set|set: <mod>\events\WW1PolishBolshevik.txt (Line 1697, column 5) [set_country_flag = "polish_ukraine"]
 	chk|chk: <mod>\events\WW1PolishBolshevik.txt (Line 1647, column 6) [has_country_flag = "polish_ukraine"]
 	set|clr: <mod>\events\WW1PolishBolshevik.txt (Line 1549, column 5) [clr_country_flag = "polish_ukraine"]
-	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1614, column 5) [has_country_flag = "polish_ukraine"]
-	set|set: <mod>\scenarios\polish_bolshevik\events.txt (Line 1590, column 5) [set_country_flag = "polish_ukraine"]
-	chk|chk: <mod>\scenarios\polish_bolshevik\events.txt (Line 1555, column 6) [has_country_flag = "polish_ukraine"]
-	set|clr: <mod>\scenarios\polish_bolshevik\events.txt (Line 1473, column 5) [clr_country_flag = "polish_ukraine"]
 prc_election
 	chk|chk: <mod>\decisions\PRC.txt (Line 19, column 5) [has_country_flag = prc_election]
 	set|set: <mod>\events\WW1Xinhai Revolution.txt (Line 772, column 4) [set_country_flag = prc_election]
@@ -3019,7 +2935,6 @@ receive_zimmermann
 	set|set: <mod>\events\WW1Mexico.txt (Line 1640, column 12) [set_country_flag = Receive_Zimmermann]
 	set|set: <mod>\events\WW1Mexico.txt (Line 1622, column 11) [set_country_flag = Receive_Zimmermann]
 republic_china
-	set|set: <mod>\history\countries\ROC - ROC.txt (Line 613, column 2) [set_country_flag = republic_china]
 	set|set: <mod>\events\WW1Qing.txt (Line 603, column 5) [set_country_flag = republic_china]
 	set|set: <mod>\events\WW1Qing.txt (Line 505, column 5) [set_country_flag = republic_china]
 	chk|chk: <mod>\events\WW1ROC.txt (Line 19, column 4) [has_country_flag = republic_china]
@@ -3037,7 +2952,6 @@ romania_wargoal
 	set|set: <mod>\events\WW1Wargoals.txt (Line 168, column 4) [set_country_flag = romania_wargoal]
 	chk|chk: <mod>\events\WW1Wargoals.txt (Line 157, column 5) [has_country_flag = romania_wargoal]
 room_int
-	set|set: <mod>\history\countries\ROM - Romania.txt (Line 330, column 1) [set_country_flag = room_int]
 	chk|chk: <mod>\decisions\SecondBalkan.txt (Line 134, column 7) [has_country_flag = room_int]
 	set|set: <mod>\decisions\SecondBalkan.txt (Line 145, column 5) [set_country_flag = room_int]
 russia_mobilized
@@ -3053,12 +2967,10 @@ rutherford
 	set|set: <mod>\events\WW1News.txt (Line 84, column 4) [set_country_flag = rutherford]
 	chk|chk: <mod>\events\WW1News.txt (Line 75, column 5) [has_country_flag = rutherford]
 saf_release
-	set|set: <mod>\history\countries\ENG - United Kingdom.txt (Line 324, column 15) [set_country_flag = saf_release]
 	chk|chk: <mod>\decisions\England.txt (Line 11, column 7) [has_country_flag = saf_release]
 	set|set: <mod>\decisions\England.txt (Line 23, column 5) [set_country_flag = saf_release]
 	set|set: <mod>\events\WW1England.txt (Line 144, column 4) [set_country_flag = saf_release]
 second_balkan_started
-	set|set: <mod>\history\countries\BUL - Bulgaria.txt (Line 330, column 1) [set_country_flag = second_balkan_started]
 	chk|chk: <mod>\decisions\SecondBalkan.txt (Line 87, column 7) [has_country_flag = second_balkan_started]
 	set|set: <mod>\decisions\SecondBalkan.txt (Line 113, column 6) [set_country_flag = second_balkan_started]
 second_balkan_war
@@ -3073,8 +2985,8 @@ second_uprising
 	set|set: <mod>\events\WW1Xinhai Revolution.txt (Line 243, column 4) [set_country_flag = second_uprising]
 	chk|chk: <mod>\events\WW1Xinhai Revolution.txt (Line 200, column 5) [has_country_flag = second_uprising]
 send_zimmermann
-	set|set: <mod>\events\WW1Germany.txt (Line 280, column 12) [set_country_flag = Send_Zimmermann]
-	chk|chk: <mod>\events\WW1Germany.txt (Line 273, column 6) [has_country_flag = Send_Zimmermann]
+	set|set: <mod>\events\WW1Germany.txt (Line 303, column 12) [set_country_flag = Send_Zimmermann]
+	chk|chk: <mod>\events\WW1Germany.txt (Line 296, column 6) [has_country_flag = Send_Zimmermann]
 ser_ultamatium
 	chk|chk: <mod>\decisions\WW1Start.txt (Line 12, column 6) [has_country_flag = ser_ultamatium]
 	set|set: <mod>\decisions\WW1Start.txt (Line 20, column 5) [set_country_flag = ser_ultamatium]
@@ -3083,15 +2995,15 @@ serbian_ultamatium
 	set|set: <mod>\events\WW1FranzFerdinand.txt (Line 139, column 4) [set_country_flag = serbian_ultamatium]
 	chk|chk: <mod>\events\WW1Ottoman.txt (Line 45, column 5) [has_country_flag = serbian_ultamatium]
 sim
-	chk|chk: <mod>\decisions\Special.txt (Line 112, column 6) [has_country_flag = SIM]
-	set|set: <mod>\decisions\Special.txt (Line 119, column 4) [set_country_flag = SIM]
+	chk|chk: <mod>\decisions\Russia.txt (Line 12, column 6) [has_country_flag = SIM]
+	set|set: <mod>\decisions\Russia.txt (Line 19, column 4) [set_country_flag = SIM]
 spanishflu
 	set|set: <mod>\events\WW1News.txt (Line 231, column 4) [set_country_flag = spanishflu]
 	chk|chk: <mod>\events\WW1News.txt (Line 223, column 5) [has_country_flag = spanishflu]
 stopped_unrest_subs
-	set|clr: <mod>\events\WW1Germany.txt (Line 281, column 12) [clr_country_flag = stopped_unrest_subs]
-	chk|chk: <mod>\events\WW1Germany.txt (Line 266, column 5) [has_country_flag = stopped_unrest_subs]
-	set|set: <mod>\events\WW1Germany.txt (Line 162, column 5) [set_country_flag = stopped_unrest_subs]
+	set|clr: <mod>\events\WW1Germany.txt (Line 304, column 12) [clr_country_flag = stopped_unrest_subs]
+	chk|chk: <mod>\events\WW1Germany.txt (Line 289, column 5) [has_country_flag = stopped_unrest_subs]
+	set|set: <mod>\events\WW1Germany.txt (Line 185, column 5) [set_country_flag = stopped_unrest_subs]
 	chk|chk: <mod>\common\triggered_modifiers.txt (Line 2161, column 12) [has_country_flag = stopped_unrest_subs]
 	chk|chk: <mod>\common\triggered_modifiers.txt (Line 2129, column 12) [has_country_flag = stopped_unrest_subs]
 strikes_boycotts_chengdu
@@ -3108,7 +3020,6 @@ support_madero_coup
 	chk|chk: <mod>\events\WW1Mexico.txt (Line 554, column 11) [has_country_flag = "support_madero_coup"]
 	set|set: <mod>\events\WW1USA.txt (Line 114, column 11) [set_country_flag = "support_madero_coup"]
 tampico
-	set|set: <mod>\history\countries\USA - USA.txt (Line 654, column 14) [set_country_flag = "Tampico"]
 	chk|chk: <mod>\events\WW1USA.txt (Line 311, column 11) [has_country_flag = Tampico]
 	set|set: <mod>\events\WW1USA.txt (Line 288, column 11) [set_country_flag = Tampico]
 	chk|chk: <mod>\events\WW1USA.txt (Line 283, column 20) [has_country_flag = Tampico]
@@ -3130,7 +3041,6 @@ third_uprising
 	set|set: <mod>\events\WW1Xinhai Revolution.txt (Line 349, column 4) [set_country_flag = third_uprising]
 	chk|chk: <mod>\events\WW1Xinhai Revolution.txt (Line 314, column 5) [has_country_flag = third_uprising]
 titanic
-	set|set: <mod>\history\countries\ENG - United Kingdom.txt (Line 341, column 14) [set_country_flag = titanic]
 	set|set: <mod>\events\WW1England.txt (Line 214, column 4) [set_country_flag = titanic]
 	chk|chk: <mod>\events\WW1England.txt (Line 209, column 5) [has_country_flag = titanic]
 turk_alliance
@@ -3149,17 +3059,16 @@ turkey_reg
 	chk|chk: <mod>\common\triggered_modifiers.txt (Line 2143, column 3) [has_country_flag = turkey_reg]
 	chk|chk: <mod>\common\triggered_modifiers.txt (Line 2097, column 11) [has_country_flag = turkey_reg]
 turr_inv
-	set|set: <mod>\history\countries\TUR - Turkey.txt (Line 330, column 1) [set_country_flag = turr_inv]
 	chk|chk: <mod>\decisions\SecondBalkan.txt (Line 169, column 7) [has_country_flag = turr_inv]
 	set|set: <mod>\decisions\SecondBalkan.txt (Line 180, column 5) [set_country_flag = turr_inv]
 uk_blockade_broken
-	set|set: <mod>\events\WW1Germany.txt (Line 240, column 11) [set_country_flag = UK_Blockade_Broken]
+	set|set: <mod>\events\WW1Germany.txt (Line 263, column 11) [set_country_flag = UK_Blockade_Broken]
 	chk|chk: <mod>\common\triggered_modifiers.txt (Line 2115, column 11) [has_country_flag = UK_Blockade_Broken]
 unrest_subs
 	chk|chk: <mod>\decisions\Brazil.txt (Line 17, column 12) [has_country_flag = unrest_subs]
 	chk|chk: <mod>\decisions\England.txt (Line 104, column 15) [has_country_flag = unrest_subs]
-	set|set: <mod>\events\WW1Germany.txt (Line 107, column 4) [set_country_flag = unrest_subs]
-	chk|chk: <mod>\events\WW1Germany.txt (Line 90, column 5) [has_country_flag = unrest_subs]
+	set|set: <mod>\events\WW1Germany.txt (Line 130, column 4) [set_country_flag = unrest_subs]
+	chk|chk: <mod>\events\WW1Germany.txt (Line 113, column 5) [has_country_flag = unrest_subs]
 	chk|chk: <mod>\events\WW1USEntry.txt (Line 330, column 5) [has_country_flag = unrest_subs]
 	chk|chk: <mod>\common\triggered_modifiers.txt (Line 2160, column 4) [has_country_flag = unrest_subs]
 	chk|chk: <mod>\common\triggered_modifiers.txt (Line 2128, column 4) [has_country_flag = unrest_subs]
@@ -3188,17 +3097,12 @@ vsplan
 	chk|chk: <mod>\decisions\WW1Start.txt (Line 39, column 6) [has_country_flag = vsplan]
 	set|set: <mod>\decisions\WW1Start.txt (Line 46, column 5) [set_country_flag = vsplan]
 war_over
-	chk|chk: <mod>\common\cb_types.txt (Line 432, column 20) [has_country_flag = war_over]
-	chk|chk: <mod>\common\cb_types.txt (Line 406, column 20) [has_country_flag = war_over]
-	chk|chk: <mod>\common\cb_types.txt (Line 380, column 20) [has_country_flag = war_over]
-	chk|chk: <mod>\common\cb_types.txt (Line 354, column 20) [has_country_flag = war_over]
-	chk|chk: <mod>\common\cb_types.txt (Line 328, column 20) [has_country_flag = war_over]
 	set|set: <mod>\events\WW1Austria.txt (Line 59, column 4) [set_country_flag = war_over]
 	set|set: <mod>\events\WW1Bulgaria.txt (Line 20, column 4) [set_country_flag = war_over]
 	set|set: <mod>\events\WW1England.txt (Line 373, column 4) [set_country_flag = war_over]
 	set|set: <mod>\events\WW1England.txt (Line 322, column 4) [set_country_flag = war_over]
 	set|set: <mod>\events\WW1England.txt (Line 289, column 4) [set_country_flag = war_over]
-	set|set: <mod>\events\WW1Germany.txt (Line 489, column 4) [set_country_flag = war_over]
+	set|set: <mod>\events\WW1Germany.txt (Line 512, column 4) [set_country_flag = war_over]
 	set|set: <mod>\events\WW1Ottoman.txt (Line 412, column 4) [set_country_flag = war_over]
 	set|set: <mod>\events\WW1Ottoman.txt (Line 166, column 4) [set_country_flag = war_over]
 	set|set: <mod>\events\WW1Ottoman.txt (Line 140, column 4) [set_country_flag = war_over]
@@ -3207,7 +3111,6 @@ war_over
 	set|set: <mod>\events\WW1Russia.txt (Line 1207, column 4) [set_country_flag = war_over]
 	chk|chk: <mod>\common\triggered_modifiers.txt (Line 322, column 12) [has_country_flag = war_over]
 win_balkans
-	chk|chk: <mod>\common\cb_types.txt (Line 221, column 20) [has_country_flag = win_balkans]
 	set|set: <mod>\events\WW1SecondBalkan.txt (Line 839, column 5) [set_country_flag = win_balkans]
 	chk|chk: <mod>\events\WW1SecondBalkan.txt (Line 671, column 6) [has_country_flag = win_balkans]
 	chk|chk: <mod>\events\WW1SecondBalkan.txt (Line 511, column 6) [has_country_flag = win_balkans]
@@ -3238,10 +3141,6 @@ yuan_shikai
 	set|set: <mod>\events\WW1Xinhai Revolution.txt (Line 280, column 4) [set_country_flag = yuan_shikai]
 	chk|chk: <mod>\events\WW1Xinhai Revolution.txt (Line 264, column 5) [has_country_flag = yuan_shikai]
 yuanshikai
-	set|set: <mod>\history\countries\CHC - Communist China.txt (Line 333, column 1) [set_country_flag = yuanshikai]
-	set|set: <mod>\history\countries\CHI - Nationalist China.txt (Line 333, column 1) [set_country_flag = yuanshikai]
-	set|set: <mod>\history\countries\PRC - Provisional ROC.txt (Line 322, column 1) [set_country_flag = yuanshikai]
-	set|set: <mod>\history\countries\ROC - ROC.txt (Line 330, column 1) [set_country_flag = yuanshikai]
 	set|set: <mod>\events\WW1Qing.txt (Line 471, column 4) [set_country_flag = yuanshikai]
 	chk|chk: <mod>\events\WW1Qing.txt (Line 457, column 5) [has_country_flag = yuanshikai]
 yugoslavia_now
@@ -3258,5 +3157,5 @@ zapata_revolt_diaz
 	set|set: <mod>\events\WW1Mexico.txt (Line 233, column 12) [set_country_flag = zapata_revolt_diaz]
 	chk|chk: <mod>\events\WW1Mexico.txt (Line 218, column 19) [has_country_flag = zapata_revolt_diaz]
 zeppelin_bombing
-	chk|chk: <mod>\decisions\Germany.txt (Line 45, column 7) [has_country_flag = Zeppelin_bombing]
-	set|set: <mod>\decisions\Germany.txt (Line 58, column 6) [set_country_flag = Zeppelin_bombing]
+	chk|chk: <mod>\decisions\Germany.txt (Line 70, column 7) [has_country_flag = Zeppelin_bombing]
+	set|set: <mod>\decisions\Germany.txt (Line 83, column 6) [set_country_flag = Zeppelin_bombing]

@@ -1,0 +1,22 @@
+diplomatic_decisions = {
+
+	 RUSE3 = {							#Sikorsky_Ilya_Muromets
+		ai_will_do = {
+			 factor = 1
+			 }
+		potential = {
+			 tag = RUS
+			 war = yes
+			 date = 1914.12.10
+			 not = {
+				 has_country_flag = SIM
+				 }
+			 }
+		allow = {
+			 }
+		effect = {
+			 country_event = 100150 	#Sikorsky_Ilya_Muromets
+			set_country_flag = SIM
+			 }
+		}
+	}

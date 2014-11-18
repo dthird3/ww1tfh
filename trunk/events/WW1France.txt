@@ -1,3 +1,94 @@
+# Pacifist Jaurès Assassination
+
+country_event = {
+	title = "EVT1914_000121_NAME"
+	desc = "EVT1914_000121_DESC"
+	id = 121
+	 
+	picture = "jaures_cafe"
+	 
+	fire_only_once = yes
+	
+	mean_time_to_happen = { days = 7 }
+	 
+	trigger = {
+		tag = FRA
+		SER = { war_with = AUH }
+		}
+		
+	option = {
+		name = "EVT1914_000121_OPTA"
+		remove_minister = 32145 #Jean_Jaurès
+		dissent = 1
+		}
+}
+
+
+# Dissolve Viviani Administration
+ country_event = {
+	title = "EVT1914_000122_NAME"
+	desc = "EVT1914_000122_DESC"
+	id = 122
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	 
+	option = {
+		name = "EVT1914_000122_OPTA"
+		head_of_government = 32111 #Aristide_Briand
+		foreign_minister = 32111 #Aristide_Briand
+		armament_minister = 32138 #Joseph_Gallieni
+		minister_of_security = 32139 #Louis_Malvy
+		dissent = -2
+		}
+	}
+
+
+# Appoint Foch as Supreme Allied Commander
+
+ country_event = {
+	title = "EVT1914_000124_NAME"
+	desc = "EVT1914_000124_DESC"
+	id = 124
+	 
+	picture = "Foch"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+		 
+	option = {
+		name = "EVT1914_000124_OPTA"
+		chief_of_staff = 32081                 #Ferdinand_Foch
+		}
+	}
+
+
+# Appoint Clemenceau as Prime Minister
+ country_event = {
+	title = "EVT1914_000125_NAME"
+	desc = "EVT1914_000125_DESC"
+	id = 125
+	
+	picture = "Clemenceau"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = { days = 7 }
+
+	option = {
+		name = "EVT1914_000125_OPTA"
+		head_of_government = 32118 #Georges_Clemenceau
+		armament_minister = 32118 #Georges_Clemenceau
+		}
+	}
+
+
 # French National Unity Boost at start of war
 
 country_event = {

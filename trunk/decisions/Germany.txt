@@ -1,4 +1,29 @@
 diplomatic_decisions = {
+
+	appoint_vonfalkenhayn = { 
+		ai_will_do = { factor = 1 }
+		
+		potential = {
+			 tag = GER
+			 not = { chief_of_staff = 34215 }     #Erich_von_Falkenhayn
+			 GER = { war_with = FRA }
+			 date = 1914.9.13
+			 not = { has_country_flag = Appoint_Von_Falkenhayn }
+			 }
+			 
+		allow = {
+			 not = {
+				 2613 = { controlled_by = GER }		#Paris
+				 }
+			 }
+			 
+		effect = {
+			country_event = 445                     #Appoint_Von_Falkenhayn_as_Chief_of_Staff
+			set_country_flag = Appoint_Von_Falkenhayn
+			}
+		}
+
+
 	 break_blockade = {#Break_the_UK_Blockade
 		ai_will_do = {
 			 factor = 1
@@ -63,7 +88,7 @@ diplomatic_decisions = {
 			 }
 		}
 		
-	 support_the_irish = {						     # Support the Irish
+	support_the_irish = {						     # Support the Irish
 		ai_will_do = { factor = 1 }
 		
 		potential = {
@@ -89,5 +114,5 @@ diplomatic_decisions = {
 			 GER = { set_country_flag = libau_sent }
 			 GER = { country_event = 190041 }           # Support the Irish
 			 }
-		}		
+	}
 }

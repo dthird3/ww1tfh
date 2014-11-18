@@ -1,4 +1,27 @@
+#Appoint Von Falkenhayn as Chief of Staff
 
+ country_event = {
+	title = "EVT1914_000445_NAME"
+	desc = "EVT1914_000445_DESC"
+	id = 445
+	 
+	picture = "vonfalkenhayn" 
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		name = "EVT1914_000445_OPTA"
+		chief_of_staff = 34215 #Erich_von_Falkenhayn
+		chief_of_army = 34215 #Erich_von_Falkenhayn
+		remove_minister = 34246 #Helmuth_von_Moltke
+		kill_leader = 34041 #von_Moltke_H.
+		dissent = -2
+		}
+	}
+	
+	
 #Commence Zeppelin campaign
 
  country_event = {
@@ -684,3 +707,257 @@
 		 }
 	}
 
+
+######################## REVIEW AND FIX ###################
+#Sailor's mutiny!
+
+ country_event = {
+	title = "DH_EVENT_2191515_TITLE"
+	desc = "DH_EVENT_2191515_DESC"
+	id = 418
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = { days = 5 }
+	
+	trigger = {
+# add trigger for Naval losses compared to ENG
+		tag = GER
+		war = yes
+		date = 1917.06.30
+		}
+		
+	option = {
+		 name = "DH_EVENT_2191515_Option7"
+		 dissent = 2
+# More effects like French Army mutiny
+		 set_global_flag = 2191515_EVENT_DONE
+		 }
+	}
+
+
+#The Revolt spreads!
+
+ country_event = {
+	title = "DH_EVENT_2191516_TITLE"
+	desc = "DH_EVENT_2191516_DESC"
+	id = 419
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = { days = 2 }
+	
+	trigger = {
+		tag = GER
+		war = no
+		date = 1917.06.30
+		}
+	option = {
+		 name = "DH_EVENT_2191516_Option7"
+		 dissent = 2
+# More effects like French Army mutiny
+		 set_global_flag = 2191516_EVENT_DONE
+		 }
+	}
+
+
+### CREATE BETTER TRIGGERS or DELETE	
+
+#Two republics proclaimed...
+
+ country_event = {
+	title = "DH_EVENT_2191517_TITLE"
+	desc = "DH_EVENT_2191517_DESC"
+	id = 420
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 3
+		 }
+	trigger = {
+		 has_global_flag = 2191515_EVENT_DONE
+		 dissent = 30
+		 tag = GER
+		 date = 1914.1.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2191517_Option7"
+		 dissent = 2
+		 }
+	}
+
+
+#Creation of Council of the People's Deputies
+
+ country_event = {
+	title = "DH_EVENT_2191518_TITLE"
+	desc = "DH_EVENT_2191518_DESC"
+	id = 421
+	 
+	picture = "news_paper"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = no
+	 
+	mean_time_to_happen = {
+		 days = 3
+		 }
+	trigger = {
+		 has_global_flag = 2191516_EVENT_DONE
+		 dissent = 30
+		 tag = GER
+		 date = 1914.1.1
+		 not = {
+			 date = 1925.12.30
+			 }
+		 }
+	option = {
+		 name = "DH_EVENT_2191518_Option7"
+		 dissent = 1
+		 }
+	}
+
+
+#Official abdication of Wilhelm II
+
+	country_event = {
+		title = "DH_EVENT_2191519_TITLE"
+		desc = "DH_EVENT_2191519_DESC"
+		id = 422
+	 
+		picture = "news_paper"
+	 
+		fire_only_once = yes
+	 
+		mean_time_to_happen = { days = 5 }
+		
+	trigger = {
+		 has_global_flag = 2191515_EVENT_DONE
+		 tag = GER
+		 date = 1914.1.1
+		 not = { date = 1925.12.30 }
+		 }
+	option = {
+		name = "DH_EVENT_2191519_Option7"
+		dissent = -20
+		head_of_state = 34272 #Vollzugsrat
+		head_of_government = 34274 #Friedrich_Ebert
+		foreign_minister = 34283 #Hugo_Haase
+		armament_minister = 34275 #Philipp_Scheidemann
+		minister_of_security = 34274 #Friedrich_Ebert
+		minister_of_intelligence = 34314 #Martin_Braune
+		chief_of_staff = 34247 #Paul_von_Hindenburg
+		chief_of_army = 34254 #Wilhelm_Groener
+		chief_of_navy = 34318 #Maximilian_Rogge
+		chief_of_air = 34269 #Ernst_von_Hoeppner
+
+        remove_minister = 34177 #Wilhelm_II
+        remove_minister = 34178 #Wilhelm_III
+        remove_minister = 34179 #Bernhard_von_Bülow
+        remove_minister = 34180 #Theobald_von_Bethmann_Hollweg
+        remove_minister = 34181 #Georg_Michaelis
+        remove_minister = 34182 #Georg_von_Hertling
+        remove_minister = 34183 #Maximilian_von_Baden
+        remove_minister = 34184 #Wilhelm_Eduard_von_Schoen
+        remove_minister = 34185 #Alfred_von_Kiderlen_Waechter
+        remove_minister = 34186 #Gottlieb_von_Jagow
+        remove_minister = 34187 #Arthur_Zimmermann
+        remove_minister = 34188 #Richard_von_Kühlmann
+        remove_minister = 34189 #Paul_von_Hintze
+        remove_minister = 34190 #Wilhelm_Heinrich_Solf
+        remove_minister = 34191 #Adolf_Marschall_von_Bieberstein
+        remove_minister = 34192 #Hans_von_Wangenheim
+        remove_minister = 34193 #Paul_Metternich
+        remove_minister = 34194 #Johann_Heinrich_von_Bernstorff
+        remove_minister = 34195 #Adolf_Georg_von_Maltzan
+        remove_minister = 34196 #Otto_Wiedfeldt
+        remove_minister = 34197 #Julius_von_Waldthausen
+        remove_minister = 34198 #Karl_von_Luxburg
+        remove_minister = 34199 #Nikolaus_von_Wallwitz
+        remove_minister = 34200 #Franz_Olshausen
+        remove_minister = 34201 #Adolf_Pauli
+        remove_minister = 34202 #Friedrich_von_Keller
+        remove_minister = 34203 #Franz_von_Reichenau
+        remove_minister = 34204 #Eugen_Rümelin
+        remove_minister = 34205 #Ulrich_von_Brockdorff_Rantzau
+        remove_minister = 34206 #Konstantin_von_Neurath
+        remove_minister = 34207 #Hugo_von_Radolin
+        remove_minister = 34208 #Leopold_von_Hoesch
+        remove_minister = 34209 #Hellmuth_Lucius_von_Stoedten
+        remove_minister = 34210 #Heinrich_von_Tschirschky
+        remove_minister = 34211 #Ernst_Langwerth_von_Simmern
+        remove_minister = 34212 #Friedrich_Sthamer
+        remove_minister = 34213 #Karl_von_Einem
+        remove_minister = 34214 #Josias_von_Heeringen
+        remove_minister = 34215 #Erich_von_Falkenhayn
+        remove_minister = 34216 #Adolf_Wild_von_Hohenborn
+        remove_minister = 34217 #Hermann_von_Stein
+        remove_minister = 34218 #Heinrich_Scheuch
+        remove_minister = 34219 #Alfred_von_Tirpitz
+        remove_minister = 34220 #Eduard_von_Capelle
+        remove_minister = 34221 #Paul_Behncke
+        remove_minister = 34222 #Ernst_Karl_August_Klemens_von_Mann
+        remove_minister = 34223 #Hermann_von_Stengel
+        remove_minister = 34224 #Reinhold_von_Sydow
+        remove_minister = 34225 #Adolf_Wermuth
+        remove_minister = 34226 #Hermann_Kühn
+        remove_minister = 34227 #Karl_Helfferich
+        remove_minister = 34228 #Siegfried_von_Roedern
+        remove_minister = 34229 #Rudolf_Schwander
+        remove_minister = 34230 #Hans_Karl_von_Stein_zu_Nord__und_Ostheim
+        remove_minister = 34231 #Clemens_von_Delbrück
+        remove_minister = 34232 #Max_Wallraf
+        remove_minister = 34233 #Friedrich_von_Moltke
+        remove_minister = 34234 #Johann_von_Dallwitz
+        remove_minister = 34235 #Friedrich_Wilhelm_von_Loebell
+        remove_minister = 34236 #Wilhelm_Arnold_Drews
+        remove_minister = 34237 #Tilo_von_Wilmowsky
+        remove_minister = 34238 #Karl_Trimborn
+        remove_minister = 34239 #Karl_Brose
+        remove_minister = 34240 #Wilhelm_Heye
+        remove_minister = 34241 #Walter_Nicolai
+        remove_minister = 34242 #Alfred_Tapken
+        remove_minister = 34243 #Walter_Isendahl
+        remove_minister = 34244 #Paul_Ebert
+        remove_minister = 34245 #Friedrich_Gempp
+        remove_minister = 34246 #Helmuth_von_Moltke
+        remove_minister = 34247 #Paul_von_Hindenburg
+        remove_minister = 34248 #Hans_von_Seeckt
+        remove_minister = 34249 #August_von_Mackensen
+        remove_minister = 34250 #Colmar_von_der_Goltz
+        remove_minister = 34251 #Hermann_von_Eichhorn
+        remove_minister = 34252 #Karl_von_Bülow
+        remove_minister = 34253 #Erich_Ludendorff
+        remove_minister = 34254 #Wilhelm_Groener
+        remove_minister = 34255 #Wilhelm_Büchsel
+        remove_minister = 34256 #Friedrich_von_Baudissin
+        remove_minister = 34257 #Max_von_Fischel
+        remove_minister = 34258 #August_von_Heeringen
+        remove_minister = 34259 #Hugo_von_Pohl
+        remove_minister = 34260 #Gustav_Bachmann
+        remove_minister = 34261 #Henning_von_Holtzendorff
+        remove_minister = 34262 #Reinhard_Scheer
+        remove_minister = 34263 #Adolf_von_Trotha
+        remove_minister = 34264 #Andreas_Michelsen
+        remove_minister = 34265 #Walter_von_Eberhardt
+        remove_minister = 34266 #Richard_Roethe
+        remove_minister = 34267 #Wilhelm_Siegert
+        remove_minister = 34268 #Hermann_von_der_Lieth_Thomsen
+        remove_minister = 34269 #Ernst_von_Hoeppner
+        remove_minister = 34270 #Wilhelm_Haehnelt
+        remove_minister = 34271 #Peter_Strasser
+		}
+	}
