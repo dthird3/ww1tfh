@@ -1,0 +1,62 @@
+#King Chulalongkorn dies
+
+ country_event = {
+	title = "SIAE1"
+	desc = "desc_SIAE1"
+	id = 100203
+	 
+	picture = "SIAP1"
+	 
+	fire_only_once = yes
+
+	major = yes
+	 
+	trigger = {
+		tag = SIA
+		head_of_state = 83053                         #Rama_V
+		date = 1910.10.23
+		}
+		 
+	option = {
+		name = "opta_SIAE1"
+		ai_chance = { factor = 100 }
+		SIA = { head_of_state = 83052 }                #Rama_VI
+		remove_minister = 83053 #Rama_V
+		}
+	}
+
+
+# Siam declares war on CP  with resumption of unrestricted Sub war
+
+country_event = {
+	title = "EVT1914_100290_NAME"
+	desc = "EVT1914_100290_DESC"
+	id = 100290
+	
+	picture = "Siamese_troops"
+	fire_only_once = yes
+	major = yes
+	 
+	trigger = {
+		tag = SIA
+		GER = { has_country_flag = Send_Zimmermann }
+		}
+	 
+	option = {
+		name = "ACTION_NAME_GREAT" 
+		SIA = { join_faction = allies }
+		SIA = { neutrality = -40 }
+		ENG = { load_oob = "SIA_1917_exped.txt" }
+		ENG = { country_event = 100291 }
+		relation = { who = ENG
+				     value = 40 }
+		relation = { who = FRA
+				     value = 40 }
+		relation = { who = GER
+				     value = -40 }
+		relation = { who = AUH
+				     value = -40 } 
+		GER = { threat = { who = SIA
+				           value = 30	} }
+	}
+}

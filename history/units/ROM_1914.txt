@@ -7,242 +7,134 @@
 		name = "Royal Romanian Army HQ"
 		historical_model = 0 
 		}
-	
-	 corps = {
-		location = 3987  # Craiova
-		name = "I Corps"
 		
-		 regiment = {
-			type = hq_brigade 
-			name = "I Corps HQ"
-			historical_model = 0 
-			}
-		
-		 division = {
-			location = 3987  # Craiova
-			is_reserve = no 
-			name = "Divizia 1 Infanterie"
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "1. Infanterie Brigazi"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "2. Infanterie Brigazi"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "31. Infanterie Brigazi"
-				historical_model = 2 
-				}
-			}
-		
-		 division = {
-			location = 3987  # Craiova
-			is_reserve = no 
-			name = "Divizia 2 Infanterie"
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "4. Infanterie Brigazi"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "33. Infanterie Brigazi"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = artillery_brigade 
-				experience = 10 
-				name = "2. Artillerie Brigazi"
-				historical_model = 0 
-				}
-			}
-		}
-	
 	 corps = {
 		location = 3917  # Bucuresti
-		name = "II Corps"
+		name = "5. Corp de armata"
 		
 		 regiment = {
 			type = hq_brigade 
-			name = "II Corps HQ"
+			name = "5. Corp de armata HQ"
 			historical_model = 0 
 			}
 		
 		 division = {
+			location = 3917  # Bucuresti
+			is_reserve = no 
+			name = "Divizia 10 Infanterie"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "20. Infanterie Brigazi"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "40. Infanterie Brigazi"
+				historical_model = 2 
+				}
+				
+			 regiment = {
+				type = artillery_brigade 
+				experience = 10 
+				name = "18. Artillerie Brigazi"
+				historical_model = 0 
+				}				
+			}
+			
+		division = {
+			location = 3917  # Bucuresti
+			is_reserve = no 
+			name = "Divizia 15 Infanterie"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 5 
+				name = "29. Infanterie Brigazi"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = militia_brigade 
+				experience = 5 
+				name = "30. Infanterie Brigazi"
+				historical_model = 1 
+				}
+				
+			 regiment = {
+				type = artillery_brigade 
+				experience = 10 
+				name = "15. Artillerie Brigazi"
+				historical_model = 0 
+				}					
+			}
+		}
+
+		division = {
 			location = 3917  # Bucuresti
 			is_reserve = yes 
-			name = "Divizia 3 Infanterie"
+			name = "Bucuresti pozitie fortificate"
 			
-			 regiment = {
-				type = infantry_brigade 
+			regiment = {
+				type = garrison_brigade 
 				experience = 5 
-				name = "5. Infanterie Brigazi"
+				name = "Bucuresti pozitie fortificate"
 				historical_model = 1 
 				}
 			
-			 regiment = {
-				type = infantry_brigade 
+			regiment = {
+				type = garrison_brigade 
 				experience = 5 
-				name = "6. Infanterie Brigazi"
+				name = "Bucuresti pozitie fortificate"
 				historical_model = 1 
 				}
-			
-			 regiment = {
-				type = artillery_brigade 
-				experience = 5 
-				name = "3. Artillerie Brigazi"
-				historical_model = 0 
-				}
-			}
-		
-		 division = {
-			location = 3917  # Bucuresti
-			is_reserve = no 
-			name = "Divizia 4 Infanterie"
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "8. Infanterie Brigazi"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "34. Infanterie Brigazi"
-				historical_model = 2 
-				}
-			}
-		
-		 division = {
-			location = 3917  # Bucuresti
-			is_reserve = no 
-			name = "Divizia 9 Infanterie"
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "19. Infanterie Brigazi"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "Frim. Infanterie Brigazi"
-				historical_model = 2 
-				}
-			}
-		
-		 division = {
-			location = 3987  # Craiova
-			is_reserve = no 
-			name = "1. Brigazi Calarasi"
-			
-			 regiment = {
-				type = cavalry_brigade 
-				experience = 10 
-				name = "1. Brigazi Calarasi"
-				historical_model = 2 
-				}
-			}
-		
-		 division = {
-			location = 3987  # Craiova
-			is_reserve = no 
-			name = "2. Brigazi Calarasi"
-			
-			 regiment = {
-				type = cavalry_brigade 
-				experience = 10 
-				name = "2. Brigazi Calarasi"
-				historical_model = 2 
-				}
-			}
-		}
+		}		
 	
-	 corps = {
-		location = 3919  # Constanta
-		name = "III Corps"
-		
-		 regiment = {
-			type = hq_brigade 
-			name = "III Corps HQ"
-			historical_model = 0 
-			}
-		
-		 division = {
-			location = 3919  # Constanta
-			is_reserve = no 
-			name = "Divizia 5 Infanterie"
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "9. Infanterie Brigazi"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "10. Infanterie Brigazi"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = artillery_brigade 
-				experience = 10 
-				name = "5. Artillerie Brigazi"
-				historical_model = 0 
-				}
-			}
-		
-		 division = {
-			location = 3919  # Constanta
-			is_reserve = no 
-			name = "Divizia 6 Infanterie"
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "11. Infanterie Brigazi"
-				historical_model = 2 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 10 
-				name = "12. Infanterie Brigazi"
-				historical_model = 2 
-				}
-			}
-		}
-	
-	 corps = {
+	 army = {
 		location = 3306  # Iasi
-		name = "IV Corps"
+		name = "Armata de Nord"
 		
 		 regiment = {
 			type = hq_brigade 
-			name = "IV Corps HQ"
+			name = "Armata de Nord HQ"
 			historical_model = 0 
+			}
+		
+		 division = {
+			location = 3306  # Iasi
+			is_reserve = no 
+			name = "Divizia 14 Infanterie"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "27. Infanterie Brigazi"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "28. Infanterie Brigazi"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = militia_brigade 
+				experience = 5 
+				name = "4. Mixta Brigazi"
+				historical_model = 1 
+				}
+				
+			 regiment = {
+				type = artillery_brigade 
+				experience = 10 
+				name = "14. Artillerie Brigazi"
+				historical_model = 0 
+				}				
 			}
 		
 		 division = {
@@ -271,71 +163,520 @@
 				historical_model = 0 
 				}
 			}
-		
+			
 		 division = {
 			location = 3306  # Iasi
-			is_reserve = yes 
+			is_reserve = no 
 			name = "Divizia 8 Infanterie"
 			
 			 regiment = {
 				type = infantry_brigade 
-				experience = 5 
+				experience = 10 
 				name = "15. Infanterie Brigazi"
-				historical_model = 1 
+				historical_model = 2 
 				}
 			
 			 regiment = {
 				type = infantry_brigade 
-				experience = 5 
+				experience = 10 
 				name = "16. Infanterie Brigazi"
-				historical_model = 1 
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = artillery_brigade 
+				experience = 10 
+				name = "8. Artillerie Brigazi"
+				historical_model = 0 
 				}
 			}
-		}
-	
-	 corps = {
-		location = 3917  # Bucuresti
-		name = "Divizia 10 Infanterie"
-		
-		 regiment = {
-			type = hq_brigade 
-			name = "Divizia 10 Infanterie HQ"
-			historical_model = 0 
-			}
-		
+
 		 division = {
-			location = 3917  # Bucuresti
+			location = 3306  # Iasi
 			is_reserve = no 
-			name = "Divizia 10 Infanterie"
+			name = "4. Brigazi Calarasi"
 			
 			 regiment = {
-				type = infantry_brigade 
-				experience = 5 
-				name = "20. Infanterie Brigazi"
-				historical_model = 1 
-				}
-			
-			 regiment = {
-				type = infantry_brigade 
-				experience = 5 
-				name = "20. Infanterie Brigazi"
-				historical_model = 1 
+				type = cavalry_brigade 
+				experience = 10 
+				name = "2. Brigazi Calarasi"
+				historical_model = 2 
 				}
 			}
+
+		 division = {
+			location = 3306  # Iasi
+			is_reserve = no 
+			name = "Divizia 2. Cavalerie"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "Brigazi 4. Rosiori"
+				historical_model = 2 
+				}
+				
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "Brigazi 5. Rosiori"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "Brigazi 6. Rosiori"
+				historical_model = 2 
+				}
+			}			
 		}
-	
-	 corps = {
-		location = 3917  # Bucuresti
-		name = "Divizia 1 Cavalerie"
+
+
+	 army = {
+		location = 3987  # Craiova
+		name = "2. armata"
 		
 		 regiment = {
 			type = hq_brigade 
-			name = "Divizia 1 Cavalerie HQ"
+			name = "2. armata HQ"
+			historical_model = 0 
+			}
+			
+	 corps = {
+		location = 3987  # Craiova
+		name = "3. Corp de armata"
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "3. Corp de armata HQ"
 			historical_model = 0 
 			}
 		
 		 division = {
-			location = 3917  # Bucuresti
+			location = 3987  # Craiova
+			is_reserve = no 
+			name = "Divizia 5 Infanterie"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "9. Infanterie Brigazi"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "10. Infanterie Brigazi"
+				historical_model = 2 
+				}
+				
+			 regiment = {
+				type = artillery_brigade 
+				experience = 10 
+				name = "5. Artillerie Brigazi"
+				historical_model = 0 
+				}				
+			}
+		
+		 division = {
+			location = 3987  # Craiova
+			is_reserve = no 
+			name = "Divizia 6 Infanterie"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "11. Infanterie Brigazi"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "12. Infanterie Brigazi"
+				historical_model = 2 
+				}
+				
+			 regiment = {
+				type = artillery_brigade 
+				experience = 10 
+				name = "6. Artillerie Brigazi"
+				historical_model = 0 
+				}				
+			}
+		}	
+		
+	 corps = {
+		location = 3987  # Craiova
+		name = "2. Corp de armata"
+		
+		regiment = {
+			type = hq_brigade 
+			name = "2. Corp de armata HQ"
+			historical_model = 0 
+			}	
+
+		division = {
+			location = 3987  # Craiova
+			is_reserve = no 
+			name = "Divizia 4 Infanterie"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "8. Infanterie Brigazi"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "34. Infanterie Brigazi"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = artillery_brigade 
+				experience = 10 
+				name = "4. Artillerie Brigazi"
+				historical_model = 0 
+				}
+			}
+
+		division = {
+			location = 3987  # Craiova
+			is_reserve = no 
+			name = "Divizia 3 Infanterie"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "5. Infanterie Brigazi"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "6. Infanterie Brigazi"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = artillery_brigade 
+				experience = 10 
+				name = "3. Artillerie Brigazi"
+				historical_model = 0 
+				}
+			}
+			
+		division = {
+			location = 3987  # Craiova
+			is_reserve = no 
+			name = "3. Brigazi Calarasi"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "3. Brigazi Calarasi"
+				historical_model = 2 
+				}
+			}
+		}
+		}
+	
+	 army = {
+			location = 4120  # Turnu Macur
+		name = "1. armata"
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "1. armata HQ"
+			historical_model = 0 
+			}
+			
+		corps = {
+			location = 4120  # Turnu Macur
+			name = "1. Corp de armata"
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "1. Corp de armata HQ"
+			historical_model = 0 
+			}
+		
+		 division = {
+			location = 4120  # Turnu Macur
+			is_reserve = no 
+			name = "Divizia 11 Infanterie"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "21. Infanterie Brigazi"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = militia_brigade 
+				experience = 10 
+				name = "22. Infanterie Brigazi"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = artillery_brigade 
+				experience = 10 
+				name = "11. Artillerie Brigazi"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 4120  # Turnu Macur
+			is_reserve = no 
+			name = "Divizia 2 Infanterie"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "3. Infanterie Brigazi"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "4. Infanterie Brigazi"
+				historical_model = 2 
+				}
+				
+			 regiment = {
+				type = artillery_brigade 
+				experience = 10 
+				name = "2. Artillerie Brigazi"
+				historical_model = 0 
+				}				
+			}
+			
+		division = {
+			location = 4120  # Turnu Macur
+			is_reserve = no 
+			name = "1. Brigazi Calarasi"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "1. Brigazi Calarasi"
+				historical_model = 2 
+				}
+			}			
+		}
+		
+		 division = {
+			location = 4120  # Turnu Macur
+			is_reserve = no 
+			name = "Divizia 1 Infanterie"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "1. Infanterie Brigazi"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "2. Infanterie Brigazi"
+				historical_model = 2 
+				}
+				
+			 regiment = {
+				type = militia_brigade  
+				experience = 5 
+				name = "31. Infanterie Brigazi"
+				historical_model = 2 
+				}				
+			
+			 regiment = {
+				type = artillery_brigade 
+				experience = 10 
+				name = "1. Artillerie Brigazi"
+				historical_model = 0 
+				}
+			}
+		
+		 division = {
+			location = 4120  # Turnu Macur
+			is_reserve = no 
+			name = "Divizia 12 Infanterie"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "23. Infanterie Brigazi"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = militia_brigade 
+				experience = 10 
+				name = "24. Infanterie Brigazi"
+				historical_model = 2 
+				}
+				
+			 regiment = {
+				type = artillery_brigade 
+				experience = 10 
+				name = "12. Artillerie Brigazi"
+				historical_model = 0 
+				}				
+			}
+		
+		 division = {
+			location = 4120  # Turnu Macur
+			is_reserve = no 
+			name = "Divizia 13 Infanterie"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "25. Infanterie Brigazi"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = militia_brigade 
+				experience = 10 
+				name = "26. Infanterie Brigazi"
+				historical_model = 2 
+				}
+				
+			 regiment = {
+				type = artillery_brigade 
+				experience = 10 
+				name = "13. Artillerie Brigazi"
+				historical_model = 0 
+				}				
+			}
+		}
+
+	army = {
+		location = 3578  # Topliceni
+		name = "3. armata"
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "3. armata HQ"
+			historical_model = 0 
+			}
+			
+	 corps = {
+		location = 3374         # Onesti
+		name = "Grup de vest"
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "Grup de vest HQ"
+			historical_model = 0 
+			}
+		
+		 division = {
+			location = 3374         # Onesti
+			is_reserve = yes 
+			name = "Divizia 20 Infanterie"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "1. Mixta Brigazi"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = militia_brigade 
+				experience = 5 
+				name = "41. Mixta Brigazi"
+				historical_model = 1 
+				}
+			}
+		}
+
+	 corps = {
+		location = 3578  # Topliceni
+		name = "Centru de grup"
+		
+		 regiment = {
+			type = hq_brigade 
+			name = "Centru de grup HQ"
+			historical_model = 0 
+			}
+			
+		 division = {
+			location = 3578  # Topliceni
+			is_reserve = yes 
+			name = "Divizia 16 Infanterie"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "42. Infanterie Brigazi"
+				historical_model = 2 
+				}
+			
+			 regiment = {
+				type = militia_brigade 
+				experience = 5 
+				name = "44. Infanterie Brigazi"
+				historical_model = 1 
+				}
+				
+			 regiment = {
+				type = artillery_brigade 
+				experience = 10 
+				name = "11. Artillerie Brigazi"
+				historical_model = 0 
+				}				
+			}
+			
+		 division = {
+			location = 3578  # Topliceni
+			is_reserve = yes 
+			name = "Divizia 18 Infanterie"
+			
+			 regiment = {
+				type = militia_brigade 
+				experience = 5 
+				name = "2. Mixta Brigazi"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = militia_brigade 
+				experience = 5 
+				name = "3 Mixta Brigazi"
+				historical_model = 1 
+				}
+			}			
+			
+		division = {
+			location = 3578  # Topliceni
+			is_reserve = no 
+			name = "2. Brigazi Calarasi"
+			
+			 regiment = {
+				type = cavalry_brigade 
+				experience = 10 
+				name = "2. Brigazi Calarasi"
+				historical_model = 2 
+				}
+			}			
+		
+		 division = {
+			location = 3578  # Topliceni
 			is_reserve = no 
 			name = "Divizia 1 Cavalerie"
 			
@@ -361,102 +702,118 @@
 				}
 			}
 		}
-	
+			
 	 corps = {
 		location = 3919  # Constanta
-		name = "Divizia 2 Cavalerie"
+		name = "Grup de est"
 		
 		 regiment = {
 			type = hq_brigade 
-			name = "Divizia 2 Cavalerie HQ"
+			name = "Grup de est HQ"
 			historical_model = 0 
-			}
-		
+			}			
+			
 		 division = {
 			location = 3919  # Constanta
 			is_reserve = no 
-			name = "Brigazi 4. Rosiori"
+			name = "Divizia 19 Infanterie"
+			
+			 regiment = {
+				type = infantry_brigade 
+				experience = 10 
+				name = "17. Infanterie Brigazi"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = militia_brigade 
+				experience = 5 
+				name = "5. Mixta Brigazi"
+				historical_model = 1 
+				}
+				
+			 regiment = {
+				type = artillery_brigade 
+				experience = 10 
+				name = "19. Artillerie Brigazi"
+				historical_model = 0 
+				}
+			}
+			
+		division = {
+			location = 3919  # Constanta
+			is_reserve = no 
+			name = "5. Brigazi Calarasi"
 			
 			 regiment = {
 				type = cavalry_brigade 
 				experience = 10 
-				name = "Brigazi 5. Rosiori"
+				name = "5. Brigazi Calarasi"
+				historical_model = 2 
+				}
+			}
+		
+		 division = {
+			location = 3847  # Calarasi
+			is_reserve = yes 
+			name = "Divizia 17 Infanterie"
+			
+			 regiment = {
+				type = garrison_brigade 
+				experience = 10 
+				name = "33. Infanterie Brigazi"
 				historical_model = 2 
 				}
 			
 			 regiment = {
-				type = cavalry_brigade 
+				type = garrison_brigade 
 				experience = 10 
-				name = "Brigazi 6. Rosiori"
+				name = "34. Infanterie Brigazi"
 				historical_model = 2 
 				}
 			}
-		}
-	
-	 division = {
-		location = 3580  # St.Georg
-		is_reserve = yes 
-		name = "Brigazi 1 Antrenament"
 		
-		 regiment = {
-			type = militia_brigade 
-			experience = 5 
-			name = "Brigazi 1 Antrenament"
-			historical_model = 0 
+		 division = {
+			location = 3990  # Dobrich
+			is_reserve = yes 
+			name = "Silistra pozitie fortificate"
+			
+			 regiment = {
+				type = garrison_brigade 
+				experience = 5 
+				name = "Silistra pozitie fortificate"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = garrison_brigade 
+				experience = 5 
+				name = "Silistra pozitie fortificate"
+				historical_model = 1 
+				}
+			}
+		
+		 division = {
+		 location = 3919  # Constanta
+			is_reserve = yes 
+			name = "Cernavoda pozitie fortificate"
+			
+			 regiment = {
+				type = garrison_brigade 
+				experience = 5 
+				name = "Cernavoda pozitie fortificate"
+				historical_model = 1 
+				}
+			
+			 regiment = {
+				type = garrison_brigade 
+				experience = 5 
+				name = "Cernavoda pozitie fortificate"
+				historical_model = 1 
+				}
 			}
 		}
-	
-	 division = {
-		location = 3917  # Bucuresti
-		is_reserve = yes 
-		name = "Brigazi 2 Antrenament"
-		
-		 regiment = {
-			type = militia_brigade 
-			experience = 5 
-			name = "Brigazi 2 Antrenament"
-			historical_model = 0 
-			}
-		}
-	
-	 division = {
-		location = 3917  # Bucuresti
-		is_reserve = yes 
-		name = "Brigazi 3 Antrenament"
-		
-		 regiment = {
-			type = militia_brigade 
-			experience = 5 
-			name = "Brigazi 3 Antrenament"
-			historical_model = 0 
-			}
-		}
-	
-	 division = {
-		location = 3919  # Constanta
-		is_reserve = yes 
-		name = "Brigazi 4 Antrenament"
-		
-		 regiment = {
-			type = militia_brigade 
-			experience = 5 
-			name = "Brigazi 4 Antrenament"
-			historical_model = 0 
-			}
-		}
-	
-	 division = {
-		location = 3778  # Ploiesti
-		is_reserve = yes 
-		name = "Brigazi 5 Antrenament"
-		
-		 regiment = {
-			type = militia_brigade 
-			experience = 5 
-			name = "Brigazi 5 Antrenament"
-			historical_model = 0 
-			}
-		}
+	}
 	
 	 navy = {
 		location = 3919  # Constanta
@@ -470,5 +827,4 @@
 			historical_model = 0 
 			}
 		}
-	}
-
+}
