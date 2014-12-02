@@ -154,7 +154,7 @@
 					}
 				
 				 regiment = {
-					type = heavy_artillery_brigade 
+					type = artillery_brigade 
 					experience = 10 
 					name = "5. Artillerie Brigade"
 					historical_model = 1 
@@ -218,7 +218,7 @@
 					}
 				
 				 regiment = {
-					type = heavy_artillery_brigade 
+					type = artillery_brigade 
 					experience = 10 
 					name = "7. Artillerie Brigade"
 					historical_model = 1 
@@ -282,7 +282,7 @@
 					}
 				
 				 regiment = {
-					type = heavy_artillery_brigade 
+					type = artillery_brigade 
 					experience = 10 
 					name = "17. Artillerie Brigade"
 					historical_model = 0 
@@ -476,6 +476,13 @@
 					name = "12. Reserve Brigade"
 					historical_model = 1 
 					}
+					
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "6. Reserve Artillerie Brigade"
+					historical_model = 0 
+					}
 				}
 			}
 		
@@ -509,6 +516,13 @@
 					name = "14. Reserve Brigade"
 					historical_model = 1 
 					}
+					
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "7. Reserve Artillerie Brigade"
+					historical_model = 0 
+					}
 				}
 			
 			 division = {
@@ -529,6 +543,13 @@
 					experience = 5 
 					name = "22. Reserve Brigade"
 					historical_model = 1 
+					}
+					
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "22. Reserve Artillerie Brigade"
+					historical_model = 0 
 					}
 				}
 			
@@ -614,7 +635,7 @@
 					}
 				
 				 regiment = {
-					type = heavy_artillery_brigade 
+					type = artillery_brigade 
 					experience = 10 
 					name = "1. Artillerie brigade"
 					historical_model = 1 
@@ -678,7 +699,7 @@
 					}
 				
 				 regiment = {
-					type = heavy_artillery_brigade 
+					type = artillery_brigade 
 					experience = 10 
 					name = "35. Artillerie brigade"
 					historical_model = 1 
@@ -860,6 +881,13 @@
 					name = "70. Reserve Brigade"
 					historical_model = 1 
 					}
+					
+				 regiment = {
+					type = artillery_brigade 
+					experience = 5 
+					name = "36. Reserve Artillerie Brigade"
+					historical_model = 0 
+					}	
 				}
 			
 			 division = {
@@ -879,6 +907,12 @@
 					name = "6. Reserve Brigade"
 					historical_model = 1 
 					}
+				 regiment = {
+					type = artillery_brigade 
+					experience = 5 
+					name = "3. Reserve Artillerie Brigade"
+					historical_model = 0 
+					}						
 				}
 			
 			 division = {
@@ -1022,6 +1056,13 @@
 					name = "19. Reserve Brigade"
 					historical_model = 1 
 					}
+					
+				 regiment = {
+					type = artillery_brigade 
+					experience = 5 
+					name = "9. Reserve Artillerie Brigade"
+					historical_model = 0 
+					}						
 				}
 			
 			 division = {
@@ -1043,6 +1084,13 @@
 					name = "77. Reserve Brigade"
 					historical_model = 1 
 					}
+					
+				 regiment = {
+					type = artillery_brigade 
+					experience = 5 
+					name = "10. Reserve Artillerie Brigade"
+					historical_model = 0 
+					}						
 				}
 			}
 		
@@ -1076,6 +1124,13 @@
 					name = "23. Infanterie Brigade"
 					historical_model = 1 
 					}
+					
+				 regiment = {
+					type = artillery_brigade 
+					experience = 5 
+					name = "11. Reserve Artillerie Brigade"
+					historical_model = 0 
+					}						
 				}
 			
 			 division = {
@@ -1252,20 +1307,27 @@
 				name = "Garde-Ersatz-Division"
 				
 				 regiment = {
-					type = garrison_brigade 
+					type = waffen_brigade
 					is_reserve = yes 
 					experience = 10 
 					name = "1. Garde Mixed Ersatz Brigade"
-					historical_model = 1 
+					historical_model = 0 
 					}
 				
 				 regiment = {
-					type = garrison_brigade 
+					type = infantry_brigade 
 					is_reserve = yes 
 					experience = 10 
 					name = "5. Garde Mixed Ersatz Brigade"
-					historical_model = 1 
+					historical_model = 0 
 					}
+					
+				 regiment = {
+					type = artillery_brigade 
+					experience = 5 
+					name = "1. Garde Artillerie Brigade"
+					historical_model = 0 
+					}						
 				}
 			
 			 division = {
@@ -1558,9 +1620,9 @@
 					}
 				
 				 regiment = {
-					type = artillery_brigade 
+					type = heavy_artillery_brigade  
 					experience = 10 
-					name = "1st Artillerie brigade"
+					name = "1. Artillerie brigade"
 					historical_model = 1 
 					}
 				}
@@ -1624,7 +1686,7 @@
 					}
 				
 				 regiment = {
-					type = artillery_brigade 
+					type = heavy_artillery_brigade  
 					experience = 10 
 					name = "2. Bayerisches Artillerie"
 					historical_model = 1 
@@ -1819,6 +1881,13 @@
 					name = "11. Bayerisches Reserve Brigade"
 					historical_model = 1 
 					}
+					
+				 regiment = {
+					type = artillery_brigade 
+					experience = 5 
+					name = "5. Bayerisches Artillerie Brigade"
+					historical_model = 0 
+					}					
 				}
 			
 			 division = {
@@ -1877,7 +1946,7 @@
 					}
 				
 				 regiment = {
-					type = artillery_brigade 
+					type = heavy_artillery_brigade 
 					experience = 10 
 					name = "28. Artillerie brigade"
 					historical_model = 1 
@@ -1903,7 +1972,7 @@
 					}
 				
 				 regiment = {
-					type = artillery_brigade 
+					type = heavy_artillery_brigade  
 					experience = 10 
 					name = "29. Artillerie brigade"
 					historical_model = 1 
@@ -1968,7 +2037,7 @@
 					experience = 5 
 					name = "56. Reserve Brigade"
 					historical_model = 1 
-					}
+					}					
 				}
 			
 			 division = {
@@ -2210,7 +2279,7 @@
 					}
 				
 				 regiment = {
-					type = artillery_brigade 
+					type = heavy_artillery_brigade 
 					experience = 10 
 					name = "39. Artillerie brigade"
 					historical_model = 1 
@@ -2691,6 +2760,13 @@
 					name = "50. Reserve Brigade"
 					historical_model = 1 
 					}
+					
+				 regiment = {
+					type = artillery_brigade 
+					experience = 10 
+					name = "25. Reserve Artillerie brigade"
+					historical_model = 0 
+					}					
 				}
 			}
 		

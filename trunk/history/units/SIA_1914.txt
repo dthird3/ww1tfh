@@ -1,60 +1,63 @@
  corps = {
 	location = 6175  # Phet Buri
-	name = "Royal Thai Army"
+	name = "Royal Siamese Army"
 	
 	 regiment = {
 		type = hq_brigade 
-		name = "Royal Thai Army HQ"
+		name = "Royal Siamese Army HQ"
 		historical_model = 0 
 		}
 	
 	 division = {
 		location = 6175  # Phet Buri
 		is_reserve = yes 
-		name = "1. Thai Infantry Div."
+		name = "1. Siamese Infantry Div."
 		
 		 regiment = {
 			type = infantry_brigade 
-			historical_model = 0 
+			name = "Wild Tiger Corps"
+			experience = 10 
+			historical_model = 4 
 			}
 		
 		 regiment = {
 			type = infantry_brigade 
-			historical_model = 0 
+			historical_model = 2 
 			}
 		}
 	
 	 division = {
 		location = 6175  # Phet Buri
 		is_reserve = yes 
-		name = "2. Thai Infantry Div."
+		name = "2. Siamese Infantry Div."
 		
 		 regiment = {
 			type = infantry_brigade 
-			historical_model = 0 
+			historical_model = 2 
 			}
 		
 		 regiment = {
 			type = infantry_brigade 
-			historical_model = 0 
+			historical_model = 2 
 			}
 		}
 	}
 
  division = {
 	location = 6148  # Bangkok
-	name = "Royal Thai Police Force"
+	name = "Royal Siamese Police Force"
 	
 	 regiment = {
 		type = garrison_brigade 
-		historical_model = 0 
+		historical_model = 2 
 		}
 	
 	 regiment = {
 		type = police_brigade 
-		historical_model = 0 
+		historical_model = 2 
 		}
 	}
+
 
  navy = {
 	location = 6175  # Phet Buri
