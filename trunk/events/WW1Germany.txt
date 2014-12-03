@@ -384,7 +384,7 @@
 	id = 100560
 	 
 	picture = "Fokker-crash"
-	
+	mean_time_to_happen = { days = 15 }
 	fire_only_once = yes
 	
 	trigger = {
@@ -412,7 +412,7 @@
 	id = 100562
 	 
 	picture = "Fokker-crash"
-	
+	mean_time_to_happen = { days = 15 }
 	fire_only_once = yes
 	
 	trigger = {
@@ -440,7 +440,7 @@
 	id = 100564
 	 
 	picture = "Fokker-crash"
-	
+	mean_time_to_happen = { days = 15 }
 	fire_only_once = yes
 	
 	trigger = {
@@ -497,11 +497,8 @@
 	id = 190002
 	 
 	picture = "WARP2"
-	 
 	fire_only_once = yes
-	 
 	is_triggered_only = yes
-	 
 	major = yes
 	 
 	option = {
@@ -727,6 +724,7 @@
 		tag = GER
 		war = yes
 		date = 1917.06.30
+		dissent = 20
 		}
 		
 	option = {
@@ -755,6 +753,7 @@
 		tag = GER
 		war = no
 		date = 1917.06.30
+		dissent = 20		
 		}
 	option = {
 		 name = "DH_EVENT_2191516_Option7"
@@ -777,12 +776,9 @@
 	picture = "news_paper"
 	 
 	fire_only_once = yes
-	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = {
-		 days = 3
-		 }
+
+	mean_time_to_happen = { days = 3 }
+	
 	trigger = {
 		 has_global_flag = 2191515_EVENT_DONE
 		 dissent = 30
@@ -845,11 +841,14 @@
 		mean_time_to_happen = { days = 5 }
 		
 	trigger = {
-		 has_global_flag = 2191515_EVENT_DONE
+#		 has_global_flag = 2191515_EVENT_DONE
 		 tag = GER
-		 date = 1914.1.1
-		 not = { date = 1925.12.30 }
+		 not = { faction = axis	}
+		 war = no
+		 date = 1915.1.1
+		 not = { date = 1923.12.30 }
 		 }
+		 
 	option = {
 		name = "DH_EVENT_2191519_Option7"
 		dissent = -20
