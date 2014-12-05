@@ -390,17 +390,13 @@
 			 }
 		 OR = {
 			 date = 1915.4.1
-			 GER = {
-				 has_country_flag = break_blockade
-				 }
+			 GER = { has_country_flag = break_blockade }
 			 }
-		 AND = {
-			 GER = {
-				 total_of_ours_sunk = 15
-				 }
-			 ENG = {
-				 total_of_ours_sunk = 15
-				 }
+		 AND = {									# Multiplayer trigger only
+			GER = { ai = no }
+			ENG = { ai = no }
+			GER = { total_of_ours_sunk = 15 }
+			ENG = { total_of_ours_sunk = 15 }
 			 }
 		 }
 	option = {
