@@ -360,6 +360,54 @@ country_event = {
 	}	
 
 
+# 1916 Cochinchina uprising
+
+ country_event = {
+	title = "EVT1914_190208_NAME"
+	desc = "EVT1914_190208_DESC"
+	id = 190208
+	 
+	picture = "Hanoi_uprising"
+	
+	mean_time_to_happen = { days = 30 }			
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FRA
+		date = 1916.05.01
+	}
+		
+	option = {
+		name = "ACTION_NAME_DAMN"
+		6236 = { create_revolt = 1 }
+		}
+	}
+
+	
+# 1917 Thái Nguyên uprising
+
+ country_event = {
+	title = "EVT1914_190210_NAME"
+	desc = "EVT1914_190210_DESC"
+	id = 190210
+	 
+	picture = "Hanoi_uprising"
+	
+	mean_time_to_happen = { days = 30 }			
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FRA
+		date = 1917.08.01
+	}
+		
+	option = {
+		name = "ACTION_NAME_DAMN"
+		5916 = { create_revolt = 1 }
+		}
+	}	
+	
+	
  country_event = {
 	title = "EVTNAME992910"
 	desc = "EVTDESC992910"
