@@ -181,6 +181,7 @@ country_event = {
 	trigger = {
 		FRA = { has_country_flag = "French_mutiny" }
 		FRA = { ai = no }
+		tag = FRA
  		}
 		 
 	option = {
@@ -210,6 +211,7 @@ country_event = {
 		FRA = { ai = no }
 		FRA = { has_country_modifier = army_demoralised }
 		FRA = { total_offensives = 3 }
+		tag = FRA
  		}
 		 
 	option = {
@@ -235,6 +237,7 @@ country_event = {
 	mean_time_to_happen = { months = 5 }
 		
 	trigger = {
+		tag = FRA
 		USA = {	war_with = GER }
 		FRA = { has_country_modifier = army_demoralised }
  		}
