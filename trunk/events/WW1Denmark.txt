@@ -41,3 +41,73 @@ remove_minister = 25118 #Frederick_VIII
 		}
 	}
 
+country_event = {
+	title = "DENE2"
+	desc = "desc_DENE2"
+	id = 600
+	 
+	picture = "DENE2"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	major = yes
+	 
+	trigger = {
+		 tag = DEN
+		 exists = USA
+		 exists = GER
+		 controls = 5021
+		 or = {
+			war_with = GER
+			and = {
+				war = no
+				GER = { war_with = ENG }
+				date = 1916.8.1
+				}
+			}
+		 }
+	option = {
+		 name = "opta_DENE2"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 5021 = { secede_province = USA }
+		 money = 200
+		 USA = { money = -200 }
+		 relation = {
+				who = USA
+				value = 40
+		}
+		 relation = {
+				who = ENG
+				value = 20
+		}
+		 relation = {
+				who = GER
+				value = -40
+		}
+	}
+	option = {
+		 name = "optb_DENE2"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 dissent = 5
+		 relation = {
+				who = USA
+				value = -40
+		}
+		 relation = {
+				who = ENG
+				value = -20
+		}
+		 relation = {
+				who = GER
+				value = 20
+		}
+	}
+	}
+	
