@@ -73,7 +73,6 @@
 	 
 	picture = "madero_leading_troops"
 	 
-	major = yes
 	fire_only_once = yes
 	mean_time_to_happen = { days = 1 }
 	
@@ -607,14 +606,8 @@
 	fire_only_once = yes      
 	major = yes
 	mean_time_to_happen = { days = 2 }
-
-	trigger = {
-		tag = MXR
-		or = {
-			USA = { has_country_flag = "support_madero_coup" }
-			USA = { has_country_flag = "no_madero_coup" }
-		}
-	}
+	
+	is_triggered_only = yes
 	
 	option = {										
 		name = "ACTION_NAME_DAMN"
@@ -644,18 +637,12 @@
 	major = yes
 	mean_time_to_happen = { days = 2 }
 
-	trigger = {
-		tag = MXR
-		or = {
-			USA = { has_country_flag = "support_madero_coup" }
-			USA = { has_country_flag = "no_madero_coup" }
-		}
-	}
+	is_triggered_only = yes
 	
 	option = {										
 		name = "ACTION_NAME_GREAT"
-		remove_minister = 60032 #Victoriano_Huerta
-		kill_leader = 60003 #Orozco,_Pascual
+		MXR = { remove_minister = 60032 } #Victoriano_Huerta
+		MXR = { kill_leader = 60003 } #Orozco,_Pascual
 		USA = { clr_country_flag = "support_madero_coup" }
 		USA = { clr_country_flag = "no_madero_coup" }
 		MXR = { set_country_flag = "Ten_Tragic_Days" }
