@@ -934,9 +934,8 @@ kill_leader = 90163 #Limpus
 	 
 	is_triggered_only = yes
 	 
-	mean_time_to_happen = {
-		 days = 20
-		 }
+	mean_time_to_happen = { days = 20 }
+	
 	trigger = {
 		 GER = {
 			 war_with = ENG
@@ -965,10 +964,9 @@ kill_leader = 90163 #Limpus
 			 }
 		 tag = ENG
 		 date = 1914.7.28
-		 not = {
-			 date = 1917.12.30
-			 }
+		 not = { date = 1917.12.30 }
 		 }
+		 
 	option = {
 		 name = "DH_EVENT_2001571_Option7"
 		 relation = {
@@ -1004,25 +1002,10 @@ kill_leader = 90163 #Limpus
 			 who = ENG
 			 value = -15
 			 }
-		 9336 = {#Ahvaz
-			secede_province = ENG
-			 }
-		 9366 = {#Behbehan
-			secede_province = ENG
-			 }
-		 9398 = {#Bushehr
-			secede_province = ENG
-			 }
 		 9429 = {#Bandar_e_'Abbas
 			secede_province = ENG
 			 }
-		 9461 = {#Bandar_e_Lengeh
-			secede_province = ENG
-			 }
 		 9462 = {#Minab
-			secede_province = ENG
-			 }
-		 9489 = {#Lamard
 			secede_province = ENG
 			 }
 		 9515 = {#Jask
@@ -1043,32 +1026,25 @@ kill_leader = 90163 #Limpus
 		 9490 = {#Konarak
 			secede_province = ENG
 			 }
-		 9491 = {#Kuhak
-			secede_province = ENG
-			 }
 		 9516 = {#Chabahar
 			secede_province = ENG
 			 }
-		 ENG = {
-			 add_core = 9336
-			 }
-		 ENG = {
-			 add_core = 9366
-			 }
-		 ENG = {
-			 add_core = 9398
-			 }
+		 9400 = { secede_province = ENG }
+		 9369 = { secede_province = ENG }
+		 9285 = { secede_province = ENG }
+		 9314 = { secede_province = ENG }
+		 9339 = { secede_province = ENG }
+		 
+		 9336 = { secede_province = ENG }
+		 9366 = { secede_province = ENG }
+		 9398 = { secede_province = ENG }
+		 9489 = { secede_province = ENG }
+		 9461 = { secede_province = ENG }		 
 		 ENG = {
 			 add_core = 9429
 			 }
 		 ENG = {
-			 add_core = 9461
-			 }
-		 ENG = {
 			 add_core = 9462
-			 }
-		 ENG = {
-			 add_core = 9489
 			 }
 		 ENG = {
 			 add_core = 9515
@@ -1089,11 +1065,21 @@ kill_leader = 90163 #Limpus
 			 add_core = 9490
 			 }
 		 ENG = {
-			 add_core = 9491
-			 }
-		 ENG = {
 			 add_core = 9516
 			 }
+		 ENG = { add_core = 9400 }	
+		 ENG = { add_core = 9369 }
+		 ENG = { add_core = 9285 }
+		 ENG = { add_core = 9314 }
+		 ENG = { add_core = 9339 }		 
+		 
+		 ENG = { add_core = 9336 }	
+		 ENG = { add_core = 9366 }
+		 ENG = { add_core = 9398 }
+		 ENG = { add_core = 9489 }
+		 ENG = { add_core = 9461 }		 		 
+		 ENG = { military_access = PER }
+ 		 TUR = { military_access = PER }
 		 set_global_flag = 2031002_EVENT_DONE
 		 }
 	}
@@ -1170,9 +1156,8 @@ kill_leader = 90163 #Limpus
 	 
 	is_triggered_only = yes
 	 
-	trigger = {
-		 tag = PER
-		 }
+	trigger = { tag = PER }
+	
 	option = {
 		 name = "DH_EVENT_2031003_Option7"
 		 relation = {
@@ -1236,6 +1221,35 @@ kill_leader = 90163 #Limpus
 		 9128 = {#Qazvin
 			secede_province = RUS
 			 }
+		 9250 = { secede_province = RUS }	
+		 9283 = { secede_province = RUS }
+		 9251 = { secede_province = RUS }	
+		 9218 = { secede_province = RUS }	
+		 9188 = { secede_province = RUS }	
+		 9161 = { secede_province = RUS }	
+		 9282 = { secede_province = RUS }	
+		 9249 = { secede_province = RUS }	
+		 9215 = { secede_province = RUS }	
+		 9156 = { secede_province = RUS }	
+		 4568 = { secede_province = RUS }	
+		 9157 = { secede_province = RUS }
+		 9127 = { secede_province = RUS }	
+		 9101 = { secede_province = RUS }
+		 9185 = { secede_province = RUS }	
+		 9158 = { secede_province = RUS }	
+		 9103 = { secede_province = RUS }	
+		 9129 = { secede_province = RUS }			 
+		 9186 = { secede_province = RUS }	
+		 9104 = { secede_province = RUS }	
+		 9159 = { secede_province = RUS }	
+		 9130 = { secede_province = RUS }	
+		 9076 = { secede_province = RUS }	
+		 9187 = { secede_province = RUS }	
+		 9160 = { secede_province = RUS }	
+		 9131 = { secede_province = RUS }	
+		 9105 = { secede_province = RUS }	
+		 9216 = { secede_province = RUS }	
+		 9217 = { secede_province = RUS }		 
 		 RUS = {
 			 add_core = 3594
 			 }
@@ -1293,7 +1307,38 @@ kill_leader = 90163 #Limpus
 		 RUS = {
 			 add_core = 9128
 			 }
-		 }
+		RUS = { add_core = 9250 }	
+		RUS = { add_core = 9283 }
+		RUS = { add_core = 9251 }
+		RUS = { add_core = 9218 }
+		RUS = { add_core = 9188 }
+		RUS = { add_core = 9161 }
+		RUS = { add_core = 9282 }
+		RUS = { add_core = 9249 }
+		RUS = { add_core = 9215 }
+		RUS = { add_core = 9156 }
+		RUS = { add_core = 4568 }	
+		RUS = { add_core = 9157 }
+		RUS = { add_core = 9127 }
+		RUS = { add_core = 9101 }
+		RUS = { add_core = 9185 }
+		RUS = { add_core = 9158 }
+		RUS = { add_core = 9103 }
+		RUS = { add_core = 9129 }
+		RUS = { add_core = 9186 }
+		RUS = { add_core = 9104 }
+		RUS = { add_core = 9159 }
+		RUS = { add_core = 9130 }
+		RUS = { add_core = 9076 }
+		RUS = { add_core = 9187 }
+		RUS = { add_core = 9160 }
+		RUS = { add_core = 9131 }
+		RUS = { add_core = 9105 }
+		RUS = { add_core = 9216 }
+		RUS = { add_core = 9217 }		
+		RUS = { military_access = PER }
+		TUR = { military_access = PER }
+		}
 	}
 
 
@@ -1308,11 +1353,8 @@ kill_leader = 90163 #Limpus
 	 
 	fire_only_once = yes
 	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = {
-		 days = 61
-		 }
+	mean_time_to_happen = { days = 61 }
+	
 	trigger = {
 		 not = {
 			 PER = {
@@ -1333,7 +1375,7 @@ kill_leader = 90163 #Limpus
 				 }
 			 }
 		 or = {
-			 9336 = {#Ahvaz
+			9336 = {#Ahvaz
 				controlled_by = THIS
 				 }
 			 9366 = {#Behbehan
@@ -1349,7 +1391,7 @@ kill_leader = 90163 #Limpus
 		 tag = ENG
 		 date = 1914.7.28
 		 not = {
-			 date = 1925.12.30
+			 date = 1923.12.31
 			 }
 		 }
 	option = {
@@ -1358,25 +1400,10 @@ kill_leader = 90163 #Limpus
 			 who = PER
 			 value = 5
 			 }
-		 9336 = {#Ahvaz
-			secede_province = PER
-			 }
-		 9366 = {#Behbehan
-			secede_province = PER
-			 }
-		 9398 = {#Bushehr
-			secede_province = PER
-			 }
 		 9429 = {#Bandar_e_'Abbas
 			secede_province = PER
 			 }
-		 9461 = {#Bandar_e_Lengeh
-			secede_province = PER
-			 }
 		 9462 = {#Minab
-			secede_province = PER
-			 }
-		 9489 = {#Lamard
 			secede_province = PER
 			 }
 		 9515 = {#Jask
@@ -1397,27 +1424,41 @@ kill_leader = 90163 #Limpus
 		 9490 = {#Konarak
 			secede_province = PER
 			 }
-		 9491 = {#Kuhak
-			secede_province = PER
-			 }
 		 9516 = {#Chabahar
 			secede_province = PER
 			 }
-		 remove_core = 9336
-		 remove_core = 9366
-		 remove_core = 9398
+		 9400 = { secede_province = PER }
+		 9369 = { secede_province = PER }
+		 9285 = { secede_province = PER }
+		 9314 = { secede_province = PER }
+		 9339 = { secede_province = PER }	
+		 9336 = { secede_province = PER }
+		 9366 = { secede_province = PER }
+		 9398 = { secede_province = PER }
+		 9489 = { secede_province = PER }
+		 9461 = { secede_province = PER }			 
+		 ENG = { end_military_access = PER }
+ 		 TUR = { end_military_access = PER }
 		 remove_core = 9429
-		 remove_core = 9461
 		 remove_core = 9462
-		 remove_core = 9489
 		 remove_core = 9515
 		 remove_core = 9340
 		 remove_core = 9401
 		 remove_core = 9430
 		 remove_core = 9463
 		 remove_core = 9490
-		 remove_core = 9491
 		 remove_core = 9516
+		 remove_core = 9400 	
+		 remove_core = 9369
+		 remove_core = 9285
+		 remove_core = 9314
+		 remove_core = 9339
+		 
+		 remove_core = 9336 	
+		 remove_core = 9366
+		 remove_core = 9398
+		 remove_core = 9489
+		 remove_core = 9461
 		 }
 	}
 
@@ -1433,11 +1474,8 @@ kill_leader = 90163 #Limpus
 	 
 	fire_only_once = yes
 	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = {
-		 days = 61
-		 }
+	mean_time_to_happen = { days = 61 }
+	
 	trigger = {
 		 has_global_flag = 2031002_EVENT_DONE
 		 not = {
@@ -1474,7 +1512,7 @@ kill_leader = 90163 #Limpus
 			 }
 		 date = 1914.7.28
 		 not = {
-			 date = 1925.12.30
+			 date = 1923.12.30
 			 }
 		 or = {
 			 tag = RUS
@@ -1544,6 +1582,36 @@ kill_leader = 90163 #Limpus
 		 9128 = {#Qazvin
 			secede_province = PER
 			 }
+		 9250 = { secede_province = PER }	
+		 9283 = { secede_province = PER }
+		 9251 = { secede_province = PER }	
+		 9218 = { secede_province = PER }	
+		 9188 = { secede_province = PER }	
+		 9161 = { secede_province = PER }	
+		 9282 = { secede_province = PER }	
+		 9249 = { secede_province = PER }	
+		 9215 = { secede_province = PER }	
+		 9156 = { secede_province = PER }	
+		 4568 = { secede_province = PER }	
+		 9157 = { secede_province = PER }
+		 9127 = { secede_province = PER }	
+		 9101 = { secede_province = PER }
+		 9185 = { secede_province = PER }	
+		 9158 = { secede_province = PER }	
+		 9103 = { secede_province = PER }	
+		 9129 = { secede_province = PER }	
+		 9186 = { secede_province = PER }		 
+		 9104 = { secede_province = PER }	
+		 9159 = { secede_province = PER }	
+		 9130 = { secede_province = PER }	
+		 9076 = { secede_province = PER }	
+		 9187 = { secede_province = PER }	
+		 9160 = { secede_province = PER }	
+		 9131 = { secede_province = PER }	
+		 9105 = { secede_province = PER }	
+		 9216 = { secede_province = PER }	
+		 9217 = { secede_province = PER }			 
+		 RUS = { end_military_access = PER }
 		 remove_core = 3594
 		 remove_core = 7333
 		 remove_core = 7346
@@ -1563,6 +1631,35 @@ kill_leader = 90163 #Limpus
 		 remove_core = 9075
 		 remove_core = 9102
 		 remove_core = 9128
+		remove_core = 9250	
+		remove_core = 9283
+		remove_core = 9251
+		remove_core = 9218
+		remove_core = 9188
+		remove_core = 9161
+		remove_core = 9282
+		remove_core = 9249
+		remove_core = 9215
+		remove_core = 9156
+		remove_core = 9568	
+		remove_core = 9157
+		remove_core = 9127
+		remove_core = 9101
+		remove_core = 9185
+		remove_core = 9158
+		remove_core = 9103
+		remove_core = 9129
+		remove_core = 9186
+		remove_core = 9104
+		remove_core = 9159
+		remove_core = 9130
+		remove_core = 9076
+		remove_core = 9187
+		remove_core = 9160
+		remove_core = 9131
+		remove_core = 9105	
+		remove_core = 9216
+		remove_core = 9217		
 		 }
 	}
 
