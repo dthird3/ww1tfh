@@ -94,96 +94,7 @@
 
 
 #Tsar Nicholas Abdicates!
-#Baku
-#Kyiv
-#Warsaw
-#Riga
-#Baku
-#Kyiv
-#Baku
-#Warsaw
-#Baku
-#Riga
-#Kyiv
-#Warsaw
-#Kyiv
-#Riga
-#Warsaw
-#Riga
-#Baku
-#Kyiv
-#Warsaw
-#Baku
-#Kyiv
-#Riga
-#Baku
-#Warsaw
-#Riga
-#Kyiv
-#Warsaw
-#Riga
-# Riga
-# Siauliai
-# Daugavpils
-# Kaunas
-# Grodno
-# Warszawa
-# Lodz
-# Tallinn
-# Tartu
-# Vaasa
-# Viipuri
-# Turku
-# Helsinki
-# Terney
-# SpasskDalny
-# Groznyj
-# Aleksandrovskoe
-# Jakutsk
-# Novosibirsk
-# Tashkent
-# Jaroslavl
-# NiznijNovgorod
-# Kazan
-# VelikieLuki
-# Moskva
-# Kaluga
-# Vitsyebsk
-# Dorogobuz
-# Tula
-# Minsk
-# Brjansk
-# Orel
-# Saratov
-# Kursk
-# Kyiv
-# Voronez
-# Kharkov
-# Dnipropetrovsk
-# Stalingrad
-# RostovnaDon
-# Archangelsk
-# Tbilisi
-# Odessa
-# Majkop
-# Astrahan
-# Sevastopol
-# Batumi
-# Petrozavodsk
-# Vladivostok
-# Murmansk
-# Samara
-# Yerevan
-# Baki
-# Leningrad
-# Tihvin
-# Vologda
-# Pervouralsk
-# Okhotsk
-# Omsk
-# AlmaAta
-# Novgorod
-# Pskov
+
 # USA response to Abdication
 
  country_event = {
@@ -197,11 +108,8 @@
 	 
 	mean_time_to_happen = {
 		 months = 9
-		 modifier = {
-			 factor = 0.95
-			 NOT = {
-				 controls = 1178
-				 }
+		 modifier = { factor = 0.95
+			 NOT = { controls = 1178 }
 			 }
 		 modifier = {
 			 factor = 0.95
@@ -707,7 +615,7 @@
 			 }
 		 dissent = 10
 		 national_unity = -10
-remove_minister = 76059 #Nikolai_II
+        remove_minister = 76059 #Nikolai_II
 
 		head_of_state = 76092 #Michael_II
 
@@ -723,72 +631,7 @@ remove_minister = 76059 #Nikolai_II
 
 
 #Treaty of Brest-Litovsk
-#Baku
-#Kyiv
-#Warsaw
-#Riga
-# Riga
-# Siauliai
-# Daugavpils
-# Kaunas
-# Grodno
-# Warszawa
-# Lodz
-# Tallinn
-# Tartu
-# Vaasa
-# Viipuri
-# Turku
-# Helsinki
-# Terney
-# SpasskDalny
-# Groznyj
-# Aleksandrovskoe
-# Jakutsk
-# Novosibirsk
-# Tashkent
-# Jaroslavl
-# NiznijNovgorod
-# Kazan
-# VelikieLuki
-# Moskva
-# Kaluga
-# Vitsyebsk
-# Dorogobuz
-# Tula
-# Minsk
-# Brjansk
-# Orel
-# Saratov
-# Kursk
-# Kyiv
-# Voronez
-# Kharkov
-# Dnipropetrovsk
-# Stalingrad
-# RostovnaDon
-# Archangelsk
-# Tbilisi
-# Odessa
-# Majkop
-# Astrahan
-# Sevastopol
-# Batumi
-# Petrozavodsk
-# Vladivostok
-# Murmansk
-# Samara
-# Yerevan
-# Baki
-# Leningrad
-# Tihvin
-# Vologda
-# Pervouralsk
-# Okhotsk
-# Omsk
-# AlmaAta
-# Novgorod
-# Pskov
+
 # USA response to Abdication/Fall of Russia
 
  country_event = {
@@ -1180,9 +1023,7 @@ remove_minister = 76059 #Nikolai_II
 	trigger = {
 		 tag = RUS
 		 war = yes
-		 NOT = {
-			 has_country_modifier = dual_power
-			 }
+		 NOT = { has_country_modifier = dual_power }
 		 has_country_flag = bolsheviks
 		 OR = {
 			 NOT = {
@@ -1484,10 +1325,8 @@ remove_minister = 76059 #Nikolai_II
 				 duration = 60
 				 }
 			 }
-		 SOV = {
-			 country_event = 6 #Troops_Head_Home
-			}
-		 USA = { country_event = 100530 }		# 100530
+		 SOV = { country_event = 6 }            # Troops_Head_Home
+		 USA = { country_event = 100530 }		# USA response to Abdication or Russian defeat
 		 FRA = { country_event = 190100 }		# French army mutiny possibly
 		 }
 	}
@@ -1802,10 +1641,8 @@ remove_minister = 76059 #Nikolai_II
 				 duration = 60
 				 }
 			 }
-		 SOV = {
-			 country_event = 6 #Troops_Head_Home
-			}
-		 USA = { country_event = 100530 }		#100530
+		 SOV = { country_event = 6 }            # Troops_Head_Home
+		 USA = { country_event = 100530 }		# 100530
 		 FRA = { country_event = 190100 }		# French army mutiny possibly
 		 }
 	}
@@ -1818,7 +1655,7 @@ remove_minister = 76059 #Nikolai_II
 	desc = "desc_RUSE4"
 	id = 6
 	 
-	picture = "WARP1"
+	picture = "Russian_Troops"
 	 
 	fire_only_once = yes
 	 
@@ -1831,11 +1668,9 @@ remove_minister = 76059 #Nikolai_II
 		 ai_chance = {
 			 factor = 100
 			 }
-		 ZZZ = {
-			 split_troops = 0.6
-			 }
-		 country_event = 376 #The_economy_is_collapsing!
-		set_global_flag = imperial_dissolution
+		 ZZZ = { split_troops = 0.6 }
+		 country_event = 376                #The_economy_is_collapsing!
+		 set_global_flag = imperial_dissolution
 		 }
 	}
 
@@ -1858,12 +1693,8 @@ remove_minister = 76059 #Nikolai_II
 	 
 	trigger = {
 		 tag = SOV
-		 NOT = {
-			 exists = WHR
-			 }
-		 NOT = {
-			 has_country_modifier = octrev
-			 }
+		 NOT = { exists = WHR }
+		 NOT = { has_country_modifier = octrev }
 		 has_country_flag = octrev
 		 }
 	option = {
@@ -2204,9 +2035,9 @@ remove_minister = 76059 #Nikolai_II
 		 SOV_6632 = {#Syktyvkar
 			secede_province = WHR
 			 }
-		 SOV_6633 = {#Teplogorka
-			secede_province = WHR
-			 }
+#		 SOV_6633 = {#Teplogorka
+#			secede_province = WHR
+#			 }
 		 SOV_6637 = {#Orlov
 			secede_province = WHR
 			 }
@@ -2237,9 +2068,9 @@ remove_minister = 76059 #Nikolai_II
 		 SOV_6686 = {#Isakly
 			secede_province = WHR
 			 }
-		 SOV_6690 = {#Uljanovsk
-			secede_province = WHR
-			 }
+#		 SOV_6690 = {#Uljanovsk
+#			secede_province = WHR
+#			 }
 		 SOV_6692 = {#Stavropol_na_Volge
 			secede_province = WHR
 			 }
@@ -2522,9 +2353,9 @@ remove_minister = 76059 #Nikolai_II
 		 SOV_8123 = {#Noril'sk
 			secede_province = WHR
 			 }
-		 SOV_8124 = {#Mikun'
-			secede_province = WHR
-			 }
+#		 SOV_8124 = {#Mikun'
+#			secede_province = WHR
+#			 }
 		 SOV_8126 = {#Njaksimvol'
 			secede_province = WHR
 			 }
@@ -2979,7 +2810,7 @@ remove_minister = 76059 #Nikolai_II
 			 non_aggression_pact = BUL
 			 }
 		 WHR = {
-			 country_event = 544 #Koltchak_arrives!
+			 country_event = 544 #Kolchak_arrives!
 			}
 		 SOV = {
 			 set_country_flag = civrus

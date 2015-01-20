@@ -12,14 +12,11 @@
 	 
 	is_triggered_only = yes
 	 
-	trigger = {
-		 tag = FRA
-		 }
+	trigger = { tag = FRA }
+	
 	option = {
 		 name = "DH_EVENT_2002551_Option1"
-		 ai_chance = {
-			 factor = 85
-			 }
+		 ai_chance = { factor = 85 }
 		 relation = {
 			 who = WHR
 			 value = -100
@@ -74,12 +71,12 @@
 		 3927 = {#Youyi
 			infantry_brigade = current
 			 infantry_brigade = current
-			 infantry_brigade = current
+			 artillery_brigade = current
 			 }
-		 war = {
-			 target = SOV
-			 }
+		 war = { target = SOV }
+		 
 		 money = 125
+		 
 		 set_global_flag = 2173500_EVENT_DONE
 		 }
 	}
@@ -250,19 +247,19 @@
 			 }
 		 6674 = {#Kyshtym
 			infantry_brigade = current
-			 infantry_brigade = current
-			 infantry_brigade = current
+			infantry_brigade = current
+			artillery_brigade = current
+			}
+		 6674 = {#Kyshtym
+			infantry_brigade = current
+			infantry_brigade = current
+			artillery_brigade = current
 			 }
 		 6674 = {#Kyshtym
 			infantry_brigade = current
-			 infantry_brigade = current
-			 infantry_brigade = current
-			 }
-		 6674 = {#Kyshtym
 			infantry_brigade = current
-			 infantry_brigade = current
-			 infantry_brigade = current
-			 }
+			artillery_brigade = current
+			}
 		 set_global_flag = 2173504_EVENT_DONE
 		 }
 	}
@@ -793,8 +790,6 @@ remove_minister = 95006 #Aleksandr_Kolchak
 	 
 	fire_only_once = yes
 	 
-	is_triggered_only = no
-	 
 	mean_time_to_happen = {
 		 days = 2
 		 }
@@ -812,25 +807,25 @@ remove_minister = 95006 #Aleksandr_Kolchak
 			 }
 		 2587 = {#Lyssytchansk
 			infantry_brigade = current
-			 infantry_brigade = current
-			 infantry_brigade = current
-			 }
+			infantry_brigade = current
+			artillery_brigade = current
+			}
 		 3309 = {#Odessa
 			hq_brigade = current
 			 }
 		 3309 = {#Odessa
 			infantry_brigade = current
-			 infantry_brigade = current
-			 infantry_brigade = current
-			 }
+			infantry_brigade = current
+			artillery_brigade = current
+			}
 		 948 = {#Gdov
 			hq_brigade = current
 			 }
 		 948 = {#Gdov
 			infantry_brigade = current
-			 infantry_brigade = current
-			 infantry_brigade = current
-			 }
+			infantry_brigade = current
+			artillery_brigade = current
+			}
 		 }
 	}
 
@@ -843,8 +838,6 @@ remove_minister = 95006 #Aleksandr_Kolchak
 	id = 564
 	 
 	fire_only_once = yes
-	 
-	is_triggered_only = no
 	 
 	mean_time_to_happen = {
 		 days = 15
@@ -865,7 +858,7 @@ remove_minister = 95006 #Aleksandr_Kolchak
 				 }
 			 infantry_brigade = current
 			 infantry_brigade = current
-			 infantry_brigade = current
+			 artillery_brigade = current
 			 }
 		 }
 	}
@@ -902,7 +895,7 @@ remove_minister = 95006 #Aleksandr_Kolchak
 				 }
 			 infantry_brigade = current
 			 infantry_brigade = current
-			 infantry_brigade = current
+			 artillery_brigade = current
 			 }
 		 }
 	}
@@ -929,29 +922,25 @@ remove_minister = 95006 #Aleksandr_Kolchak
 			 }
 		 2721 = {#Konstatinovsk
 			cavalry_brigade = current
-			 cavalry_brigade = current
-			 cavalry_brigade = current
-			 }
+			cavalry_brigade = current
+			}
 		 2721 = {#Konstatinovsk
 			cavalry_brigade = current
-			 cavalry_brigade = current
-			 cavalry_brigade = current
-			 }
+			cavalry_brigade = current
+			}
 		 2721 = {#Konstatinovsk
 			cavalry_brigade = current
-			 cavalry_brigade = current
-			 cavalry_brigade = current
-			 }
+			cavalry_brigade = current
+			}
 		 2721 = {#Konstatinovsk
 			infantry_brigade = current
-			 infantry_brigade = current
-			 infantry_brigade = current
-			 }
+			infantry_brigade = current
+			}
 		 2721 = {#Konstatinovsk
 			infantry_brigade = current
-			 infantry_brigade = current
-			 infantry_brigade = current
-			 }
+			infantry_brigade = current
+			artillery_brigade = current
+			}
 		 }
 	}
 
@@ -965,11 +954,8 @@ remove_minister = 95006 #Aleksandr_Kolchak
 	 
 	fire_only_once = yes
 	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = {
-		 days = 1
-		 }
+	mean_time_to_happen = { days = 1 }
+	
 	trigger = {
 		 tag = WHR
 		 date = 1914.8.4
@@ -984,20 +970,17 @@ remove_minister = 95006 #Aleksandr_Kolchak
 			 }
 		 311 = {#Arkhangelsk
 			infantry_brigade = current
-			 infantry_brigade = current
-			 infantry_brigade = current
-			 }
+			infantry_brigade = current
+			}
 		 46 = {#Murmansk
 			hq_brigade = current
 			 }
 		 46 = {#Murmansk
 			infantry_brigade = current
-			 infantry_brigade = current
-			 infantry_brigade = current
-			 }
-		 war = {
-			 target = SOV
-			 }
+			infantry_brigade = current
+			artillery_brigade = current
+			}
+		 war = { target = SOV }
 		 }
 	}
 
@@ -1010,8 +993,6 @@ remove_minister = 95006 #Aleksandr_Kolchak
 	id = 582
 	 
 	fire_only_once = yes
-	 
-	is_triggered_only = no
 	 
 	mean_time_to_happen = {
 		 days = 5
@@ -1028,24 +1009,19 @@ remove_minister = 95006 #Aleksandr_Kolchak
 		 8998 = {#Bukhara
 			hq_brigade = current
 			 }
-		 8998 = {#Bukhara
+		 8998 = {                                 #Bukhara
 			militia_brigade = current
-			 militia_brigade = current
-			 militia_brigade = current
-			 }
-		 8998 = {#Bukhara
 			militia_brigade = current
-			 militia_brigade = current
-			 militia_brigade = current
-			 }
-		 8998 = {#Bukhara
+			}
+		 8998 = {                                 #Bukhara
+			militia_brigade = current
+			militia_brigade = current
+			}
+		 8998 = {                                 #Bukhara
 			cavalry_brigade = current
-			 cavalry_brigade = current
-			 cavalry_brigade = current
-			 }
-		 war = {
-			 target = SOV
-			 }
+			cavalry_brigade = current
+			}
+		 war = { target = SOV }
 		 }
 	}
 
@@ -1088,14 +1064,13 @@ remove_minister = 95006 #Aleksandr_Kolchak
 			 }
 		 8998 = {#Bukhara
 			infantry_brigade = current
-			 infantry_brigade = current
-			 infantry_brigade = current
-			 }
+			infantry_brigade = current
+			artillery_brigade = current
+			}
 		 8998 = {#Bukhara
 			infantry_brigade = current
-			 infantry_brigade = current
-			 infantry_brigade = current
-			 }
+			infantry_brigade = current
+			artillery_brigade = current
+			}
 		 }
 	}
-
