@@ -9,27 +9,19 @@
 	picture = "austrohunarmy_march"
 	 
 	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
-	mean_time_to_happen = {
-		 days = 180
-		 }
+
+	mean_time_to_happen = { days = 180 }
+	
 	trigger = {
 		 exists = POL
 		 not = {
-			 POL = {
-				 war = yes
-				 }
+			 POL = { war = yes }
 			 }
 		 not = {
-			 POL = {
-				 is_subject = yes
-				 }
+			 POL = { is_subject = yes }
 			 }
-		 SOV = {
-			 war = yes
-			 }
+		 SOV = { war = yes }
+		 
 		 1928 = {#Warszawa
 			owned_by = POL
 			 }
@@ -41,9 +33,7 @@
 			 }
 		 tag = POL
 		 date = 1916.1.1
-		 not = {
-			 date = 1930.1.1
-			 }
+		 not = { date = 1923.12.31 }
 		 }
 	option = {
 		 name = "DH_EVENT_2193501_Option7"
@@ -278,7 +268,6 @@
 				 }
 			 infantry_brigade = current
 			 infantry_brigade = current
-			 infantry_brigade = current
 			 }
 		 random_owned = {
 			 limit = {
@@ -286,13 +275,11 @@
 				 }
 			 infantry_brigade = current
 			 infantry_brigade = current
-			 infantry_brigade = current
 			 }
 		 random_owned = {
 			 limit = {
 				 controlled_by = THIS
 				 }
-			 infantry_brigade = current
 			 infantry_brigade = current
 			 infantry_brigade = current
 			 }
@@ -302,13 +289,11 @@
 				 }
 			 militia_brigade = current
 			 militia_brigade = current
-			 militia_brigade = current
 			 }
 		 random_owned = {
 			 limit = {
 				 controlled_by = THIS
 				 }
-			 militia_brigade = current
 			 militia_brigade = current
 			 militia_brigade = current
 			 }
@@ -352,11 +337,8 @@
 	 
 	fire_only_once = yes
 	 
-	is_triggered_only = no
-	 
-	trigger = {
-		 tag = SOV
-		 }
+	trigger = { tag = SOV }
+	
 	option = {
 		 name = "DH_EVENT_2007501_Option7"
 		 random_country = {
@@ -378,7 +360,7 @@
 
 				}
 			 }
-		 head_of_government = 85082 #Vladimir_Lenin
+		head_of_government = 85082 #Vladimir_Lenin
 
 		foreign_minister = 85074 #Leon_Trotsky
 
@@ -404,11 +386,8 @@
 	 
 	fire_only_once = yes
 	 
-	is_triggered_only = yes
-	 
-	trigger = {
-		 tag = SOV
-		 }
+	trigger = { tag = SOV }
+	
 	option = {
 		 name = "DH_EVENT_2007503_Option7"
 		 add_country_modifier = {
@@ -454,17 +433,14 @@
 	 
 	fire_only_once = yes
 	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = {
-		 days = 30
-		 }
+	mean_time_to_happen = { days = 30 }
+	
 	trigger = {
 		 has_global_flag = imperial_dissolution
 		 tag = SOV
 		 date = 1915.1.1
 		 not = {
-			 date = 1925.12.30
+			 date = 1923.12.30
 			 }
 		 }
 	option = {
@@ -486,9 +462,7 @@
 	picture = "news_paper"
 	 
 	fire_only_once = yes
-	 
-	is_triggered_only = yes
-	 
+
 	mean_time_to_happen = {
 		 days = 30
 		 }
@@ -925,12 +899,9 @@
 	picture = "news_paper"
 	 
 	fire_only_once = yes
-	 
-	is_triggered_only = no
-	 
-	mean_time_to_happen = {
-		 days = 60
-		 }
+
+	mean_time_to_happen = { days = 60 }
+	
 	trigger = {
 		 has_global_flag = 2007514_EVENT_DONE
 		 tag = SOV
@@ -1024,8 +995,6 @@
 	 
 	fire_only_once = yes
 	 
-	is_triggered_only = no
-	 
 	trigger = {
 		 tag = SOV
 		 date = 1919.3.15
@@ -1057,9 +1026,7 @@ remove_minister = 85084 #Yakov_Sverdlov
 	picture = "minister_resign"
 	 
 	fire_only_once = yes
-	 
-	is_triggered_only = no
-	 
+
 	mean_time_to_happen = {
 		 days = 60
 		 }
@@ -1149,9 +1116,7 @@ remove_minister = 85082 #Vladimir_Lenin
 	picture = "news_paper"
 	 
 	fire_only_once = yes
-	 
-	is_triggered_only = no
-	 
+
 	mean_time_to_happen = {
 		 days = 10
 		 }
@@ -1731,9 +1696,7 @@ remove_minister = 85082 #Vladimir_Lenin
 	picture = "news_paper"
 	 
 	fire_only_once = yes
-	 
-	is_triggered_only = no
-	 
+
 	mean_time_to_happen = {
 		 days = 11
 		 }
@@ -1753,4 +1716,3 @@ remove_minister = 85082 #Vladimir_Lenin
 		 dissent = 2
 		 }
 	}
-
