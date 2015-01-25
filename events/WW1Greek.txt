@@ -67,3 +67,68 @@ remove_minister = 35136 #George_I
 		 }
 	}
 
+country_event = {
+	title = "GREE2"
+	desc = "desc_GREE2"
+	id = 100920
+	 
+	picture = "GREP2"
+	 
+	fire_only_once = yes
+	 
+	mean_time_to_happen = {
+		 days = 1
+		 }
+	trigger = {
+		 tag = GRE
+		 date = 1914.7.30
+		 USA = { brigade_exists = "USS Mississippi" }
+		 USA = { brigade_exists = "USS Idaho" }
+		 not = { has_country_flag = mis_purchase }
+		 }
+	option = {
+		 name = "opta_GREE2"
+		 ai_chance = {
+			 factor = 100
+			 }
+			USA = { country_event = 100921 }
+		 }
+	option = {
+		 name = "optb_GREE2"
+		 ai_chance = {
+			 factor = 0
+			 }
+		 }
+	}
+country_event = {
+	title = "GREE3"
+	desc = "desc_GREE3"
+	id = 100921
+	 
+	picture = "GREE3"
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_GREE3"
+		 ai_chance = {
+			 factor = 100
+			 }
+			GRE = { 
+				load_oob = "MississippiGreek.txt" 
+				money = -50
+			}
+			USA = { 
+				remove_brigade = "USS Mississippi"
+				remove_brigade = "USS Idaho"
+				money = 50
+			}
+	}
+	option = {
+		 name = "optb_GREE3"
+		 ai_chance = {
+			 factor = 0
+			 }
+
+	}
+	}
