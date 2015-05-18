@@ -624,8 +624,8 @@
 		add_country_modifier = {
 			name = "dual_power"
 			duration = 180 }
-		USA = { country_event = 100530 }	# USA possibly joins the war
-		FRA = { country_event = 190100 }	# French army mutiny possibly
+		USA = { country_event = 100530 }	              # USA possibly joins the war
+		FRA = { set_country_flag = "Russian_Collapse" }	  # French army mutiny possibly
 		}
 	}
 
@@ -1327,7 +1327,8 @@
 			 }
 		 SOV = { country_event = 6 }            # Troops_Head_Home
 		 USA = { country_event = 100530 }		# USA response to Abdication or Russian defeat
-		 FRA = { country_event = 190100 }		# French army mutiny possibly
+
+		 FRA = { set_country_flag = "Russian_Collapse" }	  # French army mutiny possibly
 		 }
 	}
 
@@ -1643,7 +1644,7 @@
 			 }
 		 SOV = { country_event = 6 }            # Troops_Head_Home
 		 USA = { country_event = 100530 }		# 100530
-		 FRA = { country_event = 190100 }		# French army mutiny possibly
+		 FRA = { set_country_flag = "Russian_Collapse" }	  # French army mutiny possibly
 		 }
 	}
 

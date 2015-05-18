@@ -1961,11 +1961,12 @@ Caliph_of_Islam = {
 	trigger = {
 		tag = TUR	
 		5567 = {
-		controlled_by = TUR
+		controlled_by = TUR               # Jerusalem
 		}
+		date = 1914.01.01
 	} 
 	
-	territorial_pride = 0.2
+	territorial_pride = 0.15
 	global_manpower_modifier = 0.1
 	icon = 29
 }
@@ -1983,10 +1984,26 @@ Holy_War = {
 		}
 	} 
 	
-	territorial_pride = 0.25
+	territorial_pride = 0.10
 	global_manpower_modifier = 0.1
 	icon = 29
 }
+
+# Balkans Defence
+Balkans_Defence = {
+
+	potential = {
+	or = {
+		tag = SER
+		tag = GRE
+		tag = BUL
+	}
+
+	} 
+	territorial_pride = 0.25
+	icon = 25
+}
+
 # No conscription
 uk_no_conscription = {
 
