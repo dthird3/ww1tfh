@@ -266,9 +266,7 @@
 		 ai_chance = {
 			 factor = 100
 			 }
-		 BUL = {
-			 set_country_flag = lose_balkans
-			 }
+		 BUL = { set_country_flag = lose_balkans }
 		 4556 = {#Kocani
 			secede_province = SER
 			 }
@@ -426,9 +424,7 @@
 		 ai_chance = {
 			 factor = 100
 			 }
-		 BUL = {
-			 set_country_flag = lose_balkans
-			 }
+		 BUL = { set_country_flag = lose_balkans }
 		 4556 = {#Kocani
 			secede_province = SER
 			 }
@@ -503,27 +499,17 @@
 		 exists = ROM
 		 exists = GRE
 		 exists = SER
-		 BUL = {
-			 has_country_flag = second_balkan_war
+		 BUL = { has_country_flag = second_balkan_war }
+		 NOT = {
+			 BUL = { has_country_flag = win_balkans }
 			 }
 		 NOT = {
-			 BUL = {
-				 has_country_flag = win_balkans
-				 }
+			 BUL = { has_country_flag = lose_balkans }
 			 }
 		 NOT = {
-			 BUL = {
-				 has_country_flag = lose_balkans
-				 }
+			 ROM = { has_country_flag = intervention_balkan }
 			 }
-		 NOT = {
-			 ROM = {
-				 has_country_flag = intervention_balkan
-				 }
-			 }
-		 TUR = {
-			 has_country_flag = intervention_balkan
-			 }
+		 TUR = { has_country_flag = intervention_balkan }
 		 OR = {
 			 4435 = {#Plovdiv
 				controlled_by = GRE

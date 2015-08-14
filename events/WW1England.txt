@@ -1,4 +1,4 @@
-
+################  Pre-war events ##############
 #King Edward VII dies
 
  country_event = {
@@ -230,9 +230,7 @@
 	picture = "ENGP4"
 	 
 	fire_only_once = yes
-	 
 	is_triggered_only = yes
-	 
 	major = yes
 	 
 	option = {
@@ -240,9 +238,7 @@
 		 ai_chance = {
 			 factor = 100
 			 }
-		 TUR = {
-			 country_event = 100152 #100152
-			}
+		 TUR = { country_event = 100152 }
 		 }
 	}
 
@@ -267,267 +263,140 @@
 			 }
 		 }
 	}
+	
 
-
-#Fall of the British Empire
+################  Greek/ Ottoman events ##############	
+# Seize Thessaloniki?
 
  country_event = {
-	title = "WARE5"
-	desc = "desc_WARE5"
-	id = 190005
-	 
-	picture = "WARP5"
+	title = "DH_EVENT_2001506_TITLE"
+	desc = "DH_EVENT_2001506_DESC"
+	picture = "varyag"
+	id = 12
 	 
 	fire_only_once = yes
-	 
 	is_triggered_only = yes
 	 
-	major = yes
-	 
-	option = {
-		 name = "Puppet the United Kingdom"
-		 set_country_flag = war_over
-		 dissent = 10
-		 ENG = {
-			 any_country = {
-				 limit = {
-					 war_with = ENG
-					 }
-				 end_war = ENG
-				 }
+	mean_time_to_happen = { days = 15 }
+	
+	trigger = {
+		 ENG = { war_with = TUR }
+		 not = {
+			 GRE = { faction = allies }
+			 ENG = { war_with = GRE }
 			 }
-		 ENG = {
-			 leave_faction = allies
-			 }
-		 ENG = {
-			 any_owned = {
-				 limit = {
-					 is_core = TUR
-					 }
-				 secede_province = TUR
-				 }
-			 }
-		 ENG_9578 = {#Dubai
-			secede_province = TUR
-			 }
-		 GER = {
-			 create_vassal = ENG
+		 tag = ENG
+		 not = {
+			 has_global_flag = SLEEPEVENT_2001506
 			 }
 		 }
 	option = {
-		 name = "Inherit colonies only"
-		 ai_chance = {
-			 factor = 100
+		 name = "DH_EVENT_2001506_Option1"
+		 GRE = { country_event = 149 }                    #The_Entente_seizes_Thessaloniki
+		 dissent = -2
+		 relation = {
+			 who = GRE
+			 value = -20
 			 }
-		 set_country_flag = war_over
+		 set_global_flag = 2001506_EVENT_DONE
+		 4720 = {                             #Salonica
+			secede_province = ENG }
+		 4720 = {                             #Salonica
+			change_controller = ENG }
+		 ENG = { remove_core = 4720 }
+		 }
+	option = {
+		 name = "DH_EVENT_2001506_Option2"
+		 dissent = -2
+		 relation = {
+			 who = GRE
+			 value = 5
+			 }
+		 set_global_flag = 2001506_EVENT_DONE
+		 }
+	}
+
+
+#The Entente seizes Thessaloniki
+
+ country_event = {
+	title = "DH_EVENT_2019512_TITLE"
+	desc = "DH_EVENT_2019512_DESC"
+	picture = "news_paper"
+	id = 149
+	 
+	fire_only_once = yes
+	is_triggered_only = yes
+	 
+	trigger = { tag = GRE }
+	option = {
+		 name = "DH_EVENT_2019512_Option1"
+		 ai_chance = { factor = 100 }
+		 dissent = 4
+		 }
+	option = {
+		 name = "DH_EVENT_2019512_Option2"
+		 ai_chance = { factor = 0 }
 		 dissent = 5
-		 ENG = {
-			 any_country = {
-				 limit = {
-					 war_with = ENG
-					 }
-				 end_war = ENG
-				 }
-			 }
-		 ENG = {
-			 leave_faction = allies
-			 }
-		 ENG = {
-			 any_owned = {
-				 limit = {
-					 is_core = TUR
-					 }
-				 secede_province = TUR
-				 }
-			 }
-		 ENG_9578 = {#Dubai
-			secede_province = TUR
-			 }
-		 GER = {
-			 guarantee = ENG
-			 }
-		 ENG = {
-			 neutrality = 100
-			 }
-		 any_country = {
-			 limit = {
-				 faction = axis
-				 }
-			 non_aggression_pact = ENG
-			 }
-		 any_country = {
-			 limit = {
-				 faction = axis
-				 }
-			 threat = {
-				 who = ENG
-				 value = -150
-				 }
-			 }
-		 ENG = {
-			 country_event = 190006 #190006
-			}
-		 }
-	option = {
-		 name = "Inherit colonies and Puppet"
-		 set_country_flag = war_over
-		 dissent = 15
-		 ENG = {
-			 any_country = {
-				 limit = {
-					 war_with = ENG
-					 }
-				 end_war = ENG
-				 }
-			 }
-		 ENG = {
-			 leave_faction = allies
-			 }
-		 GER = {
-			 create_vassal = ENG
-			 }
-		 ENG = {
-			 any_owned = {
-				 limit = {
-					 is_core = TUR
-					 }
-				 secede_province = TUR
-				 }
-			 }
-		 ENG_9578 = {#Dubai
-			secede_province = TUR
-			 }
-		 GER = {
-			 guarantee = ENG
-			 }
-		 ENG = {
-			 neutrality = 100
-			 }
-		 any_country = {
-			 limit = {
-				 faction = axis
-				 }
-			 non_aggression_pact = ENG
-			 }
-		 any_country = {
-			 limit = {
-				 faction = axis
-				 }
-			 threat = {
-				 who = ENG
-				 value = -150
-				 }
-			 }
-		 ENG = {
-			 country_event = 190006 #190006
-			}
+		 join_faction = allies
 		 }
 	}
+		
 
-
-#Fall of the British Empire
+#A foot on Cape Helles   
 
  country_event = {
-	title = "WARE5"
-	desc = "desc_WARE5"
-	id = 190006
-	 
-	picture = "WARP5"
+	title = "DH_EVENT_2001505_TITLE"
+	desc = "DH_EVENT_2001505_DESC"
+	picture = "varyag"
+	id = 11
 	 
 	fire_only_once = yes
+	is_triggered_only = no
 	 
-	is_triggered_only = yes
-	 
+	mean_time_to_happen = { days = 1 }
+	
+	trigger = {
+		 tag = ENG
+		 4560 = { controlled_by = ENG }               #Gelibolu
+		 war_with = TUR
+		 }
+		 
 	option = {
-		 name = "opta_WARE5"
-		 ai_chance = {
-			 factor = 100
-			 }
-		 5181 = {#Weihai
-			secede_province = GER
-			 }
-		 5868 = {#Hong_Kong
-			secede_province = GER
-			 }
-		 9756 = {#Bathurst
-			secede_province = GER
-			 }
-		 9915 = {#Freetown
-			secede_province = GER
-			 }
-		 9935 = {#Bo
-			secede_province = GER
-			 }
-		 5191 = {#Gibraltar
-			secede_province = GER
-			 }
-		 6394 = {#Singapore
-			secede_province = GER
-			 }
-		 5359 = {#Malta
-			secede_province = GER
-			 }
-		 9862 = {#Shellem
-			secede_province = GER
-			 }
-		 9977 = {#Port_Harcourt
-			secede_province = GER
-			 }
-		 9970 = {#Enugu
-			secede_province = GER
-			 }
-		 5213 = {#Laiyang
-			secede_province = GER
-			 }
-		 ENG_9969 = {#Accra
-			secede_province = GER
-			 }
-		 ENG_9837 = {#Tamale
-			secede_province = GER
-			 }
-		 ENG_9902 = {#Makurdi
-			secede_province = GER
-			 }
-		 ENG_9879 = {#Ibadan
-			secede_province = GER
-			 }
-		 ENG_9780 = {#Sokoto
-			secede_province = GER
-			 }
-		 ENG_9841 = {#Bauchi
-			secede_province = GER
-			 }
-		 ENG_9932 = {#Maipuri_Landing
-			secede_province = GER
-			 }
-		 ENG_9956 = {#Benin_City
-			secede_province = GER
-			 }
-		 ENG_10394 = {#Tshabong
-			secede_province = GER
-			 }
-		 ENG_8030 = {#Beitbridge
-			secede_province = GER
-			 }
-		 ENG_8020 = {#Lusaka
-			secede_province = GER
-			 }
-		 ENG_10271 = {#Kapiri_Mposhi
-			secede_province = GER
-			 }
-		 ENG_10259 = {#Mocuba
-			secede_province = GER
-			 }
-		 CAN_8487 = {#St._Augustin
-			secede_province = GER
-			 }
-		 CAN_3737 = {#Mistissini
-			secede_province = GER
-			 }
+		 name = "DH_EVENT_2001505_Option1"
+		 national_unity = 1
+		 set_global_flag = SLEEPEVENT_2001506
+		 set_global_flag = SLEEPEVENT_2001507
+		 }
+	}
+
+
+#The Dardanelles' operation has failed
+
+ country_event = {
+	title = "DH_EVENT_2001507_TITLE"
+	desc = "DH_EVENT_2001507_DESC"
+	picture = "varyag"
+	id = 13
+	 
+	fire_only_once = yes
+	is_triggered_only = no
+	 
+	mean_time_to_happen = { days = 15 }
+	trigger = {
+		 ENG = { war_with = TUR }
+		 4503 = { controlled_by = TUR }                  #Istanbul
+		 tag = ENG
+		 has_global_flag = SLEEPEVENT_2001507
+		 }
+	option = {
+		 name = "DH_EVENT_2001507_Option1"
+		 dissent = 3
 		 }
 	}
 	
-	
+
+##################  The Irish ################	
 # Attempt arms shipment interception (for Irish Rebellion)
 
  country_event = {
@@ -653,19 +522,17 @@
 	}
 
 
+#################  Wartime Events ################	
 #Seizure of the Sultan Osman I and Reshadieh
 
  country_event = {
 	title = "ENGE6"
 	desc = "desc_ENGE6"
+	picture = "ENGP6"
 	id = 190501
 	 
-	picture = "ENGP6"
-	 
 	fire_only_once = yes
-	 
 	is_triggered_only = yes
-	 
 	major = yes
 	 
 	option = {
@@ -1009,3 +876,262 @@ country_event = {
 		name = "ACTION_NAME_GREAT"
 	}
 }
+ 
+ 
+#Fall of the British Empire
+
+ country_event = {
+	title = "WARE5"
+	desc = "desc_WARE5"
+	id = 190005
+	 
+	picture = "WARP5"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	major = yes
+	 
+	option = {
+		 name = "Puppet the United Kingdom"
+		 set_country_flag = war_over
+		 dissent = 10
+		 ENG = {
+			 any_country = {
+				 limit = {
+					 war_with = ENG
+					 }
+				 end_war = ENG
+				 }
+			 }
+		 ENG = {
+			 leave_faction = allies
+			 }
+		 ENG = {
+			 any_owned = {
+				 limit = {
+					 is_core = TUR
+					 }
+				 secede_province = TUR
+				 }
+			 }
+		 ENG_9578 = {#Dubai
+			secede_province = TUR
+			 }
+		 GER = {
+			 create_vassal = ENG
+			 }
+		 }
+	option = {
+		 name = "Inherit colonies only"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 set_country_flag = war_over
+		 dissent = 5
+		 ENG = {
+			 any_country = {
+				 limit = {
+					 war_with = ENG
+					 }
+				 end_war = ENG
+				 }
+			 }
+		 ENG = {
+			 leave_faction = allies
+			 }
+		 ENG = {
+			 any_owned = {
+				 limit = {
+					 is_core = TUR
+					 }
+				 secede_province = TUR
+				 }
+			 }
+		 ENG_9578 = {#Dubai
+			secede_province = TUR
+			 }
+		 GER = {
+			 guarantee = ENG
+			 }
+		 ENG = {
+			 neutrality = 100
+			 }
+		 any_country = {
+			 limit = {
+				 faction = axis
+				 }
+			 non_aggression_pact = ENG
+			 }
+		 any_country = {
+			 limit = {
+				 faction = axis
+				 }
+			 threat = {
+				 who = ENG
+				 value = -150
+				 }
+			 }
+		 ENG = {
+			 country_event = 190006 #190006
+			}
+		 }
+	option = {
+		 name = "Inherit colonies and Puppet"
+		 set_country_flag = war_over
+		 dissent = 15
+		 ENG = {
+			 any_country = {
+				 limit = {
+					 war_with = ENG
+					 }
+				 end_war = ENG
+				 }
+			 }
+		 ENG = {
+			 leave_faction = allies
+			 }
+		 GER = {
+			 create_vassal = ENG
+			 }
+		 ENG = {
+			 any_owned = {
+				 limit = {
+					 is_core = TUR
+					 }
+				 secede_province = TUR
+				 }
+			 }
+		 ENG_9578 = {#Dubai
+			secede_province = TUR
+			 }
+		 GER = {
+			 guarantee = ENG
+			 }
+		 ENG = {
+			 neutrality = 100
+			 }
+		 any_country = {
+			 limit = {
+				 faction = axis
+				 }
+			 non_aggression_pact = ENG
+			 }
+		 any_country = {
+			 limit = {
+				 faction = axis
+				 }
+			 threat = {
+				 who = ENG
+				 value = -150
+				 }
+			 }
+		 ENG = {
+			 country_event = 190006 #190006
+			}
+		 }
+	}
+
+
+#Fall of the British Empire
+
+ country_event = {
+	title = "WARE5"
+	desc = "desc_WARE5"
+	id = 190006
+	 
+	picture = "WARP5"
+	 
+	fire_only_once = yes
+	 
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "opta_WARE5"
+		 ai_chance = {
+			 factor = 100
+			 }
+		 5181 = {#Weihai
+			secede_province = GER
+			 }
+		 5868 = {#Hong_Kong
+			secede_province = GER
+			 }
+		 9756 = {#Bathurst
+			secede_province = GER
+			 }
+		 9915 = {#Freetown
+			secede_province = GER
+			 }
+		 9935 = {#Bo
+			secede_province = GER
+			 }
+		 5191 = {#Gibraltar
+			secede_province = GER
+			 }
+		 6394 = {#Singapore
+			secede_province = GER
+			 }
+		 5359 = {#Malta
+			secede_province = GER
+			 }
+		 9862 = {#Shellem
+			secede_province = GER
+			 }
+		 9977 = {#Port_Harcourt
+			secede_province = GER
+			 }
+		 9970 = {#Enugu
+			secede_province = GER
+			 }
+		 5213 = {#Laiyang
+			secede_province = GER
+			 }
+		 ENG_9969 = {#Accra
+			secede_province = GER
+			 }
+		 ENG_9837 = {#Tamale
+			secede_province = GER
+			 }
+		 ENG_9902 = {#Makurdi
+			secede_province = GER
+			 }
+		 ENG_9879 = {#Ibadan
+			secede_province = GER
+			 }
+		 ENG_9780 = {#Sokoto
+			secede_province = GER
+			 }
+		 ENG_9841 = {#Bauchi
+			secede_province = GER
+			 }
+		 ENG_9932 = {#Maipuri_Landing
+			secede_province = GER
+			 }
+		 ENG_9956 = {#Benin_City
+			secede_province = GER
+			 }
+		 ENG_10394 = {#Tshabong
+			secede_province = GER
+			 }
+		 ENG_8030 = {#Beitbridge
+			secede_province = GER
+			 }
+		 ENG_8020 = {#Lusaka
+			secede_province = GER
+			 }
+		 ENG_10271 = {#Kapiri_Mposhi
+			secede_province = GER
+			 }
+		 ENG_10259 = {#Mocuba
+			secede_province = GER
+			 }
+		 CAN_8487 = {#St._Augustin
+			secede_province = GER
+			 }
+		 CAN_3737 = {#Mistissini
+			secede_province = GER
+			 }
+		 }
+	}
