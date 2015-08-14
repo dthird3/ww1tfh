@@ -85,6 +85,35 @@ diplomatic_decisions = {
 			 }
 		}
 
+		
+	 2001506_decision = {                       #Seize_Thessaloniki?
+		ai_will_do = { factor = 1 }
+		potential = {
+			 4560 = {#Gelibolu
+				controlled_by = TUR
+				 }
+			 ENG = {
+				 war_with = TUR
+				 }
+			 not = {
+				 GRE = { faction = allies }
+				 ENG = { war_with = GRE }
+				 }
+			 tag = ENG
+			 not = { has_global_flag = SLEEPEVENT_2001506 }
+			 not = { has_country_flag = decision_2001506 }
+			 }
+		allow = {
+			 4720 = {                              #Salonica
+				controlled_by = GRE
+				 }
+			 }
+		effect = {
+			 country_event = 12 #Seize_Thessaloniki?
+			 set_country_flag = decision_2001506
+			 }
+		}
+			
 
 	portugal_joins_faction = {					# Bring Portugal into the War
 		ai_will_do = { factor = 1 }
