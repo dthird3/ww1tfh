@@ -1,4 +1,3 @@
-
 #Franz Ferdinand is dead!
 # USA doesn't care and is to remain neutral
 #  Archduke Franz Ferdinand
@@ -7,14 +6,10 @@
 	title = "HUNE1"
 	desc = "desc_HUNE1"
 	id = 100141
-	 
 	picture = "HUNP1"
 	 
 	fire_only_once = yes
-	 
-	mean_time_to_happen = {
-		 days = 1
-		 }
+	mean_time_to_happen = { days = 1 }
 	major = yes
 	 
 	trigger = {
@@ -29,12 +24,8 @@
 		 set_country_flag = murder_of_franz_ferdinand
 		 dissent = 5
 		 manpower = 50
-		 TUR = {
-			 neutrality = -10
-			 }
-		 SER = {
-			 manpower = 30
-			 }
+		 TUR = { neutrality = -10 }
+		 SER = { manpower = 30 }
 		 threat = {
 			 who = all
 			 value = 20
@@ -43,15 +34,18 @@
 			 who = USA
 			 value = -20
 			 }
+		 threat = {
+			 who = POR
+			 value = -20
+			 }	 
 		 SER = {
 			 threat = {
 				 who = AUH
 				 value = 100
 				 }
 			 }
-		kill_leader = 6048 #Archduke_Franz_Ferdinand
-remove_minister = 6029 #Franz_Ferdinand
-
+		kill_leader = 6048        #Archduke_Franz_Ferdinand
+        remove_minister = 6029    #Franz_Ferdinand
 		}
 	}
 
@@ -62,33 +56,21 @@ remove_minister = 6029 #Franz_Ferdinand
 	title = "SERE2"
 	desc = "desc_SERE2"
 	id = 100148
-	 
 	picture = "AUHP1"
 	 
 	is_triggered_only = yes
-	 
 	major = yes
 	 
 	option = {
 		 name = "opta_SERE2"
-		 ai_chance = {
-			 factor = 100
-			 }
-		 AUH = {
-			 country_event = 100142 #100142
-			}
+		 ai_chance = { factor = 100 }
+		 AUH = { country_event = 100142 }
 		 }
 	option = {
 		 name = "optb_SERE2"
-		 ai_chance = {
-			 factor = 0
-			 }
-		 RUS = {
-			 country_event = 100143 #100143
-			}
-		 AUH = {
-			 create_vassal = SER
-			 }
+		 ai_chance = { factor = 0 }
+		 RUS = { country_event = 100143	}
+		 AUH = { create_vassal = SER }
 		 join_faction = axis
 		 relation = {
 			 who = RUS
@@ -115,27 +97,20 @@ remove_minister = 6029 #Franz_Ferdinand
 
 
 #July Crisis
-# USA doesn't care and is to remain neutral
-# USA doesn't care and is to remain neutral
 
  country_event = {
 	title = "AUHE1"
 	desc = "desc_AUHE1"
 	id = 100142
-	 
 	picture = "AUHP1"
 	 
 	fire_only_once = yes
-	 
 	is_triggered_only = yes
-	 
 	major = yes
 	 
 	option = {
 		 name = "opta_AUHE1"
-		 ai_chance = {
-			 factor = 90
-			 }
+		 ai_chance = { factor = 90 }
 		 set_country_flag = serbian_ultamatium
 		 threat = {
 			 who = all
@@ -145,23 +120,21 @@ remove_minister = 6029 #Franz_Ferdinand
 			 who = USA
 			 value = -20
 			 }
-		 RUS = {
-			 country_event = 100143 #100143
-			}
+		 threat = {
+			 who = POR
+			 value = -20
+			 }	 
+		 RUS = { country_event = 100143 }
 		 AUH = {
 			 war = {
 				 target = SER
-				 attacker_goal = {
-					 casus_belli = conquer
-					 }
+				 attacker_goal = { casus_belli = conquer }
 				 }
 			 }
 		 }
 	option = {
 		 name = "optb_AUHE1"
-		 ai_chance = {
-			 factor = 10
-			 }
+		 ai_chance = { factor = 10 }
 		 set_country_flag = serbian_ultamatium
 		 threat = {
 			 who = all
@@ -171,35 +144,31 @@ remove_minister = 6029 #Franz_Ferdinand
 			 who = USA
 			 value = -5
 			 }
-		 RUS = {
-			 country_event = 100143 #100143
-			}
+		 threat = {
+			 who = POR
+			 value = -5
+			 }	 
+		 RUS = { country_event = 100143 }
 		 dissent = 10
 		 }
 	}
 
 
-#Mobilize against Austria Hungary
-# USA doesn't care and is to remain neutral
+# Russia Mobilize against Austria Hungary
 
  country_event = {
 	title = "RUSE1"
 	desc = "desc_RUSE1"
 	id = 100143
-	 
 	picture = "RUSP1"
 	 
 	fire_only_once = yes
-	 
 	is_triggered_only = yes
-	 
 	major = yes
 	 
 	option = {
-		 name = "opta_RUSE1"
-		 ai_chance = {
-			 factor = 100
-			 }
+		 name = "opta_RUSE1"						# Mobilise
+		 ai_chance = { factor = 100 }
 		 set_country_flag = russia_mobilized
 		 manpower = 50
 		 neutrality = -50
@@ -212,38 +181,29 @@ remove_minister = 6029 #Franz_Ferdinand
 			 who = USA
 			 value = -10
 			 }
-		 AUH = {
-			 country_event = 100144 #100144
-			}
+		 AUH = { country_event = 100144 }
+		 RUS = { country_event = 100112 }
 		 AUH = {
 			 any_owned = {
-				 limit = {
-					 is_core = UKR
-					 }
+				 limit = { is_core = UKR }
 				 add_core = RUS
 				 }
 			 }
 		 AUH = {
 			 any_owned = {
-				 limit = {
-					 is_core = POL
-					 }
+				 limit = { is_core = POL }
 				 add_core = RUS
 				 }
 			 }
 		 }
 	option = {
-		 name = "optb_RUSE1"
-		 ai_chance = {
-			 factor = 0
-			 }
+		 name = "optb_RUSE1"                         # STAND DOWN
+		 ai_chance = { factor = 0 }
 		 set_country_flag = russia_mobilized
 		 manpower = -150
 		 neutrality = 5
 		 money = -100
-		 AUH = {
-			 country_event = 100144 #100144
-			}
+		 AUH = { country_event = 100144 }
 		 }
 	}
 
@@ -254,18 +214,14 @@ remove_minister = 6029 #Franz_Ferdinand
 	title = "HUNE4"
 	desc = "desc_HUNE4"
 	id = 100144
-	 
 	picture = "HUNP4"
 	 
 	is_triggered_only = yes
-	 
 	major = yes
 	 
 	option = {
 		 name = "For the Reich!"
-		 ai_chance = {
-			 factor = 100
-			 }
+		 ai_chance = { factor = 100 }
 		 set_country_flag = austria_axis
 		 manpower = 100
 		 neutrality = -50
@@ -293,12 +249,8 @@ remove_minister = 6029 #Franz_Ferdinand
 			 value = 25
 			 }
 		 national_unity = 10
-		 ITA = {
-			 country_event = 999949 #999949
-			}
-		 GER = {
-			 set_country_flag = russia_mobilized
-			 }
+		 ITA = { country_event = 999949 }
+		 GER = { set_country_flag = russia_mobilized }
 		 }
 	}
 
@@ -309,11 +261,9 @@ remove_minister = 6029 #Franz_Ferdinand
 	title = "ITAE2"
 	desc = "desc_ITAE2"
 	id = 999949
-	 
 	picture = "ITAP2"
 	 
 	is_triggered_only = yes
-	 
 	major = yes
 	 
 	option = {
@@ -395,6 +345,35 @@ remove_minister = 6029 #Franz_Ferdinand
 		 }
 	}
 
+	
+# Russia Declare's war against Austria-Hungary
+
+ country_event = {
+	title = "EVT1914_100112_title"
+	desc = "EVT1914_100112_desc"
+	id = 100112
+	picture = "Russian_Troops"
+	 
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	 
+	option = {
+		name = "EVT1914_100112_ACTIONA"
+		ai_chance = { factor = 30 }
+		war = {	target = AUH
+				attacker_goal = { casus_belli = allies_germany }
+				defender_goal = { casus_belli = axis_russia }
+				}
+		officer_pool = 3000
+		}
+		 
+	option = {
+		name = "EVT1914_100112_ACTIONB"
+		ai_chance = { factor = 70 }
+		}
+	}
+	
 
 #Schlieffen Plan
 # USA doesn't care and is to remain neutral
@@ -402,35 +381,26 @@ remove_minister = 6029 #Franz_Ferdinand
 # Montenegro event
 # SAF chooses to support Entente or stay neutral
 # MP Bonus for Volunteer Army
-# USA doesn't care and is to remain neutral
 # Avoid SAF going to war until SAF Decides event
 # Montenegro event
 # SAF chooses to support Entente or stay neutral
 #
-# USA doesn't care and is to remain neutral
-# Avoid SAF going to war until SAF Decides event
 # Montenegro event
 # SAF chooses to support Entente or stay neutral
-# USA doesn't care and is to remain neutral
 
  country_event = {
 	title = "GERE2"
 	desc = "desc_GERE2"
 	id = 100145
-	 
 	picture = "GERP2"
 	 
 	fire_only_once = yes
-	 
 	is_triggered_only = yes
-	 
 	major = yes
 	 
 	option = {
 		 name = "opta_GERE2"
-		 ai_chance = {
-			 factor = 80
-			 }
+		 ai_chance = { factor = 80 }
 		 set_country_flag = germany_mobilize
 		 neutrality = -50
 		 manpower = 300
@@ -441,6 +411,10 @@ remove_minister = 6029 #Franz_Ferdinand
 			 }
 		 threat = {
 			 who = USA
+			 value = -10
+			 }
+		threat = {
+			 who = POR
 			 value = -10
 			 }
 		 national_unity = 50
@@ -605,6 +579,10 @@ remove_minister = 6029 #Franz_Ferdinand
 			 }
 		 threat = {
 			 who = USA
+			 value = -15
+			 }
+		 threat = {
+			 who = POR
 			 value = -15
 			 }
 		 national_unity = 50
@@ -780,6 +758,10 @@ remove_minister = 6029 #Franz_Ferdinand
 			 who = USA
 			 value = -5
 			 }
+		 threat = {
+			 who = POR
+			 value = -5
+			 }
 		 national_unity = 50
 		 SAF = {
 			 leave_faction = allies
@@ -903,4 +885,3 @@ remove_minister = 6029 #Franz_Ferdinand
 			 }
 		 }
 	}
-

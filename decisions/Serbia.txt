@@ -1,0 +1,26 @@
+diplomatic_decisions = {
+	 2084503_decision = {                                   #Evacuate_through_Albania?
+		ai_will_do = { factor = 1 }
+		potential = {
+			 exists = ALB
+			 THIS = { surrender_progress = 50 }
+			 not = { SER = { controls = 4368 } }   #Pristina 
+			 not = { SER = { controls = 3912 } }   #Beograd  
+			 or = {
+				 SER = { controls = 4495 }   #Tetovo
+				 SER = { controls = 4609 }   #Gostivar
+				 }
+			 not = {
+				 SER = { war_with = ALB }
+				 SER = { alliance_with = ALB }
+				 }
+			 tag = SER
+			 not = { has_country_flag = decision_2084503 }
+			 }
+		allow = { 	 }
+		effect = {
+			country_event = 368         #Evacuate_through_Albania?
+			set_country_flag = decision_2084503
+			 }
+		}
+	}

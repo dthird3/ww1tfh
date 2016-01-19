@@ -34,18 +34,19 @@
 32003 = { 
 	name = "d'Esperey, F"
 	type = land 
-	max_skill = 7 
+	max_skill = 9 
 	skill = 4 
 	loyalty = 5.00 
 	picture = 446 
 	country = FRA 
 	add_trait = offensive_doctrine 
-	 history = {
-		 1911.1.1 = { rank = 1 }
-		 1911.1.1 = { rank = 1 }
-		 1913.1.1 = { rank = 2 }
-		 1914.1.1 = { rank = 3 }
-		 1930.1.1 = { rank = 0 }
+	add_trait = logistics_wizard 
+	add_trait = panzer_leader
+	history = {
+		1911.1.1 = { rank = 1 }
+		1913.1.1 = { rank = 2 }
+		1914.1.1 = { rank = 3 }
+		1930.1.1 = { rank = 0 }
 		}
 	}
 
@@ -87,15 +88,13 @@
 32006 = { 
 	name = "Foch"
 	type = land 
-	max_skill = 7 
+	max_skill = 9 
 	skill = 4 
 	loyalty = 5.00 
 	picture = 449 
 	country = FRA 
-	add_trait = defensive_doctrine 
 	add_trait = offensive_doctrine 
 	 history = {
-		 1911.1.1 = { rank = 1 }
 		 1911.1.1 = { rank = 1 }
 		 1913.1.1 = { rank = 2 }
 		 1914.1.1 = { rank = 3 }
@@ -106,19 +105,20 @@
 32007 = { 
 	name = "Joffre"
 	type = land 
-	max_skill = 7 
-	skill = 4 
+	max_skill = 6 
+	skill = 5 
 	loyalty = 5.00 
 	picture = 450 
 	country = FRA 
 	add_trait = offensive_doctrine 
-	 history = {
-		 1905.1.1 = { rank = 1 }
-		 1905.1.1 = { rank = 1 }
-		 1908.1.1 = { rank = 2 }
-		 1911.1.1 = { rank = 3 }
-		 1910.1.1 = { rank = 4 }
-		 1917.1.1 = { rank = 0 }
+	add_trait = old_guard
+	add_trait = logistics_wizard
+	history = {
+		1905.1.1 = { rank = 1 }
+		1908.1.1 = { rank = 2 }
+		1911.1.1 = { rank = 3 }
+		1910.1.1 = { rank = 4 }
+		1917.1.1 = { rank = 0 }
 		}
 	}
 
@@ -130,26 +130,25 @@
 	loyalty = 5.00 
 	picture = 451 
 	country = FRA 
-	 history = {
-		 1913.1.1 = { rank = 1 }
-		 1913.1.1 = { rank = 1 }
-		 1914.1.1 = { rank = 2 }
-		 1917.1.1 = { rank = 3 }
-		 1922.1.1 = { rank = 0 }
+	history = {
+		1913.1.1 = { rank = 1 }
+		1914.1.1 = { rank = 2 }
+		1917.1.1 = { rank = 3 }
+		1922.1.1 = { rank = 0 }
 		}
 	}
 
 32009 = { 
 	name = "Pétain"
 	type = land 
-	max_skill = 7 
+	max_skill = 9 
 	skill = 4 
 	loyalty = 5.00 
 	picture = 452 
 	country = FRA 
-	add_trait = defensive_doctrine 
-	 history = {
-		 1913.1.1 = { rank = 1 }
+	add_trait = defensive_doctrine
+	add_trait = panzer_leader
+	history = {
 		 1913.1.1 = { rank = 1 }
 		 1914.1.1 = { rank = 2 }
 		 1915.1.1 = { rank = 3 }
@@ -313,16 +312,16 @@
 	}
 
 32019 = { 
-	name = "Gallieni"
+	name = "Gallieni, Joseph"
 	type = land 
 	max_skill = 7 
-	skill = 4 
+	skill = 5 
 	loyalty = 5.00 
 	picture = 461 
 	country = FRA 
 	add_trait = defensive_doctrine 
+	add_trait = old_guard
 	 history = {
-		 1899.1.1 = { rank = 1 }
 		 1899.1.1 = { rank = 1 }
 		 1906.1.1 = { rank = 2 }
 		 1908.1.1 = { rank = 3 }
@@ -340,7 +339,6 @@
 	picture = 462 
 	country = FRA 
 	 history = {
-		 1908.1.1 = { rank = 1 }
 		 1908.1.1 = { rank = 1 }
 		 1914.1.1 = { rank = 2 }
 		 1916.1.1 = { rank = 3 }
@@ -453,16 +451,16 @@
 	}
 
 32027 = { 
-	name = "Mangin"
+	name = "Mangin, Charles"
 	type = land 
-	max_skill = 6 
+	max_skill = 8 
 	skill = 3 
 	loyalty = 5.00 
 	picture = 469 
 	country = FRA 
 	add_trait = offensive_doctrine 
-	 history = {
-		 1914.1.1 = { rank = 1 }
+	add_trait = fortress_buster
+	history = {
 		 1914.1.1 = { rank = 1 }
 		 1916.1.1 = { rank = 2 }
 		 1917.1.1 = { rank = 3 }
@@ -586,7 +584,6 @@
 	country = FRA 
 	 history = {
 		 1913.1.1 = { rank = 1 }
-		 1913.1.1 = { rank = 1 }
 		 1914.1.1 = { rank = 2 }
 		 1915.1.1 = { rank = 3 }
 		 1925.1.1 = { rank = 0 }
@@ -602,7 +599,6 @@
 	picture = 7389 
 	country = FRA 
 	 history = {
-		 1908.1.1 = { rank = 1 }
 		 1908.1.1 = { rank = 1 }
 		 1913.1.1 = { rank = 2 }
 		 1915.1.1 = { rank = 3 }
@@ -620,7 +616,6 @@
 	country = FRA 
 	add_trait = offensive_doctrine 
 	 history = {
-		 1910.1.1 = { rank = 1 }
 		 1910.1.1 = { rank = 1 }
 		 1912.1.1 = { rank = 2 }
 		 1914.1.1 = { rank = 3 }
@@ -8732,7 +8727,6 @@
 	picture = 593 
 	country = FRA 
 	 history = {
-		 1898.1.1 = { rank = 1 }
 		 1898.1.1 = { rank = 1 }
 		 1932.1.1 = { rank = 2 }
 		 1932.1.1 = { rank = 3 }

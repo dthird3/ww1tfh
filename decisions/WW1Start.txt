@@ -1,9 +1,6 @@
-
 diplomatic_decisions = {
-	 SER_ult = {#Serbian_Ultimatium
-		ai_will_do = {
-			 factor = 1
-			 }
+	 SER_ult = {                               #Serbian_Ultimatium
+		ai_will_do = { factor = 1 }
 		potential = {
 			 tag = AUH
 			 exists = SER
@@ -18,9 +15,7 @@ diplomatic_decisions = {
 			 }
 		effect = {
 			 set_country_flag = ser_ultamatium
-			 SER = {
-				 country_event = 100148 #Austrian_Demands
-				}
+			 SER = { country_event = 100148 }            #Austrian_Demands
 			 dissent = 2
 			 money = 100
 			 manpower = 30
@@ -28,26 +23,21 @@ diplomatic_decisions = {
 		}
 	
 
-	 vs_plan = {#Schlieffen_Plan
-		ai_will_do = {
-			 factor = 1
-			 }
+	 vs_plan = {                                         #Schlieffen_Plan
+		ai_will_do = { factor = 1 }
 		potential = {
 			 tag = GER
 			 has_country_flag = russia_mobilized
-			 NOT = {
-				 has_country_flag = vsplan
-				 }
+			 NOT = { has_country_flag = vsplan }
 			 }
-		allow = {
-			 war = no
-			 }
+		allow = {  
+#			or = { GER = { war_with = RUS } 
+			       GER = { war = no } }
+#		}
+		
 		effect = {
 			 set_country_flag = vsplan
-			 GER = {
-				 country_event = 100145 #Schlieffen_Plan
-				}
+			 GER = { country_event = 100145 }             #Schlieffen_Plan
 			 }
 		}
 	}
-

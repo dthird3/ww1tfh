@@ -2200,13 +2200,9 @@ head_of_state = 35110 #Alexandros_I
 		 }
 	option = {
 		 name = "DH_EVENT_2084504_Option7"
-		 ALB = { military_access = SER }
-		 random_list = { 
-			25 = { ZZZ = { split_troops = 0.75 } } 
-			25 = { ZZZ = { split_troops = 0.55 } } 
-			25 = { ZZZ = { split_troops = 0.45 } } 
-			25 = { ZZZ = { split_troops = 0.25 } } 
-			}
+		 ALB = {
+			 military_access = SER
+			 }
 		 }
 	}
 
@@ -2260,7 +2256,7 @@ head_of_state = 35110 #Alexandros_I
 
 
 #Greece proclaimed the annexation of Northern Epirus
-############# Nothing calls this event yet
+
  country_event = {
 	title = "DH_EVENT_2058501_TITLE"
 	desc = "DH_EVENT_2058501_DESC"

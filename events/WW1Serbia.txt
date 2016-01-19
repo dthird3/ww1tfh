@@ -1,0 +1,74 @@
+#Evacuate through Albania?
+
+ country_event = {
+	title = "EVT1914_2084503_NAME"
+	desc = "EVT1914_2084503_DESC"
+	picture = "news_paper"
+	id = 368
+	 
+	fire_only_once = yes
+	is_triggered_only = yes
+	 
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		 ai_chance = { factor = 100 }
+		 name = "EVT1914_2084503_ACTIONA"
+		 ALB = { country_event = 1 }                     #Let_Serbian_troops_retreat?
+		 set_global_flag = 2084503_EVENT_DONE
+		 }
+	option = {
+		 ai_chance = { factor = 0 }		 
+		 name = "EVT1914_2084503_ACTIONB"
+		 set_global_flag = 2084503_EVENT_DONE
+		 }
+	}
+
+	
+#Let Serbian troops retreat?
+
+ country_event = {
+	title = "EVT1914_2058500_NAME"
+	desc = "EVT1914_2058500_DESC"
+	picture = "foreign_volunteers"	
+	id = 1
+	 
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		 ai_chance = { factor = 70 }
+		 name = "EVT1914_2058500_ACTIONA"
+		 SER = { country_event = 369 }          #Evacuate_through_Albania!
+		 }
+	option = {
+		 ai_chance = { factor = 30 }
+		 name = "EVT1914_2058500_ACTIONB"
+		 war = { target = SER }
+		 }
+	}
+	
+
+#Evacuate through Albania!  / Greece
+
+ country_event = {
+	title = "EVT1914_2084504_NAME"
+	desc = "EVT1914_2084504_DESC"
+	picture = "news_paper"	
+	id = 369
+	 
+	fire_only_once = yes
+	is_triggered_only = yes
+	 
+	option = {
+		 name = "ACTION_NAME_GREAT"
+		 ALB = { military_access = SER }
+		 random_list = { 
+			25 = { ZZZ = { split_troops = 0.25 } } 
+			25 = { ZZZ = { split_troops = 0.45 } } 
+			25 = { ZZZ = { split_troops = 0.55 } } 
+			25 = { ZZZ = { split_troops = 0.75 } } 
+			}
+		 }
+	}

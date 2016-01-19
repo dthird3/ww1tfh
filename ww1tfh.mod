@@ -1,5 +1,5 @@
 name = "World War 1 Mod Beta"
-path = "tfh/mod/ww1tfh"
+path = "tfh/mod/ww1tfhgit"
 
 replace_path = "common"
 
@@ -22,4 +22,4 @@ replace_path = "units"
 replace_path = "gfx/models"
 
 
-user_dir = "WW1Modv0.8"
+user_dir = "WW1Modv1.05"
