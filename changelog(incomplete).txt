@@ -1,0 +1,43 @@
+provinces:
+1572 Kiel strategic_resource = dockyard_facilities #Germaniawerft
+
+units:
+
+#low practical gain prevented airship investment from being a valid option; requires considerable number of engineers
+airship build time 300 > 240d
+airship ic cost 14 > 12
+airship sub attack 2 > 3 #historical role
+airship officer cost 0 > 10 #requires considerable number of engineers to maintain
+
+#allows for easier implementation of sub strategy, and gives the aspect more weight
+coastal submarine build time 200 > 160d 
+coastal submarine practical on completion 0.3 > 0.5
+submarine build time 300 > 240d
+submarine practical on completion 0.5 > 0.8
+
+#asw
+ASW technology first offset 1917 > 1915
+ASW tech difficulty 10 > 8
+
+#allows use of mounted police
+police brigade speed 4.0 > 6.0
+police brigade toughness 0.7 > 1.0
+
+#practical/ICd gain set closer to regular arty ratio
+heavy artillery practical on completion 0.5 > 0.8
+HART now benefits from chemical shells same as regular ART
+
+#allow for use of engineers in "mobile" divisions without slowing them down, adjusting practical gain
+engineer speed 5.0 > 6.0
+engineer practical on completion 0.3 > 0.2
+
+# armour speed slightly increased in case they are combined with LINF or CAV
+light armour speed 5 > 5.5
+armour speed 4.0 > 5.0
+light armour practical on completion 0.6 > 0.8
+armour practical on completion 1.0 > 1.2
+
+#ship ranges
+coastal sub range +100km
+destroyer +200km
+seaplane tender +300km
