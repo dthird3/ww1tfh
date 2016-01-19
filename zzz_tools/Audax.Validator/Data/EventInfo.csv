@@ -1,8 +1,9 @@
 ID;TitleKey;Title;Tag
-1;---;DH_EVENT_2058500_TITLE;ALB
-2;DH_EVENT_2058501_TITLE;Greece proclaimed the annexation of Northern Epirus;ALB
-3;DH_EVENT_2020500_TITLE;The Fall of Serbia;BUL
-4;DH_EVENT_2020501_TITLE;Central Power's proposal;BUL
+1;EVT1914_2058500_NAME;Let Serbian troops retreat?;---
+2;---;DH_EVENT_2058501_TITLE;GRE
+3;DH_EVENT_2020500_TITLE;The Fall of Serbia;---
+4;DH_EVENT_2020501_TITLE;Central Power's proposal;---
+5;---;DH_EVENT_2058501_TITLE;---
 6;RUSE4;Troops Head Home;---
 11;DH_EVENT_2001505_TITLE;A foot on Cape Helles;ENG
 12;DH_EVENT_2001506_TITLE;Seize Thessaloniki?;ENG
@@ -28,7 +29,6 @@ ID;TitleKey;Title;Tag
 91;DH_EVENT_2002514_TITLE;Greece demobilizes!;FRA
 92;DH_EVENT_2002516_TITLE;Venizelos leaves Greek government;FRA
 93;DH_EVENT_2002517_TITLE;Venizelos is back;FRA
-94;DH_EVENT_2002518_TITLE;Serbian army evacuate through Albania!;FRA
 96;DH_EVENT_2002520_TITLE;Greece grants Bulgaria military access;FRA
 97;DH_EVENT_2002521_TITLE;Athens on fire!;FRA
 98;DH_EVENT_2002522_TITLE;Renewed call for demobilization;FRA
@@ -40,7 +40,7 @@ ID;TitleKey;Title;Tag
 123;DH_EVENT_2002551_TITLE;Russians denounce Janin's behavior;FRA
 124;EVT1914_000124_NAME;Appoint Foch as Supreme Allied Commander;---
 125;EVT1914_000125_NAME;Appoint Clemenceau as Prime Minister;---
-138;DH_EVENT_2019501_TITLE;Austria-Hungary declares war on Serbia!;GRE
+138;EVT1914_2019501_TITLE;Austria-Hungary declares war on Serbia!;GRE
 139;DH_EVENT_2019502_TITLE;Austria-Hungary declares war on Serbia!;GRE
 140;DH_EVENT_2019503_TITLE;Bulgaria joins the Central Powers!;GRE
 141;DH_EVENT_2019504_TITLE;Negotiation with the Entente;GRE
@@ -100,8 +100,8 @@ ID;TitleKey;Title;Tag
 267;DH_EVENT_2145531_TITLE;The German military mission leaves the country;TUR
 268;DH_EVENT_2191583_TITLE;The military mission to the Ottoman Empire returns home;GER
 302;DH_EVENT_2193501_TITLE;Polish–Soviet War;POL
-368;DH_EVENT_2084503_TITLE;Evacuate through Albania?;SER
-369;DH_EVENT_2084504_TITLE;Evacuate through Albania!;SER
+368;EVT1914_2084503_NAME;Evacuate through Albania?;---
+369;EVT1914_2084504_NAME;Evacuate through Albania!;---
 374;DH_EVENT_2007501_TITLE;Sovnarkom formed;SOV
 376;DH_EVENT_2007503_TITLE;The economy is collapsing!;SOV
 378;DH_EVENT_2007505_TITLE;Dissolution of the Constituent Assembly;SOV
@@ -124,10 +124,8 @@ ID;TitleKey;Title;Tag
 405;DH_EVENT_2007534_TITLE;Admiral Koltchak;SOV
 406;DH_EVENT_2007535_TITLE;Cossacks' Uprising;SOV
 407;DH_EVENT_2007536_TITLE;Red Terror;SOV
-413;DH_EVENT_2191508_TITLE;The Fall of Serbia;GER
-414;DH_EVENT_2191509_TITLE;Bulgaria joins the Central Powers!;GER
-415;DH_EVENT_2191510_TITLE;Promises to Bulgaria;AUH
-416;DH_EVENT_2191509_TITLE;Bulgaria joins the Central Powers!;GER
+413;DH_EVENT_2191508_TITLE;The Fall of Serbia;---
+415;DH_EVENT_2191510_TITLE;Promises to Bulgaria;---
 418;DH_EVENT_2191515_TITLE;Sailor's mutiny!;GER
 419;DH_EVENT_2191516_TITLE;The Revolt spreads!;GER
 420;DH_EVENT_2191517_TITLE;Two republics proclaimed...;GER
@@ -135,7 +133,8 @@ ID;TitleKey;Title;Tag
 422;DH_EVENT_2191519_TITLE;Official abdication of Wilhelm II;GER
 438;DH_EVENT_2191540_TITLE;Japanese Ultimatum;GER
 445;EVT1914_000445_NAME;Appoint Von Falkenhayn as Chief of Staff;---
-479;DH_EVENT_2192529_TITLE;Agreement with Bulgaria;AUH
+476;---;EVT1914_476_NAME;---
+479;DH_EVENT_2192529_TITLE;Agreement with Bulgaria;---
 486;DH_EVENT_2233500_TITLE;Letters with Henry MacMahon;HJZ
 487;DH_EVENT_2233501_TITLE;England promises a great Arab Empire;HJZ
 488;DH_EVENT_2233502_TITLE;The Great Arab Revolt;HJZ
@@ -211,6 +210,7 @@ ID;TitleKey;Title;Tag
 100100;JAPE1;Japan–Korea Annexation Treaty;---
 100110;ENGE1;King Edward VII dies;ENG
 100111;ENGE2;South Africa Independence;---
+100112;EVT1914_100112_title;Support our Ally Serbia;RUS
 100113;ITAE1;Italo-Turkish War;---
 100114;TURE1;Treaty of Lausanne;---
 100115;FRAE1;Treaty of Fez;FRA
@@ -244,12 +244,12 @@ ID;TitleKey;Title;Tag
 100144;HUNE4;Dual Alliance;---
 100145;GERE2;Schlieffen Plan;---
 100146;TURE10;Ottoman–German Alliance;---
-100147;MTNE1;War with Montenegro;---
 100148;SERE2;Austrian Demands;---
 100149;RUSE2;Petrograd;RUS
 100150;RUSE3;Sikorsky Ilya Muromets;---
 100151;ENGE4;Cyprus Annexation;---
 100152;ENGE4;Cyprus Annexation;---
+100153;100153_TITLE;Austria wants our neutrality;---
 100200;CRTE1;End of the Cretan State;---
 100201;USAE2;Organization of American States;USA
 100202;PORE1;5 October 1910 revolution;POR
@@ -332,6 +332,7 @@ ID;TitleKey;Title;Tag
 100810;EVT1914_2008100_NAME;Galacian Army Mutiny;SOV
 100811;EVT1914_2008100_NAME;Galacian Army Mutiny;---
 100814;EVT1914_2008101_NAME;Danzig dock workers strike;POL
+100900;100900_TITLE;Keep Montenegro neutral;AUH
 100901;AUHE2;Franz Joseph I dies;AUH
 100902;JAPE4;Emperor Meiji dies;JAP
 100905;BELE1;Charles de Broqueville appointed Prime Minister;BEL
@@ -438,7 +439,7 @@ ID;TitleKey;Title;Tag
 190042;EVT1914_190042_NAME;German weapons shipment intercepted!;ENG
 190043;EVT1914_190043_NAME;German support for the Irish Rebellion;ENG
 190050;EVT1914_190050_TITLE;The French support for war effort;FRA
-190100;EVT1914_190100_TITLE;French Army Mutinies!;---
+190100;EVT1914_190100_TITLE;French Army Mutinies!;FRA
 190102;EVT1914_190102_TITLE;French Army Mutiny continues!;FRA
 190104;EVT1914_190104_TITLE;French Army Mutiny Repressed;FRA
 190105;EVT1914_190105_TITLE;French Army Mutiny - Broken Promise;FRA
@@ -564,9 +565,6 @@ ID;TitleKey;Title;Tag
 1234989;EVTNAME1234989;Fall of Pskov;RUS
 2008000;EVT1914_2008000_NAME;The Union of South Africa decides;---
 2008001;EVT1914_2008001_NAME;Boer Rebellion against South Africa;SAF
-2058500;EVT1914_2058500_NAME;Let Serbian troops retreat?;---
-2084503;EVT1914_2084503_NAME;Evacuate through Albania?;SER
-2084504;EVT1914_2084504_NAME;Evacuate through Albania!;---
 2084505;TURE2;Albanian Uprising!;TUR
 2084506;TURE2;Albanian Uprising!;TUR
 4321311;EVTNAME4321311;Recapture of Arkhangelsk;RUS
