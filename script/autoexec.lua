@@ -5,13 +5,13 @@
 
 -- set up path
 package.path = package.path .. ";common\\?.lua"
-package.path = package.path .. ";tfh\\mod\\WW1Mod_v1.05\\script\\?.lua"
-package.path = package.path .. ";tfh\\mod\\WW1Mod_v1.05\\script\\country\\?.lua"
-package.path = package.path .. ";tfh\\mod\\WW1Mod_v1.05\\script\\diplomacy\\?.lua"
-package.path = package.path .. ";tfh\\mod\\WW1Mod_v1.05\\script\\intelligence\\?.lua"
-package.path = package.path .. ";tfh\\mod\\WW1Mod_v1.05\\script\\politics\\?.lua"
-package.path = package.path .. ";tfh\\mod\\WW1Mod_v1.05\\script\\production\\?.lua"
-package.path = package.path .. ";tfh\\mod\\WW1Mod_v1.05\\script\\utilities\\?.lua"
+package.path = package.path .. ";tfh\\mod\\ww1tfh\\script\\?.lua"
+package.path = package.path .. ";tfh\\mod\\ww1tfh\\script\\country\\?.lua"
+package.path = package.path .. ";tfh\\mod\\ww1tfh\\script\\diplomacy\\?.lua"
+package.path = package.path .. ";tfh\\mod\\ww1tfh\\script\\intelligence\\?.lua"
+package.path = package.path .. ";tfh\\mod\\ww1tfh\\script\\politics\\?.lua"
+package.path = package.path .. ";tfh\\mod\\ww1tfh\\script\\production\\?.lua"
+package.path = package.path .. ";tfh\\mod\\ww1tfh\\script\\utilities\\?.lua"
 --require('hoi') -- already imported by game, contains all exported classes
 
 -- Utilities Folder
