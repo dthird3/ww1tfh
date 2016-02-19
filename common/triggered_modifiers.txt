@@ -1967,7 +1967,7 @@ Caliph_of_Islam = {
 	} 
 	
 	territorial_pride = 0.10
-	global_manpower_modifier = 0.1
+	global_manpower_modifier = 0.05
 	icon = 29
 }
 # Holy War
@@ -1985,7 +1985,7 @@ Holy_War = {
 	} 
 	
 	territorial_pride = 0.10
-	global_manpower_modifier = 0.1
+	global_manpower_modifier = 0.05
 	icon = 29
 }
 
@@ -2022,8 +2022,9 @@ uk_no_conscription = {
 	land_organisation = -0.25
 	icon = 25
 }
+
 # Russian leadership trouble
-russia_leadership_troubles = {
+russia_leadership_troubles_1 = {
 
     potential = {
 		tag = RUS
@@ -2032,18 +2033,56 @@ russia_leadership_troubles = {
 		tag = RUS
 		OR = {
 			war = no
-			NOT = {
-				1928 = {
-					controlled_by = RUS
-				}
+			NOT = {	1928 = { controlled_by = RUS }    # Warsaw
 			}
 		}
 	} 
 	
-	officer_recruitment = -0.33
-	research_efficiency = -0.33
+	officer_recruitment = -0.11
+	research_efficiency = -0.11
 	icon = 30
 }
+
+# Russian leadership trouble
+russia_leadership_troubles_2 = {
+
+    potential = {
+		tag = RUS
+	}
+	trigger = {
+		tag = RUS
+		OR = {
+			war = no
+			NOT = {	1928 = { controlled_by = RUS }    # Warsaw
+			}
+		}
+	} 
+	
+	officer_recruitment = -0.11
+	research_efficiency = -0.11
+	icon = 30
+}
+
+# Russian leadership trouble
+russia_leadership_troubles_3 = {
+
+    potential = {
+		tag = RUS
+	}
+	trigger = {
+		tag = RUS
+		OR = {
+			war = no
+			NOT = {	1928 = { controlled_by = RUS }    # Warsaw
+			}
+		}
+	} 
+	
+	officer_recruitment = -0.11
+	research_efficiency = -0.11
+	icon = 30
+}
+
 #Multiethnic
 multiethnic_empire = {
 
@@ -2118,7 +2157,7 @@ Ottomans_weakened = {
 	
 	officer_recruitment = -0.15
 	org_regain = -0.2
-	global_manpower_modifier = -0.08
+	global_manpower_modifier = -0.1
 	global_ic = -0.05
 	icon = 29
 }
