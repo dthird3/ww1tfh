@@ -1,3 +1,36 @@
+#  Pacify Montenegro
+
+ country_event = {
+	title = "100900_TITLE"
+	desc = "100900_DESC"
+	id = 100900
+	picture = "diplomatic_campaign"
+	
+	fire_only_once = yes
+	mean_time_to_happen = { days = 2 }
+	
+	trigger = {
+		AUH = { war_with = SER } 
+		AUH = { not = { war_with = MTN } } }
+		
+	option = {
+		name = "opta_100900"
+		ai_chance = { factor = 100 }
+		MTN = { country_event = 100153 }
+		}
+	option = {
+		name = "optb_100900"
+		ai_chance = { factor = 0 }
+		MTN = { neutrality = -15 }
+		MTN = {
+			 threat = {
+				 who = AUH
+				 value = 30
+				 }
+		}
+	}
+}
+
 
 #Franz Joseph I dies
 
@@ -10,26 +43,15 @@
 	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = {
-		 days = 1
-		 }
+	mean_time_to_happen = { days = 1 }
 	trigger = {
 		 tag = AUH
-		 AUH = {
-			 head_of_state = 6031 #Franz_Joseph_I
-
-			}
-		 date = 1916.11.21
-		 }
+		 AUH = { head_of_state = 6031 }     #Franz_Joseph_I
+		 date = 1916.11.21 }
 	option = {
 		 name = "opta_AUHE2"
-		 ai_chance = {
-			 factor = 100
-			 }
-		 AUH = {
-			 head_of_state = 6030 #Karl_I
-
-			}
+		 ai_chance = { factor = 100 }
+		 AUH = { head_of_state = 6030 }     #Karl_I
 		 set_country_flag = emperor_franz_dead
 		 }
 	}
@@ -44,11 +66,8 @@
 	id = 190003
 	 
 	picture = "WARP3"
-	 
 	fire_only_once = yes
-	 
 	is_triggered_only = yes
-	 
 	major = yes
 	 
 	option = {

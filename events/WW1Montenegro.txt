@@ -1,44 +1,55 @@
-
-#War with Montenegro
+#  Austria sues for Neutrality
 
  country_event = {
-	title = "MTNE1"
-	desc = "desc_MTNE1"
-	id = 100147
+	title = "100153_TITLE"
+	desc = "100153_DESC"
+	id = 100153
 	 
-	picture = "GERP2"
-	 
+	picture = "diplomatic_campaign"
+	
 	fire_only_once = yes
-	 
 	is_triggered_only = yes
+	major = yes
 	 
 	option = {
-		 name = "opta_MTNE1"
-		 ai_chance = {
-			 factor = 100
-			 }
-		 MTN = {
-			 manpower = 50
-			 }
-		 MTN = {
-			 relation = {
+		name = "opta_100153"
+		ai_chance = { factor = 80 }
+		manpower = 50
+		national_unity = 40
+		neutrality = -50
+		relation = {
 				 who = GER
-				 value = -100
-				 }
-			 }
-		 MTN = {
-			 relation = {
+				 value = -100 }
+		relation = {
 				 who = AUH
-				 value = -100
-				 }
+				 value = -100 }
+		war = {	target = AUH }
+		}
+			 
+	 option = {
+		name = "optb_100153"
+		ai_chance = { factor = 20 }
+			MTN = { add_core = 4494 }
+			MTN = {
+			 relation = {
+				who = GER
+				value = 50 }
 			 }
-		 MTN = {
-			 national_unity = 40
+			MTN = {
+			 relation = {
+				who = AUH
+				value = 50 }
 			 }
-		 neutrality = -50
-		 MTN = {
-			 join_faction = allies
-			 }
-		 }
-	}
-
+			neutrality = 30
+			MTN = {
+			 threat = {
+				 who = AUH
+				 value = -30 }
+				}
+			MTN = {
+			 threat = {
+				 who = GER
+				 value = -30}
+				}
+			}	
+		}

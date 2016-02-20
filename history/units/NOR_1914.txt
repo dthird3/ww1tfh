@@ -1,3 +1,29 @@
+ division = {
+		location = 812  # Oslo
+		is_reserve = no 
+		name = "Oslo Garrison"
+		
+		regiment = {
+			type = garrison_brigade 
+			experience = 10 
+			name = "Oslo Garrison"
+			historical_model = 2 
+			}
+		}
+		
+ division = {
+		location = 65  # Narvik
+		is_reserve = no 
+		name = "Narvik Garrison"
+		
+		regiment = {
+			type = garrison_brigade 
+			experience = 10 
+			name = "Narvik Garrison"
+			historical_model = 2 
+			}
+		}
+
  corps = {
 	location = 812  # Oslo
 	name = "Den Norske Hær"
@@ -11,50 +37,90 @@
 	 division = {
 		location = 812  # Oslo
 		is_reserve = no 
-		name = "1. Infanteridivisjon"
+		name = "1. Fjelletdivisjon"
 		
 		 regiment = {
 			type = bergsjaeger_brigade 
 			experience = 10 
-			name = "1. Infanteridivisjon"
+			name = "1. Fjellet brigade"
 			historical_model = 2 
 			}
 		
 		 regiment = {
 			type = bergsjaeger_brigade 
 			experience = 10 
-			name = "1. Infanteridivisjon"
+			name = "2. Fjellet brigade"
 			historical_model = 2 
 			}
 		}
+		
+		division = {
+		location = 812  # Oslo
+		is_reserve = yes 
+		name = "2. Infanteridivisjon"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "3. Infanteribrigade"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "4. Infanteribrigade"
+			historical_model = 2 
+			}
+		}		
 	}
 
  corps = {
 	location = 65  # Narvik
-	name = "6. Hærkorps"
+	name = "2. Hærkorps"
 	
 	 regiment = {
 		type = hq_brigade 
-		name = "6. Hærkorps HQ"
+		name = "2. Hærkorps HQ"
 		historical_model = 0 
 		}
 	
 	 division = {
 		location = 65  # Narvik
 		is_reserve = no 
-		name = "6. Infanteridivisjon"
+		name = "3. Fjelletdivisjon"
 		
 		 regiment = {
 			type = bergsjaeger_brigade 
 			experience = 10 
-			name = "6. Infanteridivisjon"
+			name = "5. Fjellet brigade"
 			historical_model = 2 
 			}
 		
 		 regiment = {
 			type = bergsjaeger_brigade 
 			experience = 10 
-			name = "6. Infanteridivisjon"
+			name = "6. Fjellet brigade"
+			historical_model = 2 
+			}
+		}
+		
+		division = {
+		location = 65  # Narvik
+		is_reserve = yes 
+		name = "4. Infanteridivisjon"
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "7. Infanteribrigade"
+			historical_model = 2 
+			}
+		
+		 regiment = {
+			type = infantry_brigade 
+			experience = 10 
+			name = "8. Infanteribrigade"
 			historical_model = 2 
 			}
 		}

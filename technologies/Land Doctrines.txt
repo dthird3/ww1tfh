@@ -3,7 +3,7 @@
 #########################################################################
 
 mobile_warfare = {
-
+	
     hq_brigade = {
         maximum_speed = 0.5
     }
@@ -164,6 +164,9 @@ spearhead_doctrine = {
 	austrian_brigade = {
 		combat_width = -0.5
 	}
+	light_infantry_brigade = {
+		combat_width = -0.5
+	}
 	
     allow = {
         special_forces = 3
@@ -194,7 +197,7 @@ schwerpunkt = {
     change = no
     on_completion = spearhead_theory
 
-    difficulty = 10
+    difficulty = 8
 
     #common for all techs.
     start_year = 1916
@@ -220,7 +223,7 @@ blitzkrieg = {
     change = no
     on_completion = spearhead_theory
 
-    difficulty = 10
+    difficulty = 8
 
     #common for all techs.
     start_year = 1916
@@ -265,7 +268,7 @@ tactical_command_structure = {
 
     cavalry_brigade = {     default_morale = 0.05   }
     armored_car_brigade = {     default_morale = 0.05   }
-
+	
     research_bonus_from = {
         mobile_warfare_theory = 0.3
         land_doctrine_practical = 0.7
@@ -357,6 +360,9 @@ integrated_support_doctrine = {
 	austrian_brigade = {
 		default_morale = 0.05
 	}
+	light_infantry_brigade = {     
+		default_morale = 0.05   
+	}
 	
     tactic_encirclement = 3
 
@@ -403,7 +409,7 @@ superior_firepower = {
 mechanized_offensive = {
     cavalry_brigade = {         default_organisation = 5    }
     armored_car_brigade = {     default_organisation = 5    }
-
+	
 
     research_bonus_from = {
         mobile_warfare_theory = 0.3
@@ -483,6 +489,9 @@ special_forces = {
 		default_organisation = 5
 	}
 	austrian_brigade = {
+		default_organisation = 5
+	}
+	light_infantry_brigade = {     
 		default_organisation = 5
 	}
 
@@ -642,7 +651,7 @@ large_front = {
 		default_morale = 0.05
 			}
 	garrison_brigade = {
-		default_morale = 0.02
+		default_morale = 0.05
 			}
 
     tactic_shock = 3

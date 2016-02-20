@@ -138,13 +138,9 @@
 		 SAF = {
 			 remove_brigade = "18th Inf Brigade"
 			 }
-		 SAF = {
-			 load_oob = "SAF_1910.txt"
-			 }
+		 SAF = { load_oob = "SAF_1910.txt" }
 		 set_country_flag = saf_release
-		 SAF = {
-			 leave_faction = allies
-			 }
+		 SAF = { leave_faction = allies }
 		 }
 	}
 
@@ -158,27 +154,19 @@
 	id = 100140
 	 
 	picture = "ENGP3"
-	 
 	fire_only_once = yes
-	 
-	mean_time_to_happen = {
-		 days = 1
-		 }
+	mean_time_to_happen = { days = 1 }
 	major = yes
 	 
 	trigger = {
 		 tag = ENG
-		 NOT = {
-			 exists = IRE
-			 }
+		 NOT = { exists = IRE }
 		 war = no
 		 date = 1914.5.25
 		 }
 	option = {
 		 name = "opta_ENGE3"
-		 ai_chance = {
-			 factor = 100
-			 }
+		 ai_chance = { factor = 100 }
 		 manpower = 50
 		 dissent = -3
 		 neutrality = -15
@@ -194,12 +182,7 @@
 	id = 100206
 	 
 	picture = "USAP3"
-	 
 	fire_only_once = yes
-	 
-	mean_time_to_happen = {
-		 days = 0
-		 }
 	major = yes
 	 
 	trigger = {
@@ -570,25 +553,21 @@
 	id = 190502
 	 
 	picture = "ENGP8"
-	 
 	fire_only_once = yes
-	 
 	is_triggered_only = yes
-	 
 	major = no
 	 
 	option = {
-		 name = "opta_ENGE8"
-		 ai_chance = {
-			 factor = 100
-			 }
+		name = "opta_ENGE8"
+		ai_chance = { factor = 100 }
 		manpower = 100
-		officer_pool = 4000
-		 add_country_modifier = {
-			 name = "volunteer_army_uk"
-			 duration = 90
-			 }
-		 }
+		add_country_modifier = {
+			name = "volunteer_army_uk"
+			duration = 90
+			}
+		officer_pool = 8000
+		ENG = { load_oob = "ENG_1914_territorial_divisions.txt" }
+		}
 	}
 
 
@@ -600,26 +579,18 @@
 	id = 100509
 	 
 	picture = "ENGP7"
-	 
 	fire_only_once = yes
-	 
 	major = yes
 	 
 	trigger = {
 		 tag = ENG
 		 date = 1915.10.15
-		 ENG = {
-			 war_with = GER
-			 }
-		 NOT = {
-			 has_country_flag = hmscanada
-			 }
+		 ENG = { war_with = GER }
+		 NOT = { has_country_flag = hmscanada }
 		 }
 	option = {
 		 name = "opta_ENGE7"
-		 ai_chance = {
-			 factor = 100
-			 }
+		 ai_chance = { factor = 100 }
 		 money = -150
 		 load_oob = "HMSCanada.txt"
 		 set_country_flag = hmscanada
@@ -627,9 +598,7 @@
 	option = {
 		 name = "optb_ENGE7"
 		 money = 150
-		 CHL = {
-			 load_oob = "AlmiranteLatorre.txt"
-			 }
+		 CHL = { load_oob = "AlmiranteLatorre.txt" }
 		 set_country_flag = hmscanada
 		 }
 	}

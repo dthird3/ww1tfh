@@ -255,6 +255,7 @@
 		tag = GER
 		has_country_flag = break_blockade
 		ENG = { total_of_ours_sunk = 60 }
+		GER = { total_amount_of_ships = 100 }
 	}
 	 
 	option = {
@@ -373,8 +374,97 @@
 		 GER = { set_country_flag = libau_arms_delivered }
 		 }
 	}
-		
 	
+################  BULGARIA  ###################
+
+# Germany offers Incentives to Bulgaria to join CP
+
+ country_event = {
+	title = "EVT1914_476_NAME"
+	desc = "EVT1914_476_DESC"
+	id = 476
+	 
+	fire_only_once = yes
+	is_triggered_only = yes
+	 
+	option = {
+		ai_chance = { factor = 100 }
+		name = "opta_476"
+		BUL = { country_event = 477 } }                    # Central_Power's_proposal
+		
+	option = {
+		ai_chance = { factor = 0 }
+		name = "DH_EVENT_2191510_Option2"
+	}	
+}
+	
+# Agreement with Bulgaria at start of Serbian war
+
+ country_event = {
+	title = "DH_EVENT_2192529_TITLE"
+	desc = "DH_EVENT_2192529_DESC"
+	id = 479
+	 
+	fire_only_once = yes
+	is_triggered_only = yes
+	 
+	option = {
+		name = "DH_EVENT_2192529_Option7"
+		ai_chance = { factor = 100 }
+		BUL = { country_event = 4 } }                    # Central_Power's_proposal
+	option = {
+		ai_chance = { factor = 0 }
+		name = "DH_EVENT_2191510_Option2" }
+	}
+	
+	
+# German offer to Bulgaria to join CP and fight Serbia
+
+ country_event = {
+	title = "DH_EVENT_2191510_TITLE"
+	desc = "DH_EVENT_2191510_DESC"
+	picture = "diplomatic_campaign"
+	id = 415
+	 
+	fire_only_once = yes
+	is_triggered_only = yes
+	 
+	option = {
+		ai_chance = { factor = 100 }
+		name = "DH_EVENT_2191510_Option1"
+		BUL = { country_event = 4 }                    # Central_Power's_proposal 
+		}
+	option = {
+		ai_chance = { factor = 0 }
+		name = "DH_EVENT_2191510_Option2"
+		}
+	}
+
+	
+# German offer to Bulgaria to join CP after fall of Serbia
+
+ country_event = {
+	title = "DH_EVENT_2191508_TITLE"
+	desc = "DH_EVENT_2191508_DESC"
+	picture = "diplomatic_campaign"
+	id = 413
+	 
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "DH_EVENT_2191508_Option1"
+		ai_chance = { factor = 100 }
+		BUL = { country_event = 3 }              # Central_Power's_proposal
+		}
+		 
+	option = {
+		name = "DH_EVENT_2191508_Option2"
+		ai_chance = { factor = 0 }
+		}
+	}
+		
+##############################################	
 # Air Aces die 1914
 
  country_event = {
@@ -717,29 +807,25 @@
 	id = 418
 	 
 	picture = "news_paper"
-	 
 	fire_only_once = yes
-	 
 	mean_time_to_happen = { days = 5 }
 	
 	trigger = {
-# add trigger for Naval losses compared to ENG
 		tag = GER
 		war = yes
 		date = 1917.06.30
-		dissent = 20
+		total_of_ours_sunk = 50
 		}
 		
 	option = {
-		 name = "DH_EVENT_2191515_Option7"
-		 dissent = 2
-# More effects like French Army mutiny
-		 set_global_flag = 2191515_EVENT_DONE
+		name = "DH_EVENT_2191515_Option7"
+		 	national_unity = -10
+			set_global_flag = 2191515_EVENT_DONE
 		 }
 	}
 
 
-#The Revolt spreads!
+#The Revolt spreads!   ???????????????
 
  country_event = {
 	title = "DH_EVENT_2191516_TITLE"
@@ -747,21 +833,17 @@
 	id = 419
 	 
 	picture = "news_paper"
-	 
 	fire_only_once = yes
-	 
-	mean_time_to_happen = { days = 2 }
+	mean_time_to_happen = { days = 5 }
 	
 	trigger = {
 		tag = GER
 		war = no
 		date = 1917.06.30
-		dissent = 20		
 		}
 	option = {
-		 name = "DH_EVENT_2191516_Option7"
-		 dissent = 2
-# More effects like French Army mutiny
+		name = "DH_EVENT_2191516_Option7"
+		 	national_unity = -10
 		 set_global_flag = 2191516_EVENT_DONE
 		 }
 	}

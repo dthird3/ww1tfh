@@ -1,7 +1,7 @@
 cavalry_smallarms = {
 	
 	cavalry_brigade = {
-		soft_attack = 0.5
+		soft_attack = 0.2
 	}
 
 	research_bonus_from = {
@@ -11,7 +11,7 @@ cavalry_smallarms = {
 	}
 	
 	on_completion = mobile_theory
-	difficulty = 0
+	difficulty = -3
 	
 	#common for all techs.
 	start_year = 1900
@@ -25,9 +25,8 @@ cavalry_smallarms = {
 cavalry_support  = {
 	
 	cavalry_brigade = {
-		defensiveness = 0.5
-		maximum_speed = -0.02
-		
+		defensiveness = 0.3
+		toughness = 0.2
 	}
 
 	research_bonus_from = {
@@ -37,83 +36,28 @@ cavalry_support  = {
 	}
 	
 	on_completion = mobile_theory
-	difficulty = 0
+	difficulty = -3
 	
 	#common for all techs.
 	start_year = 1900
 	first_offset = 1910	#2nd model is from 1936
 	additional_offset = 2	#one new every 2 years
 	max_level = 8
-	folder = infantry_folder
-}
-
-
-cavalry_guns = {
-	
-	cavalry_brigade = {
-		toughness = 0.2
-		maximum_speed = -0.03
-		
-	}
-
-	research_bonus_from = {
-		mobile_theory = 0.3
-		mobile_practical = 0.5
-		artillery_practical = 0.2
-	}
-	
-	on_completion = mobile_theory
-	difficulty = 0
-	
-	#common for all techs.
-	start_year = 1900
-	first_offset = 1910	#2nd model is from 1936
-	additional_offset = 2	#one new every 2 years
-	max_level = 8
-	folder = infantry_folder
-}
-
-
-cavalry_at = {
-	
-	cavalry_brigade = {
-		hard_attack = 0.1
-		maximum_speed = -0.01
-		ap_attack = 0.5
-		
-	}
-
-	research_bonus_from = {
-		mobile_theory = 0.3
-		mobile_practical = 0.6
-		artillery_practical = 0.1
-	}
-	
-	on_completion = mobile_theory
-	difficulty = 0
-	
-	#common for all techs.
-	start_year = 1915
-	first_offset = 1916	#2nd model is from 1936
-	additional_offset = 2	#one new every 2 years
-	max_level = 5
 	folder = infantry_folder
 }
 
 militia_smallarms = {
 
-	activate_building = land_fort 
-
 	militia_brigade = {
-		soft_attack = 0.3
+		soft_attack = 0.2
 		
 	}
 	partisan_brigade = {
-		soft_attack = 0.3
+		soft_attack = 0.2
 		
 	}
 	garrison_brigade = {
-		soft_attack = 0.4
+		soft_attack = 0.2
 		
 	}
 
@@ -124,7 +68,7 @@ militia_smallarms = {
 	}
 	
 	on_completion = militia_theory
-	difficulty = 0
+	difficulty = -3
 	
 	#common for all techs.
 	start_year = 1900
@@ -136,20 +80,20 @@ militia_smallarms = {
 
 
 militia_support  = {
-	#TODO: move this somwhere it makes sense
+	#TODO: move this some where it makes sense
 	activate_building = underground
 
 	militia_brigade = {
-		defensiveness = 0.5
-		
+		defensiveness = 0.3
+		toughness = 0.1
 	}
 	partisan_brigade = {
-		defensiveness = 0.5
-		
+		defensiveness = 0.3
+		toughness = 0.1
 	}
 	garrison_brigade = {
-		defensiveness = 0.5
-		
+		defensiveness = 0.3
+		toughness = 0.1
 	}
 
 	research_bonus_from = {
@@ -159,7 +103,7 @@ militia_support  = {
 	}
 	
 	on_completion = militia_theory
-	difficulty = 0
+	difficulty = -3
 	
 	#common for all techs.
 	start_year = 1900
@@ -168,82 +112,16 @@ militia_support  = {
 	max_level = 8
 	folder = infantry_folder
 }
-
-
-militia_guns = {
-	
-	militia_brigade = {
-		toughness = 0.1
-		
-	}
-	partisan_brigade = {
-		toughness = 0.1
-		
-	}
-	garrison_brigade = {
-		toughness = 0.1
-		
-	}
-
-	research_bonus_from = {
-		militia_theory = 0.3
-		militia_practical = 0.5
-		artillery_practical = 0.2
-	}
-	
-	on_completion = militia_theory
-	difficulty = 0
-	
-	#common for all techs.
-	start_year = 1900
-	first_offset = 1910	#2nd model is from 1936
-	additional_offset = 2	#one new every 2 years
-	max_level = 8
-	folder = infantry_folder
-}
-
-
-militia_at = {
-	
-	militia_brigade = {
-		hard_attack = 0.1
-		ap_attack = 0.5
-	}
-	partisan_brigade = {
-		hard_attack = 0.1
-		ap_attack = 0.5
-	}
-	garrison_brigade = {
-		hard_attack = 0.15
-		ap_attack = 0.5
-	}
-
-	research_bonus_from = {
-		militia_theory = 0.3
-		militia_practical = 0.6
-		artillery_practical = 0.1
-	}
-	
-	on_completion = militia_theory
-	difficulty = 0
-	
-	#common for all techs.
-	start_year = 1915
-	first_offset = 1916	#2nd model is from 1936
-	additional_offset = 2	#one new every 2 years
-	max_level = 5
-	folder = infantry_folder
-}
-
 
 infantry_activation = {
 	activate_unit = infantry_brigade 
 	activate_unit = guards_brigade
+	activate_unit = light_infantry_brigade
+	activate_building = land_fort 
 
 	allow = {
 		militia_smallarms = 1
 		militia_support = 1
-		militia_guns = 1
 	}
 
 	research_bonus_from = {
@@ -259,21 +137,34 @@ infantry_activation = {
 }
 
 
-
 smallarms_technology = {
 
 	#each model gets this added to it.
 	infantry_brigade = {
 		soft_attack = 0.6
-		
 	}
+	
+	militia_brigade = {
+		soft_attack = 0.2
+	}
+	partisan_brigade = {
+		soft_attack = 0.2
+	}
+	garrison_brigade = {
+		soft_attack = 0.3
+	}
+	cavalry_brigade = {
+		soft_attack = 0.3
+	}
+	light_infantry_brigade = {
+		soft_attack = 0.6
+	}
+	
 	marine_brigade = {
 		soft_attack = 0.6
-		
 	}
 	bergsjaeger_brigade = {
 		soft_attack = 0.6
-		
 	}
 	alpini_brigade = {
 		soft_attack = 0.6
@@ -315,7 +206,7 @@ smallarms_technology = {
 	
 	on_completion = infantry_theory
 	
-	difficulty = 0
+	difficulty = 1
 	
 	
 	#common for all techs.
@@ -333,8 +224,23 @@ infantry_support = {
 	#each model gets this added to it.
 	infantry_brigade = {
 		defensiveness = 0.8
-		
 	}
+	militia_brigade = {
+		defensiveness = 0.3
+	}
+	partisan_brigade = {
+		defensiveness = 0.3
+	}
+	garrison_brigade = {
+		defensiveness = 0.4
+	}
+	cavalry_brigade = {
+		defensiveness = 0.3
+	}
+	light_infantry_brigade = {
+		defensiveness = 0.6
+	}
+	
 	marine_brigade = {
 		defensiveness = 0.8
 		
@@ -384,7 +290,7 @@ infantry_support = {
 	
 	on_completion = infantry_theory
 	
-	difficulty = 0
+	difficulty = 1
 	
 	#common for all techs.
 	start_year = 1900
@@ -398,15 +304,16 @@ infantry_guns = {
 	#each model gets this added to it.
 	infantry_brigade = {
 		toughness = 0.3
-		
 	}
+	light_infantry_brigade = {
+		toughness = 0.3
+	}
+	
 	marine_brigade = {
 		toughness = 0.3
-		
 	}
 	bergsjaeger_brigade = {
 		toughness = 0.3
-		
 	}
 	
 	alpini_brigade = {
@@ -465,6 +372,27 @@ infantry_at = {
 		hard_attack = 0.25
 		ap_attack = 1
 	}
+	light_infantry_brigade = {
+		hard_attack = 0.2
+		ap_attack = 0.5
+	}
+	militia_brigade = {
+		hard_attack = 0.1
+		ap_attack = 0.5
+	}
+	partisan_brigade = {
+		hard_attack = 0.1
+		ap_attack = 0.5
+	}
+	garrison_brigade = {
+		hard_attack = 0.2
+		ap_attack = 0.5
+	}
+	cavalry_brigade = {
+		hard_attack = 0.2
+		ap_attack = 0.5
+	}
+
 	marine_brigade = {
 		hard_attack = 0.2
 		ap_attack = 0.5
@@ -609,8 +537,8 @@ engineer_bridging_equipment = {
 
 	engineer_brigade = {
 		river = {
-			attack = 0.05
-			movement = 0.05
+			attack = 0.1
+			movement = 0.1
 		}
 	}
 	
@@ -640,19 +568,22 @@ engineer_assault_equipment = {
 	
 
 	engineer_brigade = {
-     	   	soft_attack = 0.2
-        	hard_attack = 0.2
+     	   	soft_attack = 0.3
+        	hard_attack = 0.3
         	fort = {
             		attack = 0.1
         	}
 	        urban = {
-        	    attack = 0.02
+        	    attack = 0.10
         	}
         	jungle = {
-            		attack = 0.02
+            		attack = 0.10
         	}
         	forest = {
-            		attack = 0.01
+            		attack = 0.10
+        	}
+        	woods = {
+            		attack = 0.10
         	}
     	}
 	
@@ -681,7 +612,7 @@ engineer_assault_equipment = {
 imporved_police_brigade = {
 
 	police_brigade = {
-		suppression = 2
+		suppression = 3
 	}
 
 		
@@ -705,6 +636,11 @@ desert_warfare_equipment = {
 	infantry_brigade = {
 		desert = {
 			attrition = -1
+		}
+	}
+	light_infantry_brigade = {
+		desert = {
+			attrition = -2
 		}
 	}
 	marine_brigade = {
@@ -759,7 +695,7 @@ desert_warfare_equipment = {
 	}
 	janissary_brigade = {
 		desert = {
-			attrition = -1
+			attrition = -2
 		}
 	}
 	
@@ -789,7 +725,11 @@ jungle_warfare_equipment = {
 			attrition = -1
 		}
 	}
-
+	light_infantry_brigade = {
+		jungle = {
+			attrition = -2
+		}
+	}
 	marine_brigade = {
 		jungle = {
 			attrition = -1
@@ -812,7 +752,7 @@ jungle_warfare_equipment = {
 	}
 	gurkha_brigade = {
 		jungle = {
-			attrition = -1
+			attrition = -2
 		}
 	}
 	waffen_brigade = {
@@ -827,12 +767,12 @@ jungle_warfare_equipment = {
 	}
 	imperial_brigade = {
 		jungle = {
-			attrition = -1
+			attrition = -2
 		}
 	}
 	ranger_brigade = {
 		jungle = {
-			attrition = -1
+			attrition = -2
 		}
 	}
 	austrian_brigade = {
@@ -872,7 +812,11 @@ mountain_warfare_equipment = {
 			attrition = -1
 		}
 	}
-
+	light_infantry_brigade = {
+		mountain = {
+			attrition = -2
+		}
+	}
 	marine_brigade = {
 		mountain = {
 			attrition = -1
@@ -963,6 +907,11 @@ artic_warfare_equipment = {
 			attrition = -1
 		}
 	}
+	light_infantry_brigade = {
+		arctic = {
+			attrition = -2
+		}
+	}
 	marine_brigade = {
 		arctic = {
 			attrition = -1
@@ -970,17 +919,17 @@ artic_warfare_equipment = {
 	}
 	bergsjaeger_brigade = {
 		arctic = {
-			attrition = -1
+			attrition = -2
 		}
 	}
 	alpini_brigade = {
 		arctic = {
-			attrition = -1
+			attrition = -2
 		}
 	}
 	alpins_brigade = {
 		arctic = {
-			attrition = -1
+			attrition = -2
 		}
 	}
 	gurkha_brigade = {
@@ -995,7 +944,7 @@ artic_warfare_equipment = {
 	}
 	guards_brigade = {
 		arctic = {
-			attrition = -1
+			attrition = -2
 		}
 	}
 	imperial_brigade = {
@@ -1064,7 +1013,7 @@ amphibious_warfare_equipment = {
 	on_completion = superior_firepower_theory
 
 	difficulty = 7
-	start_year = 1918
+	start_year = 1916
 	folder = infantry_folder
 }
 gas_masks = {

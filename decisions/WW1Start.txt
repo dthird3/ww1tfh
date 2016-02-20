@@ -27,13 +27,11 @@ diplomatic_decisions = {
 		ai_will_do = { factor = 1 }
 		potential = {
 			 tag = GER
-			 has_country_flag = russia_mobilized
 			 NOT = { has_country_flag = vsplan }
 			 }
-		allow = {  
-#			or = { GER = { war_with = RUS } 
-			       GER = { war = no } }
-#		}
+		allow = { 
+			 has_country_flag = russia_mobilized		
+		}
 		
 		effect = {
 			 set_country_flag = vsplan

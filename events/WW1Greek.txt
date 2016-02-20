@@ -1,43 +1,26 @@
-
-#George I Assasinated!
+# George I Assasinated!
 
  country_event = {
 	title = "GREE1"
 	desc = "desc_GREE1"
+	picture = "GREP1"
 	id = 100909
 	 
-	picture = "GREP1"
-	 
 	fire_only_once = yes
-	 
-	mean_time_to_happen = {
-		 days = 1
-		 }
+	mean_time_to_happen = { days = 1 }
+	
 	trigger = {
 		 tag = GRE
-		 GRE = {
-			 head_of_state = 35136 #George_I
-
-			}
+		 GRE = { head_of_state = 35136 }    #George_I 
 		 date = 1913.3.13
 		 }
 	option = {
 		 name = "opta_GREE1"
-		 ai_chance = {
-			 factor = 100
-			 }
-		 GRE = {
-			 head_of_state = 35111 #Constantine_I
-
-			}
-		 GRE = {
-			 chief_of_army = 35111 #Constantine_I
-			}
-		 GRE = {
-			 chief_of_air = 35111 #Constantine_I
-			}
-remove_minister = 35136 #George_I
-
+		 ai_chance = { factor = 100 }
+		 GRE = { head_of_state = 35111 }    #Constantine_I 
+		 GRE = { chief_of_army = 35111 }    #Constantine_I 
+		 GRE = { chief_of_air = 35111 }     #Constantine_I 
+		 remove_minister = 35136 #George_I
 		}
 	}
 
@@ -47,50 +30,39 @@ remove_minister = 35136 #George_I
  country_event = {
 	title = "CRTE1"
 	desc = "desc_CRTE1"
+	picture = "CRTP1"	
 	id = 100200
-	 
-	picture = "CRTP1"
 	 
 	is_triggered_only = yes
 	 
 	option = {
 		 name = "opta_CRTE1"
-		 ai_chance = {
-			 factor = 100
-			 }
-		 GRE = {
-			 split_troops = 1.0
-			 }
-		 GRE = {
-			 inherit = CRT
-			 }
+		 ai_chance = { factor = 100 }
+		 GRE = { split_troops = 1.0 }
+		 GRE = { inherit = CRT }
 		 }
 	}
 
+# Greece buys US Navy ships
 country_event = {
 	title = "GREE2"
 	desc = "desc_GREE2"
 	id = 100920
 	 
 	picture = "GREP2"
-	 
 	fire_only_once = yes
 	 
-	mean_time_to_happen = {
-		 days = 1
-		 }
 	trigger = {
 		 tag = GRE
 		 date = 1914.7.30
+		 money = 60
 		 USA = { brigade_exists = "USS Mississippi" }
 		 USA = { brigade_exists = "USS Idaho" }
 		 not = { has_country_flag = mis_purchase }
 		 }
 	option = {
 		 name = "opta_GREE2"
-		 ai_chance = {
-			 factor = 100
-			 }
+		 ai_chance = { factor = 100 }
 			USA = { country_event = 100921 }
 		 }
 	option = {
@@ -100,20 +72,20 @@ country_event = {
 			 }
 		 }
 	}
+	
+	
 country_event = {
 	title = "GREE3"
 	desc = "desc_GREE3"
+	picture = "GREP2"
 	id = 100921
 	 
-	picture = "GREE3"
-	 
 	is_triggered_only = yes
+	major = yes
 	 
 	option = {
 		 name = "opta_GREE3"
-		 ai_chance = {
-			 factor = 100
-			 }
+		 ai_chance = { factor = 100 }
 			GRE = { 
 				load_oob = "MississippiGreek.txt" 
 				money = -50
@@ -122,13 +94,156 @@ country_event = {
 				remove_brigade = "USS Mississippi"
 				remove_brigade = "USS Idaho"
 				money = 50
+				manpower = 1
+				set_country_flag = mis_purchase
 			}
 	}
 	option = {
 		 name = "optb_GREE3"
-		 ai_chance = {
-			 factor = 0
+		 ai_chance = { factor = 0 }
+	}
+}
+
+
+#Greece proclaimed the annexation of Northern Epirus
+
+ country_event = {
+	title = "DH_EVENT_2058501_TITLE"
+	desc = "DH_EVENT_2058501_DESC"
+	picture = "diplomatic_campaign"	
+	id = 2
+	 
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GRE
+		SER = {	war_with = AUH }
+		exists = ALB
+		ALB = { controls = 4717 }                       # Korce
+		}
+		
+	option = { 
+		name = "ACTION_NAME_GREAT"
+		ai_chance = { factor = 100 }
+		ALB = { country_event = 5 }
+		relation = {
+				 who = ALB
+				 value = -15
+				 }
+	    }
+	option = { 
+		name = "ACTION_NAME_NO"
+		ai_chance = { factor = 0 }
+		dissent = 3
+		relation = {
+				 who = ALB
+				 value = 15
+				 }
+	    }
+	}
+
+	
+# Greece considers Austria-Hungary DOW on Serbia
+
+ country_event = {
+	title = "EVT1914_2019501_TITLE"
+	desc = "EVT1914_2019501_DESC"
+	picture = "news_paper"
+	id = 138
+	 
+	fire_only_once = yes
+	 
+	trigger = {
+		 tag = GRE
+		 AUH = { war_with = SER }
+		 }
+		 
+	option = {
+		 name = "EVT1914_2019501_Option1"
+		 ai_chance = { factor = 100 }
+		 dissent = 3
+		 }
+	option = {
+		 ai_chance = { factor = 0 }
+		 name = "EVT1914_2019501_Option2"
+		 dissent = 5
+		 create_alliance = SER  
+		 war = { target = AUH }
+		 random_list = { 
+			25 = { ZZZ = { split_troops = 0.30 } } 
+			25 = { ZZZ = { split_troops = 0.45 } } 
+			25 = { ZZZ = { split_troops = 0.55 } } 
+			25 = { ZZZ = { split_troops = 0.70 } } 
+			}
+		 organisation = -3
+		 popularity = -3
+		 }
+	}
+	
+	
+#Serb refugees land on Corfu
+
+ country_event = {
+	title = "DH_EVENT_2019515_TITLE"
+	desc = "DH_EVENT_2019515_DESC"
+	picture = "news_paper"	
+	id = 152
+	 
+	fire_only_once = yes
+	is_triggered_only = no	 
+	mean_time_to_happen = { days = 15 }
+	
+	trigger = {
+		 has_global_flag = 2084503_EVENT_DONE
+		 not = { GRE = { faction = allies } }
+		 and = { exists = SER }
+		 tag = GRE 
 			 }
 
-	}
+	option = {
+		 name = "DH_EVENT_2019515_Option1"
+		 ai_chance = { factor = 80 }
+		 random_country = {
+			 limit = {
+				 tag = GRE
+				 has_global_flag = venizelos_incabinet
+				 }
+			 dissent = 1
+			 }
+		 relation = {
+			 who = SER
+			 value = -15
+			 }
+		 random_country = {
+			 limit = { tag = GRE }
+			 relation = {
+				 who = ALB
+				 value = -15
+				 }
+			 }
+		 manpower = 25
+		 }
+	option = {
+		 name = "DH_EVENT_2019515_Option2"
+		 ai_chance = { factor = 20 }
+		 random_country = {
+			 limit = {
+				 tag = GRE
+				 not = { has_global_flag = venizelos_incabinet }
+				 }
+			 dissent = 1
+			 }
+		 relation = {
+			 who = SER
+			 value = 5
+			 }
+		 random_country = {
+			 limit = { tag = GRE }
+			 relation = {
+				 who = ALB
+				 value = 5
+				 }
+			 }
+		 manpower = 50
+		 }
 	}

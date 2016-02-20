@@ -1,68 +1,55 @@
-gurkha_brigade = {
+light_infantry_brigade = {
 
-arctic = {
-attack = 0.50
+
+forest = {
+attack = 0.20
 defence = 0.20
 movement = 0.20
 }
 
-forest = {
-attack = 0.15
-movement = 0.10
-}
-
-hills = {
-attack = 0.50
-defence = 0.10
-movement = 0.15
-}
-
-jungle = {
-attack = 0.20
-movement = 0.10
-}
-
-mountain = {
-attack = 0.60
-defence = 0.20
-movement = 0.15
-}
-
 woods = {
-attack = 0.1
-movement = 0.05
+attack = 0.10
+defence = 0.10
+movement = 0.10
 }
+
+desert = {
+attack = 0.10
+defence = 0.10
+movement = 0.10
+}
+
+active = no
 air_attack = 0.02
 air_defence = 2.50
-ap_attack = 1
+ap_attack = 0.5
 build_cost_ic = 6.23
 build_cost_manpower = 9.33
 build_time = 150
 combat_width = 2
 completion_size = 0.3
-default_morale = 0.4
-default_organisation = 40
-defensiveness = 4.00
+default_morale = 0.35
+default_organisation = 30
+defensiveness = 3.00
 fuel_consumption = 0.00
 hard_attack = 0.33
 max_percentage_of_type = 0.04
 max_strength = 70
-maximum_speed = 4.33
+maximum_speed = 5.5
 minimum_of_type = 6
 officers = 250
 on_completion = infantry_practical
-priority = 9
+priority = 8
 radio_strength = 1
 repair_cost_multiplier = 0.05
-soft_attack = 1.67
+soft_attack = 2.33
 softness = 1.00
-sprite = Elite
-supply_consumption = 1.56
-suppression = 1.34
-toughness = 2.33
-transport_weight = 20
+sprite = Infantry
+supply_consumption = 1.2
+suppression = 1.0
+toughness = 3.0
+transport_weight = 12
 type = land
 unit_group = infantry_unit_type
-usable_by = { ENG NEP }
 }
 

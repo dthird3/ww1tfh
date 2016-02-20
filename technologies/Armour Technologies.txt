@@ -9,7 +9,7 @@ armored_car_brigade_development = {
 	
 	on_completion = automotive_theory
 	
-	difficulty = 8
+	difficulty = 6
 	
 	#common for all techs.
 	start_year = 1914
@@ -19,6 +19,7 @@ armored_car_brigade_development = {
 lighttank_brigade = {
 
 	activate_unit = light_armor_brigade 
+	armor_unit_type = 0.05
 
 	allow = {
 		armored_car_brigade_development = 1
@@ -30,7 +31,7 @@ lighttank_brigade = {
 	
 	on_completion = automotive_theory
 	
-	difficulty = 10
+	difficulty = 7
 	
 	#common for all techs.
 	start_year = 1915
@@ -170,7 +171,7 @@ lighttank_reliability = {
 tank_brigade = {
 
 	activate_unit = armor_brigade 
-
+	armor_unit_type = 0.05
 	
 	allow = {
 		lighttank_gun = 1

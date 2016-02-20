@@ -43,11 +43,11 @@
 				 who = AUH
 				 value = 100
 				 }
-			 }
 		kill_leader = 6048        #Archduke_Franz_Ferdinand
         remove_minister = 6029    #Franz_Ferdinand
 		}
 	}
+ }
 
 
 #Austrian Demands
@@ -123,14 +123,15 @@
 		 threat = {
 			 who = POR
 			 value = -20
-			 }	 
-		 RUS = { country_event = 100143 }
+			 }	
+			 
 		 AUH = {
 			 war = {
 				 target = SER
 				 attacker_goal = { casus_belli = conquer }
 				 }
 			 }
+		 RUS = { country_event = 100143 }
 		 }
 	option = {
 		 name = "optb_AUHE1"
@@ -181,8 +182,11 @@
 			 who = USA
 			 value = -10
 			 }
+		 threat = {
+			 who = POR
+			 value = -10
+			 }
 		 AUH = { country_event = 100144 }
-		 RUS = { country_event = 100112 }
 		 AUH = {
 			 any_owned = {
 				 limit = { is_core = UKR }
@@ -355,8 +359,12 @@
 	picture = "Russian_Troops"
 	 
 	fire_only_once = yes
-	is_triggered_only = yes
 	major = yes
+	
+	trigger = {
+		AUH = { war_with = SER } 
+		tag = RUS
+		}
 	 
 	option = {
 		name = "EVT1914_100112_ACTIONA"
@@ -382,11 +390,8 @@
 # SAF chooses to support Entente or stay neutral
 # MP Bonus for Volunteer Army
 # Avoid SAF going to war until SAF Decides event
-# Montenegro event
 # SAF chooses to support Entente or stay neutral
-#
-# Montenegro event
-# SAF chooses to support Entente or stay neutral
+
 
  country_event = {
 	title = "GERE2"
@@ -527,30 +532,23 @@
 					 }
 				 }
 			 }
-		 random_country = {
-			 limit = {
-				 tag = AUH
-				 war_with = SER
-				 }
-			 AUH = {
-				 country_event = 100147 #100147
-				}
-			 }
+
 		 random_country = {
 			 limit = {
 				 tag = SER
 				 war_with = AUH
 				 }
-			 SER = {
-				 join_faction = allies
-				 }
+			 SER = { join_faction = allies }
 			 }
-		 SAF = {
-			 country_event = 2008000 #2008000
-			}
-		 ENG = {
-			 country_event = 190502 #190502
-			}
+		 random_country = {
+			 limit = {
+				 tag = MTN
+				 war_with = AUH
+				 }
+			 MTN = { join_faction = allies }
+			 }
+		 SAF = { country_event = 2008000 }
+		 ENG = { country_event = 190502 }
 		 AUH = {
 			 threat = {
 				 who = USA
@@ -704,15 +702,7 @@
 					 }
 				 }
 			 }
-		 random_country = {
-			 limit = {
-				 tag = AUH
-				 war_with = SER
-				 }
-			 AUH = {
-				 country_event = 100147 #100147
-				}
-			 }
+
 		 random_country = {
 			 limit = {
 				 tag = SER
@@ -722,12 +712,14 @@
 				 join_faction = allies
 				 }
 			 }
-		 SAF = {
-			 country_event = 2008000 #2008000
-			}
-		 ENG = {
-			 country_event = 190502 #190502
-			}
+		 random_country = {
+			 limit = {
+				 tag = MTN
+				 war_with = AUH }
+			 MTN = { join_faction = allies }
+			 }
+		 SAF = { country_event = 2008000 }
+		 ENG = { country_event = 190502 }
 		 AUH = {
 			 threat = {
 				 who = USA
@@ -850,27 +842,21 @@
 					 }
 				 }
 			 }
-		 random_country = {
-			 limit = {
-				 tag = AUH
-				 war_with = SER
-				 }
-			 AUH = {
-				 country_event = 100147 #100147
-				}
-			 }
+
 		 random_country = {
 			 limit = {
 				 tag = SER
 				 war_with = AUH
 				 }
-			 SER = {
-				 join_faction = allies
-				 }
+			 SER = { join_faction = allies }
 			 }
-		 SAF = {
-			 country_event = 2008000 #2008000
-			}
+		 random_country = {
+			 limit = {
+				 tag = MTN
+				 war_with = AUH }
+			 MTN = { join_faction = allies }
+			 }
+		 SAF = { country_event = 2008000 }
 		 AUH = {
 			 threat = {
 				 who = USA

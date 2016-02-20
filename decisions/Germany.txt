@@ -94,7 +94,7 @@ diplomatic_decisions = {
 		potential = {
 			tag = GER
 			GER = { war_with = ENG }
-			date = 1915.1.1
+			date = 1915.7.1
 			not = { GER = { has_country_flag = libau_sent } }
 			not = { ENG = { has_country_flag = easter } }
 			}
@@ -112,7 +112,99 @@ diplomatic_decisions = {
 				 
 		effect = {
 			 GER = { set_country_flag = libau_sent }
-			 GER = { country_event = 190041 }           # Support the Irish
+			 GER = { country_event = 190041 }               # Support the Irish
 			 }
-	}
+	}	
+	
+################  BULGARIA  ###################
+	
+	 incentives_to_bulgaria = {                                   # Offer Bulgaria Incentives to join the war
+		ai_will_do = { factor = 1 }
+		potential = {
+			exists = BUL
+			BUL = { is_in_any_faction = no }
+			date = 1914.06.01
+			not = { GER = { has_country_flag = Bulgarian_Incentives } }
+			}
+		allow = {
+			AUH = { has_country_flag = murder_of_franz_ferdinand }
+			}
+		effect = {
+			GER = { country_event = 476 }      				# German offer
+			GER = { set_country_flag = Bulgarian_Incentives }
+			}
+		}
+		
+	
+	 2192529_decision = {                                   # Agreement_with_Bulgaria before Serbian War
+		ai_will_do = { factor = 1 }
+		potential = {
+			 exists = BUL
+			 GER = { war = yes }
+			 not = { BUL = { faction = axis } }
+			 not = { BUL = { faction = allies } }
+			 date = 1914.08.01
+			not = { TUR = { war = yes } }
+			 not = { has_country_flag = decision_2192529 }
+			 }
+		allow = {
+			GER = { has_country_flag = Bulgarian_Incentives }
+			}
+		effect = {
+			country_event = 479                				# German offer
+			set_country_flag = decision_2192529
+			}
+		}
+
+		
+	 2191510_decision = {                                   # Promises_to_Bulgaria during Serbian War
+		ai_will_do = { factor = 1 }
+		potential = {
+			 and = {
+				 exists = SER
+				 not = { SER = { government_in_exile = yes } }
+				 }
+			 exists = BUL
+			 not = {
+				 BUL = { faction = axis }
+				 SER = { alliance_with = BUL }
+				 AUH = { war_with = BUL }
+				 }
+			 date = 1914.12.31
+			 not = { date = 1915.12.31 }
+			 not = { has_country_flag = decision_2191510 }
+			 }
+		allow = {
+			 TUR = { faction = axis } 
+			 3912 = { controlled_by = AUH }                  # Austrians have Beograd
+			 }
+		effect = {
+			GER = { country_event = 415 }                    # German offer
+			GER = { set_country_flag = decision_2191510 }
+			 }
+		}
+
+		
+	 2191508_decision = {                                    # Offer to Bulgaria to join CP after fall of Serbia
+		ai_will_do = { factor = 1 }
+		
+		potential = {
+			exists = BUL
+			not = { exists = SER }
+			GER = { war = yes }
+			not = {	BUL = { war_with = GER } }
+			not = { has_global_flag = 2002533_EVENT_DONE }  #   ?????????????
+			date = 1915.01.01
+			not = { has_country_flag = decision_2191508 }
+			}
+			
+		allow = {
+			 not = { BUL = { faction = axis } }
+			 not = { BUL = { faction = allies } }
+			 }
+		effect = {
+			 GER = { country_event = 413 }                   # German offer 
+			 GER = { set_country_flag = decision_2191508 }
+			 }
+		}		
 }

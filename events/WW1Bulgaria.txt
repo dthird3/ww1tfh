@@ -1,3 +1,69 @@
+# Central Power's proposal to DOW Serbia    at start and during war
+
+ country_event = {
+	title = "DH_EVENT_2020501_TITLE"
+	desc = "DH_EVENT_2020501_DESC"
+	picture = "diplomatic_campaign"
+	id = 4
+	 
+	fire_only_once = no
+	is_triggered_only = yes
+	major = yes
+	 
+	option = {
+		ai_chance = { factor = 100 }
+		name = "DH_EVENT_2020501_Option1"
+		join_faction = axis
+		GRE = { country_event = 140 }              # Greece considers Bulgaria's DOW
+		set_global_flag = 2191509_EVENT_DONE
+		}
+	option = {
+		ai_chance = { factor = 0 }
+		name = "DH_EVENT_2020501_Option2"
+		relation = {
+			who = GER
+			value = -15
+			}
+		relation = {
+			who = AUH
+			value = -20
+			}
+		}
+	}
+	
+
+# Central_Power's_proposal  after Fall of Serbia
+
+ country_event = {
+	title = "DH_EVENT_2020500_TITLE"
+	desc = "DH_EVENT_2020500_DESC"
+	id = 3
+	 
+	picture = "diplomatic_campaign"
+	 
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = "DH_EVENT_2020500_Option1"
+		ai_chance = { factor = 50 }
+		join_faction = axis
+		}
+	option = {
+		name = "DH_EVENT_2020500_Option2"
+		ai_chance = { factor = 50 }
+		relation = {
+			who = GER
+			value = -15
+			}
+		relation = {
+			who = AUH
+			value = -15
+			}
+		}
+	}
+	
 
 #Treaty of Neuilly-sur-Seine
 #PROVINCES TO CEDE
@@ -56,9 +122,7 @@
 			 non_aggression_pact = BUL
 			 }
 		 any_country = {
-			 limit = {
-				 faction = allies
-				 }
+			 limit = { faction = allies }
 			 threat = {
 				 who = BUL
 				 value = -150
@@ -66,4 +130,3 @@
 			 }
 		 }
 	}
-

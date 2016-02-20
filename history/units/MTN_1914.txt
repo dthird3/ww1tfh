@@ -14,13 +14,15 @@
 		
 		 regiment = {
 			type = infantry_brigade 
+			is_reserve = yes 
 			experience = 20 
 			name = "Katushka brigada"
-			historical_model = 2 
+			historical_model = 3 
 			}
 		
 		 regiment = {
 			type = infantry_brigade 
+			is_reserve = yes 
 			experience = 20 
 			name = "Rijeka Crmnik brigada"
 			historical_model = 2 
@@ -33,6 +35,7 @@
 		
 		 regiment = {
 			type = infantry_brigade 
+			is_reserve = yes 
 			experience = 20 
 			name = "Zetska brigada"
 			historical_model = 2 
@@ -40,17 +43,19 @@
 		
 		 regiment = {
 			type = infantry_brigade 
+			is_reserve = yes 
 			experience = 20 
 			name = "Spuzka brigada"
 			historical_model = 2 
 			}
 		
-		 regiment = {
-			type = artillery_brigade 
-			experience = 20 
-			name = "1. artiljerijska brigada"
-			historical_model = 2 
-			}
+#		 regiment = {
+#			type = artillery_brigade 
+#			is_reserve = yes 
+#			experience = 20 
+#			name = "1. artiljerijska brigada"
+#			historical_model = 1 
+#			}
 		}
 	
 	 division = {
@@ -58,14 +63,16 @@
 		name = "3. pješačka divizija"
 		
 		 regiment = {
-			type = infantry_brigade 
+			type = infantry_brigade
+			is_reserve = yes 			
 			experience = 20 
 			name = "Niksika brigada"
 			historical_model = 2 
 			}
 		
 		 regiment = {
-			type = infantry_brigade 
+			type = infantry_brigade
+			is_reserve = yes 			
 			experience = 20 
 			name = "Vucedolska brigada"
 			historical_model = 2 
@@ -74,20 +81,55 @@
 	
 	 division = {
 		location = 4493  # Cetinje
-		name = "4. pješačka divizija"
+		name = "1. Sandzak divizija"
 		
 		 regiment = {
 			type = infantry_brigade 
+			is_reserve = yes 
 			experience = 20 
 			name = "Kolasiuska brigada"
 			historical_model = 2 
 			}
 		
 		 regiment = {
-			type = infantry_brigade 
+			type = infantry_brigade
+			is_reserve = yes 			
 			experience = 20 
 			name = "Vasojevicka brigada"
 			historical_model = 2 
 			}
 		}
 	}
+	
+military_construction = {
+	cost = 2
+	progress = 120 
+	duration = 30 
+	country = MTN 
+	name = "2. Sandzak divizija"
+	
+	infantry_brigade = {	
+	name = "Kolasin brigade"
+	historical_model = 2
+	}
+	infantry_brigade = {
+	name = "2. Sandzak brigade"
+	historical_model = 2
+	}}
+
+military_construction =
+	{
+	cost = 2
+	progress = 80 
+	duration = 60 
+	country = MTN 
+	name = "3. Sandzak divizija"
+	
+	infantry_brigade = {	
+	name = "3. Sandzak brigade"
+	historical_model = 2
+	}
+	infantry_brigade = {
+	name = "4. Sandzak brigade"
+	historical_model = 2
+	}}
